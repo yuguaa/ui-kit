@@ -1,0 +1,9 @@
+packages:
+  - packages/*
+  - docs
+  - playground
+  - internal/*
+
+catalog:
+  turbo: ^2.4.4
+  vite: ^6.2.1

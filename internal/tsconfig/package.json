@@ -1,0 +1,17 @@
+{
+  "name": "@yuguaa/tsconfig",
+  "version": "1.0.0",
+  "private": true,
+  "description": "tsconfig",
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "base.json",
+    "library.json",
+    "node.json",
+    "web-app.json",
+    "web.json"
+  ]
+}
