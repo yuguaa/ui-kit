@@ -1,0 +1,19 @@
+{
+  "$schema": "https://shadcn-vue.com/schema.json",
+  "style": "new-york",
+  "typescript": true,
+  "tailwind": {
+    "config": "tailwind.config.mjs",
+    "css": "src/assets/index.css",
+    "baseColor": "slate",
+    "cssVariables": true
+  },
+  "framework": "vite",
+  "aliases": {
+    "components": "@yuguaa/shadcn-ui/components",
+    "ui": "@yuguaa/shadcn-ui/ui",
+    "utils": "@yuguaa/utils",
+    "composables": "@yuguaa/shadcn-ui/composables"
+  },
+  "iconLibrary": "lucide"
+}
