@@ -66,7 +66,7 @@ export function XInputDate({
       <PopoverTrigger
         disabled={disabled}
         render={
-          <button type="button" className={cn("w-full", className)}>
+          <button type="button" className={cn("w-full cursor-pointer", className)}>
             <span className="relative flex w-full items-center">
               <Input
                 readOnly

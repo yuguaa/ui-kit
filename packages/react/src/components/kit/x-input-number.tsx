@@ -60,7 +60,7 @@ export function XInputNumber({
         aria-label="decrement"
         disabled={disabled || (min != null && current <= min)}
         onClick={() => update(current - step)}
-        className="inline-flex size-9 items-center justify-center rounded-l-lg border border-input text-muted-foreground transition-colors outline-none hover:bg-muted focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50"
+        className="inline-flex size-9 items-center justify-center rounded-l-lg border border-input text-muted-foreground transition-colors outline-none cursor-pointer hover:bg-muted focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50"
       >
         <Minus className="size-4" />
       </button>
@@ -80,7 +80,7 @@ export function XInputNumber({
         aria-label="increment"
         disabled={disabled || (max != null && current >= max)}
         onClick={() => update(current + step)}
-        className="inline-flex size-9 items-center justify-center rounded-r-lg border border-input text-muted-foreground transition-colors outline-none hover:bg-muted focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50"
+        className="inline-flex size-9 items-center justify-center rounded-r-lg border border-input text-muted-foreground transition-colors outline-none cursor-pointer hover:bg-muted focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50"
       >
         <Plus className="size-4" />
       </button>

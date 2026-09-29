@@ -86,10 +86,10 @@ export function XSelectMenu({
           <button
             type="button"
             className={cn(
-              "flex h-9 w-full min-w-40 items-center justify-between gap-2 rounded-lg border border-input bg-transparent px-3 text-sm transition-colors outline-none",
-              "focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50",
+              "flex h-9 w-full min-w-40 cursor-pointer items-center justify-between gap-2 rounded-md bg-transparent px-3 text-sm transition-[box-shadow,color] outline-none ring-1 ring-inset ring-input",
+              "focus-visible:ring-2 focus-visible:ring-ring",
               "disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50",
-              open && "border-ring ring-3 ring-ring/50",
+              open && "ring-2 ring-ring",
               className,
             )}
           >

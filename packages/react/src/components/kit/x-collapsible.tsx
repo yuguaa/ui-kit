@@ -59,7 +59,7 @@ export const XCollapsible = React.forwardRef<XCollapsibleApi, XCollapsibleProps>
       >
         <CollapsibleTrigger
           render={
-            <button type="button" className="inline-flex w-fit items-center gap-1 text-sm font-medium outline-none hover:underline">
+            <button type="button" className="inline-flex w-fit cursor-pointer items-center gap-1 text-sm font-medium outline-none hover:underline">
               {trigger ?? "展开详情"}
               <ChevronDown className={cn("size-4 transition-transform", open && "rotate-180")} />
             </button>

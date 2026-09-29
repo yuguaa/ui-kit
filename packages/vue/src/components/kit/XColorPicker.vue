@@ -74,7 +74,7 @@ function update(color: string) {
           :key="preset"
           type="button"
           :aria-label="preset"
-          class="inline-flex size-6 items-center justify-center rounded-md border border-black/10 outline-none transition-transform hover:scale-110"
+          class="inline-flex size-6 items-center justify-center rounded-md border border-black/10 outline-none transition-colors hover:border-primary-5"
           :style="{ backgroundColor: preset }"
           @click="update(preset)"
         >

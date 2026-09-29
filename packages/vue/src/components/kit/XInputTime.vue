@@ -56,7 +56,7 @@ function handleSelect(time: string) {
 <template>
   <Popover v-model:open="open">
     <PopoverTrigger as-child :disabled="disabled">
-      <button type="button" :class="cn('w-full', props.class)">
+      <button type="button" :class="cn('w-full cursor-pointer', props.class)">
         <span class="relative flex w-full items-center">
           <Input :model-value="modelValue" placeholder="选择时间" class="h-9 pl-9 text-left" readonly />
           <Clock class="pointer-events-none absolute left-3 size-4 text-muted-foreground" />

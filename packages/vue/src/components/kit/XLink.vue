@@ -36,7 +36,7 @@ const colorClasses: Record<LinkColor, string> = {
     :aria-current="active ? 'page' : undefined"
     :aria-disabled="disabled || undefined"
     :class="cn(
-      'inline-flex items-center gap-1 rounded text-sm font-medium transition-colors outline-none focus-visible:ring-3 focus-visible:ring-ring/50',
+      'inline-flex items-center gap-1 rounded text-sm font-medium transition-colors outline-none cursor-pointer focus-visible:ring-3 focus-visible:ring-ring/50',
       colorClasses[color],
       active && 'text-primary-7 underline underline-offset-4',
       disabled && 'pointer-events-none opacity-50',

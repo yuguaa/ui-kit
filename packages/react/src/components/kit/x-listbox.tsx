@@ -60,7 +60,7 @@ export function XListbox({
               disabled={item.disabled}
               onClick={() => handleSelect(item.key)}
               className={cn(
-                "flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-sm outline-none transition-colors",
+                "flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-sm outline-none cursor-pointer transition-colors",
                 "hover:bg-muted focus-visible:bg-muted disabled:pointer-events-none disabled:opacity-50",
                 isSelected && "bg-primary-1 text-primary-7 hover:bg-primary-2",
               )}

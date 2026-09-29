@@ -48,7 +48,7 @@ function pick(index: number, event: MouseEvent) {
       :key="index"
       type="button"
       :aria-label="`${index} 星`"
-      class="outline-none transition-transform hover:scale-110 focus-visible:scale-110"
+      class="cursor-pointer outline-none transition-colors hover:text-primary-6 focus-visible:text-primary-6"
       @click="pick(index - 1, $event)"
     >
       <slot

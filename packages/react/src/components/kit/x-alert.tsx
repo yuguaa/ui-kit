@@ -10,12 +10,11 @@ import { cn } from "@/lib/utils"
 export type XAlertType = "success" | "info" | "warning" | "error"
 
 const alertTypeClasses: Record<XAlertType, string> = {
-  success: "border-success-3 bg-success-1 text-success-8",
-  info: "border-info-3 bg-info-1 text-info-8",
-  warning: "border-warning-3 bg-warning-1 text-warning-8",
-  error: "border-error-3 bg-error-1 text-error-8",
+  success: "bg-success-1 text-success-8",
+  info: "bg-info-1 text-info-8",
+  warning: "bg-warning-1 text-warning-8",
+  error: "bg-error-1 text-error-8",
 }
-
 const alertIcons: Record<XAlertType, React.ReactNode> = {
   success: <CircleCheck className="size-4" />,
   info: <Info className="size-4" />,
@@ -53,7 +52,7 @@ export function XAlert({
   if (!visible) return null
 
   return (
-    <Alert className={cn("flex items-start gap-2", alertTypeClasses[type], className)}>
+    <Alert className={cn("flex items-start gap-2.5", alertTypeClasses[type], className)}>
       {showIcon && <span className="mt-0.5 shrink-0">{alertIcons[type]}</span>}
       <div className="flex min-w-0 flex-1 flex-col gap-0.5">
         {message != null && <AlertTitle>{message}</AlertTitle>}

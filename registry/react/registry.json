@@ -277,20 +277,12 @@
       "registryDependencies": []
     },
     {
-      "name": "motion",
-      "type": "registry:ui",
-      "title": "动效 token",
-      "description": "fast / base / slow 三档动效 token，二次封装组件的公共依赖。",
-      "registryDependencies": []
-    },
-    {
       "name": "x-button",
       "type": "registry:ui",
       "title": "二次封装按钮",
-      "description": "内置 solid/outline/soft/ghost/subtle/link 六种变体 × 七种语义色与 Framer Motion 动效。",
+      "description": "内置 solid/outline/soft/ghost/subtle/link 六种变体 × 七种语义色，hover/active 仅颜色过渡。",
       "registryDependencies": [
         "@ui-kit/utils",
-        "@ui-kit/motion",
         "@ui-kit/button"
       ]
     },
@@ -346,10 +338,9 @@
       "name": "x-card",
       "type": "registry:ui",
       "title": "卡片",
-      "description": "通用容器，承载标题、操作区、封面与底部操作，支持悬浮提升。",
+      "description": "通用容器，承载标题、操作区、封面与底部操作，支持 hoverable 阴影与边框反馈。",
       "registryDependencies": [
         "@ui-kit/utils",
-        "@ui-kit/motion",
         "@ui-kit/card"
       ]
     },
@@ -678,7 +669,6 @@
       "registryDependencies": [
         "@ui-kit/utils",
         "@ui-kit/dialog",
-        "@ui-kit/motion",
         "@ui-kit/x-button",
         "@ui-kit/bound-store"
       ]

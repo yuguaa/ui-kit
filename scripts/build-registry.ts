@@ -39,11 +39,13 @@ function writeText(rel: string, content: string): void {
 
 /* ============================ 设计 token ============================ */
 
-/** 语义色 10 级色阶 → theme cssVars（键不带 --color- 前缀） */
+/** 语义色 10 级色阶 → theme cssVars：裸变量 + --color-* 工具类映射 */
 function colorCssVars(): Record<string, string> {
   const vars: Record<string, string> = {};
   for (const [name, value] of Object.entries(palettesToCssVars(generateAllPalettes()))) {
-    vars[name.replace(/^--color-/, "").replace(/^--/, "")] = value;
+    const key = name.replace(/^--color-/, "").replace(/^--/, "");
+    vars[key] = value;
+    vars[`color-${key}`] = `var(--${key})`;
   }
   return vars;
 }
@@ -412,17 +414,11 @@ const reactAtoms: ItemSpec[] = [
 
 const reactKit: ItemSpec[] = [
   {
-    name: "motion",
-    title: "动效 token",
-    description: "fast / base / slow 三档动效 token，二次封装组件的公共依赖。",
-    files: [{ source: "packages/react/src/lib/kit/motion.ts", target: "lib/kit/motion.ts", type: "registry:lib" }],
-  },
-  {
     name: "x-button",
     title: "二次封装按钮",
-    description: "内置 solid/outline/soft/ghost/subtle/link 六种变体 × 七种语义色与 Framer Motion 动效。",
-    dependencies: ["motion", "lucide-react"],
-    registryDependencies: ["@ui-kit/utils", "@ui-kit/motion", "@ui-kit/button"],
+    description: "内置 solid/outline/soft/ghost/subtle/link 六种变体 × 七种语义色，hover/active 仅颜色过渡。",
+    dependencies: ["lucide-react"],
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/button"],
     files: [{ source: "packages/react/src/components/kit/x-button.tsx", target: "components/kit/x-button.tsx" }],
   },
   {
@@ -464,9 +460,8 @@ const reactKit: ItemSpec[] = [
   {
     name: "x-card",
     title: "卡片",
-    description: "通用容器，承载标题、操作区、封面与底部操作，支持悬浮提升。",
-    dependencies: ["motion"],
-    registryDependencies: ["@ui-kit/utils", "@ui-kit/motion", "@ui-kit/card"],
+    description: "通用容器，承载标题、操作区、封面与底部操作，支持 hoverable 阴影与边框反馈。",
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/card"],
     files: [{ source: "packages/react/src/components/kit/x-card.tsx", target: "components/kit/x-card.tsx" }],
   },
   {
@@ -702,8 +697,7 @@ const reactKit: ItemSpec[] = [
     name: "x-modal",
     title: "对话框",
     description: "模态对话框，默认提供取消与确定按钮。",
-    dependencies: ["motion"],
-    registryDependencies: ["@ui-kit/utils", "@ui-kit/dialog", "@ui-kit/motion", "@ui-kit/x-button"],
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/dialog", "@ui-kit/x-button"],
     files: [{ source: "packages/react/src/components/kit/x-modal.tsx", target: "components/kit/x-modal.tsx" }],
   },
   {
@@ -1094,17 +1088,11 @@ const vueAtoms: ItemSpec[] = [
 
 const vueKit: ItemSpec[] = [
   {
-    name: "motion",
-    title: "动效 token",
-    description: "fast / base / slow 三档动效 token，二次封装组件的公共依赖。",
-    files: [{ source: "packages/vue/src/lib/kit/motion.ts", path: "lib/kit/motion.ts", type: "registry:lib" }],
-  },
-  {
     name: "x-button",
     title: "二次封装按钮",
-    description: "内置 solid/outline/soft/ghost/subtle/link 六种变体 × 七种语义色与 Framer Motion 动效。",
-    dependencies: ["motion-v", "@lucide/vue"],
-    registryDependencies: ["@ui-kit/utils", "@ui-kit/motion", "@ui-kit/button"],
+    description: "内置 solid/outline/soft/ghost/subtle/link 六种变体 × 七种语义色，hover/active 仅颜色过渡。",
+    dependencies: ["@lucide/vue"],
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/button"],
     files: [{ source: "packages/vue/src/components/kit/XButton.vue", path: "kit/XButton.vue", type: "registry:component" }],
   },
   {
@@ -1146,9 +1134,8 @@ const vueKit: ItemSpec[] = [
   {
     name: "x-card",
     title: "卡片",
-    description: "通用容器，承载标题、操作区、封面与底部操作，支持悬浮提升。",
-    dependencies: ["motion-v"],
-    registryDependencies: ["@ui-kit/utils", "@ui-kit/motion", "@ui-kit/card"],
+    description: "通用容器，承载标题、操作区、封面与底部操作，支持 hoverable 阴影与边框反馈。",
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/card"],
     files: [{ source: "packages/vue/src/components/kit/XCard.vue", path: "kit/XCard.vue", type: "registry:component" }],
   },
   {

@@ -70,7 +70,7 @@ export function XInputRating({
           type="button"
           aria-label={`${index + 1} 星`}
           onClick={(event) => pick(index, allowHalf && event.clientX > event.currentTarget.getBoundingClientRect().left + event.currentTarget.offsetWidth / 2)}
-          className="outline-none transition-transform hover:scale-110 focus-visible:scale-110"
+          className="cursor-pointer outline-none transition-colors hover:text-primary-6 focus-visible:text-primary-6"
         >
           {renderStar(index)}
         </button>

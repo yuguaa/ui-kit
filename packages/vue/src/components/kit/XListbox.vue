@@ -55,7 +55,7 @@ function handleSelect(key: string) {
         :aria-checked="multiple ? selected.includes(item.key) : undefined"
         :disabled="item.disabled"
         :class="cn(
-          'flex w-full items-center gap-2 rounded-md px-2 py-1.5 text-left text-sm outline-none transition-colors',
+          'flex w-full cursor-pointer items-center gap-2 rounded-md px-2 py-1.5 text-left text-sm outline-none transition-colors',
           'hover:bg-muted focus-visible:bg-muted disabled:pointer-events-none disabled:opacity-50',
           selected.includes(item.key) && 'bg-primary-1 text-primary-7 hover:bg-primary-2',
         )"

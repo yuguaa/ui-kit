@@ -83,9 +83,11 @@ describe("XCard", () => {
     expect(screen.getByText("内容")).toBeInTheDocument();
   });
 
-  it("bordered=false 移除边框", () => {
+  it("bordered=false 无 ring 边框，bordered=true 有 ring", () => {
     const { container } = render(<XCard bordered={false}>内容</XCard>);
-    expect(container.firstElementChild).toHaveClass("border");
+    expect(container.firstElementChild).not.toHaveClass("ring-border");
+    const { container: bordered } = render(<XCard>内容</XCard>);
+    expect(bordered.firstElementChild).toHaveClass("ring-1", "ring-border");
   });
 
   it("hoverable 点击触发 onClick", async () => {

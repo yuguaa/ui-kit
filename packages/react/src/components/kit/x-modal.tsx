@@ -1,9 +1,9 @@
 /**
  * XModal 对话框：模态对话框，用于承载需要用户确认的信息或操作。
  * 底部操作区默认提供取消与确定按钮，可通过 footer 插槽自定义。
+ * 动效（Nuxt UI 模式）：遮罩淡入淡出，内容缩放进出场（dialog 原子 CSS 动画）。
  */
 import * as React from "react"
-import { motion } from "motion/react"
 import {
   Dialog,
   DialogClose,
@@ -14,7 +14,6 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog"
 import { XButton } from "@/components/kit/x-button"
-import { kitMotion } from "@/lib/kit/motion"
 import { cn } from "@/lib/utils"
 
 export interface XModalProps {
@@ -69,40 +68,35 @@ export function XModal({
         onOpenChange?.(next)
       }}
     >
-      <DialogContent className={cn("p-0", centered && "translate-y-0", !centered && "top-24")}>
-        <motion.div
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={kitMotion.tokens.base}
-          className="flex flex-col"
-          style={{ width }}
-        >
-          <DialogHeader className="border-b border-border px-5 py-4">
-            {title != null && <DialogTitle>{title}</DialogTitle>}
-            {description != null && <DialogDescription>{description}</DialogDescription>}
-          </DialogHeader>
-          <div className="px-5 py-4 text-sm">{children}</div>
-          <DialogFooter className="border-t border-border px-5 py-3">
-            {footer ?? (
-              <>
-                <DialogClose
-                  render={
-                    <XButton variant="outline" color="neutral" onClick={onCancel}>
-                      {cancelText}
-                    </XButton>
-                  }
-                />
-                <DialogClose
-                  render={
-                    <XButton variant="solid" color="primary" onClick={onOk}>
-                      {okText}
-                    </XButton>
-                  }
-                />
-              </>
-            )}
-          </DialogFooter>
-        </motion.div>
+      <DialogContent
+        className={cn("gap-0 p-0", centered && "translate-y-0", !centered && "top-24")}
+        style={{ width }}
+      >
+        <DialogHeader className="px-5 py-4">
+          {title != null && <DialogTitle>{title}</DialogTitle>}
+          {description != null && <DialogDescription>{description}</DialogDescription>}
+        </DialogHeader>
+        <div className="px-5 py-4 text-sm">{children}</div>
+        <DialogFooter className="px-5 py-4">
+          {footer ?? (
+            <>
+              <DialogClose
+                render={
+                  <XButton variant="outline" color="neutral" onClick={onCancel}>
+                    {cancelText}
+                  </XButton>
+                }
+              />
+              <DialogClose
+                render={
+                  <XButton variant="solid" color="primary" onClick={onOk}>
+                    {okText}
+                  </XButton>
+                }
+              />
+            </>
+          )}
+        </DialogFooter>
       </DialogContent>
     </Dialog>
   )

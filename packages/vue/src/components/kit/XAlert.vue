@@ -37,10 +37,10 @@ const emit = defineEmits<{
 const visible = ref(true)
 
 const typeClasses: Record<AlertType, string> = {
-  success: 'border-success-3 bg-success-1 text-success-8',
-  info: 'border-info-3 bg-info-1 text-info-8',
-  warning: 'border-warning-3 bg-warning-1 text-warning-8',
-  error: 'border-error-3 bg-error-1 text-error-8',
+  success: 'bg-success-1 text-success-8',
+  info: 'bg-info-1 text-info-8',
+  warning: 'bg-warning-1 text-warning-8',
+  error: 'bg-error-1 text-error-8',
 }
 
 const icons: Record<AlertType, typeof CircleCheck> = {
@@ -57,7 +57,7 @@ function handleClose(event: MouseEvent) {
 </script>
 
 <template>
-  <Alert v-if="visible" :class="cn('flex items-start gap-2', typeClasses[type], props.class)">
+  <Alert v-if="visible" :class="cn('flex items-start gap-2.5', typeClasses[type], props.class)">
     <component :is="icons[type]" v-if="showIcon" class="mt-0.5 size-4 shrink-0" />
     <div class="flex min-w-0 flex-1 flex-col gap-0.5">
       <AlertTitle v-if="message != null || $slots.message"><slot name="message">{{ message }}</slot></AlertTitle>

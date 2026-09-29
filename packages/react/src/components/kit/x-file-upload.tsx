@@ -69,7 +69,7 @@ export function XFileUpload({
           handleFiles(event.dataTransfer.files)
         }}
         className={cn(
-          "flex w-full flex-col items-center justify-center gap-2 rounded-lg border border-dashed border-input px-4 py-6 text-sm text-muted-foreground transition-colors outline-none",
+          "flex w-full flex-col items-center justify-center gap-2 rounded-lg border border-dashed border-input px-4 py-6 text-sm text-muted-foreground transition-colors outline-none cursor-pointer",
           "hover:border-primary-5 hover:bg-primary-1/40 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50",
           dragOver && "border-primary-5 bg-primary-1/40",
           disabled && "pointer-events-none opacity-50",

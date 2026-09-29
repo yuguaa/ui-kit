@@ -57,8 +57,8 @@ export function XInputTags({
   return (
     <span
       className={cn(
-        "flex min-h-9 w-full flex-wrap items-center gap-1.5 rounded-lg border border-input bg-transparent px-2 py-1.5 transition-colors",
-        "focus-within:border-ring focus-within:ring-3 focus-within:ring-ring/50",
+        "flex min-h-9 w-full flex-wrap items-center gap-1.5 rounded-md bg-transparent px-2 py-1.5 transition-[box-shadow,color] ring-1 ring-inset ring-input",
+        "focus-within:ring-2 focus-within:ring-ring",
         disabled && "pointer-events-none opacity-50",
         className,
       )}

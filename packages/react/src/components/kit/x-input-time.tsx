@@ -62,7 +62,7 @@ export function XInputTime({
       <PopoverTrigger
         disabled={disabled}
         render={
-          <button type="button" className={cn("w-full", className)}>
+          <button type="button" className={cn("w-full cursor-pointer", className)}>
             <span className="relative flex w-full items-center">
               <Input readOnly value={current} placeholder="选择时间" className="h-9 pl-9 text-left" />
               <Clock className="pointer-events-none absolute left-3 size-4 text-muted-foreground" />

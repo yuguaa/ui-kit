@@ -2,6 +2,7 @@
 /**
  * XModal 对话框：模态对话框，用于承载需要用户确认的信息或操作。
  * 底部操作区默认提供取消与确定按钮，可通过 footer 插槽自定义。
+ * 动效（Nuxt UI 模式）：遮罩淡入淡出，内容缩放进出场（dialog 原子 CSS 动画）。
  */
 import type { HTMLAttributes } from 'vue'
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@/components/ui/dialog'
@@ -55,7 +56,7 @@ function onOpenChange(next: boolean) {
       :class="cn('p-0', centered && 'translate-y-0', !centered && 'top-24', props.class)"
       :style="{ width: `${width}px`, maxWidth: '90vw' }"
     >
-      <DialogHeader class="border-b border-border px-5 py-4">
+      <DialogHeader class="px-5 py-4">
         <DialogTitle v-if="title != null || $slots.title"><slot name="title">{{ title }}</slot></DialogTitle>
         <DialogDescription v-if="description != null || $slots.description">
           <slot name="description">{{ description }}</slot>
@@ -64,7 +65,7 @@ function onOpenChange(next: boolean) {
       <div class="px-5 py-4 text-sm">
         <slot name="content" />
       </div>
-      <DialogFooter class="border-t border-border px-5 py-3">
+      <DialogFooter class="px-5 py-4">
         <slot name="footer">
           <DialogClose as-child>
             <XButton variant="outline" color="neutral" @click="emit('cancel', $event)">{{ cancelText }}</XButton>

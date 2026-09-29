@@ -1,9 +1,8 @@
 /**
  * XCard 卡片：通用容器，承载标题、操作区、封面与底部操作。
- * hoverable 时悬浮上浮 2px 并加深阴影。
+ * hoverable 时阴影加深并高亮 ring 边框色（CSS 过渡，无位移动画）。
  */
 import * as React from "react"
-import { motion } from "motion/react"
 import {
   CardContent,
   CardDescription,
@@ -11,7 +10,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
-import { kitMotion } from "@/lib/kit/motion"
 import { cn } from "@/lib/utils"
 
 export type XCardSize = "default" | "small"
@@ -21,7 +19,7 @@ const cardSizeClasses: Record<XCardSize, string> = {
   small: "gap-3 p-3",
 }
 
-export interface XCardProps extends Omit<React.ComponentProps<typeof motion.div>, "onClick" | "onMouseEnter" | "children" | "title"> {
+export interface XCardProps extends Omit<React.ComponentProps<"div">, "onClick" | "onMouseEnter" | "children" | "title"> {
   /** 卡片标题 */
   title?: React.ReactNode
   /** 标题下方的辅助描述 */
@@ -30,7 +28,7 @@ export interface XCardProps extends Omit<React.ComponentProps<typeof motion.div>
   extra?: React.ReactNode
   /** 是否显示边框 */
   bordered?: boolean
-  /** 悬浮时提升效果 */
+  /** 悬浮时阴影加深并高亮边框色 */
   hoverable?: boolean
   /** 卡片尺寸 */
   size?: XCardSize
@@ -61,15 +59,14 @@ export function XCard({
   ...props
 }: XCardProps) {
   return (
-    <motion.div
+    <div
       data-slot="card"
-      whileHover={hoverable ? { y: -2 } : undefined}
-      transition={kitMotion.tokens.fast}
       onClick={onClick}
       onMouseEnter={onHover}
       className={cn(
-        "overflow-hidden rounded-lg border bg-card text-card-foreground",
-        hoverable && "cursor-pointer hover:shadow-md",
+        "overflow-hidden rounded-lg bg-card text-card-foreground",
+        bordered && "ring-1 ring-inset ring-border",
+        hoverable && "cursor-pointer transition-shadow duration-200 hover:shadow-md hover:ring-primary-3",
         className,
       )}
       {...props}
@@ -88,6 +85,6 @@ export function XCard({
       )}
       {children != null && <CardContent className={cn(cardSizeClasses[size], !bordered && "border-0")}>{children}</CardContent>}
       {actions != null && <CardFooter className={cn(!bordered && "border-0")}>{actions}</CardFooter>}
-    </motion.div>
+    </div>
   )
 }

@@ -63,7 +63,7 @@ export function XNavigationMenu({
         onSelect?.(item)
       }}
       className={cn(
-        "flex w-full items-center gap-2 rounded-md px-3 py-1.5 text-left text-sm outline-none transition-colors",
+        "flex w-full cursor-pointer items-center gap-2 rounded-md px-3 py-1.5 text-left text-sm outline-none transition-colors",
         "hover:bg-muted focus-visible:bg-muted disabled:pointer-events-none disabled:opacity-50",
         depth > 0 && "pl-8",
         selectedKeys.includes(item.key) &&
@@ -83,7 +83,7 @@ export function XNavigationMenu({
           <button
             type="button"
             onClick={() => setOpenKey(openKey === item.key ? null : item.key)}
-            className="flex w-full items-center gap-2 rounded-md px-3 py-1.5 text-left text-sm outline-none hover:bg-muted"
+            className="flex w-full cursor-pointer items-center gap-2 rounded-md px-3 py-1.5 text-left text-sm outline-none hover:bg-muted"
           >
             {item.icon}
             <span className="flex-1 truncate">{item.label}</span>
@@ -102,7 +102,7 @@ export function XNavigationMenu({
             <button
               type="button"
               className={cn(
-                "flex w-full items-center gap-2 rounded-md px-3 py-1.5 text-left text-sm outline-none",
+                "flex w-full cursor-pointer items-center gap-2 rounded-md px-3 py-1.5 text-left text-sm outline-none",
                 "hover:bg-muted focus-visible:bg-muted",
                 selectedKeys.includes(item.key) &&
                   (theme === "light" ? "bg-primary-1 text-primary-7" : "bg-white/10 text-white"),

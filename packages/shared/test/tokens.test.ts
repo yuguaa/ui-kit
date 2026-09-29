@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { kitMotion, motionTokens } from "../src/motion";
+import { kitMotion, motionDurations, overlayMotions } from "../src/motion";
 import { fontSizeScale, radiusScale, shadowScale, spacingScale, tokensToCssVars } from "../src/tokens";
 import {
   buttonVariantStyles,
@@ -31,14 +31,20 @@ describe("tokens", () => {
 });
 
 describe("motion", () => {
-  it("三档动效：fast 120ms、base 200ms、slow 300ms spring", () => {
-    expect(motionTokens.fast).toEqual({ duration: 0.12, ease: "easeOut" });
-    expect(motionTokens.base).toEqual({ duration: 0.2, ease: "easeInOut" });
-    expect(motionTokens.slow).toEqual({ duration: 0.3, type: "spring" });
+  it("弹层 100ms、对话框与控制件 200ms（Nuxt UI 模式）", () => {
+    expect(motionDurations.overlay).toBe(100);
+    expect(motionDurations.dialog).toBe(200);
+    expect(motionDurations.control).toBe(200);
+  });
+
+  it("弹层出入场为 scale 0.95 + 淡入淡出，无位移动画", () => {
+    expect(overlayMotions.enter).toBe("animate-[scale-in_100ms_ease-out]");
+    expect(overlayMotions.exit).toBe("animate-[scale-out_100ms_ease-out]");
   });
 
   it("kitMotion 为 registry 分发的纯常量版本", () => {
-    expect(kitMotion.tokens.base.duration).toBe(0.2);
+    expect(kitMotion.durations.dialog).toBe(200);
+    expect(kitMotion.overlay.enter).toBe("animate-[scale-in_100ms_ease-out]");
   });
 });
 

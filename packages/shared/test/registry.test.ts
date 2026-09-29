@@ -125,7 +125,6 @@ describe.each(["react", "vue"] as const)("%s registry", (framework) => {
     const atomNames = [
       ...kitItems,
       "utils",
-      "motion",
       "button",
       "badge",
       "avatar",
@@ -193,11 +192,9 @@ describe("框架差异化落盘规则", () => {
     expect(item.files[0]?.type).toBe("registry:component");
   });
 
-  it("motion item 落盘到 lib/kit", () => {
-    const reactMotion = loadItem("react", "motion");
-    expect(reactMotion.files[0]?.target).toBe("lib/kit/motion.ts");
-    const vueMotion = loadItem("vue", "motion");
-    expect(vueMotion.files[0]?.path).toBe("lib/kit/motion.ts");
+  it("x-button 不再依赖 motion item", () => {
+    const item = loadItem("react", "x-button");
+    expect(item.registryDependencies).not.toContain("@ui-kit/motion");
   });
 });
 

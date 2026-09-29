@@ -88,7 +88,7 @@ export function XColorPicker({
               type="button"
               aria-label={preset}
               onClick={() => update(preset)}
-              className="inline-flex size-6 items-center justify-center rounded-md border border-black/10 outline-none transition-transform hover:scale-110"
+              className="inline-flex size-6 items-center justify-center rounded-md border border-black/10 outline-none transition-colors hover:border-primary-5"
               style={{ backgroundColor: preset }}
             >
               {current.toLowerCase() === preset.toLowerCase() && (
