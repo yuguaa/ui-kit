@@ -8,12 +8,12 @@ description: 操作后的轻量级全局消息通知
 操作后的轻量级全局消息通知。应用根部挂载 `<XToaster />`，任意位置调用 `useToast().show / .dismiss`。
 
 <script setup>
-import OverlayBasic from '@demos/vue/overlay-basic.vue'
-import overlayBasicRaw from '@demos/vue/overlay-basic.vue.code.txt?raw'
+import ToastBasicDemo from '@demos/vue/toast-basic-demo.vue'
+import toastBasicDemoRaw from '@demos/vue/toast-basic-demo.vue.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="点击「成功通知」「失败通知」按钮体验" :code="overlayBasicRaw">
-  <OverlayBasic />
+<DemoBlock title="三种语义通知" description="useToast().show + XToaster" :code="toastBasicDemoRaw">
+  <ToastBasicDemo />
 </DemoBlock>
 
 ## 安装

@@ -8,12 +8,12 @@ description: 从屏幕边缘滑出的面板，承载额外内容或操作
 从屏幕边缘滑出的面板，承载额外内容或操作。
 
 <script setup>
-import OverlayBasic from '@demos/react/overlay-basic'
-import overlayBasicRaw from '@demos/react/overlay-basic.tsx.code.txt?raw'
+import DrawerBasicDemo from '@demos/react/drawer-basic-demo'
+import drawerBasicDemoRaw from '@demos/react/drawer-basic-demo.tsx.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="点击「抽屉」按钮打开，右侧滑出" :code="overlayBasicRaw">
-  <ReactDemo :component="OverlayBasic" />
+<DemoBlock title="左右两侧" description="side 控制滑出方向" :code="drawerBasicDemoRaw">
+  <ReactDemo :component="DrawerBasicDemo" />
 </DemoBlock>
 
 ## 安装

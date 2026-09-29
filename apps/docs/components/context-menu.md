@@ -8,12 +8,12 @@ description: 在指定区域右键唤出的上下文菜单
 在指定区域右键唤出的上下文菜单。
 
 <script setup>
-import OverlayBasic from '@demos/vue/overlay-basic.vue'
-import overlayBasicRaw from '@demos/vue/overlay-basic.vue.code.txt?raw'
+import MenuBasicDemo from '@demos/vue/menu-basic-demo.vue'
+import menuBasicDemoRaw from '@demos/vue/menu-basic-demo.vue.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="在「在此区域右键」区域内右键体验" :code="overlayBasicRaw">
-  <OverlayBasic />
+<DemoBlock title="右键菜单" description="items / 默认插槽为触发区域" :code="menuBasicDemoRaw">
+  <MenuBasicDemo />
 </DemoBlock>
 
 ## 安装

@@ -8,12 +8,12 @@ description: 从侧边滑入的浮层，常用于移动端导航
 从侧边滑入的浮层，常用于移动端导航。
 
 <script setup>
-import OverlayBasic from '@demos/react/overlay-basic'
-import overlayBasicRaw from '@demos/react/overlay-basic.tsx.code.txt?raw'
+import SlideoverBasicDemo from '@demos/react/slideover-basic-demo'
+import slideoverBasicDemoRaw from '@demos/react/slideover-basic-demo.tsx.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="点击「侧滑」按钮打开，常用于移动端导航" :code="overlayBasicRaw">
-  <ReactDemo :component="OverlayBasic" />
+<DemoBlock title="侧滑面板与导航链接" description="open / title / 内容" :code="slideoverBasicDemoRaw">
+  <ReactDemo :component="SlideoverBasicDemo" />
 </DemoBlock>
 
 ## 安装

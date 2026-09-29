@@ -8,12 +8,12 @@ description: 从侧边滑入的浮层，常用于移动端导航
 从侧边滑入的浮层，常用于移动端导航。
 
 <script setup>
-import OverlayBasic from '@demos/vue/overlay-basic.vue'
-import overlayBasicRaw from '@demos/vue/overlay-basic.vue.code.txt?raw'
+import SlideoverBasicDemo from '@demos/vue/slideover-basic-demo.vue'
+import slideoverBasicDemoRaw from '@demos/vue/slideover-basic-demo.vue.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="点击「侧滑」按钮打开，常用于移动端导航" :code="overlayBasicRaw">
-  <OverlayBasic />
+<DemoBlock title="侧滑面板与导航链接" description="open / title / content 插槽" :code="slideoverBasicDemoRaw">
+  <SlideoverBasicDemo />
 </DemoBlock>
 
 ## 安装

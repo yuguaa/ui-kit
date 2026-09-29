@@ -8,12 +8,12 @@ description: 点击按钮展开的操作菜单
 点击按钮展开的操作菜单。
 
 <script setup>
-import OverlayBasic from '@demos/vue/overlay-basic.vue'
-import overlayBasicRaw from '@demos/vue/overlay-basic.vue.code.txt?raw'
+import MenuBasicDemo from '@demos/vue/menu-basic-demo.vue'
+import menuBasicDemoRaw from '@demos/vue/menu-basic-demo.vue.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="点击「操作」按钮展开菜单，支持分隔线" :code="overlayBasicRaw">
-  <OverlayBasic />
+<DemoBlock title="操作菜单" description="items / separator 分隔线" :code="menuBasicDemoRaw">
+  <MenuBasicDemo />
 </DemoBlock>
 
 ## 安装

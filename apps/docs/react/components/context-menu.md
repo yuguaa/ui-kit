@@ -8,12 +8,12 @@ description: 在指定区域右键唤出的上下文菜单
 在指定区域右键唤出的上下文菜单。
 
 <script setup>
-import OverlayBasic from '@demos/react/overlay-basic'
-import overlayBasicRaw from '@demos/react/overlay-basic.tsx.code.txt?raw'
+import MenuBasicDemo from '@demos/react/menu-basic-demo'
+import menuBasicDemoRaw from '@demos/react/menu-basic-demo.tsx.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="在「在此区域右键」区域内右键体验" :code="overlayBasicRaw">
-  <ReactDemo :component="OverlayBasic" />
+<DemoBlock title="右键菜单" description="items / 默认插槽为触发区域" :code="menuBasicDemoRaw">
+  <ReactDemo :component="MenuBasicDemo" />
 </DemoBlock>
 
 ## 安装

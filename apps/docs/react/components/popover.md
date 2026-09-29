@@ -8,12 +8,12 @@ description: 点击或悬停触发的轻量气泡卡片
 点击或悬停触发的轻量气泡卡片。
 
 <script setup>
-import OverlayBasic from '@demos/react/overlay-basic'
-import overlayBasicRaw from '@demos/react/overlay-basic.tsx.code.txt?raw'
+import PopoverBasicDemo from '@demos/react/popover-basic-demo'
+import popoverBasicDemoRaw from '@demos/react/popover-basic-demo.tsx.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="点击「打开气泡」按钮查看标题与说明" :code="overlayBasicRaw">
-  <ReactDemo :component="OverlayBasic" />
+<DemoBlock title="四个方向" description="side / trigger / title / content" :code="popoverBasicDemoRaw">
+  <ReactDemo :component="PopoverBasicDemo" />
 </DemoBlock>
 
 ## 安装

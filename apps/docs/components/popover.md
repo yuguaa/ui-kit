@@ -8,12 +8,12 @@ description: 点击或悬停触发的轻量气泡卡片
 点击或悬停触发的轻量气泡卡片。
 
 <script setup>
-import OverlayBasic from '@demos/vue/overlay-basic.vue'
-import overlayBasicRaw from '@demos/vue/overlay-basic.vue.code.txt?raw'
+import PopoverBasicDemo from '@demos/vue/popover-basic-demo.vue'
+import popoverBasicDemoRaw from '@demos/vue/popover-basic-demo.vue.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="点击「打开气泡」按钮查看标题与说明" :code="overlayBasicRaw">
-  <OverlayBasic />
+<DemoBlock title="四个方向" description="side / trigger / title / content" :code="popoverBasicDemoRaw">
+  <PopoverBasicDemo />
 </DemoBlock>
 
 ## 安装

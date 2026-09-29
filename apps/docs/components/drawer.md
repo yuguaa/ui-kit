@@ -8,12 +8,12 @@ description: 从屏幕边缘滑出的面板，承载额外内容或操作
 从屏幕边缘滑出的面板，承载额外内容或操作。
 
 <script setup>
-import OverlayBasic from '@demos/vue/overlay-basic.vue'
-import overlayBasicRaw from '@demos/vue/overlay-basic.vue.code.txt?raw'
+import DrawerBasicDemo from '@demos/vue/drawer-basic-demo.vue'
+import drawerBasicDemoRaw from '@demos/vue/drawer-basic-demo.vue.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="点击「抽屉」按钮打开，右侧滑出" :code="overlayBasicRaw">
-  <OverlayBasic />
+<DemoBlock title="左右两侧" description="side 控制滑出方向" :code="drawerBasicDemoRaw">
+  <DrawerBasicDemo />
 </DemoBlock>
 
 ## 安装

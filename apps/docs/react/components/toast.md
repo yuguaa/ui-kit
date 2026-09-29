@@ -8,12 +8,12 @@ description: 操作后的轻量级全局消息通知
 操作后的轻量级全局消息通知。应用根部挂载 `<XToaster />`，任意位置调用 `toast.show / .dismiss`。
 
 <script setup>
-import OverlayBasic from '@demos/react/overlay-basic'
-import overlayBasicRaw from '@demos/react/overlay-basic.tsx.code.txt?raw'
+import ToastBasicDemo from '@demos/react/toast-basic-demo'
+import toastBasicDemoRaw from '@demos/react/toast-basic-demo.tsx.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="点击「成功通知」「失败通知」按钮体验" :code="overlayBasicRaw">
-  <ReactDemo :component="OverlayBasic" />
+<DemoBlock title="三种语义通知" description="toast.show + XToaster" :code="toastBasicDemoRaw">
+  <ReactDemo :component="ToastBasicDemo" />
 </DemoBlock>
 
 ## 安装

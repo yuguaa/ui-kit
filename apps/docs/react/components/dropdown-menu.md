@@ -8,12 +8,12 @@ description: 点击按钮展开的操作菜单
 点击按钮展开的操作菜单。
 
 <script setup>
-import OverlayBasic from '@demos/react/overlay-basic'
-import overlayBasicRaw from '@demos/react/overlay-basic.tsx.code.txt?raw'
+import MenuBasicDemo from '@demos/react/menu-basic-demo'
+import menuBasicDemoRaw from '@demos/react/menu-basic-demo.tsx.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="点击「操作」按钮展开菜单，支持分隔线" :code="overlayBasicRaw">
-  <ReactDemo :component="OverlayBasic" />
+<DemoBlock title="操作菜单" description="items / separator 分隔线" :code="menuBasicDemoRaw">
+  <ReactDemo :component="MenuBasicDemo" />
 </DemoBlock>
 
 ## 安装
