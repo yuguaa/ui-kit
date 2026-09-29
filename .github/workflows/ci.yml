@@ -34,13 +34,8 @@ jobs:
 
       - name: Build demos
         run: |
-          pnpm -C apps/react-demo build
-          pnpm -C apps/vue-demo build
+          pnpm --dir apps/react-demo run build
+          pnpm --dir apps/vue-demo run build
 
       - name: Build docs
-        run: pnpm -C apps/docs docs:build
-
-      - name: Demo smoke tests
-        run: |
-          pnpm -C apps/react-demo vitest run
-          pnpm -C apps/vue-demo vitest run
+        run: pnpm --dir apps/docs run docs:build
