@@ -30,3 +30,8 @@ npx shadcn@latest add @ui-kit/x-slider
 | min / max | number | 0 / 100 | 最小值 / 最大值 |
 | step | number | 1 | 步长 |
 | disabled | boolean | false | 是否禁用 |
+
+## 动效
+
+- 拖动：即时响应
+- thumb：hover / focus 聚焦环过渡

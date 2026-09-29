@@ -8,12 +8,22 @@ description: 简单的文字提示气泡，悬浮时显示
 简单的文字提示气泡，悬浮时显示。
 
 <script setup>
-import OverlayBasic from '@demos/react/overlay-basic'
-import overlayBasicRaw from '@demos/react/overlay-basic.tsx.code.txt?raw'
+import TooltipPlacement from '@demos/react/tooltip-placement'
+import tooltipPlacementRaw from '@demos/react/tooltip-placement.tsx.code.txt?raw'
+import TooltipTrigger from '@demos/react/tooltip-trigger'
+import tooltipTriggerRaw from '@demos/react/tooltip-trigger.tsx.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="悬浮「悬浮查看提示」按钮查看" :code="overlayBasicRaw">
-  <ReactDemo :component="OverlayBasic" />
+## 位置
+
+<DemoBlock title="四个方向" description="placement 控制弹出方向" :code="tooltipPlacementRaw">
+  <ReactDemo :component="TooltipPlacement" />
+</DemoBlock>
+
+## 触发方式
+
+<DemoBlock title="hover / click / focus" description="trigger 控制触发方式" :code="tooltipTriggerRaw">
+  <ReactDemo :component="TooltipTrigger" />
 </DemoBlock>
 
 ## 安装
@@ -40,3 +50,7 @@ npx shadcn@latest add @ui-kit/x-tooltip
 const [Tooltip, tooltipApi] = useXTooltip({ title: "提示文字" })
 tooltipApi.show()   // show / hide / toggle / setState
 ```
+
+## 动效
+
+- 弹出：淡入 + 缩放（scale 0.95，100ms）

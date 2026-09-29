@@ -48,3 +48,7 @@ npx shadcn-vue@latest add @ui-kit/x-context-menu
 const [ContextMenu, menuApi] = useXContextMenu({ items: [...] })
 menuApi.open()   // open / close / toggle
 ```
+
+## 动效
+
+- 弹层：淡入 + 缩放进出场（scale 0.95，100ms）

@@ -35,3 +35,7 @@ npx shadcn-vue@latest add @ui-kit/x-avatar-group
 | --- | --- |
 | default | 头像列表 |
 | plus | 自定义溢出标记 |
+
+## 动效
+
+无动效：静态展示组件。

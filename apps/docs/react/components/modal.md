@@ -8,12 +8,22 @@ description: 模态对话框，用于承载需要用户确认的信息或操作
 模态对话框，用于承载需要用户确认的信息或操作。底部操作区默认提供取消与确定按钮，可通过 footer 自定义。
 
 <script setup>
-import OverlayBasic from '@demos/react/overlay-basic'
-import overlayBasicRaw from '@demos/react/overlay-basic.tsx.code.txt?raw'
+import ModalBasicDemo from '@demos/react/modal-basic-demo'
+import modalBasicDemoRaw from '@demos/react/modal-basic-demo.tsx.code.txt?raw'
+import ModalHook from '@demos/react/modal-hook'
+import modalHookRaw from '@demos/react/modal-hook.tsx.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="点击「对话框」按钮打开，默认底部含取消与确定" :code="overlayBasicRaw">
-  <ReactDemo :component="OverlayBasic" />
+## 基础用法
+
+<DemoBlock title="受控打开与确认回调" description="open / onOpenChange / onOk / onCancel" :code="modalBasicDemoRaw">
+  <ReactDemo :component="ModalBasicDemo" />
+</DemoBlock>
+
+## hook 用法
+
+<DemoBlock title="hook 先行" description="useXModal 返回 [Modal, modalApi]，api 控制打开关闭与 setState" :code="modalHookRaw">
+  <ReactDemo :component="ModalHook" />
 </DemoBlock>
 
 ## 安装
@@ -44,3 +54,8 @@ const [Modal, modalApi] = useXModal({ title: "对话框标题", onOk: () => {} }
 modalApi.open()      // open / close / toggle
 modalApi.setState({ title: "新标题" })
 ```
+
+## 动效
+
+- 遮罩：淡入淡出（200ms）
+- 面板：缩放进出场（scale 0.95，200ms）

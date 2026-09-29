@@ -28,3 +28,7 @@ npx shadcn@latest add @ui-kit/x-field-group
 | --- | --- | --- | --- |
 | size | sm · md · lg | md | 尺寸 |
 | inline | boolean | true | 是否同行排列 |
+
+## 动效
+
+无动效：布局容器组件。

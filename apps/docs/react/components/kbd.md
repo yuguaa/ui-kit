@@ -12,3 +12,7 @@ description: 基础组件 kbd
 ```bash
 npx shadcn@latest add @ui-kit/x-kbd
 ```
+
+## 动效
+
+无动效：静态展示组件。

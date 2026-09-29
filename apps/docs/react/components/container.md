@@ -28,3 +28,7 @@ npx shadcn@latest add @ui-kit/x-container
 | --- | --- | --- | --- |
 | size | xs · sm · md · lg · xl | lg | 最大宽度 |
 | as | keyof JSX.IntrinsicElements | div | 渲染标签 |
+
+## 动效
+
+无动效：布局容器组件。

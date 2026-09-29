@@ -40,3 +40,8 @@ npx shadcn@latest add @ui-kit/x-carousel
 const [Carousel, carouselApi] = useXCarousel({ items: [...] })
 carouselApi.next()   // next / prev
 ```
+
+## 动效
+
+- 轮播切换：滑动过渡（embla）
+- 无其他动效

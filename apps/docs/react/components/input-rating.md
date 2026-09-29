@@ -32,3 +32,8 @@ npx shadcn@latest add @ui-kit/x-input-rating
 | disabled | boolean | false | 是否禁用 |
 | item | (state) => ReactNode | - | 自定义图标渲染（{ filled, half }） |
 | onChange | (value) => void | - | 评分变化回调 |
+
+## 动效
+
+- 星标：hover 颜色过渡
+- 无位移动画

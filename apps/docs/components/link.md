@@ -38,3 +38,8 @@ npx shadcn-vue@latest add @ui-kit/x-link
 | default | 链接内容 |
 | leading | 前置图标 |
 | trailing | 后置图标 |
+
+## 动效
+
+- hover：文字颜色过渡
+- 无位移动画

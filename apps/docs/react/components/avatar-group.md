@@ -29,3 +29,7 @@ npx shadcn@latest add @ui-kit/x-avatar-group
 | max | number | 4 | 最多显示数量 |
 | size | xs · sm · md · lg · xl | md | 头像尺寸 |
 | plus | ReactNode | - | 自定义溢出标记 |
+
+## 动效
+
+无动效：静态展示组件。

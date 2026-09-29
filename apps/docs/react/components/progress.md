@@ -8,12 +8,24 @@ description: 展示操作的当前进度，支持线形与圆形
 展示操作的当前进度，支持线形与圆形两种类型。
 
 <script setup>
-import ContentBasic from '@demos/react/content-basic'
-import contentBasicRaw from '@demos/react/content-basic.tsx.code.txt?raw'
+import ProgressLine from '@demos/react/progress-line'
+import progressLineRaw from '@demos/react/progress-line.tsx.code.txt?raw'
+import ProgressCircle from '@demos/react/progress-circle'
+import progressCircleRaw from '@demos/react/progress-circle.tsx.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="线形进度 + 状态 + 圆形进度" :code="contentBasicRaw">
-  <ReactDemo :component="ContentBasic" />
+## 线形进度
+
+status 控制语义色，active 状态带指示器脉冲。
+
+<DemoBlock title="线形与状态" description="percent / status" :code="progressLineRaw">
+  <ReactDemo :component="ProgressLine" />
+</DemoBlock>
+
+## 圆形进度
+
+<DemoBlock title="圆形与隐藏数值" description="type=circle / size / showInfo" :code="progressCircleRaw">
+  <ReactDemo :component="ProgressCircle" />
 </DemoBlock>
 
 ## 安装
@@ -32,3 +44,8 @@ npx shadcn@latest add @ui-kit/x-progress
 | strokeColor | string | 主色 | 进度条颜色 |
 | showInfo | boolean | true | 是否显示数值 |
 | size | number | 96 | 圆形直径（px） |
+
+## 动效
+
+- 值变化：描边过渡（200ms）
+- active：指示器脉冲动画

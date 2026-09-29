@@ -8,12 +8,12 @@ description: 表示两种状态之间的切换
 表示两种状态之间的切换，支持选中/未选中文字与两档尺寸。
 
 <script setup>
-import InputBasic from '@demos/vue/input-basic.vue'
-import inputBasicRaw from '@demos/vue/input-basic.vue.code.txt?raw'
+import SwitchBasicDemo from '@demos/vue/switch-basic-demo.vue'
+import switchBasicDemoRaw from '@demos/vue/switch-basic-demo.vue.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="表单控件全景（示例中含开关）" :code="inputBasicRaw">
-  <InputBasic />
+<DemoBlock title="开关 / 文字 / 尺寸" description="v-model / checkedChildren 插槽 / size / disabled" :code="switchBasicDemoRaw">
+  <SwitchBasicDemo />
 </DemoBlock>
 
 ## 安装
@@ -37,3 +37,7 @@ npx shadcn-vue@latest add @ui-kit/x-switch
 | --- | --- |
 | checkedChildren | 开启状态文字插槽 |
 | unCheckedChildren | 关闭状态文字插槽 |
+
+## 动效
+
+- 滑块：位移过渡 + 背景色过渡（200ms ease-out）

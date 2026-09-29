@@ -34,3 +34,7 @@ npx shadcn-vue@latest add @ui-kit/x-field-group
 | 名称 | 说明 |
 | --- | --- |
 | default | 字段内容 |
+
+## 动效
+
+无动效：布局容器组件。

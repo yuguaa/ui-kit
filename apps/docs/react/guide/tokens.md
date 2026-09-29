@@ -51,10 +51,14 @@ shadcn 语义变量 + 色阶派生。主色 seed `#1677ff`，通过 `@ant-design
 
 ## 动效 Motion
 
-| token | 时长 / 缓动 | 用途 |
-| --- | --- | --- |
-| fast | 120ms ease-out | press / hover 即时反馈 |
-| base | 200ms ease-in-out | enter / exit / 颜色变化 |
-| slow | 300ms spring | layout / 卡片展开 |
+全部使用 CSS keyframes 与 transition（不引入 JS 动效库）：
 
-交互动效规范：hover 上浮 2px + 阴影加深，press 缩放 0.98，focus 聚焦环扩散，enter 淡入上移，exit 淡出上移。
+| 场景 | 动效 | 时长 |
+| --- | --- | --- |
+| 弹层（Popover / Tooltip / 菜单类） | scale 0.95 + 淡入淡出 | 100ms ease-out |
+| 弹窗（Modal / CommandPalette） | 遮罩淡入淡出 + 内容缩放 | 200ms ease-out |
+| 抽屉 / 侧滑 | 方向滑入滑出 + 遮罩淡入淡出 | 200ms ease-out |
+| 控件（Switch / Tabs） | 位移与背景过渡 | 200ms ease-out |
+| hover / active | 背景色与文字色过渡 | transition-colors |
+
+动效原则：hover 与 active 只有颜色过渡，无位移与缩放；弹层只缩放与滑动；`prefers-reduced-motion` 下保留淡入淡出、去除位移与缩放。

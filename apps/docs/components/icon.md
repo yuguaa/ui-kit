@@ -56,3 +56,7 @@ npx shadcn-vue@latest add @ui-kit/x-skeleton
 | loading | boolean | true | 是否显示骨架 |
 | variant | text · circle · rect | rect | 形状 |
 | width / height | number · string | - | 宽高 |
+
+## 动效
+
+无动效：静态展示组件。

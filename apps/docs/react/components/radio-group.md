@@ -29,3 +29,9 @@ npx shadcn@latest add @ui-kit/x-radio-group
 | options | { value, label?, disabled? }[] | - | 选项数据源 |
 | variant | radio · button | radio | 展示形式 |
 | buttonStyle | outline · solid | outline | 按钮样式（variant 为 button 时生效） |
+
+## 动效
+
+- 勾选：状态颜色过渡
+- focus：聚焦环过渡
+- 无位移动画

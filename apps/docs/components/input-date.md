@@ -44,3 +44,8 @@ npx shadcn-vue@latest add @ui-kit/x-input-time
 | hour12 | boolean | false | 12 小时制 |
 | step | number | 1 | 步长（分钟） |
 | disabled | boolean | false | 是否禁用 |
+
+## 动效
+
+- 弹层：淡入 + 缩放进出场（scale 0.95，100ms）
+- 触发按钮：focus ring 过渡

@@ -34,3 +34,8 @@ npx shadcn-vue@latest add @ui-kit/x-textarea
 | status | error · warning | - | 校验状态 |
 
 **方法**（ref 调用）：focus() · blur()
+
+## 动效
+
+- focus：ring 加粗过渡（transition-[box-shadow,color]）
+- 无位移动画

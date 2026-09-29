@@ -36,3 +36,7 @@ npx shadcn-vue@latest add @ui-kit/x-pin-input
 | 名称 | 说明 |
 | --- | --- |
 | complete | 输入完成回调 |
+
+## 动效
+
+无动效：光标闪烁为浏览器默认行为。

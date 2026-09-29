@@ -37,3 +37,7 @@ npx shadcn@latest add @ui-kit/x-scroll-area
 const [ScrollArea, scrollAreaApi] = useXScrollArea({ height: 200 })
 scrollAreaApi.scrollTo(0)
 ```
+
+## 动效
+
+无动效：原生滚动行为。

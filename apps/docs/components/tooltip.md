@@ -8,12 +8,22 @@ description: 简单的文字提示气泡，悬浮时显示
 简单的文字提示气泡，悬浮时显示。
 
 <script setup>
-import OverlayBasic from '@demos/vue/overlay-basic.vue'
-import overlayBasicRaw from '@demos/vue/overlay-basic.vue.code.txt?raw'
+import TooltipPlacement from '@demos/vue/tooltip-placement.vue'
+import tooltipPlacementRaw from '@demos/vue/tooltip-placement.vue.code.txt?raw'
+import TooltipTrigger from '@demos/vue/tooltip-trigger.vue'
+import tooltipTriggerRaw from '@demos/vue/tooltip-trigger.vue.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="悬浮「悬浮查看提示」按钮查看" :code="overlayBasicRaw">
-  <OverlayBasic />
+## 位置
+
+<DemoBlock title="四个方向" description="placement 控制弹出方向" :code="tooltipPlacementRaw">
+  <TooltipPlacement />
+</DemoBlock>
+
+## 触发方式
+
+<DemoBlock title="hover / click / focus" description="trigger 控制触发方式" :code="tooltipTriggerRaw">
+  <TooltipTrigger />
 </DemoBlock>
 
 ## 安装
@@ -46,3 +56,7 @@ npx shadcn-vue@latest add @ui-kit/x-tooltip
 const [Tooltip, tooltipApi] = useXTooltip({ title: '提示文字' })
 tooltipApi.show()   // show / hide / toggle / setState
 ```
+
+## 动效
+
+- 弹出：淡入 + 缩放（scale 0.95，100ms）

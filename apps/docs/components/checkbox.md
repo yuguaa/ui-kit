@@ -8,12 +8,12 @@ description: 在一组可选项中进行多项选择
 在一组可选项中进行多项选择，支持半选状态。
 
 <script setup>
-import InputBasic from '@demos/vue/input-basic.vue'
-import inputBasicRaw from '@demos/vue/input-basic.vue.code.txt?raw'
+import CheckboxBasicDemo from '@demos/vue/checkbox-basic-demo.vue'
+import checkboxBasicDemoRaw from '@demos/vue/checkbox-basic-demo.vue.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="表单控件全景（示例中含多选框与半选状态）" :code="inputBasicRaw">
-  <InputBasic />
+<DemoBlock title="选中 / 半选 / 禁用" description="v-model / indeterminate / disabled" :code="checkboxBasicDemoRaw">
+  <CheckboxBasicDemo />
 </DemoBlock>
 
 ## 安装
@@ -36,3 +36,9 @@ npx shadcn-vue@latest add @ui-kit/x-checkbox
 | 名称 | 说明 |
 | --- | --- |
 | label | 选项文字插槽 |
+
+## 动效
+
+- 勾选：状态颜色过渡
+- focus：聚焦环过渡
+- 无位移动画

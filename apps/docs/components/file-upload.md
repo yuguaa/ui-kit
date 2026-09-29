@@ -45,3 +45,7 @@ npx shadcn-vue@latest add @ui-kit/x-file-upload
 | upload | 上传回调（files） |
 
 **方法**（ref 调用）：clear()
+
+## 动效
+
+- 拖拽区：hover 边框高亮 + 背景过渡

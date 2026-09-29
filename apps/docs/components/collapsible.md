@@ -45,3 +45,8 @@ npx shadcn-vue@latest add @ui-kit/x-collapsible
 const [Collapsible, collapsibleApi] = useXCollapsible()
 collapsibleApi.toggle()   // open 可读，toggle / setOpen
 ```
+
+## 动效
+
+- 展开 / 收起：内容区高度过渡
+- 箭头：旋转过渡

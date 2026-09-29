@@ -1,7 +1,12 @@
 /* 组件运行环境：Tailwind v4 + 设计 token（seed #1677ff 派生色阶） */
-@import "tailwindcss";
+/* VitePress 下 Tailwind 自动源检测不覆盖 demo 与 vendor，显式声明扫描范围 */
+/* VitePress normalize 为未分层样式，会压过分层 utilities，用 important 让组件样式胜出 */
+@import "tailwindcss" important;
 @import "tw-animate-css";
 @import "@/lib/kit/kit-theme.css";
+@source "../../demos";
+@source "../../vendor";
+@source "../.vitepress/theme";
 
 @custom-variant dark (&:is(.dark *));
 

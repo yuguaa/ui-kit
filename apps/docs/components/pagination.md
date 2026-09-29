@@ -43,3 +43,7 @@ npx shadcn-vue@latest add @ui-kit/x-pagination
 | 名称 | 说明 |
 | --- | --- |
 | change | 页码或每页条数变化回调 (page, pageSize) |
+
+## 动效
+
+- 页面项：hover 背景过渡

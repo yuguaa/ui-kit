@@ -30,3 +30,8 @@ npx shadcn@latest add @ui-kit/x-input-tags
 | max | number | - | 最大标签数 |
 | placeholder | string | 输入后回车添加… | 占位文字 |
 | onAdd / onRemove | (tag) / (index) => void | - | 添加 / 删除回调 |
+
+## 动效
+
+- 容器：focus ring 过渡
+- 删除按钮：hover 反馈由按钮原子承担

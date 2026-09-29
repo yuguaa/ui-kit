@@ -50,3 +50,8 @@ npx shadcn-vue@latest add @ui-kit/x-command-palette
 const [CommandPalette, paletteApi] = useXCommandPalette({ groups: [...] })
 paletteApi.open()   // open / close / toggle
 ```
+
+## 动效
+
+- 遮罩：淡入淡出（200ms）
+- 面板：缩放进出场（scale 0.95，200ms）

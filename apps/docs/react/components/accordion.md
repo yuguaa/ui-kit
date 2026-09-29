@@ -38,3 +38,9 @@ npx shadcn@latest add @ui-kit/x-accordion
 const [Accordion, accordionApi] = useXAccordion({ items: [...] })
 accordionApi.open(0)    // open(index) / close(index) / toggle(index)，value 可读
 ```
+
+## 动效
+
+- expand / collapse：内容区高度展开与收起动画（animate-accordion-down / up）
+- hover：触发器文字下划线过渡
+- 无位移动画

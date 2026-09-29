@@ -52,3 +52,8 @@ npx shadcn@latest add @ui-kit/x-file-upload
 | maxSize | number | - | 最大体积（MB） |
 | upload | (files) => void | - | 上传回调 |
 | file | (file, index) => ReactNode | - | 文件项自定义渲染 |
+
+## 动效
+
+- 弹层：淡入 + 缩放进出场（scale 0.95，100ms）
+- 色块：hover 边框色过渡

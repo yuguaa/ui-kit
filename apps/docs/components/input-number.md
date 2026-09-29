@@ -43,3 +43,7 @@ npx shadcn-vue@latest add @ui-kit/x-input-number
 | 名称 | 说明 |
 | --- | --- |
 | change | 值变化回调 |
+
+## 动效
+
+- 步进按钮：hover 背景过渡

@@ -73,6 +73,7 @@ const guideItems = [
   { text: "变体语义", link: "guide/variants" },
   { text: "hook 用法", link: "guide/hooks" },
   { text: "设计 token", link: "guide/tokens" },
+  { text: "动效规范", link: "guide/motion" },
 ];
 
 function localeSidebar(locale: "vue" | "react") {

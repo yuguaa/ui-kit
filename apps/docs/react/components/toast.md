@@ -43,3 +43,7 @@ toast.dismiss();
 | description | string | - | 说明文字 |
 | color | primary · success · warning · error | primary | 语义色 |
 | duration | number | 3000 | 展示时长（ms） |
+
+## 动效
+
+- 进出场：滑入 + 淡入淡出（sonner）

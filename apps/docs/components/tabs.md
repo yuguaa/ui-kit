@@ -8,12 +8,12 @@ description: 在同一区域内切换不同视图或内容分组
 用于在同一区域内切换不同视图或内容分组，支持 line / card 样式与 destroyOnHide。
 
 <script setup>
-import NavigationBasic from '@demos/vue/navigation-basic.vue'
-import navigationBasicRaw from '@demos/vue/navigation-basic.vue.code.txt?raw'
+import TabsBasicDemo from '@demos/vue/tabs-basic-demo.vue'
+import tabsBasicDemoRaw from '@demos/vue/tabs-basic-demo.vue.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="三项标签与内容面板" :code="navigationBasicRaw">
-  <NavigationBasic />
+<DemoBlock title="line 与 card 样式" description="active-key / change / type" :code="tabsBasicDemoRaw">
+  <TabsBasicDemo />
 </DemoBlock>
 
 ## 安装
@@ -44,3 +44,9 @@ npx shadcn-vue@latest add @ui-kit/x-tabs
 | 名称 | 说明 |
 | --- | --- |
 | change | 切换激活标签的回调 |
+
+## 动效
+
+- 指示器：透明度过渡
+- trigger：hover 文字色过渡
+- 无位移动画

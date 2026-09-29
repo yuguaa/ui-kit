@@ -40,3 +40,7 @@ npx shadcn@latest add @ui-kit/x-popover
 const [Popover, popoverApi] = useXPopover({ title: "气泡标题", content: "说明文字" })
 popoverApi.open()   // open / close / toggle / setState
 ```
+
+## 动效
+
+- 弹层：淡入 + 缩放进出场（scale 0.95，100ms）

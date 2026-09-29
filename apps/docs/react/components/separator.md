@@ -12,3 +12,7 @@ description: 基础组件 separator
 ```bash
 npx shadcn@latest add @ui-kit/x-separator
 ```
+
+## 动效
+
+无动效：静态分割组件。

@@ -59,3 +59,8 @@ npx shadcn-vue@latest add @ui-kit/x-file-upload
 **插槽**：default 上传区域内容 · file 文件项
 
 **事件**：upload 上传回调
+
+## 动效
+
+- 弹层：淡入 + 缩放进出场（scale 0.95，100ms）
+- 色块：hover 边框色过渡

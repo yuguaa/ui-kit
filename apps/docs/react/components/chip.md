@@ -31,3 +31,7 @@ npx shadcn@latest add @ui-kit/x-chip
 | closable | boolean | false | 是否可关闭 |
 | icon | ReactNode | - | 标签图标 |
 | onClose | (event) => void | - | 关闭时回调 |
+
+## 动效
+
+无动效：关闭按钮的 hover 颜色过渡由按钮原子承担。

@@ -31,3 +31,7 @@ npx shadcn@latest add @ui-kit/x-pin-input
 | mask | boolean | false | 是否掩码 |
 | disabled | boolean | false | 是否禁用 |
 | onChange / onComplete | (value) => void | - | 值变化 / 输入完成回调 |
+
+## 动效
+
+无动效：光标闪烁为浏览器默认行为。

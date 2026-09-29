@@ -8,12 +8,24 @@ description: 展示数量或状态提示，支持数字、溢出与圆点模式
 徽标用于展示数量或状态提示。有 children 时作为右上角角标包裹内容，无 children 时独立展示。
 
 <script setup>
-import BadgeBasic from '@demos/react/badge-basic'
-import badgeBasicRaw from '@demos/react/badge-basic.tsx.code.txt?raw'
+import BadgeDot from '@demos/react/badge-dot'
+import badgeDotRaw from '@demos/react/badge-dot.tsx.code.txt?raw'
+import BadgeColor from '@demos/react/badge-color'
+import badgeColorRaw from '@demos/react/badge-color.tsx.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="数字、溢出 99+、圆点与语义色" :code="badgeBasicRaw">
-  <ReactDemo :component="BadgeBasic" />
+## 数字与圆点
+
+count 显示数字，超出 overflowCount 显示 99+，dot 开启圆点模式。
+
+<DemoBlock title="数字、溢出与圆点" description="count / overflowCount / dot" :code="badgeDotRaw">
+  <ReactDemo :component="BadgeDot" />
+</DemoBlock>
+
+## 语义色与尺寸
+
+<DemoBlock title="七种语义色与五档尺寸" description="color / size" :code="badgeColorRaw">
+  <ReactDemo :component="BadgeColor" />
 </DemoBlock>
 
 ## 安装
@@ -31,3 +43,7 @@ npx shadcn@latest add @ui-kit/x-badge
 | overflowCount | number | 99 | 超出后显示 99+ |
 | color | primary · secondary · neutral · success · info · warning · error | primary | 徽标颜色 |
 | size | xs · sm · md · lg · xl | md | 徽标尺寸 |
+
+## 动效
+
+无动效：静态展示组件。

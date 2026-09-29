@@ -52,3 +52,7 @@ npx shadcn-vue@latest add @ui-kit/x-avatar-group
 | 名称 | 说明 |
 | --- | --- |
 | error | 图片加载失败回调 |
+
+## 动效
+
+无动效：静态展示组件。

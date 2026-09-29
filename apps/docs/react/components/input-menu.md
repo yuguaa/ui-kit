@@ -31,3 +31,8 @@ npx shadcn@latest add @ui-kit/x-input-menu
 | placeholder | string | 搜索并选择… | 占位文字 |
 | disabled | boolean | false | 是否禁用 |
 | onSelect | (item) => void | - | 选中回调 |
+
+## 动效
+
+- 弹层：淡入 + 缩放进出场（scale 0.95，100ms）
+- 输入框：focus ring 过渡

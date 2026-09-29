@@ -39,3 +39,8 @@ npx shadcn@latest add @ui-kit/x-slideover
 const [Slideover, slideoverApi] = useXSlideover({ title: "侧滑面板" })
 slideoverApi.open()   // open / close / toggle / setState
 ```
+
+## 动效
+
+- 面板：侧向滑入滑出（200ms）
+- 遮罩：淡入淡出（200ms）

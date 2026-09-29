@@ -31,3 +31,8 @@ npx shadcn@latest add @ui-kit/x-textarea
 | disabled | boolean | false | 是否禁用 |
 | autosize | boolean | false | 自动调整高度 |
 | status | error · warning | - | 校验状态 |
+
+## 动效
+
+- focus：ring 加粗过渡（transition-[box-shadow,color]）
+- 无位移动画

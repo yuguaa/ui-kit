@@ -28,5 +28,5 @@ features:
     details: 组件经 registry 分发，add 一条命令自动带入原子依赖与 npm 依赖，内网可用
   - icon: 🎨
     title: 设计 token
-    details: 色彩 / 字体 / 圆角 / 阴影 / 间距 / 边框六类 token，Framer Motion 动效规范
+    details: 色彩 / 字体 / 圆角 / 阴影 / 间距 / 边框六类 token，克制式 CSS 动效规范
 ---

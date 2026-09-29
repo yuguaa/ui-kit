@@ -43,3 +43,8 @@ npx shadcn-vue@latest add @ui-kit/x-input-menu
 | 名称 | 说明 |
 | --- | --- |
 | select | 选中回调 (item) |
+
+## 动效
+
+- 弹层：淡入 + 缩放进出场（scale 0.95，100ms）
+- 输入框：focus ring 过渡

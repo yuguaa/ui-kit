@@ -32,3 +32,7 @@ npx shadcn@latest add @ui-kit/x-pagination
 | showSizeChanger | boolean | false | 是否显示每页条数切换 |
 | disabled | boolean | false | 是否禁用 |
 | onChange | (page, pageSize) => void | - | 页码或每页条数变化回调 |
+
+## 动效
+
+- 页面项：hover 背景过渡

@@ -8,12 +8,22 @@ description: 展示需要关注的信息，提供四种语义
 用于页面中展示需要关注的信息，提供成功、信息、警告、错误四种语义。
 
 <script setup>
-import ContentBasic from '@demos/react/content-basic'
-import contentBasicRaw from '@demos/react/content-basic.tsx.code.txt?raw'
+import AlertTypes from '@demos/react/alert-types'
+import alertTypesRaw from '@demos/react/alert-types.tsx.code.txt?raw'
+import AlertClosable from '@demos/react/alert-closable'
+import alertClosableRaw from '@demos/react/alert-closable.tsx.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="四种语义 + 图标 + 关闭按钮" :code="contentBasicRaw">
-  <ReactDemo :component="ContentBasic" />
+## 四种语义
+
+<DemoBlock title="成功 / 信息 / 警告 / 错误" description="type + showIcon" :code="alertTypesRaw">
+  <ReactDemo :component="AlertTypes" />
+</DemoBlock>
+
+## 关闭
+
+<DemoBlock title="可关闭" description="closable 显示关闭按钮，onClose 接收关闭回调" :code="alertClosableRaw">
+  <ReactDemo :component="AlertClosable" />
 </DemoBlock>
 
 ## 安装
@@ -32,3 +42,7 @@ npx shadcn@latest add @ui-kit/x-alert
 | closable | boolean | false | 是否显示关闭按钮 |
 | showIcon | boolean | false | 是否显示图标 |
 | onClose | (event) => void | - | 点击关闭按钮时的回调 |
+
+## 动效
+
+无动效：静态提示组件。关闭按钮的 hover 颜色过渡由 XButton 承担。

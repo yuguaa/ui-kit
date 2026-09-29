@@ -42,3 +42,8 @@ npx shadcn-vue@latest add @ui-kit/x-input-rating
 | 名称 | 说明 |
 | --- | --- |
 | change | 评分变化回调 |
+
+## 动效
+
+- 星标：hover 颜色过渡
+- 无位移动画

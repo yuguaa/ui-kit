@@ -44,3 +44,8 @@ npx shadcn-vue@latest add @ui-kit/x-input-tags
 | --- | --- |
 | add | 添加标签回调 |
 | remove | 删除标签回调 |
+
+## 动效
+
+- 容器：focus ring 过渡
+- 删除按钮：hover 反馈由按钮原子承担

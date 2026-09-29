@@ -45,3 +45,8 @@ npx shadcn-vue@latest add @ui-kit/x-drawer
 const [Drawer, drawerApi] = useXDrawer({ title: '抽屉标题' })
 drawerApi.open()   // open / close / toggle / setState
 ```
+
+## 动效
+
+- 面板：滑入滑出（200ms）
+- 遮罩：淡入淡出（200ms）

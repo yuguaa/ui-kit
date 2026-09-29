@@ -46,3 +46,8 @@ npx shadcn-vue@latest add @ui-kit/x-stepper
 const [Stepper, stepperApi] = useXStepper({ items: [...] })
 stepperApi.next()   // current 可读可写，另有 prev / reset / go
 ```
+
+## 动效
+
+- 状态切换：颜色过渡（transition-colors）
+- 无位移动画

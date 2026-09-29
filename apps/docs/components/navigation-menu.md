@@ -37,3 +37,9 @@ npx shadcn-vue@latest add @ui-kit/x-navigation-menu
 | --- | --- |
 | click | 点击菜单项的回调 |
 | select | 选中菜单项的回调 |
+
+## 动效
+
+- 子菜单：弹层淡入 + 缩放（scale 0.95，100ms）
+- trigger：hover 背景过渡
+- 箭头：旋转过渡

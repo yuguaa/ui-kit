@@ -42,3 +42,7 @@ npx shadcn-vue@latest add @ui-kit/x-listbox
 | 名称 | 说明 |
 | --- | --- |
 | select | 选中回调 (key) |
+
+## 动效
+
+- 选项：hover 背景过渡

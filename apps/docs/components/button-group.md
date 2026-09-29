@@ -33,3 +33,7 @@ npx shadcn-vue@latest add @ui-kit/x-button-group
 | 名称 | 说明 |
 | --- | --- |
 | default | 按钮组内容 |
+
+## 动效
+
+无动效：布局容器，按钮动效由 XButton 承担。

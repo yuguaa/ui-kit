@@ -34,3 +34,7 @@ npx shadcn-vue@latest add @ui-kit/x-container
 | 名称 | 说明 |
 | --- | --- |
 | default | 容器内容 |
+
+## 动效
+
+无动效：布局容器组件。

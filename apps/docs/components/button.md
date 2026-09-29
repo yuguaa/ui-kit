@@ -1,21 +1,57 @@
 ---
 title: Button 按钮
-description: 二次封装按钮：内置六种样式 × 七种语义色 × 五档尺寸与 Framer Motion 动效
+description: 二次封装按钮：内置六种样式 × 七种语义色 × 五档尺寸，hover/active 颜色过渡动效
 ---
 
 # Button 按钮
 
-按钮用于触发操作，支持多种类型、尺寸与状态。
+按钮用于触发操作。支持六种样式、七种语义色、五档尺寸与加载、禁用状态，可通过插槽组合前置与后置图标。
 
 <script setup>
-import ButtonBasic from '@demos/vue/button-basic.vue'
-import buttonBasicRaw from '@demos/vue/button-basic.vue.code.txt?raw'
+import ButtonVariants from '@demos/vue/button-variants.vue'
+import buttonVariantsRaw from '@demos/vue/button-variants.vue.code.txt?raw'
+import ButtonColors from '@demos/vue/button-colors.vue'
+import buttonColorsRaw from '@demos/vue/button-colors.vue.code.txt?raw'
+import ButtonSizes from '@demos/vue/button-sizes.vue'
+import buttonSizesRaw from '@demos/vue/button-sizes.vue.code.txt?raw'
+import ButtonStates from '@demos/vue/button-states.vue'
+import buttonStatesRaw from '@demos/vue/button-states.vue.code.txt?raw'
+import ButtonIcons from '@demos/vue/button-icons.vue'
+import buttonIconsRaw from '@demos/vue/button-icons.vue.code.txt?raw'
 </script>
 
-## 基础用法
+## 变体
 
-<DemoBlock title="基础用法" description="solid / outline / soft / ghost / subtle / link 六种样式与七种语义色" :code="buttonBasicRaw">
-  <ButtonBasic />
+solid 主操作、outline 次操作、soft 轻强调、ghost 低干扰、subtle 带描边底、link 行内链接。
+
+<DemoBlock title="六种变体" description="variant 属性控制样式" :code="buttonVariantsRaw">
+  <ButtonVariants />
+</DemoBlock>
+
+## 语义色
+
+color 属性提供七种语义色，每种颜色都支持全部六种变体。
+
+<DemoBlock title="七种语义色" description="solid 变体下的语义色" :code="buttonColorsRaw">
+  <ButtonColors />
+</DemoBlock>
+
+## 尺寸
+
+<DemoBlock title="五档尺寸" description="xs → xl" :code="buttonSizesRaw">
+  <ButtonSizes />
+</DemoBlock>
+
+## 状态
+
+<DemoBlock title="加载与禁用" description="loading 显示旋转图标，disabled 阻止交互" :code="buttonStatesRaw">
+  <ButtonStates />
+</DemoBlock>
+
+## 图标与组合
+
+<DemoBlock title="前置 / 后置图标与按钮组" description="leading / trailing 插槽，XButtonGroup 拼接按钮" :code="buttonIconsRaw">
+  <ButtonIcons />
 </DemoBlock>
 
 ## 安装
@@ -24,7 +60,7 @@ import buttonBasicRaw from '@demos/vue/button-basic.vue.code.txt?raw'
 npx shadcn-vue@latest add @ui-kit/x-button
 ```
 
-自动带入依赖：`@ui-kit/utils`、`@ui-kit/motion`、`@ui-kit/button`。
+自动带入依赖：`@ui-kit/utils`、`@ui-kit/button`。
 
 ## API
 
@@ -46,6 +82,5 @@ npx shadcn-vue@latest add @ui-kit/x-button
 
 ## 动效
 
-- hover：上浮 2px + 阴影加深（fast 120ms）
-- press：缩小 0.98（fast 120ms）
-- loading：图标旋转 + 半透明
+- hover / active：背景色加深过渡（transition-colors），无位移与缩放
+- loading：图标旋转

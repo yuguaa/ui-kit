@@ -8,12 +8,12 @@ description: 带搜索的增强选择器，支持多选与空状态插槽
 带搜索的增强选择器，选项为 `{ label, value }` 结构，支持多选。
 
 <script setup>
-import SelectBasic from '@demos/vue/select-basic.vue'
-import selectBasicRaw from '@demos/vue/select-basic.vue.code.txt?raw'
+import SelectMenuBasic from '@demos/vue/select-menu-basic.vue'
+import selectMenuBasicRaw from '@demos/vue/select-menu-basic.vue.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="选择菜单、输入菜单、日期、时间、数字、滑块、评分与标签输入" :code="selectBasicRaw">
-  <SelectBasic />
+<DemoBlock title="单选 / 搜索 / 多选 / 禁用" description="options / show-search / multiple / disabled" :code="selectMenuBasicRaw">
+  <SelectMenuBasic />
 </DemoBlock>
 
 ## 安装
@@ -95,3 +95,8 @@ npx shadcn-vue@latest add @ui-kit/x-input-time
 | min / max | string | - | 最小 / 最大日期 |
 | hour12 | boolean | false | （时间）12 小时制 |
 | step | number | 1 | （时间）步长（分钟） |
+
+## 动效
+
+- 弹层：淡入 + 缩放进出场（scale 0.95，100ms）
+- 触发按钮：focus ring 过渡

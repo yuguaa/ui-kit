@@ -31,3 +31,9 @@ npx shadcn@latest add @ui-kit/x-navigation-menu
 | mode | vertical · horizontal · inline | vertical | 菜单模式 |
 | theme | light · dark | light | 菜单主题 |
 | onClick / onSelect | (item) => void | - | 点击 / 选中回调 |
+
+## 动效
+
+- 子菜单：弹层淡入 + 缩放（scale 0.95，100ms）
+- trigger：hover 背景过渡
+- 箭头：旋转过渡

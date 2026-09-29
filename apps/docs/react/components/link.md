@@ -31,3 +31,8 @@ npx shadcn@latest add @ui-kit/x-link
 | active | boolean | false | 激活态 |
 | disabled | boolean | false | 是否禁用 |
 | leading / trailing | ReactNode | - | 前置 / 后置图标 |
+
+## 动效
+
+- hover：文字颜色过渡
+- 无位移动画

@@ -30,3 +30,9 @@ npx shadcn-vue@latest add @ui-kit/x-radio-group
 | variant | radio · button | radio | 展示形式 |
 | buttonStyle | outline · solid | outline | 按钮样式（variant 为 button 时生效） |
 | disabled | boolean | false | 整体禁用 |
+
+## 动效
+
+- 勾选：状态颜色过渡
+- focus：聚焦环过渡
+- 无位移动画

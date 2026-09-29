@@ -31,3 +31,7 @@ npx shadcn@latest add @ui-kit/x-listbox
 | multiple | boolean | false | 是否多选 |
 | disabled | boolean | false | 是否禁用 |
 | onSelect | (key) => void | - | 选中回调 |
+
+## 动效
+
+- 选项：hover 背景过渡

@@ -32,3 +32,7 @@ npx shadcn@latest add @ui-kit/x-file-upload
 | disabled | boolean | false | 是否禁用 |
 | upload | (files) => void | - | 上传回调 |
 | file | (file, index) => ReactNode | - | 文件项自定义渲染 |
+
+## 动效
+
+- 拖拽区：hover 边框高亮 + 背景过渡

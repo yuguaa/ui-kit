@@ -31,3 +31,7 @@ npx shadcn@latest add @ui-kit/x-input-number
 | step | number | 1 | 步长 |
 | disabled | boolean | false | 是否禁用 |
 | onChange | (value) => void | - | 值变化回调 |
+
+## 动效
+
+- 步进按钮：hover 背景过渡

@@ -8,12 +8,12 @@ description: 表示两种状态之间的切换
 表示两种状态之间的切换，支持选中/未选中文字与两档尺寸。
 
 <script setup>
-import InputBasic from '@demos/react/input-basic'
-import inputBasicRaw from '@demos/react/input-basic.tsx.code.txt?raw'
+import SwitchBasicDemo from '@demos/react/switch-basic-demo'
+import switchBasicDemoRaw from '@demos/react/switch-basic-demo.tsx.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="表单控件全景（示例中含开关）" :code="inputBasicRaw">
-  <ReactDemo :component="InputBasic" />
+<DemoBlock title="开关 / 文字 / 尺寸" description="checked / checkedChildren / size / disabled" :code="switchBasicDemoRaw">
+  <ReactDemo :component="SwitchBasicDemo" />
 </DemoBlock>
 
 ## 安装
@@ -31,3 +31,7 @@ npx shadcn@latest add @ui-kit/x-switch
 | size | default · small | default | 控件尺寸 |
 | label | ReactNode | - | 关联文字 |
 | checkedChildren / unCheckedChildren | ReactNode | - | 选中 / 未选中时显示内容 |
+
+## 动效
+
+- 滑块：位移过渡 + 背景色过渡（200ms ease-out）

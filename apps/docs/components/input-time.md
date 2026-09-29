@@ -36,3 +36,8 @@ npx shadcn-vue@latest add @ui-kit/x-input-time
 | 名称 | 说明 |
 | --- | --- |
 | change | 时间变化回调 |
+
+## 动效
+
+- 弹层：淡入 + 缩放进出场（scale 0.95，100ms）
+- 触发按钮：focus ring 过渡

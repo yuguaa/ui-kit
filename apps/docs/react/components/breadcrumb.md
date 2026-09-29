@@ -29,3 +29,8 @@ npx shadcn@latest add @ui-kit/x-breadcrumb
 | items | { title, href? }[] | - | 面包屑项数组（末项可省略 href） |
 | separator | string | / | 分隔符 |
 | disabled | boolean | false | 是否禁用 |
+
+## 动效
+
+- hover：链接文字颜色过渡
+- 无位移动画

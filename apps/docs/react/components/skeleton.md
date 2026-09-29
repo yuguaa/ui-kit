@@ -12,3 +12,7 @@ description: 基础组件 skeleton
 ```bash
 npx shadcn@latest add @ui-kit/x-skeleton
 ```
+
+## 动效
+
+- 骨架：脉冲动画（animate-pulse）

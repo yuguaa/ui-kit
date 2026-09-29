@@ -8,12 +8,24 @@ description: 展示数量或状态提示，支持数字、溢出与圆点模式
 徽标用于展示数量或状态提示。有默认插槽时作为右上角角标包裹内容，无插槽时独立展示。
 
 <script setup>
-import BadgeBasic from '@demos/vue/badge-basic.vue'
-import badgeBasicRaw from '@demos/vue/badge-basic.vue.code.txt?raw'
+import BadgeDot from '@demos/vue/badge-dot.vue'
+import badgeDotRaw from '@demos/vue/badge-dot.vue.code.txt?raw'
+import BadgeColor from '@demos/vue/badge-color.vue'
+import badgeColorRaw from '@demos/vue/badge-color.vue.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="数字、溢出 99+、圆点与语义色" :code="badgeBasicRaw">
-  <BadgeBasic />
+## 数字与圆点
+
+count 显示数字，超出 overflowCount 显示 99+，dot 开启圆点模式。
+
+<DemoBlock title="数字、溢出与圆点" description="count / overflowCount / dot" :code="badgeDotRaw">
+  <BadgeDot />
+</DemoBlock>
+
+## 语义色与尺寸
+
+<DemoBlock title="七种语义色与五档尺寸" description="color / size" :code="badgeColorRaw">
+  <BadgeColor />
 </DemoBlock>
 
 ## 安装
@@ -31,3 +43,13 @@ npx shadcn-vue@latest add @ui-kit/x-badge
 | overflowCount | number | 99 | 超出后显示 99+ |
 | color | primary · secondary · neutral · success · info · warning · error | primary | 徽标颜色 |
 | size | xs · sm · md · lg · xl | md | 徽标尺寸 |
+
+## 插槽
+
+| 名称 | 说明 |
+| --- | --- |
+| default | 被包裹内容，有内容时徽标作为角标展示 |
+
+## 动效
+
+无动效：静态展示组件。

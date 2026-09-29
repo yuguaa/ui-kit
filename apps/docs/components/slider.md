@@ -36,3 +36,8 @@ npx shadcn-vue@latest add @ui-kit/x-slider
 | 名称 | 说明 |
 | --- | --- |
 | change | 值变化回调 |
+
+## 动效
+
+- 拖动：即时响应
+- thumb：hover / focus 聚焦环过渡

@@ -8,12 +8,22 @@ description: 模态对话框，用于承载需要用户确认的信息或操作
 模态对话框，用于承载需要用户确认的信息或操作。底部操作区默认提供取消与确定按钮，可通过 footer 插槽自定义。
 
 <script setup>
-import OverlayBasic from '@demos/vue/overlay-basic.vue'
-import overlayBasicRaw from '@demos/vue/overlay-basic.vue.code.txt?raw'
+import ModalBasicDemo from '@demos/vue/modal-basic-demo.vue'
+import modalBasicDemoRaw from '@demos/vue/modal-basic-demo.vue.code.txt?raw'
+import ModalHook from '@demos/vue/modal-hook.vue'
+import modalHookRaw from '@demos/vue/modal-hook.vue.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="点击「对话框」按钮打开，默认底部含取消与确定" :code="overlayBasicRaw">
-  <OverlayBasic />
+## 基础用法
+
+<DemoBlock title="受控打开与确认回调" description="v-model:open / ok / cancel 事件" :code="modalBasicDemoRaw">
+  <ModalBasicDemo />
+</DemoBlock>
+
+## hook 用法
+
+<DemoBlock title="hook 先行" description="useXModal 返回 [Modal, modalApi]，api 控制打开关闭与 setState" :code="modalHookRaw">
+  <ModalHook />
 </DemoBlock>
 
 ## 安装
@@ -56,3 +66,8 @@ const [Modal, modalApi] = useXModal({ title: '对话框标题', onOk: () => {} }
 modalApi.open()      // open / close / toggle
 modalApi.setState({ title: '新标题' })
 ```
+
+## 动效
+
+- 遮罩：淡入淡出（200ms）
+- 面板：缩放进出场（scale 0.95，200ms）

@@ -55,3 +55,7 @@ npx shadcn-vue@latest add @ui-kit/x-table
 const [Table, tableApi] = useXTable({ columns, dataSource })
 tableApi.setLoading(true)   // loading / page 可读，setLoading / reload / setPage
 ```
+
+## 动效
+
+- 行：hover 背景过渡

@@ -42,3 +42,7 @@ npx shadcn-vue@latest add @ui-kit/x-chip
 | 名称 | 说明 |
 | --- | --- |
 | close | 关闭时回调 |
+
+## 动效
+
+无动效：关闭按钮的 hover 颜色过渡由按钮原子承担。

@@ -5,15 +5,25 @@ description: 展示需要关注的信息，提供四种语义
 
 # Alert 警告提示
 
-用于页面中展示需要关注的信息，提供成功、信息、警告、错误四种语义。
+用于页面中展示需要关注的信息，提供成功、信息、警告、错误四种语义，可附带图标与关闭按钮。
 
 <script setup>
-import ContentBasic from '@demos/vue/content-basic.vue'
-import contentBasicRaw from '@demos/vue/content-basic.vue.code.txt?raw'
+import AlertTypes from '@demos/vue/alert-types.vue'
+import alertTypesRaw from '@demos/vue/alert-types.vue.code.txt?raw'
+import AlertClosable from '@demos/vue/alert-closable.vue'
+import alertClosableRaw from '@demos/vue/alert-closable.vue.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="四种语义 + 图标 + 关闭按钮" :code="contentBasicRaw">
-  <ContentBasic />
+## 四种语义
+
+<DemoBlock title="成功 / 信息 / 警告 / 错误" description="type + showIcon" :code="alertTypesRaw">
+  <AlertTypes />
+</DemoBlock>
+
+## 关闭与自定义内容
+
+<DemoBlock title="可关闭与自定义操作" description="closable 显示关闭按钮，description 插槽可嵌入操作" :code="alertClosableRaw">
+  <AlertClosable />
 </DemoBlock>
 
 ## 安装
@@ -45,3 +55,7 @@ npx shadcn-vue@latest add @ui-kit/x-alert
 | 名称 | 说明 |
 | --- | --- |
 | close | 点击关闭按钮时的回调 |
+
+## 动效
+
+无动效：静态提示组件。关闭按钮的 hover 颜色过渡由 XButton 承担。

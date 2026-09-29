@@ -8,12 +8,30 @@ description: 支持前后缀图标、前后置标签与 error / warning 校验�
 通过鼠标或键盘输入内容，是最基础的表单域的包装。
 
 <script setup>
-import InputBasic from "@demos/react/input-basic"
-import inputBasicRaw from '@demos/react/input-basic.tsx.code.txt?raw'
+import InputBasicDemo from "@demos/react/input-basic-demo"
+import inputBasicDemoRaw from '@demos/react/input-basic-demo.tsx.code.txt?raw'
+import InputStates from "@demos/react/input-states"
+import inputStatesRaw from '@demos/react/input-states.tsx.code.txt?raw'
+import InputAddon from "@demos/react/input-addon"
+import inputAddonRaw from '@demos/react/input-addon.tsx.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="尺寸、前后缀、addon、校验状态与基础表单控件" :code="inputBasicRaw">
-  <ReactDemo :component="InputBasic" />
+## 基础用法
+
+<DemoBlock title="尺寸与图标" description="size / prefix / suffix" :code="inputBasicDemoRaw">
+  <ReactDemo :component="InputBasicDemo" />
+</DemoBlock>
+
+## 校验状态
+
+<DemoBlock title="错误 / 警告 / 禁用" description="status / disabled" :code="inputStatesRaw">
+  <ReactDemo :component="InputStates" />
+</DemoBlock>
+
+## 前后置标签
+
+<DemoBlock title="addon" description="addonBefore / addonAfter" :code="inputAddonRaw">
+  <ReactDemo :component="InputAddon" />
 </DemoBlock>
 
 ## 安装
@@ -77,3 +95,8 @@ npx shadcn@latest add @ui-kit/x-switch
 | size | default · small | default | 控件尺寸 |
 
 **插槽**：checkedChildren 开启状态文字 · unCheckedChildren 关闭状态文字
+
+## 动效
+
+- focus：ring 加粗过渡（transition-[box-shadow,color]）
+- 无位移动画

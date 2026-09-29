@@ -50,3 +50,7 @@ npx shadcn-vue@latest add @ui-kit/x-splitter
 const [Splitter, splitterApi] = useXSplitter()
 splitterApi.resize(30)   // size 可读，resize 调整
 ```
+
+## 动效
+
+- 拖拽：即时响应，无过渡动效
