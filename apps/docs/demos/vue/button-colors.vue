@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import XButton from '@/components/kit/XButton.vue'
+import { XButton } from '@/components/kit'
 
 const colors = ['primary', 'secondary', 'neutral', 'success', 'info', 'warning', 'error'] as const
 </script>

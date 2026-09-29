@@ -1,4 +1,4 @@
-import { XButton } from "@/components/kit/x-button";
+import { XButton } from "@/components/kit";
 
 export default function ButtonStates() {
   return (

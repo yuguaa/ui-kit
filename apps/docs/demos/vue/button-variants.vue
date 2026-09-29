@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import XButton from '@/components/kit/XButton.vue'
+import { XButton } from '@/components/kit'
 </script>
 
 <template>

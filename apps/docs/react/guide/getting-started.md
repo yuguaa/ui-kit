@@ -48,11 +48,17 @@ npx shadcn@latest add @ui-kit/x-button
 
 ## 4. 使用
 
+单组件安装时按文件路径导入；也可以安装统一出口 `@ui-kit/kit`，从 `@/components/kit` 一次性导入全部组件与 hook：
+
+```bash
+npx shadcn@latest add @ui-kit/kit
+```
+
 ::: code-group
 
 ```vue [Vue]
 <script setup lang="ts">
-import XButton from '@/components/kit/XButton.vue'
+import { XButton } from '@/components/kit'
 </script>
 
 <template>
@@ -61,7 +67,7 @@ import XButton from '@/components/kit/XButton.vue'
 ```
 
 ```tsx [React]
-import { XButton } from "@/components/kit/x-button";
+import { XButton } from "@/components/kit";
 
 export default function App() {
   return (

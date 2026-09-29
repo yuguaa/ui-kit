@@ -819,6 +819,15 @@ const reactKit: ItemSpec[] = [
   },
 ];
 
+/** 统一出口 item：全量依赖全部组件，安装后可 import { XButton } from "@/components/kit" */
+reactKit.push({
+  name: "kit",
+  title: "统一导出",
+  description: "全部二次封装组件的统一出口，从 @/components/kit 导入全部组件与 hook。",
+  registryDependencies: reactKit.map((item) => `@ui-kit/${item.name}`),
+  files: [{ source: "packages/react/src/components/kit/index.ts", target: "components/kit/index.ts", type: "registry:lib" }],
+});
+
 /* ============================ Vue 清单 ============================ */
 
 function vueAtomFiles(dir: string, fileNames: string[]): FileEntry[] {
@@ -1501,6 +1510,15 @@ const vueKit: ItemSpec[] = [
     files: [{ source: "packages/vue/src/components/kit/XTable.vue", path: "kit/XTable.vue", type: "registry:component" }],
   },
 ];
+
+/** 统一出口 item：全量依赖全部组件，安装后可 import { XButton } from "@/components/kit" */
+vueKit.push({
+  name: "kit",
+  title: "统一导出",
+  description: "全部二次封装组件的统一出口，从 @/components/kit 导入全部组件与 hook。",
+  registryDependencies: vueKit.map((item) => `@ui-kit/${item.name}`),
+  files: [{ source: "packages/vue/src/components/kit/index.ts", path: "kit/index.ts", type: "registry:lib" }],
+});
 
 /* ============================ vben 风格 hook 分发 ============================ */
 

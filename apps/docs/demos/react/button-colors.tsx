@@ -1,4 +1,4 @@
-import { XButton, type XButtonColor } from "@/components/kit/x-button";
+import { XButton, type XButtonColor } from "@/components/kit";
 
 const colors: XButtonColor[] = ["primary", "secondary", "neutral", "success", "info", "warning", "error"];
 

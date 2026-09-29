@@ -1,4 +1,4 @@
-import { XButton, type XButtonSize } from "@/components/kit/x-button";
+import { XButton, type XButtonSize } from "@/components/kit";
 
 const sizes: XButtonSize[] = ["xs", "sm", "md", "lg", "xl"];
 

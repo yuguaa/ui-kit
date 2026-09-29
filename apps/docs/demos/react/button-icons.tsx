@@ -1,6 +1,4 @@
-import { XButton } from "@/components/kit/x-button";
-import { XButtonGroup } from "@/components/kit/x-button-group";
-import { XIcon } from "@/components/kit/x-icon";
+import { XButton, XButtonGroup, XIcon } from "@/components/kit";
 
 export default function ButtonIcons() {
   return (

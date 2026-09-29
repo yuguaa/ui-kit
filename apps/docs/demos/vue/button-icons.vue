@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import XButton from '@/components/kit/XButton.vue'
-import XButtonGroup from '@/components/kit/XButtonGroup.vue'
-import XIcon from '@/components/kit/XIcon.vue'
+import { XButton, XButtonGroup, XIcon } from '@/components/kit'
 </script>
 
 <template>
