@@ -1,0 +1,153 @@
+{
+  "name": "dialog",
+  "type": "registry:ui",
+  "title": "对话框原子组件",
+  "description": "shadcn-vue 基础原子组件 dialog。",
+  "dependencies": [
+    "reka-ui",
+    "@vueuse/core",
+    "@lucide/vue",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [],
+  "files": [
+    {
+      "type": "registry:ui",
+      "content": "<script setup lang=\"ts\">\nimport type { DialogRootEmits, DialogRootProps } from 'reka-ui'\nimport { DialogRoot, useForwardPropsEmits } from 'reka-ui'\n\nconst props = defineProps<DialogRootProps>()\nconst emits = defineEmits<DialogRootEmits>()\n\nconst forwarded = useForwardPropsEmits(props, emits)\n</script>\n\n<template>\n  <DialogRoot\n    v-slot=\"slotProps\"\n    data-slot=\"dialog\"\n    v-bind=\"forwarded\"\n  >\n    <slot v-bind=\"slotProps\" />\n  </DialogRoot>\n</template>\n",
+      "path": "ui/dialog/Dialog.vue"
+    },
+    {
+      "type": "registry:ui",
+      "content": "<script setup lang=\"ts\">\nimport type { DialogCloseProps } from 'reka-ui'\nimport { DialogClose } from 'reka-ui'\n\nconst props = defineProps<DialogCloseProps>()\n</script>\n\n<template>\n  <DialogClose\n    data-slot=\"dialog-close\"\n    v-bind=\"props\"\n  >\n    <slot />\n  </DialogClose>\n</template>\n",
+      "path": "ui/dialog/DialogClose.vue"
+    },
+    {
+      "type": "registry:ui",
+      "content": "<script setup lang=\"ts\">\nimport type { DialogContentEmits, DialogContentProps } from 'reka-ui'\n\nimport type { HTMLAttributes } from 'vue'\nimport { XIcon } from '@lucide/vue'\nimport { reactiveOmit } from '@vueuse/core'\nimport {\n  DialogClose,\n  DialogContent,\n  DialogPortal,\n  useForwardPropsEmits,\n} from 'reka-ui'\nimport { cn } from '@/lib/utils'\nimport { Button } from '@/components/ui/button'\nimport DialogOverlay from './DialogOverlay.vue'\n\ndefineOptions({\n  inheritAttrs: false,\n})\n\nconst props = withDefaults(defineProps<DialogContentProps & { class?: HTMLAttributes['class'], showCloseButton?: boolean }>(), {\n  showCloseButton: true,\n})\nconst emits = defineEmits<DialogContentEmits>()\n\nconst delegatedProps = reactiveOmit(props, 'class')\n\nconst forwarded = useForwardPropsEmits(delegatedProps, emits)\n</script>\n\n<template>\n  <DialogPortal>\n    <DialogOverlay />\n    <DialogContent\n      data-slot=\"dialog-content\"\n      v-bind=\"{ ...$attrs, ...forwarded }\"\n      :class=\"cn('bg-popover text-popover-foreground data-open:animate-in data-closed:animate-out data-closed:fade-out-0 data-open:fade-in-0 data-closed:zoom-out-95 data-open:zoom-in-95 ring-foreground/10 grid max-w-[calc(100%-2rem)] gap-4 rounded-xl p-4 text-sm ring-1 duration-100 sm:max-w-sm fixed top-1/2 left-1/2 z-50 w-full -translate-x-1/2 -translate-y-1/2 outline-none', props.class)\"\n    >\n      <slot />\n\n      <DialogClose\n        v-if=\"showCloseButton\"\n        data-slot=\"dialog-close\"\n        as-child\n      >\n        <Button variant=\"ghost\" class=\"absolute top-2 right-2\" size=\"icon-sm\">\n          <XIcon />\n          <span class=\"sr-only\">Close</span>\n        </Button>\n      </DialogClose>\n    </DialogContent>\n  </DialogPortal>\n</template>\n",
+      "path": "ui/dialog/DialogContent.vue"
+    },
+    {
+      "type": "registry:ui",
+      "content": "<script setup lang=\"ts\">\nimport type { DialogDescriptionProps } from 'reka-ui'\nimport type { HTMLAttributes } from 'vue'\nimport { reactiveOmit } from '@vueuse/core'\nimport { DialogDescription, useForwardProps } from 'reka-ui'\nimport { cn } from '@/lib/utils'\n\nconst props = defineProps<DialogDescriptionProps & { class?: HTMLAttributes['class'] }>()\n\nconst delegatedProps = reactiveOmit(props, 'class')\n\nconst forwardedProps = useForwardProps(delegatedProps)\n</script>\n\n<template>\n  <DialogDescription\n    data-slot=\"dialog-description\"\n    v-bind=\"forwardedProps\"\n    :class=\"cn('text-muted-foreground *:[a]:hover:text-foreground text-sm *:[a]:underline *:[a]:underline-offset-3', props.class)\"\n  >\n    <slot />\n  </DialogDescription>\n</template>\n",
+      "path": "ui/dialog/DialogDescription.vue"
+    },
+    {
+      "type": "registry:ui",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { DialogClose } from 'reka-ui'\nimport { cn } from '@/lib/utils'\nimport { Button } from '@/components/ui/button'\n\nconst props = withDefaults(defineProps<{\n  class?: HTMLAttributes['class']\n  showCloseButton?: boolean\n}>(), {\n  showCloseButton: false,\n})\n</script>\n\n<template>\n  <div\n    data-slot=\"dialog-footer\"\n    :class=\"cn('bg-muted/50 -mx-4 -mb-4 rounded-b-xl border-t p-4 flex flex-col-reverse gap-2 sm:flex-row sm:justify-end', props.class)\"\n  >\n    <slot />\n    <DialogClose v-if=\"showCloseButton\" as-child>\n      <Button variant=\"outline\">\n        Close\n      </Button>\n    </DialogClose>\n  </div>\n</template>\n",
+      "path": "ui/dialog/DialogFooter.vue"
+    },
+    {
+      "type": "registry:ui",
+      "content": "<script setup lang=\"ts\">\nimport type { HTMLAttributes } from 'vue'\nimport { cn } from '@/lib/utils'\n\nconst props = defineProps<{\n  class?: HTMLAttributes['class']\n}>()\n</script>\n\n<template>\n  <div\n    data-slot=\"dialog-header\"\n    :class=\"cn('gap-2 flex flex-col', props.class)\"\n  >\n    <slot />\n  </div>\n</template>\n",
+      "path": "ui/dialog/DialogHeader.vue"
+    },
+    {
+      "type": "registry:ui",
+      "content": "<script setup lang=\"ts\">\nimport type { DialogOverlayProps } from 'reka-ui'\nimport type { HTMLAttributes } from 'vue'\nimport { reactiveOmit } from '@vueuse/core'\nimport { DialogOverlay } from 'reka-ui'\nimport { cn } from '@/lib/utils'\n\nconst props = defineProps<DialogOverlayProps & { class?: HTMLAttributes['class'] }>()\n\nconst delegatedProps = reactiveOmit(props, 'class')\n</script>\n\n<template>\n  <DialogOverlay\n    data-slot=\"dialog-overlay\"\n    v-bind=\"delegatedProps\"\n    :class=\"cn('data-open:animate-in data-closed:animate-out data-closed:fade-out-0 data-open:fade-in-0 bg-black/10 duration-100 supports-backdrop-filter:backdrop-blur-xs fixed inset-0 isolate z-50', props.class)\"\n  >\n    <slot />\n  </DialogOverlay>\n</template>\n",
+      "path": "ui/dialog/DialogOverlay.vue"
+    },
+    {
+      "type": "registry:ui",
+      "content": "<script setup lang=\"ts\">\nimport type { DialogContentEmits, DialogContentProps } from 'reka-ui'\n\nimport type { HTMLAttributes } from 'vue'\nimport { XIcon } from '@lucide/vue'\nimport { reactiveOmit } from '@vueuse/core'\nimport {\n  DialogClose,\n  DialogContent,\n  DialogOverlay,\n  DialogPortal,\n  useForwardPropsEmits,\n} from 'reka-ui'\nimport { cn } from '@/lib/utils'\n\ndefineOptions({\n  inheritAttrs: false,\n})\n\nconst props = defineProps<DialogContentProps & { class?: HTMLAttributes['class'] }>()\nconst emits = defineEmits<DialogContentEmits>()\n\nconst delegatedProps = reactiveOmit(props, 'class')\n\nconst forwarded = useForwardPropsEmits(delegatedProps, emits)\n</script>\n\n<template>\n  <DialogPortal>\n    <DialogOverlay\n      class=\"fixed inset-0 z-50 grid place-items-center overflow-y-auto bg-black/80  data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0\"\n    >\n      <DialogContent\n        :class=\"\n          cn(\n            'relative z-50 grid w-full max-w-lg my-8 gap-4 border border-border bg-background p-6 shadow-lg duration-200 sm:rounded-lg md:w-full',\n            props.class,\n          )\n        \"\n        v-bind=\"{ ...$attrs, ...forwarded }\"\n        @pointer-down-outside=\"(event) => {\n          const originalEvent = event.detail.originalEvent;\n          const target = originalEvent.target as HTMLElement;\n          if (originalEvent.offsetX > target.clientWidth || originalEvent.offsetY > target.clientHeight) {\n            event.preventDefault();\n          }\n        }\"\n      >\n        <slot />\n\n        <DialogClose\n          class=\"absolute top-4 right-4 p-0.5 transition-colors rounded-md hover:bg-secondary\"\n        >\n          <XIcon class=\"w-4 h-4\" />\n          <span class=\"sr-only\">Close</span>\n        </DialogClose>\n      </DialogContent>\n    </DialogOverlay>\n  </DialogPortal>\n</template>\n",
+      "path": "ui/dialog/DialogScrollContent.vue"
+    },
+    {
+      "type": "registry:ui",
+      "content": "<script setup lang=\"ts\">\nimport type { DialogTitleProps } from 'reka-ui'\nimport type { HTMLAttributes } from 'vue'\nimport { reactiveOmit } from '@vueuse/core'\nimport { DialogTitle, useForwardProps } from 'reka-ui'\nimport { cn } from '@/lib/utils'\n\nconst props = defineProps<DialogTitleProps & { class?: HTMLAttributes['class'] }>()\n\nconst delegatedProps = reactiveOmit(props, 'class')\n\nconst forwardedProps = useForwardProps(delegatedProps)\n</script>\n\n<template>\n  <DialogTitle\n    data-slot=\"dialog-title\"\n    v-bind=\"forwardedProps\"\n    :class=\"cn('text-base leading-none font-medium cn-font-heading', props.class)\"\n  >\n    <slot />\n  </DialogTitle>\n</template>\n",
+      "path": "ui/dialog/DialogTitle.vue"
+    },
+    {
+      "type": "registry:ui",
+      "content": "<script setup lang=\"ts\">\nimport type { DialogTriggerProps } from 'reka-ui'\nimport { DialogTrigger } from 'reka-ui'\n\nconst props = defineProps<DialogTriggerProps>()\n</script>\n\n<template>\n  <DialogTrigger\n    data-slot=\"dialog-trigger\"\n    v-bind=\"props\"\n  >\n    <slot />\n  </DialogTrigger>\n</template>\n",
+      "path": "ui/dialog/DialogTrigger.vue"
+    },
+    {
+      "type": "registry:ui",
+      "content": "export { default as Dialog } from './Dialog.vue'\nexport { default as DialogClose } from './DialogClose.vue'\nexport { default as DialogContent } from './DialogContent.vue'\nexport { default as DialogDescription } from './DialogDescription.vue'\nexport { default as DialogFooter } from './DialogFooter.vue'\nexport { default as DialogHeader } from './DialogHeader.vue'\nexport { default as DialogOverlay } from './DialogOverlay.vue'\nexport { default as DialogScrollContent } from './DialogScrollContent.vue'\nexport { default as DialogTitle } from './DialogTitle.vue'\nexport { default as DialogTrigger } from './DialogTrigger.vue'\n",
+      "path": "ui/dialog/index.ts"
+    }
+  ],
+  "cssVars": {
+    "theme": {
+      "primary-1": "#e6f4ff",
+      "primary-2": "#bae0ff",
+      "primary-3": "#91caff",
+      "primary-4": "#69b1ff",
+      "primary-5": "#4096ff",
+      "primary-6": "#1677ff",
+      "primary-7": "#0958d9",
+      "primary-8": "#003eb3",
+      "primary-9": "#002c8c",
+      "primary-10": "#001d66",
+      "success-1": "#f6ffed",
+      "success-2": "#d9f7be",
+      "success-3": "#b7eb8f",
+      "success-4": "#95de64",
+      "success-5": "#73d13d",
+      "success-6": "#52c41a",
+      "success-7": "#389e0d",
+      "success-8": "#237804",
+      "success-9": "#135200",
+      "success-10": "#092b00",
+      "warning-1": "#fffbe6",
+      "warning-2": "#fff1b8",
+      "warning-3": "#ffe58f",
+      "warning-4": "#ffd666",
+      "warning-5": "#ffc53d",
+      "warning-6": "#faad14",
+      "warning-7": "#d48806",
+      "warning-8": "#ad6800",
+      "warning-9": "#874d00",
+      "warning-10": "#613400",
+      "error-1": "#fff2f0",
+      "error-2": "#fff1f0",
+      "error-3": "#ffccc7",
+      "error-4": "#ffa39e",
+      "error-5": "#ff7875",
+      "error-6": "#ff4d4f",
+      "error-7": "#d9363e",
+      "error-8": "#b32430",
+      "error-9": "#8c1523",
+      "error-10": "#660e1b",
+      "info-1": "#e6f4ff",
+      "info-2": "#bae0ff",
+      "info-3": "#91caff",
+      "info-4": "#69b1ff",
+      "info-5": "#4096ff",
+      "info-6": "#1677ff",
+      "info-7": "#0958d9",
+      "info-8": "#003eb3",
+      "info-9": "#002c8c",
+      "info-10": "#001d66",
+      "neutral-1": "#5e5e5e",
+      "neutral-2": "#525252",
+      "neutral-3": "#454545",
+      "neutral-4": "#383838",
+      "neutral-5": "#2b2b2b",
+      "neutral-6": "#1f1f1f",
+      "neutral-7": "#000000",
+      "neutral-8": "#000000",
+      "neutral-9": "#000000",
+      "neutral-10": "#000000",
+      "radius-sm": "6px",
+      "radius-md": "8px",
+      "radius-lg": "12px",
+      "radius-pill": "9999px",
+      "shadow-sm": "0 1px 2px 0 rgb(0 0 0 / 0.06)",
+      "shadow-md": "0 4px 12px 0 rgb(0 0 0 / 0.10)",
+      "shadow-lg": "0 8px 24px 0 rgb(0 0 0 / 0.15)",
+      "font-size-xs": "12px",
+      "font-size-sm": "14px",
+      "font-size-md": "16px",
+      "font-size-lg": "20px",
+      "font-size-xl": "24px",
+      "font-size-2xl": "30px",
+      "font-size-3xl": "38px",
+      "text-lg": "20px",
+      "text-xl": "24px",
+      "text-2xl": "30px",
+      "text-3xl": "38px"
+    }
+  }
+}

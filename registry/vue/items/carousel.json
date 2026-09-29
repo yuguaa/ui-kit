@@ -1,0 +1,140 @@
+{
+  "name": "carousel",
+  "type": "registry:ui",
+  "title": "轮播原子组件",
+  "description": "shadcn-vue 基础原子组件 carousel（embla）。",
+  "dependencies": [
+    "embla-carousel-vue",
+    "@lucide/vue",
+    "@vueuse/core",
+    "clsx",
+    "tailwind-merge"
+  ],
+  "registryDependencies": [
+    "@ui-kit/button"
+  ],
+  "files": [
+    {
+      "type": "registry:ui",
+      "content": "<script setup lang=\"ts\">\nimport type { CarouselEmits, CarouselProps, WithClassAsProps } from './interface'\nimport { cn } from '@/lib/utils'\nimport { useProvideCarousel } from './useCarousel'\n\nconst props = withDefaults(defineProps<CarouselProps & WithClassAsProps>(), {\n  orientation: 'horizontal',\n})\n\nconst emits = defineEmits<CarouselEmits>()\n\nconst { canScrollNext, canScrollPrev, carouselApi, carouselRef, orientation, scrollNext, scrollPrev } = useProvideCarousel(props, emits)\n\ndefineExpose({\n  canScrollNext,\n  canScrollPrev,\n  carouselApi,\n  carouselRef,\n  orientation,\n  scrollNext,\n  scrollPrev,\n})\n\nfunction onKeyDown(event: KeyboardEvent) {\n  const prevKey = props.orientation === 'vertical' ? 'ArrowUp' : 'ArrowLeft'\n  const nextKey = props.orientation === 'vertical' ? 'ArrowDown' : 'ArrowRight'\n\n  if (event.key === prevKey) {\n    event.preventDefault()\n    scrollPrev()\n\n    return\n  }\n\n  if (event.key === nextKey) {\n    event.preventDefault()\n    scrollNext()\n  }\n}\n</script>\n\n<template>\n  <div\n    data-slot=\"carousel\"\n    :class=\"cn('relative', props.class)\"\n    role=\"region\"\n    aria-roledescription=\"carousel\"\n    tabindex=\"0\"\n    @keydown=\"onKeyDown\"\n  >\n    <slot :can-scroll-next :can-scroll-prev :carousel-api :carousel-ref :orientation :scroll-next :scroll-prev />\n  </div>\n</template>\n",
+      "path": "ui/carousel/Carousel.vue"
+    },
+    {
+      "type": "registry:ui",
+      "content": "<script setup lang=\"ts\">\nimport type { WithClassAsProps } from './interface'\nimport { cn } from '@/lib/utils'\nimport { useCarousel } from './useCarousel'\n\ndefineOptions({\n  inheritAttrs: false,\n})\n\nconst props = defineProps<WithClassAsProps>()\n\nconst { carouselRef, orientation } = useCarousel()\n\n/** 通过函数 ref 将模板元素写回 carouselRef，避免模板字符串 ref 的类型问题 */\nfunction setCarouselRef(el: unknown) {\n  carouselRef.value = el as HTMLElement\n}\n</script>\n\n<template>\n  <div\n    :ref=\"setCarouselRef\"\n    data-slot=\"carousel-content\"\n    class=\"overflow-hidden\"\n  >\n    <div\n      :class=\"\n        cn(\n          'flex',\n          orientation === 'horizontal' ? '-ml-4' : '-mt-4 flex-col',\n          props.class,\n        )\"\n      v-bind=\"$attrs\"\n    >\n      <slot />\n    </div>\n  </div>\n</template>\n",
+      "path": "ui/carousel/CarouselContent.vue"
+    },
+    {
+      "type": "registry:ui",
+      "content": "<script setup lang=\"ts\">\nimport type { WithClassAsProps } from './interface'\nimport { cn } from '@/lib/utils'\nimport { useCarousel } from './useCarousel'\n\nconst props = defineProps<WithClassAsProps>()\n\nconst { orientation } = useCarousel()\n</script>\n\n<template>\n  <div\n    data-slot=\"carousel-item\"\n    role=\"group\"\n    aria-roledescription=\"slide\"\n    :class=\"cn(\n      'min-w-0 shrink-0 grow-0 basis-full',\n      orientation === 'horizontal' ? 'pl-4' : 'pt-4',\n      props.class,\n    )\"\n  >\n    <slot />\n  </div>\n</template>\n",
+      "path": "ui/carousel/CarouselItem.vue"
+    },
+    {
+      "type": "registry:ui",
+      "content": "<script setup lang=\"ts\">\nimport type { WithClassAsProps } from './interface'\n\nimport type { ButtonVariants } from '@/components/ui/button'\nimport { ChevronRightIcon } from '@lucide/vue'\nimport { cn } from '@/lib/utils'\nimport { Button } from '@/components/ui/button'\nimport { useCarousel } from './useCarousel'\n\nconst props = withDefaults(defineProps<{\n  variant?: ButtonVariants['variant']\n  size?: ButtonVariants['size']\n}\n& WithClassAsProps>(), {\n  variant: 'outline',\n  size: 'icon-sm',\n})\n\nconst { orientation, canScrollNext, scrollNext } = useCarousel()\n</script>\n\n<template>\n  <Button\n    data-slot=\"carousel-next\"\n    :disabled=\"!canScrollNext\"\n    :class=\"cn(\n      'rounded-full absolute touch-manipulation',\n      orientation === 'horizontal'\n        ? 'top-1/2 -right-12 -translate-y-1/2'\n        : '-bottom-12 left-1/2 -translate-x-1/2 rotate-90',\n      props.class,\n    )\"\n    :variant=\"variant\"\n    :size=\"size\"\n    @click=\"scrollNext\"\n  >\n    <slot>\n      <ChevronRightIcon class=\"cn-rtl-flip\" />\n      <span class=\"sr-only\">Next slide</span>\n    </slot>\n  </Button>\n</template>\n",
+      "path": "ui/carousel/CarouselNext.vue"
+    },
+    {
+      "type": "registry:ui",
+      "content": "<script setup lang=\"ts\">\nimport type { WithClassAsProps } from './interface'\n\nimport type { ButtonVariants } from '@/components/ui/button'\nimport { ChevronLeftIcon } from '@lucide/vue'\nimport { cn } from '@/lib/utils'\nimport { Button } from '@/components/ui/button'\nimport { useCarousel } from './useCarousel'\n\nconst props = withDefaults(defineProps<{\n  variant?: ButtonVariants['variant']\n  size?: ButtonVariants['size']\n}\n& WithClassAsProps>(), {\n  variant: 'outline',\n  size: 'icon-sm',\n})\n\nconst { orientation, canScrollPrev, scrollPrev } = useCarousel()\n</script>\n\n<template>\n  <Button\n    data-slot=\"carousel-previous\"\n    :disabled=\"!canScrollPrev\"\n    :class=\"cn(\n      'rounded-full absolute touch-manipulation',\n      orientation === 'horizontal'\n        ? 'top-1/2 -left-12 -translate-y-1/2'\n        : '-top-12 left-1/2 -translate-x-1/2 rotate-90',\n      props.class,\n    )\"\n    :variant=\"variant\"\n    :size=\"size\"\n    @click=\"scrollPrev\"\n  >\n    <slot>\n      <ChevronLeftIcon class=\"cn-rtl-flip\" />\n      <span class=\"sr-only\">Previous slide</span>\n    </slot>\n  </Button>\n</template>\n",
+      "path": "ui/carousel/CarouselPrevious.vue"
+    },
+    {
+      "type": "registry:ui",
+      "content": "export { default as Carousel } from './Carousel.vue'\nexport { default as CarouselContent } from './CarouselContent.vue'\nexport { default as CarouselItem } from './CarouselItem.vue'\nexport { default as CarouselNext } from './CarouselNext.vue'\nexport { default as CarouselPrevious } from './CarouselPrevious.vue'\nexport type {\n  UnwrapRefCarouselApi as CarouselApi,\n} from './interface'\n\nexport { useCarousel } from './useCarousel'\n",
+      "path": "ui/carousel/index.ts"
+    },
+    {
+      "type": "registry:ui",
+      "content": "import type useEmblaCarousel from 'embla-carousel-vue'\nimport type {\n  EmblaCarouselVueType,\n} from 'embla-carousel-vue'\nimport type { HTMLAttributes, UnwrapRef } from 'vue'\n\ntype CarouselApi = EmblaCarouselVueType[1]\ntype UseCarouselParameters = Parameters<typeof useEmblaCarousel>\ntype CarouselOptions = UseCarouselParameters[0]\ntype CarouselPlugin = UseCarouselParameters[1]\n\nexport type UnwrapRefCarouselApi = UnwrapRef<CarouselApi>\n\nexport interface CarouselProps {\n  opts?: CarouselOptions\n  plugins?: CarouselPlugin\n  orientation?: 'horizontal' | 'vertical'\n}\n\nexport interface CarouselEmits {\n  (e: 'init-api', payload: UnwrapRefCarouselApi): void\n}\n\nexport interface WithClassAsProps {\n  class?: HTMLAttributes['class']\n}\n",
+      "path": "ui/carousel/interface.ts"
+    },
+    {
+      "type": "registry:ui",
+      "content": "import type { UnwrapRefCarouselApi as CarouselApi, CarouselEmits, CarouselProps } from './interface'\nimport { createInjectionState } from '@vueuse/core'\nimport emblaCarouselVue from 'embla-carousel-vue'\nimport { onMounted, ref } from 'vue'\n\nconst [useProvideCarousel, useInjectCarousel] = createInjectionState(\n  ({\n    opts,\n    orientation,\n    plugins,\n  }: CarouselProps, emits: CarouselEmits) => {\n    const [emblaNode, emblaApi] = emblaCarouselVue({\n      ...opts,\n      axis: orientation === 'horizontal' ? 'x' : 'y',\n    }, plugins)\n\n    function scrollPrev() {\n      emblaApi.value?.scrollPrev()\n    }\n    function scrollNext() {\n      emblaApi.value?.scrollNext()\n    }\n\n    const canScrollNext = ref(false)\n    const canScrollPrev = ref(false)\n\n    function onSelect(api: CarouselApi) {\n      canScrollNext.value = api?.canScrollNext() || false\n      canScrollPrev.value = api?.canScrollPrev() || false\n    }\n\n    onMounted(() => {\n      if (!emblaApi.value)\n        return\n\n      emblaApi.value?.on('init', onSelect)\n      emblaApi.value?.on('reInit', onSelect)\n      emblaApi.value?.on('select', onSelect)\n\n      emits('init-api', emblaApi.value)\n    })\n\n    return { carouselRef: emblaNode, carouselApi: emblaApi, canScrollPrev, canScrollNext, scrollPrev, scrollNext, orientation }\n  },\n)\n\nfunction useCarousel() {\n  const carouselState = useInjectCarousel()\n\n  if (!carouselState)\n    throw new Error('useCarousel must be used within a <Carousel />')\n\n  return carouselState\n}\n\nexport { useCarousel, useProvideCarousel }\n",
+      "path": "ui/carousel/useCarousel.ts"
+    }
+  ],
+  "cssVars": {
+    "theme": {
+      "primary-1": "#e6f4ff",
+      "primary-2": "#bae0ff",
+      "primary-3": "#91caff",
+      "primary-4": "#69b1ff",
+      "primary-5": "#4096ff",
+      "primary-6": "#1677ff",
+      "primary-7": "#0958d9",
+      "primary-8": "#003eb3",
+      "primary-9": "#002c8c",
+      "primary-10": "#001d66",
+      "success-1": "#f6ffed",
+      "success-2": "#d9f7be",
+      "success-3": "#b7eb8f",
+      "success-4": "#95de64",
+      "success-5": "#73d13d",
+      "success-6": "#52c41a",
+      "success-7": "#389e0d",
+      "success-8": "#237804",
+      "success-9": "#135200",
+      "success-10": "#092b00",
+      "warning-1": "#fffbe6",
+      "warning-2": "#fff1b8",
+      "warning-3": "#ffe58f",
+      "warning-4": "#ffd666",
+      "warning-5": "#ffc53d",
+      "warning-6": "#faad14",
+      "warning-7": "#d48806",
+      "warning-8": "#ad6800",
+      "warning-9": "#874d00",
+      "warning-10": "#613400",
+      "error-1": "#fff2f0",
+      "error-2": "#fff1f0",
+      "error-3": "#ffccc7",
+      "error-4": "#ffa39e",
+      "error-5": "#ff7875",
+      "error-6": "#ff4d4f",
+      "error-7": "#d9363e",
+      "error-8": "#b32430",
+      "error-9": "#8c1523",
+      "error-10": "#660e1b",
+      "info-1": "#e6f4ff",
+      "info-2": "#bae0ff",
+      "info-3": "#91caff",
+      "info-4": "#69b1ff",
+      "info-5": "#4096ff",
+      "info-6": "#1677ff",
+      "info-7": "#0958d9",
+      "info-8": "#003eb3",
+      "info-9": "#002c8c",
+      "info-10": "#001d66",
+      "neutral-1": "#5e5e5e",
+      "neutral-2": "#525252",
+      "neutral-3": "#454545",
+      "neutral-4": "#383838",
+      "neutral-5": "#2b2b2b",
+      "neutral-6": "#1f1f1f",
+      "neutral-7": "#000000",
+      "neutral-8": "#000000",
+      "neutral-9": "#000000",
+      "neutral-10": "#000000",
+      "radius-sm": "6px",
+      "radius-md": "8px",
+      "radius-lg": "12px",
+      "radius-pill": "9999px",
+      "shadow-sm": "0 1px 2px 0 rgb(0 0 0 / 0.06)",
+      "shadow-md": "0 4px 12px 0 rgb(0 0 0 / 0.10)",
+      "shadow-lg": "0 8px 24px 0 rgb(0 0 0 / 0.15)",
+      "font-size-xs": "12px",
+      "font-size-sm": "14px",
+      "font-size-md": "16px",
+      "font-size-lg": "20px",
+      "font-size-xl": "24px",
+      "font-size-2xl": "30px",
+      "font-size-3xl": "38px",
+      "text-lg": "20px",
+      "text-xl": "24px",
+      "text-2xl": "30px",
+      "text-3xl": "38px"
+    }
+  }
+}

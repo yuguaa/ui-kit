@@ -1,0 +1,834 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "ui-kit-vue",
+  "homepage": "https://git.newcapec.cn/02-newcapec/ai/UIService/helper/ui-kit",
+  "items": [
+    {
+      "name": "utils",
+      "type": "registry:ui",
+      "title": "工具函数",
+      "description": "cn 工具函数，二次封装组件的公共依赖。",
+      "registryDependencies": []
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "按钮原子组件",
+      "description": "shadcn-vue 基础原子组件 button。",
+      "registryDependencies": []
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "徽标原子组件",
+      "description": "shadcn-vue 基础原子组件 badge。",
+      "registryDependencies": []
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "title": "头像原子组件",
+      "description": "shadcn-vue 基础原子组件 avatar。",
+      "registryDependencies": []
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "卡片原子组件",
+      "description": "shadcn-vue 基础原子组件 card。",
+      "registryDependencies": []
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "骨架屏原子组件",
+      "description": "shadcn-vue 基础原子组件 skeleton。",
+      "registryDependencies": []
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "title": "分割线原子组件",
+      "description": "shadcn-vue 基础原子组件 separator。",
+      "registryDependencies": []
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "输入框原子组件",
+      "description": "shadcn-vue 基础原子组件 input。",
+      "registryDependencies": []
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "title": "标签原子组件",
+      "description": "shadcn-vue 基础原子组件 label。",
+      "registryDependencies": []
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "多行文本原子组件",
+      "description": "shadcn-vue 基础原子组件 textarea。",
+      "registryDependencies": []
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "title": "多选框原子组件",
+      "description": "shadcn-vue 基础原子组件 checkbox。",
+      "registryDependencies": []
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "title": "单选框组原子组件",
+      "description": "shadcn-vue 基础原子组件 radio-group。",
+      "registryDependencies": []
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "title": "开关原子组件",
+      "description": "shadcn-vue 基础原子组件 switch。",
+      "registryDependencies": []
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "title": "滑块原子组件",
+      "description": "shadcn-vue 基础原子组件 slider。",
+      "registryDependencies": []
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "title": "气泡原子组件",
+      "description": "shadcn-vue 基础原子组件 popover。",
+      "registryDependencies": []
+    },
+    {
+      "name": "native-select",
+      "type": "registry:ui",
+      "title": "原生下拉原子组件",
+      "description": "shadcn-vue 基础原子组件 native-select（calendar 依赖）。",
+      "registryDependencies": []
+    },
+    {
+      "name": "calendar",
+      "type": "registry:ui",
+      "title": "日历原子组件",
+      "description": "shadcn-vue 基础原子组件 calendar。",
+      "registryDependencies": [
+        "@ui-kit/button",
+        "@ui-kit/native-select"
+      ]
+    },
+    {
+      "name": "input-otp",
+      "type": "registry:ui",
+      "title": "验证码输入原子组件",
+      "description": "shadcn-vue 基础原子组件 input-otp。",
+      "registryDependencies": []
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "标签页原子组件",
+      "description": "shadcn-vue 基础原子组件 tabs。",
+      "registryDependencies": []
+    },
+    {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "title": "面包屑原子组件",
+      "description": "shadcn-vue 基础原子组件 breadcrumb。",
+      "registryDependencies": []
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "title": "下拉菜单原子组件",
+      "description": "shadcn-vue 基础原子组件 dropdown-menu。",
+      "registryDependencies": []
+    },
+    {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "title": "右键菜单原子组件",
+      "description": "shadcn-vue 基础原子组件 context-menu。",
+      "registryDependencies": []
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "对话框原子组件",
+      "description": "shadcn-vue 基础原子组件 dialog。",
+      "registryDependencies": []
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "title": "抽屉原子组件",
+      "description": "shadcn-vue 基础原子组件 drawer。",
+      "registryDependencies": []
+    },
+    {
+      "name": "sheet",
+      "type": "registry:ui",
+      "title": "侧滑原子组件",
+      "description": "shadcn-vue 基础原子组件 sheet。",
+      "registryDependencies": []
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "title": "提示气泡原子组件",
+      "description": "shadcn-vue 基础原子组件 tooltip。",
+      "registryDependencies": []
+    },
+    {
+      "name": "command",
+      "type": "registry:ui",
+      "title": "命令面板原子组件",
+      "description": "shadcn-vue 基础原子组件 command。",
+      "registryDependencies": [
+        "@ui-kit/dialog",
+        "@ui-kit/input-group"
+      ]
+    },
+    {
+      "name": "input-group",
+      "type": "registry:ui",
+      "title": "输入组原子组件",
+      "description": "shadcn-vue 基础原子组件 input-group（command 依赖）。",
+      "registryDependencies": []
+    },
+    {
+      "name": "sonner",
+      "type": "registry:ui",
+      "title": "通知原子组件",
+      "description": "shadcn-vue 基础原子组件 sonner。",
+      "registryDependencies": []
+    },
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "title": "手风琴原子组件",
+      "description": "shadcn-vue 基础原子组件 accordion。",
+      "registryDependencies": []
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "警告提示原子组件",
+      "description": "shadcn-vue 基础原子组件 alert。",
+      "registryDependencies": []
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "title": "进度条原子组件",
+      "description": "shadcn-vue 基础原子组件 progress。",
+      "registryDependencies": []
+    },
+    {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "title": "折叠原子组件",
+      "description": "shadcn-vue 基础原子组件 collapsible。",
+      "registryDependencies": []
+    },
+    {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "title": "滚动区域原子组件",
+      "description": "shadcn-vue 基础原子组件 scroll-area。",
+      "registryDependencies": []
+    },
+    {
+      "name": "carousel",
+      "type": "registry:ui",
+      "title": "轮播原子组件",
+      "description": "shadcn-vue 基础原子组件 carousel（embla）。",
+      "registryDependencies": [
+        "@ui-kit/button"
+      ]
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "title": "表格原子组件",
+      "description": "shadcn-vue 基础原子组件 table。",
+      "registryDependencies": []
+    },
+    {
+      "name": "motion",
+      "type": "registry:ui",
+      "title": "动效 token",
+      "description": "fast / base / slow 三档动效 token，二次封装组件的公共依赖。",
+      "registryDependencies": []
+    },
+    {
+      "name": "x-button",
+      "type": "registry:ui",
+      "title": "二次封装按钮",
+      "description": "内置 solid/outline/soft/ghost/subtle/link 六种变体 × 七种语义色与 Framer Motion 动效。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/motion",
+        "@ui-kit/button"
+      ]
+    },
+    {
+      "name": "x-button-group",
+      "type": "registry:ui",
+      "title": "按钮组",
+      "description": "将多个按钮水平或垂直拼接为一个整体。",
+      "registryDependencies": [
+        "@ui-kit/utils"
+      ]
+    },
+    {
+      "name": "x-badge",
+      "type": "registry:ui",
+      "title": "徽标",
+      "description": "展示数量或状态提示，支持数字、溢出与圆点模式。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/badge"
+      ]
+    },
+    {
+      "name": "x-chip",
+      "type": "registry:ui",
+      "title": "芯片",
+      "description": "标记属性，支持多种语义色与可选关闭按钮。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/button"
+      ]
+    },
+    {
+      "name": "x-avatar",
+      "type": "registry:ui",
+      "title": "头像",
+      "description": "展示用户形象，支持圆形/方形、五档尺寸、图片与图标。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/avatar"
+      ]
+    },
+    {
+      "name": "x-avatar-group",
+      "type": "registry:ui",
+      "title": "头像组",
+      "description": "将多个头像重叠排列展示，超出 max 折叠为 +N。",
+      "registryDependencies": [
+        "@ui-kit/utils"
+      ]
+    },
+    {
+      "name": "x-card",
+      "type": "registry:ui",
+      "title": "卡片",
+      "description": "通用容器，承载标题、操作区、封面与底部操作，支持悬浮提升。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/motion",
+        "@ui-kit/card"
+      ]
+    },
+    {
+      "name": "x-container",
+      "type": "registry:ui",
+      "title": "容器",
+      "description": "约束内容宽度的居中布局容器。",
+      "registryDependencies": [
+        "@ui-kit/utils"
+      ]
+    },
+    {
+      "name": "x-icon",
+      "type": "registry:ui",
+      "title": "图标",
+      "description": "名称驱动的矢量图标，内置常用图标集合与五档尺寸。",
+      "registryDependencies": [
+        "@ui-kit/utils"
+      ]
+    },
+    {
+      "name": "x-kbd",
+      "type": "registry:ui",
+      "title": "键盘按键",
+      "description": "展示快捷键或按键组合。",
+      "registryDependencies": [
+        "@ui-kit/utils"
+      ]
+    },
+    {
+      "name": "x-separator",
+      "type": "registry:ui",
+      "title": "分割线",
+      "description": "在内容之间插入水平或垂直分隔。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/separator"
+      ]
+    },
+    {
+      "name": "x-skeleton",
+      "type": "registry:ui",
+      "title": "骨架屏",
+      "description": "内容加载时的占位骨架。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/skeleton"
+      ]
+    },
+    {
+      "name": "x-input",
+      "type": "registry:ui",
+      "title": "输入框",
+      "description": "支持前后缀图标、前后置标签与 error / warning 校验状态。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/input"
+      ]
+    },
+    {
+      "name": "x-textarea",
+      "type": "registry:ui",
+      "title": "多行文本",
+      "description": "支持行数、自动调整高度与校验状态。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/textarea"
+      ]
+    },
+    {
+      "name": "x-checkbox",
+      "type": "registry:ui",
+      "title": "多选框",
+      "description": "支持半选状态与选项文字插槽。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/checkbox",
+        "@ui-kit/label"
+      ]
+    },
+    {
+      "name": "x-radio-group",
+      "type": "registry:ui",
+      "title": "单选框组",
+      "description": "支持普通单选框与按钮样式（outline / solid）。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/radio-group",
+        "@ui-kit/label"
+      ]
+    },
+    {
+      "name": "x-switch",
+      "type": "registry:ui",
+      "title": "开关",
+      "description": "支持选中/未选中文字与两档尺寸。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/switch",
+        "@ui-kit/label"
+      ]
+    },
+    {
+      "name": "x-select-menu",
+      "type": "registry:ui",
+      "title": "选择菜单",
+      "description": "带搜索的增强选择器，支持多选与空状态插槽。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/popover",
+        "@ui-kit/input"
+      ]
+    },
+    {
+      "name": "x-input-menu",
+      "type": "registry:ui",
+      "title": "输入菜单",
+      "description": "输入框与下拉菜单组合，支持搜索过滤。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/popover",
+        "@ui-kit/input"
+      ]
+    },
+    {
+      "name": "x-slider",
+      "type": "registry:ui",
+      "title": "滑块",
+      "description": "通过拖动滑块在区间内取值。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/slider"
+      ]
+    },
+    {
+      "name": "x-input-number",
+      "type": "registry:ui",
+      "title": "数字输入",
+      "description": "带步进按钮的数字输入框。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/input"
+      ]
+    },
+    {
+      "name": "x-input-tags",
+      "type": "registry:ui",
+      "title": "标签输入",
+      "description": "以标签形式输入多个值，回车添加。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/input",
+        "@ui-kit/x-chip"
+      ]
+    },
+    {
+      "name": "x-input-date",
+      "type": "registry:ui",
+      "title": "日期选择",
+      "description": "输入框 + popover 日历，支持最小/最大日期。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/popover",
+        "@ui-kit/input",
+        "@ui-kit/calendar"
+      ]
+    },
+    {
+      "name": "x-input-time",
+      "type": "registry:ui",
+      "title": "时间选择",
+      "description": "输入框 + popover 时间列表，支持 12/24 小时制。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/popover",
+        "@ui-kit/input"
+      ]
+    },
+    {
+      "name": "x-input-rating",
+      "type": "registry:ui",
+      "title": "评分",
+      "description": "以星标形式进行评分输入，支持半星。",
+      "registryDependencies": [
+        "@ui-kit/utils"
+      ]
+    },
+    {
+      "name": "x-color-picker",
+      "type": "registry:ui",
+      "title": "颜色选择",
+      "description": "从预设色板或色盘中选择颜色。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/popover"
+      ]
+    },
+    {
+      "name": "x-pin-input",
+      "type": "registry:ui",
+      "title": "验证码输入",
+      "description": "分段输入验证码或密码，支持掩码。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/input-otp"
+      ]
+    },
+    {
+      "name": "x-file-upload",
+      "type": "registry:ui",
+      "title": "文件上传",
+      "description": "上传文件，支持拖拽与多文件。",
+      "registryDependencies": [
+        "@ui-kit/utils"
+      ]
+    },
+    {
+      "name": "x-form",
+      "type": "registry:ui",
+      "title": "表单",
+      "description": "收集、校验并提交表单数据。",
+      "registryDependencies": [
+        "@ui-kit/utils"
+      ]
+    },
+    {
+      "name": "x-form-field",
+      "type": "registry:ui",
+      "title": "表单字段",
+      "description": "带标签、说明与错误信息的表单字段。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/label",
+        "@ui-kit/x-form"
+      ]
+    },
+    {
+      "name": "x-field-group",
+      "type": "registry:ui",
+      "title": "字段组",
+      "description": "将多个字段组合为一行或一组。",
+      "registryDependencies": [
+        "@ui-kit/utils"
+      ]
+    },
+    {
+      "name": "x-link",
+      "type": "registry:ui",
+      "title": "链接",
+      "description": "页面内或跨页面的超链接，支持前后图标与激活态。",
+      "registryDependencies": [
+        "@ui-kit/utils"
+      ]
+    },
+    {
+      "name": "x-breadcrumb",
+      "type": "registry:ui",
+      "title": "面包屑",
+      "description": "显示当前页面在层级结构中的位置。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/breadcrumb",
+        "@ui-kit/x-link"
+      ]
+    },
+    {
+      "name": "x-tabs",
+      "type": "registry:ui",
+      "title": "标签页",
+      "description": "在同一区域内切换不同视图或内容分组，支持 line / card 样式。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/tabs"
+      ]
+    },
+    {
+      "name": "x-navigation-menu",
+      "type": "registry:ui",
+      "title": "导航菜单",
+      "description": "支持垂直、水平与内嵌模式，子菜单使用 DropdownMenu 展开。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/dropdown-menu"
+      ]
+    },
+    {
+      "name": "x-pagination",
+      "type": "registry:ui",
+      "title": "分页",
+      "description": "对长列表数据进行分页浏览，支持省略号与每页条数切换。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/button",
+        "@ui-kit/x-select-menu"
+      ]
+    },
+    {
+      "name": "x-stepper",
+      "type": "registry:ui",
+      "title": "步骤条",
+      "description": "引导用户按步骤完成流程，支持受控与非受控用法。",
+      "registryDependencies": [
+        "@ui-kit/utils"
+      ]
+    },
+    {
+      "name": "x-command-palette",
+      "type": "registry:ui",
+      "title": "命令面板",
+      "description": "全局命令搜索与快捷操作面板。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/command",
+        "@ui-kit/x-kbd"
+      ]
+    },
+    {
+      "name": "x-modal",
+      "type": "registry:ui",
+      "title": "对话框",
+      "description": "模态对话框，默认提供取消与确定按钮。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/dialog",
+        "@ui-kit/x-button"
+      ]
+    },
+    {
+      "name": "x-drawer",
+      "type": "registry:ui",
+      "title": "抽屉",
+      "description": "从屏幕边缘滑出的面板。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/drawer",
+        "@ui-kit/x-button"
+      ]
+    },
+    {
+      "name": "x-slideover",
+      "type": "registry:ui",
+      "title": "侧滑",
+      "description": "从侧边滑入的浮层，常用于移动端导航。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/sheet",
+        "@ui-kit/x-button"
+      ]
+    },
+    {
+      "name": "x-tooltip",
+      "type": "registry:ui",
+      "title": "文字提示",
+      "description": "简单的文字提示气泡。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/tooltip"
+      ]
+    },
+    {
+      "name": "x-popover",
+      "type": "registry:ui",
+      "title": "气泡",
+      "description": "点击或悬停触发的轻量气泡卡片。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/popover"
+      ]
+    },
+    {
+      "name": "x-context-menu",
+      "type": "registry:ui",
+      "title": "右键菜单",
+      "description": "在指定区域右键唤出的上下文菜单。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/context-menu"
+      ]
+    },
+    {
+      "name": "x-dropdown-menu",
+      "type": "registry:ui",
+      "title": "下拉菜单",
+      "description": "点击按钮展开的操作菜单。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/dropdown-menu",
+        "@ui-kit/x-button"
+      ]
+    },
+    {
+      "name": "x-toast",
+      "type": "registry:ui",
+      "title": "消息通知",
+      "description": "操作后的轻量级全局消息通知（useToast + XToaster）。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/sonner"
+      ]
+    },
+    {
+      "name": "x-accordion",
+      "type": "registry:ui",
+      "title": "手风琴",
+      "description": "可展开与折叠的内容分组。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/accordion"
+      ]
+    },
+    {
+      "name": "x-alert",
+      "type": "registry:ui",
+      "title": "警告提示",
+      "description": "展示需要关注的信息，提供四种语义。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/alert",
+        "@ui-kit/x-button"
+      ]
+    },
+    {
+      "name": "x-progress",
+      "type": "registry:ui",
+      "title": "进度条",
+      "description": "展示操作的当前进度，支持线形与圆形。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/progress"
+      ]
+    },
+    {
+      "name": "x-collapsible",
+      "type": "registry:ui",
+      "title": "折叠",
+      "description": "点击触发内容展开或收起。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/collapsible"
+      ]
+    },
+    {
+      "name": "x-listbox",
+      "type": "registry:ui",
+      "title": "列表",
+      "description": "可选中项的列表选择组件。",
+      "registryDependencies": [
+        "@ui-kit/utils"
+      ]
+    },
+    {
+      "name": "x-scroll-area",
+      "type": "registry:ui",
+      "title": "滚动区域",
+      "description": "内容溢出时可滚动的区域。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/scroll-area"
+      ]
+    },
+    {
+      "name": "x-carousel",
+      "type": "registry:ui",
+      "title": "轮播",
+      "description": "多张内容横向轮播展示，支持自动播放与循环。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/carousel",
+        "@ui-kit/x-button"
+      ]
+    },
+    {
+      "name": "x-splitter",
+      "type": "registry:ui",
+      "title": "分割面板",
+      "description": "可拖拽调整大小的分栏面板。",
+      "registryDependencies": [
+        "@ui-kit/utils"
+      ]
+    },
+    {
+      "name": "x-table",
+      "type": "registry:ui",
+      "title": "表格",
+      "description": "展示行列数据，支持加载与分页。",
+      "registryDependencies": [
+        "@ui-kit/utils",
+        "@ui-kit/table",
+        "@ui-kit/x-pagination",
+        "@ui-kit/x-skeleton"
+      ]
+    }
+  ]
+}
