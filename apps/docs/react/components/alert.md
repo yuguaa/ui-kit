@@ -12,7 +12,15 @@ import AlertTypes from '@demos/react/alert-types'
 import alertTypesRaw from '@demos/react/alert-types.tsx.code.txt?raw'
 import AlertClosable from '@demos/react/alert-closable'
 import alertClosableRaw from '@demos/react/alert-closable.tsx.code.txt?raw'
+import AlertVariants from '@demos/react/alert-variants'
+import alertVariantsRaw from '@demos/react/alert-variants.tsx.code.txt?raw'
 </script>
+
+## 变体
+
+<DemoBlock title="solid / outline / subtle" description="variant 控制提示强度" :code="alertVariantsRaw">
+  <ReactDemo :component="AlertVariants" />
+</DemoBlock>
 
 ## 四种语义
 
@@ -37,6 +45,7 @@ npx shadcn@latest add @ui-kit/x-alert
 | 名称 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
 | type | success · info · warning · error | info | 提示类型 |
+| variant | solid · outline · soft · subtle | soft | 预设样式 |
 | message | ReactNode | - | 提示标题 |
 | description | ReactNode | - | 辅助说明文字 |
 | closable | boolean | false | 是否显示关闭按钮 |

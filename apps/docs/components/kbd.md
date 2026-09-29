@@ -1,17 +1,37 @@
 ---
-title: kbd 组件
-description: 基础组件 kbd
+title: Kbd 键盘按键
+description: 展示快捷键或按键组合，四种变体 × 七种语义色 × 五档尺寸
 ---
 
-# kbd
+# Kbd 键盘按键
 
-基础组件 kbd 的用法见 [Icon 图标页](/components/icon)。
+展示快捷键或按键组合。支持 solid / outline / soft / subtle 四种变体、七种语义色与五档尺寸。
+
+<script setup>
+import KbdVariants from '@demos/vue/kbd-variants.vue'
+import kbdVariantsRaw from '@demos/vue/kbd-variants.vue.code.txt?raw'
+</script>
+
+## 变体与组合
+
+<DemoBlock title="四种变体与按键组合" description="variant / color / value" :code="kbdVariantsRaw">
+  <KbdVariants />
+</DemoBlock>
 
 ## 安装
 
 ```bash
 npx shadcn-vue@latest add @ui-kit/x-kbd
 ```
+
+## API
+
+| 名称 | 类型 | 默认值 | 说明 |
+| --- | --- | --- | --- |
+| value | string | - | 按键内容 |
+| variant | solid · outline · soft · subtle | outline | 预设样式 |
+| color | primary · secondary · neutral · success · info · warning · error | neutral | 按键颜色 |
+| size | xs · sm · md · lg · xl | md | 尺寸 |
 
 ## 动效
 

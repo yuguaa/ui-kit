@@ -12,7 +12,15 @@ import BadgeDot from '@demos/react/badge-dot'
 import badgeDotRaw from '@demos/react/badge-dot.tsx.code.txt?raw'
 import BadgeColor from '@demos/react/badge-color'
 import badgeColorRaw from '@demos/react/badge-color.tsx.code.txt?raw'
+import BadgeVariants from '@demos/react/badge-variants'
+import badgeVariantsRaw from '@demos/react/badge-variants.tsx.code.txt?raw'
 </script>
+
+## 变体
+
+<DemoBlock title="四种变体" description="solid / outline / soft / subtle" :code="badgeVariantsRaw">
+  <ReactDemo :component="BadgeVariants" />
+</DemoBlock>
 
 ## 数字与圆点
 
@@ -41,6 +49,7 @@ npx shadcn@latest add @ui-kit/x-badge
 | count | number | - | 显示数字 |
 | dot | boolean | false | 圆点模式，不显示数字 |
 | overflowCount | number | 99 | 超出后显示 99+ |
+| variant | solid · outline · soft · subtle | soft | 预设样式 |
 | color | primary · secondary · neutral · success · info · warning · error | primary | 徽标颜色 |
 | size | xs · sm · md · lg · xl | md | 徽标尺寸 |
 

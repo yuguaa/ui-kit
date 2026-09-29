@@ -31,6 +31,24 @@ describe("generatePalette", () => {
     expect(scale[5]).toBe("#722ed1");
     expect(scale).toHaveLength(10);
   });
+
+  it("dark 主题生成反转色阶：索引 0 最暗，索引 9 最亮", () => {
+    const light = generatePalette("#1f1f1f");
+    const dark = generatePalette("#1f1f1f", "dark");
+    expect(dark).toEqual([
+      "#111111",
+      "#0f0f0f",
+      "#171717",
+      "#191919",
+      "#1b1b1b",
+      "#1d1d1d",
+      "#292929",
+      "#363636",
+      "#444444",
+      "#515151",
+    ]);
+    expect(dark[0]).not.toBe(light[0]);
+  });
 });
 
 describe("generateAllPalettes / palettesToCssVars", () => {
@@ -41,5 +59,11 @@ describe("generateAllPalettes / palettesToCssVars", () => {
     expect(vars["--primary-6"]).toBe("#1677ff");
     expect(vars["--error-6"]).toBe("#ff4d4f");
     expect(Object.keys(vars)).toHaveLength(60);
+  });
+
+  it("dark 主题下全部语义色生成反转色阶", () => {
+    const palettes = generateAllPalettes(undefined, "dark");
+    expect(palettes.primary[0]).toBe("#111a2c");
+    expect(palettes.neutral[0]).toBe("#111111");
   });
 });

@@ -26,16 +26,19 @@ export const paletteRoles = {
   active: 7,
 } as const;
 
-/** 由 seed 生成 10 级色阶，索引 0 为最亮，索引 9 为最暗 */
-export function generatePalette(seed: string): string[] {
-  return generate(seed);
+/** 色阶方向：default 索引 0 最亮，dark 索引 0 最暗（反转色阶） */
+export type PaletteTheme = 'default' | 'dark';
+
+/** 由 seed 生成 10 级色阶，theme 决定色阶方向 */
+export function generatePalette(seed: string, theme: PaletteTheme = 'default'): string[] {
+  return generate(seed, { theme });
 }
 
-/** 生成全部语义色的 10 级色阶 */
-export function generateAllPalettes(primarySeed: string = colorSeeds.primary): Record<ColorName, string[]> {
+/** 生成全部语义色的 10 级色阶，theme 决定色阶方向 */
+export function generateAllPalettes(primarySeed: string = colorSeeds.primary, theme: PaletteTheme = 'default'): Record<ColorName, string[]> {
   const seeds: Record<ColorName, string> = { ...colorSeeds, primary: primarySeed, info: primarySeed };
   return Object.fromEntries(
-    Object.entries(seeds).map(([name, seed]) => [name, generatePalette(seed)]),
+    Object.entries(seeds).map(([name, seed]) => [name, generatePalette(seed, theme)]),
   ) as Record<ColorName, string[]>;
 }
 

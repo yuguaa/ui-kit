@@ -12,7 +12,15 @@ import BadgeDot from '@demos/vue/badge-dot.vue'
 import badgeDotRaw from '@demos/vue/badge-dot.vue.code.txt?raw'
 import BadgeColor from '@demos/vue/badge-color.vue'
 import badgeColorRaw from '@demos/vue/badge-color.vue.code.txt?raw'
+import BadgeVariants from '@demos/vue/badge-variants.vue'
+import badgeVariantsRaw from '@demos/vue/badge-variants.vue.code.txt?raw'
 </script>
+
+## 变体
+
+<DemoBlock title="四种变体" description="solid / outline / soft / subtle" :code="badgeVariantsRaw">
+  <BadgeVariants />
+</DemoBlock>
 
 ## 数字与圆点
 
@@ -41,6 +49,7 @@ npx shadcn-vue@latest add @ui-kit/x-badge
 | count | number | - | 显示数字 |
 | dot | boolean | false | 圆点模式，不显示数字 |
 | overflowCount | number | 99 | 超出后显示 99+ |
+| variant | solid · outline · soft · subtle | soft | 预设样式 |
 | color | primary · secondary · neutral · success · info · warning · error | primary | 徽标颜色 |
 | size | xs · sm · md · lg · xl | md | 徽标尺寸 |
 

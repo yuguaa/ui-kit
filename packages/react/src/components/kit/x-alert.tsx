@@ -8,12 +8,34 @@ import { XButton } from "@/components/kit/x-button"
 import { cn } from "@/lib/utils"
 
 export type XAlertType = "success" | "info" | "warning" | "error"
+export type XAlertVariant = "solid" | "outline" | "soft" | "subtle"
 
-const alertTypeClasses: Record<XAlertType, string> = {
-  success: "bg-success-1 text-success-8",
-  info: "bg-info-1 text-info-8",
-  warning: "bg-warning-1 text-warning-8",
-  error: "bg-error-1 text-error-8",
+/** 变体 × 语义样式（字面量，保证 Tailwind 可扫描） */
+const alertTypeClasses: Record<XAlertVariant, Record<XAlertType, string>> = {
+  solid: {
+    success: "bg-success-6 text-white",
+    info: "bg-info-6 text-white",
+    warning: "bg-warning-6 text-white",
+    error: "bg-error-6 text-white",
+  },
+  outline: {
+    success: "text-success-7 ring-1 ring-inset ring-success-5",
+    info: "text-info-7 ring-1 ring-inset ring-info-5",
+    warning: "text-warning-8 ring-1 ring-inset ring-warning-5",
+    error: "text-error-7 ring-1 ring-inset ring-error-5",
+  },
+  soft: {
+    success: "bg-success-1 text-success-8",
+    info: "bg-info-1 text-info-8",
+    warning: "bg-warning-1 text-warning-8",
+    error: "bg-error-1 text-error-8",
+  },
+  subtle: {
+    success: "bg-success-1 text-success-8 ring-1 ring-inset ring-success-2",
+    info: "bg-info-1 text-info-8 ring-1 ring-inset ring-info-2",
+    warning: "bg-warning-1 text-warning-8 ring-1 ring-inset ring-warning-2",
+    error: "bg-error-1 text-error-8 ring-1 ring-inset ring-error-2",
+  },
 }
 const alertIcons: Record<XAlertType, React.ReactNode> = {
   success: <CircleCheck className="size-4" />,
@@ -25,6 +47,8 @@ const alertIcons: Record<XAlertType, React.ReactNode> = {
 export interface XAlertProps {
   /** 提示类型 */
   type?: XAlertType
+  /** 预设样式 */
+  variant?: XAlertVariant
   /** 提示标题 */
   message?: React.ReactNode
   /** 辅助说明文字 */
@@ -40,6 +64,7 @@ export interface XAlertProps {
 
 export function XAlert({
   type = "info",
+  variant = "soft",
   message,
   description,
   closable = false,
@@ -52,11 +77,11 @@ export function XAlert({
   if (!visible) return null
 
   return (
-    <Alert className={cn("flex items-start gap-2.5", alertTypeClasses[type], className)}>
+    <Alert className={cn("flex items-start gap-2.5", alertTypeClasses[variant][type], className)}>
       {showIcon && <span className="mt-0.5 shrink-0">{alertIcons[type]}</span>}
       <div className="flex min-w-0 flex-1 flex-col gap-0.5">
-        {message != null && <AlertTitle>{message}</AlertTitle>}
-        {description != null && <AlertDescription>{description}</AlertDescription>}
+        {message != null && <AlertTitle className="text-sm font-medium">{message}</AlertTitle>}
+        {description != null && <AlertDescription className="text-sm opacity-90">{description}</AlertDescription>}
       </div>
       {closable && (
         <AlertAction>

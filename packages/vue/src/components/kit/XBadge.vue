@@ -10,6 +10,7 @@ import { cn } from '@/lib/utils'
 
 type BadgeColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
 type BadgeSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
+type BadgeVariant = 'solid' | 'outline' | 'soft' | 'subtle'
 
 const props = withDefaults(defineProps<{
   /** 显示数字 */
@@ -18,6 +19,8 @@ const props = withDefaults(defineProps<{
   dot?: boolean
   /** 超出后显示 99+ */
   overflowCount?: number
+  /** 预设样式 */
+  variant?: BadgeVariant
   /** 徽标颜色 */
   color?: BadgeColor
   /** 徽标尺寸 */
@@ -25,18 +28,49 @@ const props = withDefaults(defineProps<{
   class?: HTMLAttributes['class']
 }>(), {
   overflowCount: 99,
+  variant: 'soft',
   color: 'primary',
   size: 'md',
 })
 
-const colorClasses: Record<BadgeColor, string> = {
-  primary: 'border-primary-3 bg-primary-1 text-primary-7',
-  secondary: 'border-border bg-secondary text-secondary-foreground',
-  neutral: 'border-border bg-muted text-muted-foreground',
-  success: 'border-success-3 bg-success-1 text-success-7',
-  info: 'border-info-3 bg-info-1 text-info-7',
-  warning: 'border-warning-3 bg-warning-1 text-warning-8',
-  error: 'border-error-3 bg-error-1 text-error-7',
+/** 变体 × 语义色样式（字面量，保证 Tailwind 可扫描） */
+const colorClasses: Record<BadgeVariant, Record<BadgeColor, string>> = {
+  solid: {
+    primary: 'bg-primary-6 text-white',
+    secondary: 'bg-secondary text-secondary-foreground',
+    neutral: 'bg-neutral-6 text-white',
+    success: 'bg-success-6 text-white',
+    info: 'bg-info-6 text-white',
+    warning: 'bg-warning-6 text-white',
+    error: 'bg-error-6 text-white',
+  },
+  outline: {
+    primary: 'text-primary-6 ring-1 ring-inset ring-primary-5',
+    secondary: 'text-foreground ring-1 ring-inset ring-border',
+    neutral: 'text-neutral-6 ring-1 ring-inset ring-neutral-5',
+    success: 'text-success-6 ring-1 ring-inset ring-success-5',
+    info: 'text-info-6 ring-1 ring-inset ring-info-5',
+    warning: 'text-warning-7 ring-1 ring-inset ring-warning-5',
+    error: 'text-error-6 ring-1 ring-inset ring-error-5',
+  },
+  soft: {
+    primary: 'bg-primary-1 text-primary-7',
+    secondary: 'bg-muted text-secondary-foreground',
+    neutral: 'bg-neutral-1 text-neutral-7',
+    success: 'bg-success-1 text-success-7',
+    info: 'bg-info-1 text-info-7',
+    warning: 'bg-warning-1 text-warning-8',
+    error: 'bg-error-1 text-error-7',
+  },
+  subtle: {
+    primary: 'bg-primary-1 text-primary-7 ring-1 ring-inset ring-primary-2',
+    secondary: 'bg-muted text-secondary-foreground ring-1 ring-inset ring-border',
+    neutral: 'bg-neutral-1 text-neutral-7 ring-1 ring-inset ring-neutral-2',
+    success: 'bg-success-1 text-success-7 ring-1 ring-inset ring-success-2',
+    info: 'bg-info-1 text-info-7 ring-1 ring-inset ring-info-2',
+    warning: 'bg-warning-1 text-warning-8 ring-1 ring-inset ring-warning-2',
+    error: 'bg-error-1 text-error-7 ring-1 ring-inset ring-error-2',
+  },
 }
 
 const sizeClasses: Record<BadgeSize, string> = {
@@ -58,13 +92,13 @@ const displayCount = computed(() => {
     <span class="absolute top-0 right-0 size-2 translate-x-1/2 -translate-y-1/2 rounded-full bg-error-6" />
     <slot />
   </span>
-  <Badge v-else-if="!$slots.default" :class="cn(colorClasses[color], sizeClasses[size], props.class)">
+  <Badge v-else-if="!$slots.default" :class="cn(colorClasses[variant][color], sizeClasses[size], props.class)">
     {{ displayCount }}
   </Badge>
   <span v-else class="relative inline-flex">
     <slot />
     <span class="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2">
-      <Badge :class="cn(colorClasses[color], sizeClasses[size], props.class)">
+      <Badge :class="cn(colorClasses[variant][color], sizeClasses[size], props.class)">
         {{ displayCount }}
       </Badge>
     </span>

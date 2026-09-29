@@ -12,7 +12,15 @@ import AlertTypes from '@demos/vue/alert-types.vue'
 import alertTypesRaw from '@demos/vue/alert-types.vue.code.txt?raw'
 import AlertClosable from '@demos/vue/alert-closable.vue'
 import alertClosableRaw from '@demos/vue/alert-closable.vue.code.txt?raw'
+import AlertVariants from '@demos/vue/alert-variants.vue'
+import alertVariantsRaw from '@demos/vue/alert-variants.vue.code.txt?raw'
 </script>
+
+## 变体
+
+<DemoBlock title="solid / outline / subtle" description="variant 控制提示强度" :code="alertVariantsRaw">
+  <AlertVariants />
+</DemoBlock>
 
 ## 四种语义
 
@@ -37,6 +45,7 @@ npx shadcn-vue@latest add @ui-kit/x-alert
 | 名称 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
 | type | success · info · warning · error | info | 提示类型 |
+| variant | solid · outline · soft · subtle | soft | 预设样式 |
 | message | string | - | 提示标题 |
 | description | string | - | 辅助说明文字 |
 | closable | boolean | false | 是否显示关闭按钮 |
