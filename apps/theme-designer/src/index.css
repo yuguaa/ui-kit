@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap');
+
+@import "@fontsource-variable/inter";
+
+@import "tailwindcss";
+
+@theme inline {
+    --font-sans: 'Inter Variable', sans-serif;
+}

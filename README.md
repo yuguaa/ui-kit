@@ -38,7 +38,9 @@ flowchart TB
 │   └── vue/registry.json + items/*.json
 ├── apps/
 │   ├── react-demo/        # React 消费端示例（通过 registry 安装组件）
-│   └── vue-demo/          # Vue 消费端示例
+│   ├── vue-demo/          # Vue 消费端示例
+│   ├── docs/              # VitePress 文档站（Vue / React 双视角，组件页含动效说明）
+│   └── theme-designer/    # 主题设计器：主色 seed 派生色阶 + 组件实时预览 + CSS 变量导出
 └── scripts/
     ├── build-registry.ts  # 从 packages 源码生成 registry JSON
     └── serve-registry.mjs # 本地静态服务器（本地验证分发链路）

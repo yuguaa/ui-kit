@@ -221,6 +221,43 @@ importers:
         specifier: ^3.2.7
         version: 3.2.7(@types/node@24.19.0)(jiti@2.7.0)(jsdom@30.1.1)(lightningcss@1.33.0)(sass@1.105.0)(stylus@0.57.0)(tsx@4.23.15)
 
+  apps/theme-designer:
+    dependencies:
+      '@fontsource-variable/inter':
+        specifier: ^5.3.0
+        version: 5.3.0
+      '@ui-kit/shared':
+        specifier: workspace:*
+        version: link:../../packages/shared
+      vue:
+        specifier: ^3.5.42
+        version: 3.5.43(typescript@6.0.3)
+    devDependencies:
+      '@tailwindcss/vite':
+        specifier: ^4.3.3
+        version: 4.3.3(vite@8.3.1(@types/node@24.19.0)(esbuild@0.28.2)(jiti@2.7.0)(sass@1.105.0)(stylus@0.57.0)(tsx@4.23.15))
+      '@types/node':
+        specifier: ^24.13.3
+        version: 24.19.0
+      '@vitejs/plugin-vue':
+        specifier: ^6.0.8
+        version: 6.0.9(vite@8.3.1(@types/node@24.19.0)(esbuild@0.28.2)(jiti@2.7.0)(sass@1.105.0)(stylus@0.57.0)(tsx@4.23.15))(vue@3.5.43(typescript@6.0.3))
+      '@vue/tsconfig':
+        specifier: ^0.9.1
+        version: 0.9.1(typescript@6.0.3)(vue@3.5.43(typescript@6.0.3))
+      tailwindcss:
+        specifier: ^4.3.3
+        version: 4.3.3
+      typescript:
+        specifier: ~6.0.2
+        version: 6.0.3
+      vite:
+        specifier: ^8.3.0
+        version: 8.3.1(@types/node@24.19.0)(esbuild@0.28.2)(jiti@2.7.0)(sass@1.105.0)(stylus@0.57.0)(tsx@4.23.15)
+      vue-tsc:
+        specifier: ^3.3.11
+        version: 3.3.11(typescript@6.0.3)
+
   apps/vue-demo:
     dependencies:
       '@fontsource-variable/inter':
