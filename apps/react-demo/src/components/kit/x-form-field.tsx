@@ -8,6 +8,8 @@ export interface XFormFieldProps {
   name?: string
   /** 标签文字 */
   label?: React.ReactNode
+  /** 标签右侧的提示文案（说明填写要求） */
+  hint?: React.ReactNode
   /** 辅助说明 */
   description?: React.ReactNode
   /** 错误信息 */
@@ -23,6 +25,7 @@ export interface XFormFieldProps {
 export function XFormField({
   name,
   label,
+  hint,
   description,
   error,
   required = false,
@@ -35,11 +38,18 @@ export function XFormField({
 
   return (
     <div className={cn("flex flex-col gap-1.5", className)}>
-      {label != null && (
-        <Label htmlFor={id} className="text-sm font-medium">
-          {label}
-          {required && <span className="ml-0.5 text-error-6">*</span>}
-        </Label>
+      {(label != null || hint != null) && (
+        <div className="flex items-center gap-1">
+          {label != null && (
+            <Label htmlFor={id} className="text-sm font-medium">
+              {label}
+              {required && <span className="ml-0.5 text-error-6">*</span>}
+            </Label>
+          )}
+          {hint != null && (
+            <span className="text-sm text-muted-foreground">{hint}</span>
+          )}
+        </div>
       )}
       {children}
       {fieldError != null ? (

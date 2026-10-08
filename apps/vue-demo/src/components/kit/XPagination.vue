@@ -4,10 +4,13 @@
  */
 import type { HTMLAttributes } from 'vue'
 import { computed, ref } from 'vue'
-import { ChevronLeft, ChevronRight } from '@lucide/vue'
+import { ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from '@lucide/vue'
 import { Button } from '@/components/ui/button'
 import XSelectMenu from '@/components/kit/XSelectMenu.vue'
 import { cn } from '@/lib/utils'
+
+/* 分页为多控件复合组件，属性统一落在根元素 */
+defineOptions({ inheritAttrs: false })
 
 const props = withDefaults(defineProps<{
   /** 当前页数 */
@@ -18,12 +21,15 @@ const props = withDefaults(defineProps<{
   pageSize?: number
   /** 是否显示每页条数切换 */
   showSizeChanger?: boolean
+  /** 是否显示首页与末页按钮 */
+  showControls?: boolean
   /** 是否禁用 */
   disabled?: boolean
   class?: HTMLAttributes['class']
 }>(), {
   pageSize: 10,
   showSizeChanger: false,
+  showControls: false,
   disabled: false,
 })
 
@@ -65,7 +71,17 @@ function changePageSize(value: string | string[]) {
 </script>
 
 <template>
-  <div :class="cn('flex items-center gap-1.5', disabled && 'pointer-events-none opacity-50', props.class)">
+  <div :class="cn('flex items-center gap-1.5', disabled && 'pointer-events-none opacity-50', props.class)" v-bind="$attrs">
+    <Button
+      v-if="showControls"
+      variant="outline"
+      size="sm"
+      aria-label="首页"
+      :disabled="safeCurrent <= 1"
+      @click="go(1)"
+    >
+      <ChevronsLeft class="size-4" />
+    </Button>
     <Button variant="outline" size="sm" aria-label="上一页" :disabled="safeCurrent <= 1" @click="go(safeCurrent - 1)">
       <ChevronLeft class="size-4" />
     </Button>
@@ -86,6 +102,16 @@ function changePageSize(value: string | string[]) {
     </template>
     <Button variant="outline" size="sm" aria-label="下一页" :disabled="safeCurrent >= pageCount" @click="go(safeCurrent + 1)">
       <ChevronRight class="size-4" />
+    </Button>
+    <Button
+      v-if="showControls"
+      variant="outline"
+      size="sm"
+      aria-label="末页"
+      :disabled="safeCurrent >= pageCount"
+      @click="go(pageCount)"
+    >
+      <ChevronsRight class="size-4" />
     </Button>
     <XSelectMenu
       v-if="showSizeChanger"

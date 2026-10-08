@@ -8,6 +8,8 @@
     "paths": {
       "@/*": ["./src/*"]
     },
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
     "ignoreDeprecations": "6.0",
 
     /* Linting */

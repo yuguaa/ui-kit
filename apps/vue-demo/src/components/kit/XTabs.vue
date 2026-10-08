@@ -25,11 +25,17 @@ const props = withDefaults(defineProps<{
   defaultActiveKey?: string
   /** 标签样式 */
   type?: 'line' | 'card'
+  /** 标签排列方向 */
+  orientation?: 'horizontal' | 'vertical'
+  /** 标签尺寸 */
+  size?: 'sm' | 'md' | 'lg'
   /** 隐藏时是否销毁内容 */
   destroyOnHide?: boolean
   class?: HTMLAttributes['class']
 }>(), {
   type: 'line',
+  orientation: 'horizontal',
+  size: 'md',
   destroyOnHide: false,
 })
 
@@ -47,16 +53,44 @@ function onChange(key: string | number) {
 }
 
 const currentKey = computed(() => props.activeKey ?? innerKey.value)
+
+/** 横向时各尺寸的列表高度 */
+const listSizeClasses: Record<'sm' | 'md' | 'lg', string> = {
+  sm: 'group-data-horizontal/tabs:h-7!',
+  md: '',
+  lg: 'group-data-horizontal/tabs:h-10!',
+}
+
+/** 各尺寸下触发器的内边距与字号 */
+const triggerSizeClasses: Record<'sm' | 'md' | 'lg', string> = {
+  sm: 'px-2.5! py-1! text-xs!',
+  md: '',
+  lg: 'px-3! py-1.5! text-base! gap-2!',
+}
 </script>
 
 <template>
   <Tabs
     :model-value="currentKey"
-    :class="cn('flex flex-col gap-3', props.class)"
+    :orientation="orientation"
+    :class="cn(
+      'flex gap-3',
+      orientation === 'vertical' ? 'flex-row data-[orientation=vertical]:items-start' : 'flex-col',
+      props.class,
+    )"
     @update:model-value="onChange"
   >
-    <TabsList :variant="type === 'line' ? 'line' : 'default'">
-      <TabsTrigger v-for="item in items" :key="item.key" :value="item.key" :disabled="item.disabled">
+    <TabsList
+      :variant="type === 'line' ? 'line' : 'default'"
+      :class="listSizeClasses[size]"
+    >
+      <TabsTrigger
+        v-for="item in items"
+        :key="item.key"
+        :value="item.key"
+        :disabled="item.disabled"
+        :class="triggerSizeClasses[size]"
+      >
         <slot name="tab" :item="item">{{ item.label }}</slot>
       </TabsTrigger>
     </TabsList>

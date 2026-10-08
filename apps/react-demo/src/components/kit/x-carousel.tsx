@@ -28,6 +28,12 @@ export interface XCarouselProps {
   loop?: boolean
   /** 是否禁用 */
   disabled?: boolean
+  /** 是否显示左右切换按钮 */
+  arrows?: boolean
+  /** 是否显示指示点 */
+  dots?: boolean
+  /** 轮播方向 */
+  orientation?: "horizontal" | "vertical"
   className?: string
 }
 
@@ -37,10 +43,21 @@ export interface XCarouselApi {
 }
 
 export const XCarousel = React.forwardRef<XCarouselApi, XCarouselProps>(function XCarousel(
-  { items = [], autoplay = false, interval = 3000, loop = true, disabled = false, className },
+  {
+    items = [],
+    autoplay = false,
+    interval = 3000,
+    loop = true,
+    disabled = false,
+    arrows = true,
+    dots = false,
+    orientation = "horizontal",
+    className,
+  },
   ref,
 ) {
   const [api, setApi] = React.useState<CarouselApi>()
+  const [selectedIndex, setSelectedIndex] = React.useState(0)
   const plugin = React.useMemo(
     () => (autoplay ? Autoplay({ delay: interval, stopOnInteraction: true }) : undefined),
     [autoplay, interval],
@@ -51,9 +68,24 @@ export const XCarousel = React.forwardRef<XCarouselApi, XCarouselProps>(function
     prev: () => api?.scrollPrev(),
   }))
 
+  /* 监听选中项变化，同步指示点高亮 */
+  React.useEffect(() => {
+    if (!api) return
+    const onSelect = () => setSelectedIndex(api.selectedScrollSnap())
+    api.on("select", onSelect)
+    return () => {
+      api.off("select", onSelect)
+    }
+  }, [api])
+
   return (
     <div className={cn("relative w-full", disabled && "pointer-events-none opacity-50", className)}>
-      <Carousel opts={{ loop, align: "start" }} plugins={plugin ? [plugin] : undefined} setApi={setApi}>
+      <Carousel
+        opts={{ loop, align: "start" }}
+        orientation={orientation}
+        plugins={plugin ? [plugin] : undefined}
+        setApi={setApi}
+      >
         <CarouselContent>
           {items.map((item) => (
             <CarouselItem key={item.key} className="basis-full">
@@ -61,28 +93,61 @@ export const XCarousel = React.forwardRef<XCarouselApi, XCarouselProps>(function
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="absolute inset-x-0 top-1/2 flex -translate-y-1/2 justify-between px-1">
-          <XButton
-            variant="soft"
-            color="neutral"
-            size="sm"
-            aria-label="上一张"
-            className="size-7 rounded-full p-0 opacity-70 hover:opacity-100"
-            onClick={() => api?.scrollPrev()}
+        {arrows && (
+          <div
+            className={cn(
+              "absolute flex",
+              orientation === "vertical"
+                ? "inset-y-0 left-1/2 -translate-x-1/2 flex-col justify-between py-1"
+                : "inset-x-0 top-1/2 -translate-y-1/2 justify-between px-1",
+            )}
           >
-            <ChevronLeft className="size-4" />
-          </XButton>
-          <XButton
-            variant="soft"
-            color="neutral"
-            size="sm"
-            aria-label="下一张"
-            className="size-7 rounded-full p-0 opacity-70 hover:opacity-100"
-            onClick={() => api?.scrollNext()}
+            <XButton
+              variant="soft"
+              color="neutral"
+              size="sm"
+              aria-label="上一张"
+              className="size-7 rounded-full p-0 opacity-70 hover:opacity-100"
+              onClick={() => api?.scrollPrev()}
+            >
+              <ChevronLeft className={cn("size-4", orientation === "vertical" && "rotate-90")} />
+            </XButton>
+            <XButton
+              variant="soft"
+              color="neutral"
+              size="sm"
+              aria-label="下一张"
+              className="size-7 rounded-full p-0 opacity-70 hover:opacity-100"
+              onClick={() => api?.scrollNext()}
+            >
+              <ChevronRight className={cn("size-4", orientation === "vertical" && "rotate-90")} />
+            </XButton>
+          </div>
+        )}
+        {dots && (
+          <div
+            className={cn(
+              "absolute flex gap-1.5",
+              orientation === "vertical"
+                ? "right-3 top-1/2 -translate-y-1/2 flex-col"
+                : "bottom-3 left-1/2 -translate-x-1/2",
+            )}
           >
-            <ChevronRight className="size-4" />
-          </XButton>
-        </div>
+            {items.map((item, index) => (
+              <button
+                key={item.key}
+                type="button"
+                aria-label={`跳转到第 ${index + 1} 张`}
+                aria-current={index === selectedIndex}
+                className={cn(
+                  "size-2 rounded-full transition-colors",
+                  index === selectedIndex ? "bg-primary-6" : "bg-neutral-4 hover:bg-neutral-5",
+                )}
+                onClick={() => api?.scrollTo(index)}
+              />
+            ))}
+          </div>
+        )}
       </Carousel>
     </div>
   )

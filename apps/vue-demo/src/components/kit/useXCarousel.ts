@@ -13,8 +13,14 @@ export interface XCarouselApi {
   prev: () => void
 }
 
-export function useXCarousel(options: { items?: CarouselDataItem[]; autoplay?: boolean; interval?: number; loop?: boolean; disabled?: boolean } = {}) {
-  const carouselRef = ref<InstanceType<typeof XCarousel>>()
+/** XCarousel 通过 defineExpose 暴露的实例方法 */
+interface XCarouselExposed {
+  next: () => void
+  prev: () => void
+}
+
+export function useXCarousel(options: { items?: CarouselDataItem[]; autoplay?: boolean; interval?: number; loop?: boolean; disabled?: boolean; arrows?: boolean; dots?: boolean; orientation?: 'horizontal' | 'vertical' } = {}) {
+  const carouselRef = ref<XCarouselExposed>()
 
   const Carousel = defineComponent({
     name: 'XCarouselBound',
@@ -24,12 +30,8 @@ export function useXCarousel(options: { items?: CarouselDataItem[]; autoplay?: b
   })
 
   const api: XCarouselApi = {
-    next: () => {
-      carouselRef.value?.$el?.querySelector('[aria-label=下一张]')?.dispatchEvent(new MouseEvent('click', { bubbles: true }))
-    },
-    prev: () => {
-      carouselRef.value?.$el?.querySelector('[aria-label=上一张]')?.dispatchEvent(new MouseEvent('click', { bubbles: true }))
-    },
+    next: () => carouselRef.value?.next(),
+    prev: () => carouselRef.value?.prev(),
   }
 
   return [Carousel, api] as const

@@ -65,7 +65,7 @@ function handleSelect(item: NavigationMenuItem) {
       <div v-if="item.children?.length && mode === 'inline'" class="flex flex-col gap-0.5">
         <button
           type="button"
-          :class="cn('flex w-full items-center gap-2 rounded-md px-3 py-1.5 text-left text-sm outline-none hover:bg-muted')"
+          :class="cn('flex w-full cursor-pointer items-center gap-2 rounded-md px-3 py-1.5 text-left text-sm outline-none hover:bg-muted')"
           @click="openKey = openKey === item.key ? null : item.key"
         >
           <slot name="item" :item="item" />
@@ -79,7 +79,7 @@ function handleSelect(item: NavigationMenuItem) {
             type="button"
             :disabled="child.disabled"
             :class="cn(
-              'flex w-full items-center gap-2 rounded-md py-1.5 pr-3 pl-8 text-left text-sm outline-none',
+              'flex w-full cursor-pointer items-center gap-2 rounded-md py-1.5 pr-3 pl-8 text-left text-sm outline-none',
               'hover:bg-muted focus-visible:bg-muted disabled:pointer-events-none disabled:opacity-50',
               selectedKeys.includes(child.key) && (theme === 'light' ? 'bg-primary-1 text-primary-7' : 'bg-white/10 text-white'),
             )"
@@ -95,7 +95,7 @@ function handleSelect(item: NavigationMenuItem) {
           <button
             type="button"
             :class="cn(
-              'flex w-full items-center gap-2 rounded-md px-3 py-1.5 text-left text-sm outline-none',
+              'flex w-full cursor-pointer items-center gap-2 rounded-md px-3 py-1.5 text-left text-sm outline-none',
               'hover:bg-muted focus-visible:bg-muted',
               selectedKeys.includes(item.key) && (theme === 'light' ? 'bg-primary-1 text-primary-7' : 'bg-white/10 text-white'),
             )"
@@ -123,7 +123,7 @@ function handleSelect(item: NavigationMenuItem) {
         type="button"
         :disabled="item.disabled"
         :class="cn(
-          'flex w-full items-center gap-2 rounded-md px-3 py-1.5 text-left text-sm outline-none transition-colors',
+          'flex w-full cursor-pointer items-center gap-2 rounded-md px-3 py-1.5 text-left text-sm outline-none transition-colors',
           'hover:bg-muted focus-visible:bg-muted disabled:pointer-events-none disabled:opacity-50',
           selectedKeys.includes(item.key) && (theme === 'light' ? 'bg-primary-1 text-primary-7' : 'bg-white/10 text-white'),
         )"

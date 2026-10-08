@@ -1,5 +1,4 @@
 import * as React from "react"
-import { motion } from "motion/react"
 import {
   Dialog,
   DialogClose,
@@ -10,7 +9,6 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog"
 import { XButton } from "@/components/kit/x-button"
-import { kitMotion } from "@/lib/kit/motion"
 import { cn } from "@/lib/utils"
 
 export interface XModalProps {
@@ -26,6 +24,8 @@ export interface XModalProps {
   maskClosable?: boolean
   /** 是否垂直居中显示 */
   centered?: boolean
+  /** 确定按钮加载态：锁定交互并阻止手动关闭 */
+  loading?: boolean
   /** 确定按钮文字 */
   okText?: string
   /** 取消按钮文字 */
@@ -49,6 +49,7 @@ export function XModal({
   width = 520,
   maskClosable = true,
   centered = false,
+  loading = false,
   okText = "确 定",
   cancelText = "取 消",
   children,
@@ -61,44 +62,41 @@ export function XModal({
     <Dialog
       open={open}
       onOpenChange={(next) => {
+        /* 锁定期间不允许通过遮罩、关闭按钮或 Esc 关闭 */
+        if (loading) return
         if (!next && !maskClosable) return
         onOpenChange?.(next)
       }}
     >
-      <DialogContent className={cn("p-0", centered && "translate-y-0", !centered && "top-24")}>
-        <motion.div
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={kitMotion.tokens.base}
-          className="flex flex-col"
-          style={{ width }}
-        >
-          <DialogHeader className="border-b border-border px-5 py-4">
-            {title != null && <DialogTitle>{title}</DialogTitle>}
-            {description != null && <DialogDescription>{description}</DialogDescription>}
-          </DialogHeader>
-          <div className="px-5 py-4 text-sm">{children}</div>
-          <DialogFooter className="border-t border-border px-5 py-3">
-            {footer ?? (
-              <>
-                <DialogClose
-                  render={
-                    <XButton variant="outline" color="neutral" onClick={onCancel}>
-                      {cancelText}
-                    </XButton>
-                  }
-                />
-                <DialogClose
-                  render={
-                    <XButton variant="solid" color="primary" onClick={onOk}>
-                      {okText}
-                    </XButton>
-                  }
-                />
-              </>
-            )}
-          </DialogFooter>
-        </motion.div>
+      <DialogContent
+        className={cn("gap-0 p-0", centered && "translate-y-0", !centered && "top-24")}
+        style={{ width }}
+      >
+        <DialogHeader className="px-5 py-4">
+          {title != null && <DialogTitle>{title}</DialogTitle>}
+          {description != null && <DialogDescription>{description}</DialogDescription>}
+        </DialogHeader>
+        <div className="px-5 py-4 text-sm">{children}</div>
+        <DialogFooter className="px-5 py-4">
+          {footer ?? (
+            <>
+              <DialogClose
+                render={
+                  <XButton variant="outline" color="neutral" disabled={loading} onClick={onCancel}>
+                    {cancelText}
+                  </XButton>
+                }
+              />
+              <DialogClose
+                render={
+                  <XButton variant="solid" color="primary" loading={loading} onClick={onOk}>
+                    {okText}
+                  </XButton>
+                }
+              />
+            </>
+          )}
+        </DialogFooter>
       </DialogContent>
     </Dialog>
   )
@@ -115,8 +113,16 @@ export interface XModalApi {
   close: () => void
   /** 切换开合 */
   toggle: () => void
-  /** 更新内部状态（标题、说明等） */
-  setState: (patch: Pick<Partial<XModalProps>, "title" | "description">) => void
+  /** 更新内部状态（标题、说明、宽度、加载态等） */
+  setState: (patch: Partial<XModalProps>) => void
+  /** 写入共享数据，供对话框内容读取 */
+  setData: <T extends object = Record<string, unknown>>(payload: T) => void
+  /** 读取共享数据 */
+  getData: <T extends object = Record<string, unknown>>() => T
+  /** 进入锁定（加载）状态：确定按钮 loading，阻止手动关闭 */
+  lock: () => void
+  /** 解除锁定 */
+  unlock: () => void
 }
 
 /**
@@ -129,8 +135,14 @@ export function useXModal({ defaultOpen = false, ...componentProps }: Partial<XM
       open: defaultOpen,
       title: componentProps.title,
       description: componentProps.description,
+      width: componentProps.width,
+      centered: componentProps.centered,
+      loading: componentProps.loading,
     }),
   )[0]
+
+  /** 与对话框共享的数据载荷 */
+  const payload = React.useRef<Record<string, unknown>>({})
 
   const api = React.useMemo<XModalApi>(
     () => ({
@@ -138,6 +150,12 @@ export function useXModal({ defaultOpen = false, ...componentProps }: Partial<XM
       close: () => store.set({ open: false }),
       toggle: () => store.set({ open: !store.get().open }),
       setState: (patch) => store.set(patch),
+      setData: (data: object) => {
+        payload.current = data as Record<string, unknown>
+      },
+      getData: <T extends object = Record<string, unknown>>() => payload.current as T,
+      lock: () => store.set({ loading: true }),
+      unlock: () => store.set({ loading: false }),
     }),
     [],
   )
@@ -150,9 +168,15 @@ export function useXModal({ defaultOpen = false, ...componentProps }: Partial<XM
           {...componentProps}
           {...props}
           open={state.open}
-          title={state.title}
-          description={state.description}
-          onOpenChange={(next) => store.set({ open: next })}
+          title={state.title ?? props.title}
+          description={state.description ?? props.description}
+          width={state.width ?? props.width}
+          centered={state.centered ?? props.centered}
+          loading={state.loading ?? props.loading}
+          onOpenChange={(next) => {
+            store.set({ open: next })
+            props.onOpenChange?.(next)
+          }}
         />
       )
     }

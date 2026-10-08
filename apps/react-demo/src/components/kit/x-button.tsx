@@ -1,8 +1,6 @@
 import * as React from "react"
 import { LoaderCircle } from "lucide-react"
-import { motion } from "motion/react"
 import { buttonVariants } from "@/components/ui/button"
-import { kitMotion } from "@/lib/kit/motion"
 import { cn } from "@/lib/utils"
 
 export type XButtonVariant = "solid" | "outline" | "soft" | "ghost" | "subtle" | "link"
@@ -32,60 +30,69 @@ const atomSizeMap: Record<XButtonSize, "xs" | "sm" | "default" | "lg"> = {
 const buttonColorStyles: Record<XButtonColor, Record<XButtonVariant, string>> = {
   primary: {
     solid: "bg-primary-6 text-white hover:bg-primary-5 active:bg-primary-7",
-    outline: "border-primary-5 text-primary-6 hover:bg-primary-1 active:bg-primary-2",
+    outline: "border-0 ring-1 ring-inset ring-primary-5 text-primary-6 hover:bg-primary-1 active:bg-primary-2",
     soft: "bg-primary-1 text-primary-7 hover:bg-primary-2 active:bg-primary-3",
     ghost: "text-primary-6 hover:bg-primary-1 active:bg-primary-2",
-    subtle: "text-muted-foreground hover:text-primary-6 hover:bg-primary-1",
+    subtle: "text-primary-6 ring-1 ring-inset ring-primary-2 bg-primary-1 hover:bg-primary-2",
     link: "text-primary-6 underline-offset-4 hover:underline",
   },
   secondary: {
     solid: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-    outline: "border-border text-foreground hover:bg-muted",
+    outline: "border-0 ring-1 ring-inset ring-border text-foreground hover:bg-muted",
     soft: "bg-muted text-secondary-foreground hover:bg-secondary",
     ghost: "text-secondary-foreground hover:bg-muted",
-    subtle: "text-muted-foreground hover:text-foreground hover:bg-muted",
+    subtle: "text-secondary-foreground ring-1 ring-inset ring-border bg-muted hover:bg-secondary",
     link: "text-secondary-foreground underline-offset-4 hover:underline",
   },
   neutral: {
     solid: "bg-neutral-6 text-white hover:bg-neutral-5 active:bg-neutral-7",
-    outline: "border-neutral-5 text-neutral-6 hover:bg-neutral-1 active:bg-neutral-2",
+    outline: "border-0 ring-1 ring-inset ring-neutral-5 text-neutral-6 hover:bg-neutral-1 active:bg-neutral-2",
     soft: "bg-neutral-1 text-neutral-7 hover:bg-neutral-2 active:bg-neutral-3",
     ghost: "text-neutral-6 hover:bg-neutral-1 active:bg-neutral-2",
-    subtle: "text-muted-foreground hover:text-neutral-6 hover:bg-neutral-1",
+    subtle: "text-neutral-6 ring-1 ring-inset ring-neutral-2 bg-neutral-1 hover:bg-neutral-2",
     link: "text-neutral-6 underline-offset-4 hover:underline",
   },
   success: {
     solid: "bg-success-6 text-white hover:bg-success-5 active:bg-success-7",
-    outline: "border-success-5 text-success-6 hover:bg-success-1 active:bg-success-2",
+    outline: "border-0 ring-1 ring-inset ring-success-5 text-success-6 hover:bg-success-1 active:bg-success-2",
     soft: "bg-success-1 text-success-7 hover:bg-success-2 active:bg-success-3",
     ghost: "text-success-6 hover:bg-success-1 active:bg-success-2",
-    subtle: "text-muted-foreground hover:text-success-6 hover:bg-success-1",
+    subtle: "text-success-6 ring-1 ring-inset ring-success-2 bg-success-1 hover:bg-success-2",
     link: "text-success-6 underline-offset-4 hover:underline",
   },
   info: {
     solid: "bg-info-6 text-white hover:bg-info-5 active:bg-info-7",
-    outline: "border-info-5 text-info-6 hover:bg-info-1 active:bg-info-2",
+    outline: "border-0 ring-1 ring-inset ring-info-5 text-info-6 hover:bg-info-1 active:bg-info-2",
     soft: "bg-info-1 text-info-7 hover:bg-info-2 active:bg-info-3",
     ghost: "text-info-6 hover:bg-info-1 active:bg-info-2",
-    subtle: "text-muted-foreground hover:text-info-6 hover:bg-info-1",
+    subtle: "text-info-6 ring-1 ring-inset ring-info-2 bg-info-1 hover:bg-info-2",
     link: "text-info-6 underline-offset-4 hover:underline",
   },
   warning: {
     solid: "bg-warning-6 text-white hover:bg-warning-5 active:bg-warning-7",
-    outline: "border-warning-5 text-warning-7 hover:bg-warning-1 active:bg-warning-2",
+    outline: "border-0 ring-1 ring-inset ring-warning-5 text-warning-7 hover:bg-warning-1 active:bg-warning-2",
     soft: "bg-warning-1 text-warning-8 hover:bg-warning-2 active:bg-warning-3",
     ghost: "text-warning-7 hover:bg-warning-1 active:bg-warning-2",
-    subtle: "text-muted-foreground hover:text-warning-7 hover:bg-warning-1",
+    subtle: "text-warning-7 ring-1 ring-inset ring-warning-2 bg-warning-1 hover:bg-warning-2",
     link: "text-warning-7 underline-offset-4 hover:underline",
   },
   error: {
     solid: "bg-error-6 text-white hover:bg-error-5 active:bg-error-7",
-    outline: "border-error-5 text-error-6 hover:bg-error-1 active:bg-error-2",
+    outline: "border-0 ring-1 ring-inset ring-error-5 text-error-6 hover:bg-error-1 active:bg-error-2",
     soft: "bg-error-1 text-error-7 hover:bg-error-2 active:bg-error-3",
     ghost: "text-error-6 hover:bg-error-1 active:bg-error-2",
-    subtle: "text-muted-foreground hover:text-error-6 hover:bg-error-1",
+    subtle: "text-error-6 ring-1 ring-inset ring-error-2 bg-error-1 hover:bg-error-2",
     link: "text-error-6 underline-offset-4 hover:underline",
   },
+}
+
+/** 方形按钮（仅图标）尺寸映射 */
+const atomSquareSizeMap: Record<XButtonSize, "icon-xs" | "icon-sm" | "icon" | "icon-lg"> = {
+  xs: "icon-xs",
+  sm: "icon-sm",
+  md: "icon",
+  lg: "icon-lg",
+  xl: "icon-lg",
 }
 
 /** xl 尺寸补足：在原子 lg 基础上加高加宽 */
@@ -93,8 +100,13 @@ const buttonSizeOverrides: Partial<Record<XButtonSize, string>> = {
   xl: "h-10 gap-2 px-4 text-base",
 }
 
+/** xl 方形补足 */
+const buttonSquareSizeOverrides: Partial<Record<XButtonSize, string>> = {
+  xl: "size-10",
+}
+
 export interface XButtonProps
-  extends Omit<React.ComponentProps<typeof motion.button>, "children"> {
+  extends Omit<React.ComponentProps<"button">, "children"> {
   /** 预设样式 */
   variant?: XButtonVariant
   /** 尺寸 */
@@ -103,6 +115,10 @@ export interface XButtonProps
   color?: XButtonColor
   /** 加载态 */
   loading?: boolean
+  /** 撑满父容器宽度 */
+  block?: boolean
+  /** 方形按钮，图标场景等边距 */
+  square?: boolean
   /** 前置图标 */
   leading?: React.ReactNode
   /** 后置图标 */
@@ -111,26 +127,23 @@ export interface XButtonProps
 }
 
 export const XButton = React.forwardRef<HTMLButtonElement, XButtonProps>(function XButton(
-  { variant = "solid", size = "md", color = "primary", loading = false, leading, trailing, children, className, disabled, ...rest },
+  { variant = "solid", size = "md", color = "primary", loading = false, block = false, square = false, leading, trailing, children, className, disabled, ...rest },
   ref,
 ) {
   const atomVariant = atomVariantMap[variant]
-  const atomSize = atomSizeMap[size]
+  const atomSize = square ? atomSquareSizeMap[size] : atomSizeMap[size]
   const isDisabled = disabled || loading
   return (
-    <motion.button
+    <button
       ref={ref}
       data-slot="button"
       data-variant={atomVariant}
       data-size={atomSize}
-      whileHover={isDisabled ? undefined : { y: -2 }}
-      whileTap={isDisabled ? undefined : { scale: 0.98 }}
-      transition={kitMotion.tokens.fast}
       className={cn(
         buttonVariants({ variant: atomVariant, size: atomSize }),
         buttonColorStyles[color][variant],
-        buttonSizeOverrides[size],
-        "hover:shadow-md",
+        square ? buttonSquareSizeOverrides[size] : buttonSizeOverrides[size],
+        block && "w-full",
         loading && "opacity-60",
         className,
       )}
@@ -141,6 +154,6 @@ export const XButton = React.forwardRef<HTMLButtonElement, XButtonProps>(functio
       {loading ? <LoaderCircle className="animate-spin" aria-hidden="true" /> : leading}
       {children}
       {trailing}
-    </motion.button>
+    </button>
   )
 })

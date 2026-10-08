@@ -8,6 +8,9 @@ import { Input } from '@/components/ui/input'
 import XChip from '@/components/kit/XChip.vue'
 import { cn } from '@/lib/utils'
 
+/* 属性透传到内部 input，避免落到外层包装元素 */
+defineOptions({ inheritAttrs: false })
+
 const props = withDefaults(defineProps<{
   /** 标签数组 */
   modelValue?: string[]
@@ -51,8 +54,8 @@ function removeTag(index: number) {
 <template>
   <span
     :class="cn(
-      'flex min-h-9 w-full flex-wrap items-center gap-1.5 rounded-lg border border-input bg-transparent px-2 py-1.5 transition-colors',
-      'focus-within:border-ring focus-within:ring-3 focus-within:ring-ring/50',
+      'flex min-h-9 w-full flex-wrap items-center gap-1.5 rounded-md bg-transparent px-2 py-1.5 transition-[box-shadow,color] ring-1 ring-inset ring-input',
+      'focus-within:ring-2 focus-within:ring-ring',
       disabled && 'pointer-events-none opacity-50',
       props.class,
     )"
@@ -64,6 +67,7 @@ function removeTag(index: number) {
     </template>
     <slot name="leading" />
     <Input
+      v-bind="$attrs"
       v-model="draft"
       :disabled="disabled || (max != null && modelValue.length >= max)"
       :placeholder="modelValue.length === 0 ? placeholder : ''"

@@ -5,14 +5,19 @@
  * 派发 contextmenu 事件打开菜单。
  */
 import type { HTMLAttributes } from 'vue'
-import { ref, useTemplateRef, watch } from 'vue'
+import { computed, ref, useTemplateRef, useSlots, watch } from 'vue'
 import { ContextMenu, ContextMenuContent, ContextMenuItem, ContextMenuSeparator, ContextMenuTrigger } from '@/components/ui/context-menu'
+import XKbd from '@/components/kit/XKbd.vue'
 
 export interface ContextMenuItemData {
   /** 菜单项 key */
   key: string
   /** 菜单项标题 */
   label: string
+  /** 菜单项说明文字 */
+  description?: string
+  /** 菜单项快捷键 */
+  shortcut?: string
   /** 是否禁用 */
   disabled?: boolean
   /** 是否分隔线 */
@@ -38,6 +43,10 @@ const emit = defineEmits<{
 
 const innerOpen = ref(false)
 const wrapperRef = useTemplateRef<HTMLElement>('wrapperRef')
+const slots = useSlots()
+
+/* item 插槽存在时由用户完全自定义菜单项内容 */
+const hasItemSlot = computed(() => Boolean(slots.item))
 
 /* open prop 为 true 时在触发区域派发 contextmenu 事件打开菜单 */
 watch(
@@ -73,7 +82,16 @@ function onOpenChange(next: boolean) {
           class="gap-2"
           @select="emit('select', item)"
         >
-          <slot name="item" :item="item">{{ item.label }}</slot>
+          <template v-if="hasItemSlot">
+            <slot name="item" :item="item" />
+          </template>
+          <template v-else>
+            <span class="flex min-w-0 flex-1 flex-col gap-0.5">
+              <span>{{ item.label }}</span>
+              <span v-if="item.description" class="text-xs text-muted-foreground">{{ item.description }}</span>
+            </span>
+            <XKbd v-if="item.shortcut" size="sm">{{ item.shortcut }}</XKbd>
+          </template>
         </ContextMenuItem>
       </template>
     </ContextMenuContent>

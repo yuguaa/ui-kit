@@ -1,4 +1,4 @@
-import { generateAllPalettes, paletteRoles, palettesToCssVars, type ColorName } from '@ui-kit/shared/colors'
+import { generateAllPalettes, paletteRoles, palettesToCssVars, type ColorName, type PaletteTheme } from '@ui-kit/shared/colors'
 
 /** 语义色展示顺序（primary 在前） */
 export const semanticColorNames: ColorName[] = ['primary', 'success', 'warning', 'error', 'info', 'neutral']
@@ -9,14 +9,14 @@ export const presetSeeds = ['#1677ff', '#13c2c2', '#52c41a', '#722ed1', '#fa8c16
 /** hex 颜色格式校验 */
 export const hexColorPattern = /^#[0-9a-fA-F]{6}$/
 
-/** 由主色 seed 生成全部语义色 10 级色阶 */
-export function buildPalettes(seed: string): Record<ColorName, string[]> {
-  return generateAllPalettes(seed)
+/** 由主色 seed 生成全部语义色 10 级色阶，theme 控制色阶方向（暗色预览用反转色阶） */
+export function buildPalettes(seed: string, theme: PaletteTheme = 'default'): Record<ColorName, string[]> {
+  return generateAllPalettes(seed, theme)
 }
 
 /** 色阶转 CSS 变量对象（--primary-1 ... --neutral-10） */
-export function buildThemeVars(seed: string): Record<string, string> {
-  return palettesToCssVars(buildPalettes(seed))
+export function buildThemeVars(seed: string, theme: PaletteTheme = 'default'): Record<string, string> {
+  return palettesToCssVars(buildPalettes(seed, theme))
 }
 
 /** 色阶角色的固定用途说明 */

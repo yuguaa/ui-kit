@@ -3,7 +3,8 @@ import { Input } from "@/components/ui/input"
 import { XChip } from "@/components/kit/x-chip"
 import { cn } from "@/lib/utils"
 
-export interface XInputTagsProps {
+export interface XInputTagsProps
+  extends Omit<React.ComponentProps<typeof Input>, "value" | "defaultValue" | "onChange"> {
   /** 标签数组 */
   value?: string[]
   /** 默认标签 */
@@ -30,6 +31,7 @@ export function XInputTags({
   onAdd,
   onRemove,
   className,
+  ...props
 }: XInputTagsProps) {
   const [innerValue, setInnerValue] = React.useState<string[]>(defaultValue)
   const [draft, setDraft] = React.useState("")
@@ -54,8 +56,8 @@ export function XInputTags({
   return (
     <span
       className={cn(
-        "flex min-h-9 w-full flex-wrap items-center gap-1.5 rounded-lg border border-input bg-transparent px-2 py-1.5 transition-colors",
-        "focus-within:border-ring focus-within:ring-3 focus-within:ring-ring/50",
+        "flex min-h-9 w-full flex-wrap items-center gap-1.5 rounded-md bg-transparent px-2 py-1.5 transition-[box-shadow,color] ring-1 ring-inset ring-input",
+        "focus-within:ring-2 focus-within:ring-ring",
         disabled && "pointer-events-none opacity-50",
         className,
       )}
@@ -80,6 +82,7 @@ export function XInputTags({
         }}
         onBlur={() => addTag(draft)}
         placeholder={tags.length === 0 ? placeholder : ""}
+        {...props}
         className="h-6 min-w-24 flex-1 border-0 bg-transparent p-0 text-sm shadow-none outline-none focus-visible:ring-0 focus-visible:border-0"
       />
     </span>

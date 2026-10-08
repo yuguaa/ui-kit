@@ -7,6 +7,9 @@ import { Minus, Plus } from '@lucide/vue'
 import { Input } from '@/components/ui/input'
 import { cn } from '@/lib/utils'
 
+/* 属性透传到内部 input，避免落到外层包装元素 */
+defineOptions({ inheritAttrs: false })
+
 const props = withDefaults(defineProps<{
   /** 绑定值 */
   modelValue?: number
@@ -51,12 +54,13 @@ function update(next: number) {
       type="button"
       aria-label="decrement"
       :disabled="disabled || (min != null && modelValue <= min)"
-      class="inline-flex size-9 items-center justify-center rounded-l-lg border border-input text-muted-foreground transition-colors outline-none hover:bg-muted focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50"
+      class="inline-flex size-9 cursor-pointer items-center justify-center rounded-l-lg border border-input text-muted-foreground transition-colors outline-none hover:bg-muted focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50"
       @click="update(modelValue - step)"
     >
       <slot name="decrement"><Minus class="size-4" /></slot>
     </button>
     <Input
+      v-bind="$attrs"
       type="number"
       :model-value="String(modelValue)"
       :disabled="disabled"
@@ -67,7 +71,7 @@ function update(next: number) {
       type="button"
       aria-label="increment"
       :disabled="disabled || (max != null && modelValue >= max)"
-      class="inline-flex size-9 items-center justify-center rounded-r-lg border border-input text-muted-foreground transition-colors outline-none hover:bg-muted focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50"
+      class="inline-flex size-9 cursor-pointer items-center justify-center rounded-r-lg border border-input text-muted-foreground transition-colors outline-none hover:bg-muted focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50"
       @click="update(modelValue + step)"
     >
       <slot name="increment"><Plus class="size-4" /></slot>

@@ -11,7 +11,10 @@ const hexInput = ref(seed.value)
 const previewDark = ref(false)
 
 const palettes = computed(() => buildPalettes(seed.value))
-const themeVars = computed(() => buildThemeVars(seed.value))
+/** 导出变量始终为默认方向色阶，不随预览切换变化 */
+const exportVars = computed(() => buildThemeVars(seed.value))
+/** 预览变量随亮暗切换改变色阶方向（暗色预览使用反转色阶） */
+const previewVars = computed(() => buildThemeVars(seed.value, previewDark.value ? 'dark' : 'default'))
 
 function applySeed(next: string) {
   if (hexColorPattern.test(next)) {
@@ -73,7 +76,7 @@ function onHexInput() {
         <PaletteBoard :palettes="palettes" />
 
         <div class="mt-6 grid gap-6 lg:grid-cols-2">
-          <ComponentPreview :vars="themeVars" :dark="previewDark" />
+          <ComponentPreview :vars="previewVars" :dark="previewDark" />
           <div class="flex flex-col gap-6">
             <div class="flex items-center justify-between rounded-xl border border-neutral-200 bg-white p-5">
               <div>
@@ -94,7 +97,7 @@ function onHexInput() {
                 />
               </button>
             </div>
-            <CssVarOutput :vars="themeVars" />
+            <CssVarOutput :vars="exportVars" />
           </div>
         </div>
       </main>

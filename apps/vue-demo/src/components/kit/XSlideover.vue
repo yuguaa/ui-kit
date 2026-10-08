@@ -14,6 +14,8 @@ const props = withDefaults(defineProps<{
   side?: 'left' | 'right'
   /** 点击遮罩关闭 */
   dismissible?: boolean
+  /** 加载态：锁定交互并阻止手动关闭 */
+  loading?: boolean
   /** 标题 */
   title?: string
   class?: HTMLAttributes['class']
@@ -28,6 +30,8 @@ const emit = defineEmits<{
 }>()
 
 function onOpenChange(next: boolean) {
+  /* 锁定期间不允许关闭 */
+  if (props.loading) return
   if (!next && !props.dismissible) return
   emit('update:open', next)
 }

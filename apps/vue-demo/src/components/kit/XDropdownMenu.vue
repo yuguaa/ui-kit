@@ -3,10 +3,11 @@
  * XDropdownMenu 下拉菜单：点击按钮展开的操作菜单。
  */
 import type { HTMLAttributes } from 'vue'
-import { nextTick, ref } from 'vue'
+import { computed, nextTick, ref, useSlots } from 'vue'
 import { ChevronDown } from '@lucide/vue'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from '@/components/ui/dropdown-menu'
 import XButton from '@/components/kit/XButton.vue'
+import XKbd from '@/components/kit/XKbd.vue'
 import { cn } from '@/lib/utils'
 
 export interface DropdownMenuItemData {
@@ -14,6 +15,10 @@ export interface DropdownMenuItemData {
   key: string
   /** 菜单项标题 */
   label?: string
+  /** 菜单项说明文字 */
+  description?: string
+  /** 菜单项快捷键 */
+  shortcut?: string
   /** 是否禁用 */
   disabled?: boolean
   /** 是否分隔线 */
@@ -44,6 +49,10 @@ const emit = defineEmits<{
 }>()
 
 const innerOpen = ref(false)
+const slots = useSlots()
+
+/* item 插槽存在时由用户完全自定义菜单项内容 */
+const hasItemSlot = computed(() => Boolean(slots.item))
 
 function onOpenChange(next: boolean) {
   if (props.open == null) innerOpen.value = next
@@ -78,7 +87,16 @@ function handleSelect(item: DropdownMenuItemData) {
           class="gap-2"
           @select="handleSelect(item)"
         >
-          <slot name="item" :item="item">{{ item.label }}</slot>
+          <template v-if="hasItemSlot">
+            <slot name="item" :item="item" />
+          </template>
+          <template v-else>
+            <span class="flex min-w-0 flex-1 flex-col gap-0.5">
+              <span>{{ item.label }}</span>
+              <span v-if="item.description" class="text-xs text-muted-foreground">{{ item.description }}</span>
+            </span>
+            <XKbd v-if="item.shortcut" size="sm">{{ item.shortcut }}</XKbd>
+          </template>
         </DropdownMenuItem>
       </template>
     </DropdownMenuContent>

@@ -1,12 +1,10 @@
 <script setup lang="ts">
 /**
  * XCard 卡片：通用容器，承载标题、操作区、封面与底部操作。
- * hoverable 时悬浮上浮 2px 并加深阴影。
+ * hoverable 时阴影加深并高亮 ring 边框色（CSS 过渡，无位移动画）。
  */
 import type { HTMLAttributes } from 'vue'
-import { motion } from 'motion-v'
 import { CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
-import { kitMotion } from '@/lib/kit/motion'
 import { cn } from '@/lib/utils'
 
 type CardSize = 'default' | 'small'
@@ -18,7 +16,7 @@ const props = withDefaults(defineProps<{
   description?: string
   /** 是否显示边框 */
   bordered?: boolean
-  /** 悬浮时提升效果 */
+  /** 悬浮时阴影加深并高亮边框色 */
   hoverable?: boolean
   /** 卡片尺寸 */
   size?: CardSize
@@ -43,14 +41,13 @@ const sizeClasses: Record<CardSize, string> = {
 </script>
 
 <template>
-  <motion.div
+  <div
     :class="cn(
-      'overflow-hidden rounded-lg border bg-card text-card-foreground',
-      hoverable && 'cursor-pointer hover:shadow-md',
+      'overflow-hidden rounded-lg bg-card text-card-foreground',
+      bordered && 'ring-1 ring-inset ring-border',
+      hoverable && 'cursor-pointer transition-shadow duration-200 hover:shadow-md hover:ring-primary-3',
       props.class,
     )"
-    :while-hover="hoverable ? { y: -2 } : undefined"
-    :transition="kitMotion.tokens.fast"
     @click="emit('click', $event)"
     @mouseenter="emit('hover', $event)"
   >
@@ -74,5 +71,5 @@ const sizeClasses: Record<CardSize, string> = {
     <CardFooter v-if="$slots.actions" :class="cn(!bordered && 'border-0')">
       <slot name="actions" />
     </CardFooter>
-  </motion.div>
+  </div>
 </template>

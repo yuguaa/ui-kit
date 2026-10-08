@@ -51,7 +51,7 @@ defineExpose({ toggle })
   >
     <CollapsibleTrigger as-child>
       <slot name="trigger">
-        <button type="button" class="inline-flex w-fit items-center gap-1 text-sm font-medium outline-none hover:underline">
+        <button type="button" class="inline-flex w-fit cursor-pointer items-center gap-1 text-sm font-medium outline-none hover:underline">
           展开详情
           <ChevronDown :class="cn('size-4 transition-transform', (open ?? innerOpen) && 'rotate-180')" />
         </button>

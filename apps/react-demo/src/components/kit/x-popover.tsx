@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Popover as PopoverPrimitive } from "@base-ui/react/popover"
 import {
   Popover,
   PopoverContent,
@@ -17,6 +18,8 @@ export interface XPopoverProps {
   trigger?: "hover" | "click"
   /** 位置 */
   side?: "top" | "bottom" | "left" | "right"
+  /** 是否显示指向触发元素的箭头 */
+  arrow?: boolean
   /** 内容 */
   content?: React.ReactNode
   /** 标题 */
@@ -32,6 +35,7 @@ export function XPopover({
   open: openProp,
   trigger = "hover",
   side = "top",
+  arrow = false,
   content,
   title,
   children,
@@ -59,7 +63,14 @@ export function XPopover({
           )
         }
       />
-      <PopoverContent side={side} className={cn("w-64", className)}>
+      <PopoverContent
+        side={side}
+        sideOffset={arrow ? 8 : undefined}
+        className={cn("w-64", className)}
+      >
+        {arrow && (
+          <PopoverPrimitive.Arrow className="size-3 rotate-45 bg-popover" />
+        )}
         {title != null && (
           <PopoverHeader>
             <PopoverTitle>{title}</PopoverTitle>

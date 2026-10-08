@@ -2,6 +2,7 @@
 /**
  * XModal 对话框：模态对话框，用于承载需要用户确认的信息或操作。
  * 底部操作区默认提供取消与确定按钮，可通过 footer 插槽自定义。
+ * 动效（Nuxt UI 模式）：遮罩淡入淡出，内容缩放进出场（dialog 原子 CSS 动画）。
  */
 import type { HTMLAttributes } from 'vue'
 import { Dialog, DialogClose, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@/components/ui/dialog'
@@ -21,6 +22,8 @@ const props = withDefaults(defineProps<{
   maskClosable?: boolean
   /** 是否垂直居中显示 */
   centered?: boolean
+  /** 确定按钮加载态：锁定交互并阻止手动关闭 */
+  loading?: boolean
   /** 确定按钮文字 */
   okText?: string
   /** 取消按钮文字 */
@@ -44,6 +47,8 @@ const emit = defineEmits<{
 }>()
 
 function onOpenChange(next: boolean) {
+  /* 锁定期间不允许通过遮罩、关闭按钮或 Esc 关闭 */
+  if (props.loading) return
   if (!next && !props.maskClosable) return
   emit('update:open', next)
 }
@@ -55,7 +60,7 @@ function onOpenChange(next: boolean) {
       :class="cn('p-0', centered && 'translate-y-0', !centered && 'top-24', props.class)"
       :style="{ width: `${width}px`, maxWidth: '90vw' }"
     >
-      <DialogHeader class="border-b border-border px-5 py-4">
+      <DialogHeader class="px-5 py-4">
         <DialogTitle v-if="title != null || $slots.title"><slot name="title">{{ title }}</slot></DialogTitle>
         <DialogDescription v-if="description != null || $slots.description">
           <slot name="description">{{ description }}</slot>
@@ -64,13 +69,13 @@ function onOpenChange(next: boolean) {
       <div class="px-5 py-4 text-sm">
         <slot name="content" />
       </div>
-      <DialogFooter class="border-t border-border px-5 py-3">
+      <DialogFooter class="px-5 py-4">
         <slot name="footer">
           <DialogClose as-child>
-            <XButton variant="outline" color="neutral" @click="emit('cancel', $event)">{{ cancelText }}</XButton>
+            <XButton variant="outline" color="neutral" :disabled="loading" @click="emit('cancel', $event)">{{ cancelText }}</XButton>
           </DialogClose>
           <DialogClose as-child>
-            <XButton variant="solid" color="primary" @click="emit('ok', $event)">{{ okText }}</XButton>
+            <XButton variant="solid" color="primary" :loading="loading" @click="emit('ok', $event)">{{ okText }}</XButton>
           </DialogClose>
         </slot>
       </DialogFooter>
