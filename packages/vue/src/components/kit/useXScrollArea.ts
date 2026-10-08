@@ -10,7 +10,7 @@ export interface XScrollAreaApi {
   scrollTo: (top: number) => void
 }
 
-export function useXScrollArea(options: { height?: number | string; type?: 'auto' | 'always' | 'hover' } = {}) {
+export function useXScrollArea(options: { height?: number | string; type?: 'auto' | 'always' | 'hover'; orientation?: 'vertical' | 'horizontal' | 'both' } = {}) {
   const areaRef = ref<InstanceType<typeof XScrollArea>>()
 
   const ScrollArea = defineComponent({

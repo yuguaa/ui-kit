@@ -60,6 +60,26 @@ describe("useXModal", () => {
     api.toggle()
     expect(await waitForBody("新标题")).toBe(true)
   })
+
+  it("setData / getData 共享数据，lock / unlock 切换确定按钮加载态", async () => {
+    const { Host, apiRef } = createHost(() => useXModal({ title: "数据" }))
+    mount(Host as never)
+    const api = apiRef.current as unknown as ReturnType<typeof useXModal>[1]
+
+    api.setData({ id: 7 })
+    api.open()
+    expect(await waitForBody("数据")).toBe(true)
+    expect(api.getData<{ id: number }>()).toEqual({ id: 7 })
+
+    api.lock()
+    await nextTick()
+    const okButton = Array.from(document.querySelectorAll("button")).find((item) => item.textContent === "确 定")
+    expect(okButton?.getAttribute("aria-busy")).toBe("true")
+
+    api.unlock()
+    await nextTick()
+    expect(okButton?.getAttribute("aria-busy")).toBeNull()
+  })
 })
 
 describe("useXDrawer / useXSlideover", () => {

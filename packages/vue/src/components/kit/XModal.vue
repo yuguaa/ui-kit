@@ -22,6 +22,8 @@ const props = withDefaults(defineProps<{
   maskClosable?: boolean
   /** 是否垂直居中显示 */
   centered?: boolean
+  /** 确定按钮加载态：锁定交互并阻止手动关闭 */
+  loading?: boolean
   /** 确定按钮文字 */
   okText?: string
   /** 取消按钮文字 */
@@ -45,6 +47,8 @@ const emit = defineEmits<{
 }>()
 
 function onOpenChange(next: boolean) {
+  /* 锁定期间不允许通过遮罩、关闭按钮或 Esc 关闭 */
+  if (props.loading) return
   if (!next && !props.maskClosable) return
   emit('update:open', next)
 }
@@ -68,10 +72,10 @@ function onOpenChange(next: boolean) {
       <DialogFooter class="px-5 py-4">
         <slot name="footer">
           <DialogClose as-child>
-            <XButton variant="outline" color="neutral" @click="emit('cancel', $event)">{{ cancelText }}</XButton>
+            <XButton variant="outline" color="neutral" :disabled="loading" @click="emit('cancel', $event)">{{ cancelText }}</XButton>
           </DialogClose>
           <DialogClose as-child>
-            <XButton variant="solid" color="primary" @click="emit('ok', $event)">{{ okText }}</XButton>
+            <XButton variant="solid" color="primary" :loading="loading" @click="emit('ok', $event)">{{ okText }}</XButton>
           </DialogClose>
         </slot>
       </DialogFooter>

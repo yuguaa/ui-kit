@@ -10,10 +10,30 @@ description: 内容溢出时可滚动的区域
 <script setup>
 import ContentBasic from '@demos/vue/content-basic.vue'
 import contentBasicRaw from '@demos/vue/content-basic.vue.code.txt?raw'
+import ScrollAreaHorizontal from '@demos/vue/scroll-area-horizontal.vue'
+import scrollAreaHorizontalRaw from '@demos/vue/scroll-area-horizontal.vue.code.txt?raw'
+import ScrollAreaBoth from '@demos/vue/scroll-area-both.vue'
+import scrollAreaBothRaw from '@demos/vue/scroll-area-both.vue.code.txt?raw'
 </script>
 
 <DemoBlock title="基础用法" description="固定高度内容滚动" :code="contentBasicRaw">
   <ContentBasic />
+</DemoBlock>
+
+## 横向滚动
+
+`orientation="horizontal"` 时内容横向排列，横向溢出后通过底部滚动条滚动。
+
+<DemoBlock title="横向滚动" description="orientation: horizontal" :code="scrollAreaHorizontalRaw">
+  <ScrollAreaHorizontal />
+</DemoBlock>
+
+## 双向滚动
+
+`orientation="both"` 时同时提供纵向与横向滚动条，适合宽表格等双向溢出内容。
+
+<DemoBlock title="双向滚动" description="orientation: both" :code="scrollAreaBothRaw">
+  <ScrollAreaBoth />
 </DemoBlock>
 
 ## 安装
@@ -28,6 +48,7 @@ npx shadcn-vue@latest add @ui-kit/x-scroll-area
 | --- | --- | --- | --- |
 | height | number · string | - | 区域高度 |
 | type | auto · always · hover | auto | 滚动条显示时机 |
+| orientation | vertical · horizontal · both | vertical | 滚动方向 |
 
 ## 插槽
 

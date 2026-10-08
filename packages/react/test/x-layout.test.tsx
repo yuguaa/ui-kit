@@ -3,6 +3,8 @@ import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
 import { XAvatar } from "@/components/kit/x-avatar";
 import { XAvatarGroup } from "@/components/kit/x-avatar-group";
+import { XBadge } from "@/components/kit/x-badge";
+import { XBreadcrumb } from "@/components/kit/x-breadcrumb";
 import { XCard } from "@/components/kit/x-card";
 import { XChip } from "@/components/kit/x-chip";
 import { XContainer } from "@/components/kit/x-container";
@@ -131,6 +133,22 @@ describe("XSeparator", () => {
     expect(container.firstElementChild).toHaveAttribute("data-slot", "separator");
     expect(container.firstElementChild).toHaveClass("h-px");
   });
+
+  it("带标签时渲染标签与两条线", () => {
+    const { container } = render(<XSeparator label="分区" />);
+    expect(screen.getByText("分区")).toBeInTheDocument();
+    expect(container.querySelectorAll("span.flex-1").length).toBe(2);
+  });
+
+  it("position=start 只保留右侧线条", () => {
+    const { container } = render(<XSeparator label="分区" position="start" />);
+    expect(container.querySelectorAll("span.flex-1").length).toBe(1);
+  });
+
+  it("虚线样式使用边框绘制", () => {
+    const { container } = render(<XSeparator type="dashed" />);
+    expect(container.firstElementChild).toHaveClass("border-dashed");
+  });
 });
 
 describe("XSkeleton", () => {
@@ -142,5 +160,68 @@ describe("XSkeleton", () => {
   it("loading=false 渲染子内容", () => {
     render(<XSkeleton loading={false}>已加载</XSkeleton>);
     expect(screen.getByText("已加载")).toBeInTheDocument();
+  });
+});
+
+describe("XAvatar 文字头像与语义色", () => {
+  it("无图片时渲染 text 并应用语义色", () => {
+    const { container } = render(<XAvatar text="张三" color="primary" />);
+    expect(screen.getByText("张三")).toHaveClass("text-primary-7");
+    expect(container.querySelector(".bg-primary-1")).toBeInTheDocument();
+  });
+
+  it("头像组向未指定颜色的子头像透传语义色", () => {
+    const { container } = render(
+      <XAvatarGroup color="success">
+        <XAvatar text="A" />
+        <XAvatar text="B" color="error" />
+      </XAvatarGroup>,
+    );
+    expect(container.querySelector(".bg-success-1")).toBeInTheDocument();
+    expect(container.querySelector(".bg-error-1")).toBeInTheDocument();
+  });
+});
+
+describe("XBadge square 与前后内容", () => {
+  it("square 模式宽度等于高度", () => {
+    render(<XBadge square size="sm" count={1} />);
+    const badge = screen.getByText("1");
+    expect(badge).toHaveClass("w-5");
+    expect(badge).toHaveClass("px-0");
+  });
+
+  it("渲染 leading 与 trailing 内容", () => {
+    render(
+      <XBadge leading={<span data-testid="lead" />} trailing={<span data-testid="trail" />}>
+        标签
+      </XBadge>,
+    );
+    expect(screen.getByTestId("lead")).toBeInTheDocument();
+    expect(screen.getByTestId("trail")).toBeInTheDocument();
+  });
+});
+
+describe("XBreadcrumb 图标分隔符与项图标", () => {
+  it("separatorIcon 优先于 separator 文本，项图标渲染在标题前", () => {
+    const { container } = render(
+      <XBreadcrumb
+        separator="/"
+        separatorIcon={<span data-testid="sep" />}
+        items={[
+          { title: "首页", href: "/", icon: <span data-testid="home-icon" /> },
+          { title: "详情" },
+        ]}
+      />,
+    );
+    expect(screen.getByTestId("sep")).toBeInTheDocument();
+    expect(screen.queryByText("/")).not.toBeInTheDocument();
+    expect(screen.getByTestId("home-icon")).toBeInTheDocument();
+    expect(container).toBeInTheDocument();
+  });
+
+  it("labelKey 指定自定义标题字段", () => {
+    render(<XBreadcrumb labelKey="name" items={[{ name: "工作台", href: "/" }, { name: "订单" }]} />);
+    expect(screen.getByText("工作台")).toBeInTheDocument();
+    expect(screen.getByText("订单")).toBeInTheDocument();
   });
 });

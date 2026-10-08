@@ -18,6 +18,8 @@ import ButtonStates from '@demos/react/button-states'
 import buttonStatesRaw from '@demos/react/button-states.tsx.code.txt?raw'
 import ButtonIcons from '@demos/react/button-icons'
 import buttonIconsRaw from '@demos/react/button-icons.tsx.code.txt?raw'
+import ButtonBlockSquare from '@demos/react/button-block-square'
+import buttonBlockSquareRaw from '@demos/react/button-block-square.tsx.code.txt?raw'
 </script>
 
 ## 变体
@@ -54,6 +56,14 @@ color 属性提供七种语义色，每种颜色都支持全部六种变体。
   <ReactDemo :component="ButtonIcons" />
 </DemoBlock>
 
+## 宽度与方形
+
+block 让按钮撑满父容器宽度；square 使用等边距的方形尺寸，适合只放图标的操作按钮。
+
+<DemoBlock title="block 与 square" description="block 撑满宽度，square 等边距" :code="buttonBlockSquareRaw">
+  <ReactDemo :component="ButtonBlockSquare" />
+</DemoBlock>
+
 ## 安装
 
 ```bash
@@ -71,6 +81,8 @@ npx shadcn@latest add @ui-kit/x-button
 | color | primary · secondary · neutral · success · info · warning · error | primary | 组件颜色 |
 | loading | boolean | false | 加载态 |
 | disabled | boolean | false | 禁用状态 |
+| block | boolean | false | 撑满父容器宽度 |
+| square | boolean | false | 方形按钮，图标场景等边距 |
 | leading / trailing | ReactNode | - | 前置 / 后置图标 |
 
 ## 动效

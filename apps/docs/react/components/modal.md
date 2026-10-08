@@ -12,6 +12,8 @@ import ModalBasicDemo from '@demos/react/modal-basic-demo'
 import modalBasicDemoRaw from '@demos/react/modal-basic-demo.tsx.code.txt?raw'
 import ModalHook from '@demos/react/modal-hook'
 import modalHookRaw from '@demos/react/modal-hook.tsx.code.txt?raw'
+import ModalLoading from '@demos/react/modal-loading'
+import modalLoadingRaw from '@demos/react/modal-loading.tsx.code.txt?raw'
 </script>
 
 ## 基础用法
@@ -24,6 +26,14 @@ import modalHookRaw from '@demos/react/modal-hook.tsx.code.txt?raw'
 
 <DemoBlock title="hook 先行" description="useXModal 返回 [Modal, modalApi]，api 控制打开关闭与 setState" :code="modalHookRaw">
   <ReactDemo :component="ModalHook" />
+</DemoBlock>
+
+## 异步提交与锁定
+
+`lock()` 让确定按钮进入加载态，同时阻止遮罩、关闭按钮与取消操作；异步操作结束后调用 `unlock()` 与 `close()`。
+
+<DemoBlock title="lock / unlock" description="确定按钮 loading，锁定期间无法关闭" :code="modalLoadingRaw">
+  <ReactDemo :component="ModalLoading" />
 </DemoBlock>
 
 ## 安装
@@ -42,6 +52,7 @@ npx shadcn@latest add @ui-kit/x-modal
 | width | number | 520 | 对话框宽度 |
 | maskClosable | boolean | true | 点击遮罩是否关闭 |
 | centered | boolean | false | 是否垂直居中显示 |
+| loading | boolean | false | 确定按钮加载态，锁定期间阻止手动关闭 |
 | okText / cancelText | string | 确 定 / 取 消 | 按钮文字 |
 | footer | ReactNode | - | 底部操作区 |
 | onOk / onCancel | (event) => void | - | 确定 / 取消回调 |
@@ -51,7 +62,7 @@ npx shadcn@latest add @ui-kit/x-modal
 
 ```tsx
 const [Modal, modalApi] = useXModal({ title: "对话框标题", onOk: () => {} })
-modalApi.open()      // open / close / toggle
+modalApi.open()      // open / close / toggle / setData / getData / lock / unlock
 modalApi.setState({ title: "新标题" })
 ```
 

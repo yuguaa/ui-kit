@@ -10,10 +10,16 @@ description: 对长列表数据进行分页浏览
 <script setup>
 import NavigationBasic from '@demos/vue/navigation-basic.vue'
 import navigationBasicRaw from '@demos/vue/navigation-basic.vue.code.txt?raw'
+import PaginationControls from '@demos/vue/pagination-controls.vue'
+import paginationControlsRaw from '@demos/vue/pagination-controls.vue.code.txt?raw'
 </script>
 
 <DemoBlock title="基础用法" description="省略号分页与页码切换" :code="navigationBasicRaw">
   <NavigationBasic />
+</DemoBlock>
+
+<DemoBlock title="首页末页按钮" description="show-controls 在页码列表两端显示首页与末页按钮" :code="paginationControlsRaw">
+  <PaginationControls />
 </DemoBlock>
 
 ## 安装
@@ -30,6 +36,7 @@ npx shadcn-vue@latest add @ui-kit/x-pagination
 | total | number | 0 | 数据总数 |
 | pageSize | number | 10 | 每页条数 |
 | showSizeChanger | boolean | false | 是否显示每页条数切换 |
+| showControls | boolean | false | 是否显示首页与末页按钮 |
 | disabled | boolean | false | 是否禁用 |
 
 ## 插槽

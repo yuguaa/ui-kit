@@ -3,8 +3,9 @@
  * XAvatarGroup 头像组：将多个头像重叠排列展示，超出 max 折叠为 +N。
  */
 import type { HTMLAttributes } from 'vue'
-import { computed, useSlots } from 'vue'
+import { computed, provide, useSlots } from 'vue'
 import { cn } from '@/lib/utils'
+import { XAvatarGroupColorKey, type AvatarColor } from './XAvatarGroupContext'
 
 type AvatarGroupSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 
@@ -13,6 +14,8 @@ const props = withDefaults(defineProps<{
   max?: number
   /** 头像尺寸 */
   size?: AvatarGroupSize
+  /** 透传给子头像的语义色（子头像自身指定 color 时不覆盖） */
+  color?: AvatarColor
   class?: HTMLAttributes['class']
 }>(), {
   max: 4,
@@ -20,6 +23,9 @@ const props = withDefaults(defineProps<{
 })
 
 const slots = useSlots()
+
+/** 向子头像透传语义色 */
+provide(XAvatarGroupColorKey, computed(() => props.color))
 
 const sizeClasses: Record<AvatarGroupSize, string> = {
   xs: 'size-5 text-[10px]',

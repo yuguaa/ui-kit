@@ -95,9 +95,23 @@ const buttonColorStyles: Record<ButtonColor, Record<ButtonVariant, string>> = {
   },
 }
 
+/** 方形按钮（仅图标）尺寸映射 */
+const atomSquareSizeMap: Record<ButtonSize, 'icon-xs' | 'icon-sm' | 'icon' | 'icon-lg'> = {
+  xs: 'icon-xs',
+  sm: 'icon-sm',
+  md: 'icon',
+  lg: 'icon-lg',
+  xl: 'icon-lg',
+}
+
 /** xl 尺寸补足：在原子 lg 基础上加高加宽 */
 const sizeOverrides: Partial<Record<ButtonSize, string>> = {
   xl: 'h-10 gap-2 px-4 text-base',
+}
+
+/** xl 方形补足 */
+const squareSizeOverrides: Partial<Record<ButtonSize, string>> = {
+  xl: 'size-10',
 }
 
 const props = withDefaults(defineProps<{
@@ -109,12 +123,18 @@ const props = withDefaults(defineProps<{
   color?: ButtonColor
   /** 加载态 */
   loading?: boolean
+  /** 撑满父容器宽度 */
+  block?: boolean
+  /** 方形按钮，图标场景等边距 */
+  square?: boolean
   class?: HTMLAttributes['class']
 }>(), {
   variant: 'solid',
   size: 'md',
   color: 'primary',
   loading: false,
+  block: false,
+  square: false,
 })
 
 defineOptions({ name: 'XButton' })
@@ -127,11 +147,12 @@ const isDisabled = computed(() => props.loading || (attrs.disabled as boolean) =
   <button
     data-slot="button"
     :data-variant="atomVariantMap[variant]"
-    :data-size="atomSizeMap[size]"
+    :data-size="square ? atomSquareSizeMap[size] : atomSizeMap[size]"
     :class="cn(
-      buttonVariants({ variant: atomVariantMap[variant], size: atomSizeMap[size] }),
+      buttonVariants({ variant: atomVariantMap[variant], size: square ? atomSquareSizeMap[size] : atomSizeMap[size] }),
       buttonColorStyles[color][variant],
-      sizeOverrides[size],
+      square ? squareSizeOverrides[size] : sizeOverrides[size],
+      block && 'w-full',
       loading && 'opacity-60',
       props.class,
     )"

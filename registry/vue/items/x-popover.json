@@ -2,8 +2,10 @@
   "name": "x-popover",
   "type": "registry:ui",
   "title": "气泡",
-  "description": "点击或悬停触发的轻量气泡卡片。",
-  "dependencies": [],
+  "description": "点击或悬停触发的轻量气泡卡片，支持箭头。",
+  "dependencies": [
+    "reka-ui"
+  ],
   "registryDependencies": [
     "@ui-kit/utils",
     "@ui-kit/popover"
@@ -11,7 +13,7 @@
   "files": [
     {
       "type": "registry:component",
-      "content": "<script setup lang=\"ts\">\n/**\n * XPopover 气泡：点击或悬停触发的轻量气泡卡片。\n */\nimport type { HTMLAttributes } from 'vue'\nimport { ref } from 'vue'\nimport { Popover, PopoverContent, PopoverDescription, PopoverHeader, PopoverTitle, PopoverTrigger } from '@/components/ui/popover'\nimport { cn } from '@/lib/utils'\n\nconst props = withDefaults(defineProps<{\n  /** 是否显示 */\n  open?: boolean\n  /** 触发方式 */\n  trigger?: 'hover' | 'click'\n  /** 位置 */\n  side?: 'top' | 'bottom' | 'left' | 'right'\n  /** 标题 */\n  title?: string\n  class?: HTMLAttributes['class']\n}>(), {\n  open: undefined,\n  trigger: 'hover',\n  side: 'top',\n})\n\nconst emit = defineEmits<{\n  /** 打开状态变化回调 */\n  'update:open': [open: boolean]\n}>()\n\nconst innerOpen = ref(false)\n\nfunction onOpenChange(next: boolean) {\n  if (props.open == null) innerOpen.value = next\n  emit('update:open', next)\n}\n\n/** 打开 */\nfunction openPanel() {\n  onOpenChange(true)\n}\n\n/** 关闭 */\nfunction closePanel() {\n  onOpenChange(false)\n}\n\ndefineExpose({ open: openPanel, close: closePanel })\n</script>\n\n<template>\n  <Popover :open=\"open ?? innerOpen\" @update:open=\"onOpenChange\">\n    <PopoverTrigger as-child>\n      <slot name=\"trigger\" />\n    </PopoverTrigger>\n    <PopoverContent :side=\"side\" :class=\"cn('w-64', props.class)\">\n      <PopoverHeader v-if=\"title != null || $slots.title\">\n        <PopoverTitle><slot name=\"title\">{{ title }}</slot></PopoverTitle>\n      </PopoverHeader>\n      <PopoverDescription as-child>\n        <div>\n          <slot name=\"content\" />\n        </div>\n      </PopoverDescription>\n    </PopoverContent>\n  </Popover>\n</template>\n",
+      "content": "<script setup lang=\"ts\">\n/**\n * XPopover 气泡：点击或悬停触发的轻量气泡卡片。\n */\nimport type { HTMLAttributes } from 'vue'\nimport { ref } from 'vue'\nimport { PopoverArrow } from 'reka-ui'\nimport { Popover, PopoverContent, PopoverDescription, PopoverHeader, PopoverTitle, PopoverTrigger } from '@/components/ui/popover'\nimport { cn } from '@/lib/utils'\n\nconst props = withDefaults(defineProps<{\n  /** 是否显示 */\n  open?: boolean\n  /** 触发方式 */\n  trigger?: 'hover' | 'click'\n  /** 位置 */\n  side?: 'top' | 'bottom' | 'left' | 'right'\n  /** 是否显示指向触发元素的箭头 */\n  arrow?: boolean\n  /** 标题 */\n  title?: string\n  class?: HTMLAttributes['class']\n}>(), {\n  open: undefined,\n  trigger: 'hover',\n  side: 'top',\n  arrow: false,\n})\n\nconst emit = defineEmits<{\n  /** 打开状态变化回调 */\n  'update:open': [open: boolean]\n}>()\n\nconst innerOpen = ref(false)\n\nfunction onOpenChange(next: boolean) {\n  if (props.open == null) innerOpen.value = next\n  emit('update:open', next)\n}\n\n/** 打开 */\nfunction openPanel() {\n  onOpenChange(true)\n}\n\n/** 关闭 */\nfunction closePanel() {\n  onOpenChange(false)\n}\n\ndefineExpose({ open: openPanel, close: closePanel })\n</script>\n\n<template>\n  <Popover :open=\"open ?? innerOpen\" @update:open=\"onOpenChange\">\n    <PopoverTrigger as-child>\n      <slot name=\"trigger\" />\n    </PopoverTrigger>\n    <PopoverContent :side=\"side\" :side-offset=\"arrow ? 8 : undefined\" :class=\"cn('w-64', props.class)\">\n      <PopoverArrow v-if=\"arrow\" class=\"fill-popover\" />\n      <PopoverHeader v-if=\"title != null || $slots.title\">\n        <PopoverTitle><slot name=\"title\">{{ title }}</slot></PopoverTitle>\n      </PopoverHeader>\n      <PopoverDescription as-child>\n        <div>\n          <slot name=\"content\" />\n        </div>\n      </PopoverDescription>\n    </PopoverContent>\n  </Popover>\n</template>\n",
       "path": "kit/XPopover.vue"
     },
     {

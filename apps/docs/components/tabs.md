@@ -10,10 +10,20 @@ description: 在同一区域内切换不同视图或内容分组
 <script setup>
 import TabsBasicDemo from '@demos/vue/tabs-basic-demo.vue'
 import tabsBasicDemoRaw from '@demos/vue/tabs-basic-demo.vue.code.txt?raw'
+import TabsOrientationSize from '@demos/vue/tabs-orientation-size.vue'
+import tabsOrientationSizeRaw from '@demos/vue/tabs-orientation-size.vue.code.txt?raw'
 </script>
 
 <DemoBlock title="line 与 card 样式" description="active-key / change / type" :code="tabsBasicDemoRaw">
   <TabsBasicDemo />
+</DemoBlock>
+
+## 纵向标签页与尺寸
+
+`orientation="vertical"` 将标签列放在左侧、内容放在右侧；`size` 提供 sm / md / lg 三档，控制标签的高度、内边距与字号。
+
+<DemoBlock title="纵向 + 三档尺寸" description="orientation / size" :code="tabsOrientationSizeRaw">
+  <TabsOrientationSize />
 </DemoBlock>
 
 ## 安装
@@ -30,6 +40,8 @@ npx shadcn-vue@latest add @ui-kit/x-tabs
 | activeKey | string | - | 当前激活的标签 key |
 | defaultActiveKey | string | 首项 | 初始激活的标签 key |
 | type | line · card | line | 标签样式 |
+| orientation | horizontal · vertical | horizontal | 标签排列方向 |
+| size | sm · md · lg | md | 标签尺寸 |
 | destroyOnHide | boolean | false | 隐藏时是否销毁内容 |
 
 ## 插槽

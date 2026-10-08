@@ -157,6 +157,46 @@ describe("浮层 Overlays", () => {
     expect(await waitForBody("气泡说明文字")).toBe(true);
   });
 
+  it("XPopover arrow 渲染箭头", async () => {
+    mount(XPopover, {
+      props: { open: true, arrow: true, title: "带箭头" },
+      slots: { trigger: "<button>打开</button>", content: "内容" },
+    });
+    expect(await waitForBody("带箭头")).toBe(true);
+    expect(document.body.querySelector("svg.fill-popover")).not.toBeNull();
+  });
+
+  it("XDropdownMenu 菜单项渲染说明与快捷键", async () => {
+    mount(XDropdownMenu, {
+      props: {
+        open: true,
+        items: [{ key: "copy", label: "复制链接", description: "复制到剪贴板", shortcut: "⌘C" }],
+      },
+    });
+    expect(await waitForBody("复制链接")).toBe(true);
+    expect(await waitForBody("复制到剪贴板")).toBe(true);
+    expect(await waitForBody("⌘C")).toBe(true);
+  });
+
+  it("XScrollArea orientation=horizontal 横向排列", () => {
+    const wrapper = mount(XScrollArea, {
+      props: { orientation: "horizontal" },
+      slots: { default: "<span>横向内容</span>" },
+    });
+    expect(wrapper.html()).toContain("flex-row");
+  });
+
+  it("XSplitter collapsible 渲染折叠按钮并可展开", async () => {
+    const wrapper = mount(XSplitter, {
+      props: { collapsible: true },
+      slots: { first: "<div>左面板</div>", second: "<div>右面板</div>" },
+    });
+    const buttons = wrapper.findAll("button[aria-label='折叠面板']");
+    expect(buttons.length).toBeGreaterThan(0);
+    await buttons[0]!.trigger("click");
+    expect(wrapper.findAll("button[aria-label='展开面板']").length).toBeGreaterThan(0);
+  });
+
   it("XContextMenu 渲染菜单项", async () => {
     mount(XContextMenu, {
       props: { open: true, items: [{ key: "edit", label: "编辑" }, { key: "delete", label: "删除" }] },
@@ -204,6 +244,55 @@ describe("内容 Content", () => {
       props: { columns: [{ key: "a", title: "A" }], dataSource: [], loading: true },
     });
     expect(wrapper.findAllComponents({ name: "XSkeleton" }).length).toBeGreaterThan(0);
+  });
+
+  it("XTable 点击可排序表头切换顺序", async () => {
+    const wrapper = mount(XTable, {
+      props: {
+        columns: [
+          { key: "name", title: "名称", sortable: true },
+          { key: "count", title: "数量" },
+        ],
+        dataSource: [
+          { key: "1", name: "B", count: 2 },
+          { key: "2", name: "A", count: 1 },
+        ],
+        pagination: false,
+      },
+    });
+    const firstCell = () => wrapper.find("tbody tr td").text();
+    expect(firstCell()).toBe("B");
+
+    await wrapper.find("button[aria-label='排序 名称']").trigger("click");
+    expect(firstCell()).toBe("A");
+
+    await wrapper.find("button[aria-label='排序 名称']").trigger("click");
+    expect(firstCell()).toBe("B");
+  });
+
+  it("XTable rowSelection 勾选行并回调选中键", async () => {
+    const wrapper = mount(XTable, {
+      props: {
+        columns: [{ key: "name", title: "名称" }],
+        dataSource: [{ key: "1", name: "张三" }, { key: "2", name: "李四" }],
+        pagination: false,
+        rowSelection: true,
+      },
+    });
+    await wrapper.find("[aria-label='选择第 1 行']").trigger("click");
+    expect(wrapper.emitted("selectionChange")?.[0]).toEqual([["1"]]);
+  });
+
+  it("XTable sticky 时表头固定在滚动区顶部", () => {
+    const wrapper = mount(XTable, {
+      props: {
+        columns: [{ key: "name", title: "名称" }],
+        dataSource: [{ key: "1", name: "张三" }],
+        sticky: true,
+        maxHeight: 200,
+      },
+    });
+    expect(wrapper.find("th").classes()).toContain("sticky");
   });
 
   it("XAlert 语义渲染与关闭", async () => {
@@ -266,5 +355,40 @@ describe("内容 Content", () => {
     expect(wrapper.text()).toContain("左面板");
     expect(wrapper.text()).toContain("右面板");
     expect(wrapper.find("[role=separator]").attributes("aria-orientation")).toBe("horizontal");
+  });
+});
+
+describe("XAlert 自定义图标与操作区", () => {
+  it("icon 插槽优先于默认图标，actions 插槽渲染操作区", () => {
+    const wrapper = mount(XAlert, {
+      props: { type: "info", message: "提示", description: "说明", showIcon: true },
+      slots: { icon: "<i data-test='custom-icon' />", actions: "<button>处理</button>" },
+    });
+    expect(wrapper.find("[data-test='custom-icon']").exists()).toBe(true);
+    expect(wrapper.find("button").text()).toBe("处理");
+  });
+});
+
+describe("XCarousel 箭头、指示点与方向", () => {
+  const items = [
+    { key: "1", content: "Slide 1" },
+    { key: "2", content: "Slide 2" },
+  ];
+
+  it("默认渲染箭头，arrows=false 时不渲染", () => {
+    expect(mount(XCarousel, { props: { items } }).find("[aria-label='上一张']").exists()).toBe(true);
+    const noArrows = mount(XCarousel, { props: { items, arrows: false } });
+    expect(noArrows.find("[aria-label='上一张']").exists()).toBe(false);
+  });
+
+  it("dots 渲染可点击指示点", () => {
+    const wrapper = mount(XCarousel, { props: { items, dots: true } });
+    expect(wrapper.find("[aria-label='跳转到第 1 张']").exists()).toBe(true);
+    expect(wrapper.find("[aria-label='跳转到第 2 张']").exists()).toBe(true);
+  });
+
+  it("orientation=vertical 使内容纵向排列", () => {
+    const wrapper = mount(XCarousel, { props: { items, orientation: "vertical" } });
+    expect(wrapper.html()).toContain("flex-col");
   });
 });

@@ -3,7 +3,9 @@
   "type": "registry:ui",
   "title": "消息通知",
   "description": "操作后的轻量级全局消息通知（useToast + XToaster）。",
-  "dependencies": [],
+  "dependencies": [
+    "vue-sonner"
+  ],
   "registryDependencies": [
     "@ui-kit/utils",
     "@ui-kit/sonner"
@@ -11,7 +13,7 @@
   "files": [
     {
       "type": "registry:component",
-      "content": "/**\n * XToast 消息通知 API：操作后的轻量级全局消息通知。\n * 用法：应用根部挂载 XToaster 组件，任意位置调用 useToast().show / .dismiss。\n */\nimport { toast as sonnerToast } from 'vue-sonner'\n\nexport type ToastColor = 'primary' | 'success' | 'warning' | 'error'\n\nexport interface ToastOptions {\n  /** 通知标题 */\n  title?: string\n  /** 说明文字 */\n  description?: string\n  /** 语义色 */\n  color?: ToastColor\n  /** 展示时长（ms） */\n  duration?: number\n}\n\nconst sonnerCall = {\n  primary: (title: string, data: { description?: string; duration?: number }) => sonnerToast(title, data),\n  success: sonnerToast.success,\n  warning: sonnerToast.warning,\n  error: sonnerToast.error,\n}\n\n/** 显示通知，返回 toast id */\nfunction show(options: ToastOptions): string | number {\n  const { title = '', description, color = 'primary', duration = 3000 } = options\n  return sonnerCall[color](title, { description, duration })\n}\n\n/** 关闭通知 */\nfunction dismiss(id?: string | number) {\n  sonnerToast.dismiss(id)\n}\n\n/** 全局通知 API */\nexport function useToast() {\n  return { show, dismiss }\n}\n",
+      "content": "/**\n * XToast 消息通知 API：操作后的轻量级全局消息通知。\n * 用法：应用根部挂载 XToaster 组件，任意位置调用 useToast().show / .dismiss。\n */\nimport { toast as sonnerToast, type ExternalToast } from 'vue-sonner'\n\nexport type ToastColor = 'primary' | 'success' | 'warning' | 'error'\n\nexport interface XToastOptions {\n  /** 通知标题 */\n  title?: string\n  /** 说明文字 */\n  description?: string\n  /** 语义色 */\n  color?: ToastColor\n  /** 展示时长（ms） */\n  duration?: number\n  /** 操作按钮，点击后关闭通知 */\n  action?: { label: string; onClick: () => void }\n  /** 取消按钮，点击后关闭通知 */\n  cancel?: { label: string; onClick: () => void }\n}\n\nconst sonnerCall = {\n  primary: (title: string, data: ExternalToast) => sonnerToast(title, data),\n  success: sonnerToast.success,\n  warning: sonnerToast.warning,\n  error: sonnerToast.error,\n}\n\n/** 显示通知，返回 toast id */\nfunction show(options: XToastOptions): string | number {\n  const { title = '', description, color = 'primary', duration = 3000, action, cancel } = options\n  return sonnerCall[color](title, { description, duration, action, cancel })\n}\n\n/** 关闭通知 */\nfunction dismiss(id?: string | number) {\n  sonnerToast.dismiss(id)\n}\n\n/** 全局通知 API */\nexport function useToast() {\n  return { show, dismiss }\n}\n",
       "path": "kit/XToast.ts"
     },
     {

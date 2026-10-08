@@ -4,6 +4,7 @@
  */
 import type { HTMLAttributes } from 'vue'
 import { ref } from 'vue'
+import { PopoverArrow } from 'reka-ui'
 import { Popover, PopoverContent, PopoverDescription, PopoverHeader, PopoverTitle, PopoverTrigger } from '@/components/ui/popover'
 import { cn } from '@/lib/utils'
 
@@ -14,6 +15,8 @@ const props = withDefaults(defineProps<{
   trigger?: 'hover' | 'click'
   /** 位置 */
   side?: 'top' | 'bottom' | 'left' | 'right'
+  /** 是否显示指向触发元素的箭头 */
+  arrow?: boolean
   /** 标题 */
   title?: string
   class?: HTMLAttributes['class']
@@ -21,6 +24,7 @@ const props = withDefaults(defineProps<{
   open: undefined,
   trigger: 'hover',
   side: 'top',
+  arrow: false,
 })
 
 const emit = defineEmits<{
@@ -53,7 +57,8 @@ defineExpose({ open: openPanel, close: closePanel })
     <PopoverTrigger as-child>
       <slot name="trigger" />
     </PopoverTrigger>
-    <PopoverContent :side="side" :class="cn('w-64', props.class)">
+    <PopoverContent :side="side" :side-offset="arrow ? 8 : undefined" :class="cn('w-64', props.class)">
+      <PopoverArrow v-if="arrow" class="fill-popover" />
       <PopoverHeader v-if="title != null || $slots.title">
         <PopoverTitle><slot name="title">{{ title }}</slot></PopoverTitle>
       </PopoverHeader>

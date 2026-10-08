@@ -29,6 +29,7 @@ npx shadcn-vue@latest add @ui-kit/x-drawer
 | open | boolean | false | 是否打开（支持 v-model:open） |
 | side | left · right | right | 滑出方向 |
 | dismissible | boolean | true | 点击遮罩关闭 |
+| loading | boolean | false | 加载态，锁定期间阻止手动关闭 |
 | title | string | - | 标题 |
 
 ## 插槽
@@ -43,7 +44,7 @@ npx shadcn-vue@latest add @ui-kit/x-drawer
 
 ```ts
 const [Drawer, drawerApi] = useXDrawer({ title: '抽屉标题' })
-drawerApi.open()   // open / close / toggle / setState
+drawerApi.open()   // open / close / toggle / setState / setData / getData / lock / unlock
 ```
 
 ## 动效

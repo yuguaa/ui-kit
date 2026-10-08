@@ -5,57 +5,38 @@ description: 名称驱动的矢量图标，内置常用图标集合与五档尺�
 
 # Icon 图标
 
-名称驱动的矢量图标（lucide），内置常用图标集合与五档尺寸。
+名称驱动的矢量图标（lucide），内置常用图标集合与五档尺寸，颜色可自定义。需要内置集合之外的图标时，直接引入 lucide 图标组件即可。
 
 <script setup>
-import BasicMisc from '@demos/vue/basic-misc.vue'
-import basicMiscRaw from '@demos/vue/basic-misc.vue.code.txt?raw'
+import IconBasic from '@demos/vue/icon-basic.vue'
+import iconBasicRaw from '@demos/vue/icon-basic.vue.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="Icon / Kbd / Separator / Skeleton" :code="basicMiscRaw">
-  <BasicMisc />
+## 基础用法
+
+<DemoBlock title="图标集合、尺寸与颜色" description="name 选择图标，size 选择尺寸，color 自定义颜色" :code="iconBasicRaw">
+  <IconBasic />
 </DemoBlock>
 
 ## 安装
 
 ```bash
 npx shadcn-vue@latest add @ui-kit/x-icon
-npx shadcn-vue@latest add @ui-kit/x-kbd
-npx shadcn-vue@latest add @ui-kit/x-separator
-npx shadcn-vue@latest add @ui-kit/x-skeleton
 ```
 
 ## API
 
-### XIcon
-
 | 名称 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
-| name | dashboard · settings · user · search · bell · star · chevron-down · chevron-right · plus · x · check · info · circle-alert · circle-check · menu · trash · copy · external-link · loader-circle | - | 图标名 |
+| name | bell · check · chevron-down · chevron-right · circle-alert · circle-check · copy · dashboard · external-link · info · loader-circle · menu · plus · search · settings · star · trash · user · x | - | 图标名 |
 | size | xs · sm · md · lg · xl | md | 尺寸 |
 | color | string | - | 颜色 |
 
-### XKbd
+## 相关组件
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| value | string | - | 按键内容 |
-| size | xs · sm · md · lg · xl | md | 尺寸 |
-
-### XSeparator
-
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| orientation | horizontal · vertical | horizontal | 方向 |
-| color | string | - | 颜色 |
-
-### XSkeleton
-
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| loading | boolean | true | 是否显示骨架 |
-| variant | text · circle · rect | rect | 形状 |
-| width / height | number · string | - | 宽高 |
+- 键盘按键：[Kbd](/components/kbd)
+- 分割线：[Separator](/components/separator)
+- 骨架屏：[Skeleton](/components/skeleton)
 
 ## 动效
 

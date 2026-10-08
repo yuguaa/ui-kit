@@ -454,7 +454,7 @@ const reactKit: ItemSpec[] = [
     name: "x-avatar-group",
     title: "头像组",
     description: "将多个头像重叠排列展示，超出 max 折叠为 +N。",
-    registryDependencies: ["@ui-kit/utils"],
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/x-avatar"],
     files: [{ source: "packages/react/src/components/kit/x-avatar-group.tsx", target: "components/kit/x-avatar-group.tsx" }],
   },
   {
@@ -503,8 +503,9 @@ const reactKit: ItemSpec[] = [
   {
     name: "x-input",
     title: "输入框",
-    description: "支持前后缀图标、前后置标签与 error / warning 校验状态。",
-    registryDependencies: ["@ui-kit/utils", "@ui-kit/input"],
+    description: "支持前后缀图标、前后置标签、clearable 清空与 error / warning 校验状态。",
+    dependencies: ["lucide-react"],
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/input", "@ui-kit/button"],
     files: [{ source: "packages/react/src/components/kit/x-input.tsx", target: "components/kit/x-input.tsx" }],
   },
   {
@@ -531,24 +532,25 @@ const reactKit: ItemSpec[] = [
   {
     name: "x-switch",
     title: "开关",
-    description: "支持选中/未选中文字与两档尺寸。",
+    description: "支持选中/未选中文字、两档尺寸、加载态与说明文字。",
+    dependencies: ["lucide-react"],
     registryDependencies: ["@ui-kit/utils", "@ui-kit/switch", "@ui-kit/label"],
     files: [{ source: "packages/react/src/components/kit/x-switch.tsx", target: "components/kit/x-switch.tsx" }],
   },
   {
     name: "x-select-menu",
     title: "选择菜单",
-    description: "带搜索的增强选择器，支持多选与空状态插槽。",
+    description: "带搜索的增强选择器，支持多选、清空与空状态插槽。",
     dependencies: ["lucide-react"],
-    registryDependencies: ["@ui-kit/utils", "@ui-kit/popover", "@ui-kit/input"],
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/popover", "@ui-kit/input", "@ui-kit/button"],
     files: [{ source: "packages/react/src/components/kit/x-select-menu.tsx", target: "components/kit/x-select-menu.tsx" }],
   },
   {
     name: "x-input-menu",
     title: "输入菜单",
-    description: "输入框与下拉菜单组合，支持搜索过滤。",
+    description: "输入框与下拉菜单组合，支持搜索过滤、清空与自由输入新建项。",
     dependencies: ["lucide-react"],
-    registryDependencies: ["@ui-kit/utils", "@ui-kit/popover", "@ui-kit/input"],
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/popover", "@ui-kit/input", "@ui-kit/button"],
     files: [{ source: "packages/react/src/components/kit/x-input-menu.tsx", target: "components/kit/x-input-menu.tsx" }],
   },
   {
@@ -576,8 +578,8 @@ const reactKit: ItemSpec[] = [
   {
     name: "x-input-date",
     title: "日期选择",
-    description: "输入框 + popover 日历，支持最小/最大日期。",
-    dependencies: ["date-fns", "lucide-react"],
+    description: "输入框 + popover 日历，支持最小/最大日期与日期区间。",
+    dependencies: ["date-fns", "lucide-react", "react-day-picker"],
     registryDependencies: ["@ui-kit/utils", "@ui-kit/popover", "@ui-kit/input", "@ui-kit/calendar"],
     files: [{ source: "packages/react/src/components/kit/x-input-date.tsx", target: "components/kit/x-input-date.tsx" }],
   },
@@ -615,9 +617,9 @@ const reactKit: ItemSpec[] = [
   {
     name: "x-file-upload",
     title: "文件上传",
-    description: "上传文件，支持拖拽与多文件。",
+    description: "上传文件，支持拖拽、多文件与进度展示。",
     dependencies: ["lucide-react"],
-    registryDependencies: ["@ui-kit/utils"],
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/x-progress"],
     files: [{ source: "packages/react/src/components/kit/x-file-upload.tsx", target: "components/kit/x-file-upload.tsx" }],
   },
   {
@@ -724,7 +726,8 @@ const reactKit: ItemSpec[] = [
   {
     name: "x-popover",
     title: "气泡",
-    description: "点击或悬停触发的轻量气泡卡片。",
+    description: "点击或悬停触发的轻量气泡卡片，支持箭头。",
+    dependencies: ["@base-ui/react"],
     registryDependencies: ["@ui-kit/utils", "@ui-kit/popover"],
     files: [{ source: "packages/react/src/components/kit/x-popover.tsx", target: "components/kit/x-popover.tsx" }],
   },
@@ -747,6 +750,7 @@ const reactKit: ItemSpec[] = [
     name: "x-toast",
     title: "消息通知",
     description: "操作后的轻量级全局消息通知。",
+    dependencies: ["sonner"],
     registryDependencies: ["@ui-kit/utils", "@ui-kit/sonner"],
     files: [{ source: "packages/react/src/components/kit/x-toast.tsx", target: "components/kit/x-toast.tsx" }],
   },
@@ -783,9 +787,9 @@ const reactKit: ItemSpec[] = [
   {
     name: "x-listbox",
     title: "列表",
-    description: "可选中项的列表选择组件。",
+    description: "可选中项的列表选择组件，支持搜索过滤与加载态。",
     dependencies: ["lucide-react"],
-    registryDependencies: ["@ui-kit/utils"],
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/input"],
     files: [{ source: "packages/react/src/components/kit/x-listbox.tsx", target: "components/kit/x-listbox.tsx" }],
   },
   {
@@ -813,8 +817,9 @@ const reactKit: ItemSpec[] = [
   {
     name: "x-table",
     title: "表格",
-    description: "展示行列数据，支持加载与分页。",
-    registryDependencies: ["@ui-kit/utils", "@ui-kit/table", "@ui-kit/x-pagination", "@ui-kit/x-skeleton"],
+    description: "展示行列数据，支持排序、行选择、固定表头与分页。",
+    dependencies: ["@tanstack/react-table", "lucide-react"],
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/table", "@ui-kit/x-checkbox", "@ui-kit/x-pagination", "@ui-kit/x-skeleton"],
     files: [{ source: "packages/react/src/components/kit/x-table.tsx", target: "components/kit/x-table.tsx" }],
   },
 ];
@@ -1129,16 +1134,22 @@ const vueKit: ItemSpec[] = [
   {
     name: "x-avatar",
     title: "头像",
-    description: "展示用户形象，支持圆形/方形、五档尺寸、图片与图标。",
+    description: "展示用户形象，支持圆形/方形、五档尺寸、图片、图标与文字。",
     registryDependencies: ["@ui-kit/utils", "@ui-kit/avatar"],
-    files: [{ source: "packages/vue/src/components/kit/XAvatar.vue", path: "kit/XAvatar.vue", type: "registry:component" }],
+    files: [
+      { source: "packages/vue/src/components/kit/XAvatar.vue", path: "kit/XAvatar.vue", type: "registry:component" },
+      { source: "packages/vue/src/components/kit/XAvatarGroupContext.ts", path: "kit/XAvatarGroupContext.ts", type: "registry:component" },
+    ],
   },
   {
     name: "x-avatar-group",
     title: "头像组",
     description: "将多个头像重叠排列展示，超出 max 折叠为 +N。",
     registryDependencies: ["@ui-kit/utils"],
-    files: [{ source: "packages/vue/src/components/kit/XAvatarGroup.vue", path: "kit/XAvatarGroup.vue", type: "registry:component" }],
+    files: [
+      { source: "packages/vue/src/components/kit/XAvatarGroup.vue", path: "kit/XAvatarGroup.vue", type: "registry:component" },
+      { source: "packages/vue/src/components/kit/XAvatarGroupContext.ts", path: "kit/XAvatarGroupContext.ts", type: "registry:component" },
+    ],
   },
   {
     name: "x-card",
@@ -1172,8 +1183,8 @@ const vueKit: ItemSpec[] = [
   {
     name: "x-separator",
     title: "分割线",
-    description: "在内容之间插入水平或垂直分隔。",
-    registryDependencies: ["@ui-kit/utils", "@ui-kit/separator"],
+    description: "在内容之间插入水平或垂直分隔，支持标签与线条样式。",
+    registryDependencies: ["@ui-kit/utils"],
     files: [{ source: "packages/vue/src/components/kit/XSeparator.vue", path: "kit/XSeparator.vue", type: "registry:component" }],
   },
   {
@@ -1186,8 +1197,9 @@ const vueKit: ItemSpec[] = [
   {
     name: "x-input",
     title: "输入框",
-    description: "支持前后缀图标、前后置标签与 error / warning 校验状态。",
-    registryDependencies: ["@ui-kit/utils", "@ui-kit/input"],
+    description: "支持前后缀图标、前后置标签、clearable 清空与 error / warning 校验状态。",
+    dependencies: ["@lucide/vue"],
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/input", "@ui-kit/button"],
     files: [{ source: "packages/vue/src/components/kit/XInput.vue", path: "kit/XInput.vue", type: "registry:component" }],
   },
   {
@@ -1214,24 +1226,25 @@ const vueKit: ItemSpec[] = [
   {
     name: "x-switch",
     title: "开关",
-    description: "支持选中/未选中文字与两档尺寸。",
+    description: "支持选中/未选中文字、两档尺寸、加载态与说明文字。",
+    dependencies: ["@lucide/vue"],
     registryDependencies: ["@ui-kit/utils", "@ui-kit/switch", "@ui-kit/label"],
     files: [{ source: "packages/vue/src/components/kit/XSwitch.vue", path: "kit/XSwitch.vue", type: "registry:component" }],
   },
   {
     name: "x-select-menu",
     title: "选择菜单",
-    description: "带搜索的增强选择器，支持多选与空状态插槽。",
+    description: "带搜索的增强选择器，支持多选、清空与空状态插槽。",
     dependencies: ["@lucide/vue"],
-    registryDependencies: ["@ui-kit/utils", "@ui-kit/popover", "@ui-kit/input"],
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/popover", "@ui-kit/input", "@ui-kit/button"],
     files: [{ source: "packages/vue/src/components/kit/XSelectMenu.vue", path: "kit/XSelectMenu.vue", type: "registry:component" }],
   },
   {
     name: "x-input-menu",
     title: "输入菜单",
-    description: "输入框与下拉菜单组合，支持搜索过滤。",
+    description: "输入框与下拉菜单组合，支持搜索过滤、清空与自由输入新建项。",
     dependencies: ["@lucide/vue"],
-    registryDependencies: ["@ui-kit/utils", "@ui-kit/popover", "@ui-kit/input"],
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/popover", "@ui-kit/input", "@ui-kit/button"],
     files: [{ source: "packages/vue/src/components/kit/XInputMenu.vue", path: "kit/XInputMenu.vue", type: "registry:component" }],
   },
   {
@@ -1259,8 +1272,8 @@ const vueKit: ItemSpec[] = [
   {
     name: "x-input-date",
     title: "日期选择",
-    description: "输入框 + popover 日历，支持最小/最大日期。",
-    dependencies: ["@internationalized/date", "@lucide/vue"],
+    description: "输入框 + popover 日历，支持最小/最大日期与日期区间。",
+    dependencies: ["@internationalized/date", "@lucide/vue", "reka-ui"],
     registryDependencies: ["@ui-kit/utils", "@ui-kit/popover", "@ui-kit/input", "@ui-kit/calendar"],
     files: [{ source: "packages/vue/src/components/kit/XInputDate.vue", path: "kit/XInputDate.vue", type: "registry:component" }],
   },
@@ -1298,9 +1311,9 @@ const vueKit: ItemSpec[] = [
   {
     name: "x-file-upload",
     title: "文件上传",
-    description: "上传文件，支持拖拽与多文件。",
+    description: "上传文件，支持拖拽、多文件与进度展示。",
     dependencies: ["@lucide/vue"],
-    registryDependencies: ["@ui-kit/utils"],
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/x-progress"],
     files: [{ source: "packages/vue/src/components/kit/XFileUpload.vue", path: "kit/XFileUpload.vue", type: "registry:component" }],
   },
   {
@@ -1413,7 +1426,8 @@ const vueKit: ItemSpec[] = [
   {
     name: "x-popover",
     title: "气泡",
-    description: "点击或悬停触发的轻量气泡卡片。",
+    description: "点击或悬停触发的轻量气泡卡片，支持箭头。",
+    dependencies: ["reka-ui"],
     registryDependencies: ["@ui-kit/utils", "@ui-kit/popover"],
     files: [{ source: "packages/vue/src/components/kit/XPopover.vue", path: "kit/XPopover.vue", type: "registry:component" }],
   },
@@ -1436,6 +1450,7 @@ const vueKit: ItemSpec[] = [
     name: "x-toast",
     title: "消息通知",
     description: "操作后的轻量级全局消息通知（useToast + XToaster）。",
+    dependencies: ["vue-sonner"],
     registryDependencies: ["@ui-kit/utils", "@ui-kit/sonner"],
     files: [
       { source: "packages/vue/src/components/kit/XToast.ts", path: "kit/XToast.ts", type: "registry:component" },
@@ -1475,9 +1490,9 @@ const vueKit: ItemSpec[] = [
   {
     name: "x-listbox",
     title: "列表",
-    description: "可选中项的列表选择组件。",
+    description: "可选中项的列表选择组件，支持搜索过滤与加载态。",
     dependencies: ["@lucide/vue"],
-    registryDependencies: ["@ui-kit/utils"],
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/input"],
     files: [{ source: "packages/vue/src/components/kit/XListbox.vue", path: "kit/XListbox.vue", type: "registry:component" }],
   },
   {
@@ -1505,8 +1520,9 @@ const vueKit: ItemSpec[] = [
   {
     name: "x-table",
     title: "表格",
-    description: "展示行列数据，支持加载与分页。",
-    registryDependencies: ["@ui-kit/utils", "@ui-kit/table", "@ui-kit/x-pagination", "@ui-kit/x-skeleton"],
+    description: "展示行列数据，支持排序、行选择、固定表头与分页。",
+    dependencies: ["@tanstack/vue-table", "@lucide/vue"],
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/table", "@ui-kit/x-checkbox", "@ui-kit/x-pagination", "@ui-kit/x-skeleton"],
     files: [{ source: "packages/vue/src/components/kit/XTable.vue", path: "kit/XTable.vue", type: "registry:component" }],
   },
 ];
@@ -1517,7 +1533,7 @@ vueKit.push({
   title: "统一导出",
   description: "全部二次封装组件的统一出口，从 @/components/kit 导入全部组件与 hook。",
   registryDependencies: vueKit.map((item) => `@ui-kit/${item.name}`),
-  files: [{ source: "packages/vue/src/components/kit/index.ts", path: "kit/index.ts", type: "registry:lib" }],
+  files: [{ source: "packages/vue/src/components/kit/index.ts", path: "kit/index.ts", type: "registry:component" }],
 });
 
 /* ============================ vben 风格 hook 分发 ============================ */

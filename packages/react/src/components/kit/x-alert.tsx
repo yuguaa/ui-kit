@@ -57,6 +57,10 @@ export interface XAlertProps {
   closable?: boolean
   /** 是否显示图标 */
   showIcon?: boolean
+  /** 自定义图标，优先于默认的类型图标 */
+  icon?: React.ReactNode
+  /** 标题与描述下方的操作区 */
+  actions?: React.ReactNode
   /** 点击关闭按钮时的回调 */
   onClose?: (event: React.MouseEvent<HTMLButtonElement>) => void
   className?: string
@@ -69,6 +73,8 @@ export function XAlert({
   description,
   closable = false,
   showIcon = false,
+  icon,
+  actions,
   onClose,
   className,
 }: XAlertProps) {
@@ -78,10 +84,13 @@ export function XAlert({
 
   return (
     <Alert className={cn("flex items-start gap-2.5", alertTypeClasses[variant][type], className)}>
-      {showIcon && <span className="mt-0.5 shrink-0">{alertIcons[type]}</span>}
+      {(showIcon || icon != null) && (
+        <span className="mt-0.5 shrink-0">{icon ?? alertIcons[type]}</span>
+      )}
       <div className="flex min-w-0 flex-1 flex-col gap-0.5">
         {message != null && <AlertTitle className="text-sm font-medium">{message}</AlertTitle>}
         {description != null && <AlertDescription className="text-sm opacity-90">{description}</AlertDescription>}
+        {actions != null && <div className="mt-2 flex flex-wrap items-center gap-2">{actions}</div>}
       </div>
       {closable && (
         <AlertAction>

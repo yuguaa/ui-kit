@@ -10,10 +10,16 @@ description: 操作后的轻量级全局消息通知
 <script setup>
 import ToastBasicDemo from '@demos/react/toast-basic-demo'
 import toastBasicDemoRaw from '@demos/react/toast-basic-demo.tsx.code.txt?raw'
+import ToastActionDemo from '@demos/react/toast-action-demo'
+import toastActionDemoRaw from '@demos/react/toast-action-demo.tsx.code.txt?raw'
 </script>
 
 <DemoBlock title="三种语义通知" description="toast.show + XToaster" :code="toastBasicDemoRaw">
   <ReactDemo :component="ToastBasicDemo" />
+</DemoBlock>
+
+<DemoBlock title="带操作与取消按钮" description="action 与 cancel，点击后关闭当前通知" :code="toastActionDemoRaw">
+  <ReactDemo :component="ToastActionDemo" />
 </DemoBlock>
 
 ## 安装
@@ -43,6 +49,8 @@ toast.dismiss();
 | description | string | - | 说明文字 |
 | color | primary · success · warning · error | primary | 语义色 |
 | duration | number | 3000 | 展示时长（ms） |
+| action | { label: string; onClick: () => void } | - | 操作按钮，点击后关闭通知 |
+| cancel | { label: string; onClick: () => void } | - | 取消按钮，点击后关闭通知 |
 
 ## 动效
 

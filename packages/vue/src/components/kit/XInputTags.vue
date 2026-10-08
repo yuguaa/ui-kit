@@ -8,6 +8,9 @@ import { Input } from '@/components/ui/input'
 import XChip from '@/components/kit/XChip.vue'
 import { cn } from '@/lib/utils'
 
+/* 属性透传到内部 input，避免落到外层包装元素 */
+defineOptions({ inheritAttrs: false })
+
 const props = withDefaults(defineProps<{
   /** 标签数组 */
   modelValue?: string[]
@@ -64,6 +67,7 @@ function removeTag(index: number) {
     </template>
     <slot name="leading" />
     <Input
+      v-bind="$attrs"
       v-model="draft"
       :disabled="disabled || (max != null && modelValue.length >= max)"
       :placeholder="modelValue.length === 0 ? placeholder : ''"

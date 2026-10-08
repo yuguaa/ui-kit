@@ -6,3 +6,5 @@ dist/
 
 # vitepress 构建缓存
 apps/docs/.vitepress/cache/
+
+.pi-debug/

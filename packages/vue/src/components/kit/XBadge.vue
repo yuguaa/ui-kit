@@ -25,12 +25,15 @@ const props = withDefaults(defineProps<{
   color?: BadgeColor
   /** 徽标尺寸 */
   size?: BadgeSize
+  /** 等边距模式，宽度等于高度，适合只放图标或单字符 */
+  square?: boolean
   class?: HTMLAttributes['class']
 }>(), {
   overflowCount: 99,
   variant: 'soft',
   color: 'primary',
   size: 'md',
+  square: false,
 })
 
 /** 变体 × 语义色样式（字面量，保证 Tailwind 可扫描） */
@@ -81,6 +84,15 @@ const sizeClasses: Record<BadgeSize, string> = {
   xl: 'h-8 min-w-8 gap-1.5 px-3 text-base',
 }
 
+/** square 模式：去掉水平内边距，宽度与高度一致 */
+const squareClasses: Record<BadgeSize, string> = {
+  xs: 'w-4 px-0',
+  sm: 'w-5 px-0',
+  md: 'w-6 px-0',
+  lg: 'w-7 px-0',
+  xl: 'w-8 px-0',
+}
+
 const displayCount = computed(() => {
   if (props.count == null) return null
   return props.count > props.overflowCount ? `${props.overflowCount}+` : props.count
@@ -92,14 +104,18 @@ const displayCount = computed(() => {
     <span class="absolute top-0 right-0 size-2 translate-x-1/2 -translate-y-1/2 rounded-full bg-error-6" />
     <slot />
   </span>
-  <Badge v-else-if="!$slots.default" :class="cn(colorClasses[variant][color], sizeClasses[size], props.class)">
+  <Badge v-else-if="!$slots.default" :class="cn(colorClasses[variant][color], sizeClasses[size], square && squareClasses[size], props.class)">
+    <slot name="leading" />
     {{ displayCount }}
+    <slot name="trailing" />
   </Badge>
   <span v-else class="relative inline-flex">
     <slot />
     <span class="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2">
-      <Badge :class="cn(colorClasses[variant][color], sizeClasses[size], props.class)">
+      <Badge :class="cn(colorClasses[variant][color], sizeClasses[size], square && squareClasses[size], props.class)">
+        <slot name="leading" />
         {{ displayCount }}
+        <slot name="trailing" />
       </Badge>
     </span>
   </span>

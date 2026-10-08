@@ -219,6 +219,47 @@ describe("内容 Content", () => {
     expect(container.querySelectorAll("[data-slot='skeleton']").length).toBeGreaterThan(0);
   });
 
+  it("XTable 点击可排序表头切换顺序", async () => {
+    const columns = [
+      { key: "name", title: "名称", sortable: true },
+      { key: "count", title: "数量" },
+    ];
+    const dataSource = [
+      { key: "1", name: "B", count: 2 },
+      { key: "2", name: "A", count: 1 },
+    ];
+    const { container } = render(<XTable columns={columns} dataSource={dataSource} pagination={false} />);
+    expect(container.querySelector("tbody tr td")?.textContent).toBe("B");
+
+    await userEvent.click(screen.getByRole("button", { name: "排序 名称" }));
+    expect(container.querySelector("tbody tr td")?.textContent).toBe("A");
+
+    await userEvent.click(screen.getByRole("button", { name: "排序 名称" }));
+    expect(container.querySelector("tbody tr td")?.textContent).toBe("B");
+  });
+
+  it("XTable rowSelection 勾选行并回调选中键", async () => {
+    const onSelectionChange = vi.fn();
+    render(
+      <XTable
+        columns={[{ key: "name", title: "名称" }]}
+        dataSource={[{ key: "1", name: "张三" }, { key: "2", name: "李四" }]}
+        pagination={false}
+        rowSelection
+        onSelectionChange={onSelectionChange}
+      />,
+    );
+    await userEvent.click(screen.getByRole("checkbox", { name: "选择第 1 行" }));
+    expect(onSelectionChange).toHaveBeenCalledWith(["1"]);
+  });
+
+  it("XTable sticky 时表头固定在滚动区顶部", () => {
+    const { container } = render(
+      <XTable columns={[{ key: "name", title: "名称" }]} dataSource={[{ key: "1", name: "张三" }]} sticky maxHeight={200} />,
+    );
+    expect(container.querySelector("th")).toHaveClass("sticky");
+  });
+
   it("XAlert 四种语义渲染", () => {
     const { rerender } = render(<XAlert type="success" message="成功提示" />);
     expect(screen.getByText("成功提示")).toBeInTheDocument();
@@ -286,5 +327,86 @@ describe("内容 Content", () => {
     expect(screen.getByText("左面板")).toBeInTheDocument();
     expect(screen.getByText("右面板")).toBeInTheDocument();
     expect(screen.getByRole("separator")).toHaveAttribute("aria-orientation", "horizontal");
+  });
+
+  it("XSplitter collapsible 渲染折叠按钮并可展开", async () => {
+    render(<XSplitter collapsible first={<div>左面板</div>} second={<div>右面板</div>} />);
+    const buttons = screen.getAllByRole("button", { name: "折叠面板" });
+    expect(buttons.length).toBeGreaterThan(0);
+    await userEvent.click(buttons[0]!);
+    expect(screen.getAllByRole("button", { name: "展开面板" }).length).toBeGreaterThan(0);
+  });
+
+  it("XScrollArea orientation=horizontal 横向排列", () => {
+    const { container } = render(
+      <XScrollArea orientation="horizontal">
+        <span>横向内容</span>
+      </XScrollArea>,
+    );
+    expect(container.innerHTML).toContain("flex-row");
+  });
+
+  it("XDropdownMenu 菜单项渲染说明与快捷键", async () => {
+    render(
+      <XDropdownMenu
+        open
+        items={[{ key: "copy", label: "复制链接", description: "复制到剪贴板", shortcut: "⌘C" }]}
+      />,
+    );
+    expect(await screen.findByText("复制链接")).toBeInTheDocument();
+    expect(screen.getByText("复制到剪贴板")).toBeInTheDocument();
+    expect(screen.getByText("⌘C")).toBeInTheDocument();
+  });
+
+  it("XPopover arrow 渲染箭头", async () => {
+    render(
+      <XPopover open arrow title="带箭头" content="内容">
+        <button type="button">打开</button>
+      </XPopover>,
+    );
+    expect(await screen.findByText("带箭头")).toBeInTheDocument();
+    expect(document.querySelector(".bg-popover.rotate-45")).not.toBeNull();
+  });
+});
+
+describe("XAlert 自定义图标与操作区", () => {
+  it("icon 优先于默认图标，actions 渲染在描述下方", () => {
+    render(
+      <XAlert
+        type="info"
+        message="提示"
+        description="说明"
+        showIcon
+        icon={<span data-testid="custom-icon" />}
+        actions={<button type="button">处理</button>}
+      />,
+    );
+    expect(screen.getByTestId("custom-icon")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "处理" })).toBeInTheDocument();
+  });
+});
+
+describe("XCarousel 箭头、指示点与方向", () => {
+  const items = [
+    { key: "1", content: "Slide 1" },
+    { key: "2", content: "Slide 2" },
+  ];
+
+  it("默认渲染箭头，arrows=false 时不渲染", () => {
+    const { rerender } = render(<XCarousel items={items} />);
+    expect(screen.getByRole("button", { name: "上一张" })).toBeInTheDocument();
+    rerender(<XCarousel items={items} arrows={false} />);
+    expect(screen.queryByRole("button", { name: "上一张" })).not.toBeInTheDocument();
+  });
+
+  it("dots 渲染可点击指示点", () => {
+    render(<XCarousel items={items} dots />);
+    expect(screen.getByRole("button", { name: "跳转到第 1 张" })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "跳转到第 2 张" })).toBeInTheDocument();
+  });
+
+  it("orientation=vertical 使内容纵向排列", () => {
+    const { container } = render(<XCarousel items={items} orientation="vertical" />);
+    expect(container.querySelector("[data-slot='carousel-content'] > div")).toHaveClass("flex-col");
   });
 });

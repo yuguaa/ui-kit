@@ -16,6 +16,10 @@ export interface XToastOptions {
   color?: XToastColor
   /** 展示时长（ms） */
   duration?: number
+  /** 操作按钮，点击后关闭通知 */
+  action?: { label: string; onClick: () => void }
+  /** 取消按钮，点击后关闭通知 */
+  cancel?: { label: string; onClick: () => void }
 }
 
 const sonnerTypeMap: Record<XToastColor, "default" | "success" | "warning" | "error"> = {
@@ -41,11 +45,13 @@ export function XToaster() {
 export const toast = {
   /** 显示通知，返回 toast id */
   show(options: XToastOptions): string | number {
-    const { title, description, color = "primary", duration = 3000 } = options
+    const { title, description, color = "primary", duration = 3000, action, cancel } = options
     const type = sonnerTypeMap[color]
     return sonnerCall[type](title, {
       description,
       duration,
+      action,
+      cancel,
     })
   },
   /** 关闭通知 */

@@ -3,7 +3,8 @@
  * 支持多选与空状态插槽，选项为 { label, value } 结构。
  */
 import * as React from "react"
-import { Check, ChevronDown, Search } from "lucide-react"
+import { Check, ChevronDown, Search, X } from "lucide-react"
+import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import {
   Popover,
@@ -28,6 +29,8 @@ export interface XSelectMenuProps {
   placeholder?: string
   /** 是否禁用 */
   disabled?: boolean
+  /** 有选中项时显示清空按钮 */
+  clearable?: boolean
   /** 选中值 */
   value?: string | string[]
   /** 默认选中值 */
@@ -43,6 +46,7 @@ export function XSelectMenu({
   showSearch = false,
   placeholder = "请选择",
   disabled = false,
+  clearable = false,
   value,
   defaultValue,
   onChange,
@@ -63,6 +67,9 @@ export function XSelectMenu({
     .filter((option) => selected.includes(option.value))
     .map((option) => option.label)
 
+  /* 有选中项且未禁用时展示清空按钮 */
+  const showClear = clearable && !disabled && selected.length > 0
+
   const handleSelect = (optionValue: string) => {
     let next: string | string[]
     if (multiple) {
@@ -78,28 +85,50 @@ export function XSelectMenu({
     onChange?.(next)
   }
 
+  /** 清空选中：单选清为 ''，多选清为 [] */
+  const handleClear = () => {
+    const next: string | string[] = multiple ? [] : ""
+    if (value == null) setInnerValue(next)
+    onChange?.(next)
+  }
+
   return (
     <Popover open={open} onOpenChange={setOpen}>
-      <PopoverTrigger
-        disabled={disabled}
-        render={
-          <button
+      <span className="relative block w-full">
+        <PopoverTrigger
+          disabled={disabled}
+          render={
+            <button
+              type="button"
+              className={cn(
+                "flex h-9 w-full min-w-40 cursor-pointer items-center justify-between gap-2 rounded-md bg-transparent px-3 text-sm transition-[box-shadow,color] outline-none ring-1 ring-inset ring-input",
+                "focus-visible:ring-2 focus-visible:ring-ring",
+                "disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50",
+                open && "ring-2 ring-ring",
+                showClear && "pr-8",
+                className,
+              )}
+            >
+              <span className={cn("truncate", selectedLabels.length === 0 && "text-muted-foreground")}>
+                {selectedLabels.length > 0 ? selectedLabels.join(", ") : placeholder}
+              </span>
+              {!showClear && <ChevronDown className="size-4 shrink-0 opacity-50" />}
+            </button>
+          }
+        />
+        {showClear && (
+          <Button
             type="button"
-            className={cn(
-              "flex h-9 w-full min-w-40 cursor-pointer items-center justify-between gap-2 rounded-md bg-transparent px-3 text-sm transition-[box-shadow,color] outline-none ring-1 ring-inset ring-input",
-              "focus-visible:ring-2 focus-visible:ring-ring",
-              "disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50",
-              open && "ring-2 ring-ring",
-              className,
-            )}
+            variant="ghost"
+            size="icon-xs"
+            aria-label="清空"
+            onClick={handleClear}
+            className="absolute top-1/2 right-2 size-4 -translate-y-1/2 rounded-full text-muted-foreground opacity-70 hover:bg-transparent hover:opacity-100 [&_svg]:size-3.5"
           >
-            <span className={cn("truncate", selectedLabels.length === 0 && "text-muted-foreground")}>
-              {selectedLabels.length > 0 ? selectedLabels.join(", ") : placeholder}
-            </span>
-            <ChevronDown className="size-4 shrink-0 opacity-50" />
-          </button>
-        }
-      />
+            <X />
+          </Button>
+        )}
+      </span>
       <PopoverContent align="start" className="flex w-(--anchor-width) min-w-40 flex-col gap-1 p-1">
         {showSearch && (
           <span className="relative flex items-center px-1 pb-1">

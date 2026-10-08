@@ -20,6 +20,8 @@ export interface XDrawerProps {
   side?: "left" | "right"
   /** 点击遮罩关闭 */
   dismissible?: boolean
+  /** 加载态：锁定交互并阻止手动关闭 */
+  loading?: boolean
   /** 标题 */
   title?: React.ReactNode
   /** 内容 */
@@ -36,6 +38,7 @@ export function XDrawer({
   open,
   side = "right",
   dismissible = true,
+  loading = false,
   title,
   children,
   header,
@@ -45,16 +48,20 @@ export function XDrawer({
   return (
     <Drawer
       open={open}
-      onOpenChange={onOpenChange}
+      onOpenChange={(next) => {
+        /* 锁定期间不允许关闭 */
+        if (loading) return
+        onOpenChange?.(next)
+      }}
       swipeDirection={side}
-      disablePointerDismissal={!dismissible}
+      disablePointerDismissal={!dismissible || loading}
     >
       <DrawerContent className="h-full w-80 rounded-none">
         <DrawerHeader className="flex items-center justify-between border-b border-border px-4 py-3">
           {header ?? <DrawerTitle>{title}</DrawerTitle>}
           <DrawerClose
             render={
-              <XButton variant="ghost" color="neutral" size="sm" aria-label="关闭">
+              <XButton variant="ghost" color="neutral" size="sm" aria-label="关闭" disabled={loading}>
                 ✕
               </XButton>
             }
@@ -76,13 +83,31 @@ export interface XDrawerApi {
   close: () => void
   /** 切换开合 */
   toggle: () => void
-  /** 更新内部状态（标题等） */
-  setState: (patch: Pick<Partial<XDrawerProps>, "title">) => void
+  /** 更新内部状态（标题、方向、加载态等） */
+  setState: (patch: Partial<XDrawerProps>) => void
+  /** 写入共享数据，供抽屉内容读取 */
+  setData: <T extends object = Record<string, unknown>>(payload: T) => void
+  /** 读取共享数据 */
+  getData: <T extends object = Record<string, unknown>>() => T
+  /** 进入锁定（加载）状态：阻止手动关闭 */
+  lock: () => void
+  /** 解除锁定 */
+  unlock: () => void
 }
 
 /** 创建与 api 绑定的抽屉：调用即得 [Drawer, drawerApi] */
 export function useXDrawer({ defaultOpen = false, ...componentProps }: Partial<XDrawerProps> & { defaultOpen?: boolean } = {}) {
-  const store = React.useState(() => createBoundStore({ open: defaultOpen, title: componentProps.title }))[0]
+  const store = React.useState(() =>
+    createBoundStore({
+      open: defaultOpen,
+      title: componentProps.title,
+      side: componentProps.side,
+      loading: componentProps.loading,
+    }),
+  )[0]
+
+  /** 与抽屉共享的数据载荷 */
+  const payload = React.useRef<Record<string, unknown>>({})
 
   const api = React.useMemo<XDrawerApi>(
     () => ({
@@ -90,6 +115,12 @@ export function useXDrawer({ defaultOpen = false, ...componentProps }: Partial<X
       close: () => store.set({ open: false }),
       toggle: () => store.set({ open: !store.get().open }),
       setState: (patch) => store.set(patch),
+      setData: (data: object) => {
+        payload.current = data as Record<string, unknown>
+      },
+      getData: <T extends object = Record<string, unknown>>() => payload.current as T,
+      lock: () => store.set({ loading: true }),
+      unlock: () => store.set({ loading: false }),
     }),
     [],
   )
@@ -102,8 +133,13 @@ export function useXDrawer({ defaultOpen = false, ...componentProps }: Partial<X
           {...componentProps}
           {...props}
           open={state.open}
-          title={state.title}
-          onOpenChange={(next) => store.set({ open: next })}
+          title={state.title ?? props.title}
+          side={state.side ?? props.side}
+          loading={state.loading ?? props.loading}
+          onOpenChange={(next) => {
+            store.set({ open: next })
+            props.onOpenChange?.(next)
+          }}
         />
       )
     }

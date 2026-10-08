@@ -14,6 +14,8 @@ import InputStates from '@demos/vue/input-states.vue'
 import inputStatesRaw from '@demos/vue/input-states.vue.code.txt?raw'
 import InputAddon from '@demos/vue/input-addon.vue'
 import inputAddonRaw from '@demos/vue/input-addon.vue.code.txt?raw'
+import InputClearable from '@demos/vue/input-clearable.vue'
+import inputClearableRaw from '@demos/vue/input-clearable.vue.code.txt?raw'
 </script>
 
 ## 基础用法
@@ -32,6 +34,14 @@ import inputAddonRaw from '@demos/vue/input-addon.vue.code.txt?raw'
 
 <DemoBlock title="addon" description="addonBefore / addonAfter 插槽" :code="inputAddonRaw">
   <InputAddon />
+</DemoBlock>
+
+## 清空按钮
+
+clearable 在输入有值、未禁用、未只读时显示清空按钮；与后缀图标同时存在时，清空按钮排在最后并预留右侧内边距。
+
+<DemoBlock title="一键清空" description="clearable 属性与 clear 事件" :code="inputClearableRaw">
+  <InputClearable />
 </DemoBlock>
 
 ## 安装
@@ -55,6 +65,9 @@ npx shadcn-vue@latest add @ui-kit/x-switch
 | placeholder | string | - | 占位提示文字 |
 | disabled | boolean | false | 是否禁用 |
 | maxLength | number | - | 最大输入长度 |
+| clearable | boolean | false | 有值且未禁用、未只读时显示清空按钮 |
+
+**事件**：clear 点击清空按钮时触发
 
 **插槽**：prefix 前缀图标 · suffix 后缀图标 · addonBefore 前置标签 · addonAfter 后置标签
 

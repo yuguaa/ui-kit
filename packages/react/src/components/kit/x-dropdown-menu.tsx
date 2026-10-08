@@ -11,6 +11,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { XButton } from "@/components/kit/x-button"
+import { XKbd } from "@/components/kit/x-kbd"
 import { createBoundStore, useBoundStore } from "@/lib/kit/bound-store"
 import { cn } from "@/lib/utils"
 
@@ -19,6 +20,10 @@ export interface XDropdownMenuItem {
   key: string
   /** 菜单项标题 */
   label?: React.ReactNode
+  /** 菜单项说明文字 */
+  description?: React.ReactNode
+  /** 菜单项快捷键 */
+  shortcut?: string
   /** 是否禁用 */
   disabled?: boolean
   /** 是否分隔线 */
@@ -90,7 +95,13 @@ export function XDropdownMenu({
               }}
             >
               {item.icon}
-              {item.label}
+              <span className="flex min-w-0 flex-1 flex-col gap-0.5">
+                <span>{item.label}</span>
+                {item.description != null && (
+                  <span className="text-xs text-muted-foreground">{item.description}</span>
+                )}
+              </span>
+              {item.shortcut != null && <XKbd size="sm">{item.shortcut}</XKbd>}
             </DropdownMenuItem>
           ),
         )}

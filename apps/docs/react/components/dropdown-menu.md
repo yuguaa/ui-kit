@@ -10,10 +10,16 @@ description: 点击按钮展开的操作菜单
 <script setup>
 import MenuBasicDemo from '@demos/react/menu-basic-demo'
 import menuBasicDemoRaw from '@demos/react/menu-basic-demo.tsx.code.txt?raw'
+import DropdownMenuItemExtras from '@demos/react/dropdown-menu-item-extras'
+import dropdownMenuItemExtrasRaw from '@demos/react/dropdown-menu-item-extras.tsx.code.txt?raw'
 </script>
 
 <DemoBlock title="操作菜单" description="items / separator 分隔线" :code="menuBasicDemoRaw">
   <ReactDemo :component="MenuBasicDemo" />
+</DemoBlock>
+
+<DemoBlock title="说明与快捷键" description="description 说明文字 / shortcut 快捷键" :code="dropdownMenuItemExtrasRaw">
+  <ReactDemo :component="DropdownMenuItemExtras" />
 </DemoBlock>
 
 ## 安装
@@ -26,7 +32,7 @@ npx shadcn@latest add @ui-kit/x-dropdown-menu
 
 | 名称 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
-| items | { key, label?, disabled?, separator?, icon?, onSelect? }[] | - | 菜单项数组 |
+| items | { key, label?, description?, shortcut?, disabled?, separator?, icon?, onSelect? }[] | - | 菜单项数组 |
 | open | boolean | - | 是否打开 |
 | closeOnSelect | boolean | true | 选择后关闭 |
 | triggerLabel | ReactNode | 操作 | 触发按钮文字 |

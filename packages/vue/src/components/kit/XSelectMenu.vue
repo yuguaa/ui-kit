@@ -5,10 +5,14 @@
  */
 import type { HTMLAttributes } from 'vue'
 import { computed, ref } from 'vue'
-import { Check, ChevronDown, Search } from '@lucide/vue'
+import { Check, ChevronDown, Search, X } from '@lucide/vue'
+import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
 import { cn } from '@/lib/utils'
+
+/* 属性透传到内部触发按钮，避免落到 Popover 包装层 */
+defineOptions({ inheritAttrs: false })
 
 export interface SelectOption {
   label: string
@@ -26,11 +30,14 @@ const props = withDefaults(defineProps<{
   placeholder?: string
   /** 是否禁用 */
   disabled?: boolean
+  /** 有选中项时显示清空按钮 */
+  clearable?: boolean
   class?: HTMLAttributes['class']
 }>(), {
   multiple: false,
   showSearch: false,
   placeholder: '请选择',
+  clearable: false,
 })
 
 const model = defineModel<string | string[]>({ default: '' })
@@ -55,6 +62,9 @@ const selectedLabels = computed(() =>
   props.options.filter((option) => selected.value.includes(option.value)).map((option) => option.label),
 )
 
+/* 有选中项且未禁用时展示清空按钮 */
+const showClear = computed(() => props.clearable && !props.disabled && selected.value.length > 0)
+
 function handleSelect(optionValue: string) {
   let next: string | string[]
   if (props.multiple) {
@@ -69,27 +79,49 @@ function handleSelect(optionValue: string) {
   model.value = next
   emit('select', next)
 }
+
+/** 清空选中：单选清为 ''，多选清为 [] */
+function handleClear() {
+  const next: string | string[] = props.multiple ? [] : ''
+  model.value = next
+  emit('select', next)
+}
 </script>
 
 <template>
   <Popover v-model:open="open">
-    <PopoverTrigger as-child :disabled="disabled">
-      <button
+    <span class="relative block w-full">
+      <PopoverTrigger as-child :disabled="disabled">
+        <button
+          type="button"
+          v-bind="$attrs"
+          :class="cn(
+            'flex h-9 w-full min-w-40 cursor-pointer items-center justify-between gap-2 rounded-md bg-transparent px-3 text-sm transition-[box-shadow,color] outline-none ring-1 ring-inset ring-input',
+            'focus-visible:ring-2 focus-visible:ring-ring',
+            'disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50',
+            open && 'ring-2 ring-ring',
+            showClear && 'pr-8',
+            props.class,
+          )"
+        >
+          <span :class="cn('truncate', selectedLabels.length === 0 && 'text-muted-foreground')">
+            {{ selectedLabels.length > 0 ? selectedLabels.join(', ') : placeholder }}
+          </span>
+          <ChevronDown v-if="!showClear" class="size-4 shrink-0 opacity-50" />
+        </button>
+      </PopoverTrigger>
+      <Button
+        v-if="showClear"
         type="button"
-        :class="cn(
-          'flex h-9 w-full min-w-40 cursor-pointer items-center justify-between gap-2 rounded-md bg-transparent px-3 text-sm transition-[box-shadow,color] outline-none ring-1 ring-inset ring-input',
-          'focus-visible:ring-2 focus-visible:ring-ring',
-          'disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50',
-          open && 'ring-2 ring-ring',
-          props.class,
-        )"
+        variant="ghost"
+        size="icon-xs"
+        aria-label="清空"
+        class="absolute right-2 top-1/2 size-4 -translate-y-1/2 rounded-full text-muted-foreground opacity-70 hover:bg-transparent hover:opacity-100 [&_svg]:size-3.5"
+        @click="handleClear"
       >
-        <span :class="cn('truncate', selectedLabels.length === 0 && 'text-muted-foreground')">
-          {{ selectedLabels.length > 0 ? selectedLabels.join(', ') : placeholder }}
-        </span>
-        <ChevronDown class="size-4 shrink-0 opacity-50" />
-      </button>
-    </PopoverTrigger>
+        <X />
+      </Button>
+    </span>
     <PopoverContent align="start" :class="cn('flex min-w-40 flex-col gap-1 p-1')">
       <span v-if="showSearch" class="relative flex items-center px-1 pb-1">
         <Search class="pointer-events-none absolute left-3 size-4 text-muted-foreground" />

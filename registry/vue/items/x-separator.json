@@ -2,16 +2,15 @@
   "name": "x-separator",
   "type": "registry:ui",
   "title": "分割线",
-  "description": "在内容之间插入水平或垂直分隔。",
+  "description": "在内容之间插入水平或垂直分隔，支持标签与线条样式。",
   "dependencies": [],
   "registryDependencies": [
-    "@ui-kit/utils",
-    "@ui-kit/separator"
+    "@ui-kit/utils"
   ],
   "files": [
     {
       "type": "registry:component",
-      "content": "<script setup lang=\"ts\">\n/**\n * XSeparator 分割线：在内容之间插入水平或垂直分隔。\n */\nimport type { HTMLAttributes } from 'vue'\nimport { Separator } from '@/components/ui/separator'\nimport { cn } from '@/lib/utils'\n\nconst props = withDefaults(defineProps<{\n  /** 方向 */\n  orientation?: 'horizontal' | 'vertical'\n  /** 颜色 */\n  color?: string\n  class?: HTMLAttributes['class']\n}>(), {\n  orientation: 'horizontal',\n})\n</script>\n\n<template>\n  <Separator\n    :orientation=\"orientation\"\n    :class=\"cn(\n      orientation === 'horizontal' ? 'h-px w-full' : 'h-full w-px',\n      props.class,\n    )\"\n    :style=\"color ? { backgroundColor: color } : undefined\"\n  />\n</template>\n",
+      "content": "<script setup lang=\"ts\">\n/**\n * XSeparator 分割线：在内容之间插入水平或垂直分隔，可带标签与自定义线条样式。\n * 说明：shadcn-vue 的 separator 原子不转发插槽，带标签形态无法通过原子承载内容，\n * 因此根节点由本组件渲染，线条样式与原子保持一致。\n */\nimport type { HTMLAttributes } from 'vue'\nimport { computed } from 'vue'\nimport { cn } from '@/lib/utils'\n\ntype SeparatorOrientation = 'horizontal' | 'vertical'\ntype SeparatorPosition = 'start' | 'center' | 'end'\ntype SeparatorType = 'solid' | 'dashed' | 'dotted'\n\nconst props = withDefaults(defineProps<{\n  /** 方向 */\n  orientation?: SeparatorOrientation\n  /** 线条颜色 */\n  color?: string\n  /** 标签文字（也可用默认插槽） */\n  label?: string\n  /** 标签位置（仅水平方向带标签时生效） */\n  position?: SeparatorPosition\n  /** 线条样式 */\n  type?: SeparatorType\n  class?: HTMLAttributes['class']\n}>(), {\n  orientation: 'horizontal',\n  position: 'center',\n  type: 'solid',\n})\n\nconst slots = defineSlots<{ default?: () => unknown }>()\n\n/** 是否渲染为带标签的形态 */\nconst withLabel = computed(\n  () => props.orientation === 'horizontal' && (Boolean(slots.default) || props.label != null),\n)\n\n/** 虚线 / 点线样式 */\nconst typeClasses: Record<SeparatorType, string> = {\n  solid: '',\n  dashed: 'border-dashed',\n  dotted: 'border-dotted',\n}\n\nconst rootClasses = computed(() => {\n  if (withLabel.value) {\n    return 'flex items-center gap-3 bg-transparent text-xs text-muted-foreground'\n  }\n  if (props.type === 'solid') {\n    return cn(\n      'shrink-0 bg-border',\n      props.orientation === 'horizontal' ? 'h-px w-full' : 'w-px self-stretch',\n    )\n  }\n  return cn(\n    'shrink-0 bg-transparent',\n    typeClasses[props.type],\n    props.orientation === 'horizontal' ? 'h-px w-full border-t' : 'w-px self-stretch border-l',\n  )\n})\n\nconst labelLineClasses = computed(() => cn('flex-1 border-t', typeClasses[props.type]))\nconst lineStyle = computed(() => (props.color ? { borderColor: props.color } : undefined))\nconst rootStyle = computed(() =>\n  props.color && !withLabel.value && props.type === 'solid' ? { backgroundColor: props.color } : undefined,\n)\n</script>\n\n<template>\n  <div\n    role=\"separator\"\n    data-slot=\"separator\"\n    :aria-orientation=\"orientation\"\n    :class=\"cn(rootClasses, props.class)\"\n    :style=\"rootStyle\"\n  >\n    <template v-if=\"withLabel\">\n      <span v-if=\"position !== 'start'\" :class=\"labelLineClasses\" :style=\"lineStyle\" />\n      <span class=\"flex shrink-0 items-center gap-1.5\">\n        <slot>{{ label }}</slot>\n      </span>\n      <span v-if=\"position !== 'end'\" :class=\"labelLineClasses\" :style=\"lineStyle\" />\n    </template>\n  </div>\n</template>\n",
       "path": "kit/XSeparator.vue"
     }
   ],

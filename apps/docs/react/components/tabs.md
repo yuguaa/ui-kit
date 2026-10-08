@@ -10,10 +10,20 @@ description: 在同一区域内切换不同视图或内容分组
 <script setup>
 import TabsBasicDemo from '@demos/react/tabs-basic-demo'
 import tabsBasicDemoRaw from '@demos/react/tabs-basic-demo.tsx.code.txt?raw'
+import TabsOrientationSize from '@demos/react/tabs-orientation-size'
+import tabsOrientationSizeRaw from '@demos/react/tabs-orientation-size.tsx.code.txt?raw'
 </script>
 
 <DemoBlock title="line 与 card 样式" description="activeKey / onChange / type" :code="tabsBasicDemoRaw">
   <ReactDemo :component="TabsBasicDemo" />
+</DemoBlock>
+
+## 纵向标签页与尺寸
+
+`orientation="vertical"` 将标签列放在左侧、内容放在右侧；`size` 提供 sm / md / lg 三档，控制标签的高度、内边距与字号。
+
+<DemoBlock title="纵向 + 三档尺寸" description="orientation / size" :code="tabsOrientationSizeRaw">
+  <ReactDemo :component="TabsOrientationSize" />
 </DemoBlock>
 
 ## 安装
@@ -30,6 +40,8 @@ npx shadcn@latest add @ui-kit/x-tabs
 | activeKey | string | - | 当前激活的标签 key |
 | defaultActiveKey | string | 首项 | 初始激活的标签 key |
 | type | line · card | line | 标签样式 |
+| orientation | horizontal · vertical | horizontal | 标签排列方向 |
+| size | sm · md · lg | md | 标签尺寸 |
 | destroyOnHide | boolean | false | 隐藏时是否销毁内容 |
 | onChange | (key) => void | - | 切换激活标签的回调 |
 

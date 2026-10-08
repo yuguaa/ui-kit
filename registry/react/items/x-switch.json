@@ -2,8 +2,10 @@
   "name": "x-switch",
   "type": "registry:ui",
   "title": "开关",
-  "description": "支持选中/未选中文字与两档尺寸。",
-  "dependencies": [],
+  "description": "支持选中/未选中文字、两档尺寸、加载态与说明文字。",
+  "dependencies": [
+    "lucide-react"
+  ],
   "registryDependencies": [
     "@ui-kit/utils",
     "@ui-kit/switch",
@@ -12,7 +14,7 @@
   "files": [
     {
       "type": "registry:ui",
-      "content": "/**\n * XSwitch 开关：shadcn switch 原子的二次封装。\n * 支持选中/未选中文字内容与 default / small 两档尺寸。\n */\nimport * as React from \"react\"\nimport { Label } from \"@/components/ui/label\"\nimport { Switch } from \"@/components/ui/switch\"\nimport { cn } from \"@/lib/utils\"\n\nexport interface XSwitchProps extends Omit<React.ComponentProps<typeof Switch>, \"size\"> {\n  /** 选中时显示内容 */\n  checkedChildren?: React.ReactNode\n  /** 未选中时显示内容 */\n  unCheckedChildren?: React.ReactNode\n  /** 控件尺寸 */\n  size?: \"default\" | \"small\"\n  /** 关联文字 */\n  label?: React.ReactNode\n}\n\nexport const XSwitch = React.forwardRef<HTMLButtonElement, XSwitchProps>(function XSwitch(\n  { checkedChildren, unCheckedChildren, size = \"default\", label, id, className, checked, ...props },\n  ref,\n) {\n  const text = checked ? checkedChildren : unCheckedChildren\n  return (\n    <span className={cn(\"flex items-center gap-2\", className)}>\n      <Switch ref={ref} id={id} checked={checked} size={size === \"small\" ? \"sm\" : \"default\"} {...props} />\n      {text != null && <span className=\"text-sm\">{text}</span>}\n      {label != null && (\n        <Label htmlFor={id} className=\"text-sm font-normal\">\n          {label}\n        </Label>\n      )}\n    </span>\n  )\n})\n",
+      "content": "/**\n * XSwitch 开关：shadcn switch 原子的二次封装。\n * 支持选中/未选中文字内容、default / small 两档尺寸、加载态与说明文字。\n */\nimport * as React from \"react\"\nimport { LoaderCircle } from \"lucide-react\"\nimport { Label } from \"@/components/ui/label\"\nimport { Switch } from \"@/components/ui/switch\"\nimport { cn } from \"@/lib/utils\"\n\nexport interface XSwitchProps extends Omit<React.ComponentProps<typeof Switch>, \"size\"> {\n  /** 选中时显示内容 */\n  checkedChildren?: React.ReactNode\n  /** 未选中时显示内容 */\n  unCheckedChildren?: React.ReactNode\n  /** 控件尺寸 */\n  size?: \"default\" | \"small\"\n  /** 关联文字 */\n  label?: React.ReactNode\n  /** 加载态：阻止交互并显示旋转图标 */\n  loading?: boolean\n  /** label 下方的辅助说明文字 */\n  description?: React.ReactNode\n}\n\nexport const XSwitch = React.forwardRef<HTMLButtonElement, XSwitchProps>(function XSwitch(\n  { checkedChildren, unCheckedChildren, size = \"default\", label, description, loading = false, id, className, checked, disabled, ...props },\n  ref,\n) {\n  const text = checked ? checkedChildren : unCheckedChildren\n  return (\n    <span className={cn(\"flex items-center gap-2\", className)}>\n      <Switch\n        ref={ref}\n        id={id}\n        checked={checked}\n        disabled={disabled || loading}\n        aria-busy={loading || undefined}\n        size={size === \"small\" ? \"sm\" : \"default\"}\n        {...props}\n      />\n      {loading && (\n        <LoaderCircle className={cn(\"animate-spin\", size === \"small\" ? \"size-3\" : \"size-3.5\")} aria-hidden=\"true\" />\n      )}\n      {text != null && <span className=\"text-sm\">{text}</span>}\n      {(label != null || description != null) && (\n        <span className=\"flex flex-col gap-0.5\">\n          {label != null && (\n            <Label htmlFor={id} className=\"text-sm font-normal\">\n              {label}\n            </Label>\n          )}\n          {description != null && <span className=\"text-xs text-muted-foreground\">{description}</span>}\n        </span>\n      )}\n    </span>\n  )\n})\n",
       "path": "src/src/components/kit/x-switch.tsx",
       "target": "components/kit/x-switch.tsx"
     }

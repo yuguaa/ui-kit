@@ -6,7 +6,8 @@ import { Input } from "@/components/ui/input"
 import { XChip } from "@/components/kit/x-chip"
 import { cn } from "@/lib/utils"
 
-export interface XInputTagsProps {
+export interface XInputTagsProps
+  extends Omit<React.ComponentProps<typeof Input>, "value" | "defaultValue" | "onChange"> {
   /** 标签数组 */
   value?: string[]
   /** 默认标签 */
@@ -33,6 +34,7 @@ export function XInputTags({
   onAdd,
   onRemove,
   className,
+  ...props
 }: XInputTagsProps) {
   const [innerValue, setInnerValue] = React.useState<string[]>(defaultValue)
   const [draft, setDraft] = React.useState("")
@@ -83,6 +85,7 @@ export function XInputTags({
         }}
         onBlur={() => addTag(draft)}
         placeholder={tags.length === 0 ? placeholder : ""}
+        {...props}
         className="h-6 min-w-24 flex-1 border-0 bg-transparent p-0 text-sm shadow-none outline-none focus-visible:ring-0 focus-visible:border-0"
       />
     </span>

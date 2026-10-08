@@ -10,10 +10,20 @@ description: 带标签、说明与错误信息的表单字段
 <script setup>
 import FormBasic from '@demos/react/form-basic'
 import formBasicRaw from '@demos/react/form-basic.tsx.code.txt?raw'
+import FormFieldHint from '@demos/react/form-field-hint'
+import formFieldHintRaw from '@demos/react/form-field-hint.tsx.code.txt?raw'
 </script>
 
 <DemoBlock title="基础用法" description="表单全景（示例中含字段与字段组）" :code="formBasicRaw">
   <ReactDemo :component="FormBasic" />
+</DemoBlock>
+
+## 提示文案
+
+`hint` 渲染在标签右侧，用于说明填写要求。
+
+<DemoBlock title="标签提示" description="hint 属性" :code="formFieldHintRaw">
+  <ReactDemo :component="FormFieldHint" />
 </DemoBlock>
 
 ## 安装
@@ -31,6 +41,7 @@ npx shadcn@latest add @ui-kit/x-field-group
 | --- | --- | --- | --- |
 | name | string | - | 字段名（关联表单校验结果） |
 | label | ReactNode | - | 标签文字 |
+| hint | ReactNode | - | 标签右侧的提示文案（说明填写要求） |
 | description | ReactNode | - | 辅助说明 |
 | error | ReactNode | - | 错误信息（优先取表单校验结果） |
 | required | boolean | false | 是否必填 |

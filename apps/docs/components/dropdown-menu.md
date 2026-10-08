@@ -10,10 +10,16 @@ description: 点击按钮展开的操作菜单
 <script setup>
 import MenuBasicDemo from '@demos/vue/menu-basic-demo.vue'
 import menuBasicDemoRaw from '@demos/vue/menu-basic-demo.vue.code.txt?raw'
+import DropdownMenuItemExtras from '@demos/vue/dropdown-menu-item-extras.vue'
+import dropdownMenuItemExtrasRaw from '@demos/vue/dropdown-menu-item-extras.vue.code.txt?raw'
 </script>
 
 <DemoBlock title="操作菜单" description="items / separator 分隔线" :code="menuBasicDemoRaw">
   <MenuBasicDemo />
+</DemoBlock>
+
+<DemoBlock title="说明与快捷键" description="description 说明文字 / shortcut 快捷键" :code="dropdownMenuItemExtrasRaw">
+  <DropdownMenuItemExtras />
 </DemoBlock>
 
 ## 安装
@@ -26,7 +32,7 @@ npx shadcn-vue@latest add @ui-kit/x-dropdown-menu
 
 | 名称 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
-| items | { key, label?, disabled?, separator? }[] | - | 菜单项数组 |
+| items | { key, label?, description?, shortcut?, disabled?, separator? }[] | - | 菜单项数组 |
 | open | boolean | - | 是否打开（支持 v-model:open） |
 | closeOnSelect | boolean | true | 选择后关闭 |
 | triggerLabel | string | 操作 | 触发按钮文字 |

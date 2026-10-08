@@ -45,6 +45,24 @@ describe("useXModal", () => {
     act(() => apiRef.current!.toggle())
     expect(await screen.findByText("新标题")).toBeInTheDocument()
   })
+
+  it("setData / getData 共享数据，lock / unlock 切换确定按钮加载态", async () => {
+    const { Host, apiRef } = createHost(() => useXModal({ title: "数据" }))
+    render(<Host />)
+
+    act(() => {
+      apiRef.current!.setData({ id: 7 })
+      apiRef.current!.open()
+    })
+    expect(await screen.findByText("数据")).toBeInTheDocument()
+    expect(apiRef.current!.getData<{ id: number }>()).toEqual({ id: 7 })
+
+    act(() => apiRef.current!.lock())
+    expect(screen.getByRole("button", { name: "确 定" })).toHaveAttribute("aria-busy", "true")
+
+    act(() => apiRef.current!.unlock())
+    expect(screen.getByRole("button", { name: "确 定" })).not.toHaveAttribute("aria-busy")
+  })
 })
 
 describe("useXDrawer / useXSlideover", () => {

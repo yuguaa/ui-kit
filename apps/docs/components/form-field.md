@@ -10,10 +10,20 @@ description: 带标签、说明与错误信息的表单字段
 <script setup>
 import FormBasic from '@demos/vue/form-basic.vue'
 import formBasicRaw from '@demos/vue/form-basic.vue.code.txt?raw'
+import FormFieldHint from '@demos/vue/form-field-hint.vue'
+import formFieldHintRaw from '@demos/vue/form-field-hint.vue.code.txt?raw'
 </script>
 
 <DemoBlock title="基础用法" description="表单全景（示例中含字段与字段组）" :code="formBasicRaw">
   <FormBasic />
+</DemoBlock>
+
+## 提示文案
+
+`hint` 渲染在标签右侧，用于说明填写要求；可通过 `hint` 插槽自定义内容。
+
+<DemoBlock title="标签提示" description="hint 属性与 hint 插槽" :code="formFieldHintRaw">
+  <FormFieldHint />
 </DemoBlock>
 
 ## 安装
@@ -31,12 +41,13 @@ npx shadcn-vue@latest add @ui-kit/x-field-group
 | --- | --- | --- | --- |
 | name | string | - | 字段名（关联表单校验结果） |
 | label | string | - | 标签文字 |
+| hint | string | - | 标签右侧的提示文案（说明填写要求） |
 | description | string | - | 辅助说明 |
 | error | string | - | 错误信息（优先取表单校验结果） |
 | required | boolean | false | 是否必填 |
 | id | string | - | 控件 id（label 关联用） |
 
-**插槽**：default 字段控件 · label 自定义标签 · error 自定义错误 · description 自定义说明
+**插槽**：default 字段控件 · label 自定义标签 · hint 自定义提示文案 · error 自定义错误 · description 自定义说明
 
 ### XFieldGroup
 

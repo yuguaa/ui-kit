@@ -306,7 +306,7 @@
       "name": "x-avatar",
       "type": "registry:ui",
       "title": "头像",
-      "description": "展示用户形象，支持圆形/方形、五档尺寸、图片与图标。",
+      "description": "展示用户形象，支持圆形/方形、五档尺寸、图片、图标与文字。",
       "registryDependencies": [
         "@ui-kit/utils",
         "@ui-kit/avatar"
@@ -362,10 +362,9 @@
       "name": "x-separator",
       "type": "registry:ui",
       "title": "分割线",
-      "description": "在内容之间插入水平或垂直分隔。",
+      "description": "在内容之间插入水平或垂直分隔，支持标签与线条样式。",
       "registryDependencies": [
-        "@ui-kit/utils",
-        "@ui-kit/separator"
+        "@ui-kit/utils"
       ]
     },
     {
@@ -382,10 +381,11 @@
       "name": "x-input",
       "type": "registry:ui",
       "title": "输入框",
-      "description": "支持前后缀图标、前后置标签与 error / warning 校验状态。",
+      "description": "支持前后缀图标、前后置标签、clearable 清空与 error / warning 校验状态。",
       "registryDependencies": [
         "@ui-kit/utils",
-        "@ui-kit/input"
+        "@ui-kit/input",
+        "@ui-kit/button"
       ]
     },
     {
@@ -424,7 +424,7 @@
       "name": "x-switch",
       "type": "registry:ui",
       "title": "开关",
-      "description": "支持选中/未选中文字与两档尺寸。",
+      "description": "支持选中/未选中文字、两档尺寸、加载态与说明文字。",
       "registryDependencies": [
         "@ui-kit/utils",
         "@ui-kit/switch",
@@ -435,22 +435,24 @@
       "name": "x-select-menu",
       "type": "registry:ui",
       "title": "选择菜单",
-      "description": "带搜索的增强选择器，支持多选与空状态插槽。",
+      "description": "带搜索的增强选择器，支持多选、清空与空状态插槽。",
       "registryDependencies": [
         "@ui-kit/utils",
         "@ui-kit/popover",
-        "@ui-kit/input"
+        "@ui-kit/input",
+        "@ui-kit/button"
       ]
     },
     {
       "name": "x-input-menu",
       "type": "registry:ui",
       "title": "输入菜单",
-      "description": "输入框与下拉菜单组合，支持搜索过滤。",
+      "description": "输入框与下拉菜单组合，支持搜索过滤、清空与自由输入新建项。",
       "registryDependencies": [
         "@ui-kit/utils",
         "@ui-kit/popover",
-        "@ui-kit/input"
+        "@ui-kit/input",
+        "@ui-kit/button"
       ]
     },
     {
@@ -488,7 +490,7 @@
       "name": "x-input-date",
       "type": "registry:ui",
       "title": "日期选择",
-      "description": "输入框 + popover 日历，支持最小/最大日期。",
+      "description": "输入框 + popover 日历，支持最小/最大日期与日期区间。",
       "registryDependencies": [
         "@ui-kit/utils",
         "@ui-kit/popover",
@@ -540,9 +542,10 @@
       "name": "x-file-upload",
       "type": "registry:ui",
       "title": "文件上传",
-      "description": "上传文件，支持拖拽与多文件。",
+      "description": "上传文件，支持拖拽、多文件与进度展示。",
       "registryDependencies": [
-        "@ui-kit/utils"
+        "@ui-kit/utils",
+        "@ui-kit/x-progress"
       ]
     },
     {
@@ -692,7 +695,7 @@
       "name": "x-popover",
       "type": "registry:ui",
       "title": "气泡",
-      "description": "点击或悬停触发的轻量气泡卡片。",
+      "description": "点击或悬停触发的轻量气泡卡片，支持箭头。",
       "registryDependencies": [
         "@ui-kit/utils",
         "@ui-kit/popover"
@@ -774,9 +777,10 @@
       "name": "x-listbox",
       "type": "registry:ui",
       "title": "列表",
-      "description": "可选中项的列表选择组件。",
+      "description": "可选中项的列表选择组件，支持搜索过滤与加载态。",
       "registryDependencies": [
-        "@ui-kit/utils"
+        "@ui-kit/utils",
+        "@ui-kit/input"
       ]
     },
     {
@@ -813,10 +817,11 @@
       "name": "x-table",
       "type": "registry:ui",
       "title": "表格",
-      "description": "展示行列数据，支持加载与分页。",
+      "description": "展示行列数据，支持排序、行选择、固定表头与分页。",
       "registryDependencies": [
         "@ui-kit/utils",
         "@ui-kit/table",
+        "@ui-kit/x-checkbox",
         "@ui-kit/x-pagination",
         "@ui-kit/x-skeleton"
       ]

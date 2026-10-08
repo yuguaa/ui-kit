@@ -10,10 +10,20 @@ description: 点击或悬停触发的轻量气泡卡片
 <script setup>
 import PopoverBasicDemo from '@demos/vue/popover-basic-demo.vue'
 import popoverBasicDemoRaw from '@demos/vue/popover-basic-demo.vue.code.txt?raw'
+import PopoverArrowDemo from '@demos/vue/popover-arrow-demo.vue'
+import popoverArrowDemoRaw from '@demos/vue/popover-arrow-demo.vue.code.txt?raw'
 </script>
 
 <DemoBlock title="四个方向" description="side / trigger / title / content" :code="popoverBasicDemoRaw">
   <PopoverBasicDemo />
+</DemoBlock>
+
+## 箭头
+
+开启 `arrow` 后浮层显示指向触发元素的箭头，跟随 `side` 自动定位。
+
+<DemoBlock title="带箭头浮层" description="arrow" :code="popoverArrowDemoRaw">
+  <PopoverArrowDemo />
 </DemoBlock>
 
 ## 安装
@@ -29,6 +39,7 @@ npx shadcn-vue@latest add @ui-kit/x-popover
 | open | boolean | false | 是否显示（支持 v-model:open） |
 | trigger | hover · click | hover | 触发方式 |
 | side | top · bottom · left · right | top | 位置 |
+| arrow | boolean | false | 是否显示指向触发元素的箭头 |
 | title | string | - | 标题 |
 
 ## 插槽

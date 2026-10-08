@@ -3,7 +3,9 @@
   "type": "registry:ui",
   "title": "消息通知",
   "description": "操作后的轻量级全局消息通知。",
-  "dependencies": [],
+  "dependencies": [
+    "sonner"
+  ],
   "registryDependencies": [
     "@ui-kit/utils",
     "@ui-kit/sonner"
@@ -11,7 +13,7 @@
   "files": [
     {
       "type": "registry:ui",
-      "content": "/**\n * XToast 消息通知：操作后的轻量级全局消息通知。\n * XToaster 挂载到应用根部，toast.show / toast.dismiss 在任意位置调用。\n */\nimport { toast as sonnerToast } from \"sonner\"\nimport { Toaster } from \"@/components/ui/sonner\"\n\nexport type XToastColor = \"primary\" | \"success\" | \"warning\" | \"error\"\n\nexport interface XToastOptions {\n  /** 通知标题 */\n  title?: string\n  /** 说明文字 */\n  description?: string\n  /** 语义色 */\n  color?: XToastColor\n  /** 展示时长（ms） */\n  duration?: number\n}\n\nconst sonnerTypeMap: Record<XToastColor, \"default\" | \"success\" | \"warning\" | \"error\"> = {\n  primary: \"default\",\n  success: \"success\",\n  warning: \"warning\",\n  error: \"error\",\n}\n\nconst sonnerCall = {\n  default: sonnerToast,\n  success: sonnerToast.success,\n  warning: sonnerToast.warning,\n  error: sonnerToast.error,\n}\n\n/** 挂载通知容器（放在应用根部） */\nexport function XToaster() {\n  return <Toaster position=\"top-right\" />\n}\n\n/** 全局通知 API */\nexport const toast = {\n  /** 显示通知，返回 toast id */\n  show(options: XToastOptions): string | number {\n    const { title, description, color = \"primary\", duration = 3000 } = options\n    const type = sonnerTypeMap[color]\n    return sonnerCall[type](title, {\n      description,\n      duration,\n    })\n  },\n  /** 关闭通知 */\n  dismiss(id?: string | number) {\n    sonnerToast.dismiss(id)\n  },\n}\n",
+      "content": "/**\n * XToast 消息通知：操作后的轻量级全局消息通知。\n * XToaster 挂载到应用根部，toast.show / toast.dismiss 在任意位置调用。\n */\nimport { toast as sonnerToast } from \"sonner\"\nimport { Toaster } from \"@/components/ui/sonner\"\n\nexport type XToastColor = \"primary\" | \"success\" | \"warning\" | \"error\"\n\nexport interface XToastOptions {\n  /** 通知标题 */\n  title?: string\n  /** 说明文字 */\n  description?: string\n  /** 语义色 */\n  color?: XToastColor\n  /** 展示时长（ms） */\n  duration?: number\n  /** 操作按钮，点击后关闭通知 */\n  action?: { label: string; onClick: () => void }\n  /** 取消按钮，点击后关闭通知 */\n  cancel?: { label: string; onClick: () => void }\n}\n\nconst sonnerTypeMap: Record<XToastColor, \"default\" | \"success\" | \"warning\" | \"error\"> = {\n  primary: \"default\",\n  success: \"success\",\n  warning: \"warning\",\n  error: \"error\",\n}\n\nconst sonnerCall = {\n  default: sonnerToast,\n  success: sonnerToast.success,\n  warning: sonnerToast.warning,\n  error: sonnerToast.error,\n}\n\n/** 挂载通知容器（放在应用根部） */\nexport function XToaster() {\n  return <Toaster position=\"top-right\" />\n}\n\n/** 全局通知 API */\nexport const toast = {\n  /** 显示通知，返回 toast id */\n  show(options: XToastOptions): string | number {\n    const { title, description, color = \"primary\", duration = 3000, action, cancel } = options\n    const type = sonnerTypeMap[color]\n    return sonnerCall[type](title, {\n      description,\n      duration,\n      action,\n      cancel,\n    })\n  },\n  /** 关闭通知 */\n  dismiss(id?: string | number) {\n    sonnerToast.dismiss(id)\n  },\n}\n",
       "path": "src/src/components/kit/x-toast.tsx",
       "target": "components/kit/x-toast.tsx"
     }

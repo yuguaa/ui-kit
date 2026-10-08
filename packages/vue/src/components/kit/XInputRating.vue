@@ -1,10 +1,21 @@
 <script setup lang="ts">
 /**
- * XInputRating 评分：以星标形式进行评分输入，支持半星与自定义图标插槽。
+ * XInputRating 评分：以星标形式进行评分输入，支持半星、自定义图标插槽、只读与三档尺寸。
  */
 import type { HTMLAttributes } from 'vue'
 import { Star } from '@lucide/vue'
 import { cn } from '@/lib/utils'
+
+defineOptions({ inheritAttrs: false })
+
+type RatingSize = 'sm' | 'md' | 'lg'
+
+/* 三档星星尺寸 */
+const sizeClasses: Record<RatingSize, string> = {
+  sm: 'size-4',
+  md: 'size-5',
+  lg: 'size-6',
+}
 
 const props = withDefaults(defineProps<{
   /** 评分值 */
@@ -15,10 +26,15 @@ const props = withDefaults(defineProps<{
   allowHalf?: boolean
   /** 是否禁用 */
   disabled?: boolean
+  /** 只读展示，禁止点击与键盘操作 */
+  readonly?: boolean
+  /** 星星尺寸 */
+  size?: RatingSize
   class?: HTMLAttributes['class']
 }>(), {
   modelValue: 0,
   max: 5,
+  size: 'md',
 })
 
 const emit = defineEmits<{
@@ -28,7 +44,7 @@ const emit = defineEmits<{
 }>()
 
 function pick(index: number, event: MouseEvent) {
-  if (props.disabled) return
+  if (props.disabled || props.readonly) return
   const target = event.currentTarget as HTMLElement
   const half = props.allowHalf && event.clientX > target.getBoundingClientRect().left + target.offsetWidth / 2
   const next = half && props.allowHalf ? index + 0.5 : index + 1
@@ -39,8 +55,10 @@ function pick(index: number, event: MouseEvent) {
 
 <template>
   <span
+    v-bind="$attrs"
     role="radiogroup"
     aria-label="rating"
+    :aria-readonly="readonly || undefined"
     :class="cn('inline-flex items-center gap-0.5', disabled && 'pointer-events-none opacity-60', props.class)"
   >
     <button
@@ -48,7 +66,11 @@ function pick(index: number, event: MouseEvent) {
       :key="index"
       type="button"
       :aria-label="`${index} 星`"
-      class="cursor-pointer outline-none transition-colors hover:text-primary-6 focus-visible:text-primary-6"
+      :tabindex="readonly ? -1 : 0"
+      :class="cn(
+        'outline-none transition-colors',
+        readonly ? 'cursor-default' : 'cursor-pointer hover:text-primary-6 focus-visible:text-primary-6',
+      )"
       @click="pick(index - 1, $event)"
     >
       <slot
@@ -58,12 +80,12 @@ function pick(index: number, event: MouseEvent) {
         :half="allowHalf && modelValue >= index - 0.5 && modelValue < index"
       >
         <span class="relative inline-flex" aria-hidden="true">
-          <Star class="size-5 text-border" />
+          <Star :class="cn(sizeClasses[size], 'text-border')" />
           <Star
             v-if="allowHalf && modelValue >= index - 0.5 && modelValue < index"
-            class="absolute inset-0 size-5 fill-warning-6 text-warning-6 [clip-path:inset(0_50%_0_0)]"
+            :class="cn(sizeClasses[size], 'absolute inset-0 fill-warning-6 text-warning-6 [clip-path:inset(0_50%_0_0)]')"
           />
-          <Star v-if="modelValue >= index" class="absolute inset-0 size-5 fill-warning-6 text-warning-6" />
+          <Star v-if="modelValue >= index" :class="cn(sizeClasses[size], 'absolute inset-0 fill-warning-6 text-warning-6')" />
         </span>
       </slot>
     </button>

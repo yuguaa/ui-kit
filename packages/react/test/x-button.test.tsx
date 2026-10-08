@@ -34,6 +34,14 @@ describe("XButton", () => {
     expect(button.querySelector("svg")).toHaveClass("animate-spin");
   });
 
+  it("block 撑满宽度、square 使用方形尺寸", () => {
+    render(<XButton block>整行</XButton>);
+    expect(screen.getByRole("button", { name: "整行" })).toHaveClass("w-full");
+
+    const { container } = render(<XButton square size="lg" aria-label="设置" />);
+    expect(container.querySelector("button")).toHaveClass("size-9");
+  });
+
   it("leading / trailing 图标", () => {
     render(
       <XButton leading={<span data-testid="leading" />} trailing={<span data-testid="trailing" />}>

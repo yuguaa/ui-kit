@@ -34,7 +34,7 @@ modalApi.setState({ title: "新标题" });
 
 | hook | api |
 | --- | --- |
-| useXModal / useXDrawer / useXSlideover | open · close · toggle · setState |
+| useXModal / useXDrawer / useXSlideover | open · close · toggle · setState · setData · getData · lock · unlock |
 | useXTooltip | show · hide · toggle · setState |
 | useXPopover | open · close · toggle · setState |
 | useXCommandPalette / useXDropdownMenu / useXContextMenu | open · close · toggle |

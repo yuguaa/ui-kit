@@ -10,10 +10,16 @@ description: 操作后的轻量级全局消息通知
 <script setup>
 import ToastBasicDemo from '@demos/vue/toast-basic-demo.vue'
 import toastBasicDemoRaw from '@demos/vue/toast-basic-demo.vue.code.txt?raw'
+import ToastActionDemo from '@demos/vue/toast-action-demo.vue'
+import toastActionDemoRaw from '@demos/vue/toast-action-demo.vue.code.txt?raw'
 </script>
 
 <DemoBlock title="三种语义通知" description="useToast().show + XToaster" :code="toastBasicDemoRaw">
   <ToastBasicDemo />
+</DemoBlock>
+
+<DemoBlock title="带操作与取消按钮" description="action 与 cancel，点击后关闭当前通知" :code="toastActionDemoRaw">
+  <ToastActionDemo />
 </DemoBlock>
 
 ## 安装
@@ -47,6 +53,8 @@ toastApi.dismiss()
 | description | string | - | 说明文字 |
 | color | primary · success · warning · error | primary | 语义色 |
 | duration | number | 3000 | 展示时长（ms） |
+| action | { label: string; onClick: () => void } | - | 操作按钮，点击后关闭通知 |
+| cancel | { label: string; onClick: () => void } | - | 取消按钮，点击后关闭通知 |
 
 ## 动效
 

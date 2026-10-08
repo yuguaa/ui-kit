@@ -14,6 +14,8 @@ import BadgeColor from '@demos/vue/badge-color.vue'
 import badgeColorRaw from '@demos/vue/badge-color.vue.code.txt?raw'
 import BadgeVariants from '@demos/vue/badge-variants.vue'
 import badgeVariantsRaw from '@demos/vue/badge-variants.vue.code.txt?raw'
+import BadgeSquare from '@demos/vue/badge-square.vue'
+import badgeSquareRaw from '@demos/vue/badge-square.vue.code.txt?raw'
 </script>
 
 ## 变体
@@ -36,6 +38,14 @@ count 显示数字，超出 overflowCount 显示 99+，dot 开启圆点模式。
   <BadgeColor />
 </DemoBlock>
 
+## 等边距与前后内容
+
+square 让宽度等于高度，适合只放图标或单字符；leading / trailing 在徽标内容前后放置附加内容。
+
+<DemoBlock title="square、前后内容与组合" description="square / leading / trailing" :code="badgeSquareRaw">
+  <BadgeSquare />
+</DemoBlock>
+
 ## 安装
 
 ```bash
@@ -52,12 +62,15 @@ npx shadcn-vue@latest add @ui-kit/x-badge
 | variant | solid · outline · soft · subtle | soft | 预设样式 |
 | color | primary · secondary · neutral · success · info · warning · error | primary | 徽标颜色 |
 | size | xs · sm · md · lg · xl | md | 徽标尺寸 |
+| square | boolean | false | 等边距模式，宽度等于高度，适合只放图标或单字符 |
 
 ## 插槽
 
 | 名称 | 说明 |
 | --- | --- |
 | default | 被包裹内容，有内容时徽标作为角标展示 |
+| leading | 徽标内容之前的内容 |
+| trailing | 徽标内容之后的内容 |
 
 ## 动效
 

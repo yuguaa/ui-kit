@@ -14,6 +14,8 @@ import AlertClosable from '@demos/react/alert-closable'
 import alertClosableRaw from '@demos/react/alert-closable.tsx.code.txt?raw'
 import AlertVariants from '@demos/react/alert-variants'
 import alertVariantsRaw from '@demos/react/alert-variants.tsx.code.txt?raw'
+import AlertIconActions from '@demos/react/alert-icon-actions'
+import alertIconActionsRaw from '@demos/react/alert-icon-actions.tsx.code.txt?raw'
 </script>
 
 ## 变体
@@ -34,6 +36,12 @@ import alertVariantsRaw from '@demos/react/alert-variants.tsx.code.txt?raw'
   <ReactDemo :component="AlertClosable" />
 </DemoBlock>
 
+## 图标与操作区
+
+<DemoBlock title="自定义图标与操作按钮区" description="icon 覆盖默认类型图标，actions 位于标题与描述下方" :code="alertIconActionsRaw">
+  <ReactDemo :component="AlertIconActions" />
+</DemoBlock>
+
 ## 安装
 
 ```bash
@@ -50,6 +58,8 @@ npx shadcn@latest add @ui-kit/x-alert
 | description | ReactNode | - | 辅助说明文字 |
 | closable | boolean | false | 是否显示关闭按钮 |
 | showIcon | boolean | false | 是否显示图标 |
+| icon | ReactNode | - | 自定义图标，优先于默认的类型图标 |
+| actions | ReactNode | - | 标题与描述下方的操作区 |
 | onClose | (event) => void | - | 点击关闭按钮时的回调 |
 
 ## 动效

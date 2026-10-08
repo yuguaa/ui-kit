@@ -18,6 +18,8 @@ import ButtonStates from '@demos/vue/button-states.vue'
 import buttonStatesRaw from '@demos/vue/button-states.vue.code.txt?raw'
 import ButtonIcons from '@demos/vue/button-icons.vue'
 import buttonIconsRaw from '@demos/vue/button-icons.vue.code.txt?raw'
+import ButtonBlockSquare from '@demos/vue/button-block-square.vue'
+import buttonBlockSquareRaw from '@demos/vue/button-block-square.vue.code.txt?raw'
 </script>
 
 ## 变体
@@ -54,6 +56,14 @@ color 属性提供七种语义色，每种颜色都支持全部六种变体。
   <ButtonIcons />
 </DemoBlock>
 
+## 宽度与方形
+
+block 让按钮撑满父容器宽度；square 使用等边距的方形尺寸，适合只放图标的操作按钮。
+
+<DemoBlock title="block 与 square" description="block 撑满宽度，square 等边距" :code="buttonBlockSquareRaw">
+  <ButtonBlockSquare />
+</DemoBlock>
+
 ## 安装
 
 ```bash
@@ -71,6 +81,8 @@ npx shadcn-vue@latest add @ui-kit/x-button
 | color | primary · secondary · neutral · success · info · warning · error | primary | 组件颜色 |
 | loading | boolean | false | 加载态 |
 | disabled | boolean | false | 禁用状态 |
+| block | boolean | false | 撑满父容器宽度 |
+| square | boolean | false | 方形按钮，图标场景等边距 |
 
 ## 插槽
 

@@ -10,10 +10,16 @@ description: 在指定区域右键唤出的上下文菜单
 <script setup>
 import MenuBasicDemo from '@demos/vue/menu-basic-demo.vue'
 import menuBasicDemoRaw from '@demos/vue/menu-basic-demo.vue.code.txt?raw'
+import ContextMenuItemExtras from '@demos/vue/context-menu-item-extras.vue'
+import contextMenuItemExtrasRaw from '@demos/vue/context-menu-item-extras.vue.code.txt?raw'
 </script>
 
 <DemoBlock title="右键菜单" description="items / 默认插槽为触发区域" :code="menuBasicDemoRaw">
   <MenuBasicDemo />
+</DemoBlock>
+
+<DemoBlock title="说明与快捷键" description="description 说明文字 / shortcut 快捷键" :code="contextMenuItemExtrasRaw">
+  <ContextMenuItemExtras />
 </DemoBlock>
 
 ## 安装
@@ -26,7 +32,7 @@ npx shadcn-vue@latest add @ui-kit/x-context-menu
 
 | 名称 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
-| items | { key, label, disabled?, separator? }[] | - | 菜单项数组 |
+| items | { key, label, description?, shortcut?, disabled?, separator? }[] | - | 菜单项数组 |
 | open | boolean | - | 是否打开（为 true 时在触发区域派发 contextmenu 事件打开） |
 
 ## 插槽

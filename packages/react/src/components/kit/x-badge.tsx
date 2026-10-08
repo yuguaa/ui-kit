@@ -59,6 +59,15 @@ const badgeSizeClasses: Record<XBadgeSize, string> = {
   xl: "h-8 min-w-8 gap-1.5 px-3 text-base",
 }
 
+/** square 模式：去掉水平内边距，宽度与高度一致 */
+const badgeSquareClasses: Record<XBadgeSize, string> = {
+  xs: "w-4 px-0",
+  sm: "w-5 px-0",
+  md: "w-6 px-0",
+  lg: "w-7 px-0",
+  xl: "w-8 px-0",
+}
+
 export interface XBadgeProps extends Omit<React.ComponentProps<typeof Badge>, "variant" | "color"> {
   /** 显示数字 */
   count?: number
@@ -72,6 +81,12 @@ export interface XBadgeProps extends Omit<React.ComponentProps<typeof Badge>, "v
   color?: XBadgeColor
   /** 徽标尺寸 */
   size?: XBadgeSize
+  /** 等边距模式，宽度等于高度，适合只放图标或单字符 */
+  square?: boolean
+  /** 徽标内容之前的内容 */
+  leading?: React.ReactNode
+  /** 徽标内容之后的内容 */
+  trailing?: React.ReactNode
   children?: React.ReactNode
 }
 
@@ -82,6 +97,9 @@ export function XBadge({
   variant = "soft",
   color = "primary",
   size = "md",
+  square = false,
+  leading,
+  trailing,
   className,
   children,
   ...props
@@ -98,8 +116,18 @@ export function XBadge({
   }
 
   const badge = (
-    <Badge className={cn(badgeColorClasses[variant][color], badgeSizeClasses[size], className)} {...props}>
+    <Badge
+      className={cn(
+        badgeColorClasses[variant][color],
+        badgeSizeClasses[size],
+        square && badgeSquareClasses[size],
+        className,
+      )}
+      {...props}
+    >
+      {leading}
       {display}
+      {trailing}
     </Badge>
   )
 

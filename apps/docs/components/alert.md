@@ -14,6 +14,8 @@ import AlertClosable from '@demos/vue/alert-closable.vue'
 import alertClosableRaw from '@demos/vue/alert-closable.vue.code.txt?raw'
 import AlertVariants from '@demos/vue/alert-variants.vue'
 import alertVariantsRaw from '@demos/vue/alert-variants.vue.code.txt?raw'
+import AlertIconActions from '@demos/vue/alert-icon-actions.vue'
+import alertIconActionsRaw from '@demos/vue/alert-icon-actions.vue.code.txt?raw'
 </script>
 
 ## 变体
@@ -32,6 +34,12 @@ import alertVariantsRaw from '@demos/vue/alert-variants.vue.code.txt?raw'
 
 <DemoBlock title="可关闭与自定义操作" description="closable 显示关闭按钮，description 插槽可嵌入操作" :code="alertClosableRaw">
   <AlertClosable />
+</DemoBlock>
+
+## 图标与操作区
+
+<DemoBlock title="自定义图标与操作按钮区" description="icon 插槽覆盖默认类型图标，actions 插槽位于标题与描述下方" :code="alertIconActionsRaw">
+  <AlertIconActions />
 </DemoBlock>
 
 ## 安装
@@ -55,9 +63,10 @@ npx shadcn-vue@latest add @ui-kit/x-alert
 
 | 名称 | 说明 |
 | --- | --- |
-| icon | 自定义图标内容 |
+| icon | 自定义图标，优先于默认的类型图标 |
 | message | 自定义标题内容 |
 | description | 自定义说明内容 |
+| actions | 标题与描述下方的操作区 |
 
 ## 事件
 

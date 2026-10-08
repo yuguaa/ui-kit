@@ -3,6 +3,7 @@
  */
 import * as React from "react"
 import { cn } from "@/lib/utils"
+import { XAvatar, type XAvatarColor, type XAvatarProps } from "./x-avatar"
 
 export type XAvatarGroupSize = "xs" | "sm" | "md" | "lg" | "xl"
 
@@ -21,12 +22,15 @@ export interface XAvatarGroupProps extends React.ComponentProps<"div"> {
   size?: XAvatarGroupSize
   /** 自定义溢出标记 */
   plus?: React.ReactNode
+  /** 透传给子头像的语义色（子头像自身指定 color 时不覆盖） */
+  color?: XAvatarColor
 }
 
 export function XAvatarGroup({
   max = 4,
   size = "md",
   plus,
+  color,
   className,
   children,
   ...props
@@ -37,11 +41,19 @@ export function XAvatarGroup({
 
   return (
     <div className={cn("inline-flex items-center -space-x-2", className)} {...props}>
-      {visible.map((child, index) => (
-        <span key={index} className="relative inline-flex rounded-full ring-2 ring-background">
-          {child}
-        </span>
-      ))}
+      {visible.map((child, index) => {
+        /** 子头像未指定 color 时透传头像组的 color */
+        const isXAvatar = React.isValidElement<XAvatarProps>(child) && child.type === XAvatar
+        const node = color && isXAvatar && child.props.color == null
+          ? React.cloneElement(child, { color })
+          : child
+
+        return (
+          <span key={index} className="relative inline-flex rounded-full ring-2 ring-background">
+            {node}
+          </span>
+        )
+      })}
       {overflow > 0 &&
         (plus ?? (
           <span

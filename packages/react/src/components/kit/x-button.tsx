@@ -93,9 +93,23 @@ const buttonColorStyles: Record<XButtonColor, Record<XButtonVariant, string>> = 
   },
 }
 
+/** 方形按钮（仅图标）尺寸映射 */
+const atomSquareSizeMap: Record<XButtonSize, "icon-xs" | "icon-sm" | "icon" | "icon-lg"> = {
+  xs: "icon-xs",
+  sm: "icon-sm",
+  md: "icon",
+  lg: "icon-lg",
+  xl: "icon-lg",
+}
+
 /** xl 尺寸补足：在原子 lg 基础上加高加宽 */
 const buttonSizeOverrides: Partial<Record<XButtonSize, string>> = {
   xl: "h-10 gap-2 px-4 text-base",
+}
+
+/** xl 方形补足 */
+const buttonSquareSizeOverrides: Partial<Record<XButtonSize, string>> = {
+  xl: "size-10",
 }
 
 export interface XButtonProps
@@ -108,6 +122,10 @@ export interface XButtonProps
   color?: XButtonColor
   /** 加载态 */
   loading?: boolean
+  /** 撑满父容器宽度 */
+  block?: boolean
+  /** 方形按钮，图标场景等边距 */
+  square?: boolean
   /** 前置图标 */
   leading?: React.ReactNode
   /** 后置图标 */
@@ -116,11 +134,11 @@ export interface XButtonProps
 }
 
 export const XButton = React.forwardRef<HTMLButtonElement, XButtonProps>(function XButton(
-  { variant = "solid", size = "md", color = "primary", loading = false, leading, trailing, children, className, disabled, ...rest },
+  { variant = "solid", size = "md", color = "primary", loading = false, block = false, square = false, leading, trailing, children, className, disabled, ...rest },
   ref,
 ) {
   const atomVariant = atomVariantMap[variant]
-  const atomSize = atomSizeMap[size]
+  const atomSize = square ? atomSquareSizeMap[size] : atomSizeMap[size]
   const isDisabled = disabled || loading
   return (
     <button
@@ -131,7 +149,8 @@ export const XButton = React.forwardRef<HTMLButtonElement, XButtonProps>(functio
       className={cn(
         buttonVariants({ variant: atomVariant, size: atomSize }),
         buttonColorStyles[color][variant],
-        buttonSizeOverrides[size],
+        square ? buttonSquareSizeOverrides[size] : buttonSizeOverrides[size],
+        block && "w-full",
         loading && "opacity-60",
         className,
       )}

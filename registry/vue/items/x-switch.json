@@ -2,8 +2,10 @@
   "name": "x-switch",
   "type": "registry:ui",
   "title": "开关",
-  "description": "支持选中/未选中文字与两档尺寸。",
-  "dependencies": [],
+  "description": "支持选中/未选中文字、两档尺寸、加载态与说明文字。",
+  "dependencies": [
+    "@lucide/vue"
+  ],
   "registryDependencies": [
     "@ui-kit/utils",
     "@ui-kit/switch",
@@ -12,7 +14,7 @@
   "files": [
     {
       "type": "registry:component",
-      "content": "<script setup lang=\"ts\">\n/**\n * XSwitch 开关：shadcn-vue switch 原子的二次封装。\n * 支持选中/未选中文字插槽与 default / small 两档尺寸。\n */\nimport type { HTMLAttributes } from 'vue'\nimport { Label } from '@/components/ui/label'\nimport { Switch } from '@/components/ui/switch'\nimport { cn } from '@/lib/utils'\n\nconst props = withDefaults(defineProps<{\n  /** 是否禁用 */\n  disabled?: boolean\n  /** 控件尺寸 */\n  size?: 'default' | 'small'\n  /** 关联文字 */\n  label?: string\n  class?: HTMLAttributes['class']\n}>(), {\n  size: 'default',\n})\n\nconst model = defineModel<boolean>({ default: false })\n</script>\n\n<template>\n  <span :class=\"cn('flex items-center gap-2', props.class)\">\n    <Switch\n      :model-value=\"model\"\n      :disabled=\"disabled\"\n      :size=\"size === 'small' ? 'sm' : 'default'\"\n      @update:model-value=\"model = $event\"\n    />\n    <span v-if=\"$slots.checkedChildren && model\" class=\"text-sm\">\n      <slot name=\"checkedChildren\" />\n    </span>\n    <span v-else-if=\"$slots.unCheckedChildren && !model\" class=\"text-sm\">\n      <slot name=\"unCheckedChildren\" />\n    </span>\n    <Label v-if=\"label\" class=\"text-sm font-normal\">{{ label }}</Label>\n  </span>\n</template>\n",
+      "content": "<script setup lang=\"ts\">\n/**\n * XSwitch 开关：shadcn-vue switch 原子的二次封装。\n * 支持选中/未选中文字插槽、default / small 两档尺寸、加载态与说明文字插槽。\n */\nimport type { HTMLAttributes } from 'vue'\nimport { LoaderCircle } from '@lucide/vue'\nimport { Label } from '@/components/ui/label'\nimport { Switch } from '@/components/ui/switch'\nimport { cn } from '@/lib/utils'\n\n/* 属性透传到内部 Switch，避免落到外层包装元素 */\ndefineOptions({ inheritAttrs: false })\n\nconst props = withDefaults(defineProps<{\n  /** 是否禁用 */\n  disabled?: boolean\n  /** 控件尺寸 */\n  size?: 'default' | 'small'\n  /** 关联文字 */\n  label?: string\n  /** 加载态：阻止交互并显示旋转图标 */\n  loading?: boolean\n  class?: HTMLAttributes['class']\n}>(), {\n  size: 'default',\n  loading: false,\n})\n\nconst model = defineModel<boolean>({ default: false })\n</script>\n\n<template>\n  <span :class=\"cn('flex items-center gap-2', props.class)\">\n    <Switch\n      v-bind=\"$attrs\"\n      :model-value=\"model\"\n      :disabled=\"disabled || loading\"\n      :aria-busy=\"loading || undefined\"\n      :size=\"size === 'small' ? 'sm' : 'default'\"\n      @update:model-value=\"model = $event\"\n    />\n    <LoaderCircle\n      v-if=\"loading\"\n      :class=\"cn('animate-spin', size === 'small' ? 'size-3' : 'size-3.5')\"\n      aria-hidden=\"true\"\n    />\n    <span v-if=\"$slots.checkedChildren && model\" class=\"text-sm\">\n      <slot name=\"checkedChildren\" />\n    </span>\n    <span v-else-if=\"$slots.unCheckedChildren && !model\" class=\"text-sm\">\n      <slot name=\"unCheckedChildren\" />\n    </span>\n    <span v-if=\"label || $slots.description\" class=\"flex flex-col gap-0.5\">\n      <Label v-if=\"label\" class=\"text-sm font-normal\">{{ label }}</Label>\n      <span v-if=\"$slots.description\" class=\"text-xs text-muted-foreground\">\n        <slot name=\"description\" />\n      </span>\n    </span>\n  </span>\n</template>\n",
       "path": "kit/XSwitch.vue"
     }
   ],

@@ -10,10 +10,16 @@ description: 带搜索的增强选择器，支持多选与空状态插槽
 <script setup>
 import SelectMenuBasic from '@demos/vue/select-menu-basic.vue'
 import selectMenuBasicRaw from '@demos/vue/select-menu-basic.vue.code.txt?raw'
+import SelectMenuClearable from '@demos/vue/select-menu-clearable.vue'
+import selectMenuClearableRaw from '@demos/vue/select-menu-clearable.vue.code.txt?raw'
 </script>
 
 <DemoBlock title="单选 / 搜索 / 多选 / 禁用" description="options / show-search / multiple / disabled" :code="selectMenuBasicRaw">
   <SelectMenuBasic />
+</DemoBlock>
+
+<DemoBlock title="清空" description="clearable 有选中项时显示清空按钮，单选清为 ''，多选清为 []" :code="selectMenuClearableRaw">
+  <SelectMenuClearable />
 </DemoBlock>
 
 ## 安装
@@ -40,8 +46,11 @@ npx shadcn-vue@latest add @ui-kit/x-input-time
 | showSearch | boolean | false | 是否支持搜索 |
 | placeholder | string | 请选择 | 占位提示文字 |
 | disabled | boolean | false | 是否禁用 |
+| clearable | boolean | false | 有选中项时显示清空按钮（单选清为 ''，多选清为 []） |
 
 **插槽**：option 自定义选项内容 · empty 空数据提示内容
+
+**事件**：select 选中或清空回调 (value)
 
 ### XInputMenu
 
@@ -50,6 +59,11 @@ npx shadcn-vue@latest add @ui-kit/x-input-time
 | items | { label, value }[] | - | 菜单项数组 |
 | searchable | boolean | true | 是否可搜索 |
 | placeholder | string | 搜索并选择… | 占位文字 |
+| disabled | boolean | false | 是否禁用 |
+| clearable | boolean | false | 有选中项时显示清空按钮 |
+| createItem | boolean | false | 关键字不存在时回车创建新选项 |
+
+**事件**：select 选中回调 (item) · create 创建新选项回调 (value)
 
 **插槽**：leading 前置图标 · item 自定义菜单项
 

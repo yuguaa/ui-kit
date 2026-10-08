@@ -2,7 +2,7 @@
   "name": "x-avatar",
   "type": "registry:ui",
   "title": "头像",
-  "description": "展示用户形象，支持圆形/方形、五档尺寸、图片与图标。",
+  "description": "展示用户形象，支持圆形/方形、五档尺寸、图片、图标与文字。",
   "dependencies": [],
   "registryDependencies": [
     "@ui-kit/utils",
@@ -11,8 +11,13 @@
   "files": [
     {
       "type": "registry:component",
-      "content": "<script setup lang=\"ts\">\n/**\n * XAvatar 头像：展示用户形象，支持圆形/方形、五档尺寸、图片与图标。\n */\nimport type { HTMLAttributes } from 'vue'\nimport { computed } from 'vue'\nimport { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'\nimport { cn } from '@/lib/utils'\n\ntype AvatarShape = 'circle' | 'square'\ntype AvatarSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'\n\nconst props = withDefaults(defineProps<{\n  /** 头像形状 */\n  shape?: AvatarShape\n  /** 头像尺寸 */\n  size?: AvatarSize\n  /** 图片地址 */\n  src?: string\n  /** 图片描述文本 */\n  alt?: string\n  class?: HTMLAttributes['class']\n}>(), {\n  shape: 'circle',\n  size: 'md',\n})\n\nconst emit = defineEmits<{\n  /** 图片加载失败回调 */\n  error: [event: Event]\n}>()\n\nconst sizeClasses: Record<AvatarSize, string> = {\n  xs: 'size-5 text-xs',\n  sm: 'size-6 text-xs',\n  md: 'size-8 text-sm',\n  lg: 'size-10 text-base',\n  xl: 'size-12 text-lg',\n}\n\nconst shapeClass = computed(() => (props.shape === 'circle' ? 'rounded-full' : 'rounded-md'))\n</script>\n\n<template>\n  <Avatar :class=\"cn(shapeClass, sizeClasses[size], props.class)\">\n    <AvatarImage v-if=\"src\" :src=\"src\" :alt=\"alt ?? 'avatar'\" @error=\"emit('error', $event)\" />\n    <AvatarFallback :class=\"shapeClass\">\n      <slot name=\"icon\" />\n      <slot />\n    </AvatarFallback>\n  </Avatar>\n</template>\n",
+      "content": "<script setup lang=\"ts\">\n/**\n * XAvatar 头像：展示用户形象，支持圆形/方形、五档尺寸、图片、图标与文字。\n */\nimport type { HTMLAttributes } from 'vue'\nimport { computed, inject, useSlots } from 'vue'\nimport { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'\nimport { cn } from '@/lib/utils'\nimport { XAvatarGroupColorKey, type AvatarColor } from './XAvatarGroupContext'\n\ntype AvatarShape = 'circle' | 'square'\ntype AvatarSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'\n\nconst props = withDefaults(defineProps<{\n  /** 头像形状 */\n  shape?: AvatarShape\n  /** 头像尺寸 */\n  size?: AvatarSize\n  /** 图片地址 */\n  src?: string\n  /** 图片替代文本，缺省回退到 text */\n  alt?: string\n  /** 无图片时显示的文字（如姓名首字） */\n  text?: string\n  /** 语义色：文字/图标头像的背景与文字色 */\n  color?: AvatarColor\n  class?: HTMLAttributes['class']\n}>(), {\n  shape: 'circle',\n  size: 'md',\n})\n\nconst emit = defineEmits<{\n  /** 图片加载失败回调 */\n  error: [event: Event]\n}>()\n\nconst slots = useSlots()\n\n/** 头像组透传的语义色 */\nconst groupColor = inject(XAvatarGroupColorKey, undefined)\n\n/** 自身 color 优先，其次头像组 color，缺省 neutral */\nconst effectiveColor = computed(() => props.color ?? groupColor?.value ?? 'neutral')\n\nconst sizeClasses: Record<AvatarSize, string> = {\n  xs: 'size-5 text-xs',\n  sm: 'size-6 text-xs',\n  md: 'size-8 text-sm',\n  lg: 'size-10 text-base',\n  xl: 'size-12 text-lg',\n}\n\n/** 语义色样式：1 阶背景、7 阶文字（warning 用 8 阶保证可读性） */\nconst colorClasses: Record<AvatarColor, string> = {\n  primary: 'bg-primary-1 text-primary-7',\n  secondary: 'bg-muted text-secondary-foreground',\n  neutral: 'bg-neutral-1 text-neutral-7',\n  success: 'bg-success-1 text-success-7',\n  info: 'bg-info-1 text-info-7',\n  warning: 'bg-warning-1 text-warning-8',\n  error: 'bg-error-1 text-error-7',\n}\n\nconst shapeClass = computed(() => (props.shape === 'circle' ? 'rounded-full' : 'rounded-md'))\nconst fallbackClass = computed(() => cn(shapeClass.value, colorClasses[effectiveColor.value]))\n</script>\n\n<template>\n  <Avatar :class=\"cn(shapeClass, sizeClasses[size], props.class)\">\n    <AvatarImage v-if=\"src\" :src=\"src\" :alt=\"alt ?? text ?? 'avatar'\" @error=\"emit('error', $event)\" />\n    <AvatarFallback :class=\"fallbackClass\">\n      <slot v-if=\"slots.default\" />\n      <slot v-else-if=\"slots.icon\" name=\"icon\" />\n      <template v-else>{{ text }}</template>\n    </AvatarFallback>\n  </Avatar>\n</template>\n",
       "path": "kit/XAvatar.vue"
+    },
+    {
+      "type": "registry:component",
+      "content": "/**\n * XAvatarGroup 上下文：头像组向子头像透传语义色。\n * XAvatarGroup 提供，XAvatar 注入。\n */\nimport type { ComputedRef, InjectionKey } from 'vue'\n\nexport type AvatarColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'\n\n/** 头像组透传给子头像的语义色 */\nexport const XAvatarGroupColorKey: InjectionKey<ComputedRef<AvatarColor | undefined>> = Symbol('x-avatar-group-color')\n",
+      "path": "kit/XAvatarGroupContext.ts"
     }
   ],
   "cssVars": {

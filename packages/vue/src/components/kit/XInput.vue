@@ -1,12 +1,17 @@
 <script setup lang="ts">
 /**
  * XInput 输入框：shadcn-vue input 原子的二次封装。
- * 支持前缀/后缀图标、前后置标签（addon）与 error / warning 校验状态。
+ * 支持前缀/后缀图标、前后置标签（addon）、clearable 清空与 error / warning 校验状态。
  */
 import type { HTMLAttributes } from 'vue'
-import { useTemplateRef } from 'vue'
+import { computed, useAttrs, useTemplateRef } from 'vue'
+import { X } from '@lucide/vue'
 import { Input } from '@/components/ui/input'
+import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
+
+/* 属性透传到内部 input，避免落到外层包装元素 */
+defineOptions({ inheritAttrs: false })
 
 type InputSize = 'sm' | 'md'
 type InputStatus = 'error' | 'warning'
@@ -22,10 +27,18 @@ const props = withDefaults(defineProps<{
   disabled?: boolean
   /** 最大输入长度 */
   maxLength?: number
+  /** 是否显示清空按钮 */
+  clearable?: boolean
   class?: HTMLAttributes['class']
 }>(), {
   size: 'md',
+  clearable: false,
 })
+
+const emit = defineEmits<{
+  /** 点击清空按钮时回调 */
+  clear: []
+}>()
 
 const sizeClasses: Record<InputSize, string> = {
   sm: 'h-7 px-2 text-sm',
@@ -37,28 +50,53 @@ const statusClasses: Record<InputStatus, string> = {
   warning: 'border-warning-6 focus-visible:border-warning-6 focus-visible:ring-warning-6/20',
 }
 
-const inputRef = useTemplateRef<HTMLInputElement>('inputRef')
+const rootRef = useTemplateRef<HTMLElement>('rootRef')
+
+/** 内部真实控件：模板 ref 指向原子组件实例，需要通过根元素查找 input 元素 */
+function inputEl() {
+  return rootRef.value?.querySelector('input') ?? undefined
+}
+
+/** 输入值（支持 v-model） */
+const model = defineModel<string | number>({ default: '' })
+
+const attrs = useAttrs()
+
+/* 只读状态经 $attrs 透传，此处读取用于控制清空按钮显隐 */
+const isReadonly = computed(() => attrs.readonly === '' || attrs.readonly === true)
+
+/* 有值且未禁用、未只读时才展示清空按钮 */
+const showClear = computed(
+  () => props.clearable && model.value !== '' && model.value != null && !props.disabled && !isReadonly.value,
+)
+
+/** 清空值并恢复焦点 */
+function handleClear() {
+  model.value = ''
+  emit('clear')
+  focus()
+}
 
 /** 使输入框获得焦点 */
 function focus() {
-  inputRef.value?.focus()
+  inputEl()?.focus()
 }
 
 /** 使输入框失去焦点 */
 function blur() {
-  inputRef.value?.blur()
+  inputEl()?.blur()
 }
 
 /** 选中输入框内容 */
 function select() {
-  inputRef.value?.select()
+  inputEl()?.select()
 }
 
 defineExpose({ focus, blur, select })
 </script>
 
 <template>
-  <span class="flex w-full items-stretch">
+  <span ref="rootRef" class="flex w-full items-stretch">
     <span
       v-if="$slots.addonBefore"
       class="inline-flex items-center rounded-l-lg border border-r-0 border-input bg-muted px-3 text-sm text-muted-foreground"
@@ -70,11 +108,13 @@ defineExpose({ focus, blur, select })
         <slot name="prefix" />
       </span>
       <Input
-        ref="inputRef"
+        v-bind="$attrs"
+        v-model="model"
         :class="cn(
           sizeClasses[size],
           $slots.prefix && 'pl-9',
-          $slots.suffix && 'pr-9',
+          $slots.suffix && (showClear ? 'pr-12' : 'pr-9'),
+          showClear && !$slots.suffix && 'pr-7',
           status && statusClasses[status],
           props.class,
         )"
@@ -82,9 +122,24 @@ defineExpose({ focus, blur, select })
         :maxlength="maxLength"
         :placeholder="placeholder"
       />
-      <span v-if="$slots.suffix" class="pointer-events-none absolute right-3 flex items-center text-muted-foreground [&_svg]:size-4">
+      <span
+        v-if="$slots.suffix"
+        class="pointer-events-none absolute flex items-center text-muted-foreground [&_svg]:size-4"
+        :class="showClear ? 'right-8' : 'right-3'"
+      >
         <slot name="suffix" />
       </span>
+      <Button
+        v-if="showClear"
+        type="button"
+        variant="ghost"
+        size="icon-xs"
+        aria-label="清空"
+        class="absolute right-2 size-4 rounded-full text-muted-foreground opacity-70 hover:bg-transparent hover:opacity-100 [&_svg]:size-3.5"
+        @click="handleClear"
+      >
+        <X />
+      </Button>
     </span>
     <span
       v-if="$slots.addonAfter"

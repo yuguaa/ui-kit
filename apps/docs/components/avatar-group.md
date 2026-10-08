@@ -10,10 +10,20 @@ description: 将多个头像重叠排列展示
 <script setup>
 import AvatarBasic from '@demos/vue/avatar-basic.vue'
 import avatarBasicRaw from '@demos/vue/avatar-basic.vue.code.txt?raw'
+import AvatarGroupColors from '@demos/vue/avatar-group-colors.vue'
+import avatarGroupColorsRaw from '@demos/vue/avatar-group-colors.vue.code.txt?raw'
 </script>
 
 <DemoBlock title="基础用法" description="max=4 时第 5 个头像折叠为 +1" :code="avatarBasicRaw">
   <AvatarBasic />
+</DemoBlock>
+
+## 语义色透传
+
+color 属性透传给子头像，子头像自身指定 color 时不被覆盖。
+
+<DemoBlock title="color 透传" description="头像组的 color 透传给未指定 color 的子头像" :code="avatarGroupColorsRaw">
+  <AvatarGroupColors />
 </DemoBlock>
 
 ## 安装
@@ -28,6 +38,7 @@ npx shadcn-vue@latest add @ui-kit/x-avatar-group
 | --- | --- | --- | --- |
 | max | number | 4 | 最多显示数量 |
 | size | xs · sm · md · lg · xl | md | 头像尺寸 |
+| color | primary · secondary · neutral · success · info · warning · error | - | 透传给子头像的语义色（子头像自身指定 color 时不覆盖） |
 
 ## 插槽
 

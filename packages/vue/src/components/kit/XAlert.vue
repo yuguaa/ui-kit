@@ -83,7 +83,11 @@ function handleClose(event: MouseEvent) {
 
 <template>
   <Alert v-if="visible" :class="cn('flex items-start gap-2.5', typeClasses[variant][type], props.class)">
-    <component :is="icons[type]" v-if="showIcon" class="mt-0.5 size-4 shrink-0" />
+    <span v-if="showIcon || $slots.icon" class="mt-0.5 shrink-0">
+      <slot name="icon">
+        <component :is="icons[type]" class="size-4" />
+      </slot>
+    </span>
     <div class="flex min-w-0 flex-1 flex-col gap-0.5">
       <AlertTitle v-if="message != null || $slots.message" class="text-sm font-medium">
         <slot name="message">{{ message }}</slot>
@@ -91,6 +95,9 @@ function handleClose(event: MouseEvent) {
       <AlertDescription v-if="description != null || $slots.description" class="text-sm opacity-90">
         <slot name="description">{{ description }}</slot>
       </AlertDescription>
+      <div v-if="$slots.actions" class="mt-2 flex flex-wrap items-center gap-2">
+        <slot name="actions" />
+      </div>
     </div>
     <AlertAction v-if="closable">
       <XButton

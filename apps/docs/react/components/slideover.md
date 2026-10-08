@@ -29,6 +29,7 @@ npx shadcn@latest add @ui-kit/x-slideover
 | open | boolean | false | 是否打开 |
 | side | left · right | right | 滑出方向 |
 | dismissible | boolean | true | 点击遮罩关闭 |
+| loading | boolean | false | 加载态，锁定期间阻止手动关闭 |
 | title | ReactNode | - | 标题 |
 | header / footer | ReactNode | - | 自定义头部 / 底部 |
 | onOpenChange | (open) => void | - | 打开状态变化回调 |
@@ -37,7 +38,7 @@ npx shadcn@latest add @ui-kit/x-slideover
 
 ```tsx
 const [Slideover, slideoverApi] = useXSlideover({ title: "侧滑面板" })
-slideoverApi.open()   // open / close / toggle / setState
+slideoverApi.open()   // open / close / toggle / setState / setData / getData / lock / unlock
 ```
 
 ## 动效

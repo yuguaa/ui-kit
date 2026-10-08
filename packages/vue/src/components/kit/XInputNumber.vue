@@ -7,6 +7,9 @@ import { Minus, Plus } from '@lucide/vue'
 import { Input } from '@/components/ui/input'
 import { cn } from '@/lib/utils'
 
+/* 属性透传到内部 input，避免落到外层包装元素 */
+defineOptions({ inheritAttrs: false })
+
 const props = withDefaults(defineProps<{
   /** 绑定值 */
   modelValue?: number
@@ -57,6 +60,7 @@ function update(next: number) {
       <slot name="decrement"><Minus class="size-4" /></slot>
     </button>
     <Input
+      v-bind="$attrs"
       type="number"
       :model-value="String(modelValue)"
       :disabled="disabled"

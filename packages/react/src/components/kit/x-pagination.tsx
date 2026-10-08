@@ -2,7 +2,7 @@
  * XPagination 分页：对长列表数据进行分页浏览。
  */
 import * as React from "react"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { ChevronLeft, ChevronRight, ChevronsLeft, ChevronsRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { XSelectMenu } from "@/components/kit/x-select-menu"
 import { cn } from "@/lib/utils"
@@ -16,6 +16,8 @@ export interface XPaginationProps {
   pageSize?: number
   /** 是否显示每页条数切换 */
   showSizeChanger?: boolean
+  /** 是否显示首页与末页按钮 */
+  showControls?: boolean
   /** 是否禁用 */
   disabled?: boolean
   /** 页码或每页条数变化回调 */
@@ -39,6 +41,7 @@ export function XPagination({
   total,
   pageSize: pageSizeProp = 10,
   showSizeChanger = false,
+  showControls = false,
   disabled = false,
   onChange,
   className,
@@ -65,6 +68,17 @@ export function XPagination({
 
   return (
     <div className={cn("flex items-center gap-1.5", disabled && "pointer-events-none opacity-50", className)}>
+      {showControls && (
+        <Button
+          variant="outline"
+          size="sm"
+          aria-label="首页"
+          disabled={safeCurrent <= 1}
+          onClick={() => go(1)}
+        >
+          <ChevronsLeft className="size-4" />
+        </Button>
+      )}
       <Button
         variant="outline"
         size="sm"
@@ -101,6 +115,17 @@ export function XPagination({
       >
         <ChevronRight className="size-4" />
       </Button>
+      {showControls && (
+        <Button
+          variant="outline"
+          size="sm"
+          aria-label="末页"
+          disabled={safeCurrent >= pageCount}
+          onClick={() => go(pageCount)}
+        >
+          <ChevronsRight className="size-4" />
+        </Button>
+      )}
       {showSizeChanger && (
         <XSelectMenu
           options={[10, 20, 50, 100].map((size) => ({ label: `${size} 条/页`, value: String(size) }))}

@@ -1,8 +1,10 @@
+import { h } from "vue";
 import { mount } from "@vue/test-utils";
 import { describe, expect, it } from "vitest";
 import XAvatar from "@/components/kit/XAvatar.vue";
 import XAvatarGroup from "@/components/kit/XAvatarGroup.vue";
 import XBadge from "@/components/kit/XBadge.vue";
+import XBreadcrumb from "@/components/kit/XBreadcrumb.vue";
 import XButton from "@/components/kit/XButton.vue";
 import XButtonGroup from "@/components/kit/XButtonGroup.vue";
 import XCard from "@/components/kit/XCard.vue";
@@ -12,6 +14,7 @@ import XIcon from "@/components/kit/XIcon.vue";
 import XKbd from "@/components/kit/XKbd.vue";
 import XSeparator from "@/components/kit/XSeparator.vue";
 import XSkeleton from "@/components/kit/XSkeleton.vue";
+import XTabs from "@/components/kit/XTabs.vue";
 
 describe("XButton", () => {
   it("默认 solid / md / primary，应用原子 buttonVariants", () => {
@@ -45,6 +48,14 @@ describe("XButton", () => {
     });
     expect(wrapper.find("[data-test='lead']").exists()).toBe(true);
     expect(wrapper.find("[data-test='trail']").exists()).toBe(true);
+  });
+
+  it("block 撑满宽度、square 使用方形尺寸", () => {
+    const block = mount(XButton, { props: { block: true }, slots: { default: "整行" } });
+    expect(block.classes()).toContain("w-full");
+
+    const square = mount(XButton, { props: { square: true, size: "lg" } });
+    expect(square.classes()).toContain("size-9");
   });
 
   it("原生事件透传", async () => {
@@ -187,6 +198,22 @@ describe("XSeparator", () => {
     expect(wrapper.attributes("data-slot")).toBe("separator");
     expect(wrapper.classes()).toContain("h-px");
   });
+
+  it("带标签时渲染标签与两条线", () => {
+    const wrapper = mount(XSeparator, { props: { label: "分区" } });
+    expect(wrapper.text()).toContain("分区");
+    expect(wrapper.findAll("span.flex-1").length).toBe(2);
+  });
+
+  it("position=start 只保留右侧线条", () => {
+    const wrapper = mount(XSeparator, { props: { label: "分区", position: "start" } });
+    expect(wrapper.findAll("span.flex-1").length).toBe(1);
+  });
+
+  it("虚线样式使用边框绘制", () => {
+    const wrapper = mount(XSeparator, { props: { type: "dashed" } });
+    expect(wrapper.classes()).toContain("border-dashed");
+  });
 });
 
 describe("XSkeleton", () => {
@@ -194,10 +221,83 @@ describe("XSkeleton", () => {
     const wrapper = mount(XSkeleton);
     expect(wrapper.find("[data-slot='skeleton']").exists()).toBe(true);
   });
-
   it("loading=false 渲染插槽内容", () => {
     const wrapper = mount(XSkeleton, { props: { loading: false }, slots: { default: "已加载" } });
     expect(wrapper.text()).toBe("已加载");
     expect(wrapper.find("[data-slot='skeleton']").exists()).toBe(false);
+  });
+});
+
+describe("XAvatar 文字头像与语义色", () => {
+  it("无图片时渲染 text 并应用语义色", () => {
+    const wrapper = mount(XAvatar, { props: { text: "张三", color: "primary" } });
+    expect(wrapper.text()).toContain("张三");
+    expect(wrapper.find(".bg-primary-1").exists()).toBe(true);
+  });
+
+  it("头像组向未指定颜色的子头像透传语义色", () => {
+    const wrapper = mount(XAvatarGroup, {
+      props: { color: "success" },
+      slots: { default: () => [h(XAvatar, { text: "A" }), h(XAvatar, { text: "B", color: "error" })] },
+    });
+    expect(wrapper.find(".bg-success-1").exists()).toBe(true);
+    expect(wrapper.find(".bg-error-1").exists()).toBe(true);
+  });
+});
+
+describe("XBadge square 与前后内容", () => {
+  it("square 模式宽度等于高度", () => {
+    const wrapper = mount(XBadge, { props: { square: true, size: "sm", count: 1 } });
+    expect(wrapper.classes()).toContain("w-5");
+    expect(wrapper.classes()).toContain("px-0");
+  });
+
+  it("渲染 leading 与 trailing 插槽", () => {
+    const wrapper = mount(XBadge, {
+      props: { count: 3 },
+      slots: { leading: "<i data-test='lead' />", trailing: "<i data-test='trail' />" },
+    });
+    expect(wrapper.find("[data-test='lead']").exists()).toBe(true);
+    expect(wrapper.find("[data-test='trail']").exists()).toBe(true);
+  });
+});
+
+describe("XBreadcrumb 图标分隔符与项图标", () => {
+  it("separator-icon 插槽优先于 separator 文本，项图标渲染在标题前", () => {
+    const wrapper = mount(XBreadcrumb, {
+      props: {
+        separator: "/",
+        items: [{ title: "首页", href: "/", icon: h("i", { "data-test": "home-icon" }) }, { title: "详情" }],
+      },
+      slots: { "separator-icon": () => h("i", { "data-test": "sep" }) },
+    });
+    expect(wrapper.find("[data-test='sep']").exists()).toBe(true);
+    expect(wrapper.find("[data-test='home-icon']").exists()).toBe(true);
+    expect(wrapper.text()).not.toContain("/");
+  });
+
+  it("labelKey 指定自定义标题字段", () => {
+    const wrapper = mount(XBreadcrumb, {
+      props: { labelKey: "name", items: [{ name: "工作台", href: "/" }, { name: "订单" }] },
+    });
+    expect(wrapper.text()).toContain("工作台");
+    expect(wrapper.text()).toContain("订单");
+  });
+});
+
+describe("XTabs 方向与尺寸", () => {
+  const items = [
+    { key: "a", label: "概览" },
+    { key: "b", label: "明细" },
+  ];
+
+  it("vertical 时根容器纵向标记", () => {
+    const wrapper = mount(XTabs, { props: { items, orientation: "vertical" } });
+    expect(wrapper.find("[data-orientation='vertical']").exists()).toBe(true);
+  });
+
+  it("size 控制标签尺寸", () => {
+    const wrapper = mount(XTabs, { props: { items, size: "lg" } });
+    expect(wrapper.html()).toContain("h-10");
   });
 });

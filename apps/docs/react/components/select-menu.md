@@ -10,10 +10,16 @@ description: 带搜索的增强选择器，支持多选与空状态
 <script setup>
 import SelectMenuBasic from '@demos/react/select-menu-basic'
 import selectMenuBasicRaw from '@demos/react/select-menu-basic.tsx.code.txt?raw'
+import SelectMenuClearable from '@demos/react/select-menu-clearable'
+import selectMenuClearableRaw from '@demos/react/select-menu-clearable.tsx.code.txt?raw'
 </script>
 
 <DemoBlock title="单选 / 搜索 / 多选 / 禁用" description="options / showSearch / multiple / disabled" :code="selectMenuBasicRaw">
   <ReactDemo :component="SelectMenuBasic" />
+</DemoBlock>
+
+<DemoBlock title="清空" description="clearable 有选中项时显示清空按钮，单选清为 ''，多选清为 []" :code="selectMenuClearableRaw">
+  <ReactDemo :component="SelectMenuClearable" />
 </DemoBlock>
 
 ## 安装
@@ -39,8 +45,10 @@ npx shadcn@latest add @ui-kit/x-input-time
 | multiple | boolean | false | 多选模式 |
 | showSearch | boolean | false | 是否支持搜索 |
 | placeholder | string | 请选择 | 占位提示文字 |
+| disabled | boolean | false | 是否禁用 |
+| clearable | boolean | false | 有选中项时显示清空按钮（单选清为 ''，多选清为 []） |
 | value / defaultValue | string · string[] | - | 选中值 |
-| onChange | (value) => void | - | 选中回调 |
+| onChange | (value) => void | - | 选中或清空回调 |
 
 ### XInputMenu
 
@@ -48,7 +56,11 @@ npx shadcn@latest add @ui-kit/x-input-time
 | --- | --- | --- | --- |
 | items | { label, value }[] | - | 菜单项数组 |
 | searchable | boolean | true | 是否可搜索 |
+| disabled | boolean | false | 是否禁用 |
+| clearable | boolean | false | 有选中项时显示清空按钮 |
+| createItem | boolean | false | 关键字不存在时回车创建新选项 |
 | onSelect | (item) => void | - | 选中回调 |
+| onCreate | (value) => void | - | 创建新选项回调 |
 
 ### XInputNumber
 

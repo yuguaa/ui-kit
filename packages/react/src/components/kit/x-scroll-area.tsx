@@ -10,6 +10,8 @@ export interface XScrollAreaProps {
   height?: number | string
   /** 滚动条显示时机 */
   type?: "auto" | "always" | "hover"
+  /** 滚动方向 */
+  orientation?: "vertical" | "horizontal" | "both"
   /** 滚动内容 */
   children?: React.ReactNode
   className?: string
@@ -20,7 +22,7 @@ export interface XScrollAreaApi {
 }
 
 export const XScrollArea = React.forwardRef<XScrollAreaApi, XScrollAreaProps>(function XScrollArea(
-  { height, type = "auto", children, className },
+  { height, type = "auto", orientation = "vertical", children, className },
   ref,
 ) {
   const viewportRef = React.useRef<HTMLDivElement>(null)
@@ -41,10 +43,19 @@ export const XScrollArea = React.forwardRef<XScrollAreaApi, XScrollAreaProps>(fu
       )}
       style={height != null ? { height } : undefined}
     >
-      <div ref={viewportRef} className="flex flex-col gap-1 p-1">
+      <div
+        ref={viewportRef}
+        className={cn(
+          "flex gap-1 p-1",
+          orientation === "vertical" && "flex-col",
+          orientation === "horizontal" && "w-max flex-row",
+          orientation === "both" && "w-max flex-col",
+        )}
+      >
         {children}
       </div>
-      <ScrollBar />
+      {orientation !== "horizontal" && <ScrollBar />}
+      {orientation !== "vertical" && <ScrollBar orientation="horizontal" />}
     </ScrollArea>
   )
 })
