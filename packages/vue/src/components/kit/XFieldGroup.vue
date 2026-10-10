@@ -1,65 +1,63 @@
-<script setup lang="ts">
-/**
- * XFieldGroup 字段组：将多个字段组合为一行或一组。
- * orientation 控制排列方向（horizontal 同行 / vertical 纵向堆叠），
- * inline 作为旧属性保留：未传 orientation 时由 inline 决定方向。
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { computed } from 'vue'
-import { Primitive } from 'reka-ui'
-import { cn } from '@/lib/utils'
+<script lang="ts">
+import type { VNode } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/field-group'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-type FieldGroupSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-type FieldGroupOrientation = 'horizontal' | 'vertical'
+type FieldGroup = ComponentConfig<typeof theme, AppConfig, 'fieldGroup'>
 
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface FieldGroupUi {
-  root?: string
+export interface FieldGroupProps {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
+  /**
+   * @defaultValue 'md'
+   */
+  size?: FieldGroup['variants']['size']
+  /**
+   * The orientation the buttons are laid out.
+   * @defaultValue 'horizontal'
+   */
+  orientation?: FieldGroup['variants']['orientation']
+  class?: any
+  ui?: { base?: any }
 }
 
-const props = withDefaults(defineProps<{
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 尺寸（控制字段间距） */
-  size?: FieldGroupSize
-  /** 排列方向 */
-  orientation?: FieldGroupOrientation
-  /** 旧属性：true 等价 orientation="horizontal"，false 等价 vertical */
-  inline?: boolean
-  /** 主题插槽类名 */
-  ui?: FieldGroupUi
-  class?: HTMLAttributes['class']
-}>(), {
-  size: 'md',
-  inline: true,
-})
-
-/** orientation 显式传入时优先，否则回退 inline 的旧语义 */
-const resolvedOrientation = computed<FieldGroupOrientation>(
-  () => props.orientation ?? (props.inline ? 'horizontal' : 'vertical'),
-)
-
-const gapClasses: Record<FieldGroupSize, string> = {
-  xs: 'gap-1',
-  sm: 'gap-2',
-  md: 'gap-3',
-  lg: 'gap-4',
-  xl: 'gap-5',
+export interface FieldGroupSlots {
+  default?(props?: {}): VNode[]
 }
 </script>
 
+<script setup lang="ts">
+import { provide, computed } from 'vue'
+import { Primitive } from 'reka-ui'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { fieldGroupInjectionKey } from '../../lib/nuxt/composables/useFieldGroup'
+import { tv } from '../../lib/nuxt/utils/tv'
+
+const _props = withDefaults(defineProps</* @vue-ignore */ FieldGroupProps>(), {
+  orientation: 'horizontal'
+})
+defineSlots</* @vue-ignore */ FieldGroupSlots>()
+
+const props = useComponentProps('fieldGroup', _props)
+
+const appConfig = useAppConfig() as FieldGroup['AppConfig']
+
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.fieldGroup || {}) }))
+
+provide(fieldGroupInjectionKey, computed(() => ({
+  orientation: props.orientation,
+  size: props.size
+})))
+</script>
+
 <template>
-  <Primitive
-    :as="as ?? 'div'"
-    :data-orientation="resolvedOrientation"
-    data-slot="root"
-    :class="cn(
-      resolvedOrientation === 'horizontal' ? 'flex items-start' : 'flex flex-col',
-      gapClasses[size],
-      props.ui?.root,
-      props.class,
-    )"
-  >
+  <Primitive :as="props.as" :data-orientation="props.orientation" :class="ui({ orientation: props.orientation, class: [props.ui?.base, props.class] })">
     <slot />
   </Primitive>
 </template>

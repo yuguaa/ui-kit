@@ -1,256 +1,357 @@
-<script setup lang="ts">
-/**
- * XScrollArea 滚动区域：内容溢出时可滚动的区域。
- * 结构对齐 Nuxt UI：root（自身滚动）→ viewport → item；支持 items 数组、虚拟滚动与边缘阴影。
- */
-import type { Component, CSSProperties, HTMLAttributes } from 'vue'
-import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
-import { useScroll } from '@vueuse/core'
-import { Primitive } from 'reka-ui'
-import { cn } from '@/lib/utils'
+<script lang="ts">
+import type { ComponentPublicInstance, CSSProperties, VNode } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import type { VirtualItem, VirtualizerOptions } from '@tanstack/vue-virtual'
+import theme from '@/lib/nuxt/ui/scroll-area'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface ScrollAreaUi {
-  root?: string
-  viewport?: string
-  item?: string
-}
+type ScrollArea = ComponentConfig<typeof theme, AppConfig, 'scrollArea'>
 
-/** 虚拟滚动配置 */
-export interface ScrollAreaVirtualizeOptions {
-  /** 每项沿滚动方向的估计尺寸（px），可传函数按索引估算，默认 100 */
+export interface ScrollAreaVirtualizeOptions extends Partial<Omit<
+  VirtualizerOptions<Element, Element>,
+  'count' | 'horizontal' | 'isRtl' | 'estimateSize' | 'lanes' | 'enabled'
+>> {
+  /**
+   * Virtualize against an external scroll element instead of the component's own root.
+   * Pair with `scrollMargin` set to the content's offset from the scroll element's start.
+   * @defaultValue undefined
+   */
+  getScrollElement?: () => Element | null
+  /**
+   * Estimated size (in px) of each item along the scroll axis. Can be a number or a function.
+   * @defaultValue 100
+   */
   estimateSize?: number | ((index: number) => number)
-  /** 可视区外预渲染的项数，默认 12 */
-  overscan?: number
-  /** 返回项 key */
-  getItemKey?: (index: number) => string | number
+  /**
+   * Number of lanes for multi-column/row layouts.
+   * For responsive lane counts, use a computed property with viewport/container size:
+   * @example
+   * ```ts
+   * const { width } = useWindowSize()
+   * const lanes = computed(() => Math.floor(width.value / 300))
+   * ```
+   * @defaultValue undefined
+   */
+  lanes?: number
+  /**
+   * Skip per-item DOM measurement for uniform-height items.
+   * When `true`, uses `estimateSize` only — significantly improving performance for uniform items.
+   * When `false` (default), measures each item for variable-height layouts (e.g., masonry).
+   * @defaultValue false
+   */
+  skipMeasurement?: boolean
 }
 
-defineOptions({ name: 'XScrollArea', inheritAttrs: false })
+export type ScrollAreaItem = any
 
-const props = withDefaults(defineProps<{
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 滚动方向 */
-  orientation?: 'vertical' | 'horizontal' | 'both'
-  /** 项数组 */
-  items?: any[]
-  /** 启用虚拟滚动 */
+export interface ScrollAreaProps<T extends ScrollAreaItem = ScrollAreaItem> {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
+  /**
+   * The scroll direction.
+   * @defaultValue 'vertical'
+   */
+  orientation?: ScrollArea['variants']['orientation']
+  /**
+   * Array of items to render.
+   */
+  items?: T[]
+  /**
+   * Enable virtualization for large lists.
+   * @see https://tanstack.com/virtual/latest/docs/api/virtualizer#options
+   * @defaultValue false
+   */
   virtualize?: boolean | ScrollAreaVirtualizeOptions
-  /** 滚动边缘阴影，对象形态可配置阴影尺寸 */
+  /**
+   * Display fade shadows on the scrollable edges to indicate more content.
+   * Pass an object to configure the shadow size (in px).
+   * @defaultValue false
+   */
   shadow?: boolean | { size?: number }
-  /** 区域高度 */
-  height?: number | string
-  /** 主题插槽类名 */
-  ui?: ScrollAreaUi
-  class?: HTMLAttributes['class']
-}>(), {
+  class?: any
+  ui?: ScrollArea['slots']
+}
+
+export interface ScrollAreaSlots<T extends ScrollAreaItem = ScrollAreaItem> {
+  default?(
+    props:
+      | { item: T, index: number, virtualItem?: VirtualItem }
+      | { item: T, index: 0 },
+  ): VNode[]
+}
+
+export interface ScrollAreaEmits {
+  /**
+   * Emitted when scroll state changes
+   * @param isScrolling - Whether the list is currently being scrolled
+   */
+  scroll: [isScrolling: boolean]
+}
+</script>
+
+<script setup lang="ts" generic="T extends ScrollAreaItem">
+import { computed, onUnmounted, toRef, useTemplateRef, watch } from 'vue'
+import { Primitive } from 'reka-ui'
+import { defu } from 'defu'
+import { useVirtualizer } from '@tanstack/vue-virtual'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { tv } from '../../lib/nuxt/utils/tv'
+import { useLocale } from '../../lib/nuxt/composables/useLocale'
+import { useScrollShadow } from '../../lib/nuxt/composables/useScrollShadow'
+
+const _props = withDefaults(defineProps</* @vue-ignore */ ScrollAreaProps<T>>(), {
   orientation: 'vertical',
   virtualize: false,
-  shadow: false,
+  shadow: false
+})
+defineSlots</* @vue-ignore */ ScrollAreaSlots<T>>()
+const emits = defineEmits</* @vue-ignore */ ScrollAreaEmits>()
+
+const props = useComponentProps<ScrollAreaProps<T>>('scrollArea', _props)
+
+const { dir } = useLocale()
+const appConfig = useAppConfig() as ScrollArea['AppConfig']
+
+// When an external scroll element is provided, it owns the scroll (the root grows inline).
+const isExternalScroll = computed(() => typeof props.virtualize === 'object' && !!props.virtualize.getScrollElement)
+
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.scrollArea || {}) })({
+  orientation: props.orientation,
+  externalScroll: isExternalScroll.value
+}))
+
+const rootRef = useTemplateRef<ComponentPublicInstance>('rootRef')
+
+const scrollShadowStyle = props.shadow
+  ? useScrollShadow(
+    computed(() => rootRef.value?.$el as HTMLElement | undefined),
+    {
+      orientation: () => props.orientation ?? 'vertical',
+      size: typeof props.shadow === 'object' ? props.shadow.size : undefined
+    }
+  ).style
+  : undefined
+
+const isRtl = computed(() => dir.value === 'rtl')
+const isHorizontal = computed(() => props.orientation === 'horizontal')
+const isVertical = computed(() => !isHorizontal.value)
+
+// The scroll viewport: the external element when provided, otherwise the component's root.
+const getScrollElement = () => (isExternalScroll.value ? virtualizerProps.value.getScrollElement?.() : rootRef.value?.$el) ?? null
+
+const virtualizerProps = toRef(() => {
+  const options = typeof props.virtualize === 'boolean' ? {} : props.virtualize
+
+  return defu(options, {
+    estimateSize: 100,
+    overscan: 12,
+    gap: 0,
+    paddingStart: 0,
+    paddingEnd: 0,
+    scrollMargin: 0
+  })
 })
 
-const emit = defineEmits<{
-  /** 滚动状态变化 */
-  scroll: [isScrolling: boolean]
-}>()
+const lanes = computed(() => {
+  const value = virtualizerProps.value.lanes
+  return typeof value === 'number' ? value : undefined
+})
 
-const rootEl = ref<HTMLElement>()
+const skipMeasurement = computed(() => {
+  return typeof props.virtualize === 'object' && props.virtualize.skipMeasurement === true
+})
 
-/** 函数 ref：兼容组件实例（取 $el）与普通元素 */
-function setRootRef(el: unknown) {
-  rootEl.value = (el as { $el?: HTMLElement } | null)?.$el ?? (el as HTMLElement | null) ?? undefined
+const virtualizer = !!props.virtualize && useVirtualizer({
+  ...virtualizerProps.value,
+  get overscan() {
+    return virtualizerProps.value.overscan
+  },
+  get gap() {
+    return virtualizerProps.value.gap
+  },
+  get paddingStart() {
+    return virtualizerProps.value.paddingStart
+  },
+  get paddingEnd() {
+    return virtualizerProps.value.paddingEnd
+  },
+  get scrollMargin() {
+    return virtualizerProps.value.scrollMargin
+  },
+  get lanes() {
+    return lanes.value
+  },
+  get isRtl() {
+    return isRtl.value
+  },
+  get count() {
+    return props.items?.length || 0
+  },
+  getScrollElement,
+  get horizontal() {
+    return isHorizontal.value
+  },
+  estimateSize: (index: number) => {
+    const estimate = virtualizerProps.value.estimateSize
+    return typeof estimate === 'function' ? estimate(index) : estimate
+  }
+})
+
+const virtualItems = computed<VirtualItem[]>(() => virtualizer ? virtualizer.value.getVirtualItems() : [])
+const totalSize = computed(() => virtualizer ? virtualizer.value.getTotalSize() : 0)
+
+const virtualViewportStyle = computed<CSSProperties>(() => ({
+  position: 'relative',
+  inlineSize: isHorizontal.value ? `${totalSize.value}px` : '100%',
+  blockSize: isVertical.value ? `${totalSize.value}px` : '100%'
+}))
+
+function getVirtualItemStyle(virtualItem: VirtualItem): CSSProperties {
+  const hasLanes = lanes.value !== undefined && lanes.value > 1
+  const lane = virtualItem.lane
+  const gap = virtualizerProps.value.gap ?? 0
+  // `start` includes `scrollMargin`; subtract it so items sit inline (0 unless set).
+  const offset = virtualItem.start - virtualizerProps.value.scrollMargin
+
+  // For cross-axis gaps: calculate size and position accounting for gaps between lanes
+  // laneSize = (100% - (lanes - 1) * gap) / lanes
+  // lanePosition = lane * (laneSize + gap)
+  const laneSize = hasLanes
+    ? `calc((100% - ${(lanes.value! - 1) * gap}px) / ${lanes.value})`
+    : '100%'
+  const lanePosition = hasLanes && lane !== undefined
+    ? `calc(${lane} * ((100% - ${(lanes.value! - 1) * gap}px) / ${lanes.value} + ${gap}px))`
+    : 0
+
+  return {
+    position: 'absolute',
+    insetBlockStart: isHorizontal.value && hasLanes ? lanePosition : 0,
+    insetInlineStart: isVertical.value && hasLanes ? lanePosition : 0,
+    blockSize: isHorizontal.value ? (hasLanes ? laneSize : '100%') : undefined,
+    inlineSize: isVertical.value ? (hasLanes ? laneSize : '100%') : undefined,
+    transform: isHorizontal.value
+      ? `translateX(${isRtl.value ? -offset : offset}px)`
+      : `translateY(${offset}px)`
+  }
 }
 
-const isVertical = computed(() => props.orientation !== 'horizontal')
+// Recalculate layout when the scroll viewport resizes (e.g. estimateSize depends on lane width).
+// Re-observe if the scroll element changes.
+let resizeObserver: ResizeObserver | null = null
+let rafId: number | null = null
 
-const heightStyle = computed<CSSProperties | undefined>(() =>
-  props.height != null ? { height: typeof props.height === 'number' ? `${props.height}px` : props.height } : undefined,
+watch(
+  getScrollElement,
+  (el) => {
+    resizeObserver?.disconnect()
+    resizeObserver = null
+    if (!virtualizer || !el) return
+    resizeObserver = new ResizeObserver(() => {
+      if (rafId !== null) return
+      rafId = requestAnimationFrame(() => {
+        rafId = null
+        virtualizer.value.measure()
+      })
+    })
+    resizeObserver.observe(el)
+  },
+  { immediate: true }
 )
 
-/* ============================ 滚动阴影 ============================ */
-
-const { arrivedState } = useScroll(rootEl, { throttle: 100 })
-
-const shadowStyle = computed<CSSProperties | undefined>(() => {
-  if (!props.shadow) return undefined
-  const el = rootEl.value
-  const size = `${typeof props.shadow === 'object' && props.shadow.size != null ? props.shadow.size : 24}px`
-  const horizontal = props.orientation === 'horizontal'
-  const showStart = horizontal ? !arrivedState.left : !arrivedState.top
-  const showEnd = horizontal ? !arrivedState.right : !arrivedState.bottom
-  if (!showStart && !showEnd) return undefined
-  const overflows = el
-    ? horizontal ? el.scrollWidth > el.clientWidth : el.scrollHeight > el.clientHeight
-    : false
-  if (!overflows) return undefined
-  const angle = horizontal ? '90deg' : '180deg'
-  if (showStart && showEnd) {
-    return { maskImage: `linear-gradient(${angle}, transparent, #000 ${size}, #000 calc(100% - ${size}), transparent)` }
+onUnmounted(() => {
+  if (rafId !== null) {
+    cancelAnimationFrame(rafId)
+    rafId = null
   }
-  if (showStart) {
-    return { maskImage: `linear-gradient(${angle}, transparent, #000 ${size})` }
-  }
-  return { maskImage: `linear-gradient(${angle}, #000, #000 calc(100% - ${size}), transparent)` }
-})
-
-/* ============================ 虚拟滚动 ============================ */
-
-const isVirtual = computed(() => !!props.virtualize)
-const virtualOptions = computed(() => (typeof props.virtualize === 'object' ? props.virtualize : {}))
-const count = computed(() => props.items?.length ?? 0)
-
-function estimateSize(index: number): number {
-  const estimate = virtualOptions.value.estimateSize ?? 100
-  return typeof estimate === 'function' ? estimate(index) : estimate
-}
-
-/** 当前项数组：虚拟分支与非虚拟分支统一使用 */
-const currentItems = computed<any[]>(() => props.items ?? [])
-/** 前缀和：prefix[i] 为前 i 项的累计尺寸 */
-const prefix = computed(() => {
-  const result: number[] = [0]
-  for (let i = 0; i < count.value; i++) result.push(result[i]! + estimateSize(i))
-  return result
-})
-
-const totalSize = computed(() => prefix.value[count.value] ?? 0)
-const scrollOffset = ref(0)
-const viewportSize = ref(0)
-const overscan = computed(() => virtualOptions.value.overscan ?? 12)
-
-function lowerBound(values: number[], target: number): number {
-  let lo = 0
-  let hi = values.length
-  while (lo < hi) {
-    const mid = (lo + hi) >> 1
-    if (values[mid]! < target) lo = mid + 1
-    else hi = mid
-  }
-  return lo
-}
-
-interface VirtualItem {
-  index: number
-  start: number
-  size: number
-}
-
-const virtualItems = computed<VirtualItem[]>(() => {
-  if (!isVirtual.value) return []
-  const startOffset = scrollOffset.value
-  const endOffset = startOffset + viewportSize.value
-  const start = Math.max(0, lowerBound(prefix.value, startOffset) - overscan.value)
-  const end = Math.min(count.value, lowerBound(prefix.value, endOffset) + overscan.value)
-  const result: VirtualItem[] = []
-  for (let i = start; i < end; i++) {
-    result.push({ index: i, start: prefix.value[i]!, size: estimateSize(i) })
-  }
-  return result
-})
-
-const virtualViewportStyle = computed<CSSProperties | undefined>(() => {
-  if (!isVirtual.value) return undefined
-  return isVertical.value
-    ? { position: 'relative', height: `${totalSize.value}px` }
-    : { position: 'relative', width: `${totalSize.value}px` }
-})
-
-function virtualItemStyle(item: VirtualItem): CSSProperties {
-  return isVertical.value
-    ? { position: 'absolute', top: `${item.start}px`, left: 0, right: 0, height: `${item.size}px` }
-    : { position: 'absolute', left: `${item.start}px`, top: 0, bottom: 0, width: `${item.size}px` }
-}
-
-function itemKey(item: any, index: number): string | number {
-  if (virtualOptions.value.getItemKey) return virtualOptions.value.getItemKey(index)
-  if (item && typeof item === 'object' && 'id' in item) return item.id
-  return index
-}
-
-/* ============================ 滚动状态 ============================ */
-
-let scrollTimer: ReturnType<typeof setTimeout> | undefined
-
-function onScroll() {
-  const el = rootEl.value
-  if (!el) return
-  scrollOffset.value = isVertical.value ? el.scrollTop : el.scrollLeft
-  viewportSize.value = isVertical.value ? el.clientHeight : el.clientWidth
-  if (scrollTimer == null) emit('scroll', true)
-  clearTimeout(scrollTimer)
-  scrollTimer = setTimeout(() => {
-    scrollTimer = undefined
-    emit('scroll', false)
-  }, 150)
-}
-
-let resizeObserver: ResizeObserver | null = null
-
-onMounted(() => {
-  onScroll()
-  resizeObserver = new ResizeObserver(() => onScroll())
-  if (rootEl.value) resizeObserver.observe(rootEl.value)
-})
-
-onBeforeUnmount(() => {
-  clearTimeout(scrollTimer)
   resizeObserver?.disconnect()
 })
 
-/** 滚动到指定位置（垂直为 top，水平为 left） */
-function scrollTo(position: number) {
-  if (!rootEl.value) return
-  if (isVertical.value) rootEl.value.scrollTo({ top: position })
-  else rootEl.value.scrollTo({ left: position })
+function measureElement(el: Element | ComponentPublicInstance | null) {
+  if (el && virtualizer && !skipMeasurement.value) {
+    const element = el instanceof Element ? el : (el as ComponentPublicInstance).$el as Element
+    virtualizer.value.measureElement(element)
+  }
 }
 
-defineExpose({ scrollTo })
+// Emit scroll state changes
+watch(
+  () => (virtualizer ? virtualizer.value.isScrolling : false),
+  isScrolling => emits('scroll', isScrolling)
+)
+
+function getItemKey(item: T, index: number) {
+  if (virtualizerProps.value.getItemKey) {
+    return virtualizerProps.value.getItemKey(index)
+  }
+  if (item && typeof item === 'object' && 'id' in item) {
+    return (item as any).id
+  }
+  return index
+}
+
+defineExpose({
+  get $el() {
+    return rootRef.value?.$el as HTMLElement
+  },
+  virtualizer: virtualizer || undefined
+})
 </script>
 
 <template>
   <Primitive
-    :ref="setRootRef"
-    v-bind="$attrs"
-    :as="as ?? 'div'"
-    :data-orientation="orientation"
+    ref="rootRef"
+    :as="props.as"
     data-slot="root"
-    :class="cn(
-      'relative outline-primary/25 focus-visible:outline-3',
-      orientation === 'vertical' && 'overflow-x-hidden overflow-y-auto',
-      orientation === 'horizontal' && 'overflow-x-auto overflow-y-hidden',
-      orientation === 'both' && 'overflow-auto',
-      ui?.root,
-      props.class,
-    )"
-    :style="[heightStyle, shadowStyle]"
-    @scroll="onScroll"
+    :data-orientation="props.orientation"
+    :class="ui.root({ class: [props.ui?.root, props.class] })"
+    :style="scrollShadowStyle"
   >
-    <div
-      v-if="isVirtual"
-      data-slot="viewport"
-      :class="cn('relative flex', isVertical ? 'flex-col' : 'flex-row', ui?.viewport)"
-      :style="virtualViewportStyle"
-    >
+    <template v-if="virtualizer">
       <div
-        v-for="virtualItem in virtualItems"
-        :key="itemKey(currentItems[virtualItem.index], virtualItem.index)"
-        :data-index="virtualItem.index"
-        data-slot="item"
-        :style="virtualItemStyle(virtualItem)"
-        :class="cn(ui?.item)"
+        data-slot="viewport"
+        :class="ui.viewport({ class: props.ui?.viewport })"
+        :style="virtualViewportStyle"
       >
-        <slot :item="currentItems[virtualItem.index]" :index="virtualItem.index" />
-      </div>
-    </div>
-
-    <div v-else data-slot="viewport" :class="cn('relative flex', isVertical ? 'flex-col' : 'flex-row', ui?.viewport)">
-      <template v-if="items">
-        <div v-for="(item, index) in items" :key="itemKey(item, index)" data-slot="item" :class="cn(ui?.item)">
-          <slot :item="item" :index="index" />
+        <div
+          v-for="virtualItem in virtualItems"
+          :key="String(virtualItem.key)"
+          :ref="measureElement"
+          :data-index="virtualItem.index"
+          data-slot="item"
+          :class="ui.item({ class: props.ui?.item })"
+          :style="getVirtualItemStyle(virtualItem)"
+        >
+          <slot
+            :item="(props.items?.[virtualItem.index] as T)"
+            :index="virtualItem.index"
+            :virtual-item="virtualItem"
+          />
         </div>
-      </template>
-      <slot v-else :item="{}" :index="0" />
-    </div>
+      </div>
+    </template>
+
+    <template v-else>
+      <div data-slot="viewport" :class="ui.viewport({ class: props.ui?.viewport })">
+        <template v-if="props.items">
+          <div
+            v-for="(item, index) in props.items"
+            :key="getItemKey(item, index)"
+            data-slot="item"
+            :class="ui.item({ class: props.ui?.item })"
+          >
+            <slot :item="item" :index="index" />
+          </div>
+        </template>
+
+        <template v-else>
+          <slot :item="({} as T)" :index="0" />
+        </template>
+      </div>
+    </template>
   </Primitive>
 </template>

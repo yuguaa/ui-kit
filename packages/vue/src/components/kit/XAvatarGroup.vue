@@ -1,100 +1,112 @@
-<script setup lang="ts">
-/**
- * XAvatarGroup 头像组：将多个头像重叠排列展示，超出 max 折叠为 +N。
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { computed, provide, useSlots } from 'vue'
-import { Primitive } from 'reka-ui'
-import { cn } from '@/lib/utils'
-import XAvatar from './XAvatar.vue'
-import {
-  XAvatarGroupColorKey,
-  XAvatarGroupSizeKey,
-  type AvatarColor,
-  type AvatarSize,
-} from './XAvatarGroupContext'
+<script lang="ts">
+import type { VNode } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/avatar-group'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface AvatarGroupUi {
-  root?: string
-  base?: string
-}
+type AvatarGroup = ComponentConfig<typeof theme, AppConfig, 'avatarGroup'>
 
-const props = defineProps<{
-  /** 最多显示数量，超出部分折叠为 +N */
+export interface AvatarGroupProps {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
+  /**
+   * @defaultValue 'md'
+   */
+  size?: AvatarGroup['variants']['size']
+  /**
+   * @defaultValue 'neutral'
+   */
+  color?: AvatarGroup['variants']['color']
+  /**
+   * The maximum number of avatars to display.
+   */
   max?: number | string
-  /** 头像尺寸，透传给未指定 size 的子头像 */
-  size?: AvatarSize
-  /** 透传给子头像的语义色（子头像自身指定 color 时不覆盖） */
-  color?: AvatarColor
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 主题插槽类名 */
-  ui?: AvatarGroupUi
-  class?: HTMLAttributes['class']
-}>()
-
-defineOptions({ name: 'XAvatarGroup', inheritAttrs: false })
-
-const slots = useSlots()
-
-/** 向子头像透传语义色与尺寸 */
-provide(XAvatarGroupColorKey, computed(() => props.color))
-provide(XAvatarGroupSizeKey, computed(() => props.size))
-
-/** base 环形描边与负边距（Nuxt avatar-group 主题按尺寸分档） */
-const baseSizeClasses: Record<AvatarSize, string> = {
-  xs: 'ring -me-0.5',
-  sm: 'ring-2 -me-1.5',
-  md: 'ring-2 -me-1.5',
-  lg: 'ring-2 -me-1.5',
-  xl: 'ring-3 -me-2',
+  class?: any
+  ui?: AvatarGroup['slots']
 }
 
-const baseClass = computed(() =>
-  cn('relative rounded-full ring-background', baseSizeClasses[props.size ?? 'md'], props.ui?.base),
-)
+export interface AvatarGroupSlots {
+  default?(props?: {}): VNode[]
+}
+</script>
 
-/** max 支持字符串，与 Nuxt 行为一致（parseInt） */
-const maxCount = computed(() => (typeof props.max === 'string' ? Number.parseInt(props.max, 10) : props.max))
+<script setup lang="ts">
+import { computed, provide } from 'vue'
+import { Primitive } from 'reka-ui'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { avatarGroupInjectionKey } from '../../lib/nuxt/composables/useAvatarGroup'
+import { tv } from '../../lib/nuxt/utils/tv'
+import XAvatar from './XAvatar.vue'
 
-/** 全部子节点、可见部分与溢出数量 */
+const _props = defineProps</* @vue-ignore */ AvatarGroupProps>()
+const slots = defineSlots</* @vue-ignore */ AvatarGroupSlots>()
+
+const props = useComponentProps('avatarGroup', _props)
+
+const appConfig = useAppConfig() as AvatarGroup['AppConfig']
+
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.avatarGroup || {}) })({
+  size: props.size,
+  color: props.color
+}))
+
+// eslint-disable-next-line vue/no-dupe-keys
+const max = computed(() => typeof props.max === 'string' ? Number.parseInt(props.max, 10) : props.max)
+
 const children = computed(() => {
-  const nodes = slots.default?.()
-  if (!nodes?.length) return []
-  return nodes
-    .flatMap((child: any) => {
-      /* v-if="false" 产生的注释节点不参与计数 */
+  let children = slots.default?.()
+  if (children?.length) {
+    children = children.flatMap((child: any) => {
       if (typeof child.type === 'symbol') {
-        if (typeof child.children === 'string') return []
+        // `v-if="false"` or commented node
+        if (typeof child.children === 'string') {
+          return
+        }
+
         return child.children
       }
+
       return child
-    })
-    .filter(Boolean)
+    }).filter(Boolean)
+  }
+
+  return children || []
 })
-const visibleNodes = computed(() => {
-  if (maxCount.value != null && maxCount.value > 0) return children.value.slice(0, maxCount.value)
-  return [...children.value]
+
+const visibleAvatars = computed(() => {
+  if (!children.value.length) {
+    return []
+  }
+
+  if (!max.value || max.value <= 0) {
+    return [...children.value].reverse()
+  }
+
+  return [...children.value].slice(0, max.value).reverse()
 })
-const reversedVisible = computed(() => [...visibleNodes.value].reverse())
-const overflowCount = computed(() => children.value.length - visibleNodes.value.length)
+
+const hiddenCount = computed(() => {
+  if (!children.value.length) {
+    return 0
+  }
+
+  return children.value.length - visibleAvatars.value.length
+})
+
+provide(avatarGroupInjectionKey, computed(() => ({
+  size: props.size,
+  color: props.color
+})))
 </script>
 
 <template>
-  <Primitive
-    :as="as ?? 'div'"
-    data-slot="root"
-    v-bind="$attrs"
-    :class="cn('inline-flex flex-row-reverse justify-end', props.ui?.root, props.class)"
-  >
-    <span v-if="overflowCount > 0" data-slot="base" :class="baseClass">
-      <slot name="plus">
-        <XAvatar :size="size ?? 'md'" :text="`+${overflowCount}`" />
-      </slot>
-    </span>
-    <span v-for="(node, index) in reversedVisible" :key="index" data-slot="base" :class="baseClass">
-      <component :is="node" />
-    </span>
+  <Primitive :as="props.as" data-slot="root" :class="ui.root({ class: [props.ui?.root, props.class] })">
+    <XAvatar v-if="hiddenCount > 0" :text="`+${hiddenCount}`" data-slot="base" :class="ui.base({ class: props.ui?.base })" />
+    <component :is="avatar" v-for="(avatar, count) in visibleAvatars" :key="count" data-slot="base" :class="ui.base({ class: props.ui?.base })" />
   </Primitive>
 </template>

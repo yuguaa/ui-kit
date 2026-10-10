@@ -1,375 +1,252 @@
-<script setup lang="ts">
-/**
- * XRadioGroup 单选框组:按 Nuxt UI radio-group 结构二次封装。
- * root > fieldset > legend + item(每项)> container > base(控件)+ indicator(选中圆点);
- * wrapper > label / icon / description。
- * 支持 legend 组标题、orientation 方向、字段映射(valueKey / labelKey / descriptionKey)、
- * indicator 位置与语义色;保留 button 变体紧凑展示。
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { computed, useId } from 'vue'
-import type { AcceptableValue } from 'reka-ui'
-import { RadioGroupIndicator, RadioGroupItem, RadioGroupRoot, Label as RekaLabel } from 'reka-ui'
-import { cn } from '@/lib/utils'
+<script lang="ts">
+import type { RadioGroupRootProps, RadioGroupRootEmits } from 'reka-ui'
+import type { VNode } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/radio-group'
+import type { IconProps } from './XIcon.vue'
+import type { AcceptableValue, GetItemKeys, GetModelValue, GetModelValueEmits } from '../../lib/nuxt/types/utils'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-type RadioGroupColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
-type RadioGroupVariant = 'radio' | 'button'
-type RadioGroupSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-type RadioGroupOrientation = 'horizontal' | 'vertical'
-type RadioGroupIndicator = 'start' | 'end' | 'hidden'
+type RadioGroup = ComponentConfig<typeof theme, AppConfig, 'radioGroup'>
 
-/** 单项覆盖的主题插槽类名 */
-export interface RadioGroupItemUi {
-  item?: string
-  container?: string
-  base?: string
-  indicator?: string
-  wrapper?: string
+export type RadioGroupValue = AcceptableValue
+
+export type RadioGroupItem = RadioGroupValue | {
   label?: string
-  icon?: string
   description?: string
-}
-
-/** 主题插槽类名,键名与 Nuxt UI 主题保持一致 */
-export interface RadioGroupUi {
-  root?: string
-  fieldset?: string
-  legend?: string
-  item?: string
-  container?: string
-  base?: string
-  indicator?: string
-  wrapper?: string
-  label?: string
-  icon?: string
-  description?: string
-}
-
-export interface RadioOption {
-  /** 选项的值 */
-  value?: string | number
-  /** 选项文字 */
-  label?: string
-  /** 选项文字下方的辅助说明 */
-  description?: string
-  /** 是否禁用 */
   disabled?: boolean
-  /** indicator 为 hidden 时显示在 label 上方的图标 */
-  icon?: Component
-  class?: HTMLAttributes['class']
-  /** 单项覆盖的主题插槽类名 */
-  ui?: RadioGroupItemUi
-  /** 业务字段,可通过 valueKey / labelKey / descriptionKey 映射 */
-  [key: string]: unknown
+  value?: RadioGroupValue
+  /**
+   * The icon displayed above the label when `indicator` is `hidden`.
+   * @IconifyIcon
+   */
+  icon?: IconProps['name']
+  class?: any
+  ui?: Partial<Pick<RadioGroup['slots'], 'item' | 'container' | 'base' | 'indicator' | 'wrapper' | 'label' | 'icon' | 'description'>>
+  [key: string]: any
 }
 
-/** 选中圆点的语义色 */
-const indicatorColorClasses: Record<RadioGroupColor, string> = {
-  primary: 'bg-primary',
-  secondary: 'bg-secondary',
-  neutral: 'bg-foreground',
-  success: 'bg-success',
-  info: 'bg-info',
-  warning: 'bg-warning',
-  error: 'bg-error',
-}
-
-/** highlight 常显聚焦环颜色 */
-const highlightClasses: Record<RadioGroupColor, string> = {
-  primary: 'ring-primary',
-  secondary: 'ring-secondary',
-  neutral: 'ring-foreground',
-  success: 'ring-success',
-  info: 'ring-info',
-  warning: 'ring-warning',
-  error: 'ring-error',
-}
-
-/** 尺寸:控件、圆点、容器高度、文字与间距 */
-const sizeClasses: Record<RadioGroupSize, { fieldset: string, legend: string, base: string, item: string, container: string, dot: string, icon: string, hiddenIcon: string }> = {
-  xs: { fieldset: 'gap-y-0.5', legend: 'text-xs', base: 'size-3', item: 'text-xs', container: 'h-4', dot: 'size-1', icon: 'size-1.5', hiddenIcon: 'size-3' },
-  sm: { fieldset: 'gap-y-0.5', legend: 'text-xs', base: 'size-3.5', item: 'text-xs', container: 'h-4', dot: 'size-1', icon: 'size-1.5', hiddenIcon: 'size-3.5' },
-  md: { fieldset: 'gap-y-1', legend: 'text-sm', base: 'size-4', item: 'text-sm', container: 'h-5', dot: 'size-1.5', icon: 'size-2', hiddenIcon: 'size-4' },
-  lg: { fieldset: 'gap-y-1', legend: 'text-sm', base: 'size-4.5', item: 'text-sm', container: 'h-5', dot: 'size-1.5', icon: 'size-2', hiddenIcon: 'size-4.5' },
-  xl: { fieldset: 'gap-y-1.5', legend: 'text-base', base: 'size-5', item: 'text-base', container: 'h-6', dot: 'size-2', icon: 'size-2.5', hiddenIcon: 'size-5' },
-}
-
-const props = withDefaults(defineProps<{
-  /** 选项数据源,字段名可通过 valueKey / labelKey / descriptionKey 映射 */
-  options: RadioOption[]
-  /** 组标题 */
+export interface RadioGroupProps<T extends RadioGroupItem[] = RadioGroupItem[], VK extends GetItemKeys<T> = 'value'> extends Pick<RadioGroupRootProps, 'disabled' | 'loop' | 'name' | 'required'> {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
   legend?: string
-  /** 排列方向 */
-  orientation?: RadioGroupOrientation
-  /** 取值字段名 */
-  valueKey?: string
-  /** 文字字段名 */
-  labelKey?: string
-  /** 辅助说明字段名 */
-  descriptionKey?: string
-  /** 选中圆点的语义色 */
-  color?: RadioGroupColor
-  /** 尺寸 */
-  size?: RadioGroupSize
-  /** 指示圆点位置,hidden 时图标显示在 label 上方 */
-  indicator?: RadioGroupIndicator
-  /** 常显高亮聚焦环 */
+  /**
+   * When `items` is an array of objects, select the field to use as the value.
+   * @defaultValue 'value'
+   */
+  valueKey?: VK
+  /**
+   * When `items` is an array of objects, select the field to use as the label.
+   * @defaultValue 'label'
+   */
+  labelKey?: GetItemKeys<T>
+  /**
+   * When `items` is an array of objects, select the field to use as the description.
+   * @defaultValue 'description'
+   */
+  descriptionKey?: GetItemKeys<T>
+  items?: T
+  /** The controlled value of the RadioGroup. Can be bind as `v-model`. */
+  modelValue?: GetModelValue<T, VK, false>
+  /** The value of the RadioGroup when initially rendered. Use when you do not need to control the state of the RadioGroup. */
+  defaultValue?: GetModelValue<T, VK, false>
+  /**
+   * @defaultValue 'md'
+   */
+  size?: RadioGroup['variants']['size']
+  /**
+   * @defaultValue 'list'
+   */
+  variant?: RadioGroup['variants']['variant']
+  /**
+   * @defaultValue 'primary'
+   */
+  color?: RadioGroup['variants']['color']
+  /** Highlight the ring color like a focus state. */
   highlight?: boolean
-  /** 必选项,legend 后显示 * */
-  required?: boolean
-  /** 整体禁用 */
-  disabled?: boolean
-  /** 展示形式 */
-  variant?: RadioGroupVariant
-  /** 按钮样式(仅 variant 为 button 时生效) */
-  buttonStyle?: 'outline' | 'solid'
-  /** 组 id,label 通过 for 关联单项 */
-  id?: string
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 主题插槽类名 */
-  ui?: RadioGroupUi
-  class?: HTMLAttributes['class']
-}>(), {
-  orientation: 'vertical',
-  valueKey: 'value',
+  /**
+   * The orientation the radio buttons are laid out.
+   * @defaultValue 'vertical'
+   */
+  orientation?: RadioGroup['variants']['orientation']
+  /**
+   * Position of the indicator.
+   * @defaultValue 'start'
+   */
+  indicator?: RadioGroup['variants']['indicator']
+  class?: any
+  ui?: RadioGroup['slots']
+}
+
+export type RadioGroupEmits<T extends RadioGroupItem[] = RadioGroupItem[], VK extends GetItemKeys<T> = 'value'> = Omit<RadioGroupRootEmits, 'update:modelValue'> & {
+  change: [event: Event]
+} & GetModelValueEmits<T, VK, false>
+
+type NormalizeItem<T extends RadioGroupItem> = Exclude<T & { id: string }, RadioGroupValue>
+
+type SlotProps<T extends RadioGroupItem> = (props: { item: NormalizeItem<T>, modelValue: RadioGroupValue }) => VNode[]
+
+export interface RadioGroupSlots<T extends RadioGroupItem[] = RadioGroupItem[]> {
+  legend?(props?: {}): VNode[]
+  label?: SlotProps<T[number]>
+  description?: SlotProps<T[number]>
+}
+</script>
+
+<script setup lang="ts" generic="T extends RadioGroupItem[], VK extends GetItemKeys<T> = 'value'">
+import { computed, useId } from 'vue'
+import { RadioGroupRoot, RadioGroupItem as RRadioGroupItem, RadioGroupIndicator, Label } from 'reka-ui'
+import { reactivePick } from '@vueuse/core'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
+import { useFormField } from '../../lib/nuxt/composables/useFormField'
+import { get } from '../../lib/nuxt/utils'
+import { tv } from '../../lib/nuxt/utils/tv'
+import XIcon from './XIcon.vue'
+
+const _props = withDefaults(defineProps</* @vue-ignore */ RadioGroupProps<T, VK>>(), {
+  valueKey: 'value' as never,
   labelKey: 'label',
   descriptionKey: 'description',
-  color: 'primary',
-  size: 'md',
-  indicator: 'start',
-  highlight: false,
-  required: false,
-  disabled: false,
-  variant: 'radio',
-  buttonStyle: 'outline',
+  orientation: 'vertical'
+})
+const emits = defineEmits</* @vue-ignore */ RadioGroupEmits<T, VK>>()
+const slots = defineSlots</* @vue-ignore */ RadioGroupSlots<T>>()
+
+const props = useComponentProps<RadioGroupProps<T, VK>>('radioGroup', _props)
+
+const appConfig = useAppConfig() as RadioGroup['AppConfig']
+
+const rootProps = useForwardProps(reactivePick(props, 'as', 'loop', 'required'), emits)
+
+const { emitFormChange, emitFormInput, color: formFieldColor, name, size: formFieldSize, highlight: formFieldHighlight, id: _id, disabled: formFieldDisabled, ariaAttrs } = useFormField<RadioGroupProps<T>>(_props, { bind: false })
+const id = _id.value ?? useId()
+
+// eslint-disable-next-line vue/no-dupe-keys
+const color = computed(() => formFieldColor.value ?? props.color)
+// eslint-disable-next-line vue/no-dupe-keys
+const highlight = computed(() => formFieldHighlight.value ?? props.highlight)
+// eslint-disable-next-line vue/no-dupe-keys
+const size = computed(() => formFieldSize.value ?? props.size)
+
+const disabled = computed(() => formFieldDisabled.value ?? props.disabled)
+
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.radioGroup || {}) })({
+  size: size.value,
+  color: color.value,
+  highlight: highlight.value,
+  disabled: disabled.value,
+  required: props.required,
+  orientation: props.orientation,
+  variant: props.variant,
+  indicator: props.indicator
+}))
+
+function normalizeItem(item: any) {
+  if (item === null) {
+    return {
+      id: `${id}:null`,
+      value: undefined,
+      label: undefined
+    }
+  }
+
+  if (typeof item === 'string' || typeof item === 'number' || typeof item === 'bigint') {
+    return {
+      id: `${id}:${item}`,
+      value: String(item),
+      label: String(item)
+    }
+  }
+
+  const value = get(item, props.valueKey as string)
+  const label = get(item, props.labelKey as string)
+  const description = get(item, props.descriptionKey as string)
+
+  return {
+    ...(item),
+    value,
+    label,
+    description,
+    id: `${id}:${value}`
+  }
+}
+
+const normalizedItems = computed(() => {
+  if (!props.items) {
+    return []
+  }
+
+  return props.items.map(normalizeItem)
 })
 
-const model = defineModel<AcceptableValue>()
-
-const emit = defineEmits<{ change: [event: Event] }>()
-
-const generatedId = useId()
-const resolvedId = computed(() => props.id ?? generatedId)
-
-function itemValue(option: RadioOption): string {
-  return String((option as Record<string, unknown>)[props.valueKey])
+// Mirrors `Checkbox`'s `labelIcon`: with the indicator hidden the icon has no box to sit in,
+// so it renders above the label instead.
+function labelIcon(item: any) {
+  return props.indicator === 'hidden' ? item.icon : undefined
 }
 
-function itemLabel(option: RadioOption): string | undefined {
-  const raw = (option as Record<string, unknown>)[props.labelKey]
-  return raw == null ? undefined : String(raw)
-}
-
-function itemDescription(option: RadioOption): string | undefined {
-  const raw = (option as Record<string, unknown>)[props.descriptionKey]
-  return raw == null ? undefined : String(raw)
-}
-
-function itemId(option: RadioOption): string {
-  return `${resolvedId.value}:${itemValue(option)}`
-}
-
-/** indicator 为 hidden 时图标渲染在 label 上方 */
-function labelIcon(option: RadioOption) {
-  return props.indicator === 'hidden' ? option.icon : undefined
-}
-
-function onUpdate(value: unknown) {
-  model.value = value as AcceptableValue
-  const event = new Event('change')
-  Object.defineProperty(event, 'target', { value: { value } })
-  emit('change', event)
-}
-
-const fieldsetClass = computed(() => cn(
-  'flex gap-x-2',
-  props.orientation === 'horizontal' ? 'flex-row flex-wrap' : 'flex-col',
-  sizeClasses[props.size].fieldset,
-  props.ui?.fieldset,
-))
-
-const legendClass = computed(() => cn(
-  'mb-1 block font-medium text-foreground',
-  sizeClasses[props.size].legend,
-  props.required && "after:content-['*'] after:ms-0.5 after:text-error",
-  props.ui?.legend,
-))
-
-function radioItemClass(option: RadioOption) {
-  return cn(
-    'flex items-start',
-    sizeClasses[props.size].item,
-    props.indicator === 'start' && 'flex-row',
-    props.indicator === 'end' && 'flex-row-reverse',
-    props.disabled && 'opacity-75',
-    props.ui?.item,
-    option.ui?.item,
-    option.class,
-  )
-}
-
-function radioContainerClass(option: RadioOption) {
-  return cn(
-    'flex items-center',
-    sizeClasses[props.size].container,
-    props.indicator === 'hidden' && 'h-auto',
-    props.ui?.container,
-    option.ui?.container,
-  )
-}
-
-function radioBaseClass(option: RadioOption) {
-  return cn(
-    'rounded-full ring-1 ring-inset overflow-hidden focus-visible:outline-none focus-visible:ring-3',
-    props.highlight ? cn('ring-2', highlightClasses[props.color]) : 'ring-input focus-visible:ring-ring/50',
-    sizeClasses[props.size].base,
-    props.indicator === 'hidden' && 'sr-only',
-    (option.disabled || props.disabled) && 'cursor-not-allowed',
-    props.ui?.base,
-    option.ui?.base,
-  )
-}
-
-function radioIndicatorClass(option: RadioOption) {
-  return cn(
-    'flex items-center justify-center size-full',
-    indicatorColorClasses[props.color],
-    props.ui?.indicator,
-    option.ui?.indicator,
-  )
-}
-
-function radioWrapperClass(option: RadioOption) {
-  return cn(
-    'w-full',
-    props.indicator === 'start' && 'ms-2',
-    props.indicator === 'end' && 'me-2',
-    props.indicator === 'hidden' && 'flex flex-col items-center gap-1 text-center',
-    props.ui?.wrapper,
-    option.ui?.wrapper,
-  )
-}
-
-function radioIconClass(option: RadioOption) {
-  return cn(
-    'shrink-0',
-    props.indicator === 'hidden' ? sizeClasses[props.size].hiddenIcon : sizeClasses[props.size].icon,
-    props.ui?.icon,
-    option.ui?.icon,
-  )
-}
-
-function radioLabelClass(option: RadioOption) {
-  return cn(
-    'block font-medium text-foreground',
-    (option.disabled || props.disabled) && 'cursor-not-allowed',
-    props.ui?.label,
-    option.ui?.label,
-  )
-}
-
-function radioDescriptionClass(option: RadioOption) {
-  return cn(
-    'text-muted-foreground',
-    (option.disabled || props.disabled) && 'cursor-not-allowed',
-    props.ui?.description,
-    option.ui?.description,
-  )
+function onUpdate(value: any) {
+  // @ts-expect-error - 'target' does not exist in type 'EventInit'
+  const event = new Event('change', { target: { value } })
+  emits('change', event)
+  emitFormChange()
+  emitFormInput()
 }
 </script>
 
 <template>
   <RadioGroupRoot
-    :as="as ?? 'div'"
-    :id="resolvedId"
-    :model-value="model"
+    :id="id"
+    v-bind="rootProps"
+    :model-value="(props.modelValue as Exclude<RadioGroupItem, boolean> | Exclude<RadioGroupItem, boolean>[])"
+    :default-value="(props.defaultValue as Exclude<RadioGroupItem, boolean> | Exclude<RadioGroupItem, boolean>[])"
+    :orientation="props.orientation"
+    :name="name"
     :disabled="disabled"
-    :orientation="orientation === 'horizontal' ? 'horizontal' : 'vertical'"
     data-slot="root"
-    :class="cn('relative', props.ui?.root, props.class)"
+    :class="ui.root({ class: [props.ui?.root, props.class] })"
     @update:model-value="onUpdate"
   >
-    <fieldset data-slot="fieldset" :class="fieldsetClass">
-      <legend v-if="legend || $slots.legend" data-slot="legend" :class="legendClass">
-        <slot name="legend">{{ legend }}</slot>
+    <fieldset data-slot="fieldset" :class="ui.fieldset({ class: props.ui?.fieldset })" v-bind="ariaAttrs">
+      <legend v-if="props.legend || !!slots.legend" data-slot="legend" :class="ui.legend({ class: props.ui?.legend })">
+        <slot name="legend">
+          {{ props.legend }}
+        </slot>
       </legend>
 
-      <RekaLabel
-        v-if="variant === 'button'"
-        v-for="option in options"
-        :key="itemValue(option)"
-        data-slot="item"
-        :class="cn(
-          'h-8 cursor-pointer items-center border px-3 text-sm transition-colors',
-          'first:rounded-l-lg last:rounded-r-lg [&:not(:first-child)]:border-l-0',
-          'has-[[data-state=checked]]:border-primary has-[[data-state=checked]]:bg-primary/10 has-[[data-state=checked]]:text-primary',
-          buttonStyle === 'solid' && 'has-[[data-state=checked]]:bg-primary has-[[data-state=checked]]:text-background',
-          'hover:bg-muted',
-          orientation === 'horizontal' ? 'inline-flex' : 'flex',
-          option.disabled && 'pointer-events-none opacity-50',
-          props.ui?.item,
-          option.ui?.item,
-          option.class,
-        )"
-      >
-        <RadioGroupItem
-          :value="itemValue(option)"
-          :disabled="option.disabled || disabled"
-          data-slot="base"
-          :class="cn('sr-only', props.ui?.base, option.ui?.base)"
-        />
-        {{ itemLabel(option) ?? option.value }}
-      </RekaLabel>
-
-      <div
-        v-else
-        v-for="option in options"
-        :key="itemValue(option)"
-        data-slot="item"
-        :class="radioItemClass(option)"
-      >
-        <div data-slot="container" :class="radioContainerClass(option)">
-          <RadioGroupItem
-            :id="itemId(option)"
-            :value="itemValue(option)"
-            :disabled="option.disabled || disabled"
+      <component :is="(!props.variant || props.variant === 'list') ? 'div' : Label" v-for="item in normalizedItems" :key="item.value" data-slot="item" :class="ui.item({ class: [props.ui?.item, item.ui?.item, item.class], disabled: item.disabled || disabled })">
+        <div data-slot="container" :class="ui.container({ class: [props.ui?.container, item.ui?.container] })">
+          <RRadioGroupItem
+            :id="item.id"
+            :value="item.value"
+            :disabled="item.disabled || disabled"
             data-slot="base"
-            :class="radioBaseClass(option)"
+            :class="ui.base({ class: [props.ui?.base, item.ui?.base], disabled: item.disabled || disabled })"
           >
-            <RadioGroupIndicator data-slot="indicator" :class="radioIndicatorClass(option)">
-              <span :class="cn('block rounded-full bg-white', sizeClasses[size].dot)" />
-            </RadioGroupIndicator>
-          </RadioGroupItem>
+            <RadioGroupIndicator data-slot="indicator" :class="ui.indicator({ class: [props.ui?.indicator, item.ui?.indicator] })" />
+          </RRadioGroupItem>
         </div>
 
-        <div
-          v-if="labelIcon(option) || itemLabel(option) != null || $slots.label || itemDescription(option) != null || $slots.description"
-          data-slot="wrapper"
-          :class="radioWrapperClass(option)"
-        >
-          <component v-if="labelIcon(option)" :is="labelIcon(option)" data-slot="icon" :class="radioIconClass(option)" />
-          <RekaLabel
-            v-if="itemLabel(option) != null || $slots.label"
-            :for="itemId(option)"
-            data-slot="label"
-            :class="radioLabelClass(option)"
-          >
-            <slot name="label" :item="option" :model-value="model">
-              {{ itemLabel(option) ?? option.value }}
+        <div v-if="labelIcon(item) || (item.label || !!slots.label) || (item.description || !!slots.description)" data-slot="wrapper" :class="ui.wrapper({ class: [props.ui?.wrapper, item.ui?.wrapper] })">
+          <XIcon v-if="labelIcon(item)" :name="labelIcon(item)" data-slot="icon" :class="ui.icon({ class: [props.ui?.icon, item.ui?.icon] })" />
+          <component :is="(!props.variant || props.variant === 'list') ? Label : 'p'" v-if="item.label || !!slots.label" :for="item.id" data-slot="label" :class="ui.label({ class: [props.ui?.label, item.ui?.label], disabled: item.disabled || disabled })">
+            <slot name="label" :item="item" :model-value="(props.modelValue as RadioGroupValue)">
+              {{ item.label }}
             </slot>
-          </RekaLabel>
-          <p
-            v-if="itemDescription(option) != null || $slots.description"
-            data-slot="description"
-            :class="radioDescriptionClass(option)"
-          >
-            <slot name="description" :item="option" :model-value="model">
-              {{ itemDescription(option) }}
+          </component>
+          <p v-if="item.description || !!slots.description" data-slot="description" :class="ui.description({ class: [props.ui?.description, item.ui?.description], disabled: item.disabled || disabled })">
+            <slot name="description" :item="item" :model-value="(props.modelValue as RadioGroupValue)">
+              {{ item.description }}
             </slot>
           </p>
         </div>
-      </div>
+      </component>
     </fieldset>
   </RadioGroupRoot>
 </template>

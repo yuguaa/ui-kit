@@ -1,129 +1,139 @@
-<script setup lang="ts">
-/**
- * XSplitter 分割面板：可拖拽调整大小的分栏面板。
- * 基于 reka-ui Splitter 原语，结构对齐 Nuxt UI：root → panel + handle 交替。
- * 支持 items 数组形态（任意数量面板）与 first / second 双面板便捷形态。
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { computed } from 'vue'
-import { SplitterGroup, SplitterPanel, SplitterResizeHandle } from 'reka-ui'
-import { cn } from '@/lib/utils'
+<!-- eslint-disable vue/block-tag-newline -->
+<script lang="ts">
+import type { SplitterGroupProps, SplitterGroupEmits, SplitterPanelProps, SplitterResizeHandleProps } from 'reka-ui'
+import type { VNode, ComponentPublicInstance } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/splitter'
+import type { DynamicSlots } from '../../lib/nuxt/types/utils'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface SplitterUi {
-  root?: string
-  panel?: string
-  handle?: string
-}
+type Splitter = ComponentConfig<typeof theme, AppConfig, 'splitter'>
 
-/** 分割面板项 */
-export interface SplitterPanelItem {
-  /** 面板 id，默认自动生成 */
+export interface SplitterItem extends Omit<SplitterPanelProps, 'as' | 'asChild'> {
+  /**
+   * A unique id for the panel. Also used as the Vue `key`. Defaults to an auto-generated id.
+   */
   id?: string
-  /** 初始尺寸（百分比） */
-  defaultSize?: number
-  /** 最小尺寸（百分比），默认 10 */
-  minSize?: number
-  /** 最大尺寸（百分比），默认 100 */
-  maxSize?: number
-  /** 拖拽越过最小尺寸一半时折叠 */
-  collapsible?: boolean
-  /** 折叠后的尺寸 */
-  collapsedSize?: number
-  /** 尺寸单位 */
-  sizeUnit?: '%' | 'px'
-  /** 内容插槽名，默认 panel-{index} */
   slot?: string
-  class?: HTMLAttributes['class']
-  ui?: { panel?: string }
+  class?: any
+  ui?: Partial<Pick<Splitter['slots'], 'panel'>>
   [key: string]: any
 }
 
-defineOptions({ name: 'XSplitter', inheritAttrs: false })
-
-const props = withDefaults(defineProps<{
-  /** 方向 */
-  orientation?: 'horizontal' | 'vertical'
-  /** 面板数组；未提供时使用 first / second 双面板形态 */
-  items?: SplitterPanelItem[]
-  /** 锁定全部拖拽 */
-  disabled?: boolean
-  /** 分组 id，同时用于派生面板与拖拽条 id */
+export interface SplitterProps<T extends SplitterItem = SplitterItem> extends Pick<SplitterGroupProps, 'autoSaveId' | 'keyboardResizeBy' | 'storage'>, Pick<SplitterResizeHandleProps, 'hitAreaMargins'> {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
+  /**
+   * A unique id for the group, also used to derive the ids of its panels and handles.
+   * Set it when rendering on the server, auto-generated ids can differ between the server and the client and break resizing on hydration.
+   */
   id?: string
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 主题插槽类名 */
-  ui?: SplitterUi
-  /** 双面板形态：最小尺寸（百分比） */
-  minSize?: number
-  /** 双面板形态：默认尺寸（百分比） */
-  defaultSize?: number
-  /** 双面板形态：受控尺寸（百分比） */
-  size?: number
-  /** 双面板形态：拖拽越过边界时折叠对应面板 */
-  collapsible?: boolean
-  class?: HTMLAttributes['class']
-}>(), {
-  orientation: 'horizontal',
-  disabled: false,
-  minSize: 20,
-  defaultSize: 50,
-  collapsible: false,
-})
+  /**
+   * The orientation of the splitter.
+   * @defaultValue 'horizontal'
+   */
+  orientation?: Splitter['variants']['orientation']
+  items?: T[]
+  /**
+   * Whether the resize handles are disabled, locking the current layout.
+   * @defaultValue false
+   */
+  disabled?: boolean
+  class?: any
+  ui?: Splitter['slots']
+}
 
-const emit = defineEmits<{
-  /** 布局变化 */
-  layout: [sizes: number[]]
-  /** 面板折叠 */
+export interface SplitterEmits {
+  layout: SplitterGroupEmits['layout']
   collapse: [index: number]
-  /** 面板展开 */
   expand: [index: number]
-  /** 面板尺寸变化 */
   resize: [index: number, size: number, prevSize?: number]
-  /** 拖拽状态变化 */
   dragging: [index: number, dragging: boolean]
-}>()
+}
 
-/** 双面板便捷形态：first / second 插槽映射为两个面板项 */
-const internalItems = computed<SplitterPanelItem[]>(() => {
-  if (props.items) return props.items
-  return [
-    {
-      defaultSize: props.size ?? props.defaultSize,
-      minSize: props.minSize,
-      collapsible: props.collapsible,
-      slot: 'first',
-    },
-    {
-      collapsible: props.collapsible,
-      slot: 'second',
-    },
-  ]
+type PanelSlotProps = {
+  index: number
+  collapsed: boolean
+  collapse: () => void
+  expand: () => void
+  resize: (size: number) => void
+  ui: Splitter['ui']
+}
+type SlotProps<T extends SplitterItem> = (props: { item: T } & PanelSlotProps) => VNode[]
+
+export type SplitterSlots<T extends SplitterItem = SplitterItem> = {
+  'resize-handle'?: (props: { index: number, ui: Splitter['ui'] }) => VNode[]
+} & DynamicSlots<T, undefined, PanelSlotProps> & {
+  [key: `panel-${number}`]: SlotProps<T> | undefined
+}
+
+</script>
+
+<script setup lang="ts" generic="T extends SplitterItem">
+import { ref, computed, onBeforeUpdate } from 'vue'
+import { SplitterGroup, SplitterPanel, SplitterResizeHandle } from 'reka-ui'
+import { reactivePick } from '@vueuse/core'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
+import { tv } from '../../lib/nuxt/utils/tv'
+
+const _props = withDefaults(defineProps</* @vue-ignore */ SplitterProps<T>>(), {
+  orientation: 'horizontal'
+})
+const emits = defineEmits</* @vue-ignore */ SplitterEmits>()
+defineSlots</* @vue-ignore */ SplitterSlots<T>>()
+
+const props = useComponentProps<SplitterProps<T>>('splitter', _props)
+
+const appConfig = useAppConfig() as Splitter['AppConfig']
+
+const rootProps = useForwardProps(reactivePick(props, 'as', 'id', 'autoSaveId', 'keyboardResizeBy', 'storage'))
+
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.splitter || {}) })({
+  orientation: props.orientation
+}))
+
+const panelsRef = ref<InstanceType<typeof SplitterPanel>[]>([])
+
+// Refs are rebuilt on every render, otherwise removing an item would leave the panel
+// that took its index behind as `null` since the unmounted panel resets it afterwards.
+onBeforeUpdate(() => {
+  panelsRef.value.length = 0
 })
 
-/** 面板 id 由分组 id 派生，保证服务端与客户端一致 */
-function getPanelId(item: SplitterPanelItem, index: number) {
+// Panels and handles are matched through their ids, so they have to be derived from the
+// group id to stay identical between the server and the client.
+function getPanelId(item: T, index: number) {
   return item.id ?? (props.id ? `${props.id}-panel-${index}` : undefined)
 }
 
 function getHandleId(index: number) {
   return props.id ? `${props.id}-handle-${index}` : undefined
 }
+
+function setPanelRef(index: number, el: Element | ComponentPublicInstance | null) {
+  if (el) {
+    // @ts-expect-error - ComponentPublicInstance type mismatch in Nuxt module augmentation
+    panelsRef.value[index] = el
+  }
+}
+
+defineExpose({
+  panelsRef
+})
 </script>
 
 <template>
-  <SplitterGroup
-    v-bind="$attrs"
-    :id="id"
-    :as="as"
-    :direction="orientation"
-    data-slot="root"
-    :class="cn('flex w-full', ui?.root, props.class)"
-    @layout="(sizes: number[]) => emit('layout', sizes)"
-  >
-    <template v-for="(item, index) in internalItems" :key="item.id ?? index">
+  <SplitterGroup v-bind="rootProps" :direction="props.orientation!" data-slot="root" :class="ui.root({ class: [props.ui?.root, props.class] })" @layout="emits('layout', $event)">
+    <template v-for="(item, index) in props.items" :key="item.id ?? index">
       <SplitterPanel
         :id="getPanelId(item, index)"
+        :ref="(el) => setPanelRef(index, el)"
         v-slot="{ isCollapsed, collapse, expand, resize }"
         :default-size="item.defaultSize"
         :min-size="item.minSize"
@@ -131,36 +141,35 @@ function getHandleId(index: number) {
         :collapsible="item.collapsible"
         :collapsed-size="item.collapsedSize"
         :size-unit="item.sizeUnit"
+        :order="item.order"
         data-slot="panel"
-        :class="cn('flex min-h-0 min-w-0', ui?.panel, item.ui?.panel, item.class)"
-        @collapse="emit('collapse', index)"
-        @expand="emit('expand', index)"
-        @resize="(size: number, prevSize?: number) => emit('resize', index, size, prevSize)"
+        :class="ui.panel({ class: [props.ui?.panel, item.ui?.panel, item.class] })"
+        @collapse="emits('collapse', index)"
+        @expand="emits('expand', index)"
+        @resize="(size, prevSize) => emits('resize', index, size, prevSize)"
       >
         <slot
-          :name="(item.slot ?? `panel-${index}`) as string"
-          :item="item"
+          :name="((item.slot || `panel-${index}`) as keyof SplitterSlots<T>)"
+          :item="(item as Extract<T, { slot: string }>)"
           :index="index"
           :collapsed="isCollapsed"
           :collapse="collapse"
           :expand="expand"
           :resize="resize"
+          :ui="ui"
         />
       </SplitterPanel>
 
       <SplitterResizeHandle
-        v-if="index < internalItems.length - 1"
+        v-if="index < props.items!.length - 1"
         :id="getHandleId(index)"
-        :disabled="disabled"
+        :disabled="props.disabled"
+        :hit-area-margins="props.hitAreaMargins"
         data-slot="handle"
-        :class="cn(
-          'group relative shrink-0 focus-visible:outline-2 focus-visible:outline-primary data-[panel-resize-handle-enabled=false]:cursor-default',
-          orientation === 'horizontal' ? 'w-2 cursor-col-resize' : 'h-2 cursor-row-resize',
-          ui?.handle,
-        )"
-        @dragging="(dragging: boolean) => emit('dragging', index, dragging)"
+        :class="ui.handle({ class: props.ui?.handle })"
+        @dragging="(dragging) => emits('dragging', index, dragging)"
       >
-        <slot name="resize-handle" :index="index" />
+        <slot name="resize-handle" :index="index" :ui="ui" />
       </SplitterResizeHandle>
     </template>
   </SplitterGroup>

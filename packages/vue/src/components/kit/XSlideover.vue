@@ -1,269 +1,232 @@
-<script setup lang="ts">
-/**
- * XSlideover 侧滑面板：与 Nuxt UI Slideover 对齐的侧边滑入面板。
- * 属性、插槽与 ui 主题插槽键（overlay / content / header / wrapper / body / footer / title / description / close）一比一对应。
- * 支持 side 四向、inset 内嵌与 dismissible 关闭策略。
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { computed, useSlots } from 'vue'
-import { XIcon } from '@lucide/vue'
-import {
-  DialogClose,
-  DialogContent,
-  DialogDescription,
-  DialogOverlay,
-  DialogPortal,
-  DialogRoot,
-  DialogTitle,
-  DialogTrigger,
-  VisuallyHidden,
-} from 'reka-ui'
-import XButton from '@/components/kit/XButton.vue'
-import { cn } from '@/lib/utils'
+<script lang="ts">
+import type { DialogRootProps, DialogRootEmits, DialogContentProps, DialogContentEmits } from 'reka-ui'
+import type { VNode } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/slideover'
+import type { ButtonProps } from './XButton.vue'
+import type { IconProps } from './XIcon.vue'
+import type { LinkPropsKeys } from './XLink.vue'
+import type { EmitsToProps } from '../../lib/nuxt/types/utils'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-/** close 为对象时透传给关闭按钮的属性 */
-export type SlideoverClose = boolean | {
-  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-  color?: 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
-  variant?: 'solid' | 'outline' | 'soft' | 'ghost' | 'subtle' | 'link'
-}
+type Slideover = ComponentConfig<typeof theme, AppConfig, 'slideover'>
 
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface SlideoverUi {
-  overlay?: string
-  content?: string
-  header?: string
-  wrapper?: string
-  body?: string
-  footer?: string
+export interface SlideoverProps extends DialogRootProps {
   title?: string
   description?: string
-  close?: string
-}
-
-const props = withDefaults(defineProps<{
-  /** 标题 */
-  title?: string
-  /** 辅助说明 */
-  description?: string
-  /** 是否打开（支持 v-model:open） */
-  open?: boolean
-  /** 初始是否打开 */
-  defaultOpen?: boolean
-  /** 模态：聚焦锁定与遮罩拦截 */
-  modal?: boolean
-  /** 关闭后卸载内容 */
-  unmountOnHide?: boolean
-  /** 渲染遮罩 */
+  /** The content of the slideover. */
+  content?: Omit<DialogContentProps, 'as' | 'asChild' | 'forceMount'> & Partial<EmitsToProps<DialogContentEmits>>
+  /**
+   * Render an overlay behind the slideover.
+   * @defaultValue true
+   */
   overlay?: boolean
-  /** 开关动画 */
+  /**
+   * Animate the slideover when opening or closing.
+   * @defaultValue true
+   */
   transition?: boolean
-  /** 滑入方向 */
-  side?: 'top' | 'right' | 'bottom' | 'left'
-  /** 与屏幕边缘保留间距 */
+  /**
+   * The side of the slideover.
+   * @defaultValue 'right'
+   */
+  side?: Slideover['variants']['side']
+  /**
+   * Whether to inset the slideover from the edges.
+   * @defaultValue false
+   */
   inset?: boolean
-  /** 渲染到 body */
-  portal?: boolean
-  /** 显示关闭按钮 */
-  close?: SlideoverClose
-  /** 关闭按钮图标 */
-  closeIcon?: Component
-  /** 允许点击外部或按 Esc 关闭 */
+  /**
+   * Render the slideover in a portal.
+   * @defaultValue true
+   */
+  portal?: boolean | string | HTMLElement
+  /**
+   * Display a close button to dismiss the slideover.
+   * `{ size: 'md', color: 'neutral', variant: 'ghost' }`{lang="ts-type"}
+   * @defaultValue true
+   */
+  close?: boolean | Omit<ButtonProps, LinkPropsKeys>
+  /**
+   * The icon displayed in the close button.
+   * @defaultValue appConfig.ui.icons.close
+   * @IconifyIcon
+   */
+  closeIcon?: IconProps['name']
+  /**
+   * When `false`, the slideover will not close when clicking outside or pressing escape.
+   * @defaultValue true
+   */
   dismissible?: boolean
-  class?: HTMLAttributes['class']
-  /** 主题插槽类名 */
-  ui?: SlideoverUi
-}>(), {
-  open: undefined,
-  modal: true,
-  overlay: true,
-  transition: true,
-  side: 'right',
-  inset: false,
-  portal: true,
-  close: true,
-  dismissible: true,
-})
+  class?: any
+  ui?: Slideover['slots']
+}
 
-const emit = defineEmits<{
-  /** 打开状态变化回调 */
-  'update:open': [open: boolean]
-  /** 关闭被阻止（dismissible 为 false 时点击外部或按 Esc） */
+export interface SlideoverEmits extends DialogRootEmits {
+  'leave': []
+  'after:leave': []
+  'enter': []
+  'after:enter': []
   'close:prevent': []
-}>()
+}
 
-defineOptions({ name: 'XSlideover', inheritAttrs: false })
-
-const slots = useSlots()
-
-/** dismissible 为 false 时阻止外部点击与 Esc 关闭 */
-const contentEvents = computed(() => {
-  if (props.dismissible) return {}
-  return {
-    interactOutside: (event: Event) => {
-      event.preventDefault()
-      emit('close:prevent')
-    },
-    escapeKeyDown: (event: Event) => {
-      event.preventDefault()
-      emit('close:prevent')
-    },
-  }
-})
-
-const showHeader = computed(
-  () =>
-    !!slots.header ||
-    props.title != null ||
-    !!slots.title ||
-    props.description != null ||
-    !!slots.description ||
-    Boolean(props.close) ||
-    !!slots.close,
-)
-
-/** 内容面板定位：side + inset 组合 */
-const contentPositionClass = computed(() => {
-  const positionMap: Record<'top' | 'right' | 'bottom' | 'left', { inset: string; plain: string }> = {
-    top: {
-      plain: 'inset-x-0 top-0 max-h-full',
-      inset: 'inset-x-4 top-4 max-h-[calc(100%-2rem)]',
-    },
-    right: {
-      plain: 'inset-y-0 right-0 w-full max-w-md',
-      inset: 'inset-y-4 right-4 w-[calc(100%-2rem)]',
-    },
-    bottom: {
-      plain: 'inset-x-0 bottom-0 max-h-full',
-      inset: 'inset-x-4 bottom-4 max-h-[calc(100%-2rem)]',
-    },
-    left: {
-      plain: 'inset-y-0 left-0 w-full max-w-md',
-      inset: 'inset-y-4 left-4 w-[calc(100%-2rem)]',
-    },
-  }
-  return props.inset ? positionMap[props.side].inset : positionMap[props.side].plain
-})
-
-/** 内容面板进出场动画方向 */
-const contentAnimationClass = computed(() => {
-  const animationMap: Record<'top' | 'right' | 'bottom' | 'left', string> = {
-    top: 'data-[side=top]:data-[state=open]:slide-in-from-top data-[side=top]:data-[state=closed]:slide-out-to-top',
-    right: 'data-[side=right]:data-[state=open]:slide-in-from-right data-[side=right]:data-[state=closed]:slide-out-to-right',
-    bottom: 'data-[side=bottom]:data-[state=open]:slide-in-from-bottom data-[side=bottom]:data-[state=closed]:slide-out-to-bottom',
-    left: 'data-[side=left]:data-[state=open]:slide-in-from-left data-[side=left]:data-[state=closed]:slide-out-to-left',
-  }
-  return animationMap[props.side]
-})
+export interface SlideoverSlots {
+  default?(props: { open: boolean }): VNode[]
+  content?(props: { close: () => void }): VNode[]
+  header?(props: { close: () => void }): VNode[]
+  title?(props?: {}): VNode[]
+  description?(props?: {}): VNode[]
+  actions?(props?: {}): VNode[]
+  close?(props: { ui: Slideover['ui'] }): VNode[]
+  body?(props: { close: () => void }): VNode[]
+  footer?(props: { close: () => void }): VNode[]
+}
 </script>
 
+<script setup lang="ts">
+import { computed, toRef } from 'vue'
+import { DialogRoot, DialogTrigger, DialogPortal, DialogOverlay, DialogContent, DialogTitle, DialogDescription, DialogClose, VisuallyHidden } from 'reka-ui'
+import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
+import { reactivePick } from '@vueuse/core'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { FieldGroupReset } from '../../lib/nuxt/composables/useFieldGroup'
+import { useLocale } from '../../lib/nuxt/composables/useLocale'
+import { usePortal } from '../../lib/nuxt/composables/usePortal'
+import { pointerDownOutside } from '../../lib/nuxt/utils/overlay'
+import { tv } from '../../lib/nuxt/utils/tv'
+import XButton from './XButton.vue'
+
+const _props = withDefaults(defineProps</* @vue-ignore */ SlideoverProps>(), {
+  close: true,
+  portal: true,
+  overlay: true,
+  transition: true,
+  modal: true,
+  dismissible: true,
+  side: 'right'
+})
+const emits = defineEmits</* @vue-ignore */ SlideoverEmits>()
+const slots = defineSlots</* @vue-ignore */ SlideoverSlots>()
+
+const props = useComponentProps('slideover', _props)
+
+const { t } = useLocale()
+const appConfig = useAppConfig() as Slideover['AppConfig']
+
+const rootProps = useForwardProps(reactivePick(props, 'open', 'defaultOpen', 'modal', 'unmountOnHide'), emits)
+const portalProps = usePortal(toRef(() => props.portal))
+const contentProps = toRef(() => props.content)
+const contentEvents = computed(() => {
+  if (!props.dismissible) {
+    const events = ['interactOutside', 'escapeKeyDown']
+
+    return events.reduce((acc, curr) => {
+      acc[curr] = (e: Event) => {
+        e.preventDefault()
+        emits('close:prevent')
+      }
+      return acc
+    }, {} as Record<typeof events[number], (e: Event) => void>)
+  }
+
+  return {
+    pointerDownOutside
+  }
+})
+
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.slideover || {}) })({
+  transition: props.transition,
+  side: props.side,
+  inset: props.inset
+}))
+</script>
+
+<!-- eslint-disable vue/no-template-shadow -->
 <template>
-  <DialogRoot
-    :open="props.open"
-    :default-open="props.defaultOpen"
-    :modal="props.modal"
-    :unmount-on-hide="props.unmountOnHide"
-    @update:open="(next: boolean) => emit('update:open', next)"
-  >
-    <DialogTrigger v-if="slots.default" as-child :class="props.class" v-bind="$attrs">
-      <slot />
+  <DialogRoot v-slot="{ open, close }" v-bind="rootProps">
+    <DialogTrigger v-if="!!slots.default" as-child :class="props.class">
+      <slot :open="open" />
     </DialogTrigger>
 
-    <DialogPortal :disabled="!props.portal">
-      <DialogOverlay
-        v-if="props.overlay"
-        data-slot="overlay"
-        :class="cn(
-          'fixed inset-0 z-50 bg-black/50',
-          props.transition && 'data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=closed]:animate-out data-[state=closed]:fade-out-0',
-          props.ui?.overlay,
-        )"
-      />
+    <DialogPortal v-bind="portalProps" :force-mount="(portalProps.disabled && props.unmountOnHide === false) || undefined">
+      <FieldGroupReset>
+        <DialogOverlay v-if="props.overlay" data-slot="overlay" :class="ui.overlay({ class: props.ui?.overlay })" />
 
-      <DialogContent
-        data-slot="content"
-        :data-side="props.side"
-        :class="cn(
-          'bg-background divide-y divide-border sm:ring-1 ring-border sm:shadow-lg flex flex-col focus:outline-none fixed z-50',
-          props.inset && 'rounded-lg',
-          contentPositionClass,
-          props.transition && cn(
-            'data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=closed]:animate-out data-[state=closed]:fade-out-0',
-            contentAnimationClass,
-          ),
-          !slots.default && props.class,
-          props.ui?.content,
-        )"
-        v-on="contentEvents"
-      >
-        <VisuallyHidden
-          v-if="(props.title == null && !slots.title) || (props.description == null && !slots.description) || !!slots.content || !!slots.header"
+        <DialogContent
+          :data-side="props.side"
+          data-slot="content"
+          :class="ui.content({ class: [!slots.default && props.class, props.ui?.content] })"
+          v-bind="contentProps"
+          @enter="emits('enter')"
+          @after-enter="emits('after:enter')"
+          @leave="emits('leave')"
+          @after-leave="emits('after:leave')"
+          v-on="contentEvents"
         >
-          <DialogTitle v-if="props.title == null && !slots.title" />
-          <DialogTitle v-else>
-            <slot name="title">{{ props.title }}</slot>
-          </DialogTitle>
+          <VisuallyHidden v-if="(!props.title && !slots.title) || (!props.description && !slots.description) || !!slots.content">
+            <DialogTitle v-if="!props.title && !slots.title" />
+            <DialogTitle v-else-if="!!slots.content">
+              <slot name="title">
+                {{ props.title }}
+              </slot>
+            </DialogTitle>
 
-          <DialogDescription v-if="props.description == null && !slots.description" />
-          <DialogDescription v-else>
-            <slot name="description">{{ props.description }}</slot>
-          </DialogDescription>
-        </VisuallyHidden>
+            <DialogDescription v-if="!props.description && !slots.description" />
+            <DialogDescription v-else-if="!!slots.content">
+              <slot name="description">
+                {{ props.description }}
+              </slot>
+            </DialogDescription>
+          </VisuallyHidden>
 
-        <slot name="content">
-          <div
-            v-if="showHeader"
-            data-slot="header"
-            :class="cn('flex items-center gap-1.5 p-4 sm:px-6', props.ui?.header)"
-          >
-            <slot name="header">
-              <div v-if="props.title != null || !!slots.title || props.description != null || !!slots.description" data-slot="wrapper" :class="cn('min-w-0 flex-1', props.ui?.wrapper)">
-                <DialogTitle
-                  v-if="props.title != null || !!slots.title"
-                  data-slot="title"
-                  :class="cn('text-foreground font-semibold', props.ui?.title)"
-                >
-                  <slot name="title">{{ props.title }}</slot>
-                </DialogTitle>
+          <slot name="content" :close="close">
+            <div v-if="!!slots.header || (props.title || !!slots.title) || (props.description || !!slots.description) || (props.close || !!slots.close)" data-slot="header" :class="ui.header({ class: props.ui?.header })">
+              <slot name="header" :close="close">
+                <div v-if="props.title || !!slots.title || props.description || !!slots.description" data-slot="wrapper" :class="ui.wrapper({ class: props.ui?.wrapper })">
+                  <DialogTitle v-if="props.title || !!slots.title" data-slot="title" :class="ui.title({ class: props.ui?.title })">
+                    <slot name="title">
+                      {{ props.title }}
+                    </slot>
+                  </DialogTitle>
 
-                <DialogDescription
-                  v-if="props.description != null || !!slots.description"
-                  data-slot="description"
-                  :class="cn('mt-1 text-muted-foreground text-sm', props.ui?.description)"
-                >
-                  <slot name="description">{{ props.description }}</slot>
-                </DialogDescription>
-              </div>
+                  <DialogDescription v-if="props.description || !!slots.description" data-slot="description" :class="ui.description({ class: props.ui?.description })">
+                    <slot name="description">
+                      {{ props.description }}
+                    </slot>
+                  </DialogDescription>
+                </div>
 
-              <slot name="actions" />
+                <slot name="actions" />
 
-              <DialogClose v-if="Boolean(props.close) || !!slots.close" as-child>
-                <slot name="close">
-                  <span v-if="props.close" data-slot="close" :class="cn('absolute top-4 right-4', props.ui?.close)">
+                <DialogClose v-if="props.close || !!slots.close" as-child>
+                  <slot name="close" :ui="ui">
                     <XButton
+                      v-if="props.close"
+                      :icon="props.closeIcon || appConfig.ui.icons.close"
                       color="neutral"
                       variant="ghost"
-                      square
-                      aria-label="关闭"
-                      v-bind="typeof props.close === 'object' ? props.close : {}"
-                    >
-                      <component :is="props.closeIcon ?? XIcon" class="size-4" />
-                    </XButton>
-                  </span>
-                </slot>
-              </DialogClose>
-            </slot>
-          </div>
+                      :aria-label="t('slideover.close')"
+                      v-bind="(typeof props.close === 'object' ? props.close : {})"
+                      data-slot="close"
+                      :class="ui.close({ class: props.ui?.close })"
+                    />
+                  </slot>
+                </DialogClose>
+              </slot>
+            </div>
 
-          <div data-slot="body" :class="cn('flex-1 overflow-y-auto p-4 sm:p-6', props.ui?.body)">
-            <slot name="body" />
-          </div>
+            <div data-slot="body" :class="ui.body({ class: props.ui?.body })">
+              <slot name="body" :close="close" />
+            </div>
 
-          <div v-if="!!slots.footer" data-slot="footer" :class="cn('flex items-center gap-1.5 p-4 sm:px-6', props.ui?.footer)">
-            <slot name="footer" />
-          </div>
-        </slot>
-      </DialogContent>
+            <div v-if="!!slots.footer" data-slot="footer" :class="ui.footer({ class: props.ui?.footer })">
+              <slot name="footer" :close="close" />
+            </div>
+          </slot>
+        </DialogContent>
+      </FieldGroupReset>
     </DialogPortal>
   </DialogRoot>
 </template>

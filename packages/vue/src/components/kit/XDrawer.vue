@@ -1,311 +1,224 @@
-<script setup lang="ts">
-/**
- * XDrawer 抽屉：与 Nuxt UI Drawer 对齐的抽屉面板。
- * 属性、插槽与 ui 主题插槽键（overlay / content / handle / container / header / wrapper / title / description / actions / body / footer / close）一比一对应。
- * 支持方向、inset 内嵌、handle 拖拽把手与 close 关闭按钮。
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { computed, ref, useSlots } from 'vue'
-import { XIcon } from '@lucide/vue'
-import {
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerHandle,
-  DrawerOverlay,
-  DrawerPortal,
-  DrawerRoot,
-  DrawerTitle,
-  DrawerTrigger,
-  VisuallyHidden,
-} from 'reka-ui'
-import XButton from '@/components/kit/XButton.vue'
-import { cn } from '@/lib/utils'
+<script lang="ts">
+import type { VNode } from 'vue'
+import type { DrawerRootProps, DrawerRootEmits } from 'vaul-vue'
+import type { DialogContentProps, DialogContentEmits } from 'reka-ui'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/drawer'
+import type { ButtonProps } from './XButton.vue'
+import type { IconProps } from './XIcon.vue'
+import type { LinkPropsKeys } from './XLink.vue'
+import type { EmitsToProps } from '../../lib/nuxt/types/utils'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-/** close 为对象时透传给关闭按钮的属性 */
-export type DrawerCloseConfig = boolean | {
-  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-  color?: 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
-  variant?: 'solid' | 'outline' | 'soft' | 'ghost' | 'subtle' | 'link'
-}
+type Drawer = ComponentConfig<typeof theme, AppConfig, 'drawer'>
 
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface DrawerUi {
-  overlay?: string
-  content?: string
-  handle?: string
-  container?: string
-  header?: string
-  wrapper?: string
+export interface DrawerProps extends Pick<DrawerRootProps, 'activeSnapPoint' | 'closeThreshold' | 'shouldScaleBackground' | 'setBackgroundColorOnScale' | 'scrollLockTimeout' | 'fixed' | 'dismissible' | 'modal' | 'open' | 'defaultOpen' | 'nested' | 'direction' | 'noBodyStyles' | 'handleOnly' | 'preventScrollRestoration' | 'snapPoints'> {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
   title?: string
   description?: string
-  actions?: string
-  body?: string
-  footer?: string
-  close?: string
-}
-
-const props = withDefaults(defineProps<{
-  /** 标题 */
-  title?: string
-  /** 辅助说明 */
-  description?: string
-  /** 是否打开（支持 v-model:open） */
-  open?: boolean
-  /** 初始是否打开 */
-  defaultOpen?: boolean
-  /** 模态：聚焦锁定与遮罩拦截 */
-  modal?: boolean
-  /** 滑出方向 */
-  direction?: 'top' | 'right' | 'bottom' | 'left'
-  /** 预设停靠位置（0-1 比例或像素值） */
-  snapPoints?: (number | string)[]
-  /** 渲染遮罩 */
-  overlay?: boolean
-  /** 渲染拖拽把手 */
-  handle?: boolean
-  /** 渲染到 body */
-  portal?: boolean
-  /** 嵌套在另一个抽屉中（嵌套关系由底层原语自动识别） */
-  nested?: boolean
-  /** 与屏幕边缘保留间距 */
+  /**
+   * Whether to inset the drawer from the edges.
+   * @defaultValue false
+   */
   inset?: boolean
-  /** 显示关闭按钮 */
-  close?: DrawerCloseConfig
-  /** 关闭按钮图标 */
-  closeIcon?: Component
-  /** 允许点击外部或按 Esc 关闭 */
-  dismissible?: boolean
-  class?: HTMLAttributes['class']
-  /** 主题插槽类名 */
-  ui?: DrawerUi
-}>(), {
-  open: undefined,
-  modal: true,
+  /** The content of the drawer. */
+  content?: Omit<DialogContentProps, 'as' | 'asChild' | 'forceMount'> & Partial<EmitsToProps<DialogContentEmits>>
+  /**
+   * Render an overlay behind the drawer.
+   * @defaultValue true
+   */
+  overlay?: boolean
+  /**
+   * Render a handle on the drawer.
+   * @defaultValue true
+   */
+  handle?: boolean
+  /**
+   * Render the drawer in a portal.
+   * @defaultValue true
+   */
+  portal?: boolean | string | HTMLElement
+  /**
+   * Whether the drawer is nested in another drawer.
+   * @defaultValue false
+   */
+  nested?: boolean
+  /**
+   * Display a close button to dismiss the drawer.
+   * `{ size: 'md', color: 'neutral', variant: 'ghost' }`{lang="ts-type"}
+   * @defaultValue false
+   */
+  close?: boolean | Omit<ButtonProps, LinkPropsKeys>
+  /**
+   * The icon displayed in the close button.
+   * @defaultValue appConfig.ui.icons.close
+   * @IconifyIcon
+   */
+  closeIcon?: IconProps['name']
+  class?: any
+  ui?: Drawer['slots']
+}
+
+export interface DrawerEmits extends DrawerRootEmits {
+  (e: 'close:prevent'): void
+}
+
+export interface DrawerSlots {
+  default?(props?: {}): VNode[]
+  content?(props?: {}): VNode[]
+  header?(props?: {}): VNode[]
+  title?(props?: {}): VNode[]
+  description?(props?: {}): VNode[]
+  actions?(props?: {}): VNode[]
+  close?(props: { ui: Drawer['ui'] }): VNode[]
+  body?(props?: {}): VNode[]
+  footer?(props?: {}): VNode[]
+}
+</script>
+
+<script setup lang="ts">
+import { computed, toRef } from 'vue'
+import { VisuallyHidden } from 'reka-ui'
+import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
+import { DrawerRoot, DrawerRootNested, DrawerTrigger, DrawerPortal, DrawerOverlay, DrawerContent, DrawerTitle, DrawerDescription, DrawerHandle, DrawerClose } from 'vaul-vue'
+import { reactivePick } from '@vueuse/core'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { FieldGroupReset } from '../../lib/nuxt/composables/useFieldGroup'
+import { useLocale } from '../../lib/nuxt/composables/useLocale'
+import { usePortal } from '../../lib/nuxt/composables/usePortal'
+import { pointerDownOutside } from '../../lib/nuxt/utils/overlay'
+import { tv } from '../../lib/nuxt/utils/tv'
+import XButton from './XButton.vue'
+
+const _props = withDefaults(defineProps</* @vue-ignore */ DrawerProps>(), {
   direction: 'bottom',
+  portal: true,
   overlay: true,
   handle: true,
-  portal: true,
-  nested: false,
-  inset: false,
-  close: false,
-  dismissible: true,
+  modal: true,
+  dismissible: true
 })
+const emits = defineEmits</* @vue-ignore */ DrawerEmits>()
+const slots = defineSlots</* @vue-ignore */ DrawerSlots>()
 
-const emit = defineEmits<{
-  /** 打开状态变化回调 */
-  'update:open': [open: boolean]
-  /** 关闭被阻止（dismissible 为 false 时点击外部或按 Esc） */
-  'close:prevent': []
-}>()
+const props = useComponentProps('drawer', _props)
 
-defineOptions({ name: 'XDrawer', inheritAttrs: false })
+const { t } = useLocale()
+const appConfig = useAppConfig() as Drawer['AppConfig']
 
-const slots = useSlots()
-
-/** 内部开合状态：DrawerRoot 始终受控，以便拦截 swipe 关闭 */
-const innerOpen = ref(props.defaultOpen ?? false)
-const resolvedOpen = computed(() => props.open ?? innerOpen.value)
-
-function onOpenChange(next: boolean, details?: { reason?: string }) {
-  /* dismissible 为 false 时拖拽关闭同样被拦截 */
-  if (!props.dismissible && !next && details?.reason === 'swipe') {
-    emit('close:prevent')
-    return
-  }
-  if (props.open == null) innerOpen.value = next
-  emit('update:open', next)
-}
-
-/** Nuxt 方向（top / bottom）映射到 reka-ui 的滑动方向（up / down） */
-const swipeDirection = computed(() => {
-  if (props.direction === 'top') return 'up'
-  if (props.direction === 'bottom') return 'down'
-  return props.direction
-})
-
-/** dismissible 为 false 时阻止外部点击与 Esc 关闭 */
+const rootProps = useForwardProps(reactivePick(props, 'activeSnapPoint', 'closeThreshold', 'shouldScaleBackground', 'setBackgroundColorOnScale', 'scrollLockTimeout', 'fixed', 'dismissible', 'modal', 'open', 'defaultOpen', 'nested', 'direction', 'noBodyStyles', 'handleOnly', 'preventScrollRestoration', 'snapPoints'), emits)
+const portalProps = usePortal(toRef(() => props.portal))
+const contentProps = toRef(() => props.content)
 const contentEvents = computed(() => {
-  if (props.dismissible) return {}
+  if (!props.dismissible) {
+    const events = ['interactOutside', 'escapeKeyDown']
+
+    return events.reduce((acc, curr) => {
+      acc[curr] = (e: Event) => {
+        e.preventDefault()
+        emits('close:prevent')
+      }
+      return acc
+    }, {} as Record<typeof events[number], (e: Event) => void>)
+  }
+
   return {
-    interactOutside: (event: Event) => {
-      event.preventDefault()
-      emit('close:prevent')
-    },
-    escapeKeyDown: (event: Event) => {
-      event.preventDefault()
-      emit('close:prevent')
-    },
+    pointerDownOutside
   }
 })
 
-const showHeader = computed(
-  () =>
-    !!slots.header ||
-    props.title != null ||
-    !!slots.title ||
-    props.description != null ||
-    !!slots.description ||
-    Boolean(props.close) ||
-    !!slots.close ||
-    !!slots.actions,
-)
-
-const showActions = computed(() => !!slots.actions || Boolean(props.close) || !!slots.close)
-
-/** 内容面板定位：方向 + inset 组合 */
-const contentPositionClass = computed(() => {
-  if (props.inset) {
-    const insetMap: Record<'top' | 'right' | 'bottom' | 'left', string> = {
-      top: 'data-[swipe-direction=up]:inset-x-4 data-[swipe-direction=up]:top-4 rounded-lg overflow-hidden',
-      right: 'data-[swipe-direction=right]:inset-y-4 data-[swipe-direction=right]:right-4 rounded-lg overflow-hidden',
-      bottom: 'data-[swipe-direction=down]:inset-x-4 data-[swipe-direction=down]:bottom-4 rounded-lg overflow-hidden',
-      left: 'data-[swipe-direction=left]:inset-y-4 data-[swipe-direction=left]:left-4 rounded-lg overflow-hidden',
-    }
-    return insetMap[props.direction]
-  }
-
-  const positionMap: Record<'top' | 'right' | 'bottom' | 'left', string> = {
-    top: 'data-[swipe-direction=up]:inset-x-0 data-[swipe-direction=up]:top-0 data-[swipe-direction=up]:mb-24 data-[swipe-direction=up]:max-h-[96%] data-[swipe-direction=up]:rounded-b-lg',
-    right: 'data-[swipe-direction=right]:inset-y-0 data-[swipe-direction=right]:right-0 data-[swipe-direction=right]:max-w-[calc(100%-2rem)] data-[swipe-direction=right]:rounded-l-lg',
-    bottom: 'data-[swipe-direction=down]:inset-x-0 data-[swipe-direction=down]:bottom-0 data-[swipe-direction=down]:mt-24 data-[swipe-direction=down]:max-h-[96%] data-[swipe-direction=down]:rounded-t-lg',
-    left: 'data-[swipe-direction=left]:inset-y-0 data-[swipe-direction=left]:left-0 data-[swipe-direction=left]:max-w-[calc(100%-2rem)] data-[swipe-direction=left]:rounded-r-lg',
-  }
-  return positionMap[props.direction]
-})
-
-/** 内容面板进出场动画方向 */
-const contentAnimationClass = computed(() => {
-  const animationMap: Record<'top' | 'right' | 'bottom' | 'left', string> = {
-    top: 'data-[swipe-direction=up]:data-[state=open]:slide-in-from-top data-[swipe-direction=up]:data-[state=closed]:slide-out-to-top',
-    right: 'data-[swipe-direction=right]:data-[state=open]:slide-in-from-right data-[swipe-direction=right]:data-[state=closed]:slide-out-to-right',
-    bottom: 'data-[swipe-direction=down]:data-[state=open]:slide-in-from-bottom data-[swipe-direction=down]:data-[state=closed]:slide-out-to-bottom',
-    left: 'data-[swipe-direction=left]:data-[state=open]:slide-in-from-left data-[swipe-direction=left]:data-[state=closed]:slide-out-to-left',
-  }
-  return animationMap[props.direction]
-})
-
-/** 拖拽把手：方向决定尺寸与位置 */
-const handleClass = computed(() => {
-  const handleMap: Record<'top' | 'right' | 'bottom' | 'left', string> = {
-    top: 'mb-4 !w-12 !h-1.5 mx-auto rounded-full',
-    right: '!ml-4 !h-12 !w-1.5 my-auto rounded-full',
-    bottom: 'mt-4 !w-12 !h-1.5 mx-auto rounded-full',
-    left: '!mr-4 !h-12 !w-1.5 my-auto rounded-full',
-  }
-  return handleMap[props.direction]
-})
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.drawer || {}) })({
+  direction: props.direction,
+  inset: props.inset,
+  snapPoints: props.snapPoints && props.snapPoints.length > 0
+}))
 </script>
 
 <template>
-  <DrawerRoot
-    :open="resolvedOpen"
-    :default-open="props.defaultOpen"
-    :modal="props.modal"
-    :swipe-direction="swipeDirection"
-    :snap-points="props.snapPoints"
-    @update:open="onOpenChange"
-  >
-    <DrawerTrigger v-if="slots.default" as-child :class="props.class" v-bind="$attrs">
+  <component :is="props.nested ? DrawerRootNested : DrawerRoot" v-bind="rootProps">
+    <DrawerTrigger v-if="!!slots.default" as-child :class="props.class">
       <slot />
     </DrawerTrigger>
 
-    <DrawerPortal :disabled="!props.portal">
-      <DrawerOverlay
-        v-if="props.overlay"
-        data-slot="overlay"
-        :class="cn('fixed inset-0 z-50 bg-black/50', props.ui?.overlay)"
-      />
+    <DrawerPortal v-bind="portalProps">
+      <FieldGroupReset>
+        <DrawerOverlay v-if="props.overlay" data-slot="overlay" :class="ui.overlay({ class: props.ui?.overlay })" />
 
-      <DrawerContent
-        data-slot="content"
-        :class="cn(
-          'bg-background ring-1 ring-border flex flex-col focus:outline-none fixed z-50 will-change-transform',
-          'transform-[translate3d(var(--drawer-swipe-movement-x,0px),var(--drawer-swipe-movement-y,0px),0)]',
-          'transition-transform duration-200 ease-[cubic-bezier(0.32,0.72,0,1)] data-swiping:duration-0 data-swiping:select-none',
-          'data-[state=open]:animate-in data-[state=closed]:animate-out',
-          props.direction === 'top' || props.direction === 'bottom' ? 'flex-col' : 'flex-row',
-          contentPositionClass,
-          contentAnimationClass,
-          !slots.default && props.class,
-          props.ui?.content,
-        )"
-        v-on="contentEvents"
-      >
-        <DrawerHandle v-if="props.handle" data-slot="handle" :class="cn('shrink-0 bg-border', handleClass, props.ui?.handle)" />
+        <DrawerContent data-slot="content" :class="ui.content({ class: [!slots.default && props.class, props.ui?.content] })" v-bind="contentProps" v-on="contentEvents">
+          <DrawerHandle v-if="props.handle" data-slot="handle" :class="ui.handle({ class: props.ui?.handle })" />
 
-        <VisuallyHidden
-          v-if="(props.title == null && !slots.title) || (props.description == null && !slots.description) || !!slots.content"
-        >
-          <DrawerTitle v-if="props.title == null && !slots.title" />
-          <DrawerTitle v-else-if="!!slots.content">
-            <slot name="title">{{ props.title }}</slot>
-          </DrawerTitle>
+          <VisuallyHidden v-if="(!props.title && !slots.title) || (!props.description && !slots.description) || !!slots.content">
+            <DrawerTitle v-if="!props.title && !slots.title" />
+            <DrawerTitle v-else-if="!!slots.content">
+              <slot name="title">
+                {{ props.title }}
+              </slot>
+            </DrawerTitle>
 
-          <DrawerDescription v-if="props.description == null && !slots.description" />
-          <DrawerDescription v-else-if="!!slots.content">
-            <slot name="description">{{ props.description }}</slot>
-          </DrawerDescription>
-        </VisuallyHidden>
+            <DrawerDescription v-if="!props.description && !slots.description" />
+            <DrawerDescription v-else-if="!!slots.content">
+              <slot name="description">
+                {{ props.description }}
+              </slot>
+            </DrawerDescription>
+          </VisuallyHidden>
 
-        <slot name="content">
-          <div data-slot="container" :class="cn('w-full flex flex-col gap-4 p-4 overflow-y-auto', props.ui?.container)">
-            <div
-              v-if="showHeader"
-              data-slot="header"
-              :class="cn('flex items-center gap-1.5', props.ui?.header)"
-            >
-              <slot name="header">
-                <div v-if="props.title != null || !!slots.title || props.description != null || !!slots.description" data-slot="wrapper" :class="cn('min-w-0 flex-1', props.ui?.wrapper)">
-                  <DrawerTitle
-                    v-if="props.title != null || !!slots.title"
-                    data-slot="title"
-                    :class="cn('text-foreground font-semibold', props.ui?.title)"
-                  >
-                    <slot name="title">{{ props.title }}</slot>
-                  </DrawerTitle>
+          <slot name="content">
+            <div data-slot="container" :class="ui.container({ class: props.ui?.container })">
+              <div v-if="!!slots.header || (props.title || !!slots.title) || (props.description || !!slots.description) || (props.close || !!slots.close) || !!slots.actions" data-slot="header" :class="ui.header({ class: props.ui?.header })">
+                <slot name="header">
+                  <div v-if="props.title || !!slots.title || props.description || !!slots.description" data-slot="wrapper" :class="ui.wrapper({ class: props.ui?.wrapper })">
+                    <DrawerTitle v-if="props.title || !!slots.title" data-slot="title" :class="ui.title({ class: props.ui?.title })">
+                      <slot name="title">
+                        {{ props.title }}
+                      </slot>
+                    </DrawerTitle>
 
-                  <DrawerDescription
-                    v-if="props.description != null || !!slots.description"
-                    data-slot="description"
-                    :class="cn('mt-1 text-muted-foreground text-sm', props.ui?.description)"
-                  >
-                    <slot name="description">{{ props.description }}</slot>
-                  </DrawerDescription>
-                </div>
+                    <DrawerDescription v-if="props.description || !!slots.description" data-slot="description" :class="ui.description({ class: props.ui?.description })">
+                      <slot name="description">
+                        {{ props.description }}
+                      </slot>
+                    </DrawerDescription>
+                  </div>
 
-                <div v-if="showActions" data-slot="actions" :class="cn('flex items-center gap-1.5 shrink-0 ms-auto', props.ui?.actions)">
-                  <slot name="actions" />
+                  <div v-if="!!slots.actions || props.close || !!slots.close" data-slot="actions" :class="ui.actions({ class: props.ui?.actions })">
+                    <slot name="actions" />
 
-                  <DrawerClose v-if="Boolean(props.close) || !!slots.close" as-child>
-                    <slot name="close">
-                      <span v-if="props.close" data-slot="close" :class="cn(props.ui?.close)">
+                    <DrawerClose v-if="props.close || !!slots.close" as-child>
+                      <slot name="close" :ui="ui">
                         <XButton
+                          v-if="props.close"
+                          :icon="props.closeIcon || appConfig.ui.icons.close"
                           color="neutral"
                           variant="ghost"
-                          square
-                          aria-label="关闭"
-                          v-bind="typeof props.close === 'object' ? props.close : {}"
-                        >
-                          <component :is="props.closeIcon ?? XIcon" class="size-4" />
-                        </XButton>
-                      </span>
-                    </slot>
-                  </DrawerClose>
-                </div>
-              </slot>
-            </div>
+                          :aria-label="t('drawer.close')"
+                          v-bind="(typeof props.close === 'object' ? props.close : {})"
+                          data-slot="close"
+                          :class="ui.close({ class: props.ui?.close })"
+                        />
+                      </slot>
+                    </DrawerClose>
+                  </div>
+                </slot>
+              </div>
 
-            <div v-if="!!slots.body" data-slot="body" :class="cn('flex-1', props.ui?.body)">
-              <slot name="body" />
-            </div>
+              <div v-if="!!slots.body" data-slot="body" :class="ui.body({ class: props.ui?.body })">
+                <slot name="body" />
+              </div>
 
-            <div v-if="!!slots.footer" data-slot="footer" :class="cn('flex flex-col gap-1.5', props.ui?.footer)">
-              <slot name="footer" />
+              <div v-if="!!slots.footer" data-slot="footer" :class="ui.footer({ class: props.ui?.footer })">
+                <slot name="footer" />
+              </div>
             </div>
-          </div>
-        </slot>
-      </DrawerContent>
+          </slot>
+        </DrawerContent>
+      </FieldGroupReset>
     </DrawerPortal>
-  </DrawerRoot>
+  </component>
 </template>

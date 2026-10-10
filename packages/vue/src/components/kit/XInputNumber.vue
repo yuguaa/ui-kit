@@ -1,198 +1,254 @@
-<script setup lang="ts">
-/**
- * XInputNumber 数字输入：带加减步进按钮的数字输入框。
- * orientation 区分横向（两侧步进）与纵向（右侧堆叠步进）；
- * increment / decrement 插槽与 incrementDisabled / decrementDisabled 控制步进按钮。
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { computed, useAttrs } from 'vue'
-import { Minus, Plus } from '@lucide/vue'
-import { Primitive } from 'reka-ui'
-import { cn } from '@/lib/utils'
+<script lang="ts">
+import type { NumberFieldRootProps } from 'reka-ui'
+import type { VNode } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/input-number'
+import type { ButtonProps } from './XButton.vue'
+import type { IconProps } from './XIcon.vue'
+import type { LinkPropsKeys } from './XLink.vue'
+import type { InputHTMLAttributes } from '../../lib/nuxt/types/html'
+import type { ModelModifiers } from '../../lib/nuxt/types/input'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-/* 属性透传到内部 input，避免落到外层包装元素 */
-defineOptions({ name: 'XInputNumber', inheritAttrs: false })
+type InputNumber = ComponentConfig<typeof theme, AppConfig, 'inputNumber'>
 
-type InputNumberSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
+type InputNumberValue = number | null
 
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface InputNumberUi {
-  base?: string
-}
+type ApplyModifiers<T extends InputNumberValue, Mod extends Pick<ModelModifiers, 'optional'>>
+  = | T
+    | (Mod extends { optional: true } ? undefined : never)
 
-const props = withDefaults(defineProps<{
-  /** 绑定值 */
-  modelValue?: number
-  /** 最小值 */
-  min?: number
-  /** 最大值 */
-  max?: number
-  /** 步长 */
-  step?: number
-  /** 是否禁用 */
-  disabled?: boolean
-  /** 步进按钮方向：horizontal 两侧 / vertical 右侧堆叠 */
-  orientation?: 'horizontal' | 'vertical'
-  /** 控件尺寸 */
-  size?: InputNumberSize
-  /** 占位提示文字 */
+export interface InputNumberProps<T extends InputNumberValue = InputNumberValue, Mod extends Pick<ModelModifiers, 'optional'> = Pick<ModelModifiers, 'optional'>> extends Pick<NumberFieldRootProps, | 'min' | 'max' | 'step' | 'stepSnapping' | 'disabled' | 'required' | 'id' | 'name' | 'formatOptions' | 'disableWheelChange' | 'invertWheelChange' | 'readonly' | 'focusOnChange' | 'locale'>, /** @vue-ignore */ Omit<InputHTMLAttributes, 'disabled' | 'min' | 'max' | 'readonly' | 'required' | 'step' | 'name' | 'placeholder' | 'type' | 'autofocus' | 'maxlength' | 'minlength' | 'pattern' | 'size'> {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
+  /** The placeholder text when the input is empty. */
   placeholder?: string
-  /** 是否显示加号按钮 */
-  increment?: boolean
-  /** 是否显示减号按钮 */
-  decrement?: boolean
-  /** 禁用加号按钮 */
+  color?: InputNumber['variants']['color']
+  variant?: InputNumber['variants']['variant']
+  size?: InputNumber['variants']['size']
+  /** Highlight the ring color like a focus state. */
+  highlight?: boolean
+  /** Keep the mobile text size on all breakpoints. */
+  fixed?: boolean
+  /**
+   * The orientation of the input number.
+   * @defaultValue 'horizontal'
+   */
+  orientation?: InputNumber['variants']['orientation']
+  /**
+   * Configure the increment button. The `color` and `size` are inherited.
+   * @defaultValue { variant: 'link' }
+   */
+  increment?: boolean | Omit<ButtonProps, LinkPropsKeys>
+  /**
+   * The icon displayed to increment the value.
+   * @defaultValue appConfig.ui.icons.plus
+   * @IconifyIcon
+   */
+  incrementIcon?: IconProps['name']
+  /** Disable the increment button. */
   incrementDisabled?: boolean
-  /** 禁用减号按钮 */
+  /**
+   * Configure the decrement button. The `color` and `size` are inherited.
+   * @defaultValue { variant: 'link' }
+   */
+  decrement?: boolean | Omit<ButtonProps, LinkPropsKeys>
+  /**
+   * The icon displayed to decrement the value.
+   * @defaultValue appConfig.ui.icons.minus
+   * @IconifyIcon
+   */
+  decrementIcon?: IconProps['name']
+  /** Disable the decrement button. */
   decrementDisabled?: boolean
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 主题插槽类名 */
-  ui?: InputNumberUi
-  class?: HTMLAttributes['class']
-}>(), {
-  modelValue: 0,
-  step: 1,
-  orientation: 'horizontal',
-  size: 'md',
-  increment: true,
-  decrement: true,
-  incrementDisabled: false,
-  decrementDisabled: false,
-})
-
-const emit = defineEmits<{
-  'update:modelValue': [value: number]
-  /** 值变化回调 */
-  change: [value: number]
-}>()
-
-const attrs = useAttrs()
-
-function clamp(next: number) {
-  if (props.min != null && next < props.min) return props.min
-  if (props.max != null && next > props.max) return props.max
-  return next
+  autofocus?: boolean
+  autofocusDelay?: number
+  defaultValue?: NonNullable<T>
+  modelValue?: ApplyModifiers<T, Mod>
+  modelModifiers?: Mod
+  class?: any
+  ui?: InputNumber['slots']
 }
 
-function update(next: number) {
-  const clamped = clamp(next)
-  if (clamped !== props.modelValue) {
-    emit('update:modelValue', clamped)
-    emit('change', clamped)
+export interface InputNumberEmits<T extends InputNumberValue = InputNumberValue, Mod extends Pick<ModelModifiers, 'optional'> = Pick<ModelModifiers, 'optional'>> {
+  'update:modelValue': [value: ApplyModifiers<T, Mod>]
+  'blur': [event: FocusEvent]
+  'change': [event: Event]
+}
+
+export interface InputNumberSlots {
+  increment?(props?: {}): VNode[]
+  decrement?(props?: {}): VNode[]
+}
+</script>
+
+<script setup lang="ts" generic="T extends InputNumberValue = InputNumberValue, Mod extends Pick<ModelModifiers, 'optional'> = Pick<ModelModifiers, 'optional'>">
+import { onMounted, onScopeDispose, computed, useTemplateRef, toRef } from 'vue'
+import { NumberFieldRoot, NumberFieldInput, NumberFieldDecrement, NumberFieldIncrement } from 'reka-ui'
+import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
+import { reactivePick } from '@vueuse/core'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { useFieldGroup } from '../../lib/nuxt/composables/useFieldGroup'
+import { useFormField } from '../../lib/nuxt/composables/useFormField'
+import { useLocale } from '../../lib/nuxt/composables/useLocale'
+import { tv } from '../../lib/nuxt/utils/tv'
+import XButton from './XButton.vue'
+
+defineOptions({ inheritAttrs: false })
+
+const _props = withDefaults(defineProps</* @vue-ignore */ InputNumberProps<T, Mod>>(), {
+  orientation: 'horizontal',
+  increment: true,
+  decrement: true
+})
+const emits = defineEmits</* @vue-ignore */ InputNumberEmits<T, Mod>>()
+
+defineSlots</* @vue-ignore */ InputNumberSlots>()
+
+const props = useComponentProps<InputNumberProps<T, Mod>>('inputNumber', _props)
+
+const { t } = useLocale()
+const appConfig = useAppConfig() as InputNumber['AppConfig']
+
+const rootProps = useForwardProps(reactivePick(props, 'as', 'stepSnapping', 'formatOptions', 'disableWheelChange', 'invertWheelChange', 'required', 'readonly', 'focusOnChange', 'locale'))
+
+const { emitFormBlur, emitFormFocus, emitFormChange, emitFormInput, id, color: formFieldColor, size: formFieldSize, name, highlight: formFieldHighlight, disabled: formFieldDisabled, ariaAttrs } = useFormField<InputNumberProps<T, Mod>>(_props)
+
+const { orientation, size: fieldGroupSize } = useFieldGroup<InputNumberProps<T, Mod>>(_props)
+
+// eslint-disable-next-line vue/no-dupe-keys
+const color = computed(() => formFieldColor.value ?? props.color)
+// eslint-disable-next-line vue/no-dupe-keys
+const highlight = computed(() => formFieldHighlight.value ?? props.highlight)
+// eslint-disable-next-line vue/no-dupe-keys
+const size = computed(() => fieldGroupSize.value ?? formFieldSize.value ?? props.size)
+
+const disabled = computed(() => formFieldDisabled.value ?? props.disabled)
+
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.inputNumber || {}) })({
+  color: color.value,
+  variant: props.variant,
+  size: size.value,
+  highlight: highlight.value,
+  fixed: props.fixed,
+  orientation: props.orientation,
+  fieldGroup: orientation.value,
+  increment: props.orientation === 'vertical' ? (!!props.increment || !!props.decrement) : !!props.increment,
+  decrement: props.orientation === 'vertical' ? false : !!props.decrement
+}))
+
+// eslint-disable-next-line vue/no-dupe-keys
+const incrementIcon = computed(() => props.incrementIcon || (props.orientation === 'horizontal' ? appConfig.ui.icons.plus : appConfig.ui.icons.chevronUp))
+// eslint-disable-next-line vue/no-dupe-keys
+const decrementIcon = computed(() => props.decrementIcon || (props.orientation === 'horizontal' ? appConfig.ui.icons.minus : appConfig.ui.icons.chevronDown))
+
+const inputRef = useTemplateRef('inputRef')
+
+function onUpdate(value: ApplyModifiers<T, Mod> | undefined) {
+  if (props.modelModifiers?.optional) {
+    value = value ?? undefined
+  }
+
+  // In controlled mode reka emits on every write, even when nothing changed (blur, Enter, stepping at a bound).
+  if (value === props.modelValue || (value == null && props.modelValue == null)) {
+    return
+  }
+
+  emits('update:modelValue', value as ApplyModifiers<T, Mod>)
+
+  // @ts-expect-error - 'target' does not exist in type 'EventInit'
+  const event = new Event('change', { target: { value } })
+  emits('change', event)
+
+  emitFormChange()
+  emitFormInput()
+}
+
+function onBlur(event: FocusEvent) {
+  emitFormBlur()
+  emits('blur', event)
+}
+
+function autoFocus() {
+  if (props.autofocus) {
+    inputRef.value?.$el?.focus()
   }
 }
 
-/** 尺寸 → 输入框高度与内边距 */
-const sizeClasses: Record<InputNumberSize, string> = {
-  xs: 'h-6 px-2 text-sm',
-  sm: 'h-7 px-2.5 text-sm',
-  md: 'h-8 px-2.5 text-base',
-  lg: 'h-9 px-3 text-base',
-  xl: 'h-11 px-3.5 text-base',
-}
+let autofocusTimeoutId: ReturnType<typeof setTimeout> | undefined
 
-/** 输入框宽度（随控件尺寸） */
-const widthClasses: Record<InputNumberSize, string> = {
-  xs: 'w-16', sm: 'w-18', md: 'w-20', lg: 'w-22', xl: 'w-24',
-}
+onMounted(() => {
+  autofocusTimeoutId = setTimeout(() => {
+    autoFocus()
+  }, props.autofocusDelay)
+})
 
-/** 横向步进按钮尺寸 */
-const buttonSizes: Record<InputNumberSize, string> = {
-  xs: 'size-6', sm: 'size-7', md: 'size-8', lg: 'size-9', xl: 'size-10',
-}
+onScopeDispose(() => clearTimeout(autofocusTimeoutId))
 
-/** 纵向步进按钮宽度 */
-const verticalButtonWidths: Record<InputNumberSize, string> = {
-  xs: 'w-6', sm: 'w-7', md: 'w-8', lg: 'w-9', xl: 'w-10',
-}
-
-/** 步进按钮存在时，输入框补足的水平内边距 */
-const decrementPaddings: Record<InputNumberSize, string> = {
-  xs: 'pl-7', sm: 'pl-8', md: 'pl-9', lg: 'pl-10', xl: 'pl-11',
-}
-const incrementPaddings: Record<InputNumberSize, string> = {
-  xs: 'pr-7', sm: 'pr-8', md: 'pr-9', lg: 'pr-10', xl: 'pr-11',
-}
-
-/** 步进图标尺寸（随控件尺寸） */
-const iconSizes: Record<InputNumberSize, string> = {
-  xs: 'size-3', sm: 'size-3.5', md: 'size-4', lg: 'size-4', xl: 'size-5',
-}
-
-/* 步进按钮公共样式 */
-const buttonClasses = 'absolute flex cursor-pointer items-center justify-center rounded-md text-muted-foreground transition-colors outline-none hover:bg-muted focus-visible:ring-3 focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50'
-
-function onClick(event: MouseEvent) {
-  const handler = attrs.onClick as
-    | ((event: MouseEvent) => unknown)
-    | Array<(event: MouseEvent) => unknown>
-    | undefined
-  if (handler == null) return
-
-  /* 透传的处理器可能是数组（上层 as-child 合并后），逐个调用 */
-  const handlers = Array.isArray(handler) ? handler : [handler]
-  handlers.forEach((fn) => fn(event))
-}
-
-/** 透传属性：onClick 换成包装后的处理函数，其余原样透传 */
-const forwardedAttrs = computed(() => ({ ...attrs, onClick }))
+defineExpose({
+  inputRef: toRef(() => inputRef.value?.$el as HTMLInputElement)
+})
 </script>
 
 <template>
-  <Primitive
-    :as="as ?? 'span'"
-    data-slot="root"
-    :class="cn('relative inline-flex w-fit items-center', props.class)"
+  <NumberFieldRoot
+    v-bind="rootProps"
+    :id="id"
+    :default-value="props.defaultValue"
+    :model-value="props.modelValue"
+    :min="props.min"
+    :max="props.max"
+    :step="props.step"
+    :data-slot="($attrs['data-slot'] as string | undefined) ?? 'root'"
+    :class="ui.root({ class: [props.ui?.root, props.class] })"
+    :name="name"
+    :disabled="disabled"
+    @update:model-value="(val) => onUpdate(val as ApplyModifiers<T, Mod>)"
   >
-    <button
-      v-if="decrement"
-      type="button"
-      aria-label="decrement"
-      :disabled="disabled || decrementDisabled || (min != null && modelValue <= min)"
-      :class="cn(
-        buttonClasses,
-        orientation === 'horizontal'
-          ? cn('inset-y-0 left-1', buttonSizes[size])
-          : cn('bottom-0 right-1 h-1/2 rounded-br-md', verticalButtonWidths[size]),
-      )"
-      @click="update(modelValue - step)"
-    >
-      <slot name="decrement"><Minus :class="iconSizes[size]" /></slot>
-    </button>
-    <input
-      v-bind="forwardedAttrs"
-      type="number"
-      :value="modelValue"
+    <NumberFieldInput
+      v-bind="{ ...$attrs, ...ariaAttrs }"
+      ref="inputRef"
+      :placeholder="props.placeholder"
+      :required="props.required"
       data-slot="base"
-      :class="cn(
-        'appearance-none rounded-md border border-input bg-background placeholder:text-muted-foreground transition-colors disabled:cursor-not-allowed disabled:opacity-75',
-        '[appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none',
-        sizeClasses[size],
-        widthClasses[size],
-        orientation === 'horizontal' && (decrement ? 'text-center' : 'text-start'),
-        orientation === 'horizontal' && decrement && decrementPaddings[size],
-        (orientation === 'horizontal' ? increment : (increment || decrement)) && incrementPaddings[size],
-        props.ui?.base,
-      )"
-      :disabled="disabled"
-      :placeholder="placeholder"
-      @input="update(Number(($event.target as HTMLInputElement).value))"
+      :class="ui.base({ class: props.ui?.base })"
+      @blur="onBlur"
+      @focus="emitFormFocus"
     />
-    <button
-      v-if="increment"
-      type="button"
-      aria-label="increment"
-      :disabled="disabled || incrementDisabled || (max != null && modelValue >= max)"
-      :class="cn(
-        buttonClasses,
-        orientation === 'horizontal'
-          ? cn('inset-y-0 right-1', buttonSizes[size])
-          : cn('top-0 right-1 h-1/2 rounded-tr-md', verticalButtonWidths[size]),
-      )"
-      @click="update(modelValue + step)"
-    >
-      <slot name="increment"><Plus :class="iconSizes[size]" /></slot>
-    </button>
-  </Primitive>
+
+    <div v-if="!!props.increment" data-slot="increment" :class="ui.increment({ class: props.ui?.increment })">
+      <NumberFieldIncrement as-child :disabled="disabled || props.incrementDisabled">
+        <slot name="increment">
+          <XButton
+            :icon="incrementIcon"
+            :color="color"
+            :size="size"
+            variant="link"
+            :aria-label="t('inputNumber.increment')"
+            v-bind="typeof props.increment === 'object' ? props.increment : undefined"
+          />
+        </slot>
+      </NumberFieldIncrement>
+    </div>
+
+    <div v-if="!!props.decrement" data-slot="decrement" :class="ui.decrement({ class: props.ui?.decrement })">
+      <NumberFieldDecrement as-child :disabled="disabled || props.decrementDisabled">
+        <slot name="decrement">
+          <XButton
+            :icon="decrementIcon"
+            :color="color"
+            :size="size"
+            variant="link"
+            :aria-label="t('inputNumber.decrement')"
+            v-bind="typeof props.decrement === 'object' ? props.decrement : undefined"
+          />
+        </slot>
+      </NumberFieldDecrement>
+    </div>
+  </NumberFieldRoot>
 </template>

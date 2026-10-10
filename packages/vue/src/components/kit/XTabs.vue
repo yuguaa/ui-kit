@@ -1,385 +1,193 @@
-<script setup lang="ts">
-/**
- * XTabs 标签页:按 Nuxt UI tabs 结构二次封装。
- * items 字段(label / icon / avatar / badge / slot / content / value)驱动,
- * variant 支持 pill / link,orientation 支持 horizontal / vertical,
- * 支持受控 modelValue 与非受控 defaultValue,内容区按 item.slot 分发插槽。
- */
-import type { Component, ComponentPublicInstance, HTMLAttributes } from 'vue'
-import { computed, ref } from 'vue'
-import { TabsContent, TabsIndicator, TabsList, TabsRoot, TabsTrigger } from 'reka-ui'
-import XAvatar from '@/components/kit/XAvatar.vue'
-import XBadge from '@/components/kit/XBadge.vue'
-import XIcon from '@/components/kit/XIcon.vue'
-import { cn } from '@/lib/utils'
+<!-- eslint-disable vue/block-tag-newline -->
+<script lang="ts">
+import type { ComponentPublicInstance, VNode } from 'vue'
+import type { TabsRootProps, TabsRootEmits } from 'reka-ui'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/tabs'
+import type { AvatarProps } from './XAvatar.vue'
+import type { BadgeProps } from './XBadge.vue'
+import type { IconProps } from './XIcon.vue'
+import type { DynamicSlots, GetItemKeys } from '../../lib/nuxt/types/utils'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-type IconName = InstanceType<typeof XIcon>['$props']['name']
-type IconSize = NonNullable<InstanceType<typeof XIcon>['$props']['size']>
-type AvatarSize = NonNullable<InstanceType<typeof XAvatar>['$props']['size']>
-type AvatarShape = NonNullable<InstanceType<typeof XAvatar>['$props']['shape']>
-type AvatarColor = NonNullable<InstanceType<typeof XAvatar>['$props']['color']>
-type BadgeColor = NonNullable<InstanceType<typeof XBadge>['$props']['color']>
-type BadgeVariant = NonNullable<InstanceType<typeof XBadge>['$props']['variant']>
-type BadgeSize = NonNullable<InstanceType<typeof XBadge>['$props']['size']>
+type Tabs = ComponentConfig<typeof theme, AppConfig, 'tabs'>
 
-type TabsColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
-type TabsVariant = 'pill' | 'link'
-type TabsSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-type TabsOrientation = 'horizontal' | 'vertical'
-
-/** 主题插槽类名,键名与 Nuxt UI 主题保持一致(leadingAvatarSize / trailingBadgeSize 为尺寸值) */
-export interface TabsUi {
-  root?: string
-  list?: string
-  indicator?: string
-  trigger?: string
-  leadingIcon?: string
-  leadingAvatar?: string
-  leadingAvatarSize?: AvatarSize
-  label?: string
-  trailingBadge?: string
-  trailingBadgeSize?: BadgeSize
-  content?: string
-}
-
-/** 标签项字段映射,与 Nuxt UI TabsItem 保持一致 */
 export interface TabsItem {
   label?: string
-  icon?: IconName
-  avatar?: {
-    src?: string
-    alt?: string
-    text?: string
-    size?: AvatarSize
-    shape?: AvatarShape
-    color?: AvatarColor
-  }
-  badge?: string | number | {
-    label?: string | number
-    color?: BadgeColor
-    variant?: BadgeVariant
-    size?: BadgeSize
-  }
+  /**
+   * @IconifyIcon
+   */
+  icon?: IconProps['name']
+  avatar?: AvatarProps
+  /**
+   * Display a badge on the item.
+   * `{ size: 'sm', color: 'neutral', variant: 'outline' }`{lang="ts-type"}
+   */
+  badge?: string | number | BadgeProps
   slot?: string
   content?: string
+  /**
+   * A unique value for the tab item. Defaults to the index.
+   * Also used as the Vue `key` for this item, so providing a stable value prevents tab
+   * content (and its local state) from remounting when items are added, removed, or reordered.
+   */
   value?: string | number
   disabled?: boolean
-  class?: HTMLAttributes['class']
-  ui?: Partial<Pick<TabsUi, 'trigger' | 'leadingIcon' | 'leadingAvatar' | 'leadingAvatarSize' | 'label' | 'trailingBadge' | 'trailingBadgeSize' | 'content'>>
+  class?: any
+  ui?: Partial<Pick<Tabs['slots'], 'trigger' | 'leadingIcon' | 'leadingAvatar' | 'leadingAvatarSize' | 'label' | 'trailingBadge' | 'trailingBadgeSize' | 'content'>>
   [key: string]: any
 }
 
-/** 变体 × 语义色:指示器背景、激活态文字与内容聚焦环(完整字面量) */
-const tabsColorClasses: Record<TabsColor, Record<TabsVariant, { indicator: string; trigger: string; content: string }>> = {
-  primary: {
-    pill: {
-      indicator: 'bg-primary',
-      trigger: 'data-[state=active]:text-background outline-primary/25 focus-visible:outline-3',
-      content: 'outline-primary/25',
-    },
-    link: {
-      indicator: 'bg-primary',
-      trigger: 'data-[state=active]:text-primary outline-primary/25 focus-visible:outline-3',
-      content: 'outline-primary/25',
-    },
-  },
-  secondary: {
-    pill: {
-      indicator: 'bg-secondary',
-      trigger: 'data-[state=active]:text-secondary-foreground outline-secondary/25 focus-visible:outline-3',
-      content: 'outline-secondary/25',
-    },
-    link: {
-      indicator: 'bg-secondary',
-      trigger: 'data-[state=active]:text-secondary-foreground outline-secondary/25 focus-visible:outline-3',
-      content: 'outline-secondary/25',
-    },
-  },
-  neutral: {
-    pill: {
-      indicator: 'bg-foreground',
-      trigger: 'data-[state=active]:text-background outline-foreground/25 focus-visible:outline-3',
-      content: 'outline-foreground/25',
-    },
-    link: {
-      indicator: 'bg-foreground',
-      trigger: 'data-[state=active]:text-foreground outline-foreground/25 focus-visible:outline-3',
-      content: 'outline-foreground/25',
-    },
-  },
-  success: {
-    pill: {
-      indicator: 'bg-success',
-      trigger: 'data-[state=active]:text-background outline-success/25 focus-visible:outline-3',
-      content: 'outline-success/25',
-    },
-    link: {
-      indicator: 'bg-success',
-      trigger: 'data-[state=active]:text-success outline-success/25 focus-visible:outline-3',
-      content: 'outline-success/25',
-    },
-  },
-  info: {
-    pill: {
-      indicator: 'bg-info',
-      trigger: 'data-[state=active]:text-background outline-info/25 focus-visible:outline-3',
-      content: 'outline-info/25',
-    },
-    link: {
-      indicator: 'bg-info',
-      trigger: 'data-[state=active]:text-info outline-info/25 focus-visible:outline-3',
-      content: 'outline-info/25',
-    },
-  },
-  warning: {
-    pill: {
-      indicator: 'bg-warning',
-      trigger: 'data-[state=active]:text-background outline-warning/25 focus-visible:outline-3',
-      content: 'outline-warning/25',
-    },
-    link: {
-      indicator: 'bg-warning',
-      trigger: 'data-[state=active]:text-warning outline-warning/25 focus-visible:outline-3',
-      content: 'outline-warning/25',
-    },
-  },
-  error: {
-    pill: {
-      indicator: 'bg-error',
-      trigger: 'data-[state=active]:text-background outline-error/25 focus-visible:outline-3',
-      content: 'outline-error/25',
-    },
-    link: {
-      indicator: 'bg-error',
-      trigger: 'data-[state=active]:text-error outline-error/25 focus-visible:outline-3',
-      content: 'outline-error/25',
-    },
-  },
-}
-
-/** 尺寸:触发器内边距字号、图标尺寸与头像尺寸 */
-const tabsSizeClasses: Record<TabsSize, { trigger: string; leadingIcon: IconSize; leadingAvatarSize: AvatarSize }> = {
-  xs: { trigger: 'px-2 py-1 text-xs gap-1', leadingIcon: 'sm', leadingAvatarSize: 'xs' },
-  sm: { trigger: 'px-2.5 py-1.5 text-xs gap-1.5', leadingIcon: 'sm', leadingAvatarSize: 'xs' },
-  md: { trigger: 'px-3 py-1.5 text-sm gap-1.5', leadingIcon: 'md', leadingAvatarSize: 'sm' },
-  lg: { trigger: 'px-3 py-2 text-sm gap-2', leadingIcon: 'md', leadingAvatarSize: 'sm' },
-  xl: { trigger: 'px-3 py-2 text-base gap-2', leadingIcon: 'lg', leadingAvatarSize: 'md' },
-}
-
-/** 变体:列表与指示器形状 */
-const tabsVariantClasses: Record<TabsVariant, { list: string; indicator: string }> = {
-  pill: { list: 'bg-muted rounded-lg', indicator: 'rounded-md shadow-xs' },
-  link: { list: 'border-border', indicator: 'rounded-full' },
-}
-
-/** 方向:根、列表、指示器与触发器的布局 */
-const tabsOrientationClasses: Record<TabsOrientation, { root: string; list: string; indicator: string; trigger: string }> = {
-  horizontal: {
-    root: 'flex-col',
-    list: 'w-full',
-    indicator: 'left-0 w-(--reka-tabs-indicator-size) translate-x-(--reka-tabs-indicator-position)',
-    trigger: 'justify-center',
-  },
-  vertical: {
-    root: '',
-    list: 'flex-col',
-    indicator: 'top-0 h-(--reka-tabs-indicator-size) translate-y-(--reka-tabs-indicator-position)',
-    trigger: '',
-  },
-}
-
-/** 方向 × 变体组合:指示器与列表的边距修正 */
-const tabsCompoundClasses: Record<TabsOrientation, Record<TabsVariant, { list?: string; indicator: string; trigger?: string }>> = {
-  horizontal: {
-    pill: { indicator: 'inset-y-1' },
-    link: { list: 'border-b -mb-px', indicator: '-bottom-px h-px' },
-  },
-  vertical: {
-    pill: { list: 'items-center', indicator: 'inset-x-1', trigger: 'w-full justify-center' },
-    link: { list: 'border-s -ms-px', indicator: '-start-px w-px' },
-  },
-}
-
-const props = withDefaults(defineProps<{
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 标签项数组 */
-  items?: TabsItem[]
-  /** 组件颜色 */
-  color?: TabsColor
-  /** 预设样式 */
-  variant?: TabsVariant
-  /** 标签尺寸 */
-  size?: TabsSize
-  /** 标签排列方向 */
-  orientation?: TabsOrientation
-  /** 是否渲染内容区 */
+export interface TabsProps<T extends TabsItem = TabsItem> extends Pick<TabsRootProps<string | number>, 'defaultValue' | 'modelValue' | 'activationMode' | 'unmountOnHide'> {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
+  items?: T[]
+  /**
+   * @defaultValue 'primary'
+   */
+  color?: Tabs['variants']['color']
+  /**
+   * @defaultValue 'pill'
+   */
+  variant?: Tabs['variants']['variant']
+  /**
+   * @defaultValue 'md'
+   */
+  size?: Tabs['variants']['size']
+  /**
+   * The orientation of the tabs.
+   * @defaultValue 'horizontal'
+   */
+  orientation?: Tabs['variants']['orientation']
+  /**
+   * The content of the tabs, can be disabled to prevent rendering the content.
+   * @defaultValue true
+   */
   content?: boolean
-  /** 从标签项取 value 的字段,支持点路径 */
-  valueKey?: string
-  /** 从标签项取 label 的字段,支持点路径 */
-  labelKey?: string
-  /** 初始激活的标签 value */
-  defaultValue?: string | number
-  /** 激活方式:automatic 聚焦即激活,manual 仅点击激活 */
-  activationMode?: 'automatic' | 'manual'
-  /** 隐藏面板时是否卸载内容 */
-  unmountOnHide?: boolean
-  /** 主题插槽类名 */
-  ui?: TabsUi
-  class?: HTMLAttributes['class']
-}>(), {
-  as: 'div',
-  items: () => [],
-  color: 'primary',
-  variant: 'pill',
-  size: 'md',
-  orientation: 'horizontal',
+  /**
+   * The key used to get the value from the item.
+   * @defaultValue 'value'
+   */
+  valueKey?: GetItemKeys<T>
+  /**
+   * The key used to get the label from the item.
+   * @defaultValue 'label'
+   */
+  labelKey?: GetItemKeys<T>
+  class?: any
+  ui?: Tabs['slots']
+}
+
+export interface TabsEmits extends TabsRootEmits<string | number> {}
+
+type SlotProps<T extends TabsItem> = (props: { item: T, index: number, ui: Tabs['ui'] }) => VNode[]
+
+export type TabsSlots<T extends TabsItem = TabsItem> = {
+  'leading'?: SlotProps<T>
+  'default'?(props: { item: T, index: number }): VNode[]
+  'trailing'?: SlotProps<T>
+  'content'?: SlotProps<T>
+  'list-leading'?(props?: {}): VNode[]
+  'list-trailing'?(props?: {}): VNode[]
+} & DynamicSlots<T, undefined, { index: number, ui: Tabs['ui'] }>
+
+</script>
+
+<script setup lang="ts" generic="T extends TabsItem">
+import { ref, computed } from 'vue'
+import { TabsRoot, TabsList, TabsIndicator, TabsTrigger, TabsContent } from 'reka-ui'
+import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
+import { reactivePick } from '@vueuse/core'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { get } from '../../lib/nuxt/utils'
+import { tv } from '../../lib/nuxt/utils/tv'
+import XIcon from './XIcon.vue'
+import XAvatar from './XAvatar.vue'
+import XBadge from './XBadge.vue'
+
+const _props = withDefaults(defineProps</* @vue-ignore */ TabsProps<T>>(), {
   content: true,
-  valueKey: 'value',
-  labelKey: 'label',
   defaultValue: '0',
-  activationMode: 'automatic',
+  orientation: 'horizontal',
   unmountOnHide: true,
+  valueKey: 'value',
+  labelKey: 'label'
 })
+const emits = defineEmits</* @vue-ignore */ TabsEmits>()
+const slots = defineSlots</* @vue-ignore */ TabsSlots<T>>()
 
-const modelValue = defineModel<string | number>()
+const props = useComponentProps<TabsProps<T>>('tabs', _props)
 
-/** 取对象字段,支持点路径 */
-function get(item: TabsItem, key: string): string | number | undefined {
-  return key.split('.').reduce<unknown>((acc, part) => {
-    if (acc == null || typeof acc !== 'object') return undefined
-    return (acc as Record<string, unknown>)[part]
-  }, item) as string | number | undefined
-}
+const appConfig = useAppConfig() as Tabs['AppConfig']
 
-/** 触发器元素引用,与 Nuxt 一致对外暴露 */
-const triggersRef = ref<(ComponentPublicInstance | Element | null)[]>([])
+const rootProps = useForwardProps(reactivePick(props, 'as', 'unmountOnHide'), emits)
 
-function setTriggerRef(index: number, el: unknown) {
-  triggersRef.value[index] = el as ComponentPublicInstance | Element | null
-}
-
-defineExpose({ triggersRef })
-
-/** 传给 leading / trailing / content 插槽的 ui 对象(各槽合并后的类名) */
-const slotUi = computed<TabsUi>(() => ({
-  root: cn('flex items-center gap-2', tabsOrientationClasses[props.orientation].root, props.ui?.root, props.class),
-  list: cn(
-    'relative flex p-1 group',
-    tabsOrientationClasses[props.orientation].list,
-    tabsVariantClasses[props.variant].list,
-    tabsCompoundClasses[props.orientation][props.variant].list,
-    props.ui?.list,
-  ),
-  indicator: cn(
-    'absolute transition-[translate,width] duration-200 ease-out motion-reduce:transition-none',
-    tabsVariantClasses[props.variant].indicator,
-    tabsOrientationClasses[props.orientation].indicator,
-    tabsCompoundClasses[props.orientation][props.variant].indicator,
-    tabsColorClasses[props.color][props.variant].indicator,
-    props.ui?.indicator,
-  ),
-  trigger: props.ui?.trigger,
-  leadingIcon: cn('shrink-0', props.ui?.leadingIcon),
-  leadingAvatar: cn('shrink-0', props.ui?.leadingAvatar),
-  leadingAvatarSize: props.ui?.leadingAvatarSize ?? tabsSizeClasses[props.size].leadingAvatarSize,
-  label: cn('truncate', props.ui?.label),
-  trailingBadge: cn('shrink-0', props.ui?.trailingBadge),
-  trailingBadgeSize: props.ui?.trailingBadgeSize ?? 'sm',
-  content: props.ui?.content,
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.tabs || {}) })({
+  color: props.color,
+  variant: props.variant,
+  size: props.size,
+  orientation: props.orientation
 }))
+
+const triggersRef = ref<ComponentPublicInstance[]>([])
+
+function setTriggerRef(index: number, el: Element | ComponentPublicInstance | null) {
+  // @ts-expect-error - ComponentPublicInstance type mismatch in Nuxt module augmentation
+  triggersRef.value[index] = el
+}
+
+defineExpose({
+  triggersRef
+})
 </script>
 
 <template>
   <TabsRoot
-    :as="as"
-    :model-value="modelValue"
+    v-bind="rootProps"
+    :model-value="props.modelValue"
     :default-value="props.defaultValue"
     :orientation="props.orientation"
     :activation-mode="props.activationMode"
-    :unmount-on-hide="props.unmountOnHide"
     data-slot="root"
-    :class="cn('flex items-center gap-2', tabsOrientationClasses[props.orientation].root, props.ui?.root, props.class)"
-    @update:model-value="modelValue = $event"
+    :class="ui.root({ class: [props.ui?.root, props.class] })"
   >
-    <TabsList
-      data-slot="list"
-      :class="cn(
-        'relative flex p-1 group',
-        tabsOrientationClasses[props.orientation].list,
-        tabsVariantClasses[props.variant].list,
-        tabsCompoundClasses[props.orientation][props.variant].list,
-        props.ui?.list,
-      )"
-    >
-      <TabsIndicator
-        data-slot="indicator"
-        :class="cn(
-          'absolute transition-[translate,width] duration-200 ease-out motion-reduce:transition-none',
-          tabsVariantClasses[props.variant].indicator,
-          tabsOrientationClasses[props.orientation].indicator,
-          tabsCompoundClasses[props.orientation][props.variant].indicator,
-          tabsColorClasses[props.color][props.variant].indicator,
-          props.ui?.indicator,
-        )"
-      />
+    <TabsList data-slot="list" :class="ui.list({ class: props.ui?.list })">
+      <TabsIndicator data-slot="indicator" :class="ui.indicator({ class: props.ui?.indicator })" />
 
       <slot name="list-leading" />
 
       <TabsTrigger
         v-for="(item, index) of props.items"
-        :key="get(item, props.valueKey) ?? index"
+        :key="get(item, props.valueKey as string) ?? index"
         :ref="el => setTriggerRef(index, el)"
-        :value="get(item, props.valueKey) ?? String(index)"
+        :value="get(item, props.valueKey as string) ?? String(index)"
         :disabled="item.disabled"
         data-slot="trigger"
-        :class="cn(
-          'group relative inline-flex min-w-0 items-center rounded-md font-medium transition-colors',
-          'data-[state=inactive]:text-muted-foreground data-[state=inactive]:hover:not-disabled:text-foreground',
-          'disabled:cursor-not-allowed disabled:opacity-75',
-          tabsSizeClasses[props.size].trigger,
-          tabsOrientationClasses[props.orientation].trigger,
-          tabsCompoundClasses[props.orientation][props.variant].trigger,
-          tabsColorClasses[props.color][props.variant].trigger,
-          props.ui?.trigger,
-          item.ui?.trigger,
-        )"
+        :class="ui.trigger({ class: [props.ui?.trigger, item.ui?.trigger] })"
       >
-        <slot name="leading" :item="item" :index="index" :ui="slotUi">
-          <XIcon
-            v-if="item.icon"
-            :name="item.icon"
-            :size="tabsSizeClasses[props.size].leadingIcon"
-            data-slot="leadingIcon"
-            :class="cn('shrink-0', props.ui?.leadingIcon, item.ui?.leadingIcon)"
-          />
-          <XAvatar
-            v-else-if="item.avatar"
-            v-bind="item.avatar"
-            :size="item.ui?.leadingAvatarSize ?? props.ui?.leadingAvatarSize ?? tabsSizeClasses[props.size].leadingAvatarSize"
-            data-slot="leadingAvatar"
-            :class="cn('shrink-0', props.ui?.leadingAvatar, item.ui?.leadingAvatar)"
-          />
+        <slot name="leading" :item="item" :index="index" :ui="ui">
+          <XIcon v-if="item.icon" :name="item.icon" data-slot="leadingIcon" :class="ui.leadingIcon({ class: [props.ui?.leadingIcon, item.ui?.leadingIcon] })" />
+          <XAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" data-slot="leadingAvatar" :class="ui.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" />
         </slot>
 
-        <span
-          v-if="get(item, props.labelKey) != null || !!$slots.default"
-          data-slot="label"
-          :class="cn('truncate', props.ui?.label, item.ui?.label)"
-        >
-          <slot :item="item" :index="index">{{ get(item, props.labelKey) }}</slot>
+        <span v-if="get(item, props.labelKey as string) || !!slots.default" data-slot="label" :class="ui.label({ class: [props.ui?.label, item.ui?.label] })">
+          <slot :item="item" :index="index">{{ get(item, props.labelKey as string) }}</slot>
         </span>
 
-        <slot name="trailing" :item="item" :index="index" :ui="slotUi">
+        <slot name="trailing" :item="item" :index="index" :ui="ui">
           <XBadge
-            v-if="item.badge != null"
+            v-if="item.badge || item.badge === 0"
             color="neutral"
             variant="outline"
-            :size="item.ui?.trailingBadgeSize ?? props.ui?.trailingBadgeSize ?? 'sm'"
-            v-bind="typeof item.badge === 'string' || typeof item.badge === 'number' ? { label: item.badge } : item.badge"
+            :size="((item.ui?.trailingBadgeSize || props.ui?.trailingBadgeSize || ui.trailingBadgeSize()) as BadgeProps['size'])"
+            v-bind="(typeof item.badge === 'string' || typeof item.badge === 'number') ? { label: item.badge } : item.badge"
             data-slot="trailingBadge"
-            :class="cn('shrink-0', props.ui?.trailingBadge, item.ui?.trailingBadge)"
+            :class="ui.trailingBadge({ class: [props.ui?.trailingBadge, item.ui?.trailingBadge] })"
           />
         </slot>
       </TabsTrigger>
@@ -387,21 +195,9 @@ const slotUi = computed<TabsUi>(() => ({
       <slot name="list-trailing" />
     </TabsList>
 
-    <template v-if="props.content">
-      <TabsContent
-        v-for="(item, index) of props.items"
-        :key="get(item, props.valueKey) ?? index"
-        :value="get(item, props.valueKey) ?? String(index)"
-        data-slot="content"
-        :class="cn(
-          'w-full rounded-md focus-visible:outline-3',
-          tabsColorClasses[props.color][props.variant].content,
-          props.ui?.content,
-          item.ui?.content,
-          item.class,
-        )"
-      >
-        <slot :name="item.slot ?? 'content'" :item="item" :index="index" :ui="slotUi">
+    <template v-if="!!props.content">
+      <TabsContent v-for="(item, index) of props.items" :key="get(item, props.valueKey as string) ?? index" :value="get(item, props.valueKey as string) ?? String(index)" data-slot="content" :class="ui.content({ class: [props.ui?.content, item.ui?.content, item.class] })">
+        <slot :name="((item.slot || 'content') as keyof TabsSlots<T>)" :item="(item as Extract<T, { slot: string; }>)" :index="index" :ui="ui">
           {{ item.content }}
         </slot>
       </TabsContent>

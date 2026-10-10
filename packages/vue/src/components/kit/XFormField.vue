@@ -1,206 +1,149 @@
-<script setup lang="ts">
-/**
- * XFormField 表单字段：带标签、辅助说明与错误信息的表单字段。
- * 结构与 Nuxt UI 对齐：root > wrapper（labelWrapper + description）> container（控件 + error / help）。
- * 错误信息优先取 error prop，其次按 name 或 errorPattern 匹配表单校验结果。
- * eagerValidation / validateOnInputDelay 通过 provide 供字段内的表单控件读取。
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { computed, provide, useId, useSlots } from 'vue'
-import { Label, Primitive } from 'reka-ui'
-import {
-  XFormFieldContextKey,
-  injectXForm,
-  type FormFieldContext,
-} from '@/components/kit/XFormContext'
-import { cn } from '@/lib/utils'
+<script lang="ts">
+import type { Ref, VNode } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/form-field'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-type FormFieldSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-type FormFieldOrientation = 'vertical' | 'horizontal'
+type FormField = ComponentConfig<typeof theme, AppConfig, 'formField'>
 
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface FormFieldUi {
-  root?: string
-  wrapper?: string
-  labelWrapper?: string
-  label?: string
-  container?: string
-  description?: string
-  error?: string
-  hint?: string
-  help?: string
-}
-
-/** 尺寸 → 根节点字号（对齐 Nuxt UI form-field 主题） */
-const sizeClasses: Record<FormFieldSize, string> = {
-  xs: 'text-xs',
-  sm: 'text-xs',
-  md: 'text-sm',
-  lg: 'text-sm',
-  xl: 'text-base',
-}
-
-const props = withDefaults(defineProps<{
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 字段名（关联表单校验结果） */
+export interface FormFieldProps {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
+  /** The name of the FormField. Also used to match form errors. */
   name?: string
-  /** 正则匹配表单错误名，用于数组字段（如 tags.0） */
+  /** A regular expression to match form error names. Useful for components with array values such as InputTags, where errors include array indices in their name (e.g. `tags.0`). */
   errorPattern?: RegExp
-  /** 标签文字 */
   label?: string
-  /** 辅助说明 */
   description?: string
-  /** 无错误时显示的帮助文案 */
   help?: string
-  /** 错误信息：true 强制错误态，false 关闭错误显示 */
   error?: boolean | string
-  /** 标签右侧的提示文案（说明填写要求） */
   hint?: string
-  /** 尺寸（控制根节点字号） */
-  size?: FormFieldSize
-  /** 是否必填 */
+  /**
+   * @defaultValue 'md'
+   */
+  size?: FormField['variants']['size']
   required?: boolean
-  /** 输入时立即校验，不等待 blur */
+  /** If true, validation on input will be active immediately instead of waiting for a blur event. */
   eagerValidation?: boolean
-  /** 输入校验的防抖延迟（毫秒） */
+  /**
+   * Delay in milliseconds before validating the form on input events.
+   * @defaultValue `300`
+   */
   validateOnInputDelay?: number
-  /** 排列方向 */
-  orientation?: FormFieldOrientation
-  /** 控件 id（label 关联用） */
-  id?: string
-  /** 主题插槽类名 */
-  ui?: FormFieldUi
-  class?: HTMLAttributes['class']
-}>(), {
+  /**
+   * The orientation of the form field.
+   * @defaultValue 'vertical'
+   */
+  orientation?: FormField['variants']['orientation']
+  class?: any
+  ui?: FormField['slots']
+}
+
+export interface FormFieldSlots {
+  label?(props: { label: string | undefined }): VNode[]
+  hint?(props: { hint: string | undefined }): VNode[]
+  description?(props: { description: string | undefined }): VNode[]
+  help?(props: { help: string | undefined }): VNode[]
+  error?(props: { error: string | true | undefined }): VNode[]
+  default?(props: { error: string | true | undefined }): VNode[]
+}
+</script>
+
+<script setup lang="ts">
+import { computed, ref, inject, provide, useId, watch } from 'vue'
+import { Primitive, Label } from 'reka-ui'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { formFieldInjectionKey, inputIdInjectionKey, formErrorsInjectionKey, formInputsInjectionKey } from '../../lib/nuxt/composables/useFormField'
+import { tv } from '../../lib/nuxt/utils/tv'
+import type { FormError, FormFieldInjectedOptions } from '../../lib/nuxt/types/form'
+
+const _props = withDefaults(defineProps</* @vue-ignore */ FormFieldProps>(), {
   error: undefined,
-  orientation: 'vertical',
-  validateOnInputDelay: 300,
+  orientation: 'vertical'
 })
+const slots = defineSlots</* @vue-ignore */ FormFieldSlots>()
 
-const form = injectXForm()
+const props = useComponentProps('formField', _props)
 
-const fallbackId = useId()
-const ariaId = computed(() => props.id ?? fallbackId)
+const appConfig = useAppConfig() as FormField['AppConfig']
 
-/** 字段错误：error prop 优先，其次按 name / errorPattern 匹配表单错误 */
-const fieldError = computed(() => {
-  if (props.error !== undefined && props.error !== false) return props.error
-  if (props.name != null && form.errors[props.name]) return form.errors[props.name]
-  const pattern = props.errorPattern
-  if (pattern) {
-    const key = Object.keys(form.errors).find((name) => pattern.test(name))
-    if (key != null) return form.errors[key]
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.formField || {}) })({
+  size: props.size,
+  required: props.required,
+  orientation: props.orientation
+}))
+
+const formErrors = inject<Ref<FormError[]> | null>(formErrorsInjectionKey, null)
+
+// eslint-disable-next-line vue/no-dupe-keys
+const error = computed(() => props.error || formErrors?.value?.find(error => error.name === props.name || (props.errorPattern && error.name?.match(props.errorPattern)))?.message)
+
+const id = ref(useId())
+// Copies id's initial value to bind aria-attributes such as aria-describedby.
+// This is required for the RadioGroup component which unsets the id value.
+const ariaId = id.value
+
+const formInputs = inject(formInputsInjectionKey, undefined)
+watch(id, () => {
+  if (formInputs && props.name) {
+    formInputs.value[props.name] = { id: id.value, pattern: props.errorPattern }
   }
-  return undefined
-})
+}, { immediate: true })
 
-/** 有标签或说明时 container 才参与布局（对齐 Nuxt UI 门控） */
-const slots = useSlots()
-const hasLabel = computed(() => !!props.label || !!slots.label)
-const hasDescription = computed(() => !!props.description || !!slots.description)
-const hasHint = computed(() => !!props.hint || !!slots.hint)
-const hasHelp = computed(() => !!props.help || !!slots.help)
-const hasMeta = computed(() => hasLabel.value || hasDescription.value)
+provide(inputIdInjectionKey, id)
 
-provide(
-  XFormFieldContextKey,
-  computed<FormFieldContext>(() => ({
-    name: props.name,
-    size: props.size,
-    error: fieldError.value,
-    eagerValidation: props.eagerValidation,
-    validateOnInputDelay: props.validateOnInputDelay,
-    errorPattern: props.errorPattern,
-    hint: props.hint,
-    description: props.description,
-    help: props.help,
-    ariaId: ariaId.value,
-  })),
-)
+provide(formFieldInjectionKey, computed(() => ({
+  error: error.value,
+  name: props.name,
+  size: props.size,
+  eagerValidation: props.eagerValidation,
+  validateOnInputDelay: props.validateOnInputDelay,
+  errorPattern: props.errorPattern,
+  hint: props.hint,
+  description: props.description,
+  help: props.help,
+  ariaId
+}) as FormFieldInjectedOptions<FormFieldProps>))
 </script>
 
 <template>
-  <Primitive
-    :as="as ?? 'div'"
-    :data-orientation="orientation"
-    data-slot="root"
-    :class="cn(
-      sizeClasses[size ?? 'md'],
-      orientation === 'horizontal' && 'flex justify-between place-items-baseline gap-2',
-      props.ui?.root,
-      props.class,
-    )"
-  >
-    <div data-slot="wrapper" :class="cn(props.ui?.wrapper)">
-      <div
-        v-if="hasLabel"
-        data-slot="labelWrapper"
-        :class="cn('flex content-center items-center justify-between gap-1', props.ui?.labelWrapper)"
-      >
-        <Label
-          :for="ariaId"
-          data-slot="label"
-          :class="cn('block font-medium text-foreground', props.ui?.label)"
-        >
-          <slot name="label" :label="label">
-            {{ label }}
+  <Primitive :as="props.as" :data-orientation="props.orientation" data-slot="root" :class="ui.root({ class: [props.ui?.root, props.class] })">
+    <div data-slot="wrapper" :class="ui.wrapper({ class: props.ui?.wrapper })">
+      <div v-if="props.label || !!slots.label" data-slot="labelWrapper" :class="ui.labelWrapper({ class: props.ui?.labelWrapper })">
+        <Label :for="id" data-slot="label" :class="ui.label({ class: props.ui?.label })">
+          <slot name="label" :label="props.label">
+            {{ props.label }}
           </slot>
-          <span v-if="required" class="ml-0.5 text-error">*</span>
         </Label>
-        <span
-          v-if="hasHint"
-          :id="`${ariaId}-hint`"
-          data-slot="hint"
-          :class="cn('text-muted-foreground', props.ui?.hint)"
-        >
-          <slot name="hint" :hint="hint">
-            {{ hint }}
+        <span v-if="props.hint || !!slots.hint" :id="`${ariaId}-hint`" data-slot="hint" :class="ui.hint({ class: props.ui?.hint })">
+          <slot name="hint" :hint="props.hint">
+            {{ props.hint }}
           </slot>
         </span>
       </div>
 
-      <p
-        v-if="hasDescription"
-        :id="`${ariaId}-description`"
-        data-slot="description"
-        :class="cn('text-muted-foreground', props.ui?.description)"
-      >
-        <slot name="description" :description="description">
-          {{ description }}
+      <p v-if="props.description || !!slots.description" :id="`${ariaId}-description`" data-slot="description" :class="ui.description({ class: props.ui?.description })">
+        <slot name="description" :description="props.description">
+          {{ props.description }}
         </slot>
       </p>
     </div>
 
-    <div
-      :class="hasMeta
-        ? cn(
-            'relative',
-            orientation === 'vertical' && 'mt-1',
-            props.ui?.container,
-          )
-        : undefined"
-    >
-      <slot :error="fieldError" />
-      <div
-        v-if="error !== false && ((typeof fieldError === 'string' && fieldError) || !!slots.error)"
-        :id="`${ariaId}-error`"
-        role="alert"
-        data-slot="error"
-        :class="cn('mt-2 text-error', props.ui?.error)"
-      >
-        <slot name="error" :error="fieldError">
-          {{ fieldError }}
+    <div :class="[(props.label || !!slots.label || props.description || !!slots.description) && ui.container({ class: props.ui?.container })]">
+      <slot :error="error" />
+      <div v-if="props.error !== false && ((typeof error === 'string' && error) || !!slots.error)" :id="`${ariaId}-error`" data-slot="error" :class="ui.error({ class: props.ui?.error })">
+        <slot name="error" :error="error">
+          {{ error }}
         </slot>
       </div>
-      <div
-        v-else-if="hasHelp"
-        :id="`${ariaId}-help`"
-        data-slot="help"
-        :class="cn('mt-2 text-muted-foreground', props.ui?.help)"
-      >
-        <slot name="help" :help="help">
-          {{ help }}
+      <div v-else-if="props.help || !!slots.help" :id="`${ariaId}-help`" data-slot="help" :class="ui.help({ class: props.ui?.help })">
+        <slot name="help" :help="props.help">
+          {{ props.help }}
         </slot>
       </div>
     </div>

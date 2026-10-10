@@ -1,1086 +1,571 @@
-<script setup lang="ts">
-/**
- * XNavigationMenu 导航菜单：为页面提供功能导航。
- * 垂直模式使用手风琴展开子菜单，collapsed 折叠为仅图标并用
- * popover / tooltip 展示子菜单与标签；水平模式使用 reka
- * NavigationMenu 原语悬浮展开内容面板。
- * 支持字段映射（labelKey / valueKey）、highlight 指示线与 ui 主题插槽。
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { computed, reactive, ref } from 'vue'
-import { createReusableTemplate } from '@vueuse/core'
-import {
-  HoverCardContent,
-  HoverCardPortal,
-  HoverCardRoot,
-  HoverCardTrigger,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuRoot,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-  PopoverContent,
-  PopoverPortal,
-  PopoverRoot,
-  PopoverTrigger,
-  Primitive,
-  TooltipContent,
-  TooltipPortal,
-  TooltipProvider,
-  TooltipRoot,
-  TooltipTrigger,
-} from 'reka-ui'
-import XAvatar from '@/components/kit/XAvatar.vue'
-import XBadge from '@/components/kit/XBadge.vue'
-import XChip from '@/components/kit/XChip.vue'
-import XIcon from '@/components/kit/XIcon.vue'
-import { cn } from '@/lib/utils'
-import type { MenuColor, MenuIcon } from './XDropdownMenu.vue'
-import type { AvatarSize } from './XAvatarGroupContext'
+<!-- eslint-disable vue/block-tag-newline -->
+<script lang="ts">
+import type { NavigationMenuRootProps, NavigationMenuContentProps, NavigationMenuContentEmits, AccordionRootProps } from 'reka-ui'
+import type { VNode } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/navigation-menu'
+import type { AvatarProps } from './XAvatar.vue'
+import type { BadgeProps } from './XBadge.vue'
+import type { ChipProps } from './XChip.vue'
+import type { IconProps } from './XIcon.vue'
+import type { LinkProps } from './XLink.vue'
+import type { PopoverProps } from './XPopover.vue'
+import type { TooltipProps } from './XTooltip.vue'
+import type { ArrayOrNested, DynamicSlots, GetItemKeys, MergeTypes, NestedItem, EmitsToProps } from '../../lib/nuxt/types/utils'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-type NavigationMenuOrientation = 'horizontal' | 'vertical'
-type NavigationMenuMode = 'vertical' | 'horizontal' | 'inline'
-type NavigationMenuVariant = 'pill' | 'link'
-type NavigationMenuType = 'single' | 'multiple'
-type NavigationMenuContentOrientation = 'horizontal' | 'vertical'
-type BadgeSize = NonNullable<InstanceType<typeof XBadge>['$props']['size']>
-type ChipSize = NonNullable<InstanceType<typeof XChip>['$props']['size']>
+type NavigationMenu = ComponentConfig<typeof theme, AppConfig, 'navigationMenu'>
 
-/** 折叠态 tooltip 配置 */
-export interface NavigationMenuTooltipOptions {
-  /** 显示延迟（毫秒） */
-  delayDuration?: number
-  /** 浮层定位 */
-  content?: { side?: 'top' | 'right' | 'bottom' | 'left'; sideOffset?: number }
-}
-
-/** 折叠态 popover 配置 */
-export interface NavigationMenuPopoverOptions {
-  /** 触发方式 */
-  mode?: 'hover' | 'click'
-  /** 浮层定位 */
-  content?: {
-    side?: 'top' | 'right' | 'bottom' | 'left'
-    align?: 'start' | 'center' | 'end'
-    alignOffset?: number
-    sideOffset?: number
-  }
-}
-
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface NavigationMenuUi {
-  root?: string
-  list?: string
-  label?: string
-  item?: string
-  link?: string
-  linkLeadingIcon?: string
-  linkLeadingAvatar?: string
-  linkLeadingAvatarSize?: AvatarSize
-  linkLeadingChipSize?: ChipSize
-  linkTrailing?: string
-  linkTrailingBadge?: string
-  linkTrailingBadgeSize?: BadgeSize
-  linkTrailingIcon?: string
-  linkLabel?: string
-  linkLabelExternalIcon?: string
-  childList?: string
-  childLabel?: string
-  childItem?: string
-  childLink?: string
-  childLinkWrapper?: string
-  childLinkIcon?: string
-  childLinkLabel?: string
-  childLinkLabelExternalIcon?: string
-  childLinkDescription?: string
-  separator?: string
-  viewportWrapper?: string
-  viewport?: string
-  content?: string
-  indicator?: string
-  arrow?: string
-}
-
-export interface NavigationMenuItemData {
-  /** 菜单项唯一标识（可用 valueKey 指定其他字段） */
-  key?: string
-  /** 菜单项标题（可用 labelKey 指定其他字段） */
-  label?: string
-  /** 前置图标 */
-  icon?: MenuIcon
-  /** 前置头像 */
-  avatar?: Record<string, any>
-  /** 尾部徽标 */
-  badge?: string | number | Record<string, any>
-  /** 图标外包裹 chip */
-  chip?: boolean | Record<string, any>
-  /** 折叠时用 tooltip 显示标签 */
-  tooltip?: boolean | NavigationMenuTooltipOptions
-  /** 折叠时用 popover 展示子菜单 */
-  popover?: boolean | NavigationMenuPopoverOptions
-  /** 尾部图标（无子菜单时也可显示） */
-  trailingIcon?: MenuIcon
-  /** 项类型：label 分组标题（仅垂直方向）/ trigger 强制可折叠 / link 链接 */
-  type?: 'label' | 'trigger' | 'link'
-  /** 子菜单项 */
-  children?: NavigationMenuItemData[]
-  /** 子项说明（水平方向子菜单中显示） */
+export interface NavigationMenuChildItem extends Omit<NavigationMenuItem, 'type' | 'ui'> {
+  /** Description is only used when `orientation` is `horizontal`. */
   description?: string
-  /** 链接目标，为 _blank 时标签后显示 externalIcon */
-  target?: string
-  /** 默认展开（垂直手风琴） */
-  defaultOpen?: boolean
-  /** 受控展开（垂直手风琴） */
-  open?: boolean
-  /** 是否禁用 */
-  disabled?: boolean
-  /** 选中回调 */
-  onSelect?: (item: NavigationMenuItemData) => void
-  class?: HTMLAttributes['class']
   [key: string]: any
 }
 
-/** 语义色文字：选中项与图标（link 变体） */
-const navColorTextClasses: Record<MenuColor, string> = {
-  primary: 'text-primary',
-  secondary: 'text-secondary-foreground',
-  neutral: 'text-foreground',
-  success: 'text-success',
-  info: 'text-info',
-  warning: 'text-warning',
-  error: 'text-error',
+export interface NavigationMenuItem extends Omit<LinkProps, 'type' | 'raw' | 'custom'> {
+  label?: string
+  /**
+   * @IconifyIcon
+   */
+  icon?: IconProps['name']
+  avatar?: AvatarProps
+  /**
+   * Display a badge on the item.
+   * `{ size: 'sm', color: 'neutral', variant: 'outline' }`{lang="ts-type"}
+   */
+  badge?: string | number | BadgeProps
+  /**
+   * Display a chip around the icon of the item.
+   * `{ inset: true }`{lang="ts-type"}
+   */
+  chip?: boolean | ChipProps
+  /**
+   * Display a tooltip on the item with the label of the item.
+   * In `vertical` orientation, only works when the menu is `collapsed`.
+   * In `horizontal` orientation, works on any item.
+   */
+  tooltip?: boolean | TooltipProps
+  /**
+   * Display a popover on the item when the menu is collapsed with the children list.
+   * This has priority over the global `popover` prop.
+   */
+  popover?: boolean | PopoverProps
+  /**
+   * @IconifyIcon
+   */
+  trailingIcon?: IconProps['name']
+  /**
+   * The type of the item.
+   * The `label` type is only displayed in `vertical` orientation.
+   * The `trigger` type is used to force the item to be collapsible when its a link in `vertical` orientation.
+   * @defaultValue 'link'
+   */
+  type?: 'label' | 'trigger' | 'link'
+  slot?: string
+  /**
+   * The value of the item. Avoid using `index` as the value to prevent conflicts in horizontal orientation with Reka UI.
+   * @defaultValue `item-${index}`, `item-${level}-${index}` for nested children, or `group-${listIndex}-item-${index}` when using grouped items
+   */
+  value?: string
+  children?: NavigationMenuChildItem[]
+  defaultOpen?: boolean
+  open?: boolean
+  onSelect?: (e: Event) => void
+  class?: any
+  ui?: Partial<Pick<NavigationMenu['slots'], 'item' | 'linkLeadingAvatarSize' | 'linkLeadingAvatar' | 'linkLeadingIcon' | 'linkLeadingChipSize' | 'linkLabel' | 'linkLabelExternalIcon' | 'linkTrailing' | 'linkTrailingBadgeSize' | 'linkTrailingBadge' | 'linkTrailingIcon' | 'label' | 'link' | 'content' | 'childList' | 'childLabel' | 'childItem' | 'childLink' | 'childLinkIcon' | 'childLinkWrapper' | 'childLinkLabel' | 'childLinkLabelExternalIcon' | 'childLinkDescription'>>
+  [key: string]: any
 }
 
-/** 语义色选中背景（pill 变体） */
-const navActivePillClasses: Record<MenuColor, string> = {
-  primary: 'bg-primary/10 text-primary',
-  secondary: 'bg-secondary text-secondary-foreground',
-  neutral: 'bg-muted text-foreground',
-  success: 'bg-success/10 text-success',
-  info: 'bg-info/10 text-info',
-  warning: 'bg-warning/10 text-warning',
-  error: 'bg-error/10 text-error',
-}
+type SingleOrMultipleType = 'single' | 'multiple'
+type Orientation = NavigationMenu['variants']['orientation']
 
-/** 语义色指示线 */
-const navHighlightLineClasses: Record<MenuColor, string> = {
-  primary: 'after:bg-primary',
-  secondary: 'after:bg-secondary',
-  neutral: 'after:bg-inverted',
-  success: 'after:bg-success',
-  info: 'after:bg-info',
-  warning: 'after:bg-warning',
-  error: 'after:bg-error',
-}
+type NavigationMenuModelValue<
+  K extends SingleOrMultipleType = SingleOrMultipleType,
+  O extends Orientation = Orientation
+> = O extends 'horizontal' ? string : K extends 'single' ? string : K extends 'multiple' ? string[] : string | string[]
 
-/** 把受控值统一转为数组 */
-function toValueList(value: string | string[] | undefined): string[] {
-  if (value == null) return []
-  return Array.isArray(value) ? value : [value]
-}
-
-const props = withDefaults(defineProps<{
-  /** 菜单项数组，二维数组时渲染多列表并以分隔线隔开 */
-  items: NavigationMenuItemData[] | NavigationMenuItemData[][]
-  /** 当前选中的 key（或 valueKey 字段值），用于高亮当前项 */
-  selectedKeys?: string[]
-  /** 受控值：水平方向为打开的面板项值，垂直方向为展开的手风琴项值 */
-  value?: string | string[]
-  /** 非受控初始值 */
-  defaultValue?: string | string[]
-  /** 垂直方向手风琴展开模式：single 单开，multiple 多开 */
-  type?: NavigationMenuType
-  /** 垂直方向手风琴是否可关闭已展开项 */
-  collapsible?: boolean
-  /** 根级禁用（垂直方向手风琴） */
-  disabled?: boolean
-  /** 菜单模式（kit 既有属性，inline 等同垂直手风琴） */
-  mode?: NavigationMenuMode
-  /** 排列方向 */
-  orientation?: NavigationMenuOrientation
-  /** 语义色：选中项文字颜色 */
-  color?: MenuColor
-  /** 预设样式 */
-  variant?: NavigationMenuVariant
-  /** 垂直方向折叠为仅图标，子菜单用 popover / 标签用 tooltip 展示 */
+export interface NavigationMenuProps<
+  T extends ArrayOrNested<NavigationMenuItem> = ArrayOrNested<NavigationMenuItem>,
+  K extends SingleOrMultipleType = SingleOrMultipleType,
+  O extends Orientation = Orientation
+> extends Pick<NavigationMenuRootProps, 'delayDuration' | 'disableClickTrigger' | 'disableHoverTrigger' | 'skipDelayDuration' | 'disablePointerLeaveClose' | 'unmountOnHide'>, Pick<AccordionRootProps, 'disabled' | 'collapsible'> {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
+  /**
+   * Determines whether a "single" or "multiple" items can be selected at a time.
+   *
+   * Only works when `orientation` is `vertical`.
+   * @defaultValue 'multiple'
+   */
+  type?: K
+  /**
+   * The controlled value of the active item(s).
+   * - In horizontal orientation: always `string`
+   * - In vertical orientation with `type="single"`: `string`
+   * - In vertical orientation with `type="multiple"`: `string[]`
+   *
+   * Use this when you need to control the state of the items. Can be binded with `v-model`
+   */
+  modelValue?: NavigationMenuModelValue<K, O>
+  /**
+   * The default active value of the item(s).
+   * - In horizontal orientation: always `string`
+   * - In vertical orientation with `type="single"`: `string`
+   * - In vertical orientation with `type="multiple"`: `string[]`
+   *
+   * Use when you do not need to control the state of the item(s).
+   */
+  defaultValue?: NavigationMenuModelValue<K, O>
+  /**
+   * The icon displayed to open the menu.
+   * @defaultValue appConfig.ui.icons.chevronDown
+   * @IconifyIcon
+   */
+  trailingIcon?: IconProps['name']
+  /**
+   * The icon displayed when the item is an external link.
+   * Set to `false` to hide the external icon.
+   * @defaultValue appConfig.ui.icons.external
+   * @IconifyIcon
+   */
+  externalIcon?: boolean | IconProps['name']
+  items?: T
+  /**
+   * @defaultValue 'primary'
+   */
+  color?: NavigationMenu['variants']['color']
+  /**
+   * @defaultValue 'pill'
+   */
+  variant?: NavigationMenu['variants']['variant']
+  /**
+   * The orientation of the menu.
+   * @defaultValue 'horizontal'
+   */
+  orientation?: O
+  /**
+   * Collapse the navigation menu to only show icons.
+   * Only works when `orientation` is `vertical`.
+   * @defaultValue false
+   */
   collapsed?: boolean
-  /** 折叠时显示标签提示 */
-  tooltip?: boolean | NavigationMenuTooltipOptions
-  /** 折叠时子菜单用 popover 展示 */
-  popover?: boolean | NavigationMenuPopoverOptions
-  /** 选中项显示指示线 */
+  /**
+   * Display a tooltip on the items with the label of the item.
+   * Only works when `orientation` is `vertical` and `collapsed` is `true`.
+   * `{ delayDuration: 0, content: { side: 'right' } }`{lang="ts-type"}
+   * @defaultValue false
+   */
+  tooltip?: boolean | TooltipProps
+  /**
+   * Display a popover on the items when the menu is collapsed with the children list.
+   * `{ mode: 'hover', content: { side: 'right', align: 'start', alignOffset: 2 } }`{lang="ts-type"}
+   * @defaultValue false
+   */
+  popover?: boolean | PopoverProps
+  /** Display a line next to the active item. */
   highlight?: boolean
-  /** 指示线颜色 */
-  highlightColor?: MenuColor
-  /** 子菜单展开图标 */
-  trailingIcon?: MenuIcon
-  /** 外链图标，false 时隐藏 */
-  externalIcon?: boolean | MenuIcon
-  /** 水平方向显示指示箭头 */
+  /**
+   * @defaultValue 'primary'
+   */
+  highlightColor?: NavigationMenu['variants']['highlightColor']
+  /** The content of the menu. */
+  content?: Omit<NavigationMenuContentProps, 'as' | 'asChild' | 'forceMount'> & Partial<EmitsToProps<NavigationMenuContentEmits>>
+  /**
+   * The orientation of the content.
+   * Only works when `orientation` is `horizontal`.
+   * @defaultValue 'horizontal'
+   */
+  contentOrientation?: NavigationMenu['variants']['contentOrientation']
+  /**
+   * Display an arrow alongside the menu.
+   * @defaultValue false
+   */
   arrow?: boolean
-  /** 水平方向内容面板配置 */
-  content?: { align?: 'start' | 'center' | 'end'; alignOffset?: number }
-  /** 内容面板排列方向（仅水平模式） */
-  contentOrientation?: NavigationMenuContentOrientation
-  /** 菜单项标题字段 */
-  labelKey?: string
-  /** 菜单项值字段 */
-  valueKey?: string
-  /** 菜单主题（kit 既有属性，dark 为深色底） */
-  theme?: 'light' | 'dark'
-  /** 渲染为指定元素或组件（根容器） */
-  as?: string | Component
-  /** 主题插槽类名 */
-  ui?: NavigationMenuUi
-  class?: HTMLAttributes['class']
-}>(), {
-  selectedKeys: () => [],
-  value: undefined,
-  defaultValue: undefined,
-  type: 'multiple',
-  collapsible: true,
-  disabled: false,
-  mode: 'vertical',
-  orientation: undefined,
-  color: 'primary',
-  variant: 'pill',
-  collapsed: false,
-  tooltip: false,
-  popover: false,
-  highlight: false,
-  highlightColor: 'primary',
-  trailingIcon: 'chevron-down',
-  externalIcon: true,
-  arrow: false,
+  /**
+   * The key used to get the value from the item.
+   * @defaultValue 'value'
+   */
+  valueKey?: GetItemKeys<T>
+  /**
+   * The key used to get the label from the item.
+   * @defaultValue 'label'
+   */
+  labelKey?: GetItemKeys<T>
+  class?: any
+  ui?: NavigationMenu['slots']
+}
+
+export type NavigationMenuEmits<
+  K extends SingleOrMultipleType = SingleOrMultipleType,
+  O extends Orientation = Orientation
+> = {
+  /**
+   * Event handler called when the value changes.
+   * - In horizontal orientation: emits `string`
+   * - In vertical orientation with `type="single"`: emits `string | undefined`
+   * - In vertical orientation with `type="multiple"`: emits `string[] | undefined`
+   */
+  'update:modelValue': [value: NavigationMenuModelValue<K, O> | undefined]
+}
+
+type SlotProps<T extends NavigationMenuItem> = (props: { item: T, index: number, active: boolean, ui: NavigationMenu['ui'] }) => VNode[]
+
+export type NavigationMenuSlots<
+  A extends ArrayOrNested<NavigationMenuItem> = ArrayOrNested<NavigationMenuItem>,
+  T extends NestedItem<A> = NestedItem<A>
+> = {
+  'item'?: SlotProps<T>
+  'item-leading'?: SlotProps<T>
+  'item-label'?: (props: { item: T, index: number, active: boolean }) => VNode[]
+  'item-trailing'?: SlotProps<T>
+  'item-content'?: (props: { item: T, index: number, active: boolean, ui: NavigationMenu['ui'], close: (() => void) | undefined }) => VNode[]
+  'list-leading'?: (props?: {}) => VNode[]
+  'list-trailing'?: (props?: {}) => VNode[]
+}
+& DynamicSlots<MergeTypes<T>, 'label', { index: number, active: boolean, ui: NavigationMenu['ui'] }>
+& DynamicSlots<MergeTypes<T>, 'leading' | 'trailing' | 'content', { index: number, active: boolean, ui: NavigationMenu['ui'] }>
+
+</script>
+
+<script setup lang="ts" generic="T extends ArrayOrNested<NavigationMenuItem>, K extends SingleOrMultipleType = SingleOrMultipleType, O extends Orientation = Orientation">
+import { computed, toRef } from 'vue'
+import { NavigationMenuRoot, NavigationMenuList, NavigationMenuItem, NavigationMenuTrigger, NavigationMenuContent, NavigationMenuLink, NavigationMenuIndicator, NavigationMenuViewport, AccordionRoot, AccordionItem, AccordionTrigger, AccordionContent } from 'reka-ui'
+import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
+import { defu } from 'defu'
+import { reactivePick, createReusableTemplate } from '@vueuse/core'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { get, isArrayOfArray } from '../../lib/nuxt/utils'
+import { tv } from '../../lib/nuxt/utils/tv'
+import { pickLinkProps } from '../../lib/nuxt/utils/link'
+import XLinkBase from './XLinkBase.vue'
+import XLink from './XLink.vue'
+import XAvatar from './XAvatar.vue'
+import XIcon from './XIcon.vue'
+import XBadge from './XBadge.vue'
+import XChip from './XChip.vue'
+import XPopover from './XPopover.vue'
+import XTooltip from './XTooltip.vue'
+
+defineOptions({ inheritAttrs: false })
+
+const _props = withDefaults(defineProps</* @vue-ignore */ NavigationMenuProps<T, K, O>>(), {
+  orientation: 'horizontal' as never,
   contentOrientation: 'horizontal',
-  labelKey: 'label',
-  valueKey: 'key',
-  theme: 'light',
+  externalIcon: true,
+  delayDuration: 0,
+  type: 'multiple' as never,
+  collapsible: true,
+  unmountOnHide: true,
+  valueKey: 'value',
+  labelKey: 'label'
+})
+const emits = defineEmits</* @vue-ignore */ NavigationMenuEmits<K, O>>()
+const slots = defineSlots</* @vue-ignore */ NavigationMenuSlots<T>>()
+
+const props = useComponentProps<NavigationMenuProps<T, K, O>>('navigationMenu', _props)
+
+const appConfig = useAppConfig() as NavigationMenu['AppConfig']
+
+const rootProps = useForwardProps(computed(() => ({
+  as: props.as,
+  delayDuration: props.delayDuration,
+  skipDelayDuration: props.skipDelayDuration,
+  orientation: props.orientation,
+  disableClickTrigger: props.disableClickTrigger,
+  disableHoverTrigger: props.disableHoverTrigger,
+  disablePointerLeaveClose: props.disablePointerLeaveClose,
+  unmountOnHide: props.unmountOnHide
+})), emits)
+const accordionProps = useForwardProps(reactivePick(props, 'collapsible', 'disabled', 'type', 'unmountOnHide'), emits)
+const contentProps = toRef(() => props.content)
+const tooltipProps = toRef(() => defu(typeof props.tooltip === 'boolean' ? {} : props.tooltip, { ...(props.orientation === 'vertical' && { delayDuration: 0, content: { side: 'right' } }) }) as TooltipProps)
+const popoverProps = toRef(() => defu(typeof props.popover === 'boolean' ? {} : props.popover, { mode: 'hover', content: { side: 'right', align: 'start', alignOffset: 2 } }) as PopoverProps)
+
+const [DefineLinkTemplate, ReuseLinkTemplate] = createReusableTemplate<{ item: NavigationMenuItem, index: number, active?: boolean, trailingTrigger?: boolean }>()
+const [DefineItemTemplate, ReuseItemTemplate] = createReusableTemplate<{ item: NavigationMenuItem, index: number, level?: number, listIndex?: number }>({
+  props: {
+    item: Object,
+    index: Number,
+    level: Number,
+    listIndex: Number
+  }
 })
 
-defineOptions({ name: 'XNavigationMenu', inheritAttrs: false })
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.navigationMenu || {}) })({
+  orientation: props.orientation,
+  contentOrientation: props.orientation === 'vertical' ? undefined : props.contentOrientation,
+  collapsed: props.collapsed,
+  color: props.color,
+  variant: props.variant,
+  highlight: props.highlight,
+  highlightColor: props.highlightColor || props.color
+}))
 
-const emit = defineEmits<{
-  /** 点击菜单项的回调 */
-  click: [item: NavigationMenuItemData]
-  /** 选中菜单项的回调 */
-  select: [item: NavigationMenuItemData]
-  /** 展开值变化回调 */
-  valueChange: [value: string | string[] | undefined]
-}>()
-
-const resolvedOrientation = computed<NavigationMenuOrientation>(
-  () => props.orientation ?? (props.mode === 'horizontal' ? 'horizontal' : 'vertical'),
+const lists = computed<NavigationMenuItem[][]>(() =>
+  props.items?.length
+    ? isArrayOfArray(props.items)
+      ? props.items
+      : [props.items]
+    : []
 )
-const isHorizontal = computed(() => resolvedOrientation.value === 'horizontal')
-const isCollapsed = computed(() => !isHorizontal.value && props.collapsed)
 
-/* 垂直手风琴非受控展开项：受控值存在时由 value 驱动 */
-const innerOpenKeys = ref<Set<string>>(new Set(toValueList(props.defaultValue)))
-/* 水平模式浮层非受控值：子项选择后关闭 */
-const innerOpenValue = ref<string | null>(typeof props.defaultValue === 'string' ? props.defaultValue : null)
-/* 折叠 popover 受控开合（item-content 插槽 close 回调） */
-const popoverOpenStates = reactive(new Map<string, boolean>())
-
-/** 垂直手风琴项是否展开 */
-function isItemOpen(key: string): boolean {
-  return props.value != null ? toValueList(props.value).includes(key) : innerOpenKeys.value.has(key)
-}
-
-/** 手风琴项开合：受控值由调用方维护，非受控值组件内部维护 */
-function toggleItem(key: string) {
-  const current = props.value != null ? toValueList(props.value) : [...innerOpenKeys.value]
-  const next = current.includes(key)
-    ? props.collapsible
-      ? current.filter((k) => k !== key)
-      : current
-    : props.type === 'single'
-      ? [key]
-      : [...current, key]
-  if (props.value == null) innerOpenKeys.value = new Set(next)
-  emit('valueChange', (props.value != null ? Array.isArray(props.value) : props.type === 'multiple') ? next : next[0])
-}
-
-/** 水平浮层开合 */
-function changeOpenValue(next: string | null) {
-  if (props.value == null) innerOpenValue.value = next
-  emit('valueChange', next ?? undefined)
-}
-
-const openValue = computed(() => (typeof props.value === 'string' ? props.value : innerOpenValue.value))
-
-/** 水平模式浮层受控值桥接 */
-const openValueModel = computed({
-  get: () => openValue.value ?? undefined,
-  set: (next: string | undefined) => changeOpenValue(next ?? null),
-})
-
-const tooltipOptions = computed<NavigationMenuTooltipOptions>(() => (typeof props.tooltip === 'object' ? props.tooltip : {}))
-const popoverOptions = computed<NavigationMenuPopoverOptions>(() => (typeof props.popover === 'object' ? props.popover : {}))
-
-/** 分组：平铺数组视为单组 */
-const lists = computed<NavigationMenuItemData[][]>(() => {
-  if (!props.items.length) return []
-  return Array.isArray(props.items[0]) ? (props.items as NavigationMenuItemData[][]) : [props.items as NavigationMenuItemData[]]
-})
-
-/* 外链图标名：externalIcon 为字符串时取之，true 时用默认名 */
-const externalIconValue = computed(() => {
-  if (props.externalIcon === false) return undefined
-  if (typeof props.externalIcon === 'string') return props.externalIcon
-  return 'external-link' as const
-})
-
-/** 按点分路径读取字段（支持嵌套对象） */
-function getField(item: NavigationMenuItemData, key: string): unknown {
-  return key.split('.').reduce((acc: any, part) => (acc == null ? acc : acc[part]), item)
-}
-
-function itemValueOf(item: NavigationMenuItemData, index: number, level: number, listIndex: number): string {
+function getItemValue(item: NavigationMenuItem, index: number, level: number, listIndex: number) {
   const prefix = lists.value.length > 1 ? `group-${listIndex}-` : ''
-  return String(getField(item, props.valueKey) ?? (level > 0 ? `${prefix}item-${level}-${index}` : `${prefix}item-${index}`))
+  return get(item, props.valueKey as string) ?? (level > 0 ? `${prefix}item-${level}-${index}` : `${prefix}item-${index}`)
 }
 
-function itemLabelOf(item: NavigationMenuItemData): string {
-  return String(getField(item, props.labelKey) ?? '')
+function getAccordionDefaultValue(list: NavigationMenuItem[], level = 0, listIndex = 0) {
+  const indexes = list.reduce((acc: string[], item, index) => {
+    if (item.defaultOpen || item.open) {
+      acc.push(getItemValue(item, index, level, listIndex))
+    }
+    return acc
+  }, [])
+
+  return props.type === 'single' ? indexes[0] : indexes
 }
 
-function childKeyOf(child: NavigationMenuItemData, childIndex: number): string {
-  return String(getField(child, props.valueKey) ?? `child-${childIndex}`)
-}
+function onLinkTrailingClick(e: Event, item: NavigationMenuItem, trailingTrigger?: boolean) {
+  if (!item.children?.length) {
+    return
+  }
 
-function isSelected(itemKey: string): boolean {
-  return props.selectedKeys.includes(itemKey)
-}
-
-function handleSelect(item: NavigationMenuItemData) {
-  item.onSelect?.(item)
-  emit('click', item)
-  emit('select', item)
-}
-
-/** 水平面板子项选择：选中后关闭浮层 */
-function handleChildSelect(child: NavigationMenuItemData) {
-  handleSelect(child)
-  changeOpenValue(null)
-}
-
-/** 折叠 popover 受控开合 */
-function setPopoverOpen(itemKey: string, open: boolean) {
-  popoverOpenStates.set(itemKey, open)
-}
-
-function popoverOpenOf(itemKey: string): boolean {
-  return popoverOpenStates.get(itemKey) ?? false
-}
-
-/** 项级 tooltip 配置覆盖根级配置 */
-function tooltipOptionsOf(item: NavigationMenuItemData): NavigationMenuTooltipOptions {
-  if (typeof item.tooltip !== 'object' || item.tooltip == null) return tooltipOptions.value
-  return {
-    ...tooltipOptions.value,
-    ...item.tooltip,
-    content: { ...tooltipOptions.value.content, ...item.tooltip.content },
+  if (props.orientation === 'horizontal') {
+    e.preventDefault()
+  } else if (props.orientation === 'vertical' && !props.collapsed && trailingTrigger) {
+    e.preventDefault()
+    e.stopPropagation()
   }
 }
-
-/** 项级 popover 配置覆盖根级配置 */
-function popoverOptionsOf(item: NavigationMenuItemData): NavigationMenuPopoverOptions {
-  if (typeof item.popover !== 'object' || item.popover == null) return popoverOptions.value
-  return {
-    ...popoverOptions.value,
-    ...item.popover,
-    content: { ...popoverOptions.value.content, ...item.popover.content },
-  }
-}
-
-/** 链接样式：基础 + 选中/悬停 + 变体 + 指示线 */
-function linkClasses(item: NavigationMenuItemData, active: boolean, _level: number): string {
-  return cn(
-    'group relative w-full flex items-center gap-1.5 rounded-md text-sm font-medium outline-none',
-    'focus-visible:outline-none focus-visible:before:outline-3 before:absolute before:z-[-1] before:rounded-md',
-    isHorizontal.value ? 'px-2.5 py-1.5 before:inset-x-px before:inset-y-0' : 'px-2.5 py-1.5 before:inset-y-px before:inset-x-0',
-    isCollapsed.value && 'px-1.5',
-    item.disabled
-      ? 'cursor-not-allowed opacity-75'
-      : 'hover:text-highlighted hover:before:bg-muted/50 transition-colors before:transition-colors',
-    active && props.variant === 'pill' && navActivePillClasses[props.color],
-    active && props.variant === 'link' && navColorTextClasses[props.color],
-    !active && 'text-muted-foreground',
-    props.ui?.link,
-    item.class,
-  )
-}
-
-/** 指示线：垂直在左侧，水平在底部 */
-function highlightClasses(active: boolean, level: number): string {
-  if (!props.highlight || !active) return ''
-  if (isHorizontal.value) {
-    return cn(
-      'after:absolute after:-bottom-2 after:inset-x-2.5 after:block after:h-px after:rounded-full',
-      navHighlightLineClasses[props.highlightColor],
-    )
-  }
-  if (level > 0) {
-    return cn(
-      'after:absolute after:-start-1.5 after:inset-y-0.5 after:block after:w-px after:rounded-full',
-      navHighlightLineClasses[props.highlightColor],
-    )
-  }
-  return ''
-}
-
-/** 复用模板：链接内容（前置 + 标签 + 尾部） */
-const [DefineLinkContent, ReuseLinkContent] = createReusableTemplate<{
-  item: NavigationMenuItemData
-  index: number
-  active: boolean
-  open: boolean
-  showTrailingChevron: boolean
-}>({
-  props: {
-    item: { type: Object, required: true },
-    index: { type: Number, required: true },
-    active: { type: Boolean, default: false },
-    open: { type: Boolean, default: false },
-    showTrailingChevron: { type: Boolean, default: false },
-  },
-})
-
-/** 复用模板：子菜单列表（水平内容面板与折叠 popover 共用） */
-const [DefineChildList, ReuseChildList] = createReusableTemplate<{
-  item: NavigationMenuItemData
-  inPopover: boolean
-}>({
-  props: {
-    item: { type: Object, required: true },
-    inPopover: { type: Boolean, default: false },
-  },
-})
-
-/** 复用模板：垂直模式菜单项（递归渲染嵌套子级） */
-const [DefineVerticalItems, ReuseVerticalItems] = createReusableTemplate<{
-  items: NavigationMenuItemData[]
-  level: number
-  listIndex: number
-}>({
-  props: {
-    items: { type: Array, required: true },
-    level: { type: Number, default: 0 },
-    listIndex: { type: Number, default: 0 },
-  },
-})
 </script>
 
 <template>
-  <DefineLinkContent v-slot="{ item, index, active, showTrailingChevron }">
-    <slot v-if="$slots.item" name="item" :item="item" :index="index" :active="active" />
-    <template v-else>
-      <template v-if="$slots['item-leading']">
-        <slot name="item-leading" :item="item" :index="index" :active="active" />
-      </template>
-      <template v-else-if="item.avatar">
-        <XAvatar
-          v-bind="item.avatar"
-          :size="props.ui?.linkLeadingAvatarSize ?? 'sm'"
-          data-slot="linkLeadingAvatar"
-          :class="cn('shrink-0', props.ui?.linkLeadingAvatar)"
-        />
-      </template>
-      <XChip
-        v-else-if="item.icon && item.chip"
-        inset
-        standalone
-        :size="props.ui?.linkLeadingChipSize ?? 'sm'"
-        v-bind="typeof item.chip === 'object' ? item.chip : {}"
-        data-slot="linkLeadingChip"
-      >
-        <XIcon
-          v-if="typeof item.icon === 'string'"
-          :name="item.icon"
-          data-slot="linkLeadingIcon"
-          :class="cn('shrink-0 size-5', props.ui?.linkLeadingIcon)"
-          aria-hidden="true"
-        />
-        <component
-          :is="item.icon"
-          v-else
-          data-slot="linkLeadingIcon"
-          :class="cn('shrink-0 size-5', props.ui?.linkLeadingIcon)"
-          aria-hidden="true"
-        />
-      </XChip>
-      <XIcon
-        v-else-if="item.icon && typeof item.icon === 'string'"
-        :name="item.icon"
-        data-slot="linkLeadingIcon"
-        :class="cn('shrink-0 size-5', props.ui?.linkLeadingIcon)"
-        aria-hidden="true"
-      />
-      <component
-        :is="item.icon"
-        v-else-if="item.icon"
-        data-slot="linkLeadingIcon"
-        :class="cn('shrink-0 size-5', props.ui?.linkLeadingIcon)"
-        aria-hidden="true"
-      />
+  <DefineLinkTemplate v-slot="{ item, active, index, trailingTrigger }">
+    <slot :name="((item.slot || 'item') as keyof NavigationMenuSlots<T>)" :item="item" :index="index" :active="active" :ui="ui">
+      <slot :name="((item.slot ? `${item.slot}-leading` : 'item-leading') as keyof NavigationMenuSlots<T>)" :item="item" :active="active" :index="index" :ui="ui">
+        <XAvatar v-if="item.avatar" :size="((item.ui?.linkLeadingAvatarSize || props.ui?.linkLeadingAvatarSize || ui.linkLeadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" data-slot="linkLeadingAvatar" :class="ui.linkLeadingAvatar({ class: [props.ui?.linkLeadingAvatar, item.ui?.linkLeadingAvatar], active, disabled: !!item.disabled })" />
+        <XChip
+          v-else-if="item.icon && item.chip"
+          :size="((item.ui?.linkLeadingChipSize || props.ui?.linkLeadingChipSize || ui.linkLeadingChipSize()) as ChipProps['size'])"
+          inset
+          v-bind="typeof item.chip === 'object' ? item.chip : {}"
+          data-slot="linkLeadingChip"
+        >
+          <XIcon :name="item.icon" data-slot="linkLeadingIcon" :class="ui.linkLeadingIcon({ class: [props.ui?.linkLeadingIcon, item.ui?.linkLeadingIcon], active, disabled: !!item.disabled })" />
+        </XChip>
+        <XIcon v-else-if="item.icon" :name="item.icon" data-slot="linkLeadingIcon" :class="ui.linkLeadingIcon({ class: [props.ui?.linkLeadingIcon, item.ui?.linkLeadingIcon], active, disabled: !!item.disabled })" />
+      </slot>
 
       <span
-        v-if="itemLabelOf(item) !== '' || $slots['item-label']"
+        v-if="get(item, props.labelKey as string) || !!slots[(item.slot ? `${item.slot}-label` : 'item-label') as keyof NavigationMenuSlots<T>]"
         data-slot="linkLabel"
-        :class="cn('truncate', isCollapsed && 'hidden', props.ui?.linkLabel)"
+        :class="ui.linkLabel({ class: [props.ui?.linkLabel, item.ui?.linkLabel] })"
       >
-        <slot name="item-label" :item="item" :index="index" :active="active">{{ itemLabelOf(item) }}</slot>
-        <XIcon
-          v-if="item.target === '_blank' && typeof externalIconValue === 'string'"
-          :name="externalIconValue"
-          data-slot="linkLabelExternalIcon"
-          :class="cn('inline-block size-3 align-top text-muted-foreground', props.ui?.linkLabelExternalIcon)"
-          aria-hidden="true"
-        />
-        <component
-          :is="externalIconValue"
-          v-else-if="item.target === '_blank' && externalIconValue"
-          data-slot="linkLabelExternalIcon"
-          :class="cn('inline-block size-3 align-top text-muted-foreground', props.ui?.linkLabelExternalIcon)"
-          aria-hidden="true"
-        />
+        <slot :name="((item.slot ? `${item.slot}-label` : 'item-label') as keyof NavigationMenuSlots<T>)" :item="item" :active="active" :index="index">
+          {{ get(item, props.labelKey as string) }}
+        </slot>
+
+        <XIcon v-if="item.target === '_blank' && props.externalIcon !== false" :name="typeof props.externalIcon === 'string' ? props.externalIcon : appConfig.ui.icons.external" data-slot="linkLabelExternalIcon" :class="ui.linkLabelExternalIcon({ class: [props.ui?.linkLabelExternalIcon, item.ui?.linkLabelExternalIcon], active })" />
       </span>
 
-      <span
-        v-if="item.badge != null || (showTrailingChevron && item.children?.length) || item.trailingIcon || $slots['item-trailing']"
+      <component
+        :is="props.orientation === 'vertical' && item.children?.length && !props.collapsed && trailingTrigger ? AccordionTrigger : 'span'"
+        v-if="(item.badge || item.badge === 0) || (props.orientation === 'horizontal' && (item.children?.length || !!slots[(item.slot ? `${item.slot}-content` : 'item-content') as keyof NavigationMenuSlots<T>])) || (props.orientation === 'vertical' && item.children?.length) || item.trailingIcon || !!slots[(item.slot ? `${item.slot}-trailing` : 'item-trailing') as keyof NavigationMenuSlots<T>]"
+        :as="props.orientation === 'vertical' && item.children?.length && !props.collapsed && trailingTrigger ? 'span' : undefined"
         data-slot="linkTrailing"
-        :class="cn('ms-auto inline-flex items-center gap-1.5', isCollapsed && 'hidden', props.ui?.linkTrailing)"
+        :class="ui.linkTrailing({ class: [props.ui?.linkTrailing, item.ui?.linkTrailing] })"
+        @click="(e: Event) => onLinkTrailingClick(e, item, trailingTrigger)"
       >
-        <slot name="item-trailing" :item="item" :index="index" :active="active">
+        <slot :name="((item.slot ? `${item.slot}-trailing` : 'item-trailing') as keyof NavigationMenuSlots<T>)" :item="item" :active="active" :index="index" :ui="ui">
           <XBadge
-            v-if="item.badge != null"
+            v-if="item.badge || item.badge === 0"
             color="neutral"
             variant="outline"
-            :size="props.ui?.linkTrailingBadgeSize ?? 'sm'"
+            :size="((item.ui?.linkTrailingBadgeSize || props.ui?.linkTrailingBadgeSize || ui.linkTrailingBadgeSize()) as BadgeProps['size'])"
             v-bind="(typeof item.badge === 'string' || typeof item.badge === 'number') ? { label: item.badge } : item.badge"
             data-slot="linkTrailingBadge"
-            :class="cn('shrink-0', props.ui?.linkTrailingBadge)"
+            :class="ui.linkTrailingBadge({ class: [props.ui?.linkTrailingBadge, item.ui?.linkTrailingBadge] })"
           />
-          <XIcon
-            v-if="showTrailingChevron && item.children?.length && typeof trailingIcon === 'string'"
-            :name="trailingIcon"
-            data-slot="linkTrailingIcon"
-            :class="cn(
-              'size-5 shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-180',
-              props.ui?.linkTrailingIcon,
-            )"
-            aria-hidden="true"
-          />
-          <component
-            :is="trailingIcon"
-            v-else-if="showTrailingChevron && item.children?.length"
-            data-slot="linkTrailingIcon"
-            :class="cn(
-              'size-5 shrink-0 transition-transform duration-200 group-data-[state=open]:rotate-180',
-              props.ui?.linkTrailingIcon,
-            )"
-            aria-hidden="true"
-          />
-          <XIcon
-            v-else-if="item.trailingIcon && typeof item.trailingIcon === 'string'"
-            :name="item.trailingIcon"
-            data-slot="linkTrailingIcon"
-            :class="cn('size-5 shrink-0', props.ui?.linkTrailingIcon)"
-            aria-hidden="true"
-          />
-          <component
-            :is="item.trailingIcon"
-            v-else-if="item.trailingIcon"
-            data-slot="linkTrailingIcon"
-            :class="cn('size-5 shrink-0', props.ui?.linkTrailingIcon)"
-            aria-hidden="true"
-          />
+
+          <XIcon v-if="(props.orientation === 'horizontal' && (item.children?.length || !!slots[(item.slot ? `${item.slot}-content` : 'item-content') as keyof NavigationMenuSlots<T>])) || (props.orientation === 'vertical' && item.children?.length)" :name="item.trailingIcon || props.trailingIcon || appConfig.ui.icons.chevronDown" data-slot="linkTrailingIcon" :class="ui.linkTrailingIcon({ class: [props.ui?.linkTrailingIcon, item.ui?.linkTrailingIcon], active })" />
+          <XIcon v-else-if="item.trailingIcon" :name="item.trailingIcon" data-slot="linkTrailingIcon" :class="ui.linkTrailingIcon({ class: [props.ui?.linkTrailingIcon, item.ui?.linkTrailingIcon], active })" />
         </slot>
-      </span>
-    </template>
-  </DefineLinkContent>
+      </component>
+    </slot>
+  </DefineLinkTemplate>
 
-  <DefineChildList v-slot="{ item, inPopover }">
-    <ul data-slot="childList" :class="cn(inPopover ? 'isolate' : contentOrientation === 'horizontal' ? 'grid grid-cols-2 gap-2 p-2' : 'gap-1 p-2', props.ui?.childList)">
-      <li
-        v-if="inPopover"
-        data-slot="childLabel"
-        :class="cn('px-1.5 py-0.5 text-xs text-muted-foreground', props.ui?.childLabel)"
-      >
-        {{ itemLabelOf(item) }}
-      </li>
-      <li
-        v-for="(child, childIndex) in item.children"
-        :key="childIndex"
-        data-slot="childItem"
-        :class="cn(props.ui?.childItem, child.class)"
-      >
-        <template v-if="inPopover">
-          <button
-            type="button"
-            :disabled="child.disabled"
-            data-slot="childLink"
-            :class="cn(
-              'group relative flex size-full items-start gap-1.5 rounded-md p-1.5 text-start text-sm outline-none',
-              'hover:bg-muted focus-visible:bg-muted disabled:pointer-events-none disabled:opacity-75',
-              isSelected(childKeyOf(child, childIndex)) && 'text-primary',
-              props.ui?.childLink,
-            )"
-            @click="handleSelect(child)"
-          >
-            <XIcon
-              v-if="child.icon && typeof child.icon === 'string'"
-              :name="child.icon"
-              data-slot="childLinkIcon"
-              :class="cn('shrink-0', props.ui?.childLinkIcon)"
-              aria-hidden="true"
-            />
-            <component
-              :is="child.icon"
-              v-else-if="child.icon"
-              data-slot="childLinkIcon"
-              :class="cn('shrink-0', props.ui?.childLinkIcon)"
-              aria-hidden="true"
-            />
-            <span data-slot="childLinkLabel" :class="cn('truncate', props.ui?.childLinkLabel)">
-              {{ itemLabelOf(child) }}
-              <XIcon
-                v-if="child.target === '_blank' && typeof externalIconValue === 'string'"
-                :name="externalIconValue"
-                data-slot="childLinkLabelExternalIcon"
-                :class="cn('inline-block size-3 align-top text-muted-foreground', props.ui?.childLinkLabelExternalIcon)"
-                aria-hidden="true"
-              />
-            </span>
-          </button>
-        </template>
-
-        <NavigationMenuLink
-          v-else
-          data-slot="childLink"
-          :disabled="child.disabled"
-          :class="cn(
-            'group relative flex size-full items-start gap-2 rounded-md px-3 py-2 text-start text-sm outline-none',
-            'hover:bg-muted focus-visible:bg-muted disabled:pointer-events-none disabled:opacity-75',
-            isSelected(childKeyOf(child, childIndex)) && 'text-primary',
-            props.ui?.childLink,
-          )"
-          @select="handleChildSelect(child)"
+  <DefineItemTemplate v-slot="{ item, index, level = 0, listIndex = 0 }">
+    <component
+      :is="(props.orientation === 'vertical' && !props.collapsed) ? AccordionItem : NavigationMenuItem"
+      as="li"
+      v-bind="(props.orientation === 'vertical' && !props.collapsed) ? { disabled: !!item.disabled } : {}"
+      :value="getItemValue(item, index, level, listIndex)"
+    >
+      <div v-if="props.orientation === 'vertical' && item.type === 'label' && !props.collapsed" data-slot="label" :class="ui.label({ class: [props.ui?.label, item.ui?.label, item.class] })">
+        <ReuseLinkTemplate :item="item" :index="index" :trailing-trigger="true" />
+      </div>
+      <XLink v-else-if="item.type !== 'label'" v-slot="{ active, ...slotProps }" v-bind="(props.orientation === 'vertical' && item.children?.length && !props.collapsed && item.type === 'trigger') ? {} : pickLinkProps(item as Omit<NavigationMenuItem, 'type'>)" custom>
+        <component
+          :is="(props.orientation === 'horizontal' && (item.children?.length || !!slots[(item.slot ? `${item.slot}-content` : 'item-content') as keyof NavigationMenuSlots<T>])) ? NavigationMenuTrigger : ((props.orientation === 'vertical' && item.children?.length && !props.collapsed && !(slotProps as any).href) ? AccordionTrigger : NavigationMenuLink)"
+          as-child
+          :active="active || item.active"
+          :disabled="item.disabled"
+          @select="item.onSelect"
         >
-          <XIcon
-            v-if="child.icon && typeof child.icon === 'string'"
-            :name="child.icon"
-            data-slot="childLinkIcon"
-            :class="cn('shrink-0', props.ui?.childLinkIcon)"
-            aria-hidden="true"
-          />
-          <component
-            :is="child.icon"
-            v-else-if="child.icon"
-            data-slot="childLinkIcon"
-            :class="cn('shrink-0', props.ui?.childLinkIcon)"
-            aria-hidden="true"
-          />
-          <div data-slot="childLinkWrapper" :class="cn('min-w-0', props.ui?.childLinkWrapper)">
-            <p data-slot="childLinkLabel" :class="cn('truncate font-medium', props.ui?.childLinkLabel)">
-              {{ itemLabelOf(child) }}
-              <XIcon
-                v-if="child.target === '_blank' && typeof externalIconValue === 'string'"
-                :name="externalIconValue"
-                data-slot="childLinkLabelExternalIcon"
-                :class="cn('inline-block size-3 align-top text-muted-foreground', props.ui?.childLinkLabelExternalIcon)"
-                aria-hidden="true"
-              />
-            </p>
-            <p
-              v-if="child.description != null"
-              data-slot="childLinkDescription"
-              :class="cn('text-muted-foreground', props.ui?.childLinkDescription)"
-            >
-              {{ child.description }}
-            </p>
-          </div>
-        </NavigationMenuLink>
-      </li>
-    </ul>
-  </DefineChildList>
+          <XPopover v-if="props.orientation === 'vertical' && props.collapsed && item.children?.length && (!!props.popover || !!item.popover)" v-bind="{ ...popoverProps, ...(typeof item.popover === 'boolean' ? {} : item.popover || {}) }" :ui="{ content: ui.content({ class: [props.ui?.content, item.ui?.content] }) }">
+            <XLinkBase v-bind="slotProps" data-slot="link" :class="ui.link({ class: [props.ui?.link, item.ui?.link, item.class], active: active || item.active, disabled: !!item.disabled, level: level > 0 })">
+              <ReuseLinkTemplate :item="item" :active="active || item.active" :index="index" :trailing-trigger="!!(slotProps as any).href" />
+            </XLinkBase>
 
-  <DefineVerticalItems v-slot="{ items, level, listIndex }">
-    <template v-for="(item, index) in items" :key="itemValueOf(item, index, level, listIndex)">
-      <li
-        v-if="!isHorizontal && item.type === 'label' && !isCollapsed"
-        data-slot="label"
-        :class="cn(
-          'w-full flex items-center gap-1.5 font-semibold text-xs/5 text-muted-foreground px-2.5 py-1.5',
-          props.ui?.label,
-          item.class,
-        )"
-      >
-        <ReuseLinkContent :item="item" :index="index" :active="false" :open="false" :show-trailing-chevron="false" />
-      </li>
-
-      <li
-        v-else-if="(item.children?.length ?? 0) > 0 && !isCollapsed"
-        data-slot="item"
-        :class="cn('min-w-0', props.ui?.item)"
-      >
-        <button
-          type="button"
-          :disabled="item.disabled || disabled"
-          :aria-expanded="item.open ?? isItemOpen(itemValueOf(item, index, level, listIndex))"
-          data-slot="link"
-          :class="cn(
-            linkClasses(item, isSelected(itemValueOf(item, index, level, listIndex)), level),
-            highlightClasses(isSelected(itemValueOf(item, index, level, listIndex)), level),
-          )"
-          @click="toggleItem(itemValueOf(item, index, level, listIndex))"
-        >
-          <ReuseLinkContent
-            :item="item"
-            :index="index"
-            :active="isSelected(itemValueOf(item, index, level, listIndex))"
-            :open="item.open ?? isItemOpen(itemValueOf(item, index, level, listIndex))"
-            :show-trailing-chevron="true"
-          />
-        </button>
-
-        <div
-          v-if="item.open ?? isItemOpen(itemValueOf(item, index, level, listIndex))"
-          data-slot="content"
-          :class="cn('overflow-hidden', props.ui?.content)"
-        >
-          <ul
-            data-slot="childList"
-            :class="cn('ms-5 border-s border-border ps-1.5', props.ui?.childList)"
-          >
-            <ReuseVerticalItems :items="item.children ?? []" :level="level + 1" :list-index="listIndex" />
-          </ul>
-        </div>
-      </li>
-
-      <li
-        v-else-if="(item.children?.length ?? 0) > 0 && isCollapsed && (popover || item.popover)"
-        data-slot="item"
-        :class="cn('min-w-0', props.ui?.item)"
-      >
-        <template v-if="popoverOptionsOf(item).mode === 'click'">
-          <PopoverRoot
-            :open="popoverOpenOf(itemValueOf(item, index, level, listIndex))"
-            @update:open="(next: boolean) => setPopoverOpen(itemValueOf(item, index, level, listIndex), next)"
-          >
-            <PopoverTrigger as-child>
-              <button
-                type="button"
-                data-slot="link"
-                :class="cn(
-                  linkClasses(item, isSelected(itemValueOf(item, index, level, listIndex)), level),
-                  highlightClasses(isSelected(itemValueOf(item, index, level, listIndex)), level),
-                )"
-              >
-                <ReuseLinkContent
-                  :item="item"
-                  :index="index"
-                  :active="isSelected(itemValueOf(item, index, level, listIndex))"
-                  :open="false"
-                  :show-trailing-chevron="true"
-                />
-              </button>
-            </PopoverTrigger>
-            <PopoverPortal>
-              <PopoverContent
-                :side="popoverOptionsOf(item).content?.side ?? 'right'"
-                :align="popoverOptionsOf(item).content?.align ?? 'start'"
-                :align-offset="popoverOptionsOf(item).content?.alignOffset ?? 0"
-                :side-offset="popoverOptionsOf(item).content?.sideOffset ?? 2"
-                data-slot="content"
-                :class="cn(
-                  'min-h-6 rounded-md bg-popover p-1 text-popover-foreground shadow-lg ring-1 ring-border outline-none',
-                  'data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95',
-                  props.ui?.content,
-                )"
-              >
-                <slot
-                  name="item-content"
-                  :item="item"
-                  :index="index"
-                  :active="isSelected(itemValueOf(item, index, level, listIndex))"
-                  :ui="props.ui"
-                  :close="() => setPopoverOpen(itemValueOf(item, index, level, listIndex), false)"
-                >
-                  <ReuseChildList :item="item" :in-popover="true" />
-                </slot>
-              </PopoverContent>
-            </PopoverPortal>
-          </PopoverRoot>
-        </template>
-
-        <HoverCardRoot
-          v-else
-          :open="popoverOpenOf(itemValueOf(item, index, level, listIndex))"
-          :open-delay="0"
-          :close-delay="0"
-          @update:open="(next: boolean) => setPopoverOpen(itemValueOf(item, index, level, listIndex), next)"
-        >
-          <HoverCardTrigger as-child>
-            <button
-              type="button"
-              data-slot="link"
-              :class="cn(
-                linkClasses(item, isSelected(itemValueOf(item, index, level, listIndex)), level),
-                highlightClasses(isSelected(itemValueOf(item, index, level, listIndex)), level),
-              )"
-            >
-              <ReuseLinkContent
-                :item="item"
-                :index="index"
-                :active="isSelected(itemValueOf(item, index, level, listIndex))"
-                :open="false"
-                :show-trailing-chevron="true"
-              />
-            </button>
-          </HoverCardTrigger>
-          <HoverCardPortal>
-            <HoverCardContent
-              :side="popoverOptionsOf(item).content?.side ?? 'right'"
-              :align="popoverOptionsOf(item).content?.align ?? 'start'"
-              :align-offset="popoverOptionsOf(item).content?.alignOffset ?? 0"
-              :side-offset="popoverOptionsOf(item).content?.sideOffset ?? 2"
-              data-slot="content"
-              :class="cn(
-                'min-h-6 rounded-md bg-popover p-1 text-popover-foreground shadow-lg ring-1 ring-border outline-none',
-                'data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95',
-                props.ui?.content,
-              )"
-            >
+            <template #content="{ close }">
               <slot
-                name="item-content"
+                :name="((item.slot ? `${item.slot}-content` : 'item-content') as keyof NavigationMenuSlots<T>)"
                 :item="item"
+                :active="active || item.active"
                 :index="index"
-                :active="isSelected(itemValueOf(item, index, level, listIndex))"
-                :ui="props.ui"
-                :close="() => setPopoverOpen(itemValueOf(item, index, level, listIndex), false)"
+                :ui="ui"
+                :close="close"
               >
-                <ReuseChildList :item="item" :in-popover="true" />
+                <ul data-slot="childList" :class="ui.childList({ class: [props.ui?.childList, item.ui?.childList] })">
+                  <li data-slot="childLabel" :class="ui.childLabel({ class: [props.ui?.childLabel, item.ui?.childLabel] })">
+                    {{ get(item, props.labelKey as string) }}
+                  </li>
+                  <li v-for="(childItem, childIndex) in item.children" :key="childIndex" data-slot="childItem" :class="ui.childItem({ class: [props.ui?.childItem, item.ui?.childItem] })">
+                    <XLink v-slot="{ active: childActive, ...childSlotProps }" v-bind="pickLinkProps(childItem)" custom>
+                      <NavigationMenuLink as-child :active="childActive" @select="childItem.onSelect">
+                        <XLinkBase v-bind="childSlotProps" data-slot="childLink" :class="ui.childLink({ class: [props.ui?.childLink, item.ui?.childLink, childItem.class], active: childActive })">
+                          <XIcon v-if="childItem.icon" :name="childItem.icon" data-slot="childLinkIcon" :class="ui.childLinkIcon({ class: [props.ui?.childLinkIcon, item.ui?.childLinkIcon], active: childActive })" />
+
+                          <span data-slot="childLinkLabel" :class="ui.childLinkLabel({ class: [props.ui?.childLinkLabel, item.ui?.childLinkLabel], active: childActive })">
+                            {{ get(childItem, props.labelKey as string) }}
+
+                            <XIcon v-if="childItem.target === '_blank' && props.externalIcon !== false" :name="typeof props.externalIcon === 'string' ? props.externalIcon : appConfig.ui.icons.external" data-slot="childLinkLabelExternalIcon" :class="ui.childLinkLabelExternalIcon({ class: [props.ui?.childLinkLabelExternalIcon, item.ui?.childLinkLabelExternalIcon], active: childActive })" />
+                          </span>
+                        </XLinkBase>
+                      </NavigationMenuLink>
+                    </XLink>
+                  </li>
+                </ul>
               </slot>
-            </HoverCardContent>
-          </HoverCardPortal>
-        </HoverCardRoot>
-      </li>
+            </template>
+          </XPopover>
+          <XTooltip v-else-if="(props.orientation === 'vertical' && props.collapsed && (!!props.tooltip || !!item.tooltip)) || (props.orientation === 'horizontal' && !!item.tooltip)" :text="get(item, props.labelKey as string)" v-bind="{ ...tooltipProps, ...(typeof item.tooltip === 'boolean' ? {} : item.tooltip || {}) }">
+            <XLinkBase v-bind="slotProps" data-slot="link" :class="ui.link({ class: [props.ui?.link, item.ui?.link, item.class], active: active || item.active, disabled: !!item.disabled, level: level > 0 })">
+              <ReuseLinkTemplate :item="item" :active="active || item.active" :index="index" :trailing-trigger="!!(slotProps as any).href" />
+            </XLinkBase>
+          </XTooltip>
+          <XLinkBase v-else v-bind="slotProps" data-slot="link" :class="ui.link({ class: [props.ui?.link, item.ui?.link, item.class], active: active || item.active, disabled: !!item.disabled, level: props.orientation === 'horizontal' || level > 0 })">
+            <ReuseLinkTemplate :item="item" :active="active || item.active" :index="index" :trailing-trigger="!!(slotProps as any).href" />
+          </XLinkBase>
+        </component>
 
-      <li v-else data-slot="item" :class="cn('min-w-0', props.ui?.item)">
-        <button
-          v-if="!isCollapsed || !(tooltip || item.tooltip)"
-          type="button"
-          :disabled="item.disabled || disabled"
-          data-slot="link"
-          :class="cn(
-            linkClasses(item, isSelected(itemValueOf(item, index, level, listIndex)), level),
-            highlightClasses(isSelected(itemValueOf(item, index, level, listIndex)), level),
-          )"
-          @click="handleSelect(item)"
+        <NavigationMenuContent v-if="props.orientation === 'horizontal' && (item.children?.length || !!slots[(item.slot ? `${item.slot}-content` : 'item-content') as keyof NavigationMenuSlots<T>])" v-bind="contentProps" data-slot="content" :class="ui.content({ class: [props.ui?.content, item.ui?.content] })">
+          <slot :name="((item.slot ? `${item.slot}-content` : 'item-content') as keyof NavigationMenuSlots<T>)" :item="item" :active="active || item.active" :index="index" :ui="ui">
+            <ul data-slot="childList" :class="ui.childList({ class: [props.ui?.childList, item.ui?.childList] })">
+              <li v-for="(childItem, childIndex) in item.children" :key="childIndex" data-slot="childItem" :class="ui.childItem({ class: [props.ui?.childItem, item.ui?.childItem] })">
+                <XLink v-slot="{ active: childActive, ...childSlotProps }" v-bind="pickLinkProps(childItem)" custom>
+                  <NavigationMenuLink as-child :active="childActive" @select="childItem.onSelect">
+                    <XLinkBase v-bind="childSlotProps" data-slot="childLink" :class="ui.childLink({ class: [props.ui?.childLink, item.ui?.childLink, childItem.class], active: childActive })">
+                      <XIcon v-if="childItem.icon" :name="childItem.icon" data-slot="childLinkIcon" :class="ui.childLinkIcon({ class: [props.ui?.childLinkIcon, item.ui?.childLinkIcon], active: childActive })" />
+
+                      <div data-slot="childLinkWrapper" :class="ui.childLinkWrapper({ class: [props.ui?.childLinkWrapper, item.ui?.childLinkWrapper] })">
+                        <p data-slot="childLinkLabel" :class="ui.childLinkLabel({ class: [props.ui?.childLinkLabel, item.ui?.childLinkLabel], active: childActive })">
+                          {{ get(childItem, props.labelKey as string) }}
+
+                          <XIcon v-if="childItem.target === '_blank' && props.externalIcon !== false" :name="typeof props.externalIcon === 'string' ? props.externalIcon : appConfig.ui.icons.external" data-slot="childLinkLabelExternalIcon" :class="ui.childLinkLabelExternalIcon({ class: [props.ui?.childLinkLabelExternalIcon, item.ui?.childLinkLabelExternalIcon], active: childActive })" />
+                        </p>
+                        <p v-if="childItem.description" data-slot="childLinkDescription" :class="ui.childLinkDescription({ class: [props.ui?.childLinkDescription, item.ui?.childLinkDescription], active: childActive })">
+                          {{ childItem.description }}
+                        </p>
+                      </div>
+                    </XLinkBase>
+                  </NavigationMenuLink>
+                </XLink>
+              </li>
+            </ul>
+          </slot>
+        </NavigationMenuContent>
+      </XLink>
+
+      <AccordionContent v-if="props.orientation === 'vertical' && item.children?.length && !props.collapsed" data-slot="content" :class="ui.content({ class: [props.ui?.content, item.ui?.content] })">
+        <AccordionRoot
+          v-bind="({
+            ...accordionProps,
+            defaultValue: getAccordionDefaultValue(item.children, level + 1, listIndex)
+          } as AccordionRootProps)"
+          as="ul"
+          data-slot="childList"
+          :class="ui.childList({ class: [props.ui?.childList, item.ui?.childList] })"
         >
-          <ReuseLinkContent
-            :item="item"
-            :index="index"
-            :active="isSelected(itemValueOf(item, index, level, listIndex))"
-            :open="false"
-            :show-trailing-chevron="false"
+          <ReuseItemTemplate
+            v-for="(childItem, childIndex) in item.children"
+            :key="childIndex"
+            :item="childItem"
+            :index="childIndex"
+            :level="level + 1"
+            :list-index="listIndex"
+            data-slot="childItem"
+            :class="ui.childItem({ class: [props.ui?.childItem, childItem.ui?.childItem] })"
           />
-        </button>
+        </AccordionRoot>
+      </AccordionContent>
+    </component>
+  </DefineItemTemplate>
 
-        <TooltipProvider
-          v-else
-          :delay-duration="tooltipOptionsOf(item).delayDuration ?? 0"
-        >
-          <TooltipRoot>
-            <TooltipTrigger as-child>
-              <button
-                type="button"
-                :disabled="item.disabled || disabled"
-                data-slot="link"
-                :class="cn(
-                  linkClasses(item, isSelected(itemValueOf(item, index, level, listIndex)), level),
-                  highlightClasses(isSelected(itemValueOf(item, index, level, listIndex)), level),
-                )"
-                @click="handleSelect(item)"
-              >
-                <ReuseLinkContent
-                  :item="item"
-                  :index="index"
-                  :active="isSelected(itemValueOf(item, index, level, listIndex))"
-                  :open="false"
-                  :show-trailing-chevron="false"
-                />
-              </button>
-            </TooltipTrigger>
-            <TooltipPortal>
-              <TooltipContent
-                :side="tooltipOptionsOf(item).content?.side ?? 'right'"
-                :side-offset="tooltipOptionsOf(item).content?.sideOffset ?? 8"
-                :class="cn(
-                  'flex items-center gap-1 rounded-sm bg-background px-2.5 py-1 text-xs text-foreground shadow-sm ring-1 ring-border outline-none',
-                  'data-[state=delayed-open]:animate-in data-[state=delayed-open]:fade-in-0 data-[state=delayed-open]:zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95',
-                )"
-              >
-                {{ itemLabelOf(item) }}
-              </TooltipContent>
-            </TooltipPortal>
-          </TooltipRoot>
-        </TooltipProvider>
-      </li>
-    </template>
-  </DefineVerticalItems>
-
-  <Primitive
-    :as="as ?? 'nav'"
+  <NavigationMenuRoot
     data-slot="root"
-    v-bind="$attrs"
-    :class="cn(
-      'relative flex gap-1.5',
-      isHorizontal ? 'items-center justify-between' : 'flex-col',
-      theme === 'dark' && 'bg-foreground p-2 text-background',
-      props.ui?.root,
-      props.class,
-    )"
+    v-bind="{
+      ...rootProps,
+      ...(props.orientation === 'horizontal' ? {
+        modelValue: props.modelValue as string,
+        defaultValue: props.defaultValue as string
+      } : {}),
+      ...$attrs
+    }"
+    :data-collapsed="props.collapsed"
+    :class="ui.root({ class: [props.ui?.root, props.class] })"
   >
+    <slot name="list-leading" />
+
     <template v-for="(list, listIndex) in lists" :key="`list-${listIndex}`">
-      <div
-        v-if="!isHorizontal && listIndex > 0"
-        data-slot="separator"
-        role="separator"
-        :class="cn('h-px bg-border', props.ui?.separator)"
-      />
-
-      <NavigationMenuRoot
-        v-if="isHorizontal"
-        v-model:model-value="openValueModel"
-        orientation="horizontal"
-        :class="cn('contents', props.ui?.root)"
+      <component
+        v-bind="props.orientation === 'vertical' && !props.collapsed ? {
+          ...accordionProps,
+          modelValue: props.modelValue,
+          defaultValue: props.defaultValue ?? getAccordionDefaultValue(list, 0, listIndex)
+        } : {}"
+        :is="props.orientation === 'vertical' ? AccordionRoot : NavigationMenuList"
+        as="ul"
+        data-slot="list"
+        :class="ui.list({ class: props.ui?.list })"
       >
-        <slot name="list-leading" />
-
-        <NavigationMenuList data-slot="list" :class="cn('isolate flex min-w-0 items-center', props.ui?.list)">
-          <template v-for="(item, index) in list" :key="itemValueOf(item, index, 0, listIndex)">
-            <NavigationMenuItem
-              :value="itemValueOf(item, index, 0, listIndex)"
-              data-slot="item"
-              :class="cn('relative min-w-0 py-2', props.ui?.item)"
-            >
-              <template v-if="(item.children?.length ?? 0) > 0">
-                <NavigationMenuTrigger
-                  data-slot="link"
-                  :disabled="item.disabled"
-                  :class="cn(
-                    linkClasses(item, isSelected(itemValueOf(item, index, 0, listIndex)), 0),
-                    highlightClasses(isSelected(itemValueOf(item, index, 0, listIndex)), 0),
-                  )"
-                >
-                  <ReuseLinkContent
-                    :item="item"
-                    :index="index"
-                    :active="isSelected(itemValueOf(item, index, 0, listIndex))"
-                    :open="false"
-                    :show-trailing-chevron="true"
-                  />
-                </NavigationMenuTrigger>
-
-                <NavigationMenuIndicator
-                  v-if="arrow"
-                  data-slot="indicator"
-                  :class="cn(
-                    'absolute bottom-0 z-10 flex h-2.5 items-end justify-center overflow-hidden opacity-0',
-                    'data-[state=visible]:animate-in data-[state=visible]:fade-in data-[state=visible]:opacity-100 data-[state=hidden]:animate-out data-[state=hidden]:fade-out',
-                    props.ui?.indicator,
-                  )"
-                >
-                  <div
-                    data-slot="arrow"
-                    :class="cn('relative top-[50%] size-2.5 rotate-45 rounded-xs border border-border bg-popover', props.ui?.arrow)"
-                  />
-                </NavigationMenuIndicator>
-
-                <NavigationMenuContent
-                  data-slot="content"
-                  :class="cn(
-                    'absolute top-0 start-0 w-full max-h-[70vh] overflow-y-auto',
-                    contentOrientation === 'vertical' && 'w-60',
-                    props.ui?.content,
-                  )"
-                >
-                  <slot
-                    name="item-content"
-                    :item="item"
-                    :index="index"
-                    :active="isSelected(itemValueOf(item, index, 0, listIndex))"
-                    :ui="props.ui"
-                    :close="() => changeOpenValue(null)"
-                  >
-                    <ReuseChildList :item="item" :in-popover="false" />
-                  </slot>
-                </NavigationMenuContent>
-              </template>
-
-              <NavigationMenuLink
-                v-else
-                data-slot="link"
-                :disabled="item.disabled"
-                :class="cn(
-                  linkClasses(item, isSelected(itemValueOf(item, index, 0, listIndex)), 0),
-                  highlightClasses(isSelected(itemValueOf(item, index, 0, listIndex)), 0),
-                )"
-                @select="handleSelect(item)"
-              >
-                <ReuseLinkContent
-                  :item="item"
-                  :index="index"
-                  :active="isSelected(itemValueOf(item, index, 0, listIndex))"
-                  :open="false"
-                  :show-trailing-chevron="false"
-                />
-              </NavigationMenuLink>
-            </NavigationMenuItem>
-          </template>
-        </NavigationMenuList>
-
-        <slot name="list-trailing" />
-
-        <div
-          v-if="arrow"
-          data-slot="viewportWrapper"
-          :class="cn('contents', props.ui?.viewportWrapper)"
-        >
-          <NavigationMenuViewport
-            data-slot="viewport"
-            :class="cn(
-              'relative w-full overflow-hidden rounded-md bg-popover shadow-lg ring-1 ring-border outline-none',
-              'data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95',
-              props.ui?.viewport,
-            )"
-          />
-        </div>
-
-        <NavigationMenuViewport
-          v-else
-          data-slot="viewport"
-          :class="cn(
-            'relative w-full overflow-hidden rounded-md bg-popover shadow-lg ring-1 ring-border outline-none',
-            'data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95',
-            props.ui?.viewport,
-          )"
+        <ReuseItemTemplate
+          v-for="(item, index) in list"
+          :key="`list-${listIndex}-${index}`"
+          :item="item"
+          :index="index"
+          :list-index="listIndex"
+          data-slot="item"
+          :class="ui.item({ class: [props.ui?.item, item.ui?.item] })"
         />
-      </NavigationMenuRoot>
+      </component>
 
-      <template v-else>
-        <slot name="list-leading" />
-        <ul data-slot="list" :class="cn('isolate min-w-0', props.ui?.list)">
-          <ReuseVerticalItems :items="list" :level="0" :list-index="listIndex" />
-        </ul>
-        <slot name="list-trailing" />
-      </template>
+      <div v-if="props.orientation === 'vertical' && listIndex < lists.length - 1" data-slot="separator" :class="ui.separator({ class: props.ui?.separator })" />
     </template>
-  </Primitive>
+
+    <slot name="list-trailing" />
+
+    <div v-if="props.orientation === 'horizontal'" data-slot="viewportWrapper" :class="ui.viewportWrapper({ class: props.ui?.viewportWrapper })">
+      <NavigationMenuIndicator v-if="props.arrow" data-slot="indicator" :class="ui.indicator({ class: props.ui?.indicator })">
+        <div data-slot="arrow" :class="ui.arrow({ class: props.ui?.arrow })" />
+      </NavigationMenuIndicator>
+
+      <NavigationMenuViewport data-slot="viewport" :class="ui.viewport({ class: props.ui?.viewport })" />
+    </div>
+  </NavigationMenuRoot>
 </template>

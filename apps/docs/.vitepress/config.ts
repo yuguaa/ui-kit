@@ -4,7 +4,7 @@
  * alias @ 指向 vendor 目录（prepare-vendor 脚本合并两个包源码生成），
  * Vue demo 原生渲染，React demo 通过页面内容器 createRoot 挂载。
  */
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
@@ -131,6 +131,41 @@ export default defineConfig({
           { text: "设计 token", link: "/react/guide/tokens" },
         ],
         sidebar: localeSidebar("react"),
+      },
+    },
+  },
+  /**
+   * vue 编译器解析 defineProps 类型的 extends 链时需要读 import 源文件。
+   * Nuxt 组件大量使用跨文件 interface，提供 fs 让编译期类型解析成立。
+   */
+  vue: {
+    script: {
+      fs: {
+        fileExists(file: string) {
+          const candidates = [
+            file,
+            `${file}.ts`,
+            `${file}.tsx`,
+            `${file}.vue`,
+            `${file}/index.ts`,
+          ];
+          return candidates.some((candidate) => existsSync(candidate));
+        },
+        readFile(file: string) {
+          const candidates = [
+            file,
+            `${file}.ts`,
+            `${file}.tsx`,
+            `${file}.vue`,
+            `${file}/index.ts`,
+          ];
+          for (const candidate of candidates) {
+            if (existsSync(candidate)) {
+              return readFileSync(candidate, "utf-8");
+            }
+          }
+          return undefined;
+        },
       },
     },
   },

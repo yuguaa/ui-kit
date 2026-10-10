@@ -1,51 +1,47 @@
-<script setup lang="ts">
-/**
- * XContainer 容器：约束内容宽度的居中布局容器。
- * 五档最大宽度：xs 640 / sm 768 / md 1024 / lg 1280 / xl 1536。
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { Primitive } from 'reka-ui'
-import { cn } from '@/lib/utils'
+<script lang="ts">
+import type { VNode } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/container'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-type ContainerSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
+type Container = ComponentConfig<typeof theme, AppConfig, 'container'>
 
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface ContainerUi {
-  base?: string
+export interface ContainerProps {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
+  class?: any
+  ui?: { base?: any }
 }
 
-const props = withDefaults(defineProps<{
-  /** 最大宽度 */
-  size?: ContainerSize
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 主题插槽类名 */
-  ui?: ContainerUi
-  class?: HTMLAttributes['class']
-}>(), {
-  size: 'lg',
-  as: 'div',
-})
-
-defineOptions({ name: 'XContainer', inheritAttrs: false })
-
-/** 最大宽度：640 / 768 / 1024 / 1280 / 1536 */
-const sizeClasses: Record<ContainerSize, string> = {
-  xs: 'max-w-160',
-  sm: 'max-w-192',
-  md: 'max-w-256',
-  lg: 'max-w-320',
-  xl: 'max-w-384',
+export interface ContainerSlots {
+  default?(props?: {}): VNode[]
 }
 </script>
 
+<script setup lang="ts">
+import { computed } from 'vue'
+import { Primitive } from 'reka-ui'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { tv } from '../../lib/nuxt/utils/tv'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+
+const _props = defineProps</* @vue-ignore */ ContainerProps>()
+
+defineSlots</* @vue-ignore */ ContainerSlots>()
+
+const props = useComponentProps('container', _props)
+
+const appConfig = useAppConfig() as Container['AppConfig']
+
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.container || {}) }))
+</script>
+
 <template>
-  <Primitive
-    :as="as"
-    v-bind="$attrs"
-    data-slot="container"
-    :class="cn('mx-auto w-full px-4', sizeClasses[size], ui?.base, props.class)"
-  >
+  <Primitive :as="props.as" :class="ui({ class: [props.ui?.base, props.class] })">
     <slot />
   </Primitive>
 </template>

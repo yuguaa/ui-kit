@@ -1,237 +1,271 @@
-<script setup lang="ts">
-/**
- * XTextarea 多行文本：原生 textarea 的二次封装。
- * 注入 Nuxt UI 语义：color、highlight、size、autoresize（等价 autosize）。
- * 保留 kit 既有能力：showCount 字数统计与 error / warning 校验状态。
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { computed, nextTick, onMounted, onScopeDispose, useAttrs, useTemplateRef, watch } from 'vue'
-import { Primitive } from 'reka-ui'
-import { cn } from '@/lib/utils'
+<script lang="ts">
+import type { VNode } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/textarea'
+import type { UseComponentIconsProps } from '../../lib/nuxt/composables/useComponentIcons'
+import type { AvatarProps } from './XAvatar.vue'
+import type { TextareaHTMLAttributes } from '../../lib/nuxt/types/html'
+import type { ModelModifiers, ApplyModifiers } from '../../lib/nuxt/types/input'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-/* 属性透传到内部 textarea，避免落到外层包装元素 */
-defineOptions({ name: 'XTextarea', inheritAttrs: false })
+type Textarea = ComponentConfig<typeof theme, AppConfig, 'textarea'>
 
-type TextareaSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-type TextareaColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
-type TextareaStatus = 'error' | 'warning'
+type TextareaValue = string | number | null
 
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface TextareaUi {
-  base?: string
+export interface TextareaProps<T extends TextareaValue = TextareaValue, Mod extends ModelModifiers = ModelModifiers> extends UseComponentIconsProps, /** @vue-ignore */ Omit<TextareaHTMLAttributes, 'name' | 'placeholder' | 'required' | 'autofocus' | 'disabled' | 'rows'> {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
+  id?: string
+  name?: string
+  /** The placeholder text when the textarea is empty. */
+  placeholder?: string
+  /**
+   * @defaultValue 'primary'
+   */
+  color?: Textarea['variants']['color']
+  /**
+   * @defaultValue 'outline'
+   */
+  variant?: Textarea['variants']['variant']
+  /**
+   * @defaultValue 'md'
+   */
+  size?: Textarea['variants']['size']
+  required?: boolean
+  autofocus?: boolean
+  autofocusDelay?: number
+  autoresize?: boolean
+  autoresizeDelay?: number
+  disabled?: boolean
+  rows?: number
+  maxrows?: number
+  /** Highlight the ring color like a focus state. */
+  highlight?: boolean
+  /** Keep the mobile text size on all breakpoints. */
+  fixed?: boolean
+  defaultValue?: ApplyModifiers<T, Mod>
+  modelValue?: ApplyModifiers<T, Mod>
+  modelModifiers?: Mod
+  class?: any
+  ui?: Textarea['slots']
 }
 
-const props = withDefaults(defineProps<{
-  /** 控件尺寸 */
-  size?: TextareaSize
-  /** 组件颜色（聚焦描边与高亮） */
-  color?: TextareaColor
-  /** 高亮：始终显示颜色描边，类似聚焦态 */
-  highlight?: boolean
-  /** 保持移动端字号在所有断点一致 */
-  fixed?: boolean
-  /** 行数 */
-  rows?: number
-  /** 占位文字 */
-  placeholder?: string
-  /** 是否禁用 */
-  disabled?: boolean
-  /** 是否必填 */
-  required?: boolean
-  /** 自动调整高度 */
-  autoresize?: boolean
-  /** 自动调整高度的延迟（毫秒） */
-  autoresizeDelay?: number
-  /** 自动调整高度的行数上限，超出后内容在控件内部滚动 */
-  maxrows?: number
-  /** 自动调整高度（等价 autoresize） */
-  autosize?: boolean
-  /** 自动调整高度的行数上限（等价 maxrows） */
-  maxRows?: number
-  /** 校验状态 */
-  status?: TextareaStatus
-  /** 最大输入长度 */
-  maxLength?: number
-  /** 右下角显示字数统计，设置 maxLength 时显示「当前长度 / 最大长度」 */
-  showCount?: boolean
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 主题插槽类名 */
-  ui?: TextareaUi
-  class?: HTMLAttributes['class']
-}>(), {
-  size: 'md',
-  color: 'primary',
-  highlight: false,
-  fixed: true,
+export interface TextareaEmits<T extends TextareaValue = TextareaValue, Mod extends ModelModifiers = ModelModifiers> {
+  'update:modelValue': [value: ApplyModifiers<T, Mod>]
+  'blur': [event: FocusEvent]
+  'change': [event: Event]
+}
+
+export interface TextareaSlots {
+  leading?(props: { ui: Textarea['ui'] }): VNode[]
+  default?(props: { ui: Textarea['ui'] }): VNode[]
+  trailing?(props: { ui: Textarea['ui'] }): VNode[]
+}
+</script>
+
+<script setup lang="ts" generic="T extends TextareaValue, Mod extends ModelModifiers = ModelModifiers">
+import { useTemplateRef, computed, onMounted, onScopeDispose, nextTick, watch } from 'vue'
+import { Primitive } from 'reka-ui'
+import { useVModel } from '@vueuse/core'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { useComponentIcons } from '../../lib/nuxt/composables/useComponentIcons'
+import { useFormField } from '../../lib/nuxt/composables/useFormField'
+import { isEmpty, looseToNumber } from '../../lib/nuxt/utils'
+import { tv } from '../../lib/nuxt/utils/tv'
+import XIcon from './XIcon.vue'
+import XAvatar from './XAvatar.vue'
+
+defineOptions({ inheritAttrs: false })
+
+const _props = withDefaults(defineProps</* @vue-ignore */ TextareaProps<T, Mod>>(), {
   rows: 3,
-  autoresize: false,
-  autoresizeDelay: 0,
   maxrows: 0,
-  autosize: false,
-  showCount: false,
+  autofocusDelay: 0,
+  autoresizeDelay: 0
+})
+const emits = defineEmits</* @vue-ignore */ TextareaEmits<T, Mod>>()
+const slots = defineSlots</* @vue-ignore */ TextareaSlots>()
+
+const props = useComponentProps<TextareaProps<T, Mod>>('textarea', _props)
+
+// eslint-disable-next-line vue/no-dupe-keys
+const modelValue = useVModel<TextareaProps<T, Mod>, 'modelValue', 'update:modelValue'>(props, 'modelValue', emits, { defaultValue: props.defaultValue })
+
+const appConfig = useAppConfig() as Textarea['AppConfig']
+
+const { emitFormFocus, emitFormBlur, emitFormInput, emitFormChange, size: formFieldSize, color: formFieldColor, id, name, highlight: formFieldHighlight, disabled: formFieldDisabled, ariaAttrs } = useFormField<TextareaProps<T>>(_props, { deferInputValidation: true })
+
+// eslint-disable-next-line vue/no-dupe-keys
+const color = computed(() => formFieldColor.value ?? props.color)
+// eslint-disable-next-line vue/no-dupe-keys
+const highlight = computed(() => formFieldHighlight.value ?? props.highlight)
+// eslint-disable-next-line vue/no-dupe-keys
+const size = computed(() => formFieldSize.value ?? props.size)
+// eslint-disable-next-line vue/no-dupe-keys
+const disabled = computed(() => formFieldDisabled.value ?? props.disabled)
+const { isLeading, isTrailing, leadingIconName, trailingIconName } = useComponentIcons(props)
+
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.textarea || {}) })({
+  color: color.value,
+  variant: props.variant,
+  size: size.value,
+  loading: props.loading,
+  highlight: highlight.value,
+  fixed: props.fixed,
+  autoresize: props.autoresize,
+  leading: isLeading.value || !!props.avatar || !!slots.leading,
+  trailing: isTrailing.value || !!slots.trailing
+}))
+
+const textareaRef = useTemplateRef('textareaRef')
+
+// Custom function to handle the v-model properties
+function updateInput(value: string | null | undefined) {
+  if (props.modelModifiers?.trim && (typeof value === 'string' || value === null || value === undefined)) {
+    value = value?.trim() ?? null
+  }
+
+  if (props.modelModifiers?.number) {
+    value = looseToNumber(value)
+  }
+
+  // Only empty values are mapped, `0` is a value on its own with the `number` modifier
+  if (props.modelModifiers?.nullable && isEmpty(value)) {
+    value = null
+  }
+
+  if (props.modelModifiers?.optional && !props.modelModifiers?.nullable && value !== null && isEmpty(value)) {
+    value = undefined
+  }
+
+  modelValue.value = value as ApplyModifiers<T, Mod>
+  emitFormInput()
+}
+
+function onInput(event: Event) {
+  autoResize()
+
+  if (!props.modelModifiers?.lazy) {
+    updateInput((event.target as HTMLInputElement).value)
+  }
+}
+
+function onChange(event: Event) {
+  const value = (event.target as HTMLInputElement).value
+
+  if (props.modelModifiers?.lazy) {
+    updateInput(value)
+  }
+
+  // Update trimmed textarea so that it has same behavior as native textarea https://github.com/vuejs/core/blob/5ea8a8a4fab4e19a71e123e4d27d051f5e927172/packages/runtime-dom/src/directives/vModel.ts#L63
+  if (props.modelModifiers?.trim) {
+    (event.target as HTMLInputElement).value = value.trim()
+  }
+
+  emitFormChange()
+  emits('change', event)
+}
+
+function onBlur(event: FocusEvent) {
+  emitFormBlur()
+  emits('blur', event)
+}
+
+function autoFocus() {
+  if (props.autofocus) {
+    textareaRef.value?.focus()
+  }
+}
+
+function autoResize() {
+  if (props.autoresize && textareaRef.value) {
+    textareaRef.value.rows = props.rows!
+    const overflow = textareaRef.value.style.overflow
+    textareaRef.value.style.overflow = 'hidden'
+
+    const styles = window.getComputedStyle(textareaRef.value)
+    const paddingTop = Number.parseInt(styles.paddingTop)
+    const paddingBottom = Number.parseInt(styles.paddingBottom)
+    const padding = paddingTop + paddingBottom
+    const lineHeight = Number.parseInt(styles.lineHeight)
+    const { scrollHeight } = textareaRef.value
+    const newRows = (scrollHeight - padding) / lineHeight
+
+    if (newRows > props.rows!) {
+      textareaRef.value.rows = props.maxrows ? Math.min(newRows, props.maxrows) : newRows
+    }
+
+    textareaRef.value.style.overflow = overflow
+  }
+}
+
+watch(modelValue, () => {
+  nextTick(autoResize)
 })
 
-/** 绑定值（支持 v-model） */
-const model = defineModel<string>({ default: '' })
-
-const attrs = useAttrs()
-const textareaRef = useTemplateRef<HTMLTextAreaElement>('textareaRef')
-
-/** 尺寸 → 内边距与字号 */
-const sizeClasses: Record<TextareaSize, string> = {
-  xs: 'px-2 py-1 text-sm',
-  sm: 'px-2.5 py-1.5 text-sm',
-  md: 'px-2.5 py-1.5 text-base',
-  lg: 'px-3 py-2 text-base',
-  xl: 'px-3.5 py-2.5 text-base',
-}
-
-/** 聚焦描边色 */
-const focusClasses: Record<TextareaColor, string> = {
-  primary: 'outline-primary/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-primary',
-  secondary: 'outline-secondary/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-secondary',
-  neutral: 'outline-foreground/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-foreground',
-  success: 'outline-success/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-success',
-  info: 'outline-info/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-info',
-  warning: 'outline-warning/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-warning',
-  error: 'outline-error/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-error',
-}
-
-/** 高亮描边色 */
-const highlightClasses: Record<TextareaColor, string> = {
-  primary: 'ring-1 ring-inset ring-primary',
-  secondary: 'ring-1 ring-inset ring-secondary',
-  neutral: 'ring-1 ring-inset ring-border',
-  success: 'ring-1 ring-inset ring-success',
-  info: 'ring-1 ring-inset ring-info',
-  warning: 'ring-1 ring-inset ring-warning',
-  error: 'ring-1 ring-inset ring-error',
-}
-
-/** fixed=false 时桌面端缩小一档字号 */
-const fixedTextClasses: Partial<Record<TextareaSize, string>> = {
-  xs: 'md:text-xs',
-  sm: 'md:text-xs',
-  md: 'md:text-sm',
-  lg: 'md:text-sm',
-}
-
-const statusClasses: Record<TextareaStatus, string> = {
-  error: 'border-error focus-visible:border-error focus-visible:ring-error/20',
-  warning: 'border-warning focus-visible:border-warning focus-visible:ring-warning/20',
-}
-
-const resizeEnabled = computed(() => props.autoresize || props.autosize)
-/** autoresize 走 Nuxt JS 行数计算，旧 autosize 保持 CSS field-sizing 方案 */
-const jsResize = computed(() => props.autoresize)
-const cssAutosize = computed(() => !props.autoresize && props.autosize)
-const maxRowsValue = computed(() => props.maxrows || props.maxRows || 0)
-
-/** 旧 autosize 方案：maxRows 换算为 lh 单位的最大高度，随控件自身行高生效 */
-const maxHeightStyle = computed(() =>
-  cssAutosize.value && maxRowsValue.value > 0 ? { maxHeight: `${maxRowsValue.value}lh` } : undefined,
-)
-
-/** Nuxt 模式的自动高度：按内容换算行数，超出 maxrows 后内部滚动 */
-function autoResize() {
-  const el = textareaRef.value
-  if (!jsResize.value || el == null) return
-  el.rows = props.rows
-  const overflow = el.style.overflow
-  el.style.overflow = 'hidden'
-
-  const styles = window.getComputedStyle(el)
-  const padding = Number.parseInt(styles.paddingTop) + Number.parseInt(styles.paddingBottom)
-  const lineHeight = Number.parseInt(styles.lineHeight)
-  const newRows = (el.scrollHeight - padding) / lineHeight
-
-  if (newRows > props.rows) {
-    el.rows = maxRowsValue.value > 0 ? Math.min(newRows, maxRowsValue.value) : newRows
-  }
-  el.style.overflow = overflow
-}
-
-watch(model, () => nextTick(autoResize))
-
+let autofocusTimeoutId: ReturnType<typeof setTimeout> | undefined
 let autoresizeTimeoutId: ReturnType<typeof setTimeout> | undefined
 
 onMounted(() => {
+  autofocusTimeoutId = setTimeout(() => {
+    autoFocus()
+  }, props.autofocusDelay)
+
   autoresizeTimeoutId = setTimeout(async () => {
     await nextTick()
     autoResize()
   }, props.autoresizeDelay)
 })
 
-onScopeDispose(() => clearTimeout(autoresizeTimeoutId))
+onScopeDispose(() => {
+  clearTimeout(autofocusTimeoutId)
+  clearTimeout(autoresizeTimeoutId)
+})
 
-const count = computed(() => model.value.length)
-
-function focus() {
-  textareaRef.value?.focus()
-}
-
-function blur() {
-  textareaRef.value?.blur()
-}
-
-defineExpose({ focus, blur, autoResize })
-
-function onClick(event: MouseEvent) {
-  const handler = attrs.onClick as
-    | ((event: MouseEvent) => unknown)
-    | Array<(event: MouseEvent) => unknown>
-    | undefined
-  if (handler == null) return
-
-  /* 透传的处理器可能是数组（上层 as-child 合并后），逐个调用 */
-  const handlers = Array.isArray(handler) ? handler : [handler]
-  handlers.forEach((fn) => fn(event))
-}
-
-/** 透传属性：onClick 换成包装后的处理函数，其余原样透传 */
-const forwardedAttrs = computed(() => ({ ...attrs, onClick }))
+defineExpose({
+  textareaRef,
+  autoResize
+})
 </script>
 
 <template>
-  <Primitive
-    :as="as ?? 'div'"
-    data-slot="root"
-    :class="cn('relative inline-flex items-center', props.class)"
-  >
+  <Primitive :as="props.as" :data-slot="($attrs['data-slot'] as string | undefined) ?? 'root'" :class="ui.root({ class: [props.ui?.root, props.class] })">
     <textarea
+      :id="id"
       ref="textareaRef"
-      v-bind="forwardedAttrs"
-      :value="model"
-      :rows="rows"
-      data-slot="base"
-      :class="cn(
-        'w-full rounded-md border-0 appearance-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-75 transition-colors',
-        'bg-background ring-1 ring-inset ring-border',
-        sizeClasses[size],
-        focusClasses[color],
-        highlight && highlightClasses[color],
-        fixed === false && fixedTextClasses[size],
-        resizeEnabled && 'resize-none',
-        cssAutosize && 'field-sizing-content',
-        maxHeightStyle != null && 'overflow-auto',
-        status && statusClasses[status],
-        showCount && 'pb-6',
-        props.ui?.base,
-      )"
+      :value="modelValue"
+      :name="name"
+      :rows="props.rows"
+      :placeholder="props.placeholder"
+      :class="ui.base({ class: props.ui?.base })"
       :disabled="disabled"
-      :required="required"
-      :placeholder="placeholder"
-      :maxlength="maxLength"
-      :style="maxHeightStyle"
-      @input="model = ($event.target as HTMLTextAreaElement).value"
+      :required="props.required"
+      v-bind="{ ...$attrs, ...ariaAttrs }"
+      data-slot="base"
+      @input="onInput"
+      @blur="onBlur"
+      @change="onChange"
+      @focus="emitFormFocus"
     />
-    <span
-      v-if="showCount"
-      class="pointer-events-none absolute right-3 bottom-2 text-xs tabular-nums text-muted-foreground"
-    >
-      <template v-if="maxLength != null">{{ count }} / {{ maxLength }}</template>
-      <template v-else>{{ count }}</template>
+
+    <slot :ui="ui" />
+
+    <span v-if="isLeading || !!props.avatar || !!slots.leading" data-slot="leading" :class="ui.leading({ class: props.ui?.leading })">
+      <slot name="leading" :ui="ui">
+        <XIcon v-if="isLeading && leadingIconName" :name="leadingIconName" data-slot="leadingIcon" :class="ui.leadingIcon({ class: props.ui?.leadingIcon })" />
+        <XAvatar v-else-if="!!props.avatar" :size="((props.ui?.leadingAvatarSize || ui.leadingAvatarSize()) as AvatarProps['size'])" v-bind="props.avatar" data-slot="leadingAvatar" :class="ui.leadingAvatar({ class: props.ui?.leadingAvatar })" />
+      </slot>
+    </span>
+
+    <span v-if="isTrailing || !!slots.trailing" data-slot="trailing" :class="ui.trailing({ class: props.ui?.trailing })">
+      <slot name="trailing" :ui="ui">
+        <XIcon v-if="trailingIconName" :name="trailingIconName" data-slot="trailingIcon" :class="ui.trailingIcon({ class: props.ui?.trailingIcon })" />
+      </slot>
     </span>
   </Primitive>
 </template>

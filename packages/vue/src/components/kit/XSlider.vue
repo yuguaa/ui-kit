@@ -1,197 +1,156 @@
-<script setup lang="ts">
-/**
- * XSlider 滑块：与 Nuxt UI Slider 对齐。
- * color / size 控制指示条与拇指，tooltip 悬浮显示当前值（可为对象透传 XTooltip），
- * change 事件在值提交（拖动结束）时触发，event.target.value 为提交值。
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { computed } from 'vue'
-import { SliderRange, SliderRoot, SliderThumb, SliderTrack } from 'reka-ui'
-import XTooltip from '@/components/kit/XTooltip.vue'
-import { cn } from '@/lib/utils'
+<script lang="ts">
+import type { SliderRootProps } from 'reka-ui'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/slider'
+import type { TooltipProps } from './XTooltip.vue'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-type TooltipProps = InstanceType<typeof XTooltip>['$props']
+type Slider = ComponentConfig<typeof theme, AppConfig, 'slider'>
 
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface SliderUi {
-  root?: string
-  track?: string
-  range?: string
-  thumb?: string
+export interface SliderProps extends Pick<SliderRootProps, 'name' | 'disabled' | 'inverted' | 'min' | 'max' | 'step' | 'minStepsBetweenThumbs'> {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
+  /**
+   * @defaultValue 'md'
+   */
+  size?: Slider['variants']['size']
+  /**
+   * @defaultValue 'primary'
+   */
+  color?: Slider['variants']['color']
+  /**
+   * The orientation of the slider.
+   * @defaultValue 'horizontal'
+   */
+  orientation?: Slider['variants']['orientation']
+  /**
+   * Display a tooltip around the slider thumbs with the current value.
+   * `{ disableClosingTrigger: true }`{lang="ts-type"}
+   * @defaultValue false
+   */
+  tooltip?: boolean | TooltipProps
+  /** The value of the slider when initially rendered. Use when you do not need to control the state of the slider. */
+  defaultValue?: number | number[]
+  class?: any
+  ui?: Slider['slots']
 }
 
-type SliderColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
-type SliderSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-type SliderOrientation = 'horizontal' | 'vertical'
+export interface SliderEmits {
+  change: [event: Event]
+}
+</script>
 
-defineOptions({ name: 'XSlider', inheritAttrs: false })
+<script setup lang="ts" generic="T extends number | number[]">
+import { computed } from 'vue'
+import { SliderRoot, SliderRange, SliderTrack, SliderThumb } from 'reka-ui'
+import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
+import { reactivePick } from '@vueuse/core'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { useFormField } from '../../lib/nuxt/composables/useFormField'
+import { pick, omit } from '../../lib/nuxt/utils'
+import { tv } from '../../lib/nuxt/utils/tv'
+import XTooltip from './XTooltip.vue'
 
-const props = withDefaults(defineProps<{
-  /** 最小值 */
-  min?: number
-  /** 最大值 */
-  max?: number
-  /** 步长 */
-  step?: number
-  /** 是否禁用 */
-  disabled?: boolean
-  /** 悬浮显示当前值提示，可为 XTooltip 属性对象 */
-  tooltip?: boolean | Partial<Omit<TooltipProps, 'text' | 'class'>>
-  /** 滑块方向 */
-  orientation?: SliderOrientation
-  /** 指示条与拇指颜色 */
-  color?: SliderColor
-  /** 尺寸 */
-  size?: SliderSize
-  /** 默认值（非受控） */
-  defaultValue?: number | number[]
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 主题插槽类名 */
-  ui?: SliderUi
-  class?: HTMLAttributes['class']
-}>(), {
+const _props = withDefaults(defineProps</* @vue-ignore */ SliderProps>(), {
   min: 0,
   max: 100,
   step: 1,
-  disabled: false,
-  tooltip: false,
-  orientation: 'horizontal',
-  color: 'primary',
-  size: 'md',
+  orientation: 'horizontal'
+})
+const emits = defineEmits</* @vue-ignore */ SliderEmits>()
+
+defineOptions({ inheritAttrs: false })
+
+const props = useComponentProps<SliderProps>('slider', _props)
+
+const modelValue = defineModel<T>()
+
+const appConfig = useAppConfig() as Slider['AppConfig']
+
+const rootProps = useForwardProps(reactivePick(props, 'as', 'orientation', 'min', 'max', 'step', 'minStepsBetweenThumbs', 'inverted'))
+
+const { id, emitFormChange, emitFormInput, size: formFieldSize, color: formFieldColor, name, disabled: formFieldDisabled, ariaAttrs } = useFormField<SliderProps>(_props)
+
+// eslint-disable-next-line vue/no-dupe-keys
+const color = computed(() => formFieldColor.value ?? props.color)
+// eslint-disable-next-line vue/no-dupe-keys
+const size = computed(() => formFieldSize.value ?? props.size)
+
+const disabled = computed(() => formFieldDisabled.value ?? props.disabled)
+
+const defaultSliderValue = computed(() => {
+  if (typeof props.defaultValue === 'number') {
+    return [props.defaultValue]
+  }
+  return props.defaultValue
 })
 
-/** 绑定值：单值或双值区间 */
-const modelValue = defineModel<number | number[]>()
-
-const emit = defineEmits<{
-  /** 值提交（拖动结束）回调，event.target.value 为提交值 */
-  change: [event: Event]
-}>()
-
-/** 颜色映射：指示条背景与拇指描边 */
-const colorClasses: Record<SliderColor, { range: string; thumb: string }> = {
-  primary: { range: 'bg-primary', thumb: 'ring-primary outline-primary/25' },
-  secondary: { range: 'bg-secondary', thumb: 'ring-secondary outline-secondary/25' },
-  neutral: { range: 'bg-foreground', thumb: 'ring-foreground outline-foreground/25' },
-  success: { range: 'bg-success', thumb: 'ring-success outline-success/25' },
-  info: { range: 'bg-info', thumb: 'ring-info outline-info/25' },
-  warning: { range: 'bg-warning', thumb: 'ring-warning outline-warning/25' },
-  error: { range: 'bg-error', thumb: 'ring-error outline-error/25' },
-}
-
-const thumbSizeClasses: Record<SliderSize, string> = {
-  xs: 'size-3',
-  sm: 'size-3.5',
-  md: 'size-4',
-  lg: 'size-4.5',
-  xl: 'size-5',
-}
-
-const trackSizeClasses: Record<SliderSize, Record<SliderOrientation, string>> = {
-  xs: { horizontal: 'h-[6px]', vertical: 'w-[6px]' },
-  sm: { horizontal: 'h-[7px]', vertical: 'w-[7px]' },
-  md: { horizontal: 'h-[8px]', vertical: 'w-[8px]' },
-  lg: { horizontal: 'h-[9px]', vertical: 'w-[9px]' },
-  xl: { horizontal: 'h-[10px]', vertical: 'w-[10px]' },
-}
-
-function toArray(value: number | number[] | undefined) {
-  if (value == null) return undefined
-  return typeof value === 'number' ? [value] : value
-}
-
-const defaultSliderValue = computed(() => toArray(props.defaultValue))
-
-/** 单值 → 数组，供 SliderRoot 使用 */
 const sliderValue = computed({
   get() {
-    if (typeof modelValue.value === 'number') return [modelValue.value]
-    return modelValue.value ?? defaultSliderValue.value
+    if (typeof modelValue.value === 'number') {
+      return [modelValue.value]
+    }
+    return (modelValue.value as number[]) ?? defaultSliderValue.value
   },
-  set(value: number[]) {
-    modelValue.value = value.length === 1 ? value[0] : value
-  },
+  set(value) {
+    modelValue.value = (value?.length !== 1 ? value : value[0]) as T
+  }
 })
 
 const thumbs = computed(() => sliderValue.value?.length ?? 1)
 
-function onChange(value: number[]) {
-  const event = new Event('change')
-  Object.defineProperty(event, 'target', { value: { value }, enumerable: true })
-  emit('change', event)
+// The thumb is the element with `role="slider"`, so these describe it rather than the root.
+// Multiple thumbs keep Reka UI's positional names and the caller's label groups them on the root.
+const thumbAttrs = ['aria-label', 'aria-labelledby', 'aria-describedby', 'aria-valuetext', 'aria-invalid', 'aria-errormessage']
+
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.slider || {}) })({
+  disabled: disabled.value,
+  size: size.value,
+  color: color.value,
+  orientation: props.orientation
+}))
+
+function onChange(value: any) {
+  // @ts-expect-error - 'target' does not exist in type 'EventInit'
+  const event = new Event('change', { target: { value } })
+  emits('change', event)
+  emitFormChange()
 }
 </script>
 
 <template>
   <SliderRoot
+    :id="id"
     v-model="sliderValue"
-    v-bind="$attrs"
-    :as="as ?? 'div'"
     data-slot="root"
-    :default-value="defaultSliderValue"
-    :min="min"
-    :max="max"
-    :step="step"
+    :role="thumbs > 1 && ($attrs['aria-label'] || $attrs['aria-labelledby']) ? 'group' : undefined"
+    v-bind="{ ...rootProps, ...(thumbs > 1 ? $attrs : omit($attrs, thumbAttrs)) }"
+    :name="name"
     :disabled="disabled"
-    :orientation="orientation"
-    :class="cn(
-      'relative flex items-center select-none touch-none',
-      orientation === 'horizontal' ? 'w-full' : 'flex-col h-full',
-      disabled && 'opacity-75 cursor-not-allowed',
-      ui?.root,
-      props.class,
-    )"
+    :class="ui.root({ class: [props.ui?.root, props.class] })"
+    :default-value="defaultSliderValue"
+    @update:model-value="emitFormInput()"
     @value-commit="onChange"
   >
-    <SliderTrack
-      data-slot="track"
-      :class="cn(
-        'relative bg-muted overflow-hidden rounded-full grow',
-        trackSizeClasses[size][orientation],
-        ui?.track,
-      )"
-    >
-      <SliderRange
-        data-slot="range"
-        :class="cn(
-          'absolute rounded-full',
-          colorClasses[color].range,
-          orientation === 'horizontal' ? 'h-full' : 'w-full',
-          ui?.range,
-        )"
-      />
+    <SliderTrack data-slot="track" :class="ui.track({ class: props.ui?.track })">
+      <SliderRange data-slot="range" :class="ui.range({ class: props.ui?.range })" />
     </SliderTrack>
 
     <template v-for="thumb in thumbs" :key="thumb">
       <XTooltip
-        v-if="tooltip"
+        v-if="!!props.tooltip"
         :text="thumbs > 1 ? String(sliderValue?.[thumb - 1]) : String(sliderValue)"
         disable-closing-trigger
-        v-bind="typeof tooltip === 'object' ? tooltip : {}"
+        v-bind="(typeof props.tooltip === 'object' ? props.tooltip : {})"
       >
-        <SliderThumb
-          data-slot="thumb"
-          :aria-label="thumbs > 1 ? undefined : ($attrs['aria-label'] as string | undefined) ?? 'Thumb'"
-          :class="cn(
-            'rounded-full bg-background ring-2 focus-visible:outline-3 focus-visible:outline-offset-2',
-            thumbSizeClasses[size],
-            colorClasses[color].thumb,
-            ui?.thumb,
-          )"
-        />
+        <SliderThumb data-slot="thumb" :class="ui.thumb({ class: props.ui?.thumb })" v-bind="{ ...(thumbs === 1 ? pick($attrs, thumbAttrs) : {}), ...ariaAttrs }" :aria-label="thumbs > 1 || $attrs['aria-labelledby'] ? undefined : ($attrs['aria-label'] ?? 'Thumb')" />
       </XTooltip>
-      <SliderThumb
-        v-else
-        data-slot="thumb"
-        :aria-label="thumbs > 1 ? undefined : ($attrs['aria-label'] as string | undefined) ?? 'Thumb'"
-        :class="cn(
-          'rounded-full bg-background ring-2 focus-visible:outline-3 focus-visible:outline-offset-2',
-          thumbSizeClasses[size],
-          colorClasses[color].thumb,
-          ui?.thumb,
-        )"
-      />
+      <SliderThumb v-else data-slot="thumb" :class="ui.thumb({ class: props.ui?.thumb })" v-bind="{ ...(thumbs === 1 ? pick($attrs, thumbAttrs) : {}), ...ariaAttrs }" :aria-label="thumbs > 1 || $attrs['aria-labelledby'] ? undefined : ($attrs['aria-label'] ?? 'Thumb')" />
     </template>
   </SliderRoot>
 </template>

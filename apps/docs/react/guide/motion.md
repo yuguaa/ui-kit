@@ -1,30 +1,29 @@
 # 动效规范
 
-克制式动效：悬浮只做颜色与阴影过渡，位移仅用于弹层出入场与布局变化。
+动效体系全部使用 CSS keyframes 与 transition，不引入 JS 动效库，与 Nuxt UI 默认动效一致。
 
 ## 设计原则
 
-| 场景 | 动效 | 说明 |
-| --- | --- | --- |
-| hover 悬浮 | 背景色 / 边框色 / 阴影过渡 | 无位移动画，避免悬浮时视觉跳动 |
-| press 按压 | scale 0.98 | 元素形态反馈，符合物理直觉 |
-| focus 聚焦 | ring 透明度过渡 | 200ms |
-| enter / exit 弹层 | 淡入 + 轻微位移 | 仅出现与消失场景使用位移 |
-| layout 布局 | spring 弹性过渡 | 尺寸或位置变化 |
+- hover / active 仅做颜色过渡（transition-colors），无位移、无缩放
+- 弹层出入场使用缩放 + 淡入淡出（scale-in / scale-out），无位移动画
+- 抽屉与侧滑面板按方向滑动进出场
+- `prefers-reduced-motion` 下保留淡入淡出，去除位移与缩放
 
-## 动效 token
+## 时长与场景
 
-| token | 参数 | 用途 |
+| 场景 | 动效 | 时长 |
 | --- | --- | --- |
-| fast | 120ms ease-out | press / hover 即时反馈 |
-| base | 200ms ease-in-out | enter / exit / 颜色变化 |
-| slow | 300ms spring | layout / 展开收起 |
+| Popover / Tooltip / 菜单类弹层 | scale 0.95 + 淡入淡出 | 100ms ease-out |
+| Modal / CommandPalette | 遮罩淡入淡出 + 内容缩放 | 200ms ease-out |
+| Drawer / Slideover | 方向滑入滑出 + 遮罩淡入淡出 | 200ms ease-out |
+| Switch / Tabs 指示器 | 位移与背景过渡 | 200ms ease-out |
+| hover / active | 背景色与文字色过渡 | transition-colors |
 
 ## 各组件动效
 
 每个组件文档页都包含「动效」小节，说明该组件的具体动效行为。总体概览：
 
-- 弹层类（Modal / Drawer / Slideover / Popover / Tooltip / 菜单类 / Toast）：淡入 + 缩放或滑入
+- 弹层类（Modal / Drawer / Slideover / Popover / Tooltip / 菜单类 / Toast）：缩放或滑动 + 淡入淡出
 - 展开类（Accordion / Collapsible）：高度动画
-- 交互类（Button / Link / 表单控件）：hover 颜色过渡 + press 缩放
+- 交互类（Button / Link / 表单控件）：hover 颜色过渡，active 背景加深
 - 静态类（Badge / Avatar / Kbd / Separator / Container）：无动效

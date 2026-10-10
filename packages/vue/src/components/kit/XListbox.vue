@@ -1,535 +1,414 @@
-<script setup lang="ts">
-/**
- * XListbox 列表选择：可选中项的列表（基于 reka-ui Listbox）。
- * items 支持字符串、对象与二维分组数组，labelKey / valueKey / descriptionKey 映射字段；
- * filter 开启顶部搜索框，按 filterFields 过滤；选项可带 type: 'label' | 'separator'。
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { computed, onMounted, onScopeDispose, ref, toRaw, useSlots } from 'vue'
-import {
-  ListboxContent,
-  ListboxFilter,
-  ListboxGroup,
-  ListboxGroupLabel,
-  ListboxItem,
-  ListboxItemIndicator,
-  ListboxRoot,
-  ListboxVirtualizer,
-} from 'reka-ui'
-import XAvatar from '@/components/kit/XAvatar.vue'
-import XIcon from '@/components/kit/XIcon.vue'
-import { cn } from '@/lib/utils'
-import { filterGroups, getField, looseToNumber } from '@/lib/kit/menu-utils'
+<!-- eslint-disable vue/block-tag-newline -->
+<script lang="ts">
+import type { VNode } from 'vue'
+import type { ListboxRootEmits, ListboxRootProps } from 'reka-ui'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/listbox'
+import type { AvatarProps } from './XAvatar.vue'
+import type { ChipProps } from './XChip.vue'
+import type { IconProps } from './XIcon.vue'
+import type { InputProps } from './XInput.vue'
+import type { ModelModifiers, ApplyModifiers } from '../../lib/nuxt/types/input'
+import type { ArrayOrNested, GetItemKeys, GetModelValue, NestedItem } from '../../lib/nuxt/types/utils'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-type IconName = 'check' | 'x' | 'chevron-down' | 'search' | 'loader-circle'
-/** 图标：XIcon 名称或自定义组件 */
-export type ListboxIcon = IconName | Component
+type Listbox = ComponentConfig<typeof theme, AppConfig, 'listbox'>
 
-export type ListboxSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-export type ListboxColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
-
-/** 顶部过滤搜索框配置 */
-export interface ListboxFilterOptions {
-  placeholder?: string
-  disabled?: boolean
-}
-
-export interface ListboxItemData {
+export interface ListboxItem {
   label?: string
   description?: string
-  icon?: ListboxIcon
-  avatar?: Record<string, any>
-  /** 项类型：label 分组标题 / separator 分隔线 / item 选项 */
+  /**
+   * @IconifyIcon
+   */
+  icon?: IconProps['name']
+  avatar?: AvatarProps
+  chip?: ChipProps
+  /**
+   * The item type.
+   * @defaultValue 'item'
+   */
   type?: 'label' | 'separator' | 'item'
   disabled?: boolean
   onSelect?: (e: Event) => void
-  class?: HTMLAttributes['class']
-  ui?: Record<string, string | undefined>
+  class?: any
+  ui?: Partial<Pick<Listbox['slots'], 'label' | 'separator' | 'item' | 'itemLeadingIcon' | 'itemLeadingAvatar' | 'itemLeadingAvatarSize' | 'itemLeadingChip' | 'itemLeadingChipSize' | 'itemWrapper' | 'itemLabel' | 'itemDescription' | 'itemTrailing' | 'itemTrailingIcon'>>
   [key: string]: any
 }
 
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface ListboxUi {
-  root?: string
-  input?: string
-  content?: string
-  group?: string
-  label?: string
-  separator?: string
-  empty?: string
-  loading?: string
-  loadingIcon?: string
-  item?: string
-  itemLeadingIcon?: string
-  itemLeadingAvatar?: string
-  itemLeadingAvatarSize?: string
-  itemWrapper?: string
-  itemLabel?: string
-  itemDescription?: string
-  itemTrailing?: string
-  itemTrailingIcon?: string
-}
-
-const props = withDefaults(defineProps<{
-  /** 列表项数组，二维数组时按行分组 */
-  items?: ListboxItemData[] | ListboxItemData[][]
-  /** 选中值（支持 v-model） */
-  modelValue?: string | number | Array<string | number>
-  /** 非受控初始值 */
-  defaultValue?: string | number | Array<string | number>
-  /** 是否多选 */
-  multiple?: boolean
-  /** 组件颜色 */
-  color?: ListboxColor
-  /** 尺寸 */
-  size?: ListboxSize
-  /** 选项值字段 */
-  valueKey?: string
-  /** 选项标签字段 */
-  labelKey?: string
-  /** 选项说明字段 */
-  descriptionKey?: string
-  /** 加载态 */
-  loading?: boolean
-  /** 加载图标 */
-  loadingIcon?: ListboxIcon
-  /** 顶部过滤搜索框：true 或 { placeholder, disabled } */
-  filter?: boolean | ListboxFilterOptions
-  /** 过滤字段，默认 [labelKey] */
-  filterFields?: string[]
-  /** 忽略内置过滤（适合自定义过滤场景） */
-  ignoreFilter?: boolean
-  /** 选中态图标 */
-  selectedIcon?: ListboxIcon
-  /** 虚拟滚动：true 或 { overscan, estimateSize } */
-  virtualize?: boolean | { overscan?: number, estimateSize?: number }
-  /** 高亮：始终显示颜色描边，类似聚焦态 */
-  highlight?: boolean
-  /** 是否自动聚焦 */
-  autofocus?: boolean
-  /** 自动聚焦延时（毫秒） */
-  autofocusDelay?: number
-  /** 是否禁用 */
-  disabled?: boolean
-  /** 是否必填 */
-  required?: boolean
-  /** 表单字段名 */
-  name?: string
-  /** 组件 id */
+export interface ListboxProps<T extends ArrayOrNested<ListboxItem> = ArrayOrNested<ListboxItem>, VK extends GetItemKeys<T> | undefined = undefined, M extends boolean = false, Mod extends Omit<ModelModifiers, 'lazy'> = Omit<ModelModifiers, 'lazy'>> extends Pick<ListboxRootProps, 'by' | 'disabled' | 'highlightOnHover' | 'name' | 'orientation' | 'required' | 'selectionBehavior'> {
   id?: string
-  /** 列表朝向 */
-  orientation?: 'horizontal' | 'vertical'
-  /** 指针悬停时高亮选项 */
-  highlightOnHover?: boolean
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 主题插槽类名 */
-  ui?: ListboxUi
-  class?: HTMLAttributes['class']
-}>(), {
-  items: () => [],
-  /* 显式 undefined：避免 Vue 对含 Boolean 的联合类型属性做 false 兜底 */
-  modelValue: undefined,
-  defaultValue: undefined,
-  multiple: false,
-  color: 'primary',
-  size: 'md',
-  labelKey: 'label',
-  descriptionKey: 'description',
-  loading: false,
-  loadingIcon: 'loader-circle',
-  filter: false,
-  ignoreFilter: false,
-  selectedIcon: 'check',
-  virtualize: false,
-  highlight: false,
-  autofocus: false,
-  autofocusDelay: 0,
-  disabled: false,
-  required: false,
-  orientation: 'vertical',
-  highlightOnHover: true,
-})
-
-defineOptions({ name: 'XListbox', inheritAttrs: false })
-
-const slots = useSlots()
-
-const emit = defineEmits<{
-  /** 值变化回调 */
-  change: [event: Event]
-  /** 内部值变化回调 */
-  'update:modelValue': [value: string | number | Array<string | number> | undefined]
-  /** 焦点进入回调 */
-  entryFocus: [event: Event]
-  /** 高亮项变化回调 */
-  highlight: [payload: { ref: HTMLElement, value: unknown } | undefined]
-  /** 焦点离开回调 */
-  leave: [event: Event]
-}>()
-
-/** 非受控值：未传 modelValue 时使用 defaultValue 并在内部维护 */
-const innerValue = ref(props.defaultValue)
-const currentValue = computed(() =>
-  props.modelValue !== undefined ? props.modelValue : innerValue.value,
-)
-
-const labelField = computed(() => props.labelKey || 'label')
-const descriptionField = computed(() => props.descriptionKey || 'description')
-
-function updateValue(value: unknown) {
-  if (toRaw(props.modelValue) === value) return
-
-  let next = value as string | number | Array<string | number> | undefined
-  if (typeof next === 'string') next = next.trim()
-  next = looseToNumber(next) as typeof next
-
-  if (props.modelValue === undefined) innerValue.value = next
-  emit('update:modelValue', next)
-  emit('change', new Event('change'))
-}
-
-/** 分组：平铺数组视为单组 */
-const groups = computed<ListboxItemData[][]>(() => {
-  if (!props.items?.length) return []
-  return Array.isArray(props.items[0])
-    ? (props.items as ListboxItemData[][])
-    : [props.items as ListboxItemData[]]
-})
-
-function isStructural(item: ListboxItemData): boolean {
-  return !!item?.type && ['label', 'separator'].includes(item.type)
-}
-
-const keyword = ref('')
-
-/** 过滤：ignoreFilter 或空关键字时保持原样 */
-const filteredGroups = computed(() => {
-  if (props.ignoreFilter || !keyword.value) return groups.value
-
-  const fields = Array.isArray(props.filterFields) ? props.filterFields : [labelField.value]
-  return filterGroups(groups.value, keyword.value, { fields, isStructural })
-})
-const filteredItems = computed(() => filteredGroups.value.flatMap((group) => group))
-
-function itemValue(item: ListboxItemData): any {
-  return props.valueKey ? getField(item, props.valueKey) : item
-}
-
-function onSelect(event: Event, item: ListboxItemData) {
-  if (item?.disabled) {
-    event.preventDefault()
-    return
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
+  /**
+   * @defaultValue 'primary'
+   */
+  color?: Listbox['variants']['color']
+  /**
+   * @defaultValue 'md'
+   */
+  size?: Listbox['variants']['size']
+  /**
+   * The items to display in the list.
+   */
+  items?: T
+  /**
+   * The controlled value of the Listbox. Can be bound with `v-model`.
+   */
+  modelValue?: ApplyModifiers<GetModelValue<T, VK, M>, Mod>
+  modelModifiers?: Mod
+  /**
+   * The default value when not controlled.
+   */
+  defaultValue?: ApplyModifiers<GetModelValue<T, VK, M>, Mod>
+  /**
+   * Whether multiple items can be selected.
+   * @defaultValue false
+   */
+  multiple?: M & boolean
+  /**
+   * When `items` is an array of objects, select the field to use as the value instead of the object itself.
+   * @defaultValue undefined
+   */
+  valueKey?: VK
+  /**
+   * The key used to get the label from the item.
+   * @defaultValue 'label'
+   */
+  labelKey?: GetItemKeys<T>
+  /**
+   * The key used to get the description from the item.
+   * @defaultValue 'description'
+   */
+  descriptionKey?: GetItemKeys<T>
+  /**
+   * Whether the list is in a loading state.
+   */
+  loading?: boolean
+  /**
+   * The icon displayed when loading.
+   * @defaultValue appConfig.ui.icons.loading
+   * @IconifyIcon
+   */
+  loadingIcon?: IconProps['name']
+  /**
+   * Whether to display a filter input or not.
+   * Can be an object to pass additional props to the input.
+   * `{ placeholder: 'Search...', variant: 'none' }`{lang="ts-type"}
+   * @defaultValue false
+   */
+  filter?: boolean | Omit<InputProps, 'modelValue' | 'defaultValue'>
+  /**
+   * The fields to filter by.
+   * @defaultValue [labelKey]
+   */
+  filterFields?: string[]
+  /**
+   * When `true`, disable the default filters, useful for custom filtering (useAsyncData, useFetch, etc.).
+   * @defaultValue false
+   */
+  ignoreFilter?: boolean
+  /**
+   * The icon displayed when an item is selected.
+   * @defaultValue appConfig.ui.icons.check
+   * @IconifyIcon
+   */
+  selectedIcon?: IconProps['name']
+  /**
+   * Enable virtualization for large lists.
+   * @defaultValue false
+   */
+  virtualize?: boolean | {
+    /**
+     * Number of items rendered outside the visible area
+     * @defaultValue 12
+     */
+    overscan?: number
+    /**
+     * Estimated size (in px) of each item, or a function that returns the size for a given index
+     * @defaultValue 32
+     */
+    estimateSize?: number | ((index: number) => number)
   }
-  item?.onSelect?.(event)
+  /** Highlight the ring color like a focus state. */
+  highlight?: boolean
+  autofocus?: boolean
+  autofocusDelay?: number
+  class?: any
+  ui?: Listbox['slots']
 }
 
-const rootRef = ref<HTMLElement>()
-
-function autoFocus() {
-  if (!props.autofocus) return
-  const input = (rootRef.value as any)?.$el?.querySelector?.('input')
-  input?.focus?.()
+export type ListboxEmits<T extends ArrayOrNested<ListboxItem> = ArrayOrNested<ListboxItem>, VK extends GetItemKeys<T> | undefined = undefined, M extends boolean = false, Mod extends Omit<ModelModifiers, 'lazy'> = Omit<ModelModifiers, 'lazy'>> = Pick<ListboxRootEmits, 'entryFocus' | 'highlight' | 'leave'> & {
+  'change': [event: Event]
+  'update:modelValue': [value: ApplyModifiers<GetModelValue<T, VK, M>, Mod>]
 }
 
-let autofocusTimer: ReturnType<typeof setTimeout> | undefined
+type SlotProps<T> = (props: { item: T, index: number, ui: Listbox['ui'] }) => VNode[]
 
-onMounted(() => {
-  autofocusTimer = setTimeout(autoFocus, props.autofocusDelay)
-})
-
-onScopeDispose(() => clearTimeout(autofocusTimer))
-
-/** 尺寸映射：item / label / empty / loading / 图标 */
-const sizeClasses: Record<ListboxSize, { item: string, label: string, empty: string, loading: string, icon: string }> = {
-  xs: { item: 'p-1 text-xs gap-1', label: 'p-1 text-[10px] gap-1', empty: 'py-3 text-xs', loading: 'py-3', icon: 'size-4' },
-  sm: { item: 'p-1.5 text-xs gap-1.5', label: 'p-1.5 text-[10px] gap-1.5', empty: 'py-4 text-xs', loading: 'py-4', icon: 'size-4' },
-  md: { item: 'p-1.5 text-sm gap-1.5', label: 'p-1.5 text-xs gap-1.5', empty: 'py-6 text-sm', loading: 'py-6', icon: 'size-5' },
-  lg: { item: 'p-2 text-sm gap-2', label: 'p-2 text-xs gap-2', empty: 'py-7 text-sm', loading: 'py-7', icon: 'size-5' },
-  xl: { item: 'p-2 text-base gap-2', label: 'p-2 text-sm gap-2', empty: 'py-8 text-base', loading: 'py-8', icon: 'size-6' },
+export type ListboxSlots<T extends ArrayOrNested<ListboxItem> = ArrayOrNested<ListboxItem>> = {
+  'loading'?(props?: {}): VNode[]
+  'empty'?(props: { searchTerm: string }): VNode[]
+  'item'?: SlotProps<NestedItem<T>>
+  'item-leading'?: SlotProps<NestedItem<T>>
+  'item-label'?(props: { item: NestedItem<T>, index: number }): VNode[]
+  'item-description'?(props: { item: NestedItem<T>, index: number }): VNode[]
+  'item-trailing'?: SlotProps<NestedItem<T>>
 }
 
-const currentSize = computed(() => sizeClasses[props.size])
-
-/** 高亮描边颜色 */
-const highlightClasses: Record<ListboxColor, string> = {
-  primary: 'ring-primary',
-  secondary: 'ring-secondary',
-  neutral: 'ring-foreground/30',
-  success: 'ring-success',
-  info: 'ring-info',
-  warning: 'ring-warning',
-  error: 'ring-error',
-}
-
-function isIconName(icon: ListboxIcon | undefined): icon is IconName {
-  return typeof icon === 'string'
-}
-
-const virtualizerProps = computed(() => (typeof props.virtualize === 'object' ? props.virtualize : {}))
-const showFilter = computed(() => props.filter !== false)
-const filterPlaceholder = computed(() => (typeof props.filter === 'object' ? props.filter.placeholder : undefined))
-const filterDisabled = computed(() => (typeof props.filter === 'object' ? !!props.filter.disabled : false))
-
-/* 分组或平铺渲染：filter 开启时用 ListboxFilter 驱动搜索 */
-const listboxProps = computed(() => ({
-  modelValue: currentValue.value,
-  multiple: props.multiple,
-  disabled: props.disabled,
-  required: props.required,
-  name: props.name,
-  orientation: props.orientation,
-  highlightOnHover: props.highlightOnHover,
-  as: props.as ?? 'div',
-  id: props.id,
-}))
 </script>
 
+<script setup lang="ts" generic="T extends ArrayOrNested<ListboxItem>, VK extends GetItemKeys<T> | undefined = undefined, M extends boolean = false, Mod extends Omit<ModelModifiers, 'lazy'> = Omit<ModelModifiers, 'lazy'>">
+import { computed, toRaw, toRef } from 'vue'
+import { ListboxRoot, ListboxContent, ListboxGroup, ListboxGroupLabel, ListboxVirtualizer, ListboxItem as RekaListboxItem, ListboxItemIndicator, ListboxFilter } from 'reka-ui'
+import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
+import { createReusableTemplate, reactivePick } from '@vueuse/core'
+import { defu } from 'defu'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { useFilter } from '../../lib/nuxt/composables/useFilter'
+import { useFormField } from '../../lib/nuxt/composables/useFormField'
+import { useLocale } from '../../lib/nuxt/composables/useLocale'
+import { get, isArrayOfArray, looseToNumber } from '../../lib/nuxt/utils'
+import { getEstimateSize } from '../../lib/nuxt/utils/virtualizer'
+import { tv } from '../../lib/nuxt/utils/tv'
+import XIcon from './XIcon.vue'
+import XAvatar from './XAvatar.vue'
+import XChip from './XChip.vue'
+import XInput from './XInput.vue'
+
+defineOptions({ inheritAttrs: false })
+
+const _props = withDefaults(defineProps</* @vue-ignore */ ListboxProps<T, VK, M, Mod>>(), {
+  labelKey: 'label',
+  descriptionKey: 'description',
+  highlightOnHover: true,
+  filter: false,
+  autofocusDelay: 0,
+  virtualize: false
+})
+const emits = defineEmits</* @vue-ignore */ ListboxEmits<T, VK, M, Mod>>()
+const slots = defineSlots</* @vue-ignore */ ListboxSlots<T>>()
+
+const props = useComponentProps<ListboxProps<T, VK, M, Mod>>('listbox', _props)
+
+const searchTerm = defineModel<string>('searchTerm', { default: '' })
+
+const { t } = useLocale()
+const appConfig = useAppConfig() as Listbox['AppConfig']
+const { filterGroups } = useFilter()
+
+const rootProps = useForwardProps(reactivePick(props, 'as', 'modelValue', 'defaultValue', 'multiple', 'selectionBehavior', 'highlightOnHover', 'by', 'orientation', 'required'), emits)
+
+const virtualizerProps = toRef(() => {
+  if (!props.virtualize) return false
+
+  return defu(typeof props.virtualize === 'boolean' ? {} : props.virtualize, {
+    estimateSize: getEstimateSize(filteredItems.value, size.value ?? 'md', props.descriptionKey as string, !!slots['item-description'])
+  })
+})
+const inputProps = toRef(() => defu(typeof props.filter === 'object' ? props.filter : {}, { placeholder: t('listbox.search'), variant: 'none' }) as Omit<InputProps, 'modelValue' | 'defaultValue'>)
+
+const { emitFormChange, emitFormInput, name, size: formFieldSize, color: formFieldColor, id, highlight: formFieldHighlight, disabled: formFieldDisabled, ariaAttrs } = useFormField<InputProps>(_props, { bind: false })
+
+// eslint-disable-next-line vue/no-dupe-keys
+const color = computed(() => formFieldColor.value ?? props.color)
+// eslint-disable-next-line vue/no-dupe-keys
+const highlight = computed(() => formFieldHighlight.value ?? props.highlight)
+// eslint-disable-next-line vue/no-dupe-keys
+const size = computed(() => formFieldSize.value ?? props.size)
+
+const disabled = computed(() => formFieldDisabled.value ?? props.disabled)
+
+const [DefineItemTemplate, ReuseItemTemplate] = createReusableTemplate<{ item: ListboxItem, index: number }>({
+  props: {
+    item: {
+      type: Object,
+      required: true
+    },
+    index: {
+      type: Number,
+      required: false
+    }
+  }
+})
+
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.listbox || {}) })({
+  color: color.value,
+  size: size.value,
+  highlight: highlight.value,
+  disabled: disabled.value,
+  virtualize: !!props.virtualize
+}))
+
+function onUpdate(value: any) {
+  if (toRaw(props.modelValue) === value) {
+    return
+  }
+
+  if (props.modelModifiers?.trim && (typeof value === 'string' || value === null || value === undefined)) {
+    value = value?.trim() ?? null
+  }
+
+  if (props.modelModifiers?.number) {
+    value = looseToNumber(value)
+  }
+
+  if (props.modelModifiers?.nullable) {
+    value ??= null
+  }
+
+  if (props.modelModifiers?.optional && !props.modelModifiers?.nullable && value !== null) {
+    value ??= undefined
+  }
+
+  // @ts-expect-error - 'target' does not exist in type 'EventInit'
+  const event = new Event('change', { target: { value } })
+  emits('change', event)
+  emitFormChange()
+  emitFormInput()
+}
+
+function onSelect(e: Event, item: ListboxItem) {
+  if (item.disabled) {
+    e.preventDefault()
+    return
+  }
+
+  item.onSelect?.(e)
+}
+
+const groups = computed<ListboxItem[][]>(() =>
+  props.items?.length
+    ? isArrayOfArray(props.items)
+      ? props.items
+      : [props.items]
+    : []
+)
+
+function isStructuralItem(item: ListboxItem): boolean {
+  return !!item.type && ['label', 'separator'].includes(item.type)
+}
+
+const filteredGroups = computed(() => {
+  if (props.ignoreFilter || !searchTerm.value) {
+    return groups.value
+  }
+
+  const fields = Array.isArray(props.filterFields) ? props.filterFields : [props.labelKey] as string[]
+
+  return filterGroups(groups.value, searchTerm.value, {
+    fields,
+    isStructural: isStructuralItem
+  })
+})
+const filteredItems = computed(() => filteredGroups.value.flatMap(group => group) as NestedItem<T>[])
+</script>
+
+<!-- eslint-disable vue/no-template-shadow -->
 <template>
+  <DefineItemTemplate v-slot="{ item, index }">
+    <ListboxGroupLabel v-if="item.type === 'label'" data-slot="label" :class="ui.label({ class: [props.ui?.label, item.ui?.label, item.class] })">
+      {{ get(item, props.labelKey as string) }}
+    </ListboxGroupLabel>
+
+    <div v-else-if="item.type === 'separator'" role="separator" data-slot="separator" :class="ui.separator({ class: [props.ui?.separator, item.ui?.separator, item.class] })" />
+
+    <RekaListboxItem
+      v-else
+      :value="props.valueKey ? get(item, props.valueKey as string) : item"
+      :disabled="item.disabled"
+      data-slot="item"
+      :class="ui.item({ class: [props.ui?.item, item.ui?.item, item.class] })"
+      @select="onSelect($event, item)"
+    >
+      <slot name="item" :item="(item as NestedItem<T>)" :index="index" :ui="ui">
+        <slot name="item-leading" :item="(item as NestedItem<T>)" :index="index" :ui="ui">
+          <XIcon v-if="item.icon" :name="item.icon" data-slot="itemLeadingIcon" :class="ui.itemLeadingIcon({ class: [props.ui?.itemLeadingIcon, item.ui?.itemLeadingIcon] })" />
+          <XAvatar v-else-if="item.avatar" :size="((item.ui?.itemLeadingAvatarSize || props.ui?.itemLeadingAvatarSize || ui.itemLeadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" data-slot="itemLeadingAvatar" :class="ui.itemLeadingAvatar({ class: [props.ui?.itemLeadingAvatar, item.ui?.itemLeadingAvatar] })" />
+          <XChip
+            v-else-if="item.chip"
+            :size="((item.ui?.itemLeadingChipSize || props.ui?.itemLeadingChipSize || ui.itemLeadingChipSize()) as ChipProps['size'])"
+            inset
+            standalone
+            v-bind="item.chip"
+            data-slot="itemLeadingChip"
+            :class="ui.itemLeadingChip({ class: [props.ui?.itemLeadingChip, item.ui?.itemLeadingChip] })"
+          />
+        </slot>
+
+        <span v-if="get(item, props.labelKey as string) || get(item, props.descriptionKey as string) || !!slots['item-label'] || !!slots['item-description']" data-slot="itemWrapper" :class="ui.itemWrapper({ class: [props.ui?.itemWrapper, item.ui?.itemWrapper] })">
+          <span v-if="get(item, props.labelKey as string) || !!slots['item-label']" data-slot="itemLabel" :class="ui.itemLabel({ class: [props.ui?.itemLabel, item.ui?.itemLabel] })">
+            <slot name="item-label" :item="(item as NestedItem<T>)" :index="index">
+              {{ get(item, props.labelKey as string) }}
+            </slot>
+          </span>
+
+          <span v-if="get(item, props.descriptionKey as string) || !!slots['item-description']" data-slot="itemDescription" :class="ui.itemDescription({ class: [props.ui?.itemDescription, item.ui?.itemDescription] })">
+            <slot name="item-description" :item="(item as NestedItem<T>)" :index="index">
+              {{ get(item, props.descriptionKey as string) }}
+            </slot>
+          </span>
+        </span>
+
+        <span data-slot="itemTrailing" :class="ui.itemTrailing({ class: [props.ui?.itemTrailing, item.ui?.itemTrailing] })">
+          <slot name="item-trailing" :item="(item as NestedItem<T>)" :index="index" :ui="ui" />
+
+          <ListboxItemIndicator as-child>
+            <XIcon :name="props.selectedIcon || appConfig.ui.icons.check" data-slot="itemTrailingIcon" :class="ui.itemTrailingIcon({ class: [props.ui?.itemTrailingIcon, item.ui?.itemTrailingIcon] })" />
+          </ListboxItemIndicator>
+        </span>
+      </slot>
+    </RekaListboxItem>
+  </DefineItemTemplate>
+
   <ListboxRoot
-    ref="rootRef"
-    v-bind="{ ...(listboxProps as Record<string, unknown>), ...$attrs }"
-    ignore-filter
+    :id="id"
     data-slot="root"
-    :class="cn(
-      'flex flex-col min-h-0 min-w-0 overflow-hidden rounded-lg ring-1 ring-inset ring-input',
-      props.disabled && 'cursor-not-allowed opacity-75',
-      highlight && cn('ring-2', highlightClasses[color]),
-      ui?.root,
-      props.class,
-    )"
-    @update:model-value="(value) => updateValue(value as string | number | boolean | Array<string | number | boolean> | undefined)"
-    @entry-focus="emit('entryFocus', $event)"
-    @highlight="emit('highlight', $event)"
-    @leave="emit('leave', $event)"
+    v-bind="{ ...rootProps, ...$attrs, ...ariaAttrs }"
+    :disabled="disabled"
+    :name="name"
+    :class="ui.root({ class: [props.ui?.root, props.class] })"
+    @update:model-value="onUpdate"
   >
-    <ListboxFilter v-if="showFilter" v-model="keyword" as-child>
-      <input
-        :placeholder="filterPlaceholder ?? '搜索…'"
-        :disabled="disabled || filterDisabled || loading"
+    <ListboxFilter v-if="props.filter" v-model="searchTerm" as-child>
+      <XInput
+        :autofocus="props.autofocus"
+        :autofocus-delay="props.autofocusDelay"
+        :size="size"
+        v-bind="inputProps"
         data-slot="input"
-        :class="cn('w-full border-0 border-b border-border bg-transparent px-3 py-2 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed', ui?.input)"
+        :class="ui.input({ class: props.ui?.input })"
       />
     </ListboxFilter>
 
-    <ListboxContent
-      data-slot="content"
-      :class="cn('relative max-h-60 flex-1 overflow-y-auto scroll-py-1 focus:outline-none', ui?.content)"
-    >
-      <div v-if="loading" data-slot="loading" :class="cn('flex items-center justify-center text-muted-foreground', currentSize.loading, ui?.loading)">
+    <ListboxContent data-slot="content" :class="ui.content({ class: props.ui?.content })">
+      <div v-if="props.loading" data-slot="loading" :class="ui.loading({ class: props.ui?.loading })">
         <slot name="loading">
-          <XIcon
-            v-if="isIconName(loadingIcon)"
-            :name="loadingIcon"
-            data-slot="loadingIcon"
-            :class="cn('animate-spin shrink-0', currentSize.icon, ui?.loadingIcon)"
-            aria-hidden="true"
-          />
-          <component
-            :is="loadingIcon"
-            v-else
-            data-slot="loadingIcon"
-            :class="cn('animate-spin shrink-0', currentSize.icon, ui?.loadingIcon)"
-            aria-hidden="true"
-          />
+          <XIcon :name="props.loadingIcon || appConfig.ui.icons.loading" data-slot="loadingIcon" :class="ui.loadingIcon({ class: props.ui?.loadingIcon })" />
+        </slot>
+      </div>
+      <div v-else-if="!filteredItems.length" data-slot="empty" :class="ui.empty({ class: props.ui?.empty })">
+        <slot name="empty" :search-term="searchTerm">
+          {{ searchTerm ? t('listbox.noMatch', { searchTerm }) : t('listbox.noData') }}
         </slot>
       </div>
 
-      <div v-else-if="!filteredItems.length" data-slot="empty" :class="cn('text-center text-muted-foreground', currentSize.empty, ui?.empty)">
-        <slot name="empty" :search-term="keyword">暂无匹配项</slot>
-      </div>
-
       <ListboxVirtualizer
-        v-else-if="virtualize"
+        v-else-if="!!props.virtualize"
         v-slot="{ option: item, virtualItem }"
-        :options="filteredItems as any[]"
-        :text-content="(item: ListboxItemData) => String(getField(item, labelField) ?? '')"
+        :options="(filteredItems as any[])"
+        :text-content="(item: any) => get(item, props.labelKey as string)"
         v-bind="virtualizerProps"
       >
-        <ListboxGroup data-slot="group" :class="cn('p-1 isolate', ui?.group)">
-          <ListboxItem
-            :value="itemValue(item)"
-            :disabled="item?.disabled"
-            data-slot="item"
-            :class="cn(
-              'group relative flex w-full cursor-default items-start rounded-md outline-none select-none',
-              'data-[disabled]:pointer-events-none data-[disabled]:opacity-75',
-              'data-[highlighted]:bg-accent data-[highlighted]:text-accent-foreground',
-              'aria-selected:bg-accent aria-selected:text-accent-foreground',
-              currentSize.item,
-              item?.class,
-              ui?.item,
-              item?.ui?.item,
-            )"
-            @select="onSelect($event, item)"
-          >
-            <slot name="item" :item="item" :index="virtualItem.index" :ui="ui">
-              <slot name="item-leading" :item="item" :index="virtualItem.index" :ui="ui">
-                <XIcon
-                  v-if="isIconName(item?.icon) && item.icon"
-                  :name="item.icon"
-                  data-slot="itemLeadingIcon"
-                  :class="cn('shrink-0 text-muted-foreground', currentSize.icon, ui?.itemLeadingIcon, item?.ui?.itemLeadingIcon)"
-                  aria-hidden="true"
-                />
-                <component
-                  v-else-if="item?.icon"
-                  :is="item.icon"
-                  data-slot="itemLeadingIcon"
-                  :class="cn(currentSize.icon, ui?.itemLeadingIcon, item?.ui?.itemLeadingIcon)"
-                  aria-hidden="true"
-                />
-                <XAvatar
-                  v-else-if="item?.avatar"
-                  v-bind="item.avatar"
-                  data-slot="itemLeadingAvatar"
-                  :class="cn('shrink-0', ui?.itemLeadingAvatar, item?.ui?.itemLeadingAvatar)"
-                />
-              </slot>
-
-              <span
-                v-if="getField(item, labelField) || getField(item, descriptionField) || slots['item-label'] || slots['item-description']"
-                data-slot="itemWrapper"
-                :class="cn('flex min-w-0 flex-1 flex-col', ui?.itemWrapper, item?.ui?.itemWrapper)"
-              >
-                <span v-if="getField(item, labelField) || slots['item-label']" data-slot="itemLabel" :class="cn('truncate', ui?.itemLabel, item?.ui?.itemLabel)">
-                  <slot name="item-label" :item="item" :index="virtualItem.index">{{ getField(item, labelField) }}</slot>
-                </span>
-                <span
-                  v-if="getField(item, descriptionField) || slots['item-description']"
-                  data-slot="itemDescription"
-                  :class="cn('truncate text-muted-foreground', ui?.itemDescription, item?.ui?.itemDescription)"
-                >
-                  <slot name="item-description" :item="item" :index="virtualItem.index">{{ getField(item, descriptionField) }}</slot>
-                </span>
-              </span>
-
-              <span data-slot="itemTrailing" :class="cn('ms-auto inline-flex items-center gap-1.5', ui?.itemTrailing, item?.ui?.itemTrailing)">
-                <slot name="item-trailing" :item="item" :index="virtualItem.index" :ui="ui" />
-                <ListboxItemIndicator as-child>
-                  <XIcon
-                    v-if="isIconName(selectedIcon)"
-                    :name="selectedIcon"
-                    data-slot="itemTrailingIcon"
-                    :class="cn('shrink-0', currentSize.icon, ui?.itemTrailingIcon, item?.ui?.itemTrailingIcon)"
-                    aria-hidden="true"
-                  />
-                  <component
-                    :is="selectedIcon"
-                    v-else
-                    data-slot="itemTrailingIcon"
-                    :class="cn(currentSize.icon, ui?.itemTrailingIcon, item?.ui?.itemTrailingIcon)"
-                    aria-hidden="true"
-                  />
-                </ListboxItemIndicator>
-              </span>
-            </slot>
-          </ListboxItem>
-        </ListboxGroup>
+        <ReuseItemTemplate :item="item" :index="virtualItem.index" />
       </ListboxVirtualizer>
 
       <template v-else>
-        <ListboxGroup
-          v-for="(group, groupIndex) in filteredGroups"
-          :key="`group-${groupIndex}`"
-          data-slot="group"
-          :class="cn('p-1 isolate', ui?.group)"
-        >
-          <template v-for="(item, index) in group" :key="`group-${groupIndex}-${index}`">
-            <ListboxGroupLabel
-              v-if="item?.type === 'label'"
-              data-slot="label"
-              :class="cn('font-semibold text-foreground', currentSize.label, item.class, ui?.label, item.ui?.label)"
-            >
-              {{ getField(item, labelField) }}
-            </ListboxGroupLabel>
-            <div
-              v-else-if="item?.type === 'separator'"
-              role="separator"
-              data-slot="separator"
-              :class="cn('-mx-1 my-1 h-px bg-border', item.class, ui?.separator, item.ui?.separator)"
-            />
-            <ListboxItem
-              v-else
-              :value="itemValue(item)"
-              :disabled="item?.disabled"
-              :text-value="String(getField(item, labelField) ?? '')"
-              data-slot="item"
-              :class="cn(
-                'group relative flex w-full cursor-default items-start rounded-md outline-none select-none',
-                'data-[disabled]:pointer-events-none data-[disabled]:opacity-75',
-                'data-[highlighted]:bg-accent data-[highlighted]:text-accent-foreground',
-                'aria-selected:bg-accent aria-selected:text-accent-foreground',
-                currentSize.item,
-                item.class,
-                ui?.item,
-                item.ui?.item,
-              )"
-              @select="onSelect($event, item)"
-            >
-              <slot name="item" :item="item" :index="index" :ui="ui">
-                <slot name="item-leading" :item="item" :index="index" :ui="ui">
-                  <XIcon
-                    v-if="isIconName(item?.icon) && item.icon"
-                    :name="item.icon"
-                    data-slot="itemLeadingIcon"
-                    :class="cn('shrink-0 text-muted-foreground', currentSize.icon, ui?.itemLeadingIcon, item.ui?.itemLeadingIcon)"
-                    aria-hidden="true"
-                  />
-                  <component
-                    v-else-if="item?.icon"
-                    :is="item.icon"
-                    data-slot="itemLeadingIcon"
-                    :class="cn(currentSize.icon, ui?.itemLeadingIcon, item.ui?.itemLeadingIcon)"
-                    aria-hidden="true"
-                  />
-                  <XAvatar
-                    v-else-if="item?.avatar"
-                    v-bind="item.avatar"
-                    data-slot="itemLeadingAvatar"
-                    :class="cn('shrink-0', ui?.itemLeadingAvatar, item.ui?.itemLeadingAvatar)"
-                  />
-                </slot>
-
-                <span
-                  v-if="getField(item, labelField) || getField(item, descriptionField) || slots['item-label'] || slots['item-description']"
-                  data-slot="itemWrapper"
-                  :class="cn('flex min-w-0 flex-1 flex-col', ui?.itemWrapper, item.ui?.itemWrapper)"
-                >
-                  <span v-if="getField(item, labelField) || slots['item-label']" data-slot="itemLabel" :class="cn('truncate', ui?.itemLabel, item.ui?.itemLabel)">
-                    <slot name="item-label" :item="item" :index="index">{{ getField(item, labelField) }}</slot>
-                  </span>
-                  <span
-                    v-if="getField(item, descriptionField) || slots['item-description']"
-                    data-slot="itemDescription"
-                    :class="cn('truncate text-muted-foreground', ui?.itemDescription, item.ui?.itemDescription)"
-                  >
-                    <slot name="item-description" :item="item" :index="index">{{ getField(item, descriptionField) }}</slot>
-                  </span>
-                </span>
-
-                <span data-slot="itemTrailing" :class="cn('ms-auto inline-flex items-center gap-1.5', ui?.itemTrailing, item.ui?.itemTrailing)">
-                  <slot name="item-trailing" :item="item" :index="index" :ui="ui" />
-                  <ListboxItemIndicator as-child>
-                    <XIcon
-                      v-if="isIconName(selectedIcon)"
-                      :name="selectedIcon"
-                      data-slot="itemTrailingIcon"
-                      :class="cn('shrink-0', currentSize.icon, ui?.itemTrailingIcon, item.ui?.itemTrailingIcon)"
-                      aria-hidden="true"
-                    />
-                    <component
-                      :is="selectedIcon"
-                      v-else
-                      data-slot="itemTrailingIcon"
-                      :class="cn(currentSize.icon, ui?.itemTrailingIcon, item.ui?.itemTrailingIcon)"
-                      aria-hidden="true"
-                    />
-                  </ListboxItemIndicator>
-                </span>
-              </slot>
-            </ListboxItem>
-          </template>
+        <ListboxGroup v-for="(group, groupIndex) in filteredGroups" :key="`group-${groupIndex}`" data-slot="group" :class="ui.group({ class: props.ui?.group })">
+          <ReuseItemTemplate v-for="(item, index) in group" :key="`group-${groupIndex}-${index}`" :item="item" :index="index" />
         </ListboxGroup>
       </template>
     </ListboxContent>

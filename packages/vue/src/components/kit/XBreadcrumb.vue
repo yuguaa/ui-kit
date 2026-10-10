@@ -1,142 +1,131 @@
-<script setup lang="ts">
-/**
- * XBreadcrumb 面包屑：显示当前页面在层级结构中的位置。
- * 与 Nuxt UI Breadcrumb 对齐：color / labelKey / separatorIcon 属性、
- * separator 插槽与 root · list · item · link 等主题插槽键。
- */
-import type { Component, HTMLAttributes, VNode } from 'vue'
+<!-- eslint-disable vue/block-tag-newline -->
+<script lang="ts">
+import type { VNode } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/breadcrumb'
+import type { AvatarProps } from './XAvatar.vue'
+import type { IconProps } from './XIcon.vue'
+import type { LinkProps } from './XLink.vue'
+import type { DynamicSlots, GetItemKeys } from '../../lib/nuxt/types/utils'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
+
+type Breadcrumb = ComponentConfig<typeof theme, AppConfig, 'breadcrumb'>
+
+export interface BreadcrumbItem extends Omit<LinkProps, 'raw' | 'custom'> {
+  label?: string
+  /**
+   * @IconifyIcon
+   */
+  icon?: IconProps['name']
+  avatar?: AvatarProps
+  slot?: string
+  class?: any
+  ui?: Partial<Pick<Breadcrumb['slots'], 'item' | 'link' | 'linkLeadingIcon' | 'linkLeadingAvatar' | 'linkLabel' | 'separator' | 'separatorIcon'>>
+  [key: string]: any
+}
+
+export interface BreadcrumbProps<T extends BreadcrumbItem = BreadcrumbItem> {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'nav'
+   */
+  as?: any
+  items?: T[]
+  /**
+   * The icon to use as a separator.
+   * @defaultValue appConfig.ui.icons.chevronRight
+   * @IconifyIcon
+   */
+  separatorIcon?: IconProps['name']
+  /**
+   * @defaultValue 'primary'
+   */
+  color?: Breadcrumb['variants']['color']
+  /**
+   * The key used to get the label from the item.
+   * @defaultValue 'label'
+   */
+  labelKey?: GetItemKeys<T>
+  class?: any
+  ui?: Breadcrumb['slots']
+}
+
+type SlotProps<T extends BreadcrumbItem> = (props: { item: T, index: number, active: boolean, ui: Breadcrumb['ui'] }) => VNode[]
+
+export type BreadcrumbSlots<T extends BreadcrumbItem = BreadcrumbItem> = {
+  'item'?: SlotProps<T>
+  'item-leading'?: SlotProps<T>
+  'item-label'?: (props: { item: T, index: number, active: boolean }) => VNode[]
+  'item-trailing'?: (props: { item: T, index: number, active: boolean }) => VNode[]
+  'separator'?: (props: { ui: Breadcrumb['ui'] }) => VNode[]
+}
+& DynamicSlots<T, 'leading', { index: number, active: boolean, ui: Breadcrumb['ui'] }>
+& DynamicSlots<T, 'label' | 'trailing', { index: number, active: boolean }>
+
+</script>
+
+<script setup lang="ts" generic="T extends BreadcrumbItem">
+import { computed } from 'vue'
 import { Primitive } from 'reka-ui'
-import XIcon, { type IconName } from '@/components/kit/XIcon.vue'
-import { cn } from '@/lib/utils'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { useLocale } from '../../lib/nuxt/composables/useLocale'
+import { get } from '../../lib/nuxt/utils'
+import { tv } from '../../lib/nuxt/utils/tv'
+import { pickLinkProps } from '../../lib/nuxt/utils/link'
+import XIcon from './XIcon.vue'
+import XAvatar from './XAvatar.vue'
+import XLinkBase from './XLinkBase.vue'
+import XLink from './XLink.vue'
 
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface BreadcrumbUi {
-  root?: string
-  list?: string
-  item?: string
-  link?: string
-  linkLeadingIcon?: string
-  linkLabel?: string
-  separator?: string
-  separatorIcon?: string
-}
-
-type BreadcrumbColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
-
-export interface BreadcrumbDataItem {
-  /** 标题 */
-  title?: string
-  /** 链接地址（末项可省略） */
-  href?: string
-  /** 前置图标 */
-  icon?: Component | VNode
-  /** 强制激活态（默认末项激活） */
-  active?: boolean
-}
-
-/** 面包屑项，允许携带自定义字段 */
-type BreadcrumbItemData = BreadcrumbDataItem & Record<string, unknown>
-
-const props = withDefaults(defineProps<{
-  /** 面包屑项数组 */
-  items: BreadcrumbItemData[]
-  /** 标题字段名，items 可用自定义字段承载标题 */
-  labelKey?: string
-  /** 激活项文字颜色 */
-  color?: BreadcrumbColor
-  /** 分隔符图标：图标名或组件，默认 chevron-right */
-  separatorIcon?: IconName | Component
-  /** 是否禁用 */
-  disabled?: boolean
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 主题插槽类名 */
-  ui?: BreadcrumbUi
-  class?: HTMLAttributes['class']
-}>(), {
-  labelKey: 'title',
-  color: 'primary',
-  separatorIcon: 'chevron-right',
+const _props = withDefaults(defineProps</* @vue-ignore */ BreadcrumbProps<T>>(), {
+  as: 'nav',
+  labelKey: 'label'
 })
+const slots = defineSlots</* @vue-ignore */ BreadcrumbSlots<T>>()
 
-/** 激活项文字颜色（与 XButton link 变体一致的字面量） */
-const colorClasses: Record<BreadcrumbColor, string> = {
-  primary: 'text-primary',
-  secondary: 'text-secondary-foreground',
-  neutral: 'text-foreground',
-  success: 'text-success',
-  info: 'text-info',
-  warning: 'text-warning',
-  error: 'text-error',
-}
+const props = useComponentProps<BreadcrumbProps<T>>('breadcrumb', _props)
 
-/** 按 labelKey 取面包屑项标题 */
-function itemLabel(item: BreadcrumbItemData) {
-  return String(item[props.labelKey] ?? '')
-}
+const { dir } = useLocale()
+const appConfig = useAppConfig() as Breadcrumb['AppConfig']
 
-/** 激活项：项自身 active 优先，否则末项激活 */
-function isActive(item: BreadcrumbItemData, index: number) {
-  return item.active ?? index === props.items.length - 1
-}
+// eslint-disable-next-line vue/no-dupe-keys
+const separatorIcon = computed(() => props.separatorIcon || (dir.value === 'rtl' ? appConfig.ui.icons.chevronLeft : appConfig.ui.icons.chevronRight))
+
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.breadcrumb || {}) })({
+  color: props.color
+}))
 </script>
 
 <template>
-  <Primitive
-    :as="as ?? 'nav'"
-    aria-label="breadcrumb"
-    data-slot="root"
-    :class="cn('relative min-w-0', disabled && 'pointer-events-none opacity-50', ui?.root, props.class)"
-  >
-    <ol data-slot="list" :class="cn('flex items-center gap-1.5', ui?.list)">
-      <template v-for="(item, index) in items" :key="index">
-        <li data-slot="item" :class="cn('flex min-w-0', ui?.item)">
-          <Primitive
-            :as="item.href != null ? 'a' : 'span'"
-            :href="item.href"
-            :aria-current="isActive(item, index) && index === items.length - 1 ? 'page' : undefined"
-            data-slot="link"
-            :class="cn(
-              'group relative flex items-center gap-1.5 text-sm min-w-0 rounded-md',
-              isActive(item, index)
-                ? cn('font-semibold', colorClasses[color])
-                : 'text-muted-foreground font-medium',
-              item.href != null && !isActive(item, index) && 'hover:text-foreground transition-colors',
-              ui?.link,
-            )"
-          >
-            <component
-              :is="item.icon"
-              v-if="item.icon"
-              data-slot="linkLeadingIcon"
-              :class="cn('shrink-0 size-5', ui?.linkLeadingIcon)"
-            />
-            <span v-if="itemLabel(item)" data-slot="linkLabel" :class="cn('truncate', ui?.linkLabel)">
-              {{ itemLabel(item) }}
-            </span>
-          </Primitive>
+  <Primitive :as="props.as" aria-label="breadcrumb" data-slot="root" :class="ui.root({ class: [props.ui?.root, props.class] })">
+    <ol data-slot="list" :class="ui.list({ class: props.ui?.list })">
+      <template v-for="(item, index) in props.items" :key="index">
+        <li data-slot="item" :class="ui.item({ class: [props.ui?.item, item.ui?.item] })">
+          <XLink v-slot="{ active, ...slotProps }" v-bind="pickLinkProps(item)" custom>
+            <XLinkBase v-bind="slotProps" as="span" :aria-current="(item.active ?? active) && (index === props.items!.length - 1) ? 'page' : undefined" data-slot="link" :class="ui.link({ class: [props.ui?.link, item.ui?.link, item.class], active: item.active ?? (index === props.items!.length - 1), disabled: !!item.disabled, to: !!item.to })">
+              <slot :name="((item.slot || 'item') as keyof BreadcrumbSlots<T>)" :item="(item as Extract<T, { slot: string; }>)" :active="item.active ?? (index === props.items!.length - 1)" :index="index" :ui="ui">
+                <slot :name="((item.slot ? `${item.slot}-leading`: 'item-leading') as keyof BreadcrumbSlots<T>)" :item="(item as Extract<T, { slot: string; }>)" :active="item.active ?? (index === props.items!.length - 1)" :index="index" :ui="ui">
+                  <XIcon v-if="item.icon" :name="item.icon" data-slot="linkLeadingIcon" :class="ui.linkLeadingIcon({ class: [props.ui?.linkLeadingIcon, item.ui?.linkLeadingIcon], active: item.active ?? (index === props.items!.length - 1) })" />
+                  <XAvatar v-else-if="item.avatar" :size="((props.ui?.linkLeadingAvatarSize || ui.linkLeadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" data-slot="linkLeadingAvatar" :class="ui.linkLeadingAvatar({ class: [props.ui?.linkLeadingAvatar, item.ui?.linkLeadingAvatar], active: item.active ?? (index === props.items!.length - 1) })" />
+                </slot>
+
+                <span v-if="get(item, props.labelKey as string) || !!slots[(item.slot ? `${item.slot}-label`: 'item-label') as keyof BreadcrumbSlots<T>]" data-slot="linkLabel" :class="ui.linkLabel({ class: [props.ui?.linkLabel, item.ui?.linkLabel] })">
+                  <slot :name="((item.slot ? `${item.slot}-label`: 'item-label') as keyof DynamicSlots<T, 'label'>)" :item="(item as Extract<T, { slot: string; }>)" :active="item.active ?? (index === props.items!.length - 1)" :index="index">
+                    {{ get(item, props.labelKey as string) }}
+                  </slot>
+                </span>
+
+                <slot :name="((item.slot ? `${item.slot}-trailing`: 'item-trailing') as keyof DynamicSlots<T, 'trailing'>)" :item="(item as Extract<T, { slot: string; }>)" :active="item.active ?? (index === props.items!.length - 1)" :index="index" />
+              </slot>
+            </XLinkBase>
+          </XLink>
         </li>
 
-        <li
-          v-if="index < items.length - 1"
-          role="presentation"
-          aria-hidden="true"
-          data-slot="separator"
-          :class="cn('flex', ui?.separator)"
-        >
-          <slot name="separator">
-            <XIcon
-              v-if="typeof separatorIcon === 'string'"
-              :name="separatorIcon"
-              data-slot="separatorIcon"
-              :class="cn('shrink-0 size-5 text-muted-foreground', ui?.separatorIcon)"
-            />
-            <component
-              :is="separatorIcon"
-              v-else
-              data-slot="separatorIcon"
-              :class="cn('shrink-0 size-5 text-muted-foreground', ui?.separatorIcon)"
-            />
+        <li v-if="index < props.items!.length - 1" role="presentation" aria-hidden="true" data-slot="separator" :class="ui.separator({ class: [props.ui?.separator, item.ui?.separator] })">
+          <slot name="separator" :ui="ui">
+            <XIcon :name="separatorIcon" data-slot="separatorIcon" :class="ui.separatorIcon({ class: [props.ui?.separatorIcon, item.ui?.separatorIcon] })" />
           </slot>
         </li>
       </template>

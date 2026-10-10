@@ -1,370 +1,236 @@
-<script setup lang="ts">
-/**
- * XInput 输入框：原生 input 的二次封装。
- * 注入 Nuxt UI 语义：variant × color、highlight、fixed、leading / trailing 插槽与左侧头像。
- * 变体：outline | soft | subtle | ghost | none
- * 颜色：primary | secondary | neutral | success | info | warning | error
- * 保留 kit 既有能力：status、clearable、addon、prefix / suffix 插槽
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { computed, useAttrs, useSlots, useTemplateRef } from 'vue'
-import { X } from '@lucide/vue'
-import { Primitive } from 'reka-ui'
-import XAvatar, { type AvatarProps } from './XAvatar.vue'
-import { Button } from '@/components/ui/button'
-import { cn } from '@/lib/utils'
+<script lang="ts">
+import type { VNode } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/input'
+import type { UseComponentIconsProps } from '../../lib/nuxt/composables/useComponentIcons'
+import type { AvatarProps } from './XAvatar.vue'
+import type { InputHTMLAttributes } from '../../lib/nuxt/types/html'
+import type { ModelModifiers, ApplyModifiers } from '../../lib/nuxt/types/input'
+import type { AcceptableValue } from '../../lib/nuxt/types/utils'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-/* 属性透传到内部 input，避免落到外层包装元素 */
-defineOptions({ name: 'XInput', inheritAttrs: false })
+type Input = ComponentConfig<typeof theme, AppConfig, 'input'>
 
-type InputSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-type InputColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
-type InputVariant = 'outline' | 'soft' | 'subtle' | 'ghost' | 'none'
-type InputStatus = 'error' | 'warning'
+export type InputValue = AcceptableValue
 
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface InputUi {
-  root?: string
-  base?: string
-  leading?: string
-  leadingIcon?: string
-  leadingAvatar?: string
-  leadingAvatarSize?: AvatarProps['size']
-  trailing?: string
-  trailingIcon?: string
+export interface InputProps<T extends InputValue = InputValue, Mod extends ModelModifiers = ModelModifiers> extends UseComponentIconsProps, /** @vue-ignore */ Omit<InputHTMLAttributes, 'name' | 'type' | 'placeholder' | 'required' | 'autocomplete' | 'autofocus' | 'disabled'> {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
+  id?: string
+  name?: string
+  type?: InputHTMLAttributes['type']
+  /** The placeholder text when the input is empty. */
+  placeholder?: string
+  /**
+   * @defaultValue 'primary'
+   */
+  color?: Input['variants']['color']
+  /**
+   * @defaultValue 'outline'
+   */
+  variant?: Input['variants']['variant']
+  /**
+   * @defaultValue 'md'
+   */
+  size?: Input['variants']['size']
+  required?: boolean
+  autocomplete?: InputHTMLAttributes['autocomplete']
+  autofocus?: boolean
+  autofocusDelay?: number
+  disabled?: boolean
+  /** Highlight the ring color like a focus state. */
+  highlight?: boolean
+  /** Keep the mobile text size on all breakpoints. */
+  fixed?: boolean
+  modelValue?: ApplyModifiers<T, Mod>
+  defaultValue?: ApplyModifiers<T, Mod>
+  modelModifiers?: Mod
+  class?: any
+  ui?: Input['slots']
 }
 
-const props = withDefaults(defineProps<{
-  /** 控件尺寸 */
-  size?: InputSize
-  /** 组件颜色（聚焦描边与高亮） */
-  color?: InputColor
-  /** 预设样式 */
-  variant?: InputVariant
-  /** 高亮：始终显示颜色描边，类似聚焦态 */
-  highlight?: boolean
-  /** 保持移动端字号在所有断点一致 */
-  fixed?: boolean
-  /** 校验状态 */
-  status?: InputStatus
-  /** 占位提示文字 */
-  placeholder?: string
-  /** 是否禁用 */
-  disabled?: boolean
-  /** 最大输入长度 */
-  maxLength?: number
-  /** 是否显示清空按钮 */
-  clearable?: boolean
-  /** 左侧头像配置 */
-  avatar?: AvatarProps
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 主题插槽类名 */
-  ui?: InputUi
-  class?: HTMLAttributes['class']
-}>(), {
-  size: 'md',
-  color: 'primary',
-  variant: 'outline',
-  highlight: false,
-  fixed: true,
-  clearable: false,
+export interface InputEmits<T extends InputValue = InputValue, Mod extends ModelModifiers = ModelModifiers> {
+  'update:modelValue': [value: ApplyModifiers<T, Mod>]
+  'blur': [event: FocusEvent]
+  'change': [event: Event]
+}
+
+export interface InputSlots {
+  leading?(props: { ui: Input['ui'] }): VNode[]
+  default?(props: { ui: Input['ui'] }): VNode[]
+  trailing?(props: { ui: Input['ui'] }): VNode[]
+}
+</script>
+
+<script setup lang="ts" generic="T extends InputValue, Mod extends ModelModifiers">
+import { useTemplateRef, computed, onMounted, onScopeDispose } from 'vue'
+import { Primitive } from 'reka-ui'
+import { useVModel } from '@vueuse/core'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { useFieldGroup } from '../../lib/nuxt/composables/useFieldGroup'
+import { useComponentIcons } from '../../lib/nuxt/composables/useComponentIcons'
+import { useFormField } from '../../lib/nuxt/composables/useFormField'
+import { isEmpty, looseToNumber } from '../../lib/nuxt/utils'
+import { tv } from '../../lib/nuxt/utils/tv'
+import XIcon from './XIcon.vue'
+import XAvatar from './XAvatar.vue'
+
+defineOptions({ inheritAttrs: false })
+
+const _props = withDefaults(defineProps</* @vue-ignore */ InputProps<T, Mod>>(), {
+  type: 'text',
+  autocomplete: 'off',
+  autofocusDelay: 0
+})
+const emits = defineEmits</* @vue-ignore */ InputEmits<T, Mod>>()
+const slots = defineSlots</* @vue-ignore */ InputSlots>()
+
+const props = useComponentProps<InputProps<T, Mod>>('input', _props)
+
+// eslint-disable-next-line vue/no-dupe-keys
+const modelValue = useVModel<InputProps<T, Mod>, 'modelValue', 'update:modelValue'>(props, 'modelValue', emits, { defaultValue: props.defaultValue })
+
+const appConfig = useAppConfig() as Input['AppConfig']
+
+const { emitFormBlur, emitFormInput, emitFormChange, size: formFieldSize, color: formFieldColor, id, name, highlight: formFieldHighlight, disabled: formFieldDisabled, emitFormFocus, ariaAttrs } = useFormField<InputProps<T>>(_props, { deferInputValidation: true })
+
+const { orientation, size: fieldGroupSize } = useFieldGroup<InputProps<T>>(_props)
+const { isLeading, isTrailing, leadingIconName, trailingIconName } = useComponentIcons(props)
+
+// eslint-disable-next-line vue/no-dupe-keys
+const color = computed(() => formFieldColor.value ?? props.color)
+// eslint-disable-next-line vue/no-dupe-keys
+const highlight = computed(() => formFieldHighlight.value ?? props.highlight)
+// eslint-disable-next-line vue/no-dupe-keys
+const size = computed(() => fieldGroupSize.value ?? formFieldSize.value ?? props.size)
+// eslint-disable-next-line vue/no-dupe-keys
+const disabled = computed(() => formFieldDisabled.value ?? props.disabled)
+
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.input || {}) })({
+  type: props.type as Input['variants']['type'],
+  color: color.value,
+  variant: props.variant,
+  size: size.value,
+  loading: props.loading,
+  highlight: highlight.value,
+  fixed: props.fixed,
+  leading: isLeading.value || !!props.avatar || !!slots.leading,
+  trailing: isTrailing.value || !!slots.trailing,
+  fieldGroup: orientation.value
+}))
+
+const inputRef = useTemplateRef('inputRef')
+
+// Custom function to handle the v-model properties
+function updateInput(value: string | null | undefined) {
+  if (props.modelModifiers?.trim && (typeof value === 'string' || value === null || value === undefined)) {
+    value = value?.trim() ?? null
+  }
+
+  if (props.modelModifiers?.number || props.type === 'number') {
+    value = looseToNumber(value)
+  }
+
+  // Only empty values are mapped, `0` is a value on its own with the `number` modifier
+  if (props.modelModifiers?.nullable && isEmpty(value)) {
+    value = null
+  }
+
+  if (props.modelModifiers?.optional && !props.modelModifiers?.nullable && value !== null && isEmpty(value)) {
+    value = undefined
+  }
+
+  modelValue.value = value as ApplyModifiers<T, Mod>
+  emitFormInput()
+}
+
+function onInput(event: Event) {
+  if (!props.modelModifiers?.lazy) {
+    updateInput((event.target as HTMLInputElement).value)
+  }
+}
+
+function onChange(event: Event) {
+  const value = (event.target as HTMLInputElement).value
+
+  if (props.modelModifiers?.lazy) {
+    updateInput(value)
+  }
+
+  // Update trimmed input so that it has same behavior as native input https://github.com/vuejs/core/blob/5ea8a8a4fab4e19a71e123e4d27d051f5e927172/packages/runtime-dom/src/directives/vModel.ts#L63
+  if (props.modelModifiers?.trim) {
+    (event.target as HTMLInputElement).value = value.trim()
+  }
+
+  emitFormChange()
+  emits('change', event)
+}
+
+function onBlur(event: FocusEvent) {
+  emitFormBlur()
+  emits('blur', event)
+}
+
+function autoFocus() {
+  if (props.autofocus) {
+    inputRef.value?.focus()
+  }
+}
+
+let autofocusTimeoutId: ReturnType<typeof setTimeout> | undefined
+
+onMounted(() => {
+  autofocusTimeoutId = setTimeout(() => {
+    autoFocus()
+  }, props.autofocusDelay)
 })
 
-/** 输入值（支持 v-model） */
-const model = defineModel<string | number>({ default: '' })
+onScopeDispose(() => clearTimeout(autofocusTimeoutId))
 
-const emit = defineEmits<{
-  /** 点击清空按钮时回调 */
-  clear: []
-}>()
-
-const slots = useSlots()
-const attrs = useAttrs()
-const inputRef = useTemplateRef<HTMLInputElement>('inputRef')
-
-/** 尺寸 → 高度与内边距 */
-const sizeClasses: Record<InputSize, string> = {
-  xs: 'h-6 px-2 text-sm',
-  sm: 'h-7 px-2.5 text-sm',
-  md: 'h-8 px-2.5 text-base',
-  lg: 'h-9 px-3 text-base',
-  xl: 'h-11 px-3.5 text-base',
-}
-
-/** leading / trailing 内容存在时，控件补足的水平内边距 */
-const leadingBasePaddings: Record<InputSize, string> = {
-  xs: 'pl-7', sm: 'pl-8', md: 'pl-9', lg: 'pl-10', xl: 'pl-11',
-}
-const trailingBasePaddings: Record<InputSize, string> = {
-  xs: 'pr-7', sm: 'pr-8', md: 'pr-9', lg: 'pr-10', xl: 'pr-11',
-}
-
-/** trailing 与清空按钮并存、仅清空按钮时的内边距 */
-const trailingWithClearPaddings: Record<InputSize, string> = {
-  xs: 'pr-10', sm: 'pr-11', md: 'pr-12', lg: 'pr-13', xl: 'pr-14',
-}
-const clearPaddings: Record<InputSize, string> = {
-  xs: 'pr-5', sm: 'pr-6', md: 'pr-7', lg: 'pr-8', xl: 'pr-9',
-}
-
-/** leading / trailing 容器自身的内边距 */
-const leadingPaddings: Record<InputSize, string> = {
-  xs: 'pl-2', sm: 'pl-2.5', md: 'pl-2.5', lg: 'pl-3', xl: 'pl-3',
-}
-const trailingPaddings: Record<InputSize, string> = {
-  xs: 'pr-2', sm: 'pr-2.5', md: 'pr-2.5', lg: 'pr-3', xl: 'pr-3',
-}
-
-/** trailing 与清空按钮并存时，容器额外避让的右内边距 */
-const trailingClearExtras: Record<InputSize, string> = {
-  xs: 'pr-5', sm: 'pr-5', md: 'pr-6', lg: 'pr-7', xl: 'pr-8',
-}
-
-/** 图标尺寸（随控件尺寸） */
-const iconSizes: Record<InputSize, string> = {
-  xs: 'size-4', sm: 'size-4', md: 'size-5', lg: 'size-5', xl: 'size-6',
-}
-
-/** 变体样式（Nuxt UI 语义 → 本地 token） */
-const variantClasses: Record<InputVariant, string> = {
-  outline: 'bg-background ring-1 ring-inset ring-border',
-  soft: 'bg-muted/50 hover:bg-muted focus:bg-muted disabled:bg-muted/50',
-  subtle: 'bg-muted ring-1 ring-inset ring-border',
-  ghost: 'bg-transparent hover:bg-muted focus:bg-muted disabled:bg-transparent',
-  none: 'bg-transparent focus:outline-none',
-}
-
-/** 聚焦描边（颜色 × 变体）：outline / subtle 聚焦时叠加 ring */
-const focusStyles: Record<InputColor, Record<InputVariant, string>> = {
-  primary: {
-    outline: 'outline-primary/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-primary',
-    soft: 'outline-primary/25 focus-visible:outline-3',
-    subtle: 'outline-primary/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-primary',
-    ghost: 'outline-primary/25 focus-visible:outline-3',
-    none: '',
-  },
-  secondary: {
-    outline: 'outline-secondary/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-secondary',
-    soft: 'outline-secondary/25 focus-visible:outline-3',
-    subtle: 'outline-secondary/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-secondary',
-    ghost: 'outline-secondary/25 focus-visible:outline-3',
-    none: '',
-  },
-  neutral: {
-    outline: 'outline-foreground/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-foreground',
-    soft: 'outline-foreground/25 focus-visible:outline-3',
-    subtle: 'outline-foreground/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-foreground',
-    ghost: 'outline-foreground/25 focus-visible:outline-3',
-    none: '',
-  },
-  success: {
-    outline: 'outline-success/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-success',
-    soft: 'outline-success/25 focus-visible:outline-3',
-    subtle: 'outline-success/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-success',
-    ghost: 'outline-success/25 focus-visible:outline-3',
-    none: '',
-  },
-  info: {
-    outline: 'outline-info/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-info',
-    soft: 'outline-info/25 focus-visible:outline-3',
-    subtle: 'outline-info/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-info',
-    ghost: 'outline-info/25 focus-visible:outline-3',
-    none: '',
-  },
-  warning: {
-    outline: 'outline-warning/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-warning',
-    soft: 'outline-warning/25 focus-visible:outline-3',
-    subtle: 'outline-warning/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-warning',
-    ghost: 'outline-warning/25 focus-visible:outline-3',
-    none: '',
-  },
-  error: {
-    outline: 'outline-error/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-error',
-    soft: 'outline-error/25 focus-visible:outline-3',
-    subtle: 'outline-error/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-error',
-    ghost: 'outline-error/25 focus-visible:outline-3',
-    none: '',
-  },
-}
-
-/** 高亮描边色 */
-const highlightClasses: Record<InputColor, string> = {
-  primary: 'ring-1 ring-inset ring-primary',
-  secondary: 'ring-1 ring-inset ring-secondary',
-  neutral: 'ring-1 ring-inset ring-border',
-  success: 'ring-1 ring-inset ring-success',
-  info: 'ring-1 ring-inset ring-info',
-  warning: 'ring-1 ring-inset ring-warning',
-  error: 'ring-1 ring-inset ring-error',
-}
-
-/** fixed=false 时桌面端缩小一档字号 */
-const fixedTextClasses: Partial<Record<InputSize, string>> = {
-  xs: 'md:text-xs',
-  sm: 'md:text-xs',
-  md: 'md:text-sm',
-  lg: 'md:text-sm',
-}
-
-const statusClasses: Record<InputStatus, string> = {
-  error: 'border-error focus-visible:border-error focus-visible:ring-error/20',
-  warning: 'border-warning focus-visible:border-warning focus-visible:ring-warning/20',
-}
-
-const hasLeading = computed(() => !!slots.leading || !!slots.prefix || props.avatar != null)
-const hasTrailing = computed(() => !!slots.trailing || !!slots.suffix)
-
-/* 只读状态经 $attrs 透传，此处读取用于控制清空按钮显隐 */
-const isReadonly = computed(() => attrs.readonly === '' || attrs.readonly === true)
-
-/* 有值且未禁用、未只读时才展示清空按钮 */
-const showClear = computed(
-  () => props.clearable && model.value !== '' && model.value != null && !props.disabled && !isReadonly.value,
-)
-
-/** 清空值并恢复焦点 */
-function handleClear() {
-  model.value = ''
-  emit('clear')
-  focus()
-}
-
-/** 使输入框获得焦点 */
-function focus() {
-  inputRef.value?.focus()
-}
-
-/** 使输入框失去焦点 */
-function blur() {
-  inputRef.value?.blur()
-}
-
-/** 选中输入框内容 */
-function select() {
-  inputRef.value?.select()
-}
-
-defineExpose({ focus, blur, select })
-
-function onClick(event: MouseEvent) {
-  const handler = attrs.onClick as
-    | ((event: MouseEvent) => unknown)
-    | Array<(event: MouseEvent) => unknown>
-    | undefined
-  if (handler == null) return
-
-  /* 透传的处理器可能是数组（上层 as-child 合并后），逐个调用 */
-  const handlers = Array.isArray(handler) ? handler : [handler]
-  handlers.forEach((fn) => fn(event))
-}
-
-/** 透传属性：onClick 换成包装后的处理函数，其余原样透传 */
-const forwardedAttrs = computed(() => ({ ...attrs, onClick }))
+defineExpose({
+  inputRef
+})
 </script>
 
 <template>
-  <Primitive
-    :as="as ?? 'div'"
-    data-slot="root"
-    :class="cn(
-      'relative inline-flex items-center',
-      (slots.addonBefore || slots.addonAfter) && 'flex w-full items-stretch',
-      props.ui?.root,
-      props.class,
-    )"
-  >
-    <span
-      v-if="slots.addonBefore"
-      class="inline-flex items-center rounded-l-lg border border-r-0 border-input bg-muted px-3 text-sm text-muted-foreground"
-    >
-      <slot name="addonBefore" />
-    </span>
+  <Primitive :as="props.as" :data-slot="($attrs['data-slot'] as string | undefined) ?? 'root'" :class="ui.root({ class: [props.ui?.root, props.class] })">
     <input
+      :id="id"
       ref="inputRef"
-      v-bind="forwardedAttrs"
-      :value="model"
-      data-slot="base"
-      :class="cn(
-        'w-full rounded-md border-0 appearance-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-75 transition-colors',
-        sizeClasses[size],
-        hasLeading && leadingBasePaddings[size],
-        hasTrailing && (showClear ? trailingWithClearPaddings[size] : trailingBasePaddings[size]),
-        showClear && !hasTrailing && clearPaddings[size],
-        slots.addonBefore && 'rounded-l-none',
-        slots.addonAfter && 'rounded-r-none',
-        variantClasses[variant],
-        focusStyles[color][variant],
-        highlight && highlightClasses[color],
-        fixed === false && fixedTextClasses[size],
-        status && statusClasses[status],
-        props.ui?.base,
-      )"
+      :type="props.type"
+      :value="modelValue"
+      :name="name"
+      :placeholder="props.placeholder"
+      :class="ui.base({ class: props.ui?.base })"
       :disabled="disabled"
-      :maxlength="maxLength"
-      :placeholder="placeholder"
-      @input="model = ($event.target as HTMLInputElement).value"
-    />
-
-    <span
-      v-if="hasLeading"
-      data-slot="leading"
-      :class="cn('absolute inset-y-0 left-0 flex items-center', leadingPaddings[size], props.ui?.leading)"
+      :required="props.required"
+      :autocomplete="props.autocomplete"
+      v-bind="{ ...$attrs, ...ariaAttrs }"
+      data-slot="base"
+      @input="onInput"
+      @blur="onBlur"
+      @change="onChange"
+      @focus="emitFormFocus"
     >
-      <slot name="leading">
-        <span
-          v-if="slots.prefix"
-          :class="cn('shrink-0 text-muted-foreground [&_svg]:size-full', iconSizes[size], props.ui?.leadingIcon)"
-        >
-          <slot name="prefix" />
-        </span>
-        <XAvatar
-          v-else-if="avatar"
-          v-bind="avatar"
-          :size="props.ui?.leadingAvatarSize ?? avatar.size"
-          data-slot="leadingAvatar"
-          :class="cn('shrink-0', props.ui?.leadingAvatar, avatar.class)"
-        />
+
+    <slot :ui="ui" />
+
+    <span v-if="isLeading || !!props.avatar || !!slots.leading" data-slot="leading" :class="ui.leading({ class: props.ui?.leading })">
+      <slot name="leading" :ui="ui">
+        <XIcon v-if="isLeading && leadingIconName" :name="leadingIconName" data-slot="leadingIcon" :class="ui.leadingIcon({ class: props.ui?.leadingIcon })" />
+        <XAvatar v-else-if="!!props.avatar" :size="((props.ui?.leadingAvatarSize || ui.leadingAvatarSize()) as AvatarProps['size'])" v-bind="props.avatar" data-slot="leadingAvatar" :class="ui.leadingAvatar({ class: props.ui?.leadingAvatar })" />
       </slot>
     </span>
 
-    <span
-      v-if="hasTrailing"
-      data-slot="trailing"
-      :class="cn(
-        'absolute inset-y-0 right-0 flex items-center',
-        trailingPaddings[size],
-        showClear && trailingClearExtras[size],
-        props.ui?.trailing,
-      )"
-    >
-      <slot name="trailing">
-        <span
-          v-if="slots.suffix"
-          :class="cn('shrink-0 text-muted-foreground [&_svg]:size-full', iconSizes[size], props.ui?.trailingIcon)"
-        >
-          <slot name="suffix" />
-        </span>
+    <span v-if="isTrailing || !!slots.trailing" data-slot="trailing" :class="ui.trailing({ class: props.ui?.trailing })">
+      <slot name="trailing" :ui="ui">
+        <XIcon v-if="trailingIconName" :name="trailingIconName" data-slot="trailingIcon" :class="ui.trailingIcon({ class: props.ui?.trailingIcon })" />
       </slot>
-    </span>
-
-    <Button
-      v-if="showClear"
-      type="button"
-      variant="ghost"
-      size="icon-xs"
-      aria-label="清空"
-      class="absolute right-2 size-4 rounded-full text-muted-foreground opacity-70 hover:bg-transparent hover:opacity-100 [&_svg]:size-3.5"
-      @click="handleClear"
-    >
-      <X />
-    </Button>
-
-    <span
-      v-if="slots.addonAfter"
-      class="inline-flex items-center rounded-r-lg border border-l-0 border-input bg-muted px-3 text-sm text-muted-foreground"
-    >
-      <slot name="addonAfter" />
     </span>
   </Primitive>
 </template>

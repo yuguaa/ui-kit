@@ -1,240 +1,218 @@
-<script setup lang="ts">
-/**
- * XDropdownMenu 下拉菜单：点击触发器展开的操作菜单。
- * 支持子菜单（children）、字段映射（labelKey / valueKey / descriptionKey）、
- * 过滤搜索（filter / filterFields）、checkbox 选中态、portal 与 arrow。
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { computed, nextTick, ref } from 'vue'
-import { ChevronDown } from '@lucide/vue'
-import { DropdownMenuPortal, DropdownMenuRoot, DropdownMenuTrigger } from 'reka-ui'
-import type { AvatarProps } from '@/components/kit/XAvatar.vue'
-import XButton from '@/components/kit/XButton.vue'
-import XIcon from '@/components/kit/XIcon.vue'
-import XDropdownMenuItems from './XDropdownMenuItems.vue'
+<!-- eslint-disable vue/block-tag-newline -->
+<script lang="ts">
+import type { DropdownMenuRootProps, DropdownMenuRootEmits, DropdownMenuContentProps, DropdownMenuContentEmits, DropdownMenuArrowProps } from 'reka-ui'
+import type { VNode } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/dropdown-menu'
+import type { AvatarProps } from './XAvatar.vue'
+import type { IconProps } from './XIcon.vue'
+import type { InputProps } from './XInput.vue'
+import type { KbdProps } from './XKbd.vue'
+import type { LinkProps } from './XLink.vue'
+import type { ArrayOrNested, DynamicSlots, GetItemKeys, MergeTypes, NestedItem, EmitsToProps } from '../../lib/nuxt/types/utils'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-type IconName = NonNullable<InstanceType<typeof XIcon>['$props']['name']>
+type DropdownMenu = ComponentConfig<typeof theme, AppConfig, 'dropdownMenu'>
 
-export type MenuSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-export type MenuColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
-export type MenuKbdSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-export type MenuAvatarSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-
-/** 菜单图标：XIcon 名称或自定义组件 */
-export type MenuIcon = IconName | Component
-
-/** 菜单项头像：复用 XAvatar 属性（尺寸由菜单 size 决定） */
-export type MenuAvatar = Omit<AvatarProps, 'size' | 'ui' | 'as' | 'class' | 'style'>
-
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface DropdownMenuUi {
-  content?: string
-  input?: string
-  empty?: string
-  viewport?: string
-  arrow?: string
-  group?: string
+export interface DropdownMenuItem extends Omit<LinkProps, 'type' | 'raw' | 'custom'> {
   label?: string
-  separator?: string
-  item?: string
-  itemLeadingIcon?: string
-  itemLeadingAvatar?: string
-  itemLeadingAvatarSize?: MenuAvatarSize
-  itemTrailing?: string
-  itemTrailingIcon?: string
-  itemTrailingKbds?: string
-  itemTrailingKbdsSize?: MenuKbdSize
-  itemWrapper?: string
-  itemLabel?: string
-  itemDescription?: string
-  itemLabelExternalIcon?: string
-}
-
-export interface DropdownMenuItemData {
-  /** 菜单项唯一标识（可用 valueKey 指定其他字段） */
-  key?: string
-  /** 菜单项标题（可用 labelKey 指定其他字段） */
-  label?: string
-  /** 菜单项说明文字（可用 descriptionKey 指定其他字段） */
   description?: string
-  /** 快捷键数组 */
-  kbds?: string[]
-  /** 快捷键（单条简写，等价于 kbds: [shortcut]） */
-  shortcut?: string
-  /** 项类型：label 分组标题 / separator 分隔线 / checkbox 勾选项 */
-  type?: 'label' | 'separator' | 'item' | 'checkbox'
-  /** 是否禁用 */
-  disabled?: boolean
-  /** checkbox 选中态 */
-  checked?: boolean
-  /** 加载态：前置图标显示旋转的 loadingIcon */
+  /**
+   * @IconifyIcon
+   */
+  icon?: IconProps['name']
+  color?: DropdownMenu['variants']['color']
+  avatar?: AvatarProps
+  content?: Omit<DropdownMenuContentProps, 'as' | 'asChild' | 'forceMount'> & { class?: any } & Partial<EmitsToProps<DropdownMenuContentEmits>>
+  kbds?: KbdProps['value'][] | KbdProps[]
+  /**
+   * The item type.
+   * @defaultValue 'link'
+   */
+  type?: 'label' | 'separator' | 'link' | 'checkbox'
+  slot?: string
   loading?: boolean
-  /** 前置图标 */
-  icon?: MenuIcon
-  /** 前置头像 */
-  avatar?: MenuAvatar
-  /** 项语义色 */
-  color?: MenuColor
-  /** 链接目标，为 _blank 时标签后显示 externalIcon */
-  target?: string
-  /** 子菜单项 */
-  children?: DropdownMenuItemData[]
-  /** 子菜单受控展开状态 */
+  disabled?: boolean
+  checked?: boolean
   open?: boolean
-  /** 子菜单默认展开状态 */
   defaultOpen?: boolean
-  /** 选中回调 */
-  onSelect?: (item: DropdownMenuItemData) => void
-  /** checkbox 选中态变化回调 */
+  filter?: boolean | Omit<InputProps, 'modelValue' | 'defaultValue'>
+  filterFields?: string[]
+  ignoreFilter?: boolean
+  children?: ArrayOrNested<DropdownMenuItem>
+  onSelect?: (e: Event) => void
   onUpdateChecked?: (checked: boolean) => void
-  class?: HTMLAttributes['class']
+  class?: any
+  ui?: Partial<Pick<DropdownMenu['slots'], 'content' | 'item' | 'label' | 'separator' | 'itemLeadingIcon' | 'itemLeadingAvatarSize' | 'itemLeadingAvatar' | 'itemWrapper' | 'itemLabel' | 'itemDescription' | 'itemLabelExternalIcon' | 'itemTrailing' | 'itemTrailingIcon' | 'itemTrailingKbds' | 'itemTrailingKbdsSize'>>
   [key: string]: any
 }
 
-const props = withDefaults(defineProps<{
-  /** 菜单项数组，二维数组时按行分组 */
-  items?: DropdownMenuItemData[] | DropdownMenuItemData[][]
-  /** 尺寸 */
-  size?: MenuSize
-  /** 是否打开（支持 v-model:open） */
-  open?: boolean
-  /** 默认打开状态（非受控） */
-  defaultOpen?: boolean
-  /** 模态：打开时锁定页面滚动与指针交互 */
-  modal?: boolean
-  /** 选择后关闭菜单 */
-  closeOnSelect?: boolean
-  /** 触发按钮文字 */
-  triggerLabel?: string
-  /** 菜单项标题字段 */
-  labelKey?: string
-  /** 菜单项值字段 */
-  valueKey?: string
-  /** 菜单项说明字段 */
-  descriptionKey?: string
-  /** checkbox 选中态图标 */
-  checkedIcon?: MenuIcon
-  /** 加载图标 */
-  loadingIcon?: MenuIcon
-  /** 外链图标，false 时隐藏 */
-  externalIcon?: boolean | MenuIcon
-  /** 顶部过滤搜索框，对象可配置占位文字 */
-  filter?: boolean | { placeholder?: string }
-  /** 过滤时匹配的字段，默认 [labelKey] */
-  filterFields?: string[]
-  /** 忽略过滤（适合自定义过滤场景） */
-  ignoreFilter?: boolean
-  /** 浮层定位配置 */
-  content?: { align?: 'start' | 'center' | 'end'; side?: 'top' | 'right' | 'bottom' | 'left'; alignOffset?: number; sideOffset?: number }
-  /** 浮层是否渲染到 body，可为选择器或指定容器元素 */
+export interface DropdownMenuProps<T extends ArrayOrNested<DropdownMenuItem> = ArrayOrNested<DropdownMenuItem>> extends Omit<DropdownMenuRootProps, 'dir'> {
+  /**
+   * @defaultValue 'md'
+   */
+  size?: DropdownMenu['variants']['size']
+  items?: T
+  /**
+   * The icon displayed when an item is checked.
+   * @defaultValue appConfig.ui.icons.check
+   * @IconifyIcon
+   */
+  checkedIcon?: IconProps['name']
+  /**
+   * The icon displayed when an item is loading.
+   * @defaultValue appConfig.ui.icons.loading
+   * @IconifyIcon
+   */
+  loadingIcon?: IconProps['name']
+  /**
+   * The icon displayed when the item is an external link.
+   * Set to `false` to hide the external icon.
+   * @defaultValue appConfig.ui.icons.external
+   * @IconifyIcon
+   */
+  externalIcon?: boolean | IconProps['name']
+  /**
+   * The content of the menu.
+   * @defaultValue { side: 'bottom', sideOffset: 8, collisionPadding: 8 }
+   */
+  content?: Omit<DropdownMenuContentProps, 'as' | 'asChild' | 'forceMount'> & Partial<EmitsToProps<DropdownMenuContentEmits>>
+  /**
+   * Display an arrow alongside the menu.
+   * `{ rounded: true }`{lang="ts-type"}
+   * @defaultValue false
+   */
+  arrow?: boolean | Omit<DropdownMenuArrowProps, 'as' | 'asChild'>
+  /**
+   * Render the menu in a portal.
+   * @defaultValue true
+   */
   portal?: boolean | string | HTMLElement
-  /** 是否显示指向触发器的箭头 */
-  arrow?: boolean
-  /** 是否禁用触发按钮 */
+  /**
+   * The key used to get the label from the item.
+   * @defaultValue 'label'
+   */
+  labelKey?: GetItemKeys<T>
+  /**
+   * The key used to get the description from the item.
+   * @defaultValue 'description'
+   */
+  descriptionKey?: GetItemKeys<T>
+  /**
+   * Whether to display a filter input or not.
+   * Can be an object to pass additional props to the input.
+   * `{ placeholder: 'Search...', variant: 'none' }`{lang="ts-type"}
+   * @defaultValue false
+   */
+  filter?: boolean | Omit<InputProps, 'modelValue' | 'defaultValue'>
+  /**
+   * The fields to filter by.
+   * @defaultValue [labelKey]
+   */
+  filterFields?: string[]
+  /**
+   * When `true`, items will not be filtered which is useful for custom filtering.
+   * @defaultValue false
+   */
+  ignoreFilter?: boolean
   disabled?: boolean
-  /** 主题插槽类名 */
-  ui?: DropdownMenuUi
-  class?: HTMLAttributes['class']
-}>(), {
-  items: () => [],
-  size: 'md',
-  open: undefined,
-  defaultOpen: false,
-  modal: true,
-  closeOnSelect: true,
-  triggerLabel: '操作',
-  labelKey: 'label',
-  valueKey: 'key',
-  descriptionKey: 'description',
-  checkedIcon: 'check',
-  loadingIcon: 'loader-circle',
-  externalIcon: true,
-  filter: false,
-  ignoreFilter: false,
+  class?: any
+  ui?: DropdownMenu['slots']
+}
+
+export interface DropdownMenuEmits extends DropdownMenuRootEmits {}
+
+type SlotProps<T extends DropdownMenuItem> = (props: { item: T, active: boolean, index: number, ui: DropdownMenu['ui'] }) => VNode[]
+
+export type DropdownMenuSlots<
+  A extends ArrayOrNested<DropdownMenuItem> = ArrayOrNested<DropdownMenuItem>,
+  T extends NestedItem<A> = NestedItem<A>
+> = {
+  'default'?(props: { open: boolean }): VNode[]
+  'item'?: SlotProps<T>
+  'item-leading'?: SlotProps<T>
+  'item-label'?: (props: { item: T, active: boolean, index: number }) => VNode[]
+  'item-description'?: (props: { item: T, active: boolean, index: number }) => VNode[]
+  'item-trailing'?: SlotProps<T>
+  'empty'?(props: { searchTerm: string }): VNode[]
+  'content-top'?: (props: { sub: boolean }) => VNode[]
+  'content-bottom'?: (props: { sub: boolean }) => VNode[]
+}
+& DynamicSlots<MergeTypes<T>, 'label' | 'description', { active: boolean, index: number }>
+& DynamicSlots<MergeTypes<T>, 'leading' | 'trailing', { active: boolean, index: number, ui: DropdownMenu['ui'] }>
+
+</script>
+
+<script setup lang="ts" generic="T extends ArrayOrNested<DropdownMenuItem>">
+import { computed, toRef } from 'vue'
+import { defu } from 'defu'
+import { DropdownMenuRoot, DropdownMenuTrigger, DropdownMenuArrow } from 'reka-ui'
+import { reactivePick } from '@vueuse/core'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
+import { omit } from '../../lib/nuxt/utils'
+import { tv } from '../../lib/nuxt/utils/tv'
+import XDropdownMenuContent from './XDropdownMenuContent.vue'
+
+const _props = withDefaults(defineProps</* @vue-ignore */ DropdownMenuProps<T>>(), {
   portal: true,
-  arrow: false,
-  disabled: false,
+  modal: true,
+  externalIcon: true,
+  labelKey: 'label',
+  descriptionKey: 'description',
+  filter: false,
+  ignoreFilter: false
 })
+const emits = defineEmits</* @vue-ignore */ DropdownMenuEmits>()
+const slots = defineSlots</* @vue-ignore */ DropdownMenuSlots<T>>()
 
-defineOptions({ name: 'XDropdownMenu' })
+const searchTerm = defineModel<string>('searchTerm', { default: '' })
 
-const emit = defineEmits<{
-  /** 打开状态变化回调 */
-  'update:open': [open: boolean]
-  /** 选中菜单项回调 */
-  select: [item: DropdownMenuItemData]
-}>()
+const props = useComponentProps<DropdownMenuProps<T>>('dropdownMenu', _props)
 
-const innerOpen = ref(props.defaultOpen)
+const appConfig = useAppConfig() as DropdownMenu['AppConfig']
 
-/* 子菜单在 RTL 布局下应使用反向箭头，本仓库仅支持 LTR */
-const portalTarget = computed(() => (typeof props.portal === 'string' || (typeof HTMLElement !== 'undefined' && props.portal instanceof HTMLElement) ? props.portal : undefined))
+const rootProps = useForwardProps(reactivePick(props, 'defaultOpen', 'open', 'modal'), emits)
+const contentProps = toRef(() => defu(props.content, { side: 'bottom', sideOffset: 8, collisionPadding: 8 }) as DropdownMenuContentProps)
+const arrowProps = toRef(() => defu(props.arrow, { rounded: true }) as DropdownMenuArrowProps)
+const getProxySlots = () => omit(slots, ['default'])
 
-const itemsProps = computed(() => ({
-  items: props.items,
-  size: props.size,
-  closeOnSelect: props.closeOnSelect,
-  labelKey: props.labelKey,
-  valueKey: props.valueKey,
-  descriptionKey: props.descriptionKey,
-  checkedIcon: props.checkedIcon,
-  loadingIcon: props.loadingIcon,
-  externalIcon: props.externalIcon,
-  filter: props.filter,
-  filterFields: props.filterFields,
-  ignoreFilter: props.ignoreFilter,
-  content: props.content,
-  portal: props.portal,
-  arrow: props.arrow,
-  ui: props.ui,
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.dropdownMenu || {}) })({
+  size: props.size
 }))
-
-function onOpenChange(next: boolean) {
-  if (props.open == null) innerOpen.value = next
-  emit('update:open', next)
-}
-
-function handleSelect(item: DropdownMenuItemData) {
-  emit('select', item)
-  if (!props.closeOnSelect) {
-    /* 菜单内部选择后自动关闭，需要保持打开时在关闭后重新打开 */
-    void nextTick(() => onOpenChange(true))
-  }
-}
 </script>
 
 <template>
-  <DropdownMenuRoot :open="open ?? innerOpen" :modal="modal" @update:open="onOpenChange">
-    <DropdownMenuTrigger as-child :disabled="disabled" :class="props.class">
-      <slot name="trigger">
-        <XButton variant="outline" color="neutral">
-          {{ triggerLabel }}
-          <ChevronDown class="size-4" />
-        </XButton>
-      </slot>
+  <DropdownMenuRoot v-slot="{ open }" v-bind="rootProps">
+    <DropdownMenuTrigger v-if="!!slots.default" as-child :class="props.class" :disabled="props.disabled">
+      <slot :open="open" />
     </DropdownMenuTrigger>
 
-    <XDropdownMenuItems v-if="portal === false" v-bind="itemsProps" @select="handleSelect">
-      <template v-if="$slots.item" #item="slotData"><slot name="item" v-bind="slotData ?? {}" /></template>
-      <template v-if="$slots['item-leading']" #item-leading="slotData"><slot name="item-leading" v-bind="slotData ?? {}" /></template>
-      <template v-if="$slots['item-label']" #item-label="slotData"><slot name="item-label" v-bind="slotData ?? {}" /></template>
-      <template v-if="$slots['item-description']" #item-description="slotData"><slot name="item-description" v-bind="slotData ?? {}" /></template>
-      <template v-if="$slots['item-trailing']" #item-trailing="slotData"><slot name="item-trailing" v-bind="slotData ?? {}" /></template>
-      <template v-if="$slots.empty" #empty="slotData"><slot name="empty" v-bind="slotData ?? {}" /></template>
-      <template v-if="$slots['content-top']" #content-top="slotData"><slot name="content-top" v-bind="slotData ?? {}" /></template>
-      <template v-if="$slots['content-bottom']" #content-bottom="slotData"><slot name="content-bottom" v-bind="slotData ?? {}" /></template>
-    </XDropdownMenuItems>
-    <DropdownMenuPortal v-else :to="portalTarget">
-      <XDropdownMenuItems v-bind="itemsProps" @select="handleSelect">
-        <template v-if="$slots.item" #item="slotData"><slot name="item" v-bind="slotData ?? {}" /></template>
-        <template v-if="$slots['item-leading']" #item-leading="slotData"><slot name="item-leading" v-bind="slotData ?? {}" /></template>
-        <template v-if="$slots['item-label']" #item-label="slotData"><slot name="item-label" v-bind="slotData ?? {}" /></template>
-        <template v-if="$slots['item-description']" #item-description="slotData"><slot name="item-description" v-bind="slotData ?? {}" /></template>
-        <template v-if="$slots['item-trailing']" #item-trailing="slotData"><slot name="item-trailing" v-bind="slotData ?? {}" /></template>
-        <template v-if="$slots.empty" #empty="slotData"><slot name="empty" v-bind="slotData ?? {}" /></template>
-        <template v-if="$slots['content-top']" #content-top="slotData"><slot name="content-top" v-bind="slotData ?? {}" /></template>
-        <template v-if="$slots['content-bottom']" #content-bottom="slotData"><slot name="content-bottom" v-bind="slotData ?? {}" /></template>
-      </XDropdownMenuItems>
-    </DropdownMenuPortal>
+    <XDropdownMenuContent
+      v-model:search-term="searchTerm"
+      :class="ui.content({ class: [!slots.default && props.class, props.ui?.content] })"
+      :ui="ui"
+      :ui-override="props.ui"
+      v-bind="contentProps"
+      :items="props.items"
+      :portal="props.portal"
+      :label-key="(props.labelKey as string & keyof NestedItem<T>)"
+      :description-key="(props.descriptionKey as string & keyof NestedItem<T>)"
+      :checked-icon="props.checkedIcon"
+      :loading-icon="props.loadingIcon"
+      :external-icon="props.externalIcon"
+      :size="props.size"
+      :filter="props.filter"
+      :filter-fields="props.filterFields"
+      :ignore-filter="props.ignoreFilter"
+    >
+      <template v-for="(_, name) in getProxySlots()" #[name]="slotData">
+        <slot :name="(name as keyof DropdownMenuSlots<T>)" v-bind="slotData" />
+      </template>
+
+      <DropdownMenuArrow v-if="!!props.arrow" v-bind="arrowProps" data-slot="arrow" :class="ui.arrow({ class: props.ui?.arrow })" />
+    </XDropdownMenuContent>
   </DropdownMenuRoot>
 </template>

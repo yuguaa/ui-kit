@@ -1,912 +1,839 @@
-<script setup lang="ts">
-/**
- * XInputMenu 输入菜单：输入框 + 弹出建议列表（基于 reka-ui Combobox / Autocomplete）。
- * mode 区分 combobox（输入框即搜索）、autocomplete（自由文本）与 listbox（输入框只读，搜索框在菜单内）；
- * items 支持字符串、对象与二维分组数组，labelKey / valueKey / descriptionKey 映射字段。
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { computed, onMounted, onScopeDispose, ref, toRaw, useAttrs, useSlots } from 'vue'
-import { createReusableTemplate } from '@vueuse/core'
-import {
-  AutocompleteRoot,
-  ComboboxAnchor,
-  ComboboxArrow,
-  ComboboxCancel,
-  ComboboxContent,
-  ComboboxEmpty,
-  ComboboxGroup,
-  ComboboxInput,
-  ComboboxItem,
-  ComboboxItemIndicator,
-  ComboboxLabel,
-  ComboboxPortal,
-  ComboboxRoot,
-  ComboboxSeparator,
-  ComboboxVirtualizer,
-  Primitive,
-  TagsInputItem,
-  TagsInputItemDelete,
-  TagsInputItemText,
-  TagsInputRoot,
-} from 'reka-ui'
-import XAvatar from '@/components/kit/XAvatar.vue'
-import XIcon from '@/components/kit/XIcon.vue'
-import { cn } from '@/lib/utils'
-import { compare, filterGroups, getDisplayValue, getField, isEmpty, looseToNumber } from '@/lib/kit/menu-utils'
+<script lang="ts">
+import type { ComboboxRootProps, ComboboxRootEmits, ComboboxContentProps, ComboboxContentEmits, ComboboxArrowProps } from 'reka-ui'
+import type { VNode } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/input-menu'
+import type { UseComponentIconsProps } from '../../lib/nuxt/composables/useComponentIcons'
+import type { AvatarProps } from './XAvatar.vue'
+import type { ButtonProps } from './XButton.vue'
+import type { ChipProps } from './XChip.vue'
+import type { IconProps } from './XIcon.vue'
+import type { InputProps } from './XInput.vue'
+import type { LinkPropsKeys } from './XLink.vue'
+import type { ModelModifiers, ApplyModifiers } from '../../lib/nuxt/types/input'
+import type { InputHTMLAttributes } from '../../lib/nuxt/types/html'
+import type { AcceptableValue, ArrayOrNested, GetItemKeys, GetItemValue, GetModelValue, NestedItem, EmitsToProps } from '../../lib/nuxt/types/utils'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-type IconName = 'check' | 'x' | 'chevron-down' | 'search' | 'loader-circle'
-/** 图标：XIcon 名称或自定义组件 */
-export type InputMenuIcon = IconName | Component
+type InputMenu = ComponentConfig<typeof theme, AppConfig, 'inputMenu'>
 
-export type InputMenuSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-export type InputMenuColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
-export type InputMenuVariant = 'outline' | 'soft' | 'subtle' | 'ghost' | 'none'
+export type InputMenuValue = AcceptableValue
 
-/** 菜单内搜索框配置 */
-export interface InputMenuSearchInput {
-  placeholder?: string
-  disabled?: boolean
-}
-
-/** 浮层定位配置 */
-export interface InputMenuContentOptions {
-  position?: 'popper' | 'inline'
-  align?: 'start' | 'center' | 'end'
-  side?: 'top' | 'right' | 'bottom' | 'left'
-  alignOffset?: number
-  sideOffset?: number
-}
-
-export interface InputMenuItemData {
+export type InputMenuItem = InputMenuValue | {
   label?: string
   description?: string
-  icon?: InputMenuIcon
-  avatar?: Record<string, any>
-  /** 项类型：label 分组标题 / separator 分隔线 / item 选项 */
+  /**
+   * @IconifyIcon
+   */
+  icon?: IconProps['name']
+  avatar?: AvatarProps
+  chip?: ChipProps
+  /**
+   * The item type.
+   * @defaultValue 'item'
+   */
   type?: 'label' | 'separator' | 'item'
   disabled?: boolean
   onSelect?: (e: Event) => void
-  class?: HTMLAttributes['class']
-  ui?: Record<string, string | undefined>
+  class?: any
+  ui?: Partial<Pick<InputMenu['slots'], 'tagsItem' | 'tagsItemText' | 'tagsItemDelete' | 'tagsItemDeleteIcon' | 'label' | 'separator' | 'item' | 'itemLeadingIcon' | 'itemLeadingAvatarSize' | 'itemLeadingAvatar' | 'itemLeadingChip' | 'itemLeadingChipSize' | 'itemWrapper' | 'itemLabel' | 'itemDescription' | 'itemTrailing' | 'itemTrailingIcon'>>
   [key: string]: any
 }
 
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface InputMenuUi {
-  root?: string
-  base?: string
-  leading?: string
-  leadingIcon?: string
-  leadingAvatar?: string
-  leadingAvatarSize?: string
-  trailing?: string
-  trailingIcon?: string
-  trailingClear?: string
-  content?: string
-  input?: string
-  viewport?: string
-  group?: string
-  empty?: string
-  label?: string
-  separator?: string
-  item?: string
-  itemLeadingIcon?: string
-  itemLeadingAvatar?: string
-  itemLeadingAvatarSize?: string
-  itemWrapper?: string
-  itemLabel?: string
-  itemDescription?: string
-  itemTrailing?: string
-  itemTrailingIcon?: string
-  tagsInput?: string
-  tagsItem?: string
-  tagsItemText?: string
-  tagsItemDelete?: string
-  tagsItemDeleteIcon?: string
-  arrow?: string
+type ExcludeItem = { type: 'label' | 'separator' }
+type IsClearUsed<M extends boolean, C extends boolean | object> = M extends false
+  ? (C extends true ? null : C extends object ? null : never)
+  : never
+
+export interface InputMenuProps<T extends ArrayOrNested<InputMenuItem> = ArrayOrNested<InputMenuItem>, VK extends GetItemKeys<T> | undefined = undefined, M extends boolean = false, Mod extends Omit<ModelModifiers, 'lazy'> = Omit<ModelModifiers, 'lazy'>, C extends boolean | object = false> extends Pick<ComboboxRootProps<T>, 'open' | 'defaultOpen' | 'disabled' | 'name' | 'resetSearchTermOnBlur' | 'resetSearchTermOnSelect' | 'resetModelValueOnClear' | 'highlightOnHover' | 'openOnClick' | 'openOnFocus' | 'by'>, UseComponentIconsProps, /** @vue-ignore */ Omit<InputHTMLAttributes, 'disabled' | 'name' | 'type' | 'placeholder' | 'autofocus' | 'maxlength' | 'minlength' | 'pattern' | 'size' | 'min' | 'max' | 'step'> {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
+  id?: string
+  type?: InputHTMLAttributes['type']
+  /** The placeholder text when the input is empty. */
+  placeholder?: string
+  /**
+   * @defaultValue 'primary'
+   */
+  color?: InputMenu['variants']['color']
+  /**
+   * @defaultValue 'outline'
+   */
+  variant?: InputMenu['variants']['variant']
+  /**
+   * @defaultValue 'md'
+   */
+  size?: InputMenu['variants']['size']
+  required?: boolean
+  autofocus?: boolean
+  autofocusDelay?: number
+  /**
+   * The icon displayed to open the menu.
+   * @defaultValue appConfig.ui.icons.chevronDown
+   * @IconifyIcon
+   */
+  trailingIcon?: IconProps['name']
+  /**
+   * The icon displayed when an item is selected.
+   * @defaultValue appConfig.ui.icons.check
+   * @IconifyIcon
+   */
+  selectedIcon?: IconProps['name']
+  /**
+   * The icon displayed to delete a tag.
+   * Works only when `multiple` is `true`.
+   * @defaultValue appConfig.ui.icons.close
+   * @IconifyIcon
+   */
+  deleteIcon?: IconProps['name']
+  /**
+   * Display a clear button to reset the model value.
+   * Can be an object to pass additional props to the Button.
+   * @defaultValue false
+   */
+  clear?: (C & boolean) | (C & Partial<Omit<ButtonProps, LinkPropsKeys>>)
+  /**
+   * The icon displayed in the clear button.
+   * @defaultValue appConfig.ui.icons.close
+   * @IconifyIcon
+   */
+  clearIcon?: IconProps['name']
+  /**
+   * The content of the menu.
+   * @defaultValue { side: 'bottom', sideOffset: 8, collisionPadding: 8, position: 'popper' }
+   */
+  content?: Omit<ComboboxContentProps, 'as' | 'asChild' | 'forceMount'> & Partial<EmitsToProps<ComboboxContentEmits>>
+  /**
+   * Display an arrow alongside the menu.
+   * `{ rounded: true }`{lang="ts-type"}
+   * @defaultValue false
+   */
+  arrow?: boolean | Omit<ComboboxArrowProps, 'as' | 'asChild'>
+  /**
+   * Render the menu in a portal.
+   * @defaultValue true
+   */
+  portal?: boolean | string | HTMLElement
+  /**
+   * Enable virtualization for large lists.
+   * Note: when enabled, all groups are flattened into a single list due to a limitation of Reka UI (https://github.com/unovue/reka-ui/issues/1885).
+   * @defaultValue false
+   */
+  virtualize?: boolean | {
+    /**
+     * Number of items rendered outside the visible area
+     * @defaultValue 12
+     */
+    overscan?: number
+    /**
+     * Estimated size (in px) of each item, or a function that returns the size for a given index
+     * @defaultValue 32
+     */
+    estimateSize?: number | ((index: number) => number)
+  }
+  /**
+   * When `items` is an array of objects, select the field to use as the value instead of the object itself.
+   * @defaultValue undefined
+   */
+  valueKey?: VK
+  /**
+   * When `items` is an array of objects, select the field to use as the label.
+   * @defaultValue 'label'
+   */
+  labelKey?: GetItemKeys<T>
+  /**
+   * When `items` is an array of objects, select the field to use as the description.
+   * @defaultValue 'description'
+   */
+  descriptionKey?: GetItemKeys<T>
+  items?: T
+  /** The value of the InputMenu when initially rendered. Use when you do not need to control the state of the InputMenu. */
+  defaultValue?: ApplyModifiers<GetModelValue<T, VK, M, ExcludeItem>, Mod> | IsClearUsed<M, C>
+  /** The controlled value of the InputMenu. Can be binded-with with `v-model`. */
+  modelValue?: ApplyModifiers<GetModelValue<T, VK, M, ExcludeItem>, Mod> | IsClearUsed<M, C>
+  modelModifiers?: Mod
+  /** Whether multiple options can be selected or not. */
+  multiple?: M & boolean
+  /** Highlight the ring color like a focus state. */
+  highlight?: boolean
+  /** Keep the mobile text size on all breakpoints. */
+  fixed?: boolean
+  /**
+   * The behavior of the InputMenu.
+   * - `combobox`: select one (or many) items from a list of suggestions.
+   * - `autocomplete`: free-form text input with optional suggestions. The `modelValue` becomes the input text (`string`) instead of a selected item.
+   * @defaultValue 'combobox'
+   */
+  mode?: 'combobox' | 'autocomplete'
+  /**
+   * Determines if custom user input that does not exist in options can be added.
+   * @defaultValue false
+   */
+  createItem?: boolean | 'always' | { position?: 'top' | 'bottom', when?: 'empty' | 'always' }
+  /**
+   * Fields to filter items by.
+   * @defaultValue [labelKey]
+   */
+  filterFields?: string[]
+  /**
+   * When `true`, disable the default filters, useful for custom filtering (useAsyncData, useFetch, etc.).
+   * @defaultValue false
+   */
+  ignoreFilter?: boolean
+  class?: any
+  ui?: InputMenu['slots']
 }
 
-const props = withDefaults(defineProps<{
-  /** 建议项数据源，二维数组时按行分组 */
-  items?: InputMenuItemData[] | InputMenuItemData[][]
-  /** 选中值（支持 v-model；autocomplete 模式下为输入文本） */
-  modelValue?: string | number | boolean | null | Array<string | number | boolean>
-  /** 非受控初始值 */
-  defaultValue?: string | number | boolean | null | Array<string | number | boolean>
-  /** 底层模式：combobox 输入框即搜索，autocomplete 自由文本，listbox 输入框只读、搜索框在菜单内 */
-  mode?: 'combobox' | 'autocomplete' | 'listbox'
-  /** 菜单内搜索框：true 或 { placeholder, disabled }（listbox 模式） */
-  searchInput?: boolean | InputMenuSearchInput
-  /** 组件颜色 */
-  color?: InputMenuColor
-  /** 预设样式 */
-  variant?: InputMenuVariant
-  /** 尺寸 */
-  size?: InputMenuSize
-  /** 原生输入框类型 */
-  type?: string
-  /** 是否必填 */
-  required?: boolean
-  /** 占位提示文字 */
-  placeholder?: string
-  /** 展开图标 */
-  trailingIcon?: InputMenuIcon
-  /** 选中态图标 */
-  selectedIcon?: InputMenuIcon
-  /** 删除标签图标（multiple 模式） */
-  deleteIcon?: InputMenuIcon
-  /** 有选中项时显示清空按钮 */
-  clear?: boolean
-  /** 清空按钮图标 */
-  clearIcon?: InputMenuIcon
-  /** 浮层定位配置 */
-  content?: InputMenuContentOptions
-  /** 是否显示指向触发器的箭头 */
-  arrow?: boolean
-  /** 浮层是否渲染到 body，可为指定容器元素 */
-  portal?: boolean | HTMLElement
-  /** 虚拟滚动：true 或 { overscan, estimateSize } */
-  virtualize?: boolean | { overscan?: number, estimateSize?: number }
-  /** 选项值字段 */
-  valueKey?: string
-  /** 选项标签字段 */
-  labelKey?: string
-  /** 选项说明字段 */
-  descriptionKey?: string
-  /** 多选模式 */
-  multiple?: boolean
-  /** 高亮：始终显示颜色描边，类似聚焦态 */
-  highlight?: boolean
-  /** 保持移动端字号在所有断点一致 */
-  fixed?: boolean
-  /** 允许创建新选项：true / 'always' / { position, when } */
-  createItem?: boolean | 'always' | { position?: 'top' | 'bottom', when?: 'empty' | 'always' }
-  /** 过滤字段，默认 [labelKey] */
-  filterFields?: string[]
-  /** 忽略内置过滤（适合自定义过滤场景） */
-  ignoreFilter?: boolean
-  /** 是否自动聚焦 */
-  autofocus?: boolean
-  /** 自动聚焦延时（毫秒） */
-  autofocusDelay?: number
-  /** 受控打开状态 */
-  open?: boolean
-  /** 初始打开状态 */
-  defaultOpen?: boolean
-  /** 点击输入框打开菜单 */
-  openOnClick?: boolean
-  /** 聚焦输入框打开菜单 */
-  openOnFocus?: boolean
-  /** 指针悬停时高亮选项 */
-  highlightOnHover?: boolean
-  /** 是否禁用 */
-  disabled?: boolean
-  /** 输入框 id */
-  id?: string
-  /** 表单字段名 */
-  name?: string
-  /** 前置图标 */
-  icon?: InputMenuIcon
-  /** 前置头像 */
-  avatar?: Record<string, any>
-  /** 加载态 */
-  loading?: boolean
-  /** 加载图标 */
-  loadingIcon?: InputMenuIcon
-  /** 渲染为指定元素或组件（根容器） */
-  as?: string | Component
-  /** 主题插槽类名 */
-  ui?: InputMenuUi
-  class?: HTMLAttributes['class']
-}>(), {
-  items: () => [],
-  /* 显式 undefined：避免 Vue 对含 Boolean 的联合类型属性做 false 兜底 */
-  modelValue: undefined,
-  defaultValue: undefined,
-  open: undefined,
-  mode: 'combobox',
-  searchInput: true,
-  color: 'primary',
-  variant: 'outline',
-  size: 'md',
+export interface InputMenuEmits<
+  A extends ArrayOrNested<InputMenuItem>,
+  VK extends GetItemKeys<A> | undefined = undefined,
+  M extends boolean = false,
+  Mod extends Omit<ModelModifiers, 'lazy'> = Omit<ModelModifiers, 'lazy'>,
+  C extends boolean | object = false
+> extends Pick<ComboboxRootEmits, 'update:open'> {
+  'change': [event: Event]
+  'blur': [event: FocusEvent]
+  'focus': [event: FocusEvent]
+  'create': [item: string]
+  'clear': []
+  /** Event handler when highlighted element changes. */
+  'highlight': [payload: {
+    ref: HTMLElement
+    value: ApplyModifiers<GetModelValue<A, VK, M, ExcludeItem>, Mod> | IsClearUsed<M, C>
+  } | undefined]
+  'remove-tag': [item: ApplyModifiers<GetModelValue<A, VK, M, ExcludeItem>, Mod> | IsClearUsed<M, C>]
+  /** Event handler called when the value changes. */
+  'update:modelValue': [value: ApplyModifiers<GetModelValue<A, VK, M, ExcludeItem>, Mod> | IsClearUsed<M, C>]
+}
+
+type SlotProps<T extends InputMenuItem> = (props: { item: T, index: number, ui: InputMenu['ui'] }) => VNode[]
+
+export interface InputMenuSlots<
+  A extends ArrayOrNested<InputMenuItem> = ArrayOrNested<InputMenuItem>,
+  VK extends GetItemKeys<A> | undefined = undefined,
+  M extends boolean = false,
+  Mod extends Omit<ModelModifiers, 'lazy'> = Omit<ModelModifiers, 'lazy'>,
+  C extends boolean | object = false,
+  T extends NestedItem<A> = NestedItem<A>
+> {
+  'leading'?(props: { modelValue: ApplyModifiers<GetModelValue<A, VK, M, ExcludeItem>, Mod> | IsClearUsed<M, C>, open: boolean, ui: InputMenu['ui'] }): VNode[]
+  'trailing'?(props: { modelValue: ApplyModifiers<GetModelValue<A, VK, M, ExcludeItem>, Mod> | IsClearUsed<M, C>, open: boolean, ui: InputMenu['ui'] }): VNode[]
+  'empty'?(props: { searchTerm: string }): VNode[]
+  'item'?: SlotProps<T>
+  'item-leading'?: SlotProps<T>
+  'item-label'?(props: { item: T, index: number }): VNode[]
+  'item-description'?(props: { item: T, index: number }): VNode[]
+  'item-trailing'?: SlotProps<T>
+  'tags-item-text'?(props: { item: T, index: number }): VNode[]
+  'tags-item-delete'?: SlotProps<T>
+  'content-top'?: (props?: {}) => VNode[]
+  'content-bottom'?: (props?: {}) => VNode[]
+  'create-item-label'?(props: { item: string }): VNode[]
+}
+</script>
+
+<script setup lang="ts" generic="T extends ArrayOrNested<InputMenuItem>, VK extends GetItemKeys<T> | undefined = undefined, M extends boolean = false, Mod extends Omit<ModelModifiers, 'lazy'> = Omit<ModelModifiers, 'lazy'>, C extends boolean | object = false">
+import { computed, ref, useAttrs, useTemplateRef, toRef, onMounted, onScopeDispose, toRaw, nextTick, watch } from 'vue'
+import { TagsInputRoot, TagsInputItem, TagsInputItemText, TagsInputItemDelete, TagsInputInput } from 'reka-ui'
+import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
+import { Combobox, Autocomplete } from 'reka-ui/namespaced'
+import { defu } from 'defu'
+import { isEqual } from 'ohash/utils'
+import { reactivePick, reactiveOmit, createReusableTemplate } from '@vueuse/core'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { useFieldGroup, FieldGroupReset } from '../../lib/nuxt/composables/useFieldGroup'
+import { useComponentIcons } from '../../lib/nuxt/composables/useComponentIcons'
+import { useFormField } from '../../lib/nuxt/composables/useFormField'
+import { useFilter } from '../../lib/nuxt/composables/useFilter'
+import { useLocale } from '../../lib/nuxt/composables/useLocale'
+import { usePortal } from '../../lib/nuxt/composables/usePortal'
+import { compare, get, getDisplayValue, isArrayOfArray, looseToNumber } from '../../lib/nuxt/utils'
+import { getEstimateSize } from '../../lib/nuxt/utils/virtualizer'
+import { tv } from '../../lib/nuxt/utils/tv'
+import XIcon from './XIcon.vue'
+import XAvatar from './XAvatar.vue'
+import XButton from './XButton.vue'
+import XChip from './XChip.vue'
+
+defineOptions({ inheritAttrs: false })
+
+const _props = withDefaults(defineProps</* @vue-ignore */ InputMenuProps<T, VK, M, Mod, C>>(), {
   type: 'text',
-  required: false,
+  autofocusDelay: 0,
+  portal: true,
   labelKey: 'label',
   descriptionKey: 'description',
-  multiple: false,
-  highlight: false,
-  fixed: false,
-  createItem: false,
-  ignoreFilter: false,
-  autofocus: false,
-  autofocusDelay: 0,
-  openOnClick: true,
-  openOnFocus: false,
-  highlightOnHover: true,
-  disabled: false,
-  loading: false,
-  clear: false,
-  clearIcon: 'x',
-  deleteIcon: 'x',
-  arrow: false,
-  portal: true,
+  resetSearchTermOnBlur: true,
+  resetSearchTermOnSelect: true,
+  resetModelValueOnClear: true,
   virtualize: false,
-  trailingIcon: 'chevron-down',
-  selectedIcon: 'check',
-  loadingIcon: 'loader-circle',
+  mode: 'combobox'
 })
+const emits = defineEmits</* @vue-ignore */ InputMenuEmits<T, VK, M, Mod, C>>()
+const slots = defineSlots</* @vue-ignore */ InputMenuSlots<T, VK, M, Mod, C>>()
 
-defineOptions({ name: 'XInputMenu', inheritAttrs: false })
+const props = useComponentProps<InputMenuProps<T, VK, M, Mod, C>>('inputMenu', _props)
 
-const attrs = useAttrs()
-const slots = useSlots()
+const searchTerm = defineModel<string>('searchTerm', { default: '' })
 
-const emit = defineEmits<{
-  /** 值变化回调 */
-  change: [event: Event]
-  /** 输入框失焦回调 */
-  blur: [event: FocusEvent]
-  /** 输入框聚焦回调 */
-  focus: [event: FocusEvent]
-  /** 创建新选项时回调 */
-  create: [value: string]
-  /** 清空回调 */
-  clear: []
-  /** 删除标签回调（multiple 模式） */
-  'remove-tag': [value: unknown]
-  /** 高亮项变化回调 */
-  highlight: [payload: { ref: HTMLElement, value: unknown } | undefined]
-  /** 值变化回调 */
-  'update:modelValue': [value: string | number | boolean | null | Array<string | number | boolean> | undefined]
-  /** 打开状态变化回调 */
-  'update:open': [value: boolean]
-}>()
-
-/** 非受控值：未传 modelValue 时使用 defaultValue 并在内部维护 */
-const innerValue = ref<string | number | boolean | null | Array<string | number | boolean> | undefined>(props.defaultValue)
-const currentValue = computed(() => (props.modelValue !== undefined ? props.modelValue : innerValue.value))
-
-/** 打开状态与输入文本 */
-const innerOpen = ref(props.defaultOpen ?? false)
-const openModel = computed<boolean>({
-  get: () => (props.open !== undefined ? props.open : innerOpen.value),
-  set: (value: boolean) => {
-    if (props.open === undefined) innerOpen.value = value
-  },
-})
-const searchTerm = ref('')
-
-/** 输入文本：autocomplete 模式下输入即写入值 */
-function onSearchTermUpdate(value: string) {
-  searchTerm.value = value
-  if (isAutocomplete.value) updateValue(value)
-}
-
-const labelField = computed(() => props.labelKey || 'label')
-const descriptionField = computed(() => props.descriptionKey || 'description')
+const { t } = useLocale()
+const appConfig = useAppConfig() as InputMenu['AppConfig']
+const { filterGroups } = useFilter()
 
 const isAutocomplete = computed(() => props.mode === 'autocomplete')
-const isListbox = computed(() => props.mode === 'listbox')
-const RootComponent = computed(() => (isAutocomplete.value ? AutocompleteRoot : ComboboxRoot))
+// `multiple` doesn't apply in autocomplete mode.
+const isMultiple = computed(() => !!props.multiple && !isAutocomplete.value)
 
-/** 分组：平铺数组视为单组 */
-const groups = computed<InputMenuItemData[][]>(() => {
-  if (!props.items?.length) return []
-  return Array.isArray(props.items[0])
-    ? (props.items as InputMenuItemData[][])
-    : [props.items as InputMenuItemData[]]
+const rootPropsPick = reactivePick(props, 'as', 'modelValue', 'defaultValue', 'open', 'defaultOpen', 'required', 'multiple', 'resetSearchTermOnBlur', 'resetSearchTermOnSelect', 'resetModelValueOnClear', 'highlightOnHover', 'openOnClick', 'openOnFocus', 'by')
+const rootPropsOmitted = reactiveOmit(rootPropsPick, 'multiple', 'resetSearchTermOnSelect', 'resetModelValueOnClear', 'by')
+const rootProps = useForwardProps(computed(() => isAutocomplete.value ? rootPropsOmitted : rootPropsPick), emits)
+const Component = computed(() => isAutocomplete.value ? Autocomplete : Combobox)
+
+const attrs = useAttrs()
+
+// In multiple non-autocomplete mode `Root` is `as-child`: it renders no element and
+// merges its attributes onto `Anchor`, where the child's own `data-slot` wins the
+// merge. `Anchor` is then the effective root, so it reads the caller's `data-slot`
+// itself. In every other mode `Root` renders its own element (and receives the
+// caller's value through its own binding), so `Anchor` keeps its `base` label.
+const baseDataSlot = computed(() => isMultiple.value
+  ? ((attrs['data-slot'] as string | undefined) ?? 'base')
+  : 'base')
+const portalProps = usePortal(toRef(() => props.portal))
+const contentProps = toRef(() => defu(props.content, { side: 'bottom', sideOffset: 8, collisionPadding: 8, position: 'popper' }) as ComboboxContentProps)
+const arrowProps = toRef(() => defu(props.arrow, { rounded: true }) as ComboboxArrowProps)
+const clearProps = computed(() => typeof props.clear === 'object' ? props.clear : {} as Partial<Omit<ButtonProps, LinkPropsKeys>>)
+const virtualizerProps = toRef(() => {
+  if (!props.virtualize) return false
+
+  return defu(typeof props.virtualize === 'boolean' ? {} : props.virtualize, {
+    estimateSize: getEstimateSize(filteredItems.value, size.value ?? 'md', props.descriptionKey as string, !!slots['item-description'])
+  })
 })
-const flatItems = computed(() => groups.value.flatMap((group) => group))
 
-function isStructural(item: InputMenuItemData): boolean {
-  return !!item?.type && ['label', 'separator'].includes(item.type)
+const { emitFormBlur, emitFormFocus, emitFormChange, emitFormInput, size: formFieldSize, color: formFieldColor, id, name, highlight: formFieldHighlight, disabled: formFieldDisabled, ariaAttrs } = useFormField<InputProps>(_props)
+
+const { orientation, size: fieldGroupSize } = useFieldGroup<InputProps>(_props)
+// Pass only the props the composable reads: `defu(props, ...)` copied every prop
+// through the `useComponentProps` proxy and subscribed this computed (and `ui`,
+// which reads `isLeading`/`isTrailing`) to all of them, re-running the whole tv
+// pipeline on unrelated prop changes.
+const { isLeading, isTrailing, leadingIconName, trailingIconName } = useComponentIcons(computed(() => ({
+  icon: props.icon,
+  leading: props.leading,
+  leadingIcon: props.leadingIcon,
+  trailing: props.trailing,
+  trailingIcon: props.trailingIcon ?? appConfig.ui.icons.chevronDown,
+  loading: props.loading,
+  loadingIcon: props.loadingIcon
+})))
+
+// eslint-disable-next-line vue/no-dupe-keys
+const color = computed(() => formFieldColor.value ?? props.color)
+// eslint-disable-next-line vue/no-dupe-keys
+const highlight = computed(() => formFieldHighlight.value ?? props.highlight)
+// eslint-disable-next-line vue/no-dupe-keys
+const size = computed(() => fieldGroupSize.value ?? formFieldSize.value ?? props.size)
+
+const disabled = computed(() => formFieldDisabled.value ?? props.disabled)
+
+const [DefineCreateItemTemplate, ReuseCreateItemTemplate] = createReusableTemplate()
+const [DefineItemTemplate, ReuseItemTemplate] = createReusableTemplate<{ item: InputMenuItem, index: number }>({
+  props: {
+    item: {
+      type: [Object, String, Number, Boolean],
+      required: true
+    },
+    index: {
+      type: Number,
+      required: false
+    }
+  }
+})
+
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.inputMenu || {}) })({
+  color: color.value,
+  variant: props.variant,
+  size: size.value,
+  loading: props.loading,
+  highlight: highlight.value,
+  fixed: props.fixed,
+  leading: isLeading.value || !!props.avatar || !!slots.leading,
+  trailing: isTrailing.value || !!slots.trailing,
+  multiple: isMultiple.value,
+  fieldGroup: orientation.value,
+  virtualize: !!props.virtualize
+}))
+
+// eslint-disable-next-line vue/no-dupe-keys
+const items = computed(() => groups.value.flatMap(group => group) as T[])
+
+function displayValue(value: GetItemValue<T, VK, ExcludeItem>): string {
+  return getDisplayValue<T[], GetItemValue<T, VK, ExcludeItem>>(items.value, value, {
+    labelKey: props.labelKey,
+    valueKey: props.valueKey,
+    by: props.by
+  }) ?? ''
 }
 
-/** 过滤：ignoreFilter 或空关键字时保持原样 */
+const groups = computed<InputMenuItem[][]>(() =>
+  props.items?.length
+    ? isArrayOfArray(props.items)
+      ? props.items
+      : [props.items]
+    : []
+)
+
 const filteredGroups = computed(() => {
-  if (props.ignoreFilter || !searchTerm.value) return groups.value
-
-  const fields = Array.isArray(props.filterFields) ? props.filterFields : [labelField.value]
-  return filterGroups(groups.value, searchTerm.value, { fields, isStructural })
-})
-const filteredItems = computed(() => filteredGroups.value.flatMap((group) => group))
-
-function itemValue(item: InputMenuItemData): any {
-  return props.valueKey ? getField(item, props.valueKey) : item
-}
-
-/** 创建项：按 createItem 配置决定是否出现 */
-const createItemValue = computed(() => {
-  if (!props.createItem || !searchTerm.value) return false
-
-  const candidate = props.valueKey ? { [props.valueKey]: searchTerm.value } : searchTerm.value
-  const exists = filteredItems.value.some((item) => compare(item, candidate, props.valueKey))
-
-  if (props.createItem === 'always' || (typeof props.createItem === 'object' && props.createItem.when === 'always')) {
-    return !exists
+  if (props.ignoreFilter || !searchTerm.value) {
+    return groups.value
   }
-  return filteredItems.value.length === 0
-})
-const createItemPosition = computed(() =>
-  typeof props.createItem === 'object' ? (props.createItem.position ?? 'bottom') : 'bottom',
-)
 
-const selectedValues = computed<unknown[]>(() => {
-  if (props.multiple) return Array.isArray(currentValue.value) ? currentValue.value : []
-  return isEmpty(currentValue.value) ? [] : [currentValue.value]
-})
+  const fields = Array.isArray(props.filterFields) ? props.filterFields : [props.labelKey] as string[]
 
-/** 输入框显示文本：多选时逗号拼接 */
-const displayValue = computed(() => {
-  if (isAutocomplete.value) return String(currentValue.value ?? '')
-  if (props.multiple && Array.isArray(currentValue.value)) {
-    return currentValue.value
-      .map((value) => getDisplayValue(flatItems.value, value, { labelKey: labelField.value, valueKey: props.valueKey }))
-      .filter((value): value is string => value != null && value !== '')
-      .join(', ')
+  return filterGroups(groups.value, searchTerm.value, {
+    fields,
+    isStructural: (item: InputMenuItem) => isInputItem(item) && !!item.type && ['label', 'separator'].includes(item.type)
+  })
+})
+const filteredItems = computed(() => filteredGroups.value.flatMap(group => group))
+
+// eslint-disable-next-line vue/no-dupe-keys
+const createItem = computed(() => {
+  if (!props.createItem || !searchTerm.value) {
+    return false
   }
-  return getDisplayValue(flatItems.value, currentValue.value, { labelKey: labelField.value, valueKey: props.valueKey }) ?? ''
+
+  const newItem = props.valueKey ? { [props.valueKey]: searchTerm.value } as NestedItem<T> : searchTerm.value
+
+  if ((typeof props.createItem === 'object' && props.createItem.when === 'always') || props.createItem === 'always') {
+    return !filteredItems.value.find(item => compare(item, newItem, (props.by ?? props.valueKey) as string | undefined))
+  }
+
+  return !filteredItems.value.length
+})
+const createItemPosition = computed(() => typeof props.createItem === 'object' ? props.createItem.position : 'bottom')
+
+const inputRef = useTemplateRef('inputRef')
+
+function autoFocus() {
+  if (props.autofocus) {
+    inputRef.value?.$el?.focus()
+  }
+}
+
+let autofocusTimeoutId: ReturnType<typeof setTimeout> | undefined
+
+onMounted(() => {
+  nextTick(() => {
+    if (isAutocomplete.value) {
+      searchTerm.value = String(props.modelValue ?? props.defaultValue ?? '')
+    } else {
+      searchTerm.value = ''
+    }
+  })
+
+  autofocusTimeoutId = setTimeout(() => {
+    autoFocus()
+  }, props.autofocusDelay)
 })
 
-function displayValueFor(value: unknown): string {
-  if (value == null) return ''
-  return getDisplayValue(flatItems.value, value, { labelKey: labelField.value, valueKey: props.valueKey }) ?? ''
-}
+onScopeDispose(() => clearTimeout(autofocusTimeoutId))
 
-/** 清空按钮：有选中项且未禁用时展示 */
-const showClear = computed(() => !!props.clear && !props.disabled && selectedValues.value.length > 0)
-
-/** 菜单内搜索框：listbox 模式按 searchInput 渲染 */
-const showSearchInput = computed(() => isListbox.value && props.searchInput !== false)
-const searchInputPlaceholder = computed(() =>
-  typeof props.searchInput === 'object' ? (props.searchInput.placeholder ?? '输入关键字搜索') : '输入关键字搜索',
-)
-
-const showLeading = computed(() => !!props.icon || !!props.avatar || !!slots.leading)
-
-const virtualizerProps = computed(() => (typeof props.virtualize === 'object' ? props.virtualize : {}))
-
-function updateValue(value: string | number | boolean | null | Array<string | number | boolean> | undefined) {
-  if (toRaw(currentValue.value) === value) return
-
-  let next = value
-  if (typeof next === 'string') next = next.trim()
-  next = looseToNumber(next) as typeof value
-
-  if (props.modelValue === undefined) innerValue.value = next
-  emit('update:modelValue', next)
-  emit('change', new Event('change'))
-}
-
-/** 根组件值变化：autocomplete 写入输入文本，其余写入选中值 */
-function onUpdateModel(value: any) {
+watch(() => props.modelValue, (newValue) => {
   if (isAutocomplete.value) {
-    searchTerm.value = String(value ?? '')
-    if (props.modelValue === undefined) innerValue.value = searchTerm.value
-    emit('update:modelValue', searchTerm.value)
-    emit('change', new Event('change'))
+    searchTerm.value = String(newValue ?? '')
+  }
+})
+
+function onUpdate(value: any) {
+  if (toRaw(props.modelValue) === value) {
     return
   }
-  updateValue(value)
+
+  if (props.modelModifiers?.trim && (typeof value === 'string' || value === null || value === undefined)) {
+    value = value?.trim() ?? null
+  }
+
+  if (props.modelModifiers?.number) {
+    value = looseToNumber(value)
+  }
+
+  if (props.modelModifiers?.nullable) {
+    value ??= null
+  }
+
+  if (props.modelModifiers?.optional && !props.modelModifiers?.nullable && value !== null) {
+    value ??= undefined
+  }
+
+  // @ts-expect-error - 'target' does not exist in type 'EventInit'
+  const event = new Event('change', { target: { value } })
+  emits('change', event)
+  emitFormChange()
+  emitFormInput()
+
+  if (isAutocomplete.value) {
+    searchTerm.value = String(value ?? '')
+  } else if (props.resetSearchTermOnSelect) {
+    searchTerm.value = ''
+  }
 }
 
-function onOpenChange(value: boolean) {
-  openModel.value = value
-  emit('update:open', value)
-  if (value) emit('focus', new FocusEvent('focus'))
-  else emit('blur', new FocusEvent('blur'))
-  if (!value && !isAutocomplete.value) searchTerm.value = ''
+function onInputUpdate(value: string) {
+  if (!isAutocomplete.value) {
+    searchTerm.value = value
+  }
 }
 
 function onBlur(event: FocusEvent) {
-  emit('blur', event)
+  emits('blur', event)
+  emitFormBlur()
 }
 
 function onFocus(event: FocusEvent) {
-  emit('focus', event)
+  emits('focus', event)
+  emitFormFocus()
+}
+
+const isOpen = ref(false)
+let timeoutId: ReturnType<typeof setTimeout> | undefined
+
+onScopeDispose(() => clearTimeout(timeoutId))
+
+function onUpdateOpen(value: boolean) {
+  isOpen.value = value
+
+  if (!value) {
+    const event = new FocusEvent('blur')
+
+    emits('blur', event)
+    emitFormBlur()
+
+    // Since we use `displayValue` prop inside ComboboxInput we should reset searchTerm manually
+    // https://reka-ui.com/docs/components/combobox#api-reference
+    if (!isAutocomplete.value && props.resetSearchTermOnBlur) {
+      const STATE_ANIMATION_DELAY_MS = 100
+
+      timeoutId = setTimeout(() => {
+        searchTerm.value = ''
+      }, STATE_ANIMATION_DELAY_MS)
+    }
+  } else {
+    const event = new FocusEvent('focus')
+    emits('focus', event)
+    emitFormFocus()
+    clearTimeout(timeoutId)
+  }
+}
+
+function onRemoveTag(event: any, modelValue: GetModelValue<T, VK, true, ExcludeItem>) {
+  if (props.multiple) {
+    const filteredValue = modelValue.filter(value => !isEqual(value, event))
+    emits('update:modelValue', filteredValue as ApplyModifiers<GetModelValue<T, VK, M, ExcludeItem>, Mod>)
+    emits('remove-tag', event)
+    onUpdate(filteredValue)
+  }
+}
+
+function onCreate(e: Event) {
+  e.preventDefault()
+  e.stopPropagation()
+
+  emits('create', searchTerm.value)
+}
+
+function onSelect(e: Event, item: InputMenuItem) {
+  if (!isInputItem(item)) {
+    return
+  }
+
+  if (item.disabled) {
+    e.preventDefault()
+    return
+  }
+
+  item.onSelect?.(e)
+}
+
+function isInputItem(item: InputMenuItem): item is Exclude<InputMenuItem, InputMenuValue> {
+  return typeof item === 'object' && item !== null
+}
+
+function isModelValueEmpty(modelValue: ApplyModifiers<GetModelValue<T, VK, M, ExcludeItem>, Mod>): boolean {
+  if (props.multiple && Array.isArray(modelValue)) {
+    return modelValue.length === 0
+  }
+  return modelValue === undefined || modelValue === null || modelValue === ''
 }
 
 function onClear() {
-  if (props.disabled) return
-  searchTerm.value = ''
-  updateValue(props.multiple ? [] : undefined)
-  emit('clear')
-}
-
-/** 删除标签：从多选值中移除 */
-function onRemoveTag(value: unknown) {
-  if (!props.multiple) return
-  const next = selectedValues.value.filter((item) => !compare(item, value, props.valueKey))
-  updateValue(next as any)
-  emit('remove-tag', value)
-}
-
-function onCreate(event: Event) {
-  event.preventDefault()
-  event.stopPropagation()
-  emit('create', searchTerm.value)
-}
-
-function onSelect(event: Event, item: InputMenuItemData) {
-  if (!item || typeof item !== 'object') return
-  if (item.disabled) {
-    event.preventDefault()
+  if (disabled.value) {
     return
   }
-  item.onSelect?.(event)
+
+  emits('clear')
 }
 
-function onHighlight(payload: { ref: HTMLElement, value: unknown } | undefined) {
-  emit('highlight', payload)
-}
-
-const inputRef = ref<HTMLInputElement>()
-
-function autoFocus() {
-  if (props.autofocus) inputRef.value?.focus?.()
-}
-
-let autofocusTimer: ReturnType<typeof setTimeout> | undefined
-
-onMounted(() => {
-  autofocusTimer = setTimeout(autoFocus, props.autofocusDelay)
-})
-
-onScopeDispose(() => clearTimeout(autofocusTimer))
-
-/** 尺寸映射：base / item / label / empty / 图标 / 左右内边距 */
-const sizeClasses: Record<InputMenuSize, { base: string, leading: string, trailing: string, item: string, label: string, empty: string, icon: string }> = {
-  xs: { base: 'h-6 text-sm', leading: 'ps-2', trailing: 'pe-2', item: 'p-1 text-xs gap-1', label: 'p-1 text-[10px] gap-1', empty: 'p-2 text-xs', icon: 'size-4' },
-  sm: { base: 'h-7 text-sm', leading: 'ps-2.5', trailing: 'pe-2.5', item: 'p-1.5 text-xs gap-1.5', label: 'p-1.5 text-[10px] gap-1.5', empty: 'p-2.5 text-xs', icon: 'size-4' },
-  md: { base: 'h-8 text-base', leading: 'ps-3', trailing: 'pe-3', item: 'p-1.5 text-sm gap-1.5', label: 'p-1.5 text-xs gap-1.5', empty: 'p-2.5 text-sm', icon: 'size-5' },
-  lg: { base: 'h-9 text-base', leading: 'ps-3', trailing: 'pe-3', item: 'p-2 text-sm gap-2', label: 'p-2 text-xs gap-2', empty: 'p-3 text-sm', icon: 'size-5' },
-  xl: { base: 'h-11 text-base', leading: 'ps-3.5', trailing: 'pe-3.5', item: 'p-2 text-base gap-2', label: 'p-2 text-sm gap-2', empty: 'p-3 text-base', icon: 'size-6' },
-}
-
-/** 变体映射 */
-const variantClasses: Record<InputMenuVariant, string> = {
-  outline: 'bg-transparent ring-1 ring-inset ring-input',
-  soft: 'bg-muted/50 hover:bg-muted',
-  subtle: 'bg-muted ring-1 ring-inset ring-input',
-  ghost: 'bg-transparent hover:bg-muted',
-  none: 'bg-transparent',
-}
-
-/** 颜色映射：聚焦描边 */
-const colorClasses: Record<InputMenuColor, string> = {
-  primary: 'focus-within:ring-2 focus-within:ring-primary/50',
-  secondary: 'focus-within:ring-2 focus-within:ring-secondary',
-  neutral: 'focus-within:ring-2 focus-within:ring-foreground',
-  success: 'focus-within:ring-2 focus-within:ring-success/50',
-  info: 'focus-within:ring-2 focus-within:ring-info/50',
-  warning: 'focus-within:ring-2 focus-within:ring-warning/50',
-  error: 'focus-within:ring-2 focus-within:ring-error/50',
-}
-
-/** 高亮描边颜色 */
-const highlightClasses: Record<InputMenuColor, string> = {
-  primary: 'ring-primary',
-  secondary: 'ring-secondary',
-  neutral: 'ring-foreground/30',
-  success: 'ring-success',
-  info: 'ring-info',
-  warning: 'ring-warning',
-  error: 'ring-error',
-}
-
-const currentSize = computed(() => sizeClasses[props.size])
-
-/** 根组件属性：autocomplete 以输入文本为值，其余以选中值为值 */
-const rootProps = computed(() => {
-  if (isAutocomplete.value) {
-    return {
-      modelValue: searchTerm.value,
-      open: openModel.value,
-      disabled: props.disabled,
-      name: props.name,
-      required: props.required,
-      openOnClick: props.openOnClick,
-      openOnFocus: props.openOnFocus,
-      highlightOnHover: props.highlightOnHover,
-      ignoreFilter: true,
-    }
+function onTagsInputKeydown(event: KeyboardEvent) {
+  // `TagsInputInput` adds the search term as a tag on `Enter`, but `TagsInputRoot` is driven by
+  // the combobox so the tag never reaches `modelValue` and renders a chip that isn't selected.
+  // It bails out when the event is already prevented, which is also what the combobox does
+  // when an item is highlighted.
+  if (event.isComposing || !searchTerm.value) {
+    return
   }
-  return {
-    modelValue: currentValue.value,
-    open: openModel.value,
-    disabled: props.disabled,
-    multiple: props.multiple,
-    name: props.name,
-    required: props.required,
-    openOnClick: props.openOnClick,
-    openOnFocus: props.openOnFocus,
-    highlightOnHover: props.highlightOnHover,
-    ignoreFilter: true,
-  }
-})
 
-function isIconName(icon: InputMenuIcon | undefined): icon is IconName {
-  return typeof icon === 'string'
+  event.preventDefault()
 }
 
-/* item 模板复用：虚拟滚动与普通列表共用同一份渲染 */
-const [DefineItemTemplate, ReuseItemTemplate] = createReusableTemplate<{ item: InputMenuItemData, index: number }>()
+const viewportRef = useTemplateRef('viewportRef')
+
+const comboboxRootRef = useTemplateRef('comboboxRootRef')
+
+// reka-ui only re-highlights the first item when the list goes from empty to non-empty.
+// With `create-item`, the create item is always registered so the count never drops to 0,
+// leaving the highlight stale when async `items` load. Re-highlight when items change while open.
+// Scoped to `create-item` only, otherwise this fires on infinite-scroll appends too and
+// scrolls the viewport back to the top.
+// Wait an extra tick so freshly mounted items are registered in reka-ui's collection before highlighting.
+watch(() => props.items, async () => {
+  if (!isOpen.value || !props.createItem) {
+    return
+  }
+
+  await nextTick()
+  comboboxRootRef.value?.highlightFirstItem?.()
+}, { flush: 'post' })
+
+defineExpose({
+  inputRef: toRef(() => inputRef.value?.$el as HTMLInputElement),
+  viewportRef: toRef(() => viewportRef.value)
+})
 </script>
 
+<!-- eslint-disable vue/no-template-shadow -->
 <template>
+  <DefineCreateItemTemplate>
+    <Component.Item
+      data-slot="item"
+      :class="ui.item({ class: props.ui?.item })"
+      :value="searchTerm"
+      @select="onCreate"
+    >
+      <span data-slot="itemLabel" :class="ui.itemLabel({ class: props.ui?.itemLabel })">
+        <slot name="create-item-label" :item="searchTerm">
+          {{ t('inputMenu.create', { label: searchTerm }) }}
+        </slot>
+      </span>
+    </Component.Item>
+  </DefineCreateItemTemplate>
+
   <DefineItemTemplate v-slot="{ item, index }">
-    <slot name="item" :item="item" :index="index" :ui="ui">
-      <ComboboxItem
-        :value="itemValue(item)"
-        :disabled="item?.disabled"
-        :text-value="String(getField(item, labelField) ?? '')"
-        data-slot="item"
-        :class="cn(
-          'relative flex w-full cursor-default items-start rounded-md outline-none select-none',
-          'data-[disabled]:pointer-events-none data-[disabled]:opacity-75',
-          'data-[highlighted]:bg-accent data-[highlighted]:text-accent-foreground',
-          'aria-selected:bg-accent aria-selected:text-accent-foreground',
-          currentSize.item,
-          item.class,
-          ui?.item,
-          item.ui?.item,
-        )"
-        @select="onSelect($event, item)"
-      >
-        <slot name="item-leading" :item="item" :index="index" :ui="ui">
-          <XIcon
-            v-if="isIconName(item?.icon) && item.icon"
-            :name="item.icon"
-            data-slot="itemLeadingIcon"
-            :class="cn('shrink-0 text-muted-foreground', currentSize.icon, ui?.itemLeadingIcon, item.ui?.itemLeadingIcon)"
-            aria-hidden="true"
-          />
-          <component
-            v-else-if="item?.icon"
-            :is="item.icon"
-            data-slot="itemLeadingIcon"
-            :class="cn(currentSize.icon, ui?.itemLeadingIcon, item.ui?.itemLeadingIcon)"
-            aria-hidden="true"
-          />
-          <XAvatar
-            v-else-if="item?.avatar"
-            v-bind="item.avatar"
-            data-slot="itemLeadingAvatar"
-            :class="cn('shrink-0', ui?.itemLeadingAvatar, item.ui?.itemLeadingAvatar)"
+    <Component.Label v-if="isInputItem(item) && item.type === 'label'" data-slot="label" :class="ui.label({ class: [props.ui?.label, item.ui?.label, item.class] })">
+      {{ get(item, props.labelKey as string) }}
+    </Component.Label>
+
+    <Component.Separator v-else-if="isInputItem(item) && item.type === 'separator'" data-slot="separator" :class="ui.separator({ class: [props.ui?.separator, item.ui?.separator, item.class] })" />
+
+    <Component.Item
+      v-else
+      data-slot="item"
+      :class="ui.item({ class: [props.ui?.item, isInputItem(item) && item.ui?.item, isInputItem(item) && item.class] })"
+      :disabled="isInputItem(item) && item.disabled"
+      :value="props.valueKey && isInputItem(item) ? get(item, props.valueKey as string) : item"
+      @select="onSelect($event, item)"
+    >
+      <slot name="item" :item="(item as NestedItem<T>)" :index="index" :ui="ui">
+        <slot name="item-leading" :item="(item as NestedItem<T>)" :index="index" :ui="ui">
+          <XIcon v-if="isInputItem(item) && item.icon" :name="item.icon" data-slot="itemLeadingIcon" :class="ui.itemLeadingIcon({ class: [props.ui?.itemLeadingIcon, item.ui?.itemLeadingIcon] })" />
+          <XAvatar v-else-if="isInputItem(item) && item.avatar" :size="((item.ui?.itemLeadingAvatarSize || props.ui?.itemLeadingAvatarSize || ui.itemLeadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" data-slot="itemLeadingAvatar" :class="ui.itemLeadingAvatar({ class: [props.ui?.itemLeadingAvatar, item.ui?.itemLeadingAvatar] })" />
+          <XChip
+            v-else-if="isInputItem(item) && item.chip"
+            :size="((item.ui?.itemLeadingChipSize || props.ui?.itemLeadingChipSize || ui.itemLeadingChipSize()) as ChipProps['size'])"
+            inset
+            standalone
+            v-bind="item.chip"
+            data-slot="itemLeadingChip"
+            :class="ui.itemLeadingChip({ class: [props.ui?.itemLeadingChip, item.ui?.itemLeadingChip] })"
           />
         </slot>
 
-        <span data-slot="itemWrapper" :class="cn('flex min-w-0 flex-1 flex-col', ui?.itemWrapper, item.ui?.itemWrapper)">
-          <span data-slot="itemLabel" :class="cn('truncate', ui?.itemLabel, item.ui?.itemLabel)">
-            <slot name="item-label" :item="item" :index="index">{{ getField(item, labelField) ?? item }}</slot>
+        <span data-slot="itemWrapper" :class="ui.itemWrapper({ class: [props.ui?.itemWrapper, isInputItem(item) && item.ui?.itemWrapper] })">
+          <span data-slot="itemLabel" :class="ui.itemLabel({ class: [props.ui?.itemLabel, isInputItem(item) && item.ui?.itemLabel] })">
+            <slot name="item-label" :item="(item as NestedItem<T>)" :index="index">
+              {{ isInputItem(item) ? get(item, props.labelKey as string) : item }}
+            </slot>
           </span>
-          <span
-            v-if="getField(item, descriptionField) || slots['item-description']"
-            data-slot="itemDescription"
-            :class="cn('truncate text-muted-foreground', ui?.itemDescription, item.ui?.itemDescription)"
-          >
-            <slot name="item-description" :item="item" :index="index">{{ getField(item, descriptionField) }}</slot>
+
+          <span v-if="isInputItem(item) && (get(item, props.descriptionKey as string) || !!slots['item-description'])" data-slot="itemDescription" :class="ui.itemDescription({ class: [props.ui?.itemDescription, isInputItem(item) && item.ui?.itemDescription] })">
+            <slot name="item-description" :item="(item as NestedItem<T>)" :index="index">
+              {{ get(item, props.descriptionKey as string) }}
+            </slot>
           </span>
         </span>
 
-        <span data-slot="itemTrailing" :class="cn('ms-auto inline-flex items-center gap-1.5', ui?.itemTrailing, item.ui?.itemTrailing)">
-          <slot name="item-trailing" :item="item" :index="index" :ui="ui" />
-          <ComboboxItemIndicator v-if="!isAutocomplete" as-child>
-            <XIcon
-              v-if="isIconName(selectedIcon)"
-              :name="selectedIcon"
-              data-slot="itemTrailingIcon"
-              :class="cn('shrink-0', currentSize.icon, ui?.itemTrailingIcon, item.ui?.itemTrailingIcon)"
-              aria-hidden="true"
-            />
-            <component
-              :is="selectedIcon"
-              v-else
-              data-slot="itemTrailingIcon"
-              :class="cn(currentSize.icon, ui?.itemTrailingIcon, item.ui?.itemTrailingIcon)"
-              aria-hidden="true"
-            />
-          </ComboboxItemIndicator>
+        <span data-slot="itemTrailing" :class="ui.itemTrailing({ class: [props.ui?.itemTrailing, isInputItem(item) && item.ui?.itemTrailing] })">
+          <slot name="item-trailing" :item="(item as NestedItem<T>)" :index="index" :ui="ui" />
+
+          <Component.ItemIndicator v-if="!isAutocomplete" as-child>
+            <XIcon :name="props.selectedIcon || appConfig.ui.icons.check" data-slot="itemTrailingIcon" :class="ui.itemTrailingIcon({ class: [props.ui?.itemTrailingIcon, isInputItem(item) && item.ui?.itemTrailingIcon] })" />
+          </Component.ItemIndicator>
         </span>
-      </ComboboxItem>
-    </slot>
+      </slot>
+    </Component.Item>
   </DefineItemTemplate>
 
-  <component
-    :is="RootComponent"
+  <Component.Root
+    ref="comboboxRootRef"
+    v-slot="{ modelValue, open }"
     v-bind="rootProps"
-    @update:model-value="onUpdateModel"
-    @update:open="onOpenChange"
-    @highlight="onHighlight"
+    :name="name"
+    :disabled="disabled"
+    :data-slot="($attrs['data-slot'] as string | undefined) ?? 'root'"
+    :class="ui.root({ class: [props.ui?.root, props.class] })"
+    :as-child="isMultiple"
+    ignore-filter
+    @update:model-value="onUpdate"
+    @update:open="onUpdateOpen"
   >
-    <ComboboxAnchor :as-child="!multiple" :class="cn('relative flex w-full items-center rounded-md px-0', ui?.root)">
+    <Component.Anchor :as-child="!isMultiple" :data-slot="baseDataSlot" :class="ui.base({ class: props.ui?.base })">
       <TagsInputRoot
-        v-if="multiple"
+        v-if="isMultiple"
         v-slot="{ modelValue: tags }"
-        :model-value="(selectedValues as string[])"
+        :model-value="(modelValue as string[])"
         :disabled="disabled"
-        :required="required"
+        :required="props.required"
         delimiter=""
         as-child
         @blur="onBlur"
         @focus="onFocus"
-        @remove-tag="onRemoveTag($event)"
+        @remove-tag="onRemoveTag($event, modelValue as GetModelValue<T, VK, true, ExcludeItem>)"
       >
-        <Primitive
-          :as="as ?? 'span'"
-          data-slot="root"
-          :class="cn(
-            'flex w-full min-h-0 cursor-text flex-wrap items-center gap-1 rounded-md px-2 py-1',
-            'ring-1 ring-inset ring-input transition-[box-shadow,color]',
-            colorClasses[color],
-            highlight && cn('ring-2', highlightClasses[color]),
-            variantClasses[variant],
-            ui?.root,
-            props.class,
-          )"
-        >
-          <TagsInputItem
-            v-for="(item, index) in tags"
-            :key="index"
-            :value="item"
-            data-slot="tagsItem"
-            :class="cn('inline-flex items-center gap-1 rounded-sm bg-elevated px-1.5 py-0.5 text-xs font-medium text-foreground ring-1 ring-inset ring-border', ui?.tagsItem)"
-          >
-            <TagsInputItemText data-slot="tagsItemText" :class="cn('truncate', ui?.tagsItemText)">
-              <slot name="tags-item-text" :item="item" :index="index">{{ displayValueFor(item) }}</slot>
-            </TagsInputItemText>
-            <TagsInputItemDelete
-              data-slot="tagsItemDelete"
-              :disabled="disabled"
-              :class="cn('inline-flex items-center rounded-xs text-muted-foreground hover:text-foreground disabled:pointer-events-none', ui?.tagsItemDelete)"
-            >
-              <slot name="tags-item-delete" :item="item" :index="index" :ui="ui">
-                <XIcon
-                  v-if="isIconName(deleteIcon)"
-                  :name="deleteIcon"
-                  data-slot="tagsItemDeleteIcon"
-                  :class="cn('shrink-0', ui?.tagsItemDeleteIcon)"
-                  aria-hidden="true"
-                />
-                <component :is="deleteIcon" v-else data-slot="tagsItemDeleteIcon" :class="cn(ui?.tagsItemDeleteIcon)" aria-hidden="true" />
-              </slot>
-            </TagsInputItemDelete>
-          </TagsInputItem>
+        <TagsInputItem v-for="(item, index) in tags" :key="index" :value="item" data-slot="tagsItem" :class="ui.tagsItem({ class: [props.ui?.tagsItem, isInputItem(item) && item.ui?.tagsItem] })">
+          <TagsInputItemText data-slot="tagsItemText" :class="ui.tagsItemText({ class: [props.ui?.tagsItemText, isInputItem(item) && item.ui?.tagsItemText] })">
+            <slot name="tags-item-text" :item="(item as NestedItem<T>)" :index="index">
+              {{ displayValue(item as GetItemValue<T, VK, ExcludeItem>) }}
+            </slot>
+          </TagsInputItemText>
 
-          <ComboboxInput
-            :model-value="searchTerm"
-            :display-value="() => searchTerm"
+          <TagsInputItemDelete data-slot="tagsItemDelete" :class="ui.tagsItemDelete({ class: [props.ui?.tagsItemDelete, isInputItem(item) && item.ui?.tagsItemDelete] })" :disabled="disabled">
+            <slot name="tags-item-delete" :item="(item as NestedItem<T>)" :index="index" :ui="ui">
+              <XIcon :name="props.deleteIcon || appConfig.ui.icons.close" data-slot="tagsItemDeleteIcon" :class="ui.tagsItemDeleteIcon({ class: [props.ui?.tagsItemDeleteIcon, isInputItem(item) && item.ui?.tagsItemDeleteIcon] })" />
+            </slot>
+          </TagsInputItemDelete>
+        </TagsInputItem>
+
+        <Component.Input v-model="searchTerm" as-child>
+          <TagsInputInput
+            :id="id"
+            ref="inputRef"
+            v-bind="{ ...$attrs, ...ariaAttrs }"
+            :placeholder="props.placeholder"
             data-slot="tagsInput"
-            :class="cn('min-w-12 flex-1 border-0 bg-transparent text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed', ui?.base, ui?.tagsInput)"
-            @update:model-value="onSearchTermUpdate"
+            :class="ui.tagsInput({ class: props.ui?.tagsInput })"
+            @change.stop
+            @keydown.enter="onTagsInputKeydown"
           />
-        </Primitive>
+        </Component.Input>
       </TagsInputRoot>
 
-      <Primitive
+      <Component.Input
         v-else
-        :as="as ?? 'span'"
-        data-slot="root"
-        :class="cn(
-          'relative flex w-full items-center rounded-md',
-          'ring-1 ring-inset ring-input transition-[box-shadow,color]',
-          'disabled:cursor-not-allowed disabled:opacity-75',
-          colorClasses[color],
-          highlight && cn('ring-2', highlightClasses[color]),
-          variantClasses[variant],
-          ui?.root,
-          props.class,
-        )"
-      >
-        <span
-          v-if="showLeading"
-          data-slot="leading"
-          :class="cn('absolute inset-y-0 start-0 flex items-center', currentSize.leading, ui?.leading)"
-        >
-          <slot name="leading" :model-value="currentValue" :open="openModel" :ui="ui">
-            <XIcon
-              v-if="isIconName(icon) && icon"
-              :name="icon"
-              data-slot="leadingIcon"
-              :class="cn('shrink-0 text-muted-foreground', currentSize.icon, ui?.leadingIcon)"
-              aria-hidden="true"
-            />
-            <component
-              :is="icon"
-              v-else-if="icon"
-              data-slot="leadingIcon"
-              :class="cn(currentSize.icon, ui?.leadingIcon)"
-              aria-hidden="true"
-            />
-            <XAvatar v-else-if="avatar" v-bind="avatar" data-slot="leadingAvatar" :class="cn('shrink-0', ui?.leadingAvatar)" />
-          </slot>
-        </span>
+        :id="id"
+        ref="inputRef"
+        v-bind="{ ...(!isAutocomplete ? { displayValue } : {}), ...$attrs, ...ariaAttrs }"
+        data-slot="base"
+        :type="props.type"
+        :placeholder="props.placeholder"
+        :required="props.required"
+        @blur="onBlur"
+        @focus="onFocus"
+        @change.stop
+        @update:model-value="onInputUpdate"
+      />
 
-        <ComboboxInput
-          :id="id"
-          ref="inputRef"
-          v-bind="attrs"
-          :display-value="() => (isAutocomplete || isListbox ? '' : displayValue ?? '')"
-          :type="type"
-          :placeholder="placeholder"
-          :required="required"
-          :readonly="isListbox"
-          :disabled="disabled"
-          :class="cn(
-            'w-full border-0 bg-transparent outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed',
-            'px-3',
-            showLeading && currentSize.leading,
-            (showClear || trailingIcon || loading || slots.trailing) && currentSize.trailing,
-            currentSize.base,
-            ui?.base,
-          )"
-          @blur="onBlur"
-          @focus="onFocus"
-          @change.stop
-          @update:model-value="onSearchTermUpdate"
-        />
+      <span v-if="isLeading || !!props.avatar || !!slots.leading" data-slot="leading" :class="ui.leading({ class: props.ui?.leading })">
+        <slot name="leading" :model-value="(modelValue as ApplyModifiers<GetModelValue<T, VK, M, ExcludeItem>, Mod>)" :open="open" :ui="ui">
+          <XIcon v-if="isLeading && leadingIconName" :name="leadingIconName" data-slot="leadingIcon" :class="ui.leadingIcon({ class: props.ui?.leadingIcon })" />
+          <XAvatar v-else-if="!!props.avatar" :size="((props.ui?.itemLeadingAvatarSize || ui.itemLeadingAvatarSize()) as AvatarProps['size'])" v-bind="props.avatar" data-slot="itemLeadingAvatar" :class="ui.itemLeadingAvatar({ class: props.ui?.itemLeadingAvatar })" />
+        </slot>
+      </span>
 
-        <span
-          v-if="showClear || slots.trailing || trailingIcon || loading"
-          data-slot="trailing"
-          :class="cn('absolute inset-y-0 end-0 flex items-center', currentSize.trailing, ui?.trailing)"
-        >
-          <slot name="trailing" :model-value="currentValue" :open="openModel" :ui="ui">
-            <XIcon
-              v-if="loading"
-              name="loader-circle"
-              data-slot="trailingIcon"
-              :class="cn('animate-spin shrink-0 text-muted-foreground', currentSize.icon, ui?.trailingIcon)"
-              aria-hidden="true"
+      <Component.Trigger v-if="isTrailing || !!slots.trailing || !!props.clear" data-slot="trailing" :class="ui.trailing({ class: props.ui?.trailing })">
+        <slot name="trailing" :model-value="(modelValue as ApplyModifiers<GetModelValue<T, VK, M, ExcludeItem>, Mod>)" :open="open" :ui="ui">
+          <Component.Cancel v-if="!!props.clear && !disabled && !isModelValueEmpty(modelValue as ApplyModifiers<GetModelValue<T, VK, M, ExcludeItem>, Mod>)" as-child>
+            <XButton
+              as="span"
+              :icon="props.clearIcon || appConfig.ui.icons.close"
+              :size="size"
+              variant="link"
+              color="neutral"
+              tabindex="-1"
+              v-bind="clearProps"
+              data-slot="trailingClear"
+              :class="ui.trailingClear({ class: props.ui?.trailingClear })"
+              @click.stop="onClear"
             />
-            <ComboboxCancel v-else-if="showClear" as-child>
-              <button
-                type="button"
-                tabindex="-1"
-                aria-label="清空"
-                data-slot="trailingClear"
-                :class="cn('flex size-4 items-center justify-center rounded-full p-0 text-muted-foreground opacity-70 hover:opacity-100', ui?.trailingClear)"
-                @click.stop="onClear"
+          </Component.Cancel>
+
+          <XIcon v-else-if="trailingIconName" :name="trailingIconName" data-slot="trailingIcon" :class="ui.trailingIcon({ class: props.ui?.trailingIcon })" />
+        </slot>
+      </Component.Trigger>
+    </Component.Anchor>
+
+    <Component.Portal v-bind="portalProps">
+      <FieldGroupReset>
+        <Component.Content data-slot="content" :class="ui.content({ class: props.ui?.content })" v-bind="contentProps" @focus-outside.prevent>
+          <slot name="content-top" />
+
+          <Component.Empty data-slot="empty" :class="ui.empty({ class: props.ui?.empty })">
+            <slot name="empty" :search-term="searchTerm">
+              {{ searchTerm ? t('inputMenu.noMatch', { searchTerm }) : t('inputMenu.noData') }}
+            </slot>
+          </Component.Empty>
+
+          <div ref="viewportRef" role="presentation" data-slot="viewport" :class="ui.viewport({ class: props.ui?.viewport })">
+            <template v-if="!!props.virtualize">
+              <ReuseCreateItemTemplate v-if="createItem && createItemPosition === 'top'" />
+
+              <Component.Virtualizer
+                v-slot="{ option: item, virtualItem }"
+                :options="(filteredItems as any[])"
+                :text-content="item => isInputItem(item) ? get(item, props.labelKey as string) : String(item)"
+                v-bind="virtualizerProps"
               >
-                <XIcon
-                  v-if="isIconName(clearIcon)"
-                  :name="clearIcon"
-                  class="size-3.5"
-                  aria-hidden="true"
-                />
-                <component :is="clearIcon" v-else class="size-3.5" aria-hidden="true" />
-              </button>
-            </ComboboxCancel>
-            <XIcon
-              v-else-if="isIconName(trailingIcon)"
-              :name="trailingIcon"
-              data-slot="trailingIcon"
-              :class="cn('shrink-0 text-muted-foreground transition-transform', openModel && 'rotate-180', currentSize.icon, ui?.trailingIcon)"
-              aria-hidden="true"
-            />
-            <component
-              :is="trailingIcon"
-              v-else
-              data-slot="trailingIcon"
-              :class="cn('shrink-0 text-muted-foreground transition-transform', openModel && 'rotate-180', currentSize.icon, ui?.trailingIcon)"
-              aria-hidden="true"
-            />
-          </slot>
-        </span>
-      </Primitive>
-    </ComboboxAnchor>
+                <ReuseItemTemplate :item="item" :index="virtualItem.index" />
+              </Component.Virtualizer>
 
-    <ComboboxPortal :disabled="portal === false" :to="typeof portal === 'object' ? portal : undefined">
-      <ComboboxContent
-        data-slot="content"
-        :position="content?.position ?? 'popper'"
-        :align="content?.align ?? 'start'"
-        :side="content?.side ?? 'bottom'"
-        :align-offset="content?.alignOffset"
-        :side-offset="content?.sideOffset ?? 8"
-        :class="cn(
-          'z-50 flex w-[var(--reka-combobox-trigger-width)] min-w-40 flex-col overflow-hidden rounded-md ring-1 ring-border bg-popover text-popover-foreground shadow-md outline-none',
-          ui?.content,
-        )"
-        @focus-outside.prevent
-      >
-        <slot name="content-top" />
+              <ReuseCreateItemTemplate v-if="createItem && createItemPosition === 'bottom'" />
+            </template>
 
-        <span v-if="showSearchInput" class="block p-1">
-          <slot name="search-input" :keyword="searchTerm" :on-input="(value: string) => (searchTerm = value)">
-            <input
-              :value="searchTerm"
-              :placeholder="searchInputPlaceholder"
-              :disabled="disabled || (typeof searchInput === 'object' && searchInput.disabled)"
-              data-slot="input"
-              :class="cn('h-8 w-full rounded-sm border-0 bg-muted/50 px-2 text-sm outline-none placeholder:text-muted-foreground', ui?.input)"
-              @input="onSearchTermUpdate(($event.target as HTMLInputElement).value)"
-            />
-          </slot>
-        </span>
+            <template v-else>
+              <Component.Group v-if="createItem && createItemPosition === 'top'" data-slot="group" :class="ui.group({ class: props.ui?.group })">
+                <ReuseCreateItemTemplate />
+              </Component.Group>
 
-        <ComboboxEmpty
-          v-if="!createItemValue"
-          data-slot="empty"
-          :class="cn('text-center text-muted-foreground', currentSize.empty, ui?.empty)"
-        >
-          <slot name="empty" :search-term="searchTerm">无匹配选项</slot>
-        </ComboboxEmpty>
+              <Component.Group v-for="(group, groupIndex) in filteredGroups" :key="`group-${groupIndex}`" data-slot="group" :class="ui.group({ class: props.ui?.group })">
+                <ReuseItemTemplate v-for="(item, index) in group" :key="`group-${groupIndex}-${index}`" :item="item" :index="index" />
+              </Component.Group>
 
-        <div data-slot="viewport" :class="cn('relative max-h-60 flex-1 overflow-y-auto scroll-py-1', ui?.viewport)">
-          <template v-if="virtualize">
-            <ComboboxGroup v-if="createItemValue && createItemPosition === 'top'" data-slot="group" :class="cn('p-1', ui?.group)">
-              <ComboboxItem :value="searchTerm" data-slot="item" :class="cn('relative flex w-full items-start rounded-md', currentSize.item, ui?.item)" @select="onCreate">
-                <span data-slot="itemLabel" :class="cn('truncate', ui?.itemLabel)">
-                  <slot name="create-item-label" :item="searchTerm">创建 "{{ searchTerm }}"</slot>
-                </span>
-              </ComboboxItem>
-            </ComboboxGroup>
+              <Component.Group v-if="createItem && createItemPosition === 'bottom'" data-slot="group" :class="ui.group({ class: props.ui?.group })">
+                <ReuseCreateItemTemplate />
+              </Component.Group>
+            </template>
+          </div>
 
-            <ComboboxVirtualizer
-              v-slot="{ option: item, virtualItem }"
-              :options="filteredItems as any[]"
-              :text-content="(item: InputMenuItemData) => String(getField(item, labelField) ?? '')"
-              v-bind="virtualizerProps"
-            >
-              <ReuseItemTemplate :item="item" :index="virtualItem.index" />
-            </ComboboxVirtualizer>
+          <slot name="content-bottom" />
 
-            <ComboboxGroup v-if="createItemValue && createItemPosition === 'bottom'" data-slot="group" :class="cn('p-1', ui?.group)">
-              <ComboboxItem :value="searchTerm" data-slot="item" :class="cn('relative flex w-full items-start rounded-md', currentSize.item, ui?.item)" @select="onCreate">
-                <span data-slot="itemLabel" :class="cn('truncate', ui?.itemLabel)">
-                  <slot name="create-item-label" :item="searchTerm">创建 "{{ searchTerm }}"</slot>
-                </span>
-              </ComboboxItem>
-            </ComboboxGroup>
-          </template>
-
-          <template v-else>
-            <ComboboxGroup v-if="createItemValue && createItemPosition === 'top'" data-slot="group" :class="cn('p-1', ui?.group)">
-              <ComboboxItem :value="searchTerm" data-slot="item" :class="cn('relative flex w-full items-start rounded-md', currentSize.item, ui?.item)" @select="onCreate">
-                <span data-slot="itemLabel" :class="cn('truncate', ui?.itemLabel)">
-                  <slot name="create-item-label" :item="searchTerm">创建 "{{ searchTerm }}"</slot>
-                </span>
-              </ComboboxItem>
-            </ComboboxGroup>
-
-            <ComboboxGroup
-              v-for="(group, groupIndex) in filteredGroups"
-              :key="`group-${groupIndex}`"
-              data-slot="group"
-              :class="cn('p-1', ui?.group)"
-            >
-              <template v-for="(item, index) in group" :key="`group-${groupIndex}-${index}`">
-                <ComboboxLabel
-                  v-if="item?.type === 'label'"
-                  data-slot="label"
-                  :class="cn('font-semibold text-foreground', currentSize.label, item.class, ui?.label, item.ui?.label)"
-                >
-                  {{ getField(item, labelField) }}
-                </ComboboxLabel>
-                <ComboboxSeparator
-                  v-else-if="item?.type === 'separator'"
-                  data-slot="separator"
-                  :class="cn('-mx-1 my-1 h-px bg-border', item.class, ui?.separator, item.ui?.separator)"
-                />
-                <ReuseItemTemplate v-else :item="item" :index="index" />
-              </template>
-            </ComboboxGroup>
-
-            <ComboboxGroup v-if="createItemValue && createItemPosition === 'bottom'" data-slot="group" :class="cn('p-1', ui?.group)">
-              <ComboboxItem :value="searchTerm" data-slot="item" :class="cn('relative flex w-full items-start rounded-md', currentSize.item, ui?.item)" @select="onCreate">
-                <span data-slot="itemLabel" :class="cn('truncate', ui?.itemLabel)">
-                  <slot name="create-item-label" :item="searchTerm">创建 "{{ searchTerm }}"</slot>
-                </span>
-              </ComboboxItem>
-            </ComboboxGroup>
-          </template>
-        </div>
-
-        <slot name="content-bottom" />
-
-        <ComboboxArrow v-if="arrow" data-slot="arrow" :class="cn('fill-popover stroke-border', ui?.arrow)" />
-      </ComboboxContent>
-    </ComboboxPortal>
-  </component>
+          <Component.Arrow v-if="!!props.arrow" v-bind="arrowProps" data-slot="arrow" :class="ui.arrow({ class: props.ui?.arrow })" />
+        </Component.Content>
+      </FieldGroupReset>
+    </Component.Portal>
+  </Component.Root>
 </template>

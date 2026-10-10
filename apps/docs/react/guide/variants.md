@@ -1,6 +1,6 @@
 # 变体语义
 
-所有二次封装组件共享同一套变体语义，两份框架实现保持一致（定义在 `packages/shared/src/variants.ts`）。
+所有二次封装组件共享同一套变体语义，与 Nuxt UI 的变体写法一致，两份框架实现保持一致（定义在 `packages/shared/src/variants.ts`）。
 
 ## 三轴变体
 
@@ -10,16 +10,28 @@
 | size（尺寸） | xs · sm · md · lg · xl | md |
 | color（语义色） | primary · secondary · neutral · success · info · warning · error | primary |
 
-## 语义色色阶
+## 变体写法
 
-7 种语义色各派生 10 级色阶（`primary-1` 至 `primary-10`），主色由 seed `#1677ff` 通过 Ant Design 色彩算法生成：
+与 Nuxt UI 主题完全一致（`bg-primary` 等价 500 级主色）：
 
-- `primary-6` 为 seed 本身
-- hover 取第 5 级（如 `primary-5` #4096ff）
-- active 取第 7 级（如 `primary-7` #0958d9）
-- 浅色底取第 1 级（如 `primary-1` #e6f4ff）
+| 变体 | class |
+| --- | --- |
+| solid | `bg-primary text-background hover:bg-primary/75` |
+| outline | `ring-primary/50 text-primary hover:bg-primary/10` |
+| soft | `bg-primary/10 text-primary hover:bg-primary/15` |
+| subtle | `bg-primary/10 text-primary ring-primary/25 hover:bg-primary/15` |
+| ghost | `text-primary hover:bg-primary/10` |
+| link | `text-primary hover:text-primary/75` |
 
-`secondary` 使用 shadcn 的灰色变量（`--secondary` / `--muted`），不参与色阶派生。
+`secondary` 与 `neutral` 使用 shadcn 灰色变量（`--secondary` / `--muted` / `--foreground`），对应 Nuxt 的 default / elevated / inverted 角色。
+
+## 色阶角色
+
+语义色直接使用 Tailwind 色板：
+
+- 500 为主色（无后缀类）
+- 50 为最浅底、400 为 hover 级、600 为深色
+- 透明度修饰 /10 /15 /25 /50 /75 对应 Nuxt UI 的浅底、hover、描边、solid hover
 
 ## 组件级变体示例
 

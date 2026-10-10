@@ -1,247 +1,156 @@
-<script setup lang="ts">
-/**
- * XSwitch 开关:按 Nuxt UI switch 结构二次封装。
- * root(容器)> container > base(开关)+ thumb(滑块)+ icon(滑块内图标);
- * wrapper > label / description。
- * 支持语义色、滑块内图标(checkedIcon / uncheckedIcon / loadingIcon)、
- * highlight 常显聚焦环与 required 必选项标记。
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { computed, useAttrs, useId } from 'vue'
-import { LoaderCircle } from '@lucide/vue'
-import { Label as RekaLabel, Primitive, SwitchRoot, SwitchThumb } from 'reka-ui'
-import { cn } from '@/lib/utils'
+<script lang="ts">
+import type { SwitchRootProps, SwitchRootEmits } from 'reka-ui'
+import type { VNode } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/switch'
+import type { IconProps } from './XIcon.vue'
+import type { ButtonHTMLAttributes } from '../../lib/nuxt/types/html'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-type SwitchColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
-type SwitchSize = 'default' | 'small'
+type Switch = ComponentConfig<typeof theme, AppConfig, 'switch'>
 
-/** 主题插槽类名,键名与 Nuxt UI 主题保持一致 */
-export interface SwitchUi {
-  root?: string
-  base?: string
-  container?: string
-  thumb?: string
-  icon?: string
-  wrapper?: string
+export interface SwitchProps<T = boolean> extends Pick<SwitchRootProps<T>, 'disabled' | 'id' | 'name' | 'required' | 'value' | 'defaultValue' | 'modelValue' | 'trueValue' | 'falseValue'>, /** @vue-ignore */ Omit<ButtonHTMLAttributes, 'type' | 'disabled' | 'name'> {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
+  /**
+   * @defaultValue 'primary'
+   */
+  color?: Switch['variants']['color']
+  /**
+   * @defaultValue 'md'
+   */
+  size?: Switch['variants']['size']
+  /** Highlight the ring color like a focus state. */
+  highlight?: boolean
+  /** When `true`, the loading icon will be displayed. */
+  loading?: boolean
+  /**
+   * The icon when the `loading` prop is `true`.
+   * @defaultValue appConfig.ui.icons.loading
+   * @IconifyIcon
+   */
+  loadingIcon?: IconProps['name']
+  /**
+   * Display an icon when the switch is checked.
+   * @IconifyIcon
+   */
+  checkedIcon?: IconProps['name']
+  /**
+   * Display an icon when the switch is unchecked.
+   * @IconifyIcon
+   */
+  uncheckedIcon?: IconProps['name']
   label?: string
   description?: string
+  class?: any
+  ui?: Switch['slots']
 }
 
-/** 选中时滑块轨道的语义色 */
-const baseColorClasses: Record<SwitchColor, string> = {
-  primary: 'data-[state=checked]:bg-primary',
-  secondary: 'data-[state=checked]:bg-secondary',
-  neutral: 'data-[state=checked]:bg-foreground',
-  success: 'data-[state=checked]:bg-success',
-  info: 'data-[state=checked]:bg-info',
-  warning: 'data-[state=checked]:bg-warning',
-  error: 'data-[state=checked]:bg-error',
+export interface SwitchEmits<T = boolean> extends SwitchRootEmits<T> {
+  change: [event: Event]
 }
 
-/** 选中时滑块内图标的颜色 */
-const iconColorClasses: Record<SwitchColor, string> = {
-  primary: 'group-data-[state=checked]:text-primary',
-  secondary: 'group-data-[state=checked]:text-secondary',
-  neutral: 'group-data-[state=checked]:text-foreground',
-  success: 'group-data-[state=checked]:text-success',
-  info: 'group-data-[state=checked]:text-info',
-  warning: 'group-data-[state=checked]:text-warning',
-  error: 'group-data-[state=checked]:text-error',
+export interface SwitchSlots {
+  label?(props: { label: string | undefined }): VNode[]
+  description?(props: { description: string | undefined }): VNode[]
 }
+</script>
 
-/** highlight 常显聚焦环颜色 */
-const highlightClasses: Record<SwitchColor, string> = {
-  primary: 'ring-primary',
-  secondary: 'ring-secondary',
-  neutral: 'ring-foreground',
-  success: 'ring-success',
-  info: 'ring-info',
-  warning: 'ring-warning',
-  error: 'ring-error',
-}
-
-/** 尺寸:轨道、滑块、容器高度与文字 */
-const sizeClasses: Record<SwitchSize, { base: string, container: string, thumb: string, wrapper: string, icon: string }> = {
-  default: { base: 'h-[18.4px] w-8', container: 'h-5', thumb: 'size-4 data-[state=checked]:translate-x-[calc(100%-2px)]', wrapper: 'text-sm', icon: 'size-3.5' },
-  small: { base: 'h-3.5 w-6', container: 'h-4', thumb: 'size-3 data-[state=checked]:translate-x-[calc(100%-2px)]', wrapper: 'text-xs', icon: 'size-2.5' },
-}
+<script setup lang="ts" generic="T = boolean">
+import { computed, useAttrs, useId } from 'vue'
+import { Primitive, SwitchRoot, SwitchThumb, Label } from 'reka-ui'
+import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
+import { reactivePick } from '@vueuse/core'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { useFormField } from '../../lib/nuxt/composables/useFormField'
+import { tv } from '../../lib/nuxt/utils/tv'
+import XIcon from './XIcon.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const props = withDefaults(defineProps<{
-  /** 选中时滑块轨道的语义色 */
-  color?: SwitchColor
-  /** 控件尺寸 */
-  size?: SwitchSize
-  /** 常显高亮聚焦环 */
-  highlight?: boolean
-  /** 必选项,label 后显示 * */
-  required?: boolean
-  /** 加载态:阻止交互并显示旋转图标 */
-  loading?: boolean
-  /** 加载图标 */
-  loadingIcon?: Component
-  /** 选中时滑块内图标 */
-  checkedIcon?: Component
-  /** 未选中时滑块内图标 */
-  uncheckedIcon?: Component
-  /** 是否禁用 */
-  disabled?: boolean
-  /** 关联文字 */
-  label?: string
-  /** 关联文字下方的辅助说明 */
-  description?: string
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 主题插槽类名 */
-  ui?: SwitchUi
-  class?: HTMLAttributes['class']
-}>(), {
-  color: 'primary',
-  size: 'default',
-  highlight: false,
-  required: false,
-  loading: false,
-  disabled: false,
-})
+const _props = defineProps</* @vue-ignore */ SwitchProps<T>>()
+const slots = defineSlots</* @vue-ignore */ SwitchSlots>()
+const emits = defineEmits</* @vue-ignore */ SwitchEmits<T>>()
 
-const model = defineModel<boolean>({ default: false })
+const props = useComponentProps<SwitchProps<T>>('switch', _props)
 
-const emit = defineEmits<{ change: [event: Event] }>()
+const appConfig = useAppConfig() as Switch['AppConfig']
+
+const rootProps = useForwardProps(reactivePick(props, 'required', 'value', 'defaultValue', 'modelValue', 'trueValue', 'falseValue'), emits)
+
+const { id: _id, emitFormChange, emitFormInput, size: formFieldSize, color: formFieldColor, highlight: formFieldHighlight, name, disabled: formFieldDisabled, ariaAttrs } = useFormField<SwitchProps<T>>(_props)
+const id = _id.value ?? useId()
+
+// eslint-disable-next-line vue/no-dupe-keys
+const color = computed(() => formFieldColor.value ?? props.color)
+// eslint-disable-next-line vue/no-dupe-keys
+const highlight = computed(() => formFieldHighlight.value ?? props.highlight)
+// eslint-disable-next-line vue/no-dupe-keys
+const size = computed(() => formFieldSize.value ?? props.size)
+
+const disabled = computed(() => formFieldDisabled.value ?? props.disabled)
 
 const attrs = useAttrs()
-const generatedId = useId()
-const resolvedId = computed(() => (attrs.id as string | undefined) ?? generatedId)
-
-/** 透传属性:onClick 可能是数组(上层 as-child 合并),逐个调用 */
-function onClick(event: MouseEvent) {
-  const handler = attrs.onClick as
-    | ((event: MouseEvent) => unknown)
-    | Array<(event: MouseEvent) => unknown>
-    | undefined
-  if (handler == null) return
-
-  const handlers = Array.isArray(handler) ? handler : [handler]
-  for (const fn of handlers) fn(event)
-}
-
+// Omit `data-state` to prevent conflicts with parent components (e.g. TooltipTrigger)
 const forwardedAttrs = computed(() => {
-  const { 'data-state': _dataState, ...rest } = attrs
-  return { ...rest, onClick }
+  const { 'data-state': _, ...rest } = attrs
+  return rest
 })
 
-function onUpdate(value: boolean) {
-  model.value = value
-  const event = new Event('change')
-  Object.defineProperty(event, 'target', { value: { value } })
-  emit('change', event)
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.switch || {}) })({
+  size: size.value,
+  color: color.value,
+  highlight: highlight.value,
+  required: props.required,
+  loading: props.loading,
+  disabled: disabled.value || props.loading
+}))
+
+function onUpdate(value: any) {
+  // @ts-expect-error - 'target' does not exist in type 'EventInit'
+  const event = new Event('change', { target: { value } })
+  emits('change', event)
+  emitFormChange()
+  emitFormInput()
 }
-
-const baseClass = computed(() => cn(
-  'inline-flex shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent outline-none transition-[background] duration-200 ease-out focus-visible:outline-3 data-[state=unchecked]:bg-input',
-  sizeClasses[props.size].base,
-  baseColorClasses[props.color],
-  props.highlight && cn('ring-2', highlightClasses[props.color]),
-  (props.disabled || props.loading) && 'cursor-not-allowed',
-  props.ui?.base,
-))
-
-const thumbClass = computed(() => cn(
-  'group pointer-events-none flex items-center justify-center rounded-full bg-background shadow-lg ring-0 transition-transform duration-200 ease-out motion-reduce:transition-none data-[state=unchecked]:translate-x-0',
-  sizeClasses[props.size].thumb,
-  props.ui?.thumb,
-))
-
-const iconClass = computed(() => cn(
-  'absolute shrink-0 opacity-0 transition-[color,opacity] duration-200 ease-out group-data-[state=unchecked]:text-muted-foreground',
-  iconColorClasses[props.color],
-  sizeClasses[props.size].icon,
-  props.ui?.icon,
-))
-
-const wrapperClass = computed(() => cn(
-  'ms-2',
-  sizeClasses[props.size].wrapper,
-  props.ui?.wrapper,
-))
-
-const labelClass = computed(() => cn(
-  'block font-medium text-foreground',
-  props.required && "after:content-['*'] after:ms-0.5 after:text-error",
-  props.disabled && 'cursor-not-allowed',
-  props.ui?.label,
-))
-
-const descriptionClass = computed(() => cn(
-  'text-muted-foreground',
-  props.disabled && 'cursor-not-allowed',
-  props.ui?.description,
-))
 </script>
 
 <template>
-  <Primitive
-    :as="as ?? 'div'"
-    data-slot="root"
-    :class="cn('relative flex items-start', disabled && 'opacity-75', props.ui?.root, props.class)"
-  >
-    <div data-slot="container" :class="cn('flex items-center', sizeClasses[size].container, props.ui?.container)">
+  <Primitive :as="props.as" :data-slot="($attrs['data-slot'] as string | undefined) ?? 'root'" :class="ui.root({ class: [props.ui?.root, props.class] })">
+    <div data-slot="container" :class="ui.container({ class: props.ui?.container })">
       <SwitchRoot
-        v-bind="forwardedAttrs"
-        :id="resolvedId"
+        :id="id"
+        v-bind="{ ...rootProps, ...forwardedAttrs, ...ariaAttrs }"
+        :name="name"
+        :disabled="disabled || props.loading"
         data-slot="base"
-        :model-value="model"
-        :disabled="disabled || loading"
-        :required="required"
-        :aria-busy="loading || undefined"
-        :class="baseClass"
+        :class="ui.base({ class: props.ui?.base })"
         @update:model-value="onUpdate"
       >
-        <SwitchThumb data-slot="thumb" :class="thumbClass">
-          <LoaderCircle
-            v-if="loading"
-            :class="cn(iconClass, 'animate-spin opacity-100')"
-            data-slot="icon"
-            aria-hidden="true"
-          />
-          <component
-            v-else-if="model && checkedIcon"
-            :is="checkedIcon"
-            data-slot="icon"
-            :class="cn(iconClass, 'group-data-[state=checked]:opacity-100')"
-          />
-          <component
-            v-else-if="!model && uncheckedIcon"
-            :is="uncheckedIcon"
-            data-slot="icon"
-            :class="cn(iconClass, 'group-data-[state=unchecked]:opacity-100')"
-          />
+        <SwitchThumb data-slot="thumb" :class="ui.thumb({ class: props.ui?.thumb })">
+          <XIcon v-if="props.loading" :name="props.loadingIcon || appConfig.ui.icons.loading" data-slot="icon" :class="ui.icon({ class: props.ui?.icon, checked: true, unchecked: true })" />
+          <template v-else>
+            <XIcon v-if="props.checkedIcon" :name="props.checkedIcon" data-slot="icon" :class="ui.icon({ class: props.ui?.icon, checked: true })" />
+            <XIcon v-if="props.uncheckedIcon" :name="props.uncheckedIcon" data-slot="icon" :class="ui.icon({ class: props.ui?.icon, unchecked: true })" />
+          </template>
         </SwitchThumb>
       </SwitchRoot>
     </div>
-
-    <span v-if="$slots.checkedChildren && model" class="text-sm">
-      <slot name="checkedChildren" />
-    </span>
-    <span v-else-if="$slots.unCheckedChildren && !model" class="text-sm">
-      <slot name="unCheckedChildren" />
-    </span>
-
-    <div
-      v-if="label || $slots.label || description || $slots.description"
-      data-slot="wrapper"
-      :class="wrapperClass"
-    >
-      <RekaLabel
-        v-if="label || $slots.label"
-        :for="resolvedId"
-        data-slot="label"
-        :class="labelClass"
-      >
-        <slot name="label" :label="label">{{ label }}</slot>
-      </RekaLabel>
-      <p v-if="description || $slots.description" data-slot="description" :class="descriptionClass">
-        <slot name="description" :description="description">{{ description }}</slot>
+    <div v-if="(props.label || !!slots.label) || (props.description || !!slots.description)" data-slot="wrapper" :class="ui.wrapper({ class: props.ui?.wrapper })">
+      <Label v-if="props.label || !!slots.label" :for="id" data-slot="label" :class="ui.label({ class: props.ui?.label })">
+        <slot name="label" :label="props.label">
+          {{ props.label }}
+        </slot>
+      </Label>
+      <p v-if="props.description || !!slots.description" data-slot="description" :class="ui.description({ class: props.ui?.description })">
+        <slot name="description" :description="props.description">
+          {{ props.description }}
+        </slot>
       </p>
     </div>
   </Primitive>

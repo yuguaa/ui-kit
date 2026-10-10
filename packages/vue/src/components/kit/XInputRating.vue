@@ -1,204 +1,173 @@
+<script lang="ts">
+import type { VNode } from 'vue'
+import type { RatingRootProps, RatingRootEmits } from 'reka-ui'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/input-rating'
+import type { IconProps } from './XIcon.vue'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
+
+type InputRating = ComponentConfig<typeof theme, AppConfig, 'inputRating'>
+
+export interface InputRatingProps extends Pick<RatingRootProps, 'length' | 'step' | 'name' | 'disabled' | 'required' | 'clearable' | 'hoverable' | 'modelValue' | 'defaultValue'> {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
+  /** The id of the rating. */
+  id?: string
+  /**
+   * Make the rating readonly (non-interactive).
+   * @defaultValue false
+   */
+  readonly?: boolean
+  /**
+   * The icon displayed for each rating value.
+   * @defaultValue appConfig.ui.icons.star
+   * @IconifyIcon
+   */
+  icon?: IconProps['name']
+  /**
+   * The icon displayed for empty rating values. Defaults to `icon` when not provided.
+   * @IconifyIcon
+   */
+  emptyIcon?: IconProps['name']
+  /**
+   * @defaultValue 'primary'
+   */
+  color?: InputRating['variants']['color']
+  /**
+   * @defaultValue 'md'
+   */
+  size?: InputRating['variants']['size']
+  /**
+   * The orientation of the rating.
+   * @defaultValue 'horizontal'
+   */
+  orientation?: InputRating['variants']['orientation']
+  class?: any
+  ui?: InputRating['slots']
+}
+
+export interface InputRatingEmits extends RatingRootEmits {
+  change: [event: Event]
+}
+
+export interface InputRatingSlots {
+  /** Rendered for each item. `filled` is `false` for the empty background layer and `true` for the highlighted overlay. */
+  item?(props: { index: number, filled: boolean }): VNode[]
+}
+</script>
+
 <script setup lang="ts">
-/**
- * XInputRating 评分：以星标形式进行评分输入。
- * 按 Nuxt UI input-rating 结构对齐：root > item(空星层 emptyIcon + 高亮层 indicator > icon)。
- * 支持半星、五档尺寸、七种语义色、横竖方向与自定义图标（XIcon 名称或组件）。
- */
-import type { Component, HTMLAttributes } from 'vue'
 import { computed } from 'vue'
-import { Star } from '@lucide/vue'
-import { Primitive } from 'reka-ui'
-import XIcon from '@/components/kit/XIcon.vue'
-import { cn } from '@/lib/utils'
+import { RatingRoot, RatingItem, RatingItemIndicator } from 'reka-ui'
+import { reactivePick } from '@vueuse/core'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
+import { useFormField } from '../../lib/nuxt/composables/useFormField'
+import { tv } from '../../lib/nuxt/utils/tv'
+import XIcon from './XIcon.vue'
 
 defineOptions({ inheritAttrs: false })
 
-type RatingSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-type RatingColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
-type RatingOrientation = 'horizontal' | 'vertical'
-
-/** XIcon 内置图标名 */
-export type InputRatingIconName = 'star'
-/** 图标：XIcon 名称或自定义组件 */
-export type InputRatingIcon = InputRatingIconName | Component
-
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface InputRatingUi {
-  root?: string
-  item?: string
-  indicator?: string
-  icon?: string
-  emptyIcon?: string
-}
-
-const props = withDefaults(defineProps<{
-  /** 评分值 */
-  modelValue?: number
-  /** 最大分值 */
-  max?: number
-  /** 允许半星 */
-  allowHalf?: boolean
-  /** 是否禁用 */
-  disabled?: boolean
-  /** 只读展示，禁止点击与键盘操作 */
-  readonly?: boolean
-  /** 星星尺寸 */
-  size?: RatingSize
-  /** 组件颜色（填充星与聚焦描边） */
-  color?: RatingColor
-  /** 排列方向 */
-  orientation?: RatingOrientation
-  /** 高亮星图标，缺省使用空星图标 */
-  icon?: InputRatingIcon
-  /** 空星图标，缺省使用 icon */
-  emptyIcon?: InputRatingIcon
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 根元素 id */
-  id?: string
-  /** 主题插槽类名 */
-  ui?: InputRatingUi
-  class?: HTMLAttributes['class']
-}>(), {
-  modelValue: 0,
-  max: 5,
-  size: 'md',
-  color: 'primary',
+const _props = withDefaults(defineProps</* @vue-ignore */ InputRatingProps>(), {
+  length: 5,
+  step: 1,
+  readonly: false,
+  defaultValue: 0,
   orientation: 'horizontal',
+  hoverable: false,
+  clearable: false
 })
+const emits = defineEmits</* @vue-ignore */ InputRatingEmits>()
+defineSlots</* @vue-ignore */ InputRatingSlots>()
 
-const emit = defineEmits<{
-  'update:modelValue': [value: number]
-  /** 评分变化回调，载荷为 change 事件（target.value 为评分值） */
-  change: [event: Event]
-}>()
+const props = useComponentProps<InputRatingProps>('inputRating', _props)
 
-/** 五档星星尺寸 */
-const sizeClasses: Record<RatingSize, string> = {
-  xs: 'size-3',
-  sm: 'size-4',
-  md: 'size-5',
-  lg: 'size-6',
-  xl: 'size-7',
-}
+const appConfig = useAppConfig() as InputRating['AppConfig']
 
-/** 填充星颜色（星体填充与描边） */
-const indicatorColorClasses: Record<RatingColor, string> = {
-  primary: 'fill-primary text-primary',
-  secondary: 'fill-secondary text-secondary',
-  neutral: 'fill-foreground text-foreground',
-  success: 'fill-success text-success',
-  info: 'fill-info text-info',
-  warning: 'fill-warning text-warning',
-  error: 'fill-error text-error',
-}
+const rootProps = useForwardProps(reactivePick(props, 'as', 'length', 'step', 'hoverable', 'clearable', 'required', 'modelValue', 'defaultValue'), emits)
 
-/** 聚焦描边颜色 */
-const itemColorClasses: Record<RatingColor, string> = {
-  primary: 'outline-primary/25 focus-visible:outline-3',
-  secondary: 'outline-secondary/25 focus-visible:outline-3',
-  neutral: 'outline-foreground/25 focus-visible:outline-3',
-  success: 'outline-success/25 focus-visible:outline-3',
-  info: 'outline-info/25 focus-visible:outline-3',
-  warning: 'outline-warning/25 focus-visible:outline-3',
-  error: 'outline-error/25 focus-visible:outline-3',
-}
+const { id, emitFormChange, emitFormInput, size: formFieldSize, color: formFieldColor, name, disabled: formFieldDisabled, ariaAttrs } = useFormField<InputRatingProps>(_props)
 
-/** 空星图标：emptyIcon 缺省回退到 icon */
-const resolvedEmptyIcon = computed(() => props.emptyIcon ?? props.icon)
+// eslint-disable-next-line vue/no-dupe-keys
+const color = computed(() => formFieldColor.value ?? props.color)
+// eslint-disable-next-line vue/no-dupe-keys
+const size = computed(() => formFieldSize.value ?? props.size)
 
-function isIconName(icon: InputRatingIcon | undefined): icon is InputRatingIconName {
-  return typeof icon === 'string'
-}
+const disabled = computed(() => formFieldDisabled.value ?? props.disabled)
+// `readonly` blocks interaction too, but only an explicit `disabled` dims the control.
+const rootDisabled = computed(() => disabled.value || props.readonly)
 
-function pick(index: number, event: MouseEvent) {
-  if (props.disabled || props.readonly) return
-  const target = event.currentTarget as HTMLElement
-  const half = props.allowHalf && event.clientX > target.getBoundingClientRect().left + target.offsetWidth / 2
-  const next = half && props.allowHalf ? index + 0.5 : index + 1
-  emit('update:modelValue', next)
-  const changeEvent = new Event('change')
-  Object.defineProperty(changeEvent, 'target', { value: { value: next } })
-  emit('change', changeEvent)
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.inputRating || {}) })({
+  size: size.value,
+  color: color.value,
+  orientation: props.orientation,
+  readonly: props.readonly && !disabled.value,
+  disabled: disabled.value
+}))
+
+const starIcon = computed(() => props.icon ?? appConfig.ui.icons.star)
+
+function onUpdate(value: number) {
+  // @ts-expect-error - 'target' does not exist in type 'EventInit'
+  const event = new Event('change', { target: { value } })
+  emits('change', event)
+  emitFormChange()
+  emitFormInput()
 }
 </script>
 
 <template>
-  <Primitive
-    :as="as ?? 'span'"
+  <RatingRoot
     :id="id"
-    v-bind="$attrs"
+    v-slot="{ items }"
     data-slot="root"
-    role="radiogroup"
-    aria-label="rating"
-    :aria-readonly="readonly || undefined"
-    :class="cn(
-      orientation === 'vertical'
-        ? 'inline-flex flex-col items-center gap-0.5'
-        : 'inline-flex items-center gap-0.5',
-      disabled && 'pointer-events-none opacity-60',
-      props.ui?.root,
-      props.class,
-    )"
+    v-bind="{ ...rootProps, ...$attrs, ...ariaAttrs }"
+    :name="name"
+    :disabled="rootDisabled"
+    :aria-readonly="props.readonly || undefined"
+    :orientation="props.orientation"
+    :class="ui.root({ class: [props.ui?.root, props.class] })"
+    @update:model-value="onUpdate"
   >
-    <button
-      v-for="index in max"
-      :key="index"
-      type="button"
-      :aria-label="`${index} 星`"
-      :tabindex="readonly ? -1 : 0"
-      :class="cn(
-        'relative inline-block cursor-pointer rounded-xs outline-none select-none transition',
-        readonly ? 'cursor-default' : cn('hover:scale-110', itemColorClasses[color]),
-        props.ui?.item,
-      )"
-      @click="pick(index - 1, $event)"
+    <RatingItem
+      v-for="item in items"
+      v-slot="{ steps }"
+      :key="item"
+      :item="item"
+      data-slot="item"
+      :class="ui.item({ class: props.ui?.item })"
     >
-      <slot
-        name="item"
-        :index="index - 1"
-        :filled="modelValue >= index"
-        :half="allowHalf && modelValue >= index - 0.5 && modelValue < index"
-      >
+      <!-- Empty icon as background -->
+      <slot name="item" :index="item" :filled="false">
         <XIcon
-          v-if="isIconName(resolvedEmptyIcon)"
-          :name="resolvedEmptyIcon"
+          :name="props.emptyIcon ?? starIcon"
           data-slot="emptyIcon"
-          aria-hidden="true"
-          :class="cn(sizeClasses[size], 'block h-full w-full text-muted-foreground', props.ui?.emptyIcon)"
+          :class="ui.emptyIcon({ class: props.ui?.emptyIcon })"
         />
-        <component
-          :is="resolvedEmptyIcon ?? Star"
-          v-else
-          data-slot="emptyIcon"
-          aria-hidden="true"
-          :class="cn(sizeClasses[size], 'block h-full w-full text-muted-foreground', props.ui?.emptyIcon)"
-        />
-        <span
-          v-if="modelValue >= index || (allowHalf && modelValue >= index - 0.5 && modelValue < index)"
-          data-slot="indicator"
-          aria-hidden="true"
-          :class="cn(
-            'absolute inset-0 overflow-hidden',
-            allowHalf && modelValue >= index - 0.5 && modelValue < index && '[clip-path:inset(0_50%_0_0)]',
-            indicatorColorClasses[color],
-            props.ui?.indicator,
-          )"
-        >
-          <XIcon
-            v-if="isIconName(icon)"
-            :name="icon"
-            data-slot="icon"
-            :class="cn(sizeClasses[size], 'block', props.ui?.icon)"
-          />
-          <component
-            :is="icon ?? Star"
-            v-else
-            data-slot="icon"
-            :class="cn(sizeClasses[size], 'block', props.ui?.icon)"
-          />
-        </span>
       </slot>
-    </button>
-  </Primitive>
+
+      <!-- Indicators overlaid for each step, clipped to the rated fraction -->
+      <RatingItemIndicator
+        v-for="step in steps"
+        :key="step"
+        :step="step"
+        :aria-label="`Rate ${step} out of ${props.length}`"
+        data-slot="indicator"
+        :class="ui.indicator({ class: props.ui?.indicator })"
+      >
+        <slot name="item" :index="item" :filled="true">
+          <XIcon
+            :name="starIcon"
+            data-slot="icon"
+            :class="ui.icon({ class: props.ui?.icon })"
+          />
+        </slot>
+      </RatingItemIndicator>
+    </RatingItem>
+  </RatingRoot>
 </template>

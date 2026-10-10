@@ -1,11 +1,11 @@
 # 动效规范
 
-动效体系全部使用 CSS keyframes 与 transition，不引入 JS 动效库。
+动效体系全部使用 CSS keyframes 与 transition，不引入 JS 动效库，与 Nuxt UI 默认动效一致。
 
 ## 设计原则
 
 - hover / active 仅做颜色过渡（transition-colors），无位移、无缩放
-- 弹层出入场使用缩放 + 淡入淡出（scale 0.95 ↔ 1），无位移动画
+- 弹层出入场使用缩放 + 淡入淡出（scale-in / scale-out），无位移动画
 - 抽屉与侧滑面板按方向滑动进出场
 - `prefers-reduced-motion` 下保留淡入淡出，去除位移与缩放
 

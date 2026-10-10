@@ -1,182 +1,121 @@
-<script setup lang="ts">
-/**
- * XSeparator 分割线：在内容之间插入水平或垂直分隔。
- * 支持标签、图标、头像、语义色、五档粗细与实线 / 虚线 / 点线。
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { computed, useSlots } from 'vue'
-import { createReusableTemplate } from '@vueuse/core'
-import { Separator } from 'reka-ui'
-import { cn } from '@/lib/utils'
-import XAvatar, { type AvatarProps } from './XAvatar.vue'
-import XIcon from './XIcon.vue'
-import type { AvatarSize } from './XAvatarGroupContext'
+<script lang="ts">
+import type { SeparatorProps as _SeparatorProps } from 'reka-ui'
+import type { VNode } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/separator'
+import type { AvatarProps } from './XAvatar.vue'
+import type { IconProps } from './XIcon.vue'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-type SeparatorOrientation = 'horizontal' | 'vertical'
-type SeparatorPosition = 'start' | 'center' | 'end'
-type SeparatorType = 'solid' | 'dashed' | 'dotted'
-type SeparatorSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-type SeparatorColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
-type IconName = InstanceType<typeof XIcon>['$props']['name']
+type Separator = ComponentConfig<typeof theme, AppConfig, 'separator'>
 
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface SeparatorUi {
-  root?: string
-  border?: string
-  container?: string
-  icon?: string
-  avatar?: string
-  /** 头像尺寸（值语义，与 Nuxt 主题 avatarSize 键一致） */
-  avatarSize?: AvatarSize
+export interface SeparatorProps extends Pick<_SeparatorProps, 'decorative'> {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
+  /** Display a label on the separator. */
   label?: string
-}
-
-const props = withDefaults(defineProps<{
-  /** 方向 */
-  orientation?: SeparatorOrientation
-  /** 纯装饰分割线，不渲染无障碍角色 */
-  decorative?: boolean
-  /** 标签文字 */
-  label?: string
-  /** 标签图标 */
-  icon?: IconName
-  /** 标签头像 */
+  /**
+   * Display an icon on the separator.
+   * @IconifyIcon
+   */
+  icon?: IconProps['name']
+  /** Display an avatar on the separator. */
   avatar?: AvatarProps
-  /** 语义色 */
-  color?: SeparatorColor
-  /** 边框粗细 */
-  size?: SeparatorSize
-  /** 线条样式 */
-  type?: SeparatorType
-  /** 标签位置 */
-  position?: SeparatorPosition
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 主题插槽类名 */
-  ui?: SeparatorUi
-  class?: HTMLAttributes['class']
-}>(), {
+  /**
+   * @defaultValue 'neutral'
+   */
+  color?: Separator['variants']['color']
+  /**
+   * @defaultValue 'xs'
+   */
+  size?: Separator['variants']['size']
+  /**
+   * @defaultValue 'solid'
+   */
+  type?: Separator['variants']['type']
+  /**
+   * The orientation of the separator.
+   * @defaultValue 'horizontal'
+   */
+  orientation?: Separator['variants']['orientation']
+  /**
+   * The position of the content.
+   * @defaultValue 'center'
+   */
+  position?: Separator['variants']['position']
+  class?: any
+  ui?: Separator['slots']
+}
+
+export interface SeparatorSlots {
+  default?(props: { ui: Separator['ui'] }): VNode[]
+}
+</script>
+
+<script setup lang="ts">
+import { computed } from 'vue'
+import { Separator } from 'reka-ui'
+import { reactivePick, createReusableTemplate } from '@vueuse/core'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
+import { tv } from '../../lib/nuxt/utils/tv'
+import XIcon from './XIcon.vue'
+import XAvatar from './XAvatar.vue'
+
+defineOptions({ inheritAttrs: false })
+
+const _props = withDefaults(defineProps</* @vue-ignore */ SeparatorProps>(), {
   orientation: 'horizontal',
-  decorative: false,
-  color: 'neutral',
-  size: 'xs',
-  type: 'solid',
-  position: 'center',
+  position: 'center'
 })
+const slots = defineSlots</* @vue-ignore */ SeparatorSlots>()
 
-defineOptions({ name: 'XSeparator', inheritAttrs: false })
+const props = useComponentProps('separator', _props)
 
-const slots = useSlots()
+const appConfig = useAppConfig() as Separator['AppConfig']
 
-const horizontal = computed(() => props.orientation === 'horizontal')
+const rootProps = useForwardProps(reactivePick(props, 'as', 'decorative', 'orientation'))
 
-/** 语义色边框（Nuxt separator color 变体） */
-const borderColorClasses: Record<SeparatorColor, string> = {
-  primary: 'border-primary',
-  secondary: 'border-secondary',
-  neutral: 'border-border',
-  success: 'border-success',
-  info: 'border-info',
-  warning: 'border-warning',
-  error: 'border-error',
-}
-
-/** 边框粗细（Nuxt separator size 变体） */
-const borderHorizontalSizeClasses: Record<SeparatorSize, string> = {
-  xs: '',
-  sm: 'border-t-[2px]',
-  md: 'border-t-[3px]',
-  lg: 'border-t-[4px]',
-  xl: 'border-t-[5px]',
-}
-const borderVerticalSizeClasses: Record<SeparatorSize, string> = {
-  xs: '',
-  sm: 'border-s-[2px]',
-  md: 'border-s-[3px]',
-  lg: 'border-s-[4px]',
-  xl: 'border-s-[5px]',
-}
-
-/** 线条样式 */
-const typeClasses: Record<SeparatorType, string> = {
-  solid: '',
-  dashed: 'border-dashed',
-  dotted: 'border-dotted',
-}
-
-/** 容器与线条的间距（Nuxt separator position 变体） */
-const containerPositionClasses: Record<SeparatorOrientation, Record<SeparatorPosition, string>> = {
-  horizontal: { start: 'me-3', center: 'mx-3', end: 'ms-3' },
-  vertical: { start: 'mb-2', center: 'my-2', end: 'mt-2' },
-}
+const [DefineContainer, ReuseContainer] = createReusableTemplate()
 
 const hasContent = computed(() => !!(props.label || props.icon || props.avatar || slots.default))
 
-const rootClass = computed(() =>
-  cn(
-    'flex items-center text-center',
-    horizontal.value ? 'w-full flex-row' : 'h-full flex-col',
-    props.ui?.root,
-    props.class,
-  ),
-)
-
-const borderClass = computed(() =>
-  cn(
-    horizontal.value ? 'w-full border-t' : 'h-full border-s',
-    typeClasses[props.type],
-    borderColorClasses[props.color],
-    horizontal.value ? borderHorizontalSizeClasses[props.size] : borderVerticalSizeClasses[props.size],
-    props.ui?.border,
-  ),
-)
-
-const containerClass = computed(() =>
-  cn(
-    'flex items-center font-medium text-sm text-muted-foreground',
-    horizontal.value && 'whitespace-nowrap',
-    containerPositionClasses[props.orientation][props.position],
-    props.ui?.container,
-  ),
-)
-
-const [DefineContainer, ReuseContainer] = createReusableTemplate()
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.separator || {}) })({
+  color: props.color,
+  orientation: props.orientation,
+  size: props.size,
+  position: props.position,
+  type: props.type
+}))
 </script>
 
 <template>
   <DefineContainer>
-    <div data-slot="container" :class="containerClass">
-      <slot>
-        <span v-if="label" data-slot="label" :class="cn('text-sm', props.ui?.label)">{{ label }}</span>
-        <XIcon v-else-if="icon" :name="icon" data-slot="icon" :class="cn('shrink-0 size-5', props.ui?.icon)" />
-        <XAvatar
-          v-else-if="avatar"
-          v-bind="avatar"
-          :size="avatar.size ?? props.ui?.avatarSize ?? 'xs'"
-          data-slot="avatar"
-          :class="cn('shrink-0', props.ui?.avatar, avatar.class)"
-        />
+    <div data-slot="container" :class="ui.container({ class: props.ui?.container })">
+      <slot :ui="ui">
+        <span v-if="props.label" data-slot="label" :class="ui.label({ class: props.ui?.label })">{{ props.label }}</span>
+        <XIcon v-else-if="props.icon" :name="props.icon" data-slot="icon" :class="ui.icon({ class: props.ui?.icon })" />
+        <XAvatar v-else-if="props.avatar" :size="((props.ui?.avatarSize || ui.avatarSize()) as AvatarProps['size'])" v-bind="props.avatar" data-slot="avatar" :class="ui.avatar({ class: props.ui?.avatar })" />
       </slot>
     </div>
   </DefineContainer>
 
-  <Separator
-    data-slot="separator"
-    :as="as ?? 'div'"
-    :decorative="decorative"
-    :orientation="orientation"
-    v-bind="$attrs"
-    :class="rootClass"
-  >
-    <ReuseContainer v-if="hasContent && position === 'start'" />
+  <Separator data-slot="root" v-bind="{ ...rootProps, ...$attrs }" :class="ui.root({ class: [props.ui?.root, props.class] })">
+    <ReuseContainer v-if="hasContent && props.position === 'start'" />
 
-    <div data-slot="border" :class="borderClass" />
+    <div data-slot="border" :class="ui.border({ class: props.ui?.border })" />
 
-    <template v-if="hasContent && position === 'center'">
+    <template v-if="hasContent && props.position === 'center'">
       <ReuseContainer />
-      <div data-slot="border" :class="borderClass" />
+
+      <div data-slot="border" :class="ui.border({ class: props.ui?.border })" />
     </template>
 
-    <ReuseContainer v-if="hasContent && position === 'end'" />
+    <ReuseContainer v-if="hasContent && props.position === 'end'" />
   </Separator>
 </template>

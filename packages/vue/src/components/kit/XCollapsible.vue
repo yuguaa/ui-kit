@@ -1,82 +1,63 @@
+<script lang="ts">
+import type { CollapsibleRootProps, CollapsibleRootEmits } from 'reka-ui'
+import type { VNode } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/collapsible'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
+
+type Collapsible = ComponentConfig<typeof theme, AppConfig, 'collapsible'>
+
+export interface CollapsibleProps extends Pick<CollapsibleRootProps, 'defaultOpen' | 'open' | 'disabled' | 'unmountOnHide'> {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
+  class?: any
+  ui?: Collapsible['slots']
+}
+
+export interface CollapsibleEmits extends CollapsibleRootEmits {}
+
+export interface CollapsibleSlots {
+  default?(props: { open: boolean }): VNode[]
+  content?(props?: {}): VNode[]
+}
+</script>
+
 <script setup lang="ts">
-/**
- * XCollapsible 折叠：点击触发内容展开或收起。
- * trigger 插槽为触发器（默认渲染「展开详情」按钮），content 插槽为折叠内容。
- * 关闭时默认卸载内容（unmountOnHide，与 Nuxt UI 行为一致）。
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { ref } from 'vue'
-import { ChevronDown } from '@lucide/vue'
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible'
-import { cn } from '@/lib/utils'
+import { computed } from 'vue'
+import { CollapsibleRoot, CollapsibleTrigger, CollapsibleContent } from 'reka-ui'
+import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
+import { reactivePick } from '@vueuse/core'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { tv } from '../../lib/nuxt/utils/tv'
 
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface CollapsibleUi {
-  root?: string
-  content?: string
-}
-
-const props = withDefaults(defineProps<{
-  /** 是否展开 */
-  open?: boolean
-  /** 是否禁用 */
-  disabled?: boolean
-  /** 默认展开 */
-  defaultOpen?: boolean
-  /** 隐藏时是否卸载内容 */
-  unmountOnHide?: boolean
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 主题插槽类名 */
-  ui?: CollapsibleUi
-  class?: HTMLAttributes['class']
-}>(), {
-  open: undefined,
-  defaultOpen: false,
-  disabled: false,
-  unmountOnHide: true,
-  as: 'div',
+const _props = withDefaults(defineProps</* @vue-ignore */ CollapsibleProps>(), {
+  unmountOnHide: true
 })
+const emits = defineEmits</* @vue-ignore */ CollapsibleEmits>()
+const slots = defineSlots</* @vue-ignore */ CollapsibleSlots>()
 
-const emit = defineEmits<{
-  /** 展开状态变化回调 */
-  'update:open': [open: boolean]
-}>()
+const props = useComponentProps('collapsible', _props)
 
-const innerOpen = ref(props.defaultOpen)
+const appConfig = useAppConfig() as Collapsible['AppConfig']
 
-function onOpenChange(next: boolean) {
-  if (props.open == null) innerOpen.value = next
-  emit('update:open', next)
-}
+const rootProps = useForwardProps(reactivePick(props, 'as', 'defaultOpen', 'open', 'disabled', 'unmountOnHide'), emits)
 
-/** 切换展开状态 */
-function toggle() {
-  onOpenChange(!(props.open ?? innerOpen.value))
-}
-
-defineExpose({ toggle })
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.collapsible || {}) })())
 </script>
 
 <template>
-  <Collapsible
-    :as="as"
-    :open="open ?? innerOpen"
-    :disabled="disabled"
-    :unmount-on-hide="unmountOnHide"
-    :class="cn('flex flex-col gap-1', ui?.root, props.class)"
-    @update:open="onOpenChange"
-  >
-    <CollapsibleTrigger as-child>
-      <slot name="trigger">
-        <button type="button" class="inline-flex w-fit cursor-pointer items-center gap-1 text-sm font-medium outline-none hover:underline">
-          展开详情
-          <ChevronDown :class="cn('size-4 transition-transform', (open ?? innerOpen) && 'rotate-180')" />
-        </button>
-      </slot>
+  <CollapsibleRoot v-slot="{ open }" v-bind="rootProps" data-slot="root" :class="ui.root({ class: [props.ui?.root, props.class] })">
+    <CollapsibleTrigger v-if="!!slots.default" as-child>
+      <slot :open="open" />
     </CollapsibleTrigger>
-    <CollapsibleContent :class="cn('text-sm text-muted-foreground', ui?.content)">
+
+    <CollapsibleContent data-slot="content" :class="ui.content({ class: props.ui?.content })">
       <slot name="content" />
     </CollapsibleContent>
-  </Collapsible>
+  </CollapsibleRoot>
 </template>

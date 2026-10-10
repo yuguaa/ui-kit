@@ -1,270 +1,167 @@
-<script setup lang="ts">
-/**
- * XCheckbox 多选框:按 Nuxt UI checkbox 结构二次封装。
- * root(容器)> container > base(控件)+ indicator(勾选指示)+ icon;
- * wrapper > label / description。
- * variant 支持 list / card,card 时整个卡片可点击;
- * indicator 支持 start / end / hidden,hidden 时图标显示在 label 上方。
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { computed, useAttrs, useId } from 'vue'
-import { Check, Minus } from '@lucide/vue'
-import { CheckboxIndicator, CheckboxRoot, Label as RekaLabel, Primitive } from 'reka-ui'
-import { cn } from '@/lib/utils'
+<script lang="ts">
+import type { CheckboxRootProps, CheckboxRootEmits } from 'reka-ui'
+import type { VNode } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/checkbox'
+import type { IconProps } from './XIcon.vue'
+import type { ButtonHTMLAttributes } from '../../lib/nuxt/types/html'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-type CheckboxColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
-type CheckboxVariant = 'list' | 'card'
-type CheckboxSize = 'sm' | 'md' | 'lg'
-type CheckboxIndicator = 'start' | 'end' | 'hidden'
+type Checkbox = ComponentConfig<typeof theme, AppConfig, 'checkbox'>
 
-/** 主题插槽类名,键名与 Nuxt UI 主题保持一致 */
-export interface CheckboxUi {
-  root?: string
-  container?: string
-  base?: string
-  indicator?: string
-  icon?: string
-  wrapper?: string
+export interface CheckboxProps<T = boolean> extends Pick<CheckboxRootProps<T>, 'disabled' | 'required' | 'name' | 'value' | 'id' | 'defaultValue' | 'modelValue' | 'trueValue' | 'falseValue'>, /** @vue-ignore */ Omit<ButtonHTMLAttributes, 'type' | 'disabled' | 'name'> {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
   label?: string
   description?: string
+  /**
+   * @defaultValue 'primary'
+   */
+  color?: Checkbox['variants']['color']
+  /**
+   * @defaultValue 'list'
+   */
+  variant?: Checkbox['variants']['variant']
+  /**
+   * @defaultValue 'md'
+   */
+  size?: Checkbox['variants']['size']
+  /**
+   * Position of the indicator.
+   * @defaultValue 'start'
+   */
+  indicator?: Checkbox['variants']['indicator']
+  /** Highlight the ring color like a focus state. */
+  highlight?: boolean
+  /**
+   * The icon displayed when checked, or above the label when `indicator` is `hidden`.
+   * @defaultValue appConfig.ui.icons.check
+   * @IconifyIcon
+   */
+  icon?: IconProps['name']
+  /**
+   * The icon displayed when the checkbox is indeterminate.
+   * @defaultValue appConfig.ui.icons.minus
+   * @IconifyIcon
+   */
+  indeterminateIcon?: IconProps['name']
+  class?: any
+  ui?: Checkbox['slots']
 }
 
-/** 勾选指示块的语义色,选中与半选时填充 */
-const indicatorColorClasses: Record<CheckboxColor, string> = {
-  primary: 'bg-primary text-background',
-  secondary: 'bg-secondary text-secondary-foreground',
-  neutral: 'bg-foreground text-background',
-  success: 'bg-success text-background',
-  info: 'bg-info text-background',
-  warning: 'bg-warning text-background',
-  error: 'bg-error text-background',
+export interface CheckboxEmits<T = boolean> extends CheckboxRootEmits<T> {
+  change: [event: Event]
 }
 
-/** card 变体的选中描边与浅色底 */
-const cardCheckedClasses: Record<CheckboxColor, string> = {
-  primary: 'has-data-[state=checked]:border-primary/50 has-data-[state=checked]:bg-primary/10',
-  secondary: 'has-data-[state=checked]:border-secondary/50 has-data-[state=checked]:bg-secondary',
-  neutral: 'has-data-[state=checked]:border-foreground/50 has-data-[state=checked]:bg-muted',
-  success: 'has-data-[state=checked]:border-success/50 has-data-[state=checked]:bg-success/10',
-  info: 'has-data-[state=checked]:border-info/50 has-data-[state=checked]:bg-info/10',
-  warning: 'has-data-[state=checked]:border-warning/50 has-data-[state=checked]:bg-warning/10',
-  error: 'has-data-[state=checked]:border-error/50 has-data-[state=checked]:bg-error/10',
+export interface CheckboxSlots {
+  label?(props: { label: string | undefined }): VNode[]
+  description?(props: { description: string | undefined }): VNode[]
 }
+</script>
 
-/** highlight 常显聚焦环颜色 */
-const highlightClasses: Record<CheckboxColor, string> = {
-  primary: 'ring-primary',
-  secondary: 'ring-secondary',
-  neutral: 'ring-foreground',
-  success: 'ring-success',
-  info: 'ring-info',
-  warning: 'ring-warning',
-  error: 'ring-error',
-}
-
-/** 尺寸与 card 内边距、hidden 时上方图标尺寸 */
-const sizeClasses: Record<CheckboxSize, { base: string, icon: string, container: string, wrapper: string, card: string, hiddenIcon: string }> = {
-  sm: { base: 'size-3.5', icon: 'size-3', container: 'h-4', wrapper: 'text-xs', card: 'p-3', hiddenIcon: 'size-3.5' },
-  md: { base: 'size-4', icon: 'size-3.5', container: 'h-5', wrapper: 'text-sm', card: 'p-3.5', hiddenIcon: 'size-4' },
-  lg: { base: 'size-5', icon: 'size-4', container: 'h-6', wrapper: 'text-base', card: 'p-4', hiddenIcon: 'size-4.5' },
-}
+<script setup lang="ts" generic="T = boolean">
+import { computed, useAttrs, useId } from 'vue'
+import { Primitive, CheckboxRoot, CheckboxIndicator, Label } from 'reka-ui'
+import { reactivePick } from '@vueuse/core'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
+import { useFormField } from '../../lib/nuxt/composables/useFormField'
+import { tv } from '../../lib/nuxt/utils/tv'
+import XIcon from './XIcon.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const props = withDefaults(defineProps<{
-  /** 选项文字 */
-  label?: string
-  /** 选项文字下方的辅助说明 */
-  description?: string
-  /** 选中与半选时指示块的颜色 */
-  color?: CheckboxColor
-  /** 展示形式,card 时整个卡片可点击 */
-  variant?: CheckboxVariant
-  /** 控件尺寸 */
-  size?: CheckboxSize
-  /** 指示块位置,hidden 时图标显示在 label 上方 */
-  indicator?: CheckboxIndicator
-  /** 常显高亮聚焦环 */
-  highlight?: boolean
-  /** 必选项,label 后显示 * */
-  required?: boolean
-  /** 是否禁用 */
-  disabled?: boolean
-  /** 半选状态 */
-  indeterminate?: boolean
-  /** 选项的值 */
-  value?: string | number
-  /** 选中时显示的图标 */
-  icon?: Component
-  /** 半选时显示的图标 */
-  indeterminateIcon?: Component
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 主题插槽类名 */
-  ui?: CheckboxUi
-  class?: HTMLAttributes['class']
-}>(), {
-  color: 'primary',
-  variant: 'list',
-  size: 'md',
-  indicator: 'start',
-  highlight: false,
-  required: false,
-  disabled: false,
-  indeterminate: false,
-})
+const _props = defineProps</* @vue-ignore */ CheckboxProps<T>>()
+const slots = defineSlots</* @vue-ignore */ CheckboxSlots>()
+const emits = defineEmits</* @vue-ignore */ CheckboxEmits<T>>()
 
-const model = defineModel<boolean | 'indeterminate'>({ default: false })
+const props = useComponentProps<CheckboxProps<T>>('checkbox', _props)
 
-const emit = defineEmits<{ change: [event: Event] }>()
+const appConfig = useAppConfig() as Checkbox['AppConfig']
+
+const rootProps = useForwardProps(reactivePick(props, 'required', 'value', 'defaultValue', 'modelValue', 'trueValue', 'falseValue'), emits)
+
+const { id: _id, emitFormChange, emitFormInput, size: formFieldSize, color: formFieldColor, highlight: formFieldHighlight, name, disabled: formFieldDisabled, ariaAttrs } = useFormField<CheckboxProps<T>>(_props)
+const id = _id.value ?? useId()
+
+// eslint-disable-next-line vue/no-dupe-keys
+const color = computed(() => formFieldColor.value ?? props.color)
+// eslint-disable-next-line vue/no-dupe-keys
+const highlight = computed(() => formFieldHighlight.value ?? props.highlight)
+// eslint-disable-next-line vue/no-dupe-keys
+const size = computed(() => formFieldSize.value ?? props.size)
+
+const disabled = computed(() => formFieldDisabled.value ?? props.disabled)
+
+// When the indicator is hidden the checked icon is never visible, so `icon` renders above the
+// label instead. No `appConfig` fallback here, an unset `icon` must render nothing.
+const labelIcon = computed(() => props.indicator === 'hidden' ? props.icon : undefined)
 
 const attrs = useAttrs()
-const generatedId = useId()
-const resolvedId = computed(() => (attrs.id as string | undefined) ?? generatedId)
 
-const checkedValue = computed(() => (props.indeterminate ? 'indeterminate' : model.value))
-
-/** indicator 为 hidden 时图标渲染在 label 上方,仅当显式传入 icon 时展示 */
-const labelIcon = computed(() => (props.indicator === 'hidden' ? props.icon : undefined))
-
-/** 透传属性:onClick 可能是数组(上层 as-child 合并),逐个调用 */
-function onClick(event: MouseEvent) {
-  const handler = attrs.onClick as
-    | ((event: MouseEvent) => unknown)
-    | Array<(event: MouseEvent) => unknown>
-    | undefined
-  if (handler == null) return
-
-  const handlers = Array.isArray(handler) ? handler : [handler]
-  for (const fn of handlers) fn(event)
-}
-
+// Omit `data-state` to prevent conflicts with parent components (e.g. TooltipTrigger)
 const forwardedAttrs = computed(() => {
-  const { 'data-state': _dataState, ...rest } = attrs
-  return { ...rest, onClick }
+  const { 'data-state': _, ...rest } = attrs
+  return rest
 })
 
-function onUpdate(value: boolean | 'indeterminate') {
-  model.value = value
-  const event = new Event('change')
-  Object.defineProperty(event, 'target', { value: { value } })
-  emit('change', event)
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.checkbox || {}) })({
+  size: size.value,
+  color: color.value,
+  variant: props.variant,
+  indicator: props.indicator,
+  highlight: highlight.value,
+  required: props.required,
+  disabled: disabled.value
+}))
+
+function onUpdate(value: any) {
+  // @ts-expect-error - 'target' does not exist in type 'EventInit'
+  const event = new Event('change', { target: { value } })
+  emits('change', event)
+  emitFormChange()
+  emitFormInput()
 }
-
-const rootClass = computed(() => cn(
-  'relative flex items-start',
-  props.variant === 'card' && cn(
-    'rounded-lg border border-border transition-colors hover:bg-muted/50',
-    cardCheckedClasses[props.color],
-    sizeClasses[props.size].card,
-  ),
-  props.indicator === 'start' && 'flex-row',
-  props.indicator === 'end' && 'flex-row-reverse',
-  props.disabled && 'opacity-75',
-  props.ui?.root,
-  props.class,
-))
-
-const containerClass = computed(() => cn(
-  'flex items-center',
-  sizeClasses[props.size].container,
-  props.indicator === 'hidden' && 'h-auto',
-  props.ui?.container,
-))
-
-const baseClass = computed(() => cn(
-  'rounded-sm ring-1 ring-inset overflow-hidden focus-visible:outline-none focus-visible:ring-3',
-  props.highlight ? cn('ring-2', highlightClasses[props.color]) : 'ring-input focus-visible:ring-ring/50',
-  sizeClasses[props.size].base,
-  props.indicator === 'hidden' && 'sr-only',
-  props.disabled && 'cursor-not-allowed',
-  props.ui?.base,
-))
-
-const indicatorClass = computed(() => cn(
-  'flex items-center justify-center size-full',
-  indicatorColorClasses[props.color],
-  props.ui?.indicator,
-))
-
-const iconClass = computed(() => cn(
-  'shrink-0',
-  props.indicator === 'hidden' ? sizeClasses[props.size].hiddenIcon : sizeClasses[props.size].icon,
-  props.ui?.icon,
-))
-
-const wrapperClass = computed(() => cn(
-  'w-full',
-  sizeClasses[props.size].wrapper,
-  props.indicator === 'start' && 'ms-2',
-  props.indicator === 'end' && 'me-2',
-  props.indicator === 'hidden' && 'flex flex-col items-center gap-1 text-center',
-  props.ui?.wrapper,
-))
-
-const labelClass = computed(() => cn(
-  'block font-medium text-foreground',
-  props.required && "after:content-['*'] after:ms-0.5 after:text-error",
-  props.disabled && 'cursor-not-allowed',
-  props.ui?.label,
-))
-
-const descriptionClass = computed(() => cn(
-  'text-muted-foreground',
-  props.disabled && 'cursor-not-allowed',
-  props.ui?.description,
-))
 </script>
 
+<!-- eslint-disable vue/no-template-shadow -->
 <template>
-  <Primitive
-    :as="variant === 'card' ? RekaLabel : (as ?? 'div')"
-    :for="variant === 'card' ? resolvedId : undefined"
-    data-slot="root"
-    :class="rootClass"
-  >
-    <div data-slot="container" :class="containerClass">
+  <Primitive :as="(!props.variant || props.variant === 'list') ? props.as : Label" :data-slot="($attrs['data-slot'] as string | undefined) ?? 'root'" :class="ui.root({ class: [props.ui?.root, props.class] })">
+    <div data-slot="container" :class="ui.container({ class: props.ui?.container })">
       <CheckboxRoot
-        v-bind="forwardedAttrs"
-        v-slot="{ state }"
-        :id="resolvedId"
-        data-slot="base"
-        :model-value="checkedValue"
-        :value="value == null ? undefined : String(value)"
+        :id="id"
+        v-bind="{ ...rootProps, ...forwardedAttrs, ...ariaAttrs }"
+        :name="name"
         :disabled="disabled"
-        :required="required"
-        :class="baseClass"
+        data-slot="base"
+        :class="ui.base({ class: props.ui?.base })"
         @update:model-value="onUpdate"
       >
-        <CheckboxIndicator data-slot="indicator" :class="indicatorClass">
-          <component
-            :is="state === 'indeterminate' ? (indeterminateIcon ?? Minus) : (icon ?? Check)"
-            data-slot="icon"
-            :class="iconClass"
-          />
-        </CheckboxIndicator>
+        <template #default="{ state }">
+          <CheckboxIndicator v-if="props.indicator !== 'hidden'" data-slot="indicator" :class="ui.indicator({ class: props.ui?.indicator })">
+            <XIcon v-if="state === 'indeterminate'" :name="props.indeterminateIcon || appConfig.ui.icons.minus" data-slot="icon" :class="ui.icon({ class: props.ui?.icon })" />
+            <XIcon v-else :name="props.icon || appConfig.ui.icons.check" data-slot="icon" :class="ui.icon({ class: props.ui?.icon })" />
+          </CheckboxIndicator>
+        </template>
       </CheckboxRoot>
     </div>
 
-    <div
-      v-if="labelIcon || label || $slots.label || description || $slots.description"
-      data-slot="wrapper"
-      :class="wrapperClass"
-    >
-      <component v-if="labelIcon" :is="labelIcon" data-slot="icon" :class="iconClass" />
-      <RekaLabel
-        v-if="(label || $slots.label) && variant !== 'card'"
-        :for="resolvedId"
-        data-slot="label"
-        :class="labelClass"
-      >
-        <slot name="label" :label="label">{{ label }}</slot>
-      </RekaLabel>
-      <p v-else-if="label || $slots.label" data-slot="label" :class="labelClass">
-        <slot name="label" :label="label">{{ label }}</slot>
-      </p>
-      <p v-if="description || $slots.description" data-slot="description" :class="descriptionClass">
-        <slot name="description" :description="description">{{ description }}</slot>
+    <div v-if="labelIcon || (props.label || !!slots.label) || (props.description || !!slots.description)" data-slot="wrapper" :class="ui.wrapper({ class: props.ui?.wrapper })">
+      <XIcon v-if="labelIcon" :name="labelIcon" data-slot="icon" :class="ui.icon({ class: props.ui?.icon })" />
+      <component :is="(!props.variant || props.variant === 'list') ? Label : 'p'" v-if="props.label || !!slots.label" :for="id" data-slot="label" :class="ui.label({ class: props.ui?.label })">
+        <slot name="label" :label="props.label">
+          {{ props.label }}
+        </slot>
+      </component>
+      <p v-if="props.description || !!slots.description" data-slot="description" :class="ui.description({ class: props.ui?.description })">
+        <slot name="description" :description="props.description">
+          {{ props.description }}
+        </slot>
       </p>
     </div>
   </Primitive>

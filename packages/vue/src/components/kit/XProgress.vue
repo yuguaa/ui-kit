@@ -1,223 +1,199 @@
-<script setup lang="ts">
-/**
- * XProgress 进度条：与 Nuxt UI Progress 对齐。
- * modelValue 为 null 时进入不确定进度，按 animation 播放指示器动画；
- * max 传数组时渲染 steps 步骤；status 开关显示百分比文本。
- */
-import type { Component, HTMLAttributes, VNode } from 'vue'
-import { computed } from 'vue'
-import { Primitive, ProgressIndicator, ProgressRoot } from 'reka-ui'
-import { cn } from '@/lib/utils'
+<!-- eslint-disable vue/block-tag-newline -->
+<script lang="ts">
+import type { ProgressRootProps, ProgressRootEmits } from 'reka-ui'
+import type { VNode } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/progress'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface ProgressUi {
-  root?: string
-  base?: string
-  indicator?: string
-  status?: string
-  steps?: string
-  step?: string
+type Progress = ComponentConfig<typeof theme, AppConfig, 'progress'>
+
+export interface ProgressProps extends Pick<ProgressRootProps, 'getValueLabel' | 'getValueText' | 'modelValue'> {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
+  /** The maximum progress value. */
+  max?: number | Array<any>
+  /** Display the current progress value. */
+  status?: boolean
+  /** Whether the progress is visually inverted. */
+  inverted?: boolean
+  /**
+   * @defaultValue 'md'
+   */
+  size?: Progress['variants']['size']
+  /**
+   * Any theme color, or any CSS color value for palettes outside the theme.
+   * @defaultValue 'primary'
+   */
+  color?: Progress['variants']['color'] | (string & {})
+  /**
+   * The orientation of the progress bar.
+   * @defaultValue 'horizontal'
+   */
+  orientation?: Progress['variants']['orientation']
+  /**
+   * The animation of the progress bar.
+   * @defaultValue 'carousel'
+   */
+  animation?: Progress['variants']['animation']
+  class?: any
+  ui?: Progress['slots']
 }
 
-/** 插槽：status 接收百分比；step-{index} 动态插槽接收当前步骤文案 */
+export interface ProgressEmits extends ProgressRootEmits {}
+
 export type ProgressSlots = {
   status?(props: { percent?: number }): VNode[]
 } & {
   [key: string]: (props: { step: number }) => VNode[]
 }
 
-type ProgressColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
-type ProgressOrientation = 'horizontal' | 'vertical'
-type ProgressAnimation = 'carousel' | 'carousel-inverse' | 'swing' | 'elastic'
+</script>
 
-defineSlots<ProgressSlots>()
+<script setup lang="ts">
+import { computed } from 'vue'
+import { Primitive, ProgressRoot, ProgressIndicator } from 'reka-ui'
+import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
+import { reactivePick } from '@vueuse/core'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { useLocale } from '../../lib/nuxt/composables/useLocale'
+import { tv } from '../../lib/nuxt/utils/tv'
 
-const props = withDefaults(defineProps<{
-  /** 最大进度值；传数组时渲染步骤条，值为每步文案 */
-  max?: number | Array<any>
-  /** 显示当前进度百分比（status 插槽默认内容） */
-  status?: boolean
-  /** 进度方向是否反转 */
-  inverted?: boolean
-  /** 指示条与步骤文字颜色 */
-  color?: ProgressColor
-  /** 进度方向 */
-  orientation?: ProgressOrientation
-  /** 不确定进度的指示器动画 */
-  animation?: ProgressAnimation
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 主题插槽类名 */
-  ui?: ProgressUi
-  class?: HTMLAttributes['class']
-}>(), {
-  status: false,
+const _props = withDefaults(defineProps</* @vue-ignore */ ProgressProps>(), {
   inverted: false,
-  color: 'primary',
-  orientation: 'horizontal',
-  animation: 'carousel',
+  modelValue: null,
+  orientation: 'horizontal'
 })
+const emits = defineEmits</* @vue-ignore */ ProgressEmits>()
+const slots = defineSlots</* @vue-ignore */ ProgressSlots>()
 
-/** 绑定值：null 表示不确定进度 */
-const modelValue = defineModel<number | null>({ default: null })
+const props = useComponentProps('progress', _props)
 
-const isIndeterminate = computed(() => modelValue.value == null)
+const { dir } = useLocale()
+const appConfig = useAppConfig() as Progress['AppConfig']
+
+const rootProps = useForwardProps(reactivePick(props, 'getValueLabel', 'getValueText', 'modelValue'), emits)
+
+const isIndeterminate = computed(() => rootProps.value.modelValue === null)
 const hasSteps = computed(() => Array.isArray(props.max))
 
 const realMax = computed(() => {
-  if (isIndeterminate.value || props.max == null) return undefined
-  if (Array.isArray(props.max)) return props.max.length - 1
+  if (isIndeterminate.value || !props.max) {
+    return undefined
+  }
+
+  if (Array.isArray(props.max)) {
+    return props.max.length - 1
+  }
+
   return Number(props.max)
 })
 
 const percent = computed(() => {
-  if (isIndeterminate.value) return undefined
-  const value = modelValue.value as number
+  if (isIndeterminate.value) {
+    return undefined
+  }
+
   switch (true) {
-    case value < 0: return 0
-    case value > (realMax.value ?? 100): return 100
-    default: return Math.round((value / (realMax.value ?? 100)) * 100)
+    case rootProps.value.modelValue! < 0: return 0
+    case rootProps.value.modelValue! > (realMax.value ?? 100): return 100
+    default: return Math.round((rootProps.value.modelValue! / (realMax.value ?? 100)) * 100)
   }
 })
 
-/** 指示器位移：不确定进度时由动画接管 */
 const indicatorStyle = computed(() => {
-  if (percent.value == null) return undefined
-  if (props.orientation === 'vertical') {
-    return { transform: `translateY(${props.inverted ? '' : '-'}${100 - percent.value}%)` }
+  if (percent.value === undefined) {
+    return
   }
-  return { transform: `translateX(${props.inverted ? '' : '-'}${100 - percent.value}%)` }
+
+  if (props.orientation === 'vertical') {
+    return {
+      transform: `translateY(${props.inverted ? '' : '-'}${100 - percent.value}%)`
+    }
+  } else {
+    if (dir.value === 'rtl') {
+      return {
+        transform: `translateX(${props.inverted ? '-' : ''}${100 - percent.value}%)`
+      }
+    } else {
+      return {
+        transform: `translateX(${props.inverted ? '' : '-'}${100 - percent.value}%)`
+      }
+    }
+  }
 })
 
-/** 百分比文本容器宽度，通过 CSS 变量驱动 */
+// The theme reads the size off `--percent` so `ui.status` can override it, an inline
+// `width` would win over the class.
 const statusStyle = computed(() => ({ '--percent': `${Math.max(percent.value ?? 0, 0)}%` }))
 
-/** 颜色映射：indicator 背景与 steps 文字 */
-const colorClasses: Record<ProgressColor, { indicator: string; steps: string }> = {
-  primary: { indicator: 'bg-primary', steps: 'text-primary' },
-  secondary: { indicator: 'bg-secondary', steps: 'text-secondary-foreground' },
-  neutral: { indicator: 'bg-foreground', steps: 'text-foreground' },
-  success: { indicator: 'bg-success', steps: 'text-success' },
-  info: { indicator: 'bg-info', steps: 'text-info' },
-  warning: { indicator: 'bg-warning', steps: 'text-warning' },
-  error: { indicator: 'bg-error', steps: 'text-error' },
+function isActive(index: number) {
+  return index === Number(props.modelValue)
 }
 
-/** 不确定进度动画（keyframes 定义在包入口 index.css） */
-const animationClasses: Record<ProgressAnimation, Record<ProgressOrientation, string>> = {
-  carousel: {
-    horizontal: 'motion-safe:data-[state=indeterminate]:animate-[carousel_2s_linear_infinite]',
-    vertical: 'motion-safe:data-[state=indeterminate]:animate-[carousel-vertical_2s_linear_infinite]',
-  },
-  'carousel-inverse': {
-    horizontal: 'motion-safe:data-[state=indeterminate]:animate-[carousel-inverse_2s_linear_infinite]',
-    vertical: 'motion-safe:data-[state=indeterminate]:animate-[carousel-inverse-vertical_2s_linear_infinite]',
-  },
-  swing: {
-    horizontal: 'motion-safe:data-[state=indeterminate]:animate-[swing_2s_var(--ease-in-out)_infinite]',
-    vertical: 'motion-safe:data-[state=indeterminate]:animate-[swing-vertical_2s_var(--ease-in-out)_infinite]',
-  },
-  elastic: {
-    horizontal: 'motion-safe:data-[state=indeterminate]:animate-[elastic_2s_var(--ease-in-out)_infinite]',
-    vertical: 'motion-safe:data-[state=indeterminate]:animate-[elastic-vertical_2s_var(--ease-in-out)_infinite]',
-  },
+function isFirst(index: number) {
+  return index === 0
 }
 
-/** 步骤项显隐（激活项显示，其余隐藏） */
-const stepVariantClasses: Record<'active' | 'first' | 'other' | 'last', string> = {
-  active: 'opacity-100',
-  first: 'opacity-100 text-muted-foreground',
-  other: 'opacity-0',
-  last: '',
+function isLast(index: number) {
+  return index === realMax.value
 }
 
-function isActiveStep(index: number) {
-  return index === Number(modelValue.value)
-}
+function stepVariant(index: number | string) {
+  index = Number(index)
 
-function stepVariant(index: number) {
-  if (isActiveStep(index) && index !== 0) return 'active'
-  if (index === 0 && isActiveStep(index)) return 'first'
-  if (index === realMax.value && isActiveStep(index)) return 'last'
+  if (isActive(index) && !isFirst(index)) {
+    return 'active'
+  }
+
+  if (isFirst(index) && isActive(index)) {
+    return 'first'
+  }
+
+  if (isLast(index) && isActive(index)) {
+    return 'last'
+  }
+
   return 'other'
 }
+
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.progress || {}) })({
+  animation: props.animation,
+  size: props.size,
+  color: props.color as Progress['variants']['color'],
+  orientation: props.orientation,
+  inverted: props.inverted
+}))
+
+// `tv` skips a color it doesn't know, so a value outside the theme palette adds no class
+// and is applied inline instead.
+const themeColors = computed(() => Object.keys({ ...theme.variants?.color, ...appConfig.ui?.progress?.variants?.color }))
+
+const customColor = computed(() => props.color && !themeColors.value.includes(props.color) ? props.color : undefined)
 </script>
 
 <template>
-  <Primitive
-    :as="as ?? 'div'"
-    :data-orientation="orientation"
-    data-slot="root"
-    :class="cn(
-      'gap-2',
-      orientation === 'horizontal' ? 'w-full flex flex-col' : 'h-full flex flex-row-reverse',
-      ui?.root,
-      props.class,
-    )"
-  >
-    <div
-      v-if="!isIndeterminate && (status || $slots.status)"
-      data-slot="status"
-      :class="cn(
-        'flex text-muted-foreground duration-200 ease-out motion-reduce:transition-none',
-        orientation === 'horizontal'
-          ? 'flex-row items-center justify-end w-(--percent) min-w-fit transition-[width]'
-          : 'flex-col justify-end h-(--percent) min-h-fit transition-[height]',
-        inverted && 'self-end',
-        inverted && orientation === 'horizontal' && 'flex-row-reverse',
-        ui?.status,
-      )"
-      :style="statusStyle"
-    >
-      <slot name="status" :percent="percent">{{ percent }}%</slot>
+  <Primitive :as="props.as" :data-orientation="props.orientation" data-slot="root" :class="ui.root({ class: [props.ui?.root, props.class] })">
+    <div v-if="!isIndeterminate && (props.status || !!slots.status)" data-slot="status" :class="ui.status({ class: props.ui?.status })" :style="statusStyle">
+      <slot name="status" :percent="percent">
+        {{ percent }}%
+      </slot>
     </div>
 
-    <ProgressRoot
-      v-bind="{ modelValue }"
-      :max="realMax"
-      data-slot="base"
-      :class="cn(
-        'relative overflow-hidden rounded-full bg-muted',
-        orientation === 'horizontal' ? 'w-full h-2' : 'h-full w-2',
-        ui?.base,
-      )"
-      style="transform: translateZ(0)"
-    >
-      <ProgressIndicator
-        data-slot="indicator"
-        :class="cn(
-          'rounded-full size-full transition-transform duration-200 ease-out motion-reduce:transition-none motion-reduce:data-[state=indeterminate]:animate-pulse',
-          animationClasses[animation][orientation],
-          animation === 'elastic' && 'relative',
-          colorClasses[color].indicator,
-          ui?.indicator,
-        )"
-        :style="indicatorStyle"
-      />
+    <ProgressRoot v-bind="rootProps" :max="realMax" data-slot="base" :class="ui.base({ class: props.ui?.base })" style="transform: translateZ(0)">
+      <ProgressIndicator data-slot="indicator" :class="ui.indicator({ class: props.ui?.indicator })" :style="[indicatorStyle, customColor ? { backgroundColor: customColor } : undefined]" />
     </ProgressRoot>
 
-    <div
-      v-if="hasSteps"
-      data-slot="steps"
-      :class="cn(
-        'grid items-end',
-        inverted && orientation === 'vertical' && 'items-start',
-        colorClasses[color].steps,
-        ui?.steps,
-      )"
-    >
-      <div
-        v-for="(step, index) in max"
-        :key="index"
-        data-slot="step"
-        :class="cn(
-          'truncate text-end row-start-1 col-start-1 transition-opacity ease-out',
-          stepVariantClasses[stepVariant(index)],
-          inverted && orientation === 'horizontal' && 'text-start',
-          ui?.step,
-        )"
-      >
-        <slot :name="`step-${index}`" :step="step">{{ step }}</slot>
+    <div v-if="hasSteps" data-slot="steps" :class="ui.steps({ class: props.ui?.steps })" :style="customColor ? { color: customColor } : undefined">
+      <div v-for="(step, index) in props.max" :key="index" data-slot="step" :class="ui.step({ class: props.ui?.step, step: stepVariant(index) })">
+        <slot :name="`step-${index}`" :step="step">
+          {{ step }}
+        </slot>
       </div>
     </div>
   </Primitive>

@@ -1,294 +1,214 @@
-<script setup lang="ts">
-/**
- * XPinInput 验证码输入：shadcn-vue input-otp 原子的二次封装。
- * 注入 Nuxt UI 语义：variant × color、size、highlight、fixed、separator。
- * 变体：outline | soft | subtle | ghost | none
- * 颜色：primary | secondary | neutral | success | info | warning | error
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { computed, onMounted, ref, useTemplateRef } from 'vue'
-import { Primitive } from 'reka-ui'
-import { InputOTP, InputOTPGroup, InputOTPSlot } from '@/components/ui/input-otp'
-import { cn } from '@/lib/utils'
+<!-- eslint-disable vue/block-tag-newline -->
+<script lang="ts">
+import type { ComponentPublicInstance, VNode } from 'vue'
+import type { PinInputRootEmits, PinInputRootProps } from 'reka-ui'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/pin-input'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-/* 根节点由 Primitive 渲染，未声明的属性透传到根元素 */
-defineOptions({ name: 'XPinInput', inheritAttrs: false })
+type PinInput = ComponentConfig<typeof theme, AppConfig, 'pinInput'>
 
-type PinInputSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-type PinInputColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
-type PinInputVariant = 'outline' | 'soft' | 'subtle' | 'ghost' | 'none'
+type PinInputType = 'text' | 'number'
+type PinInputValue<Type extends PinInputType> = [Type] extends ['number'] ? number[] : string[]
 
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface PinInputUi {
-  root?: string
-  base?: string
-  separator?: string
-}
-
-const props = withDefaults(defineProps<{
-  /** 绑定值（支持 v-model） */
-  modelValue?: string
-  /** 默认值 */
-  defaultValue?: string
-  /** 位数 */
-  length?: number
-  /** 是否掩码（视觉隐藏已输入字符） */
-  mask?: boolean
-  /** 是否禁用 */
-  disabled?: boolean
-  /** 控件尺寸 */
-  size?: PinInputSize
-  /** 组件颜色（聚焦描边与高亮） */
-  color?: PinInputColor
-  /** 预设样式 */
-  variant?: PinInputVariant
-  /** 高亮：始终显示颜色描边，类似聚焦态 */
-  highlight?: boolean
-  /** 保持移动端字号在所有断点一致 */
-  fixed?: boolean
-  /** 分组分隔：数字表示每隔 N 个输入槽插入分隔符，数组表示指定位置之后插入 */
-  separator?: number | number[]
-  /** 自动聚焦第一个输入槽 */
+export interface PinInputProps<T extends PinInputType = 'text'> extends Pick<PinInputRootProps<T>, 'defaultValue' | 'disabled' | 'id' | 'mask' | 'modelValue' | 'name' | 'otp' | 'placeholder' | 'required' | 'type'> {
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
+  as?: any
+  /**
+   * @defaultValue 'primary'
+   */
+  color?: PinInput['variants']['color']
+  /**
+   * @defaultValue 'outline'
+   */
+  variant?: PinInput['variants']['variant']
+  /**
+   * @defaultValue 'md'
+   */
+  size?: PinInput['variants']['size']
+  /**
+   * The number of input fields.
+   * @defaultValue 5
+   */
+  length?: number | string
   autofocus?: boolean
-  /** 自动聚焦延迟（ms） */
   autofocusDelay?: number
-  /** 以一次性验证码形式提示浏览器（autocomplete=one-time-code） */
-  otp?: boolean
-  /** 输入框类型（如 number） */
-  type?: string
-  /** 占位提示文字 */
-  placeholder?: string
-  /** 是否必填 */
-  required?: boolean
-  /** 与表单关联的 id */
-  id?: string
-  /** 表单提交时的字段名 */
-  name?: string
-  /** 渲染为指定元素或组件 */
-  as?: string | Component
-  /** 主题插槽类名 */
-  ui?: PinInputUi
-  class?: HTMLAttributes['class']
-}>(), {
-  defaultValue: '',
-  length: 5,
-  mask: false,
-  disabled: false,
-  size: 'md',
-  color: 'primary',
-  variant: 'outline',
-  highlight: false,
-  fixed: true,
-  autofocus: false,
-  autofocusDelay: 0,
-  otp: false,
-  type: 'text',
-})
+  highlight?: boolean
+  /** Keep the mobile text size on all breakpoints. */
+  fixed?: boolean
+  /**
+   * Group inputs by inserting a separator between them.
+   * Pass a number to insert one after every Nth input, or an array of positions to insert after specific inputs.
+   * @example 3 // after every 3rd input → [X][X][X] • [X][X][X]
+   * @example [3, 4] // after the 3rd and 4th inputs → [X][X][X] • [X] • [X][X][X]
+   */
+  separator?: number | number[]
+  class?: any
+  ui?: PinInput['slots']
+}
 
-const emit = defineEmits<{
-  'update:modelValue': [value: string]
-  /** 输入完成回调 */
-  complete: [value: string]
-  /** 输入完成时触发（带 target.value） */
+export type PinInputEmits<T extends PinInputType = 'text'> = PinInputRootEmits<T> & {
   change: [event: Event]
-  /** 焦点离开组件时触发 */
-  blur: [event: FocusEvent]
-  /** 焦点进入组件时触发 */
-  focus: [event: FocusEvent]
-}>()
-
-/* 非受控用法在组件内部维护当前值 */
-const inner = ref(props.defaultValue)
-const current = computed(() => props.modelValue ?? inner.value)
-
-const rootRef = useTemplateRef<HTMLElement>('rootRef')
-
-/* autofocusDelay 后聚焦第一个输入槽 */
-onMounted(() => {
-  if (!props.autofocus) return
-  setTimeout(() => {
-    rootRef.value?.querySelector('input')?.focus()
-  }, props.autofocusDelay)
-})
-
-function handleUpdate(value: string | undefined) {
-  if (props.modelValue === undefined) inner.value = value ?? ''
-  emit('update:modelValue', value ?? '')
+  blur: [event: Event]
+  focus: [event: Event]
 }
 
-/* 输入完成：派发 change 与 complete（与 Nuxt UI 相同的双事件语义） */
-function onComplete(value: string) {
-  // @ts-expect-error target 不属于 EventInit，与 Nuxt UI 相同的构造方式
-  const event = new Event('change', { target: { value } })
-  emit('change', event)
-  emit('complete', value)
-}
-
-function onFocusIn(event: FocusEvent) {
-  if (event.relatedTarget && (event.currentTarget as HTMLElement).contains(event.relatedTarget as Node)) return
-  emit('focus', event)
-}
-
-function onFocusOut(event: FocusEvent) {
-  if (event.relatedTarget && (event.currentTarget as HTMLElement).contains(event.relatedTarget as Node)) return
-  emit('blur', event)
-}
-
-/* 分隔符插入位置：与 Nuxt UI PinInput 相同的计算规则 */
-function shouldInsertSeparator(index: number) {
-  if (props.separator === undefined) return false
-  const position = index + 1
-  if (position >= props.length) return false
-  if (Array.isArray(props.separator)) return props.separator.includes(position)
-  return Number.isInteger(props.separator) && props.separator > 0 && position % props.separator === 0
-}
-
-/** 尺寸 → 输入槽方块与字号 */
-const slotSizeClasses: Record<PinInputSize, string> = {
-  xs: 'size-6 text-sm/4',
-  sm: 'size-7 text-sm/4',
-  md: 'size-8 text-base/5',
-  lg: 'size-9 text-base/5',
-  xl: 'size-10 text-base',
-}
-
-/** 变体样式（Nuxt UI 语义 → 本地 token） */
-const variantClasses: Record<PinInputVariant, string> = {
-  outline: 'bg-background ring-1 ring-inset ring-border',
-  soft: 'bg-muted/50 hover:bg-muted focus:bg-muted disabled:bg-muted/50',
-  subtle: 'bg-muted ring-1 ring-inset ring-border',
-  ghost: 'bg-transparent hover:bg-muted focus:bg-muted disabled:bg-transparent',
-  none: 'bg-transparent focus:outline-none',
-}
-
-/** 聚焦描边（颜色 × 变体）：outline / subtle 聚焦时叠加 ring */
-const focusStyles: Record<PinInputColor, Record<PinInputVariant, string>> = {
-  primary: {
-    outline: 'outline-primary/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-primary',
-    soft: 'outline-primary/25 focus-visible:outline-3',
-    subtle: 'outline-primary/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-primary',
-    ghost: 'outline-primary/25 focus-visible:outline-3',
-    none: '',
-  },
-  secondary: {
-    outline: 'outline-secondary/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-secondary',
-    soft: 'outline-secondary/25 focus-visible:outline-3',
-    subtle: 'outline-secondary/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-secondary',
-    ghost: 'outline-secondary/25 focus-visible:outline-3',
-    none: '',
-  },
-  neutral: {
-    outline: 'outline-foreground/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-foreground',
-    soft: 'outline-foreground/25 focus-visible:outline-3',
-    subtle: 'outline-foreground/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-foreground',
-    ghost: 'outline-foreground/25 focus-visible:outline-3',
-    none: '',
-  },
-  success: {
-    outline: 'outline-success/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-success',
-    soft: 'outline-success/25 focus-visible:outline-3',
-    subtle: 'outline-success/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-success',
-    ghost: 'outline-success/25 focus-visible:outline-3',
-    none: '',
-  },
-  info: {
-    outline: 'outline-info/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-info',
-    soft: 'outline-info/25 focus-visible:outline-3',
-    subtle: 'outline-info/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-info',
-    ghost: 'outline-info/25 focus-visible:outline-3',
-    none: '',
-  },
-  warning: {
-    outline: 'outline-warning/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-warning',
-    soft: 'outline-warning/25 focus-visible:outline-3',
-    subtle: 'outline-warning/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-warning',
-    ghost: 'outline-warning/25 focus-visible:outline-3',
-    none: '',
-  },
-  error: {
-    outline: 'outline-error/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-error',
-    soft: 'outline-error/25 focus-visible:outline-3',
-    subtle: 'outline-error/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-error',
-    ghost: 'outline-error/25 focus-visible:outline-3',
-    none: '',
-  },
-}
-
-/** 高亮描边色 */
-const highlightClasses: Record<PinInputColor, string> = {
-  primary: 'ring-1 ring-inset ring-primary',
-  secondary: 'ring-1 ring-inset ring-secondary',
-  neutral: 'ring-1 ring-inset ring-border',
-  success: 'ring-1 ring-inset ring-success',
-  info: 'ring-1 ring-inset ring-info',
-  warning: 'ring-1 ring-inset ring-warning',
-  error: 'ring-1 ring-inset ring-error',
-}
-
-/** fixed=false 时桌面端缩小一档字号 */
-const fixedTextClasses: Partial<Record<PinInputSize, string>> = {
-  xs: 'md:text-xs',
-  sm: 'md:text-xs',
-  md: 'md:text-sm',
-  lg: 'md:text-sm',
+export interface PinInputSlots {
+  separator?(props: { index: number }): VNode[]
 }
 </script>
 
+<script setup lang="ts" generic="T extends PinInputType">
+import { ref, computed, onMounted, onScopeDispose } from 'vue'
+import { PinInputInput, PinInputRoot } from 'reka-ui'
+import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
+import { reactivePick } from '@vueuse/core'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { useFormField } from '../../lib/nuxt/composables/useFormField'
+import { looseToNumber } from '../../lib/nuxt/utils'
+import { tv } from '../../lib/nuxt/utils/tv'
+
+const _props = withDefaults(defineProps</* @vue-ignore */ PinInputProps<T>>(), {
+  type: 'text' as never,
+  length: 5,
+  autofocusDelay: 0
+})
+const emits = defineEmits</* @vue-ignore */ PinInputEmits<T>>()
+defineSlots</* @vue-ignore */ PinInputSlots>()
+
+const props = useComponentProps<PinInputProps<T>>('pinInput', _props)
+
+const appConfig = useAppConfig() as PinInput['AppConfig']
+
+const rootProps = useForwardProps(reactivePick(props, 'disabled', 'id', 'mask', 'name', 'otp', 'required', 'type'), emits)
+
+const { emitFormInput, emitFormFocus, emitFormChange, emitFormBlur, size: formFieldSize, color: formFieldColor, id, name, highlight: formFieldHighlight, disabled: formFieldDisabled, ariaAttrs } = useFormField<PinInputProps>(_props)
+
+// eslint-disable-next-line vue/no-dupe-keys
+const color = computed(() => formFieldColor.value ?? props.color)
+// eslint-disable-next-line vue/no-dupe-keys
+const highlight = computed(() => formFieldHighlight.value ?? props.highlight)
+// eslint-disable-next-line vue/no-dupe-keys
+const size = computed(() => formFieldSize.value ?? props.size)
+
+const disabled = computed(() => formFieldDisabled.value ?? props.disabled)
+
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.pinInput || {}) })({
+  color: color.value,
+  variant: props.variant,
+  size: size.value,
+  highlight: highlight.value,
+  fixed: props.fixed
+}))
+
+const inputsRef = ref<ComponentPublicInstance[]>([])
+
+function setInputRef(index: number, el: Element | ComponentPublicInstance | null) {
+  // @ts-expect-error - ComponentPublicInstance type mismatch in Nuxt module augmentation
+  inputsRef.value[index] = el
+}
+
+function onComplete(value: string[] | number[]) {
+  // @ts-expect-error - 'target' does not exist in type 'EventInit'
+  const event = new Event('change', { target: { value } })
+  emits('change', event)
+  emitFormChange()
+}
+
+function onFocusOut(event: FocusEvent) {
+  if (event.relatedTarget && (event.currentTarget as HTMLElement).contains(event.relatedTarget as Node)) {
+    return
+  }
+
+  emits('blur', event)
+  emitFormBlur()
+}
+
+function onFocusIn(event: FocusEvent) {
+  if (event.relatedTarget && (event.currentTarget as HTMLElement).contains(event.relatedTarget as Node)) {
+    return
+  }
+
+  emits('focus', event)
+  emitFormFocus()
+}
+
+function autoFocus() {
+  if (props.autofocus) {
+    inputsRef.value[0]?.$el?.focus()
+  }
+}
+
+function shouldInsertSeparator(index: number) {
+  if (props.separator === undefined) {
+    return false
+  }
+
+  const position = index + 1
+  if (position >= looseToNumber(props.length)) {
+    return false
+  }
+
+  if (Array.isArray(props.separator)) {
+    return props.separator.includes(position)
+  }
+
+  const separator = looseToNumber(props.separator)
+  return Number.isInteger(separator) && separator > 0 && position % separator === 0
+}
+
+let autofocusTimeoutId: ReturnType<typeof setTimeout> | undefined
+
+onMounted(() => {
+  autofocusTimeoutId = setTimeout(() => {
+    autoFocus()
+  }, props.autofocusDelay)
+})
+
+onScopeDispose(() => clearTimeout(autofocusTimeoutId))
+
+defineExpose({
+  inputsRef
+})
+</script>
+
 <template>
-  <Primitive
-    ref="rootRef"
-    :as="as ?? 'div'"
-    v-bind="$attrs"
+  <PinInputRoot
+    v-bind="({ ...rootProps, ...ariaAttrs } as any)"
+    :id="id"
+    :name="name"
+    :placeholder="props.placeholder"
+    :model-value="(props.modelValue as PinInputValue<T>)"
+    :default-value="(props.defaultValue as PinInputValue<T>)"
     data-slot="root"
-    :class="cn(
-      'relative inline-flex items-center gap-1.5',
-      mask && '[&_[data-slot=input-otp-slot]]:text-transparent',
-      props.ui?.root,
-      props.class,
-    )"
+    :class="ui.root({ class: [props.ui?.root, props.class] })"
+    @update:model-value="emitFormInput()"
+    @complete="onComplete"
+    @focusout="onFocusOut"
+    @focusin="onFocusIn"
   >
-    <InputOTP
-      :model-value="current"
-      :default-value="defaultValue"
-      :maxlength="length"
-      :disabled="disabled"
-      container-class="flex items-center gap-1.5"
-      :type="type"
-      :name="name"
-      :placeholder="placeholder"
-      :required="required"
-      :autocomplete="otp ? 'one-time-code' : undefined"
-      :inputmode="type === 'number' ? 'numeric' : undefined"
-      @update:model-value="handleUpdate"
-      @complete="onComplete"
-      @focus="onFocusIn"
-      @blur="onFocusOut"
-    >
-      <InputOTPGroup class="gap-1.5">
-        <template v-for="index in length" :key="index">
-          <InputOTPSlot
-            :index="index - 1"
-            :class="cn(
-              'rounded-md border-0 placeholder:text-muted-foreground text-center disabled:cursor-not-allowed disabled:opacity-75 transition-colors',
-              slotSizeClasses[size],
-              variantClasses[variant],
-              focusStyles[color][variant],
-              highlight && highlightClasses[color],
-              fixed === false && fixedTextClasses[size],
-              props.ui?.base,
-            )"
-          />
-          <span
-            v-if="shouldInsertSeparator(index - 1)"
-            data-slot="pin-input-separator"
-            role="presentation"
-            aria-hidden="true"
-            :class="cn('flex items-center justify-center text-muted-foreground', props.ui?.separator)"
-          >
-            <slot name="separator" :index="index - 1">•</slot>
-          </span>
-        </template>
-      </InputOTPGroup>
-    </InputOTP>
-  </Primitive>
+    <template v-for="(ids, index) in looseToNumber(props.length)" :key="ids">
+      <PinInputInput
+        :ref="el => setInputRef(index as number, el)"
+        :index="(index as number)"
+        data-slot="base"
+        :class="ui.base({ class: props.ui?.base })"
+        :disabled="disabled"
+      />
+      <span
+        v-if="shouldInsertSeparator(index as number)"
+        data-slot="separator"
+        role="presentation"
+        aria-hidden="true"
+        :class="ui.separator({ class: props.ui?.separator })"
+      >
+        <slot name="separator" :index="(index as number)">•</slot>
+      </span>
+    </template>
+  </PinInputRoot>
 </template>

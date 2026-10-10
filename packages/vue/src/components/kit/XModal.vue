@@ -1,260 +1,252 @@
-<script setup lang="ts">
-/**
- * XModal 对话框：与 Nuxt UI Modal 对齐的模态对话框。
- * 属性、插槽与 ui 主题插槽键（overlay / content / header / wrapper / body / footer / title / description / close）一比一对应。
- * 支持 scrollable 滚动遮罩、fullscreen 全屏、close 关闭按钮、dismissible 关闭策略。
- */
-import type { Component, HTMLAttributes } from 'vue'
-import { computed, useSlots } from 'vue'
-import { createReusableTemplate } from '@vueuse/core'
-import { XIcon } from '@lucide/vue'
-import {
-  DialogClose,
-  DialogContent,
-  DialogDescription,
-  DialogOverlay,
-  DialogPortal,
-  DialogRoot,
-  DialogTitle,
-  DialogTrigger,
-  VisuallyHidden,
-} from 'reka-ui'
-import XButton from '@/components/kit/XButton.vue'
-import { cn } from '@/lib/utils'
+<script lang="ts">
+import type { DialogRootProps, DialogRootEmits, DialogContentProps, DialogContentEmits, PointerDownOutsideEvent } from 'reka-ui'
+import type { VNode } from 'vue'
+import type { AppConfig } from '@/lib/nuxt/types/app-config'
+import theme from '@/lib/nuxt/ui/modal'
+import type { ButtonProps } from './XButton.vue'
+import type { IconProps } from './XIcon.vue'
+import type { LinkPropsKeys } from './XLink.vue'
+import type { EmitsToProps } from '../../lib/nuxt/types/utils'
+import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-/** close 为对象时透传给关闭按钮的属性 */
-export type ModalClose = boolean | {
-  size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-  color?: 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
-  variant?: 'solid' | 'outline' | 'soft' | 'ghost' | 'subtle' | 'link'
-}
+type Modal = ComponentConfig<typeof theme, AppConfig, 'modal'>
 
-/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
-export interface ModalUi {
-  overlay?: string
-  content?: string
-  header?: string
-  wrapper?: string
-  body?: string
-  footer?: string
+export interface ModalProps extends DialogRootProps {
   title?: string
   description?: string
-  close?: string
-}
-
-const props = withDefaults(defineProps<{
-  /** 标题 */
-  title?: string
-  /** 辅助说明 */
-  description?: string
-  /** 是否打开（支持 v-model:open） */
-  open?: boolean
-  /** 初始是否打开 */
-  defaultOpen?: boolean
-  /** 模态：聚焦锁定与遮罩拦截 */
-  modal?: boolean
-  /** 关闭后卸载内容 */
-  unmountOnHide?: boolean
-  /** 渲染遮罩 */
+  /** The content of the modal. */
+  content?: Omit<DialogContentProps, 'as' | 'asChild' | 'forceMount'> & Partial<EmitsToProps<DialogContentEmits>>
+  /**
+   * Render an overlay behind the modal.
+   * @defaultValue true
+   */
   overlay?: boolean
-  /** 滚动遮罩模式：内容随遮罩滚动居中 */
+  /**
+   * When `true`, enables scrollable overlay mode where content scrolls within the overlay.
+   * @defaultValue false
+   */
   scrollable?: boolean
-  /** 开关动画 */
+  /**
+   * Animate the modal when opening or closing.
+   * @defaultValue true
+   */
   transition?: boolean
-  /** 全屏模式 */
+  /**
+   * When `true`, the modal will take up the full screen.
+   * @defaultValue false
+   */
   fullscreen?: boolean
-  /** 渲染到 body */
-  portal?: boolean
-  /** 显示关闭按钮 */
-  close?: ModalClose
-  /** 关闭按钮图标 */
-  closeIcon?: Component
-  /** 允许点击外部或按 Esc 关闭 */
+  /**
+   * Render the modal in a portal.
+   * @defaultValue true
+   */
+  portal?: boolean | string | HTMLElement
+  /**
+   * Display a close button to dismiss the modal.
+   * `{ size: 'md', color: 'neutral', variant: 'ghost' }`{lang="ts-type"}
+   * @defaultValue true
+   */
+  close?: boolean | Omit<ButtonProps, LinkPropsKeys>
+  /**
+   * The icon displayed in the close button.
+   * @defaultValue appConfig.ui.icons.close
+   * @IconifyIcon
+   */
+  closeIcon?: IconProps['name']
+  /**
+   * When `false`, the modal will not close when clicking outside or pressing escape.
+   * @defaultValue true
+   */
   dismissible?: boolean
-  class?: HTMLAttributes['class']
-  /** 主题插槽类名 */
-  ui?: ModalUi
-}>(), {
-  modal: true,
-  overlay: true,
-  scrollable: false,
-  transition: true,
-  fullscreen: false,
-  portal: true,
-  close: true,
-  dismissible: true,
-})
+  class?: any
+  ui?: Modal['slots']
+}
 
-const emit = defineEmits<{
-  /** 打开状态变化回调 */
-  'update:open': [open: boolean]
-  /** 关闭被阻止（dismissible 为 false 时点击外部或按 Esc） */
+export interface ModalEmits extends DialogRootEmits {
+  'leave': []
+  'after:leave': []
+  'enter': []
+  'after:enter': []
   'close:prevent': []
-}>()
+}
 
-defineOptions({ name: 'XModal', inheritAttrs: false })
+export interface ModalSlots {
+  default?(props: { open: boolean }): VNode[]
+  content?(props: { close: () => void }): VNode[]
+  header?(props: { close: () => void }): VNode[]
+  title?(props?: {}): VNode[]
+  description?(props?: {}): VNode[]
+  actions?(props?: {}): VNode[]
+  close?(props: { ui: Modal['ui'] }): VNode[]
+  body?(props: { close: () => void }): VNode[]
+  footer?(props: { close: () => void }): VNode[]
+}
+</script>
 
-const slots = useSlots()
+<script setup lang="ts">
+import { computed, toRef } from 'vue'
+import { DialogRoot, DialogTrigger, DialogPortal, DialogOverlay, DialogContent, DialogTitle, DialogDescription, DialogClose, VisuallyHidden } from 'reka-ui'
+import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
+import { reactivePick, createReusableTemplate } from '@vueuse/core'
+import { useAppConfig } from '@/lib/nuxt/imports'
+import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
+import { FieldGroupReset } from '../../lib/nuxt/composables/useFieldGroup'
+import { useLocale } from '../../lib/nuxt/composables/useLocale'
+import { usePortal } from '../../lib/nuxt/composables/usePortal'
+import { pointerDownOutside } from '../../lib/nuxt/utils/overlay'
+import { tv } from '../../lib/nuxt/utils/tv'
+import XButton from './XButton.vue'
 
-/** dismissible 为 false 时阻止外部点击与 Esc 关闭 */
+const _props = withDefaults(defineProps</* @vue-ignore */ ModalProps>(), {
+  close: true,
+  portal: true,
+  overlay: true,
+  transition: true,
+  modal: true,
+  dismissible: true
+})
+const emits = defineEmits</* @vue-ignore */ ModalEmits>()
+const slots = defineSlots</* @vue-ignore */ ModalSlots>()
+
+const props = useComponentProps('modal', _props)
+
+const { t } = useLocale()
+const appConfig = useAppConfig() as Modal['AppConfig']
+
+const rootProps = useForwardProps(reactivePick(props, 'open', 'defaultOpen', 'modal', 'unmountOnHide'), emits)
+const portalProps = usePortal(toRef(() => props.portal))
+const contentProps = toRef(() => props.content)
 const contentEvents = computed(() => {
-  if (props.dismissible) return {}
+  if (!props.dismissible) {
+    const events = ['interactOutside', 'escapeKeyDown']
+
+    return events.reduce((acc, curr) => {
+      acc[curr] = (e: Event) => {
+        e.preventDefault()
+        emits('close:prevent')
+      }
+      return acc
+    }, {} as Record<typeof events[number], (e: Event) => void>)
+  }
+
   return {
-    interactOutside: (event: Event) => {
-      event.preventDefault()
-      emit('close:prevent')
-    },
-    escapeKeyDown: (event: Event) => {
-      event.preventDefault()
-      emit('close:prevent')
-    },
+    pointerDownOutside: (e: PointerDownOutsideEvent) => pointerDownOutside(e, { scrollable: props.scrollable })
   }
 })
 
-const showHeader = computed(
-  () =>
-    !!slots.header ||
-    props.title != null ||
-    !!slots.title ||
-    props.description != null ||
-    !!slots.description ||
-    Boolean(props.close) ||
-    !!slots.close,
-)
+const [DefineContentTemplate, ReuseContentTemplate] = createReusableTemplate()
 
-const showWrapper = computed(
-  () => props.title != null || !!slots.title || props.description != null || !!slots.description,
-)
-
-/** 内容面板与遮罩在 scrollable 两种模式下的复用模板 */
-const [DefineModalContent, ReuseModalContent] = createReusableTemplate()
+// eslint-disable-next-line vue/no-dupe-keys
+const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.modal || {}) })({
+  transition: props.transition,
+  fullscreen: props.fullscreen,
+  overlay: props.overlay,
+  scrollable: props.scrollable
+}))
 </script>
 
+<!-- eslint-disable vue/no-template-shadow -->
 <template>
-  <DialogRoot
-    :open="props.open"
-    :default-open="props.defaultOpen"
-    :modal="props.modal"
-    :unmount-on-hide="props.unmountOnHide"
-    @update:open="(next: boolean) => emit('update:open', next)"
-  >
-    <DialogTrigger v-if="slots.default" as-child :class="props.class" v-bind="$attrs">
-      <slot />
+  <DialogRoot v-slot="{ open, close }" v-bind="rootProps">
+    <DefineContentTemplate>
+      <DialogContent
+        data-slot="content"
+        :class="ui.content({ class: [!slots.default && props.class, props.ui?.content] })"
+        v-bind="contentProps"
+        @enter="!props.scrollable && emits('enter')"
+        @after-enter="!props.scrollable && emits('after:enter')"
+        @leave="!props.scrollable && emits('leave')"
+        @after-leave="!props.scrollable && emits('after:leave')"
+        v-on="contentEvents"
+      >
+        <VisuallyHidden v-if="(!props.title && !slots.title) || (!props.description && !slots.description) || !!slots.content">
+          <DialogTitle v-if="!props.title && !slots.title" />
+          <DialogTitle v-else-if="!!slots.content">
+            <slot name="title">
+              {{ props.title }}
+            </slot>
+          </DialogTitle>
+
+          <DialogDescription v-if="!props.description && !slots.description" />
+          <DialogDescription v-else-if="!!slots.content">
+            <slot name="description">
+              {{ props.description }}
+            </slot>
+          </DialogDescription>
+        </VisuallyHidden>
+
+        <slot name="content" :close="close">
+          <div v-if="!!slots.header || (props.title || !!slots.title) || (props.description || !!slots.description) || (props.close || !!slots.close)" data-slot="header" :class="ui.header({ class: props.ui?.header })">
+            <slot name="header" :close="close">
+              <div v-if="props.title || !!slots.title || props.description || !!slots.description" data-slot="wrapper" :class="ui.wrapper({ class: props.ui?.wrapper })">
+                <DialogTitle v-if="props.title || !!slots.title" data-slot="title" :class="ui.title({ class: props.ui?.title })">
+                  <slot name="title">
+                    {{ props.title }}
+                  </slot>
+                </DialogTitle>
+
+                <DialogDescription v-if="props.description || !!slots.description" data-slot="description" :class="ui.description({ class: props.ui?.description })">
+                  <slot name="description">
+                    {{ props.description }}
+                  </slot>
+                </DialogDescription>
+              </div>
+
+              <slot name="actions" />
+
+              <DialogClose v-if="props.close || !!slots.close" as-child>
+                <slot name="close" :ui="ui">
+                  <XButton
+                    v-if="props.close"
+                    :icon="props.closeIcon || appConfig.ui.icons.close"
+                    color="neutral"
+                    variant="ghost"
+                    :aria-label="t('modal.close')"
+                    v-bind="(typeof props.close === 'object' ? props.close : {})"
+                    data-slot="close"
+                    :class="ui.close({ class: props.ui?.close })"
+                  />
+                </slot>
+              </DialogClose>
+            </slot>
+          </div>
+
+          <div v-if="!!slots.body" data-slot="body" :class="ui.body({ class: props.ui?.body })">
+            <slot name="body" :close="close" />
+          </div>
+
+          <div v-if="!!slots.footer" data-slot="footer" :class="ui.footer({ class: props.ui?.footer })">
+            <slot name="footer" :close="close" />
+          </div>
+        </slot>
+      </DialogContent>
+    </DefineContentTemplate>
+
+    <DialogTrigger v-if="!!slots.default" as-child :class="props.class">
+      <slot :open="open" />
     </DialogTrigger>
 
-    <DialogPortal :disabled="!props.portal">
-      <DefineModalContent>
-        <DialogContent
-          data-slot="content"
-          :class="cn(
-            'bg-background divide-y divide-border flex flex-col focus:outline-none z-50',
-            props.transition && 'data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95',
-            props.fullscreen ? 'inset-0' : 'w-[calc(100vw-2rem)] max-w-lg rounded-lg shadow-lg ring-1 ring-border',
-            props.scrollable ? 'relative' : props.fullscreen ? 'fixed' : 'fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-h-[calc(100dvh-2rem)] sm:max-h-[calc(100dvh-4rem)] overflow-hidden origin-center',
-            !slots.default && props.class,
-            props.ui?.content,
-          )"
-          v-on="contentEvents"
-        >
-          <VisuallyHidden
-            v-if="(props.title == null && !slots.title) || (props.description == null && !slots.description) || !!slots.content || !!slots.header"
+    <DialogPortal v-bind="portalProps" :force-mount="(portalProps.disabled && props.unmountOnHide === false) || undefined">
+      <FieldGroupReset>
+        <template v-if="props.scrollable">
+          <DialogOverlay
+            data-slot="overlay"
+            :class="ui.overlay({ class: props.ui?.overlay })"
+            @enter="emits('enter')"
+            @after-enter="emits('after:enter')"
+            @leave="emits('leave')"
+            @after-leave="emits('after:leave')"
           >
-            <DialogTitle v-if="props.title == null && !slots.title" />
-            <DialogTitle v-else>
-              <slot name="title">{{ props.title }}</slot>
-            </DialogTitle>
+            <ReuseContentTemplate />
+          </DialogOverlay>
+        </template>
 
-            <DialogDescription v-if="props.description == null && !slots.description" />
-            <DialogDescription v-else>
-              <slot name="description">{{ props.description }}</slot>
-            </DialogDescription>
-          </VisuallyHidden>
+        <template v-else>
+          <DialogOverlay v-if="props.overlay" data-slot="overlay" :class="ui.overlay({ class: props.ui?.overlay })" />
 
-          <slot name="content">
-            <div
-              v-if="showHeader"
-              data-slot="header"
-              :class="cn('flex items-center gap-1.5 p-4 sm:px-6', props.ui?.header)"
-            >
-              <slot name="header">
-                <div v-if="showWrapper" data-slot="wrapper" :class="cn('min-w-0 flex-1', props.ui?.wrapper)">
-                  <DialogTitle
-                    v-if="props.title != null || !!slots.title"
-                    data-slot="title"
-                    :class="cn('text-foreground font-semibold', props.ui?.title)"
-                  >
-                    <slot name="title">{{ props.title }}</slot>
-                  </DialogTitle>
-
-                  <DialogDescription
-                    v-if="props.description != null || !!slots.description"
-                    data-slot="description"
-                    :class="cn('mt-1 text-muted-foreground text-sm', props.ui?.description)"
-                  >
-                    <slot name="description">{{ props.description }}</slot>
-                  </DialogDescription>
-                </div>
-
-                <slot name="actions" />
-
-                <DialogClose v-if="Boolean(props.close) || !!slots.close" as-child>
-                  <slot name="close">
-                    <XButton
-                      v-if="props.close"
-                      data-slot="close"
-                      color="neutral"
-                      variant="ghost"
-                      square
-                      aria-label="关闭"
-                      v-bind="typeof props.close === 'object' ? props.close : {}"
-                      :class="cn('absolute top-4 right-4', props.ui?.close)"
-                    >
-                      <component :is="props.closeIcon ?? XIcon" class="size-4" />
-                    </XButton>
-                  </slot>
-                </DialogClose>
-              </slot>
-            </div>
-
-            <div v-if="!!slots.body" data-slot="body" :class="cn('flex-1 p-4 sm:p-6', !props.scrollable && 'overflow-y-auto', props.ui?.body)">
-              <slot name="body" />
-            </div>
-
-            <div v-if="!!slots.footer" data-slot="footer" :class="cn('flex items-center gap-1.5 p-4 sm:px-6', props.ui?.footer)">
-              <slot name="footer" />
-            </div>
-          </slot>
-        </DialogContent>
-      </DefineModalContent>
-
-      <template v-if="props.scrollable">
-        <DialogOverlay
-          data-slot="overlay"
-          :class="cn(
-            'fixed inset-0 z-50',
-            props.overlay && 'bg-black/50',
-            props.transition && 'data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=closed]:animate-out data-[state=closed]:fade-out-0',
-            'overflow-y-auto grid place-items-center p-4 sm:py-8',
-            props.ui?.overlay,
-          )"
-        >
-          <ReuseModalContent />
-        </DialogOverlay>
-      </template>
-
-      <template v-else>
-        <DialogOverlay
-          v-if="props.overlay"
-          data-slot="overlay"
-          :class="cn(
-            'fixed inset-0 z-50 bg-black/50',
-            props.transition && 'data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=closed]:animate-out data-[state=closed]:fade-out-0',
-            props.ui?.overlay,
-          )"
-        />
-
-        <ReuseModalContent />
-      </template>
+          <ReuseContentTemplate />
+        </template>
+      </FieldGroupReset>
     </DialogPortal>
   </DialogRoot>
 </template>
