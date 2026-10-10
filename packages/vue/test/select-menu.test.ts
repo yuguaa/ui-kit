@@ -185,6 +185,20 @@ describe("XSelectMenu 图标与清空", () => {
     wrapper.unmount();
   });
 
+  it("选中项带勾选图标与选中底色", async () => {
+    const wrapper = mount(XSelectMenu, {
+      props: { items, valueKey: "value", modelValue: "apple" },
+      attachTo: document.body,
+    });
+    await wrapper.find("[data-slot='base']").trigger("click");
+    await wrapper.vm.$nextTick();
+    const item = document.querySelector("[data-slot=item][aria-selected='true']");
+    expect(item).not.toBeNull();
+    expect(item?.querySelector("[data-slot=itemTrailingIcon]")).not.toBeNull();
+    expect(item?.classList.contains("aria-selected:bg-accent")).toBe(true);
+    wrapper.unmount();
+  });
+
   it("selectedIcon 渲染在选中项尾部", async () => {
     const wrapper = mount(XSelectMenu, {
       props: { items, valueKey: "value", modelValue: "apple" },

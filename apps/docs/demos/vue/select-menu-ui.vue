@@ -25,6 +25,7 @@ const countries = [
       <XSelectMenu
         v-model="plan"
         :items="plans"
+        value-key="value"
         selected-icon="star"
         clear
         clear-icon="trash"
@@ -33,6 +34,7 @@ const countries = [
       <XSelectMenu
         v-model="country"
         :items="countries"
+        value-key="value"
         search-input
         :filter-fields="['alias']"
         placeholder="按别名搜索"
@@ -41,6 +43,7 @@ const countries = [
       <XSelectMenu
         v-model="plan"
         :items="plans"
+        value-key="value"
         class="w-48"
         :ui="{
           base: 'ring-primary-5 text-primary-6',

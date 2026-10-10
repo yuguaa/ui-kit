@@ -296,6 +296,7 @@ export function XListbox({
           "relative flex w-full cursor-default items-start rounded-md outline-none select-none",
           "data-disabled:pointer-events-none data-disabled:opacity-75",
           "data-highlighted:bg-accent data-highlighted:text-accent-foreground",
+          "data-selected:bg-accent data-selected:text-accent-foreground",
           currentSize.item,
           entry.className,
           ui?.item,

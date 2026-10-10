@@ -23,6 +23,7 @@ export default function SelectMenuUi() {
       <div className="flex flex-wrap items-center gap-4">
         <XSelectMenu
           items={plans}
+          valueKey="value"
           selectedIcon="star"
           clear
           clearIcon="trash"
@@ -32,6 +33,7 @@ export default function SelectMenuUi() {
         />
         <XSelectMenu
           items={countries}
+          valueKey="value"
           searchInput
           filterFields={["alias"]}
           placeholder="按别名搜索"
@@ -41,6 +43,7 @@ export default function SelectMenuUi() {
         />
         <XSelectMenu
           items={plans}
+          valueKey="value"
           value={plan}
           onChange={setPlan}
           ui={{

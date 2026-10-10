@@ -21,14 +21,14 @@ const cityOptions = [
 <template>
   <div class="flex w-full flex-col gap-4">
     <div class="flex flex-wrap items-center gap-4">
-      <XSelectMenu v-model="selected" :items="options" class="w-48" />
-      <XSelectMenu v-model="selected" search-input placeholder="可搜索" :items="options" class="w-48" />
-      <XSelectMenu v-model="city" multiple placeholder="多选" :items="cityOptions" class="w-48" />
-      <XSelectMenu placeholder="禁用" disabled :items="options" class="w-48" />
+      <XSelectMenu v-model="selected" :items="options" value-key="value" class="w-48" />
+      <XSelectMenu v-model="selected" search-input placeholder="可搜索" :items="options" value-key="value" class="w-48" />
+      <XSelectMenu v-model="city" multiple placeholder="多选" :items="cityOptions" value-key="value" class="w-48" />
+      <XSelectMenu placeholder="禁用" disabled :items="options" value-key="value" class="w-48" />
     </div>
     <div class="flex flex-wrap items-center gap-4">
-      <XSelectMenu v-model="cleared" clear :items="options" class="w-48" />
-      <XSelectMenu v-model="city" multiple clear placeholder="多选可清空" :items="cityOptions" class="w-48" />
+      <XSelectMenu v-model="cleared" clear :items="options" value-key="value" class="w-48" />
+      <XSelectMenu v-model="city" multiple clear placeholder="多选可清空" :items="cityOptions" value-key="value" class="w-48" />
     </div>
   </div>
 </template>

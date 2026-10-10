@@ -485,6 +485,7 @@ const [DefineItemTemplate, ReuseItemTemplate] = createReusableTemplate<{ item: S
           'relative flex w-full cursor-default items-start rounded-md outline-none select-none',
           'data-[disabled]:pointer-events-none data-[disabled]:opacity-75',
           'data-[highlighted]:bg-accent data-[highlighted]:text-accent-foreground',
+          'aria-selected:bg-accent aria-selected:text-accent-foreground',
           currentSize.item,
           item.class,
           ui?.item,

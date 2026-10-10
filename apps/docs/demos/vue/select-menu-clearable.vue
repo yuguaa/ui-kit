@@ -19,7 +19,7 @@ const cityOptions = [
 
 <template>
   <div class="flex w-full flex-wrap items-center gap-4">
-    <XSelectMenu v-model="selected" clear :items="options" class="w-48" />
-    <XSelectMenu v-model="cities" multiple clear placeholder="多选可清空" :items="cityOptions" class="w-48" />
+    <XSelectMenu v-model="selected" clear :items="options" value-key="value" class="w-48" />
+    <XSelectMenu v-model="cities" multiple clear placeholder="多选可清空" :items="cityOptions" value-key="value" class="w-48" />
   </div>
 </template>

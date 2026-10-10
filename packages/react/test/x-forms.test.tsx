@@ -143,6 +143,18 @@ describe("XSelectMenu", () => {
     });
     expect(trigger).toHaveTextContent("");
   });
+
+  it("选中项带勾选图标与选中底色", async () => {
+    render(<XSelectMenu items={options} valueKey="value" defaultValue="apple" />);
+    await userEvent.click(screen.getByRole("combobox"));
+    await waitFor(() => {
+      expect(document.querySelectorAll("[data-slot=item]").length).toBeGreaterThan(0);
+    });
+    const item = [...document.querySelectorAll("[data-slot=item]")].find((entry) => entry.textContent?.includes("苹果")) as HTMLElement;
+    expect(item.getAttribute("aria-selected")).toBe("true");
+    expect(item.getAttribute("data-selected")).not.toBeNull();
+    expect(item.querySelector("[data-slot=itemTrailingIcon]")).not.toBeNull();
+  });
 });
 
 describe("XInputMenu", () => {

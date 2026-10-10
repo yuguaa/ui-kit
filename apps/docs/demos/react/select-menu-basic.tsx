@@ -20,14 +20,14 @@ export default function SelectMenuBasic() {
   return (
     <div className="flex w-full flex-col gap-4">
       <div className="flex flex-wrap items-center gap-4">
-        <XSelectMenu items={options} value={selected} onChange={setSelected} className="w-48" />
-        <XSelectMenu items={options} searchInput placeholder="可搜索" value={selected} onChange={setSelected} className="w-48" />
-        <XSelectMenu items={cityOptions} multiple placeholder="多选" value={city} onChange={setCity} className="w-48" />
-        <XSelectMenu items={options} placeholder="禁用" disabled className="w-48" />
+        <XSelectMenu items={options} valueKey="value" value={selected} onChange={setSelected} className="w-48" />
+        <XSelectMenu items={options} valueKey="value" searchInput placeholder="可搜索" value={selected} onChange={setSelected} className="w-48" />
+        <XSelectMenu items={cityOptions} valueKey="value" multiple placeholder="多选" value={city} onChange={setCity} className="w-48" />
+        <XSelectMenu items={options} valueKey="value" placeholder="禁用" disabled className="w-48" />
       </div>
       <div className="flex flex-wrap items-center gap-4">
-        <XSelectMenu items={options} clear value={cleared} onChange={setCleared} className="w-48" />
-        <XSelectMenu items={cityOptions} multiple clear placeholder="多选可清空" value={city} onChange={setCity} className="w-48" />
+        <XSelectMenu items={options} valueKey="value" clear value={cleared} onChange={setCleared} className="w-48" />
+        <XSelectMenu items={cityOptions} valueKey="value" multiple clear placeholder="多选可清空" value={city} onChange={setCity} className="w-48" />
       </div>
     </div>
   )
