@@ -193,7 +193,7 @@ export interface XSelectMenuProps {
   /** 触发器内容（默认渲染选中值 / 占位文字） */
   children?: React.ReactNode
   /** 空数据内容 */
-  empty?: (props: { searchTerm: string }) => React.ReactNode
+  empty?: React.ReactNode | ((props: { searchTerm: string }) => React.ReactNode)
   /** 自定义选项内容 */
   item?: (props: { item: XSelectMenuItem; index: number }) => React.ReactNode
   /** 自定义选项前置区域 */
@@ -390,6 +390,7 @@ export function XSelectMenu({
   }, [multiple, currentValue, flatItems, labelField, valueKey])
 
   const showClear = !!clear && !disabled && selectedValues.length > 0
+  const clearButtonEnd = sizeClasses[size].trailing.replace("pe-", "end-")
   const showSearchInput = mode === "combobox" && searchInput !== false
   const searchInputPlaceholder = typeof searchInput === "object" ? searchInput.placeholder : undefined
   const showLeading = !!icon || !!avatar || leading != null
@@ -464,38 +465,19 @@ export function XSelectMenu({
         )
       )}
 
-      {(showClear || trailing != null || trailingIcon != null || loading) && (
+      {(trailing != null || trailingIcon != null || loading) && (
         <span data-slot="trailing" className={cn("ms-auto flex shrink-0 items-center gap-1.5", ui?.trailing)}>
           {trailing ?? (
-            <>
-              {loading ? (
-                renderIcon(loadingIcon, cn("animate-spin text-muted-foreground", currentSize.icon, ui?.trailingIcon), "trailingIcon")
-              ) : showClear ? (
-                <button
-                  type="button"
-                  tabIndex={-1}
-                  aria-label="清空"
-                  data-slot="trailingClear"
-                  className={cn(
-                    "flex size-4 items-center justify-center rounded-full p-0 text-muted-foreground opacity-70 hover:opacity-100",
-                    ui?.trailingClear,
-                  )}
-                  onClick={(event) => {
-                    event.stopPropagation()
-                    handleClear()
-                  }}
-                >
-                  {renderIcon(clearIcon, "size-3.5")}
-                </button>
-              ) : (
-                <span
-                  data-slot="trailingIcon"
-                  className={cn("flex transition-transform", currentOpen && "rotate-180")}
-                >
-                  {renderIcon(trailingIcon, cn("shrink-0 text-muted-foreground", currentSize.icon, ui?.trailingIcon), "trailingIcon")}
-                </span>
-              )}
-            </>
+            loading ? (
+              renderIcon(loadingIcon, cn("animate-spin text-muted-foreground", currentSize.icon, ui?.trailingIcon), "trailingIcon")
+            ) : (
+              <span
+                data-slot="trailingIcon"
+                className={cn("flex transition-transform", currentOpen && "rotate-180")}
+              >
+                {renderIcon(trailingIcon, cn("shrink-0 text-muted-foreground", currentSize.icon, ui?.trailingIcon), "trailingIcon")}
+              </span>
+            )
           )}
         </span>
       )}
@@ -658,7 +640,7 @@ export function XSelectMenu({
 
           {!createItemValue && (
             <Combobox.Empty data-slot="empty" className={cn("text-center text-muted-foreground", currentSize.empty, ui?.empty)}>
-              {empty != null ? empty({ searchTerm: currentSearchTerm }) : "无匹配选项"}
+              {empty != null ? (typeof empty === "function" ? empty({ searchTerm: currentSearchTerm }) : empty) : "无匹配选项"}
             </Combobox.Empty>
           )}
 
@@ -693,19 +675,39 @@ export function XSelectMenu({
       highlightItemOnHover={highlightOnHover}
       itemToStringLabel={(entry: any) => String(getField(entry, labelField) ?? entry ?? "")}
     >
-      <Combobox.Trigger
-        render={render}
-        data-slot="base"
-        className={triggerClasses}
-        onKeyDown={(event) => {
-          if ((event.key === "ArrowDown" || event.key === "ArrowUp") && !currentOpen) {
-            event.preventDefault()
-            updateOpen(true)
-          }
-        }}
-      >
-        {triggerContent}
-      </Combobox.Trigger>
+      <div data-slot="wrapper" className="relative">
+        <Combobox.Trigger
+          render={render}
+          data-slot="base"
+          className={triggerClasses}
+          onKeyDown={(event) => {
+            if ((event.key === "ArrowDown" || event.key === "ArrowUp") && !currentOpen) {
+              event.preventDefault()
+              updateOpen(true)
+            }
+          }}
+        >
+          {triggerContent}
+        </Combobox.Trigger>
+
+        {showClear && trailing == null && (
+          <button
+            type="button"
+            tabIndex={-1}
+            aria-label="清空"
+            data-slot="trailingClear"
+            className={cn(
+              "absolute inset-y-0 flex items-center",
+              clearButtonEnd,
+              "text-muted-foreground opacity-70 hover:opacity-100",
+              ui?.trailingClear,
+            )}
+            onClick={handleClear}
+          >
+            {renderIcon(clearIcon, "size-3.5")}
+          </button>
+        )}
+      </div>
 
       {portal ? <Combobox.Portal>{popup}</Combobox.Portal> : popup}
     </Combobox.Root>

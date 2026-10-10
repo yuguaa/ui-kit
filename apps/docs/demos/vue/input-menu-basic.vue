@@ -26,7 +26,7 @@ function handleCreate(value: string) {
       <XInputMenu :items="items" class="w-56" @select="handleSelect" />
       <XInputMenu
         :items="items"
-        clearable
+        clear
         create-item
         placeholder="搜索或输入新城市"
         class="w-56"

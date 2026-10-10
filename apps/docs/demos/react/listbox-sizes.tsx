@@ -25,9 +25,12 @@ export default function ListboxSizes() {
           <p className="mb-2 text-sm font-medium">{size}</p>
           <XListbox
             items={items}
+            valueKey="key"
             size={size}
-            selected={selected[size]}
-            onSelect={(key) => setSelected((prev) => ({ ...prev, [size]: [key] }))}
+            value={selected[size]}
+            onValueChange={(value) =>
+              setSelected((prev) => ({ ...prev, [size]: Array.isArray(value) ? value.map(String) : [String(value)] }))
+            }
           />
         </div>
       ))}

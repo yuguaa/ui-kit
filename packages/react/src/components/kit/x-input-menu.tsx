@@ -195,7 +195,7 @@ export interface XInputMenuProps {
   /** 后置内容 */
   trailing?: React.ReactNode
   /** 空数据内容 */
-  empty?: (props: { searchTerm: string }) => React.ReactNode
+  empty?: React.ReactNode | ((props: { searchTerm: string }) => React.ReactNode)
   /** 自定义选项内容 */
   item?: (props: { item: XInputMenuItem; index: number }) => React.ReactNode
   /** 自定义选项前置区域 */
@@ -616,7 +616,7 @@ export function XInputMenu({
 
         {!createItemValue && (
           <Combobox.Empty data-slot="empty" className={cn("text-center text-muted-foreground", currentSize.empty, ui?.empty)}>
-            {empty != null ? empty({ searchTerm }) : "无匹配选项"}
+            {empty != null ? (typeof empty === "function" ? empty({ searchTerm }) : empty) : "无匹配选项"}
           </Combobox.Empty>
         )}
 

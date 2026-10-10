@@ -32,9 +32,11 @@ export interface XCarouselClassNamesApi {
   off: (event: string, callback: (...args: unknown[]) => void) => void
 }
 
-/** 统一成类名数组 */
+/** 统一成类名数组:支持空格分隔的复合类名串 */
 function toList(value: string | string[]): string[] {
-  return (Array.isArray(value) ? value : [value]).filter((item) => item.length > 0)
+  return (Array.isArray(value) ? value : [value])
+    .flatMap((item) => item.split(/\s+/))
+    .filter((item) => item.length > 0)
 }
 
 const defaultClassNames = {

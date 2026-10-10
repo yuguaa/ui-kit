@@ -9,10 +9,6 @@ const items = [
   { key: "svelte", label: "Svelte" },
 ]
 
-function toggle(list: string[], key: string) {
-  return list.includes(key) ? list.filter((item) => item !== key) : [...list, key]
-}
-
 export default function ListboxFilterable() {
   const [selected, setSelected] = useState<string[]>([])
   const [customSelected, setCustomSelected] = useState<string[]>([])
@@ -23,22 +19,22 @@ export default function ListboxFilterable() {
         <p className="mb-2 text-sm font-medium">搜索过滤</p>
         <XListbox
           items={items}
-          selected={selected}
+          valueKey="key"
           multiple
-          filterable
-          onSelect={(key) => setSelected((prev) => toggle(prev, key))}
+          filter
+          value={selected}
+          onValueChange={(value) => setSelected(Array.isArray(value) ? value.map(String) : [])}
         />
       </div>
       <div>
-        <p className="mb-2 text-sm font-medium">自定义占位与空提示</p>
+        <p className="mb-2 text-sm font-medium">自定义占位</p>
         <XListbox
           items={items}
-          selected={customSelected}
+          valueKey="key"
           multiple
-          filterable
-          searchPlaceholder="输入框架名称"
-          emptyText="没有匹配的框架"
-          onSelect={(key) => setCustomSelected((prev) => toggle(prev, key))}
+          filter={{ placeholder: "输入框架名称" }}
+          value={customSelected}
+          onValueChange={(value) => setCustomSelected(Array.isArray(value) ? value.map(String) : [])}
         />
       </div>
     </div>

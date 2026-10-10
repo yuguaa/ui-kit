@@ -22,17 +22,17 @@ export default function SelectMenuUi() {
     <div className="flex w-full flex-col gap-4">
       <div className="flex flex-wrap items-center gap-4">
         <XSelectMenu
-          options={plans}
+          items={plans}
           selectedIcon="star"
-          clearable
+          clear
           clearIcon="trash"
           value={plan}
           onChange={setPlan}
           className="w-48"
         />
         <XSelectMenu
-          options={countries}
-          showSearch
+          items={countries}
+          searchInput
           filterFields={["alias"]}
           placeholder="按别名搜索"
           value={country}
@@ -40,7 +40,7 @@ export default function SelectMenuUi() {
           className="w-48"
         />
         <XSelectMenu
-          options={plans}
+          items={plans}
           value={plan}
           onChange={setPlan}
           ui={{
@@ -53,20 +53,17 @@ export default function SelectMenuUi() {
         />
       </div>
       <div className="flex flex-wrap items-center gap-4">
-        <XSelectMenu options={plans} leading={<Sparkles className="size-4 text-warning-6" />} className="w-48" />
+        <XSelectMenu items={plans} leading={<Sparkles className="size-4 text-warning-6" />} className="w-48" />
         <XSelectMenu
-          options={plans}
+          items={plans}
           className="w-48"
-          option={({ option }) => (
-            <button
-              type="button"
-              className="rounded-md bg-primary-1 px-2 py-1.5 text-left text-sm text-primary-7"
-            >
-              自定义：{option.label}
-            </button>
+          item={({ item }) => (
+            <div className="rounded-md bg-primary-1 px-2 py-1.5 text-left text-sm text-primary-7">
+              自定义：{item.label}
+            </div>
           )}
         />
-        <XSelectMenu options={[]} empty={<span className="text-error-6">自定义空提示</span>} className="w-48" />
+        <XSelectMenu items={[]} empty={<span className="text-error-6">自定义空提示</span>} className="w-48" />
       </div>
     </div>
   )

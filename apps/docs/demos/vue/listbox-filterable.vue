@@ -23,23 +23,21 @@ function toggle(list: string[], key: string) {
     <div>
       <p class="mb-2 text-sm font-medium">搜索过滤</p>
       <XListbox
+        v-model="selected"
         :items="items"
-        :selected="selected"
+        value-key="key"
         multiple
-        filterable
-        @select="selected = toggle(selected, $event)"
+        filter
       />
     </div>
     <div>
       <p class="mb-2 text-sm font-medium">自定义占位与空提示</p>
       <XListbox
+        v-model="customSelected"
         :items="items"
-        :selected="customSelected"
+        value-key="key"
         multiple
-        filterable
-        search-placeholder="输入框架名称"
-        empty-text="没有匹配的框架"
-        @select="customSelected = toggle(customSelected, $event)"
+        :filter="{ placeholder: '输入框架名称' }"
       />
     </div>
   </div>

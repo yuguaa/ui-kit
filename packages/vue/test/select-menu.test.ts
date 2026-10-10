@@ -167,6 +167,8 @@ describe("XSelectMenu 图标与清空", () => {
     });
     const clear = wrapper.find("[data-slot='trailingClear']");
     expect(clear.exists()).toBe(true);
+    /* 清空按钮不能嵌套在触发按钮内部 */
+    expect(wrapper.find("[data-slot='base']").find("[data-slot='trailingClear']").exists()).toBe(false);
     await clear.trigger("click");
     expect(wrapper.emitted("clear")).toBeTruthy();
     expect(wrapper.emitted("update:modelValue")?.[0]).toEqual([undefined]);

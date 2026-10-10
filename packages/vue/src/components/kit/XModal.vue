@@ -157,15 +157,15 @@ const [DefineModalContent, ReuseModalContent] = createReusableTemplate()
           v-on="contentEvents"
         >
           <VisuallyHidden
-            v-if="(props.title == null && !slots.title) || (props.description == null && !slots.description) || !!slots.content"
+            v-if="(props.title == null && !slots.title) || (props.description == null && !slots.description) || !!slots.content || !!slots.header"
           >
             <DialogTitle v-if="props.title == null && !slots.title" />
-            <DialogTitle v-else-if="!!slots.content">
+            <DialogTitle v-else>
               <slot name="title">{{ props.title }}</slot>
             </DialogTitle>
 
             <DialogDescription v-if="props.description == null && !slots.description" />
-            <DialogDescription v-else-if="!!slots.content">
+            <DialogDescription v-else>
               <slot name="description">{{ props.description }}</slot>
             </DialogDescription>
           </VisuallyHidden>

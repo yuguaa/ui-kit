@@ -24,14 +24,14 @@ const grouped = [
   <div class="flex w-full flex-wrap items-center gap-4">
     <XSelectMenu
       v-model="member"
-      :options="members"
+      :items="members"
       label-key="name"
       value-key="id"
       description-key="role"
       placeholder="选择成员"
       class="w-52"
     />
-    <XSelectMenu :options="grouped" placeholder="分组选项" class="w-48" />
-    <XSelectMenu :options="grouped" mode="listbox" placeholder="listbox 模式" class="w-48" />
+    <XSelectMenu :items="grouped" placeholder="分组选项" class="w-48" />
+    <XSelectMenu :items="grouped" mode="listbox" placeholder="listbox 模式" class="w-48" />
   </div>
 </template>

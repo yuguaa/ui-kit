@@ -10,12 +10,6 @@ const items = [
 
 const sizes = ['xs', 'sm', 'md', 'lg', 'xl'] as const
 const selected = ref<Record<string, string[]>>({ xs: ['zh'], sm: [], md: [], lg: [], xl: [] })
-
-function select(size: string) {
-  return (key: string) => {
-    selected.value[size] = [key]
-  }
-}
 </script>
 
 <template>
@@ -23,10 +17,10 @@ function select(size: string) {
     <div v-for="size in sizes" :key="size" class="w-32">
       <p class="mb-2 text-sm font-medium">{{ size }}</p>
       <XListbox
+        v-model="selected[size]"
         :items="items"
+        value-key="key"
         :size="size"
-        :selected="selected[size]"
-        @select="select(size)"
       />
     </div>
   </div>

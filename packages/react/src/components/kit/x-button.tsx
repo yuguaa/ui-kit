@@ -191,6 +191,10 @@ export const XButton = React.forwardRef<HTMLButtonElement, XButtonProps>(functio
   const atomVariant = atomVariantMap[resolvedVariant]
   const atomSize = square ? atomSquareSizeMap[size] : atomSizeMap[size]
 
+  /* render 为非 button 元素(如链接)时直接渲染该元素，保留原始语义 */
+  const renderIsButton = React.isValidElement(render) && render.type === "button"
+  const renderAsCustom = React.isValidElement(render) && render.type !== "button"
+
   function handleClick(event: React.MouseEvent<HTMLButtonElement>) {
     const result = onClick?.(event) as unknown
     if (!loadingAuto || result == null || typeof (result as Promise<unknown>).then !== "function") return
@@ -198,27 +202,17 @@ export const XButton = React.forwardRef<HTMLButtonElement, XButtonProps>(functio
     void (result as Promise<unknown>).finally(() => setAutoLoading(false))
   }
 
-  return (
-    <Button
-      ref={ref}
-      render={render}
-      data-variant={atomVariant}
-      data-size={atomSize}
-      variant={atomVariant}
-      size={atomSize}
-      className={cn(
-        buttonColorStyles[resolvedColor][resolvedVariant],
-        square ? buttonSquareSizeOverrides[size] : buttonSizeOverrides[size],
-        block && "w-full",
-        isLoading && "opacity-60",
-        ui?.base,
-        className,
-      )}
-      disabled={isDisabled}
-      aria-busy={isLoading || undefined}
-      onClick={handleClick}
-      {...rest}
-    >
+  const buttonClassName = cn(
+    buttonColorStyles[resolvedColor][resolvedVariant],
+    square ? buttonSquareSizeOverrides[size] : buttonSizeOverrides[size],
+    block && "w-full",
+    isLoading && "opacity-60",
+    ui?.base,
+    className,
+  )
+
+  const buttonContent = (
+    <>
       {isLoading ? (
         <LoaderCircle className={cn("animate-spin", ui?.leadingIcon)} aria-hidden="true" />
       ) : (
@@ -228,6 +222,57 @@ export const XButton = React.forwardRef<HTMLButtonElement, XButtonProps>(functio
         <span className={cn("truncate", ui?.label)}>{children ?? label}</span>
       )}
       {trailing}
+    </>
+  )
+
+  if (renderAsCustom) {
+    /* 链接等自定义元素：保持原始语义，不注入 role=button */
+    const customProps = (
+      render as React.ReactElement<{
+        className?: string
+        onClick?: (event: React.MouseEvent) => void
+      }>
+    ).props ?? {}
+    return React.cloneElement(
+      render as React.ReactElement<Record<string, unknown>>,
+      {
+        ...rest,
+        ...customProps,
+        className: cn(buttonClassName, customProps.className),
+        "data-slot": "button",
+        "data-variant": atomVariant,
+        "data-size": atomSize,
+        "aria-busy": isLoading || undefined,
+        "aria-disabled": isDisabled || undefined,
+        onClick: (event: React.MouseEvent) => {
+          if (isDisabled) {
+            event.preventDefault()
+            return
+          }
+          customProps.onClick?.(event)
+          handleClick(event as React.MouseEvent<HTMLButtonElement>)
+        },
+      },
+      buttonContent,
+    )
+  }
+
+  return (
+    <Button
+      ref={ref}
+      render={render}
+      nativeButton={render == null || renderIsButton ? undefined : false}
+      data-variant={atomVariant}
+      data-size={atomSize}
+      variant={atomVariant}
+      size={atomSize}
+      className={buttonClassName}
+      disabled={isDisabled}
+      aria-busy={isLoading || undefined}
+      onClick={handleClick}
+      {...rest}
+    >
+      {buttonContent}
     </Button>
   )
 })

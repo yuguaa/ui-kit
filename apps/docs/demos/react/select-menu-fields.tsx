@@ -22,7 +22,7 @@ export default function SelectMenuFields() {
   return (
     <div className="flex w-full flex-wrap items-center gap-4">
       <XSelectMenu
-        options={members}
+        items={members}
         labelKey="name"
         valueKey="id"
         descriptionKey="role"
@@ -31,8 +31,8 @@ export default function SelectMenuFields() {
         onChange={setMember}
         className="w-52"
       />
-      <XSelectMenu options={grouped} placeholder="分组选项" className="w-48" />
-      <XSelectMenu options={grouped} mode="listbox" placeholder="listbox 模式" className="w-48" />
+      <XSelectMenu items={grouped} placeholder="分组选项" className="w-48" />
+      <XSelectMenu items={grouped} mode="listbox" placeholder="listbox 模式" className="w-48" />
     </div>
   )
 }

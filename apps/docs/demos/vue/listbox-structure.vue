@@ -22,24 +22,23 @@ const groups = [
     <div>
       <p class="mb-2 text-sm font-medium">字段映射与分组</p>
       <XListbox
+        v-model="current"
         :items="groups"
         label-key="name"
         value-key="id"
         description-key="note"
-        :selected="current"
         selected-icon="star"
         class="w-64"
-        @select="current = $event"
       />
     </div>
     <div>
       <p class="mb-2 text-sm font-medium">ui 插槽自定义</p>
       <XListbox
+        v-model="current"
         :items="groups"
         label-key="name"
         value-key="id"
         description-key="note"
-        :selected="current"
         size="sm"
         class="w-64"
         :ui="{

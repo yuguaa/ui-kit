@@ -11,7 +11,6 @@ import { createReusableTemplate } from '@vueuse/core'
 import {
   ComboboxAnchor,
   ComboboxArrow,
-  ComboboxCancel,
   ComboboxContent,
   ComboboxEmpty,
   ComboboxGroup,
@@ -565,7 +564,8 @@ const [DefineItemTemplate, ReuseItemTemplate] = createReusableTemplate<{ item: S
     ignore-filter
     @highlight="onHighlight"
   >
-    <ComboboxAnchor as-child>
+    <div class="relative">
+      <ComboboxAnchor as-child>
       <ComboboxTrigger
         :id="id"
         ref="triggerRef"
@@ -633,7 +633,7 @@ const [DefineItemTemplate, ReuseItemTemplate] = createReusableTemplate<{ item: S
         </slot>
 
         <span
-          v-if="showClear || !!slots.trailing || !!trailingIcon || loading"
+          v-if="!!slots.trailing || !!trailingIcon || loading"
           data-slot="trailing"
           :class="cn('ms-auto flex shrink-0 items-center gap-1.5', ui?.trailing)"
         >
@@ -645,24 +645,6 @@ const [DefineItemTemplate, ReuseItemTemplate] = createReusableTemplate<{ item: S
               :class="cn('animate-spin text-muted-foreground', currentSize.icon, ui?.trailingIcon)"
               aria-hidden="true"
             />
-            <ComboboxCancel v-else-if="showClear" as-child>
-              <button
-                type="button"
-                tabindex="-1"
-                aria-label="清空"
-                data-slot="trailingClear"
-                :class="cn('flex size-4 items-center justify-center rounded-full p-0 text-muted-foreground opacity-70 hover:opacity-100', ui?.trailingClear)"
-                @click.stop="onClear"
-              >
-                <XIcon
-                  v-if="isIconName(clearIcon)"
-                  :name="clearIcon"
-                  class="size-3.5"
-                  aria-hidden="true"
-                />
-                <component :is="clearIcon" v-else class="size-3.5" aria-hidden="true" />
-              </button>
-            </ComboboxCancel>
             <XIcon
               v-else-if="isIconName(trailingIcon)"
               :name="trailingIcon"
@@ -681,6 +663,25 @@ const [DefineItemTemplate, ReuseItemTemplate] = createReusableTemplate<{ item: S
         </span>
       </ComboboxTrigger>
     </ComboboxAnchor>
+
+    <button
+      v-if="showClear && !slots.trailing"
+      type="button"
+      tabindex="-1"
+      aria-label="清空"
+      data-slot="trailingClear"
+      :class="cn('absolute inset-y-0 end-0 flex items-center', currentSize.trailing, 'text-muted-foreground opacity-70 hover:opacity-100', ui?.trailingClear)"
+      @click="onClear"
+    >
+      <XIcon
+        v-if="isIconName(clearIcon)"
+        :name="clearIcon"
+        class="size-3.5"
+        aria-hidden="true"
+      />
+      <component :is="clearIcon" v-else class="size-3.5" aria-hidden="true" />
+    </button>
+    </div>
 
     <ComboboxPortal :disabled="portal === false" :to="typeof portal === 'object' ? portal : undefined">
       <ComboboxContent

@@ -17,7 +17,7 @@ export default function InputMenuBasic() {
         <XInputMenu items={items} onSelect={(item) => setLast(item.label)} className="w-56" />
         <XInputMenu
           items={items}
-          clearable
+          clear
           createItem
           placeholder="搜索或输入新城市"
           onSelect={(item) => setLast(item.label)}

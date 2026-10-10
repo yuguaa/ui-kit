@@ -128,6 +128,21 @@ describe("XSelectMenu", () => {
     expect(screen.getByText("香蕉")).toBeInTheDocument();
     expect(screen.queryByText("苹果")).not.toBeInTheDocument();
   });
+
+  it("clear 清空按钮位于触发按钮外部并可清空", async () => {
+    render(<XSelectMenu items={options} defaultValue="apple" clear />);
+    const trigger = screen.getByRole("combobox");
+    const clearButton = document.querySelector("[data-slot='trailingClear']");
+    expect(clearButton).not.toBeNull();
+    /* 清空按钮不能嵌套在 combobox 按钮内部 */
+    expect(trigger.querySelector("[data-slot='trailingClear']")).toBeNull();
+    expect(trigger.contains(clearButton)).toBe(false);
+    await userEvent.click(clearButton as HTMLElement);
+    await waitFor(() => {
+      expect(document.querySelector("[data-slot='trailingClear']")).toBeNull();
+    });
+    expect(trigger).toHaveTextContent("");
+  });
 });
 
 describe("XInputMenu", () => {

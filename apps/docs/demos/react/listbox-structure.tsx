@@ -25,9 +25,9 @@ export default function ListboxStructure() {
           labelKey="name"
           valueKey="id"
           descriptionKey="note"
-          selected={[current]}
+          value={current}
           selectedIcon="star"
-          onSelect={setCurrent}
+          onValueChange={(value) => setCurrent(String(value))}
           className="w-64"
         />
       </div>
@@ -38,9 +38,9 @@ export default function ListboxStructure() {
           labelKey="name"
           valueKey="id"
           descriptionKey="note"
-          selected={[current]}
+          value={current}
           size="sm"
-          onSelect={setCurrent}
+          onValueChange={(value) => setCurrent(String(value))}
           ui={{
             root: "rounded-lg ring-1 ring-primary-2",
             item: "rounded-md",

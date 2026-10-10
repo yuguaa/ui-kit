@@ -20,6 +20,8 @@ import ButtonIcons from '@demos/react/button-icons'
 import buttonIconsRaw from '@demos/react/button-icons.tsx.code.txt?raw'
 import ButtonBlockSquare from '@demos/react/button-block-square'
 import buttonBlockSquareRaw from '@demos/react/button-block-square.tsx.code.txt?raw'
+import ButtonUiCustom from '@demos/react/button-ui-custom'
+import buttonUiCustomRaw from '@demos/react/button-ui-custom.tsx.code.txt?raw'
 </script>
 
 ## 变体

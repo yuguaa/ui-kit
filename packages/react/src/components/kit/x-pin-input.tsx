@@ -244,7 +244,6 @@ export const XPinInput = React.forwardRef<HTMLDivElement, XPinInputProps>(functi
           inputMode={type === "number" ? "numeric" : undefined}
           maxLength={length}
           value={current}
-          defaultValue={defaultValue}
           disabled={disabled}
           onChange={handleChange}
           onComplete={onComplete}

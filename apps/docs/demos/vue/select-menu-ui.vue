@@ -24,23 +24,23 @@ const countries = [
     <div class="flex flex-wrap items-center gap-4">
       <XSelectMenu
         v-model="plan"
-        :options="plans"
+        :items="plans"
         selected-icon="star"
-        clearable
+        clear
         clear-icon="trash"
         class="w-48"
       />
       <XSelectMenu
         v-model="country"
-        :options="countries"
-        show-search
+        :items="countries"
+        search-input
         :filter-fields="['alias']"
         placeholder="按别名搜索"
         class="w-48"
       />
       <XSelectMenu
         v-model="plan"
-        :options="plans"
+        :items="plans"
         class="w-48"
         :ui="{
           base: 'ring-primary-5 text-primary-6',
@@ -51,7 +51,7 @@ const countries = [
       />
     </div>
     <div class="flex flex-wrap items-center gap-4">
-      <XSelectMenu :options="plans" class="w-48">
+      <XSelectMenu :items="plans" class="w-48">
         <template #leading>
           <Sparkles class="size-4 text-warning-6" />
         </template>
@@ -59,17 +59,17 @@ const countries = [
           <span class="text-xs text-muted-foreground">精选</span>
         </template>
       </XSelectMenu>
-      <XSelectMenu :options="plans" class="w-48">
-        <template #option="{ option }">
+      <XSelectMenu :items="plans" class="w-48">
+        <template #item="{ item }">
           <button
             type="button"
             class="rounded-md bg-primary-1 px-2 py-1.5 text-left text-sm text-primary-7"
           >
-            自定义：{{ option.label }}
+            自定义：{{ item.label }}
           </button>
         </template>
       </XSelectMenu>
-      <XSelectMenu :options="[]" class="w-48">
+      <XSelectMenu :items="[]" class="w-48">
         <template #empty>
           <span class="text-error-6">自定义空提示</span>
         </template>

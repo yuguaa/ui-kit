@@ -26,7 +26,7 @@ export default function InputMenuUi() {
           valueKey="id"
           descriptionKey="note"
           selectedIcon="star"
-          clearable
+          clear
           clearIcon="trash"
           placeholder="选择城市"
           leading={<MapPin className="size-4 text-primary-6" />}

@@ -9,25 +9,19 @@ const items = [
   { key: 'ko', label: '한국어' },
 ]
 
-const selected = ref<string[]>(['zh'])
-const multipleSelected = ref<string[]>(['en', 'ja'])
-
-function toggleMultiple(key: string) {
-  multipleSelected.value = multipleSelected.value.includes(key)
-    ? multipleSelected.value.filter((item) => item !== key)
-    : [...multipleSelected.value, key]
-}
+const selected = ref('zh')
+const multipleSelected = ref(['en', 'ja'])
 </script>
 
 <template>
   <div class="grid gap-8 sm:grid-cols-2">
     <div>
       <p class="mb-2 text-sm font-medium">单选</p>
-      <XListbox :items="items" :selected="selected" @select="selected = [$event]" />
+      <XListbox v-model="selected" :items="items" value-key="key" />
     </div>
     <div>
       <p class="mb-2 text-sm font-medium">多选</p>
-      <XListbox :items="items" :selected="multipleSelected" multiple @select="toggleMultiple" />
+      <XListbox v-model="multipleSelected" :items="items" value-key="key" multiple />
     </div>
   </div>
 </template>

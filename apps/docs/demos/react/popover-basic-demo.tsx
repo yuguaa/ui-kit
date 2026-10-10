@@ -11,7 +11,7 @@ export default function PopoverBasicDemo() {
   return (
     <div className="flex flex-wrap items-center gap-3">
       {sides.map((item) => (
-        <XPopover key={item.key} side={item.key} trigger="click" title={`${item.label}侧气泡`} content="这是一段气泡说明文字。">
+        <XPopover key={item.key} mode="click" content={`${item.label}侧气泡：这是一段气泡说明文字。`}>
           <XButton variant="outline" color="neutral">{item.label}</XButton>
         </XPopover>
       ))}

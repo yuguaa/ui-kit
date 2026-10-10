@@ -31,7 +31,7 @@ function handleSelect(item: { name: string }) {
         value-key="id"
         description-key="note"
         selected-icon="star"
-        clearable
+        clear
         clear-icon="trash"
         placeholder="选择城市"
         class="w-56"
