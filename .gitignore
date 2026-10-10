@@ -8,3 +8,4 @@ dist/
 apps/docs/.vitepress/cache/
 
 .pi-debug/
+apps/theme-designer/.tmp-dark.mjs
