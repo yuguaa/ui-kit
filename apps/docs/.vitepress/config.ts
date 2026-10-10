@@ -49,6 +49,7 @@ const componentItems = [
   { text: "Pagination 分页", link: "components/pagination" },
   { text: "Stepper 步骤条", link: "components/stepper" },
   { text: "CommandPalette 命令面板", link: "components/command-palette" },
+  { text: "App Shell 应用框架", link: "components/app-shell" },
   { text: "Modal 对话框", link: "components/modal" },
   { text: "Drawer 抽屉", link: "components/drawer" },
   { text: "Slideover 侧滑", link: "components/slideover" },
