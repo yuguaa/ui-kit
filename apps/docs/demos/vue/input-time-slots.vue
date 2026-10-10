@@ -1,11 +1,14 @@
 <script setup lang="ts">
+import { parseTime } from '@internationalized/date'
 import { AlarmClock } from '@lucide/vue'
 import XInputTime from '@/components/kit/XInputTime.vue'
+
+const timeValue = parseTime('14:30')
 </script>
 
 <template>
   <div class="flex w-full flex-col gap-4">
-    <XInputTime :model-value="'14:30'" class="w-44">
+    <XInputTime :model-value="timeValue" class="w-44">
       <template #leading>
         <AlarmClock class="size-5 text-success" />
       </template>

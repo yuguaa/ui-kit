@@ -254,7 +254,39 @@ import XKbd from './XKbd.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = withDefaults(defineProps<CommandPaletteProps<G, T>>(), {
+const _props = withDefaults(defineProps<{
+  as?: any;
+  size?: any;
+  icon?: any;
+  trailingIcon?: any;
+  selectedIcon?: any;
+  childrenIcon?: any;
+  placeholder?: any;
+  autofocus?: any;
+  close?: any;
+  closeIcon?: any;
+  back?: any;
+  backIcon?: any;
+  input?: any;
+  groups?: any;
+  fuseOptions?: any;
+  ignoreLocation?: any;
+  threshold?: any;
+  keys?: any;
+  resultLimit?: any;
+  matchAllWhenSearchEmpty?: any;
+  fuse?: any;
+  virtualize?: any;
+  overscan?: any;
+  estimateSize?: any;
+  valueKey?: any;
+  labelKey?: any;
+  descriptionKey?: any;
+  preserveGroupOrder?: any;
+  searchDelay?: any;
+  class?: any;
+  ui?: any;
+}>(), {
   labelKey: 'label',
   descriptionKey: 'description',
   input: true,
@@ -265,8 +297,10 @@ const _props = withDefaults(defineProps<CommandPaletteProps<G, T>>(), {
   highlightOnHover: true,
   searchDelay: 0
 })
-const emits = defineEmits<CommandPaletteEmits<T>>()
-const slots = defineSlots<CommandPaletteSlots<T, G>>()
+const emits = defineEmits<{
+  'update:open': [payload?: any];
+}>()
+const slots = defineSlots<Record<string, any>>()
 
 const props = useComponentProps<CommandPaletteProps<G, T>>('commandPalette', _props)
 

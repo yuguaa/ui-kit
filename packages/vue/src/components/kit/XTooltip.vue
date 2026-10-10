@@ -53,6 +53,7 @@ export interface TooltipSlots {
 </script>
 
 <script setup lang="ts">
+import { ref } from 'vue'
 import { computed, toRef } from 'vue'
 import { defu } from 'defu'
 import { TooltipRoot, TooltipTrigger, TooltipPortal, TooltipContent, TooltipArrow, injectTooltipProviderContext } from 'reka-ui'
@@ -75,7 +76,18 @@ const props = useComponentProps('tooltip', _props)
 
 const appConfig = useAppConfig() as Tooltip['AppConfig']
 
-const providerContext = injectTooltipProviderContext()
+const providerContext = injectTooltipProviderContext({
+  isOpenDelayed: ref(false),
+  delayDuration: ref(1000),
+  onOpen: () => {},
+  onClose: () => {},
+  isPointerInTransitRef: ref(false),
+  disableHoverableContent: ref(false),
+  disableClosingTrigger: ref(false),
+  disabled: ref(false),
+  ignoreNonKeyboardFocus: ref(true),
+  content: ref({}),
+})
 
 const rootProps = useForwardProps(reactivePick(props, 'defaultOpen', 'open', 'delayDuration', 'disableHoverableContent', 'disableClosingTrigger', 'ignoreNonKeyboardFocus'), emits)
 const portalProps = usePortal(toRef(() => props.portal))

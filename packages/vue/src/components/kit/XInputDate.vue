@@ -16,7 +16,8 @@ type _RangeDateFieldRootProps = Omit<DateRangeFieldRootProps, 'as' | 'asChild' |
 type InputDateDefaultValue<R extends boolean = false> = R extends true ? DateRangeFieldRootProps['defaultValue'] : DateFieldRootProps['defaultValue']
 type InputDateModelValue<R extends boolean = false> = (R extends true ? DateRangeFieldRootProps['modelValue'] : DateFieldRootProps['modelValue']) | undefined
 
-export interface InputDateProps<R extends boolean = false> extends UseComponentIconsProps, _DateFieldRootProps, _RangeDateFieldRootProps {
+export interface InputDateProps<R extends boolean = false> {
+
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -54,7 +55,8 @@ export interface InputDateProps<R extends boolean = false> extends UseComponentI
   ui?: InputDate['slots']
 }
 
-export interface InputDateEmits<R extends boolean = false> extends Omit<DateFieldRootEmits & DateRangeFieldRootEmits, 'update:modelValue'> {
+export interface InputDateEmits<R extends boolean = false> {
+
   'update:modelValue': [value: InputDateModelValue<R>]
   'change': [event: Event]
   'blur': [event: FocusEvent]

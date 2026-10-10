@@ -259,6 +259,39 @@ defineOptions({ inheritAttrs: false })
 
 const _props = withDefaults(defineProps<{
   id?: any;
+  placeholder?: any;
+  searchInput?: any;
+  color?: any;
+  variant?: any;
+  size?: any;
+  required?: any;
+  trailingIcon?: any;
+  selectedIcon?: any;
+  clear?: any;
+  clearIcon?: any;
+  content?: any;
+  arrow?: any;
+  portal?: any;
+  virtualize?: any;
+  overscan?: any;
+  estimateSize?: any;
+  valueKey?: any;
+  labelKey?: any;
+  descriptionKey?: any;
+  items?: any;
+  defaultValue?: any;
+  modelValue?: any;
+  modelModifiers?: any;
+  multiple?: any;
+  highlight?: any;
+  fixed?: any;
+  createItem?: any;
+  filterFields?: any;
+  ignoreFilter?: any;
+  autofocus?: any;
+  autofocusDelay?: any;
+  class?: any;
+  ui?: any;
 }>(), {
   portal: true,
   searchInput: true,
@@ -272,6 +305,14 @@ const _props = withDefaults(defineProps<{
 })
 const emits = defineEmits<{
   change: [payload?: any];
+  blur: [payload?: any];
+  focus: [payload?: any];
+  create: [payload?: any];
+  clear: [payload?: any];
+  highlight: [payload?: any];
+  ref: [payload?: any];
+  value: [payload?: any];
+  'update:modelValue': [payload?: any];
 }>()
 const slots = defineSlots<Record<string, any>>()
 

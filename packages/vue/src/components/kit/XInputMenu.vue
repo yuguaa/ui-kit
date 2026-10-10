@@ -261,7 +261,45 @@ import XChip from './XChip.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = withDefaults(defineProps<InputMenuProps<T, VK, M, Mod, C>>(), {
+const _props = withDefaults(defineProps<{
+  as?: any;
+  id?: any;
+  type?: any;
+  placeholder?: any;
+  color?: any;
+  variant?: any;
+  size?: any;
+  required?: any;
+  autofocus?: any;
+  autofocusDelay?: any;
+  trailingIcon?: any;
+  selectedIcon?: any;
+  deleteIcon?: any;
+  clear?: any;
+  clearIcon?: any;
+  content?: any;
+  arrow?: any;
+  portal?: any;
+  virtualize?: any;
+  overscan?: any;
+  estimateSize?: any;
+  valueKey?: any;
+  labelKey?: any;
+  descriptionKey?: any;
+  items?: any;
+  defaultValue?: any;
+  modelValue?: any;
+  modelModifiers?: any;
+  multiple?: any;
+  highlight?: any;
+  fixed?: any;
+  mode?: any;
+  createItem?: any;
+  filterFields?: any;
+  ignoreFilter?: any;
+  class?: any;
+  ui?: any;
+}>(), {
   type: 'text',
   autofocusDelay: 0,
   portal: true,
@@ -273,8 +311,19 @@ const _props = withDefaults(defineProps<InputMenuProps<T, VK, M, Mod, C>>(), {
   virtualize: false,
   mode: 'combobox'
 })
-const emits = defineEmits<InputMenuEmits<T, VK, M, Mod, C>>()
-const slots = defineSlots<InputMenuSlots<T, VK, M, Mod, C>>()
+const emits = defineEmits<{
+  change: [payload?: any];
+  blur: [payload?: any];
+  focus: [payload?: any];
+  create: [payload?: any];
+  clear: [payload?: any];
+  highlight: [payload?: any];
+  ref: [payload?: any];
+  value: [payload?: any];
+  'remove-tag': [payload?: any];
+  'update:modelValue': [payload?: any];
+}>()
+const slots = defineSlots<Record<string, any>>()
 
 const props = useComponentProps<InputMenuProps<T, VK, M, Mod, C>>('inputMenu', _props)
 

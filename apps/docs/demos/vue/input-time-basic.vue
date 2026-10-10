@@ -1,8 +1,9 @@
 <script setup lang="ts">
+import { parseTime } from '@internationalized/date'
 import { ref } from 'vue'
 import XInputTime from '@/components/kit/XInputTime.vue'
 
-const time = ref('14:30')
+const time = ref(parseTime('14:30'))
 </script>
 
 <template>

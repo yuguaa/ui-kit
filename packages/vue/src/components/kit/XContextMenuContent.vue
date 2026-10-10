@@ -57,6 +57,16 @@ import XContextMenuContent from './XContextMenuContent.vue'
 
 const props = defineProps<{
   items?: any;
+  portal?: any;
+  sub?: any;
+  labelKey?: any;
+  descriptionKey?: any;
+  checkedIcon?: any;
+  loadingIcon?: any;
+  externalIcon?: any;
+  class?: any;
+  ui?: any;
+  uiOverride?: any;
 }>()
 const emits = defineEmits<{
 

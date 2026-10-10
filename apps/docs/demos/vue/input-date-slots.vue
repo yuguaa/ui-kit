@@ -1,11 +1,19 @@
 <script setup lang="ts">
+import { getLocalTimeZone, today } from '@internationalized/date'
+import { parseStringToDateValue } from 'reka-ui/date'
 import { CalendarCheck } from '@lucide/vue'
 import XInputDate from '@/components/kit/XInputDate.vue'
+
+const dateValue = parseStringToDateValue('2025-06-15', today(getLocalTimeZone()))
+const dateRangeValue = [
+  parseStringToDateValue('2025-06-01', today(getLocalTimeZone())),
+  parseStringToDateValue('2025-06-15', today(getLocalTimeZone())),
+]
 </script>
 
 <template>
   <div class="flex w-full flex-col gap-4">
-    <XInputDate :model-value="'2025-06-15'" class="w-56">
+    <XInputDate :model-value="dateValue" class="w-56">
       <template #leading>
         <CalendarCheck class="size-5 text-success" />
       </template>
@@ -14,7 +22,7 @@ import XInputDate from '@/components/kit/XInputDate.vue'
       </template>
     </XInputDate>
     <XInputDate
-      :model-value="['2025-06-01', '2025-06-15']"
+      :model-value="dateRangeValue"
       range
       class="w-72"
       :ui="{

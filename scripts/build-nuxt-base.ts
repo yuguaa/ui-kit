@@ -8,6 +8,7 @@
  */
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
+import { basename } from "node:path";
 import { createRequire } from "node:module";
 
 const require = createRequire(import.meta.url);
@@ -104,23 +105,21 @@ const HTML_ATTRIBUTE_KEYS = [
 /** 从 `{ ... }` 块文本中提取成员（键与可选性，跳过嵌套类型文本） */
 function parseMembersFromBody(body: string): MemberDef[] {
   const members: MemberDef[] = [];
-  const segments = splitTopLevel(body, ";");
-  for (const segment of segments) {
-    /* 剥掉段首注释（JSDoc 后跟成员声明）再解析 */
-    const text = segment
+  const parseOne = (text: string): MemberDef | undefined => {
+    const cleaned = text
+      .trim()
       .replace(/^\/\*\*?[\s\S]*?\*\//, "")
       .replace(/^\/\/[^\n]*\n?/, "")
       .trim();
-    if (!text) continue;
-    /* 取第一个顶层冒号前的内容作为键（跳过引号内冒号与嵌套括号） */
+    if (!cleaned) return undefined;
     let depth = 0;
     let colon = -1;
     let inQuote = false;
     let quoteChar = "";
-    for (let i = 0; i < text.length; i++) {
-      const ch = text[i];
+    for (let i = 0; i < cleaned.length; i++) {
+      const ch = cleaned[i];
       if (inQuote) {
-        if (ch === quoteChar && text[i - 1] !== "\\") inQuote = false;
+        if (ch === quoteChar && cleaned[i - 1] !== "\\") inQuote = false;
         continue;
       }
       if (ch === "'" || ch === '"') {
@@ -135,13 +134,27 @@ function parseMembersFromBody(body: string): MemberDef[] {
         break;
       }
     }
-    if (colon < 0) continue;
-    const keyPart = text.slice(0, colon).trim();
+    if (colon < 0) return undefined;
+    const keyPart = cleaned.slice(0, colon).trim();
     const optional = keyPart.endsWith("?");
     const key = keyPart.replace(/\?$/, "").replace(/^['"]|['"]$/g, "").trim();
-    if (!key) continue;
-    members.push({ key, optional });
+    if (!key) return undefined;
+    return { key, optional };
+  };
+
+  /* 接口成员以换行分隔（无分号）：逐成员扫描，新键起始行切分上一个成员 */
+  let current = "";
+  for (const line of body.split("\n")) {
+    const trimmed = line.trim();
+    if (/^(?:['"][^'"]+['"]|[A-Za-z_$][\w$]*)\??:/.test(trimmed) && current.includes(":")) {
+      const member = parseOne(current);
+      if (member) members.push(member);
+      current = "";
+    }
+    current += `\n${line}`;
   }
+  const last = parseOne(current);
+  if (last) members.push(last);
   return members;
 }
 
@@ -259,6 +272,17 @@ function createMemberResolver(componentSource: string, rekaDts: string, localInd
       /* reka-ui d.ts */
       if (!block) block = findDefinitionBlock(rekaDts, name);
       if (block) {
+        const eq = block.indexOf("=");
+        const openBrace = block.indexOf("{");
+        if (eq >= 0 && (openBrace < 0 || eq < openBrace)) {
+          /* type 别名无字面量体：解析 = 后表达式（如 Omit<X, keys>） */
+          const expr = block.slice(eq + 1).replace(/;?\s*$/, "").trim();
+          if (expr) {
+            const resolved = resolveName(expr, depth + 1);
+            cache.set(raw, resolved);
+            return resolved;
+          }
+        }
         const open = block.indexOf("{");
         const close = block.lastIndexOf("}");
         if (open >= 0 && close > open) {
@@ -339,12 +363,19 @@ const probeFs = {
 function collectInterfaceMembers(content: string, typeName: string, rekaDts: string, localIndex: Map<string, string>): MemberDef[] {
   const resolveName = createMemberResolver(content, rekaDts, localIndex);
   const block = findDefinitionBlock(content, typeName);
-  if (!block) return [];
+  if (!block) {
+    console.log(`[collect-debug] ${typeName}: 未找到定义块`);
+    return [];
+  }
   const open = block.indexOf("{");
   const close = block.lastIndexOf("}");
   const members: MemberDef[] = [];
   if (open >= 0 && close > open) {
-    members.push(...parseMembersFromBody(block.slice(open + 1, close)));
+    const parsed = parseMembersFromBody(block.slice(open + 1, close));
+    if (parsed.length < 2) {
+      console.log(`[collect-debug] ${typeName}: body 解析 ${parsed.length} 个, body 前 120: ${JSON.stringify(block.slice(open + 1, open + 121))}`);
+    }
+    members.push(...parsed);
   }
   /* interface extends 与 type 别名的外部表达式 */
   const head = block.slice(0, open);
@@ -377,6 +408,9 @@ function typeLiteralFallback(content: string, rekaDts: string, localIndex: Map<s
   let out = content;
   out = out.replace(/defineProps<(\w+)(?:<[^>]*>)?>/g, (_m: string, typeName: string) => {
     const members = collectInterfaceMembers(content, typeName, rekaDts, localIndex);
+    if (members.length < 2) {
+      console.log(`[fallback-debug] ${typeName} 成员过少: ${members.map((member) => member.key).join(",")}`);
+    }
     const lines = members.map((member) => {
       const key = /^[A-Za-z_$][\w$]*$/.test(member.key) ? member.key : `'${member.key}'`;
       return `  ${key}?: any;`;
@@ -519,6 +553,7 @@ function compileComponent(content: string, filename: string): { ok: boolean; con
         tryCompile(fallback);
         return { ok: true, content: fallback };
       } catch (error2) {
+        writeFileSync(join(ROOT, "scratch", `fallback-${basename(filename).replace(/\.vue$/, "")}.vue`), fallback);
         return { ok: false, content, message: `${message.slice(0, 60)} | fallback: ${String((error2 as Error).message ?? error2).slice(0, 60)}` };
       }
     }
@@ -526,15 +561,32 @@ function compileComponent(content: string, filename: string): { ok: boolean; con
   }
 }
 
-/** reka-ui 类型声明文件路径（按包 types 字段解析） */
+/** reka-ui 类型声明聚合（dist 下全部 d.ts 拼接，类型定义分散在各子目录） */
 function resolveRekaDts(): string {
-  const pkgPath = join(ROOT, "packages/vue/node_modules/reka-ui/package.json");
-  if (existsSync(pkgPath)) {
-    const pkg = JSON.parse(readFileSync(pkgPath, "utf8")) as { types?: string };
-    const types = join(ROOT, "packages/vue/node_modules/reka-ui", pkg.types ?? "dist/index.d.ts");
-    if (existsSync(types)) return readFileSync(types, "utf8");
+  const distDir = join(ROOT, "packages/vue/node_modules/reka-ui/dist");
+  if (!existsSync(distDir)) return "";
+  const chunks: string[] = [];
+  const walk = (dir: string) => {
+    for (const entry of readdirSync(dir)) {
+      const full = join(dir, entry);
+      if (full.endsWith(".d.ts")) {
+        chunks.push(readFileSync(full, "utf8"));
+      } else if (existsSync(full)) {
+        try {
+          const stat = readFileSync(full, "utf8");
+          if (stat === "" ) walk(full);
+        } catch {
+          walk(full);
+        }
+      }
+    }
+  };
+  try {
+    walk(distDir);
+  } catch {
+    /* 忽略读取失败 */
   }
-  return "";
+  return chunks.join("\n");
 }
 
 /** 本地类型索引：lib/nuxt 下全部 .ts 文本按文件名收集 */
@@ -572,6 +624,29 @@ function convertComponent(source: string): string {
     const setupOpen = out.indexOf("<script setup");
     const afterTag = out.indexOf(">", setupOpen) + 1;
     out = out.slice(0, afterTag) + `\nimport NuxtLink from '../../lib/nuxt/NuxtLink.vue'` + out.slice(afterTag);
+  }
+  /* Tooltip Provider 缺省替身：无 Provider 时注入默认上下文 */
+  if (out.includes("injectTooltipProviderContext()")) {
+    out = out.replace(
+      "const providerContext = injectTooltipProviderContext()",
+      `const providerContext = injectTooltipProviderContext({
+  isOpenDelayed: ref(false),
+  delayDuration: ref(1000),
+  onOpen: () => {},
+  onClose: () => {},
+  isPointerInTransitRef: ref(false),
+  disableHoverableContent: ref(false),
+  disableClosingTrigger: ref(false),
+  disabled: ref(false),
+  ignoreNonKeyboardFocus: ref(true),
+  content: ref({}),
+})`,
+    );
+    if (!/import\s*\{[^}]*\bref\b/.test(out)) {
+      const setupOpen = out.indexOf("<script setup");
+      const afterTag = out.indexOf(">", setupOpen) + 1;
+      out = out.slice(0, afterTag) + `\nimport { ref } from 'vue'` + out.slice(afterTag);
+    }
   }
   return out;
 }

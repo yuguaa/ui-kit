@@ -1,11 +1,14 @@
+import { parseTime } from "@internationalized/date";
 import { AlarmClock } from "lucide-react";
 import { XInputTime } from "@/components/kit/x-input-time";
+
+const timeValue = parseTime("14:30");
 
 export default function InputTimeSlots() {
   return (
     <div className="flex w-full flex-col gap-4">
       <XInputTime
-        value="14:30"
+        value={timeValue}
         className="w-44"
         leading={<AlarmClock className="size-5 text-success" />}
         trailing={<span className="text-xs text-muted-foreground">下午</span>}

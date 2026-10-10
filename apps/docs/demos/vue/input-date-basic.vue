@@ -1,8 +1,10 @@
 <script setup lang="ts">
+import { getLocalTimeZone, today } from '@internationalized/date'
+import { parseStringToDateValue } from 'reka-ui/date'
 import { ref } from 'vue'
 import XInputDate from '@/components/kit/XInputDate.vue'
 
-const date = ref('2025-06-15')
+const date = ref(parseStringToDateValue('2025-06-15', today(getLocalTimeZone())))
 </script>
 
 <template>

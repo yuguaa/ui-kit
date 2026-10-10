@@ -123,15 +123,30 @@ import { omit } from '../../lib/nuxt/utils'
 import { tv } from '../../lib/nuxt/utils/tv'
 import XContextMenuContent from './XContextMenuContent.vue'
 
-const _props = withDefaults(defineProps<ContextMenuProps<T>>(), {
+const _props = withDefaults(defineProps<{
+  size?: any;
+  items?: any;
+  checkedIcon?: any;
+  loadingIcon?: any;
+  externalIcon?: any;
+  content?: any;
+  portal?: any;
+  labelKey?: any;
+  descriptionKey?: any;
+  disabled?: any;
+  class?: any;
+  ui?: any;
+}>(), {
   portal: true,
   modal: true,
   externalIcon: true,
   labelKey: 'label',
   descriptionKey: 'description'
 })
-const emits = defineEmits<ContextMenuEmits>()
-const slots = defineSlots<ContextMenuSlots<T>>()
+const emits = defineEmits<{
+
+}>()
+const slots = defineSlots<Record<string, any>>()
 
 const props = useComponentProps<ContextMenuProps<T>>('contextMenu', _props)
 

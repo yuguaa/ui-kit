@@ -252,7 +252,30 @@ import XTooltip from './XTooltip.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = withDefaults(defineProps<NavigationMenuProps<T, K, O>>(), {
+const _props = withDefaults(defineProps<{
+  as?: any;
+  type?: any;
+  modelValue?: any;
+  defaultValue?: any;
+  trailingIcon?: any;
+  externalIcon?: any;
+  items?: any;
+  color?: any;
+  variant?: any;
+  orientation?: any;
+  collapsed?: any;
+  tooltip?: any;
+  popover?: any;
+  highlight?: any;
+  highlightColor?: any;
+  content?: any;
+  contentOrientation?: any;
+  arrow?: any;
+  valueKey?: any;
+  labelKey?: any;
+  class?: any;
+  ui?: any;
+}>(), {
   orientation: 'horizontal' as never,
   contentOrientation: 'horizontal',
   externalIcon: true,
@@ -263,8 +286,10 @@ const _props = withDefaults(defineProps<NavigationMenuProps<T, K, O>>(), {
   valueKey: 'value',
   labelKey: 'label'
 })
-const emits = defineEmits<NavigationMenuEmits<K, O>>()
-const slots = defineSlots<NavigationMenuSlots<T>>()
+const emits = defineEmits<{
+  'update:modelValue': [payload?: any];
+}>()
+const slots = defineSlots<Record<string, any>>()
 
 const props = useComponentProps<NavigationMenuProps<T, K, O>>('navigationMenu', _props)
 

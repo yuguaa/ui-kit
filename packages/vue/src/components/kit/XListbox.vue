@@ -182,6 +182,31 @@ defineOptions({ inheritAttrs: false })
 
 const _props = withDefaults(defineProps<{
   id?: any;
+  as?: any;
+  color?: any;
+  size?: any;
+  items?: any;
+  modelValue?: any;
+  modelModifiers?: any;
+  defaultValue?: any;
+  multiple?: any;
+  valueKey?: any;
+  labelKey?: any;
+  descriptionKey?: any;
+  loading?: any;
+  loadingIcon?: any;
+  filter?: any;
+  filterFields?: any;
+  ignoreFilter?: any;
+  selectedIcon?: any;
+  virtualize?: any;
+  overscan?: any;
+  estimateSize?: any;
+  highlight?: any;
+  autofocus?: any;
+  autofocusDelay?: any;
+  class?: any;
+  ui?: any;
 }>(), {
   labelKey: 'label',
   descriptionKey: 'description',
@@ -192,6 +217,7 @@ const _props = withDefaults(defineProps<{
 })
 const emits = defineEmits<{
   change: [payload?: any];
+  'update:modelValue': [payload?: any];
 }>()
 const slots = defineSlots<Record<string, any>>()
 

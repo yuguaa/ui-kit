@@ -80,6 +80,21 @@ import XDropdownMenuContent from './XDropdownMenuContent.vue'
 
 const props = defineProps<{
   items?: any;
+  portal?: any;
+  sub?: any;
+  labelKey?: any;
+  descriptionKey?: any;
+  checkedIcon?: any;
+  loadingIcon?: any;
+  externalIcon?: any;
+  size?: any;
+  filter?: any;
+  filterFields?: any;
+  ignoreFilter?: any;
+  searchTerm?: any;
+  class?: any;
+  ui?: any;
+  uiOverride?: any;
 }>()
 const emits = defineEmits<{
   'update:searchTerm': [payload?: any];
