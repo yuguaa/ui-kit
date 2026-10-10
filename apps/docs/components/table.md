@@ -48,34 +48,7 @@ npx shadcn-vue@latest add @ui-kit/x-table
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| data | T[] | [] | 数据源数组 |
-| columns | TableColumn\<T\>[] | 自动生成 | 列配置（TanStack ColumnDef） |
-| caption | string | - | 表格说明文字 |
-| meta | TableMeta\<T\> | - | 行与列的 meta 配置（类名 / 样式） |
-| empty | string | 暂无数据 | 无数据时展示的文字 |
-| sticky | boolean · header · footer | false | 固定表头 / 表尾 |
-| loading | boolean | false | 加载状态 |
-| watchOptions | WatchOptions | { deep: true } | 数据变化监听配置 |
-| globalFilterOptions | GlobalFilterOptions\<T\> | - | TanStack 全局筛选选项 |
-| columnFiltersOptions | ColumnFiltersOptions\<T\> | - | TanStack 列筛选选项 |
-| columnPinningOptions | ColumnPinningOptions | - | TanStack 固定列选项 |
-| columnSizingOptions | ColumnSizingOptions | - | TanStack 列宽调整选项 |
-| visibilityOptions | VisibilityOptions | - | TanStack 列显示选项 |
-| sortingOptions | SortingOptions\<T\> | - | TanStack 排序选项 |
-| groupingOptions | GroupingOptions | - | TanStack 分组选项 |
-| expandedOptions | ExpandedOptions\<T\> | - | TanStack 展开选项 |
-| rowSelectionOptions | RowSelectionOptions\<T\> | - | TanStack 行选择选项 |
-| rowPinningOptions | RowPinningOptions\<T\> | - | TanStack 固定行选项 |
-| paginationOptions | PaginationOptions | - | TanStack 分页选项 |
-| facetedOptions | FacetedOptions\<T\> | - | TanStack 列聚合选项 |
-| onSelect | (event, row) => void | - | 行选择回调（点击交互元素内部时忽略） |
-| onHover | (event, row \| null) => void | - | 行悬停回调 |
-| onContextmenu | ((event, row) => void) \| ((event, row) => void)[] | - | 行右键回调 |
-| ui | TableUi | - | 主题插槽类名 |
-| class | string | - | 根元素类名 |
+<!--@include: ./api/table.md-->
 
 ## ui 插槽
 

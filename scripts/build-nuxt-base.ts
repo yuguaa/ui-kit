@@ -87,7 +87,7 @@ function convertInfra(source: string): string {
 }
 
 /** 成员定义：键与可选性（类型统一降级为 any，运行时只关心名字与可选） */
-interface MemberDef { key: string; optional: boolean }
+interface MemberDef { key: string; optional: boolean; doc?: string }
 
 /** Omit<HTMLAttributes, ...> 的近似展开：常用 HTML 属性清单 */
 const HTML_ATTRIBUTE_KEYS = [
@@ -106,6 +106,9 @@ const HTML_ATTRIBUTE_KEYS = [
 function parseMembersFromBody(body: string): MemberDef[] {
   const members: MemberDef[] = [];
   const parseOne = (text: string): MemberDef | undefined => {
+    /* JSDoc 保留供文档提取 */
+    const docMatch = /\/\*\*?[\s\S]*?\*\//.exec(text);
+    const doc = docMatch ? docMatch[0] : undefined;
     const cleaned = text
       .trim()
       .replace(/^\/\*\*?[\s\S]*?\*\//, "")
@@ -139,7 +142,7 @@ function parseMembersFromBody(body: string): MemberDef[] {
     const optional = keyPart.endsWith("?");
     const key = keyPart.replace(/\?$/, "").replace(/^['"]|['"]$/g, "").trim();
     if (!key) return undefined;
-    return { key, optional };
+    return { key, optional, doc };
   };
 
   /* 接口成员以换行分隔（无分号）：逐成员扫描，顶层新键起始行切分上一个成员；嵌套花括号内的行不切分 */
@@ -328,7 +331,9 @@ function inlineAllExtends(content: string, rekaDts: string, localIndex: Map<stri
       .map((member) => {
         /* 键含连字符或冒号（事件名）时加引号 */
         const key = /^[A-Za-z_$][\w$]*$/.test(member.key) ? member.key : `'${member.key}'`;
-        return `  ${key}${member.optional ? "?" : ""}: any;`;
+        /* 保留成员 JSDoc（@defaultValue 与说明）供 API 文档提取 */
+        const doc = member.doc ? `  ${member.doc.trim().split("\n").map((line) => line.trim()).join("\n  ")}\n` : "";
+        return `${doc}  ${key}${member.optional ? "?" : ""}: any;`;
       })
       .join("\n");
   };
@@ -437,7 +442,8 @@ function typeLiteralFallback(content: string, rekaDts: string, localIndex: Map<s
     }
     const lines = members.map((member) => {
       const key = /^[A-Za-z_$][\w$]*$/.test(member.key) ? member.key : `'${member.key}'`;
-      return `  ${key}?: any;`;
+      const doc = (member as { doc?: string }).doc ? `  ${(member as { doc?: string }).doc!.trim()}\n` : "";
+      return `${doc}  ${key}?: any;`;
     });
     return `defineProps<{\n${lines.join("\n")}\n}>`;
   });

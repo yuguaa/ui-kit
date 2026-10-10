@@ -167,17 +167,71 @@ import { tv } from '../../lib/nuxt/utils/tv'
 import XDropdownMenuContent from './XDropdownMenuContent.vue'
 
 const _props = withDefaults(defineProps<{
+  /**
+   * @defaultValue 'md'
+   */
   size?: any;
+  /**
+   * The icon displayed when an item is checked.
+   * @defaultValue appConfig.ui.icons.check
+   * @IconifyIcon
+   */
   items?: any;
+  /**
+   * The icon displayed when an item is loading.
+   * @defaultValue appConfig.ui.icons.loading
+   * @IconifyIcon
+   */
   checkedIcon?: any;
+  /**
+   * The icon displayed when the item is an external link.
+   * Set to `false` to hide the external icon.
+   * @defaultValue appConfig.ui.icons.external
+   * @IconifyIcon
+   */
   loadingIcon?: any;
+  /**
+   * The content of the menu.
+   * @defaultValue { side: 'bottom', sideOffset: 8, collisionPadding: 8 }
+   */
   externalIcon?: any;
+  /**
+   * Display an arrow alongside the menu.
+   * `{ rounded: true }`{lang="ts-type"}
+   * @defaultValue false
+   */
   content?: any;
+  /**
+   * Render the menu in a portal.
+   * @defaultValue true
+   */
   arrow?: any;
+  /**
+   * The key used to get the label from the item.
+   * @defaultValue 'label'
+   */
   portal?: any;
+  /**
+   * The key used to get the description from the item.
+   * @defaultValue 'description'
+   */
   labelKey?: any;
+  /**
+   * Whether to display a filter input or not.
+   * Can be an object to pass additional props to the input.
+   * `{ placeholder: 'Search...', variant: 'none' }`{lang="ts-type"}
+   * @defaultValue false
+   */
   descriptionKey?: any;
+  /**
+   * The fields to filter by.
+   * @defaultValue [labelKey]
+   */
   filter?: any;
+  /**
+   * When `true`, items will not be filtered which is useful for custom filtering.
+   * @defaultValue false
+   */
   filterFields?: any;
   ignoreFilter?: any;
   disabled?: any;

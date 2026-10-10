@@ -50,47 +50,7 @@ npx shadcn-vue@latest add @ui-kit/x-select-menu
 
 ### XSelectMenu
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| items | SelectMenuItemData[] | - | 选项数据源，支持任意字段、description、type、disabled、icon |
-| modelValue | string · number · boolean · 数组 | - | 绑定值（v-model），多选为数组 |
-| defaultValue | 同上 | - | 非受控初始值 |
-| open | boolean | - | 受控打开状态（v-model:open） |
-| defaultOpen | boolean | false | 初始打开状态 |
-| searchTerm | string | - | 受控搜索词（v-model:searchTerm） |
-| mode | combobox · listbox | combobox | 底层模式：combobox 支持菜单内搜索，listbox 纯列表 |
-| searchInput | boolean | true | 是否显示菜单内搜索输入框 |
-| color | 七种语义色 | primary | 语义色（选中态与高亮） |
-| variant | outline · solid · soft · ghost · subtle · link | outline | 触发器预设样式 |
-| size | sm · md · lg | md | 尺寸 |
-| required | boolean | false | 必填标记 |
-| placeholder | string | 请选择 | 占位提示文字 |
-| trailingIcon | string · Component | chevron-down | 展开图标 |
-| selectedIcon | string · Component | check | 选中态图标 |
-| clear | boolean | false | 有选中项时显示清空按钮（单选清为 ''，多选清为 []） |
-| clearIcon | string · Component | x | 清空按钮图标 |
-| content | boolean · 对象 | - | 浮层内容配置（含 side / align 等） |
-| arrow | boolean | false | 浮层箭头 |
-| portal | boolean | true | 浮层渲染到 body |
-| virtualize | boolean | false | 虚拟滚动（长列表） |
-| valueKey | string | value | 选项值字段 |
-| labelKey | string | label | 选项标签字段 |
-| descriptionKey | string | description | 选项说明字段 |
-| multiple | boolean | false | 多选模式 |
-| highlight | boolean | false | 选中项高亮样式 |
-| fixed | boolean | false | 触发器固定样式 |
-| createItem | boolean | false | 搜索关键字不存在时允许创建新选项 |
-| filterFields | string[] | [labelKey] | 过滤字段 |
-| ignoreFilter | boolean | false | 忽略内部过滤（服务端过滤场景） |
-| autofocus | boolean | false | 打开时自动聚焦搜索框 |
-| autofocusDelay | number | 0 | 自动聚焦延迟（ms） |
-| highlightOnHover | boolean | true | 悬停高亮选项 |
-| disabled | boolean | false | 是否禁用 |
-| id / name | string | - | 表单字段标识 |
-| icon / avatar | string · 对象 | - | 触发器前置图标或头像 |
-| loading | boolean | false | 加载态 |
-| as | string · Component | button | 渲染为指定元素或组件 |
-| ui | SelectMenuUi | - | 主题插槽类名 |
+<!--@include: ./api/selectmenu.md-->
 
 **事件**：update:modelValue 值变化 · update:open 打开状态变化 · update:searchTerm 搜索词变化 · change 值变化 · focus / blur 打开与关闭 · create 创建新选项 · clear 清空 · highlight 高亮项变化
 

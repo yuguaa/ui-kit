@@ -7,7 +7,7 @@ export default function InputTimeBasic() {
   return (
     <div className="flex w-full flex-wrap items-center gap-4">
       <XInputTime value={time} onChange={(next) => setTime(next as string)} className="w-40" />
-      <span className="text-sm text-muted-foreground">当前时间：{time}</span>
+      <span className="text-sm text-muted-foreground">当前时间：{String(time)}</span>
     </div>
   );
 }

@@ -26,7 +26,7 @@ const submitted = ref('')
 
 <template>
   <div class="flex w-full flex-col gap-4">
-    <Form :schema="schema" @submit="submitted = JSON.stringify($event)">
+    <Form :schema="schema" :on-submit="(event: unknown) => (submitted = JSON.stringify((event as { data: unknown }).data))">
       <XFormField name="username" label="用户名" required>
         <XInput placeholder="请输入用户名" @update:model-value="formApi.setValue('username', $event)" />
       </XFormField>

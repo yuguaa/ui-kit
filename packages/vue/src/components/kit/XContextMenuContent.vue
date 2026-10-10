@@ -60,8 +60,17 @@ const props = defineProps<{
   portal?: any;
   sub?: any;
   labelKey?: any;
+  /**
+   * @IconifyIcon
+   */
   descriptionKey?: any;
+  /**
+   * @IconifyIcon
+   */
   checkedIcon?: any;
+  /**
+   * @IconifyIcon
+   */
   loadingIcon?: any;
   externalIcon?: any;
   class?: any;

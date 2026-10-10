@@ -84,22 +84,7 @@ npx shadcn-vue@latest add @ui-kit/x-button
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| variant | solid · outline · soft · ghost · subtle · link | solid | 预设样式 |
-| size | xs · sm · md · lg · xl | md | 尺寸 |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 组件颜色 |
-| loading | boolean | false | 加载态 |
-| disabled | boolean | false | 禁用状态 |
-| block | boolean | false | 撑满父容器宽度 |
-| square | boolean | false | 方形按钮，图标场景等边距 |
-| label | string | - | 文本内容（等价于默认插槽） |
-| active | boolean | false | 激活态，配合 activeColor / activeVariant 使用 |
-| activeColor | primary · secondary · neutral · success · info · warning · error | - | 激活态颜色 |
-| activeVariant | solid · outline · soft · ghost · subtle · link | - | 激活态样式 |
-| loadingAuto | boolean | false | 点击回调返回 Promise 时自动进入加载态 |
-| as | string · Component | button | 渲染为指定元素或组件 |
-| ui | ButtonUi | - | 主题插槽类名 |
+<!--@include: ./api/button.md-->
 
 ## ui 插槽
 

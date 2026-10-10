@@ -23,7 +23,7 @@ function onSubmit(values: Record<string, unknown>) {
 
 <template>
   <div class="flex w-full flex-col gap-4">
-    <Form @submit="onSubmit">
+    <Form :on-submit="onSubmit">
       <XFieldGroup>
         <XFormField name="username" label="用户名" required class="flex-1">
           <XInput placeholder="请输入用户名" @update:model-value="formApi.setValue('username', $event)" />

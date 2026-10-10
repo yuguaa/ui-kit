@@ -14,8 +14,8 @@ const failedCount = ref(0)
 <template>
   <div class="flex w-full flex-col gap-4">
     <Form
-      @submit="submitted = JSON.stringify($event)"
-      @error="failedCount = Object.keys($event).length"
+      :on-submit="(event: unknown) => (submitted = JSON.stringify((event as { data: unknown }).data))"
+      :on-error="(event: unknown) => (failedCount = Object.keys((event as { errors: unknown }).errors ?? {}).length)"
     >
       <XFormField name="nickname" label="昵称" required>
         <XInput placeholder="请输入昵称" @update:model-value="formApi.setValue('nickname', $event)" />

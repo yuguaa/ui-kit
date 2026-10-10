@@ -72,21 +72,7 @@ npx shadcn-vue@latest add @ui-kit/x-input
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| size | xs · sm · md · lg · xl | md | 控件尺寸 |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 组件颜色（聚焦描边与高亮） |
-| variant | outline · soft · subtle · ghost · none | outline | 预设样式 |
-| highlight | boolean | false | 始终显示颜色描边，类似聚焦态 |
-| fixed | boolean | true | 保持移动端字号在所有断点一致 |
-| status | error · warning | - | 设置校验状态 |
-| placeholder | string | - | 占位提示文字 |
-| disabled | boolean | false | 是否禁用 |
-| maxLength | number | - | 最大输入长度 |
-| clearable | boolean | false | 有值且未禁用、未只读时显示清空按钮 |
-| avatar | AvatarProps | - | 左侧头像配置 |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| ui | InputUi | - | 主题插槽类名 |
+<!--@include: ./api/input.md-->
 
 **事件**：clear 点击清空按钮时触发（update:modelValue 支持 v-model）
 

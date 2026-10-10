@@ -64,22 +64,7 @@ npx shadcn@latest add @ui-kit/x-modal
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| open | boolean | false | 是否打开（受控） |
-| defaultOpen | boolean | false | 初始是否打开 |
-| title | ReactNode | - | 标题 |
-| description | ReactNode | - | 辅助说明 |
-| modal | boolean | true | 模态：聚焦锁定与遮罩拦截 |
-| unmountOnHide | boolean | false | 关闭后卸载内容 |
-| overlay | boolean | true | 渲染遮罩 |
-| scrollable | boolean | false | 滚动遮罩模式：内容随遮罩滚动居中 |
-| transition | boolean | true | 开关动画 |
-| fullscreen | boolean | false | 全屏模式 |
-| portal | boolean | true | 渲染到 body |
-| close | boolean \| 按钮属性对象 \| ReactNode | true | 显示关闭按钮；传元素时作为 close 插槽渲染 |
-| closeIcon | ReactNode | XIcon | 关闭按钮图标 |
-| dismissible | boolean | true | 允许点击外部或按 Esc 关闭 |
+<!--@include: ./api/modal.md-->
 | className | string | - | 根节点类名（有触发器时绑到触发器） |
 | ui | XModalUi | - | 主题插槽类名 |
 | onOpenChange | (open, details) => void | - | 打开状态变化回调 |

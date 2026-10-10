@@ -255,25 +255,122 @@ import XKbd from './XKbd.vue'
 defineOptions({ inheritAttrs: false })
 
 const _props = withDefaults(defineProps<{
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
   as?: any;
+  /**
+   * The icon displayed in the input. Set to `false` to hide the icon.
+   * @defaultValue appConfig.ui.icons.search
+   * @IconifyIcon
+   */
   size?: any;
+  /**
+   * The icon displayed on the right side of the input.
+   * @defaultValue appConfig.ui.icons.search
+   * @IconifyIcon
+   */
   icon?: any;
+  /**
+   * The icon displayed when an item is selected.
+   * @defaultValue appConfig.ui.icons.check
+   * @IconifyIcon
+   */
   trailingIcon?: any;
+  /**
+   * The icon displayed when an item has children.
+   * @defaultValue appConfig.ui.icons.chevronRight
+   * @IconifyIcon
+   */
   selectedIcon?: any;
+  /**
+   * The placeholder text for the input.
+   * @defaultValue t('commandPalette.placeholder')
+   */
   childrenIcon?: any;
+  /**
+   * Automatically focus the input when component is mounted.
+   * @defaultValue true
+   */
   placeholder?: any;
+  /**
+   * Display a close button in the input (useful when inside a Modal for example).
+   * `{ size: 'md', color: 'neutral', variant: 'ghost' }`{lang="ts-type"}
+   * @emits 'update:open'
+   * @defaultValue false
+   */
   autofocus?: any;
+  /**
+   * The icon displayed in the close button.
+   * @defaultValue appConfig.ui.icons.close
+   * @IconifyIcon
+   */
   close?: any;
+  /**
+   * Display a button to navigate back in history.
+   * `{ size: 'md', color: 'neutral', variant: 'link' }`{lang="ts-type"}
+   * @defaultValue true
+   */
   closeIcon?: any;
+  /**
+   * The icon displayed in the back button.
+   * @defaultValue appConfig.ui.icons.arrowLeft
+   * @IconifyIcon
+   */
   back?: any;
+  /**
+   * Configure the input or hide it with `false`.
+   * @defaultValue true
+   */
   backIcon?: any;
   input?: any;
+  /**
+   * Options for [useFuse](https://vueuse.org/integrations/useFuse).
+   * @defaultValue {
+      fuseOptions: {
+        ignoreLocation: true,
+        threshold: 0.1,
+        keys: ['label', 'description', 'suffix']
+      },
+      resultLimit: 12,
+      matchAllWhenSearchEmpty: true
+    }
+   */
   groups?: any;
+  /**
+   * Enable virtualization for large lists.
+   * Note: when enabled, all groups are flattened into a single list due to a limitation of Reka UI (https://github.com/unovue/reka-ui/issues/1885).
+   * @defaultValue false
+   */
   fuse?: any;
+  /**
+     * Number of items rendered outside the visible area
+     * @defaultValue 12
+     */
   virtualize?: any;
+  /**
+   * The key used to get the label from the item.
+   * @defaultValue 'label'
+   */
   valueKey?: any;
+  /**
+   * The key used to get the description from the item.
+   * @defaultValue 'description'
+   */
   labelKey?: any;
+  /**
+   * Whether to preserve the order of groups as defined in the `groups` prop when filtering.
+   * When `false`, groups will appear based on item matches.
+   * @defaultValue false
+   */
   descriptionKey?: any;
+  /**
+   * Delay (in milliseconds) before the search term is passed to Fuse (debounced).
+   * Useful when indexing large datasets where fuzzy search becomes the bottleneck — the input stays responsive while Fuse and the result pipeline only re-run after typing settles.
+   * Set to `0` (the default) to disable.
+   * @defaultValue 0
+   */
   preserveGroupOrder?: any;
   searchDelay?: any;
   class?: any;

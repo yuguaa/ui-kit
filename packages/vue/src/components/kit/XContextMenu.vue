@@ -135,13 +135,45 @@ import { tv } from '../../lib/nuxt/utils/tv'
 import XContextMenuContent from './XContextMenuContent.vue'
 
 const _props = withDefaults(defineProps<{
+  /**
+   * @defaultValue 'md'
+   */
   size?: any;
+  /**
+   * The icon displayed when an item is checked.
+   * @defaultValue appConfig.ui.icons.check
+   * @IconifyIcon
+   */
   items?: any;
+  /**
+   * The icon displayed when an item is loading.
+   * @defaultValue appConfig.ui.icons.loading
+   * @IconifyIcon
+   */
   checkedIcon?: any;
+  /**
+   * The icon displayed when the item is an external link.
+   * Set to `false` to hide the external icon.
+   * @defaultValue appConfig.ui.icons.external
+   * @IconifyIcon
+   */
   loadingIcon?: any;
+  /** The content of the menu. */
   externalIcon?: any;
+  /**
+   * Render the menu in a portal.
+   * @defaultValue true
+   */
   content?: any;
+  /**
+   * The key used to get the label from the item.
+   * @defaultValue 'label'
+   */
   portal?: any;
+  /**
+   * The key used to get the description from the item.
+   * @defaultValue 'description'
+   */
   labelKey?: any;
   descriptionKey?: any;
   disabled?: any;

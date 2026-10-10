@@ -48,28 +48,9 @@ npx shadcn@latest add @ui-kit/x-tabs
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| render | ReactElement | div | 渲染为指定元素 |
-| items | XTabsItem[] | [] | 标签项数组 |
-| value | string · number | - | 当前激活的标签 value（受控） |
-| defaultValue | string · number | 0 | 初始激活的标签 value |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 组件颜色 |
-| variant | pill · link | pill | 预设样式 |
-| size | xs · sm · md · lg · xl | md | 标签尺寸 |
-| orientation | horizontal · vertical | horizontal | 标签排列方向 |
-| content | boolean | true | 是否渲染内容区 |
-| valueKey | string | value | 从标签项取 value 的字段，支持点路径 |
-| labelKey | string | label | 从标签项取 label 的字段，支持点路径 |
-| unmountOnHide | boolean | true | 隐藏面板时是否卸载内容 |
-| onValueChange | (value) => void | - | 激活标签变化回调 |
-| ui | XTabsUi | - | 主题插槽类名 |
-| className | string | - | 根元素类名 |
-| leading | (props) => ReactNode | - | 前置内容渲染函数（{ item, index, ui }） |
-| trailing | (props) => ReactNode | - | 后置内容渲染函数（{ item, index, ui }） |
-| children | (props) => ReactNode | - | 标签文字渲染函数（{ item, index }） |
-| contentSlot | (props) => ReactNode | - | 内容面板渲染函数（{ item, index, ui }） |
-| listLeading / listTrailing | ReactNode | - | 列表前 / 后内容 |
+<!--@include: ./api/tabs.md-->
+
+**回调与插槽**：onValueChange 激活标签变化 · leading / trailing 前后置内容渲染函数 · children 标签文字渲染函数 · contentSlot 内容面板渲染函数 · listLeading / listTrailing 列表前 / 后内容
 
 ## ui 插槽
 

@@ -101,18 +101,48 @@ import XButton from './XButton.vue'
 defineOptions({ inheritAttrs: false })
 
 const _props = withDefaults(defineProps<{
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
   as?: any;
   placeholder?: any;
   color?: any;
   variant?: any;
+  /** Highlight the ring color like a focus state. */
   size?: any;
+  /** Keep the mobile text size on all breakpoints. */
   highlight?: any;
+  /**
+   * The orientation of the input number.
+   * @defaultValue 'horizontal'
+   */
   fixed?: any;
+  /**
+   * Configure the increment button. The `color` and `size` are inherited.
+   * @defaultValue { variant: 'link' }
+   */
   orientation?: any;
+  /**
+   * The icon displayed to increment the value.
+   * @defaultValue appConfig.ui.icons.plus
+   * @IconifyIcon
+   */
   increment?: any;
+  /** Disable the increment button. */
   incrementIcon?: any;
+  /**
+   * Configure the decrement button. The `color` and `size` are inherited.
+   * @defaultValue { variant: 'link' }
+   */
   incrementDisabled?: any;
+  /**
+   * The icon displayed to decrement the value.
+   * @defaultValue appConfig.ui.icons.minus
+   * @IconifyIcon
+   */
   decrement?: any;
+  /** Disable the decrement button. */
   decrementIcon?: any;
   decrementDisabled?: any;
   autofocus?: any;

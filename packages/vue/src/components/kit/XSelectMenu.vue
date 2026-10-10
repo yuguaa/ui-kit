@@ -258,32 +258,116 @@ import XInput from './XInput.vue'
 defineOptions({ inheritAttrs: false })
 
 const _props = withDefaults(defineProps<{
+  /** The placeholder text when the select is empty. */
   id?: any;
+  /**
+   * Whether to display the search input or not.
+   * Can be an object to pass additional props to the input.
+   * `{ placeholder: 'Search...', variant: 'none' }`{lang="ts-type"}
+   * Set `autofocus: false` to prevent the search input from being focused when the menu opens (e.g. to avoid opening the virtual keyboard on touch devices).
+   * @defaultValue true
+   */
   placeholder?: any;
+  /**
+   * @defaultValue 'primary'
+   */
   searchInput?: any;
+  /**
+   * @defaultValue 'outline'
+   */
   color?: any;
+  /**
+   * @defaultValue 'md'
+   */
   variant?: any;
   size?: any;
+  /**
+   * The icon displayed to open the menu.
+   * @defaultValue appConfig.ui.icons.chevronDown
+   * @IconifyIcon
+   */
   required?: any;
+  /**
+   * The icon displayed when an item is selected.
+   * @defaultValue appConfig.ui.icons.check
+   * @IconifyIcon
+   */
   trailingIcon?: any;
+  /**
+   * Display a clear button to reset the model value.
+   * Can be an object to pass additional props to the Button.
+   * @defaultValue false
+   */
   selectedIcon?: any;
+  /**
+   * The icon displayed in the clear button.
+   * @defaultValue appConfig.ui.icons.close
+   * @IconifyIcon
+   */
   clear?: any;
+  /**
+   * The content of the menu.
+   * @defaultValue { side: 'bottom', sideOffset: 8, collisionPadding: 8, position: 'popper' }
+   */
   clearIcon?: any;
+  /**
+   * Display an arrow alongside the menu.
+   * `{ rounded: true }`{lang="ts-type"}
+   * @defaultValue false
+   */
   content?: any;
+  /**
+   * Render the menu in a portal.
+   * @defaultValue true
+   */
   arrow?: any;
+  /**
+   * Enable virtualization for large lists.
+   * Note: when enabled, all groups are flattened into a single list due to a limitation of Reka UI (https://github.com/unovue/reka-ui/issues/1885).
+   * @defaultValue false
+   */
   portal?: any;
+  /**
+     * Number of items rendered outside the visible area
+     * @defaultValue 12
+     */
   virtualize?: any;
+  /**
+   * When `items` is an array of objects, select the field to use as the label.
+   * @defaultValue 'label'
+   */
   valueKey?: any;
+  /**
+   * When `items` is an array of objects, select the field to use as the description.
+   * @defaultValue 'description'
+   */
   labelKey?: any;
   descriptionKey?: any;
+  /** The value of the SelectMenu when initially rendered. Use when you do not need to control the state of the SelectMenu. */
   items?: any;
+  /** The controlled value of the SelectMenu. Can be binded-with with `v-model`. */
   defaultValue?: any;
   modelValue?: any;
+  /** Whether multiple options can be selected or not. */
   modelModifiers?: any;
+  /** Highlight the ring color like a focus state. */
   multiple?: any;
+  /** Keep the mobile text size on all breakpoints. */
   highlight?: any;
+  /**
+   * Determines if custom user input that does not exist in options can be added.
+   * @defaultValue false
+   */
   fixed?: any;
+  /**
+   * Fields to filter items by.
+   * @defaultValue [labelKey]
+   */
   createItem?: any;
+  /**
+   * When `true`, disable the default filters, useful for custom filtering (useAsyncData, useFetch, etc.).
+   * @defaultValue false
+   */
   filterFields?: any;
   ignoreFilter?: any;
   autofocus?: any;

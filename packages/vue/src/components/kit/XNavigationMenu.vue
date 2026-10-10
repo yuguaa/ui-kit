@@ -253,24 +253,103 @@ import XTooltip from './XTooltip.vue'
 defineOptions({ inheritAttrs: false })
 
 const _props = withDefaults(defineProps<{
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
   as?: any;
+  /**
+   * The controlled value of the active item(s).
+   * - In horizontal orientation: always `string`
+   * - In vertical orientation with `type="single"`: `string`
+   * - In vertical orientation with `type="multiple"`: `string[]`
+   *
+   * Use this when you need to control the state of the items. Can be binded with `v-model`
+   */
   type?: any;
+  /**
+   * The default active value of the item(s).
+   * - In horizontal orientation: always `string`
+   * - In vertical orientation with `type="single"`: `string`
+   * - In vertical orientation with `type="multiple"`: `string[]`
+   *
+   * Use when you do not need to control the state of the item(s).
+   */
   modelValue?: any;
+  /**
+   * The icon displayed to open the menu.
+   * @defaultValue appConfig.ui.icons.chevronDown
+   * @IconifyIcon
+   */
   defaultValue?: any;
+  /**
+   * The icon displayed when the item is an external link.
+   * Set to `false` to hide the external icon.
+   * @defaultValue appConfig.ui.icons.external
+   * @IconifyIcon
+   */
   trailingIcon?: any;
   externalIcon?: any;
+  /**
+   * @defaultValue 'primary'
+   */
   items?: any;
+  /**
+   * @defaultValue 'pill'
+   */
   color?: any;
+  /**
+   * The orientation of the menu.
+   * @defaultValue 'horizontal'
+   */
   variant?: any;
+  /**
+   * Collapse the navigation menu to only show icons.
+   * Only works when `orientation` is `vertical`.
+   * @defaultValue false
+   */
   orientation?: any;
+  /**
+   * Display a tooltip on the items with the label of the item.
+   * Only works when `orientation` is `vertical` and `collapsed` is `true`.
+   * `{ delayDuration: 0, content: { side: 'right' } }`{lang="ts-type"}
+   * @defaultValue false
+   */
   collapsed?: any;
+  /**
+   * Display a popover on the items when the menu is collapsed with the children list.
+   * `{ mode: 'hover', content: { side: 'right', align: 'start', alignOffset: 2 } }`{lang="ts-type"}
+   * @defaultValue false
+   */
   tooltip?: any;
+  /** Display a line next to the active item. */
   popover?: any;
+  /**
+   * @defaultValue 'primary'
+   */
   highlight?: any;
+  /** The content of the menu. */
   highlightColor?: any;
+  /**
+   * The orientation of the content.
+   * Only works when `orientation` is `horizontal`.
+   * @defaultValue 'horizontal'
+   */
   content?: any;
+  /**
+   * Display an arrow alongside the menu.
+   * @defaultValue false
+   */
   contentOrientation?: any;
+  /**
+   * The key used to get the value from the item.
+   * @defaultValue 'value'
+   */
   arrow?: any;
+  /**
+   * The key used to get the label from the item.
+   * @defaultValue 'label'
+   */
   valueKey?: any;
   labelKey?: any;
   class?: any;

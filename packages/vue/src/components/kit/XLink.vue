@@ -60,15 +60,46 @@ interface NuxtLinkProps extends Omit<RouterLinkProps, 'to'> {
 }
 
 export interface LinkProps {
+  /**
+  * Route Location the link should navigate to when clicked on.
+  */
   to?: any;
+  /**
+  * Forces the link to be considered as external (true) or internal (false). This is helpful to handle edge-cases
+  */
   href?: any;
+  /**
+  * Where to display the linked URL, as the name for a browsing context.
+  */
   external?: any;
+  /**
+  * A rel attribute value to apply on the link. Defaults to "noopener noreferrer" for external links.
+  */
   target?: any;
+  /**
+  * If set to true, no rel attribute will be added to the link
+  */
   rel?: any;
+  /**
+  * A class to apply to links that have been prefetched.
+  */
   noRel?: any;
+  /**
+  * When enabled will prefetch middleware, layouts and payloads of links in the viewport.
+  */
   prefetchedClass?: any;
+  /**
+  * Allows controlling when to prefetch links. By default, prefetch is triggered only on visibility.
+  */
   prefetch?: any;
+  /**
+  * Escape hatch to disable `prefetch` attribute.
+  */
   prefetchOn?: any;
+  /**
+  * An option to either add or remove trailing slashes in the `href` for this specific link.
+  * Overrides the global `trailingSlash` option if provided.
+  */
   noPrefetch?: any;
   trailingSlash?: any;
   class?: any;

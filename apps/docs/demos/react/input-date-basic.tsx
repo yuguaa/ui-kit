@@ -8,7 +8,7 @@ export default function InputDateBasic() {
   return (
     <div className="flex w-full flex-wrap items-center gap-4">
       <XInputDate value={date} onChange={(next) => setDate(next as never)} className="w-56" />
-      <span className="text-sm text-muted-foreground">当前日期：{date}</span>
+      <span className="text-sm text-muted-foreground">当前日期：{String(date)}</span>
     </div>
   );
 }

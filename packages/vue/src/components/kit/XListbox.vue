@@ -181,24 +181,94 @@ import XInput from './XInput.vue'
 defineOptions({ inheritAttrs: false })
 
 const _props = withDefaults(defineProps<{
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
   id?: any;
+  /**
+   * @defaultValue 'primary'
+   */
   as?: any;
+  /**
+   * @defaultValue 'md'
+   */
   color?: any;
+  /**
+   * The items to display in the list.
+   */
   size?: any;
+  /**
+   * The controlled value of the Listbox. Can be bound with `v-model`.
+   */
   items?: any;
   modelValue?: any;
+  /**
+   * The default value when not controlled.
+   */
   modelModifiers?: any;
+  /**
+   * Whether multiple items can be selected.
+   * @defaultValue false
+   */
   defaultValue?: any;
+  /**
+   * When `items` is an array of objects, select the field to use as the value instead of the object itself.
+   * @defaultValue undefined
+   */
   multiple?: any;
+  /**
+   * The key used to get the label from the item.
+   * @defaultValue 'label'
+   */
   valueKey?: any;
+  /**
+   * The key used to get the description from the item.
+   * @defaultValue 'description'
+   */
   labelKey?: any;
+  /**
+   * Whether the list is in a loading state.
+   */
   descriptionKey?: any;
+  /**
+   * The icon displayed when loading.
+   * @defaultValue appConfig.ui.icons.loading
+   * @IconifyIcon
+   */
   loading?: any;
+  /**
+   * Whether to display a filter input or not.
+   * Can be an object to pass additional props to the input.
+   * `{ placeholder: 'Search...', variant: 'none' }`{lang="ts-type"}
+   * @defaultValue false
+   */
   loadingIcon?: any;
+  /**
+   * The fields to filter by.
+   * @defaultValue [labelKey]
+   */
   filter?: any;
+  /**
+   * When `true`, disable the default filters, useful for custom filtering (useAsyncData, useFetch, etc.).
+   * @defaultValue false
+   */
   filterFields?: any;
+  /**
+   * The icon displayed when an item is selected.
+   * @defaultValue appConfig.ui.icons.check
+   * @IconifyIcon
+   */
   ignoreFilter?: any;
+  /**
+   * Enable virtualization for large lists.
+   * @defaultValue false
+   */
   selectedIcon?: any;
+  /**
+     * Number of items rendered outside the visible area
+     * @defaultValue 12
+     */
   virtualize?: any;
   highlight?: any;
   autofocus?: any;

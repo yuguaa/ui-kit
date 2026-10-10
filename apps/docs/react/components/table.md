@@ -48,31 +48,7 @@ npx shadcn@latest add @ui-kit/x-table
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| render | ReactElement | div | 渲染为指定元素 |
-| data | T[] | [] | 数据源数组 |
-| columns | XTableColumn\<T\>[] | 自动生成 | 列配置（TanStack ColumnDef） |
-| caption | ReactNode | - | 表格说明文字 |
-| meta | TableMeta\<T\> | - | 行与列的 meta 配置（类名 / 样式） |
-| empty | ReactNode | 暂无数据 | 无数据时展示的文字 |
-| sticky | boolean · header · footer | false | 固定表头 / 表尾 |
-| loading | boolean | false | 加载状态 |
-| globalFilterOptions | GlobalFilterOptions\<T\> & { state? } | - | TanStack 全局筛选选项 |
-| columnFiltersOptions | ColumnFiltersOptions\<T\> & { state? } | - | TanStack 列筛选选项 |
-| columnPinningOptions | ColumnPinningOptions & { state? } | - | TanStack 固定列选项 |
-| columnSizingOptions | ColumnSizingOptions & { state? } | - | TanStack 列宽调整选项 |
-| visibilityOptions | VisibilityOptions & { state? } | - | TanStack 列显示选项 |
-| sortingOptions | SortingOptions\<T\> & { state? } | - | TanStack 排序选项 |
-| groupingOptions | GroupingOptions & { state? } | - | TanStack 分组选项 |
-| expandedOptions | ExpandedOptions\<T\> & { state? } | - | TanStack 展开选项 |
-| rowSelectionOptions | RowSelectionOptions\<T\> & { state? } | - | TanStack 行选择选项 |
-| rowPinningOptions | RowPinningOptions\<T\> & { state? } | - | TanStack 固定行选项 |
-| paginationOptions | PaginationOptions & { state? } | - | TanStack 分页选项 |
-| facetedOptions | FacetedOptions\<T\> | - | TanStack 列聚合选项 |
-| onSelect | (event, row) => void | - | 行选择回调（点击交互元素内部时忽略） |
-| onHover | (event, row \| null) => void | - | 行悬停回调 |
-| onContextMenu | ((event, row) => void) \| ((event, row) => void)[] | - | 行右键回调 |
+<!--@include: ./api/table.md-->
 | ui | XTableUi | - | 主题插槽类名 |
 | className | string | - | 根元素类名 |
 | expandedSlot | (row) => ReactNode | - | 展开行渲染函数 |

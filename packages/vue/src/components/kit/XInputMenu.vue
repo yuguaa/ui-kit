@@ -262,37 +262,130 @@ import XChip from './XChip.vue'
 defineOptions({ inheritAttrs: false })
 
 const _props = withDefaults(defineProps<{
+  /**
+   * The element or component this component should render as.
+   * @defaultValue 'div'
+   */
   as?: any;
   id?: any;
+  /** The placeholder text when the input is empty. */
   type?: any;
+  /**
+   * @defaultValue 'primary'
+   */
   placeholder?: any;
+  /**
+   * @defaultValue 'outline'
+   */
   color?: any;
+  /**
+   * @defaultValue 'md'
+   */
   variant?: any;
   size?: any;
   required?: any;
   autofocus?: any;
+  /**
+   * The icon displayed to open the menu.
+   * @defaultValue appConfig.ui.icons.chevronDown
+   * @IconifyIcon
+   */
   autofocusDelay?: any;
+  /**
+   * The icon displayed when an item is selected.
+   * @defaultValue appConfig.ui.icons.check
+   * @IconifyIcon
+   */
   trailingIcon?: any;
+  /**
+   * The icon displayed to delete a tag.
+   * Works only when `multiple` is `true`.
+   * @defaultValue appConfig.ui.icons.close
+   * @IconifyIcon
+   */
   selectedIcon?: any;
+  /**
+   * Display a clear button to reset the model value.
+   * Can be an object to pass additional props to the Button.
+   * @defaultValue false
+   */
   deleteIcon?: any;
+  /**
+   * The icon displayed in the clear button.
+   * @defaultValue appConfig.ui.icons.close
+   * @IconifyIcon
+   */
   clear?: any;
+  /**
+   * The content of the menu.
+   * @defaultValue { side: 'bottom', sideOffset: 8, collisionPadding: 8, position: 'popper' }
+   */
   clearIcon?: any;
+  /**
+   * Display an arrow alongside the menu.
+   * `{ rounded: true }`{lang="ts-type"}
+   * @defaultValue false
+   */
   content?: any;
+  /**
+   * Render the menu in a portal.
+   * @defaultValue true
+   */
   arrow?: any;
+  /**
+   * Enable virtualization for large lists.
+   * Note: when enabled, all groups are flattened into a single list due to a limitation of Reka UI (https://github.com/unovue/reka-ui/issues/1885).
+   * @defaultValue false
+   */
   portal?: any;
+  /**
+     * Number of items rendered outside the visible area
+     * @defaultValue 12
+     */
   virtualize?: any;
+  /**
+   * When `items` is an array of objects, select the field to use as the label.
+   * @defaultValue 'label'
+   */
   valueKey?: any;
+  /**
+   * When `items` is an array of objects, select the field to use as the description.
+   * @defaultValue 'description'
+   */
   labelKey?: any;
   descriptionKey?: any;
+  /** The value of the InputMenu when initially rendered. Use when you do not need to control the state of the InputMenu. */
   items?: any;
+  /** The controlled value of the InputMenu. Can be binded-with with `v-model`. */
   defaultValue?: any;
   modelValue?: any;
+  /** Whether multiple options can be selected or not. */
   modelModifiers?: any;
+  /** Highlight the ring color like a focus state. */
   multiple?: any;
+  /** Keep the mobile text size on all breakpoints. */
   highlight?: any;
+  /**
+   * The behavior of the InputMenu.
+   * - `combobox`: select one (or many) items from a list of suggestions.
+   * - `autocomplete`: free-form text input with optional suggestions. The `modelValue` becomes the input text (`string`) instead of a selected item.
+   * @defaultValue 'combobox'
+   */
   fixed?: any;
+  /**
+   * Determines if custom user input that does not exist in options can be added.
+   * @defaultValue false
+   */
   mode?: any;
+  /**
+   * Fields to filter items by.
+   * @defaultValue [labelKey]
+   */
   createItem?: any;
+  /**
+   * When `true`, disable the default filters, useful for custom filtering (useAsyncData, useFetch, etc.).
+   * @defaultValue false
+   */
   filterFields?: any;
   ignoreFilter?: any;
   class?: any;

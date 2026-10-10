@@ -48,23 +48,7 @@ npx shadcn-vue@latest add @ui-kit/x-tabs
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| items | TabsItem[] | [] | 标签项数组 |
-| modelValue | string · number | - | 当前激活的标签 value（受控） |
-| defaultValue | string · number | 0 | 初始激活的标签 value |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 组件颜色 |
-| variant | pill · link | pill | 预设样式 |
-| size | xs · sm · md · lg · xl | md | 标签尺寸 |
-| orientation | horizontal · vertical | horizontal | 标签排列方向 |
-| content | boolean | true | 是否渲染内容区 |
-| valueKey | string | value | 从标签项取 value 的字段，支持点路径 |
-| labelKey | string | label | 从标签项取 label 的字段，支持点路径 |
-| activationMode | automatic · manual | automatic | 激活方式：聚焦即激活 / 仅点击激活 |
-| unmountOnHide | boolean | true | 隐藏面板时是否卸载内容 |
-| ui | TabsUi | - | 主题插槽类名 |
-| class | string | - | 根元素类名 |
+<!--@include: ./api/tabs.md-->
 
 ## ui 插槽
 
