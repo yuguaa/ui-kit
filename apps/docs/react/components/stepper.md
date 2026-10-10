@@ -38,26 +38,9 @@ npx shadcn@latest add @ui-kit/x-stepper
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| render | ReactElement | div | 渲染为指定元素 |
-| items | XStepperItem[] | [] | 步骤项数组 |
-| value | string · number | - | 当前激活步骤的 value（受控） |
-| defaultValue | string · number | - | 初始激活步骤的 value |
-| size | xs · sm · md · lg · xl | md | 步骤尺寸 |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 组件颜色 |
-| orientation | horizontal · vertical | horizontal | 步骤排列方向 |
-| valueKey | string | value | 从步骤项取 value 的字段，支持点路径 |
-| disabled | boolean | false | 是否禁用全部步骤 |
-| linear | boolean | true | 是否必须按顺序完成 |
-| onValueChange | (value) => void | - | 步骤变化回调 |
-| onNext / onPrev | (item) => void | - | 进入下一步 / 回到上一步回调 |
-| ui | XStepperUi | - | 主题插槽类名 |
-| className | string | - | 根元素类名 |
-| indicator | (props) => ReactNode | - | 指示器渲染函数（{ item, ui }） |
-| wrapper | (item) => ReactNode | - | 标题与描述包装渲染函数 |
-| title | (item) => ReactNode | - | 步骤标题渲染函数 |
-| description | (item) => ReactNode | - | 步骤描述渲染函数 |
+<!--@include: ./api/stepper.md-->
+
+**插槽**：indicator 指示器 · wrapper 标题与描述包装 · title 步骤标题 · description 步骤描述
 | content | (item) => ReactNode | - | 内容面板渲染函数 |
 
 ## ui 插槽

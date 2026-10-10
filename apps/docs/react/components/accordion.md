@@ -44,25 +44,9 @@ npx shadcn@latest add @ui-kit/x-accordion
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| items | XAccordionItem[] | [] | 手风琴项数组 |
-| multiple | boolean | false | 是否可多开 |
-| collapsible | boolean | true | 展开项是否可全部收起 |
-| disabled | boolean | false | 是否禁用全部项 |
-| unmountOnHide | boolean | true | 隐藏时是否卸载内容 |
-| defaultValue | string[] | [] | 默认展开项 |
-| labelKey | string | label | 标题字段名（支持点路径） |
-| valueKey | string | value | 唯一值字段名（支持点路径） |
-| trailingIcon | XIconName · ComponentType | chevron-down | 后置图标，单项 trailingIcon 优先 |
-| value | string[] | - | 受控展开项 |
-| onChange | (value: string[]) => void | - | 展开状态变化回调 |
-| render | ReactElement | - | 渲染为指定元素 |
-| ui | XAccordionUi | - | 主题插槽类名 |
-| leading / trailing | ReactNode · (props) => ReactNode | - | 前置 / 后置插槽 |
-| content | ReactNode · (props) => ReactNode | - | 整个内容区插槽 |
-| body | ReactNode · (props) => ReactNode | - | 内容容器内部插槽 |
-| children | ReactNode · (props) => ReactNode | - | 标题内容插槽 |
+<!--@include: ./api/accordion.md-->
+
+**插槽**：leading / trailing 前置与后置 · content 整个内容区 · body 内容容器内部 · children 标题内容
 
 插槽 props：`{ item, index, open }`
 

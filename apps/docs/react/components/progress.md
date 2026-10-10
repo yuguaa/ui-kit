@@ -58,18 +58,7 @@ npx shadcn@latest add @ui-kit/x-progress
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| value | number · null | null | 绑定值；null 表示不确定进度 |
-| max | number · Array | 100 | 最大进度值；传数组时渲染步骤条，值为每步文案 |
-| status | boolean | false | 显示当前进度百分比 |
-| inverted | boolean | false | 进度方向是否反转 |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 指示条与步骤文字颜色 |
-| orientation | horizontal · vertical | horizontal | 进度方向 |
-| animation | carousel · carousel-inverse · swing · elastic | carousel | 不确定进度的指示器动画 |
-| render | ReactElement | - | 渲染为指定元素 |
-| ui | XProgressUi | - | 主题插槽类名 |
-| statusContent | ReactNode · (props: { percent? }) => ReactNode | - | status 插槽内容 |
+<!--@include: ./api/progress.md-->
 
 ## ui 插槽
 

@@ -36,13 +36,7 @@ npx shadcn@latest add @ui-kit/x-skeleton
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| loading | boolean | true | 是否显示骨架，为 false 时渲染子元素 |
-| variant | text · circle · rect | rect | 形状 |
-| width / height | number · string | - | 宽度 / 高度，覆盖形状默认尺寸 |
-| render | ReactElement | - | 渲染为指定元素 |
-| ui | XSkeletonUi | - | 主题插槽类名 |
+<!--@include: ./api/skeleton.md-->
 
 ## ui 插槽
 

@@ -36,16 +36,9 @@ npx shadcn@latest add @ui-kit/x-collapsible
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| open | boolean | false | 是否展开 |
-| disabled | boolean | false | 是否禁用 |
-| defaultOpen | boolean | false | 默认展开 |
-| unmountOnHide | boolean | true | 隐藏时是否卸载内容 |
-| render | ReactElement | - | 渲染为指定元素 |
-| ui | XCollapsibleUi | - | 主题插槽类名 |
-| trigger | ReactNode | 展开详情 | 触发器内容（传元素时合并为触发器本身） |
-| onOpenChange | (open) => void | - | 展开状态变化回调 |
+<!--@include: ./api/collapsible.md-->
+
+**插槽**：trigger 触发器内容 · children 展开内容
 
 ## ui 插槽
 

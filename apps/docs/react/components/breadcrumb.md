@@ -68,16 +68,7 @@ npx shadcn@latest add @ui-kit/x-breadcrumb
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| items | { title?, href?, icon?, active? }[] | - | 面包屑项数组（末项可省略 href；icon 为前置图标；active 强制激活项；允许自定义字段，泛型保留） |
-| labelKey | string | title | 面包屑项标题字段名 |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 激活项文字颜色 |
-| separatorIcon | ReactNode | chevron-right | 图标分隔符，设置后替换默认图标 |
-| separator | ReactNode | - | 分隔符插槽，设置后替换整个分隔符内容 |
-| disabled | boolean | false | 是否禁用 |
-| render | ReactElement | - | 渲染为指定元素 |
-| ui | XBreadcrumbUi | - | 主题插槽类名 |
+<!--@include: ./api/breadcrumb.md-->
 
 ## ui 插槽
 
