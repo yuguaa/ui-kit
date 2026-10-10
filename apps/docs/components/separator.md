@@ -46,20 +46,7 @@ npx shadcn-vue@latest add @ui-kit/x-separator
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| orientation | horizontal · vertical | horizontal | 方向 |
-| decorative | boolean | false | 纯装饰分割线，不渲染无障碍角色（role 为 none） |
-| label | string | - | 标签文字，优先级高于 icon / avatar |
-| icon | IconName | - | 标签图标 |
-| avatar | AvatarProps | - | 标签头像，优先级高于默认插槽 |
-| color | primary · secondary · neutral · success · info · warning · error | neutral | 语义色边框 |
-| size | xs · sm · md · lg · xl | xs | 边框粗细 |
-| type | solid · dashed · dotted | solid | 线条样式 |
-| position | start · center · end | center | 内容位置 |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| ui | SeparatorUi | - | 主题插槽类名 |
-| class | any | - | 根元素类名 |
+<!--@include: ./api/separator.md-->
 
 ## ui 插槽
 

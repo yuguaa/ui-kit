@@ -65,28 +65,7 @@ toastApi.dismiss()
 
 ## API
 
-useToast().show(options) 的选项：
-
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| title | string · Component | - | 通知标题，组件等价 title 插槽 |
-| description | string · Component | - | 说明文字，组件等价 description 插槽 |
-| icon | IconName | - | 图标名 |
-| avatar | AvatarProps | - | 头像配置 |
-| color | primary · success · warning · error | primary | 语义色 |
-| orientation | vertical · horizontal | vertical | 内容与操作区的排列方向 |
-| close | boolean · ButtonProps · Component | true | 关闭按钮，组件等价 close 插槽 |
-| closeIcon | IconName | x | 关闭按钮图标 |
-| actions | ButtonProps[] · Component | - | 操作按钮列表，组件等价 actions 插槽 |
-| action | { label, onClick } | - | 操作按钮，点击后关闭通知 |
-| cancel | { label, onClick } | - | 取消按钮，点击后关闭通知 |
-| leading | Component | - | 自定义图标/头像区域，等价 leading 插槽 |
-| progress | boolean · { color, ui } | true | 剩余时长进度条 |
-| duration | number | 3000 | 展示时长（ms），0 表示不自动关闭 |
-| id | string · number | - | 通知 id，相同 id 复用同一条通知 |
-| ui | ToastUi | - | 主题插槽类名 |
-| onCloseToast | () => void | - | 关闭回调（内部：由通知 API 注入） |
-| isPaused | boolean | - | 暂停进度计时（内部：由通知 API 注入） |
+<!--@include: ./api/toast.md-->
 
 ## ui 插槽
 

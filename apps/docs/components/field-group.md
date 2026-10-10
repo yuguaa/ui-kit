@@ -48,14 +48,7 @@ npx shadcn-vue@latest add @ui-kit/x-field-group
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| size | xs · sm · md · lg · xl | md | 尺寸（控制字段间距） |
-| orientation | horizontal · vertical | horizontal | 排列方向 |
-| inline | boolean | true | 旧属性：true 等价 horizontal，false 等价 vertical |
-| ui | FieldGroupUi | - | 主题插槽类名 |
-| class | string | - | 根元素类名 |
+<!--@include: ./api/field-group.md-->
 
 ## ui 插槽
 

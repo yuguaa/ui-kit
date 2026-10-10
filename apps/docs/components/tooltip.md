@@ -48,21 +48,7 @@ npx shadcn-vue@latest add @ui-kit/x-tooltip
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| text | string | - | 提示文本 |
-| kbds | (string \| Kbd 属性对象)[] | - | 快捷键组合 |
-| open | boolean | false | 是否打开（支持 v-model:open） |
-| defaultOpen | boolean | false | 初始是否打开 |
-| delayDuration | number | 700 | 打开延迟（毫秒） |
-| disableHoverableContent | boolean | false | 内容不可悬停保持 |
-| disableClosingTrigger | boolean | false | 点击触发器不关闭 |
-| ignoreNonKeyboardFocus | boolean | false | 非键盘聚焦不打开 |
-| disabled | boolean | false | 禁用提示 |
-| arrow | boolean | false | 是否显示箭头 |
-| portal | boolean | true | 渲染到 body |
-| class | string | - | 根节点类名（有默认插槽时绑到触发器） |
-| ui | TooltipUi | - | 主题插槽类名 |
+<!--@include: ./api/tooltip.md-->
 
 ## ui 插槽
 

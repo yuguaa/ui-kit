@@ -80,24 +80,7 @@ npx shadcn@latest add @ui-kit/x-alert
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| color | primary · secondary · neutral · success · info · warning · error | - | 语义色，缺省回退 type，最终 primary |
-| type | success · info · warning · error | - | 提示类型，作为 color 的回退 |
-| variant | solid · outline · soft · subtle | solid | 预设样式 |
-| orientation | vertical · horizontal | vertical | 内容与操作区的排列方向 |
-| title | ReactNode | - | 提示标题，与 message 并存且优先显示 |
-| message | ReactNode | - | 提示标题 |
-| description | ReactNode | - | 辅助说明文字 |
-| icon | XIconName · ReactNode | - | 图标名或自定义图标 |
-| showIcon | boolean | false | 显示类型默认图标 |
-| avatar | XAvatarProps | - | 头像配置 |
-| leading | ReactNode | - | 前置内容，优先于 icon / avatar / showIcon 的默认图标 |
-| actions | ReactNode · XAlertButtonProps[] | - | 操作按钮列表：数组渲染为 xs 尺寸按钮，其他内容原样渲染 |
-| close | boolean · XAlertButtonProps | false | 显示关闭按钮，点击后 open 置为 false；传对象时整体透传给 XButton |
-| closeSlot | ReactNode | - | 自定义关闭按钮（对应 close 插槽） |
-| closable | boolean | false | 显示关闭按钮 |
-| closeIcon | XIconName | x | 关闭按钮图标 |
+<!--@include: ./api/alert.md-->
 | open | boolean | - | 受控关闭模型 |
 | onOpenChange | (open: boolean) => void | - | 打开状态变化回调 |
 | onClose | (event) => void | - | 点击关闭按钮时的回调 |

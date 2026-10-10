@@ -48,18 +48,7 @@ npx shadcn@latest add @ui-kit/x-pagination
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| render | ReactElement | nav | 渲染为指定元素 |
-| page | number | - | 当前页码（受控） |
-| defaultPage | number | - | 初始页码 |
-| total | number | 0 | 数据总数 |
-| itemsPerPage | number | 10 | 每页条数 |
-| showEdges | boolean | false | 始终显示第一页、最后一页与省略号 |
-| siblingCount | number | 2 | 当前页两侧的页码数量 |
-| disabled | boolean | false | 是否禁用 |
-| showControls | boolean | true | 是否显示首页、上一页、下一页与末页按钮 |
-| firstIcon / prevIcon / nextIcon / lastIcon / ellipsisIcon | XIconName | - | 各控制按钮图标 |
+<!--@include: ./api/pagination.md-->
 | color | XButtonColor | neutral | 页码按钮颜色 |
 | variant | XButtonVariant | outline | 页码按钮样式 |
 | size | XButtonSize | - | 页码按钮尺寸 |

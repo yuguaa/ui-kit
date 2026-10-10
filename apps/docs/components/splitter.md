@@ -44,18 +44,7 @@ npx shadcn-vue@latest add @ui-kit/x-splitter
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| orientation | horizontal · vertical | horizontal | 方向 |
-| items | SplitterPanelItem[] | - | 面板数组；未提供时使用 first / second 双面板形态 |
-| disabled | boolean | false | 锁定全部拖拽 |
-| id | string | - | 分组 id，同时用于派生面板与拖拽条 id |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| ui | SplitterUi | - | 主题插槽类名 |
-| minSize | number | 20 | 双面板形态：最小尺寸（百分比） |
-| defaultSize | number | 50 | 双面板形态：默认尺寸（百分比） |
-| size | number | - | 双面板形态：受控尺寸（百分比） |
-| collapsible | boolean | false | 双面板形态：拖拽越过边界时折叠对应面板 |
+<!--@include: ./api/splitter.md-->
 
 ### SplitterPanelItem
 

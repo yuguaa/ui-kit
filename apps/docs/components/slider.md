@@ -58,19 +58,7 @@ npx shadcn-vue@latest add @ui-kit/x-slider
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| modelValue | number · number[] | - | 绑定值（支持 v-model）；数组为双值区间 |
-| defaultValue | number · number[] | - | 默认值（非受控） |
-| min / max | number | 0 / 100 | 最小值 / 最大值 |
-| step | number | 1 | 步长 |
-| disabled | boolean | false | 是否禁用 |
-| tooltip | boolean · object | false | 悬浮显示当前值提示，对象透传 XTooltip 属性 |
-| orientation | horizontal · vertical | horizontal | 滑块方向（纵向时高度由 class 控制） |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 指示条与拇指颜色 |
-| size | xs · sm · md · lg · xl | md | 尺寸 |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| ui | SliderUi | - | 主题插槽类名 |
+<!--@include: ./api/slider.md-->
 
 ## ui 插槽
 

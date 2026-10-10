@@ -142,6 +142,11 @@ function renderTable(title: string, members: Array<{ key: string; optional: bool
   return lines.join("\n");
 }
 
+/** 组件名转 kebab-case（XInputMenu → input-menu） */
+function kebabName(name: string): string {
+  return name.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
+}
+
 function main() {
   mkdirSync(OUT_DIR, { recursive: true });
   const files = readdirSync(KIT_DIR).filter((f) => f.endsWith(".vue") && f !== "XButtonGroup.vue");
@@ -159,7 +164,7 @@ function main() {
       renderTable("Slots", slots),
     ].filter(Boolean);
     if (!sections.length) continue;
-    writeFileSync(join(OUT_DIR, `${name.toLowerCase()}.md`), sections.join("\n\n") + "\n");
+    writeFileSync(join(OUT_DIR, `${kebabName(name)}.md`), sections.join("\n\n") + "\n");
     count++;
   }
   /* React 侧：camelCase 接口，输出到 react/components/api */

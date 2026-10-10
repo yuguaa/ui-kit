@@ -56,24 +56,7 @@ npx shadcn@latest add @ui-kit/x-drawer
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| open | boolean | false | 是否打开（受控） |
-| defaultOpen | boolean | false | 初始是否打开 |
-| title | ReactNode | - | 标题 |
-| description | ReactNode | - | 辅助说明 |
-| modal | boolean | true | 模态：聚焦锁定与遮罩拦截 |
-| direction | top · right · bottom · left | bottom | 滑出方向 |
-| snapPoints | (number \| string)[] | - | 预设停靠位置（0-1 比例或像素值） |
-| overlay | boolean | true | 渲染遮罩 |
-| handle | boolean | true | 渲染拖拽把手 |
-| portal | boolean | true | 渲染到 body |
-| nested | boolean | false | 嵌套在另一个抽屉中（嵌套关系由底层原语自动识别） |
-| inset | boolean | false | 与屏幕边缘保留间距 |
-| close | boolean \| 按钮属性对象 \| ReactNode | false | 显示关闭按钮；传元素时作为 close 插槽渲染 |
-| closeIcon | ReactNode | XIcon | 关闭按钮图标 |
-| dismissible | boolean | true | 允许点击外部或按 Esc 关闭 |
-| className | string | - | 根节点类名（有触发器时绑到触发器） |
+<!--@include: ./api/drawer.md-->
 | ui | XDrawerUi | - | 主题插槽类名 |
 | onOpenChange | (open, details) => void | - | 打开状态变化回调 |
 | onClosePrevent | () => void | - | 关闭被阻止（dismissible 为 false 时点击外部、按 Esc 或拖拽） |

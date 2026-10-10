@@ -36,11 +36,7 @@ npx shadcn-vue@latest add @ui-kit/x-container
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| size | xs · sm · md · lg · xl | lg | 最大宽度 |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| ui | ContainerUi | - | 主题插槽类名 |
+<!--@include: ./api/container.md-->
 
 ## ui 插槽
 

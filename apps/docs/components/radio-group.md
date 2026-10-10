@@ -72,27 +72,7 @@ npx shadcn-vue@latest add @ui-kit/x-radio-group
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| options | { value?, label?, description?, disabled?, icon?, class?, ui? }[] | - | 选项数据源 |
-| modelValue | string · number | - | 受控选中值（支持 v-model） |
-| legend | string | - | 组标题 |
-| orientation | horizontal · vertical | vertical | 排列方向 |
-| valueKey | string | value | 取值字段名 |
-| labelKey | string | label | 文字字段名 |
-| descriptionKey | string | description | 辅助说明字段名 |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 选中圆点的语义色 |
-| size | xs · sm · md · lg · xl | md | 尺寸 |
-| indicator | start · end · hidden | start | 指示圆点位置，hidden 时图标显示在 label 上方 |
-| highlight | boolean | false | 常显高亮聚焦环 |
-| required | boolean | false | 必选项，legend 后显示 * |
-| disabled | boolean | false | 整体禁用 |
-| id | string | - | 组 id，label 通过 for 关联单项 |
-| variant | radio · button | radio | 展示形式 |
-| buttonStyle | outline · solid | outline | 按钮样式（variant 为 button 时生效） |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| ui | RadioGroupUi | - | 主题插槽类名 |
-| class | string | - | 根元素类名 |
+<!--@include: ./api/radio-group.md-->
 
 ## ui 插槽
 

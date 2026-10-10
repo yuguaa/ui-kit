@@ -54,23 +54,7 @@ npx shadcn-vue@latest add @ui-kit/x-switch
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| modelValue | boolean | false | 是否选中（支持 v-model） |
-| disabled | boolean | false | 是否禁用 |
-| required | boolean | false | 必选项，label 后显示 * |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 选中时滑块轨道的语义色 |
-| size | default · small | default | 控件尺寸 |
-| highlight | boolean | false | 常显高亮聚焦环 |
-| loading | boolean | false | 加载态：阻止交互并显示旋转图标 |
-| loadingIcon | Component | 旋转图标 | 加载图标 |
-| checkedIcon | Component | - | 选中时滑块内图标 |
-| uncheckedIcon | Component | - | 未选中时滑块内图标 |
-| label | string | - | 关联文字 |
-| description | string | - | 关联文字下方的辅助说明 |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| ui | SwitchUi | - | 主题插槽类名 |
-| class | string | - | 根元素类名 |
+<!--@include: ./api/switch.md-->
 
 ## ui 插槽
 

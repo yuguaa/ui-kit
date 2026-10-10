@@ -36,14 +36,7 @@ npx shadcn-vue@latest add @ui-kit/x-icon
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| name | arrow-left · bell · book · chart-bar · chart-line · check · chevron-down · chevron-right · circle-alert · circle-check · clipboard-paste · copy · corner-down-right · dashboard · download · external-link · file-plus · file-text · figma · folder · folder-open · form-input · gauge · github · globe · house · info · layout-dashboard · loader-circle · menu · moon · package · palette · pen · plus · search · settings · star · sun · trash · user · users · x | - | 图标名 |
-| size | xs · sm · md · lg · xl | md | 尺寸 |
-| color | string | - | 颜色 |
-| mode | svg · css | svg | 渲染模式：svg 渲染 lucide 图标，css 输出 Iconify CSS 类名 |
-| customize | (svg: SVGSVGElement) => void | - | svg 渲染后修改图标元素的回调 |
-| ui | IconUi | - | 主题插槽类名 |
+<!--@include: ./api/icon.md-->
 
 ## ui 插槽
 

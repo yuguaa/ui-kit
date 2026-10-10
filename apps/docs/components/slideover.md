@@ -56,24 +56,7 @@ npx shadcn-vue@latest add @ui-kit/x-slideover
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| open | boolean | false | 是否打开（支持 v-model:open） |
-| defaultOpen | boolean | false | 初始是否打开 |
-| title | string | - | 标题 |
-| description | string | - | 辅助说明 |
-| modal | boolean | true | 模态：聚焦锁定与遮罩拦截 |
-| unmountOnHide | boolean | false | 关闭后卸载内容 |
-| overlay | boolean | true | 渲染遮罩 |
-| transition | boolean | true | 开关动画 |
-| side | top · right · bottom · left | right | 滑入方向 |
-| inset | boolean | false | 与屏幕边缘保留间距 |
-| portal | boolean | true | 渲染到 body |
-| close | boolean \| 按钮属性对象 | true | 显示关闭按钮（对象透传给按钮） |
-| closeIcon | Component | XIcon | 关闭按钮图标 |
-| dismissible | boolean | true | 允许点击外部或按 Esc 关闭 |
-| class | string | - | 根节点类名（有默认插槽时绑到触发器） |
-| ui | SlideoverUi | - | 主题插槽类名 |
+<!--@include: ./api/slideover.md-->
 
 ## ui 插槽
 

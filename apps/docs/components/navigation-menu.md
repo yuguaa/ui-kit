@@ -48,35 +48,7 @@ npx shadcn-vue@latest add @ui-kit/x-navigation-menu
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| items | NavigationMenuItemData[] · NavigationMenuItemData[][] | - | 菜单项数组，二维数组时渲染多列表并以分隔线隔开 |
-| selectedKeys | string[] | [] | 当前选中的 key（或 valueKey 字段值），用于高亮当前项 |
-| value | string · string[] | - | 受控值：水平方向为打开的面板项值，垂直方向为展开的手风琴项值 |
-| defaultValue | string · string[] | - | 非受控初始值 |
-| type | single · multiple | multiple | 垂直方向手风琴展开模式：single 单开，multiple 多开 |
-| collapsible | boolean | true | 垂直方向手风琴是否可关闭已展开项 |
-| disabled | boolean | false | 根级禁用（垂直方向手风琴） |
-| mode | vertical · horizontal · inline | vertical | 菜单模式（inline 等同垂直手风琴） |
-| orientation | horizontal · vertical | - | 排列方向，优先于 mode |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 语义色：选中项文字颜色 |
-| variant | pill · link | pill | 预设样式 |
-| collapsed | boolean | false | 垂直方向折叠为仅图标 |
-| tooltip | boolean · 配置对象 | false | 折叠时显示标签提示，`{ delayDuration?, content? }` |
-| popover | boolean · 配置对象 | false | 折叠时子菜单用 popover 展示，`{ mode?, content? }` |
-| highlight | boolean | false | 选中项显示指示线 |
-| highlightColor | primary · secondary · neutral · success · info · warning · error | primary | 指示线颜色 |
-| trailingIcon | string · Component | chevron-down | 子菜单展开图标 |
-| externalIcon | boolean · string · Component | true | 外链图标，false 时隐藏 |
-| arrow | boolean | false | 水平方向显示指示箭头 |
-| content | { align?, alignOffset? } | - | 水平方向内容面板配置 |
-| contentOrientation | horizontal · vertical | horizontal | 内容面板排列方向（仅水平模式） |
-| labelKey | string | label | 菜单项标题字段 |
-| valueKey | string | key | 菜单项值字段 |
-| theme | light · dark | light | 菜单主题（dark 为深色底） |
-| as | string · Component | nav | 渲染为指定元素或组件（根容器） |
-| ui | NavigationMenuUi | - | 主题插槽类名 |
-| class | any | - | 根容器类名 |
+<!--@include: ./api/navigation-menu.md-->
 
 **事件**：click 点击菜单项的回调 · select 选中菜单项的回调 · valueChange 展开值变化回调
 

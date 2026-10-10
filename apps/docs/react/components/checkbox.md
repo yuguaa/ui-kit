@@ -82,24 +82,7 @@ npx shadcn@latest add @ui-kit/x-checkbox
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| checked | boolean | false | 是否选中（受控） |
-| defaultChecked | boolean | false | 初始选中状态（非受控） |
-| disabled | boolean | false | 是否禁用 |
-| indeterminate | boolean | false | 半选状态 |
-| required | boolean | false | 必选项，label 后显示 * |
-| value | string · number | - | 选项的值 |
-| name | string | - | 表单字段名 |
-| id | string | - | 控件 id，label 通过 htmlFor 关联 |
-| label | ReactNode | - | 选项文字 |
-| description | ReactNode | - | 选项文字下方的辅助说明 |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 选中与半选时指示块的颜色 |
-| variant | list · card | list | 展示形式，card 时整个卡片可点击 |
-| size | sm · md · lg | md | 控件尺寸 |
-| indicator | start · end · hidden | start | 指示块位置，hidden 时图标显示在 label 上方 |
-| highlight | boolean | false | 常显高亮聚焦环 |
-| icon | ElementType | check 图标 | 选中时显示的图标 |
+<!--@include: ./api/checkbox.md-->
 | indeterminateIcon | ElementType | minus 图标 | 半选时显示的图标 |
 | onCheckedChange | (checked: boolean) => void | - | 选中状态变化回调 |
 | render | ReactElement | - | 渲染为指定元素 |

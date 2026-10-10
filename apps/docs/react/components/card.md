@@ -58,23 +58,7 @@ npx shadcn@latest add @ui-kit/x-card
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| title | ReactNode | - | 标题 |
-| description | ReactNode | - | 辅助说明 |
-| extra | ReactNode | - | 右上角操作区 |
-| variant | outline · solid · soft | outline | 预设样式 |
-| bordered | boolean | true | 是否显示边框 |
-| hoverable | boolean | false | 悬浮时阴影加深 + 边框高亮 |
-| size | default · small | default | 卡片尺寸 |
-| render | ReactElement | - | 渲染为指定元素 |
-| ui | XCardUi | - | 主题插槽类名 |
-| cover | ReactNode | - | 封面 |
-| header | ReactNode | - | 头部整体内容（覆盖默认 title / description / extra） |
-| footer | ReactNode | - | 底部整体内容（优先于 actions） |
-| actions | ReactNode | - | 底部操作按钮 |
-| onClick | (event) => void | - | 点击卡片时触发 |
-| onHover | (event) => void | - | 悬浮卡片时触发 |
+<!--@include: ./api/card.md-->
 
 ## ui 插槽
 

@@ -36,11 +36,7 @@ npx shadcn-vue@latest add @ui-kit/x-button-group
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| orientation | horizontal · vertical | horizontal | 排列方向 |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| ui | ButtonGroupUi | - | 主题插槽类名 |
+<!--@include: ./api/button-group.md-->
 
 ## ui 插槽
 

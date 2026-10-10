@@ -68,32 +68,7 @@ npx shadcn-vue@latest add @ui-kit/x-listbox
 
 ### XListbox
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| items | ListboxItemData[] · ListboxItemData[][] | - | 列表项数组，二维数组时按行分组，支持 label / separator 结构项 |
-| modelValue | string · number · 数组 | - | 绑定值（v-model），多选为数组 |
-| defaultValue | 同上 | - | 非受控初始值 |
-| multiple | boolean | false | 是否多选 |
-| color | 七种语义色 | primary | 语义色（选中态与高亮） |
-| size | xs · sm · md · lg · xl | md | 尺寸，控制项内边距与图标大小 |
-| valueKey / labelKey / descriptionKey | string | key / label / description | 列表项字段名 |
-| loading | boolean | false | 加载态，显示加载提示并禁止交互 |
-| loadingIcon | string · Component | loader-circle | 加载图标 |
-| filter | boolean · { placeholder, disabled } | false | 顶部搜索过滤 |
-| filterFields | string[] | [labelKey] | 过滤字段 |
-| ignoreFilter | boolean | false | 忽略内部过滤（服务端过滤场景） |
-| selectedIcon | string · Component | check | 选中态图标 |
-| virtualize | boolean | false | 虚拟滚动（长列表） |
-| highlight | boolean | false | 选中项高亮样式 |
-| autofocus | boolean | false | 打开时自动聚焦搜索框 |
-| autofocusDelay | number | 0 | 自动聚焦延迟（ms） |
-| disabled | boolean | false | 是否禁用 |
-| required | boolean | false | 必填标记 |
-| name / id | string | - | 表单字段标识 |
-| orientation | vertical · horizontal | vertical | 排列方向 |
-| highlightOnHover | boolean | true | 悬停高亮选项 |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| ui | ListboxUi | - | 主题插槽类名 |
+<!--@include: ./api/listbox.md-->
 
 **事件**：update:modelValue 值变化 · change 值变化事件 · entryFocus 焦点进入 · highlight 高亮项变化 · leave 焦点离开
 
