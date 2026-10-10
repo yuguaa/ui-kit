@@ -12,7 +12,7 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Drawer = ComponentConfig<typeof theme, AppConfig, 'drawer'>
 
-export interface DrawerProps extends Pick<DrawerRootProps, 'activeSnapPoint' | 'closeThreshold' | 'shouldScaleBackground' | 'setBackgroundColorOnScale' | 'scrollLockTimeout' | 'fixed' | 'dismissible' | 'modal' | 'open' | 'defaultOpen' | 'nested' | 'direction' | 'noBodyStyles' | 'handleOnly' | 'preventScrollRestoration' | 'snapPoints'> {
+export interface DrawerProps extends /* @vue-ignore */ Pick<DrawerRootProps, /* @vue-ignore */ 'activeSnapPoint' | 'closeThreshold' | 'shouldScaleBackground' | 'setBackgroundColorOnScale' | 'scrollLockTimeout' | 'fixed' | 'dismissible' | 'modal' | 'open' | 'defaultOpen' | 'nested' | 'direction' | 'noBodyStyles' | 'handleOnly' | 'preventScrollRestoration' | 'snapPoints'> {
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -63,7 +63,7 @@ export interface DrawerProps extends Pick<DrawerRootProps, 'activeSnapPoint' | '
   ui?: Drawer['slots']
 }
 
-export interface DrawerEmits extends DrawerRootEmits {
+export interface DrawerEmits extends /* @vue-ignore */ DrawerRootEmits {
   (e: 'close:prevent'): void
 }
 
@@ -95,7 +95,7 @@ import { pointerDownOutside } from '../../lib/nuxt/utils/overlay'
 import { tv } from '../../lib/nuxt/utils/tv'
 import XButton from './XButton.vue'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ DrawerProps>(), {
+const _props = withDefaults(defineProps<DrawerProps>(), {
   direction: 'bottom',
   portal: true,
   overlay: true,
@@ -103,8 +103,8 @@ const _props = withDefaults(defineProps</* @vue-ignore */ DrawerProps>(), {
   modal: true,
   dismissible: true
 })
-const emits = defineEmits</* @vue-ignore */ DrawerEmits>()
-const slots = defineSlots</* @vue-ignore */ DrawerSlots>()
+const emits = defineEmits<DrawerEmits>()
+const slots = defineSlots<DrawerSlots>()
 
 const props = useComponentProps('drawer', _props)
 

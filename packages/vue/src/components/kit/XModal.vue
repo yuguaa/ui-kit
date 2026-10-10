@@ -11,7 +11,7 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Modal = ComponentConfig<typeof theme, AppConfig, 'modal'>
 
-export interface ModalProps extends DialogRootProps {
+export interface ModalProps extends /* @vue-ignore */ DialogRootProps {
   title?: string
   description?: string
   /** The content of the modal. */
@@ -62,7 +62,7 @@ export interface ModalProps extends DialogRootProps {
   ui?: Modal['slots']
 }
 
-export interface ModalEmits extends DialogRootEmits {
+export interface ModalEmits extends /* @vue-ignore */ DialogRootEmits {
   'leave': []
   'after:leave': []
   'enter': []
@@ -97,7 +97,7 @@ import { pointerDownOutside } from '../../lib/nuxt/utils/overlay'
 import { tv } from '../../lib/nuxt/utils/tv'
 import XButton from './XButton.vue'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ ModalProps>(), {
+const _props = withDefaults(defineProps<ModalProps>(), {
   close: true,
   portal: true,
   overlay: true,
@@ -105,8 +105,8 @@ const _props = withDefaults(defineProps</* @vue-ignore */ ModalProps>(), {
   modal: true,
   dismissible: true
 })
-const emits = defineEmits</* @vue-ignore */ ModalEmits>()
-const slots = defineSlots</* @vue-ignore */ ModalSlots>()
+const emits = defineEmits<ModalEmits>()
+const slots = defineSlots<ModalSlots>()
 
 const props = useComponentProps('modal', _props)
 

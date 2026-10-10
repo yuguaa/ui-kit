@@ -74,15 +74,15 @@ import { usePortal } from '../../lib/nuxt/composables/usePortal'
 import { pointerDownOutside } from '../../lib/nuxt/utils/overlay'
 import { tv } from '../../lib/nuxt/utils/tv'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ PopoverProps<M>>(), {
+const _props = withDefaults(defineProps<PopoverProps<M>>(), {
   portal: true,
   mode: 'click' as never,
   openDelay: 0,
   closeDelay: 0,
   dismissible: true
 })
-const emits = defineEmits</* @vue-ignore */ PopoverEmits>()
-const slots = defineSlots</* @vue-ignore */ PopoverSlots<M>>()
+const emits = defineEmits<PopoverEmits>()
+const slots = defineSlots<PopoverSlots<M>>()
 
 const props = useComponentProps<PopoverProps<M>>('popover', _props)
 

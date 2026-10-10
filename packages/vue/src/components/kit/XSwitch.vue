@@ -9,7 +9,7 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Switch = ComponentConfig<typeof theme, AppConfig, 'switch'>
 
-export interface SwitchProps<T = boolean> extends Pick<SwitchRootProps<T>, 'disabled' | 'id' | 'name' | 'required' | 'value' | 'defaultValue' | 'modelValue' | 'trueValue' | 'falseValue'>, /** @vue-ignore */ Omit<ButtonHTMLAttributes, 'type' | 'disabled' | 'name'> {
+export interface SwitchProps<T = boolean> extends /* @vue-ignore */ Pick<SwitchRootProps<T>, /* @vue-ignore */ 'disabled' | 'id' | 'name' | 'required' | 'value' | 'defaultValue' | 'modelValue' | 'trueValue' | 'falseValue'>, /* @vue-ignore */ /** @vue-ignore */ Omit<ButtonHTMLAttributes, /* @vue-ignore */ 'type' | 'disabled' | 'name'> {
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -49,7 +49,7 @@ export interface SwitchProps<T = boolean> extends Pick<SwitchRootProps<T>, 'disa
   ui?: Switch['slots']
 }
 
-export interface SwitchEmits<T = boolean> extends SwitchRootEmits<T> {
+export interface SwitchEmits<T = boolean> extends /* @vue-ignore */ SwitchRootEmits<T> {
   change: [event: Event]
 }
 
@@ -72,9 +72,9 @@ import XIcon from './XIcon.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = defineProps</* @vue-ignore */ SwitchProps<T>>()
-const slots = defineSlots</* @vue-ignore */ SwitchSlots>()
-const emits = defineEmits</* @vue-ignore */ SwitchEmits<T>>()
+const _props = defineProps<SwitchProps<T>>()
+const slots = defineSlots<SwitchSlots>()
+const emits = defineEmits<SwitchEmits<T>>()
 
 const props = useComponentProps<SwitchProps<T>>('switch', _props)
 

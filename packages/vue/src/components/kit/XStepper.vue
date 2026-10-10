@@ -88,13 +88,13 @@ import { tv } from '../../lib/nuxt/utils/tv'
 import { get } from '../../lib/nuxt/utils'
 import XIcon from './XIcon.vue'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ StepperProps<T>>(), {
+const _props = withDefaults(defineProps<StepperProps<T>>(), {
   orientation: 'horizontal',
   linear: true,
   valueKey: 'value'
 })
-const emits = defineEmits</* @vue-ignore */ StepperEmits<T>>()
-const slots = defineSlots</* @vue-ignore */ StepperSlots<T>>()
+const emits = defineEmits<StepperEmits<T>>()
+const slots = defineSlots<StepperSlots<T>>()
 
 const props = useComponentProps<StepperProps<T>>('stepper', _props)
 

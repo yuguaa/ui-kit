@@ -13,7 +13,7 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Toast = ComponentConfig<typeof theme, AppConfig, 'toast'>
 
-export interface ToastProps extends Pick<ToastRootProps, 'defaultOpen' | 'open' | 'type'> {
+export interface ToastProps extends /* @vue-ignore */ Pick<ToastRootProps, /* @vue-ignore */ 'defaultOpen' | 'open' | 'type'> {
   /**
    * The element or component this component should render as.
    * @defaultValue 'li'
@@ -71,7 +71,7 @@ export interface ToastProps extends Pick<ToastRootProps, 'defaultOpen' | 'open' 
   ui?: Toast['slots']
 }
 
-export interface ToastEmits extends ToastRootEmits {}
+export interface ToastEmits extends /* @vue-ignore */ ToastRootEmits {}
 
 export interface ToastSlots {
   leading?(props: { ui: Toast['ui'] }): VNode[]
@@ -96,13 +96,13 @@ import XAvatar from './XAvatar.vue'
 import XButton from './XButton.vue'
 import XProgress from './XProgress.vue'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ ToastProps>(), {
+const _props = withDefaults(defineProps<ToastProps>(), {
   orientation: 'vertical',
   close: true,
   progress: true
 })
-const emits = defineEmits</* @vue-ignore */ ToastEmits>()
-const slots = defineSlots</* @vue-ignore */ ToastSlots>()
+const emits = defineEmits<ToastEmits>()
+const slots = defineSlots<ToastSlots>()
 
 const props = useComponentProps('toast', _props)
 

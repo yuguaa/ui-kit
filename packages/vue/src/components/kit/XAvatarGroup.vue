@@ -42,8 +42,8 @@ import { avatarGroupInjectionKey } from '../../lib/nuxt/composables/useAvatarGro
 import { tv } from '../../lib/nuxt/utils/tv'
 import XAvatar from './XAvatar.vue'
 
-const _props = defineProps</* @vue-ignore */ AvatarGroupProps>()
-const slots = defineSlots</* @vue-ignore */ AvatarGroupSlots>()
+const _props = defineProps<AvatarGroupProps>()
+const slots = defineSlots<AvatarGroupSlots>()
 
 const props = useComponentProps('avatarGroup', _props)
 

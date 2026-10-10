@@ -8,7 +8,7 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Progress = ComponentConfig<typeof theme, AppConfig, 'progress'>
 
-export interface ProgressProps extends Pick<ProgressRootProps, 'getValueLabel' | 'getValueText' | 'modelValue'> {
+export interface ProgressProps extends /* @vue-ignore */ Pick<ProgressRootProps, /* @vue-ignore */ 'getValueLabel' | 'getValueText' | 'modelValue'> {
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -43,7 +43,7 @@ export interface ProgressProps extends Pick<ProgressRootProps, 'getValueLabel' |
   ui?: Progress['slots']
 }
 
-export interface ProgressEmits extends ProgressRootEmits {}
+export interface ProgressEmits extends /* @vue-ignore */ ProgressRootEmits {}
 
 export type ProgressSlots = {
   status?(props: { percent?: number }): VNode[]
@@ -63,13 +63,13 @@ import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
 import { useLocale } from '../../lib/nuxt/composables/useLocale'
 import { tv } from '../../lib/nuxt/utils/tv'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ ProgressProps>(), {
+const _props = withDefaults(defineProps<ProgressProps>(), {
   inverted: false,
   modelValue: null,
   orientation: 'horizontal'
 })
-const emits = defineEmits</* @vue-ignore */ ProgressEmits>()
-const slots = defineSlots</* @vue-ignore */ ProgressSlots>()
+const emits = defineEmits<ProgressEmits>()
+const slots = defineSlots<ProgressSlots>()
 
 const props = useComponentProps('progress', _props)
 

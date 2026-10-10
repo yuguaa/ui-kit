@@ -254,7 +254,7 @@ import XKbd from './XKbd.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = withDefaults(defineProps</* @vue-ignore */ CommandPaletteProps<G, T>>(), {
+const _props = withDefaults(defineProps<CommandPaletteProps<G, T>>(), {
   labelKey: 'label',
   descriptionKey: 'description',
   input: true,
@@ -265,8 +265,8 @@ const _props = withDefaults(defineProps</* @vue-ignore */ CommandPaletteProps<G,
   highlightOnHover: true,
   searchDelay: 0
 })
-const emits = defineEmits</* @vue-ignore */ CommandPaletteEmits<T>>()
-const slots = defineSlots</* @vue-ignore */ CommandPaletteSlots<T, G>>()
+const emits = defineEmits<CommandPaletteEmits<T>>()
+const slots = defineSlots<CommandPaletteSlots<T, G>>()
 
 const props = useComponentProps<CommandPaletteProps<G, T>>('commandPalette', _props)
 

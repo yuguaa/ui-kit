@@ -61,11 +61,11 @@ import { formFieldInjectionKey, inputIdInjectionKey, formErrorsInjectionKey, for
 import { tv } from '../../lib/nuxt/utils/tv'
 import type { FormError, FormFieldInjectedOptions } from '../../lib/nuxt/types/form'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ FormFieldProps>(), {
+const _props = withDefaults(defineProps<FormFieldProps>(), {
   error: undefined,
   orientation: 'vertical'
 })
-const slots = defineSlots</* @vue-ignore */ FormFieldSlots>()
+const slots = defineSlots<FormFieldSlots>()
 
 const props = useComponentProps('formField', _props)
 

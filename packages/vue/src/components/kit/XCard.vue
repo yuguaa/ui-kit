@@ -38,8 +38,8 @@ import { useAppConfig } from '@/lib/nuxt/imports'
 import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
 import { tv } from '../../lib/nuxt/utils/tv'
 
-const _props = defineProps</* @vue-ignore */ CardProps>()
-const slots = defineSlots</* @vue-ignore */ CardSlots>()
+const _props = defineProps<CardProps>()
+const slots = defineSlots<CardSlots>()
 
 const props = useComponentProps('card', _props)
 

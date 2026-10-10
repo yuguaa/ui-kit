@@ -7,7 +7,11 @@
  * - components/kit/X*.vue（Nuxt 组件源码，U 前缀改 X 前缀，组件互引用与 #build 引用改写）
  */
 import { existsSync, mkdirSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
-import { dirname, join } from "node:path";
+import { dirname, join, resolve } from "node:path";
+import { createRequire } from "node:module";
+
+const require = createRequire(import.meta.url);
+const { compileScript, parse } = require("@vue/compiler-sfc") as typeof import("@vue/compiler-sfc");
 
 const ROOT = process.cwd();
 const NUXT_SRC = "/Users/pine-storm/code/nuxt-ui-src/src/runtime";
@@ -78,6 +82,49 @@ function convertInfra(source: string): string {
   return out;
 }
 
+/** 生成器内 compiler-sfc 探测用的 fs：处理相对路径与 @/ 别名，包名交给 typescript 解析 */
+const probeFs = {
+  fileExists(file: string) {
+    const candidates = [file, `${file}.ts`, `${file}.tsx`, `${file}.vue`, `${file}/index.ts`, `${file}/index.vue`];
+    return candidates.some((candidate) => existsSync(candidate));
+  },
+  readFile(file: string) {
+    const candidates = [file, `${file}.ts`, `${file}.tsx`, `${file}.vue`, `${file}/index.ts`, `${file}/index.vue`];
+    for (const candidate of candidates) {
+      if (existsSync(candidate)) return readFileSync(candidate, "utf8");
+    }
+    return undefined;
+  },
+};
+
+/** 探测组件编译；失败时逐条给 extends 子句加 @vue-ignore 重试 */
+function compileComponent(content: string, filename: string): { ok: boolean; content: string; message?: string } {
+  const tryCompile = (source: string) => {
+    const { descriptor } = parse(source, { filename });
+    compileScript(descriptor, { id: "probe", fs: probeFs });
+  };
+  try {
+    tryCompile(content);
+    return { ok: true, content };
+  } catch (error) {
+    const message = String((error as Error).message ?? error);
+    if (!message.includes("extends")) {
+      return { ok: false, content, message: message.slice(0, 120) };
+    }
+    /* 给所有 interface extends 子句加 @vue-ignore，保留其余类型推导 */
+    let patched = content.replace(/extends\s+([^{]+)\{/g, (_m: string, body: string) => {
+      const parts = body.split(",").map((part: string) => `/* @vue-ignore */ ${part.trim()}`);
+      return `extends ${parts.join(", ")} {`;
+    });
+    try {
+      tryCompile(patched);
+      return { ok: true, content: patched };
+    } catch (error2) {
+      return { ok: false, content, message: String((error2 as Error).message ?? error2).slice(0, 120) };
+    }
+  }
+}
+
 /** 仅组件文件：相对路径指向 lib/nuxt 基础设施（compiler-sfc 解析类型需要相对路径） */
 function convertComponent(source: string): string {
   let out = convert(source);
@@ -87,10 +134,7 @@ function convertComponent(source: string): string {
   out = out.replace(/from ['"]\.\.\/composables\//g, `from '../../lib/nuxt/composables/`);
   out = out.replace(/from ['"]\.\.\/utils\//g, `from '../../lib/nuxt/utils/`);
   out = out.replace(/from ['"]\.\.\/types\//g, `from '../../lib/nuxt/types/`);
-  /* Nuxt 组件的跨文件复杂类型无法被 compiler-sfc 完全解析，跳过宏类型推导，props 仍由 useComponentProps 显式读取 */
-  out = out.replace(/defineProps</g, "defineProps</* @vue-ignore */ ");
-  out = out.replace(/defineEmits</g, "defineEmits</* @vue-ignore */ ");
-  out = out.replace(/defineSlots</g, "defineSlots</* @vue-ignore */ ");
+  /* Nuxt 组件的跨文件复杂类型由探测函数处理（compileComponent），此处不再整体跳过 */
   return out;
 }
 
@@ -300,14 +344,24 @@ export default tv({ extend: ${extendExpr} })
 `);
   }
 
-  /* 组件：拷贝并转 X 前缀文件名与引用 */
+  /* 组件：拷贝并转 X 前缀文件名与引用，编译探测修正类型解析 */
+  const compileWarnings: string[] = [];
   for (const name of COMPONENTS) {
     if (SKIP_COMPONENTS.has(name)) continue;
     const src = join(NUXT_SRC, "components", `${name}.vue`);
     if (!existsSync(src)) {
       throw new Error(`Nuxt 组件不存在: ${name}`);
     }
-    writeFileSync(join(OUT_KIT, `X${name}.vue`), convertComponent(readFileSync(src, "utf8")));
+    const converted = convertComponent(readFileSync(src, "utf8"));
+    const result = compileComponent(converted, join(OUT_KIT, `X${name}.vue`));
+    if (!result.ok) {
+      compileWarnings.push(`${name}: ${result.message}`);
+    }
+    writeFileSync(join(OUT_KIT, `X${name}.vue`), result.content);
+  }
+  if (compileWarnings.length) {
+    console.log(`compile warnings (${compileWarnings.length}):`);
+    for (const warning of compileWarnings) console.log(`  - ${warning}`);
   }
 
   console.log(`nuxt-base generated: ${themeNames.length} themes, ${COMPONENTS.length} components`);

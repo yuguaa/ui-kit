@@ -55,7 +55,7 @@ import XChip from './XChip.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = defineProps</* @vue-ignore */ AvatarProps>()
+const _props = defineProps<AvatarProps>()
 
 const props = useComponentProps('avatar', _props)
 

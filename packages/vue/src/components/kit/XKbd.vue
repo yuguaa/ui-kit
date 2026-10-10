@@ -43,10 +43,10 @@ import { useKbd } from '../../lib/nuxt/composables/useKbd'
 import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
 import { tv } from '../../lib/nuxt/utils/tv'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ KbdProps>(), {
+const _props = withDefaults(defineProps<KbdProps>(), {
   as: 'kbd'
 })
-defineSlots</* @vue-ignore */ KbdSlots>()
+defineSlots<KbdSlots>()
 
 const props = useComponentProps('kbd', _props)
 

@@ -7,7 +7,7 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Slider = ComponentConfig<typeof theme, AppConfig, 'slider'>
 
-export interface SliderProps extends Pick<SliderRootProps, 'name' | 'disabled' | 'inverted' | 'min' | 'max' | 'step' | 'minStepsBetweenThumbs'> {
+export interface SliderProps extends /* @vue-ignore */ Pick<SliderRootProps, /* @vue-ignore */ 'name' | 'disabled' | 'inverted' | 'min' | 'max' | 'step' | 'minStepsBetweenThumbs'> {
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -43,7 +43,7 @@ export interface SliderEmits {
 }
 </script>
 
-<script setup lang="ts" generic="T extends number | number[]">
+<script setup lang="ts" generic="T extends /* @vue-ignore */ number | number[]">
 import { computed } from 'vue'
 import { SliderRoot, SliderRange, SliderTrack, SliderThumb } from 'reka-ui'
 import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
@@ -55,13 +55,13 @@ import { pick, omit } from '../../lib/nuxt/utils'
 import { tv } from '../../lib/nuxt/utils/tv'
 import XTooltip from './XTooltip.vue'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ SliderProps>(), {
+const _props = withDefaults(defineProps<SliderProps>(), {
   min: 0,
   max: 100,
   step: 1,
   orientation: 'horizontal'
 })
-const emits = defineEmits</* @vue-ignore */ SliderEmits>()
+const emits = defineEmits<SliderEmits>()
 
 defineOptions({ inheritAttrs: false })
 

@@ -28,9 +28,9 @@ import { useAppConfig } from '@/lib/nuxt/imports'
 import { tv } from '../../lib/nuxt/utils/tv'
 import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
 
-const _props = defineProps</* @vue-ignore */ ContainerProps>()
+const _props = defineProps<ContainerProps>()
 
-defineSlots</* @vue-ignore */ ContainerSlots>()
+defineSlots<ContainerSlots>()
 
 const props = useComponentProps('container', _props)
 

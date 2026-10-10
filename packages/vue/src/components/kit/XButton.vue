@@ -9,7 +9,7 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Button = ComponentConfig<typeof theme, AppConfig, 'button'>
 
-export interface ButtonProps extends UseComponentIconsProps, Omit<LinkProps, 'raw' | 'custom'> {
+export interface ButtonProps extends /* @vue-ignore */ UseComponentIconsProps, /* @vue-ignore */ Omit<LinkProps, /* @vue-ignore */ 'raw' | 'custom'> {
   label?: string
   /**
    * @defaultValue 'primary'
@@ -60,8 +60,8 @@ import XAvatar from './XAvatar.vue'
 import XLink from './XLink.vue'
 import XLinkBase from './XLinkBase.vue'
 
-const _props = defineProps</* @vue-ignore */ ButtonProps>()
-const slots = defineSlots</* @vue-ignore */ ButtonSlots>()
+const _props = defineProps<ButtonProps>()
+const slots = defineSlots<ButtonSlots>()
 
 const props = useComponentProps('button', _props)
 

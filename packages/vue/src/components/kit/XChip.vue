@@ -55,11 +55,11 @@ import { tv } from '../../lib/nuxt/utils/tv'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = withDefaults(defineProps</* @vue-ignore */ ChipProps>(), {
+const _props = withDefaults(defineProps<ChipProps>(), {
   inset: false,
   standalone: false
 })
-defineSlots</* @vue-ignore */ ChipSlots>()
+defineSlots<ChipSlots>()
 
 const props = useComponentProps('chip', _props)
 

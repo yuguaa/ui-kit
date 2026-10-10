@@ -84,11 +84,11 @@ import XIcon from './XIcon.vue'
 import XAvatar from './XAvatar.vue'
 import XButton from './XButton.vue'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ AlertProps>(), {
+const _props = withDefaults(defineProps<AlertProps>(), {
   orientation: 'vertical'
 })
-const emits = defineEmits</* @vue-ignore */ AlertEmits>()
-const slots = defineSlots</* @vue-ignore */ AlertSlots>()
+const emits = defineEmits<AlertEmits>()
+const slots = defineSlots<AlertSlots>()
 
 const props = useComponentProps('alert', _props)
 

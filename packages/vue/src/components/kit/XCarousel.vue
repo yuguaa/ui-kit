@@ -128,7 +128,7 @@ import { useLocale } from '../../lib/nuxt/composables/useLocale'
 import { tv } from '../../lib/nuxt/utils/tv'
 import XButton from './XButton.vue'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ CarouselProps<T>>(), {
+const _props = withDefaults(defineProps<CarouselProps<T>>(), {
   orientation: 'horizontal',
   arrows: false,
   dots: false,
@@ -157,8 +157,8 @@ const _props = withDefaults(defineProps</* @vue-ignore */ CarouselProps<T>>(), {
   fade: false,
   wheelGestures: false
 })
-defineSlots</* @vue-ignore */ CarouselSlots<T>>()
-const emits = defineEmits</* @vue-ignore */ CarouselEmits>()
+defineSlots<CarouselSlots<T>>()
+const emits = defineEmits<CarouselEmits>()
 
 const props = useComponentProps<CarouselProps<T>>('carousel', _props)
 

@@ -245,13 +245,13 @@ import { tv } from '../../lib/nuxt/utils/tv'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = withDefaults(defineProps</* @vue-ignore */ TableProps<T>>(), {
+const _props = withDefaults(defineProps<TableProps<T>>(), {
   watchOptions: () => ({
     deep: true
   }),
   virtualize: false
 })
-const slots = defineSlots</* @vue-ignore */ TableSlots<T>>()
+const slots = defineSlots<TableSlots<T>>()
 
 const props = useComponentProps<TableProps<T>>('table', _props)
 

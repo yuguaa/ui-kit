@@ -96,11 +96,11 @@ import XAvatar from './XAvatar.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = withDefaults(defineProps</* @vue-ignore */ InputTimeProps<R>>(), {
+const _props = withDefaults(defineProps<InputTimeProps<R>>(), {
   autofocusDelay: 0
 })
-const emits = defineEmits</* @vue-ignore */ InputTimeEmits<R>>()
-const slots = defineSlots</* @vue-ignore */ InputTimeSlots>()
+const emits = defineEmits<InputTimeEmits<R>>()
+const slots = defineSlots<InputTimeSlots>()
 
 const props = useComponentProps<InputTimeProps<R>>('inputTime', _props)
 

@@ -8,7 +8,7 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Link = ComponentConfig<typeof theme, AppConfig, 'link'>
 
-interface NuxtLinkProps extends Omit<RouterLinkProps, 'to'> {
+interface NuxtLinkProps extends /* @vue-ignore */ Omit<RouterLinkProps, /* @vue-ignore */ 'to'> {
   /**
    * Route Location the link should navigate to when clicked on.
    */
@@ -59,7 +59,7 @@ interface NuxtLinkProps extends Omit<RouterLinkProps, 'to'> {
   trailingSlash?: 'append' | 'remove'
 }
 
-export interface LinkProps extends NuxtLinkProps, /** @vue-ignore */ Omit<ButtonHTMLAttributes, 'type' | 'disabled'>, /** @vue-ignore */ Omit<AnchorHTMLAttributes, 'href' | 'target' | 'rel' | 'type'> {
+export interface LinkProps extends /* @vue-ignore */ NuxtLinkProps, /* @vue-ignore */ /** @vue-ignore */ Omit<ButtonHTMLAttributes, /* @vue-ignore */ 'type' | 'disabled'>, /* @vue-ignore */ /** @vue-ignore */ Omit<AnchorHTMLAttributes, /* @vue-ignore */ 'href' | 'target' | 'rel' | 'type'> {
   /**
    * The element or component this component should render as when not a link.
    * @defaultValue 'button'
@@ -134,14 +134,14 @@ import XLinkBase from './XLinkBase.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const props = withDefaults(defineProps</* @vue-ignore */ LinkProps>(), {
+const props = withDefaults(defineProps<LinkProps>(), {
   as: 'button',
   type: 'button',
   ariaCurrentValue: 'page',
   active: undefined,
   locale: undefined
 })
-defineSlots</* @vue-ignore */ LinkSlots>()
+defineSlots<LinkSlots>()
 
 const route = useRoute()
 const appConfig = useAppConfig() as Link['AppConfig']

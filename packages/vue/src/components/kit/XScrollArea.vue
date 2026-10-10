@@ -103,13 +103,13 @@ import { tv } from '../../lib/nuxt/utils/tv'
 import { useLocale } from '../../lib/nuxt/composables/useLocale'
 import { useScrollShadow } from '../../lib/nuxt/composables/useScrollShadow'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ ScrollAreaProps<T>>(), {
+const _props = withDefaults(defineProps<ScrollAreaProps<T>>(), {
   orientation: 'vertical',
   virtualize: false,
   shadow: false
 })
-defineSlots</* @vue-ignore */ ScrollAreaSlots<T>>()
-const emits = defineEmits</* @vue-ignore */ ScrollAreaEmits>()
+defineSlots<ScrollAreaSlots<T>>()
+const emits = defineEmits<ScrollAreaEmits>()
 
 const props = useComponentProps<ScrollAreaProps<T>>('scrollArea', _props)
 

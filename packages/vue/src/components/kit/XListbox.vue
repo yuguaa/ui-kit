@@ -180,7 +180,7 @@ import XInput from './XInput.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = withDefaults(defineProps</* @vue-ignore */ ListboxProps<T, VK, M, Mod>>(), {
+const _props = withDefaults(defineProps<ListboxProps<T, VK, M, Mod>>(), {
   labelKey: 'label',
   descriptionKey: 'description',
   highlightOnHover: true,
@@ -188,8 +188,8 @@ const _props = withDefaults(defineProps</* @vue-ignore */ ListboxProps<T, VK, M,
   autofocusDelay: 0,
   virtualize: false
 })
-const emits = defineEmits</* @vue-ignore */ ListboxEmits<T, VK, M, Mod>>()
-const slots = defineSlots</* @vue-ignore */ ListboxSlots<T>>()
+const emits = defineEmits<ListboxEmits<T, VK, M, Mod>>()
+const slots = defineSlots<ListboxSlots<T>>()
 
 const props = useComponentProps<ListboxProps<T, VK, M, Mod>>('listbox', _props)
 

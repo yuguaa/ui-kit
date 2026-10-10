@@ -7,7 +7,7 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Toaster = ComponentConfig<typeof theme, AppConfig, 'toaster'>
 
-export interface ToasterProps extends Omit<ToastProviderProps, 'swipeDirection'> {
+export interface ToasterProps extends /* @vue-ignore */ Omit<ToastProviderProps, /* @vue-ignore */ 'swipeDirection'> {
   /**
    * The position on the screen to display the toasts.
    * @defaultValue 'bottom-right'
@@ -59,14 +59,14 @@ import { omit } from '../../lib/nuxt/utils'
 import { tv } from '../../lib/nuxt/utils/tv'
 import XToast from './XToast.vue'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ ToasterProps>(), {
+const _props = withDefaults(defineProps<ToasterProps>(), {
   expand: true,
   portal: true,
   duration: 5000,
   progress: true,
   max: 5
 })
-defineSlots</* @vue-ignore */ ToasterSlots>()
+defineSlots<ToasterSlots>()
 
 const props = useComponentProps('toaster', _props)
 

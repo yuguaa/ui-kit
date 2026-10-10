@@ -81,11 +81,11 @@ import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
 import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
 import { tv } from '../../lib/nuxt/utils/tv'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ SplitterProps<T>>(), {
+const _props = withDefaults(defineProps<SplitterProps<T>>(), {
   orientation: 'horizontal'
 })
-const emits = defineEmits</* @vue-ignore */ SplitterEmits>()
-defineSlots</* @vue-ignore */ SplitterSlots<T>>()
+const emits = defineEmits<SplitterEmits>()
+defineSlots<SplitterSlots<T>>()
 
 const props = useComponentProps<SplitterProps<T>>('splitter', _props)
 

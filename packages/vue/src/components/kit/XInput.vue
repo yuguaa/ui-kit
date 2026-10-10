@@ -81,13 +81,13 @@ import XAvatar from './XAvatar.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = withDefaults(defineProps</* @vue-ignore */ InputProps<T, Mod>>(), {
+const _props = withDefaults(defineProps<InputProps<T, Mod>>(), {
   type: 'text',
   autocomplete: 'off',
   autofocusDelay: 0
 })
-const emits = defineEmits</* @vue-ignore */ InputEmits<T, Mod>>()
-const slots = defineSlots</* @vue-ignore */ InputSlots>()
+const emits = defineEmits<InputEmits<T, Mod>>()
+const slots = defineSlots<InputSlots>()
 
 const props = useComponentProps<InputProps<T, Mod>>('input', _props)
 

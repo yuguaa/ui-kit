@@ -8,7 +8,7 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type InputRating = ComponentConfig<typeof theme, AppConfig, 'inputRating'>
 
-export interface InputRatingProps extends Pick<RatingRootProps, 'length' | 'step' | 'name' | 'disabled' | 'required' | 'clearable' | 'hoverable' | 'modelValue' | 'defaultValue'> {
+export interface InputRatingProps extends /* @vue-ignore */ Pick<RatingRootProps, /* @vue-ignore */ 'length' | 'step' | 'name' | 'disabled' | 'required' | 'clearable' | 'hoverable' | 'modelValue' | 'defaultValue'> {
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -49,7 +49,7 @@ export interface InputRatingProps extends Pick<RatingRootProps, 'length' | 'step
   ui?: InputRating['slots']
 }
 
-export interface InputRatingEmits extends RatingRootEmits {
+export interface InputRatingEmits extends /* @vue-ignore */ RatingRootEmits {
   change: [event: Event]
 }
 
@@ -72,7 +72,7 @@ import XIcon from './XIcon.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = withDefaults(defineProps</* @vue-ignore */ InputRatingProps>(), {
+const _props = withDefaults(defineProps<InputRatingProps>(), {
   length: 5,
   step: 1,
   readonly: false,
@@ -81,8 +81,8 @@ const _props = withDefaults(defineProps</* @vue-ignore */ InputRatingProps>(), {
   hoverable: false,
   clearable: false
 })
-const emits = defineEmits</* @vue-ignore */ InputRatingEmits>()
-defineSlots</* @vue-ignore */ InputRatingSlots>()
+const emits = defineEmits<InputRatingEmits>()
+defineSlots<InputRatingSlots>()
 
 const props = useComponentProps<InputRatingProps>('inputRating', _props)
 

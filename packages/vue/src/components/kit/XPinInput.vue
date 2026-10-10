@@ -72,13 +72,13 @@ import { useFormField } from '../../lib/nuxt/composables/useFormField'
 import { looseToNumber } from '../../lib/nuxt/utils'
 import { tv } from '../../lib/nuxt/utils/tv'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ PinInputProps<T>>(), {
+const _props = withDefaults(defineProps<PinInputProps<T>>(), {
   type: 'text' as never,
   length: 5,
   autofocusDelay: 0
 })
-const emits = defineEmits</* @vue-ignore */ PinInputEmits<T>>()
-defineSlots</* @vue-ignore */ PinInputSlots>()
+const emits = defineEmits<PinInputEmits<T>>()
+defineSlots<PinInputSlots>()
 
 const props = useComponentProps<PinInputProps<T>>('pinInput', _props)
 

@@ -9,7 +9,7 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Checkbox = ComponentConfig<typeof theme, AppConfig, 'checkbox'>
 
-export interface CheckboxProps<T = boolean> extends Pick<CheckboxRootProps<T>, 'disabled' | 'required' | 'name' | 'value' | 'id' | 'defaultValue' | 'modelValue' | 'trueValue' | 'falseValue'>, /** @vue-ignore */ Omit<ButtonHTMLAttributes, 'type' | 'disabled' | 'name'> {
+export interface CheckboxProps<T = boolean> extends /* @vue-ignore */ Pick<CheckboxRootProps<T>, /* @vue-ignore */ 'disabled' | 'required' | 'name' | 'value' | 'id' | 'defaultValue' | 'modelValue' | 'trueValue' | 'falseValue'>, /* @vue-ignore */ /** @vue-ignore */ Omit<ButtonHTMLAttributes, /* @vue-ignore */ 'type' | 'disabled' | 'name'> {
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -52,7 +52,7 @@ export interface CheckboxProps<T = boolean> extends Pick<CheckboxRootProps<T>, '
   ui?: Checkbox['slots']
 }
 
-export interface CheckboxEmits<T = boolean> extends CheckboxRootEmits<T> {
+export interface CheckboxEmits<T = boolean> extends /* @vue-ignore */ CheckboxRootEmits<T> {
   change: [event: Event]
 }
 
@@ -75,9 +75,9 @@ import XIcon from './XIcon.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = defineProps</* @vue-ignore */ CheckboxProps<T>>()
-const slots = defineSlots</* @vue-ignore */ CheckboxSlots>()
-const emits = defineEmits</* @vue-ignore */ CheckboxEmits<T>>()
+const _props = defineProps<CheckboxProps<T>>()
+const slots = defineSlots<CheckboxSlots>()
+const emits = defineEmits<CheckboxEmits<T>>()
 
 const props = useComponentProps<CheckboxProps<T>>('checkbox', _props)
 

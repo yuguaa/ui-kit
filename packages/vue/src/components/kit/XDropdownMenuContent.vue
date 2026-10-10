@@ -78,9 +78,9 @@ import XInput from './XInput.vue'
 import XKbd from './XKbd.vue'
 import XDropdownMenuContent from './XDropdownMenuContent.vue'
 
-const props = defineProps</* @vue-ignore */ DropdownMenuContentProps<T>>()
-const emits = defineEmits</* @vue-ignore */ DropdownMenuContentEmits>()
-const slots = defineSlots</* @vue-ignore */ DropdownMenuContentSlots<T>>()
+const props = defineProps<DropdownMenuContentProps<T>>()
+const emits = defineEmits<DropdownMenuContentEmits>()
+const slots = defineSlots<DropdownMenuContentSlots<T>>()
 
 const { t, dir } = useLocale()
 const appConfig = useAppConfig()

@@ -55,9 +55,9 @@ import XIcon from './XIcon.vue'
 import XKbd from './XKbd.vue'
 import XContextMenuContent from './XContextMenuContent.vue'
 
-const props = defineProps</* @vue-ignore */ ContextMenuContentProps<T>>()
-const emits = defineEmits</* @vue-ignore */ ContextMenuContentEmits>()
-const slots = defineSlots</* @vue-ignore */ ContextMenuSlots<T>>()
+const props = defineProps<ContextMenuContentProps<T>>()
+const emits = defineEmits<ContextMenuContentEmits>()
+const slots = defineSlots<ContextMenuSlots<T>>()
 
 const { dir } = useLocale()
 const appConfig = useAppConfig()

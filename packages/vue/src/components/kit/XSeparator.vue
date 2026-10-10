@@ -9,7 +9,7 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Separator = ComponentConfig<typeof theme, AppConfig, 'separator'>
 
-export interface SeparatorProps extends Pick<_SeparatorProps, 'decorative'> {
+export interface SeparatorProps extends /* @vue-ignore */ Pick<_SeparatorProps, /* @vue-ignore */ 'decorative'> {
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -68,11 +68,11 @@ import XAvatar from './XAvatar.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = withDefaults(defineProps</* @vue-ignore */ SeparatorProps>(), {
+const _props = withDefaults(defineProps<SeparatorProps>(), {
   orientation: 'horizontal',
   position: 'center'
 })
-const slots = defineSlots</* @vue-ignore */ SeparatorSlots>()
+const slots = defineSlots<SeparatorSlots>()
 
 const props = useComponentProps('separator', _props)
 

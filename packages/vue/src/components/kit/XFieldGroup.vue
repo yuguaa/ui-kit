@@ -38,10 +38,10 @@ import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
 import { fieldGroupInjectionKey } from '../../lib/nuxt/composables/useFieldGroup'
 import { tv } from '../../lib/nuxt/utils/tv'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ FieldGroupProps>(), {
+const _props = withDefaults(defineProps<FieldGroupProps>(), {
   orientation: 'horizontal'
 })
-defineSlots</* @vue-ignore */ FieldGroupSlots>()
+defineSlots<FieldGroupSlots>()
 
 const props = useComponentProps('fieldGroup', _props)
 

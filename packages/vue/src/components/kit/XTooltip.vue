@@ -9,7 +9,7 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Tooltip = ComponentConfig<typeof theme, AppConfig, 'tooltip'>
 
-export interface TooltipProps extends TooltipRootProps {
+export interface TooltipProps extends /* @vue-ignore */ TooltipRootProps {
   /** The text content of the tooltip. */
   text?: string
   /** The keyboard keys to display in the tooltip. */
@@ -42,7 +42,7 @@ export interface TooltipProps extends TooltipRootProps {
   ui?: Tooltip['slots']
 }
 
-export interface TooltipEmits extends TooltipRootEmits {}
+export interface TooltipEmits extends /* @vue-ignore */ TooltipRootEmits {}
 
 export interface TooltipSlots {
   default?(props: { open: boolean }): VNode[]
@@ -63,11 +63,11 @@ import { usePortal } from '../../lib/nuxt/composables/usePortal'
 import { tv } from '../../lib/nuxt/utils/tv'
 import XKbd from './XKbd.vue'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ TooltipProps>(), {
+const _props = withDefaults(defineProps<TooltipProps>(), {
   portal: true
 })
-const emits = defineEmits</* @vue-ignore */ TooltipEmits>()
-const slots = defineSlots</* @vue-ignore */ TooltipSlots>()
+const emits = defineEmits<TooltipEmits>()
+const slots = defineSlots<TooltipSlots>()
 
 const props = useComponentProps('tooltip', _props)
 

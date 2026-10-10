@@ -9,7 +9,7 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Pagination = ComponentConfig<typeof theme, AppConfig, 'pagination'>
 
-export interface PaginationProps extends Partial<Pick<PaginationRootProps, 'defaultPage' | 'disabled' | 'itemsPerPage' | 'page' | 'showEdges' | 'siblingCount' | 'total'>> {
+export interface PaginationProps extends /* @vue-ignore */ Partial<Pick<PaginationRootProps, /* @vue-ignore */ 'defaultPage' | 'disabled' | 'itemsPerPage' | 'page' | 'showEdges' | 'siblingCount' | 'total'>> {
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -80,7 +80,7 @@ export interface PaginationProps extends Partial<Pick<PaginationRootProps, 'defa
   ui?: Pagination['slots']
 }
 
-export interface PaginationEmits extends PaginationRootEmits {}
+export interface PaginationEmits extends /* @vue-ignore */ PaginationRootEmits {}
 
 export interface PaginationSlots {
   first?(props?: {}): VNode[]
@@ -113,7 +113,7 @@ import { useLocale } from '../../lib/nuxt/composables/useLocale'
 import { tv } from '../../lib/nuxt/utils/tv'
 import XButton from './XButton.vue'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ PaginationProps>(), {
+const _props = withDefaults(defineProps<PaginationProps>(), {
   color: 'neutral',
   variant: 'outline',
   activeColor: 'primary',
@@ -124,8 +124,8 @@ const _props = withDefaults(defineProps</* @vue-ignore */ PaginationProps>(), {
   siblingCount: 2,
   total: 0
 })
-const emits = defineEmits</* @vue-ignore */ PaginationEmits>()
-const slots = defineSlots</* @vue-ignore */ PaginationSlots>()
+const emits = defineEmits<PaginationEmits>()
+const slots = defineSlots<PaginationSlots>()
 
 const props = useComponentProps('pagination', _props)
 

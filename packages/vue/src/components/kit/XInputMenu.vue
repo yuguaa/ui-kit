@@ -261,7 +261,7 @@ import XChip from './XChip.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = withDefaults(defineProps</* @vue-ignore */ InputMenuProps<T, VK, M, Mod, C>>(), {
+const _props = withDefaults(defineProps<InputMenuProps<T, VK, M, Mod, C>>(), {
   type: 'text',
   autofocusDelay: 0,
   portal: true,
@@ -273,8 +273,8 @@ const _props = withDefaults(defineProps</* @vue-ignore */ InputMenuProps<T, VK, 
   virtualize: false,
   mode: 'combobox'
 })
-const emits = defineEmits</* @vue-ignore */ InputMenuEmits<T, VK, M, Mod, C>>()
-const slots = defineSlots</* @vue-ignore */ InputMenuSlots<T, VK, M, Mod, C>>()
+const emits = defineEmits<InputMenuEmits<T, VK, M, Mod, C>>()
+const slots = defineSlots<InputMenuSlots<T, VK, M, Mod, C>>()
 
 const props = useComponentProps<InputMenuProps<T, VK, M, Mod, C>>('inputMenu', _props)
 

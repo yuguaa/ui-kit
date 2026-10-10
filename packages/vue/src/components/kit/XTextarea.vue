@@ -81,14 +81,14 @@ import XAvatar from './XAvatar.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = withDefaults(defineProps</* @vue-ignore */ TextareaProps<T, Mod>>(), {
+const _props = withDefaults(defineProps<TextareaProps<T, Mod>>(), {
   rows: 3,
   maxrows: 0,
   autofocusDelay: 0,
   autoresizeDelay: 0
 })
-const emits = defineEmits</* @vue-ignore */ TextareaEmits<T, Mod>>()
-const slots = defineSlots</* @vue-ignore */ TextareaSlots>()
+const emits = defineEmits<TextareaEmits<T, Mod>>()
+const slots = defineSlots<TextareaSlots>()
 
 const props = useComponentProps<TextareaProps<T, Mod>>('textarea', _props)
 

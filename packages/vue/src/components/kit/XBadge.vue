@@ -8,7 +8,7 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Badge = ComponentConfig<typeof theme, AppConfig, 'badge'>
 
-export interface BadgeProps extends Omit<UseComponentIconsProps, 'loading' | 'loadingIcon'> {
+export interface BadgeProps extends /* @vue-ignore */ Omit<UseComponentIconsProps, /* @vue-ignore */ 'loading' | 'loadingIcon'> {
   /**
    * The element or component this component should render as.
    * @defaultValue 'span'
@@ -51,10 +51,10 @@ import { tv } from '../../lib/nuxt/utils/tv'
 import XIcon from './XIcon.vue'
 import XAvatar from './XAvatar.vue'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ BadgeProps>(), {
+const _props = withDefaults(defineProps<BadgeProps>(), {
   as: 'span'
 })
-const slots = defineSlots</* @vue-ignore */ BadgeSlots>()
+const slots = defineSlots<BadgeSlots>()
 
 const props = useComponentProps('badge', _props)
 

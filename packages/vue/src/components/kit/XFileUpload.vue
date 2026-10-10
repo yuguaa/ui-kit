@@ -154,7 +154,7 @@ import XIcon from './XIcon.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = withDefaults(defineProps</* @vue-ignore */ FileUploadProps<M>>(), {
+const _props = withDefaults(defineProps<FileUploadProps<M>>(), {
   accept: '*',
   multiple: false as never,
   reset: false,
@@ -166,8 +166,8 @@ const _props = withDefaults(defineProps</* @vue-ignore */ FileUploadProps<M>>(),
   preview: true,
   fileImage: true
 })
-const emits = defineEmits</* @vue-ignore */ FileUploadEmits>()
-const slots = defineSlots</* @vue-ignore */ FileUploadSlots<M>>()
+const emits = defineEmits<FileUploadEmits>()
+const slots = defineSlots<FileUploadSlots<M>>()
 
 const modelValue = defineModel<(M extends true ? File[] : File) | null>()
 

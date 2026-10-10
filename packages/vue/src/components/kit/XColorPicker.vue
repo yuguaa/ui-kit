@@ -80,7 +80,7 @@ import { useAppConfig } from '@/lib/nuxt/imports'
 import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
 import { tv } from '../../lib/nuxt/utils/tv'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ ColorPickerProps>(), {
+const _props = withDefaults(defineProps<ColorPickerProps>(), {
   format: 'hex',
   throttle: 50,
   defaultValue: '#FFFFFF'

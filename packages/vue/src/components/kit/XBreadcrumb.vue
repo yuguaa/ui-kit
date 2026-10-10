@@ -78,11 +78,11 @@ import XAvatar from './XAvatar.vue'
 import XLinkBase from './XLinkBase.vue'
 import XLink from './XLink.vue'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ BreadcrumbProps<T>>(), {
+const _props = withDefaults(defineProps<BreadcrumbProps<T>>(), {
   as: 'nav',
   labelKey: 'label'
 })
-const slots = defineSlots</* @vue-ignore */ BreadcrumbSlots<T>>()
+const slots = defineSlots<BreadcrumbSlots<T>>()
 
 const props = useComponentProps<BreadcrumbProps<T>>('breadcrumb', _props)
 

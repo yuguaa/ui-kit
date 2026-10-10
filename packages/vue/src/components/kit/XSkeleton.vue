@@ -23,7 +23,7 @@ import { useAppConfig } from '@/lib/nuxt/imports'
 import { tv } from '../../lib/nuxt/utils/tv'
 import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
 
-const _props = defineProps</* @vue-ignore */ SkeletonProps>()
+const _props = defineProps<SkeletonProps>()
 
 const props = useComponentProps('skeleton', _props)
 

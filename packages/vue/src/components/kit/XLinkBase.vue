@@ -18,7 +18,7 @@ export interface LinkBaseProps {
 <script setup lang="ts">
 import { Primitive } from 'reka-ui'
 
-const props = withDefaults(defineProps</* @vue-ignore */ LinkBaseProps>(), {
+const props = withDefaults(defineProps<LinkBaseProps>(), {
   as: 'button',
   type: 'button'
 })

@@ -257,7 +257,7 @@ import XInput from './XInput.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = withDefaults(defineProps</* @vue-ignore */ SelectMenuProps<T, VK, M, Mod, C>>(), {
+const _props = withDefaults(defineProps<SelectMenuProps<T, VK, M, Mod, C>>(), {
   portal: true,
   searchInput: true,
   labelKey: 'label',
@@ -268,8 +268,8 @@ const _props = withDefaults(defineProps</* @vue-ignore */ SelectMenuProps<T, VK,
   autofocusDelay: 0,
   virtualize: false
 })
-const emits = defineEmits</* @vue-ignore */ SelectMenuEmits<T, VK, M, Mod, C>>()
-const slots = defineSlots</* @vue-ignore */ SelectMenuSlots<T, VK, M, Mod, C>>()
+const emits = defineEmits<SelectMenuEmits<T, VK, M, Mod, C>>()
+const slots = defineSlots<SelectMenuSlots<T, VK, M, Mod, C>>()
 
 const props = useComponentProps<SelectMenuProps<T, VK, M, Mod, C>>('selectMenu', _props)
 

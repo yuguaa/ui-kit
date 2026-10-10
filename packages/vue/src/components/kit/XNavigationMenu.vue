@@ -252,7 +252,7 @@ import XTooltip from './XTooltip.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = withDefaults(defineProps</* @vue-ignore */ NavigationMenuProps<T, K, O>>(), {
+const _props = withDefaults(defineProps<NavigationMenuProps<T, K, O>>(), {
   orientation: 'horizontal' as never,
   contentOrientation: 'horizontal',
   externalIcon: true,
@@ -263,8 +263,8 @@ const _props = withDefaults(defineProps</* @vue-ignore */ NavigationMenuProps<T,
   valueKey: 'value',
   labelKey: 'label'
 })
-const emits = defineEmits</* @vue-ignore */ NavigationMenuEmits<K, O>>()
-const slots = defineSlots</* @vue-ignore */ NavigationMenuSlots<T>>()
+const emits = defineEmits<NavigationMenuEmits<K, O>>()
+const slots = defineSlots<NavigationMenuSlots<T>>()
 
 const props = useComponentProps<NavigationMenuProps<T, K, O>>('navigationMenu', _props)
 

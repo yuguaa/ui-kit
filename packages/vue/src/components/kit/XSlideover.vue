@@ -11,7 +11,7 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Slideover = ComponentConfig<typeof theme, AppConfig, 'slideover'>
 
-export interface SlideoverProps extends DialogRootProps {
+export interface SlideoverProps extends /* @vue-ignore */ DialogRootProps {
   title?: string
   description?: string
   /** The content of the slideover. */
@@ -62,7 +62,7 @@ export interface SlideoverProps extends DialogRootProps {
   ui?: Slideover['slots']
 }
 
-export interface SlideoverEmits extends DialogRootEmits {
+export interface SlideoverEmits extends /* @vue-ignore */ DialogRootEmits {
   'leave': []
   'after:leave': []
   'enter': []
@@ -97,7 +97,7 @@ import { pointerDownOutside } from '../../lib/nuxt/utils/overlay'
 import { tv } from '../../lib/nuxt/utils/tv'
 import XButton from './XButton.vue'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ SlideoverProps>(), {
+const _props = withDefaults(defineProps<SlideoverProps>(), {
   close: true,
   portal: true,
   overlay: true,
@@ -106,8 +106,8 @@ const _props = withDefaults(defineProps</* @vue-ignore */ SlideoverProps>(), {
   dismissible: true,
   side: 'right'
 })
-const emits = defineEmits</* @vue-ignore */ SlideoverEmits>()
-const slots = defineSlots</* @vue-ignore */ SlideoverSlots>()
+const emits = defineEmits<SlideoverEmits>()
+const slots = defineSlots<SlideoverSlots>()
 
 const props = useComponentProps('slideover', _props)
 

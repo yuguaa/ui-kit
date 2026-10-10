@@ -87,15 +87,15 @@ import { get } from '../../lib/nuxt/utils'
 import { tv } from '../../lib/nuxt/utils/tv'
 import XIcon from './XIcon.vue'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ AccordionProps<T>>(), {
+const _props = withDefaults(defineProps<AccordionProps<T>>(), {
   type: 'single',
   collapsible: true,
   unmountOnHide: true,
   valueKey: 'value',
   labelKey: 'label'
 })
-const emits = defineEmits</* @vue-ignore */ AccordionEmits>()
-const slots = defineSlots</* @vue-ignore */ AccordionSlots<T>>()
+const emits = defineEmits<AccordionEmits>()
+const slots = defineSlots<AccordionSlots<T>>()
 
 const props = useComponentProps<AccordionProps<T>>('accordion', _props)
 

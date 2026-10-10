@@ -109,7 +109,7 @@ import XIcon from './XIcon.vue'
 import XAvatar from './XAvatar.vue'
 import XBadge from './XBadge.vue'
 
-const _props = withDefaults(defineProps</* @vue-ignore */ TabsProps<T>>(), {
+const _props = withDefaults(defineProps<TabsProps<T>>(), {
   content: true,
   defaultValue: '0',
   orientation: 'horizontal',
@@ -117,8 +117,8 @@ const _props = withDefaults(defineProps</* @vue-ignore */ TabsProps<T>>(), {
   valueKey: 'value',
   labelKey: 'label'
 })
-const emits = defineEmits</* @vue-ignore */ TabsEmits>()
-const slots = defineSlots</* @vue-ignore */ TabsSlots<T>>()
+const emits = defineEmits<TabsEmits>()
+const slots = defineSlots<TabsSlots<T>>()
 
 const props = useComponentProps<TabsProps<T>>('tabs', _props)
 

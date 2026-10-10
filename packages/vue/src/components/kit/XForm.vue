@@ -88,7 +88,7 @@ import { FormValidationException } from '../../lib/nuxt/types/form'
 type I = InferInput<S>
 type O = InferOutput<S>
 
-const _props = withDefaults(defineProps</* @vue-ignore */ FormProps<S, T, N>>(), {
+const _props = withDefaults(defineProps<FormProps<S, T, N>>(), {
   validateOn() {
     return ['input', 'blur', 'change'] as FormInputEvents[]
   },
@@ -97,8 +97,8 @@ const _props = withDefaults(defineProps</* @vue-ignore */ FormProps<S, T, N>>(),
   loadingAuto: true
 })
 
-const emits = defineEmits</* @vue-ignore */ FormEmits<S, T>>()
-defineSlots</* @vue-ignore */ FormSlots>()
+const emits = defineEmits<FormEmits<S, T>>()
+defineSlots<FormSlots>()
 
 const props = useComponentProps<FormProps<S, T, N>>('form', _props)
 
