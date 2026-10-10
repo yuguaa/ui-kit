@@ -69,8 +69,6 @@ export interface LinkProps {
   prefetchedClass?: any;
   prefetch?: any;
   prefetchOn?: any;
-  visibility: any;
-  interaction: any;
   noPrefetch?: any;
   trailingSlash?: any;
   class?: any;

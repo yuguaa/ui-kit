@@ -90,7 +90,18 @@ export interface ContextMenuProps<T extends ArrayOrNested<ContextMenuItem> = Arr
   ui?: ContextMenu['slots']
 }
 
-export interface ContextMenuEmits extends ContextMenuRootEmits {}
+export interface ContextMenuEmits {
+  'update:modelValue': [payload?: any];
+  'update:open': [payload?: any];
+  change: [payload?: any];
+  close: [payload?: any];
+  select: [payload?: any];
+  highlight: [payload?: any];
+  entryFocus: [payload?: any];
+  leave: [payload?: any];
+  open: [payload?: any];
+  loading: [payload?: any];
+}
 
 type SlotProps<T extends ContextMenuItem> = (props: { item: T, active: boolean, index: number, ui: ContextMenu['ui'] }) => VNode[]
 
@@ -144,7 +155,16 @@ const _props = withDefaults(defineProps<{
   descriptionKey: 'description'
 })
 const emits = defineEmits<{
-
+  'update:modelValue': [payload?: any];
+  'update:open': [payload?: any];
+  change: [payload?: any];
+  close: [payload?: any];
+  select: [payload?: any];
+  highlight: [payload?: any];
+  entryFocus: [payload?: any];
+  leave: [payload?: any];
+  open: [payload?: any];
+  loading: [payload?: any];
 }>()
 const slots = defineSlots<Record<string, any>>()
 

@@ -120,7 +120,18 @@ export interface DropdownMenuProps<T extends ArrayOrNested<DropdownMenuItem> = A
   ui?: DropdownMenu['slots']
 }
 
-export interface DropdownMenuEmits extends DropdownMenuRootEmits {}
+export interface DropdownMenuEmits {
+  'update:modelValue': [payload?: any];
+  'update:open': [payload?: any];
+  change: [payload?: any];
+  close: [payload?: any];
+  select: [payload?: any];
+  highlight: [payload?: any];
+  entryFocus: [payload?: any];
+  leave: [payload?: any];
+  open: [payload?: any];
+  loading: [payload?: any];
+}
 
 type SlotProps<T extends DropdownMenuItem> = (props: { item: T, active: boolean, index: number, ui: DropdownMenu['ui'] }) => VNode[]
 
@@ -182,7 +193,16 @@ const _props = withDefaults(defineProps<{
   ignoreFilter: false
 })
 const emits = defineEmits<{
-
+  'update:modelValue': [payload?: any];
+  'update:open': [payload?: any];
+  change: [payload?: any];
+  close: [payload?: any];
+  select: [payload?: any];
+  highlight: [payload?: any];
+  entryFocus: [payload?: any];
+  leave: [payload?: any];
+  open: [payload?: any];
+  loading: [payload?: any];
 }>()
 const slots = defineSlots<Record<string, any>>()
 

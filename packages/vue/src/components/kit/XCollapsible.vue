@@ -19,6 +19,16 @@ export interface CollapsibleProps {
 }
 
 export interface CollapsibleEmits {
+  'update:modelValue': [payload?: any];
+  'update:open': [payload?: any];
+  change: [payload?: any];
+  close: [payload?: any];
+  select: [payload?: any];
+  highlight: [payload?: any];
+  entryFocus: [payload?: any];
+  leave: [payload?: any];
+  open: [payload?: any];
+  loading: [payload?: any];
 }
 
 export interface CollapsibleSlots {

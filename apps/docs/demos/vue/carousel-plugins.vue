@@ -33,7 +33,13 @@ const slides = [
     </div>
     <div class="flex flex-col gap-3">
       <span class="text-muted-foreground text-sm">classNames 给轮播项加状态类名：进入视口的项变淡，当前吸附项高亮</span>
-      <XCarousel :items="slides" :class-names="{ inView: 'opacity-60', snapped: 'opacity-100 ring-2 ring-primary/50' }">
+      <XCarousel
+        :items="slides"
+        :class-names="{
+          inView: (inView: boolean) => (inView ? '' : 'opacity-60'),
+          snapped: (snapped: boolean) => (snapped ? 'opacity-100 ring-2 ring-primary/50' : ''),
+        }"
+      >
         <template #default="{ item }">
           <div :class="['flex items-center justify-center rounded-lg bg-success/10 text-success', item.height]">
             {{ item.text }}

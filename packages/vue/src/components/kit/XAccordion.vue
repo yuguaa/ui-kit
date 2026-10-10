@@ -64,6 +64,16 @@ export interface AccordionProps<T extends AccordionItem = AccordionItem> {
 }
 
 export interface AccordionEmits {
+  'update:modelValue': [payload?: any];
+  'update:open': [payload?: any];
+  change: [payload?: any];
+  close: [payload?: any];
+  select: [payload?: any];
+  highlight: [payload?: any];
+  entryFocus: [payload?: any];
+  leave: [payload?: any];
+  open: [payload?: any];
+  loading: [payload?: any];
 }
 
 type SlotProps<T extends AccordionItem> = (props: { item: T, index: number, open: boolean, ui: Accordion['ui'] }) => VNode[]

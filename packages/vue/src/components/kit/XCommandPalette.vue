@@ -269,16 +269,8 @@ const _props = withDefaults(defineProps<{
   backIcon?: any;
   input?: any;
   groups?: any;
-  fuseOptions?: any;
-  ignoreLocation?: any;
-  threshold?: any;
-  keys?: any;
-  resultLimit?: any;
-  matchAllWhenSearchEmpty?: any;
   fuse?: any;
   virtualize?: any;
-  overscan?: any;
-  estimateSize?: any;
   valueKey?: any;
   labelKey?: any;
   descriptionKey?: any;

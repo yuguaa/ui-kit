@@ -281,8 +281,6 @@ const _props = withDefaults(defineProps<{
   arrow?: any;
   portal?: any;
   virtualize?: any;
-  overscan?: any;
-  estimateSize?: any;
   valueKey?: any;
   labelKey?: any;
   descriptionKey?: any;
@@ -318,8 +316,6 @@ const emits = defineEmits<{
   create: [payload?: any];
   clear: [payload?: any];
   highlight: [payload?: any];
-  ref: [payload?: any];
-  value: [payload?: any];
   'remove-tag': [payload?: any];
   'update:modelValue': [payload?: any];
 }>()

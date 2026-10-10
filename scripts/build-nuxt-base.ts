@@ -142,16 +142,22 @@ function parseMembersFromBody(body: string): MemberDef[] {
     return { key, optional };
   };
 
-  /* 接口成员以换行分隔（无分号）：逐成员扫描，新键起始行切分上一个成员 */
+  /* 接口成员以换行分隔（无分号）：逐成员扫描，顶层新键起始行切分上一个成员；嵌套花括号内的行不切分 */
   let current = "";
+  let braceDepth = 0;
   for (const line of body.split("\n")) {
     const trimmed = line.trim();
-    if (/^(?:['"][^'"]+['"]|[A-Za-z_$][\w$]*)\??:/.test(trimmed) && current.includes(":")) {
+    if (/^(?:['"][^'"]+['"]|[A-Za-z_$][\w$]*)\??:/.test(trimmed) && current.includes(":") && braceDepth === 0) {
       const member = parseOne(current);
       if (member) members.push(member);
       current = "";
     }
     current += `\n${line}`;
+    /* 统计花括号净深度（忽略引号内内容由粗略计数近似，成员类型中的对象字面量均成对） */
+    for (const ch of line) {
+      if (ch === "{") braceDepth++;
+      else if (ch === "}") braceDepth = Math.max(0, braceDepth - 1);
+    }
   }
   const last = parseOne(current);
   if (last) members.push(last);
@@ -274,9 +280,11 @@ function createMemberResolver(componentSource: string, rekaDts: string, localInd
       if (block) {
         const eq = block.indexOf("=");
         const openBrace = block.indexOf("{");
-        if (eq >= 0 && (openBrace < 0 || eq < openBrace)) {
+        const equalsToAlias = eq >= 0 && (openBrace < 0 || eq < openBrace);
+        const afterEq = eq >= 0 ? block.slice(eq + 1).trim() : "";
+        if (equalsToAlias && !afterEq.startsWith("{")) {
           /* type 别名无字面量体：解析 = 后表达式（如 Omit<X, keys>） */
-          const expr = block.slice(eq + 1).replace(/;?\s*$/, "").trim();
+          const expr = afterEq.replace(/;?\s*$/, "").trim();
           if (expr) {
             const resolved = resolveName(expr, depth + 1);
             cache.set(raw, resolved);
@@ -403,6 +411,22 @@ function collectInterfaceMembers(content: string, typeName: string, rekaDts: str
   });
 }
 
+/** 空 emits 接口补齐事件名（优先 reka RootEmits，失败时用通用事件集兜底） */
+function patchEmptyEmits(content: string, rekaDts: string, localIndex: Map<string, string>): string {
+  return content.replace(/export\s+interface\s+(\w+Emits)(?:<[^>]*>)?\s*(?:extends\s+[^{]+\s*)?\{\s*\}/g, (_m: string, typeName: string) => {
+    const rootName = typeName.replace(/Emits$/, "RootEmits");
+    let members = collectInterfaceMembers(rekaDts, rootName, rekaDts, localIndex);
+    if (members.length === 0) {
+      members = ["update:modelValue", "update:open", "change", "close", "select", "highlight", "entryFocus", "leave", "open", "loading"].map((key) => ({ key, optional: true }));
+    }
+    const lines = members.map((member) => {
+      const key = member.key.includes("-") || member.key.includes(":") ? `'${member.key}'` : member.key;
+      return `  ${key}: [payload?: any];`;
+    });
+    return `export interface ${typeName} {\n${lines.join("\n")}\n}`;
+  });
+}
+
 /** 失败组件的类型字面量降级：defineProps/defineEmits/defineSlots 用内联 any 成员类型，编译必过且保留事件声明 */
 function typeLiteralFallback(content: string, rekaDts: string, localIndex: Map<string, string>): string {
   let out = content;
@@ -418,7 +442,15 @@ function typeLiteralFallback(content: string, rekaDts: string, localIndex: Map<s
     return `defineProps<{\n${lines.join("\n")}\n}>`;
   });
   out = out.replace(/defineEmits<(\w+)(?:<[^>]*>)?>/g, (_m: string, typeName: string) => {
-    const members = collectInterfaceMembers(content, typeName, rekaDts, localIndex);
+    let members = collectInterfaceMembers(content, typeName, rekaDts, localIndex);
+    /* 空 emits 接口（Nuxt 原样）补齐 reka RootEmits 事件名，避免未声明事件警告 */
+    if (members.length === 0) {
+      const rootName = typeName.replace(/Emits$/, "RootEmits");
+      members = collectInterfaceMembers(rekaDts, rootName, rekaDts, localIndex);
+    }
+    if (members.length === 0) {
+      members = ["update:modelValue", "update:open", "change", "close", "select", "highlight", "entryFocus", "leave", "open"].map((key) => ({ key, optional: true }));
+    }
     const lines = members.map((member) => {
       const key = member.key.includes("-") || member.key.includes(":") ? `'${member.key}'` : member.key;
       return `  ${key}: [payload?: any];`;
@@ -625,11 +657,11 @@ function convertComponent(source: string): string {
     const afterTag = out.indexOf(">", setupOpen) + 1;
     out = out.slice(0, afterTag) + `\nimport NuxtLink from '../../lib/nuxt/NuxtLink.vue'` + out.slice(afterTag);
   }
-  /* Tooltip Provider 缺省替身：无 Provider 时注入默认上下文 */
+  /* Tooltip Provider 缺省替身：无 Provider 时主动 provide 默认上下文（reka TooltipRoot 内部也 inject） */
   if (out.includes("injectTooltipProviderContext()")) {
     out = out.replace(
       "const providerContext = injectTooltipProviderContext()",
-      `const providerContext = injectTooltipProviderContext({
+      `const providerContext = injectTooltipProviderContext() ?? provideTooltipProviderContext({
   isOpenDelayed: ref(false),
   delayDuration: ref(1000),
   onOpen: () => {},
@@ -642,6 +674,7 @@ function convertComponent(source: string): string {
   content: ref({}),
 })`,
     );
+    out = out.replace(/import \{ TooltipRoot, TooltipTrigger, TooltipPortal, TooltipContent, TooltipArrow, injectTooltipProviderContext \} from 'reka-ui'/, "import { TooltipRoot, TooltipTrigger, TooltipPortal, TooltipContent, TooltipArrow, injectTooltipProviderContext, provideTooltipProviderContext } from 'reka-ui'");
     if (!/import\s*\{[^}]*\bref\b/.test(out)) {
       const setupOpen = out.indexOf("<script setup");
       const afterTag = out.indexOf(">", setupOpen) + 1;
@@ -929,18 +962,20 @@ export default tv({ extend: ${extendExpr} })
       throw new Error(`Nuxt 组件不存在: ${name}`);
     }
     const converted = convertComponent(readFileSync(src, "utf8"));
+    const rekaDtsForPatch = resolveRekaDts();
+    const patched = patchEmptyEmits(converted, rekaDtsForPatch, localTypeIndex());
     const result = FORCE_RUNTIME.has(name)
       ? (() => {
-          const fallback = typeLiteralFallback(converted, resolveRekaDts(), localTypeIndex());
+          const fallback = typeLiteralFallback(patched, rekaDtsForPatch, localTypeIndex());
           try {
             const { descriptor } = parse(fallback, { filename: join(OUT_KIT, `X${name}.vue`) });
             compileScript(descriptor, { id: "probe", fs: probeFs, isProd: true });
             return { ok: true, content: fallback };
           } catch (error) {
-            return { ok: false, content: converted, message: `forced-fallback: ${String((error as Error).message ?? error).slice(0, 80)}` };
+            return { ok: false, content: patched, message: `forced-fallback: ${String((error as Error).message ?? error).slice(0, 80)}` };
           }
         })()
-      : compileComponent(converted, join(OUT_KIT, `X${name}.vue`));
+      : compileComponent(patched, join(OUT_KIT, `X${name}.vue`));
     if (!result.ok) {
       compileWarnings.push(`${name}: ${result.message}`);
     }

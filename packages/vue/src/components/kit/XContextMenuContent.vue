@@ -69,7 +69,15 @@ const props = defineProps<{
   uiOverride?: any;
 }>()
 const emits = defineEmits<{
-
+  'update:modelValue': [payload?: any];
+  'update:open': [payload?: any];
+  change: [payload?: any];
+  close: [payload?: any];
+  select: [payload?: any];
+  highlight: [payload?: any];
+  entryFocus: [payload?: any];
+  leave: [payload?: any];
+  open: [payload?: any];
 }>()
 const slots = defineSlots<Record<string, any>>()
 

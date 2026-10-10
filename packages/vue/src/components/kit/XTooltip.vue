@@ -44,6 +44,16 @@ export interface TooltipProps {
 }
 
 export interface TooltipEmits {
+  'update:modelValue': [payload?: any];
+  'update:open': [payload?: any];
+  change: [payload?: any];
+  close: [payload?: any];
+  select: [payload?: any];
+  highlight: [payload?: any];
+  entryFocus: [payload?: any];
+  leave: [payload?: any];
+  open: [payload?: any];
+  loading: [payload?: any];
 }
 
 export interface TooltipSlots {
@@ -56,7 +66,7 @@ export interface TooltipSlots {
 import { ref } from 'vue'
 import { computed, toRef } from 'vue'
 import { defu } from 'defu'
-import { TooltipRoot, TooltipTrigger, TooltipPortal, TooltipContent, TooltipArrow, injectTooltipProviderContext } from 'reka-ui'
+import { TooltipRoot, TooltipTrigger, TooltipPortal, TooltipContent, TooltipArrow, injectTooltipProviderContext, provideTooltipProviderContext } from 'reka-ui'
 import { reactivePick } from '@vueuse/core'
 import { useAppConfig } from '@/lib/nuxt/imports'
 import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
@@ -76,7 +86,7 @@ const props = useComponentProps('tooltip', _props)
 
 const appConfig = useAppConfig() as Tooltip['AppConfig']
 
-const providerContext = injectTooltipProviderContext({
+const providerContext = injectTooltipProviderContext() ?? provideTooltipProviderContext({
   isOpenDelayed: ref(false),
   delayDuration: ref(1000),
   onOpen: () => {},

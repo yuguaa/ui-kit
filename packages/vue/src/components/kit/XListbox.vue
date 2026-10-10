@@ -200,8 +200,6 @@ const _props = withDefaults(defineProps<{
   ignoreFilter?: any;
   selectedIcon?: any;
   virtualize?: any;
-  overscan?: any;
-  estimateSize?: any;
   highlight?: any;
   autofocus?: any;
   autofocusDelay?: any;
