@@ -620,7 +620,7 @@ export function XSelectMenu({
       <Combobox.Popup
         data-slot="content"
         className={cn(
-          "z-50 flex w-[var(--anchor-width)] min-w-40 flex-col overflow-hidden rounded-md border bg-popover text-popover-foreground shadow-md outline-none",
+          "z-50 flex w-[var(--anchor-width)] min-w-40 flex-col overflow-hidden rounded-md ring-1 ring-border bg-popover text-popover-foreground shadow-md outline-none",
           ui?.content,
         )}
       >

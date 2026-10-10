@@ -142,7 +142,7 @@ export const XCheckbox = React.forwardRef<HTMLButtonElement, XCheckboxProps>(fun
   const rootClass = cn(
     "relative flex items-start",
     variant === "card" && cn(
-      "rounded-lg border transition-colors hover:bg-muted/50",
+      "rounded-lg border border-border transition-colors hover:bg-muted/50",
       cardCheckedClasses[color],
       sizeClasses[size].card,
     ),

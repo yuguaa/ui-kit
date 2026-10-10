@@ -154,7 +154,7 @@ function onUpdate(value: boolean | 'indeterminate') {
 const rootClass = computed(() => cn(
   'relative flex items-start',
   props.variant === 'card' && cn(
-    'rounded-lg border transition-colors hover:bg-muted/50',
+    'rounded-lg border border-border transition-colors hover:bg-muted/50',
     cardCheckedClasses[props.color],
     sizeClasses[props.size].card,
   ),

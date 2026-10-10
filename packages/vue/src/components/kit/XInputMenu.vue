@@ -805,7 +805,7 @@ const [DefineItemTemplate, ReuseItemTemplate] = createReusableTemplate<{ item: I
         :align-offset="content?.alignOffset"
         :side-offset="content?.sideOffset ?? 8"
         :class="cn(
-          'z-50 flex w-[var(--reka-combobox-trigger-width)] min-w-40 flex-col overflow-hidden rounded-md border bg-popover text-popover-foreground shadow-md outline-none',
+          'z-50 flex w-[var(--reka-combobox-trigger-width)] min-w-40 flex-col overflow-hidden rounded-md ring-1 ring-border bg-popover text-popover-foreground shadow-md outline-none',
           ui?.content,
         )"
         @focus-outside.prevent
