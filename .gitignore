@@ -11,3 +11,4 @@ apps/docs/.vitepress/cache/
 apps/theme-designer/.tmp-dark.mjs
 .tmp-test-output/
 .agent-work/
+.tmp-agent*
