@@ -67,6 +67,8 @@ function tokenCssVars(): Record<string, string> {
   vars["text-xl"] = "24px";
   vars["text-2xl"] = "30px";
   vars["text-3xl"] = "38px";
+  // 统一 Inter 字体栈，与 packages/*/src/index.css 的 --font-sans 保持一致
+  vars["font-sans"] = '"Inter Variable", Inter, -apple-system, sans-serif';
   return vars;
 }
 

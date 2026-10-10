@@ -102,3 +102,43 @@
   color: var(--vp-c-text-2);
   font-size: 20px;
 }
+
+/* ============================ demo 展示区样式隔离 ============================ */
+/* VitePress 的 .vp-doc 正文样式会污染组件展示，这里把 demo 画布恢复为 Tailwind preflight 等效状态 */
+.demo-block .demo-block__body p { margin: 0; line-height: inherit; }
+.demo-block .demo-block__body a { color: inherit; text-decoration: inherit; font-weight: inherit; }
+.demo-block .demo-block__body ul,
+.demo-block .demo-block__body ol { margin: 0; padding: 0; list-style: none; }
+.demo-block .demo-block__body li + li { margin-top: 0; }
+.demo-block .demo-block__body code,
+.demo-block .demo-block__body kbd,
+.demo-block .demo-block__body samp,
+.demo-block .demo-block__body pre {
+  font-family: inherit;
+  font-size: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font-weight: inherit;
+}
+.demo-block .demo-block__body table { display: table; margin: 0; border-collapse: collapse; }
+.demo-block .demo-block__body th,
+.demo-block .demo-block__body td { border: 0; padding: 0; background: none; }
+.demo-block .demo-block__body tr { border-top: 0; background: none; }
+.demo-block .demo-block__body blockquote { margin: 0; border-left: 0; padding-left: 0; color: inherit; }
+.demo-block .demo-block__body h1,
+.demo-block .demo-block__body h2,
+.demo-block .demo-block__body h3,
+.demo-block .demo-block__body h4,
+.demo-block .demo-block__body h5,
+.demo-block .demo-block__body h6 {
+  margin: 0;
+  border-top: 0;
+  padding-top: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+}
+.demo-block .demo-block__body hr { margin: 0; border: 0; }

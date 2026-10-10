@@ -178,7 +178,8 @@
       "text-lg": "20px",
       "text-xl": "24px",
       "text-2xl": "30px",
-      "text-3xl": "38px"
+      "text-3xl": "38px",
+      "font-sans": "\"Inter Variable\", Inter, -apple-system, sans-serif"
     }
   }
 }
