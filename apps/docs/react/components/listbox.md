@@ -68,32 +68,7 @@ npx shadcn@latest add @ui-kit/x-listbox
 
 ### XListbox
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| items | XListItemData[] · XListItemData[][] | - | 列表项数组，二维数组时按行分组，支持 label / separator 结构项 |
-| value / defaultValue | string · number · 数组 | - | 选中值，多选为数组 |
-| multiple | boolean | false | 是否多选 |
-| color | 七种语义色 | primary | 语义色（选中态与高亮） |
-| size | xs · sm · md · lg · xl | md | 尺寸，控制项内边距与图标大小 |
-| valueKey / labelKey / descriptionKey | string | key / label / description | 列表项字段名 |
-| loading | boolean | false | 加载态，显示加载提示并禁止交互 |
-| loadingIcon | string · 组件 | loader-circle | 加载图标 |
-| filter | boolean · { placeholder, disabled } | false | 顶部搜索过滤 |
-| filterFields | string[] | [labelKey] | 过滤字段 |
-| ignoreFilter | boolean | false | 忽略内部过滤（服务端过滤场景） |
-| selectedIcon | string · 组件 | check | 选中态图标 |
-| virtualize | boolean | false | 虚拟滚动（长列表） |
-| highlight | boolean | false | 选中项高亮样式 |
-| autofocus | boolean | false | 打开时自动聚焦搜索框 |
-| autofocusDelay | number | 0 | 自动聚焦延迟（ms） |
-| disabled | boolean | false | 是否禁用 |
-| required | boolean | false | 必填标记 |
-| name / id | string | - | 表单字段标识 |
-| orientation | vertical · horizontal | vertical | 排列方向 |
-| highlightOnHover | boolean | true | 悬停高亮选项 |
-| render | ReactElement | - | 渲染为指定元素（根容器） |
-| ui | XListboxUi | - | 主题插槽类名 |
-| onValueChange | (value) => void | - | 值变化回调 |
+<!--@include: ./api/listbox.md-->
 | onChange | (event) => void | - | 值变化事件回调 |
 | onEntryFocus | (event) => void | - | 焦点进入回调 |
 | onHighlight | (payload) => void | - | 高亮项变化回调 |

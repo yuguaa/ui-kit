@@ -44,24 +44,7 @@ npx shadcn@latest add @ui-kit/x-splitter
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| orientation | horizontal · vertical | horizontal | 方向 |
-| items | XSplitterItem[] | - | 面板数组；未提供时使用 first / second 双面板形态 |
-| disabled | boolean | false | 锁定全部拖拽 |
-| id | string | - | 分组 id |
-| render | ReactElement | - | 渲染为指定元素 |
-| ui | XSplitterUi | - | 主题插槽类名 |
-| minSize | number | 20 | 双面板形态：最小尺寸（百分比） |
-| defaultSize | number | 50 | 双面板形态：默认尺寸（百分比） |
-| size | number | - | 双面板形态：受控尺寸（百分比） |
-| collapsible | boolean | false | 双面板形态：拖拽越过边界时折叠对应面板 |
-| first / second | ReactNode | - | 双面板形态的左右（上下）面板 |
-| onLayout | (sizes: number[]) => void | - | 布局变化回调 |
-| onCollapse | (index: number) => void | - | 面板折叠回调 |
-| onExpand | (index: number) => void | - | 面板展开回调 |
-| onResize | (index, size, prevSize?) => void | - | 面板尺寸变化回调 |
-| onDragging | (index, dragging) => void | - | 拖拽状态变化回调 |
+<!--@include: ./api/splitter.md-->
 
 ### XSplitterItem
 

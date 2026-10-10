@@ -48,21 +48,7 @@ npx shadcn@latest add @ui-kit/x-tooltip
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| text | string | - | 提示文本 |
-| kbds | (string \| Kbd 属性对象)[] | - | 快捷键组合 |
-| open | boolean | false | 是否打开（受控） |
-| defaultOpen | boolean | false | 初始是否打开 |
-| delayDuration | number | 700 | 打开延迟（毫秒） |
-| disableHoverableContent | boolean | false | 内容不可悬停保持 |
-| disableClosingTrigger | boolean | false | 点击触发器不关闭 |
-| disabled | boolean | false | 禁用提示 |
-| arrow | boolean | false | 是否显示箭头 |
-| portal | boolean | true | 渲染到 body |
-| className | string | - | 根节点类名（有触发器时绑到触发器） |
-| ui | XTooltipUi | - | 主题插槽类名 |
-| onOpenChange | (open, details) => void | - | 打开状态变化回调 |
+<!--@include: ./api/tooltip.md-->
 
 ## ui 插槽
 

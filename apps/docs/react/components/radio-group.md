@@ -72,31 +72,9 @@ npx shadcn@latest add @ui-kit/x-radio-group
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| options | { value?, label?, description?, disabled?, icon?, className?, ui? }[] | - | 选项数据源 |
-| value | string · number | - | 受控选中值 |
-| defaultValue | string · number | - | 初始选中值（非受控） |
-| onValueChange | (value: string · number · null) => void | - | 选中值变化回调 |
-| legend | ReactNode | - | 组标题 |
-| orientation | horizontal · vertical | vertical | 排列方向 |
-| valueKey | string | value | 取值字段名 |
-| labelKey | string | label | 文字字段名 |
-| descriptionKey | string | description | 辅助说明字段名 |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 选中圆点的语义色 |
-| size | xs · sm · md · lg · xl | md | 尺寸 |
-| indicator | start · end · hidden | start | 指示圆点位置，hidden 时图标显示在 label 上方 |
-| highlight | boolean | false | 常显高亮聚焦环 |
-| required | boolean | false | 必选项，legend 后显示 * |
-| disabled | boolean | false | 整体禁用 |
-| id | string | - | 组 id，关联单项 label |
-| variant | radio · button | radio | 展示形式 |
-| buttonStyle | outline · solid | outline | 按钮样式（variant 为 button 时生效） |
-| label | (option, value) => ReactNode | - | 自定义单项文字渲染 |
-| description | (option, value) => ReactNode | - | 自定义单项辅助说明渲染 |
-| render | ReactElement | - | 渲染为指定元素 |
-| ui | XRadioGroupUi | - | 主题插槽类名 |
-| className | string | - | 根元素类名 |
+<!--@include: ./api/radio-group.md-->
+
+**插槽**：label 自定义单项文字渲染 · description 自定义单项辅助说明渲染
 
 ## ui 插槽
 

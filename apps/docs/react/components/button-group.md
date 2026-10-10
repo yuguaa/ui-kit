@@ -36,11 +36,7 @@ npx shadcn@latest add @ui-kit/x-button-group
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| orientation | horizontal · vertical | horizontal | 排列方向 |
-| render | ReactElement | - | 渲染为指定元素 |
-| ui | XButtonGroupUi | - | 主题插槽类名 |
+<!--@include: ./api/button-group.md-->
 
 ## ui 插槽
 

@@ -70,32 +70,9 @@ npx shadcn@latest add @ui-kit/x-pin-input
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| value | string | - | 绑定值 |
-| defaultValue | string | '' | 默认值 |
-| onChange | (value) => void | - | 值变化回调 |
-| onComplete | (value) => void | - | 输入完成回调 |
-| length | number | 5 | 位数 |
-| variant | outline · soft · subtle · ghost · none | outline | 预设样式 |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 组件颜色（聚焦描边与高亮） |
-| size | xs · sm · md · lg · xl | md | 控件尺寸 |
-| highlight | boolean | false | 始终显示颜色描边，类似聚焦态 |
-| fixed | boolean | true | 保持移动端字号在所有断点一致 |
-| separator | number · number[] | - | 分组分隔：数字为每隔 N 位插入，数组为指定位置之后插入 |
-| separatorSlot | ({ index }) => ReactNode | - | 分隔符内容自定义渲染 |
-| mask | boolean | false | 掩码（视觉隐藏已输入字符） |
-| disabled | boolean | false | 禁用 |
-| autofocus | boolean | false | 自动聚焦第一个输入槽 |
-| autofocusDelay | number | 0 | 自动聚焦延迟（ms） |
-| otp | boolean | false | 一次性验证码提示（autocomplete=one-time-code） |
-| type | string | text | 输入框类型（如 number） |
-| placeholder | string | - | 占位提示文字 |
-| required | boolean | false | 必填 |
-| id | string | - | 与表单关联的 id |
-| name | string | - | 表单提交字段名 |
-| render | ReactElement | div | 渲染为指定元素 |
-| ui | XPinInputUi | - | 主题插槽类名 |
+<!--@include: ./api/pin-input.md-->
+
+**插槽**：separatorSlot 分隔符内容自定义渲染
 
 ## ui 插槽
 

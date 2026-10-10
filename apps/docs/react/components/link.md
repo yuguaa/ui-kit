@@ -46,16 +46,9 @@ npx shadcn@latest add @ui-kit/x-link
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| to | string | - | 链接地址 |
-| color | primary · secondary · neutral | primary | 颜色 |
-| active | boolean | false | 激活态 |
-| inactiveClass | string | - | 非激活态附加类名 |
-| disabled | boolean | false | 是否禁用 |
-| leading / trailing | ReactNode | - | 前置 / 后置图标 |
-| render | ReactElement | - | 渲染为指定元素 |
-| ui | XLinkUi | - | 主题插槽类名 |
+<!--@include: ./api/link.md-->
+
+**插槽**：leading / trailing 前置与后置图标
 
 ## ui 插槽
 

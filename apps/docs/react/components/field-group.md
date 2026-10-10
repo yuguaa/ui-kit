@@ -48,13 +48,7 @@ npx shadcn@latest add @ui-kit/x-field-group
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| render | ReactElement | - | 渲染为指定元素 |
-| size | xs · sm · md · lg · xl | md | 尺寸（控制字段间距） |
-| orientation | horizontal · vertical | horizontal | 排列方向 |
-| inline | boolean | true | 旧属性：true 等价 horizontal，false 等价 vertical |
-| ui | XFieldGroupUi | - | 主题插槽类名 |
+<!--@include: ./api/field-group.md-->
 
 ## ui 插槽
 

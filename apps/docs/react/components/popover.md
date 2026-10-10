@@ -58,21 +58,7 @@ npx shadcn@latest add @ui-kit/x-popover
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| mode | click · hover | click | 触发模式 |
-| open | boolean | false | 是否打开（受控） |
-| defaultOpen | boolean | false | 初始是否打开 |
-| modal | boolean | false | 模态：聚焦锁定与遮罩拦截（仅 click 模式） |
-| openDelay | number | 0 | 悬停打开延迟（毫秒，仅 hover 模式） |
-| closeDelay | number | 0 | 悬停关闭延迟（毫秒，仅 hover 模式） |
-| arrow | boolean | false | 是否显示指向触发元素的箭头 |
-| portal | boolean | true | 渲染到 body |
-| dismissible | boolean | true | 允许点击外部或按 Esc 关闭 |
-| className | string | - | 根节点类名（有触发器时绑到触发器） |
-| ui | XPopoverUi | - | 主题插槽类名 |
-| onOpenChange | (open, details) => void | - | 打开状态变化回调 |
-| onClosePrevent | () => void | - | 关闭被阻止（dismissible 为 false 时点击外部或按 Esc） |
+<!--@include: ./api/popover.md-->
 
 ## ui 插槽
 

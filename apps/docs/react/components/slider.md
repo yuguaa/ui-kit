@@ -58,21 +58,7 @@ npx shadcn@latest add @ui-kit/x-slider
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| value | number · number[] | - | 绑定值；数组为双值区间 |
-| defaultValue | number · number[] | - | 默认值（非受控） |
-| min / max | number | 0 / 100 | 最小值 / 最大值 |
-| step | number | 1 | 步长 |
-| disabled | boolean | false | 是否禁用 |
-| tooltip | boolean · object | false | 悬浮显示当前值提示，对象透传 XTooltip 属性 |
-| orientation | horizontal · vertical | horizontal | 滑块方向（纵向时高度由 class 控制） |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 指示条与拇指颜色 |
-| size | xs · sm · md · lg · xl | md | 尺寸 |
-| render | ReactElement | - | 渲染为指定元素 |
-| ui | XSliderUi | - | 主题插槽类名 |
-| onValueChange | (value: number · number[]) => void | - | 值变化回调 |
-| onChange | (event: { target: { value } }) => void | - | 值提交（拖动结束）回调，event.target.value 为提交值 |
+<!--@include: ./api/slider.md-->
 
 ## ui 插槽
 

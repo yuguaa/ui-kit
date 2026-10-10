@@ -76,26 +76,7 @@ npx shadcn@latest add @ui-kit/x-textarea
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| size | xs · sm · md · lg · xl | md | 控件尺寸 |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 组件颜色（聚焦描边与高亮） |
-| highlight | boolean | false | 始终显示颜色描边，类似聚焦态 |
-| fixed | boolean | true | 保持移动端字号在所有断点一致 |
-| rows | number | 3 | 行数 |
-| placeholder | string | - | 占位文字 |
-| disabled | boolean | false | 是否禁用 |
-| required | boolean | false | 是否必填 |
-| autoresize | boolean | false | 自动调整高度 |
-| autoresizeDelay | number | 0 | 自动调整高度的延迟（毫秒） |
-| maxrows | number | 0 | 自动调整高度的行数上限，超出后内容在控件内部滚动 |
-| autosize | boolean | false | 自动调整高度（等价 autoresize，CSS 实现） |
-| maxRows | number | - | 自动调整高度的行数上限（等价 maxrows，CSS 实现） |
-| status | error · warning | - | 校验状态 |
-| maxLength | number | - | 最大输入长度 |
-| showCount | boolean | false | 右下角显示字数统计，设置 maxLength 时显示「当前长度 / 最大长度」 |
-| render | ReactElement | - | 渲染为指定元素 |
-| ui | XTextareaUi | - | 主题插槽类名 |
+<!--@include: ./api/textarea.md-->
 
 ## ui 插槽
 

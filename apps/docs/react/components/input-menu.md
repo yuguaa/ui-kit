@@ -50,64 +50,9 @@ npx shadcn@latest add @ui-kit/x-input-menu
 
 ### XInputMenu
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| items | XInputMenuItemData[] | - | 菜单项数组，支持任意字段、description、type、disabled、icon |
-| value / defaultValue | string · number · boolean | - | 选中值，autocomplete 模式下为输入文本 |
-| mode | combobox · listbox · autocomplete | combobox | combobox 输入框即搜索，listbox 输入框只读、菜单内搜索，autocomplete 自由输入 |
-| searchInput | boolean · { placeholder } | - | 菜单内搜索框 |
-| color | 七种语义色 | primary | 语义色 |
-| variant | outline · solid · soft · ghost · subtle · link | outline | 预设样式 |
-| size | sm · md · lg | md | 尺寸 |
-| type | string | text | 输入框类型 |
-| required | boolean | false | 必填标记 |
-| placeholder | string | 搜索并选择… | 占位文字 |
-| trailingIcon | string · 组件 | chevron-down | 展开图标 |
-| selectedIcon | string · 组件 | check | 选中态图标 |
-| deleteIcon | string · 组件 | x | 删除标签图标 |
-| clear | boolean | false | 有选中项时显示清空按钮 |
-| clearIcon | string · 组件 | x | 清空按钮图标 |
-| content | 对象 | - | 浮层内容配置 |
-| arrow | boolean | false | 浮层箭头 |
-| portal | boolean | true | 浮层渲染到 body |
-| virtualize | boolean | false | 虚拟滚动（长列表） |
-| valueKey / labelKey / descriptionKey | string | value / label / description | 菜单项字段名 |
-| multiple | boolean | false | 多标签模式（tags 形态） |
-| highlight | boolean | false | 选中项高亮样式 |
-| fixed | boolean | false | 触发器固定样式 |
-| createItem | boolean | false | 关键字不存在时回车创建新选项 |
-| filterFields | string[] | [labelKey] | 过滤字段 |
-| ignoreFilter | boolean | false | 忽略内部过滤 |
-| autofocus | boolean | false | 打开时自动聚焦 |
-| autofocusDelay | number | 0 | 自动聚焦延迟（ms） |
-| open | boolean | - | 受控打开状态 |
-| defaultOpen | boolean | false | 初始打开状态 |
-| openOnClick | boolean | false | 点击触发器打开 |
-| openOnFocus | boolean | false | 聚焦输入框打开 |
-| highlightOnHover | boolean | true | 悬停高亮选项 |
-| disabled | boolean | false | 是否禁用 |
-| id / name | string | - | 表单字段标识 |
-| icon / avatar | ReactNode · 对象 | - | 前置图标或头像 |
-| loading | boolean | false | 加载态 |
-| loadingIcon | string · 组件 | loader-circle | 加载图标 |
-| render | ReactElement | - | 渲染为指定元素（根容器） |
-| ui | XInputMenuUi | - | 主题插槽类名 |
-| onValueChange | (value) => void | - | 值变化回调 |
-| onChange | (event) => void | - | 值变化事件回调 |
-| onOpenChange | (open) => void | - | 打开状态变化回调 |
-| onFocus / onBlur | (event) => void | - | 打开与关闭回调 |
-| onCreate | (value) => void | - | 创建新选项回调 |
-| onClear | () => void | - | 清空回调 |
-| onRemoveTag | (value) => void | - | 删除标签回调 |
-| onHighlight | (payload) => void | - | 高亮项变化回调 |
-| leading / trailing | ReactNode | - | 前置 / 后置内容 |
-| searchInputSlot | ({ keyword, onInput }) => ReactNode | - | 菜单内搜索框 |
-| item | ({ item, index }) => ReactNode | - | 自定义菜单项 |
-| itemLeading / itemLabel / itemDescription / itemTrailing | ({ item }) => ReactNode | - | 选项片段自定义 |
-| tagsItemText / tagsItemDelete | ({ item, index }) => ReactNode | - | 多标签模式下的标签片段自定义 |
-| empty | ReactNode | - | 空数据提示内容 |
-| contentTop / contentBottom | ReactNode | - | 浮层顶部 / 底部内容 |
-| createItemLabel | ReactNode | - | 创建项文案 |
+<!--@include: ./api/input-menu.md-->
+
+**插槽**：leading / trailing 前置与后置 · searchInputSlot 菜单内搜索框 · item 自定义菜单项 · itemLeading / itemLabel / itemDescription / itemTrailing 选项片段 · tagsItemText / tagsItemDelete 标签片段 · empty 空数据提示 · contentTop / contentBottom 浮层顶部与底部 · createItemLabel 创建项文案
 
 ## ui 插槽
 

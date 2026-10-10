@@ -54,28 +54,7 @@ npx shadcn@latest add @ui-kit/x-switch
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| checked | boolean | false | 是否选中（受控） |
-| defaultChecked | boolean | false | 初始选中状态（非受控） |
-| onCheckedChange | (checked: boolean) => void | - | 选中状态变化回调 |
-| disabled | boolean | false | 是否禁用 |
-| name | string | - | 表单字段名 |
-| id | string | - | 控件 id，label 通过 htmlFor 关联 |
-| required | boolean | false | 必选项，label 后显示 * |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 选中时滑块轨道的语义色 |
-| size | default · small | default | 控件尺寸 |
-| highlight | boolean | false | 常显高亮聚焦环 |
-| loading | boolean | false | 加载态：阻止交互并显示旋转图标 |
-| loadingIcon | ElementType | 旋转图标 | 加载图标 |
-| checkedIcon | ElementType | - | 选中时滑块内图标 |
-| uncheckedIcon | ElementType | - | 未选中时滑块内图标 |
-| label | ReactNode | - | 关联文字 |
-| description | ReactNode | - | 关联文字下方的辅助说明 |
-| checkedChildren / unCheckedChildren | ReactNode | - | 选中 / 未选中时显示内容 |
-| render | ReactElement | - | 渲染为指定元素 |
-| ui | XSwitchUi | - | 主题插槽类名 |
-| className | string | - | 根元素类名 |
+<!--@include: ./api/switch.md-->
 
 ## ui 插槽
 

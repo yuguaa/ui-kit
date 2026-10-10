@@ -36,11 +36,7 @@ npx shadcn@latest add @ui-kit/x-container
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| size | xs · sm · md · lg · xl | lg | 最大宽度 |
-| render | ReactElement | - | 渲染为指定元素 |
-| ui | XContainerUi | - | 主题插槽类名 |
+<!--@include: ./api/container.md-->
 
 ## ui 插槽
 

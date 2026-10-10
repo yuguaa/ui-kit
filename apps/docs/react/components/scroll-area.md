@@ -64,17 +64,7 @@ npx shadcn@latest add @ui-kit/x-scroll-area
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| render | ReactElement | - | 渲染为指定元素 |
-| orientation | vertical · horizontal · both | vertical | 滚动方向 |
-| items | any[] | - | 项数组 |
-| virtualize | boolean · XScrollAreaVirtualizeOptions | false | 启用虚拟滚动 |
-| shadow | boolean · { size } | false | 滚动边缘阴影 |
-| height | number · string | - | 区域高度 |
-| ui | XScrollAreaUi | - | 主题插槽类名 |
-| children | ReactNode · (props) => ReactNode | - | 项内容，函数形式接收 { item, index } |
-| onScrollChange | (isScrolling: boolean) => void | - | 滚动状态变化回调 |
+<!--@include: ./api/scroll-area.md-->
 
 ### XScrollAreaVirtualizeOptions
 
