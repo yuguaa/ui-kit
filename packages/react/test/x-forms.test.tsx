@@ -26,7 +26,7 @@ import { XTextarea } from "@/components/kit/x-textarea";
 describe("XInput", () => {
   it("默认 md 尺寸", () => {
     render(<XInput placeholder="请输入" />);
-    expect(screen.getByPlaceholderText("请输入")).toHaveClass("h-9");
+    expect(screen.getByPlaceholderText("请输入")).toHaveClass("h-8");
   });
 
   it("error 状态边框", () => {
@@ -824,7 +824,7 @@ describe("XInputDate / XInputTime 区间模式", () => {
 
   it("size / color / highlight 作用于输入容器", () => {
     render(<XInputDate size="lg" color="success" variant="soft" highlight />);
-    expect(document.querySelector("[data-slot='base']")).toHaveClass("h-10", "ring-success-6");
+    expect(document.querySelector("[data-slot='base']")).toHaveClass("h-9", "ring-success-6");
   });
 
   it("ui 插槽类名", () => {
@@ -963,7 +963,7 @@ describe("XInput Nuxt 语义", () => {
 
   it("variant 与 size 变体类", () => {
     render(<XInput variant="soft" size="xs" />);
-    expect(screen.getByRole("textbox")).toHaveClass("bg-muted/50", "h-7");
+    expect(screen.getByRole("textbox")).toHaveClass("bg-muted/50", "h-6");
   });
 
   it("fixed=false 桌面端缩小字号", () => {
@@ -998,7 +998,7 @@ describe("XTextarea Nuxt 语义", () => {
 describe("XInputNumber Nuxt 语义", () => {
   it("placeholder 与 size 变体", () => {
     render(<XInputNumber placeholder="数量" size="sm" />);
-    expect(screen.getByPlaceholderText("数量")).toHaveClass("h-8");
+    expect(screen.getByPlaceholderText("数量")).toHaveClass("h-7");
   });
 
   it("vertical 步进按钮纵向堆叠", () => {

@@ -31,11 +31,11 @@ export interface XInputUi {
 
 /** 尺寸 → 高度与内边距 */
 const inputSizeClasses: Record<XInputSize, string> = {
-  xs: "h-7 px-2 text-sm",
-  sm: "h-8 px-2.5 text-sm",
-  md: "h-9 px-2.5 text-sm",
-  lg: "h-10 px-3 text-sm",
-  xl: "h-11 px-3 text-base",
+  xs: "h-6 px-2 text-sm",
+  sm: "h-7 px-2.5 text-sm",
+  md: "h-8 px-2.5 text-base",
+  lg: "h-9 px-3 text-base",
+  xl: "h-11 px-3.5 text-base",
 }
 
 /** leading / trailing 内容存在时，控件补足的水平内边距 */

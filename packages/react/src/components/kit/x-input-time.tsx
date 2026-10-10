@@ -169,10 +169,10 @@ const timeFixedTextClasses: Partial<Record<XInputTimeSize, string>> = {
 
 /** 容器高度与文本尺寸 */
 const timeBaseSizeClasses: Record<XInputTimeSize, string> = {
-  xs: "h-7 text-sm",
-  sm: "h-8 text-sm",
-  md: "h-9 text-sm",
-  lg: "h-10 text-sm",
+  xs: "h-6 text-sm",
+  sm: "h-7 text-sm",
+  md: "h-8 text-base",
+  lg: "h-9 text-base",
   xl: "h-11 text-base",
 }
 

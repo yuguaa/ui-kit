@@ -216,10 +216,10 @@ const fixedTextClasses: Partial<Record<FieldSize, string>> = {
 
 /** 容器高度与文本尺寸 */
 const baseSizeClasses: Record<FieldSize, string> = {
-  xs: 'h-7 text-sm',
-  sm: 'h-8 text-sm',
-  md: 'h-9 text-sm',
-  lg: 'h-10 text-sm',
+  xs: 'h-6 text-sm',
+  sm: 'h-7 text-sm',
+  md: 'h-8 text-base',
+  lg: 'h-9 text-base',
   xl: 'h-11 text-base',
 }
 

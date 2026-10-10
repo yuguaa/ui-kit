@@ -111,11 +111,11 @@ describe.each(["react", "vue"] as const)("%s registry", (framework) => {
         expect(theme[`${color}-${i}`]).toMatch(/^#/);
       }
     }
-    expect(theme["radius-sm"]).toBe("6px");
-    expect(theme["radius-md"]).toBe("8px");
-    expect(theme["radius-lg"]).toBe("12px");
+    expect(theme["radius-sm"]).toBe("4px");
+    expect(theme["radius-md"]).toBe("6px");
+    expect(theme["radius-lg"]).toBe("8px");
     expect(theme["radius-pill"]).toBe("9999px");
-    expect(theme["shadow-md"]).toBe("0 4px 12px 0 rgb(0 0 0 / 0.10)");
+    expect(theme["shadow-md"]).toBe("0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)");
     expect(theme["text-3xl"]).toBe("38px");
   });
 

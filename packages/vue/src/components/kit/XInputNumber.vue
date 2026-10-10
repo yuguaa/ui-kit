@@ -85,11 +85,11 @@ function update(next: number) {
 
 /** 尺寸 → 输入框高度与内边距 */
 const sizeClasses: Record<InputNumberSize, string> = {
-  xs: 'h-7 px-2 text-sm',
-  sm: 'h-8 px-2.5 text-sm',
-  md: 'h-9 px-2.5 text-sm',
-  lg: 'h-10 px-3 text-sm',
-  xl: 'h-11 px-3 text-base',
+  xs: 'h-6 px-2 text-sm',
+  sm: 'h-7 px-2.5 text-sm',
+  md: 'h-8 px-2.5 text-base',
+  lg: 'h-9 px-3 text-base',
+  xl: 'h-11 px-3.5 text-base',
 }
 
 /** 输入框宽度（随控件尺寸） */

@@ -29,7 +29,7 @@ describe("XInput", () => {
     const wrapper = mount(XInput, {
       slots: { prefix: "<i data-test='p' />", suffix: "<i data-test='s' />" },
     });
-    expect(wrapper.find("input").classes()).toContain("h-9");
+    expect(wrapper.find("input").classes()).toContain("h-8");
     expect(wrapper.find("[data-test='p']").exists()).toBe(true);
     expect(wrapper.find("[data-test='s']").exists()).toBe(true);
   });
@@ -780,7 +780,7 @@ describe("XInputDate / XInputTime 区间模式", () => {
       props: { size: "lg", color: "success", variant: "soft", highlight: true },
     });
     const base = wrapper.find("[data-slot='base']");
-    expect(base.classes()).toContain("h-10");
+    expect(base.classes()).toContain("h-9");
     expect(base.classes()).toContain("ring-success-6");
   });
 
@@ -960,7 +960,7 @@ describe("XInput Nuxt 语义", () => {
     });
     expect(wrapper.find("input").classes()).toContain("ring-success-6");
     expect(wrapper.find("input").classes()).toContain("bg-muted/50");
-    expect(wrapper.find("input").classes()).toContain("h-7");
+    expect(wrapper.find("input").classes()).toContain("h-6");
   });
 
   it("fixed=false 桌面端缩小字号", () => {
@@ -1002,7 +1002,7 @@ describe("XInputNumber Nuxt 语义", () => {
   it("placeholder 与 size 变体", () => {
     const wrapper = mount(XInputNumber, { props: { placeholder: "数量", size: "sm" } });
     expect(wrapper.find("input").attributes("placeholder")).toBe("数量");
-    expect(wrapper.find("input").classes()).toContain("h-8");
+    expect(wrapper.find("input").classes()).toContain("h-7");
   });
 
   it("vertical 步进按钮纵向堆叠", () => {

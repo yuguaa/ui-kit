@@ -222,10 +222,10 @@ export interface XInputMenuProps {
 
 /** 尺寸映射：base / item / label / empty / 图标 / 左右内边距 */
 const sizeClasses: Record<XInputMenuSize, { base: string; leading: string; trailing: string; item: string; label: string; empty: string; icon: string }> = {
-  xs: { base: "h-7 text-xs", leading: "ps-2", trailing: "pe-2", item: "p-1 text-xs gap-1", label: "p-1 text-[10px] gap-1", empty: "p-2 text-xs", icon: "size-4" },
-  sm: { base: "h-8 text-sm", leading: "ps-2.5", trailing: "pe-2.5", item: "p-1.5 text-xs gap-1.5", label: "p-1.5 text-[10px] gap-1.5", empty: "p-2.5 text-xs", icon: "size-4" },
-  md: { base: "h-9 text-sm", leading: "ps-3", trailing: "pe-3", item: "p-1.5 text-sm gap-1.5", label: "p-1.5 text-xs gap-1.5", empty: "p-2.5 text-sm", icon: "size-5" },
-  lg: { base: "h-10 text-base", leading: "ps-3", trailing: "pe-3", item: "p-2 text-sm gap-2", label: "p-2 text-xs gap-2", empty: "p-3 text-sm", icon: "size-5" },
+  xs: { base: "h-6 text-sm", leading: "ps-2", trailing: "pe-2", item: "p-1 text-xs gap-1", label: "p-1 text-[10px] gap-1", empty: "p-2 text-xs", icon: "size-4" },
+  sm: { base: "h-7 text-sm", leading: "ps-2.5", trailing: "pe-2.5", item: "p-1.5 text-xs gap-1.5", label: "p-1.5 text-[10px] gap-1.5", empty: "p-2.5 text-xs", icon: "size-4" },
+  md: { base: "h-8 text-base", leading: "ps-3", trailing: "pe-3", item: "p-1.5 text-sm gap-1.5", label: "p-1.5 text-xs gap-1.5", empty: "p-2.5 text-sm", icon: "size-5" },
+  lg: { base: "h-9 text-base", leading: "ps-3", trailing: "pe-3", item: "p-2 text-sm gap-2", label: "p-2 text-xs gap-2", empty: "p-3 text-sm", icon: "size-5" },
   xl: { base: "h-11 text-base", leading: "ps-3.5", trailing: "pe-3.5", item: "p-2 text-base gap-2", label: "p-2 text-sm gap-2", empty: "p-3 text-base", icon: "size-6" },
 }
 

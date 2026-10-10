@@ -16,19 +16,19 @@ export const fontSizeScale = {
 
 export const fontFamily = "Inter";
 
-/** 圆角规范：6 / 8 / 12 与胶囊圆角 */
+/** 圆角规范：与 Nuxt UI 一致（rounded-sm / md / lg 对应 4 / 6 / 8px），另有胶囊圆角 */
 export const radiusScale = {
-  sm: "6px",
-  md: "8px",
-  lg: "12px",
+  sm: "4px",
+  md: "6px",
+  lg: "8px",
   pill: "9999px",
 } as const;
 
-/** 阴影层级：sm / md / lg 三档，blur 2 / 12 / 24 */
+/** 阴影层级：Tailwind 默认 sm / md / lg 三档，与 Nuxt UI 弹窗一致 */
 export const shadowScale = {
-  sm: "0 1px 2px 0 rgb(0 0 0 / 0.06)",
-  md: "0 4px 12px 0 rgb(0 0 0 / 0.10)",
-  lg: "0 8px 24px 0 rgb(0 0 0 / 0.15)",
+  sm: "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+  md: "0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)",
+  lg: "0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)",
 } as const;
 
 /** 间距尺度：4px → 48px 共七档 */

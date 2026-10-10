@@ -14,8 +14,8 @@ describe("tokens", () => {
     expect(Object.values(fontSizeScale)).toEqual([12, 14, 16, 20, 24, 30, 38]);
   });
 
-  it("圆角为 6 / 8 / 12 / 9999", () => {
-    expect(radiusScale).toEqual({ sm: "6px", md: "8px", lg: "12px", pill: "9999px" });
+  it("圆角为 4 / 6 / 8 / 9999", () => {
+    expect(radiusScale).toEqual({ sm: "4px", md: "6px", lg: "8px", pill: "9999px" });
   });
 
   it("间距为 4 → 48 七档", () => {
@@ -25,8 +25,8 @@ describe("tokens", () => {
   it("tokensToCssVars 输出 --font-size / --radius / --shadow 变量", () => {
     const vars = tokensToCssVars();
     expect(vars["--font-size-3xl"]).toBe("38px");
-    expect(vars["--radius-md"]).toBe("8px");
-    expect(vars["--shadow-lg"]).toBe("0 8px 24px 0 rgb(0 0 0 / 0.15)");
+    expect(vars["--radius-md"]).toBe("6px");
+    expect(vars["--shadow-lg"]).toBe("0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)");
   });
 });
 
