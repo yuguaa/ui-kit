@@ -59,7 +59,7 @@ import {
   XTextarea,
   XToaster,
   XTooltip,
-} from '@ui-kit/vue'
+} from '@ui-kit/vue/src/components/kit'
 
 defineProps<{
   vars: Record<string, string>
@@ -87,10 +87,6 @@ const rating = ref(4)
 const color = ref('#1677ff')
 const pin = ref('')
 const city = ref('hangzhou')
-const uploadFiles = ref([
-  { name: '设计稿.pdf', size: 204800, status: 'uploading' as const, progress: 60 },
-  { name: '需求说明.docx', size: 51200, status: 'done' as const },
-])
 
 const radioOptions = [
   { value: 'free', label: '免费版' },
@@ -110,9 +106,9 @@ const menuOptions = [
 
 /* ---------------- 导航与数据 ---------------- */
 const tabItems = [
-  { key: 'overview', label: '概览' },
-  { key: 'detail', label: '明细' },
-  { key: 'setting', label: '设置' },
+  { value: 'overview', label: '概览' },
+  { value: 'detail', label: '明细' },
+  { value: 'setting', label: '设置' },
 ]
 const navItems = [
   { key: 'dashboard', label: '工作台' },
@@ -125,6 +121,7 @@ const breadcrumbItems = [
   { title: '订单详情' },
 ]
 const page = ref(3)
+const progressValue = ref(60)
 const step = ref(1)
 const stepItems = [
   { title: '填写信息', description: '基础资料' },
@@ -151,21 +148,21 @@ const menuItems = [
 ]
 
 const listItems = [
-  { key: 'a', label: '待处理' },
-  { key: 'b', label: '处理中' },
-  { key: 'c', label: '已完成' },
+  { value: 'a', label: '待处理' },
+  { value: 'b', label: '处理中' },
+  { value: 'c', label: '已完成' },
 ]
 const listSelected = ref(['a'])
 
 const tableColumns = [
-  { key: 'name', title: '名称', sortable: true },
-  { key: 'status', title: '状态' },
-  { key: 'amount', title: '金额', align: 'right' as const },
+  { accessorKey: 'name', header: '名称' },
+  { accessorKey: 'status', header: '状态' },
+  { accessorKey: 'amount', header: '金额' },
 ]
 const tableRows = [
-  { key: '1', name: '订单 A', status: '已完成', amount: '¥1,280' },
-  { key: '2', name: '订单 B', status: '处理中', amount: '¥560' },
-  { key: '3', name: '订单 C', status: '待支付', amount: '¥2,340' },
+  { name: '订单 A', status: '已完成', amount: '¥1,280' },
+  { name: '订单 B', status: '处理中', amount: '¥560' },
+  { name: '订单 C', status: '待支付', amount: '¥2,340' },
 ]
 const accordionItems = [{ title: '什么是设计 token' }, { title: '如何自定义主色' }, { title: '支持暗色模式吗' }]
 const carouselItems = [{ key: '1' }, { key: '2' }, { key: '3' }]
@@ -301,8 +298,8 @@ const paletteOpen = ref(false)
           </div>
 
           <div class="flex flex-wrap items-center gap-4">
-            <XSelectMenu v-model="city" :options="cityOptions" clearable class="w-40" />
-            <XInputMenu :items="menuOptions" searchable create-item placeholder="搜索水果" class="w-44" />
+            <XSelectMenu v-model="city" :items="cityOptions" clear class="w-40" />
+            <XInputMenu :items="menuOptions" search-input create-item placeholder="搜索水果" class="w-44" />
             <XInputNumber v-model="amount" :min="0" :max="10" />
             <XInputDate v-model="date" class="w-40" />
             <XInputTime v-model="time" class="w-32" />
@@ -316,9 +313,9 @@ const paletteOpen = ref(false)
             <XPinInput v-model="pin" :length="4" />
           </div>
 
-          <XRadioGroup v-model="plan" :options="radioOptions" />
+          <XRadioGroup v-model="plan" :items="radioOptions" />
 
-          <XFileUpload :files="uploadFiles" accept=".pdf,.docx" multiple class="w-full" />
+          <XFileUpload accept=".pdf,.docx" multiple label="选择一个文件或拖拽到这里" class="w-full" />
         </XForm>
       </div>
 
@@ -329,12 +326,12 @@ const paletteOpen = ref(false)
         <div class="flex flex-wrap items-center gap-4">
           <XLink to="/docs" active>文档链接</XLink>
           <XLink to="/about" color="neutral">普通链接</XLink>
-          <XPagination v-model:current="page" :total="120" :page-size="10" show-controls />
+          <XPagination :page="page" :total="120" :items-per-page="10" show-controls />
         </div>
 
         <XBreadcrumb :items="breadcrumbItems" separator-icon="›" />
 
-        <XTabs :items="tabItems" type="line">
+        <XTabs :items="tabItems" variant="link" content>
           <template #content="{ item }">
             <p class="text-muted-foreground text-sm">{{ item.label }}面板内容</p>
           </template>
@@ -370,12 +367,13 @@ const paletteOpen = ref(false)
             <template #content>侧滑内容。</template>
           </XSlideover>
 
-          <XTooltip title="文字提示">
+          <XTooltip text="文字提示">
             <XButton variant="outline" size="sm">悬浮查看提示</XButton>
           </XTooltip>
 
-          <XPopover title="气泡标题" content="气泡内容随主题色变化。" arrow>
+          <XPopover arrow>
             <XButton variant="outline" size="sm">带箭头的浮层</XButton>
+            <template #content>气泡内容随主题色变化。</template>
           </XPopover>
 
           <XDropdownMenu :items="menuItems" trigger-label="下拉菜单" />
@@ -402,9 +400,9 @@ const paletteOpen = ref(false)
         <span class="text-muted-foreground text-xs font-medium">内容</span>
 
         <div class="flex flex-wrap items-center gap-6">
-          <XProgress :percent="60" class="w-56" />
-          <XProgress :percent="80" status="success" class="w-56" />
-          <XProgress :percent="72" type="circle" />
+          <XProgress v-model="progressValue" status class="w-56" />
+          <XProgress :model-value="80" inverted class="w-56" />
+          <XProgress :model-value="3" :max="8" status class="w-56" />
         </div>
 
         <div class="flex flex-wrap items-start gap-6">
@@ -415,7 +413,7 @@ const paletteOpen = ref(false)
             show-icon
             class="w-80"
           />
-          <XListbox :items="listItems" :selected="listSelected" multiple filterable class="w-56" @select="() => {}" />
+          <XListbox v-model="listSelected" :items="listItems" multiple filter class="w-56" />
         </div>
 
         <XAccordion :items="accordionItems" class="w-full">
@@ -453,7 +451,7 @@ const paletteOpen = ref(false)
           </template>
         </XSplitter>
 
-        <XTable :columns="tableColumns" :data-source="tableRows" row-selection :pagination="false" />
+        <XTable :columns="tableColumns" :data="tableRows" />
       </div>
     </div>
 

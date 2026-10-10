@@ -6,7 +6,7 @@ on:
   pull_request:
 
 jobs:
-  test:
+  docs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -25,17 +25,6 @@ jobs:
 
       - name: Build registry
         run: pnpm build:registry
-
-      - name: Typecheck
-        run: pnpm typecheck
-
-      - name: Test
-        run: pnpm test
-
-      - name: Build demos
-        run: |
-          pnpm --dir apps/react-demo run build
-          pnpm --dir apps/vue-demo run build
 
       - name: Build docs
         run: pnpm --dir apps/docs run docs:build

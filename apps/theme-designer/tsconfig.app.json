@@ -6,7 +6,10 @@
     "allowArbitraryExtensions": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@ui-kit/vue/src/*": ["../../packages/vue/src/*"],
+      "@ui-kit/react/src/*": ["../../packages/react/src/*"],
+      "@ui-kit/shared/*": ["../../packages/shared/src/*"]
     },
     "jsx": "react-jsx",
     "jsxImportSource": "react",

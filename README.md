@@ -164,8 +164,8 @@ Vue 端基于 reactive 状态，hook 文件随组件 item 一起落地到 `compo
 ```bash
 pnpm install
 pnpm build:registry   # 修改组件源码后重新生成 registry JSON
-pnpm typecheck        # 全部包类型检查
-pnpm test             # 全部包单元测试
+pnpm typecheck        # 包内类型检查(不检查应用)
+pnpm test             # 全部包与应用单元测试
 ```
 
 ## 文档站

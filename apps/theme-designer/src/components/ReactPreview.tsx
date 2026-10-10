@@ -56,7 +56,7 @@ import {
   XTextarea,
   XToaster,
   XTooltip,
-} from '@ui-kit/react'
+} from '@ui-kit/react/src/components/kit'
 
 export interface ReactPreviewProps {
   vars: Record<string, string>
@@ -80,9 +80,9 @@ const menuOptions = [
   { label: '西瓜', value: 'watermelon' },
 ]
 const tabItems = [
-  { key: 'overview', label: '概览', content: <p className="text-muted-foreground text-sm">概览面板内容</p> },
-  { key: 'detail', label: '明细', content: <p className="text-muted-foreground text-sm">明细面板内容</p> },
-  { key: 'setting', label: '设置', content: <p className="text-muted-foreground text-sm">设置面板内容</p> },
+  { value: 'overview', label: '概览', content: <p className="text-muted-foreground text-sm">概览面板内容</p> },
+  { value: 'detail', label: '明细', content: <p className="text-muted-foreground text-sm">明细面板内容</p> },
+  { value: 'setting', label: '设置', content: <p className="text-muted-foreground text-sm">设置面板内容</p> },
 ]
 const navItems = [
   { key: 'dashboard', label: '工作台' },
@@ -115,19 +115,19 @@ const menuItems = [
   { key: 'delete', label: '删除', description: '不可恢复', shortcut: '⌘⌫' },
 ]
 const listItems = [
-  { key: 'a', label: '待处理' },
-  { key: 'b', label: '处理中' },
-  { key: 'c', label: '已完成' },
+  { value: 'a', label: '待处理' },
+  { value: 'b', label: '处理中' },
+  { value: 'c', label: '已完成' },
 ]
 const tableColumns = [
-  { key: 'name', title: '名称', sortable: true },
-  { key: 'status', title: '状态' },
-  { key: 'amount', title: '金额', align: 'right' as const },
+  { accessorKey: 'name', header: '名称' },
+  { accessorKey: 'status', header: '状态' },
+  { accessorKey: 'amount', header: '金额' },
 ]
 const tableRows = [
-  { key: '1', name: '订单 A', status: '已完成', amount: '¥1,280' },
-  { key: '2', name: '订单 B', status: '处理中', amount: '¥560' },
-  { key: '3', name: '订单 C', status: '待支付', amount: '¥2,340' },
+  { name: '订单 A', status: '已完成', amount: '¥1,280' },
+  { name: '订单 B', status: '处理中', amount: '¥560' },
+  { name: '订单 C', status: '待支付', amount: '¥2,340' },
 ]
 const accordionItems = [
   { title: '什么是设计 token', content: <p className="text-muted-foreground text-sm">设计 token 的答案内容。</p> },
@@ -157,13 +157,7 @@ export function ReactPreview({ vars, dark }: ReactPreviewProps) {
   const [color, setColor] = React.useState('#1677ff')
   const [pin, setPin] = React.useState('')
   const [city, setCity] = React.useState('hangzhou')
-  const [uploadFiles] = React.useState([
-    { name: '设计稿.pdf', size: 204800, status: 'uploading' as const, progress: 60 },
-    { name: '需求说明.docx', size: 51200, status: 'done' as const },
-  ])
   const [page, setPage] = React.useState(3)
-  const [step, setStep] = React.useState(1)
-  const [listSelected, setListSelected] = React.useState<string[]>(['a'])
   const [modalOpen, setModalOpen] = React.useState(false)
   const [drawerOpen, setDrawerOpen] = React.useState(false)
   const [slideoverOpen, setSlideoverOpen] = React.useState(false)
@@ -263,8 +257,8 @@ export function ReactPreview({ vars, dark }: ReactPreviewProps) {
           </div>
 
           <div className="flex flex-wrap items-center gap-4">
-            <XSelectMenu options={cityOptions} value={city} onChange={(next) => setCity(String(next))} clearable className="w-40" />
-            <XInputMenu items={menuOptions} searchable createItem placeholder="搜索水果" className="w-44" />
+            <XSelectMenu items={cityOptions} value={city} onChange={(next) => setCity(String(next))} clear className="w-40" />
+            <XInputMenu items={menuOptions} searchInput createItem placeholder="搜索水果" className="w-44" />
             <XInputNumber value={amount} min={0} max={10} onChange={setAmount} />
             <XInputDate value={date} onChange={(next) => setDate(String(next))} className="w-40" />
             <XInputTime value={time} onChange={(next) => setTime(String(next))} className="w-32" />
@@ -280,7 +274,7 @@ export function ReactPreview({ vars, dark }: ReactPreviewProps) {
 
           <XRadioGroup options={radioOptions} value={plan} onValueChange={setPlan} />
 
-          <XFileUpload files={uploadFiles} accept=".pdf,.docx" multiple className="w-full" />
+          <XFileUpload accept=".pdf,.docx" multiple label="选择一个文件或拖拽到这里" className="w-full" />
         </XForm>
       </div>
 
@@ -291,16 +285,16 @@ export function ReactPreview({ vars, dark }: ReactPreviewProps) {
         <div className="flex flex-wrap items-center gap-4">
           <XLink to="/docs" active>文档链接</XLink>
           <XLink to="/about" color="neutral">普通链接</XLink>
-          <XPagination current={page} total={120} pageSize={10} showControls onChange={(next) => setPage(next)} />
+          <XPagination page={page} total={120} itemsPerPage={10} onPageChange={setPage} />
         </div>
 
         <XBreadcrumb items={breadcrumbItems} separatorIcon="›" />
 
-        <XTabs items={tabItems} type="line" />
+        <XTabs items={tabItems} variant="link" />
 
         <XNavigationMenu items={navItems} mode="horizontal" selectedKeys={['orders']} />
 
-        <XStepper items={stepItems} current={step} onChange={setStep} orientation="horizontal" />
+        <XStepper items={stepItems} defaultValue={1} orientation="horizontal" />
 
         <div className="flex flex-wrap items-center gap-3">
           <XButton variant="outline" size="sm" onClick={() => setPaletteOpen(true)}>打开命令面板</XButton>
@@ -333,11 +327,11 @@ export function ReactPreview({ vars, dark }: ReactPreviewProps) {
             侧滑内容。
           </XSlideover>
 
-          <XTooltip title="文字提示">
+          <XTooltip text="文字提示">
             <XButton variant="outline" size="sm">悬浮查看提示</XButton>
           </XTooltip>
 
-          <XPopover title="气泡标题" content="气泡内容随主题色变化。" arrow>
+          <XPopover mode="click" content="气泡内容随主题色变化。" arrow>
             <XButton variant="outline" size="sm">带箭头的浮层</XButton>
           </XPopover>
 
@@ -365,9 +359,9 @@ export function ReactPreview({ vars, dark }: ReactPreviewProps) {
         <span className="text-muted-foreground text-xs font-medium">内容</span>
 
         <div className="flex flex-wrap items-center gap-6">
-          <XProgress percent={60} className="w-56" />
-          <XProgress percent={80} status="success" className="w-56" />
-          <XProgress percent={72} type="circle" />
+          <XProgress value={60} status className="w-56" />
+          <XProgress value={80} inverted className="w-56" />
+          <XProgress value={3} max={8} status className="w-56" />
         </div>
 
         <div className="flex flex-wrap items-start gap-6">
@@ -380,12 +374,10 @@ export function ReactPreview({ vars, dark }: ReactPreviewProps) {
           />
           <XListbox
             items={listItems}
-            selected={listSelected}
+            defaultValue={['a']}
             multiple
-            filterable
-            onSelect={(key) =>
-              setListSelected((prev) => (prev.includes(key) ? prev.filter((item) => item !== key) : [...prev, key]))
-            }
+            filter
+            valueKey="value"
             className="w-56"
           />
         </div>
@@ -410,7 +402,7 @@ export function ReactPreview({ vars, dark }: ReactPreviewProps) {
 
         <XSplitter collapsible className="h-32" first={<div className="text-muted-foreground flex h-full items-center justify-center text-sm">左面板</div>} second={<div className="text-muted-foreground flex h-full items-center justify-center text-sm">右面板</div>} />
 
-        <XTable columns={tableColumns} dataSource={tableRows} rowSelection pagination={false} />
+        <XTable columns={tableColumns} data={tableRows} />
       </div>
     </div>
   )
