@@ -13,7 +13,8 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Toast = ComponentConfig<typeof theme, AppConfig, 'toast'>
 
-export interface ToastProps extends /* @vue-ignore */ Pick<ToastRootProps, /* @vue-ignore */ 'defaultOpen' | 'open' | 'type'> {
+export interface ToastProps {
+
   /**
    * The element or component this component should render as.
    * @defaultValue 'li'
@@ -71,7 +72,8 @@ export interface ToastProps extends /* @vue-ignore */ Pick<ToastRootProps, /* @v
   ui?: Toast['slots']
 }
 
-export interface ToastEmits extends /* @vue-ignore */ ToastRootEmits {}
+export interface ToastEmits {
+}
 
 export interface ToastSlots {
   leading?(props: { ui: Toast['ui'] }): VNode[]

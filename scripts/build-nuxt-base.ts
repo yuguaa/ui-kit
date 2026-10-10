@@ -82,6 +82,222 @@ function convertInfra(source: string): string {
   return out;
 }
 
+/** 成员定义：键与可选性（类型统一降级为 any，运行时只关心名字与可选） */
+interface MemberDef { key: string; optional: boolean }
+
+/** Omit<HTMLAttributes, ...> 的近似展开：常用 HTML 属性清单 */
+const HTML_ATTRIBUTE_KEYS = [
+  "class", "style", "id", "title", "role", "name", "type", "value", "placeholder",
+  "disabled", "required", "readonly", "autocomplete", "autofocus", "tabindex", "form",
+  "minlength", "maxlength", "pattern", "step", "min", "max", "multiple", "checked",
+  "size", "rows", "cols", "wrap", "accept", "capture", "download", "href", "target",
+  "rel", "loading", "accesskey", "contenteditable", "draggable", "hidden", "lang", "slot",
+  "autocapitalize", "autocorrect", "spellcheck", "enterkeyhint", "inputmode",
+  "aria-label", "aria-describedby", "aria-hidden", "aria-expanded", "aria-current",
+  "aria-checked", "aria-controls", "aria-disabled", "aria-invalid", "aria-live",
+  "aria-selected", "data-testid",
+];
+
+/** 从 `{ ... }` 块文本中提取成员（键与可选性，跳过嵌套类型文本） */
+function parseMembersFromBody(body: string): MemberDef[] {
+  const members: MemberDef[] = [];
+  const segments = splitTopLevel(body, ";");
+  for (const segment of segments) {
+    const text = segment.trim();
+    if (!text || text.startsWith("//") || text.startsWith("/*")) continue;
+    /* 取第一个顶层冒号前的内容作为键（跳过引号内冒号与嵌套括号） */
+    let depth = 0;
+    let colon = -1;
+    let inQuote = false;
+    let quoteChar = "";
+    for (let i = 0; i < text.length; i++) {
+      const ch = text[i];
+      if (inQuote) {
+        if (ch === quoteChar && text[i - 1] !== "\\") inQuote = false;
+        continue;
+      }
+      if (ch === "'" || ch === '"') {
+        inQuote = true;
+        quoteChar = ch;
+        continue;
+      }
+      if (ch === "(" || ch === "<" || ch === "[") depth++;
+      else if (ch === ")" || ch === ">" || ch === "]") depth = Math.max(0, depth - 1);
+      else if (ch === ":" && depth === 0) {
+        colon = i;
+        break;
+      }
+    }
+    if (colon < 0) continue;
+    const keyPart = text.slice(0, colon).trim();
+    const optional = keyPart.endsWith("?");
+    const key = keyPart.replace(/\?$/, "").replace(/^['"]|['"]$/g, "").trim();
+    if (!key) continue;
+    members.push({ key, optional });
+  }
+  return members;
+}
+
+/** 顶层分隔符拆分（逗号或分号），跳过引号与嵌套括号 */
+function splitTopLevel(text: string, separator: string): string[] {
+  const result: string[] = [];
+  let depth = 0;
+  let start = 0;
+  let inQuote = false;
+  let quoteChar = "";
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (inQuote) {
+      if (ch === quoteChar && text[i - 1] !== "\\") inQuote = false;
+      continue;
+    }
+    if (ch === "'" || ch === '"') {
+      inQuote = true;
+      quoteChar = ch;
+      continue;
+    }
+    if (ch === "(" || ch === "<" || ch === "[" || ch === "{") depth++;
+    else if (ch === ")" || ch === ">" || ch === "]" || ch === "}") depth = Math.max(0, depth - 1);
+    else if (ch === separator && depth === 0) {
+      result.push(text.slice(start, i));
+      start = i + 1;
+    }
+  }
+  result.push(text.slice(start));
+  return result;
+}
+
+/** 在文本中查找 `interface|type Name` 的定义块（到配对的 } 结束） */
+function findDefinitionBlock(source: string, name: string): string | undefined {
+  const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const pattern = new RegExp(`(?:interface|type)\\s+${escaped}\\b(?:<[^>]*>)?\\s*(?:extends[^{]*)?(=)?\\s*\\{`);
+  const match = pattern.exec(source);
+  if (!match) return undefined;
+  let depth = 1;
+  let i = match.index + match[0].length;
+  let inQuote = false;
+  let quoteChar = "";
+  for (; i < source.length; i++) {
+    const ch = source[i];
+    if (inQuote) {
+      if (ch === quoteChar && source[i - 1] !== "\\") inQuote = false;
+      continue;
+    }
+    if (ch === "'" || ch === '"') {
+      inQuote = true;
+      quoteChar = ch;
+      continue;
+    }
+    if (ch === "{") depth++;
+    else if (ch === "}") {
+      depth--;
+      if (depth === 0) return source.slice(match.index, i + 1);
+    }
+  }
+  return undefined;
+}
+
+/** 类型成员解析上下文：组件文件 → 本地库 → reka-ui d.ts → HTML 属性清单 */
+function createMemberResolver(componentSource: string, rekaDts: string, localIndex: Map<string, string>) {
+  const cache = new Map<string, MemberDef[]>();
+
+  const resolveName = (raw: string, depth: number): MemberDef[] => {
+    /* 剥泛型参数：取第一个顶层 < 之前的名字 */
+    let cut = raw.length;
+    let depthCount = 0;
+    for (let i = 0; i < raw.length; i++) {
+      const ch = raw[i];
+      if (ch === "<") depthCount++;
+      else if (ch === ">") depthCount--;
+      else if ((ch === "," || ch === "&") && depthCount === 0) {
+        cut = i;
+        break;
+      }
+    }
+    const name = raw.slice(0, cut).trim();
+    if (!name) return [];
+    if (cache.has(raw)) return cache.get(raw)!;
+    const result: MemberDef[] = [];
+
+    /* Pick<X, keys> / Omit<X, keys> 拆解 */
+    const pickMatch = /^(Pick|Omit)<([\s\S]*),\s*([\s\S]*)>$/.exec(raw);
+    if (pickMatch && depth < 6) {
+      const base = resolveName(pickMatch[2].trim(), depth + 1);
+      const keys = [...pickMatch[3].matchAll(/['"]([\w:-]+)['"]/g)].map((m) => m[1]);
+      const isPick = pickMatch[1] === "Pick";
+      for (const member of base) {
+        const keep = isPick ? keys.includes(member.key) : !keys.includes(member.key);
+        if (keep) result.push(member);
+      }
+    } else if (name.includes("HTMLAttributes") || name.includes("InputHTMLAttributes") || name === "Attributes") {
+      for (const key of HTML_ATTRIBUTE_KEYS) result.push({ key, optional: true });
+    } else {
+      /* 本地库定义（含组件自身与 lib/nuxt） */
+      let block = findDefinitionBlock(componentSource, name) ?? (localIndex.has(name) ? findDefinitionBlock(localIndex.get(name)!, name) : undefined);
+      /* reka-ui d.ts */
+      if (!block) block = findDefinitionBlock(rekaDts, name);
+      if (block) {
+        const open = block.indexOf("{");
+        const close = block.lastIndexOf("}");
+        if (open >= 0 && close > open) {
+          const body = block.slice(open + 1, close);
+          result.push(...parseMembersFromBody(body));
+          /* 本地 interface 的 extends 再展开一层 */
+          const extendsMatch = /extends\s+([\s\S]*?)\{/.exec(block.slice(0, open));
+          if (extendsMatch && depth < 5) {
+            for (const ext of splitTopLevel(extendsMatch[1], ",")) {
+              const extName = ext.trim();
+              if (extName) result.push(...resolveName(extName, depth + 1));
+            }
+          }
+        }
+      }
+    }
+    cache.set(raw, result);
+    return result;
+  };
+
+  return resolveName;
+}
+
+/** 把 Props / Emits interface 的 extends 内联为成员声明（类型 any，保名字与可选性） */
+function inlineAllExtends(content: string, rekaDts: string, localIndex: Map<string, string>): string {
+  const resolveName = createMemberResolver(content, rekaDts, localIndex);
+  const toLines = (memberList: MemberDef[]) => {
+    const seen = new Set<string>();
+    return memberList
+      .filter((member) => {
+        if (seen.has(member.key)) return false;
+        seen.add(member.key);
+        return true;
+      })
+      .map((member) => {
+        /* 键含连字符或冒号（事件名）时加引号 */
+        const key = /^[A-Za-z_$][\w$]*$/.test(member.key) ? member.key : `'${member.key}'`;
+        return `  ${key}${member.optional ? "?" : ""}: any;`;
+      })
+      .join("\n");
+  };
+  let out = content.replace(/(export\s+interface\s+\w+(?:<[^>]*>)?\s*)extends\s+([\s\S]*?)\s*\{/g, (_match, prefix: string, extendsText: string) => {
+    const members: MemberDef[] = [];
+    for (const ext of splitTopLevel(extendsText, ",")) {
+      const extName = ext.trim().replace(/\/\*[\s\S]*?\*\//g, "").trim();
+      if (!extName) continue;
+      members.push(...resolveName(extName, 0));
+    }
+    return `${prefix}{\n${toLines(members)}`;
+  });
+  /* type 别名形态的 Emits：`= Pick<A, keys> & {` 或 `= A & {` 展开为内联成员（排除联合类型中的 &） */
+  out = out.replace(/(export\s+type\s+\w+(?:<[^>]*>)?\s*=\s*)(?:Pick<[\s\S]*?>|[A-Za-z_$][\w$]*)(?:<[^>]*>)?\s*&\s*\{/g, (_match, prefix: string) => {
+    const eq = _match.indexOf("=");
+    const amp = _match.lastIndexOf(" & {");
+    const exprName = _match.slice(eq + 1, amp).trim();
+    const members = resolveName(exprName, 0);
+    return `${prefix}{\n${toLines(members)}`;
+  });
+  return out;
+}
+
 /** 生成器内 compiler-sfc 探测用的 fs：处理相对路径与 @/ 别名，包名交给 typescript 解析 */
 const probeFs = {
   fileExists(file: string) {
@@ -97,7 +313,140 @@ const probeFs = {
   },
 };
 
-/** 探测组件编译；失败时逐条给 extends 子句加 @vue-ignore 重试 */
+/** 收集 Props/Emits 成员名单（沿用 extends 解析器） */
+function collectInterfaceMembers(content: string, typeName: string, rekaDts: string, localIndex: Map<string, string>): MemberDef[] {
+  const resolveName = createMemberResolver(content, rekaDts, localIndex);
+  const block = findDefinitionBlock(content, typeName);
+  if (!block) return [];
+  const open = block.indexOf("{");
+  const close = block.lastIndexOf("}");
+  const members: MemberDef[] = [];
+  if (open >= 0 && close > open) {
+    members.push(...parseMembersFromBody(block.slice(open + 1, close)));
+  }
+  /* interface extends 与 type 别名的外部表达式 */
+  const head = block.slice(0, open);
+  const extendsMatch = /extends\s+([\s\S]*?)\s*\{/.exec(head);
+  if (extendsMatch) {
+    for (const ext of splitTopLevel(extendsMatch[1], ",")) {
+      const extName = ext.trim().replace(/\/\*[\s\S]*?\*\//g, "").trim();
+      if (extName) members.push(...resolveName(extName, 0));
+    }
+  } else {
+    /* `= Pick<A, keys> & {` 形态 */
+    const eq = head.indexOf("=");
+    if (eq >= 0) {
+      for (const expr of splitTopLevel(head.slice(eq + 1), "&")) {
+        const exprName = expr.trim();
+        if (exprName && !exprName.startsWith("{")) members.push(...resolveName(exprName, 0));
+      }
+    }
+  }
+  const seen = new Set<string>();
+  return members.filter((member) => {
+    if (seen.has(member.key)) return false;
+    seen.add(member.key);
+    return true;
+  });
+}
+
+/** 失败组件的运行时声明降级：defineProps/defineEmits 用对象/数组声明，类型注解保留 */
+function runtimeDeclFallback(content: string, rekaDts: string, localIndex: Map<string, string>): string {
+  let out = content;
+  /* withDefaults(defineProps<X>(), {defaults}) 形态：正则匹配，函数默认值的 Table 用特判配对扫描 */
+  if (content.includes("watchOptions")) {
+    /* Table 特判：defaults 含箭头函数（含嵌套花括号） */
+    const start = out.indexOf("withDefaults(defineProps<");
+    if (start >= 0) {
+      const typeNameMatch = /defineProps<(\w+)/.exec(out.slice(start));
+      const typeName = typeNameMatch ? typeNameMatch[1] : "TableProps";
+      const commaAt = out.indexOf("(),", start);
+      const open = out.indexOf("{", commaAt);
+      let depth = 1;
+      let i = open + 1;
+      let inQuote = false;
+      let quoteChar = "";
+      for (; i < out.length && depth > 0; i++) {
+        const ch = out[i];
+        if (inQuote) {
+          if (ch === quoteChar && out[i - 1] !== "\\") inQuote = false;
+          continue;
+        }
+        if (ch === "'" || ch === '"') {
+          inQuote = true;
+          quoteChar = ch;
+          continue;
+        }
+        if (ch === "{") depth++;
+        else if (ch === "}") depth--;
+      }
+      const close = i - 1;
+      const callEnd = out.indexOf(")", close);
+      const defaultsBody = out.slice(open + 1, close);
+      const members = collectInterfaceMembers(content, typeName, rekaDts, localIndex);
+      const defaults = new Map<string, string>();
+      for (const segment of splitTopLevel(defaultsBody, ",")) {
+        const colon = segment.indexOf(":");
+        if (colon < 0) continue;
+        const key = segment.slice(0, colon).trim().replace(/^['"]|['"]$/g, "");
+        const expr = segment.slice(colon + 1).trim();
+        if (key) defaults.set(key, expr);
+      }
+      const lines = members.map((member) => {
+        const keyText = /^[A-Za-z_$][\w$]*$/.test(member.key) ? member.key : `'${member.key}'`;
+        const defaultExpr = defaults.get(member.key);
+        return defaultExpr != null
+          ? `  ${keyText}: { default: ${defaultExpr} },`
+          : `  ${keyText}: null,`;
+      });
+      const varNameMatch = /const\s+(\w+)\s*=\s*withDefaults\(defineProps</.exec(out.slice(0, start + 1));
+      const varName = varNameMatch ? varNameMatch[1] : "_props";
+      out = out.slice(0, start) + `const ${varName}: ${typeName} = defineProps({\n${lines.join("\n")}\n})` + out.slice(callEnd + 1);
+    }
+  }
+  out = out.replace(/const\s+(\w+)\s*=\s*withDefaults\(defineProps<\w+(?:<[^>]*>)?>\(\),\s*\{([\s\S]*?)\}\s*\)/g, (_m: string, varName: string, defaultsBody: string) => {
+    const typeNameMatch = /defineProps<(\w+)/.exec(_m);
+    const typeName = typeNameMatch ? typeNameMatch[1] : "";
+    const members = collectInterfaceMembers(content, typeName, rekaDts, localIndex);
+    /* defaults 各项并入成员对象（{ default: 原表达式 }） */
+    const defaults = new Map<string, string>();
+    for (const segment of splitTopLevel(defaultsBody, ",")) {
+      const colon = segment.indexOf(":");
+      if (colon < 0) continue;
+      const key = segment.slice(0, colon).trim().replace(/^['"]|['"]$/g, "");
+      const expr = segment.slice(colon + 1).trim();
+      if (key) defaults.set(key, expr);
+    }
+    const lines = members.map((member) => {
+      const keyText = /^[A-Za-z_$][\w$]*$/.test(member.key) ? member.key : `'${member.key}'`;
+      const defaultExpr = defaults.get(member.key);
+      return defaultExpr != null
+        ? `  ${keyText}: { default: ${defaultExpr} },`
+        : `  ${keyText}: null,`;
+    });
+    return `const ${varName}: ${typeName} = defineProps({\n${lines.join("\n")}\n})`;
+  });
+  out = out.replace(/const\s+(\w+)\s*=\s*defineProps<(\w+)(?:<[^>]*>)?>\(\)/g, (_m: string, varName: string, typeName: string) => {
+    const members = collectInterfaceMembers(content, typeName, rekaDts, localIndex);
+    const lines = members.map((member) => {
+      const key = /^[A-Za-z_$][\w$]*$/.test(member.key) ? member.key : `'${member.key}'`;
+      return `  ${key}: null,`;
+    });
+    return `const ${varName}: ${typeName} = defineProps({\n${lines.join("\n")}\n})`;
+  });
+  /* defineEmits<X>() → 事件名数组 */
+  out = out.replace(/const\s+(\w+)\s*=\s*defineEmits<(\w+)(?:<[^>]*>)?>\(\)/g, (_m: string, varName: string, typeName: string) => {
+    const members = collectInterfaceMembers(content, typeName, rekaDts, localIndex);
+    const names = members.map((member) => {
+      const key = /^[A-Za-z_$][\w$]*$/.test(member.key) ? member.key : `'${member.key}'`;
+      return `  ${key},`;
+    });
+    return `const ${varName}: ${typeName} = defineEmits([\n${names.join("\n")}\n])`;
+  });
+  return out;
+}
+
+/** 探测组件编译；失败时依次：extends 内联展开 → 运行时声明降级 */
 function compileComponent(content: string, filename: string): { ok: boolean; content: string; message?: string } {
   const tryCompile = (source: string) => {
     const { descriptor } = parse(source, { filename });
@@ -108,21 +457,59 @@ function compileComponent(content: string, filename: string): { ok: boolean; con
     return { ok: true, content };
   } catch (error) {
     const message = String((error as Error).message ?? error);
-    if (!message.includes("extends")) {
-      return { ok: false, content, message: message.slice(0, 120) };
+    /* 跨文件 extends 无法解析时内联展开，保留自身 props 声明 */
+    const rekaDts = resolveRekaDts();
+    const localIndex = localTypeIndex();
+    const inlined = inlineAllExtends(content, rekaDts, localIndex);
+    if (inlined !== content) {
+      try {
+        tryCompile(inlined);
+        return { ok: true, content: inlined };
+      } catch { /* 继续降级 */ }
     }
-    /* 给所有 interface extends 子句加 @vue-ignore，保留其余类型推导 */
-    let patched = content.replace(/extends\s+([^{]+)\{/g, (_m: string, body: string) => {
-      const parts = body.split(",").map((part: string) => `/* @vue-ignore */ ${part.trim()}`);
-      return `extends ${parts.join(", ")} {`;
-    });
-    try {
-      tryCompile(patched);
-      return { ok: true, content: patched };
-    } catch (error2) {
-      return { ok: false, content, message: String((error2 as Error).message ?? error2).slice(0, 120) };
+    /* 运行时声明降级：defineProps/defineEmits 用对象/数组声明，类型注解保留 */
+    const runtime = runtimeDeclFallback(content, rekaDts, localIndex);
+    if (runtime !== content) {
+      try {
+        tryCompile(runtime);
+        return { ok: true, content: runtime };
+      } catch (error2) {
+        return { ok: false, content, message: `${message.slice(0, 60)} | runtime: ${String((error2 as Error).message ?? error2).slice(0, 60)}` };
+      }
     }
+    return { ok: false, content, message: message.slice(0, 140) };
   }
+}
+
+/** reka-ui 类型声明文件路径（按包 types 字段解析） */
+function resolveRekaDts(): string {
+  const pkgPath = join(ROOT, "packages/vue/node_modules/reka-ui/package.json");
+  if (existsSync(pkgPath)) {
+    const pkg = JSON.parse(readFileSync(pkgPath, "utf8")) as { types?: string };
+    const types = join(ROOT, "packages/vue/node_modules/reka-ui", pkg.types ?? "dist/index.d.ts");
+    if (existsSync(types)) return readFileSync(types, "utf8");
+  }
+  return "";
+}
+
+/** 本地类型索引：lib/nuxt 下全部 .ts 文本按文件名收集 */
+function localTypeIndex(): Map<string, string> {
+  const index = new Map<string, string>();
+  const walk = (dir: string) => {
+    for (const entry of readdirSync(dir)) {
+      const full = join(dir, entry);
+      if (existsSync(full) && !full.includes("node_modules")) {
+        const stat = readFileSync(full, "utf8");
+        if (entry.endsWith(".ts")) index.set(full, stat);
+        else if (stat && entry.indexOf(".") === -1) {
+          try { walk(full); } catch { /* 目录读取失败跳过 */ }
+        }
+      }
+    }
+  };
+  try { walk(join(OUT_BASE, "composables")); } catch { /* 忽略 */ }
+  try { walk(join(OUT_BASE, "types")); } catch { /* 忽略 */ }
+  return index;
 }
 
 /** 仅组件文件：相对路径指向 lib/nuxt 基础设施（compiler-sfc 解析类型需要相对路径） */

@@ -11,7 +11,8 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Modal = ComponentConfig<typeof theme, AppConfig, 'modal'>
 
-export interface ModalProps extends /* @vue-ignore */ DialogRootProps {
+export interface ModalProps {
+
   title?: string
   description?: string
   /** The content of the modal. */
@@ -62,7 +63,8 @@ export interface ModalProps extends /* @vue-ignore */ DialogRootProps {
   ui?: Modal['slots']
 }
 
-export interface ModalEmits extends /* @vue-ignore */ DialogRootEmits {
+export interface ModalEmits {
+
   'leave': []
   'after:leave': []
   'enter': []

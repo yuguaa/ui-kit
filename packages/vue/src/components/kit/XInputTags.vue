@@ -13,7 +13,52 @@ type InputTags = ComponentConfig<typeof theme, AppConfig, 'inputTags'>
 
 export type InputTagItem = AcceptableInputValue
 
-export interface InputTagsProps<T extends InputTagItem = InputTagItem> extends Pick<TagsInputRootProps<T>, 'modelValue' | 'defaultValue' | 'addOnPaste' | 'addOnTab' | 'addOnBlur' | 'duplicate' | 'disabled' | 'delimiter' | 'max' | 'id' | 'convertValue' | 'displayValue' | 'name' | 'required'>, UseComponentIconsProps, /** @vue-ignore */ Omit<InputHTMLAttributes, 'disabled' | 'max' | 'required' | 'name' | 'placeholder' | 'type' | 'autofocus' | 'maxlength' | 'minlength' | 'pattern' | 'size' | 'min' | 'step'> {
+export interface InputTagsProps<T extends InputTagItem = InputTagItem> {
+  class?: any;
+  style?: any;
+  id?: any;
+  title?: any;
+  role?: any;
+  value?: any;
+  readonly?: any;
+  autocomplete?: any;
+  tabindex?: any;
+  form?: any;
+  multiple?: any;
+  checked?: any;
+  rows?: any;
+  cols?: any;
+  wrap?: any;
+  accept?: any;
+  capture?: any;
+  download?: any;
+  href?: any;
+  target?: any;
+  rel?: any;
+  loading?: any;
+  accesskey?: any;
+  contenteditable?: any;
+  draggable?: any;
+  hidden?: any;
+  lang?: any;
+  slot?: any;
+  autocapitalize?: any;
+  autocorrect?: any;
+  spellcheck?: any;
+  enterkeyhint?: any;
+  inputmode?: any;
+  'aria-label'?: any;
+  'aria-describedby'?: any;
+  'aria-hidden'?: any;
+  'aria-expanded'?: any;
+  'aria-current'?: any;
+  'aria-checked'?: any;
+  'aria-controls'?: any;
+  'aria-disabled'?: any;
+  'aria-invalid'?: any;
+  'aria-live'?: any;
+  'aria-selected'?: any;
+  'data-testid'?: any;
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -51,7 +96,8 @@ export interface InputTagsProps<T extends InputTagItem = InputTagItem> extends P
   ui?: InputTags['slots']
 }
 
-export interface InputTagsEmits<T extends InputTagItem> extends TagsInputRootEmits<T> {
+export interface InputTagsEmits<T extends InputTagItem> {
+
   change: [event: Event]
   blur: [event: FocusEvent]
   focus: [event: FocusEvent]

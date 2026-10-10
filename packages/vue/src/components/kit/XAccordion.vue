@@ -35,7 +35,8 @@ export interface AccordionItem {
   [key: string]: any
 }
 
-export interface AccordionProps<T extends AccordionItem = AccordionItem> extends Pick<AccordionRootProps, 'collapsible' | 'defaultValue' | 'modelValue' | 'type' | 'disabled' | 'unmountOnHide'> {
+export interface AccordionProps<T extends AccordionItem = AccordionItem> {
+
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -62,7 +63,8 @@ export interface AccordionProps<T extends AccordionItem = AccordionItem> extends
   ui?: Accordion['slots']
 }
 
-export interface AccordionEmits extends AccordionRootEmits {}
+export interface AccordionEmits {
+}
 
 type SlotProps<T extends AccordionItem> = (props: { item: T, index: number, open: boolean, ui: Accordion['ui'] }) => VNode[]
 

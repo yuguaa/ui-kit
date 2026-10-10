@@ -8,7 +8,8 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Badge = ComponentConfig<typeof theme, AppConfig, 'badge'>
 
-export interface BadgeProps extends /* @vue-ignore */ Omit<UseComponentIconsProps, /* @vue-ignore */ 'loading' | 'loadingIcon'> {
+export interface BadgeProps {
+
   /**
    * The element or component this component should render as.
    * @defaultValue 'span'

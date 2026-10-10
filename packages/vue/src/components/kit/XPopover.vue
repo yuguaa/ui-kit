@@ -9,7 +9,8 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 type Popover = ComponentConfig<typeof theme, AppConfig, 'popover'>
 type PopoverMode = 'click' | 'hover'
 
-export interface PopoverProps<M extends PopoverMode = PopoverMode> extends PopoverRootProps, Pick<HoverCardRootProps, 'openDelay' | 'closeDelay' | 'enableTouch'> {
+export interface PopoverProps<M extends PopoverMode = PopoverMode> {
+
   /**
    * The display mode of the popover.
    * @defaultValue 'click'
@@ -48,7 +49,8 @@ export interface PopoverProps<M extends PopoverMode = PopoverMode> extends Popov
   ui?: Popover['slots']
 }
 
-export interface PopoverEmits extends PopoverRootEmits {
+export interface PopoverEmits {
+
   'close:prevent': []
 }
 

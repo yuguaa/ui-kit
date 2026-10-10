@@ -7,7 +7,8 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Collapsible = ComponentConfig<typeof theme, AppConfig, 'collapsible'>
 
-export interface CollapsibleProps extends /* @vue-ignore */ Pick<CollapsibleRootProps, /* @vue-ignore */ 'defaultOpen' | 'open' | 'disabled' | 'unmountOnHide'> {
+export interface CollapsibleProps {
+
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -17,7 +18,8 @@ export interface CollapsibleProps extends /* @vue-ignore */ Pick<CollapsibleRoot
   ui?: Collapsible['slots']
 }
 
-export interface CollapsibleEmits extends /* @vue-ignore */ CollapsibleRootEmits {}
+export interface CollapsibleEmits {
+}
 
 export interface CollapsibleSlots {
   default?(props: { open: boolean }): VNode[]

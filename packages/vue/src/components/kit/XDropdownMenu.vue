@@ -155,16 +155,12 @@ import { omit } from '../../lib/nuxt/utils'
 import { tv } from '../../lib/nuxt/utils/tv'
 import XDropdownMenuContent from './XDropdownMenuContent.vue'
 
-const _props = withDefaults(defineProps<DropdownMenuProps<T>>(), {
-  portal: true,
-  modal: true,
-  externalIcon: true,
-  labelKey: 'label',
-  descriptionKey: 'description',
-  filter: false,
-  ignoreFilter: false
+const _props: DropdownMenuProps = defineProps({
+
 })
-const emits = defineEmits<DropdownMenuEmits>()
+const emits: DropdownMenuEmits = defineEmits([
+
+])
 const slots = defineSlots<DropdownMenuSlots<T>>()
 
 const searchTerm = defineModel<string>('searchTerm', { default: '' })

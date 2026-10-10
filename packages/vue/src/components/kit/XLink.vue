@@ -8,7 +8,7 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Link = ComponentConfig<typeof theme, AppConfig, 'link'>
 
-interface NuxtLinkProps extends /* @vue-ignore */ Omit<RouterLinkProps, /* @vue-ignore */ 'to'> {
+interface NuxtLinkProps extends Omit<RouterLinkProps, 'to'> {
   /**
    * Route Location the link should navigate to when clicked on.
    */
@@ -59,7 +59,64 @@ interface NuxtLinkProps extends /* @vue-ignore */ Omit<RouterLinkProps, /* @vue-
   trailingSlash?: 'append' | 'remove'
 }
 
-export interface LinkProps extends /* @vue-ignore */ NuxtLinkProps, /* @vue-ignore */ /** @vue-ignore */ Omit<ButtonHTMLAttributes, /* @vue-ignore */ 'type' | 'disabled'>, /* @vue-ignore */ /** @vue-ignore */ Omit<AnchorHTMLAttributes, /* @vue-ignore */ 'href' | 'target' | 'rel' | 'type'> {
+export interface LinkProps {
+  class?: any;
+  style?: any;
+  id?: any;
+  title?: any;
+  role?: any;
+  name?: any;
+  value?: any;
+  placeholder?: any;
+  required?: any;
+  readonly?: any;
+  autocomplete?: any;
+  autofocus?: any;
+  tabindex?: any;
+  form?: any;
+  minlength?: any;
+  maxlength?: any;
+  pattern?: any;
+  step?: any;
+  min?: any;
+  max?: any;
+  multiple?: any;
+  checked?: any;
+  size?: any;
+  rows?: any;
+  cols?: any;
+  wrap?: any;
+  accept?: any;
+  capture?: any;
+  download?: any;
+  href?: any;
+  target?: any;
+  rel?: any;
+  loading?: any;
+  accesskey?: any;
+  contenteditable?: any;
+  draggable?: any;
+  hidden?: any;
+  lang?: any;
+  slot?: any;
+  autocapitalize?: any;
+  autocorrect?: any;
+  spellcheck?: any;
+  enterkeyhint?: any;
+  inputmode?: any;
+  'aria-label'?: any;
+  'aria-describedby'?: any;
+  'aria-hidden'?: any;
+  'aria-expanded'?: any;
+  'aria-current'?: any;
+  'aria-checked'?: any;
+  'aria-controls'?: any;
+  'aria-disabled'?: any;
+  'aria-invalid'?: any;
+  'aria-live'?: any;
+  'aria-selected'?: any;
+  'data-testid'?: any;
+  disabled?: any;
   /**
    * The element or component this component should render as when not a link.
    * @defaultValue 'button'

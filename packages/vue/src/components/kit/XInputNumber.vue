@@ -100,12 +100,12 @@ import XButton from './XButton.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = withDefaults(defineProps<InputNumberProps<T, Mod>>(), {
-  orientation: 'horizontal',
-  increment: true,
-  decrement: true
+const _props: InputNumberProps = defineProps({
+
 })
-const emits = defineEmits<InputNumberEmits<T, Mod>>()
+const emits: InputNumberEmits = defineEmits([
+
+])
 
 defineSlots<InputNumberSlots>()
 

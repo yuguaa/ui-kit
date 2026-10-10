@@ -38,7 +38,8 @@ export interface TabsItem {
   [key: string]: any
 }
 
-export interface TabsProps<T extends TabsItem = TabsItem> extends Pick<TabsRootProps<string | number>, 'defaultValue' | 'modelValue' | 'activationMode' | 'unmountOnHide'> {
+export interface TabsProps<T extends TabsItem = TabsItem> {
+
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -81,7 +82,8 @@ export interface TabsProps<T extends TabsItem = TabsItem> extends Pick<TabsRootP
   ui?: Tabs['slots']
 }
 
-export interface TabsEmits extends TabsRootEmits<string | number> {}
+export interface TabsEmits {
+}
 
 type SlotProps<T extends TabsItem> = (props: { item: T, index: number, ui: Tabs['ui'] }) => VNode[]
 

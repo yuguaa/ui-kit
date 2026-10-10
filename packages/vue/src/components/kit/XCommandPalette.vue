@@ -254,18 +254,12 @@ import XKbd from './XKbd.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props = withDefaults(defineProps<CommandPaletteProps<G, T>>(), {
-  labelKey: 'label',
-  descriptionKey: 'description',
-  input: true,
-  autofocus: true,
-  back: true,
-  preserveGroupOrder: false,
-  virtualize: false,
-  highlightOnHover: true,
-  searchDelay: 0
+const _props: CommandPaletteProps = defineProps({
+
 })
-const emits = defineEmits<CommandPaletteEmits<T>>()
+const emits: CommandPaletteEmits = defineEmits([
+
+])
 const slots = defineSlots<CommandPaletteSlots<T, G>>()
 
 const props = useComponentProps<CommandPaletteProps<G, T>>('commandPalette', _props)

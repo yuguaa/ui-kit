@@ -9,7 +9,8 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Pagination = ComponentConfig<typeof theme, AppConfig, 'pagination'>
 
-export interface PaginationProps extends /* @vue-ignore */ Partial<Pick<PaginationRootProps, /* @vue-ignore */ 'defaultPage' | 'disabled' | 'itemsPerPage' | 'page' | 'showEdges' | 'siblingCount' | 'total'>> {
+export interface PaginationProps {
+
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -80,7 +81,8 @@ export interface PaginationProps extends /* @vue-ignore */ Partial<Pick<Paginati
   ui?: Pagination['slots']
 }
 
-export interface PaginationEmits extends /* @vue-ignore */ PaginationRootEmits {}
+export interface PaginationEmits {
+}
 
 export interface PaginationSlots {
   first?(props?: {}): VNode[]

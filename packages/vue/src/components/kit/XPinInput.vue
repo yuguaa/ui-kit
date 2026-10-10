@@ -11,7 +11,8 @@ type PinInput = ComponentConfig<typeof theme, AppConfig, 'pinInput'>
 type PinInputType = 'text' | 'number'
 type PinInputValue<Type extends PinInputType> = [Type] extends ['number'] ? number[] : string[]
 
-export interface PinInputProps<T extends PinInputType = 'text'> extends Pick<PinInputRootProps<T>, 'defaultValue' | 'disabled' | 'id' | 'mask' | 'modelValue' | 'name' | 'otp' | 'placeholder' | 'required' | 'type'> {
+export interface PinInputProps<T extends PinInputType = 'text'> {
+
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -50,7 +51,8 @@ export interface PinInputProps<T extends PinInputType = 'text'> extends Pick<Pin
   ui?: PinInput['slots']
 }
 
-export type PinInputEmits<T extends PinInputType = 'text'> = PinInputRootEmits<T> & {
+export type PinInputEmits<T extends PinInputType = 'text'> = {
+
   change: [event: Event]
   blur: [event: Event]
   focus: [event: Event]

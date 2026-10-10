@@ -9,7 +9,8 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Separator = ComponentConfig<typeof theme, AppConfig, 'separator'>
 
-export interface SeparatorProps extends /* @vue-ignore */ Pick<_SeparatorProps, /* @vue-ignore */ 'decorative'> {
+export interface SeparatorProps {
+
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'

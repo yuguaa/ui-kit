@@ -12,7 +12,8 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Drawer = ComponentConfig<typeof theme, AppConfig, 'drawer'>
 
-export interface DrawerProps extends /* @vue-ignore */ Pick<DrawerRootProps, /* @vue-ignore */ 'activeSnapPoint' | 'closeThreshold' | 'shouldScaleBackground' | 'setBackgroundColorOnScale' | 'scrollLockTimeout' | 'fixed' | 'dismissible' | 'modal' | 'open' | 'defaultOpen' | 'nested' | 'direction' | 'noBodyStyles' | 'handleOnly' | 'preventScrollRestoration' | 'snapPoints'> {
+export interface DrawerProps {
+
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -63,7 +64,8 @@ export interface DrawerProps extends /* @vue-ignore */ Pick<DrawerRootProps, /* 
   ui?: Drawer['slots']
 }
 
-export interface DrawerEmits extends /* @vue-ignore */ DrawerRootEmits {
+export interface DrawerEmits {
+
   (e: 'close:prevent'): void
 }
 

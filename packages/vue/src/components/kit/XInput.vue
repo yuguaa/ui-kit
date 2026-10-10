@@ -13,7 +13,58 @@ type Input = ComponentConfig<typeof theme, AppConfig, 'input'>
 
 export type InputValue = AcceptableValue
 
-export interface InputProps<T extends InputValue = InputValue, Mod extends ModelModifiers = ModelModifiers> extends UseComponentIconsProps, /** @vue-ignore */ Omit<InputHTMLAttributes, 'name' | 'type' | 'placeholder' | 'required' | 'autocomplete' | 'autofocus' | 'disabled'> {
+export interface InputProps<T extends InputValue = InputValue, Mod extends ModelModifiers = ModelModifiers> {
+  class?: any;
+  style?: any;
+  id?: any;
+  title?: any;
+  role?: any;
+  value?: any;
+  readonly?: any;
+  tabindex?: any;
+  form?: any;
+  minlength?: any;
+  maxlength?: any;
+  pattern?: any;
+  step?: any;
+  min?: any;
+  max?: any;
+  multiple?: any;
+  checked?: any;
+  size?: any;
+  rows?: any;
+  cols?: any;
+  wrap?: any;
+  accept?: any;
+  capture?: any;
+  download?: any;
+  href?: any;
+  target?: any;
+  rel?: any;
+  loading?: any;
+  accesskey?: any;
+  contenteditable?: any;
+  draggable?: any;
+  hidden?: any;
+  lang?: any;
+  slot?: any;
+  autocapitalize?: any;
+  autocorrect?: any;
+  spellcheck?: any;
+  enterkeyhint?: any;
+  inputmode?: any;
+  'aria-label'?: any;
+  'aria-describedby'?: any;
+  'aria-hidden'?: any;
+  'aria-expanded'?: any;
+  'aria-current'?: any;
+  'aria-checked'?: any;
+  'aria-controls'?: any;
+  'aria-disabled'?: any;
+  'aria-invalid'?: any;
+  'aria-live'?: any;
+  'aria-selected'?: any;
+  'data-testid'?: any;
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'

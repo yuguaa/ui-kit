@@ -11,7 +11,8 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Slideover = ComponentConfig<typeof theme, AppConfig, 'slideover'>
 
-export interface SlideoverProps extends /* @vue-ignore */ DialogRootProps {
+export interface SlideoverProps {
+
   title?: string
   description?: string
   /** The content of the slideover. */
@@ -62,7 +63,8 @@ export interface SlideoverProps extends /* @vue-ignore */ DialogRootProps {
   ui?: Slideover['slots']
 }
 
-export interface SlideoverEmits extends /* @vue-ignore */ DialogRootEmits {
+export interface SlideoverEmits {
+
   'leave': []
   'after:leave': []
   'enter': []

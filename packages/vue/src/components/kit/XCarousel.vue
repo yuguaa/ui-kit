@@ -25,7 +25,8 @@ export type CarouselItem = CarouselValue | {
   [key: string]: any
 }
 
-export interface CarouselProps<T extends CarouselItem = CarouselItem> extends Omit<EmblaOptionsType, 'axis' | 'container' | 'slides' | 'direction'> {
+export interface CarouselProps<T extends CarouselItem = CarouselItem> {
+
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'

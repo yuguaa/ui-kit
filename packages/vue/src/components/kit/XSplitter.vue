@@ -9,7 +9,8 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Splitter = ComponentConfig<typeof theme, AppConfig, 'splitter'>
 
-export interface SplitterItem extends Omit<SplitterPanelProps, 'as' | 'asChild'> {
+export interface SplitterItem {
+
   /**
    * A unique id for the panel. Also used as the Vue `key`. Defaults to an auto-generated id.
    */
@@ -20,7 +21,8 @@ export interface SplitterItem extends Omit<SplitterPanelProps, 'as' | 'asChild'>
   [key: string]: any
 }
 
-export interface SplitterProps<T extends SplitterItem = SplitterItem> extends Pick<SplitterGroupProps, 'autoSaveId' | 'keyboardResizeBy' | 'storage'>, Pick<SplitterResizeHandleProps, 'hitAreaMargins'> {
+export interface SplitterProps<T extends SplitterItem = SplitterItem> {
+
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'

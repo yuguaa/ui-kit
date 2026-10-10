@@ -8,7 +8,8 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type InputRating = ComponentConfig<typeof theme, AppConfig, 'inputRating'>
 
-export interface InputRatingProps extends /* @vue-ignore */ Pick<RatingRootProps, /* @vue-ignore */ 'length' | 'step' | 'name' | 'disabled' | 'required' | 'clearable' | 'hoverable' | 'modelValue' | 'defaultValue'> {
+export interface InputRatingProps {
+
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -49,7 +50,8 @@ export interface InputRatingProps extends /* @vue-ignore */ Pick<RatingRootProps
   ui?: InputRating['slots']
 }
 
-export interface InputRatingEmits extends /* @vue-ignore */ RatingRootEmits {
+export interface InputRatingEmits {
+
   change: [event: Event]
 }
 

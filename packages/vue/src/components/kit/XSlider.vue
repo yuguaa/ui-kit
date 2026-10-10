@@ -7,7 +7,8 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Slider = ComponentConfig<typeof theme, AppConfig, 'slider'>
 
-export interface SliderProps extends /* @vue-ignore */ Pick<SliderRootProps, /* @vue-ignore */ 'name' | 'disabled' | 'inverted' | 'min' | 'max' | 'step' | 'minStepsBetweenThumbs'> {
+export interface SliderProps {
+
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -43,7 +44,7 @@ export interface SliderEmits {
 }
 </script>
 
-<script setup lang="ts" generic="T extends /* @vue-ignore */ number | number[]">
+<script setup lang="ts" generic="T extends number | number[]">
 import { computed } from 'vue'
 import { SliderRoot, SliderRange, SliderTrack, SliderThumb } from 'reka-ui'
 import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'

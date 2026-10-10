@@ -9,7 +9,8 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Button = ComponentConfig<typeof theme, AppConfig, 'button'>
 
-export interface ButtonProps extends /* @vue-ignore */ UseComponentIconsProps, /* @vue-ignore */ Omit<LinkProps, /* @vue-ignore */ 'raw' | 'custom'> {
+export interface ButtonProps {
+
   label?: string
   /**
    * @defaultValue 'primary'

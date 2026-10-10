@@ -8,7 +8,8 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Progress = ComponentConfig<typeof theme, AppConfig, 'progress'>
 
-export interface ProgressProps extends /* @vue-ignore */ Pick<ProgressRootProps, /* @vue-ignore */ 'getValueLabel' | 'getValueText' | 'modelValue'> {
+export interface ProgressProps {
+
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -43,7 +44,8 @@ export interface ProgressProps extends /* @vue-ignore */ Pick<ProgressRootProps,
   ui?: Progress['slots']
 }
 
-export interface ProgressEmits extends /* @vue-ignore */ ProgressRootEmits {}
+export interface ProgressEmits {
+}
 
 export type ProgressSlots = {
   status?(props: { percent?: number }): VNode[]

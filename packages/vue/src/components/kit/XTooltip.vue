@@ -9,7 +9,8 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Tooltip = ComponentConfig<typeof theme, AppConfig, 'tooltip'>
 
-export interface TooltipProps extends /* @vue-ignore */ TooltipRootProps {
+export interface TooltipProps {
+
   /** The text content of the tooltip. */
   text?: string
   /** The keyboard keys to display in the tooltip. */
@@ -42,7 +43,8 @@ export interface TooltipProps extends /* @vue-ignore */ TooltipRootProps {
   ui?: Tooltip['slots']
 }
 
-export interface TooltipEmits extends /* @vue-ignore */ TooltipRootEmits {}
+export interface TooltipEmits {
+}
 
 export interface TooltipSlots {
   default?(props: { open: boolean }): VNode[]

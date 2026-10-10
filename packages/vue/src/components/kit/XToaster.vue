@@ -7,7 +7,8 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Toaster = ComponentConfig<typeof theme, AppConfig, 'toaster'>
 
-export interface ToasterProps extends /* @vue-ignore */ Omit<ToastProviderProps, /* @vue-ignore */ 'swipeDirection'> {
+export interface ToasterProps {
+
   /**
    * The position on the screen to display the toasts.
    * @defaultValue 'bottom-right'

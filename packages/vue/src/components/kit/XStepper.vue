@@ -26,7 +26,8 @@ export interface StepperItem {
   [key: string]: any
 }
 
-export interface StepperProps<T extends StepperItem = StepperItem> extends Pick<StepperRootProps, 'linear'> {
+export interface StepperProps<T extends StepperItem = StepperItem> {
+
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -60,7 +61,8 @@ export interface StepperProps<T extends StepperItem = StepperItem> extends Pick<
   ui?: Stepper['slots']
 }
 
-export type StepperEmits<T extends StepperItem = StepperItem> = Omit<StepperRootEmits, 'update:modelValue'> & {
+export type StepperEmits<T extends StepperItem = StepperItem> = {
+
   next: [value: T]
   prev: [value: T]
 }

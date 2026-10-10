@@ -78,8 +78,12 @@ import XInput from './XInput.vue'
 import XKbd from './XKbd.vue'
 import XDropdownMenuContent from './XDropdownMenuContent.vue'
 
-const props = defineProps<DropdownMenuContentProps<T>>()
-const emits = defineEmits<DropdownMenuContentEmits>()
+const props: DropdownMenuContentProps = defineProps({
+
+})
+const emits: DropdownMenuContentEmits = defineEmits([
+  'update:searchTerm',
+])
 const slots = defineSlots<DropdownMenuContentSlots<T>>()
 
 const { t, dir } = useLocale()
