@@ -257,13 +257,23 @@ import XInput from './XInput.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props: SelectMenuProps = defineProps({
-
+const _props = withDefaults(defineProps<{
+  id?: any;
+}>(), {
+  portal: true,
+  searchInput: true,
+  labelKey: 'label',
+  descriptionKey: 'description',
+  resetSearchTermOnBlur: true,
+  resetSearchTermOnSelect: true,
+  resetModelValueOnClear: true,
+  autofocusDelay: 0,
+  virtualize: false
 })
-const emits: SelectMenuEmits = defineEmits([
-
-])
-const slots = defineSlots<SelectMenuSlots<T, VK, M, Mod, C>>()
+const emits = defineEmits<{
+  change: [payload?: any];
+}>()
+const slots = defineSlots<Record<string, any>>()
 
 const props = useComponentProps<SelectMenuProps<T, VK, M, Mod, C>>('selectMenu', _props)
 

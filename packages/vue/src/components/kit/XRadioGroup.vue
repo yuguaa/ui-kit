@@ -108,13 +108,38 @@ import { get } from '../../lib/nuxt/utils'
 import { tv } from '../../lib/nuxt/utils/tv'
 import XIcon from './XIcon.vue'
 
-const _props: RadioGroupProps = defineProps({
-
+const _props = withDefaults(defineProps<{
+  disabled?: any
+  loop?: any
+  name?: any
+  required?: any
+  as?: any
+  legend?: any
+  valueKey?: any
+  labelKey?: any
+  descriptionKey?: any
+  items?: any
+  modelValue?: any
+  defaultValue?: any
+  size?: any
+  variant?: any
+  color?: any
+  highlight?: any
+  orientation?: any
+  indicator?: any
+  class?: any
+  ui?: any
+}>(), {
+  valueKey: 'value' as never,
+  labelKey: 'label',
+  descriptionKey: 'description',
+  orientation: 'vertical'
 })
-const emits: RadioGroupEmits = defineEmits([
-
-])
-const slots = defineSlots<RadioGroupSlots<T>>()
+const emits = defineEmits<{
+  'update:modelValue': [payload?: any]
+  change: [event?: any]
+}>()
+const slots = defineSlots<Record<string, any>>()
 
 const props = useComponentProps<RadioGroupProps<T, VK>>('radioGroup', _props)
 

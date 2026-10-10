@@ -148,6 +148,7 @@ export default defineConfig({
             `${file}.tsx`,
             `${file}.vue`,
             `${file}/index.ts`,
+            `${file}/index.vue`,
           ];
           return candidates.some((candidate) => existsSync(candidate));
         },
@@ -158,6 +159,7 @@ export default defineConfig({
             `${file}.tsx`,
             `${file}.vue`,
             `${file}/index.ts`,
+            `${file}/index.vue`,
           ];
           for (const candidate of candidates) {
             if (existsSync(candidate)) {

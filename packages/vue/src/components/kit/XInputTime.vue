@@ -21,8 +21,7 @@ type InputTimeModelValue<R extends boolean = false> = (R extends true
 type _TimeFieldRootProps = Omit<TimeFieldRootProps, 'as' | 'asChild' | 'modelValue' | 'defaultValue' | 'dir'>
 type _TimeRangeFieldRootProps = Omit<TimeRangeFieldRootProps, 'as' | 'asChild' | 'modelValue' | 'defaultValue' | 'dir'>
 
-export interface InputTimeProps<R extends boolean = false> {
-
+export interface InputTimeProps<R extends boolean = false> extends UseComponentIconsProps, _TimeFieldRootProps, _TimeRangeFieldRootProps {
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
@@ -65,8 +64,7 @@ export interface InputTimeProps<R extends boolean = false> {
   ui?: InputTime['slots']
 }
 
-export interface InputTimeEmits<R extends boolean = false> {
-
+export interface InputTimeEmits<R extends boolean = false> extends Omit<TimeFieldRootEmits & TimeRangeFieldRootEmits, 'update:modelValue'> {
   'update:modelValue': [value: InputTimeModelValue<R>]
   'change': [event: Event]
   'blur': [event: FocusEvent]

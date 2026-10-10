@@ -180,13 +180,20 @@ import XInput from './XInput.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props: ListboxProps = defineProps({
-
+const _props = withDefaults(defineProps<{
+  id?: any;
+}>(), {
+  labelKey: 'label',
+  descriptionKey: 'description',
+  highlightOnHover: true,
+  filter: false,
+  autofocusDelay: 0,
+  virtualize: false
 })
-const emits: ListboxEmits = defineEmits([
-
-])
-const slots = defineSlots<ListboxSlots<T>>()
+const emits = defineEmits<{
+  change: [payload?: any];
+}>()
+const slots = defineSlots<Record<string, any>>()
 
 const props = useComponentProps<ListboxProps<T, VK, M, Mod>>('listbox', _props)
 

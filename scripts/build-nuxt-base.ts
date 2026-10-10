@@ -33,8 +33,11 @@ const COMPONENTS = [
   "ContextMenuContent", "DropdownMenuContent", "LinkBase",
 ];
 
-/** 自研替身的组件（Nuxt 原版依赖 Nuxt 专用包，使用自研兼容实现） */
-const SKIP_COMPONENTS = new Set(["Icon"]);
+/** 自研替身的组件（Nuxt 原版依赖 Nuxt 专用包，使用自研兼容实现）；RadioGroup 为手工降级维护 */
+const SKIP_COMPONENTS = new Set(["Icon", "RadioGroup"]);
+
+/** 强制运行时声明降级的组件（生成器探针与文档构建环境的类型解析存在差异，兜底保证编译一致） */
+const FORCE_RUNTIME = new Set<string>();
 
 /** 跳过的文件（依赖 Nuxt 专用模块） */
 const SKIP_UTILS = new Set(["content.ts", "editor.ts"]);
@@ -103,8 +106,12 @@ function parseMembersFromBody(body: string): MemberDef[] {
   const members: MemberDef[] = [];
   const segments = splitTopLevel(body, ";");
   for (const segment of segments) {
-    const text = segment.trim();
-    if (!text || text.startsWith("//") || text.startsWith("/*")) continue;
+    /* 剥掉段首注释（JSDoc 后跟成员声明）再解析 */
+    const text = segment
+      .replace(/^\/\*\*?[\s\S]*?\*\//, "")
+      .replace(/^\/\/[^\n]*\n?/, "")
+      .trim();
+    if (!text) continue;
     /* 取第一个顶层冒号前的内容作为键（跳过引号内冒号与嵌套括号） */
     let depth = 0;
     let colon = -1;
@@ -170,17 +177,32 @@ function splitTopLevel(text: string, separator: string): string[] {
 /** 在文本中查找 `interface|type Name` 的定义块（到配对的 } 结束） */
 function findDefinitionBlock(source: string, name: string): string | undefined {
   const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  const pattern = new RegExp(`(?:interface|type)\\s+${escaped}\\b(?:<[^>]*>)?\\s*(?:extends[^{]*)?(=)?\\s*\\{`);
-  const match = pattern.exec(source);
+  const headRe = new RegExp(`(?:interface|type)\\s+${escaped}\\b`);
+  const match = headRe.exec(source);
   if (!match) return undefined;
-  let depth = 1;
   let i = match.index + match[0].length;
+  /* 跳过泛型参数（配对 < >，支持嵌套） */
+  if (source[i] === "<") {
+    let depth = 1;
+    i++;
+    for (; i < source.length && depth > 0; i++) {
+      if (source[i] === "<") depth++;
+      else if (source[i] === ">") depth--;
+    }
+  }
+  /* 找定义体开括号：type 别名有 = 或 extends 之后 */
+  while (i < source.length && source[i] !== "{") {
+    i++;
+  }
+  if (i >= source.length) return undefined;
+  let depth = 1;
+  let j = i + 1;
   let inQuote = false;
   let quoteChar = "";
-  for (; i < source.length; i++) {
-    const ch = source[i];
+  for (; j < source.length; j++) {
+    const ch = source[j];
     if (inQuote) {
-      if (ch === quoteChar && source[i - 1] !== "\\") inQuote = false;
+      if (ch === quoteChar && source[j - 1] !== "\\") inQuote = false;
       continue;
     }
     if (ch === "'" || ch === '"') {
@@ -191,7 +213,7 @@ function findDefinitionBlock(source: string, name: string): string | undefined {
     if (ch === "{") depth++;
     else if (ch === "}") {
       depth--;
-      if (depth === 0) return source.slice(match.index, i + 1);
+      if (depth === 0) return source.slice(match.index, j + 1);
     }
   }
   return undefined;
@@ -350,6 +372,29 @@ function collectInterfaceMembers(content: string, typeName: string, rekaDts: str
   });
 }
 
+/** 失败组件的类型字面量降级：defineProps/defineEmits/defineSlots 用内联 any 成员类型，编译必过且保留事件声明 */
+function typeLiteralFallback(content: string, rekaDts: string, localIndex: Map<string, string>): string {
+  let out = content;
+  out = out.replace(/defineProps<(\w+)(?:<[^>]*>)?>/g, (_m: string, typeName: string) => {
+    const members = collectInterfaceMembers(content, typeName, rekaDts, localIndex);
+    const lines = members.map((member) => {
+      const key = /^[A-Za-z_$][\w$]*$/.test(member.key) ? member.key : `'${member.key}'`;
+      return `  ${key}?: any;`;
+    });
+    return `defineProps<{\n${lines.join("\n")}\n}>`;
+  });
+  out = out.replace(/defineEmits<(\w+)(?:<[^>]*>)?>/g, (_m: string, typeName: string) => {
+    const members = collectInterfaceMembers(content, typeName, rekaDts, localIndex);
+    const lines = members.map((member) => {
+      const key = member.key.includes("-") || member.key.includes(":") ? `'${member.key}'` : member.key;
+      return `  ${key}: [payload?: any];`;
+    });
+    return `defineEmits<{\n${lines.join("\n")}\n}>`;
+  });
+  out = out.replace(/defineSlots<(\w+)(?:<[^>]*>)?>/g, () => "defineSlots<Record<string, any>>");
+  return out;
+}
+
 /** 失败组件的运行时声明降级：defineProps/defineEmits 用对象/数组声明，类型注解保留 */
 function runtimeDeclFallback(content: string, rekaDts: string, localIndex: Map<string, string>): string {
   let out = content;
@@ -450,7 +495,7 @@ function runtimeDeclFallback(content: string, rekaDts: string, localIndex: Map<s
 function compileComponent(content: string, filename: string): { ok: boolean; content: string; message?: string } {
   const tryCompile = (source: string) => {
     const { descriptor } = parse(source, { filename });
-    compileScript(descriptor, { id: "probe", fs: probeFs });
+    compileScript(descriptor, { id: "probe", fs: probeFs, isProd: true });
   };
   try {
     tryCompile(content);
@@ -467,14 +512,14 @@ function compileComponent(content: string, filename: string): { ok: boolean; con
         return { ok: true, content: inlined };
       } catch { /* 继续降级 */ }
     }
-    /* 运行时声明降级：defineProps/defineEmits 用对象/数组声明，类型注解保留 */
-    const runtime = runtimeDeclFallback(content, rekaDts, localIndex);
-    if (runtime !== content) {
+    /* 类型字面量降级：内联 any 成员类型，保留 withDefaults 与事件声明 */
+    const fallback = typeLiteralFallback(content, rekaDts, localIndex);
+    if (fallback !== content) {
       try {
-        tryCompile(runtime);
-        return { ok: true, content: runtime };
+        tryCompile(fallback);
+        return { ok: true, content: fallback };
       } catch (error2) {
-        return { ok: false, content, message: `${message.slice(0, 60)} | runtime: ${String((error2 as Error).message ?? error2).slice(0, 60)}` };
+        return { ok: false, content, message: `${message.slice(0, 60)} | fallback: ${String((error2 as Error).message ?? error2).slice(0, 60)}` };
       }
     }
     return { ok: false, content, message: message.slice(0, 140) };
@@ -522,6 +567,12 @@ function convertComponent(source: string): string {
   out = out.replace(/from ['"]\.\.\/utils\//g, `from '../../lib/nuxt/utils/`);
   out = out.replace(/from ['"]\.\.\/types\//g, `from '../../lib/nuxt/types/`);
   /* Nuxt 组件的跨文件复杂类型由探测函数处理（compileComponent），此处不再整体跳过 */
+  /* 全局组件替身：模板中的 <NuxtLink 需要显式导入 */
+  if (out.includes("<NuxtLink")) {
+    const setupOpen = out.indexOf("<script setup");
+    const afterTag = out.indexOf(">", setupOpen) + 1;
+    out = out.slice(0, afterTag) + `\nimport NuxtLink from '../../lib/nuxt/NuxtLink.vue'` + out.slice(afterTag);
+  }
   return out;
 }
 
@@ -714,6 +765,69 @@ export function clearError() {}
   writeFileSync(join(OUT_BASE, "ui-image-component.ts"), `export default "img"
 `);
 
+  /* NuxtLink 替身（Nuxt 框架内置组件，自研兼容实现） */
+  writeFileSync(join(OUT_BASE, "NuxtLink.vue"), `<script setup lang="ts">
+/**
+ * NuxtLink 替身：支持 custom 插槽模式与普通 a 渲染。
+ * slot props 提供 href / navigate / route / isActive / isExactActive / prefetch / shouldPrefetch。
+ */
+import { computed } from 'vue'
+
+const props = defineProps({
+  to: { type: [String, Object], default: undefined },
+  href: { type: [String, Object], default: undefined },
+  custom: { type: Boolean, default: false },
+  target: { type: String, default: undefined },
+  rel: { type: String, default: undefined },
+  download: { type: [Boolean, String], default: undefined },
+  type: { type: String, default: undefined },
+})
+
+const resolvedHref = computed<string | undefined>(() => {
+  const path = props.to ?? props.href
+  if (path == null) return undefined
+  if (typeof path === 'string') return path
+  return (path as { path?: string }).path ?? (path as { name?: string }).name
+})
+
+const route = { path: '/', query: {}, params: {}, hash: '', fullPath: '/', matched: [] }
+
+function navigate(event: MouseEvent) {
+  if (props.target === '_blank' || event.metaKey || event.ctrlKey) return
+  if (resolvedHref.value) {
+    event.preventDefault()
+    window.location.assign(resolvedHref.value)
+  }
+}
+</script>
+
+<template>
+  <slot
+    v-if="custom"
+    :href="resolvedHref"
+    :navigate="navigate"
+    :route="route"
+    :isActive="false"
+    :isExactActive="false"
+    :prefetch="() => {}"
+    :shouldPrefetch="false"
+    v-bind="$attrs"
+  />
+  <a
+    v-else
+    :href="resolvedHref"
+    :target="target"
+    :rel="rel"
+    :download="download"
+    :type="type"
+    v-bind="$attrs"
+    @click="navigate"
+  >
+    <slot />
+  </a>
+</template>
+`);
+
   /* tv 包装入口 ui/<name>.ts */
   const themeNames = readdirSync(NUXT_THEME_SRC)
     .filter((f) => f.endsWith(".ts"))
@@ -740,7 +854,18 @@ export default tv({ extend: ${extendExpr} })
       throw new Error(`Nuxt 组件不存在: ${name}`);
     }
     const converted = convertComponent(readFileSync(src, "utf8"));
-    const result = compileComponent(converted, join(OUT_KIT, `X${name}.vue`));
+    const result = FORCE_RUNTIME.has(name)
+      ? (() => {
+          const fallback = typeLiteralFallback(converted, resolveRekaDts(), localTypeIndex());
+          try {
+            const { descriptor } = parse(fallback, { filename: join(OUT_KIT, `X${name}.vue`) });
+            compileScript(descriptor, { id: "probe", fs: probeFs, isProd: true });
+            return { ok: true, content: fallback };
+          } catch (error) {
+            return { ok: false, content: converted, message: `forced-fallback: ${String((error as Error).message ?? error).slice(0, 80)}` };
+          }
+        })()
+      : compileComponent(converted, join(OUT_KIT, `X${name}.vue`));
     if (!result.ok) {
       compileWarnings.push(`${name}: ${result.message}`);
     }

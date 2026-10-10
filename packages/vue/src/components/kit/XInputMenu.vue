@@ -261,12 +261,19 @@ import XChip from './XChip.vue'
 
 defineOptions({ inheritAttrs: false })
 
-const _props: InputMenuProps = defineProps({
-
+const _props = withDefaults(defineProps<InputMenuProps<T, VK, M, Mod, C>>(), {
+  type: 'text',
+  autofocusDelay: 0,
+  portal: true,
+  labelKey: 'label',
+  descriptionKey: 'description',
+  resetSearchTermOnBlur: true,
+  resetSearchTermOnSelect: true,
+  resetModelValueOnClear: true,
+  virtualize: false,
+  mode: 'combobox'
 })
-const emits: InputMenuEmits = defineEmits([
-
-])
+const emits = defineEmits<InputMenuEmits<T, VK, M, Mod, C>>()
 const slots = defineSlots<InputMenuSlots<T, VK, M, Mod, C>>()
 
 const props = useComponentProps<InputMenuProps<T, VK, M, Mod, C>>('inputMenu', _props)

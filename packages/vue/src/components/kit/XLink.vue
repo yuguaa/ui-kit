@@ -59,64 +59,7 @@ interface NuxtLinkProps extends Omit<RouterLinkProps, 'to'> {
   trailingSlash?: 'append' | 'remove'
 }
 
-export interface LinkProps {
-  class?: any;
-  style?: any;
-  id?: any;
-  title?: any;
-  role?: any;
-  name?: any;
-  value?: any;
-  placeholder?: any;
-  required?: any;
-  readonly?: any;
-  autocomplete?: any;
-  autofocus?: any;
-  tabindex?: any;
-  form?: any;
-  minlength?: any;
-  maxlength?: any;
-  pattern?: any;
-  step?: any;
-  min?: any;
-  max?: any;
-  multiple?: any;
-  checked?: any;
-  size?: any;
-  rows?: any;
-  cols?: any;
-  wrap?: any;
-  accept?: any;
-  capture?: any;
-  download?: any;
-  href?: any;
-  target?: any;
-  rel?: any;
-  loading?: any;
-  accesskey?: any;
-  contenteditable?: any;
-  draggable?: any;
-  hidden?: any;
-  lang?: any;
-  slot?: any;
-  autocapitalize?: any;
-  autocorrect?: any;
-  spellcheck?: any;
-  enterkeyhint?: any;
-  inputmode?: any;
-  'aria-label'?: any;
-  'aria-describedby'?: any;
-  'aria-hidden'?: any;
-  'aria-expanded'?: any;
-  'aria-current'?: any;
-  'aria-checked'?: any;
-  'aria-controls'?: any;
-  'aria-disabled'?: any;
-  'aria-invalid'?: any;
-  'aria-live'?: any;
-  'aria-selected'?: any;
-  'data-testid'?: any;
-  disabled?: any;
+export interface LinkProps extends NuxtLinkProps, /** @vue-ignore */ Omit<ButtonHTMLAttributes, 'type' | 'disabled'>, /** @vue-ignore */ Omit<AnchorHTMLAttributes, 'href' | 'target' | 'rel' | 'type'> {
   /**
    * The element or component this component should render as when not a link.
    * @defaultValue 'button'
@@ -176,6 +119,7 @@ interface NuxtLinkDefaultSlotProps {
 </script>
 
 <script setup lang="ts">
+import NuxtLink from '../../lib/nuxt/NuxtLink.vue'
 import { computed, getCurrentInstance, mergeProps, onMounted, onBeforeUnmount } from 'vue'
 import { isEqual } from 'ohash/utils'
 import { useForwardProps, Slot } from 'reka-ui'
