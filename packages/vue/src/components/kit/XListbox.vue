@@ -308,7 +308,7 @@ const listboxProps = computed(() => ({
         :placeholder="filterPlaceholder ?? '搜索…'"
         :disabled="disabled || filterDisabled || loading"
         data-slot="input"
-        :class="cn('w-full border-0 border-b bg-transparent px-3 py-2 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed', ui?.input)"
+        :class="cn('w-full border-0 border-b border-border bg-transparent px-3 py-2 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed', ui?.input)"
       />
     </ListboxFilter>
 

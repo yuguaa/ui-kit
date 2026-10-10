@@ -634,7 +634,7 @@ export function XSelectMenu({
               disabled={disabled || (typeof searchInput === "object" && searchInput.disabled)}
               placeholder={searchInputPlaceholder ?? "输入关键字搜索"}
               data-slot="input"
-              className={cn("h-9 w-full border-0 border-b bg-transparent px-3 text-sm outline-none placeholder:text-muted-foreground", ui?.input)}
+              className={cn("h-8 w-full border-0 border-b border-border bg-transparent px-3 text-sm outline-none placeholder:text-muted-foreground", ui?.input)}
               onChange={(event) => updateSearchTerm(event.target.value)}
             />
           )}

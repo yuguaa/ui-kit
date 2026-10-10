@@ -707,7 +707,7 @@ const [DefineItemTemplate, ReuseItemTemplate] = createReusableTemplate<{ item: S
             :placeholder="searchInputPlaceholder"
             :disabled="disabled || (typeof searchInput === 'object' && searchInput.disabled)"
             data-slot="input"
-            :class="cn('h-9 w-full border-0 border-b bg-transparent px-3 text-sm outline-none placeholder:text-muted-foreground', ui?.input)"
+            :class="cn('h-8 w-full border-0 border-b border-border bg-transparent px-3 text-sm outline-none placeholder:text-muted-foreground', ui?.input)"
           />
 
           <ComboboxEmpty

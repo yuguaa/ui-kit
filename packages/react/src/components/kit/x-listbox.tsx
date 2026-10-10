@@ -386,7 +386,7 @@ export function XListbox({
             placeholder={(typeof filter === "object" ? filter.placeholder : undefined) ?? "搜索…"}
             data-slot="input"
             className={cn(
-              "w-full border-0 border-b bg-transparent px-3 py-2 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed",
+              "w-full border-0 border-b border-border bg-transparent px-3 py-2 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed",
               ui?.input,
             )}
           />

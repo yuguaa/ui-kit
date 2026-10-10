@@ -99,7 +99,7 @@ const swipeDirectionMap: Record<NonNullable<XDrawerProps["direction"]>, NonNulla
 const contentPositionClasses: Record<NonNullable<XDrawerProps["direction"]>, { plain: string; inset: string }> = {
   top: {
     plain:
-      "data-[swipe-direction=up]:inset-x-0 data-[swipe-direction=up]:top-0 data-[swipe-direction=up]:mb-24 data-[swipe-direction=up]:max-h-[96%] data-[swipe-direction=up]:rounded-b-lg data-[swipe-direction=up]:border-b data-[swipe-direction=up]:origin-top data-[swipe-direction=up]:[--closed-transform:translate3d(0,calc(-100%-var(--drawer-inset,0px)-2px),0)] data-[swipe-direction=up]:[--translate-y:var(--drawer-swipe-movement-y,0px)]",
+      "data-[swipe-direction=up]:inset-x-0 data-[swipe-direction=up]:top-0 data-[swipe-direction=up]:mb-24 data-[swipe-direction=up]:max-h-[96%] data-[swipe-direction=up]:rounded-b-lg data-[swipe-direction=up]:border-b data-[swipe-direction=up]:border-border data-[swipe-direction=up]:origin-top data-[swipe-direction=up]:[--closed-transform:translate3d(0,calc(-100%-var(--drawer-inset,0px)-2px),0)] data-[swipe-direction=up]:[--translate-y:var(--drawer-swipe-movement-y,0px)]",
     inset:
       "data-[swipe-direction=up]:inset-x-4 data-[swipe-direction=up]:top-4 rounded-lg overflow-hidden data-[swipe-direction=up]:origin-top data-[swipe-direction=up]:[--closed-transform:translate3d(0,calc(-100%-var(--drawer-inset,0px)-2px),0)] data-[swipe-direction=up]:[--translate-y:var(--drawer-swipe-movement-y,0px)]",
   },
@@ -111,7 +111,7 @@ const contentPositionClasses: Record<NonNullable<XDrawerProps["direction"]>, { p
   },
   bottom: {
     plain:
-      "data-[swipe-direction=down]:inset-x-0 data-[swipe-direction=down]:bottom-0 data-[swipe-direction=down]:mt-24 data-[swipe-direction=down]:max-h-[96%] data-[swipe-direction=down]:rounded-t-lg data-[swipe-direction=down]:border-t data-[swipe-direction=down]:origin-bottom data-[swipe-direction=down]:[--closed-transform:translate3d(0,calc(100%+var(--drawer-inset,0px)+2px),0)] data-[swipe-direction=down]:[--translate-y:var(--drawer-swipe-movement-y,0px)]",
+      "data-[swipe-direction=down]:inset-x-0 data-[swipe-direction=down]:bottom-0 data-[swipe-direction=down]:mt-24 data-[swipe-direction=down]:max-h-[96%] data-[swipe-direction=down]:rounded-t-lg data-[swipe-direction=down]:border-t data-[swipe-direction=down]:border-border data-[swipe-direction=down]:origin-bottom data-[swipe-direction=down]:[--closed-transform:translate3d(0,calc(100%+var(--drawer-inset,0px)+2px),0)] data-[swipe-direction=down]:[--translate-y:var(--drawer-swipe-movement-y,0px)]",
     inset:
       "data-[swipe-direction=down]:inset-x-4 data-[swipe-direction=down]:bottom-4 rounded-lg overflow-hidden data-[swipe-direction=down]:origin-bottom data-[swipe-direction=down]:[--closed-transform:translate3d(0,calc(100%+var(--drawer-inset,0px)+2px),0)] data-[swipe-direction=down]:[--translate-y:var(--drawer-swipe-movement-y,0px)]",
   },
