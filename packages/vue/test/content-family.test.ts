@@ -119,8 +119,8 @@ describe("XCarousel 插件能力与 ui 插槽", () => {
     });
     const prevButton = wrapper.find("[aria-label='上一张']");
     const nextButton = wrapper.find("[aria-label='下一张']");
-    expect(prevButton.classes()).toContain("bg-success-1");
-    expect(nextButton.classes()).toContain("bg-success-1");
+    expect(prevButton.classes()).toContain("bg-success/10");
+    expect(nextButton.classes()).toContain("bg-success/10");
     expect(prevButton.text()).toContain("后退");
     expect(nextButton.text()).toContain("前进");
   });

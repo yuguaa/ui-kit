@@ -55,13 +55,13 @@ export interface XSeparatorProps
 
 /** 语义色边框（Nuxt separator color 变体） */
 const separatorBorderColorClasses: Record<XSeparatorColor, string> = {
-  primary: "border-primary-6",
+  primary: "border-primary",
   secondary: "border-secondary",
   neutral: "border-border",
-  success: "border-success-6",
-  info: "border-info-6",
-  warning: "border-warning-6",
-  error: "border-error-6",
+  success: "border-success",
+  info: "border-info",
+  warning: "border-warning",
+  error: "border-error",
 }
 
 /** 边框粗细（Nuxt separator size 变体） */

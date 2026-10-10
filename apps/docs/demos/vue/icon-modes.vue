@@ -23,7 +23,7 @@ import XIcon from '@/components/kit/XIcon.vue'
     <div class="flex flex-col gap-3">
       <span class="text-sm text-muted-foreground">ui 插槽类名</span>
       <div class="flex flex-wrap items-center gap-4">
-        <XIcon name="star" size="lg" :ui="{ root: 'text-warning-7' }" />
+        <XIcon name="star" size="lg" :ui="{ root: 'text-warning' }" />
       </div>
     </div>
   </div>

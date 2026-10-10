@@ -94,13 +94,13 @@ const statusStyle = computed(() => ({ '--percent': `${Math.max(percent.value ?? 
 
 /** 颜色映射：indicator 背景与 steps 文字 */
 const colorClasses: Record<ProgressColor, { indicator: string; steps: string }> = {
-  primary: { indicator: 'bg-primary-6', steps: 'text-primary-6' },
+  primary: { indicator: 'bg-primary', steps: 'text-primary' },
   secondary: { indicator: 'bg-secondary', steps: 'text-secondary-foreground' },
   neutral: { indicator: 'bg-foreground', steps: 'text-foreground' },
-  success: { indicator: 'bg-success-6', steps: 'text-success-6' },
-  info: { indicator: 'bg-info-6', steps: 'text-info-6' },
-  warning: { indicator: 'bg-warning-6', steps: 'text-warning-7' },
-  error: { indicator: 'bg-error-6', steps: 'text-error-6' },
+  success: { indicator: 'bg-success', steps: 'text-success' },
+  info: { indicator: 'bg-info', steps: 'text-info' },
+  warning: { indicator: 'bg-warning', steps: 'text-warning' },
+  error: { indicator: 'bg-error', steps: 'text-error' },
 }
 
 /** 不确定进度动画（keyframes 定义在包入口 index.css） */

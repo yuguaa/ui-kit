@@ -4,7 +4,7 @@ import { XAvatar, XAvatarGroup } from '@/components/kit'
 
 <template>
   <div class="flex flex-wrap items-center gap-8">
-    <XAvatarGroup :ui="{ base: 'ring-primary-3' }">
+    <XAvatarGroup :ui="{ base: 'ring-primary/20' }">
       <XAvatar text="A" />
       <XAvatar text="B" />
     </XAvatarGroup>

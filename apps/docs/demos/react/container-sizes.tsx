@@ -17,7 +17,7 @@ export default function ContainerSizes() {
       <XContainer
         render={<section />}
         size="md"
-        ui={{ base: "rounded-lg bg-primary-1 px-4 py-3 text-center text-sm text-primary-7" }}
+        ui={{ base: "rounded-lg bg-primary/10 px-4 py-3 text-center text-sm text-primary" }}
       >
         render 渲染为 section，ui.base 注入自定义类名
       </XContainer>

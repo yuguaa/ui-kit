@@ -11,7 +11,7 @@ const files = ref<File[]>([])
       <template #actions="{ open }">
         <button
           type="button"
-          class="rounded-md bg-primary-6 px-3 py-1.5 text-sm text-white hover:bg-primary-5"
+          class="rounded-md bg-primary px-3 py-1.5 text-sm text-background hover:bg-primary/75"
           @click="open"
         >
           浏览文件

@@ -164,10 +164,10 @@ const variantClasses: Record<PinInputVariant, string> = {
 /** 聚焦描边（颜色 × 变体）：outline / subtle 聚焦时叠加 ring */
 const focusStyles: Record<PinInputColor, Record<PinInputVariant, string>> = {
   primary: {
-    outline: 'outline-primary-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-primary-6',
-    soft: 'outline-primary-6/25 focus-visible:outline-3',
-    subtle: 'outline-primary-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-primary-6',
-    ghost: 'outline-primary-6/25 focus-visible:outline-3',
+    outline: 'outline-primary/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-primary',
+    soft: 'outline-primary/25 focus-visible:outline-3',
+    subtle: 'outline-primary/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-primary',
+    ghost: 'outline-primary/25 focus-visible:outline-3',
     none: '',
   },
   secondary: {
@@ -185,44 +185,44 @@ const focusStyles: Record<PinInputColor, Record<PinInputVariant, string>> = {
     none: '',
   },
   success: {
-    outline: 'outline-success-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-success-6',
-    soft: 'outline-success-6/25 focus-visible:outline-3',
-    subtle: 'outline-success-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-success-6',
-    ghost: 'outline-success-6/25 focus-visible:outline-3',
+    outline: 'outline-success/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-success',
+    soft: 'outline-success/25 focus-visible:outline-3',
+    subtle: 'outline-success/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-success',
+    ghost: 'outline-success/25 focus-visible:outline-3',
     none: '',
   },
   info: {
-    outline: 'outline-info-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-info-6',
-    soft: 'outline-info-6/25 focus-visible:outline-3',
-    subtle: 'outline-info-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-info-6',
-    ghost: 'outline-info-6/25 focus-visible:outline-3',
+    outline: 'outline-info/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-info',
+    soft: 'outline-info/25 focus-visible:outline-3',
+    subtle: 'outline-info/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-info',
+    ghost: 'outline-info/25 focus-visible:outline-3',
     none: '',
   },
   warning: {
-    outline: 'outline-warning-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-warning-6',
-    soft: 'outline-warning-6/25 focus-visible:outline-3',
-    subtle: 'outline-warning-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-warning-6',
-    ghost: 'outline-warning-6/25 focus-visible:outline-3',
+    outline: 'outline-warning/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-warning',
+    soft: 'outline-warning/25 focus-visible:outline-3',
+    subtle: 'outline-warning/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-warning',
+    ghost: 'outline-warning/25 focus-visible:outline-3',
     none: '',
   },
   error: {
-    outline: 'outline-error-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-error-6',
-    soft: 'outline-error-6/25 focus-visible:outline-3',
-    subtle: 'outline-error-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-error-6',
-    ghost: 'outline-error-6/25 focus-visible:outline-3',
+    outline: 'outline-error/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-error',
+    soft: 'outline-error/25 focus-visible:outline-3',
+    subtle: 'outline-error/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-error',
+    ghost: 'outline-error/25 focus-visible:outline-3',
     none: '',
   },
 }
 
 /** 高亮描边色 */
 const highlightClasses: Record<PinInputColor, string> = {
-  primary: 'ring-1 ring-inset ring-primary-6',
+  primary: 'ring-1 ring-inset ring-primary',
   secondary: 'ring-1 ring-inset ring-secondary',
   neutral: 'ring-1 ring-inset ring-border',
-  success: 'ring-1 ring-inset ring-success-6',
-  info: 'ring-1 ring-inset ring-info-6',
-  warning: 'ring-1 ring-inset ring-warning-6',
-  error: 'ring-1 ring-inset ring-error-6',
+  success: 'ring-1 ring-inset ring-success',
+  info: 'ring-1 ring-inset ring-info',
+  warning: 'ring-1 ring-inset ring-warning',
+  error: 'ring-1 ring-inset ring-error',
 }
 
 /** fixed=false 时桌面端缩小一档字号 */

@@ -16,9 +16,9 @@ export default function StepperUiCustom() {
         onValueChange={setStepKey}
         items={items}
         ui={{
-          trigger: "border-2 border-primary-3",
-          title: "text-primary-7",
-          description: "text-primary-5",
+          trigger: "border-2 border-primary/20",
+          title: "text-primary",
+          description: "text-primary/50",
           content: "rounded-md bg-elevated p-4",
         }}
         indicator={({ item }) => <span>{item.value === "basic" ? "★" : "✓"}</span>}

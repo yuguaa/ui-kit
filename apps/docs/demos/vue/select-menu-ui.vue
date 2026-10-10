@@ -46,17 +46,17 @@ const countries = [
         value-key="value"
         class="w-48"
         :ui="{
-          base: 'ring-primary-5 text-primary-6',
+          base: 'ring-primary/50 text-primary',
           item: 'rounded-lg',
-          itemDescription: 'text-primary-5',
-          itemTrailingIcon: 'text-success-6',
+          itemDescription: 'text-primary/50',
+          itemTrailingIcon: 'text-success',
         }"
       />
     </div>
     <div class="flex flex-wrap items-center gap-4">
       <XSelectMenu :items="plans" class="w-48">
         <template #leading>
-          <Sparkles class="size-4 text-warning-6" />
+          <Sparkles class="size-4 text-warning" />
         </template>
         <template #trailing>
           <span class="text-xs text-muted-foreground">精选</span>
@@ -66,7 +66,7 @@ const countries = [
         <template #item="{ item }">
           <button
             type="button"
-            class="rounded-md bg-primary-1 px-2 py-1.5 text-left text-sm text-primary-7"
+            class="rounded-md bg-primary/10 px-2 py-1.5 text-left text-sm text-primary"
           >
             自定义：{{ item.label }}
           </button>
@@ -74,7 +74,7 @@ const countries = [
       </XSelectMenu>
       <XSelectMenu :items="[]" class="w-48">
         <template #empty>
-          <span class="text-error-6">自定义空提示</span>
+          <span class="text-error">自定义空提示</span>
         </template>
       </XSelectMenu>
     </div>

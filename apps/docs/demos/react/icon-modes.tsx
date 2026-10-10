@@ -22,7 +22,7 @@ export default function IconModes() {
       <div className="flex flex-col gap-3">
         <span className="text-sm text-muted-foreground">ui 插槽类名</span>
         <div className="flex flex-wrap items-center gap-4">
-          <XIcon name="star" size="lg" ui={{ root: "text-warning-7" }} />
+          <XIcon name="star" size="lg" ui={{ root: "text-warning" }} />
         </div>
       </div>
     </div>

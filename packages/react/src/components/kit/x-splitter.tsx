@@ -370,7 +370,7 @@ export const XSplitter = React.forwardRef<XSplitterApi, XSplitterProps>(function
                 }}
                 onKeyDown={(event) => handleKeyDown(index, event)}
                 className={cn(
-                  "group relative shrink-0 bg-border transition-colors hover:bg-primary-5 focus-visible:outline-2 focus-visible:outline-primary-6",
+                  "group relative shrink-0 bg-border transition-colors hover:bg-primary/10 focus-visible:outline-2 focus-visible:outline-primary",
                   isHorizontal ? "w-2 cursor-col-resize" : "h-2 cursor-row-resize",
                   disabled && "cursor-default",
                   ui?.handle,

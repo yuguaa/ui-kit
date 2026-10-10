@@ -44,7 +44,7 @@ const attrs = useAttrs()
 
 /** 颜色映射：hover 文字过渡与激活强调 */
 const colorClasses: Record<LinkColor, string> = {
-  primary: 'text-primary-6 hover:text-primary-5',
+  primary: 'text-primary hover:text-primary/75',
   secondary: 'text-foreground hover:text-muted-foreground',
   neutral: 'text-muted-foreground hover:text-foreground',
 }
@@ -77,7 +77,7 @@ const forwardedAttrs = computed(() => ({ ...attrs, onClick }))
     :class="cn(
       'inline-flex items-center gap-1 rounded text-sm font-medium transition-colors outline-none cursor-pointer focus-visible:ring-3 focus-visible:ring-ring/50',
       colorClasses[color],
-      active && 'text-primary-7 underline underline-offset-4',
+      active && 'text-primary/75 underline underline-offset-4',
       !active && inactiveClass,
       disabled && 'cursor-not-allowed opacity-75',
       ui?.base,

@@ -27,7 +27,7 @@ export default function PaginationUiCustom() {
         itemSlot={({ item, page: current }) => (
           <button
             type="button"
-            className={`rounded-md px-3 py-1.5 text-sm ${item.type === "page" && item.value === current ? "bg-primary-6 text-white" : "text-muted-foreground"}`}
+            className={`rounded-md px-3 py-1.5 text-sm ${item.type === "page" && item.value === current ? "bg-primary text-background" : "text-muted-foreground"}`}
           >
             第 {item.type === "page" ? item.value : "…"} 页
           </button>

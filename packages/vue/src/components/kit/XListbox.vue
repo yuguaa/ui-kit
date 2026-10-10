@@ -253,13 +253,13 @@ const currentSize = computed(() => sizeClasses[props.size])
 
 /** 高亮描边颜色 */
 const highlightClasses: Record<ListboxColor, string> = {
-  primary: 'ring-primary-5',
+  primary: 'ring-primary',
   secondary: 'ring-secondary',
   neutral: 'ring-foreground/30',
-  success: 'ring-success-5',
-  info: 'ring-info-5',
-  warning: 'ring-warning-5',
-  error: 'ring-error-5',
+  success: 'ring-success',
+  info: 'ring-info',
+  warning: 'ring-warning',
+  error: 'ring-error',
 }
 
 function isIconName(icon: ListboxIcon | undefined): icon is IconName {

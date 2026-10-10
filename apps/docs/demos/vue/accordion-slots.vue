@@ -30,7 +30,7 @@ const items = [
       <XIcon :name="open ? 'chevron-down' : 'star'" />
     </template>
     <template #body="{ item, open }">
-      <span v-if="open" class="font-medium text-primary-6">展开中：</span>{{ item.content }}
+      <span v-if="open" class="font-medium text-primary">展开中：</span>{{ item.content }}
     </template>
   </XAccordion>
 </template>

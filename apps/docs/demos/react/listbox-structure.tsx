@@ -42,10 +42,10 @@ export default function ListboxStructure() {
           size="sm"
           onValueChange={(value) => setCurrent(String(value))}
           ui={{
-            root: "rounded-lg ring-1 ring-primary-2",
+            root: "rounded-lg ring-1 ring-primary/20",
             item: "rounded-md",
-            itemDescription: "text-primary-5",
-            itemTrailingIcon: "text-success-6",
+            itemDescription: "text-primary/50",
+            itemTrailingIcon: "text-success",
           }}
           className="w-64"
         />

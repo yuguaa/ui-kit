@@ -486,7 +486,7 @@ describe("XNavigationMenu", () => {
         items={[{ id: "dash", name: "仪表盘" }]}
       />,
     );
-    expect(screen.getByRole("button", { name: "仪表盘" })).toHaveClass("bg-primary-1");
+    expect(screen.getByRole("button", { name: "仪表盘" })).toHaveClass("bg-primary/10");
   });
 
   it("受控 value 展开子级，listLeading / listTrailing 插槽渲染", () => {

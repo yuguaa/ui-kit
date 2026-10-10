@@ -6,7 +6,7 @@ export default function CarouselBasic() {
   return (
     <XCarousel items={items}>
       {({ item }) => (
-        <div className="flex h-24 items-center justify-center rounded-lg bg-primary-1 text-primary-7">
+        <div className="flex h-24 items-center justify-center rounded-lg bg-primary/10 text-primary">
           Slide {item.key}
         </div>
       )}

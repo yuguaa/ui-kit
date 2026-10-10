@@ -3,28 +3,23 @@ import { computed, ref } from 'vue'
 import CssVarOutput from '@/components/CssVarOutput.vue'
 import ComponentPreview from '@/components/ComponentPreview.vue'
 import PaletteBoard from '@/components/PaletteBoard.vue'
-import { buildPalettes, buildThemeVars, hexColorPattern, presetSeeds } from '@/lib/theme'
+import { tailwindPalettes } from '@ui-kit/shared/colors'
+import { buildPalettes, buildThemeVars, presetColorNames } from '@/lib/theme'
 
-/** 主色 seed，输入仅接受合法 hex，非法输入保持上次有效值 */
-const seed = ref('#1677ff')
-const hexInput = ref(seed.value)
+/** 主色（Tailwind 色名），与 Nuxt UI 主题色选择一致 */
+const primaryName = ref('green')
 const previewDark = ref(false)
 
-const palettes = computed(() => buildPalettes(seed.value))
-/** 导出变量始终为默认方向色阶，不随预览切换变化 */
-const exportVars = computed(() => buildThemeVars(seed.value))
-/** 预览变量随亮暗切换改变色阶方向（暗色预览使用反转色阶） */
-const previewVars = computed(() => buildThemeVars(seed.value, previewDark.value ? 'dark' : 'default'))
+const palettes = computed(() => buildPalettes(primaryName.value))
+/** 导出变量始终为亮色方向色阶，不随预览切换变化 */
+const exportVars = computed(() => buildThemeVars(primaryName.value))
+/** 预览变量与导出相同（色板为固定 Tailwind 色板，不随亮暗反转） */
+const previewVars = computed(() => buildThemeVars(primaryName.value))
 
-function applySeed(next: string) {
-  if (hexColorPattern.test(next)) {
-    seed.value = next.toLowerCase()
-    hexInput.value = next.toLowerCase()
+function applyPreset(next: string) {
+  if (next in tailwindPalettes) {
+    primaryName.value = next
   }
-}
-
-function onHexInput() {
-  applySeed(hexInput.value)
 }
 </script>
 
@@ -36,38 +31,20 @@ function onHexInput() {
         <div>
           <h1 class="text-2xl font-semibold tracking-tight">主题设计器</h1>
           <p class="mt-2 text-sm text-neutral-500">
-            以单一主色 seed 派生全部语义色阶（Ant Design 色彩算法），实时预览组件效果并导出 CSS 变量
+            以 Tailwind 色板为主色（Nuxt UI 主题色选择），实时预览组件效果并导出 CSS 变量
           </p>
         </div>
-        <div class="flex items-center gap-3">
-          <label class="flex items-center gap-2 rounded-lg border border-neutral-200 bg-white px-3 py-2">
-            <input
-              v-model="hexInput"
-              type="text"
-              spellcheck="false"
-              class="w-20 bg-transparent font-mono text-sm outline-none"
-              @change="onHexInput"
-            />
-            <input
-              :value="seed"
-              type="color"
-              title="选择主色"
-              class="h-6 w-6 cursor-pointer rounded border-0 bg-transparent p-0"
-              @input="applySeed(($event.target as HTMLInputElement).value)"
-            />
-          </label>
-          <div class="flex items-center gap-1.5">
-            <button
-              v-for="preset in presetSeeds"
-              :key="preset"
-              type="button"
-              :title="preset"
-              class="size-6 cursor-pointer rounded-full border border-black/10 outline-none transition-transform hover:scale-110 focus-visible:ring-2 focus-visible:ring-neutral-400"
-              :class="seed === preset && 'ring-2 ring-neutral-500 ring-offset-1'"
-              :style="{ backgroundColor: preset }"
-              @click="applySeed(preset)"
-            />
-          </div>
+        <div class="flex items-center gap-1.5">
+          <button
+            v-for="preset in presetColorNames"
+            :key="preset"
+            type="button"
+            :title="preset"
+            class="size-6 cursor-pointer rounded-full border border-black/10 outline-none transition-transform hover:scale-110 focus-visible:ring-2 focus-visible:ring-neutral-400"
+            :class="primaryName === preset && 'ring-2 ring-neutral-500 ring-offset-1'"
+            :style="{ backgroundColor: tailwindPalettes[preset]?.[5] ?? '#22c55e' }"
+            @click="applyPreset(preset)"
+          />
         </div>
       </header>
 

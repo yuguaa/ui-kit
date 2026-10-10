@@ -47,26 +47,26 @@ export default function SelectMenuUi() {
           value={plan}
           onChange={setPlan}
           ui={{
-            base: "ring-primary-5 text-primary-6",
+            base: "ring-primary/50 text-primary",
             item: "rounded-lg",
-            itemDescription: "text-primary-5",
-            itemTrailingIcon: "text-success-6",
+            itemDescription: "text-primary/50",
+            itemTrailingIcon: "text-success",
           }}
           className="w-48"
         />
       </div>
       <div className="flex flex-wrap items-center gap-4">
-        <XSelectMenu items={plans} leading={<Sparkles className="size-4 text-warning-6" />} className="w-48" />
+        <XSelectMenu items={plans} leading={<Sparkles className="size-4 text-warning" />} className="w-48" />
         <XSelectMenu
           items={plans}
           className="w-48"
           item={({ item }) => (
-            <div className="rounded-md bg-primary-1 px-2 py-1.5 text-left text-sm text-primary-7">
+            <div className="rounded-md bg-primary/10 px-2 py-1.5 text-left text-sm text-primary">
               自定义：{item.label}
             </div>
           )}
         />
-        <XSelectMenu items={[]} empty={<span className="text-error-6">自定义空提示</span>} className="w-48" />
+        <XSelectMenu items={[]} empty={<span className="text-error">自定义空提示</span>} className="w-48" />
       </div>
     </div>
   )

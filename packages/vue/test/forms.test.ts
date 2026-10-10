@@ -39,7 +39,7 @@ describe("XInput", () => {
       props: { status: "error" },
       slots: { addonBefore: "https://", addonAfter: ".com" },
     });
-    expect(wrapper.find("input").classes()).toContain("border-error-6");
+    expect(wrapper.find("input").classes()).toContain("border-error");
     expect(wrapper.text()).toContain("https://");
     expect(wrapper.text()).toContain(".com");
   });
@@ -173,7 +173,7 @@ describe("XInputTags", () => {
 
   it("highlight 高亮描边", () => {
     const wrapper = mount(XInputTags, { props: { highlight: true, color: "success" } });
-    expect(wrapper.find("[data-slot='root']").classes()).toContain("ring-success-6");
+    expect(wrapper.find("[data-slot='root']").classes()).toContain("ring-success");
   });
 
   it("ui 插槽类名", () => {
@@ -679,7 +679,7 @@ describe("XCheckbox 说明、语义色与尺寸", () => {
       slots: { description: "已阅读并同意" },
     });
     expect(wrapper.text()).toContain("已阅读并同意");
-    expect(wrapper.find("[data-slot='indicator']").classes()).toContain("bg-success-6");
+    expect(wrapper.find("[data-slot='indicator']").classes()).toContain("bg-success");
   });
 
   it("size 控制控件尺寸", () => {
@@ -781,7 +781,7 @@ describe("XInputDate / XInputTime 区间模式", () => {
     });
     const base = wrapper.find("[data-slot='base']");
     expect(base.classes()).toContain("h-9");
-    expect(base.classes()).toContain("ring-success-6");
+    expect(base.classes()).toContain("ring-success");
   });
 
   it("ui 插槽类名", () => {
@@ -874,7 +874,7 @@ describe("XInputRating 只读与尺寸", () => {
 
   it("color 控制填充星颜色", () => {
     const wrapper = mount(XInputRating, { props: { modelValue: 3, color: "success" } });
-    expect(wrapper.find("[data-slot='indicator']").classes()).toContain("fill-success-6");
+    expect(wrapper.find("[data-slot='indicator']").classes()).toContain("fill-success");
   });
 
   it("icon / emptyIcon 自定义图标组件", () => {
@@ -958,7 +958,7 @@ describe("XInput Nuxt 语义", () => {
     const wrapper = mount(XInput, {
       props: { highlight: true, color: "success", variant: "soft", size: "xs" },
     });
-    expect(wrapper.find("input").classes()).toContain("ring-success-6");
+    expect(wrapper.find("input").classes()).toContain("ring-success");
     expect(wrapper.find("input").classes()).toContain("bg-muted/50");
     expect(wrapper.find("input").classes()).toContain("h-6");
   });
@@ -987,7 +987,7 @@ describe("XTextarea Nuxt 语义", () => {
       props: { ui: { base: "custom-base" }, highlight: true, color: "error", size: "lg" },
     });
     expect(wrapper.find("textarea").classes()).toContain("custom-base");
-    expect(wrapper.find("textarea").classes()).toContain("ring-error-6");
+    expect(wrapper.find("textarea").classes()).toContain("ring-error");
     expect(wrapper.find("textarea").classes()).toContain("px-3");
   });
 

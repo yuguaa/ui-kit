@@ -20,7 +20,7 @@ const loading = ref(true)
     <div class="flex flex-col gap-3">
       <span class="text-sm text-muted-foreground">loading 切换：为 false 时渲染默认插槽中的真实内容</span>
       <XSkeleton :loading="loading" variant="rect" height="2.5rem">
-        <div class="flex h-10 items-center rounded-md bg-primary-1 px-3 text-sm text-primary-7">
+        <div class="flex h-10 items-center rounded-md bg-primary/10 px-3 text-sm text-primary">
           内容已就绪
         </div>
       </XSkeleton>

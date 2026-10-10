@@ -14,9 +14,9 @@ export default function FormFieldSlots() {
       </XFormField>
       <XFormField
         name="email"
-        label={<span className="text-primary-6">邮箱地址</span>}
+        label={<span className="text-primary">邮箱地址</span>}
         hint="8-20 位"
-        description={<span className="text-info-6">用于接收订单通知</span>}
+        description={<span className="text-info">用于接收订单通知</span>}
         help={<span className="text-neutral-5">不会公开显示</span>}
       >
         <XInput placeholder="you@example.com" />

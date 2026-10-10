@@ -29,7 +29,7 @@ export default function InputMenuUi() {
           clear
           clearIcon="trash"
           placeholder="选择城市"
-          leading={<MapPin className="size-4 text-primary-6" />}
+          leading={<MapPin className="size-4 text-primary" />}
           onSelect={(item) => setLast(String(item.name ?? ""))}
           className="w-56"
         />
@@ -38,7 +38,7 @@ export default function InputMenuUi() {
           items={cities}
           labelKey="name"
           valueKey="id"
-          ui={{ root: "rounded-md ring-1 ring-primary-2", base: "ring-primary-4", item: "rounded-lg", itemLabel: "font-medium" }}
+          ui={{ root: "rounded-md ring-1 ring-primary/20", base: "ring-primary/50", item: "rounded-lg", itemLabel: "font-medium" }}
           className="w-56"
         />
       </div>

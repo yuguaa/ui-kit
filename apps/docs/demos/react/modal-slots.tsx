@@ -21,7 +21,7 @@ export default function ModalSlots() {
         description="header / actions / body / footer 插槽自由组合。"
         header={
           <div className="flex items-center gap-2">
-            <Info className="size-4 text-info-6" />
+            <Info className="size-4 text-info" />
             <span className="font-semibold">自定义头部</span>
           </div>
         }

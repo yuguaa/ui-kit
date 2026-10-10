@@ -11,7 +11,7 @@ const items = [
 <template>
   <XCarousel :items="items" orientation="vertical">
     <template #item="{ item }">
-      <div class="flex h-24 items-center justify-center rounded-lg bg-info-1 text-info-7">Slide {{ item.key }}</div>
+      <div class="flex h-24 items-center justify-center rounded-lg bg-info/10 text-info">Slide {{ item.key }}</div>
     </template>
   </XCarousel>
 </template>

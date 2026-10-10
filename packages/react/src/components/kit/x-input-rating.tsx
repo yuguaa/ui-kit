@@ -74,24 +74,24 @@ const ratingSizeClasses: Record<XInputRatingSize, string> = {
 
 /** 填充星颜色（星体填充与描边） */
 const ratingIndicatorColorClasses: Record<XInputRatingColor, string> = {
-  primary: "fill-primary-6 text-primary-6",
+  primary: "fill-primary text-primary",
   secondary: "fill-secondary text-secondary",
   neutral: "fill-foreground text-foreground",
-  success: "fill-success-6 text-success-6",
-  info: "fill-info-6 text-info-6",
-  warning: "fill-warning-6 text-warning-6",
-  error: "fill-error-6 text-error-6",
+  success: "fill-success text-success",
+  info: "fill-info text-info",
+  warning: "fill-warning text-warning",
+  error: "fill-error text-error",
 }
 
 /** 聚焦描边颜色 */
 const ratingItemColorClasses: Record<XInputRatingColor, string> = {
-  primary: "outline-primary-6/25 focus-visible:outline-3",
+  primary: "outline-primary/25 focus-visible:outline-3",
   secondary: "outline-secondary/25 focus-visible:outline-3",
   neutral: "outline-foreground/25 focus-visible:outline-3",
-  success: "outline-success-6/25 focus-visible:outline-3",
-  info: "outline-info-6/25 focus-visible:outline-3",
-  warning: "outline-warning-6/25 focus-visible:outline-3",
-  error: "outline-error-6/25 focus-visible:outline-3",
+  success: "outline-success/25 focus-visible:outline-3",
+  info: "outline-info/25 focus-visible:outline-3",
+  warning: "outline-warning/25 focus-visible:outline-3",
+  error: "outline-error/25 focus-visible:outline-3",
 }
 
 function isIconName(icon: XInputRatingIcon | undefined): icon is XInputRatingIconName {

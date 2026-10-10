@@ -73,14 +73,14 @@ export interface TabsItem {
 const tabsColorClasses: Record<TabsColor, Record<TabsVariant, { indicator: string; trigger: string; content: string }>> = {
   primary: {
     pill: {
-      indicator: 'bg-primary-6',
-      trigger: 'data-[state=active]:text-white outline-primary-6/25 focus-visible:outline-3',
-      content: 'outline-primary-6/25',
+      indicator: 'bg-primary',
+      trigger: 'data-[state=active]:text-background outline-primary/25 focus-visible:outline-3',
+      content: 'outline-primary/25',
     },
     link: {
-      indicator: 'bg-primary-6',
-      trigger: 'data-[state=active]:text-primary-6 outline-primary-6/25 focus-visible:outline-3',
-      content: 'outline-primary-6/25',
+      indicator: 'bg-primary',
+      trigger: 'data-[state=active]:text-primary outline-primary/25 focus-visible:outline-3',
+      content: 'outline-primary/25',
     },
   },
   secondary: {
@@ -109,50 +109,50 @@ const tabsColorClasses: Record<TabsColor, Record<TabsVariant, { indicator: strin
   },
   success: {
     pill: {
-      indicator: 'bg-success-6',
-      trigger: 'data-[state=active]:text-white outline-success-6/25 focus-visible:outline-3',
-      content: 'outline-success-6/25',
+      indicator: 'bg-success',
+      trigger: 'data-[state=active]:text-background outline-success/25 focus-visible:outline-3',
+      content: 'outline-success/25',
     },
     link: {
-      indicator: 'bg-success-6',
-      trigger: 'data-[state=active]:text-success-6 outline-success-6/25 focus-visible:outline-3',
-      content: 'outline-success-6/25',
+      indicator: 'bg-success',
+      trigger: 'data-[state=active]:text-success outline-success/25 focus-visible:outline-3',
+      content: 'outline-success/25',
     },
   },
   info: {
     pill: {
-      indicator: 'bg-info-6',
-      trigger: 'data-[state=active]:text-white outline-info-6/25 focus-visible:outline-3',
-      content: 'outline-info-6/25',
+      indicator: 'bg-info',
+      trigger: 'data-[state=active]:text-background outline-info/25 focus-visible:outline-3',
+      content: 'outline-info/25',
     },
     link: {
-      indicator: 'bg-info-6',
-      trigger: 'data-[state=active]:text-info-6 outline-info-6/25 focus-visible:outline-3',
-      content: 'outline-info-6/25',
+      indicator: 'bg-info',
+      trigger: 'data-[state=active]:text-info outline-info/25 focus-visible:outline-3',
+      content: 'outline-info/25',
     },
   },
   warning: {
     pill: {
-      indicator: 'bg-warning-6',
-      trigger: 'data-[state=active]:text-white outline-warning-6/25 focus-visible:outline-3',
-      content: 'outline-warning-6/25',
+      indicator: 'bg-warning',
+      trigger: 'data-[state=active]:text-background outline-warning/25 focus-visible:outline-3',
+      content: 'outline-warning/25',
     },
     link: {
-      indicator: 'bg-warning-6',
-      trigger: 'data-[state=active]:text-warning-6 outline-warning-6/25 focus-visible:outline-3',
-      content: 'outline-warning-6/25',
+      indicator: 'bg-warning',
+      trigger: 'data-[state=active]:text-warning outline-warning/25 focus-visible:outline-3',
+      content: 'outline-warning/25',
     },
   },
   error: {
     pill: {
-      indicator: 'bg-error-6',
-      trigger: 'data-[state=active]:text-white outline-error-6/25 focus-visible:outline-3',
-      content: 'outline-error-6/25',
+      indicator: 'bg-error',
+      trigger: 'data-[state=active]:text-background outline-error/25 focus-visible:outline-3',
+      content: 'outline-error/25',
     },
     link: {
-      indicator: 'bg-error-6',
-      trigger: 'data-[state=active]:text-error-6 outline-error-6/25 focus-visible:outline-3',
-      content: 'outline-error-6/25',
+      indicator: 'bg-error',
+      trigger: 'data-[state=active]:text-error outline-error/25 focus-visible:outline-3',
+      content: 'outline-error/25',
     },
   },
 }

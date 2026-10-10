@@ -26,7 +26,7 @@ import XButton from '@/components/kit/XButton.vue'
     <XCard title="title / description 插槽" description="单独替换标题或描述内容">
       <template #title>
         <span class="flex items-center gap-1.5">
-          <span class="size-2 rounded-full bg-success-6" />
+          <span class="size-2 rounded-full bg-success" />
           自定义标题节点
         </span>
       </template>

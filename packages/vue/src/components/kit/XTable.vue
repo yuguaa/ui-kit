@@ -460,7 +460,7 @@ defineExpose({ tableRef, tableApi })
     :as="props.as ?? 'div'"
     v-bind="$attrs"
     data-slot="root"
-    :class="cn('relative overflow-auto outline-primary-6/25 focus-visible:outline-3', props.ui?.root, props.class)"
+    :class="cn('relative overflow-auto outline-primary/25 focus-visible:outline-3', props.ui?.root, props.class)"
   >
     <table data-slot="base" :class="cn('min-w-full overflow-clip', props.ui?.base)">
       <caption
@@ -527,7 +527,7 @@ defineExpose({ tableRef, tableApi })
         data-slot="tbody"
         :class="cn(
           'isolate divide-y divide-border',
-          '[&>tr]:data-[selectable=true]:hover:bg-muted/50 [&>tr]:data-[selectable=true]:outline-primary-6/25 [&>tr]:data-[selectable=true]:focus-visible:outline-3 [&>tr]:data-[selectable=true]:-outline-offset-3',
+          '[&>tr]:data-[selectable=true]:hover:bg-muted/50 [&>tr]:data-[selectable=true]:outline-primary/25 [&>tr]:data-[selectable=true]:focus-visible:outline-3 [&>tr]:data-[selectable=true]:-outline-offset-3',
           props.ui?.tbody,
         )"
       >

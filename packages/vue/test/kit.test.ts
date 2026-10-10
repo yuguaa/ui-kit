@@ -23,16 +23,16 @@ import { useToast } from "@/components/kit/XToast";
 describe("XButton", () => {
   it("默认 solid / md / primary，应用原子 buttonVariants", () => {
     const wrapper = mount(XButton, { slots: { default: "确认" } });
-    expect(wrapper.classes()).toContain("bg-primary-6");
-    expect(wrapper.classes()).toContain("text-white");
+    expect(wrapper.classes()).toContain("bg-primary");
+    expect(wrapper.classes()).toContain("text-background");
     expect(wrapper.attributes("data-variant")).toBe("default");
     expect(wrapper.text()).toBe("确认");
   });
 
   it("soft × success 变体与语义色", () => {
     const wrapper = mount(XButton, { props: { variant: "soft", color: "success" }, slots: { default: "保存" } });
-    expect(wrapper.classes()).toContain("bg-success-1");
-    expect(wrapper.classes()).toContain("text-success-7");
+    expect(wrapper.classes()).toContain("bg-success/10");
+    expect(wrapper.classes()).toContain("text-success");
   });
 
   it("xl 尺寸覆盖原子尺寸", () => {
@@ -75,8 +75,8 @@ describe("XButton", () => {
     const wrapper = mount(XButton, {
       props: { active: true, activeColor: "success", activeVariant: "soft" },
     });
-    expect(wrapper.classes()).toContain("bg-success-1");
-    expect(wrapper.classes()).toContain("text-success-7");
+    expect(wrapper.classes()).toContain("bg-success/10");
+    expect(wrapper.classes()).toContain("text-success");
   });
 
   it("as 渲染为指定元素", () => {
@@ -87,7 +87,7 @@ describe("XButton", () => {
     });
     expect(wrapper.element.tagName).toBe("A");
     expect(wrapper.attributes("href")).toBe("/docs");
-    expect(wrapper.classes()).toContain("bg-primary-6");
+    expect(wrapper.classes()).toContain("bg-primary");
   });
 
   it("loadingAuto 点击返回 Promise 时进入加载态", async () => {
@@ -145,8 +145,8 @@ describe("XButtonGroup", () => {
 describe("XAlert", () => {
   it("color 与 variant 语义色类", () => {
     const wrapper = mount(XAlert, { props: { color: "success", variant: "soft", title: "完成" } });
-    expect(wrapper.classes()).toContain("bg-success-1");
-    expect(wrapper.classes()).toContain("text-success-7");
+    expect(wrapper.classes()).toContain("bg-success/10");
+    expect(wrapper.classes()).toContain("text-success");
   });
 
   it("title 与 message 并存时 title 优先", () => {
@@ -190,7 +190,7 @@ describe("XAlert", () => {
     });
     const button = wrapper.find("button");
     expect(button.text()).toContain("关闭提示");
-    expect(button.classes()).toContain("text-info-7");
+    expect(button.classes()).toContain("text-info");
   });
 
   it("leading 与 close 插槽接收 ui 参数", () => {
@@ -262,8 +262,8 @@ describe("XBadge", () => {
   it("独立模式显示数字与颜色", () => {
     const wrapper = mount(XBadge, { props: { count: 5 } });
     expect(wrapper.text()).toBe("5");
-    expect(wrapper.classes()).toContain("bg-primary-6");
-    expect(wrapper.classes()).toContain("text-white");
+    expect(wrapper.classes()).toContain("bg-primary");
+    expect(wrapper.classes()).toContain("text-background");
   });
 
   it("超出 overflowCount 显示 99+", () => {
@@ -273,7 +273,7 @@ describe("XBadge", () => {
 
   it("dot 模式显示圆点", () => {
     const wrapper = mount(XBadge, { props: { dot: true }, slots: { default: "消息" } });
-    expect(wrapper.find(".bg-error-6").exists()).toBe(true);
+    expect(wrapper.find(".bg-error").exists()).toBe(true);
     expect(wrapper.text()).toContain("消息");
   });
 
@@ -342,8 +342,8 @@ describe("XChip", () => {
   it("渲染语义色芯片", () => {
     const wrapper = mount(XChip, { props: { color: "error" }, slots: { default: "失败" } });
     const base = wrapper.find("[data-slot='base']");
-    expect(base.classes()).toContain("bg-error-1");
-    expect(base.classes()).toContain("text-error-7");
+    expect(base.classes()).toContain("bg-error/10");
+    expect(base.classes()).toContain("text-error");
   });
 
   it("closable 点击关闭按钮触发 close 事件", async () => {
@@ -408,7 +408,7 @@ describe("XAvatar", () => {
 
   it("chip 布尔渲染默认圆点", () => {
     const wrapper = mount(XAvatar, { props: { text: "U", chip: true } });
-    expect(wrapper.find(".bg-primary-6.size-2").exists()).toBe(true);
+    expect(wrapper.find(".bg-primary.size-2").exists()).toBe(true);
   });
 
   it("chip 对象渲染文字徽标与位置", () => {
@@ -419,7 +419,7 @@ describe("XAvatar", () => {
     const chip = wrapper.find("[data-slot='root']");
     expect(chip.classes()).toContain("bottom-0");
     expect(chip.classes()).toContain("left-0");
-    expect(wrapper.find("[data-slot='base']").classes()).toContain("bg-success-1");
+    expect(wrapper.find("[data-slot='base']").classes()).toContain("bg-success/10");
   });
 
   it("ui 插槽类名应用到 root 与 fallback", () => {
@@ -709,7 +709,7 @@ describe("XSeparator", () => {
 
   it("color 应用语义色边框", () => {
     const wrapper = mount(XSeparator, { props: { color: "error" } });
-    expect(wrapper.find("[data-slot='border']").classes()).toContain("border-error-6");
+    expect(wrapper.find("[data-slot='border']").classes()).toContain("border-error");
   });
 
   it("icon 与 avatar 渲染在容器中", () => {
@@ -782,7 +782,7 @@ describe("XAvatar 文字头像与语义色", () => {
   it("无图片时渲染 text 并应用语义色", () => {
     const wrapper = mount(XAvatar, { props: { text: "张三", color: "primary" } });
     expect(wrapper.text()).toContain("张三");
-    expect(wrapper.find(".bg-primary-1").exists()).toBe(true);
+    expect(wrapper.find("[class*='bg-primary/10']").exists()).toBe(true);
   });
 
   it("头像组向未指定颜色的子头像透传语义色", () => {
@@ -790,8 +790,8 @@ describe("XAvatar 文字头像与语义色", () => {
       props: { color: "success" },
       slots: { default: () => [h(XAvatar, { text: "A" }), h(XAvatar, { text: "B", color: "error" })] },
     });
-    expect(wrapper.find(".bg-success-1").exists()).toBe(true);
-    expect(wrapper.find(".bg-error-1").exists()).toBe(true);
+    expect(wrapper.find("[class*='bg-success/10']").exists()).toBe(true);
+    expect(wrapper.find("[class*='bg-error/10']").exists()).toBe(true);
   });
 });
 

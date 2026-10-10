@@ -146,7 +146,7 @@ provide(
           <slot name="label" :label="label">
             {{ label }}
           </slot>
-          <span v-if="required" class="ml-0.5 text-error-6">*</span>
+          <span v-if="required" class="ml-0.5 text-error">*</span>
         </Label>
         <span
           v-if="hasHint"
@@ -187,7 +187,7 @@ provide(
         :id="`${ariaId}-error`"
         role="alert"
         data-slot="error"
-        :class="cn('mt-2 text-error-6', props.ui?.error)"
+        :class="cn('mt-2 text-error', props.ui?.error)"
       >
         <slot name="error" :error="fieldError">
           {{ fieldError }}

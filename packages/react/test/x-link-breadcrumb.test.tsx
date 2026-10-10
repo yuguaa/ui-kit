@@ -11,7 +11,7 @@ describe("XLink", () => {
 
     rerender(<XLink to="/docs" active inactiveClass="custom-inactive">文档</XLink>);
     expect(screen.getByRole("link")).not.toHaveClass("custom-inactive");
-    expect(screen.getByRole("link")).toHaveClass("text-primary-7");
+    expect(screen.getByRole("link")).toHaveClass("text-primary/75");
   });
 
   it("ui.base 应用到根元素", () => {
@@ -59,7 +59,7 @@ describe("XBreadcrumb", () => {
     const links = document.querySelectorAll("[data-slot='link']");
     const lastLink = links[links.length - 1] as HTMLElement;
     expect(lastLink).toHaveAttribute("aria-current", "page");
-    expect(lastLink).toHaveClass("text-primary-6");
+    expect(lastLink).toHaveClass("text-primary");
     expect(lastLink).toHaveClass("font-semibold");
 
     const firstLink = links[0] as HTMLElement;
@@ -77,7 +77,7 @@ describe("XBreadcrumb", () => {
   it("color 控制激活项文字色", () => {
     render(<XBreadcrumb items={items} color="success" />);
     const links = document.querySelectorAll("[data-slot='link']");
-    expect(links[links.length - 1]).toHaveClass("text-success-6");
+    expect(links[links.length - 1]).toHaveClass("text-success");
   });
 
   it("ui 插槽类名应用到对应元素", () => {

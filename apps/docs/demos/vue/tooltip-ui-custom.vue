@@ -10,7 +10,7 @@ import XButton from '@/components/kit/XButton.vue'
       <XButton variant="outline" color="neutral">自定义内容</XButton>
       <template #content>
         <span class="flex items-center gap-1.5">
-          <BadgeCheck class="size-4 text-success-6" />
+          <BadgeCheck class="size-4 text-success" />
           content 插槽替换默认内容
         </span>
       </template>
@@ -18,7 +18,7 @@ import XButton from '@/components/kit/XButton.vue'
 
     <XTooltip
       text="主题定制"
-      :ui="{ content: 'h-7 rounded-md border border-primary-3 bg-primary-1 text-primary-7', text: 'font-medium' }"
+      :ui="{ content: 'h-7 rounded-md border border-primary/20 bg-primary/10 text-primary', text: 'font-medium' }"
     >
       <XButton variant="outline" color="neutral">定制气泡</XButton>
     </XTooltip>

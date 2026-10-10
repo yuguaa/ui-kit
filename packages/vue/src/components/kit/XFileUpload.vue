@@ -283,23 +283,23 @@ defineExpose({
 /* ---- 样式映射（Nuxt UI 主题语义 → 本地 token） ---- */
 
 const colorClasses: Record<FileUploadColor, string> = {
-  primary: 'outline-primary-6/25 focus-visible:outline-3 focus-visible:border-primary-6',
+  primary: 'outline-primary/25 focus-visible:outline-3 focus-visible:border-primary',
   secondary: 'outline-secondary/25 focus-visible:outline-3 focus-visible:border-secondary',
   neutral: 'outline-foreground/25 focus-visible:outline-3 focus-visible:border-foreground',
-  success: 'outline-success-6/25 focus-visible:outline-3 focus-visible:border-success-6',
-  info: 'outline-info-6/25 focus-visible:outline-3 focus-visible:border-info-6',
-  warning: 'outline-warning-6/25 focus-visible:outline-3 focus-visible:border-warning-6',
-  error: 'outline-error-6/25 focus-visible:outline-3 focus-visible:border-error-6',
+  success: 'outline-success/25 focus-visible:outline-3 focus-visible:border-success',
+  info: 'outline-info/25 focus-visible:outline-3 focus-visible:border-info',
+  warning: 'outline-warning/25 focus-visible:outline-3 focus-visible:border-warning',
+  error: 'outline-error/25 focus-visible:outline-3 focus-visible:border-error',
 }
 
 const highlightClasses: Record<FileUploadColor, string> = {
-  primary: 'border-primary-6',
+  primary: 'border-primary',
   secondary: 'border-secondary',
   neutral: 'border-border',
-  success: 'border-success-6',
-  info: 'border-info-6',
-  warning: 'border-warning-6',
-  error: 'border-error-6',
+  success: 'border-success',
+  info: 'border-info',
+  warning: 'border-warning',
+  error: 'border-error',
 }
 
 /** 尺寸 → 文字、图标与文件项 */

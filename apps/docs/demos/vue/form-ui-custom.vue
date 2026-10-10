@@ -6,7 +6,7 @@ const [Form] = useXForm({ defaultValues: { name: '' } })
 
 <template>
   <Form
-    :ui="{ root: 'rounded-xl border border-dashed border-primary-5 bg-primary-1/50 p-4 gap-2' }"
+    :ui="{ root: 'rounded-xl border border-dashed border-primary/50 bg-primary/10 p-4 gap-2' }"
     class="w-full"
   >
     <XFormField name="name" label="姓名">

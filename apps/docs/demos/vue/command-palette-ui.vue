@@ -17,7 +17,7 @@ const open = ref(false)
         root: 'rounded-lg',
         input: 'h-10',
         item: 'rounded-lg',
-        itemLeadingIcon: 'text-info-6',
+        itemLeadingIcon: 'text-info',
         group: 'p-0.5',
       }"
       :groups="[

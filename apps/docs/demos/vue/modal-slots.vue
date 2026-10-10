@@ -19,7 +19,7 @@ const closeSlotOpen = ref(false)
   <XModal v-model:open="slotsOpen" title="插槽组合" description="header / actions / body / footer 插槽自由组合。">
     <template #header>
       <div class="flex items-center gap-2">
-        <Info class="size-4 text-info-6" />
+        <Info class="size-4 text-info" />
         <span class="font-semibold">自定义头部</span>
       </div>
     </template>

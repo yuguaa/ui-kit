@@ -93,7 +93,7 @@ function onClick(event: MouseEvent) {
       'overflow-hidden rounded-lg bg-card text-card-foreground',
       variantStyles[variant],
       bordered && 'ring-1 ring-inset ring-border',
-      hoverable && 'cursor-pointer transition-shadow duration-200 hover:shadow-md hover:ring-primary-3',
+      hoverable && 'cursor-pointer transition-shadow duration-200 hover:shadow-md hover:ring-primary/25',
       ui?.root,
       props.class,
     )"

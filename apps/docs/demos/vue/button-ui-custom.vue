@@ -18,7 +18,7 @@ const active = ref<'day' | 'week'>('day')
         <XButton
           variant="soft"
           color="info"
-          :ui="{ base: 'ring-2 ring-info-3', label: 'italic' }"
+          :ui="{ base: 'ring-2 ring-info/20', label: 'italic' }"
         >
           带描边与斜体
         </XButton>

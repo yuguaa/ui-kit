@@ -474,24 +474,24 @@ const variantClasses: Record<InputMenuVariant, string> = {
 
 /** 颜色映射：聚焦描边 */
 const colorClasses: Record<InputMenuColor, string> = {
-  primary: 'focus-within:ring-2 focus-within:ring-primary-5',
+  primary: 'focus-within:ring-2 focus-within:ring-primary/50',
   secondary: 'focus-within:ring-2 focus-within:ring-secondary',
   neutral: 'focus-within:ring-2 focus-within:ring-foreground',
-  success: 'focus-within:ring-2 focus-within:ring-success-5',
-  info: 'focus-within:ring-2 focus-within:ring-info-5',
-  warning: 'focus-within:ring-2 focus-within:ring-warning-5',
-  error: 'focus-within:ring-2 focus-within:ring-error-5',
+  success: 'focus-within:ring-2 focus-within:ring-success/50',
+  info: 'focus-within:ring-2 focus-within:ring-info/50',
+  warning: 'focus-within:ring-2 focus-within:ring-warning/50',
+  error: 'focus-within:ring-2 focus-within:ring-error/50',
 }
 
 /** 高亮描边颜色 */
 const highlightClasses: Record<InputMenuColor, string> = {
-  primary: 'ring-primary-5',
+  primary: 'ring-primary',
   secondary: 'ring-secondary',
   neutral: 'ring-foreground/30',
-  success: 'ring-success-5',
-  info: 'ring-info-5',
-  warning: 'ring-warning-5',
-  error: 'ring-error-5',
+  success: 'ring-success',
+  info: 'ring-info',
+  warning: 'ring-warning',
+  error: 'ring-error',
 }
 
 const currentSize = computed(() => sizeClasses[props.size])

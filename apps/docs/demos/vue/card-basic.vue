@@ -10,7 +10,7 @@ import XButton from '@/components/kit/XButton.vue'
       这是卡片的主体内容。
     </XCard>
     <XCard :bordered="false" hoverable size="small" title="无边框卡片">
-      <template #cover><div class="h-20 bg-gradient-to-r from-primary-1 to-primary-3" /></template>
+      <template #cover><div class="h-20 bg-gradient-to-r from-primary/10 to-primary/20" /></template>
       悬浮试试。
     </XCard>
   </div>

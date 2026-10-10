@@ -29,35 +29,35 @@ export interface SwitchUi {
 
 /** 选中时滑块轨道的语义色 */
 const baseColorClasses: Record<SwitchColor, string> = {
-  primary: 'data-[state=checked]:bg-primary-6',
+  primary: 'data-[state=checked]:bg-primary',
   secondary: 'data-[state=checked]:bg-secondary',
   neutral: 'data-[state=checked]:bg-foreground',
-  success: 'data-[state=checked]:bg-success-6',
-  info: 'data-[state=checked]:bg-info-6',
-  warning: 'data-[state=checked]:bg-warning-6',
-  error: 'data-[state=checked]:bg-error-6',
+  success: 'data-[state=checked]:bg-success',
+  info: 'data-[state=checked]:bg-info',
+  warning: 'data-[state=checked]:bg-warning',
+  error: 'data-[state=checked]:bg-error',
 }
 
 /** 选中时滑块内图标的颜色 */
 const iconColorClasses: Record<SwitchColor, string> = {
-  primary: 'group-data-[state=checked]:text-primary-6',
+  primary: 'group-data-[state=checked]:text-primary',
   secondary: 'group-data-[state=checked]:text-secondary',
   neutral: 'group-data-[state=checked]:text-foreground',
-  success: 'group-data-[state=checked]:text-success-6',
-  info: 'group-data-[state=checked]:text-info-6',
-  warning: 'group-data-[state=checked]:text-warning-6',
-  error: 'group-data-[state=checked]:text-error-6',
+  success: 'group-data-[state=checked]:text-success',
+  info: 'group-data-[state=checked]:text-info',
+  warning: 'group-data-[state=checked]:text-warning',
+  error: 'group-data-[state=checked]:text-error',
 }
 
 /** highlight 常显聚焦环颜色 */
 const highlightClasses: Record<SwitchColor, string> = {
-  primary: 'ring-primary-6',
+  primary: 'ring-primary',
   secondary: 'ring-secondary',
   neutral: 'ring-foreground',
-  success: 'ring-success-6',
-  info: 'ring-info-6',
-  warning: 'ring-warning-6',
-  error: 'ring-error-6',
+  success: 'ring-success',
+  info: 'ring-info',
+  warning: 'ring-warning',
+  error: 'ring-error',
 }
 
 /** 尺寸:轨道、滑块、容器高度与文字 */
@@ -167,7 +167,7 @@ const wrapperClass = computed(() => cn(
 
 const labelClass = computed(() => cn(
   'block font-medium text-foreground',
-  props.required && "after:content-['*'] after:ms-0.5 after:text-error-6",
+  props.required && "after:content-['*'] after:ms-0.5 after:text-error",
   props.disabled && 'cursor-not-allowed',
   props.ui?.label,
 ))

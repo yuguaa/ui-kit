@@ -53,7 +53,7 @@ describe("XCheckbox 变体 / indicator / ui", () => {
       props: { required: true, highlight: true, color: "success", label: "必选项" },
     });
     expect(wrapper.find("[data-slot='label']").classes()).toContain("after:content-['*']");
-    expect(wrapper.find("[data-slot='base']").classes()).toContain("ring-success-6");
+    expect(wrapper.find("[data-slot='base']").classes()).toContain("ring-success");
   });
 
   it("as 渲染为指定元素", () => {
@@ -126,9 +126,9 @@ describe("XRadioGroup orientation / legend / 字段映射 / ui", () => {
     const wrapper = mount(XRadioGroup, {
       props: { modelValue: "basic", options: plans, valueKey: "id", color: "success", size: "sm", highlight: true },
     });
-    expect(wrapper.find("[data-slot='indicator']").classes()).toContain("bg-success-6");
+    expect(wrapper.find("[data-slot='indicator']").classes()).toContain("bg-success");
     expect(wrapper.find("[data-slot='base']").classes()).toContain("size-3.5");
-    expect(wrapper.find("[data-slot='base']").classes()).toContain("ring-success-6");
+    expect(wrapper.find("[data-slot='base']").classes()).toContain("ring-success");
   });
 
   it("indicator hidden 时显示 option.icon 且控件隐藏", () => {
@@ -196,7 +196,7 @@ describe("XSwitch color / 图标 / highlight / ui", () => {
     });
     expect(wrapper.find("[data-slot='root']").classes()).toContain("custom-root");
     expect(wrapper.find("[data-slot='base']").classes()).toContain("custom-base");
-    expect(wrapper.find("[data-slot='base']").classes()).toContain("data-[state=checked]:bg-success-6");
+    expect(wrapper.find("[data-slot='base']").classes()).toContain("data-[state=checked]:bg-success");
     expect(wrapper.find("[data-slot='container']").classes()).toContain("custom-container");
     expect(wrapper.find("[data-slot='thumb']").classes()).toContain("custom-thumb");
     expect(wrapper.find("[data-slot='wrapper']").classes()).toContain("custom-wrapper");
@@ -224,7 +224,7 @@ describe("XSwitch color / 图标 / highlight / ui", () => {
     const wrapper = mount(XSwitch, {
       props: { highlight: true, color: "info", required: true, label: "必选项" },
     });
-    expect(wrapper.find("[data-slot='base']").classes()).toContain("ring-info-6");
+    expect(wrapper.find("[data-slot='base']").classes()).toContain("ring-info");
     expect(wrapper.find("[data-slot='label']").classes()).toContain("after:content-['*']");
   });
 

@@ -15,11 +15,11 @@ import { XForm, XFormField, XInput } from '@/components/kit'
     </XFormField>
     <XFormField name="email" label="邮箱">
       <template #label>
-        <span class="text-primary-6">邮箱地址</span>
+        <span class="text-primary">邮箱地址</span>
       </template>
       <template #hint>8-20 位</template>
       <template #description>
-        <span class="text-info-6">用于接收订单通知</span>
+        <span class="text-info">用于接收订单通知</span>
       </template>
       <template #help>
         <span class="text-neutral-5">不会公开显示</span>

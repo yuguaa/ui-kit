@@ -13,7 +13,7 @@ import XInputRating from '@/components/kit/XInputRating.vue'
       <XInputRating
         :model-value="3"
         color="primary"
-        :ui="{ root: 'gap-2', indicator: 'fill-error-6 text-error-6' }"
+        :ui="{ root: 'gap-2', indicator: 'fill-error text-error' }"
       />
       <XInputRating :model-value="2">
         <template #item="{ index }">

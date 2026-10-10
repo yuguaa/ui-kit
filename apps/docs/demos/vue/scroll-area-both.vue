@@ -10,7 +10,7 @@ const cells = Array.from({ length: 30 }, (_, index) => index + 1)
       <div
         v-for="cell in cells"
         :key="cell"
-        class="flex h-16 w-28 items-center justify-center rounded-md bg-info-1 text-sm text-info-7"
+        class="flex h-16 w-28 items-center justify-center rounded-md bg-info/10 text-sm text-info"
       >
         格 {{ cell }}
       </div>

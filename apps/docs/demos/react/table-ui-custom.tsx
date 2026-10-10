@@ -39,8 +39,8 @@ export default function TableUiCustom() {
         }
         ui={{
           root: "rounded-lg border shadow-xs",
-          thead: "bg-primary-1",
-          th: "text-primary-8",
+          thead: "bg-primary/10",
+          th: "text-primary",
           td: "text-default",
           loading: "py-10",
         }}
@@ -49,7 +49,7 @@ export default function TableUiCustom() {
       <XTable
         columns={columns}
         data={[]}
-        emptySlot={<p className="text-error-6">一行数据都没有</p>}
+        emptySlot={<p className="text-error">一行数据都没有</p>}
         ui={{ empty: "py-10 text-base" }}
       />
 

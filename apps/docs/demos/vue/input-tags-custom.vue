@@ -12,7 +12,7 @@ import XInputTags from '@/components/kit/XInputTags.vue'
     </XInputTags>
     <XInputTags :model-value="['Nuxt']" class="w-80">
       <template #tag="{ tag }">
-        <span class="inline-flex items-center gap-1 rounded-xs bg-success-1 px-1.5 py-0.5 text-xs font-medium text-success-7 ring-1 ring-inset ring-success-3">
+        <span class="inline-flex items-center gap-1 rounded-xs bg-success/10 px-1.5 py-0.5 text-xs font-medium text-success ring-1 ring-inset ring-success/20">
           <TagIcon class="size-3" />
           {{ tag }}
         </span>
@@ -23,8 +23,8 @@ import XInputTags from '@/components/kit/XInputTags.vue'
       class="w-80"
       :ui="{
         base: 'rounded-xl border border-dashed',
-        item: 'bg-primary-1 text-primary-7 ring-primary-3',
-        itemDeleteIcon: 'text-error-6',
+        item: 'bg-primary/10 text-primary ring-primary/20',
+        itemDeleteIcon: 'text-error',
       }"
     />
   </div>

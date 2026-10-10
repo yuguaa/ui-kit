@@ -66,7 +66,7 @@ describe("XProgress", () => {
       props: { color: "success", animation: "swing" },
     });
     const indicator = wrapper.find("[data-slot='indicator']");
-    expect(indicator.classes()).toContain("bg-success-6");
+    expect(indicator.classes()).toContain("bg-success");
     expect(indicator.classes()).toContain("motion-safe:data-[state=indeterminate]:animate-[swing_2s_var(--ease-in-out)_infinite]");
   });
 
@@ -105,11 +105,11 @@ describe("XProgress", () => {
 describe("XSlider", () => {
   it("color 与 size 应用对应类名", () => {
     const wrapper = mount(XSlider, { props: { modelValue: 40, color: "success", size: "xl" } });
-    expect(wrapper.find("[data-slot='range']").classes()).toContain("bg-success-6");
+    expect(wrapper.find("[data-slot='range']").classes()).toContain("bg-success");
     expect(wrapper.find("[data-slot='track']").classes()).toContain("h-[10px]");
     const thumb = wrapper.find("[data-slot='thumb']");
     expect(thumb.classes()).toContain("size-5");
-    expect(thumb.classes()).toContain("ring-success-6");
+    expect(thumb.classes()).toContain("ring-success");
   });
 
   it("ui 插槽类名应用到对应元素", () => {

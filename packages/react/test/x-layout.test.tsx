@@ -19,8 +19,8 @@ describe("XChip", () => {
   it("渲染语义色芯片", () => {
     render(<XChip color="error">失败</XChip>);
     const chip = screen.getByText("失败");
-    expect(chip).toHaveClass("bg-error-1");
-    expect(chip).toHaveClass("text-error-7");
+    expect(chip).toHaveClass("bg-error/10");
+    expect(chip).toHaveClass("text-error");
     expect(chip).toHaveClass("rounded-full");
   });
 
@@ -55,7 +55,7 @@ describe("XAvatar", () => {
 
   it("chip 布尔渲染默认圆点", () => {
     const { container } = render(<XAvatar text="U" chip />);
-    const dot = container.querySelector(".bg-primary-6.size-2");
+    const dot = container.querySelector(".bg-primary.size-2");
     expect(dot).toBeInTheDocument();
   });
 
@@ -65,7 +65,7 @@ describe("XAvatar", () => {
     const chip = container.querySelector("[data-slot='root']");
     expect(chip).toHaveClass("bottom-0");
     expect(chip).toHaveClass("left-0");
-    expect(container.querySelector("[data-slot='base']")).toHaveClass("bg-success-1");
+    expect(container.querySelector("[data-slot='base']")).toHaveClass("bg-success/10");
   });
 
   it("ui 插槽类名应用到 root 与 fallback", () => {
@@ -347,7 +347,7 @@ describe("XSeparator", () => {
 
   it("color 应用语义色边框", () => {
     const { container } = render(<XSeparator color="error" />);
-    expect(container.querySelector("[data-slot='border']")).toHaveClass("border-error-6");
+    expect(container.querySelector("[data-slot='border']")).toHaveClass("border-error");
   });
 
   it("icon 与 avatar 渲染在容器中", () => {
@@ -418,8 +418,8 @@ describe("XSkeleton", () => {
 describe("XAvatar 文字头像与语义色", () => {
   it("无图片时渲染 text 并应用语义色", () => {
     const { container } = render(<XAvatar text="张三" color="primary" />);
-    expect(screen.getByText("张三")).toHaveClass("text-primary-7");
-    expect(container.querySelector(".bg-primary-1")).toBeInTheDocument();
+    expect(screen.getByText("张三")).toHaveClass("text-primary");
+    expect(container.querySelector("[class*='bg-primary/10']")).toBeInTheDocument();
   });
 
   it("头像组向未指定颜色的子头像透传语义色", () => {
@@ -429,8 +429,8 @@ describe("XAvatar 文字头像与语义色", () => {
         <XAvatar text="B" color="error" />
       </XAvatarGroup>,
     );
-    expect(container.querySelector(".bg-success-1")).toBeInTheDocument();
-    expect(container.querySelector(".bg-error-1")).toBeInTheDocument();
+    expect(container.querySelector("[class*='bg-success/10']")).toBeInTheDocument();
+    expect(container.querySelector("[class*='bg-error/10']")).toBeInTheDocument();
   });
 });
 

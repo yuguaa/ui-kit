@@ -540,7 +540,7 @@ describe("XNavigationMenu", () => {
       },
     });
     const selected = wrapper.findAll("button").find((b) => b.text() === "仪表盘");
-    expect(selected?.classes()).toContain("bg-primary-1");
+    expect(selected?.classes()).toContain("bg-primary/10");
   });
 
   it("受控 value 展开子级，list-leading / list-trailing 插槽渲染", () => {

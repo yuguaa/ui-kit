@@ -16,11 +16,11 @@ export default function FormFieldUiCustom() {
         required
         ui={{
           root: "rounded-lg bg-muted/40 p-3",
-          label: "text-info-6",
+          label: "text-info",
           labelWrapper: "border-b border-dashed border-neutral-3 pb-1",
           description: "text-neutral-4 italic",
-          error: "text-warning-7 font-medium",
-          hint: "text-primary-5",
+          error: "text-warning font-medium",
+          hint: "text-primary/50",
         }}
       >
         <XInput

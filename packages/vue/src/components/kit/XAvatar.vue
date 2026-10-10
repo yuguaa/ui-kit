@@ -104,13 +104,13 @@ const sizeClasses: Record<AvatarSize, string> = {
 
 /** 语义色样式：1 阶背景、7 阶文字（warning 用 8 阶保证可读性） */
 const colorClasses: Record<AvatarColor, string> = {
-  primary: 'bg-primary-1 text-primary-7',
+  primary: 'bg-primary/10 text-primary',
   secondary: 'bg-muted text-secondary-foreground',
   neutral: 'bg-muted text-foreground',
-  success: 'bg-success-1 text-success-7',
-  info: 'bg-info-1 text-info-7',
-  warning: 'bg-warning-1 text-warning-8',
-  error: 'bg-error-1 text-error-7',
+  success: 'bg-success/10 text-success',
+  info: 'bg-info/10 text-info',
+  warning: 'bg-warning/10 text-warning',
+  error: 'bg-error/10 text-error',
 }
 
 /** 图片加载失败时切换为 fallback，src 变化后重置 */
@@ -137,13 +137,13 @@ const hasChipText = computed(() => chipConfig.value?.text != null)
 
 /** 圆点模式（无文字）的实心语义色 */
 const chipDotClasses: Record<ChipColor, string> = {
-  primary: 'bg-primary-6',
+  primary: 'bg-primary',
   secondary: 'bg-secondary',
   neutral: 'bg-foreground',
-  success: 'bg-success-6',
-  info: 'bg-info-6',
-  warning: 'bg-warning-6',
-  error: 'bg-error-6',
+  success: 'bg-success',
+  info: 'bg-info',
+  warning: 'bg-warning',
+  error: 'bg-error',
 }
 
 const chipClass = computed(() => {

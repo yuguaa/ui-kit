@@ -51,7 +51,7 @@ describe("XCheckbox 变体 / indicator / ui", () => {
       <XCheckbox required highlight color="success" label="必选项" />,
     );
     expect(container.querySelector("[data-slot='label']")).toHaveClass("after:content-['*']");
-    expect(container.querySelector("[data-slot='base']")).toHaveClass("ring-success-6");
+    expect(container.querySelector("[data-slot='base']")).toHaveClass("ring-success");
   });
 
   it("render 指定渲染元素", () => {
@@ -127,9 +127,9 @@ describe("XRadioGroup orientation / legend / 字段映射 / ui", () => {
     const { container } = render(
       <XRadioGroup value="basic" options={plans} valueKey="id" color="success" size="sm" highlight />,
     );
-    expect(container.querySelector("[data-slot='indicator']")).toHaveClass("bg-success-6");
+    expect(container.querySelector("[data-slot='indicator']")).toHaveClass("bg-success");
     expect(container.querySelector("[data-slot='base']")).toHaveClass("size-3.5");
-    expect(container.querySelector("[data-slot='base']")).toHaveClass("ring-success-6");
+    expect(container.querySelector("[data-slot='base']")).toHaveClass("ring-success");
   });
 
   it("indicator hidden 时显示 option.icon 且控件隐藏", () => {
@@ -207,7 +207,7 @@ describe("XSwitch color / 图标 / highlight / ui", () => {
     );
     expect(container.querySelector("[data-slot='root']")).toHaveClass("custom-root");
     expect(container.querySelector("[data-slot='base']")).toHaveClass("custom-base");
-    expect(container.querySelector("[data-slot='base']")).toHaveClass("data-checked:bg-success-6");
+    expect(container.querySelector("[data-slot='base']")).toHaveClass("data-checked:bg-success");
     expect(container.querySelector("[data-slot='container']")).toHaveClass("custom-container");
     expect(container.querySelector("[data-slot='thumb']")).toHaveClass("custom-thumb");
     expect(container.querySelector("[data-slot='wrapper']")).toHaveClass("custom-wrapper");
@@ -236,7 +236,7 @@ describe("XSwitch color / 图标 / highlight / ui", () => {
     const { container } = render(
       <XSwitch highlight color="info" required label="必选项" />,
     );
-    expect(container.querySelector("[data-slot='base']")).toHaveClass("ring-info-6");
+    expect(container.querySelector("[data-slot='base']")).toHaveClass("ring-info");
     expect(container.querySelector("[data-slot='label']")).toHaveClass("after:content-['*']");
   });
 

@@ -27,7 +27,7 @@ export default function AccordionSlots() {
       leading={({ open }) => <XIcon name={open ? "chevron-down" : "star"} />}
       body={({ item, open }) => (
         <>
-          {open && <span className="font-medium text-primary-6">展开中：</span>}
+          {open && <span className="font-medium text-primary">展开中：</span>}
           {String(item.content)}
         </>
       )}

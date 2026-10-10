@@ -14,11 +14,11 @@ export default function CarouselUi() {
       ui={{
         root: "rounded-lg ring-1 ring-inset ring-border p-6",
         item: "overflow-hidden rounded-lg",
-        dot: "bg-success-5",
+        dot: "bg-success/50",
       }}
     >
       {({ item }) => (
-        <div className="flex h-24 items-center justify-center rounded-lg bg-primary-1 text-primary-7">
+        <div className="flex h-24 items-center justify-center rounded-lg bg-primary/10 text-primary">
           Slide {item.key}
         </div>
       )}

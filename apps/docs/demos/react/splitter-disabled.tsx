@@ -9,7 +9,7 @@ export default function SplitterDisabled() {
   return (
     <div className="flex w-full flex-col gap-4">
       <div className="h-56">
-        <XSplitter items={items} disabled ui={{ panel: "bg-muted", handle: "bg-primary-5" }} className="h-full" />
+        <XSplitter items={items} disabled ui={{ panel: "bg-muted", handle: "bg-primary/50" }} className="h-full" />
       </div>
       <span className="text-muted-foreground text-sm">
         disabled 锁定全部拖拽条；ui 按 root / panel / handle 注入类名

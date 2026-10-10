@@ -17,7 +17,7 @@ export default function PinInputSeparator() {
           length={6}
           separator={3}
           separatorSlot={({ index }) => (
-            <span className="mx-1 text-xs text-primary-6">{index + 1}</span>
+            <span className="mx-1 text-xs text-primary">{index + 1}</span>
           )}
         />
       </div>

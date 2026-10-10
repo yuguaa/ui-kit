@@ -8,17 +8,16 @@ describe("XButton", () => {
   it("默认 solid / md / primary，并应用原子 buttonVariants", () => {
     render(<XButton>确认</XButton>);
     const button = screen.getByRole("button", { name: "确认" });
-    expect(button).toHaveClass("bg-primary-6");
-    expect(button).toHaveClass("text-white");
+    expect(button).toHaveClass("bg-primary");
+    expect(button).toHaveClass("text-background");
     expect(button).toHaveAttribute("data-variant", "default");
   });
 
   it("soft × success 变体与语义色", () => {
     render(<XButton variant="soft" color="success">保存</XButton>);
     const button = screen.getByRole("button", { name: "保存" });
-    expect(button).toHaveClass("bg-success-1");
-    expect(button).toHaveClass("text-success-7");
-    expect(button).toHaveClass("hover:bg-success-2");
+    expect(button).toHaveClass("bg-success/10");
+    expect(button).toHaveClass("text-success");
   });
 
   it("xl 尺寸覆盖原子尺寸", () => {
@@ -51,8 +50,8 @@ describe("XButton", () => {
   it("active 配合 activeColor / activeVariant 覆盖颜色与样式", () => {
     render(<XButton active activeColor="success" activeVariant="soft" />);
     const button = screen.getByRole("button");
-    expect(button).toHaveClass("bg-success-1");
-    expect(button).toHaveClass("text-success-7");
+    expect(button).toHaveClass("bg-success/10");
+    expect(button).toHaveClass("text-success");
   });
 
   it("render 指定渲染元素", () => {
@@ -116,8 +115,8 @@ describe("XButtonGroup", () => {
 describe("XBadge", () => {
   it("独立模式显示数字", () => {
     render(<XBadge count={5} />);
-    expect(screen.getByText("5")).toHaveClass("bg-primary-6");
-    expect(screen.getByText("5")).toHaveClass("text-white");
+    expect(screen.getByText("5")).toHaveClass("bg-primary");
+    expect(screen.getByText("5")).toHaveClass("text-background");
   });
 
   it("超出 overflowCount 显示 99+", () => {
@@ -127,7 +126,7 @@ describe("XBadge", () => {
 
   it("dot 模式显示圆点", () => {
     const { container } = render(<XBadge dot>消息</XBadge>);
-    expect(container.querySelector(".bg-error-6")).toBeInTheDocument();
+    expect(container.querySelector(".bg-error")).toBeInTheDocument();
     expect(screen.getByText("消息")).toBeInTheDocument();
   });
 

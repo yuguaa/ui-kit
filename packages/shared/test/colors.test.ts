@@ -1,69 +1,44 @@
-import { describe, expect, it } from "vitest";
-import { colorSeeds, generateAllPalettes, generatePalette, neutralPalette, paletteRoles, palettesToCssVars } from "../src/colors";
+import { colorPalettes, colorSeeds, getShade, neutralPalette, palettesToCssVars, shadeSteps, tailwindPalettes } from "../src/colors";
 
-describe("generatePalette", () => {
-  it("primary 色阶与原型一致（#1677ff 为种子）", () => {
-    const scale = generatePalette(colorSeeds.primary);
-    expect(scale).toEqual([
-      "#e6f4ff",
-      "#bae0ff",
-      "#91caff",
-      "#69b1ff",
-      "#4096ff",
-      "#1677ff",
-      "#0958d9",
-      "#003eb3",
-      "#002c8c",
-      "#001d66",
-    ]);
+describe("色板定义", () => {
+  it("每个语义色包含 50~950 十一级", () => {
+    for (const scale of Object.values(colorPalettes)) {
+      expect(scale).toHaveLength(11);
+    }
+    expect(shadeSteps).toEqual([50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950]);
   });
 
-  it("色阶角色位置：seed 位于第 6 级，hover 第 5 级，active 第 7 级，浅色底第 1 级", () => {
-    const scale = generatePalette("#1677ff");
-    expect(scale[paletteRoles.seed - 1]).toBe("#1677ff");
-    expect(scale[paletteRoles.hover - 1]).toBe("#4096ff");
-    expect(scale[paletteRoles.active - 1]).toBe("#0958d9");
-    expect(scale[paletteRoles.lightBackground - 1]).toBe("#e6f4ff");
+  it("primary 为 Tailwind green 色板（Nuxt UI 默认主色）", () => {
+    expect(colorPalettes.primary[5]).toBe("#22c55e");
+    expect(colorPalettes.primary[0]).toBe("#f0fdf4");
+    expect(getShade("primary", 500)).toBe("#22c55e");
   });
 
-  it("更换主色 seed 时整条色阶随之派生", () => {
-    const scale = generatePalette("#722ed1");
-    expect(scale[5]).toBe("#722ed1");
-    expect(scale).toHaveLength(10);
+  it("语义色与 Nuxt UI 默认一致", () => {
+    expect(colorSeeds.success).toBe("#22c55e");
+    expect(colorSeeds.info).toBe("#3b82f6");
+    expect(colorSeeds.warning).toBe("#f59e0b");
+    expect(colorSeeds.error).toBe("#ef4444");
   });
 
-  it("dark 主题生成反转色阶：索引 0 最暗，索引 9 最亮", () => {
-    const light = generatePalette("#1f1f1f");
-    const dark = generatePalette("#1f1f1f", "dark");
-    expect(dark).toEqual([
-      "#111111",
-      "#0f0f0f",
-      "#171717",
-      "#191919",
-      "#1b1b1b",
-      "#1d1d1d",
-      "#292929",
-      "#363636",
-      "#444444",
-      "#515151",
-    ]);
-    expect(dark[0]).not.toBe(light[0]);
+  it("neutralPalette 与 colorPalettes.neutral 一致", () => {
+    expect(neutralPalette).toEqual(colorPalettes.neutral);
+  });
+
+  it("tailwindPalettes 提供主题设计器的主色候选", () => {
+    expect(tailwindPalettes.green).toBeDefined();
+    expect(tailwindPalettes.blue[5]).toBe("#3b82f6");
+    expect(tailwindPalettes.indigo[5]).toBe("#6366f1");
   });
 });
 
-describe("generateAllPalettes / palettesToCssVars", () => {
-  it("覆盖全部语义色并生成 --color 变量", () => {
-    const palettes = generateAllPalettes();
-    expect(Object.keys(palettes)).toEqual(["primary", "success", "warning", "error", "info", "neutral"]);
-    const vars = palettesToCssVars(palettes);
-    expect(vars["--primary-6"]).toBe("#1677ff");
-    expect(vars["--error-6"]).toBe("#ff4d4f");
-    expect(Object.keys(vars)).toHaveLength(60);
-  });
-
-  it("dark 主题下彩色板生成反转色阶，中性板保持固定灰阶", () => {
-    const palettes = generateAllPalettes(undefined, "dark");
-    expect(palettes.primary[0]).toBe("#111a2c");
-    expect(palettes.neutral).toEqual(neutralPalette);
+describe("palettesToCssVars", () => {
+  it("生成裸变量与 --color-* 别名（键不带 -- 前缀）", () => {
+    const vars = palettesToCssVars(colorPalettes);
+    expect(vars["primary-500"]).toBe("#22c55e");
+    expect(vars["color-primary-500"]).toBe("var(--primary-500)");
+    expect(vars["color-primary"]).toBe("var(--primary-500)");
+    expect(vars["error-500"]).toBe("#ef4444");
+    expect(vars["neutral-50"]).toBe("#fafafa");
   });
 });

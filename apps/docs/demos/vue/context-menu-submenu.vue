@@ -33,7 +33,7 @@ const items = [
     </XContextMenu>
     <XContextMenu
       external-icon
-      :ui="{ content: 'border border-primary-3', itemLeadingIcon: 'text-info-6' }"
+      :ui="{ content: 'border border-primary/20', itemLeadingIcon: 'text-info' }"
       :items="[
         { key: 'site', label: '访问官网', icon: 'globe', target: '_blank' },
         { key: 'docs', label: '查看文档', icon: 'book', target: '_blank' },

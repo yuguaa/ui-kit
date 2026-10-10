@@ -42,7 +42,7 @@ export default function FormBasic() {
           <XButton type="button" variant="outline" onClick={() => formApi.reset()}>重置</XButton>
         </div>
       </Form>
-      {submitted && <p className="text-sm text-success-7">提交数据：{submitted}</p>}
+      {submitted && <p className="text-sm text-success/75">提交数据：{submitted}</p>}
     </div>
   );
 }

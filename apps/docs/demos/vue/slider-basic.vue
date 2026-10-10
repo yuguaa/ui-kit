@@ -11,6 +11,6 @@ const range = ref([30, 70])
     <XSlider v-model="value" size="sm" />
     <XSlider v-model="value" size="md" />
     <XSlider v-model="value" size="lg" />
-    <XSlider v-model="range" :ui="{ range: 'bg-info-6' }" />
+    <XSlider v-model="range" :ui="{ range: 'bg-info' }" />
   </div>
 </template>

@@ -11,7 +11,7 @@ describe("XLink", () => {
 
     const active = mount(XLink, { props: { to: "/docs", active: true, inactiveClass: "custom-inactive" }, slots: { default: "文档" } });
     expect(active.classes()).not.toContain("custom-inactive");
-    expect(active.classes()).toContain("text-primary-7");
+    expect(active.classes()).toContain("text-primary/75");
   });
 
   it("ui.base 应用到根元素", () => {
@@ -64,7 +64,7 @@ describe("XBreadcrumb", () => {
     const wrapper = mount(XBreadcrumb, { props: { items, color: "primary" } });
     const lastLink = wrapper.findAll("[data-slot='link']").at(-1);
     expect(lastLink?.attributes("aria-current")).toBe("page");
-    expect(lastLink?.classes()).toContain("text-primary-6");
+    expect(lastLink?.classes()).toContain("text-primary");
     expect(lastLink?.classes()).toContain("font-semibold");
 
     /* 中间项为链接且非激活：muted 文字 + hover 过渡 */
@@ -85,7 +85,7 @@ describe("XBreadcrumb", () => {
   it("color 控制激活项文字色", () => {
     const wrapper = mount(XBreadcrumb, { props: { items, color: "success" } });
     const lastLink = wrapper.findAll("[data-slot='link']").at(-1);
-    expect(lastLink?.classes()).toContain("text-success-6");
+    expect(lastLink?.classes()).toContain("text-success");
   });
 
   it("ui 插槽类名应用到对应元素", () => {

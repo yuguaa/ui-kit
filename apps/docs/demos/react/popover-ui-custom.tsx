@@ -17,8 +17,8 @@ export default function PopoverUiCustom() {
 
       <XPopover
         ui={{
-          content: "rounded-xl border border-primary-3 bg-primary-1",
-          arrow: "fill-primary-2 stroke-primary-3",
+          content: "rounded-xl border border-primary/20 bg-primary/10",
+          arrow: "fill-primary/10 stroke-primary/20",
         }}
         arrow
         content={

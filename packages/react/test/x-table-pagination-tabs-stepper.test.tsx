@@ -41,8 +41,8 @@ describe("XTabs 新能力", () => {
 
   it("color success 激活文字与聚焦环使用语义色", () => {
     render(<XTabs items={items} color="success" value="a" />);
-    expect(document.querySelector("[data-slot='trigger']")).toHaveClass("outline-success-6/25");
-    expect(document.querySelector("[data-slot='trigger']")).toHaveClass("data-active:text-white");
+    expect(document.querySelector("[data-slot='trigger']")).toHaveClass("outline-success/25");
+    expect(document.querySelector("[data-slot='trigger']")).toHaveClass("data-active:text-background");
   });
 
   it("icon / avatar / badge 字段渲染", () => {
@@ -115,7 +115,7 @@ describe("XPagination 新能力", () => {
   it("激活页码应用 activeColor / activeVariant 并标记 aria-current", () => {
     render(<XPagination page={2} total={30} itemsPerPage={10} />);
     const active = screen.getByRole("button", { name: "2" });
-    expect(active).toHaveClass("bg-primary-6");
+    expect(active).toHaveClass("bg-primary");
     expect(active).toHaveAttribute("aria-current", "page");
   });
 
@@ -161,7 +161,7 @@ describe("XPagination 新能力", () => {
 
   it("color / variant / size 传递到按钮", () => {
     render(<XPagination page={1} total={30} itemsPerPage={10} color="success" variant="soft" size="lg" />);
-    expect(screen.getByRole("button", { name: "2" })).toHaveClass("bg-success-1");
+    expect(screen.getByRole("button", { name: "2" })).toHaveClass("bg-success/10");
   });
 });
 
@@ -225,7 +225,7 @@ describe("XStepper 新能力", () => {
 
   it("color success 激活触发器使用语义色", () => {
     render(<XStepper items={items} color="success" value="basic" />);
-    expect(document.querySelector("[data-slot='trigger']")).toHaveClass("group-data-[state=active]:bg-success-6");
+    expect(document.querySelector("[data-slot='trigger']")).toHaveClass("group-data-[state=active]:bg-success");
   });
 
   it("disabled 状态反映到 data-disabled", () => {

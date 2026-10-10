@@ -15,10 +15,10 @@ const items = [
       root: 'rounded-lg border border-border px-4',
       item: 'border-dashed',
       header: 'bg-muted rounded-md',
-      trigger: 'text-primary-6 font-semibold',
-      leadingIcon: 'text-warning-6',
+      trigger: 'text-primary font-semibold',
+      leadingIcon: 'text-warning',
       label: 'tracking-wide',
-      trailingIcon: 'text-info-6',
+      trailingIcon: 'text-info',
       content: 'text-neutral-6',
       body: 'italic',
     }"

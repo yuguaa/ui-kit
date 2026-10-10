@@ -7,7 +7,7 @@ export default function InputDateSlots() {
       <XInputDate
         value="2025-06-15"
         className="w-56"
-        leading={<CalendarCheck className="size-5 text-success-6" />}
+        leading={<CalendarCheck className="size-5 text-success" />}
         trailing={<span className="text-xs text-muted-foreground">截止</span>}
       />
       <XInputDate
@@ -15,7 +15,7 @@ export default function InputDateSlots() {
         range
         className="w-72"
         separator={<span className="px-1 text-xs text-muted-foreground">至</span>}
-        ui={{ base: "rounded-xl ring-2 ring-inset ring-primary-6" }}
+        ui={{ base: "rounded-xl ring-2 ring-inset ring-primary" }}
       />
     </div>
   );

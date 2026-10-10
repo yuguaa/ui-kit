@@ -15,7 +15,7 @@ const active = ref<'hex' | 'rgb' | 'hsl' | 'cmyk' | 'lab'>('hex')
         :key="format"
         type="button"
         class="rounded-md px-3 py-1 text-sm outline-none transition-colors"
-        :class="active === format ? 'bg-primary-1 text-primary-7' : 'text-muted-foreground hover:bg-muted'"
+        :class="active === format ? 'bg-primary/10 text-primary' : 'text-muted-foreground hover:bg-muted'"
         @click="active = format"
       >
         {{ format }}

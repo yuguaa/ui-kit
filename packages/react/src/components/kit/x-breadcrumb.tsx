@@ -35,13 +35,13 @@ export interface XBreadcrumbItem {
 
 /** 激活项文字颜色（与 XButton link 变体一致的字面量） */
 const breadcrumbColorClasses: Record<XBreadcrumbColor, string> = {
-  primary: "text-primary-6",
+  primary: "text-primary",
   secondary: "text-secondary-foreground",
   neutral: "text-foreground",
-  success: "text-success-6",
-  info: "text-info-6",
-  warning: "text-warning-7",
-  error: "text-error-6",
+  success: "text-success",
+  info: "text-info",
+  warning: "text-warning",
+  error: "text-error",
 }
 
 export interface XBreadcrumbProps<T extends XBreadcrumbItem = XBreadcrumbItem> {

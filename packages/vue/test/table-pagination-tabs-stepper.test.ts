@@ -47,8 +47,8 @@ describe("XTabs 新能力", () => {
 
   it("color success 激活文字与聚焦环使用语义色", () => {
     const wrapper = mount(XTabs, { props: { items, color: "success", modelValue: "a" } });
-    expect(wrapper.find("[data-slot='trigger']").classes()).toContain("outline-success-6/25");
-    expect(wrapper.find("[data-slot='trigger']").classes()).toContain("data-[state=active]:text-white");
+    expect(wrapper.find("[data-slot='trigger']").classes()).toContain("outline-success/25");
+    expect(wrapper.find("[data-slot='trigger']").classes()).toContain("data-[state=active]:text-background");
   });
 
   it("icon / avatar / badge 字段渲染", () => {
@@ -136,7 +136,7 @@ describe("XPagination 新能力", () => {
   it("激活页码应用 activeColor / activeVariant", () => {
     const wrapper = mount(XPagination, { props: { page: 2, total: 30, itemsPerPage: 10 } });
     const active = wrapper.findAll("button").find((button) => button.text() === "2");
-    expect(active?.classes()).toContain("bg-primary-6");
+    expect(active?.classes()).toContain("bg-primary");
     const inactive = wrapper.findAll("button").find((button) => button.text() === "3");
     expect(inactive?.classes()).toContain("text-foreground");
   });
@@ -196,7 +196,7 @@ describe("XPagination 新能力", () => {
       props: { page: 1, total: 30, itemsPerPage: 10, color: "success", variant: "soft", size: "lg" },
     });
     const pageButton = wrapper.findAll("button").find((button) => button.text() === "2");
-    expect(pageButton?.classes()).toContain("bg-success-1");
+    expect(pageButton?.classes()).toContain("bg-success/10");
     expect(pageButton?.classes()).toContain("size-9");
   });
 });
@@ -261,7 +261,7 @@ describe("XStepper 新能力", () => {
 
   it("color success 激活触发器使用语义色", () => {
     const wrapper = mount(XStepper, { props: { items, color: "success", modelValue: "basic" } });
-    expect(wrapper.find("[data-slot='trigger']").classes()).toContain("group-data-[state=active]:bg-success-6");
+    expect(wrapper.find("[data-slot='trigger']").classes()).toContain("group-data-[state=active]:bg-success");
   });
 
   it("indicator / title / description / content 插槽自定义", () => {

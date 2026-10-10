@@ -145,10 +145,10 @@ const variantClasses: Record<FieldVariant, string> = {
 /** 聚焦描边（颜色 × 变体）：内部输入聚焦时叠加 outline 与 ring */
 const focusStyles: Record<FieldColor, Record<FieldVariant, string>> = {
   primary: {
-    outline: 'outline-primary-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-primary-6',
-    soft: 'outline-primary-6/25 has-focus-visible:outline-3',
-    subtle: 'outline-primary-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-primary-6',
-    ghost: 'outline-primary-6/25 has-focus-visible:outline-3',
+    outline: 'outline-primary/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-primary',
+    soft: 'outline-primary/25 has-focus-visible:outline-3',
+    subtle: 'outline-primary/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-primary',
+    ghost: 'outline-primary/25 has-focus-visible:outline-3',
     none: '',
   },
   secondary: {
@@ -166,44 +166,44 @@ const focusStyles: Record<FieldColor, Record<FieldVariant, string>> = {
     none: '',
   },
   success: {
-    outline: 'outline-success-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-success-6',
-    soft: 'outline-success-6/25 has-focus-visible:outline-3',
-    subtle: 'outline-success-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-success-6',
-    ghost: 'outline-success-6/25 has-focus-visible:outline-3',
+    outline: 'outline-success/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-success',
+    soft: 'outline-success/25 has-focus-visible:outline-3',
+    subtle: 'outline-success/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-success',
+    ghost: 'outline-success/25 has-focus-visible:outline-3',
     none: '',
   },
   info: {
-    outline: 'outline-info-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-info-6',
-    soft: 'outline-info-6/25 has-focus-visible:outline-3',
-    subtle: 'outline-info-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-info-6',
-    ghost: 'outline-info-6/25 has-focus-visible:outline-3',
+    outline: 'outline-info/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-info',
+    soft: 'outline-info/25 has-focus-visible:outline-3',
+    subtle: 'outline-info/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-info',
+    ghost: 'outline-info/25 has-focus-visible:outline-3',
     none: '',
   },
   warning: {
-    outline: 'outline-warning-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-warning-6',
-    soft: 'outline-warning-6/25 has-focus-visible:outline-3',
-    subtle: 'outline-warning-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-warning-6',
-    ghost: 'outline-warning-6/25 has-focus-visible:outline-3',
+    outline: 'outline-warning/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-warning',
+    soft: 'outline-warning/25 has-focus-visible:outline-3',
+    subtle: 'outline-warning/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-warning',
+    ghost: 'outline-warning/25 has-focus-visible:outline-3',
     none: '',
   },
   error: {
-    outline: 'outline-error-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-error-6',
-    soft: 'outline-error-6/25 has-focus-visible:outline-3',
-    subtle: 'outline-error-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-error-6',
-    ghost: 'outline-error-6/25 has-focus-visible:outline-3',
+    outline: 'outline-error/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-error',
+    soft: 'outline-error/25 has-focus-visible:outline-3',
+    subtle: 'outline-error/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-error',
+    ghost: 'outline-error/25 has-focus-visible:outline-3',
     none: '',
   },
 }
 
 /** 高亮描边色 */
 const highlightClasses: Record<FieldColor, string> = {
-  primary: 'ring-1 ring-inset ring-primary-6',
+  primary: 'ring-1 ring-inset ring-primary',
   secondary: 'ring-1 ring-inset ring-secondary',
   neutral: 'ring-1 ring-inset ring-border',
-  success: 'ring-1 ring-inset ring-success-6',
-  info: 'ring-1 ring-inset ring-info-6',
-  warning: 'ring-1 ring-inset ring-warning-6',
-  error: 'ring-1 ring-inset ring-error-6',
+  success: 'ring-1 ring-inset ring-success',
+  info: 'ring-1 ring-inset ring-info',
+  warning: 'ring-1 ring-inset ring-warning',
+  error: 'ring-1 ring-inset ring-error',
 }
 
 /** fixed=false 时桌面端缩小一档字号 */
@@ -379,7 +379,7 @@ onScopeDispose(() => clearTimeout(autofocusTimeoutId))
           :class="cn(
             'flex items-center justify-between gap-2 rounded-md px-2 py-1.5 text-left text-sm outline-none',
             'hover:bg-muted focus-visible:bg-muted',
-            isActive(time) && 'bg-primary-1 text-primary-7 hover:bg-primary-2',
+            isActive(time) && 'bg-primary/10 text-primary hover:bg-primary/15',
           )"
           @click="handleSelect(time)"
         >

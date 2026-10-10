@@ -48,7 +48,7 @@ const statusChip: Record<string, string> = {
     </div>
     <XCarousel :items="[{ key: '1' }, { key: '2' }, { key: '3' }]">
       <template #item="{ item }">
-        <div class="flex h-24 items-center justify-center rounded-lg bg-primary-1 text-primary-7">Slide {{ item.key }}</div>
+        <div class="flex h-24 items-center justify-center rounded-lg bg-primary/10 text-primary">Slide {{ item.key }}</div>
       </template>
     </XCarousel>
     <XSplitter class="h-32">

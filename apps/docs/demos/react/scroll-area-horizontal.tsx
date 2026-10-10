@@ -8,7 +8,7 @@ export default function ScrollAreaHorizontal() {
       {cards.map((card) => (
         <div
           key={card}
-          className="flex h-20 w-40 shrink-0 items-center justify-center rounded-lg bg-primary-1 text-sm text-primary-7"
+          className="flex h-20 w-40 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-sm text-primary"
         >
           卡片 {card}
         </div>

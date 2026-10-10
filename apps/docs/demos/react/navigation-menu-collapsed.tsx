@@ -19,7 +19,7 @@ export default function NavigationMenuCollapsedDemo() {
         collapsed
         popover
         tooltip
-        ui={{ content: "border border-primary-3", link: "justify-center" }}
+        ui={{ content: "border border-primary/20", link: "justify-center" }}
         items={[
           { key: "home", label: "首页", icon: "house" },
           {

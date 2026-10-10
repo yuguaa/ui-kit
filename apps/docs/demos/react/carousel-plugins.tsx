@@ -13,7 +13,7 @@ export default function CarouselPlugins() {
         <span className="text-muted-foreground text-sm">fade 淡入淡出切换，autoHeight 容器高度跟随当前项</span>
         <XCarousel items={slides} fade autoHeight>
           {({ item }) => (
-            <div className={`flex items-center justify-center rounded-lg bg-primary-1 text-primary-7 ${item.height}`}>
+            <div className={`flex items-center justify-center rounded-lg bg-primary/10 text-primary ${item.height}`}>
               {String(item.text)}
             </div>
           )}
@@ -24,7 +24,7 @@ export default function CarouselPlugins() {
         <span className="text-muted-foreground text-sm">autoScroll 连续滚动，wheelGestures 滚轮切换</span>
         <XCarousel items={slides} autoScroll={{ speed: 1 }} arrows={false} wheelGestures>
           {({ item }) => (
-            <div className={`flex items-center justify-center rounded-lg bg-info-1 text-info-7 ${item.height}`}>
+            <div className={`flex items-center justify-center rounded-lg bg-info/10 text-info ${item.height}`}>
               {String(item.text)}
             </div>
           )}
@@ -34,7 +34,7 @@ export default function CarouselPlugins() {
         <span className="text-muted-foreground text-sm">classNames 给轮播项加状态类名：进入视口的项变淡，当前吸附项高亮</span>
         <XCarousel items={slides} classNames={{ inView: "opacity-60", snapped: "opacity-100 ring-2 ring-primary-5" }}>
           {({ item }) => (
-            <div className={`flex items-center justify-center rounded-lg bg-success-1 text-success-7 ${item.height}`}>
+            <div className={`flex items-center justify-center rounded-lg bg-success/10 text-success ${item.height}`}>
               {String(item.text)}
             </div>
           )}

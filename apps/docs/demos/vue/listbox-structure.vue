@@ -42,10 +42,10 @@ const groups = [
         size="sm"
         class="w-64"
         :ui="{
-          root: 'rounded-lg ring-1 ring-primary-2',
+          root: 'rounded-lg ring-1 ring-primary/20',
           item: 'rounded-md',
-          itemDescription: 'text-primary-5',
-          itemTrailingIcon: 'text-success-6',
+          itemDescription: 'text-primary/50',
+          itemTrailingIcon: 'text-success',
         }"
         @select="current = $event"
       />

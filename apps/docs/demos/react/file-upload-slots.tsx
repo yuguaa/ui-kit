@@ -15,7 +15,7 @@ export default function FileUploadSlots() {
         actions={({ open }) => (
           <button
             type="button"
-            className="rounded-md bg-primary-6 px-3 py-1.5 text-sm text-white hover:bg-primary-5"
+            className="rounded-md bg-primary px-3 py-1.5 text-sm text-background hover:bg-primary/75"
             onClick={open}
           >
             浏览文件

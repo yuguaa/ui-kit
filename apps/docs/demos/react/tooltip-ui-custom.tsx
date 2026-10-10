@@ -8,7 +8,7 @@ export default function TooltipUiCustom() {
       <XTooltip
         content={
           <span className="flex items-center gap-1.5">
-            <BadgeCheck className="size-4 text-success-6" />
+            <BadgeCheck className="size-4 text-success" />
             content 插槽替换默认内容
           </span>
         }
@@ -19,7 +19,7 @@ export default function TooltipUiCustom() {
       <XTooltip
         text="主题定制"
         ui={{
-          content: "h-7 rounded-md border border-primary-3 bg-primary-1 text-primary-7",
+          content: "h-7 rounded-md border border-primary/20 bg-primary/10 text-primary",
           text: "font-medium",
         }}
       >

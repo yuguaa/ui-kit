@@ -10,7 +10,7 @@ const step = ref(1)
     <XProgress v-model="step" :max="['提交订单', '支付', '发货', '收货']" />
     <XProgress :model-value="2" :max="['提交订单', '支付', '发货', '收货']" color="success">
       <template #step-0="{ step: text }">
-        <span class="text-success-6">{{ text }} ✓</span>
+        <span class="text-success">{{ text }} ✓</span>
       </template>
     </XProgress>
   </div>

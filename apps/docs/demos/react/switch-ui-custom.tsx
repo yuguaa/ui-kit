@@ -14,9 +14,9 @@ export default function SwitchUiCustomDemo() {
           label="自定义外观"
           description="说明文字"
           ui={{
-            base: "data-checked:bg-warning-6",
-            thumb: "bg-warning-1",
-            label: "italic text-error-6",
+            base: "data-checked:bg-warning",
+            thumb: "bg-warning/10",
+            label: "italic text-error",
             description: "text-xs",
           }}
         />
@@ -24,7 +24,7 @@ export default function SwitchUiCustomDemo() {
           checked={on}
           onCheckedChange={setOn}
           label="圆角轨道"
-          ui={{ base: "ring-2 ring-info-3", thumb: "bg-info-1" }}
+          ui={{ base: "ring-2 ring-info/20", thumb: "bg-info/10" }}
         />
       </div>
     </div>

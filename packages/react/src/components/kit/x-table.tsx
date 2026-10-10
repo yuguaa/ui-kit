@@ -497,7 +497,7 @@ export const XTable = function XTable<T extends RowData>(
         data-slot="tbody"
         className={cn(
           "isolate divide-y divide-border",
-          "[&>tr]:data-[selectable=true]:hover:bg-muted/50 [&>tr]:data-[selectable=true]:outline-primary-6/25 [&>tr]:data-[selectable=true]:focus-visible:outline-3 [&>tr]:data-[selectable=true]:-outline-offset-3",
+          "[&>tr]:data-[selectable=true]:hover:bg-muted/50 [&>tr]:data-[selectable=true]:outline-primary/25 [&>tr]:data-[selectable=true]:focus-visible:outline-3 [&>tr]:data-[selectable=true]:-outline-offset-3",
           ui?.tbody,
         )}
       >
@@ -574,7 +574,7 @@ export const XTable = function XTable<T extends RowData>(
     defaultTagName: "div",
     props: {
       "data-slot": "root",
-      className: cn("relative overflow-auto outline-primary-6/25 focus-visible:outline-3", ui?.root, className),
+      className: cn("relative overflow-auto outline-primary/25 focus-visible:outline-3", ui?.root, className),
       children: tableElement,
     },
     render,

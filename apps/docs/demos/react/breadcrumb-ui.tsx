@@ -12,9 +12,9 @@ export default function BreadcrumbUi() {
       <XBreadcrumb
         items={items}
         ui={{
-          link: "px-2 py-1 bg-primary-1 rounded-full",
+          link: "px-2 py-1 bg-primary/10 rounded-full",
           linkLabel: "tracking-wide",
-          separatorIcon: "text-primary-6",
+          separatorIcon: "text-primary",
         }}
       />
     </div>

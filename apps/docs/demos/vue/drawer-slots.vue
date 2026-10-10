@@ -17,7 +17,7 @@ const contentOpen = ref(false)
   <XDrawer v-model:open="slotsOpen" title="插槽组合" description="header / actions / body / footer / close 插槽自由组合。" close>
     <template #header>
       <div class="flex items-center gap-2">
-        <Settings class="size-4 text-info-6" />
+        <Settings class="size-4 text-info" />
         <span class="font-semibold">自定义头部</span>
       </div>
     </template>

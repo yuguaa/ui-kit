@@ -15,7 +15,7 @@ export default function ColorPickerFormats() {
             key={format}
             type="button"
             className={`rounded-md px-3 py-1 text-sm outline-none transition-colors ${
-              active === format ? "bg-primary-1 text-primary-7" : "text-muted-foreground hover:bg-muted"
+              active === format ? "bg-primary/10 text-primary" : "text-muted-foreground hover:bg-muted"
             }`}
             onClick={() => setActive(format)}
           >

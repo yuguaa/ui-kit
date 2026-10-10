@@ -7,7 +7,7 @@ export default function CollapsibleUi() {
         defaultOpen
         ui={{
           root: "gap-2 rounded-lg border border-border p-3",
-          content: "rounded-md bg-primary-1 p-3 text-primary-7",
+          content: "rounded-md bg-primary/10 p-3 text-primary",
         }}
       >
         ui.root 覆盖根容器，ui.content 覆盖内容区，可注入任意 Tailwind 类名。
@@ -17,7 +17,7 @@ export default function CollapsibleUi() {
         render={<section />}
         defaultOpen
         unmountOnHide={false}
-        ui={{ content: "text-success-7" }}
+        ui={{ content: "text-success/75" }}
       >
         render 渲染为 section 根元素；unmountOnHide=false 时关闭后内容保留在 DOM 中。
       </XCollapsible>

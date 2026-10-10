@@ -7,7 +7,7 @@ import XInputDate from '@/components/kit/XInputDate.vue'
   <div class="flex w-full flex-col gap-4">
     <XInputDate :model-value="'2025-06-15'" class="w-56">
       <template #leading>
-        <CalendarCheck class="size-5 text-success-6" />
+        <CalendarCheck class="size-5 text-success" />
       </template>
       <template #trailing>
         <span class="text-xs text-muted-foreground">截止</span>
@@ -18,8 +18,8 @@ import XInputDate from '@/components/kit/XInputDate.vue'
       range
       class="w-72"
       :ui="{
-        base: 'rounded-xl ring-2 ring-inset ring-primary-6',
-        separatorIcon: 'text-error-6',
+        base: 'rounded-xl ring-2 ring-inset ring-primary',
+        separatorIcon: 'text-error',
       }"
     >
       <template #separator>

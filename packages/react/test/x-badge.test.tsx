@@ -6,8 +6,8 @@ describe("XBadge", () => {
   it("默认 solid 变体与 primary 颜色", () => {
     render(<XBadge label="新" />);
     const badge = screen.getByText("新").closest("[data-slot='badge']");
-    expect(badge).toHaveClass("bg-primary-6");
-    expect(badge).toHaveClass("text-white");
+    expect(badge).toHaveClass("bg-primary");
+    expect(badge).toHaveClass("text-background");
   });
 
   it("label 与 ui 插槽类名", () => {

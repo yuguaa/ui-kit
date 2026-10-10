@@ -83,13 +83,13 @@ const sizeKbdsGapClasses: Record<MenuSize, string> = {
 
 /** 项语义色：标题与前置图标 */
 const menuItemColorClasses: Record<MenuColor, { item: string; icon: string }> = {
-  primary: { item: 'text-primary-6', icon: 'text-primary-6/75' },
+  primary: { item: 'text-primary', icon: 'text-primary/75' },
   secondary: { item: 'text-secondary-foreground', icon: 'text-muted-foreground' },
   neutral: { item: 'text-foreground', icon: 'text-muted-foreground' },
-  success: { item: 'text-success-6', icon: 'text-success-6/75' },
-  info: { item: 'text-info-6', icon: 'text-info-6/75' },
-  warning: { item: 'text-warning-7', icon: 'text-warning-7/75' },
-  error: { item: 'text-error-6', icon: 'text-error-6/75' },
+  success: { item: 'text-success', icon: 'text-success/75' },
+  info: { item: 'text-info', icon: 'text-info/75' },
+  warning: { item: 'text-warning', icon: 'text-warning/75' },
+  error: { item: 'text-error', icon: 'text-error/75' },
 }
 
 const props = withDefaults(defineProps<{

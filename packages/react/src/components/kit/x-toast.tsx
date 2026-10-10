@@ -84,10 +84,10 @@ export interface XToastProps {
 
 /** 语义色样式：root 描边与 icon 文字色 */
 const toastColorClasses: Record<XToastColor, { root: string; icon: string }> = {
-  primary: { root: "ring-primary-3/25", icon: "text-primary-6" },
-  success: { root: "ring-success-3/25", icon: "text-success-6" },
-  warning: { root: "ring-warning-3/25", icon: "text-warning-7" },
-  error: { root: "ring-error-3/25", icon: "text-error-6" },
+  primary: { root: "ring-primary/25", icon: "text-primary" },
+  success: { root: "ring-success/25", icon: "text-success" },
+  warning: { root: "ring-warning/25", icon: "text-warning" },
+  error: { root: "ring-error/25", icon: "text-error" },
 }
 
 /** close / actions 支持节点形式 */

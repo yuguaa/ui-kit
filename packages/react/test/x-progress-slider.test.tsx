@@ -38,7 +38,7 @@ describe("XProgress", () => {
   it("color 与 animation 应用对应类名", () => {
     render(<XProgress color="success" animation="swing" />);
     const indicator = document.querySelector("[data-slot='indicator']");
-    expect(indicator).toHaveClass("bg-success-6");
+    expect(indicator).toHaveClass("bg-success");
     expect(indicator).toHaveClass("motion-safe:data-[indeterminate]:animate-[swing_2s_var(--ease-in-out)_infinite]");
   });
 
@@ -75,11 +75,11 @@ describe("XProgress", () => {
 describe("XSlider", () => {
   it("color 与 size 应用对应类名", () => {
     render(<XSlider value={40} color="success" size="xl" />);
-    expect(document.querySelector("[data-slot='range']")).toHaveClass("bg-success-6");
+    expect(document.querySelector("[data-slot='range']")).toHaveClass("bg-success");
     expect(document.querySelector("[data-slot='track']")).toHaveClass("h-[10px]");
     const thumb = document.querySelector("[data-slot='thumb']");
     expect(thumb).toHaveClass("size-5");
-    expect(thumb).toHaveClass("ring-success-6");
+    expect(thumb).toHaveClass("ring-success");
   });
 
   it("ui 插槽类名应用到对应元素", () => {

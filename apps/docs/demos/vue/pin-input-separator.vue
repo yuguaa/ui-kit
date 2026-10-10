@@ -16,7 +16,7 @@ import { XPinInput } from '@/components/kit'
       <span class="text-xs text-muted-foreground">separator 插槽自定义分隔内容</span>
       <XPinInput :length="6" :separator="3">
         <template #separator="{ index }">
-          <span class="mx-1 text-xs text-primary-6">{{ index + 1 }}</span>
+          <span class="mx-1 text-xs text-primary">{{ index + 1 }}</span>
         </template>
       </XPinInput>
     </div>

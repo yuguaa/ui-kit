@@ -9,7 +9,7 @@ export default function ScrollAreaBoth() {
         {cells.map((cell) => (
           <div
             key={cell}
-            className="flex h-16 w-28 items-center justify-center rounded-md bg-info-1 text-sm text-info-7"
+            className="flex h-16 w-28 items-center justify-center rounded-md bg-info/10 text-sm text-info"
           >
             格 {cell}
           </div>

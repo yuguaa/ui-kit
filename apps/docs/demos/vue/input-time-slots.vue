@@ -7,7 +7,7 @@ import XInputTime from '@/components/kit/XInputTime.vue'
   <div class="flex w-full flex-col gap-4">
     <XInputTime :model-value="'14:30'" class="w-44">
       <template #leading>
-        <AlarmClock class="size-5 text-success-6" />
+        <AlarmClock class="size-5 text-success" />
       </template>
       <template #trailing>
         <span class="text-xs text-muted-foreground">下午</span>
@@ -18,8 +18,8 @@ import XInputTime from '@/components/kit/XInputTime.vue'
       range
       class="w-56"
       :ui="{
-        base: 'rounded-xl ring-2 ring-inset ring-primary-6',
-        separatorIcon: 'text-error-6',
+        base: 'rounded-xl ring-2 ring-inset ring-primary',
+        separatorIcon: 'text-error',
       }"
     />
   </div>

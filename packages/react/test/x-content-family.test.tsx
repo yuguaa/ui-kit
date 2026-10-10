@@ -121,8 +121,8 @@ describe("XCarousel 插件能力与 ui 插槽", () => {
     );
     const prevButton = screen.getByRole("button", { name: "上一张" });
     const nextButton = screen.getByRole("button", { name: "下一张" });
-    expect(prevButton).toHaveClass("bg-success-1");
-    expect(nextButton).toHaveClass("bg-success-1");
+    expect(prevButton).toHaveClass("bg-success/10");
+    expect(nextButton).toHaveClass("bg-success/10");
     expect(prevButton).toHaveTextContent("后退");
     expect(nextButton).toHaveTextContent("前进");
   });

@@ -10,7 +10,7 @@ import XButton from '@/components/kit/XButton.vue'
       <XPopover>
         <XButton variant="outline" color="neutral">打开</XButton>
         <template #anchor>
-          <span class="rounded-md bg-primary-1 px-2 py-1 text-sm text-primary-7">定位锚点</span>
+          <span class="rounded-md bg-primary/10 px-2 py-1 text-sm text-primary">定位锚点</span>
         </template>
         <template #content>
           <div class="p-4 text-sm">

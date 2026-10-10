@@ -113,24 +113,24 @@ export interface XRadioGroupProps {
 
 /** 选中圆点的语义色 */
 const indicatorColorClasses: Record<XRadioGroupColor, string> = {
-  primary: "bg-primary-6",
+  primary: "bg-primary",
   secondary: "bg-secondary",
   neutral: "bg-foreground",
-  success: "bg-success-6",
-  info: "bg-info-6",
-  warning: "bg-warning-6",
-  error: "bg-error-6",
+  success: "bg-success",
+  info: "bg-info",
+  warning: "bg-warning",
+  error: "bg-error",
 }
 
 /** highlight 常显聚焦环颜色 */
 const highlightClasses: Record<XRadioGroupColor, string> = {
-  primary: "ring-primary-6",
+  primary: "ring-primary",
   secondary: "ring-secondary",
   neutral: "ring-foreground",
-  success: "ring-success-6",
-  info: "ring-info-6",
-  warning: "ring-warning-6",
-  error: "ring-error-6",
+  success: "ring-success",
+  info: "ring-info",
+  warning: "ring-warning",
+  error: "ring-error",
 }
 
 /** 尺寸:控件、圆点、容器高度、文字与间距 */
@@ -195,7 +195,7 @@ export function XRadioGroup({
   const legendClass = cn(
     "mb-1 block font-medium text-foreground",
     sizeClasses[size].legend,
-    required && "after:content-['*'] after:ms-0.5 after:text-error-6",
+    required && "after:content-['*'] after:ms-0.5 after:text-error",
     ui?.legend,
   )
 
@@ -303,9 +303,9 @@ export function XRadioGroup({
                 className={cn(
                   "h-8 cursor-pointer items-center border px-3 text-sm transition-colors",
                   "first:rounded-l-lg last:rounded-r-lg [&:not(:first-child)]:border-l-0",
-                  "has-[[data-checked]]:border-primary-5 has-[[data-checked]]:bg-primary-1 has-[[data-checked]]:text-primary-7",
+                  "has-[[data-checked]]:border-primary has-[[data-checked]]:bg-primary/10 has-[[data-checked]]:text-primary",
                   buttonStyle === "solid" &&
-                    "has-[[data-checked]]:bg-primary-6 has-[[data-checked]]:text-white",
+                    "has-[[data-checked]]:bg-primary has-[[data-checked]]:text-background",
                   "hover:bg-muted",
                   orientation === "horizontal" ? "inline-flex" : "flex",
                   option.disabled && "pointer-events-none opacity-50",

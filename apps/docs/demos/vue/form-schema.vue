@@ -38,6 +38,6 @@ const submitted = ref('')
         <XButton type="button" variant="outline" @click="formApi.reset()">重置</XButton>
       </div>
     </Form>
-    <p v-if="submitted" class="text-sm text-success-7">提交数据：{{ submitted }}</p>
+    <p v-if="submitted" class="text-sm text-success/75">提交数据：{{ submitted }}</p>
   </div>
 </template>

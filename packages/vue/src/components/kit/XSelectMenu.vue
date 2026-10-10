@@ -436,24 +436,24 @@ const variantClasses: Record<SelectMenuVariant, string> = {
 
 /** 颜色映射：聚焦描边 */
 const colorClasses: Record<SelectMenuColor, string> = {
-  primary: 'focus-visible:ring-2 focus-visible:ring-primary-5',
+  primary: 'focus-visible:ring-2 focus-visible:ring-primary/50',
   secondary: 'focus-visible:ring-2 focus-visible:ring-secondary',
   neutral: 'focus-visible:ring-2 focus-visible:ring-foreground',
-  success: 'focus-visible:ring-2 focus-visible:ring-success-5',
-  info: 'focus-visible:ring-2 focus-visible:ring-info-5',
-  warning: 'focus-visible:ring-2 focus-visible:ring-warning-5',
-  error: 'focus-visible:ring-2 focus-visible:ring-error-5',
+  success: 'focus-visible:ring-2 focus-visible:ring-success/50',
+  info: 'focus-visible:ring-2 focus-visible:ring-info/50',
+  warning: 'focus-visible:ring-2 focus-visible:ring-warning/50',
+  error: 'focus-visible:ring-2 focus-visible:ring-error/50',
 }
 
 /** 高亮描边颜色 */
 const highlightClasses: Record<SelectMenuColor, string> = {
-  primary: 'ring-primary-5',
+  primary: 'ring-primary',
   secondary: 'ring-secondary',
   neutral: 'ring-foreground/30',
-  success: 'ring-success-5',
-  info: 'ring-info-5',
-  warning: 'ring-warning-5',
-  error: 'ring-error-5',
+  success: 'ring-success',
+  info: 'ring-info',
+  warning: 'ring-warning',
+  error: 'ring-error',
 }
 
 const currentSize = computed(() => sizeClasses[props.size])

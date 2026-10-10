@@ -24,7 +24,7 @@ export default function CardSlots() {
         这是卡片的主体内容。
       </XCard>
       <XCard
-        title={<span className="flex items-center gap-1.5"><span className="size-2 rounded-full bg-success-6" />自定义标题节点</span>}
+        title={<span className="flex items-center gap-1.5"><span className="size-2 rounded-full bg-success" />自定义标题节点</span>}
         description="描述同样可以通过 ReactNode 覆盖。"
       >
         主体内容保持不变。

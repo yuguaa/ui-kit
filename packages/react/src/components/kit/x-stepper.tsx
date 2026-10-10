@@ -105,8 +105,8 @@ const stepperSizeClasses: Record<XStepperSize, { trigger: string; icon: XIconSiz
 /** 语义色:完成 / 激活态的触发器背景与分隔线 */
 const stepperColorClasses: Record<XStepperColor, { trigger: string; separator: string }> = {
   primary: {
-    trigger: "group-data-[state=completed]:bg-primary-6 group-data-[state=active]:bg-primary-6 outline-primary-6/25",
-    separator: "group-data-[state=completed]:bg-primary-6",
+    trigger: "group-data-[state=completed]:bg-primary group-data-[state=active]:bg-primary outline-primary/25",
+    separator: "group-data-[state=completed]:bg-primary",
   },
   secondary: {
     trigger: "group-data-[state=completed]:bg-secondary group-data-[state=active]:bg-secondary outline-secondary/25",
@@ -117,20 +117,20 @@ const stepperColorClasses: Record<XStepperColor, { trigger: string; separator: s
     separator: "group-data-[state=completed]:bg-foreground",
   },
   success: {
-    trigger: "group-data-[state=completed]:bg-success-6 group-data-[state=active]:bg-success-6 outline-success-6/25",
-    separator: "group-data-[state=completed]:bg-success-6",
+    trigger: "group-data-[state=completed]:bg-success group-data-[state=active]:bg-success outline-success/25",
+    separator: "group-data-[state=completed]:bg-success",
   },
   info: {
-    trigger: "group-data-[state=completed]:bg-info-6 group-data-[state=active]:bg-info-6 outline-info-6/25",
-    separator: "group-data-[state=completed]:bg-info-6",
+    trigger: "group-data-[state=completed]:bg-info group-data-[state=active]:bg-info outline-info/25",
+    separator: "group-data-[state=completed]:bg-info",
   },
   warning: {
-    trigger: "group-data-[state=completed]:bg-warning-6 group-data-[state=active]:bg-warning-6 outline-warning-6/25",
-    separator: "group-data-[state=completed]:bg-warning-6",
+    trigger: "group-data-[state=completed]:bg-warning group-data-[state=active]:bg-warning outline-warning/25",
+    separator: "group-data-[state=completed]:bg-warning",
   },
   error: {
-    trigger: "group-data-[state=completed]:bg-error-6 group-data-[state=active]:bg-error-6 outline-error-6/25",
-    separator: "group-data-[state=completed]:bg-error-6",
+    trigger: "group-data-[state=completed]:bg-error group-data-[state=active]:bg-error outline-error/25",
+    separator: "group-data-[state=completed]:bg-error",
   },
 }
 

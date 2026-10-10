@@ -216,7 +216,7 @@ defineExpose({ scrollTo })
     :data-orientation="orientation"
     data-slot="root"
     :class="cn(
-      'relative outline-primary-6/25 focus-visible:outline-3',
+      'relative outline-primary/25 focus-visible:outline-3',
       orientation === 'vertical' && 'overflow-x-hidden overflow-y-auto',
       orientation === 'horizontal' && 'overflow-x-auto overflow-y-hidden',
       orientation === 'both' && 'overflow-auto',

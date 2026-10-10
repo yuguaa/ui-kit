@@ -31,35 +31,35 @@ export interface CheckboxUi {
 
 /** 勾选指示块的语义色,选中与半选时填充 */
 const indicatorColorClasses: Record<CheckboxColor, string> = {
-  primary: 'bg-primary-6 text-white',
+  primary: 'bg-primary text-background',
   secondary: 'bg-secondary text-secondary-foreground',
   neutral: 'bg-foreground text-background',
-  success: 'bg-success-6 text-white',
-  info: 'bg-info-6 text-white',
-  warning: 'bg-warning-6 text-white',
-  error: 'bg-error-6 text-white',
+  success: 'bg-success text-background',
+  info: 'bg-info text-background',
+  warning: 'bg-warning text-background',
+  error: 'bg-error text-background',
 }
 
 /** card 变体的选中描边与浅色底 */
 const cardCheckedClasses: Record<CheckboxColor, string> = {
-  primary: 'has-data-[state=checked]:border-primary-6/50 has-data-[state=checked]:bg-primary-1',
+  primary: 'has-data-[state=checked]:border-primary/50 has-data-[state=checked]:bg-primary/10',
   secondary: 'has-data-[state=checked]:border-secondary/50 has-data-[state=checked]:bg-secondary',
   neutral: 'has-data-[state=checked]:border-foreground/50 has-data-[state=checked]:bg-muted',
-  success: 'has-data-[state=checked]:border-success-6/50 has-data-[state=checked]:bg-success-1',
-  info: 'has-data-[state=checked]:border-info-6/50 has-data-[state=checked]:bg-info-1',
-  warning: 'has-data-[state=checked]:border-warning-6/50 has-data-[state=checked]:bg-warning-1',
-  error: 'has-data-[state=checked]:border-error-6/50 has-data-[state=checked]:bg-error-1',
+  success: 'has-data-[state=checked]:border-success/50 has-data-[state=checked]:bg-success/10',
+  info: 'has-data-[state=checked]:border-info/50 has-data-[state=checked]:bg-info/10',
+  warning: 'has-data-[state=checked]:border-warning/50 has-data-[state=checked]:bg-warning/10',
+  error: 'has-data-[state=checked]:border-error/50 has-data-[state=checked]:bg-error/10',
 }
 
 /** highlight 常显聚焦环颜色 */
 const highlightClasses: Record<CheckboxColor, string> = {
-  primary: 'ring-primary-6',
+  primary: 'ring-primary',
   secondary: 'ring-secondary',
   neutral: 'ring-foreground',
-  success: 'ring-success-6',
-  info: 'ring-info-6',
-  warning: 'ring-warning-6',
-  error: 'ring-error-6',
+  success: 'ring-success',
+  info: 'ring-info',
+  warning: 'ring-warning',
+  error: 'ring-error',
 }
 
 /** 尺寸与 card 内边距、hidden 时上方图标尺寸 */
@@ -204,7 +204,7 @@ const wrapperClass = computed(() => cn(
 
 const labelClass = computed(() => cn(
   'block font-medium text-foreground',
-  props.required && "after:content-['*'] after:ms-0.5 after:text-error-6",
+  props.required && "after:content-['*'] after:ms-0.5 after:text-error",
   props.disabled && 'cursor-not-allowed',
   props.ui?.label,
 ))

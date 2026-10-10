@@ -38,7 +38,7 @@ function handleSelect(item: { name: string }) {
         @select="handleSelect"
       >
         <template #leading>
-          <MapPin class="size-4 text-primary-6" />
+          <MapPin class="size-4 text-primary" />
         </template>
       </XInputMenu>
       <XInputMenu
@@ -52,7 +52,7 @@ function handleSelect(item: { name: string }) {
         label-key="name"
         value-key="id"
         class="w-56"
-        :ui="{ root: 'rounded-md ring-1 ring-primary-2', base: 'ring-primary-4', item: 'rounded-lg', itemLabel: 'font-medium' }"
+        :ui="{ root: 'rounded-md ring-1 ring-primary/20', base: 'ring-primary/50', item: 'rounded-lg', itemLabel: 'font-medium' }"
       />
     </div>
     <p class="text-sm text-muted-foreground">最近选择：{{ last || '—' }}</p>

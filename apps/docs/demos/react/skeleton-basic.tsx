@@ -19,7 +19,7 @@ export default function SkeletonBasic() {
       <div className="flex flex-col gap-3">
         <span className="text-sm text-muted-foreground">loading 切换：为 false 时渲染子元素中的真实内容</span>
         <XSkeleton loading={loading} variant="rect" height="2.5rem">
-          <div className="flex h-10 items-center rounded-md bg-primary-1 px-3 text-sm text-primary-7">
+          <div className="flex h-10 items-center rounded-md bg-primary/10 px-3 text-sm text-primary">
             内容已就绪
           </div>
         </XSkeleton>

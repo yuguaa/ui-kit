@@ -3,7 +3,7 @@ import { XAvatar, XAvatarGroup } from "@/components/kit";
 export default function AvatarGroupUi() {
   return (
     <div className="flex flex-wrap items-center gap-8">
-      <XAvatarGroup ui={{ base: "ring-primary-3" }}>
+      <XAvatarGroup ui={{ base: "ring-primary/20" }}>
         <XAvatar text="A" />
         <XAvatar text="B" />
       </XAvatarGroup>

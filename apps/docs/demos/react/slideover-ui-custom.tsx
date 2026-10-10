@@ -14,11 +14,11 @@ export default function SlideoverUiCustom() {
         title="主题定制"
         description="ui 属性按主题插槽键覆盖类名。"
         ui={{
-          overlay: "bg-primary-9/40",
-          content: "rounded-2xl border border-primary-3",
-          header: "bg-primary-1 border-b border-primary-2",
-          title: "text-primary-7",
-          description: "text-primary-6",
+          overlay: "bg-primary-900/40",
+          content: "rounded-2xl border border-primary-200",
+          header: "bg-primary/10 border-b border-primary/20",
+          title: "text-primary",
+          description: "text-primary/75",
           body: "text-sm leading-6",
         }}
         body={<p>content / header / title / description / body / overlay 等键都可单独覆盖。</p>}

@@ -16,9 +16,9 @@ const options = [
         model-value="a"
         legend="自定义外观"
         :ui="{
-          legend: 'text-error-6',
+          legend: 'text-error',
           item: 'rounded-lg border p-3',
-          indicator: 'bg-success-6',
+          indicator: 'bg-success',
           label: 'font-bold',
           description: 'italic text-xs',
         }"
@@ -29,7 +29,7 @@ const options = [
       <span class="text-muted-foreground text-sm">单项 ui 覆盖</span>
       <XRadioGroup
         :options="[
-          { value: 'a', label: '选项 A', ui: { item: 'rounded-lg border border-primary-3 p-2' } },
+          { value: 'a', label: '选项 A', ui: { item: 'rounded-lg border border-primary/20 p-2' } },
           { value: 'b', label: '选项 B' },
         ]"
         model-value="a"

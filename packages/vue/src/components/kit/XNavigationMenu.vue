@@ -145,35 +145,35 @@ export interface NavigationMenuItemData {
 
 /** 语义色文字：选中项与图标（link 变体） */
 const navColorTextClasses: Record<MenuColor, string> = {
-  primary: 'text-primary-6',
+  primary: 'text-primary',
   secondary: 'text-secondary-foreground',
   neutral: 'text-foreground',
-  success: 'text-success-6',
-  info: 'text-info-6',
-  warning: 'text-warning-7',
-  error: 'text-error-6',
+  success: 'text-success',
+  info: 'text-info',
+  warning: 'text-warning',
+  error: 'text-error',
 }
 
 /** 语义色选中背景（pill 变体） */
 const navActivePillClasses: Record<MenuColor, string> = {
-  primary: 'bg-primary-1 text-primary-7',
+  primary: 'bg-primary/10 text-primary',
   secondary: 'bg-secondary text-secondary-foreground',
   neutral: 'bg-muted text-foreground',
-  success: 'bg-success-1 text-success-7',
-  info: 'bg-info-1 text-info-7',
-  warning: 'bg-warning-1 text-warning-8',
-  error: 'bg-error-1 text-error-7',
+  success: 'bg-success/10 text-success',
+  info: 'bg-info/10 text-info',
+  warning: 'bg-warning/10 text-warning',
+  error: 'bg-error/10 text-error',
 }
 
 /** 语义色指示线 */
 const navHighlightLineClasses: Record<MenuColor, string> = {
-  primary: 'after:bg-primary-6',
+  primary: 'after:bg-primary',
   secondary: 'after:bg-secondary',
   neutral: 'after:bg-inverted',
-  success: 'after:bg-success-6',
-  info: 'after:bg-info-6',
-  warning: 'after:bg-warning-6',
-  error: 'after:bg-error-6',
+  success: 'after:bg-success',
+  info: 'after:bg-info',
+  warning: 'after:bg-warning',
+  error: 'after:bg-error',
 }
 
 /** 把受控值统一转为数组 */
@@ -627,7 +627,7 @@ const [DefineVerticalItems, ReuseVerticalItems] = createReusableTemplate<{
             :class="cn(
               'group relative flex size-full items-start gap-1.5 rounded-md p-1.5 text-start text-sm outline-none',
               'hover:bg-muted focus-visible:bg-muted disabled:pointer-events-none disabled:opacity-75',
-              isSelected(childKeyOf(child, childIndex)) && 'text-primary-6',
+              isSelected(childKeyOf(child, childIndex)) && 'text-primary',
               props.ui?.childLink,
             )"
             @click="handleSelect(child)"
@@ -666,7 +666,7 @@ const [DefineVerticalItems, ReuseVerticalItems] = createReusableTemplate<{
           :class="cn(
             'group relative flex size-full items-start gap-2 rounded-md px-3 py-2 text-start text-sm outline-none',
             'hover:bg-muted focus-visible:bg-muted disabled:pointer-events-none disabled:opacity-75',
-            isSelected(childKeyOf(child, childIndex)) && 'text-primary-6',
+            isSelected(childKeyOf(child, childIndex)) && 'text-primary',
             props.ui?.childLink,
           )"
           @select="handleChildSelect(child)"

@@ -10,7 +10,7 @@ import XLink from '@/components/kit/XLink.vue'
       <XLink to="/disabled" disabled>禁用链接</XLink>
     </div>
     <div class="flex flex-wrap items-center gap-6">
-      <XLink to="/docs" :ui="{ base: 'rounded-full px-3 py-1 bg-primary-1' }">
+      <XLink to="/docs" :ui="{ base: 'rounded-full px-3 py-1 bg-primary/10' }">
         ui.base 自定义外观
       </XLink>
       <XLink as="button">as 渲染为按钮</XLink>

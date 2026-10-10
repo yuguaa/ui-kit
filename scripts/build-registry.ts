@@ -39,15 +39,9 @@ function writeText(rel: string, content: string): void {
 
 /* ============================ 设计 token ============================ */
 
-/** 语义色 10 级色阶 → theme cssVars：裸变量 + --color-* 工具类映射 */
+/** 语义色 50~950 色阶 → theme cssVars（裸变量 + --color-* 别名，由 palettesToCssVars 直接给出） */
 function colorCssVars(): Record<string, string> {
-  const vars: Record<string, string> = {};
-  for (const [name, value] of Object.entries(palettesToCssVars(generateAllPalettes()))) {
-    const key = name.replace(/^--color-/, "").replace(/^--/, "");
-    vars[key] = value;
-    vars[`color-${key}`] = `var(--${key})`;
-  }
-  return vars;
+  return palettesToCssVars(generateAllPalettes());
 }
 
 /** 圆角 / 阴影 / 字体 token → theme cssVars */
@@ -83,12 +77,12 @@ function buildKitThemeCss(): string {
   const lines: string[] = [
     "/*",
     " * kit 设计 token，由 scripts/build-registry.ts 从 @ui-kit/shared 生成。",
-    " * 色彩由主色 seed #1677ff 通过 Ant Design 色彩算法派生，勿手动修改。",
+    " * 色彩为 Nuxt UI 风格 Tailwind 色板（50~950），勿手动修改。",
     " */",
     "@theme {",
   ];
   for (const [key, value] of Object.entries(themeCssVars)) {
-    lines.push(`  --${key}: ${value};`);
+    lines.push(`  --${key.replace(/^--/, "")}: ${value};`);
   }
   lines.push("}", "");
   return lines.join("\n");

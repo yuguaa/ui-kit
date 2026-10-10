@@ -12,9 +12,9 @@ import { XCheckbox } from '@/components/kit'
         description="说明文字"
         :ui="{
           root: 'gap-4',
-          base: 'rounded-full ring-2 ring-warning-6',
-          indicator: 'bg-warning-6',
-          label: 'italic text-error-6',
+          base: 'rounded-full ring-2 ring-warning',
+          indicator: 'bg-warning',
+          label: 'italic text-error',
           description: 'text-xs',
         }"
       />
@@ -22,7 +22,7 @@ import { XCheckbox } from '@/components/kit'
         checked
         variant="card"
         label="卡片自定义"
-        :ui="{ root: 'bg-primary-1 border-primary-3', indicator: 'bg-info-6' }"
+        :ui="{ root: 'bg-primary/10 border-primary/20', indicator: 'bg-info' }"
       />
     </div>
   </div>

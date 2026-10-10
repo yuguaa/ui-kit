@@ -31,7 +31,7 @@ describe("XInput", () => {
 
   it("error 状态边框", () => {
     render(<XInput status="error" />);
-    expect(screen.getByRole("textbox")).toHaveClass("border-error-6");
+    expect(screen.getByRole("textbox")).toHaveClass("border-error");
   });
 
   it("前缀与后缀图标", () => {
@@ -56,7 +56,7 @@ describe("XTextarea", () => {
 
   it("warning 状态", () => {
     render(<XTextarea status="warning" />);
-    expect(screen.getByRole("textbox")).toHaveClass("border-warning-6");
+    expect(screen.getByRole("textbox")).toHaveClass("border-warning");
   });
 });
 
@@ -208,7 +208,7 @@ describe("XInputTags", () => {
 
   it("highlight 高亮描边", () => {
     render(<XInputTags highlight color="success" />);
-    expect(screen.getByRole("textbox").closest("[data-slot='root']")).toHaveClass("ring-success-6");
+    expect(screen.getByRole("textbox").closest("[data-slot='root']")).toHaveClass("ring-success");
   });
 
   it("ui 插槽类名", () => {
@@ -278,7 +278,7 @@ describe("XInputRating", () => {
 
   it("color 控制填充星颜色", () => {
     render(<XInputRating value={3} color="success" />);
-    expect(document.querySelector("[data-slot='indicator']")).toHaveClass("fill-success-6");
+    expect(document.querySelector("[data-slot='indicator']")).toHaveClass("fill-success");
   });
 
   it("ui 插槽类名", () => {
@@ -745,7 +745,7 @@ describe("XCheckbox 说明、语义色与尺寸", () => {
     const { container } = render(<XCheckbox checked label="协议" description="已阅读并同意" color="success" />);
     expect(screen.getByText("已阅读并同意")).toBeInTheDocument();
     expect(container.querySelector("[data-slot='indicator']")).toHaveClass(
-      "bg-success-6",
+      "bg-success",
     );
   });
 
@@ -824,7 +824,7 @@ describe("XInputDate / XInputTime 区间模式", () => {
 
   it("size / color / highlight 作用于输入容器", () => {
     render(<XInputDate size="lg" color="success" variant="soft" highlight />);
-    expect(document.querySelector("[data-slot='base']")).toHaveClass("h-9", "ring-success-6");
+    expect(document.querySelector("[data-slot='base']")).toHaveClass("h-9", "ring-success");
   });
 
   it("ui 插槽类名", () => {
@@ -958,7 +958,7 @@ describe("XInput Nuxt 语义", () => {
 
   it("highlight 显示颜色描边", () => {
     render(<XInput highlight color="success" />);
-    expect(screen.getByRole("textbox")).toHaveClass("ring-success-6");
+    expect(screen.getByRole("textbox")).toHaveClass("ring-success");
   });
 
   it("variant 与 size 变体类", () => {
@@ -986,7 +986,7 @@ describe("XTextarea Nuxt 语义", () => {
   it("ui base 与 highlight / size 类", () => {
     render(<XTextarea ui={{ base: "custom-base" }} highlight color="error" size="lg" />);
     const textarea = screen.getByRole("textbox");
-    expect(textarea).toHaveClass("custom-base", "ring-error-6", "px-3");
+    expect(textarea).toHaveClass("custom-base", "ring-error", "px-3");
   });
 
   it("render 渲染根元素", () => {

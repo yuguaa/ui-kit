@@ -65,24 +65,24 @@ export interface RadioOption {
 
 /** 选中圆点的语义色 */
 const indicatorColorClasses: Record<RadioGroupColor, string> = {
-  primary: 'bg-primary-6',
+  primary: 'bg-primary',
   secondary: 'bg-secondary',
   neutral: 'bg-foreground',
-  success: 'bg-success-6',
-  info: 'bg-info-6',
-  warning: 'bg-warning-6',
-  error: 'bg-error-6',
+  success: 'bg-success',
+  info: 'bg-info',
+  warning: 'bg-warning',
+  error: 'bg-error',
 }
 
 /** highlight 常显聚焦环颜色 */
 const highlightClasses: Record<RadioGroupColor, string> = {
-  primary: 'ring-primary-6',
+  primary: 'ring-primary',
   secondary: 'ring-secondary',
   neutral: 'ring-foreground',
-  success: 'ring-success-6',
-  info: 'ring-info-6',
-  warning: 'ring-warning-6',
-  error: 'ring-error-6',
+  success: 'ring-success',
+  info: 'ring-info',
+  warning: 'ring-warning',
+  error: 'ring-error',
 }
 
 /** 尺寸:控件、圆点、容器高度、文字与间距 */
@@ -192,7 +192,7 @@ const fieldsetClass = computed(() => cn(
 const legendClass = computed(() => cn(
   'mb-1 block font-medium text-foreground',
   sizeClasses[props.size].legend,
-  props.required && "after:content-['*'] after:ms-0.5 after:text-error-6",
+  props.required && "after:content-['*'] after:ms-0.5 after:text-error",
   props.ui?.legend,
 ))
 
@@ -303,8 +303,8 @@ function radioDescriptionClass(option: RadioOption) {
         :class="cn(
           'h-8 cursor-pointer items-center border px-3 text-sm transition-colors',
           'first:rounded-l-lg last:rounded-r-lg [&:not(:first-child)]:border-l-0',
-          'has-[[data-state=checked]]:border-primary-5 has-[[data-state=checked]]:bg-primary-1 has-[[data-state=checked]]:text-primary-7',
-          buttonStyle === 'solid' && 'has-[[data-state=checked]]:bg-primary-6 has-[[data-state=checked]]:text-white',
+          'has-[[data-state=checked]]:border-primary has-[[data-state=checked]]:bg-primary/10 has-[[data-state=checked]]:text-primary',
+          buttonStyle === 'solid' && 'has-[[data-state=checked]]:bg-primary has-[[data-state=checked]]:text-background',
           'hover:bg-muted',
           orientation === 'horizontal' ? 'inline-flex' : 'flex',
           option.disabled && 'pointer-events-none opacity-50',

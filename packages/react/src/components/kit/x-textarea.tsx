@@ -27,24 +27,24 @@ const textareaSizeClasses: Record<XTextareaSize, string> = {
 
 /** 聚焦描边色 */
 const focusClasses: Record<XTextareaColor, string> = {
-  primary: "outline-primary-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-primary-6",
+  primary: "outline-primary/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-primary",
   secondary: "outline-secondary/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-secondary",
   neutral: "outline-foreground/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-foreground",
-  success: "outline-success-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-success-6",
-  info: "outline-info-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-info-6",
-  warning: "outline-warning-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-warning-6",
-  error: "outline-error-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-error-6",
+  success: "outline-success/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-success",
+  info: "outline-info/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-info",
+  warning: "outline-warning/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-warning",
+  error: "outline-error/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-error",
 }
 
 /** 高亮描边色 */
 const highlightClasses: Record<XTextareaColor, string> = {
-  primary: "ring-1 ring-inset ring-primary-6",
+  primary: "ring-1 ring-inset ring-primary",
   secondary: "ring-1 ring-inset ring-secondary",
   neutral: "ring-1 ring-inset ring-border",
-  success: "ring-1 ring-inset ring-success-6",
-  info: "ring-1 ring-inset ring-info-6",
-  warning: "ring-1 ring-inset ring-warning-6",
-  error: "ring-1 ring-inset ring-error-6",
+  success: "ring-1 ring-inset ring-success",
+  info: "ring-1 ring-inset ring-info",
+  warning: "ring-1 ring-inset ring-warning",
+  error: "ring-1 ring-inset ring-error",
 }
 
 /** fixed=false 时桌面端缩小一档字号 */
@@ -56,8 +56,8 @@ const fixedTextClasses: Partial<Record<XTextareaSize, string>> = {
 }
 
 const statusClasses: Record<XTextareaStatus, string> = {
-  error: "border-error-6 focus-visible:border-error-6 focus-visible:ring-error-6/20",
-  warning: "border-warning-6 focus-visible:border-warning-6 focus-visible:ring-warning-6/20",
+  error: "border-error focus-visible:border-error focus-visible:ring-error/20",
+  warning: "border-warning focus-visible:border-warning focus-visible:ring-warning/20",
 }
 
 /** textarea 的值可能是数组（原生多行回填），统一转成字符串用于统计 */

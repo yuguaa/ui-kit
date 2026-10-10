@@ -14,13 +14,13 @@ export type XChipSize = "xs" | "sm" | "md" | "lg" | "xl"
 export type XChipPosition = "top-right" | "bottom-right" | "top-left" | "bottom-left"
 
 const chipColorClasses: Record<XChipColor, string> = {
-  primary: "border-primary-3 bg-primary-1 text-primary-7",
+  primary: "border-primary/20 bg-primary/10 text-primary",
   secondary: "border-border bg-secondary text-secondary-foreground",
   neutral: "border-border bg-muted text-muted-foreground",
-  success: "border-success-3 bg-success-1 text-success-7",
-  info: "border-info-3 bg-info-1 text-info-7",
-  warning: "border-warning-3 bg-warning-1 text-warning-8",
-  error: "border-error-3 bg-error-1 text-error-7",
+  success: "border-success/20 bg-success/10 text-success",
+  info: "border-info/20 bg-info/10 text-info",
+  warning: "border-warning/20 bg-warning/10 text-warning",
+  error: "border-error/20 bg-error/10 text-error",
 }
 
 const chipSizeClasses: Record<XChipSize, string> = {

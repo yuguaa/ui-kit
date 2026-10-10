@@ -28,7 +28,7 @@ export default function TabsUiCustom() {
         ]}
         ui={{
           trigger: "gap-2",
-          leadingIcon: "text-success-6",
+          leadingIcon: "text-success",
           label: "font-semibold",
           content: "bg-elevated p-4",
         }}

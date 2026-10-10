@@ -175,7 +175,7 @@ export function XFormField({
               >
                 <Label htmlFor={ariaId} data-slot="label" className={cn("block font-medium text-foreground", ui?.label)}>
                   {label}
-                  {required && <span className="ml-0.5 text-error-6">*</span>}
+                  {required && <span className="ml-0.5 text-error">*</span>}
                 </Label>
                 {hasHint && (
                   <span
@@ -217,7 +217,7 @@ export function XFormField({
                 id={`${ariaId}-error`}
                 role="alert"
                 data-slot="error"
-                className={cn("mt-2 text-error-6", ui?.error)}
+                className={cn("mt-2 text-error", ui?.error)}
               >
                 {fieldError}
               </div>

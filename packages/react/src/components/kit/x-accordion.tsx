@@ -188,7 +188,7 @@ export function XAccordion({
               <Accordion.Trigger
                 data-slot="trigger"
                 className={cn(
-                  "group flex flex-1 items-center gap-1.5 rounded-md py-3.5 font-medium text-sm outline-primary-6/25 min-w-0 focus-visible:outline-3",
+                  "group flex flex-1 items-center gap-1.5 rounded-md py-3.5 font-medium text-sm outline-primary/25 min-w-0 focus-visible:outline-3",
                   item.disabled && "cursor-not-allowed opacity-75",
                   ui?.trigger,
                   item.ui?.trigger,

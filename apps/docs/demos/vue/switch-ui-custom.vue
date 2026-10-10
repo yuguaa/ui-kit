@@ -14,16 +14,16 @@ const on = ref(true)
         label="自定义外观"
         description="说明文字"
         :ui="{
-          base: 'data-[state=checked]:bg-warning-6',
-          thumb: 'bg-warning-1',
-          label: 'italic text-error-6',
+          base: 'data-[state=checked]:bg-warning',
+          thumb: 'bg-warning/10',
+          label: 'italic text-error',
           description: 'text-xs',
         }"
       />
       <XSwitch
         v-model="on"
         label="圆角轨道"
-        :ui="{ base: 'rounded-full ring-2 ring-info-3', thumb: 'bg-info-1' }"
+        :ui="{ base: 'rounded-full ring-2 ring-info/20', thumb: 'bg-info/10' }"
       />
     </div>
   </div>

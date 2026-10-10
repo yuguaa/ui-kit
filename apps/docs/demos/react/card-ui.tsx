@@ -9,12 +9,12 @@ export default function CardUi() {
         description="root / header / title / description / body / footer"
         bordered={false}
         ui={{
-          root: "rounded-xl bg-primary-1",
-          header: "border-b border-primary-2",
-          title: "text-primary-8",
-          description: "text-primary-6",
-          body: "bg-primary-1",
-          footer: "border-t border-primary-2 bg-primary-1",
+          root: "rounded-xl bg-primary/10",
+          header: "border-b border-primary/20",
+          title: "text-primary",
+          description: "text-primary/75",
+          body: "bg-primary/10",
+          footer: "border-t border-primary/20 bg-primary/10",
         }}
         footer={<XButton size="sm" variant="soft">了解 ui 插槽</XButton>}
       >

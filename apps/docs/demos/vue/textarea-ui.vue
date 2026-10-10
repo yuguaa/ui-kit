@@ -7,7 +7,7 @@ import XTextarea from '@/components/kit/XTextarea.vue'
     <XTextarea
       placeholder="自定义 base 类名"
       class="w-72"
-      :ui="{ base: 'bg-primary-1 ring-primary-3 text-primary-7' }"
+      :ui="{ base: 'bg-primary/10 ring-primary/20 text-primary' }"
     />
   </div>
 </template>

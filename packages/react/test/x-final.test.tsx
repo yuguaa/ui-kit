@@ -34,7 +34,7 @@ describe("导航 Navigation", () => {
     const link = screen.getByRole("link", { name: "文档" });
     expect(link).toHaveAttribute("href", "/docs");
     expect(link).toHaveAttribute("aria-current", "page");
-    expect(link).toHaveClass("text-primary-7");
+    expect(link).toHaveClass("text-primary/75");
   });
 
   it("XBreadcrumb 渲染层级与分隔符", () => {
@@ -86,7 +86,7 @@ describe("导航 Navigation", () => {
         selectedKeys={["dashboard"]}
       />,
     );
-    expect(screen.getByRole("button", { name: "仪表盘" })).toHaveClass("bg-primary-1");
+    expect(screen.getByRole("button", { name: "仪表盘" })).toHaveClass("bg-primary/10");
   });
 
   it("XPagination 渲染省略号分页", () => {

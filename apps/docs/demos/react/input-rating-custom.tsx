@@ -12,7 +12,7 @@ export default function InputRatingCustom() {
         <XInputRating
           value={3}
           color="primary"
-          ui={{ root: "gap-2", indicator: "fill-error-6 text-error-6" }}
+          ui={{ root: "gap-2", indicator: "fill-error text-error" }}
         />
         <XInputRating value={2} item={({ index }) => (
           <span className="flex size-6 items-center justify-center rounded-lg bg-muted text-xs">{index + 1}</span>

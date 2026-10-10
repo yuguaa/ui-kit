@@ -24,7 +24,7 @@ const page = ref(3)
         <button
           type="button"
           class="rounded-md px-3 py-1.5 text-sm"
-          :class="item.value === current ? 'bg-primary-6 text-white' : 'text-muted-foreground'"
+          :class="item.value === current ? 'bg-primary text-background' : 'text-muted-foreground'"
         >
           第 {{ item.value }} 页
         </button>

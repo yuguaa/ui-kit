@@ -154,7 +154,7 @@ function getHandleId(index: number) {
         :disabled="disabled"
         data-slot="handle"
         :class="cn(
-          'group relative shrink-0 focus-visible:outline-2 focus-visible:outline-primary-6 data-[panel-resize-handle-enabled=false]:cursor-default',
+          'group relative shrink-0 focus-visible:outline-2 focus-visible:outline-primary data-[panel-resize-handle-enabled=false]:cursor-default',
           orientation === 'horizontal' ? 'w-2 cursor-col-resize' : 'h-2 cursor-row-resize',
           ui?.handle,
         )"

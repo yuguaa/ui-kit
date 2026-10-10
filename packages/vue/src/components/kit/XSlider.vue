@@ -71,13 +71,13 @@ const emit = defineEmits<{
 
 /** 颜色映射：指示条背景与拇指描边 */
 const colorClasses: Record<SliderColor, { range: string; thumb: string }> = {
-  primary: { range: 'bg-primary-6', thumb: 'ring-primary-6 outline-primary-6/25' },
+  primary: { range: 'bg-primary', thumb: 'ring-primary outline-primary/25' },
   secondary: { range: 'bg-secondary', thumb: 'ring-secondary outline-secondary/25' },
   neutral: { range: 'bg-foreground', thumb: 'ring-foreground outline-foreground/25' },
-  success: { range: 'bg-success-6', thumb: 'ring-success-6 outline-success-6/25' },
-  info: { range: 'bg-info-6', thumb: 'ring-info-6 outline-info-6/25' },
-  warning: { range: 'bg-warning-6', thumb: 'ring-warning-6 outline-warning-6/25' },
-  error: { range: 'bg-error-6', thumb: 'ring-error-6 outline-error-6/25' },
+  success: { range: 'bg-success', thumb: 'ring-success outline-success/25' },
+  info: { range: 'bg-info', thumb: 'ring-info outline-info/25' },
+  warning: { range: 'bg-warning', thumb: 'ring-warning outline-warning/25' },
+  error: { range: 'bg-error', thumb: 'ring-error outline-error/25' },
 }
 
 const thumbSizeClasses: Record<SliderSize, string> = {

@@ -15,11 +15,11 @@ const items = [{ key: '1' }, { key: '2' }, { key: '3' }]
     :ui="{
       root: 'rounded-lg ring-1 ring-inset ring-border p-6',
       item: 'overflow-hidden rounded-lg',
-      dot: 'bg-success-5',
+      dot: 'bg-success/50',
     }"
   >
     <template #default="{ item }">
-      <div class="flex h-24 items-center justify-center rounded-lg bg-primary-1 text-primary-7">
+      <div class="flex h-24 items-center justify-center rounded-lg bg-primary/10 text-primary">
         Slide {{ item.key }}
       </div>
     </template>

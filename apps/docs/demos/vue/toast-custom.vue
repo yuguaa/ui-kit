@@ -36,7 +36,7 @@ const EmojiTitle = defineComponent({
       @click="toastApi.show({
         title: h(EmojiTitle, { text: '自定义标题' }),
         description: 'ui 插槽类名定制各区域样式。',
-        ui: { root: 'ring-4 ring-primary-3', title: 'text-base', description: 'text-xs' },
+        ui: { root: 'ring-4 ring-primary/20', title: 'text-base', description: 'text-xs' },
         duration: 8000,
       })"
     >

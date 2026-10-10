@@ -11,7 +11,7 @@ export default function ButtonUiCustom() {
         <div className="flex flex-wrap items-center gap-3">
           <XButton label="保存" />
           <XButton label="自定义外观" ui={{ base: "rounded-full px-5 shadow-md", label: "tracking-wide" }} />
-          <XButton variant="soft" color="info" ui={{ base: "ring-2 ring-info-3", label: "italic" }}>
+          <XButton variant="soft" color="info" ui={{ base: "ring-2 ring-info/20", label: "italic" }}>
             带描边与斜体
           </XButton>
         </div>

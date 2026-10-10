@@ -102,13 +102,13 @@ describe.each(["react", "vue"] as const)("%s registry", (framework) => {
     }
   });
 
-  it("cssVars 包含 6 种语义色色阶 × 10 级与圆角/阴影/字体 token", () => {
+  it("cssVars 包含 6 种语义色色阶 × 11 级与圆角/阴影/字体 token", () => {
     const item = loadItem(framework, "x-button");
     const theme = item.cssVars.theme;
     // secondary 使用 shadcn 的 --secondary / --muted 灰色变量，不参与色阶派生
     for (const color of ["primary", "success", "warning", "error", "info", "neutral"]) {
-      for (let i = 1; i <= 10; i++) {
-        expect(theme[`${color}-${i}`]).toMatch(/^#/);
+      for (const shade of [50, 100, 200, 300, 400, 500, 600, 700, 800, 900, 950]) {
+        expect(theme[`${color}-${shade}`]).toMatch(/^#/);
       }
     }
     expect(theme["radius-sm"]).toBe("4px");
@@ -203,7 +203,7 @@ describe("kit-theme.css 生成物", () => {
     const react = readFileSync(join(repoRoot, "packages/react/src/lib/kit/kit-theme.css"), "utf8");
     const vue = readFileSync(join(repoRoot, "packages/vue/src/lib/kit/kit-theme.css"), "utf8");
     expect(react).toBe(vue);
-    expect(react).toContain("--primary-6: #1677ff;");
+    expect(react).toContain("--primary-500: #22c55e;");
     expect(react).toContain("--radius-pill: 9999px;");
   });
 });

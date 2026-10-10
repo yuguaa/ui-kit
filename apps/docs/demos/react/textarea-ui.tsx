@@ -6,7 +6,7 @@ export default function TextareaUi() {
       <XTextarea
         placeholder="自定义 base 类名"
         className="w-72"
-        ui={{ base: "bg-primary-1 ring-primary-3 text-primary-7" }}
+        ui={{ base: "bg-primary/10 ring-primary/20 text-primary" }}
       />
     </div>
   );

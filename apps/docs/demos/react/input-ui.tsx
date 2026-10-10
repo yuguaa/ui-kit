@@ -7,12 +7,12 @@ export default function InputUi() {
       <XInput
         placeholder="自定义 root 与 base"
         className="w-56"
-        ui={{ root: "rounded-lg", base: "bg-primary-1 ring-primary-3 text-primary-7" }}
+        ui={{ root: "rounded-lg", base: "bg-primary/10 ring-primary/20 text-primary" }}
       />
       <XInput
         placeholder="自定义 leading / trailing"
         className="w-56"
-        ui={{ leading: "text-primary-6", trailing: "text-success-6" }}
+        ui={{ leading: "text-primary", trailing: "text-success" }}
         leading={<XIcon name="user" size="sm" />}
         trailing={<XIcon name="check" size="sm" />}
       />
@@ -20,7 +20,7 @@ export default function InputUi() {
         placeholder="左侧头像"
         className="w-56"
         avatar={{ text: "阿" }}
-        ui={{ leadingAvatar: "ring-2 ring-primary-3", leadingAvatarSize: "sm" }}
+        ui={{ leadingAvatar: "ring-2 ring-primary/20", leadingAvatarSize: "sm" }}
       />
     </div>
   );

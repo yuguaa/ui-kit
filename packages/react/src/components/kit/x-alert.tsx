@@ -36,10 +36,10 @@ export type XAlertButtonProps = Partial<XButtonProps>
 /** 变体 × 语义色样式（字面量，保证 Tailwind 可扫描） */
 const alertColorClasses: Record<XAlertColor, Record<XAlertVariant, string>> = {
   primary: {
-    solid: "bg-primary-6 text-white",
-    outline: "text-primary-6 ring-1 ring-inset ring-primary-5",
-    soft: "bg-primary-1 text-primary-7",
-    subtle: "bg-primary-1 text-primary-7 ring-1 ring-inset ring-primary-2",
+    solid: "bg-primary text-background",
+    outline: "text-primary ring-1 ring-inset ring-primary/25",
+    soft: "bg-primary/10 text-primary",
+    subtle: "bg-primary/10 text-primary ring-1 ring-inset ring-primary/25",
   },
   secondary: {
     solid: "bg-secondary text-secondary-foreground",
@@ -54,28 +54,28 @@ const alertColorClasses: Record<XAlertColor, Record<XAlertVariant, string>> = {
     subtle: "bg-muted text-foreground ring-1 ring-inset ring-border",
   },
   success: {
-    solid: "bg-success-6 text-white",
-    outline: "text-success-6 ring-1 ring-inset ring-success-5",
-    soft: "bg-success-1 text-success-7",
-    subtle: "bg-success-1 text-success-7 ring-1 ring-inset ring-success-2",
+    solid: "bg-success text-background",
+    outline: "text-success ring-1 ring-inset ring-success/25",
+    soft: "bg-success/10 text-success",
+    subtle: "bg-success/10 text-success ring-1 ring-inset ring-success/25",
   },
   info: {
-    solid: "bg-info-6 text-white",
-    outline: "text-info-6 ring-1 ring-inset ring-info-5",
-    soft: "bg-info-1 text-info-7",
-    subtle: "bg-info-1 text-info-7 ring-1 ring-inset ring-info-2",
+    solid: "bg-info text-background",
+    outline: "text-info ring-1 ring-inset ring-info/25",
+    soft: "bg-info/10 text-info",
+    subtle: "bg-info/10 text-info ring-1 ring-inset ring-info/25",
   },
   warning: {
-    solid: "bg-warning-6 text-white",
-    outline: "text-warning-7 ring-1 ring-inset ring-warning-5",
-    soft: "bg-warning-1 text-warning-8",
-    subtle: "bg-warning-1 text-warning-8 ring-1 ring-inset ring-warning-2",
+    solid: "bg-warning text-background",
+    outline: "text-warning ring-1 ring-inset ring-warning/25",
+    soft: "bg-warning/10 text-warning",
+    subtle: "bg-warning/10 text-warning ring-1 ring-inset ring-warning/25",
   },
   error: {
-    solid: "bg-error-6 text-white",
-    outline: "text-error-6 ring-1 ring-inset ring-error-5",
-    soft: "bg-error-1 text-error-7",
-    subtle: "bg-error-1 text-error-7 ring-1 ring-inset ring-error-2",
+    solid: "bg-error text-background",
+    outline: "text-error ring-1 ring-inset ring-error/25",
+    soft: "bg-error/10 text-error",
+    subtle: "bg-error/10 text-error ring-1 ring-inset ring-error/25",
   },
 }
 

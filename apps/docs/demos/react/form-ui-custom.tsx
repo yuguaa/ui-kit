@@ -5,7 +5,7 @@ export default function FormUiCustom() {
 
   return (
     <Form
-      ui={{ root: "rounded-xl border border-dashed border-primary-5 bg-primary-1/50 p-4 gap-2" }}
+      ui={{ root: "rounded-xl border border-dashed border-primary/50 bg-primary/10 p-4 gap-2" }}
       className="w-full"
     >
       <XFormField name="name" label="姓名">

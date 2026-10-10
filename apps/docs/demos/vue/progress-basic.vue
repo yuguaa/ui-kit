@@ -11,12 +11,12 @@ const value = ref(45)
     <XProgress v-model="value" status color="success" />
     <XProgress :model-value="100" status color="info">
       <template #status="{ percent }">
-        <span class="text-info-6">已完成 {{ percent }}%</span>
+        <span class="text-info">已完成 {{ percent }}%</span>
       </template>
     </XProgress>
     <XProgress
       :model-value="60"
-      :ui="{ base: 'h-3', indicator: 'bg-gradient-to-r from-primary-6 to-info-6' }"
+      :ui="{ base: 'h-3', indicator: 'bg-gradient-to-r from-primary to-info' }"
     />
   </div>
 </template>

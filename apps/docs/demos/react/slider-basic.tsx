@@ -9,7 +9,7 @@ export default function SliderBasic() {
       <XSlider value={value} onValueChange={setValue} size="sm" />
       <XSlider value={value} onValueChange={setValue} size="md" />
       <XSlider value={value} onValueChange={setValue} size="lg" />
-      <XSlider value={range} onValueChange={setRange} ui={{ range: "bg-info-6" }} />
+      <XSlider value={range} onValueChange={setRange} ui={{ range: "bg-info" }} />
     </div>
   );
 }

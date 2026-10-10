@@ -28,35 +28,35 @@ export interface XSwitchUi {
 
 /** 选中时滑块轨道的语义色 */
 const baseColorClasses: Record<XSwitchColor, string> = {
-  primary: "data-checked:bg-primary-6",
+  primary: "data-checked:bg-primary",
   secondary: "data-checked:bg-secondary",
   neutral: "data-checked:bg-foreground",
-  success: "data-checked:bg-success-6",
-  info: "data-checked:bg-info-6",
-  warning: "data-checked:bg-warning-6",
-  error: "data-checked:bg-error-6",
+  success: "data-checked:bg-success",
+  info: "data-checked:bg-info",
+  warning: "data-checked:bg-warning",
+  error: "data-checked:bg-error",
 }
 
 /** 选中时滑块内图标的颜色 */
 const iconColorClasses: Record<XSwitchColor, string> = {
-  primary: "group-data-checked:text-primary-6",
+  primary: "group-data-checked:text-primary",
   secondary: "group-data-checked:text-secondary",
   neutral: "group-data-checked:text-foreground",
-  success: "group-data-checked:text-success-6",
-  info: "group-data-checked:text-info-6",
-  warning: "group-data-checked:text-warning-6",
-  error: "group-data-checked:text-error-6",
+  success: "group-data-checked:text-success",
+  info: "group-data-checked:text-info",
+  warning: "group-data-checked:text-warning",
+  error: "group-data-checked:text-error",
 }
 
 /** highlight 常显聚焦环颜色 */
 const highlightClasses: Record<XSwitchColor, string> = {
-  primary: "ring-primary-6",
+  primary: "ring-primary",
   secondary: "ring-secondary",
   neutral: "ring-foreground",
-  success: "ring-success-6",
-  info: "ring-info-6",
-  warning: "ring-warning-6",
-  error: "ring-error-6",
+  success: "ring-success",
+  info: "ring-info",
+  warning: "ring-warning",
+  error: "ring-error",
 }
 
 /** 尺寸:轨道、滑块、容器高度与文字 */
@@ -196,7 +196,7 @@ export const XSwitch = React.forwardRef<HTMLButtonElement, XSwitchProps>(functio
               htmlFor={id}
               className={cn(
                 "block font-medium text-foreground",
-                required && "after:content-['*'] after:ms-0.5 after:text-error-6",
+                required && "after:content-['*'] after:ms-0.5 after:text-error",
                 disabled && "cursor-not-allowed",
                 ui?.label,
               )}

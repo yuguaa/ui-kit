@@ -429,7 +429,7 @@ const paletteOpen = ref(false)
         <div class="grid gap-4 lg:grid-cols-2">
           <XCarousel :items="carouselItems" dots class="h-28">
             <template #item="{ item }">
-              <div class="bg-primary-1 text-primary-7 flex h-24 items-center justify-center rounded-md text-sm">
+              <div class="bg-primary/10 text-primary flex h-24 items-center justify-center rounded-md text-sm">
                 轮播项 {{ item.key }}
               </div>
             </template>

@@ -21,7 +21,7 @@ const items = [
     <XDropdownMenu
       arrow
       external-icon
-      :ui="{ content: 'border border-primary-3', item: 'rounded-none', itemLeadingIcon: 'text-info-6' }"
+      :ui="{ content: 'border border-primary/20', item: 'rounded-none', itemLeadingIcon: 'text-info' }"
       :items="[
         { key: 'site', label: '访问官网', icon: 'globe', target: '_blank' },
         { key: 'repo', label: '查看仓库', icon: 'github', target: '_blank' },

@@ -7,8 +7,8 @@ describe("XAlert", () => {
   it("color 与 variant 语义色类", () => {
     const { container } = render(<XAlert color="success" variant="soft" title="完成" />);
     const root = container.querySelector("[data-slot='root']");
-    expect(root).toHaveClass("bg-success-1");
-    expect(root).toHaveClass("text-success-7");
+    expect(root).toHaveClass("bg-success/10");
+    expect(root).toHaveClass("text-success");
   });
 
   it("title 与 message 并存时 title 优先", () => {
@@ -117,7 +117,7 @@ describe("XAlert", () => {
     render(<XAlert title="T" close={{ variant: "soft", color: "info", label: "关闭提示" }} onClose={onClose} />);
     const button = screen.getByRole("button", { name: "关闭" });
     expect(button).toHaveTextContent("关闭提示");
-    expect(button).toHaveClass("text-info-7");
+    expect(button).toHaveClass("text-info");
     await userEvent.click(button);
     expect(onClose).toHaveBeenCalledTimes(1);
   });

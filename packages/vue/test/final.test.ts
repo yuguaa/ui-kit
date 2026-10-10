@@ -49,7 +49,7 @@ describe("导航 Navigation", () => {
     const wrapper = mount(XLink, { props: { to: "/docs", active: true }, slots: { default: "文档" } });
     expect(wrapper.attributes("href")).toBe("/docs");
     expect(wrapper.attributes("aria-current")).toBe("page");
-    expect(wrapper.classes()).toContain("text-primary-7");
+    expect(wrapper.classes()).toContain("text-primary/75");
   });
 
   it("XBreadcrumb 渲染层级与分隔符", () => {
@@ -76,7 +76,7 @@ describe("导航 Navigation", () => {
     });
     expect(wrapper.text()).toContain("仪表盘");
     const selected = wrapper.findAll("button").find((b) => b.text() === "仪表盘");
-    expect(selected?.classes()).toContain("bg-primary-1");
+    expect(selected?.classes()).toContain("bg-primary/10");
   });
 
   it("XPagination 渲染省略号分页", () => {

@@ -10,7 +10,7 @@ const items = [
 <template>
   <div class="flex w-full flex-col gap-4">
     <div class="h-56">
-      <XSplitter :items="items" disabled :ui="{ panel: 'bg-muted', handle: 'bg-primary-5' }" class="h-full">
+      <XSplitter :items="items" disabled :ui="{ panel: 'bg-muted', handle: 'bg-primary/50' }" class="h-full">
         <template #panel-0>
           <div class="flex h-full items-center justify-center p-4 text-sm">面板 A（disabled 锁定拖拽）</div>
         </template>

@@ -16,13 +16,13 @@ const open = ref(false)
     title="主题定制"
     description="ui 属性按主题插槽键覆盖类名。"
     :ui="{
-      overlay: 'bg-primary-9/40',
-      content: 'rounded-2xl border border-primary-3',
-      handle: '!bg-primary-5',
+      overlay: 'bg-primary-900/40',
+      content: 'rounded-2xl border border-primary-200',
+      handle: '!bg-primary-400',
       container: 'gap-2',
-      header: 'bg-primary-1 rounded-md px-3 py-2',
-      title: 'text-primary-7',
-      description: 'text-primary-6',
+      header: 'bg-primary/10 rounded-md px-3 py-2',
+      title: 'text-primary',
+      description: 'text-primary/75',
       body: 'text-sm leading-6',
     }"
   >

@@ -7,14 +7,14 @@ export default function InputTimeSlots() {
       <XInputTime
         value="14:30"
         className="w-44"
-        leading={<AlarmClock className="size-5 text-success-6" />}
+        leading={<AlarmClock className="size-5 text-success" />}
         trailing={<span className="text-xs text-muted-foreground">下午</span>}
       />
       <XInputTime
         value={["09:00", "18:00"]}
         range
         className="w-56"
-        ui={{ base: "rounded-xl ring-2 ring-inset ring-primary-6", separatorIcon: "text-error-6" }}
+        ui={{ base: "rounded-xl ring-2 ring-inset ring-primary", separatorIcon: "text-error" }}
       />
     </div>
   );
