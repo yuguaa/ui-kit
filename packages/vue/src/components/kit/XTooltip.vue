@@ -66,7 +66,7 @@ export interface TooltipSlots {
 import { ref } from 'vue'
 import { computed, toRef } from 'vue'
 import { defu } from 'defu'
-import { TooltipRoot, TooltipTrigger, TooltipPortal, TooltipContent, TooltipArrow, injectTooltipProviderContext, provideTooltipProviderContext } from 'reka-ui'
+import { TooltipRoot, TooltipTrigger, TooltipPortal, TooltipContent, TooltipArrow, TooltipProvider, injectTooltipProviderContext } from 'reka-ui'
 import { reactivePick } from '@vueuse/core'
 import { useAppConfig } from '@/lib/nuxt/imports'
 import { useComponentProps } from '../../lib/nuxt/composables/useComponentProps'
@@ -86,18 +86,7 @@ const props = useComponentProps('tooltip', _props)
 
 const appConfig = useAppConfig() as Tooltip['AppConfig']
 
-const providerContext = injectTooltipProviderContext() ?? provideTooltipProviderContext({
-  isOpenDelayed: ref(false),
-  delayDuration: ref(1000),
-  onOpen: () => {},
-  onClose: () => {},
-  isPointerInTransitRef: ref(false),
-  disableHoverableContent: ref(false),
-  disableClosingTrigger: ref(false),
-  disabled: ref(false),
-  ignoreNonKeyboardFocus: ref(true),
-  content: ref({}),
-})
+const providerContext = (injectTooltipProviderContext(null) ?? { content: ref({}) }) as { content: { value: Record<string, any> } }
 
 const rootProps = useForwardProps(reactivePick(props, 'defaultOpen', 'open', 'delayDuration', 'disableHoverableContent', 'disableClosingTrigger', 'ignoreNonKeyboardFocus'), emits)
 const portalProps = usePortal(toRef(() => props.portal))
@@ -111,7 +100,8 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.tooltip || {}) }
 </script>
 
 <template>
-  <TooltipRoot v-slot="{ open }" v-bind="rootProps" :disabled="!(props.text || props.kbds?.length || !!slots.content) || props.disabled">
+  <TooltipProvider>
+    <TooltipRoot v-slot="{ open }" v-bind="rootProps" :disabled="!(props.text || props.kbds?.length || !!slots.content) || props.disabled">
     <TooltipTrigger v-if="!!slots.default || !!props.reference" v-bind="$attrs" as-child :reference="props.reference" :class="props.class">
       <slot :open="open" />
     </TooltipTrigger>
@@ -132,4 +122,5 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.tooltip || {}) }
       </FieldGroupReset>
     </TooltipPortal>
   </TooltipRoot>
+  </TooltipProvider>
 </template>

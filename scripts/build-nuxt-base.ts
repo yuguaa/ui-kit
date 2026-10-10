@@ -657,24 +657,15 @@ function convertComponent(source: string): string {
     const afterTag = out.indexOf(">", setupOpen) + 1;
     out = out.slice(0, afterTag) + `\nimport NuxtLink from '../../lib/nuxt/NuxtLink.vue'` + out.slice(afterTag);
   }
-  /* Tooltip Provider 缺省替身：无 Provider 时主动 provide 默认上下文（reka TooltipRoot 内部也 inject） */
+  /* Tooltip Provider 替身：模板外层包 TooltipProvider，inject 兜底为空上下文 */
   if (out.includes("injectTooltipProviderContext()")) {
     out = out.replace(
       "const providerContext = injectTooltipProviderContext()",
-      `const providerContext = injectTooltipProviderContext() ?? provideTooltipProviderContext({
-  isOpenDelayed: ref(false),
-  delayDuration: ref(1000),
-  onOpen: () => {},
-  onClose: () => {},
-  isPointerInTransitRef: ref(false),
-  disableHoverableContent: ref(false),
-  disableClosingTrigger: ref(false),
-  disabled: ref(false),
-  ignoreNonKeyboardFocus: ref(true),
-  content: ref({}),
-})`,
+      `const providerContext = (injectTooltipProviderContext(null) ?? { content: ref({}) }) as { content: { value: Record<string, any> } }`,
     );
-    out = out.replace(/import \{ TooltipRoot, TooltipTrigger, TooltipPortal, TooltipContent, TooltipArrow, injectTooltipProviderContext \} from 'reka-ui'/, "import { TooltipRoot, TooltipTrigger, TooltipPortal, TooltipContent, TooltipArrow, injectTooltipProviderContext, provideTooltipProviderContext } from 'reka-ui'");
+    out = out.replace(/import \{ TooltipRoot, TooltipTrigger, TooltipPortal, TooltipContent, TooltipArrow, injectTooltipProviderContext \} from 'reka-ui'/, "import { TooltipRoot, TooltipTrigger, TooltipPortal, TooltipContent, TooltipArrow, TooltipProvider, injectTooltipProviderContext } from 'reka-ui'");
+    out = out.replace(/<template>\s*\n\s*<TooltipRoot/, "<template>\n  <TooltipProvider>\n    <TooltipRoot");
+    out = out.replace(/<\/TooltipRoot>\s*\n<\/template>/, "</TooltipRoot>\n  </TooltipProvider>\n</template>");
     if (!/import\s*\{[^}]*\bref\b/.test(out)) {
       const setupOpen = out.indexOf("<script setup");
       const afterTag = out.indexOf(">", setupOpen) + 1;
