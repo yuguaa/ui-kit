@@ -5,17 +5,27 @@ description: 名称驱动的矢量图标，内置常用图标集合与五档尺�
 
 # Icon 图标
 
-名称驱动的矢量图标（lucide），内置常用图标集合与五档尺寸，颜色可自定义。需要内置集合之外的图标时，直接引入 lucide-react 图标组件即可。
+名称驱动的矢量图标（lucide），内置常用图标集合与五档尺寸，颜色可自定义。`mode` 切换 svg 渲染（默认）与 Iconify CSS 类名输出，`customize` 在 svg 渲染后修改图标元素。需要内置集合之外的图标时，直接引入 lucide-react 图标组件即可。
 
 <script setup>
 import IconBasic from '@demos/react/icon-basic'
 import iconBasicRaw from '@demos/react/icon-basic.tsx.code.txt?raw'
+import IconModes from '@demos/react/icon-modes'
+import iconModesRaw from '@demos/react/icon-modes.tsx.code.txt?raw'
 </script>
 
 ## 基础用法
 
 <DemoBlock title="图标集合、尺寸与颜色" description="name 选择图标，size 选择尺寸，color 自定义颜色" :code="iconBasicRaw">
   <ReactDemo :component="IconBasic" />
+</DemoBlock>
+
+## 渲染模式与定制
+
+svg 模式渲染 lucide SVG，css 模式输出 `i-lucide-*` Iconify CSS 类名（配合 UnoCSS / Iconify 环境使用）；customize 在 svg 渲染后修改图标元素；ui 插槽注入根元素类名。
+
+<DemoBlock title="mode · customize · ui" description="svg/css 渲染模式、customize 修改 svg、ui.root 类名" :code="iconModesRaw">
+  <ReactDemo :component="IconModes" />
 </DemoBlock>
 
 ## 安装
@@ -28,9 +38,18 @@ npx shadcn@latest add @ui-kit/x-icon
 
 | 名称 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
-| name | bell · check · chevron-down · chevron-right · circle-alert · circle-check · copy · dashboard · external-link · info · loader-circle · menu · plus · search · settings · star · trash · user · x | - | 图标名 |
+| name | arrow-left · bell · book · chart-bar · chart-line · check · chevron-down · chevron-right · circle-alert · circle-check · clipboard-paste · copy · corner-down-right · dashboard · download · external-link · file-plus · file-text · figma · folder · folder-open · form-input · gauge · github · globe · house · info · layout-dashboard · loader-circle · menu · moon · package · palette · pen · plus · search · settings · star · sun · trash · user · users · x | - | 图标名 |
 | size | xs · sm · md · lg · xl | md | 尺寸 |
 | color | string | - | 颜色 |
+| mode | svg · css | svg | 渲染模式：svg 渲染 lucide 图标，css 输出 Iconify CSS 类名 |
+| customize | (svg: SVGSVGElement) => void | - | svg 渲染后修改图标元素的回调 |
+| ui | XIconUi | - | 主题插槽类名 |
+
+## ui 插槽
+
+| 名称 | 说明 |
+| --- | --- |
+| root | 图标根元素（svg 模式的 svg 元素 / css 模式的 span 元素） |
 
 ## 相关组件
 

@@ -12,10 +12,18 @@ const leftOpen = ref(false)
     <XButton variant="soft" @click="rightOpen = true">右侧抽屉</XButton>
     <XButton variant="soft" @click="leftOpen = true">左侧抽屉</XButton>
   </div>
-  <XDrawer v-model:open="rightOpen" title="右侧抽屉">
-    <template #content>抽屉内容区域，用于展示详情或表单。</template>
+
+  <XDrawer v-model:open="rightOpen" title="右侧抽屉" description="direction 为 right 时从右侧滑出。">
+    <template #body>抽屉内容区域，用于展示详情或表单。</template>
+    <template #footer>
+      <XButton @click="rightOpen = false">关闭</XButton>
+    </template>
   </XDrawer>
-  <XDrawer v-model:open="leftOpen" title="左侧抽屉" side="left">
-    <template #content>左侧抽屉内容。</template>
+
+  <XDrawer v-model:open="leftOpen" title="左侧抽屉" description="direction 为 left 时从左侧滑出。" direction="left">
+    <template #body>左侧抽屉内容。</template>
+    <template #footer>
+      <XButton @click="leftOpen = false">关闭</XButton>
+    </template>
   </XDrawer>
 </template>

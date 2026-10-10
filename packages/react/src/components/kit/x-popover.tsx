@@ -1,91 +1,141 @@
 /**
- * XPopover 气泡：点击或悬停触发的轻量气泡卡片。
+ * XPopover 气泡卡片：与 Nuxt UI Popover 对齐的气泡浮层。
+ * mode 区分点击（click）与悬停（hover）触发，支持 anchor 锚点插槽、dismissible 关闭策略与 portal 渲染。
  */
 import * as React from "react"
 import { Popover as PopoverPrimitive } from "@base-ui/react/popover"
-import {
-  Popover,
-  PopoverContent,
-  PopoverDescription,
-  PopoverHeader,
-  PopoverTitle,
-  PopoverTrigger,
-} from "@/components/ui/popover"
-import { createBoundStore, useBoundStore } from "@/lib/kit/bound-store"
 import { cn } from "@/lib/utils"
 
+/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
+export interface XPopoverUi {
+  content?: string
+  arrow?: string
+}
+
 export interface XPopoverProps {
-  /** 是否显示 */
+  /** 触发模式：click 点击 / hover 悬停 */
+  mode?: "click" | "hover"
+  /** 是否打开（受控） */
   open?: boolean
-  /** 触发方式 */
-  trigger?: "hover" | "click"
-  /** 位置 */
-  side?: "top" | "bottom" | "left" | "right"
+  /** 初始是否打开 */
+  defaultOpen?: boolean
+  /** 模态：聚焦锁定与遮罩拦截（仅 click 模式） */
+  modal?: boolean
+  /** 悬停打开延迟（毫秒，仅 hover 模式） */
+  openDelay?: number
+  /** 悬停关闭延迟（毫秒，仅 hover 模式） */
+  closeDelay?: number
   /** 是否显示指向触发元素的箭头 */
   arrow?: boolean
-  /** 内容 */
-  content?: React.ReactNode
-  /** 标题 */
-  title?: React.ReactNode
-  /** 触发元素 */
-  children: React.ReactNode
-  /** 打开状态变化回调 */
-  onOpenChange?: (open: boolean) => void
+  /** 渲染到 body */
+  portal?: boolean
+  /** 允许点击外部或按 Esc 关闭 */
+  dismissible?: boolean
   className?: string
+  /** 主题插槽类名 */
+  ui?: XPopoverUi
+  /** 触发元素（对应 default 插槽） */
+  children?: React.ReactNode
+  /** 内容（对应 content 插槽，可传函数接收 close 关闭方法） */
+  content?: React.ReactNode | ((close: () => void) => React.ReactNode)
+  /** 锚点（对应 anchor 插槽，作为定位参考元素） */
+  anchor?: React.ReactNode
+  /** 打开状态变化回调 */
+  onOpenChange?: (open: boolean, details: PopoverPrimitive.Root.ChangeEventDetails) => void
+  /** 关闭被阻止（dismissible 为 false 时点击外部或按 Esc） */
+  onClosePrevent?: () => void
 }
 
 export function XPopover({
-  open: openProp,
-  trigger = "hover",
-  side = "top",
+  mode = "click",
+  open,
+  defaultOpen,
+  modal = false,
+  openDelay = 0,
+  closeDelay = 0,
   arrow = false,
-  content,
-  title,
-  children,
-  onOpenChange,
+  portal = true,
+  dismissible = true,
   className,
+  ui,
+  children,
+  content,
+  anchor,
+  onOpenChange,
+  onClosePrevent,
 }: XPopoverProps) {
-  const [innerOpen, setInnerOpen] = React.useState(false)
-  const open = openProp ?? innerOpen
+  const actionsRef = React.useRef<PopoverPrimitive.Root.Actions | null>(null)
+  /** anchor 插槽元素作为定位参考 */
+  const anchorRef = React.useRef<HTMLDivElement | null>(null)
+
+  /* dismissible 为 false 时拦截外部点击与 Esc 关闭 */
+  function handleOpenChange(next: boolean, details: PopoverPrimitive.Root.ChangeEventDetails) {
+    if (!dismissible && !next && (details.reason === "outside-press" || details.reason === "escape-key")) {
+      details.cancel()
+      onClosePrevent?.()
+      return
+    }
+    onOpenChange?.(next, details)
+  }
+
+  function close() {
+    actionsRef.current?.close()
+  }
+
+  const popupElement = (
+    <PopoverPrimitive.Positioner
+      className="isolate z-50"
+      side="bottom"
+      sideOffset={8}
+      collisionPadding={8}
+      anchor={anchorRef}
+    >
+      <PopoverPrimitive.Popup
+        data-slot="content"
+        className={cn(
+          "bg-background shadow-lg rounded-md ring-1 ring-border focus:outline-none pointer-events-auto z-50",
+          "data-open:animate-in data-open:fade-in-0 data-open:zoom-in-95 data-closed:animate-out data-closed:fade-out-0 data-closed:zoom-out-95",
+          children == null && className,
+          ui?.content,
+        )}
+      >
+        {typeof content === "function" ? content(close) : content}
+
+        {arrow && <PopoverPrimitive.Arrow data-slot="arrow" className={cn("fill-background stroke-border", ui?.arrow)} />}
+      </PopoverPrimitive.Popup>
+    </PopoverPrimitive.Positioner>
+  )
 
   return (
-    <Popover
+    <PopoverPrimitive.Root
       open={open}
-      onOpenChange={(next) => {
-        if (openProp == null) setInnerOpen(next)
-        onOpenChange?.(next)
-      }}
+      defaultOpen={defaultOpen}
+      modal={mode === "click" ? modal : undefined}
+      actionsRef={actionsRef}
+      onOpenChange={handleOpenChange}
     >
-      <PopoverTrigger
-        openOnHover={trigger === "hover"}
-        render={
-          React.isValidElement(children) ? (
-            children
-          ) : (
-            <button type="button" className="inline-flex">{children}</button>
-          )
-        }
-      />
-      <PopoverContent
-        side={side}
-        sideOffset={arrow ? 8 : undefined}
-        className={cn("w-64", className)}
-      >
-        {arrow && (
-          <PopoverPrimitive.Arrow className="size-3 rotate-45 bg-popover" />
-        )}
-        {title != null && (
-          <PopoverHeader>
-            <PopoverTitle>{title}</PopoverTitle>
-          </PopoverHeader>
-        )}
-        <PopoverDescription render={<div>{content}</div>} />
-      </PopoverContent>
-    </Popover>
+      {anchor != null && <div ref={anchorRef}>{anchor}</div>}
+
+      {children != null && (
+        <PopoverPrimitive.Trigger
+          render={React.isValidElement(children) ? children : undefined}
+          className={className}
+          openOnHover={mode === "hover"}
+          delay={mode === "hover" ? openDelay : undefined}
+          closeDelay={mode === "hover" ? closeDelay : undefined}
+        >
+          {React.isValidElement(children) ? undefined : children}
+        </PopoverPrimitive.Trigger>
+      )}
+
+      {portal ? <PopoverPrimitive.Portal>{popupElement}</PopoverPrimitive.Portal> : popupElement}
+    </PopoverPrimitive.Root>
   )
 }
 
-/* ============================ vben 风格 hook ============================ */
+/* ============================ hook ============================ */
+
+import { createBoundStore, useBoundStore } from "@/lib/kit/bound-store"
 
 export interface XPopoverApi {
   /** 打开 */
@@ -94,27 +144,17 @@ export interface XPopoverApi {
   close: () => void
   /** 切换开合 */
   toggle: () => void
-  /** 更新内部状态（标题、内容等） */
-  setState: (patch: Pick<Partial<XPopoverProps>, "title" | "content" | "side">) => void
 }
 
 /** 创建与 api 绑定的气泡：调用即得 [Popover, popoverApi] */
 export function useXPopover({ defaultOpen = false, ...componentProps }: Partial<XPopoverProps> & { defaultOpen?: boolean } = {}) {
-  const store = React.useState(() =>
-    createBoundStore({
-      open: defaultOpen,
-      title: componentProps.title,
-      content: componentProps.content,
-      side: componentProps.side,
-    }),
-  )[0]
+  const store = React.useState(() => createBoundStore({ open: defaultOpen }))[0]
 
   const api = React.useMemo<XPopoverApi>(
     () => ({
       open: () => store.set({ open: true }),
       close: () => store.set({ open: false }),
       toggle: () => store.set({ open: !store.get().open }),
-      setState: (patch) => store.set(patch),
     }),
     [],
   )
@@ -127,13 +167,11 @@ export function useXPopover({ defaultOpen = false, ...componentProps }: Partial<
           {...componentProps}
           {...props}
           open={state.open}
-          title={state.title}
-          content={state.content}
-          side={state.side ?? "top"}
-          onOpenChange={(next) => store.set({ open: next })}
-        >
-          {props.children ?? (componentProps.children as React.ReactNode)}
-        </XPopover>
+          onOpenChange={(next, details) => {
+            store.set({ open: next })
+            props.onOpenChange?.(next, details)
+          }}
+        />
       )
     }
   }, [])

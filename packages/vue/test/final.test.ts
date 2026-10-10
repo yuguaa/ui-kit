@@ -58,17 +58,16 @@ describe("导航 Navigation", () => {
     });
     expect(wrapper.text()).toContain("首页");
     expect(wrapper.text()).toContain("面包屑");
-    expect(wrapper.findAllComponents({ name: "BreadcrumbSeparator" })).toHaveLength(2);
+    expect(wrapper.findAll("[data-slot='separator']")).toHaveLength(2);
   });
 
-  it("XTabs 切换标签触发 change", async () => {
+  it("XTabs 切换标签触发 update:modelValue", async () => {
     const wrapper = mount(XTabs, {
-      props: { items: [{ key: "doc", label: "文档" }, { key: "api", label: "API" }] },
-      slots: { content: "<p>面板内容</p>" },
+      props: { items: [{ value: "doc", label: "文档", content: "文档内容" }, { value: "api", label: "API", content: "API 内容" }], modelValue: "doc" },
     });
-    expect(wrapper.text()).toContain("文档");
-    await wrapper.findAll("button").find((b) => b.text() === "API")?.trigger("mousedown", { button: 0 });
-    expect(wrapper.emitted("change")?.[0]).toEqual(["api"]);
+    expect(wrapper.text()).toContain("文档内容");
+    await wrapper.findAll("button").find((b) => b.text() === "API")?.trigger("mousedown.left");
+    expect(wrapper.emitted("update:modelValue")?.[0]).toEqual(["api"]);
   });
 
   it("XNavigationMenu 渲染菜单项与选中态", () => {
@@ -81,19 +80,19 @@ describe("导航 Navigation", () => {
   });
 
   it("XPagination 渲染省略号分页", () => {
-    const wrapper = mount(XPagination, { props: { current: 5, total: 100, pageSize: 10 } });
-    expect(wrapper.text()).toContain("…");
+    const wrapper = mount(XPagination, { props: { page: 8, total: 100, itemsPerPage: 10, showEdges: true } });
+    expect(wrapper.find("[data-type='ellipsis']").exists()).toBe(true);
   });
 
-  it("XPagination 点击页码触发 change", async () => {
-    const wrapper = mount(XPagination, { props: { current: 1, total: 50, pageSize: 10 } });
+  it("XPagination 点击页码触发 update:page", async () => {
+    const wrapper = mount(XPagination, { props: { page: 1, total: 50, itemsPerPage: 10 } });
     await wrapper.findAll("button").find((b) => b.text() === "3")?.trigger("click");
-    expect(wrapper.emitted("change")?.[0]).toEqual([3, 10]);
+    expect(wrapper.emitted("update:page")?.[0]).toEqual([3]);
   });
 
   it("XStepper 状态渲染", () => {
     const wrapper = mount(XStepper, {
-      props: { current: 1, items: [{ title: "完成" }, { title: "进行中" }, { title: "待处理" }] },
+      props: { modelValue: 1, items: [{ title: "完成" }, { title: "进行中" }, { title: "待处理" }] },
     });
     expect(wrapper.text()).toContain("完成");
     expect(wrapper.text()).toContain("待处理");
@@ -109,23 +108,23 @@ describe("导航 Navigation", () => {
 });
 
 describe("浮层 Overlays", () => {
-  it("XModal 渲染标题与默认底部按钮", async () => {
+  it("XModal 渲染标题与正文，点击关闭按钮触发 update:open", async () => {
     const wrapper = mount(XModal, {
       props: { open: true, title: "对话框标题" },
-      slots: { content: "正文" },
+      slots: { body: "正文" },
     });
     expect(await waitForBody("对话框标题")).toBe(true);
     expect(await waitForBody("正文")).toBe(true);
-    const okButton = Array.from(document.querySelectorAll("button")).find((b) => b.textContent?.includes("确"));
-    okButton?.dispatchEvent(new MouseEvent("click", { bubbles: true }));
+    const closeButton = Array.from(document.querySelectorAll("button")).find((b) => b.getAttribute("aria-label") === "关闭");
+    closeButton?.dispatchEvent(new MouseEvent("click", { bubbles: true }));
     await wrapper.vm.$nextTick();
-    expect(wrapper.emitted("ok")).toHaveLength(1);
+    expect(wrapper.emitted("update:open")).toContainEqual([false]);
   });
 
   it("XDrawer 渲染标题与内容", async () => {
     mount(XDrawer, {
       props: { open: true, title: "抽屉标题" },
-      slots: { content: "抽屉内容" },
+      slots: { body: "抽屉内容" },
     });
     expect(await waitForBody("抽屉标题")).toBe(true);
     expect(await waitForBody("抽屉内容")).toBe(true);
@@ -134,7 +133,7 @@ describe("浮层 Overlays", () => {
   it("XSlideover 渲染标题与内容", async () => {
     mount(XSlideover, {
       props: { open: true, title: "侧滑面板" },
-      slots: { content: "面板内容" },
+      slots: { body: "面板内容" },
     });
     expect(await waitForBody("侧滑面板")).toBe(true);
     expect(await waitForBody("面板内容")).toBe(true);
@@ -142,28 +141,27 @@ describe("浮层 Overlays", () => {
 
   it("XTooltip 渲染提示内容", async () => {
     mount(XTooltip, {
-      props: { title: "这是一段提示文字", open: true },
+      props: { text: "这是一段提示文字", open: true },
       slots: { default: "<button>悬浮查看提示</button>" },
     });
     expect(await waitForBody("这是一段提示文字")).toBe(true);
   });
 
-  it("XPopover 渲染标题与内容", async () => {
+  it("XPopover 渲染内容", async () => {
     mount(XPopover, {
-      props: { open: true, title: "气泡标题" },
-      slots: { trigger: "<button>打开气泡</button>", content: "气泡说明文字" },
+      props: { open: true },
+      slots: { default: "<button>打开气泡</button>", content: "气泡说明文字" },
     });
-    expect(await waitForBody("气泡标题")).toBe(true);
     expect(await waitForBody("气泡说明文字")).toBe(true);
   });
 
   it("XPopover arrow 渲染箭头", async () => {
     mount(XPopover, {
-      props: { open: true, arrow: true, title: "带箭头" },
-      slots: { trigger: "<button>打开</button>", content: "内容" },
+      props: { open: true, arrow: true },
+      slots: { default: "<button>打开</button>", content: "内容" },
     });
-    expect(await waitForBody("带箭头")).toBe(true);
-    expect(document.body.querySelector("svg.fill-popover")).not.toBeNull();
+    expect(await waitForBody("内容")).toBe(true);
+    expect(document.body.querySelector("svg.fill-background")).not.toBeNull();
   });
 
   it("XDropdownMenu 菜单项渲染说明与快捷键", async () => {
@@ -191,10 +189,10 @@ describe("浮层 Overlays", () => {
       props: { collapsible: true },
       slots: { first: "<div>左面板</div>", second: "<div>右面板</div>" },
     });
-    const buttons = wrapper.findAll("button[aria-label='折叠面板']");
-    expect(buttons.length).toBeGreaterThan(0);
-    await buttons[0]!.trigger("click");
-    expect(wrapper.findAll("button[aria-label='展开面板']").length).toBeGreaterThan(0);
+    const handles = wrapper.findAll("[role=separator]");
+    expect(handles.length).toBeGreaterThan(0);
+    expect(handles[0]!.attributes("data-orientation")).toBe("horizontal");
+    expect(handles[0]!.attributes("data-panel-resize-handle-enabled")).toBe("true");
   });
 
   it("XContextMenu 渲染菜单项", async () => {
@@ -211,7 +209,7 @@ describe("浮层 Overlays", () => {
       props: { open: true, items: [{ key: "rename", label: "重命名" }] },
     });
     await waitForBody("重命名");
-    const item = document.querySelector("[data-slot=dropdown-menu-item]");
+    const item = document.querySelector("[data-slot='item']");
     item?.dispatchEvent(new MouseEvent("click", { bubbles: true }));
     await wrapper.vm.$nextTick();
     expect(wrapper.emitted("select")?.[0]).toEqual([{ key: "rename", label: "重命名" }]);
@@ -230,8 +228,8 @@ describe("内容 Content", () => {
   it("XTable 渲染行列数据", () => {
     const wrapper = mount(XTable, {
       props: {
-        columns: [{ key: "name", title: "名称" }, { key: "age", title: "年龄" }],
-        dataSource: [{ key: "1", name: "张三", age: 28 }],
+        columns: [{ accessorKey: "name", header: "名称" }, { accessorKey: "age", header: "年龄" }],
+        data: [{ key: "1", name: "张三", age: 28 }],
       },
     });
     expect(wrapper.text()).toContain("名称");
@@ -241,58 +239,55 @@ describe("内容 Content", () => {
 
   it("XTable loading 渲染骨架行", () => {
     const wrapper = mount(XTable, {
-      props: { columns: [{ key: "a", title: "A" }], dataSource: [], loading: true },
+      props: { columns: [{ accessorKey: "a", header: "A" }], data: [], loading: true },
     });
     expect(wrapper.findAllComponents({ name: "XSkeleton" }).length).toBeGreaterThan(0);
   });
 
-  it("XTable 点击可排序表头切换顺序", async () => {
+  it("XTable 受控 sorting 切换行顺序", async () => {
     const wrapper = mount(XTable, {
       props: {
         columns: [
-          { key: "name", title: "名称", sortable: true },
-          { key: "count", title: "数量" },
+          { accessorKey: "name", header: "名称", enableSorting: true },
+          { accessorKey: "count", header: "数量" },
         ],
-        dataSource: [
+        data: [
           { key: "1", name: "B", count: 2 },
           { key: "2", name: "A", count: 1 },
         ],
-        pagination: false,
+        sorting: [{ id: "name", desc: false }],
       },
     });
     const firstCell = () => wrapper.find("tbody tr td").text();
-    expect(firstCell()).toBe("B");
-
-    await wrapper.find("button[aria-label='排序 名称']").trigger("click");
     expect(firstCell()).toBe("A");
 
-    await wrapper.find("button[aria-label='排序 名称']").trigger("click");
+    await wrapper.setProps({ sorting: [{ id: "name", desc: true }] });
     expect(firstCell()).toBe("B");
   });
 
-  it("XTable rowSelection 勾选行并回调选中键", async () => {
+  it("XTable rowSelection 状态反映到行选中标记", () => {
     const wrapper = mount(XTable, {
       props: {
-        columns: [{ key: "name", title: "名称" }],
-        dataSource: [{ key: "1", name: "张三" }, { key: "2", name: "李四" }],
-        pagination: false,
-        rowSelection: true,
+        columns: [{ accessorKey: "name", header: "名称" }],
+        data: [{ key: "1", name: "张三" }, { key: "2", name: "李四" }],
+        rowSelectionOptions: { enableRowSelection: true },
+        rowSelection: { 1: true },
       },
     });
-    await wrapper.find("[aria-label='选择第 1 行']").trigger("click");
-    expect(wrapper.emitted("selectionChange")?.[0]).toEqual([["1"]]);
+    const rows = wrapper.findAll("tbody [data-slot='tr']");
+    expect(rows[0]?.attributes("data-selected")).toBe("false");
+    expect(rows[1]?.attributes("data-selected")).toBe("true");
   });
 
   it("XTable sticky 时表头固定在滚动区顶部", () => {
     const wrapper = mount(XTable, {
       props: {
-        columns: [{ key: "name", title: "名称" }],
-        dataSource: [{ key: "1", name: "张三" }],
+        columns: [{ accessorKey: "name", header: "名称" }],
+        data: [{ key: "1", name: "张三" }],
         sticky: true,
-        maxHeight: 200,
       },
     });
-    expect(wrapper.find("th").classes()).toContain("sticky");
+    expect(wrapper.find("thead").classes()).toContain("sticky");
   });
 
   it("XAlert 语义渲染与关闭", async () => {
@@ -304,17 +299,16 @@ describe("内容 Content", () => {
     expect(wrapper.emitted("close")).toHaveLength(1);
   });
 
-  it("XProgress 线形与圆形", () => {
-    const line = mount(XProgress, { props: { percent: 30 } });
+  it("XProgress 确定进度与不确定进度", () => {
+    const line = mount(XProgress, { props: { modelValue: 30, status: true } });
     expect(line.text()).toContain("30%");
-    const circle = mount(XProgress, { props: { percent: 75, type: "circle" } });
-    expect(circle.find("svg").exists()).toBe(true);
-    expect(circle.text()).toContain("75%");
+    const indeterminate = mount(XProgress);
+    expect(indeterminate.find("[data-slot='indicator']").exists()).toBe(true);
   });
 
   it("XAccordion 展开项", async () => {
     const wrapper = mount(XAccordion, {
-      props: { items: [{ title: "什么是 Nuxt UI？" }, { title: "如何安装？" }] },
+      props: { items: [{ label: "什么是 Nuxt UI？" }, { label: "如何安装？" }] },
       slots: { content: "组件库说明" },
     });
     await wrapper.findAll("button").find((b) => b.text().includes("什么是"))?.trigger("click");
@@ -329,10 +323,10 @@ describe("内容 Content", () => {
     expect(wrapper.text()).toContain("折叠的内容区域");
   });
 
-  it("XListbox 点击选中触发 select", async () => {
-    const wrapper = mount(XListbox, { props: { items: [{ key: "a", label: "选项 A" }] } });
-    await wrapper.find("button").trigger("click");
-    expect(wrapper.emitted("select")?.[0]).toEqual(["a"]);
+  it("XListbox 点击选中触发 update:modelValue", async () => {
+    const wrapper = mount(XListbox, { props: { items: [{ key: "a", label: "选项 A" }], valueKey: "key" } });
+    await wrapper.find("[data-slot='item']").trigger("click");
+    expect(wrapper.emitted("update:modelValue")?.[0]).toEqual(["a"]);
   });
 
   it("XScrollArea 渲染滚动内容", () => {
@@ -354,7 +348,7 @@ describe("内容 Content", () => {
     });
     expect(wrapper.text()).toContain("左面板");
     expect(wrapper.text()).toContain("右面板");
-    expect(wrapper.find("[role=separator]").attributes("aria-orientation")).toBe("horizontal");
+    expect(wrapper.find("[role=separator]").attributes("data-orientation")).toBe("horizontal");
   });
 });
 
@@ -381,8 +375,10 @@ describe("XCarousel 箭头、指示点与方向", () => {
     expect(noArrows.find("[aria-label='上一张']").exists()).toBe(false);
   });
 
-  it("dots 渲染可点击指示点", () => {
-    const wrapper = mount(XCarousel, { props: { items, dots: true } });
+  it("dots 渲染可点击指示点", async () => {
+    const wrapper = mount(XCarousel, { attachTo: document.body, props: { items, dots: true } });
+    /* embla 的 init 事件异步发出，等待指示点渲染完成 */
+    await new Promise((resolve) => setTimeout(resolve, 0));
     expect(wrapper.find("[aria-label='跳转到第 1 张']").exists()).toBe(true);
     expect(wrapper.find("[aria-label='跳转到第 2 张']").exists()).toBe(true);
   });

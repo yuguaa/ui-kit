@@ -6,16 +6,17 @@ export default function SliderVertical() {
   return (
     <div className="flex items-center gap-10">
       <XSlider
-        value={[value]}
+        value={value}
+        onValueChange={setValue}
         tooltip
         orientation="vertical"
-        onChange={setValue}
         className="h-40"
       />
       <XSlider
-        value={[value]}
+        value={value}
+        onValueChange={setValue}
         orientation="vertical"
-        onChange={setValue}
+        color="info"
         className="h-40"
       />
       <div className="text-sm text-muted-foreground">当前值：{value}</div>

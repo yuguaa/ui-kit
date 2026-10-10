@@ -12,7 +12,12 @@ export interface XSplitterApi {
   resize: (size: number) => void
 }
 
-export function useXSplitter(options: { defaultSize?: number; minSize?: number; orientation?: 'horizontal' | 'vertical' } = {}) {
+export function useXSplitter(options: {
+  defaultSize?: number
+  minSize?: number
+  orientation?: 'horizontal' | 'vertical'
+  disabled?: boolean
+} = {}) {
   const { defaultSize = 50, ...componentProps } = options
   const state = reactive({ size: defaultSize })
 
@@ -26,8 +31,8 @@ export function useXSplitter(options: { defaultSize?: number; minSize?: number; 
             ...attrs,
             ...componentProps,
             size: state.size,
-            onResize: (size: number) => {
-              state.size = size
+            onResize: (index: number, size: number) => {
+              if (index === 0) state.size = size
             },
           } as never,
           slots as never,

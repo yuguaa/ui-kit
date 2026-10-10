@@ -5,25 +5,59 @@ description: 带标签、说明与错误信息的表单字段
 
 # FormField 表单字段
 
-带标签、辅助说明与错误信息的表单字段，错误信息优先取表单校验结果。
+带标签、辅助说明与错误信息的表单字段，错误信息优先取 error prop，其次按 name / errorPattern 匹配表单校验结果。结构对齐 Nuxt UI：root > wrapper（标签行 + 说明）> container（控件 + 错误 / 帮助）。
 
 <script setup>
-import FormBasic from '@demos/react/form-basic'
-import formBasicRaw from '@demos/react/form-basic.tsx.code.txt?raw'
+import FormFieldOrientation from '@demos/react/form-field-orientation'
+import formFieldOrientationRaw from '@demos/react/form-field-orientation.tsx.code.txt?raw'
+import FormFieldSize from '@demos/react/form-field-size'
+import formFieldSizeRaw from '@demos/react/form-field-size.tsx.code.txt?raw'
+import FormFieldSlots from '@demos/react/form-field-slots'
+import formFieldSlotsRaw from '@demos/react/form-field-slots.tsx.code.txt?raw'
 import FormFieldHint from '@demos/react/form-field-hint'
 import formFieldHintRaw from '@demos/react/form-field-hint.tsx.code.txt?raw'
+import FormFieldUiCustom from '@demos/react/form-field-ui-custom'
+import formFieldUiCustomRaw from '@demos/react/form-field-ui-custom.tsx.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="表单全景（示例中含字段与字段组）" :code="formBasicRaw">
-  <ReactDemo :component="FormBasic" />
+## 排列方向
+
+`orientation` 控制标签与控件的布局：vertical 标签在上，horizontal 标签与控件同一行。
+
+<DemoBlock title="vertical 与 horizontal" description="orientation 属性控制排列方向" :code="formFieldOrientationRaw">
+  <ReactDemo :component="FormFieldOrientation" />
 </DemoBlock>
 
-## 提示文案
+## 尺寸
 
-`hint` 渲染在标签右侧，用于说明填写要求。
+`size` 控制根节点字号（xs → xl）。
+
+<DemoBlock title="五档尺寸" description="size 属性控制字段字号" :code="formFieldSizeRaw">
+  <ReactDemo :component="FormFieldSize" />
+</DemoBlock>
+
+## 插槽
+
+label / description / error / help / hint 五个插槽对应同名 props（ReactNode）；hint 渲染在标签右侧，description 渲染在标签下方，error 与 help 渲染在控件下方（有错误时显示 error，否则显示 help）。
+
+<DemoBlock title="五个插槽" description="label / description / error / help / hint 自定义内容" :code="formFieldSlotsRaw">
+  <ReactDemo :component="FormFieldSlots" />
+</DemoBlock>
+
+## 标签提示
+
+`hint` 用于说明填写要求。
 
 <DemoBlock title="标签提示" description="hint 属性" :code="formFieldHintRaw">
   <ReactDemo :component="FormFieldHint" />
+</DemoBlock>
+
+## ui 插槽
+
+`ui` 按主题插槽（root / wrapper / labelWrapper / label / container / description / error / hint / help）覆盖类名。
+
+<DemoBlock title="ui 插槽" description="九个主题插槽键的类名自定义" :code="formFieldUiCustomRaw">
+  <ReactDemo :component="FormFieldUiCustom" />
 </DemoBlock>
 
 ## 安装
@@ -39,20 +73,35 @@ npx shadcn@latest add @ui-kit/x-field-group
 
 | 名称 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
+| render | ReactElement | - | 渲染为指定元素 |
 | name | string | - | 字段名（关联表单校验结果） |
-| label | ReactNode | - | 标签文字 |
-| hint | ReactNode | - | 标签右侧的提示文案（说明填写要求） |
+| errorPattern | RegExp | - | 正则匹配表单错误名，用于数组字段（如 tags.0） |
+| label | ReactNode | - | 标签内容 |
 | description | ReactNode | - | 辅助说明 |
-| error | ReactNode | - | 错误信息（优先取表单校验结果） |
+| help | ReactNode | - | 无错误时显示的帮助文案 |
+| error | boolean · ReactNode | - | 错误信息：true 强制错误态，false 关闭错误显示 |
+| hint | ReactNode | - | 标签右侧的提示文案（说明填写要求） |
+| size | xs · sm · md · lg · xl | md | 尺寸（控制根节点字号） |
 | required | boolean | false | 是否必填 |
+| eagerValidation | boolean | false | 输入时立即校验，不等待 blur（供字段内控件读取） |
+| validateOnInputDelay | number | 300 | 输入校验的防抖延迟毫秒数（供字段内控件读取） |
+| orientation | vertical · horizontal | vertical | 排列方向 |
 | id | string | - | 控件 id（label 关联用） |
+| ui | XFormFieldUi | - | 主题插槽类名 |
 
-### XFieldGroup
+## ui 插槽
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| size | sm · md · lg | md | 尺寸 |
-| inline | boolean | true | 是否同行排列 |
+| 名称 | 说明 |
+| --- | --- |
+| root | 字段根元素 |
+| wrapper | 标签与说明容器 |
+| labelWrapper | 标签行（标签与 hint） |
+| label | 标签 |
+| container | 控件容器 |
+| description | 辅助说明 |
+| error | 错误信息 |
+| hint | 标签右侧提示 |
+| help | 帮助文案 |
 
 ## 动效
 

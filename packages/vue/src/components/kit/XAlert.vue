@@ -1,115 +1,272 @@
 <script setup lang="ts">
 /**
- * XAlert 警告提示：展示需要关注的信息，提供四种语义。
+ * XAlert 警告提示：
+ * 在语义色（color × variant）上提供标题、描述、图标/头像、操作区与受控关闭按钮。
+ * leading / title / description / actions / close 插槽与 Nuxt UI 对齐，
+ * icon / message 插槽为 kit 既有用法保留。
  */
-import type { HTMLAttributes } from 'vue'
-import { ref } from 'vue'
-import { CircleAlert, CircleCheck, Info, OctagonX, X } from '@lucide/vue'
-import { Alert, AlertAction, AlertDescription, AlertTitle } from '@/components/ui/alert'
+import type { Component, HTMLAttributes } from 'vue'
+import { computed, useSlots } from 'vue'
+import { CircleAlert, CircleCheck, Info, OctagonX } from '@lucide/vue'
+import { Primitive } from 'reka-ui'
+import XAvatar from '@/components/kit/XAvatar.vue'
 import XButton from '@/components/kit/XButton.vue'
+import XIcon from '@/components/kit/XIcon.vue'
 import { cn } from '@/lib/utils'
 
 type AlertType = 'success' | 'info' | 'warning' | 'error'
+type AlertColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
 type AlertVariant = 'solid' | 'outline' | 'soft' | 'subtle'
+type AlertOrientation = 'vertical' | 'horizontal'
+type AvatarSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
+type IconName = InstanceType<typeof XIcon>['$props']['name']
+type XButtonProps = InstanceType<typeof XButton>['$props']
+
+/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
+export interface AlertUi {
+  root?: string
+  wrapper?: string
+  title?: string
+  description?: string
+  icon?: string
+  avatar?: string
+  avatarSize?: AvatarSize
+  actions?: string
+  close?: string
+}
+
+/** avatar 属性：透传给 XAvatar 的头像配置 */
+export interface AlertAvatarProps {
+  src?: string
+  alt?: string
+  text?: string
+  size?: AvatarSize
+  shape?: 'circle' | 'square'
+  color?: AlertColor
+}
+
+/** 按钮配置：close 对象与 actions 数组共用，整体透传给 XButton */
+export type AlertButtonProps = Partial<XButtonProps>
 
 const props = withDefaults(defineProps<{
-  /** 提示类型 */
+  /** 渲染为指定元素或组件 */
+  as?: string | Component
+  /** 提示类型（kit 既有属性，作为 color 的回退） */
   type?: AlertType
+  /** 语义色 */
+  color?: AlertColor
   /** 预设样式 */
   variant?: AlertVariant
-  /** 提示标题 */
+  /** 内容与操作区的排列方向 */
+  orientation?: AlertOrientation
+  /** 提示标题（与 message 并存，优先于 message） */
+  title?: string
+  /** 提示标题（kit 既有属性） */
   message?: string
   /** 辅助说明文字 */
   description?: string
-  /** 是否显示关闭按钮 */
-  closable?: boolean
-  /** 是否显示图标 */
+  /** 图标名 */
+  icon?: IconName
+  /** 显示类型默认图标（kit 既有属性） */
   showIcon?: boolean
+  /** 头像配置 */
+  avatar?: AlertAvatarProps
+  /** 操作按钮列表，纵向时位于内容下方，横向时位于内容右侧 */
+  actions?: AlertButtonProps[]
+  /** 显示关闭按钮，点击后 open 置为 false */
+  close?: boolean | AlertButtonProps
+  /** 显示关闭按钮（kit 既有属性） */
+  closable?: boolean
+  /** 关闭按钮图标 */
+  closeIcon?: IconName
+  /** 主题插槽类名 */
+  ui?: AlertUi
   class?: HTMLAttributes['class']
 }>(), {
-  type: 'info',
-  variant: 'soft',
+  variant: 'solid',
+  orientation: 'vertical',
   closable: false,
   showIcon: false,
+  closeIcon: 'x',
 })
 
 const emit = defineEmits<{
-  /** 点击关闭按钮时的回调 */
+  /** 点击关闭按钮时的回调（kit 既有事件） */
   close: [event: MouseEvent]
 }>()
 
-const visible = ref(true)
+/** 受控关闭模型：点击关闭按钮后置为 false */
+const open = defineModel<boolean>('open', { default: true })
 
-/** 变体 × 语义样式（字面量，保证 Tailwind 可扫描） */
-const typeClasses: Record<AlertVariant, Record<AlertType, string>> = {
-  solid: {
-    success: 'bg-success-6 text-white',
-    info: 'bg-info-6 text-white',
-    warning: 'bg-warning-6 text-white',
-    error: 'bg-error-6 text-white',
+const slots = useSlots()
+
+/** 变体 × 语义色样式（字面量，保证 Tailwind 可扫描） */
+const colorClasses: Record<AlertColor, Record<AlertVariant, string>> = {
+  primary: {
+    solid: 'bg-primary-6 text-white',
+    outline: 'text-primary-6 ring-1 ring-inset ring-primary-5',
+    soft: 'bg-primary-1 text-primary-7',
+    subtle: 'bg-primary-1 text-primary-7 ring-1 ring-inset ring-primary-2',
   },
-  outline: {
-    success: 'text-success-7 ring-1 ring-inset ring-success-5',
-    info: 'text-info-7 ring-1 ring-inset ring-info-5',
-    warning: 'text-warning-8 ring-1 ring-inset ring-warning-5',
-    error: 'text-error-7 ring-1 ring-inset ring-error-5',
+  secondary: {
+    solid: 'bg-secondary text-secondary-foreground',
+    outline: 'text-foreground ring-1 ring-inset ring-border',
+    soft: 'bg-muted text-secondary-foreground',
+    subtle: 'bg-muted text-secondary-foreground ring-1 ring-inset ring-border',
   },
-  soft: {
-    success: 'bg-success-1 text-success-8',
-    info: 'bg-info-1 text-info-8',
-    warning: 'bg-warning-1 text-warning-8',
-    error: 'bg-error-1 text-error-8',
+  neutral: {
+    solid: 'bg-neutral-6 text-white',
+    outline: 'text-neutral-6 ring-1 ring-inset ring-neutral-5',
+    soft: 'bg-neutral-1 text-neutral-7',
+    subtle: 'bg-neutral-1 text-neutral-7 ring-1 ring-inset ring-neutral-2',
   },
-  subtle: {
-    success: 'bg-success-1 text-success-8 ring-1 ring-inset ring-success-2',
-    info: 'bg-info-1 text-info-8 ring-1 ring-inset ring-info-2',
-    warning: 'bg-warning-1 text-warning-8 ring-1 ring-inset ring-warning-2',
-    error: 'bg-error-1 text-error-8 ring-1 ring-inset ring-error-2',
+  success: {
+    solid: 'bg-success-6 text-white',
+    outline: 'text-success-6 ring-1 ring-inset ring-success-5',
+    soft: 'bg-success-1 text-success-7',
+    subtle: 'bg-success-1 text-success-7 ring-1 ring-inset ring-success-2',
+  },
+  info: {
+    solid: 'bg-info-6 text-white',
+    outline: 'text-info-6 ring-1 ring-inset ring-info-5',
+    soft: 'bg-info-1 text-info-7',
+    subtle: 'bg-info-1 text-info-7 ring-1 ring-inset ring-info-2',
+  },
+  warning: {
+    solid: 'bg-warning-6 text-white',
+    outline: 'text-warning-7 ring-1 ring-inset ring-warning-5',
+    soft: 'bg-warning-1 text-warning-8',
+    subtle: 'bg-warning-1 text-warning-8 ring-1 ring-inset ring-warning-2',
+  },
+  error: {
+    solid: 'bg-error-6 text-white',
+    outline: 'text-error-6 ring-1 ring-inset ring-error-5',
+    soft: 'bg-error-1 text-error-7',
+    subtle: 'bg-error-1 text-error-7 ring-1 ring-inset ring-error-2',
   },
 }
 
-const icons: Record<AlertType, typeof CircleCheck> = {
+/** 类型默认图标（showIcon 时使用） */
+const typeIcons: Record<AlertType, typeof CircleCheck> = {
   success: CircleCheck,
   info: Info,
   warning: CircleAlert,
   error: OctagonX,
 }
 
+/** color 优先，其次 type，最后 primary */
+const effectiveColor = computed<AlertColor>(() => props.color ?? props.type ?? 'primary')
+const heading = computed(() => props.title ?? props.message)
+const hasHeading = computed(() => heading.value != null || !!slots.title || !!slots.message)
+const hasActions = computed(() => (props.actions?.length ?? 0) > 0 || !!slots.actions)
+const closeButton = computed<AlertButtonProps>(() =>
+  typeof props.close === 'object' && props.close !== null ? props.close : {},
+)
+
 function handleClose(event: MouseEvent) {
-  visible.value = false
   emit('close', event)
+  open.value = false
 }
 </script>
 
 <template>
-  <Alert v-if="visible" :class="cn('flex items-start gap-2.5', typeClasses[variant][type], props.class)">
-    <span v-if="showIcon || $slots.icon" class="mt-0.5 shrink-0">
+  <Primitive
+    v-if="open"
+    :as="as ?? 'div'"
+    data-slot="root"
+    :data-orientation="orientation"
+    role="alert"
+    :class="cn(
+      'relative flex w-full gap-2.5 overflow-hidden rounded-lg p-4',
+      orientation === 'horizontal' ? 'items-center' : 'items-start',
+      colorClasses[effectiveColor][variant],
+      ui?.root,
+      props.class,
+    )"
+  >
+    <slot name="leading" :ui="ui">
       <slot name="icon">
-        <component :is="icons[type]" class="size-4" />
+        <XAvatar
+          v-if="avatar"
+          v-bind="avatar"
+          :size="ui?.avatarSize ?? avatar.size"
+          data-slot="avatar"
+          :class="cn('shrink-0', ui?.avatar)"
+        />
+        <XIcon
+          v-else-if="icon"
+          :name="icon"
+          data-slot="icon"
+          :class="cn('shrink-0 size-5', ui?.icon)"
+        />
+        <component
+          :is="typeIcons[type ?? 'info']"
+          v-else-if="showIcon"
+          data-slot="icon"
+          :class="cn('shrink-0 size-5', ui?.icon)"
+        />
       </slot>
-    </span>
-    <div class="flex min-w-0 flex-1 flex-col gap-0.5">
-      <AlertTitle v-if="message != null || $slots.message" class="text-sm font-medium">
-        <slot name="message">{{ message }}</slot>
-      </AlertTitle>
-      <AlertDescription v-if="description != null || $slots.description" class="text-sm opacity-90">
+    </slot>
+
+    <div data-slot="wrapper" :class="cn('flex min-w-0 flex-1 flex-col', ui?.wrapper)">
+      <div v-if="hasHeading" data-slot="title" :class="cn('text-sm font-medium', ui?.title)">
+        <slot name="title">
+          <slot name="message">{{ heading }}</slot>
+        </slot>
+      </div>
+      <div
+        v-if="description != null || $slots.description"
+        data-slot="description"
+        :class="cn('text-sm opacity-90', hasHeading && 'mt-1', ui?.description)"
+      >
         <slot name="description">{{ description }}</slot>
-      </AlertDescription>
-      <div v-if="$slots.actions" class="mt-2 flex flex-wrap items-center gap-2">
-        <slot name="actions" />
+      </div>
+
+      <div
+        v-if="orientation === 'vertical' && hasActions"
+        data-slot="actions"
+        :class="cn('mt-2.5 flex shrink-0 flex-wrap items-start gap-1.5', ui?.actions)"
+      >
+        <slot name="actions">
+          <XButton
+            v-for="(action, index) in actions"
+            :key="index"
+            size="xs"
+            v-bind="action"
+          />
+        </slot>
       </div>
     </div>
-    <AlertAction v-if="closable">
-      <XButton
-        variant="ghost"
-        color="neutral"
-        size="sm"
-        aria-label="关闭"
-        class="h-6 w-6 shrink-0 p-0"
-        @click="handleClose"
-      >
-        <X class="size-3.5" />
-      </XButton>
-    </AlertAction>
-  </Alert>
+
+    <div
+      v-if="(orientation === 'horizontal' && hasActions) || closable || close"
+      data-slot="actions"
+      :class="cn('flex shrink-0 flex-wrap gap-1.5', orientation === 'horizontal' ? 'items-center' : 'items-start', ui?.actions)"
+    >
+      <slot v-if="orientation === 'horizontal'" name="actions">
+        <XButton
+          v-for="(action, index) in actions"
+          :key="index"
+          size="xs"
+          v-bind="action"
+        />
+      </slot>
+      <slot name="close" :ui="ui">
+        <XButton
+          v-if="closable || close"
+          variant="link"
+          color="neutral"
+          size="md"
+          aria-label="关闭"
+          v-bind="closeButton"
+          :class="cn('p-0', ui?.close)"
+          @click="handleClose"
+        >
+          <template #leading>
+            <XIcon :name="closeIcon" size="sm" />
+          </template>
+        </XButton>
+      </slot>
+    </div>
+  </Primitive>
 </template>

@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
 import { XBadge } from "@/components/kit/x-badge";
@@ -42,6 +42,46 @@ describe("XButton", () => {
     expect(container.querySelector("button")).toHaveClass("size-9");
   });
 
+  it("label 与 ui 插槽类名", () => {
+    const { container } = render(<XButton label="保存" ui={{ base: "custom-base", label: "custom-label" }} />);
+    expect(screen.getByRole("button", { name: "保存" })).toHaveClass("custom-base");
+    expect(container.querySelector("span.custom-label")).toBeInTheDocument();
+  });
+
+  it("active 配合 activeColor / activeVariant 覆盖颜色与样式", () => {
+    render(<XButton active activeColor="success" activeVariant="soft" />);
+    const button = screen.getByRole("button");
+    expect(button).toHaveClass("bg-success-1");
+    expect(button).toHaveClass("text-success-7");
+  });
+
+  it("render 指定渲染元素", () => {
+    render(<XButton render={<a href="/docs" />}>文档</XButton>);
+    expect(screen.getByRole("link", { name: "文档" })).toHaveAttribute("href", "/docs");
+  });
+
+  it("loadingAuto 点击返回 Promise 时进入加载态", async () => {
+    let resolve!: () => void;
+    render(
+      <XButton
+        loadingAuto
+        onClick={() =>
+          new Promise<void>((done) => {
+            resolve = done;
+          })
+        }
+      >
+        提交
+      </XButton>,
+    );
+    const button = screen.getByRole("button", { name: "提交" });
+    await userEvent.click(button);
+    expect(button).toHaveAttribute("aria-busy", "true");
+
+    resolve();
+    await waitFor(() => expect(button).not.toHaveAttribute("aria-busy"));
+  });
+
   it("leading / trailing 图标", () => {
     render(
       <XButton leading={<span data-testid="leading" />} trailing={<span data-testid="trailing" />}>
@@ -76,8 +116,8 @@ describe("XButtonGroup", () => {
 describe("XBadge", () => {
   it("独立模式显示数字", () => {
     render(<XBadge count={5} />);
-    expect(screen.getByText("5")).toHaveClass("bg-primary-1");
-    expect(screen.getByText("5")).toHaveClass("text-primary-7");
+    expect(screen.getByText("5")).toHaveClass("bg-primary-6");
+    expect(screen.getByText("5")).toHaveClass("text-white");
   });
 
   it("超出 overflowCount 显示 99+", () => {

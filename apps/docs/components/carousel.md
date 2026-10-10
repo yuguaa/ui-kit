@@ -5,21 +5,25 @@ description: 多张内容轮播展示
 
 # Carousel 轮播
 
-多张内容轮播展示，基于 embla，支持自动播放、循环、指示点与纵向轮播。
+多张内容轮播展示，基于 embla，支持箭头、指示点、纵向轮播与多种插件能力。
 
 <script setup>
-import ContentBasic from '@demos/vue/content-basic.vue'
-import contentBasicRaw from '@demos/vue/content-basic.vue.code.txt?raw'
+import CarouselBasic from '@demos/vue/carousel-basic.vue'
+import carouselBasicRaw from '@demos/vue/carousel-basic.vue.code.txt?raw'
 import CarouselArrows from '@demos/vue/carousel-arrows.vue'
 import carouselArrowsRaw from '@demos/vue/carousel-arrows.vue.code.txt?raw'
 import CarouselDots from '@demos/vue/carousel-dots.vue'
 import carouselDotsRaw from '@demos/vue/carousel-dots.vue.code.txt?raw'
 import CarouselVertical from '@demos/vue/carousel-vertical.vue'
 import carouselVerticalRaw from '@demos/vue/carousel-vertical.vue.code.txt?raw'
+import CarouselPlugins from '@demos/vue/carousel-plugins.vue'
+import carouselPluginsRaw from '@demos/vue/carousel-plugins.vue.code.txt?raw'
+import CarouselUi from '@demos/vue/carousel-ui.vue'
+import carouselUiRaw from '@demos/vue/carousel-ui.vue.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="三张轮播与前后控制" :code="contentBasicRaw">
-  <ContentBasic />
+<DemoBlock title="基础用法" description="四张轮播与前后控制" :code="carouselBasicRaw">
+  <CarouselBasic />
 </DemoBlock>
 
 ## 箭头与指示点
@@ -42,6 +46,22 @@ orientation 设为 vertical 后轮播沿竖直方向滚动，箭头改为上下�
   <CarouselVertical />
 </DemoBlock>
 
+## 插件能力
+
+`fade` 淡入淡出切换；`autoHeight` 容器高度跟随当前项；`autoScroll` 连续滚动（speed / direction）；`classNames` 给视口与轮播项加状态类名；`wheelGestures` 滚轮切换（forceWheelAxis）。
+
+<DemoBlock title="fade · autoHeight · autoScroll · classNames · wheelGestures" description="五种插件能力的组合展示" :code="carouselPluginsRaw">
+  <CarouselPlugins />
+</DemoBlock>
+
+## prev / next 与 ui 插槽
+
+`prev` / `next` 传入 XButton 属性配置按钮，`prevIcon` / `nextIcon` 替换图标；`ui` 按主题插槽覆盖类名。
+
+<DemoBlock title="按钮配置与 ui 插槽" description="prev / next 配置与图标，ui 插槽类名" :code="carouselUiRaw">
+  <CarouselUi />
+</DemoBlock>
+
 ## 安装
 
 ```bash
@@ -52,27 +72,64 @@ npx shadcn-vue@latest add @ui-kit/x-carousel
 
 | 名称 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
-| items | { key }[] | - | 轮播项数组 |
+| items | CarouselItem[] | [] | 轮播项数组 |
 | autoplay | boolean | false | 自动播放 |
 | interval | number | 3000 | 自动播放间隔（ms） |
 | loop | boolean | true | 循环播放 |
-| disabled | boolean | false | 是否禁用 |
+| disabled | boolean | false | 是否禁用键盘切换 |
 | arrows | boolean | true | 是否显示左右切换按钮 |
 | dots | boolean | false | 是否显示指示点 |
 | orientation | horizontal · vertical | horizontal | 轮播方向 |
+| fade | boolean | false | 淡入淡出切换，每次只显示当前项 |
+| autoHeight | boolean | false | 容器高度跟随当前项 |
+| autoScroll | boolean · { speed, direction, stopOnInteraction } | false | 连续滚动 |
+| classNames | boolean · { loop, draggable, dragging, snapped, inView } | false | 类名钩子：loop / draggable 加在视口，dragging 拖拽期间加在视口，snapped / inView 加在轮播项 |
+| wheelGestures | boolean · { forceWheelAxis } | false | 滚轮手势切换 |
+| prev | XButtonProps | { variant: outline, color: neutral } | 上一页按钮配置 |
+| prevIcon | string · Component | chevron-left | 上一页按钮图标 |
+| next | XButtonProps | { variant: outline, color: neutral } | 下一页按钮配置 |
+| nextIcon | string · Component | chevron-right | 下一页按钮图标 |
+| as | string · Component | div | 渲染为指定元素或组件 |
+| ui | CarouselUi | - | 主题插槽类名 |
 
-## 插槽
+### CarouselItem
+
+| 名称 | 类型 | 默认值 | 说明 |
+| --- | --- | --- | --- |
+| key | string · number | 索引 | 轮播项 key |
+| class | string | - | 轮播项类名 |
+| ui | { item: string } | - | 轮播项 item 插槽类名 |
+
+## ui 插槽
 
 | 名称 | 说明 |
 | --- | --- |
-| item | 自定义轮播项（{ item }） |
-| prev / next | 上一页 / 下一页按钮 |
+| root | 根元素 |
+| viewport | 视口 |
+| container | 轮播容器 |
+| item | 轮播项 |
+| controls | 控制区 |
+| arrows | 箭头按钮组 |
+| prev | 上一页按钮 |
+| next | 下一页按钮 |
+| dots | 指示点容器 |
+| dot | 指示点 |
+
+## 插槽
+
+| 名称 | 参数 | 说明 |
+| --- | --- | --- |
+| default | { item, index } | 轮播项内容 |
 
 ## 事件
 
 | 名称 | 说明 |
 | --- | --- |
-| next / prev | 下一张 / 上一张回调 |
+| select | 选中项变化（index） |
+| next | 切到下一张 |
+| prev | 切到上一张 |
+
+**ref 方法**：next() · prev()
 
 ## hook
 
@@ -84,4 +141,5 @@ carouselApi.next()   // next / prev
 ## 动效
 
 - 轮播切换：滑动过渡（embla）
+- fade：当前项透明度过渡（transition-opacity）
 - 指示点：选中色切换过渡（transition-colors）

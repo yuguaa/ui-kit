@@ -2,6 +2,7 @@
  * XForm 表单：收集、校验并提交表单数据。
  * 通过 context 向 XFormField 提供 values / errors / disabled / setValue，
  * 通过 useXForm 在控件中读写表单状态。
+ * 校验支持 rules 规则与 schema（Standard Schema 协议，zod v4 / valibot v1 可直接传入）。
  */
 import * as React from "react"
 import { createBoundStore, useBoundStore } from "@/lib/kit/bound-store"
@@ -22,13 +23,54 @@ export interface XFormRule {
   message?: string
 }
 
+/** 标准 schema（Standard Schema 协议）：zod v4 / valibot v1 等库的对象
+ * 都带有 ~standard.validate，无需引入具体依赖 */
+export interface StandardSchema {
+  "~standard": {
+    validate: (value: unknown) => Promise<StandardSchemaResult> | StandardSchemaResult
+  }
+}
+
+export interface StandardSchemaResult {
+  value?: unknown
+  issues?: Array<{
+    path?: Array<string | number | symbol | { key: string | number | symbol }>
+    message: string
+  }>
+}
+
+export interface FormError {
+  name?: string
+  message: string
+}
+
+/** 按标准 schema 校验表单状态，返回错误列表；校验通过返回空数组 */
+export async function validateSchemaValues(
+  values: Record<string, unknown>,
+  schema: StandardSchema,
+): Promise<FormError[]> {
+  const result = await schema["~standard"].validate(values)
+  if (!result.issues) return []
+  return result.issues.map((issue) => ({
+    name:
+      issue.path
+        ?.map((item) =>
+          typeof item === "object" && item !== null
+            ? String(item.key)
+            : String(item),
+        )
+        .join(".") || "",
+    message: issue.message,
+  }))
+}
+
 export interface XFormContextValue {
   values: Record<string, unknown>
   errors: Record<string, string>
   disabled: boolean
   setValue: (name: string, value: unknown) => void
-  /** 校验表单，返回错误记录 */
-  validate: () => Record<string, string>
+  /** 校验表单，返回错误记录（带 schema 时返回 Promise） */
+  validate: () => Record<string, string> | Promise<Record<string, string>>
   /** 重置表单 */
   reset: () => void
   /** 提交表单 */
@@ -46,11 +88,16 @@ export function useXFormContext(): XFormContextValue {
 
 export interface XFormApi {
   /** 校验表单，返回错误记录 */
-  validate: () => Record<string, string>
+  validate: () => Record<string, string> | Promise<Record<string, string>>
   /** 重置表单 */
   reset: () => void
   /** 提交表单 */
   submit: () => void
+}
+
+/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
+export interface XFormUi {
+  root?: string
 }
 
 export interface XFormProps extends Omit<React.ComponentProps<"form">, "onSubmit" | "onError"> {
@@ -60,12 +107,16 @@ export interface XFormProps extends Omit<React.ComponentProps<"form">, "onSubmit
   defaultValues?: Record<string, unknown>
   /** 校验规则（按字段名） */
   rules?: Record<string, XFormRule[]>
+  /** 标准 schema（zod v4 / valibot v1 等），与 rules 叠加校验 */
+  schema?: StandardSchema
   /** 整体禁用 */
   disabled?: boolean
   /** 提交回调（校验通过后触发） */
   onSubmit?: (values: Record<string, unknown>) => void
   /** 校验失败回调 */
   onError?: (errors: Record<string, string>) => void
+  /** 主题插槽类名 */
+  ui?: XFormUi
 }
 
 function validateValue(value: unknown, rules: XFormRule[]): string | null {
@@ -104,9 +155,11 @@ export function XForm({
   values,
   defaultValues = {},
   rules = {},
+  schema,
   disabled = false,
   onSubmit,
   onError,
+  ui,
   className,
   children,
   ...props
@@ -114,7 +167,6 @@ export function XForm({
   const [innerValues, setInnerValues] = React.useState<Record<string, unknown>>(defaultValues)
   const [errors, setErrors] = React.useState<Record<string, string>>({})
   const currentValues = values ?? innerValues
-  const formRef = React.useRef<HTMLFormElement>(null)
 
   const setValue = (name: string, value: unknown) => {
     if (values == null) setInnerValues((prev) => ({ ...prev, [name]: value }))
@@ -122,8 +174,20 @@ export function XForm({
 
   const validate = () => {
     const nextErrors = validateFormValues(currentValues, rules)
-    setErrors(nextErrors)
-    return nextErrors
+    if (schema == null) {
+      setErrors(nextErrors)
+      return nextErrors
+    }
+    return validateSchemaValues(currentValues, schema).then((schemaErrors) => {
+      for (const error of schemaErrors) {
+        const key = error.name ?? ""
+        if (nextErrors[key] == null) {
+          nextErrors[key] = error.message
+        }
+      }
+      setErrors(nextErrors)
+      return nextErrors
+    })
   }
 
   const reset = () => {
@@ -132,9 +196,19 @@ export function XForm({
   }
 
   const submit = () => {
-    const nextErrors = validate()
-    if (Object.keys(nextErrors).length > 0) {
-      onError?.(nextErrors)
+    const result = validate()
+    if (result instanceof Promise) {
+      void result.then((nextErrors) => {
+        if (Object.keys(nextErrors).length > 0) {
+          onError?.(nextErrors)
+          return
+        }
+        onSubmit?.(currentValues)
+      })
+      return
+    }
+    if (Object.keys(result).length > 0) {
+      onError?.(result)
       return
     }
     onSubmit?.(currentValues)
@@ -142,19 +216,18 @@ export function XForm({
 
   const contextValue = React.useMemo<XFormContextValue>(
     () => ({ values: currentValues, errors, disabled, setValue, validate, reset, submit }),
-    [currentValues, errors, disabled],
+    [currentValues, errors, disabled, schema, rules],
   )
 
   return (
     <XFormContext.Provider value={contextValue}>
       <form
-        ref={formRef}
         noValidate
         onSubmit={(event) => {
           event.preventDefault()
           submit()
         }}
-        className={cn("flex flex-col gap-4", className)}
+        className={cn("flex flex-col gap-4", ui?.root, className)}
         {...props}
       >
         <fieldset disabled={disabled} className="contents">

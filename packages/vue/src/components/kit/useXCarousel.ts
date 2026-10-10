@@ -19,7 +19,20 @@ interface XCarouselExposed {
   prev: () => void
 }
 
-export function useXCarousel(options: { items?: CarouselDataItem[]; autoplay?: boolean; interval?: number; loop?: boolean; disabled?: boolean; arrows?: boolean; dots?: boolean; orientation?: 'horizontal' | 'vertical' } = {}) {
+export function useXCarousel(options: {
+  items?: CarouselDataItem[]
+  autoplay?: boolean
+  interval?: number
+  loop?: boolean
+  disabled?: boolean
+  arrows?: boolean
+  dots?: boolean
+  orientation?: 'horizontal' | 'vertical'
+  fade?: boolean
+  autoHeight?: boolean
+  autoScroll?: boolean | { speed?: number; direction?: 'forward' | 'backward' }
+  wheelGestures?: boolean | { forceWheelAxis?: 'x' | 'y' }
+} = {}) {
   const carouselRef = ref<XCarouselExposed>()
 
   const Carousel = defineComponent({

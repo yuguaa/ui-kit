@@ -19,14 +19,14 @@ import { useXTooltip } from "@/components/kit/useXTooltip";
 
 enableAutoUnmount(afterEach);
 
-/** 在真实组件树中使用 hook 的宿主 */
-function createHost<T>(useHook: () => readonly [unknown, T]) {
+/** 在真实组件树中使用 hook 的宿主（可携带插槽） */
+function createHost<T>(useHook: () => readonly [unknown, T], slots: Record<string, () => unknown> = {}) {
   const apiRef: { current: T | null } = { current: null }
   const Host = {
     setup() {
       const [Component, api] = useHook()
       apiRef.current = api
-      return () => h(Component as never)
+      return () => h(Component as never, null, slots)
     },
   }
   return { Host, apiRef }
@@ -61,7 +61,7 @@ describe("useXModal", () => {
     expect(await waitForBody("新标题")).toBe(true)
   })
 
-  it("setData / getData 共享数据，lock / unlock 切换确定按钮加载态", async () => {
+  it("setData / getData 共享数据", async () => {
     const { Host, apiRef } = createHost(() => useXModal({ title: "数据" }))
     mount(Host as never)
     const api = apiRef.current as unknown as ReturnType<typeof useXModal>[1]
@@ -70,15 +70,6 @@ describe("useXModal", () => {
     api.open()
     expect(await waitForBody("数据")).toBe(true)
     expect(api.getData<{ id: number }>()).toEqual({ id: 7 })
-
-    api.lock()
-    await nextTick()
-    const okButton = Array.from(document.querySelectorAll("button")).find((item) => item.textContent === "确 定")
-    expect(okButton?.getAttribute("aria-busy")).toBe("true")
-
-    api.unlock()
-    await nextTick()
-    expect(okButton?.getAttribute("aria-busy")).toBeNull()
   })
 })
 
@@ -104,7 +95,7 @@ describe("useXDrawer / useXSlideover", () => {
 
 describe("useXTooltip / useXPopover", () => {
   it("api 控制提示气泡显示", async () => {
-    const { Host, apiRef } = createHost(() => useXTooltip({ title: "提示文字" }))
+    const { Host, apiRef } = createHost(() => useXTooltip({ text: "提示文字" }))
     mount(Host as never)
     const api = apiRef.current as unknown as ReturnType<typeof useXTooltip>[1]
     api.show()
@@ -113,11 +104,17 @@ describe("useXTooltip / useXPopover", () => {
   })
 
   it("api 控制气泡开合", async () => {
-    const { Host, apiRef } = createHost(() => useXPopover({ title: "气泡标题", content: "气泡说明文字" }))
+    const { Host, apiRef } = createHost(
+      () => useXPopover(),
+      {
+        default: () => h("button", "打开气泡"),
+        content: () => "气泡说明文字",
+      },
+    )
     mount(Host as never)
     const api = apiRef.current as unknown as ReturnType<typeof useXPopover>[1]
     api.open()
-    expect(await waitForBody("气泡标题")).toBe(true)
+    expect(await waitForBody("气泡说明文字")).toBe(true)
     api.close()
   })
 })
@@ -166,16 +163,17 @@ describe("useXForm", () => {
 })
 
 describe("useXTable / useXStepper", () => {
-  it("api 控制加载与页码", () => {
-    const { Host, apiRef } = createHost(() => useXTable({ columns: [{ key: "name", title: "名称" }], dataSource: [{ key: "1", name: "张三" }] }))
+  it("api 控制加载状态与重新加载", () => {
+    const { Host, apiRef } = createHost(() => useXTable({ columns: [{ accessorKey: "name", header: "名称" }], data: [{ key: "1", name: "张三" }] }))
     const wrapper = mount(Host as never)
     const api = apiRef.current as unknown as ReturnType<typeof useXTable>[1]
     expect(wrapper.text()).toContain("张三")
     api.setLoading(true)
+    expect(api.loading).toBe(true)
     api.setLoading(false)
-    api.setPage(1)
+    expect(api.loading).toBe(false)
     api.reload()
-    expect(api.page).toBe(1)
+    expect(api.loading).toBe(true)
   })
 
   it("api 控制步骤前进后退", () => {
@@ -196,7 +194,7 @@ describe("useXTable / useXStepper", () => {
 
 describe("useXAccordion / useXCollapsible / useXSplitter / useXScrollArea", () => {
   it("api 控制手风琴展开折叠", () => {
-    const { Host, apiRef } = createHost(() => useXAccordion({ items: [{ title: "什么是 Nuxt UI？" }] }))
+    const { Host, apiRef } = createHost(() => useXAccordion({ items: [{ label: "什么是 Nuxt UI？" }] }))
     mount(Host as never)
     const api = apiRef.current as unknown as ReturnType<typeof useXAccordion>[1]
     api.open(0)

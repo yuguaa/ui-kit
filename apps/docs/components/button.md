@@ -20,6 +20,8 @@ import ButtonIcons from '@demos/vue/button-icons.vue'
 import buttonIconsRaw from '@demos/vue/button-icons.vue.code.txt?raw'
 import ButtonBlockSquare from '@demos/vue/button-block-square.vue'
 import buttonBlockSquareRaw from '@demos/vue/button-block-square.vue.code.txt?raw'
+import ButtonUiCustom from '@demos/vue/button-ui-custom.vue'
+import buttonUiCustomRaw from '@demos/vue/button-ui-custom.vue.code.txt?raw'
 </script>
 
 ## 变体
@@ -64,6 +66,14 @@ block 让按钮撑满父容器宽度；square 使用等边距的方形尺寸，�
   <ButtonBlockSquare />
 </DemoBlock>
 
+## 文本、ui 插槽与激活态
+
+`label` 直接给按钮文本；`ui` 按主题插槽（base / label / leadingIcon / trailingIcon）覆盖类名；`active` 配合 `activeColor` / `activeVariant` 表示选中态。
+
+<DemoBlock title="label · ui · active" description="label 文本、ui 插槽类名、active 选中态" :code="buttonUiCustomRaw">
+  <ButtonUiCustom />
+</DemoBlock>
+
 ## 安装
 
 ```bash
@@ -83,6 +93,22 @@ npx shadcn-vue@latest add @ui-kit/x-button
 | disabled | boolean | false | 禁用状态 |
 | block | boolean | false | 撑满父容器宽度 |
 | square | boolean | false | 方形按钮，图标场景等边距 |
+| label | string | - | 文本内容（等价于默认插槽） |
+| active | boolean | false | 激活态，配合 activeColor / activeVariant 使用 |
+| activeColor | primary · secondary · neutral · success · info · warning · error | - | 激活态颜色 |
+| activeVariant | solid · outline · soft · ghost · subtle · link | - | 激活态样式 |
+| loadingAuto | boolean | false | 点击回调返回 Promise 时自动进入加载态 |
+| as | string · Component | button | 渲染为指定元素或组件 |
+| ui | ButtonUi | - | 主题插槽类名 |
+
+## ui 插槽
+
+| 名称 | 说明 |
+| --- | --- |
+| base | 按钮根元素 |
+| label | 文本容器 |
+| leadingIcon | 前置图标（含加载图标） |
+| trailingIcon | 后置图标 |
 
 ## 插槽
 

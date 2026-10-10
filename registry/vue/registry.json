@@ -645,7 +645,11 @@
       "registryDependencies": [
         "@ui-kit/utils",
         "@ui-kit/command",
-        "@ui-kit/x-kbd"
+        "@ui-kit/x-kbd",
+        "@ui-kit/x-avatar",
+        "@ui-kit/x-button",
+        "@ui-kit/x-chip",
+        "@ui-kit/x-icon"
       ]
     },
     {
@@ -708,7 +712,8 @@
       "description": "在指定区域右键唤出的上下文菜单。",
       "registryDependencies": [
         "@ui-kit/utils",
-        "@ui-kit/context-menu"
+        "@ui-kit/context-menu",
+        "@ui-kit/x-dropdown-menu"
       ]
     },
     {
@@ -719,7 +724,8 @@
       "registryDependencies": [
         "@ui-kit/utils",
         "@ui-kit/dropdown-menu",
-        "@ui-kit/x-button"
+        "@ui-kit/x-button",
+        "@ui-kit/x-icon"
       ]
     },
     {

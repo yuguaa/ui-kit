@@ -1,19 +1,39 @@
 ---
 title: Chip 芯片
-description: 芯片用于标记属性，支持多种颜色与可选关闭按钮
+description: 标记属性或数值的角标，支持定位与可选关闭按钮
 ---
 
 # Chip 芯片
 
-芯片用于标记属性，支持多种语义色。
+芯片用于标记属性或数值。text 直接给定内容，position / inset / standalone 控制角标定位，show 控制芯片本体显隐。
 
 <script setup>
 import ChipBasic from '@demos/vue/chip-basic.vue'
 import chipBasicRaw from '@demos/vue/chip-basic.vue.code.txt?raw'
+import ChipPosition from '@demos/vue/chip-position.vue'
+import chipPositionRaw from '@demos/vue/chip-position.vue.code.txt?raw'
+import ChipUiCustom from '@demos/vue/chip-ui-custom.vue'
+import chipUiCustomRaw from '@demos/vue/chip-ui-custom.vue.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="七种语义色、可关闭、图标与尺寸" :code="chipBasicRaw">
+## 基础用法
+
+<DemoBlock title="七种语义色、尺寸与可关闭" description="text / color / size / closable / standalone / show" :code="chipBasicRaw">
   <ChipBasic />
+</DemoBlock>
+
+## 角标定位
+
+默认绝对定位在父容器右上角；position 指定位置，inset 位于圆角元素内部时保持位置，standalone 相对父容器渲染。
+
+<DemoBlock title="position / inset / standalone" description="chip 定位在头像各角" :code="chipPositionRaw">
+  <ChipPosition />
+</DemoBlock>
+
+## ui 插槽与渲染
+
+<DemoBlock title="ui 插槽自定义与 as" description="content 插槽自定义内容，ui 键覆盖主题插槽类名，as 更换渲染元素" :code="chipUiCustomRaw">
+  <ChipUiCustom />
 </DemoBlock>
 
 ## 安装
@@ -26,21 +46,37 @@ npx shadcn-vue@latest add @ui-kit/x-chip
 
 | 名称 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
+| text | string · number | - | 芯片文本 |
 | color | primary · secondary · neutral · success · info · warning · error | primary | 标签颜色 |
 | size | xs · sm · md · lg · xl | md | 标签尺寸 |
+| position | top-right · bottom-right · top-left · bottom-left | top-right | 角标位置 |
+| inset | boolean | false | 位于圆角元素内部时保持位置，不加外移 |
+| standalone | boolean | false | 相对父容器渲染，不做绝对定位 |
+| show | boolean | true | 控制芯片本体显隐（v-model:show） |
 | closable | boolean | false | 是否可关闭 |
+| as | string · Component | div | 渲染为指定元素或组件 |
+| ui | ChipUi | - | 主题插槽类名 |
+
+## ui 插槽
+
+| 名称 | 说明 |
+| --- | --- |
+| root | 根元素（定位壳） |
+| base | 芯片本体 |
 
 ## 插槽
 
 | 名称 | 说明 |
 | --- | --- |
+| content | 芯片内容，优先于默认插槽与 text |
+| default | 芯片内容 |
 | icon | 标签图标 |
-| default | 标签内容 |
 
 ## 事件
 
 | 名称 | 说明 |
 | --- | --- |
+| update:show | 显隐模型更新事件（v-model:show） |
 | close | 关闭时回调 |
 
 ## 动效

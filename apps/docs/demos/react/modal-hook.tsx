@@ -19,7 +19,10 @@ export default function ModalHook() {
       >
         打开并更新标题
       </XButton>
-      <Modal>hook 模式不需要 open 状态，直接用 api 控制。</Modal>
+      <Modal
+        body={<p>hook 模式不需要 open 状态，直接用 api 控制。</p>}
+        footer={<XButton onClick={() => modalApi.close()}>关闭</XButton>}
+      />
     </div>
   );
 }

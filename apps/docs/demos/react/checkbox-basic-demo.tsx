@@ -10,6 +10,7 @@ export default function CheckboxBasicDemo() {
       <XCheckbox indeterminate label="半选状态" />
       <XCheckbox disabled label="禁用状态" />
       <XCheckbox disabled checked label="禁用选中" />
+      <XCheckbox required label="必选项" />
     </div>
   );
 }

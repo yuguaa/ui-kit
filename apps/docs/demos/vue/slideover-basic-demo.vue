@@ -11,13 +11,17 @@ const open = ref(false)
   <div class="flex flex-wrap items-center gap-3">
     <XButton variant="soft" @click="open = true">打开侧滑面板</XButton>
   </div>
-  <XSlideover v-model:open="open" title="侧滑面板">
-    <template #content>
+
+  <XSlideover v-model:open="open" title="侧滑面板" description="side 为 right 时从右侧滑入。">
+    <template #body>
       <div class="flex flex-col gap-2">
         <XLink to="/">首页</XLink>
         <XLink to="/about">关于</XLink>
         <XLink to="/contact">联系</XLink>
       </div>
+    </template>
+    <template #footer>
+      <XButton @click="open = false">关闭</XButton>
     </template>
   </XSlideover>
 </template>

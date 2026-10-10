@@ -8,12 +8,12 @@ export default function BadgeColor() {
     <div className="flex flex-col gap-6">
       <div className="flex flex-wrap items-center gap-8">
         {colors.map((color) => (
-          <XBadge key={color} color={color} count={5}>消息</XBadge>
+          <XBadge key={color} color={color} label={color} />
         ))}
       </div>
       <div className="flex flex-wrap items-center gap-8">
         {sizes.map((size) => (
-          <XBadge key={size} size={size} count={5}>消息</XBadge>
+          <XBadge key={size} size={size} label={size} />
         ))}
       </div>
     </div>

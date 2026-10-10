@@ -1,31 +1,53 @@
 ---
 title: Progress 进度条
-description: 展示操作的当前进度，支持线形与圆形
+description: 展示操作进度，支持不确定进度动画、步骤条与纵向布局
 ---
 
 # Progress 进度条
 
-展示操作的当前进度，支持线形与圆形两种类型。
+展示操作的当前进度。modelValue 为 null 时进入不确定进度，按 animation 播放指示器动画；max 传数组时渲染步骤条。
 
 <script setup>
-import ProgressLine from '@demos/vue/progress-line.vue'
-import progressLineRaw from '@demos/vue/progress-line.vue.code.txt?raw'
-import ProgressCircle from '@demos/vue/progress-circle.vue'
-import progressCircleRaw from '@demos/vue/progress-circle.vue.code.txt?raw'
+import ProgressBasic from '@demos/vue/progress-basic.vue'
+import progressBasicRaw from '@demos/vue/progress-basic.vue.code.txt?raw'
+import ProgressIndeterminate from '@demos/vue/progress-indeterminate.vue'
+import progressIndeterminateRaw from '@demos/vue/progress-indeterminate.vue.code.txt?raw'
+import ProgressSteps from '@demos/vue/progress-steps.vue'
+import progressStepsRaw from '@demos/vue/progress-steps.vue.code.txt?raw'
+import ProgressVertical from '@demos/vue/progress-vertical.vue'
+import progressVerticalRaw from '@demos/vue/progress-vertical.vue.code.txt?raw'
 </script>
 
-## 线形进度
+## 确定进度
 
-status 控制语义色，active 状态带指示器脉冲。
+status 开启后显示百分比文本，status 插槽可自定义内容。
 
-<DemoBlock title="线形与状态" description="percent / status" :code="progressLineRaw">
-  <ProgressLine />
+<DemoBlock title="确定进度与百分比" description="modelValue / status / ui" :code="progressBasicRaw">
+  <ProgressBasic />
 </DemoBlock>
 
-## 圆形进度
+## 不确定进度
 
-<DemoBlock title="圆形与隐藏数值" description="type=circle / size / showInfo" :code="progressCircleRaw">
-  <ProgressCircle />
+modelValue 为 null 时指示器播放不确定动画，animation 提供 carousel / carousel-inverse / swing / elastic 四种。
+
+<DemoBlock title="不确定进度动画" description="animation" :code="progressIndeterminateRaw">
+  <ProgressIndeterminate />
+</DemoBlock>
+
+## 步骤条
+
+max 传数组时渲染步骤条，当前步骤高亮显示，step-{index} 插槽可自定义每步文案。
+
+<DemoBlock title="步骤条" description="max 数组 / step 插槽" :code="progressStepsRaw">
+  <ProgressSteps />
+</DemoBlock>
+
+## 纵向与反转
+
+orientation 设为 vertical 后进度条纵向排布，inverted 反转进度方向。
+
+<DemoBlock title="纵向与反转" description="orientation / inverted" :code="progressVerticalRaw">
+  <ProgressVertical />
 </DemoBlock>
 
 ## 安装
@@ -38,14 +60,35 @@ npx shadcn-vue@latest add @ui-kit/x-progress
 
 | 名称 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
-| percent | number | 0 | 完成百分比 |
-| type | line · circle | line | 进度类型 |
-| status | normal · success · exception · active | normal | 进度状态 |
-| strokeColor | string | 主色 | 进度条颜色 |
-| showInfo | boolean | true | 是否显示数值 |
-| size | number | 96 | 圆形直径（px） |
+| modelValue | number · null | null | 绑定值（支持 v-model）；null 表示不确定进度 |
+| max | number · Array | 100 | 最大进度值；传数组时渲染步骤条，值为每步文案 |
+| status | boolean | false | 显示当前进度百分比 |
+| inverted | boolean | false | 进度方向是否反转 |
+| color | primary · secondary · neutral · success · info · warning · error | primary | 指示条与步骤文字颜色 |
+| orientation | horizontal · vertical | horizontal | 进度方向 |
+| animation | carousel · carousel-inverse · swing · elastic | carousel | 不确定进度的指示器动画 |
+| as | string · Component | div | 渲染为指定元素或组件 |
+| ui | ProgressUi | - | 主题插槽类名 |
+
+## ui 插槽
+
+| 名称 | 说明 |
+| --- | --- |
+| root | 根容器 |
+| base | 进度轨道 |
+| indicator | 进度指示器 |
+| status | 百分比文本容器 |
+| steps | 步骤条容器 |
+| step | 步骤项 |
+
+## 插槽
+
+| 名称 | 说明 |
+| --- | --- |
+| status | 自定义百分比内容，接收 percent |
+| step-{index} | 自定义第 index 步文案，接收 step |
 
 ## 动效
 
-- 值变化：描边过渡（200ms）
-- active：指示器脉冲动画
+- 值变化：指示器位移过渡（200ms）
+- 不确定进度：按 animation 播放指示器动画

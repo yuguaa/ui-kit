@@ -3,24 +3,23 @@ import { XTextarea } from "@/components/kit/x-textarea";
 
 export default function TextareaAutosizeDemo() {
   const [content, setContent] = useState("");
-  const [limited, setLimited] = useState("");
+  const [delayed, setDelayed] = useState("");
 
   return (
     <div className="flex flex-wrap items-start gap-4">
       <XTextarea
         value={content}
         onChange={(event) => setContent(event.target.value)}
-        autosize
+        autoresize
         placeholder="输入后高度自动调整"
         className="w-72"
       />
       <XTextarea
-        value={limited}
-        onChange={(event) => setLimited(event.target.value)}
-        autosize
-        showCount
-        maxLength={30}
-        placeholder="自动高度 + 字数统计"
+        value={delayed}
+        onChange={(event) => setDelayed(event.target.value)}
+        autoresize
+        autoresizeDelay={300}
+        placeholder="挂载后延迟 300ms 调整"
         className="w-72"
       />
     </div>

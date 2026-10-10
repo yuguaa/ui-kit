@@ -1,25 +1,45 @@
 ---
 title: Card 卡片
-description: 通用卡片容器，用于承载标题、操作区和内容
+description: 通用卡片容器，支持三种变体、标题区与底部区插槽
 ---
 
 # Card 卡片
 
-通用卡片容器，用于承载标题、操作区、封面与底部操作，支持悬浮阴影与边框反馈。
+通用卡片容器，用于承载标题、操作区、封面与底部操作。内置 outline / solid / soft 三种变体，支持 header 与 footer 整体替换头部与底部区域。
 
 <script setup>
 import CardVariants from '@demos/react/card-variants'
 import cardVariantsRaw from '@demos/react/card-variants.tsx.code.txt?raw'
 import CardHoverable from '@demos/react/card-hoverable'
 import cardHoverableRaw from '@demos/react/card-hoverable.tsx.code.txt?raw'
+import CardSlots from '@demos/react/card-slots'
+import cardSlotsRaw from '@demos/react/card-slots.tsx.code.txt?raw'
+import CardUi from '@demos/react/card-ui'
+import cardUiRaw from '@demos/react/card-ui.tsx.code.txt?raw'
 </script>
 
-## 基础卡片
+## 变体
 
-标题、说明、右上角操作区与封面。bordered 控制 ring 描边。
+outline 描边卡片（默认）、solid 反色卡片、soft 轻底卡片。bordered=false 可去掉描边。
 
-<DemoBlock title="有边框与无边框" description="title / description / extra / cover / bordered" :code="cardVariantsRaw">
+<DemoBlock title="三种变体" description="variant：outline / solid / soft" :code="cardVariantsRaw">
   <ReactDemo :component="CardVariants" />
+</DemoBlock>
+
+## 插槽
+
+header / footer 整体替换头部与底部区域；title / description 单独替换标题与描述。
+
+<DemoBlock title="header / footer / title / description" description="同名属性覆盖对应分区" :code="cardSlotsRaw">
+  <ReactDemo :component="CardSlots" />
+</DemoBlock>
+
+## ui 插槽
+
+按主题插槽键注入类名，覆盖根、头部、标题、描述、主体与底部六个分区。
+
+<DemoBlock title="ui 插槽自定义" description="ui：root / header / title / description / body / footer" :code="cardUiRaw">
+  <ReactDemo :component="CardUi" />
 </DemoBlock>
 
 ## 悬浮反馈
@@ -42,12 +62,30 @@ npx shadcn@latest add @ui-kit/x-card
 | --- | --- | --- | --- |
 | title | ReactNode | - | 标题 |
 | description | ReactNode | - | 辅助说明 |
+| extra | ReactNode | - | 右上角操作区 |
+| variant | outline · solid · soft | outline | 预设样式 |
 | bordered | boolean | true | 是否显示边框 |
 | hoverable | boolean | false | 悬浮时阴影加深 + 边框高亮 |
 | size | default · small | default | 卡片尺寸 |
+| render | ReactElement | - | 渲染为指定元素 |
+| ui | XCardUi | - | 主题插槽类名 |
 | cover | ReactNode | - | 封面 |
+| header | ReactNode | - | 头部整体内容（覆盖默认 title / description / extra） |
+| footer | ReactNode | - | 底部整体内容（优先于 actions） |
 | actions | ReactNode | - | 底部操作按钮 |
 | onClick | (event) => void | - | 点击卡片时触发 |
+| onHover | (event) => void | - | 悬浮卡片时触发 |
+
+## ui 插槽
+
+| 名称 | 说明 |
+| --- | --- |
+| root | 卡片根元素 |
+| header | 头部区域 |
+| title | 标题元素 |
+| description | 描述元素 |
+| body | 主体内容区 |
+| footer | 底部区域 |
 
 ## 动效
 

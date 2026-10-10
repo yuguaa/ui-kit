@@ -16,9 +16,11 @@ const small = ref(true)
         <template #unCheckedChildren>关</template>
       </XSwitch>
       <XSwitch disabled label="禁用状态" />
+      <XSwitch color="success" label="success" />
+      <XSwitch color="error" label="error" />
     </div>
     <div class="flex flex-wrap items-center gap-6">
-      <XSwitch v-model="small" size="sm" label="小尺寸" />
+      <XSwitch v-model="small" size="small" label="小尺寸" />
     </div>
   </div>
 </template>

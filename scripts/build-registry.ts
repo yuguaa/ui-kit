@@ -549,9 +549,12 @@ const reactKit: ItemSpec[] = [
     name: "x-input-menu",
     title: "输入菜单",
     description: "输入框与下拉菜单组合，支持搜索过滤、清空与自由输入新建项。",
-    dependencies: ["lucide-react"],
+    dependencies: ["lucide-react", "@base-ui/react"],
     registryDependencies: ["@ui-kit/utils", "@ui-kit/popover", "@ui-kit/input", "@ui-kit/button"],
-    files: [{ source: "packages/react/src/components/kit/x-input-menu.tsx", target: "components/kit/x-input-menu.tsx" }],
+    files: [
+      { source: "packages/react/src/components/kit/x-input-menu.tsx", target: "components/kit/x-input-menu.tsx" },
+      { source: "packages/react/src/lib/kit/menu-utils.ts", target: "lib/kit/menu-utils.ts", type: "registry:lib" },
+    ],
   },
   {
     name: "x-slider",
@@ -735,7 +738,7 @@ const reactKit: ItemSpec[] = [
     name: "x-context-menu",
     title: "右键菜单",
     description: "在指定区域右键唤出的上下文菜单。",
-    registryDependencies: ["@ui-kit/utils", "@ui-kit/context-menu"],
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/context-menu", "@ui-kit/x-dropdown-menu"],
     files: [{ source: "packages/react/src/components/kit/x-context-menu.tsx", target: "components/kit/x-context-menu.tsx" }],
   },
   {
@@ -803,9 +806,13 @@ const reactKit: ItemSpec[] = [
     name: "x-carousel",
     title: "轮播",
     description: "多张内容横向轮播展示，支持自动播放与循环。",
-    dependencies: ["embla-carousel-autoplay", "lucide-react"],
+    dependencies: ["embla-carousel-autoplay", "embla-carousel-react", "lucide-react"],
     registryDependencies: ["@ui-kit/utils", "@ui-kit/carousel", "@ui-kit/x-button"],
-    files: [{ source: "packages/react/src/components/kit/x-carousel.tsx", target: "components/kit/x-carousel.tsx" }],
+    files: [
+      { source: "packages/react/src/components/kit/x-carousel.tsx", target: "components/kit/x-carousel.tsx" },
+      { source: "packages/react/src/components/kit/auto-scroll-plugin.ts", target: "components/kit/auto-scroll-plugin.ts" },
+      { source: "packages/react/src/components/kit/class-names-plugin.ts", target: "components/kit/class-names-plugin.ts" },
+    ],
   },
   {
     name: "x-splitter",
@@ -1243,9 +1250,12 @@ const vueKit: ItemSpec[] = [
     name: "x-input-menu",
     title: "输入菜单",
     description: "输入框与下拉菜单组合，支持搜索过滤、清空与自由输入新建项。",
-    dependencies: ["@lucide/vue"],
+    dependencies: ["@lucide/vue", "@vueuse/core", "reka-ui"],
     registryDependencies: ["@ui-kit/utils", "@ui-kit/popover", "@ui-kit/input", "@ui-kit/button"],
-    files: [{ source: "packages/vue/src/components/kit/XInputMenu.vue", path: "kit/XInputMenu.vue", type: "registry:component" }],
+    files: [
+      { source: "packages/vue/src/components/kit/XInputMenu.vue", path: "kit/XInputMenu.vue", type: "registry:component" },
+      { source: "packages/vue/src/lib/kit/menu-utils.ts", path: "lib/kit/menu-utils.ts", type: "registry:lib" },
+    ],
   },
   {
     name: "x-slider",
@@ -1392,7 +1402,7 @@ const vueKit: ItemSpec[] = [
     name: "x-command-palette",
     title: "命令面板",
     description: "全局命令搜索与快捷操作面板。",
-    registryDependencies: ["@ui-kit/utils", "@ui-kit/command", "@ui-kit/x-kbd"],
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/command", "@ui-kit/x-kbd", "@ui-kit/x-avatar", "@ui-kit/x-button", "@ui-kit/x-chip", "@ui-kit/x-icon"],
     files: [{ source: "packages/vue/src/components/kit/XCommandPalette.vue", path: "kit/XCommandPalette.vue", type: "registry:component" }],
   },
   {
@@ -1435,16 +1445,22 @@ const vueKit: ItemSpec[] = [
     name: "x-context-menu",
     title: "右键菜单",
     description: "在指定区域右键唤出的上下文菜单。",
-    registryDependencies: ["@ui-kit/utils", "@ui-kit/context-menu"],
-    files: [{ source: "packages/vue/src/components/kit/XContextMenu.vue", path: "kit/XContextMenu.vue", type: "registry:component" }],
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/context-menu", "@ui-kit/x-dropdown-menu"],
+    files: [
+      { source: "packages/vue/src/components/kit/XContextMenu.vue", path: "kit/XContextMenu.vue", type: "registry:component" },
+      { source: "packages/vue/src/components/kit/XContextMenuItems.vue", path: "kit/XContextMenuItems.vue", type: "registry:component" },
+    ],
   },
   {
     name: "x-dropdown-menu",
     title: "下拉菜单",
     description: "点击按钮展开的操作菜单。",
-    dependencies: ["@lucide/vue"],
-    registryDependencies: ["@ui-kit/utils", "@ui-kit/dropdown-menu", "@ui-kit/x-button"],
-    files: [{ source: "packages/vue/src/components/kit/XDropdownMenu.vue", path: "kit/XDropdownMenu.vue", type: "registry:component" }],
+    dependencies: ["@lucide/vue", "reka-ui"],
+    registryDependencies: ["@ui-kit/utils", "@ui-kit/dropdown-menu", "@ui-kit/x-button", "@ui-kit/x-icon"],
+    files: [
+      { source: "packages/vue/src/components/kit/XDropdownMenu.vue", path: "kit/XDropdownMenu.vue", type: "registry:component" },
+      { source: "packages/vue/src/components/kit/XDropdownMenuItems.vue", path: "kit/XDropdownMenuItems.vue", type: "registry:component" },
+    ],
   },
   {
     name: "x-toast",
@@ -1454,6 +1470,7 @@ const vueKit: ItemSpec[] = [
     registryDependencies: ["@ui-kit/utils", "@ui-kit/sonner"],
     files: [
       { source: "packages/vue/src/components/kit/XToast.ts", path: "kit/XToast.ts", type: "registry:component" },
+      { source: "packages/vue/src/components/kit/XToast.vue", path: "kit/XToast.vue", type: "registry:component" },
       { source: "packages/vue/src/components/kit/XToaster.vue", path: "kit/XToaster.vue", type: "registry:component" },
     ],
   },
@@ -1506,9 +1523,13 @@ const vueKit: ItemSpec[] = [
     name: "x-carousel",
     title: "轮播",
     description: "多张内容横向轮播展示，支持自动播放与循环。",
-    dependencies: ["embla-carousel-autoplay", "@lucide/vue"],
+    dependencies: ["embla-carousel-autoplay", "embla-carousel-vue", "@lucide/vue", "reka-ui"],
     registryDependencies: ["@ui-kit/utils", "@ui-kit/carousel", "@ui-kit/x-button"],
-    files: [{ source: "packages/vue/src/components/kit/XCarousel.vue", path: "kit/XCarousel.vue", type: "registry:component" }],
+    files: [
+      { source: "packages/vue/src/components/kit/XCarousel.vue", path: "kit/XCarousel.vue", type: "registry:component" },
+      { source: "packages/vue/src/components/kit/auto-scroll-plugin.ts", path: "kit/auto-scroll-plugin.ts", type: "registry:component" },
+      { source: "packages/vue/src/components/kit/class-names-plugin.ts", path: "kit/class-names-plugin.ts", type: "registry:component" },
+    ],
   },
   {
     name: "x-splitter",

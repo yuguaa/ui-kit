@@ -5,6 +5,7 @@ import { describe, expect, it, vi } from "vitest";
 import { XAccordion } from "@/components/kit/x-accordion";
 import { XAlert } from "@/components/kit/x-alert";
 import { XBreadcrumb } from "@/components/kit/x-breadcrumb";
+import { XButton } from "@/components/kit/x-button";
 import { XCarousel } from "@/components/kit/x-carousel";
 import { XCollapsible } from "@/components/kit/x-collapsible";
 import { XCommandPalette, type XCommandPaletteApi } from "@/components/kit/x-command-palette";
@@ -48,30 +49,30 @@ describe("导航 Navigation", () => {
     expect(screen.getAllByText("/")).toHaveLength(2);
   });
 
-  it("XTabs 切换标签触发 onChange", async () => {
-    const onChange = vi.fn();
+  it("XTabs 切换标签触发 onValueChange", async () => {
+    const onValueChange = vi.fn();
     render(
       <XTabs
         items={[
-          { key: "doc", label: "文档", content: "文档内容" },
-          { key: "api", label: "API", content: "API 内容" },
+          { value: "doc", label: "文档", content: "文档内容" },
+          { value: "api", label: "API", content: "API 内容" },
         ]}
-        onChange={onChange}
+        onValueChange={onValueChange}
       />,
     );
     expect(screen.getByText("文档内容")).toBeInTheDocument();
     await userEvent.click(screen.getByRole("tab", { name: "API" }));
-    expect(onChange).toHaveBeenCalledWith("api");
+    expect(onValueChange).toHaveBeenCalledWith("api");
   });
 
-  it("XTabs destroyOnHide 隐藏面板内容", () => {
+  it("XTabs unmountOnHide 隐藏面板内容", () => {
     render(
       <XTabs
-        destroyOnHide
-        defaultActiveKey="a"
+        unmountOnHide
+        defaultValue="a"
         items={[
-          { key: "a", label: "A", content: "内容 A" },
-          { key: "b", label: "B", content: "内容 B" },
+          { value: "a", label: "A", content: "内容 A" },
+          { value: "b", label: "B", content: "内容 B" },
         ]}
       />,
     );
@@ -89,27 +90,27 @@ describe("导航 Navigation", () => {
   });
 
   it("XPagination 渲染省略号分页", () => {
-    render(<XPagination current={5} total={100} pageSize={10} />);
-    expect(screen.getByRole("button", { name: "5" })).toHaveAttribute("aria-current", "page");
-    expect(screen.getAllByText("…").length).toBeGreaterThan(0);
+    const { container } = render(<XPagination page={8} total={100} itemsPerPage={10} showEdges />);
+    expect(screen.getByRole("button", { name: "8" })).toHaveAttribute("aria-current", "page");
+    expect(container.querySelector("[data-slot='ellipsis']")).toBeInTheDocument();
   });
 
-  it("XPagination 点击页码触发 onChange", async () => {
-    const onChange = vi.fn();
-    render(<XPagination current={1} total={50} pageSize={10} onChange={onChange} />);
+  it("XPagination 点击页码触发 onPageChange", async () => {
+    const onPageChange = vi.fn();
+    render(<XPagination page={1} total={50} itemsPerPage={10} onPageChange={onPageChange} />);
     await userEvent.click(screen.getByRole("button", { name: "3" }));
-    expect(onChange).toHaveBeenCalledWith(3, 10);
+    expect(onPageChange).toHaveBeenCalledWith(3);
   });
 
-  it("XStepper 状态与受控 current", () => {
+  it("XStepper 状态与受控 value", () => {
     render(
       <XStepper
-        current={1}
+        value={1}
         items={[{ title: "完成" }, { title: "进行中" }, { title: "待处理" }]}
       />,
     );
     expect(screen.getByText("完成")).toBeInTheDocument();
-    expect(screen.getByText("待处理")).toHaveClass("text-muted-foreground");
+    expect(screen.getByText("进行中").closest("[data-slot='item']")).toHaveAttribute("data-state", "active");
   });
 
   it("XCommandPalette 打开后渲染命令分组", async () => {
@@ -127,46 +128,45 @@ describe("导航 Navigation", () => {
 });
 
 describe("浮层 Overlays", () => {
-  it("XModal 渲染标题与默认底部按钮", async () => {
-    const onOk = vi.fn();
-    render(<XModal open title="对话框标题" okText="确 定" cancelText="取 消" onOk={onOk}>正文</XModal>);
+  it("XModal 渲染标题、正文与关闭按钮", async () => {
+    const onOpenChange = vi.fn();
+    render(<XModal open title="对话框标题" body="正文" onOpenChange={onOpenChange} />);
     expect(screen.getByText("对话框标题")).toBeInTheDocument();
     expect(screen.getByText("正文")).toBeInTheDocument();
-    await userEvent.click(screen.getByRole("button", { name: "确 定" }));
-    expect(onOk).toHaveBeenCalledTimes(1);
+    await userEvent.click(screen.getByRole("button", { name: "关闭" }));
+    expect(onOpenChange).toHaveBeenCalledWith(false, expect.anything());
   });
 
   it("XDrawer 渲染标题与内容", () => {
-    render(<XDrawer open title="抽屉标题">抽屉内容</XDrawer>);
+    render(<XDrawer open title="抽屉标题" body="抽屉内容" />);
     expect(screen.getByText("抽屉标题")).toBeInTheDocument();
     expect(screen.getByText("抽屉内容")).toBeInTheDocument();
   });
 
   it("XSlideover 渲染标题与内容", () => {
-    render(<XSlideover open title="侧滑面板">面板内容</XSlideover>);
-    expect(screen.getAllByText("侧滑面板").length).toBeGreaterThan(0);
+    render(<XSlideover open title="侧滑面板" body="面板内容" />);
+    expect(screen.getByText("侧滑面板")).toBeInTheDocument();
     expect(screen.getByText("面板内容")).toBeInTheDocument();
   });
 
   it("XTooltip 悬浮显示提示", async () => {
     render(
-      <XTooltip title="这是一段提示文字">
+      <XTooltip text="这是一段提示文字" delayDuration={0}>
         <button type="button">悬浮查看提示</button>
       </XTooltip>,
     );
     await userEvent.hover(screen.getByRole("button", { name: "悬浮查看提示" }));
-    expect(await screen.findByText("这是一段提示文字")).toBeInTheDocument();
+    expect(await screen.findByText("这是一段提示文字", {}, { timeout: 2000 })).toBeInTheDocument();
   });
 
   it("XPopover 点击打开显示内容", async () => {
     render(
-      <XPopover trigger="click" title="气泡标题" content="气泡说明文字">
+      <XPopover content="气泡说明文字">
         <button type="button">打开气泡</button>
       </XPopover>,
     );
     await userEvent.click(screen.getByRole("button", { name: "打开气泡" }));
-    expect(await screen.findByText("气泡标题")).toBeInTheDocument();
-    expect(screen.getByText("气泡说明文字")).toBeInTheDocument();
+    expect(await screen.findByText("气泡说明文字")).toBeInTheDocument();
   });
 
   it("XContextMenu 右键打开菜单并选中", async () => {
@@ -205,8 +205,8 @@ describe("内容 Content", () => {
   it("XTable 渲染行列数据", () => {
     render(
       <XTable
-        columns={[{ key: "name", title: "名称" }, { key: "age", title: "年龄" }]}
-        dataSource={[{ key: "1", name: "张三", age: 28 }]}
+        columns={[{ accessorKey: "name", header: "名称" }, { accessorKey: "age", header: "年龄" }]}
+        data={[{ key: "1", name: "张三", age: 28 }]}
       />,
     );
     expect(screen.getByText("名称")).toBeInTheDocument();
@@ -215,49 +215,55 @@ describe("内容 Content", () => {
   });
 
   it("XTable loading 渲染骨架行", () => {
-    const { container } = render(<XTable columns={[{ key: "a", title: "A" }]} dataSource={[]} loading />);
+    const { container } = render(<XTable columns={[{ accessorKey: "a", header: "A" }]} data={[]} loading />);
     expect(container.querySelectorAll("[data-slot='skeleton']").length).toBeGreaterThan(0);
   });
 
   it("XTable 点击可排序表头切换顺序", async () => {
     const columns = [
-      { key: "name", title: "名称", sortable: true },
-      { key: "count", title: "数量" },
+      {
+        accessorKey: "name",
+        enableSorting: true,
+        header: ({ column }: { column: { toggleSorting: () => void } }) => (
+          <button type="button" onClick={() => column.toggleSorting()}>名称</button>
+        ),
+      },
+      { accessorKey: "count", header: "数量" },
     ];
-    const dataSource = [
+    const data = [
       { key: "1", name: "B", count: 2 },
       { key: "2", name: "A", count: 1 },
     ];
-    const { container } = render(<XTable columns={columns} dataSource={dataSource} pagination={false} />);
+    const { container } = render(
+      <XTable columns={columns} data={data} sortingOptions={{ enableSorting: true }} />,
+    );
     expect(container.querySelector("tbody tr td")?.textContent).toBe("B");
 
-    await userEvent.click(screen.getByRole("button", { name: "排序 名称" }));
+    await userEvent.click(screen.getByRole("button", { name: "名称" }));
     expect(container.querySelector("tbody tr td")?.textContent).toBe("A");
 
-    await userEvent.click(screen.getByRole("button", { name: "排序 名称" }));
+    await userEvent.click(screen.getByRole("button", { name: "名称" }));
     expect(container.querySelector("tbody tr td")?.textContent).toBe("B");
   });
 
-  it("XTable rowSelection 勾选行并回调选中键", async () => {
-    const onSelectionChange = vi.fn();
+  it("XTable rowSelection 状态反映到行选中标记", () => {
     render(
       <XTable
-        columns={[{ key: "name", title: "名称" }]}
-        dataSource={[{ key: "1", name: "张三" }, { key: "2", name: "李四" }]}
-        pagination={false}
-        rowSelection
-        onSelectionChange={onSelectionChange}
+        columns={[{ accessorKey: "name", header: "名称" }]}
+        data={[{ key: "1", name: "张三" }, { key: "2", name: "李四" }]}
+        rowSelectionOptions={{ enableRowSelection: true, state: { rowSelection: { 1: true } } }}
       />,
     );
-    await userEvent.click(screen.getByRole("checkbox", { name: "选择第 1 行" }));
-    expect(onSelectionChange).toHaveBeenCalledWith(["1"]);
+    const rows = document.querySelectorAll("tbody [data-slot='tr']");
+    expect(rows[0]).toHaveAttribute("data-selected", "false");
+    expect(rows[1]).toHaveAttribute("data-selected", "true");
   });
 
   it("XTable sticky 时表头固定在滚动区顶部", () => {
     const { container } = render(
-      <XTable columns={[{ key: "name", title: "名称" }]} dataSource={[{ key: "1", name: "张三" }]} sticky maxHeight={200} />,
+      <XTable columns={[{ accessorKey: "name", header: "名称" }]} data={[{ key: "1", name: "张三" }]} sticky />,
     );
-    expect(container.querySelector("th")).toHaveClass("sticky");
+    expect(container.querySelector("thead")).toHaveClass("sticky");
   });
 
   it("XAlert 四种语义渲染", () => {
@@ -267,20 +273,19 @@ describe("内容 Content", () => {
     expect(screen.getByRole("button", { name: "关闭" })).toBeInTheDocument();
   });
 
-  it("XProgress 线形与圆形", () => {
-    const { container, rerender } = render(<XProgress percent={30} />);
+  it("XProgress 确定进度与不确定进度", () => {
+    const { container, rerender } = render(<XProgress value={30} status />);
     expect(screen.getByText("30%")).toBeInTheDocument();
-    rerender(<XProgress percent={75} type="circle" />);
-    expect(container.querySelector("svg")).toBeInTheDocument();
-    expect(screen.getByText("75%")).toBeInTheDocument();
+    rerender(<XProgress />);
+    expect(container.querySelector("[data-slot='indicator']")).toBeInTheDocument();
   });
 
   it("XAccordion 展开项内容", async () => {
     render(
       <XAccordion
         items={[
-          { title: "什么是 Nuxt UI？", content: "组件库说明" },
-          { title: "如何安装？", content: "安装说明" },
+          { label: "什么是 Nuxt UI？", content: "组件库说明" },
+          { label: "如何安装？", content: "安装说明" },
         ]}
       />,
     );
@@ -294,11 +299,49 @@ describe("内容 Content", () => {
     expect(await screen.findByText("折叠的内容区域")).toBeInTheDocument();
   });
 
-  it("XListbox 点击选中触发 onSelect", async () => {
-    const onSelect = vi.fn();
-    render(<XListbox items={[{ key: "a", label: "选项 A" }]} onSelect={onSelect} />);
+  it("XCollapsible ui 插槽类名与 render 渲染为指定元素", async () => {
+    const { container } = render(
+      <XCollapsible
+        defaultOpen
+        render={<section />}
+        ui={{ root: "custom-root", content: "custom-content" }}
+      >
+        折叠的内容区域
+      </XCollapsible>,
+    );
+    expect(container.querySelector("section")).toHaveClass("custom-root");
+    expect(container.querySelector('[data-slot="collapsible-content"]')).toHaveClass("custom-content");
+  });
+
+  it("XCollapsible trigger 传元素时合并为触发器本身", async () => {
+    render(
+      <XCollapsible trigger={<XButton variant="soft" color="neutral">自定义触发器</XButton>}>
+        折叠的内容区域
+      </XCollapsible>,
+    );
+    const trigger = screen.getByRole("button", { name: "自定义触发器" });
+    expect(screen.getAllByRole("button")).toHaveLength(1);
+    await userEvent.click(trigger);
+    expect(await screen.findByText("折叠的内容区域")).toBeInTheDocument();
+  });
+
+  it("XCollapsible unmountOnHide=false 关闭后保留内容节点", async () => {
+    const { container } = render(
+      <XCollapsible unmountOnHide={false} trigger="展开详情">
+        折叠的内容区域
+      </XCollapsible>,
+    );
+    await userEvent.click(screen.getByRole("button", { name: "展开详情" }));
+    expect(container.querySelector('[data-slot="collapsible-content"]')).toBeInTheDocument();
+    await userEvent.click(screen.getByRole("button", { name: "展开详情" }));
+    expect(container.querySelector('[data-slot="collapsible-content"]')).toBeInTheDocument();
+  });
+
+  it("XListbox 点击选中触发 onValueChange", async () => {
+    const onValueChange = vi.fn();
+    render(<XListbox items={[{ key: "a", label: "选项 A" }]} onValueChange={onValueChange} />);
     await userEvent.click(screen.getByRole("option", { name: "选项 A" }));
-    expect(onSelect).toHaveBeenCalledWith("a");
+    expect(onValueChange).toHaveBeenCalledWith(expect.objectContaining({ key: "a" }));
   });
 
   it("XScrollArea 渲染滚动内容", () => {
@@ -329,12 +372,26 @@ describe("内容 Content", () => {
     expect(screen.getByRole("separator")).toHaveAttribute("aria-orientation", "horizontal");
   });
 
-  it("XSplitter collapsible 渲染折叠按钮并可展开", async () => {
-    render(<XSplitter collapsible first={<div>左面板</div>} second={<div>右面板</div>} />);
-    const buttons = screen.getAllByRole("button", { name: "折叠面板" });
-    expect(buttons.length).toBeGreaterThan(0);
-    await userEvent.click(buttons[0]!);
-    expect(screen.getAllByRole("button", { name: "展开面板" }).length).toBeGreaterThan(0);
+  it("XSplitter items 数组形态渲染多个面板与拖拽条", () => {
+    const { container } = render(
+      <XSplitter
+        items={[
+          { content: <div>面板一</div> },
+          { content: <div>面板二</div> },
+          { content: <div>面板三</div> },
+        ]}
+      />,
+    );
+    expect(screen.getByText("面板一")).toBeInTheDocument();
+    expect(screen.getByText("面板三")).toBeInTheDocument();
+    expect(container.querySelectorAll("[role=separator]").length).toBe(2);
+  });
+
+  it("XSplitter disabled 锁定拖拽条", () => {
+    render(<XSplitter disabled first={<div>左面板</div>} second={<div>右面板</div>} />);
+    const handle = screen.getByRole("separator");
+    expect(handle).toHaveAttribute("data-panel-resize-handle-enabled", "false");
+    expect(handle).toHaveAttribute("tabindex", "-1");
   });
 
   it("XScrollArea orientation=horizontal 横向排列", () => {
@@ -360,12 +417,12 @@ describe("内容 Content", () => {
 
   it("XPopover arrow 渲染箭头", async () => {
     render(
-      <XPopover open arrow title="带箭头" content="内容">
+      <XPopover open arrow content="内容">
         <button type="button">打开</button>
       </XPopover>,
     );
-    expect(await screen.findByText("带箭头")).toBeInTheDocument();
-    expect(document.querySelector(".bg-popover.rotate-45")).not.toBeNull();
+    expect(await screen.findByText("内容")).toBeInTheDocument();
+    expect(document.querySelector(".fill-background")).not.toBeNull();
   });
 });
 
@@ -399,14 +456,15 @@ describe("XCarousel 箭头、指示点与方向", () => {
     expect(screen.queryByRole("button", { name: "上一张" })).not.toBeInTheDocument();
   });
 
-  it("dots 渲染可点击指示点", () => {
+  it("dots 渲染可点击指示点", async () => {
     render(<XCarousel items={items} dots />);
-    expect(screen.getByRole("button", { name: "跳转到第 1 张" })).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: "跳转到第 2 张" })).toBeInTheDocument();
+    /* embla 的 init 事件异步发出，等待指示点渲染完成 */
+    expect(await screen.findByRole("tab", { name: "跳转到第 1 张" })).toBeInTheDocument();
+    expect(screen.getByRole("tab", { name: "跳转到第 2 张" })).toBeInTheDocument();
   });
 
   it("orientation=vertical 使内容纵向排列", () => {
     const { container } = render(<XCarousel items={items} orientation="vertical" />);
-    expect(container.querySelector("[data-slot='carousel-content'] > div")).toHaveClass("flex-col");
+    expect(container.querySelector(".overflow-hidden > div")).toHaveClass("flex-col");
   });
 });

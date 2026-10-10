@@ -1,81 +1,224 @@
 <script setup lang="ts">
 /**
- * XProgress 进度条：展示操作的当前进度，支持线形与圆形。
+ * XProgress 进度条：与 Nuxt UI Progress 对齐。
+ * modelValue 为 null 时进入不确定进度，按 animation 播放指示器动画；
+ * max 传数组时渲染 steps 步骤；status 开关显示百分比文本。
  */
-import type { HTMLAttributes } from 'vue'
+import type { Component, HTMLAttributes, VNode } from 'vue'
 import { computed } from 'vue'
-import { Progress } from '@/components/ui/progress'
+import { Primitive, ProgressIndicator, ProgressRoot } from 'reka-ui'
 import { cn } from '@/lib/utils'
 
-type ProgressType = 'line' | 'circle'
-type ProgressStatus = 'normal' | 'success' | 'exception' | 'active'
-
-const props = withDefaults(defineProps<{
-  /** 完成百分比 */
-  percent?: number
-  /** 进度类型 */
-  type?: ProgressType
-  /** 进度状态 */
-  status?: ProgressStatus
-  /** 进度条颜色 */
-  strokeColor?: string
-  /** 是否显示数值 */
-  showInfo?: boolean
-  /** 圆形直径（px） */
-  size?: number
-  class?: HTMLAttributes['class']
-}>(), {
-  percent: 0,
-  type: 'line',
-  status: 'normal',
-  showInfo: true,
-  size: 96,
-})
-
-const safePercent = computed(() => Math.min(100, Math.max(0, props.percent)))
-
-const statusClasses: Record<ProgressStatus, string> = {
-  normal: '[&_[data-slot=progress-indicator]]:bg-primary-6',
-  success: '[&_[data-slot=progress-indicator]]:bg-success-6',
-  exception: '[&_[data-slot=progress-indicator]]:bg-error-6',
-  active: '[&_[data-slot=progress-indicator]]:bg-primary-6 [&_[data-slot=progress-indicator]]:animate-pulse',
+/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
+export interface ProgressUi {
+  root?: string
+  base?: string
+  indicator?: string
+  status?: string
+  steps?: string
+  step?: string
 }
 
-const radius = 42
-const circumference = 2 * Math.PI * radius
-const dashOffset = computed(() => circumference - (safePercent.value / 100) * circumference)
+/** 插槽：status 接收百分比；step-{index} 动态插槽接收当前步骤文案 */
+export type ProgressSlots = {
+  status?(props: { percent?: number }): VNode[]
+} & {
+  [key: string]: (props: { step: number }) => VNode[]
+}
+
+type ProgressColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
+type ProgressOrientation = 'horizontal' | 'vertical'
+type ProgressAnimation = 'carousel' | 'carousel-inverse' | 'swing' | 'elastic'
+
+defineSlots<ProgressSlots>()
+
+const props = withDefaults(defineProps<{
+  /** 最大进度值；传数组时渲染步骤条，值为每步文案 */
+  max?: number | Array<any>
+  /** 显示当前进度百分比（status 插槽默认内容） */
+  status?: boolean
+  /** 进度方向是否反转 */
+  inverted?: boolean
+  /** 指示条与步骤文字颜色 */
+  color?: ProgressColor
+  /** 进度方向 */
+  orientation?: ProgressOrientation
+  /** 不确定进度的指示器动画 */
+  animation?: ProgressAnimation
+  /** 渲染为指定元素或组件 */
+  as?: string | Component
+  /** 主题插槽类名 */
+  ui?: ProgressUi
+  class?: HTMLAttributes['class']
+}>(), {
+  status: false,
+  inverted: false,
+  color: 'primary',
+  orientation: 'horizontal',
+  animation: 'carousel',
+})
+
+/** 绑定值：null 表示不确定进度 */
+const modelValue = defineModel<number | null>({ default: null })
+
+const isIndeterminate = computed(() => modelValue.value == null)
+const hasSteps = computed(() => Array.isArray(props.max))
+
+const realMax = computed(() => {
+  if (isIndeterminate.value || props.max == null) return undefined
+  if (Array.isArray(props.max)) return props.max.length - 1
+  return Number(props.max)
+})
+
+const percent = computed(() => {
+  if (isIndeterminate.value) return undefined
+  const value = modelValue.value as number
+  switch (true) {
+    case value < 0: return 0
+    case value > (realMax.value ?? 100): return 100
+    default: return Math.round((value / (realMax.value ?? 100)) * 100)
+  }
+})
+
+/** 指示器位移：不确定进度时由动画接管 */
+const indicatorStyle = computed(() => {
+  if (percent.value == null) return undefined
+  if (props.orientation === 'vertical') {
+    return { transform: `translateY(${props.inverted ? '' : '-'}${100 - percent.value}%)` }
+  }
+  return { transform: `translateX(${props.inverted ? '' : '-'}${100 - percent.value}%)` }
+})
+
+/** 百分比文本容器宽度，通过 CSS 变量驱动 */
+const statusStyle = computed(() => ({ '--percent': `${Math.max(percent.value ?? 0, 0)}%` }))
+
+/** 颜色映射：indicator 背景与 steps 文字 */
+const colorClasses: Record<ProgressColor, { indicator: string; steps: string }> = {
+  primary: { indicator: 'bg-primary-6', steps: 'text-primary-6' },
+  secondary: { indicator: 'bg-secondary', steps: 'text-secondary-foreground' },
+  neutral: { indicator: 'bg-neutral-6', steps: 'text-neutral-6' },
+  success: { indicator: 'bg-success-6', steps: 'text-success-6' },
+  info: { indicator: 'bg-info-6', steps: 'text-info-6' },
+  warning: { indicator: 'bg-warning-6', steps: 'text-warning-7' },
+  error: { indicator: 'bg-error-6', steps: 'text-error-6' },
+}
+
+/** 不确定进度动画（keyframes 定义在包入口 index.css） */
+const animationClasses: Record<ProgressAnimation, Record<ProgressOrientation, string>> = {
+  carousel: {
+    horizontal: 'motion-safe:data-[state=indeterminate]:animate-[carousel_2s_linear_infinite]',
+    vertical: 'motion-safe:data-[state=indeterminate]:animate-[carousel-vertical_2s_linear_infinite]',
+  },
+  'carousel-inverse': {
+    horizontal: 'motion-safe:data-[state=indeterminate]:animate-[carousel-inverse_2s_linear_infinite]',
+    vertical: 'motion-safe:data-[state=indeterminate]:animate-[carousel-inverse-vertical_2s_linear_infinite]',
+  },
+  swing: {
+    horizontal: 'motion-safe:data-[state=indeterminate]:animate-[swing_2s_var(--ease-in-out)_infinite]',
+    vertical: 'motion-safe:data-[state=indeterminate]:animate-[swing-vertical_2s_var(--ease-in-out)_infinite]',
+  },
+  elastic: {
+    horizontal: 'motion-safe:data-[state=indeterminate]:animate-[elastic_2s_var(--ease-in-out)_infinite]',
+    vertical: 'motion-safe:data-[state=indeterminate]:animate-[elastic-vertical_2s_var(--ease-in-out)_infinite]',
+  },
+}
+
+/** 步骤项显隐（激活项显示，其余隐藏） */
+const stepVariantClasses: Record<'active' | 'first' | 'other' | 'last', string> = {
+  active: 'opacity-100',
+  first: 'opacity-100 text-muted-foreground',
+  other: 'opacity-0',
+  last: '',
+}
+
+function isActiveStep(index: number) {
+  return index === Number(modelValue.value)
+}
+
+function stepVariant(index: number) {
+  if (isActiveStep(index) && index !== 0) return 'active'
+  if (index === 0 && isActiveStep(index)) return 'first'
+  if (index === realMax.value && isActiveStep(index)) return 'last'
+  return 'other'
+}
 </script>
 
 <template>
-  <span v-if="type === 'circle'" :class="cn('inline-flex items-center gap-2', props.class)">
-    <svg :width="size" :height="size" viewBox="0 0 100 100" class="-rotate-90">
-      <circle cx="50" cy="50" :r="radius" fill="none" stroke-width="8" class="stroke-border" />
-      <circle
-        cx="50"
-        cy="50"
-        :r="radius"
-        fill="none"
-        stroke-width="8"
-        stroke-linecap="round"
-        :stroke="strokeColor ?? 'currentColor'"
-        :stroke-dasharray="circumference"
-        :stroke-dashoffset="dashOffset"
-        :class="cn(strokeColor == null && statusClasses[status])"
-        style="transition: stroke-dashoffset 200ms ease-in-out"
-      />
-    </svg>
-    <span v-if="showInfo" class="text-sm font-medium">{{ safePercent }}%</span>
-  </span>
-  <span v-else :class="cn('flex w-full items-center gap-2', props.class)">
-    <Progress
-      :model-value="safePercent"
+  <Primitive
+    :as="as ?? 'div'"
+    :data-orientation="orientation"
+    data-slot="root"
+    :class="cn(
+      'gap-2',
+      orientation === 'horizontal' ? 'w-full flex flex-col' : 'h-full flex flex-row-reverse',
+      ui?.root,
+      props.class,
+    )"
+  >
+    <div
+      v-if="!isIndeterminate && (status || $slots.status)"
+      data-slot="status"
       :class="cn(
-        'h-2 flex-1 [&_[data-slot=progress-track]]:h-2',
-        strokeColor == null && statusClasses[status],
-        strokeColor != null && '[&_[data-slot=progress-indicator]]:bg-(--progress-color)',
+        'flex text-muted-foreground duration-200 ease-out motion-reduce:transition-none',
+        orientation === 'horizontal'
+          ? 'flex-row items-center justify-end w-(--percent) min-w-fit transition-[width]'
+          : 'flex-col justify-end h-(--percent) min-h-fit transition-[height]',
+        inverted && 'self-end',
+        inverted && orientation === 'horizontal' && 'flex-row-reverse',
+        ui?.status,
       )"
-      :style="strokeColor != null ? { '--progress-color': strokeColor } : undefined"
-    />
-    <span v-if="showInfo" class="text-sm font-medium">{{ safePercent }}%</span>
-  </span>
+      :style="statusStyle"
+    >
+      <slot name="status" :percent="percent">{{ percent }}%</slot>
+    </div>
+
+    <ProgressRoot
+      v-bind="{ modelValue }"
+      :max="realMax"
+      data-slot="base"
+      :class="cn(
+        'relative overflow-hidden rounded-full bg-muted',
+        orientation === 'horizontal' ? 'w-full h-2' : 'h-full w-2',
+        ui?.base,
+      )"
+      style="transform: translateZ(0)"
+    >
+      <ProgressIndicator
+        data-slot="indicator"
+        :class="cn(
+          'rounded-full size-full transition-transform duration-200 ease-out motion-reduce:transition-none motion-reduce:data-[state=indeterminate]:animate-pulse',
+          animationClasses[animation][orientation],
+          animation === 'elastic' && 'relative',
+          colorClasses[color].indicator,
+          ui?.indicator,
+        )"
+        :style="indicatorStyle"
+      />
+    </ProgressRoot>
+
+    <div
+      v-if="hasSteps"
+      data-slot="steps"
+      :class="cn(
+        'grid items-end',
+        inverted && orientation === 'vertical' && 'items-start',
+        colorClasses[color].steps,
+        ui?.steps,
+      )"
+    >
+      <div
+        v-for="(step, index) in max"
+        :key="index"
+        data-slot="step"
+        :class="cn(
+          'truncate text-end row-start-1 col-start-1 transition-opacity ease-out',
+          stepVariantClasses[stepVariant(index)],
+          inverted && orientation === 'horizontal' && 'text-start',
+          ui?.step,
+        )"
+      >
+        <slot :name="`step-${index}`" :step="step">{{ step }}</slot>
+      </div>
+    </div>
+  </Primitive>
 </template>

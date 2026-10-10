@@ -732,6 +732,7 @@
       "registryDependencies": [
         "@ui-kit/utils",
         "@ui-kit/context-menu",
+        "@ui-kit/x-dropdown-menu",
         "@ui-kit/bound-store"
       ]
     },

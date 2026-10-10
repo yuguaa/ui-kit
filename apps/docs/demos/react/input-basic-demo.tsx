@@ -7,10 +7,11 @@ export default function InputBasicDemo() {
       <div className="flex flex-wrap items-center gap-4">
         <XInput placeholder="Input（md）" className="w-56" />
         <XInput size="sm" placeholder="Input（sm）" className="w-40" />
+        <XInput size="xs" placeholder="Input（xs）" className="w-32" />
       </div>
       <div className="flex flex-wrap items-center gap-4">
-        <XInput placeholder="带前缀图标（搜索）" prefix={<XIcon name="search" size="sm" />} className="w-56" />
-        <XInput placeholder="带后缀图标" suffix={<XIcon name="chevron-down" size="sm" />} className="w-56" />
+        <XInput placeholder="搜索" leading={<XIcon name="search" size="sm" />} className="w-56" />
+        <XInput placeholder="选择项" trailing={<XIcon name="chevron-down" size="sm" />} className="w-56" />
       </div>
     </div>
   );

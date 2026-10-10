@@ -8,8 +8,9 @@ import XSlideover from './XSlideover.vue'
 /** 可由 api 管理的侧滑面板状态 */
 export interface XSlideoverState {
   title?: string
-  side?: 'left' | 'right'
-  loading?: boolean
+  description?: string
+  side?: 'top' | 'right' | 'bottom' | 'left'
+  inset?: boolean
 }
 
 export interface XSlideoverApi {
@@ -19,24 +20,21 @@ export interface XSlideoverApi {
   close: () => void
   /** 切换开合 */
   toggle: () => void
-  /** 更新内部状态（标题、方向、加载态等） */
+  /** 更新内部状态（标题、方向、内嵌等） */
   setState: (patch: XSlideoverState) => void
   /** 写入共享数据，供面板内容读取 */
   setData: <T extends object = Record<string, unknown>>(payload: T) => void
   /** 读取共享数据 */
   getData: <T extends object = Record<string, unknown>>() => T
-  /** 进入锁定（加载）状态：阻止手动关闭 */
-  lock: () => void
-  /** 解除锁定 */
-  unlock: () => void
 }
 
 export function useXSlideover(options: XSlideoverState & { defaultOpen?: boolean } = {}) {
   const state = reactive({
     open: options.defaultOpen ?? false,
     title: options.title,
+    description: options.description,
     side: options.side,
-    loading: options.loading,
+    inset: options.inset,
   })
 
   /** 与面板共享的数据载荷 */
@@ -52,8 +50,9 @@ export function useXSlideover(options: XSlideoverState & { defaultOpen?: boolean
             ...attrs,
             open: state.open,
             title: state.title ?? (attrs.title as string | undefined),
-            side: state.side ?? (attrs.side as 'left' | 'right' | undefined),
-            loading: state.loading ?? (attrs.loading as boolean | undefined),
+            description: state.description ?? (attrs.description as string | undefined),
+            side: state.side ?? (attrs.side as XSlideoverState['side'] | undefined),
+            inset: state.inset ?? (attrs.inset as boolean | undefined),
             'onUpdate:open': (open: boolean) => {
               state.open = open
             },
@@ -78,12 +77,6 @@ export function useXSlideover(options: XSlideoverState & { defaultOpen?: boolean
       payload.value = data as Record<string, unknown>
     },
     getData: <T extends object = Record<string, unknown>>() => payload.value as T,
-    lock: () => {
-      state.loading = true
-    },
-    unlock: () => {
-      state.loading = false
-    },
   }
 
   return [Slideover, api] as const

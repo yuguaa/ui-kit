@@ -8,6 +8,7 @@ const value = ref(50)
 <template>
   <div class="flex w-full max-w-sm flex-col gap-8">
     <XSlider v-model="value" tooltip class="w-full" />
+    <XSlider v-model="value" :tooltip="{ arrow: true }" color="success" class="w-full" />
     <div class="text-muted-foreground text-sm">当前值：{{ value }}</div>
   </div>
 </template>

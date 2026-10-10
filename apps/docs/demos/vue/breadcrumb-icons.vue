@@ -13,9 +13,10 @@ const items = [
 
 <template>
   <div class="flex w-full flex-col gap-5">
+    <XBreadcrumb :items="items" separator-icon="chevron-down" />
     <XBreadcrumb :items="items">
-      <template #separator-icon>
-        <XIcon name="chevron-right" size="sm" />
+      <template #separator>
+        <span class="text-muted-foreground">/</span>
       </template>
     </XBreadcrumb>
   </div>

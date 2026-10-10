@@ -9,12 +9,14 @@ export default function SwitchBasicDemo() {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex flex-wrap items-center gap-6">
-        <XSwitch checked={enabled} label="开启通知" onCheckedChange={setEnabled} />
-        <XSwitch checked={checkedText} label="显示文字" checkedChildren="开" unCheckedChildren="关" onCheckedChange={setCheckedText} />
+        <XSwitch checked={enabled} onCheckedChange={setEnabled} label="开启通知" />
+        <XSwitch checked={checkedText} onCheckedChange={setCheckedText} label="显示文字" checkedChildren="开" unCheckedChildren="关" />
         <XSwitch disabled label="禁用状态" />
+        <XSwitch color="success" label="success" />
+        <XSwitch color="error" label="error" />
       </div>
       <div className="flex flex-wrap items-center gap-6">
-        <XSwitch checked={small} size="sm" label="小尺寸" onCheckedChange={setSmall} />
+        <XSwitch checked={small} onCheckedChange={setSmall} size="small" label="小尺寸" />
       </div>
     </div>
   );

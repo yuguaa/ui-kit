@@ -19,12 +19,18 @@ import { useXTable } from "@/components/kit/x-table";
 import { useXTooltip } from "@/components/kit/x-tooltip";
 
 /** 在真实组件树中使用 hook 的宿主：贴近实际用法，api 暴露到全局供用例调用 */
-function createHost<T>(useHook: () => readonly [React.ComponentType<Record<string, never>>, T]) {
+type HostComponent = React.ComponentType<{ children?: React.ReactNode }>
+type HookComponent = React.ComponentType<never>
+
+function createHost<T>(
+  useHook: () => readonly [HookComponent, T],
+  options: { children?: React.ReactNode; props?: Record<string, unknown> } = {},
+) {
   const apiRef: { current: T | null } = { current: null }
   function Host() {
-    const [Component, api] = useHook() as unknown as readonly [React.ComponentType<Record<string, never>>, T]
+    const [Component, api] = useHook() as unknown as readonly [HostComponent, T]
     apiRef.current = api
-    return <Component />
+    return <Component {...options.props}>{options.children}</Component>
   }
   return { Host, apiRef }
 }
@@ -46,7 +52,7 @@ describe("useXModal", () => {
     expect(await screen.findByText("新标题")).toBeInTheDocument()
   })
 
-  it("setData / getData 共享数据，lock / unlock 切换确定按钮加载态", async () => {
+  it("setData / getData 共享数据", async () => {
     const { Host, apiRef } = createHost(() => useXModal({ title: "数据" }))
     render(<Host />)
 
@@ -56,12 +62,6 @@ describe("useXModal", () => {
     })
     expect(await screen.findByText("数据")).toBeInTheDocument()
     expect(apiRef.current!.getData<{ id: number }>()).toEqual({ id: 7 })
-
-    act(() => apiRef.current!.lock())
-    expect(screen.getByRole("button", { name: "确 定" })).toHaveAttribute("aria-busy", "true")
-
-    act(() => apiRef.current!.unlock())
-    expect(screen.getByRole("button", { name: "确 定" })).not.toHaveAttribute("aria-busy")
   })
 })
 
@@ -85,7 +85,7 @@ describe("useXDrawer / useXSlideover", () => {
 
 describe("useXTooltip / useXPopover", () => {
   it("api 控制提示气泡显示", async () => {
-    const { Host, apiRef } = createHost(() => useXTooltip({ title: "提示文字" }))
+    const { Host, apiRef } = createHost(() => useXTooltip({ text: "提示文字" }))
     render(<Host />)
     act(() => apiRef.current!.show())
     expect(await screen.findByText("提示文字")).toBeInTheDocument()
@@ -93,10 +93,15 @@ describe("useXTooltip / useXPopover", () => {
   })
 
   it("api 控制气泡开合", async () => {
-    const { Host, apiRef } = createHost(() => useXPopover({ title: "气泡标题", content: "气泡说明文字" }))
+    const { Host, apiRef } = createHost(
+      () => useXPopover(),
+      {
+        children: <button type="button">打开气泡</button>,
+        props: { content: "气泡说明文字" },
+      },
+    )
     render(<Host />)
     act(() => apiRef.current!.open())
-    expect(await screen.findByText("气泡标题")).toBeInTheDocument()
     expect(await screen.findByText("气泡说明文字")).toBeInTheDocument()
     act(() => apiRef.current!.close())
   })
@@ -146,17 +151,16 @@ describe("useXForm", () => {
 })
 
 describe("useXTable", () => {
-  it("api 控制加载与页码", () => {
+  it("api 控制加载状态", () => {
     const { Host, apiRef } = createHost(() =>
-      useXTable({ columns: [{ key: "name", title: "名称" }], dataSource: [{ key: "1", name: "张三" }] }),
+      useXTable({ columns: [{ accessorKey: "name", header: "名称" }], data: [{ key: "1", name: "张三" }] }),
     )
     render(<Host />)
     expect(screen.getByText("张三")).toBeInTheDocument()
     act(() => apiRef.current!.setLoading(true))
     act(() => apiRef.current!.setLoading(false))
-    act(() => apiRef.current!.setPage(1))
     act(() => apiRef.current!.reload())
-    expect(apiRef.current!.page).toBe(1)
+    expect(apiRef.current!.loading).toBe(true)
   })
 })
 
@@ -180,7 +184,7 @@ describe("useXStepper", () => {
 
 describe("useXAccordion / useXCollapsible", () => {
   it("api 控制手风琴展开折叠", () => {
-    const { Host, apiRef } = createHost(() => useXAccordion({ items: [{ title: "什么是 Nuxt UI？", content: "组件库说明" }] }))
+    const { Host, apiRef } = createHost(() => useXAccordion({ items: [{ label: "什么是 Nuxt UI？", content: "组件库说明" }] }))
     render(<Host />)
     act(() => apiRef.current!.open(0))
     expect(apiRef.current!.value).toEqual(["0"])

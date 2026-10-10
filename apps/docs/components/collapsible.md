@@ -5,15 +5,27 @@ description: 点击触发内容展开或收起
 
 # Collapsible 折叠
 
-点击触发内容展开或收起。
+点击触发内容展开或收起。trigger 插槽为触发器（默认「展开详情」按钮），content 插槽为折叠内容。关闭时默认卸载内容（unmountOnHide）。
 
 <script setup>
-import ContentBasic from '@demos/vue/content-basic.vue'
-import contentBasicRaw from '@demos/vue/content-basic.vue.code.txt?raw'
+import CollapsibleBasic from '@demos/vue/collapsible-basic.vue'
+import collapsibleBasicRaw from '@demos/vue/collapsible-basic.vue.code.txt?raw'
+import CollapsibleUi from '@demos/vue/collapsible-ui.vue'
+import collapsibleUiRaw from '@demos/vue/collapsible-ui.vue.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="点击「展开详情」展开内容" :code="contentBasicRaw">
-  <ContentBasic />
+## 基础用法
+
+<DemoBlock title="基础用法" description="trigger / content 插槽，defaultOpen / disabled" :code="collapsibleBasicRaw">
+  <CollapsibleBasic />
+</DemoBlock>
+
+## ui 插槽与 as
+
+ui.root 覆盖根容器类名，ui.content 覆盖内容区类名；as 指定渲染标签；unmountOnHide 控制关闭后是否卸载内容。
+
+<DemoBlock title="ui · as · unmountOnHide" description="ui：root / content" :code="collapsibleUiRaw">
+  <CollapsibleUi />
 </DemoBlock>
 
 ## 安装
@@ -29,12 +41,22 @@ npx shadcn-vue@latest add @ui-kit/x-collapsible
 | open | boolean | false | 是否展开（支持 v-model:open） |
 | disabled | boolean | false | 是否禁用 |
 | defaultOpen | boolean | false | 默认展开 |
+| unmountOnHide | boolean | true | 隐藏时是否卸载内容 |
+| as | string · Component | div | 渲染为指定元素或组件 |
+| ui | CollapsibleUi | - | 主题插槽类名 |
+
+## ui 插槽
+
+| 名称 | 说明 |
+| --- | --- |
+| root | 折叠根元素 |
+| content | 折叠内容区 |
 
 ## 插槽
 
 | 名称 | 说明 |
 | --- | --- |
-| trigger | 触发器 |
+| trigger | 触发器（默认「展开详情」按钮） |
 | content | 折叠内容 |
 
 **方法**（ref 调用）：toggle()

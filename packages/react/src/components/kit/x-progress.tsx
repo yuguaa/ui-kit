@@ -1,87 +1,224 @@
 /**
- * XProgress 进度条：展示操作的当前进度，支持线形与圆形。
+ * XProgress 进度条：与 Nuxt UI Progress 对齐。
+ * value 为 null 时进入不确定进度，按 animation 播放指示器动画；
+ * max 传数组时渲染 steps 步骤；status 开关显示百分比文本。
  */
 import * as React from "react"
-import { Progress } from "@/components/ui/progress"
+import { Progress as ProgressPrimitive } from "@base-ui/react/progress"
+import { useRender } from "@base-ui/react/use-render"
 import { cn } from "@/lib/utils"
 
-export type XProgressType = "line" | "circle"
-export type XProgressStatus = "normal" | "success" | "exception" | "active"
+export type XProgressColor = "primary" | "secondary" | "neutral" | "success" | "info" | "warning" | "error"
+export type XProgressOrientation = "horizontal" | "vertical"
+export type XProgressAnimation = "carousel" | "carousel-inverse" | "swing" | "elastic"
 
-const statusIndicatorClasses: Record<XProgressStatus, string> = {
-  normal: "[&_[data-slot=progress-indicator]]:bg-primary-6",
-  success: "[&_[data-slot=progress-indicator]]:bg-success-6",
-  exception: "[&_[data-slot=progress-indicator]]:bg-error-6",
-  active: "[&_[data-slot=progress-indicator]]:bg-primary-6 [&_[data-slot=progress-indicator]]:animate-pulse",
+/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
+export interface XProgressUi {
+  root?: string
+  base?: string
+  indicator?: string
+  status?: string
+  steps?: string
+  step?: string
 }
 
 export interface XProgressProps {
-  /** 完成百分比 */
-  percent?: number
-  /** 进度类型 */
-  type?: XProgressType
-  /** 进度状态 */
-  status?: XProgressStatus
-  /** 进度条颜色 */
-  strokeColor?: string
-  /** 是否显示数值 */
-  showInfo?: boolean
-  /** 圆形直径（px） */
-  size?: number
+  /** 当前值：null 表示不确定进度 */
+  value?: number | null
+  /** 最大进度值；传数组时渲染步骤条，值为每步文案 */
+  max?: number | Array<any>
+  /** 显示当前进度百分比（status 插槽默认内容） */
+  status?: boolean
+  /** 进度方向是否反转 */
+  inverted?: boolean
+  /** 指示条与步骤文字颜色 */
+  color?: XProgressColor
+  /** 进度方向 */
+  orientation?: XProgressOrientation
+  /** 不确定进度的指示器动画 */
+  animation?: XProgressAnimation
+  /** 渲染为指定元素 */
+  render?: React.ReactElement
+  /** 主题插槽类名 */
+  ui?: XProgressUi
+  /** status 插槽内容，函数式接收 percent */
+  statusContent?: React.ReactNode | ((props: { percent?: number }) => React.ReactNode)
   className?: string
 }
 
+/** 颜色映射：indicator 背景与 steps 文字 */
+const progressColorClasses: Record<XProgressColor, { indicator: string; steps: string }> = {
+  primary: { indicator: "bg-primary-6", steps: "text-primary-6" },
+  secondary: { indicator: "bg-secondary", steps: "text-secondary-foreground" },
+  neutral: { indicator: "bg-neutral-6", steps: "text-neutral-6" },
+  success: { indicator: "bg-success-6", steps: "text-success-6" },
+  info: { indicator: "bg-info-6", steps: "text-info-6" },
+  warning: { indicator: "bg-warning-6", steps: "text-warning-7" },
+  error: { indicator: "bg-error-6", steps: "text-error-6" },
+}
+
+/** 不确定进度动画（keyframes 定义在包入口 index.css） */
+const progressAnimationClasses: Record<XProgressAnimation, Record<XProgressOrientation, string>> = {
+  carousel: {
+    horizontal: "motion-safe:data-[indeterminate]:animate-[carousel_2s_linear_infinite]",
+    vertical: "motion-safe:data-[indeterminate]:animate-[carousel-vertical_2s_linear_infinite]",
+  },
+  "carousel-inverse": {
+    horizontal: "motion-safe:data-[indeterminate]:animate-[carousel-inverse_2s_linear_infinite]",
+    vertical: "motion-safe:data-[indeterminate]:animate-[carousel-inverse-vertical_2s_linear_infinite]",
+  },
+  swing: {
+    horizontal: "motion-safe:data-[indeterminate]:animate-[swing_2s_var(--ease-in-out)_infinite]",
+    vertical: "motion-safe:data-[indeterminate]:animate-[swing-vertical_2s_var(--ease-in-out)_infinite]",
+  },
+  elastic: {
+    horizontal: "motion-safe:data-[indeterminate]:animate-[elastic_2s_var(--ease-in-out)_infinite]",
+    vertical: "motion-safe:data-[indeterminate]:animate-[elastic-vertical_2s_var(--ease-in-out)_infinite]",
+  },
+}
+
+/** 步骤项显隐（激活项显示，其余隐藏） */
+const stepVariantClasses: Record<"active" | "first" | "other" | "last", string> = {
+  active: "opacity-100",
+  first: "opacity-100 text-muted-foreground",
+  other: "opacity-0",
+  last: "",
+}
+
 export function XProgress({
-  percent = 0,
-  type = "line",
-  status = "normal",
-  strokeColor,
-  showInfo = true,
-  size = 96,
+  value = null,
+  max,
+  status = false,
+  inverted = false,
+  color = "primary",
+  orientation = "horizontal",
+  animation = "carousel",
+  render,
+  ui,
+  statusContent,
   className,
 }: XProgressProps) {
-  const safePercent = Math.min(100, Math.max(0, percent))
-  const color = strokeColor ?? undefined
+  const isIndeterminate = value == null
+  const hasSteps = Array.isArray(max)
 
-  if (type === "circle") {
-    const radius = 42
-    const circumference = 2 * Math.PI * radius
-    const offset = circumference - (safePercent / 100) * circumference
-    return (
-      <span className={cn("inline-flex items-center gap-2", className)}>
-        <svg width={size} height={size} viewBox="0 0 100 100" className="-rotate-90">
-          <circle cx="50" cy="50" r={radius} fill="none" strokeWidth="8" className="stroke-border" />
-          <circle
-            cx="50"
-            cy="50"
-            r={radius}
-            fill="none"
-            strokeWidth="8"
-            strokeLinecap="round"
-            stroke={color ?? "currentColor"}
-            strokeDasharray={circumference}
-            strokeDashoffset={offset}
-            className={cn(color == null && statusIndicatorClasses[status])}
-            style={{ transition: "stroke-dashoffset 200ms ease-in-out" }}
-          />
-        </svg>
-        {showInfo && <span className="text-sm font-medium">{safePercent}%</span>}
-      </span>
-    )
+  const realMax = isIndeterminate || max == null ? undefined : Array.isArray(max) ? max.length - 1 : max
+
+  const percent =
+    isIndeterminate || value == null
+      ? undefined
+      : value < 0
+        ? 0
+        : value > (realMax ?? 100)
+          ? 100
+          : Math.round((value / (realMax ?? 100)) * 100)
+
+  /* 指示器位移：不确定进度时由动画接管 */
+  const indicatorStyle: React.CSSProperties | undefined =
+    percent == null
+      ? undefined
+      : orientation === "vertical"
+        ? { transform: `translateY(${inverted ? "" : "-"}${100 - percent}%)` }
+        : { transform: `translateX(${inverted ? "" : "-"}${100 - percent}%)` }
+
+  const statusStyle = { "--percent": `${Math.max(percent ?? 0, 0)}%` } as React.CSSProperties
+
+  function isActiveStep(index: number) {
+    return index === Number(value)
   }
 
-  return (
-    <span className={cn("flex w-full items-center gap-2", className)}>
-      <Progress
-        value={safePercent}
-        className={cn(
-          "h-2 flex-1 [&_[data-slot=progress-track]]:h-2",
-          strokeColor == null && statusIndicatorClasses[status],
-          strokeColor != null && "[&_[data-slot=progress-indicator]]:bg-(--progress-color)",
-        )}
-        style={strokeColor != null ? ({ "--progress-color": strokeColor } as React.CSSProperties) : undefined}
-      />
-      {showInfo && <span className="text-sm font-medium">{safePercent}%</span>}
-    </span>
-  )
+  function stepVariant(index: number) {
+    if (isActiveStep(index) && index !== 0) return "active"
+    if (index === 0 && isActiveStep(index)) return "first"
+    if (index === realMax && isActiveStep(index)) return "last"
+    return "other"
+  }
+
+  return useRender({
+    defaultTagName: "div",
+    render,
+    props: {
+      "data-orientation": orientation,
+      "data-slot": "root",
+      className: cn(
+        "gap-2",
+        orientation === "horizontal" ? "w-full flex flex-col" : "h-full flex flex-row-reverse",
+        ui?.root,
+        className,
+      ),
+      children: (
+        <>
+          {!isIndeterminate && (status || statusContent != null) && (
+            <div
+              data-slot="status"
+              className={cn(
+                "flex text-muted-foreground duration-200 ease-out motion-reduce:transition-none",
+                orientation === "horizontal"
+                  ? "flex-row items-center justify-end w-(--percent) min-w-fit transition-[width]"
+                  : "flex-col justify-end h-(--percent) min-h-fit transition-[height]",
+                inverted && "self-end",
+                inverted && orientation === "horizontal" && "flex-row-reverse",
+                ui?.status,
+              )}
+              style={statusStyle}
+            >
+              {typeof statusContent === "function" ? statusContent({ percent }) : (statusContent ?? `${percent}%`)}
+            </div>
+          )}
+
+          <ProgressPrimitive.Root
+            value={value}
+            max={realMax}
+            data-slot="base"
+            className={cn(
+              "relative overflow-hidden rounded-full bg-muted",
+              orientation === "horizontal" ? "w-full h-2" : "h-full w-2",
+              ui?.base,
+            )}
+            style={{ transform: "translateZ(0)" }}
+          >
+            <ProgressPrimitive.Track className="relative size-full overflow-hidden">
+              <ProgressPrimitive.Indicator
+                data-slot="indicator"
+                className={cn(
+                  "rounded-full size-full transition-transform duration-200 ease-out motion-reduce:transition-none motion-reduce:data-[indeterminate]:animate-pulse",
+                  progressAnimationClasses[animation][orientation],
+                  animation === "elastic" && "relative",
+                  progressColorClasses[color].indicator,
+                  ui?.indicator,
+                )}
+                style={indicatorStyle}
+              />
+            </ProgressPrimitive.Track>
+          </ProgressPrimitive.Root>
+
+          {hasSteps && (
+            <div
+              data-slot="steps"
+              className={cn(
+                "grid items-end",
+                inverted && orientation === "vertical" && "items-start",
+                progressColorClasses[color].steps,
+                ui?.steps,
+              )}
+            >
+              {(max as Array<any>).map((step, index) => (
+                <div
+                  key={index}
+                  data-slot="step"
+                  className={cn(
+                    "truncate text-end row-start-1 col-start-1 transition-opacity ease-out",
+                    stepVariantClasses[stepVariant(index)],
+                    inverted && orientation === "horizontal" && "text-start",
+                    ui?.step,
+                  )}
+                >
+                  {step}
+                </div>
+              ))}
+            </div>
+          )}
+        </>
+      ),
+    },
+  })
 }

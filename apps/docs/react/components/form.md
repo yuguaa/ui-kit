@@ -1,19 +1,43 @@
 ---
 title: Form 表单
-description: 收集、校验并提交表单数据，配套 hook 先行用法
+description: 收集、校验并提交表单数据，支持 rules 规则与 schema 校验
 ---
 
 # Form 表单
 
-收集、校验并提交表单数据。`rules` 支持 required / pattern / min / max / 自定义 validator。
+收集、校验并提交表单数据。`rules` 支持 required / pattern / min / max / 自定义 validator；`schema` 接受 zod v4 / valibot v1 等标准 schema 对象，与 rules 叠加校验。
 
 <script setup>
-import FormBasic from '@demos/react/form-basic'
-import formBasicRaw from '@demos/react/form-basic.tsx.code.txt?raw'
+import FormSchema from '@demos/react/form-schema'
+import formSchemaRaw from '@demos/react/form-schema.tsx.code.txt?raw'
+import FormEvents from '@demos/react/form-events'
+import formEventsRaw from '@demos/react/form-events.tsx.code.txt?raw'
+import FormUiCustom from '@demos/react/form-ui-custom'
+import formUiCustomRaw from '@demos/react/form-ui-custom.tsx.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="hook 先行用法：useXForm 创建 [Form, formApi]，表单校验、重置与提交" :code="formBasicRaw">
-  <ReactDemo :component="FormBasic" />
+## schema 校验
+
+`schema` 接受实现 Standard Schema 协议的对象（zod v4 / valibot v1 等），校验错误按 issue 路径映射到字段名。
+
+<DemoBlock title="schema 校验" description="标准 schema 对象接入，错误显示在对应字段" :code="formSchemaRaw">
+  <ReactDemo :component="FormSchema" />
+</DemoBlock>
+
+## onSubmit 与 onError
+
+校验通过触发 `onSubmit`（载荷为表单数据），失败触发 `onError`（载荷为错误记录）。
+
+<DemoBlock title="onSubmit / onError" description="提交回调与校验失败回调" :code="formEventsRaw">
+  <ReactDemo :component="FormEvents" />
+</DemoBlock>
+
+## ui 插槽
+
+`ui.root` 自定义表单根元素类名。
+
+<DemoBlock title="ui 插槽" description="ui.root 覆盖根元素类名" :code="formUiCustomRaw">
+  <ReactDemo :component="FormUiCustom" />
 </DemoBlock>
 
 ## 安装
@@ -44,34 +68,78 @@ formApi.submit();     // 提交
 | setValue / setValues | 更新字段 / 批量更新 |
 | validate / reset / submit | 校验 / 重置 / 提交 |
 
-## 组件 API
+## API
 
 ### XForm
 
 | 名称 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
-| values / defaultValues | object | - | 表单数据 |
-| rules | Record<string, Rule[]> | - | 校验规则（按字段名） |
+| values | object | - | 表单数据（受控） |
+| defaultValues | object | - | 默认表单数据 |
+| rules | Record\<string, XFormRule[]> | - | 校验规则（按字段名）。XFormRule：required / pattern / min / max / validator / message |
+| schema | StandardSchema | - | 标准 schema（zod v4 / valibot v1 等），与 rules 叠加校验 |
 | disabled | boolean | false | 整体禁用 |
 | onSubmit | (values) => void | - | 校验通过后触发 |
 | onError | (errors) => void | - | 校验失败触发 |
+| ui | XFormUi | - | 主题插槽类名 |
 
 ### XFormField
 
 | 名称 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
+| render | ReactElement | - | 渲染为指定元素 |
 | name | string | - | 字段名（关联表单校验结果） |
-| label | ReactNode | - | 标签文字 |
+| errorPattern | RegExp | - | 正则匹配表单错误名，用于数组字段（如 tags.0） |
+| label | ReactNode | - | 标签内容 |
 | description | ReactNode | - | 辅助说明 |
-| error | ReactNode | - | 错误信息（优先取表单校验结果） |
+| help | ReactNode | - | 无错误时显示的帮助文案 |
+| error | boolean · ReactNode | - | 错误信息：true 强制错误态，false 关闭错误显示 |
+| hint | ReactNode | - | 标签右侧的提示文案（说明填写要求） |
+| size | xs · sm · md · lg · xl | md | 尺寸（控制根节点字号） |
 | required | boolean | false | 是否必填 |
+| eagerValidation | boolean | false | 输入时立即校验，不等待 blur（供字段内控件读取） |
+| validateOnInputDelay | number | 300 | 输入校验的防抖延迟毫秒数（供字段内控件读取） |
+| orientation | vertical · horizontal | vertical | 排列方向 |
+| id | string | - | 控件 id（label 关联用） |
+| ui | XFormFieldUi | - | 主题插槽类名 |
 
 ### XFieldGroup
 
 | 名称 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
-| size | sm · md · lg | md | 尺寸 |
-| inline | boolean | true | 是否同行排列 |
+| render | ReactElement | - | 渲染为指定元素 |
+| size | xs · sm · md · lg · xl | md | 尺寸（控制字段间距） |
+| orientation | horizontal · vertical | horizontal | 排列方向 |
+| inline | boolean | true | 旧属性：true 等价 horizontal，false 等价 vertical |
+| ui | XFieldGroupUi | - | 主题插槽类名 |
+
+## ui 插槽
+
+### XForm
+
+| 名称 | 说明 |
+| --- | --- |
+| root | 表单根元素 |
+
+### XFormField
+
+| 名称 | 说明 |
+| --- | --- |
+| root | 字段根元素 |
+| wrapper | 标签与说明容器 |
+| labelWrapper | 标签行（标签与 hint） |
+| label | 标签 |
+| container | 控件容器 |
+| description | 辅助说明 |
+| error | 错误信息 |
+| hint | 标签右侧提示 |
+| help | 帮助文案 |
+
+### XFieldGroup
+
+| 名称 | 说明 |
+| --- | --- |
+| root | 字段组根元素 |
 
 ## 动效
 

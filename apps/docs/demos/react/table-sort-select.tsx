@@ -1,13 +1,31 @@
 import { useState } from "react";
+import { XButton } from "@/components/kit";
 import { XTable } from "@/components/kit";
 
 const columns = [
-  { key: "name", title: "姓名", sortable: true },
-  { key: "age", title: "年龄", sortable: true, align: "right" as const },
-  { key: "city", title: "城市" },
+  {
+    accessorKey: "name",
+    header: ({ column }: { column: { toggleSorting: () => void } }) => (
+      <button type="button" className="inline-flex items-center gap-1" onClick={() => column.toggleSorting()}>
+        姓名
+      </button>
+    ),
+    enableSorting: true,
+  },
+  {
+    accessorKey: "age",
+    header: ({ column }: { column: { toggleSorting: () => void } }) => (
+      <button type="button" className="inline-flex items-center gap-1" onClick={() => column.toggleSorting()}>
+        年龄
+      </button>
+    ),
+    enableSorting: true,
+  },
+  { accessorKey: "city", header: "城市" },
+  { accessorKey: "actions", header: "操作", cell: () => "···" },
 ];
 
-const dataSource = [
+const data = [
   { key: "1", name: "张三", age: 32, city: "杭州" },
   { key: "2", name: "李四", age: 28, city: "成都" },
   { key: "3", name: "王五", age: 45, city: "北京" },
@@ -17,23 +35,37 @@ const dataSource = [
 ];
 
 export default function TableSortSelect() {
-  const [selected, setSelected] = useState<string[]>([]);
+  /* 固定列：姓名在左，操作在右 */
+  const [columnPinning, setColumnPinning] = useState({ left: ["name"], right: ["actions"] });
+  /* 行选择状态（索引 → 是否选中） */
+  const [rowSelection, setRowSelection] = useState<Record<string, boolean>>({});
 
   return (
     <div className="flex w-full flex-col gap-3">
-      <XTable
-        columns={columns}
-        dataSource={dataSource}
-        rowSelection
-        selectedRowKeys={selected}
-        sticky
-        maxHeight={240}
-        pagination={{ pageSize: 4 }}
-        onSelectionChange={setSelected}
-      />
-      <span className="text-xs text-muted-foreground">
-        已选 {selected.length} 行：{selected.join(", ") || "—"}
-      </span>
+      <div className="max-h-64 overflow-hidden rounded-md border">
+        <XTable
+          columns={columns}
+          data={data}
+          sortingOptions={{ enableSorting: true }}
+          columnPinningOptions={{
+            enableColumnPinning: true,
+            state: { columnPinning },
+            onColumnPinningChange: setColumnPinning,
+          }}
+          rowSelectionOptions={{
+            enableRowSelection: true,
+            state: { rowSelection },
+            onRowSelectionChange: setRowSelection,
+          }}
+          sticky
+        />
+      </div>
+      <div className="flex items-center gap-2">
+        <XButton size="xs" variant="outline" color="neutral" onClick={() => setColumnPinning({})}>
+          取消固定
+        </XButton>
+        <span className="text-xs text-muted-foreground">已选 {Object.keys(rowSelection).length} 行</span>
+      </div>
     </div>
   );
 }

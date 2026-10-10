@@ -1,6 +1,6 @@
 ---
 title: Input 输入框
-description: 支持前后缀图标、前后置标签与 error / warning 校验状态
+description: 支持 leading / trailing 插槽、变体与颜色、校验状态
 ---
 
 # Input 输入框
@@ -10,18 +10,32 @@ description: 支持前后缀图标、前后置标签与 error / warning 校验�
 <script setup>
 import InputBasicDemo from '@demos/vue/input-basic-demo.vue'
 import inputBasicDemoRaw from '@demos/vue/input-basic-demo.vue.code.txt?raw'
+import InputVariants from '@demos/vue/input-variants.vue'
+import inputVariantsRaw from '@demos/vue/input-variants.vue.code.txt?raw'
 import InputStates from '@demos/vue/input-states.vue'
 import inputStatesRaw from '@demos/vue/input-states.vue.code.txt?raw'
 import InputAddon from '@demos/vue/input-addon.vue'
 import inputAddonRaw from '@demos/vue/input-addon.vue.code.txt?raw'
 import InputClearable from '@demos/vue/input-clearable.vue'
 import inputClearableRaw from '@demos/vue/input-clearable.vue.code.txt?raw'
+import InputUi from '@demos/vue/input-ui.vue'
+import inputUiRaw from '@demos/vue/input-ui.vue.code.txt?raw'
 </script>
 
 ## 基础用法
 
-<DemoBlock title="尺寸与图标" description="size / prefix / suffix 插槽" :code="inputBasicDemoRaw">
+size 支持 xs / sm / md / lg / xl 五档；leading / trailing 插槽在输入框两侧渲染任意内容。
+
+<DemoBlock title="尺寸与两侧插槽" description="size / leading / trailing" :code="inputBasicDemoRaw">
   <InputBasicDemo />
+</DemoBlock>
+
+## 变体与颜色
+
+variant 支持 outline / soft / subtle / ghost / none；color 控制聚焦描边颜色；highlight 始终显示颜色描边，类似聚焦态；fixed=false 时桌面端缩小一档字号。
+
+<DemoBlock title="变体、颜色、高亮" description="variant / color / highlight / fixed" :code="inputVariantsRaw">
+  <InputVariants />
 </DemoBlock>
 
 ## 校验状态
@@ -38,78 +52,62 @@ import inputClearableRaw from '@demos/vue/input-clearable.vue.code.txt?raw'
 
 ## 清空按钮
 
-clearable 在输入有值、未禁用、未只读时显示清空按钮；与后缀图标同时存在时，清空按钮排在最后并预留右侧内边距。
+clearable 在输入有值、未禁用、未只读时显示清空按钮；与 trailing 内容同时存在时，清空按钮排在最后并预留右侧内边距。
 
 <DemoBlock title="一键清空" description="clearable 属性与 clear 事件" :code="inputClearableRaw">
   <InputClearable />
+</DemoBlock>
+
+## ui 插槽自定义
+
+<DemoBlock title="主题插槽类名" description="ui 的 root / base / leading / trailing 键与左侧头像" :code="inputUiRaw">
+  <InputUi />
 </DemoBlock>
 
 ## 安装
 
 ```bash
 npx shadcn-vue@latest add @ui-kit/x-input
-npx shadcn-vue@latest add @ui-kit/x-textarea
-npx shadcn-vue@latest add @ui-kit/x-checkbox
-npx shadcn-vue@latest add @ui-kit/x-radio-group
-npx shadcn-vue@latest add @ui-kit/x-switch
 ```
 
 ## API
 
-### XInput
-
 | 名称 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
-| size | sm · md | md | 控件尺寸 |
+| size | xs · sm · md · lg · xl | md | 控件尺寸 |
+| color | primary · secondary · neutral · success · info · warning · error | primary | 组件颜色（聚焦描边与高亮） |
+| variant | outline · soft · subtle · ghost · none | outline | 预设样式 |
+| highlight | boolean | false | 始终显示颜色描边，类似聚焦态 |
+| fixed | boolean | true | 保持移动端字号在所有断点一致 |
 | status | error · warning | - | 设置校验状态 |
 | placeholder | string | - | 占位提示文字 |
 | disabled | boolean | false | 是否禁用 |
 | maxLength | number | - | 最大输入长度 |
 | clearable | boolean | false | 有值且未禁用、未只读时显示清空按钮 |
+| avatar | AvatarProps | - | 左侧头像配置 |
+| as | string · Component | div | 渲染为指定元素或组件 |
+| ui | InputUi | - | 主题插槽类名 |
 
-**事件**：clear 点击清空按钮时触发
+**事件**：clear 点击清空按钮时触发（update:modelValue 支持 v-model）
 
-**插槽**：prefix 前缀图标 · suffix 后缀图标 · addonBefore 前置标签 · addonAfter 后置标签
+**插槽**：leading 前置内容 · trailing 后置内容 · prefix 前置图标 · suffix 后缀图标 · addonBefore 前置标签 · addonAfter 后置标签
 
 **方法**：focus() · blur() · select()
 
-### XTextarea
+## ui 插槽
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| modelValue | string | - | 绑定值 |
-| rows | number | 3 | 行数 |
-| autosize | boolean | false | 自动调整高度 |
-| status | error · warning | - | 校验状态 |
-
-### XCheckbox
-
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| checked | boolean | false | 是否选中 |
-| indeterminate | boolean | false | 半选状态 |
-| value | string · number | - | 选项的值 |
-| disabled | boolean | false | 是否禁用 |
-
-### XRadioGroup
-
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| options | { value, label, disabled }[] | - | 选项数据源 |
-| variant | radio · button | radio | 展示形式 |
-| buttonStyle | outline · solid | outline | 按钮样式 |
-
-### XSwitch
-
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| checked | boolean | false | 是否选中 |
-| disabled | boolean | false | 是否禁用 |
-| size | default · small | default | 控件尺寸 |
-
-**插槽**：checkedChildren 开启状态文字 · unCheckedChildren 关闭状态文字
+| 键 | 说明 |
+| --- | --- |
+| root | 根元素 |
+| base | 输入框 |
+| leading | 前置内容容器 |
+| leadingIcon | 前置默认图标 |
+| leadingAvatar | 前置头像 |
+| leadingAvatarSize | 前置头像尺寸 |
+| trailing | 后置内容容器 |
+| trailingIcon | 后置默认图标 |
 
 ## 动效
 
-- focus：ring 加粗过渡（transition-[box-shadow,color]）
+- focus：outline 加粗过渡（transition-colors）
 - 无位移动画

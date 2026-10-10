@@ -5,35 +5,49 @@ description: 以星标形式进行评分输入
 
 # InputRating 评分
 
-以星标形式进行评分输入，支持半星与自定义图标。
+以星标形式进行评分输入，支持半星、自定义图标、五档尺寸、七种语义色与横竖方向。
 
 <script setup>
-import SelectBasic from '@demos/react/select-basic'
-import selectBasicRaw from '@demos/react/select-basic.tsx.code.txt?raw'
-import InputRatingReadonly from '@demos/react/input-rating-readonly'
-import inputRatingReadonlyRaw from '@demos/react/input-rating-readonly.tsx.code.txt?raw'
+import InputRatingBasic from '@demos/react/input-rating-basic'
+import inputRatingBasicRaw from '@demos/react/input-rating-basic.tsx.code.txt?raw'
+import InputRatingColors from '@demos/react/input-rating-colors'
+import inputRatingColorsRaw from '@demos/react/input-rating-colors.tsx.code.txt?raw'
 import InputRatingSizes from '@demos/react/input-rating-sizes'
 import inputRatingSizesRaw from '@demos/react/input-rating-sizes.tsx.code.txt?raw'
+import InputRatingCustom from '@demos/react/input-rating-custom'
+import inputRatingCustomRaw from '@demos/react/input-rating-custom.tsx.code.txt?raw'
 </script>
 
-<DemoBlock title="基础用法" description="选择类组件全景（示例中含半星评分）" :code="selectBasicRaw">
-  <ReactDemo :component="SelectBasic" />
+## 基础用法
+
+`value` 绑定评分值，配合 `onChange` 受控使用，也可用 `defaultValue` 非受控。
+
+<DemoBlock title="基础用法" description="value + onChange 受控评分" :code="inputRatingBasicRaw">
+  <ReactDemo :component="InputRatingBasic" />
 </DemoBlock>
 
-## 只读展示
+## 语义色与方向
 
-`readonly` 仅作展示：禁止点击与键盘操作，保留 `aria-readonly`，且不应用禁用的变暗样式。
+`color` 提供七种语义色，`orientation` 支持横向与纵向排列。
 
-<DemoBlock title="只读评分" description="readonly + allowHalf" :code="inputRatingReadonlyRaw">
-  <ReactDemo :component="InputRatingReadonly" />
+<DemoBlock title="语义色与方向" description="color 控制填充星颜色，orientation 控制排列方向" :code="inputRatingColorsRaw">
+  <ReactDemo :component="InputRatingColors" />
 </DemoBlock>
 
-## 三档尺寸
+## 尺寸与状态
 
-`size` 控制星星大小，共 sm / md / lg 三档。
+`size` 控制星星大小，共 xs → xl 五档；`readonly` 仅作展示，`disabled` 禁用交互。
 
-<DemoBlock title="尺寸" description="size 三档对比" :code="inputRatingSizesRaw">
+<DemoBlock title="五档尺寸与状态" description="size 五档对比，readonly / disabled 状态" :code="inputRatingSizesRaw">
   <ReactDemo :component="InputRatingSizes" />
+</DemoBlock>
+
+## 图标、插槽与 ui
+
+`icon` / `emptyIcon` 接受 XIcon 名称或自定义组件；`item` 渲染回调自定义每一项；`ui` 按主题插槽覆盖类名。
+
+<DemoBlock title="自定义图标与 ui" description="icon / emptyIcon / item / ui 主题插槽" :code="inputRatingCustomRaw">
+  <ReactDemo :component="InputRatingCustom" />
 </DemoBlock>
 
 ## 安装
@@ -51,11 +65,28 @@ npx shadcn@latest add @ui-kit/x-input-rating
 | allowHalf | boolean | false | 允许半星 |
 | disabled | boolean | false | 是否禁用 |
 | readonly | boolean | false | 只读展示，禁止点击与键盘操作 |
-| size | sm · md · lg | md | 星星尺寸 |
-| item | (state) => ReactNode | - | 自定义图标渲染（{ filled, half }） |
+| size | xs · sm · md · lg · xl | md | 星星尺寸 |
+| color | primary · secondary · neutral · success · info · warning · error | primary | 组件颜色（填充星与聚焦描边） |
+| orientation | horizontal · vertical | horizontal | 排列方向 |
+| icon | XInputRatingIcon | - | 高亮星图标（XIcon 名称或组件），缺省使用空星图标 |
+| emptyIcon | XInputRatingIcon | - | 空星图标（XIcon 名称或组件），缺省使用 icon |
+| render | ReactElement | - | 渲染为指定元素 |
+| id | string | - | 根元素 id |
+| item | (state) => ReactNode | - | 自定义单项渲染（{ index, filled, half }） |
 | onChange | (value) => void | - | 评分变化回调 |
+| ui | XInputRatingUi | - | 主题插槽类名 |
+
+## ui 插槽
+
+| 名称 | 说明 |
+| --- | --- |
+| root | 评分根容器 |
+| item | 单个评分项（可交互区域） |
+| indicator | 高亮层容器（半星时裁剪） |
+| icon | 高亮星图标 |
+| emptyIcon | 空星图标 |
 
 ## 动效
 
-- 星标：hover 颜色过渡
+- 星标：hover 放大（scale 110%）与聚焦描边过渡
 - 无位移动画

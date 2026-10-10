@@ -5,25 +5,24 @@ import { XSeparator } from '@/components/kit'
 <template>
   <div class="flex w-full flex-col gap-6">
     <div class="flex flex-col gap-3">
-      <span class="text-sm text-muted-foreground">基础分割线</span>
+      <span class="text-sm text-muted-foreground">类型与粗细</span>
       <XSeparator />
-      <XSeparator type="dashed" color="#94a3b8" />
-      <XSeparator type="dotted" color="#94a3b8" />
+      <XSeparator type="dashed" size="md" />
+      <XSeparator type="dotted" size="xl" />
     </div>
 
     <div class="flex flex-col gap-3">
-      <span class="text-sm text-muted-foreground">带标签（position：start / center / end）</span>
-      <XSeparator label="居中对齐" />
-      <XSeparator label="左对齐" position="start" />
-      <XSeparator label="右对齐" position="end" />
-      <XSeparator><span class="text-primary-6">自定义插槽内容</span></XSeparator>
+      <span class="text-sm text-muted-foreground">语义色</span>
+      <XSeparator color="primary" />
+      <XSeparator color="success" size="sm" />
+      <XSeparator color="error" type="dashed" />
     </div>
 
     <div class="flex h-10 items-center gap-3 text-sm">
       <span>垂直分割</span>
       <XSeparator orientation="vertical" />
       <span>内容 A</span>
-      <XSeparator orientation="vertical" />
+      <XSeparator orientation="vertical" size="md" color="primary" />
       <span>内容 B</span>
     </div>
   </div>

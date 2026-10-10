@@ -1,14 +1,21 @@
 <script setup lang="ts">
 /**
  * XKbd 键盘按键：展示快捷键或按键组合。
- * 变体体系：solid | outline | soft | subtle × 七种语义色 × 五档尺寸。
+ * 变体体系：solid | outline | soft | subtle × 七种语义色 × 五档尺寸，
+ * as 渲染为指定元素或组件，ui.base 定制根元素类名。
  */
-import type { HTMLAttributes } from 'vue'
+import type { Component, HTMLAttributes } from 'vue'
+import { Primitive } from 'reka-ui'
 import { cn } from '@/lib/utils'
 
 type KbdSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 type KbdColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
 type KbdVariant = 'solid' | 'outline' | 'soft' | 'subtle'
+
+/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
+export interface KbdUi {
+  base?: string
+}
 
 const props = withDefaults(defineProps<{
   /** 按键内容 */
@@ -19,12 +26,19 @@ const props = withDefaults(defineProps<{
   color?: KbdColor
   /** 尺寸 */
   size?: KbdSize
+  /** 渲染为指定元素或组件 */
+  as?: string | Component
+  /** 主题插槽类名 */
+  ui?: KbdUi
   class?: HTMLAttributes['class']
 }>(), {
   variant: 'outline',
   color: 'neutral',
   size: 'md',
+  as: 'kbd',
 })
+
+defineOptions({ name: 'XKbd', inheritAttrs: false })
 
 const sizeClasses: Record<KbdSize, string> = {
   xs: 'h-4 min-w-4 px-1 text-[10px]',
@@ -76,14 +90,18 @@ const colorClasses: Record<KbdVariant, Record<KbdColor, string>> = {
 </script>
 
 <template>
-  <kbd
+  <Primitive
+    :as="as"
+    v-bind="$attrs"
+    data-slot="kbd"
     :class="cn(
       'inline-flex items-center justify-center rounded-sm font-sans font-medium uppercase shadow-xs',
       colorClasses[variant][color],
       sizeClasses[size],
+      ui?.base,
       props.class,
     )"
   >
     <slot>{{ value }}</slot>
-  </kbd>
+  </Primitive>
 </template>
