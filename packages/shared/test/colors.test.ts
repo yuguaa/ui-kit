@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { colorSeeds, generateAllPalettes, generatePalette, paletteRoles, palettesToCssVars } from "../src/colors";
+import { colorSeeds, generateAllPalettes, generatePalette, neutralPalette, paletteRoles, palettesToCssVars } from "../src/colors";
 
 describe("generatePalette", () => {
   it("primary 色阶与原型一致（#1677ff 为种子）", () => {
@@ -61,9 +61,9 @@ describe("generateAllPalettes / palettesToCssVars", () => {
     expect(Object.keys(vars)).toHaveLength(60);
   });
 
-  it("dark 主题下全部语义色生成反转色阶", () => {
+  it("dark 主题下彩色板生成反转色阶，中性板保持固定灰阶", () => {
     const palettes = generateAllPalettes(undefined, "dark");
     expect(palettes.primary[0]).toBe("#111a2c");
-    expect(palettes.neutral[0]).toBe("#111111");
+    expect(palettes.neutral).toEqual(neutralPalette);
   });
 });

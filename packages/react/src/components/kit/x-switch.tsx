@@ -30,7 +30,7 @@ export interface XSwitchUi {
 const baseColorClasses: Record<XSwitchColor, string> = {
   primary: "data-checked:bg-primary-6",
   secondary: "data-checked:bg-secondary",
-  neutral: "data-checked:bg-neutral-6",
+  neutral: "data-checked:bg-foreground",
   success: "data-checked:bg-success-6",
   info: "data-checked:bg-info-6",
   warning: "data-checked:bg-warning-6",
@@ -41,7 +41,7 @@ const baseColorClasses: Record<XSwitchColor, string> = {
 const iconColorClasses: Record<XSwitchColor, string> = {
   primary: "group-data-checked:text-primary-6",
   secondary: "group-data-checked:text-secondary",
-  neutral: "group-data-checked:text-neutral-6",
+  neutral: "group-data-checked:text-foreground",
   success: "group-data-checked:text-success-6",
   info: "group-data-checked:text-info-6",
   warning: "group-data-checked:text-warning-6",
@@ -52,7 +52,7 @@ const iconColorClasses: Record<XSwitchColor, string> = {
 const highlightClasses: Record<XSwitchColor, string> = {
   primary: "ring-primary-6",
   secondary: "ring-secondary",
-  neutral: "ring-neutral-6",
+  neutral: "ring-foreground",
   success: "ring-success-6",
   info: "ring-info-6",
   warning: "ring-warning-6",

@@ -115,10 +115,10 @@ const colorClasses: Record<AlertColor, Record<AlertVariant, string>> = {
     subtle: 'bg-muted text-secondary-foreground ring-1 ring-inset ring-border',
   },
   neutral: {
-    solid: 'bg-neutral-6 text-white',
-    outline: 'text-neutral-6 ring-1 ring-inset ring-neutral-5',
-    soft: 'bg-neutral-1 text-neutral-7',
-    subtle: 'bg-neutral-1 text-neutral-7 ring-1 ring-inset ring-neutral-2',
+    solid: 'bg-foreground text-background',
+    outline: 'text-foreground ring-1 ring-inset ring-border',
+    soft: 'bg-muted text-foreground',
+    subtle: 'bg-muted text-foreground ring-1 ring-inset ring-border',
   },
   success: {
     solid: 'bg-success-6 text-white',

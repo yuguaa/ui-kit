@@ -130,14 +130,14 @@ const tabsColorClasses: Record<XTabsColor, Record<XTabsVariant, { indicator: str
   },
   neutral: {
     pill: {
-      indicator: "bg-neutral-6",
-      trigger: "data-active:text-white outline-neutral-6/25 focus-visible:outline-3",
-      content: "outline-neutral-6/25",
+      indicator: "bg-foreground",
+      trigger: "data-active:text-background outline-foreground/25 focus-visible:outline-3",
+      content: "outline-foreground/25",
     },
     link: {
-      indicator: "bg-neutral-6",
-      trigger: "data-active:text-foreground outline-neutral-6/25 focus-visible:outline-3",
-      content: "outline-neutral-6/25",
+      indicator: "bg-foreground",
+      trigger: "data-active:text-foreground outline-foreground/25 focus-visible:outline-3",
+      content: "outline-foreground/25",
     },
   },
   success: {

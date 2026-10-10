@@ -942,7 +942,7 @@ const [DefineVerticalItems, ReuseVerticalItems] = createReusableTemplate<{
     :class="cn(
       'relative flex gap-1.5',
       isHorizontal ? 'items-center justify-between' : 'flex-col',
-      theme === 'dark' && 'bg-neutral-9 p-2 text-white',
+      theme === 'dark' && 'bg-foreground p-2 text-background',
       props.ui?.root,
       props.class,
     )"

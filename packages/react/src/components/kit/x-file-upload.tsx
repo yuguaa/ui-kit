@@ -155,7 +155,7 @@ function renderSlot<P>(slot: React.ReactNode | ((props: P) => React.ReactNode) |
 const colorClasses: Record<XFileUploadColor, string> = {
   primary: "outline-primary-6/25 focus-visible:outline-3 focus-visible:border-primary-6",
   secondary: "outline-secondary/25 focus-visible:outline-3 focus-visible:border-secondary",
-  neutral: "outline-neutral-6/25 focus-visible:outline-3 focus-visible:border-neutral-6",
+  neutral: "outline-foreground/25 focus-visible:outline-3 focus-visible:border-foreground",
   success: "outline-success-6/25 focus-visible:outline-3 focus-visible:border-success-6",
   info: "outline-info-6/25 focus-visible:outline-3 focus-visible:border-info-6",
   warning: "outline-warning-6/25 focus-visible:outline-3 focus-visible:border-warning-6",
@@ -165,7 +165,7 @@ const colorClasses: Record<XFileUploadColor, string> = {
 const highlightClasses: Record<XFileUploadColor, string> = {
   primary: "border-primary-6",
   secondary: "border-secondary",
-  neutral: "border-neutral-6",
+  neutral: "border-border",
   success: "border-success-6",
   info: "border-info-6",
   warning: "border-warning-6",

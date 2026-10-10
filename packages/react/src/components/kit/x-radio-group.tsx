@@ -115,7 +115,7 @@ export interface XRadioGroupProps {
 const indicatorColorClasses: Record<XRadioGroupColor, string> = {
   primary: "bg-primary-6",
   secondary: "bg-secondary",
-  neutral: "bg-neutral-6",
+  neutral: "bg-foreground",
   success: "bg-success-6",
   info: "bg-info-6",
   warning: "bg-warning-6",
@@ -126,7 +126,7 @@ const indicatorColorClasses: Record<XRadioGroupColor, string> = {
 const highlightClasses: Record<XRadioGroupColor, string> = {
   primary: "ring-primary-6",
   secondary: "ring-secondary",
-  neutral: "ring-neutral-6",
+  neutral: "ring-foreground",
   success: "ring-success-6",
   info: "ring-info-6",
   warning: "ring-warning-6",

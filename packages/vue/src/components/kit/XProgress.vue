@@ -96,7 +96,7 @@ const statusStyle = computed(() => ({ '--percent': `${Math.max(percent.value ?? 
 const colorClasses: Record<ProgressColor, { indicator: string; steps: string }> = {
   primary: { indicator: 'bg-primary-6', steps: 'text-primary-6' },
   secondary: { indicator: 'bg-secondary', steps: 'text-secondary-foreground' },
-  neutral: { indicator: 'bg-neutral-6', steps: 'text-neutral-6' },
+  neutral: { indicator: 'bg-foreground', steps: 'text-foreground' },
   success: { indicator: 'bg-success-6', steps: 'text-success-6' },
   info: { indicator: 'bg-info-6', steps: 'text-info-6' },
   warning: { indicator: 'bg-warning-6', steps: 'text-warning-7' },

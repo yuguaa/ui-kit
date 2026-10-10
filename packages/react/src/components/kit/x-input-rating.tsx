@@ -76,7 +76,7 @@ const ratingSizeClasses: Record<XInputRatingSize, string> = {
 const ratingIndicatorColorClasses: Record<XInputRatingColor, string> = {
   primary: "fill-primary-6 text-primary-6",
   secondary: "fill-secondary text-secondary",
-  neutral: "fill-neutral-6 text-neutral-6",
+  neutral: "fill-foreground text-foreground",
   success: "fill-success-6 text-success-6",
   info: "fill-info-6 text-info-6",
   warning: "fill-warning-6 text-warning-6",
@@ -87,7 +87,7 @@ const ratingIndicatorColorClasses: Record<XInputRatingColor, string> = {
 const ratingItemColorClasses: Record<XInputRatingColor, string> = {
   primary: "outline-primary-6/25 focus-visible:outline-3",
   secondary: "outline-secondary/25 focus-visible:outline-3",
-  neutral: "outline-neutral-6/25 focus-visible:outline-3",
+  neutral: "outline-foreground/25 focus-visible:outline-3",
   success: "outline-success-6/25 focus-visible:outline-3",
   info: "outline-info-6/25 focus-visible:outline-3",
   warning: "outline-warning-6/25 focus-visible:outline-3",

@@ -100,10 +100,10 @@ const tagsFocusStyles: Record<XInputTagsColor, Record<XInputTagsVariant, string>
     none: "",
   },
   neutral: {
-    outline: "outline-neutral-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-neutral-6",
-    soft: "outline-neutral-6/25 has-focus-visible:outline-3",
-    subtle: "outline-neutral-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-neutral-6",
-    ghost: "outline-neutral-6/25 has-focus-visible:outline-3",
+    outline: "outline-foreground/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-foreground",
+    soft: "outline-foreground/25 has-focus-visible:outline-3",
+    subtle: "outline-foreground/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-foreground",
+    ghost: "outline-foreground/25 has-focus-visible:outline-3",
     none: "",
   },
   success: {
@@ -140,7 +140,7 @@ const tagsFocusStyles: Record<XInputTagsColor, Record<XInputTagsVariant, string>
 const tagsHighlightClasses: Record<XInputTagsColor, string> = {
   primary: "ring-1 ring-inset ring-primary-6",
   secondary: "ring-1 ring-inset ring-secondary",
-  neutral: "ring-1 ring-inset ring-neutral-6",
+  neutral: "ring-1 ring-inset ring-border",
   success: "ring-1 ring-inset ring-success-6",
   info: "ring-1 ring-inset ring-info-6",
   warning: "ring-1 ring-inset ring-warning-6",

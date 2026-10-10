@@ -31,7 +31,7 @@ export interface SwitchUi {
 const baseColorClasses: Record<SwitchColor, string> = {
   primary: 'data-[state=checked]:bg-primary-6',
   secondary: 'data-[state=checked]:bg-secondary',
-  neutral: 'data-[state=checked]:bg-neutral-6',
+  neutral: 'data-[state=checked]:bg-foreground',
   success: 'data-[state=checked]:bg-success-6',
   info: 'data-[state=checked]:bg-info-6',
   warning: 'data-[state=checked]:bg-warning-6',
@@ -42,7 +42,7 @@ const baseColorClasses: Record<SwitchColor, string> = {
 const iconColorClasses: Record<SwitchColor, string> = {
   primary: 'group-data-[state=checked]:text-primary-6',
   secondary: 'group-data-[state=checked]:text-secondary',
-  neutral: 'group-data-[state=checked]:text-neutral-6',
+  neutral: 'group-data-[state=checked]:text-foreground',
   success: 'group-data-[state=checked]:text-success-6',
   info: 'group-data-[state=checked]:text-info-6',
   warning: 'group-data-[state=checked]:text-warning-6',
@@ -53,7 +53,7 @@ const iconColorClasses: Record<SwitchColor, string> = {
 const highlightClasses: Record<SwitchColor, string> = {
   primary: 'ring-primary-6',
   secondary: 'ring-secondary',
-  neutral: 'ring-neutral-6',
+  neutral: 'ring-foreground',
   success: 'ring-success-6',
   info: 'ring-info-6',
   warning: 'ring-warning-6',

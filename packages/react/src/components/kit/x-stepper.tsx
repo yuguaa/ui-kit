@@ -113,8 +113,8 @@ const stepperColorClasses: Record<XStepperColor, { trigger: string; separator: s
     separator: "group-data-[state=completed]:bg-secondary",
   },
   neutral: {
-    trigger: "group-data-[state=completed]:bg-neutral-6 group-data-[state=active]:bg-neutral-6 outline-neutral-6/25",
-    separator: "group-data-[state=completed]:bg-neutral-6",
+    trigger: "group-data-[state=completed]:bg-foreground group-data-[state=active]:bg-foreground outline-foreground/25",
+    separator: "group-data-[state=completed]:bg-foreground",
   },
   success: {
     trigger: "group-data-[state=completed]:bg-success-6 group-data-[state=active]:bg-success-6 outline-success-6/25",

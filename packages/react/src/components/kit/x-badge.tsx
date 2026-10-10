@@ -18,7 +18,7 @@ const badgeColorClasses: Record<XBadgeVariant, Record<XBadgeColor, string>> = {
   solid: {
     primary: "bg-primary-6 text-white",
     secondary: "bg-secondary text-secondary-foreground",
-    neutral: "bg-neutral-6 text-white",
+    neutral: "bg-foreground text-background",
     success: "bg-success-6 text-white",
     info: "bg-info-6 text-white",
     warning: "bg-warning-6 text-white",
@@ -27,7 +27,7 @@ const badgeColorClasses: Record<XBadgeVariant, Record<XBadgeColor, string>> = {
   outline: {
     primary: "text-primary-6 ring-1 ring-inset ring-primary-5",
     secondary: "text-foreground ring-1 ring-inset ring-border",
-    neutral: "text-neutral-6 ring-1 ring-inset ring-neutral-5",
+    neutral: "text-foreground ring-1 ring-inset ring-border",
     success: "text-success-6 ring-1 ring-inset ring-success-5",
     info: "text-info-6 ring-1 ring-inset ring-info-5",
     warning: "text-warning-7 ring-1 ring-inset ring-warning-5",
@@ -36,7 +36,7 @@ const badgeColorClasses: Record<XBadgeVariant, Record<XBadgeColor, string>> = {
   soft: {
     primary: "bg-primary-1 text-primary-7",
     secondary: "bg-muted text-secondary-foreground",
-    neutral: "bg-neutral-1 text-neutral-7",
+    neutral: "bg-muted text-foreground",
     success: "bg-success-1 text-success-7",
     info: "bg-info-1 text-info-7",
     warning: "bg-warning-1 text-warning-8",
@@ -45,7 +45,7 @@ const badgeColorClasses: Record<XBadgeVariant, Record<XBadgeColor, string>> = {
   subtle: {
     primary: "bg-primary-1 text-primary-7 ring-1 ring-inset ring-primary-2",
     secondary: "bg-muted text-secondary-foreground ring-1 ring-inset ring-border",
-    neutral: "bg-neutral-1 text-neutral-7 ring-1 ring-inset ring-neutral-2",
+    neutral: "bg-muted text-foreground ring-1 ring-inset ring-border",
     success: "bg-success-1 text-success-7 ring-1 ring-inset ring-success-2",
     info: "bg-info-1 text-info-7 ring-1 ring-inset ring-info-2",
     warning: "bg-warning-1 text-warning-8 ring-1 ring-inset ring-warning-2",

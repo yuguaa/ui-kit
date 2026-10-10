@@ -63,7 +63,7 @@ const props = withDefaults(defineProps<{
 const colorClasses: Record<BreadcrumbColor, string> = {
   primary: 'text-primary-6',
   secondary: 'text-secondary-foreground',
-  neutral: 'text-neutral-6',
+  neutral: 'text-foreground',
   success: 'text-success-6',
   info: 'text-info-6',
   warning: 'text-warning-7',

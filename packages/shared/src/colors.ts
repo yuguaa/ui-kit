@@ -34,12 +34,29 @@ export function generatePalette(seed: string, theme: PaletteTheme = 'default'): 
   return generate(seed, { theme });
 }
 
-/** 生成全部语义色的 10 级色阶，theme 决定色阶方向 */
+/** 中性色板：完整灰阶，1 最亮到 10 最暗，贴合 Nuxt UI 的 default / elevated / accented / inverted 角色 */
+export const neutralPalette = [
+  "#ffffff",
+  "#fafafa",
+  "#f5f5f5",
+  "#f0f0f0",
+  "#d9d9d9",
+  "#bfbfbf",
+  "#8c8c8c",
+  "#595959",
+  "#434343",
+  "#262626",
+] as const;
+
+/** 生成全部语义色的 10 级色阶，theme 决定色阶方向；neutral 为固定灰阶 */
 export function generateAllPalettes(primarySeed: string = colorSeeds.primary, theme: PaletteTheme = 'default'): Record<ColorName, string[]> {
   const seeds: Record<ColorName, string> = { ...colorSeeds, primary: primarySeed, info: primarySeed };
-  return Object.fromEntries(
-    Object.entries(seeds).map(([name, seed]) => [name, generatePalette(seed, theme)]),
-  ) as Record<ColorName, string[]>;
+  return {
+    ...(Object.fromEntries(
+      Object.entries(seeds).map(([name, seed]) => [name, generatePalette(seed, theme)]),
+    ) as Record<ColorName, string[]>),
+    neutral: [...neutralPalette],
+  };
 }
 
 /** 色阶转 CSS 变量：--primary-1 ... --primary-10 */

@@ -32,7 +32,7 @@ export interface XCheckboxUi {
 const indicatorColorClasses: Record<XCheckboxColor, string> = {
   primary: "bg-primary-6 text-white",
   secondary: "bg-secondary text-secondary-foreground",
-  neutral: "bg-neutral-6 text-white",
+  neutral: "bg-foreground text-background",
   success: "bg-success-6 text-white",
   info: "bg-info-6 text-white",
   warning: "bg-warning-6 text-white",
@@ -43,7 +43,7 @@ const indicatorColorClasses: Record<XCheckboxColor, string> = {
 const cardCheckedClasses: Record<XCheckboxColor, string> = {
   primary: "has-[[data-checked]]:border-primary-6/50 has-[[data-checked]]:bg-primary-1",
   secondary: "has-[[data-checked]]:border-secondary/50 has-[[data-checked]]:bg-secondary",
-  neutral: "has-[[data-checked]]:border-neutral-6/50 has-[[data-checked]]:bg-neutral-1",
+  neutral: "has-[[data-checked]]:border-foreground/50 has-[[data-checked]]:bg-muted",
   success: "has-[[data-checked]]:border-success-6/50 has-[[data-checked]]:bg-success-1",
   info: "has-[[data-checked]]:border-info-6/50 has-[[data-checked]]:bg-info-1",
   warning: "has-[[data-checked]]:border-warning-6/50 has-[[data-checked]]:bg-warning-1",
@@ -54,7 +54,7 @@ const cardCheckedClasses: Record<XCheckboxColor, string> = {
 const highlightClasses: Record<XCheckboxColor, string> = {
   primary: "ring-primary-6",
   secondary: "ring-secondary",
-  neutral: "ring-neutral-6",
+  neutral: "ring-foreground",
   success: "ring-success-6",
   info: "ring-info-6",
   warning: "ring-warning-6",

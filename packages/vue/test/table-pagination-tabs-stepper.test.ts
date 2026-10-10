@@ -138,7 +138,7 @@ describe("XPagination 新能力", () => {
     const active = wrapper.findAll("button").find((button) => button.text() === "2");
     expect(active?.classes()).toContain("bg-primary-6");
     const inactive = wrapper.findAll("button").find((button) => button.text() === "3");
-    expect(inactive?.classes()).toContain("text-neutral-6");
+    expect(inactive?.classes()).toContain("text-foreground");
   });
 
   it("showControls=false 隐藏首页与末页按钮", () => {

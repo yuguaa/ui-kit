@@ -91,7 +91,7 @@ const sizeClasses: Record<TextareaSize, string> = {
 const focusClasses: Record<TextareaColor, string> = {
   primary: 'outline-primary-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-primary-6',
   secondary: 'outline-secondary/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-secondary',
-  neutral: 'outline-neutral-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-neutral-6',
+  neutral: 'outline-foreground/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-foreground',
   success: 'outline-success-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-success-6',
   info: 'outline-info-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-info-6',
   warning: 'outline-warning-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-warning-6',
@@ -102,7 +102,7 @@ const focusClasses: Record<TextareaColor, string> = {
 const highlightClasses: Record<TextareaColor, string> = {
   primary: 'ring-1 ring-inset ring-primary-6',
   secondary: 'ring-1 ring-inset ring-secondary',
-  neutral: 'ring-1 ring-inset ring-neutral-6',
+  neutral: 'ring-1 ring-inset ring-border',
   success: 'ring-1 ring-inset ring-success-6',
   info: 'ring-1 ring-inset ring-info-6',
   warning: 'ring-1 ring-inset ring-warning-6',

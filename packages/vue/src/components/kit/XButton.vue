@@ -63,12 +63,12 @@ const buttonColorStyles: Record<ButtonColor, Record<ButtonVariant, string>> = {
     link: 'text-secondary-foreground underline-offset-4 hover:underline',
   },
   neutral: {
-    solid: 'bg-neutral-6 text-white hover:bg-neutral-5 active:bg-neutral-7',
-    outline: 'border-0 ring-1 ring-inset ring-neutral-5 text-neutral-6 hover:bg-neutral-1 active:bg-neutral-2',
-    soft: 'bg-neutral-1 text-neutral-7 hover:bg-neutral-2 active:bg-neutral-3',
-    ghost: 'text-neutral-6 hover:bg-neutral-1 active:bg-neutral-2',
-    subtle: 'text-neutral-6 ring-1 ring-inset ring-neutral-2 bg-neutral-1 hover:bg-neutral-2',
-    link: 'text-neutral-6 underline-offset-4 hover:underline',
+    solid: 'bg-foreground text-background hover:bg-foreground/75 active:bg-foreground/75',
+    outline: 'border-0 ring-1 ring-inset ring-border text-foreground hover:bg-muted active:bg-border',
+    soft: 'bg-muted text-foreground hover:bg-border active:bg-border',
+    ghost: 'text-foreground hover:bg-muted active:bg-border',
+    subtle: 'text-foreground ring-1 ring-inset ring-border bg-muted hover:bg-border',
+    link: 'text-foreground underline-offset-4 hover:underline',
   },
   success: {
     solid: 'bg-success-6 text-white hover:bg-success-5 active:bg-success-7',

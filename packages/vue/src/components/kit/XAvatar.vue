@@ -106,7 +106,7 @@ const sizeClasses: Record<AvatarSize, string> = {
 const colorClasses: Record<AvatarColor, string> = {
   primary: 'bg-primary-1 text-primary-7',
   secondary: 'bg-muted text-secondary-foreground',
-  neutral: 'bg-neutral-1 text-neutral-7',
+  neutral: 'bg-muted text-foreground',
   success: 'bg-success-1 text-success-7',
   info: 'bg-info-1 text-info-7',
   warning: 'bg-warning-1 text-warning-8',
@@ -139,7 +139,7 @@ const hasChipText = computed(() => chipConfig.value?.text != null)
 const chipDotClasses: Record<ChipColor, string> = {
   primary: 'bg-primary-6',
   secondary: 'bg-secondary',
-  neutral: 'bg-neutral-6',
+  neutral: 'bg-foreground',
   success: 'bg-success-6',
   info: 'bg-info-6',
   warning: 'bg-warning-6',
