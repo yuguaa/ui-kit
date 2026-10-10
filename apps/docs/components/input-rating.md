@@ -58,21 +58,7 @@ npx shadcn-vue@latest add @ui-kit/x-input-rating
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| modelValue | number | 0 | 评分值（支持 v-model） |
-| max | number | 5 | 最大分值 |
-| allowHalf | boolean | false | 允许半星 |
-| disabled | boolean | false | 是否禁用 |
-| readonly | boolean | false | 只读展示，禁止点击与键盘操作 |
-| size | xs · sm · md · lg · xl | md | 星星尺寸 |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 组件颜色（填充星与聚焦描边） |
-| orientation | horizontal · vertical | horizontal | 排列方向 |
-| icon | InputRatingIcon | - | 高亮星图标（XIcon 名称或组件），缺省使用空星图标 |
-| emptyIcon | InputRatingIcon | - | 空星图标（XIcon 名称或组件），缺省使用 icon |
-| as | string · Component | span | 渲染为指定元素或组件 |
-| id | string | - | 根元素 id |
-| ui | InputRatingUi | - | 主题插槽类名 |
+<!--@include: ./api/input-rating.md-->
 
 ## ui 插槽
 

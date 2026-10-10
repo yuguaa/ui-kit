@@ -58,23 +58,7 @@ npx shadcn-vue@latest add @ui-kit/x-input-tags
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| modelValue | string[] | [] | 标签数组（支持 v-model） |
-| max | number | - | 最大标签数 |
-| placeholder | string | 输入后回车添加… | 占位文字 |
-| disabled | boolean | false | 是否禁用 |
-| maxLength | number | - | 单个标签最大长度 |
-| deleteIcon | InputTagsIcon | x | 删除标签图标（XIcon 名称或组件） |
-| size | xs · sm · md · lg · xl | md | 控件尺寸 |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 组件颜色（聚焦描边与高亮） |
-| variant | outline · soft · subtle · ghost · none | outline | 预设样式 |
-| highlight | boolean | false | 高亮：始终显示颜色描边，类似聚焦态 |
-| fixed | boolean | true | 保持移动端字号在所有断点一致 |
-| as | string · Component | span | 渲染为指定元素或组件 |
-| autofocus | boolean | false | 挂载后自动聚焦 |
-| autofocusDelay | number | 0 | 自动聚焦延迟（毫秒） |
-| ui | InputTagsUi | - | 主题插槽类名 |
+<!--@include: ./api/input-tags.md-->
 
 ## ui 插槽
 

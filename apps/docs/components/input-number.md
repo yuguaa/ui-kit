@@ -56,21 +56,7 @@ npx shadcn-vue@latest add @ui-kit/x-input-number
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| modelValue | number | 0 | 绑定值（支持 v-model） |
-| min / max | number | - | 最小值 / 最大值 |
-| step | number | 1 | 步长 |
-| disabled | boolean | false | 是否禁用 |
-| orientation | horizontal · vertical | horizontal | 步进按钮方向：horizontal 两侧 / vertical 右侧堆叠 |
-| size | xs · sm · md · lg · xl | md | 控件尺寸 |
-| placeholder | string | - | 占位提示文字 |
-| increment | boolean | true | 是否显示加号按钮 |
-| decrement | boolean | true | 是否显示减号按钮 |
-| incrementDisabled | boolean | false | 禁用加号按钮 |
-| decrementDisabled | boolean | false | 禁用减号按钮 |
-| as | string · Component | span | 渲染为指定元素或组件 |
-| ui | InputNumberUi | - | 主题插槽类名 |
+<!--@include: ./api/input-number.md-->
 
 ## 插槽
 
