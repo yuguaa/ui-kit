@@ -1,7 +1,13 @@
 import * as React from "react"
+import { useRender } from "@base-ui/react/use-render"
 import { cn } from "@/lib/utils"
 
 export type XContainerSize = "xs" | "sm" | "md" | "lg" | "xl"
+
+/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
+export interface XContainerUi {
+  base?: string
+}
 
 /** 最大宽度：640 / 768 / 1024 / 1280 / 1536 */
 const containerSizeClasses: Record<XContainerSize, string> = {
@@ -12,14 +18,36 @@ const containerSizeClasses: Record<XContainerSize, string> = {
   xl: "max-w-384",
 }
 
-export interface XContainerProps extends React.ComponentProps<"div"> {
+export interface XContainerProps
+  extends Omit<React.ComponentProps<"div">, "children"> {
   /** 最大宽度 */
   size?: XContainerSize
-  /** 渲染标签 */
-  as?: keyof React.JSX.IntrinsicElements
+  /** 渲染为指定元素 */
+  render?: React.ReactElement
+  /** 主题插槽类名 */
+  ui?: XContainerUi
+  children?: React.ReactNode
 }
 
-export function XContainer({ size = "lg", as: Tag = "div", className, ...props }: XContainerProps) {
-  const Comp = Tag as React.ElementType
-  return <Comp className={cn("mx-auto w-full px-4", containerSizeClasses[size], className)} {...props} />
-}
+export const XContainer = React.forwardRef<HTMLDivElement, XContainerProps>(
+  function XContainer(
+    { size = "lg", render, ui, className, children, ...rest },
+    ref,
+  ) {
+    return useRender({
+      render,
+      ref,
+      props: {
+        "data-slot": "container",
+        className: cn(
+          "mx-auto w-full px-4",
+          containerSizeClasses[size],
+          ui?.base,
+          className,
+        ),
+        children,
+        ...rest,
+      },
+    })
+  },
+)

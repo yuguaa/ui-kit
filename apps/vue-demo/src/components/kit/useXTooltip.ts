@@ -1,6 +1,6 @@
 /**
  * useXTooltip：创建与 api 绑定的提示气泡。
- * 用法：const [Tooltip, tooltipApi] = useXTooltip({ title: '...' })
+ * 用法：const [Tooltip, tooltipApi] = useXTooltip({ text: '...' })
  */
 import { defineComponent, h, reactive } from 'vue'
 import XTooltip from './XTooltip.vue'
@@ -13,14 +13,13 @@ export interface XTooltipApi {
   /** 切换显示状态 */
   toggle: () => void
   /** 更新提示内容 */
-  setState: (patch: { title?: string; placement?: 'top' | 'bottom' | 'left' | 'right' }) => void
+  setState: (patch: { text?: string }) => void
 }
 
-export function useXTooltip(options: { title?: string; placement?: 'top' | 'bottom' | 'left' | 'right'; defaultOpen?: boolean } = {}) {
+export function useXTooltip(options: { text?: string; defaultOpen?: boolean } = {}) {
   const state = reactive({
     open: options.defaultOpen ?? false,
-    title: options.title,
-    placement: options.placement ?? 'top',
+    text: options.text,
   })
 
   const Tooltip = defineComponent({
@@ -32,8 +31,7 @@ export function useXTooltip(options: { title?: string; placement?: 'top' | 'bott
           {
             ...attrs,
             open: state.open,
-            title: state.title,
-            placement: state.placement,
+            text: state.text,
             'onUpdate:open': (open: boolean) => {
               state.open = open
             },

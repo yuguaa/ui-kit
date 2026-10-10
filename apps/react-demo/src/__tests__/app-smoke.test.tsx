@@ -10,6 +10,6 @@ describe("App smoke", () => {
     expect(screen.getByText("表单 Forms")).toBeInTheDocument();
     expect(screen.getByText("主要按钮")).toBeInTheDocument();
     expect(screen.getByText("99+")).toBeInTheDocument();
-    expect(screen.getByText("拖拽文件到此处，或点击上传")).toBeInTheDocument();
+    expect(screen.getByText("选择一个文件或拖拽到这里")).toBeInTheDocument();
   });
 });

@@ -172,8 +172,8 @@ export default function App() {
         </div>
         <div className="flex flex-wrap items-center gap-6">
           <XSelectMenu
-            showSearch
-            options={[{ label: '苹果', value: 'apple' }, { label: '香蕉', value: 'banana' }, { label: '橙子', value: 'orange' }]}
+            searchInput
+            items={[{ label: '苹果', value: 'apple' }, { label: '香蕉', value: 'banana' }, { label: '橙子', value: 'orange' }]}
             className="w-48"
           />
           <XInputMenu items={[{ label: '上海', value: 'sh' }, { label: '北京', value: 'bj' }]} className="w-48" />
@@ -195,7 +195,7 @@ export default function App() {
           <XSwitch checked checkedChildren="开" unCheckedChildren="关" label="开启通知" />
           <XPinInput defaultValue="1234" length={6} />
         </div>
-        <XFileUpload className="w-full" />
+        <XFileUpload label="选择一个文件或拖拽到这里" className="w-full" />
       </Section>
 
       <Section title="导航 Navigation">
@@ -204,7 +204,7 @@ export default function App() {
           <XLink to="/docs">文档</XLink>
           <XLink to="/examples">示例</XLink>
           <XLink to="/disabled" disabled>禁用</XLink>
-          <XTooltip title="这是一段提示文字">
+          <XTooltip text="这是一段提示文字">
             <XButton variant="outline" color="neutral">悬浮查看提示</XButton>
           </XTooltip>
           <XDropdownMenu
@@ -213,9 +213,9 @@ export default function App() {
         </div>
         <XTabs
           items={[
-            { key: 'doc', label: '文档', content: '当前选中：文档。这里是标签页对应的内容区域。' },
-            { key: 'example', label: '示例', content: '这里是示例面板的内容。' },
-            { key: 'api', label: 'API', content: '这里是 API 面板的内容。' },
+            { value: 'doc', label: '文档', content: '当前选中：文档。这里是标签页对应的内容区域。' },
+            { value: 'example', label: '示例', content: '这里是示例面板的内容。' },
+            { value: 'api', label: 'API', content: '这里是 API 面板的内容。' },
           ]}
         />
         <XNavigationMenu
@@ -228,8 +228,8 @@ export default function App() {
           ]}
         />
         <div className="flex flex-wrap items-center gap-6">
-          <XStepper current={1} items={[{ title: '完成' }, { title: '进行中' }, { title: '待处理' }]} />
-          <XPagination current={1} total={100} pageSize={10} showSizeChanger />
+          <XStepper defaultValue={1} items={[{ title: '完成' }, { title: '进行中' }, { title: '待处理' }]} />
+          <XPagination page={1} total={100} itemsPerPage={10} />
         </div>
         <XCommandPalette
           groups={[
@@ -258,7 +258,7 @@ export default function App() {
               <XLink to="/contact">联系</XLink>
             </div>
           </XSlideover>
-          <XPopover trigger="click" title="气泡标题" content="这是一段气泡说明文字。">
+          <XPopover mode="click" content="这是一段气泡说明文字。">
             <XButton variant="outline" color="neutral">打开气泡</XButton>
           </XPopover>
           <XContextMenu
@@ -286,10 +286,9 @@ export default function App() {
           <XAlert type="error" message="错误提示" description="操作失败，请稍后重试。" showIcon />
         </div>
         <div className="flex flex-wrap items-center gap-6">
-          <XProgress percent={30} className="w-64" />
-          <XProgress percent={70} status="success" className="w-64" />
-          <XProgress percent={45} status="exception" className="w-64" />
-          <XProgress percent={75} type="circle" />
+          <XProgress value={30} status className="w-64" />
+          <XProgress value={70} inverted className="w-64" />
+          <XProgress value={3} max={8} status className="w-64" />
         </div>
         <XAccordion
           items={[
@@ -300,8 +299,9 @@ export default function App() {
         <XCollapsible trigger="展开详情">这里是折叠的内容区域，展开后显示。</XCollapsible>
         <div className="grid grid-cols-2 gap-4">
           <XListbox
-            items={[{ key: 'a', label: '选项 A' }, { key: 'b', label: '选项 B' }, { key: 'c', label: '选项 C' }]}
-            selected={['a']}
+            items={[{ value: 'a', label: '选项 A' }, { value: 'b', label: '选项 B' }, { value: 'c', label: '选项 C' }]}
+            valueKey="value"
+            defaultValue="a"
           />
           <XScrollArea height={120}>
             {Array.from({ length: 6 }, (_, i) => (
@@ -324,17 +324,16 @@ export default function App() {
         />
         <XTable
           columns={[
-            { key: 'name', title: '名称' },
-            { key: 'age', title: '年龄' },
-            { key: 'address', title: '地址' },
-            { key: 'status', title: '状态' },
+            { accessorKey: 'name', header: '名称' },
+            { accessorKey: 'age', header: '年龄' },
+            { accessorKey: 'address', header: '地址' },
+            { accessorKey: 'status', header: '状态' },
           ]}
-          dataSource={[
-            { key: '1', name: '张三', age: 28, address: '北京市朝阳区望京街道', status: '已完成' },
-            { key: '2', name: '李四', age: 32, address: '上海市浦东新区张江镇', status: '进行中' },
-            { key: '3', name: '王五', age: 24, address: '广州市天河区珠江新城', status: '已失败' },
+          data={[
+            { name: '张三', age: 28, address: '北京市朝阳区望京街道', status: '已完成' },
+            { name: '李四', age: 32, address: '上海市浦东新区张江镇', status: '进行中' },
+            { name: '王五', age: 24, address: '广州市天河区珠江新城', status: '已失败' },
           ]}
-          pagination={{ pageSize: 10 }}
         />
       </Section>
       <XToaster />

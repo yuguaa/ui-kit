@@ -1,8 +1,56 @@
 import * as React from "react"
-import { Textarea } from "@/components/ui/textarea"
+import { useRender } from "@base-ui/react/use-render"
 import { cn } from "@/lib/utils"
 
-const statusClasses = {
+export type XTextareaSize = "xs" | "sm" | "md" | "lg" | "xl"
+export type XTextareaColor = "primary" | "secondary" | "neutral" | "success" | "info" | "warning" | "error"
+export type XTextareaStatus = "error" | "warning"
+
+/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
+export interface XTextareaUi {
+  base?: string
+}
+
+/** 尺寸 → 内边距与字号 */
+const textareaSizeClasses: Record<XTextareaSize, string> = {
+  xs: "px-2 py-1 text-sm",
+  sm: "px-2.5 py-1.5 text-sm",
+  md: "px-2.5 py-2 text-sm",
+  lg: "px-3 py-2 text-sm",
+  xl: "px-3 py-2.5 text-base",
+}
+
+/** 聚焦描边色 */
+const focusClasses: Record<XTextareaColor, string> = {
+  primary: "outline-primary-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-primary-6",
+  secondary: "outline-secondary/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-secondary",
+  neutral: "outline-neutral-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-neutral-6",
+  success: "outline-success-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-success-6",
+  info: "outline-info-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-info-6",
+  warning: "outline-warning-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-warning-6",
+  error: "outline-error-6/25 focus-visible:outline-3 focus-visible:ring-1 focus-visible:ring-error-6",
+}
+
+/** 高亮描边色 */
+const highlightClasses: Record<XTextareaColor, string> = {
+  primary: "ring-1 ring-inset ring-primary-6",
+  secondary: "ring-1 ring-inset ring-secondary",
+  neutral: "ring-1 ring-inset ring-neutral-6",
+  success: "ring-1 ring-inset ring-success-6",
+  info: "ring-1 ring-inset ring-info-6",
+  warning: "ring-1 ring-inset ring-warning-6",
+  error: "ring-1 ring-inset ring-error-6",
+}
+
+/** fixed=false 时桌面端缩小一档字号 */
+const fixedTextClasses: Partial<Record<XTextareaSize, string>> = {
+  xs: "md:text-xs",
+  sm: "md:text-xs",
+  md: "md:text-sm",
+  lg: "md:text-sm",
+}
+
+const statusClasses: Record<XTextareaStatus, string> = {
   error: "border-error-6 focus-visible:border-error-6 focus-visible:ring-error-6/20",
   warning: "border-warning-6 focus-visible:border-warning-6 focus-visible:ring-warning-6/20",
 }
@@ -13,76 +61,166 @@ function stringifyValue(value: string | number | readonly string[] | null | unde
   return Array.isArray(value) ? value.join("") : String(value)
 }
 
-export interface XTextareaProps extends React.ComponentProps<typeof Textarea> {
+export interface XTextareaProps
+  extends Omit<React.ComponentProps<"textarea">, "size" | "color"> {
+  /** 控件尺寸 */
+  size?: XTextareaSize
+  /** 组件颜色（聚焦描边与高亮） */
+  color?: XTextareaColor
+  /** 高亮：始终显示颜色描边，类似聚焦态 */
+  highlight?: boolean
+  /** 保持移动端字号在所有断点一致 */
+  fixed?: boolean
   /** 行数 */
   rows?: number
   /** 自动调整高度 */
-  autosize?: boolean
+  autoresize?: boolean
+  /** 自动调整高度的延迟（毫秒） */
+  autoresizeDelay?: number
   /** 自动调整高度的行数上限，超出后内容在控件内部滚动 */
+  maxrows?: number
+  /** 自动调整高度（等价 autoresize） */
+  autosize?: boolean
+  /** 自动调整高度的行数上限（等价 maxrows） */
   maxRows?: number
   /** 校验状态 */
-  status?: "error" | "warning"
+  status?: XTextareaStatus
   /** 右下角显示字数统计，设置 maxLength 时显示「当前长度 / 最大长度」 */
   showCount?: boolean
+  /** 渲染为指定元素 */
+  render?: React.ReactElement
+  /** 主题插槽类名 */
+  ui?: XTextareaUi
 }
 
 export const XTextarea = React.forwardRef<HTMLTextAreaElement, XTextareaProps>(function XTextarea(
-  { rows = 3, autosize = false, maxRows, status, showCount = false, className, style, onChange, ...rest },
+  {
+    size = "md",
+    color = "primary",
+    highlight = false,
+    fixed = true,
+    rows = 3,
+    autoresize = false,
+    autoresizeDelay = 0,
+    autosize = false,
+    maxrows = 0,
+    maxRows,
+    status,
+    showCount = false,
+    render,
+    ui,
+    className,
+    value,
+    defaultValue,
+    onChange,
+    ...rest
+  },
   ref,
 ) {
-  /* 非受控时用内部状态追踪当前值，受控时直接读 value */
-  const [innerValue, setInnerValue] = React.useState(() =>
-    stringifyValue(rest.value ?? rest.defaultValue),
-  )
-  /* maxRows 换算为 lh 单位的最大高度，随控件自身行高生效 */
-  const maxHeightStyle = autosize && maxRows != null ? `${maxRows}lh` : undefined
+  const textareaRef = React.useRef<HTMLTextAreaElement>(null)
 
-  const count = stringifyValue(rest.value !== undefined ? rest.value : innerValue).length
+  /* style 单独取出，与 maxHeight 上限样式合并后写回控件 */
+  const { style, ...inputRest } = rest
+
+  const resizeEnabled = autoresize || autosize
+  /* autoresize 走 Nuxt JS 行数计算，旧 autosize 保持 CSS field-sizing 方案 */
+  const jsResize = autoresize
+  const cssAutosize = !autoresize && autosize
+  const maxRowsValue = maxrows > 0 ? maxrows : (maxRows ?? 0)
+
+  /* 旧 autosize 方案：maxRows 换算为 lh 单位的最大高度，随控件自身行高生效 */
+  const maxHeightStyle = cssAutosize && maxRowsValue > 0 ? `${maxRowsValue}lh` : undefined
+
+  /* 非受控时用内部状态追踪当前值，受控时直接读 value */
+  const [innerValue, setInnerValue] = React.useState(() => stringifyValue(defaultValue))
+  const currentValue = stringifyValue(value !== undefined ? value : innerValue)
+
+  /** Nuxt 模式的自动高度：按内容换算行数，超出 maxrows 后内部滚动 */
+  function resize() {
+    const el = textareaRef.current
+    if (!jsResize || el == null) return
+    el.rows = rows
+    const overflow = el.style.overflow
+    el.style.overflow = "hidden"
+
+    const styles = window.getComputedStyle(el)
+    const padding = Number.parseInt(styles.paddingTop) + Number.parseInt(styles.paddingBottom)
+    const lineHeight = Number.parseInt(styles.lineHeight)
+    const newRows = (el.scrollHeight - padding) / lineHeight
+
+    if (newRows > rows) {
+      el.rows = maxRowsValue > 0 ? Math.min(newRows, maxRowsValue) : newRows
+    }
+    el.style.overflow = overflow
+  }
+
+  /* 值变化后按内容调整高度 */
+  React.useLayoutEffect(() => {
+    resize()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [value, defaultValue, resizeEnabled, rows, maxRowsValue])
+
+  /* 挂载后按 autoresizeDelay 延迟调整一次 */
+  React.useEffect(() => {
+    if (!resizeEnabled) return
+    const id = window.setTimeout(resize, autoresizeDelay)
+    return () => window.clearTimeout(id)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   function handleChange(event: React.ChangeEvent<HTMLTextAreaElement>) {
-    if (showCount) setInnerValue(event.target.value)
+    if (value === undefined) setInnerValue(event.target.value)
     onChange?.(event)
   }
 
-  /* 未开启统计时控件自身作为根节点，结构不变 */
-  if (!showCount) {
-    return (
-      <Textarea
-        ref={ref}
-        rows={rows}
-        className={cn(
-          status && statusClasses[status],
-          autosize && "field-sizing-content resize-none",
-          maxHeightStyle != null && "overflow-auto",
-          className,
-        )}
-        style={maxHeightStyle != null ? { ...style, maxHeight: maxHeightStyle } : style}
-        {...rest}
-        onChange={onChange}
-      />
-    )
+  /* 合并转发 ref 与内部 ref：自动高度需要访问真实控件 */
+  const mergedRef = (node: HTMLTextAreaElement | null) => {
+    textareaRef.current = node
+    if (typeof ref === "function") ref(node)
+    else if (ref != null) ref.current = node
   }
 
-  /* 统计开启时外层包一层容器，宽度样式同步到容器保证统计对齐控件右下角 */
-  return (
-    <div className={cn("relative w-full", className)} style={style}>
-      <Textarea
-        ref={ref}
-        rows={rows}
-        className={cn(
-          status && statusClasses[status],
-          autosize && "field-sizing-content resize-none",
-          maxHeightStyle != null && "overflow-auto",
-          "pb-6",
-          className,
-        )}
-        style={maxHeightStyle != null ? { maxHeight: maxHeightStyle } : undefined}
-        {...rest}
-        onChange={handleChange}
-      />
-      <span className="pointer-events-none absolute right-3 bottom-2 text-xs tabular-nums text-muted-foreground">
-        {rest.maxLength != null ? `${count} / ${rest.maxLength}` : count}
-      </span>
-    </div>
-  )
+  const root = useRender<Record<string, unknown>, HTMLDivElement>({
+    render,
+    defaultTagName: "div",
+    props: {
+      "data-slot": "root",
+      className: cn("relative inline-flex items-center", className),
+      children: (
+        <>
+          <textarea
+            ref={mergedRef}
+            data-slot="base"
+            value={value}
+            defaultValue={defaultValue}
+            onChange={handleChange}
+            rows={rows}
+            style={maxHeightStyle != null ? { ...style, maxHeight: maxHeightStyle } : style}
+            className={cn(
+              "w-full rounded-md border-0 appearance-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-75 transition-colors",
+              "bg-background ring-1 ring-inset ring-border",
+              textareaSizeClasses[size],
+              focusClasses[color],
+              highlight && highlightClasses[color],
+              fixed === false && fixedTextClasses[size],
+              resizeEnabled && "resize-none",
+              cssAutosize && "field-sizing-content",
+              maxHeightStyle != null && "overflow-auto",
+              status && statusClasses[status],
+              showCount && "pb-6",
+              ui?.base,
+            )}
+            {...inputRest}
+          />
+          {showCount && (
+            <span className="pointer-events-none absolute right-3 bottom-2 text-xs tabular-nums text-muted-foreground">
+              {inputRest.maxLength != null ? `${currentValue.length} / ${inputRest.maxLength}` : currentValue.length}
+            </span>
+          )}
+        </>
+      ),
+    },
+  })
+
+  return root
 })

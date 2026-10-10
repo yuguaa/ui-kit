@@ -1,168 +1,167 @@
 <script setup lang="ts">
 /**
  * XSplitter 分割面板：可拖拽调整大小的分栏面板。
+ * 基于 reka-ui Splitter 原语，结构对齐 Nuxt UI：root → panel + handle 交替。
+ * 支持 items 数组形态（任意数量面板）与 first / second 双面板便捷形态。
  */
-import type { HTMLAttributes } from 'vue'
-import { computed, ref, useTemplateRef } from 'vue'
-import { PanelLeftClose, PanelLeftOpen, PanelRightClose, PanelRightOpen } from '@lucide/vue'
+import type { Component, HTMLAttributes } from 'vue'
+import { computed } from 'vue'
+import { SplitterGroup, SplitterPanel, SplitterResizeHandle } from 'reka-ui'
 import { cn } from '@/lib/utils'
+
+/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
+export interface SplitterUi {
+  root?: string
+  panel?: string
+  handle?: string
+}
+
+/** 分割面板项 */
+export interface SplitterPanelItem {
+  /** 面板 id，默认自动生成 */
+  id?: string
+  /** 初始尺寸（百分比） */
+  defaultSize?: number
+  /** 最小尺寸（百分比），默认 10 */
+  minSize?: number
+  /** 最大尺寸（百分比），默认 100 */
+  maxSize?: number
+  /** 拖拽越过最小尺寸一半时折叠 */
+  collapsible?: boolean
+  /** 折叠后的尺寸 */
+  collapsedSize?: number
+  /** 尺寸单位 */
+  sizeUnit?: '%' | 'px'
+  /** 内容插槽名，默认 panel-{index} */
+  slot?: string
+  class?: HTMLAttributes['class']
+  ui?: { panel?: string }
+  [key: string]: any
+}
+
+defineOptions({ name: 'XSplitter', inheritAttrs: false })
 
 const props = withDefaults(defineProps<{
   /** 方向 */
   orientation?: 'horizontal' | 'vertical'
-  /** 最小尺寸（百分比） */
+  /** 面板数组；未提供时使用 first / second 双面板形态 */
+  items?: SplitterPanelItem[]
+  /** 锁定全部拖拽 */
+  disabled?: boolean
+  /** 分组 id，同时用于派生面板与拖拽条 id */
+  id?: string
+  /** 渲染为指定元素或组件 */
+  as?: string | Component
+  /** 主题插槽类名 */
+  ui?: SplitterUi
+  /** 双面板形态：最小尺寸（百分比） */
   minSize?: number
-  /** 默认尺寸（百分比） */
+  /** 双面板形态：默认尺寸（百分比） */
   defaultSize?: number
-  /** 受控尺寸（百分比） */
+  /** 双面板形态：受控尺寸（百分比） */
   size?: number
-  /** 拖拽越过边界时折叠被压缩一侧的面板 */
+  /** 双面板形态：拖拽越过边界时折叠对应面板 */
   collapsible?: boolean
   class?: HTMLAttributes['class']
 }>(), {
   orientation: 'horizontal',
+  disabled: false,
   minSize: 20,
   defaultSize: 50,
   collapsible: false,
 })
 
 const emit = defineEmits<{
-  /** 调整尺寸回调（折叠时触发 0 / 100，展开时恢复原尺寸） */
-  resize: [size: number]
+  /** 布局变化 */
+  layout: [sizes: number[]]
+  /** 面板折叠 */
+  collapse: [index: number]
+  /** 面板展开 */
+  expand: [index: number]
+  /** 面板尺寸变化 */
+  resize: [index: number, size: number, prevSize?: number]
+  /** 拖拽状态变化 */
+  dragging: [index: number, dragging: boolean]
 }>()
 
-const size = ref(props.defaultSize)
-const collapsed = ref<'first' | 'second' | null>(null)
-const prevSize = ref(props.defaultSize)
-const dragging = ref(false)
-const containerRef = useTemplateRef<HTMLDivElement>('containerRef')
-const currentSize = computed(() => props.size ?? size.value)
+/** 双面板便捷形态：first / second 插槽映射为两个面板项 */
+const internalItems = computed<SplitterPanelItem[]>(() => {
+  if (props.items) return props.items
+  return [
+    {
+      defaultSize: props.size ?? props.defaultSize,
+      minSize: props.minSize,
+      collapsible: props.collapsible,
+      slot: 'first',
+    },
+    {
+      collapsible: props.collapsible,
+      slot: 'second',
+    },
+  ]
+})
 
-const isHorizontal = computed(() => props.orientation === 'horizontal')
-
-/** 折叠面板：second 折叠后 first 占满，resize 事件收到 100 */
-function collapse(side: 'first' | 'second') {
-  if (collapsed.value === side) return
-  prevSize.value = currentSize.value
-  collapsed.value = side
-  emit('resize', side === 'first' ? 0 : 100)
+/** 面板 id 由分组 id 派生，保证服务端与客户端一致 */
+function getPanelId(item: SplitterPanelItem, index: number) {
+  return item.id ?? (props.id ? `${props.id}-panel-${index}` : undefined)
 }
 
-/** 展开面板：恢复折叠前的尺寸 */
-function expand(side: 'first' | 'second') {
-  if (collapsed.value !== side) return
-  collapsed.value = null
-  if (props.size == null) size.value = prevSize.value
-  emit('resize', prevSize.value)
+function getHandleId(index: number) {
+  return props.id ? `${props.id}-handle-${index}` : undefined
 }
-
-/** 调整尺寸 */
-function resize(next: number) {
-  const clamped = Math.min(100 - props.minSize, Math.max(props.minSize, next))
-  if (props.size == null) size.value = clamped
-  emit('resize', clamped)
-}
-
-function onPointerDown(event: PointerEvent) {
-  if (collapsed.value) expand(collapsed.value)
-  dragging.value = true
-  document.body.style.cursor = isHorizontal.value ? 'col-resize' : 'row-resize'
-  document.body.style.userSelect = 'none'
-  event.preventDefault()
-}
-
-function onPointerMove(event: PointerEvent) {
-  if (!dragging.value || !containerRef.value) return
-  const rect = containerRef.value.getBoundingClientRect()
-  const ratio = isHorizontal.value
-    ? ((event.clientX - rect.left) / rect.width) * 100
-    : ((event.clientY - rect.top) / rect.height) * 100
-  /* 越过一半最小尺寸即视为拖到边界，折叠被压缩一侧 */
-  if (props.collapsible && ratio < props.minSize / 2) return collapse('first')
-  if (props.collapsible && ratio > 100 - props.minSize / 2) return collapse('second')
-  if (collapsed.value) expand(collapsed.value)
-  resize(ratio)
-}
-
-function onPointerUp() {
-  dragging.value = false
-  document.body.style.cursor = ''
-  document.body.style.userSelect = ''
-}
-
-/* 折叠面板布局：被折叠一侧为 0，first 在 second 折叠后占满 */
-const firstStyle = computed(() =>
-  collapsed.value === 'first'
-    ? { flex: '0 0 0%' }
-    : collapsed.value === 'second'
-      ? { flex: '1 1 0%' }
-      : { flexBasis: `${currentSize.value}%` },
-)
-
-const secondStyle = computed(() => (collapsed.value === 'second' ? { flex: '0 0 0%' } : undefined))
-
-defineExpose({ resize })
 </script>
 
 <template>
-  <div
-    ref="containerRef"
-    :class="cn(
-      'flex overflow-hidden rounded-lg border border-border',
-      isHorizontal ? 'h-full flex-row' : 'flex-col',
-      props.class,
-    )"
-    @pointermove="onPointerMove"
-    @pointerup="onPointerUp"
-    @pointercancel="onPointerUp"
+  <SplitterGroup
+    v-bind="$attrs"
+    :id="id"
+    :as="as"
+    :direction="orientation"
+    data-slot="root"
+    :class="cn('flex w-full', ui?.root, props.class)"
+    @layout="(sizes: number[]) => emit('layout', sizes)"
   >
-    <div :style="firstStyle" class="min-h-0 min-w-0 overflow-auto">
-      <slot name="first" />
-    </div>
-    <div
-      role="separator"
-      :aria-orientation="orientation"
-      :class="cn(
-        'relative shrink-0 bg-border transition-colors hover:bg-primary-5',
-        isHorizontal ? 'w-1 cursor-col-resize' : 'h-1 cursor-row-resize',
-      )"
-      @pointerdown="onPointerDown"
-    >
-      <template v-if="collapsible">
-        <button
-          type="button"
-          :aria-label="collapsed === 'first' ? '展开面板' : '折叠面板'"
-          :class="cn(
-            'absolute z-10 flex size-4 cursor-pointer items-center justify-center rounded-full border border-border bg-background p-0 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground',
-            isHorizontal
-              ? 'left-0 top-1/2 -translate-x-1/2 -translate-y-1/2'
-              : 'left-1/2 top-0 -translate-x-1/2 -translate-y-1/2',
-          )"
-          @pointerdown.stop
-          @click="collapsed === 'first' ? expand('first') : collapse('first')"
-        >
-          <PanelLeftOpen v-if="collapsed === 'first'" class="size-3" :class="isHorizontal ? '' : 'rotate-90'" />
-          <PanelLeftClose v-else class="size-3" :class="isHorizontal ? '' : '-rotate-90'" />
-        </button>
-        <button
-          type="button"
-          :aria-label="collapsed === 'second' ? '展开面板' : '折叠面板'"
-          :class="cn(
-            'absolute z-10 flex size-4 cursor-pointer items-center justify-center rounded-full border border-border bg-background p-0 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground',
-            isHorizontal
-              ? 'right-0 top-1/2 -translate-y-1/2 translate-x-1/2'
-              : 'bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2',
-          )"
-          @pointerdown.stop
-          @click="collapsed === 'second' ? expand('second') : collapse('second')"
-        >
-          <PanelRightOpen v-if="collapsed === 'second'" class="size-3" :class="isHorizontal ? '' : '-rotate-90'" />
-          <PanelRightClose v-else class="size-3" :class="isHorizontal ? '' : 'rotate-90'" />
-        </button>
-      </template>
-    </div>
-    <div :style="secondStyle" class="min-h-0 min-w-0 flex-1 overflow-auto">
-      <slot name="second" />
-    </div>
-  </div>
+    <template v-for="(item, index) in internalItems" :key="item.id ?? index">
+      <SplitterPanel
+        :id="getPanelId(item, index)"
+        v-slot="{ isCollapsed, collapse, expand, resize }"
+        :default-size="item.defaultSize"
+        :min-size="item.minSize"
+        :max-size="item.maxSize"
+        :collapsible="item.collapsible"
+        :collapsed-size="item.collapsedSize"
+        :size-unit="item.sizeUnit"
+        data-slot="panel"
+        :class="cn('flex min-h-0 min-w-0', ui?.panel, item.ui?.panel, item.class)"
+        @collapse="emit('collapse', index)"
+        @expand="emit('expand', index)"
+        @resize="(size: number, prevSize?: number) => emit('resize', index, size, prevSize)"
+      >
+        <slot
+          :name="(item.slot ?? `panel-${index}`) as string"
+          :item="item"
+          :index="index"
+          :collapsed="isCollapsed"
+          :collapse="collapse"
+          :expand="expand"
+          :resize="resize"
+        />
+      </SplitterPanel>
+
+      <SplitterResizeHandle
+        v-if="index < internalItems.length - 1"
+        :id="getHandleId(index)"
+        :disabled="disabled"
+        data-slot="handle"
+        :class="cn(
+          'group relative shrink-0 focus-visible:outline-2 focus-visible:outline-primary-6 data-[panel-resize-handle-enabled=false]:cursor-default',
+          orientation === 'horizontal' ? 'w-2 cursor-col-resize' : 'h-2 cursor-row-resize',
+          ui?.handle,
+        )"
+        @dragging="(dragging: boolean) => emit('dragging', index, dragging)"
+      >
+        <slot name="resize-handle" :index="index" />
+      </SplitterResizeHandle>
+    </template>
+  </SplitterGroup>
 </template>

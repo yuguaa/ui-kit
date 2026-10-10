@@ -65,9 +65,23 @@ const tags = ref(['Vue', 'Nuxt'])
 const agree = ref(true)
 const city = ref('a')
 const city2 = ref('sh')
+const listValue = ref('a')
 const notify = ref(true)
 const pin = ref('1234')
 const toastApi = useToast()
+
+/* 内容区块数据：TanStack 风格列配置与数据源 */
+const tableColumns = [
+  { accessorKey: 'name', header: '名称' },
+  { accessorKey: 'age', header: '年龄' },
+  { accessorKey: 'address', header: '地址' },
+  { accessorKey: 'status', header: '状态' },
+]
+const tableRows = [
+  { name: '张三', age: 28, address: '北京市朝阳区望京街道', status: '已完成' },
+  { name: '李四', age: 32, address: '上海市浦东新区张江镇', status: '进行中' },
+  { name: '王五', age: 24, address: '广州市天河区珠江新城', status: '已失败' },
+]
 
 /* vben 风格：hook 先行，调用即得 [组件, api] */
 const [HookModal, hookModalApi] = useXModal({ title: 'hook 对话框', description: '由 useXModal 创建的实例' })
@@ -246,7 +260,7 @@ function onSubmit(values: Record<string, unknown>) {
         </XSwitch>
         <XPinInput v-model="pin" :length="6" />
       </div>
-      <XFileUpload class="w-full" />
+      <XFileUpload label="选择一个文件或拖拽到这里" class="w-full" />
     </section>
 
     <section class="flex flex-col gap-4">
@@ -256,7 +270,7 @@ function onSubmit(values: Record<string, unknown>) {
         <XLink to="/docs">文档</XLink>
         <XLink to="/examples">示例</XLink>
         <XLink to="/disabled" disabled>禁用</XLink>
-        <XTooltip title="这是一段提示文字">
+        <XTooltip text="这是一段提示文字">
           <XButton variant="outline" color="neutral">悬浮查看提示</XButton>
         </XTooltip>
         <XDropdownMenu
@@ -269,7 +283,7 @@ function onSubmit(values: Record<string, unknown>) {
         />
       </div>
       <XTabs
-        :items="[{ key: 'doc', label: '文档' }, { key: 'example', label: '示例' }, { key: 'api', label: 'API' }]"
+        :items="[{ value: 'doc', label: '文档' }, { value: 'example', label: '示例' }, { value: 'api', label: 'API' }]"
       >
         <template #content="{ item }">
           <p>当前选中：{{ item.label }}。这里是标签页对应的内容区域。</p>
@@ -285,8 +299,8 @@ function onSubmit(values: Record<string, unknown>) {
         ]"
       />
       <div class="flex flex-wrap items-center gap-6">
-        <XStepper :current="1" :items="[{ title: '完成' }, { title: '进行中' }, { title: '待处理' }]" />
-        <XPagination :current="1" :total="100" :page-size="10" show-size-changer />
+        <XStepper :default-value="1" :items="[{ title: '完成' }, { title: '进行中' }, { title: '待处理' }]" />
+        <XPagination :page="1" :total="100" :items-per-page="10" />
       </div>
       <XCommandPalette
         :groups="[
@@ -305,8 +319,8 @@ function onSubmit(values: Record<string, unknown>) {
     <section class="flex flex-col gap-4">
       <h2 class="text-lg font-semibold">浮层 Overlays</h2>
       <div class="flex flex-wrap items-center gap-3">
-        <XPopover trigger="click" title="气泡标题">
-          <template #trigger><XButton variant="outline" color="neutral">打开气泡</XButton></template>
+        <XPopover mode="click">
+          <XButton variant="outline" color="neutral">打开气泡</XButton>
           <template #content>这是一段气泡说明文字。</template>
         </XPopover>
         <XContextMenu
@@ -338,10 +352,9 @@ function onSubmit(values: Record<string, unknown>) {
         <XAlert type="error" message="错误提示" description="操作失败，请稍后重试。" show-icon />
       </div>
       <div class="flex flex-wrap items-center gap-6">
-        <XProgress :percent="30" class="w-64" />
-        <XProgress :percent="70" status="success" class="w-64" />
-        <XProgress :percent="45" status="exception" class="w-64" />
-        <XProgress :percent="75" type="circle" />
+        <XProgress :model-value="30" status class="w-64" />
+        <XProgress :model-value="70" inverted class="w-64" />
+        <XProgress :model-value="3" :max="8" status class="w-64" />
       </div>
       <XAccordion :items="[{ title: '什么是 Nuxt UI？' }, { title: '如何安装？' }]">
         <template #content="{ index }">
@@ -353,7 +366,11 @@ function onSubmit(values: Record<string, unknown>) {
         <template #content>这里是折叠的内容区域，展开后显示。</template>
       </XCollapsible>
       <div class="grid grid-cols-2 gap-4">
-        <XListbox :items="[{ key: 'a', label: '选项 A' }, { key: 'b', label: '选项 B' }, { key: 'c', label: '选项 C' }]" :selected="['a']" />
+        <XListbox
+          v-model="listValue"
+          value-key="value"
+          :items="[{ value: 'a', label: '选项 A' }, { value: 'b', label: '选项 B' }, { value: 'c', label: '选项 C' }]"
+        />
         <XScrollArea :height="120">
           <div v-for="i in 6" :key="i" class="py-1 text-sm">滚动内容第 {{ i }} 行</div>
         </XScrollArea>
@@ -367,20 +384,7 @@ function onSubmit(values: Record<string, unknown>) {
         <template #first><div class="flex h-full items-center justify-center text-sm">左面板</div></template>
         <template #second><div class="flex h-full items-center justify-center text-sm">右面板</div></template>
       </XSplitter>
-      <XTable
-        :columns="[
-          { key: 'name', title: '名称' },
-          { key: 'age', title: '年龄' },
-          { key: 'address', title: '地址' },
-          { key: 'status', title: '状态' },
-        ]"
-        :data-source="[
-          { key: '1', name: '张三', age: 28, address: '北京市朝阳区望京街道', status: '已完成' },
-          { key: '2', name: '李四', age: 32, address: '上海市浦东新区张江镇', status: '进行中' },
-          { key: '3', name: '王五', age: 24, address: '广州市天河区珠江新城', status: '已失败' },
-        ]"
-        :pagination="{ pageSize: 10 }"
-      />
+      <XTable :columns="tableColumns" :data="tableRows" />
     </section>
     <XToaster />
   </XContainer>

@@ -9,6 +9,6 @@ describe("App smoke", () => {
     expect(wrapper.text()).toContain("表单 Forms");
     expect(wrapper.text()).toContain("主要按钮");
     expect(wrapper.text()).toContain("99+");
-    expect(wrapper.text()).toContain("拖拽文件到此处，或点击上传");
+    expect(wrapper.text()).toContain("选择一个文件或拖拽到这里");
   });
 });

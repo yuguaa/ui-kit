@@ -1,23 +1,51 @@
 <script setup lang="ts">
 /**
- * XBadge 徽标：展示数量或状态提示，支持数字、溢出与圆点模式。
- * 有默认插槽时作为右上角角标包裹内容，无默认插槽时独立展示。
+ * XBadge 徽标：label / count 展示数量或状态，支持圆点、包裹角标与图标头像。
+ * 有内容且带 count / dot 时作为右上角角标包裹内容，其余场景作为独立徽标展示。
  */
-import type { HTMLAttributes } from 'vue'
-import { computed } from 'vue'
+import type { Component, HTMLAttributes } from 'vue'
+import { computed, useSlots } from 'vue'
+import { Primitive } from 'reka-ui'
 import { Badge } from '@/components/ui/badge'
+import XAvatar from '@/components/kit/XAvatar.vue'
+import XIcon from '@/components/kit/XIcon.vue'
 import { cn } from '@/lib/utils'
 
 type BadgeColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
 type BadgeSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
 type BadgeVariant = 'solid' | 'outline' | 'soft' | 'subtle'
+type IconName = InstanceType<typeof XIcon>['$props']['name']
+
+/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
+export interface BadgeUi {
+  base?: string
+  label?: string
+  leadingIcon?: string
+  leadingAvatar?: string
+  leadingAvatarSize?: BadgeSize
+  trailingIcon?: string
+}
+
+/** avatar 属性：透传给 XAvatar 的头像配置 */
+export interface BadgeAvatarProps {
+  src?: string
+  alt?: string
+  text?: string
+  size?: BadgeSize
+  shape?: 'circle' | 'square'
+  color?: BadgeColor
+}
 
 const props = withDefaults(defineProps<{
-  /** 显示数字 */
+  /** 渲染为指定元素或组件 */
+  as?: string | Component
+  /** 徽标文本 */
+  label?: string | number
+  /** 显示数字（kit 既有属性） */
   count?: number
-  /** 圆点模式，不显示数字 */
+  /** 圆点模式，不显示数字（kit 既有属性） */
   dot?: boolean
-  /** 超出后显示 99+ */
+  /** 超出后显示 99+（kit 既有属性） */
   overflowCount?: number
   /** 预设样式 */
   variant?: BadgeVariant
@@ -27,14 +55,27 @@ const props = withDefaults(defineProps<{
   size?: BadgeSize
   /** 等边距模式，宽度等于高度，适合只放图标或单字符 */
   square?: boolean
+  /** 图标名，显示在左侧 */
+  icon?: IconName
+  /** 左侧图标名 */
+  leadingIcon?: IconName
+  /** 右侧图标名 */
+  trailingIcon?: IconName
+  /** 左侧头像配置 */
+  avatar?: BadgeAvatarProps
+  /** 主题插槽类名 */
+  ui?: BadgeUi
   class?: HTMLAttributes['class']
 }>(), {
   overflowCount: 99,
-  variant: 'soft',
+  variant: 'solid',
   color: 'primary',
   size: 'md',
   square: false,
+  dot: false,
 })
+
+const slots = useSlots()
 
 /** 变体 × 语义色样式（字面量，保证 Tailwind 可扫描） */
 const colorClasses: Record<BadgeVariant, Record<BadgeColor, string>> = {
@@ -93,30 +134,98 @@ const squareClasses: Record<BadgeSize, string> = {
   xl: 'w-8 px-0',
 }
 
+/** 图标尺寸随徽标尺寸 */
+const iconSizeClasses: Record<BadgeSize, 'xs' | 'sm' | 'md'> = {
+  xs: 'xs',
+  sm: 'xs',
+  md: 'sm',
+  lg: 'md',
+  xl: 'md',
+}
+
 const displayCount = computed(() => {
   if (props.count == null) return null
   return props.count > props.overflowCount ? `${props.overflowCount}+` : props.count
 })
+
+/** 有内容且带 count 时，徽标作为右上角角标包裹内容 */
+const wrapMode = computed(() => props.count != null && !!slots.default)
+
+/** 空徽标自动等边距（Nuxt UI 行为） */
+const isSquare = computed(() => props.square || (!slots.default && props.label == null && props.count == null && !props.dot))
+
+const leadingIconName = computed(() => props.leadingIcon ?? props.icon)
 </script>
 
 <template>
-  <span v-if="dot" :class="cn('relative inline-flex', props.class)">
-    <span class="absolute top-0 right-0 size-2 translate-x-1/2 -translate-y-1/2 rounded-full bg-error-6" />
+  <Primitive v-if="dot" :as="as ?? 'span'" data-slot="badge" :class="cn('relative inline-flex', props.class)">
+    <span :class="cn('absolute top-0 right-0 size-2 translate-x-1/2 -translate-y-1/2 rounded-full bg-error-6', ui?.base)" />
     <slot />
-  </span>
-  <Badge v-else-if="!$slots.default" :class="cn(colorClasses[variant][color], sizeClasses[size], square && squareClasses[size], props.class)">
-    <slot name="leading" />
-    {{ displayCount }}
-    <slot name="trailing" />
-  </Badge>
-  <span v-else class="relative inline-flex">
+  </Primitive>
+  <span v-else-if="wrapMode" class="relative inline-flex">
     <slot />
     <span class="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2">
-      <Badge :class="cn(colorClasses[variant][color], sizeClasses[size], square && squareClasses[size], props.class)">
-        <slot name="leading" />
-        {{ displayCount }}
-        <slot name="trailing" />
+      <Badge
+        :as="as ?? 'span'"
+        :class="cn(colorClasses[variant][color], sizeClasses[size], isSquare && squareClasses[size], ui?.base, props.class)"
+      >
+        <slot name="leading">
+          <XIcon
+            v-if="leadingIconName"
+            :name="leadingIconName"
+            :size="iconSizeClasses[size]"
+            :class="cn('shrink-0', ui?.leadingIcon)"
+          />
+          <XAvatar
+            v-else-if="avatar"
+            v-bind="avatar"
+            :size="ui?.leadingAvatarSize ?? avatar.size"
+            :class="cn('shrink-0', ui?.leadingAvatar)"
+          />
+        </slot>
+        <span v-if="label != null" :class="cn('truncate', ui?.label)">{{ label }}</span>
+        <template v-else>{{ displayCount }}</template>
+        <slot name="trailing">
+          <XIcon
+            v-if="trailingIcon"
+            :name="trailingIcon"
+            :size="iconSizeClasses[size]"
+            :class="cn('shrink-0', ui?.trailingIcon)"
+          />
+        </slot>
       </Badge>
     </span>
   </span>
+  <Badge
+    v-else
+    :as="as ?? 'span'"
+    :class="cn(colorClasses[variant][color], sizeClasses[size], isSquare && squareClasses[size], ui?.base, props.class)"
+  >
+    <slot name="leading">
+      <XIcon
+        v-if="leadingIconName"
+        :name="leadingIconName"
+        :size="iconSizeClasses[size]"
+        :class="cn('shrink-0', ui?.leadingIcon)"
+      />
+      <XAvatar
+        v-else-if="avatar"
+        v-bind="avatar"
+        :size="ui?.leadingAvatarSize ?? avatar.size"
+        :class="cn('shrink-0', ui?.leadingAvatar)"
+      />
+    </slot>
+    <slot>
+      <span v-if="label != null" :class="cn('truncate', ui?.label)">{{ label }}</span>
+      <template v-else>{{ displayCount }}</template>
+    </slot>
+    <slot name="trailing">
+      <XIcon
+        v-if="trailingIcon"
+        :name="trailingIcon"
+        :size="iconSizeClasses[size]"
+        :class="cn('shrink-0', ui?.trailingIcon)"
+      />
+    </slot>
+  </Badge>
 </template>

@@ -3,25 +3,25 @@
  * 用法：const [Stepper, stepperApi] = useXStepper({ items: [...] })
  */
 import { defineComponent, h, reactive } from 'vue'
-import type { StepItem } from './XStepper.vue'
+import type { StepperItem } from './XStepper.vue'
 import XStepper from './XStepper.vue'
 
 export interface XStepperApi {
-  /** 当前步骤 */
+  /** 当前步骤索引 */
   current: number
   /** 下一步 */
   next: () => void
   /** 上一步 */
   prev: () => void
-  /** 重置 */
+  /** 重置到第一步 */
   reset: () => void
   /** 跳转到指定步骤 */
   go: (index: number) => void
 }
 
-export function useXStepper(options: { items?: StepItem[]; defaultCurrent?: number; orientation?: 'horizontal' | 'vertical'; disabled?: boolean } = {}) {
-  const { defaultCurrent = 0, ...componentProps } = options
-  const state = reactive({ current: defaultCurrent })
+export function useXStepper(options: { items?: StepperItem[]; defaultValue?: number; orientation?: 'horizontal' | 'vertical'; disabled?: boolean; linear?: boolean } = {}) {
+  const { defaultValue = 0, ...componentProps } = options
+  const state = reactive({ current: defaultValue })
 
   const itemsCount = options.items?.length ?? 0
 
@@ -39,9 +39,9 @@ export function useXStepper(options: { items?: StepItem[]; defaultCurrent?: numb
           {
             ...attrs,
             ...componentProps,
-            current: state.current,
-            onChange: (current: number) => {
-              state.current = current
+            modelValue: state.current,
+            'onUpdate:modelValue': (value: number) => {
+              state.current = value
             },
           } as never,
           slots as never,

@@ -1,17 +1,42 @@
 <script setup lang="ts">
 /**
  * XInputDate 日期选择：输入框 + popover 日历。
- * 支持最小/最大日期、底部自定义内容与日期区间（range）。
+ * 按 Nuxt UI input-date 对齐：root(触发按钮) > base(输入容器) > leading / input / separator / trailing。
+ * 支持最小/最大日期、底部自定义内容与日期区间（range）；range 时两个输入框由 separatorIcon 分隔。
+ * 容器注入 Nuxt UI 语义：variant × color、highlight、fixed。
  */
+import type { Component, HTMLAttributes } from 'vue'
 import type { DateValue } from 'reka-ui'
-import type { HTMLAttributes } from 'vue'
-import { computed, ref, shallowRef, watch } from 'vue'
+import { computed, onMounted, onScopeDispose, ref, shallowRef, useTemplateRef, watch } from 'vue'
 import { parseDate } from '@internationalized/date'
-import { CalendarIcon } from '@lucide/vue'
+import { Calendar as CalendarIcon, Minus } from '@lucide/vue'
+import { Primitive } from 'reka-ui'
 import { Calendar } from '@/components/ui/calendar'
-import { Input } from '@/components/ui/input'
 import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover'
+import XIcon from '@/components/kit/XIcon.vue'
 import { cn } from '@/lib/utils'
+
+/* 属性透传到内部输入框，避免落到 Popover 包装层 */
+defineOptions({ inheritAttrs: false })
+
+type FieldSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
+type FieldColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
+type FieldVariant = 'outline' | 'soft' | 'subtle' | 'ghost' | 'none'
+
+/** XIcon 内置图标名 */
+export type InputDateIconName = 'chevron-right'
+/** 图标：XIcon 名称或自定义组件 */
+export type InputDateIcon = InputDateIconName | Component
+
+/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
+export interface InputDateUi {
+  root?: string
+  base?: string
+  leading?: string
+  leadingIcon?: string
+  separatorIcon?: string
+  trailing?: string
+}
 
 const props = withDefaults(defineProps<{
   /** 绑定日期（yyyy-MM-dd，range 时为 [开始, 结束]） */
@@ -26,10 +51,35 @@ const props = withDefaults(defineProps<{
   disabled?: boolean
   /** 占位文字 */
   placeholder?: string
+  /** 控件尺寸 */
+  size?: FieldSize
+  /** 组件颜色（聚焦描边与高亮） */
+  color?: FieldColor
+  /** 预设样式 */
+  variant?: FieldVariant
+  /** 高亮：始终显示颜色描边，类似聚焦态 */
+  highlight?: boolean
+  /** 保持移动端字号在所有断点一致 */
+  fixed?: boolean
+  /** 区间分隔图标 */
+  separatorIcon?: InputDateIcon
+  /** 渲染为指定元素或组件 */
+  as?: string | Component
+  /** 挂载后自动聚焦 */
+  autofocus?: boolean
+  /** 自动聚焦延迟（毫秒） */
+  autofocusDelay?: number
+  /** 主题插槽类名 */
+  ui?: InputDateUi
   class?: HTMLAttributes['class']
 }>(), {
   modelValue: '',
   placeholder: '选择日期',
+  size: 'md',
+  color: 'primary',
+  variant: 'outline',
+  fixed: true,
+  autofocusDelay: 0,
 })
 
 const emit = defineEmits<{
@@ -51,12 +101,9 @@ const calendarValue = computed(() => {
   }
 })
 
-const displayText = computed(() => {
-  if (!props.range) return props.modelValue as string
-  const pair = Array.isArray(props.modelValue) ? props.modelValue : []
-  if (pair[0] == null) return ''
-  return pair[1] != null ? `${pair[0]} → ${pair[1]}` : pair[0]
-})
+const pair = computed(() => (Array.isArray(props.modelValue) ? props.modelValue : []))
+const pairStart = computed(() => pair.value[0] ?? '')
+const pairEnd = computed(() => pair.value[1] ?? '')
 
 function formatDateValue(date: DateValue): string {
   return `${String(date.year).padStart(4, '0')}-${String(date.month).padStart(2, '0')}-${String(date.day).padStart(2, '0')}`
@@ -126,17 +173,240 @@ function onCalendarSelect(next: DateValue | DateValue[] | undefined) {
   }
   onSelect(next as DateValue | undefined)
 }
+
+/** 变体样式（Nuxt UI 语义 → 本地 token） */
+const variantClasses: Record<FieldVariant, string> = {
+  outline: 'bg-background ring-1 ring-inset ring-border',
+  soft: 'bg-muted/50 hover:bg-muted has-focus-visible:bg-muted disabled:bg-muted/50',
+  subtle: 'bg-muted ring-1 ring-inset ring-border',
+  ghost: 'bg-transparent hover:bg-muted has-focus-visible:bg-muted disabled:bg-transparent',
+  none: 'bg-transparent has-focus-visible:outline-none',
+}
+
+/** 聚焦描边（颜色 × 变体）：内部输入聚焦时叠加 outline 与 ring */
+const focusStyles: Record<FieldColor, Record<FieldVariant, string>> = {
+  primary: {
+    outline: 'outline-primary-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-primary-6',
+    soft: 'outline-primary-6/25 has-focus-visible:outline-3',
+    subtle: 'outline-primary-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-primary-6',
+    ghost: 'outline-primary-6/25 has-focus-visible:outline-3',
+    none: '',
+  },
+  secondary: {
+    outline: 'outline-secondary/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-secondary',
+    soft: 'outline-secondary/25 has-focus-visible:outline-3',
+    subtle: 'outline-secondary/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-secondary',
+    ghost: 'outline-secondary/25 has-focus-visible:outline-3',
+    none: '',
+  },
+  neutral: {
+    outline: 'outline-neutral-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-neutral-6',
+    soft: 'outline-neutral-6/25 has-focus-visible:outline-3',
+    subtle: 'outline-neutral-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-neutral-6',
+    ghost: 'outline-neutral-6/25 has-focus-visible:outline-3',
+    none: '',
+  },
+  success: {
+    outline: 'outline-success-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-success-6',
+    soft: 'outline-success-6/25 has-focus-visible:outline-3',
+    subtle: 'outline-success-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-success-6',
+    ghost: 'outline-success-6/25 has-focus-visible:outline-3',
+    none: '',
+  },
+  info: {
+    outline: 'outline-info-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-info-6',
+    soft: 'outline-info-6/25 has-focus-visible:outline-3',
+    subtle: 'outline-info-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-info-6',
+    ghost: 'outline-info-6/25 has-focus-visible:outline-3',
+    none: '',
+  },
+  warning: {
+    outline: 'outline-warning-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-warning-6',
+    soft: 'outline-warning-6/25 has-focus-visible:outline-3',
+    subtle: 'outline-warning-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-warning-6',
+    ghost: 'outline-warning-6/25 has-focus-visible:outline-3',
+    none: '',
+  },
+  error: {
+    outline: 'outline-error-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-error-6',
+    soft: 'outline-error-6/25 has-focus-visible:outline-3',
+    subtle: 'outline-error-6/25 has-focus-visible:outline-3 has-focus-visible:ring-1 has-focus-visible:ring-error-6',
+    ghost: 'outline-error-6/25 has-focus-visible:outline-3',
+    none: '',
+  },
+}
+
+/** 高亮描边色 */
+const highlightClasses: Record<FieldColor, string> = {
+  primary: 'ring-1 ring-inset ring-primary-6',
+  secondary: 'ring-1 ring-inset ring-secondary',
+  neutral: 'ring-1 ring-inset ring-neutral-6',
+  success: 'ring-1 ring-inset ring-success-6',
+  info: 'ring-1 ring-inset ring-info-6',
+  warning: 'ring-1 ring-inset ring-warning-6',
+  error: 'ring-1 ring-inset ring-error-6',
+}
+
+/** fixed=false 时桌面端缩小一档字号 */
+const fixedTextClasses: Partial<Record<FieldSize, string>> = {
+  xs: 'md:text-xs',
+  sm: 'md:text-xs',
+  md: 'md:text-sm',
+  lg: 'md:text-sm',
+}
+
+/** 容器高度与文本尺寸 */
+const baseSizeClasses: Record<FieldSize, string> = {
+  xs: 'h-7 text-sm',
+  sm: 'h-8 text-sm',
+  md: 'h-9 text-sm',
+  lg: 'h-10 text-sm',
+  xl: 'h-11 text-base',
+}
+
+/** 图标尺寸 */
+const iconSizes: Record<FieldSize, string> = {
+  xs: 'size-4',
+  sm: 'size-4',
+  md: 'size-5',
+  lg: 'size-5',
+  xl: 'size-6',
+}
+
+/** leading / trailing 容器自身的内边距 */
+const leadingPaddings: Record<FieldSize, string> = {
+  xs: 'pl-2', sm: 'pl-2.5', md: 'pl-2.5', lg: 'pl-3', xl: 'pl-3',
+}
+const trailingPaddings: Record<FieldSize, string> = {
+  xs: 'pr-2', sm: 'pr-2.5', md: 'pr-2.5', lg: 'pr-3', xl: 'pr-3',
+}
+
+/** 输入框避让 leading / trailing 的水平内边距 */
+const leadingBasePaddings: Record<FieldSize, string> = {
+  xs: 'pl-7', sm: 'pl-8', md: 'pl-9', lg: 'pl-10', xl: 'pl-11',
+}
+const trailingBasePaddings: Record<FieldSize, string> = {
+  xs: 'pr-7', sm: 'pr-8', md: 'pr-9', lg: 'pr-10', xl: 'pr-11',
+}
+
+function isIconName(icon: InputDateIcon | undefined): icon is InputDateIconName {
+  return typeof icon === 'string'
+}
+
+const singleInputRef = useTemplateRef<HTMLInputElement>('singleInputRef')
+const rangeInputRef = useTemplateRef<HTMLInputElement>('rangeInputRef')
+
+function autoFocus() {
+  if (!props.autofocus) return
+  ;(singleInputRef.value ?? rangeInputRef.value)?.focus()
+}
+
+let autofocusTimeoutId: ReturnType<typeof setTimeout> | undefined
+
+onMounted(() => {
+  autofocusTimeoutId = setTimeout(() => {
+    autoFocus()
+  }, props.autofocusDelay)
+})
+
+onScopeDispose(() => clearTimeout(autofocusTimeoutId))
 </script>
 
 <template>
   <Popover v-model:open="open">
     <PopoverTrigger as-child :disabled="disabled">
-      <button type="button" :class="cn('w-full cursor-pointer', props.class)">
-        <span class="relative flex w-full items-center">
-          <Input :model-value="displayText" :placeholder="placeholder" class="h-9 pl-9 text-left" readonly />
-          <CalendarIcon class="pointer-events-none absolute left-3 size-4 text-muted-foreground" />
+      <Primitive
+        :as="as ?? 'button'"
+        type="button"
+        data-slot="root"
+        :class="cn('w-full cursor-pointer', props.ui?.root, props.class)"
+      >
+        <span
+          data-slot="base"
+          :class="cn(
+            'relative flex w-full items-center rounded-md transition-colors',
+            variantClasses[variant],
+            focusStyles[color][variant],
+            highlight && highlightClasses[color],
+            fixed === false && fixedTextClasses[size],
+            baseSizeClasses[size],
+            props.ui?.base,
+          )"
+        >
+          <span
+            data-slot="leading"
+            :class="cn('absolute inset-y-0 left-0 flex items-center', leadingPaddings[size], props.ui?.leading)"
+          >
+            <slot name="leading">
+              <CalendarIcon
+                data-slot="leadingIcon"
+                :class="cn('shrink-0 text-muted-foreground', iconSizes[size], props.ui?.leadingIcon)"
+              />
+            </slot>
+          </span>
+
+          <input
+            v-if="!range"
+            ref="singleInputRef"
+            v-bind="$attrs"
+            type="text"
+            readonly
+            :value="modelValue as string"
+            :placeholder="placeholder"
+            :class="cn(
+              'h-full w-full min-w-0 border-0 bg-transparent px-2.5 outline-none placeholder:text-muted-foreground',
+              leadingBasePaddings[size],
+              $slots.trailing && trailingBasePaddings[size],
+            )"
+          />
+          <template v-else>
+            <input
+              ref="rangeInputRef"
+              v-bind="$attrs"
+              type="text"
+              readonly
+              :value="pairStart"
+              :placeholder="placeholder"
+              :class="cn(
+                'h-full w-full min-w-0 flex-1 border-0 bg-transparent outline-none placeholder:text-muted-foreground',
+                leadingBasePaddings[size],
+              )"
+            />
+            <slot name="separator">
+              <XIcon
+                v-if="isIconName(separatorIcon)"
+                :name="separatorIcon"
+                data-slot="separatorIcon"
+                :class="cn('shrink-0 size-4 text-muted-foreground', props.ui?.separatorIcon)"
+              />
+              <component
+                :is="separatorIcon ?? Minus"
+                v-else
+                data-slot="separatorIcon"
+                :class="cn('shrink-0 size-4 text-muted-foreground', props.ui?.separatorIcon)"
+              />
+            </slot>
+            <input
+              type="text"
+              readonly
+              :value="pairEnd"
+              :placeholder="placeholder"
+              :class="cn(
+                'h-full w-full min-w-0 flex-1 border-0 bg-transparent pr-2.5 outline-none placeholder:text-muted-foreground',
+                $slots.trailing && trailingBasePaddings[size],
+              )"
+            />
+          </template>
+
+          <span
+            v-if="$slots.trailing"
+            data-slot="trailing"
+            :class="cn('absolute inset-y-0 right-0 flex items-center', trailingPaddings[size], props.ui?.trailing)"
+          >
+            <slot name="trailing" />
+          </span>
         </span>
-      </button>
+      </Primitive>
     </PopoverTrigger>
     <PopoverContent align="start" :class="cn('flex w-auto flex-col p-0')">
       <Calendar

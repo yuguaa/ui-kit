@@ -1,299 +1,606 @@
 import * as React from "react"
 import {
+  flexRender,
   getCoreRowModel,
+  getExpandedRowModel,
+  getFilteredRowModel,
   getSortedRowModel,
   useReactTable,
+  type Cell,
+  type Column,
+  type ColumnDef,
+  type ColumnFiltersOptions,
+  type ColumnFiltersState,
+  type ColumnPinningOptions,
+  type ColumnPinningState,
+  type ColumnSizingOptions,
+  type ColumnSizingState,
+  type ExpandedOptions,
+  type ExpandedState,
+  type FacetedOptions,
+  type GlobalFilterOptions,
+  type GroupingOptions,
+  type GroupingState,
+  type Header,
+  type PaginationOptions,
+  type PaginationState,
+  type Row,
+  type RowData,
+  type RowPinningOptions,
+  type RowPinningState,
+  type RowSelectionOptions,
   type RowSelectionState,
+  type SortingOptions,
   type SortingState,
-  type Updater,
+  type Table,
+  type TableMeta,
+  type TableState,
+  type VisibilityOptions,
+  type VisibilityState,
 } from "@tanstack/react-table"
-import { ArrowDown, ArrowUp, ArrowUpDown } from "lucide-react"
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table"
-import { XCheckbox } from "@/components/kit/x-checkbox"
-import { XPagination } from "@/components/kit/x-pagination"
+import { useRender } from "@base-ui/react/use-render"
 import { XSkeleton } from "@/components/kit/x-skeleton"
 import { createBoundStore, useBoundStore } from "@/lib/kit/bound-store"
 import { cn } from "@/lib/utils"
 
-export type XTableAlign = "left" | "center" | "right"
+export type XTableRow<T> = Row<T>
+export type XTableData = RowData
+export type XTableColumn<T extends RowData, D = unknown> = ColumnDef<T, D>
 
-export interface XTableColumn<T> {
-  /** 列 key */
-  key: string
-  /** 列标题 */
-  title: React.ReactNode
-  /** 列宽 */
-  width?: number | string
-  /** 对齐方式 */
-  align?: XTableAlign
-  /** 是否可排序（点击表头切换升序 / 降序 / 取消） */
-  sortable?: boolean
-  /** 自定义单元格渲染 */
-  render?: (value: unknown, record: T, index: number) => React.ReactNode
+/** 列 meta 扩展字段(Nuxt Table 约定):类名 / 样式 / 合并数 */
+export interface XTableColumnMeta<TData extends RowData, TValue> {
+  class?: {
+    th?: string | ((header: Header<TData, TValue>) => string)
+    td?: string | ((cell: Cell<TData, TValue>) => string)
+  }
+  style?: {
+    th?: string | Record<string, string> | ((header: Header<TData, TValue>) => string | Record<string, string>)
+    td?: string | Record<string, string> | ((cell: Cell<TData, TValue>) => string | Record<string, string>)
+  }
+  colspan?: {
+    td?: string | ((cell: Cell<TData, TValue>) => string)
+  }
+  rowspan?: {
+    td?: string | ((cell: Cell<TData, TValue>) => string)
+  }
 }
 
-export interface XTableProps<T extends Record<string, unknown>> {
-  /** 表格列配置 */
-  columns?: XTableColumn<T>[]
+/** 表格 meta 扩展字段(Nuxt Table 约定):行级类名 / 样式 */
+export interface XTableMetaExt<TData extends RowData> {
+  class?: {
+    tr?: string | ((row: Row<TData>) => string)
+  }
+  style?: {
+    tr?: string | Record<string, string> | ((row: Row<TData>) => string | Record<string, string>)
+  }
+}
+
+/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
+export interface XTableUi {
+  root?: string
+  base?: string
+  caption?: string
+  thead?: string
+  tbody?: string
+  tfoot?: string
+  tr?: string
+  th?: string
+  td?: string
+  separator?: string
+  empty?: string
+  loading?: string
+}
+
+export interface XTableProps<T extends RowData> {
+  /** 渲染为指定元素 */
+  render?: React.ReactElement
   /** 数据源数组 */
-  dataSource?: T[]
-  /** 行唯一键 */
-  rowKey?: string
+  data?: T[]
+  /** 列配置(TanStack ColumnDef) */
+  columns?: XTableColumn<T>[]
+  /** 表格说明文字 */
+  caption?: React.ReactNode
+  /** 行与列的 meta 配置(类名 / 样式) */
+  meta?: TableMeta<T>
+  /** 无数据时展示的文字 */
+  empty?: React.ReactNode
+  /** 固定表头 / 表尾:true 两者都固定,header / footer 单独固定 */
+  sticky?: boolean | "header" | "footer"
   /** 加载状态 */
   loading?: boolean
-  /** 表格尺寸 */
-  size?: "sm" | "md"
-  /** 固定表头，内容区在 maxHeight 内滚动 */
-  sticky?: boolean
-  /** 内容区最大高度（sticky 时生效） */
-  maxHeight?: number | string
-  /** 显示行选择列 */
-  rowSelection?: boolean
-  /** 受控选中行（与 rowSelection 搭配） */
-  selectedRowKeys?: string[]
-  /** 选中行变化回调 */
-  onSelectionChange?: (keys: string[]) => void
-  /** 分页配置（false 关闭分页） */
-  pagination?: { current?: number; pageSize?: number; total?: number } | false
-  /** 页码或每页条数变化回调 */
-  onPageChange?: (page: number, pageSize: number) => void
-  /** 空数据提示 */
-  emptyText?: React.ReactNode
+  /** TanStack 全局筛选选项(state 可受控) */
+  globalFilterOptions?: GlobalFilterOptions<T> & { state?: { globalFilter?: TableState["globalFilter"] } }
+  /** TanStack 列筛选选项(state 可受控) */
+  columnFiltersOptions?: Omit<ColumnFiltersOptions<T>, "getFilteredRowModel"> & { state?: { columnFilters?: TableState["columnFilters"] } }
+  /** TanStack 固定列选项(state 可受控) */
+  columnPinningOptions?: ColumnPinningOptions & { state?: { columnPinning?: TableState["columnPinning"] } }
+  /** TanStack 列宽调整选项(state 可受控) */
+  columnSizingOptions?: ColumnSizingOptions & { state?: { columnSizing?: TableState["columnSizing"]; columnSizingInfo?: TableState["columnSizingInfo"] } }
+  /** TanStack 列显示选项(state 可受控) */
+  visibilityOptions?: VisibilityOptions & { state?: { columnVisibility?: TableState["columnVisibility"] } }
+  /** TanStack 排序选项(state 可受控) */
+  sortingOptions?: Omit<SortingOptions<T>, "getSortedRowModel"> & { state?: { sorting?: TableState["sorting"] } }
+  /** TanStack 分组选项(state 可受控) */
+  groupingOptions?: GroupingOptions & { state?: { grouping?: TableState["grouping"] } }
+  /** TanStack 展开选项(state 可受控) */
+  expandedOptions?: Omit<ExpandedOptions<T>, "getExpandedRowModel"> & { state?: { expanded?: TableState["expanded"] } }
+  /** TanStack 行选择选项(state 可受控) */
+  rowSelectionOptions?: RowSelectionOptions<T> & { state?: { rowSelection?: TableState["rowSelection"] } }
+  /** TanStack 固定行选项(state 可受控) */
+  rowPinningOptions?: RowPinningOptions<T> & { state?: { rowPinning?: TableState["rowPinning"] } }
+  /** TanStack 分页选项(state 可受控) */
+  paginationOptions?: PaginationOptions & { state?: { pagination?: TableState["pagination"] } }
+  /** TanStack 列聚合选项 */
+  facetedOptions?: FacetedOptions<T>
+  /** 行选择回调(点击交互元素内部时忽略) */
+  onSelect?: (event: React.SyntheticEvent, row: Row<T>) => void
+  /** 行悬停回调 */
+  onHover?: (event: React.SyntheticEvent, row: Row<T> | null) => void
+  /** 行右键回调 */
+  onContextMenu?: ((event: React.SyntheticEvent, row: Row<T>) => void) | Array<(event: React.SyntheticEvent, row: Row<T>) => void>
+  /** 主题插槽类名 */
+  ui?: XTableUi
   className?: string
+  /** 展开行渲染函数(等价于 expanded 插槽) */
+  expandedSlot?: (row: Row<T>) => React.ReactNode
+  /** 加载内容(等价于 loading 插槽) */
+  loadingSlot?: React.ReactNode
+  /** 空数据内容(等价于 empty 插槽) */
+  emptySlot?: React.ReactNode
+  /** 表体上方内容 */
+  bodyTop?: React.ReactNode
+  /** 表体下方内容 */
+  bodyBottom?: React.ReactNode
 }
 
-const alignClasses: Record<XTableAlign, string> = {
-  left: "text-left",
-  center: "text-center",
-  right: "text-right",
+/** 取属性或函数(以单元格为参数)的返回值 */
+function resolveValue<TValue, TArg>(prop: TValue | ((arg: TArg) => TValue), arg: TArg): TValue | undefined {
+  if (typeof prop === "function") {
+    return (prop as (arg: TArg) => TValue)(arg)
+  }
+  return prop
 }
 
-export function XTable<T extends Record<string, unknown>>({
-  columns = [],
-  dataSource = [],
-  rowKey = "key",
-  loading = false,
-  size = "md",
-  sticky = false,
-  maxHeight,
-  rowSelection = false,
-  selectedRowKeys,
-  onSelectionChange,
-  pagination,
-  onPageChange,
-  emptyText = "暂无数据",
-  className,
-}: XTableProps<T>) {
-  const [innerPage, setInnerPage] = React.useState(1)
+/** 无列配置时按数据字段名生成列 */
+function processColumns<T extends RowData>(columns: XTableColumn<T>[]): XTableColumn<T>[] {
+  return columns.map((column) => {
+    const col = { ...column } as XTableColumn<T>
+
+    if ("columns" in col && col.columns) {
+      col.columns = processColumns(col.columns as XTableColumn<T>[])
+    }
+
+    if (!col.cell) {
+      col.cell = ({ getValue }) => {
+        const value = getValue()
+        if (value === "" || value === null || value === undefined) {
+          return "\u00A0"
+        }
+        return String(value)
+      }
+    }
+
+    return col
+  })
+}
+
+/** 表尾是否存在(footer 字段或分组列递归查找) */
+function hasFooterRecursive<T extends RowData>(columns: XTableColumn<T>[]): boolean {
+  for (const column of columns) {
+    if ("footer" in column) {
+      return true
+    }
+    if ("columns" in column && hasFooterRecursive(column.columns as XTableColumn<T>[])) {
+      return true
+    }
+  }
+  return false
+}
+
+/** 固定列的定位样式(left / right) */
+function getColumnStyles<T extends RowData>(column: Column<T>): React.CSSProperties {
+  const styles: React.CSSProperties = {}
+
+  const pinned = column.getIsPinned()
+  if (pinned === "left") {
+    styles.left = `${column.getStart("left")}px`
+  } else if (pinned === "right") {
+    styles.right = `${column.getAfter("right")}px`
+  }
+
+  return styles
+}
+
+/** 列定义显式启用排序且当前可排序时表头才提供排序交互 */
+function isSortable<T extends RowData>(column: Column<T, unknown>) {
+  return column.columnDef.enableSorting === true && column.getCanSort()
+}
+
+export const XTable = function XTable<T extends RowData>(
+  {
+    render,
+    data = [],
+    columns = [],
+    caption,
+    meta,
+    empty = "暂无数据",
+    sticky = false,
+    loading = false,
+    globalFilterOptions,
+    columnFiltersOptions,
+    columnPinningOptions,
+    columnSizingOptions,
+    visibilityOptions,
+    sortingOptions,
+    groupingOptions,
+    expandedOptions,
+    rowSelectionOptions,
+    rowPinningOptions,
+    paginationOptions,
+    facetedOptions,
+    onSelect,
+    onHover,
+    onContextMenu,
+    ui,
+    className,
+    expandedSlot,
+    loadingSlot,
+    emptySlot,
+    bodyTop,
+    bodyBottom,
+    ref,
+  }: XTableProps<T> & { ref?: React.Ref<XTableApi<T>> },
+) {
+  /* 受控 state 优先(TanStack options.state),否则组件内部维护 */
+  const [globalFilter, setGlobalFilter] = React.useState<string>("")
+  const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>([])
+  const [columnPinning, setColumnPinning] = React.useState<ColumnPinningState>({})
+  const [columnSizing, setColumnSizing] = React.useState<ColumnSizingState>({})
+  const [columnVisibility, setColumnVisibility] = React.useState<VisibilityState>({})
   const [sorting, setSorting] = React.useState<SortingState>([])
-  const [innerSelection, setInnerSelection] = React.useState<RowSelectionState>({})
+  const [grouping, setGrouping] = React.useState<GroupingState>([])
+  const [expanded, setExpanded] = React.useState<ExpandedState>({})
+  const [rowSelection, setRowSelection] = React.useState<RowSelectionState>({})
+  const [rowPinning, setRowPinning] = React.useState<RowPinningState>({})
+  const [pagination, setPagination] = React.useState<PaginationState>({ pageIndex: 0, pageSize: 10 })
 
-  /* 受控选中行转成 TanStack 的行选择状态；未传入时使用内部状态 */
-  const selectionState = React.useMemo<RowSelectionState>(
-    () =>
-      selectedRowKeys != null
-        ? Object.fromEntries(selectedRowKeys.map((key) => [key, true]))
-        : innerSelection,
-    [selectedRowKeys, innerSelection],
-  )
+  const resolvedColumns = React.useMemo(() => processColumns(columns), [columns])
 
-  const table = useReactTable({
-    data: dataSource,
-    columns: React.useMemo(
-      () =>
-        columns.map((column) => ({
-          id: column.key,
-          accessorFn: (row: T) => row[column.key],
-          enableSorting: column.sortable ?? false,
-        })),
-      [columns],
-    ),
-    state: { sorting, rowSelection: selectionState },
-    onSortingChange: setSorting,
-    onRowSelectionChange: (updater: Updater<RowSelectionState>) => {
-      const next = typeof updater === "function" ? updater(selectionState) : updater
-      if (selectedRowKeys == null) setInnerSelection(next)
-      onSelectionChange?.(Object.keys(next).filter((key) => next[key]))
-    },
-    getRowId: (row) => String(row[rowKey] ?? ""),
-    enableRowSelection: rowSelection,
+  const table = useReactTable<T>({
+    data,
+    columns: resolvedColumns,
+    meta,
     getCoreRowModel: getCoreRowModel(),
+    ...(globalFilterOptions ?? {}),
+    ...(columnFiltersOptions ?? {}),
+    getFilteredRowModel: getFilteredRowModel(),
+    ...(columnPinningOptions ?? {}),
+    ...(columnSizingOptions ?? {}),
+    ...(visibilityOptions ?? {}),
+    ...(sortingOptions ?? {}),
     getSortedRowModel: getSortedRowModel(),
+    ...(groupingOptions ?? {}),
+    ...(expandedOptions ?? {}),
+    getExpandedRowModel: getExpandedRowModel(),
+    ...(rowSelectionOptions ?? {}),
+    ...(rowPinningOptions ?? {}),
+    ...(paginationOptions ?? {}),
+    ...(facetedOptions ?? {}),
+    state: {
+      globalFilter: globalFilterOptions?.state?.globalFilter ?? globalFilter,
+      columnFilters: columnFiltersOptions?.state?.columnFilters ?? columnFilters,
+      columnPinning: columnPinningOptions?.state?.columnPinning ?? columnPinning,
+      columnSizing: columnSizingOptions?.state?.columnSizing ?? columnSizing,
+      columnVisibility: visibilityOptions?.state?.columnVisibility ?? columnVisibility,
+      sorting: sortingOptions?.state?.sorting ?? sorting,
+      grouping: groupingOptions?.state?.grouping ?? grouping,
+      expanded: expandedOptions?.state?.expanded ?? expanded,
+      rowSelection: rowSelectionOptions?.state?.rowSelection ?? rowSelection,
+      rowPinning: rowPinningOptions?.state?.rowPinning ?? rowPinning,
+      pagination: paginationOptions?.state?.pagination ?? pagination,
+    },
+    onGlobalFilterChange: globalFilterOptions?.onGlobalFilterChange ?? setGlobalFilter,
+    onColumnFiltersChange: columnFiltersOptions?.onColumnFiltersChange ?? setColumnFilters,
+    onColumnPinningChange: columnPinningOptions?.onColumnPinningChange ?? setColumnPinning,
+    onColumnSizingChange: columnSizingOptions?.onColumnSizingChange ?? setColumnSizing,
+    onColumnVisibilityChange: visibilityOptions?.onColumnVisibilityChange ?? setColumnVisibility,
+    onSortingChange: sortingOptions?.onSortingChange ?? setSorting,
+    onGroupingChange: groupingOptions?.onGroupingChange ?? setGrouping,
+    onExpandedChange: expandedOptions?.onExpandedChange ?? setExpanded,
+    onRowSelectionChange: rowSelectionOptions?.onRowSelectionChange ?? setRowSelection,
+    onRowPinningChange: rowPinningOptions?.onRowPinningChange ?? setRowPinning,
+    onPaginationChange: paginationOptions?.onPaginationChange ?? setPagination,
   })
 
-  const pageSize = pagination ? pagination.pageSize ?? 10 : dataSource.length
-  const total = pagination ? pagination.total ?? dataSource.length : dataSource.length
-  const current = pagination ? pagination.current ?? innerPage : 1
+  React.useImperativeHandle(ref, () => ({ tableApi: table }), [table])
 
-  const sortedRows = table.getSortedRowModel().rows
-  const rows = pagination
-    ? sortedRows.slice((current - 1) * pageSize, current * pageSize)
-    : sortedRows
+  const rows = table.getRowModel().rows
+  const hasFooter = hasFooterRecursive(resolvedColumns)
+  const stickyThead = sticky === true || sticky === "header"
+  const stickyTfoot = sticky === true || sticky === "footer"
 
-  const cellClasses = size === "sm" ? "px-2 py-1.5 text-xs" : "px-3 py-2.5 text-sm"
-  const headClasses = cn(
-    size === "sm" ? "h-8 px-2 text-xs" : "h-10 px-3",
-    sticky && "sticky top-0 z-10 bg-background",
-  )
+  /** 行选择:点击交互元素(链接 / 按钮 / 输入框等)内部时不触发 */
+  function onRowSelect(event: React.SyntheticEvent, row: Row<T>) {
+    if (!onSelect) {
+      return
+    }
+    const target = event.target as HTMLElement
+    const isInteractive = target.closest("a, button, input, label, select, textarea")
+    if (isInteractive) {
+      return
+    }
 
-  return (
-    <div className={cn("flex flex-col gap-2", className)}>
-      <Table
-        className={cn(
-          sticky &&
-            "[&>[data-slot=table-container]]:max-h-(--x-table-max-height) [&>[data-slot=table-container]]:overflow-auto",
-        )}
-        style={
-          sticky && maxHeight != null
-            ? ({ "--x-table-max-height": typeof maxHeight === "number" ? `${maxHeight}px` : maxHeight } as React.CSSProperties)
-            : undefined
-        }
+    event.preventDefault()
+    event.stopPropagation()
+
+    if ((event as React.KeyboardEvent).repeat) {
+      return
+    }
+
+    onSelect(event, row)
+  }
+
+  function onRowHover(event: React.SyntheticEvent, row: Row<T> | null) {
+    if (!onHover) {
+      return
+    }
+
+    onHover(event, row)
+  }
+
+  function onRowContextmenu(event: React.SyntheticEvent, row: Row<T>) {
+    if (!onContextMenu) {
+      return
+    }
+
+    if (Array.isArray(onContextMenu)) {
+      onContextMenu.forEach((fn) => fn(event, row))
+    } else {
+      onContextMenu(event, row)
+    }
+  }
+
+  function getAriaSort(header: Header<T, unknown>): React.AriaAttributes["aria-sort"] {
+    if (header.isPlaceholder || !isSortable(header.column)) {
+      return undefined
+    }
+
+    const sorted = header.column.getIsSorted()
+    if (!sorted) {
+      return "none"
+    }
+
+    const sortableIds = new Set(table.getVisibleLeafColumns()
+      .filter(isSortable)
+      .map((column) => column.id))
+    const primary = table.getState().sorting.find(({ id }) => sortableIds.has(id))
+
+    if (primary?.id !== header.column.id) {
+      return "none"
+    }
+
+    return sorted === "asc" ? "ascending" : "descending"
+  }
+
+  const columnMeta = (headerOrCell: Header<T, unknown> | Cell<T, unknown>) =>
+    headerOrCell.column.columnDef.meta as XTableColumnMeta<T, unknown> | undefined
+
+  const renderRow = (row: Row<T>) => {
+    const tr = (
+      <tr
+        key={row.id}
+        data-selected={row.getIsSelected()}
+        data-selectable={!!onSelect || !!onHover || !!onContextMenu}
+        data-expanded={row.getIsExpanded()}
+        data-pinned={row.getIsPinned() || undefined}
+        tabIndex={onSelect ? 0 : undefined}
+        data-slot="tr"
+        className={cn("data-[selected=true]:bg-muted/50", resolveValue((table.options.meta as XTableMetaExt<T> | undefined)?.class?.tr, row), ui?.tr)}
+        style={resolveValue((table.options.meta as XTableMetaExt<T> | undefined)?.style?.tr, row) as React.CSSProperties | undefined}
+        onClick={(event) => onRowSelect(event, row)}
+        onKeyDown={(event) => {
+          if (event.target === event.currentTarget && (event.key === "Enter" || event.key === " ")) {
+            onRowSelect(event, row)
+          }
+        }}
+        onPointerEnter={(event) => onRowHover(event, row)}
+        onPointerLeave={(event) => onRowHover(event, null)}
+        onContextMenu={(event) => onRowContextmenu(event, row)}
       >
-        <TableHeader>
-          <TableRow>
-            {rowSelection && (
-              <TableHead className={cn(headClasses, "w-10")}>
-                <XCheckbox
-                  size="sm"
-                  aria-label="全选"
-                  checked={table.getIsAllRowsSelected()}
-                  indeterminate={table.getIsSomeRowsSelected()}
-                  onCheckedChange={(checked) => table.toggleAllRowsSelected(Boolean(checked))}
-                />
-              </TableHead>
+        {row.getVisibleCells().map((cell) => (
+          <td
+            key={cell.id}
+            data-pinned={cell.column.getIsPinned()}
+            colSpan={resolveValue(columnMeta(cell)?.colspan?.td, cell) as number | undefined}
+            rowSpan={resolveValue(columnMeta(cell)?.rowspan?.td, cell) as number | undefined}
+            data-slot="td"
+            className={cn(
+              "whitespace-nowrap p-4 text-sm text-muted-foreground [&:has([role=checkbox])]:pe-0",
+              cell.column.getIsPinned() && "sticky z-1 bg-background/75",
+              resolveValue(columnMeta(cell)?.class?.td, cell),
+              ui?.td,
             )}
-            {columns.map((column) => {
-              const sorted = table.getColumn(column.key)?.getIsSorted()
-              return (
-                <TableHead
-                  key={column.key}
-                  style={{ width: column.width }}
-                  className={cn(headClasses, alignClasses[column.align ?? "left"])}
-                >
-                  {column.sortable ? (
-                    <button
-                      type="button"
-                      aria-label={`排序 ${typeof column.title === "string" ? column.title : column.key}`}
-                      className="inline-flex cursor-pointer items-center gap-1 outline-none"
-                      onClick={table.getColumn(column.key)?.getToggleSortingHandler()}
-                    >
-                      {column.title}
-                      {sorted === "asc" ? (
-                        <ArrowUp className="size-3.5" />
-                      ) : sorted === "desc" ? (
-                        <ArrowDown className="size-3.5" />
-                      ) : (
-                        <ArrowUpDown className="size-3.5 opacity-40" />
-                      )}
-                    </button>
-                  ) : (
-                    column.title
-                  )}
-                </TableHead>
-              )
-            })}
-          </TableRow>
-        </TableHeader>
-        <TableBody>
-          {loading
-            ? Array.from({ length: 3 }, (_, index) => (
-                <TableRow key={`skeleton-${index}`}>
-                  {rowSelection && (
-                    <TableCell className={cellClasses}>
-                      <XSkeleton variant="text" className="h-4 w-4" />
-                    </TableCell>
-                  )}
-                  {columns.map((column) => (
-                    <TableCell key={column.key} className={cellClasses}>
-                      <XSkeleton variant="text" className="h-4" />
-                    </TableCell>
-                  ))}
-                </TableRow>
-              ))
-            : rows.map((row) => (
-                <TableRow key={row.id} data-state={row.getIsSelected() ? "selected" : undefined}>
-                  {rowSelection && (
-                    <TableCell className={cellClasses}>
-                      <XCheckbox
-                        size="sm"
-                        aria-label={`选择第 ${row.index + 1} 行`}
-                        checked={row.getIsSelected()}
-                        onCheckedChange={(checked) => row.toggleSelected(Boolean(checked))}
-                      />
-                    </TableCell>
-                  )}
-                  {columns.map((column) => (
-                    <TableCell
-                      key={column.key}
-                      className={cn(cellClasses, alignClasses[column.align ?? "left"])}
-                    >
-                      {column.render
-                        ? column.render(row.original[column.key], row.original, row.index)
-                        : (row.original[column.key] as React.ReactNode)}
-                    </TableCell>
-                  ))}
-                </TableRow>
-              ))}
-          {!loading && rows.length === 0 && (
-            <TableRow>
-              <TableCell
-                colSpan={columns.length + (rowSelection ? 1 : 0)}
-                className="py-8 text-center text-muted-foreground"
-              >
-                {emptyText}
-              </TableCell>
-            </TableRow>
-          )}
-        </TableBody>
-      </Table>
-      {pagination !== false && total > 0 && (
-        <div className="flex justify-end">
-          <XPagination
-            current={current}
-            total={total}
-            pageSize={pageSize}
-            onChange={(page, size) => {
-              if (pagination && pagination.current == null) setInnerPage(page)
-              onPageChange?.(page, size)
-            }}
-          />
-        </div>
+            style={{ ...getColumnStyles(cell.column), ...(resolveValue(columnMeta(cell)?.style?.td, cell) as React.CSSProperties | undefined) }}
+          >
+            {flexRender(cell.column.columnDef.cell, cell.getContext())}
+          </td>
+        ))}
+      </tr>
+    )
+
+    if (row.getIsExpanded()) {
+      return (
+        <React.Fragment key={row.id}>
+          {tr}
+          <tr data-slot="tr" className={cn(ui?.tr)}>
+            <td colSpan={row.getVisibleCells().length} data-slot="td" className={cn(ui?.td)}>
+              {expandedSlot?.(row)}
+            </td>
+          </tr>
+        </React.Fragment>
+      )
+    }
+
+    return tr
+  }
+
+  const tableElement = (
+    <table data-slot="base" className={cn("min-w-full overflow-clip", ui?.base)}>
+      {caption != null && (
+        <caption data-slot="caption" className={cn("sr-only", ui?.caption)}>
+          {caption}
+        </caption>
       )}
-    </div>
+
+      <thead
+        data-slot="thead"
+        className={cn(
+          "relative",
+          stickyThead && "sticky inset-x-0 top-0 z-1 bg-background/75 backdrop-blur-sm",
+          ui?.thead,
+        )}
+      >
+        {table.getHeaderGroups().map((headerGroup) => (
+          <tr key={headerGroup.id} data-slot="tr" className={cn(ui?.tr)}>
+            {headerGroup.headers.map((header) => (
+              <th
+                key={header.id}
+                data-pinned={header.column.getIsPinned()}
+                scope={header.colSpan > 1 ? "colgroup" : "col"}
+                colSpan={header.colSpan > 1 ? header.colSpan : undefined}
+                rowSpan={header.rowSpan > 1 ? header.rowSpan : undefined}
+                aria-sort={getAriaSort(header)}
+                data-slot="th"
+                className={cn(
+                  "px-4 py-3.5 text-start text-sm font-semibold text-foreground [&:has([role=checkbox])]:pe-0",
+                  header.column.getIsPinned() && "sticky z-1 bg-background/75",
+                  resolveValue(columnMeta(header)?.class?.th, header),
+                  ui?.th,
+                )}
+                style={{ ...getColumnStyles(header.column), ...(resolveValue(columnMeta(header)?.style?.th, header) as React.CSSProperties | undefined) }}
+              >
+                {header.isPlaceholder ? null : flexRender(header.column.columnDef.header, header.getContext())}
+              </th>
+            ))}
+          </tr>
+        ))}
+
+        <tr data-slot="separator" className={cn("absolute start-0 z-1 h-px w-full bg-border", ui?.separator)} />
+      </thead>
+
+      <tbody
+        data-slot="tbody"
+        className={cn(
+          "isolate divide-y divide-border",
+          "[&>tr]:data-[selectable=true]:hover:bg-muted/50 [&>tr]:data-[selectable=true]:outline-primary-6/25 [&>tr]:data-[selectable=true]:focus-visible:outline-3 [&>tr]:data-[selectable=true]:-outline-offset-3",
+          ui?.tbody,
+        )}
+      >
+        {bodyTop}
+
+        {rows.length > 0 ? (
+          rows.map((row) => renderRow(row))
+        ) : loading && loadingSlot != null ? (
+          <tr>
+            <td colSpan={table.getVisibleLeafColumns().length} data-slot="loading" className={cn("py-6 text-center", ui?.loading)}>
+              {loadingSlot}
+            </td>
+          </tr>
+        ) : loading ? (
+          <tr>
+            <td colSpan={table.getVisibleLeafColumns().length} data-slot="loading" className={cn("py-6", ui?.loading)}>
+              <div className="flex flex-col gap-2">
+                {[0, 1, 2].map((index) => (
+                  <XSkeleton key={index} variant="text" className="h-4" />
+                ))}
+              </div>
+            </td>
+          </tr>
+        ) : (
+          <tr>
+            <td colSpan={table.getVisibleLeafColumns().length} data-slot="empty" className={cn("py-6 text-center text-sm text-muted-foreground", ui?.empty)}>
+              {emptySlot ?? empty}
+            </td>
+          </tr>
+        )}
+
+        {bodyBottom}
+      </tbody>
+
+      {hasFooter && (
+        <tfoot
+          data-slot="tfoot"
+          className={cn(
+            "relative [&>[data-slot=separator]]:z-2",
+            stickyTfoot && "sticky inset-x-0 bottom-0 z-1 bg-background/75 backdrop-blur-sm",
+            ui?.tfoot,
+          )}
+        >
+          <tr data-slot="separator" className={cn("absolute start-0 z-1 h-px w-full bg-border", ui?.separator)} />
+
+          {table.getFooterGroups().map((footerGroup) => (
+            <tr key={footerGroup.id} data-slot="tr" className={cn(ui?.tr)}>
+              {footerGroup.headers.map((header) => (
+                <th
+                  key={header.id}
+                  data-pinned={header.column.getIsPinned()}
+                  colSpan={header.colSpan > 1 ? header.colSpan : undefined}
+                  rowSpan={header.rowSpan > 1 ? header.rowSpan : undefined}
+                  data-slot="th"
+                  className={cn(
+                    "px-4 py-3.5 text-start text-sm font-semibold text-foreground",
+                    header.column.getIsPinned() && "sticky z-1 bg-background/75",
+                    resolveValue(columnMeta(header)?.class?.th, header),
+                    ui?.th,
+                  )}
+                  style={{ ...getColumnStyles(header.column), ...(resolveValue(columnMeta(header)?.style?.th, header) as React.CSSProperties | undefined) }}
+                >
+                  {header.isPlaceholder ? null : flexRender(header.column.columnDef.footer, header.getContext())}
+                </th>
+              ))}
+            </tr>
+          ))}
+        </tfoot>
+      )}
+    </table>
   )
+
+  return useRender({
+    defaultTagName: "div",
+    props: {
+      "data-slot": "root",
+      className: cn("relative overflow-auto outline-primary-6/25 focus-visible:outline-3", ui?.root, className),
+      children: tableElement,
+    },
+    render,
+  })
 }
 
 /* ============================ vben 风格 hook ============================ */
 
+/** ref 暴露的表格控制接口 */
+export interface XTableApi<T extends RowData> {
+  /** TanStack 表格实例 */
+  tableApi: Table<T>
+}
+
 export interface XTableInstanceApi {
   /** 加载状态 */
   loading: boolean
-  /** 当前页码 */
-  page: number
   /** 设置加载状态 */
   setLoading: (loading: boolean) => void
-  /** 重新加载（回到第一页并触发 onReload） */
+  /** 重新加载(触发 onReload) */
   reload: () => void
-  /** 跳转页码 */
-  setPage: (page: number) => void
 }
 
 /** 创建与 api 绑定的表格：调用即得 [Table, tableApi] */
-export function useXTable<T extends Record<string, unknown>>(
+export function useXTable<T extends RowData>(
   options: Partial<XTableProps<T>> & { onReload?: () => void } = {},
 ) {
   const { onReload, ...componentProps } = options
   const store = React.useState(() =>
     createBoundStore({
       loading: componentProps.loading ?? false,
-      page: componentProps.pagination !== false ? (componentProps.pagination?.current ?? 1) : 1,
     }),
   )[0]
 
@@ -302,15 +609,11 @@ export function useXTable<T extends Record<string, unknown>>(
       get loading() {
         return store.get().loading
       },
-      get page() {
-        return store.get().page
-      },
       setLoading: (loading) => store.set({ loading }),
       reload: () => {
-        store.set({ page: 1, loading: true })
+        store.set({ loading: true })
         onReload?.()
       },
-      setPage: (page) => store.set({ page }),
     }),
     [],
   )
@@ -318,19 +621,7 @@ export function useXTable<T extends Record<string, unknown>>(
   const Table = React.useMemo(() => {
     return function BoundTable(props: Partial<XTableProps<T>> = {}) {
       const state = useBoundStore(store)
-      const pagination =
-        props.pagination === false
-          ? false
-          : { ...(componentProps.pagination ?? {}), ...(props.pagination ?? {}), current: state.page }
-      return (
-        <XTable
-          {...componentProps}
-          {...props}
-          loading={state.loading}
-          pagination={pagination}
-          onPageChange={(page) => store.set({ page })}
-        />
-      )
+      return <XTable {...componentProps} {...props} loading={state.loading} />
     }
   }, [])
 

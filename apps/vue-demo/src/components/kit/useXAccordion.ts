@@ -30,6 +30,8 @@ export function useXAccordion(options: { items?: AccordionDataItem[]; defaultVal
           {
             ...attrs,
             ...componentProps,
+            /* hook 的 api 以数组管理展开项，默认多开 */
+            multiple: componentProps.multiple ?? true,
             modelValue: state.value,
             'onUpdate:modelValue': (value: string | string[]) => {
               state.value = Array.isArray(value) ? value : [value]

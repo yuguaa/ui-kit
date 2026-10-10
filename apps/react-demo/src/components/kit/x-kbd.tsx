@@ -1,9 +1,15 @@
 import * as React from "react"
+import { useRender } from "@base-ui/react/use-render"
 import { cn } from "@/lib/utils"
 
 export type XKbdSize = "xs" | "sm" | "md" | "lg" | "xl"
 export type XKbdColor = "primary" | "secondary" | "neutral" | "success" | "info" | "warning" | "error"
 export type XKbdVariant = "solid" | "outline" | "soft" | "subtle"
+
+/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
+export interface XKbdUi {
+  base?: string
+}
 
 const kbdSizeClasses: Record<XKbdSize, string> = {
   xs: "h-4 min-w-4 px-1 text-[10px]",
@@ -53,7 +59,7 @@ const kbdColorClasses: Record<XKbdVariant, Record<XKbdColor, string>> = {
   },
 }
 
-export interface XKbdProps extends React.ComponentProps<"kbd"> {
+export interface XKbdProps extends Omit<React.ComponentProps<"kbd">, "children"> {
   /** 按键内容 */
   value?: string
   /** 预设样式 */
@@ -62,20 +68,31 @@ export interface XKbdProps extends React.ComponentProps<"kbd"> {
   color?: XKbdColor
   /** 尺寸 */
   size?: XKbdSize
+  /** 渲染为指定元素 */
+  render?: React.ReactElement
+  /** 主题插槽类名 */
+  ui?: XKbdUi
+  children?: React.ReactNode
 }
 
-export function XKbd({ value, variant = "outline", color = "neutral", size = "md", className, children, ...props }: XKbdProps) {
-  return (
-    <kbd
-      className={cn(
+export const XKbd = React.forwardRef<HTMLElement, XKbdProps>(function XKbd(
+  { value, variant = "outline", color = "neutral", size = "md", render, ui, className, children, ...rest },
+  ref,
+) {
+  return useRender({
+    render,
+    ref,
+    props: {
+      "data-slot": "kbd",
+      className: cn(
         "inline-flex items-center justify-center rounded-sm font-sans font-medium uppercase shadow-xs",
         kbdColorClasses[variant][color],
         kbdSizeClasses[size],
+        ui?.base,
         className,
-      )}
-      {...props}
-    >
-      {value ?? children}
-    </kbd>
-  )
-}
+      ),
+      children: value ?? children,
+      ...rest,
+    },
+  })
+})

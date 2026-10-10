@@ -8,6 +8,12 @@ import {
 import { createBoundStore, useBoundStore } from "@/lib/kit/bound-store"
 import { cn } from "@/lib/utils"
 
+/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
+export interface XCollapsibleUi {
+  root?: string
+  content?: string
+}
+
 export interface XCollapsibleProps {
   /** 是否展开 */
   open?: boolean
@@ -15,7 +21,13 @@ export interface XCollapsibleProps {
   disabled?: boolean
   /** 默认展开 */
   defaultOpen?: boolean
-  /** 触发器内容 */
+  /** 隐藏时是否卸载内容 */
+  unmountOnHide?: boolean
+  /** 渲染为指定元素 */
+  render?: React.ReactElement
+  /** 主题插槽类名 */
+  ui?: XCollapsibleUi
+  /** 触发器内容；传元素时合并为触发器本身（等价 Vue 侧 as-child） */
   trigger?: React.ReactNode
   /** 折叠内容 */
   children?: React.ReactNode
@@ -30,7 +42,18 @@ export interface XCollapsibleApi {
 
 export const XCollapsible = React.forwardRef<XCollapsibleApi, XCollapsibleProps>(
   function XCollapsible(
-    { open: openProp, disabled = false, defaultOpen = false, trigger, children, onOpenChange, className },
+    {
+      open: openProp,
+      disabled = false,
+      defaultOpen = false,
+      unmountOnHide = true,
+      render,
+      ui,
+      trigger,
+      children,
+      onOpenChange,
+      className,
+    },
     ref,
   ) {
     const [innerOpen, setInnerOpen] = React.useState(defaultOpen)
@@ -46,23 +69,39 @@ export const XCollapsible = React.forwardRef<XCollapsibleApi, XCollapsibleProps>
 
     return (
       <Collapsible
+        render={render}
         open={open}
         disabled={disabled}
+        defaultOpen={defaultOpen}
         onOpenChange={(next) => {
           if (openProp == null) setInnerOpen(next)
           onOpenChange?.(next)
         }}
-        className={cn("flex flex-col gap-1", className)}
+        className={cn("flex flex-col gap-1", ui?.root, className)}
       >
         <CollapsibleTrigger
           render={
-            <button type="button" className="inline-flex w-fit cursor-pointer items-center gap-1 text-sm font-medium outline-none hover:underline">
-              {trigger ?? "展开详情"}
-              <ChevronDown className={cn("size-4 transition-transform", open && "rotate-180")} />
-            </button>
+            React.isValidElement(trigger) ? (
+              trigger
+            ) : (
+              <button
+                type="button"
+                className="inline-flex w-fit cursor-pointer items-center gap-1 text-sm font-medium outline-none hover:underline"
+              >
+                {trigger ?? "展开详情"}
+                <ChevronDown
+                  className={cn("size-4 transition-transform", open && "rotate-180")}
+                />
+              </button>
+            )
           }
         />
-        <CollapsibleContent className="text-sm text-muted-foreground">{children}</CollapsibleContent>
+        <CollapsibleContent
+          keepMounted={!unmountOnHide}
+          className={cn("text-sm text-muted-foreground", ui?.content)}
+        >
+          {children}
+        </CollapsibleContent>
       </Collapsible>
     )
   },

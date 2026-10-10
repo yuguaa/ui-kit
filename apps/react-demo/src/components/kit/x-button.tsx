@@ -1,6 +1,6 @@
 import * as React from "react"
 import { LoaderCircle } from "lucide-react"
-import { buttonVariants } from "@/components/ui/button"
+import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
 export type XButtonVariant = "solid" | "outline" | "soft" | "ghost" | "subtle" | "link"
@@ -119,6 +119,20 @@ export interface XButtonProps
   block?: boolean
   /** 方形按钮，图标场景等边距 */
   square?: boolean
+  /** 文本内容（等价于子元素） */
+  label?: string
+  /** 激活态：配合 activeColor / activeVariant 使用 */
+  active?: boolean
+  /** 激活态颜色 */
+  activeColor?: XButtonColor
+  /** 激活态样式 */
+  activeVariant?: XButtonVariant
+  /** 点击回调返回 Promise 时自动进入加载态 */
+  loadingAuto?: boolean
+  /** 渲染为指定元素 */
+  render?: React.ReactElement
+  /** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
+  ui?: XButtonUi
   /** 前置图标 */
   leading?: React.ReactNode
   /** 后置图标 */
@@ -126,34 +140,87 @@ export interface XButtonProps
   children?: React.ReactNode
 }
 
+/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
+export interface XButtonUi {
+  base?: string
+  label?: string
+  leadingIcon?: string
+  trailingIcon?: string
+}
+
 export const XButton = React.forwardRef<HTMLButtonElement, XButtonProps>(function XButton(
-  { variant = "solid", size = "md", color = "primary", loading = false, block = false, square = false, leading, trailing, children, className, disabled, ...rest },
+  {
+    variant = "solid",
+    size = "md",
+    color = "primary",
+    loading = false,
+    block = false,
+    square = false,
+    label,
+    active = false,
+    activeColor,
+    activeVariant,
+    loadingAuto = false,
+    render,
+    ui,
+    leading,
+    trailing,
+    children,
+    className,
+    disabled,
+    onClick,
+    ...rest
+  },
   ref,
 ) {
-  const atomVariant = atomVariantMap[variant]
+  /* loadingAuto：点击回调返回 Promise 时自动进入加载态 */
+  const [autoLoading, setAutoLoading] = React.useState(false)
+  const isLoading = loading || autoLoading
+  const isDisabled = disabled || isLoading
+
+  /* 激活态的颜色与样式覆盖 */
+  const resolvedVariant = active && activeVariant ? activeVariant : variant
+  const resolvedColor = active && activeColor ? activeColor : color
+  const atomVariant = atomVariantMap[resolvedVariant]
   const atomSize = square ? atomSquareSizeMap[size] : atomSizeMap[size]
-  const isDisabled = disabled || loading
+
+  function handleClick(event: React.MouseEvent<HTMLButtonElement>) {
+    const result = onClick?.(event) as unknown
+    if (!loadingAuto || result == null || typeof (result as Promise<unknown>).then !== "function") return
+    setAutoLoading(true)
+    void (result as Promise<unknown>).finally(() => setAutoLoading(false))
+  }
+
   return (
-    <button
+    <Button
       ref={ref}
-      data-slot="button"
+      render={render}
       data-variant={atomVariant}
       data-size={atomSize}
+      variant={atomVariant}
+      size={atomSize}
       className={cn(
-        buttonVariants({ variant: atomVariant, size: atomSize }),
-        buttonColorStyles[color][variant],
+        buttonColorStyles[resolvedColor][resolvedVariant],
         square ? buttonSquareSizeOverrides[size] : buttonSizeOverrides[size],
         block && "w-full",
-        loading && "opacity-60",
+        isLoading && "opacity-60",
+        ui?.base,
         className,
       )}
       disabled={isDisabled}
-      aria-busy={loading || undefined}
+      aria-busy={isLoading || undefined}
+      onClick={handleClick}
       {...rest}
     >
-      {loading ? <LoaderCircle className="animate-spin" aria-hidden="true" /> : leading}
-      {children}
+      {isLoading ? (
+        <LoaderCircle className={cn("animate-spin", ui?.leadingIcon)} aria-hidden="true" />
+      ) : (
+        leading
+      )}
+      {(label != null || children != null) && (
+        <span className={cn("truncate", ui?.label)}>{children ?? label}</span>
+      )}
       {trailing}
-    </button>
+    </Button>
   )
 })

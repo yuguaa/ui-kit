@@ -1,37 +1,33 @@
 /**
  * XToast 消息通知 API：操作后的轻量级全局消息通知。
  * 用法：应用根部挂载 XToaster 组件，任意位置调用 useToast().show / .dismiss。
+ * 选项与 Nuxt UI Toast 对齐：icon / avatar / actions / close / closeIcon /
+ * orientation / progress / ui，title / description / actions / close 支持
+ * 传入组件自定义渲染（等价同名插槽）。
  */
-import { toast as sonnerToast, type ExternalToast } from 'vue-sonner'
+import { toast as sonnerToast } from 'vue-sonner'
+import XToastItem from './XToast.vue'
+import type { ToastProps } from './XToast.vue'
 
+export type { ToastUi } from './XToast.vue'
+
+/** 语义色 */
 export type ToastColor = 'primary' | 'success' | 'warning' | 'error'
 
-export interface XToastOptions {
-  /** 通知标题 */
-  title?: string
-  /** 说明文字 */
-  description?: string
-  /** 语义色 */
-  color?: ToastColor
-  /** 展示时长（ms） */
-  duration?: number
-  /** 操作按钮，点击后关闭通知 */
-  action?: { label: string; onClick: () => void }
-  /** 取消按钮，点击后关闭通知 */
-  cancel?: { label: string; onClick: () => void }
-}
-
-const sonnerCall = {
-  primary: (title: string, data: ExternalToast) => sonnerToast(title, data),
-  success: sonnerToast.success,
-  warning: sonnerToast.warning,
-  error: sonnerToast.error,
+/** 显示通知的选项（不含内部回调） */
+export type XToastOptions = Omit<ToastProps, 'onCloseToast' | 'isPaused'> & {
+  /** 通知 id，相同 id 的调用会复用同一条通知 */
+  id?: string | number
 }
 
 /** 显示通知，返回 toast id */
 function show(options: XToastOptions): string | number {
-  const { title = '', description, color = 'primary', duration = 3000, action, cancel } = options
-  return sonnerCall[color](title, { description, duration, action, cancel })
+  const { id, duration = 3000, ...rest } = options
+  return sonnerToast.custom(XToastItem, {
+    componentProps: { ...rest, duration },
+    duration,
+    id,
+  })
 }
 
 /** 关闭通知 */

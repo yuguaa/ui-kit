@@ -1,13 +1,29 @@
 import * as React from "react"
-import { Slider } from "@/components/ui/slider"
+import { Slider as SliderPrimitive } from "@base-ui/react/slider"
+import { XTooltip, type XTooltipProps } from "@/components/kit/x-tooltip"
 import { cn } from "@/lib/utils"
 
+export type XSliderColor = "primary" | "secondary" | "neutral" | "success" | "info" | "warning" | "error"
+export type XSliderSize = "xs" | "sm" | "md" | "lg" | "xl"
+export type XSliderOrientation = "horizontal" | "vertical"
+
+/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
+export interface XSliderUi {
+  root?: string
+  track?: string
+  range?: string
+  thumb?: string
+}
+
 export interface XSliderProps
-  extends Omit<React.ComponentProps<typeof Slider>, "value" | "defaultValue" | "onChange"> {
-  /** 绑定值 */
-  value?: number[]
-  /** 默认值 */
-  defaultValue?: number[]
+  extends Omit<
+    SliderPrimitive.Root.Props,
+    "value" | "defaultValue" | "onValueChange" | "onValueCommitted" | "onChange" | "render" | "children" | "className"
+  > {
+  /** 绑定值：单值或双值区间 */
+  value?: number | number[]
+  /** 默认值（非受控） */
+  defaultValue?: number | number[]
   /** 最小值 */
   min?: number
   /** 最大值 */
@@ -16,12 +32,55 @@ export interface XSliderProps
   step?: number
   /** 是否禁用 */
   disabled?: boolean
-  /** 是否显示当前值提示 */
-  tooltip?: boolean
+  /** 悬浮显示当前值提示，可为 XTooltip 属性对象 */
+  tooltip?: boolean | Partial<Omit<XTooltipProps, "text" | "className">>
   /** 滑块方向 */
-  orientation?: "horizontal" | "vertical"
-  /** 值变化回调（单值） */
-  onChange?: (value: number) => void
+  orientation?: XSliderOrientation
+  /** 指示条与拇指颜色 */
+  color?: XSliderColor
+  /** 尺寸 */
+  size?: XSliderSize
+  /** 渲染为指定元素 */
+  render?: React.ReactElement
+  /** 主题插槽类名 */
+  ui?: XSliderUi
+  /** 值变化回调（对应 Vue 侧 update:modelValue） */
+  onValueChange?: (value: number | number[]) => void
+  /** 值提交（拖动结束）回调，event.target.value 为提交值 */
+  onChange?: (event: { target: { value: number | number[] } }) => void
+  className?: string
+}
+
+/** 颜色映射：指示条背景与拇指描边 */
+const sliderColorClasses: Record<XSliderColor, { range: string; thumb: string }> = {
+  primary: { range: "bg-primary-6", thumb: "ring-primary-6 outline-primary-6/25" },
+  secondary: { range: "bg-secondary", thumb: "ring-secondary outline-secondary/25" },
+  neutral: { range: "bg-neutral-6", thumb: "ring-neutral-6 outline-neutral-6/25" },
+  success: { range: "bg-success-6", thumb: "ring-success-6 outline-success-6/25" },
+  info: { range: "bg-info-6", thumb: "ring-info-6 outline-info-6/25" },
+  warning: { range: "bg-warning-6", thumb: "ring-warning-6 outline-warning-6/25" },
+  error: { range: "bg-error-6", thumb: "ring-error-6 outline-error-6/25" },
+}
+
+const thumbSizeClasses: Record<XSliderSize, string> = {
+  xs: "size-3",
+  sm: "size-3.5",
+  md: "size-4",
+  lg: "size-4.5",
+  xl: "size-5",
+}
+
+const trackSizeClasses: Record<XSliderSize, Record<XSliderOrientation, string>> = {
+  xs: { horizontal: "h-[6px]", vertical: "w-[6px]" },
+  sm: { horizontal: "h-[7px]", vertical: "w-[7px]" },
+  md: { horizontal: "h-[8px]", vertical: "w-[8px]" },
+  lg: { horizontal: "h-[9px]", vertical: "w-[9px]" },
+  xl: { horizontal: "h-[10px]", vertical: "w-[10px]" },
+}
+
+function toArray(value: number | number[] | null | undefined) {
+  if (value == null) return undefined
+  return typeof value === "number" ? [value] : value
 }
 
 export const XSlider = React.forwardRef<HTMLDivElement, XSliderProps>(function XSlider(
@@ -34,49 +93,102 @@ export const XSlider = React.forwardRef<HTMLDivElement, XSliderProps>(function X
     disabled = false,
     tooltip = false,
     orientation = "horizontal",
+    color = "primary",
+    size = "md",
+    render,
+    ui,
+    onValueChange,
     onChange,
     className,
-    ...props
+    ...rest
   },
   ref,
 ) {
-  /* 不受控时跟随拖动更新，供数值提示展示 */
-  const [innerValue, setInnerValue] = React.useState<number>()
-  const current = value?.[0] ?? innerValue ?? defaultValue?.[0] ?? min
-  const percent = max === min ? 0 : ((current - min) / (max - min)) * 100
-  const vertical = orientation === "vertical"
+  /* 非受控时跟随拖动更新，供数值提示展示 */
+  const [innerValues, setInnerValues] = React.useState<number[] | null>(null)
+  const values: number[] = value != null ? (toArray(value) ?? [min]) : innerValues ?? toArray(defaultValue) ?? [min]
+  const thumbCount = values.length
 
   return (
-    <div className={cn("relative", vertical ? "h-full min-h-40 w-fit" : "w-full", className)}>
-      <Slider
-        ref={ref}
-        value={value}
-        defaultValue={defaultValue}
-        min={min}
-        max={max}
-        step={step}
-        disabled={disabled}
-        orientation={orientation}
-        className={cn(vertical && "h-full")}
-        onValueChange={(next) => {
-          /* 原子层的值可能是单值或数组，统一取第一个 */
-          const values = Array.isArray(next) ? next : [next]
-          if (value == null) setInnerValue(values[0])
-          onChange?.(values[0] ?? min)
-        }}
-        {...props}
-      />
-      {tooltip && (
-        <span
-          className={cn(
-            "bg-foreground text-background pointer-events-none absolute rounded-md px-1.5 py-0.5 text-xs tabular-nums",
-            vertical ? "left-full ml-2 -translate-y-1/2" : "-translate-x-1/2 -translate-y-6",
-          )}
-          style={vertical ? { top: `${100 - percent}%` } : { left: `${percent}%` }}
-        >
-          {current}
-        </span>
+    <SliderPrimitive.Root
+      ref={ref}
+      render={render}
+      value={value}
+      defaultValue={defaultValue}
+      min={min}
+      max={max}
+      step={step}
+      disabled={disabled}
+      orientation={orientation}
+      data-slot="root"
+      className={cn(
+        "relative flex items-center select-none touch-none",
+        orientation === "horizontal" ? "w-full" : "flex-col h-full",
+        disabled && "opacity-75 cursor-not-allowed",
+        ui?.root,
+        className,
       )}
-    </div>
+      onValueChange={(next) => {
+        if (value == null) setInnerValues(toArray(next) ?? null)
+        onValueChange?.(next as number | number[])
+      }}
+      onValueCommitted={(next) => {
+        onChange?.({ target: { value: next as number | number[] } })
+      }}
+      {...rest}
+    >
+      <SliderPrimitive.Control
+        className={cn("relative flex items-center touch-none", orientation === "horizontal" ? "w-full" : "h-full flex-col")}
+      >
+        <SliderPrimitive.Track
+          data-slot="track"
+          className={cn(
+            "relative bg-muted overflow-hidden rounded-full grow",
+            trackSizeClasses[size][orientation],
+            orientation === "horizontal" ? "w-full" : "h-full",
+            ui?.track,
+          )}
+        >
+          <SliderPrimitive.Indicator
+            data-slot="range"
+            className={cn(
+              "absolute rounded-full",
+              sliderColorClasses[color].range,
+              orientation === "horizontal" ? "h-full" : "w-full",
+              ui?.range,
+            )}
+          />
+        </SliderPrimitive.Track>
+
+        {Array.from({ length: thumbCount }, (_, index) => {
+          const thumbElement = (
+            <SliderPrimitive.Thumb
+              key={index}
+              data-slot="thumb"
+              aria-label={thumbCount > 1 ? `Thumb ${index + 1}` : "Thumb"}
+              className={cn(
+                "rounded-full bg-background ring-2 focus-visible:outline-3 focus-visible:outline-offset-2",
+                thumbSizeClasses[size],
+                sliderColorClasses[color].thumb,
+                ui?.thumb,
+              )}
+            />
+          )
+
+          if (!tooltip) return thumbElement
+
+          const tooltipProps = typeof tooltip === "object" ? tooltip : {}
+          return (
+            <XTooltip
+              key={index}
+              text={thumbCount > 1 ? String(values[index]) : String(values[0])}
+              {...tooltipProps}
+            >
+              {thumbElement}
+            </XTooltip>
+          )
+        })}
+      </SliderPrimitive.Control>
+    </SliderPrimitive.Root>
   )
 })

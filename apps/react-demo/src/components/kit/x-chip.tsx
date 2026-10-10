@@ -1,10 +1,12 @@
 import * as React from "react"
+import { useRender } from "@base-ui/react/use-render"
 import { X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
 export type XChipColor = "primary" | "secondary" | "neutral" | "success" | "info" | "warning" | "error"
 export type XChipSize = "xs" | "sm" | "md" | "lg" | "xl"
+export type XChipPosition = "top-right" | "bottom-right" | "top-left" | "bottom-left"
 
 const chipColorClasses: Record<XChipColor, string> = {
   primary: "border-primary-3 bg-primary-1 text-primary-7",
@@ -24,53 +26,115 @@ const chipSizeClasses: Record<XChipSize, string> = {
   xl: "h-9 gap-1.5 px-3.5 text-base",
 }
 
-export interface XChipProps extends Omit<React.ComponentProps<"span">, "color"> {
+const chipPositionClasses: Record<XChipPosition, string> = {
+  "top-right": "top-0 right-0",
+  "bottom-right": "bottom-0 right-0",
+  "top-left": "top-0 left-0",
+  "bottom-left": "bottom-0 left-0",
+}
+
+/** 非 inset 时外移半个身位，贴合圆角元素边沿 */
+const chipTranslateClasses: Record<XChipPosition, string> = {
+  "top-right": "-translate-y-1/2 translate-x-1/2",
+  "bottom-right": "translate-y-1/2 translate-x-1/2",
+  "top-left": "-translate-y-1/2 -translate-x-1/2",
+  "bottom-left": "translate-y-1/2 -translate-x-1/2",
+}
+
+/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
+export interface XChipUi {
+  root?: string
+  base?: string
+}
+
+export interface XChipProps extends Omit<React.ComponentProps<"div">, "color" | "content"> {
+  /** 渲染为指定元素 */
+  render?: React.ReactElement
+  /** 芯片文本 */
+  text?: string | number
   /** 标签颜色 */
   color?: XChipColor
   /** 标签尺寸 */
   size?: XChipSize
-  /** 是否可关闭 */
+  /** 角标位置 */
+  position?: XChipPosition
+  /** 位于圆角元素内部时保持位置，不加外移 */
+  inset?: boolean
+  /** 相对父容器渲染，不做绝对定位 */
+  standalone?: boolean
+  /** 控制本体显隐，与 Nuxt UI 的 show 属性对齐 */
+  show?: boolean
+  /** 是否可关闭（kit 既有属性） */
   closable?: boolean
   /** 标签图标 */
   icon?: React.ReactNode
+  /** 芯片内容，优先于 children 与 text */
+  content?: React.ReactNode
   /** 关闭时回调 */
   onClose?: (event: React.MouseEvent<HTMLButtonElement>) => void
+  /** 主题插槽类名 */
+  ui?: XChipUi
+  children?: React.ReactNode
 }
 
 export function XChip({
+  render,
+  text,
   color = "primary",
   size = "md",
+  position = "top-right",
+  inset = false,
+  standalone = false,
+  show = true,
   closable = false,
   icon,
+  content,
   onClose,
+  ui,
   className,
   children,
-  ...props
+  ...rest
 }: XChipProps) {
-  return (
-    <span
-      className={cn(
-        "inline-flex items-center rounded-full border font-medium whitespace-nowrap",
-        chipColorClasses[color],
-        chipSizeClasses[size],
+  return useRender({
+    defaultTagName: "div",
+    props: {
+      className: cn(
+        "relative inline-flex shrink-0 items-center justify-center",
+        !standalone && "absolute",
+        chipPositionClasses[position],
+        !standalone && !inset && chipTranslateClasses[position],
+        ui?.root,
         className,
-      )}
-      {...props}
-    >
-      {icon}
-      {children}
-      {closable && (
-        <Button
-          type="button"
-          variant="ghost"
-          size="icon-xs"
-          aria-label="close"
-          onClick={onClose}
-          className="-mr-1 size-4 rounded-full opacity-70 hover:bg-transparent hover:opacity-100 [&_svg]:size-3"
+      ),
+      children: show ? (
+        <span
+          data-slot="base"
+          className={cn(
+            "inline-flex items-center justify-center rounded-full border font-medium whitespace-nowrap",
+            chipColorClasses[color],
+            chipSizeClasses[size],
+            ui?.base,
+          )}
         >
-          <X />
-        </Button>
-      )}
-    </span>
-  )
+          {icon}
+          {content ?? children ?? text}
+          {closable && (
+            <Button
+              type="button"
+              variant="ghost"
+              size="icon-xs"
+              aria-label="close"
+              onClick={onClose}
+              className="-mr-1 size-4 rounded-full opacity-70 hover:bg-transparent hover:opacity-100 [&_svg]:size-3"
+            >
+              <X />
+            </Button>
+          )}
+        </span>
+      ) : null,
+      ...rest,
+    },
+    render,
+    state: { slot: "root" },
+  })
 }

@@ -1,14 +1,21 @@
 import * as React from "react"
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb"
-import { XLink } from "@/components/kit/x-link"
+import { useRender } from "@base-ui/react/use-render"
+import { XIcon } from "@/components/kit/x-icon"
 import { cn } from "@/lib/utils"
+
+export type XBreadcrumbColor = "primary" | "secondary" | "neutral" | "success" | "info" | "warning" | "error"
+
+/** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
+export interface XBreadcrumbUi {
+  root?: string
+  list?: string
+  item?: string
+  link?: string
+  linkLeadingIcon?: string
+  linkLabel?: string
+  separator?: string
+  separatorIcon?: string
+}
 
 export interface XBreadcrumbItem {
   /** 标题 */
@@ -17,6 +24,19 @@ export interface XBreadcrumbItem {
   href?: string
   /** 前置图标 */
   icon?: React.ReactNode
+  /** 强制激活态（默认末项激活） */
+  active?: boolean
+}
+
+/** 激活项文字颜色（与 XButton link 变体一致的字面量） */
+const breadcrumbColorClasses: Record<XBreadcrumbColor, string> = {
+  primary: "text-primary-6",
+  secondary: "text-secondary-foreground",
+  neutral: "text-neutral-6",
+  success: "text-success-6",
+  info: "text-info-6",
+  warning: "text-warning-7",
+  error: "text-error-6",
 }
 
 export interface XBreadcrumbProps<T extends XBreadcrumbItem = XBreadcrumbItem> {
@@ -24,46 +44,91 @@ export interface XBreadcrumbProps<T extends XBreadcrumbItem = XBreadcrumbItem> {
   items: T[]
   /** 标题字段名，items 可用自定义字段承载标题 */
   labelKey?: string
-  /** 分隔符 */
-  separator?: string
-  /** 图标分隔符，设置后优先于 separator 文本 */
+  /** 激活项文字颜色 */
+  color?: XBreadcrumbColor
+  /** 图标分隔符，设置后替换默认 chevron-right 图标 */
   separatorIcon?: React.ReactNode
+  /** 分隔符插槽，设置后替换整个分隔符内容 */
+  separator?: React.ReactNode
   /** 是否禁用 */
   disabled?: boolean
+  /** 渲染为指定元素 */
+  render?: React.ReactElement
+  /** 主题插槽类名 */
+  ui?: XBreadcrumbUi
   className?: string
 }
 
 export function XBreadcrumb<T extends XBreadcrumbItem>({
   items,
   labelKey = "title",
-  separator = "/",
+  color = "primary",
   separatorIcon,
+  separator,
   disabled = false,
+  render,
+  ui,
   className,
 }: XBreadcrumbProps<T>) {
-  return (
-    <Breadcrumb className={cn(disabled && "pointer-events-none opacity-50", className)}>
-      <BreadcrumbList>
-        {items.map((item, index) => {
-          const isLast = index === items.length - 1
-          const label = String((item as Record<string, unknown>)[labelKey] ?? "")
-          return (
-            <React.Fragment key={`${label}-${index}`}>
-              <BreadcrumbItem>
-                {isLast ? (
-                  <BreadcrumbPage className="inline-flex items-center gap-1">
-                    {item.icon}
-                    {label}
-                  </BreadcrumbPage>
-                ) : (
-                  <BreadcrumbLink render={<XLink to={item.href} color="neutral" leading={item.icon}>{label}</XLink>} />
+  return useRender({
+    defaultTagName: "nav",
+    render,
+    props: {
+      "aria-label": "breadcrumb",
+      "data-slot": "root",
+      className: cn("relative min-w-0", disabled && "pointer-events-none opacity-50", ui?.root, className),
+      children: (
+        <ol data-slot="list" className={cn("flex items-center gap-1.5", ui?.list)}>
+          {items.map((item, index) => {
+            const isLast = index === items.length - 1
+            const active = item.active ?? isLast
+            const label = String((item as Record<string, unknown>)[labelKey] ?? "")
+
+            /* 链接元素：有 href 渲染 a，末项渲染 span */
+            const linkProps = {
+              "data-slot": "link",
+              "aria-current": active && isLast ? ("page" as const) : undefined,
+              className: cn(
+                "group relative flex items-center gap-1.5 text-sm min-w-0 rounded-md",
+                active ? cn("font-semibold", breadcrumbColorClasses[color]) : "text-muted-foreground font-medium",
+                item.href != null && !active && "hover:text-foreground transition-colors",
+                ui?.link,
+              ),
+              children: (
+                <>
+                  {item.icon != null && (
+                    <span data-slot="linkLeadingIcon" className={cn("shrink-0 size-5", ui?.linkLeadingIcon)}>
+                      {item.icon}
+                    </span>
+                  )}
+                  {label !== "" && (
+                    <span data-slot="linkLabel" className={cn("truncate", ui?.linkLabel)}>
+                      {label}
+                    </span>
+                  )}
+                </>
+              ),
+            }
+
+            return (
+              <React.Fragment key={index}>
+                <li data-slot="item" className={cn("flex min-w-0", ui?.item)}>
+                  {item.href != null ? <a href={item.href} {...linkProps} /> : <span {...linkProps} />}
+                </li>
+                {!isLast && (
+                  <li role="presentation" aria-hidden="true" data-slot="separator" className={cn("flex", ui?.separator)}>
+                    {separator ?? (
+                      separatorIcon ?? (
+                        <XIcon name="chevron-right" data-slot="separatorIcon" className={cn("shrink-0 size-5 text-muted-foreground", ui?.separatorIcon)} />
+                      )
+                    )}
+                  </li>
                 )}
-              </BreadcrumbItem>
-              {!isLast && <BreadcrumbSeparator>{separatorIcon ?? separator}</BreadcrumbSeparator>}
-            </React.Fragment>
-          )
-        })}
-      </BreadcrumbList>
-    </Breadcrumb>
-  )
+              </React.Fragment>
+            )
+          })}
+        </ol>
+      ),
+    },
+  })
 }
