@@ -181,8 +181,12 @@ export function XRadioGroup({
     return raw == null ? undefined : (raw as React.ReactNode)
   }
 
-  function itemId(option: XRadioOption): string | undefined {
-    return id == null ? undefined : `${id}:${itemValue(option)}`
+  /* 无显式 id 时用 useId 派生单项 id，保证 label 与单项控件关联 */
+  const generatedId = React.useId()
+  const groupId = id ?? generatedId
+
+  function itemId(option: XRadioOption): string {
+    return `${groupId}:${itemValue(option)}`
   }
 
   const fieldsetClass = cn(
@@ -287,7 +291,7 @@ export function XRadioGroup({
       defaultValue={defaultValue}
       onValueChange={onValueChange}
       disabled={disabled}
-      id={id}
+      id={groupId}
       data-slot="root"
       render={render}
       className={cn("relative", ui?.root, className)}

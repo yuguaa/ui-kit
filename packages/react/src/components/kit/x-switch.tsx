@@ -135,6 +135,9 @@ export const XSwitch = React.forwardRef<HTMLButtonElement, XSwitchProps>(functio
   },
   ref,
 ) {
+  /* 无显式 id 时用 useId 生成，保证 label 与控件正确关联 */
+  const generatedId = React.useId()
+  const controlId = id ?? generatedId
   const baseClass = cn(
     "inline-flex shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent outline-none transition-[background] duration-200 ease-out focus-visible:outline-3 data-unchecked:bg-input",
     sizeClasses[size].base,
@@ -164,7 +167,7 @@ export const XSwitch = React.forwardRef<HTMLButtonElement, XSwitchProps>(functio
       <div data-slot="container" className={cn("flex items-center", sizeClasses[size].container, ui?.container)}>
         <SwitchPrimitive.Root
           ref={ref}
-          id={id}
+          id={controlId}
           name={name}
           data-slot="base"
           checked={checked}
@@ -193,7 +196,7 @@ export const XSwitch = React.forwardRef<HTMLButtonElement, XSwitchProps>(functio
         <div data-slot="wrapper" className={cn("ms-2", sizeClasses[size].wrapper, ui?.wrapper)}>
           {label != null && (
             <Label
-              htmlFor={id}
+              htmlFor={controlId}
               className={cn(
                 "block font-medium text-foreground",
                 required && "after:content-['*'] after:ms-0.5 after:text-error",

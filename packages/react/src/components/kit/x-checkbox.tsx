@@ -139,6 +139,9 @@ export const XCheckbox = React.forwardRef<HTMLButtonElement, XCheckboxProps>(fun
   },
   ref,
 ) {
+  /* 无显式 id 时用 useId 生成，保证 label 与控件正确关联 */
+  const generatedId = React.useId()
+  const controlId = id ?? generatedId
   const rootClass = cn(
     "relative flex items-start",
     variant === "card" && cn(
@@ -208,7 +211,7 @@ export const XCheckbox = React.forwardRef<HTMLButtonElement, XCheckboxProps>(fun
   const control = (
     <CheckboxPrimitive.Root
       ref={ref}
-      id={id}
+      id={controlId}
       name={name}
       data-slot="base"
       value={value == null ? undefined : String(value)}
@@ -236,7 +239,7 @@ export const XCheckbox = React.forwardRef<HTMLButtonElement, XCheckboxProps>(fun
           {label != null && variant === "card" ? (
             <p data-slot="label" className={labelClass}>{label}</p>
           ) : label != null ? (
-            <Label htmlFor={id} className={labelClass}>
+            <Label htmlFor={controlId} className={labelClass}>
               {label}
             </Label>
           ) : null}
@@ -249,14 +252,14 @@ export const XCheckbox = React.forwardRef<HTMLButtonElement, XCheckboxProps>(fun
   if (render) {
     return React.cloneElement(render, {
       className: cn(render.props.className, rootClass),
-      htmlFor: variant === "card" ? id : undefined,
+      htmlFor: variant === "card" ? controlId : undefined,
       children: content,
     })
   }
 
   const RootTag = variant === "card" ? "label" : "div"
   return (
-    <RootTag data-slot="root" className={rootClass} htmlFor={variant === "card" ? id : undefined}>
+    <RootTag data-slot="root" className={rootClass} htmlFor={variant === "card" ? controlId : undefined}>
       {content}
     </RootTag>
   )

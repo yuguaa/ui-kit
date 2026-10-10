@@ -222,6 +222,7 @@ export function XListbox({
   const [innerValue, setInnerValue] = React.useState<unknown>(defaultValue)
   const currentValue = value !== undefined ? value : innerValue
   const [searchTerm, setSearchTerm] = React.useState("")
+  const listContainerRef = React.useRef<HTMLDivElement>(null)
 
   const labelField = labelKey || "label"
   const descriptionField = descriptionKey || "description"
@@ -364,6 +365,7 @@ export function XListbox({
       itemToStringLabel={(entry: any) => String(getField(entry, labelField) ?? entry ?? "")}
     >
       <Combobox.InputGroup
+        ref={listContainerRef}
         data-slot="root"
         render={render}
         className={cn(
@@ -374,9 +376,8 @@ export function XListbox({
           className,
         )}
         onClick={() => {
-          /* 内联列表：点击容器时聚焦过滤输入框 */
-          const input = document.querySelector<HTMLInputElement>("[data-slot='input']")
-          input?.focus()
+          /* 内联列表：点击容器时聚焦容器内的过滤输入框（作用域限定，避免误聚焦页面其他输入框） */
+          listContainerRef.current?.querySelector<HTMLInputElement>("[data-slot='input']")?.focus()
         }}
       >
         {showFilter && (
