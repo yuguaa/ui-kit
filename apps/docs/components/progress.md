@@ -58,17 +58,7 @@ npx shadcn-vue@latest add @ui-kit/x-progress
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| modelValue | number · null | null | 绑定值（支持 v-model）；null 表示不确定进度 |
-| max | number · Array | 100 | 最大进度值；传数组时渲染步骤条，值为每步文案 |
-| status | boolean | false | 显示当前进度百分比 |
-| inverted | boolean | false | 进度方向是否反转 |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 指示条与步骤文字颜色 |
-| orientation | horizontal · vertical | horizontal | 进度方向 |
-| animation | carousel · carousel-inverse · swing · elastic | carousel | 不确定进度的指示器动画 |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| ui | ProgressUi | - | 主题插槽类名 |
+<!--@include: ./api/progress.md-->
 
 ## ui 插槽
 

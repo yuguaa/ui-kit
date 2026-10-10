@@ -48,26 +48,7 @@ npx shadcn-vue@latest add @ui-kit/x-pagination
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| as | string · Component | nav | 渲染为指定元素或组件 |
-| page | number | - | 当前页码（受控，支持 v-model:page） |
-| defaultPage | number | - | 初始页码 |
-| total | number | 0 | 数据总数 |
-| itemsPerPage | number | 10 | 每页条数 |
-| showEdges | boolean | false | 始终显示第一页、最后一页与省略号 |
-| siblingCount | number | 2 | 当前页两侧的页码数量 |
-| disabled | boolean | false | 是否禁用 |
-| showControls | boolean | true | 是否显示首页、上一页、下一页与末页按钮 |
-| firstIcon / prevIcon / nextIcon / lastIcon / ellipsisIcon | IconName | - | 各控制按钮图标 |
-| color | ButtonColor | neutral | 页码按钮颜色 |
-| variant | ButtonVariant | outline | 页码按钮样式 |
-| size | ButtonSize | - | 页码按钮尺寸 |
-| activeColor | ButtonColor | primary | 激活页码颜色 |
-| activeVariant | ButtonVariant | solid | 激活页码样式 |
-| to | (page) => ButtonAs | - | 将页码控件渲染为链接 |
-| ui | PaginationUi | - | 主题插槽类名 |
-| class | string | - | 根元素类名 |
+<!--@include: ./api/pagination.md-->
 
 ## ui 插槽
 

@@ -70,22 +70,7 @@ npx shadcn-vue@latest add @ui-kit/x-badge
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| label | string · number | - | 徽标文本 |
-| count | number | - | 显示数字 |
-| dot | boolean | false | 圆点模式，不显示数字 |
-| overflowCount | number | 99 | 超出后显示 99+ |
-| variant | solid · outline · soft · subtle | solid | 预设样式 |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 徽标颜色 |
-| size | xs · sm · md · lg · xl | md | 徽标尺寸 |
-| square | boolean | false | 等边距模式，空徽标自动生效 |
-| icon | string（图标名） | - | 图标名，显示在左侧 |
-| leadingIcon | string（图标名） | - | 左侧图标名 |
-| trailingIcon | string（图标名） | - | 右侧图标名 |
-| avatar | BadgeAvatarProps | - | 左侧头像配置 |
-| as | string · Component | span | 渲染为指定元素或组件 |
-| ui | BadgeUi | - | 主题插槽类名 |
+<!--@include: ./api/badge.md-->
 
 ## ui 插槽
 

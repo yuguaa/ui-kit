@@ -80,25 +80,7 @@ npx shadcn-vue@latest add @ui-kit/x-alert
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| color | primary · secondary · neutral · success · info · warning · error | - | 语义色，缺省回退 type，最终 primary |
-| type | success · info · warning · error | - | 提示类型，作为 color 的回退 |
-| variant | solid · outline · soft · subtle | solid | 预设样式 |
-| orientation | vertical · horizontal | vertical | 内容与操作区的排列方向 |
-| title | string | - | 提示标题，与 message 并存且优先显示 |
-| message | string | - | 提示标题 |
-| description | string | - | 辅助说明文字 |
-| icon | string（图标名） | - | 图标名，leading 插槽的缺省内容之一 |
-| showIcon | boolean | false | 显示类型默认图标 |
-| avatar | AlertAvatarProps | - | 头像配置，leading 插槽的缺省内容之一 |
-| actions | AlertButtonProps[] | - | 操作按钮列表，整体透传给 XButton 并默认为 xs 尺寸 |
-| close | boolean · AlertButtonProps | false | 显示关闭按钮，点击后 open 置为 false；传对象时整体透传给 XButton |
-| closable | boolean | false | 显示关闭按钮 |
-| closeIcon | string（图标名） | x | 关闭按钮图标 |
-| open | boolean | true | 受控关闭模型（v-model:open） |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| ui | AlertUi | - | 主题插槽类名 |
+<!--@include: ./api/alert.md-->
 
 ## ui 插槽
 

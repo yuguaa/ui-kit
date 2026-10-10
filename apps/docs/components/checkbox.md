@@ -82,25 +82,7 @@ npx shadcn-vue@latest add @ui-kit/x-checkbox
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| modelValue | boolean · indeterminate | false | 是否选中（支持 v-model） |
-| disabled | boolean | false | 是否禁用 |
-| indeterminate | boolean | false | 半选状态 |
-| required | boolean | false | 必选项，label 后显示 * |
-| value | string · number | - | 选项的值 |
-| label | string | - | 选项文字 |
-| description | string | - | 选项文字下方的辅助说明 |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 选中与半选时指示块的颜色 |
-| variant | list · card | list | 展示形式，card 时整个卡片可点击 |
-| size | sm · md · lg | md | 控件尺寸 |
-| indicator | start · end · hidden | start | 指示块位置，hidden 时图标显示在 label 上方 |
-| highlight | boolean | false | 常显高亮聚焦环 |
-| icon | Component | check 图标 | 选中时显示的图标 |
-| indeterminateIcon | Component | minus 图标 | 半选时显示的图标 |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| ui | CheckboxUi | - | 主题插槽类名 |
-| class | string | - | 根元素类名 |
+<!--@include: ./api/checkbox.md-->
 
 ## ui 插槽
 

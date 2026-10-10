@@ -70,27 +70,7 @@ npx shadcn-vue@latest add @ui-kit/x-carousel
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| items | CarouselItem[] | [] | 轮播项数组 |
-| autoplay | boolean | false | 自动播放 |
-| interval | number | 3000 | 自动播放间隔（ms） |
-| loop | boolean | true | 循环播放 |
-| disabled | boolean | false | 是否禁用键盘切换 |
-| arrows | boolean | true | 是否显示左右切换按钮 |
-| dots | boolean | false | 是否显示指示点 |
-| orientation | horizontal · vertical | horizontal | 轮播方向 |
-| fade | boolean | false | 淡入淡出切换，每次只显示当前项 |
-| autoHeight | boolean | false | 容器高度跟随当前项 |
-| autoScroll | boolean · { speed, direction, stopOnInteraction } | false | 连续滚动 |
-| classNames | boolean · { loop, draggable, dragging, snapped, inView } | false | 类名钩子：loop / draggable 加在视口，dragging 拖拽期间加在视口，snapped / inView 加在轮播项 |
-| wheelGestures | boolean · { forceWheelAxis } | false | 滚轮手势切换 |
-| prev | XButtonProps | { variant: outline, color: neutral } | 上一页按钮配置 |
-| prevIcon | string · Component | chevron-left | 上一页按钮图标 |
-| next | XButtonProps | { variant: outline, color: neutral } | 下一页按钮配置 |
-| nextIcon | string · Component | chevron-right | 下一页按钮图标 |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| ui | CarouselUi | - | 主题插槽类名 |
+<!--@include: ./api/carousel.md-->
 
 ### CarouselItem
 

@@ -44,18 +44,7 @@ npx shadcn-vue@latest add @ui-kit/x-chip
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| text | string · number | - | 芯片文本 |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 标签颜色 |
-| size | xs · sm · md · lg · xl | md | 标签尺寸 |
-| position | top-right · bottom-right · top-left · bottom-left | top-right | 角标位置 |
-| inset | boolean | false | 位于圆角元素内部时保持位置，不加外移 |
-| standalone | boolean | false | 相对父容器渲染，不做绝对定位 |
-| show | boolean | true | 控制芯片本体显隐（v-model:show） |
-| closable | boolean | false | 是否可关闭 |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| ui | ChipUi | - | 主题插槽类名 |
+<!--@include: ./api/chip.md-->
 
 ## ui 插槽
 

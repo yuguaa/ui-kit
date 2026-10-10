@@ -44,20 +44,7 @@ npx shadcn-vue@latest add @ui-kit/x-accordion
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| items | AccordionItem[] | [] | 手风琴项数组 |
-| multiple | boolean | false | 是否可多开 |
-| disabled | boolean | false | 是否禁用全部项 |
-| collapsible | boolean | true | 展开项是否可全部收起 |
-| unmountOnHide | boolean | true | 隐藏时是否卸载内容 |
-| defaultValue | string · string[] | - | 默认展开项 |
-| modelValue | string · string[] | - | 受控展开项（v-model） |
-| labelKey | string | label | 标题字段名（支持点路径） |
-| valueKey | string | value | 唯一值字段名（支持点路径） |
-| trailingIcon | string · Component | chevron-down | 后置图标，单项 trailingIcon 优先 |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| ui | AccordionUi | - | 主题插槽类名 |
+<!--@include: ./api/accordion.md-->
 
 ### AccordionItem
 

@@ -66,20 +66,7 @@ npx shadcn-vue@latest add @ui-kit/x-avatar
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| shape | circle · square | circle | 头像形状 |
-| size | xs · sm · md · lg · xl | md | 头像尺寸，头像组透传时自身优先 |
-| src | string | - | 图片地址 |
-| alt | string | - | 图片替代文本，同时用于生成首字母回退 |
-| text | string | - | 无图片时显示的文字（如姓名首字） |
-| icon | IconName | - | 图标名，优先级低于 icon 插槽 |
-| color | primary · secondary · neutral · success · info · warning · error | neutral | 文字/图标头像的语义色，头像组透传时自身优先 |
-| chip | boolean · AvatarChip | - | 头像上的徽标 |
-| as | string · Component | span | 渲染为指定元素或组件 |
-| ui | AvatarUi | - | 主题插槽类名 |
-| class | any | - | 根元素类名 |
-| style | any | - | 根元素样式 |
+<!--@include: ./api/avatar.md-->
 
 ### AvatarChip
 

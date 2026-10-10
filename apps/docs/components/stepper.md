@@ -38,20 +38,7 @@ npx shadcn-vue@latest add @ui-kit/x-stepper
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| items | StepperItem[] | [] | 步骤项数组 |
-| modelValue | string · number | - | 当前激活步骤的 value（受控） |
-| defaultValue | string · number | 0 | 初始激活步骤的 value |
-| size | xs · sm · md · lg · xl | md | 步骤尺寸 |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 组件颜色 |
-| orientation | horizontal · vertical | horizontal | 步骤排列方向 |
-| valueKey | string | value | 从步骤项取 value 的字段，支持点路径 |
-| disabled | boolean | false | 是否禁用全部步骤 |
-| linear | boolean | true | 是否必须按顺序完成 |
-| ui | StepperUi | - | 主题插槽类名 |
-| class | string | - | 根元素类名 |
+<!--@include: ./api/stepper.md-->
 
 ## ui 插槽
 

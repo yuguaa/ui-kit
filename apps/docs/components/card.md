@@ -58,16 +58,7 @@ npx shadcn-vue@latest add @ui-kit/x-card
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| title | string | - | 标题 |
-| description | string | - | 辅助说明 |
-| variant | outline · solid · soft | outline | 预设样式 |
-| bordered | boolean | true | 是否显示边框 |
-| hoverable | boolean | false | 悬浮时阴影加深 + 边框高亮 |
-| size | default · small | default | 卡片尺寸 |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| ui | CardUi | - | 主题插槽类名 |
+<!--@include: ./api/card.md-->
 
 ## ui 插槽
 

@@ -36,13 +36,7 @@ npx shadcn-vue@latest add @ui-kit/x-skeleton
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| loading | boolean | true | 是否显示骨架，为 false 时渲染默认插槽 |
-| variant | text · circle · rect | rect | 形状 |
-| width / height | number · string | - | 宽度 / 高度，覆盖形状默认尺寸 |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| ui | SkeletonUi | - | 主题插槽类名 |
+<!--@include: ./api/skeleton.md-->
 
 ## ui 插槽
 

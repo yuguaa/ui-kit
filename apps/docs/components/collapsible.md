@@ -36,14 +36,7 @@ npx shadcn-vue@latest add @ui-kit/x-collapsible
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| open | boolean | false | 是否展开（支持 v-model:open） |
-| disabled | boolean | false | 是否禁用 |
-| defaultOpen | boolean | false | 默认展开 |
-| unmountOnHide | boolean | true | 隐藏时是否卸载内容 |
-| as | string · Component | div | 渲染为指定元素或组件 |
-| ui | CollapsibleUi | - | 主题插槽类名 |
+<!--@include: ./api/collapsible.md-->
 
 ## ui 插槽
 

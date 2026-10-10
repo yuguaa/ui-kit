@@ -68,15 +68,7 @@ npx shadcn-vue@latest add @ui-kit/x-breadcrumb
 
 ## API
 
-| 名称 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| items | { title?, href?, icon?, active?, [key: string]: unknown }[] | - | 面包屑项数组（末项可省略 href；icon 为前置图标，可为组件或 VNode；active 强制激活项） |
-| labelKey | string | title | 面包屑项标题字段名 |
-| color | primary · secondary · neutral · success · info · warning · error | primary | 激活项文字颜色 |
-| separatorIcon | string · Component | chevron-right | 分隔符图标：图标名或组件 |
-| disabled | boolean | false | 是否禁用 |
-| as | string · Component | nav | 渲染为指定元素或组件 |
-| ui | BreadcrumbUi | - | 主题插槽类名 |
+<!--@include: ./api/breadcrumb.md-->
 
 ## ui 插槽
 
