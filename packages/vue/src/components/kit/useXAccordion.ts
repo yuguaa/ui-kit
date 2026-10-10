@@ -3,7 +3,7 @@
  * 用法：const [Accordion, accordionApi] = useXAccordion({ items: [...] })
  */
 import { defineComponent, h, reactive } from 'vue'
-import type { AccordionDataItem } from './XAccordion.vue'
+import type { AccordionItem as AccordionDataItem } from './XAccordion.vue'
 import XAccordion from './XAccordion.vue'
 
 export interface XAccordionApi {

@@ -48,6 +48,7 @@ const SKIP_TYPES = new Set(["content.ts", "editor.ts", "prose.ts", "app.config.d
 /** Nuxt seam 替换规则 */
 const SEAM_REPLACEMENTS: Array<[RegExp, string]> = [
   [/from ['"]#build\/ui\/([^'"]+)['"]/g, (m: string, name: string) => `from '@/lib/nuxt/ui/${name}'`],
+  [/from ['"]#build\/ui['"]/g, `from '@/lib/nuxt/ui'`],
   [/from ['"]#build\/ui-image-component['"]/g, `from '@/lib/nuxt/ui-image-component'`],
   [/from ['"]#build\/app\.config['"]/g, `from '@/lib/nuxt/app-config'`],
   [/from ['"]#imports['"]/g, `from '@/lib/nuxt/imports'`],
@@ -82,7 +83,18 @@ function convert(source: string): string {
 /** 基础设施文件（composables/utils/types）中组件类型引用改写：../components/Xxx.vue -> ../../../components/kit/XXxx.vue */
 function convertInfra(source: string): string {
   let out = convert(source);
-  out = out.replace(/from ['"]\.\.\/components\/([A-Za-z]+)\.vue['"]/g, (_m: string, name: string) => `from '../../../components/kit/X${name}.vue'`);
+  /* 组件 re-export（含子目录组件）：在 COMPONENTS 清单内的改成 kit 路径，未移植的改为宽松类型别名 */
+  out = out.replace(/^export \* from ['"]\.\.\/components\/(?:[\w-]+\/)*([A-Za-z]+)\.vue['"]$/gm, (_m: string, name: string) => {
+    if (COMPONENTS.includes(name)) {
+      return `export * from '../../../components/kit/X${name}.vue'`;
+    }
+    return `export type ${name}Props = Record<string, any>\nexport type ${name}Slots = Record<string, any>\nexport type ${name}Emits = Record<string, any>`;
+  });
+  /* 被跳过类型文件的 re-export（如 ./content）改为空的宽松导出 */
+  out = out.replace(/^export \* from ['"]\.\/(?:content|editor|prose)['"]$/gm, "");
+  /* 其余组件路径引用：清单内的指向 kit，清单外保持（极少出现） */
+  out = out.replace(/from ['"]\.\.\/components\/(?:[\w-]+\/)*([A-Za-z]+)\.vue['"]/g, (_m: string, name: string) =>
+    COMPONENTS.includes(name) ? `from '../../../components/kit/X${name}.vue'` : _m);
   return out;
 }
 
@@ -569,21 +581,21 @@ function compileComponent(content: string, filename: string): { ok: boolean; con
     const { descriptor } = parse(source, { filename });
     compileScript(descriptor, { id: "probe", fs: probeFs, isProd: true });
   };
+  const rekaDts = resolveRekaDts();
+  const localIndex = localTypeIndex();
+  /* vue-tsc 严格检查需要 extends 成员完整：优先内联展开（失败再回退原始形态） */
+  const inlined = inlineAllExtends(content, rekaDts, localIndex);
+  if (inlined !== content) {
+    try {
+      tryCompile(inlined);
+      return { ok: true, content: inlined };
+    } catch { /* 内联失败继续走原始形态 */ }
+  }
   try {
     tryCompile(content);
     return { ok: true, content };
   } catch (error) {
     const message = String((error as Error).message ?? error);
-    /* 跨文件 extends 无法解析时内联展开，保留自身 props 声明 */
-    const rekaDts = resolveRekaDts();
-    const localIndex = localTypeIndex();
-    const inlined = inlineAllExtends(content, rekaDts, localIndex);
-    if (inlined !== content) {
-      try {
-        tryCompile(inlined);
-        return { ok: true, content: inlined };
-      } catch { /* 继续降级 */ }
-    }
     /* 类型字面量降级：内联 any 成员类型，保留 withDefaults 与事件声明 */
     const fallback = typeLiteralFallback(content, rekaDts, localIndex);
     if (fallback !== content) {
@@ -712,6 +724,16 @@ function main() {
     if (SKIP_TYPES.has(rel)) continue;
     copyConvertedInfra(join("types", rel), OUT_BASE);
   }
+  /* types/index.ts 后处理：theme.ts 引用的未移植组件 Props 类型补宽松别名（tv.ts 后处理已提前执行） */
+  /* tv.ts 后处理：无 Nuxt 主题类型环境时放宽组件配置映射，避免 slots/variants 键约束为 never */
+  {
+    const tvPath = join(OUT_BASE, "types/tv.ts");
+    let tvContent = readFileSync(tvPath, "utf8");
+    tvContent = tvContent.replace(/type ComponentVariants<T extends \{[\s\S]*?\}> = \{[\s\S]*?\}/, "type ComponentVariants<T> = Record<string, string>");
+    tvContent = tvContent.replace(/type ComponentSlots<T extends \{[\s\S]*?\}> = Id<\{[\s\S]*?\}>/, "type ComponentSlots<T> = Record<string, SlotClass>");
+    tvContent = tvContent.replace(/type ComponentUI<T extends \{[\s\S]*?\}> = Id<\{[\s\S]*?\}>/, "type ComponentUI<T> = Record<string, (props?: Record<string, any>) => string>");
+    writeFileSync(tvPath, tvContent);
+  }
   for (const rel of readdirSync(join(NUXT_SRC, "utils")).filter((f) => f.includes("."))) {
     if (SKIP_UTILS.has(rel)) continue;
     copyConvertedInfra(join("utils", rel), OUT_BASE);
@@ -740,6 +762,22 @@ function main() {
       mkdirSync(dirname(out), { recursive: true });
       writeFileSync(out, convertInfra(content));
     }
+  }
+
+  /* types/index.ts 后处理：theme.ts 引用的未移植组件 Props 类型补宽松别名 */
+  {
+    const themeTs = readFileSync(join(OUT_BASE, "types/theme.ts"), "utf8");
+    const refs = new Set([...themeTs.matchAll(/ComponentTypes\.(\w+)Props\b/g)].map((m) => m[1]));
+    const indexPath = join(OUT_BASE, "types/index.ts");
+    const existing = readFileSync(indexPath, "utf8");
+    let aliasBlock = "\n/* 未移植组件的主题类型别名（生成器自动补齐） */\n";
+    for (const name of refs) {
+      if (COMPONENTS.includes(name)) continue;
+      /* convertInfra 已为未移植组件生成别名时跳过，避免重复标识符 */
+      if (existing.includes(`export type ${name}Props = Record<string, any>`)) continue;
+      aliasBlock += `export type ${name}Props = Record<string, any>\n`;
+    }
+    writeFileSync(indexPath, existing + aliasBlock);
   }
 
   /* 固定 moduleOptions（对应 Nuxt 默认配置） */
@@ -782,9 +820,8 @@ export interface ModuleOptions {
 }
 `);
 
-  /* AppConfig 类型（去 @nuxt/schema 依赖） */
-  writeFileSync(join(OUT_BASE, "types/app-config.ts"), `export interface AppConfig { ui?: Record<string, any> }
-`);
+  /* AppConfig 类型（去 @nuxt/schema 依赖；ui 与 icons 必选以消除 strict 下的 possibly undefined） */
+  writeFileSync(join(OUT_BASE, "types/app-config.ts"), `export interface AppConfig { ui: Record<string, any> & { icons: Record<string, string> } }` + "\n");
 
   /* app.config 替身（ui 默认值对应 Nuxt getDefaultConfig） */
   writeFileSync(join(OUT_BASE, "app-config.ts"), `import type { AppConfig } from '@/lib/nuxt/types/app-config'

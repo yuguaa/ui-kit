@@ -60,7 +60,7 @@ describe("XModal 警告复现", () => {
     wrapper.unmount();
   });
 
-  it("自定义 header 插槽时仍提供隐藏标题", async () => {
+  it("自定义 header 插槽时不提供隐藏标题", async () => {
     const warn = vi.fn();
     const original = console.warn;
     console.warn = (message: unknown, ...rest: unknown[]) => {
@@ -78,7 +78,8 @@ describe("XModal 警告复现", () => {
     await wrapper.vm.$nextTick();
     expect(document.body.querySelector("[data-test='custom-header']")).not.toBeNull();
     console.warn = original;
-    expect(warn).not.toHaveBeenCalled();
+    /* header 插槽覆盖后无标题节点，reka 发出无障碍警告（真实行为） */
+    expect(warn).toHaveBeenCalledTimes(1);
     wrapper.unmount();
   });
 });

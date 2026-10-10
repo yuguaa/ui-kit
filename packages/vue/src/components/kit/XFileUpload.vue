@@ -11,7 +11,8 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type FileUpload = ComponentConfig<typeof theme, AppConfig, 'fileUpload'>
 
-export interface FileUploadProps<M extends boolean = false> extends /** @vue-ignore */ Pick<InputHTMLAttributes, 'form' | 'formaction' | 'formenctype' | 'formmethod' | 'formnovalidate' | 'formtarget'> {
+export interface FileUploadProps<M extends boolean = false> {
+  form?: any;
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'

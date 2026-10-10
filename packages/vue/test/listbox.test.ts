@@ -1,5 +1,5 @@
 import { mount } from "@vue/test-utils";
-import { defineComponent, h } from "vue";
+import { defineComponent, h, nextTick } from "vue";
 import { describe, expect, it } from "vitest";
 import XListbox from "@/components/kit/XListbox.vue";
 
@@ -61,7 +61,8 @@ describe("XListbox 过滤与尺寸", () => {
     const wrapper = mount(XListbox, {
       props: { items, labelKey: "name", valueKey: "id", filter: true },
     });
-    await wrapper.find("[data-slot='input']").setValue("香");
+    await wrapper.find("[data-slot='input'] input").setValue("香");
+    await nextTick();
     const labels = wrapper.findAll("[data-slot='itemLabel']").map((el) => el.text());
     expect(labels).toEqual(["香蕉"]);
   });
@@ -79,7 +80,8 @@ describe("XListbox 过滤与尺寸", () => {
         filterFields: ["alias"],
       },
     });
-    await wrapper.find("[data-slot='input']").setValue("红富士");
+    await wrapper.find("[data-slot='input'] input").setValue("红富士");
+    await nextTick();
     const labels = wrapper.findAll("[data-slot='itemLabel']").map((el) => el.text());
     expect(labels).toEqual(["苹果"]);
   });
@@ -88,7 +90,8 @@ describe("XListbox 过滤与尺寸", () => {
     const wrapper = mount(XListbox, {
       props: { items, labelKey: "name", valueKey: "id", filter: true, ignoreFilter: true },
     });
-    await wrapper.find("[data-slot='input']").setValue("不存在");
+    await wrapper.find("[data-slot='input'] input").setValue("不存在");
+    await nextTick();
     expect(wrapper.findAll("[data-slot='item']").length).toBe(2);
   });
 

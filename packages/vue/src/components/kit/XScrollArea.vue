@@ -7,10 +7,8 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type ScrollArea = ComponentConfig<typeof theme, AppConfig, 'scrollArea'>
 
-export interface ScrollAreaVirtualizeOptions extends Partial<Omit<
-  VirtualizerOptions<Element, Element>,
-  'count' | 'horizontal' | 'isRtl' | 'estimateSize' | 'lanes' | 'enabled'
->> {
+export interface ScrollAreaVirtualizeOptions {
+
   /**
    * Virtualize against an external scroll element instead of the component's own root.
    * Pair with `scrollMargin` set to the content's offset from the scroll element's start.

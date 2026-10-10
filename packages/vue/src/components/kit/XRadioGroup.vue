@@ -161,14 +161,15 @@ const disabled = computed(() => formFieldDisabled.value ?? props.disabled)
 
 // eslint-disable-next-line vue/no-dupe-keys
 const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.radioGroup || {}) })({
-  size: size.value,
-  color: color.value,
+  /* appConfig 合并后 tv 变体参数恢复为字面量联合，props 侧为宽松 string，需要断言 */
+  size: size.value as any,
+  color: color.value as any,
   highlight: highlight.value,
   disabled: disabled.value,
   required: props.required,
-  orientation: props.orientation,
-  variant: props.variant,
-  indicator: props.indicator
+  orientation: props.orientation as any,
+  variant: props.variant as any,
+  indicator: props.indicator as any
 }))
 
 function normalizeItem(item: any) {
@@ -230,7 +231,7 @@ function onUpdate(value: any) {
     v-bind="rootProps"
     :model-value="(props.modelValue as Exclude<RadioGroupItem, boolean> | Exclude<RadioGroupItem, boolean>[])"
     :default-value="(props.defaultValue as Exclude<RadioGroupItem, boolean> | Exclude<RadioGroupItem, boolean>[])"
-    :orientation="props.orientation"
+    :orientation="props.orientation as any"
     :name="name"
     :disabled="disabled"
     data-slot="root"

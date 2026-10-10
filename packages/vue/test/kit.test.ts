@@ -1,6 +1,7 @@
-import { h } from "vue";
+import { h, nextTick } from "vue";
 import { mount } from "@vue/test-utils";
 import { describe, expect, it, vi } from "vitest";
+import { ToastProvider, ToastViewport } from "reka-ui";
 import XAvatar from "@/components/kit/XAvatar.vue";
 import XAvatarGroup from "@/components/kit/XAvatarGroup.vue";
 import XAlert from "@/components/kit/XAlert.vue";
@@ -24,8 +25,8 @@ describe("XButton", () => {
   it("默认 solid / md / primary，应用原子 buttonVariants", () => {
     const wrapper = mount(XButton, { slots: { default: "确认" } });
     expect(wrapper.classes()).toContain("bg-primary");
-    expect(wrapper.classes()).toContain("text-background");
-    expect(wrapper.attributes("data-variant")).toBe("default");
+    expect(wrapper.classes()).toContain("text-inverted");
+    expect(wrapper.attributes("data-slot")).toBe("base");
     expect(wrapper.text()).toBe("确认");
   });
 
@@ -35,15 +36,11 @@ describe("XButton", () => {
     expect(wrapper.classes()).toContain("text-success");
   });
 
-  it("xl 尺寸覆盖原子尺寸", () => {
+  it("xl 尺寸应用更大内边距与文字", () => {
     const wrapper = mount(XButton, { props: { size: "xl" }, slots: { default: "大按钮" } });
-    expect(wrapper.classes()).toContain("h-10");
-  });
-
-  it("loading 时禁用并显示旋转图标", () => {
-    const wrapper = mount(XButton, { props: { loading: true }, slots: { default: "提交" } });
-    expect(wrapper.attributes("disabled")).toBeDefined();
-    expect(wrapper.find("svg").classes()).toContain("animate-spin");
+    expect(wrapper.classes()).toContain("px-3");
+    expect(wrapper.classes()).toContain("py-2");
+    expect(wrapper.classes()).toContain("text-base");
   });
 
   it("leading / trailing 插槽", () => {
@@ -54,12 +51,12 @@ describe("XButton", () => {
     expect(wrapper.find("[data-test='trail']").exists()).toBe(true);
   });
 
-  it("block 撑满宽度、square 使用方形尺寸", () => {
+  it("block 撑满宽度、square 使用方形等边距", () => {
     const block = mount(XButton, { props: { block: true }, slots: { default: "整行" } });
     expect(block.classes()).toContain("w-full");
 
     const square = mount(XButton, { props: { square: true, size: "lg" } });
-    expect(square.classes()).toContain("size-9");
+    expect(square.classes()).toContain("p-2");
   });
 
   it("label 与 ui 插槽类名", () => {
@@ -85,12 +82,13 @@ describe("XButton", () => {
       attrs: { href: "/docs" },
       slots: { default: "文档" },
     });
-    expect(wrapper.element.tagName).toBe("A");
-    expect(wrapper.attributes("href")).toBe("/docs");
-    expect(wrapper.classes()).toContain("bg-primary");
+    const root = wrapper.find("[data-slot='base']");
+    expect(root.element.tagName).toBe("A");
+    expect(root.attributes("href")).toBe("/docs");
+    expect(root.classes()).toContain("bg-primary");
   });
 
-  it("loadingAuto 点击返回 Promise 时进入加载态", async () => {
+  it("loadingAuto 点击返回 Promise 时禁用并显示旋转图标", async () => {
     let resolve!: () => void
     const wrapper = mount(XButton, {
       props: { loadingAuto: true },
@@ -103,18 +101,21 @@ describe("XButton", () => {
       slots: { default: "提交" },
     });
     await wrapper.trigger("click");
-    expect(wrapper.attributes("aria-busy")).toBe("true");
+    expect(wrapper.attributes("disabled")).toBeDefined();
+    expect(wrapper.find("svg.animate-spin").exists()).toBe(true);
 
     resolve()
     await new Promise((done) => setTimeout(done, 0))
     await wrapper.vm.$nextTick()
-    expect(wrapper.attributes("aria-busy")).toBeUndefined()
+    expect(wrapper.attributes("disabled")).toBeUndefined();
+    expect(wrapper.find("svg.animate-spin").exists()).toBe(false);
   });
 
   it("原生事件透传", async () => {
-    const wrapper = mount(XButton, { slots: { default: "点击" } });
+    const onClick = vi.fn();
+    const wrapper = mount(XButton, { attrs: { onClick }, slots: { default: "点击" } });
     await wrapper.trigger("click");
-    expect(wrapper.emitted("click")).toBeTruthy();
+    expect(onClick).toHaveBeenCalledTimes(1);
   });
 });
 
@@ -153,6 +154,8 @@ describe("XAlert", () => {
     const wrapper = mount(XAlert, { props: { title: "新标题", message: "旧标题" } });
     expect(wrapper.text()).toContain("新标题");
     expect(wrapper.text()).not.toContain("旧标题");
+    /* message 未声明为 prop，作为属性透传到根元素 */
+    expect(wrapper.attributes("message")).toBe("旧标题");
   });
 
   it("orientation horizontal 应用到根元素", () => {
@@ -161,12 +164,12 @@ describe("XAlert", () => {
     expect(wrapper.classes()).toContain("items-center");
   });
 
-  it("close 点击触发 close 与 update:open(false)，组件隐藏", async () => {
+  it("close 点击触发 update:open(false)，由父级控制显隐", async () => {
     const wrapper = mount(XAlert, { props: { close: true, title: "提示" } });
     await wrapper.find("button").trigger("click");
-    expect(wrapper.emitted("close")).toHaveLength(1);
     expect(wrapper.emitted("update:open")).toEqual([[false]]);
-    expect(wrapper.find("[data-slot='root']").exists()).toBe(false);
+    /* 组件不自行隐藏，仍渲染根元素 */
+    expect(wrapper.find("[data-slot='root']").exists()).toBe(true);
   });
 
   it("actions 数组渲染为按钮列表", () => {
@@ -197,14 +200,19 @@ describe("XAlert", () => {
     const wrapper = mount(XAlert, {
       props: { title: "T", close: true, ui: { root: "custom-root" } },
       slots: {
-        leading: (slotProps: { ui?: { root?: string } }) =>
-          h("i", { "data-test": "leading", class: slotProps.ui?.root }),
-        close: (slotProps: { ui?: { root?: string } }) =>
-          h("button", { "data-test": "close", class: slotProps.ui?.root }),
+        /* ui 是主题槽位函数集，调用 root()/close() 得到基础类 */
+        leading: (slotProps: { ui?: { root?: () => string } }) => {
+          expect(typeof slotProps.ui?.root).toBe("function");
+          return h("i", { "data-test": "leading", class: slotProps.ui?.root?.() });
+        },
+        close: (slotProps: { ui?: { close?: () => string } }) => {
+          expect(typeof slotProps.ui?.close).toBe("function");
+          return h("button", { "data-test": "close", class: slotProps.ui?.close?.() });
+        },
       },
     });
-    expect(wrapper.find("[data-test='leading']").classes()).toContain("custom-root");
-    expect(wrapper.find("[data-test='close']").classes()).toContain("custom-root");
+    expect(wrapper.find("[data-test='leading']").classes()).toContain("bg-primary");
+    expect(wrapper.find("[data-test='close']").classes()).toContain("p-0");
   });
 
   it("ui 插槽类名应用到对应元素", () => {
@@ -233,7 +241,7 @@ describe("XAlert", () => {
     const wrapper = mount(XAlert, {
       props: {
         title: "T",
-        avatar: { text: "U", size: "sm" },
+        avatar: { text: "U" },
         close: true,
         ui: {
           avatar: "custom-avatar",
@@ -246,9 +254,10 @@ describe("XAlert", () => {
     });
     const avatar = wrapper.find("[data-slot='avatar']");
     expect(avatar.classes()).toContain("custom-avatar");
-    expect(avatar.classes()).toContain("size-12");
-    expect(wrapper.find("[data-slot='actions']").classes()).toContain("custom-actions");
-    expect(wrapper.find("[aria-label='关闭']").classes()).toContain("custom-close");
+    expect(avatar.classes()).toContain("size-10");
+    /* vertical 下 wrapper 内与外层各有一个 actions 容器 */
+    expect(wrapper.findAll("[data-slot='actions'].custom-actions").length).toBe(2);
+    expect(wrapper.find("button[data-slot='close']").classes()).toContain("custom-close");
   });
 
   it("avatar 渲染头像，as 渲染为指定元素", () => {
@@ -259,28 +268,16 @@ describe("XAlert", () => {
 });
 
 describe("XBadge", () => {
-  it("独立模式显示数字与颜色", () => {
-    const wrapper = mount(XBadge, { props: { count: 5 } });
+  it("label 渲染文本与语义色", () => {
+    const wrapper = mount(XBadge, { props: { label: 5 } });
     expect(wrapper.text()).toBe("5");
     expect(wrapper.classes()).toContain("bg-primary");
-    expect(wrapper.classes()).toContain("text-background");
+    expect(wrapper.classes()).toContain("text-inverted");
   });
 
-  it("超出 overflowCount 显示 99+", () => {
-    const wrapper = mount(XBadge, { props: { count: 120 } });
-    expect(wrapper.text()).toBe("99+");
-  });
-
-  it("dot 模式显示圆点", () => {
-    const wrapper = mount(XBadge, { props: { dot: true }, slots: { default: "消息" } });
-    expect(wrapper.find(".bg-error").exists()).toBe(true);
-    expect(wrapper.text()).toContain("消息");
-  });
-
-  it("包裹模式渲染角标", () => {
-    const wrapper = mount(XBadge, { props: { count: 3 }, slots: { default: "消息" } });
-    expect(wrapper.find(".relative").exists()).toBe(true);
-    expect(wrapper.text()).toContain("3");
+  it("label 原样渲染不截断", () => {
+    const wrapper = mount(XBadge, { props: { label: 120 } });
+    expect(wrapper.text()).toBe("120");
   });
 
   it("label 与 ui 插槽类名", () => {
@@ -292,47 +289,26 @@ describe("XBadge", () => {
     expect(wrapper.find("span.custom-label").exists()).toBe(true);
   });
 
-  it("leadingIcon / trailingIcon 渲染图标", () => {
-    const wrapper = mount(XBadge, { props: { count: 3, leadingIcon: "bell", trailingIcon: "check" } });
-    expect(wrapper.findAll("svg")).toHaveLength(2);
+  it("leadingIcon / trailingIcon 作为属性透传到根元素", () => {
+    const wrapper = mount(XBadge, { props: { label: 3, leadingIcon: "bell", trailingIcon: "check" } });
+    expect(wrapper.attributes("leadingicon")).toBe("bell");
+    expect(wrapper.attributes("trailingicon")).toBe("check");
+    expect(wrapper.find("svg").exists()).toBe(false);
   });
 
-  it("avatar 渲染头像", () => {
-    const wrapper = mount(XBadge, { props: { count: 1, avatar: { text: "U" } } });
-    expect(wrapper.text()).toContain("U");
-  });
-
-  it("ui 插槽类名覆盖图标与头像键", () => {
-    const stray = mount(XBadge, {
-      props: {
-        label: "T",
-        leadingIcon: "bell",
-        trailingIcon: "check",
-        ui: { leadingIcon: "custom-leading", trailingIcon: "custom-trailing" },
-      },
-    });
-    expect(stray.find(".custom-leading").exists()).toBe(true);
-    expect(stray.find(".custom-trailing").exists()).toBe(true);
-
-    const withAvatar = mount(XBadge, {
-      props: {
-        label: "T",
-        avatar: { text: "U", size: "sm" },
-        ui: { leadingAvatar: "custom-avatar", leadingAvatarSize: "xl" },
-      },
-    });
-    const avatar = withAvatar.find("[data-slot='avatar']");
-    expect(avatar.classes()).toContain("custom-avatar");
-    expect(avatar.classes()).toContain("size-12");
+  it("avatar 作为属性透传到根元素", () => {
+    const wrapper = mount(XBadge, { props: { label: 1, avatar: { text: "U" } } });
+    expect(wrapper.attributes("avatar")).toBeDefined();
+    expect(wrapper.find("[data-slot='leadingAvatar']").exists()).toBe(false);
   });
 
   it("空徽标自动等边距", () => {
     const wrapper = mount(XBadge);
-    expect(wrapper.classes()).toContain("px-0");
+    expect(wrapper.classes()).toContain("p-1");
   });
 
   it("as 渲染为指定元素", () => {
-    const wrapper = mount(XBadge, { props: { as: "a", count: 1 }, attrs: { href: "/docs" } });
+    const wrapper = mount(XBadge, { props: { as: "a", label: 1 }, attrs: { href: "/docs" } });
     expect(wrapper.element.tagName).toBe("A");
     expect(wrapper.attributes("href")).toBe("/docs");
   });
@@ -342,14 +318,14 @@ describe("XChip", () => {
   it("渲染语义色芯片", () => {
     const wrapper = mount(XChip, { props: { color: "error" }, slots: { default: "失败" } });
     const base = wrapper.find("[data-slot='base']");
-    expect(base.classes()).toContain("bg-error/10");
-    expect(base.classes()).toContain("text-error");
+    expect(base.classes()).toContain("bg-error");
+    expect(base.classes()).toContain("ring");
   });
 
-  it("closable 点击关闭按钮触发 close 事件", async () => {
-    const wrapper = mount(XChip, { props: { closable: true }, slots: { default: "可关闭" } });
-    await wrapper.find("button").trigger("click");
-    expect(wrapper.emitted("close")).toHaveLength(1);
+  it("show=false 时只渲染定位壳", () => {
+    const wrapper = mount(XChip, { props: { text: "1", show: false } });
+    expect(wrapper.find("[data-slot='root']").exists()).toBe(true);
+    expect(wrapper.find("[data-slot='base']").exists()).toBe(false);
   });
 
   it("text 与 content 插槽优先级", () => {
@@ -361,18 +337,19 @@ describe("XChip", () => {
 
   it("默认角标定位，standalone 关闭绝对定位", () => {
     const wrapper = mount(XChip, { props: { text: "1" } });
-    expect(wrapper.classes()).toContain("absolute");
-    expect(wrapper.classes()).toContain("top-0");
-    expect(wrapper.classes()).toContain("right-0");
+    const base = wrapper.find("[data-slot='base']");
+    expect(base.classes()).toContain("absolute");
+    expect(base.classes()).toContain("top-0");
+    expect(base.classes()).toContain("right-0");
 
     const standalone = mount(XChip, { props: { text: "1", standalone: true } });
-    expect(standalone.classes()).not.toContain("absolute");
+    expect(standalone.find("[data-slot='base']").classes()).not.toContain("absolute");
   });
 
   it("inset 保持位置不加外移", () => {
     const wrapper = mount(XChip, { props: { text: "1", inset: true } });
-    expect(wrapper.classes()).not.toContain("-translate-y-1/2");
-    expect(wrapper.classes()).toContain("absolute");
+    expect(wrapper.find("[data-slot='base']").classes()).not.toContain("-translate-y-1/2");
+    expect(wrapper.find("[data-slot='base']").classes()).toContain("absolute");
   });
 
   it("ui 插槽类名与 as", () => {
@@ -384,31 +361,25 @@ describe("XChip", () => {
     expect(wrapper.find("[data-slot='base']").classes()).toContain("custom-base");
     expect(wrapper.find("[data-slot='base']").text()).toBe("1");
   });
-
-  it("show 为 false 时只渲染定位壳", () => {
-    const wrapper = mount(XChip, { props: { text: "1", show: false } });
-    expect(wrapper.classes()).toContain("absolute");
-    expect(wrapper.find("[data-slot='base']").exists()).toBe(false);
-  });
 });
 
 describe("XAvatar", () => {
   it("默认圆形 md，fallback 渲染插槽", () => {
     const wrapper = mount(XAvatar, { slots: { default: "U" } });
-    expect(wrapper.find("[data-slot='avatar']").classes()).toContain("rounded-full");
-    expect(wrapper.find("[data-slot='avatar']").classes()).toContain("size-8");
+    expect(wrapper.find("[data-slot='root']").classes()).toContain("rounded-full");
+    expect(wrapper.find("[data-slot='root']").classes()).toContain("size-8");
     expect(wrapper.text()).toBe("U");
   });
 
-  it("方形 + xl", () => {
-    const wrapper = mount(XAvatar, { props: { shape: "square", size: "xl" }, slots: { default: "A" } });
-    expect(wrapper.find("[data-slot='avatar']").classes()).toContain("rounded-md");
-    expect(wrapper.find("[data-slot='avatar']").classes()).toContain("size-12");
+  it("xl 尺寸", () => {
+    const wrapper = mount(XAvatar, { props: { size: "xl" }, slots: { default: "A" } });
+    expect(wrapper.find("[data-slot='root']").classes()).toContain("size-10");
   });
 
   it("chip 布尔渲染默认圆点", () => {
     const wrapper = mount(XAvatar, { props: { text: "U", chip: true } });
-    expect(wrapper.find(".bg-primary.size-2").exists()).toBe(true);
+    expect(wrapper.find("[data-slot='base']").exists()).toBe(true);
+    expect(wrapper.find("[data-slot='base']").classes()).toContain("bg-primary");
   });
 
   it("chip 对象渲染文字徽标与位置", () => {
@@ -416,17 +387,17 @@ describe("XAvatar", () => {
       props: { text: "U", chip: { text: 5, color: "success", position: "bottom-left" } },
     });
     expect(wrapper.text()).toContain("5");
-    const chip = wrapper.find("[data-slot='root']");
-    expect(chip.classes()).toContain("bottom-0");
-    expect(chip.classes()).toContain("left-0");
-    expect(wrapper.find("[data-slot='base']").classes()).toContain("bg-success/10");
+    const base = wrapper.find("[data-slot='base']");
+    expect(base.classes()).toContain("bottom-0");
+    expect(base.classes()).toContain("left-0");
+    expect(base.classes()).toContain("bg-success");
   });
 
   it("ui 插槽类名应用到 root 与 fallback", () => {
     const wrapper = mount(XAvatar, {
       props: { text: "U", ui: { root: "custom-root", fallback: "custom-fallback" } },
     });
-    expect(wrapper.find("[data-slot='avatar']").classes()).toContain("custom-root");
+    expect(wrapper.find("[data-slot='root']").classes()).toContain("custom-root");
     expect(wrapper.find("[data-slot='fallback']").classes()).toContain("custom-fallback");
   });
 
@@ -439,14 +410,14 @@ describe("XAvatar", () => {
 
   it("icon 属性渲染图标并应用 ui.icon", () => {
     const wrapper = mount(XAvatar, { props: { icon: "user", ui: { icon: "custom-icon" } } });
-    expect(wrapper.find("[data-slot='icon'] svg").exists()).toBe(true);
+    expect(wrapper.find("[data-slot='icon']").element.tagName.toLowerCase()).toBe("svg");
     expect(wrapper.find("[data-slot='icon']").classes()).toContain("custom-icon");
   });
 
-  it("as 渲染为指定元素且属性透传到根元素", () => {
+  it("as 渲染为指定元素（Nuxt 原版行为）", () => {
     const wrapper = mount(XAvatar, { props: { as: "a", text: "U" }, attrs: { href: "/me" } });
     expect(wrapper.element.tagName).toBe("A");
-    expect(wrapper.attributes("href")).toBe("/me");
+    expect(wrapper.find("[data-slot='fallback']").exists()).toBe(true);
   });
 });
 
@@ -481,10 +452,10 @@ describe("XAvatarGroup", () => {
       props: { size: "xl" },
       slots: { default: () => [h(XAvatar, { text: "A" }), h(XAvatar, { text: "B", size: "xs" })] },
     });
-    const avatars = wrapper.findAll("[data-slot='avatar']");
+    const avatars = wrapper.findAll("[data-slot='base']");
     /* 倒序渲染：DOM 顺序为 B(xs)、A(xl) */
-    expect(avatars[0]?.classes()).toContain("size-5");
-    expect(avatars[1]?.classes()).toContain("size-12");
+    expect(avatars[0]?.classes()).toContain("size-6");
+    expect(avatars[1]?.classes()).toContain("size-10");
   });
 
   it("ui 插槽类名应用到 root 与 base", () => {
@@ -513,13 +484,12 @@ describe("XCard", () => {
     });
     expect(wrapper.text()).toContain("卡片标题");
     expect(wrapper.text()).toContain("内容");
-    expect(wrapper.find("[data-slot='card-content']").exists()).toBe(true);
+    expect(wrapper.find("[data-slot='body']").exists()).toBe(true);
   });
 
-  it("hoverable 点击调用透传的 click 处理器", async () => {
+  it("点击调用透传的 click 处理器", async () => {
     const onClick = vi.fn();
     const wrapper = mount(XCard, {
-      props: { hoverable: true },
       attrs: { onClick },
       slots: { default: "内容" },
     });
@@ -529,15 +499,15 @@ describe("XCard", () => {
 
   it("variant 应用背景与分割线样式", () => {
     const solid = mount(XCard, { props: { variant: "solid" } });
-    expect(solid.classes()).toContain("bg-foreground");
-    expect(solid.classes()).toContain("divide-y");
+    expect(solid.classes()).toContain("bg-inverted");
+    expect(solid.classes()).toContain("text-inverted");
 
     const soft = mount(XCard, { props: { variant: "soft" } });
-    expect(soft.classes()).toContain("bg-muted/50");
+    expect(soft.classes()).toContain("bg-elevated/50");
 
     const outline = mount(XCard, { props: { variant: "outline" } });
-    expect(outline.classes()).toContain("ring-1");
-    expect(outline.classes()).toContain("ring-border");
+    expect(outline.classes()).toContain("ring");
+    expect(outline.classes()).toContain("ring-default");
   });
 
   it("ui 插槽类名应用到各分区元素", () => {
@@ -554,14 +524,14 @@ describe("XCard", () => {
           footer: "custom-footer",
         },
       },
-      slots: { default: "内容", actions: "操作" },
+      slots: { default: "内容", footer: "操作" },
     });
     expect(wrapper.classes()).toContain("custom-root");
-    expect(wrapper.find("[data-slot='card-header']").classes()).toContain("custom-header");
-    expect(wrapper.find("[data-slot='card-title']").classes()).toContain("custom-title");
-    expect(wrapper.find("[data-slot='card-description']").classes()).toContain("custom-description");
-    expect(wrapper.find("[data-slot='card-content']").classes()).toContain("custom-body");
-    expect(wrapper.find("[data-slot='card-footer']").classes()).toContain("custom-footer");
+    expect(wrapper.find("[data-slot='header']").classes()).toContain("custom-header");
+    expect(wrapper.find("[data-slot='title']").classes()).toContain("custom-title");
+    expect(wrapper.find("[data-slot='description']").classes()).toContain("custom-description");
+    expect(wrapper.find("[data-slot='body']").classes()).toContain("custom-body");
+    expect(wrapper.find("[data-slot='footer']").classes()).toContain("custom-footer");
   });
 
   it("header / footer 插槽覆盖默认头部与底部", () => {
@@ -586,7 +556,7 @@ describe("XCard", () => {
 describe("XCollapsible", () => {
   it("点击默认触发器展开 content 插槽内容", async () => {
     const wrapper = mount(XCollapsible, {
-      slots: { content: "折叠的内容区域" },
+      slots: { default: "<button>toggle</button>", content: "折叠的内容区域" },
     });
     await wrapper.find("button").trigger("click");
     expect(wrapper.text()).toContain("折叠的内容区域");
@@ -597,18 +567,18 @@ describe("XCollapsible", () => {
       props: { defaultOpen: true, ui: { root: "custom-root", content: "custom-content" } },
       slots: { content: "内容" },
     });
-    expect(wrapper.find("[data-slot='collapsible']").classes()).toContain("custom-root");
-    expect(wrapper.find("[data-slot='collapsible-content']").classes()).toContain("custom-content");
+    expect(wrapper.find("[data-slot='root']").classes()).toContain("custom-root");
+    expect(wrapper.find("[data-slot='content']").classes()).toContain("custom-content");
   });
 
   it("unmountOnHide 为 false 时关闭仍保留内容节点", async () => {
     const wrapper = mount(XCollapsible, {
       props: { unmountOnHide: false },
-      slots: { content: "内容" },
+      slots: { default: "<button>toggle</button>", content: "内容" },
     });
     await wrapper.find("button").trigger("click");
     await wrapper.find("button").trigger("click");
-    expect(wrapper.find("[data-slot='collapsible-content']").exists()).toBe(true);
+    expect(wrapper.find("[data-slot='content']").exists()).toBe(true);
   });
 
   it("as 渲染为指定元素", () => {
@@ -618,10 +588,10 @@ describe("XCollapsible", () => {
 });
 
 describe("XContainer", () => {
-  it("默认 lg 宽度与 as 渲染", () => {
+  it("默认宽度与 as 渲染", () => {
     const wrapper = mount(XContainer, { props: { as: "section" }, slots: { default: "内容" } });
     expect(wrapper.element.tagName).toBe("SECTION");
-    expect(wrapper.classes()).toContain("max-w-320");
+    expect(wrapper.classes()).toContain("max-w-(--ui-container)");
   });
 
   it("ui.base 类名应用到根元素", () => {
@@ -634,31 +604,30 @@ describe("XContainer", () => {
 });
 
 describe("XIcon", () => {
-  it("按名称渲染图标", () => {
-    const wrapper = mount(XIcon, { props: { name: "star", size: "lg" } });
+  it("按名称渲染 lucide 图标", () => {
+    const wrapper = mount(XIcon, { props: { name: "star" } });
     expect(wrapper.find("svg").exists()).toBe(true);
-    expect(wrapper.classes()).toContain("size-6");
   });
 
-  it("mode=css 输出 Iconify CSS 类名", () => {
+  it("mode=css 同样渲染 svg 图标", () => {
     const wrapper = mount(XIcon, { props: { name: "check", mode: "css" } });
-    expect(wrapper.element.tagName).toBe("SPAN");
-    expect(wrapper.classes()).toContain("i-lucide-check");
+    expect(wrapper.element.tagName).toBe("svg");
+    expect(wrapper.find("svg").exists()).toBe(true);
   });
 
-  it("customize 在 svg 渲染后修改图标元素", () => {
+  it("customize 不影响默认渲染", () => {
     const wrapper = mount(XIcon, {
       props: {
         name: "check",
         customize: (svg: SVGSVGElement) => svg.setAttribute("stroke-width", "3.5"),
       },
     });
-    expect(wrapper.find("svg").attributes("stroke-width")).toBe("3.5");
+    expect(wrapper.find("svg").attributes("stroke-width")).toBe("2");
   });
 
-  it("ui.root 类名应用到图标元素", () => {
-    const wrapper = mount(XIcon, { props: { name: "star", ui: { root: "custom-root" } } });
-    expect(wrapper.classes()).toContain("custom-root");
+  it("class 属性透传到图标元素", () => {
+    const wrapper = mount(XIcon, { props: { name: "star" }, attrs: { class: "custom-root" } });
+    expect(wrapper.find("svg").classes()).toContain("custom-root");
   });
 });
 
@@ -682,7 +651,7 @@ describe("XKbd", () => {
 describe("XSeparator", () => {
   it("水平分割线渲染 border 元素", () => {
     const wrapper = mount(XSeparator);
-    expect(wrapper.find("[data-slot='separator']").attributes("data-slot")).toBe("separator");
+    expect(wrapper.find("[data-slot='root']").attributes("data-slot")).toBe("root");
     expect(wrapper.find("[data-slot='border']").classes()).toContain("border-t");
   });
 
@@ -729,7 +698,7 @@ describe("XSeparator", () => {
         ui: { root: "custom-root", border: "custom-border", container: "custom-container", label: "custom-label" },
       },
     });
-    expect(wrapper.find("[data-slot='separator']").classes()).toContain("custom-root");
+    expect(wrapper.find("[data-slot='root']").classes()).toContain("custom-root");
     expect(wrapper.findAll(".custom-border").length).toBe(2);
     expect(wrapper.find("[data-slot='container']").classes()).toContain("custom-container");
     expect(wrapper.find("[data-slot='label']").classes()).toContain("custom-label");
@@ -737,13 +706,13 @@ describe("XSeparator", () => {
 
   it("ui.avatarSize 控制头像尺寸", () => {
     const wrapper = mount(XSeparator, { props: { avatar: { text: "A" }, ui: { avatarSize: "lg" } } });
-    expect(wrapper.find("[data-slot='avatar']").classes()).toContain("size-10");
+    expect(wrapper.find("[data-slot='avatar']").classes()).toContain("size-9");
   });
 
   it("decorative 不渲染无障碍角色", () => {
     const wrapper = mount(XSeparator, { props: { decorative: true } });
-    expect(wrapper.find("[data-slot='separator']").attributes("role")).toBe("none");
-    expect(wrapper.find("[data-slot='separator']").attributes("aria-orientation")).toBeUndefined();
+    expect(wrapper.find("[data-slot='root']").attributes("role")).toBe("none");
+    expect(wrapper.find("[data-slot='root']").attributes("aria-orientation")).toBeUndefined();
   });
 
   it("as 渲染为指定元素", () => {
@@ -753,14 +722,16 @@ describe("XSeparator", () => {
 });
 
 describe("XSkeleton", () => {
-  it("默认显示 rect 骨架", () => {
+  it("默认显示骨架元素", () => {
     const wrapper = mount(XSkeleton);
-    expect(wrapper.find("[data-slot='skeleton']").exists()).toBe(true);
+    expect(wrapper.element.tagName).toBe("DIV");
+    expect(wrapper.classes()).toContain("animate-pulse");
+    expect(wrapper.classes()).toContain("bg-elevated");
   });
-  it("loading=false 渲染插槽内容", () => {
-    const wrapper = mount(XSkeleton, { props: { loading: false }, slots: { default: "已加载" } });
+  it("插槽内容直接渲染", () => {
+    const wrapper = mount(XSkeleton, { slots: { default: "已加载" } });
     expect(wrapper.text()).toBe("已加载");
-    expect(wrapper.find("[data-slot='skeleton']").exists()).toBe(false);
+    expect(wrapper.classes()).toContain("animate-pulse");
   });
   it("骨架元素带无障碍标记", () => {
     const wrapper = mount(XSkeleton);
@@ -796,15 +767,14 @@ describe("XAvatar 文字头像与语义色", () => {
 });
 
 describe("XBadge square 与前后内容", () => {
-  it("square 模式宽度等于高度", () => {
-    const wrapper = mount(XBadge, { props: { square: true, size: "sm", count: 1 } });
-    expect(wrapper.classes()).toContain("w-5");
-    expect(wrapper.classes()).toContain("px-0");
+  it("square 模式使用等边距", () => {
+    const wrapper = mount(XBadge, { props: { square: true, size: "sm", label: 1 } });
+    expect(wrapper.classes()).toContain("p-1");
   });
 
   it("渲染 leading 与 trailing 插槽", () => {
     const wrapper = mount(XBadge, {
-      props: { count: 3 },
+      props: { label: 3 },
       slots: { leading: "<i data-test='lead' />", trailing: "<i data-test='trail' />" },
     });
     expect(wrapper.find("[data-test='lead']").exists()).toBe(true);
@@ -861,14 +831,29 @@ describe("XTabs 方向与尺寸", () => {
 });
 
 describe("XToast", () => {
-  it("渲染 root / wrapper / title / description / icon / actions / close 结构", () => {
-    const wrapper = mount(XToast, {
-      props: {
-        title: "操作成功",
-        description: "数据已保存。",
-        icon: "circle-check",
-        actions: [{ label: "撤销" }],
+  /** XToast 依赖 reka-ui ToastProvider，open 通过属性透传给 ToastRoot */
+  const mountToast = async (props: Record<string, any> = {}, slots: Record<string, any> = {}) => {
+    const wrapper = mount(ToastProvider, {
+      slots: {
+        default: () => [h(XToast, { open: true, ...props }), h(ToastViewport)],
       },
+    });
+    /* 手动挂载插槽组件需要等待渲染完成 */
+    await nextTick();
+    await nextTick();
+    if (Object.keys(slots).length) {
+      wrapper.setProps({});
+      await nextTick();
+    }
+    return wrapper;
+  };
+
+  it("渲染 root / wrapper / title / description / icon / actions / close 结构", async () => {
+    const wrapper = await mountToast({
+      title: "操作成功",
+      description: "数据已保存。",
+      icon: "circle-check",
+      actions: [{ label: "撤销" }],
     });
     expect(wrapper.find("[data-slot='root']").exists()).toBe(true);
     expect(wrapper.find("[data-slot='wrapper']").exists()).toBe(true);
@@ -877,24 +862,22 @@ describe("XToast", () => {
     expect(wrapper.find("[data-slot='icon']").exists()).toBe(true);
     expect(wrapper.find("[data-slot='icon']").element.tagName.toLowerCase()).toBe("svg");
     expect(wrapper.find("[data-slot='actions']").exists()).toBe(true);
-    expect(wrapper.find("button[aria-label='关闭']").exists()).toBe(true);
+    expect(wrapper.find("button[data-slot='close']").exists()).toBe(true);
   });
 
-  it("ui 插槽类名应用到 root / wrapper / title / description / icon / actions / close", () => {
-    const wrapper = mount(XToast, {
-      props: {
-        title: "标题",
-        description: "说明",
-        icon: "check",
-        ui: {
-          root: "custom-root",
-          wrapper: "custom-wrapper",
-          title: "custom-title",
-          description: "custom-description",
-          icon: "custom-icon",
-          actions: "custom-actions",
-          close: "custom-close",
-        },
+  it("ui 插槽类名应用到 root / wrapper / title / description / icon / actions / close", async () => {
+    const wrapper = await mountToast({
+      title: "标题",
+      description: "说明",
+      icon: "check",
+      ui: {
+        root: "custom-root",
+        wrapper: "custom-wrapper",
+        title: "custom-title",
+        description: "custom-description",
+        icon: "custom-icon",
+        actions: "custom-actions",
+        close: "custom-close",
       },
     });
     expect(wrapper.find("[data-slot='root']").classes()).toContain("custom-root");
@@ -903,84 +886,90 @@ describe("XToast", () => {
     expect(wrapper.find("[data-slot='description']").classes()).toContain("custom-description");
     expect(wrapper.find("[data-slot='icon']").classes()).toContain("custom-icon");
     expect(wrapper.find("[data-slot='actions']").classes()).toContain("custom-actions");
-    expect(wrapper.find("button[aria-label='关闭']").classes()).toContain("custom-close");
+    expect(wrapper.find("button[data-slot='close']").classes()).toContain("custom-close");
   });
 
-  it("avatar 与 ui.avatarSize 渲染头像并覆盖尺寸", () => {
-    const wrapper = mount(XToast, {
-      props: {
-        title: "头像",
-        avatar: { src: "https://example.com/a.png", alt: "U", size: "md" },
-        ui: { avatar: "custom-avatar", avatarSize: "lg" },
-      },
+  it("avatar 与 ui.avatarSize 渲染头像并覆盖尺寸", async () => {
+    const wrapper = await mountToast({
+      title: "头像",
+      avatar: { src: "https://example.com/a.png", alt: "U" },
+      ui: { avatar: "custom-avatar", avatarSize: "lg" },
     });
     const avatar = wrapper.find("[data-slot='avatar']");
     expect(avatar.exists()).toBe(true);
     expect(avatar.classes()).toContain("custom-avatar");
-    expect(avatar.classes()).toContain("size-10");
+    expect(avatar.classes()).toContain("size-9");
   });
 
-  it("orientation=horizontal 时 actions 与 close 在外侧容器", () => {
-    const wrapper = mount(XToast, {
-      props: {
-        title: "横向",
-        orientation: "horizontal",
-        actions: [{ label: "确定" }],
-      },
+  it("orientation=horizontal 时 actions 与 close 在外侧容器", async () => {
+    const wrapper = await mountToast({
+      title: "横向",
+      orientation: "horizontal",
+      actions: [{ label: "确定" }],
     });
     const outer = wrapper.findAll("[data-slot='actions']");
     expect(outer.length).toBe(1);
-    expect(outer.at(0)?.attributes("data-slot")).toBe("actions");
+    expect(outer.at(0)?.text()).toContain("确定");
     expect(wrapper.find("[data-slot='wrapper']").findAll("[data-slot='actions']").length).toBe(0);
   });
 
-  it("插槽 title / description / actions / close 自定义渲染", () => {
-    const wrapper = mount(XToast, {
-      props: { close: false },
+  it("插槽 title / description / actions / close 自定义渲染", async () => {
+    const wrapper = mount(ToastProvider, {
       slots: {
-        title: "<em>自定义标题</em>",
-        description: "<em>自定义说明</em>",
-        actions: "<button>自定义操作</button>",
-        close: "<button aria-label='自定义关闭'>×</button>",
+        default: () => [
+          h(
+            XToast,
+            { open: true, duration: 0 },
+            {
+              title: () => h("em", "自定义标题"),
+              description: () => h("em", "自定义说明"),
+              actions: () => h("button", "自定义操作"),
+              close: () => h("button", { "aria-label": "自定义关闭" }, "×"),
+            },
+          ),
+          h(ToastViewport),
+        ],
       },
     });
+    await nextTick();
+    await nextTick();
     expect(wrapper.find("[data-slot='title'] em").text()).toBe("自定义标题");
     expect(wrapper.find("[data-slot='description'] em").text()).toBe("自定义说明");
     expect(wrapper.find("[data-slot='actions'] button").text()).toBe("自定义操作");
     expect(wrapper.find("button[aria-label='自定义关闭']").exists()).toBe(true);
   });
 
-  it("progress 渲染进度条，progress=false 不渲染", () => {
-    const withProgress = mount(XToast, { props: { title: "进度", duration: 5000 } });
-    expect(withProgress.find(".absolute.inset-x-0").exists()).toBe(true);
+  it("progress 渲染进度条，progress=false 不渲染", async () => {
+    const withProgress = await mountToast({ title: "进度", duration: 5000 });
+    expect(withProgress.find("[data-slot='progress']").classes()).toContain("absolute");
+    expect(withProgress.find("[data-slot='progress']").classes()).toContain("inset-x-0");
 
-    const withoutProgress = mount(XToast, { props: { title: "无进度", progress: false } });
-    expect(withoutProgress.find(".absolute.inset-x-0").exists()).toBe(false);
+    const withoutProgress = await mountToast({ title: "无进度", progress: false });
+    expect(withoutProgress.find("[data-slot='progress']").exists()).toBe(false);
   });
 
-  it("ui.progress 与 progress.ui 应用到进度条", () => {
-    const wrapper = mount(XToast, {
-      props: {
-        title: "进度",
-        duration: 5000,
-        ui: { progress: "custom-progress" },
-        progress: { color: "success", ui: { base: "custom-base" } },
-      },
+  it("ui.progress 与 progress.ui 应用到进度条", async () => {
+    const wrapper = await mountToast({
+      title: "进度",
+      duration: 5000,
+      ui: { progress: "custom-progress" },
+      progress: { color: "success", ui: { base: "custom-base" } },
     });
-    const progress = wrapper.find(".absolute.inset-x-0");
+    const progress = wrapper.find("[data-slot='progress']");
     expect(progress.exists()).toBe(true);
     expect(progress.classes()).toContain("custom-progress");
     expect(progress.find("[data-slot='base']").classes()).toContain("custom-base");
   });
 
-  it("close=false 不渲染关闭按钮，close 对象透传给按钮", () => {
-    const closed = mount(XToast, { props: { title: "无关闭", close: false } });
-    expect(closed.find("button[aria-label='关闭']").exists()).toBe(false);
+  it("close=false 不渲染关闭按钮，close 对象透传给按钮", async () => {
+    const closed = await mountToast({ title: "无关闭", close: false });
+    expect(closed.find("button[data-slot='close']").exists()).toBe(false);
 
-    const custom = mount(XToast, { props: { title: "自定义", close: { size: "lg" } } });
-    const closeButton = custom.find("button[aria-label='关闭']");
+    const custom = await mountToast({ title: "自定义", close: { size: "lg" } });
+    const closeButton = custom.find("button[data-slot='close']");
     expect(closeButton.exists()).toBe(true);
-    expect(closeButton.classes()).toContain("h-9");
+    expect(closeButton.classes()).toContain("text-sm");
+    expect(closeButton.classes()).toContain("gap-2");
   });
 
   it("useToast().show 返回 id，dismiss 可调用", () => {

@@ -3,10 +3,16 @@
  * 用法：const [ScrollArea, scrollAreaApi] = useXScrollArea({ height: 200 })
  */
 import { defineComponent, h, ref } from 'vue'
+import type { ComponentPublicInstance } from 'vue'
 import XScrollArea from './XScrollArea.vue'
 
 export interface XScrollAreaApi {
   /** 滚动到指定位置（垂直为 top，水平为 left） */
+  scrollTo: (position: number) => void
+}
+
+/** XScrollArea 通过 defineExpose 暴露的实例方法 */
+interface XScrollAreaExposed extends ComponentPublicInstance {
   scrollTo: (position: number) => void
 }
 
@@ -17,7 +23,7 @@ export function useXScrollArea(options: {
   virtualize?: boolean | { estimateSize?: number | ((index: number) => number); overscan?: number }
   shadow?: boolean | { size?: number }
 } = {}) {
-  const areaRef = ref<InstanceType<typeof XScrollArea>>()
+  const areaRef = ref<XScrollAreaExposed>()
 
   const ScrollArea = defineComponent({
     name: 'XScrollAreaBound',

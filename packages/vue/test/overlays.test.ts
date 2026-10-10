@@ -165,8 +165,8 @@ describe("XDrawer", () => {
     mount(XDrawer, { props: { open: true, direction: "right", inset: true, title: "右抽屉" } });
     expect(await waitForSelector("[data-slot='content']")).toBe(true);
     const content = bodyQuery("[data-slot='content']");
-    expect(content?.className).toContain("data-[swipe-direction=right]:right-4");
     expect(content?.className).toContain("rounded-lg");
+    expect(content?.className).toContain("[--initial-transform:calc(100%+1.5rem)]");
   });
 
   it("handle 渲染拖拽把手，close 渲染关闭按钮", async () => {
@@ -321,38 +321,39 @@ describe("XPopover", () => {
 
 describe("XTooltip", () => {
   it("ui 插槽类名与 kbds 快捷键", async () => {
-    mount(XTooltip, {
+    const wrapper = mount(XTooltip, {
       props: {
-        open: true,
         text: "保存",
         kbds: ["⌘", "S"],
         ui: { content: "custom-content", text: "custom-text", kbds: "custom-kbds", kbdsSize: "md" },
       },
       slots: { default: "<button>保存按钮</button>" },
     });
+    await wrapper.find("button").trigger("focus");
     expect(await waitForSelector("[data-slot='content']")).toBe(true);
     expect(bodyQuery("[data-slot='content'].custom-content")).not.toBeNull();
     expect(bodyQuery("[data-slot='text'].custom-text")).not.toBeNull();
     expect(bodyQuery("[data-slot='kbds'].custom-kbds")).not.toBeNull();
     expect(bodyQuery("[data-slot='kbds'] kbd")).not.toBeNull();
-    expect(bodyQuery("[data-slot='kbds'] kbd")?.className).toContain("h-6");
+    expect(bodyQuery("[data-slot='kbds'] kbd")?.className).toContain("h-5");
   });
 
   it("content 插槽替换默认内容", async () => {
-    mount(XTooltip, {
-      props: { open: true },
+    const wrapper = mount(XTooltip, {
       slots: { default: "<button>按钮</button>", content: "<b>自定义内容</b>" },
     });
+    await wrapper.find("button").trigger("focus");
     expect(await waitForSelector("[data-slot='content']")).toBe(true);
     expect(document.body.querySelector("b")?.textContent).toBe("自定义内容");
   });
 
   it("portal 为 false 时内容渲染在组件树内", async () => {
     const wrapper = mount(XTooltip, {
-      props: { open: true, portal: false, text: "就地" },
+      props: { portal: false, text: "就地" },
       slots: { default: "<button>按钮</button>" },
       attachTo: document.body,
     });
+    await wrapper.find("button").trigger("focus");
     expect(await waitForSelector("[data-slot='content']")).toBe(true);
     expect(wrapper.element.querySelector("[data-slot='content']")).not.toBeNull();
   });

@@ -178,13 +178,13 @@ function descriptionOf(item: ContextMenuItemData): unknown {
   return getField(item, props.descriptionKey)
 }
 
-function kbdValuesOf(item: ContextMenuItemData): string[] {
+function kbdValuesOf(item: ContextMenuItemData): any[] {
   if (item.kbds?.length) return item.kbds
   return item.shortcut ? [item.shortcut] : []
 }
 
 function colorClassesOf(item: ContextMenuItemData) {
-  return item.color != null ? menuItemColorClasses[item.color] : undefined
+  return item.color != null ? menuItemColorClasses[item.color as MenuColor] : undefined
 }
 
 function handleSelect(item: ContextMenuItemData) {

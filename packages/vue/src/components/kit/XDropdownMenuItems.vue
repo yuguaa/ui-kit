@@ -224,13 +224,13 @@ function descriptionOf(item: DropdownMenuItemData): unknown {
   return getField(item, props.descriptionKey)
 }
 
-function kbdValuesOf(item: DropdownMenuItemData): string[] {
+function kbdValuesOf(item: DropdownMenuItemData): any[] {
   if (item.kbds?.length) return item.kbds
   return item.shortcut ? [item.shortcut] : []
 }
 
 function colorClassesOf(item: DropdownMenuItemData) {
-  return item.color != null ? menuItemColorClasses[item.color] : undefined
+  return item.color != null ? menuItemColorClasses[item.color as MenuColor] : undefined
 }
 
 /* 外链图标名：externalIcon 为字符串时取之，true 时用默认名 */

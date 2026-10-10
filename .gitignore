@@ -9,3 +9,5 @@ apps/docs/.vitepress/cache/
 
 .pi-debug/
 apps/theme-designer/.tmp-dark.mjs
+.tmp-test-output/
+.agent-work/

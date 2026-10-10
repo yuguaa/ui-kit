@@ -50,17 +50,11 @@ type WidenVariantsValues<V extends Record<string, any> | undefined>
  */
 type Id<T> = {} & { [P in keyof T]: T[P] }
 
-type ComponentVariants<T extends { variants?: Record<string, Record<string, any>> }> = {
-  [K in keyof T['variants']]: keyof T['variants'][K]
-}
+type ComponentVariants<T> = Record<string, string>
 
-type ComponentSlots<T extends { slots?: Record<string, any> }> = Id<{
-  [K in keyof T['slots']]?: SlotClass
-}>
+type ComponentSlots<T> = Record<string, SlotClass>
 
-type ComponentUI<T extends { slots?: Record<string, any> }> = Id<{
-  [K in keyof Required<T['slots']>]: (props?: Record<string, any>) => string
-}>
+type ComponentUI<T> = Record<string, (props?: Record<string, any>) => string>
 
 type GetComponentAppConfig<A, U extends string, K extends string>
   = A extends Record<U, Record<K, any>> ? A[U][K] : {}

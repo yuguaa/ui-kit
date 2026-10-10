@@ -61,12 +61,12 @@ describe("XCheckbox 变体 / indicator / ui", () => {
     expect(wrapper.find("[data-slot='root']").element.tagName).toBe("SPAN");
   });
 
-  it("选中切换触发 change 事件并携带值", async () => {
+  it("选中切换触发 change 事件并切换选中态", async () => {
     const wrapper = mount(XCheckbox);
     await wrapper.find("[data-slot='base']").trigger("click");
-    const event = wrapper.emitted("change")?.[0]?.[0] as Event & { target: { value: boolean } };
-    expect(event.target.value).toBe(true);
-    expect(wrapper.emitted("update:modelValue")?.[0]).toEqual([true]);
+    const event = wrapper.emitted("change")?.[0]?.[0];
+    expect(event).toBeInstanceOf(Event);
+    expect(wrapper.find("[data-slot='base']").attributes("data-state")).toBe("checked");
   });
 });
 
@@ -80,7 +80,9 @@ describe("XRadioGroup orientation / legend / 字段映射 / ui", () => {
     const wrapper = mount(XRadioGroup, {
       props: {
         modelValue: "pro",
-        options: plans,
+        /* indicator hidden 时 icon 才渲染在 label 上方,用于验证 icon 插槽类名注入 */
+        items: plans.map((plan) => ({ ...plan, icon: Star })),
+        indicator: "hidden",
         legend: "订阅方案",
         valueKey: "id",
         labelKey: "name",
@@ -124,18 +126,18 @@ describe("XRadioGroup orientation / legend / 字段映射 / ui", () => {
 
   it("color 与 size、highlight 生效", () => {
     const wrapper = mount(XRadioGroup, {
-      props: { modelValue: "basic", options: plans, valueKey: "id", color: "success", size: "sm", highlight: true },
+      props: { modelValue: "basic", items: plans, valueKey: "id", color: "success", size: "sm", highlight: true },
     });
     expect(wrapper.find("[data-slot='indicator']").classes()).toContain("bg-success");
     expect(wrapper.find("[data-slot='base']").classes()).toContain("size-3.5");
     expect(wrapper.find("[data-slot='base']").classes()).toContain("ring-success");
   });
 
-  it("indicator hidden 时显示 option.icon 且控件隐藏", () => {
+  it("indicator hidden 时显示 item.icon 且控件隐藏", () => {
     const wrapper = mount(XRadioGroup, {
       props: {
         modelValue: "basic",
-        options: [{ value: "basic", label: "基础版", icon: Star }],
+        items: [{ value: "basic", label: "基础版", icon: Star }],
         indicator: "hidden",
       },
     });
@@ -147,7 +149,7 @@ describe("XRadioGroup orientation / legend / 字段映射 / ui", () => {
     const wrapper = mount(XRadioGroup, {
       props: {
         modelValue: "basic",
-        options: [{ value: "basic", label: "基础版", ui: { item: "item-custom", label: "label-custom" } }],
+        items: [{ value: "basic", label: "基础版", ui: { item: "item-custom", label: "label-custom" } }],
         legend: "标题",
         required: true,
       },
@@ -158,16 +160,17 @@ describe("XRadioGroup orientation / legend / 字段映射 / ui", () => {
   });
 
   it("点击单项触发 update:modelValue 与 change", async () => {
-    const wrapper = mount(XRadioGroup, { props: { options: plans, valueKey: "id" } });
+    const wrapper = mount(XRadioGroup, { props: { items: plans, valueKey: "id" } });
     await wrapper.findAll("[data-slot='base']")[1]!.trigger("click");
     expect(wrapper.emitted("update:modelValue")?.[0]).toEqual(["pro"]);
-    const event = wrapper.emitted("change")?.[0]?.[0] as Event & { target: { value: string } };
-    expect(event.target.value).toBe("pro");
+    const event = wrapper.emitted("change")?.[0]?.[0];
+    expect(event).toBeInstanceOf(Event);
+    expect(wrapper.findAll("[data-slot='base']")[1]!.attributes("data-state")).toBe("checked");
   });
 
   it("button 变体注入 ui.item,as 渲染为指定元素", () => {
     const wrapper = mount(XRadioGroup, {
-      props: { options: plans, valueKey: "id", variant: "button", as: "section", ui: { item: "btn-item" } },
+      props: { items: plans, valueKey: "id", variant: "button", as: "section", ui: { item: "btn-item" } },
     });
     expect(wrapper.find("[data-slot='root']").element.tagName).toBe("SECTION");
     expect(wrapper.find("[data-slot='item']").classes()).toContain("btn-item");
@@ -232,7 +235,8 @@ describe("XSwitch color / 图标 / highlight / ui", () => {
     const wrapper = mount(XSwitch, { props: { as: "section" } });
     expect(wrapper.find("[data-slot='root']").element.tagName).toBe("SECTION");
     await wrapper.find("[data-slot='base']").trigger("click");
-    const event = wrapper.emitted("change")?.[0]?.[0] as Event & { target: { value: boolean } };
-    expect(event.target.value).toBe(true);
+    const event = wrapper.emitted("change")?.[0]?.[0];
+    expect(event).toBeInstanceOf(Event);
+    expect(wrapper.find("[data-slot='base']").attributes("data-state")).toBe("checked");
   });
 });

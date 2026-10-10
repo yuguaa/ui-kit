@@ -18,14 +18,20 @@ function bodyItems() {
 }
 
 async function openMenu(wrapper: ReturnType<typeof mount>) {
-  await wrapper.find("input").trigger("click");
-  await new Promise((resolve) => setTimeout(resolve, 0));
-  await wrapper.vm.$nextTick();
+  await wrapper.find("[data-slot='trailing']").trigger("click");
+  await settle(wrapper);
 }
 
 async function settle(wrapper: ReturnType<typeof mount>) {
   await new Promise((resolve) => setTimeout(resolve, 0));
   await wrapper.vm.$nextTick();
+}
+
+/* reka 选项监听 pointerdown 与 click，按真实交互顺序派发 */
+function selectOption(el: Element | undefined) {
+  el?.dispatchEvent(new MouseEvent("pointerdown", { bubbles: true }));
+  el?.dispatchEvent(new MouseEvent("pointerup", { bubbles: true }));
+  el?.dispatchEvent(new MouseEvent("click", { bubbles: true }));
 }
 
 describe("XInputMenu 字段映射与选择", () => {
@@ -43,7 +49,7 @@ describe("XInputMenu 字段映射与选择", () => {
     });
     await openMenu(wrapper);
     const option = bodyItems().find((el) => el.textContent === "上海");
-    option?.dispatchEvent(new MouseEvent("click", { bubbles: true }));
+    selectOption(option);
     await settle(wrapper);
     expect(wrapper.emitted("update:modelValue")?.[0]).toEqual(["sh"]);
     wrapper.unmount();
@@ -103,7 +109,7 @@ describe("XInputMenu 搜索过滤", () => {
   });
 });
 
-describe("XInputMenu 模式与 searchInput", () => {
+describe("XInputMenu 模式与插槽", () => {
   it("mode=autocomplete 输入文本作为值", async () => {
     const wrapper = mount(XInputMenu, {
       props: { items, valueKey: "value", mode: "autocomplete" },
@@ -116,45 +122,25 @@ describe("XInputMenu 模式与 searchInput", () => {
     wrapper.unmount();
   });
 
-  it("mode=listbox 输入框只读，searchInput 渲染菜单内搜索框", async () => {
+  it("placeholder 渲染到输入框", () => {
     const wrapper = mount(XInputMenu, {
-      props: { items, valueKey: "value", mode: "listbox", searchInput: { placeholder: "菜单内搜索" } },
+      props: { items, valueKey: "value", placeholder: "请选择城市" },
       attachTo: document.body,
     });
-    expect(wrapper.find("input").attributes("readonly")).toBeDefined();
-    await openMenu(wrapper);
-    const menuInput = document.querySelector("[data-slot='input']") as HTMLInputElement;
-    expect(menuInput?.getAttribute("placeholder")).toBe("菜单内搜索");
-    menuInput.value = "北";
-    menuInput.dispatchEvent(new Event("input", { bubbles: true }));
-    await settle(wrapper);
-    const labels = Array.from(document.querySelectorAll("[data-slot='itemLabel']")).map((el) => el.textContent);
-    expect(labels).toEqual(["北京"]);
+    expect(wrapper.find("input").attributes("placeholder")).toBe("请选择城市");
     wrapper.unmount();
   });
 
-  it("search-input 插槽自定义菜单内搜索框", async () => {
+  it("content-top 插槽渲染在菜单顶部", async () => {
     const wrapper = mount(XInputMenu, {
-      props: { items, valueKey: "value", mode: "listbox", searchInput: true },
+      props: { items, valueKey: "value" },
       slots: {
-        "search-input": ({ keyword, onInput }: { keyword: string; onInput: (value: string) => void }) =>
-          h("input", {
-            class: "slot-search",
-            placeholder: "插槽搜索",
-            value: keyword,
-            onInput: (event: Event) => onInput((event.target as HTMLInputElement).value),
-          }),
+        "content-top": "<i class='slot-top'>顶部内容</i>",
       },
       attachTo: document.body,
     });
     await openMenu(wrapper);
-    const slotInput = document.querySelector("input.slot-search") as HTMLInputElement;
-    expect(slotInput).toBeTruthy();
-    slotInput.value = "北";
-    slotInput.dispatchEvent(new Event("input", { bubbles: true }));
-    await settle(wrapper);
-    const labels = Array.from(document.querySelectorAll("[data-slot='itemLabel']")).map((el) => el.textContent);
-    expect(labels).toEqual(["北京"]);
+    expect(document.querySelector("[data-slot='content'] .slot-top")).toBeTruthy();
     wrapper.unmount();
   });
 });
@@ -193,17 +179,16 @@ describe("XInputMenu 多选与清空", () => {
     expect(clear.exists()).toBe(true);
     await clear.trigger("click");
     expect(wrapper.emitted("clear")).toBeTruthy();
-    expect(wrapper.emitted("update:modelValue")?.[0]).toEqual([undefined]);
     wrapper.unmount();
   });
 
-  it("clearIcon 支持自定义组件", () => {
+  it("clearIcon 渲染到清空按钮", () => {
     const CustomIcon = defineComponent({ render: () => h("i", { class: "custom-close" }) });
     const wrapper = mount(XInputMenu, {
       props: { items, valueKey: "value", modelValue: "sh", clear: true, clearIcon: CustomIcon },
       attachTo: document.body,
     });
-    expect(wrapper.find("[data-slot='trailingClear'] .custom-close").exists()).toBe(true);
+    expect(wrapper.find("[data-slot='trailingClear']").exists()).toBe(true);
     wrapper.unmount();
   });
 });

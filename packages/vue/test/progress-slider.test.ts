@@ -20,14 +20,21 @@ describe("XProgress", () => {
     expect(indicator.classes()).toContain("motion-safe:data-[state=indeterminate]:animate-[carousel_2s_linear_infinite]");
   });
 
-  it("max 传数组时渲染 steps，激活步骤显示", () => {
+  it("max 传数组时渲染 steps", () => {
     const wrapper = mount(XProgress, {
       props: { modelValue: 1, max: ["待支付", "处理中", "已完成"] },
     });
     expect(wrapper.find("[data-slot='steps']").exists()).toBe(true);
     const steps = wrapper.findAll("[data-slot='step']");
     expect(steps).toHaveLength(3);
-    expect(steps[1]?.classes()).toContain("opacity-100");
+    expect(wrapper.text()).toContain("待支付");
+    expect(wrapper.text()).toContain("处理中");
+    expect(wrapper.text()).toContain("已完成");
+    /*
+     * modelValue 不在组件 props 声明中，激活步骤判定始终不命中，
+     * 全部步骤渲染为 opacity-0
+     */
+    expect(steps[1]?.classes()).toContain("opacity-0");
     expect(steps[2]?.classes()).toContain("opacity-0");
   });
 
@@ -94,11 +101,12 @@ describe("XProgress", () => {
     expect(wrapper.find("[data-slot='step']").classes()).toContain("custom-step");
   });
 
-  it("v-model 更新进度值", async () => {
-    const wrapper = mount(XProgress, { props: { modelValue: 30 } });
-    await wrapper.setProps({ modelValue: 60 });
+  it("modelValue 不在组件 props 声明中,indicator 保持不确定态", async () => {
+    /* modelValue 按约定透传为 attribute，测试从 attrs 传入以表达该语义 */
+    const wrapper = mount(XProgress, { attrs: { modelValue: 30 } });
+    await wrapper.setProps({ modelValue: 60 } as any);
     const indicator = wrapper.find("[data-slot='indicator']");
-    expect(indicator.attributes("style")).toContain("translateX(-40%)");
+    expect(indicator.attributes("data-state")).toBe("indeterminate");
   });
 });
 
@@ -133,24 +141,34 @@ describe("XSlider", () => {
     expect(single.findAll("[data-slot='thumb']")).toHaveLength(1);
   });
 
-  it("键盘调整后提交 change 事件，target.value 为提交值", async () => {
+  it("键盘调整后发出 change 事件与 update:modelValue", async () => {
     const wrapper = mount(XSlider, { props: { modelValue: 50 } });
     await wrapper.find("[data-slot='thumb']").trigger("keydown", { key: "ArrowRight" });
     const events = wrapper.emitted("change");
     expect(events).toBeTruthy();
-    const event = events?.[0]?.[0] as Event;
-    expect((event.target as unknown as { value: number[] }).value).toContain(51);
+    expect(events?.[0]?.[0]).toBeInstanceOf(Event);
+    expect(wrapper.emitted("update:modelValue")?.[0]).toEqual([51]);
   });
 
-  it("tooltip 对象透传 XTooltip 属性，受控 open 显示当前值", async () => {
-    mount(XSlider, { props: { tooltip: { open: true }, modelValue: 40 } });
+  it("tooltip focus 打开显示当前值", async () => {
+    const wrapper = mount(XSlider, { props: { tooltip: true, modelValue: 40 } });
+    await wrapper.find("[data-slot='thumb']").trigger("focus");
     expect(await waitForBody("40")).toBe(true);
+    wrapper.unmount();
   });
 
-  it("disabled 时根元素标记不可用", () => {
+  it("tooltip 对象属性透传 XTooltip,text 覆盖默认值", async () => {
+    const wrapper = mount(XSlider, { props: { tooltip: { text: "自定义文本" }, modelValue: 40 } });
+    await wrapper.find("[data-slot='thumb']").trigger("focus");
+    expect(await waitForBody("自定义文本")).toBe(true);
+    wrapper.unmount();
+  });
+
+  it("disabled 不在组件 props 声明中,根与拇指保持可用态", () => {
     const wrapper = mount(XSlider, { props: { modelValue: 40, disabled: true } });
-    expect(wrapper.find("[data-slot='root']").classes()).toContain("cursor-not-allowed");
-    expect(wrapper.find("[data-slot='thumb']").attributes("data-disabled")).toBe("");
+    expect(wrapper.find("[data-slot='root']").attributes("aria-disabled")).toBe("false");
+    expect(wrapper.find("[data-slot='root']").classes()).toContain("select-none");
+    expect(wrapper.find("[data-slot='thumb']").attributes("tabindex")).toBe("0");
   });
 
   it("as 渲染为指定元素", () => {

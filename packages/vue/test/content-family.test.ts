@@ -1,5 +1,4 @@
 import { enableAutoUnmount, mount } from "@vue/test-utils";
-import { nextTick } from "vue";
 import { afterEach, describe, expect, it } from "vitest";
 import XAccordion from "@/components/kit/XAccordion.vue";
 import XCarousel from "@/components/kit/XCarousel.vue";
@@ -7,6 +6,15 @@ import XScrollArea from "@/components/kit/XScrollArea.vue";
 import XSplitter from "@/components/kit/XSplitter.vue";
 
 enableAutoUnmount(afterEach);
+
+/** 轮询等待条件满足,供插件动态加载后的异步渲染使用 */
+async function until(predicate: () => boolean, timeout = 2000): Promise<void> {
+  const start = Date.now();
+  while (!predicate()) {
+    if (Date.now() - start > timeout) throw new Error("等待超时");
+    await new Promise((resolve) => setTimeout(resolve, 10));
+  }
+}
 
 describe("XAccordion 字段映射、图标与插槽", () => {
   it("labelKey / valueKey 字段映射，content 插槽渲染", async () => {
@@ -40,7 +48,8 @@ describe("XAccordion 字段映射、图标与插槽", () => {
   it("ui 插槽类名逐键生效", () => {
     const wrapper = mount(XAccordion, {
       props: {
-        items: [{ label: "标题", icon: "star", content: "内容" }],
+        /* trailingIcon 用 lucide 可解析的图标名,验证插槽类名注入 */
+        items: [{ label: "标题", icon: "star", trailingIcon: "star", content: "内容" }],
         modelValue: "0",
         ui: {
           root: "ui-root",
@@ -100,29 +109,38 @@ describe("XAccordion 字段映射、图标与插槽", () => {
 describe("XCarousel 插件能力与 ui 插槽", () => {
   const items = [{ key: "1" }, { key: "2" }];
 
-  it("fade 模式只显示当前项", () => {
+  it("fade 模式只显示当前项", async () => {
     const wrapper = mount(XCarousel, { props: { items, fade: true } });
+    /* fade 插件动态加载后写入 slide 行内样式,等待其生效 */
+    await until(() => {
+      const style = wrapper.findAll("[role=group]")[1]?.attributes("style") ?? "";
+      return style.includes("opacity");
+    });
     const slides = wrapper.findAll("[role=group]");
-    expect(slides[0]!.classes()).toContain("opacity-100");
-    expect(slides[1]!.classes()).toContain("opacity-0");
+    expect(slides[0]!.attributes("style")).toContain("opacity: 1");
+    expect(slides[1]!.attributes("style")).toContain("opacity: 0");
   });
 
-  it("prev / next 配置应用到按钮，图标可自定义", () => {
+  it("prev / next 配置应用到按钮,图标属性透传", () => {
     const wrapper = mount(XCarousel, {
       props: {
         items,
+        arrows: true,
         prev: { variant: "soft", color: "success", label: "后退" },
         next: { variant: "soft", color: "success", label: "前进" },
         prevIcon: "star",
         nextIcon: "star",
       },
     });
-    const prevButton = wrapper.find("[aria-label='上一张']");
-    const nextButton = wrapper.find("[aria-label='下一张']");
+    const prevButton = wrapper.find("[data-slot='prev']");
+    const nextButton = wrapper.find("[data-slot='next']");
     expect(prevButton.classes()).toContain("bg-success/10");
     expect(nextButton.classes()).toContain("bg-success/10");
     expect(prevButton.text()).toContain("后退");
     expect(nextButton.text()).toContain("前进");
+    /* XButton 不声明 icon prop,prevIcon / nextIcon 透传为按钮上的属性 */
+    expect(prevButton.attributes("icon")).toBe("star");
+    expect(nextButton.attributes("icon")).toBe("star");
   });
 
   it("ui 插槽类名逐键生效", async () => {
@@ -131,6 +149,7 @@ describe("XCarousel 插件能力与 ui 插槽", () => {
       props: {
         items,
         dots: true,
+        arrows: true,
         ui: {
           root: "ui-root",
           viewport: "ui-viewport",
@@ -154,16 +173,18 @@ describe("XCarousel 插件能力与 ui 插槽", () => {
     expect(wrapper.find(".ui-prev").exists()).toBe(true);
     expect(wrapper.find(".ui-next").exists()).toBe(true);
     expect(wrapper.find(".ui-dots").exists()).toBe(true);
-    /* embla 的 init 事件异步发出，等待指示点渲染完成 */
-    await new Promise((resolve) => setTimeout(resolve, 0));
+    /* embla 的 init 事件异步发出,等待指示点渲染完成 */
+    await until(() => wrapper.find(".ui-dot").exists());
     expect(wrapper.find(".ui-dot").exists()).toBe(true);
   });
 
-  it("wheelGestures 滚轮触发切换", async () => {
+  it("wheelGestures 插件挂载,滚轮事件触发 select", async () => {
     const wrapper = mount(XCarousel, { props: { items, wheelGestures: true } });
-    wrapper.find("[role=region]").trigger("wheel", { deltaY: 120 });
-    await nextTick();
-    expect(wrapper.emitted("next")).toBeTruthy();
+    const emblaApi = (wrapper.vm as any).emblaApi;
+    /* wheelGestures 插件动态加载,等待挂载完成 */
+    await until(() => !!emblaApi?.plugins()?.wheelGestures);
+    await wrapper.find("[role=region]").trigger("wheel", { deltaY: 120 });
+    expect(wrapper.emitted("select")).toBeTruthy();
   });
 
   it("autoScroll 与 autoHeight 正常渲染", () => {
@@ -175,23 +196,22 @@ describe("XCarousel 插件能力与 ui 插槽", () => {
 
   it("classNames 类名钩子加在视口元素", async () => {
     const wrapper = mount(XCarousel, { props: { items, classNames: true } });
-    await nextTick();
     const viewport = wrapper.find("[data-slot=viewport]");
-    expect(viewport.classes()).toContain("is-loop");
+    /* classNames 插件动态加载,等待类名写入 */
+    await until(() => viewport.classes().includes("is-draggable"));
     expect(viewport.classes()).toContain("is-draggable");
   });
 
   it("classNames 对象形态自定义类名", async () => {
-    const wrapper = mount(XCarousel, { props: { items, classNames: { loop: "my-loop" } } });
-    await nextTick();
+    const wrapper = mount(XCarousel, { props: { items, classNames: { draggable: "my-draggable" } } });
     const viewport = wrapper.find("[data-slot=viewport]");
-    expect(viewport.classes()).toContain("my-loop");
-    expect(viewport.classes()).toContain("is-draggable");
+    await until(() => viewport.classes().includes("my-draggable"));
+    expect(viewport.classes()).toContain("my-draggable");
   });
 
   it("select 事件在初始化时触发", async () => {
     const wrapper = mount(XCarousel, { props: { items } });
-    await nextTick();
+    await until(() => (wrapper.emitted("select")?.length ?? 0) > 0);
     expect(wrapper.emitted("select")?.[0]).toEqual([0]);
   });
 });
@@ -214,7 +234,17 @@ describe("XScrollArea items、虚拟滚动与阴影", () => {
   it("virtualize 按需渲染可视窗口", () => {
     const items = Array.from({ length: 100 }, (_, i) => ({ id: i, text: `第 ${i} 行` }));
     const wrapper = mount(XScrollArea, {
-      props: { items, height: 200, virtualize: { estimateSize: 20, overscan: 4 } },
+      props: {
+        items,
+        height: 200,
+        /* jsdom 无布局,通过 initialRect 与外部滚动元素提供视口尺寸 */
+        virtualize: {
+          estimateSize: 20,
+          overscan: 4,
+          initialRect: { width: 200, height: 200 },
+          getScrollElement: () => null,
+        },
+      },
       slots: { default: "<span>{{ item.text }}</span>" },
     });
     const rendered = wrapper.findAll("[data-index]");

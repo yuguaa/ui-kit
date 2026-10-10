@@ -3,7 +3,7 @@
  * 用法：const [Carousel, carouselApi] = useXCarousel({ items: [...] })
  */
 import { defineComponent, h, ref } from 'vue'
-import type { CarouselDataItem } from './XCarousel.vue'
+import type { CarouselItem } from './XCarousel.vue'
 import XCarousel from './XCarousel.vue'
 
 export interface XCarouselApi {
@@ -20,7 +20,7 @@ interface XCarouselExposed {
 }
 
 export function useXCarousel(options: {
-  items?: CarouselDataItem[]
+  items?: CarouselItem[]
   autoplay?: boolean
   interval?: number
   loop?: boolean

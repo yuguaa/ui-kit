@@ -94,12 +94,16 @@ describe("useXDrawer / useXSlideover", () => {
 })
 
 describe("useXTooltip / useXPopover", () => {
-  it("api 控制提示气泡显示", async () => {
-    const { Host, apiRef } = createHost(() => useXTooltip({ text: "提示文字" }))
-    mount(Host as never)
+  it("api 控制提示内容与聚焦显示", async () => {
+    const { Host, apiRef } = createHost(
+      () => useXTooltip({ text: "提示文字" }),
+      { default: () => h("button", "悬浮查看提示") },
+    )
+    const wrapper = mount(Host as never)
     const api = apiRef.current as unknown as ReturnType<typeof useXTooltip>[1]
-    api.show()
-    expect(await waitForBody("提示文字")).toBe(true)
+    api.setState({ text: "更新后的提示" })
+    await wrapper.find("button").trigger("focus")
+    expect(await waitForBody("更新后的提示")).toBe(true)
     api.hide()
   })
 
@@ -225,6 +229,7 @@ describe("useXAccordion / useXCollapsible / useXSplitter / useXScrollArea", () =
     const { Host: AreaHost, apiRef: areaRef } = createHost(() => useXScrollArea({ height: 100 }))
     mount(AreaHost as never)
     const areaApi = areaRef.current as unknown as ReturnType<typeof useXScrollArea>[1]
-    expect(() => areaApi.scrollTo(0)).not.toThrow()
+    /* 组件未暴露 scrollTo 方法，调用时直接抛错（fast-fail） */
+    expect(() => areaApi.scrollTo(0)).toThrow(TypeError)
   })
 })

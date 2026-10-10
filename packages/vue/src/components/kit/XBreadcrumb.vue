@@ -11,7 +11,8 @@ import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
 type Breadcrumb = ComponentConfig<typeof theme, AppConfig, 'breadcrumb'>
 
-export interface BreadcrumbItem extends Omit<LinkProps, 'raw' | 'custom'> {
+export interface BreadcrumbItem {
+
   label?: string
   /**
    * @IconifyIcon

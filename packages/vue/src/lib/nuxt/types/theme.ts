@@ -1,5 +1,5 @@
 import type { SlotClass } from './tv'
-import type * as ui from '#build/ui'
+import type * as ui from '@/lib/nuxt/ui'
 import type * as ComponentTypes from './index'
 
 type ThemeSlotOverrides<T> = T extends { slots: infer S extends Record<string, any> }
