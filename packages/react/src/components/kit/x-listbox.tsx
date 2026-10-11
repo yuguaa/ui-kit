@@ -4,6 +4,7 @@
  * filter 开启顶部搜索框，按 filterFields 过滤；选项可带 type: 'label' | 'separator'。
  */
 import * as React from "react"
+import { useVirtualizer } from "@tanstack/react-virtual"
 import { Combobox } from "@base-ui/react/combobox"
 import { XAvatar, type XAvatarProps } from "@/components/kit/x-avatar"
 import { XIcon, type XIconName } from "@/components/kit/x-icon"
@@ -26,6 +27,16 @@ export type XListboxColor = "primary" | "secondary" | "neutral" | "success" | "i
 export interface XListboxFilterOptions {
   placeholder?: string
   disabled?: boolean
+}
+
+/** 虚拟滚动配置（对齐 Vue 版 virtualize） */
+export interface XListboxVirtualizeOptions {
+  /** 每项估算高度（像素），或按索引返回估算高度的函数；默认按 size 与描述推算 */
+  estimateSize?: number | ((index: number) => number)
+  /** 可视区域外额外渲染的项数，默认 12 */
+  overscan?: number
+  /** 每项稳定键，默认使用索引 */
+  getItemKey?: (index: number) => string | number
 }
 
 export interface XListboxItem {
@@ -93,6 +104,8 @@ export interface XListboxProps {
   filterFields?: string[]
   /** 忽略内置过滤（适合自定义过滤场景） */
   ignoreFilter?: boolean
+  /** 虚拟滚动：true 或配置对象，适合大数据量列表 */
+  virtualize?: boolean | XListboxVirtualizeOptions
   /** 选中态图标 */
   selectedIcon?: XListboxIcon
   /** 高亮：始终显示颜色描边，类似聚焦态 */
@@ -164,6 +177,15 @@ const highlightClasses: Record<XListboxColor, string> = {
   error: "ring-error",
 }
 
+/** 虚拟化估算行高：无说明 / 有说明，对齐 Vue 版 getEstimateSize */
+const virtualizeRowSizes: Record<XListboxSize, { plain: number; withDescription: number }> = {
+  xs: { plain: 24, withDescription: 44 },
+  sm: { plain: 28, withDescription: 48 },
+  md: { plain: 32, withDescription: 52 },
+  lg: { plain: 36, withDescription: 56 },
+  xl: { plain: 40, withDescription: 60 },
+}
+
 /** 渲染图标：字符串走 XIcon，组件直接渲染 */
 function renderIcon(
   icon: XListboxIcon | undefined,
@@ -193,6 +215,7 @@ export function XListbox({
   filter = false,
   filterFields,
   ignoreFilter = false,
+  virtualize = false,
   selectedIcon = "check",
   highlight = false,
   autofocus = false,
@@ -223,6 +246,9 @@ export function XListbox({
   const currentValue = value !== undefined ? value : innerValue
   const [searchTerm, setSearchTerm] = React.useState("")
   const listContainerRef = React.useRef<HTMLDivElement>(null)
+  const contentRef = React.useRef<HTMLDivElement>(null)
+  const virtualizeOptions = typeof virtualize === "object" ? virtualize : {}
+  const isVirtualized = virtualize === true || typeof virtualize === "object"
 
   const labelField = labelKey || "label"
   const descriptionField = descriptionKey || "description"
@@ -246,6 +272,53 @@ export function XListbox({
   const itemValue = (entry: XListboxItem) => (valueKey ? getField(entry, valueKey) : entry)
   const currentSize = sizeClasses[size]
 
+  /* 估算行高：显式配置优先，否则对齐 Vue 版按 size 与描述字段推算 */
+  const estimateSize = React.useMemo<((index: number) => number) | undefined>(() => {
+    const provided = typeof virtualize === "object" ? virtualize.estimateSize : undefined
+    if (provided != null) {
+      return typeof provided === "function" ? provided : () => provided
+    }
+    if (!isVirtualized) return undefined
+    const rowSizes = virtualizeRowSizes[size]
+    if (itemDescription != null) return () => rowSizes.withDescription
+    if (!descriptionKey) return () => rowSizes.plain
+    return (index: number) => {
+      const entry = filteredItems[index]
+      const description = typeof entry === "object" && entry !== null ? getField(entry, descriptionField) : undefined
+      return description != null && description !== "" ? rowSizes.withDescription : rowSizes.plain
+    }
+  }, [isVirtualized, virtualize, size, itemDescription, descriptionKey, descriptionField, filteredItems])
+
+  /* 读取滚动容器的 scroll-padding（scroll-py-1），补偿虚拟化首尾偏移 */
+  const [scrollPadding, setScrollPadding] = React.useState({ start: 0, end: 0 })
+  React.useLayoutEffect(() => {
+    if (!isVirtualized) return
+    const element = contentRef.current
+    if (!element) return
+    const style = window.getComputedStyle(element)
+    const parse = (value: string) => {
+      const parsed = Number.parseFloat(value)
+      return Number.isFinite(parsed) ? parsed : 0
+    }
+    setScrollPadding({ start: parse(style.scrollPaddingTop), end: parse(style.scrollPaddingBottom) })
+  }, [isVirtualized])
+
+  /* 虚拟器：窗口由内容区可视高度驱动，未显式配置的 estimateSize 走默认推算 */
+  const virtualizer = useVirtualizer({
+    count: filteredItems.length,
+    getScrollElement: () => contentRef.current,
+    estimateSize: (index: number) => (estimateSize != null ? estimateSize(index) : 32),
+    overscan: virtualizeOptions.overscan ?? 12,
+    getItemKey: virtualizeOptions.getItemKey,
+    scrollPaddingStart: scrollPadding.start,
+    scrollPaddingEnd: scrollPadding.end,
+  })
+
+  /* estimateSize 变化时重置测量缓存，确保新估算高度生效 */
+  React.useLayoutEffect(() => {
+    if (isVirtualized) virtualizer.measure()
+  }, [estimateSize])
+
   const updateValue = (next: unknown) => {
     if (value === undefined) setInnerValue(next)
     onValueChange?.(next)
@@ -260,9 +333,9 @@ export function XListbox({
     entry.onSelect?.(event.nativeEvent)
   }
 
-  const renderItem = (entry: XListboxItem, index: number): React.ReactNode => {
+  const renderItem = (entry: XListboxItem, index: number, options?: { virtual?: boolean; total?: number }): React.ReactNode => {
     if (entry?.type === "label") {
-      return (
+      const labelNode = (
         <Combobox.GroupLabel
           key={`label-${index}`}
           data-slot="label"
@@ -271,6 +344,17 @@ export function XListbox({
           {getField(entry, labelField)}
         </Combobox.GroupLabel>
       )
+
+      /* 虚拟化平铺渲染：GroupLabel 依赖 Group 上下文，包一层无布局影响的 Group */
+      if (options?.virtual) {
+        return (
+          <Combobox.Group key={`label-${index}`} className="contents">
+            {labelNode}
+          </Combobox.Group>
+        )
+      }
+
+      return labelNode
     }
 
     if (entry?.type === "separator") {
@@ -287,9 +371,15 @@ export function XListbox({
       return <React.Fragment key={`item-${index}`}>{itemSlot({ item: entry, index })}</React.Fragment>
     }
 
+    /* 虚拟化时显式传 index，避免从 filtered items 反查造成值不匹配 */
+    const virtualItemProps = options?.virtual
+      ? { index, "data-index": index, "aria-setsize": options.total, "aria-posinset": index + 1 }
+      : {}
+
     return (
       <Combobox.Item
         key={`item-${index}`}
+        {...virtualItemProps}
         value={itemValue(entry)}
         disabled={entry.disabled}
         data-slot="item"
@@ -353,14 +443,21 @@ export function XListbox({
       onValueChange={updateValue}
       inputValue={searchTerm}
       onInputValueChange={setSearchTerm}
-      onItemHighlighted={(next, details) =>
-        onHighlight?.(next === undefined ? undefined : { ref: (details as any).event?.target, value: next })
-      }
+      onItemHighlighted={(next, details) => {
+        /* 虚拟化：高亮变化时滚动窗口跟随（对齐 Vue 版 virtualHighlightHook） */
+        if (isVirtualized && next !== undefined && details.index != null) {
+          queueMicrotask(() => {
+            virtualizer.scrollToIndex(details.index, { align: "start" })
+          })
+        }
+        onHighlight?.(next === undefined ? undefined : { ref: (details.event as any)?.target, value: next })
+      }}
       multiple={multiple}
       disabled={disabled}
       required={required}
       name={name}
       id={id}
+      virtualized={isVirtualized}
       highlightItemOnHover={highlightOnHover}
       itemToStringLabel={(entry: any) => String(getField(entry, labelField) ?? entry ?? "")}
     >
@@ -394,6 +491,7 @@ export function XListbox({
         )}
 
         <Combobox.List
+          ref={contentRef}
           data-slot="content"
           className={cn("relative max-h-60 flex-1 overflow-y-auto scroll-py-1 focus:outline-none", ui?.content)}
         >
@@ -404,6 +502,30 @@ export function XListbox({
           ) : !filteredItems.length ? (
             <div data-slot="empty" className={cn("text-center text-muted-foreground", currentSize.empty, ui?.empty)}>
               {empty != null ? empty({ searchTerm }) : "暂无匹配项"}
+            </div>
+          ) : isVirtualized ? (
+            /* 虚拟滚动：相对容器撑起总高度，窗口项绝对定位（对齐 Vue 版 ListboxVirtualizer） */
+            <div data-slot="virtualizer" role="presentation" className="relative w-full" style={{ height: virtualizer.getTotalSize() }}>
+              {virtualizer.getVirtualItems().map((virtualItem) => {
+                const entry = filteredItems[virtualItem.index]
+                if (entry == null) return null
+                return (
+                  <div
+                    key={virtualItem.key}
+                    role="presentation"
+                    data-index={virtualItem.index}
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      transform: `translateY(${virtualItem.start}px)`,
+                    }}
+                  >
+                    {renderItem(entry, virtualItem.index, { virtual: true, total: filteredItems.length })}
+                  </div>
+                )
+              })}
             </div>
           ) : (
             filteredGroups.map((group, groupIndex) => (

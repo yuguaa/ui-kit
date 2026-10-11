@@ -19,6 +19,22 @@
 | wheelGestures? | boolean \| WheelGesturesPluginOptions | - |  |
 | class? | any | - |  |
 | ui? | Carousel['slots'] | - |  |
+| active? | any | - | embla Carousel Root 透传成员（类型补齐，运行时经 useForwardProps 转发） |
+| align? | any | - |  |
+| breakpoints? | any | - |  |
+| containScroll? | any | - |  |
+| dragFree? | any | - |  |
+| dragThreshold? | any | - |  |
+| duration? | any | - |  |
+| inViewThreshold? | any | - |  |
+| loop? | any | - |  |
+| skipSnaps? | any | - |  |
+| slidesToScroll? | any | - |  |
+| startIndex? | any | - |  |
+| watchDrag? | any | - |  |
+| watchResize? | any | - |  |
+| watchSlides? | any | - |  |
+| watchFocus? | any | - |  |
 
 ## Emits
 

@@ -13,6 +13,7 @@
 | form? | any | - |  |
 | minlength? | any | - |  |
 | maxlength? | any | - |  |
+| avatar? | any | - |  |
 | pattern? | any | - |  |
 | step? | any | - |  |
 | min? | any | - |  |
@@ -54,14 +55,12 @@
 | aria-selected? | any | - |  |
 | data-testid? | any | - |  |
 | as? | any | 'div' | The element or component this component should render as. |
-| id? | string | - |  |
 | name? | string | - |  |
 | type? | InputHTMLAttributes['type'] | - |  |
 | placeholder? | string | - | The placeholder text when the input is empty. |
 | color? | Input['variants']['color'] | 'primary' |  |
 | variant? | Input['variants']['variant'] | 'outline' |  |
-| size? | Input['variants']['size'] | 'md' |  |
-| required? | boolean | - |  |
+| required? | boolean | 'md' |  |
 | autocomplete? | InputHTMLAttributes['autocomplete'] | - |  |
 | autofocus? | boolean | - |  |
 | autofocusDelay? | number | - |  |
@@ -71,7 +70,6 @@
 | modelValue? | ApplyModifiers&lt;T, Mod&gt; | - |  |
 | defaultValue? | ApplyModifiers&lt;T, Mod&gt; | - |  |
 | modelModifiers? | Mod | - |  |
-| class? | any | - |  |
 | ui? | Input['slots'] | - |  |
 
 ## Emits

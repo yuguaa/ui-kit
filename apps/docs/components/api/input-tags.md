@@ -2,7 +2,6 @@
 
 | 名称 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
-| class? | any | - |  |
 | style? | any | - |  |
 | id? | any | - |  |
 | title? | any | - |  |
@@ -58,6 +57,19 @@
 | deleteIcon? | IconProps['name'] | appConfig.ui.icons.close | The icon displayed to delete a tag. |
 | highlight? | boolean | - | Highlight the ring color like a focus state. |
 | fixed? | boolean | - | Keep the mobile text size on all breakpoints. |
+| disabled? | any | - | 表单与 reka 透传成员（disabled/modelValue/defaultValue/avatar 等，运行时经 |
+| modelValue? | T[] | - |  |
+| defaultValue? | T[] | - |  |
+| avatar? | AvatarProps | - |  |
+| addOnPaste? | boolean | - |  |
+| addOnTab? | boolean | - |  |
+| addOnBlur? | boolean | - |  |
+| duplicate? | boolean | - |  |
+| delimiter? | any | - |  |
+| max? | any | - |  |
+| convertValue? | any | - |  |
+| displayValue? | any | - |  |
+| required? | boolean | - |  |
 | class? | any | - |  |
 | ui? | InputTags['slots'] | - |  |
 

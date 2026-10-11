@@ -13,3 +13,4 @@
 | position? | Separator['variants']['position'] | 'center' | The position of the content. |
 | class? | any | - |  |
 | ui? | Separator['slots'] | - |  |
+| decorative? | any | - | reka Separator Root 透传成员（类型补齐，运行时经 useForwardProps 转发） |

@@ -67,7 +67,7 @@ function stringifyValue(value: string | number | readonly string[] | null | unde
 }
 
 export interface XTextareaProps
-  extends Omit<React.ComponentProps<"textarea">, "size" | "color"> {
+  extends Omit<React.ComponentProps<"textarea">, "size" | "color" | "autoFocus"> {
   /** 控件尺寸 */
   size?: XTextareaSize
   /** 组件颜色（聚焦描边与高亮） */
@@ -96,6 +96,10 @@ export interface XTextareaProps
   render?: React.ReactElement
   /** 主题插槽类名 */
   ui?: XTextareaUi
+  /** 挂载后自动聚焦原生输入元素 */
+  autofocus?: boolean
+  /** 自动聚焦的延迟（毫秒） */
+  autofocusDelay?: number
 }
 
 export const XTextarea = React.forwardRef<HTMLTextAreaElement, XTextareaProps>(function XTextarea(
@@ -114,6 +118,8 @@ export const XTextarea = React.forwardRef<HTMLTextAreaElement, XTextareaProps>(f
     showCount = false,
     render,
     ui,
+    autofocus,
+    autofocusDelay = 0,
     className,
     value,
     defaultValue,
@@ -169,6 +175,15 @@ export const XTextarea = React.forwardRef<HTMLTextAreaElement, XTextareaProps>(f
   React.useEffect(() => {
     if (!resizeEnabled) return
     const id = window.setTimeout(resize, autoresizeDelay)
+    return () => window.clearTimeout(id)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  /* 挂载后按 autofocusDelay 延迟聚焦，卸载时清理定时器（对齐 Nuxt autofocus 行为） */
+  React.useEffect(() => {
+    const id = window.setTimeout(() => {
+      if (autofocus) textareaRef.current?.focus()
+    }, autofocusDelay)
     return () => window.clearTimeout(id)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])

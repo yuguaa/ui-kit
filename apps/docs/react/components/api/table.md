@@ -9,7 +9,11 @@
 | meta? | TableMeta&lt;T&gt; | - | 行与列的 meta 配置(类名 / 样式) |
 | empty? | React.ReactNode | - | 无数据时展示的文字 |
 | sticky? | boolean \| "header" \| "footer" | - |  |
+| virtualize? | boolean \| XTableVirtualizeOptions | - | 虚拟滚动开关，对象形态可配置外部滚动容器与行高估算；开启后行固定不生效 |
 | loading? | boolean | - | 加载状态 |
+| loadingColor? | string | - | 加载指示条颜色，默认 'primary'；neutral 映射为 inverted |
+| loadingAnimation? | string | - | 加载指示条动画，默认 'carousel' |
+| watchOptions? | { deep?: boolean } | - |  |
 | globalFilterOptions? | GlobalFilterOptions&lt;T&gt; & { state?: { globalFilter?: TableState["globalFilt | - | TanStack 全局筛选选项(state 可受控) |
 | columnFiltersOptions? | Omit&lt;ColumnFiltersOptions&lt;T&gt;, "getFilteredRowModel"&gt; & { state?: { c | - | TanStack 列筛选选项(state 可受控) |
 | columnPinningOptions? | ColumnPinningOptions & { state?: { columnPinning?: TableState["columnPinning"] } | - | TanStack 固定列选项(state 可受控) |

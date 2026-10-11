@@ -12,6 +12,9 @@
 | animation? | Progress['variants']['animation'] | 'carousel' | The animation of the progress bar. |
 | class? | any | - |  |
 | ui? | Progress['slots'] | - |  |
+| getValueLabel? | any | - | reka Progress Root 透传成员（类型补齐，运行时经 useForwardProps 转发） |
+| getValueText? | any | - |  |
+| modelValue? | any | - |  |
 
 ## Emits
 

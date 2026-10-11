@@ -16,6 +16,7 @@
 | filter? | boolean \| XListboxFilterOptions | - | 顶部过滤搜索框：true 或 { placeholder, disabled } |
 | filterFields? | string[] | - | 过滤字段，默认 [labelKey] |
 | ignoreFilter? | boolean | - | 忽略内置过滤（适合自定义过滤场景） |
+| virtualize? | boolean \| XListboxVirtualizeOptions | - | 虚拟滚动：true 或配置对象，适合大数据量列表 |
 | selectedIcon? | XListboxIcon | - | 选中态图标 |
 | highlight? | boolean | - | 高亮：始终显示颜色描边，类似聚焦态 |
 | autofocus? | boolean | - | 是否自动聚焦 |

@@ -69,13 +69,13 @@
 | disabled? | any | - |  |
 | as? | any | 'button' | The element or component this component should render as whe |
 | type? | ButtonHTMLAttributes['type'] | 'button' | The type of the button when not a link. |
-| disabled? | boolean | - |  |
 | active? | boolean | - | Force the link to be active independent of the current route |
 | exact? | boolean | - | Will only be active if the current route is an exact match. |
 | exactQuery? | boolean \| 'partial' | - | Allows controlling how the current route query sets the link |
 | exactHash? | boolean | - | Will only be active if the current route hash is an exact ma |
 | inactiveClass? | string | - | The class to apply when the link is inactive. |
+| activeClass? | any | - | 类型修补：activeClass 与 ariaCurrentValue 为 NuxtLink 透传 props（仅类型层 |
+| ariaCurrentValue? | any | - |  |
 | custom? | boolean | - |  |
 | raw? | boolean | - | When `true`, only styles from `class`, `activeClass`, and `i |
 | locale? | boolean \| string | - |  |
-| class? | any | - |  |

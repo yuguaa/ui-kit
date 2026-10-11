@@ -19,3 +19,5 @@
 | render? | React.ReactElement | - | 渲染为指定元素 |
 | ui? | XInputUi | - | 主题插槽类名 |
 | onClear? | () =&gt; void | - | 点击清空按钮时回调 |
+| autofocus? | boolean | - | 挂载后自动聚焦原生输入元素 |
+| autofocusDelay? | number | - | 自动聚焦的延迟（毫秒） |

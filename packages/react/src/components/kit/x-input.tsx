@@ -159,7 +159,7 @@ const statusClasses: Record<XInputStatus, string> = {
 }
 
 export interface XInputProps
-  extends Omit<React.ComponentProps<"input">, "size" | "color" | "prefix"> {
+  extends Omit<React.ComponentProps<"input">, "size" | "color" | "prefix" | "autoFocus"> {
   /** 控件尺寸 */
   size?: XInputSize
   /** 组件颜色（聚焦描边与高亮） */
@@ -194,6 +194,10 @@ export interface XInputProps
   ui?: XInputUi
   /** 点击清空按钮时回调 */
   onClear?: () => void
+  /** 挂载后自动聚焦原生输入元素 */
+  autofocus?: boolean
+  /** 自动聚焦的延迟（毫秒） */
+  autofocusDelay?: number
 }
 
 export const XInput = React.forwardRef<HTMLInputElement, XInputProps>(function XInput(
@@ -215,6 +219,8 @@ export const XInput = React.forwardRef<HTMLInputElement, XInputProps>(function X
     render,
     ui,
     onClear,
+    autofocus,
+    autofocusDelay = 0,
     className,
     value,
     defaultValue,
@@ -253,6 +259,15 @@ export const XInput = React.forwardRef<HTMLInputElement, XInputProps>(function X
     if (value === undefined) setInnerValue(event.target.value)
     onChange?.(event)
   }
+
+  /* 挂载后按 autofocusDelay 延迟聚焦，卸载时清理定时器（对齐 Nuxt autofocus 行为） */
+  React.useEffect(() => {
+    const id = window.setTimeout(() => {
+      if (autofocus) inputRef.current?.focus()
+    }, autofocusDelay)
+    return () => window.clearTimeout(id)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   /* 合并转发 ref 与内部 ref：清空按钮需要访问真实控件 */
   const mergedRef = (node: HTMLInputElement | null) => {

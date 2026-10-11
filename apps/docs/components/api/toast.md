@@ -16,6 +16,9 @@
 | progress? | boolean \| Pick&lt;ProgressProps, 'color' \| 'ui'&gt; | - |  |
 | class? | any | - |  |
 | ui? | Toast['slots'] | - |  |
+| defaultOpen? | any | - | reka Toast Root 透传成员（类型补齐，运行时经 useForwardProps 转发） |
+| open? | any | - |  |
+| type? | any | - |  |
 
 ## Emits
 

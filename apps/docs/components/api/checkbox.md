@@ -8,6 +8,11 @@
 | title? | any | - |  |
 | role? | any | - |  |
 | value? | any | - |  |
+| defaultValue? | any | - |  |
+| disabled? | any | - |  |
+| modelValue? | any | - |  |
+| trueValue? | any | - |  |
+| falseValue? | any | - |  |
 | placeholder? | any | - |  |
 | required? | any | - |  |
 | readonly? | any | - |  |
@@ -62,12 +67,9 @@
 | description? | string | - |  |
 | color? | Checkbox['variants']['color'] | 'primary' |  |
 | variant? | Checkbox['variants']['variant'] | 'list' |  |
-| size? | Checkbox['variants']['size'] | 'md' |  |
-| indicator? | Checkbox['variants']['indicator'] | 'start' | Position of the indicator. |
 | highlight? | boolean | - | Highlight the ring color like a focus state. |
 | icon? | IconProps['name'] | appConfig.ui.icons.check | The icon displayed when checked, or above the label when `in |
 | indeterminateIcon? | IconProps['name'] | appConfig.ui.icons.minus | The icon displayed when the checkbox is indeterminate. |
-| class? | any | - |  |
 | ui? | Checkbox['slots'] | - |  |
 
 ## Emits

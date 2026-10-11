@@ -15,3 +15,18 @@
 | closeIcon? | IconProps['name'] | appConfig.ui.icons.close | The icon displayed in the close button. |
 | class? | any | - |  |
 | ui? | Drawer['slots'] | - |  |
+| activeSnapPoint? | any | - | vaul Drawer Root 透传成员（类型补齐，运行时经 useForwardProps 转发） |
+| closeThreshold? | any | - |  |
+| shouldScaleBackground? | any | - |  |
+| setBackgroundColorOnScale? | any | - |  |
+| scrollLockTimeout? | any | - |  |
+| fixed? | any | - |  |
+| dismissible? | any | - |  |
+| modal? | any | - |  |
+| open? | any | - |  |
+| defaultOpen? | any | - |  |
+| direction? | any | - |  |
+| noBodyStyles? | any | - |  |
+| handleOnly? | any | - |  |
+| preventScrollRestoration? | any | - |  |
+| snapPoints? | any | - |  |

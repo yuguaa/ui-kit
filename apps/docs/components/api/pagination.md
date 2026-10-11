@@ -14,9 +14,16 @@
 | activeVariant? | ButtonProps['variant'] | 'solid' | The variant of the active pagination control. |
 | showControls? | boolean | true | Whether to show the first, previous, next, and last controls |
 | size? | ButtonProps['size'] | - |  |
-| to? | (page: number) =&gt; ButtonProps['to'] | - | A function to render page controls as links. |
+| to? | any | - | A function to render page controls as links. |
 | class? | any | - |  |
 | ui? | Pagination['slots'] | - |  |
+| defaultPage? | any | - | 类型修补：reka 透传 props（仅类型层，运行时经 useForwardProps 传递） |
+| disabled? | any | - |  |
+| itemsPerPage? | any | - |  |
+| page? | any | - |  |
+| showEdges? | any | - |  |
+| siblingCount? | any | - |  |
+| total? | any | - |  |
 
 ## Emits
 

@@ -10,6 +10,13 @@
 | reference? | TooltipTriggerProps['reference'] | - | The reference (or anchor) element that is being referred to  |
 | class? | any | - |  |
 | ui? | Tooltip['slots'] | - |  |
+| open? | any | - | reka Tooltip Root 透传成员（类型补齐，运行时经 useForwardProps 转发） |
+| defaultOpen? | any | - |  |
+| delayDuration? | any | - |  |
+| disableHoverableContent? | any | - |  |
+| disableClosingTrigger? | any | - |  |
+| ignoreNonKeyboardFocus? | any | - |  |
+| disabled? | any | - |  |
 
 ## Emits
 

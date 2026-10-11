@@ -68,14 +68,19 @@ export interface XFormContextValue {
   values: Record<string, unknown>
   errors: Record<string, string>
   disabled: boolean
+  /** 提交中（loadingAuto 开启且 onSubmit 返回 Promise 时） */
+  loading: boolean
   setValue: (name: string, value: unknown) => void
-  /** 校验表单，返回错误记录（带 schema 时返回 Promise） */
+  /** 校验表单，返回错误记录（带异步校验时返回 Promise） */
   validate: () => Record<string, string> | Promise<Record<string, string>>
   /** 重置表单 */
   reset: () => void
   /** 提交表单 */
   submit: () => void
 }
+
+/** 触发表单校验的事件类型（submit 始终校验，无需配置） */
+export type XFormValidateOn = "submit" | "input" | "blur" | "change"
 
 const XFormContext = React.createContext<XFormContextValue | null>(null)
 
@@ -109,6 +114,14 @@ export interface XFormProps extends Omit<React.ComponentProps<"form">, "onSubmit
   rules?: Record<string, XFormRule[]>
   /** 标准 schema（zod v4 / valibot v1 等），与 rules 叠加校验 */
   schema?: StandardSchema
+  /** 自定义校验（返回各字段错误信息），与 rules、schema 叠加 */
+  validate?: (values: Record<string, unknown>) => Promise<Record<string, string>> | Record<string, string>
+  /** 触发校验的事件列表；提交时始终校验 */
+  validateOn?: XFormValidateOn[]
+  /** input 事件校验的防抖延迟（毫秒），默认 300 */
+  validateOnInputDelay?: number
+  /** onSubmit 返回 Promise 时自动进入 loading 并禁用表单，默认 true */
+  loadingAuto?: boolean
   /** 整体禁用 */
   disabled?: boolean
   /** 提交回调（校验通过后触发） */
@@ -156,6 +169,10 @@ export function XForm({
   defaultValues = {},
   rules = {},
   schema,
+  validate: validateFn,
+  validateOn = ["input", "blur", "change"],
+  validateOnInputDelay = 300,
+  loadingAuto = true,
   disabled = false,
   onSubmit,
   onError,
@@ -166,28 +183,71 @@ export function XForm({
 }: XFormProps) {
   const [innerValues, setInnerValues] = React.useState<Record<string, unknown>>(defaultValues)
   const [errors, setErrors] = React.useState<Record<string, string>>({})
+  const [loading, setLoading] = React.useState(false)
   const currentValues = values ?? innerValues
 
   const setValue = (name: string, value: unknown) => {
     if (values == null) setInnerValues((prev) => ({ ...prev, [name]: value }))
   }
 
-  const validate = () => {
-    const nextErrors = validateFormValues(currentValues, rules)
-    if (schema == null) {
-      setErrors(nextErrors)
-      return nextErrors
-    }
-    return validateSchemaValues(currentValues, schema).then((schemaErrors) => {
-      for (const error of schemaErrors) {
-        const key = error.name ?? ""
-        if (nextErrors[key] == null) {
-          nextErrors[key] = error.message
-        }
+  /** 计算全部字段错误：rules、自定义 validate、schema 依次叠加；
+   * 同名字段已有错误时后续校验不覆盖（优先级 rules > validate > schema） */
+  const computeErrors = (
+    target: Record<string, unknown>,
+  ): Record<string, string> | Promise<Record<string, string>> => {
+    const ruleErrors = validateFormValues(target, rules)
+    if (validateFn == null && schema == null) return ruleErrors
+    return Promise.resolve(validateFn == null ? undefined : validateFn(target)).then((customResult) => {
+      const nextErrors = { ...ruleErrors }
+      const customErrors = customResult ?? {}
+      for (const [key, message] of Object.entries(customErrors)) {
+        if (nextErrors[key] == null) nextErrors[key] = message
       }
-      setErrors(nextErrors)
-      return nextErrors
+      if (schema == null) return nextErrors
+      return validateSchemaValues(target, schema).then((schemaErrors) => {
+        for (const error of schemaErrors) {
+          const key = error.name ?? ""
+          if (nextErrors[key] == null) {
+            nextErrors[key] = error.message
+          }
+        }
+        return nextErrors
+      })
     })
+  }
+
+  const validate = () => {
+    const result = computeErrors(currentValues)
+    if (result instanceof Promise) {
+      return result.then((nextErrors) => {
+        setErrors(nextErrors)
+        return nextErrors
+      })
+    }
+    setErrors(result)
+    return result
+  }
+
+  /** 校验单个字段：只更新该字段的错误，其余字段保持现状 */
+  const validateField = (name?: string) => {
+    const apply = (nextErrors: Record<string, string>) => {
+      setErrors((prev) => {
+        if (name == null) return nextErrors
+        const merged = { ...prev }
+        if (nextErrors[name] != null) {
+          merged[name] = nextErrors[name]
+        } else {
+          delete merged[name]
+        }
+        return merged
+      })
+    }
+    const result = computeErrors(currentValues)
+    if (result instanceof Promise) {
+      void result.then(apply)
+      return
+    }
+    apply(result)
   }
 
   const reset = () => {
@@ -195,33 +255,110 @@ export function XForm({
     setErrors({})
   }
 
+  const finishSubmit = (nextErrors: Record<string, string>) => {
+    setErrors(nextErrors)
+    if (Object.keys(nextErrors).length > 0) {
+      onError?.(nextErrors)
+      return
+    }
+    /* onSubmit 允许返回 Promise（loadingAuto 依赖返回值判断，需断言真实返回类型） */
+    const result = onSubmit?.(currentValues) as Promise<void> | undefined
+    if (result instanceof Promise && loadingAuto) {
+      setLoading(true)
+      void result.finally(() => setLoading(false))
+    }
+  }
+
   const submit = () => {
-    const result = validate()
+    const result = computeErrors(currentValues)
     if (result instanceof Promise) {
-      void result.then((nextErrors) => {
-        if (Object.keys(nextErrors).length > 0) {
-          onError?.(nextErrors)
-          return
-        }
-        onSubmit?.(currentValues)
-      })
+      void result.then(finishSubmit)
       return
     }
-    if (Object.keys(result).length > 0) {
-      onError?.(result)
-      return
-    }
-    onSubmit?.(currentValues)
+    finishSubmit(result)
   }
 
   const contextValue = React.useMemo<XFormContextValue>(
-    () => ({ values: currentValues, errors, disabled, setValue, validate, reset, submit }),
-    [currentValues, errors, disabled, schema, rules],
+    () => ({
+      values: currentValues,
+      errors,
+      disabled: disabled || loading,
+      loading,
+      setValue,
+      validate,
+      reset,
+      submit,
+    }),
+    [currentValues, errors, disabled, loading, schema, rules, validateFn],
   )
+
+  /* ==================== validateOn 事件校验 ==================== */
+  const formRef = React.useRef<HTMLFormElement>(null)
+  /** 已失焦过的字段集合：input 校验只针对这些字段（对齐 Nuxt UI，避免进入表单即报错） */
+  const blurredFieldsRef = React.useRef<Set<string>>(new Set())
+  const inputTimerRef = React.useRef<ReturnType<typeof setTimeout> | null>(null)
+  const pendingInputNameRef = React.useRef<string | undefined>(undefined)
+
+  /** 最新配置快照：原生事件监听只挂载一次，每次渲染同步最新闭包 */
+  const latestRef = React.useRef({ validateOn, validateOnInputDelay, validateField })
+  latestRef.current = { validateOn, validateOnInputDelay, validateField }
+
+  React.useEffect(() => {
+    const form = formRef.current
+    if (form == null) return
+
+    const getFieldName = (target: EventTarget | null): string | undefined => {
+      return (target as HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement | null)?.name || undefined
+    }
+
+    const handleInput = (event: Event) => {
+      const { validateOn, validateOnInputDelay, validateField } = latestRef.current
+      if (!validateOn.includes("input")) return
+      const name = getFieldName(event.target)
+      /* 仅校验已失焦过的字段，防止进入表单就报错 */
+      if (!name || !blurredFieldsRef.current.has(name)) return
+      pendingInputNameRef.current = name
+      if (inputTimerRef.current != null) clearTimeout(inputTimerRef.current)
+      inputTimerRef.current = setTimeout(() => {
+        inputTimerRef.current = null
+        validateField(pendingInputNameRef.current)
+      }, validateOnInputDelay)
+    }
+
+    const handleChange = (event: Event) => {
+      const { validateOn, validateField } = latestRef.current
+      if (!validateOn.includes("change")) return
+      const name = getFieldName(event.target)
+      /* 延迟到事件派发完成后校验，确保受控组件已同步最新值 */
+      setTimeout(() => validateField(name), 0)
+    }
+
+    const handleBlur = (event: FocusEvent) => {
+      const { validateOn, validateField } = latestRef.current
+      const name = getFieldName(event.target)
+      /* blur 始终记录字段，input 校验依赖此集合 */
+      if (name) blurredFieldsRef.current.add(name)
+      if (validateOn.includes("blur")) {
+        setTimeout(() => validateField(name), 0)
+      }
+    }
+
+    /* blur 不冒泡，用捕获阶段监听；input / change 冒泡，统一挂捕获阶段 */
+    form.addEventListener("input", handleInput, true)
+    form.addEventListener("change", handleChange, true)
+    form.addEventListener("blur", handleBlur, true)
+    return () => {
+      form.removeEventListener("input", handleInput, true)
+      form.removeEventListener("change", handleChange, true)
+      form.removeEventListener("blur", handleBlur, true)
+      if (inputTimerRef.current != null) clearTimeout(inputTimerRef.current)
+    }
+  }, [])
 
   return (
     <XFormContext.Provider value={contextValue}>
       <form
+        ref={formRef}
         noValidate
         onSubmit={(event) => {
           event.preventDefault()
@@ -230,7 +367,7 @@ export function XForm({
         className={cn("flex flex-col gap-4", ui?.root, className)}
         {...props}
       >
-        <fieldset disabled={disabled} className="contents">
+        <fieldset disabled={disabled || loading} className="contents">
           {children}
         </fieldset>
       </form>

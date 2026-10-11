@@ -43,6 +43,7 @@ import {
   type VisibilityOptions,
   type VisibilityState,
 } from "@tanstack/react-table"
+import { useVirtualizer } from "@tanstack/react-virtual"
 import { useRender } from "@base-ui/react/use-render"
 import { XSkeleton } from "@/components/kit/x-skeleton"
 import { createBoundStore, useBoundStore } from "@/lib/kit/bound-store"
@@ -96,6 +97,16 @@ export interface XTableUi {
   loading?: string
 }
 
+/** 虚拟滚动配置：与 Nuxt UI virtualize 对齐 */
+export interface XTableVirtualizeOptions {
+  /** 外部滚动元素，未提供时使用表格自身 root 作为滚动容器 */
+  getScrollElement?: () => HTMLElement
+  /** 每行估计高度（px），可传函数按索引估算，默认 65 */
+  estimateSize?: number | ((index: number) => number)
+  /** 可视区外预渲染的行数，默认 12 */
+  overscan?: number
+}
+
 export interface XTableProps<T extends RowData> {
   /** 渲染为指定元素 */
   render?: React.ReactElement
@@ -111,8 +122,16 @@ export interface XTableProps<T extends RowData> {
   empty?: React.ReactNode
   /** 固定表头 / 表尾:true 两者都固定,header / footer 单独固定 */
   sticky?: boolean | "header" | "footer"
+  /** 虚拟滚动开关，对象形态可配置外部滚动容器与行高估算；开启后行固定不生效 */
+  virtualize?: boolean | XTableVirtualizeOptions
   /** 加载状态 */
   loading?: boolean
+  /** 加载指示条颜色，默认 'primary'；neutral 映射为 inverted */
+  loadingColor?: string
+  /** 加载指示条动画，默认 'carousel' */
+  loadingAnimation?: string
+  /** Vue 响应式监控选项：React 数据流天然深度响应（等价 deep: true），deep: false 不支持 */
+  watchOptions?: { deep?: boolean }
   /** TanStack 全局筛选选项(state 可受控) */
   globalFilterOptions?: GlobalFilterOptions<T> & { state?: { globalFilter?: TableState["globalFilter"] } }
   /** TanStack 列筛选选项(state 可受控) */
@@ -221,6 +240,25 @@ function isSortable<T extends RowData>(column: Column<T, unknown>) {
   return column.columnDef.enableSorting === true && column.getCanSort()
 }
 
+/** 加载指示条动画类（keyframes 定义在包入口 index.css） */
+const tableLoadingAnimationClasses: Record<string, string> = {
+  carousel: "motion-safe:after:animate-[carousel_2s_linear_infinite]",
+  "carousel-inverse": "motion-safe:after:animate-[carousel-inverse_2s_linear_infinite]",
+  swing: "motion-safe:after:animate-[swing_2s_var(--ease-in-out)_infinite]",
+  elastic: "motion-safe:after:animate-[elastic_2s_var(--ease-in-out)_infinite]",
+}
+
+/** 加载指示条颜色类（neutral 映射 inverted，对齐 Nuxt UI 主题） */
+const tableLoadingColorClasses: Record<string, string> = {
+  primary: "after:bg-primary",
+  secondary: "after:bg-secondary",
+  neutral: "after:bg-inverted",
+  success: "after:bg-success",
+  info: "after:bg-info",
+  warning: "after:bg-warning",
+  error: "after:bg-error",
+}
+
 export const XTable = function XTable<T extends RowData>(
   {
     render,
@@ -230,7 +268,11 @@ export const XTable = function XTable<T extends RowData>(
     meta,
     empty = "暂无数据",
     sticky = false,
+    virtualize = false,
     loading = false,
+    loadingColor = "primary",
+    loadingAnimation = "carousel",
+    watchOptions,
     globalFilterOptions,
     columnFiltersOptions,
     columnPinningOptions,
@@ -256,6 +298,11 @@ export const XTable = function XTable<T extends RowData>(
     ref,
   }: XTableProps<T> & { ref?: React.Ref<XTableApi<T>> },
 ) {
+  /* watchOptions.deep=false 要求关闭深度监听，React 数据流天然深度响应，无法提供该语义 */
+  if (watchOptions?.deep === false) {
+    throw new Error("XTable watchOptions.deep=false 不受支持：React 数据流天然深度响应，等价于 deep: true")
+  }
+
   /* 受控 state 优先(TanStack options.state),否则组件内部维护 */
   const [globalFilter, setGlobalFilter] = React.useState<string>("")
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>([])
@@ -324,6 +371,41 @@ export const XTable = function XTable<T extends RowData>(
   const stickyThead = sticky === true || sticky === "header"
   const stickyTfoot = sticky === true || sticky === "footer"
 
+  /* 虚拟滚动：外部滚动容器由 getScrollElement 提供，否则使用 root 自身 */
+  const rootRef = React.useRef<HTMLDivElement>(null)
+  const virtualOptions = typeof virtualize === "object" ? virtualize : {}
+  const isExternalScroll = typeof virtualize === "object" && !!virtualize.getScrollElement
+
+  const resolveScrollElement = React.useCallback(() => {
+    if (isExternalScroll) {
+      return virtualOptions.getScrollElement?.() ?? null
+    }
+    return rootRef.current
+  }, [isExternalScroll, virtualOptions.getScrollElement])
+
+  /* 外部容器 ref 在组件首次 layout effect 后才可用：effect 中同步一次，触发虚拟器重新绑定滚动容器 */
+  const [scrollElement, setScrollElement] = React.useState<HTMLElement | null>(null)
+  React.useEffect(() => {
+    setScrollElement(resolveScrollElement())
+  }, [resolveScrollElement])
+
+  const virtualizer = useVirtualizer({
+    count: rows.length,
+    getScrollElement: () => scrollElement,
+    estimateSize: (index) => {
+      const estimate = virtualOptions.estimateSize ?? 65
+      return typeof estimate === "function" ? estimate(index) : estimate
+    },
+    overscan: virtualOptions.overscan ?? 12,
+    enabled: !!virtualize,
+  })
+
+  const virtualItems = virtualizer.getVirtualItems()
+  /* 上下占位行高度：把虚拟行垫到正确位置（外部滚动容器的 scrollMargin 未支持时恒为 0） */
+  const virtualPaddingTop = virtualItems[0]?.start ?? 0
+  const virtualPaddingBottom =
+    virtualizer.getTotalSize() - (virtualItems[virtualItems.length - 1]?.end ?? 0)
+
   /** 行选择:点击交互元素(链接 / 按钮 / 输入框等)内部时不触发 */
   function onRowSelect(event: React.SyntheticEvent, row: Row<T>) {
     if (!onSelect) {
@@ -390,7 +472,7 @@ export const XTable = function XTable<T extends RowData>(
   const columnMeta = (headerOrCell: Header<T, unknown> | Cell<T, unknown>) =>
     headerOrCell.column.columnDef.meta as XTableColumnMeta<T, unknown> | undefined
 
-  const renderRow = (row: Row<T>) => {
+  const renderRow = (row: Row<T>, extraStyle?: React.CSSProperties) => {
     const tr = (
       <tr
         key={row.id}
@@ -401,7 +483,7 @@ export const XTable = function XTable<T extends RowData>(
         tabIndex={onSelect ? 0 : undefined}
         data-slot="tr"
         className={cn("data-[selected=true]:bg-muted/50", resolveValue((table.options.meta as XTableMetaExt<T> | undefined)?.class?.tr, row), ui?.tr)}
-        style={resolveValue((table.options.meta as XTableMetaExt<T> | undefined)?.style?.tr, row) as React.CSSProperties | undefined}
+        style={{ ...(resolveValue((table.options.meta as XTableMetaExt<T> | undefined)?.style?.tr, row) as React.CSSProperties | undefined), ...extraStyle }}
         onClick={(event) => onRowSelect(event, row)}
         onKeyDown={(event) => {
           if (event.target === event.currentTarget && (event.key === "Enter" || event.key === " ")) {
@@ -462,6 +544,9 @@ export const XTable = function XTable<T extends RowData>(
         className={cn(
           "relative",
           stickyThead && "sticky inset-x-0 top-0 z-1 bg-background/75 backdrop-blur-sm",
+          loading && "after:absolute after:z-1 after:h-px motion-reduce:after:inset-x-0 motion-reduce:after:animate-pulse",
+          loading && tableLoadingColorClasses[loadingColor],
+          loading && tableLoadingAnimationClasses[loadingAnimation],
           ui?.thead,
         )}
       >
@@ -503,7 +588,24 @@ export const XTable = function XTable<T extends RowData>(
       >
         {bodyTop}
 
-        {rows.length > 0 ? (
+        {rows.length > 0 && !!virtualize ? (
+          <>
+            {virtualPaddingTop > 0 && (
+              <tr aria-hidden="true" style={{ height: `${virtualPaddingTop}px` }}>
+                <td colSpan={table.getVisibleLeafColumns().length} />
+              </tr>
+            )}
+            {virtualItems.map((virtualItem) => {
+              const row = rows[virtualItem.index]
+              return row ? renderRow(row, { height: `${virtualItem.size}px` }) : null
+            })}
+            {virtualPaddingBottom > 0 && (
+              <tr aria-hidden="true" style={{ height: `${virtualPaddingBottom}px` }}>
+                <td colSpan={table.getVisibleLeafColumns().length} />
+              </tr>
+            )}
+          </>
+        ) : rows.length > 0 ? (
           rows.map((row) => renderRow(row))
         ) : loading && loadingSlot != null ? (
           <tr>
@@ -574,10 +676,16 @@ export const XTable = function XTable<T extends RowData>(
     defaultTagName: "div",
     props: {
       "data-slot": "root",
-      className: cn("relative overflow-auto outline-primary/25 focus-visible:outline-3", ui?.root, className),
+      className: cn(
+        "relative outline-primary/25 focus-visible:outline-3",
+        isExternalScroll ? "overflow-visible" : "overflow-auto",
+        ui?.root,
+        className,
+      ),
       children: tableElement,
     },
     render,
+    ref: rootRef,
   })
 }
 

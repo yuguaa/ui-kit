@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { describe, expect, it, vi } from "vitest";
@@ -46,6 +47,39 @@ describe("XInput", () => {
     expect(screen.getByText("https://")).toBeInTheDocument();
     expect(screen.getByText(".com")).toBeInTheDocument();
   });
+
+  it("autofocus 挂载后聚焦", async () => {
+    render(<XInput autofocus placeholder="自动聚焦" />);
+    const input = screen.getByPlaceholderText("自动聚焦");
+    await waitFor(() => expect(input).toHaveFocus());
+  });
+
+  it("autofocusDelay 延迟后聚焦", () => {
+    vi.useFakeTimers();
+    try {
+      render(<XInput autofocus autofocusDelay={200} placeholder="延迟聚焦" />);
+      const input = screen.getByPlaceholderText("延迟聚焦");
+      expect(input).not.toHaveFocus();
+      vi.advanceTimersByTime(200);
+      expect(input).toHaveFocus();
+    } finally {
+      vi.useRealTimers();
+    }
+  });
+
+  it("卸载时清理聚焦定时器", () => {
+    vi.useFakeTimers();
+    try {
+      const { unmount } = render(<XInput autofocus autofocusDelay={200} placeholder="清理定时器" />);
+      const input = screen.getByPlaceholderText("清理定时器");
+      const focusSpy = vi.spyOn(input, "focus");
+      unmount();
+      vi.advanceTimersByTime(200);
+      expect(focusSpy).not.toHaveBeenCalled();
+    } finally {
+      vi.useRealTimers();
+    }
+  });
 });
 
 describe("XTextarea", () => {
@@ -57,6 +91,39 @@ describe("XTextarea", () => {
   it("warning 状态", () => {
     render(<XTextarea status="warning" />);
     expect(screen.getByRole("textbox")).toHaveClass("border-warning");
+  });
+
+  it("autofocus 挂载后聚焦", async () => {
+    render(<XTextarea autofocus placeholder="自动聚焦" />);
+    const textarea = screen.getByPlaceholderText("自动聚焦");
+    await waitFor(() => expect(textarea).toHaveFocus());
+  });
+
+  it("autofocusDelay 延迟后聚焦", () => {
+    vi.useFakeTimers();
+    try {
+      render(<XTextarea autofocus autofocusDelay={200} placeholder="延迟聚焦" />);
+      const textarea = screen.getByPlaceholderText("延迟聚焦");
+      expect(textarea).not.toHaveFocus();
+      vi.advanceTimersByTime(200);
+      expect(textarea).toHaveFocus();
+    } finally {
+      vi.useRealTimers();
+    }
+  });
+
+  it("卸载时清理聚焦定时器", () => {
+    vi.useFakeTimers();
+    try {
+      const { unmount } = render(<XTextarea autofocus autofocusDelay={200} placeholder="清理定时器" />);
+      const textarea = screen.getByPlaceholderText("清理定时器");
+      const focusSpy = vi.spyOn(textarea, "focus");
+      unmount();
+      vi.advanceTimersByTime(200);
+      expect(focusSpy).not.toHaveBeenCalled();
+    } finally {
+      vi.useRealTimers();
+    }
   });
 });
 
@@ -1085,6 +1152,182 @@ describe("XForm ui 插槽", () => {
   it("ui.root 应用到表单根元素", () => {
     const { container } = render(<XForm ui={{ root: "custom-root" }} />);
     expect(container.querySelector("form")).toHaveClass("custom-root");
+  });
+});
+
+describe("XForm validate / validateOn / loadingAuto", () => {
+  it("自定义 validate 与 rules 叠加校验", async () => {
+    const onError = vi.fn();
+    render(
+      <XForm
+        rules={{ email: [{ required: true, message: "邮箱不能为空" }] }}
+        validate={(formValues) => {
+          const errors: Record<string, string> = {};
+          if (formValues.password == null) errors.password = "密码不能为空";
+          return errors;
+        }}
+        onError={onError}
+      >
+        <XFormField name="password" label="密码">
+          <input name="password" />
+        </XFormField>
+        <button type="submit">提交</button>
+      </XForm>,
+    );
+    await userEvent.click(screen.getByRole("button", { name: "提交" }));
+    expect(onError).toHaveBeenCalledWith({
+      email: "邮箱不能为空",
+      password: "密码不能为空",
+    });
+    expect(screen.getByRole("alert")).toHaveTextContent("密码不能为空");
+  });
+
+  it("异步 validate 校验通过后触发 onSubmit", async () => {
+    const onSubmit = vi.fn();
+    render(
+      <XForm
+        defaultValues={{ email: "you@example.com" }}
+        validate={async (formValues) => {
+          await new Promise((resolve) => setTimeout(resolve, 10));
+          const errors: Record<string, string> = {};
+          if (!String(formValues.email).includes("@")) errors.email = "格式不正确";
+          return errors;
+        }}
+        onSubmit={onSubmit}
+      >
+        <button type="submit">提交</button>
+      </XForm>,
+    );
+    await userEvent.click(screen.getByRole("button", { name: "提交" }));
+    await waitFor(() => expect(onSubmit).toHaveBeenCalledWith({ email: "you@example.com" }));
+  });
+
+  it("异步 validate 失败触发 onError 并展示错误", async () => {
+    const onError = vi.fn();
+    render(
+      <XForm
+        defaultValues={{ email: "bad" }}
+        validate={async () => ({ email: "异步校验失败" })}
+        onError={onError}
+      >
+        <XFormField name="email" label="邮箱">
+          <input name="email" />
+        </XFormField>
+        <button type="submit">提交</button>
+      </XForm>,
+    );
+    await userEvent.click(screen.getByRole("button", { name: "提交" }));
+    expect(await screen.findByRole("alert")).toHaveTextContent("异步校验失败");
+    expect(onError).toHaveBeenCalledWith({ email: "异步校验失败" });
+  });
+
+  it("validateOn 含 blur 时字段失焦立即校验并展示错误", async () => {
+    render(
+      <XForm
+        rules={{ email: [{ required: true, message: "邮箱不能为空" }] }}
+        validateOn={["blur"]}
+      >
+        <XFormField name="email" label="邮箱">
+          <input name="email" data-testid="email-input" />
+        </XFormField>
+      </XForm>,
+    );
+    expect(screen.queryByRole("alert")).not.toBeInTheDocument();
+    fireEvent.blur(screen.getByTestId("email-input"));
+    expect(await screen.findByRole("alert")).toHaveTextContent("邮箱不能为空");
+  });
+
+  it("validateOn 含 input 时按 validateOnInputDelay 防抖校验（仅对失焦过的字段）", async () => {
+    function Host() {
+      const [value, setValue] = useState("");
+      return (
+        <XForm
+          values={{ email: value }}
+          rules={{ email: [{ pattern: /@/, message: "格式不正确" }] }}
+          validateOn={["input"]}
+          validateOnInputDelay={0}
+        >
+          <XFormField name="email" label="邮箱">
+            <input name="email" value={value} onChange={(event) => setValue(event.target.value)} />
+          </XFormField>
+        </XForm>
+      );
+    }
+    render(<Host />);
+    const input = screen.getByRole("textbox");
+    /* 未失焦前输入不校验 */
+    fireEvent.input(input, { target: { value: "x" } });
+    await new Promise((resolve) => setTimeout(resolve, 20));
+    expect(screen.queryByRole("alert")).not.toBeInTheDocument();
+    /* 失焦后输入触发防抖校验 */
+    fireEvent.blur(input);
+    fireEvent.input(input, { target: { value: "x" } });
+    expect(await screen.findByRole("alert")).toHaveTextContent("格式不正确");
+  });
+
+  it("validateOn 含 change 时变更后立即校验", async () => {
+    function Host() {
+      const [checked, setChecked] = useState(false);
+      return (
+        <XForm
+          values={{ agree: checked }}
+          rules={{ agree: [{ validator: (value) => (value === true ? true : "需同意协议") }] }}
+          validateOn={["change"]}
+        >
+          <XFormField name="agree" label="协议">
+            <input
+              type="checkbox"
+              name="agree"
+              checked={checked}
+              onChange={(event) => setChecked(event.target.checked)}
+            />
+          </XFormField>
+        </XForm>
+      );
+    }
+    render(<Host />);
+    const checkbox = screen.getByRole("checkbox");
+    expect(screen.queryByRole("alert")).not.toBeInTheDocument();
+    /* 勾选后校验通过，无错误 */
+    await userEvent.click(checkbox);
+    await new Promise((resolve) => setTimeout(resolve, 20));
+    expect(screen.queryByRole("alert")).not.toBeInTheDocument();
+    /* 取消勾选后校验失败 */
+    await userEvent.click(checkbox);
+    expect(await screen.findByRole("alert")).toHaveTextContent("需同意协议");
+  });
+
+  it("loadingAuto 默认开启：onSubmit 返回 Promise 期间禁用表单", async () => {
+    let resolveSubmit: (() => void) | undefined;
+    const onSubmit = vi.fn(
+      () =>
+        new Promise<void>((resolve) => {
+          resolveSubmit = resolve;
+        }),
+    );
+    render(
+      <XForm defaultValues={{ email: "you@example.com" }} onSubmit={onSubmit}>
+        <input data-testid="field" />
+        <button type="submit">提交</button>
+      </XForm>,
+    );
+    await userEvent.click(screen.getByRole("button", { name: "提交" }));
+    expect(onSubmit).toHaveBeenCalledWith({ email: "you@example.com" });
+    expect(document.querySelector("fieldset")).toBeDisabled();
+    resolveSubmit?.();
+    await waitFor(() => expect(document.querySelector("fieldset")).not.toBeDisabled());
+  });
+
+  it("loadingAuto=false 时提交 Promise 不进入 loading", async () => {
+    const onSubmit = vi.fn(() => new Promise<void>(() => {}));
+    render(
+      <XForm loadingAuto={false} onSubmit={onSubmit}>
+        <button type="submit">提交</button>
+      </XForm>,
+    );
+    await userEvent.click(screen.getByRole("button", { name: "提交" }));
+    expect(onSubmit).toHaveBeenCalled();
+    expect(document.querySelector("fieldset")).not.toBeDisabled();
   });
 });
 

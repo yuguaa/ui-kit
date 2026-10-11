@@ -15,6 +15,10 @@
 | dismissible? | boolean | true | When `false`, the modal will not close when clicking outside |
 | class? | any | - |  |
 | ui? | Modal['slots'] | - |  |
+| open? | any | - | reka Dialog Root 透传成员（类型补齐，运行时经 useForwardProps 转发） |
+| defaultOpen? | any | - |  |
+| modal? | any | - |  |
+| unmountOnHide? | any | - |  |
 
 ## Emits
 

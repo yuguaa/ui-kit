@@ -10,6 +10,14 @@
 | color? | InputRating['variants']['color'] | 'primary' |  |
 | size? | InputRating['variants']['size'] | 'md' |  |
 | orientation? | InputRating['variants']['orientation'] | 'horizontal' | The orientation of the rating. |
+| length? | any | - | 表单与 reka 透传成员（length/modelValue/defaultValue/disabled 等，运行时经 |
+| step? | any | - |  |
+| hoverable? | boolean | - |  |
+| clearable? | boolean | - |  |
+| required? | boolean | - |  |
+| modelValue? | number | - |  |
+| defaultValue? | number | - |  |
+| disabled? | boolean | - |  |
 | class? | any | - |  |
 | ui? | InputRating['slots'] | - |  |
 

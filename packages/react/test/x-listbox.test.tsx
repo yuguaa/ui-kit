@@ -1,6 +1,6 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { XListbox } from "@/components/kit/x-listbox";
 
 const items = [
@@ -81,6 +81,85 @@ describe("XListbox 过滤与尺寸", () => {
   it("size 控制项尺寸类名", () => {
     render(<XListbox items={items} labelKey="name" valueKey="id" size="xs" />);
     expect(document.querySelector("[data-slot='item']")).toHaveClass("p-1");
+  });
+});
+
+describe("XListbox 虚拟滚动", () => {
+  const manyItems = Array.from({ length: 500 }, (_, index) => ({ id: String(index), label: `选项 ${index}` }));
+
+  /* jsdom 无法计算布局尺寸，mock 滚动容器高度让虚拟窗口可渲染 */
+  beforeEach(() => {
+    vi.spyOn(HTMLElement.prototype, "offsetHeight", "get").mockImplementation(function (this: HTMLElement) {
+      return this.getAttribute("data-slot") === "content" ? 240 : 0;
+    });
+  });
+
+  afterEach(() => {
+    vi.restoreAllMocks();
+  });
+
+  it("virtualize 开启时撑起总高度且仅渲染窗口项", async () => {
+    render(<XListbox items={manyItems} valueKey="id" virtualize />);
+    const virtualizer = document.querySelector("[data-slot='virtualizer']");
+    expect(virtualizer).toBeTruthy();
+
+    await waitFor(() => {
+      expect(virtualizer).toHaveStyle({ height: "16000px" });
+    });
+
+    const rendered = document.querySelectorAll("[data-slot='item']");
+    expect(rendered.length).toBeGreaterThan(0);
+    expect(rendered.length).toBeLessThan(manyItems.length);
+    expect(rendered[0]).toHaveAttribute("aria-setsize", "500");
+    expect(rendered[0]).toHaveAttribute("aria-posinset", "1");
+    expect(document.querySelectorAll("[data-slot='group']").length).toBe(0);
+  });
+
+  it("estimateSize 支持数字与函数", async () => {
+    const { rerender } = render(<XListbox items={manyItems} valueKey="id" virtualize={{ estimateSize: 40 }} />);
+    const virtualizer = document.querySelector("[data-slot='virtualizer']");
+    await waitFor(() => {
+      expect(virtualizer).toHaveStyle({ height: "20000px" });
+    });
+
+    rerender(<XListbox items={manyItems} valueKey="id" virtualize={{ estimateSize: (index) => (index < 2 ? 40 : 20) }} />);
+    await waitFor(() => {
+      expect(virtualizer).toHaveStyle({ height: "10040px" });
+    });
+  });
+
+  it("getItemKey 提供的稳定键用于虚拟项渲染", async () => {
+    render(<XListbox items={manyItems} valueKey="id" virtualize={{ getItemKey: (index) => `key-${index}` }} />);
+    await waitFor(() => {
+      expect(document.querySelectorAll("[data-slot='item']").length).toBeGreaterThan(0);
+    });
+    const first = document.querySelectorAll("[data-index]")[0];
+    expect(first?.getAttribute("data-index")).toBe("0");
+  });
+
+  it("虚拟化下点击可见项仍触发选择", async () => {
+    const onValueChange = vi.fn();
+    render(<XListbox items={manyItems} valueKey="id" virtualize onValueChange={onValueChange} />);
+    await userEvent.click(screen.getByText("选项 0"));
+    expect(onValueChange).toHaveBeenCalledWith("0");
+  });
+
+  it("虚拟化下结构项正常渲染", async () => {
+    render(
+      <XListbox
+        items={[[{ type: "label", label: "分组一" }, ...manyItems.slice(0, 3)]]}
+        valueKey="id"
+        virtualize
+      />,
+    );
+    expect(document.querySelector("[data-slot='label']")).toHaveTextContent("分组一");
+    expect(document.querySelectorAll("[data-slot='item']").length).toBeGreaterThan(0);
+  });
+
+  it("未开启 virtualize 时保持分组渲染", () => {
+    render(<XListbox items={manyItems.slice(0, 5)} valueKey="id" />);
+    expect(document.querySelector("[data-slot='virtualizer']")).toBeFalsy();
+    expect(document.querySelectorAll("[data-slot='item']").length).toBe(5);
   });
 });
 

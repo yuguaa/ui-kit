@@ -8,5 +8,6 @@
 | variant? | Badge['variants']['variant'] | 'solid' |  |
 | size? | Badge['variants']['size'] | 'md' |  |
 | square? | boolean | - | Render the badge with equal padding on all sides. |
+| avatar? | AvatarProps | - | Display an avatar on the left side. |
 | class? | any | - |  |
 | ui? | Badge['slots'] | - |  |

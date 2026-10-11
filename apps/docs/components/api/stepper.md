@@ -4,14 +4,15 @@
 | --- | --- | --- | --- |
 | as? | any | 'div' | The element or component this component should render as. |
 | items | T[] | - |  |
-| size? | Stepper['variants']['size'] | 'md' |  |
-| color? | Stepper['variants']['color'] | 'primary' |  |
-| orientation? | Stepper['variants']['orientation'] | 'horizontal' | The orientation of the stepper. |
+| size? | any | 'md' |  |
+| color? | any | 'primary' |  |
+| orientation? | any | 'horizontal' | The orientation of the stepper. |
 | valueKey? | GetItemKeys&lt;T&gt; | 'value' | The key used to get the value from the item. |
 | defaultValue? | string \| number | - | The value of the step that should be active when initially r |
 | disabled? | boolean | - |  |
 | class? | any | - |  |
 | ui? | Stepper['slots'] | - |  |
+| linear? | any | - | 类型修补：reka 透传 prop（仅类型层） |
 
 ## Emits
 

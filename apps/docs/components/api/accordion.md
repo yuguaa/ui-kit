@@ -9,6 +9,12 @@
 | labelKey? | GetItemKeys&lt;T&gt; | 'label' | The key used to get the label from the item. |
 | class? | any | - |  |
 | ui? | Accordion['slots'] | - |  |
+| collapsible? | any | - | reka Accordion Root 透传成员（类型补齐，运行时经 useForwardProps 转发） |
+| defaultValue? | any | - |  |
+| disabled? | any | - |  |
+| modelValue? | any | - |  |
+| unmountOnHide? | any | - |  |
+| type? | any | - |  |
 
 ## Emits
 

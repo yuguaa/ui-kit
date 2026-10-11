@@ -2,6 +2,20 @@
 
 | 名称 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
+| _features? | any | - | 类型修补：tanstack 内部透传键（仅类型层） |
+| autoResetAll? | any | - |  |
+| debugAll? | any | - |  |
+| debugCells? | any | - |  |
+| debugColumns? | any | - |  |
+| debugHeaders? | any | - |  |
+| debugRows? | any | - |  |
+| debugTable? | any | - |  |
+| defaultColumn? | any | - |  |
+| getRowId? | any | - |  |
+| getSubRows? | any | - |  |
+| initialState? | any | - |  |
+| mergeOptions? | any | - |  |
+| renderFallbackValue? | any | - |  |
 | class? | any | - |  |
 | style? | any | - |  |
 | id? | any | - |  |
@@ -36,7 +50,6 @@
 | href? | any | - |  |
 | target? | any | - |  |
 | rel? | any | - |  |
-| loading? | any | - |  |
 | accesskey? | any | - |  |
 | contenteditable? | any | - |  |
 | draggable? | any | - |  |
@@ -71,8 +84,8 @@
 | empty? | string | t('table.noData') | The text to display when the table is empty. |
 | sticky? | boolean \| 'header' \| 'footer' | false | Whether the table should have a sticky header or footer. Tru |
 | loading? | boolean | - | Whether the table should be in loading state. |
-| loadingColor? | Table['variants']['loadingColor'] | 'primary' |  |
-| loadingAnimation? | Table['variants']['loadingAnimation'] | 'carousel' |  |
+| loadingColor? | any | 'primary' |  |
+| loadingAnimation? | any | 'carousel' |  |
 | watchOptions? | WatchOptions | - |  |
 | globalFilterOptions? | Omit&lt;GlobalFilterOptions&lt;T&gt;, 'onGlobalFilterChange'&gt; | - |  |
 | columnFiltersOptions? | Omit&lt;ColumnFiltersOptions&lt;T&gt;, 'getFilteredRowModel' \| 'onColumnFilters | - |  |
@@ -89,7 +102,6 @@
 | onSelect? | (e: Event, row: TableRow&lt;T&gt;) =&gt; void | - |  |
 | onHover? | (e: Event, row: TableRow&lt;T&gt; \| null) =&gt; void | - |  |
 | onContextmenu? | ((e: Event, row: TableRow&lt;T&gt;) =&gt; void) \| Array&lt;((e: Event, row: Tab | - |  |
-| class? | any | - |  |
 
 ## Slots
 

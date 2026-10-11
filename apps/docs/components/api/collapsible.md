@@ -5,6 +5,10 @@
 | as? | any | 'div' | The element or component this component should render as. |
 | class? | any | - |  |
 | ui? | Collapsible['slots'] | - |  |
+| defaultOpen? | any | - | reka Collapsible Root 透传成员（类型补齐，运行时经 useForwardProps 转发） |
+| open? | any | - |  |
+| disabled? | any | - |  |
+| unmountOnHide? | any | - |  |
 
 ## Emits
 

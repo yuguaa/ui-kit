@@ -11,6 +11,20 @@
 | square? | boolean | - | Render the button with equal padding on all sides. |
 | block? | boolean | - | Render the button full width. |
 | loadingAuto? | boolean | - | Set loading state automatically based on the `@click` promis |
+| loading? | any | - |  |
+| type? | any | - |  |
+| icon? | any | - |  |
+| leading? | any | - |  |
+| leadingIcon? | any | - |  |
+| trailing? | any | - |  |
+| trailingIcon? | any | - |  |
+| loadingIcon? | any | - |  |
+| avatar? | any | - |  |
+| active? | any | - |  |
+| activeClass? | any | - |  |
+| inactiveClass? | any | - |  |
+| to? | any | - |  |
+| disabled? | any | - |  |
 | onClick? | ((event: MouseEvent) =&gt; void) \| Array&lt;((event: MouseEvent) =&gt; void)&gt | - |  |
 | class? | any | - |  |
 | ui? | Button['slots'] | - |  |

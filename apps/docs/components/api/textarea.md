@@ -15,6 +15,7 @@
 | form? | any | - |  |
 | minlength? | any | - |  |
 | maxlength? | any | - |  |
+| avatar? | any | - |  |
 | pattern? | any | - |  |
 | step? | any | - |  |
 | min? | any | - |  |
@@ -55,13 +56,11 @@
 | aria-selected? | any | - |  |
 | data-testid? | any | - |  |
 | as? | any | 'div' | The element or component this component should render as. |
-| id? | string | - |  |
 | name? | string | - |  |
 | placeholder? | string | - | The placeholder text when the textarea is empty. |
 | color? | Textarea['variants']['color'] | 'primary' |  |
 | variant? | Textarea['variants']['variant'] | 'outline' |  |
-| size? | Textarea['variants']['size'] | 'md' |  |
-| required? | boolean | - |  |
+| required? | boolean | 'md' |  |
 | autofocus? | boolean | - |  |
 | autofocusDelay? | number | - |  |
 | autoresize? | boolean | - |  |
@@ -74,7 +73,6 @@
 | defaultValue? | ApplyModifiers&lt;T, Mod&gt; | - |  |
 | modelValue? | ApplyModifiers&lt;T, Mod&gt; | - |  |
 | modelModifiers? | Mod | - |  |
-| class? | any | - |  |
 | ui? | Textarea['slots'] | - |  |
 
 ## Emits

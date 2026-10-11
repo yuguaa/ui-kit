@@ -8,6 +8,11 @@
 | title? | any | - |  |
 | role? | any | - |  |
 | value? | any | - |  |
+| defaultValue? | any | - |  |
+| disabled? | any | - |  |
+| modelValue? | any | - |  |
+| trueValue? | any | - |  |
+| falseValue? | any | - |  |
 | placeholder? | any | - |  |
 | required? | any | - |  |
 | readonly? | any | - |  |
@@ -59,15 +64,10 @@
 | data-testid? | any | - |  |
 | as? | any | 'div' | The element or component this component should render as. |
 | color? | Switch['variants']['color'] | 'primary' |  |
-| size? | Switch['variants']['size'] | 'md' |  |
-| highlight? | boolean | - | Highlight the ring color like a focus state. |
-| loading? | boolean | - | When `true`, the loading icon will be displayed. |
-| loadingIcon? | IconProps['name'] | appConfig.ui.icons.loading | The icon when the `loading` prop is `true`. |
 | checkedIcon? | IconProps['name'] | - | Display an icon when the switch is checked. |
 | uncheckedIcon? | IconProps['name'] | - | Display an icon when the switch is unchecked. |
 | label? | string | - |  |
 | description? | string | - |  |
-| class? | any | - |  |
 | ui? | Switch['slots'] | - |  |
 
 ## Emits

@@ -16,3 +16,5 @@
 | showCount? | boolean | - | 右下角显示字数统计，设置 maxLength 时显示「当前长度 / 最大长度」 |
 | render? | React.ReactElement | - | 渲染为指定元素 |
 | ui? | XTextareaUi | - | 主题插槽类名 |
+| autofocus? | boolean | - | 挂载后自动聚焦原生输入元素 |
+| autofocusDelay? | number | - | 自动聚焦的延迟（毫秒） |

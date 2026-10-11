@@ -2,6 +2,7 @@
 
 | 名称 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
+| form? | any | - |  |
 | as? | any | 'div' | The element or component this component should render as. |
 | id? | string | - |  |
 | name? | string | - |  |

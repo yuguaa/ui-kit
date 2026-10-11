@@ -1,7 +1,7 @@
 import { act, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import * as React from "react";
-import { describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { XPagination } from "@/components/kit/x-pagination";
 import { XStepper, type XStepperApi } from "@/components/kit/x-stepper";
 import { XTable } from "@/components/kit/x-table";
@@ -377,5 +377,132 @@ describe("XTable 新能力", () => {
   it("render 渲染为指定元素", () => {
     render(<XTable columns={columns} data={[{ key: "1", name: "张三" }]} render={<section data-testid="root-el" />} />);
     expect(screen.getByTestId("root-el")).toBeInTheDocument();
+  });
+});
+
+describe("XTable 虚拟滚动与加载指示条", () => {
+  const nameColumns = [{ accessorKey: "name", header: "名称" }];
+  const manyData = Array.from({ length: 200 }, (_, index) => ({ key: `${index}`, name: `行${index}` }));
+
+  /* jsdom 无真实布局：带固定可视区尺寸的 ResizeObserver 替身驱动虚拟器 */
+  class SizedResizeObserver {
+    private callback: ResizeObserverCallback;
+
+    constructor(callback: ResizeObserverCallback) {
+      this.callback = callback;
+    }
+
+    observe() {
+      this.callback(
+        [
+          {
+            borderBoxSize: [{ inlineSize: 400, blockSize: 300 }],
+          } as unknown as ResizeObserverEntry,
+        ],
+        this as unknown as ResizeObserver,
+      );
+    }
+
+    unobserve() {}
+    disconnect() {}
+  }
+
+  beforeEach(() => {
+    vi.stubGlobal("ResizeObserver", SizedResizeObserver);
+  });
+
+  afterEach(() => {
+    vi.unstubAllGlobals();
+  });
+
+  it("virtualize 开启时仅渲染可视区行并带占位行", () => {
+    render(<XTable columns={nameColumns} data={manyData} virtualize />);
+    const bodyRows = Array.from(document.querySelectorAll("tbody tr")).filter((tr) => !tr.hasAttribute("aria-hidden"));
+    expect(bodyRows.length).toBeGreaterThan(0);
+    expect(bodyRows.length).toBeLessThan(200);
+    expect(screen.getByText("行0")).toBeInTheDocument();
+    expect(screen.queryByText("行199")).not.toBeInTheDocument();
+    expect(document.querySelector('tbody tr[aria-hidden="true"]')).toBeInTheDocument();
+  });
+
+  it("virtualize 对象配置 estimateSize 函数与 overscan 生效", () => {
+    render(
+      <XTable
+        columns={nameColumns}
+        data={manyData}
+        virtualize={{ estimateSize: (index) => (index % 2 === 0 ? 40 : 80), overscan: 3 }}
+      />,
+    );
+    const bodyRows = Array.from(document.querySelectorAll("tbody tr")).filter((tr) => !tr.hasAttribute("aria-hidden"));
+    expect(bodyRows[0]).toHaveStyle({ height: "40px" });
+    expect(bodyRows[1]).toHaveStyle({ height: "80px" });
+    expect(bodyRows.length).toBeLessThanOrEqual(9);
+  });
+
+  it("virtualize getScrollElement 使用外部滚动容器且 root 不自行滚动", () => {
+    const containerRef = React.createRef<HTMLDivElement>();
+    render(
+      <div ref={containerRef} style={{ height: 300, overflow: "auto" }}>
+        <XTable
+          columns={nameColumns}
+          data={manyData}
+          virtualize={{ getScrollElement: () => containerRef.current! }}
+        />
+      </div>,
+    );
+    expect(document.querySelector("[data-slot='root']")).toHaveClass("overflow-visible");
+    expect(screen.getByText("行0")).toBeInTheDocument();
+    expect(screen.queryByText("行199")).not.toBeInTheDocument();
+  });
+
+  it("virtualize 关闭时全部行渲染（现有行为不变）", () => {
+    render(<XTable columns={nameColumns} data={manyData} />);
+    expect(document.querySelectorAll("tbody tr").length).toBe(200);
+    expect(screen.getByText("行199")).toBeInTheDocument();
+  });
+
+  it("loading 时表头出现加载指示条动画类（默认 carousel / primary）", () => {
+    render(<XTable columns={nameColumns} data={[{ key: "1", name: "张三" }]} loading />);
+    const thead = document.querySelector("thead");
+    expect(thead).toHaveClass("after:absolute");
+    expect(thead).toHaveClass("after:bg-primary");
+    expect(thead).toHaveClass("motion-safe:after:animate-[carousel_2s_linear_infinite]");
+  });
+
+  it("loadingAnimation / loadingColor 自定义生效", () => {
+    render(
+      <XTable
+        columns={nameColumns}
+        data={[{ key: "1", name: "张三" }]}
+        loading
+        loadingAnimation="swing"
+        loadingColor="success"
+      />,
+    );
+    const thead = document.querySelector("thead");
+    expect(thead).toHaveClass("motion-safe:after:animate-[swing_2s_var(--ease-in-out)_infinite]");
+    expect(thead).toHaveClass("after:bg-success");
+  });
+
+  it("loadingColor neutral 映射 inverted，未加载时无动画类", () => {
+    const { unmount } = render(
+      <XTable columns={nameColumns} data={[{ key: "1", name: "张三" }]} loading loadingColor="neutral" />,
+    );
+    expect(document.querySelector("thead")).toHaveClass("after:bg-inverted");
+    unmount();
+
+    render(<XTable columns={nameColumns} data={[{ key: "1", name: "张三" }]} />);
+    const thead = document.querySelector("thead");
+    expect(thead).not.toHaveClass("after:bg-primary");
+    expect(thead).not.toHaveClass("motion-safe:after:animate-[carousel_2s_linear_infinite]");
+  });
+
+  it("watchOptions deep=false 快速失败，deep=true 正常渲染", () => {
+    expect(() =>
+      render(<XTable columns={nameColumns} data={[{ key: "1", name: "张三" }]} watchOptions={{ deep: false }} />),
+    ).toThrow(/watchOptions/);
+
+    render(<XTable columns={nameColumns} data={[{ key: "1", name: "张三" }]} watchOptions={{ deep: true }} />);
+    expect(screen.getByText("张三")).toBeInTheDocument();
   });
 });
