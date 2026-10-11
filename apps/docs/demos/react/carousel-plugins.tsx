@@ -32,7 +32,7 @@ export default function CarouselPlugins() {
       </div>
       <div className="flex flex-col gap-3">
         <span className="text-muted-foreground text-sm">classNames 给轮播项加状态类名：进入视口的项变淡，当前吸附项高亮</span>
-        <XCarousel items={slides} classNames={{ inView: "opacity-60", snapped: "opacity-100 ring-2 ring-primary-5" }}>
+        <XCarousel items={slides} classNames={{ inView: "opacity-60", snapped: ["opacity-100", "ring-2", "ring-primary/50"] }}>
           {({ item }) => (
             <div className={`flex items-center justify-center rounded-lg bg-success/10 text-success ${item.height}`}>
               {String(item.text)}
