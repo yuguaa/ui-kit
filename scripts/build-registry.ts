@@ -11,7 +11,7 @@
  * - shadcn-vue（Vue）：files 使用 path + type 驱动（ui→src/components/ui、
  *   lib→src/lib、component→src/components），不设置 target
  */
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { generateAllPalettes, palettesToCssVars } from "../packages/shared/src/colors";
@@ -1607,6 +1607,51 @@ for (const spec of vueKit) {
       type: "registry:component",
     })
   }
+}
+
+/* Nuxt 移植基础设施：lib/nuxt 全目录作为共享 item，所有 kit 组件依赖它 */
+const nuxtBaseFiles: FileEntry[] = []
+for (const rel of readdirSync("packages/vue/src/lib/nuxt", { recursive: true })) {
+  const entry = rel as unknown as string
+  if (typeof entry !== "string") continue
+  const source = `packages/vue/src/lib/nuxt/${entry}`
+  if (!existsSync(source) || statSync(source).isDirectory()) continue
+  nuxtBaseFiles.push({ source, path: `lib/nuxt/${entry}`, type: "registry:lib" })
+}
+const nuxtBaseSpec: ItemSpec = {
+  name: "nuxt-base",
+  title: "Nuxt UI 移植基础设施",
+  description: "Nuxt UI 源码移植的运行时基础设施（主题、类型、组合式函数与工具），供全部 kit 组件使用。",
+  type: "registry:lib",
+  dependencies: [
+    "@vueuse/core",
+    "@vueuse/integrations",
+    "@vueuse/shared",
+    "@tanstack/vue-table",
+    "@tanstack/vue-virtual",
+    "colortranslator",
+    "defu",
+    "embla-carousel",
+    "embla-carousel-auto-height",
+    "embla-carousel-auto-scroll",
+    "embla-carousel-autoplay",
+    "embla-carousel-class-names",
+    "embla-carousel-fade",
+    "embla-carousel-vue",
+    "embla-carousel-wheel-gestures",
+    "fuse.js",
+    "ohash",
+    "scule",
+    "tailwind-variants",
+    "ufo",
+    "vaul-vue",
+  ],
+  files: nuxtBaseFiles,
+}
+vueKit.unshift(nuxtBaseSpec)
+for (const spec of vueKit) {
+  if (spec.name === "nuxt-base") continue
+  spec.registryDependencies = [...(spec.registryDependencies ?? []), "@ui-kit/nuxt-base"]
 }
 
 reactAtoms.push(boundStoreSpec)

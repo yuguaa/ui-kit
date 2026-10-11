@@ -1,0 +1,209 @@
+src/components/kit/XButton.vue(92,16): error TS2339: Property 'loading' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "block" | "square" | "loadingAuto">'.
+src/components/kit/XButton.vue(92,105): error TS2339: Property 'type' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "block" | "square" | "loadingAuto">'.
+src/components/kit/XButton.vue(101,17): error TS2339: Property 'icon' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "block" | "square" | "loadingAuto">'.
+src/components/kit/XButton.vue(102,20): error TS2339: Property 'leading' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "block" | "square" | "loadingAuto">'.
+src/components/kit/XButton.vue(103,24): error TS2339: Property 'leadingIcon' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "block" | "square" | "loadingAuto">'.
+src/components/kit/XButton.vue(104,21): error TS2339: Property 'trailing' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "block" | "square" | "loadingAuto">'.
+src/components/kit/XButton.vue(105,25): error TS2339: Property 'trailingIcon' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "block" | "square" | "loadingAuto">'.
+src/components/kit/XButton.vue(107,24): error TS2339: Property 'loadingIcon' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "block" | "square" | "loadingAuto">'.
+src/components/kit/XButton.vue(118,88): error TS2339: Property 'activeClass' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "block" | "square" | "loadingAuto">'.
+src/components/kit/XButton.vue(121,89): error TS2339: Property 'inactiveClass' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "block" | "square" | "loadingAuto">'.
+src/components/kit/XButton.vue(127,3): error TS2322: Type 'string | undefined' is not assignable to type '"neutral" | undefined'.
+src/components/kit/XButton.vue(128,3): error TS2322: Type 'string | undefined' is not assignable to type '"link" | "solid" | "outline" | "soft" | "subtle" | "ghost" | undefined'.
+src/components/kit/XButton.vue(129,3): error TS2322: Type 'string | undefined' is not assignable to type '"xs" | "sm" | "md" | "lg" | "xl" | undefined'.
+src/components/kit/XButton.vue(135,3): error TS2322: Type 'string | undefined' is not assignable to type '"vertical" | "horizontal" | undefined'.
+src/components/kit/XButton.vue(142,18): error TS2339: Property 'type' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "block" | "square" | "loadingAuto">'.
+src/components/kit/XButton.vue(143,22): error TS2339: Property 'disabled' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "block" | "square" | "loadingAuto">'.
+src/components/kit/XButton.vue(160,37): error TS2339: Property 'avatar' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "block" | "square" | "loadingAuto">'.
+src/components/kit/XButton.vue(160,148): error TS2339: Property 'avatar' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "block" | "square" | "loadingAuto">'.
+src/components/kit/XCheckbox.vue(13,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XCheckbox.vue(34,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XCheckbox.vue(86,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XCheckbox.vue(86,3): error TS2717: Subsequent property declarations must have the same type.  Property 'size' must be of type 'any', but here has type 'string | undefined'.
+src/components/kit/XCheckbox.vue(106,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XCheckbox.vue(142,76): error TS2345: Argument of type '"defaultValue"' is not assignable to parameter of type 'keyof CheckboxProps<T> | (keyof CheckboxProps<T>)[]'.
+src/components/kit/XCheckbox.vue(154,66): error TS2339: Property 'disabled' does not exist on type 'CheckboxProps<T>'.
+src/components/kit/XCheckbox.vue(171,3): error TS2322: Type 'string | undefined' is not assignable to type '"neutral" | undefined'.
+src/components/kit/XCheckbox.vue(172,3): error TS2322: Type 'string | undefined' is not assignable to type '"list" | "card" | undefined'.
+src/components/kit/XCheckbox.vue(173,3): error TS2322: Type 'string | undefined' is not assignable to type '"end" | "hidden" | "start" | undefined'.
+src/components/kit/XInput.vue(17,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XInput.vue(19,3): error TS2300: Duplicate identifier 'id'.
+src/components/kit/XInput.vue(34,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XInput.vue(73,3): error TS2300: Duplicate identifier 'id'.
+src/components/kit/XInput.vue(73,3): error TS2717: Subsequent property declarations must have the same type.  Property 'id' must be of type 'any', but here has type 'string | undefined'.
+src/components/kit/XInput.vue(89,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XInput.vue(89,3): error TS2717: Subsequent property declarations must have the same type.  Property 'size' must be of type 'any', but here has type 'string | undefined'.
+src/components/kit/XInput.vue(102,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XInput.vue(166,3): error TS2322: Type 'string' is not assignable to type '"file"'.
+src/components/kit/XInput.vue(167,3): error TS2322: Type 'string | undefined' is not assignable to type '"neutral" | undefined'.
+src/components/kit/XInput.vue(168,3): error TS2322: Type 'string | undefined' is not assignable to type '"outline" | "soft" | "subtle" | "ghost" | "none" | undefined'.
+src/components/kit/XInput.vue(173,39): error TS2339: Property 'avatar' does not exist on type 'InputProps<T, Mod>'.
+src/components/kit/XInput.vue(175,3): error TS2322: Type 'string | undefined' is not assignable to type '"vertical" | "horizontal" | undefined'.
+src/components/kit/XInput.vue(272,12): error TS2322: Type 'ComponentSlots<T> & { root: WideSlotFn; base: WideSlotFn; leading: WideSlotFn; leadingIcon: WideSlotFn; leadingAvatar: WideSlotFn; leadingAvatarSize: WideSlotFn; trailing: WideSlotFn; trailingIcon: WideSlotFn; }' is not assignable to type 'ComponentUI<((props?: ({ fixed?: boolean | undefined; loading?: boolean | undefined; size?: "xs" | "sm" | "md" | "lg" | "xl" | undefined; color?: "neutral" | undefined; type?: "file" | undefined; ... 4 more ...; variant?: "outline" | ... 4 more ... | undefined; } & ClassProp<...>) | ({ ...; } & ClassProp<...>) | und...'.
+src/components/kit/XInput.vue(274,38): error TS2339: Property 'avatar' does not exist on type 'InputProps<T, Mod>'.
+src/components/kit/XInput.vue(275,29): error TS2322: Type 'ComponentSlots<T> & { root: WideSlotFn; base: WideSlotFn; leading: WideSlotFn; leadingIcon: WideSlotFn; leadingAvatar: WideSlotFn; leadingAvatarSize: WideSlotFn; trailing: WideSlotFn; trailingIcon: WideSlotFn; }' is not assignable to type 'ComponentUI<((props?: ({ fixed?: boolean | undefined; loading?: boolean | undefined; size?: "xs" | "sm" | "md" | "lg" | "xl" | undefined; color?: "neutral" | undefined; type?: "file" | undefined; ... 4 more ...; variant?: "outline" | ... 4 more ... | undefined; } & ClassProp<...>) | ({ ...; } & ClassProp<...>) | und...'.
+src/components/kit/XInput.vue(277,37): error TS2339: Property 'avatar' does not exist on type 'InputProps<T, Mod>'.
+src/components/kit/XInput.vue(277,148): error TS2339: Property 'avatar' does not exist on type 'InputProps<T, Mod>'.
+src/components/kit/XInput.vue(282,30): error TS2322: Type 'ComponentSlots<T> & { root: WideSlotFn; base: WideSlotFn; leading: WideSlotFn; leadingIcon: WideSlotFn; leadingAvatar: WideSlotFn; leadingAvatarSize: WideSlotFn; trailing: WideSlotFn; trailingIcon: WideSlotFn; }' is not assignable to type 'ComponentUI<((props?: ({ fixed?: boolean | undefined; loading?: boolean | undefined; size?: "xs" | "sm" | "md" | "lg" | "xl" | undefined; color?: "neutral" | undefined; type?: "file" | undefined; ... 4 more ...; variant?: "outline" | ... 4 more ... | undefined; } & ClassProp<...>) | ({ ...; } & ClassProp<...>) | und...'.
+src/components/kit/XInputNumber.vue(190,3): error TS2322: Type 'string | undefined' is not assignable to type '"neutral" | undefined'.
+src/components/kit/XInputNumber.vue(191,3): error TS2322: Type 'string | undefined' is not assignable to type '"outline" | "soft" | "subtle" | "ghost" | "none" | undefined'.
+src/components/kit/XInputNumber.vue(192,3): error TS2322: Type 'string | undefined' is not assignable to type '"xs" | "sm" | "md" | "lg" | "xl" | undefined'.
+src/components/kit/XInputNumber.vue(195,3): error TS2322: Type 'string | undefined' is not assignable to type '"vertical" | "horizontal" | undefined'.
+src/components/kit/XInputNumber.vue(196,3): error TS2322: Type 'string | undefined' is not assignable to type '"vertical" | "horizontal" | undefined'.
+src/components/kit/XInputRating.vue(93,61): error TS2345: Argument of type '"length"' is not assignable to parameter of type 'keyof InputRatingProps | (keyof InputRatingProps)[]'.
+src/components/kit/XInputRating.vue(102,66): error TS2339: Property 'disabled' does not exist on type 'InputRatingProps'.
+src/components/kit/XInputRating.vue(108,3): error TS2322: Type 'string | undefined' is not assignable to type '"xs" | "sm" | "md" | "lg" | "xl" | undefined'.
+src/components/kit/XInputRating.vue(109,3): error TS2322: Type 'string | undefined' is not assignable to type '"neutral" | undefined'.
+src/components/kit/XInputRating.vue(110,3): error TS2322: Type 'string | undefined' is not assignable to type '"vertical" | "horizontal" | undefined'.
+src/components/kit/XInputRating.vue(135,6): error TS2322: Type 'string | undefined' is not assignable to type 'DataOrientation | undefined'.
+src/components/kit/XInputRating.vue(161,51): error TS2339: Property 'length' does not exist on type 'InputRatingProps'.
+src/components/kit/XInputTags.vue(17,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XInputTags.vue(95,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XInputTags.vue(144,61): error TS2345: Argument of type '"addOnPaste"' is not assignable to parameter of type 'keyof InputTagsProps<T> | (keyof InputTagsProps<T>)[]'.
+src/components/kit/XInputTags.vue(158,66): error TS2339: Property 'disabled' does not exist on type 'InputTagsProps<T>'.
+src/components/kit/XInputTags.vue(162,3): error TS2322: Type 'string | undefined' is not assignable to type '"neutral" | undefined'.
+src/components/kit/XInputTags.vue(163,3): error TS2322: Type 'string | undefined' is not assignable to type 'undefined'.
+src/components/kit/XInputTags.vue(164,3): error TS2322: Type 'string | undefined' is not assignable to type '"xs" | "sm" | "md" | "lg" | "xl" | undefined'.
+src/components/kit/XInputTags.vue(168,39): error TS2339: Property 'avatar' does not exist on type 'InputTagsProps<T>'.
+src/components/kit/XInputTags.vue(170,3): error TS2322: Type 'string | undefined' is not assignable to type '"vertical" | "horizontal" | undefined'.
+src/components/kit/XInputTags.vue(192,19): error TS2339: Property 'modelValue' does not exist on type 'InputTagsProps<T>'.
+src/components/kit/XInputTags.vue(222,25): error TS2339: Property 'modelValue' does not exist on type 'InputTagsProps<T>'.
+src/components/kit/XInputTags.vue(223,27): error TS2339: Property 'defaultValue' does not exist on type 'InputTagsProps<T>'.
+src/components/kit/XInputTags.vue(225,16): error TS2339: Property 'root' does not exist on type 'string'.
+src/components/kit/XInputTags.vue(225,34): error TS2339: Property 'base' does not exist on type 'string'.
+src/components/kit/XInputTags.vue(229,6): error TS2322: Type '(value: T[]) => void' is not assignable to type '(payload: string[]) => any'.
+src/components/kit/XInputTags.vue(236,18): error TS2339: Property 'item' does not exist on type 'string'.
+src/components/kit/XInputTags.vue(238,58): error TS2339: Property 'itemText' does not exist on type 'string'.
+src/components/kit/XInputTags.vue(239,96): error TS2322: Type 'string' is not assignable to type 'ComponentUI<((props?: ({ fixed?: boolean | undefined; loading?: boolean | undefined; size?: "xs" | "sm" | "md" | "lg" | "xl" | undefined; color?: "neutral" | undefined; type?: "file" | undefined; ... 4 more ...; variant?: undefined; } & ClassProp<...>) | ({ ...; } & ClassProp<...>) | undefined) => string) & Omit<...>>'.
+src/components/kit/XInputTags.vue(244,20): error TS2339: Property 'itemDelete' does not exist on type 'string'.
+src/components/kit/XInputTags.vue(247,70): error TS2322: Type 'string' is not assignable to type 'ComponentUI<((props?: ({ fixed?: boolean | undefined; loading?: boolean | undefined; size?: "xs" | "sm" | "md" | "lg" | "xl" | undefined; color?: "neutral" | undefined; type?: "file" | undefined; ... 4 more ...; variant?: undefined; } & ClassProp<...>) | ({ ...; } & ClassProp<...>) | undefined) => string) & Omit<...>>'.
+src/components/kit/XInputTags.vue(248,109): error TS2339: Property 'itemDeleteIcon' does not exist on type 'string'.
+src/components/kit/XInputTags.vue(259,18): error TS2339: Property 'input' does not exist on type 'string'.
+src/components/kit/XInputTags.vue(264,12): error TS2322: Type 'string' is not assignable to type 'ComponentUI<((props?: ({ fixed?: boolean | undefined; loading?: boolean | undefined; size?: "xs" | "sm" | "md" | "lg" | "xl" | undefined; color?: "neutral" | undefined; type?: "file" | undefined; ... 4 more ...; variant?: undefined; } & ClassProp<...>) | ({ ...; } & ClassProp<...>) | undefined) => string) & Omit<...>>'.
+src/components/kit/XInputTags.vue(266,38): error TS2339: Property 'avatar' does not exist on type 'InputTagsProps<T>'.
+src/components/kit/XInputTags.vue(266,96): error TS2339: Property 'leading' does not exist on type 'string'.
+src/components/kit/XInputTags.vue(267,29): error TS2322: Type 'string' is not assignable to type 'ComponentUI<((props?: ({ fixed?: boolean | undefined; loading?: boolean | undefined; size?: "xs" | "sm" | "md" | "lg" | "xl" | undefined; color?: "neutral" | undefined; type?: "file" | undefined; ... 4 more ...; variant?: undefined; } & ClassProp<...>) | ({ ...; } & ClassProp<...>) | undefined) => string) & Omit<...>>'.
+src/components/kit/XInputTags.vue(268,111): error TS2339: Property 'leadingIcon' does not exist on type 'string'.
+src/components/kit/XInputTags.vue(269,37): error TS2339: Property 'avatar' does not exist on type 'InputTagsProps<T>'.
+src/components/kit/XInputTags.vue(269,88): error TS2339: Property 'leadingAvatarSize' does not exist on type 'string'.
+src/components/kit/XInputTags.vue(269,148): error TS2339: Property 'avatar' does not exist on type 'InputTagsProps<T>'.
+src/components/kit/XInputTags.vue(269,193): error TS2339: Property 'leadingAvatar' does not exist on type 'string'.
+src/components/kit/XInputTags.vue(273,81): error TS2339: Property 'trailing' does not exist on type 'string'.
+src/components/kit/XInputTags.vue(274,30): error TS2322: Type 'string' is not assignable to type 'ComponentUI<((props?: ({ fixed?: boolean | undefined; loading?: boolean | undefined; size?: "xs" | "sm" | "md" | "lg" | "xl" | undefined; color?: "neutral" | undefined; type?: "file" | undefined; ... 4 more ...; variant?: undefined; } & ClassProp<...>) | ({ ...; } & ClassProp<...>) | undefined) => string) & Omit<...>>'.
+src/components/kit/XInputTags.vue(275,101): error TS2339: Property 'trailingIcon' does not exist on type 'string'.
+src/components/kit/XSlider.vue(75,76): error TS2345: Argument of type '"min"' is not assignable to parameter of type 'keyof SliderProps | (keyof SliderProps)[]'.
+src/components/kit/XSlider.vue(84,66): error TS2339: Property 'disabled' does not exist on type 'SliderProps'.
+src/components/kit/XSlider.vue(114,3): error TS2322: Type 'string | undefined' is not assignable to type '"xs" | "sm" | "md" | "lg" | "xl" | undefined'.
+src/components/kit/XSlider.vue(115,3): error TS2322: Type 'string | undefined' is not assignable to type '"neutral" | undefined'.
+src/components/kit/XSlider.vue(116,3): error TS2322: Type 'string | undefined' is not assignable to type '"vertical" | "horizontal" | undefined'.
+src/components/kit/XSlider.vue(128,4): error TS2345: Argument of type '{ defaultValue: number[] | undefined; class: string; name: string | undefined; disabled: any; size?: Slider["variants"]["size"] | undefined; ui?: Slider["slots"] | undefined; color?: Slider["variants"]["color"] | undefined; ... 8 more ...; 'onUpdate:modelValue': any; }' is not assignable to parameter of type '{ readonly defaultValue?: number[] | undefined; readonly modelValue?: number[] | null | undefined; readonly disabled?: boolean | undefined; readonly orientation?: DataOrientation | undefined; ... 12 more ...; readonly onValueCommit?: ((payload: number[]) => any) | undefined; } & VNodeProps & AllowedComponentProps & ...'.
+src/components/kit/XSwitch.vue(13,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XSwitch.vue(34,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XSwitch.vue(44,3): error TS2300: Duplicate identifier 'loading'.
+src/components/kit/XSwitch.vue(80,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XSwitch.vue(80,3): error TS2717: Subsequent property declarations must have the same type.  Property 'size' must be of type 'any', but here has type 'string | undefined'.
+src/components/kit/XSwitch.vue(84,3): error TS2300: Duplicate identifier 'loading'.
+src/components/kit/XSwitch.vue(84,3): error TS2717: Subsequent property declarations must have the same type.  Property 'loading' must be of type 'any', but here has type 'boolean | undefined'.
+src/components/kit/XSwitch.vue(103,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XSwitch.vue(139,76): error TS2345: Argument of type '"defaultValue"' is not assignable to parameter of type 'keyof SwitchProps<T> | (keyof SwitchProps<T>)[]'.
+src/components/kit/XSwitch.vue(151,66): error TS2339: Property 'disabled' does not exist on type 'SwitchProps<T>'.
+src/components/kit/XSwitch.vue(163,3): error TS2322: Type 'string | undefined' is not assignable to type '"neutral" | undefined'.
+src/components/kit/XTable.vue(377,69): error TS2345: Argument of type '"autoResetAll"' is not assignable to parameter of type 'keyof TableProps<T> | (keyof TableProps<T>)[]'.
+src/components/kit/XTextarea.vue(16,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XTextarea.vue(18,3): error TS2300: Duplicate identifier 'id'.
+src/components/kit/XTextarea.vue(35,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XTextarea.vue(73,3): error TS2300: Duplicate identifier 'id'.
+src/components/kit/XTextarea.vue(73,3): error TS2717: Subsequent property declarations must have the same type.  Property 'id' must be of type 'any', but here has type 'string | undefined'.
+src/components/kit/XTextarea.vue(88,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XTextarea.vue(88,3): error TS2717: Subsequent property declarations must have the same type.  Property 'size' must be of type 'any', but here has type 'string | undefined'.
+src/components/kit/XTextarea.vue(104,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XTextarea.vue(166,3): error TS2322: Type 'string | undefined' is not assignable to type '"neutral" | undefined'.
+src/components/kit/XTextarea.vue(167,3): error TS2322: Type 'string | undefined' is not assignable to type '"outline" | "soft" | "subtle" | "ghost" | "none" | undefined'.
+src/components/kit/XTextarea.vue(173,39): error TS2339: Property 'avatar' does not exist on type 'TextareaProps<T, Mod>'.
+src/components/kit/XTextarea.vue(308,12): error TS2322: Type 'ComponentSlots<T> & { base: WideSlotFn; root: WideSlotFn; leadingIcon: WideSlotFn; trailingIcon: WideSlotFn; leadingAvatar: WideSlotFn; leadingAvatarSize: WideSlotFn; leading: WideSlotFn; trailing: WideSlotFn; }' is not assignable to type 'ComponentUI<((props?: ({ fixed?: boolean | undefined; loading?: boolean | undefined; size?: "xs" | "sm" | "md" | "lg" | "xl" | undefined; color?: "neutral" | undefined; type?: "file" | undefined; ... 5 more ...; autoresize?: boolean | undefined; } & ClassProp<...>) | ({ ...; } & ClassProp<...>) | undefined) => { ......'.
+src/components/kit/XTextarea.vue(310,38): error TS2339: Property 'avatar' does not exist on type 'TextareaProps<T, Mod>'.
+src/components/kit/XTextarea.vue(311,29): error TS2322: Type 'ComponentSlots<T> & { base: WideSlotFn; root: WideSlotFn; leadingIcon: WideSlotFn; trailingIcon: WideSlotFn; leadingAvatar: WideSlotFn; leadingAvatarSize: WideSlotFn; leading: WideSlotFn; trailing: WideSlotFn; }' is not assignable to type 'ComponentUI<((props?: ({ fixed?: boolean | undefined; loading?: boolean | undefined; size?: "xs" | "sm" | "md" | "lg" | "xl" | undefined; color?: "neutral" | undefined; type?: "file" | undefined; ... 5 more ...; autoresize?: boolean | undefined; } & ClassProp<...>) | ({ ...; } & ClassProp<...>) | undefined) => { ......'.
+src/components/kit/XTextarea.vue(313,37): error TS2339: Property 'avatar' does not exist on type 'TextareaProps<T, Mod>'.
+src/components/kit/XTextarea.vue(313,148): error TS2339: Property 'avatar' does not exist on type 'TextareaProps<T, Mod>'.
+src/components/kit/XTextarea.vue(318,30): error TS2322: Type 'ComponentSlots<T> & { base: WideSlotFn; root: WideSlotFn; leadingIcon: WideSlotFn; trailingIcon: WideSlotFn; leadingAvatar: WideSlotFn; leadingAvatarSize: WideSlotFn; leading: WideSlotFn; trailing: WideSlotFn; }' is not assignable to type 'ComponentUI<((props?: ({ fixed?: boolean | undefined; loading?: boolean | undefined; size?: "xs" | "sm" | "md" | "lg" | "xl" | undefined; color?: "neutral" | undefined; type?: "file" | undefined; ... 5 more ...; autoresize?: boolean | undefined; } & ClassProp<...>) | ({ ...; } & ClassProp<...>) | undefined) => { ......'.
+src/lib/nuxt/composables/useKbd.ts(39,44): error TS2339: Property 'client' does not exist on type 'ImportMeta'.
+src/lib/nuxt/composables/useLocale.ts(16,54): error TS2339: Property 'client' does not exist on type 'ImportMeta'.
+src/lib/nuxt/composables/useOverlay.ts(4,52): error TS2307: Cannot find module 'vue-component-type-helpers' or its corresponding type declarations.
+src/lib/nuxt/composables/useOverlay.ts(72,30): error TS2339: Property 'dev' does not exist on type 'ImportMeta'.
+src/lib/nuxt/composables/useResizable.ts(115,37): error TS2554: Expected 1 arguments, but got 2.
+src/lib/nuxt/theme/alert.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/avatar-group.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/avatar.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/badge.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/banner.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/blog-post.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/breadcrumb.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/button.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/calendar.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/carousel.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/changelog-version.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/chat-message.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/chat-prompt.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/chat-reasoning.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/chat-tool.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/checkbox-group.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/checkbox.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/chip.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/command-palette.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/context-menu.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/drawer.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/dropdown-menu.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/editor-emoji-menu.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/editor-mention-menu.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/editor-suggestion-menu.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/editor.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/file-upload.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/footer-columns.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/input-date.ts(2,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/input-menu.ts(2,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/input-number.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/input-rating.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/input-tags.ts(2,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/input-time.ts(2,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/input.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/kbd.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/link.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/listbox.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/navigation-menu.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/page-anchors.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/page-card.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/page-feature.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/page-links.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/pin-input.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/progress-group.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/progress.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/radio-group.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/select-menu.ts(2,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/select.ts(2,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/separator.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/sidebar.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/slider.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/stepper.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/switch.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/table.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/tabs.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/textarea.ts(2,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/timeline.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/toast.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/tree.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/theme/user.ts(1,36): error TS2307: Cannot find module '../module' or its corresponding type declarations.
+src/lib/nuxt/types/form.ts(1,39): error TS2307: Cannot find module '@standard-schema/spec' or its corresponding type declarations.
+src/lib/nuxt/types/form.ts(4,50): error TS2307: Cannot find module 'superstruct' or its corresponding type declarations.
+src/lib/nuxt/types/tv.ts(31,115): error TS2344: Type 'object' does not satisfy the constraint 'TVVariantsShape'.
+src/lib/nuxt/types/tv.ts(36,109): error TS2344: Type 'object' does not satisfy the constraint 'TVVariantsShape'.
+src/lib/nuxt/ui/index.ts(1,8): error TS1192: Module '"/Users/pine-storm/code/ui-kit/packages/vue/src/lib/nuxt/theme/index"' has no default export.
+src/lib/nuxt/utils/ai.ts(1,32): error TS2307: Cannot find module 'ai' or its corresponding type declarations.
+src/lib/nuxt/utils/ai.ts(12,13): error TS7006: Parameter 'part' implicitly has an 'any' type.
+src/lib/nuxt/utils/ai.ts(13,10): error TS7006: Parameter 'part' implicitly has an 'any' type.
+src/lib/nuxt/utils/form.ts(2,39): error TS2307: Cannot find module '@standard-schema/spec' or its corresponding type declarations.
+src/lib/nuxt/utils/form.ts(3,29): error TS2307: Cannot find module 'superstruct' or its corresponding type declarations.
+src/lib/nuxt/utils/form.ts(27,34): error TS7006: Parameter 'issue' implicitly has an 'any' type.
+src/lib/nuxt/utils/form.ts(28,31): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/lib/nuxt/utils/form.ts(44,39): error TS7006: Parameter 'error' implicitly has an 'any' type.
+src/lib/nuxt/utils/search.ts(1,50): error TS2307: Cannot find module 'fuse.js' or its corresponding type declarations.
+src/lib/nuxt/utils/search.ts(82,22): error TS7006: Parameter 'region' implicitly has an 'any' type.

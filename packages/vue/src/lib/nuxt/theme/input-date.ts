@@ -1,5 +1,5 @@
 import { defuFn } from 'defu'
-import type { ModuleOptions } from '../module'
+import type { ModuleOptions } from '../types/module-options'
 import input from './input'
 import { fieldGroupVariant } from './field-group'
 

@@ -227,7 +227,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.fileUpload || {}
   multiple: props.multiple,
   highlight: highlight.value,
   disabled: disabled.value
-}))
+} as any))
 
 function createObjectUrl(file: File): string | undefined {
   if (!props.fileImage) return undefined
@@ -317,7 +317,7 @@ defineExpose({
         <slot name="files" :files="modelValue" :remove-file="removeFile">
           <div v-for="(file, index) in Array.isArray(modelValue) ? modelValue : [modelValue]" :key="(file as File).name" data-slot="file" :class="ui.file({ class: props.ui?.file })">
             <slot name="file" :file="file" :index="index" :remove-file="removeFile">
-              <slot name="file-leading" :file="file" :index="index" :ui="ui">
+              <slot name="file-leading" :file="file" :index="index" :ui="(ui as any)">
                 <XAvatar
                   :as="{ img: 'img' }"
                   :src="createObjectUrl(file)"
@@ -342,7 +342,7 @@ defineExpose({
                 </span>
               </div>
 
-              <slot name="file-trailing" :file="file" :index="index" :ui="ui" :remove-file="removeFile">
+              <slot name="file-trailing" :file="file" :index="index" :ui="(ui as any)" :remove-file="removeFile">
                 <XButton
                   v-if="props.fileDelete"
                   color="neutral"
@@ -373,7 +373,7 @@ defineExpose({
   </DefineFilesTemplate>
 
   <Primitive :as="props.as" :data-slot="($attrs['data-slot'] as string | undefined) ?? 'root'" :class="ui.root({ class: [props.ui?.root, props.class] })">
-    <slot :open="open" :remove-file="removeFile" :ui="ui">
+    <slot :open="open" :remove-file="removeFile" :ui="(ui as any)">
       <component
         :is="variant === 'button' ? 'button' : 'div'"
         ref="dropzoneRef"
@@ -392,7 +392,7 @@ defineExpose({
         <ReuseFilesTemplate v-if="position === 'inside'" />
 
         <div v-if="position === 'inside' ? (!props.preview || (multiple ? !(modelValue as File[])?.length : !modelValue)) : true" data-slot="wrapper" :class="ui.wrapper({ class: props.ui?.wrapper })">
-          <slot name="leading" :ui="ui">
+          <slot name="leading" :ui="(ui as any)">
             <template v-if="props.icon !== false">
               <XIcon v-if="variant === 'button'" :name="props.icon ?? appConfig.ui.icons.upload" data-slot="icon" :class="ui.icon({ class: props.ui?.icon })" />
               <XAvatar v-else :icon="props.icon ?? appConfig.ui.icons.upload" :size="size" data-slot="avatar" :class="ui.avatar({ class: props.ui?.avatar })" />

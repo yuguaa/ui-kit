@@ -5,7 +5,8 @@
   "description": "展示快捷键或按键组合。",
   "dependencies": [],
   "registryDependencies": [
-    "@ui-kit/utils"
+    "@ui-kit/utils",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

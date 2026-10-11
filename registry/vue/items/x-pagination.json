@@ -9,7 +9,8 @@
   "registryDependencies": [
     "@ui-kit/utils",
     "@ui-kit/button",
-    "@ui-kit/x-select-menu"
+    "@ui-kit/x-select-menu",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

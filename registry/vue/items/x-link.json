@@ -5,7 +5,8 @@
   "description": "页面内或跨页面的超链接，支持前后图标与激活态。",
   "dependencies": [],
   "registryDependencies": [
-    "@ui-kit/utils"
+    "@ui-kit/utils",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

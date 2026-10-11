@@ -1,4 +1,4 @@
-import type { ModuleOptions } from '../module'
+import type { ModuleOptions } from '../types/module-options'
 import { focusCard, focusControl, hover } from './checkbox'
 
 export default (options: Required<ModuleOptions>) => ({

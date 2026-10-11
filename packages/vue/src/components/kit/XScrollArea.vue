@@ -121,7 +121,7 @@ const isExternalScroll = computed(() => typeof props.virtualize === 'object' && 
 const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.scrollArea || {}) })({
   orientation: props.orientation,
   externalScroll: isExternalScroll.value
-}))
+} as any))
 
 const rootRef = useTemplateRef<ComponentPublicInstance>('rootRef')
 
@@ -129,7 +129,7 @@ const scrollShadowStyle = props.shadow
   ? useScrollShadow(
     computed(() => rootRef.value?.$el as HTMLElement | undefined),
     {
-      orientation: () => props.orientation ?? 'vertical',
+      orientation: () => (props.orientation ?? 'vertical') as any,
       size: typeof props.shadow === 'object' ? props.shadow.size : undefined
     }
   ).style
@@ -283,8 +283,8 @@ watch(
 )
 
 function getItemKey(item: T, index: number) {
-  if (virtualizerProps.value.getItemKey) {
-    return virtualizerProps.value.getItemKey(index)
+  if ((virtualizerProps.value as any).getItemKey) {
+    return (virtualizerProps.value as any).getItemKey(index)
   }
   if (item && typeof item === 'object' && 'id' in item) {
     return (item as any).id

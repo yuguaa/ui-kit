@@ -1,7 +1,5 @@
 import { toRaw } from 'vue'
-import type { StandardSchemaV1 } from '@standard-schema/spec'
-import type { Struct } from 'superstruct'
-import type { FormSchema, ValidateReturnSchema } from '../types/form'
+import type { FormSchema, StandardSchemaV1, Struct, ValidateReturnSchema } from '../types/form'
 
 export function isSuperStructSchema(schema: any): schema is Struct<any, any> {
   return (

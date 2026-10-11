@@ -12,7 +12,8 @@
     "@ui-kit/table",
     "@ui-kit/x-checkbox",
     "@ui-kit/x-pagination",
-    "@ui-kit/x-skeleton"
+    "@ui-kit/x-skeleton",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

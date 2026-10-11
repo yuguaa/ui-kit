@@ -95,7 +95,7 @@ const appConfig = useAppConfig() as ColorPicker['AppConfig']
 // eslint-disable-next-line vue/no-dupe-keys
 const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.colorPicker || {}) })({
   size: props.size
-}))
+} as any))
 
 const pickedColor = computed<HSVColor>({
   get() {

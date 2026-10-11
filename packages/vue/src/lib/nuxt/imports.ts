@@ -28,7 +28,7 @@ export function useState<T>(key: string, init?: () => T) {
 }
 
 /** useCookie 替身：localStorage 持久化 */
-export function useCookie<T>(name: string) {
+export function useCookie<T>(name: string, _options?: Record<string, any>) {
   const stored = typeof window !== 'undefined' ? window.localStorage.getItem(name) : null
   const value = ref<T | null>(stored ? (JSON.parse(stored) as T) : null)
   const watch = (cb: () => void) => {

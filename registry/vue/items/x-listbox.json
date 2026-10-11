@@ -8,7 +8,8 @@
   ],
   "registryDependencies": [
     "@ui-kit/utils",
-    "@ui-kit/input"
+    "@ui-kit/input",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

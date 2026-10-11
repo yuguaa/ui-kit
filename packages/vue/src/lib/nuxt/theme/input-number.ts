@@ -1,4 +1,4 @@
-import type { ModuleOptions } from '../module'
+import type { ModuleOptions } from '../types/module-options'
 import inputTheme from './input'
 import { fieldGroupVariantWithRoot } from './field-group'
 

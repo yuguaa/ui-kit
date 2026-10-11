@@ -6,7 +6,8 @@
   "dependencies": [],
   "registryDependencies": [
     "@ui-kit/utils",
-    "@ui-kit/textarea"
+    "@ui-kit/textarea",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

@@ -5,7 +5,8 @@
   "description": "在内容之间插入水平或垂直分隔，支持标签与线条样式。",
   "dependencies": [],
   "registryDependencies": [
-    "@ui-kit/utils"
+    "@ui-kit/utils",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

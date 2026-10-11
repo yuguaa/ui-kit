@@ -1,4 +1,4 @@
-import type { ModuleOptions } from '../module'
+import type { ModuleOptions } from '../types/module-options'
 
 export default (options: Required<ModuleOptions>) => ({
   base: 'inline-flex items-center justify-center px-1 rounded-sm font-medium font-sans uppercase',

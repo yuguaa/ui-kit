@@ -1,4 +1,4 @@
-import type { ModuleOptions } from '../module'
+import type { ModuleOptions } from '../types/module-options'
 // `table` is defined here rather than in checkbox.ts, so its focus ring is too
 import { focusCard, hover } from './checkbox'
 

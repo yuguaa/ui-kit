@@ -1,7 +1,9 @@
 import type { Component } from 'vue'
 import { reactive, markRaw, shallowReactive } from 'vue'
 import { createSharedComposable } from '@vueuse/core'
-import type { ComponentProps, ComponentEmit } from 'vue-component-type-helpers'
+/** vue-component-type-helpers 未随包安装，本地宽松类型替代（仅类型层） */
+type ComponentProps<T extends Component = Component> = Record<string, any>
+type ComponentEmit<T extends Component = Component> = (event: string, ...args: any[]) => void
 
 type CloseEventArgTypeSimple<T> = T extends (event: 'close', arg_0: infer Arg, ...args: any[]) => void ? Arg : never
 /**

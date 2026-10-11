@@ -46,6 +46,8 @@ export interface SplitterProps<T extends SplitterItem = SplitterItem> {
   disabled?: boolean
   class?: any
   ui?: Splitter['slots']
+  /** 类型修补：reka 透传成员（autoSaveId/keyboardResizeBy/storage/hitAreaMargins 等）经索引签名宽松承载 */
+  [key: string]: any
 }
 
 export interface SplitterEmits {
@@ -98,7 +100,7 @@ const rootProps = useForwardProps(reactivePick(props, 'as', 'id', 'autoSaveId', 
 // eslint-disable-next-line vue/no-dupe-keys
 const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.splitter || {}) })({
   orientation: props.orientation
-}))
+} as any))
 
 const panelsRef = ref<InstanceType<typeof SplitterPanel>[]>([])
 
@@ -131,7 +133,7 @@ defineExpose({
 </script>
 
 <template>
-  <SplitterGroup v-bind="rootProps" :direction="props.orientation!" data-slot="root" :class="ui.root({ class: [props.ui?.root, props.class] })" @layout="emits('layout', $event)">
+  <SplitterGroup v-bind="rootProps" :direction="(props.orientation! as any)" data-slot="root" :class="ui.root({ class: [props.ui?.root, props.class] })" @layout="emits('layout', $event)">
     <template v-for="(item, index) in props.items" :key="item.id ?? index">
       <SplitterPanel
         :id="getPanelId(item, index)"

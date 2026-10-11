@@ -1,4 +1,4 @@
-import type { ModuleOptions } from '../module'
+import type { ModuleOptions } from '../types/module-options'
 import { fieldGroupVariantWithRoot } from './field-group'
 
 export default (options: Required<ModuleOptions>) => ({

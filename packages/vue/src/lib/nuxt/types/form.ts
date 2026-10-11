@@ -1,7 +1,35 @@
-import type { StandardSchemaV1 } from '@standard-schema/spec'
 import type { ComputedRef, DeepReadonly, Ref } from 'vue'
 import type { GetObjectField } from './utils'
-import type { Struct as SuperstructSchema } from 'superstruct'
+
+/** @standard-schema/spec 未随包安装，本地结构类型替代（仅类型层） */
+export interface StandardSchemaV1<I = unknown, O = I> {
+  readonly '~standard': {
+    readonly version: 1
+    readonly vendor: string
+    readonly validate: (value: unknown) => StandardSchemaV1.Result<O> | Promise<StandardSchemaV1.Result<O>>
+  }
+}
+
+export namespace StandardSchemaV1 {
+  export type Result<Output> = { issues?: Issue[]; value: Output } | { issues: Issue[] }
+
+  export interface Issue {
+    readonly message: string
+    readonly path?: ReadonlyArray<PropertyKey | { readonly key: PropertyKey }>
+  }
+
+  export type InferInput<S> = S extends StandardSchemaV1<infer I, any> ? I : never
+  export type InferOutput<S> = S extends StandardSchemaV1<any, infer O> ? O : never
+}
+
+/** superstruct 未随包安装，本地结构类型替代（仅类型层） */
+export interface Struct<S = any, T = any> {
+  schema: S
+  coercer: (value: unknown) => T
+  validator: (value: unknown, context: unknown) => unknown
+  refiner: (value: unknown, context: unknown) => unknown
+  validate: (value: unknown) => [error: { failures: () => Array<{ message: string; path: Array<string | number> }> } | undefined, result?: T]
+}
 
 export interface Form<S extends FormSchema> {
   validate<T extends boolean>(opts?: { name?: keyof FormData<S, false> | (keyof FormData<S, false>)[], silent?: boolean, nested?: boolean, transform?: T }): Promise<FormData<S, T> | false>
@@ -20,17 +48,17 @@ export interface Form<S extends FormSchema> {
 }
 
 export type FormSchema<I extends object = object, O extends object = I>
-  = | SuperstructSchema<any, any>
+  = | Struct<any, any>
     | StandardSchemaV1<I, O>
 
 // Define a utility type to infer the input type based on the schema type
 export type InferInput<Schema> = Schema extends StandardSchemaV1 ? StandardSchemaV1.InferInput<Schema>
-  : Schema extends SuperstructSchema<infer I, any> ? I
+  : Schema extends Struct<infer I, any> ? I
     : never
 
 // Define a utility type to infer the output type based on the schema type
 export type InferOutput<Schema> = Schema extends StandardSchemaV1 ? StandardSchemaV1.InferOutput<Schema>
-  : Schema extends SuperstructSchema<infer O, any> ? O
+  : Schema extends Struct<infer O, any> ? O
     : never
 
 export type FormData<S extends FormSchema, T extends boolean = true> = T extends true ? InferOutput<S> : InferInput<S>

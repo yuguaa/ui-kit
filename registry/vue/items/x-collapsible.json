@@ -8,7 +8,8 @@
   ],
   "registryDependencies": [
     "@ui-kit/utils",
-    "@ui-kit/collapsible"
+    "@ui-kit/collapsible",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

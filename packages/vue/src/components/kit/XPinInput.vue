@@ -49,6 +49,8 @@ export interface PinInputProps<T extends PinInputType = 'text'> {
   separator?: number | number[]
   class?: any
   ui?: PinInput['slots']
+  /** 类型修补：reka 透传与 useFormField 所需成员（disabled/placeholder/modelValue/defaultValue 等）经索引签名宽松承载 */
+  [key: string]: any
 }
 
 export type PinInputEmits<T extends PinInputType = 'text'> = {
@@ -106,7 +108,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.pinInput || {}) 
   size: size.value,
   highlight: highlight.value,
   fixed: props.fixed
-}))
+} as any))
 
 const inputsRef = ref<ComponentPublicInstance[]>([])
 

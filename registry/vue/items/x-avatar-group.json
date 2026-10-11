@@ -5,7 +5,8 @@
   "description": "将多个头像重叠排列展示，超出 max 折叠为 +N。",
   "dependencies": [],
   "registryDependencies": [
-    "@ui-kit/utils"
+    "@ui-kit/utils",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

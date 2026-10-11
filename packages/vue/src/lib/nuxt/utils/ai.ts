@@ -1,4 +1,5 @@
-import type { UIMessage } from 'ai'
+/** ai SDK 未随包安装，本地宽松类型替代（仅类型层） */
+type UIMessage = { id: string; parts: Array<{ type: string; text?: string; state?: string }> }
 
 /**
  * Extracts and concatenates all text parts from a UIMessage.

@@ -6,7 +6,8 @@
   "dependencies": [],
   "registryDependencies": [
     "@ui-kit/utils",
-    "@ui-kit/tabs"
+    "@ui-kit/tabs",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

@@ -1,5 +1,5 @@
 import { defu } from 'defu'
-import type { ModuleOptions } from '../module'
+import type { ModuleOptions } from '../types/module-options'
 import input from './input'
 
 export default (options: Required<ModuleOptions>) => {

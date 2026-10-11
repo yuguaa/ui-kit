@@ -1,4 +1,6 @@
-import type { FuseResult, FuseResultMatch } from 'fuse.js'
+/** fuse.js 未随包安装，本地宽松类型替代（仅类型层） */
+type FuseResult<T> = { matches?: readonly FuseResultMatch[] }
+type FuseResultMatch = { key?: string; value: string; indices: ReadonlyArray<readonly [number, number]> }
 import type { GetItemKeys } from '../types/utils'
 
 const htmlEscapes: Record<string, string> = {

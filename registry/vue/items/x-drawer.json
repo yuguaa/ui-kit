@@ -7,7 +7,8 @@
   "registryDependencies": [
     "@ui-kit/utils",
     "@ui-kit/drawer",
-    "@ui-kit/x-button"
+    "@ui-kit/x-button",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

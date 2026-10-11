@@ -12,7 +12,8 @@
     "@ui-kit/utils",
     "@ui-kit/popover",
     "@ui-kit/input",
-    "@ui-kit/calendar"
+    "@ui-kit/calendar",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

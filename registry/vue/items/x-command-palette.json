@@ -11,7 +11,8 @@
     "@ui-kit/x-avatar",
     "@ui-kit/x-button",
     "@ui-kit/x-chip",
-    "@ui-kit/x-icon"
+    "@ui-kit/x-icon",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

@@ -6,7 +6,8 @@
   "dependencies": [],
   "registryDependencies": [
     "@ui-kit/utils",
-    "@ui-kit/accordion"
+    "@ui-kit/accordion",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

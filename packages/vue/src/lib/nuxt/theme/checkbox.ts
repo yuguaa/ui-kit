@@ -1,4 +1,4 @@
-import type { ModuleOptions } from '../module'
+import type { ModuleOptions } from '../types/module-options'
 
 // Shared with `checkbox-group` and `radio-group`, which style the same states on their own slots.
 export const hover = 'hover:not-has-disabled:not-has-focus-visible:not-has-data-[state=checked]:'

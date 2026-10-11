@@ -5,7 +5,8 @@
   "description": "收集、校验并提交表单数据。",
   "dependencies": [],
   "registryDependencies": [
-    "@ui-kit/utils"
+    "@ui-kit/utils",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

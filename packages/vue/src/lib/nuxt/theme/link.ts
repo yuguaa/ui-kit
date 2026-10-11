@@ -1,4 +1,4 @@
-import type { ModuleOptions } from '../module'
+import type { ModuleOptions } from '../types/module-options'
 
 export default (options: Required<ModuleOptions>) => ({
   base: 'outline-primary/25 focus-visible:outline-3 rounded-md',

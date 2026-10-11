@@ -7,7 +7,8 @@
   "registryDependencies": [
     "@ui-kit/utils",
     "@ui-kit/radio-group",
-    "@ui-kit/label"
+    "@ui-kit/label",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

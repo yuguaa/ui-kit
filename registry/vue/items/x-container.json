@@ -5,7 +5,8 @@
   "description": "约束内容宽度的居中布局容器。",
   "dependencies": [],
   "registryDependencies": [
-    "@ui-kit/utils"
+    "@ui-kit/utils",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

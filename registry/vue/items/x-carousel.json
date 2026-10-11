@@ -12,7 +12,8 @@
   "registryDependencies": [
     "@ui-kit/utils",
     "@ui-kit/carousel",
-    "@ui-kit/x-button"
+    "@ui-kit/x-button",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

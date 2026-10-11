@@ -6,7 +6,8 @@
   "dependencies": [],
   "registryDependencies": [
     "@ui-kit/utils",
-    "@ui-kit/progress"
+    "@ui-kit/progress",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

@@ -1,4 +1,4 @@
-import type { ModuleOptions } from '../module'
+import type { ModuleOptions } from '../types/module-options'
 
 // Active-tab highlight shown before reka-ui's `TabsIndicator` mounts (SSR / pre-hydration).
 // reka-ui only renders the real indicator on the client (it needs DOM measurements), so we gate

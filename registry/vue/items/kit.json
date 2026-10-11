@@ -59,7 +59,8 @@
     "@ui-kit/x-scroll-area",
     "@ui-kit/x-carousel",
     "@ui-kit/x-splitter",
-    "@ui-kit/x-table"
+    "@ui-kit/x-table",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

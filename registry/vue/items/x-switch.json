@@ -9,7 +9,8 @@
   "registryDependencies": [
     "@ui-kit/utils",
     "@ui-kit/switch",
-    "@ui-kit/label"
+    "@ui-kit/label",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

@@ -5,7 +5,8 @@
   "description": "将多个按钮水平或垂直拼接为一个整体。",
   "dependencies": [],
   "registryDependencies": [
-    "@ui-kit/utils"
+    "@ui-kit/utils",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

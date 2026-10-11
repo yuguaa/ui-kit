@@ -76,7 +76,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.formField || {})
   size: props.size,
   required: props.required,
   orientation: props.orientation
-}))
+} as any))
 
 const formErrors = inject<Ref<FormError[]> | null>(formErrorsInjectionKey, null)
 

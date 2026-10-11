@@ -6,7 +6,8 @@
   "dependencies": [],
   "registryDependencies": [
     "@ui-kit/utils",
-    "@ui-kit/slider"
+    "@ui-kit/slider",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

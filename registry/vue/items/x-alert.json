@@ -9,7 +9,8 @@
   "registryDependencies": [
     "@ui-kit/utils",
     "@ui-kit/alert",
-    "@ui-kit/x-button"
+    "@ui-kit/x-button",
+    "@ui-kit/nuxt-base"
   ],
   "files": [
     {

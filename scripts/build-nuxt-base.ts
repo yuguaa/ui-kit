@@ -1025,6 +1025,8 @@ export default tv({ extend: ${extendExpr} })
   applyMenuDateTypePatches();
   applyTableLinkNavTypePatches();
   applyKitTypePatches();
+  applyUploadFormMiscTypePatches();
+  applyLibInfraTypePatches();
 
   console.log(`nuxt-base generated: ${themeNames.length} themes, ${COMPONENTS.length} components`);
 }
@@ -1571,4 +1573,237 @@ function applyKitTypePatches() {
     ["cell.column.(columnDef.meta as any)", "(cell.column.columnDef.meta as any)"],
     ["header.column.(columnDef.meta as any)", "(header.column.columnDef.meta as any)"],
   ]);
+}
+
+/** 上传表单杂项类组件类型补丁（上传表单杂项分组）
+ * - XFileUpload / XColorPicker / XFormField / XFieldGroup / XPinInput / XScrollArea / XSplitter：
+ *   tv() 实参成员类型来自宽泛 string 推断，与主题 variants 联合类型不匹配，入参对象整体断言 as any（仅类型层）
+ * - XFileUpload：插槽 props 的 ui 入参与 ComponentUI 记录类型不匹配，:ui 绑定断言为 any
+ * - XPinInput / XSplitter：产物 Props 接口缺失原始源码的 reka 透传成员（disabled/placeholder/modelValue/autoSaveId/hitAreaMargins 等），
+ *   补索引签名宽松承载，reactivePick 与模板访问恢复合法
+ * - XScrollArea：useScrollShadow 的 orientation 入参期望字面量联合类型，getter 返回值断言 any；virtualize options 的 getItemKey 缺失，访问断言 any
+ */
+function applyUploadFormMiscTypePatches() {
+  const patch = (file: string, replacements: Array<[string, string]>) => {
+    const path = join(OUT_KIT, file);
+    if (!existsSync(path)) return;
+    let content = readFileSync(path, "utf8");
+    for (const [from, to] of replacements) {
+      if (!content.includes(from)) {
+        console.log(`  - upload-form-misc patch miss: ${file}: ${JSON.stringify(from.slice(0, 60))}`);
+        continue;
+      }
+      content = content.split(from).join(to);
+    }
+    writeFileSync(path, content);
+  };
+
+  /* XFileUpload：tv() 入参对象整体断言 + 插槽 props ui 断言 */
+  patch("XFileUpload.vue", [
+    [
+      "  multiple: props.multiple,\n  highlight: highlight.value,\n  disabled: disabled.value\n}))",
+      "  multiple: props.multiple,\n  highlight: highlight.value,\n  disabled: disabled.value\n} as any))",
+    ],
+    ["<slot name=\"file-leading\" :file=\"file\" :index=\"index\" :ui=\"ui\">", "<slot name=\"file-leading\" :file=\"file\" :index=\"index\" :ui=\"(ui as any)\">"],
+    ["<slot name=\"file-trailing\" :file=\"file\" :index=\"index\" :ui=\"ui\" :remove-file=\"removeFile\">", "<slot name=\"file-trailing\" :file=\"file\" :index=\"index\" :ui=\"(ui as any)\" :remove-file=\"removeFile\">"],
+    ["<slot :open=\"open\" :remove-file=\"removeFile\" :ui=\"ui\">", "<slot :open=\"open\" :remove-file=\"removeFile\" :ui=\"(ui as any)\">"],
+    ["<slot name=\"leading\" :ui=\"ui\">", "<slot name=\"leading\" :ui=\"(ui as any)\">"],
+  ]);
+
+  /* XColorPicker：tv() 入参对象整体断言 */
+  patch("XColorPicker.vue", [[
+    "const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.colorPicker || {}) })({\n  size: props.size\n}))",
+    "const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.colorPicker || {}) })({\n  size: props.size\n} as any))",
+  ]]);
+
+  /* XFormField：tv() 入参对象整体断言 */
+  patch("XFormField.vue", [[
+    "const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.formField || {}) })({\n  size: props.size,\n  required: props.required,\n  orientation: props.orientation\n}))",
+    "const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.formField || {}) })({\n  size: props.size,\n  required: props.required,\n  orientation: props.orientation\n} as any))",
+  ]]);
+
+  /* XFieldGroup：模板 tv() 入参对象整体断言 */
+  patch("XFieldGroup.vue", [[
+    ":class=\"ui({ orientation: props.orientation, class: [props.ui?.base, props.class] })\"",
+    ":class=\"ui({ orientation: props.orientation, class: [props.ui?.base, props.class] } as any)\"",
+  ]]);
+
+  /* XPinInput：Props 接口补索引签名 + tv() 入参对象整体断言 */
+  patch("XPinInput.vue", [
+    [
+      "  separator?: number | number[]\n  class?: any\n  ui?: PinInput['slots']\n}",
+      "  separator?: number | number[]\n  class?: any\n  ui?: PinInput['slots']\n  /** 类型修补：reka 透传与 useFormField 所需成员（disabled/placeholder/modelValue/defaultValue 等）经索引签名宽松承载 */\n  [key: string]: any\n}",
+    ],
+    [
+      "  fixed: props.fixed\n}))",
+      "  fixed: props.fixed\n} as any))",
+    ],
+  ]);
+
+  /* XScrollArea：tv() 入参整体断言 + orientation getter 断言 + getItemKey 访问断言 */
+  patch("XScrollArea.vue", [
+    [
+      "  orientation: props.orientation,\n  externalScroll: isExternalScroll.value\n}))",
+      "  orientation: props.orientation,\n  externalScroll: isExternalScroll.value\n} as any))",
+    ],
+    ["      orientation: () => props.orientation ?? 'vertical',", "      orientation: () => (props.orientation ?? 'vertical') as any,"],
+    [
+      "  if (virtualizerProps.value.getItemKey) {\n    return virtualizerProps.value.getItemKey(index)",
+      "  if ((virtualizerProps.value as any).getItemKey) {\n    return (virtualizerProps.value as any).getItemKey(index)",
+    ],
+  ]);
+
+  /* XSplitter：Props 接口补索引签名 + tv() 入参整体断言 + direction 模板断言 */
+  patch("XSplitter.vue", [
+    [
+      "  disabled?: boolean\n  class?: any\n  ui?: Splitter['slots']\n}",
+      "  disabled?: boolean\n  class?: any\n  ui?: Splitter['slots']\n  /** 类型修补：reka 透传成员（autoSaveId/keyboardResizeBy/storage/hitAreaMargins 等）经索引签名宽松承载 */\n  [key: string]: any\n}",
+    ],
+    [
+      "  orientation: props.orientation\n}))",
+      "  orientation: props.orientation\n} as any))",
+    ],
+    ["<SplitterGroup v-bind=\"rootProps\" :direction=\"props.orientation!\"", "<SplitterGroup v-bind=\"rootProps\" :direction=\"(props.orientation! as any)\""],
+  ]);
+}
+
+/** lib 基础设施残余类型补丁（agent 4 分组：lib 残余）
+ * - theme/*.ts：Nuxt 源码引用 '../module' 的 ModuleOptions，本地无 module.ts，改指 types/module-options
+ * - ui/index.ts：重写为 camelCase 键 barrel，对齐 Nuxt templates.ts 的 #build/ui 结构
+ * - types/import-meta.d.ts：补 import.meta.client / import.meta.dev 全局声明（Nuxt 构建期注入，vue-tsc 本地校验需要）
+ * - imports.ts：useCookie 替身签名补可选 options 参数（useResizable 按 Nuxt API 传第二参，仅类型层放行）
+ * - utils/search.ts：fuse.js 未随包安装，FuseResult / FuseResultMatch 用本地宽松类型替代
+ * - utils/ai.ts：ai SDK 未随包安装，UIMessage 用本地宽松类型替代
+ * - types/form.ts / utils/form.ts：superstruct 与 @standard-schema/spec 未随包安装，用本地结构类型替代
+ * - composables/useOverlay.ts：vue-component-type-helpers 未随包安装，ComponentProps / ComponentEmit 用本地宽松类型替代
+ * - types/tv.ts：TVCompoundVariants / TVDefaultVariants 的 object 实参不满足 TVVariantsShape 约束，放宽为 any
+ * 均为类型层修复，不改运行时行为。
+ */
+function applyLibInfraTypePatches() {
+  const patch = (relPath: string, replacements: Array<[string, string]>) => {
+    const path = join(OUT_BASE, relPath);
+    if (!existsSync(path)) return;
+    let content = readFileSync(path, "utf8");
+    for (const [from, to] of replacements) {
+      if (!content.includes(from)) {
+        console.log(`  - lib-infra patch miss: ${relPath}: ${JSON.stringify(from.slice(0, 60))}`);
+        continue;
+      }
+      content = content.split(from).join(to);
+    }
+    writeFileSync(path, content);
+  };
+
+  /* theme：ModuleOptions 引指本地替身 */
+  const themeDir = join(OUT_BASE, "theme");
+  if (existsSync(themeDir)) {
+    for (const themeFile of readdirSync(themeDir).filter((f) => f.endsWith(".ts"))) {
+      const themePath = join(themeDir, themeFile);
+      const themeContent = readFileSync(themePath, "utf8");
+      if (!themeContent.includes("from '../module'")) continue;
+      writeFileSync(themePath, themeContent.split("from '../module'").join("from '../types/module-options'"));
+    }
+  }
+
+  /* ui barrel：camelCase 键对齐 Nuxt #build/ui 结构 */
+  const uiDir = join(OUT_BASE, "ui");
+  if (existsSync(uiDir)) {
+    const uiBarrel = readdirSync(uiDir)
+      .filter((f) => f.endsWith(".ts") && f !== "index.ts")
+      .map((f) => {
+        const name = f.slice(0, -3);
+        const key = name.split("-").map((part, index) => (index === 0 ? part : part[0]!.toUpperCase() + part.slice(1))).join("");
+        return `export { default as ${key} } from './${name}'`;
+      })
+      .join("\n") + "\n";
+    writeFileSync(join(uiDir, "index.ts"), uiBarrel);
+  }
+
+  /* import.meta 全局声明（Nuxt 构建期注入，本地由 vue-tsc 消费） */
+  writeFileSync(join(OUT_BASE, "types", "import-meta.d.ts"), `interface ImportMeta {
+  readonly client?: boolean
+  readonly dev?: boolean
+}
+`);
+
+  /* useCookie 替身签名放宽（useResizable 按 Nuxt API 传 options 第二参） */
+  patch("imports.ts", [["export function useCookie<T>(name: string) {", "export function useCookie<T>(name: string, _options?: Record<string, any>) {"]]);
+
+  /* fuse.js 本地宽松类型 */
+  patch("utils/search.ts", [[
+    "import type { FuseResult, FuseResultMatch } from 'fuse.js'",
+    `/** fuse.js 未随包安装，本地宽松类型替代（仅类型层） */
+type FuseResult<T> = { matches?: readonly FuseResultMatch[] }
+type FuseResultMatch = { key?: string; value: string; indices: ReadonlyArray<readonly [number, number]> }`,
+  ]]);
+
+  /* ai SDK 本地宽松类型 */
+  patch("utils/ai.ts", [[
+    "import type { UIMessage } from 'ai'",
+    `/** ai SDK 未随包安装，本地宽松类型替代（仅类型层） */
+type UIMessage = { id: string; parts: Array<{ type: string; text?: string; state?: string }> }`,
+  ]]);
+
+  /* superstruct / @standard-schema/spec 本地结构类型 */
+  patch("types/form.ts", [
+    [
+      `import type { StandardSchemaV1 } from '@standard-schema/spec'
+import type { ComputedRef, DeepReadonly, Ref } from 'vue'
+import type { GetObjectField } from './utils'
+import type { Struct as SuperstructSchema } from 'superstruct'`,
+      `import type { ComputedRef, DeepReadonly, Ref } from 'vue'
+import type { GetObjectField } from './utils'
+
+/** @standard-schema/spec 未随包安装，本地结构类型替代（仅类型层） */
+export interface StandardSchemaV1<I = unknown, O = I> {
+  readonly '~standard': {
+    readonly version: 1
+    readonly vendor: string
+    readonly validate: (value: unknown) => StandardSchemaV1.Result<O> | Promise<StandardSchemaV1.Result<O>>
+  }
+}
+
+export namespace StandardSchemaV1 {
+  export type Result<Output> = { issues?: Issue[]; value: Output } | { issues: Issue[] }
+
+  export interface Issue {
+    readonly message: string
+    readonly path?: ReadonlyArray<PropertyKey | { readonly key: PropertyKey }>
+  }
+
+  export type InferInput<S> = S extends StandardSchemaV1<infer I, any> ? I : never
+  export type InferOutput<S> = S extends StandardSchemaV1<any, infer O> ? O : never
+}
+
+/** superstruct 未随包安装，本地结构类型替代（仅类型层） */
+export interface Struct<S = any, T = any> {
+  schema: S
+  coercer: (value: unknown) => T
+  validator: (value: unknown, context: unknown) => unknown
+  refiner: (value: unknown, context: unknown) => unknown
+  validate: (value: unknown) => [error: { failures: () => Array<{ message: string; path: Array<string | number> }> } | undefined, result?: T]
+}`,
+    ],
+    ["= | SuperstructSchema<any, any>", "= | Struct<any, any>"],
+    ["Schema extends SuperstructSchema<infer I, any> ? I", "Schema extends Struct<infer I, any> ? I"],
+    ["Schema extends SuperstructSchema<infer O, any> ? O", "Schema extends Struct<infer O, any> ? O"],
+  ]);
+
+  patch("utils/form.ts", [[
+    `import type { StandardSchemaV1 } from '@standard-schema/spec'
+import type { Struct } from 'superstruct'
+import type { FormSchema, ValidateReturnSchema } from '../types/form'`,
+    `import type { FormSchema, StandardSchemaV1, Struct, ValidateReturnSchema } from '../types/form'`,
+  ]]);
+
+  /* vue-component-type-helpers 本地宽松类型 */
+  patch("composables/useOverlay.ts", [[
+    "import type { ComponentProps, ComponentEmit } from 'vue-component-type-helpers'",
+    `/** vue-component-type-helpers 未随包安装，本地宽松类型替代（仅类型层） */
+type ComponentProps<T extends Component = Component> = Record<string, any>
+type ComponentEmit<T extends Component = Component> = (event: string, ...args: any[]) => void`,
+  ]]);
+
+  /* tv 配置类型：object 实参放宽为 any */
+  patch("types/tv.ts", [[", object, undefined>", ", any, undefined>"]]);
 }
