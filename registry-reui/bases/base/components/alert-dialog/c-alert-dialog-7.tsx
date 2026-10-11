@@ -1,3 +1,7 @@
+"use client"
+
+import { useState } from "react"
+
 import {
   AlertDialog,
   AlertDialogAction,
@@ -14,8 +18,11 @@ import { Label } from "@/registry/bases/base/ui/label"
 import { IconPlaceholder } from "@/app/(create)/components/icon-placeholder"
 
 export default function Pattern() {
+  // The base AlertDialogAction does not close the dialog on its own.
+  const [open, setOpen] = useState(false)
+
   return (
-    <AlertDialog>
+    <AlertDialog open={open} onOpenChange={setOpen}>
       <AlertDialogTrigger
         render={<Button variant="outline">Task Status</Button>}
       />
@@ -52,7 +59,9 @@ export default function Pattern() {
           </div>
           <div className="flex items-center gap-2">
             <AlertDialogCancel>Cancel</AlertDialogCancel>
-            <AlertDialogAction>Confirm</AlertDialogAction>
+            <AlertDialogAction onClick={() => setOpen(false)}>
+              Confirm
+            </AlertDialogAction>
           </div>
         </AlertDialogFooter>
       </AlertDialogContent>

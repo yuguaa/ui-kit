@@ -8,7 +8,7 @@
 [![React](https://img.shields.io/badge/React-18%2B-blue?logo=react)](https://react.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4%2B-blue?logo=tailwindcss)](https://tailwindcss.com/)
 
-**Go beyond AI defaults and streamline high-end shadcn projects faster without touching the essentials. 1,175 free components and composed examples built with realistic dashboard layouts.**
+**Go beyond AI defaults and streamline high-end shadcn projects faster without touching the essentials. 1,241 free components and composed examples built with realistic dashboard layouts.**
 
 [Explore the component catalog](https://reui.io/components?utm_source=github&utm_medium=readme) · [Component Docs](https://reui.io/docs?utm_source=github&utm_medium=readme) · [ReUI Pro](https://reui.io/pricing?utm_source=github&utm_medium=readme) · [GitHub](https://github.com/keenthemes/reui)
 
@@ -18,21 +18,21 @@
 
 ## About ReUI
 
-ReUI is a free, open-source component library for the [shadcn/ui](https://ui.shadcn.com/) ecosystem. Explore 1,175 production-ready components across 83 categories, each shown inside realistic dashboard layouts (not isolated demos), and copy them directly into your React projects.
+ReUI is a free, open-source component library for the [shadcn/ui](https://ui.shadcn.com/) ecosystem. Explore 1,241 production-ready components across 86 categories, each shown inside realistic dashboard layouts (not isolated demos), and copy them directly into your React projects.
 
 ### Why ReUI?
 
-- **24 In-House component primitives not in default shadcn/ui** - Data Grid, Event Calendar, Gantt, Kanban, Filters, Cascader, Code Block, Sortable, Timeline, Stepper, Tree, and more, built for real-world dashboard requirements
-- **1,175 registry components** - Reusable examples composed from shadcn/ui primitives into real-world product flows
-- **Dual Component library support** - Radix UI and Base UI versions for all 24 in-house components
+- **27 In-House component primitives not in default shadcn/ui** - Data Grid, Event Calendar, Gantt, Kanban, Filters, Cascader, Code Block, Sortable, Timeline, Stepper, Tree, and more, built for real-world dashboard requirements
+- **1,241 registry components** - Reusable examples composed from shadcn/ui primitives into real-world product flows
+- **Dual Component library support** - Radix UI and Base UI versions for all 27 in-house components
 - **Compatible with Shadcn Create styles and settings** - Vega, Nova, Maia, Lyra & Mira.
 
 ---
 
 ## Key Features
 
-- **1,175 free examples** - Production-ready, copy-paste layouts for dashboards, forms, tables, and more
-- **24 In-house Components** - Custom in-house components not found in base shadcn/ui
+- **1,241 free examples** - Production-ready, copy-paste layouts for dashboards, forms, tables, and more
+- **27 In-house Components** - Custom in-house components not found in base shadcn/ui
 - **Copy-and-Own Model** - No npm package, no lock-in. Own the source code in your repo
 - **Dual API** - Radix UI and Base UI versions for all in-house components
 - **Shadcn Compatible** - Built on shadcn primitives and Tailwind CSS
@@ -47,16 +47,16 @@ ReUI is a free, open-source component library for the [shadcn/ui](https://ui.sha
 The ReUI [React data grid](https://reui.io/docs/components/base/data-grid?utm_source=github&utm_medium=readme) is a free shadcn/ui component on TanStack Table v9 and TanStack Virtual, styled with your own Tailwind CSS tokens, in Radix UI and Base UI versions. It covers sorting, filtering, pagination, column pinning, resizing and reordering, row and column drag and drop, row pinning, tree rows, expandable detail rows, spreadsheet-style cell selection with copy and paste, and row and column virtualization for large datasets.
 
 - **34 free examples** - [Data grid examples](https://reui.io/components/data-grid?utm_source=github&utm_medium=readme)
-- **39 Pro blocks** - [Data grid blocks](https://reui.io/blocks/data-grid?utm_source=github&utm_medium=readme)
+- **42 Pro blocks** - [Data grid blocks](https://reui.io/blocks/data-grid?utm_source=github&utm_medium=readme)
 - **Install** - `npx shadcn@latest add @reui/data-grid`
 
 ---
 
 ## Custom In-House Components
 
-ReUI provides in total: **24 custom in-house components** not found in base shadcn/ui.
+ReUI provides in total: **27 custom in-house components** not found in base shadcn/ui.
 
-### In-House Components (24)
+### In-House Components (27)
 
 Custom-built, shadcn-compatible components not available in base shadcn/ui. Each is maintained by the Keenthemes team, ships full component API documentation, props reference, and usage examples, and is available in both Radix UI and Base UI flavors at [reui.io/docs](https://reui.io/docs?utm_source=github&utm_medium=readme).
 
@@ -67,9 +67,12 @@ Custom-built, shadcn-compatible components not available in base shadcn/ui. Each
 | **Badge** | 25 | Status indicators with multiple styles, sizes, and dot variants | [Preview](https://reui.io/components/badge?utm_source=github&utm_medium=readme) | [Radix UI](https://reui.io/docs/components/radix/badge?utm_source=github&utm_medium=readme) | [Base UI](https://reui.io/docs/components/base/badge?utm_source=github&utm_medium=readme) |
 | **Cascader** | 21 | Nested multi-level combobox with drill-down, columns and tree modes, breadcrumbs, search, async levels and custom rows | [Preview](https://reui.io/components/cascader?utm_source=github&utm_medium=readme) | [Radix UI](https://reui.io/docs/components/radix/cascader?utm_source=github&utm_medium=readme) | [Base UI](https://reui.io/docs/components/base/cascader?utm_source=github&utm_medium=readme) |
 | **Code Block** | 27 | Shiki-highlighted code block for docs, diff review, AI chat and streaming agent output | [Preview](https://reui.io/components/code-block?utm_source=github&utm_medium=readme) | [Radix UI](https://reui.io/docs/components/radix/code-block?utm_source=github&utm_medium=readme) | [Base UI](https://reui.io/docs/components/base/code-block?utm_source=github&utm_medium=readme) |
+| **Color Picker** | 15 | Color picker with a saturation area, hue and opacity sliders, preset swatches, an eye dropper and HEX, RGB, HSL, HSB and OKLCH values, in a popover or inline | [Preview](https://reui.io/components/color-picker?utm_source=github&utm_medium=readme) | [Radix UI](https://reui.io/docs/components/radix/color-picker?utm_source=github&utm_medium=readme) | [Base UI](https://reui.io/docs/components/base/color-picker?utm_source=github&utm_medium=readme) |
 | **Data Grid** | 34 | Advanced table powered by TanStack Table + Virtual with DnD, pinning, resizing, and infinite scroll | [Preview](https://reui.io/components/data-grid?utm_source=github&utm_medium=readme) | [Radix UI](https://reui.io/docs/components/radix/data-grid?utm_source=github&utm_medium=readme) | [Base UI](https://reui.io/docs/components/base/data-grid?utm_source=github&utm_medium=readme) |
 | **Date Selector** | 4 | Flexible date range picker with calendar UI and preset ranges | [Preview](https://reui.io/components/date-selector?utm_source=github&utm_medium=readme) | [Radix UI](https://reui.io/docs/components/radix/date-selector?utm_source=github&utm_medium=readme) | [Base UI](https://reui.io/docs/components/base/date-selector?utm_source=github&utm_medium=readme) |
+| **Emoji Picker** | 8 | Emoji picker with search, shortcodes, skin tones, frequently used and custom emoji, a virtualized grid and names in 28 languages, in a popover or inline | [Preview](https://reui.io/components/emoji-picker?utm_source=github&utm_medium=readme) | [Radix UI](https://reui.io/docs/components/radix/emoji-picker?utm_source=github&utm_medium=readme) | [Base UI](https://reui.io/docs/components/base/emoji-picker?utm_source=github&utm_medium=readme) |
 | **Event Calendar** | 5 | Headless-first calendar with month, week, day, N-day, and agenda views, drag-and-drop scheduling, recurring events, time zones, and an external CRUD contract | [Preview](https://reui.io/components/event-calendar?utm_source=github&utm_medium=readme) | [Radix UI](https://reui.io/docs/components/radix/event-calendar?utm_source=github&utm_medium=readme) | [Base UI](https://reui.io/docs/components/base/event-calendar?utm_source=github&utm_medium=readme) |
+| **File Type** | 14 | File type icon for 99 extensions in brand and family colors, outline, solid, light and mono variants, 6 sizes and resolution from a file name, URL or MIME type | [Preview](https://reui.io/components/file-type?utm_source=github&utm_medium=readme) | [Radix UI](https://reui.io/docs/components/radix/file-type?utm_source=github&utm_medium=readme) | [Base UI](https://reui.io/docs/components/base/file-type?utm_source=github&utm_medium=readme) |
 | **Filters** | 12 | Stepped filter builder with nested attributes, popover value editors and a boolean query tree, in chip or advanced chrome | [Preview](https://reui.io/components/filters?utm_source=github&utm_medium=readme) | [Radix UI](https://reui.io/docs/components/radix/filters?utm_source=github&utm_medium=readme) | [Base UI](https://reui.io/docs/components/base/filters?utm_source=github&utm_medium=readme) |
 | **Frame** | 19 | Card-like wrapper for panels and content areas | [Preview](https://reui.io/components/frame?utm_source=github&utm_medium=readme) | [Radix UI](https://reui.io/docs/components/radix/frame?utm_source=github&utm_medium=readme) | [Base UI](https://reui.io/docs/components/base/frame?utm_source=github&utm_medium=readme) |
 | **Gantt** | 7 | Headless-first gantt with split tree and timeline panes, day-to-year scales, zoom, drag and resize scheduling, progress, summary rollups, and an external CRUD contract | [Preview](https://reui.io/components/gantt?utm_source=github&utm_medium=readme) | [Radix UI](https://reui.io/docs/components/radix/gantt?utm_source=github&utm_medium=readme) | [Base UI](https://reui.io/docs/components/base/gantt?utm_source=github&utm_medium=readme) |
@@ -82,7 +85,7 @@ Custom-built, shadcn-compatible components not available in base shadcn/ui. Each
 | **Scrollspy** | 2 | Auto-highlighting navigation that tracks scroll position across sections | [Preview](https://reui.io/components/scrollspy?utm_source=github&utm_medium=readme) | [Radix UI](https://reui.io/docs/components/radix/scrollspy?utm_source=github&utm_medium=readme) | [Base UI](https://reui.io/docs/components/base/scrollspy?utm_source=github&utm_medium=readme) |
 | **Signature Pad** | 12 | Signature capture with pressure or velocity sized ink, pen and touch input, undo and redo, native form fields, and PNG, JPEG, SVG or JSON export | [Preview](https://reui.io/components/signature-pad?utm_source=github&utm_medium=readme) | [Radix UI](https://reui.io/docs/components/radix/signature-pad?utm_source=github&utm_medium=readme) | [Base UI](https://reui.io/docs/components/base/signature-pad?utm_source=github&utm_medium=readme) |
 | **Sortable** | 8 | Drag-and-drop list reordering with DnD Kit: vertical, grid, and nested layouts | [Preview](https://reui.io/components/sortable?utm_source=github&utm_medium=readme) | [Radix UI](https://reui.io/docs/components/radix/sortable?utm_source=github&utm_medium=readme) | [Base UI](https://reui.io/docs/components/base/sortable?utm_source=github&utm_medium=readme) |
-| **Stepper** | 15 | Multi-step forms and onboarding wizards with React Hook Form per-step validation | [Preview](https://reui.io/components/stepper?utm_source=github&utm_medium=readme) | [Radix UI](https://reui.io/docs/components/radix/stepper?utm_source=github&utm_medium=readme) | [Base UI](https://reui.io/docs/components/base/stepper?utm_source=github&utm_medium=readme) |
+| **Stepper** | 44 | Multi-step forms and onboarding wizards with React Hook Form per-step validation | [Preview](https://reui.io/components/stepper?utm_source=github&utm_medium=readme) | [Radix UI](https://reui.io/docs/components/radix/stepper?utm_source=github&utm_medium=readme) | [Base UI](https://reui.io/docs/components/base/stepper?utm_source=github&utm_medium=readme) |
 | **Time Picker** | 13 | Time picker with hour, minute, second and AM/PM columns in a popover or inline, text entry, steps, time bounds, form fields and i18n labels | [Preview](https://reui.io/components/time-picker?utm_source=github&utm_medium=readme) | [Radix UI](https://reui.io/docs/components/radix/time-picker?utm_source=github&utm_medium=readme) | [Base UI](https://reui.io/docs/components/base/time-picker?utm_source=github&utm_medium=readme) |
 | **Timeline** | 12 | Vertical and horizontal event timelines with rich content and status markers | [Preview](https://reui.io/components/timeline?utm_source=github&utm_medium=readme) | [Radix UI](https://reui.io/docs/components/radix/timeline?utm_source=github&utm_medium=readme) | [Base UI](https://reui.io/docs/components/base/timeline?utm_source=github&utm_medium=readme) |
 | **Tree** | 7 | Hierarchical data display built on Headless Tree with expand/collapse and keyboard navigation | [Preview](https://reui.io/components/tree?utm_source=github&utm_medium=readme) | [Radix UI](https://reui.io/docs/components/radix/tree?utm_source=github&utm_medium=readme) | [Base UI](https://reui.io/docs/components/base/tree?utm_source=github&utm_medium=readme) |
@@ -171,7 +174,7 @@ npx shadcn@latest add @reui/c-filters-5
 
 ### Quick Start
 
-1. **Browse the catalog** - Visit [reui.io/components](https://reui.io/components?utm_source=github&utm_medium=readme) to explore 1,175 composed examples (`c-*` blocks)
+1. **Browse the catalog** - Visit [reui.io/components](https://reui.io/components?utm_source=github&utm_medium=readme) to explore 1,241 composed examples (`c-*` blocks)
 2. **Copy code** - Each example includes a ready-to-use code snippet
 3. **Customize** - Modify with your Tailwind CSS tokens and design system
 4. **Own it** - The code lives in your repo, not a package
@@ -202,24 +205,23 @@ A one-time license then unlocks the premium catalog on the same shadcn/ui founda
 
 | Feature | Access | Description | Live preview & docs |
 |---------|--------|-------------|---------------------|
-| **629 Pro Blocks** | Pro | Full-page sections across Application, Data Grid, Solutions, eCommerce, Marketing, and AI & Agents, including Event Calendar, Gantt, and Kanban board layouts | [Blocks](https://reui.io/blocks?utm_source=github&utm_medium=readme) · [Application](https://reui.io/blocks/application?utm_source=github&utm_medium=readme) · [Data Grid](https://reui.io/blocks/data-grid?utm_source=github&utm_medium=readme) · [Solutions](https://reui.io/blocks/solutions?utm_source=github&utm_medium=readme) · [eCommerce](https://reui.io/blocks/ecommerce?utm_source=github&utm_medium=readme) · [Marketing](https://reui.io/blocks/marketing?utm_source=github&utm_medium=readme) · [AI & Agents](https://reui.io/blocks/ai-agents?utm_source=github&utm_medium=readme) |
-| **638 Motion Icons** | Ultimate | Hand-crafted icons in 4 styles (Outline, Solid, Duotone, Filled) with hover animation, 2,552 variants | [Icons catalog](https://reui.io/icons?utm_source=github&utm_medium=readme) |
+| **636 Pro Blocks** | Pro | Full-page sections across Application, Data Grid, Charts, Solutions, AI & Agents, eCommerce, and Marketing, including Event Calendar, Gantt, and Kanban board layouts | [Blocks](https://reui.io/blocks?utm_source=github&utm_medium=readme) · [Application](https://reui.io/blocks/application?utm_source=github&utm_medium=readme) · [Data Grid](https://reui.io/blocks/data-grid?utm_source=github&utm_medium=readme) · [Charts](https://reui.io/blocks/chart?utm_source=github&utm_medium=readme) · [Solutions](https://reui.io/blocks/solutions?utm_source=github&utm_medium=readme) · [AI & Agents](https://reui.io/blocks/ai-agents?utm_source=github&utm_medium=readme) · [eCommerce](https://reui.io/blocks/ecommerce?utm_source=github&utm_medium=readme) · [Marketing](https://reui.io/blocks/marketing?utm_source=github&utm_medium=readme) |
+| **667 Motion Icons** | Ultimate | Hand-crafted icons in 4 styles (Outline, Solid, Duotone, Filled) with hover animation, 2,668 variants | [Icons catalog](https://reui.io/icons?utm_source=github&utm_medium=readme) |
 | **MCP Server** | Free | Connect any coding agent (Claude, Codex, Cursor, v0, Lovable, Replit, OpenCode, VS Code, Zed) to the ReUI registry for live search, real component APIs and one-command installs | [MCP guide](https://reui.io/mcp?utm_source=github&utm_medium=readme) |
 | **Agent Skill** | Free | One command teaches your agent the ReUI workflow - search, install, read the real API, adapt by reuse | [Agent skills](https://reui.io/docs/agent-skills?utm_source=github&utm_medium=readme) |
 | **Workspace** | Pro | ReUI account with favorites, collections, and team access | [Sign in](https://reui.io/account?utm_source=github&utm_medium=readme) |
 
-### Pro Block Categories (65)
+### Pro Block Categories (73)
 
 Every Pro category in the catalog, with its current block count. Blocks are full-page sections built on the same free primitives in this repo - [browse them all](https://reui.io/blocks?utm_source=github&utm_medium=readme).
 
-#### Application (344 blocks)
+#### Application (301 blocks)
 
 | Category | Blocks | Description | Live preview |
 |----------|--------|-------------|--------------|
-| **App Shell** | 31 | App shell layouts with sidebar, rail, or top bar navigation for dashboards, settings panels, and multi-page apps | [App Shell blocks](https://reui.io/blocks/application/app-shell?utm_source=github&utm_medium=readme) |
+| **App Shell** | 35 | App shell layouts with sidebar, rail, or top bar navigation for dashboards, settings panels, and multi-page apps | [App Shell blocks](https://reui.io/blocks/application/app-shell?utm_source=github&utm_medium=readme) |
 | **Auth** | 20 | Login, register, forgot password, and two-factor authentication page layouts | [Auth blocks](https://reui.io/blocks/application/auth?utm_source=github&utm_medium=readme) |
 | **Card** | 43 | Card components for content display, data summaries, and interactive elements | [Card blocks](https://reui.io/blocks/application/card?utm_source=github&utm_medium=readme) |
-| **Chart** | 47 | Chart components and layouts with bar, line, pie, and area charts for data storytelling | [Chart blocks](https://reui.io/blocks/application/chart?utm_source=github&utm_medium=readme) |
 | **Dashboard** | 8 | Dashboard components and layouts that combine stats, charts, and tables into a complete overview screen | [Dashboard blocks](https://reui.io/blocks/application/dashboard?utm_source=github&utm_medium=readme) |
 | **Dialog** | 14 | Dialog components for modal windows, alerts, confirmations, and content overlays | [Dialog blocks](https://reui.io/blocks/application/dialog?utm_source=github&utm_medium=readme) |
 | **Empty State** | 14 | Empty state screens and no-data placeholders with recovery actions, onboarding prompts, and contextual guidance | [Empty State blocks](https://reui.io/blocks/application/empty-state?utm_source=github&utm_medium=readme) |
@@ -241,11 +243,12 @@ Every Pro category in the catalog, with its current block count. Blocks are full
 | **Whiteboard** | 2 | Excalidraw whiteboards for shadcn/ui: design reviews with export and versions, and sprint planning with capacity lanes | [Whiteboard blocks](https://reui.io/blocks/application/whiteboard?utm_source=github&utm_medium=readme) |
 | **Wizard** | 7 | Multi-step form flows with progress indicators, validation, and step navigation | [Wizard blocks](https://reui.io/blocks/application/wizard?utm_source=github&utm_medium=readme) |
 
-#### Data Grid (39 blocks)
+#### Data Grid (42 blocks)
 
 | Category | Blocks | Description | Live preview |
 |----------|--------|-------------|--------------|
 | **Base** | 8 | Complete table screens with toolbar filters and pagination for CRM, support, team, project, and pricing data | [Base blocks](https://reui.io/blocks/data-grid/base?utm_source=github&utm_medium=readme) |
+| **Advanced** | 3 | Analytics grids with in-cell charts, KPI rollups, a tree view, full CRUD and tabbed detail sheets | [Advanced blocks](https://reui.io/blocks/data-grid/advanced?utm_source=github&utm_medium=readme) |
 | **Columns** | 5 | Column visibility, pinning, resizing, density, and settings controls | [Columns blocks](https://reui.io/blocks/data-grid/columns?utm_source=github&utm_medium=readme) |
 | **Drag & Drop** | 4 | Drag-and-drop row and column reordering with sortable handles | [Drag & Drop blocks](https://reui.io/blocks/data-grid/drag-drop?utm_source=github&utm_medium=readme) |
 | **Editing** | 6 | Inline create, edit, and delete cells for full CRUD workflows | [Editing blocks](https://reui.io/blocks/data-grid/editing?utm_source=github&utm_medium=readme) |
@@ -253,6 +256,19 @@ Every Pro category in the catalog, with its current block count. Blocks are full
 | **Filtering** | 4 | Search, faceted filters, filter builders, and status tab toolbars | [Filtering blocks](https://reui.io/blocks/data-grid/filtering?utm_source=github&utm_medium=readme) |
 | **Grouping** | 7 | Rows grouped into banded sections with stage and category headers | [Grouping blocks](https://reui.io/blocks/data-grid/grouping?utm_source=github&utm_medium=readme) |
 | **Virtualization** | 2 | Virtualized rendering for large datasets with smooth scrolling | [Virtualization blocks](https://reui.io/blocks/data-grid/virtualization?utm_source=github&utm_medium=readme) |
+
+#### Charts (47 blocks)
+
+| Category | Blocks | Description | Live preview |
+|----------|--------|-------------|--------------|
+| **Area Chart** | 3 | Area chart cards with gradient fills, stacked series, period tabs and hover tooltips for trends over time | [Area Chart blocks](https://reui.io/blocks/chart/area-chart?utm_source=github&utm_medium=readme) |
+| **Bar Chart** | 14 | Bar and column charts, grouped and stacked bars, lollipop stems and segmented bar meters for comparing values | [Bar Chart blocks](https://reui.io/blocks/chart/bar-chart?utm_source=github&utm_medium=readme) |
+| **Composed Chart** | 5 | Composed charts that layer areas and lines on one axis, with reference lines, goals and release markers | [Composed Chart blocks](https://reui.io/blocks/chart/composed-chart?utm_source=github&utm_medium=readme) |
+| **Line Chart** | 6 | Line chart cards with single and multi-series lines, dual axes, reference lines and metric switchers | [Line Chart blocks](https://reui.io/blocks/chart/line-chart?utm_source=github&utm_medium=readme) |
+| **Pie Chart** | 2 | Pie and donut chart cards with center totals, per-segment legends and period tabs for share of a whole | [Pie Chart blocks](https://reui.io/blocks/chart/pie-chart?utm_source=github&utm_medium=readme) |
+| **Radial Chart** | 3 | Radial gauges with semicircle and full arcs, segmented rings and status labels for progress toward a target | [Radial Chart blocks](https://reui.io/blocks/chart/radial-chart?utm_source=github&utm_medium=readme) |
+| **Sparkline** | 11 | KPI tiles and metric lists where each value pairs with a small line, area or bar sparkline and a delta | [Sparkline blocks](https://reui.io/blocks/chart/sparkline?utm_source=github&utm_medium=readme) |
+| **Status Tracker** | 3 | Per-row status trackers for run history, deploy stages and pipelines, with hover details and filters | [Status Tracker blocks](https://reui.io/blocks/chart/status-tracker?utm_source=github&utm_medium=readme) |
 
 #### Solutions (74 blocks)
 
@@ -268,6 +284,13 @@ Every Pro category in the catalog, with its current block count. Blocks are full
 | **Files** | 1 | File explorer, folder browsing, sharing, and storage management pages | [Files blocks](https://reui.io/blocks/solutions/files?utm_source=github&utm_medium=readme) |
 | **Inventory** | 11 | Stock, warehouse, reorder, movement, count, and supplier visibility pages | [Inventory blocks](https://reui.io/blocks/solutions/inventory?utm_source=github&utm_medium=readme) |
 | **Users** | 7 | Team, role, member, access, invite, and account governance pages | [Users blocks](https://reui.io/blocks/solutions/users?utm_source=github&utm_medium=readme) |
+
+#### AI & Agents (18 blocks)
+
+| Category | Blocks | Description | Live preview |
+|----------|--------|-------------|--------------|
+| **AI Chat** | 13 | Conversation surfaces for AI products, from full chat shells to embeddable threads, sheets, and launchers | [AI Chat blocks](https://reui.io/blocks/ai-agents/ai-chat?utm_source=github&utm_medium=readme) |
+| **Agent Activity** | 5 | Agent run views, from live step feeds and approvals to research traces, MCP call tables, and run reports | [Agent Activity blocks](https://reui.io/blocks/ai-agents/agent-activity?utm_source=github&utm_medium=readme) |
 
 #### eCommerce (87 blocks)
 
@@ -299,13 +322,6 @@ Every Pro category in the catalog, with its current block count. Blocks are full
 | **Hero** | 16 | Hero sections with announcement pills, two-tone headlines, dual calls to action, and framed product consoles | [Hero blocks](https://reui.io/blocks/marketing/hero?utm_source=github&utm_medium=readme) |
 | **How It Works** | 5 | How it works sections that walk a product in numbered steps, from step grids to tabs that swap a product console | [How It Works blocks](https://reui.io/blocks/marketing/how-it-works?utm_source=github&utm_medium=readme) |
 | **Pricing** | 8 | Pricing sections with plan tier columns, a monthly or yearly billing toggle, a featured plan, and per-seat team pricing | [Pricing blocks](https://reui.io/blocks/marketing/pricing?utm_source=github&utm_medium=readme) |
-
-#### AI & Agents (18 blocks)
-
-| Category | Blocks | Description | Live preview |
-|----------|--------|-------------|--------------|
-| **AI Chat** | 13 | Conversation surfaces for AI products, from full chat shells to embeddable threads, sheets, and launchers | [AI Chat blocks](https://reui.io/blocks/ai-agents/ai-chat?utm_source=github&utm_medium=readme) |
-| **Agent Activity** | 5 | Agent run views, from live step feeds and approvals to research traces, MCP call tables, and run reports | [Agent Activity blocks](https://reui.io/blocks/ai-agents/agent-activity?utm_source=github&utm_medium=readme) |
 
 **Set up the AI tooling** - [MCP Server & Agent Skill](https://reui.io/docs/agent-skills?utm_source=github&utm_medium=readme)
 

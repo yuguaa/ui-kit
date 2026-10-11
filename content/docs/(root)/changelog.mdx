@@ -3,6 +3,59 @@ title: Changelog
 description: Latest updates and announcements.
 ---
 
+## v2.8.0 - 11 October, 2026.
+
+Three new in-house primitives, Color Picker, Emoji Picker and File Type, 29 new Stepper examples and grouped Data Grid headers. This entry covers every free change since v2.7.0.
+
+**New: Shadcn Color Picker.**
+
+- New Color Picker primitive: a saturation area, hue, opacity and channel sliders, a hue wheel, preset swatches, an eye dropper and an input that reads any CSS color, in a popover or inline - [Docs](/docs/components/base/color-picker).
+- HEX, RGB, HSL, HSB and OKLCH values and fields, OKLCH colors outside sRGB kept exactly, a commit event once a drag ends, and native form fields - [Docs](/docs/components/base/color-picker#value).
+- Copy in the format on screen or with Cmd/Ctrl+C, contrast helpers that pick readable text for any color, and 15 examples per base - [Preview](/components/color-picker).
+
+**New: Shadcn Emoji Picker.**
+
+- New Emoji Picker primitive: search with shortcodes, skin tones, frequently used and custom image emoji, category tabs and a virtualized grid, in a popover or inline - [Docs](/docs/components/base/emoji-picker).
+- Names and keywords in 28 languages from a pinned emojibase release on jsDelivr, which a strict CSP allows by path or swaps for self-hosted data - [Docs](/docs/components/base/emoji-picker#data).
+- Hides emoji the device cannot draw, takes single, multiple or form field values, and ships 8 examples per base - [Preview](/components/emoji-picker).
+
+**New: Shadcn File Type.**
+
+- New File Type primitive: a file icon for 99 extensions with outline, solid, light and mono variants, and 6 sizes from 18px to 56px or any size from a Tailwind `size-*` class - [Docs](/docs/components/base/file-type).
+- Each format takes its brand color, else its family's, and neutral formats such as ZIP and TXT are gray, with labels legible down to 18px - [Preview](/components/file-type/c-file-type-5).
+- A custom icon on the page with `icon`, and a label badge restyled through `labelClassName` - [Docs](/docs/components/base/file-type#customization).
+- `getFileType` picks the type from a file name, path, URL or MIME type, and `getFileTypeCategory` groups files by family for lists and filters - [Docs](/docs/components/base/file-type).
+- 14 examples per base, taking the registry to 27 primitives - [Preview](/components/file-type).
+
+**Data Grid grouped headers:**
+
+- Grouped column headers merge into real `rowSpan` cells, with a rule under each group's own columns and column lines unbroken through every header row - [Docs](/docs/components/base/data-grid#grouped-headers).
+- New `meta.headerColSpan` spans one header cell over adjacent columns, as wide as their sum, with one resize handle on its end edge - [Docs](/docs/components/base/data-grid#grouped-headers).
+- Header cells carry `data-header-depth`, `data-header-id`, `data-group`, `data-merged` and `data-span` for styling each level - [Docs](/docs/components/base/data-grid#dom-attributes).
+
+**Breaking changes:**
+
+- The Data Grid column window's spacer cells carry `data-col-spacer="start"` or `"end"` instead of `data-slot="data-grid-table-virtual-col-spacer"`, so retarget any CSS that styled them - [Docs](/docs/components/base/data-grid).
+- Multi-level Data Grid headers render one `rowSpan` cell where empty placeholder cells used to stack above a column, so retarget CSS that styled those cells - [Docs](/docs/components/base/data-grid#grouped-headers).
+- In a multi-level Data Grid header, bottom-row and merged cells hold their content in a `data-slot="data-grid-table-head-cell-band"` wrapper, so retarget selectors on a header cell's direct children - [Docs](/docs/components/base/data-grid#dom-attributes).
+
+**New Free Components:**
+
+- 66 new free examples across Color Picker, Emoji Picker, File Type and Stepper, taking the free catalog from 1,175 to 1,241 - [Preview](/components).
+- 29 new Stepper examples, taking Stepper to 44 examples per base - [Preview](/components/stepper).
+- 13 Stepper route trackers and stage bars: delivery stops, truck and sea freight routes, shipment checkpoints, and chevron and breadcrumb steps - [Preview](/components/stepper/c-stepper-30).
+- 16 Stepper layouts with step cards, side rails, status lists, color bars and phase tracks, plus nested sub-steps for checks and tasks - [Preview](/components/stepper/c-stepper-43).
+
+**Fixes & Improvements:**
+
+- Scrolling sideways through a column-virtualized Data Grid holds 120 fps instead of 29, because a column entering view no longer restyles every cell - [Preview](/components/data-grid/c-data-grid-32).
+- New `data-dragging` attribute on the Data Grid row being dragged, the hook for styling the slot it leaves - [Docs](/docs/components/base/data-grid#dom-attributes).
+- With a sticky header and footer, the Data Grid's vertical scrollbar stops above the footer instead of covering the totals - [Docs](/docs/components/base/data-grid).
+- Pin and unpin work in the column virtualization example, and its column jump stays on the named metric after a pin changes - [Preview](/components/data-grid/c-data-grid-32).
+- Unpinning a Data Grid column from its header button keeps keyboard focus on that column's menu - [Docs](/docs/components/base/data-grid).
+- The Data Grid's column resize line sits on the column edge instead of inside the header cell, in left-to-right and right-to-left layouts - [Preview](/components/data-grid/c-data-grid-15).
+- Icon Tile installs with one corner radius per style instead of two competing ones, so a class-sorting formatter can no longer change it - [Docs](/docs/components/base/icon-tile).
+
 ## v2.7.0 - 3 October, 2026.
 
 Two new in-house primitives, Signature Pad and Time Picker, with 25 examples per base, plus Cascader global search and a long round of Data Grid fixes. This entry covers every free change since v2.6.0.

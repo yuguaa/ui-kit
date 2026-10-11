@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from "react"
 import { Badge } from "@/registry-reui/bases/base/reui/badge"
 
 import {
@@ -15,8 +18,11 @@ import { Button } from "@/registry/bases/base/ui/button"
 import { IconPlaceholder } from "@/app/(create)/components/icon-placeholder"
 
 export default function Pattern() {
+  // The base AlertDialogAction does not close the dialog on its own.
+  const [open, setOpen] = useState(false)
+
   return (
-    <AlertDialog>
+    <AlertDialog open={open} onOpenChange={setOpen}>
       <AlertDialogTrigger
         render={<Button variant="outline">Subscription Expiring</Button>}
       />
@@ -52,7 +58,9 @@ export default function Pattern() {
               its content width and leave the top border floating short. */}
           <AlertDialogFooter className="-mx-6 -mb-6 gap-4 self-stretch rounded-b-2xl p-6">
             <AlertDialogCancel>Remind Me Later</AlertDialogCancel>
-            <AlertDialogAction>Update Payment</AlertDialogAction>
+            <AlertDialogAction onClick={() => setOpen(false)}>
+              Update Payment
+            </AlertDialogAction>
           </AlertDialogFooter>
         </div>
       </AlertDialogContent>

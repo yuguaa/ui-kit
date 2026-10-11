@@ -19,9 +19,6 @@ const numberFieldGroupVariants = cva(
   "relative flex w-full justify-between border border-input data-disabled:pointer-events-none data-disabled:opacity-50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive focus-within:has-aria-invalid:border-destructive focus-within:has-aria-invalid:ring-destructive/20 dark:focus-within:has-aria-invalid:ring-destructive/40 style-vega:rounded-md style-nova:rounded-lg style-maia:rounded-4xl style-lyra:rounded-none style-mira:rounded-md style-luma:rounded-3xl style-rhea:rounded-2xl style-sera:rounded-none bg-transparent dark:bg-input/30 transition-colors focus-within:border-ring focus-within:ring-ring/50 focus-within:ring-3",
   {
     variants: {
-      // Ladders restored from the pre-rename source. Rhea was added after they
-      // were written, so its rungs are new: rhea tracks nova here because
-      // .cn-input is h-8 px-2.5 in both sheets, where luma is h-9 px-3.
       size: {
         sm: "h-7 text-sm",
         default: "h-8 text-sm",
@@ -38,6 +35,9 @@ const numberFieldButtonVariants = cva(
   "relative flex shrink-0 cursor-pointer items-center justify-center transition-colors pointer-coarse:after:absolute pointer-coarse:after:size-full pointer-coarse:after:min-h-11 pointer-coarse:after:min-w-11 hover:bg-accent",
   {
     variants: {
+      // Ladders restored from the pre-rename source. Rhea was added after they
+      // were written, so its rungs are new: rhea tracks nova here because the
+      // shadcn Input is h-8 px-2.5 in both sheets, where luma is h-9 px-3.
       size: {
         sm: ["style-vega:px-2 style-nova:px-1.5 style-maia:px-2 style-lyra:px-1.5 style-mira:px-1.5 style-luma:px-2 style-sera:px-3 style-rhea:px-1.5", "style-vega:[&_svg:not([class*='size-'])]:size-3.5 style-nova:[&_svg:not([class*='size-'])]:size-3.5 style-maia:[&_svg:not([class*='size-'])]:size-3.5 style-lyra:[&_svg:not([class*='size-'])]:size-3.5 style-mira:[&_svg:not([class*='size-'])]:size-3 style-luma:[&_svg:not([class*='size-'])]:size-3.5 style-sera:[&_svg:not([class*='size-'])]:size-3.5 style-rhea:[&_svg:not([class*='size-'])]:size-3.5"],
         default:

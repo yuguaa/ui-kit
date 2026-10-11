@@ -33,7 +33,6 @@ interface Feature {
 const COLUMNS: Record<string, { title: string; color: string }> = {
   planned: { title: "Planned", color: "bg-blue-500" },
   building: { title: "Building", color: "bg-yellow-500" },
-  testing: { title: "Testing", color: "bg-purple-500" },
   shipped: { title: "Shipped", color: "bg-green-500" },
 }
 

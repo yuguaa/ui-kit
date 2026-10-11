@@ -42,9 +42,12 @@ import {
   <KanbanBoard>
     {Object.entries(columns).map(([id, items]) => (
       <KanbanColumn key={id} value={id}>
-        <KanbanColumnHandle>
+        <div className="flex items-center justify-between">
           <h3>{id}</h3>
-        </KanbanColumnHandle>
+          <KanbanColumnHandle aria-label="Move column">
+            <GripVertical />
+          </KanbanColumnHandle>
+        </div>
         <KanbanColumnContent value={id}>
           {items.map((item) => (
             <KanbanItem key={item.id} value={item.id}>
@@ -177,7 +180,7 @@ An individual column within the kanban board.
 
 ### KanbanColumnHandle
 
-The drag handle for a column (if columns are sortable).
+The drag handle for a column (if columns are sortable). It stays hidden until the column is hovered or the handle has keyboard focus, so keep the column title outside it.
 
 | Prop        | Type     | Default | Description                            |
 | :---------- | :------- | :------ | :------------------------------------- |

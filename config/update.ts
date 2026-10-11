@@ -11,28 +11,30 @@
 // Membership is the signal. The value is the tooltip and the screen-reader
 // label, so it has to read as a sentence on its own.
 //
-// CURRENTLY REFLECTING: v2.7.0 - 3 October, 2026.
-//   New Signature Pad and Time Picker primitives, with 12 and 13 examples per
-//   base: both carry the dot in the docs sidebar and in the components
-//   sidebar. Cascader gained `searchScope="global"` and 1 example, so it
-//   carries both as well. Data Grid and Kanban changed in behaviour but
-//   shipped no new examples, so they carry the docs dot only.
+// CURRENTLY REFLECTING: v2.8.0 - 11 October, 2026.
+//   New Color Picker, Emoji Picker and File Type primitives, with 15, 8 and 14
+//   examples per base: each carries the dot in the docs sidebar and in the
+//   components sidebar. Stepper gained 29 examples, so it carries both as
+//   well. Data Grid gained grouped and spanning headers and scrolling fixes but
+//   no new examples, so it carries the docs dot only.
 //   Everything the previous release marked is cleared, per the rule above.
 
 /** Which DOCS pages carry the dot. Keys are doc slugs. */
 export const DOCS_MENU_UPDATES = {
-  "signature-pad": "New Signature Pad docs",
-  "time-picker": "New Time Picker docs",
-  cascader: "Cascader can now search the whole tree from any level",
-  "data-grid": "Data Grid now scrolls in RTL without an extra provider",
-  kanban: "Kanban drop targets now follow the pointer",
+  "color-picker": "New Color Picker docs",
+  "emoji-picker": "New Emoji Picker docs",
+  "file-type": "New File Type docs",
+  stepper: "Added 29 new Stepper examples, 44 in all",
+  "data-grid":
+    "Data Grid adds grouped and spanning headers, scrolls faster, and its scrollbar stops above a sticky footer",
 } as const
 
 /** Which COMPONENT categories carry the dot. Keys are category slugs. */
 export const COMPONENTS_MENU_UPDATES = {
-  "signature-pad": "New Signature Pad category with 12 examples",
-  "time-picker": "New Time Picker category with 13 examples",
-  cascader: "Added a global search example",
+  "color-picker": "New Color Picker category with 15 examples",
+  "emoji-picker": "New Emoji Picker category with 8 examples",
+  "file-type": "New File Type category with 14 examples",
+  stepper: "Added 29 new Stepper examples, 44 in all",
 } as const
 
 /**

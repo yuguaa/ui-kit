@@ -25,7 +25,7 @@ export default function Pattern() {
               Description of the scrollable content.
             </SheetDescription>
           </SheetHeader>
-          <ScrollArea className="h-[calc(100vh-230px)] flex-1 grow">
+          <ScrollArea className="min-h-0 flex-1">
             <div className="space-y-4 px-4">
               {Array.from({ length: 20 }).map((_, i) => (
                 <p key={i} className="text-muted-foreground text-sm">

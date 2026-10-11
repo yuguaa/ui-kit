@@ -1,3 +1,7 @@
+"use client"
+
+import { useId, useState, type FormEvent } from "react"
+
 import { Button } from "@/registry/bases/base/ui/button"
 import {
   Dialog,
@@ -13,32 +17,54 @@ import { Field, FieldGroup, FieldLabel } from "@/registry/bases/base/ui/field"
 import { Input } from "@/registry/bases/base/ui/input"
 
 export default function Pattern() {
+  const id = useId()
+  const [open, setOpen] = useState(false)
+  const [profile, setProfile] = useState({
+    name: "Pedro Duarte",
+    username: "@peduarte",
+  })
+
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
+    const formData = new FormData(event.currentTarget)
+    setProfile({
+      name: String(formData.get("name")),
+      username: String(formData.get("username")),
+    })
+    setOpen(false)
+  }
+
   return (
     <div className="flex items-center justify-center">
-      <Dialog>
-        <form>
-          <DialogTrigger render={<Button variant="outline" />}>
-            Basic Dialog
-          </DialogTrigger>
-          <DialogContent>
-            <DialogHeader>
-              <DialogTitle>Edit profile</DialogTitle>
-              <DialogDescription>
-                Make changes to your profile here. Click save when you&apos;re
-                done. Your profile will be updated immediately.
-              </DialogDescription>
-            </DialogHeader>
+      <Dialog open={open} onOpenChange={setOpen}>
+        <DialogTrigger render={<Button variant="outline" />}>
+          Basic Dialog
+        </DialogTrigger>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Edit profile</DialogTitle>
+            <DialogDescription>
+              Make changes to your profile here. Click save when you&apos;re
+              done. Your profile will be updated immediately.
+            </DialogDescription>
+          </DialogHeader>
+          {/* The form sits inside the portaled content so Save can submit it. */}
+          <form onSubmit={handleSubmit} className="contents">
             <FieldGroup>
               <Field>
-                <FieldLabel htmlFor="name-1">Name</FieldLabel>
-                <Input id="name-1" name="name" defaultValue="Pedro Duarte" />
+                <FieldLabel htmlFor={`${id}-name`}>Name</FieldLabel>
+                <Input
+                  id={`${id}-name`}
+                  name="name"
+                  defaultValue={profile.name}
+                />
               </Field>
               <Field>
-                <FieldLabel htmlFor="username-1">Username</FieldLabel>
+                <FieldLabel htmlFor={`${id}-username`}>Username</FieldLabel>
                 <Input
-                  id="username-1"
+                  id={`${id}-username`}
                   name="username"
-                  defaultValue="@peduarte"
+                  defaultValue={profile.username}
                 />
               </Field>
             </FieldGroup>
@@ -48,8 +74,8 @@ export default function Pattern() {
               </DialogClose>
               <Button type="submit">Save changes</Button>
             </DialogFooter>
-          </DialogContent>
-        </form>
+          </form>
+        </DialogContent>
       </Dialog>
     </div>
   )

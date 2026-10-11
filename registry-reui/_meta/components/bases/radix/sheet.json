@@ -3,7 +3,7 @@
     {
       "name": "c-sheet-1",
       "type": "registry:block",
-      "title": "Sheet containing a form for editing profile information.",
+      "title": "Sheet containing a form for editing profile information",
       "categories": [
         "sheet"
       ],
@@ -30,12 +30,12 @@
     {
       "name": "c-sheet-2",
       "type": "registry:block",
-      "title": "Sheet containing a form for editing profile information.",
+      "title": "Sheet without a corner close button",
       "categories": [
         "sheet"
       ],
-      "description": "Sheet containing a form for editing profile information.",
-      "descriptionLong": "Sheet containing a form for editing profile information. Built by composing Button, Field, Input, Sheet. A free, open source shadcn sheet example you can install with npx shadcn@latest add @reui/c-sheet-2 and edit as your own code.",
+      "description": "Sheet containing a profile form with the corner close button hidden, so the footer Cancel button closes it.",
+      "descriptionLong": "Sheet without a corner close button. Built by composing Button, Field, Input, Sheet. A free, open source shadcn sheet example you can install with npx shadcn@latest add @reui/c-sheet-2 and edit as your own code.",
       "registryDependencies": [
         "button",
         "field",
@@ -57,7 +57,7 @@
     {
       "name": "c-sheet-3",
       "type": "registry:block",
-      "title": "Sheets that open from any side.",
+      "title": "Sheets that open from any side",
       "categories": [
         "sheet"
       ],

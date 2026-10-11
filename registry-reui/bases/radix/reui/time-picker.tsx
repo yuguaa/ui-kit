@@ -1233,15 +1233,15 @@ export function TimePickerColumns({
 const LIST_SELECTOR =
   '[data-slot="time-picker-column-list"]:not([aria-disabled="true"])'
 
-/* Row height and list padding copy `.cn-select-item` and `.cn-select-group`
+/* Row height and list padding copy the shadcn Select item and Select group
    per style, as custom properties so a list is exactly N rows tall. Lyra's
    group has no padding; it gets 4px here so the focus ring never clips. */
 const COLUMN_CLASS =
   "group/time-picker-column flex min-w-16 flex-1 flex-col style-vega:[--time-picker-option-height:calc(var(--spacing)*8)] style-nova:[--time-picker-option-height:calc(var(--spacing)*7)] style-maia:[--time-picker-option-height:calc(var(--spacing)*9)] style-lyra:[--time-picker-option-height:calc(var(--spacing)*8)] style-mira:[--time-picker-option-height:calc(var(--spacing)*7)] style-luma:[--time-picker-option-height:calc(var(--spacing)*9)] style-rhea:[--time-picker-option-height:calc(var(--spacing)*8)] style-sera:[--time-picker-option-height:calc(var(--spacing)*9)] style-vega:[--time-picker-list-padding:calc(var(--spacing)*1)] style-nova:[--time-picker-list-padding:calc(var(--spacing)*1)] style-maia:[--time-picker-list-padding:calc(var(--spacing)*1)] style-lyra:[--time-picker-list-padding:calc(var(--spacing)*1)] style-mira:[--time-picker-list-padding:calc(var(--spacing)*1)] style-luma:[--time-picker-list-padding:calc(var(--spacing)*1.5)] style-rhea:[--time-picker-list-padding:calc(var(--spacing)*1)] style-sera:[--time-picker-list-padding:calc(var(--spacing)*1.5)]"
 
-/* `.cn-select-label`, centered, with one more step of room on top so the
-   header clears the surface edge. It brightens while its list has keyboard
-   focus, which says which column the arrows move. */
+/* The shadcn Select label, centered, with a little more room on top so the
+   header clears the surface edge. It gains contrast while its list has
+   keyboard focus, which says which column the arrows move. */
 const LABEL_CLASS =
   "text-muted-foreground text-center text-xs whitespace-nowrap transition-colors select-none group-has-focus-visible/time-picker-column:text-foreground style-vega:px-2 style-vega:pt-2.5 style-vega:pb-1.5 style-nova:px-1.5 style-nova:pt-2 style-nova:pb-1 style-maia:px-3 style-maia:pt-3 style-maia:pb-2.5 style-lyra:px-2 style-lyra:pt-2.5 style-lyra:pb-2 style-mira:px-2 style-mira:pt-2 style-mira:pb-1.5 style-luma:px-3 style-luma:pt-3 style-luma:pb-2.5 style-rhea:px-2 style-rhea:pt-2 style-rhea:pb-1 style-sera:px-3 style-sera:pt-2.5 style-sera:pb-2 style-sera:uppercase style-sera:tracking-wider style-sera:font-semibold"
 
@@ -1252,10 +1252,10 @@ const LABEL_CLASS =
 const LIST_CLASS =
   "group/time-picker-list relative flex h-[calc(var(--time-picker-option-height)*var(--time-picker-rows,5)+var(--spacing)*(var(--time-picker-rows,5)-1)+var(--time-picker-list-padding)*2)] flex-col gap-1 overflow-y-auto overscroll-contain px-2 py-(--time-picker-list-padding) outline-none [scrollbar-width:none] data-empty:focus-visible:outline-solid data-empty:focus-visible:outline-2 data-empty:focus-visible:-outline-offset-2 data-empty:focus-visible:outline-ring data-fade:[mask-image:linear-gradient(to_bottom,transparent,#000_var(--time-picker-fade-start,0px),#000_calc(100%-var(--time-picker-fade-end,0px)),transparent)] data-overflow-start:[--time-picker-fade-start:var(--time-picker-fade-size,var(--time-picker-option-height))] data-overflow-end:[--time-picker-fade-end:var(--time-picker-fade-size,var(--time-picker-option-height))] [&::-webkit-scrollbar]:hidden"
 
-/* Radius and type follow `.cn-select-item`, and the keyboard ring follows
-   `.cn-button`'s focus ring in each style; the list's padding leaves room for
-   it. The filled pill for the value is this primitive's own: a select marks
-   its choice with a check. */
+/* Radius and type follow the shadcn Select item, and the keyboard ring
+   follows the shadcn Button's focus ring in each style; the list's padding
+   leaves room for it. The filled pill for the value is this primitive's own:
+   a select marks its choice with a check. */
 const OPTION_CLASS =
   "flex h-(--time-picker-option-height) shrink-0 cursor-default items-center justify-center tabular-nums transition-[color,background-color,box-shadow] duration-100 select-none not-aria-selected:hover:bg-accent not-aria-selected:hover:text-accent-foreground aria-selected:bg-primary aria-selected:font-medium aria-selected:text-primary-foreground aria-disabled:pointer-events-none aria-disabled:opacity-50 forced-colors:aria-selected:bg-[Highlight] forced-colors:aria-selected:text-[HighlightText] forced-colors:group-focus-visible/time-picker-list:data-highlighted:outline-solid forced-colors:group-focus-visible/time-picker-list:data-highlighted:outline-2 style-vega:group-focus-visible/time-picker-list:data-highlighted:ring-3 style-nova:group-focus-visible/time-picker-list:data-highlighted:ring-3 style-maia:group-focus-visible/time-picker-list:data-highlighted:ring-[3px] style-lyra:group-focus-visible/time-picker-list:data-highlighted:ring-1 style-mira:group-focus-visible/time-picker-list:data-highlighted:ring-2 style-luma:group-focus-visible/time-picker-list:data-highlighted:ring-3 style-rhea:group-focus-visible/time-picker-list:data-highlighted:ring-3 style-sera:group-focus-visible/time-picker-list:data-highlighted:ring-2 style-vega:ring-ring/50 style-nova:ring-ring/50 style-maia:ring-ring/50 style-lyra:ring-ring/50 style-mira:ring-ring/30 style-luma:ring-ring/30 style-rhea:ring-ring/30 style-sera:ring-ring/30 style-vega:rounded-sm style-nova:rounded-md style-maia:rounded-xl style-lyra:rounded-none style-mira:rounded-md style-luma:rounded-2xl style-rhea:rounded-xl style-sera:rounded-none style-vega:text-sm style-nova:text-sm style-maia:text-sm style-lyra:text-xs style-mira:text-xs/relaxed style-luma:text-sm style-luma:font-medium style-rhea:text-sm style-sera:text-sm"
 

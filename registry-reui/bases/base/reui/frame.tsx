@@ -11,8 +11,8 @@ import { cn } from "cn"
 const frameVariants = cva(
   [
     "relative flex flex-col bg-muted/50 gap-(--frame-gap) px-(--frame-px) py-(--frame-py) rounded-(--frame-radius)",
-    // Each rung is the radius that style's own .cn-card resolves through, so a
-    // Frame and a Card side by side agree. lyra/sera are 0px, NOT
+    // Each rung is the radius that style's own shadcn Card resolves through, so
+    // a Frame and a Card side by side agree. lyra/sera are 0px, NOT
     // var(--radius-none): no such token exists, and it only reached 0 by being
     // invalid, which also left --frame-radius empty for anything reading it.
     "style-vega:[--frame-radius:var(--radius-xl)] style-nova:[--frame-radius:var(--radius-xl)] style-lyra:[--frame-radius:0px] style-maia:[--frame-radius:var(--radius-2xl)] style-mira:[--frame-radius:var(--radius-lg)] style-luma:[--frame-radius:var(--radius-4xl)] style-sera:[--frame-radius:0px] style-rhea:[--frame-radius:min(var(--radius-4xl),24px)]",
@@ -106,7 +106,8 @@ function FramePanel({
     <div
       className={cn(
         "relative overflow-hidden rounded-(--frame-panel-radius) border border-(--frame-panel-border-color) bg-(--frame-panel-bg) bg-clip-padding shadow-xs",
-        // `fit` sizes the panel to its content; otherwise it grows to fill the frame.
+        /* `fit` sizes the panel to its content; otherwise it grows to fill
+           the frame. */
         !fit && "grow",
         "before:pointer-events-none before:absolute before:inset-0 before:rounded-[calc(var(--frame-panel-radius)-1px)] before:shadow-black/5",
         "dark:bg-clip-border dark:before:shadow-white/5",

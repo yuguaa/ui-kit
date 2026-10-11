@@ -414,6 +414,29 @@ export const reui: Registry["items"] = [
     }
   },
   {
+    "name": "color-picker",
+    "type": "registry:ui",
+    "title": "Shadcn color picker with a saturation area, hue, alpha and channel sliders, a hue wheel, HEX, RGB, HSL, HSB and OKLCH fields, swatches and an eye dropper.",
+    "description": "Shadcn color picker with a saturation area, hue, alpha and channel sliders, a hue wheel, HEX, RGB, HSL, HSB and OKLCH fields, swatches and an eye dropper.",
+    "registryDependencies": [
+      "button",
+      "dropdown-menu",
+      "input-group",
+      "popover",
+      "separator"
+    ],
+    "dependencies": [
+      "cn"
+    ],
+    "files": [
+      {
+        "path": "reui/color-picker.tsx",
+        "type": "registry:ui",
+        "target": "components/reui/color-picker.tsx"
+      }
+    ]
+  },
+  {
     "name": "data-grid-cell-selection",
     "type": "registry:ui",
     "title": "Data Grid Cell Selection",
@@ -757,6 +780,31 @@ export const reui: Registry["items"] = [
     ]
   },
   {
+    "name": "emoji-picker",
+    "type": "registry:ui",
+    "title": "Shadcn emoji picker with search, shortcodes, skin tones, frequently used and custom emoji, a category bar, a virtualized grid and 28 data languages.",
+    "description": "Shadcn emoji picker with search, shortcodes, skin tones, frequently used and custom emoji, a category bar, a virtualized grid and 28 data languages.",
+    "registryDependencies": [
+      "button",
+      "dropdown-menu",
+      "empty",
+      "input-group",
+      "popover",
+      "skeleton",
+      "tabs"
+    ],
+    "dependencies": [
+      "cn"
+    ],
+    "files": [
+      {
+        "path": "reui/emoji-picker.tsx",
+        "type": "registry:ui",
+        "target": "components/reui/emoji-picker.tsx"
+      }
+    ]
+  },
+  {
     "name": "event-calendar-agenda-view",
     "type": "registry:ui",
     "title": "Chronological agenda grouped by day - a day header row plus a clean time / dot / title table.",
@@ -1076,6 +1124,24 @@ export const reui: Registry["items"] = [
         "path": "reui/event-calendar/event-calendar.tsx",
         "type": "registry:ui",
         "target": "components/reui/event-calendar/event-calendar.tsx"
+      }
+    ]
+  },
+  {
+    "name": "file-type",
+    "type": "registry:ui",
+    "title": "Shadcn file type icon in brand and family colors, outline, solid, light and mono variants, sizes down to 18px for data grid rows, and resolution from a file name or MIME type.",
+    "description": "Shadcn file type icon in brand and family colors, outline, solid, light and mono variants, sizes down to 18px for data grid rows, and resolution from a file name or MIME type.",
+    "registryDependencies": [],
+    "dependencies": [
+      "class-variance-authority",
+      "cn"
+    ],
+    "files": [
+      {
+        "path": "reui/file-type.tsx",
+        "type": "registry:ui",
+        "target": "components/reui/file-type.tsx"
       }
     ]
   },

@@ -1,3 +1,7 @@
+"use client"
+
+import { useState } from "react"
+
 import {
   AlertDialog,
   AlertDialogAction,
@@ -12,8 +16,11 @@ import { Button } from "@/registry/bases/base/ui/button"
 import { IconPlaceholder } from "@/app/(create)/components/icon-placeholder"
 
 export default function Pattern() {
+  // The base AlertDialogAction does not close the dialog on its own.
+  const [open, setOpen] = useState(false)
+
   return (
-    <AlertDialog>
+    <AlertDialog open={open} onOpenChange={setOpen}>
       <AlertDialogTrigger
         render={<Button variant="destructive">Deactivate Account</Button>}
       />
@@ -41,7 +48,10 @@ export default function Pattern() {
         </div>
         <AlertDialogFooter>
           <AlertDialogCancel>Keep My Account</AlertDialogCancel>
-          <AlertDialogAction variant="destructive">
+          <AlertDialogAction
+            variant="destructive"
+            onClick={() => setOpen(false)}
+          >
             Deactivate Anyway
           </AlertDialogAction>
         </AlertDialogFooter>

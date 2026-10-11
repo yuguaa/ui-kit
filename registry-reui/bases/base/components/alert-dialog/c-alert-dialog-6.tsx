@@ -1,3 +1,7 @@
+"use client"
+
+import { useState } from "react"
+
 import {
   AlertDialog,
   AlertDialogAction,
@@ -21,6 +25,9 @@ import {
 } from "@/registry/bases/base/ui/dialog"
 
 export default function Pattern() {
+  // The base AlertDialogAction does not close the dialog on its own.
+  const [open, setOpen] = useState(false)
+
   return (
     <Dialog>
       <DialogTrigger render={<Button variant="outline" />}>
@@ -34,7 +41,7 @@ export default function Pattern() {
           </DialogDescription>
         </DialogHeader>
         <DialogFooter>
-          <AlertDialog>
+          <AlertDialog open={open} onOpenChange={setOpen}>
             <AlertDialogTrigger render={<Button />}>
               Open Alert Dialog
             </AlertDialogTrigger>
@@ -48,7 +55,9 @@ export default function Pattern() {
               </AlertDialogHeader>
               <AlertDialogFooter>
                 <AlertDialogCancel>Cancel</AlertDialogCancel>
-                <AlertDialogAction>Continue</AlertDialogAction>
+                <AlertDialogAction onClick={() => setOpen(false)}>
+                  Continue
+                </AlertDialogAction>
               </AlertDialogFooter>
             </AlertDialogContent>
           </AlertDialog>

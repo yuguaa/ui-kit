@@ -34,7 +34,7 @@ const COLUMN_TITLES: Record<string, string> = {
 // Simulated backend. In a real app this would be a tRPC mutation or a fetch
 // to your API. It rejects roughly one in four calls so the optimistic
 // rollback path is easy to see.
-function persistBoard(meta: KanbanCommitMeta<Task>): Promise<void> {
+function persistBoard(): Promise<void> {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (Math.random() < 0.25) {
@@ -164,7 +164,7 @@ export default function Pattern() {
         ? `Reordered "${COLUMN_TITLES[meta.activeContainer] ?? meta.activeContainer}"`
         : `Moved to "${COLUMN_TITLES[meta.overContainer] ?? meta.overContainer}"`
 
-    toast.promise(persistBoard(meta), {
+    toast.promise(persistBoard(), {
       loading: "Saving board...",
       success: () => label,
       error: () => {

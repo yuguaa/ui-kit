@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from "react"
 import { Frame, FramePanel } from "@/registry-reui/bases/base/reui/frame"
 
 import {
@@ -16,8 +19,11 @@ import { Label } from "@/registry/bases/base/ui/label"
 import { IconPlaceholder } from "@/app/(create)/components/icon-placeholder"
 
 export default function Pattern() {
+  // The base AlertDialogAction does not close the dialog on its own.
+  const [open, setOpen] = useState(false)
+
   return (
-    <AlertDialog>
+    <AlertDialog open={open} onOpenChange={setOpen}>
       <AlertDialogTrigger
         render={<Button variant="outline">Discard Changes</Button>}
       />
@@ -57,7 +63,9 @@ export default function Pattern() {
               </div>
               <div className="flex items-center gap-2">
                 <AlertDialogCancel>Stay</AlertDialogCancel>
-                <AlertDialogAction>Discard Changes</AlertDialogAction>
+                <AlertDialogAction onClick={() => setOpen(false)}>
+                  Discard Changes
+                </AlertDialogAction>
               </div>
             </AlertDialogFooter>
           </FramePanel>

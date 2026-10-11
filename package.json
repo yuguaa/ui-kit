@@ -1,6 +1,6 @@
 {
   "name": "reui",
-  "version": "2.7.0",
+  "version": "2.8.0",
   "private": true,
   "type": "module",
   "scripts": {
@@ -74,6 +74,7 @@
     "@reui/components-base-checkbox": "workspace:*",
     "@reui/components-base-code-block": "workspace:*",
     "@reui/components-base-collapsible": "workspace:*",
+    "@reui/components-base-color-picker": "workspace:*",
     "@reui/components-base-combobox": "workspace:*",
     "@reui/components-base-command": "workspace:*",
     "@reui/components-base-context-menu": "workspace:*",
@@ -82,9 +83,11 @@
     "@reui/components-base-dialog": "workspace:*",
     "@reui/components-base-drawer": "workspace:*",
     "@reui/components-base-dropdown-menu": "workspace:*",
+    "@reui/components-base-emoji-picker": "workspace:*",
     "@reui/components-base-empty": "workspace:*",
     "@reui/components-base-event-calendar": "workspace:*",
     "@reui/components-base-field": "workspace:*",
+    "@reui/components-base-file-type": "workspace:*",
     "@reui/components-base-file-upload": "workspace:*",
     "@reui/components-base-filters": "workspace:*",
     "@reui/components-base-frame": "workspace:*",
@@ -157,6 +160,7 @@
     "@reui/components-radix-checkbox": "workspace:*",
     "@reui/components-radix-code-block": "workspace:*",
     "@reui/components-radix-collapsible": "workspace:*",
+    "@reui/components-radix-color-picker": "workspace:*",
     "@reui/components-radix-combobox": "workspace:*",
     "@reui/components-radix-command": "workspace:*",
     "@reui/components-radix-context-menu": "workspace:*",
@@ -165,9 +169,11 @@
     "@reui/components-radix-dialog": "workspace:*",
     "@reui/components-radix-drawer": "workspace:*",
     "@reui/components-radix-dropdown-menu": "workspace:*",
+    "@reui/components-radix-emoji-picker": "workspace:*",
     "@reui/components-radix-empty": "workspace:*",
     "@reui/components-radix-event-calendar": "workspace:*",
     "@reui/components-radix-field": "workspace:*",
+    "@reui/components-radix-file-type": "workspace:*",
     "@reui/components-radix-file-upload": "workspace:*",
     "@reui/components-radix-filters": "workspace:*",
     "@reui/components-radix-frame": "workspace:*",
@@ -287,18 +293,6 @@
     "typescript": "^5.9.3",
     "unist-builder": "4.0.0",
     "unist-util-visit": "^5.1.0"
-  },
-  "pnpm": {
-    "overrides": {
-      "@hono/node-server": "^2.0.12",
-      "@modelcontextprotocol/sdk": "^1.30.0",
-      "brace-expansion@^1.0.0": "^1.1.18",
-      "brace-expansion@^5.0.0": "^5.0.9",
-      "fast-uri": "^3.1.5",
-      "postcss": "^8.5.25",
-      "sharp": "^0.35.3",
-      "shell-quote": "^1.10.0"
-    }
   },
   "prettier": {
     "endOfLine": "lf",

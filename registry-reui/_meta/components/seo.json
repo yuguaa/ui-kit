@@ -1257,10 +1257,7 @@
       "shadcn create",
       "reui bubble examples"
     ],
-    "searchAliases": [
-      "chat bubble",
-      "message bubble"
-    ],
+    "searchAliases": ["chat bubble", "message bubble"],
     "content": {
       "title": "Shadcn Bubble: Chat Threads, Assistant Replies, and Reactions",
       "summary": [
@@ -2440,6 +2437,137 @@
       ]
     }
   },
+  "color-picker": {
+    "title": "Shadcn Color Picker: Area, Sliders, OKLCH Fields and Swatches",
+    "metaTitle": "Shadcn Color Picker: HEX, RGB, HSL and OKLCH",
+    "description": "{{count}} free shadcn color picker components for brand settings, theme tokens and label colors, with a saturation area, OKLCH fields, swatches and an eye dropper.",
+    "intro": "Browse {{count}} shadcn color picker components with a saturation area, hue, opacity and channel sliders, a hue wheel, HEX to OKLCH fields, preset swatches and an eye dropper.",
+    "keywords": [
+      "shadcn color picker",
+      "react color picker",
+      "shadcn/ui color picker",
+      "color picker tailwind",
+      "next.js color picker",
+      "oklch color picker",
+      "hex color picker react",
+      "rgba color picker",
+      "hsl color picker",
+      "color picker with alpha",
+      "color swatch picker",
+      "eyedropper color picker",
+      "hue wheel react",
+      "color input react",
+      "accessible color picker",
+      "reui color picker examples"
+    ],
+    "searchAliases": ["colorpicker", "colour picker"],
+    "content": {
+      "title": "Shadcn Color Picker: Pick, Type and Convert a Color",
+      "summary": [
+        "ReUI Color Picker is a custom shadcn component for choosing a color from a saturation area and gradient sliders, typing one in, or picking a preset. It is not part of the base shadcn/ui library. It is built on the shadcn Button, Input Group, Popover and Dropdown Menu, and does its own color math with no color library.",
+        "The value is a CSS string in the format you choose: hex by default, or rgb(), hsl(), hsb() or oklch(), with alpha when you allow it. The picker keeps the channels a color was edited in, so the hue of a gray survives and a Tailwind v4 OKLCH color outside sRGB round-trips unchanged.",
+        "The examples cover the places a color picker actually lands: a brand color field, label colors from a fixed palette, a --primary theme token tuned in OKLCH, text and highlight colors in an editor toolbar, and a design inspector. Others check WCAG contrast, generate a 50 to 950 brand scale and validate a required form field."
+      ],
+      "sections": [
+        {
+          "title": "What is Shadcn Color Picker?",
+          "paragraphs": [
+            "A color picker turns a color into a value you can store without asking people to know hex codes. Shadcn Color Picker is 17 composable parts and a useColorPicker hook. With no children the root renders an outline trigger and a popover holding a saturation area, an eye dropper, a hue slider and format fields, ColorPickerPanel gives an always-open picker, and ColorPickerInput gives a field people can type any CSS color into.",
+            "Every part reads the same value, so a layout is a choice of parts: swatches alone for a fixed palette, OKLCH lightness, chroma and hue sliders for a theme editor, vertical tracks beside the area for a compact inspector, or a hue ring around the area."
+          ]
+        },
+        {
+          "title": "Formats, alpha and OKLCH",
+          "paragraphs": [
+            "format sets how the value is written, and the fields can show any of the 5 formats with a menu that previews each one, without changing what your code receives. alpha adds an opacity slider and field; without it the value is always opaque.",
+            "OKLCH sliders follow perceived lightness, so a theme scale built from them stays even. A color outside sRGB keeps its channels in oklch() output and is shown as the closest sRGB color, found by lowering chroma at the same lightness and hue, and isColorInSrgb tells you when that happens."
+          ]
+        },
+        {
+          "title": "Shadcn Color Picker Features",
+          "featureItems": [
+            {
+              "title": "Area, sliders and wheel.",
+              "description": "A saturation and brightness area, horizontal or vertical sliders for any channel in HSB, HSL, RGB or OKLCH, and a hue ring that holds the area inside it."
+            },
+            {
+              "title": "5 formats.",
+              "description": "HEX, RGB, HSL, HSB and OKLCH for the value and for the joined channel fields, with an opacity field when alpha is on."
+            },
+            {
+              "title": "Typable input.",
+              "description": "ColorPickerInput reads hex with or without #, rgb(), hsl(), oklch(), and any CSS color the browser knows, named colors and lab() included."
+            },
+            {
+              "title": "Swatches.",
+              "description": "Preset colors as a keyboard listbox in square or round chips, with the selected one checked in black or white, whichever contrasts more."
+            },
+            {
+              "title": "Commit after a drag.",
+              "description": "onValueChange follows every move, and onValueCommit fires once when a drag ends, a key is pressed or a swatch is picked, so saves and history stay quiet."
+            },
+            {
+              "title": "Eye dropper and copy.",
+              "description": "Sample a color from anywhere on screen where the browser has an EyeDropper, and copy the value in any format."
+            },
+            {
+              "title": "Native form field.",
+              "description": "Give the root a name and the value submits with a plain form or a server action, with required and a form reset that restores the default."
+            },
+            {
+              "title": "Every shadcn style.",
+              "description": "Thumbs, tracks and swatches follow the shadcn slider and checkbox shapes in all 8 styles, from round in nova to square in lyra."
+            }
+          ]
+        },
+        {
+          "title": "Accessibility and keyboard",
+          "paragraphs": [
+            "The area, the sliders and the wheel are sliders to assistive tech. The area's value text names both channels and the color, Saturation 72%, Brightness 85%, vibrant blue, because a 2D control has no ARIA role of its own, and arrow keys move it, with Shift for steps of 10.",
+            "Swatches are a listbox with one tab stop: arrow keys move across and between rows in the order they appear, and each swatch is announced by its label or a color name rather than a hex code. A mouse click never paints the keyboard focus ring."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How is this different from a native input type=color?",
+          "answer": "The native control's popup is drawn by the browser, so it looks different in each one, cannot be styled, and writes only 6-digit hex. Color Picker renders your shadcn theme everywhere, adds alpha, OKLCH, swatches and typed input, and its default value is the same lowercase hex, so swapping one for the other does not change what your server receives."
+        },
+        {
+          "question": "Does it work with Tailwind v4 and shadcn OKLCH themes?",
+          "answer": "Yes. Set format to oklch and the value is written as oklch(62.3% 0.214 259.815), the form Tailwind v4 palettes use. OKLCH sliders edit lightness, chroma and hue directly, and a color outside sRGB keeps its exact channels, as the theme token example shows."
+        },
+        {
+          "question": "How do I save only when someone stops dragging?",
+          "answer": "Use onValueCommit. onValueChange fires on every pointer move so the preview stays live, while onValueCommit fires once per interaction: on release, on each key press, and when a field, a swatch or the eye dropper changes the color."
+        },
+        {
+          "question": "Can I limit people to a fixed palette?",
+          "answer": "Yes. Render ColorPickerSwatches on its own with your colors and no area, as the preset swatches example does for label colors, and add a trigger that opens the full picker only if custom colors are allowed."
+        },
+        {
+          "question": "How do I send the color to my server?",
+          "answer": "For a plain form or a server action, give ColorPicker a name and read that field from FormData; an empty picker submits an empty string, so required works. With a form library, bind value and onValueChange, which receives the new value or null when cleared."
+        },
+        {
+          "question": "Which browsers have the eye dropper?",
+          "answer": "ColorPickerEyeDropper uses the browser's EyeDropper API, which Chromium browsers support. Where it is missing, Firefox and Safari among them, the button renders nothing, so the panel never shows a control that cannot work."
+        },
+        {
+          "question": "Is it safe to server render in Next.js?",
+          "answer": "Yes. The value is a plain string, nothing reads the clock or the window while rendering, and the eye dropper's support check renders nothing on the server and the first client pass, so both produce the same markup."
+        }
+      ]
+    },
+    "relatedComponents": {
+      "title": "Integrating With Other Components",
+      "integrationBody": [
+        "Wrap the picker in [Shadcn Field](/components/field) for a label, a description and an error, and pass the label's id as aria-labelledby so the trigger reads both the label and the value. ColorPickerInput and the channel fields are built on [Shadcn Input Group](/components/input-group), and the picker opens in [Shadcn Popover](/components/popover).",
+        "The format menu is a [Shadcn Dropdown Menu](/components/dropdown-menu) with a preview of the color in each format. For a label or a tag, a [Shadcn Badge](/components/badge) colored with getContrastRatio picking black or white text stays readable on any swatch.",
+        "The [Settings blocks](/blocks/application/settings) are the assembled version of the screens a brand color lives on, 16 Pro layouts for workspace, appearance and account preferences. The [Color Picker docs](/docs/components/base/color-picker) list every part, prop and helper."
+      ]
+    }
+  },
   "combobox": {
     "description": "Shadcn Combobox components using Base UI. Multi-select with chips, grouped options, async search, and form integration. {{count}} production examples.",
     "intro": "Browse {{count}} production-ready shadcn combobox components using `@base-ui/react` Combobox. Covers single select, multi-select with removable chips, non-removable chips, user tag creation, dialog-embedded combobox, grouped options with separators, custom item rendering, large list performance, clear button, auto-highlight, and form integration.",
@@ -3384,6 +3512,137 @@
       ]
     }
   },
+  "emoji-picker": {
+    "title": "Shadcn Emoji Picker: Search, Skin Tones, Custom Emoji and Reactions",
+    "metaTitle": "Shadcn Emoji Picker: Reactions and Custom Emoji",
+    "description": "{{count}} free shadcn emoji picker components for composers, reactions, page icons and team emoji. Search, shortcodes, skin tones, custom emoji and 28 languages.",
+    "intro": "Browse {{count}} shadcn emoji picker components with search and shortcodes, skin tones, frequently used and custom team emoji, category tabs and localized data.",
+    "keywords": [
+      "shadcn emoji picker",
+      "react emoji picker",
+      "shadcn/ui emoji picker",
+      "emoji picker tailwind",
+      "next.js emoji picker",
+      "emoji reactions react",
+      "custom emoji picker",
+      "emoji picker skin tone",
+      "emoji shortcode autocomplete",
+      "slack style emoji picker",
+      "emoji picker popover",
+      "page icon picker",
+      "localized emoji picker",
+      "accessible emoji picker react",
+      "emoji mart alternative",
+      "reui emoji picker examples"
+    ],
+    "searchAliases": ["emojipicker", "emoji mart"],
+    "content": {
+      "title": "Shadcn Emoji Picker: Insert, React and Choose an Icon",
+      "summary": [
+        "ReUI Emoji Picker is a custom shadcn component for choosing emoji from a searchable grid, in a popover or in place. It is not part of the base shadcn/ui library, and it is built on the shadcn Button, Input Group and Popover with no npm dependency.",
+        "The emoji, their names and keywords come from emojibase, fetched once per page from a pinned release and shared by every picker, or passed in for a self-hosted or offline app. Only the rows in view render, so a thread with a reaction picker on every message stays fast.",
+        "The examples cover the places an emoji picker lands: a message composer that inserts at the caret, reaction pills with counts, a document icon, uploaded team emoji and a shortcode autocomplete with no picker open. Others restrict the set for a workplace tool and switch the data and labels to German, French or Japanese."
+      ],
+      "sections": [
+        {
+          "title": "What is Shadcn Emoji Picker?",
+          "paragraphs": [
+            "An emoji picker turns a list of about 1,900 emoji into something a person can scan and search in a second. Shadcn Emoji Picker is 12 composable parts and 2 hooks: a root, a trigger and a popover, an inline panel, a header and a footer, a search, a skin tone control, category tabs, the grid, a preview and a value readout.",
+            "A pick hands back the native emoji with the skin tone applied, ready to insert into text or store in a database column, or :shortcode: for a custom emoji. Give the root a value and it becomes a field that marks its choice and submits with a form; add multiple and picks toggle in and out of a list."
+          ]
+        },
+        {
+          "title": "Data, languages and unsupported emoji",
+          "paragraphs": [
+            "locale loads names, keywords and category labels in 28 languages, so search works in German, Japanese or Portuguese, and GitHub or Slack shortcodes such as :thumbsup: search in every language. The browser caches the pinned files, and dataUrl or data moves the source to your own origin for a strict Content Security Policy.",
+            "Older systems draw newer emoji as empty boxes. The picker draws one emoji of each Unicode version on a canvas, hides the versions the device cannot show, and hides country flags where the system font has none, as on Windows. emojiVersion fixes the cutoff instead."
+          ]
+        },
+        {
+          "title": "Shadcn Emoji Picker Features",
+          "featureItems": [
+            {
+              "title": "Search and shortcodes.",
+              "description": "Ranks by name, shortcode and keyword, ignores colons and accents, and highlights the best match so Enter picks it. A pasted emoji finds itself in any tone."
+            },
+            {
+              "title": "Skin tones.",
+              "description": "One tone for every emoji that takes one, chosen from a shadcn dropdown menu, remembered in localStorage and shared live with every picker and tab."
+            },
+            {
+              "title": "Frequently used.",
+              "description": "A recent section ordered by use count or last use, stored locally or controlled through recent and onRecentChange to sync with an account."
+            },
+            {
+              "title": "Custom team emoji.",
+              "description": "Image emoji with their own tab and label, searchable by shortcode and stored as :shortcode:, the way Slack and Discord keep them in text."
+            },
+            {
+              "title": "Virtualized grid.",
+              "description": "Only the rows in view render, with sticky category headers, so a page of reaction pickers or a library of thousands of custom emoji stays cheap."
+            },
+            {
+              "title": "Value, multiple and forms.",
+              "description": "value marks the choice in the grid, multiple with max picks a capped list, and name submits it with a native form that resets to its default."
+            },
+            {
+              "title": "Composable layout.",
+              "description": "Tabs above or below the grid, with or without search, skin tone or preview, at 3 sizes and any column count, inline or in a popover."
+            },
+            {
+              "title": "Every shadcn style.",
+              "description": "The search is the default shadcn input, the tabs are ghost icon buttons and the cells take the icon button radius in all 8 styles, light and dark."
+            }
+          ]
+        },
+        {
+          "title": "Accessibility and keyboard",
+          "paragraphs": [
+            "The search is a combobox over one listbox of category groups, with the highlighted emoji as its active descendant, so a screen reader announces each emoji by name while focus stays in the search. Left and Right move the caret until the arrows enter the grid, and Escape closes the popover.",
+            "Category tabs are a tablist with roving focus, the skin tone is a menu of radio items, result counts are announced, and focus returns to the trigger on close, or to the textarea you name with returnFocus."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How is this different from emoji-mart or emoji-picker-react?",
+          "answer": "Both ship their own styling and render the whole list, so theming means fighting their CSS and a long list costs every visitor. Emoji Picker is copied into your project as shadcn parts that follow your theme, renders only the rows in view, and adds custom emoji, shortcodes and a frequently used list that you can control."
+        },
+        {
+          "question": "Where does the emoji data come from?",
+          "answer": "From emojibase, MIT licensed, fetched as JSON from a pinned release on jsDelivr the first time a picker opens and shared by every picker on the page. Pass dataUrl to serve the files from your own origin, or data to bundle them and skip the request."
+        },
+        {
+          "question": "Why do some emoji show as empty boxes, and how is that handled?",
+          "answer": "An emoji newer than the system font draws as an empty box. With the default emojiVersion of auto, the picker probes what the device can draw and hides the rest, country flags included on Windows. A number sets a fixed version for every device."
+        },
+        {
+          "question": "How do I insert the emoji at the cursor in a textarea?",
+          "answer": "Read the textarea's selectionStart and selectionEnd in onEmojiSelect, splice the value in, and pass the textarea as returnFocus so focus goes back to it. The composer example does exactly that, and Shift plus click inserts several without closing."
+        },
+        {
+          "question": "Can I add my own emoji?",
+          "answer": "Yes. Pass customEmojis with an id, a label and an image URL, and customCategories to name their tab. A pick stores :id:, so render your messages by swapping those tokens for the images, as the custom team emoji example does."
+        },
+        {
+          "question": "How do I keep frequently used emoji across devices?",
+          "answer": "By default they live in localStorage under one key, shared by every picker on the origin. Pass recent and onRecentChange to load and save the list from your own backend instead, or recentStorageKey as null to keep it in memory."
+        },
+        {
+          "question": "Is it safe to server render in Next.js?",
+          "answer": "Yes. Stored tones and recent emoji are read only on the client, the server renders the defaults, and the grid fills in after the data loads, so the markup never depends on the visitor."
+        }
+      ]
+    },
+    "relatedComponents": {
+      "title": "Integrating With Other Components",
+      "integrationBody": [
+        "Put the trigger inside [Shadcn Input Group](/components/input-group) for a composer or a status field, and wrap a form field in [Shadcn Field](/components/field) for a label, a hint and an error. The grid opens in [Shadcn Popover](/components/popover), so it follows your theme.",
+        "For reactions, pair it with [Shadcn Toggle](/components/toggle) pills that carry a count, and for a chat, with [Shadcn Bubble](/components/bubble) and [Shadcn Message](/components/message). The shortcode autocomplete builds on the same data with [Shadcn Item](/components/item) rows and no picker at all.",
+        "The [AI Chat blocks](/blocks/ai-agents/ai-chat) are the assembled conversation screens around a composer, 13 Pro layouts. The [Emoji Picker docs](/docs/components/base/emoji-picker) list every part, prop and helper."
+      ]
+    }
+  },
   "empty": {
     "description": "Free shadcn empty state components with illustrations for analytics, search, payments. Convert no-data screens into onboarding moments with Tailwind CSS.",
     "intro": "Browse {{count}} production-ready shadcn empty state components for zero-data screens, search results, onboarding, and error states. Covers analytics, bookmarks, tasks, automations, comments, products, search, payments, integrations, events, inbox, team members, notifications, and more: all with custom illustrations.",
@@ -3728,6 +3987,137 @@
       ]
     }
   },
+  "file-type": {
+    "title": "Shadcn File Type: Format Colors, Variants, Sizes and MIME Types",
+    "metaTitle": "Shadcn File Type: File Extension Icons",
+    "description": "{{count}} free shadcn file type icon components for attachment lists, upload queues and file browsers. 99 extensions in brand colors, 4 variants and 6 sizes.",
+    "intro": "Browse {{count}} shadcn file type icon components: 99 extensions in brand and family colors, outline, solid, light and mono variants, and 6 sizes from 18px to 56px.",
+    "keywords": [
+      "shadcn file type icon",
+      "react file type icon",
+      "shadcn/ui file icon",
+      "file extension icon react",
+      "file type icon tailwind",
+      "next.js file icon",
+      "pdf file icon react",
+      "file icon from mime type",
+      "file icon from file name",
+      "document file icon component",
+      "attachment file icon",
+      "upload file icon react",
+      "file browser icons react",
+      "colored file type icons",
+      "file format icon react",
+      "reui file type examples"
+    ],
+    "searchAliases": ["filetype", "file extension icon"],
+    "content": {
+      "title": "Shadcn File Type: Show What a File Is at a Glance",
+      "summary": [
+        "ReUI File Type is a custom shadcn component that draws the icon for a file format: a page with a folded corner and the extension in a colored band. Each format takes its brand color, PDF in orange, Word in blue, Excel in green and PowerPoint in red, else its family's color, and formats with neither, such as ZIP or TXT, are grey.",
+        "It knows 99 extensions in 11 families, from documents, spreadsheets and code to archives, design files, applications and fonts, plus a folder and a blank page for things with no extension. getFileType turns a file name, a path, a URL or a MIME type into a type, so an upload or an API row maps to an icon without a lookup table of your own.",
+        "The examples cover the places a file icon actually lands: an attachment list, an upload queue resolved from MIME types, the rows of a sortable data grid and an export format picker. Others show custom labels such as version tags, custom colors, a lock or star in place of the label, restyled labels, and what an unknown extension falls back to."
+      ],
+      "sections": [
+        {
+          "title": "What is Shadcn File Type?",
+          "paragraphs": [
+            "A file type icon tells a reader what a file is before they read its name, so an orange PDF, a green XLSX and a yellow PNG sort themselves in a long list. Shadcn File Type is 1 component and 2 helpers: FileType renders a span with role img, an inline SVG page and the extension as text in a band that overhangs the page's left edge.",
+            "A type is an extension such as pdf or .docx, matched in any case, or a family name such as image or folder, which draws the family glyph with no label. Any other text renders as a neutral grey file with that text in upper case, so an extension the table does not know still reads correctly."
+          ]
+        },
+        {
+          "title": "Sizes, labels and glyphs",
+          "paragraphs": [
+            "6 preset sizes run from mini at 18px, made for data grid rows, to xl at 56px, and every size draws the same page and label band. A Tailwind size class such as size-20 or size-full sets any other size, and the label, its corners and the stroke are measured against the box, so they scale with it.",
+            "label replaces the extension with your own text, such as a version tag or a document code, and that text shrinks only when its characters would run past the band. glyph shows the family glyph in place of the label, as does an empty label or a family type such as image."
+          ]
+        },
+        {
+          "title": "Shadcn File Type Features",
+          "featureItems": [
+            {
+              "title": "Brand and family colors.",
+              "description": "PDF orange, Word blue, Excel green, PowerPoint red and JPG violet; a format with no brand color takes its family's, and archives, plain text and fonts are grey. Every color is the 600 step, so the set reads as one palette."
+            },
+            {
+              "title": "Outline, solid, light and mono.",
+              "description": "Outline draws the page as a grey outline under a colored label and is the default, solid fills the page with the type color and sets the label on it with no badge, and light sits on a soft grey page, and mono draws every type in the theme gray."
+            },
+            {
+              "title": "The same design at every size.",
+              "description": "From mini at 18px to xl at 56px, every size draws the page and the label band, and a Tailwind size class such as size-20 scales the label and the stroke with the box."
+            },
+            {
+              "title": "Resolve any file reference.",
+              "description": "getFileType reads a file name, a path, a URL with a query or hash, a bare extension or a MIME type. A trailing slash returns folder, and a name with no extension such as README returns empty."
+            },
+            {
+              "title": "Families for grouping.",
+              "description": "getFileTypeCategory returns the family of any type, so a file list can group or filter documents, images or archives with the same table the icons use."
+            },
+            {
+              "title": "Custom labels, icons and colors.",
+              "description": "label puts a version tag or a document code in the band, icon draws a lock or a star on the page in its place, labelClassName restyles the label badge, and a single text color class on the root recolors the type."
+            },
+            {
+              "title": "CSS variables.",
+              "description": "--file-type-stroke sets the line width, --file-type-border the page outline, --file-type-fill the solid page, --file-type-foreground the label text and --file-type-radius the label corners, all on the root."
+            },
+            {
+              "title": "Server-ready.",
+              "description": "FileType has no state, effects or event handlers, so it renders in a React server component, and getFileType is a pure function you can call while rendering."
+            }
+          ]
+        },
+        {
+          "title": "Accessibility and dark mode",
+          "paragraphs": [
+            "The root is a span with role img and a name for its type, such as PDF file, Spreadsheet or Folder, and a custom text label joins that name, so a DOCX labeled V3 reads as V3, DOCX file. When the file name already sits beside the icon, as in a list row, pass aria-hidden so a screen reader does not hear the type twice, as the list examples do.",
+            "In dark mode the glyph in outline and light is mixed 30% toward white, because a 1px line in a 600 shade sits near 3:1 on a near-black page, while the label keeps the shade its white text needs. The stroke stays 1px up to 40px and grows in proportion above it, and the label band follows the style, square in Lyra and Sera and a pill in Maia, Luma and Rhea."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "How is this different from Icon Tile or a file icon from an icon set?",
+          "answer": "Icon Tile is a colored surface for any icon, and an icon set draws a generic page per family with no extension on it. File Type draws the file itself, a page with the extension in its format's color, so a PDF and a DOCX look different at a glance, and getFileType picks the type from the file name for you."
+        },
+        {
+          "question": "How do I show the icon for an uploaded file?",
+          "answer": "Pass the File's name or its type, the MIME type, to getFileType and hand the result to type. The name is the safer input: a browser leaves the MIME type empty for formats the operating system does not recognize, and getFileType returns empty for an empty or generic MIME type such as application/octet-stream."
+        },
+        {
+          "question": "What happens with an extension it does not know?",
+          "answer": "It renders a neutral grey page with that extension in upper case as the label, so an .epub or a .heif file still reads correctly. getFileType returns the extension as it is, and getFileTypeCategory reports it as file, so you can catch it in code."
+        },
+        {
+          "question": "Can I change the colors?",
+          "answer": "Yes. The type color is the root's text color, so a single class such as text-teal-700 recolors a type, and --file-type-foreground changes the label text from white. To recolor a format everywhere, wrap FileType in a component of your own that maps the type to a class. The mono variant draws every type in the theme's gray instead."
+        },
+        {
+          "question": "Can I use a size the presets do not cover?",
+          "answer": "Yes. Pass a Tailwind size class such as size-20, size-[72px] or size-full, and it replaces the preset box. The label, its padding and corners, and the stroke are measured against the rendered box, so a custom size draws the same design as the presets."
+        },
+        {
+          "question": "Is the label readable at 18px?",
+          "answer": "On a sharp screen, yes. Up to 20px the label band grows and its text turns semibold at 5.8px, so PDF or MP3 can be read in a table row, while the format color carries the type at a glance. Keep the file name beside the icon for the full extension, or pass glyph to show the family glyph instead."
+        },
+        {
+          "question": "How do I show a folder or a file with no extension?",
+          "answer": "Pass folder as the type, or give getFileType a path that ends in a slash and it returns folder. A file with no extension, such as README or .env, resolves to empty, a blank page named File."
+        }
+      ]
+    },
+    "relatedComponents": {
+      "title": "Integrating With Other Components",
+      "integrationBody": [
+        "In a file list, put the icon in the media slot of [Shadcn Item](/components/item) or [Shadcn Attachment](/components/attachment), with the name and size beside it. In a table, a mini icon sits in a [Shadcn Data Grid](/components/data-grid) row next to the file name, as the file browser example shows.",
+        "For uploads, pair it with [Shadcn File Upload](/components/file-upload) for the drop zone and [Shadcn Progress](/components/progress) for each row, resolving every icon from its file. [Shadcn Icon Tile](/components/icon-tile) stays the right choice for an icon that is not a file, such as a setting or a feature.",
+        "The [Files blocks](/blocks/solutions/files) are the assembled version of a file manager, 1 Pro layout with a folder tree, list and grid views and bulk selection. The [File Type docs](/docs/components/base/file-type) list every prop, helper and CSS variable."
+      ]
+    }
+  },
   "file-upload": {
     "description": "Free shadcn file upload components with validation and preview. Custom React component with drag-drop, type validation, progress tracking for Next.js.",
     "intro": "Browse {{count}} production-ready shadcn file upload components for drag-and-drop zones, image upload with preview, gallery upload with progress tracking, avatar and cover image replacement, table-based file management, and sortable image grids: all built with accessible inputs and Sonner feedback.",
@@ -3867,11 +4257,7 @@
       ]
     },
     "inHouse": true,
-    "searchAliases": [
-      "usefileupload",
-      "dropzone",
-      "drag and drop upload"
-    ]
+    "searchAliases": ["usefileupload", "dropzone", "drag and drop upload"]
   },
   "filters": {
     "description": "Free shadcn filters components for data filtering with URL persistence. Custom React component for client and server-side filtering with date ranges.",
@@ -5046,7 +5432,7 @@
       "title": "Shadcn Kanban: Drag-and-Drop Task Boards for React",
       "summary": [
         "ReUI Kanban is a custom shadcn component built on `@dnd-kit/core` and `@dnd-kit/sortable` : the same collision-detection engine used across ReUI's Sortable and Data Grid components. Cards drag between columns with pointer and keyboard support, drag overlays prevent layout shift, and the board state is plain React state you can wire to any backend.",
-        "{{count}} components cover placeholder overlay, dynamic overlay, frame-column layout, minimal stacked boards, and a feature roadmap view with per-column progress tracking.",
+        "{{count}} components cover placeholder overlay, dynamic overlay, frame-column layout, minimal stacked boards, and a feature roadmap view with a progress bar on each card.",
         "The sections below cover what ReUI Kanban provides, why teams adopt it for product management and CRM, and how it composes with Card, Badge, Avatar, and other shadcn primitives."
       ],
       "sections": [
@@ -5054,7 +5440,7 @@
           "title": "What is Shadcn Kanban?",
           "paragraphs": [
             "ReUI Kanban is a custom drag-and-drop board component for React, not part of the base shadcn/ui library. It is built on `@dnd-kit/core` for sensor and collision detection, `@dnd-kit/sortable` for the sortable context around cards and columns, and composes shadcn Card, Badge, Button, Avatar, and Progress for card content.",
-            "Each board component exposes columns and cards as plain data structures : arrays of column objects containing card arrays. So you can sync state to a REST API, GraphQL mutation, or Next.js Server Action after each drag. The drag overlay duplicates the active card during a drag, keeping the source column stable and giving users a clear visual target."
+            "Each board component exposes columns and cards as plain data structures : an object keyed by column id, each holding its array of cards. So you can sync state to a REST API, GraphQL mutation, or Next.js Server Action after each drag. The drag overlay duplicates the active card during a drag, keeping the source column stable and giving users a clear visual target."
           ]
         },
         {
@@ -5081,7 +5467,7 @@
             },
             {
               "title": "Feature Roadmap Variant.",
-              "description": "Built-in roadmap component groups cards by status with per-column Progress indicators. Ready to wire into product planning, ticket tracking, or release management systems."
+              "description": "Built-in roadmap component groups cards by status, with a Progress bar on each card. Ready to wire into product planning, ticket tracking, or release management systems."
             },
             {
               "title": "Composable Card Content.",
@@ -5089,7 +5475,7 @@
             },
             {
               "title": "Plain State : Wire to Any Backend.",
-              "description": "Board state is an array of column objects. After each drag, call your Server Action, REST endpoint, or GraphQL mutation with the new order. No proprietary state management required."
+              "description": "Board state is a plain object keyed by column id, each holding its array of cards (`Record<columnId, T[]>`). After each drag, call your Server Action, REST endpoint, or GraphQL mutation with the new order. No proprietary state management required."
             },
             {
               "title": "Keyboard Accessible Reordering.",
@@ -5723,10 +6109,7 @@
       "shadcn chat message component",
       "reui message scroller examples"
     ],
-    "searchAliases": [
-      "stick to bottom",
-      "scroll to bottom"
-    ],
+    "searchAliases": ["stick to bottom", "scroll to bottom"],
     "content": {
       "title": "Shadcn Message Scroller: Streaming, Anchored Turns and Prepended History",
       "summary": [
@@ -6609,10 +6992,7 @@
       "react feedback form component",
       "reui questionnaire examples"
     ],
-    "searchAliases": [
-      "survey",
-      "survey form"
-    ],
+    "searchAliases": ["survey", "survey form"],
     "content": {
       "title": "Shadcn Questionnaire: One Question at a Time, in a Real Form",
       "summary": [
@@ -7407,9 +7787,7 @@
         "Pair select with [Shadcn Button](/components/button) for form submission. Add [Shadcn Popover](/components/popover) to provide help text or examples if users are unsure which option to pick. For mobile optimization, offer [Shadcn Native Select](/components/native-select) as an alternative that uses OS-level pickers."
       ]
     },
-    "searchAliases": [
-      "dropdown"
-    ]
+    "searchAliases": ["dropdown"]
   },
   "separator": {
     "description": "{{count}} separator components for dividing content sections. Semantic HTML dividers, vertical layouts, decorative lines, and full WCAG accessibility.",
@@ -8407,8 +8785,8 @@
   },
   "stepper": {
     "description": "{{count}} free shadcn stepper components: progress bars, segmented bars, vertical, loading state, controlled, icons, badges, and inline titles. Copy-ready for React and Next.js. Walk React users through multi-step forms with Tailwind CSS-styled step indicators.",
-    "metaDescription": "{{count}} free shadcn stepper components: progress bars, icons, and badges. Walk React users through multi-step forms with Tailwind CSS-styled step indicators.",
-    "intro": "Browse {{count}} production-ready shadcn stepper components for multi-step forms, onboarding flows, and checkout processes. Covers progress bar, segmented progress, vertical orientation, completed state, loading state, controlled navigation, icons and badges, step descriptions, and inline title variants: a custom ReUI component.",
+    "metaDescription": "{{count}} free shadcn stepper components for multi-step forms, onboarding, billing setup, shipment tracking and incident resolution, with nested sub-steps.",
+    "intro": "Browse {{count}} shadcn stepper components for multi-step forms, onboarding, billing and shipment tracking. Layouts range from numbered steps to chevron steps, step cards and collapsible sub-steps.",
     "keywords": [
       "shadcn stepper",
       "react stepper component",
@@ -8422,65 +8800,68 @@
       "react wizard component",
       "accessible stepper react",
       "react step progress bar",
-      "shadcn create",
+      "vertical stepper react",
+      "chevron stepper",
+      "order tracking stepper",
+      "nested stepper sub-steps",
       "reui stepper examples"
     ],
     "content": {
-      "title": "Shadcn Stepper: Multi-Step Forms and Onboarding Flows",
+      "title": "Shadcn Stepper: Multi-Step Forms, Onboarding and Order Tracking",
       "summary": [
-        "ReUI Stepper is a custom shadcn component for guiding users through multi-step processes. It renders step indicators: numbered circles, icons, or progress segments: connected by a progress line, and controls which step is active, completed, or pending.",
-        "{{count}} components cover basic steppers, step content panels, progress bar indicator, segmented progress bar, vertical orientation with descriptions, vertical with titles, completed state, loading state per step, controlled navigation, step with titles and indicator, icons and badges per step, step descriptions, and inline title layouts.",
-        "The sections below explain the component model, use cases in checkout and onboarding, features, and how Stepper composes with Form, Button, and Badge."
+        "ReUI Stepper is a custom shadcn component that shows where a person is in a multi-step flow and swaps the content for the step they pick. It is 10 composable parts and 2 hooks, renders as an accessible tab list, and puts every step in 1 of 3 states (active, completed or inactive), with a loading flag for the active step.",
+        "The basic examples cover numbered and titled steps, progress and segmented bars, icons and badges, descriptions, a controlled stepper with Previous and Next, and vertical layouts. The newer ones model real flows: shipment tracking, billing setup, new hire onboarding and incident and ticket resolution.",
+        "The largest examples nest steps inside steps. 2 more turn the steps into an expandable outline, for purchase order checks and a security review of 29 checks."
       ],
       "sections": [
         {
           "title": "What is Shadcn Stepper?",
           "paragraphs": [
-            "ReUI Stepper is a custom component: not part of base shadcn/ui: that renders a multi-step progress indicator with controlled step navigation. Each step has an index, title, optional description, and content panel. The active step is set from outside via props (controlled mode) or managed internally (uncontrolled). Steps transition between pending, active, completed, loading, and error states.",
-            "{{count}} components show steppers in realistic multi-step form layouts: a checkout stepper with address, payment, and confirm steps; an onboarding wizard with account setup, profile, and preferences; a form with per-step validation where the next button is disabled until the current step's fields pass Zod validation."
+            "Stepper shows a sequence of steps, marks which one is current, and swaps the content below for the step a person picks. Stepper holds the active step, StepperNav lays the steps out in a row or a column, each StepperItem holds a StepperTrigger (with its indicator, title and description) and a StepperSeparator, and StepperPanel with StepperContent shows the active step's content.",
+            "Each step works out its own state: steps before the active one are completed, the active one is active and later ones are inactive. The completed prop marks a later step done for non-linear flows, and the item, trigger, indicator, separator, title and description all carry the state as a data attribute, so a green separator after completed steps is a class, not extra React state."
           ]
         },
         {
           "title": "Why Use Shadcn Stepper?",
           "paragraphs": [
-            "Multi-step forms reduce cognitive load by breaking long forms (checkout, registration, onboarding, application) into smaller focused screens. A clear step indicator shows users where they are, how many steps remain, and which steps are complete: reducing abandonment. ReUI Stepper provides all visual states (completed checkmark, loading spinner, error icon) and orientation variants without custom CSS.",
-            "The controlled stepper component is critical for form validation: only advance when the current step's fields pass validation, and allow back navigation to any completed step. Pair with React Hook Form for per-step validation and [Shadcn Badge](/docs/components/base/badge) for optional step labels."
+            "A multi-step flow needs 3 things a progress bar does not give you: a record of what is done, a way back to an earlier step, and content that changes with the step. Stepper handles all 3, controlled through value and onValueChange or uncontrolled from defaultValue, and leaves the look to you.",
+            "For a full screen rather than a component, ReUI Pro builds on the same primitive: all 7 [Wizard](/blocks/application/wizard) blocks, 8 of the 9 [Onboarding](/blocks/application/onboarding) blocks and 5 of the 7 [Checkout](/blocks/ecommerce/checkout) blocks import Stepper. The wizards alone cover workspace setup, vendor onboarding, team invites, billing upgrades, invoice sending, app publishing and payment flows."
           ]
         },
         {
           "title": "Shadcn Stepper Features",
           "featureItems": [
             {
-              "title": "Custom ReUI Component.",
-              "description": "ReUI Stepper is a custom shadcn component not available in base shadcn/ui. It is purpose-built for multi-step forms, onboarding wizards, and checkout flows with full state management and accessibility."
+              "title": "Composable parts.",
+              "description": "10 parts and 2 hooks, useStepper and useStepItem, so a step can be a dot, a chevron, a card or a row in a side rail while selection, keyboard handling and ARIA stay in the primitive."
             },
             {
-              "title": "Progress Bar and Segmented Indicator.",
-              "description": "Two progress display modes: a continuous progress bar that fills proportionally as steps complete, and a segmented bar where each step occupies an equal segment: useful for checkout indicators."
+              "title": "Horizontal and vertical.",
+              "description": "orientation turns StepperNav into a row or a column. Vertical examples include delivery stops, side rails, status lists and right-aligned sub-steps, and several horizontal ones scroll sideways in a narrow container rather than squeeze their labels."
             },
             {
-              "title": "Vertical and Horizontal Orientation.",
-              "description": "Horizontal orientation for compact headers; vertical orientation for sidebars and step-by-step guides where each step has a description and content area below the indicator."
+              "title": "Indicators for every state.",
+              "description": "The indicators map sets what a step shows when active, completed, inactive or loading, and falls back to the indicator's children. loading shows only on the active step, so a spinner follows the selection, and the icons come from your own icon set."
             },
             {
-              "title": "Completed, Loading, and Error States.",
-              "description": "Steps transition through pending, active, loading (async operations with Spinner), completed (checkmark icon), and error states. Each state has a distinct visual indicator."
+              "title": "Controlled or uncontrolled.",
+              "description": "Pass value and onValueChange to drive the stepper from your own state, or defaultValue to let it track the step. In controlled mode a click only reports the step, so you decide whether the flow moves."
             },
             {
-              "title": "Controlled Navigation.",
-              "description": "Fully controlled via activeStep prop. Pass onStepChange to handle navigation. Disable the next button until the current step validates. Allow back navigation to any completed step."
+              "title": "Route and shipment tracking.",
+              "description": "Delivery stops with arrival times, a truck route with rest stops, a sea freight route across 5 ports, and checkpoint tracks with timestamps, ETAs and a transit arrow."
             },
             {
-              "title": "Icons and Badges per Step.",
-              "description": "Replace number indicators with custom icons (upload, payment, confirm) and add Badge labels (optional, required, new) to step indicators without breaking the progress line layout."
+              "title": "Chevron, breadcrumb and segment steps.",
+              "description": "Interlocking chevron stages for a sales pipeline and for proposal and contract plans, a breadcrumb of step names split by chevrons, and color-coded bars along the top or bottom edge of a panel."
             },
             {
-              "title": "Step Descriptions and Inline Titles.",
-              "description": "Each step supports title and description text. Inline title variant places the title on the same line as the indicator for compact layouts; separate title variant stacks them vertically for detailed guides."
+              "title": "Step cards, side rails and status lists.",
+              "description": "Clickable step cards in a row or a column, a side rail with an icon per step, and status lists that mark each row with a check, a spinning ring or a vertical bar."
             },
             {
-              "title": "Step Content Panels.",
-              "description": "Each step renders a content panel: form fields, information, or confirmation UI: that shows when the step is active. Transition between steps with smooth content swap or page-level routing."
+              "title": "Nested sub-steps.",
+              "description": "Phases that unfold their tasks in a collapsible card or on an inset rail, with Previous and Next walking all 17 tasks across phases and opening the phase they land in."
             }
           ]
         },
@@ -8488,8 +8869,8 @@
           "title": "ReUI Stepper: In-House Custom Shadcn Component",
           "inHouse": true,
           "paragraphs": [
-            "ReUI Stepper is an in-house component built and maintained by the ReUI team as part of the ReUI open-source library. It is designed to integrate seamlessly into any shadcn/ui project: following the same copy-and-own installation model. The component source lands directly in your repository; you own it, extend it, and style it with your Tailwind CSS tokens. ReUI Stepper is a custom multi-step progress component not available in base shadcn/ui. It renders step indicators in horizontal and vertical orientations with distinct visual states: pending, active, loading (Spinner), completed (checkmark), and error. {{count}} components cover all common multi-step form, checkout, and onboarding wizard layouts with controlled and uncontrolled navigation modes.",
-            "The component is available in two API flavors to match your primitive stack: a Radix UI version for teams using Radix-based shadcn primitives, and a Base UI version for teams on `@base-ui/react`. Both versions share identical visual output and Tailwind CSS styling: only the underlying headless primitive differs. ReUI maintains 22 such in-house components, all available in both Radix and Base UI versions, each with dedicated documentation covering the full component API, usage examples, and prop references."
+            "ReUI Stepper is built and maintained by the ReUI team and is not part of base shadcn/ui. It installs with the shadcn CLI as 1 file in your repository, so you own the source and style it with your Tailwind CSS tokens.",
+            "It comes in a Base UI version and a Radix UI version that differ in 1 place: StepperTrigger takes render in the Base UI version and asChild in the Radix version to compose onto another element, such as the Frame panel the step card examples use. Stepper is 1 of 27 ReUI primitives, each documented in both versions with its parts, props and examples."
           ],
           "docsLinks": [
             {
@@ -8505,37 +8886,41 @@
       ],
       "faqs": [
         {
-          "question": "How do I validate each step before advancing to the next?",
-          "answer": "Use React Hook Form with mode: 'onChange' and call trigger(['fieldA', 'fieldB']) when the user clicks Next. If trigger returns true, advance. If false, errors display and navigation is blocked."
+          "question": "How is Stepper different from Timeline?",
+          "answer": "Stepper is interactive: its steps are tabs a person clicks or reaches with the keyboard, and the content below changes with the selected step. Timeline is a read-only list of events that marks entries up to its value as completed, with no triggers, keyboard handling or content panels. Use Stepper for a flow someone moves through, and Timeline for a history they read."
         },
         {
-          "question": "Can I navigate back without losing the data I entered in previous steps?",
-          "answer": "Yes. Controlled stepper keeps all step values in form state (React Hook Form maintains them). Clicking Back navigates to the prior step. The form state persists, so previous entries remain intact."
+          "question": "How do I stop people moving on until a step is valid?",
+          "answer": "Run the stepper controlled with value and onValueChange. A click on a step only calls onValueChange with that step, so validate the current step first and ignore the call when it fails, and disable the Next button the same way. Mark steps that cannot be reached yet with disabled on their StepperItem."
         },
         {
-          "question": "Can I create a non-linear stepper where users skip steps?",
-          "answer": "Yes. In controlled mode, allow onStepChange to set activeStep to any index, not just current +/- 1. Disable steps that shouldn't be accessed yet. Show conditional step content based on earlier choices."
+          "question": "Do earlier steps keep what was typed when I go back?",
+          "answer": "Not by default. StepperContent renders only the active step, so the fields of other steps unmount and uncontrolled inputs lose their values. Keep the values in parent state or a form library, or pass forceMount so every panel stays in the page, hidden while inactive."
         },
         {
-          "question": "How do I persist step completion state if the user closes and returns?",
-          "answer": "Save step state to localStorage or session storage after each step completes. On page reload, restore the state and resume from the last completed step. Use a Server Action to persist to a database."
+          "question": "Can an earlier step show as skipped or incomplete?",
+          "answer": "Not through the step state. Every step before the active one is completed whatever happened in it, and the completed prop can mark a step done but never undo one. Keep skipped steps in your own state and style that StepperItem with a class, and leave the completed entry out of the indicators map, because it wins over the indicator's children."
         },
         {
-          "question": "Can I embed a stepper inside a dialog?",
-          "answer": "Yes. The stepper renders inside the dialog body. Content panels swap as users navigate steps. The dialog footer has Previous and Next buttons. Use a callback to close the dialog on completion."
+          "question": "Is Stepper keyboard accessible?",
+          "answer": "Yes. It renders a tab list with a tab per step, aria-selected on the current one and roving focus, so Tab lands on the selected step. Arrow keys move focus between steps and wrap at the ends, Home and End jump to the first and last, and Enter or Space selects. The newer examples also move focus to the other button when Previous or Next turns disabled at either end."
+        },
+        {
+          "question": "Can I put 2 steppers on one page, or nest one inside another?",
+          "answer": "Yes. Give each StepperTrigger its own id and aria-controls, for example from useId, so the ids stay unique on the page. The vertical step card, status list and nested sub-step examples show the pattern."
         },
         {
           "question": "What's the difference between Radix and Base UI versions of ReUI Stepper?",
-          "answer": "Both versions have identical visual output and features. Radix UI version uses Radix primitives for button, form, and accessibility. Base UI version uses Base UI primitives. Choose the version that matches your existing primitive stack."
+          "answer": "Only StepperTrigger differs. The Base UI version takes render and the Radix version takes asChild to place the trigger on another element, and the state logic, keyboard handling, markup and classes are the same. Choose the version that matches the rest of your shadcn primitives."
         }
       ]
     },
     "relatedComponents": {
       "title": "Integrating With Other Components",
       "integrationBody": [
-        "Pair Stepper with React Hook Form: use trigger() for per-step field validation before advancing, and handleSubmit() on the final step. Wrap each step's fields in [Shadcn Field](/components/field) with [Shadcn Label](/components/label) and error message slots.",
-        "Use [Shadcn Button](/components/button) for Previous and Next navigation controls below the step content, [Shadcn Spinner](/components/spinner) inside the Next button during async step transitions, and [Shadcn Badge](/docs/components/base/badge) for optional or required step labels on indicators.",
-        "Embed Stepper in [Shadcn Dialog](/components/dialog) for modal multi-step flows like payment setup or account creation, or in [Shadcn Card](/components/card) for inline setup wizards on dashboard pages."
+        "Use [Shadcn Button](/components/button) for Previous and Next below the panel, and [Shadcn Badge](/components/badge) for a status on a step such as On time or an 8H rest stop. [Shadcn Frame](/components/frame) and [Shadcn Icon Tile](/components/icon-tile) give the step cards, side rails and framed headers their surfaces and icons.",
+        "For phases with their own tasks, nest a second Stepper inside [Shadcn Collapsible](/components/collapsible) so only the open phase shows its sub-steps. When the steps grow into an outline of dozens of checks, [Shadcn Tree](/components/tree) carries the expand, collapse and keyboard navigation instead.",
+        "The assembled versions are ReUI Pro blocks: the 7 [Wizard](/blocks/application/wizard) blocks and 8 of the 9 [Onboarding](/blocks/application/onboarding) blocks run on this primitive. The [Stepper docs](/docs/components/base/stepper) list every part, prop and hook."
       ]
     },
     "inHouse": true
@@ -8968,9 +9353,7 @@
       "shadcn date time picker",
       "reui time picker examples"
     ],
-    "searchAliases": [
-      "timepicker"
-    ],
+    "searchAliases": ["timepicker"],
     "content": {
       "title": "Shadcn Time Picker: Pick, Type and Limit a Time of Day",
       "summary": [

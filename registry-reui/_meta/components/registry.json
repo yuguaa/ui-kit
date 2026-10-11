@@ -121,6 +121,12 @@
       "count": 10
     },
     {
+      "name": "color-picker",
+      "label": "Color Picker",
+      "description": "Open-source shadcn color picker components for brand settings, theme editors, label colors, and design tools.",
+      "count": 15
+    },
+    {
       "name": "combobox",
       "label": "Combobox",
       "description": "Open-source shadcn combobox components for searchable selection, async lookup, and command menus.",
@@ -169,6 +175,12 @@
       "count": 18
     },
     {
+      "name": "emoji-picker",
+      "label": "Emoji Picker",
+      "description": "Open-source shadcn emoji picker components for message composers, reactions, page icons, statuses, and custom team emoji.",
+      "count": 8
+    },
+    {
       "name": "empty",
       "label": "Empty",
       "description": "Open-source shadcn empty state components for zero-data screens, first-run onboarding, and guided next steps.",
@@ -185,6 +197,12 @@
       "label": "Field",
       "description": "Open-source shadcn form field components for form composition, validated inputs, and helper text.",
       "count": 11
+    },
+    {
+      "name": "file-type",
+      "label": "File Type",
+      "description": "Open-source shadcn file type icon components for file extensions, export formats, and file browsers.",
+      "count": 14
     },
     {
       "name": "file-upload",
@@ -436,7 +454,7 @@
       "name": "stepper",
       "label": "Stepper",
       "description": "Open-source shadcn stepper components for multi-step forms, checkout flows, and onboarding.",
-      "count": 15
+      "count": 44
     },
     {
       "name": "switch",
@@ -499,5 +517,5 @@
       "count": 7
     }
   ],
-  "totalComponents": 1175
+  "totalComponents": 1241
 }

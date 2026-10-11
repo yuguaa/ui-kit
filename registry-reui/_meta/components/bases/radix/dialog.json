@@ -55,7 +55,7 @@
     {
       "name": "c-dialog-3",
       "type": "registry:block",
-      "title": "Dialog with scrollable content and sticky footer.",
+      "title": "Dialog with scrollable content and sticky footer",
       "categories": [
         "dialog"
       ],
@@ -80,7 +80,7 @@
     {
       "name": "c-dialog-4",
       "type": "registry:block",
-      "title": "Dialog without a close button.",
+      "title": "Dialog without a close button",
       "categories": [
         "dialog"
       ],

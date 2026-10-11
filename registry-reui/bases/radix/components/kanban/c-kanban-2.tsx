@@ -35,7 +35,6 @@ interface Task {
 const COLUMN_TITLES: Record<string, string> = {
   backlog: "Backlog",
   inProgress: "In Progress",
-  review: "Review",
   done: "Done",
 }
 

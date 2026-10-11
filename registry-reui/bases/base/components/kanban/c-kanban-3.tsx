@@ -156,7 +156,7 @@ export default function Pattern() {
     >
       <KanbanBoard className="grid auto-rows-fr grid-cols-3">
         {Object.entries(columns).map(([columnId, tasks]) => {
-          const col = COLUMNS[columnId]
+          const col = COLUMNS[columnId] ?? { title: columnId, icon: null }
           return (
             <KanbanColumn key={columnId} value={columnId}>
               <Frame spacing="sm" className="h-full">

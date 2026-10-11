@@ -455,6 +455,29 @@
       ]
     },
     {
+      "name": "color-picker",
+      "type": "registry:ui",
+      "title": "Shadcn color picker with a saturation area, hue, alpha and channel sliders, a hue wheel, HEX, RGB, HSL, HSB and OKLCH fields, swatches and an eye dropper.",
+      "description": "Shadcn color picker with a saturation area, hue, alpha and channel sliders, a hue wheel, HEX, RGB, HSL, HSB and OKLCH fields, swatches and an eye dropper.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu",
+        "input-group",
+        "popover",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "color-picker.tsx",
+          "type": "registry:ui",
+          "target": "components/reui/color-picker.tsx"
+        }
+      ]
+    },
+    {
       "name": "data-grid",
       "type": "registry:ui",
       "title": "Data Grid",
@@ -810,6 +833,31 @@
           "path": "date-selector.tsx",
           "type": "registry:ui",
           "target": "components/reui/date-selector.tsx"
+        }
+      ]
+    },
+    {
+      "name": "emoji-picker",
+      "type": "registry:ui",
+      "title": "Shadcn emoji picker with search, shortcodes, skin tones, frequently used and custom emoji, a category bar, a virtualized grid and 28 data languages.",
+      "description": "Shadcn emoji picker with search, shortcodes, skin tones, frequently used and custom emoji, a category bar, a virtualized grid and 28 data languages.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu",
+        "empty",
+        "input-group",
+        "popover",
+        "skeleton",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "emoji-picker.tsx",
+          "type": "registry:ui",
+          "target": "components/reui/emoji-picker.tsx"
         }
       ]
     },
@@ -1188,6 +1236,24 @@
           "path": "event-calendar-types.tsx",
           "type": "registry:ui",
           "target": "components/reui/event-calendar/event-calendar-types.tsx"
+        }
+      ]
+    },
+    {
+      "name": "file-type",
+      "type": "registry:ui",
+      "title": "Shadcn file type icon in brand and family colors, outline, solid, light and mono variants, sizes down to 18px for data grid rows, and resolution from a file name or MIME type.",
+      "description": "Shadcn file type icon in brand and family colors, outline, solid, light and mono variants, sizes down to 18px for data grid rows, and resolution from a file name or MIME type.",
+      "dependencies": [
+        "class-variance-authority",
+        "cn"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "file-type.tsx",
+          "type": "registry:ui",
+          "target": "components/reui/file-type.tsx"
         }
       ]
     },

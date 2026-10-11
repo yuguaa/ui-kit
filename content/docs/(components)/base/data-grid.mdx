@@ -58,7 +58,7 @@ Two entries in the bundle are neither features nor row models:
   comparator by extending the bundle with `tableFeatures({ ...dataGridFeatures, sortFns: { ...} })`, or pass a
   function directly as `sortFn`.
 - `columnMeta`, which types `columnDef.meta` as `DataGridColumnMeta` (`headerTitle`, `headerClassName`,
-  `cellClassName`, `skeleton`, `expandedContent`, `autoSize`, `fillWidth`, `cellEdit`). A features-level `columnMeta` slot wins over the
+  `cellClassName`, `skeleton`, `expandedContent`, `autoSize`, `fillWidth`, `headerColSpan`, `cellEdit`). A features-level `columnMeta` slot wins over the
   global `ColumnMeta` interface, so the v8 `declare module` augmentation is ignored on any table built with
   `dataGridFeatures`. Add your own fields to `DataGridColumnMeta` in the installed `data-grid.tsx` instead.
 
@@ -433,7 +433,7 @@ The root component that provides the table context.
 | `tableClassNames`      | `DataGridTableClassNames` | -                      | Custom CSS classes for various table parts.                            |
 | `className`            | `string`                  | -                      | Additional CSS classes for the root grid component.                    |
 
----
+### DataGridTableLayout
 
 | Property            | Type                    | Default   | Description                                                 |
 | :------------------ | :---------------------- | :-------- | :---------------------------------------------------------- |
@@ -515,6 +515,8 @@ Dedicated scroll wrapper for wide grids and sticky headers.
 
 The scroll area reads its direction from the layout, so an RTL page (`dir="rtl"`) needs no `DirectionProvider` from either library. Both scrollbars are `--data-grid-scrollbar-size` thick (10px by default) with a thumb 3px narrower, and the whole track thickness grabs the thumb. Set the variable on an ancestor for a larger drag target.
 
+In the same mode the vertical track runs from the bottom of the sticky header to the top of a sticky footer: when the `tfoot` or its cells are `position: sticky` (for example `[&_tfoot_td]:sticky [&_tfoot_td]:bottom-0` on `tableClassNames.base`), the track ends above it, so the thumb never covers the totals.
+
 While the sticky-header scroll mode is active (`headerSticky` with a vertical orientation), the root carries `data-overflow-vertical="true"` whenever content overflows vertically. Use it as an ancestor selector to style scrollable vs short grids, for example a closing bottom border on the last row only when a fixed-height grid is partially filled: `[[data-slot=data-grid-scroll-area]:not([data-overflow-vertical])_&:last-child>td]:border-b` on `tableClassNames.bodyRow`.
 
 ---
@@ -529,6 +531,47 @@ Pinned cells and the `footerBackground` band paint an opaque surface from `--dat
 | :-------------- | :---------- | :------ | :------------------------------------------------- |
 | `footerContent` | `ReactNode` | -       | Optional footer content rendered inside `<tfoot>`. |
 | `renderHeader`  | `boolean`   | `true`  | Whether to render the table header.                |
+
+---
+
+### Grouped Headers
+
+Nest `columns` in a column definition and the grid renders one header row per level. A column whose group chain is shorter than the deepest one becomes a single cell with a real `rowSpan`, its label level with the other bottom-row labels, instead of a stack of empty cells. Each group draws a rule under exactly its own columns, and column lines (`cellBorder` or `columnsResizable`) run unbroken through every header row. A group's resize handle sits on its last column's edge and resizes that column.
+
+`meta.headerColSpan` spans one header cell over adjacent columns without adding a group row. Body cells stay one per column.
+
+```tsx
+const columns: ColumnDef<DataGridFeatures, Campaign>[] = [
+  { id: "name", accessorKey: "name", header: "Campaign" },
+  {
+    id: "delivery",
+    header: "Delivery",
+    columns: [
+      { id: "spend", accessorKey: "spend", header: "Spend" },
+      { id: "revenue", accessorKey: "revenue", header: "Revenue" },
+    ],
+  },
+  {
+    id: "roasActual",
+    accessorKey: "roasActual",
+    header: "ROAS vs target",
+    meta: { headerColSpan: 2 },
+  },
+  { id: "roasTarget", accessorKey: "roasTarget" },
+]
+```
+
+The header renders as one cell with a literal `colSpan`, and a covered column renders no header cell of its own. A span:
+
+- covers the next sibling columns in definition order, never leaves its parent group, and skips a hidden column rather than leaving a gap;
+- ends early when a covered column is moved away or pinned to another side, so it only ever covers columns rendered beside it;
+- is as wide as the columns it covers, and under `columnsResizable` has one handle on its end edge that resizes the last covered column (an end-pinned span's handle sits on its start edge and resizes the spanning column);
+- is not a drag source under `DataGridTableDnd`, and a column dropped on it lands beside it, never inside; the header menu moves it with its covered columns as one;
+- turns column virtualization off, like a grouped header.
+
+`headerColSpan` applies to leaf columns, and values below 2 are ignored. Every header cell is a `th` with `scope="col"`, and a group or span cell's `colSpan` names the columns it heads.
+
+`getDataGridHeaderSpans(table)` from the `data-grid` module returns the spans in effect after hiding, ordering and pinning, as a `Map` from the spanning column's id to the columns it covers, for example to give a footer cell the same `colSpan`.
 
 ---
 
@@ -551,7 +594,7 @@ The component for table pagination controls. The record info comes from the `rec
 
 `sizesInfo`, `sizesLabel`, `sizesDescription` and `more` are still accepted by `DataGridPaginationProps` but are not rendered.
 
----
+### DataGridColumnHeader
 
 | Prop         | Type                                      | Default | Description                                                                                                   |
 | :----------- | :---------------------------------------- | :------ | :------------------------------------------------------------------------------------------------------------ |
@@ -562,7 +605,7 @@ The component for table pagination controls. The record info comes from the `rec
 | `visibility` | `boolean`                                 | `false` | Whether to include column visibility controls in the menu.                                                    |
 | `className`  | `string`                                  | -       | Additional CSS classes for the header label or trigger button.                                                |
 
----
+### DataGridColumnFilter
 
 | Prop      | Type                                                                                    | Default | Description                                       |
 | :-------- | :-------------------------------------------------------------------------------------- | :------ | :------------------------------------------------ |
@@ -588,7 +631,7 @@ const columns = [
 
 This filter writes an array of selected values, and `filterFn_arrHas` matches a scalar cell value against that array (reach for `filterFn_arrIncludesSome` when the cell itself holds an array). Without a function the value still lands in `columnFilters`, no row is ever filtered, and v9 warns in development that the filter function is not registered. The alternative is to register the names you want in your own bundle through the `filterFns` slot, the way `dataGridFeatures` registers `sortFns`.
 
----
+### DataGridColumnVisibility
 
 | Prop      | Type                                    | Default | Description                                              |
 | :-------- | :-------------------------------------- | :------ | :------------------------------------------------------- |
@@ -610,6 +653,8 @@ Used for enabling column drag-and-drop reordering with optional footer rendering
 The sortable items come from `table.state.columnOrder`, and TanStack starts that slice as an empty array, so you have to seed it and keep it controlled. Give every column an explicit `id`: `ColumnDef.id` is optional and is only derived from `accessorKey` on the built column, not on the definition object you map over.
 
 Pinned columns keep their pinned place, so they render without a grip and take no part in the reorder; with `columnsPinnable` they also stay sticky while the other columns scroll.
+
+Group header cells and `meta.headerColSpan` spans render without a grip too. A column dropped on a span lands beside it, so `arrayMove` never splits it. See [Grouped Headers](#grouped-headers).
 
 ```tsx
 const [columnOrder, setColumnOrder] = useState<string[]>(() =>
@@ -766,7 +811,7 @@ A virtualized table renderer using `@tanstack/react-virtual` for row virtualizat
 | `scrollToColumnAlign` | `"auto" \| "center" \| "start" \| "end"` | `"auto"` | Alignment used when revealing `scrollToColumnIndex`. |
 | `scrollToColumnIndex` | `number` | - | Index within the center (non-pinned) visible leaf columns to reveal; `scrollBehavior` is shared with row scrolling. |
 
-**Column virtualization.** With `columnVirtualizerOptions={{ enabled: true }}`, only the center columns inside the horizontal window render; each off-window flank collapses into one `colSpan` spacer (`data-slot="data-grid-table-virtual-col-spacer"`) whose width comes from the intact colgroup, so a fixed table layout cannot drift. It activates only under `tableLayout.width: "fixed"` (the default) with a single ungrouped header row; grouped headers or `width: "auto"` silently fall back to full-column rendering. Start- and end-pinned columns stay mounted outside the window, the footer always renders in full, both virtualizers share the grid's resolved scroll element, and RTL mirrors automatically. Windowed body cells carry `data-column-index` with their center-column index. Combining a column window with `cellSelection` is not supported yet: keyboard ranges can span unmounted columns.
+**Column virtualization.** With `columnVirtualizerOptions={{ enabled: true }}`, only the center columns inside the horizontal window render; each off-window flank collapses into one `colSpan` spacer (`data-col-spacer="start"` or `"end"`, deliberately without a `data-slot`) whose width comes from the intact colgroup, so a fixed table layout cannot drift. It activates only under `tableLayout.width: "fixed"` (the default) with a single ungrouped header row; grouped headers, a `meta.headerColSpan` span or `width: "auto"` silently fall back to full-column rendering. Start- and end-pinned columns stay mounted outside the window, the footer always renders in full, both virtualizers share the grid's resolved scroll element, and RTL mirrors automatically. Windowed body cells carry `data-column-index` with their center-column index. Combining a column window with `cellSelection` is not supported yet: keyboard ranges can span unmounted columns.
 
 **Set `manualPagination: true`.** A virtualized grid renders every row, and `dataGridFeatures` registers `paginatedRowModel`, which is the one row model in the bundle that is not inert: `table.getRowModel()` is sliced to `pageSize` (default `10`) unless the table opts out. Without it an otherwise correct virtual grid renders ten rows and stops. `manualPagination: true` is v9's way to say the data already is the page, so it keeps the pagination APIs while leaving the rows unsliced.
 
@@ -969,6 +1014,7 @@ Data rows carry these attributes so you can target them from queries, tests, and
 | `data-row-pinned`          | `"top" \| "bottom"` | Which edge the row is pinned to. Omitted entirely when the row is not pinned.                                                           |
 | `data-row-pinned-boundary` | `"top" \| "bottom"` | Marks the seam between pinned and unpinned rows: the last top-pinned row, or the first bottom-pinned row.                               |
 | `data-depth`               | `number`            | Depth of the row in a hierarchical row model (`getSubRows` trees or grouped rows). Omitted for root-level rows.                         |
+| `data-dragging`            | `"true"`            | Present on the row being carried by `DataGridTableDndRows`. Style the slot it leaves through this, never through its inline `style`.    |
 
 Header and body **cells** carry the pinning attributes below. They are the contract the grid's own sticky-column styling is built on, so they are also the hook to use for your own.
 
@@ -983,6 +1029,18 @@ These values were `left` / `right` before TanStack Table v9. v9 moves column pin
 | `data-pinned`           | `"start" \| "end"` | Which edge the column is pinned to. Omitted entirely when the column is not pinned.                                 |
 | `data-last-col`         | `"start" \| "end"` | Marks the inner boundary of a pinned group - the last start-pinned or first end-pinned column. Carries the divider. |
 | `data-outer-pinned-col` | `"start" \| "end"` | Marks the outer edge of a pinned group. Header cells only; used for background clipping.                            |
+
+Header cells carry these on every grid, so you can style each header level, group and merged cell. See [Grouped Headers](#grouped-headers).
+
+| Attribute           | Value    | Description                                                                                                       |
+| :------------------ | :------- | :---------------------------------------------------------------------------------------------------------------- |
+| `data-header-id`    | `string` | The TanStack header id, unique per cell. Use it for group and merged cells, whose ids differ from the column id. |
+| `data-header-depth` | `number` | The header row the cell starts in, from `0` at the top. Every cell of a 1-row header is `0`.                      |
+| `data-group`        | `"true"` | Present on a group cell, one whose column has child `columns`.                                                    |
+| `data-merged`       | `"true"` | Present on a cell that spans more than one header row (`rowSpan` above 1).                                        |
+| `data-span`         | `number` | The number of columns a `meta.headerColSpan` cell covers, itself included. Absent while the span is not in effect. |
+
+In a multi-level header, every cell that ends on the header's bottom edge holds its content in `[data-slot="data-grid-table-head-cell-band"]`, a bottom-row-high band that keeps merged labels level. Group rules and the column lines continued through group rows are `data-grid-table-head-group-rule` and `data-grid-table-head-divider`.
 
 Rows carry `data-row-status` (`"new" | "dirty" | "deleted"`, from `getRowStatus`) and cells `data-cell-status` (`"dirty" | "invalid"`, from `getCellStatus`) whenever those props are wired, independent of `cellSelection`; they drive the CRUD tints and corner marks. With `tableLayout.cellSelection` on, body cells additionally carry the spreadsheet contract below (plus `aria-selected` on every body cell, `true` or `false`, with `role="grid"` and `aria-multiselectable` on the table). None of these render while the flag is off.
 

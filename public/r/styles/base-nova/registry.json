@@ -9711,6 +9711,341 @@
       }
     },
     {
+      "name": "c-color-picker-1",
+      "type": "registry:block",
+      "title": "Inline color panel",
+      "description": "Saturation area, hue and opacity sliders, format fields and preset swatches rendered in place.",
+      "dependencies": [],
+      "registryDependencies": [
+        "card",
+        "@reui/color-picker"
+      ],
+      "files": [
+        {
+          "path": "c-color-picker-1.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-color-picker-1.tsx"
+        }
+      ],
+      "meta": {
+        "order": 1
+      }
+    },
+    {
+      "name": "c-color-picker-10",
+      "type": "registry:block",
+      "title": "Text and highlight colors",
+      "description": "Editor toolbar buttons with preset palettes and a way back to the default color.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui/color-picker",
+        "@reui/frame",
+        "separator",
+        "toggle"
+      ],
+      "files": [
+        {
+          "path": "c-color-picker-10.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-color-picker-10.tsx"
+        }
+      ],
+      "meta": {
+        "order": 10
+      }
+    },
+    {
+      "name": "c-color-picker-11",
+      "type": "registry:block",
+      "title": "Channel sliders",
+      "description": "Red, green, blue and opacity sliders with numeric fields, each track redrawn from the others.",
+      "dependencies": [],
+      "registryDependencies": [
+        "card",
+        "@reui/color-picker",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "c-color-picker-11.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-color-picker-11.tsx"
+        }
+      ],
+      "meta": {
+        "order": 11
+      }
+    },
+    {
+      "name": "c-color-picker-12",
+      "type": "registry:block",
+      "title": "Design inspector",
+      "description": "Fill, stroke and shadow rows that open a compact picker with vertical hue and opacity tracks.",
+      "dependencies": [],
+      "registryDependencies": [
+        "card",
+        "@reui/color-picker"
+      ],
+      "files": [
+        {
+          "path": "c-color-picker-12.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-color-picker-12.tsx"
+        }
+      ],
+      "meta": {
+        "order": 12
+      }
+    },
+    {
+      "name": "c-color-picker-13",
+      "type": "registry:block",
+      "title": "Contrast checker",
+      "description": "Text and background pickers with a live preview, the WCAG ratio and AA and AAA results.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui/badge",
+        "button",
+        "card",
+        "@reui/color-picker",
+        "field",
+        "@reui/frame"
+      ],
+      "files": [
+        {
+          "path": "c-color-picker-13.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-color-picker-13.tsx"
+        }
+      ],
+      "meta": {
+        "order": 13
+      }
+    },
+    {
+      "name": "c-color-picker-14",
+      "type": "registry:block",
+      "title": "Brand scale",
+      "description": "11 shades from 50 to 950 generated in OKLCH from one base color, copied as CSS variables.",
+      "dependencies": [],
+      "registryDependencies": [
+        "button",
+        "card",
+        "@reui/color-picker",
+        "field"
+      ],
+      "files": [
+        {
+          "path": "c-color-picker-14.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-color-picker-14.tsx"
+        }
+      ],
+      "meta": {
+        "order": 14
+      }
+    },
+    {
+      "name": "c-color-picker-15",
+      "type": "registry:block",
+      "title": "Form field with validation",
+      "description": "Native form field with a required check, an error, reset and the submitted value.",
+      "dependencies": [],
+      "registryDependencies": [
+        "button",
+        "@reui/color-picker",
+        "field"
+      ],
+      "files": [
+        {
+          "path": "c-color-picker-15.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-color-picker-15.tsx"
+        }
+      ],
+      "meta": {
+        "order": 15
+      }
+    },
+    {
+      "name": "c-color-picker-2",
+      "type": "registry:block",
+      "title": "Popover picker",
+      "description": "Outline trigger in a labelled field that opens the full picker with an eye dropper and format fields.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui/color-picker",
+        "field"
+      ],
+      "files": [
+        {
+          "path": "c-color-picker-2.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-color-picker-2.tsx"
+        }
+      ],
+      "meta": {
+        "order": 2
+      }
+    },
+    {
+      "name": "c-color-picker-3",
+      "type": "registry:block",
+      "title": "Color input",
+      "description": "Typable field that reads hex, rgb(), hsl(), oklch() or a CSS name, with a swatch that opens the picker.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui/color-picker",
+        "field"
+      ],
+      "files": [
+        {
+          "path": "c-color-picker-3.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-color-picker-3.tsx"
+        }
+      ],
+      "meta": {
+        "order": 3
+      }
+    },
+    {
+      "name": "c-color-picker-4",
+      "type": "registry:block",
+      "title": "Opacity",
+      "description": "A banner overlay with an opacity slider and field, written as rgb() with alpha.",
+      "dependencies": [],
+      "registryDependencies": [
+        "card",
+        "@reui/color-picker",
+        "field"
+      ],
+      "files": [
+        {
+          "path": "c-color-picker-4.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-color-picker-4.tsx"
+        }
+      ],
+      "meta": {
+        "order": 4
+      }
+    },
+    {
+      "name": "c-color-picker-5",
+      "type": "registry:block",
+      "title": "Preset swatches",
+      "description": "Round label colors to pick from, a plus that opens the full picker, and a live label preview.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui/badge",
+        "card",
+        "@reui/color-picker",
+        "field",
+        "input"
+      ],
+      "files": [
+        {
+          "path": "c-color-picker-5.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-color-picker-5.tsx"
+        }
+      ],
+      "meta": {
+        "order": 5
+      }
+    },
+    {
+      "name": "c-color-picker-6",
+      "type": "registry:block",
+      "title": "OKLCH theme token",
+      "description": "Lightness, chroma and hue sliders for a --primary token, with a live Button and Badge preview.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui/badge",
+        "button",
+        "card",
+        "checkbox",
+        "@reui/color-picker",
+        "input-group",
+        "label"
+      ],
+      "files": [
+        {
+          "path": "c-color-picker-6.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-color-picker-6.tsx"
+        }
+      ],
+      "meta": {
+        "order": 6
+      }
+    },
+    {
+      "name": "c-color-picker-7",
+      "type": "registry:block",
+      "title": "Format converter",
+      "description": "One color as HEX, RGB, HSL, HSB and OKLCH, each with a copy button.",
+      "dependencies": [],
+      "registryDependencies": [
+        "card",
+        "@reui/color-picker"
+      ],
+      "files": [
+        {
+          "path": "c-color-picker-7.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-color-picker-7.tsx"
+        }
+      ],
+      "meta": {
+        "order": 7,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-color-picker-8",
+      "type": "registry:block",
+      "title": "Hue wheel",
+      "description": "A hue ring around a saturation and brightness square, with HEX, RGB and HSL fields.",
+      "dependencies": [],
+      "registryDependencies": [
+        "card",
+        "@reui/color-picker"
+      ],
+      "files": [
+        {
+          "path": "c-color-picker-8.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-color-picker-8.tsx"
+        }
+      ],
+      "meta": {
+        "order": 8
+      }
+    },
+    {
+      "name": "c-color-picker-9",
+      "type": "registry:block",
+      "title": "Recent colors",
+      "description": "Each pick is saved to a Recent row once a drag is released, not on every move.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui/color-picker",
+        "field"
+      ],
+      "files": [
+        {
+          "path": "c-color-picker-9.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-color-picker-9.tsx"
+        }
+      ],
+      "meta": {
+        "order": 9
+      }
+    },
+    {
       "name": "c-combobox-1",
       "type": "registry:block",
       "title": "A basic combobox with a list of options",
@@ -11960,7 +12295,7 @@
     {
       "name": "c-dialog-3",
       "type": "registry:block",
-      "title": "Dialog with scrollable content and sticky footer.",
+      "title": "Dialog with scrollable content and sticky footer",
       "description": "Dialog with scrollable content and sticky footer.",
       "dependencies": [],
       "registryDependencies": [
@@ -11981,7 +12316,7 @@
     {
       "name": "c-dialog-4",
       "type": "registry:block",
-      "title": "Dialog without a close button.",
+      "title": "Dialog without a close button",
       "description": "Dialog without a close button.",
       "dependencies": [],
       "registryDependencies": [
@@ -12638,6 +12973,203 @@
       ],
       "meta": {
         "order": 9
+      }
+    },
+    {
+      "name": "c-emoji-picker-1",
+      "type": "registry:block",
+      "title": "Inline emoji picker",
+      "description": "The full picker inline on a card: search, category tabs, the grid and a footer with the preview and skin tone.",
+      "dependencies": [],
+      "registryDependencies": [
+        "card",
+        "@reui/emoji-picker"
+      ],
+      "files": [
+        {
+          "path": "c-emoji-picker-1.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-emoji-picker-1.tsx"
+        }
+      ],
+      "meta": {
+        "order": 1
+      }
+    },
+    {
+      "name": "c-emoji-picker-2",
+      "type": "registry:block",
+      "title": "Chat composer",
+      "description": "A chat composer that inserts emoji at the caret and keeps the draft in view.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar",
+        "bubble",
+        "button",
+        "card",
+        "@reui/emoji-picker",
+        "input-group",
+        "message",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "c-emoji-picker-2.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-emoji-picker-2.tsx"
+        }
+      ],
+      "meta": {
+        "order": 2
+      }
+    },
+    {
+      "name": "c-emoji-picker-3",
+      "type": "registry:block",
+      "title": "Message reactions",
+      "description": "A product update with reactions you can toggle, a tooltip naming who reacted and a picker that opens on quick reactions.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "@reui/emoji-picker",
+        "item",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "c-emoji-picker-3.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-emoji-picker-3.tsx"
+        }
+      ],
+      "meta": {
+        "order": 3
+      }
+    },
+    {
+      "name": "c-emoji-picker-4",
+      "type": "registry:block",
+      "title": "Page icon",
+      "description": "A page header with an emoji icon above the title, plus Random and Remove in the picker.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar",
+        "@reui/badge",
+        "breadcrumb",
+        "button",
+        "card",
+        "@reui/emoji-picker",
+        "popover",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "c-emoji-picker-4.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-emoji-picker-4.tsx"
+        }
+      ],
+      "meta": {
+        "order": 4
+      }
+    },
+    {
+      "name": "c-emoji-picker-5",
+      "type": "registry:block",
+      "title": "Custom team emoji",
+      "description": "A release thread whose reply field inserts the workspace's own emoji as shortcodes from their own tab.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "card",
+        "@reui/emoji-picker",
+        "input-group",
+        "item",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "c-emoji-picker-5.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-emoji-picker-5.tsx"
+        }
+      ],
+      "meta": {
+        "order": 5
+      }
+    },
+    {
+      "name": "c-emoji-picker-6",
+      "type": "registry:block",
+      "title": "Shortcode suggestions",
+      "description": "A design review reply where typing a colon shortcode shows emoji suggestions under the field.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "card",
+        "@reui/emoji-picker",
+        "input-group",
+        "item"
+      ],
+      "files": [
+        {
+          "path": "c-emoji-picker-6.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-emoji-picker-6.tsx"
+        }
+      ],
+      "meta": {
+        "order": 6
+      }
+    },
+    {
+      "name": "c-emoji-picker-7",
+      "type": "registry:block",
+      "title": "Workplace-safe set",
+      "description": "A kudos card whose picker hides a blocklist and newer emoji, then posts the note to #platform.",
+      "dependencies": [],
+      "registryDependencies": [
+        "avatar",
+        "button",
+        "card",
+        "@reui/emoji-picker",
+        "item",
+        "textarea"
+      ],
+      "files": [
+        {
+          "path": "c-emoji-picker-7.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-emoji-picker-7.tsx"
+        }
+      ],
+      "meta": {
+        "order": 7
+      }
+    },
+    {
+      "name": "c-emoji-picker-8",
+      "type": "registry:block",
+      "title": "Localized data and labels",
+      "description": "A status emoji card in German, French or Japanese, with localized emoji names, keywords and labels.",
+      "dependencies": [],
+      "registryDependencies": [
+        "card",
+        "@reui/emoji-picker",
+        "native-select"
+      ],
+      "files": [
+        {
+          "path": "c-emoji-picker-8.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-emoji-picker-8.tsx"
+        }
+      ],
+      "meta": {
+        "order": 8
       }
     },
     {
@@ -13452,6 +13984,308 @@
           "path": "c-field-9.tsx",
           "type": "registry:block",
           "target": "components/examples/c-field-9.tsx"
+        }
+      ],
+      "meta": {
+        "order": 9
+      }
+    },
+    {
+      "name": "c-file-type-1",
+      "type": "registry:block",
+      "title": "Common formats",
+      "description": "The formats people share most, in their brand colors.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui/file-type"
+      ],
+      "files": [
+        {
+          "path": "c-file-type-1.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-file-type-1.tsx"
+        }
+      ],
+      "meta": {
+        "order": 1
+      }
+    },
+    {
+      "name": "c-file-type-10",
+      "type": "registry:block",
+      "title": "Custom labels",
+      "description": "Version tags and document codes in place of the extension.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui/file-type",
+        "item"
+      ],
+      "files": [
+        {
+          "path": "c-file-type-10.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-file-type-10.tsx"
+        }
+      ],
+      "meta": {
+        "order": 10
+      }
+    },
+    {
+      "name": "c-file-type-11",
+      "type": "registry:block",
+      "title": "Custom colors and unknown types",
+      "description": "Unknown extensions fall back to a neutral icon, and one class recolors any type.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui/file-type"
+      ],
+      "files": [
+        {
+          "path": "c-file-type-11.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-file-type-11.tsx"
+        }
+      ],
+      "meta": {
+        "order": 11
+      }
+    },
+    {
+      "name": "c-file-type-12",
+      "type": "registry:block",
+      "title": "Export format picker",
+      "description": "Radio cards for choosing an export format, each with its file type icon.",
+      "dependencies": [],
+      "registryDependencies": [
+        "button",
+        "field",
+        "@reui/file-type",
+        "radio-group"
+      ],
+      "files": [
+        {
+          "path": "c-file-type-12.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-file-type-12.tsx"
+        }
+      ],
+      "meta": {
+        "order": 12
+      }
+    },
+    {
+      "name": "c-file-type-13",
+      "type": "registry:block",
+      "title": "Locked, linked and starred",
+      "description": "A lock, link or star drawn on the icon in place of the extension label.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui/file-type"
+      ],
+      "files": [
+        {
+          "path": "c-file-type-13.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-file-type-13.tsx"
+        }
+      ],
+      "meta": {
+        "order": 13
+      }
+    },
+    {
+      "name": "c-file-type-14",
+      "type": "registry:block",
+      "title": "Restyled labels",
+      "description": "File type extension labels restyled through labelClassName: rounded, outlined, inverted, recolored.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui/file-type"
+      ],
+      "files": [
+        {
+          "path": "c-file-type-14.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-file-type-14.tsx"
+        }
+      ],
+      "meta": {
+        "order": 14
+      }
+    },
+    {
+      "name": "c-file-type-2",
+      "type": "registry:block",
+      "title": "Outline, solid, light and mono",
+      "description": "The 4 variants side by side: outlined, filled, soft grey and one gray for every type.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui/file-type"
+      ],
+      "files": [
+        {
+          "path": "c-file-type-2.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-file-type-2.tsx"
+        }
+      ],
+      "meta": {
+        "order": 2
+      }
+    },
+    {
+      "name": "c-file-type-3",
+      "type": "registry:block",
+      "title": "Sizes",
+      "description": "6 sizes from 18px to 56px drawing the same icon, tuned to stay legible at 18px.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui/file-type"
+      ],
+      "files": [
+        {
+          "path": "c-file-type-3.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-file-type-3.tsx"
+        }
+      ],
+      "meta": {
+        "order": 3
+      }
+    },
+    {
+      "name": "c-file-type-4",
+      "type": "registry:block",
+      "title": "Family glyphs",
+      "description": "One glyph per family, drawn on one grid, for family types and the glyph option.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui/file-type"
+      ],
+      "files": [
+        {
+          "path": "c-file-type-4.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-file-type-4.tsx"
+        }
+      ],
+      "meta": {
+        "order": 4
+      }
+    },
+    {
+      "name": "c-file-type-5",
+      "type": "registry:block",
+      "title": "All formats",
+      "description": "Every built-in format grouped by family, with a variant switch.",
+      "dependencies": [],
+      "registryDependencies": [
+        "@reui/file-type",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "c-file-type-5.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-file-type-5.tsx"
+        }
+      ],
+      "meta": {
+        "order": 5,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-file-type-6",
+      "type": "registry:block",
+      "title": "Data grid file browser",
+      "description": "Mini icons resolved from each file name in the rows of a sortable data grid.",
+      "dependencies": [
+        "@tanstack/react-table"
+      ],
+      "registryDependencies": [
+        "@reui/data-grid",
+        "@reui/data-grid-column-header",
+        "@reui/data-grid-scroll-area",
+        "@reui/data-grid-table",
+        "@reui/file-type"
+      ],
+      "files": [
+        {
+          "path": "c-file-type-6.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-file-type-6.tsx"
+        }
+      ],
+      "meta": {
+        "order": 6,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-file-type-7",
+      "type": "registry:block",
+      "title": "Attachment list",
+      "description": "Attachments with their type, size and a download action.",
+      "dependencies": [],
+      "registryDependencies": [
+        "button",
+        "@reui/file-type",
+        "item"
+      ],
+      "files": [
+        {
+          "path": "c-file-type-7.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-file-type-7.tsx"
+        }
+      ],
+      "meta": {
+        "order": 7
+      }
+    },
+    {
+      "name": "c-file-type-8",
+      "type": "registry:block",
+      "title": "Upload queue",
+      "description": "Files uploading with progress, each icon resolved from its MIME type.",
+      "dependencies": [],
+      "registryDependencies": [
+        "button",
+        "@reui/file-type",
+        "item",
+        "progress"
+      ],
+      "files": [
+        {
+          "path": "c-file-type-8.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-file-type-8.tsx"
+        }
+      ],
+      "meta": {
+        "order": 8
+      }
+    },
+    {
+      "name": "c-file-type-9",
+      "type": "registry:block",
+      "title": "Resolve from a file name",
+      "description": "Type a file name, path, URL or MIME type and see the icon it resolves to.",
+      "dependencies": [],
+      "registryDependencies": [
+        "button",
+        "card",
+        "field",
+        "@reui/file-type",
+        "input-group"
+      ],
+      "files": [
+        {
+          "path": "c-file-type-9.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-file-type-9.tsx"
         }
       ],
       "meta": {
@@ -18625,8 +19459,8 @@
     {
       "name": "c-number-field-4",
       "type": "registry:block",
-      "title": "Number filed with buttons on right",
-      "description": "Number filed with buttons on right",
+      "title": "Number field with buttons on right",
+      "description": "Number field with buttons on right",
       "dependencies": [],
       "registryDependencies": [
         "@reui/number-field"
@@ -21476,7 +22310,7 @@
     {
       "name": "c-sheet-1",
       "type": "registry:block",
-      "title": "Sheet containing a form for editing profile information.",
+      "title": "Sheet containing a form for editing profile information",
       "description": "Sheet containing a form for editing profile information.",
       "dependencies": [],
       "registryDependencies": [
@@ -21499,8 +22333,8 @@
     {
       "name": "c-sheet-2",
       "type": "registry:block",
-      "title": "Sheet containing a form for editing profile information.",
-      "description": "Sheet containing a form for editing profile information.",
+      "title": "Sheet without a corner close button",
+      "description": "Sheet containing a profile form with the corner close button hidden, so the footer Cancel button closes it.",
       "dependencies": [],
       "registryDependencies": [
         "button",
@@ -21522,7 +22356,7 @@
     {
       "name": "c-sheet-3",
       "type": "registry:block",
-      "title": "Sheets that open from any side.",
+      "title": "Sheets that open from any side",
       "description": "Sheets that open from any side.",
       "dependencies": [],
       "registryDependencies": [
@@ -23484,6 +24318,7 @@
       "description": "Stepper with vertical orientation and titles",
       "dependencies": [],
       "registryDependencies": [
+        "button",
         "@reui/stepper"
       ],
       "files": [
@@ -23495,6 +24330,109 @@
       ],
       "meta": {
         "order": 15,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-16",
+      "type": "registry:block",
+      "title": "Stepper with delivery stops and ETAs",
+      "description": "A vertical rail of 5 delivery addresses joined by dotted connectors, an On time badge on the current stop and arrival times on hover.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "@reui/badge",
+        "button",
+        "separator",
+        "@reui/stepper",
+        "tooltip"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-16.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-16.tsx"
+        }
+      ],
+      "meta": {
+        "order": 16,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-17",
+      "type": "registry:block",
+      "title": "Stepper with dotted progress",
+      "description": "5 label-free dots for a workspace setup flow, with the step count, name and hint of the selected step shown below.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "button",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-17.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-17.tsx"
+        }
+      ],
+      "meta": {
+        "order": 17,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-18",
+      "type": "registry:block",
+      "title": "Stepper with key-value stage details",
+      "description": "5 delivery run stages from loading to return, each with a time and dashed-leader rows such as gate, delay, ETA and battery.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "@reui/badge",
+        "button",
+        "carousel",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-18.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-18.tsx"
+        }
+      ],
+      "meta": {
+        "order": 18,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-19",
+      "type": "registry:block",
+      "title": "Stepper with icon tiles in a frame",
+      "description": "3 resolution steps in a framed header bar with check or dashed ring tiles and subtitles, collapsing to tiles alone when narrow.",
+      "dependencies": [],
+      "registryDependencies": [
+        "button",
+        "empty",
+        "@reui/frame",
+        "@reui/icon-tile",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-19.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-19.tsx"
+        }
+      ],
+      "meta": {
+        "order": 19,
         "gridSize": 1
       }
     },
@@ -23520,6 +24458,258 @@
       }
     },
     {
+      "name": "c-stepper-20",
+      "type": "registry:block",
+      "title": "Stepper with purchase order checks",
+      "description": "6 purchase orders that expand into 3-way match checks, each passed, failed with an issue count, or pending, with payment links under More.",
+      "dependencies": [
+        "@headless-tree/core",
+        "@headless-tree/react",
+        "cn"
+      ],
+      "registryDependencies": [
+        "@reui/badge",
+        "button",
+        "dropdown-menu",
+        "separator",
+        "@reui/tree"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-20.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-20.tsx"
+        }
+      ],
+      "meta": {
+        "order": 20,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-21",
+      "type": "registry:block",
+      "title": "Stepper with grouped security checks",
+      "description": "29 security checks under 12 numbered steps in 4 areas, with finding counts and severity badges, and Previous and Next closing the branch they leave.",
+      "dependencies": [
+        "@headless-tree/core",
+        "@headless-tree/react",
+        "cn"
+      ],
+      "registryDependencies": [
+        "@reui/badge",
+        "button",
+        "separator",
+        "@reui/tree"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-21.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-21.tsx"
+        }
+      ],
+      "meta": {
+        "order": 21,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-22",
+      "type": "registry:block",
+      "title": "Stepper with color-coded bottom bars",
+      "description": "4 billing setup steps as colored bars along the panel's bottom edge, the active one thicker, under the current step's icon, name and hint.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "button",
+        "@reui/frame",
+        "@reui/icon-stack",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-22.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-22.tsx"
+        }
+      ],
+      "meta": {
+        "order": 22,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-23",
+      "type": "registry:block",
+      "title": "Stepper with top color bars and card art",
+      "description": "Adding a payment card in 4 steps, each tab with its own color bar on the top edge that thickens when selected, over a card drawing and a caption.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "button",
+        "@reui/frame",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-23.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-23.tsx"
+        }
+      ],
+      "meta": {
+        "order": 23,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-24",
+      "type": "registry:block",
+      "title": "Stepper with icon tile rows",
+      "description": "4 incident resolution steps in a vertical list, each row showing an icon, a title, a subtitle and its status, above the selected step's detail line.",
+      "dependencies": [],
+      "registryDependencies": [
+        "button",
+        "@reui/frame",
+        "@reui/icon-tile",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-24.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-24.tsx"
+        }
+      ],
+      "meta": {
+        "order": 24,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-25",
+      "type": "registry:block",
+      "title": "Stepper with phase track",
+      "description": "A refund case in 4 phases labeled Phase 1 to 4, joined by a single track with a dot per phase and slash dividers, above the selected phase's summary.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "button",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-25.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-25.tsx"
+        }
+      ],
+      "meta": {
+        "order": 25,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-26",
+      "type": "registry:block",
+      "title": "Stepper with timestamped checkpoints",
+      "description": "Shipment tracking across 4 stops from loading to delivery, with the time each stop was reached above a dot on a shared track and a summary per stop.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "button",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-26.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-26.tsx"
+        }
+      ],
+      "meta": {
+        "order": 26,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-27",
+      "type": "registry:block",
+      "title": "Stepper with transit arrow",
+      "description": "4-stop freight route with times, Est. and ETA labels and a ticked track where an arrow leads toward the current stop, plus a summary per stop.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "button",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-27.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-27.tsx"
+        }
+      ],
+      "meta": {
+        "order": 27,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-28",
+      "type": "registry:block",
+      "title": "Stepper with breadcrumb steps",
+      "description": "5-step new hire onboarding shown as step names split by chevrons, with a step counter, a 5-segment bar and the selected step's summary below.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "button",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-28.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-28.tsx"
+        }
+      ],
+      "meta": {
+        "order": 28,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-29",
+      "type": "registry:block",
+      "title": "Stepper with compact inline progress",
+      "description": "5 new hire onboarding steps in a single row of small status dots and names, with connectors that turn blue as steps finish and a summary below.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "button",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-29.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-29.tsx"
+        }
+      ],
+      "meta": {
+        "order": 29,
+        "gridSize": 1
+      }
+    },
+    {
       "name": "c-stepper-3",
       "type": "registry:block",
       "title": "Stepper with loading state",
@@ -23537,6 +24727,258 @@
       ],
       "meta": {
         "order": 3,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-30",
+      "type": "registry:block",
+      "title": "Stepper with truck route and rest stops",
+      "description": "7 stops on a 2,890 km truck run from Memphis to Los Angeles, with dashed legs, 8H rest badges and a truck on the leg in progress.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "@reui/badge",
+        "button",
+        "@reui/icon-tile",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-30.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-30.tsx"
+        }
+      ],
+      "meta": {
+        "order": 30,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-31",
+      "type": "registry:block",
+      "title": "Stepper with icon tiles and chevrons",
+      "description": "4 incident resolution steps, each a tinted icon tile with its title and step number, joined by chevrons, with the step's detail below.",
+      "dependencies": [],
+      "registryDependencies": [
+        "button",
+        "@reui/icon-tile",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-31.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-31.tsx"
+        }
+      ],
+      "meta": {
+        "order": 31,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-32",
+      "type": "registry:block",
+      "title": "Stepper with numbered chevron stages",
+      "description": "7 sales pipeline stages from Lead to Approval as a bar of interlocking arrows, each with a numbered keycap and the current stage filled blue.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "button",
+        "@reui/icon-tile",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-32.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-32.tsx"
+        }
+      ],
+      "meta": {
+        "order": 32,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-33",
+      "type": "registry:block",
+      "title": "Stepper with filled status chevrons",
+      "description": "8 proposal steps as nested arrows in a frame, green with a check once finished, solid blue with a spinner when current and dashed rings ahead.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "button",
+        "@reui/frame",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-33.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-33.tsx"
+        }
+      ],
+      "meta": {
+        "order": 33,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-34",
+      "type": "registry:block",
+      "title": "Stepper with outlined chevron plan",
+      "description": "6 proposal steps as nested arrows after a done count, finished ones outlined in green with a check and the current one in blue with a spinner.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "button",
+        "@reui/frame",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-34.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-34.tsx"
+        }
+      ],
+      "meta": {
+        "order": 34,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-35",
+      "type": "registry:block",
+      "title": "Stepper with flat chevron plan",
+      "description": "6 contract steps as borderless arrows after a done count, finished ones in darker gray with a check and the current one tinted blue with a spinner.",
+      "dependencies": [],
+      "registryDependencies": [
+        "button",
+        "@reui/frame",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-35.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-35.tsx"
+        }
+      ],
+      "meta": {
+        "order": 35,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-36",
+      "type": "registry:block",
+      "title": "Stepper with shipping route and stop details",
+      "description": "5 ports from Singapore to Hamburg, each with carrier, voyage and dates over dashed leaders, and a wave marking the leg in progress.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "avatar",
+        "@reui/badge",
+        "button",
+        "@reui/icon-tile",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-36.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-36.tsx"
+        }
+      ],
+      "meta": {
+        "order": 36,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-37",
+      "type": "registry:block",
+      "title": "Stepper with horizontal step cards",
+      "description": "4 incident rollback steps as clickable icon cards that wrap to 2 columns when narrow, with a corner check on done cards and the step detail below.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "button",
+        "@reui/frame",
+        "@reui/icon-tile",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-37.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-37.tsx"
+        }
+      ],
+      "meta": {
+        "order": 37,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-38",
+      "type": "registry:block",
+      "title": "Stepper with shipment progress bar",
+      "description": "Order tracking across 6 stages from placed to delivered, with a green plane badge on the current stage and a dashed track that fills green behind it.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "@reui/badge",
+        "button",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-38.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-38.tsx"
+        }
+      ],
+      "meta": {
+        "order": 38,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-39",
+      "type": "registry:block",
+      "title": "Stepper with vertical step cards",
+      "description": "4 incident rollback steps as stacked icon cards beside the step detail, done cards tinted green with a corner check, plus Previous and Next.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "button",
+        "@reui/frame",
+        "@reui/icon-tile",
+        "separator",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-39.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-39.tsx"
+        }
+      ],
+      "meta": {
+        "order": 39,
         "gridSize": 1
       }
     },
@@ -23559,6 +25001,130 @@
       ],
       "meta": {
         "order": 4,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-40",
+      "type": "registry:block",
+      "title": "Stepper with side rail and step icons",
+      "description": "6 incident response steps as rows with their own icons, a blue bar on the current row, green checks on done rows and the step detail beside them.",
+      "dependencies": [],
+      "registryDependencies": [
+        "button",
+        "@reui/frame",
+        "separator",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-40.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-40.tsx"
+        }
+      ],
+      "meta": {
+        "order": 40,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-41",
+      "type": "registry:block",
+      "title": "Stepper with status list",
+      "description": "6 incident response steps with a status glyph per row: a check when done, a spinning ring on the current step and a dashed circle for the rest.",
+      "dependencies": [],
+      "registryDependencies": [
+        "button",
+        "@reui/frame",
+        "separator",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-41.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-41.tsx"
+        }
+      ],
+      "meta": {
+        "order": 41,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-42",
+      "type": "registry:block",
+      "title": "Stepper with vertical status bars",
+      "description": "5 incident resolution steps, each marked by a thin vertical bar that is gray, green when done or dashed blue while current, with the detail beside.",
+      "dependencies": [],
+      "registryDependencies": [
+        "button",
+        "separator",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-42.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-42.tsx"
+        }
+      ],
+      "meta": {
+        "order": 42,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-43",
+      "type": "registry:block",
+      "title": "Stepper with sub-steps in a collapsible card",
+      "description": "5 ticket resolution phases holding 17 tasks, where the open phase lists its task status in a bordered box and folds away when clicked again.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "button",
+        "collapsible",
+        "@reui/frame",
+        "separator",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-43.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-43.tsx"
+        }
+      ],
+      "meta": {
+        "order": 43,
+        "gridSize": 1
+      }
+    },
+    {
+      "name": "c-stepper-44",
+      "type": "registry:block",
+      "title": "Stepper with right-aligned sub-steps",
+      "description": "5 ticket resolution phases on a vertical rail, only the current one unfolding its tasks, while Previous and Next walk all 17 tasks in order.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "button",
+        "collapsible",
+        "separator",
+        "@reui/stepper"
+      ],
+      "files": [
+        {
+          "path": "c-stepper-44.tsx",
+          "type": "registry:block",
+          "target": "components/examples/c-stepper-44.tsx"
+        }
+      ],
+      "meta": {
+        "order": 44,
         "gridSize": 1
       }
     },
@@ -26699,6 +28265,29 @@
       ]
     },
     {
+      "name": "color-picker",
+      "type": "registry:ui",
+      "title": "Shadcn color picker with a saturation area, hue, alpha and channel sliders, a hue wheel, HEX, RGB, HSL, HSB and OKLCH fields, swatches and an eye dropper.",
+      "description": "Shadcn color picker with a saturation area, hue, alpha and channel sliders, a hue wheel, HEX, RGB, HSL, HSB and OKLCH fields, swatches and an eye dropper.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu",
+        "input-group",
+        "popover",
+        "separator"
+      ],
+      "files": [
+        {
+          "path": "color-picker.tsx",
+          "type": "registry:ui",
+          "target": "components/reui/color-picker.tsx"
+        }
+      ]
+    },
+    {
       "name": "data-grid",
       "type": "registry:ui",
       "title": "Data Grid",
@@ -27054,6 +28643,31 @@
           "path": "date-selector.tsx",
           "type": "registry:ui",
           "target": "components/reui/date-selector.tsx"
+        }
+      ]
+    },
+    {
+      "name": "emoji-picker",
+      "type": "registry:ui",
+      "title": "Shadcn emoji picker with search, shortcodes, skin tones, frequently used and custom emoji, a category bar, a virtualized grid and 28 data languages.",
+      "description": "Shadcn emoji picker with search, shortcodes, skin tones, frequently used and custom emoji, a category bar, a virtualized grid and 28 data languages.",
+      "dependencies": [
+        "cn"
+      ],
+      "registryDependencies": [
+        "button",
+        "dropdown-menu",
+        "empty",
+        "input-group",
+        "popover",
+        "skeleton",
+        "tabs"
+      ],
+      "files": [
+        {
+          "path": "emoji-picker.tsx",
+          "type": "registry:ui",
+          "target": "components/reui/emoji-picker.tsx"
         }
       ]
     },
@@ -27432,6 +29046,24 @@
           "path": "event-calendar-types.tsx",
           "type": "registry:ui",
           "target": "components/reui/event-calendar/event-calendar-types.tsx"
+        }
+      ]
+    },
+    {
+      "name": "file-type",
+      "type": "registry:ui",
+      "title": "Shadcn file type icon in brand and family colors, outline, solid, light and mono variants, sizes down to 18px for data grid rows, and resolution from a file name or MIME type.",
+      "description": "Shadcn file type icon in brand and family colors, outline, solid, light and mono variants, sizes down to 18px for data grid rows, and resolution from a file name or MIME type.",
+      "dependencies": [
+        "class-variance-authority",
+        "cn"
+      ],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "file-type.tsx",
+          "type": "registry:ui",
+          "target": "components/reui/file-type.tsx"
         }
       ]
     },

@@ -1,3 +1,7 @@
+"use client"
+
+import { useState } from "react"
+
 import {
   AlertDialog,
   AlertDialogAction,
@@ -13,8 +17,11 @@ import { Button } from "@/registry/bases/base/ui/button"
 import { IconPlaceholder } from "@/app/(create)/components/icon-placeholder"
 
 export default function Pattern() {
+  // The base AlertDialogAction does not close the dialog on its own.
+  const [open, setOpen] = useState(false)
+
   return (
-    <AlertDialog>
+    <AlertDialog open={open} onOpenChange={setOpen}>
       <AlertDialogTrigger render={<Button variant="outline">Logout</Button>} />
       <AlertDialogContent
         size="sm"
@@ -48,6 +55,7 @@ export default function Pattern() {
           <AlertDialogAction
             variant="ghost"
             className="h-12 flex-1 rounded-none border-0 p-0"
+            onClick={() => setOpen(false)}
           >
             Yes, Logout
           </AlertDialogAction>

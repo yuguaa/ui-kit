@@ -11,7 +11,11 @@ import { DataGridColumnHeader } from "@/registry-reui/bases/base/reui/data-grid/
 import { DataGridScrollArea } from "@/registry-reui/bases/base/reui/data-grid/data-grid-scroll-area"
 import { DataGridTableVirtual } from "@/registry-reui/bases/base/reui/data-grid/data-grid-table-virtual"
 import { useTable } from "@tanstack/react-table"
-import type { ColumnDef, SortingState } from "@tanstack/react-table"
+import type {
+  ColumnDef,
+  ColumnPinningState,
+  SortingState,
+} from "@tanstack/react-table"
 
 import {
   Avatar,
@@ -43,6 +47,11 @@ interface IData {
 const METRIC_COLUMN_COUNT = 36
 const ROW_COUNT = 1000
 const COLUMN_JUMP_SIZE = 8
+const METRIC_IDS = Array.from(
+  { length: METRIC_COLUMN_COUNT },
+  (_, metricIndex) => `metric-${metricIndex + 1}`
+)
+const COLUMN_IDS = ["id", "name", ...METRIC_IDS, "total"]
 const columnVirtualizerOptions = { enabled: true, overscan: 3 }
 const numberFormatter = new Intl.NumberFormat("en-US")
 const PEOPLE: IPerson[] = [
@@ -129,7 +138,11 @@ const allData = generateData(ROW_COUNT)
 
 export default function Pattern() {
   const [sorting, setSorting] = useState<SortingState>([])
-  const [targetColumnIndex, setTargetColumnIndex] = useState(0)
+  const [columnPinning, setColumnPinning] = useState<ColumnPinningState>({
+    start: ["id", "name"],
+    end: ["total"],
+  })
+  const [targetMetricIndex, setTargetMetricIndex] = useState(0)
 
   const columns = useMemo<ColumnDef<DataGridFeatures, IData>[]>(() => {
     const metricColumns = Array.from(
@@ -138,7 +151,7 @@ export default function Pattern() {
         const metricLabel = `Metric ${String(metricIndex + 1).padStart(2, "0")}`
 
         return {
-          id: `metric-${metricIndex + 1}`,
+          id: METRIC_IDS[metricIndex]!,
           accessorFn: (row) => row.metrics[metricIndex],
           header: ({ column }) => (
             <DataGridColumnHeader title={metricLabel} column={column} />
@@ -218,15 +231,21 @@ export default function Pattern() {
     data: allData,
     enableColumnPinning: true,
     getRowId: (row: IData) => row.id,
-    state: {
-      columnPinning: { start: ["id", "name"], end: ["total"] },
-      sorting,
-    },
+    state: { columnPinning, sorting },
+    onColumnPinningChange: setColumnPinning,
     onSortingChange: setSorting,
     // The whole set is already client-side: without this, v9's registered
     // paginated row model would clip the virtual grid to one page.
     manualPagination: true,
   })
+
+  // The jump scrolls by CENTER column index, and pinning changes which
+  // columns are centered, so the target metric is looked up among the
+  // unpinned ones. A pinned metric is already in view: no scroll (-1).
+  const centerMetricIndex = COLUMN_IDS.filter(
+    (id) =>
+      !columnPinning.start?.includes(id) && !columnPinning.end?.includes(id)
+  ).indexOf(METRIC_IDS[targetMetricIndex]!)
 
   return (
     <DataGrid
@@ -254,18 +273,18 @@ export default function Pattern() {
           <CardTitle>Performance Matrix</CardTitle>
           <CardAction className="flex items-center gap-2">
             <span className="text-muted-foreground hidden text-xs tabular-nums sm:inline">
-              Metric {String(targetColumnIndex + 1).padStart(2, "0")} of{" "}
+              Metric {String(targetMetricIndex + 1).padStart(2, "0")} of{" "}
               {METRIC_COLUMN_COUNT}
             </span>
             <Button
               aria-label="Show previous metric columns"
               title="Show previous metric columns"
               className="size-8"
-              disabled={targetColumnIndex === 0}
+              disabled={targetMetricIndex === 0}
               size="icon"
               variant="outline"
               onClick={() =>
-                setTargetColumnIndex((current) =>
+                setTargetMetricIndex((current) =>
                   Math.max(0, current - COLUMN_JUMP_SIZE)
                 )
               }
@@ -283,11 +302,11 @@ export default function Pattern() {
               aria-label="Show next metric columns"
               title="Show next metric columns"
               className="size-8"
-              disabled={targetColumnIndex === METRIC_COLUMN_COUNT - 1}
+              disabled={targetMetricIndex === METRIC_COLUMN_COUNT - 1}
               size="icon"
               variant="outline"
               onClick={() =>
-                setTargetColumnIndex((current) =>
+                setTargetMetricIndex((current) =>
                   Math.min(METRIC_COLUMN_COUNT - 1, current + COLUMN_JUMP_SIZE)
                 )
               }
@@ -305,15 +324,15 @@ export default function Pattern() {
         </CardHeader>
         <DataGridContainer className="border-t">
           <DataGridScrollArea className="h-[480px]">
-            {/* Column index 2 + the jump target: the controlled reveal
-                addresses CENTER columns only, so index 0 is Metric 01. */}
             <DataGridTableVirtual
               estimateSize={41}
               overscan={8}
               columnVirtualizerOptions={columnVirtualizerOptions}
               scrollBehavior="smooth"
               scrollToColumnAlign="center"
-              scrollToColumnIndex={targetColumnIndex}
+              scrollToColumnIndex={
+                centerMetricIndex >= 0 ? centerMetricIndex : undefined
+              }
             />
           </DataGridScrollArea>
         </DataGridContainer>

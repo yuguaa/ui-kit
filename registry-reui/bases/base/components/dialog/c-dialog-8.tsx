@@ -28,13 +28,18 @@ export default function Pattern() {
           <div className="space-y-4">
             <div className="flex items-center justify-between gap-4">
               <div className="space-y-0.75">
-                <Label className="text-sm font-medium">Essential Cookies</Label>
+                <Label
+                  htmlFor="cookie-essential"
+                  className="text-sm font-medium"
+                >
+                  Essential Cookies
+                </Label>
                 <p className="text-muted-foreground text-xs">
                   Required for the website to function properly. Cannot be
                   disabled.
                 </p>
               </div>
-              <Switch defaultChecked disabled />
+              <Switch id="cookie-essential" defaultChecked disabled />
             </div>
             <div className="flex items-center justify-between gap-4">
               <div className="space-y-0.75">

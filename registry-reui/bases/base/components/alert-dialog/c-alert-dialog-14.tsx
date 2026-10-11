@@ -1,3 +1,6 @@
+"use client"
+
+import { useState } from "react"
 import { Badge } from "@/registry-reui/bases/base/reui/badge"
 
 import {
@@ -63,8 +66,11 @@ const SECURITY_ITEMS = [
 ]
 
 export default function Pattern() {
+  // The base AlertDialogAction does not close the dialog on its own.
+  const [open, setOpen] = useState(false)
+
   return (
-    <AlertDialog>
+    <AlertDialog open={open} onOpenChange={setOpen}>
       <AlertDialogTrigger
         render={<Button variant="outline">Advanced Security Check</Button>}
       />
@@ -125,7 +131,11 @@ export default function Pattern() {
             padding. Cancelling the breakout puts it flush edge-to-edge with its
             own `p-4` intact. */}
         <AlertDialogFooter className="mx-0 mb-0 grid grid-cols-1 gap-2 p-4">
-          <AlertDialogAction variant="default" className="flex-1">
+          <AlertDialogAction
+            variant="default"
+            className="flex-1"
+            onClick={() => setOpen(false)}
+          >
             Start Deep Audit
           </AlertDialogAction>
           <AlertDialogCancel variant="ghost" className="flex-1">

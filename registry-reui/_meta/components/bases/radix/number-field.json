@@ -75,12 +75,12 @@
     {
       "name": "c-number-field-4",
       "type": "registry:block",
-      "title": "Number filed wiith buttons on right",
+      "title": "Number field with buttons on right",
       "categories": [
         "number-field"
       ],
-      "description": "Number filed wiith buttons on right",
-      "descriptionLong": "Number filed wiith buttons on right. Built with the Number Field component. A free, open source shadcn number field example you can install with npx shadcn@latest add @reui/c-number-field-4 and edit as your own code.",
+      "description": "Number field with buttons on right",
+      "descriptionLong": "Number field with buttons on right. Built with the Number Field component. A free, open source shadcn number field example you can install with npx shadcn@latest add @reui/c-number-field-4 and edit as your own code.",
       "registryDependencies": [
         "number-field"
       ],
