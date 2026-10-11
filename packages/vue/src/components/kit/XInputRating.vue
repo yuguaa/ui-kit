@@ -46,6 +46,15 @@ export interface InputRatingProps {
    * @defaultValue 'horizontal'
    */
   orientation?: InputRating['variants']['orientation']
+  /** 表单与 reka 透传成员（length/modelValue/defaultValue/disabled 等，运行时经 useForwardProps 转发） */
+  length?: any
+  step?: any
+  hoverable?: boolean
+  clearable?: boolean
+  required?: boolean
+  modelValue?: number
+  defaultValue?: number
+  disabled?: boolean
   class?: any
   ui?: InputRating['slots']
 }
@@ -110,7 +119,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.inputRating || {
   orientation: props.orientation,
   readonly: props.readonly && !disabled.value,
   disabled: disabled.value
-}))
+} as any))
 
 const starIcon = computed(() => props.icon ?? appConfig.ui.icons.star)
 
@@ -132,7 +141,7 @@ function onUpdate(value: number) {
     :name="name"
     :disabled="rootDisabled"
     :aria-readonly="props.readonly || undefined"
-    :orientation="props.orientation"
+    :orientation="(props.orientation as any)"
     :class="ui.root({ class: [props.ui?.root, props.class] })"
     @update:model-value="onUpdate"
   >

@@ -83,7 +83,6 @@ export interface CheckboxProps<T = boolean> {
   /**
    * @defaultValue 'md'
    */
-  size?: Checkbox['variants']['size']
   /**
    * Position of the indicator.
    * @defaultValue 'start'
@@ -103,7 +102,6 @@ export interface CheckboxProps<T = boolean> {
    * @IconifyIcon
    */
   indeterminateIcon?: IconProps['name']
-  class?: any
   ui?: Checkbox['slots']
 }
 

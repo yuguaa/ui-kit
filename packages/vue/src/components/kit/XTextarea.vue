@@ -70,7 +70,6 @@ export interface TextareaProps<T extends TextareaValue = TextareaValue, Mod exte
    * @defaultValue 'div'
    */
   as?: any
-  id?: string
   name?: string
   /** The placeholder text when the textarea is empty. */
   placeholder?: string
@@ -85,7 +84,6 @@ export interface TextareaProps<T extends TextareaValue = TextareaValue, Mod exte
   /**
    * @defaultValue 'md'
    */
-  size?: Textarea['variants']['size']
   required?: boolean
   autofocus?: boolean
   autofocusDelay?: number
@@ -101,7 +99,6 @@ export interface TextareaProps<T extends TextareaValue = TextareaValue, Mod exte
   defaultValue?: ApplyModifiers<T, Mod>
   modelValue?: ApplyModifiers<T, Mod>
   modelModifiers?: Mod
-  class?: any
   ui?: Textarea['slots']
 }
 

@@ -70,7 +70,6 @@ export interface InputProps<T extends InputValue = InputValue, Mod extends Model
    * @defaultValue 'div'
    */
   as?: any
-  id?: string
   name?: string
   type?: InputHTMLAttributes['type']
   /** The placeholder text when the input is empty. */
@@ -86,7 +85,6 @@ export interface InputProps<T extends InputValue = InputValue, Mod extends Model
   /**
    * @defaultValue 'md'
    */
-  size?: Input['variants']['size']
   required?: boolean
   autocomplete?: InputHTMLAttributes['autocomplete']
   autofocus?: boolean
@@ -99,7 +97,6 @@ export interface InputProps<T extends InputValue = InputValue, Mod extends Model
   modelValue?: ApplyModifiers<T, Mod>
   defaultValue?: ApplyModifiers<T, Mod>
   modelModifiers?: Mod
-  class?: any
   ui?: Input['slots']
 }
 

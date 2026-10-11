@@ -14,7 +14,6 @@ type InputTags = ComponentConfig<typeof theme, AppConfig, 'inputTags'>
 export type InputTagItem = AcceptableInputValue
 
 export interface InputTagsProps<T extends InputTagItem = InputTagItem> {
-  class?: any;
   style?: any;
   id?: any;
   title?: any;
@@ -92,6 +91,20 @@ export interface InputTagsProps<T extends InputTagItem = InputTagItem> {
   highlight?: boolean
   /** Keep the mobile text size on all breakpoints. */
   fixed?: boolean
+  /** 表单与 reka 透传成员（disabled/modelValue/defaultValue/avatar 等，运行时经 useForwardProps 转发） */
+  disabled?: any
+  modelValue?: T[]
+  defaultValue?: T[]
+  avatar?: AvatarProps
+  addOnPaste?: boolean
+  addOnTab?: boolean
+  addOnBlur?: boolean
+  duplicate?: boolean
+  delimiter?: any
+  max?: any
+  convertValue?: any
+  displayValue?: any
+  required?: boolean
   class?: any
   ui?: InputTags['slots']
 }
@@ -168,7 +181,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.inputTags || {})
   leading: isLeading.value || !!props.avatar || !!slots.leading,
   trailing: isTrailing.value || !!slots.trailing,
   fieldGroup: orientation.value
-}))
+} as any) as any)
 
 const inputRef = useTemplateRef('inputRef')
 
@@ -226,7 +239,7 @@ defineExpose({
     v-bind="rootProps"
     :name="name"
     :disabled="disabled"
-    @update:model-value="onUpdate"
+    @update:model-value="(onUpdate as any)"
   >
     <TagsInputItem
       v-for="(item, index) in tags"

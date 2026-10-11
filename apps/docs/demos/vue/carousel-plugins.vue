@@ -7,10 +7,10 @@ const slides = [
   { key: '3', text: '第三张', height: 'h-24' },
 ]
 
-/* classNames 与 autoScroll 配置提为常量，避免内联对象每轮渲染生成新引用触发插件重建 */
+/* classNames 用字符串形态（embla 支持字符串与函数两种形态），避免函数形态在 reInit 时重建触发错误 */
 const classNamesConfig = {
-  inView: (inView: boolean) => (inView ? '' : 'opacity-60'),
-  snapped: (snapped: boolean) => (snapped ? 'opacity-100 ring-2 ring-primary/50' : ''),
+  inView: "opacity-60",
+  snapped: "opacity-100 ring-2 ring-primary/50",
 }
 const autoScrollConfig = { speed: 1 }
 </script>

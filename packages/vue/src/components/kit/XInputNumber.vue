@@ -196,7 +196,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.inputNumber || {
   fieldGroup: orientation.value,
   increment: props.orientation === 'vertical' ? (!!props.increment || !!props.decrement) : !!props.increment,
   decrement: props.orientation === 'vertical' ? false : !!props.decrement
-}))
+} as any))
 
 // eslint-disable-next-line vue/no-dupe-keys
 const incrementIcon = computed(() => props.incrementIcon || (props.orientation === 'horizontal' ? appConfig.ui.icons.plus : appConfig.ui.icons.chevronUp))

@@ -32,6 +32,19 @@ export interface ButtonProps {
   block?: boolean
   /** Set loading state automatically based on the `@click` promise state */
   loadingAuto?: boolean
+  loading?: any
+  type?: any
+  icon?: any
+  leading?: any
+  leadingIcon?: any
+  trailing?: any
+  trailingIcon?: any
+  loadingIcon?: any
+  active?: any
+  activeClass?: any
+  inactiveClass?: any
+  to?: any
+  disabled?: any
   onClick?: ((event: MouseEvent) => void) | Array<((event: MouseEvent) => void)>
   class?: any
   ui?: Button['slots']

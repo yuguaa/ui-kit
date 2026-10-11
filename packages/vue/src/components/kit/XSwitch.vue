@@ -77,7 +77,6 @@ export interface SwitchProps<T = boolean> {
   /**
    * @defaultValue 'md'
    */
-  size?: Switch['variants']['size']
   /** Highlight the ring color like a focus state. */
   highlight?: boolean
   /** When `true`, the loading icon will be displayed. */
@@ -100,7 +99,6 @@ export interface SwitchProps<T = boolean> {
   uncheckedIcon?: IconProps['name']
   label?: string
   description?: string
-  class?: any
   ui?: Switch['slots']
 }
 

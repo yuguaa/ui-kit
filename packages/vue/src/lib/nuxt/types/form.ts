@@ -11,7 +11,7 @@ export interface StandardSchemaV1<I = unknown, O = I> {
 }
 
 export namespace StandardSchemaV1 {
-  export type Result<Output> = { issues?: Issue[]; value: Output } | { issues: Issue[] }
+  export type Result<Output> = { issues?: Issue[]; value?: Output }
 
   export interface Issue {
     readonly message: string

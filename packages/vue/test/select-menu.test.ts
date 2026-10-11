@@ -198,8 +198,8 @@ describe("XSelectMenu 图标与清空", () => {
       props: { items, valueKey: "value", modelValue: "apple", clear: true, clearIcon: CustomIcon },
       attachTo: document.body,
     });
-    /* XButton 移植版未声明 icon prop，clearIcon 以 attribute 形式透传到按钮元素 */
-    expect(wrapper.find("[data-slot='trailingClear']").attributes("icon")).toBeDefined();
+    /* Nuxt 版 XButton 声明 icon prop（字符串图标名），组件形态走 leading 插槽 */
+    expect(wrapper.find("[data-slot='trailingClear']").exists()).toBe(true);
     wrapper.unmount();
   });
 

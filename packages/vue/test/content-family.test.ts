@@ -137,9 +137,9 @@ describe("XCarousel 插件能力与 ui 插槽", () => {
     expect(nextButton.classes()).toContain("bg-success/10");
     expect(prevButton.text()).toContain("后退");
     expect(nextButton.text()).toContain("前进");
-    /* XButton 不声明 icon prop,prevIcon / nextIcon 透传为按钮上的属性 */
-    expect(prevButton.attributes("icon")).toBe("star");
-    expect(nextButton.attributes("icon")).toBe("star");
+    /* Nuxt 版 XButton 声明 icon prop，prevIcon / nextIcon 以 prop 传入并渲染 svg */
+    expect(prevButton.find("svg").exists()).toBe(true);
+    expect(nextButton.find("svg").exists()).toBe(true);
   });
 
   it("ui 插槽类名逐键生效", async () => {

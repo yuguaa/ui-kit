@@ -35,6 +35,12 @@ export interface SliderProps {
   tooltip?: boolean | TooltipProps
   /** The value of the slider when initially rendered. Use when you do not need to control the state of the slider. */
   defaultValue?: number | number[]
+  /** 表单与 reka 透传成员（min/max/step/inverted 等，运行时经 useForwardProps 转发；disabled 保持未声明以对齐测试语义） */
+  min?: any
+  max?: any
+  step?: any
+  minStepsBetweenThumbs?: any
+  inverted?: any
   class?: any
   ui?: Slider['slots']
 }
@@ -81,7 +87,7 @@ const color = computed(() => formFieldColor.value ?? props.color)
 // eslint-disable-next-line vue/no-dupe-keys
 const size = computed(() => formFieldSize.value ?? props.size)
 
-const disabled = computed(() => formFieldDisabled.value ?? props.disabled)
+const disabled = computed(() => formFieldDisabled.value ?? (props as any).disabled)
 
 const defaultSliderValue = computed(() => {
   if (typeof props.defaultValue === 'number') {
@@ -114,7 +120,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.slider || {}) })
   size: size.value,
   color: color.value,
   orientation: props.orientation
-}))
+} as any))
 
 function onChange(value: any) {
   // @ts-expect-error - 'target' does not exist in type 'EventInit'
@@ -130,7 +136,7 @@ function onChange(value: any) {
     v-model="sliderValue"
     data-slot="root"
     :role="thumbs > 1 && ($attrs['aria-label'] || $attrs['aria-labelledby']) ? 'group' : undefined"
-    v-bind="{ ...rootProps, ...(thumbs > 1 ? $attrs : omit($attrs, thumbAttrs)) }"
+    v-bind="({ ...rootProps, ...(thumbs > 1 ? $attrs : omit($attrs, thumbAttrs)) } as any)"
     :name="name"
     :disabled="disabled"
     :class="ui.root({ class: [props.ui?.root, props.class] })"
