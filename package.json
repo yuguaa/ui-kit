@@ -11,7 +11,8 @@
     "serve:registry": "node scripts/serve-registry.mjs",
     "check:themes": "node scripts/check-theme-tokens.mjs",
     "check:parity": "node scripts/audit-react-parity.mjs",
-    "check:demos": "node scripts/check-demo-render.mjs"
+    "check:demos": "node scripts/check-demo-render.mjs",
+    "check:colors": "node scripts/check-color-modes.mjs"
   },
   "devDependencies": {
     "tsx": "^4.23.15",
