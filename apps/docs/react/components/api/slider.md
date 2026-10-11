@@ -7,6 +7,7 @@
 | min? | number | - | 最小值 |
 | max? | number | - | 最大值 |
 | step? | number | - | 步长 |
+| minStepsBetweenThumbs? | number | - | 双拇指最小间隔步数（对应 Vue 侧 minStepsBetweenThumbs，映射为 Base UI minStep |
 | disabled? | boolean | - | 是否禁用 |
 | tooltip? | boolean \| Partial&lt;Omit&lt;XTooltipProps, "text" \| "className"&gt;&gt; | - | 悬浮显示当前值提示，可为 XTooltip 属性对象 |
 | orientation? | XSliderOrientation | - | 滑块方向 |

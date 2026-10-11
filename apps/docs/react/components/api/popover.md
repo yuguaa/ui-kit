@@ -9,8 +9,9 @@
 | openDelay? | number | - | 悬停打开延迟（毫秒，仅 hover 模式） |
 | closeDelay? | number | - | 悬停关闭延迟（毫秒，仅 hover 模式） |
 | arrow? | boolean | - | 是否显示指向触发元素的箭头 |
-| portal? | boolean | - | 渲染到 body |
+| portal? | XPopoverPortal | - | 渲染到 body 或指定容器 |
 | dismissible? | boolean | - | 允许点击外部或按 Esc 关闭 |
+| reference? | XPopoverReference | - | 定位参考元素，缺省使用触发元素 |
 | className? | string | - |  |
 | ui? | XPopoverUi | - | 主题插槽类名 |
 | children? | React.ReactNode | - | 触发元素（对应 default 插槽） |

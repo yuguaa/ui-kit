@@ -23,7 +23,7 @@ export interface XSliderUi {
 export interface XSliderProps
   extends Omit<
     SliderPrimitive.Root.Props,
-    "value" | "defaultValue" | "onValueChange" | "onValueCommitted" | "onChange" | "render" | "children" | "className"
+    "value" | "defaultValue" | "onValueChange" | "onValueCommitted" | "onChange" | "render" | "children" | "className" | "minStepsBetweenValues"
   > {
   /** 绑定值：单值或双值区间 */
   value?: number | number[]
@@ -35,6 +35,8 @@ export interface XSliderProps
   max?: number
   /** 步长 */
   step?: number
+  /** 双拇指最小间隔步数（对应 Vue 侧 minStepsBetweenThumbs，映射为 Base UI minStepsBetweenValues） */
+  minStepsBetweenThumbs?: number
   /** 是否禁用 */
   disabled?: boolean
   /** 悬浮显示当前值提示，可为 XTooltip 属性对象 */
@@ -95,6 +97,7 @@ export const XSlider = React.forwardRef<HTMLDivElement, XSliderProps>(function X
     min = 0,
     max = 100,
     step = 1,
+    minStepsBetweenThumbs,
     disabled = false,
     tooltip = false,
     orientation = "horizontal",
@@ -123,6 +126,7 @@ export const XSlider = React.forwardRef<HTMLDivElement, XSliderProps>(function X
       min={min}
       max={max}
       step={step}
+      minStepsBetweenValues={minStepsBetweenThumbs}
       disabled={disabled}
       orientation={orientation}
       data-slot="root"

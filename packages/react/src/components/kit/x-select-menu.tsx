@@ -5,6 +5,7 @@
  * 选项可带 type: 'label' | 'separator' 渲染分组标题与分隔线。
  */
 import * as React from "react"
+import { useVirtualizer } from "@tanstack/react-virtual"
 import { Combobox } from "@base-ui/react/combobox"
 import { XAvatar, type XAvatarProps } from "@/components/kit/x-avatar"
 import { XIcon, type XIconName } from "@/components/kit/x-icon"
@@ -36,6 +37,16 @@ export interface XSelectMenuContentOptions {
   side?: "top" | "right" | "bottom" | "left"
   alignOffset?: number
   sideOffset?: number
+}
+
+/** 虚拟滚动配置 */
+export interface XSelectMenuVirtualizeOptions {
+  /** 每项估算高度(像素),或按索引返回估算高度的函数;默认按 size 与描述推算 */
+  estimateSize?: number | ((index: number) => number)
+  /** 可视区域外额外渲染的项数,默认 12 */
+  overscan?: number
+  /** 每项稳定键,默认使用索引 */
+  getItemKey?: (index: number) => string | number
 }
 
 export interface XSelectMenuItem {
@@ -125,6 +136,10 @@ export interface XSelectMenuProps {
   arrow?: boolean
   /** 浮层是否渲染到 body */
   portal?: boolean
+  /** 虚拟滚动:true 或配置对象,适合大数据量列表;开启后分组展平为单一列表 */
+  virtualize?: boolean | XSelectMenuVirtualizeOptions
+  /** 自定义值比较:函数直接比较两个值;字符串作为取值字段(等价 valueKey) */
+  by?: string | ((a: unknown, b: unknown) => boolean)
   /** 选项值字段 */
   valueKey?: string
   /** 选项标签字段 */
@@ -252,6 +267,15 @@ const highlightClasses: Record<XSelectMenuColor, string> = {
   error: "ring-error",
 }
 
+/** 虚拟化估算行高:无说明 / 有说明,对齐 Vue 版 getEstimateSize */
+const virtualizeRowSizes: Record<XSelectMenuSize, { plain: number; withDescription: number }> = {
+  xs: { plain: 24, withDescription: 44 },
+  sm: { plain: 28, withDescription: 48 },
+  md: { plain: 32, withDescription: 52 },
+  lg: { plain: 36, withDescription: 56 },
+  xl: { plain: 40, withDescription: 60 },
+}
+
 /** 渲染图标：字符串走 XIcon，组件直接渲染 */
 function renderIcon(
   icon: XSelectMenuIcon | undefined,
@@ -287,6 +311,8 @@ export function XSelectMenu({
   content,
   arrow = false,
   portal = true,
+  virtualize = false,
+  by,
   valueKey,
   labelKey = "label",
   descriptionKey = "description",
@@ -337,9 +363,16 @@ export function XSelectMenu({
   const currentOpen = open !== undefined ? open : innerOpen
   const [innerSearchTerm, setInnerSearchTerm] = React.useState("")
   const currentSearchTerm = searchTerm !== undefined ? searchTerm : innerSearchTerm
+  const viewportRef = React.useRef<HTMLDivElement>(null)
+  /* 弹层延迟挂载,viewport 上屏时通过 ref callback 通知虚拟器测量 */
+  const [viewportMounted, setViewportMounted] = React.useState(false)
+  const virtualizeOptions = typeof virtualize === "object" ? virtualize : {}
+  const isVirtualized = virtualize === true || typeof virtualize === "object"
 
   const labelField = labelKey || "label"
   const descriptionField = descriptionKey || "description"
+  /* by 字符串替代 valueKey 参与取值与比较,对齐 Vue 版 by ?? valueKey */
+  const effectiveValueKey = typeof by === "string" ? by : valueKey
 
   /* 分组：平铺数组视为单组 */
   const groups = React.useMemo<XSelectMenuItem[][]>(() => {
@@ -359,16 +392,16 @@ export function XSelectMenu({
 
   const filteredItems = React.useMemo(() => filteredGroups.flatMap((group) => group), [filteredGroups])
 
-  const itemValue = (entry: XSelectMenuItem) => (valueKey ? getField(entry, valueKey) : entry)
+  const itemValue = (entry: XSelectMenuItem) => (effectiveValueKey ? getField(entry, effectiveValueKey) : entry)
 
-  /* 创建项：按 createItem 配置决定是否出现 */
+  /* 创建项:按 createItem 配置决定是否出现 */
   const createItemValue = React.useMemo(() => {
     if (!createItem || !currentSearchTerm) return false
-    const candidate = valueKey ? { [valueKey]: currentSearchTerm } : currentSearchTerm
-    const exists = filteredItems.some((entry) => compare(entry, candidate, valueKey))
+    const candidate = effectiveValueKey ? { [effectiveValueKey]: currentSearchTerm } : currentSearchTerm
+    const exists = filteredItems.some((entry) => compare(entry, candidate, effectiveValueKey))
     if (createItem === "always" || (typeof createItem === "object" && createItem.when === "always")) return !exists
     return filteredItems.length === 0
-  }, [createItem, currentSearchTerm, valueKey, filteredItems])
+  }, [createItem, currentSearchTerm, effectiveValueKey, filteredItems])
   const createItemPosition = typeof createItem === "object" ? createItem.position ?? "bottom" : "bottom"
 
   const selectedValues = React.useMemo(
@@ -376,18 +409,66 @@ export function XSelectMenu({
     [multiple, currentValue],
   )
 
-  /* 触发器显示文本：多选时逗号拼接 */
+  /* 估算行高:显式配置优先,否则对齐 Vue 版按 size 与描述字段推算 */
+  const estimateSize = React.useMemo<((index: number) => number) | undefined>(() => {
+    const provided = typeof virtualize === "object" ? virtualize.estimateSize : undefined
+    if (provided != null) {
+      return typeof provided === "function" ? provided : () => provided
+    }
+    if (!isVirtualized) return undefined
+    const rowSizes = virtualizeRowSizes[size]
+    if (itemDescription != null) return () => rowSizes.withDescription
+    if (!descriptionKey) return () => rowSizes.plain
+    return (index: number) => {
+      const entry = filteredItems[index]
+      const description = typeof entry === "object" && entry !== null ? getField(entry, descriptionField) : undefined
+      return description != null && description !== "" ? rowSizes.withDescription : rowSizes.plain
+    }
+  }, [isVirtualized, virtualize, size, itemDescription, descriptionKey, descriptionField, filteredItems])
+
+  /* 读取滚动容器的 scroll-padding(scroll-py-1),补偿虚拟化首尾偏移 */
+  const [scrollPadding, setScrollPadding] = React.useState({ start: 0, end: 0 })
+  React.useLayoutEffect(() => {
+    if (!isVirtualized) return
+    const element = viewportRef.current
+    if (!element) return
+    const style = window.getComputedStyle(element)
+    const parse = (value: string) => {
+      const parsed = Number.parseFloat(value)
+      return Number.isFinite(parsed) ? parsed : 0
+    }
+    setScrollPadding({ start: parse(style.scrollPaddingTop), end: parse(style.scrollPaddingBottom) })
+  }, [isVirtualized, viewportMounted])
+
+  /* 虚拟器:窗口由列表可视高度驱动,未显式配置的 estimateSize 走默认推算 */
+  const virtualizer = useVirtualizer({
+    count: filteredItems.length,
+    getScrollElement: () => viewportRef.current,
+    estimateSize: (index: number) => (estimateSize != null ? estimateSize(index) : 32),
+    overscan: virtualizeOptions.overscan ?? 12,
+    getItemKey: virtualizeOptions.getItemKey,
+    scrollPaddingStart: scrollPadding.start,
+    scrollPaddingEnd: scrollPadding.end,
+  })
+
+  /* estimateSize 变化或 viewport 挂载时重置测量缓存,确保新估算高度生效 */
+  React.useLayoutEffect(() => {
+    if (isVirtualized) virtualizer.measure()
+  }, [estimateSize, viewportMounted])
+
+  /* 触发器显示文本:多选时逗号拼接 */
+  const byComparator = typeof by === "function" ? by : undefined
   const displayValue = React.useMemo(() => {
     if (multiple && Array.isArray(currentValue)) {
       return (
         currentValue
-          .map((entry) => getDisplayValue(flatItems, entry, { labelKey: labelField, valueKey }))
+          .map((entry) => getDisplayValue(flatItems, entry, { labelKey: labelField, valueKey: effectiveValueKey, by: byComparator }))
           .filter((entry): entry is string => entry != null && entry !== "")
           .join(", ") || undefined
       )
     }
-    return getDisplayValue(flatItems, currentValue, { labelKey: labelField, valueKey })
-  }, [multiple, currentValue, flatItems, labelField, valueKey])
+    return getDisplayValue(flatItems, currentValue, { labelKey: labelField, valueKey: effectiveValueKey, by: byComparator })
+  }, [multiple, currentValue, flatItems, labelField, effectiveValueKey, byComparator])
 
   const showClear = !!clear && !disabled && selectedValues.length > 0
   const clearButtonEnd = sizeClasses[size].trailing.replace("pe-", "end-")
@@ -497,9 +578,9 @@ export function XSelectMenu({
     className,
   )
 
-  const renderItem = (entry: XSelectMenuItem, index: number): React.ReactNode => {
+  const renderItem = (entry: XSelectMenuItem, index: number, options?: { virtual?: boolean; total?: number }): React.ReactNode => {
     if (entry?.type === "label") {
-      return (
+      const labelNode = (
         <Combobox.GroupLabel
           key={`label-${index}`}
           data-slot="label"
@@ -508,6 +589,17 @@ export function XSelectMenu({
           {getField(entry, labelField)}
         </Combobox.GroupLabel>
       )
+
+      /* 虚拟化平铺渲染:GroupLabel 依赖 Group 上下文,包一层无布局影响的 Group */
+      if (options?.virtual) {
+        return (
+          <Combobox.Group key={`label-${index}`} className="contents">
+            {labelNode}
+          </Combobox.Group>
+        )
+      }
+
+      return labelNode
     }
 
     if (entry?.type === "separator") {
@@ -524,9 +616,15 @@ export function XSelectMenu({
       return <React.Fragment key={`item-${index}`}>{itemSlot({ item: entry, index })}</React.Fragment>
     }
 
+    /* 虚拟化时显式传 index,避免从 filtered items 反查造成值不匹配 */
+    const virtualItemProps = options?.virtual
+      ? { index, "data-index": index, "aria-setsize": options.total, "aria-posinset": index + 1 }
+      : {}
+
     return (
       <Combobox.Item
         key={`item-${index}`}
+        {...virtualItemProps}
         value={itemValue(entry)}
         disabled={entry.disabled}
         data-slot="item"
@@ -580,33 +678,55 @@ export function XSelectMenu({
     )
   }
 
+  /* createItem 项:虚拟化时固定在虚拟列表外(对齐 Vue 版) */
+  const renderCreateItemGroup = (position: "top" | "bottom") =>
+    createItemValue && createItemPosition === position ? (
+      <Combobox.Group data-slot="group" className={cn("p-1", ui?.group)}>
+        <Combobox.Item value={currentSearchTerm} data-slot="item" className={cn("relative flex w-full items-start rounded-md", currentSize.item, ui?.item)} onClick={handleCreate}>
+          <span data-slot="itemLabel" className={cn("truncate", ui?.itemLabel)}>
+            {createItemLabel != null ? createItemLabel({ item: currentSearchTerm }) : `创建 "${currentSearchTerm}"`}
+          </span>
+        </Combobox.Item>
+      </Combobox.Group>
+    ) : null
+
   const listContent = (
     <>
-      {createItemValue && createItemPosition === "top" && (
-        <Combobox.Group data-slot="group" className={cn("p-1", ui?.group)}>
-          <Combobox.Item value={currentSearchTerm} data-slot="item" className={cn("relative flex w-full items-start rounded-md", currentSize.item, ui?.item)} onClick={handleCreate}>
-            <span data-slot="itemLabel" className={cn("truncate", ui?.itemLabel)}>
-              {createItemLabel != null ? createItemLabel({ item: currentSearchTerm }) : `创建 "${currentSearchTerm}"`}
-            </span>
-          </Combobox.Item>
-        </Combobox.Group>
+      {renderCreateItemGroup("top")}
+
+      {isVirtualized ? (
+        /* 虚拟滚动:相对容器撑起总高度,窗口项绝对定位(对齐 Vue 版 ComboboxVirtualizer) */
+        <div data-slot="virtualizer" role="presentation" className="relative w-full" style={{ height: virtualizer.getTotalSize() }}>
+          {virtualizer.getVirtualItems().map((virtualItem) => {
+            const entry = filteredItems[virtualItem.index]
+            if (entry == null) return null
+            return (
+              <div
+                key={virtualItem.key}
+                role="presentation"
+                data-index={virtualItem.index}
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  transform: `translateY(${virtualItem.start}px)`,
+                }}
+              >
+                {renderItem(entry, virtualItem.index, { virtual: true, total: filteredItems.length })}
+              </div>
+            )
+          })}
+        </div>
+      ) : (
+        filteredGroups.map((group, groupIndex) => (
+          <Combobox.Group key={`group-${groupIndex}`} data-slot="group" className={cn("p-1", ui?.group)}>
+            {group.map((entry, index) => renderItem(entry, index))}
+          </Combobox.Group>
+        ))
       )}
 
-      {filteredGroups.map((group, groupIndex) => (
-        <Combobox.Group key={`group-${groupIndex}`} data-slot="group" className={cn("p-1", ui?.group)}>
-          {group.map((entry, index) => renderItem(entry, index))}
-        </Combobox.Group>
-      ))}
-
-      {createItemValue && createItemPosition === "bottom" && (
-        <Combobox.Group data-slot="group" className={cn("p-1", ui?.group)}>
-          <Combobox.Item value={currentSearchTerm} data-slot="item" className={cn("relative flex w-full items-start rounded-md", currentSize.item, ui?.item)} onClick={handleCreate}>
-            <span data-slot="itemLabel" className={cn("truncate", ui?.itemLabel)}>
-              {createItemLabel != null ? createItemLabel({ item: currentSearchTerm }) : `创建 "${currentSearchTerm}"`}
-            </span>
-          </Combobox.Item>
-        </Combobox.Group>
-      )}
+      {renderCreateItemGroup("bottom")}
     </>
   )
 
@@ -645,7 +765,15 @@ export function XSelectMenu({
             </Combobox.Empty>
           )}
 
-          <Combobox.List data-slot="viewport" className={cn("relative max-h-60 flex-1 overflow-y-auto scroll-py-1", ui?.viewport)}>
+          <Combobox.List
+            ref={(element) => {
+              viewportRef.current = element
+              /* 挂载状态未变化时不触发重渲染,避免 ref callback 造成每帧更新 */
+              setViewportMounted((mounted) => (element != null) === mounted ? mounted : element != null)
+            }}
+            data-slot="viewport"
+            className={cn("relative max-h-60 flex-1 overflow-y-auto scroll-py-1", ui?.viewport)}
+          >
             {listContent}
           </Combobox.List>
 
@@ -667,12 +795,22 @@ export function XSelectMenu({
       onOpenChange={updateOpen}
       inputValue={currentSearchTerm}
       onInputValueChange={(next) => updateSearchTerm(next)}
-      onItemHighlighted={(next, details) => onHighlight?.(next === undefined ? undefined : { ref: (details as any).event?.target, value: next })}
+      onItemHighlighted={(next, details) => {
+        /* 虚拟化:高亮变化时滚动窗口跟随(对齐 Vue 版 virtualHighlightHook) */
+        if (isVirtualized && next !== undefined && details.index != null) {
+          queueMicrotask(() => {
+            virtualizer.scrollToIndex(details.index, { align: "start" })
+          })
+        }
+        onHighlight?.(next === undefined ? undefined : { ref: (details as any).event?.target, value: next })
+      }}
       multiple={mode === "combobox" || mode === "listbox" ? multiple : false}
       disabled={disabled}
       required={required}
       name={name}
       id={id}
+      virtualized={isVirtualized}
+      isItemEqualToValue={typeof by === "function" ? (itemValue, value) => by(itemValue, value) : undefined}
       highlightItemOnHover={highlightOnHover}
       itemToStringLabel={(entry: any) => String(getField(entry, labelField) ?? entry ?? "")}
     >

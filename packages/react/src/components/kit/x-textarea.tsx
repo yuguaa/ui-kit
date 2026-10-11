@@ -5,6 +5,7 @@
  */
 import * as React from "react"
 import { useRender } from "@base-ui/react/use-render"
+import { variantClasses, type XInputVariant } from "@/components/kit/x-input"
 import { cn } from "@/lib/utils"
 
 export type XTextareaSize = "xs" | "sm" | "md" | "lg" | "xl"
@@ -100,6 +101,10 @@ export interface XTextareaProps
   autofocus?: boolean
   /** 自动聚焦的延迟（毫秒） */
   autofocusDelay?: number
+  /** 预设样式（与 Nuxt 版 variant prop 对齐） */
+  variant?: XInputVariant
+  /** 左侧头像内容 */
+  avatar?: React.ReactNode
 }
 
 export const XTextarea = React.forwardRef<HTMLTextAreaElement, XTextareaProps>(function XTextarea(
@@ -120,6 +125,8 @@ export const XTextarea = React.forwardRef<HTMLTextAreaElement, XTextareaProps>(f
     ui,
     autofocus,
     autofocusDelay = 0,
+    variant = "outline",
+    avatar,
     className,
     value,
     defaultValue,
@@ -208,6 +215,11 @@ export const XTextarea = React.forwardRef<HTMLTextAreaElement, XTextareaProps>(f
       className: cn("relative inline-flex items-center", className),
       children: (
         <>
+          {avatar != null && (
+            <span className="absolute start-0 flex items-start" data-slot="leadingAvatar">
+              {avatar}
+            </span>
+          )}
           <textarea
             ref={mergedRef}
             data-slot="base"
@@ -218,7 +230,7 @@ export const XTextarea = React.forwardRef<HTMLTextAreaElement, XTextareaProps>(f
             style={maxHeightStyle != null ? { ...style, maxHeight: maxHeightStyle } : style}
             className={cn(
               "w-full rounded-md border-0 appearance-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-75 transition-colors",
-              "bg-background ring-1 ring-inset ring-border",
+              variantClasses[variant],
               textareaSizeClasses[size],
               focusClasses[color],
               highlight && highlightClasses[color],

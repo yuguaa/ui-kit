@@ -2,9 +2,11 @@
 
 | 名称 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
-| checked? | boolean | - | 是否选中 |
-| defaultChecked? | boolean | - | 初始选中状态(非受控) |
-| onCheckedChange? | (checked: boolean) =&gt; void | - | 选中状态变化回调 |
+| checked? | T | - | 是否选中;与 trueValue / falseValue 配合可映射任意选中值 |
+| defaultChecked? | T | - | 初始选中状态(非受控) |
+| trueValue? | T | - | 选中时对外比较与上报的值,默认 true |
+| falseValue? | T | - | 未选中时对外比较与上报的值,默认 false |
+| onCheckedChange? | (value: T) =&gt; void | - | 选中状态变化回调,值为 trueValue / falseValue |
 | color? | XSwitchColor | - | 选中时滑块轨道的语义色 |
 | size? | XSwitchSize | - | 控件尺寸 |
 | highlight? | boolean | - | 常显高亮聚焦环 |

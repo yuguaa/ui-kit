@@ -1,6 +1,6 @@
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { XInputMenu } from "@/components/kit/x-input-menu";
 
 const items = [
@@ -211,5 +211,104 @@ describe("XInputMenu ui 插槽与 render", () => {
   it("render 渲染指定根元素", () => {
     render(<XInputMenu items={items} valueKey="value" render={<div />} />);
     expect(document.querySelector("[data-slot='root']")?.tagName).toBe("DIV");
+  });
+});
+
+describe("XInputMenu virtualize 虚拟滚动", () => {
+  /* jsdom 无法计算布局尺寸,mock 列表高度让虚拟窗口可渲染 */
+  beforeEach(() => {
+    vi.spyOn(HTMLElement.prototype, "offsetHeight", "get").mockImplementation(function (this: HTMLElement) {
+      return this.getAttribute("data-slot") === "viewport" ? 240 : 0;
+    });
+  });
+
+  afterEach(() => {
+    vi.restoreAllMocks();
+  });
+
+  /* 构建 200 项大数据列表 */
+  function bigItems(count = 200) {
+    return Array.from({ length: count }, (_, index) => ({
+      label: `城市 ${index}`,
+      value: `city-${index}`,
+    }));
+  }
+
+  it("virtualize 开启后渲染虚拟窗口而不是全部选项", async () => {
+    render(<XInputMenu items={bigItems()} valueKey="value" virtualize />);
+    await userEvent.click(input());
+    await waitFor(() => {
+      expect(document.querySelector("[data-slot='virtualizer']")).not.toBeNull();
+    });
+    /* 窗口渲染数量应远小于总项数,且首项可见 */
+    const options = await screen.findAllByRole("option");
+    expect(options.length).toBeLessThan(100);
+    expect(screen.getByText("城市 0")).toBeInTheDocument();
+  });
+
+  it("virtualize 配置对象支持 estimateSize 与 overscan", async () => {
+    render(
+      <XInputMenu
+        items={bigItems(60)}
+        valueKey="value"
+        virtualize={{ estimateSize: 40, overscan: 0 }}
+      />,
+    );
+    await userEvent.click(input());
+    await waitFor(() => {
+      expect(document.querySelector("[data-slot='virtualizer']")).not.toBeNull();
+    });
+    /* overscan 为 0 时只渲染窗口内选项 */
+    const options = await screen.findAllByRole("option");
+    expect(options.length).toBeLessThan(60);
+    expect(screen.getByText("城市 0")).toBeInTheDocument();
+  });
+
+  it("virtualize 下仍可选择选项并上报值", async () => {
+    const onValueChange = vi.fn();
+    render(
+      <XInputMenu items={bigItems(80)} valueKey="value" virtualize onValueChange={onValueChange} />,
+    );
+    await userEvent.click(input());
+    await userEvent.click(await screen.findByText("城市 5"));
+    expect(onValueChange).toHaveBeenCalledWith("city-5");
+  });
+});
+
+describe("XInputMenu by 自定义比较", () => {
+  it("by 字符串作为取值字段,等价 valueKey", () => {
+    render(
+      <XInputMenu
+        items={[
+          { id: "sh", name: "上海" },
+          { id: "bj", name: "北京" },
+        ]}
+        labelKey="name"
+        by="id"
+        value="sh"
+      />,
+    );
+    expect(input()).toHaveValue("上海");
+  });
+
+  it("by 函数接管选中值比较", async () => {
+    const onValueChange = vi.fn();
+    render(
+      <XInputMenu
+        items={[
+          { id: "sh", label: "上海" },
+          { id: "bj", label: "北京" },
+        ]}
+        value={{ id: "bj" } as unknown as string}
+        by={(a, b) => (a as { id: string }).id === (b as { id: string }).id}
+        onValueChange={onValueChange}
+      />,
+    );
+    /* by 判定 id 相等即选中,输入框显示对应标签 */
+    expect(input()).toHaveValue("北京");
+    await userEvent.click(input());
+    await userEvent.click(await screen.findByText("上海"));
+    /* by 只接管值比较,选中值仍为选项对象本身 */
+    expect(onValueChange.mock.calls[0]?.[0]).toEqual({ id: "sh", label: "上海" });
   });
 });

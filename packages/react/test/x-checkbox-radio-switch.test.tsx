@@ -67,6 +67,30 @@ describe("XCheckbox 变体 / indicator / ui", () => {
     await userEvent.click(screen.getByRole("checkbox"));
     expect(onCheckedChange.mock.calls[0]?.[0]).toBe(true);
   });
+
+  it("trueValue / falseValue 映射任意选中值", async () => {
+    const onCheckedChange = vi.fn();
+    const { container } = render(
+      <XCheckbox
+        checked="yes"
+        trueValue="yes"
+        falseValue="no"
+        onCheckedChange={onCheckedChange}
+      />,
+    );
+    /* 受控值等于 trueValue 时渲染为选中态 */
+    expect(container.querySelector("[data-slot='base']")).toHaveAttribute("data-checked");
+    await userEvent.click(screen.getByRole("checkbox"));
+    /* 切换后上报 falseValue 而不是布尔值 */
+    expect(onCheckedChange.mock.calls[0]?.[0]).toBe("no");
+  });
+
+  it("defaultChecked 按 trueValue 判定初始选中", () => {
+    const { container } = render(
+      <XCheckbox defaultChecked="yes" trueValue="yes" falseValue="no" />,
+    );
+    expect(container.querySelector("[data-slot='base']")).toHaveAttribute("data-checked");
+  });
 });
 
 describe("XRadioGroup orientation / legend / 字段映射 / ui", () => {
@@ -183,6 +207,16 @@ describe("XRadioGroup orientation / legend / 字段映射 / ui", () => {
     );
     expect(container.querySelector("[data-slot='item']")).toHaveClass("btn-item");
   });
+
+  it("name 生成表单隐藏输入框", () => {
+    const { container } = render(
+      <XRadioGroup name="plan" value="pro" options={plans} valueKey="id" />,
+    );
+    /* Base UI 每个 radio 自带隐藏输入框,选中项 value 参与表单提交 */
+    const checkedInput = container.querySelector<HTMLInputElement>("input[name='plan']:checked");
+    expect(checkedInput).not.toBeNull();
+    expect(checkedInput?.value).toBe("pro");
+  });
 });
 
 describe("XSwitch color / 图标 / highlight / ui", () => {
@@ -245,5 +279,22 @@ describe("XSwitch color / 图标 / highlight / ui", () => {
     render(<XSwitch onCheckedChange={onCheckedChange} />);
     await userEvent.click(screen.getByRole("switch"));
     expect(onCheckedChange.mock.calls[0]?.[0]).toBe(true);
+  });
+
+  it("trueValue / falseValue 映射任意选中值", async () => {
+    const onCheckedChange = vi.fn();
+    const { container } = render(
+      <XSwitch
+        checked="on"
+        trueValue="on"
+        falseValue="off"
+        onCheckedChange={onCheckedChange}
+      />,
+    );
+    /* 受控值等于 trueValue 时渲染为选中态 */
+    expect(container.querySelector("[data-slot='base']")).toHaveAttribute("data-checked");
+    await userEvent.click(screen.getByRole("switch"));
+    /* 切换后上报 falseValue 而不是布尔值 */
+    expect(onCheckedChange.mock.calls[0]?.[0]).toBe("off");
   });
 });

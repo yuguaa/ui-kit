@@ -70,6 +70,48 @@ describe("XProgress", () => {
     render(<XProgress value={30} render={<section />} />);
     expect(document.querySelector("section[data-slot='root']")).toBeInTheDocument();
   });
+
+  it("size 默认 md：指示条 h-2、status 文字 text-sm", () => {
+    render(<XProgress value={30} status />);
+    expect(document.querySelector("[data-slot='base']")).toHaveClass("h-2");
+    expect(document.querySelector("[data-slot='status']")).toHaveClass("text-sm");
+  });
+
+  it("size 控制指示条粗细与 status/steps 文字尺寸", () => {
+    render(<XProgress value={30} status size="2xl" max={["a", "b"]} />);
+    expect(document.querySelector("[data-slot='base']")).toHaveClass("h-5");
+    expect(document.querySelector("[data-slot='status']")).toHaveClass("text-base");
+    expect(document.querySelector("[data-slot='steps']")).toHaveClass("text-base");
+  });
+
+  it("color 传任意 CSS 颜色值时应用内联样式", () => {
+    render(<XProgress value={30} color="#ff6600" max={["a", "b"]} />);
+    const indicator = document.querySelector("[data-slot='indicator']") as HTMLElement;
+    expect(indicator.style.backgroundColor).toBe("rgb(255, 102, 0)");
+    expect(indicator.className).not.toContain("bg-primary");
+    expect((document.querySelector("[data-slot='steps']") as HTMLElement).style.color).toBe("rgb(255, 102, 0)");
+  });
+
+  it("stepContent 自定义步骤内容，函数式接收 step 与 index", () => {
+    render(
+      <XProgress value={1} max={["待支付", "处理中"]} stepContent={({ step, index }) => <i>{`${index}-${step}`}</i>} />,
+    );
+    expect(screen.getByText("0-待支付")).toBeInTheDocument();
+    expect(screen.getByText("1-处理中")).toBeInTheDocument();
+  });
+
+  it("getValueLabel 与 getValueText 生成无障碍属性", () => {
+    render(
+      <XProgress
+        value={30}
+        getValueLabel={(value, max) => `已完成 ${value}/${max}`}
+        getValueText={(value, max) => `进度值 ${value}，最大 ${max}`}
+      />,
+    );
+    const base = document.querySelector("[data-slot='base']") as HTMLElement;
+    expect(base).toHaveAttribute("aria-label", "已完成 30/100");
+    expect(base).toHaveAttribute("aria-valuetext", "进度值 30，最大 100");
+  });
 });
 
 describe("XSlider", () => {
@@ -137,5 +179,26 @@ describe("XSlider", () => {
   it("render 渲染为指定元素", () => {
     render(<XSlider value={40} render={<section />} />);
     expect(document.querySelector("section[data-slot='root']")).toBeInTheDocument();
+  });
+
+  it("minStepsBetweenThumbs 约束双拇指最小间隔", () => {
+    const onChange = vi.fn();
+    render(<XSlider value={[10, 12]} minStepsBetweenThumbs={5} onChange={onChange} />);
+    const secondThumb = screen.getAllByRole("slider")[1]!;
+    secondThumb.focus();
+    /* ArrowLeft 将第二个拇指减为 11，间隔 1 小于 5 步，值应保持不变 */
+    fireEvent.keyDown(secondThumb, { key: "ArrowLeft" });
+    expect(onChange).not.toHaveBeenCalled();
+  });
+
+  it("minStepsBetweenThumbs 满足间隔时正常提交值", () => {
+    const onChange = vi.fn();
+    render(<XSlider value={[10, 20]} minStepsBetweenThumbs={5} onChange={onChange} />);
+    const secondThumb = screen.getAllByRole("slider")[1]!;
+    secondThumb.focus();
+    /* 20 → 19，间隔 9 大于 5 步，应提交新值 */
+    fireEvent.keyDown(secondThumb, { key: "ArrowLeft" });
+    expect(onChange).toHaveBeenCalled();
+    expect(onChange.mock.calls[0]?.[0]?.target?.value).toEqual([10, 19]);
   });
 });

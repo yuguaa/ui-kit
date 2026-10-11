@@ -73,7 +73,7 @@ const iconSizes: Record<XInputSize, string> = {
 }
 
 /** 变体样式（Nuxt UI 语义 → 本地 token） */
-const variantClasses: Record<XInputVariant, string> = {
+export const variantClasses: Record<XInputVariant, string> = {
   outline: "bg-background ring-1 ring-inset ring-border",
   soft: "bg-muted/50 hover:bg-muted focus:bg-muted disabled:bg-muted/50",
   subtle: "bg-muted ring-1 ring-inset ring-border",

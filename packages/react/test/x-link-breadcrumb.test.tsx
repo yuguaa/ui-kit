@@ -49,6 +49,79 @@ describe("XLink", () => {
     await user.click(screen.getByText("占位链接"));
     expect(onClick).toHaveBeenCalledTimes(1);
   });
+
+  it("external 或新窗口时自动补充 rel，noRel 关闭", () => {
+    const { rerender } = render(<XLink to="https://example.com" external>外链</XLink>);
+    expect(screen.getByRole("link")).toHaveAttribute("rel", "noopener noreferrer");
+
+    rerender(<XLink to="/docs" target="_blank">新窗口</XLink>);
+    expect(screen.getByRole("link")).toHaveAttribute("rel", "noopener noreferrer");
+
+    rerender(
+      <XLink to="https://example.com" external noRel>
+        关闭默认 rel
+      </XLink>,
+    );
+    expect(screen.getByRole("link")).not.toHaveAttribute("rel");
+
+    rerender(<XLink to="/docs">内部链接</XLink>);
+    expect(screen.getByRole("link")).not.toHaveAttribute("rel");
+  });
+
+  it("显式 rel 优先于自动补充", () => {
+    render(
+      <XLink to="https://example.com" external rel="nofollow">
+        自定义 rel
+      </XLink>,
+    );
+    expect(screen.getByRole("link")).toHaveAttribute("rel", "nofollow");
+  });
+
+  it("activeClass 仅在激活态应用，ariaCurrentValue 自定义 aria-current 值", () => {
+    const { rerender } = render(
+      <XLink to="/docs" activeClass="custom-active" ariaCurrentValue="location">
+        文档
+      </XLink>,
+    );
+    const link = screen.getByRole("link");
+    expect(link).not.toHaveClass("custom-active");
+    expect(link).not.toHaveAttribute("aria-current");
+
+    rerender(
+      <XLink to="/docs" active activeClass="custom-active" ariaCurrentValue="location">
+        文档
+      </XLink>,
+    );
+    expect(screen.getByRole("link")).toHaveClass("custom-active");
+    expect(screen.getByRole("link")).toHaveAttribute("aria-current", "location");
+  });
+
+  it("raw 时跳过主题样式，仅应用 class 与激活类名", () => {
+    const { rerender } = render(
+      <XLink to="/docs" raw className="only-class">
+        裸链接
+      </XLink>,
+    );
+    const link = screen.getByRole("link");
+    expect(link).toHaveClass("only-class");
+    expect(link).not.toHaveClass("text-primary");
+    expect(link).not.toHaveClass("inline-flex");
+
+    rerender(
+      <XLink to="/docs" raw active activeClass="custom-active">
+        裸链接
+      </XLink>,
+    );
+    expect(screen.getByRole("link")).toHaveClass("custom-active");
+    expect(screen.getByRole("link")).not.toHaveClass("text-primary/75");
+  });
+
+  it("disabled 时补充 tabindex -1 与 role=link", () => {
+    render(<XLink to="/docs" disabled>禁用</XLink>);
+    const link = screen.getByText("禁用");
+    expect(link).toHaveAttribute("tabindex", "-1");
+    expect(link).toHaveAttribute("role", "link");
+  });
 });
 
 describe("XBreadcrumb", () => {
@@ -110,5 +183,37 @@ describe("XBreadcrumb", () => {
 
     rerender(<XBreadcrumb items={items} render={<div />} />);
     expect(document.querySelector("div[data-slot='root']")).toBeInTheDocument();
+  });
+
+  it("item.avatar 渲染前置头像并应用 ui 插槽类名", () => {
+    render(
+      <XBreadcrumb
+        items={[{ title: "首页", href: "/", avatar: { text: "P", className: "custom-avatar" } }]}
+        ui={{ linkLeadingAvatar: "custom-linkAvatar", linkLeadingAvatarSize: "md" }}
+      />,
+    );
+    expect(document.querySelector("[data-slot='linkLeadingAvatar']")).toBeInTheDocument();
+    expect(document.querySelector("[data-slot='linkLeadingAvatar']")).toHaveClass("custom-avatar");
+    expect(document.querySelector("[data-slot='linkLeadingAvatar']")).toHaveClass("custom-linkAvatar");
+  });
+
+  it("item.icon 优先于 item.avatar 渲染", () => {
+    render(<XBreadcrumb items={[{ title: "首页", href: "/", icon: <i data-testid="item-icon" />, avatar: { text: "P" } }]} />);
+    expect(screen.getByTestId("item-icon")).toBeInTheDocument();
+    expect(document.querySelector("[data-slot='linkLeadingAvatar']")).not.toBeInTheDocument();
+  });
+
+  it("item.to 作为 href 别名渲染链接", () => {
+    render(<XBreadcrumb items={[{ title: "首页", to: "/home" }]} />);
+    expect(screen.getByRole("link")).toHaveAttribute("href", "/home");
+  });
+
+  it("item.disabled 渲染 span 并标记 aria-disabled", () => {
+    render(<XBreadcrumb items={[{ title: "首页", href: "/", disabled: true }]} />);
+    const link = document.querySelector("[data-slot='link']") as HTMLElement;
+    expect(link.tagName).toBe("SPAN");
+    expect(link).toHaveAttribute("aria-disabled", "true");
+    expect(link).toHaveClass("opacity-75");
+    expect(link).toHaveClass("cursor-not-allowed");
   });
 });

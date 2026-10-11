@@ -1,7 +1,8 @@
 /**
  * XProgress 进度条：与 Nuxt UI Progress 对齐。
  * value 为 null 时进入不确定进度，按 animation 播放指示器动画；
- * max 传数组时渲染 steps 步骤；status 开关显示百分比文本。
+ * max 传数组时渲染 steps 步骤；status 开关显示百分比文本；
+ * size 控制指示条粗细与文字尺寸，color 支持主题色与任意 CSS 颜色。
  */
 import * as React from "react"
 import { Progress as ProgressPrimitive } from "@base-ui/react/progress"
@@ -9,6 +10,7 @@ import { useRender } from "@base-ui/react/use-render"
 import { cn } from "@/lib/utils"
 
 export type XProgressColor = "primary" | "secondary" | "neutral" | "success" | "info" | "warning" | "error"
+export type XProgressSize = "2xs" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl"
 export type XProgressOrientation = "horizontal" | "vertical"
 export type XProgressAnimation = "carousel" | "carousel-inverse" | "swing" | "elastic"
 
@@ -22,7 +24,19 @@ export interface XProgressUi {
   step?: string
 }
 
-export interface XProgressProps {
+/** 步骤插槽参数（对应 Vue 侧 step-${index} 命名插槽） */
+export interface XProgressStepSlotProps {
+  /** 当前步骤文案（max 数组对应项） */
+  step: any
+  /** 步骤索引 */
+  index: number
+}
+
+export interface XProgressProps
+  extends Omit<
+    ProgressPrimitive.Root.Props,
+    "value" | "max" | "render" | "className" | "children" | "style" | "getAriaValueText"
+  > {
   /** 当前值：null 表示不确定进度 */
   value?: number | null
   /** 最大进度值；传数组时渲染步骤条，值为每步文案 */
@@ -31,8 +45,10 @@ export interface XProgressProps {
   status?: boolean
   /** 进度方向是否反转 */
   inverted?: boolean
-  /** 指示条与步骤文字颜色 */
-  color?: XProgressColor
+  /** 指示条粗细与文字尺寸 */
+  size?: XProgressSize
+  /** 指示条与步骤文字颜色：主题色或任意 CSS 颜色值 */
+  color?: XProgressColor | (string & {})
   /** 进度方向 */
   orientation?: XProgressOrientation
   /** 不确定进度的指示器动画 */
@@ -43,6 +59,12 @@ export interface XProgressProps {
   ui?: XProgressUi
   /** status 插槽内容，函数式接收 percent */
   statusContent?: React.ReactNode | ((props: { percent?: number }) => React.ReactNode)
+  /** 步骤插槽内容，函数式接收 step 与 index（对应 Vue 侧 step-${index} 插槽） */
+  stepContent?: React.ReactNode | ((props: XProgressStepSlotProps) => React.ReactNode)
+  /** 无障碍标签生成（对应 Vue 侧 getValueLabel，映射为根元素 aria-label） */
+  getValueLabel?: (value: number | null, max?: number) => string | undefined
+  /** 无障碍数值文本生成（对应 Vue 侧 getValueText，映射为 Base UI getAriaValueText） */
+  getValueText?: (value: number | null, max?: number) => string | undefined
   className?: string
 }
 
@@ -85,21 +107,52 @@ const stepVariantClasses: Record<"active" | "first" | "other" | "last", string> 
   last: "",
 }
 
+/** size 映射：status 与 steps 的文字尺寸（与 Nuxt UI 主题一致） */
+const progressTextSizeClasses: Record<XProgressSize, string> = {
+  "2xs": "text-xs",
+  xs: "text-xs",
+  sm: "text-sm",
+  md: "text-sm",
+  lg: "text-sm",
+  xl: "text-base",
+  "2xl": "text-base",
+}
+
+/** size 映射：指示条粗细（与 Nuxt UI 主题 compoundVariants 一致） */
+const progressBaseSizeClasses: Record<XProgressSize, Record<XProgressOrientation, string>> = {
+  "2xs": { horizontal: "h-px", vertical: "w-px" },
+  xs: { horizontal: "h-0.5", vertical: "w-0.5" },
+  sm: { horizontal: "h-1", vertical: "w-1" },
+  md: { horizontal: "h-2", vertical: "w-2" },
+  lg: { horizontal: "h-3", vertical: "w-3" },
+  xl: { horizontal: "h-4", vertical: "w-4" },
+  "2xl": { horizontal: "h-5", vertical: "w-5" },
+}
+
 export function XProgress({
   value = null,
   max,
   status = false,
   inverted = false,
+  size = "md",
   color = "primary",
   orientation = "horizontal",
   animation = "carousel",
   render,
   ui,
   statusContent,
+  stepContent,
+  getValueLabel,
+  getValueText,
   className,
+  ...rest
 }: XProgressProps) {
   const isIndeterminate = value == null
   const hasSteps = Array.isArray(max)
+
+  /* 非主题色视为任意 CSS 颜色值，走内联样式（与 Nuxt UI customColor 逻辑一致） */
+  const themeColor = color in progressColorClasses ? progressColorClasses[color as XProgressColor] : undefined
+  const customColor = themeColor ? undefined : color
 
   const realMax = isIndeterminate || max == null ? undefined : Array.isArray(max) ? max.length - 1 : max
 
@@ -112,13 +165,21 @@ export function XProgress({
           ? 100
           : Math.round((value / (realMax ?? 100)) * 100)
 
-  /* 指示器位移：不确定进度时由动画接管 */
+  /* 指示器位移：不确定进度时由动画接管；自定义颜色走内联样式 */
   const indicatorStyle: React.CSSProperties | undefined =
     percent == null
-      ? undefined
+      ? customColor
+        ? { backgroundColor: customColor }
+        : undefined
       : orientation === "vertical"
-        ? { transform: `translateY(${inverted ? "" : "-"}${100 - percent}%)` }
-        : { transform: `translateX(${inverted ? "" : "-"}${100 - percent}%)` }
+        ? {
+            transform: `translateY(${inverted ? "" : "-"}${100 - percent}%)`,
+            ...(customColor ? { backgroundColor: customColor } : undefined),
+          }
+        : {
+            transform: `translateX(${inverted ? "" : "-"}${100 - percent}%)`,
+            ...(customColor ? { backgroundColor: customColor } : undefined),
+          }
 
   const statusStyle = { "--percent": `${Math.max(percent ?? 0, 0)}%` } as React.CSSProperties
 
@@ -155,8 +216,10 @@ export function XProgress({
                 orientation === "horizontal"
                   ? "flex-row items-center justify-end w-(--percent) min-w-fit transition-[width]"
                   : "flex-col justify-end h-(--percent) min-h-fit transition-[height]",
+                progressTextSizeClasses[size],
                 inverted && "self-end",
                 inverted && orientation === "horizontal" && "flex-row-reverse",
+                inverted && orientation === "vertical" && "flex-col-reverse",
                 ui?.status,
               )}
               style={statusStyle}
@@ -166,15 +229,23 @@ export function XProgress({
           )}
 
           <ProgressPrimitive.Root
+            {...rest}
             value={value}
             max={realMax}
             data-slot="base"
             className={cn(
               "relative overflow-hidden rounded-full bg-muted",
-              orientation === "horizontal" ? "w-full h-2" : "h-full w-2",
+              orientation === "horizontal" ? "w-full" : "h-full",
+              progressBaseSizeClasses[size][orientation],
               ui?.base,
             )}
             style={{ transform: "translateZ(0)" }}
+            aria-label={getValueLabel ? getValueLabel(value, realMax ?? 100) : undefined}
+            getAriaValueText={
+              getValueText
+                ? (_formattedValue, current) => getValueText(current, realMax ?? 100) ?? ""
+                : undefined
+            }
           >
             <ProgressPrimitive.Track className="relative size-full overflow-hidden">
               <ProgressPrimitive.Indicator
@@ -183,7 +254,7 @@ export function XProgress({
                   "rounded-full size-full transition-transform duration-200 ease-out motion-reduce:transition-none motion-reduce:data-[indeterminate]:animate-pulse",
                   progressAnimationClasses[animation][orientation],
                   animation === "elastic" && "relative",
-                  progressColorClasses[color].indicator,
+                  themeColor?.indicator,
                   ui?.indicator,
                 )}
                 style={indicatorStyle}
@@ -196,10 +267,12 @@ export function XProgress({
               data-slot="steps"
               className={cn(
                 "grid items-end",
+                progressTextSizeClasses[size],
                 inverted && orientation === "vertical" && "items-start",
-                progressColorClasses[color].steps,
+                themeColor?.steps,
                 ui?.steps,
               )}
+              style={customColor ? { color: customColor } : undefined}
             >
               {(max as Array<any>).map((step, index) => (
                 <div
@@ -212,7 +285,7 @@ export function XProgress({
                     ui?.step,
                   )}
                 >
-                  {step}
+                  {typeof stepContent === "function" ? stepContent({ step, index }) : (stepContent ?? step)}
                 </div>
               ))}
             </div>

@@ -6,6 +6,7 @@
 import * as React from "react"
 import { useRender } from "@base-ui/react/use-render"
 import { XIcon } from "@/components/kit/x-icon"
+import { XAvatar, type XAvatarProps, type XAvatarSize } from "@/components/kit/x-avatar"
 import { cn } from "@/lib/utils"
 
 export type XBreadcrumbColor = "primary" | "secondary" | "neutral" | "success" | "info" | "warning" | "error"
@@ -17,6 +18,9 @@ export interface XBreadcrumbUi {
   item?: string
   link?: string
   linkLeadingIcon?: string
+  linkLeadingAvatar?: string
+  /** 头像尺寸（值语义，与 Nuxt 主题 linkLeadingAvatarSize 键一致） */
+  linkLeadingAvatarSize?: XAvatarSize
   linkLabel?: string
   separator?: string
   separatorIcon?: string
@@ -25,12 +29,18 @@ export interface XBreadcrumbUi {
 export interface XBreadcrumbItem {
   /** 标题 */
   title?: string
-  /** 链接地址（末项可省略） */
+  /** 链接地址（末项可省略，to 为别名） */
   href?: string
+  /** 链接地址（Nuxt 风格别名，优先 href） */
+  to?: string
   /** 前置图标 */
   icon?: React.ReactNode
+  /** 前置头像（仅无图标时渲染） */
+  avatar?: XAvatarProps
   /** 强制激活态（默认末项激活） */
   active?: boolean
+  /** 禁用当前项：不渲染链接且降低透明度 */
+  disabled?: boolean
 }
 
 /** 激活项文字颜色（与 XButton link 变体一致的字面量） */
@@ -88,24 +98,35 @@ export function XBreadcrumb<T extends XBreadcrumbItem>({
             const isLast = index === items.length - 1
             const active = item.active ?? isLast
             const label = String((item as Record<string, unknown>)[labelKey] ?? "")
+            const href = item.href ?? item.to
+            const itemDisabled = item.disabled === true
 
-            /* 链接元素：有 href 渲染 a，末项渲染 span */
+            /* 链接元素：有 href 渲染 a，末项或禁用项渲染 span */
             const linkProps = {
               "data-slot": "link",
               "aria-current": active && isLast ? ("page" as const) : undefined,
+              "aria-disabled": itemDisabled || undefined,
               className: cn(
                 "group relative flex items-center gap-1.5 text-sm min-w-0 rounded-md",
                 active ? cn("font-semibold", breadcrumbColorClasses[color]) : "text-muted-foreground font-medium",
-                item.href != null && !active && "hover:text-foreground transition-colors",
+                href != null && !active && "hover:text-foreground transition-colors",
+                itemDisabled && "cursor-not-allowed opacity-75",
                 ui?.link,
               ),
               children: (
                 <>
-                  {item.icon != null && (
+                  {item.icon != null ? (
                     <span data-slot="linkLeadingIcon" className={cn("shrink-0 size-5", ui?.linkLeadingIcon)}>
                       {item.icon}
                     </span>
-                  )}
+                  ) : item.avatar != null ? (
+                    <XAvatar
+                      {...item.avatar}
+                      size={item.avatar.size ?? ui?.linkLeadingAvatarSize ?? "xs"}
+                      data-slot="linkLeadingAvatar"
+                      className={cn("shrink-0", ui?.linkLeadingAvatar, item.avatar.className)}
+                    />
+                  ) : null}
                   {label !== "" && (
                     <span data-slot="linkLabel" className={cn("truncate", ui?.linkLabel)}>
                       {label}
@@ -118,7 +139,7 @@ export function XBreadcrumb<T extends XBreadcrumbItem>({
             return (
               <React.Fragment key={index}>
                 <li data-slot="item" className={cn("flex min-w-0", ui?.item)}>
-                  {item.href != null ? <a href={item.href} {...linkProps} /> : <span {...linkProps} />}
+                  {href != null && !itemDisabled ? <a href={href} {...linkProps} /> : <span {...linkProps} />}
                 </li>
                 {!isLast && (
                   <li role="presentation" aria-hidden="true" data-slot="separator" className={cn("flex", ui?.separator)}>

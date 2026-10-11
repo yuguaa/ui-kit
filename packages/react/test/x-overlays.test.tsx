@@ -265,6 +265,35 @@ describe("XPopover", () => {
     await userEvent.click(screen.getByRole("button", { name: "点我关闭" }));
     expect(screen.queryByRole("button", { name: "点我关闭" })).not.toBeInTheDocument();
   });
+
+  it("reference 指定外部元素作为定位参考", () => {
+    const externalRef = document.createElement("div");
+    externalRef.dataset.testid = "popover-external-ref";
+    document.body.appendChild(externalRef);
+
+    render(
+      <XPopover open content="气泡内容" reference={externalRef}>
+        <button type="button">触发器</button>
+      </XPopover>,
+    );
+    expect(screen.getByTestId("popover-external-ref")).toBeInTheDocument();
+    expect(screen.getByText("气泡内容")).toBeInTheDocument();
+
+    externalRef.remove();
+  });
+
+  it("portal 指定容器时挂载到容器内", () => {
+    const container = document.createElement("div");
+    container.dataset.testid = "portal-container";
+    document.body.appendChild(container);
+
+    render(
+      <XPopover open content="气泡内容" portal={container}>
+        <button type="button">触发器</button>
+      </XPopover>,
+    );
+    expect(container.querySelector("[data-slot='content']")).toBeInTheDocument();
+  });
 });
 
 describe("XTooltip", () => {
@@ -303,5 +332,67 @@ describe("XTooltip", () => {
     );
     await userEvent.hover(screen.getByRole("button", { name: "按钮" }));
     expect(document.querySelector("[data-slot='content']")).not.toBeInTheDocument();
+  });
+
+  it("disableClosingTrigger 为 true 时点击触发元素不关闭提示", async () => {
+    render(
+      <XTooltip defaultOpen text="提示内容" delayDuration={0} disableClosingTrigger>
+        <button type="button">按钮</button>
+      </XTooltip>,
+    );
+    await userEvent.click(screen.getByRole("button", { name: "按钮" }));
+    expect(screen.getByText("提示内容")).toBeInTheDocument();
+  });
+
+  it("默认点击触发元素关闭提示", async () => {
+    render(
+      <XTooltip defaultOpen text="提示内容" delayDuration={0}>
+        <button type="button">按钮</button>
+      </XTooltip>,
+    );
+    await userEvent.click(screen.getByRole("button", { name: "按钮" }));
+    await waitFor(() => {
+      expect(screen.queryByText("提示内容")).not.toBeInTheDocument();
+    });
+  });
+
+  it("reference 指定外部元素作为定位参考", () => {
+    const externalRef = document.createElement("div");
+    externalRef.dataset.testid = "tooltip-external-ref";
+    document.body.appendChild(externalRef);
+
+    render(
+      <XTooltip open text="提示内容" reference={externalRef}>
+        <button type="button">按钮</button>
+      </XTooltip>,
+    );
+    expect(screen.getByTestId("tooltip-external-ref")).toBeInTheDocument();
+    expect(screen.getByText("提示内容")).toBeInTheDocument();
+
+    externalRef.remove();
+  });
+
+  it("portal 指定容器时挂载到容器内", () => {
+    const container = document.createElement("div");
+    container.dataset.testid = "portal-container";
+    document.body.appendChild(container);
+
+    render(
+      <XTooltip open text="提示内容" portal={container}>
+        <button type="button">按钮</button>
+      </XTooltip>,
+    );
+    expect(container.querySelector("[data-slot='content']")).toBeInTheDocument();
+  });
+
+  it("kbds 对象形式透传 size 与 color", () => {
+    render(
+      <XTooltip open text="保存" kbds={[{ value: "⌘", size: "md" }, { value: "S", color: "primary" }]}>
+        <button type="button">按钮</button>
+      </XTooltip>,
+    );
+    const kbds = document.querySelectorAll("[data-slot='kbds'] [data-slot='kbd']");
+    expect(kbds[0]).toHaveClass("h-6");
+    expect(kbds[1]).toHaveClass("text-primary");
   });
 });

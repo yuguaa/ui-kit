@@ -1,6 +1,6 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { XSelectMenu, type XSelectMenuItem } from "@/components/kit/x-select-menu";
 
 const items = [
@@ -239,5 +239,104 @@ describe("XSelectMenu ui 插槽与 render", () => {
   it("render 渲染指定触发元素", () => {
     render(<XSelectMenu items={items} valueKey="value" render={<a href="#top" />} />);
     expect(document.querySelector("[data-slot='base']")?.tagName).toBe("A");
+  });
+});
+
+describe("XSelectMenu virtualize 虚拟滚动", () => {
+  /* jsdom 无法计算布局尺寸,mock 列表高度让虚拟窗口可渲染 */
+  beforeEach(() => {
+    vi.spyOn(HTMLElement.prototype, "offsetHeight", "get").mockImplementation(function (this: HTMLElement) {
+      return this.getAttribute("data-slot") === "viewport" ? 240 : 0;
+    });
+  });
+
+  afterEach(() => {
+    vi.restoreAllMocks();
+  });
+
+  /* 构建 200 项大数据列表 */
+  function bigItems(count = 200): XSelectMenuItem[] {
+    return Array.from({ length: count }, (_, index) => ({
+      label: `选项 ${index}`,
+      value: `value-${index}`,
+    }));
+  }
+
+  it("virtualize 开启后渲染虚拟窗口而不是全部选项", async () => {
+    render(<XSelectMenu items={bigItems()} valueKey="value" virtualize />);
+    await userEvent.click(trigger());
+    await waitFor(() => {
+      expect(document.querySelector("[data-slot='virtualizer']")).not.toBeNull();
+    });
+    /* 窗口渲染数量应远小于总项数,且首项可见 */
+    const options = await screen.findAllByRole("option");
+    expect(options.length).toBeLessThan(100);
+    expect(screen.getByText("选项 0")).toBeInTheDocument();
+  });
+
+  it("virtualize 配置对象支持 estimateSize 与 overscan", async () => {
+    render(
+      <XSelectMenu
+        items={bigItems(60)}
+        valueKey="value"
+        virtualize={{ estimateSize: 40, overscan: 0 }}
+      />,
+    );
+    await userEvent.click(trigger());
+    await waitFor(() => {
+      expect(document.querySelector("[data-slot='virtualizer']")).not.toBeNull();
+    });
+    /* overscan 为 0 时只渲染窗口内选项 */
+    const options = await screen.findAllByRole("option");
+    expect(options.length).toBeLessThan(60);
+    expect(screen.getByText("选项 0")).toBeInTheDocument();
+  });
+
+  it("virtualize 下仍可选择选项并上报值", async () => {
+    const onValueChange = vi.fn();
+    render(
+      <XSelectMenu items={bigItems(80)} valueKey="value" virtualize onValueChange={onValueChange} />,
+    );
+    await userEvent.click(trigger());
+    await userEvent.click(await screen.findByText("选项 5"));
+    expect(onValueChange).toHaveBeenCalledWith("value-5");
+  });
+});
+
+describe("XSelectMenu by 自定义比较", () => {
+  it("by 字符串作为取值字段,等价 valueKey", () => {
+    render(
+      <XSelectMenu
+        items={[
+          { id: "a", name: "苹果" },
+          { id: "b", name: "香蕉" },
+        ]}
+        labelKey="name"
+        by="id"
+        value="a"
+      />,
+    );
+    expect(trigger()).toHaveTextContent("苹果");
+  });
+
+  it("by 函数接管选中值比较", async () => {
+    const onValueChange = vi.fn();
+    render(
+      <XSelectMenu
+        items={[
+          { id: "a", label: "苹果" },
+          { id: "b", label: "香蕉" },
+        ]}
+        value={{ id: "b" } as unknown as string}
+        by={(a, b) => (a as { id: string }).id === (b as { id: string }).id}
+        onValueChange={onValueChange}
+      />,
+    );
+    /* by 判定 id 相等即选中,触发器显示对应标签 */
+    expect(trigger()).toHaveTextContent("香蕉");
+    await userEvent.click(trigger());
+    await userEvent.click(await screen.findByText("苹果"));
+    /* by 只接管值比较,选中值仍为选项对象本身 */
+    expect(onValueChange.mock.calls[0]?.[0]).toEqual({ id: "a", label: "苹果" });
   });
 });

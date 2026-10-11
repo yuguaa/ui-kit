@@ -15,6 +15,7 @@ export type XTooltipKbd =
       value?: string
       variant?: XKbdVariant
       color?: XKbdColor
+      size?: XKbdSize
     }
 
 /** 主题插槽类名，键名与 Nuxt UI 主题保持一致 */
@@ -25,6 +26,12 @@ export interface XTooltipUi {
   kbds?: string
   kbdsSize?: XKbdSize
 }
+
+/** portal 挂载目标：true 渲染到 body，也可指定容器元素或 ref */
+export type XTooltipPortal = boolean | HTMLElement | React.RefObject<HTMLElement | null>
+
+/** 定位参考：元素或元素 ref，缺省使用触发元素 */
+export type XTooltipReference = Element | null | React.RefObject<Element | null> | (() => Element | null)
 
 export interface XTooltipProps {
   /** 提示文本 */
@@ -39,12 +46,16 @@ export interface XTooltipProps {
   delayDuration?: number
   /** 内容可悬停保持 */
   disableHoverableContent?: boolean
+  /** 点击触发元素时不关闭提示 */
+  disableClosingTrigger?: boolean
   /** 禁用提示 */
   disabled?: boolean
   /** 是否显示箭头 */
   arrow?: boolean
-  /** 渲染到 body */
-  portal?: boolean
+  /** 渲染到 body 或指定容器 */
+  portal?: XTooltipPortal
+  /** 定位参考元素，缺省使用触发元素 */
+  reference?: XTooltipReference
   className?: string
   /** 主题插槽类名 */
   ui?: XTooltipUi
@@ -56,6 +67,11 @@ export interface XTooltipProps {
   onOpenChange?: (open: boolean, details: TooltipPrimitive.Root.ChangeEventDetails) => void
 }
 
+/** portal 为 true 时由 Base UI 默认挂载 body，其余形式透传容器 */
+function resolvePortalContainer(portal: XTooltipPortal | undefined) {
+  return typeof portal === "boolean" ? undefined : portal
+}
+
 export function XTooltip({
   text,
   kbds,
@@ -63,9 +79,11 @@ export function XTooltip({
   defaultOpen,
   delayDuration,
   disableHoverableContent,
+  disableClosingTrigger,
   disabled,
   arrow = false,
   portal = true,
+  reference,
   className,
   ui,
   children,
@@ -76,7 +94,13 @@ export function XTooltip({
   const isDisabled = !(text || kbds?.length || content != null) || Boolean(disabled)
 
   const popupElement = (
-    <TooltipPrimitive.Positioner className="isolate z-50" side="bottom" sideOffset={8} collisionPadding={8}>
+    <TooltipPrimitive.Positioner
+      className="isolate z-50"
+      side="bottom"
+      sideOffset={8}
+      collisionPadding={8}
+      anchor={reference}
+    >
       <TooltipPrimitive.Popup
         data-slot="content"
         className={cn(
@@ -122,11 +146,16 @@ export function XTooltip({
           <TooltipPrimitive.Trigger
             render={React.isValidElement(children) ? children : undefined}
             className={className}
+            closeOnClick={disableClosingTrigger ? false : undefined}
           >
             {React.isValidElement(children) ? undefined : children}
           </TooltipPrimitive.Trigger>
         )}
-        {portal ? <TooltipPrimitive.Portal>{popupElement}</TooltipPrimitive.Portal> : popupElement}
+        {portal ? (
+          <TooltipPrimitive.Portal container={resolvePortalContainer(portal)}>{popupElement}</TooltipPrimitive.Portal>
+        ) : (
+          popupElement
+        )}
       </TooltipPrimitive.Root>
     </TooltipPrimitive.Provider>
   )

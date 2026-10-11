@@ -27,8 +27,18 @@ export interface XLinkProps extends Omit<React.ComponentProps<"a">, "href" | "ch
   color?: XLinkColor
   /** 激活态 */
   active?: boolean
+  /** 激活态附加类名 */
+  activeClass?: string
   /** 非激活态附加类名 */
   inactiveClass?: string
+  /** 激活时输出的 aria-current 值 */
+  ariaCurrentValue?: string
+  /** 强制视为外链，自动补充 noopener noreferrer */
+  external?: boolean
+  /** 关闭 rel 自动补充，仅保留显式传入的 rel */
+  noRel?: boolean
+  /** 只应用 class / activeClass / inactiveClass，跳过主题样式 */
+  raw?: boolean
   /** 是否禁用 */
   disabled?: boolean
   /** 渲染为指定元素 */
@@ -42,11 +52,21 @@ export interface XLinkProps extends Omit<React.ComponentProps<"a">, "href" | "ch
   children?: React.ReactNode
 }
 
+/** 协议判定：http: / mailto: 等协议或 // 协议相对地址 */
+function hasProtocol(value: string) {
+  return /^[a-z][a-z0-9+.-]*:/i.test(value) || value.startsWith("//")
+}
+
 export function XLink({
   to,
   color = "primary",
   active = false,
+  activeClass,
   inactiveClass,
+  ariaCurrentValue = "page",
+  external = false,
+  noRel = false,
+  raw = false,
   disabled = false,
   render,
   ui,
@@ -55,22 +75,44 @@ export function XLink({
   className,
   children,
   onClick,
+  target,
+  rel,
   ...rest
 }: XLinkProps) {
+  /* 外链判定：显式 external 或地址带协议 */
+  const isExternal = external || (to != null && hasProtocol(to))
+
+  /* rel 默认值：外链或新窗口打开自动补 noopener noreferrer，noRel 时关闭 */
+  const resolvedRel = noRel
+    ? rel
+    : (rel ?? ((isExternal || (target != null && target !== "_self")) ? "noopener noreferrer" : undefined))
+
+  /* 主题样式：raw 时跳过，只保留 class 相关类名 */
+  const themeClass = raw
+    ? undefined
+    : cn(
+        "inline-flex items-center gap-1 rounded text-sm font-medium transition-colors outline-none cursor-pointer focus-visible:ring-3 focus-visible:ring-ring/50",
+        linkColorClasses[color],
+        active && "text-primary/75 underline underline-offset-4",
+        disabled && "cursor-not-allowed opacity-75",
+      )
+
   return useRender({
     defaultTagName: "a",
     render,
     props: {
       href: disabled ? undefined : to,
-      "aria-current": active ? "page" : undefined,
+      rel: resolvedRel,
+      target,
+      "aria-current": active ? ariaCurrentValue : undefined,
       "aria-disabled": disabled || undefined,
+      role: disabled ? "link" : undefined,
+      tabIndex: disabled ? -1 : undefined,
       className: cn(
-        "inline-flex items-center gap-1 rounded text-sm font-medium transition-colors outline-none cursor-pointer focus-visible:ring-3 focus-visible:ring-ring/50",
-        linkColorClasses[color],
-        active && "text-primary/75 underline underline-offset-4",
+        themeClass,
+        !raw && ui?.base,
+        active && activeClass,
         !active && inactiveClass,
-        disabled && "cursor-not-allowed opacity-75",
-        ui?.base,
         className,
       ),
       onClick: (event: React.MouseEvent<HTMLAnchorElement>) => {

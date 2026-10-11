@@ -4,6 +4,7 @@
  * items 支持字符串、对象与二维分组数组，labelKey / valueKey / descriptionKey 映射字段。
  */
 import * as React from "react"
+import { useVirtualizer } from "@tanstack/react-virtual"
 import { Combobox } from "@base-ui/react/combobox"
 import { XAvatar, type XAvatarProps } from "@/components/kit/x-avatar"
 import { XIcon, type XIconName } from "@/components/kit/x-icon"
@@ -35,6 +36,16 @@ export interface XInputMenuContentOptions {
   side?: "top" | "right" | "bottom" | "left"
   alignOffset?: number
   sideOffset?: number
+}
+
+/** 虚拟滚动配置 */
+export interface XInputMenuVirtualizeOptions {
+  /** 每项估算高度(像素),或按索引返回估算高度的函数;默认按 size 与描述推算 */
+  estimateSize?: number | ((index: number) => number)
+  /** 可视区域外额外渲染的项数,默认 12 */
+  overscan?: number
+  /** 每项稳定键,默认使用索引 */
+  getItemKey?: (index: number) => string | number
 }
 
 export interface XInputMenuItem {
@@ -129,6 +140,10 @@ export interface XInputMenuProps {
   arrow?: boolean
   /** 浮层是否渲染到 body */
   portal?: boolean
+  /** 虚拟滚动:true 或配置对象,适合大数据量列表;开启后分组展平为单一列表 */
+  virtualize?: boolean | XInputMenuVirtualizeOptions
+  /** 自定义值比较:函数直接比较两个值;字符串作为取值字段(等价 valueKey) */
+  by?: string | ((a: unknown, b: unknown) => boolean)
   /** 选项值字段 */
   valueKey?: string
   /** 选项标签字段 */
@@ -260,6 +275,15 @@ const highlightClasses: Record<XInputMenuColor, string> = {
   error: "ring-error",
 }
 
+/** 虚拟化估算行高:无说明 / 有说明,对齐 Vue 版 getEstimateSize */
+const virtualizeRowSizes: Record<XInputMenuSize, { plain: number; withDescription: number }> = {
+  xs: { plain: 24, withDescription: 44 },
+  sm: { plain: 28, withDescription: 48 },
+  md: { plain: 32, withDescription: 52 },
+  lg: { plain: 36, withDescription: 56 },
+  xl: { plain: 40, withDescription: 60 },
+}
+
 /** 渲染图标：字符串走 XIcon，组件直接渲染 */
 function renderIcon(
   icon: XInputMenuIcon | undefined,
@@ -296,6 +320,8 @@ export function XInputMenu({
   content,
   arrow = false,
   portal = true,
+  virtualize = false,
+  by,
   valueKey,
   labelKey = "label",
   descriptionKey = "description",
@@ -355,9 +381,16 @@ export function XInputMenu({
     return () => clearTimeout(timer)
   }, [currentOpen, autofocus, autofocusDelay])
   const [searchTerm, setSearchTerm] = React.useState("")
+  const viewportRef = React.useRef<HTMLDivElement>(null)
+  /* 弹层延迟挂载,viewport 上屏时通过 ref callback 通知虚拟器测量 */
+  const [viewportMounted, setViewportMounted] = React.useState(false)
+  const virtualizeOptions = typeof virtualize === "object" ? virtualize : {}
+  const isVirtualized = virtualize === true || typeof virtualize === "object"
 
   const labelField = labelKey || "label"
   const descriptionField = descriptionKey || "description"
+  /* by 字符串替代 valueKey 参与取值与比较,对齐 Vue 版 by ?? valueKey */
+  const effectiveValueKey = typeof by === "string" ? by : valueKey
   const isAutocomplete = mode === "autocomplete"
   const isListbox = mode === "listbox"
   const isMultiple = multiple && !isAutocomplete
@@ -369,16 +402,16 @@ export function XInputMenu({
   }, [items])
   const flatItems = React.useMemo(() => groups.flatMap((group) => group), [groups])
 
-  /* valueKey 存在时用 createItems 派生选中值与展示标签，value 为字段值而非整个对象 */
+  /* valueKey 存在时用 createItems 派生选中值与展示标签,value 为字段值而非整个对象 */
   const collection = React.useMemo(
     () =>
-      valueKey
+      effectiveValueKey
         ? Combobox.createItems(flatItems, {
-            getValue: (entry: XInputMenuItem) => getField(entry, valueKey),
+            getValue: (entry: XInputMenuItem) => getField(entry, effectiveValueKey),
             getLabel: (entry: XInputMenuItem) => String(getField(entry, labelField) ?? ""),
           })
         : flatItems,
-    [flatItems, valueKey, labelField],
+    [flatItems, effectiveValueKey, labelField],
   )
 
   const isStructural = (entry: XInputMenuItem) => !!entry?.type && ["label", "separator"].includes(entry.type)
@@ -391,15 +424,15 @@ export function XInputMenu({
   }, [groups, searchTerm, ignoreFilter, filterFields, labelField])
   const filteredItems = React.useMemo(() => filteredGroups.flatMap((group) => group), [filteredGroups])
 
-  const itemValue = (entry: XInputMenuItem) => (valueKey ? getField(entry, valueKey) : entry)
+  const itemValue = (entry: XInputMenuItem) => (effectiveValueKey ? getField(entry, effectiveValueKey) : entry)
 
   const createItemValue = React.useMemo(() => {
     if (!createItem || !searchTerm) return false
-    const candidate = valueKey ? { [valueKey]: searchTerm } : searchTerm
-    const exists = filteredItems.some((entry) => compare(entry, candidate, valueKey))
+    const candidate = effectiveValueKey ? { [effectiveValueKey]: searchTerm } : searchTerm
+    const exists = filteredItems.some((entry) => compare(entry, candidate, effectiveValueKey))
     if (createItem === "always" || (typeof createItem === "object" && createItem.when === "always")) return !exists
     return filteredItems.length === 0
-  }, [createItem, searchTerm, valueKey, filteredItems])
+  }, [createItem, searchTerm, effectiveValueKey, filteredItems])
   const createItemPosition = typeof createItem === "object" ? createItem.position ?? "bottom" : "bottom"
 
   const selectedValues = React.useMemo(
@@ -407,12 +440,60 @@ export function XInputMenu({
     [isMultiple, currentValue],
   )
 
+  /* 估算行高:显式配置优先,否则对齐 Vue 版按 size 与描述字段推算 */
+  const estimateSize = React.useMemo<((index: number) => number) | undefined>(() => {
+    const provided = typeof virtualize === "object" ? virtualize.estimateSize : undefined
+    if (provided != null) {
+      return typeof provided === "function" ? provided : () => provided
+    }
+    if (!isVirtualized) return undefined
+    const rowSizes = virtualizeRowSizes[size]
+    if (itemDescription != null) return () => rowSizes.withDescription
+    if (!descriptionKey) return () => rowSizes.plain
+    return (index: number) => {
+      const entry = filteredItems[index]
+      const description = typeof entry === "object" && entry !== null ? getField(entry, descriptionField) : undefined
+      return description != null && description !== "" ? rowSizes.withDescription : rowSizes.plain
+    }
+  }, [isVirtualized, virtualize, size, itemDescription, descriptionKey, descriptionField, filteredItems])
+
+  /* 读取滚动容器的 scroll-padding(scroll-py-1),补偿虚拟化首尾偏移 */
+  const [scrollPadding, setScrollPadding] = React.useState({ start: 0, end: 0 })
+  React.useLayoutEffect(() => {
+    if (!isVirtualized) return
+    const element = viewportRef.current
+    if (!element) return
+    const style = window.getComputedStyle(element)
+    const parse = (value: string) => {
+      const parsed = Number.parseFloat(value)
+      return Number.isFinite(parsed) ? parsed : 0
+    }
+    setScrollPadding({ start: parse(style.scrollPaddingTop), end: parse(style.scrollPaddingBottom) })
+  }, [isVirtualized, viewportMounted])
+
+  /* 虚拟器:窗口由列表可视高度驱动,未显式配置的 estimateSize 走默认推算 */
+  const virtualizer = useVirtualizer({
+    count: filteredItems.length,
+    getScrollElement: () => viewportRef.current,
+    estimateSize: (index: number) => (estimateSize != null ? estimateSize(index) : 32),
+    overscan: virtualizeOptions.overscan ?? 12,
+    getItemKey: virtualizeOptions.getItemKey,
+    scrollPaddingStart: scrollPadding.start,
+    scrollPaddingEnd: scrollPadding.end,
+  })
+
+  /* estimateSize 变化或 viewport 挂载时重置测量缓存,确保新估算高度生效 */
+  React.useLayoutEffect(() => {
+    if (isVirtualized) virtualizer.measure()
+  }, [estimateSize, viewportMounted])
+
   /* 输入框显示文本 */
+  const byComparator = typeof by === "function" ? by : undefined
   const displayValue = React.useMemo(() => {
     if (isAutocomplete) return String(currentValue ?? "")
     if (isListbox || isMultiple) return ""
-    return getDisplayValue(flatItems, currentValue, { labelKey: labelField, valueKey }) ?? ""
-  }, [isAutocomplete, isListbox, isMultiple, currentValue, flatItems, labelField, valueKey])
+    return getDisplayValue(flatItems, currentValue, { labelKey: labelField, valueKey: effectiveValueKey, by: byComparator }) ?? ""
+  }, [isAutocomplete, isListbox, isMultiple, currentValue, flatItems, labelField, effectiveValueKey, byComparator])
 
   const showClear = !!clear && !disabled && selectedValues.length > 0
   const showSearchInput = isListbox && searchInput !== false
@@ -442,9 +523,9 @@ export function XInputMenu({
     [open, onOpenChange, onFocus, onBlur],
   )
 
-  /* 根组件值变化：autocomplete 写入输入文本，其余写入选中值 */
+  /* 根组件值变化:autocomplete 写入输入文本,其余写入选中值 */
   const handleRootValueChange = (next: any) => {    if (isAutocomplete) {
-      const text = getDisplayValue(flatItems, next, { labelKey: labelField, valueKey }) ?? String(next ?? "")
+      const text = getDisplayValue(flatItems, next, { labelKey: labelField, valueKey: effectiveValueKey, by: byComparator }) ?? String(next ?? "")
       setSearchTerm(text)
       updateValue(text)
       return
@@ -469,116 +550,158 @@ export function XInputMenu({
     onCreate?.(searchTerm)
   }
 
+  /* 单项渲染:虚拟化时 label 包一层无布局影响的 Group,item 加虚拟化索引属性 */
+  const renderItem = (entry: XInputMenuItem, index: number, options?: { virtual?: boolean; total?: number }): React.ReactNode => {
+    if (entry?.type === "label") {
+      const labelNode = (
+        <Combobox.GroupLabel
+          key={`label-${index}`}
+          data-slot="label"
+          className={cn("font-semibold text-foreground", currentSize.label, entry.className, ui?.label, entry.ui?.label)}
+        >
+          {getField(entry, labelField)}
+        </Combobox.GroupLabel>
+      )
+
+      /* 虚拟化平铺渲染:GroupLabel 依赖 Group 上下文,包一层无布局影响的 Group */
+      if (options?.virtual) {
+        return (
+          <Combobox.Group key={`label-${index}`} className="contents">
+            {labelNode}
+          </Combobox.Group>
+        )
+      }
+
+      return labelNode
+    }
+
+    if (entry?.type === "separator") {
+      return (
+        <Combobox.Separator
+          key={`separator-${index}`}
+          data-slot="separator"
+          className={cn("-mx-1 my-1 h-px bg-border", entry.className, ui?.separator, entry.ui?.separator)}
+        />
+      )
+    }
+
+    if (itemSlot != null) {
+      return <React.Fragment key={`item-${index}`}>{itemSlot({ item: entry, index })}</React.Fragment>
+    }
+
+    /* 虚拟化时显式传 index,避免从 filtered items 反查造成值不匹配 */
+    const virtualItemProps = options?.virtual
+      ? { index, "data-index": index, "aria-setsize": options.total, "aria-posinset": index + 1 }
+      : {}
+
+    return (
+      <Combobox.Item
+        key={`item-${index}`}
+        {...virtualItemProps}
+        value={itemValue(entry)}
+        disabled={entry.disabled}
+        data-slot="item"
+        className={cn(
+          "relative flex w-full cursor-default items-start rounded-md outline-none select-none",
+          "data-disabled:pointer-events-none data-disabled:opacity-75",
+          "data-highlighted:bg-accent data-highlighted:text-accent-foreground",
+          "data-selected:bg-accent data-selected:text-accent-foreground",
+          currentSize.item,
+          entry.className,
+          ui?.item,
+          entry.ui?.item,
+        )}
+        onClick={(event) => {
+          if (entry.disabled) {
+            event.preventDefault()
+            return
+          }
+          entry.onSelect?.(event.nativeEvent)
+        }}
+      >
+        {itemLeading != null ? (
+          itemLeading({ item: entry, index })
+        ) : (
+          <span data-slot="itemLeadingIcon" className={cn("flex", currentSize.icon)}>
+            {entry.icon != null && renderIcon(entry.icon, cn("shrink-0 text-muted-foreground", currentSize.icon, ui?.itemLeadingIcon, entry.ui?.itemLeadingIcon))}
+            {entry.icon == null && entry.avatar != null && (
+              <XAvatar {...entry.avatar} data-slot="itemLeadingAvatar" className={cn("shrink-0", ui?.itemLeadingAvatar, entry.ui?.itemLeadingAvatar)} />
+            )}
+          </span>
+        )}
+
+        <span data-slot="itemWrapper" className={cn("flex min-w-0 flex-1 flex-col", ui?.itemWrapper, entry.ui?.itemWrapper)}>
+          <span data-slot="itemLabel" className={cn("truncate", ui?.itemLabel, entry.ui?.itemLabel)}>
+            {itemLabel != null ? itemLabel({ item: entry, index }) : getField(entry, labelField) ?? entry}
+          </span>
+          {(getField(entry, descriptionField) != null || itemDescription != null) && (
+            <span data-slot="itemDescription" className={cn("truncate text-muted-foreground", ui?.itemDescription, entry.ui?.itemDescription)}>
+              {itemDescription != null ? itemDescription({ item: entry, index }) : getField(entry, descriptionField)}
+            </span>
+          )}
+        </span>
+
+        <span data-slot="itemTrailing" className={cn("ms-auto inline-flex items-center gap-1.5", ui?.itemTrailing, entry.ui?.itemTrailing)}>
+          {itemTrailing?.({ item: entry, index })}
+          {!isAutocomplete && (
+            <Combobox.ItemIndicator>
+              {renderIcon(selectedIcon, cn("shrink-0", currentSize.icon, ui?.itemTrailingIcon, entry.ui?.itemTrailingIcon), "itemTrailingIcon")}
+            </Combobox.ItemIndicator>
+          )}
+        </span>
+      </Combobox.Item>
+    )
+  }
+
+  /* createItem 项:虚拟化时固定在虚拟列表外(对齐 Vue 版) */
+  const renderCreateItemGroup = (position: "top" | "bottom") =>
+    createItemValue && createItemPosition === position ? (
+      <Combobox.Group data-slot="group" className={cn("p-1", ui?.group)}>
+        <Combobox.Item value={searchTerm} data-slot="item" className={cn("relative flex w-full items-start rounded-md", currentSize.item, ui?.item)} onClick={handleCreate}>
+          <span data-slot="itemLabel" className={cn("truncate", ui?.itemLabel)}>
+            {createItemLabel != null ? createItemLabel({ item: searchTerm }) : `创建 "${searchTerm}"`}
+          </span>
+        </Combobox.Item>
+      </Combobox.Group>
+    ) : null
+
   const listContent = (
     <>
-      {createItemValue && createItemPosition === "top" && (
-        <Combobox.Group data-slot="group" className={cn("p-1", ui?.group)}>
-          <Combobox.Item value={searchTerm} data-slot="item" className={cn("relative flex w-full items-start rounded-md", currentSize.item, ui?.item)} onClick={handleCreate}>
-            <span data-slot="itemLabel" className={cn("truncate", ui?.itemLabel)}>
-              {createItemLabel != null ? createItemLabel({ item: searchTerm }) : `创建 "${searchTerm}"`}
-            </span>
-          </Combobox.Item>
-        </Combobox.Group>
-      )}
+      {renderCreateItemGroup("top")}
 
-      {filteredGroups.map((group, groupIndex) => (
-        <Combobox.Group key={`group-${groupIndex}`} data-slot="group" className={cn("p-1", ui?.group)}>
-          {group.map((entry, index) => {
-            if (entry?.type === "label") {
-              return (
-                <Combobox.GroupLabel
-                  key={`label-${index}`}
-                  data-slot="label"
-                  className={cn("font-semibold text-foreground", currentSize.label, entry.className, ui?.label, entry.ui?.label)}
-                >
-                  {getField(entry, labelField)}
-                </Combobox.GroupLabel>
-              )
-            }
-
-            if (entry?.type === "separator") {
-              return (
-                <Combobox.Separator
-                  key={`separator-${index}`}
-                  data-slot="separator"
-                  className={cn("-mx-1 my-1 h-px bg-border", entry.className, ui?.separator, entry.ui?.separator)}
-                />
-              )
-            }
-
-            if (itemSlot != null) {
-              return <React.Fragment key={`item-${index}`}>{itemSlot({ item: entry, index })}</React.Fragment>
-            }
-
+      {isVirtualized ? (
+        /* 虚拟滚动:相对容器撑起总高度,窗口项绝对定位(对齐 Vue 版 ComboboxVirtualizer) */
+        <div data-slot="virtualizer" role="presentation" className="relative w-full" style={{ height: virtualizer.getTotalSize() }}>
+          {virtualizer.getVirtualItems().map((virtualItem) => {
+            const entry = filteredItems[virtualItem.index]
+            if (entry == null) return null
             return (
-              <Combobox.Item
-                key={`item-${index}`}
-                value={itemValue(entry)}
-                disabled={entry.disabled}
-                data-slot="item"
-                className={cn(
-                  "relative flex w-full cursor-default items-start rounded-md outline-none select-none",
-                  "data-disabled:pointer-events-none data-disabled:opacity-75",
-                  "data-highlighted:bg-accent data-highlighted:text-accent-foreground",
-                  "data-selected:bg-accent data-selected:text-accent-foreground",
-                  currentSize.item,
-                  entry.className,
-                  ui?.item,
-                  entry.ui?.item,
-                )}
-                onClick={(event) => {
-                  if (entry.disabled) {
-                    event.preventDefault()
-                    return
-                  }
-                  entry.onSelect?.(event.nativeEvent)
+              <div
+                key={virtualItem.key}
+                role="presentation"
+                data-index={virtualItem.index}
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  transform: `translateY(${virtualItem.start}px)`,
                 }}
               >
-                {itemLeading != null ? (
-                  itemLeading({ item: entry, index })
-                ) : (
-                  <span data-slot="itemLeadingIcon" className={cn("flex", currentSize.icon)}>
-                    {entry.icon != null && renderIcon(entry.icon, cn("shrink-0 text-muted-foreground", currentSize.icon, ui?.itemLeadingIcon, entry.ui?.itemLeadingIcon))}
-                    {entry.icon == null && entry.avatar != null && (
-                      <XAvatar {...entry.avatar} data-slot="itemLeadingAvatar" className={cn("shrink-0", ui?.itemLeadingAvatar, entry.ui?.itemLeadingAvatar)} />
-                    )}
-                  </span>
-                )}
-
-                <span data-slot="itemWrapper" className={cn("flex min-w-0 flex-1 flex-col", ui?.itemWrapper, entry.ui?.itemWrapper)}>
-                  <span data-slot="itemLabel" className={cn("truncate", ui?.itemLabel, entry.ui?.itemLabel)}>
-                    {itemLabel != null ? itemLabel({ item: entry, index }) : getField(entry, labelField) ?? entry}
-                  </span>
-                  {(getField(entry, descriptionField) != null || itemDescription != null) && (
-                    <span data-slot="itemDescription" className={cn("truncate text-muted-foreground", ui?.itemDescription, entry.ui?.itemDescription)}>
-                      {itemDescription != null ? itemDescription({ item: entry, index }) : getField(entry, descriptionField)}
-                    </span>
-                  )}
-                </span>
-
-                <span data-slot="itemTrailing" className={cn("ms-auto inline-flex items-center gap-1.5", ui?.itemTrailing, entry.ui?.itemTrailing)}>
-                  {itemTrailing?.({ item: entry, index })}
-                  {!isAutocomplete && (
-                    <Combobox.ItemIndicator>
-                      {renderIcon(selectedIcon, cn("shrink-0", currentSize.icon, ui?.itemTrailingIcon, entry.ui?.itemTrailingIcon), "itemTrailingIcon")}
-                    </Combobox.ItemIndicator>
-                  )}
-                </span>
-              </Combobox.Item>
+                {renderItem(entry, virtualItem.index, { virtual: true, total: filteredItems.length })}
+              </div>
             )
           })}
-        </Combobox.Group>
-      ))}
-
-      {createItemValue && createItemPosition === "bottom" && (
-        <Combobox.Group data-slot="group" className={cn("p-1", ui?.group)}>
-          <Combobox.Item value={searchTerm} data-slot="item" className={cn("relative flex w-full items-start rounded-md", currentSize.item, ui?.item)} onClick={handleCreate}>
-            <span data-slot="itemLabel" className={cn("truncate", ui?.itemLabel)}>
-              {createItemLabel != null ? createItemLabel({ item: searchTerm }) : `创建 "${searchTerm}"`}
-            </span>
-          </Combobox.Item>
-        </Combobox.Group>
+        </div>
+      ) : (
+        filteredGroups.map((group, groupIndex) => (
+          <Combobox.Group key={`group-${groupIndex}`} data-slot="group" className={cn("p-1", ui?.group)}>
+            {group.map((entry, index) => renderItem(entry, index))}
+          </Combobox.Group>
+        ))
       )}
+
+      {renderCreateItemGroup("bottom")}
     </>
   )
 
@@ -621,7 +744,15 @@ export function XInputMenu({
           </Combobox.Empty>
         )}
 
-        <Combobox.List data-slot="viewport" className={cn("relative max-h-60 flex-1 overflow-y-auto scroll-py-1", ui?.viewport)}>
+        <Combobox.List
+          ref={(element) => {
+            viewportRef.current = element
+            /* 挂载状态未变化时不触发重渲染,避免 ref callback 造成每帧更新 */
+            setViewportMounted((mounted) => (element != null) === mounted ? mounted : element != null)
+          }}
+          data-slot="viewport"
+          className={cn("relative max-h-60 flex-1 overflow-y-auto scroll-py-1", ui?.viewport)}
+        >
           {listContent}
         </Combobox.List>
 
@@ -653,14 +784,22 @@ export function XInputMenu({
       onOpenChange={updateOpen}
       inputValue={isAutocomplete ? searchTerm : searchTerm !== "" ? searchTerm : displayValue}
       onInputValueChange={handleInputChange}
-      onItemHighlighted={(next, details) =>
+      onItemHighlighted={(next, details) => {
+        /* 虚拟化:高亮变化时滚动窗口跟随(对齐 Vue 版 virtualHighlightHook) */
+        if (isVirtualized && next !== undefined && details.index != null) {
+          queueMicrotask(() => {
+            virtualizer.scrollToIndex(details.index, { align: "start" })
+          })
+        }
         onHighlight?.(next === undefined ? undefined : { ref: (details as any).event?.target, value: next })
-      }
+      }}
       multiple={isMultiple}
       disabled={disabled}
       required={required}
       name={name}
       id={id}
+      virtualized={isVirtualized}
+      isItemEqualToValue={typeof by === "function" ? (itemValue, value) => by(itemValue, value) : undefined}
       highlightItemOnHover={highlightOnHover}
       itemToStringLabel={(entry: any) => String(getField(entry, labelField) ?? entry ?? "")}
     >
@@ -688,7 +827,7 @@ export function XInputMenu({
                     <span data-slot="tagsItemText" className={cn("truncate", ui?.tagsItemText)}>
                       {tagsItemText != null
                         ? tagsItemText({ item: entry, index })
-                        : getDisplayValue(flatItems, entry, { labelKey: labelField, valueKey })}
+                        : getDisplayValue(flatItems, entry, { labelKey: labelField, valueKey: effectiveValueKey, by: byComparator })}
                     </span>
                     <Combobox.ChipRemove
                       data-slot="tagsItemDelete"

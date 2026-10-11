@@ -68,11 +68,15 @@ const sizeClasses: Record<XCheckboxSize, { base: string, icon: string, container
   lg: { base: "size-5", icon: "size-4", container: "h-6", wrapper: "text-base", card: "p-4", hiddenIcon: "size-4.5" },
 }
 
-export interface XCheckboxProps extends Omit<React.ComponentPropsWithoutRef<"span">, "children"> {
-  /** 是否选中 */
-  checked?: boolean
+export interface XCheckboxProps<T = boolean> extends Omit<React.ComponentPropsWithoutRef<"span">, "children" | "checked" | "defaultChecked"> {
+  /** 是否选中;与 trueValue / falseValue 配合可映射任意选中值 */
+  checked?: T
   /** 初始选中状态(非受控) */
-  defaultChecked?: boolean
+  defaultChecked?: T
+  /** 选中时对外比较与上报的值,默认 true */
+  trueValue?: T
+  /** 未选中时对外比较与上报的值,默认 false */
+  falseValue?: T
   /** 半选状态 */
   indeterminate?: boolean
   /** 是否禁用 */
@@ -103,8 +107,8 @@ export interface XCheckboxProps extends Omit<React.ComponentPropsWithoutRef<"spa
   icon?: React.ElementType
   /** 半选时显示的图标 */
   indeterminateIcon?: React.ElementType
-  /** 选中状态变化回调 */
-  onCheckedChange?: (checked: boolean) => void
+  /** 选中状态变化回调,值为 trueValue / falseValue */
+  onCheckedChange?: (value: T) => void
   /** 渲染为指定元素 */
   render?: React.ReactElement<React.LabelHTMLAttributes<HTMLLabelElement>>
   /** 主题插槽类名,键名与 Nuxt UI 主题保持一致 */
@@ -112,8 +116,7 @@ export interface XCheckboxProps extends Omit<React.ComponentPropsWithoutRef<"spa
   className?: string
 }
 
-export const XCheckbox = React.forwardRef<HTMLButtonElement, XCheckboxProps>(function XCheckbox(
-  {
+export function XCheckbox<T = boolean>({
     checked,
     defaultChecked,
     indeterminate = false,
@@ -131,14 +134,21 @@ export const XCheckbox = React.forwardRef<HTMLButtonElement, XCheckboxProps>(fun
     highlight = false,
     icon,
     indeterminateIcon,
+    trueValue,
+    falseValue,
     onCheckedChange,
     render,
     ui,
     className,
+    ref,
     ...rest
-  },
-  ref,
-) {
+}: XCheckboxProps<T> & { ref?: React.Ref<HTMLButtonElement> }) {
+  /* trueValue / falseValue 映射:原子只认识 boolean,对外按映射值比较与上报 */
+  const trueVal = (trueValue ?? true) as T
+  const falseVal = (falseValue ?? false) as T
+  const isChecked = checked === undefined ? undefined : checked === trueVal
+  const isDefaultChecked = defaultChecked === undefined ? undefined : defaultChecked === trueVal
+
   /* 无显式 id 时用 useId 生成，保证 label 与控件正确关联 */
   const generatedId = React.useId()
   const controlId = id ?? generatedId
@@ -215,12 +225,12 @@ export const XCheckbox = React.forwardRef<HTMLButtonElement, XCheckboxProps>(fun
       name={name}
       data-slot="base"
       value={value == null ? undefined : String(value)}
-      checked={checked}
-      defaultChecked={defaultChecked}
+      checked={isChecked}
+      defaultChecked={isDefaultChecked}
       indeterminate={indeterminate}
       disabled={disabled}
       required={required}
-      onCheckedChange={onCheckedChange}
+      onCheckedChange={(next) => onCheckedChange?.(next ? trueVal : falseVal)}
       className={baseClass}
       {...rest}
     >
@@ -263,4 +273,4 @@ export const XCheckbox = React.forwardRef<HTMLButtonElement, XCheckboxProps>(fun
       {content}
     </RootTag>
   )
-})
+}

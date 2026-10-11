@@ -17,4 +17,10 @@
 | ui? | XButtonUi | - | 主题插槽类名，键名与 Nuxt UI 主题保持一致 |
 | leading? | React.ReactNode | - | 前置图标 |
 | trailing? | React.ReactNode | - | 后置图标 |
+| icon? | XIconName | - | 图标名（渲染为前置图标，与 Nuxt 版 icon prop 对齐） |
+| loadingIcon? | XIconName | - | 加载图标 |
+| avatar? | React.ReactNode | - | 左侧头像配置 |
+| to? | string | - | 链接地址：存在时渲染为 &lt;a&gt;（与 Nuxt 版 to prop 对齐） |
+| inactiveClass? | string | - | 非激活态附加类名 |
+| activeClass? | string | - | 激活态附加类名 |
 | children? | React.ReactNode | - |  |

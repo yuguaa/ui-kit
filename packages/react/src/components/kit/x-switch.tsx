@@ -65,13 +65,17 @@ const sizeClasses: Record<XSwitchSize, { base: string, container: string, thumb:
   small: { base: "h-3.5 w-6", container: "h-4", thumb: "size-3 data-checked:translate-x-[calc(100%-2px)]", wrapper: "text-xs", icon: "size-2.5" },
 }
 
-export interface XSwitchProps {
-  /** 是否选中 */
-  checked?: boolean
+export interface XSwitchProps<T = boolean> {
+  /** 是否选中;与 trueValue / falseValue 配合可映射任意选中值 */
+  checked?: T
   /** 初始选中状态(非受控) */
-  defaultChecked?: boolean
-  /** 选中状态变化回调 */
-  onCheckedChange?: (checked: boolean) => void
+  defaultChecked?: T
+  /** 选中时对外比较与上报的值,默认 true */
+  trueValue?: T
+  /** 未选中时对外比较与上报的值,默认 false */
+  falseValue?: T
+  /** 选中状态变化回调,值为 trueValue / falseValue */
+  onCheckedChange?: (value: T) => void
   /** 选中时滑块轨道的语义色 */
   color?: XSwitchColor
   /** 控件尺寸 */
@@ -109,12 +113,13 @@ export interface XSwitchProps {
   className?: string
 }
 
-export const XSwitch = React.forwardRef<HTMLButtonElement, XSwitchProps>(function XSwitch(
-  {
-    checked,
-    defaultChecked,
-    onCheckedChange,
-    color = "primary",
+export function XSwitch<T = boolean>({
+  checked,
+  defaultChecked,
+  trueValue,
+  falseValue,
+  onCheckedChange,
+  color = "primary",
     size = "default",
     highlight = false,
     required = false,
@@ -132,9 +137,14 @@ export const XSwitch = React.forwardRef<HTMLButtonElement, XSwitchProps>(functio
     render,
     ui,
     className,
-  },
-  ref,
-) {
+    ref,
+}: XSwitchProps<T> & { ref?: React.Ref<HTMLButtonElement> }) {
+  /* trueValue / falseValue 映射:原子只认识 boolean,对外按映射值比较与上报 */
+  const trueVal = (trueValue ?? true) as T
+  const falseVal = (falseValue ?? false) as T
+  const isChecked = checked === undefined ? undefined : checked === trueVal
+  const isDefaultChecked = defaultChecked === undefined ? undefined : defaultChecked === trueVal
+
   /* 无显式 id 时用 useId 生成，保证 label 与控件正确关联 */
   const generatedId = React.useId()
   const controlId = id ?? generatedId
@@ -160,7 +170,7 @@ export const XSwitch = React.forwardRef<HTMLButtonElement, XSwitchProps>(functio
     ui?.icon,
   )
 
-  const text = checked ? checkedChildren : unCheckedChildren
+  const text = isChecked ? checkedChildren : unCheckedChildren
 
   const content = (
     <React.Fragment>
@@ -170,9 +180,9 @@ export const XSwitch = React.forwardRef<HTMLButtonElement, XSwitchProps>(functio
           id={controlId}
           name={name}
           data-slot="base"
-          checked={checked}
-          defaultChecked={defaultChecked}
-          onCheckedChange={onCheckedChange}
+          checked={isChecked}
+          defaultChecked={isDefaultChecked}
+          onCheckedChange={(next) => onCheckedChange?.(next ? trueVal : falseVal)}
           disabled={disabled || loading}
           required={required}
           aria-busy={loading || undefined}
@@ -181,9 +191,9 @@ export const XSwitch = React.forwardRef<HTMLButtonElement, XSwitchProps>(functio
           <SwitchPrimitive.Thumb data-slot="thumb" className={thumbClass}>
             {loading ? (
               <LoadingIcon data-slot="icon" className={cn(iconClass, "animate-spin opacity-100")} aria-hidden="true" />
-            ) : checked && CheckedIcon != null ? (
+            ) : isChecked && CheckedIcon != null ? (
               <CheckedIcon data-slot="icon" className={cn(iconClass, "group-data-checked:opacity-100")} />
-            ) : !checked && UncheckedIcon != null ? (
+            ) : !isChecked && UncheckedIcon != null ? (
               <UncheckedIcon data-slot="icon" className={cn(iconClass, "group-data-unchecked:opacity-100")} />
             ) : null}
           </SwitchPrimitive.Thumb>
@@ -232,4 +242,4 @@ export const XSwitch = React.forwardRef<HTMLButtonElement, XSwitchProps>(functio
       {content}
     </div>
   )
-})
+}

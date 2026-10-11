@@ -100,6 +100,8 @@ export interface XRadioGroupProps {
   buttonStyle?: "outline" | "solid"
   /** 组 id,label 通过 htmlFor 关联单项 */
   id?: string
+  /** 表单字段名,提交表单时随选中值提交 */
+  name?: string
   /** 自定义单项 label 渲染 */
   label?: (option: XRadioOption, value: XRadioGroupValue | undefined) => React.ReactNode
   /** 自定义单项 description 渲染 */
@@ -161,6 +163,7 @@ export function XRadioGroup({
   variant = "radio",
   buttonStyle = "outline",
   id,
+  name,
   label: renderLabel,
   description: renderDescription,
   render,
@@ -291,6 +294,8 @@ export function XRadioGroup({
       defaultValue={defaultValue}
       onValueChange={onValueChange}
       disabled={disabled}
+      name={name}
+      required={required}
       id={groupId}
       data-slot="root"
       render={render}

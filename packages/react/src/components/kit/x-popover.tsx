@@ -12,6 +12,12 @@ export interface XPopoverUi {
   arrow?: string
 }
 
+/** portal 挂载目标：true 渲染到 body，也可指定容器元素或 ref */
+export type XPopoverPortal = boolean | HTMLElement | React.RefObject<HTMLElement | null>
+
+/** 定位参考：元素或元素 ref，缺省使用触发元素或 anchor 插槽 */
+export type XPopoverReference = Element | null | React.RefObject<Element | null> | (() => Element | null)
+
 export interface XPopoverProps {
   /** 触发模式：click 点击 / hover 悬停 */
   mode?: "click" | "hover"
@@ -25,12 +31,16 @@ export interface XPopoverProps {
   openDelay?: number
   /** 悬停关闭延迟（毫秒，仅 hover 模式） */
   closeDelay?: number
+  /** 触屏设备点击触发器时切换开合（仅 hover 模式） */
+  enableTouch?: boolean
   /** 是否显示指向触发元素的箭头 */
   arrow?: boolean
-  /** 渲染到 body */
-  portal?: boolean
+  /** 渲染到 body 或指定容器 */
+  portal?: XPopoverPortal
   /** 允许点击外部或按 Esc 关闭 */
   dismissible?: boolean
+  /** 定位参考元素，缺省使用触发元素 */
+  reference?: XPopoverReference
   className?: string
   /** 主题插槽类名 */
   ui?: XPopoverUi
@@ -46,6 +56,11 @@ export interface XPopoverProps {
   onClosePrevent?: () => void
 }
 
+/** portal 为 true 时由 Base UI 默认挂载 body，其余形式透传容器 */
+function resolvePortalContainer(portal: XPopoverPortal | undefined) {
+  return typeof portal === "boolean" ? undefined : portal
+}
+
 export function XPopover({
   mode = "click",
   open,
@@ -53,9 +68,11 @@ export function XPopover({
   modal = false,
   openDelay = 0,
   closeDelay = 0,
+  enableTouch = false,
   arrow = false,
   portal = true,
   dismissible = true,
+  reference,
   className,
   ui,
   children,
@@ -88,7 +105,7 @@ export function XPopover({
       side="bottom"
       sideOffset={8}
       collisionPadding={8}
-      anchor={anchorRef}
+      anchor={reference ?? anchorRef}
     >
       <PopoverPrimitive.Popup
         data-slot="content"
@@ -120,15 +137,19 @@ export function XPopover({
         <PopoverPrimitive.Trigger
           render={React.isValidElement(children) ? children : undefined}
           className={className}
-          openOnHover={mode === "hover"}
-          delay={mode === "hover" ? openDelay : undefined}
-          closeDelay={mode === "hover" ? closeDelay : undefined}
+          openOnHover={mode === "hover" && !enableTouch}
+          delay={mode === "hover" && !enableTouch ? openDelay : undefined}
+          closeDelay={mode === "hover" && !enableTouch ? closeDelay : undefined}
         >
           {React.isValidElement(children) ? undefined : children}
         </PopoverPrimitive.Trigger>
       )}
 
-      {portal ? <PopoverPrimitive.Portal>{popupElement}</PopoverPrimitive.Portal> : popupElement}
+      {portal ? (
+        <PopoverPrimitive.Portal container={resolvePortalContainer(portal)}>{popupElement}</PopoverPrimitive.Portal>
+      ) : (
+        popupElement
+      )}
     </PopoverPrimitive.Root>
   )
 }
