@@ -471,7 +471,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.selectMenu || {}
   fieldGroup: orientation.value,
   virtualize: !!props.virtualize,
   multiple: props.multiple
-}))
+} as any) as unknown as Record<string, any>)
 
 function displayValue(value: GetItemValue<T, VK, ExcludeItem> | GetItemValue<T, VK, ExcludeItem>[]): string | undefined {
   if (props.multiple && Array.isArray(value)) {

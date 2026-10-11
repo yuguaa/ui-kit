@@ -41,6 +41,14 @@ export interface TooltipProps {
   reference?: TooltipTriggerProps['reference']
   class?: any
   ui?: Tooltip['slots']
+/** reka Tooltip Root 透传成员（类型补齐，运行时经 useForwardProps 转发） */
+  open?: any
+  defaultOpen?: any
+  delayDuration?: any
+  disableHoverableContent?: any
+  disableClosingTrigger?: any
+  ignoreNonKeyboardFocus?: any
+  disabled?: any
 }
 
 export interface TooltipEmits {

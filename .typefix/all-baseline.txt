@@ -1,7 +1,3 @@
-src/components/kit/useXAccordion.ts(6,15): error TS2724: '"./XAccordion.vue"' has no exported member named 'AccordionDataItem'. Did you mean 'AccordionItem'?
-src/components/kit/useXCarousel.ts(6,15): error TS2724: '"./XCarousel.vue"' has no exported member named 'CarouselDataItem'. Did you mean 'CarouselItem'?
-src/components/kit/useXScrollArea.ts(20,36): error TS2344: Type '<T extends unknown>(__VLS_props: NonNullable<Awaited<typeof __VLS_setup>>["props"], __VLS_ctx?: __VLS_PrettifyLocal<Pick<NonNullable<Awaited<typeof __VLS_setup>>, "attrs" | "emit" | "slots">>, __VLS_exposed?: NonNullable<Awaited<typeof __VLS_setup>>["expose"], __VLS_setup?: Promise<...>) => import("vue").VNode & { _...' does not satisfy the constraint 'abstract new (...args: any) => any'.
-  Type '<T extends unknown>(__VLS_props: VNodeProps & AllowedComponentProps & ComponentCustomProps & { as?: any; orientation?: string | undefined; items?: T[] | undefined; ... 4 more ...; onScroll?: ((isScrolling: boolean) => any) | undefined; } & Record<...>, __VLS_ctx?: { ...; } | undefined, __VLS_exposed?: ((exposed: { ....' provides no match for the signature 'new (...args: any): any'.
 src/components/kit/XAccordion.vue(116,61): error TS2345: Argument of type '"collapsible"' is not assignable to parameter of type 'keyof AccordionProps<T> | (keyof AccordionProps<T>)[]'.
 src/components/kit/XAccordion.vue(120,19): error TS2339: Property 'disabled' does not exist on type 'AccordionProps<T>'.
 src/components/kit/XAccordion.vue(125,50): error TS2339: Property 'type' does not exist on type 'AccordionProps<T>'.
@@ -127,28 +123,14 @@ src/components/kit/XCollapsible.vue(50,3): error TS2353: Object literal may only
 src/components/kit/XCollapsible.vue(59,61): error TS2345: Argument of type '"defaultOpen"' is not assignable to parameter of type 'keyof CollapsibleProps | (keyof CollapsibleProps)[]'.
 src/components/kit/XColorPicker.vue(97,3): error TS2322: Type 'string | undefined' is not assignable to type '"xs" | "sm" | "md" | "lg" | "xl" | undefined'.
   Type 'string' is not assignable to type '"xs" | "sm" | "md" | "lg" | "xl" | undefined'.
-src/components/kit/XCommandPalette.vue(5,33): error TS2307: Cannot find module 'fuse.js' or its corresponding type declarations.
-src/components/kit/XCommandPalette.vue(429,3): error TS2322: Type 'string | undefined' is not assignable to type '"xs" | "sm" | "md" | "lg" | "xl" | undefined'.
-  Type 'string' is not assignable to type '"xs" | "sm" | "md" | "lg" | "xl" | undefined'.
-src/components/kit/XContextMenu.vue(213,3): error TS2322: Type 'string | undefined' is not assignable to type '"xs" | "sm" | "md" | "lg" | "xl" | undefined'.
-  Type 'string' is not assignable to type '"xs" | "sm" | "md" | "lg" | "xl" | undefined'.
-src/components/kit/XContextMenuItems.vue(24,15): error TS2724: '"./XContextMenu.vue"' has no exported member named 'ContextMenuItemData'. Did you mean 'ContextMenuItem'?
-src/components/kit/XContextMenuItems.vue(24,36): error TS2724: '"./XContextMenu.vue"' has no exported member named 'ContextMenuUi'. Did you mean 'ContextMenuItem'?
-src/components/kit/XContextMenuItems.vue(25,15): error TS2614: Module '"./XDropdownMenu.vue"' has no exported member 'MenuColor'. Did you mean to use 'import MenuColor from "./XDropdownMenu.vue"' instead?
-src/components/kit/XContextMenuItems.vue(25,26): error TS2614: Module '"./XDropdownMenu.vue"' has no exported member 'MenuIcon'. Did you mean to use 'import MenuIcon from "./XDropdownMenu.vue"' instead?
-src/components/kit/XContextMenuItems.vue(25,36): error TS2614: Module '"./XDropdownMenu.vue"' has no exported member 'MenuSize'. Did you mean to use 'import MenuSize from "./XDropdownMenu.vue"' instead?
+src/components/kit/XContextMenu.vue(224,15): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 src/components/kit/XDrawer.vue(116,55): error TS2345: Argument of type '"activeSnapPoint"' is not assignable to parameter of type '"close" | "description" | "ui" | "class" | "content" | "as" | "title" | "inset" | "closeIcon" | "portal" | "overlay" | "handle" | "nested" | ("close" | "description" | "ui" | "class" | ... 8 more ... | "nested")[]'.
 src/components/kit/XDrawer.vue(120,14): error TS2339: Property 'dismissible' does not exist on type 'Readonly<MappedOmit<LooseRequired<DrawerProps>, "direction" | "modal" | "portal" | "overlay" | "handle" | "dismissible">> & { ...; } & { ...; }'.
 src/components/kit/XDrawer.vue(139,20): error TS2339: Property 'direction' does not exist on type 'Readonly<MappedOmit<LooseRequired<DrawerProps>, "direction" | "modal" | "portal" | "overlay" | "handle" | "dismissible">> & { ...; } & { ...; }'.
 src/components/kit/XDrawer.vue(141,21): error TS2339: Property 'snapPoints' does not exist on type 'Readonly<MappedOmit<LooseRequired<DrawerProps>, "direction" | "modal" | "portal" | "overlay" | "handle" | "dismissible">> & { ...; } & { ...; }'.
 src/components/kit/XDrawer.vue(141,41): error TS2339: Property 'snapPoints' does not exist on type 'Readonly<MappedOmit<LooseRequired<DrawerProps>, "direction" | "modal" | "portal" | "overlay" | "handle" | "dismissible">> & { ...; } & { ...; }'.
-src/components/kit/XDropdownMenu.vue(276,3): error TS2322: Type 'string | undefined' is not assignable to type '"xs" | "sm" | "md" | "lg" | "xl" | undefined'.
-  Type 'string' is not assignable to type '"xs" | "sm" | "md" | "lg" | "xl" | undefined'.
-src/components/kit/XDropdownMenuItems.vue(26,15): error TS2724: '"./XDropdownMenu.vue"' has no exported member named 'DropdownMenuItemData'. Did you mean 'DropdownMenuItem'?
-src/components/kit/XDropdownMenuItems.vue(26,37): error TS2724: '"./XDropdownMenu.vue"' has no exported member named 'DropdownMenuUi'. Did you mean 'DropdownMenuItem'?
-src/components/kit/XDropdownMenuItems.vue(26,53): error TS2614: Module '"./XDropdownMenu.vue"' has no exported member 'MenuColor'. Did you mean to use 'import MenuColor from "./XDropdownMenu.vue"' instead?
-src/components/kit/XDropdownMenuItems.vue(26,64): error TS2614: Module '"./XDropdownMenu.vue"' has no exported member 'MenuIcon'. Did you mean to use 'import MenuIcon from "./XDropdownMenu.vue"' instead?
-src/components/kit/XDropdownMenuItems.vue(26,74): error TS2614: Module '"./XDropdownMenu.vue"' has no exported member 'MenuSize'. Did you mean to use 'import MenuSize from "./XDropdownMenu.vue"' instead?
+src/components/kit/XDropdownMenu.vue(288,15): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XDropdownMenu.vue(308,93): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 src/components/kit/XFieldGroup.vue(60,80): error TS2322: Type 'string' is not assignable to type '"vertical" | "horizontal" | undefined'.
 src/components/kit/XFileUpload.vue(222,3): error TS2322: Type 'string | undefined' is not assignable to type '"neutral" | undefined'.
   Type 'string' is not assignable to type '"neutral"'.
@@ -475,27 +457,72 @@ src/components/kit/XLink.vue(440,79): error TS2339: Property 'isActive' does not
 src/components/kit/XLink.vue(440,89): error TS2339: Property 'isExactActive' does not exist on type '{}'.
 src/components/kit/XLink.vue(445,64): error TS2551: Property 'ariaCurrentValue' does not exist on type 'Readonly<MappedOmit<LooseRequired<LinkProps>, "type" | "as" | "active" | "ariaCurrentValue" | "locale">> & { readonly as: any; readonly type: "button" | ... 1 more ... | "reset"; readonly active: boolean | undefined; readonly locale: string | ... 1 more ... | undefined; } & { ...; }'. Did you mean 'aria-current'?
 src/components/kit/XLink.vue(464,62): error TS2551: Property 'ariaCurrentValue' does not exist on type 'Readonly<MappedOmit<LooseRequired<LinkProps>, "type" | "as" | "active" | "ariaCurrentValue" | "locale">> & { readonly as: any; readonly type: "button" | ... 1 more ... | "reset"; readonly active: boolean | undefined; readonly locale: string | ... 1 more ... | undefined; } & { ...; }'. Did you mean 'aria-current'?
-src/components/kit/XListbox.vue(337,3): error TS2322: Type 'string | undefined' is not assignable to type '"neutral" | undefined'.
-  Type 'string' is not assignable to type '"neutral"'.
+src/components/kit/XListbox.vue(411,79): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XListbox.vue(415,95): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XListbox.vue(422,15): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XListbox.vue(427,89): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XListbox.vue(428,122): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XListbox.vue(428,234): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XListbox.vue(431,87): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XListbox.vue(436,21): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XListbox.vue(440,191): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XListbox.vue(441,115): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XListbox.vue(447,133): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XListbox.vue(454,48): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XListbox.vue(458,112): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XListbox.vue(471,13): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XListbox.vue(481,17): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XListbox.vue(485,49): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XListbox.vue(486,61): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XListbox.vue(488,106): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XListbox.vue(491,72): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XListbox.vue(508,124): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 src/components/kit/XModal.vue(118,55): error TS2345: Argument of type '"open"' is not assignable to parameter of type '"close" | "description" | "ui" | "class" | "content" | "transition" | "title" | "closeIcon" | "portal" | "overlay" | "dismissible" | "fullscreen" | "scrollable" | ("close" | ... 11 more ... | "scrollable")[]'.
 src/components/kit/XModal.vue(231,85): error TS2339: Property 'unmountOnHide' does not exist on type 'Readonly<MappedOmit<LooseRequired<ModalProps>, "close" | "transition" | "modal" | "portal" | "overlay" | "dismissible">> & { ...; } & { ...; }'.
-src/components/kit/XNavigationMenu.vue(404,3): error TS2322: Type 'O | undefined' is not assignable to type '"vertical" | "horizontal" | undefined'.
-  Type 'O' is not assignable to type '"vertical" | "horizontal" | undefined'.
-    Type 'string' is not assignable to type '"vertical" | "horizontal" | undefined'.
-src/components/kit/XNavigationMenu.vue(405,3): error TS2322: Type 'string | undefined' is not assignable to type '"vertical" | "horizontal" | undefined'.
-  Type 'string' is not assignable to type '"vertical" | "horizontal" | undefined'.
-src/components/kit/XNavigationMenu.vue(407,3): error TS2322: Type 'string | undefined' is not assignable to type '"neutral" | undefined'.
-  Type 'string' is not assignable to type '"neutral"'.
-src/components/kit/XNavigationMenu.vue(408,3): error TS2322: Type 'string | undefined' is not assignable to type '"link" | "pill" | undefined'.
-  Type 'string' is not assignable to type '"link" | "pill" | undefined'.
-src/components/kit/XNavigationMenu.vue(410,3): error TS2322: Type 'string | undefined' is not assignable to type '"neutral" | undefined'.
-  Type 'string' is not assignable to type '"neutral"'.
-src/components/kit/XNavigationMenu.vue(624,4): error TS2345: Argument of type '{ class: string; dataCollapsed: boolean | undefined; style?: StyleValue; modelValue?: string | undefined; defaultValue?: string | undefined; as?: any; delayDuration?: number | undefined; ... 6 more ...; dataSlot: string; }' is not assignable to parameter of type '{ readonly modelValue?: string | undefined; readonly defaultValue?: string | undefined; readonly dir?: Direction$3 | undefined; readonly orientation?: Orientation | undefined; ... 8 more ...; readonly "onUpdate:modelValue"?: ((value: string) => any) | undefined; } & VNodeProps & AllowedComponentProps & ComponentCust...'.
-  Type '{ class: string; dataCollapsed: boolean | undefined; style?: StyleValue; modelValue?: string | undefined; defaultValue?: string | undefined; as?: any; delayDuration?: number | undefined; ... 6 more ...; dataSlot: string; }' is not assignable to type '{ readonly modelValue?: string | undefined; readonly defaultValue?: string | undefined; readonly dir?: Direction$3 | undefined; readonly orientation?: Orientation | undefined; ... 8 more ...; readonly "onUpdate:modelValue"?: ((value: string) => any) | undefined; }'.
-    Types of property 'orientation' are incompatible.
-      Type 'O | undefined' is not assignable to type 'Orientation | undefined'.
-        Type 'O' is not assignable to type 'Orientation | undefined'.
-          Type 'string' is not assignable to type 'Orientation | undefined'.
+src/components/kit/XNavigationMenu.vue(455,115): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(455,227): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(458,85): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(463,72): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(465,92): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(471,17): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(477,220): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(485,17): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(493,91): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(496,21): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(499,369): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(500,111): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(513,123): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(524,255): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(525,68): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(538,51): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(539,54): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(542,120): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(545,90): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(546,113): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(548,68): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(551,250): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(562,68): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(566,73): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(571,249): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(573,47): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(574,116): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(577,86): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(578,109): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(580,65): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(581,63): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(584,248): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(586,98): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(599,138): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(607,19): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(617,21): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(635,13): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(649,17): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(658,19): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(662,114): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(667,88): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(668,81): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(669,40): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+src/components/kit/XNavigationMenu.vue(672,60): error TS2722: Cannot invoke an object which is possibly 'undefined'.
 src/components/kit/XPagination.vue(79,38): error TS2339: Property 'to' does not exist on type 'ButtonProps'.
 src/components/kit/XPagination.vue(147,61): error TS2345: Argument of type '"defaultPage"' is not assignable to parameter of type '"size" | "ui" | "class" | "color" | "to" | "as" | "variant" | "activeColor" | "activeVariant" | "prevIcon" | "nextIcon" | "firstIcon" | "lastIcon" | "ellipsisIcon" | "showControls" | ("size" | ... 13 more ... | "showControls")[]'.
 src/components/kit/XPinInput.vue(89,55): error TS2345: Argument of type '"disabled"' is not assignable to parameter of type 'keyof PinInputProps<T> | (keyof PinInputProps<T>)[]'.
@@ -523,18 +550,6 @@ src/components/kit/XProgress.vue(179,3): error TS2322: Type 'string | undefined'
   Type 'string' is not assignable to type '"xs" | "sm" | "md" | "lg" | "xl" | "2xs" | "2xl" | undefined'.
 src/components/kit/XProgress.vue(180,3): error TS2322: Type 'string' is not assignable to type '"neutral"'.
 src/components/kit/XProgress.vue(181,3): error TS2322: Type 'string' is not assignable to type '"vertical" | "horizontal" | undefined'.
-src/components/kit/XRadioGroup.vue(164,3): error TS2322: Type 'string | undefined' is not assignable to type '"xs" | "sm" | "md" | "lg" | "xl" | undefined'.
-  Type 'string' is not assignable to type '"xs" | "sm" | "md" | "lg" | "xl" | undefined'.
-src/components/kit/XRadioGroup.vue(165,3): error TS2322: Type 'string | undefined' is not assignable to type '"neutral" | undefined'.
-  Type 'string' is not assignable to type '"neutral"'.
-src/components/kit/XRadioGroup.vue(169,3): error TS2322: Type 'string | undefined' is not assignable to type '"vertical" | "horizontal" | undefined'.
-  Type 'string' is not assignable to type '"vertical" | "horizontal" | undefined'.
-src/components/kit/XRadioGroup.vue(170,3): error TS2322: Type 'string | undefined' is not assignable to type '"table" | "list" | "card" | undefined'.
-  Type 'string' is not assignable to type '"table" | "list" | "card" | undefined'.
-src/components/kit/XRadioGroup.vue(171,3): error TS2322: Type 'string | undefined' is not assignable to type '"end" | "hidden" | "start" | undefined'.
-  Type 'string' is not assignable to type '"end" | "hidden" | "start" | undefined'.
-src/components/kit/XRadioGroup.vue(233,6): error TS2322: Type 'string | undefined' is not assignable to type 'DataOrientation | undefined'.
-  Type 'string' is not assignable to type 'DataOrientation | undefined'.
 src/components/kit/XScrollArea.vue(122,3): error TS2322: Type 'string | undefined' is not assignable to type '"vertical" | "horizontal" | undefined'.
   Type 'string' is not assignable to type '"vertical" | "horizontal" | undefined'.
 src/components/kit/XScrollArea.vue(132,7): error TS2322: Type '() => string' is not assignable to type 'MaybeRefOrGetter<"vertical" | "horizontal"> | undefined'.
@@ -835,27 +850,3 @@ src/lib/nuxt/utils/form.ts(28,31): error TS7006: Parameter 'item' implicitly has
 src/lib/nuxt/utils/form.ts(44,39): error TS7006: Parameter 'error' implicitly has an 'any' type.
 src/lib/nuxt/utils/search.ts(1,50): error TS2307: Cannot find module 'fuse.js' or its corresponding type declarations.
 src/lib/nuxt/utils/search.ts(82,22): error TS7006: Parameter 'region' implicitly has an 'any' type.
-test/forms.test.ts(569,15): error TS2769: No overload matches this call.
-  The last overload gave the following error.
-    Argument of type '<T extends InputValue, Mod extends ModelModifiers>(__VLS_props: NonNullable<Awaited<typeof __VLS_setup>>["props"], __VLS_ctx?: __VLS_PrettifyLocal<Pick<NonNullable<Awaited<typeof __VLS_setup>>, "attrs" | "emit" | "slots">>, __VLS_exposed?: NonNullable<Awaited<typeof __VLS_setup>>["expose"], __VLS_setup?: Promise<......' is not assignable to parameter of type 'string | Component<VNodeProps & AllowedComponentProps & { class?: any; style?: any; id?: any; title?: any; role?: any; value?: any; readonly?: any; tabindex?: any; form?: any; ... 61 more ...; onBlur?: ((event: FocusEvent) => any) | undefined; } & Record<...>, ... 5 more ..., any>'.
-      Type '<T extends InputValue, Mod extends ModelModifiers>(__VLS_props: NonNullable<Awaited<typeof __VLS_setup>>["props"], __VLS_ctx?: __VLS_PrettifyLocal<Pick<NonNullable<Awaited<typeof __VLS_setup>>, "attrs" | "emit" | "slots">>, __VLS_exposed?: NonNullable<Awaited<typeof __VLS_setup>>["expose"], __VLS_setup?: Promise<......' is not assignable to type 'FunctionalComponent<VNodeProps & AllowedComponentProps & { class?: any; style?: any; id?: any; title?: any; role?: any; value?: any; readonly?: any; tabindex?: any; form?: any; minlength?: any; ... 60 more ...; onBlur?: ((event: FocusEvent) => any) | undefined; } & Record<...>, {}, any, {}>'.
-        Types of parameters '__VLS_props' and 'props' are incompatible.
-          Type 'VNodeProps & AllowedComponentProps & { class?: any; style?: any; id?: any; title?: any; role?: any; value?: any; readonly?: any; tabindex?: any; form?: any; minlength?: any; ... 60 more ...; onBlur?: ((event: FocusEvent) => any) | undefined; } & Record<...> & {}' is not assignable to type 'VNodeProps & AllowedComponentProps & ComponentCustomProps & { class?: any; style?: any; id?: any; title?: any; role?: any; value?: any; ... 64 more ...; onBlur?: ((event: FocusEvent) => any) | undefined; } & Record<...>'.
-            Type 'VNodeProps & AllowedComponentProps & { class?: any; style?: any; id?: any; title?: any; role?: any; value?: any; readonly?: any; tabindex?: any; form?: any; minlength?: any; ... 60 more ...; onBlur?: ((event: FocusEvent) => any) | undefined; } & Record<...> & {}' is not assignable to type '{ class?: any; style?: any; id?: any; title?: any; role?: any; value?: any; readonly?: any; tabindex?: any; form?: any; minlength?: any; maxlength?: any; pattern?: any; step?: any; min?: any; max?: any; multiple?: any; checked?: any; ... 53 more ...; onBlur?: ((event: FocusEvent) => any) | undefined; }'.
-              Types of property 'modelValue' are incompatible.
-                Type 'AcceptableValue | undefined' is not assignable to type 'string | number | bigint | boolean | undefined'.
-                  Type 'null' is not assignable to type 'string | number | bigint | boolean | undefined'.
-test/forms.test.ts(738,26): error TS2345: Argument of type '"maxrows"' is not assignable to parameter of type 'never'.
-test/progress-slider.test.ts(106,30): error TS2353: Object literal may only specify known properties, and 'modelValue' does not exist in type 'Partial<{ readonly as?: any; readonly max?: number | any[] | undefined; readonly status?: boolean | undefined; readonly inverted?: boolean | undefined; readonly size?: string | undefined; ... 25 more ...; style?: unknown; } & { ...; } & VNodeProps & AllowedComponentProps & ComponentCustomProps>'.
-test/select-menu.test.ts(270,30): error TS2322: Type '({ item }: { item: string; }) => VNode<RendererNode, RendererElement, { [key: string]: any; }>' is not assignable to type 'WithArray<string | VNode<RendererNode, RendererElement, { [key: string]: any; }> | (new () => any) | { template: string; } | ((...args: unknown[]) => any)> | undefined'.
-  Type '({ item }: { item: string; }) => VNode<RendererNode, RendererElement, { [key: string]: any; }>' is not assignable to type '(...args: unknown[]) => any'.
-    Types of parameters '__0' and 'args' are incompatible.
-      Type 'unknown' is not assignable to type '{ item: string; }'.
-test/table-pagination-tabs-stepper.test.ts(8,15): error TS2614: Module '"@/components/kit/XStepper.vue"' has no exported member 'StepperUi'. Did you mean to use 'import StepperUi from "@/components/kit/XStepper.vue"' instead?
-test/table-pagination-tabs-stepper.test.ts(12,25): error TS2614: Module '"@/components/kit/XTabs.vue"' has no exported member 'TabsUi'. Did you mean to use 'import TabsUi from "@/components/kit/XTabs.vue"' instead?
-test/table-pagination-tabs-stepper.test.ts(294,7): error TS2322: Type '{ indicator: ({ ui }: { ui?: StepperUi; }) => VNode<RendererNode, RendererElement, { [key: string]: any; }>; }' is not assignable to type '{ [x: string]: WithArray<string | VNode<RendererNode, RendererElement, { [key: string]: any; }> | (new () => any) | { template: string; } | ((props: { item: never; } & { ...; }) => any)> | undefined; ... 4 more ...; content?: WithArray<...> | undefined; }'.
-  Property 'indicator' is incompatible with index signature.
-    Type '({ ui }: { ui?: StepperUi; }) => VNode<RendererNode, RendererElement, { [key: string]: any; }>' is not assignable to type 'WithArray<string | VNode<RendererNode, RendererElement, { [key: string]: any; }> | (new () => any) | { template: string; } | ((props: { item: never; } & { item: StepperItem; }) => any)> | undefined'.
-      Type '({ ui }: { ui?: StepperUi; }) => VNode<RendererNode, RendererElement, { [key: string]: any; }>' is not assignable to type '(props: { item: never; } & { item: StepperItem; }) => any'.
-        Types of parameters '__0' and 'props' are incompatible.
-          Type '{ item: never; } & { item: StepperItem; }' has no properties in common with type '{ ui?: any; }'.

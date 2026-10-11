@@ -44,37 +44,6 @@ import theme from '@/lib/nuxt/ui/table'
 import type { TableHTMLAttributes } from '../../lib/nuxt/types/html'
 import type { ComponentConfig } from '../../lib/nuxt/types/tv'
 
-declare module '@tanstack/table-core' {
-
-  interface ColumnMeta<TData extends RowData, TValue> {
-    class?: {
-      th?: string | ((cell: Header<TData, TValue>) => string)
-      td?: string | ((cell: Cell<TData, TValue>) => string)
-    }
-    style?: {
-      th?: string | Record<string, string> | ((cell: Header<TData, TValue>) => string | Record<string, string>)
-      td?: string | Record<string, string> | ((cell: Cell<TData, TValue>) => string | Record<string, string>)
-    }
-    colspan?: {
-      td?: string | ((cell: Cell<TData, TValue>) => string)
-    }
-    rowspan?: {
-      td?: string | ((cell: Cell<TData, TValue>) => string)
-    }
-
-  }
-
-  interface TableMeta<TData> {
-    class?: {
-      tr?: string | ((row: Row<TData>) => string)
-    }
-    style?: {
-      tr?: string | Record<string, string> | ((row: Row<TData>) => string | Record<string, string>)
-    }
-  }
-
-}
-
 type Table = ComponentConfig<typeof theme, AppConfig, 'table'>
 
 export type TableRow<T> = Row<T>
@@ -89,6 +58,8 @@ export interface TableOptions<T extends TableData = TableData> {
 }
 
 export interface TableProps<T extends TableData = TableData> {
+  /** 类型修补：tanstack 内部透传键（仅类型层） */
+  _features?: any;
   class?: any;
   style?: any;
   id?: any;
@@ -123,7 +94,6 @@ export interface TableProps<T extends TableData = TableData> {
   href?: any;
   target?: any;
   rel?: any;
-  loading?: any;
   accesskey?: any;
   contenteditable?: any;
   draggable?: any;
@@ -195,11 +165,11 @@ export interface TableProps<T extends TableData = TableData> {
   /**
    * @defaultValue 'primary'
    */
-  loadingColor?: Table['variants']['loadingColor']
+  loadingColor?: any
   /**
    * @defaultValue 'carousel'
    */
-  loadingAnimation?: Table['variants']['loadingAnimation']
+  loadingAnimation?: any
   /**
    * Use the `watchOptions` prop to customize reactivity (for ex: disable deep watching for changes in your data or limiting the max traversal depth). This can improve performance by reducing unnecessary re-renders, but it should be used with caution as it may lead to unexpected behavior if not managed properly.
    * @see [API](https://vuejs.org/api/options-state.html#watch)
@@ -270,7 +240,6 @@ export interface TableProps<T extends TableData = TableData> {
   onSelect?: (e: Event, row: TableRow<T>) => void
   onHover?: (e: Event, row: TableRow<T> | null) => void
   onContextmenu?: ((e: Event, row: TableRow<T>) => void) | Array<((e: Event, row: TableRow<T>) => void)>
-  class?: any
   ui?: Table['slots']
 }
 
@@ -649,10 +618,10 @@ defineExpose({
       :class="ui.tr({
         class: [
           props.ui?.tr,
-          resolveValue(tableApi.options.meta?.class?.tr, row)
+          resolveValue((tableApi.options.meta as any)?.class?.tr, row)
         ]
       })"
-      :style="[resolveValue(tableApi.options.meta?.style?.tr, row), style]"
+      :style="[resolveValue((tableApi.options.meta as any)?.style?.tr, row), style]"
       @click="onRowSelect($event, row)"
       @keydown.self.exact.enter.space="onRowSelect($event, row)"
       @pointerenter="onRowHover($event, row)"
@@ -663,19 +632,19 @@ defineExpose({
         v-for="cell in row.getVisibleCells()"
         :key="cell.id"
         :data-pinned="cell.column.getIsPinned()"
-        :colspan="resolveValue(cell.column.columnDef.meta?.colspan?.td, cell)"
-        :rowspan="resolveValue(cell.column.columnDef.meta?.rowspan?.td, cell)"
+        :colspan="resolveValue((cell.column.columnDef.meta as any)?.colspan?.td, cell)"
+        :rowspan="resolveValue((cell.column.columnDef.meta as any)?.rowspan?.td, cell)"
         data-slot="td"
         :class="ui.td({
           class: [
             props.ui?.td,
-            resolveValue(cell.column.columnDef.meta?.class?.td, cell)
+            resolveValue((cell.column.columnDef.meta as any)?.class?.td, cell)
           ],
           pinned: !!cell.column.getIsPinned()
         })"
         :style="[
           getColumnStyles(cell.column),
-          resolveValue(cell.column.columnDef.meta?.style?.td, cell)
+          resolveValue((cell.column.columnDef.meta as any)?.style?.td, cell)
         ]"
       >
         <slot :name="`${cell.column.id}-cell`" v-bind="cell.getContext()">
@@ -713,13 +682,13 @@ defineExpose({
             :class="ui.th({
               class: [
                 props.ui?.th,
-                resolveValue(header.column.columnDef.meta?.class?.th, header)
+                resolveValue((header.column.columnDef.meta as any)?.class?.th, header)
               ],
               pinned: !!header.column.getIsPinned()
             })"
             :style="[
               getColumnStyles(header.column),
-              resolveValue(header.column.columnDef.meta?.style?.th, header)
+              resolveValue((header.column.columnDef.meta as any)?.style?.th, header)
             ]"
           >
             <slot :name="`${header.id}-header`" v-bind="header.getContext()">
@@ -795,13 +764,13 @@ defineExpose({
             :class="ui.th({
               class: [
                 props.ui?.th,
-                resolveValue(header.column.columnDef.meta?.class?.th, header)
+                resolveValue((header.column.columnDef.meta as any)?.class?.th, header)
               ],
               pinned: !!header.column.getIsPinned()
             })"
             :style="[
               getColumnStyles(header.column),
-              resolveValue(header.column.columnDef.meta?.style?.th, header)
+              resolveValue((header.column.columnDef.meta as any)?.style?.th, header)
             ]"
           >
             <slot :name="`${header.id}-footer`" v-bind="header.getContext()">

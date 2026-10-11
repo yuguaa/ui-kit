@@ -95,7 +95,7 @@ const separatorIcon = computed(() => props.separatorIcon || (dir.value === 'rtl'
 
 // eslint-disable-next-line vue/no-dupe-keys
 const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.breadcrumb || {}) })({
-  color: props.color
+  color: props.color as any
 }))
 </script>
 
@@ -106,8 +106,8 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.breadcrumb || {}
         <li data-slot="item" :class="ui.item({ class: [props.ui?.item, item.ui?.item] })">
           <XLink v-slot="{ active, ...slotProps }" v-bind="pickLinkProps(item)" custom>
             <XLinkBase v-bind="slotProps" as="span" :aria-current="(item.active ?? active) && (index === props.items!.length - 1) ? 'page' : undefined" data-slot="link" :class="ui.link({ class: [props.ui?.link, item.ui?.link, item.class], active: item.active ?? (index === props.items!.length - 1), disabled: !!item.disabled, to: !!item.to })">
-              <slot :name="((item.slot || 'item') as keyof BreadcrumbSlots<T>)" :item="(item as Extract<T, { slot: string; }>)" :active="item.active ?? (index === props.items!.length - 1)" :index="index" :ui="ui">
-                <slot :name="((item.slot ? `${item.slot}-leading`: 'item-leading') as keyof BreadcrumbSlots<T>)" :item="(item as Extract<T, { slot: string; }>)" :active="item.active ?? (index === props.items!.length - 1)" :index="index" :ui="ui">
+              <slot :name="((item.slot || 'item') as keyof BreadcrumbSlots<T>)" :item="(item as Extract<T, { slot: string; }>)" :active="item.active ?? (index === props.items!.length - 1)" :index="index" :ui="(ui as any)">
+                <slot :name="((item.slot ? `${item.slot}-leading`: 'item-leading') as keyof BreadcrumbSlots<T>)" :item="(item as Extract<T, { slot: string; }>)" :active="item.active ?? (index === props.items!.length - 1)" :index="index" :ui="(ui as any)">
                   <XIcon v-if="item.icon" :name="item.icon" data-slot="linkLeadingIcon" :class="ui.linkLeadingIcon({ class: [props.ui?.linkLeadingIcon, item.ui?.linkLeadingIcon], active: item.active ?? (index === props.items!.length - 1) })" />
                   <XAvatar v-else-if="item.avatar" :size="((props.ui?.linkLeadingAvatarSize || ui.linkLeadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" data-slot="linkLeadingAvatar" :class="ui.linkLeadingAvatar({ class: [props.ui?.linkLeadingAvatar, item.ui?.linkLeadingAvatar], active: item.active ?? (index === props.items!.length - 1) })" />
                 </slot>
@@ -125,7 +125,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.breadcrumb || {}
         </li>
 
         <li v-if="index < props.items!.length - 1" role="presentation" aria-hidden="true" data-slot="separator" :class="ui.separator({ class: [props.ui?.separator, item.ui?.separator] })">
-          <slot name="separator" :ui="ui">
+          <slot name="separator" :ui="(ui as any)">
             <XIcon :name="separatorIcon" data-slot="separatorIcon" :class="ui.separatorIcon({ class: [props.ui?.separatorIcon, item.ui?.separatorIcon] })" />
           </slot>
         </li>

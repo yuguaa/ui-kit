@@ -1,0 +1,194 @@
+=== src/components/kit/XAccordion.vue ===
+src/components/kit/XAccordion.vue(116,61): error TS2345: Argument of type '"collapsible"' is not assignable to parameter of type 'keyof AccordionProps<T> | (keyof AccordionProps<T>)[]'.
+src/components/kit/XAccordion.vue(120,19): error TS2339: Property 'disabled' does not exist on type 'AccordionProps<T>'.
+src/components/kit/XAccordion.vue(125,50): error TS2339: Property 'type' does not exist on type 'AccordionProps<T>'.
+=== src/components/kit/XAvatar.vue ===
+src/components/kit/XAvatar.vue(13,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XAvatar.vue(14,3): error TS2300: Duplicate identifier 'style'.
+src/components/kit/XAvatar.vue(37,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XAvatar.vue(86,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XAvatar.vue(86,3): error TS2717: Subsequent property declarations must have the same type.  Property 'size' must be of type 'any', but here has type 'string | undefined'.
+src/components/kit/XAvatar.vue(92,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XAvatar.vue(93,3): error TS2300: Duplicate identifier 'style'.
+src/components/kit/XAvatar.vue(144,61): error TS7006: Parameter 'c' implicitly has an 'any' type.
+=== src/components/kit/XBadge.vue ===
+src/components/kit/XBadge.vue(64,88): error TS2345: Argument of type 'Readonly<MappedOmit<LooseRequired<BadgeProps>, "as">> & { readonly as: any; } & { readonly class: boolean; readonly as: boolean; readonly square: boolean; }' is not assignable to parameter of type 'MaybeRefOrGetter<UseComponentIconsProps>'.
+src/components/kit/XBadge.vue(80,35): error TS2339: Property 'avatar' does not exist on type 'Readonly<MappedOmit<LooseRequired<BadgeProps>, "as">> & { readonly as: any; } & { readonly class: boolean; readonly as: boolean; readonly square: boolean; }'.
+src/components/kit/XBadge.vue(80,146): error TS2339: Property 'avatar' does not exist on type 'Readonly<MappedOmit<LooseRequired<BadgeProps>, "as">> & { readonly as: any; } & { readonly class: boolean; readonly as: boolean; readonly square: boolean; }'.
+=== src/components/kit/XButton.vue ===
+src/components/kit/XButton.vue(92,16): error TS2339: Property 'loading' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "square" | "block" | "loadingAuto">'.
+src/components/kit/XButton.vue(92,105): error TS2339: Property 'type' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "square" | "block" | "loadingAuto">'.
+src/components/kit/XButton.vue(101,17): error TS2339: Property 'icon' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "square" | "block" | "loadingAuto">'.
+src/components/kit/XButton.vue(102,20): error TS2339: Property 'leading' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "square" | "block" | "loadingAuto">'.
+src/components/kit/XButton.vue(103,24): error TS2339: Property 'leadingIcon' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "square" | "block" | "loadingAuto">'.
+src/components/kit/XButton.vue(104,21): error TS2339: Property 'trailing' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "square" | "block" | "loadingAuto">'.
+src/components/kit/XButton.vue(105,25): error TS2339: Property 'trailingIcon' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "square" | "block" | "loadingAuto">'.
+src/components/kit/XButton.vue(107,24): error TS2339: Property 'loadingIcon' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "square" | "block" | "loadingAuto">'.
+src/components/kit/XButton.vue(118,88): error TS2339: Property 'activeClass' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "square" | "block" | "loadingAuto">'.
+src/components/kit/XButton.vue(121,89): error TS2339: Property 'inactiveClass' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "square" | "block" | "loadingAuto">'.
+src/components/kit/XButton.vue(142,18): error TS2339: Property 'type' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "square" | "block" | "loadingAuto">'.
+src/components/kit/XButton.vue(143,22): error TS2339: Property 'disabled' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "square" | "block" | "loadingAuto">'.
+src/components/kit/XButton.vue(160,37): error TS2339: Property 'avatar' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "square" | "block" | "loadingAuto">'.
+src/components/kit/XButton.vue(160,148): error TS2339: Property 'avatar' does not exist on type 'DefineProps<LooseRequired<ButtonProps>, "class" | "square" | "block" | "loadingAuto">'.
+=== src/components/kit/XCarousel.vue ===
+src/components/kit/XCarousel.vue(169,55): error TS2345: Argument of type '"active"' is not assignable to parameter of type 'keyof CarouselProps<T> | (keyof CarouselProps<T>)[]'.
+=== src/components/kit/XCheckbox.vue ===
+src/components/kit/XCheckbox.vue(13,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XCheckbox.vue(34,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XCheckbox.vue(86,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XCheckbox.vue(86,3): error TS2717: Subsequent property declarations must have the same type.  Property 'size' must be of type 'any', but here has type 'string | undefined'.
+src/components/kit/XCheckbox.vue(106,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XCheckbox.vue(142,76): error TS2345: Argument of type '"defaultValue"' is not assignable to parameter of type 'keyof CheckboxProps<T> | (keyof CheckboxProps<T>)[]'.
+src/components/kit/XCheckbox.vue(154,66): error TS2339: Property 'disabled' does not exist on type 'CheckboxProps<T>'.
+=== src/components/kit/XCollapsible.vue ===
+src/components/kit/XCollapsible.vue(50,3): error TS2353: Object literal may only specify known properties, and 'unmountOnHide' does not exist in type 'InferDefaults<LooseRequired<CollapsibleProps>>'.
+src/components/kit/XCollapsible.vue(59,61): error TS2345: Argument of type '"defaultOpen"' is not assignable to parameter of type 'keyof CollapsibleProps | (keyof CollapsibleProps)[]'.
+=== src/components/kit/XDrawer.vue ===
+src/components/kit/XDrawer.vue(116,55): error TS2345: Argument of type '"activeSnapPoint"' is not assignable to parameter of type '"close" | "description" | "ui" | "class" | "content" | "as" | "title" | "inset" | "closeIcon" | "portal" | "overlay" | "handle" | "nested" | ("close" | "description" | "ui" | "class" | ... 8 more ... | "nested")[]'.
+src/components/kit/XDrawer.vue(120,14): error TS2339: Property 'dismissible' does not exist on type 'Readonly<MappedOmit<LooseRequired<DrawerProps>, "direction" | "modal" | "portal" | "overlay" | "handle" | "dismissible">> & { ...; } & { ...; }'.
+src/components/kit/XDrawer.vue(139,20): error TS2339: Property 'direction' does not exist on type 'Readonly<MappedOmit<LooseRequired<DrawerProps>, "direction" | "modal" | "portal" | "overlay" | "handle" | "dismissible">> & { ...; } & { ...; }'.
+src/components/kit/XDrawer.vue(141,21): error TS2339: Property 'snapPoints' does not exist on type 'Readonly<MappedOmit<LooseRequired<DrawerProps>, "direction" | "modal" | "portal" | "overlay" | "handle" | "dismissible">> & { ...; } & { ...; }'.
+src/components/kit/XDrawer.vue(141,41): error TS2339: Property 'snapPoints' does not exist on type 'Readonly<MappedOmit<LooseRequired<DrawerProps>, "direction" | "modal" | "portal" | "overlay" | "handle" | "dismissible">> & { ...; } & { ...; }'.
+=== src/components/kit/XInput.vue ===
+src/components/kit/XInput.vue(17,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XInput.vue(19,3): error TS2300: Duplicate identifier 'id'.
+src/components/kit/XInput.vue(34,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XInput.vue(73,3): error TS2300: Duplicate identifier 'id'.
+src/components/kit/XInput.vue(73,3): error TS2717: Subsequent property declarations must have the same type.  Property 'id' must be of type 'any', but here has type 'string | undefined'.
+src/components/kit/XInput.vue(89,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XInput.vue(89,3): error TS2717: Subsequent property declarations must have the same type.  Property 'size' must be of type 'any', but here has type 'string | undefined'.
+src/components/kit/XInput.vue(102,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XInput.vue(173,39): error TS2339: Property 'avatar' does not exist on type 'InputProps<T, Mod>'.
+src/components/kit/XInput.vue(274,38): error TS2339: Property 'avatar' does not exist on type 'InputProps<T, Mod>'.
+src/components/kit/XInput.vue(277,37): error TS2339: Property 'avatar' does not exist on type 'InputProps<T, Mod>'.
+src/components/kit/XInput.vue(277,148): error TS2339: Property 'avatar' does not exist on type 'InputProps<T, Mod>'.
+=== src/components/kit/XInputRating.vue ===
+src/components/kit/XInputRating.vue(93,61): error TS2345: Argument of type '"length"' is not assignable to parameter of type 'keyof InputRatingProps | (keyof InputRatingProps)[]'.
+src/components/kit/XInputRating.vue(102,66): error TS2339: Property 'disabled' does not exist on type 'InputRatingProps'.
+src/components/kit/XInputRating.vue(135,6): error TS2322: Type 'string | undefined' is not assignable to type 'DataOrientation | undefined'.
+src/components/kit/XInputRating.vue(161,51): error TS2339: Property 'length' does not exist on type 'InputRatingProps'.
+=== src/components/kit/XLink.vue ===
+src/components/kit/XLink.vue(4,56): error TS2307: Cannot find module 'vue-router' or its corresponding type declarations.
+src/components/kit/XLink.vue(105,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XLink.vue(158,3): error TS2300: Duplicate identifier 'disabled'.
+src/components/kit/XLink.vue(169,3): error TS2300: Duplicate identifier 'disabled'.
+src/components/kit/XLink.vue(169,3): error TS2717: Subsequent property declarations must have the same type.  Property 'disabled' must be of type 'any', but here has type 'boolean | undefined'.
+src/components/kit/XLink.vue(192,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XLink.vue(247,131): error TS2345: Argument of type '"activeClass"' is not assignable to parameter of type '"value" | "external" | "loading" | "size" | "slot" | "class" | "name" | "style" | "id" | "lang" | "max" | "min" | "target" | "type" | "role" | "tabindex" | "href" | "to" | "aria-checked" | ... 56 more ... | ("value" | ... 73 more ... | "locale")[]'.
+src/components/kit/XLink.vue(254,78): error TS2551: Property 'activeClass' does not exist on type 'Readonly<MappedOmit<LooseRequired<LinkProps>, "type" | "as" | "active" | "ariaCurrentValue" | "locale">> & { readonly as: any; readonly type: "button" | ... 1 more ... | "reset"; readonly active: boolean | undefined; readonly locale: string | ... 1 more ... | undefined; } & { ...; }'. Did you mean 'inactiveClass'?
+src/components/kit/XLink.vue(275,30): error TS2339: Property '$localePath' does not exist on type '{ $config: {}; runWithContext: (fn: () => void) => void; }'.
+src/components/kit/XLink.vue(280,24): error TS2339: Property '$i18n' does not exist on type '{ $config: {}; runWithContext: (fn: () => void) => void; }'.
+src/components/kit/XLink.vue(356,41): error TS2551: Property 'activeClass' does not exist on type 'Readonly<MappedOmit<LooseRequired<LinkProps>, "type" | "as" | "active" | "ariaCurrentValue" | "locale">> & { readonly as: any; readonly type: "button" | ... 1 more ... | "reset"; readonly active: boolean | undefined; readonly locale: string | ... 1 more ... | undefined; } & { ...; }'. Did you mean 'inactiveClass'?
+src/components/kit/XLink.vue(440,45): error TS2339: Property 'href' does not exist on type '{}'.
+src/components/kit/XLink.vue(440,51): error TS2339: Property 'navigate' does not exist on type '{}'.
+src/components/kit/XLink.vue(440,61): error TS2339: Property 'route' does not exist on type '{}'.
+src/components/kit/XLink.vue(440,79): error TS2339: Property 'isActive' does not exist on type '{}'.
+src/components/kit/XLink.vue(440,89): error TS2339: Property 'isExactActive' does not exist on type '{}'.
+src/components/kit/XLink.vue(445,64): error TS2551: Property 'ariaCurrentValue' does not exist on type 'Readonly<MappedOmit<LooseRequired<LinkProps>, "type" | "as" | "active" | "ariaCurrentValue" | "locale">> & { readonly as: any; readonly type: "button" | ... 1 more ... | "reset"; readonly active: boolean | undefined; readonly locale: string | ... 1 more ... | undefined; } & { ...; }'. Did you mean 'aria-current'?
+src/components/kit/XLink.vue(464,62): error TS2551: Property 'ariaCurrentValue' does not exist on type 'Readonly<MappedOmit<LooseRequired<LinkProps>, "type" | "as" | "active" | "ariaCurrentValue" | "locale">> & { readonly as: any; readonly type: "button" | ... 1 more ... | "reset"; readonly active: boolean | undefined; readonly locale: string | ... 1 more ... | undefined; } & { ...; }'. Did you mean 'aria-current'?
+=== src/components/kit/XModal.vue ===
+src/components/kit/XModal.vue(118,55): error TS2345: Argument of type '"open"' is not assignable to parameter of type '"close" | "description" | "ui" | "class" | "content" | "transition" | "title" | "closeIcon" | "portal" | "overlay" | "dismissible" | "scrollable" | "fullscreen" | ("close" | ... 11 more ... | "fullscreen")[]'.
+src/components/kit/XModal.vue(231,85): error TS2339: Property 'unmountOnHide' does not exist on type 'Readonly<MappedOmit<LooseRequired<ModalProps>, "close" | "transition" | "modal" | "portal" | "overlay" | "dismissible">> & { ...; } & { ...; }'.
+=== src/components/kit/XNavigationMenu.vue ===
+src/components/kit/XNavigationMenu.vue(624,4): error TS2345: Argument of type '{ class: any; dataCollapsed: boolean | undefined; style?: StyleValue; modelValue?: string | undefined; defaultValue?: string | undefined; as?: any; delayDuration?: number | undefined; ... 6 more ...; dataSlot: string; }' is not assignable to parameter of type '{ readonly modelValue?: string | undefined; readonly defaultValue?: string | undefined; readonly dir?: Direction$3 | undefined; readonly orientation?: Orientation | undefined; ... 8 more ...; readonly "onUpdate:modelValue"?: ((value: string) => any) | undefined; } & VNodeProps & AllowedComponentProps & ComponentCust...'.
+=== src/components/kit/XPagination.vue ===
+src/components/kit/XPagination.vue(79,38): error TS2339: Property 'to' does not exist on type 'ButtonProps'.
+src/components/kit/XPagination.vue(147,61): error TS2345: Argument of type '"defaultPage"' is not assignable to parameter of type '"size" | "ui" | "class" | "color" | "to" | "as" | "variant" | "activeColor" | "activeVariant" | "prevIcon" | "nextIcon" | "firstIcon" | "lastIcon" | "ellipsisIcon" | "showControls" | ("size" | ... 13 more ... | "showControls")[]'.
+=== src/components/kit/XPinInput.vue ===
+src/components/kit/XPinInput.vue(89,55): error TS2345: Argument of type '"disabled"' is not assignable to parameter of type 'keyof PinInputProps<T> | (keyof PinInputProps<T>)[]'.
+src/components/kit/XPinInput.vue(100,66): error TS2339: Property 'disabled' does not exist on type 'PinInputProps<T>'.
+src/components/kit/XPinInput.vue(187,25): error TS2339: Property 'placeholder' does not exist on type 'PinInputProps<T>'.
+src/components/kit/XPinInput.vue(188,26): error TS2339: Property 'modelValue' does not exist on type 'PinInputProps<T>'.
+src/components/kit/XPinInput.vue(189,28): error TS2339: Property 'defaultValue' does not exist on type 'PinInputProps<T>'.
+=== src/components/kit/XPopover.vue ===
+src/components/kit/XPopover.vue(93,59): error TS2345: Argument of type '"defaultOpen"' is not assignable to parameter of type 'keyof PopoverProps<M> | (keyof PopoverProps<M>)[]'.
+src/components/kit/XPopover.vue(93,146): error TS2345: Argument of type '"defaultOpen"' is not assignable to parameter of type 'keyof PopoverProps<M> | (keyof PopoverProps<M>)[]'.
+=== src/components/kit/XProgress.vue ===
+src/components/kit/XProgress.vue(91,55): error TS2345: Argument of type '"getValueLabel"' is not assignable to parameter of type '"size" | "ui" | "class" | "color" | "max" | "orientation" | "as" | "inverted" | "status" | "animation" | ("size" | "ui" | "class" | "color" | "max" | "orientation" | "as" | "inverted" | "status" | "animation")[]'.
+src/components/kit/XProgress.vue(93,56): error TS2339: Property 'modelValue' does not exist on type 'Partial<ReactivePickReturn<Readonly<MappedOmit<LooseRequired<ProgressProps>, "orientation" | "modelValue" | "inverted">> & { readonly inverted: boolean; readonly orientation: string; } & { ...; }, "size" | ... 8 more ... | "animation">>'.
+src/components/kit/XProgress.vue(114,26): error TS2339: Property 'modelValue' does not exist on type 'Partial<ReactivePickReturn<Readonly<MappedOmit<LooseRequired<ProgressProps>, "orientation" | "modelValue" | "inverted">> & { readonly inverted: boolean; readonly orientation: string; } & { ...; }, "size" | ... 8 more ... | "animation">>'.
+src/components/kit/XProgress.vue(115,26): error TS2339: Property 'modelValue' does not exist on type 'Partial<ReactivePickReturn<Readonly<MappedOmit<LooseRequired<ProgressProps>, "orientation" | "modelValue" | "inverted">> & { readonly inverted: boolean; readonly orientation: string; } & { ...; }, "size" | ... 8 more ... | "animation">>'.
+src/components/kit/XProgress.vue(116,49): error TS2339: Property 'modelValue' does not exist on type 'Partial<ReactivePickReturn<Readonly<MappedOmit<LooseRequired<ProgressProps>, "orientation" | "modelValue" | "inverted">> & { readonly inverted: boolean; readonly orientation: string; } & { ...; }, "size" | ... 8 more ... | "animation">>'.
+src/components/kit/XProgress.vue(147,33): error TS2339: Property 'modelValue' does not exist on type 'Readonly<MappedOmit<LooseRequired<ProgressProps>, "orientation" | "modelValue" | "inverted">> & { readonly inverted: boolean; readonly orientation: string; } & { ...; }'.
+=== src/components/kit/XScrollArea.vue ===
+src/components/kit/XScrollArea.vue(132,7): error TS2322: Type '() => string' is not assignable to type 'MaybeRefOrGetter<"vertical" | "horizontal"> | undefined'.
+src/components/kit/XScrollArea.vue(286,30): error TS2339: Property 'getItemKey' does not exist on type 'Omit<ScrollAreaVirtualizeOptions, "estimateSize"> & Omit<{ estimateSize: number; overscan: number; gap: number; paddingStart: number; paddingEnd: number; scrollMargin: number; }, "estimateSize"> & { ...; }'.
+src/components/kit/XScrollArea.vue(287,35): error TS2339: Property 'getItemKey' does not exist on type 'Omit<ScrollAreaVirtualizeOptions, "estimateSize"> & Omit<{ estimateSize: number; overscan: number; gap: number; paddingStart: number; paddingEnd: number; scrollMargin: number; }, "estimateSize"> & { ...; }'.
+=== src/components/kit/XSeparator.vue ===
+src/components/kit/XSeparator.vue(82,61): error TS2345: Argument of type '"decorative"' is not assignable to parameter of type '"size" | "ui" | "class" | "color" | "type" | "orientation" | "label" | "icon" | "as" | "avatar" | "position" | ("size" | "ui" | "class" | "color" | "type" | "orientation" | "label" | "icon" | "as" | "avatar" | "position")[]'.
+src/components/kit/XSeparator.vue(109,4): error TS2345: Argument of type '{ class: any; style?: StyleValue; size?: Separator["variants"]["size"]; ui?: Separator["slots"]; color?: Separator["variants"]["color"]; type?: Separator["variants"]["type"]; ... 6 more ...; dataSlot: string; }' is not assignable to parameter of type '{ readonly orientation?: DataOrientation | undefined; readonly decorative?: boolean | undefined; readonly asChild?: boolean | undefined; readonly as?: Component | AsTag | undefined; } & VNodeProps & AllowedComponentProps & ComponentCustomProps & Record<...>'.
+=== src/components/kit/XSlideover.vue ===
+src/components/kit/XSlideover.vue(119,55): error TS2345: Argument of type '"open"' is not assignable to parameter of type '"close" | "description" | "ui" | "class" | "content" | "transition" | "title" | "inset" | "closeIcon" | "side" | "portal" | "overlay" | "dismissible" | ("close" | "description" | ... 10 more ... | "dismissible")[]'.
+src/components/kit/XSlideover.vue(155,85): error TS2339: Property 'unmountOnHide' does not exist on type 'Readonly<MappedOmit<LooseRequired<SlideoverProps>, "close" | "transition" | "modal" | "side" | "portal" | "overlay" | "dismissible">> & { ...; } & { ...; }'.
+=== src/components/kit/XSlider.vue ===
+src/components/kit/XSlider.vue(75,76): error TS2345: Argument of type '"min"' is not assignable to parameter of type 'keyof SliderProps | (keyof SliderProps)[]'.
+src/components/kit/XSlider.vue(84,66): error TS2339: Property 'disabled' does not exist on type 'SliderProps'.
+src/components/kit/XSlider.vue(128,4): error TS2345: Argument of type '{ defaultValue: number[] | undefined; class: any; name: string | undefined; disabled: any; size?: Slider["variants"]["size"] | undefined; ui?: Slider["slots"] | undefined; color?: Slider["variants"]["color"] | undefined; ... 8 more ...; 'onUpdate:modelValue': any; }' is not assignable to parameter of type '{ readonly defaultValue?: number[] | undefined; readonly modelValue?: number[] | null | undefined; readonly disabled?: boolean | undefined; readonly orientation?: DataOrientation | undefined; ... 12 more ...; readonly onValueCommit?: ((payload: number[]) => any) | undefined; } & VNodeProps & AllowedComponentProps & ...'.
+=== src/components/kit/XSplitter.vue ===
+src/components/kit/XSplitter.vue(96,67): error TS2345: Argument of type '"autoSaveId"' is not assignable to parameter of type 'keyof SplitterProps<T> | (keyof SplitterProps<T>)[]'.
+src/components/kit/XSplitter.vue(134,38): error TS2322: Type 'string' is not assignable to type 'Direction$1'.
+src/components/kit/XSplitter.vue(169,34): error TS2339: Property 'hitAreaMargins' does not exist on type 'SplitterProps<T>'.
+=== src/components/kit/XStepper.vue ===
+src/components/kit/XStepper.vue(107,61): error TS2345: Argument of type '"linear"' is not assignable to parameter of type 'keyof StepperProps<T> | (keyof StepperProps<T>)[]'.
+src/components/kit/XStepper.vue(152,63): error TS2322: Type 'string | undefined' is not assignable to type 'DataOrientation | undefined'.
+=== src/components/kit/XSwitch.vue ===
+src/components/kit/XSwitch.vue(13,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XSwitch.vue(34,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XSwitch.vue(44,3): error TS2300: Duplicate identifier 'loading'.
+src/components/kit/XSwitch.vue(80,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XSwitch.vue(80,3): error TS2717: Subsequent property declarations must have the same type.  Property 'size' must be of type 'any', but here has type 'string | undefined'.
+src/components/kit/XSwitch.vue(84,3): error TS2300: Duplicate identifier 'loading'.
+src/components/kit/XSwitch.vue(84,3): error TS2717: Subsequent property declarations must have the same type.  Property 'loading' must be of type 'any', but here has type 'boolean | undefined'.
+src/components/kit/XSwitch.vue(103,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XSwitch.vue(139,76): error TS2345: Argument of type '"defaultValue"' is not assignable to parameter of type 'keyof SwitchProps<T> | (keyof SwitchProps<T>)[]'.
+src/components/kit/XSwitch.vue(151,66): error TS2339: Property 'disabled' does not exist on type 'SwitchProps<T>'.
+=== src/components/kit/XTable.vue ===
+src/components/kit/XTable.vue(47,16): error TS2664: Invalid module name in augmentation, module '@tanstack/table-core' cannot be found.
+src/components/kit/XTable.vue(92,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XTable.vue(126,3): error TS2300: Duplicate identifier 'loading'.
+src/components/kit/XTable.vue(194,3): error TS2300: Duplicate identifier 'loading'.
+src/components/kit/XTable.vue(194,3): error TS2717: Subsequent property declarations must have the same type.  Property 'loading' must be of type 'any', but here has type 'boolean | undefined'.
+src/components/kit/XTable.vue(273,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XTable.vue(408,56): error TS2345: Argument of type '"_features"' is not assignable to parameter of type 'keyof TableProps<T> | (keyof TableProps<T>)[]'.
+src/components/kit/XTable.vue(652,47): error TS2339: Property 'class' does not exist on type 'TableMeta<T>'.
+src/components/kit/XTable.vue(655,52): error TS2339: Property 'style' does not exist on type 'TableMeta<T>'.
+src/components/kit/XTable.vue(666,60): error TS2339: Property 'colspan' does not exist on type 'ColumnMeta<T, unknown>'.
+src/components/kit/XTable.vue(667,60): error TS2339: Property 'rowspan' does not exist on type 'ColumnMeta<T, unknown>'.
+src/components/kit/XTable.vue(672,54): error TS2339: Property 'class' does not exist on type 'ColumnMeta<T, unknown>'.
+src/components/kit/XTable.vue(678,52): error TS2339: Property 'style' does not exist on type 'ColumnMeta<T, unknown>'.
+src/components/kit/XTable.vue(716,60): error TS2339: Property 'class' does not exist on type 'ColumnMeta<T, unknown>'.
+src/components/kit/XTable.vue(722,58): error TS2339: Property 'style' does not exist on type 'ColumnMeta<T, unknown>'.
+src/components/kit/XTable.vue(798,60): error TS2339: Property 'class' does not exist on type 'ColumnMeta<T, unknown>'.
+src/components/kit/XTable.vue(804,58): error TS2339: Property 'style' does not exist on type 'ColumnMeta<T, unknown>'.
+=== src/components/kit/XTabs.vue ===
+src/components/kit/XTabs.vue(139,61): error TS2345: Argument of type '"unmountOnHide"' is not assignable to parameter of type 'keyof TabsProps<T> | (keyof TabsProps<T>)[]'.
+src/components/kit/XTabs.vue(164,25): error TS2339: Property 'modelValue' does not exist on type 'TabsProps<T>'.
+src/components/kit/XTabs.vue(165,27): error TS2339: Property 'defaultValue' does not exist on type 'TabsProps<T>'.
+src/components/kit/XTabs.vue(166,6): error TS2322: Type 'string | undefined' is not assignable to type 'DataOrientation | undefined'.
+src/components/kit/XTabs.vue(167,29): error TS2339: Property 'activationMode' does not exist on type 'TabsProps<T>'.
+=== src/components/kit/XTextarea.vue ===
+src/components/kit/XTextarea.vue(16,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XTextarea.vue(18,3): error TS2300: Duplicate identifier 'id'.
+src/components/kit/XTextarea.vue(35,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XTextarea.vue(73,3): error TS2300: Duplicate identifier 'id'.
+src/components/kit/XTextarea.vue(73,3): error TS2717: Subsequent property declarations must have the same type.  Property 'id' must be of type 'any', but here has type 'string | undefined'.
+src/components/kit/XTextarea.vue(88,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XTextarea.vue(88,3): error TS2717: Subsequent property declarations must have the same type.  Property 'size' must be of type 'any', but here has type 'string | undefined'.
+src/components/kit/XTextarea.vue(104,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XTextarea.vue(173,39): error TS2339: Property 'avatar' does not exist on type 'TextareaProps<T, Mod>'.
+src/components/kit/XTextarea.vue(310,38): error TS2339: Property 'avatar' does not exist on type 'TextareaProps<T, Mod>'.
+src/components/kit/XTextarea.vue(313,37): error TS2339: Property 'avatar' does not exist on type 'TextareaProps<T, Mod>'.
+src/components/kit/XTextarea.vue(313,148): error TS2339: Property 'avatar' does not exist on type 'TextareaProps<T, Mod>'.
+=== src/components/kit/XToast.ts ===
+src/components/kit/XToast.ts(12,15): error TS2614: Module '"./XToast.vue"' has no exported member 'ToastUi'. Did you mean to use 'import ToastUi from "./XToast.vue"' instead?
+=== src/components/kit/XToast.vue ===
+src/components/kit/XToast.vue(124,61): error TS2345: Argument of type '"defaultOpen"' is not assignable to parameter of type '"close" | "description" | "ui" | "class" | "color" | "orientation" | "icon" | "as" | "progress" | "title" | "avatar" | "actions" | "closeIcon" | "duration" | ("close" | "description" | ... 11 more ... | "duration")[]'.
+=== src/components/kit/XToaster.vue ===
+src/components/kit/XToaster.vue(79,59): error TS2345: Argument of type '"duration"' is not assignable to parameter of type '"ui" | "class" | "max" | "progress" | "expand" | "position" | "portal" | ("ui" | "class" | "max" | "progress" | "expand" | "position" | "portal")[]'.
+src/components/kit/XToaster.vue(137,43): error TS18048: '__VLS_ctx.toasts' is possibly 'undefined'.
+src/components/kit/XToaster.vue(140,29): error TS18048: '__VLS_ctx.toasts' is possibly 'undefined'.
+src/components/kit/XToaster.vue(140,46): error TS18048: '__VLS_ctx.toasts' is possibly 'undefined'.
+src/components/kit/XToaster.vue(141,21): error TS18048: '__VLS_ctx.toasts' is possibly 'undefined'.
+=== src/components/kit/XTooltip.vue ===
+src/components/kit/XTooltip.vue(91,55): error TS2345: Argument of type '"defaultOpen"' is not assignable to parameter of type '"ui" | "class" | "content" | "text" | "kbds" | "reference" | "portal" | "arrow" | ("ui" | "class" | "content" | "text" | "kbds" | "reference" | "portal" | "arrow")[]'.
+src/components/kit/XTooltip.vue(104,130): error TS2339: Property 'disabled' does not exist on type 'Readonly<MappedOmit<LooseRequired<TooltipProps>, "portal">> & { readonly portal: string | boolean | HTMLElement; } & { ...; }'.

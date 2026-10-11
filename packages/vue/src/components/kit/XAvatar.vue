@@ -34,7 +34,6 @@ export interface AvatarProps {
   max?: any;
   multiple?: any;
   checked?: any;
-  size?: any;
   rows?: any;
   cols?: any;
   wrap?: any;
@@ -87,10 +86,8 @@ export interface AvatarProps {
   /**
    * @defaultValue 'neutral'
    */
-  color?: Avatar['variants']['color']
+  color?: any
   chip?: boolean | ChipProps
-  class?: any
-  style?: any
   ui?: Avatar['slots']
 }
 
@@ -130,13 +127,13 @@ const fallback = computed(() => props.text || (props.alt || '').split(' ').map(w
 
 const appConfig = useAppConfig() as Avatar['AppConfig']
 
-const { size, color } = useAvatarGroup(_props)
+const { size, color } = useAvatarGroup(_props as any)
 
 // eslint-disable-next-line vue/no-dupe-keys
 const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.avatar || {}) })({
   size: size.value ?? props.size,
   color: color.value ?? props.color
-}))
+} as any))
 
 const rootClass = computed(() => ui.value.root({ class: [props.ui?.root, props.class] }))
 

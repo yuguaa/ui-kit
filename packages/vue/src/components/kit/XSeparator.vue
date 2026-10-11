@@ -49,6 +49,8 @@ export interface SeparatorProps {
   position?: Separator['variants']['position']
   class?: any
   ui?: Separator['slots']
+/** reka Separator Root 透传成员（类型补齐，运行时经 useForwardProps 转发） */
+  decorative?: any
 }
 
 export interface SeparatorSlots {
@@ -92,7 +94,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.separator || {})
   size: props.size,
   position: props.position,
   type: props.type
-}))
+} as any))
 </script>
 
 <template>
@@ -106,7 +108,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.separator || {})
     </div>
   </DefineContainer>
 
-  <Separator data-slot="root" v-bind="{ ...rootProps, ...$attrs }" :class="ui.root({ class: [props.ui?.root, props.class] })">
+  <Separator data-slot="root" v-bind="({ ...rootProps, ...$attrs } as any)" :class="ui.root({ class: [props.ui?.root, props.class] })">
     <ReuseContainer v-if="hasContent && props.position === 'start'" />
 
     <div data-slot="border" :class="ui.border({ class: props.ui?.border })" />

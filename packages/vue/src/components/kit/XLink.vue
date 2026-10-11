@@ -1,7 +1,7 @@
 <script lang="ts">
 import type { VNode } from 'vue'
 import type { AppConfig } from '@/lib/nuxt/types/app-config'
-import type { RouterLinkProps, RouteLocationRaw } from 'vue-router'
+import type { RouterLinkProps, RouteLocationRaw } from '../../lib/nuxt/types/vue-router'
 import theme from '@/lib/nuxt/ui/link'
 import type { ButtonHTMLAttributes, AnchorHTMLAttributes } from '../../lib/nuxt/types/html'
 import type { ComponentConfig } from '../../lib/nuxt/types/tv'
@@ -166,7 +166,6 @@ export interface LinkProps {
    * @defaultValue 'button'
    */
   type?: ButtonHTMLAttributes['type']
-  disabled?: boolean
   /** Force the link to be active independent of the current route. */
   active?: boolean
   /** Will only be active if the current route is an exact match. */
@@ -177,6 +176,9 @@ export interface LinkProps {
   exactHash?: boolean
   /** The class to apply when the link is inactive. */
   inactiveClass?: string
+  /** 类型修补：activeClass 与 ariaCurrentValue 为 NuxtLink 透传 props（仅类型层） */
+  activeClass?: any
+  ariaCurrentValue?: any
   custom?: boolean
   /** When `true`, only styles from `class`, `activeClass`, and `inactiveClass` will be applied. */
   raw?: boolean
@@ -189,7 +191,6 @@ export interface LinkProps {
    * - `string`: localizes to a specific locale (e.g. `'fr'`).
    */
   locale?: boolean | string
-  class?: any
 }
 
 /**
@@ -242,7 +243,7 @@ defineSlots<LinkSlots>()
 
 const route = useRoute()
 const appConfig = useAppConfig() as Link['AppConfig']
-const nuxtApp = useNuxtApp()
+const nuxtApp = useNuxtApp() as any
 
 const nuxtLinkProps = useForwardProps(reactiveOmit(props, 'as', 'type', 'disabled', 'active', 'exact', 'exactQuery', 'exactHash', 'activeClass', 'inactiveClass', 'to', 'href', 'raw', 'custom', 'locale', 'class'))
 

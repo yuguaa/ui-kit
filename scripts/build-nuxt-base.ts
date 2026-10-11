@@ -1020,7 +1020,555 @@ export default tv({ extend: ${extendExpr} })
     for (const warning of compileWarnings) console.log(`  - ${warning}`);
   }
 
+  applyMenuTypePatches();
+  applyOverlayDisplayTypePatches();
+  applyMenuDateTypePatches();
+  applyTableLinkNavTypePatches();
+  applyKitTypePatches();
+
   console.log(`nuxt-base generated: ${themeNames.length} themes, ${COMPONENTS.length} components`);
 }
 
+/** 菜单类组件类型补丁（菜单项内容组件分组）
+ * - XDropdownMenu / XContextMenu / XCommandPalette：tv() 的 size 入参（string | undefined）与主题联合类型不匹配，断言为 any（仅类型层，不改运行时）
+ * - XCommandPalette：fuse.js 未随包安装，FuseResult 用本地宽松类型替代
+ * - XDropdownMenuItems / XContextMenuItems：从主组件导入的菜单类型在主组件产物中不存在，改为本地类型定义
+ */
+function applyMenuTypePatches() {
+  const patch = (file: string, replacements: Array<[string, string]>) => {
+    const path = join(OUT_KIT, file);
+    if (!existsSync(path)) return;
+    let content = readFileSync(path, "utf8");
+    for (const [from, to] of replacements) {
+      if (!content.includes(from)) continue;
+      content = content.replace(from, to);
+    }
+    writeFileSync(path, content);
+  };
+
+  const menuItemDataType = `/** 菜单项数据模型（本地类型定义，宽松承载任意 item 字段） */
+interface MenuItemData {
+  type?: string
+  label?: string
+  description?: string
+  icon?: string | Component
+  avatar?: Record<string, any>
+  color?: MenuColor
+  checked?: boolean
+  loading?: boolean
+  target?: string
+  kbds?: any[]
+  shortcut?: string
+  children?: MenuItemData[]
+  onSelect?: (item: MenuItemData) => void
+  onUpdateChecked?: (checked: boolean) => void
+  [key: string]: any
+}
+
+type MenuSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
+type MenuColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
+type MenuIcon = string | Component`;
+
+  patch("XDropdownMenu.vue", [[
+    "  size: props.size\n}))",
+    "  size: props.size as any\n}))",
+  ]]);
+  patch("XContextMenu.vue", [[
+    "  size: props.size\n}))",
+    "  size: props.size as any\n}))",
+  ]]);
+  patch("XCommandPalette.vue", [
+    [
+      "import type { FuseResult } from 'fuse.js'",
+      "/** fuse.js 未随包安装，本地宽松类型替代（仅类型层） */\ntype FuseResult<T> = { matches?: readonly any[] }",
+    ],
+    [
+      "  size: props.size,\n  virtualize: !!props.virtualize",
+      "  size: props.size as any,\n  virtualize: !!props.virtualize",
+    ],
+  ]);
+  patch("XDropdownMenuItems.vue", [
+    [
+      "import { computed, reactive, ref, useSlots } from 'vue'",
+      "import { computed, reactive, ref, useSlots, type Component } from 'vue'",
+    ],
+    [
+      "import type { DropdownMenuItemData, DropdownMenuUi, MenuColor, MenuIcon, MenuSize } from './XDropdownMenu.vue'",
+      menuItemDataType + "\ntype DropdownMenuUi = Record<string, any>\n\ninterface DropdownMenuItemData extends MenuItemData {}",
+    ],
+  ]);
+  patch("XContextMenuItems.vue", [
+    [
+      "import { computed, reactive, useSlots } from 'vue'",
+      "import { computed, reactive, useSlots, type Component } from 'vue'",
+    ],
+    [
+      "import type { ContextMenuItemData, ContextMenuUi } from './XContextMenu.vue'\nimport type { MenuColor, MenuIcon, MenuSize } from './XDropdownMenu.vue'",
+      menuItemDataType + "\ntype ContextMenuUi = Record<string, any>\n\ninterface ContextMenuItemData extends MenuItemData {}",
+    ],
+  ]);
+}
+
+/** 浮层与展示类组件类型补丁
+ * 手法说明（均为类型层修复，不改运行时行为）：
+ * - reka/vaul Root 透传成员：生成器 inlineAllExtends 未能从 reka d.ts 展开的成员
+ *   （open/defaultOpen/dismissible 等）以 `: any` 补进 Props 接口，
+ *   reactivePick 与模板访问恢复合法
+ * - tv() 实参（color/variant/size/orientation/position 等）：接口成员类型来自
+ *   ComponentConfig 推导的宽泛 string，与 theme variants 联合类型不匹配，
+ *   实参对象整体断言 as any
+ * - XAvatar：HTMLAttributes 展开成员与接口自身声明重复，删除重复声明；
+ *   color 成员类型改宽松
+ * - useToast：useState 替身返回 Ref<T | undefined>，断言为 Ref<Toast[]>
+ */
+function applyOverlayDisplayTypePatches() {
+  const patch = (file: string, replacements: Array<[string, string]>) => {
+    const path = join(OUT_KIT, file);
+    if (!existsSync(path)) return;
+    let content = readFileSync(path, "utf8");
+    for (const [from, to] of replacements) {
+      if (!content.includes(from)) continue;
+      content = content.replace(from, to);
+    }
+    writeFileSync(path, content);
+  };
+
+  /* reka RootProps 透传成员补齐（reactivePick 与模板访问需要） */
+  const forwardMember = (name: string, keys: string[]) =>
+    `/** ${name} Root 透传成员（类型补齐，运行时经 useForwardProps 转发） */\n${keys.map((key) => `  ${key}?: any`).join("\n")}`;
+
+  patch("XModal.vue", [[
+    "  dismissible?: boolean\n  class?: any\n  ui?: Modal['slots']\n}",
+    `  dismissible?: boolean\n  class?: any\n  ui?: Modal['slots']\n${forwardMember("reka Dialog", ["open", "defaultOpen", "modal", "unmountOnHide"])}\n}`,
+  ]]);
+  patch("XPopover.vue", [[
+    "  dismissible?: boolean\n  class?: any\n  ui?: Popover['slots']\n}",
+    `  dismissible?: boolean\n  class?: any\n  ui?: Popover['slots']\n${forwardMember("reka Popover/HoverCard", ["open", "defaultOpen", "openDelay", "closeDelay", "enableTouch", "modal"])}\n}`,
+  ]]);
+  patch("XTooltip.vue", [[
+    "  reference?: TooltipTriggerProps['reference']\n  class?: any\n  ui?: Tooltip['slots']\n}",
+    `  reference?: TooltipTriggerProps['reference']\n  class?: any\n  ui?: Tooltip['slots']\n${forwardMember("reka Tooltip", ["open", "defaultOpen", "delayDuration", "disableHoverableContent", "disableClosingTrigger", "ignoreNonKeyboardFocus", "disabled"])}\n}`,
+  ]]);
+  patch("XDrawer.vue", [[
+    "  closeIcon?: IconProps['name']\n  class?: any\n  ui?: Drawer['slots']\n}",
+    `  closeIcon?: IconProps['name']\n  class?: any\n  ui?: Drawer['slots']\n${forwardMember("vaul Drawer", ["activeSnapPoint", "closeThreshold", "shouldScaleBackground", "setBackgroundColorOnScale", "scrollLockTimeout", "fixed", "dismissible", "modal", "open", "defaultOpen", "direction", "noBodyStyles", "handleOnly", "preventScrollRestoration", "snapPoints"])}\n}`,
+  ]]);
+  patch("XSlideover.vue", [
+    [
+      "  dismissible?: boolean\n  class?: any\n  ui?: Slideover['slots']\n}",
+      `  dismissible?: boolean\n  class?: any\n  ui?: Slideover['slots']\n${forwardMember("reka Dialog", ["open", "defaultOpen", "modal", "unmountOnHide"])}\n}`,
+    ],
+    [
+      "const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.slideover || {}) })({\n  transition: props.transition,\n  side: props.side,\n  inset: props.inset\n}))",
+      "const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.slideover || {}) })({\n  transition: props.transition,\n  side: props.side,\n  inset: props.inset\n} as any))",
+    ],
+  ]);
+  patch("XToaster.vue", [
+    [
+      "  max?: number\n  class?: any\n  ui?: Toaster['slots']\n}",
+      `  max?: number\n  class?: any\n  ui?: Toaster['slots']\n${forwardMember("reka ToastProvider", ["duration", "label", "swipeThreshold", "disableSwipe"])}\n}`,
+    ],
+    [
+      "const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.toaster || {}) })({\n  position: props.position,\n  swipeDirection: swipeDirection.value\n}))",
+      "const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.toaster || {}) })({\n  position: props.position,\n  swipeDirection: swipeDirection.value\n} as any))",
+    ],
+  ]);
+  patch("XToast.vue", [
+    [
+      "  progress?: boolean | Pick<ProgressProps, 'color' | 'ui'>\n  class?: any\n  ui?: Toast['slots']\n}",
+      `  progress?: boolean | Pick<ProgressProps, 'color' | 'ui'>\n  class?: any\n  ui?: Toast['slots']\n${forwardMember("reka Toast", ["defaultOpen", "open", "type"])}\n}`,
+    ],
+    [
+      "const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.toast || {}) })({\n  color: props.color,\n  orientation: props.orientation,\n  title: !!props.title || !!slots.title\n}))",
+      "const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.toast || {}) })({\n  color: props.color,\n  orientation: props.orientation,\n  title: !!props.title || !!slots.title\n} as any))",
+    ],
+  ]);
+  patch("XBadge.vue", [
+    [
+      "  /** Render the badge with equal padding on all sides. */\n  square?: boolean\n  class?: any\n  ui?: Badge['slots']\n}",
+      "  /** Render the badge with equal padding on all sides. */\n  square?: boolean\n  /** Display an avatar on the left side. */\n  avatar?: AvatarProps\n  class?: any\n  ui?: Badge['slots']\n}",
+    ],
+    [
+      "const { isLeading, isTrailing, leadingIconName, trailingIconName } = useComponentIcons(props)",
+      "const { isLeading, isTrailing, leadingIconName, trailingIconName } = useComponentIcons(props as any)",
+    ],
+    [
+      "const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.badge || {}) })({\n  color: props.color,\n  variant: props.variant,\n  size: fieldGroupSize.value ?? props.size,\n  square: props.square || (!slots.default && !props.label),\n  fieldGroup: orientation.value\n}))",
+      "const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.badge || {}) })({\n  color: props.color,\n  variant: props.variant,\n  size: fieldGroupSize.value ?? props.size,\n  square: props.square || (!slots.default && !props.label),\n  fieldGroup: orientation.value\n} as any))",
+    ],
+  ]);
+  patch("XAvatar.vue", [
+    /* HTMLAttributes 展开的 size 与接口自身声明重复，删展开副本 */
+    ["  multiple?: any;\n  checked?: any;\n  size?: any;\n  rows?: any;", "  multiple?: any;\n  checked?: any;\n  rows?: any;"],
+    /* class/style 与展开成员重复，删接口末尾声明 */
+    ["  chip?: boolean | ChipProps\n  class?: any\n  style?: any\n  ui?: Avatar['slots']\n}", "  chip?: boolean | ChipProps\n  ui?: Avatar['slots']\n}"],
+    ["  color?: Avatar['variants']['color']", "  color?: any"],
+    /* useAvatarGroup 期望 size/color 宽松对象，断言绕过 DefineProps 结构差异 */
+    ["const { size, color } = useAvatarGroup(_props)", "const { size, color } = useAvatarGroup(_props as any)"],
+  ]);
+  patch("XSeparator.vue", [
+    [
+      "  position?: Separator['variants']['position']\n  class?: any\n  ui?: Separator['slots']\n}",
+      `  position?: Separator['variants']['position']\n  class?: any\n  ui?: Separator['slots']\n${forwardMember("reka Separator", ["decorative"])}\n}`,
+    ],
+    [
+      "<Separator data-slot=\"root\" v-bind=\"{ ...rootProps, ...$attrs }\"",
+      "<Separator data-slot=\"root\" v-bind=\"({ ...rootProps, ...$attrs } as any)\"",
+    ],
+  ]);
+  patch("XCarousel.vue", [
+    [
+      "  wheelGestures?: boolean | WheelGesturesPluginOptions\n  class?: any\n  ui?: Carousel['slots']\n}",
+      `  wheelGestures?: boolean | WheelGesturesPluginOptions\n  class?: any\n  ui?: Carousel['slots']\n${forwardMember("embla Carousel", ["active", "align", "breakpoints", "containScroll", "dragFree", "dragThreshold", "duration", "inViewThreshold", "loop", "skipSnaps", "slidesToScroll", "startIndex", "watchDrag", "watchResize", "watchSlides", "watchFocus"])}\n}`,
+    ],
+    [
+      "const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.carousel || {}) })({\n  orientation: props.orientation\n}))",
+      "const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.carousel || {}) })({\n  orientation: props.orientation\n} as any))",
+    ],
+  ]);
+  patch("XCollapsible.vue", [[
+    "  as?: any\n  class?: any\n  ui?: Collapsible['slots']\n}",
+    `  as?: any\n  class?: any\n  ui?: Collapsible['slots']\n${forwardMember("reka Collapsible", ["defaultOpen", "open", "disabled", "unmountOnHide"])}\n}`,
+  ]]);
+  patch("XAccordion.vue", [
+    [
+      "  labelKey?: GetItemKeys<T>\n  class?: any\n  ui?: Accordion['slots']\n}",
+      `  labelKey?: GetItemKeys<T>\n  class?: any\n  ui?: Accordion['slots']\n${forwardMember("reka Accordion", ["collapsible", "defaultValue", "disabled", "modelValue", "unmountOnHide", "type"])}\n}`,
+    ],
+    /* 动态插槽的 ui prop 类型改宽松，slot :ui 绑定不再与 tv 返回类型互查 */
+    [
+      "} & DynamicSlots<T, 'body', { index: number, open: boolean, ui: Accordion['ui'] }>",
+      "} & DynamicSlots<T, 'body', { index: number, open: boolean, ui: any }>",
+    ],
+  ]);
+  patch("XProgress.vue", [
+    [
+      "  animation?: Progress['variants']['animation']\n  class?: any\n  ui?: Progress['slots']\n}",
+      `  animation?: Progress['variants']['animation']\n  class?: any\n  ui?: Progress['slots']\n${forwardMember("reka Progress", ["getValueLabel", "getValueText", "modelValue"])}\n}`,
+    ],
+    [
+      "const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.progress || {}) })({\n  animation: props.animation,\n  size: props.size,\n  color: props.color as Progress['variants']['color'],\n  orientation: props.orientation,\n  inverted: props.inverted\n}))",
+      "const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.progress || {}) })({\n  animation: props.animation,\n  size: props.size,\n  color: props.color as Progress['variants']['color'],\n  orientation: props.orientation,\n  inverted: props.inverted\n} as any))",
+    ],
+  ]);
+
+  patch("XAlert.vue", [[
+    "  title: !!props.title || !!slots.title\n}))",
+    "  title: !!props.title || !!slots.title\n} as any))",
+  ]]);
+  patch("XCard.vue", [[
+    "  variant: props.variant\n}))",
+    "  variant: props.variant\n} as any))",
+  ]]);
+  patch("XChip.vue", [[
+    "  standalone: props.standalone\n}))",
+    "  standalone: props.standalone\n} as any))",
+  ]]);
+  patch("XAvatarGroup.vue", [[
+    "const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.avatarGroup || {}) })({\n  size: props.size,\n  color: props.color\n}))",
+    "const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.avatarGroup || {}) })({\n  size: props.size,\n  color: props.color\n} as any))",
+  ]]);
+  patch("XAvatar.vue", [
+    ["  color: color.value ?? props.color\n}))", "  color: color.value ?? props.color\n} as any))"],
+  ]);
+  patch("XKbd.vue", [[
+    "<Primitive :as=\"props.as\" :class=\"ui({ class: [props.ui?.base, props.class], color: props.color, variant: props.variant, size: props.size })\">",
+    "<Primitive :as=\"props.as\" :class=\"ui({ class: [props.ui?.base, props.class], color: props.color, variant: props.variant, size: props.size } as any)\">",
+  ]]);
+  patch("XSeparator.vue", [
+    ["  type: props.type\n}))", "  type: props.type\n} as any))"],
+  ]);
+
+  /* useToast：useState 替身返回 Ref<T | undefined>，模板解包后 toasts 判 undefined；断言为 Ref<Toast[]> */
+  const useToastPath = join(OUT_BASE, "composables", "useToast.ts");
+  if (existsSync(useToastPath)) {
+    const useToastContent = readFileSync(useToastPath, "utf8");
+    const from = "  const toasts = useState<Toast[]>('toasts', () => [])";
+    const to = "  const toasts = useState<Toast[]>('toasts', () => []) as Ref<Toast[]>";
+    if (useToastContent.includes(from) && !useToastContent.includes(to)) {
+      writeFileSync(useToastPath, useToastContent.replace(from, to));
+    }
+  }
+}
+
+/** 菜单与日期类组件类型补丁（菜单与日期分组）
+ * - XContextMenu / XDropdownMenu：tv() 入参 size 与返回类型推断不匹配主题联合类型，入参对象与返回值整体断言（仅类型层，不改运行时）
+ * - XListbox / XNavigationMenu / XInputMenu / XSelectMenu：tv() 返回类型因 app.config 展开推断失败，模板中 ui.slot() 调用不可用；整体断言
+ * - XInputDate / XInputTime：产物 Props 接口缺失原始源码的 disabled / loading / avatar 等字段，补索引签名宽松承载；useComponentIcons 入参断言
+ * - XNavigationMenu：根节点 v-bind 对象含 $attrs 与 data-slot，与 reka-ui 根 props 类型不兼容，整体断言
+ */
+function applyMenuDateTypePatches() {
+  const patch = (file: string, replacements: Array<[string, string]>) => {
+    const path = join(OUT_KIT, file);
+    if (!existsSync(path)) return;
+    let content = readFileSync(path, "utf8");
+    for (const [from, to] of replacements) {
+      if (!content.includes(from)) {
+        console.log(`  - menu-date patch miss: ${file}: ${JSON.stringify(from.slice(0, 60))}`);
+        continue;
+      }
+      content = content.replace(from, to);
+    }
+    writeFileSync(path, content);
+  };
+
+  /* 菜单浮层：applyMenuTypePatches 已将 size 入参断言为 any，这里把入参对象与 tv() 返回值整体断言 */
+  patch("XContextMenu.vue", [[
+    "  size: props.size as any\n}))",
+    "  size: props.size\n} as any) as unknown as Record<string, any>)",
+  ]]);
+  patch("XDropdownMenu.vue", [[
+    "  size: props.size as any\n}))",
+    "  size: props.size\n} as any) as unknown as Record<string, any>)",
+  ]]);
+
+  /* 列表与导航：tv() 入参对象与返回值整体断言 */
+  patch("XListbox.vue", [[
+    "  virtualize: !!props.virtualize\n}))",
+    "  virtualize: !!props.virtualize\n} as any) as unknown as Record<string, any>)",
+  ]]);
+  patch("XNavigationMenu.vue", [
+    [
+      "  highlightColor: props.highlightColor || props.color\n}))",
+      "  highlightColor: props.highlightColor || props.color\n} as any) as unknown as Record<string, any>)",
+    ],
+    [
+      "    v-bind=\"{\n      ...rootProps,\n      ...(props.orientation === 'horizontal' ? {\n        modelValue: props.modelValue as string,\n        defaultValue: props.defaultValue as string\n      } : {}),\n      ...$attrs\n    }\"",
+      "    v-bind=\"({\n      ...rootProps,\n      ...(props.orientation === 'horizontal' ? {\n        modelValue: props.modelValue as string,\n        defaultValue: props.defaultValue as string\n      } : {}),\n      ...$attrs\n    } as any)\"",
+    ],
+  ]);
+
+  /* 日期输入：Props 接口补索引签名 + useComponentIcons 入参断言 + tv() 整体断言 */
+  patch("XInputDate.vue", [
+    [
+      "  ui?: InputDate['slots']\n}",
+      "  ui?: InputDate['slots']\n  /** 类型修补：生成产物缺少原始源码的部分 prop，索引签名宽松承载（仅类型层） */\n  [key: string]: any\n}",
+    ],
+    ["useComponentIcons(props)", "useComponentIcons(props as any)"],
+    [
+      "  fieldGroup: orientation.value\n}))",
+      "  fieldGroup: orientation.value\n} as any) as unknown as Record<string, any>)",
+    ],
+  ]);
+  patch("XInputTime.vue", [
+    [
+      "  ui?: InputTime['slots']\n}",
+      "  ui?: InputTime['slots']\n  /** 类型修补：生成产物缺少原始源码的部分 prop，索引签名宽松承载（仅类型层） */\n  [key: string]: any\n}",
+    ],
+    ["useComponentIcons(props)", "useComponentIcons(props as any)"],
+    [
+      "  fieldGroup: orientation.value\n}))",
+      "  fieldGroup: orientation.value\n} as any) as unknown as Record<string, any>)",
+    ],
+  ]);
+
+  /* 选择菜单：tv() 入参对象与返回值整体断言 */
+  patch("XInputMenu.vue", [[
+    "  virtualize: !!props.virtualize\n}))",
+    "  virtualize: !!props.virtualize\n} as any) as unknown as Record<string, any>)",
+  ]]);
+  patch("XSelectMenu.vue", [[
+    "  multiple: props.multiple\n}))",
+    "  multiple: props.multiple\n} as any) as unknown as Record<string, any>)",
+  ]]);
+}
+
+/** 表格链接导航类组件类型补丁（表格链接导航分组）
+ * - XBreadcrumb / XTabs：插槽 props 的 ui 入参（tv 返回值含 slots/variants 等非函数成员）与 ComponentUI 记录类型不匹配，断言为 any（仅类型层）
+ * - XBreadcrumb / XTabs / XStepper / XTable：variants 成员经 ComponentVariants 放宽为 string，与 tv 入参联合类型不匹配，接口成员改为 any
+ * - XTabs / XStepper / XPagination：reka 透传 props（modelValue / defaultValue / unmountOnHide / activationMode / linear / defaultPage 等）在产物 Props 接口缺失，补齐为 any 成员
+ * - XPagination：to 成员引用 ButtonProps['to']，但 ButtonProps 无 to 成员，改为 any
+ * - XTable：@tanstack/table-core 未随包安装，模块增强无法解析，移除增强块，模板 meta 扩展字段经 as any 断言；重复的 class / loading 成员去重；_features 内部透传键补齐
+ * - XLink：vue-router 未随包安装，用本地宽松类型替身；重复的 class / disabled 成员去重；activeClass / ariaCurrentValue 缺失成员补齐；useNuxtApp 断言 any 以承载 $localePath / $i18n
+ * - NuxtLink 替身：显式声明 default 插槽 props（宽松可选），消费方 v-slot 解构才能拿到 href / navigate / route / isActive / isExactActive
+ */
+function applyTableLinkNavTypePatches() {
+  const patch = (file: string, replacements: Array<[string, string]>) => {
+    const path = join(OUT_KIT, file);
+    if (!existsSync(path)) return;
+    let content = readFileSync(path, "utf8");
+    for (const [from, to] of replacements) {
+      if (!content.includes(from)) {
+        console.log(`  - table-link-nav patch miss: ${file}: ${JSON.stringify(from.slice(0, 60))}`);
+        continue;
+      }
+      content = content.split(from).join(to);
+    }
+    writeFileSync(path, content);
+  };
+
+  /* XBreadcrumb：tv 入参 color 断言 + 插槽 props ui 断言 */
+  patch("XBreadcrumb.vue", [
+    [
+      "const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.breadcrumb || {}) })({\n  color: props.color\n}))",
+      "const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.breadcrumb || {}) })({\n  color: props.color as any\n}))",
+    ],
+    [":ui=\"ui\"", ":ui=\"(ui as any)\""],
+  ]);
+
+  /* XTabs：variants 成员放宽 + reka 透传 props 补齐 + 插槽 props ui 断言 */
+  patch("XTabs.vue", [
+    ["  color?: Tabs['variants']['color']", "  color?: any"],
+    ["  variant?: Tabs['variants']['variant']", "  variant?: any"],
+    ["  size?: Tabs['variants']['size']", "  size?: any"],
+    ["  orientation?: Tabs['variants']['orientation']", "  orientation?: any"],
+    [
+      "  ui?: Tabs['slots']\n}",
+      "  ui?: Tabs['slots']\n  /** 类型修补：reka 透传 props（仅类型层，运行时经 useForwardProps 传递） */\n  modelValue?: any\n  defaultValue?: any\n  unmountOnHide?: any\n  activationMode?: any\n}",
+    ],
+    [":ui=\"ui\"", ":ui=\"(ui as any)\""],
+  ]);
+
+  /* XStepper：variants 成员放宽 + reka 透传 prop 补齐 */
+  patch("XStepper.vue", [
+    ["  size?: Stepper['variants']['size']", "  size?: any"],
+    ["  color?: Stepper['variants']['color']", "  color?: any"],
+    ["  orientation?: Stepper['variants']['orientation']", "  orientation?: any"],
+    [
+      "  ui?: Stepper['slots']\n}",
+      "  ui?: Stepper['slots']\n  /** 类型修补：reka 透传 prop（仅类型层） */\n  linear?: any\n}",
+    ],
+  ]);
+
+  /* XPagination：to 成员放宽 + reka 透传 props 补齐 */
+  patch("XPagination.vue", [
+    ["  to?: (page: number) => ButtonProps['to']", "  to?: any"],
+    [
+      "  ui?: Pagination['slots']\n}",
+      "  ui?: Pagination['slots']\n  /** 类型修补：reka 透传 props（仅类型层，运行时经 useForwardProps 传递） */\n  defaultPage?: any\n  disabled?: any\n  itemsPerPage?: any\n  page?: any\n  showEdges?: any\n  siblingCount?: any\n  total?: any\n}",
+    ],
+  ]);
+
+  /* XTable：模块增强移除 + 模板 meta 扩展字段断言 + 成员去重与补齐 + variants 成员放宽 */
+  patch("XTable.vue", [
+    [
+      `declare module '@tanstack/table-core' {
+
+  interface ColumnMeta<TData extends RowData, TValue> {
+    class?: {
+      th?: string | ((cell: Header<TData, TValue>) => string)
+      td?: string | ((cell: Cell<TData, TValue>) => string)
+    }
+    style?: {
+      th?: string | Record<string, string> | ((cell: Header<TData, TValue>) => string | Record<string, string>)
+      td?: string | Record<string, string> | ((cell: Cell<TData, TValue>) => string | Record<string, string>)
+    }
+    colspan?: {
+      td?: string | ((cell: Cell<TData, TValue>) => string)
+    }
+    rowspan?: {
+      td?: string | ((cell: Cell<TData, TValue>) => string)
+    }
+
+  }
+
+  interface TableMeta<TData> {
+    class?: {
+      tr?: string | ((row: Row<TData>) => string)
+    }
+    style?: {
+      tr?: string | Record<string, string> | ((row: Row<TData>) => string | Record<string, string>)
+    }
+  }
+
+}
+
+`,
+      "",
+    ],
+    ["export interface TableProps<T extends TableData = TableData> {\n  class?: any;", "export interface TableProps<T extends TableData = TableData> {\n  /** 类型修补：tanstack 内部透传键（仅类型层） */\n  _features?: any;\n  class?: any;"],
+    ["  rel?: any;\n  loading?: any;\n  accesskey?: any;", "  rel?: any;\n  accesskey?: any;"],
+    ["  loadingColor?: Table['variants']['loadingColor']", "  loadingColor?: any"],
+    ["  loadingAnimation?: Table['variants']['loadingAnimation']", "  loadingAnimation?: any"],
+    ["  class?: any\n  ui?: Table['slots']\n}", "  ui?: Table['slots']\n}"],
+    ["cell.column.columnDef.meta?.", "(cell.column.columnDef.meta as any)?."],
+    ["header.column.columnDef.meta?.", "(header.column.columnDef.meta as any)?."],
+    ["tableApi.options.meta?.", "(tableApi.options.meta as any)?."],
+  ]);
+
+  /* XLink：vue-router 替身 + 成员去重与补齐 + useNuxtApp 断言 */
+  patch("XLink.vue", [
+    [
+      "import type { RouterLinkProps, RouteLocationRaw } from 'vue-router'",
+      "import type { RouterLinkProps, RouteLocationRaw } from '../../lib/nuxt/types/vue-router'",
+    ],
+    ["  locale?: boolean | string\n  class?: any\n}", "  locale?: boolean | string\n}"],
+    [
+      "  type?: ButtonHTMLAttributes['type']\n  disabled?: boolean\n  /** Force the link to be active independent of the current route. */",
+      "  type?: ButtonHTMLAttributes['type']\n  /** Force the link to be active independent of the current route. */",
+    ],
+    [
+      "  inactiveClass?: string\n  custom?: boolean",
+      "  inactiveClass?: string\n  /** 类型修补：activeClass 与 ariaCurrentValue 为 NuxtLink 透传 props（仅类型层） */\n  activeClass?: any\n  ariaCurrentValue?: any\n  custom?: boolean",
+    ],
+    ["const nuxtApp = useNuxtApp()", "const nuxtApp = useNuxtApp() as any"],
+  ]);
+
+  /* vue-router 本地宽松类型替身（XLink 仅用 RouterLinkProps 与 RouteLocationRaw 做类型标注） */
+  writeFileSync(
+    join(OUT_BASE, "types", "vue-router.ts"),
+    `export type RouteLocationRaw = string | Record<string, any>
+
+export interface RouterLinkProps {
+  [key: string]: any
+}
+`,
+  );
+
+  /* NuxtLink 替身：显式声明 default 插槽 props，消费方 v-slot 解构可解析（不含 as/type/disabled，避免槽位透传污染 DOM） */
+  const nuxtLinkPath = join(OUT_BASE, "NuxtLink.vue");
+  if (existsSync(nuxtLinkPath)) {
+    let nuxtLink = readFileSync(nuxtLinkPath, "utf8");
+    const propsTail = "  type: { type: String, default: undefined },\n})";
+    if (nuxtLink.includes(propsTail) && !nuxtLink.includes("defineSlots")) {
+      nuxtLink = nuxtLink.replace(
+        propsTail,
+        `  type: { type: String, default: undefined },
+})
+
+/* 插槽 props 显式声明（宽松可选），供消费方 v-slot 解构与类型断言 */
+defineSlots<{
+  default(props: {
+    href?: string | undefined
+    navigate?: (event: MouseEvent) => void
+    route?: Record<string, unknown>
+    isActive?: boolean
+    isExactActive?: boolean
+    isExternal?: boolean
+    target?: string | undefined
+    rel?: string | null
+    prefetch?: () => void
+    shouldPrefetch?: boolean
+  }): any
+}>()`,
+      );
+      writeFileSync(nuxtLinkPath, nuxtLink);
+    }
+  }
+}
+
 main();
+
+/** 剩余组件类型补丁（agent 4 分组：其余全部组件）
+ * 目前仅 XTable 残留：上游 table-link-nav 补丁的全局替换把
+ * `tableApi.options.meta?.` 改成 `tableApi.(options.meta as any)?.` 等破损表达式，
+ * 恢复为合法断言形态（仅类型层，不改运行时）。
+ */
+function applyKitTypePatches() {
+  const patch = (file: string, replacements: Array<[string, string]>) => {
+    const path = join(OUT_KIT, file);
+    if (!existsSync(path)) return;
+    let content = readFileSync(path, "utf8");
+    for (const [from, to] of replacements) {
+      if (!content.includes(from)) continue;
+      content = content.split(from).join(to);
+    }
+    writeFileSync(path, content);
+  };
+
+  patch("XTable.vue", [
+    ["tableApi.(options.meta as any)", "(tableApi.options.meta as any)"],
+    ["cell.column.(columnDef.meta as any)", "(cell.column.columnDef.meta as any)"],
+    ["header.column.(columnDef.meta as any)", "(header.column.columnDef.meta as any)"],
+  ]);
+}

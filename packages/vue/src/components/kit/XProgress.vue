@@ -42,6 +42,10 @@ export interface ProgressProps {
   animation?: Progress['variants']['animation']
   class?: any
   ui?: Progress['slots']
+/** reka Progress Root 透传成员（类型补齐，运行时经 useForwardProps 转发） */
+  getValueLabel?: any
+  getValueText?: any
+  modelValue?: any
 }
 
 export interface ProgressEmits {
@@ -180,7 +184,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.progress || {}) 
   color: props.color as Progress['variants']['color'],
   orientation: props.orientation,
   inverted: props.inverted
-}))
+} as any))
 
 // `tv` skips a color it doesn't know, so a value outside the theme palette adds no class
 // and is applied inline instead.

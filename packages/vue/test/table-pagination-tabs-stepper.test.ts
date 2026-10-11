@@ -5,11 +5,10 @@ import XAvatar from "@/components/kit/XAvatar.vue";
 import XIcon from "@/components/kit/XIcon.vue";
 import XPagination from "@/components/kit/XPagination.vue";
 import XStepper from "@/components/kit/XStepper.vue";
-import type { StepperUi } from "@/components/kit/XStepper.vue";
 import XSkeleton from "@/components/kit/XSkeleton.vue";
 import XTable from "@/components/kit/XTable.vue";
 import XTabs from "@/components/kit/XTabs.vue";
-import type { TabsItem, TabsUi } from "@/components/kit/XTabs.vue";
+import type { TabsItem } from "@/components/kit/XTabs.vue";
 
 enableAutoUnmount(afterEach);
 
@@ -95,7 +94,7 @@ describe("XTabs 新能力", () => {
         modelValue: "a",
       },
       slots: {
-        detail: ({ item }: { item: TabsItem; index: number; ui: TabsUi }) => h("p", `详情: ${item.label}`),
+        detail: ({ item }: { item: TabsItem; index: number; ui: Record<string, any> }) => h("p", `详情: ${item.label}`),
       },
     });
     expect(wrapper.text()).toContain("详情: 一");
@@ -105,7 +104,7 @@ describe("XTabs 新能力", () => {
     const wrapper = mount(XTabs, {
       props: { items, size: "xl" },
       slots: {
-        leading: ({ ui }: { ui: TabsUi }) => h("span", { "data-test": "lead" }, [
+        leading: ({ ui }: { ui: Record<string, any> }) => h("span", { "data-test": "lead" }, [
           /* ui 槽位声明为 SlotClass 联合，运行时为可调用函数，仅类型断言 */
           String((ui.leadingAvatarSize as any)?.()),
           "/",
@@ -294,7 +293,7 @@ describe("XStepper 新能力", () => {
       props: { items, modelValue: "basic", ui: { indicator: "custom-indicator" } },
       slots: {
         /* 插槽 props 与组件声明的 item 类型不匹配，运行时行为正确，仅放宽参数类型 */
-        indicator: (slotProps: any) => h("span", (slotProps.ui as StepperUi | undefined)?.indicator ?? ""),
+        indicator: (slotProps: any) => h("span", (slotProps.ui as Record<string, any> | undefined)?.indicator ?? ""),
       },
     });
     expect(wrapper.find("[data-slot='indicator']").classes()).toContain("custom-indicator");

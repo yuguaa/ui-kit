@@ -408,7 +408,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.navigationMenu |
   variant: props.variant,
   highlight: props.highlight,
   highlightColor: props.highlightColor || props.color
-}))
+} as any) as unknown as Record<string, any>)
 
 const lists = computed<NavigationMenuItem[][]>(() =>
   props.items?.length
@@ -623,14 +623,14 @@ function onLinkTrailingClick(e: Event, item: NavigationMenuItem, trailingTrigger
 
   <NavigationMenuRoot
     data-slot="root"
-    v-bind="{
+    v-bind="({
       ...rootProps,
       ...(props.orientation === 'horizontal' ? {
         modelValue: props.modelValue as string,
         defaultValue: props.defaultValue as string
       } : {}),
       ...$attrs
-    }"
+    } as any)"
     :data-collapsed="props.collapsed"
     :class="ui.root({ class: [props.ui?.root, props.class] })"
   >

@@ -36,6 +36,11 @@ export interface ToasterProps {
   max?: number
   class?: any
   ui?: Toaster['slots']
+/** reka ToastProvider Root 透传成员（类型补齐，运行时经 useForwardProps 转发） */
+  duration?: any
+  label?: any
+  swipeThreshold?: any
+  disableSwipe?: any
 }
 
 export interface ToasterSlots {
@@ -99,7 +104,7 @@ const swipeDirection = computed(() => {
 const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.toaster || {}) })({
   position: props.position,
   swipeDirection: swipeDirection.value
-}))
+} as any))
 
 function onUpdateOpen(value: boolean, id: string | number) {
   if (value) {

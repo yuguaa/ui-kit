@@ -61,6 +61,11 @@ export interface SlideoverProps {
   dismissible?: boolean
   class?: any
   ui?: Slideover['slots']
+/** reka Dialog Root 透传成员（类型补齐，运行时经 useForwardProps 转发） */
+  open?: any
+  defaultOpen?: any
+  modal?: any
+  unmountOnHide?: any
 }
 
 export interface SlideoverEmits {
@@ -142,7 +147,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.slideover || {})
   transition: props.transition,
   side: props.side,
   inset: props.inset
-}))
+} as any))
 </script>
 
 <!-- eslint-disable vue/no-template-shadow -->

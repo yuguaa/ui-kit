@@ -61,6 +61,11 @@ export interface ModalProps {
   dismissible?: boolean
   class?: any
   ui?: Modal['slots']
+/** reka Dialog Root 透传成员（类型补齐，运行时经 useForwardProps 转发） */
+  open?: any
+  defaultOpen?: any
+  modal?: any
+  unmountOnHide?: any
 }
 
 export interface ModalEmits {

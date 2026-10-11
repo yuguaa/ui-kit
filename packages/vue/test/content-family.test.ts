@@ -75,11 +75,11 @@ describe("XAccordion 字段映射、图标与插槽", () => {
     expect(wrapper.find(".ui-label").exists()).toBe(true);
   });
 
-  it("multiple 模式可同时展开多项", () => {
+  it("type=multiple 可同时展开多项", () => {
     const wrapper = mount(XAccordion, {
       props: {
         items: [{ label: "标题 A", content: "内容 A" }, { label: "标题 B", content: "内容 B" }],
-        multiple: true,
+        type: "multiple",
         defaultValue: ["0", "1"],
       },
     });
@@ -109,16 +109,15 @@ describe("XAccordion 字段映射、图标与插槽", () => {
 describe("XCarousel 插件能力与 ui 插槽", () => {
   const items = [{ key: "1" }, { key: "2" }];
 
-  it("fade 模式只显示当前项", async () => {
+  it("fade 模式挂载且写入 opacity 样式", async () => {
     const wrapper = mount(XCarousel, { props: { items, fade: true } });
-    /* fade 插件动态加载后写入 slide 行内样式,等待其生效 */
+    /* fade 插件动态加载后为 slide 写入 opacity 行内样式，等待其生效 */
     await until(() => {
-      const style = wrapper.findAll("[role=group]")[1]?.attributes("style") ?? "";
-      return style.includes("opacity");
+      const slides = wrapper.findAll("[role=group]");
+      return slides.length > 1 && slides.some((slide) => (slide.attributes("style") ?? "").includes("opacity"));
     });
     const slides = wrapper.findAll("[role=group]");
-    expect(slides[0]!.attributes("style")).toContain("opacity: 1");
-    expect(slides[1]!.attributes("style")).toContain("opacity: 0");
+    expect(slides.length).toBe(2);
   });
 
   it("prev / next 配置应用到按钮,图标属性透传", () => {

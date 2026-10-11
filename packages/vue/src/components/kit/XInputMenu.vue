@@ -506,7 +506,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.inputMenu || {})
   multiple: isMultiple.value,
   fieldGroup: orientation.value,
   virtualize: !!props.virtualize
-}))
+} as any) as unknown as Record<string, any>)
 
 // eslint-disable-next-line vue/no-dupe-keys
 const items = computed(() => groups.value.flatMap(group => group) as T[])

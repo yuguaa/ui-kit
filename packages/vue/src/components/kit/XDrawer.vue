@@ -62,6 +62,22 @@ export interface DrawerProps {
   closeIcon?: IconProps['name']
   class?: any
   ui?: Drawer['slots']
+/** vaul Drawer Root 透传成员（类型补齐，运行时经 useForwardProps 转发） */
+  activeSnapPoint?: any
+  closeThreshold?: any
+  shouldScaleBackground?: any
+  setBackgroundColorOnScale?: any
+  scrollLockTimeout?: any
+  fixed?: any
+  dismissible?: any
+  modal?: any
+  open?: any
+  defaultOpen?: any
+  direction?: any
+  noBodyStyles?: any
+  handleOnly?: any
+  preventScrollRestoration?: any
+  snapPoints?: any
 }
 
 export interface DrawerEmits {

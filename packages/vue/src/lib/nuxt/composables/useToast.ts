@@ -16,7 +16,7 @@ export interface Toast extends Omit<ToastProps, 'defaultOpen'>, EmitsToProps<Toa
 }
 
 export function useToast() {
-  const toasts = useState<Toast[]>('toasts', () => [])
+  const toasts = useState<Toast[]>('toasts', () => []) as Ref<Toast[]>
   const max = inject(toastMaxInjectionKey, undefined)
 
   const running = ref(false)

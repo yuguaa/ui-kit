@@ -61,6 +61,13 @@ export interface AccordionProps<T extends AccordionItem = AccordionItem> {
   labelKey?: GetItemKeys<T>
   class?: any
   ui?: Accordion['slots']
+/** reka Accordion Root 透传成员（类型补齐，运行时经 useForwardProps 转发） */
+  collapsible?: any
+  defaultValue?: any
+  disabled?: any
+  modelValue?: any
+  unmountOnHide?: any
+  type?: any
 }
 
 export interface AccordionEmits {
@@ -84,7 +91,7 @@ export type AccordionSlots<T extends AccordionItem = AccordionItem> = {
   trailing?: SlotProps<T>
   content?: SlotProps<T>
   body?: SlotProps<T>
-} & DynamicSlots<T, 'body', { index: number, open: boolean, ui: Accordion['ui'] }>
+} & DynamicSlots<T, 'body', { index: number, open: boolean, ui: any }>
 
 </script>
 

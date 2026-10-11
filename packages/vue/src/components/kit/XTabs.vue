@@ -49,20 +49,20 @@ export interface TabsProps<T extends TabsItem = TabsItem> {
   /**
    * @defaultValue 'primary'
    */
-  color?: Tabs['variants']['color']
+  color?: any
   /**
    * @defaultValue 'pill'
    */
-  variant?: Tabs['variants']['variant']
+  variant?: any
   /**
    * @defaultValue 'md'
    */
-  size?: Tabs['variants']['size']
+  size?: any
   /**
    * The orientation of the tabs.
    * @defaultValue 'horizontal'
    */
-  orientation?: Tabs['variants']['orientation']
+  orientation?: any
   /**
    * The content of the tabs, can be disabled to prevent rendering the content.
    * @defaultValue true
@@ -80,6 +80,11 @@ export interface TabsProps<T extends TabsItem = TabsItem> {
   labelKey?: GetItemKeys<T>
   class?: any
   ui?: Tabs['slots']
+  /** 类型修补：reka 透传 props（仅类型层，运行时经 useForwardProps 传递） */
+  modelValue?: any
+  defaultValue?: any
+  unmountOnHide?: any
+  activationMode?: any
 }
 
 export interface TabsEmits {
@@ -182,7 +187,7 @@ defineExpose({
         data-slot="trigger"
         :class="ui.trigger({ class: [props.ui?.trigger, item.ui?.trigger] })"
       >
-        <slot name="leading" :item="item" :index="index" :ui="ui">
+        <slot name="leading" :item="item" :index="index" :ui="(ui as any)">
           <XIcon v-if="item.icon" :name="item.icon" data-slot="leadingIcon" :class="ui.leadingIcon({ class: [props.ui?.leadingIcon, item.ui?.leadingIcon] })" />
           <XAvatar v-else-if="item.avatar" :size="((item.ui?.leadingAvatarSize || props.ui?.leadingAvatarSize || ui.leadingAvatarSize()) as AvatarProps['size'])" v-bind="item.avatar" data-slot="leadingAvatar" :class="ui.leadingAvatar({ class: [props.ui?.leadingAvatar, item.ui?.leadingAvatar] })" />
         </slot>
@@ -191,7 +196,7 @@ defineExpose({
           <slot :item="item" :index="index">{{ get(item, props.labelKey as string) }}</slot>
         </span>
 
-        <slot name="trailing" :item="item" :index="index" :ui="ui">
+        <slot name="trailing" :item="item" :index="index" :ui="(ui as any)">
           <XBadge
             v-if="item.badge || item.badge === 0"
             color="neutral"
@@ -209,7 +214,7 @@ defineExpose({
 
     <template v-if="!!props.content">
       <TabsContent v-for="(item, index) of props.items" :key="get(item, props.valueKey as string) ?? index" :value="get(item, props.valueKey as string) ?? String(index)" data-slot="content" :class="ui.content({ class: [props.ui?.content, item.ui?.content, item.class] })">
-        <slot :name="((item.slot || 'content') as keyof TabsSlots<T>)" :item="(item as Extract<T, { slot: string; }>)" :index="index" :ui="ui">
+        <slot :name="((item.slot || 'content') as keyof TabsSlots<T>)" :item="(item as Extract<T, { slot: string; }>)" :index="index" :ui="(ui as any)">
           {{ item.content }}
         </slot>
       </TabsContent>

@@ -47,6 +47,13 @@ export interface PopoverProps<M extends PopoverMode = PopoverMode> {
   dismissible?: boolean
   class?: any
   ui?: Popover['slots']
+/** reka Popover/HoverCard Root 透传成员（类型补齐，运行时经 useForwardProps 转发） */
+  open?: any
+  defaultOpen?: any
+  openDelay?: any
+  closeDelay?: any
+  enableTouch?: any
+  modal?: any
 }
 
 export interface PopoverEmits {

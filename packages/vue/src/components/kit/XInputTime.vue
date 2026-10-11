@@ -63,6 +63,8 @@ export interface InputTimeProps<R extends boolean = false> {
   modelValue?: InputTimeModelValue<R>
   class?: any
   ui?: InputTime['slots']
+  /** 类型修补：生成产物缺少原始源码的部分 prop，索引签名宽松承载（仅类型层） */
+  [key: string]: any
 }
 
 export interface InputTimeEmits<R extends boolean = false> {
@@ -113,7 +115,7 @@ const rootProps = useForwardProps(reactiveOmit(props, 'id', 'name', 'range', 'mo
 const { emitFormBlur, emitFormFocus, emitFormChange, emitFormInput, id, color: formFieldColor, size: formFieldSize, name, highlight: formFieldHighlight, disabled: formFieldDisabled, ariaAttrs } = useFormField<InputTimeProps<R>>(_props)
 
 const { orientation, size: fieldGroupSize } = useFieldGroup<InputTimeProps<R>>(_props)
-const { isLeading, isTrailing, leadingIconName, trailingIconName } = useComponentIcons(props)
+const { isLeading, isTrailing, leadingIconName, trailingIconName } = useComponentIcons(props as any)
 
 // eslint-disable-next-line vue/no-dupe-keys
 const color = computed(() => formFieldColor.value ?? props.color)
@@ -135,7 +137,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.inputTime || {})
   leading: isLeading.value || !!props.avatar || !!slots.leading,
   trailing: isTrailing.value || !!slots.trailing,
   fieldGroup: orientation.value
-}))
+} as any) as unknown as Record<string, any>)
 
 const [DefineSegmentsTemplate, ReuseSegmentsTemplate] = createReusableTemplate<{
   segments?: { part: SegmentPart, value: string }[]

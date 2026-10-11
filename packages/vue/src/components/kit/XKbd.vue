@@ -58,7 +58,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.kbd || {}) }))
 </script>
 
 <template>
-  <Primitive :as="props.as" :class="ui({ class: [props.ui?.base, props.class], color: props.color, variant: props.variant, size: props.size })">
+  <Primitive :as="props.as" :class="ui({ class: [props.ui?.base, props.class], color: props.color, variant: props.variant, size: props.size } as any)">
     <slot>
       {{ getKbdKey(props.value) }}
     </slot>

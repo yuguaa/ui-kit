@@ -30,6 +30,8 @@ export interface BadgeProps {
   size?: Badge['variants']['size']
   /** Render the badge with equal padding on all sides. */
   square?: boolean
+  /** Display an avatar on the left side. */
+  avatar?: AvatarProps
   class?: any
   ui?: Badge['slots']
 }
@@ -61,7 +63,7 @@ const props = useComponentProps('badge', _props)
 
 const appConfig = useAppConfig() as Badge['AppConfig']
 const { orientation, size: fieldGroupSize } = useFieldGroup<BadgeProps>(_props)
-const { isLeading, isTrailing, leadingIconName, trailingIconName } = useComponentIcons(props)
+const { isLeading, isTrailing, leadingIconName, trailingIconName } = useComponentIcons(props as any)
 
 // eslint-disable-next-line vue/no-dupe-keys
 const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.badge || {}) })({
@@ -70,7 +72,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.badge || {}) })(
   size: fieldGroupSize.value ?? props.size,
   square: props.square || (!slots.default && !props.label),
   fieldGroup: orientation.value
-}))
+} as any))
 </script>
 
 <template>

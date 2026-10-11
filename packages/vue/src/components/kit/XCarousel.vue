@@ -102,6 +102,23 @@ export interface CarouselProps<T extends CarouselItem = CarouselItem> {
   wheelGestures?: boolean | WheelGesturesPluginOptions
   class?: any
   ui?: Carousel['slots']
+/** embla Carousel Root 透传成员（类型补齐，运行时经 useForwardProps 转发） */
+  active?: any
+  align?: any
+  breakpoints?: any
+  containScroll?: any
+  dragFree?: any
+  dragThreshold?: any
+  duration?: any
+  inViewThreshold?: any
+  loop?: any
+  skipSnaps?: any
+  slidesToScroll?: any
+  startIndex?: any
+  watchDrag?: any
+  watchResize?: any
+  watchSlides?: any
+  watchFocus?: any
 }
 
 export type CarouselSlots<T extends CarouselItem = CarouselItem> = {
@@ -192,7 +209,7 @@ const stopAutoScrollOnInteraction = computed(() => {
 // eslint-disable-next-line vue/no-dupe-keys
 const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.carousel || {}) })({
   orientation: props.orientation
-}))
+} as any))
 
 const options = computed<EmblaOptionsType>(() => ({
   ...(props.fade ? { align: 'center', containScroll: false } : {}),

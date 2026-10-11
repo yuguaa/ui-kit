@@ -1,0 +1,86 @@
+src/components/kit/XCheckbox.vue(13,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XCheckbox.vue(34,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XCheckbox.vue(86,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XCheckbox.vue(86,3): error TS2717: Subsequent property declarations must have the same type.  Property 'size' must be of type 'any', but here has type 'string | undefined'.
+src/components/kit/XCheckbox.vue(106,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XCheckbox.vue(142,76): error TS2345: Argument of type '"defaultValue"' is not assignable to parameter of type 'keyof CheckboxProps<T> | (keyof CheckboxProps<T>)[]'.
+src/components/kit/XCheckbox.vue(154,66): error TS2339: Property 'disabled' does not exist on type 'CheckboxProps<T>'.
+src/components/kit/XContextMenuItems.vue(51,70): error TS2339: Property 'size' does not exist on type '{} & VNodeProps & AllowedComponentProps & ComponentCustomProps'.
+src/components/kit/XDropdownMenuItems.vue(53,70): error TS2339: Property 'size' does not exist on type '{} & VNodeProps & AllowedComponentProps & ComponentCustomProps'.
+src/components/kit/XInput.vue(17,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XInput.vue(19,3): error TS2300: Duplicate identifier 'id'.
+src/components/kit/XInput.vue(34,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XInput.vue(73,3): error TS2300: Duplicate identifier 'id'.
+src/components/kit/XInput.vue(73,3): error TS2717: Subsequent property declarations must have the same type.  Property 'id' must be of type 'any', but here has type 'string | undefined'.
+src/components/kit/XInput.vue(89,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XInput.vue(89,3): error TS2717: Subsequent property declarations must have the same type.  Property 'size' must be of type 'any', but here has type 'string | undefined'.
+src/components/kit/XInput.vue(102,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XInput.vue(173,39): error TS2339: Property 'avatar' does not exist on type 'InputProps<T, Mod>'.
+src/components/kit/XInput.vue(274,38): error TS2339: Property 'avatar' does not exist on type 'InputProps<T, Mod>'.
+src/components/kit/XInput.vue(277,37): error TS2339: Property 'avatar' does not exist on type 'InputProps<T, Mod>'.
+src/components/kit/XInput.vue(277,148): error TS2339: Property 'avatar' does not exist on type 'InputProps<T, Mod>'.
+src/components/kit/XInputRating.vue(93,61): error TS2345: Argument of type '"length"' is not assignable to parameter of type 'keyof InputRatingProps | (keyof InputRatingProps)[]'.
+src/components/kit/XInputRating.vue(102,66): error TS2339: Property 'disabled' does not exist on type 'InputRatingProps'.
+src/components/kit/XInputRating.vue(135,6): error TS2322: Type 'string | undefined' is not assignable to type 'DataOrientation | undefined'.
+src/components/kit/XInputRating.vue(161,51): error TS2339: Property 'length' does not exist on type 'InputRatingProps'.
+src/components/kit/XPagination.vue(147,61): error TS2345: Argument of type '"defaultPage"' is not assignable to parameter of type '"size" | "ui" | "class" | "color" | "to" | "as" | "activeColor" | "variant" | "activeVariant" | "prevIcon" | "nextIcon" | "firstIcon" | "lastIcon" | "ellipsisIcon" | "showControls" | ("size" | ... 13 more ... | "showControls")[]'.
+src/components/kit/XPinInput.vue(89,55): error TS2345: Argument of type '"disabled"' is not assignable to parameter of type 'keyof PinInputProps<T> | (keyof PinInputProps<T>)[]'.
+src/components/kit/XPinInput.vue(100,66): error TS2339: Property 'disabled' does not exist on type 'PinInputProps<T>'.
+src/components/kit/XPinInput.vue(187,25): error TS2339: Property 'placeholder' does not exist on type 'PinInputProps<T>'.
+src/components/kit/XPinInput.vue(188,26): error TS2339: Property 'modelValue' does not exist on type 'PinInputProps<T>'.
+src/components/kit/XPinInput.vue(189,28): error TS2339: Property 'defaultValue' does not exist on type 'PinInputProps<T>'.
+src/components/kit/XScrollArea.vue(132,7): error TS2322: Type '() => string' is not assignable to type 'MaybeRefOrGetter<"vertical" | "horizontal"> | undefined'.
+src/components/kit/XScrollArea.vue(286,30): error TS2339: Property 'getItemKey' does not exist on type 'Omit<ScrollAreaVirtualizeOptions, "estimateSize"> & Omit<{ estimateSize: number; overscan: number; gap: number; paddingStart: number; paddingEnd: number; scrollMargin: number; }, "estimateSize"> & { ...; }'.
+src/components/kit/XScrollArea.vue(287,35): error TS2339: Property 'getItemKey' does not exist on type 'Omit<ScrollAreaVirtualizeOptions, "estimateSize"> & Omit<{ estimateSize: number; overscan: number; gap: number; paddingStart: number; paddingEnd: number; scrollMargin: number; }, "estimateSize"> & { ...; }'.
+src/components/kit/XSlider.vue(75,76): error TS2345: Argument of type '"min"' is not assignable to parameter of type 'keyof SliderProps | (keyof SliderProps)[]'.
+src/components/kit/XSlider.vue(84,66): error TS2339: Property 'disabled' does not exist on type 'SliderProps'.
+src/components/kit/XSlider.vue(128,4): error TS2345: Argument of type '{ defaultValue: number[] | undefined; class: any; name: string | undefined; disabled: any; size?: Slider["variants"]["size"] | undefined; ui?: Slider["slots"] | undefined; color?: Slider["variants"]["color"] | undefined; ... 8 more ...; 'onUpdate:modelValue': any; }' is not assignable to parameter of type '{ readonly defaultValue?: number[] | undefined; readonly modelValue?: number[] | null | undefined; readonly disabled?: boolean | undefined; readonly orientation?: DataOrientation | undefined; ... 12 more ...; readonly onValueCommit?: ((payload: number[]) => any) | undefined; } & VNodeProps & AllowedComponentProps & ...'.
+src/components/kit/XSplitter.vue(96,67): error TS2345: Argument of type '"autoSaveId"' is not assignable to parameter of type 'keyof SplitterProps<T> | (keyof SplitterProps<T>)[]'.
+src/components/kit/XSplitter.vue(134,38): error TS2322: Type 'string' is not assignable to type 'Direction$1'.
+src/components/kit/XSplitter.vue(169,34): error TS2339: Property 'hitAreaMargins' does not exist on type 'SplitterProps<T>'.
+src/components/kit/XStepper.vue(107,61): error TS2345: Argument of type '"linear"' is not assignable to parameter of type 'keyof StepperProps<T> | (keyof StepperProps<T>)[]'.
+src/components/kit/XStepper.vue(152,63): error TS2322: Type 'string | undefined' is not assignable to type 'DataOrientation | undefined'.
+src/components/kit/XSwitch.vue(13,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XSwitch.vue(34,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XSwitch.vue(44,3): error TS2300: Duplicate identifier 'loading'.
+src/components/kit/XSwitch.vue(80,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XSwitch.vue(80,3): error TS2717: Subsequent property declarations must have the same type.  Property 'size' must be of type 'any', but here has type 'string | undefined'.
+src/components/kit/XSwitch.vue(84,3): error TS2300: Duplicate identifier 'loading'.
+src/components/kit/XSwitch.vue(84,3): error TS2717: Subsequent property declarations must have the same type.  Property 'loading' must be of type 'any', but here has type 'boolean | undefined'.
+src/components/kit/XSwitch.vue(103,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XSwitch.vue(139,76): error TS2345: Argument of type '"defaultValue"' is not assignable to parameter of type 'keyof SwitchProps<T> | (keyof SwitchProps<T>)[]'.
+src/components/kit/XSwitch.vue(151,66): error TS2339: Property 'disabled' does not exist on type 'SwitchProps<T>'.
+src/components/kit/XTable.vue(47,16): error TS2664: Invalid module name in augmentation, module '@tanstack/table-core' cannot be found.
+src/components/kit/XTable.vue(92,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XTable.vue(126,3): error TS2300: Duplicate identifier 'loading'.
+src/components/kit/XTable.vue(194,3): error TS2300: Duplicate identifier 'loading'.
+src/components/kit/XTable.vue(194,3): error TS2717: Subsequent property declarations must have the same type.  Property 'loading' must be of type 'any', but here has type 'boolean | undefined'.
+src/components/kit/XTable.vue(273,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XTable.vue(408,56): error TS2345: Argument of type '"_features"' is not assignable to parameter of type 'keyof TableProps<T> | (keyof TableProps<T>)[]'.
+src/components/kit/XTable.vue(652,47): error TS2339: Property 'class' does not exist on type 'TableMeta<T>'.
+src/components/kit/XTable.vue(655,52): error TS2339: Property 'style' does not exist on type 'TableMeta<T>'.
+src/components/kit/XTable.vue(666,60): error TS2339: Property 'colspan' does not exist on type 'ColumnMeta<T, unknown>'.
+src/components/kit/XTable.vue(667,60): error TS2339: Property 'rowspan' does not exist on type 'ColumnMeta<T, unknown>'.
+src/components/kit/XTable.vue(672,54): error TS2339: Property 'class' does not exist on type 'ColumnMeta<T, unknown>'.
+src/components/kit/XTable.vue(678,52): error TS2339: Property 'style' does not exist on type 'ColumnMeta<T, unknown>'.
+src/components/kit/XTable.vue(716,60): error TS2339: Property 'class' does not exist on type 'ColumnMeta<T, unknown>'.
+src/components/kit/XTable.vue(722,58): error TS2339: Property 'style' does not exist on type 'ColumnMeta<T, unknown>'.
+src/components/kit/XTable.vue(798,60): error TS2339: Property 'class' does not exist on type 'ColumnMeta<T, unknown>'.
+src/components/kit/XTable.vue(804,58): error TS2339: Property 'style' does not exist on type 'ColumnMeta<T, unknown>'.
+src/components/kit/XTabs.vue(139,61): error TS2345: Argument of type '"unmountOnHide"' is not assignable to parameter of type 'keyof TabsProps<T> | (keyof TabsProps<T>)[]'.
+src/components/kit/XTabs.vue(164,25): error TS2339: Property 'modelValue' does not exist on type 'TabsProps<T>'.
+src/components/kit/XTabs.vue(165,27): error TS2339: Property 'defaultValue' does not exist on type 'TabsProps<T>'.
+src/components/kit/XTabs.vue(166,6): error TS2322: Type 'string | undefined' is not assignable to type 'DataOrientation | undefined'.
+src/components/kit/XTabs.vue(167,29): error TS2339: Property 'activationMode' does not exist on type 'TabsProps<T>'.
+src/components/kit/XTextarea.vue(16,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XTextarea.vue(18,3): error TS2300: Duplicate identifier 'id'.
+src/components/kit/XTextarea.vue(35,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XTextarea.vue(73,3): error TS2300: Duplicate identifier 'id'.
+src/components/kit/XTextarea.vue(73,3): error TS2717: Subsequent property declarations must have the same type.  Property 'id' must be of type 'any', but here has type 'string | undefined'.
+src/components/kit/XTextarea.vue(88,3): error TS2300: Duplicate identifier 'size'.
+src/components/kit/XTextarea.vue(88,3): error TS2717: Subsequent property declarations must have the same type.  Property 'size' must be of type 'any', but here has type 'string | undefined'.
+src/components/kit/XTextarea.vue(104,3): error TS2300: Duplicate identifier 'class'.
+src/components/kit/XTextarea.vue(173,39): error TS2339: Property 'avatar' does not exist on type 'TextareaProps<T, Mod>'.
+src/components/kit/XTextarea.vue(310,38): error TS2339: Property 'avatar' does not exist on type 'TextareaProps<T, Mod>'.
+src/components/kit/XTextarea.vue(313,37): error TS2339: Property 'avatar' does not exist on type 'TextareaProps<T, Mod>'.
+src/components/kit/XTextarea.vue(313,148): error TS2339: Property 'avatar' does not exist on type 'TextareaProps<T, Mod>'.

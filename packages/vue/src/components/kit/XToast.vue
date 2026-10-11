@@ -70,6 +70,10 @@ export interface ToastProps {
   progress?: boolean | Pick<ProgressProps, 'color' | 'ui'>
   class?: any
   ui?: Toast['slots']
+/** reka Toast Root 透传成员（类型补齐，运行时经 useForwardProps 转发） */
+  defaultOpen?: any
+  open?: any
+  type?: any
 }
 
 export interface ToastEmits {
@@ -128,7 +132,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.toast || {}) })(
   color: props.color,
   orientation: props.orientation,
   title: !!props.title || !!slots.title
-}))
+} as any))
 
 const rootRef = useTemplateRef('rootRef')
 const height = ref(0)

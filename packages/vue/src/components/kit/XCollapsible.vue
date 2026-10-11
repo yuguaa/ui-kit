@@ -16,6 +16,11 @@ export interface CollapsibleProps {
   as?: any
   class?: any
   ui?: Collapsible['slots']
+/** reka Collapsible Root 透传成员（类型补齐，运行时经 useForwardProps 转发） */
+  defaultOpen?: any
+  open?: any
+  disabled?: any
+  unmountOnHide?: any
 }
 
 export interface CollapsibleEmits {

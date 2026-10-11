@@ -75,7 +75,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.chip || {}) })({
   position: props.position,
   inset: props.inset,
   standalone: props.standalone
-}))
+} as any))
 </script>
 
 <template>

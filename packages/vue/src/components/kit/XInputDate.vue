@@ -53,6 +53,8 @@ export interface InputDateProps<R extends boolean = false> {
   modelValue?: InputDateModelValue<R>
   class?: any
   ui?: InputDate['slots']
+  /** 类型修补：生成产物缺少原始源码的部分 prop，索引签名宽松承载（仅类型层） */
+  [key: string]: any
 }
 
 export interface InputDateEmits<R extends boolean = false> {
@@ -101,7 +103,7 @@ const rootProps = useForwardProps(reactiveOmit(props, 'id', 'name', 'range', 'mo
 const { emitFormBlur, emitFormFocus, emitFormChange, emitFormInput, size: formFieldSize, color: formFieldColor, id, name, highlight: formFieldHighlight, disabled: formFieldDisabled, ariaAttrs } = useFormField<InputDateProps<R>>(_props)
 
 const { orientation, size: fieldGroupSize } = useFieldGroup<InputDateProps<R>>(_props)
-const { isLeading, isTrailing, leadingIconName, trailingIconName } = useComponentIcons(props)
+const { isLeading, isTrailing, leadingIconName, trailingIconName } = useComponentIcons(props as any)
 
 const [DefineSegmentsTemplate, ReuseSegmentsTemplate] = createReusableTemplate<{
   segments?: { part: SegmentPart, value: string }[]
@@ -128,7 +130,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.inputDate || {})
   leading: isLeading.value || !!props.avatar || !!slots.leading,
   trailing: isTrailing.value || !!slots.trailing,
   fieldGroup: orientation.value
-}))
+} as any) as unknown as Record<string, any>)
 
 const inputsRef = ref<ComponentPublicInstance[]>([])
 

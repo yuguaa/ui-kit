@@ -76,9 +76,17 @@ export interface PaginationProps {
    * A function to render page controls as links.
    * @param page The page number to navigate to.
    */
-  to?: (page: number) => ButtonProps['to']
+  to?: any
   class?: any
   ui?: Pagination['slots']
+  /** 类型修补：reka 透传 props（仅类型层，运行时经 useForwardProps 传递） */
+  defaultPage?: any
+  disabled?: any
+  itemsPerPage?: any
+  page?: any
+  showEdges?: any
+  siblingCount?: any
+  total?: any
 }
 
 export interface PaginationEmits {

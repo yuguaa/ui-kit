@@ -4,7 +4,7 @@
  * 渲染浮层、过滤输入框、分组与菜单项，子菜单递归复用自身。
  */
 import type { HTMLAttributes } from 'vue'
-import { computed, reactive, ref, useSlots } from 'vue'
+import { computed, reactive, ref, useSlots, type Component } from 'vue'
 import { createReusableTemplate } from '@vueuse/core'
 import {
   DropdownMenuArrow,
@@ -23,7 +23,31 @@ import XAvatar from '@/components/kit/XAvatar.vue'
 import XIcon from '@/components/kit/XIcon.vue'
 import XKbd from '@/components/kit/XKbd.vue'
 import { cn } from '@/lib/utils'
-import type { DropdownMenuItemData, DropdownMenuUi, MenuColor, MenuIcon, MenuSize } from './XDropdownMenu.vue'
+/** 菜单项数据模型（本地类型定义，宽松承载任意 item 字段） */
+interface MenuItemData {
+  type?: string
+  label?: string
+  description?: string
+  icon?: string | Component
+  avatar?: Record<string, any>
+  color?: MenuColor
+  checked?: boolean
+  loading?: boolean
+  target?: string
+  kbds?: any[]
+  shortcut?: string
+  children?: MenuItemData[]
+  onSelect?: (item: MenuItemData) => void
+  onUpdateChecked?: (checked: boolean) => void
+  [key: string]: any
+}
+
+type MenuSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
+type MenuColor = 'primary' | 'secondary' | 'neutral' | 'success' | 'info' | 'warning' | 'error'
+type MenuIcon = string | Component
+type DropdownMenuUi = Record<string, any>
+
+interface DropdownMenuItemData extends MenuItemData {}
 
 type KbdSize = NonNullable<InstanceType<typeof XKbd>['$props']['size']>
 type AvatarSize = NonNullable<InstanceType<typeof XAvatar>['$props']['size']>

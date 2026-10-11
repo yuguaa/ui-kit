@@ -2,7 +2,8 @@
 <script lang="ts">
 import type { ListboxRootProps, ListboxRootEmits } from 'reka-ui'
 import type { VNode } from 'vue'
-import type { FuseResult } from 'fuse.js'
+/** fuse.js 未随包安装，本地宽松类型替代（仅类型层） */
+type FuseResult<T> = { matches?: readonly any[] }
 import type { AppConfig } from '@/lib/nuxt/types/app-config'
 import type { UseFuseOptions } from '@vueuse/integrations/useFuse'
 import theme from '@/lib/nuxt/ui/command-palette'
@@ -426,7 +427,7 @@ const [DefineItemTemplate, ReuseItemTemplate] = createReusableTemplate<{ item: C
 
 // eslint-disable-next-line vue/no-dupe-keys
 const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.commandPalette || {}) })({
-  size: props.size,
+  size: props.size as any,
   virtualize: !!props.virtualize
 }))
 

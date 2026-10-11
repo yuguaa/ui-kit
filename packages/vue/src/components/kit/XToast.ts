@@ -9,8 +9,6 @@ import { toast as sonnerToast } from 'vue-sonner'
 import XToastItem from './XToast.vue'
 import type { ToastProps } from './XToast.vue'
 
-export type { ToastUi } from './XToast.vue'
-
 /** 语义色 */
 export type ToastColor = 'primary' | 'success' | 'warning' | 'error'
 

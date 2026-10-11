@@ -311,7 +311,7 @@ describe("内容 Content", () => {
   });
 
   it("XProgress 确定进度与不确定进度", () => {
-    const line = mount(XProgress, { props: { status: true } });
+    const line = mount(XProgress, { props: { modelValue: 50, status: true } });
     expect(line.find("[data-slot='status']").exists()).toBe(true);
     const indeterminate = mount(XProgress);
     expect(indeterminate.find("[data-slot='indicator']").exists()).toBe(true);

@@ -296,10 +296,9 @@ describe("XBadge", () => {
     expect(wrapper.find("svg").exists()).toBe(false);
   });
 
-  it("avatar 作为属性透传到根元素", () => {
+  it("avatar 作为属性渲染头像（Nuxt 原版行为）", () => {
     const wrapper = mount(XBadge, { props: { label: 1, avatar: { text: "U" } } });
-    expect(wrapper.attributes("avatar")).toBeDefined();
-    expect(wrapper.find("[data-slot='leadingAvatar']").exists()).toBe(false);
+    expect(wrapper.find("[data-slot='leadingAvatar']").exists()).toBe(true);
   });
 
   it("空徽标自动等边距", () => {

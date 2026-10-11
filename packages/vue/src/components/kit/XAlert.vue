@@ -101,7 +101,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.alert || {}) })(
   variant: props.variant,
   orientation: props.orientation,
   title: !!props.title || !!slots.title
-}))
+} as any))
 </script>
 
 <template>

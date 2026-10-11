@@ -53,7 +53,7 @@ const appConfig = useAppConfig() as AvatarGroup['AppConfig']
 const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.avatarGroup || {}) })({
   size: props.size,
   color: props.color
-}))
+} as any))
 
 // eslint-disable-next-line vue/no-dupe-keys
 const max = computed(() => typeof props.max === 'string' ? Number.parseInt(props.max, 10) : props.max)

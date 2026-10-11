@@ -15,6 +15,22 @@ const props = defineProps({
   type: { type: String, default: undefined },
 })
 
+/* 插槽 props 显式声明（宽松可选），供消费方 v-slot 解构与类型断言 */
+defineSlots<{
+  default(props: {
+    href?: string | undefined
+    navigate?: (event: MouseEvent) => void
+    route?: Record<string, unknown>
+    isActive?: boolean
+    isExactActive?: boolean
+    isExternal?: boolean
+    target?: string | undefined
+    rel?: string | null
+    prefetch?: () => void
+    shouldPrefetch?: boolean
+  }): any
+}>()
+
 const resolvedHref = computed<string | undefined>(() => {
   const path = props.to ?? props.href
   if (path == null) return undefined

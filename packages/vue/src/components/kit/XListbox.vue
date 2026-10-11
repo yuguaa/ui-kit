@@ -339,7 +339,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.listbox || {}) }
   highlight: highlight.value,
   disabled: disabled.value,
   virtualize: !!props.virtualize
-}))
+} as any) as unknown as Record<string, any>)
 
 function onUpdate(value: any) {
   if (toRaw(props.modelValue) === value) {

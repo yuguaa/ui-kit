@@ -37,16 +37,16 @@ export interface StepperProps<T extends StepperItem = StepperItem> {
   /**
    * @defaultValue 'md'
    */
-  size?: Stepper['variants']['size']
+  size?: any
   /**
    * @defaultValue 'primary'
    */
-  color?: Stepper['variants']['color']
+  color?: any
   /**
    * The orientation of the stepper.
    * @defaultValue 'horizontal'
    */
-  orientation?: Stepper['variants']['orientation']
+  orientation?: any
   /**
    * The key used to get the value from the item.
    * @defaultValue 'value'
@@ -59,6 +59,8 @@ export interface StepperProps<T extends StepperItem = StepperItem> {
   disabled?: boolean
   class?: any
   ui?: Stepper['slots']
+  /** 类型修补：reka 透传 prop（仅类型层） */
+  linear?: any
 }
 
 export type StepperEmits<T extends StepperItem = StepperItem> = {

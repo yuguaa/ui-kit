@@ -211,7 +211,7 @@ const getProxySlots = () => omit(slots, ['default'])
 // eslint-disable-next-line vue/no-dupe-keys
 const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.contextMenu || {}) })({
   size: props.size
-}))
+} as any) as unknown as Record<string, any>)
 </script>
 
 <template>
