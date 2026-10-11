@@ -5,6 +5,7 @@
   "packageManager": "pnpm@11.22.0",
   "scripts": {
     "build": "pnpm --dir apps/theme-designer build",
+    "docs:build": "pnpm --dir apps/docs run docs:build",
     "build:registry": "tsx scripts/build-registry.ts",
     "typecheck": "pnpm -r --if-present typecheck",
     "test": "pnpm -r --if-present test",
