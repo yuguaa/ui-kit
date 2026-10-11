@@ -67,15 +67,16 @@ async function copyCode() {
 
 <style scoped>
 .demo-block {
-  border: 1px solid var(--vp-c-divider);
-  border-radius: 12px;
+  /* 对齐 Nuxt 官方文档 demo 容器：白底、muted 描边、上部圆角 */
+  border: 1px solid var(--border-muted, var(--vp-c-divider));
+  border-radius: 8px 8px 6px 6px;
   overflow: hidden;
   margin: 16px 0;
 }
 
 .demo-block__body {
-  padding: 32px 24px;
-  background: var(--vp-c-bg-soft);
+  padding: 24px;
+  background: var(--vp-c-bg);
   min-height: 100px;
   display: flex;
   flex-wrap: wrap;
@@ -85,10 +86,10 @@ async function copyCode() {
 
 .demo-block__body--checker {
   background-image:
-    linear-gradient(45deg, var(--vp-c-bg) 25%, transparent 25%),
-    linear-gradient(-45deg, var(--vp-c-bg) 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, var(--vp-c-bg) 75%),
-    linear-gradient(-45deg, transparent 75%, var(--vp-c-bg) 75%);
+    linear-gradient(45deg, var(--vp-c-bg-soft) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--vp-c-bg-soft) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--vp-c-bg-soft) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--vp-c-bg-soft) 75%);
   background-size: 16px 16px;
   background-position: 0 0, 0 8px, 8px -8px, -8px 0;
 }
@@ -99,8 +100,8 @@ async function copyCode() {
   justify-content: space-between;
   gap: 12px;
   padding: 8px 16px;
-  border-top: 1px solid var(--vp-c-divider);
-  background: var(--vp-c-bg);
+  border-top: 1px solid var(--border-muted, var(--vp-c-divider));
+  background: var(--vp-c-bg-soft);
 }
 
 .demo-block__meta {
