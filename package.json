@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "packageManager": "pnpm@11.22.0",
   "scripts": {
+    "build": "pnpm --dir apps/theme-designer build",
     "build:registry": "tsx scripts/build-registry.ts",
     "typecheck": "pnpm -r --if-present typecheck",
     "test": "pnpm -r --if-present test",
