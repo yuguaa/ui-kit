@@ -16,6 +16,11 @@ export interface CheckboxProps<T = boolean> {
   title?: any;
   role?: any;
   value?: any;
+  defaultValue?: any;
+  disabled?: any;
+  modelValue?: any;
+  trueValue?: any;
+  falseValue?: any;
   placeholder?: any;
   required?: any;
   readonly?: any;
@@ -172,7 +177,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.checkbox || {}) 
   highlight: highlight.value,
   required: props.required,
   disabled: disabled.value
-}))
+} as any))
 
 function onUpdate(value: any) {
   // @ts-expect-error - 'target' does not exist in type 'EventInit'

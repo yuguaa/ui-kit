@@ -1925,9 +1925,69 @@ function applyFinalTypePatches() {
     writeFileSync(path, content);
   }
 
-  /* XCheckbox：补 defaultValue 成员 */
-  patch("XCheckbox.vue", [["  modelValue?: CheckboxProps<T>['modelValue']", "  modelValue?: CheckboxProps<T>['modelValue']\n  defaultValue?: any"]]);
+  /* XCheckbox：补 defaultValue / disabled / modelValue 成员 */
+  patch("XCheckbox.vue", [["  value?: any;\n", "  value?: any;\n  defaultValue?: any;\n  disabled?: any;\n  modelValue?: any;\n"], ["  disabled: disabled.value\n})", "  disabled: disabled.value\n} as any)"]]);
 
   /* XButton：UseComponentIconsProps 与 LinkProps 成员补齐 */
-  patch("XButton.vue", [["  loadingAuto?: boolean", "  loadingAuto?: boolean\n  loading?: any\n  type?: any\n  icon?: any\n  leading?: any\n  leadingIcon?: any\n  trailing?: any\n  trailingIcon?: any\n  loadingIcon?: any\n  active?: any\n  activeClass?: any\n  inactiveClass?: any\n  to?: any\n  disabled?: any"]]);
+  patch("XButton.vue", [["  loadingAuto?: boolean", "  loadingAuto?: boolean\n  loading?: any\n  type?: any\n  icon?: any\n  leading?: any\n  leadingIcon?: any\n  trailing?: any\n  trailingIcon?: any\n  loadingIcon?: any\n  avatar?: any\n  active?: any\n  activeClass?: any\n  inactiveClass?: any\n  to?: any\n  disabled?: any"]]);
+
+  /* tv 调用参数放宽为 any，消除变体字面量窄化报错（运行时行为不变） */
+  for (const file of ["XButton.vue", "XCheckbox.vue", "XInput.vue", "XTextarea.vue", "XSwitch.vue"]) {
+    const path = join(OUT_KIT, file);
+    let content = readFileSync(path, "utf8");
+    content = content.replace(/  fieldGroup: orientation\.value\n\}\)\)/g, "  fieldGroup: orientation.value\n} as any))");
+    content = content.replace(/  fieldGroup: orientation\.value\n  \}\)\)/g, "  fieldGroup: orientation.value\n  } as any))");
+    writeFileSync(path, content);
+  }
+
+  /* XSwitch：删除重复 loading 成员，补 defaultValue 与 disabled */
+  patch("XSwitch.vue", [["  loading?: boolean\n", ""], ["  modelValue?: SwitchProps<T>['modelValue']", "  modelValue?: SwitchProps<T>['modelValue']\n  defaultValue?: any\n  disabled?: any"]]);
+
+  /* XInput / XTextarea：补 avatar 成员 */
+  for (const file of ["XInput.vue", "XTextarea.vue"]) {
+    const path = join(OUT_KIT, file);
+    let content = readFileSync(path, "utf8");
+    content = content.replace(/  maxlength\?: any;\n/, "  maxlength?: any;\n  avatar?: any;\n");
+    writeFileSync(path, content);
+  }
+
+  /* XForm：api 赋值与 errorPattern 参数的宽松 cast */
+  /* XForm：attach 事件与 validate 签名宽松 cast */
+  patch("XForm.vue", [
+    ["parentBus.emit({ type: 'attach', validate: _validate, clearDirty", "parentBus.emit({ type: 'attach', validate: _validate as any, clearDirty"],
+    ["name: props.name, api })", "name: props.name, api: api as any })"],
+    ["validate: event.validate, clearDirty", "validate: event.validate as any, clearDirty"],
+    ["form.api.setErrors(formErrors, getNestedTarget(name, form.name || ''))", "form.api.setErrors(formErrors, getNestedTarget(name, form.name || '') as string | RegExp | undefined)"],
+    ["form.api.clear(name instanceof RegExp ? undefined : getNestedTarget(name, form.name || ''))", "form.api.clear((name instanceof RegExp ? undefined : getNestedTarget(name, form.name || '')) as string | RegExp | undefined)"],
+  ]);
+
+  /* XCheckbox：补 trueValue / falseValue 成员 */
+  patch("XCheckbox.vue", [["  modelValue?: any;\n", "  modelValue?: any;\n  trueValue?: any;\n  falseValue?: any;\n"]]);
+
+  /* XSwitch：补 defaultValue / disabled / modelValue 成员 */
+  patch("XSwitch.vue", [["  value?: any;\n", "  value?: any;\n  defaultValue?: any;\n  disabled?: any;\n  modelValue?: any;\n"]]);
+
+  /* XSwitch：补 trueValue / falseValue 成员 */
+  patch("XSwitch.vue", [
+    ["  modelValue?: any;\n", "  modelValue?: any;\n  trueValue?: any;\n  falseValue?: any;\n"],
+    ["  disabled: disabled.value || props.loading\n})", "  disabled: disabled.value || props.loading\n} as any)"],
+  ]);
+
+  /* XTable：补 autoResetAll 与 debug 系列成员 */
+  patch("XTable.vue", [["  _features?: any;", "  _features?: any;\n  autoResetAll?: any;\n  debugAll?: any;\n  debugCells?: any;\n  debugColumns?: any;\n  debugHeaders?: any;\n  debugRows?: any;\n  debugTable?: any;\n  defaultColumn?: any;\n  getRowId?: any;\n  getSubRows?: any;\n  initialState?: any;\n  mergeOptions?: any;\n  renderFallbackValue?: any;"]]);
+
+  /* XTextarea：tv 参数与 slot props ui 放宽 */
+  patch("XTextarea.vue", [
+    ["  trailing: isTrailing.value || !!slots.trailing\n})", "  trailing: isTrailing.value || !!slots.trailing\n} as any)"],
+    ["  leading?(props: { ui: Textarea['ui'] }): VNode[]", "  leading?(props: { ui: any }): VNode[]"],
+    ["  default?(props: { ui: Textarea['ui'] }): VNode[]", "  default?(props: { ui: any }): VNode[]"],
+    ["  trailing?(props: { ui: Textarea['ui'] }): VNode[]", "  trailing?(props: { ui: any }): VNode[]"],
+  ]);
+
+  /* XInput：slot props 的 ui 类型放宽为 any */
+  patch("XInput.vue", [
+    ["  leading?(props: { ui: Input['ui'] }): VNode[]", "  leading?(props: { ui: any }): VNode[]"],
+    ["  default?(props: { ui: Input['ui'] }): VNode[]", "  default?(props: { ui: any }): VNode[]"],
+    ["  trailing?(props: { ui: Input['ui'] }): VNode[]", "  trailing?(props: { ui: any }): VNode[]"],
+  ]);
 }

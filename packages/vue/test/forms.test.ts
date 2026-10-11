@@ -987,15 +987,14 @@ describe("XInput Nuxt 语义", () => {
     expect(wrapper.find("[data-slot='trailing']").classes()).toContain("custom-trailing");
   });
 
-  it("avatar 属性透传到输入框", () => {
+  it("avatar 作为 prop 渲染头像（Nuxt 版行为）", () => {
     const wrapper = mount(XInput, {
       props: {
         avatar: { text: "阿" },
         ui: { leadingAvatar: "custom-avatar", leadingAvatarSize: "lg" },
       },
     });
-    expect(wrapper.find("[data-slot='leadingAvatar']").exists()).toBe(false);
-    expect(wrapper.find("input").attributes("avatar")).toBeDefined();
+    expect(wrapper.find("[data-slot='leadingAvatar']").exists()).toBe(true);
   });
 
   it("highlight 与 variant / size 变体", () => {

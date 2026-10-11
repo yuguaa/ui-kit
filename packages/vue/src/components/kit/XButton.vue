@@ -40,6 +40,7 @@ export interface ButtonProps {
   trailing?: any
   trailingIcon?: any
   loadingIcon?: any
+  avatar?: any
   active?: any
   activeClass?: any
   inactiveClass?: any
@@ -146,7 +147,7 @@ const ui = computed(() => tv({
   leading: isLeading.value,
   trailing: isTrailing.value,
   fieldGroup: orientation.value
-}))
+} as any))
 </script>
 
 <template>

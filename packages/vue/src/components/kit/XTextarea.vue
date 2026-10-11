@@ -26,6 +26,7 @@ export interface TextareaProps<T extends TextareaValue = TextareaValue, Mod exte
   form?: any;
   minlength?: any;
   maxlength?: any;
+  avatar?: any;
   pattern?: any;
   step?: any;
   min?: any;
@@ -109,9 +110,9 @@ export interface TextareaEmits<T extends TextareaValue = TextareaValue, Mod exte
 }
 
 export interface TextareaSlots {
-  leading?(props: { ui: Textarea['ui'] }): VNode[]
-  default?(props: { ui: Textarea['ui'] }): VNode[]
-  trailing?(props: { ui: Textarea['ui'] }): VNode[]
+  leading?(props: { ui: any }): VNode[]
+  default?(props: { ui: any }): VNode[]
+  trailing?(props: { ui: any }): VNode[]
 }
 </script>
 
@@ -169,7 +170,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.textarea || {}) 
   autoresize: props.autoresize,
   leading: isLeading.value || !!props.avatar || !!slots.leading,
   trailing: isTrailing.value || !!slots.trailing
-}))
+} as any))
 
 const textareaRef = useTemplateRef('textareaRef')
 

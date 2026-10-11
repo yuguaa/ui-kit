@@ -134,7 +134,7 @@ const nestedForms = ref<Map<string | number, { validate: typeof _validate, clear
 onMounted(async () => {
   if (parentBus) {
     await nextTick()
-    parentBus.emit({ type: 'attach', validate: _validate, clearDirty, formId, name: props.name, api })
+    parentBus.emit({ type: 'attach', validate: _validate as any, clearDirty, formId, name: props.name, api: api as any })
   }
 })
 
@@ -148,7 +148,7 @@ onUnmounted(() => {
 onMounted(async () => {
   bus.on(async (event) => {
     if (event.type === 'attach') {
-      nestedForms.value.set(event.formId, { validate: event.validate, clearDirty: event.clearDirty, name: event.name, api: event.api as any })
+      nestedForms.value.set(event.formId, { validate: event.validate as any, clearDirty: event.clearDirty, name: event.name, api: event.api as any })
     } else if (event.type === 'detach') {
       nestedForms.value.delete(event.formId)
     } else if (props.validateOn?.includes(event.type) && !loading.value) {
@@ -401,7 +401,7 @@ const api = {
     for (const form of nestedForms.value.values()) {
       if (matchesTarget(name, form.name)) {
         const formErrors = filterFormErrors(errs, form.name)
-        form.api.setErrors(formErrors, getNestedTarget(name, form.name || ''))
+        form.api.setErrors(formErrors, getNestedTarget(name, form.name || '') as string | RegExp | undefined)
         nestedErrors.push(...getFormErrors(form as any))
       }
     }
@@ -448,7 +448,7 @@ const api = {
     for (const form of nestedForms.value.values()) {
       // A RegExp is written against the parent's prefixed names, so it cannot be
       // re-tested inside the nested form and clears it whole.
-      if (matchesTarget(name, form.name)) form.api.clear(name instanceof RegExp ? undefined : getNestedTarget(name, form.name || ''))
+      if (matchesTarget(name, form.name)) form.api.clear((name instanceof RegExp ? undefined : getNestedTarget(name, form.name || '')) as string | RegExp | undefined)
       nestedErrors.push(...getFormErrors(form as any))
     }
 

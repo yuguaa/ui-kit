@@ -16,6 +16,11 @@ export interface SwitchProps<T = boolean> {
   title?: any;
   role?: any;
   value?: any;
+  defaultValue?: any;
+  disabled?: any;
+  modelValue?: any;
+  trueValue?: any;
+  falseValue?: any;
   placeholder?: any;
   required?: any;
   readonly?: any;
@@ -80,7 +85,6 @@ export interface SwitchProps<T = boolean> {
   /** Highlight the ring color like a focus state. */
   highlight?: boolean
   /** When `true`, the loading icon will be displayed. */
-  loading?: boolean
   /**
    * The icon when the `loading` prop is `true`.
    * @defaultValue appConfig.ui.icons.loading
@@ -163,7 +167,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.switch || {}) })
   required: props.required,
   loading: props.loading,
   disabled: disabled.value || props.loading
-}))
+} as any))
 
 function onUpdate(value: any) {
   // @ts-expect-error - 'target' does not exist in type 'EventInit'

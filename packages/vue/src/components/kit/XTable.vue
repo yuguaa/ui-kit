@@ -60,6 +60,19 @@ export interface TableOptions<T extends TableData = TableData> {
 export interface TableProps<T extends TableData = TableData> {
   /** 类型修补：tanstack 内部透传键（仅类型层） */
   _features?: any;
+  autoResetAll?: any;
+  debugAll?: any;
+  debugCells?: any;
+  debugColumns?: any;
+  debugHeaders?: any;
+  debugRows?: any;
+  debugTable?: any;
+  defaultColumn?: any;
+  getRowId?: any;
+  getSubRows?: any;
+  initialState?: any;
+  mergeOptions?: any;
+  renderFallbackValue?: any;
   class?: any;
   style?: any;
   id?: any;

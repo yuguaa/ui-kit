@@ -1,3 +1,4 @@
+import { describe, expect, it } from "vitest";
 import { colorPalettes, colorSeeds, getShade, neutralPalette, palettesToCssVars, shadeSteps, tailwindPalettes } from "../src/colors";
 
 describe("色板定义", () => {

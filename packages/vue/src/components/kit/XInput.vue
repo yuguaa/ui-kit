@@ -25,6 +25,7 @@ export interface InputProps<T extends InputValue = InputValue, Mod extends Model
   form?: any;
   minlength?: any;
   maxlength?: any;
+  avatar?: any;
   pattern?: any;
   step?: any;
   min?: any;
@@ -107,9 +108,9 @@ export interface InputEmits<T extends InputValue = InputValue, Mod extends Model
 }
 
 export interface InputSlots {
-  leading?(props: { ui: Input['ui'] }): VNode[]
-  default?(props: { ui: Input['ui'] }): VNode[]
-  trailing?(props: { ui: Input['ui'] }): VNode[]
+  leading?(props: { ui: any }): VNode[]
+  default?(props: { ui: any }): VNode[]
+  trailing?(props: { ui: any }): VNode[]
 }
 </script>
 
@@ -170,7 +171,7 @@ const ui = computed(() => tv({ extend: theme, ...(appConfig.ui?.input || {}) })(
   leading: isLeading.value || !!props.avatar || !!slots.leading,
   trailing: isTrailing.value || !!slots.trailing,
   fieldGroup: orientation.value
-}))
+} as any))
 
 const inputRef = useTemplateRef('inputRef')
 
