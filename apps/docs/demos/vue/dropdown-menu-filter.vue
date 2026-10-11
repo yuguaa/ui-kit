@@ -1,5 +1,7 @@
 <script setup lang="ts">
+import XButton from '@/components/kit/XButton.vue'
 import XDropdownMenu from '@/components/kit/XDropdownMenu.vue'
+import XIcon from '@/components/kit/XIcon.vue'
 
 const items = [
   { name: '新建文件', desc: '创建空白文件' },
@@ -17,7 +19,16 @@ const items = [
       description-key="desc"
       :filter-fields="['name', 'desc']"
       :items="items"
-    />
+    >
+      <template #default="{ open }">
+        <XButton variant="outline" color="neutral">
+          过滤菜单
+          <template #trailing>
+            <XIcon :name="open ? 'chevron-up' : 'chevron-down'" class="size-4" />
+          </template>
+        </XButton>
+      </template>
+    </XDropdownMenu>
     <XDropdownMenu
       arrow
       external-icon
@@ -28,6 +39,15 @@ const items = [
         { type: 'separator' },
         { key: 'custom', label: '自定义项', icon: 'palette' },
       ]"
-    />
+    >
+      <template #default="{ open }">
+        <XButton variant="outline" color="neutral">
+          外链与箭头
+          <template #trailing>
+            <XIcon :name="open ? 'chevron-up' : 'chevron-down'" class="size-4" />
+          </template>
+        </XButton>
+      </template>
+    </XDropdownMenu>
   </div>
 </template>

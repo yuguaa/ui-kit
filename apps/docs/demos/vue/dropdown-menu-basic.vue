@@ -1,5 +1,7 @@
 <script setup lang="ts">
+import XButton from '@/components/kit/XButton.vue'
 import XDropdownMenu from '@/components/kit/XDropdownMenu.vue'
+import XIcon from '@/components/kit/XIcon.vue'
 </script>
 
 <template>
@@ -12,13 +14,31 @@ import XDropdownMenu from '@/components/kit/XDropdownMenu.vue'
         { key: 'sep', type: 'separator' },
         { key: 'delete', label: '删除', icon: 'trash', color: 'error' },
       ]"
-    />
+    >
+      <template #default="{ open }">
+        <XButton variant="outline" color="neutral">
+          打开菜单
+          <template #trailing>
+            <XIcon :name="open ? 'chevron-up' : 'chevron-down'" class="size-4" />
+          </template>
+        </XButton>
+      </template>
+    </XDropdownMenu>
     <XDropdownMenu
       size="sm"
       :items="[
         { key: 'undo', label: '撤销', shortcut: '⌘ Z' },
         { key: 'redo', label: '重做', shortcut: '⌘ ⇧ Z' },
       ]"
-    />
+    >
+      <template #default="{ open }">
+        <XButton size="sm" variant="outline" color="neutral">
+          小尺寸菜单
+          <template #trailing>
+            <XIcon :name="open ? 'chevron-up' : 'chevron-down'" class="size-4" />
+          </template>
+        </XButton>
+      </template>
+    </XDropdownMenu>
   </div>
 </template>
