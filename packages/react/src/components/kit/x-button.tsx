@@ -8,6 +8,7 @@
 import * as React from "react"
 import { LoaderCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { XIcon, type XIconName } from "@/components/kit/x-icon"
 import { cn } from "@/lib/utils"
 
 export type XButtonVariant = "solid" | "outline" | "soft" | "ghost" | "subtle" | "link"
@@ -144,6 +145,18 @@ export interface XButtonProps
   leading?: React.ReactNode
   /** 后置图标 */
   trailing?: React.ReactNode
+  /** 图标名（渲染为前置图标，与 Nuxt 版 icon prop 对齐） */
+  icon?: XIconName
+  /** 加载图标 */
+  loadingIcon?: XIconName
+  /** 左侧头像配置 */
+  avatar?: React.ReactNode
+  /** 链接地址：存在时渲染为 <a>（与 Nuxt 版 to prop 对齐） */
+  to?: string
+  /** 非激活态附加类名 */
+  inactiveClass?: string
+  /** 激活态附加类名 */
+  activeClass?: string
   children?: React.ReactNode
 }
 
@@ -172,6 +185,12 @@ export const XButton = React.forwardRef<HTMLButtonElement, XButtonProps>(functio
     ui,
     leading,
     trailing,
+    icon,
+    loadingIcon,
+    avatar,
+    to,
+    inactiveClass,
+    activeClass,
     children,
     className,
     disabled,
@@ -207,6 +226,7 @@ export const XButton = React.forwardRef<HTMLButtonElement, XButtonProps>(functio
     square ? buttonSquareSizeOverrides[size] : buttonSizeOverrides[size],
     block && "w-full",
     isLoading && "opacity-60",
+    active ? activeClass : inactiveClass,
     ui?.base,
     className,
   )
@@ -214,7 +234,11 @@ export const XButton = React.forwardRef<HTMLButtonElement, XButtonProps>(functio
   const buttonContent = (
     <>
       {isLoading ? (
-        <LoaderCircle className={cn("animate-spin", ui?.leadingIcon)} aria-hidden="true" />
+        loadingIcon ? <XIcon name={loadingIcon} className={cn("animate-spin", ui?.leadingIcon)} aria-hidden="true" /> : <LoaderCircle className={cn("animate-spin", ui?.leadingIcon)} aria-hidden="true" />
+      ) : avatar != null ? (
+        avatar
+      ) : icon != null ? (
+        <XIcon name={icon} className={ui?.leadingIcon} aria-hidden="true" />
       ) : (
         leading
       )}
@@ -225,18 +249,20 @@ export const XButton = React.forwardRef<HTMLButtonElement, XButtonProps>(functio
     </>
   )
 
-  if (renderAsCustom) {
+  if (renderAsCustom || to != null) {
     /* 链接等自定义元素：保持原始语义，不注入 role=button */
+    const linkProps = to != null ? { href: to } : {}
     const customProps = (
-      render as React.ReactElement<{
+      (render ?? <a />) as React.ReactElement<{
         className?: string
         onClick?: (event: React.MouseEvent) => void
       }>
     ).props ?? {}
     return React.cloneElement(
-      render as React.ReactElement<Record<string, unknown>>,
+      (render ?? <a />) as React.ReactElement<Record<string, unknown>>,
       {
         ...rest,
+        ...linkProps,
         ...customProps,
         className: cn(buttonClassName, customProps.className),
         "data-slot": "button",
