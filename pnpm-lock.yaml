@@ -572,6 +572,9 @@ importers:
       '@vueuse/integrations':
         specifier: ^15.0.0
         version: 15.0.0(focus-trap@7.8.0)(fuse.js@7.5.0)(vue@3.5.43(typescript@5.9.3))
+      '@vueuse/shared':
+        specifier: ^15.0.0
+        version: 15.0.0(vue@3.5.43(typescript@5.9.3))
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1

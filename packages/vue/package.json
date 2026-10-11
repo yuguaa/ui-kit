@@ -15,6 +15,7 @@
     "@tanstack/vue-virtual": "^3.13.39",
     "@vueuse/core": "^15.0.0",
     "@vueuse/integrations": "^15.0.0",
+    "@vueuse/shared": "^15.0.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "colortranslator": "^6.1.1",
