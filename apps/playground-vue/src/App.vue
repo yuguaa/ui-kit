@@ -722,6 +722,14 @@ const splitterItems = [
         <div class="flex flex-col gap-3 rounded-lg border border-default bg-default p-5">
           <h3 class="text-sm font-medium text-muted-foreground">XCollapsible</h3>
           <XCollapsible>
+            <template #default="{ open }">
+              <XButton variant="outline" color="neutral">
+                {{ open ? "收起详情" : "展开详情" }}
+                <template #trailing>
+                  <XIcon :name="open ? 'chevron-up' : 'chevron-down'" class="size-4" />
+                </template>
+              </XButton>
+            </template>
             <template #content>点击「展开详情」展开的内容区域，再次点击收起。</template>
           </XCollapsible>
         </div>
@@ -751,13 +759,16 @@ const splitterItems = [
           <div class="h-64">
             <XSplitter :items="splitterItems" class="h-full">
               <template #panel-0="{ item }">
-                <div class="flex h-full items-center justify-center text-sm">左侧面板（{{ item.id }}）</div>
+                <div class="flex h-full items-center justify-center bg-elevated/60 text-sm">左侧面板（{{ item.id }}）</div>
               </template>
               <template #panel-1="{ item }">
                 <div class="flex h-full items-center justify-center text-sm">中间面板（{{ item.id }}）</div>
               </template>
+              <template #resize-handle>
+                <span class="m-auto inline-block h-8 w-px bg-accented transition-colors group-hover:bg-primary/50" />
+              </template>
               <template #panel-2="{ item }">
-                <div class="flex h-full items-center justify-center text-sm">右侧面板（{{ item.id }}）</div>
+                <div class="flex h-full items-center justify-center bg-elevated/60 text-sm">右侧面板（{{ item.id }}）</div>
               </template>
             </XSplitter>
           </div>
