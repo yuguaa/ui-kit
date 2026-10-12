@@ -2,7 +2,16 @@
 
 设计 token 体系完整复刻 Nuxt UI（`src/runtime/index.css` + `templates.ts` 的映射），随组件注入消费者项目 CSS，保证双框架渲染像素级相同。
 
+<script setup>
+import TokenPalette from '@demos/react/token-palette'
+import tokenPaletteRaw from '@demos/react/token-palette.tsx.code.txt?raw'
+</script>
+
 ## 色彩 Colors
+
+<DemoBlock title="语义色色板" description="六种语义色 50~950 十一级，无后缀取 500 级；/10 soft、/15 hover、/25 subtle 描边、/75 solid hover" :code="tokenPaletteRaw">
+  <ReactDemo :component="TokenPalette" />
+</DemoBlock>
 
 ### 语义色
 

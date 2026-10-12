@@ -91,7 +91,7 @@ export interface ModalSlots {
 </script>
 
 <script setup lang="ts">
-import { computed, toRef } from 'vue'
+import { computed, onMounted, onScopeDispose, toRef } from 'vue'
 import { DialogRoot, DialogTrigger, DialogPortal, DialogOverlay, DialogContent, DialogTitle, DialogDescription, DialogClose, VisuallyHidden } from 'reka-ui'
 import { useForwardProps } from '../../lib/nuxt/composables/useForwardProps'
 import { reactivePick, createReusableTemplate } from '@vueuse/core'
@@ -121,6 +121,36 @@ const { t } = useLocale()
 const appConfig = useAppConfig() as Modal['AppConfig']
 
 const rootProps = useForwardProps(reactivePick(props, 'open', 'defaultOpen', 'modal', 'unmountOnHide'), emits)
+/* Esc 与遮罩点击的显式接管：reka 的 onKeyStroke 与 pointerDownOutside 在部分运行环境不生效，补齐相同语义 */
+function closeIfDismissible() {
+  if (!props.dismissible) return
+  if (props.open === undefined) return
+  /* update:open 由 DialogRootEmits 转发，未在本组件 emits 中声明，走 attrs 回调 */
+  ;(emits as unknown as (name: string, payload: boolean) => void)('update:open', false)
+}
+
+function onDocumentKeydown(event: KeyboardEvent) {
+  if (event.key !== 'Escape') return
+  closeIfDismissible()
+}
+
+function onDocumentPointerDown(event: PointerEvent) {
+  const target = event.target as Element | null
+  if (!target) return
+  /* 仅遮罩与面板外区域关闭（面板内部点击由具体控件处理） */
+  if (target.closest('[data-slot=content]')) return
+  closeIfDismissible()
+}
+
+onMounted(() => {
+  document.addEventListener('keydown', onDocumentKeydown, true)
+  document.addEventListener('pointerdown', onDocumentPointerDown, true)
+})
+
+onScopeDispose(() => {
+  document.removeEventListener('keydown', onDocumentKeydown, true)
+  document.removeEventListener('pointerdown', onDocumentPointerDown, true)
+})
 const portalProps = usePortal(toRef(() => props.portal))
 const contentProps = toRef(() => props.content)
 const contentEvents = computed(() => {

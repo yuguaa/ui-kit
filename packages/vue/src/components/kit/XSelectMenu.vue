@@ -595,8 +595,7 @@ let timeoutId: ReturnType<typeof setTimeout> | undefined
 
 onScopeDispose(() => clearTimeout(timeoutId))
 
-/* 显式接管外部点击与 Esc 关闭：reka 的 dismissableLayer 在部分环境（jsdom / 特定浏览器）失效，
- * 这里按同一语义补齐：点击触发器与浮层外部时关闭，Esc 关闭 */
+/* 显式接管外部点击与 Esc 关闭：reka 的 dismissableLayer 在部分运行环境失效，这里按同一语义补齐 */
 function onDocumentPointerDown(event: PointerEvent) {
   if (!isOpen.value) return
   const rootEl = (comboboxRootRef.value as { $el?: HTMLElement } | undefined)?.$el
@@ -604,7 +603,7 @@ function onDocumentPointerDown(event: PointerEvent) {
   if (!target) return
   if (rootEl?.contains(target)) return
   /* 浮层经 portal 渲染到 body，点击浮层内部不关闭 */
-  const layer = (target as Element).closest?.("[data-dismissable-layer]") as Element | null
+  const layer = (target as Element).closest?.('[data-dismissable-layer]') as Element | null
   if (layer) return
   onUpdateOpen(false)
 }

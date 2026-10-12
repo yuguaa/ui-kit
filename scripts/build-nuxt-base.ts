@@ -1029,6 +1029,7 @@ export default tv({ extend: ${extendExpr} })
   applyLibInfraTypePatches();
   applyInputAuxTypePatches();
   applyFinalTypePatches();
+  applyInteractionPatches();
 
   console.log(`nuxt-base generated: ${themeNames.length} themes, ${COMPONENTS.length} components`);
 }
@@ -1990,4 +1991,113 @@ function applyFinalTypePatches() {
     ["  default?(props: { ui: Input['ui'] }): VNode[]", "  default?(props: { ui: any }): VNode[]"],
     ["  trailing?(props: { ui: Input['ui'] }): VNode[]", "  trailing?(props: { ui: any }): VNode[]"],
   ]);
+}
+
+/**
+ * 交互补丁：reka 的 dismissableLayer（onKeyStroke / pointerDownOutside）在独立运行时环境下不注册监听，
+ * 导致浮层无法通过外部点击与 Esc 关闭；在受控 open 的组件上显式接管相同语义（关闭行为与 Nuxt UI 一致）。
+ * - XSelectMenu：open 受控化 + document 指针/键盘监听
+ * - XModal：Esc 与遮罩点击接管
+ */
+function applyInteractionPatches() {
+  const selectPath = join(OUT_KIT, "XSelectMenu.vue");
+  {
+    let content = readFileSync(selectPath, "utf8");
+    /* open 改为受控（由本地 isOpen 驱动），dismiss 接管需要统一的开关状态 */
+    content = content.replace(
+      "reactivePick(props, 'modelValue', 'defaultValue', 'open', 'defaultOpen',",
+      "reactivePick(props, 'modelValue', 'defaultValue', 'defaultOpen',",
+    );
+    content = content.replace(
+      "const rootProps = useForwardProps(reactivePick(props, 'modelValue', 'defaultValue', 'defaultOpen', 'required', 'multiple', 'resetSearchTermOnBlur', 'resetSearchTermOnSelect', 'resetModelValueOnClear', 'highlightOnHover', 'by'), emits)",
+      [
+        "const rootProps = useForwardProps(reactivePick(props, 'modelValue', 'defaultValue', 'defaultOpen', 'required', 'multiple', 'resetSearchTermOnBlur', 'resetSearchTermOnSelect', 'resetModelValueOnClear', 'highlightOnHover', 'by'), emits)",
+        "/* 受控 open：props.open 优先，否则以本地 isOpen 为唯一开关（外部点击与 Esc 的显式接管依赖此状态） */",
+        "const controlledOpen = computed({",
+        "  get: () => (props.open !== undefined ? props.open : isOpen.value),",
+        "  set: (value: boolean) => onUpdateOpen(value),",
+        "})",
+      ].join("\n"),
+    );
+    content = content.replace("const isOpen = ref(false)", "const isOpen = ref(props.defaultOpen ?? false)");
+    content = content.replace(
+      "onScopeDispose(() => clearTimeout(timeoutId))",
+      [
+        "onScopeDispose(() => clearTimeout(timeoutId))",
+        "",
+        "/* 显式接管外部点击与 Esc 关闭：reka 的 dismissableLayer 在部分运行环境失效，这里按同一语义补齐 */",
+        "function onDocumentPointerDown(event: PointerEvent) {",
+        "  if (!isOpen.value) return",
+        "  const rootEl = (comboboxRootRef.value as { $el?: HTMLElement } | undefined)?.$el",
+        "  const target = event.target as Node | null",
+        "  if (!target) return",
+        "  if (rootEl?.contains(target)) return",
+        "  /* 浮层经 portal 渲染到 body，点击浮层内部不关闭 */",
+        "  const layer = (target as Element).closest?.('[data-dismissable-layer]') as Element | null",
+        "  if (layer) return",
+        "  onUpdateOpen(false)",
+        "}",
+        "",
+        "function onDocumentKeydown(event: KeyboardEvent) {",
+        "  if (!isOpen.value || event.key !== 'Escape') return",
+        "  onUpdateOpen(false)",
+        "}",
+        "",
+        "onMounted(() => {",
+        "  document.addEventListener('pointerdown', onDocumentPointerDown, true)",
+        "  document.addEventListener('keydown', onDocumentKeydown, true)",
+        "})",
+        "",
+        "onScopeDispose(() => {",
+        "  document.removeEventListener('pointerdown', onDocumentPointerDown, true)",
+        "  document.removeEventListener('keydown', onDocumentKeydown, true)",
+        "})",
+      ].join("\n"),
+    );
+    content = content.replace('    v-bind="(rootProps as any)"', '    v-bind="(rootProps as any)"\n    :open="controlledOpen"');
+    writeFileSync(selectPath, content);
+  }
+
+  const modalPath = join(OUT_KIT, "XModal.vue");
+  {
+    let content = readFileSync(modalPath, "utf8");
+    content = content.replace("import { computed, toRef } from 'vue'", "import { computed, onMounted, onScopeDispose, toRef } from 'vue'");
+    content = content.replace(
+      "const rootProps = useForwardProps(reactivePick(props, 'open', 'defaultOpen', 'modal', 'unmountOnHide'), emits)",
+      [
+        "const rootProps = useForwardProps(reactivePick(props, 'open', 'defaultOpen', 'modal', 'unmountOnHide'), emits)",
+        "/* Esc 与遮罩点击的显式接管：reka 的 onKeyStroke 与 pointerDownOutside 在部分运行环境不生效，补齐相同语义 */",
+        "function closeIfDismissible() {",
+        "  if (!props.dismissible) return",
+        "  if (props.open === undefined) return",
+        "  /* update:open 由 DialogRootEmits 转发，未在本组件 emits 中声明，走 attrs 回调 */",
+        "  ;(emits as unknown as (name: string, payload: boolean) => void)('update:open', false)",
+        "}",
+        "",
+        "function onDocumentKeydown(event: KeyboardEvent) {",
+        "  if (event.key !== 'Escape') return",
+        "  closeIfDismissible()",
+        "}",
+        "",
+        "function onDocumentPointerDown(event: PointerEvent) {",
+        "  const target = event.target as Element | null",
+        "  if (!target) return",
+        "  /* 仅遮罩与面板外区域关闭（面板内部点击由具体控件处理） */",
+        "  if (target.closest('[data-slot=content]')) return",
+        "  closeIfDismissible()",
+        "}",
+        "",
+        "onMounted(() => {",
+        "  document.addEventListener('keydown', onDocumentKeydown, true)",
+        "  document.addEventListener('pointerdown', onDocumentPointerDown, true)",
+        "})",
+        "",
+        "onScopeDispose(() => {",
+        "  document.removeEventListener('keydown', onDocumentKeydown, true)",
+        "  document.removeEventListener('pointerdown', onDocumentPointerDown, true)",
+        "})",
+      ].join("\n"),
+    );
+    writeFileSync(modalPath, content);
+  }
 }
