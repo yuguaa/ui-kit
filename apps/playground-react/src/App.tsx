@@ -193,10 +193,14 @@ function ChipCard() {
     <Card name="XChip">
       <div className="flex flex-col gap-3">
         <div className="flex flex-wrap items-center gap-3">
-          <XChip standalone text="primary" />
-          <XChip standalone color="success" text="success" />
-          <XChip standalone color="warning" text="warning" />
-          <XChip standalone color="error" closable text="error" />
+          <div className="relative inline-flex">
+            <XAvatar src="https://github.com/nuxt-ui.png" alt="avatar" />
+            <XChip />
+          </div>
+          <XChip standalone size="3xl" text="primary" />
+          <XChip standalone color="success" size="3xl" text="success" />
+          <XChip standalone color="warning" size="3xl" text="warning" />
+          <XChip standalone color="error" size="3xl" text="error" />
         </div>
         <div className="flex items-center gap-3">
           <XButton size="xs" variant="soft" color="neutral" onClick={() => setShow(!show)}>

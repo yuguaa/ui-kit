@@ -50,10 +50,8 @@ describe("XChip", () => {
     expect(container.querySelector("[data-slot='base']")).not.toBeInTheDocument();
   });
 
-  it("closable 点击关闭按钮触发 onClose", async () => {
-    const onClose = vi.fn();
-    render(<XChip closable text="可关闭" onClose={onClose} />);
-    await userEvent.click(screen.getByRole("button", { name: "close" }));
-    expect(onClose).toHaveBeenCalledTimes(1);
+  it("尺寸体系与 Nuxt 对齐（3xs~3xl 像素级角标）", () => {
+    const { container } = render(<XChip size="3xl" text="新" />);
+    expect(container.querySelector("[data-slot='base']")?.className).toContain("h-[12px]");
   });
 });

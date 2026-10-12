@@ -5,30 +5,33 @@
  */
 import * as React from "react"
 import { useRender } from "@base-ui/react/use-render"
-import { X } from "lucide-react"
-import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
 export type XChipColor = "primary" | "secondary" | "neutral" | "success" | "info" | "warning" | "error"
-export type XChipSize = "xs" | "sm" | "md" | "lg" | "xl"
+/* 与 Nuxt UI 4.11 对齐：3xs(4px) ~ 3xl(12px) 像素级角标尺寸 */
+export type XChipSize = "3xs" | "2xs" | "xs" | "sm" | "md" | "lg" | "xl" | "2xl" | "3xl"
 export type XChipPosition = "top-right" | "bottom-right" | "top-left" | "bottom-left"
 
 const chipColorClasses: Record<XChipColor, string> = {
-  primary: "border-primary/20 bg-primary/10 text-primary",
-  secondary: "border-border bg-secondary text-secondary-foreground",
-  neutral: "border-border bg-muted text-muted-foreground",
-  success: "border-success/20 bg-success/10 text-success",
-  info: "border-info/20 bg-info/10 text-info",
-  warning: "border-warning/20 bg-warning/10 text-warning",
-  error: "border-error/20 bg-error/10 text-error",
+  primary: "bg-primary text-inverted",
+  secondary: "bg-secondary text-inverted",
+  neutral: "bg-inverted text-bg",
+  success: "bg-success text-inverted",
+  info: "bg-info text-inverted",
+  warning: "bg-warning text-inverted",
+  error: "bg-error text-inverted",
 }
 
 const chipSizeClasses: Record<XChipSize, string> = {
-  xs: "h-4.5 gap-0.5 px-1.5 text-[10px]",
-  sm: "h-5.5 gap-1 px-2 text-xs",
-  md: "h-7 gap-1 px-2.5 text-sm",
-  lg: "h-8 gap-1.5 px-3 text-sm",
-  xl: "h-9 gap-1.5 px-3.5 text-base",
+  "3xs": "h-[4px] min-w-[4px] text-[4px]",
+  "2xs": "h-[5px] min-w-[5px] text-[5px]",
+  xs: "h-[6px] min-w-[6px] text-[6px]",
+  sm: "h-[7px] min-w-[7px] text-[7px]",
+  md: "h-[8px] min-w-[8px] text-[8px]",
+  lg: "h-[9px] min-w-[9px] text-[9px]",
+  xl: "h-[10px] min-w-[10px] text-[10px]",
+  "2xl": "h-[11px] min-w-[11px] text-[11px]",
+  "3xl": "h-[12px] min-w-[12px] text-[12px]",
 }
 
 const chipPositionClasses: Record<XChipPosition, string> = {
@@ -69,14 +72,8 @@ export interface XChipProps extends Omit<React.ComponentProps<"div">, "color" | 
   standalone?: boolean
   /** 控制本体显隐，与 Nuxt UI 的 show 属性对齐 */
   show?: boolean
-  /** 是否可关闭（kit 既有属性） */
-  closable?: boolean
-  /** 标签图标 */
-  icon?: React.ReactNode
   /** 芯片内容，优先于 children 与 text */
   content?: React.ReactNode
-  /** 关闭时回调 */
-  onClose?: (event: React.MouseEvent<HTMLButtonElement>) => void
   /** 主题插槽类名 */
   ui?: XChipUi
   children?: React.ReactNode
@@ -91,10 +88,7 @@ export function XChip({
   inset = false,
   standalone = false,
   show = true,
-  closable = false,
-  icon,
   content,
-  onClose,
   ui,
   className,
   children,
@@ -115,26 +109,13 @@ export function XChip({
         <span
           data-slot="base"
           className={cn(
-            "inline-flex items-center justify-center rounded-full border font-medium whitespace-nowrap",
+            "inline-flex items-center justify-center rounded-full ring ring-bg font-medium whitespace-nowrap",
             chipColorClasses[color],
             chipSizeClasses[size],
             ui?.base,
           )}
         >
-          {icon}
           {content ?? children ?? text}
-          {closable && (
-            <Button
-              type="button"
-              variant="ghost"
-              size="icon-xs"
-              aria-label="close"
-              onClick={onClose}
-              className="-mr-1 size-4 rounded-full opacity-70 hover:bg-transparent hover:opacity-100 [&_svg]:size-3"
-            >
-              <X />
-            </Button>
-          )}
         </span>
       ) : null,
       ...rest,

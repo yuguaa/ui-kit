@@ -19,16 +19,14 @@ describe("XChip", () => {
   it("渲染语义色芯片", () => {
     render(<XChip color="error">失败</XChip>);
     const chip = screen.getByText("失败");
-    expect(chip).toHaveClass("bg-error/10");
-    expect(chip).toHaveClass("text-error");
+    expect(chip).toHaveClass("bg-error");
+    expect(chip).toHaveClass("text-inverted");
     expect(chip).toHaveClass("rounded-full");
   });
 
-  it("closable 渲染关闭按钮并触发 onClose", async () => {
-    const onClose = vi.fn();
-    render(<XChip closable onClose={onClose}>可关闭</XChip>);
-    await userEvent.click(screen.getByRole("button", { name: "close" }));
-    expect(onClose).toHaveBeenCalledTimes(1);
+  it("尺寸体系与 Nuxt 对齐", () => {
+    const { container } = render(<XChip size="md" />);
+    expect(container.querySelector("[data-slot='base']")?.className).toContain("h-[8px]");
   });
 });
 
@@ -65,7 +63,7 @@ describe("XAvatar", () => {
     const chip = container.querySelector("[data-slot='root']");
     expect(chip).toHaveClass("bottom-0");
     expect(chip).toHaveClass("left-0");
-    expect(container.querySelector("[data-slot='base']")).toHaveClass("bg-success/10");
+    expect(container.querySelector("[data-slot='base']")).toHaveClass("bg-success");
   });
 
   it("ui 插槽类名应用到 root 与 fallback", () => {
