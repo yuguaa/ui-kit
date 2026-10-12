@@ -7,44 +7,26 @@ description: 表示两种状态之间的切换，支持滑块内图标、语义�
 
 表示两种状态之间的切换，支持滑块内图标、语义色、两档尺寸、加载态与说明文字。
 
-<script setup>
-import SwitchBasicDemo from '@demos/vue/switch-basic-demo.vue'
-import switchBasicDemoRaw from '@demos/vue/switch-basic-demo.vue.code.txt?raw'
-import SwitchLoadingDemo from '@demos/vue/switch-loading-demo.vue'
-import switchLoadingDemoRaw from '@demos/vue/switch-loading-demo.vue.code.txt?raw'
-import SwitchIconsDemo from '@demos/vue/switch-icons.vue'
-import switchIconsRaw from '@demos/vue/switch-icons.vue.code.txt?raw'
-import SwitchUiCustomDemo from '@demos/vue/switch-ui-custom.vue'
-import switchUiCustomRaw from '@demos/vue/switch-ui-custom.vue.code.txt?raw'
-</script>
 
-<DemoBlock title="开关 / 文字 / 尺寸 / 语义色" description="v-model / checkedChildren 插槽 / size / disabled / color" :code="switchBasicDemoRaw">
-  <SwitchBasicDemo />
-</DemoBlock>
+<DemoPreview file="demos/vue/switch-basic-demo.vue" title="开关 / 文字 / 尺寸 / 语义色" description="v-model / checkedChildren 插槽 / size / disabled / color" />
 
 ## 加载态、说明文字与必选
 
 loading 阻止交互并显示旋转图标，description 展示 label 下方的辅助说明文字。
 
-<DemoBlock title="加载态与说明" description="loading / loadingIcon / description / required" :code="switchLoadingDemoRaw">
-  <SwitchLoadingDemo />
-</DemoBlock>
+<DemoPreview file="demos/vue/switch-loading-demo.vue" title="加载态与说明" description="loading / loadingIcon / description / required" />
 
 ## 滑块内图标与聚焦环
 
 `checkedIcon` / `uncheckedIcon` 在滑块内按状态显示图标；`highlight` 常显聚焦环。
 
-<DemoBlock title="滑块内图标与 highlight" description="checkedIcon / uncheckedIcon / highlight / color" :code="switchIconsRaw">
-  <SwitchIconsDemo />
-</DemoBlock>
+<DemoPreview file="demos/vue/switch-icons.vue" title="滑块内图标与 highlight" description="checkedIcon / uncheckedIcon / highlight / color" />
 
 ## ui 插槽
 
 `ui` 按主题插槽覆盖类名。
 
-<DemoBlock title="ui 插槽自定义" description="ui 键：root / base / container / thumb / icon / wrapper / label / description" :code="switchUiCustomRaw">
-  <SwitchUiCustomDemo />
-</DemoBlock>
+<DemoPreview file="demos/vue/switch-ui-custom.vue" title="ui 插槽自定义" description="ui 键：root / base / container / thumb / icon / wrapper / label / description" />
 
 ## 安装
 

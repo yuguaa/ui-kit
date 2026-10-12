@@ -7,56 +7,33 @@ description: 点击或拖拽上传文件，支持多文件与图片预览
 
 点击或拖拽上传文件。支持 area / button 两种形态、list / grid 两种文件布局、图片预览、删除与丰富的插槽体系。
 
-<script setup>
-import FileUploadBasic from '@demos/react/file-upload-basic'
-import fileUploadBasicRaw from '@demos/react/file-upload-basic.tsx.code.txt?raw'
-import FileUploadLayouts from '@demos/react/file-upload-layouts'
-import fileUploadLayoutsRaw from '@demos/react/file-upload-layouts.tsx.code.txt?raw'
-import FileUploadButton from '@demos/react/file-upload-button'
-import fileUploadButtonRaw from '@demos/react/file-upload-button.tsx.code.txt?raw'
-import FileUploadSlots from '@demos/react/file-upload-slots'
-import fileUploadSlotsRaw from '@demos/react/file-upload-slots.tsx.code.txt?raw'
-import FileUploadUiCustom from '@demos/react/file-upload-ui-custom'
-import fileUploadUiCustomRaw from '@demos/react/file-upload-ui-custom.tsx.code.txt?raw'
-</script>
-
 ## 基础用法
 
 `value` / `onChange` 绑定原生 File（单选）或 File[]（多选），`label` 与 `description` 描述上传区域。
 
-<DemoBlock title="基础用法" description="拖拽或点击上传，选择后展示文件信息" :code="fileUploadBasicRaw">
-  <ReactDemo :component="FileUploadBasic" />
-</DemoBlock>
+<DemoPreview file="demos/react/file-upload-basic.tsx" react title="基础用法" description="拖拽或点击上传，选择后展示文件信息" />
 
 ## 文件布局
 
 `multiple` 开启多选，`layout` 控制 list / grid 两种文件列表布局。
 
-<DemoBlock title="list 与 grid 布局" description="multiple 时文件列表在拖拽区内展示" :code="fileUploadLayoutsRaw">
-  <ReactDemo :component="FileUploadLayouts" />
-</DemoBlock>
+<DemoPreview file="demos/react/file-upload-layouts.tsx" react title="list 与 grid 布局" description="multiple 时文件列表在拖拽区内展示" />
 
 ## button 形态
 
 `variant="button"` 将上传区域渲染为按钮（仅单选可用），children 提供按钮内容。
 
-<DemoBlock title="button 形态" description="按钮式上传入口" :code="fileUploadButtonRaw">
-  <ReactDemo :component="FileUploadButton" />
-</DemoBlock>
+<DemoPreview file="demos/react/file-upload-button.tsx" react title="button 形态" description="按钮式上传入口" />
 
 ## 插槽
 
 `actions` 自定义操作区，`file` 自定义文件项；children（函数形式）、`leading`、`files`、`filesTop`、`filesBottom`、`fileLeading`、`fileName`、`fileSize`、`fileTrailing` 均可覆盖。
 
-<DemoBlock title="actions 与 file 插槽" description="插槽参数包含 files / open / removeFile / file / index" :code="fileUploadSlotsRaw">
-  <ReactDemo :component="FileUploadSlots" />
-</DemoBlock>
+<DemoPreview file="demos/react/file-upload-slots.tsx" react title="actions 与 file 插槽" description="插槽参数包含 files / open / removeFile / file / index" />
 
 ## ui 插槽
 
-<DemoBlock title="ui 插槽与 highlight" description="base / wrapper / label 类名覆盖，highlight 常驻描边" :code="fileUploadUiCustomRaw">
-  <ReactDemo :component="FileUploadUiCustom" />
-</DemoBlock>
+<DemoPreview file="demos/react/file-upload-ui-custom.tsx" react title="ui 插槽与 highlight" description="base / wrapper / label 类名覆盖，highlight 常驻描边" />
 
 ## 安装
 

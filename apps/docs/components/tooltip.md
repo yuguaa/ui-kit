@@ -7,38 +7,23 @@ description: 简单的文字提示气泡，悬浮时显示
 
 简单的文字提示气泡，悬浮时显示。支持 kbds 快捷键组合、content 插槽与 portal 渲染。
 
-<script setup>
-import TooltipBasic from '@demos/vue/tooltip-basic.vue'
-import tooltipBasicRaw from '@demos/vue/tooltip-basic.vue.code.txt?raw'
-import TooltipKbds from '@demos/vue/tooltip-kbds.vue'
-import tooltipKbdsRaw from '@demos/vue/tooltip-kbds.vue.code.txt?raw'
-import TooltipUiCustom from '@demos/vue/tooltip-ui-custom.vue'
-import tooltipUiCustomRaw from '@demos/vue/tooltip-ui-custom.vue.code.txt?raw'
-</script>
-
 ## 基础用法
 
 `text` 直接给提示文本；`delayDuration` 控制打开延迟；`arrow` 显示指向触发元素的箭头。
 
-<DemoBlock title="text · delayDuration · arrow" description="提示文本与延迟" :code="tooltipBasicRaw">
-  <TooltipBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/tooltip-basic.vue" title="text · delayDuration · arrow" description="提示文本与延迟" />
 
 ## 快捷键提示
 
 `kbds` 传入按键列表，元素可以是文本，也可以是带样式配置的对象（透传给 XKbd）。
 
-<DemoBlock title="kbds 快捷键" description="文本与对象两种按键项" :code="tooltipKbdsRaw">
-  <TooltipKbds />
-</DemoBlock>
+<DemoPreview file="demos/vue/tooltip-kbds.vue" title="kbds 快捷键" description="文本与对象两种按键项" />
 
 ## content 插槽与 ui 插槽
 
 `content` 插槽替换 text / kbds 默认内容；`ui` 属性按主题插槽键（content / arrow / text / kbds / kbdsSize）覆盖类名。
 
-<DemoBlock title="content · ui" description="自定义内容与主题定制" :code="tooltipUiCustomRaw">
-  <TooltipUiCustom />
-</DemoBlock>
+<DemoPreview file="demos/vue/tooltip-ui-custom.vue" title="content · ui" description="自定义内容与主题定制" />
 
 ## 安装
 

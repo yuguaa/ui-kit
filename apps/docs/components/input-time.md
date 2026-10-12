@@ -7,48 +7,30 @@ description: 选择时间，支持 12/24 小时制与时间区间
 
 输入框 + popover 时间列表，选择时间，支持 12/24 小时制、分钟步长与时间区间。容器支持五档尺寸、七种语义色、五种变体与高亮描边。
 
-<script setup>
-import InputTimeBasic from '@demos/vue/input-time-basic.vue'
-import inputTimeBasicRaw from '@demos/vue/input-time-basic.vue.code.txt?raw'
-import InputTimeRange from '@demos/vue/input-time-range.vue'
-import inputTimeRangeRaw from '@demos/vue/input-time-range.vue.code.txt?raw'
-import InputTimeColors from '@demos/vue/input-time-colors.vue'
-import inputTimeColorsRaw from '@demos/vue/input-time-colors.vue.code.txt?raw'
-import InputTimeSlots from '@demos/vue/input-time-slots.vue'
-import inputTimeSlotsRaw from '@demos/vue/input-time-slots.vue.code.txt?raw'
-</script>
 
 ## 基础用法
 
 `modelValue` 绑定时间（HH:mm），点击输入框弹出时间列表选择。
 
-<DemoBlock title="基础用法" description="v-model 绑定时间" :code="inputTimeBasicRaw">
-  <InputTimeBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-time-basic.vue" title="基础用法" description="v-model 绑定时间" />
 
 ## 时间区间
 
 range 开启后绑定值为 [开始, 结束] 数组，触发器内两个输入框由分隔图标连接；`separatorIcon` 可自定义分隔图标。
 
-<DemoBlock title="时间区间" description="range 模式 + separatorIcon 自定义分隔图标" :code="inputTimeRangeRaw">
-  <InputTimeRange />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-time-range.vue" title="时间区间" description="range 模式 + separatorIcon 自定义分隔图标" />
 
 ## 尺寸、语义色与变体
 
 `size` 五档尺寸；`color` 七种语义色；`variant` 五种变体；`highlight` 常显颜色描边。
 
-<DemoBlock title="尺寸与语义色" description="size / color / variant / highlight" :code="inputTimeColorsRaw">
-  <InputTimeColors />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-time-colors.vue" title="尺寸与语义色" description="size / color / variant / highlight" />
 
 ## 插槽与 ui
 
 `leading` / `trailing` 插槽自定义两侧内容；`ui` 按主题插槽覆盖类名。
 
-<DemoBlock title="插槽与 ui" description="leading / trailing 插槽 / ui 主题插槽" :code="inputTimeSlotsRaw">
-  <InputTimeSlots />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-time-slots.vue" title="插槽与 ui" description="leading / trailing 插槽 / ui 主题插槽" />
 
 ## 安装
 

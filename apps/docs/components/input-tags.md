@@ -7,48 +7,30 @@ description: 以标签形式输入多个值
 
 以标签形式输入多个值，回车添加、点击关闭移除。支持五档尺寸、七种语义色、五种变体与高亮描边，单个标签长度由 `maxLength` 限制。
 
-<script setup>
-import InputTagsBasic from '@demos/vue/input-tags-basic.vue'
-import inputTagsBasicRaw from '@demos/vue/input-tags-basic.vue.code.txt?raw'
-import InputTagsColors from '@demos/vue/input-tags-colors.vue'
-import inputTagsColorsRaw from '@demos/vue/input-tags-colors.vue.code.txt?raw'
-import InputTagsFeatures from '@demos/vue/input-tags-features.vue'
-import inputTagsFeaturesRaw from '@demos/vue/input-tags-features.vue.code.txt?raw'
-import InputTagsCustom from '@demos/vue/input-tags-custom.vue'
-import inputTagsCustomRaw from '@demos/vue/input-tags-custom.vue.code.txt?raw'
-</script>
 
 ## 基础用法
 
 `modelValue` 绑定标签数组，回车或失焦添加，点击删除图标移除。
 
-<DemoBlock title="基础用法" description="v-model 绑定标签数组" :code="inputTagsBasicRaw">
-  <InputTagsBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-tags-basic.vue" title="基础用法" description="v-model 绑定标签数组" />
 
 ## 尺寸、语义色与变体
 
 `size` 五档尺寸；`color` 七种语义色；`variant` 五种变体；`highlight` 常显颜色描边。
 
-<DemoBlock title="尺寸与语义色" description="size / color / variant / highlight" :code="inputTagsColorsRaw">
-  <InputTagsColors />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-tags-colors.vue" title="尺寸与语义色" description="size / color / variant / highlight" />
 
 ## 数量与长度限制
 
 `max` 限制标签总数，`maxLength` 限制单个标签最大字符数，`deleteIcon` 自定义删除图标。
 
-<DemoBlock title="数量与长度限制" description="max / maxLength / deleteIcon" :code="inputTagsFeaturesRaw">
-  <InputTagsFeatures />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-tags-features.vue" title="数量与长度限制" description="max / maxLength / deleteIcon" />
 
 ## 插槽与 ui
 
 `leading` 插槽前置内容，`tag` 插槽自定义标签项；`ui` 按主题插槽覆盖类名。
 
-<DemoBlock title="插槽与 ui" description="leading 插槽 / ui 主题插槽" :code="inputTagsCustomRaw">
-  <InputTagsCustom />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-tags-custom.vue" title="插槽与 ui" description="leading 插槽 / ui 主题插槽" />
 
 ## 安装
 

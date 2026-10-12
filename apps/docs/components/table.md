@@ -7,38 +7,23 @@ description: 展示行列数据，支持排序、筛选、固定列与加载状�
 
 基于 TanStack Table 的表格，列配置直接使用 `ColumnDef`，支持排序、列筛选、固定列、行选择、固定表头与加载状态。
 
-<script setup>
-import TableBasic from '@demos/vue/table-basic.vue'
-import tableBasicRaw from '@demos/vue/table-basic.vue.code.txt?raw'
-import TableSortSelect from '@demos/vue/table-sort-select.vue'
-import tableSortSelectRaw from '@demos/vue/table-sort-select.vue.code.txt?raw'
-import TableUiCustom from '@demos/vue/table-ui-custom.vue'
-import tableUiCustomRaw from '@demos/vue/table-ui-custom.vue.code.txt?raw'
-</script>
-
 ## 基础用法与列筛选
 
 `columns` 为 TanStack `ColumnDef` 数组，`data` 为数据源。`caption` 提供无障碍表格说明，`columnFiltersOptions` 开启列筛选，`v-model:columnFilters` 受控筛选状态。
 
-<DemoBlock title="基础渲染 + caption + 列筛选" description="columns / data / caption / columnFiltersOptions" :code="tableBasicRaw">
-  <TableBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/table-basic.vue" title="基础渲染 + caption + 列筛选" description="columns / data / caption / columnFiltersOptions" />
 
 ## 排序、行选择与固定列
 
 `sortingOptions` 开启排序后，在 `<名称>-header` 动态插槽中调用 `column.toggleSorting()`；`columnPinningOptions` 开启固定列（`v-model:columnPinning` 指定左右固定列）；`rowSelectionOptions` 开启行选择；`sticky` 固定表头，外层容器限高后内容区独立滚动。
 
-<DemoBlock title="排序 + 行选择 + 固定列" description="sortingOptions / columnPinningOptions / rowSelectionOptions / sticky" :code="tableSortSelectRaw">
-  <TableSortSelect />
-</DemoBlock>
+<DemoPreview file="demos/vue/table-sort-select.vue" title="排序 + 行选择 + 固定列" description="sortingOptions / columnPinningOptions / rowSelectionOptions / sticky" />
 
 ## ui 插槽与加载 / 空态
 
 `ui` 按主题插槽覆盖类名；`loading` 时默认渲染骨架行，也可用 `loading` 插槽自定义；`empty` 插槽覆盖空数据提示。
 
-<DemoBlock title="ui 插槽 · loading · empty" description="ui 类名 / loading 插槽 / empty 插槽" :code="tableUiCustomRaw">
-  <TableUiCustom />
-</DemoBlock>
+<DemoPreview file="demos/vue/table-ui-custom.vue" title="ui 插槽 · loading · empty" description="ui 类名 / loading 插槽 / empty 插槽" />
 
 ## 安装
 

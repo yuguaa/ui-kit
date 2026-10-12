@@ -7,48 +7,29 @@ description: 点击按钮展开的操作菜单，支持子菜单、字段映射�
 
 点击按钮展开的操作菜单。`items` 支持子菜单（`children`）、分组标题（`type: 'label'`）与分隔线（`type: 'separator'`）；`labelKey` / `valueKey` / `descriptionKey` 支持任意字段映射；`filter` 开启顶部搜索框；`size` 提供五档尺寸。
 
-<script setup>
-import DropdownMenuBasic from '@demos/react/dropdown-menu-basic'
-import dropdownMenuBasicRaw from '@demos/react/dropdown-menu-basic.tsx.code.txt?raw'
-import DropdownMenuItemExtras from '@demos/react/dropdown-menu-item-extras'
-import dropdownMenuItemExtrasRaw from '@demos/react/dropdown-menu-item-extras.tsx.code.txt?raw'
-import DropdownMenuSubmenu from '@demos/react/dropdown-menu-submenu'
-import dropdownMenuSubmenuRaw from '@demos/react/dropdown-menu-submenu.tsx.code.txt?raw'
-import DropdownMenuFilter from '@demos/react/dropdown-menu-filter'
-import dropdownMenuFilterRaw from '@demos/react/dropdown-menu-filter.tsx.code.txt?raw'
-</script>
-
 ## 基础用法
 
 type 渲染分组标题与分隔线，icon 前置图标，color 项语义色，size 控制项内边距与图标大小。
 
-<DemoBlock title="分组 · 图标 · 语义色" description="items / type / icon / color / size" :code="dropdownMenuBasicRaw">
-  <ReactDemo :component="DropdownMenuBasic" />
-</DemoBlock>
+<DemoPreview file="demos/react/dropdown-menu-basic.tsx" react title="分组 · 图标 · 语义色" description="items / type / icon / color / size" />
 
 ## 说明与快捷键
 
 description 说明文字、shortcut 快捷键显示在项尾部。
 
-<DemoBlock title="说明与快捷键" description="description 说明文字 / shortcut 快捷键" :code="dropdownMenuItemExtrasRaw">
-  <ReactDemo :component="DropdownMenuItemExtras" />
-</DemoBlock>
+<DemoPreview file="demos/react/dropdown-menu-item-extras.tsx" react title="说明与快捷键" description="description 说明文字 / shortcut 快捷键" />
 
 ## 子菜单与 checkbox
 
 children 定义子菜单，悬停展开；type: 'checkbox' 渲染勾选项，checked 受控选中态，选中显示 checkedIcon；loading 时前置图标显示旋转的 loadingIcon。
 
-<DemoBlock title="子菜单 · checkbox · 加载态" description="children / checkbox / checkedIcon / loadingIcon" :code="dropdownMenuSubmenuRaw">
-  <ReactDemo :component="DropdownMenuSubmenu" />
-</DemoBlock>
+<DemoPreview file="demos/react/dropdown-menu-submenu.tsx" react title="子菜单 · checkbox · 加载态" description="children / checkbox / checkedIcon / loadingIcon" />
 
 ## 过滤与字段映射
 
 filter 开启顶部搜索框，filterFields 指定匹配字段（默认 [labelKey]）；labelKey / descriptionKey 映射任意字段；arrow 显示指向触发器的箭头；target: '_blank' 的项在标签后显示 externalIcon；ui 按主题插槽覆盖类名。
 
-<DemoBlock title="过滤 · 字段映射 · 外链 · ui" description="filter / filterFields / labelKey / descriptionKey / arrow / externalIcon / ui" :code="dropdownMenuFilterRaw">
-  <ReactDemo :component="DropdownMenuFilter" />
-</DemoBlock>
+<DemoPreview file="demos/react/dropdown-menu-filter.tsx" react title="过滤 · 字段映射 · 外链 · ui" description="filter / filterFields / labelKey / descriptionKey / arrow / externalIcon / ui" />
 
 ## 安装
 

@@ -7,18 +7,11 @@ description: 浮动可折叠侧边栏、command-k 搜索、工作区切换与面
 
 参考 ReUI app-shell-2 构建的后台管理框架示例：浮动式侧边栏可折叠为图标栏，内置工作区切换器、嵌套导航（含状态脉冲与计数徽标）、command-k 搜索对话框与面包屑头部，正文为统计卡片与最近活动列表。
 
-<script setup>
-import AppShell2 from '@demos/vue/app-shell-2.vue'
-import appShell2Raw from '@demos/vue/app-shell-2.vue.code.txt?raw'
-</script>
-
 ## 完整示例
 
 侧边栏展开宽度 232px，点击左下角「收起侧边栏」折叠为 56px 图标栏；按 `⌘K`（Windows 为 `Ctrl+K`）打开命令搜索对话框。
 
-<DemoBlock title="App Shell 框架" description="浮动侧边栏 + command-k 搜索 + 工作区切换 + 面包屑头部" :code="appShell2Raw">
-  <AppShell2 />
-</DemoBlock>
+<DemoPreview file="demos/vue/app-shell-2.vue" title="App Shell 框架" description="浮动侧边栏 + command-k 搜索 + 工作区切换 + 面包屑头部" />
 
 ## 结构说明
 

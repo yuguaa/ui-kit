@@ -7,46 +7,27 @@ description: 从屏幕边缘滑出的面板，承载额外内容或操作
 
 从屏幕边缘滑出的面板，承载额外内容或操作。支持四个方向、内嵌与拖拽把手，可通过 header / actions / body / footer / close 插槽自由组合。
 
-<script setup>
-import DrawerBasicDemo from '@demos/react/drawer-basic-demo'
-import drawerBasicDemoRaw from '@demos/react/drawer-basic-demo.tsx.code.txt?raw'
-import DrawerVariants from '@demos/react/drawer-variants'
-import drawerVariantsRaw from '@demos/react/drawer-variants.tsx.code.txt?raw'
-import DrawerSlots from '@demos/react/drawer-slots'
-import drawerSlotsRaw from '@demos/react/drawer-slots.tsx.code.txt?raw'
-import DrawerUiCustom from '@demos/react/drawer-ui-custom'
-import drawerUiCustomRaw from '@demos/react/drawer-ui-custom.tsx.code.txt?raw'
-</script>
-
 ## 基础用法
 
-<DemoBlock title="左右两侧" description="direction 控制滑出方向" :code="drawerBasicDemoRaw">
-  <ReactDemo :component="DrawerBasicDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/drawer-basic-demo.tsx" react title="左右两侧" description="direction 控制滑出方向" />
 
 ## 方向与变体
 
 `direction` 控制四个滑出方向；`inset` 让面板与屏幕边缘保留间距；`close` 显示关闭按钮；`handle` 为 false 时隐藏拖拽把手。
 
-<DemoBlock title="direction · inset · close · handle" description="四个方向与内嵌模式" :code="drawerVariantsRaw">
-  <ReactDemo :component="DrawerVariants" />
-</DemoBlock>
+<DemoPreview file="demos/react/drawer-variants.tsx" react title="direction · inset · close · handle" description="四个方向与内嵌模式" />
 
 ## 插槽
 
 `header` 替换默认头部；`actions` 渲染头部操作区；`body` 与 `footer` 提供正文与底部；`content` 接管面板内容。
 
-<DemoBlock title="header / actions / body / footer / content" description="插槽自由组合" :code="drawerSlotsRaw">
-  <ReactDemo :component="DrawerSlots" />
-</DemoBlock>
+<DemoPreview file="demos/react/drawer-slots.tsx" react title="header / actions / body / footer / content" description="插槽自由组合" />
 
 ## ui 插槽自定义
 
 `ui` 属性按主题插槽键（overlay / content / handle / container / header / wrapper / title / description / actions / body / footer / close）覆盖类名。
 
-<DemoBlock title="ui 主题插槽" description="按键覆盖 content / handle / container / header 等类名" :code="drawerUiCustomRaw">
-  <ReactDemo :component="DrawerUiCustom" />
-</DemoBlock>
+<DemoPreview file="demos/react/drawer-ui-custom.tsx" react title="ui 主题插槽" description="按键覆盖 content / handle / container / header 等类名" />
 
 ## 安装
 

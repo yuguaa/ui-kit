@@ -7,56 +7,33 @@ description: 点击或拖拽上传文件，支持多文件与图片预览
 
 点击或拖拽上传文件。支持 area / button 两种形态、list / grid 两种文件布局、图片预览、删除与丰富的插槽体系。
 
-<script setup>
-import FileUploadBasic from '@demos/vue/file-upload-basic.vue'
-import fileUploadBasicRaw from '@demos/vue/file-upload-basic.vue.code.txt?raw'
-import FileUploadLayouts from '@demos/vue/file-upload-layouts.vue'
-import fileUploadLayoutsRaw from '@demos/vue/file-upload-layouts.vue.code.txt?raw'
-import FileUploadButton from '@demos/vue/file-upload-button.vue'
-import fileUploadButtonRaw from '@demos/vue/file-upload-button.vue.code.txt?raw'
-import FileUploadSlots from '@demos/vue/file-upload-slots.vue'
-import fileUploadSlotsRaw from '@demos/vue/file-upload-slots.vue.code.txt?raw'
-import FileUploadUiCustom from '@demos/vue/file-upload-ui-custom.vue'
-import fileUploadUiCustomRaw from '@demos/vue/file-upload-ui-custom.vue.code.txt?raw'
-</script>
-
 ## 基础用法
 
 `v-model` 绑定原生 File（单选）或 File[]（多选），`label` 与 `description` 描述上传区域。
 
-<DemoBlock title="基础用法" description="拖拽或点击上传，选择后展示文件信息" :code="fileUploadBasicRaw">
-  <FileUploadBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/file-upload-basic.vue" title="基础用法" description="拖拽或点击上传，选择后展示文件信息" />
 
 ## 文件布局
 
 `multiple` 开启多选，`layout` 控制 list / grid 两种文件列表布局。
 
-<DemoBlock title="list 与 grid 布局" description="multiple 时文件列表在拖拽区内展示" :code="fileUploadLayoutsRaw">
-  <FileUploadLayouts />
-</DemoBlock>
+<DemoPreview file="demos/vue/file-upload-layouts.vue" title="list 与 grid 布局" description="multiple 时文件列表在拖拽区内展示" />
 
 ## button 形态
 
 `variant="button"` 将上传区域渲染为按钮（仅单选可用），默认插槽提供按钮内容。
 
-<DemoBlock title="button 形态" description="按钮式上传入口" :code="fileUploadButtonRaw">
-  <FileUploadButton />
-</DemoBlock>
+<DemoPreview file="demos/vue/file-upload-button.vue" title="button 形态" description="按钮式上传入口" />
 
 ## 插槽
 
 `actions` 自定义操作区，`file` 自定义文件项；`default`、`leading`、`label`、`description`、`files`、`files-top`、`files-bottom`、`file-leading`、`file-name`、`file-size`、`file-trailing` 均可覆盖。
 
-<DemoBlock title="actions 与 file 插槽" description="插槽参数包含 files / open / removeFile / file / index" :code="fileUploadSlotsRaw">
-  <FileUploadSlots />
-</DemoBlock>
+<DemoPreview file="demos/vue/file-upload-slots.vue" title="actions 与 file 插槽" description="插槽参数包含 files / open / removeFile / file / index" />
 
 ## ui 插槽
 
-<DemoBlock title="ui 插槽与 highlight" description="base / wrapper / label 类名覆盖，highlight 常驻描边" :code="fileUploadUiCustomRaw">
-  <FileUploadUiCustom />
-</DemoBlock>
+<DemoPreview file="demos/vue/file-upload-ui-custom.vue" title="ui 插槽与 highlight" description="base / wrapper / label 类名覆盖，highlight 常驻描边" />
 
 ## 安装
 

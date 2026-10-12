@@ -7,48 +7,30 @@ description: 选择日期，支持最小/最大日期与日期区间
 
 输入框 + popover 日历，选择日期，支持最小/最大日期、底部自定义内容与日期区间。容器支持五档尺寸、七种语义色、五种变体与高亮描边。
 
-<script setup>
-import InputDateBasic from '@demos/vue/input-date-basic.vue'
-import inputDateBasicRaw from '@demos/vue/input-date-basic.vue.code.txt?raw'
-import InputDateRange from '@demos/vue/input-date-range.vue'
-import inputDateRangeRaw from '@demos/vue/input-date-range.vue.code.txt?raw'
-import InputDateColors from '@demos/vue/input-date-colors.vue'
-import inputDateColorsRaw from '@demos/vue/input-date-colors.vue.code.txt?raw'
-import InputDateSlots from '@demos/vue/input-date-slots.vue'
-import inputDateSlotsRaw from '@demos/vue/input-date-slots.vue.code.txt?raw'
-</script>
 
 ## 基础用法
 
 `modelValue` 绑定日期（yyyy-MM-dd），点击输入框弹出日历选择。
 
-<DemoBlock title="基础用法" description="v-model 绑定日期" :code="inputDateBasicRaw">
-  <InputDateBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-date-basic.vue" title="基础用法" description="v-model 绑定日期" />
 
 ## 日期区间
 
 range 开启后绑定值为 [开始, 结束] 数组，触发器内两个输入框由分隔图标连接；`separatorIcon` 可自定义分隔图标。
 
-<DemoBlock title="日期区间" description="range 模式 + separatorIcon 自定义分隔图标" :code="inputDateRangeRaw">
-  <InputDateRange />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-date-range.vue" title="日期区间" description="range 模式 + separatorIcon 自定义分隔图标" />
 
 ## 尺寸、语义色与变体
 
 `size` 五档尺寸；`color` 七种语义色；`variant` 五种变体；`highlight` 常显颜色描边。
 
-<DemoBlock title="尺寸与语义色" description="size / color / variant / highlight" :code="inputDateColorsRaw">
-  <InputDateColors />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-date-colors.vue" title="尺寸与语义色" description="size / color / variant / highlight" />
 
 ## 插槽与 ui
 
 `leading` / `trailing` 插槽自定义两侧内容，`separator` 插槽自定义区间分隔内容；`ui` 按主题插槽覆盖类名。
 
-<DemoBlock title="插槽与 ui" description="leading / trailing / separator 插槽 / ui 主题插槽" :code="inputDateSlotsRaw">
-  <InputDateSlots />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-date-slots.vue" title="插槽与 ui" description="leading / trailing / separator 插槽 / ui 主题插槽" />
 
 ## 安装
 

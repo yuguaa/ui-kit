@@ -7,60 +7,33 @@ description: 多张内容轮播展示
 
 多张内容轮播展示，基于 embla，支持箭头、指示点、纵向轮播与多种插件能力。
 
-<script setup>
-import CarouselBasic from '@demos/vue/carousel-basic.vue'
-import carouselBasicRaw from '@demos/vue/carousel-basic.vue.code.txt?raw'
-import CarouselArrows from '@demos/vue/carousel-arrows.vue'
-import carouselArrowsRaw from '@demos/vue/carousel-arrows.vue.code.txt?raw'
-import CarouselDots from '@demos/vue/carousel-dots.vue'
-import carouselDotsRaw from '@demos/vue/carousel-dots.vue.code.txt?raw'
-import CarouselVertical from '@demos/vue/carousel-vertical.vue'
-import carouselVerticalRaw from '@demos/vue/carousel-vertical.vue.code.txt?raw'
-import CarouselPlugins from '@demos/vue/carousel-plugins.vue'
-import carouselPluginsRaw from '@demos/vue/carousel-plugins.vue.code.txt?raw'
-import CarouselUi from '@demos/vue/carousel-ui.vue'
-import carouselUiRaw from '@demos/vue/carousel-ui.vue.code.txt?raw'
-</script>
-
-<DemoBlock title="基础用法" description="四张轮播与前后控制" :code="carouselBasicRaw">
-  <CarouselBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/carousel-basic.vue" title="基础用法" description="四张轮播与前后控制" />
 
 ## 箭头与指示点
 
 arrows 控制左右切换按钮，dots 控制底部指示点。
 
-<DemoBlock title="关闭箭头" description="arrows=false 隐藏按钮，dots 开启指示点并自动播放" :code="carouselDotsRaw">
-  <CarouselDots />
-</DemoBlock>
+<DemoPreview file="demos/vue/carousel-dots.vue" title="关闭箭头" description="arrows=false 隐藏按钮，dots 开启指示点并自动播放" />
 
-<DemoBlock title="关闭指示点" description="dots=false 隐藏指示点，仅保留左右箭头" :code="carouselArrowsRaw">
-  <CarouselArrows />
-</DemoBlock>
+<DemoPreview file="demos/vue/carousel-arrows.vue" title="关闭指示点" description="dots=false 隐藏指示点，仅保留左右箭头" />
 
 ## 纵向轮播
 
 orientation 设为 vertical 后轮播沿竖直方向滚动，箭头改为上下布局，指示点移到右侧。
 
-<DemoBlock title="纵向轮播" description="orientation=vertical 竖直方向滚动" :code="carouselVerticalRaw">
-  <CarouselVertical />
-</DemoBlock>
+<DemoPreview file="demos/vue/carousel-vertical.vue" title="纵向轮播" description="orientation=vertical 竖直方向滚动" />
 
 ## 插件能力
 
 `fade` 淡入淡出切换；`autoHeight` 容器高度跟随当前项；`autoScroll` 连续滚动（speed / direction）；`classNames` 给视口与轮播项加状态类名；`wheelGestures` 滚轮切换（forceWheelAxis）。
 
-<DemoBlock title="fade · autoHeight · autoScroll · classNames · wheelGestures" description="五种插件能力的组合展示" :code="carouselPluginsRaw">
-  <CarouselPlugins />
-</DemoBlock>
+<DemoPreview file="demos/vue/carousel-plugins.vue" title="fade · autoHeight · autoScroll · classNames · wheelGestures" description="五种插件能力的组合展示" />
 
 ## prev / next 与 ui 插槽
 
 `prev` / `next` 传入 XButton 属性配置按钮，`prevIcon` / `nextIcon` 替换图标；`ui` 按主题插槽覆盖类名。
 
-<DemoBlock title="按钮配置与 ui 插槽" description="prev / next 配置与图标，ui 插槽类名" :code="carouselUiRaw">
-  <CarouselUi />
-</DemoBlock>
+<DemoPreview file="demos/vue/carousel-ui.vue" title="按钮配置与 ui 插槽" description="prev / next 配置与图标，ui 插槽类名" />
 
 ## 安装
 

@@ -7,34 +7,19 @@ description: 可拖拽调整大小的分栏面板
 
 可拖拽调整大小的分栏面板，支持 items 数组形态与任意数量面板。
 
-<script setup>
-import SplitterBasic from '@demos/react/splitter-basic'
-import splitterBasicRaw from '@demos/react/splitter-basic.tsx.code.txt?raw'
-import SplitterCollapsible from '@demos/react/splitter-collapsible'
-import splitterCollapsibleRaw from '@demos/react/splitter-collapsible.tsx.code.txt?raw'
-import SplitterDisabled from '@demos/react/splitter-disabled'
-import splitterDisabledRaw from '@demos/react/splitter-disabled.tsx.code.txt?raw'
-</script>
-
-<DemoBlock title="基础用法" description="items 数组渲染三个面板与两个拖拽条" :code="splitterBasicRaw">
-  <ReactDemo :component="SplitterBasic" />
-</DemoBlock>
+<DemoPreview file="demos/react/splitter-basic.tsx" react title="基础用法" description="items 数组渲染三个面板与两个拖拽条" />
 
 ## 可折叠
 
 开启 `collapsible` 后，拖拽分隔条越过一半最小尺寸即折叠被压缩一侧的面板，分隔条停在边界，点击该侧的按钮恢复面板。
 
-<DemoBlock title="可折叠" description="拖到边界折叠，点击按钮展开" :code="splitterCollapsibleRaw">
-  <ReactDemo :component="SplitterCollapsible" />
-</DemoBlock>
+<DemoPreview file="demos/react/splitter-collapsible.tsx" react title="可折叠" description="拖到边界折叠，点击按钮展开" />
 
 ## disabled 与 ui 插槽
 
 `disabled` 锁定全部拖拽条；`ui` 按主题插槽（root / panel / handle）覆盖类名。
 
-<DemoBlock title="disabled 与 ui 插槽" description="disabled 锁定拖拽，ui 插槽类名" :code="splitterDisabledRaw">
-  <ReactDemo :component="SplitterDisabled" />
-</DemoBlock>
+<DemoPreview file="demos/react/splitter-disabled.tsx" react title="disabled 与 ui 插槽" description="disabled 锁定拖拽，ui 插槽类名" />
 
 ## 安装
 

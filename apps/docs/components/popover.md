@@ -7,48 +7,29 @@ description: 点击或悬停触发的轻量气泡卡片
 
 点击或悬停触发的轻量气泡卡片。支持 anchor 锚点定位、dismissible 关闭策略与 portal 渲染。
 
-<script setup>
-import PopoverBasicDemo from '@demos/vue/popover-basic-demo.vue'
-import popoverBasicDemoRaw from '@demos/vue/popover-basic-demo.vue.code.txt?raw'
-import PopoverArrowDemo from '@demos/vue/popover-arrow-demo.vue'
-import popoverArrowDemoRaw from '@demos/vue/popover-arrow-demo.vue.code.txt?raw'
-import PopoverAnchor from '@demos/vue/popover-anchor.vue'
-import popoverAnchorRaw from '@demos/vue/popover-anchor.vue.code.txt?raw'
-import PopoverUiCustom from '@demos/vue/popover-ui-custom.vue'
-import popoverUiCustomRaw from '@demos/vue/popover-ui-custom.vue.code.txt?raw'
-</script>
-
 ## 基础用法
 
 `mode` 区分点击（click）与悬停（hover）触发；content 插槽接收 `close` 方法，可在内容里直接关闭。
 
-<DemoBlock title="click / hover / 函数内容" description="mode 与 content 插槽作用域" :code="popoverBasicDemoRaw">
-  <PopoverBasicDemo />
-</DemoBlock>
+<DemoPreview file="demos/vue/popover-basic-demo.vue" title="click / hover / 函数内容" description="mode 与 content 插槽作用域" />
 
 ## 箭头
 
 开启 `arrow` 后浮层显示指向触发元素的箭头。
 
-<DemoBlock title="带箭头浮层" description="arrow" :code="popoverArrowDemoRaw">
-  <PopoverArrowDemo />
-</DemoBlock>
+<DemoPreview file="demos/vue/popover-arrow-demo.vue" title="带箭头浮层" description="arrow" />
 
 ## 锚点
 
 `anchor` 插槽指定定位参考元素，浮层相对它而不是触发器定位。
 
-<DemoBlock title="anchor 锚点" description="anchor 插槽作为定位参考" :code="popoverAnchorRaw">
-  <PopoverAnchor />
-</DemoBlock>
+<DemoPreview file="demos/vue/popover-anchor.vue" title="anchor 锚点" description="anchor 插槽作为定位参考" />
 
 ## 关闭策略与 ui 插槽
 
 `dismissible` 为 false 时点击外部或按 Esc 不会关闭，改为发射 `close:prevent`；`ui` 属性按主题插槽键（content / arrow）覆盖类名。
 
-<DemoBlock title="dismissible · ui" description="禁止外部关闭与主题定制" :code="popoverUiCustomRaw">
-  <PopoverUiCustom />
-</DemoBlock>
+<DemoPreview file="demos/vue/popover-ui-custom.vue" title="dismissible · ui" description="禁止外部关闭与主题定制" />
 
 ## 安装
 

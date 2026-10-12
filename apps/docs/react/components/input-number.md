@@ -7,46 +7,28 @@ description: 带步进按钮的数字输入框
 
 带加减步进按钮的数字输入框，支持横向 / 纵向两种步进方向。
 
-<script setup>
-import InputNumberBasic from "@demos/react/input-number-basic"
-import inputNumberBasicRaw from '@demos/react/input-number-basic.tsx.code.txt?raw'
-import InputNumberOrientation from "@demos/react/input-number-orientation"
-import inputNumberOrientationRaw from '@demos/react/input-number-orientation.tsx.code.txt?raw'
-import InputNumberSlots from "@demos/react/input-number-slots"
-import inputNumberSlotsRaw from '@demos/react/input-number-slots.tsx.code.txt?raw'
-import InputNumberUi from "@demos/react/input-number-ui"
-import inputNumberUiRaw from '@demos/react/input-number-ui.tsx.code.txt?raw'
-</script>
 
 ## 基础用法
 
 min / max 限制取值范围（到达边界时对应步进按钮自动禁用），step 控制步长。
 
-<DemoBlock title="范围与步长" description="value / min / max / step / placeholder" :code="inputNumberBasicRaw">
-  <ReactDemo :component="InputNumberBasic" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-number-basic.tsx" react title="范围与步长" description="value / min / max / step / placeholder" />
 
 ## 方向与尺寸
 
 orientation 区分 horizontal（两侧步进）与 vertical（右侧堆叠步进）；size 支持 xs / sm / md / lg / xl 五档。
 
-<DemoBlock title="方向与尺寸" description="orientation / size" :code="inputNumberOrientationRaw">
-  <ReactDemo :component="InputNumberOrientation" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-number-orientation.tsx" react title="方向与尺寸" description="orientation / size" />
 
 ## 步进按钮
 
 increment / decrement 传入节点替换按钮内容；incrementDisabled / decrementDisabled 独立禁用；decrement=false 隐藏减号按钮。
 
-<DemoBlock title="按钮内容与禁用态" description="increment / decrement / incrementDisabled / decrementDisabled" :code="inputNumberSlotsRaw">
-  <ReactDemo :component="InputNumberSlots" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-number-slots.tsx" react title="按钮内容与禁用态" description="increment / decrement / incrementDisabled / decrementDisabled" />
 
 ## ui 插槽自定义
 
-<DemoBlock title="主题插槽类名与渲染元素" description="ui 的 base 键 / render" :code="inputNumberUiRaw">
-  <ReactDemo :component="InputNumberUi" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-number-ui.tsx" react title="主题插槽类名与渲染元素" description="ui 的 base 键 / render" />
 
 ## 安装
 

@@ -7,34 +7,19 @@ description: 可展开与折叠的内容分组
 
 可展开与折叠的内容分组，支持多开、字段映射与禁用项。
 
-<script setup>
-import AccordionBasic from '@demos/vue/accordion-basic.vue'
-import accordionBasicRaw from '@demos/vue/accordion-basic.vue.code.txt?raw'
-import AccordionSlots from '@demos/vue/accordion-slots.vue'
-import accordionSlotsRaw from '@demos/vue/accordion-slots.vue.code.txt?raw'
-import AccordionUi from '@demos/vue/accordion-ui.vue'
-import accordionUiRaw from '@demos/vue/accordion-ui.vue.code.txt?raw'
-</script>
-
-<DemoBlock title="基础用法" description="items 数组渲染标题与内容，defaultValue 指定默认展开项" :code="accordionBasicRaw">
-  <AccordionBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/accordion-basic.vue" title="基础用法" description="items 数组渲染标题与内容，defaultValue 指定默认展开项" />
 
 ## 字段映射与插槽
 
 `labelKey` / `valueKey` 指定标题与唯一值来源字段；`leading` / `trailing` 插槽替换两侧图标，`body` 插槽接收 `{ item, index, open }` 自定义内容。
 
-<DemoBlock title="字段映射与插槽" description="labelKey / valueKey 映射，leading / trailing / body 插槽" :code="accordionSlotsRaw">
-  <AccordionSlots />
-</DemoBlock>
+<DemoPreview file="demos/vue/accordion-slots.vue" title="字段映射与插槽" description="labelKey / valueKey 映射，leading / trailing / body 插槽" />
 
 ## ui 插槽自定义
 
 `ui` 按主题插槽（root / item / header / trigger / leadingIcon / label / trailingIcon / content / body）覆盖每一层元素的类名。
 
-<DemoBlock title="ui 插槽自定义" description="九个插槽键逐层注入类名" :code="accordionUiRaw">
-  <AccordionUi />
-</DemoBlock>
+<DemoPreview file="demos/vue/accordion-ui.vue" title="ui 插槽自定义" description="九个插槽键逐层注入类名" />
 
 ## 安装
 

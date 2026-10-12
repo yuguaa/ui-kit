@@ -8,6 +8,7 @@
 | modal? | boolean | - | 模态：聚焦锁定与遮罩拦截（仅 click 模式） |
 | openDelay? | number | - | 悬停打开延迟（毫秒，仅 hover 模式） |
 | closeDelay? | number | - | 悬停关闭延迟（毫秒，仅 hover 模式） |
+| enableTouch? | boolean | - | 触屏设备点击触发器时切换开合（仅 hover 模式） |
 | arrow? | boolean | - | 是否显示指向触发元素的箭头 |
 | portal? | XPopoverPortal | - | 渲染到 body 或指定容器 |
 | dismissible? | boolean | - | 允许点击外部或按 Esc 关闭 |

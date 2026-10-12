@@ -7,70 +7,39 @@ description: 展示需要关注的信息，提供七种语义色与四种变体
 
 用于页面中展示需要关注的信息，提供七种语义色、四种变体，可附带图标、头像、操作区与受控关闭按钮。
 
-<script setup>
-import AlertBasic from '@demos/react/alert-basic'
-import alertBasicRaw from '@demos/react/alert-basic.tsx.code.txt?raw'
-import AlertVariants from '@demos/react/alert-variants'
-import alertVariantsRaw from '@demos/react/alert-variants.tsx.code.txt?raw'
-import AlertTypes from '@demos/react/alert-types'
-import alertTypesRaw from '@demos/react/alert-types.tsx.code.txt?raw'
-import AlertClosable from '@demos/react/alert-closable'
-import alertClosableRaw from '@demos/react/alert-closable.tsx.code.txt?raw'
-import AlertIconActions from '@demos/react/alert-icon-actions'
-import alertIconActionsRaw from '@demos/react/alert-icon-actions.tsx.code.txt?raw'
-import AlertOrientation from '@demos/react/alert-orientation'
-import alertOrientationRaw from '@demos/react/alert-orientation.tsx.code.txt?raw'
-import AlertUiCustom from '@demos/react/alert-ui-custom'
-import alertUiCustomRaw from '@demos/react/alert-ui-custom.tsx.code.txt?raw'
-</script>
-
 ## 基础用法
 
 icon 指定图标名，avatar 传入头像配置；close 配合 open / onOpenChange 提供受控关闭。
 
-<DemoBlock title="图标、头像与受控关闭" description="icon / avatar / close + open" :code="alertBasicRaw">
-  <ReactDemo :component="AlertBasic" />
-</DemoBlock>
+<DemoPreview file="demos/react/alert-basic.tsx" react title="图标、头像与受控关闭" description="icon / avatar / close + open" />
 
 ## 变体
 
-<DemoBlock title="四种变体" description="variant 控制提示强度" :code="alertVariantsRaw">
-  <ReactDemo :component="AlertVariants" />
-</DemoBlock>
+<DemoPreview file="demos/react/alert-variants.tsx" react title="四种变体" description="variant 控制提示强度" />
 
 ## 语义色
 
 color 提供七种语义色；kit 既有属性 type 仍可作为 color 的回退。
 
-<DemoBlock title="七种语义色" description="color" :code="alertTypesRaw">
-  <ReactDemo :component="AlertTypes" />
-</DemoBlock>
+<DemoPreview file="demos/react/alert-types.tsx" react title="七种语义色" description="color" />
 
 ## 受控关闭
 
 close 为布尔时使用默认关闭按钮；传对象时整体透传给关闭按钮（可配置 variant / color / size / label 等）；closeSlot 替换默认按钮，closeIcon 更换图标。
 
-<DemoBlock title="close 与 closeIcon" description="close / closeSlot / closeIcon / onOpenChange" :code="alertClosableRaw">
-  <ReactDemo :component="AlertClosable" />
-</DemoBlock>
+<DemoPreview file="demos/react/alert-closable.tsx" react title="close 与 closeIcon" description="close / closeSlot / closeIcon / onOpenChange" />
 
 ## 图标、头像与操作区
 
-<DemoBlock title="icon / avatar / actions" description="leading、actions 与 actions 数组" :code="alertIconActionsRaw">
-  <ReactDemo :component="AlertIconActions" />
-</DemoBlock>
+<DemoPreview file="demos/react/alert-icon-actions.tsx" react title="icon / avatar / actions" description="leading、actions 与 actions 数组" />
 
 ## 排列方向
 
-<DemoBlock title="vertical / horizontal" description="orientation 控制内容与操作区的排列方向" :code="alertOrientationRaw">
-  <ReactDemo :component="AlertOrientation" />
-</DemoBlock>
+<DemoPreview file="demos/react/alert-orientation.tsx" react title="vertical / horizontal" description="orientation 控制内容与操作区的排列方向" />
 
 ## ui 插槽与渲染
 
-<DemoBlock title="ui 插槽自定义与 render" description="ui 键覆盖主题插槽类名，render 更换渲染元素" :code="alertUiCustomRaw">
-  <ReactDemo :component="AlertUiCustom" />
-</DemoBlock>
+<DemoPreview file="demos/react/alert-ui-custom.tsx" react title="ui 插槽自定义与 render" description="ui 键覆盖主题插槽类名，render 更换渲染元素" />
 
 ## 安装
 

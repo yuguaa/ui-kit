@@ -7,34 +7,19 @@ description: 可拖拽调整大小的分栏面板
 
 可拖拽调整大小的分栏面板，支持 items 数组形态与任意数量面板。
 
-<script setup>
-import SplitterBasic from '@demos/vue/splitter-basic.vue'
-import splitterBasicRaw from '@demos/vue/splitter-basic.vue.code.txt?raw'
-import SplitterCollapsible from '@demos/vue/splitter-collapsible.vue'
-import splitterCollapsibleRaw from '@demos/vue/splitter-collapsible.vue.code.txt?raw'
-import SplitterDisabled from '@demos/vue/splitter-disabled.vue'
-import splitterDisabledRaw from '@demos/vue/splitter-disabled.vue.code.txt?raw'
-</script>
-
-<DemoBlock title="基础用法" description="items 数组渲染三个面板与两个拖拽条" :code="splitterBasicRaw">
-  <SplitterBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/splitter-basic.vue" title="基础用法" description="items 数组渲染三个面板与两个拖拽条" />
 
 ## 可折叠
 
 开启 `collapsible` 后，拖拽分隔条越过一半最小尺寸即折叠被压缩一侧的面板，分隔条停在边界，点击该侧的按钮恢复面板。
 
-<DemoBlock title="可折叠" description="拖到边界折叠，点击按钮展开" :code="splitterCollapsibleRaw">
-  <SplitterCollapsible />
-</DemoBlock>
+<DemoPreview file="demos/vue/splitter-collapsible.vue" title="可折叠" description="拖到边界折叠，点击按钮展开" />
 
 ## disabled 与 ui 插槽
 
 `disabled` 锁定全部拖拽条；`ui` 按主题插槽（root / panel / handle）覆盖类名。
 
-<DemoBlock title="disabled 与 ui 插槽" description="disabled 锁定拖拽，ui 插槽类名" :code="splitterDisabledRaw">
-  <SplitterDisabled />
-</DemoBlock>
+<DemoPreview file="demos/vue/splitter-disabled.vue" title="disabled 与 ui 插槽" description="disabled 锁定拖拽，ui 插槽类名" />
 
 ## 安装
 

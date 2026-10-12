@@ -7,48 +7,30 @@ description: 以星标形式进行评分输入
 
 以星标形式进行评分输入，支持半星、自定义图标、五档尺寸、七种语义色与横竖方向。
 
-<script setup>
-import InputRatingBasic from '@demos/vue/input-rating-basic.vue'
-import inputRatingBasicRaw from '@demos/vue/input-rating-basic.vue.code.txt?raw'
-import InputRatingColors from '@demos/vue/input-rating-colors.vue'
-import inputRatingColorsRaw from '@demos/vue/input-rating-colors.vue.code.txt?raw'
-import InputRatingSizes from '@demos/vue/input-rating-sizes.vue'
-import inputRatingSizesRaw from '@demos/vue/input-rating-sizes.vue.code.txt?raw'
-import InputRatingCustom from '@demos/vue/input-rating-custom.vue'
-import inputRatingCustomRaw from '@demos/vue/input-rating-custom.vue.code.txt?raw'
-</script>
 
 ## 基础用法
 
 `modelValue` 绑定评分值，支持 `v-model`。
 
-<DemoBlock title="基础用法" description="v-model 绑定评分值" :code="inputRatingBasicRaw">
-  <InputRatingBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-rating-basic.vue" title="基础用法" description="v-model 绑定评分值" />
 
 ## 语义色与方向
 
 `color` 提供七种语义色，`orientation` 支持横向与纵向排列。
 
-<DemoBlock title="语义色与方向" description="color 控制填充星颜色，orientation 控制排列方向" :code="inputRatingColorsRaw">
-  <InputRatingColors />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-rating-colors.vue" title="语义色与方向" description="color 控制填充星颜色，orientation 控制排列方向" />
 
 ## 尺寸与状态
 
 `size` 控制星星大小，共 xs → xl 五档；`readonly` 仅作展示，`disabled` 禁用交互。
 
-<DemoBlock title="五档尺寸与状态" description="size 五档对比，readonly / disabled 状态" :code="inputRatingSizesRaw">
-  <InputRatingSizes />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-rating-sizes.vue" title="五档尺寸与状态" description="size 五档对比，readonly / disabled 状态" />
 
 ## 图标、插槽与 ui
 
 `icon` / `emptyIcon` 接受 XIcon 名称或自定义组件；`item` 插槽自定义每一项；`ui` 按主题插槽覆盖类名。
 
-<DemoBlock title="自定义图标与 ui" description="icon / emptyIcon / item 插槽 / ui 主题插槽" :code="inputRatingCustomRaw">
-  <InputRatingCustom />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-rating-custom.vue" title="自定义图标与 ui" description="icon / emptyIcon / item 插槽 / ui 主题插槽" />
 
 ## 安装
 

@@ -7,38 +7,23 @@ description: 输入框与下拉菜单组合，支持 combobox / listbox 双模�
 
 输入框与下拉菜单组合。`mode` 区分 combobox（输入框即搜索）与 listbox（输入框只读、菜单内搜索）；listbox 模式可开启 `searchInput` 在菜单顶部渲染搜索输入框，并可用 `search-input` 插槽自定义。
 
-<script setup>
-import InputMenuBasic from '@demos/vue/input-menu-basic.vue'
-import inputMenuBasicRaw from '@demos/vue/input-menu-basic.vue.code.txt?raw'
-import InputMenuListbox from '@demos/vue/input-menu-listbox.vue'
-import inputMenuListboxRaw from '@demos/vue/input-menu-listbox.vue.code.txt?raw'
-import InputMenuUi from '@demos/vue/input-menu-ui.vue'
-import inputMenuUiRaw from '@demos/vue/input-menu-ui.vue.code.txt?raw'
-</script>
-
 ## 基础用法
 
 combobox 模式输入即搜索；`clearable` 清空已选项；`createItem` 关键字不存在时回车创建新选项。
 
-<DemoBlock title="combobox · 清空 · 创建" description="searchable · clearable · createItem · disabled" :code="inputMenuBasicRaw">
-  <InputMenuBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-menu-basic.vue" title="combobox · 清空 · 创建" description="searchable · clearable · createItem · disabled" />
 
 ## listbox 模式与菜单内搜索
 
 `mode="listbox"` 时输入框只读，点击展开菜单；`searchInput` 在菜单顶部渲染搜索输入框（可传 `{ placeholder }`），`search-input` 插槽完全自定义。
 
-<DemoBlock title="listbox · searchInput · search-input 插槽" description="mode / searchInput / search-input 插槽" :code="inputMenuListboxRaw">
-  <InputMenuListbox />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-menu-listbox.vue" title="listbox · searchInput · search-input 插槽" description="mode / searchInput / search-input 插槽" />
 
 ## 字段映射、图标与 ui 插槽
 
 `labelKey` / `valueKey` / `descriptionKey` 映射任意字段；`selectedIcon` / `clearIcon` 自定义图标；`filterFields` 指定过滤字段；`ui` 按主题插槽覆盖类名；`leading` / `item` 插槽自定义。
 
-<DemoBlock title="字段映射 · 图标 · filterFields · ui" description="labelKey / valueKey / descriptionKey / selectedIcon / clearIcon / filterFields / ui" :code="inputMenuUiRaw">
-  <InputMenuUi />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-menu-ui.vue" title="字段映射 · 图标 · filterFields · ui" description="labelKey / valueKey / descriptionKey / selectedIcon / clearIcon / filterFields / ui" />
 
 ## 安装
 

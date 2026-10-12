@@ -7,48 +7,29 @@ description: 将多个头像重叠排列展示，超出 max 折叠为 +N
 
 将多个头像重叠排列展示，超出 max 时折叠为 +N。max 支持 number 与 string，缺省时全部显示；size / color 会透传给未指定的子头像。
 
-<script setup>
-import AvatarGroupBasic from '@demos/react/avatar-group-basic'
-import avatarGroupBasicRaw from '@demos/react/avatar-group-basic.tsx.code.txt?raw'
-import AvatarGroupMax from '@demos/react/avatar-group-max'
-import avatarGroupMaxRaw from '@demos/react/avatar-group-max.tsx.code.txt?raw'
-import AvatarGroupColors from '@demos/react/avatar-group-colors'
-import avatarGroupColorsRaw from '@demos/react/avatar-group-colors.tsx.code.txt?raw'
-import AvatarGroupUi from '@demos/react/avatar-group-ui'
-import avatarGroupUiRaw from '@demos/react/avatar-group-ui.tsx.code.txt?raw'
-</script>
-
 ## 基础用法
 
 头像重叠排列，后一个压前一个，size 控制整体尺寸（环形描边与负边距随尺寸分档）。
 
-<DemoBlock title="基础重叠排列" description="全部显示与 size 分档" :code="avatarGroupBasicRaw">
-  <ReactDemo :component="AvatarGroupBasic" />
-</DemoBlock>
+<DemoPreview file="demos/react/avatar-group-basic.tsx" react title="基础重叠排列" description="全部显示与 size 分档" />
 
 ## max 折叠
 
 max 限制可见数量，超出部分折叠为 +N；plus 属性可自定义溢出标记。
 
-<DemoBlock title="max 折叠与 plus" description="max 折叠为 +N，plus 自定义溢出标记" :code="avatarGroupMaxRaw">
-  <ReactDemo :component="AvatarGroupMax" />
-</DemoBlock>
+<DemoPreview file="demos/react/avatar-group-max.tsx" react title="max 折叠与 plus" description="max 折叠为 +N，plus 自定义溢出标记" />
 
 ## 语义色透传
 
 color 属性透传给子头像，子头像自身指定 color 时不被覆盖。
 
-<DemoBlock title="color 透传" description="头像组的 color 透传给未指定 color 的子头像" :code="avatarGroupColorsRaw">
-  <ReactDemo :component="AvatarGroupColors" />
-</DemoBlock>
+<DemoPreview file="demos/react/avatar-group-colors.tsx" react title="color 透传" description="头像组的 color 透传给未指定 color 的子头像" />
 
 ## ui 插槽自定义
 
 ui 按主题插槽（root / base）覆盖类名。
 
-<DemoBlock title="ui 插槽类名" description="root 与 base 插槽类名" :code="avatarGroupUiRaw">
-  <ReactDemo :component="AvatarGroupUi" />
-</DemoBlock>
+<DemoPreview file="demos/react/avatar-group-ui.tsx" react title="ui 插槽类名" description="root 与 base 插槽类名" />
 
 ## 安装
 

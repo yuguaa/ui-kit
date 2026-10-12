@@ -7,38 +7,23 @@ description: 将多个字段组合为一行或一组
 
 将多个字段组合为一行或一组。`orientation` 控制排列方向（horizontal 同行 / vertical 纵向堆叠），旧属性 `inline` 保留兼容：未传 `orientation` 时由 `inline` 决定方向。
 
-<script setup>
-import FieldGroupOrientation from '@demos/vue/field-group-orientation.vue'
-import fieldGroupOrientationRaw from '@demos/vue/field-group-orientation.vue.code.txt?raw'
-import FieldGroupSize from '@demos/vue/field-group-size.vue'
-import fieldGroupSizeRaw from '@demos/vue/field-group-size.vue.code.txt?raw'
-import FieldGroupUiCustom from '@demos/vue/field-group-ui-custom.vue'
-import fieldGroupUiCustomRaw from '@demos/vue/field-group-ui-custom.vue.code.txt?raw'
-</script>
-
 ## 排列方向
 
 `orientation` 控制排列方向；`inline` 作为旧属性保留，显式传 `orientation` 时优先。
 
-<DemoBlock title="horizontal 与 vertical" description="orientation 属性控制排列方向" :code="fieldGroupOrientationRaw">
-  <FieldGroupOrientation />
-</DemoBlock>
+<DemoPreview file="demos/vue/field-group-orientation.vue" title="horizontal 与 vertical" description="orientation 属性控制排列方向" />
 
 ## 尺寸
 
 `size` 控制字段间距（xs → xl）。
 
-<DemoBlock title="五档尺寸" description="size 属性控制字段间距" :code="fieldGroupSizeRaw">
-  <FieldGroupSize />
-</DemoBlock>
+<DemoPreview file="demos/vue/field-group-size.vue" title="五档尺寸" description="size 属性控制字段间距" />
 
 ## ui 插槽
 
 `ui.root` 自定义字段组根元素类名。
 
-<DemoBlock title="ui 插槽" description="ui.root 覆盖根元素类名" :code="fieldGroupUiCustomRaw">
-  <FieldGroupUiCustom />
-</DemoBlock>
+<DemoPreview file="demos/vue/field-group-ui-custom.vue" title="ui 插槽" description="ui.root 覆盖根元素类名" />
 
 ## 安装
 

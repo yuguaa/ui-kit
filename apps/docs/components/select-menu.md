@@ -7,38 +7,23 @@ description: 触发按钮与弹出选项列表组成的选择菜单，支持搜�
 
 触发按钮与弹出选项列表组成。`mode` 区分 combobox（菜单内搜索）与 listbox（纯列表）；`labelKey` / `valueKey` / `descriptionKey` 支持任意字段映射；选项可带 `type: 'label' | 'separator'` 渲染分组标签与分隔线。
 
-<script setup>
-import SelectMenuBasic from '@demos/vue/select-menu-basic.vue'
-import selectMenuBasicRaw from '@demos/vue/select-menu-basic.vue.code.txt?raw'
-import SelectMenuFields from '@demos/vue/select-menu-fields.vue'
-import selectMenuFieldsRaw from '@demos/vue/select-menu-fields.vue.code.txt?raw'
-import SelectMenuUi from '@demos/vue/select-menu-ui.vue'
-import selectMenuUiRaw from '@demos/vue/select-menu-ui.vue.code.txt?raw'
-</script>
-
 ## 基础用法
 
 单选、菜单内搜索（showSearch）、多选、禁用与清空（clearable）。
 
-<DemoBlock title="单选 / 搜索 / 多选 / 禁用 / 清空" description="multiple · showSearch · disabled · clearable" :code="selectMenuBasicRaw">
-  <SelectMenuBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/select-menu-basic.vue" title="单选 / 搜索 / 多选 / 禁用 / 清空" description="multiple · showSearch · disabled · clearable" />
 
 ## 字段映射与分组结构
 
 `labelKey` / `valueKey` / `descriptionKey` 把选项映射到任意字段；`type: 'label' | 'separator'` 渲染分组标题与分隔线；`mode="listbox"` 关闭搜索能力。
 
-<DemoBlock title="字段映射 · 分组 · listbox 模式" description="labelKey / valueKey / descriptionKey / type / mode" :code="selectMenuFieldsRaw">
-  <SelectMenuFields />
-</DemoBlock>
+<DemoPreview file="demos/vue/select-menu-fields.vue" title="字段映射 · 分组 · listbox 模式" description="labelKey / valueKey / descriptionKey / type / mode" />
 
 ## 图标、过滤字段、插槽与 ui 插槽
 
 `selectedIcon` / `clearIcon` 自定义图标（XIcon 名称或任意组件）；`filterFields` 指定搜索命中的字段；`ui` 按主题插槽覆盖类名；`leading` / `trailing` / `option` / `empty` 插槽自定义各区域。
 
-<DemoBlock title="图标 · filterFields · ui · 插槽" description="selectedIcon / clearIcon / filterFields / ui / leading / trailing / option / empty" :code="selectMenuUiRaw">
-  <SelectMenuUi />
-</DemoBlock>
+<DemoPreview file="demos/vue/select-menu-ui.vue" title="图标 · filterFields · ui · 插槽" description="selectedIcon / clearIcon / filterFields / ui / leading / trailing / option / empty" />
 
 ## 安装
 
@@ -50,7 +35,7 @@ npx shadcn-vue@latest add @ui-kit/x-select-menu
 
 ### XSelectMenu
 
-<!--@include: ./api/selectmenu.md-->
+<!--@include: ./api/select-menu.md-->
 
 **事件**：update:modelValue 值变化 · update:open 打开状态变化 · update:searchTerm 搜索词变化 · change 值变化 · focus / blur 打开与关闭 · create 创建新选项 · clear 清空 · highlight 高亮项变化
 

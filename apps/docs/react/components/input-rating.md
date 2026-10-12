@@ -7,48 +7,30 @@ description: 以星标形式进行评分输入
 
 以星标形式进行评分输入，支持半星、自定义图标、五档尺寸、七种语义色与横竖方向。
 
-<script setup>
-import InputRatingBasic from '@demos/react/input-rating-basic'
-import inputRatingBasicRaw from '@demos/react/input-rating-basic.tsx.code.txt?raw'
-import InputRatingColors from '@demos/react/input-rating-colors'
-import inputRatingColorsRaw from '@demos/react/input-rating-colors.tsx.code.txt?raw'
-import InputRatingSizes from '@demos/react/input-rating-sizes'
-import inputRatingSizesRaw from '@demos/react/input-rating-sizes.tsx.code.txt?raw'
-import InputRatingCustom from '@demos/react/input-rating-custom'
-import inputRatingCustomRaw from '@demos/react/input-rating-custom.tsx.code.txt?raw'
-</script>
 
 ## 基础用法
 
 `value` 绑定评分值，配合 `onChange` 受控使用，也可用 `defaultValue` 非受控。
 
-<DemoBlock title="基础用法" description="value + onChange 受控评分" :code="inputRatingBasicRaw">
-  <ReactDemo :component="InputRatingBasic" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-rating-basic.tsx" react title="基础用法" description="value + onChange 受控评分" />
 
 ## 语义色与方向
 
 `color` 提供七种语义色，`orientation` 支持横向与纵向排列。
 
-<DemoBlock title="语义色与方向" description="color 控制填充星颜色，orientation 控制排列方向" :code="inputRatingColorsRaw">
-  <ReactDemo :component="InputRatingColors" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-rating-colors.tsx" react title="语义色与方向" description="color 控制填充星颜色，orientation 控制排列方向" />
 
 ## 尺寸与状态
 
 `size` 控制星星大小，共 xs → xl 五档；`readonly` 仅作展示，`disabled` 禁用交互。
 
-<DemoBlock title="五档尺寸与状态" description="size 五档对比，readonly / disabled 状态" :code="inputRatingSizesRaw">
-  <ReactDemo :component="InputRatingSizes" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-rating-sizes.tsx" react title="五档尺寸与状态" description="size 五档对比，readonly / disabled 状态" />
 
 ## 图标、插槽与 ui
 
 `icon` / `emptyIcon` 接受 XIcon 名称或自定义组件；`item` 渲染回调自定义每一项；`ui` 按主题插槽覆盖类名。
 
-<DemoBlock title="自定义图标与 ui" description="icon / emptyIcon / item / ui 主题插槽" :code="inputRatingCustomRaw">
-  <ReactDemo :component="InputRatingCustom" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-rating-custom.tsx" react title="自定义图标与 ui" description="icon / emptyIcon / item / ui 主题插槽" />
 
 ## 安装
 

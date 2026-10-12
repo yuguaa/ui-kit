@@ -7,56 +7,33 @@ description: 头像用于展示用户形象，支持圆形/方形、五档尺寸
 
 头像用于展示用户形象，支持圆形/方形、五档尺寸、图片、图标、文字与 chip 徽标，图片加载失败时自动展示 fallback 内容。
 
-<script setup>
-import AvatarSizes from '@demos/react/avatar-sizes'
-import avatarSizesRaw from '@demos/react/avatar-sizes.tsx.code.txt?raw'
-import AvatarIconText from '@demos/react/avatar-icon-text'
-import avatarIconTextRaw from '@demos/react/avatar-icon-text.tsx.code.txt?raw'
-import AvatarColors from '@demos/react/avatar-colors'
-import avatarColorsRaw from '@demos/react/avatar-colors.tsx.code.txt?raw'
-import AvatarChip from '@demos/react/avatar-chip'
-import avatarChipRaw from '@demos/react/avatar-chip.tsx.code.txt?raw'
-import AvatarUi from '@demos/react/avatar-ui'
-import avatarUiRaw from '@demos/react/avatar-ui.tsx.code.txt?raw'
-</script>
-
 ## 尺寸与形状
 
-<DemoBlock title="五档尺寸与形状" description="size 控制尺寸，shape 切换圆形 / 方形" :code="avatarSizesRaw">
-  <ReactDemo :component="AvatarSizes" />
-</DemoBlock>
+<DemoPreview file="demos/react/avatar-sizes.tsx" react title="五档尺寸与形状" description="size 控制尺寸，shape 切换圆形 / 方形" />
 
 ## 图片、文字与图标
 
 有 src 时展示图片，加载失败自动展示 fallback；无图片时可通过 text 显示文字，也可使用 icon 属性（图标名或图标元素）显示图标，两者都缺省时由 alt 生成首字母（最多两个）。
 
-<DemoBlock title="图片 · 文字 · 图标 · 首字母" description="src 图片、text 文字、icon 属性图标、alt 首字母回退" :code="avatarIconTextRaw">
-  <ReactDemo :component="AvatarIconText" />
-</DemoBlock>
+<DemoPreview file="demos/react/avatar-icon-text.tsx" react title="图片 · 文字 · 图标 · 首字母" description="src 图片、text 文字、icon 属性图标、alt 首字母回退" />
 
 ## 语义色
 
 color 属性为文字/图标头像提供七种语义色背景（1 阶背景、7 阶文字色），默认 neutral。
 
-<DemoBlock title="七种语义色" description="color 属性控制文字/图标头像的背景与文字色" :code="avatarColorsRaw">
-  <ReactDemo :component="AvatarColors" />
-</DemoBlock>
+<DemoPreview file="demos/react/avatar-colors.tsx" react title="七种语义色" description="color 属性控制文字/图标头像的背景与文字色" />
 
 ## chip 徽标
 
 chip 接受布尔或配置对象。布尔渲染默认主色圆点；对象可指定 text、color、size 与 position（top-right / bottom-right / top-left / bottom-left）。
 
-<DemoBlock title="chip 徽标" description="布尔圆点与配置对象徽标" :code="avatarChipRaw">
-  <ReactDemo :component="AvatarChip" />
-</DemoBlock>
+<DemoPreview file="demos/react/avatar-chip.tsx" react title="chip 徽标" description="布尔圆点与配置对象徽标" />
 
 ## ui 插槽自定义
 
 ui 按主题插槽（root / image / fallback / icon）覆盖类名。
 
-<DemoBlock title="ui 插槽类名" description="root / image / fallback 插槽类名" :code="avatarUiRaw">
-  <ReactDemo :component="AvatarUi" />
-</DemoBlock>
+<DemoPreview file="demos/react/avatar-ui.tsx" react title="ui 插槽类名" description="root / image / fallback 插槽类名" />
 
 ## 安装
 

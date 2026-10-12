@@ -7,52 +7,30 @@ description: HSV 色板与色相轨道拖拽选色
 
 饱和度/亮度色板加色相轨道拖拽选色，支持 hex / rgb / hsl / cmyk / lab 五种输出格式与五档尺寸。
 
-<script setup>
-import ColorPickerBasic from '@demos/vue/color-picker-basic.vue'
-import colorPickerBasicRaw from '@demos/vue/color-picker-basic.vue.code.txt?raw'
-import ColorPickerSizes from '@demos/vue/color-picker-sizes.vue'
-import colorPickerSizesRaw from '@demos/vue/color-picker-sizes.vue.code.txt?raw'
-import ColorPickerFormats from '@demos/vue/color-picker-formats.vue'
-import colorPickerFormatsRaw from '@demos/vue/color-picker-formats.vue.code.txt?raw'
-import ColorPickerStates from '@demos/vue/color-picker-states.vue'
-import colorPickerStatesRaw from '@demos/vue/color-picker-states.vue.code.txt?raw'
-import ColorPickerUiCustom from '@demos/vue/color-picker-ui-custom.vue'
-import colorPickerUiCustomRaw from '@demos/vue/color-picker-ui-custom.vue.code.txt?raw'
-</script>
 
 ## 基础用法
 
 `v-model` 绑定颜色，拖拽色板调整饱和度与亮度，拖拽色相轨道调整色相。
 
-<DemoBlock title="基础用法" description="v-model 绑定，默认 hex 输出" :code="colorPickerBasicRaw">
-  <ColorPickerBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/color-picker-basic.vue" title="基础用法" description="v-model 绑定，默认 hex 输出" />
 
 ## 尺寸
 
-<DemoBlock title="五档尺寸" description="xs → xl" :code="colorPickerSizesRaw">
-  <ColorPickerSizes />
-</DemoBlock>
+<DemoPreview file="demos/vue/color-picker-sizes.vue" title="五档尺寸" description="xs → xl" />
 
 ## 输出格式
 
 `format` 控制 modelValue 的输出格式：hex / rgb / hsl / cmyk / lab。
 
-<DemoBlock title="五种输出格式" description="切换 format 观察输出字符串变化" :code="colorPickerFormatsRaw">
-  <ColorPickerFormats />
-</DemoBlock>
+<DemoPreview file="demos/vue/color-picker-formats.vue" title="五种输出格式" description="切换 format 观察输出字符串变化" />
 
 ## 状态
 
-<DemoBlock title="禁用与节流" description="disabled 禁止拖拽，throttle 控制值更新频率" :code="colorPickerStatesRaw">
-  <ColorPickerStates />
-</DemoBlock>
+<DemoPreview file="demos/vue/color-picker-states.vue" title="禁用与节流" description="disabled 禁止拖拽，throttle 控制值更新频率" />
 
 ## ui 插槽
 
-<DemoBlock title="ui 插槽自定义" description="picker / selector / selectorBackground / selectorThumb / track / trackThumb 覆盖类名" :code="colorPickerUiCustomRaw">
-  <ColorPickerUiCustom />
-</DemoBlock>
+<DemoPreview file="demos/vue/color-picker-ui-custom.vue" title="ui 插槽自定义" description="picker / selector / selectorBackground / selectorThumb / track / trackThumb 覆盖类名" />
 
 ## 安装
 

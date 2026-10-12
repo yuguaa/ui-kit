@@ -8,7 +8,8 @@ import { existsSync, readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
-import { defineConfig } from "vitepress";
+import { defineConfig, postcssIsolateStyles } from "vitepress";
+import { demoPreviewPlugin } from "./config/plugins/demo-preview";
 
 const componentItems = [
   { text: "Button 按钮", link: "components/button" },
@@ -173,6 +174,12 @@ export default defineConfig({
   },
   vite: {
     plugins: [react(), tailwindcss()],
+    /* vben 文档架子：隔离 VitePress 的 vp-doc 排版样式，使其不影响组件 demo 渲染 */
+    css: {
+      postcss: {
+        plugins: [postcssIsolateStyles({ includeFiles: [/vp-doc\.css/] })],
+      },
+    },
     resolve: {
       alias: [
         {
@@ -224,6 +231,9 @@ export default defineConfig({
     lastUpdated: { text: "最后更新" },
   },
   markdown: {
+    preConfig(md) {
+      md.use(demoPreviewPlugin);
+    },
     theme: { light: "github-light", dark: "github-dark" },
   },
 });

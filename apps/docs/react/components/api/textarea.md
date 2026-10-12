@@ -18,3 +18,5 @@
 | ui? | XTextareaUi | - | 主题插槽类名 |
 | autofocus? | boolean | - | 挂载后自动聚焦原生输入元素 |
 | autofocusDelay? | number | - | 自动聚焦的延迟（毫秒） |
+| variant? | XInputVariant | - | 预设样式（与 Nuxt 版 variant prop 对齐） |
+| avatar? | React.ReactNode | - | 左侧头像内容 |

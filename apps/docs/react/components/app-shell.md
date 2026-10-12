@@ -7,18 +7,11 @@ description: 浮动可折叠侧边栏、command-k 搜索、工作区切换与面
 
 参考 ReUI app-shell-2 构建的后台管理框架示例：浮动式侧边栏可折叠为图标栏，内置工作区切换器、嵌套导航（含状态脉冲与计数徽标）、command-k 搜索对话框与面包屑头部，正文为统计卡片与最近活动列表。
 
-<script setup>
-import AppShell2 from '@demos/react/app-shell-2'
-import appShell2Raw from '@demos/react/app-shell-2.tsx.code.txt?raw'
-</script>
-
 ## 完整示例
 
 侧边栏展开宽度 232px，点击左下角「收起侧边栏」折叠为 56px 图标栏；按 `⌘K`（Windows 为 `Ctrl+K`）打开命令搜索对话框。快捷键通过 `useEffect` 注册全局 keydown 监听并在卸载时清理。
 
-<DemoBlock title="App Shell 框架" description="浮动侧边栏 + command-k 搜索 + 工作区切换 + 面包屑头部" :code="appShell2Raw">
-  <ReactDemo :component="AppShell2" />
-</DemoBlock>
+<DemoPreview file="demos/react/app-shell-2.tsx" react title="App Shell 框架" description="浮动侧边栏 + command-k 搜索 + 工作区切换 + 面包屑头部" />
 
 ## 结构说明
 

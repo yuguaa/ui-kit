@@ -7,26 +7,15 @@ description: 名称驱动的矢量图标，内置常用图标集合与五档尺�
 
 名称驱动的矢量图标（lucide），内置常用图标集合与五档尺寸，颜色可自定义。`mode` 切换 svg 渲染（默认）与 Iconify CSS 类名输出，`customize` 在 svg 渲染后修改图标元素。需要内置集合之外的图标时，直接引入 lucide 图标组件即可。
 
-<script setup>
-import IconBasic from '@demos/vue/icon-basic.vue'
-import iconBasicRaw from '@demos/vue/icon-basic.vue.code.txt?raw'
-import IconModes from '@demos/vue/icon-modes.vue'
-import iconModesRaw from '@demos/vue/icon-modes.vue.code.txt?raw'
-</script>
-
 ## 基础用法
 
-<DemoBlock title="图标集合、尺寸与颜色" description="name 选择图标，size 选择尺寸，color 自定义颜色" :code="iconBasicRaw">
-  <IconBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/icon-basic.vue" title="图标集合、尺寸与颜色" description="name 选择图标，size 选择尺寸，color 自定义颜色" />
 
 ## 渲染模式与定制
 
 svg 模式渲染 lucide SVG，css 模式输出 `i-lucide-*` Iconify CSS 类名（配合 UnoCSS / Iconify 环境使用）；customize 在 svg 渲染后修改图标元素；ui 插槽注入根元素类名。
 
-<DemoBlock title="mode · customize · ui" description="svg/css 渲染模式、customize 修改 svg、ui.root 类名" :code="iconModesRaw">
-  <IconModes />
-</DemoBlock>
+<DemoPreview file="demos/vue/icon-modes.vue" title="mode · customize · ui" description="svg/css 渲染模式、customize 修改 svg、ui.root 类名" />
 
 ## 安装
 

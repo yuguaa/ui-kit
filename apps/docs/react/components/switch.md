@@ -7,44 +7,26 @@ description: 表示两种状态之间的切换，支持滑块内图标、语义�
 
 表示两种状态之间的切换，支持滑块内图标、语义色、两档尺寸、加载态与说明文字。
 
-<script setup>
-import SwitchBasicDemo from '@demos/react/switch-basic-demo'
-import switchBasicDemoRaw from '@demos/react/switch-basic-demo.tsx.code.txt?raw'
-import SwitchLoadingDemo from '@demos/react/switch-loading-demo'
-import switchLoadingDemoRaw from '@demos/react/switch-loading-demo.tsx.code.txt?raw'
-import SwitchIconsDemo from '@demos/react/switch-icons'
-import switchIconsRaw from '@demos/react/switch-icons.tsx.code.txt?raw'
-import SwitchUiCustomDemo from '@demos/react/switch-ui-custom'
-import switchUiCustomRaw from '@demos/react/switch-ui-custom.tsx.code.txt?raw'
-</script>
 
-<DemoBlock title="开关 / 文字 / 尺寸 / 语义色" description="checked / checkedChildren / size / disabled / color" :code="switchBasicDemoRaw">
-  <ReactDemo :component="SwitchBasicDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/switch-basic-demo.tsx" react title="开关 / 文字 / 尺寸 / 语义色" description="checked / checkedChildren / size / disabled / color" />
 
 ## 加载态、说明文字与必选
 
 loading 阻止交互并显示旋转图标，description 展示 label 下方的辅助说明文字。
 
-<DemoBlock title="加载态与说明" description="loading / loadingIcon / description / required" :code="switchLoadingDemoRaw">
-  <ReactDemo :component="SwitchLoadingDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/switch-loading-demo.tsx" react title="加载态与说明" description="loading / loadingIcon / description / required" />
 
 ## 滑块内图标与聚焦环
 
 `checkedIcon` / `uncheckedIcon` 在滑块内按状态显示图标；`highlight` 常显聚焦环。
 
-<DemoBlock title="滑块内图标与 highlight" description="checkedIcon / uncheckedIcon / highlight / color" :code="switchIconsRaw">
-  <ReactDemo :component="SwitchIconsDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/switch-icons.tsx" react title="滑块内图标与 highlight" description="checkedIcon / uncheckedIcon / highlight / color" />
 
 ## ui 插槽
 
 `ui` 按主题插槽覆盖类名。
 
-<DemoBlock title="ui 插槽自定义" description="ui 键：root / base / container / thumb / icon / wrapper / label / description" :code="switchUiCustomRaw">
-  <ReactDemo :component="SwitchUiCustomDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/switch-ui-custom.tsx" react title="ui 插槽自定义" description="ui 键：root / base / container / thumb / icon / wrapper / label / description" />
 
 ## 安装
 

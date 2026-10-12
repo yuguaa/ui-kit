@@ -7,38 +7,23 @@ description: 在同一区域内切换不同视图或内容分组
 
 items 字段（label / icon / avatar / badge / slot / content / value）驱动，`variant` 支持 pill / link，`orientation` 支持 horizontal / vertical，支持受控 `modelValue` 与非受控 `defaultValue`。
 
-<script setup>
-import TabsBasicDemo from '@demos/vue/tabs-basic-demo.vue'
-import tabsBasicDemoRaw from '@demos/vue/tabs-basic-demo.vue.code.txt?raw'
-import TabsOrientationSize from '@demos/vue/tabs-orientation-size.vue'
-import tabsOrientationSizeRaw from '@demos/vue/tabs-orientation-size.vue.code.txt?raw'
-import TabsUiCustom from '@demos/vue/tabs-ui-custom.vue'
-import tabsUiCustomRaw from '@demos/vue/tabs-ui-custom.vue.code.txt?raw'
-</script>
-
 ## 变体
 
 `variant="pill"` 使用胶囊指示器，`variant="link"` 使用下划线指示器；内容面板跟随激活标签渲染。
 
-<DemoBlock title="pill 与 link 变体" description="variant / v-model" :code="tabsBasicDemoRaw">
-  <TabsBasicDemo />
-</DemoBlock>
+<DemoPreview file="demos/vue/tabs-basic-demo.vue" title="pill 与 link 变体" description="variant / v-model" />
 
 ## 方向与尺寸
 
 `orientation="vertical"` 将标签列放在左侧、内容放在右侧；`size` 提供 xs / sm / md / lg / xl 五档，控制标签的内边距、字号与图标尺寸。
 
-<DemoBlock title="纵向 + 多档尺寸" description="orientation / size" :code="tabsOrientationSizeRaw">
-  <TabsOrientationSize />
-</DemoBlock>
+<DemoPreview file="demos/vue/tabs-orientation-size.vue" title="纵向 + 多档尺寸" description="orientation / size" />
 
 ## 字段映射、插槽与 ui 插槽
 
 `icon` / `avatar` / `badge` 字段渲染前置与后置内容；`slot` 字段把内容面板分发到同名插槽；`ui` 按主题插槽覆盖类名。
 
-<DemoBlock title="字段映射 · 插槽 · ui" description="icon / avatar / badge / slot / ui" :code="tabsUiCustomRaw">
-  <TabsUiCustom />
-</DemoBlock>
+<DemoPreview file="demos/vue/tabs-ui-custom.vue" title="字段映射 · 插槽 · ui" description="icon / avatar / badge / slot / ui" />
 
 ## 安装
 

@@ -7,72 +7,42 @@ description: 在一组可选项中进行多项选择
 
 在一组可选项中进行多项选择，支持半选状态、说明文字、语义色与三档尺寸。
 
-<script setup>
-import CheckboxBasicDemo from '@demos/vue/checkbox-basic-demo.vue'
-import checkboxBasicDemoRaw from '@demos/vue/checkbox-basic-demo.vue.code.txt?raw'
-import CheckboxDescriptionDemo from '@demos/vue/checkbox-description.vue'
-import checkboxDescriptionRaw from '@demos/vue/checkbox-description.vue.code.txt?raw'
-import CheckboxColorDemo from '@demos/vue/checkbox-color.vue'
-import checkboxColorRaw from '@demos/vue/checkbox-color.vue.code.txt?raw'
-import CheckboxSizeDemo from '@demos/vue/checkbox-size.vue'
-import checkboxSizeRaw from '@demos/vue/checkbox-size.vue.code.txt?raw'
-import CheckboxVariantDemo from '@demos/vue/checkbox-variant.vue'
-import checkboxVariantRaw from '@demos/vue/checkbox-variant.vue.code.txt?raw'
-import CheckboxIconDemo from '@demos/vue/checkbox-icon.vue'
-import checkboxIconRaw from '@demos/vue/checkbox-icon.vue.code.txt?raw'
-import CheckboxUiCustomDemo from '@demos/vue/checkbox-ui-custom.vue'
-import checkboxUiCustomRaw from '@demos/vue/checkbox-ui-custom.vue.code.txt?raw'
-</script>
 
-<DemoBlock title="选中 / 半选 / 禁用 / 必选" description="v-model / indeterminate / disabled / required" :code="checkboxBasicDemoRaw">
-  <CheckboxBasicDemo />
-</DemoBlock>
+<DemoPreview file="demos/vue/checkbox-basic-demo.vue" title="选中 / 半选 / 禁用 / 必选" description="v-model / indeterminate / disabled / required" />
 
 ## 说明文字
 
 description 插槽在选项文字下方展示辅助说明。
 
-<DemoBlock title="label 下方辅助说明" description="description 插槽" :code="checkboxDescriptionRaw">
-  <CheckboxDescriptionDemo />
-</DemoBlock>
+<DemoPreview file="demos/vue/checkbox-description.vue" title="label 下方辅助说明" description="description 插槽" />
 
 ## 语义色
 
 color 属性控制选中与半选状态下指示块的颜色。
 
-<DemoBlock title="七种语义色" description="color 属性，选中与半选状态" :code="checkboxColorRaw">
-  <CheckboxColorDemo />
-</DemoBlock>
+<DemoPreview file="demos/vue/checkbox-color.vue" title="七种语义色" description="color 属性，选中与半选状态" />
 
 ## 尺寸
 
-<DemoBlock title="三档尺寸" description="sm / md / lg，图标同步缩放" :code="checkboxSizeRaw">
-  <CheckboxSizeDemo />
-</DemoBlock>
+<DemoPreview file="demos/vue/checkbox-size.vue" title="三档尺寸" description="sm / md / lg，图标同步缩放" />
 
 ## 变体与指示块位置
 
 `variant="card"` 时整个卡片可点击；`indicator` 控制指示块位置，`hidden` 时指示块隐藏、图标显示在 label 上方。
 
-<DemoBlock title="variant 与 indicator" description="list / card × start / end / hidden" :code="checkboxVariantRaw">
-  <CheckboxVariantDemo />
-</DemoBlock>
+<DemoPreview file="demos/vue/checkbox-variant.vue" title="variant 与 indicator" description="list / card × start / end / hidden" />
 
 ## 自定义图标与聚焦环
 
 `icon` / `indeterminateIcon` 自定义选中与半选图标；`highlight` 常显聚焦环。
 
-<DemoBlock title="icon 与 highlight" description="icon / indeterminateIcon / highlight" :code="checkboxIconRaw">
-  <CheckboxIconDemo />
-</DemoBlock>
+<DemoPreview file="demos/vue/checkbox-icon.vue" title="icon 与 highlight" description="icon / indeterminateIcon / highlight" />
 
 ## ui 插槽
 
 `ui` 按主题插槽覆盖类名。
 
-<DemoBlock title="ui 插槽自定义" description="ui 键：root / container / base / indicator / icon / wrapper / label / description" :code="checkboxUiCustomRaw">
-  <CheckboxUiCustomDemo />
-</DemoBlock>
+<DemoPreview file="demos/vue/checkbox-ui-custom.vue" title="ui 插槽自定义" description="ui 键：root / container / base / indicator / icon / wrapper / label / description" />
 
 ## 安装
 

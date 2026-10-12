@@ -7,62 +7,36 @@ description: 在一组可选项中进行单项选择
 
 在一组可选项中进行单项选择，支持组标题、横向 / 纵向排列、字段映射、语义色与五档尺寸。
 
-<script setup>
-import RadioGroupBasicDemo from '@demos/react/radio-group-basic'
-import radioGroupBasicRaw from '@demos/react/radio-group-basic.tsx.code.txt?raw'
-import RadioGroupFieldMappingDemo from '@demos/react/radio-group-field-mapping'
-import radioGroupFieldMappingRaw from '@demos/react/radio-group-field-mapping.tsx.code.txt?raw'
-import RadioGroupVariantsDemo from '@demos/react/radio-group-variants'
-import radioGroupVariantsRaw from '@demos/react/radio-group-variants.tsx.code.txt?raw'
-import RadioGroupColorSizeDemo from '@demos/react/radio-group-color-size'
-import radioGroupColorSizeRaw from '@demos/react/radio-group-color-size.tsx.code.txt?raw'
-import RadioGroupIndicatorDemo from '@demos/react/radio-group-indicator'
-import radioGroupIndicatorRaw from '@demos/react/radio-group-indicator.tsx.code.txt?raw'
-import RadioGroupUiCustomDemo from '@demos/react/radio-group-ui-custom'
-import radioGroupUiCustomRaw from '@demos/react/radio-group-ui-custom.tsx.code.txt?raw'
-</script>
 
-<DemoBlock title="基础用法" description="legend 组标题 / orientation 方向" :code="radioGroupBasicRaw">
-  <ReactDemo :component="RadioGroupBasicDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/radio-group-basic.tsx" react title="基础用法" description="legend 组标题 / orientation 方向" />
 
 ## 字段映射与插槽
 
 `valueKey` / `labelKey` / `descriptionKey` 映射选项对象字段；`label` / `description` 属性自定义单项渲染。
 
-<DemoBlock title="字段映射与插槽" description="valueKey / labelKey / descriptionKey 与 label / description 属性" :code="radioGroupFieldMappingRaw">
-  <ReactDemo :component="RadioGroupFieldMappingDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/radio-group-field-mapping.tsx" react title="字段映射与插槽" description="valueKey / labelKey / descriptionKey 与 label / description 属性" />
 
 ## 变体
 
 `variant="button"` 将选项渲染为紧凑按钮，`buttonStyle` 控制选中填充。
 
-<DemoBlock title="radio 与 button 变体" description="variant / buttonStyle / orientation" :code="radioGroupVariantsRaw">
-  <ReactDemo :component="RadioGroupVariantsDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/radio-group-variants.tsx" react title="radio 与 button 变体" description="variant / buttonStyle / orientation" />
 
 ## 语义色与尺寸
 
-<DemoBlock title="七种语义色 × 五档尺寸" description="color / size / highlight" :code="radioGroupColorSizeRaw">
-  <ReactDemo :component="RadioGroupColorSizeDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/radio-group-color-size.tsx" react title="七种语义色 × 五档尺寸" description="color / size / highlight" />
 
 ## 指示圆点位置
 
 `indicator="hidden"` 时圆点隐藏，选项的 `icon` 显示在 label 上方。
 
-<DemoBlock title="indicator 位置" description="start / end / hidden" :code="radioGroupIndicatorRaw">
-  <ReactDemo :component="RadioGroupIndicatorDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/radio-group-indicator.tsx" react title="indicator 位置" description="start / end / hidden" />
 
 ## ui 插槽
 
 `ui` 按主题插槽覆盖类名，选项内 `ui` 字段可单项覆盖。
 
-<DemoBlock title="ui 插槽自定义" description="ui 键：root / fieldset / legend / item / container / base / indicator / wrapper / label / icon / description" :code="radioGroupUiCustomRaw">
-  <ReactDemo :component="RadioGroupUiCustomDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/radio-group-ui-custom.tsx" react title="ui 插槽自定义" description="ui 键：root / fieldset / legend / item / container / base / indicator / wrapper / label / icon / description" />
 
 ## 安装
 

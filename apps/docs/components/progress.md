@@ -7,48 +7,29 @@ description: 展示操作进度，支持不确定进度动画、步骤条与纵�
 
 展示操作的当前进度。modelValue 为 null 时进入不确定进度，按 animation 播放指示器动画；max 传数组时渲染步骤条。
 
-<script setup>
-import ProgressBasic from '@demos/vue/progress-basic.vue'
-import progressBasicRaw from '@demos/vue/progress-basic.vue.code.txt?raw'
-import ProgressIndeterminate from '@demos/vue/progress-indeterminate.vue'
-import progressIndeterminateRaw from '@demos/vue/progress-indeterminate.vue.code.txt?raw'
-import ProgressSteps from '@demos/vue/progress-steps.vue'
-import progressStepsRaw from '@demos/vue/progress-steps.vue.code.txt?raw'
-import ProgressVertical from '@demos/vue/progress-vertical.vue'
-import progressVerticalRaw from '@demos/vue/progress-vertical.vue.code.txt?raw'
-</script>
-
 ## 确定进度
 
 status 开启后显示百分比文本，status 插槽可自定义内容。
 
-<DemoBlock title="确定进度与百分比" description="modelValue / status / ui" :code="progressBasicRaw">
-  <ProgressBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/progress-basic.vue" title="确定进度与百分比" description="modelValue / status / ui" />
 
 ## 不确定进度
 
 modelValue 为 null 时指示器播放不确定动画，animation 提供 carousel / carousel-inverse / swing / elastic 四种。
 
-<DemoBlock title="不确定进度动画" description="animation" :code="progressIndeterminateRaw">
-  <ProgressIndeterminate />
-</DemoBlock>
+<DemoPreview file="demos/vue/progress-indeterminate.vue" title="不确定进度动画" description="animation" />
 
 ## 步骤条
 
 max 传数组时渲染步骤条，当前步骤高亮显示，step-{index} 插槽可自定义每步文案。
 
-<DemoBlock title="步骤条" description="max 数组 / step 插槽" :code="progressStepsRaw">
-  <ProgressSteps />
-</DemoBlock>
+<DemoPreview file="demos/vue/progress-steps.vue" title="步骤条" description="max 数组 / step 插槽" />
 
 ## 纵向与反转
 
 orientation 设为 vertical 后进度条纵向排布，inverted 反转进度方向。
 
-<DemoBlock title="纵向与反转" description="orientation / inverted" :code="progressVerticalRaw">
-  <ProgressVertical />
-</DemoBlock>
+<DemoPreview file="demos/vue/progress-vertical.vue" title="纵向与反转" description="orientation / inverted" />
 
 ## 安装
 

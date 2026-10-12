@@ -7,58 +7,35 @@ description: 带标签、说明与错误信息的表单字段
 
 带标签、辅助说明与错误信息的表单字段，错误信息优先取 error prop，其次按 name / errorPattern 匹配表单校验结果。结构对齐 Nuxt UI：root > wrapper（标签行 + 说明）> container（控件 + 错误 / 帮助）。
 
-<script setup>
-import FormFieldOrientation from '@demos/vue/form-field-orientation.vue'
-import formFieldOrientationRaw from '@demos/vue/form-field-orientation.vue.code.txt?raw'
-import FormFieldSize from '@demos/vue/form-field-size.vue'
-import formFieldSizeRaw from '@demos/vue/form-field-size.vue.code.txt?raw'
-import FormFieldSlots from '@demos/vue/form-field-slots.vue'
-import formFieldSlotsRaw from '@demos/vue/form-field-slots.vue.code.txt?raw'
-import FormFieldHint from '@demos/vue/form-field-hint.vue'
-import formFieldHintRaw from '@demos/vue/form-field-hint.vue.code.txt?raw'
-import FormFieldUiCustom from '@demos/vue/form-field-ui-custom.vue'
-import formFieldUiCustomRaw from '@demos/vue/form-field-ui-custom.vue.code.txt?raw'
-</script>
-
 ## 排列方向
 
 `orientation` 控制标签与控件的布局：vertical 标签在上，horizontal 标签与控件同一行。
 
-<DemoBlock title="vertical 与 horizontal" description="orientation 属性控制排列方向" :code="formFieldOrientationRaw">
-  <FormFieldOrientation />
-</DemoBlock>
+<DemoPreview file="demos/vue/form-field-orientation.vue" title="vertical 与 horizontal" description="orientation 属性控制排列方向" />
 
 ## 尺寸
 
 `size` 控制根节点字号（xs → xl）。
 
-<DemoBlock title="五档尺寸" description="size 属性控制字段字号" :code="formFieldSizeRaw">
-  <FormFieldSize />
-</DemoBlock>
+<DemoPreview file="demos/vue/form-field-size.vue" title="五档尺寸" description="size 属性控制字段字号" />
 
 ## 插槽
 
 label / description / error / help / hint 五个插槽均可自定义内容；hint 渲染在标签右侧，description 渲染在标签下方，error 与 help 渲染在控件下方（有错误时显示 error，否则显示 help）。
 
-<DemoBlock title="五个插槽" description="label / description / error / help / hint 自定义内容" :code="formFieldSlotsRaw">
-  <FormFieldSlots />
-</DemoBlock>
+<DemoPreview file="demos/vue/form-field-slots.vue" title="五个插槽" description="label / description / error / help / hint 自定义内容" />
 
 ## 标签提示
 
 `hint` 用于说明填写要求，可通过 `hint` 插槽自定义内容。
 
-<DemoBlock title="标签提示" description="hint 属性与 hint 插槽" :code="formFieldHintRaw">
-  <FormFieldHint />
-</DemoBlock>
+<DemoPreview file="demos/vue/form-field-hint.vue" title="标签提示" description="hint 属性与 hint 插槽" />
 
 ## ui 插槽
 
 `ui` 按主题插槽（root / wrapper / labelWrapper / label / container / description / error / hint / help）覆盖类名。
 
-<DemoBlock title="ui 插槽" description="九个主题插槽键的类名自定义" :code="formFieldUiCustomRaw">
-  <FormFieldUiCustom />
-</DemoBlock>
+<DemoPreview file="demos/vue/form-field-ui-custom.vue" title="ui 插槽" description="九个主题插槽键的类名自定义" />
 
 ## 安装
 

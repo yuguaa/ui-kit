@@ -7,46 +7,28 @@ description: 带步进按钮的数字输入框
 
 带加减步进按钮的数字输入框，支持横向 / 纵向两种步进方向。
 
-<script setup>
-import InputNumberBasic from '@demos/vue/input-number-basic.vue'
-import inputNumberBasicRaw from '@demos/vue/input-number-basic.vue.code.txt?raw'
-import InputNumberOrientation from '@demos/vue/input-number-orientation.vue'
-import inputNumberOrientationRaw from '@demos/vue/input-number-orientation.vue.code.txt?raw'
-import InputNumberSlots from '@demos/vue/input-number-slots.vue'
-import inputNumberSlotsRaw from '@demos/vue/input-number-slots.vue.code.txt?raw'
-import InputNumberUi from '@demos/vue/input-number-ui.vue'
-import inputNumberUiRaw from '@demos/vue/input-number-ui.vue.code.txt?raw'
-</script>
 
 ## 基础用法
 
 min / max 限制取值范围（到达边界时对应步进按钮自动禁用），step 控制步长。
 
-<DemoBlock title="范围与步长" description="modelValue / min / max / step / placeholder" :code="inputNumberBasicRaw">
-  <InputNumberBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-number-basic.vue" title="范围与步长" description="modelValue / min / max / step / placeholder" />
 
 ## 方向与尺寸
 
 orientation 区分 horizontal（两侧步进）与 vertical（右侧堆叠步进）；size 支持 xs / sm / md / lg / xl 五档。
 
-<DemoBlock title="方向与尺寸" description="orientation / size" :code="inputNumberOrientationRaw">
-  <InputNumberOrientation />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-number-orientation.vue" title="方向与尺寸" description="orientation / size" />
 
 ## 步进按钮
 
 increment / decrement 插槽替换按钮内容；incrementDisabled / decrementDisabled 独立禁用；decrement=false 隐藏减号按钮。
 
-<DemoBlock title="按钮插槽与禁用态" description="increment / decrement / incrementDisabled / decrementDisabled" :code="inputNumberSlotsRaw">
-  <InputNumberSlots />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-number-slots.vue" title="按钮插槽与禁用态" description="increment / decrement / incrementDisabled / decrementDisabled" />
 
 ## ui 插槽自定义
 
-<DemoBlock title="主题插槽类名与渲染元素" description="ui 的 base 键 / as" :code="inputNumberUiRaw">
-  <InputNumberUi />
-</DemoBlock>
+<DemoPreview file="demos/vue/input-number-ui.vue" title="主题插槽类名与渲染元素" description="ui 的 base 键 / as" />
 
 ## 安装
 

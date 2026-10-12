@@ -7,38 +7,23 @@ description: 为页面提供功能导航，支持垂直手风琴、水平内容�
 
 为页面提供功能导航。垂直方向（`orientation="vertical"`）使用手风琴展开子菜单，`collapsed` 折叠为仅图标并用 `popover` / `tooltip` 展示子菜单与标签；水平方向使用内容面板悬浮展开；`highlight` 选中项显示指示线；`labelKey` / `valueKey` 支持任意字段映射。
 
-<script setup>
-import NavigationMenuVertical from '@demos/vue/navigation-menu-vertical.vue'
-import navigationMenuVerticalRaw from '@demos/vue/navigation-menu-vertical.vue.code.txt?raw'
-import NavigationMenuHorizontal from '@demos/vue/navigation-menu-horizontal.vue'
-import navigationMenuHorizontalRaw from '@demos/vue/navigation-menu-horizontal.vue.code.txt?raw'
-import NavigationMenuCollapsed from '@demos/vue/navigation-menu-collapsed.vue'
-import navigationMenuCollapsedRaw from '@demos/vue/navigation-menu-collapsed.vue.code.txt?raw'
-</script>
-
 ## 垂直手风琴
 
 垂直方向手风琴展开子菜单；type: 'label' 渲染分组标题；highlight 选中项显示指示线（嵌套级在左侧，highlightColor 指定颜色）；variant 提供 pill / link 两种预设。
 
-<DemoBlock title="手风琴 · 分组 · 指示线 · 字段映射" description="children / label / highlight / highlightColor / variant / labelKey" :code="navigationMenuVerticalRaw">
-  <NavigationMenuVertical />
-</DemoBlock>
+<DemoPreview file="demos/vue/navigation-menu-vertical.vue" title="手风琴 · 分组 · 指示线 · 字段映射" description="children / label / highlight / highlightColor / variant / labelKey" />
 
 ## 水平内容面板
 
 水平方向悬浮展开内容面板，子项支持 icon 与 description；arrow 显示指向面板的指示箭头；target: '_blank' 的项显示 externalIcon。
 
-<DemoBlock title="水平面板 · 箭头 · 外链" description="orientation / content / arrow / externalIcon" :code="navigationMenuHorizontalRaw">
-  <NavigationMenuHorizontal />
-</DemoBlock>
+<DemoPreview file="demos/vue/navigation-menu-horizontal.vue" title="水平面板 · 箭头 · 外链" description="orientation / content / arrow / externalIcon" />
 
 ## 折叠图标模式
 
 collapsed 折叠为仅图标；tooltip 悬停显示标签，popover 悬停展开子菜单列表；badge 徽标在折叠时隐藏；ui 按主题插槽覆盖类名。
 
-<DemoBlock title="折叠 · tooltip · popover · ui" description="collapsed / tooltip / popover / badge / ui" :code="navigationMenuCollapsedRaw">
-  <NavigationMenuCollapsed />
-</DemoBlock>
+<DemoPreview file="demos/vue/navigation-menu-collapsed.vue" title="折叠 · tooltip · popover · ui" description="collapsed / tooltip / popover / badge / ui" />
 
 ## 安装
 

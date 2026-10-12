@@ -7,48 +7,29 @@ description: 通用卡片容器，支持三种变体、标题区与底部区插�
 
 通用卡片容器，用于承载标题、操作区、封面与底部操作。内置 outline / solid / soft 三种变体，支持 header 与 footer 插槽整体替换头部与底部区域。
 
-<script setup>
-import CardVariants from '@demos/vue/card-variants.vue'
-import cardVariantsRaw from '@demos/vue/card-variants.vue.code.txt?raw'
-import CardHoverable from '@demos/vue/card-hoverable.vue'
-import cardHoverableRaw from '@demos/vue/card-hoverable.vue.code.txt?raw'
-import CardSlots from '@demos/vue/card-slots.vue'
-import cardSlotsRaw from '@demos/vue/card-slots.vue.code.txt?raw'
-import CardUi from '@demos/vue/card-ui.vue'
-import cardUiRaw from '@demos/vue/card-ui.vue.code.txt?raw'
-</script>
-
 ## 变体
 
 outline 描边卡片（默认）、solid 反色卡片、soft 轻底卡片。bordered=false 可去掉描边。
 
-<DemoBlock title="三种变体" description="variant：outline / solid / soft" :code="cardVariantsRaw">
-  <CardVariants />
-</DemoBlock>
+<DemoPreview file="demos/vue/card-variants.vue" title="三种变体" description="variant：outline / solid / soft" />
 
 ## 插槽
 
 header / footer 整体替换头部与底部区域；title / description 单独替换标题与描述。
 
-<DemoBlock title="header / footer / title / description" description="同名插槽覆盖对应分区" :code="cardSlotsRaw">
-  <CardSlots />
-</DemoBlock>
+<DemoPreview file="demos/vue/card-slots.vue" title="header / footer / title / description" description="同名插槽覆盖对应分区" />
 
 ## ui 插槽
 
 按主题插槽键注入类名，覆盖根、头部、标题、描述、主体与底部六个分区。
 
-<DemoBlock title="ui 插槽自定义" description="ui：root / header / title / description / body / footer" :code="cardUiRaw">
-  <CardUi />
-</DemoBlock>
+<DemoPreview file="demos/vue/card-ui.vue" title="ui 插槽自定义" description="ui：root / header / title / description / body / footer" />
 
 ## 悬浮反馈
 
 hoverable 开启后，悬浮时阴影加深、ring 边框色高亮。
 
-<DemoBlock title="可悬浮与底部操作区" description="hoverable / actions / click" :code="cardHoverableRaw">
-  <CardHoverable />
-</DemoBlock>
+<DemoPreview file="demos/vue/card-hoverable.vue" title="可悬浮与底部操作区" description="hoverable / actions / click" />
 
 ## 安装
 

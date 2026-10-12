@@ -7,58 +7,35 @@ description: 显示当前页面在层级结构中的位置
 
 显示当前页面在层级结构中的位置，末项默认激活，支持 color、separatorIcon 属性与 separator 插槽。
 
-<script setup>
-import BreadcrumbBasic from '@demos/react/breadcrumb-basic'
-import breadcrumbBasicRaw from '@demos/react/breadcrumb-basic.tsx.code.txt?raw'
-import BreadcrumbColor from '@demos/react/breadcrumb-color'
-import breadcrumbColorRaw from '@demos/react/breadcrumb-color.tsx.code.txt?raw'
-import BreadcrumbIcons from '@demos/react/breadcrumb-icons'
-import breadcrumbIconsRaw from '@demos/react/breadcrumb-icons.tsx.code.txt?raw'
-import BreadcrumbLabelKey from '@demos/react/breadcrumb-label-key'
-import breadcrumbLabelKeyRaw from '@demos/react/breadcrumb-label-key.tsx.code.txt?raw'
-import BreadcrumbUi from '@demos/react/breadcrumb-ui'
-import breadcrumbUiRaw from '@demos/react/breadcrumb-ui.tsx.code.txt?raw'
-</script>
-
 ## 基础用法
 
 末项默认激活并标记 aria-current，中间项为链接。
 
-<DemoBlock title="层级结构" description="items / 末项默认激活" :code="breadcrumbBasicRaw">
-  <ReactDemo :component="BreadcrumbBasic" />
-</DemoBlock>
+<DemoPreview file="demos/react/breadcrumb-basic.tsx" react title="层级结构" description="items / 末项默认激活" />
 
 ## 颜色
 
 color 控制激活项文字颜色，提供七种语义色。
 
-<DemoBlock title="激活项颜色" description="color" :code="breadcrumbColorRaw">
-  <ReactDemo :component="BreadcrumbColor" />
-</DemoBlock>
+<DemoPreview file="demos/react/breadcrumb-color.tsx" react title="激活项颜色" description="color" />
 
 ## 图标
 
 面包屑项可通过 icon 携带前置图标；separatorIcon 替换默认分隔符图标；separator 插槽自定义整个分隔符内容。
 
-<DemoBlock title="前置图标与分隔符图标" description="items.icon / separatorIcon" :code="breadcrumbIconsRaw">
-  <ReactDemo :component="BreadcrumbIcons" />
-</DemoBlock>
+<DemoPreview file="demos/react/breadcrumb-icons.tsx" react title="前置图标与分隔符图标" description="items.icon / separatorIcon" />
 
 ## 自定义标题字段
 
 labelKey 指定面包屑项承载标题的字段名，默认 title；items 允许携带任意自定义字段。
 
-<DemoBlock title="自定义字段名" description="labelKey = name" :code="breadcrumbLabelKeyRaw">
-  <ReactDemo :component="BreadcrumbLabelKey" />
-</DemoBlock>
+<DemoPreview file="demos/react/breadcrumb-label-key.tsx" react title="自定义字段名" description="labelKey = name" />
 
 ## ui 插槽
 
 ui 按主题插槽（root / list / item / link / linkLeadingIcon / linkLabel / separator / separatorIcon）覆盖类名。
 
-<DemoBlock title="ui 插槽自定义" description="ui 主题插槽类名" :code="breadcrumbUiRaw">
-  <ReactDemo :component="BreadcrumbUi" />
-</DemoBlock>
+<DemoPreview file="demos/react/breadcrumb-ui.tsx" react title="ui 插槽自定义" description="ui 主题插槽类名" />
 
 ## 安装
 

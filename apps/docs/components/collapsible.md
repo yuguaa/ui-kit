@@ -7,26 +7,15 @@ description: 点击触发内容展开或收起
 
 点击触发内容展开或收起。trigger 插槽为触发器（默认「展开详情」按钮），content 插槽为折叠内容。关闭时默认卸载内容（unmountOnHide）。
 
-<script setup>
-import CollapsibleBasic from '@demos/vue/collapsible-basic.vue'
-import collapsibleBasicRaw from '@demos/vue/collapsible-basic.vue.code.txt?raw'
-import CollapsibleUi from '@demos/vue/collapsible-ui.vue'
-import collapsibleUiRaw from '@demos/vue/collapsible-ui.vue.code.txt?raw'
-</script>
-
 ## 基础用法
 
-<DemoBlock title="基础用法" description="trigger / content 插槽，defaultOpen / disabled" :code="collapsibleBasicRaw">
-  <CollapsibleBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/collapsible-basic.vue" title="基础用法" description="trigger / content 插槽，defaultOpen / disabled" />
 
 ## ui 插槽与 as
 
 ui.root 覆盖根容器类名，ui.content 覆盖内容区类名；as 指定渲染标签；unmountOnHide 控制关闭后是否卸载内容。
 
-<DemoBlock title="ui · as · unmountOnHide" description="ui：root / content" :code="collapsibleUiRaw">
-  <CollapsibleUi />
-</DemoBlock>
+<DemoPreview file="demos/vue/collapsible-ui.vue" title="ui · as · unmountOnHide" description="ui：root / content" />
 
 ## 安装
 

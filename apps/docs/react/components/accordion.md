@@ -7,34 +7,19 @@ description: 可展开与折叠的内容分组
 
 可展开与折叠的内容分组，支持多开、字段映射与禁用项。
 
-<script setup>
-import AccordionBasic from '@demos/react/accordion-basic'
-import accordionBasicRaw from '@demos/react/accordion-basic.tsx.code.txt?raw'
-import AccordionSlots from '@demos/react/accordion-slots'
-import accordionSlotsRaw from '@demos/react/accordion-slots.tsx.code.txt?raw'
-import AccordionUi from '@demos/react/accordion-ui'
-import accordionUiRaw from '@demos/react/accordion-ui.tsx.code.txt?raw'
-</script>
-
-<DemoBlock title="基础用法" description="items 数组渲染标题与内容，defaultValue 指定默认展开项" :code="accordionBasicRaw">
-  <ReactDemo :component="AccordionBasic" />
-</DemoBlock>
+<DemoPreview file="demos/react/accordion-basic.tsx" react title="基础用法" description="items 数组渲染标题与内容，defaultValue 指定默认展开项" />
 
 ## 字段映射与插槽
 
 `labelKey` / `valueKey` 指定标题与唯一值来源字段；`leading` / `trailing` / `body` 为函数插槽，接收 `{ item, index, open }`。
 
-<DemoBlock title="字段映射与插槽" description="labelKey / valueKey 映射，leading / body 函数插槽" :code="accordionSlotsRaw">
-  <ReactDemo :component="AccordionSlots" />
-</DemoBlock>
+<DemoPreview file="demos/react/accordion-slots.tsx" react title="字段映射与插槽" description="labelKey / valueKey 映射，leading / body 函数插槽" />
 
 ## ui 插槽自定义
 
 `ui` 按主题插槽（root / item / header / trigger / leadingIcon / label / trailingIcon / content / body）覆盖每一层元素的类名。
 
-<DemoBlock title="ui 插槽自定义" description="九个插槽键逐层注入类名" :code="accordionUiRaw">
-  <ReactDemo :component="AccordionUi" />
-</DemoBlock>
+<DemoPreview file="demos/react/accordion-ui.tsx" react title="ui 插槽自定义" description="九个插槽键逐层注入类名" />
 
 ## 安装
 

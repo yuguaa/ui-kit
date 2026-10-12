@@ -7,62 +7,36 @@ description: 支持 leading / trailing 插槽、变体与颜色、校验状态
 
 通过鼠标或键盘输入内容，是最基础的表单域的包装。
 
-<script setup>
-import InputBasicDemo from "@demos/react/input-basic-demo"
-import inputBasicDemoRaw from '@demos/react/input-basic-demo.tsx.code.txt?raw'
-import InputVariants from "@demos/react/input-variants"
-import inputVariantsRaw from '@demos/react/input-variants.tsx.code.txt?raw'
-import InputStates from "@demos/react/input-states"
-import inputStatesRaw from '@demos/react/input-states.tsx.code.txt?raw'
-import InputAddon from "@demos/react/input-addon"
-import inputAddonRaw from '@demos/react/input-addon.tsx.code.txt?raw'
-import InputClearable from "@demos/react/input-clearable"
-import inputClearableRaw from '@demos/react/input-clearable.tsx.code.txt?raw'
-import InputUi from "@demos/react/input-ui"
-import inputUiRaw from '@demos/react/input-ui.tsx.code.txt?raw'
-</script>
 
 ## 基础用法
 
 size 支持 xs / sm / md / lg / xl 五档；leading / trailing 在输入框两侧渲染任意内容。
 
-<DemoBlock title="尺寸与两侧内容" description="size / leading / trailing" :code="inputBasicDemoRaw">
-  <ReactDemo :component="InputBasicDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-basic-demo.tsx" react title="尺寸与两侧内容" description="size / leading / trailing" />
 
 ## 变体与颜色
 
 variant 支持 outline / soft / subtle / ghost / none；color 控制聚焦描边颜色；highlight 始终显示颜色描边，类似聚焦态；fixed=false 时桌面端缩小一档字号。
 
-<DemoBlock title="变体、颜色、高亮" description="variant / color / highlight / fixed" :code="inputVariantsRaw">
-  <ReactDemo :component="InputVariants" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-variants.tsx" react title="变体、颜色、高亮" description="variant / color / highlight / fixed" />
 
 ## 校验状态
 
-<DemoBlock title="错误 / 警告 / 禁用" description="status / disabled" :code="inputStatesRaw">
-  <ReactDemo :component="InputStates" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-states.tsx" react title="错误 / 警告 / 禁用" description="status / disabled" />
 
 ## 前后置标签
 
-<DemoBlock title="addon" description="addonBefore / addonAfter" :code="inputAddonRaw">
-  <ReactDemo :component="InputAddon" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-addon.tsx" react title="addon" description="addonBefore / addonAfter" />
 
 ## 清空按钮
 
 clearable 在输入有值、未禁用、未只读时显示清空按钮；与 trailing 内容同时存在时，清空按钮排在最后并预留右侧内边距。
 
-<DemoBlock title="一键清空" description="clearable 属性与 onClear 回调" :code="inputClearableRaw">
-  <ReactDemo :component="InputClearable" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-clearable.tsx" react title="一键清空" description="clearable 属性与 onClear 回调" />
 
 ## ui 插槽自定义
 
-<DemoBlock title="主题插槽类名" description="ui 的 root / base / leading / trailing 键与左侧头像" :code="inputUiRaw">
-  <ReactDemo :component="InputUi" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-ui.tsx" react title="主题插槽类名" description="ui 的 root / base / leading / trailing 键与左侧头像" />
 
 ## 安装
 

@@ -7,26 +7,15 @@ description: 点击触发内容展开或收起
 
 点击触发内容展开或收起。trigger 为触发器内容（默认「展开详情」按钮），children 为折叠内容。关闭时默认卸载内容（unmountOnHide）。
 
-<script setup>
-import CollapsibleBasic from '@demos/react/collapsible-basic'
-import collapsibleBasicRaw from '@demos/react/collapsible-basic.tsx.code.txt?raw'
-import CollapsibleUi from '@demos/react/collapsible-ui'
-import collapsibleUiRaw from '@demos/react/collapsible-ui.tsx.code.txt?raw'
-</script>
-
 ## 基础用法
 
-<DemoBlock title="基础用法" description="trigger / children，defaultOpen / disabled" :code="collapsibleBasicRaw">
-  <ReactDemo :component="CollapsibleBasic" />
-</DemoBlock>
+<DemoPreview file="demos/react/collapsible-basic.tsx" react title="基础用法" description="trigger / children，defaultOpen / disabled" />
 
 ## ui 插槽与 render
 
 ui.root 覆盖根容器类名，ui.content 覆盖内容区类名；render 指定渲染元素；unmountOnHide 控制关闭后是否卸载内容。
 
-<DemoBlock title="ui · render · unmountOnHide" description="ui：root / content" :code="collapsibleUiRaw">
-  <ReactDemo :component="CollapsibleUi" />
-</DemoBlock>
+<DemoPreview file="demos/react/collapsible-ui.tsx" react title="ui · render · unmountOnHide" description="ui：root / content" />
 
 ## 安装
 

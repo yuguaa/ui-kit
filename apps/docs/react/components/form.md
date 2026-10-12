@@ -7,38 +7,23 @@ description: 收集、校验并提交表单数据，支持 rules 规则与 schem
 
 收集、校验并提交表单数据。`rules` 支持 required / pattern / min / max / 自定义 validator；`schema` 接受 zod v4 / valibot v1 等标准 schema 对象，与 rules 叠加校验。
 
-<script setup>
-import FormSchema from '@demos/react/form-schema'
-import formSchemaRaw from '@demos/react/form-schema.tsx.code.txt?raw'
-import FormEvents from '@demos/react/form-events'
-import formEventsRaw from '@demos/react/form-events.tsx.code.txt?raw'
-import FormUiCustom from '@demos/react/form-ui-custom'
-import formUiCustomRaw from '@demos/react/form-ui-custom.tsx.code.txt?raw'
-</script>
-
 ## schema 校验
 
 `schema` 接受实现 Standard Schema 协议的对象（zod v4 / valibot v1 等），校验错误按 issue 路径映射到字段名。
 
-<DemoBlock title="schema 校验" description="标准 schema 对象接入，错误显示在对应字段" :code="formSchemaRaw">
-  <ReactDemo :component="FormSchema" />
-</DemoBlock>
+<DemoPreview file="demos/react/form-schema.tsx" react title="schema 校验" description="标准 schema 对象接入，错误显示在对应字段" />
 
 ## onSubmit 与 onError
 
 校验通过触发 `onSubmit`（载荷为表单数据），失败触发 `onError`（载荷为错误记录）。
 
-<DemoBlock title="onSubmit / onError" description="提交回调与校验失败回调" :code="formEventsRaw">
-  <ReactDemo :component="FormEvents" />
-</DemoBlock>
+<DemoPreview file="demos/react/form-events.tsx" react title="onSubmit / onError" description="提交回调与校验失败回调" />
 
 ## ui 插槽
 
 `ui.root` 自定义表单根元素类名。
 
-<DemoBlock title="ui 插槽" description="ui.root 覆盖根元素类名" :code="formUiCustomRaw">
-  <ReactDemo :component="FormUiCustom" />
-</DemoBlock>
+<DemoPreview file="demos/react/form-ui-custom.tsx" react title="ui 插槽" description="ui.root 覆盖根元素类名" />
 
 ## 安装
 

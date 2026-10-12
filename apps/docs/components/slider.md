@@ -7,48 +7,29 @@ description: 通过拖动滑块在区间内取值
 
 通过拖动滑块在区间内取值，支持单值 / 双值、color / size、tooltip 数值提示与纵向布局。
 
-<script setup>
-import SliderBasic from '@demos/vue/slider-basic.vue'
-import sliderBasicRaw from '@demos/vue/slider-basic.vue.code.txt?raw'
-import SliderColors from '@demos/vue/slider-colors.vue'
-import sliderColorsRaw from '@demos/vue/slider-colors.vue.code.txt?raw'
-import SliderTooltip from '@demos/vue/slider-tooltip.vue'
-import sliderTooltipRaw from '@demos/vue/slider-tooltip.vue.code.txt?raw'
-import SliderVertical from '@demos/vue/slider-vertical.vue'
-import sliderVerticalRaw from '@demos/vue/slider-vertical.vue.code.txt?raw'
-</script>
-
 ## 基础用法
 
 size 提供五档尺寸，modelValue 传数组即为双值区间滑块。
 
-<DemoBlock title="尺寸与区间" description="size / 双值 modelValue / ui" :code="sliderBasicRaw">
-  <SliderBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/slider-basic.vue" title="尺寸与区间" description="size / 双值 modelValue / ui" />
 
 ## 颜色与禁用
 
 color 控制指示条与拇指颜色，disabled 禁用交互。
 
-<DemoBlock title="语义色与禁用" description="color / disabled" :code="sliderColorsRaw">
-  <SliderColors />
-</DemoBlock>
+<DemoPreview file="demos/vue/slider-colors.vue" title="语义色与禁用" description="color / disabled" />
 
 ## 数值提示
 
 tooltip 开启后，悬浮或拖动滑块时显示当前值；传对象可透传 XTooltip 属性。
 
-<DemoBlock title="数值提示" description="tooltip" :code="sliderTooltipRaw">
-  <SliderTooltip />
-</DemoBlock>
+<DemoPreview file="demos/vue/slider-tooltip.vue" title="数值提示" description="tooltip" />
 
 ## 纵向滑块
 
 orientation 设为 vertical 后滑块纵向排布，高度由 class 控制；数值提示显示在滑块右侧。
 
-<DemoBlock title="纵向滑块" description="orientation=vertical / class 控制高度" :code="sliderVerticalRaw">
-  <SliderVertical />
-</DemoBlock>
+<DemoPreview file="demos/vue/slider-vertical.vue" title="纵向滑块" description="orientation=vertical / class 控制高度" />
 
 ## 安装
 

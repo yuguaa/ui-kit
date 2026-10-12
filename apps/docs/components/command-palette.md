@@ -7,38 +7,23 @@ description: 全局命令搜索与快捷操作面板，支持字段映射、子�
 
 全局命令搜索与快捷操作面板。`groups` 组织命令分组，`labelKey` / `valueKey` / `descriptionKey` 支持任意字段映射；项带 `children` 时选中进入子层导航，输入框左侧出现返回按钮；`close` 显示关闭按钮；`footer` 插槽展示底部内容。
 
-<script setup>
-import CommandPaletteBasic from '@demos/vue/command-palette-basic.vue'
-import commandPaletteBasicRaw from '@demos/vue/command-palette-basic.vue.code.txt?raw'
-import CommandPaletteNested from '@demos/vue/command-palette-nested.vue'
-import commandPaletteNestedRaw from '@demos/vue/command-palette-nested.vue.code.txt?raw'
-import CommandPaletteUi from '@demos/vue/command-palette-ui.vue'
-import commandPaletteUiRaw from '@demos/vue/command-palette-ui.vue.code.txt?raw'
-</script>
-
 ## 基础用法
 
 groups 组织分组，kbds 快捷键、icon 图标、description 说明；close 显示关闭按钮（点击发射 update:open false）。
 
-<DemoBlock title="分组 · 字段映射 · 关闭按钮" description="groups / labelKey / descriptionKey / close" :code="commandPaletteBasicRaw">
-  <CommandPaletteBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/command-palette-basic.vue" title="分组 · 字段映射 · 关闭按钮" description="groups / labelKey / descriptionKey / close" />
 
 ## 子层导航与 footer
 
 项带 children 时选中进入子层，返回按钮回到上一层；分组的 placeholder 覆盖子层输入框占位文字；footer 插槽展示底部内容。
 
-<DemoBlock title="子层导航 · placeholder · footer" description="children / back / placeholder / footer" :code="commandPaletteNestedRaw">
-  <CommandPaletteNested />
-</DemoBlock>
+<DemoPreview file="demos/vue/command-palette-nested.vue" title="子层导航 · placeholder · footer" description="children / back / placeholder / footer" />
 
 ## ui 插槽
 
 input 对象可配置输入框属性；ui 按主题插槽覆盖类名。
 
-<DemoBlock title="ui 插槽与输入框配置" description="ui / input / closeIcon" :code="commandPaletteUiRaw">
-  <CommandPaletteUi />
-</DemoBlock>
+<DemoPreview file="demos/vue/command-palette-ui.vue" title="ui 插槽与输入框配置" description="ui / input / closeIcon" />
 
 ## 安装
 

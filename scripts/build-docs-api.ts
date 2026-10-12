@@ -174,7 +174,9 @@ function main() {
   for (const file of readdirSync(REACT_KIT_DIR).filter((f) => f.endsWith(".tsx"))) {
     const name = file.replace(/^x-/, "").replace(/\.tsx$/, "");
     const content = readFileSync(join(REACT_KIT_DIR, file), "utf8");
-    const props = collectInterface(content, `X${name.charAt(0).toUpperCase() + name.slice(1)}Props`);
+    /* kebab-case 转 PascalCase（button-group → ButtonGroup） */
+    const pascal = name.split("-").map((part) => part.charAt(0).toUpperCase() + part.slice(1)).join("");
+    const props = collectInterface(content, `X${pascal}Props`);
     if (!props.length) continue;
     writeFileSync(join(REACT_OUT_DIR, `${name}.md`), renderTable("Props", props) + "\n");
   }

@@ -7,38 +7,23 @@ description: 对长列表数据进行分页浏览
 
 内置 reka-ui 同款页码序列算法（省略号由 `showEdges` / `siblingCount` 控制），页码与首末按钮用 XButton 渲染，`color` / `variant` / `size` 与激活态（`activeColor` / `activeVariant`）独立配置。
 
-<script setup>
-import PaginationBasic from '@demos/react/pagination-basic'
-import paginationBasicRaw from '@demos/react/pagination-basic.tsx.code.txt?raw'
-import PaginationControls from '@demos/react/pagination-controls'
-import paginationControlsRaw from '@demos/react/pagination-controls.tsx.code.txt?raw'
-import PaginationUiCustom from '@demos/react/pagination-ui-custom'
-import paginationUiCustomRaw from '@demos/react/pagination-ui-custom.tsx.code.txt?raw'
-</script>
-
 ## 基础用法
 
 `page` 受控当前页（`onPageChange` 回调），`total` 与 `itemsPerPage` 计算总页数，`showEdges` 始终显示第一页、最后一页与省略号。
 
-<DemoBlock title="受控页码 + 省略号" description="page / onPageChange / total / itemsPerPage / showEdges" :code="paginationBasicRaw">
-  <ReactDemo :component="PaginationBasic" />
-</DemoBlock>
+<DemoPreview file="demos/react/pagination-basic.tsx" react title="受控页码 + 省略号" description="page / onPageChange / total / itemsPerPage / showEdges" />
 
 ## 首页末页按钮与图标自定义
 
 `showControls` 在页码列表两端显示首页与末页按钮；`firstIcon` / `prevIcon` / `nextIcon` / `lastIcon` 自定义控制按钮图标；`color` / `variant` / `size` 与激活态颜色样式组合使用。
 
-<DemoBlock title="showControls + 图标 + 颜色样式" description="showControls / firstIcon / prevIcon / nextIcon / lastIcon / color / variant / size" :code="paginationControlsRaw">
-  <ReactDemo :component="PaginationControls" />
-</DemoBlock>
+<DemoPreview file="demos/react/pagination-controls.tsx" react title="showControls + 图标 + 颜色样式" description="showControls / firstIcon / prevIcon / nextIcon / lastIcon / color / variant / size" />
 
 ## ui 插槽与页码渲染函数
 
 `ui` 按主题插槽覆盖类名；`itemSlot` 自定义页码渲染（参数含 item / index / page / pageCount）。
 
-<DemoBlock title="ui 插槽 · itemSlot" description="ui 类名 / itemSlot 渲染函数" :code="paginationUiCustomRaw">
-  <ReactDemo :component="PaginationUiCustom" />
-</DemoBlock>
+<DemoPreview file="demos/react/pagination-ui-custom.tsx" react title="ui 插槽 · itemSlot" description="ui 类名 / itemSlot 渲染函数" />
 
 ## 安装
 

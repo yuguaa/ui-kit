@@ -7,38 +7,23 @@ description: 在同一区域内切换不同视图或内容分组
 
 items 字段（label / icon / avatar / badge / slot / content / value）驱动，`variant` 支持 pill / link，`orientation` 支持 horizontal / vertical，支持受控 `value` 与非受控 `defaultValue`。
 
-<script setup>
-import TabsBasicDemo from '@demos/react/tabs-basic-demo'
-import tabsBasicDemoRaw from '@demos/react/tabs-basic-demo.tsx.code.txt?raw'
-import TabsOrientationSize from '@demos/react/tabs-orientation-size'
-import tabsOrientationSizeRaw from '@demos/react/tabs-orientation-size.tsx.code.txt?raw'
-import TabsUiCustom from '@demos/react/tabs-ui-custom'
-import tabsUiCustomRaw from '@demos/react/tabs-ui-custom.tsx.code.txt?raw'
-</script>
-
 ## 变体
 
 `variant="pill"` 使用胶囊指示器，`variant="link"` 使用下划线指示器；内容面板跟随激活标签渲染。
 
-<DemoBlock title="pill 与 link 变体" description="variant / value / onValueChange" :code="tabsBasicDemoRaw">
-  <ReactDemo :component="TabsBasicDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/tabs-basic-demo.tsx" react title="pill 与 link 变体" description="variant / value / onValueChange" />
 
 ## 方向与尺寸
 
 `orientation="vertical"` 将标签列放在左侧、内容放在右侧；`size` 提供 xs / sm / md / lg / xl 五档，控制标签的内边距、字号与图标尺寸。
 
-<DemoBlock title="纵向 + 多档尺寸" description="orientation / size" :code="tabsOrientationSizeRaw">
-  <ReactDemo :component="TabsOrientationSize" />
-</DemoBlock>
+<DemoPreview file="demos/react/tabs-orientation-size.tsx" react title="纵向 + 多档尺寸" description="orientation / size" />
 
 ## 字段映射、渲染函数与 ui 插槽
 
 `icon` / `avatar` / `badge` 字段渲染前置与后置内容；`slot` 字段把内容面板分发到 `contentSlot` 渲染函数；`ui` 按主题插槽覆盖类名。
 
-<DemoBlock title="字段映射 · 渲染函数 · ui" description="icon / avatar / badge / slot / ui" :code="tabsUiCustomRaw">
-  <ReactDemo :component="TabsUiCustom" />
-</DemoBlock>
+<DemoPreview file="demos/react/tabs-ui-custom.tsx" react title="字段映射 · 渲染函数 · ui" description="icon / avatar / badge / slot / ui" />
 
 ## 安装
 

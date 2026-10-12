@@ -7,26 +7,15 @@ description: 内容加载时的占位骨架，支持文本 / 圆形 / 矩形三�
 
 内容加载时的占位骨架。loading 为 false 时渲染插槽中的真实内容，适合包裹异步数据区域。骨架元素带 aria-busy / aria-label / aria-live / role 无障碍标记。
 
-<script setup>
-import SkeletonBasic from '@demos/vue/skeleton-basic.vue'
-import skeletonBasicRaw from '@demos/vue/skeleton-basic.vue.code.txt?raw'
-import SkeletonUi from '@demos/vue/skeleton-ui.vue'
-import skeletonUiRaw from '@demos/vue/skeleton-ui.vue.code.txt?raw'
-</script>
-
 ## 基础用法
 
-<DemoBlock title="形状与 loading 切换" description="variant 控制形状，width / height 覆盖尺寸，loading 切换骨架与真实内容" :code="skeletonBasicRaw">
-  <SkeletonBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/skeleton-basic.vue" title="形状与 loading 切换" description="variant 控制形状，width / height 覆盖尺寸，loading 切换骨架与真实内容" />
 
 ## ui 插槽与 as
 
 ui.base 注入自定义类名；as 指定渲染标签。
 
-<DemoBlock title="ui · as" description="ui：base，as 渲染标签" :code="skeletonUiRaw">
-  <SkeletonUi />
-</DemoBlock>
+<DemoPreview file="demos/vue/skeleton-ui.vue" title="ui · as" description="ui：base，as 渲染标签" />
 
 ## 安装
 

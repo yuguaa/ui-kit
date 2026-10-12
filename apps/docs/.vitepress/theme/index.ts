@@ -4,6 +4,7 @@
  */
 import DefaultTheme from "vitepress/theme";
 import DemoBlock from "./components/DemoBlock.vue";
+import DemoPreview from "./components/demo-preview.vue";
 import ReactDemo from "./components/ReactDemo.vue";
 import "./custom.css";
 
@@ -11,6 +12,7 @@ export default {
   extends: DefaultTheme,
   enhanceApp({ app }) {
     app.component("DemoBlock", DemoBlock);
+    app.component("DemoPreview", DemoPreview);
     app.component("ReactDemo", ReactDemo);
   },
 };

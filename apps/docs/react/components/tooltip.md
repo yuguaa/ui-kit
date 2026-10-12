@@ -7,38 +7,23 @@ description: 简单的文字提示气泡，悬浮时显示
 
 简单的文字提示气泡，悬浮时显示。支持 kbds 快捷键组合、content 插槽与 portal 渲染。
 
-<script setup>
-import TooltipBasic from '@demos/react/tooltip-basic'
-import tooltipBasicRaw from '@demos/react/tooltip-basic.tsx.code.txt?raw'
-import TooltipKbds from '@demos/react/tooltip-kbds'
-import tooltipKbdsRaw from '@demos/react/tooltip-kbds.tsx.code.txt?raw'
-import TooltipUiCustom from '@demos/react/tooltip-ui-custom'
-import tooltipUiCustomRaw from '@demos/react/tooltip-ui-custom.tsx.code.txt?raw'
-</script>
-
 ## 基础用法
 
 `text` 直接给提示文本；`delayDuration` 控制打开延迟；`arrow` 显示指向触发元素的箭头。
 
-<DemoBlock title="text · delayDuration · arrow" description="提示文本与延迟" :code="tooltipBasicRaw">
-  <ReactDemo :component="TooltipBasic" />
-</DemoBlock>
+<DemoPreview file="demos/react/tooltip-basic.tsx" react title="text · delayDuration · arrow" description="提示文本与延迟" />
 
 ## 快捷键提示
 
 `kbds` 传入按键列表，元素可以是文本，也可以是带样式配置的对象（透传给 XKbd）。
 
-<DemoBlock title="kbds 快捷键" description="文本与对象两种按键项" :code="tooltipKbdsRaw">
-  <ReactDemo :component="TooltipKbds" />
-</DemoBlock>
+<DemoPreview file="demos/react/tooltip-kbds.tsx" react title="kbds 快捷键" description="文本与对象两种按键项" />
 
 ## content 插槽与 ui 插槽
 
 `content` 插槽替换 text / kbds 默认内容；`ui` 属性按主题插槽键（content / arrow / text / kbds / kbdsSize）覆盖类名。
 
-<DemoBlock title="content · ui" description="自定义内容与主题定制" :code="tooltipUiCustomRaw">
-  <ReactDemo :component="TooltipUiCustom" />
-</DemoBlock>
+<DemoPreview file="demos/react/tooltip-ui-custom.tsx" react title="content · ui" description="自定义内容与主题定制" />
 
 ## 安装
 

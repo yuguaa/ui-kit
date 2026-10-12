@@ -7,28 +7,17 @@ description: 引导用户按步骤完成流程
 
 items 字段（title / description / icon / content / slot / value）驱动，支持受控 `modelValue` 与非受控 `defaultValue`，`next` / `prev` 可通过 ref 调用。
 
-<script setup>
-import StepperBasic from '@demos/vue/stepper-basic.vue'
-import stepperBasicRaw from '@demos/vue/stepper-basic.vue.code.txt?raw'
-import StepperUiCustom from '@demos/vue/stepper-ui-custom.vue'
-import stepperUiCustomRaw from '@demos/vue/stepper-ui-custom.vue.code.txt?raw'
-</script>
-
 ## 基础用法
 
 `items` 驱动步骤条渲染，`color` 控制完成 / 激活态的语义色，`size` 控制触发器尺寸；`next` / `prev` 通过 ref 调用并抛出同名事件。
 
-<DemoBlock title="基础用法 + 步骤切换" description="items / v-model / color / size / next / prev" :code="stepperBasicRaw">
-  <StepperBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/stepper-basic.vue" title="基础用法 + 步骤切换" description="items / v-model / color / size / next / prev" />
 
 ## 插槽与 ui 插槽
 
 `indicator` / `title` / `description` / `content` 插槽自定义各区域；`ui` 按主题插槽覆盖类名。
 
-<DemoBlock title="插槽 · ui 插槽" description="indicator / title / description / content / ui" :code="stepperUiCustomRaw">
-  <StepperUiCustom />
-</DemoBlock>
+<DemoPreview file="demos/vue/stepper-ui-custom.vue" title="插槽 · ui 插槽" description="indicator / title / description / content / ui" />
 
 ## 安装
 

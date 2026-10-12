@@ -41,7 +41,8 @@ async function copyCode() {
 
 <template>
   <div class="demo-block">
-    <div class="demo-block__body" :class="{ 'demo-block__body--checker': background === 'checker' }">
+    <!-- not-prose：vben 文档架子隔离 VitePress 排版样式，demo 组件渲染不受文档站影响 -->
+    <div class="demo-block__body not-prose" :class="{ 'demo-block__body--checker': background === 'checker' }">
       <slot />
     </div>
     <div class="demo-block__footer">

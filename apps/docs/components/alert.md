@@ -7,70 +7,39 @@ description: 展示需要关注的信息，提供七种语义色与四种变体
 
 用于页面中展示需要关注的信息，提供七种语义色、四种变体，可附带图标、头像、操作区与受控关闭按钮。
 
-<script setup>
-import AlertBasic from '@demos/vue/alert-basic.vue'
-import alertBasicRaw from '@demos/vue/alert-basic.vue.code.txt?raw'
-import AlertVariants from '@demos/vue/alert-variants.vue'
-import alertVariantsRaw from '@demos/vue/alert-variants.vue.code.txt?raw'
-import AlertTypes from '@demos/vue/alert-types.vue'
-import alertTypesRaw from '@demos/vue/alert-types.vue.code.txt?raw'
-import AlertClosable from '@demos/vue/alert-closable.vue'
-import alertClosableRaw from '@demos/vue/alert-closable.vue.code.txt?raw'
-import AlertIconActions from '@demos/vue/alert-icon-actions.vue'
-import alertIconActionsRaw from '@demos/vue/alert-icon-actions.vue.code.txt?raw'
-import AlertOrientation from '@demos/vue/alert-orientation.vue'
-import alertOrientationRaw from '@demos/vue/alert-orientation.vue.code.txt?raw'
-import AlertUiCustom from '@demos/vue/alert-ui-custom.vue'
-import alertUiCustomRaw from '@demos/vue/alert-ui-custom.vue.code.txt?raw'
-</script>
-
 ## 基础用法
 
 icon 指定图标名，avatar 传入头像配置；close 配合 v-model:open 提供受控关闭。
 
-<DemoBlock title="图标、头像与受控关闭" description="icon / avatar / close + v-model:open" :code="alertBasicRaw">
-  <AlertBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/alert-basic.vue" title="图标、头像与受控关闭" description="icon / avatar / close + v-model:open" />
 
 ## 变体
 
-<DemoBlock title="四种变体" description="variant 控制提示强度" :code="alertVariantsRaw">
-  <AlertVariants />
-</DemoBlock>
+<DemoPreview file="demos/vue/alert-variants.vue" title="四种变体" description="variant 控制提示强度" />
 
 ## 语义色
 
 color 提供七种语义色；kit 既有属性 type 仍可作为 color 的回退。
 
-<DemoBlock title="七种语义色" description="color" :code="alertTypesRaw">
-  <AlertTypes />
-</DemoBlock>
+<DemoPreview file="demos/vue/alert-types.vue" title="七种语义色" description="color" />
 
 ## 受控关闭
 
 close 为布尔时使用默认关闭按钮；传对象时整体透传给关闭按钮（可配置 variant / color / size / label 等）；close 插槽替换默认按钮，closeIcon 更换图标。
 
-<DemoBlock title="close 与 closeIcon" description="close / closeIcon / v-model:open" :code="alertClosableRaw">
-  <AlertClosable />
-</DemoBlock>
+<DemoPreview file="demos/vue/alert-closable.vue" title="close 与 closeIcon" description="close / closeIcon / v-model:open" />
 
 ## 图标、头像与操作区
 
-<DemoBlock title="icon / avatar / actions" description="leading 插槽、actions 插槽与 actions 数组" :code="alertIconActionsRaw">
-  <AlertIconActions />
-</DemoBlock>
+<DemoPreview file="demos/vue/alert-icon-actions.vue" title="icon / avatar / actions" description="leading 插槽、actions 插槽与 actions 数组" />
 
 ## 排列方向
 
-<DemoBlock title="vertical / horizontal" description="orientation 控制内容与操作区的排列方向" :code="alertOrientationRaw">
-  <AlertOrientation />
-</DemoBlock>
+<DemoPreview file="demos/vue/alert-orientation.vue" title="vertical / horizontal" description="orientation 控制内容与操作区的排列方向" />
 
 ## ui 插槽与渲染
 
-<DemoBlock title="ui 插槽自定义与 as" description="ui 键覆盖主题插槽类名，as 更换渲染元素" :code="alertUiCustomRaw">
-  <AlertUiCustom />
-</DemoBlock>
+<DemoPreview file="demos/vue/alert-ui-custom.vue" title="ui 插槽自定义与 as" description="ui 键覆盖主题插槽类名，as 更换渲染元素" />
 
 ## 安装
 

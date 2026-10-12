@@ -7,48 +7,29 @@ description: 点击或悬停触发的轻量气泡卡片
 
 点击或悬停触发的轻量气泡卡片。支持 anchor 锚点定位、dismissible 关闭策略与 portal 渲染。
 
-<script setup>
-import PopoverBasicDemo from '@demos/react/popover-basic-demo'
-import popoverBasicDemoRaw from '@demos/react/popover-basic-demo.tsx.code.txt?raw'
-import PopoverArrowDemo from '@demos/react/popover-arrow-demo'
-import popoverArrowDemoRaw from '@demos/react/popover-arrow-demo.tsx.code.txt?raw'
-import PopoverAnchor from '@demos/react/popover-anchor'
-import popoverAnchorRaw from '@demos/react/popover-anchor.tsx.code.txt?raw'
-import PopoverUiCustom from '@demos/react/popover-ui-custom'
-import popoverUiCustomRaw from '@demos/react/popover-ui-custom.tsx.code.txt?raw'
-</script>
-
 ## 基础用法
 
 `mode` 区分点击（click）与悬停（hover）触发；`content` 传函数时接收 `close` 方法，可在内容里直接关闭。
 
-<DemoBlock title="click / hover / 函数内容" description="mode 与 content 函数作用域" :code="popoverBasicDemoRaw">
-  <ReactDemo :component="PopoverBasicDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/popover-basic-demo.tsx" react title="click / hover / 函数内容" description="mode 与 content 函数作用域" />
 
 ## 箭头
 
 开启 `arrow` 后浮层显示指向触发元素的箭头。
 
-<DemoBlock title="带箭头浮层" description="arrow" :code="popoverArrowDemoRaw">
-  <ReactDemo :component="PopoverArrowDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/popover-arrow-demo.tsx" react title="带箭头浮层" description="arrow" />
 
 ## 锚点
 
 `anchor` 指定定位参考元素，浮层相对它而不是触发器定位。
 
-<DemoBlock title="anchor 锚点" description="anchor 作为定位参考" :code="popoverAnchorRaw">
-  <ReactDemo :component="PopoverAnchor" />
-</DemoBlock>
+<DemoPreview file="demos/react/popover-anchor.tsx" react title="anchor 锚点" description="anchor 作为定位参考" />
 
 ## 关闭策略与 ui 插槽
 
 `dismissible` 为 false 时点击外部或按 Esc 不会关闭，改为回调 `onClosePrevent`；`ui` 属性按主题插槽键（content / arrow）覆盖类名。
 
-<DemoBlock title="dismissible · ui" description="禁止外部关闭与主题定制" :code="popoverUiCustomRaw">
-  <ReactDemo :component="PopoverUiCustom" />
-</DemoBlock>
+<DemoPreview file="demos/react/popover-ui-custom.tsx" react title="dismissible · ui" description="禁止外部关闭与主题定制" />
 
 ## 安装
 

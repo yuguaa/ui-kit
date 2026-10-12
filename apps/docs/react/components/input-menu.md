@@ -7,38 +7,23 @@ description: 输入框与下拉菜单组合，支持 combobox / listbox 双模�
 
 输入框与下拉菜单组合。`mode` 区分 combobox（输入框即搜索）与 listbox（输入框只读、菜单内搜索）；listbox 模式可开启 `searchInput` 在菜单顶部渲染搜索输入框，并可用 `searchInputSlot` 自定义。
 
-<script setup>
-import InputMenuBasic from '@demos/react/input-menu-basic'
-import inputMenuBasicRaw from '@demos/react/input-menu-basic.tsx.code.txt?raw'
-import InputMenuListbox from '@demos/react/input-menu-listbox'
-import inputMenuListboxRaw from '@demos/react/input-menu-listbox.tsx.code.txt?raw'
-import InputMenuUi from '@demos/react/input-menu-ui'
-import inputMenuUiRaw from '@demos/react/input-menu-ui.tsx.code.txt?raw'
-</script>
-
 ## 基础用法
 
 combobox 模式输入即搜索；`clearable` 清空已选项；`createItem` 关键字不存在时回车创建新选项。
 
-<DemoBlock title="combobox · 清空 · 创建" description="searchable · clearable · createItem · disabled" :code="inputMenuBasicRaw">
-  <ReactDemo :component="InputMenuBasic" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-menu-basic.tsx" react title="combobox · 清空 · 创建" description="searchable · clearable · createItem · disabled" />
 
 ## listbox 模式与菜单内搜索
 
 `mode="listbox"` 时输入框只读，点击展开菜单；`searchInput` 在菜单顶部渲染搜索输入框（可传 `{ placeholder }`），`searchInputSlot` 完全自定义。
 
-<DemoBlock title="listbox · searchInput · searchInputSlot" description="mode / searchInput / searchInputSlot" :code="inputMenuListboxRaw">
-  <ReactDemo :component="InputMenuListbox" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-menu-listbox.tsx" react title="listbox · searchInput · searchInputSlot" description="mode / searchInput / searchInputSlot" />
 
 ## 字段映射、图标与 ui 插槽
 
 `labelKey` / `valueKey` / `descriptionKey` 映射任意字段；`selectedIcon` / `clearIcon` 自定义图标；`filterFields` 指定过滤字段；`ui` 按主题插槽覆盖类名；`leading` / `item` 自定义。
 
-<DemoBlock title="字段映射 · 图标 · filterFields · ui" description="labelKey / valueKey / descriptionKey / selectedIcon / clearIcon / filterFields / ui" :code="inputMenuUiRaw">
-  <ReactDemo :component="InputMenuUi" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-menu-ui.tsx" react title="字段映射 · 图标 · filterFields · ui" description="labelKey / valueKey / descriptionKey / selectedIcon / clearIcon / filterFields / ui" />
 
 ## 安装
 

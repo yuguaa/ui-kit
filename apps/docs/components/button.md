@@ -7,72 +7,41 @@ description: 二次封装按钮：内置六种样式 × 七种语义色 × 五�
 
 按钮用于触发操作。支持六种样式、七种语义色、五档尺寸与加载、禁用状态，可通过插槽组合前置与后置图标。
 
-<script setup>
-import ButtonVariants from '@demos/vue/button-variants.vue'
-import buttonVariantsRaw from '@demos/vue/button-variants.vue.code.txt?raw'
-import ButtonColors from '@demos/vue/button-colors.vue'
-import buttonColorsRaw from '@demos/vue/button-colors.vue.code.txt?raw'
-import ButtonSizes from '@demos/vue/button-sizes.vue'
-import buttonSizesRaw from '@demos/vue/button-sizes.vue.code.txt?raw'
-import ButtonStates from '@demos/vue/button-states.vue'
-import buttonStatesRaw from '@demos/vue/button-states.vue.code.txt?raw'
-import ButtonIcons from '@demos/vue/button-icons.vue'
-import buttonIconsRaw from '@demos/vue/button-icons.vue.code.txt?raw'
-import ButtonBlockSquare from '@demos/vue/button-block-square.vue'
-import buttonBlockSquareRaw from '@demos/vue/button-block-square.vue.code.txt?raw'
-import ButtonUiCustom from '@demos/vue/button-ui-custom.vue'
-import buttonUiCustomRaw from '@demos/vue/button-ui-custom.vue.code.txt?raw'
-</script>
-
 ## 变体
 
 solid 主操作、outline 次操作、soft 轻强调、ghost 低干扰、subtle 带描边底、link 行内链接。
 
-<DemoBlock title="六种变体" description="variant 属性控制样式" :code="buttonVariantsRaw">
-  <ButtonVariants />
-</DemoBlock>
+<DemoPreview file="demos/vue/button-variants.vue" title="六种变体" description="variant 属性控制样式" />
 
 ## 语义色
 
 color 属性提供七种语义色，每种颜色都支持全部六种变体。
 
-<DemoBlock title="七种语义色" description="solid 变体下的语义色" :code="buttonColorsRaw">
-  <ButtonColors />
-</DemoBlock>
+<DemoPreview file="demos/vue/button-colors.vue" title="七种语义色" description="solid 变体下的语义色" />
 
 ## 尺寸
 
-<DemoBlock title="五档尺寸" description="xs → xl" :code="buttonSizesRaw">
-  <ButtonSizes />
-</DemoBlock>
+<DemoPreview file="demos/vue/button-sizes.vue" title="五档尺寸" description="xs → xl" />
 
 ## 状态
 
-<DemoBlock title="加载与禁用" description="loading 显示旋转图标，disabled 阻止交互" :code="buttonStatesRaw">
-  <ButtonStates />
-</DemoBlock>
+<DemoPreview file="demos/vue/button-states.vue" title="加载与禁用" description="loading 显示旋转图标，disabled 阻止交互" />
 
 ## 图标与组合
 
-<DemoBlock title="前置 / 后置图标与按钮组" description="leading / trailing 插槽，XButtonGroup 拼接按钮" :code="buttonIconsRaw">
-  <ButtonIcons />
-</DemoBlock>
+<DemoPreview file="demos/vue/button-icons.vue" title="前置 / 后置图标与按钮组" description="leading / trailing 插槽，XButtonGroup 拼接按钮" />
 
 ## 宽度与方形
 
 block 让按钮撑满父容器宽度；square 使用等边距的方形尺寸，适合只放图标的操作按钮。
 
-<DemoBlock title="block 与 square" description="block 撑满宽度，square 等边距" :code="buttonBlockSquareRaw">
-  <ButtonBlockSquare />
-</DemoBlock>
+<DemoPreview file="demos/vue/button-block-square.vue" title="block 与 square" description="block 撑满宽度，square 等边距" />
 
 ## 文本、ui 插槽与激活态
 
 `label` 直接给按钮文本；`ui` 按主题插槽（base / label / leadingIcon / trailingIcon）覆盖类名；`active` 配合 `activeColor` / `activeVariant` 表示选中态。
 
-<DemoBlock title="label · ui · active" description="label 文本、ui 插槽类名、active 选中态" :code="buttonUiCustomRaw">
-  <ButtonUiCustom />
-</DemoBlock>
+<DemoPreview file="demos/vue/button-ui-custom.vue" title="label · ui · active" description="label 文本、ui 插槽类名、active 选中态" />
 
 ## 安装
 

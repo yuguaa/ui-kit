@@ -7,34 +7,19 @@ description: 标记属性或数值的角标，支持定位与可选关闭按钮
 
 芯片用于标记属性或数值。text 直接给定内容，position / inset / standalone 控制角标定位，show 控制芯片本体显隐。
 
-<script setup>
-import ChipBasic from '@demos/vue/chip-basic.vue'
-import chipBasicRaw from '@demos/vue/chip-basic.vue.code.txt?raw'
-import ChipPosition from '@demos/vue/chip-position.vue'
-import chipPositionRaw from '@demos/vue/chip-position.vue.code.txt?raw'
-import ChipUiCustom from '@demos/vue/chip-ui-custom.vue'
-import chipUiCustomRaw from '@demos/vue/chip-ui-custom.vue.code.txt?raw'
-</script>
-
 ## 基础用法
 
-<DemoBlock title="七种语义色、尺寸与可关闭" description="text / color / size / closable / standalone / show" :code="chipBasicRaw">
-  <ChipBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/chip-basic.vue" title="七种语义色、尺寸与可关闭" description="text / color / size / closable / standalone / show" />
 
 ## 角标定位
 
 默认绝对定位在父容器右上角；position 指定位置，inset 位于圆角元素内部时保持位置，standalone 相对父容器渲染。
 
-<DemoBlock title="position / inset / standalone" description="chip 定位在头像各角" :code="chipPositionRaw">
-  <ChipPosition />
-</DemoBlock>
+<DemoPreview file="demos/vue/chip-position.vue" title="position / inset / standalone" description="chip 定位在头像各角" />
 
 ## ui 插槽与渲染
 
-<DemoBlock title="ui 插槽自定义与 as" description="content 插槽自定义内容，ui 键覆盖主题插槽类名，as 更换渲染元素" :code="chipUiCustomRaw">
-  <ChipUiCustom />
-</DemoBlock>
+<DemoPreview file="demos/vue/chip-ui-custom.vue" title="ui 插槽自定义与 as" description="content 插槽自定义内容，ui 键覆盖主题插槽类名，as 更换渲染元素" />
 
 ## 安装
 

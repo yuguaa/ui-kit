@@ -7,48 +7,30 @@ description: 选择时间，支持 12/24 小时制与时间区间
 
 输入框 + popover 时间列表，选择时间，支持 12/24 小时制、分钟步长与时间区间。容器支持五档尺寸、七种语义色、五种变体与高亮描边。
 
-<script setup>
-import InputTimeBasic from '@demos/react/input-time-basic'
-import inputTimeBasicRaw from '@demos/react/input-time-basic.tsx.code.txt?raw'
-import InputTimeRange from '@demos/react/input-time-range'
-import inputTimeRangeRaw from '@demos/react/input-time-range.tsx.code.txt?raw'
-import InputTimeColors from '@demos/react/input-time-colors'
-import inputTimeColorsRaw from '@demos/react/input-time-colors.tsx.code.txt?raw'
-import InputTimeSlots from '@demos/react/input-time-slots'
-import inputTimeSlotsRaw from '@demos/react/input-time-slots.tsx.code.txt?raw'
-</script>
 
 ## 基础用法
 
 `value` 绑定时间（HH:mm），点击输入框弹出时间列表选择。
 
-<DemoBlock title="基础用法" description="value + onChange 绑定时间" :code="inputTimeBasicRaw">
-  <ReactDemo :component="InputTimeBasic" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-time-basic.tsx" react title="基础用法" description="value + onChange 绑定时间" />
 
 ## 时间区间
 
 range 开启后绑定值为 [开始, 结束] 数组，触发器内两个输入框由分隔图标连接；`separatorIcon` 可自定义分隔图标。
 
-<DemoBlock title="时间区间" description="range 模式 + separatorIcon 自定义分隔图标" :code="inputTimeRangeRaw">
-  <ReactDemo :component="InputTimeRange" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-time-range.tsx" react title="时间区间" description="range 模式 + separatorIcon 自定义分隔图标" />
 
 ## 尺寸、语义色与变体
 
 `size` 五档尺寸；`color` 七种语义色；`variant` 五种变体；`highlight` 常显颜色描边。
 
-<DemoBlock title="尺寸与语义色" description="size / color / variant / highlight" :code="inputTimeColorsRaw">
-  <ReactDemo :component="InputTimeColors" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-time-colors.tsx" react title="尺寸与语义色" description="size / color / variant / highlight" />
 
 ## 内容与 ui
 
 `leading` / `trailing` / `separator` 自定义内容；`ui` 按主题插槽覆盖类名。
 
-<DemoBlock title="内容与 ui" description="leading / trailing / ui 主题插槽" :code="inputTimeSlotsRaw">
-  <ReactDemo :component="InputTimeSlots" />
-</DemoBlock>
+<DemoPreview file="demos/react/input-time-slots.tsx" react title="内容与 ui" description="leading / trailing / ui 主题插槽" />
 
 ## 安装
 

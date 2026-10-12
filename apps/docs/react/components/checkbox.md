@@ -7,72 +7,42 @@ description: 在一组可选项中进行多项选择
 
 在一组可选项中进行多项选择，支持半选状态、说明文字、语义色与三档尺寸。
 
-<script setup>
-import CheckboxBasicDemo from '@demos/react/checkbox-basic-demo'
-import checkboxBasicDemoRaw from '@demos/react/checkbox-basic-demo.tsx.code.txt?raw'
-import CheckboxDescriptionDemo from '@demos/react/checkbox-description'
-import checkboxDescriptionRaw from '@demos/react/checkbox-description.tsx.code.txt?raw'
-import CheckboxColorDemo from '@demos/react/checkbox-color'
-import checkboxColorRaw from '@demos/react/checkbox-color.tsx.code.txt?raw'
-import CheckboxSizeDemo from '@demos/react/checkbox-size'
-import checkboxSizeRaw from '@demos/react/checkbox-size.tsx.code.txt?raw'
-import CheckboxVariantDemo from '@demos/react/checkbox-variant'
-import checkboxVariantRaw from '@demos/react/checkbox-variant.tsx.code.txt?raw'
-import CheckboxIconDemo from '@demos/react/checkbox-icon'
-import checkboxIconRaw from '@demos/react/checkbox-icon.tsx.code.txt?raw'
-import CheckboxUiCustomDemo from '@demos/react/checkbox-ui-custom'
-import checkboxUiCustomRaw from '@demos/react/checkbox-ui-custom.tsx.code.txt?raw'
-</script>
 
-<DemoBlock title="选中 / 半选 / 禁用 / 必选" description="checked / indeterminate / disabled / required" :code="checkboxBasicDemoRaw">
-  <ReactDemo :component="CheckboxBasicDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/checkbox-basic-demo.tsx" react title="选中 / 半选 / 禁用 / 必选" description="checked / indeterminate / disabled / required" />
 
 ## 说明文字
 
 description 在选项文字下方展示辅助说明。
 
-<DemoBlock title="label 下方辅助说明" description="description 属性" :code="checkboxDescriptionRaw">
-  <ReactDemo :component="CheckboxDescriptionDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/checkbox-description.tsx" react title="label 下方辅助说明" description="description 属性" />
 
 ## 语义色
 
 color 属性控制选中与半选状态下指示块的颜色。
 
-<DemoBlock title="七种语义色" description="color 属性，选中与半选状态" :code="checkboxColorRaw">
-  <ReactDemo :component="CheckboxColorDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/checkbox-color.tsx" react title="七种语义色" description="color 属性，选中与半选状态" />
 
 ## 尺寸
 
-<DemoBlock title="三档尺寸" description="sm / md / lg，图标同步缩放" :code="checkboxSizeRaw">
-  <ReactDemo :component="CheckboxSizeDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/checkbox-size.tsx" react title="三档尺寸" description="sm / md / lg，图标同步缩放" />
 
 ## 变体与指示块位置
 
 `variant="card"` 时整个卡片可点击；`indicator` 控制指示块位置，`hidden` 时指示块隐藏、图标显示在 label 上方。
 
-<DemoBlock title="variant 与 indicator" description="list / card × start / end / hidden" :code="checkboxVariantRaw">
-  <ReactDemo :component="CheckboxVariantDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/checkbox-variant.tsx" react title="variant 与 indicator" description="list / card × start / end / hidden" />
 
 ## 自定义图标与聚焦环
 
 `icon` / `indeterminateIcon` 自定义选中与半选图标；`highlight` 常显聚焦环。
 
-<DemoBlock title="icon 与 highlight" description="icon / indeterminateIcon / highlight" :code="checkboxIconRaw">
-  <ReactDemo :component="CheckboxIconDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/checkbox-icon.tsx" react title="icon 与 highlight" description="icon / indeterminateIcon / highlight" />
 
 ## ui 插槽
 
 `ui` 按主题插槽覆盖类名。
 
-<DemoBlock title="ui 插槽自定义" description="ui 键：root / container / base / indicator / icon / wrapper / label / description" :code="checkboxUiCustomRaw">
-  <ReactDemo :component="CheckboxUiCustomDemo" />
-</DemoBlock>
+<DemoPreview file="demos/react/checkbox-ui-custom.tsx" react title="ui 插槽自定义" description="ui 键：root / container / base / indicator / icon / wrapper / label / description" />
 
 ## 安装
 

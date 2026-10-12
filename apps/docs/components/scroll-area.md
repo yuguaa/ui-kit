@@ -7,54 +7,31 @@ description: 内容溢出时可滚动的区域
 
 内容溢出时可滚动的区域，支持 items 数组、虚拟滚动与滚动阴影。
 
-<script setup>
-import ScrollAreaBasic from '@demos/vue/scroll-area-basic.vue'
-import scrollAreaBasicRaw from '@demos/vue/scroll-area-basic.vue.code.txt?raw'
-import ScrollAreaHorizontal from '@demos/vue/scroll-area-horizontal.vue'
-import scrollAreaHorizontalRaw from '@demos/vue/scroll-area-horizontal.vue.code.txt?raw'
-import ScrollAreaBoth from '@demos/vue/scroll-area-both.vue'
-import scrollAreaBothRaw from '@demos/vue/scroll-area-both.vue.code.txt?raw'
-import ScrollAreaVirtual from '@demos/vue/scroll-area-virtual.vue'
-import scrollAreaVirtualRaw from '@demos/vue/scroll-area-virtual.vue.code.txt?raw'
-import ScrollAreaUi from '@demos/vue/scroll-area-ui.vue'
-import scrollAreaUiRaw from '@demos/vue/scroll-area-ui.vue.code.txt?raw'
-</script>
-
-<DemoBlock title="基础用法" description="items 数组渲染，固定高度内容滚动" :code="scrollAreaBasicRaw">
-  <ScrollAreaBasic />
-</DemoBlock>
+<DemoPreview file="demos/vue/scroll-area-basic.vue" title="基础用法" description="items 数组渲染，固定高度内容滚动" />
 
 ## 横向滚动
 
 `orientation="horizontal"` 时内容横向排列，横向溢出后通过底部滚动条滚动。
 
-<DemoBlock title="横向滚动" description="orientation: horizontal" :code="scrollAreaHorizontalRaw">
-  <ScrollAreaHorizontal />
-</DemoBlock>
+<DemoPreview file="demos/vue/scroll-area-horizontal.vue" title="横向滚动" description="orientation: horizontal" />
 
 ## 双向滚动
 
 `orientation="both"` 时同时提供纵向与横向滚动条，适合宽表格等双向溢出内容。
 
-<DemoBlock title="双向滚动" description="orientation: both" :code="scrollAreaBothRaw">
-  <ScrollAreaBoth />
-</DemoBlock>
+<DemoPreview file="demos/vue/scroll-area-both.vue" title="双向滚动" description="orientation: both" />
 
 ## 虚拟滚动与阴影
 
 `virtualize` 只渲染可视窗口附近的项，适合超长列表；`shadow` 在滚动边缘显示渐隐阴影，可传 `{ size }` 配置阴影宽度。
 
-<DemoBlock title="virtualize 与 shadow" description="1000 项虚拟滚动 + 边缘阴影" :code="scrollAreaVirtualRaw">
-  <ScrollAreaVirtual />
-</DemoBlock>
+<DemoPreview file="demos/vue/scroll-area-virtual.vue" title="virtualize 与 shadow" description="1000 项虚拟滚动 + 边缘阴影" />
 
 ## ui 插槽自定义
 
 `ui` 按主题插槽（root / viewport / item）覆盖类名。
 
-<DemoBlock title="ui 插槽自定义" description="三个插槽键逐层注入类名" :code="scrollAreaUiRaw">
-  <ScrollAreaUi />
-</DemoBlock>
+<DemoPreview file="demos/vue/scroll-area-ui.vue" title="ui 插槽自定义" description="三个插槽键逐层注入类名" />
 
 ## 安装
 
