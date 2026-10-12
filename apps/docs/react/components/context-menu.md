@@ -109,3 +109,57 @@ menuApi.open()   // open / close / toggle
 
 - 弹层：淡入 + 缩放进出场（scale 0.95，100ms）
 - 项：hover 背景过渡
+
+## 设计规格
+
+React 端基于 Base UI ContextMenu，主题插槽类名与 Vue 端键名一致，token 采用 shadcn 变量 + kit-theme.css 色板。
+
+### 主题 token
+
+**背景**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| content | bg-popover | 对应 bg-default |
+| item（高亮） | data-highlighted:bg-muted | 对应 before:bg-elevated/50；color 项无彩色背景（Vue 端为 before:bg-color/10），差异注明 |
+
+**文字**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| item（无 color） | text-foreground | 对应 text-default |
+| item（color 项） | text-primary / text-success / text-error 等 | 对应 text-color，与 Vue 端一致 |
+| itemLeadingIcon | text-muted-foreground，color 项为 text-color/75 | 对应 text-dimmed / text-color/75 |
+| itemDescription | text-muted-foreground | 对应 text-muted |
+| label（分组标题） | text-foreground | 对应 text-highlighted |
+| itemLabelExternalIcon | text-muted-foreground | 对应 text-dimmed |
+
+**描边**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| content | ring-1 ring-border | 对应 ring ring-default |
+| separator | bg-border | 与 Vue 端一致 |
+
+**圆角与阴影**
+
+| 位置 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| content · item | rounded-md | 6px，与 Vue 端同值 |
+| content | shadow-lg | 与 Vue 端同值；content 最小宽度为 min-w-36（Vue 端为 min-w-32，差异注明） |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- |
+| color（primary 等七色 + neutral） | item 文字 text-color，图标 text-color/75；无彩色高亮背景（Vue 端为 before:bg-color/10，差异注明） |
+| active=true | 选中项样式（对照 Vue 端 text-highlighted + before:bg-elevated） |
+| loading | itemLeadingIcon 切换为 animate-spin |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | Base UI ContextMenu 语义，与 Vue 端 reka ContextMenu 一致：右键打开；ArrowDown / ArrowUp 在项间移动焦点，ArrowRight 打开子菜单，ArrowLeft 关闭子菜单，Esc 关闭菜单，Home / End 跳转首尾，字母键高亮匹配项 |
+| ARIA | 与 Vue 端一致：Popup 为 role=menu；Item 为 role=menuitem；CheckboxItem 为 role=menuitemcheckbox + aria-checked；SubmenuTrigger 为 aria-haspopup=menu + aria-expanded |
+| 动效 | content 进出场为 tailwindcss-animate 风格 animate-in / fade-in-0 / zoom-in-95 + duration-100（Vue 端为 scale-in / scale-out 100ms，实现方式不同，差异注明）；item 无 transition 类（Vue 端为 transition-colors，差异注明）；loading 项前置图标 animate-spin |

@@ -110,3 +110,61 @@ modalApi.setState({ title: "新标题" })
 
 - 遮罩：淡入淡出（200ms）
 - 面板：缩放进出场（200ms）
+
+## 设计规格
+
+### 主题 token
+
+**背景**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| overlay | bg-black/50 | 黑色 50% 透明度（视觉对应 Vue 端 bg-elevated/75） |
+| content | bg-background | shadcn 变量，对应 bg-default |
+
+**文字**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| title | text-foreground | 对应 text-highlighted |
+| description | text-muted-foreground | 对应 text-muted |
+
+**描边与分割**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| content | divide-y divide-border | 分割线，对应 divide-default |
+| content（非全屏） | ring-1 ring-border | 对应 ring ring-default |
+
+**圆角与阴影**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| content（非全屏） | rounded-lg | 8px |
+| content（非全屏） | shadow-lg | Tailwind 弹窗阴影阶梯 |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- | --- |
+| transition=true | 遮罩与面板 data-open 播 fade-in-0 / 面板 zoom-in-95，data-closed 播 fade-out-0 / zoom-out-95（Base UI Dialog 状态驱动） |
+| fullscreen=true | content inset-0 全屏铺满 |
+| fullscreen=false | content w-[calc(100vw-2rem)] max-w-lg + rounded-lg shadow-lg ring-1 ring-border |
+| overlay=true | 遮罩渲染 bg-black/50 |
+| scrollable=true | 遮罩 overflow-y-auto + grid place-items-center p-4 sm:py-8，面板置于遮罩内随滚动居中 |
+| scrollable=false | content fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-h-[calc(100dvh-2rem)] overflow-hidden；body overflow-y-auto |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | 打开时焦点移入面板并锁定（focus trap，Base UI Dialog 语义）；Esc 关闭；关闭后焦点恢复触发元素；dismissible=false 时外部点击（outside-press）与 Esc（escape-key）被拦截并触发 onClosePrevent |
+| ARIA | Popup 由 Base UI Dialog 渲染 role="dialog"，modal 时 aria-modal="true"；Title / Description 关联 aria-labelledby / aria-describedby；无标题或使用 content 插槽时渲染 sr-only 的 Title / Description；关闭按钮 aria-label="关闭" |
+| 动效 | 遮罩与面板进出场 200ms（data-open / data-closed + animate-in / animate-out，与 Vue 端 fade / scale 动效语义对应）；打开时锁定 body 滚动（Base UI Dialog 语义） |
+
+**双端差异**
+
+| 项 | Vue | React |
+| --- | --- | --- |
+| 遮罩背景 | bg-elevated/75（跟随主题亮暗） | bg-black/50（固定黑色，不随主题） |
+| 动效实现 | CSS 关键帧 fade-in / scale-in | data-open 状态 + animate-in / zoom-in-95 工具类 |

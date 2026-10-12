@@ -86,3 +86,25 @@ stepperApi.next()   // current 可读，next / prev / reset / go
 ## 动效
 
 - 步骤状态切换：背景与文字颜色过渡（transition-colors）
+
+## 设计规格
+
+### 主题 token
+
+- 背景：触发器默认 `bg-elevated`（#f5f5f5 / 暗色 #262626）；completed / active `bg-{color}`（默认 `bg-primary`，neutral → `bg-inverted`）
+- 文字：触发器默认 `text-muted`；completed / active `text-inverted`；title `text-default font-medium`；description `text-muted`
+- 描边：触发器 `focus-visible:outline-3 outline-{color}/25`（neutral → `outline-inverted/25`）；分隔线未完成 `bg-accented`、completed `bg-{color}`
+- 圆角与阴影：触发器 `rounded-full`；分隔线 `rounded-full`
+- 变体：
+
+| 变体 | 枚举 | token 组合 |
+| --- | --- | --- |
+| orientation | horizontal / vertical | 分隔线水平 `h-0.5` / 垂直 `w-0.5`，位置按尺寸计算 |
+| size | xs / sm / md / lg / xl | 触发器 `size-6 ~ size-14` + 字号、图标尺寸、间距 |
+| color | 六色 + neutral | 完成/激活态触发器背景与分隔线颜色 |
+
+### 交互
+
+- 键盘：`StepperTrigger` 为原生 `<button>`（Tab 聚焦、Enter / Space 触发）；无方向键导航（reka-ui Stepper 未实现 roving focus）；`linear` 模式阻止跳转到超过当前步骤 +1 的步骤，允许返回已完成步骤
+- ARIA：item 输出 `data-state`（completed / active / inactive）；激活项 `aria-current="true"`；trigger 输出 `aria-labelledby`（关联标题）与 `aria-describedby`（关联描述）；禁用项按钮输出 `disabled`
+- 动效：无过渡类，状态切换即时换色；分隔线随 completed 状态换色

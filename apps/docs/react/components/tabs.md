@@ -71,3 +71,32 @@ npx shadcn@latest add @ui-kit/x-tabs
 ## 动效
 
 - 指示器：位置切换过渡；触发器 hover / 选中颜色过渡
+
+## 设计规格
+
+### 主题 token
+
+- 背景：pill 列表 `bg-muted`；指示器 `bg-{color}`（默认 `bg-primary`，green 500；neutral → `bg-foreground`）
+- 文字：未激活触发器 `text-muted-foreground`，hover `text-foreground`；pill 激活态 `text-background`；link 激活态 `text-{color}`；禁用 `opacity-75`
+- 描边：link 变体列表 `border-border`；内容区 `focus-visible:outline-3 outline-{color}/25`（neutral → `outline-foreground/25`）
+- 圆角与阴影：触发器 `rounded-md`；pill 列表 `rounded-lg`；pill 指示器 `rounded-md shadow-xs`；link 指示器 `rounded-full`
+- 变体：
+
+| 变体 | 枚举 | token 组合 |
+| --- | --- | --- |
+| color | 六色 + neutral | 指示器背景 + 激活态文字 + 焦点描边颜色 |
+| variant | pill / link | pill：`list: bg-muted rounded-lg` + 指示器 `rounded-md shadow-xs`；link：`list: border-border` + 指示器 `rounded-full` |
+| orientation | horizontal / vertical | 指示器 `left-[var(--active-tab-left)] w-[var(--active-tab-width)]` / `top-[var(--active-tab-top)] h-[var(--active-tab-height)]` |
+| size | xs / sm / md / lg / xl | 触发器 `px-* py-* text-* gap-*` + 图标尺寸 |
+
+### 交互
+
+- 键盘：Base UI Tabs 语义——方向键（水平 Left/Right、垂直 Up/Down）移动焦点并激活（默认 immediate 激活）；Home / End 跳首尾；禁用触发器不可聚焦
+- ARIA：Base UI 输出 `role=tablist`（含 `aria-orientation`）、`role=tab`（`aria-selected` / `aria-controls`）、`role=tabpanel`（`aria-labelledby`）
+- 动效：指示器 `transition-[left,top,width,height] duration-200 ease-out`，`motion-reduce` 关闭；触发器 `transition-colors`；`keepMounted={!unmountOnHide}` 控制内容卸载
+
+**双端差异**：
+
+- Vue 端基于 reka-ui（指示器 `translate` 过渡 + `--reka-tabs-indicator-*` 变量定位）；React 端基于 Base UI（`left/top/width/height` 过渡 + `--active-tab-*` 变量）
+- Vue 端有 SSR 伪元素激活高亮回退；React 端无（无 SSR 测量问题）
+- 语义色映射：Vue `bg-elevated` / `text-inverted` / `text-highlighted` ↔ React `bg-muted` / `text-background` / `text-foreground`

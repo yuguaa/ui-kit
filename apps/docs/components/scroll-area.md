@@ -106,3 +106,37 @@ scrollAreaApi.scrollTo(0)
 ## 动效
 
 无动效：原生滚动行为。
+
+## 设计规格
+
+### 主题 token
+
+**背景与描边**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| root | outline-primary/25 focus-visible:outline-3 | 聚焦轮廓用 primary（#22c55e）25% |
+| root / viewport / item | 无背景 token | 主题未内建背景色 |
+
+**圆角与阴影**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| 无圆角 token | - | 主题未内建 |
+| shadow=true | maskImage 线性渐变 | 由 useScrollShadow 生成，默认 24px 渐隐边缘 |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- | --- |
+| orientation=vertical | root overflow-y-auto overflow-x-hidden；viewport flex-col |
+| orientation=horizontal | root overflow-x-auto overflow-y-hidden；viewport flex-row |
+| externalScroll=true | root overflow-visible（外部滚动元素接管，配合 virtualize.getScrollElement） |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | 无自定义键盘处理；root 为原生滚动容器（方向键 / PageUp / PageDown 原生行为），focus-visible 显示 primary 聚焦环 |
+| ARIA | 无角色标注（Primitive div + data-orientation） |
+| 动效 | 无（原生滚动）；虚拟滚动按滚动位置渲染窗口（@tanstack/vue-virtual，支持元素测量与多 lane）；scroll 事件上报 isScrolling |

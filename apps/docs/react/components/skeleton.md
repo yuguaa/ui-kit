@@ -47,3 +47,42 @@ npx shadcn@latest add @ui-kit/x-skeleton
 ## 动效
 
 - 骨架：脉冲动画（animate-pulse）
+
+## 设计规格
+
+### 主题 token
+
+**背景**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| base | bg-muted | shadcn 变量（Vue 端为 bg-elevated） |
+
+**圆角**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| base | rounded-md | 6px |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- | --- |
+| variant=text | h-4 w-full |
+| variant=circle | size-10 rounded-full |
+| variant=rect | h-24 w-full rounded-md（默认） |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | 无（非交互组件） |
+| ARIA | role="alert" + aria-busy="true" + aria-label="loading" + aria-live="polite"（组件源码显式设置，与 Vue 端一致） |
+| 动效 | animate-pulse 脉冲 |
+
+**双端差异**
+
+| 项 | Vue | React |
+| --- | --- | --- |
+| 底色 | bg-elevated（#f5f5f5 / #262626） | bg-muted（#fafafa / #262626） |
+| 形状变体 | 无内建 variant，由 class / ui.base 注入 | 内建 variant=text / circle / rect |

@@ -144,3 +144,29 @@ formApi.submit();     // 提交
 ## 动效
 
 无动效：表单容器组件。
+
+## 设计规格
+
+### 主题 token
+
+| 类别 | 说明 |
+| --- | --- |
+| 背景 | 无 |
+| 文字 | 无 |
+| 描边 | 无 |
+| 圆角与阴影 | 无 |
+| 变体 | 无 |
+
+根元素固定输出 `flex flex-col gap-4`（Vue 端主题 `base` 为空），视觉由内部字段与布局决定。
+
+### 交互
+
+- 键盘：无组件级键盘逻辑；提交经 `onSubmit` 阻止默认行为（`noValidate` 关闭原生校验，校验由 rules / schema / validate 完成）
+- ARIA：无角色；`loading` 或 `disabled` 时以 `<fieldset disabled class="contents">` 包裹内容禁用全部控件
+- 动效：无
+
+**双端差异**：
+
+- Vue 端根元素无布局类；React 端固定 `flex flex-col gap-4`
+- Vue 端保留原生表单校验（`api.submit()` 先 `reportValidity()`）；React 端 `noValidate` 完全自管
+- Vue 端支持嵌套表单（`nested`）与 schema 转换（`transform`）；React 端无此能力

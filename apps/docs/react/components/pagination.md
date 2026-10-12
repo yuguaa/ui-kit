@@ -75,3 +75,32 @@ npx shadcn@latest add @ui-kit/x-pagination
 ## 动效
 
 - 按钮：hover / active 颜色过渡
+
+## 设计规格
+
+### 主题 token
+
+- 背景：无，按钮背景由 `XButton` 提供
+- 文字：页码按钮文字居中（`label` 插槽）；其余无
+- 描边：无，由 `XButton` 提供
+- 圆角与阴影：无，由 `XButton` 提供
+- 变体：
+
+| 配置 | 默认值 | token 组合 |
+| --- | --- | --- |
+| color / variant | neutral / outline | 未激活页与首末按钮 |
+| activeColor / activeVariant | primary / solid | 当前页按钮 |
+| showEdges / siblingCount | false / 2 | 页码序列窗口（reka-ui 同款算法） |
+| size | — | 透传 XButton 尺寸 |
+
+### 交互
+
+- 键盘：页码与首末按钮为原生 `<button>`（Tab 聚焦、Enter / Space 触发）；省略号渲染为不可聚焦的图标按钮
+- ARIA：页码按钮输出 `aria-label="Page {value}"` 与 `aria-current="page"`（当前页，由 `page` prop 判定）；整体 `disabled` 时按钮输出 `disabled`
+- 动效：XButton hover / active 颜色过渡
+
+**双端差异**：
+
+- Vue 端基于 reka-ui Pagination（根渲染 `<nav>`，`aria-current` 由 PaginationListItem 输出）；React 端手工渲染 `<div>` 根 + 按钮组，`aria-current` 手工输出
+- Vue 端 RTL 下首、上、下、末图标自动换向；React 端固定 lucide 图标不换向
+- Vue 端 `to` 返回路由地址由 XButton 渲染 NuxtLink；React 端 `to` 返回 ReactElement

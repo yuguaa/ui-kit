@@ -53,3 +53,42 @@ npx shadcn@latest add @ui-kit/x-button-group
 ## 动效
 
 无动效：布局容器，按钮动效由 XButton 承担。
+
+## 设计规格
+
+### 主题 token
+
+主题与 Vue 端一致：组件没有独立 theme 文件，类名内联在 `x-button-group.tsx` 中。
+
+| 项目 | 类名 | 说明 |
+| --- | --- | --- |
+| 背景 | 不使用 | 布局容器不设背景 token |
+| 文字 | 不使用 | 不设文字 token |
+| 描边 | 不使用 | 相邻按钮共享边框由负边距实现（-ml-px / -mt-px） |
+| 圆角 | [&>*:not(:first-child)]:rounded-l-none 等 | 中间按钮去除相邻圆角，首尾按钮保留自身 rounded-md |
+| 阴影 | 不使用 | 没有阴影 |
+| 变体 | orientation | horizontal：flex-row items-center；vertical：flex-col items-stretch |
+
+根元素公共类：`inline-flex`。
+
+### 交互
+
+**键盘**
+
+| 行为 | 说明 |
+| --- | --- |
+| Tab | 焦点按 DOM 顺序进入组内按钮，没有方向键管理 |
+| 禁用 | 组本身没有禁用态，由子按钮各自处理 |
+
+**ARIA**
+
+| 属性 | 说明 |
+| --- | --- |
+| role="group" | 渲染为分组角色 |
+| data-orientation | 输出 horizontal / vertical |
+
+**动效**
+
+没有动效：布局容器，按钮动效由 XButton 承担。
+
+与 Vue 端没有差异：类名、角色、data-orientation 双端一致；仅渲染机制不同（Vue 用 reka-ui Primitive 的 as，React 用 useRender 的 render）。

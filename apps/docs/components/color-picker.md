@@ -89,3 +89,34 @@ npx shadcn-vue@latest add @ui-kit/x-color-picker
 
 - 拖拽圆点跟随指针，位置更新带 throttle 节流
 - 无进出场动效，交互即时反馈
+
+## 设计规格
+
+### 主题 token
+
+| 类别 | 类名 | 值（亮色 / 暗色） |
+| --- | --- | --- |
+| 背景 | 色板底色与渐变由内联样式提供：`selector` 背景为当前色相纯色，`selectorBackground` 叠加黑白双向渐变 | 非 token，运行期生成 |
+| 背景 | 轨道 `track` 渐变：红 → 品红 → 蓝 → 青 → 绿 → 黄 → 红（内联样式） | 非 token |
+| 文字 | 无 | - |
+| 描边 | 拖拽圆点 `ring-2 ring-white` | #ffffff |
+| 圆角 | `selector` / `selectorBackground` / `track` 为 `rounded-md`（6px）；thumb 为 `rounded-full` | --radius-md / 圆形 |
+| 阴影 | 无 | - |
+| 禁用 | root `data-[disabled]:opacity-75` | - |
+
+### 变体
+
+| 变体 | token 组合 |
+| --- | --- |
+| size xs ~ xl | 色板与轨道 `w-38 h-38` ~ `w-46 h-46` |
+| disabled | 整体 `opacity-75`，圆点 `cursor-not-allowed` |
+
+### 交互
+
+| 类别 | 说明 |
+| --- | --- |
+| 指针 | pointerdown 开始拖拽，window pointermove / pointerup 跟随；色板双向（x 饱和度 / y 亮度），轨道单向（y 色相）；位置按容器尺寸换算为 0 ~ 100% |
+| 节流 | `throttle` 默认 50ms，限制拖拽期间值更新频率 |
+| 键盘 | 无键盘语义（纯指针拖拽） |
+| ARIA | 无 role 声明；disabled 以 `data-disabled` 呈现 |
+| 动效 | 无过渡动画，位置即时反馈 |

@@ -66,3 +66,24 @@ npx shadcn-vue@latest add @ui-kit/x-link
 
 - hover：文字颜色过渡
 - 无位移动画
+
+## 设计规格
+
+### 主题 token
+
+- 背景：无
+- 文字：激活态 `text-primary`（green 500，#22c55e）；非激活态 `text-muted`（#737373 / 暗色 #a3a3a3）；可交互非激活态 hover `text-default`；禁用 `opacity-75`
+- 描边：`focus-visible:outline-3 outline-primary/25`
+- 圆角与阴影：`rounded-md`（6px）
+- 变体：
+
+| 变体 | 枚举 | token 组合 |
+| --- | --- | --- |
+| active | true / false | true：`text-primary`；false：`text-muted` |
+| disabled | true | `cursor-not-allowed opacity-75` |
+
+### 交互
+
+- 键盘：渲染 `<a>`（有 `to`）或 `<button type="button">`（无 `to`），原生 Tab 聚焦；`focus-visible` 输出描边；disabled 时移除 `href`、`aria-disabled="true"`、`role="link"`、`tabindex=-1`，点击被拦截
+- ARIA：激活态输出 `aria-current="page"`（`exact` 时以精确匹配为准）；外链默认补 `rel="noopener noreferrer"`
+- 动效：非激活态 hover 文字过渡（`theme.transitions` 开启时）；预取在链接进入视口（IntersectionObserver，空闲时）与 `pointerenter` / `focus` 时触发

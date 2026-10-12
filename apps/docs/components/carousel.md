@@ -123,3 +123,40 @@ carouselApi.next()   // next / prev
 - 轮播切换：滑动过渡（embla）
 - fade：当前项透明度过渡（transition-opacity）
 - 指示点：选中色切换过渡（transition-colors）
+
+## 设计规格
+
+### 主题 token
+
+**背景与描边**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| dot | bg-accented | #e5e5e5（亮）/ #404040（暗） |
+| dot（active=true） | data-[state=active]:bg-inverted | #171717（亮）/ #ffffff（暗） |
+| dot | outline-inverted/25 focus-visible:outline-3 | 聚焦轮廓用 inverted 25% |
+| prev / next | XButton color=neutral variant=outline | 按钮主题由 XButton 承担 |
+
+**圆角与阴影**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| prev / next / dot | rounded-full | 胶囊形 |
+| 无 shadow | - | 轮播无阴影 token |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- | --- |
+| orientation=horizontal | container flex-row -ms-4；item ps-4；prev start-4 sm:-start-12 top-1/2 -translate-y-1/2；next end-4 sm:-end-12 |
+| orientation=vertical | container flex-col -mt-4；item pt-4；prev top-4 sm:-top-12 left-1/2 rotate-90（rtl -rotate-90）；next bottom-4 sm:-bottom-12 同旋转 |
+| active=true | 选中指示点 data-[state=active]:bg-inverted |
+| theme.transitions 开启 | dot 附加 transition（选中色切换过渡） |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | 根节点 tabindex="0" 可聚焦；方向键切换 slide（水平 ←/→，RTL 反转；垂直 ↑/↓），触发时 preventDefault |
+| ARIA | 根 role="region" + aria-roledescription="carousel"；item：dots 关闭时 role="group" + aria-roledescription="slide"，dots 开启时 role="tabpanel"；dots 容器 role="tablist"（aria-label 来自 t('carousel.dots')）；指示点 button role="tab" + aria-selected + aria-label（t('carousel.goto')）+ data-state；prev / next 按钮 aria-label 来自 t('carousel.prev') / t('carousel.next')，不可滚动方向 disabled |
+| 动效 | 轮播切换为 embla 原生滑动（无 CSS 动画类）；fade 插件开启时当前项透明度过渡；指示点 transition（theme.transitions 开启时）；autoplay / autoScroll 由插件驱动连续滚动 |

@@ -94,3 +94,62 @@ show 的选项支持传入节点实现同名插槽的自定义渲染：
 
 - 进出场：滑入 + 淡入淡出（sonner）
 - 进度条：随剩余时长线性缩减，悬停时暂停
+
+## 设计规格
+
+### 主题 token
+
+**背景**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| root | bg-popover | shadcn 变量，对应 bg-default |
+
+**文字**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| title | text-sm font-medium | 继承 root 文字色 |
+| description | text-muted-foreground | 对应 text-muted |
+
+**描边**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| root | ring-1 ring-border | 对应 ring ring-default |
+| root（按 color） | ring-primary/25 · ring-success/25 · ring-warning/25 · ring-error/25 | 语义色 25% 描边叠加 |
+
+**圆角与阴影**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| root | rounded-lg | 8px |
+| root | shadow-lg | Tailwind 浮层阴影阶梯 |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- | --- |
+| color=primary / success / warning / error | root ring-`<color>`/25；icon text-`<color>` |
+| orientation=vertical | root items-start，actions 在描述下方（mt-2.5） |
+| orientation=horizontal | root items-center，actions 与关闭按钮同行 |
+| title 存在 | description mt-1 |
+
+默认 color 为 primary。容器与堆叠布局由 sonner 接管（默认位置 top-right）。
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | 操作按钮与关闭按钮由 XButton 承担 Enter / Space 与焦点样式；容器朗读与焦点策略由 sonner 接管（sonner 语义） |
+| ARIA | XToast 结构组件根节点无 role；通知容器与播报行为由 sonner 提供（sonner 语义）；关闭按钮 aria-label="关闭" |
+| 动效 | 进出场与堆叠动效由 sonner 接管；进度条 rAF 驱动随剩余时长线性缩减、悬停暂停（duration 默认 3000ms） |
+
+**双端差异**
+
+| 项 | Vue | React |
+| --- | --- | --- |
+| 结构组件底层 | reka-ui ToastRoot / ToastProvider | sonner（XToast 为纯结构组件） |
+| 默认展示时长 | XToaster duration 默认 5000ms | XToast duration 默认 3000ms |
+| 颜色集 | theme 支持全部语义色 + neutral | primary / success / warning / error（无 neutral） |
+| 屏幕阅读播报 | reka ToastAnnounce（role="alert" + aria-live） | sonner 容器语义 |

@@ -104,3 +104,64 @@ npx shadcn@latest add @ui-kit/x-alert
 ## 动效
 
 无动效：静态提示组件。关闭按钮的 hover 颜色过渡由 XButton 承担。
+
+## 设计规格
+
+### 主题 token
+
+**背景与文字**
+
+| 变体 | 背景 | 文字 | 说明 |
+| --- | --- | --- | --- |
+| solid（color=primary 等） | bg-`<color>` | text-background | 语义色底（如 primary）+ 反色字（对应 Vue text-inverted） |
+| outline | 无背景 | text-`<color>` | 语义色文字 |
+| soft | bg-`<color>`/10 | text-`<color>` | 语义色 10% 浅底 |
+| subtle | bg-`<color>`/10 | text-`<color>` | 语义色 10% 浅底 |
+| neutral solid | bg-foreground | text-background | 对应 Vue bg-inverted / text-inverted |
+| neutral outline | 无背景 | text-foreground | 对应 Vue text-highlighted |
+| neutral soft | bg-muted | text-foreground | 对应 Vue bg-elevated/50 |
+| neutral subtle | bg-muted | text-foreground | 同上 |
+
+**描边**
+
+| 变体 | 类 | 值 |
+| --- | --- | --- |
+| outline / subtle（color=`<color>`） | ring-1 ring-inset ring-`<color>`/25 | 语义色 25% 内描边 |
+| neutral outline / subtle | ring-1 ring-inset ring-border | 对应 Vue ring-default / ring-accented |
+
+**圆角与阴影**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| root | rounded-lg | 8px |
+| root | 无 shadow | 提示组件无阴影 token |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- | --- |
+| variant=solid | bg-`<color>` + 反色文字 |
+| variant=outline | text-`<color>` + ring-1 ring-inset ring-`<color>`/25 |
+| variant=soft | bg-`<color>`/10 text-`<color>` |
+| variant=subtle | bg-`<color>`/10 text-`<color>` + ring-1 ring-inset ring-`<color>`/25 |
+| orientation=horizontal | root items-center，actions 与关闭按钮同行 |
+| orientation=vertical | root items-start，actions 在描述下方（mt-2.5） |
+| 标题存在 | description mt-1 |
+
+默认 color primary、variant solid。icon 尺寸 size-5，actions flex flex-wrap gap-1.5，close p-0。
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | 无内建键盘行为；操作按钮与关闭按钮的 Enter / Space 与焦点样式由 XButton 承担 |
+| ARIA | React 端根节点 role="alert"（源码显式设置）；关闭按钮 aria-label="关闭" |
+| 动效 | 无（静态组件） |
+
+**双端差异**
+
+| 项 | Vue | React |
+| --- | --- | --- |
+| 根节点角色 | 无 role | role="alert" |
+| solid 反色字 | text-inverted | text-background（shadcn 变量等价） |
+| neutral soft / subtle 底色 | bg-elevated/50 | bg-muted |

@@ -72,3 +72,31 @@ stepperApi.next()   // current 可读，next / prev / reset / go
 ## 动效
 
 - 步骤状态切换：背景与文字颜色过渡（transition-colors）
+
+## 设计规格
+
+### 主题 token
+
+- 背景：触发器默认 `bg-muted`；completed / active `bg-{color}`（默认 `bg-primary`；neutral → `bg-foreground`）
+- 文字：触发器默认 `text-muted-foreground`；completed / active `text-white`；title `text-foreground font-medium`；description `text-muted-foreground`
+- 描边：触发器 `focus-visible:outline-3 outline-{color}/25`（neutral → `outline-foreground/25`）；分隔线未完成 `bg-border`、completed `bg-{color}`
+- 圆角与阴影：触发器 `rounded-full`；分隔线 `rounded-full`
+- 变体：
+
+| 变体 | 枚举 | token 组合 |
+| --- | --- | --- |
+| orientation | horizontal / vertical | 分隔线 `h-0.5` / `w-0.5`，位置按尺寸计算 |
+| size | xs / sm / md / lg / xl | 触发器 `size-6 ~ size-14` + 字号、图标尺寸、间距 |
+| color | 六色 + neutral | 完成/激活态触发器背景与分隔线颜色 |
+
+### 交互
+
+- 键盘：触发器为原生 `<button>`（Tab 聚焦、Enter / Space 触发）；无方向键导航；`linear` 模式阻止跳转到超过当前步骤 +1 的步骤，允许返回已完成步骤
+- ARIA：手工输出 `data-state`（completed / active / inactive）与 `data-disabled`；分隔线 `aria-hidden`；Vue 端 reka-ui 输出的 `aria-current`、`aria-labelledby`、`aria-describedby` 此处无对应实现
+- 动效：无过渡类，状态切换即时换色；分隔线随 completed 状态换色
+
+**双端差异**：
+
+- Vue 端基于 reka-ui Stepper（item 输出 `aria-current="true"`，trigger 输出 `aria-labelledby` / `aria-describedby`）；React 端手工实现，仅输出 `data-state`，无对应 ARIA 属性
+- Vue 端禁用项由 reka 输出 `disabled` 属性；React 端按钮 `disabled` + 分隔线 `group-data-[disabled]:opacity-75`
+- 语义色映射：Vue `bg-elevated` / `text-inverted` / `bg-accented` ↔ React `bg-muted` / `text-white` / `bg-border`

@@ -89,3 +89,51 @@ accordionApi.open(0)    // open(index) / close(index) / toggle(index)，value �
 - expand / collapse：内容区高度展开与收起动画（animate-accordion-down / up）
 - trailingIcon：展开时旋转 180°（transition-transform）
 - 无位移动画
+
+## 设计规格
+
+React 端基于 Base UI Accordion，主题插槽类名与 Vue 端键名一致，token 采用 shadcn 变量。
+
+### 主题 token
+
+**背景**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| root · trigger · content | 无背景 token | 与 Vue 端一致 |
+
+**文字**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| trigger | text-sm font-medium（无颜色 token） | 与 Vue 端一致 |
+| body | text-sm（无颜色 token） | 与 Vue 端一致 |
+
+**描边**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| item | border-b border-border（最后一项无下边框） | 对应 border-b border-default |
+| trigger（focus-visible） | outline-primary/25 + focus-visible:outline-3 | 与 Vue 端一致 |
+
+**圆角与阴影**
+
+| 位置 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| trigger | rounded-md | 6px，与 Vue 端同值 |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- |
+| disabled | trigger 为 cursor-not-allowed + opacity-75 |
+| multiple=false（默认） | 仅一项展开；collapsible=true（默认）时允许全部收起，与 Vue 端 type=single 一致 |
+| multiple=true | 多项同时展开，与 Vue 端 type=multiple 一致 |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | Base UI Accordion 语义，与 Vue 端 reka Accordion 一致：Enter / Space 切换展开状态；ArrowDown / ArrowUp 在 trigger 间移动焦点；Home / End 跳转首尾 |
+| ARIA | 与 Vue 端一致：trigger 为 role=button + aria-expanded；Panel 为内容区域；默认 unmountOnHide=true 关闭后卸载，与 Vue 端一致 |
+| 动效 | content 为 data-open:animate-accordion-down / data-closed:animate-accordion-up（tailwindcss-animate 的 accordion-down / up keyframes，与 Vue 端 reka 动画同名同行为，200ms 由 keyframes 时长控制）；trailingIcon 展开时 rotate-180 + duration-200，与 Vue 端一致 |

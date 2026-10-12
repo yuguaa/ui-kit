@@ -85,3 +85,26 @@ npx shadcn-vue@latest add @ui-kit/x-tabs
 ## 动效
 
 - 指示器：位置切换过渡；触发器 hover / 选中颜色过渡
+
+## 设计规格
+
+### 主题 token
+
+- 背景：pill 列表 `bg-elevated`（#f5f5f5 / 暗色 #262626）；指示器 `bg-{color}`（默认 `bg-primary`，green 500）；neutral → `bg-inverted`
+- 文字：未激活触发器 `text-muted`，hover `text-default`；pill 激活态 `text-inverted`；link 激活态 `text-{color}`（neutral → `text-highlighted`）；禁用 `opacity-75`
+- 描边：link 变体列表 `border-default`；内容区 `focus-visible:outline-3 outline-{color}/25`（neutral → `outline-inverted/25`）
+- 圆角与阴影：触发器 `rounded-md`；pill 列表 `rounded-lg`；pill 指示器 `rounded-md shadow-xs`；link 指示器 `rounded-full`
+- 变体：
+
+| 变体 | 枚举 | token 组合 |
+| --- | --- | --- |
+| color | 六色 + neutral | 指示器背景 + 激活态文字 + 焦点描边颜色 |
+| variant | pill / link | pill：`list: bg-elevated rounded-lg` + 指示器 `rounded-md shadow-xs`；link：`list: border-default` + 指示器 `rounded-full` |
+| orientation | horizontal / vertical | 指示器水平 `translate-x-(--reka-tabs-indicator-position)` / 垂直 `translate-y-…` |
+| size | xs / sm / md / lg / xl | 触发器 `px-* py-* text-* gap-*` + 图标尺寸 |
+
+### 交互
+
+- 键盘：reka-ui Tabs 语义——方向键（水平 Left/Right、垂直 Up/Down）移动焦点，默认 `activationMode: automatic` 焦点即激活（manual 时仅移焦、Enter / Space 激活）；Home / End 跳首尾；禁用触发器不可聚焦
+- ARIA：list `role=tablist` + `aria-orientation`；trigger `role=tab` + `aria-selected` + `aria-controls`；content `role=tabpanel` + `aria-labelledby`；指示器为纯视觉元素无角色
+- 动效：指示器 `transition-[translate,width]`（水平）/ `translate-y`（垂直）`duration-200 ease-out`，`motion-reduce` 关闭；触发器 `transition-colors`（`theme.transitions` 开启时）；SSR 阶段激活高亮由伪元素回退（`before:bg-{color}`），指示器挂载后自动失效

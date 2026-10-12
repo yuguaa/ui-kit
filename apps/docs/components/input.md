@@ -97,3 +97,42 @@ npx shadcn-vue@latest add @ui-kit/x-input
 
 - focus：outline 加粗过渡（transition-colors）
 - 无位移动画
+
+## 设计规格
+
+### 主题 token
+
+| 类别 | 类名 | 值（亮色 / 暗色） |
+| --- | --- | --- |
+| 背景 | `bg-default`（outline 变体） | #ffffff / #171717 |
+| 背景 | `bg-elevated/50`（soft）· `bg-elevated`（subtle 与 soft 的 hover / focus） | #f5f5f5 / #262626 |
+| 背景 | `bg-transparent`（ghost / none） | 透明 |
+| 文字 | `text-highlighted` | #171717 / #ffffff |
+| 文字 | `placeholder:text-dimmed` | #a3a3a3 / #a3a3a3 |
+| 描边 | `ring ring-inset ring-accented`（outline / subtle） | #d4d4d4 / #404040 |
+| 描边 | 聚焦：`outline-{color}/25` + `focus-visible:outline-3` + `focus-visible:ring-{color}` | primary 为 #22c55e（25% 透明度） |
+| 描边 | neutral 聚焦：`outline-inverted/25` + `focus-visible:ring-inverted` | #171717 / #ffffff |
+| 圆角 | `rounded-md` | 6px（--radius-md） |
+| 阴影 | 无 | - |
+
+### 变体
+
+| 变体 | token 组合 |
+| --- | --- |
+| outline（默认） | `text-highlighted` + `bg-default` + `ring ring-inset ring-accented` |
+| soft | `text-highlighted` + `bg-elevated/50`，hover / focus 加深为 `bg-elevated` |
+| subtle | `text-highlighted` + `bg-elevated` + `ring ring-inset ring-accented` |
+| ghost | `text-highlighted` + `bg-transparent`，hover / focus 为 `bg-elevated` |
+| none | `text-highlighted` + `bg-transparent` + `focus:outline-none` |
+
+`highlight: true` 时叠加 `ring ring-inset ring-{color}`（neutral 为 `ring-inverted`），呈现常显聚焦环。`fixed` 未开启时 md 及以上断点字号缩小一档（如 md 尺寸 → `md:text-sm`）。
+
+### 交互
+
+| 类别 | 说明 |
+| --- | --- |
+| 键盘 | 原生 input 行为：字符输入、方向键移动光标、Home / End；无额外键盘处理 |
+| ARIA | 原生 input 隐式 `role=textbox`；`aria-invalid`、`aria-describedby` 等由 `useFormField` 透传 |
+| 动效 | `transition-colors` 背景与描边过渡；`loading` 时 leading / trailing 图标 `animate-spin` |
+
+disabled 时 `cursor-not-allowed` 且 `opacity-75`；尺寸 xs / sm / md / lg / xl 五档。

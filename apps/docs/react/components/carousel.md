@@ -113,3 +113,49 @@ carouselApi.next()   // next / prev
 - 轮播切换：滑动过渡（embla）
 - fade：当前项透明度过渡（transition-opacity）
 - 指示点：选中色切换过渡（transition-colors）
+
+## 设计规格
+
+### 主题 token
+
+**背景与描边**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| dot | bg-accent | shadcn 变量，对应 Vue bg-accented |
+| dot（选中） | data-[state=active]:bg-foreground | 对应 Vue data-[state=active]:bg-inverted |
+| dot | outline-foreground/25 focus-visible:outline-3 | 对应 Vue outline-inverted/25 |
+| prev / next | XButton color=neutral variant=outline | 按钮主题由 XButton 承担 |
+
+**圆角与阴影**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| prev / next / dot | rounded-full | 胶囊形 |
+| 无 shadow | - | 轮播无阴影 token |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- | --- |
+| orientation=horizontal | container flex-row -ms-4；item ps-4；prev top-1/2 start-4 sm:-start-12 -translate-y-1/2；next end-4 sm:-end-12 |
+| orientation=vertical | container flex-col -mt-4；item pt-4；prev top-4 sm:-top-12 left-1/2 rotate-90；next bottom-4 sm:-bottom-12 同旋转 |
+| fade | 当前项 opacity-100、其余 opacity-0 + transition-opacity duration-300 |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | 根节点 tabIndex=0 可聚焦；方向键切换 slide（水平 ←/→；垂直 ↑/↓），disabled 时不响应；触发时 preventDefault |
+| ARIA | 根 role="region" + aria-roledescription="carousel"；item 始终 role="group" + aria-roledescription="slide"；dots 容器 role="tablist" + aria-label；指示点 button role="tab" + aria-selected + aria-label + data-state；prev / next 按钮 aria-label 固定文案，不可滚动方向 disabled |
+| 动效 | 轮播切换为 embla 原生滑动；fade 插件开启时当前项透明度过渡（300ms）；autoplay / autoScroll 由插件驱动连续滚动；wheelGestures 滚轮手势切换（250ms 节流） |
+
+**双端差异**
+
+| 项 | Vue | React |
+| --- | --- | --- |
+| arrows 默认值 | false | true |
+| dots 开启时 item 角色 | role="tabpanel" | 保持 role="group" |
+| 指示点颜色 | bg-accented / bg-inverted | bg-accent / bg-foreground（shadcn 变量等价） |
+| 默认图标 | appConfig.ui.icons.arrowLeft / arrowRight（RTL 自适应） | ChevronLeft / ChevronRight |
+| vertical 按钮 RTL 旋转 | rtl:-rotate-90 | 无 rtl 处理 |

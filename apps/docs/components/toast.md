@@ -98,3 +98,56 @@ show 的选项支持传入组件实现同名插槽的自定义渲染：
 
 - 进出场：滑入 + 淡入淡出（sonner）
 - 进度条：随剩余时长线性缩减，悬停时暂停
+
+## 设计规格
+
+### 主题 token
+
+**背景**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| root | bg-default | #ffffff（亮）/ #171717（暗） |
+
+**文字**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| title | text-highlighted | #171717（亮）/ #ffffff（暗） |
+| description | text-muted | #737373（亮）/ #a3a3a3（暗） |
+
+**描边与焦点环**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| root | ring ring-default | 1px 环 #e5e5e5（亮）/ #262626（暗） |
+| root（color=primary 等） | outline-`<color>`/25 focus-visible:outline-3 focus-visible:ring-`<color>` | 焦点环用语义色（如 primary #22c55e），静态描边 25% 透明度 |
+| root（color=neutral） | outline-inverted/25 focus-visible:ring-inverted | 焦点环 inverted #171717（亮）/ #ffffff（暗） |
+
+**圆角与阴影**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| root | rounded-lg | --radius-lg 8px |
+| root | shadow-lg | Tailwind 浮层阴影阶梯 |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- | --- |
+| color=`<color>` | root outline-`<color>`/25 + focus-visible:ring-`<color>`；icon text-`<color>` |
+| color=neutral | root outline-inverted/25 + focus-visible:ring-inverted；icon text-highlighted |
+| orientation=vertical | root items-start，actions 在描述下方（mt-2.5） |
+| orientation=horizontal | root items-center，actions 与关闭按钮同行 |
+| title=true | description mt-1 |
+
+默认 color 为 primary。XToaster 容器：viewport fixed + sm:w-96 + z-[100]，默认 position bottom-right。
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | 根节点 tabindex="0"（reka-ui ToastRoot 语义）；无内建 Esc 关闭（reka-ui Toast 语义）；关闭按钮 aria-label 来自 t('toast.close')；ToastAction 的 alt-text 生成操作按钮 aria-label |
+| ARIA | reka ToastRoot 默认无 role；屏幕阅读播报由内部 ToastAnnounce 节点承担（role="alert"、aria-live polite，type=foreground 时 assertive）——以 reka-ui 语义为准 |
+| 动效 | 打开：toast-slide-in-from-top / bottom 200ms var(--ease-out)（按 position）；关闭：toast-closed / toast-collapsed-closed 200ms；滑动结束：toast-slide-{up,right,down,left} 200ms；重复通知：toast-pulse-a / b 200ms；base 常态 transition-[transform,translate,height] duration-200 ease-out；进度条随剩余时长线性缩减、悬停暂停 |
+| 手势 | pointer 拖拽滑动（swipe-direction 由 toaster position 推导），超过 swipeThreshold 关闭（reka-ui Toast 语义） |

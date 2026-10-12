@@ -110,3 +110,40 @@ npx shadcn-vue@latest add @ui-kit/x-radio-group
 - 勾选：状态颜色过渡
 - focus：聚焦环过渡
 - 无位移动画
+
+## 设计规格
+
+### 主题 token
+
+| 类别 | 类名 | 值（亮色 / 暗色） |
+| --- | --- | --- |
+| 背景 | 指示块 `indicator: bg-{color}` | primary 为 #22c55e；neutral 为 `bg-inverted` #171717 / #ffffff |
+| 背景 | 选中圆点 `after:bg-default` | #ffffff / #171717 |
+| 背景 | card / table 选中：`bg-{color}/10` | 主色 10% 透明度浅色底 |
+| 文字 | `legend` / `label: text-default` | #404040 / #e5e5e5 |
+| 文字 | `description: text-muted` | #737373 / #a3a3a3 |
+| 描边 | `base: ring ring-inset ring-accented` | #d4d4d4 / #404040 |
+| 描边 | 聚焦：`outline-{color}/25` + `focus-visible:outline-3` + `focus-visible:ring-{color}` | primary 25% 透明度 + 500 级 |
+| 描边 | card / table：`border border-default`，选中 `border-{color}/50` | #e5e5e5 / #262626 |
+| 圆角 | `base: rounded-full` · card / table `rounded-lg` | 圆形 / 8px（--radius-lg） |
+| 阴影 | 无 | - |
+
+### 变体
+
+| 变体 | token 组合 |
+| --- | --- |
+| list（默认） | 无容器描边，`flex-wrap` 换行 |
+| card | `border border-default rounded-lg`，hover `bg-elevated/50`，选中 `border-{color}/50` + `bg-{color}/10` |
+| table | 相邻项边框相接（horizontal `-space-x-px` / vertical `-space-y-px`），选中 `border-{color}/50` + `bg-{color}/10` + `z-[1]` |
+
+`indicator` 支持 start / end / hidden；hidden 时 base 为 `sr-only`，图标显示在 label 上方。`highlight: true` 时 base 叠加 `ring-{color}`。
+
+### 交互
+
+| 类别 | 说明 |
+| --- | --- |
+| 键盘 | reka-ui RadioGroupRoot 语义：Tab 进入组（焦点落在选中项），方向键在项间移动并选中，`loop` 开启时首尾循环 |
+| ARIA | root `role=radiogroup`；单项 `role=radio` + `aria-checked`；方向键行为遵循 WAI-ARIA radio group 模式 |
+| 动效 | card / table 变体 `transition-colors`（hover 与选中过渡）；无位移动画 |
+
+disabled 时 item `opacity-75`，控件与文字 `cursor-not-allowed`；尺寸 xs / sm / md / lg / xl 五档。

@@ -90,3 +90,80 @@ npx shadcn@latest add @ui-kit/x-avatar
 ## 动效
 
 无动效：静态展示组件。
+
+## 设计规格
+
+### 主题 token
+
+基于 @base-ui Avatar 原语（Root / Image / Fallback），样式语义与 Vue 端对应：`bg-muted` ≈ `bg-elevated`，`text-foreground` ≈ `text-default`。
+
+**背景**
+
+| token | 使用场景 |
+| --- | --- |
+| bg-{color}/10 | 文字 / 图标头像的背景 |
+| bg-muted | neutral / secondary 背景 |
+
+**文字**
+
+| token | 使用场景 |
+| --- | --- |
+| text-{color} | fallback 文字与图标颜色 |
+| text-foreground | neutral 文字 |
+| text-secondary-foreground | secondary 文字 |
+
+**描边**
+
+| 类 | 说明 |
+| --- | --- |
+| 不使用 | 没有描边 token；chip 圆点模式为 ring-2 ring-background |
+
+**圆角与阴影**
+
+| 类 | 值 |
+| --- | --- |
+| rounded-full / rounded-md | shape 为 circle 时全圆角，square 时 --radius-md（Vue 端仅圆形） |
+| 阴影 | 不使用 |
+
+**变体**
+
+| 变体 | 取值 | 说明 |
+| --- | --- | --- |
+| shape | circle（默认）/ square | 头像形状 |
+| size | xs / sm / md / lg / xl | size-5 ~ size-12，默认 md |
+| color | primary / secondary / neutral / success / info / warning / error | 背景与文字色，默认 neutral |
+| chip | boolean / XAvatarChip | 没有 text 时渲染实心圆点（bg-{color} size-2 border-0 + ring-2 ring-background） |
+
+### 交互
+
+**键盘**
+
+| 行为 | 说明 |
+| --- | --- |
+| 焦点 | 静态展示，没有可聚焦行为 |
+
+**ARIA**
+
+| 属性 | 说明 |
+| --- | --- |
+| alt | 图片替代文本（没有 alt 时兜底为 text 或 "avatar"），同时参与生成 fallback 首字母（最多 2 个） |
+| 不输出 | base-ui Avatar 没有内置角色 |
+
+**状态**
+
+| 状态 | 说明 |
+| --- | --- |
+| 加载失败 | onError 后切换为 Fallback；src 变化时重置错误态；keepMounted 保持图片节点挂载 |
+
+**动效**
+
+没有动效：静态展示组件。
+
+**与 Vue 端差异**
+
+| 项目 | Vue 端 | React 端 |
+| --- | --- | --- |
+| 尺寸档位 | 3xs ~ 3xl 九档（size-4 ~ size-12） | xs ~ xl 五档（size-5 ~ size-12） |
+| shape | 固定圆形 | 支持 circle / square |
+| neutral 颜色 | bg-elevated text-muted | bg-muted text-foreground（语义等价） |
+| 渲染原语 | reka-ui Primitive | @base-ui Avatar（Image 带 keepMounted） |

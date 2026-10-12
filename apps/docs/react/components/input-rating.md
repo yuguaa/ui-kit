@@ -90,3 +90,35 @@ npx shadcn@latest add @ui-kit/x-input-rating
 
 - 星标：hover 放大（scale 110%）与聚焦描边过渡
 - 无位移动画
+
+## 设计规格
+
+### 主题 token
+
+| 类别 | 类名 | 对应 Vue 端 token |
+| --- | --- | --- |
+| 背景 | 无（星形图标承载颜色） | 相同 |
+| 文字 | 高亮星 `fill-{color} text-{color}` | `data-[state=active]:text-{color}` |
+| 文字 | 空星 `text-muted-foreground` | `text-muted` |
+| 描边 | 聚焦：`outline-{color}/25` + `focus-visible:outline-3` | 相同规则 |
+| 圆角 | `rounded-xs`（2px） | Vue 端为 `rounded-sm`（4px） |
+| 阴影 | 无 | - |
+
+### 变体
+
+| 变体 | token 组合 |
+| --- | --- |
+| readonly | `cursor-default`，item `tabIndex=-1`，root `aria-readonly` |
+| disabled | root `pointer-events-none opacity-60`（Vue 端为 opacity-75） |
+
+可交互时 item `hover:scale-110`；半星以 `clip-path: inset(0 50% 0 0)` 裁剪高亮层实现。
+
+### 交互
+
+| 类别 | 说明 |
+| --- | --- |
+| 键盘 | 每个星为独立 button，Tab 逐个聚焦，Enter / Space 触发评分；无方向键调整语义 |
+| ARIA | root `role=radiogroup` + `aria-label="rating"`；每个星为 button + `aria-label="{N} 星"` |
+| 动效 | item `transition`；hover 放大 `scale-110` |
+
+**与 Vue 端差异**：React 端自实现评分交互（button 组），键盘模型与 ARIA 角色（radiogroup）与 Vue 端（reka-ui Rating，role=slider + 方向键）不同。

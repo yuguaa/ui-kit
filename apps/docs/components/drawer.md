@@ -107,3 +107,53 @@ drawerApi.open()   // open / close / toggle / setState / setData / getData
 
 - 面板：滑入滑出（200ms）
 - 遮罩：淡入淡出（200ms）
+
+## 设计规格
+
+### 主题 token
+
+**背景**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| overlay | bg-elevated/75 | #f5f5f5（亮）/ #262626（暗），75% 透明度 |
+| content | bg-default | #ffffff（亮）/ #171717（暗） |
+| handle | !bg-accented | #e5e5e5（亮）/ #404040（暗） |
+
+**文字**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| title | text-highlighted | #171717（亮）/ #ffffff（暗） |
+| description | text-muted | #737373（亮）/ #a3a3a3（暗） |
+
+**描边**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| content | ring ring-default | 1px 环 #e5e5e5（亮）/ #262626（暗） |
+
+**圆角与阴影**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| content（inset=false） | 方向性圆角 | top→rounded-b-lg、bottom→rounded-t-lg、left→rounded-r-lg、right→rounded-l-lg（--radius-lg 8px） |
+| content（inset=true） | rounded-lg | 四角 8px，贴边处距边 1rem |
+| content | 无 shadow | 抽屉无阴影 token |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- | --- |
+| direction=top / bottom | content 贴左右边，max-h-[96%]；handle !w-12 !h-1.5 mx-auto（top 时 mb-4，bottom 时 mt-4） |
+| direction=right / left | content 贴上下边，max-w-[calc(100%-2rem)]；handle !h-12 !w-1.5（right 时 !ml-4，left 时 !mr-4） |
+| inset=true | content rounded-lg overflow-hidden，各方向距边 1rem（inset-x-4 / inset-y-4） |
+| snapPoints=true | direction=top / bottom → h-full；right / left → w-full |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | Esc 关闭（vaul-vue 语义）；dismissible=false 时 Esc 与外部点击被拦截并触发 close:prevent；打开时焦点进入面板、关闭后恢复触发元素（vaul-vue 语义） |
+| ARIA | 内容 role="dialog"，title / description 关联 aria-labelledby / aria-describedby；无标题/描述或使用 content 插槽时渲染 VisuallyHidden 的 DrawerTitle / DrawerDescription；把手为装饰元素（aria-hidden）；关闭按钮 aria-label 来自 t('drawer.close') |
+| 动效 | 开合 transform 过渡由 vaul-vue 内置接管（Vue 主题无显式动画变体）；handle 有 transition-opacity ease-out；拖拽把手或面板调整 snapPoints，超过 closeThreshold 关闭（vaul-vue 语义） |

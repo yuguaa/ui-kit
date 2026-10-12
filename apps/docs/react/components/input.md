@@ -98,3 +98,43 @@ npx shadcn@latest add @ui-kit/x-input
 
 - focus：outline 加粗过渡（transition-colors）
 - 无位移动画
+
+## 设计规格
+
+React 端将 Nuxt UI token 语义映射到本地 shadcn CSS 变量（`--background` / `--muted` / `--border` / `--foreground` 等），对应关系如下：
+
+### 主题 token
+
+| 类别 | 类名 | 对应 Vue 端 token |
+| --- | --- | --- |
+| 背景 | `bg-background`（outline） | `bg-default` |
+| 背景 | `bg-muted/50`（soft）· `bg-muted`（subtle 与 soft 的 hover / focus） | `bg-elevated/50` / `bg-elevated` |
+| 背景 | `bg-transparent`（ghost / none） | 相同 |
+| 文字 | 正文继承 `text-foreground` | `text-highlighted` |
+| 文字 | `placeholder:text-muted-foreground` | `placeholder:text-dimmed` |
+| 描边 | `ring-1 ring-inset ring-border`（outline / subtle） | `ring ring-inset ring-accented` |
+| 描边 | 聚焦：`outline-{color}/25` + `focus-visible:outline-3` + `focus-visible:ring-{color}`（outline / subtle 额外 ring-1） | 相同规则 |
+| 圆角 | `rounded-md`（6px）；addon 外侧 `rounded-l-lg` / `rounded-r-lg` | 相同 |
+| 阴影 | 无 | - |
+
+### 变体
+
+| 变体 | token 组合 |
+| --- | --- |
+| outline（默认） | `bg-background` + `ring-1 ring-inset ring-border` |
+| soft | `bg-muted/50`，hover / focus 为 `bg-muted` |
+| subtle | `bg-muted` + `ring-1 ring-inset ring-border` |
+| ghost | `bg-transparent`，hover / focus 为 `bg-muted` |
+| none | `bg-transparent` + `focus:outline-none` |
+
+`highlight: true` 时叠加 `ring-1 ring-inset ring-{color}`。
+
+### 交互
+
+| 类别 | 说明 |
+| --- | --- |
+| 键盘 | 原生 input 行为，无额外键盘处理 |
+| ARIA | 原生 input 隐式 `role=textbox` |
+| 动效 | `transition-colors` |
+
+**与 Vue 端差异**：React 端额外提供 `status`（error / warning 描边）、`clearable` 清空按钮、`addonBefore` / `addonAfter`、`prefix` / `suffix`；`fixed` 默认 `true`（Vue 端未开启时桌面端缩小字号）；尺寸为固定高度 `h-6 ~ h-11` 加 px 内边距（Vue 端为 py 内边距）；无 loading 图标旋转。

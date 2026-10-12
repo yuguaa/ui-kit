@@ -90,3 +90,37 @@ npx shadcn@latest add @ui-kit/x-color-picker
 
 - 拖拽圆点跟随指针，位置更新带 throttle 节流
 - 无进出场动效，交互即时反馈
+
+## 设计规格
+
+与 Vue 端一致（相同渐变内联样式与圆点描边），映射如下：
+
+### 主题 token
+
+| 类别 | 类名 | 对应 Vue 端 token |
+| --- | --- | --- |
+| 背景 | 色板与轨道渐变由内联样式提供（黑白双向渐变 / 彩虹渐变） | 相同 |
+| 文字 | 无 | - |
+| 描边 | 拖拽圆点 `ring-2 ring-white` | 相同 |
+| 圆角 | selector / selectorBackground / track `rounded-md`；thumb `rounded-full` | 相同 |
+| 阴影 | 无 | - |
+| 禁用 | root `data-[disabled]:opacity-75` | 相同 |
+
+### 变体
+
+| 变体 | token 组合 |
+| --- | --- |
+| size xs ~ xl | `w-38 h-38` ~ `w-46 h-46`（与 Vue 端一致） |
+| disabled | root `opacity-75`，圆点 `cursor-not-allowed` |
+
+### 交互
+
+| 类别 | 说明 |
+| --- | --- |
+| 指针 | onPointerDown 开始拖拽，window pointermove / pointerup 跟随；色板双向（x 饱和度 / y 亮度），轨道单向（y 色相） |
+| 节流 | `throttle` 默认 50ms |
+| 键盘 | 无键盘语义 |
+| ARIA | 无 role 声明；disabled 以 `data-disabled` 呈现 |
+| 动效 | 无过渡动画，位置即时反馈 |
+
+**与 Vue 端差异**：无。两端实现与 token 一致（React 端颜色解析为自实现，Vue 端使用 colortranslator，输出格式一致）。

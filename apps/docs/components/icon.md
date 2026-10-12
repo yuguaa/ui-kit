@@ -53,3 +53,53 @@ npx shadcn-vue@latest add @ui-kit/x-icon
 ## 动效
 
 无动效：静态展示组件。
+
+## 设计规格
+
+### 主题 token
+
+| 项目 | 类名 | 说明 |
+| --- | --- | --- |
+| 背景 | 不使用 | 没有背景 token |
+| 文字 | 继承 currentColor | 没有内置颜色 token |
+| 描边 | 不使用 | 没有描边 token |
+| 圆角 | 不使用 | 没有圆角 |
+| 阴影 | 不使用 | 没有阴影 |
+
+**尺寸**
+
+| 类 / 属性 | 值 | 说明 |
+| --- | --- | --- |
+| size prop | 数字转 px（如 20 → 20px）或字符串 | 通过内联 style 设置 width / height |
+| 默认 | 没有 | 没有默认尺寸类，由父容器类名控制 |
+
+**图标命名**
+
+`icons.ts` 定义 38 个预设名映射（arrowDown → `i-lucide-arrow-down` 等）。XIcon 支持 `check` 与 `i-lucide-check` 两种写法，统一转换为 `@lucide/vue` 的 PascalCase 组件（如 `Check`）渲染；name 也支持直接传组件。
+
+### 交互
+
+**键盘**
+
+| 行为 | 说明 |
+| --- | --- |
+| 焦点 | 静态 SVG，没有可聚焦行为 |
+
+**ARIA**
+
+| 属性 | 说明 |
+| --- | --- |
+| 不输出 | 未输出 aria-hidden，装饰性图标需由使用方设置 |
+
+**动效**
+
+没有动效：静态展示组件。
+
+**与 React 端差异**
+
+| 项目 | Vue 端 | React 端 |
+| --- | --- | --- |
+| 图标集合 | @lucide/vue 全量映射 | 固定 iconMap（40 余个） |
+| 默认尺寸 | 没有 | size 五档（size-3 ~ size-7，默认 md size-5） |
+| mode="css" | 声明但未参与渲染 | 输出 i-lucide-* CSS 类名 span |
+| customize | 声明但未参与渲染 | 渲染后回调修改 svg |

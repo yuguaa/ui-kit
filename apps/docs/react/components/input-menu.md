@@ -82,3 +82,67 @@ npx shadcn@latest add @ui-kit/x-input-menu
 
 - 弹层：淡入 + 缩放进出场（scale 0.95，100ms）
 - 输入框：focus ring 过渡
+
+## 设计规格
+
+React 端主题插槽类名与 Vue 端键名一致，token 采用 shadcn 变量 + kit-theme.css 色板（primary-500 = #22c55e 等，与 Vue 端同值）。mode 枚举为 combobox / autocomplete / listbox，比 Vue 端多 listbox 模式（输入框只读、搜索框在菜单内），差异注明。
+
+### 主题 token
+
+**背景**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| content | bg-popover | 对应 bg-default |
+| item（高亮） | data-highlighted:bg-accent | 对应 before:bg-elevated/50 |
+| base（outline / ghost / none 变体） | bg-transparent | Vue 端 outline 变体为 bg-default，存在差异 |
+| base（soft 变体） | bg-muted/50 | 对应 bg-elevated/50 |
+| base（subtle 变体） | bg-muted | 对应 bg-elevated |
+| tagsItem | bg-elevated | React 端 CSS 变量表未定义该 token（Vue 端为 #f5f5f5 / #262626），差异注明 |
+| arrow | fill-popover | 对应 fill-bg |
+
+**文字**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| base · tagsItem | text-foreground | 对应 text-highlighted |
+| base / tagsInput（placeholder） | placeholder:text-muted-foreground | 对应 placeholder:text-dimmed |
+| item | text-popover-foreground | 对应 text-default |
+| item（高亮） | data-highlighted:text-accent-foreground | 对应 text-highlighted |
+| itemLeadingIcon · itemDescription · empty · tagsItemDelete | text-muted-foreground | 对应 text-dimmed / text-muted |
+
+**描边**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| root | ring-1 ring-inset ring-input | 对应 ring-inset ring-accented |
+| root（focus） | focus-within:ring-2 ring-primary/50 | Vue 端为 focus-visible outline/ring，触发时机不同（focus-within 对全部焦点来源），差异注明 |
+| content | ring-1 ring-border | 对应 ring ring-default |
+| tagsItem | ring-1 ring-inset ring-border | 对应 ring-inset ring-accented |
+| arrow | stroke-border | 对应 stroke-default |
+
+**圆角与阴影**
+
+| 位置 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| root · content · item | rounded-md | 6px（--radius-md，与 Vue 端同值） |
+| tagsItem | rounded-sm | 4px，与 Vue 端同值 |
+| content | shadow-md | Vue 端为 shadow-lg，存在差异 |
+
+**变体**（输入框 root，color 仅影响 focus-within 描边颜色）
+
+| 变体 | token 组合 |
+| --- | --- |
+| outline（默认） | bg-transparent + ring-input，hover:bg-muted/50 |
+| soft | bg-muted/50，hover:bg-muted |
+| subtle | bg-muted + ring-input |
+| ghost | bg-transparent，hover:bg-muted |
+| none | bg-transparent |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | 与 Vue 端一致：输入即过滤，ArrowDown / ArrowUp 在选项间移动，Enter 选择，Esc 关闭；multiple 模式标签由 Base UI Combobox Chips 承担：输入框为空时 Backspace 删除最后一个标签，ChipRemove 按钮删除单个标签 |
+| ARIA | 与 Vue 端一致：输入框 role=combobox + aria-expanded / aria-controls；选项 role=option + aria-selected；标签删除按钮可聚焦 |
+| 动效 | content 无进出场动画类（Vue 端为 scale-in / scale-out 100ms，差异注明）；trailingIcon 展开时 rotate-180 + transition-transform（Vue 端无旋转，差异注明）；root 为 transition-[box-shadow,color]；loading 时尾部图标 animate-spin |

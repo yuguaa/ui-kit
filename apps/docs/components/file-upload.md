@@ -148,3 +148,28 @@ npx shadcn-vue@latest add @ui-kit/x-file-upload
 
 - 拖拽区：hover 背景过渡（transition-[background]），拖入时虚线边框高亮
 - 文件列表：无进出场动效，删除即时生效
+
+## 设计规格
+
+### 主题 token
+
+- 背景：base `bg-default`（#ffffff / 暗色 #171717）；可交互 hover `bg-elevated/25`；拖入中 `data-[dragging=true]:bg-elevated/25`；禁用 `opacity-75`
+- 文字：label `text-default font-medium`；description / fileSize `text-muted`；fileName `text-default`
+- 描边：base `border border-default`；`dropzone` 时 `border-dashed`；`highlight` 时 `border-{color}`；焦点 `focus-visible:outline-3 outline-{color}/25 focus-visible:border-{color}`；文件项 `border border-default`；grid 删除按钮 `border-2 border-bg`
+- 圆角与阴影：base 与文件项 `rounded-lg`（8px）；grid 文件头像 `rounded-lg`；grid 删除按钮 `rounded-full`
+- 变体：
+
+| 变体 | 枚举 | token 组合 |
+| --- | --- | --- |
+| color | 六色 + neutral | 焦点描边与高亮描边颜色 |
+| variant | area / button | area：`wrapper: px-4 py-3` + `base: p-4`；button：无文字区，紧凑内边距 |
+| size | xs / sm / md / lg / xl | 根字号、图标尺寸、文件项内边距 |
+| layout | list / grid | list：文件行 `border-default rounded-md`；grid：缩略图 `aspect-square` |
+| position | inside / outside | 文件列表相对上传区的位置 |
+| dropzone / interactive / highlight / multiple / disabled | true | 见背景与描边 |
+
+### 交互
+
+- 键盘：area 形态拖放区为 `div role="button" tabindex="0"`（`interactive` 且未禁用），Enter / Space 打开文件对话框（`keydown.space.prevent` 防页面滚动）；`variant="button"` 时为原生 `<button>`；删除文件后焦点回到拖放区
+- ARIA：area 拖放区 `role="button"` + `aria-disabled`；文件选择器为 `VisuallyHidden` 隐藏 `<input type="file">`；删除按钮 `aria-label="移除 {文件名}"`；禁用时拖放被忽略
+- 动效：拖放区 hover 背景 `transition-[background] ease-out`；拖入态即时切换无过渡；文件列表无进出场动效

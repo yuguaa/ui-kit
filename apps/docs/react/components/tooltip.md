@@ -77,3 +77,51 @@ tooltipApi.show()   // show / hide / toggle / setState
 ## 动效
 
 - 弹出：淡入 + 缩放（100ms）
+
+## 设计规格
+
+React 端基于 Base UI Tooltip，主题插槽类名与 Vue 端键名一致，token 采用 shadcn 变量。
+
+### 主题 token
+
+**背景**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| content | bg-background | 对应 bg-default（shadcn --background：亮 oklch(1 0 0)，暗 oklch(0.145 0 0)） |
+| arrow | fill-background | 对应 fill-bg |
+
+**文字**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| content | text-foreground | 对应 text-highlighted |
+
+**描边**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| content | ring-1 ring-border | 对应 ring ring-default |
+| arrow | stroke-border | 对应 stroke-default |
+
+**圆角与阴影**
+
+| 位置 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| content | rounded-sm | 4px，与 Vue 端同值 |
+| content | shadow-sm | 与 Vue 端同值 |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- |
+| kbds | kbds 容器始终显示（inline-flex，无 hidden lg: 断点控制），按键尺寸默认 sm；与 Vue 端 hidden lg:inline-flex 存在差异 |
+| disabled（无内容或 disabled=true） | 不渲染提示，与 Vue 端一致 |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | Base UI Tooltip 语义，与 Vue 端 reka Tooltip 一致：hover 或键盘焦点移入触发元素时打开；Esc 关闭；Provider delay 默认 700ms 与 Vue 端一致；disableHoverableContent 开启时内容可悬停保持 |
+| ARIA | 与 Vue 端一致：content 为 role=tooltip；trigger 元素关联 aria-describedby |
+| 动效 | content 进出场为 tailwindcss-animate 风格 animate-in / fade-in-0 / zoom-in-95（Vue 端为 scale-in / scale-out 100ms，实现方式不同，差异注明） |

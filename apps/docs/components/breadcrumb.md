@@ -93,3 +93,26 @@ npx shadcn-vue@latest add @ui-kit/x-breadcrumb
 
 - hover：中间项链接文字颜色过渡
 - 无位移动画
+
+## 设计规格
+
+### 主题 token
+
+- 背景：无
+- 文字：激活项 `font-semibold text-{color}`（默认 `text-primary`，green 500；neutral → `text-highlighted`）；非激活项 `text-muted font-medium`；可导航非激活项 hover `text-default`；分隔图标 `text-muted`
+- 描边：链接 `focus-visible:outline-3 outline-{color}/25`（neutral → `outline-inverted/25`）
+- 圆角与阴影：链接 `rounded-md`（6px）
+- 变体：
+
+| 变体 | 枚举 | token 组合 |
+| --- | --- | --- |
+| active | true / false | true：`font-semibold` + `text-{color}`；false：`text-muted font-medium` |
+| disabled | true | `cursor-not-allowed opacity-75` |
+| to | true | 输出导航链接，非激活态 hover `text-default` + `transition-colors` |
+| color | 六色 + neutral | 激活文字色与焦点描边颜色 |
+
+### 交互
+
+- 键盘：链接原生 Tab 聚焦；disabled 项不可聚焦（XLink 内部移除 `href` 并输出 `tabindex=-1`）
+- ARIA：根 `<nav aria-label="breadcrumb">` + `ol / li`；末项且激活时 `aria-current="page"`；分隔符 `li role="presentation" aria-hidden="true"`
+- 动效：可导航非激活项 hover 文字过渡（`theme.transitions` 开启时）；无位移动画

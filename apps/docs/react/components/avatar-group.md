@@ -78,3 +78,58 @@ npx shadcn@latest add @ui-kit/x-avatar-group
 ## 动效
 
 无动效：静态展示组件。
+
+## 设计规格
+
+### 主题 token
+
+与 Vue 端一致：`root` 为 `inline-flex flex-row-reverse justify-end`；`base` 为 `relative rounded-full ring-background`。
+
+| 项目 | 类名 | 说明 |
+| --- | --- | --- |
+| 背景 | 不使用 | 没有背景 token |
+| 文字 | 不使用 | 没有文字 token |
+| 描边 | ring-background | 每个头像的外环，与页面背景同色形成间隔 |
+| 圆角 | rounded-full | 头像与包裹元素全圆角 |
+| 阴影 | 不使用 | 没有阴影 |
+
+**变体**
+
+| 变体 | 取值 | 说明 |
+| --- | --- | --- |
+| size | xs ~ xl | 外环与重叠间距分档：xs 为 ring（1px）+ -me-0.5；sm ~ lg 为 ring-2 + -me-1.5；xl 为 ring-3 + -me-2；默认 md |
+| color | primary / secondary / neutral / success / info / warning / error | 透传给子头像（子头像自身指定 color 时不覆盖） |
+
+size / color 通过 cloneElement 传递给子 XAvatar，子头像自身指定时优先。
+
+### 交互
+
+**键盘**
+
+| 行为 | 说明 |
+| --- | --- |
+| 焦点 | 静态展示，没有可聚焦行为 |
+
+**ARIA**
+
+| 属性 | 说明 |
+| --- | --- |
+| 不输出 | 没有内置角色 |
+
+**状态**
+
+| 状态 | 说明 |
+| --- | --- |
+| max | 超出 max 的头像折叠为 +N（plus 可自定义溢出标记）；max 支持字符串（parseInt，与 Vue 一致） |
+
+**动效**
+
+没有动效：静态展示组件。
+
+**与 Vue 端差异**
+
+| 项目 | Vue 端 | React 端 |
+| --- | --- | --- |
+| 尺寸档位 | 3xs ~ 3xl 九档 | xs ~ xl 五档（ring 分档合并为三组，映射一致） |
+| plus 自定义溢出标记 | 不支持 | React 独有 prop |
+| 透传机制 | provide / inject | cloneElement（仅作用于 XAvatar 子元素） |

@@ -65,3 +65,25 @@ npx shadcn-vue@latest add @ui-kit/x-field-group
 ## 动效
 
 无动效：布局容器组件。
+
+## 设计规格
+
+### 主题 token
+
+- 背景：无
+- 文字：无
+- 描边：无（相邻控件通过负外边距合并描边：horizontal `-space-x-px`、vertical `-space-y-px`）
+- 圆角与阴影：无（圆角由成员组件的 `fieldGroupVariant` 拼接：首项保留起始圆角、末项保留结束圆角、中间项直角，焦点项 `z-[1]` 保证描边完整显示）
+- 变体：
+
+| 变体 | 枚举 | token 组合 |
+| --- | --- | --- |
+| orientation | horizontal | `inline-flex -space-x-px` |
+| orientation | vertical | `flex flex-col -space-y-px` |
+| size | xs / sm / md / lg / xl | 无视觉类，仅透传给成员组件 |
+
+### 交互
+
+- 键盘：无，布局容器不参与焦点
+- ARIA：无角色；`Primitive` 输出 `data-orientation`
+- 动效：无

@@ -56,3 +56,81 @@ npx shadcn@latest add @ui-kit/x-chip
 ## 动效
 
 无动效：关闭按钮的 hover 颜色过渡由按钮原子承担。
+
+## 设计规格
+
+### 主题 token
+
+slots 公共类：`root` 为 `relative inline-flex shrink-0 items-center justify-center`；`base` 为 `inline-flex items-center justify-center rounded-full border font-medium whitespace-nowrap`。
+
+**背景**
+
+| token | 使用场景 |
+| --- | --- |
+| bg-{color}/10 | 芯片本体浅色背景 |
+| bg-secondary | secondary 本体背景 |
+| bg-muted | neutral 本体背景 |
+
+**文字**
+
+| token | 使用场景 |
+| --- | --- |
+| text-{color} | 本体文字 |
+| text-secondary-foreground | secondary 本体文字 |
+| text-muted-foreground | neutral 本体文字 |
+
+**描边**
+
+| token | 使用场景 |
+| --- | --- |
+| border-{color}/20 | 本体描边 |
+| border-border | neutral / secondary 本体描边 |
+
+**圆角与阴影**
+
+| 类 | 值 |
+| --- | --- |
+| rounded-full | 全圆角 |
+| 阴影 | 不使用 |
+
+**变体**
+
+| 变体 | 取值 | 说明 |
+| --- | --- | --- |
+| color | primary / secondary / neutral / success / info / warning / error | 本体浅色背景 + 描边，默认 primary |
+| size | xs / sm / md / lg / xl | 固定高度 h-4.5 ~ h-9 |
+| position | top-right（默认）/ bottom-right / top-left / bottom-left | 角标位置 |
+| inset | false（默认）/ true | false 时 translate 外移半个身位 |
+| standalone | false（默认）/ true | false 时 absolute 定位 |
+| show | true（默认）/ false | 控制本体显隐 |
+| closable | false（默认）/ true | 显示关闭按钮 |
+
+### 交互
+
+**键盘**
+
+| 行为 | 说明 |
+| --- | --- |
+| 焦点 | 本体静态展示；closable 时关闭按钮为 shadcn Button（ghost / icon-xs），可 Tab 聚焦 |
+| Enter / Space | 关闭按钮原生 button 语义触发 onClose |
+
+**ARIA**
+
+| 属性 | 说明 |
+| --- | --- |
+| aria-label="close" | 关闭按钮输出（button 本体） |
+| 不输出 | 本体 span 没有角色 |
+
+**动效**
+
+没有动效：关闭按钮的 hover 颜色过渡由 shadcn 按钮原子承担。
+
+**与 Vue 端差异**
+
+| 项目 | Vue 端 | React 端 |
+| --- | --- | --- |
+| 本体样式 | 实心角标：bg-{color} 500 级 + text-inverted + ring-bg 外环 | 浅色描边标签：bg-{color}/10 + text-{color} + border-{color}/20 |
+| 尺寸档位 | 3xs ~ 3xl，4px ~ 12px 高（极小角标） | xs ~ xl，h-4.5 ~ h-9（标签尺寸） |
+| closable / onClose | 不支持 | React 独有 |
+| content / icon | 不支持（content 为具名插槽） | React 独有（content 优先于 children 与 text） |
+| show | v-model:show 模型 | show 属性 |

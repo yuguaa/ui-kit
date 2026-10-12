@@ -85,3 +85,34 @@ npx shadcn@latest add @ui-kit/x-pin-input
 ## 动效
 
 无进出场动效：光标闪烁为浏览器默认行为，聚焦描边由 transition-colors 过渡。
+
+## 设计规格
+
+### 主题 token
+
+| 类别 | 类名 | 对应 Vue 端 token |
+| --- | --- | --- |
+| 背景 | `bg-background`（outline）· `bg-muted/50`（soft）· `bg-muted`（subtle） | `bg-default` / `bg-elevated/50` / `bg-elevated` |
+| 文字 | 正文 `text-foreground`；`placeholder:text-muted-foreground`；分隔符 `text-muted-foreground` | `text-highlighted` / `text-dimmed` |
+| 描边 | `ring-1 ring-inset ring-border`（outline / subtle）；聚焦 `outline-{color}/25` + `focus-visible:ring-{color}` | 相同规则 |
+| 圆角 | `rounded-md`（6px） | 相同 |
+| 阴影 | 无 | - |
+
+### 变体
+
+| 变体 | token 组合 |
+| --- | --- |
+| outline（默认） | `bg-background` + `ring-1 ring-inset ring-border` |
+| soft / subtle / ghost / none | 与 XInput 相同组合 |
+
+尺寸 xs ~ xl 对应输入槽 `size-6 ~ size-10`。
+
+### 交互
+
+| 类别 | 说明 |
+| --- | --- |
+| 键盘 | input-otp 语义：输入后自动跳至下一槽，Backspace 回删，方向键移动焦点，支持粘贴 |
+| ARIA | 每个输入槽为独立 input；`otp` 时 `autocomplete="one-time-code"`；分隔符 `role="presentation"` + `aria-hidden="true"` |
+| 动效 | `transition-colors`；`mask` 以 `text-transparent` 视觉隐藏已输入字符 |
+
+**与 Vue 端差异**：React 端基于 shadcn input-otp（Vue 端基于 reka-ui PinInput）；mask 实现为文字透明（Vue 端切换 input type 为 password）；值模型为 string（Vue 端为 string[] / number[]）。

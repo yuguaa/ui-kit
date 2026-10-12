@@ -88,3 +88,36 @@ npx shadcn@latest add @ui-kit/x-textarea
 
 - focus：outline 加粗过渡（transition-colors）
 - 无位移动画
+
+## 设计规格
+
+### 主题 token
+
+与 Vue 端同规则，映射到本地 shadcn 变量：
+
+| 类别 | 类名 | 对应 Vue 端 token |
+| --- | --- | --- |
+| 背景 | `bg-background`（outline）· `bg-muted/50`（soft）· `bg-muted`（subtle） | `bg-default` / `bg-elevated/50` / `bg-elevated` |
+| 文字 | 正文 `text-foreground`；`placeholder:text-muted-foreground` | `text-highlighted` / `text-dimmed` |
+| 描边 | `ring-1 ring-inset ring-border`（outline / subtle）；聚焦 `outline-{color}/25` + `focus-visible:ring-{color}` | 相同规则 |
+| 圆角 | `rounded-md`（6px） | 相同 |
+| 阴影 | 无 | - |
+
+### 变体
+
+| 变体 | token 组合 |
+| --- | --- |
+| outline（默认） | `bg-background` + `ring-1 ring-inset ring-border` |
+| soft / subtle / ghost / none | 与 XInput 相同组合 |
+
+`resizeEnabled`（autoresize 或 autosize）时追加 `resize-none`。
+
+### 交互
+
+| 类别 | 说明 |
+| --- | --- |
+| 键盘 | 原生 textarea 行为 |
+| ARIA | 原生 textarea 隐式 `role=textbox` |
+| 动效 | `transition-colors`；autoresize 按内容行数即时调整高度 |
+
+**与 Vue 端差异**：React 端支持 `autosize`（CSS `field-sizing-content` 方案）与 `showCount` 字数统计；无 leading / trailing 插槽（仅 avatar）；`fixed` 默认 `true`。

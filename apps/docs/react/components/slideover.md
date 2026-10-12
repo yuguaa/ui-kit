@@ -97,3 +97,59 @@ slideoverApi.open()   // open / close / toggle / setState / setData / getData
 
 - 面板：侧向滑入滑出（200ms）
 - 遮罩：淡入淡出（200ms）
+
+## 设计规格
+
+### 主题 token
+
+**背景**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| overlay | bg-black/50 | 黑色 50% 透明度（视觉对应 Vue 端 bg-elevated/75） |
+| content | bg-background | shadcn 变量，对应 bg-default |
+
+**文字**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| title | text-foreground | 对应 text-highlighted |
+| description | text-muted-foreground | 对应 text-muted |
+
+**描边与分割**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| content | divide-y divide-border | 分割线，对应 divide-default |
+| content | sm:ring-1 ring-border | 对应 sm:ring ring-default |
+
+**圆角与阴影**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| content（inset=true） | rounded-lg | 8px |
+| content | sm:shadow-lg | sm 及以上弹窗阴影阶梯 |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- | --- |
+| side=top / bottom | 贴左右边（inset-x-0 + top-0 / bottom-0），inset=true 时距边 1rem 且 max-h-[calc(100%-2rem)] |
+| side=right / left | 贴上下边（inset-y-0 + right-0 / left-0）且 max-w-md |
+| inset=true | content rounded-lg |
+| transition=true | 遮罩 fade；content 按 side 播 data-open:slide-in-from-{top,right,bottom,left} / data-closed:slide-out-to-{top,right,bottom,left} |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | 打开时焦点移入面板并锁定（focus trap，Base UI Dialog 语义）；Esc 关闭；关闭后焦点恢复触发元素；dismissible=false 时外部点击（outside-press）与 Esc（escape-key）被拦截并触发 onClosePrevent |
+| ARIA | Popup 由 Base UI Dialog 渲染 role="dialog"，modal 时 aria-modal="true"；Title / Description 关联 aria-labelledby / aria-describedby；无标题或使用 content 插槽时渲染 sr-only 的 Title / Description；content 带 data-side 标注方向；关闭按钮 aria-label="关闭" |
+| 动效 | 遮罩淡入淡出 + 面板按 side 侧向滑入滑出（data-open / data-closed 状态驱动，与 Vue 端 slide-in-from-* 动效语义对应）；打开时锁定 body 滚动（Base UI Dialog 语义） |
+
+**双端差异**
+
+| 项 | Vue | React |
+| --- | --- | --- |
+| 遮罩背景 | bg-elevated/75（跟随主题亮暗） | bg-black/50（固定黑色，不随主题） |
+| 动效实现 | CSS 关键帧 fade-in / slide-in-from-* | data-open 状态 + animate-in / slide-in-from-* 工具类 |

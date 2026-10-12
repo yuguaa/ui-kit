@@ -87,3 +87,33 @@ npx shadcn-vue@latest add @ui-kit/x-input-rating
 
 - 星标：hover 放大（scale 110%）与聚焦描边过渡
 - 无位移动画
+
+## 设计规格
+
+### 主题 token
+
+| 类别 | 类名 | 值（亮色 / 暗色） |
+| --- | --- | --- |
+| 背景 | 无（透明，星形图标承载颜色） | - |
+| 文字 | 高亮星 `indicator: data-[state=active]:text-{color}` | primary 为 #22c55e；neutral 为 `text-highlighted` #171717 / #ffffff |
+| 文字 | 空星 `emptyIcon: text-muted` | #737373 / #a3a3a3 |
+| 描边 | 聚焦：`item: outline-{color}/25` + `focus-visible:outline-3` | primary 25% 透明度 |
+| 圆角 | `item: rounded-sm` | 4px（--radius-sm） |
+| 阴影 | 无 | - |
+
+### 变体
+
+| 变体 | token 组合 |
+| --- | --- |
+| readonly | `cursor-default`，不可交互（组件内部同时将控件置为禁用语义） |
+| disabled | root `opacity-75` + `cursor-not-allowed`，item `pointer-events-none` |
+
+可交互时（readonly 与 disabled 均关闭）item `hover:scale-110`。
+
+### 交互
+
+| 类别 | 说明 |
+| --- | --- |
+| 键盘 | reka-ui RatingRoot 遵循 Slider 模式：焦点落在当前评分的 item 上，方向键调整分值，Enter / Space 确认 |
+| ARIA | reka-ui Rating 默认 `role=slider`，管理 `aria-valuemin` / `aria-valuemax` / `aria-valuenow`；readonly 映射 `aria-readonly`；每个 indicator 附带 `Rate {step} out of {length}` 的 aria-label |
+| 动效 | item `transition`；hover 放大 `scale-110` |

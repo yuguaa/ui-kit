@@ -94,3 +94,47 @@ scrollAreaApi.scrollTo(0)
 ## 动效
 
 无动效：原生滚动行为。
+
+## 设计规格
+
+### 主题 token
+
+**背景与描边**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| root | outline-primary/25 focus-visible:outline-3 | 聚焦轮廓用 primary 25%（与 Vue 端一致） |
+| root / viewport / item | 无背景 token | 主题未内建背景色 |
+
+**圆角与阴影**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| 无圆角 token | - | 主题未内建 |
+| shadow=true | maskImage 线性渐变 | 默认 24px 渐隐边缘（与 Vue 端实现一致） |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- | --- |
+| orientation=vertical | root overflow-y-auto overflow-x-hidden；viewport flex-col |
+| orientation=horizontal | root overflow-x-auto overflow-y-hidden；viewport flex-row |
+| orientation=both | root overflow-auto（React 独有） |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | 无自定义键盘处理；root 为原生滚动容器（方向键 / PageUp / PageDown 原生行为），focus-visible 显示 primary 聚焦环 |
+| ARIA | 无角色标注（div + data-orientation） |
+| 动效 | 无（原生滚动）；虚拟滚动为固定 estimateSize + 二分查找渲染窗口；onScrollChange 防抖 150ms |
+
+**双端差异**
+
+| 项 | Vue | React |
+| --- | --- | --- |
+| orientation 枚举 | vertical / horizontal | 额外支持 both（overflow-auto） |
+| 外部滚动元素 | virtualize.getScrollElement 支持 | 不支持 |
+| 虚拟滚动能力 | @tanstack/vue-virtual（元素测量、多 lane、gap、scrollMargin） | 固定 estimateSize + overscan + getItemKey |
+| 滚动回调 | scroll 事件上报 isScrolling | onScrollChange 防抖 150ms |
+| 高度控制 | 无内建 | height 属性 |

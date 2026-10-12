@@ -71,3 +71,69 @@ npx shadcn-vue@latest add @ui-kit/x-chip
 ## 动效
 
 无动效：关闭按钮的 hover 颜色过渡由按钮原子承担。
+
+## 设计规格
+
+### 主题 token
+
+slots 公共类：`root` 为 `relative inline-flex items-center justify-center shrink-0`；`base` 为 `rounded-full ring ring-bg flex items-center justify-center text-inverted font-medium whitespace-nowrap`。
+
+**背景**
+
+| token | 取值（亮 / 暗） | 使用场景 |
+| --- | --- | --- |
+| bg-{color} | 语义色 500 级（primary #22c55e 等） | 芯片本体实心背景 |
+| bg-inverted | #171717 / #ffffff | neutral 实心背景 |
+
+**文字**
+
+| token | 取值（亮 / 暗） | 使用场景 |
+| --- | --- | --- |
+| text-inverted | #ffffff / #171717 | 芯片本体文字（全部颜色） |
+
+**描边**
+
+| token | 取值（亮 / 暗） | 使用场景 |
+| --- | --- | --- |
+| ring ring-bg | #ffffff / #171717 | 本体外环（与宿主背景同色，形成间隔） |
+
+**圆角与阴影**
+
+| 类 | 值 |
+| --- | --- |
+| rounded-full | 全圆角 |
+| 阴影 | 不使用 |
+
+**变体**
+
+| 变体 | 取值 | 说明 |
+| --- | --- | --- |
+| color | primary / secondary / success / info / warning / error / neutral | 本体背景色，默认 primary |
+| size | 3xs ~ 3xl | 高度与最小宽度 4px ~ 12px，文字同值（h-[4px] ~ h-[12px]） |
+| position | top-right（默认）/ bottom-right / top-left / bottom-left | 角标位置 |
+| inset | false（默认）/ true | false 时 translate 外移半个身位贴合圆角边沿 |
+| standalone | false（默认）/ true | false 时 absolute 定位，true 时相对父容器流内渲染 |
+
+### 交互
+
+**键盘**
+
+| 行为 | 说明 |
+| --- | --- |
+| 焦点 | 静态展示，默认渲染 `<span>`，没有可聚焦行为 |
+
+**ARIA**
+
+| 属性 | 说明 |
+| --- | --- |
+| 不输出 | 没有内置角色与状态属性 |
+
+**状态**
+
+| 状态 | 说明 |
+| --- | --- |
+| show | `v-model:show` 控制本体渲染，false 时本体不渲染（root 壳保留） |
+
+**动效**
+
+没有动效：静态角标。

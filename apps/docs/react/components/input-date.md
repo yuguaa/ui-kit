@@ -94,3 +94,32 @@ npx shadcn@latest add @ui-kit/x-input-date
 
 - 弹层：淡入 + 缩放进出场（scale 0.95，100ms）
 - 容器：focus ring 过渡
+
+## 设计规格
+
+### 主题 token
+
+| 类别 | 类名 | 对应 Vue 端 token |
+| --- | --- | --- |
+| 背景 | 容器 `bg-background`（outline）· `bg-muted/50`（soft）· `bg-muted`（subtle） | `bg-default` / `bg-elevated/50` / `bg-elevated` |
+| 文字 | 输入框继承 `text-foreground`；`placeholder:text-muted-foreground`；分隔图标 `text-muted-foreground` | `text-highlighted` / `text-dimmed` / `text-muted` |
+| 描边 | 容器 `ring-1 ring-inset ring-border`（outline / subtle）；聚焦 `has-focus-visible:outline-3` + `has-focus-visible:ring-{color}` | 相同规则 |
+| 圆角 | 容器 `rounded-md`（6px） | 相同 |
+| 阴影 | 无 | - |
+
+### 变体
+
+| 变体 | token 组合 |
+| --- | --- |
+| outline（默认） | `bg-background` + `ring-1 ring-inset ring-border` |
+| soft / subtle / ghost / none | 与 XInput 相同组合（focus 前缀改为 has-focus-visible） |
+
+### 交互
+
+| 类别 | 说明 |
+| --- | --- |
+| 键盘 | 触发按钮 Tab 聚焦，Enter / Space 打开日历弹层；日历内部由 react-day-picker 提供方向键导航、Enter 确认、Esc 关闭 |
+| ARIA | 触发按钮为 button，`aria-expanded` 由 Popover 管理；日历 `role=grid`（react-day-picker 默认） |
+| 动效 | 弹层由 Popover 提供进出场动画；容器 `transition-colors` |
+
+**与 Vue 端差异**：React 端为「只读输入 + 弹层日历」方案（react-day-picker），Vue 端为 reka-ui DateField 可编辑分段输入；React 端无分段级键盘增减语义。

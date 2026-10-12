@@ -82,3 +82,47 @@ splitterApi.resize(30)   // size 可读，resize 调整
 
 - 拖拽：即时响应，无过渡动效
 - 折叠 / 展开：即时切换，无过渡动效
+
+## 设计规格
+
+### 主题 token
+
+**背景与描边**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| root | border border-border | 容器描边（Vue 端 root 无描边） |
+| handle | bg-border + hover:bg-primary/10 | 拖拽条底色（Vue 端 handle 无底色） |
+| handle | focus-visible:outline-2 focus-visible:outline-primary | 聚焦轮廓用 primary |
+
+**圆角与阴影**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| root | rounded-lg | 8px |
+| 无 shadow | - | 主题未内建 |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- | --- |
+| orientation=horizontal | root flex-row h-full；handle w-2 cursor-col-resize |
+| orientation=vertical | root flex-col；handle h-2 cursor-row-resize |
+| disabled=true | handle cursor-default，tabIndex 降为 -1 |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | handle role="separator" tabIndex=0（disabled 时 -1）；方向键按 10 调整相邻面板（无 Home / End） |
+| ARIA | handle role="separator" + aria-orientation + data-panel-resize-handle-enabled；panel 无角色 |
+| 动效 | 无过渡（即时响应）；handle 有 transition-colors（hover 底色过渡） |
+
+**双端差异**
+
+| 项 | Vue | React |
+| --- | --- | --- |
+| 底层实现 | reka-ui Splitter | 手写 Pointer Events 实现 |
+| 键盘 Home / End | 支持（跳至最小 / 最大） | 不支持（仅方向键 ±10） |
+| root 样式 | 无内建背景与描边 | overflow-hidden rounded-lg border border-border |
+| handle 底色 | 无背景色 | bg-border + hover:bg-primary/10 |

@@ -80,3 +80,36 @@ npx shadcn-vue@latest add @ui-kit/x-input-number
 ## 动效
 
 - 步进按钮：hover 背景过渡
+
+## 设计规格
+
+### 主题 token
+
+| 类别 | 类名 | 值（亮色 / 暗色） |
+| --- | --- | --- |
+| 背景 | 继承 Input 变体：`bg-default`（outline）· `bg-elevated/50`（soft）· `bg-elevated`（subtle） | #ffffff / #171717；#f5f5f5 / #262626 |
+| 文字 | `text-highlighted`，horizontal 时 `text-center` | #171717 / #ffffff |
+| 描边 | `ring ring-inset ring-accented`（outline / subtle） | #d4d4d4 / #404040 |
+| 描边 | 聚焦：`outline-{color}/25` + `focus-visible:ring-{color}` | primary 为 #22c55e（25% 透明度） |
+| 圆角 | `rounded-md` | 6px（--radius-md） |
+| 阴影 | 无 | - |
+
+步进按钮使用 XButton `variant="link"`，颜色与尺寸继承组件自身；disabled 时按钮容器 `opacity-75` + `cursor-not-allowed`。
+
+### 变体
+
+| 变体 | token 组合 |
+| --- | --- |
+| outline（默认） | `text-highlighted` + `bg-default` + `ring ring-inset ring-accented` |
+| soft / subtle / ghost / none | 与 Input 相同组合（见 Input 设计规格） |
+
+`orientation: vertical` 时步进按钮堆叠在右侧（`scale-80`，按钮 py-0），horizontal 时分别位于左右两侧。
+
+### 交互
+
+| 类别 | 说明 |
+| --- | --- |
+| 键盘 | reka-ui NumberFieldRoot 语义：Up / Down 按 step 增减，PageUp / PageDown 按 step × 10 增减，Home / End 跳至 min / max；数字可直接输入 |
+| 鼠标 | 滚轮默认改变值（`disableWheelChange` 关闭、`invertWheelChange` 反转） |
+| ARIA | reka-ui NumberField 默认 `role=spinbutton`，暴露 `aria-valuemin` / `aria-valuemax` / `aria-valuenow`；步进按钮 aria-label 来自 locale 文案 |
+| 动效 | base `transition-colors`；步进按钮 hover 背景过渡 |

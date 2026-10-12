@@ -78,3 +78,26 @@ npx shadcn-vue@latest add @ui-kit/x-pagination
 ## 动效
 
 - 按钮：hover / active 颜色过渡
+
+## 设计规格
+
+### 主题 token
+
+- 背景：无，按钮背景由 `XButton` 主题提供
+- 文字：页码按钮文字 `min-w-5 text-center` 居中；其余无
+- 描边：无，按钮描边由 `XButton` 主题提供
+- 圆角与阴影：无，由 `XButton` 提供
+- 变体：
+
+| 配置 | 默认值 | token 组合 |
+| --- | --- | --- |
+| color / variant | neutral / outline | 未激活页与首末按钮（XButton `color=neutral variant=outline`） |
+| activeColor / activeVariant | primary / solid | 当前页（XButton `color=primary variant=solid`，即 `bg-primary text-inverted`） |
+| showEdges / siblingCount | false / 2 | 页码序列窗口（省略号逻辑） |
+| size | — | 透传 XButton 尺寸 |
+
+### 交互
+
+- 键盘：页码与首末按钮为原生 `<button>`（Tab 聚焦、Enter / Space 触发）；省略号 `pointer-events-none` 不可聚焦
+- ARIA：根渲染 `<nav>`（reka-ui PaginationRoot）；页码按钮 `aria-label="Page {value}"`，当前页 `aria-current="page"` + `data-selected`；整体 `disabled` 时按钮输出 `disabled`
+- 动效：XButton hover / active 颜色过渡；RTL 下首、上、下、末图标自动换向（`dir` 判定）

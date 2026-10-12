@@ -92,3 +92,49 @@ popoverApi.open()   // open / close / toggle
 ## 动效
 
 - 弹层：淡入 + 缩放进出场（100ms）
+
+## 设计规格
+
+### 主题 token
+
+**背景**
+
+| 插槽 | token | 值（亮 / 暗） |
+| --- | --- | --- |
+| content | bg-default | #ffffff / #171717 |
+| arrow | fill-bg | 同 bg-default |
+
+**文字**
+
+| 插槽 | token | 值 |
+| --- | --- | --- |
+| content | 无文字 token（由内容自行控制） | — |
+
+**描边**
+
+| 插槽 | token | 值（亮 / 暗） |
+| --- | --- | --- |
+| content | ring ring-default | #e5e5e5 / #262626 |
+| arrow | stroke-default | 同 border-default |
+
+**圆角与阴影**
+
+| 位置 | 类 | 值 |
+| --- | --- | --- |
+| content | rounded-md | 6px（--radius-md） |
+| content | shadow-lg | Tailwind 默认 shadow-lg |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- |
+| mode=click（默认） | 点击打开；modal 时焦点锁定与遮罩拦截 |
+| mode=hover | HoverCard 语义：悬停打开（openDelay 默认 700ms）、移出关闭（closeDelay 默认 300ms） |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | reka Popover 语义：Esc 关闭；modal=true 时打开后焦点锁定在内容内（FocusScope）；mode=hover 时 Esc 也可关闭（reka HoverCard 语义） |
+| ARIA | trigger 元素为 aria-expanded + aria-haspopup=dialog；content 可聚焦（focus:outline-none） |
+| 动效 | content 进出场 scale-in / scale-out 100ms |

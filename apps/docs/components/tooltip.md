@@ -83,3 +83,50 @@ tooltipApi.show()   // show / hide / toggle / setState
 ## 动效
 
 - 弹出：淡入 + 缩放（100ms）
+
+## 设计规格
+
+### 主题 token
+
+**背景**
+
+| 插槽 | token | 值（亮 / 暗） |
+| --- | --- | --- |
+| content | bg-default | #ffffff / #171717 |
+| arrow | fill-bg | 同 bg-default |
+
+**文字**
+
+| 插槽 | token | 值（亮 / 暗） |
+| --- | --- | --- |
+| content | text-highlighted | #171717 / #ffffff |
+| text | truncate（继承 content 颜色） | — |
+
+**描边**
+
+| 插槽 | token | 值（亮 / 暗） |
+| --- | --- | --- |
+| content | ring ring-default | #e5e5e5 / #262626 |
+| arrow | stroke-default | 同 border-default |
+
+**圆角与阴影**
+
+| 位置 | 类 | 值 |
+| --- | --- | --- |
+| content | rounded-sm | 4px（--radius-sm） |
+| content | shadow-sm | Tailwind 默认 shadow-sm |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- |
+| kbds | kbds 容器在 lg 以下隐藏（hidden lg:inline-flex），按键尺寸默认 sm |
+| disabled（无内容或 disabled=true） | 不渲染提示 |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | reka Tooltip 语义：hover 或键盘焦点移入触发元素时打开；Esc 关闭；delayDuration 控制打开延迟（reka TooltipProvider 默认 700ms）；disableHoverableContent 开启时内容可悬停保持 |
+| ARIA | content 为 role=tooltip；trigger 元素关联 aria-describedby |
+| 动效 | content 进出场 scale-in（delayed-open 状态）/ scale-out 100ms |

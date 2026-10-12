@@ -59,3 +59,29 @@ npx shadcn@latest add @ui-kit/x-field-group
 ## 动效
 
 无动效：布局容器组件。
+
+## 设计规格
+
+### 主题 token
+
+- 背景：无
+- 文字：无
+- 描边：无
+- 圆角与阴影：无
+- 变体：
+
+| 变体 | 枚举 | token 组合 |
+| --- | --- | --- |
+| orientation | horizontal | `flex items-start` + 间距 |
+| orientation | vertical | `flex flex-col` + 间距 |
+| size | xs / sm / md / lg / xl | `gap-1` / `gap-2` / `gap-3` / `gap-4` / `gap-5` |
+
+### 交互
+
+- 键盘：无，布局容器不参与焦点
+- ARIA：无角色；输出 `data-orientation`
+- 动效：无
+
+**双端差异**：
+
+- Vue 端以 `-space-x-px` / `-space-y-px` 合并相邻控件描边，并由成员组件 `fieldGroupVariant` 拼接圆角；React 端以 `gap-1 ~ gap-5` 间距排列，成员无描边合并与圆角拼接

@@ -132,3 +132,56 @@ paletteApi.open()   // open / close / toggle
 
 - 遮罩：淡入淡出（200ms）
 - 面板：缩放进出场（scale 0.95，200ms）
+
+## 设计规格
+
+React 端基于 cmdk（components/ui/command），主题插槽类名与 Vue 端键名一致，token 采用 shadcn 变量 + kit-theme.css 色板。
+
+### 主题 token
+
+**背景**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| 面板（CommandDialog） | bg-popover | Vue 端面板由外层容器提供背景 |
+| item（高亮） | data-selected:bg-muted | 对应 before:bg-elevated/50 |
+| input 容器 | bg-input/30 | Vue 端无输入框背景 token |
+
+**文字**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| item | text-foreground | 对应 text-default |
+| item（高亮） | data-selected:text-foreground | 对应 text-highlighted |
+| itemLeadingIcon · itemDescription · empty | text-muted-foreground | 对应 text-dimmed / text-muted |
+| itemLabel（labelHtml 高亮命中） | mark 样式由 cmdk 渲染 | Vue 端为 text-primary + bg-primary/15，差异注明 |
+
+**描边**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| input 容器 | border-input/30 | 对应无（Vue 端 root 为 divide-y divide-default） |
+| footer | border-t border-border | Vue 端 root 为 divide-y divide-default |
+| separator | bg-border | 与 Vue 端一致 |
+
+**圆角与阴影**
+
+| 位置 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| 面板 | rounded-xl! | Vue 端无面板圆角 token（由外层提供） |
+| item | rounded-sm（面板内 rounded-lg!） | 对应 rounded-md，差异注明 |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- |
+| active=true | 对应 cmdk data-selected：bg-muted + text-foreground（Vue 端为 text-highlighted + before:bg-elevated） |
+| disabled | data-[disabled=true]:opacity-50 + pointer-events-none |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | cmdk 语义，与 Vue 端 reka Listbox 一致：ArrowDown / ArrowUp 在选项间移动，Enter 选择（带 children 的项进入子层），Backspace 返回上一层，输入过滤；CommandDialog 下 Esc 关闭面板 |
+| ARIA | cmdk 语义：输入框 role=combobox，选项 role=option + aria-selected；data-selected 表示当前高亮项 |
+| 动效 | CommandDialog 遮罩与面板动效由 ui/dialog 承担（对照 Vue 端外层 modal 的淡入淡出 200ms + 缩放 200ms）；loading 项图标 animate-spin |

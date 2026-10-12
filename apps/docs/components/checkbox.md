@@ -116,3 +116,39 @@ npx shadcn-vue@latest add @ui-kit/x-checkbox
 - 勾选：状态颜色过渡
 - focus：聚焦环过渡
 - 无位移动画
+
+## 设计规格
+
+### 主题 token
+
+| 类别 | 类名 | 值（亮色 / 暗色） |
+| --- | --- | --- |
+| 背景 | 指示块 `indicator: bg-{color}`（选中 / 半选填充） | primary 为 #22c55e；neutral 为 `bg-inverted` #171717 / #ffffff |
+| 背景 | card 选中：`bg-{color}/10` | 主色 10% 透明度浅色底 |
+| 文字 | `label: text-default` | #404040 / #e5e5e5 |
+| 文字 | `description: text-muted` | #737373 / #a3a3a3 |
+| 文字 | 指示块内图标 `text-inverted` | #ffffff / #171717 |
+| 描边 | `base: ring ring-inset ring-accented` | #d4d4d4 / #404040 |
+| 描边 | 聚焦：`outline-{color}/25` + `focus-visible:outline-3` + `focus-visible:ring-{color}` | primary 25% 透明度 + 500 级 |
+| 描边 | card：`border border-default`，选中 `border-{color}/50` | #e5e5e5 / #262626；选中为色板 50% |
+| 圆角 | `base: rounded-sm`（4px）· card `rounded-lg`（8px） | --radius-sm / --radius-lg |
+| 阴影 | 无 | - |
+
+### 变体
+
+| 变体 | token 组合 |
+| --- | --- |
+| list（默认） | 控件与文字并排，无容器描边 |
+| card | `border border-default rounded-lg`，hover `bg-elevated/50`，选中 `border-{color}/50` + `bg-{color}/10`（neutral 为 `border-inverted/50` + `bg-elevated`） |
+
+`indicator` 支持 start / end / hidden；hidden 时 base 为 `sr-only`，图标移到 label 上方。`highlight: true` 时 base 叠加 `ring-{color}`。
+
+### 交互
+
+| 类别 | 说明 |
+| --- | --- |
+| 键盘 | reka-ui CheckboxRoot 语义：Tab 聚焦，Space 切换选中 / 半选 |
+| ARIA | `role=checkbox`，选中态 `aria-checked`（true / false / mixed）；disabled 映射 `aria-disabled` |
+| 动效 | card 变体 `transition-colors`（hover 背景与描边过渡）；无位移动画 |
+
+disabled 时 root `opacity-75`，控件与文字 `cursor-not-allowed`；尺寸 xs / sm / md / lg / xl 五档。

@@ -103,3 +103,58 @@ menuApi.open()   // open / close / toggle
 
 - 弹层：淡入 + 缩放进出场（scale 0.95，100ms）
 - 项：hover 背景过渡
+
+## 设计规格
+
+### 主题 token
+
+**背景**
+
+| 插槽 | token | 值（亮 / 暗） |
+| --- | --- | --- |
+| content | bg-default | #ffffff / #171717 |
+| item（高亮 / 子菜单打开） | before:bg-elevated/50 | #f5f5f5 / #262626，50% 透明 |
+| item（active=true） | before:bg-elevated | #f5f5f5 / #262626 |
+| item（active=false + color） | before:bg-color/10（高亮时） | 如 primary 为 #22c55e，10% 透明 |
+
+**文字**
+
+| 插槽 | token | 值（亮 / 暗） |
+| --- | --- | --- |
+| item（active=false） | text-default | #404040 / #e5e5e5 |
+| item（高亮 / active=true） | text-highlighted | #171717 / #ffffff |
+| item（color 项） | text-color，如 text-error | #ef4444 |
+| itemLeadingIcon | text-dimmed，高亮时 text-default | #a3a3a3 / #404040 |
+| itemDescription | text-muted | #737373 / #a3a3a3 |
+| label（分组标题） | text-highlighted | #171717 / #ffffff |
+| itemLabelExternalIcon | text-dimmed | #a3a3a3 / #a3a3a3 |
+
+**描边**
+
+| 插槽 | token | 值（亮 / 暗） |
+| --- | --- | --- |
+| content | ring ring-default | #e5e5e5 / #262626 |
+| separator | bg-border | 同 border-default |
+
+**圆角与阴影**
+
+| 位置 | 类 | 值 |
+| --- | --- | --- |
+| content · item 高亮层 | rounded-md | 6px（--radius-md） |
+| content | shadow-lg | Tailwind 默认 shadow-lg |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- |
+| color（primary 等七色 + neutral） | active=false：text-color + 高亮 before:bg-color/10；active=true：text-color + before:bg-color/10 |
+| active=true | text-highlighted + before:bg-elevated |
+| loading | itemLeadingIcon 切换为 animate-spin |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | 右键（contextmenu 事件）打开菜单；reka ContextMenu 语义：ArrowDown / ArrowUp 在项间移动焦点，ArrowRight 打开子菜单，ArrowLeft 关闭子菜单，Esc 关闭菜单，Home / End 跳转首尾，字母键高亮匹配项 |
+| ARIA | Content 为 role=menu；Item 为 role=menuitem；CheckboxItem 为 role=menuitemcheckbox + aria-checked；SubTrigger 为 aria-haspopup=menu + aria-expanded；Label / Separator 为结构性项 |
+| 动效 | content 进出场 scale-in / scale-out 100ms；item（active=false）为 transition-colors；loading 项前置图标 animate-spin |

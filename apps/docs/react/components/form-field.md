@@ -106,3 +106,31 @@ npx shadcn@latest add @ui-kit/x-field-group
 ## 动效
 
 无动效：表单容器组件。
+
+## 设计规格
+
+### 主题 token
+
+- 背景：无
+- 文字：label `text-foreground`；description、hint、help `text-muted-foreground`；error `text-error`；必填星号 `text-error`
+- 描边：无
+- 圆角与阴影：无
+- 变体：
+
+| 变体 | 枚举 | token 组合 |
+| --- | --- | --- |
+| size | xs / sm / md / lg / xl | 根字号 `text-xs` / `text-xs` / `text-sm` / `text-sm` / `text-base` |
+| required | true | 星号 `<span class="ml-0.5 text-error">*</span>` |
+| orientation | vertical / horizontal | vertical：`container: mt-1`；horizontal：`flex justify-between place-items-baseline gap-2` |
+
+### 交互
+
+- 键盘：无组件级键盘逻辑；`Label` 以 `htmlFor` 关联控件 id，点击标签聚焦控件
+- ARIA：错误区输出 `role="alert"`；hint / description / error / help 以 `${ariaId}-hint`、`-description`、`-error`、`-help` 输出 id，供控件 `aria-describedby` 关联
+- 动效：无
+
+**双端差异**：
+
+- Vue 端 label 用 `text-default`、辅助文案用 `text-muted`；React 端对应 `text-foreground` / `text-muted-foreground`（shadcn 变量，同语义）
+- Vue 端错误区无 `role="alert"`；React 端输出 `role="alert"`
+- Vue 端必填星号由主题 `after:content-['*']` 伪元素实现；React 端为显式 `<span>` 节点

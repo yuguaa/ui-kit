@@ -81,3 +81,43 @@ npx shadcn-vue@latest add @ui-kit/x-slider
 - 拖动：即时响应
 - thumb：hover / focus 聚焦环过渡
 - tooltip：淡入缩放过渡
+
+## 设计规格
+
+### 主题 token
+
+**背景与描边**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| track | bg-accented | #e5e5e5（亮）/ #404040（暗） |
+| range（color=`<color>`） | bg-`<color>` | 语义色 500 级（如 primary #22c55e） |
+| range（neutral） | bg-inverted | #171717（亮）/ #ffffff（暗） |
+| thumb | bg-default + ring-2 | #ffffff（亮）/ #171717（暗）底 + 2px 环 |
+| thumb（color=`<color>`） | ring-`<color>` outline-`<color>`/25 | 环与聚焦轮廓用语义色，轮廓 25% 透明度 |
+| thumb（neutral） | ring-inverted outline-inverted/25 | 环与轮廓用 inverted |
+
+**圆角**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| track / range / thumb | rounded-full | 胶囊形 |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- | --- |
+| size | thumb 尺寸 xs size-3 → xl size-5；track 粗细水平 h-[6px] → h-[10px]、垂直 w-[6px] → w-[10px] |
+| orientation=horizontal | root w-full；range h-full |
+| orientation=vertical | root flex-col h-full；range w-full |
+| disabled=true | root opacity-75 cursor-not-allowed |
+
+默认 size md、color primary。
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | thumb role="slider" tabindex=0（reka-ui 语义）；方向键按 step 增减（水平 ←/→、垂直 ↑/↓）；Home / End 跳至最小 / 最大值（reka-ui 2.10.5 实现确认）；minStepsBetweenThumbs 限制双 thumb 最小间隔 |
+| ARIA | thumb 带 aria-valuemin / aria-valuemax / aria-valuenow / aria-orientation；单 thumb 支持 aria-label / aria-labelledby / aria-describedby / aria-valuetext / aria-invalid 透传（默认标签 'Thumb'）；多 thumb 且根元素带 aria-label / aria-labelledby 时根 role="group"，reka 自动生成 'Minimum' / 'Maximum' 等 thumb 标签 |
+| 动效 | 无过渡（值实时跟随）；focus-visible 显示 outline-3 聚焦环 |

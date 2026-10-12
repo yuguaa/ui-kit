@@ -104,3 +104,53 @@ slideoverApi.open()   // open / close / toggle / setState / setData / getData
 
 - 面板：侧向滑入滑出（200ms）
 - 遮罩：淡入淡出（200ms）
+
+## 设计规格
+
+### 主题 token
+
+**背景**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| overlay | bg-elevated/75 | #f5f5f5（亮）/ #262626（暗），75% 透明度 |
+| content | bg-default | #ffffff（亮）/ #171717（暗） |
+
+**文字**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| title | text-highlighted | #171717（亮）/ #ffffff（暗） |
+| description | text-muted | #737373（亮）/ #a3a3a3（暗） |
+
+**描边与分割**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| content | divide-y divide-default | 分割线 #e5e5e5（亮）/ #262626（暗） |
+| content | sm:ring ring-default | sm 及以上 1px 环 #e5e5e5（亮）/ #262626（暗） |
+
+**圆角与阴影**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| content（inset=true） | rounded-lg | --radius-lg 8px |
+| content | sm:shadow-lg | sm 及以上弹窗阴影阶梯 |
+| header | min-h-(--ui-header-height) | 4rem |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- | --- |
+| side=top / bottom | content 贴左右边（inset-x-0 + top-0 / bottom-0），inset=true 时距边 1rem 且 max-h-[calc(100%-2rem)] |
+| side=right / left | content 贴上下边（inset-y-0 + right-0 / left-0）且 max-w-md |
+| inset=true | content rounded-lg |
+| transition=true | overlay：data-[state=open] 播 fade-in、closed 播 fade-out；content：按 side 播 slide-in-from-{top,right,bottom,left} / slide-out-to-{top,right,bottom,left}（均 200ms var(--ease-out)） |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | 打开时焦点移入面板并锁定（focus trap，reka-ui Dialog 语义）；Esc 关闭；关闭后焦点恢复触发元素；dismissible=false 时 Esc 与外部点击被拦截并触发 close:prevent |
+| ARIA | DialogContent role="dialog"，modal 时 aria-modal="true"；title / description 关联 aria-labelledby / aria-describedby；无标题或使用 content 插槽时渲染 VisuallyHidden 的 DialogTitle / DialogDescription；content 带 data-side 标注方向；关闭按钮 aria-label 来自 t('slideover.close') |
+| 动效 | 遮罩 fade-in / fade-out 200ms；面板按 side 侧向滑入滑出 200ms（transition=true）；打开时锁定 body 滚动（reka-ui Dialog 语义） |

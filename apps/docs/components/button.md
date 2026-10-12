@@ -107,3 +107,86 @@ npx shadcn-vue@latest add @ui-kit/x-button
 
 - hover / active：背景色加深过渡（transition-colors），无位移与缩放
 - loading：图标旋转
+
+## 设计规格
+
+### 主题 token
+
+slots 公共类：`base` 含 `rounded-md font-medium inline-flex items-center` 与禁用态 `cursor-not-allowed opacity-75`；`label` 为 `truncate`；`leadingIcon` / `trailingIcon` / `leadingAvatar` 为 `shrink-0`。
+
+**背景**
+
+| token | 取值（亮 / 暗） | 使用场景 |
+| --- | --- | --- |
+| bg-{color} | 语义色 500 级（primary #22c55e 等） | solid 变体默认背景 |
+| bg-{color}/75 | 500 级 75% 透明度 | solid hover / active |
+| bg-{color}/10 | 500 级 10% 透明度 | soft / subtle 背景，outline / ghost hover |
+| bg-{color}/15 | 500 级 15% 透明度 | soft / subtle hover / active |
+| bg-inverted | #171717 / #ffffff | neutral solid |
+| bg-elevated | #f5f5f5 / #262626 | neutral soft / subtle 背景，neutral outline / ghost hover |
+| bg-accented/75 | #e5e5e5 / #404040（75%） | neutral soft / subtle hover |
+
+**文字**
+
+| token | 取值（亮 / 暗） | 使用场景 |
+| --- | --- | --- |
+| text-inverted | #ffffff / #171717 | solid 变体 |
+| text-{color} | 语义色 500 级 | outline / soft / subtle / ghost / link 变体 |
+| text-{color}/75 | 500 级 75% 透明度 | link hover / active |
+| text-default | #404040 / #e5e5e5 | neutral 的 outline / soft / subtle / ghost |
+| text-muted | #737373 / #a3a3a3 | neutral link（hover 切换 text-default） |
+
+**描边**
+
+| token | 取值 | 使用场景 |
+| --- | --- | --- |
+| ring-{color}/50 | 500 级 50% 透明度 | outline 内描边（ring-inset） |
+| ring-{color}/25 | 500 级 25% 透明度 | subtle 内描边（ring-inset） |
+| ring-{color} | 500 级 | outline / subtle 聚焦时描边加深 |
+| ring-accented | #d4d4d4 / #404040 | neutral outline / subtle 内描边 |
+| outline-{color}/25 | 500 级 25% 透明度 | focus-visible 焦点环（outline-3，3px） |
+| outline-inverted/25 | #171717 / #ffffff（25%） | neutral 焦点环 |
+
+**圆角与阴影**
+
+| 类 | 值 |
+| --- | --- |
+| rounded-md | --radius-md 6px |
+| 阴影 | 不使用 |
+
+**变体**
+
+颜色枚举：primary / secondary / success / info / warning / error / neutral；尺寸 xs / sm / md / lg / xl；默认 `color=primary`、`variant=solid`、`size=md`。
+
+| 变体 | token 组合 |
+| --- | --- |
+| solid | bg-{color} text-inverted；hover / active bg-{color}/75（neutral：bg-inverted text-inverted） |
+| outline | bg-transparent text-{color} ring ring-inset ring-{color}/50；hover bg-{color}/10（neutral：bg-default text-default ring-accented，hover bg-elevated） |
+| soft | bg-{color}/10 text-{color}；hover / active bg-{color}/15（neutral：bg-elevated text-default，hover bg-accented/75） |
+| subtle | bg-{color}/10 text-{color} ring ring-inset ring-{color}/25；hover / active bg-{color}/15 |
+| ghost | bg-transparent text-{color}；hover bg-{color}/10（neutral：text-default，hover bg-elevated） |
+| link | text-{color} 没有背景与描边；hover / active text-{color}/75（neutral：text-muted，hover text-default） |
+
+### 交互
+
+**键盘**
+
+| 行为 | 说明 |
+| --- | --- |
+| Enter / Space | 默认渲染原生 `<button type="button">`，Enter / Space 触发 click |
+| 链接模式 | 传 `to` 时渲染 `<a href>`，Enter 触发导航；disabled 时移除 href 并加 tabindex="-1" |
+| 禁用 | disabled 或 loading 时以原生 disabled 阻断交互，cursor-not-allowed |
+
+**ARIA**
+
+| 属性 | 场景 |
+| --- | --- |
+| disabled | button 模式使用原生 disabled 属性 |
+| aria-disabled="true" | 链接模式禁用时输出，同时输出 role="link"、tabindex="-1" |
+| 不输出 | 不输出 aria-pressed、aria-busy（React 端 loading 时输出 aria-busy，见 React 文档差异说明） |
+
+**动效**
+
+- transition-colors：hover / active 颜色过渡（theme.transitions 默认开启）
+- loading：loadingIcon 应用 animate-spin；loadingAuto 时 click 返回 Promise 期间自动进入 loading 态
+- 没有位移与缩放动画

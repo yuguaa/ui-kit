@@ -82,3 +82,35 @@ npx shadcn@latest add @ui-kit/x-input-number
 ## 动效
 
 - 步进按钮：hover 背景过渡
+
+## 设计规格
+
+### 主题 token
+
+| 类别 | 类名 | 对应 Vue 端 token |
+| --- | --- | --- |
+| 背景 | `bg-background` + `border border-input` | Vue 端 variant 体系（`bg-default` + `ring-accented`） |
+| 文字 | 正文 `text-foreground`；`placeholder:text-muted-foreground` | `text-highlighted` / `text-dimmed` |
+| 描边 | `border border-input`；步进按钮聚焦 `focus-visible:ring-3` + `focus-visible:ring-ring/50` | `ring-accented` + 色板 outline |
+| 圆角 | `rounded-md`（6px） | 相同 |
+| 阴影 | 无 | - |
+
+React 端无 variant / color 属性：容器固定为 `bg-background` + `border-input`，聚焦环使用本地 `ring-ring/50`（与 Vue 端的色板聚焦环不同）。
+
+### 变体
+
+| 变体 | token 组合 |
+| --- | --- |
+| orientation horizontal（默认） | 步进按钮位于输入框左右两侧，输入框 `text-center` |
+| orientation vertical | 步进按钮堆叠于右侧上下，输入框保留左对齐 |
+
+### 交互
+
+| 类别 | 说明 |
+| --- | --- |
+| 键盘 | 原生 `input type=number`：Up / Down 按 step 增减（浏览器行为），步进按钮可 Tab 聚焦并以 Enter / Space 触发 |
+| 鼠标 | 滚轮改变值由浏览器原生 number input 提供 |
+| ARIA | 原生 number input 隐式 `role=spinbutton`；步进按钮 `aria-label="increment" / "decrement"` |
+| 动效 | 步进按钮 `transition-colors` + hover `bg-muted` |
+
+**与 Vue 端差异**：React 端基于原生 number input + 按钮（Vue 端基于 reka-ui NumberField）；无 PageUp / PageDown / Home / End 语义、无 `stepSnapping` / `formatOptions` 等 NumberField 能力；到 min / max 边界时对应按钮自动禁用。

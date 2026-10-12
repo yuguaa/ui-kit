@@ -84,3 +84,50 @@ npx shadcn-vue@latest add @ui-kit/x-avatar-group
 ## 动效
 
 无动效：静态展示组件。
+
+## 设计规格
+
+### 主题 token
+
+slots 公共类：`root` 为 `inline-flex flex-row-reverse justify-end`；`base` 为 `relative rounded-full ring-bg first:me-0`。
+
+| 项目 | 类名 | 说明 |
+| --- | --- | --- |
+| 背景 | 不使用 | 没有背景 token |
+| 文字 | 不使用 | 没有文字 token |
+| 描边 | ring-bg（#ffffff / #171717） | 每个头像的外环，与页面背景同色形成间隔 |
+| 圆角 | rounded-full | 头像与包裹元素全圆角 |
+| 阴影 | 不使用 | 没有阴影 |
+
+**变体**
+
+| 变体 | 取值 | 说明 |
+| --- | --- | --- |
+| size | 3xs ~ 3xl | 外环与重叠间距分档：3xs ~ xs 为 ring（1px）+ -me-0.5；sm ~ lg 为 ring-2 + -me-1.5；xl ~ 3xl 为 ring-3 + -me-2；默认 md |
+| color | primary / secondary / success / info / warning / error / neutral | 透传给子头像的背景与文字色，默认 neutral |
+
+size / color 通过 provide / inject（avatarGroupInjectionKey）传递给子 XAvatar，子头像自身指定时优先。
+
+### 交互
+
+**键盘**
+
+| 行为 | 说明 |
+| --- | --- |
+| 焦点 | 静态展示，默认渲染 `<div>`，没有可聚焦行为 |
+
+**ARIA**
+
+| 属性 | 说明 |
+| --- | --- |
+| 不输出 | 没有内置角色 |
+
+**状态**
+
+| 状态 | 说明 |
+| --- | --- |
+| max | 超出 max 的头像折叠为单个 XAvatar（text 为 `+N`）；max 支持字符串（parseInt） |
+
+**动效**
+
+没有动效：静态展示组件。

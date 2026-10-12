@@ -95,3 +95,67 @@ npx shadcn-vue@latest add @ui-kit/x-card
 
 - hoverable：阴影加深 + ring 边框色高亮（CSS 过渡 200ms）
 - 无位移动画
+
+## 设计规格
+
+### 主题 token
+
+slots 公共类：`root` 为 `rounded-lg overflow-hidden`；`header` 为 `p-4 sm:px-6`；`title` 为 `text-highlighted font-semibold`；`description` 为 `mt-1 text-muted text-sm`；`body` 为 `p-4 sm:p-6`；`footer` 为 `p-4 sm:px-6`。
+
+**背景**
+
+| token | 取值（亮 / 暗） | 使用场景 |
+| --- | --- | --- |
+| bg-inverted | #171717 / #ffffff | solid 变体 |
+| bg-default | #ffffff / #171717 | outline 变体 |
+| bg-elevated/50 | #f5f5f5 / #262626（50%） | soft / subtle 变体 |
+
+**文字**
+
+| token | 取值（亮 / 暗） | 使用场景 |
+| --- | --- | --- |
+| text-highlighted | #171717 / #ffffff | 标题 |
+| text-muted | #737373 / #a3a3a3 | 描述 |
+| text-inverted | #ffffff / #171717 | solid 变体标题 |
+| text-dimmed | #a3a3a3 / #a3a3a3 | solid 变体描述 |
+
+**描边**
+
+| token | 取值（亮 / 暗） | 使用场景 |
+| --- | --- | --- |
+| ring ring-default | #e5e5e5 / #262626 | outline / subtle 外描边 |
+| divide-y divide-default | #e5e5e5 / #262626 | 各分区之间的分割线 |
+
+**圆角与阴影**
+
+| 类 | 值 |
+| --- | --- |
+| rounded-lg | --radius-lg 8px |
+| 阴影 | 不使用 |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- |
+| outline（默认） | bg-default ring ring-default divide-y divide-default |
+| solid | bg-inverted text-inverted；title text-inverted；description text-dimmed |
+| soft | bg-elevated/50 divide-y divide-default |
+| subtle | bg-elevated/50 ring ring-default divide-y divide-default |
+
+### 交互
+
+**键盘**
+
+| 行为 | 说明 |
+| --- | --- |
+| 焦点 | 默认渲染 `<div>`，没有可聚焦行为；click / mouseenter 经原生 attrs 透传 |
+
+**ARIA**
+
+| 属性 | 说明 |
+| --- | --- |
+| 不输出 | 没有内置角色与状态属性 |
+
+**动效**
+
+没有动效：Vue 端没有 hoverable 能力（hoverable 阴影与 ring 高亮为 React 端扩展）。

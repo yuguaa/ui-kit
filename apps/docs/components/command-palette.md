@@ -124,3 +124,60 @@ paletteApi.open()   // open / close / toggle
 
 - 遮罩：淡入淡出（200ms）
 - 面板：缩放进出场（scale 0.95，200ms）
+
+## 设计规格
+
+### 主题 token
+
+**背景**
+
+| 插槽 | token | 值（亮 / 暗） |
+| --- | --- | --- |
+| root | 透明（无背景 token，面板由外层容器提供） | — |
+| item（高亮） | before:bg-elevated/50 | #f5f5f5 / #262626，50% 透明 |
+| item（active=true） | before:bg-elevated | #f5f5f5 / #262626 |
+| itemLabelBase（mark 高亮命中） | bg-primary/15 | #22c55e，15% 透明 |
+
+**文字**
+
+| 插槽 | token | 值（亮 / 暗） |
+| --- | --- | --- |
+| item | text-default | #404040 / #e5e5e5 |
+| item（高亮 / active=true） | text-highlighted | #171717 / #ffffff |
+| itemLeadingIcon | text-dimmed，高亮时 text-default | #a3a3a3 / #404040 |
+| itemLabel | text-dimmed | #a3a3a3 / #a3a3a3 |
+| itemLabelBase | text-highlighted | #171717 / #ffffff |
+| itemLabelBase / itemLabelSuffix（mark 高亮命中） | text-primary | #22c55e |
+| itemLabelPrefix | text-default | #404040 / #e5e5e5 |
+| itemDescription · empty | text-muted | #737373 / #a3a3a3 |
+| itemTrailingHighlightedIcon | text-dimmed | #a3a3a3 / #a3a3a3 |
+| label（分组标题） | text-highlighted | #171717 / #ffffff |
+
+**描边**
+
+| 插槽 | token | 值（亮 / 暗） |
+| --- | --- | --- |
+| root | divide-y divide-default | #e5e5e5 / #262626 |
+| viewport（virtualize=false） | divide-y divide-default | #e5e5e5 / #262626 |
+
+**圆角与阴影**
+
+| 位置 | 类 | 值 |
+| --- | --- | --- |
+| item 高亮层 | rounded-md | 6px（--radius-md） |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- |
+| active=true | text-highlighted + before:bg-elevated，图标 text-default |
+| loading | itemLeadingIcon 切换为 animate-spin |
+| virtualize=true | viewport 为 p-1 isolate；false 时 divide-y divide-default |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | reka Listbox 语义：ArrowDown / ArrowUp 在选项间移动，Enter 选择（带 children 的项进入子层），Backspace 返回上一层（源码监听 @keydown.backspace），字母键高亮匹配项；input 开启时输入过滤，Esc 由外层关闭面板 |
+| ARIA | 选项 role=option + aria-selected；data-highlighted 表示当前高亮项；搜索输入框承接 ListboxFilter 过滤；分组标题为结构性项 |
+| 动效 | 组件本身无动画 token；面板与遮罩动效由外层 modal 承担（遮罩淡入淡出 200ms、面板缩放 200ms）；loading 项图标 animate-spin |

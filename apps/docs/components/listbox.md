@@ -99,3 +99,59 @@ npx shadcn-vue@latest add @ui-kit/x-listbox
 
 - 选项：hover 背景过渡
 - 加载：图标旋转
+
+## 设计规格
+
+### 主题 token
+
+**背景**
+
+| 插槽 | token | 值（亮 / 暗） |
+| --- | --- | --- |
+| root | 透明（无背景 token） | — |
+| item（高亮） | before:bg-elevated/50 | #f5f5f5 / #262626，50% 透明 |
+| input | 透明（无背景 token） | — |
+
+**文字**
+
+| 插槽 | token | 值（亮 / 暗） |
+| --- | --- | --- |
+| item | text-default | #404040 / #e5e5e5 |
+| item（高亮） | text-highlighted | #171717 / #ffffff |
+| itemLeadingIcon | text-dimmed，高亮时 text-default | #a3a3a3 / #404040 |
+| itemDescription · empty · loading | text-muted | #737373 / #a3a3a3 |
+| label（分组标题） | text-highlighted | #171717 / #ffffff |
+
+**描边**
+
+| 插槽 | token | 值（亮 / 暗） |
+| --- | --- | --- |
+| root | ring ring-inset ring-default | #e5e5e5 / #262626 |
+| root（focus-visible，color=primary） | outline-primary/25 · has-focus-visible:ring-primary | #22c55e |
+| root（highlight=true） | ring ring-inset ring-primary | #22c55e |
+| input | border-b border-default | #e5e5e5 / #262626 |
+| separator | bg-border | 同 border-default |
+
+**圆角与阴影**
+
+| 位置 | 类 | 值 |
+| --- | --- | --- |
+| root | rounded-lg | 8px（--radius-lg） |
+| item 高亮层 | rounded-md | 6px（--radius-md） |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- |
+| color（primary 等七色） | focus-visible：outline-color/25 · has-focus-visible:ring-color |
+| color（neutral） | outline-inverted/25 · has-focus-visible:ring-inverted |
+| disabled | opacity-75 + cursor-not-allowed |
+| highlight | ring ring-inset ring-color（常驻描边） |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | reka Listbox 语义：ArrowDown / ArrowUp 在选项间移动，Enter 选择，Home / End 跳转首尾，字母键高亮匹配项；filter=true 时输入框过滤选项，Esc 清除过滤词 |
+| ARIA | 选项 role=option + aria-selected；data-highlighted 表示当前高亮项，data-disabled 表示禁用项；分组标题与分隔线为结构性项 |
+| 动效 | item 为 transition-colors；loadingIcon 为 animate-spin；列表为内联布局，无面板进出场动画 |

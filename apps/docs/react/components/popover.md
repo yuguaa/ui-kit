@@ -85,3 +85,52 @@ popoverApi.open()   // open / close / toggle
 ## 动效
 
 - 弹层：淡入 + 缩放进出场（100ms）
+
+## 设计规格
+
+React 端基于 Base UI Popover，主题插槽类名与 Vue 端键名一致，token 采用 shadcn 变量。
+
+### 主题 token
+
+**背景**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| content | bg-background | 对应 bg-default |
+| arrow | fill-background | 对应 fill-bg |
+
+**文字**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| content | 无文字 token | 与 Vue 端一致 |
+
+**描边**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| content | ring-1 ring-border | 对应 ring ring-default |
+| arrow | stroke-border | 对应 stroke-default |
+
+**圆角与阴影**
+
+| 位置 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| content | rounded-md | 6px，与 Vue 端同值 |
+| content | shadow-lg | 与 Vue 端同值 |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- |
+| mode=click（默认） | 点击打开；modal 时焦点锁定与遮罩拦截 |
+| mode=hover | 悬停打开与移出关闭，默认 openDelay=0 / closeDelay=0；Vue 端 reka HoverCard 默认为 700ms / 300ms，差异注明 |
+| dismissible=false | 拦截外部点击与 Esc 关闭并回调 onClosePrevent；Vue 端无对应 prop，差异注明 |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | Base UI Popover 语义，与 Vue 端一致：Esc 关闭；modal=true 时打开后焦点锁定在内容内；dismissible=false 时 Esc 与外部点击的关闭被拦截 |
+| ARIA | 与 Vue 端一致：trigger 元素为 aria-expanded + aria-haspopup；content 可聚焦（focus:outline-none） |
+| 动效 | content 进出场为 tailwindcss-animate 风格 animate-in / fade-in-0 / zoom-in-95（Vue 端为 scale-in / scale-out 100ms，实现方式不同，差异注明） |

@@ -103,3 +103,69 @@ npx shadcn-vue@latest add @ui-kit/x-avatar
 ## 动效
 
 无动效：静态展示组件。
+
+## 设计规格
+
+### 主题 token
+
+slots 公共类：`root` 为 `inline-flex items-center justify-center shrink-0 select-none rounded-full align-middle`；`image` 为 `h-full w-full rounded-[inherit] object-cover`；`fallback` 为 `font-medium truncate`；`icon` 为 `shrink-0`。
+
+**背景**
+
+| token | 取值（亮 / 暗） | 使用场景 |
+| --- | --- | --- |
+| bg-{color}/10 | 语义色 500 级 10% 透明度 | 文字 / 图标头像的背景 |
+| bg-elevated | #f5f5f5 / #262626 | neutral 背景 |
+
+**文字**
+
+| token | 取值（亮 / 暗） | 使用场景 |
+| --- | --- | --- |
+| text-{color} | 语义色 500 级 | fallback 文字与图标颜色 |
+| text-muted | #737373 / #a3a3a3 | neutral fallback 文字与图标 |
+
+**描边**
+
+| 类 | 说明 |
+| --- | --- |
+| 不使用 | 没有描边 token；chip 模式时由 XChip 的 ring-bg 承担外环 |
+
+**圆角与阴影**
+
+| 类 | 值 |
+| --- | --- |
+| rounded-full | 全圆角（image 用 rounded-[inherit] 继承） |
+| 阴影 | 不使用 |
+
+**变体**
+
+| 变体 | 取值 | 说明 |
+| --- | --- | --- |
+| color | primary / secondary / success / info / warning / error / neutral | 背景与文字色，默认 neutral |
+| size | 3xs ~ 3xl | size-4 ~ size-12（16px ~ 48px），文字 text-[8px] ~ text-2xl，默认 md |
+
+### 交互
+
+**键盘**
+
+| 行为 | 说明 |
+| --- | --- |
+| 焦点 | 静态展示，默认渲染 `<span>`，没有可聚焦行为 |
+
+**ARIA**
+
+| 属性 | 说明 |
+| --- | --- |
+| alt | 图片替代文本，同时参与生成 fallback（每个词首字符，最多 2 个） |
+| 不输出 | 没有内置角色 |
+
+**状态**
+
+| 状态 | 说明 |
+| --- | --- |
+| 加载失败 | src 加载 error 事件后切换为 fallback（icon / text / 首字母）；src 变化时重置错误态 |
+| chip | chip 属性为 true 或对象时，本体包裹 XChip（inset=true）角标 |
+
+**动效**
+
+没有动效：静态展示组件。

@@ -90,3 +90,33 @@ npx shadcn-vue@latest add @ui-kit/x-textarea
 
 - focus：outline 加粗过渡（transition-colors）
 - 无位移动画
+
+## 设计规格
+
+主题 token 与变体继承 Input（`textarea.ts` 以 `defu` 合并 `input.ts`），背景 / 文字 / 描边 / 聚焦规则与 Input 一致，差异仅在插槽定位与 autoresize。
+
+### 主题 token
+
+| 类别 | 类名 | 值（亮色 / 暗色） |
+| --- | --- | --- |
+| 背景 | `bg-default`（outline）· `bg-elevated/50`（soft）· `bg-elevated`（subtle） | #ffffff / #171717；#f5f5f5 / #262626 |
+| 文字 | `text-highlighted` | #171717 / #ffffff |
+| 文字 | `placeholder:text-dimmed` | #a3a3a3 / #a3a3a3 |
+| 描边 | `ring ring-inset ring-accented`（outline / subtle） | #d4d4d4 / #404040 |
+| 描边 | 聚焦：`outline-{color}/25` + `focus-visible:ring-{color}` | primary 为 #22c55e（25% 透明度） |
+| 圆角 | `rounded-md` | 6px（--radius-md） |
+| 阴影 | 无 | - |
+
+`leading` / `trailing` 插槽改为顶部对齐（`items-start`），并按尺寸使用 `inset-y-1 ~ inset-y-2` 定位。
+
+### 变体
+
+与 Input 相同五档：outline / soft / subtle / ghost / none（默认 outline，组合见 Input 设计规格）。`autoresize: true` 时 base 追加 `resize-none`。
+
+### 交互
+
+| 类别 | 说明 |
+| --- | --- |
+| 键盘 | 原生 textarea 行为：输入、方向键、Enter 换行；无额外键盘处理 |
+| ARIA | 原生 textarea 隐式 `role=textbox`；`aria-invalid` 等由 `useFormField` 透传 |
+| 动效 | `transition-colors`；autoresize 按内容行数即时调整高度，无过渡动画 |

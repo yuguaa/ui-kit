@@ -140,3 +140,34 @@ npx shadcn@latest add @ui-kit/x-file-upload
 
 - 拖拽区：hover 背景过渡（transition-[background]），拖入时虚线边框高亮
 - 文件列表：无进出场动效，删除即时生效
+
+## 设计规格
+
+### 主题 token
+
+- 背景：base `bg-background`；可交互 hover `bg-muted/25`；拖入中 `data-[dragging=true]:bg-muted/25`；上传图标容器 `bg-muted` 圆形底；禁用 `opacity-75`
+- 文字：label `font-medium`；description / fileSize `text-muted-foreground`；fileName 继承主文字色
+- 描边：base `border border-border`；`dropzone` 时 `border-dashed`；`highlight` 时 `border-{color}`；焦点 `focus-visible:outline-3 outline-{color}/25 focus-visible:border-{color}`；文件项 `border border-border`
+- 圆角与阴影：base 与文件项 `rounded-lg`（8px）；上传图标容器 `rounded-full`；grid 删除按钮悬浮圆形
+- 变体：
+
+| 变体 | 枚举 | token 组合 |
+| --- | --- | --- |
+| color | 六色 + neutral | 焦点描边与高亮描边颜色 |
+| variant | area / button | area：`p-4` + 文字区；button：紧凑内边距无文字区 |
+| size | xs / sm / md / lg / xl | 根字号、图标尺寸、文件项内边距、上传图标容器尺寸 |
+| layout | list / grid | list：文件行 `border-border rounded-md`；grid：缩略图 `aspect-square` 网格 |
+| position | inside / outside | 文件列表相对上传区的位置 |
+| dropzone / interactive / highlight / multiple / disabled | true | 见背景与描边 |
+
+### 交互
+
+- 键盘：area 形态拖放区为 `div role="button" tabIndex={0}`（`interactive` 且未禁用），Enter / Space 打开文件对话框（`onKeyUp` 监听，未拦截 Space 默认滚动）；`variant="button"` 时为原生 `<button>`；删除文件后焦点回到拖放区
+- ARIA：area 拖放区 `role="button"` + `aria-disabled`；隐藏 `<input type="file">`（`className="sr-only"`）；删除按钮 `aria-label="移除 {文件名}"`；禁用时拖放被忽略
+- 动效：拖放区 hover 背景 `transition-[background] ease-out`；拖入态即时切换无过渡；文件列表无进出场动效
+
+**双端差异**：
+
+- Vue 端拖放经 VueUse `useDropZone` 处理，Space 按下即 `preventDefault` 防滚动；React 端手工 `onDragOver / onDragLeave / onDrop`，`onKeyUp` 未拦截 Space 默认滚动
+- Vue 端上传图标用 `XAvatar` 承载（含头像样式）；React 端为 `rounded-full bg-muted` 的 `<span>` 包裹 `XIcon`
+- 语义色映射：Vue `bg-elevated/25` / `bg-default` ↔ React `bg-muted/25` / `bg-background`；Vue grid 删除按钮 `border-2 border-bg` 无 React 对应类

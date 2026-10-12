@@ -63,3 +63,56 @@ npx shadcn@latest add @ui-kit/x-separator
 ## 动效
 
 无动效：静态分割组件。
+
+## 设计规格
+
+### 主题 token
+
+类名与 Vue 端一致：`root` 为 `flex items-center text-center`；容器为 `flex items-center font-medium text-sm text-muted-foreground`；线条颜色 token 为 `border-border`（≈ Vue border-default）。
+
+| 项目 | 类名 | 说明 |
+| --- | --- | --- |
+| 背景 | 不使用 | 没有背景 token |
+| 文字 | text-muted-foreground | 容器文字（≈ Vue text-default） |
+| 描边 | border-{color} / border-border | 线条颜色 |
+| 圆角 | 不使用 | 没有圆角 |
+| 阴影 | 不使用 | 没有阴影 |
+
+**变体**
+
+| 变体 | 取值 | 说明 |
+| --- | --- | --- |
+| color | primary / secondary / neutral（默认）/ success / info / warning / error | 线条颜色 |
+| orientation | horizontal（默认）/ vertical | root 与线条方向：horizontal 为 `w-full flex-row` + `border-t`；vertical 为 `h-full flex-col` + `border-s` |
+| size | xs（默认）/ sm / md / lg / xl | 线条粗细 1px ~ 5px（border-t-[2px] ~ border-t-[5px]） |
+| type | solid（默认）/ dashed / dotted | 线条样式（border-dashed / border-dotted） |
+| position | start / center（默认）/ end | 内容与线条的间距，与 Vue 端一致（me-3 / mx-3 / ms-3，vertical 为 mb-2 / my-2 / mt-2） |
+
+### 交互
+
+**键盘**
+
+| 行为 | 说明 |
+| --- | --- |
+| 焦点 | 静态分割，没有可聚焦行为 |
+
+**ARIA**（基于 @base-ui Separator 语义）
+
+| 属性 | 场景 |
+| --- | --- |
+| role="separator" | decorative 为 false（默认）时输出 |
+| aria-orientation="vertical" | decorative 为 false 且 orientation 为 vertical 时输出 |
+| role="none" | decorative 为 true 时显式输出并移除 aria-orientation |
+| data-orientation | 始终输出 horizontal / vertical |
+
+**动效**
+
+没有动效：静态分割组件。
+
+**与 Vue 端差异**
+
+| 项目 | Vue 端 | React 端 |
+| --- | --- | --- |
+| 容器文字 | text-default text-sm | text-muted-foreground text-sm（语义等价） |
+| avatarSize 默认 | 2xs | xs |
+| decorative 处理 | reka-ui 输出 role="none" | 显式输出 role="none" 并移除 aria-orientation（语义一致） |

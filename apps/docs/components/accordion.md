@@ -101,3 +101,49 @@ accordionApi.open(0)    // open(index) / close(index) / toggle(index)，value �
 - expand / collapse：内容区高度展开与收起动画（animate-accordion-down / up）
 - trailingIcon：展开时旋转 180°（transition-transform）
 - 无位移动画
+
+## 设计规格
+
+### 主题 token
+
+**背景**
+
+| 插槽 | token | 值（亮 / 暗） |
+| --- | --- | --- |
+| root · trigger · content | 无背景 token（透明） | — |
+
+**文字**
+
+| 插槽 | token | 值（亮 / 暗） |
+| --- | --- | --- |
+| trigger | font-medium text-sm（无颜色 token，继承上下文） | — |
+| body | text-sm（继承上下文颜色） | — |
+
+**描边**
+
+| 插槽 | token | 值（亮 / 暗） |
+| --- | --- | --- |
+| item | border-b border-default（最后一项无下边框） | #e5e5e5 / #262626 |
+| trigger（focus-visible） | outline-primary/25 · focus-visible:outline-3 | #22c55e |
+
+**圆角与阴影**
+
+| 位置 | 类 | 值 |
+| --- | --- | --- |
+| trigger | rounded-md | 6px（--radius-md） |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- |
+| disabled | trigger 为 cursor-not-allowed + opacity-75 |
+| type=single（默认） | 仅一项展开；collapsible=true（默认）时允许全部收起 |
+| type=multiple | 多项同时展开 |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | reka Accordion 语义：Enter / Space 切换展开状态；ArrowDown / ArrowUp 在 trigger 间移动焦点；Home / End 跳转首尾 |
+| ARIA | trigger 为 role=button + aria-expanded；content 为 role=region + aria-labelledby 指向 trigger；禁用项不可聚焦 |
+| 动效 | content 展开收起 accordion-down / accordion-up 200ms（默认 unmountOnHide=true，关闭后卸载）；trailingIcon 展开时 rotate-180 + duration-200，motion-reduce 时禁用旋转过渡 |

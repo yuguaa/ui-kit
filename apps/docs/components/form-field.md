@@ -118,3 +118,25 @@ npx shadcn-vue@latest add @ui-kit/x-field-group
 ## 动效
 
 无动效：表单容器组件。
+
+## 设计规格
+
+### 主题 token
+
+- 背景：无
+- 文字：label `text-default`（#404040 / 暗色 #e5e5e5）；description、hint、help `text-muted`（#737373 / 暗色 #a3a3a3）；error `text-error`（red 500，#ef4444）；必填星号 `after:text-error`
+- 描边：无
+- 圆角与阴影：无
+- 变体：
+
+| 变体 | 枚举 | token 组合 |
+| --- | --- | --- |
+| size | xs / sm / md / lg / xl | 根字号 `text-xs` / `text-xs` / `text-sm` / `text-sm` / `text-base` |
+| required | true | label 后追加星号：`after:content-['*'] after:ms-0.5 after:text-error` |
+| orientation | vertical / horizontal | vertical：`container: mt-1`；horizontal：`root: flex justify-between place-items-baseline gap-2` |
+
+### 交互
+
+- 键盘：无组件级键盘逻辑；`Label` 以 `for` 关联控件 id，点击标签聚焦控件
+- ARIA：`Label` 输出 `for`；hint / description / error 分别输出 `id="${ariaId}-hint"`、`"${ariaId}-description"`、`"${ariaId}-error"`，由控件侧 `useFormField` 的 `ariaAttrs` 输出 `aria-describedby` 关联；错误区无 `role=alert`
+- 动效：无

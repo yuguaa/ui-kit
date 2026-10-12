@@ -107,3 +107,38 @@ npx shadcn@latest add @ui-kit/x-checkbox
 - 勾选：状态颜色过渡
 - focus：聚焦环过渡
 - 无位移动画
+
+## 设计规格
+
+### 主题 token
+
+| 类别 | 类名 | 对应 Vue 端 token |
+| --- | --- | --- |
+| 背景 | 指示块 `bg-{color}`（选中 / 半选填充） | `indicator: bg-{color}` |
+| 背景 | neutral：`bg-foreground` | `bg-inverted` |
+| 背景 | card 选中：`bg-{color}/10` | 相同（主色 10% 浅色底） |
+| 文字 | `label: text-foreground`；`description: text-muted-foreground` | `text-default` / `text-muted` |
+| 文字 | 指示块内图标 `text-background` | `text-inverted` |
+| 描边 | 未选中 `ring-1 ring-inset ring-input`；聚焦 `focus-visible:ring-3` + `focus-visible:ring-ring/50` | Vue 端为 `ring-accented` + 色板 outline |
+| 描边 | card：`border border-border`，选中 `border-{color}/50` | `border-default` + `border-{color}/50` |
+| 圆角 | base `rounded-sm`（4px）· card `rounded-lg`（8px） | 相同 |
+| 阴影 | 无 | - |
+
+### 变体
+
+| 变体 | token 组合 |
+| --- | --- |
+| list（默认） | 控件与文字并排，无容器描边 |
+| card | `border border-border rounded-lg` + hover `bg-muted/50`，选中 `border-{color}/50` + `bg-{color}/10` |
+
+`highlight: true` 时 base 为 `ring-2 ring-{color}`。尺寸仅 sm / md / lg 三档（Vue 端为 xs ~ xl 五档）。
+
+### 交互
+
+| 类别 | 说明 |
+| --- | --- |
+| 键盘 | base-ui Checkbox 语义：Tab 聚焦，Space 切换 |
+| ARIA | `role=checkbox` + `aria-checked`（含 mixed 半选）；disabled 映射 `aria-disabled` |
+| 动效 | card 变体 `transition-colors`；无位移动画 |
+
+**与 Vue 端差异**：基于 base-ui Checkbox；card 变体根元素为 label（整卡可点击）；无 loading 图标。

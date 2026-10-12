@@ -53,3 +53,33 @@ npx shadcn-vue@latest add @ui-kit/x-skeleton
 ## 动效
 
 - 骨架：脉冲动画（animate-pulse）
+
+## 设计规格
+
+### 主题 token
+
+**背景**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| base | bg-elevated | #f5f5f5（亮）/ #262626（暗） |
+
+**圆角**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| base | rounded-md | --radius-md 6px |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- | --- |
+| 无内建变体 | 形状与尺寸通过 class / ui.base 注入 |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | 无（非交互组件） |
+| ARIA | role="alert" + aria-busy="true" + aria-label="loading" + aria-live="polite"（组件源码显式设置） |
+| 动效 | animate-pulse 脉冲 |

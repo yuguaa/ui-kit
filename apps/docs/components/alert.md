@@ -118,3 +118,57 @@ npx shadcn-vue@latest add @ui-kit/x-alert
 ## 动效
 
 无动效：静态提示组件。关闭按钮的 hover 颜色过渡由 XButton 承担。
+
+## 设计规格
+
+### 主题 token
+
+**背景与文字**
+
+| 变体 | 背景 | 文字 | 值 |
+| --- | --- | --- | --- |
+| solid（color=primary 等） | bg-`<color>` | text-inverted | 语义色 500 级底（如 primary #22c55e）+ 反色字 |
+| outline | 无背景 | text-`<color>` | 语义色文字 |
+| soft | bg-`<color>`/10 | text-`<color>` | 语义色 10% 浅底 |
+| subtle | bg-`<color>`/10 | text-`<color>` | 语义色 10% 浅底 |
+| neutral solid | bg-inverted | text-inverted | #171717 底（亮）+ 反色字 |
+| neutral outline | bg-default | text-highlighted | #ffffff（亮）/ #171717（暗）底 |
+| neutral soft | bg-elevated/50 | text-highlighted | #f5f5f5（亮）/ #262626（暗）50% 底 |
+| neutral subtle | bg-elevated/50 | text-highlighted | 同上 |
+
+**描边**
+
+| 变体 | 类 | 值 |
+| --- | --- | --- |
+| outline / subtle（color=`<color>`） | ring ring-inset ring-`<color>`/25 | 语义色 25% 内描边 |
+| neutral outline | ring ring-inset ring-default | #e5e5e5（亮）/ #262626（暗） |
+| neutral subtle | ring ring-inset ring-accented | #d4d4d4（亮）/ #404040（暗） |
+
+**圆角与阴影**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| root | rounded-lg | --radius-lg 8px |
+| root | 无 shadow | 提示组件无阴影 token |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- | --- |
+| variant=solid | bg-`<color>` text-inverted |
+| variant=outline | text-`<color>` + ring ring-inset ring-`<color>`/25 |
+| variant=soft | bg-`<color>`/10 text-`<color>` |
+| variant=subtle | bg-`<color>`/10 text-`<color>` + ring ring-inset ring-`<color>`/25 |
+| orientation=horizontal | root items-center，actions 与关闭按钮同行 |
+| orientation=vertical | root items-start，actions 在描述下方（mt-2.5） |
+| title=true | description mt-1 |
+
+默认 color primary、variant solid。icon 尺寸 size-5，avatar 尺寸 2xl，actions flex flex-wrap gap-1.5，close p-0。
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | 无内建键盘行为；操作按钮与关闭按钮的 Enter / Space 与焦点样式由 XButton 承担 |
+| ARIA | Vue 端根节点无角色标注（普通 div + data-orientation）；关闭按钮 aria-label 来自 t('alert.close') |
+| 动效 | 无（静态组件） |

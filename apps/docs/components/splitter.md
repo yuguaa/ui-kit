@@ -98,3 +98,37 @@ splitterApi.resize(30)   // size 可读，resize 调整
 
 - 拖拽：即时响应，无过渡动效
 - 折叠 / 展开：即时切换，无过渡动效
+
+## 设计规格
+
+### 主题 token
+
+**背景与描边**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| root | 无背景 / 无描边 | 主题未内建容器样式 |
+| panel | flex | 无背景 token |
+| handle | focus-visible:outline-2 focus-visible:outline-primary | 聚焦轮廓用 primary（#22c55e） |
+
+**圆角与阴影**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| 无圆角 / 无阴影 | - | 主题未内建 |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- | --- |
+| orientation=horizontal | handle w-2 cursor-col-resize |
+| orientation=vertical | handle h-2 cursor-row-resize |
+| disabled=true | handle data-[panel-resize-handle-enabled=false]:cursor-default |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | handle role="separator" tabindex=0（reka-ui 语义）；方向键按 keyboardResizeBy（默认 10）调整相邻面板；Home / End 跳至最小 / 最大（reka-ui Splitter 行为实现确认） |
+| ARIA | handle role="separator" + aria-orientation + data-state（inactive / drag / keyboard）+ data-panel-resize-handle-enabled；panel 无角色 |
+| 动效 | 无过渡（即时响应） |

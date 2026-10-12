@@ -96,3 +96,36 @@ npx shadcn@latest add @ui-kit/x-input-tags
 
 - 容器：focus ring 与颜色过渡
 - 删除按钮：hover 颜色过渡
+
+## 设计规格
+
+### 主题 token
+
+| 类别 | 类名 | 对应 Vue 端 token |
+| --- | --- | --- |
+| 背景 | 容器 `bg-background`（outline）· `bg-muted/50`（soft）· `bg-muted`（subtle） | `bg-default` / `bg-elevated/50` / `bg-elevated` |
+| 背景 | 标签项 `bg-muted` | `bg-elevated` |
+| 文字 | 标签项 `text-foreground`；输入 `placeholder:text-muted-foreground` | `text-default` / `text-dimmed` |
+| 描边 | 容器 `ring-1 ring-inset ring-border`（outline / subtle）；标签项 `ring-1 ring-inset ring-border` | `ring-accented` |
+| 描边 | 聚焦：内部输入聚焦时容器 `has-focus-visible:outline-3` + `has-focus-visible:ring-{color}` | 相同规则 |
+| 圆角 | 容器 `rounded-md`（6px）· 标签项 `rounded-xs`（2px） | 容器相同；Vue 端标签项为 `rounded-sm` |
+| 阴影 | 无 | - |
+
+### 变体
+
+| 变体 | token 组合 |
+| --- | --- |
+| outline（默认） | `bg-background` + `ring-1 ring-inset ring-border` |
+| soft / subtle / ghost / none | 与 XInput 相同组合（focus 前缀改为 has-focus-visible） |
+
+标签项文字 `text-[10px]/3 ~ text-sm`，删除图标 `size-3 ~ size-4`（随尺寸）。
+
+### 交互
+
+| 类别 | 说明 |
+| --- | --- |
+| 键盘 | Enter 添加草稿标签；Backspace 在输入为空时删除最后一项；无方向键标签导航 |
+| ARIA | 内部 input `role=textbox`；删除按钮 `aria-label="close"` |
+| 动效 | 容器与删除按钮 `transition-colors` |
+
+**与 Vue 端差异**：React 端自实现标签管理（Enter / Backspace / blur 提交草稿）；无方向键在标签间移动焦点、无 addOnPaste / addOnTab / delimiter / duplicate 等 reka-ui 能力；重复标签自动忽略。

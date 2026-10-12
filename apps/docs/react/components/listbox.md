@@ -103,3 +103,58 @@ npx shadcn@latest add @ui-kit/x-listbox
 
 - 选项：hover 背景过渡
 - 加载：图标旋转
+
+## 设计规格
+
+React 端基于 Base UI Combobox 的 inline 模式（无弹层，列表内联展示），主题插槽类名与 Vue 端键名一致，token 采用 shadcn 变量 + kit-theme.css 色板。
+
+### 主题 token
+
+**背景**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| root · input | bg-transparent | 与 Vue 端一致（无背景 token） |
+| item（高亮 / 选中） | data-highlighted:bg-accent · data-selected:bg-accent | 对应 before:bg-elevated/50；Vue 端选中项仅显示 check 图标无背景，差异注明 |
+
+**文字**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| item | text-foreground | 对应 text-default |
+| item（高亮 / 选中） | data-highlighted:text-accent-foreground · data-selected:text-accent-foreground | 对应 text-highlighted |
+| itemLeadingIcon · empty · loading | text-muted-foreground | 对应 text-dimmed / text-muted |
+| label（分组标题） | text-foreground | 对应 text-highlighted |
+
+**描边**
+
+| 插槽 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| root | ring-1 ring-inset ring-input | 对应 ring ring-inset ring-default（shadcn --input：亮 oklch(0.922 0 0)，暗 oklch(1 0 0 / 15%)） |
+| root（highlight=true） | ring-2 ring-primary | 对应 ring ring-inset ring-primary |
+| input | border-b border-border | 对应 border-b border-default |
+| separator | bg-border | 与 Vue 端一致 |
+
+**圆角与阴影**
+
+| 位置 | 类 | 与 Vue 端对应 |
+| --- | --- | --- |
+| root | rounded-lg | 8px，与 Vue 端同值 |
+| item | rounded-md | 6px，与 Vue 端同值 |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- |
+| color（primary 等七色） | highlight=true 时 ring-2 ring-primary |
+| color（neutral） | highlight=true 时 ring-2 ring-foreground/30 |
+| disabled | opacity-75 + cursor-not-allowed |
+| highlight | ring-2 + 对应颜色（常驻描边） |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | Base UI Combobox inline 语义，与 Vue 端 reka Listbox 一致：ArrowDown / ArrowUp 在选项间移动，Enter 选择，Home / End 跳转首尾，字母键高亮匹配项；输入框过滤选项，Esc 清除过滤词 |
+| ARIA | 与 Vue 端一致：选项 role=option + aria-selected；data-highlighted 表示高亮项，data-selected 表示选中项 |
+| 动效 | item 无 transition 类（Vue 端为 transition-colors，差异注明）；loadingIcon 为 animate-spin；列表为内联布局，无面板进出场动画 |

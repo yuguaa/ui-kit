@@ -74,3 +74,52 @@ npx shadcn@latest add @ui-kit/x-slider
 - 拖动：即时响应
 - thumb：hover / focus 聚焦环过渡
 - tooltip：淡入缩放过渡
+
+## 设计规格
+
+### 主题 token
+
+**背景与描边**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| track | bg-muted | shadcn 变量，对应 Vue bg-accented |
+| range（color=`<color>`） | bg-`<color>` | 语义色底（如 primary） |
+| range（neutral） | bg-foreground | 对应 Vue bg-inverted |
+| thumb | bg-background + ring-2 | 对应 Vue bg-default + ring-2 |
+| thumb（color=`<color>`） | ring-`<color>` outline-`<color>`/25 | 环与聚焦轮廓用语义色，轮廓 25% 透明度 |
+| thumb（neutral） | ring-foreground outline-foreground/25 | 对应 Vue ring-inverted |
+
+**圆角**
+
+| 插槽 | 类 | 值 |
+| --- | --- | --- |
+| track / range / thumb | rounded-full | 胶囊形 |
+
+**变体**
+
+| 变体 | token 组合 |
+| --- | --- | --- |
+| size | thumb 尺寸 xs size-3 → xl size-5；track 粗细水平 h-[6px] → h-[10px]、垂直 w-[6px] → w-[10px] |
+| orientation=horizontal | root w-full |
+| orientation=vertical | root flex-col h-full |
+| disabled=true | root opacity-75 cursor-not-allowed |
+
+默认 size md、color primary。
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | thumb 可聚焦（Base UI Slider 语义）；方向键按 step 增减；Home / End 跳至最小 / 最大值；PageUp / PageDown 按 step×10 增减；minStepsBetweenThumbs 映射为 minStepsBetweenValues |
+| ARIA | Thumb 由 Base UI Slider 渲染 role="slider" + aria-valuemin / aria-valuemax / aria-valuenow；aria-label 显式设置为 'Thumb'（多 thumb 为 'Thumb n'）；其余 aria-* 透传（继承 Base UI Slider 语义） |
+| 动效 | 无过渡（值实时跟随）；focus-visible 显示 outline-3 聚焦环 |
+
+**双端差异**
+
+| 项 | Vue | React |
+| --- | --- | --- |
+| track 底色 | bg-accented（#e5e5e5 / #404040） | bg-muted（#fafafa / #262626） |
+| 键盘 PageUp / PageDown | 不支持 | 支持（step×10，Base UI 语义） |
+| 多 thumb 标签 | reka 自动生成 'Minimum' / 'Maximum' | 固定 'Thumb n' |
+| 根元素角色 | 多 thumb 且有标签时为 role="group" | 无（Base UI 内部管理） |

@@ -53,3 +53,52 @@ npx shadcn@latest add @ui-kit/x-icon
 ## 动效
 
 无动效：静态展示组件。
+
+## 设计规格
+
+### 主题 token
+
+| 项目 | 类名 | 说明 |
+| --- | --- | --- |
+| 背景 | 不使用 | 没有背景 token |
+| 文字 | 继承 currentColor | color prop 输出内联 style |
+| 描边 | 不使用 | 没有描边 token |
+| 圆角 | 不使用 | 没有圆角 |
+| 阴影 | 不使用 | 没有阴影 |
+
+**尺寸**
+
+| 类 | 值 | 说明 |
+| --- | --- | --- |
+| size | xs / sm / md / lg / xl | size-3 / size-4 / size-5 / size-6 / size-7；默认 md |
+
+**图标命名**
+
+固定 `iconMap` 集合（40 余个 kebab-case 名，如 `circle-alert` → lucide `CircleAlert`）；未收录的名字返回 null 不渲染。`mode="css"` 输出 `i-lucide-{name}` CSS 类名 span。
+
+### 交互
+
+**键盘**
+
+| 行为 | 说明 |
+| --- | --- |
+| 焦点 | 静态 SVG，没有可聚焦行为 |
+
+**ARIA**
+
+| 属性 | 说明 |
+| --- | --- |
+| aria-hidden="true" | css 模式输出；svg 模式未输出，装饰性图标需由使用方设置 |
+
+**动效**
+
+没有动效：静态展示组件。
+
+**与 Vue 端差异**
+
+| 项目 | Vue 端 | React 端 |
+| --- | --- | --- |
+| 图标集合 | @lucide/vue 全量映射 | 固定 iconMap |
+| 默认尺寸 | 没有 | size 五档 |
+| mode="css" | 声明但未参与渲染 | 输出 CSS 类名 span |
+| customize | 声明但未参与渲染 | 渲染后回调修改 svg |

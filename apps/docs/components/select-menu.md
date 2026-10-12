@@ -87,3 +87,67 @@ npx shadcn-vue@latest add @ui-kit/x-select-menu
 
 - 弹层：淡入 + 缩放进出场（scale 0.95，100ms）
 - 触发按钮：focus ring 过渡
+
+## 设计规格
+
+### 主题 token
+
+**背景**
+
+| 插槽 | token | 值（亮 / 暗） |
+| --- | --- | --- |
+| content | bg-default | #ffffff / #171717 |
+| item（高亮） | before:bg-elevated/50 | #f5f5f5 / #262626，50% 透明 |
+| base（outline 变体） | bg-default | #ffffff / #171717 |
+| base（soft 变体） | bg-elevated/50 | #f5f5f5 / #262626，50% 透明 |
+| base（subtle 变体） | bg-elevated | #f5f5f5 / #262626 |
+| base（ghost / none 变体） | bg-transparent | 透明 |
+| arrow | fill-bg | 同 bg-default |
+
+**文字**
+
+| 插槽 | token | 值（亮 / 暗） |
+| --- | --- | --- |
+| base / value | text-highlighted | #171717 / #ffffff |
+| placeholder | text-dimmed | #a3a3a3 / #a3a3a3 |
+| item | text-default | #404040 / #e5e5e5 |
+| item（高亮） | text-highlighted | #171717 / #ffffff |
+| itemLeadingIcon | text-dimmed，高亮时 text-default | #a3a3a3 / #404040 |
+| itemDescription · empty | text-muted | #737373 / #a3a3a3 |
+| label（分组标题） | text-highlighted | #171717 / #ffffff |
+
+**描边**
+
+| 插槽 | token | 值（亮 / 暗） |
+| --- | --- | --- |
+| content | ring ring-default | #e5e5e5 / #262626 |
+| input（菜单内搜索框） | border-b border-default | #e5e5e5 / #262626 |
+| base（outline / subtle 变体） | ring-inset ring-accented | #d4d4d4 / #404040 |
+| base（focus-visible） | outline-primary/25 · focus-visible:ring-primary | #22c55e |
+| separator | bg-border | 同 border-default |
+| arrow | stroke-default | 同 border-default |
+
+**圆角与阴影**
+
+| 位置 | 类 | 值 |
+| --- | --- | --- |
+| base · content · item 高亮层 | rounded-md | 6px（--radius-md） |
+| content | shadow-lg | Tailwind 默认 shadow-lg |
+
+**变体**（触发按钮 base，color 仅影响 focus-visible 描边颜色）
+
+| 变体 | token 组合 |
+| --- | --- |
+| outline（默认） | text-highlighted + bg-default + ring-accented，hover:bg-elevated |
+| soft | text-highlighted + bg-elevated/50，hover / focus 时 bg-elevated |
+| subtle | text-highlighted + bg-elevated + ring-accented，hover:bg-accented/75 |
+| ghost | text-highlighted + bg-transparent，hover / focus 时 bg-elevated |
+| none | text-highlighted + bg-transparent |
+
+### 交互
+
+| 维度 | 行为 |
+| --- | --- |
+| 键盘 | 焦点在触发按钮上时 ArrowDown / ArrowUp 打开菜单；打开后 FocusScope 将焦点移入搜索输入框（searchInput.autofocus=false 时关闭）；reka Combobox 语义：输入即过滤，ArrowDown / ArrowUp 在选项间移动，Enter 选择，Esc 关闭并恢复输入值 |
+| ARIA | 搜索输入框 role=combobox + aria-expanded + aria-controls；选项 role=option + aria-selected；data-highlighted 表示当前高亮项，data-disabled 表示禁用项 |
+| 动效 | content 进出场 scale-in / scale-out 100ms（position=popper，默认）；base 与 item 均为 transition-colors；loading 时尾部图标 animate-spin |

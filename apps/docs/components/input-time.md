@@ -106,3 +106,34 @@ npx shadcn-vue@latest add @ui-kit/x-input-time
 
 - 弹层：淡入 + 缩放进出场（scale 0.95，100ms）
 - 容器：focus ring 过渡
+
+## 设计规格
+
+### 主题 token
+
+| 类别 | 类名 | 值（亮色 / 暗色） |
+| --- | --- | --- |
+| 背景 | 容器继承 Input 变体：`bg-default`（outline）· `bg-elevated/50`（soft）· `bg-elevated`（subtle） | #ffffff / #171717；#f5f5f5 / #262626 |
+| 背景 | 分段聚焦：outline / none 为 `focus:bg-elevated`，soft 为 `focus:bg-accented/50`，subtle 为 `focus:bg-accented` | #f5f5f5 / #262626；#e5e5e5 / #404040 |
+| 文字 | 容器 `text-highlighted`；占位分段 `data-placeholder:text-dimmed`；字面分段 `data-[segment=literal]:text-muted` | #171717 / #ffffff；#a3a3a3；#737373 / #a3a3a3 |
+| 文字 | 非法值 `data-invalid:text-error` | #ef4444 / #f87171 |
+| 描边 | 容器 `ring ring-inset ring-accented`（outline / subtle）；聚焦 `has-focus-visible` 时 `outline-{color}/25` + `ring-{color}` | #d4d4d4 / #404040；primary #22c55e |
+| 圆角 | 容器 `rounded-md`（6px）· 分段 `rounded-sm`（4px） | --radius-md / sm |
+| 阴影 | 无 | - |
+
+分段宽度按语义调整：非字面分段为 `w-8 ~ w-10`（随尺寸档位）。
+
+### 变体
+
+| 变体 | token 组合 |
+| --- | --- |
+| outline（默认） | `text-highlighted` + `bg-default` + `ring ring-inset ring-accented` |
+| soft / subtle / ghost / none | 与 Input 相同组合（见 Input 设计规格），分段聚焦背景见上表 |
+
+### 交互
+
+| 类别 | 说明 |
+| --- | --- |
+| 键盘 | reka-ui TimeField 语义：方向键在时 / 分 / 秒分段间移动并增减数值，数字键直接输入，Enter 提交；range 模式包含起止两组 |
+| ARIA | root `role=group`；每个分段为独立 input，由 reka-ui 提供分段级 aria-label |
+| 动效 | 容器与分段 `transition-colors` |
