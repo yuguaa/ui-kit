@@ -715,7 +715,7 @@ function copyConvertedInfra(rel: string, outDir: string) {
   writeFileSync(out, convertInfra(readFileSync(src, "utf8")));
 }
 
-function main() {
+async function main() {
   rmSync(OUT_BASE, { recursive: true, force: true });
   mkdirSync(OUT_BASE, { recursive: true });
 
@@ -744,6 +744,38 @@ function main() {
   }
   for (const rel of readdirSync(NUXT_THEME_SRC).filter((f) => f.includes("."))) {
     copyConverted(rel, join(OUT_BASE, "theme"), NUXT_THEME_SRC);
+  }
+  /* theme 展开：函数型主题在生成时执行（与 Nuxt build 相同的展开时机），
+   * 模板字符串中的 ${color} 替换为字面量色名类，保证 Tailwind 扫描器能提取 bg-primary 等动态类 */
+  for (const rel of readdirSync(join(OUT_BASE, "theme")).filter((f) => f.endsWith(".ts"))) {
+    try {
+      const themePath = join(OUT_BASE, "theme", rel);
+      const mod = await import(themePath);
+      const theme = mod.default;
+      if (typeof theme !== "function") continue;
+      /* 内联构造与 module-options.ts 一致的默认配置 */
+      const themeOptions = {
+        prefix: "U",
+        fonts: false,
+        colorMode: true,
+        prose: false,
+        content: false,
+        mdc: false,
+        theme: {
+          colors: ["primary", "secondary", "success", "info", "warning", "error"],
+          transitions: true,
+          unstyled: false,
+          prefix: "",
+        },
+      };
+      const result = theme(themeOptions);
+      /* 值必须可序列化（字符串/对象），含函数值的主题保持原样 */
+      const json = JSON.stringify(result);
+      if (json === undefined) continue;
+      writeFileSync(themePath, `export default ${json}\n`);
+    } catch (error) {
+      console.log(`[theme-expand] ${rel} 展开失败: ${String(error).slice(0, 300)}`);
+    }
   }
   for (const rel of readdirSync(join(NUXT_SRC, "locale")).filter((f) => f.includes("."))) {
     copyConvertedInfra(join("locale", rel), OUT_BASE);
@@ -976,14 +1008,11 @@ function navigate(event: MouseEvent) {
     .map((f) => f.slice(0, -3));
   mkdirSync(join(OUT_BASE, "ui"), { recursive: true });
   for (const name of themeNames) {
-    const themeSrc = readFileSync(join(NUXT_THEME_SRC, `${name}.ts`), "utf8");
-    /* 对象型主题直接 extend；函数型主题以固定 moduleOptions 调用 */
-    const extendExpr = themeSrc.includes("ModuleOptions") ? "theme(moduleOptions)" : "theme";
+    /* 函数型主题已在展开步骤求值为对象，统一以对象形态 extend */
     writeFileSync(join(OUT_BASE, "ui", `${name}.ts`), `import theme from '../theme/${name}'
-import { moduleOptions } from '../module-options'
 import { tv } from '../utils/tv'
 
-export default tv({ extend: ${extendExpr} })
+export default tv({ extend: theme })
 `);
   }
 
@@ -1552,7 +1581,10 @@ defineSlots<{
   }
 }
 
-main();
+main().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
 
 /** 剩余组件类型补丁（agent 4 分组：其余全部组件）
  * 目前仅 XTable 残留：上游 table-link-nav 补丁的全局替换把
