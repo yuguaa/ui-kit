@@ -32,25 +32,36 @@
   /* Nuxt UI 前缀分离 token：bg-default 与 text-default 映射不同变量（templates.ts 的映射） */
   --text-color-default: var(--text-default);
   --text-color-dimmed: var(--text-dimmed);
+  --text-color-muted: var(--text-muted);
   --text-color-toned: var(--text-toned);
   --text-color-highlighted: var(--text-highlighted);
   --text-color-inverted: var(--text-inverted);
   --background-color-default: var(--bg-default);
+  --background-color-muted: var(--bg-muted);
   --background-color-elevated: var(--bg-elevated);
   --background-color-accented: var(--bg-accented);
   --background-color-inverted: var(--bg-inverted);
+  --background-color-border: var(--border-default);
   --border-color-default: var(--border-default);
   --border-color-muted: var(--border-muted);
   --border-color-accented: var(--border-accented);
   --border-color-inverted: var(--border-inverted);
+  --border-color-bg: var(--bg-default);
   --ring-color-default: var(--border-default);
   --ring-color-muted: var(--border-muted);
   --ring-color-accented: var(--border-accented);
   --ring-color-inverted: var(--border-inverted);
+  --ring-color-bg: var(--bg-default);
+  --ring-offset-color-default: var(--border-default);
+  --ring-offset-color-muted: var(--border-muted);
+  --ring-offset-color-accented: var(--border-accented);
+  --ring-offset-color-inverted: var(--border-inverted);
+  --ring-offset-color-bg: var(--bg-default);
   --divide-color-default: var(--border-default);
   --divide-color-muted: var(--border-muted);
   --divide-color-accented: var(--border-accented);
   --divide-color-inverted: var(--border-inverted);
+  --divide-color-bg: var(--bg-default);
   --outline-color-default: var(--border-default);
   --outline-color-inverted: var(--border-inverted);
   --stroke-bg: var(--bg-default);
@@ -83,10 +94,12 @@
   /* Nuxt UI 中性色 token（亮色）：bg- 与 text- 前缀分离（templates.ts 与 index.css 的移植对应） */
   --text-default: #404040;
   --text-dimmed: #a3a3a3;
+  --text-muted: #737373;
   --text-toned: #525252;
   --text-highlighted: #171717;
   --text-inverted: #ffffff;
   --bg-default: #ffffff;
+  --bg-muted: #fafafa;
   --bg-elevated: #f5f5f5;
   --bg-accented: #e5e5e5;
   --bg-inverted: #171717;
@@ -120,10 +133,12 @@
   /* Nuxt UI 中性色 token（dark）：bg- 与 text- 前缀分离 */
   --text-default: #e5e5e5;
   --text-dimmed: #a3a3a3;
+  --text-muted: #a3a3a3;
   --text-toned: #d4d4d4;
   --text-highlighted: #ffffff;
   --text-inverted: #171717;
   --bg-default: #171717;
+  --bg-muted: #262626;
   --bg-elevated: #262626;
   --bg-accented: #404040;
   --bg-inverted: #ffffff;

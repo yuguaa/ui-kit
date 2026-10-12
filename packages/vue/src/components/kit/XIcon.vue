@@ -22,7 +22,8 @@ const props = defineProps<IconProps>()
 /** 'i-lucide-check' / 'check' → 'Check' */
 const lucideName = computed<string | null>(() => {
   if (typeof props.name !== 'string') return null
-  const raw = props.name.startsWith('i-') ? props.name.slice(2).replace(/^[a-z-]+-/, '') : props.name
+  /* 只去掉 'i-lucide-' 前缀段，保留连字符图标名（chevrons-left 等） */
+  const raw = props.name.startsWith('i-') ? props.name.slice(2).replace(/^[a-z]+-/, '') : props.name
   return raw
     .split('-')
     .filter(Boolean)
