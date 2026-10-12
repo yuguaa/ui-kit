@@ -284,9 +284,13 @@ const splitterItems = [
         <div class="flex flex-col gap-3 rounded-lg border border-default bg-default p-5">
           <h3 class="text-sm font-medium text-muted-foreground">XChip</h3>
           <div class="flex flex-wrap items-center gap-3">
-            <XChip standalone text="primary" />
-            <XChip standalone color="success" text="success" />
-            <XChip standalone color="error" closable text="error" />
+            <div class="relative inline-flex">
+              <XAvatar src="https://github.com/nuxt-ui.png" alt="avatar" />
+              <XChip />
+            </div>
+            <XChip standalone size="3xl" text="primary" />
+            <XChip standalone color="success" size="3xl" text="success" />
+            <XChip standalone color="error" closable size="3xl" text="error" />
           </div>
         </div>
 
@@ -724,7 +728,7 @@ const splitterItems = [
 
         <div class="flex flex-col gap-3 rounded-lg border border-default bg-default p-5">
           <h3 class="text-sm font-medium text-muted-foreground">XScrollArea</h3>
-          <XScrollArea :items="scrollItems" :height="140" class="rounded-md border border-default p-3">
+          <XScrollArea :items="scrollItems" class="h-[140px] rounded-md border border-default p-3">
             <template #default="{ item }">
               <div class="py-1 text-sm">{{ item.text }}</div>
             </template>
