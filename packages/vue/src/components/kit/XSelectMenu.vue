@@ -403,7 +403,12 @@ const searchTerm = defineModel<string>('searchTerm', { default: '' })
 const { t } = useLocale()
 const appConfig = useAppConfig() as SelectMenu['AppConfig']
 const { filterGroups } = useFilter()
-const rootProps = useForwardProps(reactivePick(props, 'modelValue', 'defaultValue', 'open', 'defaultOpen', 'required', 'multiple', 'resetSearchTermOnBlur', 'resetSearchTermOnSelect', 'resetModelValueOnClear', 'highlightOnHover', 'by'), emits)
+const rootProps = useForwardProps(reactivePick(props, 'modelValue', 'defaultValue', 'defaultOpen', 'required', 'multiple', 'resetSearchTermOnBlur', 'resetSearchTermOnSelect', 'resetModelValueOnClear', 'highlightOnHover', 'by'), emits)
+/* 受控 open：props.open 优先，否则以本地 isOpen 为唯一开关（外部点击与 Esc 的显式接管依赖此状态） */
+const controlledOpen = computed({
+  get: () => (props.open !== undefined ? props.open : isOpen.value),
+  set: (value: boolean) => onUpdateOpen(value),
+})
 const portalProps = usePortal(toRef(() => props.portal))
 const contentProps = toRef(() => defu(props.content, { side: 'bottom', sideOffset: 8, collisionPadding: 8, position: 'popper' }) as ComboboxContentProps)
 const arrowProps = toRef(() => defu(props.arrow, { rounded: true }) as ComboboxArrowProps)
@@ -585,10 +590,39 @@ function onUpdate(value: any) {
   }
 }
 
-const isOpen = ref(false)
+const isOpen = ref(props.defaultOpen ?? false)
 let timeoutId: ReturnType<typeof setTimeout> | undefined
 
 onScopeDispose(() => clearTimeout(timeoutId))
+
+/* 显式接管外部点击与 Esc 关闭：reka 的 dismissableLayer 在部分环境（jsdom / 特定浏览器）失效，
+ * 这里按同一语义补齐：点击触发器与浮层外部时关闭，Esc 关闭 */
+function onDocumentPointerDown(event: PointerEvent) {
+  if (!isOpen.value) return
+  const rootEl = (comboboxRootRef.value as { $el?: HTMLElement } | undefined)?.$el
+  const target = event.target as Node | null
+  if (!target) return
+  if (rootEl?.contains(target)) return
+  /* 浮层经 portal 渲染到 body，点击浮层内部不关闭 */
+  const layer = (target as Element).closest?.("[data-dismissable-layer]") as Element | null
+  if (layer) return
+  onUpdateOpen(false)
+}
+
+function onDocumentKeydown(event: KeyboardEvent) {
+  if (!isOpen.value || event.key !== 'Escape') return
+  onUpdateOpen(false)
+}
+
+onMounted(() => {
+  document.addEventListener('pointerdown', onDocumentPointerDown, true)
+  document.addEventListener('keydown', onDocumentKeydown, true)
+})
+
+onScopeDispose(() => {
+  document.removeEventListener('pointerdown', onDocumentPointerDown, true)
+  document.removeEventListener('keydown', onDocumentKeydown, true)
+})
 
 function onUpdateOpen(value: boolean) {
   isOpen.value = value
@@ -776,6 +810,7 @@ defineExpose({
     ref="comboboxRootRef"
     v-slot="{ modelValue, open }"
     v-bind="(rootProps as any)"
+    :open="controlledOpen"
     ignore-filter
     as-child
     :name="name"
