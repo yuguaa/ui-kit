@@ -7,16 +7,25 @@
  * 用法：AB=<agent-browser路径> node scripts/check-demo-render.mjs [baseUrl]
  */
 import { execSync } from "node:child_process";
-import { mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 
-const AB = process.env.AB || "/opt/homebrew/Cellar/agent-browser/0.38.2/libexec/lib/node_modules/agent-browser/bin/agent-browser-darwin-arm64";
+const AB = process.env.AB;
+if (!AB) {
+  console.error("缺少 AB 环境变量：请设置 agent-browser 可执行文件路径（AB=/path/to/agent-browser）");
+  process.exit(1);
+}
+if (!existsSync(AB)) {
+  console.error(`AB 指向的路径不存在或不可执行: ${AB}`);
+  process.exit(1);
+}
 const BASE = process.argv[2] || "http://localhost:5182";
 const ROOT = process.cwd();
 
 function declaredDemos(mdFile) {
   const content = readFileSync(mdFile, "utf8");
-  return (content.match(/<DemoBlock\b/g) || []).length;
+  /* DemoBlock（旧用法）与 DemoPreview（vben 式插件）都计入声明数 */
+  return ((content.match(/<DemoBlock\b/g) || []).length) + ((content.match(/<DemoPreview\b/g) || []).length);
 }
 
 function measure(url) {
@@ -60,3 +69,5 @@ const outPath = join(ROOT, "scratch/browser/demo-render-report.json");
 mkdirSync(dirname(outPath), { recursive: true });
 writeFileSync(outPath, JSON.stringify({ total: report.length, fails, all: report }, null, 2));
 console.log(`\n总计 ${report.length} 页,失败 ${fails.length} 页`);
+/* 失败时非零退出码，可作为 CI 门禁 */
+if (fails.length > 0) process.exitCode = 1;
