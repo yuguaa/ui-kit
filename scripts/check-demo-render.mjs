@@ -7,8 +7,8 @@
  * 用法：AB=<agent-browser路径> node scripts/check-demo-render.mjs [baseUrl]
  */
 import { execSync } from "node:child_process";
-import { readFileSync, readdirSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { dirname, join } from "node:path";
 
 const AB = process.env.AB || "/opt/homebrew/Cellar/agent-browser/0.38.2/libexec/lib/node_modules/agent-browser/bin/agent-browser-darwin-arm64";
 const BASE = process.argv[2] || "http://localhost:5182";
@@ -56,5 +56,7 @@ for (const suite of suites) {
 }
 
 const fails = report.filter((r) => r.status === "FAIL");
-writeFileSync(join(ROOT, "scratch/browser/demo-render-report.json"), JSON.stringify({ total: report.length, fails, all: report }, null, 2));
+const outPath = join(ROOT, "scratch/browser/demo-render-report.json");
+mkdirSync(dirname(outPath), { recursive: true });
+writeFileSync(outPath, JSON.stringify({ total: report.length, fails, all: report }, null, 2));
 console.log(`\n总计 ${report.length} 页,失败 ${fails.length} 页`);

@@ -3,8 +3,8 @@
  * 与 custom.css 的 @theme 映射对比，自动发现缺失的 token 定义。
  * 用法：node scripts/check-theme-tokens.mjs
  */
-import { readFileSync, readdirSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { dirname, join } from "node:path";
 
 const ROOT = process.cwd();
 const THEME_DIR = join(ROOT, "packages/vue/src/lib/nuxt/theme");
@@ -23,6 +23,13 @@ const css = readFileSync(CUSTOM_CSS, "utf8");
 const defined = new Set();
 for (const match of css.matchAll(/--(?:color-)?([a-z][a-z0-9-]*):/g)) defined.add(match[1]);
 for (const match of css.matchAll(/--color-([a-z][a-z0-9-]*):/g)) defined.add(match[1]);
+/* 前缀分离 token（text-default/bg-default 等）的 bare 名视为已覆盖 */
+for (const prefix of ["text", "bg", "background", "border", "ring", "ring-offset", "divide", "outline", "stroke", "fill"]) {
+  for (const base of ["default", "muted", "elevated", "accented", "inverted", "dimmed", "toned", "highlighted", "bg"]) {
+    const composed = `${prefix}-${base}`;
+    if (defined.has(composed)) defined.add(base);
+  }
+}
 
 /* Tailwind 内置色阶 token 白名单 */
 const builtins = new Set(["red", "orange", "amber", "yellow", "lime", "green", "emerald", "teal", "cyan", "sky", "blue", "indigo", "violet", "purple", "fuchsia", "pink", "rose", "slate", "gray", "zinc", "stone", "neutral", "white", "black", "transparent", "current", "inherit", "b", "e", "s", "t", "x", "y", "r", "l", "balance", "base", "bg", "bottom", "center", "collapse", "dashed", "dotted", "end", "hidden", "inset", "left", "lg", "menu", "none", "pretty", "right", "separate", "sm", "solid", "start", "top", "wrap", "xl", "xs"]);
@@ -40,6 +47,7 @@ for (const cls of used) {
 
 const list = [...missing].sort();
 const out = join(ROOT, "scratch/browser/theme-token-report.txt");
+mkdirSync(dirname(out), { recursive: true });
 writeFileSync(out, list.join("\n"));
 console.log(`主题类扫描: ${used.size} 个引用,缺失 token ${list.length} 个 → ${out}`);
 if (list.length) console.log(list.join(", "));

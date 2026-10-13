@@ -7,7 +7,11 @@
  */
 import { execSync } from "node:child_process";
 
-const AB = process.env.AB || "/opt/homebrew/Cellar/agent-browser/0.38.2/libexec/lib/node_modules/agent-browser/bin/agent-browser-darwin-arm64";
+const AB = process.env.AB;
+if (!AB) {
+  console.error("缺少 AB 环境变量：请设置 agent-browser 可执行文件路径（AB=/path/to/agent-browser）");
+  process.exit(1);
+}
 const BASE = process.argv[2] || "http://localhost:5182";
 
 /* 检测页：dropdown 面板是深浅色最典型的验证对象 */
@@ -47,5 +51,7 @@ for (const check of CHECKS) {
   const darkBg = dark.bg ?? "";
   const lightOk = lightBg.startsWith("rgb(255, 255, 255)");
   const darkOk = darkBg !== "" && !darkBg.startsWith("rgb(255, 255, 255)");
+  const ok = lightOk && darkOk;
   console.log(`${check.page}: 亮色=${lightBg} ${lightOk ? "OK" : "FAIL"} | 暗色=${darkBg} ${darkOk ? "OK" : "FAIL"}`);
+  if (!ok) process.exitCode = 1;
 }

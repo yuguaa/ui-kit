@@ -2,8 +2,8 @@
  * React 与 Vue 组件 API 对齐审计：对比双方生成 API 表的 props 名称集合。
  * 输出每组件：Vue 有 React 缺、React 有 Vue 缺、双方共有（kebab/camel 归一后比较）。
  */
-import { readFileSync, readdirSync, writeFileSync } from "node:fs";
-import { join } from "node:path";
+import { mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { dirname, join } from "node:path";
 
 const ROOT = process.cwd();
 const VUE_DIR = join(ROOT, "apps/docs/components/api");
@@ -82,5 +82,6 @@ for (const item of report) {
   lines.push("");
 }
 const out = join(ROOT, "scratch/audit/react-parity.md");
+mkdirSync(dirname(out), { recursive: true });
 writeFileSync(out, lines.join("\n"));
 console.log(`parity report: ${report.length} 个组件有差异，Vue 有 React 缺共 ${missingTotal} 个 props → ${out}`);
