@@ -181,6 +181,12 @@ import XInput from './XInput.vue'
 defineOptions({ inheritAttrs: false })
 
 const _props = withDefaults(defineProps<{
+  overscan?: any;
+  estimateSize?: any;
+  by?: any;
+  highlightOnHover?: any;
+  orientation?: any;
+  selectionBehavior?: any;
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'

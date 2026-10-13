@@ -262,6 +262,8 @@ import XChip from './XChip.vue'
 defineOptions({ inheritAttrs: false })
 
 const _props = withDefaults(defineProps<{
+  overscan?: any;
+  estimateSize?: any;
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'

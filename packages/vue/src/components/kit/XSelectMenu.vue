@@ -258,6 +258,8 @@ import XInput from './XInput.vue'
 defineOptions({ inheritAttrs: false })
 
 const _props = withDefaults(defineProps<{
+  overscan?: any;
+  estimateSize?: any;
   /** The placeholder text when the select is empty. */
   id?: any;
   /**

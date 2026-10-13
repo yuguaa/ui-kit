@@ -1059,6 +1059,7 @@ export default tv({ extend: theme })
   applyInputAuxTypePatches();
   applyFinalTypePatches();
   applyInteractionPatches();
+  applySpecParityPatches();
 
   console.log(`nuxt-base generated: ${themeNames.length} themes, ${COMPONENTS.length} components`);
 }
@@ -2031,6 +2032,30 @@ function applyFinalTypePatches() {
  * - XSelectMenu：open 受控化 + document 指针/键盘监听
  * - XModal：Esc 与遮罩点击接管
  */
+function applySpecParityPatches() {
+  const patch = (file: string, replacements: Array<[string, string]>) => {
+    const path = join(OUT_KIT, file);
+    let content = readFileSync(path, "utf8");
+    for (const [from, to] of replacements) {
+      if (!content.includes(from)) continue;
+      content = content.replace(from, to);
+    }
+    writeFileSync(path, content);
+  };
+
+  /* 组件规格回归报告（check-component-spec）发现 Nuxt interface 有而生成产物缺失的 props，
+   * 全部以宽松类型补齐到 defineProps 内联声明体（类型层；运行时由 useForwardProps 透传） */
+  patch("XCommandPalette.vue", [["const _props = withDefaults(defineProps<{", "const _props = withDefaults(defineProps<{\n  overscan?: any;\n  estimateSize?: any;\n  highlightOnHover?: any;\n  selectionBehavior?: any;\n  by?: any;\n  loadingIcon?: any;"]]);
+  patch("XInputMenu.vue", [["const _props = withDefaults(defineProps<{", "const _props = withDefaults(defineProps<{\n  overscan?: any;\n  estimateSize?: any;"]]);
+  patch("XSelectMenu.vue", [["const _props = withDefaults(defineProps<{", "const _props = withDefaults(defineProps<{\n  overscan?: any;\n  estimateSize?: any;"]]);
+  patch("XListbox.vue", [["const _props = withDefaults(defineProps<{", "const _props = withDefaults(defineProps<{\n  overscan?: any;\n  estimateSize?: any;\n  by?: any;\n  highlightOnHover?: any;\n  orientation?: any;\n  selectionBehavior?: any;"]]);
+  patch("XInputNumber.vue", [["const _props = withDefaults(defineProps<{", "const _props = withDefaults(defineProps<{\n  optional?: any;\n  stepSnapping?: any;\n  formatOptions?: any;\n  disableWheelChange?: any;\n  invertWheelChange?: any;\n  focusOnChange?: any;\n  locale?: any;"]]);
+  patch("XNavigationMenu.vue", [["const _props = withDefaults(defineProps<{", "const _props = withDefaults(defineProps<{\n  delayDuration?: any;\n  disableClickTrigger?: any;\n  disableHoverTrigger?: any;\n  skipDelayDuration?: any;\n  disablePointerLeaveClose?: any;\n  unmountOnHide?: any;\n  collapsible?: any;"]]);
+  patch("XSplitter.vue", [["const _props = withDefaults(defineProps<{", "const _props = withDefaults(defineProps<{\n  autoSaveId?: any;\n  keyboardResizeBy?: any;\n  storage?: any;\n  hitAreaMargins?: any;"]]);
+  patch("XFileUpload.vue", [["  accept?: any;", "  formaction?: any;\n  formenctype?: any;\n  formmethod?: any;\n  formnovalidate?: any;\n  formtarget?: any;\n  accept?: any;"]]);
+  patch("XLink.vue", [["  class?: any;", "  class?: any;\n  visibility?: any;\n  interaction?: any;"]]);
+  patch("XSplitter.vue", [["  class?: any\n", "  class?: any;\n  autoSaveId?: any;\n  keyboardResizeBy?: any;\n  storage?: any;\n  hitAreaMargins?: any;\n"]]);
+}
 function applyInteractionPatches() {
   const selectPath = join(OUT_KIT, "XSelectMenu.vue");
   {

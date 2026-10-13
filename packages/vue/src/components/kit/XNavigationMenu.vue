@@ -253,6 +253,13 @@ import XTooltip from './XTooltip.vue'
 defineOptions({ inheritAttrs: false })
 
 const _props = withDefaults(defineProps<{
+  delayDuration?: any;
+  disableClickTrigger?: any;
+  disableHoverTrigger?: any;
+  skipDelayDuration?: any;
+  disablePointerLeaveClose?: any;
+  unmountOnHide?: any;
+  collapsible?: any;
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'

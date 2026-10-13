@@ -103,6 +103,8 @@ export interface LinkProps {
   noPrefetch?: any;
   trailingSlash?: any;
   class?: any;
+  visibility?: any;
+  interaction?: any;
   style?: any;
   id?: any;
   title?: any;

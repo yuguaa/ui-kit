@@ -101,6 +101,13 @@ import XButton from './XButton.vue'
 defineOptions({ inheritAttrs: false })
 
 const _props = withDefaults(defineProps<{
+  optional?: any;
+  stepSnapping?: any;
+  formatOptions?: any;
+  disableWheelChange?: any;
+  invertWheelChange?: any;
+  focusOnChange?: any;
+  locale?: any;
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'

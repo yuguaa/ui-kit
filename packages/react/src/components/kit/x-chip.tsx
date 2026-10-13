@@ -72,6 +72,8 @@ export interface XChipProps extends Omit<React.ComponentProps<"div">, "color" | 
   standalone?: boolean
   /** 控制本体显隐，与 Nuxt UI 的 show 属性对齐 */
   show?: boolean
+  /** 显隐变化回调（对齐 Nuxt 的 v-model:show） */
+  onShowChange?: (show: boolean) => void
   /** 芯片内容，优先于 children 与 text */
   content?: React.ReactNode
   /** 主题插槽类名 */
@@ -88,6 +90,7 @@ export function XChip({
   inset = false,
   standalone = false,
   show = true,
+  onShowChange,
   content,
   ui,
   className,

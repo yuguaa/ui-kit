@@ -16,7 +16,11 @@ export interface SplitterItem {
    */
   id?: string
   slot?: string
-  class?: any
+  class?: any;
+  autoSaveId?: any;
+  keyboardResizeBy?: any;
+  storage?: any;
+  hitAreaMargins?: any;
   ui?: Partial<Pick<Splitter['slots'], 'panel'>>
   [key: string]: any
 }

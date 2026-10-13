@@ -256,6 +256,12 @@ import XKbd from './XKbd.vue'
 defineOptions({ inheritAttrs: false })
 
 const _props = withDefaults(defineProps<{
+  overscan?: any;
+  estimateSize?: any;
+  highlightOnHover?: any;
+  selectionBehavior?: any;
+  by?: any;
+  loadingIcon?: any;
   /**
    * The element or component this component should render as.
    * @defaultValue 'div'
