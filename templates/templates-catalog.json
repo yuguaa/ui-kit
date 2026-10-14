@@ -1,0 +1,147 @@
+{
+  "templates": [
+    {
+      "slug": "atlas-admin",
+      "name": "Atlas",
+      "metaTitle": "Atlas - Next.js Admin Dashboard Template with User Management",
+      "category": "Dashboard",
+      "url": "https://reui.io/templates/atlas-admin",
+      "accessTier": "ultimate"
+    },
+    {
+      "slug": "flowly-app",
+      "name": "Flowly",
+      "metaTitle": "Next.js Workflow Automation Template with AI Agent Builder",
+      "category": "Dashboard",
+      "url": "https://reui.io/templates/flowly-app",
+      "accessTier": "ultimate"
+    },
+    {
+      "slug": "flux-agentops",
+      "name": "Flux",
+      "metaTitle": "Next.js AI Agent Console Template with Runs and Approvals",
+      "category": "Dashboard",
+      "url": "https://reui.io/templates/flux-agentops",
+      "accessTier": "ultimate"
+    },
+    {
+      "slug": "lucent-devops",
+      "name": "Lucent",
+      "metaTitle": "TanStack Start DevOps and SRE Console Template",
+      "category": "Dashboard",
+      "url": "https://reui.io/templates/lucent-devops",
+      "accessTier": "ultimate"
+    },
+    {
+      "slug": "tempo-tasks",
+      "name": "Tempo",
+      "metaTitle": "TanStack Start Task Management Template with Kanban",
+      "category": "Dashboard",
+      "url": "https://reui.io/templates/tempo-tasks",
+      "accessTier": "ultimate"
+    },
+    {
+      "slug": "limelight-landing",
+      "name": "Limelight",
+      "metaTitle": "Limelight - Next.js SaaS Marketing Site Template, Product Tour",
+      "category": "Landing",
+      "url": "https://reui.io/templates/limelight-landing",
+      "accessTier": "ultimate"
+    },
+    {
+      "slug": "overture-waitlist",
+      "name": "Overture",
+      "metaTitle": "Overture - Next.js Waitlist Template with Email Signup API",
+      "category": "Landing",
+      "url": "https://reui.io/templates/overture-waitlist",
+      "accessTier": "ultimate"
+    },
+    {
+      "slug": "cohort-hr",
+      "name": "Cohort",
+      "metaTitle": "Cohort - Laravel Inertia HR Template, Time Off and Approvals",
+      "category": "SaaS",
+      "url": "https://reui.io/templates/cohort-hr",
+      "accessTier": "ultimate"
+    },
+    {
+      "slug": "echo-chat",
+      "name": "Echo",
+      "metaTitle": "Echo - Next.js AI Chat Template with Artifacts and Projects",
+      "category": "SaaS",
+      "url": "https://reui.io/templates/echo-chat",
+      "accessTier": "ultimate"
+    },
+    {
+      "slug": "filebox-drive",
+      "name": "Filebox",
+      "metaTitle": "Filebox - Laravel Inertia Drive and File Manager Template",
+      "category": "SaaS",
+      "url": "https://reui.io/templates/filebox-drive",
+      "accessTier": "ultimate"
+    },
+    {
+      "slug": "filespace-drive",
+      "name": "Filespace",
+      "metaTitle": "Filespace - Next.js Cloud Storage and File Manager Template",
+      "category": "SaaS",
+      "url": "https://reui.io/templates/filespace-drive",
+      "accessTier": "ultimate"
+    },
+    {
+      "slug": "miro-clinic",
+      "name": "Miro",
+      "metaTitle": "React Dental Practice Management Template with Chair Board",
+      "category": "SaaS",
+      "url": "https://reui.io/templates/miro-clinic",
+      "accessTier": "ultimate"
+    },
+    {
+      "slug": "pulse-helpdesk",
+      "name": "Pulse",
+      "metaTitle": "TanStack Start Help Desk Template with SLA Board",
+      "category": "SaaS",
+      "url": "https://reui.io/templates/pulse-helpdesk",
+      "accessTier": "ultimate"
+    },
+    {
+      "slug": "roster-hr",
+      "name": "Roster",
+      "metaTitle": "React HR Template with Directory and Timesheets",
+      "category": "SaaS",
+      "url": "https://reui.io/templates/roster-hr",
+      "accessTier": "ultimate"
+    },
+    {
+      "slug": "verve-crm",
+      "name": "Verve",
+      "metaTitle": "Next.js CRM Template with Deal Board and Quotes",
+      "category": "SaaS",
+      "url": "https://reui.io/templates/verve-crm",
+      "accessTier": "ultimate"
+    },
+    {
+      "slug": "manifest-commerce",
+      "name": "Manifest",
+      "metaTitle": "Manifest - Laravel Inertia Commerce Admin with Eloquent Backend",
+      "category": "E-commerce",
+      "url": "https://reui.io/templates/manifest-commerce",
+      "accessTier": "ultimate"
+    },
+    {
+      "slug": "surge-commerce",
+      "name": "Surge",
+      "metaTitle": "TanStack Start Commerce Admin Template with Inventory",
+      "category": "E-commerce",
+      "url": "https://reui.io/templates/surge-commerce",
+      "accessTier": "ultimate"
+    }
+  ],
+  "counts_by_category": {
+    "Dashboard": 5,
+    "Landing": 2,
+    "SaaS": 8,
+    "E-commerce": 2
+  },
+  "total": 17
+}

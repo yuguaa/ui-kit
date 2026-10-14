@@ -1,0 +1,4608 @@
+{
+  "blocks": [
+    {
+      "slug": "agent-activity-1",
+      "name": "Approval Run Console",
+      "category": "ai-agents/agent-activity",
+      "group": "ai-agents",
+      "url": "https://reui.io/blocks/ai-agents/agent-activity/agent-activity-1"
+    },
+    {
+      "slug": "agent-activity-2",
+      "name": "Live Run Feed",
+      "category": "ai-agents/agent-activity",
+      "group": "ai-agents",
+      "url": "https://reui.io/blocks/ai-agents/agent-activity/agent-activity-2"
+    },
+    {
+      "slug": "agent-activity-3",
+      "name": "Research Timeline",
+      "category": "ai-agents/agent-activity",
+      "group": "ai-agents",
+      "url": "https://reui.io/blocks/ai-agents/agent-activity/agent-activity-3"
+    },
+    {
+      "slug": "agent-activity-4",
+      "name": "MCP Call Audit",
+      "category": "ai-agents/agent-activity",
+      "group": "ai-agents",
+      "url": "https://reui.io/blocks/ai-agents/agent-activity/agent-activity-4"
+    },
+    {
+      "slug": "agent-activity-5",
+      "name": "Run Outcome Report",
+      "category": "ai-agents/agent-activity",
+      "group": "ai-agents",
+      "url": "https://reui.io/blocks/ai-agents/agent-activity/agent-activity-5"
+    },
+    {
+      "slug": "ai-chat-1",
+      "name": "Copilot Shell",
+      "category": "ai-agents/ai-chat",
+      "group": "ai-agents",
+      "url": "https://reui.io/blocks/ai-agents/ai-chat/ai-chat-1"
+    },
+    {
+      "slug": "ai-chat-10",
+      "name": "Structured Answers",
+      "category": "ai-agents/ai-chat",
+      "group": "ai-agents",
+      "url": "https://reui.io/blocks/ai-agents/ai-chat/ai-chat-10"
+    },
+    {
+      "slug": "ai-chat-11",
+      "name": "Answer Receipts",
+      "category": "ai-agents/ai-chat",
+      "group": "ai-agents",
+      "url": "https://reui.io/blocks/ai-agents/ai-chat/ai-chat-11"
+    },
+    {
+      "slug": "ai-chat-12",
+      "name": "Docs Support Assistant",
+      "category": "ai-agents/ai-chat",
+      "group": "ai-agents",
+      "url": "https://reui.io/blocks/ai-agents/ai-chat/ai-chat-12"
+    },
+    {
+      "slug": "ai-chat-13",
+      "name": "Corner Chat Popup",
+      "category": "ai-agents/ai-chat",
+      "group": "ai-agents",
+      "url": "https://reui.io/blocks/ai-agents/ai-chat/ai-chat-13"
+    },
+    {
+      "slug": "ai-chat-2",
+      "name": "Docked Assistant",
+      "category": "ai-agents/ai-chat",
+      "group": "ai-agents",
+      "url": "https://reui.io/blocks/ai-agents/ai-chat/ai-chat-2"
+    },
+    {
+      "slug": "ai-chat-3",
+      "name": "Prompt Starter Welcome",
+      "category": "ai-agents/ai-chat",
+      "group": "ai-agents",
+      "url": "https://reui.io/blocks/ai-agents/ai-chat/ai-chat-3"
+    },
+    {
+      "slug": "ai-chat-4",
+      "name": "Quote Reply Sidebar",
+      "category": "ai-agents/ai-chat",
+      "group": "ai-agents",
+      "url": "https://reui.io/blocks/ai-agents/ai-chat/ai-chat-4"
+    },
+    {
+      "slug": "ai-chat-5",
+      "name": "Connected Apps Chat",
+      "category": "ai-agents/ai-chat",
+      "group": "ai-agents",
+      "url": "https://reui.io/blocks/ai-agents/ai-chat/ai-chat-5"
+    },
+    {
+      "slug": "ai-chat-6",
+      "name": "Agentic Task Panel",
+      "category": "ai-agents/ai-chat",
+      "group": "ai-agents",
+      "url": "https://reui.io/blocks/ai-agents/ai-chat/ai-chat-6"
+    },
+    {
+      "slug": "ai-chat-7",
+      "name": "Model Comparison",
+      "category": "ai-agents/ai-chat",
+      "group": "ai-agents",
+      "url": "https://reui.io/blocks/ai-agents/ai-chat/ai-chat-7"
+    },
+    {
+      "slug": "ai-chat-8",
+      "name": "Voice Assistant Panel",
+      "category": "ai-agents/ai-chat",
+      "group": "ai-agents",
+      "url": "https://reui.io/blocks/ai-agents/ai-chat/ai-chat-8"
+    },
+    {
+      "slug": "ai-chat-9",
+      "name": "Branching Thread",
+      "category": "ai-agents/ai-chat",
+      "group": "ai-agents",
+      "url": "https://reui.io/blocks/ai-agents/ai-chat/ai-chat-9"
+    },
+    {
+      "slug": "app-shell-1",
+      "name": "Icon Rail Dashboard",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-1"
+    },
+    {
+      "slug": "app-shell-10",
+      "name": "AI Agents Console",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-10"
+    },
+    {
+      "slug": "app-shell-11",
+      "name": "Operations Workbench",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-11"
+    },
+    {
+      "slug": "app-shell-12",
+      "name": "Apps Grid Header",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-12"
+    },
+    {
+      "slug": "app-shell-13",
+      "name": "Community Feed App",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-13"
+    },
+    {
+      "slug": "app-shell-14",
+      "name": "View Toolbar Workspace",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-14"
+    },
+    {
+      "slug": "app-shell-15",
+      "name": "Pinnable Favorites Nav",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-15"
+    },
+    {
+      "slug": "app-shell-16",
+      "name": "Dual Sidebar Dashboard",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-16"
+    },
+    {
+      "slug": "app-shell-17",
+      "name": "Model Picker Chat",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-17"
+    },
+    {
+      "slug": "app-shell-18",
+      "name": "To-Do AI Assistant",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-18"
+    },
+    {
+      "slug": "app-shell-19",
+      "name": "Scheduling Planner",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-19"
+    },
+    {
+      "slug": "app-shell-2",
+      "name": "Floating Sidebar Admin",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-2"
+    },
+    {
+      "slug": "app-shell-20",
+      "name": "Webmail Client",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-20"
+    },
+    {
+      "slug": "app-shell-21",
+      "name": "Resizable AI Chat",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-21"
+    },
+    {
+      "slug": "app-shell-22",
+      "name": "Fleet Operator Console",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-22"
+    },
+    {
+      "slug": "app-shell-23",
+      "name": "Team Project Switcher",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-23"
+    },
+    {
+      "slug": "app-shell-24",
+      "name": "Ops Presence Console",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-24"
+    },
+    {
+      "slug": "app-shell-25",
+      "name": "Mission Control",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-25"
+    },
+    {
+      "slug": "app-shell-26",
+      "name": "Security Scope Console",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-26"
+    },
+    {
+      "slug": "app-shell-27",
+      "name": "Route Search Sidebar",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-27"
+    },
+    {
+      "slug": "app-shell-28",
+      "name": "Section Tabs Admin",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-28"
+    },
+    {
+      "slug": "app-shell-29",
+      "name": "Section Tile Rail",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-29"
+    },
+    {
+      "slug": "app-shell-3",
+      "name": "Project Tracker Sidebar",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-3"
+    },
+    {
+      "slug": "app-shell-30",
+      "name": "Top Navbar Admin",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-30"
+    },
+    {
+      "slug": "app-shell-31",
+      "name": "Folder Tab Workspace",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-31"
+    },
+    {
+      "slug": "app-shell-32",
+      "name": "Endpoint Protection",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-32"
+    },
+    {
+      "slug": "app-shell-33",
+      "name": "Fleet Center",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-33"
+    },
+    {
+      "slug": "app-shell-34",
+      "name": "Invoice Matching",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-34"
+    },
+    {
+      "slug": "app-shell-35",
+      "name": "Whiteboard Workspace",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-35"
+    },
+    {
+      "slug": "app-shell-4",
+      "name": "Mail Inbox",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-4"
+    },
+    {
+      "slug": "app-shell-5",
+      "name": "Calendar Contacts Hub",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-5"
+    },
+    {
+      "slug": "app-shell-6",
+      "name": "Team Calendar Panel",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-6"
+    },
+    {
+      "slug": "app-shell-7",
+      "name": "Environment Switcher",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-7"
+    },
+    {
+      "slug": "app-shell-8",
+      "name": "Inventory Admin",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-8"
+    },
+    {
+      "slug": "app-shell-9",
+      "name": "Team Presence Workspace",
+      "category": "application/app-shell",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/app-shell/app-shell-9"
+    },
+    {
+      "slug": "auth-1",
+      "name": "Photo Split Login",
+      "category": "application/auth",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/auth/auth-1"
+    },
+    {
+      "slug": "auth-10",
+      "name": "Magic Link Logos",
+      "category": "application/auth",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/auth/auth-10"
+    },
+    {
+      "slug": "auth-11",
+      "name": "Split Testimonial Login",
+      "category": "application/auth",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/auth/auth-11"
+    },
+    {
+      "slug": "auth-12",
+      "name": "Split Method Picker",
+      "category": "application/auth",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/auth/auth-12"
+    },
+    {
+      "slug": "auth-13",
+      "name": "Photo Magic Link",
+      "category": "application/auth",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/auth/auth-13"
+    },
+    {
+      "slug": "auth-14",
+      "name": "Workspace Sign-In",
+      "category": "application/auth",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/auth/auth-14"
+    },
+    {
+      "slug": "auth-15",
+      "name": "Centered Magic Link",
+      "category": "application/auth",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/auth/auth-15"
+    },
+    {
+      "slug": "auth-16",
+      "name": "Work Email Continue",
+      "category": "application/auth",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/auth/auth-16"
+    },
+    {
+      "slug": "auth-17",
+      "name": "Centered Method Picker",
+      "category": "application/auth",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/auth/auth-17"
+    },
+    {
+      "slug": "auth-18",
+      "name": "Social Proof Login",
+      "category": "application/auth",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/auth/auth-18"
+    },
+    {
+      "slug": "auth-19",
+      "name": "Invite-Only Sign-In",
+      "category": "application/auth",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/auth/auth-19"
+    },
+    {
+      "slug": "auth-2",
+      "name": "Customer Quotes Login",
+      "category": "application/auth",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/auth/auth-2"
+    },
+    {
+      "slug": "auth-20",
+      "name": "Centered Password Login",
+      "category": "application/auth",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/auth/auth-20"
+    },
+    {
+      "slug": "auth-3",
+      "name": "Magic Link Reviews",
+      "category": "application/auth",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/auth/auth-3"
+    },
+    {
+      "slug": "auth-4",
+      "name": "Framed Password Login",
+      "category": "application/auth",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/auth/auth-4"
+    },
+    {
+      "slug": "auth-5",
+      "name": "Free Trial Signup",
+      "category": "application/auth",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/auth/auth-5"
+    },
+    {
+      "slug": "auth-6",
+      "name": "Founder Story Login",
+      "category": "application/auth",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/auth/auth-6"
+    },
+    {
+      "slug": "auth-7",
+      "name": "Magic Link Card",
+      "category": "application/auth",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/auth/auth-7"
+    },
+    {
+      "slug": "auth-8",
+      "name": "Photo Backdrop Login",
+      "category": "application/auth",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/auth/auth-8"
+    },
+    {
+      "slug": "auth-9",
+      "name": "Rotating Quotes Login",
+      "category": "application/auth",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/auth/auth-9"
+    },
+    {
+      "slug": "card-1",
+      "name": "Brand Logo Grid",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-1"
+    },
+    {
+      "slug": "card-10",
+      "name": "Report Updates",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-10"
+    },
+    {
+      "slug": "card-11",
+      "name": "Notice Cards",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-11"
+    },
+    {
+      "slug": "card-12",
+      "name": "Quick Link Tiles",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-12"
+    },
+    {
+      "slug": "card-13",
+      "name": "Partner Showcase",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-13"
+    },
+    {
+      "slug": "card-14",
+      "name": "Delivery Tracking",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-14"
+    },
+    {
+      "slug": "card-15",
+      "name": "Meeting Agenda Cards",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-15"
+    },
+    {
+      "slug": "card-16",
+      "name": "Installed Integration",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-16"
+    },
+    {
+      "slug": "card-17",
+      "name": "Shortcut Launcher",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-17"
+    },
+    {
+      "slug": "card-18",
+      "name": "Source Link Cards",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-18"
+    },
+    {
+      "slug": "card-19",
+      "name": "Crypto Price Quote",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-19"
+    },
+    {
+      "slug": "card-2",
+      "name": "Feature Highlights",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-2"
+    },
+    {
+      "slug": "card-20",
+      "name": "Help Center Guides",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-20"
+    },
+    {
+      "slug": "card-21",
+      "name": "Project Deadline Cards",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-21"
+    },
+    {
+      "slug": "card-22",
+      "name": "Upsell Promo",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-22"
+    },
+    {
+      "slug": "card-23",
+      "name": "Uptime Monitoring Promo",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-23"
+    },
+    {
+      "slug": "card-24",
+      "name": "Job Recommendation",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-24"
+    },
+    {
+      "slug": "card-25",
+      "name": "Account Balances",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-25"
+    },
+    {
+      "slug": "card-26",
+      "name": "Linked Metric Tiles",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-26"
+    },
+    {
+      "slug": "card-27",
+      "name": "Application Summary",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-27"
+    },
+    {
+      "slug": "card-28",
+      "name": "Shared KPI Panels",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-28"
+    },
+    {
+      "slug": "card-29",
+      "name": "KPI Area Charts",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-29"
+    },
+    {
+      "slug": "card-3",
+      "name": "Investor Profile",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-3"
+    },
+    {
+      "slug": "card-30",
+      "name": "Logistics KPI Tiles",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-30"
+    },
+    {
+      "slug": "card-31",
+      "name": "Audience Reach Stats",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-31"
+    },
+    {
+      "slug": "card-32",
+      "name": "Compliance Strip",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-32"
+    },
+    {
+      "slug": "card-33",
+      "name": "Inventory Counters",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-33"
+    },
+    {
+      "slug": "card-34",
+      "name": "Period Trend KPIs",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-34"
+    },
+    {
+      "slug": "card-35",
+      "name": "Deal Invoice Tiles",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-35"
+    },
+    {
+      "slug": "card-36",
+      "name": "Sales Outreach Counters",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-36"
+    },
+    {
+      "slug": "card-37",
+      "name": "Company Snapshot",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-37"
+    },
+    {
+      "slug": "card-38",
+      "name": "Profile Stat Strip",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-38"
+    },
+    {
+      "slug": "card-39",
+      "name": "Resource Hub Cards",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-39"
+    },
+    {
+      "slug": "card-4",
+      "name": "KPI Report Links",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-4"
+    },
+    {
+      "slug": "card-40",
+      "name": "Fitness Stats",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-40"
+    },
+    {
+      "slug": "card-41",
+      "name": "Topic Shortcuts",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-41"
+    },
+    {
+      "slug": "card-42",
+      "name": "Customer Profile",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-42"
+    },
+    {
+      "slug": "card-43",
+      "name": "Contributor Portfolio",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-43"
+    },
+    {
+      "slug": "card-5",
+      "name": "Integration Connector",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-5"
+    },
+    {
+      "slug": "card-6",
+      "name": "Numbered Setup Steps",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-6"
+    },
+    {
+      "slug": "card-7",
+      "name": "Detail Fact Tiles",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-7"
+    },
+    {
+      "slug": "card-8",
+      "name": "Service Status Tiles",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-8"
+    },
+    {
+      "slug": "card-9",
+      "name": "Applicant Record",
+      "category": "application/card",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/card/card-9"
+    },
+    {
+      "slug": "dashboard-1",
+      "name": "Fulfillment Exceptions",
+      "category": "application/dashboard",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dashboard/dashboard-1"
+    },
+    {
+      "slug": "dashboard-2",
+      "name": "Module Tracker",
+      "category": "application/dashboard",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dashboard/dashboard-2"
+    },
+    {
+      "slug": "dashboard-3",
+      "name": "Worklog Timesheet",
+      "category": "application/dashboard",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dashboard/dashboard-3"
+    },
+    {
+      "slug": "dashboard-4",
+      "name": "Voice Agent Calls",
+      "category": "application/dashboard",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dashboard/dashboard-4"
+    },
+    {
+      "slug": "dashboard-5",
+      "name": "Edge Security Telemetry",
+      "category": "application/dashboard",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dashboard/dashboard-5"
+    },
+    {
+      "slug": "dashboard-6",
+      "name": "Workforce Coverage",
+      "category": "application/dashboard",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dashboard/dashboard-6"
+    },
+    {
+      "slug": "dashboard-7",
+      "name": "Retail Revenue",
+      "category": "application/dashboard",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dashboard/dashboard-7"
+    },
+    {
+      "slug": "dashboard-8",
+      "name": "Royalty Payouts",
+      "category": "application/dashboard",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dashboard/dashboard-8"
+    },
+    {
+      "slug": "dialog-1",
+      "name": "Duration Picker",
+      "category": "application/dialog",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dialog/dialog-1"
+    },
+    {
+      "slug": "dialog-10",
+      "name": "Account Settings Modal",
+      "category": "application/dialog",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dialog/dialog-10"
+    },
+    {
+      "slug": "dialog-11",
+      "name": "Finance Account Setup",
+      "category": "application/dialog",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dialog/dialog-11"
+    },
+    {
+      "slug": "dialog-12",
+      "name": "Quick Create Entry",
+      "category": "application/dialog",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dialog/dialog-12"
+    },
+    {
+      "slug": "dialog-13",
+      "name": "Project Templates",
+      "category": "application/dialog",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dialog/dialog-13"
+    },
+    {
+      "slug": "dialog-14",
+      "name": "OAuth Consent",
+      "category": "application/dialog",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dialog/dialog-14"
+    },
+    {
+      "slug": "dialog-2",
+      "name": "Bulk Email Invite",
+      "category": "application/dialog",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dialog/dialog-2"
+    },
+    {
+      "slug": "dialog-3",
+      "name": "Cancel Plan Survey",
+      "category": "application/dialog",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dialog/dialog-3"
+    },
+    {
+      "slug": "dialog-4",
+      "name": "Launch Checklist",
+      "category": "application/dialog",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dialog/dialog-4"
+    },
+    {
+      "slug": "dialog-5",
+      "name": "Template Library",
+      "category": "application/dialog",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dialog/dialog-5"
+    },
+    {
+      "slug": "dialog-6",
+      "name": "Connect App Picker",
+      "category": "application/dialog",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dialog/dialog-6"
+    },
+    {
+      "slug": "dialog-7",
+      "name": "Support Hub",
+      "category": "application/dialog",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dialog/dialog-7"
+    },
+    {
+      "slug": "dialog-8",
+      "name": "Per-Person Invite",
+      "category": "application/dialog",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dialog/dialog-8"
+    },
+    {
+      "slug": "dialog-9",
+      "name": "Project With Cover",
+      "category": "application/dialog",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/dialog/dialog-9"
+    },
+    {
+      "slug": "empty-state-1",
+      "name": "Data Import Start",
+      "category": "application/empty-state",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/empty-state/empty-state-1"
+    },
+    {
+      "slug": "empty-state-10",
+      "name": "Blueprint Library",
+      "category": "application/empty-state",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/empty-state/empty-state-10"
+    },
+    {
+      "slug": "empty-state-11",
+      "name": "Section Add Prompt",
+      "category": "application/empty-state",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/empty-state/empty-state-11"
+    },
+    {
+      "slug": "empty-state-12",
+      "name": "Export Filters",
+      "category": "application/empty-state",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/empty-state/empty-state-12"
+    },
+    {
+      "slug": "empty-state-13",
+      "name": "Cloud Storage Connect",
+      "category": "application/empty-state",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/empty-state/empty-state-13"
+    },
+    {
+      "slug": "empty-state-14",
+      "name": "Enable Organizations",
+      "category": "application/empty-state",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/empty-state/empty-state-14"
+    },
+    {
+      "slug": "empty-state-2",
+      "name": "No Search Results",
+      "category": "application/empty-state",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/empty-state/empty-state-2"
+    },
+    {
+      "slug": "empty-state-3",
+      "name": "First Project",
+      "category": "application/empty-state",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/empty-state/empty-state-3"
+    },
+    {
+      "slug": "empty-state-4",
+      "name": "Reports Workspace",
+      "category": "application/empty-state",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/empty-state/empty-state-4"
+    },
+    {
+      "slug": "empty-state-5",
+      "name": "Empty Report Brief",
+      "category": "application/empty-state",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/empty-state/empty-state-5"
+    },
+    {
+      "slug": "empty-state-6",
+      "name": "Team Launch Steps",
+      "category": "application/empty-state",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/empty-state/empty-state-6"
+    },
+    {
+      "slug": "empty-state-7",
+      "name": "Invite First Member",
+      "category": "application/empty-state",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/empty-state/empty-state-7"
+    },
+    {
+      "slug": "empty-state-8",
+      "name": "Settings Setup Tabs",
+      "category": "application/empty-state",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/empty-state/empty-state-8"
+    },
+    {
+      "slug": "empty-state-9",
+      "name": "Invite Members Prompt",
+      "category": "application/empty-state",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/empty-state/empty-state-9"
+    },
+    {
+      "slug": "event-calendar-1",
+      "name": "Personal Calendar",
+      "category": "application/event-calendar",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/event-calendar/event-calendar-1"
+    },
+    {
+      "slug": "event-calendar-2",
+      "name": "Mini Month Calendar",
+      "category": "application/event-calendar",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/event-calendar/event-calendar-2"
+    },
+    {
+      "slug": "event-calendar-3",
+      "name": "Hotel Front Desk",
+      "category": "application/event-calendar",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/event-calendar/event-calendar-3"
+    },
+    {
+      "slug": "event-calendar-4",
+      "name": "Shift Roster",
+      "category": "application/event-calendar",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/event-calendar/event-calendar-4"
+    },
+    {
+      "slug": "event-calendar-5",
+      "name": "Clinic Chair Board",
+      "category": "application/event-calendar",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/event-calendar/event-calendar-5"
+    },
+    {
+      "slug": "event-calendar-6",
+      "name": "Lending Deal Calendar",
+      "category": "application/event-calendar",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/event-calendar/event-calendar-6"
+    },
+    {
+      "slug": "flow-1",
+      "name": "Automation Builder",
+      "category": "application/flow",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/flow/flow-1"
+    },
+    {
+      "slug": "flow-2",
+      "name": "AI Agent Builder",
+      "category": "application/flow",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/flow/flow-2"
+    },
+    {
+      "slug": "flow-3",
+      "name": "Pipeline Run Monitor",
+      "category": "application/flow",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/flow/flow-3"
+    },
+    {
+      "slug": "flow-4",
+      "name": "Growth Impact Map",
+      "category": "application/flow",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/flow/flow-4"
+    },
+    {
+      "slug": "form-1",
+      "name": "Profile Settings",
+      "category": "application/form",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/form/form-1"
+    },
+    {
+      "slug": "form-10",
+      "name": "Customer Onboarding",
+      "category": "application/form",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/form/form-10"
+    },
+    {
+      "slug": "form-11",
+      "name": "Deploy App Setup",
+      "category": "application/form",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/form/form-11"
+    },
+    {
+      "slug": "form-12",
+      "name": "New Product Form",
+      "category": "application/form",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/form/form-12"
+    },
+    {
+      "slug": "form-2",
+      "name": "Checkout Setup",
+      "category": "application/form",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/form/form-2"
+    },
+    {
+      "slug": "form-3",
+      "name": "Invoice Creator",
+      "category": "application/form",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/form/form-3"
+    },
+    {
+      "slug": "form-4",
+      "name": "Auth Method Settings",
+      "category": "application/form",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/form/form-4"
+    },
+    {
+      "slug": "form-5",
+      "name": "Member Profile Admin",
+      "category": "application/form",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/form/form-5"
+    },
+    {
+      "slug": "form-6",
+      "name": "Business Verification",
+      "category": "application/form",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/form/form-6"
+    },
+    {
+      "slug": "form-7",
+      "name": "Ticket Properties",
+      "category": "application/form",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/form/form-7"
+    },
+    {
+      "slug": "form-8",
+      "name": "API Keys Manager",
+      "category": "application/form",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/form/form-8"
+    },
+    {
+      "slug": "form-9",
+      "name": "Role Permission Invite",
+      "category": "application/form",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/form/form-9"
+    },
+    {
+      "slug": "gantt-1",
+      "name": "Project Timeline",
+      "category": "application/gantt",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/gantt/gantt-1"
+    },
+    {
+      "slug": "gantt-2",
+      "name": "Technician Dispatch",
+      "category": "application/gantt",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/gantt/gantt-2"
+    },
+    {
+      "slug": "gantt-3",
+      "name": "Agent Playbook",
+      "category": "application/gantt",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/gantt/gantt-3"
+    },
+    {
+      "slug": "gantt-4",
+      "name": "Resource Capacity",
+      "category": "application/gantt",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/gantt/gantt-4"
+    },
+    {
+      "slug": "kanban-board-1",
+      "name": "Bug Triage",
+      "category": "application/kanban-board",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/kanban-board/kanban-board-1"
+    },
+    {
+      "slug": "kanban-board-10",
+      "name": "Access Review",
+      "category": "application/kanban-board",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/kanban-board/kanban-board-10"
+    },
+    {
+      "slug": "kanban-board-2",
+      "name": "Collapsible Columns",
+      "category": "application/kanban-board",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/kanban-board/kanban-board-2"
+    },
+    {
+      "slug": "kanban-board-3",
+      "name": "Sales Pipeline",
+      "category": "application/kanban-board",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/kanban-board/kanban-board-3"
+    },
+    {
+      "slug": "kanban-board-4",
+      "name": "Feature Roadmap Votes",
+      "category": "application/kanban-board",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/kanban-board/kanban-board-4"
+    },
+    {
+      "slug": "kanban-board-5",
+      "name": "Progress Ring Workflow",
+      "category": "application/kanban-board",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/kanban-board/kanban-board-5"
+    },
+    {
+      "slug": "kanban-board-6",
+      "name": "Support Escalations",
+      "category": "application/kanban-board",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/kanban-board/kanban-board-6"
+    },
+    {
+      "slug": "kanban-board-7",
+      "name": "Renewals Risk",
+      "category": "application/kanban-board",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/kanban-board/kanban-board-7"
+    },
+    {
+      "slug": "kanban-board-8",
+      "name": "Release Readiness",
+      "category": "application/kanban-board",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/kanban-board/kanban-board-8"
+    },
+    {
+      "slug": "kanban-board-9",
+      "name": "Recruiting Pipeline",
+      "category": "application/kanban-board",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/kanban-board/kanban-board-9"
+    },
+    {
+      "slug": "list-1",
+      "name": "Order KPI List",
+      "category": "application/list",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/list/list-1"
+    },
+    {
+      "slug": "list-10",
+      "name": "Recent Investments",
+      "category": "application/list",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/list/list-10"
+    },
+    {
+      "slug": "list-11",
+      "name": "Top Movers",
+      "category": "application/list",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/list/list-11"
+    },
+    {
+      "slug": "list-2",
+      "name": "Fund Leaderboard",
+      "category": "application/list",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/list/list-2"
+    },
+    {
+      "slug": "list-3",
+      "name": "Capital Inflows",
+      "category": "application/list",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/list/list-3"
+    },
+    {
+      "slug": "list-4",
+      "name": "Crypto Portfolio",
+      "category": "application/list",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/list/list-4"
+    },
+    {
+      "slug": "list-5",
+      "name": "Crypto Activity Feed",
+      "category": "application/list",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/list/list-5"
+    },
+    {
+      "slug": "list-6",
+      "name": "Wallet Transfers",
+      "category": "application/list",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/list/list-6"
+    },
+    {
+      "slug": "list-7",
+      "name": "Spending Feed",
+      "category": "application/list",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/list/list-7"
+    },
+    {
+      "slug": "list-8",
+      "name": "Integrations Directory",
+      "category": "application/list",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/list/list-8"
+    },
+    {
+      "slug": "list-9",
+      "name": "Capability Modules",
+      "category": "application/list",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/list/list-9"
+    },
+    {
+      "slug": "navbar-1",
+      "name": "Project Workspace",
+      "category": "application/navbar",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/navbar/navbar-1"
+    },
+    {
+      "slug": "navbar-10",
+      "name": "API Developer Portal",
+      "category": "application/navbar",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/navbar/navbar-10"
+    },
+    {
+      "slug": "navbar-11",
+      "name": "Design System Manager",
+      "category": "application/navbar",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/navbar/navbar-11"
+    },
+    {
+      "slug": "navbar-12",
+      "name": "Marketing Mega Menu",
+      "category": "application/navbar",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/navbar/navbar-12"
+    },
+    {
+      "slug": "navbar-13",
+      "name": "Editor Action Bar",
+      "category": "application/navbar",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/navbar/navbar-13"
+    },
+    {
+      "slug": "navbar-2",
+      "name": "Team Presence",
+      "category": "application/navbar",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/navbar/navbar-2"
+    },
+    {
+      "slug": "navbar-3",
+      "name": "Org & Environment Switcher",
+      "category": "application/navbar",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/navbar/navbar-3"
+    },
+    {
+      "slug": "navbar-4",
+      "name": "Admin Command Search",
+      "category": "application/navbar",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/navbar/navbar-4"
+    },
+    {
+      "slug": "navbar-5",
+      "name": "Workflow Editor",
+      "category": "application/navbar",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/navbar/navbar-5"
+    },
+    {
+      "slug": "navbar-6",
+      "name": "Analytics Toolbar",
+      "category": "application/navbar",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/navbar/navbar-6"
+    },
+    {
+      "slug": "navbar-7",
+      "name": "CMS Publish Bar",
+      "category": "application/navbar",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/navbar/navbar-7"
+    },
+    {
+      "slug": "navbar-8",
+      "name": "Agent Marketplace",
+      "category": "application/navbar",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/navbar/navbar-8"
+    },
+    {
+      "slug": "navbar-9",
+      "name": "Repo Branch Picker",
+      "category": "application/navbar",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/navbar/navbar-9"
+    },
+    {
+      "slug": "onboarding-1",
+      "name": "Live Preview Wizard",
+      "category": "application/onboarding",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/onboarding/onboarding-1"
+    },
+    {
+      "slug": "onboarding-2",
+      "name": "Sidebar Stepper Wizard",
+      "category": "application/onboarding",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/onboarding/onboarding-2"
+    },
+    {
+      "slug": "onboarding-3",
+      "name": "Split-Screen Signup",
+      "category": "application/onboarding",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/onboarding/onboarding-3"
+    },
+    {
+      "slug": "onboarding-4",
+      "name": "Centered Setup Flow",
+      "category": "application/onboarding",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/onboarding/onboarding-4"
+    },
+    {
+      "slug": "onboarding-5",
+      "name": "Onboarding Dialog",
+      "category": "application/onboarding",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/onboarding/onboarding-5"
+    },
+    {
+      "slug": "onboarding-6",
+      "name": "Agent & API Setup",
+      "category": "application/onboarding",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/onboarding/onboarding-6"
+    },
+    {
+      "slug": "onboarding-7",
+      "name": "Screenshot Carousel Setup",
+      "category": "application/onboarding",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/onboarding/onboarding-7"
+    },
+    {
+      "slug": "onboarding-8",
+      "name": "CLI Agent Setup",
+      "category": "application/onboarding",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/onboarding/onboarding-8"
+    },
+    {
+      "slug": "onboarding-9",
+      "name": "Marketing Hero Signup",
+      "category": "application/onboarding",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/onboarding/onboarding-9"
+    },
+    {
+      "slug": "profile-1",
+      "name": "Account & Team Settings",
+      "category": "application/profile",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/profile/profile-1"
+    },
+    {
+      "slug": "profile-10",
+      "name": "Developer API Keys",
+      "category": "application/profile",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/profile/profile-10"
+    },
+    {
+      "slug": "profile-2",
+      "name": "Admin Permissions",
+      "category": "application/profile",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/profile/profile-2"
+    },
+    {
+      "slug": "profile-3",
+      "name": "Personal Profile",
+      "category": "application/profile",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/profile/profile-3"
+    },
+    {
+      "slug": "profile-4",
+      "name": "Mailbox Accounts",
+      "category": "application/profile",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/profile/profile-4"
+    },
+    {
+      "slug": "profile-5",
+      "name": "Notification Digest",
+      "category": "application/profile",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/profile/profile-5"
+    },
+    {
+      "slug": "profile-6",
+      "name": "Referral Rewards",
+      "category": "application/profile",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/profile/profile-6"
+    },
+    {
+      "slug": "profile-7",
+      "name": "Meeting Capture",
+      "category": "application/profile",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/profile/profile-7"
+    },
+    {
+      "slug": "profile-8",
+      "name": "Billing Settings",
+      "category": "application/profile",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/profile/profile-8"
+    },
+    {
+      "slug": "profile-9",
+      "name": "Account Settings Hub",
+      "category": "application/profile",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/profile/profile-9"
+    },
+    {
+      "slug": "rich-text-editor-1",
+      "name": "Document Editor",
+      "category": "application/rich-text-editor",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/rich-text-editor/rich-text-editor-1"
+    },
+    {
+      "slug": "rich-text-editor-2",
+      "name": "Wiki Page Editor",
+      "category": "application/rich-text-editor",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/rich-text-editor/rich-text-editor-2"
+    },
+    {
+      "slug": "rich-text-editor-3",
+      "name": "Contract Redlines",
+      "category": "application/rich-text-editor",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/rich-text-editor/rich-text-editor-3"
+    },
+    {
+      "slug": "rich-text-editor-4",
+      "name": "Collaborative Editor",
+      "category": "application/rich-text-editor",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/rich-text-editor/rich-text-editor-4"
+    },
+    {
+      "slug": "rich-text-editor-5",
+      "name": "AI Writing Assistant",
+      "category": "application/rich-text-editor",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/rich-text-editor/rich-text-editor-5"
+    },
+    {
+      "slug": "schedule-1",
+      "name": "Appointment Planner",
+      "category": "application/schedule",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/schedule/schedule-1"
+    },
+    {
+      "slug": "schedule-10",
+      "name": "Due Date Picker",
+      "category": "application/schedule",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/schedule/schedule-10"
+    },
+    {
+      "slug": "schedule-2",
+      "name": "Time Range Picker",
+      "category": "application/schedule",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/schedule/schedule-2"
+    },
+    {
+      "slug": "schedule-3",
+      "name": "Meeting Scheduler",
+      "category": "application/schedule",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/schedule/schedule-3"
+    },
+    {
+      "slug": "schedule-4",
+      "name": "Booking Page",
+      "category": "application/schedule",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/schedule/schedule-4"
+    },
+    {
+      "slug": "schedule-5",
+      "name": "Team Attendance",
+      "category": "application/schedule",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/schedule/schedule-5"
+    },
+    {
+      "slug": "schedule-6",
+      "name": "Create Schedule",
+      "category": "application/schedule",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/schedule/schedule-6"
+    },
+    {
+      "slug": "schedule-7",
+      "name": "Webinar RSVP",
+      "category": "application/schedule",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/schedule/schedule-7"
+    },
+    {
+      "slug": "schedule-8",
+      "name": "Team Agenda",
+      "category": "application/schedule",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/schedule/schedule-8"
+    },
+    {
+      "slug": "schedule-9",
+      "name": "Session Booking",
+      "category": "application/schedule",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/schedule/schedule-9"
+    },
+    {
+      "slug": "settings-1",
+      "name": "Import Sources",
+      "category": "application/settings",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/settings/settings-1"
+    },
+    {
+      "slug": "settings-10",
+      "name": "Security Settings",
+      "category": "application/settings",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/settings/settings-10"
+    },
+    {
+      "slug": "settings-11",
+      "name": "Notification Channels",
+      "category": "application/settings",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/settings/settings-11"
+    },
+    {
+      "slug": "settings-12",
+      "name": "Notification Delivery",
+      "category": "application/settings",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/settings/settings-12"
+    },
+    {
+      "slug": "settings-13",
+      "name": "Integrations Gallery",
+      "category": "application/settings",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/settings/settings-13"
+    },
+    {
+      "slug": "settings-14",
+      "name": "API Integrations",
+      "category": "application/settings",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/settings/settings-14"
+    },
+    {
+      "slug": "settings-15",
+      "name": "Workspace Preferences",
+      "category": "application/settings",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/settings/settings-15"
+    },
+    {
+      "slug": "settings-16",
+      "name": "Connected Apps",
+      "category": "application/settings",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/settings/settings-16"
+    },
+    {
+      "slug": "settings-2",
+      "name": "Privacy Controls",
+      "category": "application/settings",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/settings/settings-2"
+    },
+    {
+      "slug": "settings-3",
+      "name": "General Settings",
+      "category": "application/settings",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/settings/settings-3"
+    },
+    {
+      "slug": "settings-4",
+      "name": "App Connections",
+      "category": "application/settings",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/settings/settings-4"
+    },
+    {
+      "slug": "settings-5",
+      "name": "Role Capabilities",
+      "category": "application/settings",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/settings/settings-5"
+    },
+    {
+      "slug": "settings-6",
+      "name": "Integration Events",
+      "category": "application/settings",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/settings/settings-6"
+    },
+    {
+      "slug": "settings-7",
+      "name": "Account Settings",
+      "category": "application/settings",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/settings/settings-7"
+    },
+    {
+      "slug": "settings-8",
+      "name": "Webhook Endpoints",
+      "category": "application/settings",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/settings/settings-8"
+    },
+    {
+      "slug": "settings-9",
+      "name": "General & Display",
+      "category": "application/settings",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/settings/settings-9"
+    },
+    {
+      "slug": "sheet-1",
+      "name": "Create Project",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-1"
+    },
+    {
+      "slug": "sheet-10",
+      "name": "Copilot Chat",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-10"
+    },
+    {
+      "slug": "sheet-11",
+      "name": "Metric Detail Sheet",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-11"
+    },
+    {
+      "slug": "sheet-12",
+      "name": "Cron Job Detail",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-12"
+    },
+    {
+      "slug": "sheet-13",
+      "name": "New Cron Job",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-13"
+    },
+    {
+      "slug": "sheet-14",
+      "name": "Audit Event Detail",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-14"
+    },
+    {
+      "slug": "sheet-15",
+      "name": "Canary Rollout",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-15"
+    },
+    {
+      "slug": "sheet-16",
+      "name": "Failed Deploy",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-16"
+    },
+    {
+      "slug": "sheet-17",
+      "name": "New Firewall Rule",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-17"
+    },
+    {
+      "slug": "sheet-18",
+      "name": "Edit Firewall Rule",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-18"
+    },
+    {
+      "slug": "sheet-19",
+      "name": "Firewall Request",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-19"
+    },
+    {
+      "slug": "sheet-2",
+      "name": "Help Center",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-2"
+    },
+    {
+      "slug": "sheet-20",
+      "name": "SLO Error Budget",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-20"
+    },
+    {
+      "slug": "sheet-21",
+      "name": "New SLO",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-21"
+    },
+    {
+      "slug": "sheet-22",
+      "name": "Data Connection",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-22"
+    },
+    {
+      "slug": "sheet-23",
+      "name": "New Connection",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-23"
+    },
+    {
+      "slug": "sheet-24",
+      "name": "Dataset Preview",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-24"
+    },
+    {
+      "slug": "sheet-3",
+      "name": "Keyboard Shortcuts",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-3"
+    },
+    {
+      "slug": "sheet-4",
+      "name": "AI Model Chat",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-4"
+    },
+    {
+      "slug": "sheet-5",
+      "name": "Comment Thread",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-5"
+    },
+    {
+      "slug": "sheet-6",
+      "name": "View Customizer",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-6"
+    },
+    {
+      "slug": "sheet-7",
+      "name": "Notifications Feed",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-7"
+    },
+    {
+      "slug": "sheet-8",
+      "name": "Relay Settings",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-8"
+    },
+    {
+      "slug": "sheet-9",
+      "name": "Ticket Edit Sheet",
+      "category": "application/sheet",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/sheet/sheet-9"
+    },
+    {
+      "slug": "stats-1",
+      "name": "Stats Overview",
+      "category": "application/stats",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/stats/stats-1"
+    },
+    {
+      "slug": "stats-10",
+      "name": "Total Revenue",
+      "category": "application/stats",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/stats/stats-10"
+    },
+    {
+      "slug": "stats-11",
+      "name": "API Quota Usage",
+      "category": "application/stats",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/stats/stats-11"
+    },
+    {
+      "slug": "stats-12",
+      "name": "Support Metrics",
+      "category": "application/stats",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/stats/stats-12"
+    },
+    {
+      "slug": "stats-13",
+      "name": "Compliance Checks",
+      "category": "application/stats",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/stats/stats-13"
+    },
+    {
+      "slug": "stats-14",
+      "name": "Adoption Rate",
+      "category": "application/stats",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/stats/stats-14"
+    },
+    {
+      "slug": "stats-15",
+      "name": "KPI Callouts",
+      "category": "application/stats",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/stats/stats-15"
+    },
+    {
+      "slug": "stats-17",
+      "name": "Portfolio Allocation",
+      "category": "application/stats",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/stats/stats-17"
+    },
+    {
+      "slug": "stats-18",
+      "name": "Capacity Usage",
+      "category": "application/stats",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/stats/stats-18"
+    },
+    {
+      "slug": "stats-2",
+      "name": "KPI Scorecard",
+      "category": "application/stats",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/stats/stats-2"
+    },
+    {
+      "slug": "stats-3",
+      "name": "Subscription Renewals",
+      "category": "application/stats",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/stats/stats-3"
+    },
+    {
+      "slug": "stats-4",
+      "name": "Leads Overview",
+      "category": "application/stats",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/stats/stats-4"
+    },
+    {
+      "slug": "stats-5",
+      "name": "Wallet Balance",
+      "category": "application/stats",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/stats/stats-5"
+    },
+    {
+      "slug": "stats-6",
+      "name": "Rep Performance",
+      "category": "application/stats",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/stats/stats-6"
+    },
+    {
+      "slug": "stats-7",
+      "name": "Sales & Churn Metrics",
+      "category": "application/stats",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/stats/stats-7"
+    },
+    {
+      "slug": "stats-8",
+      "name": "Analytics Overview",
+      "category": "application/stats",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/stats/stats-8"
+    },
+    {
+      "slug": "stats-9",
+      "name": "Task Progress",
+      "category": "application/stats",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/stats/stats-9"
+    },
+    {
+      "slug": "timeline-1",
+      "name": "Customer Activation",
+      "category": "application/timeline",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/timeline/timeline-1"
+    },
+    {
+      "slug": "timeline-2",
+      "name": "Account Rollout",
+      "category": "application/timeline",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/timeline/timeline-2"
+    },
+    {
+      "slug": "timeline-3",
+      "name": "Finance Activity",
+      "category": "application/timeline",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/timeline/timeline-3"
+    },
+    {
+      "slug": "timeline-4",
+      "name": "Team Activity Feed",
+      "category": "application/timeline",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/timeline/timeline-4"
+    },
+    {
+      "slug": "timeline-5",
+      "name": "Release Changelog",
+      "category": "application/timeline",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/timeline/timeline-5"
+    },
+    {
+      "slug": "timeline-6",
+      "name": "Approval Workflow",
+      "category": "application/timeline",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/timeline/timeline-6"
+    },
+    {
+      "slug": "timeline-7",
+      "name": "Activity Dropdown",
+      "category": "application/timeline",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/timeline/timeline-7"
+    },
+    {
+      "slug": "timeline-8",
+      "name": "Team Activity Sheet",
+      "category": "application/timeline",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/timeline/timeline-8"
+    },
+    {
+      "slug": "timeline-9",
+      "name": "Finance Activity Sheet",
+      "category": "application/timeline",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/timeline/timeline-9"
+    },
+    {
+      "slug": "whiteboard-1",
+      "name": "Design Review Board",
+      "category": "application/whiteboard",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/whiteboard/whiteboard-1"
+    },
+    {
+      "slug": "whiteboard-2",
+      "name": "Sprint Planning Board",
+      "category": "application/whiteboard",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/whiteboard/whiteboard-2"
+    },
+    {
+      "slug": "wizard-1",
+      "name": "Billing Setup",
+      "category": "application/wizard",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/wizard/wizard-1"
+    },
+    {
+      "slug": "wizard-2",
+      "name": "Vendor Onboarding",
+      "category": "application/wizard",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/wizard/wizard-2"
+    },
+    {
+      "slug": "wizard-3",
+      "name": "Send Invoice",
+      "category": "application/wizard",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/wizard/wizard-3"
+    },
+    {
+      "slug": "wizard-4",
+      "name": "Plan Upgrade",
+      "category": "application/wizard",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/wizard/wizard-4"
+    },
+    {
+      "slug": "wizard-5",
+      "name": "Team Invitations",
+      "category": "application/wizard",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/wizard/wizard-5"
+    },
+    {
+      "slug": "wizard-6",
+      "name": "Product Setup Wizard",
+      "category": "application/wizard",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/wizard/wizard-6"
+    },
+    {
+      "slug": "wizard-7",
+      "name": "Fund Transfer",
+      "category": "application/wizard",
+      "group": "application",
+      "url": "https://reui.io/blocks/application/wizard/wizard-7"
+    },
+    {
+      "slug": "chart-16",
+      "name": "Generation Mix",
+      "category": "chart/area-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/area-chart/chart-16"
+    },
+    {
+      "slug": "chart-17",
+      "name": "Campaign Impressions",
+      "category": "chart/area-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/area-chart/chart-17"
+    },
+    {
+      "slug": "chart-18",
+      "name": "Orders Overview",
+      "category": "chart/area-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/area-chart/chart-18"
+    },
+    {
+      "slug": "chart-52",
+      "name": "Inbound Leads",
+      "category": "chart/area-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/area-chart/chart-52"
+    },
+    {
+      "slug": "chart-10",
+      "name": "Training Volume",
+      "category": "chart/bar-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/bar-chart/chart-10"
+    },
+    {
+      "slug": "chart-29",
+      "name": "Inventory Velocity",
+      "category": "chart/bar-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/bar-chart/chart-29"
+    },
+    {
+      "slug": "chart-30",
+      "name": "Transit vs Target",
+      "category": "chart/bar-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/bar-chart/chart-30"
+    },
+    {
+      "slug": "chart-32",
+      "name": "Cron Runner Load",
+      "category": "chart/bar-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/bar-chart/chart-32"
+    },
+    {
+      "slug": "chart-33",
+      "name": "Cron Run Durations",
+      "category": "chart/bar-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/bar-chart/chart-33"
+    },
+    {
+      "slug": "chart-35",
+      "name": "Audit Log Volume",
+      "category": "chart/bar-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/bar-chart/chart-35"
+    },
+    {
+      "slug": "chart-40",
+      "name": "Firewall Traffic",
+      "category": "chart/bar-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/bar-chart/chart-40"
+    },
+    {
+      "slug": "chart-42",
+      "name": "Error Budget Burn",
+      "category": "chart/bar-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/bar-chart/chart-42"
+    },
+    {
+      "slug": "chart-43",
+      "name": "SLO Burn Rate",
+      "category": "chart/bar-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/bar-chart/chart-43"
+    },
+    {
+      "slug": "chart-45",
+      "name": "Data Sync Activity",
+      "category": "chart/bar-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/bar-chart/chart-45"
+    },
+    {
+      "slug": "chart-47",
+      "name": "Sync Run History",
+      "category": "chart/bar-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/bar-chart/chart-47"
+    },
+    {
+      "slug": "chart-9",
+      "name": "Yearly Fund Inflows",
+      "category": "chart/bar-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/bar-chart/chart-9"
+    },
+    {
+      "slug": "chart-19",
+      "name": "DeFi Overview",
+      "category": "chart/composed-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/composed-chart/chart-19"
+    },
+    {
+      "slug": "chart-20",
+      "name": "Sales vs Goal",
+      "category": "chart/composed-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/composed-chart/chart-20"
+    },
+    {
+      "slug": "chart-21",
+      "name": "Cashflow Trend",
+      "category": "chart/composed-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/composed-chart/chart-21"
+    },
+    {
+      "slug": "chart-36",
+      "name": "Canary Analysis",
+      "category": "chart/composed-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/composed-chart/chart-36"
+    },
+    {
+      "slug": "chart-37",
+      "name": "Canary Rollback",
+      "category": "chart/composed-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/composed-chart/chart-37"
+    },
+    {
+      "slug": "chart-22",
+      "name": "Revenue Trend",
+      "category": "chart/line-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/line-chart/chart-22"
+    },
+    {
+      "slug": "chart-23",
+      "name": "Social Engagement",
+      "category": "chart/line-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/line-chart/chart-23"
+    },
+    {
+      "slug": "chart-24",
+      "name": "Sales vs Traffic",
+      "category": "chart/line-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/line-chart/chart-24"
+    },
+    {
+      "slug": "chart-26",
+      "name": "NFT Floor Price",
+      "category": "chart/line-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/line-chart/chart-26"
+    },
+    {
+      "slug": "chart-4",
+      "name": "Balance Tracker",
+      "category": "chart/line-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/line-chart/chart-4"
+    },
+    {
+      "slug": "chart-6",
+      "name": "Metric Switcher",
+      "category": "chart/line-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/line-chart/chart-6"
+    },
+    {
+      "slug": "chart-13",
+      "name": "Inflows by Source",
+      "category": "chart/pie-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/pie-chart/chart-13"
+    },
+    {
+      "slug": "chart-27",
+      "name": "Browser Usage",
+      "category": "chart/pie-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/pie-chart/chart-27"
+    },
+    {
+      "slug": "chart-12",
+      "name": "Inflows Gauge",
+      "category": "chart/radial-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/radial-chart/chart-12"
+    },
+    {
+      "slug": "chart-7",
+      "name": "Uptime and Coverage",
+      "category": "chart/radial-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/radial-chart/chart-7"
+    },
+    {
+      "slug": "chart-8",
+      "name": "API Health",
+      "category": "chart/radial-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/radial-chart/chart-8"
+    },
+    {
+      "slug": "chart-48",
+      "name": "Revenue Flow",
+      "category": "chart/sankey-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/sankey-chart/chart-48"
+    },
+    {
+      "slug": "chart-49",
+      "name": "Trial Journey",
+      "category": "chart/sankey-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/sankey-chart/chart-49"
+    },
+    {
+      "slug": "chart-53",
+      "name": "Pipeline Leakage",
+      "category": "chart/sankey-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/sankey-chart/chart-53"
+    },
+    {
+      "slug": "chart-50",
+      "name": "Error Budget Runway",
+      "category": "chart/slope-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/slope-chart/chart-50"
+    },
+    {
+      "slug": "chart-51",
+      "name": "Retention Crossover",
+      "category": "chart/slope-chart",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/slope-chart/chart-51"
+    },
+    {
+      "slug": "chart-1",
+      "name": "Inventory Health",
+      "category": "chart/sparkline",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/sparkline/chart-1"
+    },
+    {
+      "slug": "chart-11",
+      "name": "Distance Tracker",
+      "category": "chart/sparkline",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/sparkline/chart-11"
+    },
+    {
+      "slug": "chart-15",
+      "name": "KPI Trend Cards",
+      "category": "chart/sparkline",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/sparkline/chart-15"
+    },
+    {
+      "slug": "chart-2",
+      "name": "KPI Strip",
+      "category": "chart/sparkline",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/sparkline/chart-2"
+    },
+    {
+      "slug": "chart-25",
+      "name": "Order Metrics",
+      "category": "chart/sparkline",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/sparkline/chart-25"
+    },
+    {
+      "slug": "chart-3",
+      "name": "Wallet Balances",
+      "category": "chart/sparkline",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/sparkline/chart-3"
+    },
+    {
+      "slug": "chart-31",
+      "name": "Cron Job Health",
+      "category": "chart/sparkline",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/sparkline/chart-31"
+    },
+    {
+      "slug": "chart-41",
+      "name": "SLO Fleet Health",
+      "category": "chart/sparkline",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/sparkline/chart-41"
+    },
+    {
+      "slug": "chart-44",
+      "name": "SLO Budgets",
+      "category": "chart/sparkline",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/sparkline/chart-44"
+    },
+    {
+      "slug": "chart-46",
+      "name": "Connection Health",
+      "category": "chart/sparkline",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/sparkline/chart-46"
+    },
+    {
+      "slug": "chart-5",
+      "name": "Wealth Overview",
+      "category": "chart/sparkline",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/sparkline/chart-5"
+    },
+    {
+      "slug": "chart-34",
+      "name": "Cron Run History",
+      "category": "chart/status-tracker",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/status-tracker/chart-34"
+    },
+    {
+      "slug": "chart-38",
+      "name": "Release Lanes",
+      "category": "chart/status-tracker",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/status-tracker/chart-38"
+    },
+    {
+      "slug": "chart-39",
+      "name": "Deploy History",
+      "category": "chart/status-tracker",
+      "group": "chart",
+      "url": "https://reui.io/blocks/chart/status-tracker/chart-39"
+    },
+    {
+      "slug": "data-grid-advanced-1",
+      "name": "Ad Campaign Performance",
+      "category": "data-grid/advanced",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-1"
+    },
+    {
+      "slug": "data-grid-advanced-2",
+      "name": "Regional Store P&L",
+      "category": "data-grid/advanced",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-2"
+    },
+    {
+      "slug": "data-grid-advanced-3",
+      "name": "Campaign Target Review",
+      "category": "data-grid/advanced",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-3"
+    },
+    {
+      "slug": "data-grid-advanced-4",
+      "name": "SLO Reliability Index",
+      "category": "data-grid/advanced",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/advanced/data-grid-advanced-4"
+    },
+    {
+      "slug": "data-grid-base-1",
+      "name": "Customer Balances",
+      "category": "data-grid/base",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/base/data-grid-base-1"
+    },
+    {
+      "slug": "data-grid-base-2",
+      "name": "Lead Scoring Contacts",
+      "category": "data-grid/base",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/base/data-grid-base-2"
+    },
+    {
+      "slug": "data-grid-base-3",
+      "name": "Deal Pipeline",
+      "category": "data-grid/base",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/base/data-grid-base-3"
+    },
+    {
+      "slug": "data-grid-base-4",
+      "name": "Weekly Timesheet",
+      "category": "data-grid/base",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/base/data-grid-base-4"
+    },
+    {
+      "slug": "data-grid-base-5",
+      "name": "Support Tickets",
+      "category": "data-grid/base",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/base/data-grid-base-5"
+    },
+    {
+      "slug": "data-grid-base-6",
+      "name": "Team Members",
+      "category": "data-grid/base",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/base/data-grid-base-6"
+    },
+    {
+      "slug": "data-grid-base-7",
+      "name": "Project Modules",
+      "category": "data-grid/base",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/base/data-grid-base-7"
+    },
+    {
+      "slug": "data-grid-base-8",
+      "name": "Cloud Rate Card",
+      "category": "data-grid/base",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/base/data-grid-base-8"
+    },
+    {
+      "slug": "data-grid-columns-1",
+      "name": "Access Permissions Matrix",
+      "category": "data-grid/columns",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/columns/data-grid-columns-1"
+    },
+    {
+      "slug": "data-grid-columns-2",
+      "name": "Course Catalog",
+      "category": "data-grid/columns",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/columns/data-grid-columns-2"
+    },
+    {
+      "slug": "data-grid-columns-3",
+      "name": "Work Queue",
+      "category": "data-grid/columns",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/columns/data-grid-columns-3"
+    },
+    {
+      "slug": "data-grid-columns-4",
+      "name": "Member Display Columns",
+      "category": "data-grid/columns",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/columns/data-grid-columns-4"
+    },
+    {
+      "slug": "data-grid-columns-5",
+      "name": "Company Attributes",
+      "category": "data-grid/columns",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/columns/data-grid-columns-5"
+    },
+    {
+      "slug": "data-grid-drag-drop-1",
+      "name": "Sprint Backlog",
+      "category": "data-grid/drag-drop",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/drag-drop/data-grid-drag-drop-1"
+    },
+    {
+      "slug": "data-grid-drag-drop-2",
+      "name": "Routing Rules",
+      "category": "data-grid/drag-drop",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/drag-drop/data-grid-drag-drop-2"
+    },
+    {
+      "slug": "data-grid-drag-drop-3",
+      "name": "Dispatch Layout Presets",
+      "category": "data-grid/drag-drop",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/drag-drop/data-grid-drag-drop-3"
+    },
+    {
+      "slug": "data-grid-drag-drop-4",
+      "name": "Shared Drive Folders",
+      "category": "data-grid/drag-drop",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/drag-drop/data-grid-drag-drop-4"
+    },
+    {
+      "slug": "data-grid-editing-1",
+      "name": "Label Manager",
+      "category": "data-grid/editing",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/editing/data-grid-editing-1"
+    },
+    {
+      "slug": "data-grid-editing-2",
+      "name": "Product Inventory",
+      "category": "data-grid/editing",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/editing/data-grid-editing-2"
+    },
+    {
+      "slug": "data-grid-editing-3",
+      "name": "Project Intake",
+      "category": "data-grid/editing",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/editing/data-grid-editing-3"
+    },
+    {
+      "slug": "data-grid-editing-4",
+      "name": "Pricing Plan Editor",
+      "category": "data-grid/editing",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/editing/data-grid-editing-4"
+    },
+    {
+      "slug": "data-grid-editing-5",
+      "name": "Task Spreadsheet",
+      "category": "data-grid/editing",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/editing/data-grid-editing-5"
+    },
+    {
+      "slug": "data-grid-editing-6",
+      "name": "Stock Reorder Plan",
+      "category": "data-grid/editing",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/editing/data-grid-editing-6"
+    },
+    {
+      "slug": "data-grid-expansion-1",
+      "name": "Sub-Task Tracker",
+      "category": "data-grid/expansion",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/expansion/data-grid-expansion-1"
+    },
+    {
+      "slug": "data-grid-expansion-2",
+      "name": "Cash Flow Waterfall",
+      "category": "data-grid/expansion",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/expansion/data-grid-expansion-2"
+    },
+    {
+      "slug": "data-grid-expansion-3",
+      "name": "Release Approvals",
+      "category": "data-grid/expansion",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/expansion/data-grid-expansion-3"
+    },
+    {
+      "slug": "data-grid-filtering-1",
+      "name": "Billing Transactions",
+      "category": "data-grid/filtering",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/filtering/data-grid-filtering-1"
+    },
+    {
+      "slug": "data-grid-filtering-2",
+      "name": "Automation Library",
+      "category": "data-grid/filtering",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/filtering/data-grid-filtering-2"
+    },
+    {
+      "slug": "data-grid-filtering-3",
+      "name": "Renewal Reassignment",
+      "category": "data-grid/filtering",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/filtering/data-grid-filtering-3"
+    },
+    {
+      "slug": "data-grid-filtering-4",
+      "name": "At-Risk Renewals",
+      "category": "data-grid/filtering",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/filtering/data-grid-filtering-4"
+    },
+    {
+      "slug": "data-grid-grouping-1",
+      "name": "Roadmap by Stage",
+      "category": "data-grid/grouping",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/grouping/data-grid-grouping-1"
+    },
+    {
+      "slug": "data-grid-grouping-2",
+      "name": "Revenue by Region",
+      "category": "data-grid/grouping",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/grouping/data-grid-grouping-2"
+    },
+    {
+      "slug": "data-grid-grouping-3",
+      "name": "Patient Access Cohorts",
+      "category": "data-grid/grouping",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/grouping/data-grid-grouping-3"
+    },
+    {
+      "slug": "data-grid-grouping-4",
+      "name": "Bill of Materials",
+      "category": "data-grid/grouping",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/grouping/data-grid-grouping-4"
+    },
+    {
+      "slug": "data-grid-grouping-5",
+      "name": "Reporting Hierarchy",
+      "category": "data-grid/grouping",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/grouping/data-grid-grouping-5"
+    },
+    {
+      "slug": "data-grid-grouping-6",
+      "name": "Editorial Pipeline",
+      "category": "data-grid/grouping",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/grouping/data-grid-grouping-6"
+    },
+    {
+      "slug": "data-grid-grouping-7",
+      "name": "Studio Delivery Board",
+      "category": "data-grid/grouping",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/grouping/data-grid-grouping-7"
+    },
+    {
+      "slug": "data-grid-virtualization-1",
+      "name": "Card Payments Ledger",
+      "category": "data-grid/virtualization",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/virtualization/data-grid-virtualization-1"
+    },
+    {
+      "slug": "data-grid-virtualization-2",
+      "name": "Shipment Exceptions",
+      "category": "data-grid/virtualization",
+      "group": "data-grid",
+      "url": "https://reui.io/blocks/data-grid/virtualization/data-grid-virtualization-2"
+    },
+    {
+      "slug": "category-card-1",
+      "name": "Category Browse Grid",
+      "category": "ecommerce/category-card",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/category-card/category-card-1"
+    },
+    {
+      "slug": "category-card-2",
+      "name": "Filterable Collections",
+      "category": "ecommerce/category-card",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/category-card/category-card-2"
+    },
+    {
+      "slug": "category-card-3",
+      "name": "Category Carousel",
+      "category": "ecommerce/category-card",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/category-card/category-card-3"
+    },
+    {
+      "slug": "category-card-4",
+      "name": "Featured Department",
+      "category": "ecommerce/category-card",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/category-card/category-card-4"
+    },
+    {
+      "slug": "category-card-5",
+      "name": "Collection Guides",
+      "category": "ecommerce/category-card",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/category-card/category-card-5"
+    },
+    {
+      "slug": "category-card-6",
+      "name": "Seasonal Categories",
+      "category": "ecommerce/category-card",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/category-card/category-card-6"
+    },
+    {
+      "slug": "checkout-1",
+      "name": "Sign-In Checkout",
+      "category": "ecommerce/checkout",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/checkout/checkout-1"
+    },
+    {
+      "slug": "checkout-2",
+      "name": "Trust Strip Checkout",
+      "category": "ecommerce/checkout",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/checkout/checkout-2"
+    },
+    {
+      "slug": "checkout-3",
+      "name": "AI Credit Checkout",
+      "category": "ecommerce/checkout",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/checkout/checkout-3"
+    },
+    {
+      "slug": "checkout-4",
+      "name": "Express Checkout",
+      "category": "ecommerce/checkout",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/checkout/checkout-4"
+    },
+    {
+      "slug": "checkout-5",
+      "name": "Order Review Checkout",
+      "category": "ecommerce/checkout",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/checkout/checkout-5"
+    },
+    {
+      "slug": "checkout-6",
+      "name": "One-Page Checkout",
+      "category": "ecommerce/checkout",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/checkout/checkout-6"
+    },
+    {
+      "slug": "checkout-7",
+      "name": "Social Sign-In Checkout",
+      "category": "ecommerce/checkout",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/checkout/checkout-7"
+    },
+    {
+      "slug": "comparison-1",
+      "name": "Spec Comparison Table",
+      "category": "ecommerce/comparison",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/comparison/comparison-1"
+    },
+    {
+      "slug": "comparison-2",
+      "name": "Two-Product Compare",
+      "category": "ecommerce/comparison",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/comparison/comparison-2"
+    },
+    {
+      "slug": "comparison-3",
+      "name": "Buying Guide Picks",
+      "category": "ecommerce/comparison",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/comparison/comparison-3"
+    },
+    {
+      "slug": "comparison-4",
+      "name": "Ranked Scorecards",
+      "category": "ecommerce/comparison",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/comparison/comparison-4"
+    },
+    {
+      "slug": "comparison-5",
+      "name": "Alternatives Switcher",
+      "category": "ecommerce/comparison",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/comparison/comparison-5"
+    },
+    {
+      "slug": "comparison-6",
+      "name": "Compare Builder",
+      "category": "ecommerce/comparison",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/comparison/comparison-6"
+    },
+    {
+      "slug": "coupon-1",
+      "name": "Promo Code Hero",
+      "category": "ecommerce/coupon",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/coupon/coupon-1"
+    },
+    {
+      "slug": "coupon-2",
+      "name": "Filterable Coupons",
+      "category": "ecommerce/coupon",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/coupon/coupon-2"
+    },
+    {
+      "slug": "coupon-3",
+      "name": "Member Early Access",
+      "category": "ecommerce/coupon",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/coupon/coupon-3"
+    },
+    {
+      "slug": "coupon-4",
+      "name": "Offer Terms Card",
+      "category": "ecommerce/coupon",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/coupon/coupon-4"
+    },
+    {
+      "slug": "coupon-5",
+      "name": "Free Shipping Bar",
+      "category": "ecommerce/coupon",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/coupon/coupon-5"
+    },
+    {
+      "slug": "coupon-6",
+      "name": "Flash Sale Bar",
+      "category": "ecommerce/coupon",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/coupon/coupon-6"
+    },
+    {
+      "slug": "filter-sidebar-1",
+      "name": "Core Facets Filter",
+      "category": "ecommerce/filter-sidebar",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/filter-sidebar/filter-sidebar-1"
+    },
+    {
+      "slug": "filter-sidebar-2",
+      "name": "Apply Bar Filters",
+      "category": "ecommerce/filter-sidebar",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/filter-sidebar/filter-sidebar-2"
+    },
+    {
+      "slug": "filter-sidebar-3",
+      "name": "Department Facet Filter",
+      "category": "ecommerce/filter-sidebar",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/filter-sidebar/filter-sidebar-3"
+    },
+    {
+      "slug": "filter-sidebar-4",
+      "name": "Full Facet Panel",
+      "category": "ecommerce/filter-sidebar",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/filter-sidebar/filter-sidebar-4"
+    },
+    {
+      "slug": "filter-sidebar-5",
+      "name": "Slide-Out Filters",
+      "category": "ecommerce/filter-sidebar",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/filter-sidebar/filter-sidebar-5"
+    },
+    {
+      "slug": "filter-sidebar-6",
+      "name": "Accordion Filters",
+      "category": "ecommerce/filter-sidebar",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/filter-sidebar/filter-sidebar-6"
+    },
+    {
+      "slug": "filter-sidebar-7",
+      "name": "Multi-Open Filters",
+      "category": "ecommerce/filter-sidebar",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/filter-sidebar/filter-sidebar-7"
+    },
+    {
+      "slug": "product-card-1",
+      "name": "Apparel Wishlist Grid",
+      "category": "ecommerce/product-card",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-card/product-card-1"
+    },
+    {
+      "slug": "product-card-10",
+      "name": "Fashion Lookbook Grid",
+      "category": "ecommerce/product-card",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-card/product-card-10"
+    },
+    {
+      "slug": "product-card-2",
+      "name": "Colorway Catalog",
+      "category": "ecommerce/product-card",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-card/product-card-2"
+    },
+    {
+      "slug": "product-card-3",
+      "name": "Quick Buy Card",
+      "category": "ecommerce/product-card",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-card/product-card-3"
+    },
+    {
+      "slug": "product-card-4",
+      "name": "Related Products",
+      "category": "ecommerce/product-card",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-card/product-card-4"
+    },
+    {
+      "slug": "product-card-5",
+      "name": "Featured Product",
+      "category": "ecommerce/product-card",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-card/product-card-5"
+    },
+    {
+      "slug": "product-card-6",
+      "name": "Masonry Gallery",
+      "category": "ecommerce/product-card",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-card/product-card-6"
+    },
+    {
+      "slug": "product-card-7",
+      "name": "New Arrivals Carousel",
+      "category": "ecommerce/product-card",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-card/product-card-7"
+    },
+    {
+      "slug": "product-card-8",
+      "name": "Rated Product Grid",
+      "category": "ecommerce/product-card",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-card/product-card-8"
+    },
+    {
+      "slug": "product-card-9",
+      "name": "Four-Column Catalog",
+      "category": "ecommerce/product-card",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-card/product-card-9"
+    },
+    {
+      "slug": "product-detail-1",
+      "name": "Size Picker Detail",
+      "category": "ecommerce/product-detail",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-detail/product-detail-1"
+    },
+    {
+      "slug": "product-detail-2",
+      "name": "Story Product Page",
+      "category": "ecommerce/product-detail",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-detail/product-detail-2"
+    },
+    {
+      "slug": "product-detail-3",
+      "name": "Spec Table Detail",
+      "category": "ecommerce/product-detail",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-detail/product-detail-3"
+    },
+    {
+      "slug": "product-detail-4",
+      "name": "Ebook Detail Page",
+      "category": "ecommerce/product-detail",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-detail/product-detail-4"
+    },
+    {
+      "slug": "product-detail-5",
+      "name": "Compact Buy Box",
+      "category": "ecommerce/product-detail",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-detail/product-detail-5"
+    },
+    {
+      "slug": "product-detail-6",
+      "name": "Single-Column Detail",
+      "category": "ecommerce/product-detail",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-detail/product-detail-6"
+    },
+    {
+      "slug": "product-grid-1",
+      "name": "Swatch Swap Grid",
+      "category": "ecommerce/product-grid",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-grid/product-grid-1"
+    },
+    {
+      "slug": "product-grid-2",
+      "name": "Stacked Panel Grid",
+      "category": "ecommerce/product-grid",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-grid/product-grid-2"
+    },
+    {
+      "slug": "product-grid-3",
+      "name": "Add-to-Cart Grid",
+      "category": "ecommerce/product-grid",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-grid/product-grid-3"
+    },
+    {
+      "slug": "product-grid-4",
+      "name": "Numbered Story Grid",
+      "category": "ecommerce/product-grid",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-grid/product-grid-4"
+    },
+    {
+      "slug": "product-grid-5",
+      "name": "Quick Size Grid",
+      "category": "ecommerce/product-grid",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-grid/product-grid-5"
+    },
+    {
+      "slug": "product-grid-6",
+      "name": "Shop-the-Look Grid",
+      "category": "ecommerce/product-grid",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/product-grid/product-grid-6"
+    },
+    {
+      "slug": "receipt-1",
+      "name": "Order Confirmation",
+      "category": "ecommerce/receipt",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/receipt/receipt-1"
+    },
+    {
+      "slug": "receipt-2",
+      "name": "Order Tracking Timeline",
+      "category": "ecommerce/receipt",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/receipt/receipt-2"
+    },
+    {
+      "slug": "receipt-3",
+      "name": "Till Slip Receipt",
+      "category": "ecommerce/receipt",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/receipt/receipt-3"
+    },
+    {
+      "slug": "receipt-4",
+      "name": "Delivered Order Receipt",
+      "category": "ecommerce/receipt",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/receipt/receipt-4"
+    },
+    {
+      "slug": "receipt-5",
+      "name": "Statement Receipt",
+      "category": "ecommerce/receipt",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/receipt/receipt-5"
+    },
+    {
+      "slug": "receipt-6",
+      "name": "Post-Purchase Actions",
+      "category": "ecommerce/receipt",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/receipt/receipt-6"
+    },
+    {
+      "slug": "review-1",
+      "name": "Avatar Review Carousel",
+      "category": "ecommerce/review",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/review/review-1"
+    },
+    {
+      "slug": "review-2",
+      "name": "Topic Filter Reviews",
+      "category": "ecommerce/review",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/review/review-2"
+    },
+    {
+      "slug": "review-3",
+      "name": "Rating Summary Reviews",
+      "category": "ecommerce/review",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/review/review-3"
+    },
+    {
+      "slug": "review-4",
+      "name": "Pull-Quote Reviews",
+      "category": "ecommerce/review",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/review/review-4"
+    },
+    {
+      "slug": "review-5",
+      "name": "Testimonial Carousel",
+      "category": "ecommerce/review",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/review/review-5"
+    },
+    {
+      "slug": "review-6",
+      "name": "Star-Led Reviews",
+      "category": "ecommerce/review",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/review/review-6"
+    },
+    {
+      "slug": "shop-hero-1",
+      "name": "Live Cart Hero",
+      "category": "ecommerce/shop-hero",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/shop-hero/shop-hero-1"
+    },
+    {
+      "slug": "shop-hero-2",
+      "name": "Bento Shop Hero",
+      "category": "ecommerce/shop-hero",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/shop-hero/shop-hero-2"
+    },
+    {
+      "slug": "shop-hero-3",
+      "name": "Countdown Deal Hero",
+      "category": "ecommerce/shop-hero",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/shop-hero/shop-hero-3"
+    },
+    {
+      "slug": "shop-hero-4",
+      "name": "Category Shop Hero",
+      "category": "ecommerce/shop-hero",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/shop-hero/shop-hero-4"
+    },
+    {
+      "slug": "shop-hero-5",
+      "name": "Dual Collection Hero",
+      "category": "ecommerce/shop-hero",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/shop-hero/shop-hero-5"
+    },
+    {
+      "slug": "shop-hero-6",
+      "name": "Seasonal Lookbook Hero",
+      "category": "ecommerce/shop-hero",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/shop-hero/shop-hero-6"
+    },
+    {
+      "slug": "shop-hero-7",
+      "name": "Collection Switcher",
+      "category": "ecommerce/shop-hero",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/shop-hero/shop-hero-7"
+    },
+    {
+      "slug": "shop-hero-8",
+      "name": "Collection Quilt",
+      "category": "ecommerce/shop-hero",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/shop-hero/shop-hero-8"
+    },
+    {
+      "slug": "shopping-cart-1",
+      "name": "Save-for-Later Cart",
+      "category": "ecommerce/shopping-cart",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/shopping-cart/shopping-cart-1"
+    },
+    {
+      "slug": "shopping-cart-2",
+      "name": "Delivery Summary Cart",
+      "category": "ecommerce/shopping-cart",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/shopping-cart/shopping-cart-2"
+    },
+    {
+      "slug": "shopping-cart-3",
+      "name": "Data Table Cart",
+      "category": "ecommerce/shopping-cart",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/shopping-cart/shopping-cart-3"
+    },
+    {
+      "slug": "shopping-cart-4",
+      "name": "Pickup Option Cart",
+      "category": "ecommerce/shopping-cart",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/shopping-cart/shopping-cart-4"
+    },
+    {
+      "slug": "shopping-cart-5",
+      "name": "Payment Method Cart",
+      "category": "ecommerce/shopping-cart",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/shopping-cart/shopping-cart-5"
+    },
+    {
+      "slug": "shopping-cart-6",
+      "name": "Cart Dropdown",
+      "category": "ecommerce/shopping-cart",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/shopping-cart/shopping-cart-6"
+    },
+    {
+      "slug": "shopping-cart-7",
+      "name": "Add-to-Cart Drawer",
+      "category": "ecommerce/shopping-cart",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/shopping-cart/shopping-cart-7"
+    },
+    {
+      "slug": "wishlist-1",
+      "name": "Bulk Action Wishlist",
+      "category": "ecommerce/wishlist",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/wishlist/wishlist-1"
+    },
+    {
+      "slug": "wishlist-2",
+      "name": "Restock Alert Wishlist",
+      "category": "ecommerce/wishlist",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/wishlist/wishlist-2"
+    },
+    {
+      "slug": "wishlist-3",
+      "name": "Move-to-Cart Wishlist",
+      "category": "ecommerce/wishlist",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/wishlist/wishlist-3"
+    },
+    {
+      "slug": "wishlist-4",
+      "name": "Wishlist Boards",
+      "category": "ecommerce/wishlist",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/wishlist/wishlist-4"
+    },
+    {
+      "slug": "wishlist-5",
+      "name": "Priority Wishlist",
+      "category": "ecommerce/wishlist",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/wishlist/wishlist-5"
+    },
+    {
+      "slug": "wishlist-6",
+      "name": "Collection Rail Wishlist",
+      "category": "ecommerce/wishlist",
+      "group": "ecommerce",
+      "url": "https://reui.io/blocks/ecommerce/wishlist/wishlist-6"
+    },
+    {
+      "slug": "blog-1",
+      "name": "Blog Index Grid",
+      "category": "marketing/blog",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/blog/blog-1"
+    },
+    {
+      "slug": "blog-2",
+      "name": "Cover Story Cards",
+      "category": "marketing/blog",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/blog/blog-2"
+    },
+    {
+      "slug": "blog-3",
+      "name": "Article Slider",
+      "category": "marketing/blog",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/blog/blog-3"
+    },
+    {
+      "slug": "blog-4",
+      "name": "News & Insights",
+      "category": "marketing/blog",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/blog/blog-4"
+    },
+    {
+      "slug": "blog-5",
+      "name": "Article Detail",
+      "category": "marketing/blog",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/blog/blog-5"
+    },
+    {
+      "slug": "blog-6",
+      "name": "Read Next Post",
+      "category": "marketing/blog",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/blog/blog-6"
+    },
+    {
+      "slug": "compare-1",
+      "name": "Old vs New",
+      "category": "marketing/compare",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/compare/compare-1"
+    },
+    {
+      "slug": "compare-2",
+      "name": "Feature Matrix",
+      "category": "marketing/compare",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/compare/compare-2"
+    },
+    {
+      "slug": "compare-3",
+      "name": "Tool vs Manual",
+      "category": "marketing/compare",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/compare/compare-3"
+    },
+    {
+      "slug": "contact-1",
+      "name": "Single Email Contact",
+      "category": "marketing/contact",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/contact/contact-1"
+    },
+    {
+      "slug": "contact-2",
+      "name": "Project Brief Form",
+      "category": "marketing/contact",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/contact/contact-2"
+    },
+    {
+      "slug": "contact-3",
+      "name": "Topic Contact Form",
+      "category": "marketing/contact",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/contact/contact-3"
+    },
+    {
+      "slug": "contact-4",
+      "name": "Global Offices",
+      "category": "marketing/contact",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/contact/contact-4"
+    },
+    {
+      "slug": "contact-5",
+      "name": "Project Inquiry",
+      "category": "marketing/contact",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/contact/contact-5"
+    },
+    {
+      "slug": "contact-6",
+      "name": "Support Channels",
+      "category": "marketing/contact",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/contact/contact-6"
+    },
+    {
+      "slug": "cta-1",
+      "name": "Newsletter CTA",
+      "category": "marketing/cta",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/cta/cta-1"
+    },
+    {
+      "slug": "cta-10",
+      "name": "Tool Handoff CTA",
+      "category": "marketing/cta",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/cta/cta-10"
+    },
+    {
+      "slug": "cta-11",
+      "name": "Customer Logos CTA",
+      "category": "marketing/cta",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/cta/cta-11"
+    },
+    {
+      "slug": "cta-12",
+      "name": "Proof Points CTA",
+      "category": "marketing/cta",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/cta/cta-12"
+    },
+    {
+      "slug": "cta-13",
+      "name": "MCP Integrations CTA",
+      "category": "marketing/cta",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/cta/cta-13"
+    },
+    {
+      "slug": "cta-14",
+      "name": "Release Updates Signup",
+      "category": "marketing/cta",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/cta/cta-14"
+    },
+    {
+      "slug": "cta-15",
+      "name": "Outcome Checklist CTA",
+      "category": "marketing/cta",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/cta/cta-15"
+    },
+    {
+      "slug": "cta-16",
+      "name": "Sales Contact CTA",
+      "category": "marketing/cta",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/cta/cta-16"
+    },
+    {
+      "slug": "cta-17",
+      "name": "Review Rating CTA",
+      "category": "marketing/cta",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/cta/cta-17"
+    },
+    {
+      "slug": "cta-2",
+      "name": "Feature Strip CTA",
+      "category": "marketing/cta",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/cta/cta-2"
+    },
+    {
+      "slug": "cta-3",
+      "name": "Work Email CTA",
+      "category": "marketing/cta",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/cta/cta-3"
+    },
+    {
+      "slug": "cta-4",
+      "name": "Proof Grid CTA",
+      "category": "marketing/cta",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/cta/cta-4"
+    },
+    {
+      "slug": "cta-5",
+      "name": "Headline Only CTA",
+      "category": "marketing/cta",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/cta/cta-5"
+    },
+    {
+      "slug": "cta-6",
+      "name": "Final Conversion CTA",
+      "category": "marketing/cta",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/cta/cta-6"
+    },
+    {
+      "slug": "cta-7",
+      "name": "Agency Booking CTA",
+      "category": "marketing/cta",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/cta/cta-7"
+    },
+    {
+      "slug": "cta-8",
+      "name": "Footer Docs CTA",
+      "category": "marketing/cta",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/cta/cta-8"
+    },
+    {
+      "slug": "cta-9",
+      "name": "Space Launch CTA",
+      "category": "marketing/cta",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/cta/cta-9"
+    },
+    {
+      "slug": "faq-1",
+      "name": "Category Tabs FAQ",
+      "category": "marketing/faq",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/faq/faq-1"
+    },
+    {
+      "slug": "faq-2",
+      "name": "Two-Column FAQ",
+      "category": "marketing/faq",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/faq/faq-2"
+    },
+    {
+      "slug": "faq-3",
+      "name": "Open Answers FAQ",
+      "category": "marketing/faq",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/faq/faq-3"
+    },
+    {
+      "slug": "faq-4",
+      "name": "Single-Column FAQ",
+      "category": "marketing/faq",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/faq/faq-4"
+    },
+    {
+      "slug": "faq-5",
+      "name": "Support Sidecard FAQ",
+      "category": "marketing/faq",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/faq/faq-5"
+    },
+    {
+      "slug": "faq-6",
+      "name": "Support Footer FAQ",
+      "category": "marketing/faq",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/faq/faq-6"
+    },
+    {
+      "slug": "hero-1",
+      "name": "MCP Usage Hero",
+      "category": "marketing/hero",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/hero/hero-1"
+    },
+    {
+      "slug": "hero-10",
+      "name": "Code Editor Hero",
+      "category": "marketing/hero",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/hero/hero-10"
+    },
+    {
+      "slug": "hero-11",
+      "name": "Feature Swap Hero",
+      "category": "marketing/hero",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/hero/hero-11"
+    },
+    {
+      "slug": "hero-12",
+      "name": "Brand Cloud Hero",
+      "category": "marketing/hero",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/hero/hero-12"
+    },
+    {
+      "slug": "hero-13",
+      "name": "Creator Cloud Hero",
+      "category": "marketing/hero",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/hero/hero-13"
+    },
+    {
+      "slug": "hero-14",
+      "name": "Split Header Hero",
+      "category": "marketing/hero",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/hero/hero-14"
+    },
+    {
+      "slug": "hero-15",
+      "name": "Linked Features Hero",
+      "category": "marketing/hero",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/hero/hero-15"
+    },
+    {
+      "slug": "hero-16",
+      "name": "Built-to-Ship Hero",
+      "category": "marketing/hero",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/hero/hero-16"
+    },
+    {
+      "slug": "hero-2",
+      "name": "Revenue Console Hero",
+      "category": "marketing/hero",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/hero/hero-2"
+    },
+    {
+      "slug": "hero-3",
+      "name": "Capability Chips Hero",
+      "category": "marketing/hero",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/hero/hero-3"
+    },
+    {
+      "slug": "hero-4",
+      "name": "People Console Hero",
+      "category": "marketing/hero",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/hero/hero-4"
+    },
+    {
+      "slug": "hero-5",
+      "name": "Integrations Hero",
+      "category": "marketing/hero",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/hero/hero-5"
+    },
+    {
+      "slug": "hero-6",
+      "name": "Security Console Hero",
+      "category": "marketing/hero",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/hero/hero-6"
+    },
+    {
+      "slug": "hero-7",
+      "name": "Console-First Waitlist",
+      "category": "marketing/hero",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/hero/hero-7"
+    },
+    {
+      "slug": "hero-8",
+      "name": "Waitlist Hero",
+      "category": "marketing/hero",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/hero/hero-8"
+    },
+    {
+      "slug": "hero-9",
+      "name": "Tabbed Console Hero",
+      "category": "marketing/hero",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/hero/hero-9"
+    },
+    {
+      "slug": "how-it-works-1",
+      "name": "Three-Step Explainer",
+      "category": "marketing/how-it-works",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/how-it-works/how-it-works-1"
+    },
+    {
+      "slug": "how-it-works-2",
+      "name": "Onboarding Step Cards",
+      "category": "marketing/how-it-works",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/how-it-works/how-it-works-2"
+    },
+    {
+      "slug": "how-it-works-3",
+      "name": "Setup Guide Cards",
+      "category": "marketing/how-it-works",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/how-it-works/how-it-works-3"
+    },
+    {
+      "slug": "how-it-works-4",
+      "name": "Product Tour Tabs",
+      "category": "marketing/how-it-works",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/how-it-works/how-it-works-4"
+    },
+    {
+      "slug": "how-it-works-5",
+      "name": "Vertical Demo Tabs",
+      "category": "marketing/how-it-works",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/how-it-works/how-it-works-5"
+    },
+    {
+      "slug": "pricing-1",
+      "name": "Seat Stepper Pricing",
+      "category": "marketing/pricing",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/pricing/pricing-1"
+    },
+    {
+      "slug": "pricing-2",
+      "name": "Plan Comparison",
+      "category": "marketing/pricing",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/pricing/pricing-2"
+    },
+    {
+      "slug": "pricing-3",
+      "name": "Per-Seat Pricing",
+      "category": "marketing/pricing",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/pricing/pricing-3"
+    },
+    {
+      "slug": "pricing-4",
+      "name": "Customer Logo Pricing",
+      "category": "marketing/pricing",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/pricing/pricing-4"
+    },
+    {
+      "slug": "pricing-5",
+      "name": "Pricing FAQ Links",
+      "category": "marketing/pricing",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/pricing/pricing-5"
+    },
+    {
+      "slug": "pricing-6",
+      "name": "Agency Pricing",
+      "category": "marketing/pricing",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/pricing/pricing-6"
+    },
+    {
+      "slug": "pricing-7",
+      "name": "Upgrade Plan Dialog",
+      "category": "marketing/pricing",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/pricing/pricing-7"
+    },
+    {
+      "slug": "pricing-8",
+      "name": "Usage Limit Upgrade",
+      "category": "marketing/pricing",
+      "group": "marketing",
+      "url": "https://reui.io/blocks/marketing/pricing/pricing-8"
+    },
+    {
+      "slug": "solution-agents-1",
+      "name": "Agent Fleet Overview",
+      "category": "solutions/agents",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/agents/solution-agents-1"
+    },
+    {
+      "slug": "solution-agents-10",
+      "name": "Agent Run Settings",
+      "category": "solutions/agents",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/agents/solution-agents-10"
+    },
+    {
+      "slug": "solution-agents-2",
+      "name": "Agent Run Queue",
+      "category": "solutions/agents",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/agents/solution-agents-2"
+    },
+    {
+      "slug": "solution-agents-3",
+      "name": "Run Step Trace",
+      "category": "solutions/agents",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/agents/solution-agents-3"
+    },
+    {
+      "slug": "solution-agents-4",
+      "name": "Tool Access Matrix",
+      "category": "solutions/agents",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/agents/solution-agents-4"
+    },
+    {
+      "slug": "solution-agents-5",
+      "name": "Action Approval Inbox",
+      "category": "solutions/agents",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/agents/solution-agents-5"
+    },
+    {
+      "slug": "solution-agents-6",
+      "name": "Playbook Builder",
+      "category": "solutions/agents",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/agents/solution-agents-6"
+    },
+    {
+      "slug": "solution-agents-7",
+      "name": "Failed Run Triage",
+      "category": "solutions/agents",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/agents/solution-agents-7"
+    },
+    {
+      "slug": "solution-agents-8",
+      "name": "Agent Eval Report",
+      "category": "solutions/agents",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/agents/solution-agents-8"
+    },
+    {
+      "slug": "solution-agents-9",
+      "name": "Agent Memory",
+      "category": "solutions/agents",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/agents/solution-agents-9"
+    },
+    {
+      "slug": "solution-ai-ops-1",
+      "name": "AI Ops Dashboard",
+      "category": "solutions/ai-ops",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/ai-ops/solution-ai-ops-1"
+    },
+    {
+      "slug": "solution-ai-ops-2",
+      "name": "Provider Connections",
+      "category": "solutions/ai-ops",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/ai-ops/solution-ai-ops-2"
+    },
+    {
+      "slug": "solution-ai-ops-3",
+      "name": "Prompt Review Queue",
+      "category": "solutions/ai-ops",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/ai-ops/solution-ai-ops-3"
+    },
+    {
+      "slug": "solution-ai-ops-4",
+      "name": "Prompt Editor",
+      "category": "solutions/ai-ops",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/ai-ops/solution-ai-ops-4"
+    },
+    {
+      "slug": "solution-ai-ops-5",
+      "name": "Model Routing Policy",
+      "category": "solutions/ai-ops",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/ai-ops/solution-ai-ops-5"
+    },
+    {
+      "slug": "solution-ai-ops-6",
+      "name": "AI Feature Flags",
+      "category": "solutions/ai-ops",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/ai-ops/solution-ai-ops-6"
+    },
+    {
+      "slug": "solution-ai-ops-7",
+      "name": "Safety Policy Builder",
+      "category": "solutions/ai-ops",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/ai-ops/solution-ai-ops-7"
+    },
+    {
+      "slug": "solution-ai-ops-8",
+      "name": "Token Spend Ledger",
+      "category": "solutions/ai-ops",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/ai-ops/solution-ai-ops-8"
+    },
+    {
+      "slug": "solution-ai-ops-9",
+      "name": "Spend vs Budget",
+      "category": "solutions/ai-ops",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/ai-ops/solution-ai-ops-9"
+    },
+    {
+      "slug": "solution-analytics-1",
+      "name": "Product Signals",
+      "category": "solutions/analytics",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/analytics/solution-analytics-1"
+    },
+    {
+      "slug": "solution-analytics-2",
+      "name": "Feature Adoption Report",
+      "category": "solutions/analytics",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/analytics/solution-analytics-2"
+    },
+    {
+      "slug": "solution-analytics-3",
+      "name": "Activation Funnel",
+      "category": "solutions/analytics",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/analytics/solution-analytics-3"
+    },
+    {
+      "slug": "solution-analytics-4",
+      "name": "Cohort Retention",
+      "category": "solutions/analytics",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/analytics/solution-analytics-4"
+    },
+    {
+      "slug": "solution-analytics-5",
+      "name": "Event Catalog",
+      "category": "solutions/analytics",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/analytics/solution-analytics-5"
+    },
+    {
+      "slug": "solution-analytics-6",
+      "name": "Segment Validation",
+      "category": "solutions/analytics",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/analytics/solution-analytics-6"
+    },
+    {
+      "slug": "solution-analytics-7",
+      "name": "Experiment Report",
+      "category": "solutions/analytics",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/analytics/solution-analytics-7"
+    },
+    {
+      "slug": "solution-analytics-8",
+      "name": "Metric Deep Dive",
+      "category": "solutions/analytics",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/analytics/solution-analytics-8"
+    },
+    {
+      "slug": "solution-analytics-9",
+      "name": "Alert Rules",
+      "category": "solutions/analytics",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/analytics/solution-analytics-9"
+    },
+    {
+      "slug": "solution-billing-1",
+      "name": "Invoice Ledger",
+      "category": "solutions/billing",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/billing/solution-billing-1"
+    },
+    {
+      "slug": "solution-billing-2",
+      "name": "Plan Catalog",
+      "category": "solutions/billing",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/billing/solution-billing-2"
+    },
+    {
+      "slug": "solution-billing-3",
+      "name": "Subscription Lifecycle",
+      "category": "solutions/billing",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/billing/solution-billing-3"
+    },
+    {
+      "slug": "solution-billing-4",
+      "name": "Billing Account Detail",
+      "category": "solutions/billing",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/billing/solution-billing-4"
+    },
+    {
+      "slug": "solution-billing-5",
+      "name": "Invoice Builder",
+      "category": "solutions/billing",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/billing/solution-billing-5"
+    },
+    {
+      "slug": "solution-billing-6",
+      "name": "Dunning Queue",
+      "category": "solutions/billing",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/billing/solution-billing-6"
+    },
+    {
+      "slug": "solution-billing-7",
+      "name": "Usage Event Ledger",
+      "category": "solutions/billing",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/billing/solution-billing-7"
+    },
+    {
+      "slug": "solution-billing-8",
+      "name": "Plan Change",
+      "category": "solutions/billing",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/billing/solution-billing-8"
+    },
+    {
+      "slug": "solution-billing-9",
+      "name": "Coupon Manager",
+      "category": "solutions/billing",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/billing/solution-billing-9"
+    },
+    {
+      "slug": "solution-bookings-1",
+      "name": "Salon Front Desk",
+      "category": "solutions/bookings",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/bookings/solution-bookings-1"
+    },
+    {
+      "slug": "solution-bookings-2",
+      "name": "Appointment Calendar",
+      "category": "solutions/bookings",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/bookings/solution-bookings-2"
+    },
+    {
+      "slug": "solution-bookings-3",
+      "name": "Appointment Detail",
+      "category": "solutions/bookings",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/bookings/solution-bookings-3"
+    },
+    {
+      "slug": "solution-crm-1",
+      "name": "Pipeline Dashboard",
+      "category": "solutions/crm",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/crm/solution-crm-1"
+    },
+    {
+      "slug": "solution-crm-2",
+      "name": "Deal Board",
+      "category": "solutions/crm",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/crm/solution-crm-2"
+    },
+    {
+      "slug": "solution-crm-3",
+      "name": "Contacts Directory",
+      "category": "solutions/crm",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/crm/solution-crm-3"
+    },
+    {
+      "slug": "solution-crm-4",
+      "name": "Deal Sheet",
+      "category": "solutions/crm",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/crm/solution-crm-4"
+    },
+    {
+      "slug": "solution-crm-5",
+      "name": "Activity Timeline",
+      "category": "solutions/crm",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/crm/solution-crm-5"
+    },
+    {
+      "slug": "solution-crm-6",
+      "name": "CSV Import",
+      "category": "solutions/crm",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/crm/solution-crm-6"
+    },
+    {
+      "slug": "solution-crm-7",
+      "name": "Pipeline Workspace",
+      "category": "solutions/crm",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/crm/solution-crm-7"
+    },
+    {
+      "slug": "solution-crm-8",
+      "name": "Forecast Call",
+      "category": "solutions/crm",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/crm/solution-crm-8"
+    },
+    {
+      "slug": "solution-crm-9",
+      "name": "Deal Desk",
+      "category": "solutions/crm",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/crm/solution-crm-9"
+    },
+    {
+      "slug": "solution-dev-ops-1",
+      "name": "Cron Jobs",
+      "category": "solutions/dev-ops",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/dev-ops/solution-dev-ops-1"
+    },
+    {
+      "slug": "solution-dev-ops-2",
+      "name": "Infra Audit Log",
+      "category": "solutions/dev-ops",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/dev-ops/solution-dev-ops-2"
+    },
+    {
+      "slug": "solution-dev-ops-3",
+      "name": "Deployments",
+      "category": "solutions/dev-ops",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/dev-ops/solution-dev-ops-3"
+    },
+    {
+      "slug": "solution-dev-ops-4",
+      "name": "Firewall Rules",
+      "category": "solutions/dev-ops",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/dev-ops/solution-dev-ops-4"
+    },
+    {
+      "slug": "solution-dev-ops-5",
+      "name": "SLO Error Budgets",
+      "category": "solutions/dev-ops",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/dev-ops/solution-dev-ops-5"
+    },
+    {
+      "slug": "solution-dev-ops-6",
+      "name": "Data Connections",
+      "category": "solutions/dev-ops",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/dev-ops/solution-dev-ops-6"
+    },
+    {
+      "slug": "solution-digital-twin-1",
+      "name": "Stadium Seats",
+      "category": "solutions/digital-twin",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/digital-twin/solution-digital-twin-1"
+    },
+    {
+      "slug": "solution-digital-twin-2",
+      "name": "Kart Live Timing",
+      "category": "solutions/digital-twin",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/digital-twin/solution-digital-twin-2"
+    },
+    {
+      "slug": "solution-files-1",
+      "name": "Drive Explorer",
+      "category": "solutions/files",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/files/solution-files-1"
+    },
+    {
+      "slug": "solution-inventory-1",
+      "name": "Inventory Dashboard",
+      "category": "solutions/inventory",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/inventory/solution-inventory-1"
+    },
+    {
+      "slug": "solution-inventory-10",
+      "name": "Shipping Label",
+      "category": "solutions/inventory",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/inventory/solution-inventory-10"
+    },
+    {
+      "slug": "solution-inventory-11",
+      "name": "Order Details",
+      "category": "solutions/inventory",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/inventory/solution-inventory-11"
+    },
+    {
+      "slug": "solution-inventory-2",
+      "name": "Stock Ledger",
+      "category": "solutions/inventory",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/inventory/solution-inventory-2"
+    },
+    {
+      "slug": "solution-inventory-3",
+      "name": "Stock Reorder",
+      "category": "solutions/inventory",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/inventory/solution-inventory-3"
+    },
+    {
+      "slug": "solution-inventory-4",
+      "name": "PO Receiving",
+      "category": "solutions/inventory",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/inventory/solution-inventory-4"
+    },
+    {
+      "slug": "solution-inventory-5",
+      "name": "Shop Activity",
+      "category": "solutions/inventory",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/inventory/solution-inventory-5"
+    },
+    {
+      "slug": "solution-inventory-6",
+      "name": "Stock Health",
+      "category": "solutions/inventory",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/inventory/solution-inventory-6"
+    },
+    {
+      "slug": "solution-inventory-7",
+      "name": "Product Stock Planner",
+      "category": "solutions/inventory",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/inventory/solution-inventory-7"
+    },
+    {
+      "slug": "solution-inventory-8",
+      "name": "Reorder Rules",
+      "category": "solutions/inventory",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/inventory/solution-inventory-8"
+    },
+    {
+      "slug": "solution-inventory-9",
+      "name": "Shipment Tracking",
+      "category": "solutions/inventory",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/inventory/solution-inventory-9"
+    },
+    {
+      "slug": "solution-users-1",
+      "name": "Member Directory",
+      "category": "solutions/users",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/users/solution-users-1"
+    },
+    {
+      "slug": "solution-users-2",
+      "name": "Member Detail",
+      "category": "solutions/users",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/users/solution-users-2"
+    },
+    {
+      "slug": "solution-users-3",
+      "name": "Permission Matrix",
+      "category": "solutions/users",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/users/solution-users-3"
+    },
+    {
+      "slug": "solution-users-4",
+      "name": "Invitations",
+      "category": "solutions/users",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/users/solution-users-4"
+    },
+    {
+      "slug": "solution-users-5",
+      "name": "Access Requests",
+      "category": "solutions/users",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/users/solution-users-5"
+    },
+    {
+      "slug": "solution-users-6",
+      "name": "Access Audit Log",
+      "category": "solutions/users",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/users/solution-users-6"
+    },
+    {
+      "slug": "solution-users-7",
+      "name": "SSO & SCIM",
+      "category": "solutions/users",
+      "group": "solutions",
+      "url": "https://reui.io/blocks/solutions/users/solution-users-7"
+    }
+  ],
+  "counts_by_group": {
+    "ai-agents": 18,
+    "application": 303,
+    "chart": 51,
+    "data-grid": 43,
+    "ecommerce": 87,
+    "marketing": 67,
+    "solutions": 76
+  },
+  "counts_by_category": {
+    "ai-agents/agent-activity": 5,
+    "ai-agents/ai-chat": 13,
+    "application/app-shell": 35,
+    "application/auth": 20,
+    "application/card": 43,
+    "application/dashboard": 8,
+    "application/dialog": 14,
+    "application/empty-state": 14,
+    "application/event-calendar": 6,
+    "application/flow": 4,
+    "application/form": 12,
+    "application/gantt": 4,
+    "application/kanban-board": 10,
+    "application/list": 11,
+    "application/navbar": 13,
+    "application/onboarding": 9,
+    "application/profile": 10,
+    "application/rich-text-editor": 5,
+    "application/schedule": 10,
+    "application/settings": 16,
+    "application/sheet": 24,
+    "application/stats": 17,
+    "application/timeline": 9,
+    "application/whiteboard": 2,
+    "application/wizard": 7,
+    "chart/area-chart": 4,
+    "chart/bar-chart": 12,
+    "chart/composed-chart": 5,
+    "chart/line-chart": 6,
+    "chart/pie-chart": 2,
+    "chart/radial-chart": 3,
+    "chart/sankey-chart": 3,
+    "chart/slope-chart": 2,
+    "chart/sparkline": 11,
+    "chart/status-tracker": 3,
+    "data-grid/advanced": 4,
+    "data-grid/base": 8,
+    "data-grid/columns": 5,
+    "data-grid/drag-drop": 4,
+    "data-grid/editing": 6,
+    "data-grid/expansion": 3,
+    "data-grid/filtering": 4,
+    "data-grid/grouping": 7,
+    "data-grid/virtualization": 2,
+    "ecommerce/category-card": 6,
+    "ecommerce/checkout": 7,
+    "ecommerce/comparison": 6,
+    "ecommerce/coupon": 6,
+    "ecommerce/filter-sidebar": 7,
+    "ecommerce/product-card": 10,
+    "ecommerce/product-detail": 6,
+    "ecommerce/product-grid": 6,
+    "ecommerce/receipt": 6,
+    "ecommerce/review": 6,
+    "ecommerce/shop-hero": 8,
+    "ecommerce/shopping-cart": 7,
+    "ecommerce/wishlist": 6,
+    "marketing/blog": 6,
+    "marketing/compare": 3,
+    "marketing/contact": 6,
+    "marketing/cta": 17,
+    "marketing/faq": 6,
+    "marketing/hero": 16,
+    "marketing/how-it-works": 5,
+    "marketing/pricing": 8,
+    "solutions/agents": 10,
+    "solutions/ai-ops": 9,
+    "solutions/analytics": 9,
+    "solutions/billing": 9,
+    "solutions/bookings": 3,
+    "solutions/crm": 9,
+    "solutions/dev-ops": 6,
+    "solutions/digital-twin": 2,
+    "solutions/files": 1,
+    "solutions/inventory": 11,
+    "solutions/users": 7
+  },
+  "total": 645,
+  "total_categories": 76
+}
