@@ -219,7 +219,7 @@ export function buildOrganizationJsonLd() {
     name: siteConfig.name,
     url: getSiteUrl(),
     logo: absoluteUrl("/brand/logo-icon-light.svg"),
-    sameAs: [siteConfig.links.github, siteConfig.links.twitter],
+    sameAs: [siteConfig.links.twitter],
   }
 }
 

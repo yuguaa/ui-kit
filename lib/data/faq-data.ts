@@ -109,7 +109,7 @@ const FAQ_CATEGORIES: FAQCategory[] = [
         id: "contributing",
         question: "Can I contribute?",
         answer:
-          "Yes - contributions are welcome. Check the repository on [GitHub](https://github.com/newcapec/neui) to report issues or open a pull request.",
+          "Yes - contributions are welcome. Report issues or open a pull request.",
       },
     ],
   },

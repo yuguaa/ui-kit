@@ -9,7 +9,6 @@ import { Separator } from "@/components/ui/separator"
 import { CommandMenuLazy } from "@/components/command-menu-lazy"
 import { DesktopNav } from "@/components/desktop-nav"
 import { FigmaLink } from "@/components/figma-link"
-import { GitHubLink } from "@/components/github-link"
 import { Logo } from "@/components/logo"
 import { MobileNav } from "@/components/mobile-nav"
 import { ThemeModeToggleButton } from "@/components/theme-mode-toggle-button"
@@ -68,7 +67,7 @@ export async function SiteHeader() {
           />
 
           {/*
-            RIGHT rail: secondary nav cluster - search + theme/X/GitHub toolbar.
+            RIGHT rail: secondary nav cluster - search + theme/X/Figma toolbar.
 
             `min-w-0` lets the rail shrink-wrap so the toolbar absorbs
             slack instead of forcing overflow.
@@ -76,7 +75,7 @@ export async function SiteHeader() {
           <div className="flex min-w-0 items-center justify-end gap-1.5 xl:gap-3">
             {/*
               Utility toolbar (left -> right): search, theme, X, Figma,
-              GitHub. All ghost icon buttons on a shared `h-8` baseline so
+              Figma. All ghost icon buttons on a shared `h-8` baseline so
               they read as one quiet group next to the louder primary CTA.
               The Figma link sources its URL + glyph from `@/lib/nav-config`
               (same single source as the "Free Figma" dropdown item).
@@ -91,7 +90,6 @@ export async function SiteHeader() {
               <ThemeModeToggleButton variant="ghost" className="size-8" />
               <XLink />
               <FigmaLink />
-              <GitHubLink />
             </div>
           </div>
         </div>

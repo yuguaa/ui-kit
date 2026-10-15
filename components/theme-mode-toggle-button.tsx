@@ -18,7 +18,7 @@ export function ThemeModeToggleButton({
   // Default `outline` keeps the block-preview toolbar look intact —
   // there the toggle lives inside a `ButtonGroup` of adjoining outline
   // buttons that share borders. The site header overrides to `ghost`
-  // for a quieter "utility chrome" feel next to X / GitHub links.
+  // for a quieter "utility chrome" feel next to X / Figma links.
   variant = "outline",
 }: {
   className?: string

@@ -13,13 +13,7 @@ export const siteConfig = {
   },
   links: {
     twitter: "https://x.com/neui_io",
-    github: "https://github.com/newcapec/neui",
   },
-  /**
-   * GitHub star count shown in the header + footer. Maintained by hand (no
-   * live GitHub API call) - update this string when the real count moves.
-   */
-  githubStars: "3.6k",
 }
 
 export const META_THEME_COLORS = {

@@ -12,7 +12,7 @@ import {
  * Figma icon link for the header toolbar. The destination and the glyph both
  * come from `@/lib/nav-config` so the Figma URL stays single-sourced with the
  * "Free Figma" dropdown item (edit `FIGMA_URL` in one place). Tooltip matches
- * the sibling toolbar icon buttons (theme / X / GitHub) so the group reads as
+ * the sibling toolbar icon buttons (theme / X / Figma) so the group reads as
  * one set.
  */
 export function FigmaLink() {
