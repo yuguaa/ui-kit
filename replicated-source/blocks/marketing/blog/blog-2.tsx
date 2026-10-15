@@ -26,7 +26,7 @@ export function Pattern() {
           <div className="gap-6 grid md:grid-cols-3 sm:grid-cols-2">
             <Card className="cursor-pointer group h-full isolate lg:min-h-[27rem] min-h-[20rem] overflow-hidden p-0 relative shadow-none sm:min-h-[23.5rem]" size="default">
               <a className="absolute block cursor-pointer focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring inset-0 outline-none z-30" href="#" aria-label="Read Interface Signals"></a>
-              <img className="absolute duration-700 ease-out inset-0 motion-reduce:transition-none motion-safe:group-hover:scale-105 object-cover size-full transition-transform" alt="" width="1200" height="1200" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&h=1200&q=82" />
+              <img className="absolute duration-700 ease-out inset-0 motion-reduce:transition-none motion-safe:group-hover:scale-105 object-cover size-full transition-transform" alt="" width={1200} height={1200} loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&h=1200&q=82" />
               <div className="absolute bg-gradient-to-b from-black/10 inset-0 to-black/88 via-black/15" aria-hidden="true"></div>
               <div className="absolute bg-[radial-gradient(circle_at_20%_12%,rgba(255,255,255,0.18),transparent_28%),radial-gradient(circle_at_90%_0%,rgba(37,99,235,0.2),transparent_24%)] inset-0 opacity-80" aria-hidden="true"></div>
               <CardContent className="flex flex-col h-full justify-between lg:min-h-[27rem] min-h-[20rem] p-6 relative sm:min-h-[23.5rem] z-20">
@@ -46,7 +46,7 @@ export function Pattern() {
             </Card>
             <Card className="cursor-pointer group h-full isolate lg:min-h-[27rem] min-h-[20rem] overflow-hidden p-0 relative shadow-none sm:min-h-[23.5rem]" size="default">
               <a className="absolute block cursor-pointer focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring inset-0 outline-none z-30" href="#" aria-label="Read Shipping Rituals"></a>
-              <img className="absolute duration-700 ease-out inset-0 motion-reduce:transition-none motion-safe:group-hover:scale-105 object-cover size-full transition-transform" alt="" width="1200" height="1200" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=1200&q=82" />
+              <img className="absolute duration-700 ease-out inset-0 motion-reduce:transition-none motion-safe:group-hover:scale-105 object-cover size-full transition-transform" alt="" width={1200} height={1200} loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&h=1200&q=82" />
               <div className="absolute bg-gradient-to-b from-black/10 inset-0 to-black/88 via-black/15" aria-hidden="true"></div>
               <div className="absolute bg-[radial-gradient(circle_at_20%_12%,rgba(255,255,255,0.18),transparent_28%),radial-gradient(circle_at_90%_0%,rgba(37,99,235,0.2),transparent_24%)] inset-0 opacity-80" aria-hidden="true"></div>
               <CardContent className="flex flex-col h-full justify-between lg:min-h-[27rem] min-h-[20rem] p-6 relative sm:min-h-[23.5rem] z-20">
@@ -66,7 +66,7 @@ export function Pattern() {
             </Card>
             <Card className="cursor-pointer group h-full isolate lg:min-h-[27rem] min-h-[20rem] overflow-hidden p-0 relative shadow-none sm:min-h-[23.5rem]" size="default">
               <a className="absolute block cursor-pointer focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring inset-0 outline-none z-30" href="#" aria-label="Read No-Code Loops"></a>
-              <img className="absolute duration-700 ease-out inset-0 motion-reduce:transition-none motion-safe:group-hover:scale-105 object-cover size-full transition-transform" alt="" width="1200" height="1200" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=1200&q=82" />
+              <img className="absolute duration-700 ease-out inset-0 motion-reduce:transition-none motion-safe:group-hover:scale-105 object-cover size-full transition-transform" alt="" width={1200} height={1200} loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&h=1200&q=82" />
               <div className="absolute bg-gradient-to-b from-black/10 inset-0 to-black/88 via-black/15" aria-hidden="true"></div>
               <div className="absolute bg-[radial-gradient(circle_at_20%_12%,rgba(255,255,255,0.18),transparent_28%),radial-gradient(circle_at_90%_0%,rgba(37,99,235,0.2),transparent_24%)] inset-0 opacity-80" aria-hidden="true"></div>
               <CardContent className="flex flex-col h-full justify-between lg:min-h-[27rem] min-h-[20rem] p-6 relative sm:min-h-[23.5rem] z-20">

@@ -43,22 +43,22 @@ export function Pattern() {
               </h2>
             </div>
             <div className="flex flex-wrap gap-2.5 items-center sm:justify-end sm:w-auto w-full" role="group" aria-label="Board actions">
-              <Button type="button" tabIndex="0">
-                <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" data-icon="inline-start" aria-hidden="true">
+              <Button type="button" tabIndex={0}>
+                <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                 </svg>
                 {"Filters"}
               </Button>
-              <Button type="button" tabIndex="0">
-                <svg className="lucide lucide-columns-3 lucide-columns3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Columns3Icon" tabler="IconColumns3" hugeicons="Layout07Icon" phosphor="ColumnsIcon" remixicon="RiLayoutColumnLine" data-icon="inline-start" aria-hidden="true">
-                  <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+              <Button type="button" tabIndex={0}>
+                <svg className="lucide lucide-columns-3 lucide-columns3" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Columns3Icon" tabler="IconColumns3" hugeicons="Layout07Icon" phosphor="ColumnsIcon" remixicon="RiLayoutColumnLine" data-icon="inline-start" aria-hidden="true">
+                  <rect width={18} height={18} x={3} y={3} rx={2}></rect>
                   <path d="M9 3v18"></path>
                   <path d="M15 3v18"></path>
                 </svg>
                 {"Columns"}
               </Button>
-              <Button type="button" tabIndex="0">
-                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+              <Button type="button" tabIndex={0}>
+                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
@@ -69,7 +69,7 @@ export function Pattern() {
         </header>
         <Kanban className="max-w-full w-full" dragging="false">
           <ScrollArea className="pb-3 w-full" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
-            <div className="base-ui-disable-scrollbar focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-lg transition-[color,box-shadow] w-full" role="presentation" data-id="base-ui-_r_0_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
+            <div className="base-ui-disable-scrollbar focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-lg transition-[color,box-shadow] w-full" role="presentation" data-id="base-ui-_r_0_-viewport" tabIndex={-1} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
               <div className="min-w-max" role="presentation" style={{minWidth: "fit-content"}}>
                 <KanbanBoard className="flex gap-5 items-start p-1 w-max">
                   <KanbanColumn className="self-start shrink-0 w-64" value="backlog" dragging="false">
@@ -77,9 +77,9 @@ export function Pattern() {
                       <CardHeader className="flex flex-row gap-2 items-center min-h-9 px-2 py-2">
                         <span className="[&_svg]:shrink-0 [&_svg]:size-3.5 bg-zinc-100 border border-zinc-200 dark:bg-zinc-800 dark:border-zinc-700 dark:text-zinc-100 font-semibold gap-1.5 h-6.5 hover:opacity-90 inline-flex items-center justify-center px-2 rounded-sm shrink-0 text-[0.6875rem] text-zinc-800 tracking-normal transition-colors uppercase whitespace-nowrap">
                           <span className="[&>svg]:block [&>svg]:size-4 flex items-center justify-center leading-none shrink-0 size-4" aria-hidden="true">
-                            <svg className="lucide lucide-circle-dot" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDotIcon" tabler="IconCircleDot" hugeicons="CircleIcon" phosphor="CircleIcon" remixicon="RiRecordCircleLine" aria-hidden="true">
-                              <circle cx="12" cy="12" r="10"></circle>
-                              <circle cx="12" cy="12" r="1"></circle>
+                            <svg className="lucide lucide-circle-dot" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleDotIcon" tabler="IconCircleDot" hugeicons="CircleIcon" phosphor="CircleIcon" remixicon="RiRecordCircleLine" aria-hidden="true">
+                              <circle cx={12} cy={12} r={10}></circle>
+                              <circle cx={12} cy={12} r={1}></circle>
                             </svg>
                           </span>
                           <span className="flex h-full items-center leading-none min-h-0">
@@ -92,19 +92,19 @@ export function Pattern() {
                           {"3"}
                         </span>
                         <div className="flex gap-1 group-focus-within/kanban-column:opacity-100 group-hover/kanban-column:opacity-100 items-center ml-auto opacity-0 transition-opacity">
-                          <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex="0" aria-label="Collapse Backlog">
-                            <svg className="lucide lucide-chevron-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine" aria-hidden="true">
+                          <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex={0} aria-label="Collapse Backlog">
+                            <svg className="lucide lucide-chevron-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine" aria-hidden="true">
                               <path d="m15 18-6-6 6-6"></path>
                             </svg>
                           </Button>
-                          <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-transparent cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group-focus-within/kanban-column:opacity-100 group/button hover:bg-background! hover:border-border! hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Backlog column">
-                            <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                              <circle cx="9" cy="12" r="1"></circle>
-                              <circle cx="9" cy="5" r="1"></circle>
-                              <circle cx="9" cy="19" r="1"></circle>
-                              <circle cx="15" cy="12" r="1"></circle>
-                              <circle cx="15" cy="5" r="1"></circle>
-                              <circle cx="15" cy="19" r="1"></circle>
+                          <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-transparent cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group-focus-within/kanban-column:opacity-100 group/button hover:bg-background! hover:border-border! hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Backlog column">
+                            <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                              <circle cx={9} cy={12} r={1}></circle>
+                              <circle cx={9} cy={5} r={1}></circle>
+                              <circle cx={9} cy={19} r={1}></circle>
+                              <circle cx={15} cy={12} r={1}></circle>
+                              <circle cx={15} cy={5} r={1}></circle>
+                              <circle cx={15} cy={19} r={1}></circle>
                             </svg>
                           </KanbanColumnHandle>
                         </div>
@@ -154,8 +154,8 @@ export function Pattern() {
                               </ItemFooter>
                               <ItemFooter className="gap-2 min-w-0">
                                 <ItemActions className="gap-1 min-w-0">
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="1 attachments">
-                                    <svg className="lucide lucide-file" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileIcon" tabler="IconFile" hugeicons="FileEmpty02Icon" phosphor="FileIcon" remixicon="RiFileLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="1 attachments">
+                                    <svg className="lucide lucide-file" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FileIcon" tabler="IconFile" hugeicons="FileEmpty02Icon" phosphor="FileIcon" remixicon="RiFileLine" aria-hidden="true">
                                       <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
                                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                     </svg>
@@ -163,19 +163,19 @@ export function Pattern() {
                                       {"1"}
                                     </span>
                                   </Button>
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="4 checklist items">
-                                    <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="4 checklist items">
+                                    <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
                                       <path d="M8 2v4"></path>
                                       <path d="M16 2v4"></path>
-                                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                      <rect width={18} height={18} x={3} y={4} rx={2}></rect>
                                       <path d="M3 10h18"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
                                       {"4"}
                                     </span>
                                   </Button>
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="2 comments">
-                                    <svg className="lucide lucide-flag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FlagIcon" tabler="IconFlag" hugeicons="Flag03Icon" phosphor="FlagIcon" remixicon="RiFlagLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="2 comments">
+                                    <svg className="lucide lucide-flag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FlagIcon" tabler="IconFlag" hugeicons="Flag03Icon" phosphor="FlagIcon" remixicon="RiFlagLine" aria-hidden="true">
                                       <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
@@ -184,10 +184,10 @@ export function Pattern() {
                                   </Button>
                                 </ItemActions>
                                 <ItemActions className="ml-auto">
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="Due 22d">
-                                    <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="Due 22d">
+                                    <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                                       <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                                      <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                      <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
                                       {"22d"}
@@ -240,8 +240,8 @@ export function Pattern() {
                               </ItemFooter>
                               <ItemFooter className="gap-2 min-w-0">
                                 <ItemActions className="gap-1 min-w-0">
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="2 attachments">
-                                    <svg className="lucide lucide-file" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileIcon" tabler="IconFile" hugeicons="FileEmpty02Icon" phosphor="FileIcon" remixicon="RiFileLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="2 attachments">
+                                    <svg className="lucide lucide-file" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FileIcon" tabler="IconFile" hugeicons="FileEmpty02Icon" phosphor="FileIcon" remixicon="RiFileLine" aria-hidden="true">
                                       <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
                                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                     </svg>
@@ -249,19 +249,19 @@ export function Pattern() {
                                       {"2"}
                                     </span>
                                   </Button>
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="3 checklist items">
-                                    <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="3 checklist items">
+                                    <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
                                       <path d="M8 2v4"></path>
                                       <path d="M16 2v4"></path>
-                                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                      <rect width={18} height={18} x={3} y={4} rx={2}></rect>
                                       <path d="M3 10h18"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
                                       {"3"}
                                     </span>
                                   </Button>
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="1 comments">
-                                    <svg className="lucide lucide-flag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FlagIcon" tabler="IconFlag" hugeicons="Flag03Icon" phosphor="FlagIcon" remixicon="RiFlagLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="1 comments">
+                                    <svg className="lucide lucide-flag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FlagIcon" tabler="IconFlag" hugeicons="Flag03Icon" phosphor="FlagIcon" remixicon="RiFlagLine" aria-hidden="true">
                                       <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
@@ -270,10 +270,10 @@ export function Pattern() {
                                   </Button>
                                 </ItemActions>
                                 <ItemActions className="ml-auto">
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="Due 20d">
-                                    <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="Due 20d">
+                                    <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                                       <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                                      <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                      <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
                                       {"20d"}
@@ -326,8 +326,8 @@ export function Pattern() {
                               </ItemFooter>
                               <ItemFooter className="gap-2 min-w-0">
                                 <ItemActions className="gap-1 min-w-0">
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="1 attachments">
-                                    <svg className="lucide lucide-file" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileIcon" tabler="IconFile" hugeicons="FileEmpty02Icon" phosphor="FileIcon" remixicon="RiFileLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="1 attachments">
+                                    <svg className="lucide lucide-file" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FileIcon" tabler="IconFile" hugeicons="FileEmpty02Icon" phosphor="FileIcon" remixicon="RiFileLine" aria-hidden="true">
                                       <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
                                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                     </svg>
@@ -335,19 +335,19 @@ export function Pattern() {
                                       {"1"}
                                     </span>
                                   </Button>
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="5 checklist items">
-                                    <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="5 checklist items">
+                                    <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
                                       <path d="M8 2v4"></path>
                                       <path d="M16 2v4"></path>
-                                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                      <rect width={18} height={18} x={3} y={4} rx={2}></rect>
                                       <path d="M3 10h18"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
                                       {"5"}
                                     </span>
                                   </Button>
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="2 comments">
-                                    <svg className="lucide lucide-flag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FlagIcon" tabler="IconFlag" hugeicons="Flag03Icon" phosphor="FlagIcon" remixicon="RiFlagLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="2 comments">
+                                    <svg className="lucide lucide-flag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FlagIcon" tabler="IconFlag" hugeicons="Flag03Icon" phosphor="FlagIcon" remixicon="RiFlagLine" aria-hidden="true">
                                       <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
@@ -356,10 +356,10 @@ export function Pattern() {
                                   </Button>
                                 </ItemActions>
                                 <ItemActions className="ml-auto">
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="Due 18d">
-                                    <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="Due 18d">
+                                    <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                                       <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                                      <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                      <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
                                       {"18d"}
@@ -370,8 +370,8 @@ export function Pattern() {
                             </Item>
                           </KanbanItem>
                         </KanbanColumnContent>
-                        <Button className="bg-transparent border border-transparent font-normal h-8 hover:bg-background! hover:border-border! hover:text-foreground px-2 text-muted-foreground w-full" type="button" tabIndex="0" aria-label="Add card to Backlog">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+                        <Button className="bg-transparent border border-transparent font-normal h-8 hover:bg-background! hover:border-border! hover:text-foreground px-2 text-muted-foreground w-full" type="button" tabIndex={0} aria-label="Add card to Backlog">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
@@ -385,8 +385,8 @@ export function Pattern() {
                       <CardHeader className="flex flex-row gap-2 items-center min-h-9 px-2 py-2">
                         <span className="[&_svg]:shrink-0 [&_svg]:size-3.5 bg-zinc-200 border border-zinc-300 dark:bg-zinc-700 dark:border-zinc-600 dark:text-zinc-50 font-semibold gap-1.5 h-6.5 hover:opacity-90 inline-flex items-center justify-center px-2 rounded-sm shrink-0 text-[0.6875rem] text-zinc-950 tracking-normal transition-colors uppercase whitespace-nowrap">
                           <span className="[&>svg]:block [&>svg]:size-4 flex items-center justify-center leading-none shrink-0 size-4" aria-hidden="true">
-                            <svg className="lucide lucide-circle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleIcon" tabler="IconCircle" hugeicons="CircleIcon" phosphor="CircleIcon" remixicon="RiCircleLine" aria-hidden="true">
-                              <circle cx="12" cy="12" r="10"></circle>
+                            <svg className="lucide lucide-circle" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleIcon" tabler="IconCircle" hugeicons="CircleIcon" phosphor="CircleIcon" remixicon="RiCircleLine" aria-hidden="true">
+                              <circle cx={12} cy={12} r={10}></circle>
                             </svg>
                           </span>
                           <span className="flex h-full items-center leading-none min-h-0">
@@ -399,19 +399,19 @@ export function Pattern() {
                           {"2"}
                         </span>
                         <div className="flex gap-1 group-focus-within/kanban-column:opacity-100 group-hover/kanban-column:opacity-100 items-center ml-auto opacity-0 transition-opacity">
-                          <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex="0" aria-label="Collapse Planned">
-                            <svg className="lucide lucide-chevron-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine" aria-hidden="true">
+                          <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex={0} aria-label="Collapse Planned">
+                            <svg className="lucide lucide-chevron-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine" aria-hidden="true">
                               <path d="m15 18-6-6 6-6"></path>
                             </svg>
                           </Button>
-                          <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-transparent cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group-focus-within/kanban-column:opacity-100 group/button hover:bg-background! hover:border-border! hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Planned column">
-                            <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                              <circle cx="9" cy="12" r="1"></circle>
-                              <circle cx="9" cy="5" r="1"></circle>
-                              <circle cx="9" cy="19" r="1"></circle>
-                              <circle cx="15" cy="12" r="1"></circle>
-                              <circle cx="15" cy="5" r="1"></circle>
-                              <circle cx="15" cy="19" r="1"></circle>
+                          <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-transparent cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group-focus-within/kanban-column:opacity-100 group/button hover:bg-background! hover:border-border! hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Planned column">
+                            <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                              <circle cx={9} cy={12} r={1}></circle>
+                              <circle cx={9} cy={5} r={1}></circle>
+                              <circle cx={9} cy={19} r={1}></circle>
+                              <circle cx={15} cy={12} r={1}></circle>
+                              <circle cx={15} cy={5} r={1}></circle>
+                              <circle cx={15} cy={19} r={1}></circle>
                             </svg>
                           </KanbanColumnHandle>
                         </div>
@@ -461,8 +461,8 @@ export function Pattern() {
                               </ItemFooter>
                               <ItemFooter className="gap-2 min-w-0">
                                 <ItemActions className="gap-1 min-w-0">
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="2 attachments">
-                                    <svg className="lucide lucide-file" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileIcon" tabler="IconFile" hugeicons="FileEmpty02Icon" phosphor="FileIcon" remixicon="RiFileLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="2 attachments">
+                                    <svg className="lucide lucide-file" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FileIcon" tabler="IconFile" hugeicons="FileEmpty02Icon" phosphor="FileIcon" remixicon="RiFileLine" aria-hidden="true">
                                       <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
                                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                     </svg>
@@ -470,19 +470,19 @@ export function Pattern() {
                                       {"2"}
                                     </span>
                                   </Button>
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="3 checklist items">
-                                    <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="3 checklist items">
+                                    <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
                                       <path d="M8 2v4"></path>
                                       <path d="M16 2v4"></path>
-                                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                      <rect width={18} height={18} x={3} y={4} rx={2}></rect>
                                       <path d="M3 10h18"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
                                       {"3"}
                                     </span>
                                   </Button>
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="1 comments">
-                                    <svg className="lucide lucide-flag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FlagIcon" tabler="IconFlag" hugeicons="Flag03Icon" phosphor="FlagIcon" remixicon="RiFlagLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="1 comments">
+                                    <svg className="lucide lucide-flag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FlagIcon" tabler="IconFlag" hugeicons="Flag03Icon" phosphor="FlagIcon" remixicon="RiFlagLine" aria-hidden="true">
                                       <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
@@ -491,10 +491,10 @@ export function Pattern() {
                                   </Button>
                                 </ItemActions>
                                 <ItemActions className="ml-auto">
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="Due 16d">
-                                    <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="Due 16d">
+                                    <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                                       <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                                      <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                      <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
                                       {"16d"}
@@ -547,8 +547,8 @@ export function Pattern() {
                               </ItemFooter>
                               <ItemFooter className="gap-2 min-w-0">
                                 <ItemActions className="gap-1 min-w-0">
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="1 attachments">
-                                    <svg className="lucide lucide-file" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileIcon" tabler="IconFile" hugeicons="FileEmpty02Icon" phosphor="FileIcon" remixicon="RiFileLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="1 attachments">
+                                    <svg className="lucide lucide-file" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FileIcon" tabler="IconFile" hugeicons="FileEmpty02Icon" phosphor="FileIcon" remixicon="RiFileLine" aria-hidden="true">
                                       <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
                                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                     </svg>
@@ -556,19 +556,19 @@ export function Pattern() {
                                       {"1"}
                                     </span>
                                   </Button>
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="4 checklist items">
-                                    <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="4 checklist items">
+                                    <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
                                       <path d="M8 2v4"></path>
                                       <path d="M16 2v4"></path>
-                                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                      <rect width={18} height={18} x={3} y={4} rx={2}></rect>
                                       <path d="M3 10h18"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
                                       {"4"}
                                     </span>
                                   </Button>
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="3 comments">
-                                    <svg className="lucide lucide-flag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FlagIcon" tabler="IconFlag" hugeicons="Flag03Icon" phosphor="FlagIcon" remixicon="RiFlagLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="3 comments">
+                                    <svg className="lucide lucide-flag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FlagIcon" tabler="IconFlag" hugeicons="Flag03Icon" phosphor="FlagIcon" remixicon="RiFlagLine" aria-hidden="true">
                                       <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
@@ -577,10 +577,10 @@ export function Pattern() {
                                   </Button>
                                 </ItemActions>
                                 <ItemActions className="ml-auto">
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="Due 13d">
-                                    <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="Due 13d">
+                                    <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                                       <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                                      <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                      <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
                                       {"13d"}
@@ -591,8 +591,8 @@ export function Pattern() {
                             </Item>
                           </KanbanItem>
                         </KanbanColumnContent>
-                        <Button className="bg-transparent border border-transparent font-normal h-8 hover:bg-background! hover:border-border! hover:text-foreground px-2 text-muted-foreground w-full" type="button" tabIndex="0" aria-label="Add card to Planned">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+                        <Button className="bg-transparent border border-transparent font-normal h-8 hover:bg-background! hover:border-border! hover:text-foreground px-2 text-muted-foreground w-full" type="button" tabIndex={0} aria-label="Add card to Planned">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
@@ -606,9 +606,9 @@ export function Pattern() {
                       <CardHeader className="flex flex-row gap-2 items-center min-h-9 px-2 py-2">
                         <span className="[&_svg]:shrink-0 [&_svg]:size-3.5 bg-sky-500 border border-sky-500 dark:bg-sky-400 dark:border-sky-400/80 dark:text-sky-950 font-semibold gap-1.5 h-6.5 hover:opacity-90 inline-flex items-center justify-center px-2 rounded-sm shrink-0 text-[0.6875rem] text-sky-50 tracking-normal transition-colors uppercase whitespace-nowrap">
                           <span className="[&>svg]:block [&>svg]:size-4 flex items-center justify-center leading-none shrink-0 size-4" aria-hidden="true">
-                            <svg className="lucide lucide-circle-dot" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDotIcon" tabler="IconCircleDot" hugeicons="CircleIcon" phosphor="CircleIcon" remixicon="RiRecordCircleLine" aria-hidden="true">
-                              <circle cx="12" cy="12" r="10"></circle>
-                              <circle cx="12" cy="12" r="1"></circle>
+                            <svg className="lucide lucide-circle-dot" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleDotIcon" tabler="IconCircleDot" hugeicons="CircleIcon" phosphor="CircleIcon" remixicon="RiRecordCircleLine" aria-hidden="true">
+                              <circle cx={12} cy={12} r={10}></circle>
+                              <circle cx={12} cy={12} r={1}></circle>
                             </svg>
                           </span>
                           <span className="flex h-full items-center leading-none min-h-0">
@@ -621,19 +621,19 @@ export function Pattern() {
                           {"3"}
                         </span>
                         <div className="flex gap-1 group-focus-within/kanban-column:opacity-100 group-hover/kanban-column:opacity-100 items-center ml-auto opacity-0 transition-opacity">
-                          <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex="0" aria-label="Collapse In Progress">
-                            <svg className="lucide lucide-chevron-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine" aria-hidden="true">
+                          <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex={0} aria-label="Collapse In Progress">
+                            <svg className="lucide lucide-chevron-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine" aria-hidden="true">
                               <path d="m15 18-6-6 6-6"></path>
                             </svg>
                           </Button>
-                          <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-transparent cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group-focus-within/kanban-column:opacity-100 group/button hover:bg-background! hover:border-border! hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move In Progress column">
-                            <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                              <circle cx="9" cy="12" r="1"></circle>
-                              <circle cx="9" cy="5" r="1"></circle>
-                              <circle cx="9" cy="19" r="1"></circle>
-                              <circle cx="15" cy="12" r="1"></circle>
-                              <circle cx="15" cy="5" r="1"></circle>
-                              <circle cx="15" cy="19" r="1"></circle>
+                          <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-transparent cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group-focus-within/kanban-column:opacity-100 group/button hover:bg-background! hover:border-border! hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move In Progress column">
+                            <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                              <circle cx={9} cy={12} r={1}></circle>
+                              <circle cx={9} cy={5} r={1}></circle>
+                              <circle cx={9} cy={19} r={1}></circle>
+                              <circle cx={15} cy={12} r={1}></circle>
+                              <circle cx={15} cy={5} r={1}></circle>
+                              <circle cx={15} cy={19} r={1}></circle>
                             </svg>
                           </KanbanColumnHandle>
                         </div>
@@ -683,8 +683,8 @@ export function Pattern() {
                               </ItemFooter>
                               <ItemFooter className="gap-2 min-w-0">
                                 <ItemActions className="gap-1 min-w-0">
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="3 attachments">
-                                    <svg className="lucide lucide-file" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileIcon" tabler="IconFile" hugeicons="FileEmpty02Icon" phosphor="FileIcon" remixicon="RiFileLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="3 attachments">
+                                    <svg className="lucide lucide-file" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FileIcon" tabler="IconFile" hugeicons="FileEmpty02Icon" phosphor="FileIcon" remixicon="RiFileLine" aria-hidden="true">
                                       <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
                                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                     </svg>
@@ -692,19 +692,19 @@ export function Pattern() {
                                       {"3"}
                                     </span>
                                   </Button>
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="6 checklist items">
-                                    <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="6 checklist items">
+                                    <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
                                       <path d="M8 2v4"></path>
                                       <path d="M16 2v4"></path>
-                                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                      <rect width={18} height={18} x={3} y={4} rx={2}></rect>
                                       <path d="M3 10h18"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
                                       {"6"}
                                     </span>
                                   </Button>
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="4 comments">
-                                    <svg className="lucide lucide-flag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FlagIcon" tabler="IconFlag" hugeicons="Flag03Icon" phosphor="FlagIcon" remixicon="RiFlagLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="4 comments">
+                                    <svg className="lucide lucide-flag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FlagIcon" tabler="IconFlag" hugeicons="Flag03Icon" phosphor="FlagIcon" remixicon="RiFlagLine" aria-hidden="true">
                                       <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
@@ -713,10 +713,10 @@ export function Pattern() {
                                   </Button>
                                 </ItemActions>
                                 <ItemActions className="ml-auto">
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="Due 8d">
-                                    <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="Due 8d">
+                                    <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                                       <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                                      <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                      <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
                                       {"8d"}
@@ -769,8 +769,8 @@ export function Pattern() {
                               </ItemFooter>
                               <ItemFooter className="gap-2 min-w-0">
                                 <ItemActions className="gap-1 min-w-0">
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="2 attachments">
-                                    <svg className="lucide lucide-file" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileIcon" tabler="IconFile" hugeicons="FileEmpty02Icon" phosphor="FileIcon" remixicon="RiFileLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="2 attachments">
+                                    <svg className="lucide lucide-file" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FileIcon" tabler="IconFile" hugeicons="FileEmpty02Icon" phosphor="FileIcon" remixicon="RiFileLine" aria-hidden="true">
                                       <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
                                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                     </svg>
@@ -778,19 +778,19 @@ export function Pattern() {
                                       {"2"}
                                     </span>
                                   </Button>
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="5 checklist items">
-                                    <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="5 checklist items">
+                                    <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
                                       <path d="M8 2v4"></path>
                                       <path d="M16 2v4"></path>
-                                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                      <rect width={18} height={18} x={3} y={4} rx={2}></rect>
                                       <path d="M3 10h18"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
                                       {"5"}
                                     </span>
                                   </Button>
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="6 comments">
-                                    <svg className="lucide lucide-flag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FlagIcon" tabler="IconFlag" hugeicons="Flag03Icon" phosphor="FlagIcon" remixicon="RiFlagLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="6 comments">
+                                    <svg className="lucide lucide-flag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FlagIcon" tabler="IconFlag" hugeicons="Flag03Icon" phosphor="FlagIcon" remixicon="RiFlagLine" aria-hidden="true">
                                       <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
@@ -799,10 +799,10 @@ export function Pattern() {
                                   </Button>
                                 </ItemActions>
                                 <ItemActions className="ml-auto">
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="Due 5d">
-                                    <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="Due 5d">
+                                    <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                                       <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                                      <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                      <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
                                       {"5d"}
@@ -855,8 +855,8 @@ export function Pattern() {
                               </ItemFooter>
                               <ItemFooter className="gap-2 min-w-0">
                                 <ItemActions className="gap-1 min-w-0">
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="2 attachments">
-                                    <svg className="lucide lucide-file" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileIcon" tabler="IconFile" hugeicons="FileEmpty02Icon" phosphor="FileIcon" remixicon="RiFileLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="2 attachments">
+                                    <svg className="lucide lucide-file" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FileIcon" tabler="IconFile" hugeicons="FileEmpty02Icon" phosphor="FileIcon" remixicon="RiFileLine" aria-hidden="true">
                                       <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
                                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                     </svg>
@@ -864,19 +864,19 @@ export function Pattern() {
                                       {"2"}
                                     </span>
                                   </Button>
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="4 checklist items">
-                                    <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="4 checklist items">
+                                    <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
                                       <path d="M8 2v4"></path>
                                       <path d="M16 2v4"></path>
-                                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                                      <rect width={18} height={18} x={3} y={4} rx={2}></rect>
                                       <path d="M3 10h18"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
                                       {"4"}
                                     </span>
                                   </Button>
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="5 comments">
-                                    <svg className="lucide lucide-flag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FlagIcon" tabler="IconFlag" hugeicons="Flag03Icon" phosphor="FlagIcon" remixicon="RiFlagLine" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="5 comments">
+                                    <svg className="lucide lucide-flag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FlagIcon" tabler="IconFlag" hugeicons="Flag03Icon" phosphor="FlagIcon" remixicon="RiFlagLine" aria-hidden="true">
                                       <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
@@ -885,10 +885,10 @@ export function Pattern() {
                                   </Button>
                                 </ItemActions>
                                 <ItemActions className="ml-auto">
-                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex="0" aria-label="Due 6d">
-                                    <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                                  <Button className="[&_svg]:size-3.5 font-medium gap-1 h-6 hover:bg-muted/70 hover:text-foreground px-1.5 tabular-nums text-muted-foreground" type="button" tabIndex={0} aria-label="Due 6d">
+                                    <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                                       <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                                      <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                      <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                                     </svg>
                                     <span className="leading-none text-[0.6875rem]">
                                       {"6d"}
@@ -899,8 +899,8 @@ export function Pattern() {
                             </Item>
                           </KanbanItem>
                         </KanbanColumnContent>
-                        <Button className="bg-transparent border border-transparent font-normal h-8 hover:bg-background! hover:border-border! hover:text-foreground px-2 text-muted-foreground w-full" type="button" tabIndex="0" aria-label="Add card to In Progress">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+                        <Button className="bg-transparent border border-transparent font-normal h-8 hover:bg-background! hover:border-border! hover:text-foreground px-2 text-muted-foreground w-full" type="button" tabIndex={0} aria-label="Add card to In Progress">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
@@ -911,13 +911,13 @@ export function Pattern() {
                   </KanbanColumn>
                   <KanbanColumn className="self-start shrink-0" value="paused" dragging="false">
                     <Card className="bg-muted/40 gap-0 items-center overflow-hidden p-0 rounded-lg self-start transition-colors w-10.5" size="sm">
-                      <Button className="aria-expanded:bg-transparent bg-transparent border-0 cursor-pointer flex-col gap-2 h-auto hover:bg-muted/70 hover:text-current min-h-0 px-2 py-2 shadow-none text-current w-full" type="button" tabIndex="0" aria-label="Expand Paused: Waiting or blocked" aria-expanded="false">
+                      <Button className="aria-expanded:bg-transparent bg-transparent border-0 cursor-pointer flex-col gap-2 h-auto hover:bg-muted/70 hover:text-current min-h-0 px-2 py-2 shadow-none text-current w-full" type="button" tabIndex={0} aria-label="Expand Paused: Waiting or blocked" aria-expanded="false">
                         <span className="[&_svg]:shrink-0 [&_svg]:size-3.5 bg-amber-400 border border-amber-300 dark:bg-amber-300 dark:border-amber-400/80 dark:text-amber-950 flex-col font-semibold gap-1.5 inline-flex items-center justify-start px-0 py-2 rounded-sm shrink-0 text-[0.6875rem] text-amber-950 tracking-normal transition-colors uppercase w-6.5">
                           <span className="[&>svg]:block [&>svg]:size-4 flex items-center justify-center leading-none shrink-0 size-4" aria-hidden="true">
-                            <svg className="lucide lucide-circle-pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PauseCircleIcon" tabler="IconPlayerPauseFilled" hugeicons="PauseCircleIcon" phosphor="PauseCircleIcon" remixicon="RiPauseCircleLine" aria-hidden="true">
-                              <circle cx="12" cy="12" r="10"></circle>
-                              <line x1="10" x2="10" y1="15" y2="9"></line>
-                              <line x1="14" x2="14" y1="15" y2="9"></line>
+                            <svg className="lucide lucide-circle-pause" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PauseCircleIcon" tabler="IconPlayerPauseFilled" hugeicons="PauseCircleIcon" phosphor="PauseCircleIcon" remixicon="RiPauseCircleLine" aria-hidden="true">
+                              <circle cx={12} cy={12} r={10}></circle>
+                              <line x1={10} x2={10} y1={15} y2={9}></line>
+                              <line x1={14} x2={14} y1={15} y2={9}></line>
                             </svg>
                           </span>
                           <span className="flex items-center justify-center leading-none min-h-0">
@@ -934,11 +934,11 @@ export function Pattern() {
                   </KanbanColumn>
                   <KanbanColumn className="self-start shrink-0" value="completed" dragging="false">
                     <Card className="bg-muted/40 gap-0 items-center overflow-hidden p-0 rounded-lg self-start transition-colors w-10.5" size="sm">
-                      <Button className="aria-expanded:bg-transparent bg-transparent border-0 cursor-pointer flex-col gap-2 h-auto hover:bg-muted/70 hover:text-current min-h-0 px-2 py-2 shadow-none text-current w-full" type="button" tabIndex="0" aria-label="Expand Completed: Finished work" aria-expanded="false">
+                      <Button className="aria-expanded:bg-transparent bg-transparent border-0 cursor-pointer flex-col gap-2 h-auto hover:bg-muted/70 hover:text-current min-h-0 px-2 py-2 shadow-none text-current w-full" type="button" tabIndex={0} aria-label="Expand Completed: Finished work" aria-expanded="false">
                         <span className="[&_svg]:shrink-0 [&_svg]:size-3.5 bg-emerald-600 border border-emerald-600 dark:bg-emerald-400 dark:border-emerald-400/80 dark:text-emerald-950 flex-col font-semibold gap-1.5 inline-flex items-center justify-start px-0 py-2 rounded-sm shrink-0 text-[0.6875rem] text-emerald-50 tracking-normal transition-colors uppercase w-6.5">
                           <span className="[&>svg]:block [&>svg]:size-4 flex items-center justify-center leading-none shrink-0 size-4" aria-hidden="true">
-                            <svg className="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
-                              <circle cx="12" cy="12" r="10"></circle>
+                            <svg className="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
+                              <circle cx={12} cy={12} r={10}></circle>
                               <path d="m9 12 2 2 4-4"></path>
                             </svg>
                           </span>
@@ -956,11 +956,11 @@ export function Pattern() {
                   </KanbanColumn>
                   <KanbanColumn className="self-start shrink-0" value="cancelled" dragging="false">
                     <Card className="bg-muted/40 gap-0 items-center overflow-hidden p-0 rounded-lg self-start transition-colors w-10.5" size="sm">
-                      <Button className="aria-expanded:bg-transparent bg-transparent border-0 cursor-pointer flex-col gap-2 h-auto hover:bg-muted/70 hover:text-current min-h-0 px-2 py-2 shadow-none text-current w-full" type="button" tabIndex="0" aria-label="Expand Cancelled: Stopped or removed" aria-expanded="false">
+                      <Button className="aria-expanded:bg-transparent bg-transparent border-0 cursor-pointer flex-col gap-2 h-auto hover:bg-muted/70 hover:text-current min-h-0 px-2 py-2 shadow-none text-current w-full" type="button" tabIndex={0} aria-label="Expand Cancelled: Stopped or removed" aria-expanded="false">
                         <span className="[&_svg]:shrink-0 [&_svg]:size-3.5 bg-zinc-200 border border-zinc-300 dark:bg-zinc-800 dark:border-zinc-700 dark:text-zinc-200 flex-col font-semibold gap-1.5 inline-flex items-center justify-start px-0 py-2 rounded-sm shrink-0 text-[0.6875rem] text-zinc-700 tracking-normal transition-colors uppercase w-6.5">
                           <span className="[&>svg]:block [&>svg]:size-4 flex items-center justify-center leading-none shrink-0 size-4" aria-hidden="true">
-                            <svg className="lucide lucide-circle-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleXIcon" tabler="IconCircleX" hugeicons="CancelCircleIcon" phosphor="XCircleIcon" remixicon="RiCloseCircleLine" aria-hidden="true">
-                              <circle cx="12" cy="12" r="10"></circle>
+                            <svg className="lucide lucide-circle-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleXIcon" tabler="IconCircleX" hugeicons="CancelCircleIcon" phosphor="XCircleIcon" remixicon="RiCloseCircleLine" aria-hidden="true">
+                              <circle cx={12} cy={12} r={10}></circle>
                               <path d="m15 9-6 6"></path>
                               <path d="m9 9 6 6"></path>
                             </svg>

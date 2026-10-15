@@ -53,7 +53,7 @@ export function Pattern() {
             <header className="bg-background border-b-0 border-border flex gap-3 h-12 items-center justify-between min-w-0 px-4 shrink-0 w-full">
               <div className="flex gap-2 items-center min-w-0 shrink-0">
                 <Item className="[&_svg]:size-4 bg-primary p-0 size-7 text-primary-foreground" variant="default" size="default">
-                  <svg className="lucide lucide-chart-column" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
+                  <svg className="lucide lucide-chart-column" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
                     <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                     <path d="M18 17V9"></path>
                     <path d="M13 17V5"></path>
@@ -71,20 +71,20 @@ export function Pattern() {
               </div>
               <nav className="flex flex-1 items-center justify-center min-w-0 overflow-hidden" aria-label="Report navigation">
                 <div className="flex gap-1 items-center min-w-0">
-                  <Button type="button" tabIndex="0" extracted="1">
+                  <Button type="button" tabIndex={0} extracted="1">
                     {"Overview"}
                   </Button>
-                  <Button type="button" tabIndex="0">
+                  <Button type="button" tabIndex={0}>
                     {"Cohorts"}
                   </Button>
-                  <Button type="button" tabIndex="0">
+                  <Button type="button" tabIndex={0}>
                     {"Signals"}
                   </Button>
                 </div>
               </nav>
               <div className="flex gap-2 items-center shrink-0">
-                <Button type="button" tabIndex="0">
-                  <svg className="lucide lucide-download size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
+                <Button type="button" tabIndex={0}>
+                  <svg className="lucide lucide-download size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
                     <path d="M12 15V3"></path>
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                     <path d="m7 10 5 5 5-5"></path>
@@ -93,8 +93,8 @@ export function Pattern() {
                     {"Export"}
                   </span>
                 </Button>
-                <Button type="button" tabIndex="0" aria-label="Open retention alerts">
-                  <svg className="lucide lucide-bell size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BellIcon" tabler="IconBell" hugeicons="NotificationIcon" phosphor="BellIcon" remixicon="RiNotificationLine" aria-hidden="true">
+                <Button type="button" tabIndex={0} aria-label="Open retention alerts">
+                  <svg className="lucide lucide-bell size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BellIcon" tabler="IconBell" hugeicons="NotificationIcon" phosphor="BellIcon" remixicon="RiNotificationLine" aria-hidden="true">
                     <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
                     <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
                   </svg>
@@ -116,16 +116,16 @@ export function Pattern() {
                 </h3>
                 <Tabs className="ml-auto shrink-0 w-auto" data-orientation="horizontal" activationDirection="none">
                   <TabsList data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
-                    <TabsTrigger className="px-3.5" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_0_">
+                    <TabsTrigger className="px-3.5" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_0_">
                       {"4W"}
                     </TabsTrigger>
-                    <TabsTrigger className="px-3.5" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_1_" compositeItemActive="">
+                    <TabsTrigger className="px-3.5" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex={0} role="tab" aria-selected="true" id="base-ui-_r_1_" compositeItemActive="">
                       {"8W"}
                     </TabsTrigger>
-                    <TabsTrigger className="px-3.5" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
+                    <TabsTrigger className="px-3.5" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_2_">
                       {"12W"}
                     </TabsTrigger>
-                    <TabsTrigger className="px-3.5" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_">
+                    <TabsTrigger className="px-3.5" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_3_">
                       {"16W"}
                     </TabsTrigger>
                   </TabsList>
@@ -135,8 +135,8 @@ export function Pattern() {
                 <div className="flex flex-wrap gap-10 items-center mb-10 py-6">
                   <div className="flex gap-3 items-center">
                     <Item className="[&_svg]:size-4 bg-background border border-border/60 p-0 size-9 text-muted-foreground" variant="default" size="default">
-                      <svg className="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
-                        <circle cx="12" cy="12" r="10"></circle>
+                      <svg className="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
+                        <circle cx={12} cy={12} r={10}></circle>
                         <path d="m9 12 2 2 4-4"></path>
                       </svg>
                     </Item>
@@ -156,7 +156,7 @@ export function Pattern() {
                   </div>
                   <div className="flex gap-3 items-center">
                     <Item className="[&_svg]:size-4 bg-background border border-border/60 p-0 size-9 text-muted-foreground" variant="default" size="default">
-                      <svg className="lucide lucide-activity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ActivityIcon" tabler="IconActivity" hugeicons="Pulse01Icon" phosphor="ActivityIcon" remixicon="RiPulseLine" aria-hidden="true">
+                      <svg className="lucide lucide-activity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ActivityIcon" tabler="IconActivity" hugeicons="Pulse01Icon" phosphor="ActivityIcon" remixicon="RiPulseLine" aria-hidden="true">
                         <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
                       </svg>
                     </Item>
@@ -176,7 +176,7 @@ export function Pattern() {
                   </div>
                   <div className="flex gap-3 items-center">
                     <Item className="[&_svg]:size-4 bg-background border border-border/60 p-0 size-9 text-muted-foreground" variant="default" size="default">
-                      <svg className="lucide lucide-triangle-alert" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
+                      <svg className="lucide lucide-triangle-alert" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
                         <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
                         <path d="M12 9v4"></path>
                         <path d="M12 17h.01"></path>
@@ -203,36 +203,36 @@ export function Pattern() {
                     <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_4_] {\n  --color-current: var(--color-slate-600);\n  --color-previous: var(--color-zinc-400);\n}\n\n\n.dark [data-chart=chart-_r_4_] {\n  --color-current: var(--color-slate-600);\n  --color-previous: var(--color-zinc-400);\n}\n" }} />
                     <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                       <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                        <div className="recharts-wrapper" width="707" height="250" style={{position: "relative", cursor: "default", width: "707px", height: "250px"}}>
-                          <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex="-1" style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px"}}></div>
-                          <svg className="recharts-surface" role="application" tabIndex="0" width="707" height="250" viewBox="0 0 707 250" style={{width: "100%", height: "100%", display: "block"}}>
+                        <div className="recharts-wrapper" width={707} height={250} style={{position: "relative", cursor: "default", width: "707px", height: "250px"}}>
+                          <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex={-1} style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px"}}></div>
+                          <svg className="recharts-surface" role="application" tabIndex={0} width={707} height={250} viewBox="0 0 707 250" style={{width: "100%", height: "100%", display: "block"}}>
                             <title></title>
                             <desc></desc>
-                            <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                            <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                            <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                            <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                             <defs>
                               <clippath id="recharts1-clip">
-                                <rect x="5" y="5" height="210" width="697"></rect>
+                                <rect x={5} y={5} height={210} width={697}></rect>
                               </clippath>
                             </defs>
                             <defs>
-                              <lineargradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
-                                <stop offset="0%" stopColor="var(--color-slate-600)" stopOpacity="0.3"></stop>
-                                <stop offset="100%" stopColor="var(--color-slate-600)" stopOpacity="0.05"></stop>
+                              <lineargradient id="areaGradient" x1={0} y1={0} x2={0} y2={1}>
+                                <stop offset="0%" stopColor="var(--color-slate-600)" stopOpacity={0.3}></stop>
+                                <stop offset="100%" stopColor="var(--color-slate-600)" stopOpacity={0.05}></stop>
                               </lineargradient>
                             </defs>
-                            <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                            <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                               <g className="recharts-area recharts-layer">
                                 <g className="recharts-layer">
-                                  <path className="recharts-area-area recharts-curve" strokeWidth="2" fill="url(#areaGradient)" fillOpacity="0.6" height="210" stroke="none" width="697" id="recharts-area-_r_21_" d="M5,5C63.083,22.15,121.167,39.3,179.25,51.2C237.333,63.1,295.417,69.05,353.5,76.4C411.583,83.75,469.667,90.05,527.75,95.3C585.833,100.55,643.917,104.225,702,107.9L702,215C643.917,215,585.833,215,527.75,215C469.667,215,411.583,215,353.5,215C295.417,215,237.333,215,179.25,215C121.167,215,63.083,215,5,215Z"></path>
-                                  <path className="recharts-area-curve recharts-curve" strokeWidth="2" fill="none" fillOpacity="0.6" height="210" stroke="var(--color-slate-600)" width="697" d="M5,5C63.083,22.15,121.167,39.3,179.25,51.2C237.333,63.1,295.417,69.05,353.5,76.4C411.583,83.75,469.667,90.05,527.75,95.3C585.833,100.55,643.917,104.225,702,107.9"></path>
+                                  <path className="recharts-area-area recharts-curve" strokeWidth={2} fill="url(#areaGradient)" fillOpacity={0.6} height={210} stroke="none" width={697} id="recharts-area-_r_21_" d="M5,5C63.083,22.15,121.167,39.3,179.25,51.2C237.333,63.1,295.417,69.05,353.5,76.4C411.583,83.75,469.667,90.05,527.75,95.3C585.833,100.55,643.917,104.225,702,107.9L702,215C643.917,215,585.833,215,527.75,215C469.667,215,411.583,215,353.5,215C295.417,215,237.333,215,179.25,215C121.167,215,63.083,215,5,215Z"></path>
+                                  <path className="recharts-area-curve recharts-curve" strokeWidth={2} fill="none" fillOpacity={0.6} height={210} stroke="var(--color-slate-600)" width={697} d="M5,5C63.083,22.15,121.167,39.3,179.25,51.2C237.333,63.1,295.417,69.05,353.5,76.4C411.583,83.75,469.667,90.05,527.75,95.3C585.833,100.55,643.917,104.225,702,107.9"></path>
                                 </g>
                               </g>
                             </g>
-                            <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                            <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                            <g className="recharts-zIndex-layer_400" tabIndex="-1"></g>
-                            <g className="recharts-zIndex-layer_500" tabIndex="-1">
+                            <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                            <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                            <g className="recharts-zIndex-layer_400" tabIndex={-1}></g>
+                            <g className="recharts-zIndex-layer_500" tabIndex={-1}>
                               <g className="recharts-cartesian-axis recharts-layer recharts-xAxis xAxis">
                                 <g className="recharts-cartesian-axis-ticks recharts-xAxis-ticks">
                                   <g className="recharts-cartesian-axis-tick-lines recharts-xAxis-tick-lines">
@@ -244,44 +244,44 @@ export function Pattern() {
                                 </g>
                               </g>
                             </g>
-                            <g className="recharts-zIndex-layer_600" tabIndex="-1">
+                            <g className="recharts-zIndex-layer_600" tabIndex={-1}>
                               <g className="recharts-area-dots recharts-layer">
-                                <circle className="recharts-area-dot recharts-dot" r="4" strokeWidth="2" fill="var(--color-slate-600)" fillOpacity="0.6" height="210" stroke="white" width="697" cx="5" cy="5"></circle>
-                                <circle className="recharts-area-dot recharts-dot" r="4" strokeWidth="2" fill="var(--color-slate-600)" fillOpacity="0.6" height="210" stroke="white" width="697" cx="179.25" cy="51.199999999999996"></circle>
-                                <circle className="recharts-area-dot recharts-dot" r="4" strokeWidth="2" fill="var(--color-slate-600)" fillOpacity="0.6" height="210" stroke="white" width="697" cx="353.5" cy="76.39999999999999"></circle>
-                                <circle className="recharts-area-dot recharts-dot" r="4" strokeWidth="2" fill="var(--color-slate-600)" fillOpacity="0.6" height="210" stroke="white" width="697" cx="527.75" cy="95.30000000000001"></circle>
-                                <circle className="recharts-area-dot recharts-dot" r="4" strokeWidth="2" fill="var(--color-slate-600)" fillOpacity="0.6" height="210" stroke="white" width="697" cx="702" cy="107.89999999999999"></circle>
+                                <circle className="recharts-area-dot recharts-dot" r={4} strokeWidth={2} fill="var(--color-slate-600)" fillOpacity={0.6} height={210} stroke="white" width={697} cx={5} cy={5}></circle>
+                                <circle className="recharts-area-dot recharts-dot" r={4} strokeWidth={2} fill="var(--color-slate-600)" fillOpacity={0.6} height={210} stroke="white" width={697} cx={179.25} cy={51.199999999999996}></circle>
+                                <circle className="recharts-area-dot recharts-dot" r={4} strokeWidth={2} fill="var(--color-slate-600)" fillOpacity={0.6} height={210} stroke="white" width={697} cx={353.5} cy={76.39999999999999}></circle>
+                                <circle className="recharts-area-dot recharts-dot" r={4} strokeWidth={2} fill="var(--color-slate-600)" fillOpacity={0.6} height={210} stroke="white" width={697} cx={527.75} cy={95.30000000000001}></circle>
+                                <circle className="recharts-area-dot recharts-dot" r={4} strokeWidth={2} fill="var(--color-slate-600)" fillOpacity={0.6} height={210} stroke="white" width={697} cx={702} cy={107.89999999999999}></circle>
                               </g>
                             </g>
-                            <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                            <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                            <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                            <g className="recharts-zIndex-layer_2000" tabIndex="-1">
+                            <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                            <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                            <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                            <g className="recharts-zIndex-layer_2000" tabIndex={-1}>
                               <g className="recharts-cartesian-axis-tick-labels recharts-xAxis-tick-labels">
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                  <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="697" stroke="none" fontSize="12" x="179.25" y="229" textAnchor="middle" fill="var(--muted-foreground)">
-                                    <tspan x="179.25" dy="0.71em">
+                                  <text className="recharts-cartesian-axis-tick-value recharts-text" height={30} orientation="bottom" width={697} stroke="none" fontSize="12" x={179.25} y={229} textAnchor="middle" fill="var(--muted-foreground)">
+                                    <tspan x={179.25} dy="0.71em">
                                       {"W1"}
                                     </tspan>
                                   </text>
                                 </g>
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                  <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="697" stroke="none" fontSize="12" x="353.5" y="229" textAnchor="middle" fill="var(--muted-foreground)">
-                                    <tspan x="353.5" dy="0.71em">
+                                  <text className="recharts-cartesian-axis-tick-value recharts-text" height={30} orientation="bottom" width={697} stroke="none" fontSize="12" x={353.5} y={229} textAnchor="middle" fill="var(--muted-foreground)">
+                                    <tspan x={353.5} dy="0.71em">
                                       {"W2"}
                                     </tspan>
                                   </text>
                                 </g>
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                  <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="697" stroke="none" fontSize="12" x="527.75" y="229" textAnchor="middle" fill="var(--muted-foreground)">
-                                    <tspan x="527.75" dy="0.71em">
+                                  <text className="recharts-cartesian-axis-tick-value recharts-text" height={30} orientation="bottom" width={697} stroke="none" fontSize="12" x={527.75} y={229} textAnchor="middle" fill="var(--muted-foreground)">
+                                    <tspan x={527.75} dy="0.71em">
                                       {"W3"}
                                     </tspan>
                                   </text>
                                 </g>
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                  <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="697" stroke="none" fontSize="12" x="697.4140625" y="229" textAnchor="middle" fill="var(--muted-foreground)">
-                                    <tspan x="697.4140625" dy="0.71em">
+                                  <text className="recharts-cartesian-axis-tick-value recharts-text" height={30} orientation="bottom" width={697} stroke="none" fontSize="12" x={697.4140625} y={229} textAnchor="middle" fill="var(--muted-foreground)">
+                                    <tspan x={697.4140625} dy="0.71em">
                                       {"W4"}
                                     </tspan>
                                   </text>
@@ -311,23 +311,23 @@ export function Pattern() {
                 </div>
                 <div className="flex gap-2 items-center">
                   <Select>
-                  <SelectTrigger className="h-8! w-28" type="button" tabIndex="0" id="base-ui-_r_5_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                  <SelectTrigger className="h-8! w-28" type="button" tabIndex={0} id="base-ui-_r_5_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                     <SelectValue>
                       {"8W"}
                     </SelectValue>
-                    <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                    <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
                       {"▼"}
                     </svg>
                   </SelectTrigger>
                   </Select>
-                  <input id="base-ui-_r_5_-hidden-input" tabIndex="-1" aria-hidden="true" value="8W" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_5_-hidden-input" tabIndex={-1} aria-hidden="true" value="8W" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <DropdownMenu>
-                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open cohort health actions" aria-haspopup="menu" id="base-ui-_r_b_" aria-expanded="false">
-                    <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                      <circle cx="12" cy="12" r="1"></circle>
-                      <circle cx="19" cy="12" r="1"></circle>
-                      <circle cx="5" cy="12" r="1"></circle>
+                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Open cohort health actions" aria-haspopup="menu" id="base-ui-_r_b_" aria-expanded="false">
+                    <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                      <circle cx={12} cy={12} r={1}></circle>
+                      <circle cx={19} cy={12} r={1}></circle>
+                      <circle cx={5} cy={12} r={1}></circle>
                     </svg>
                   </DropdownMenuTrigger>
                   </DropdownMenu>
@@ -343,7 +343,7 @@ export function Pattern() {
                       {"Week 4"}
                     </div>
                     <span className="[&_svg]:h-3 [&_svg]:w-3 flex font-semibold gap-0.5 items-center text-emerald-500 text-xs">
-                      <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
+                      <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                         <path d="M16 7h6v6"></path>
                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                       </svg>
@@ -358,7 +358,7 @@ export function Pattern() {
                       {"Events"}
                     </div>
                     <span className="[&_svg]:h-3 [&_svg]:w-3 flex font-semibold gap-0.5 items-center text-emerald-500 text-xs">
-                      <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
+                      <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                         <path d="M16 7h6v6"></path>
                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                       </svg>
@@ -373,7 +373,7 @@ export function Pattern() {
                       {"Weak"}
                     </div>
                     <span className="[&_svg]:h-3 [&_svg]:w-3 flex font-semibold gap-0.5 items-center text-destructive text-xs">
-                      <svg className="lucide lucide-trending-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
+                      <svg className="lucide lucide-trending-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
                         <path d="M16 17h6v-6"></path>
                         <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                       </svg>
@@ -409,8 +409,8 @@ export function Pattern() {
                     <li className="text-sm">
                       <button className="flex gap-2.5 items-center justify-between text-left w-full" type="button" aria-pressed="true">
                         <span className="flex gap-2 items-center min-w-0">
-                          <svg className="h-3.5 lucide lucide-circle-check text-emerald-500 w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
-                            <circle cx="12" cy="12" r="10"></circle>
+                          <svg className="h-3.5 lucide lucide-circle-check text-emerald-500 w-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
+                            <circle cx={12} cy={12} r={10}></circle>
                             <path d="m9 12 2 2 4-4"></path>
                           </svg>
                           <span className="text-foreground text-xs truncate">
@@ -425,8 +425,8 @@ export function Pattern() {
                     <li className="text-sm">
                       <button className="flex gap-2.5 items-center justify-between text-left w-full" type="button" aria-pressed="false">
                         <span className="flex gap-2 items-center min-w-0">
-                          <svg className="h-3.5 lucide lucide-circle-check text-warning w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
-                            <circle cx="12" cy="12" r="10"></circle>
+                          <svg className="h-3.5 lucide lucide-circle-check text-warning w-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
+                            <circle cx={12} cy={12} r={10}></circle>
                             <path d="m9 12 2 2 4-4"></path>
                           </svg>
                           <span className="text-foreground text-xs truncate">
@@ -441,8 +441,8 @@ export function Pattern() {
                     <li className="text-sm">
                       <button className="flex gap-2.5 items-center justify-between text-left w-full" type="button" aria-pressed="false">
                         <span className="flex gap-2 items-center min-w-0">
-                          <svg className="h-3.5 lucide lucide-circle-check text-destructive w-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
-                            <circle cx="12" cy="12" r="10"></circle>
+                          <svg className="h-3.5 lucide lucide-circle-check text-destructive w-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
+                            <circle cx={12} cy={12} r={10}></circle>
                             <path d="m9 12 2 2 4-4"></path>
                           </svg>
                           <span className="text-foreground text-xs truncate">
@@ -459,10 +459,10 @@ export function Pattern() {
               </div>
             </FramePanel>
             <footer className="flex flex-row gap-2.5 items-center p-2! px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
-              <Button className="flex-1" type="button" tabIndex="0">
+              <Button className="flex-1" type="button" tabIndex={0}>
                 {"Open Notes"}
               </Button>
-              <Button className="flex-1" type="button" tabIndex="0">
+              <Button className="flex-1" type="button" tabIndex={0}>
                 {"Export CSV"}
               </Button>
             </footer>
@@ -487,16 +487,16 @@ export function Pattern() {
               </div>
             </div>
             <div className="flex gap-2 items-center shrink-0">
-              <Button type="button" tabIndex="0">
-                <svg className="lucide lucide-columns-3 lucide-columns3 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Columns3Icon" tabler="IconColumns3" hugeicons="Layout07Icon" phosphor="ColumnsIcon" remixicon="RiLayoutColumnLine" aria-hidden="true">
-                  <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+              <Button type="button" tabIndex={0}>
+                <svg className="lucide lucide-columns-3 lucide-columns3 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Columns3Icon" tabler="IconColumns3" hugeicons="Layout07Icon" phosphor="ColumnsIcon" remixicon="RiLayoutColumnLine" aria-hidden="true">
+                  <rect width={18} height={18} x={3} y={3} rx={2}></rect>
                   <path d="M9 3v18"></path>
                   <path d="M15 3v18"></path>
                 </svg>
                 {"Columns"}
               </Button>
-              <Button type="button" tabIndex="0">
-                <svg className="lucide lucide-download size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
+              <Button type="button" tabIndex={0}>
+                <svg className="lucide lucide-download size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
                   <path d="M12 15V3"></path>
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                   <path d="m7 10 5 5 5-5"></path>
@@ -509,7 +509,7 @@ export function Pattern() {
             <div className="pt-(--frame-panel-header-py) px-(--frame-panel-header-px)">
               <Tabs data-orientation="horizontal" activationDirection="none">
                 <TabsList className="gap-5" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
-                  <TabsTrigger className="gap-2 pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_e_" compositeItemActive="">
+                  <TabsTrigger className="gap-2 pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex={0} role="tab" aria-selected="true" id="base-ui-_r_e_" compositeItemActive="">
                     <span>
                       {"All"}
                     </span>
@@ -517,7 +517,7 @@ export function Pattern() {
                       {"4"}
                     </span>
                   </TabsTrigger>
-                  <TabsTrigger className="gap-2 pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_f_">
+                  <TabsTrigger className="gap-2 pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_f_">
                     <span>
                       {"Stable"}
                     </span>
@@ -525,7 +525,7 @@ export function Pattern() {
                       {"2"}
                     </span>
                   </TabsTrigger>
-                  <TabsTrigger className="gap-2 pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_g_">
+                  <TabsTrigger className="gap-2 pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_g_">
                     <span>
                       {"Watch"}
                     </span>
@@ -533,7 +533,7 @@ export function Pattern() {
                       {"1"}
                     </span>
                   </TabsTrigger>
-                  <TabsTrigger className="gap-2 pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_h_">
+                  <TabsTrigger className="gap-2 pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_h_">
                     <span>
                       {"Weak"}
                     </span>
@@ -548,7 +548,7 @@ export function Pattern() {
             <div className="relative">
               <DataGridProvider>
               <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
-                <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_i_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
+                <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_i_-viewport" tabIndex={-1} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                   <div role="presentation" style={{minWidth: "fit-content"}}>
                     <DataGridProvider>
                     <DataGridTableViewport style={{width: "calc(1150px + var(--data-grid-fill-size, 0px))", "--data-grid-fill-size": "0px", "--data-grid-fill": "0"}}>
@@ -569,9 +569,9 @@ export function Pattern() {
                             <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible ps-(--frame-panel-px) px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="ascending" data-col-id="cohort" data-header-id="cohort" data-header-depth="0" style={{width: "calc(var(--header-cohort-size) * 1px)"}}>
                               <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_m_" aria-expanded="false">
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_m_" aria-expanded="false">
                                   {"Cohort"}
-                                  <svg className="lucide lucide-arrow-up size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
+                                  <svg className="lucide lucide-arrow-up size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                                     <path d="m5 12 7-7 7 7"></path>
                                     <path d="M12 19V5"></path>
                                   </svg>
@@ -583,9 +583,9 @@ export function Pattern() {
                             <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="signals" data-header-id="signals" data-header-depth="0" style={{width: "calc(var(--header-signals-size) * 1px)"}}>
                               <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_r_" aria-expanded="false">
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_r_" aria-expanded="false">
                                   {"Signals"}
-                                  <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                  <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -597,9 +597,9 @@ export function Pattern() {
                             <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="event" data-header-id="event" data-header-depth="0" style={{width: "calc(var(--header-event-size) * 1px)"}}>
                               <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_10_" aria-expanded="false">
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_10_" aria-expanded="false">
                                   {"Event"}
-                                  <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                  <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -611,9 +611,9 @@ export function Pattern() {
                             <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="owner" data-header-id="owner" data-header-depth="0" style={{width: "calc(var(--header-owner-size) * 1px)"}}>
                               <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_15_" aria-expanded="false">
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_15_" aria-expanded="false">
                                   {"Owner"}
-                                  <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                  <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -625,9 +625,9 @@ export function Pattern() {
                             <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="weekFour" data-header-id="weekFour" data-header-depth="0" style={{width: "calc(var(--header-weekFour-size) * 1px)"}}>
                               <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1a_" aria-expanded="false">
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_1a_" aria-expanded="false">
                                   {"Week 4"}
-                                  <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                  <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -639,9 +639,9 @@ export function Pattern() {
                             <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="delta" data-header-id="delta" data-header-depth="0" style={{width: "calc(var(--header-delta-size) * 1px)"}}>
                               <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1f_" aria-expanded="false">
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_1f_" aria-expanded="false">
                                   {"Delta"}
-                                  <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                  <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -653,9 +653,9 @@ export function Pattern() {
                             <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible pe-(--frame-panel-px) px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="status" data-header-id="status" data-header-depth="0" style={{width: "calc(var(--header-status-size) * 1px)"}}>
                               <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1k_" aria-expanded="false">
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_1k_" aria-expanded="false">
                                   {"Status"}
-                                  <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                  <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -726,8 +726,8 @@ export function Pattern() {
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-weekFour-size) * 1px)"}}>
                               <div className="flex gap-2 items-center">
                                 <svg className="shrink-0 size-5 text-emerald-500" viewBox="0 0 24 24" aria-hidden="true">
-                                  <circle className="stroke-border" cx="12" cy="12" r="9" fill="none" strokeWidth="2.5"></circle>
-                                  <circle className="stroke-current" cx="12" cy="12" r="9" fill="none" strokeWidth="2.5" strokeLinecap="round" strokeDasharray="56.548667764616276" strokeDashoffset="27.708847204661975" transform="rotate(-90 12 12)"></circle>
+                                  <circle className="stroke-border" cx={12} cy={12} r={9} fill="none" strokeWidth={2.5}></circle>
+                                  <circle className="stroke-current" cx={12} cy={12} r={9} fill="none" strokeWidth={2.5} strokeLinecap="round" strokeDasharray={56.548667764616276} strokeDashoffset={27.708847204661975} transform="rotate(-90 12 12)"></circle>
                                 </svg>
                                 <span className="tabular-nums text-foreground text-sm">
                                   {"51%"}
@@ -801,8 +801,8 @@ export function Pattern() {
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-weekFour-size) * 1px)"}}>
                               <div className="flex gap-2 items-center">
                                 <svg className="shrink-0 size-5 text-amber-500" viewBox="0 0 24 24" aria-hidden="true">
-                                  <circle className="stroke-border" cx="12" cy="12" r="9" fill="none" strokeWidth="2.5"></circle>
-                                  <circle className="stroke-current" cx="12" cy="12" r="9" fill="none" strokeWidth="2.5" strokeLinecap="round" strokeDasharray="56.548667764616276" strokeDashoffset="30.536280592892787" transform="rotate(-90 12 12)"></circle>
+                                  <circle className="stroke-border" cx={12} cy={12} r={9} fill="none" strokeWidth={2.5}></circle>
+                                  <circle className="stroke-current" cx={12} cy={12} r={9} fill="none" strokeWidth={2.5} strokeLinecap="round" strokeDasharray={56.548667764616276} strokeDashoffset={30.536280592892787} transform="rotate(-90 12 12)"></circle>
                                 </svg>
                                 <span className="tabular-nums text-foreground text-sm">
                                   {"46%"}
@@ -878,8 +878,8 @@ export function Pattern() {
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-weekFour-size) * 1px)"}}>
                               <div className="flex gap-2 items-center">
                                 <svg className="shrink-0 size-5 text-rose-500" viewBox="0 0 24 24" aria-hidden="true">
-                                  <circle className="stroke-border" cx="12" cy="12" r="9" fill="none" strokeWidth="2.5"></circle>
-                                  <circle className="stroke-current" cx="12" cy="12" r="9" fill="none" strokeWidth="2.5" strokeLinecap="round" strokeDasharray="56.548667764616276" strokeDashoffset="38.45309407993906" transform="rotate(-90 12 12)"></circle>
+                                  <circle className="stroke-border" cx={12} cy={12} r={9} fill="none" strokeWidth={2.5}></circle>
+                                  <circle className="stroke-current" cx={12} cy={12} r={9} fill="none" strokeWidth={2.5} strokeLinecap="round" strokeDasharray={56.548667764616276} strokeDashoffset={38.45309407993906} transform="rotate(-90 12 12)"></circle>
                                 </svg>
                                 <span className="tabular-nums text-foreground text-sm">
                                   {"32%"}
@@ -953,8 +953,8 @@ export function Pattern() {
                             <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-weekFour-size) * 1px)"}}>
                               <div className="flex gap-2 items-center">
                                 <svg className="shrink-0 size-5 text-amber-500" viewBox="0 0 24 24" aria-hidden="true">
-                                  <circle className="stroke-border" cx="12" cy="12" r="9" fill="none" strokeWidth="2.5"></circle>
-                                  <circle className="stroke-current" cx="12" cy="12" r="9" fill="none" strokeWidth="2.5" strokeLinecap="round" strokeDasharray="56.548667764616276" strokeDashoffset="33.3637139811236" transform="rotate(-90 12 12)"></circle>
+                                  <circle className="stroke-border" cx={12} cy={12} r={9} fill="none" strokeWidth={2.5}></circle>
+                                  <circle className="stroke-current" cx={12} cy={12} r={9} fill="none" strokeWidth={2.5} strokeLinecap="round" strokeDasharray={56.548667764616276} strokeDashoffset={33.3637139811236} transform="rotate(-90 12 12)"></circle>
                                 </svg>
                                 <span className="tabular-nums text-foreground text-sm">
                                   {"41%"}
@@ -993,17 +993,17 @@ export function Pattern() {
                     {"Rows per page"}
                   </div>
                   <Select>
-                  <SelectTrigger className="min-w-16" type="button" tabIndex="0" id="base-ui-_r_1u_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Rows per page">
+                  <SelectTrigger className="min-w-16" type="button" tabIndex={0} id="base-ui-_r_1u_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Rows per page">
                     <SelectValue>
                       {"5"}
                     </SelectValue>
-                    <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                    <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
                       {"▼"}
                     </svg>
                   </SelectTrigger>
                   </Select>
-                  <input id="base-ui-_r_1u_-hidden-input" tabIndex="-1" aria-hidden="true" value="5" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_1u_-hidden-input" tabIndex={-1} aria-hidden="true" value="5" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </div>
                 <div className="flex flex-col gap-2.5 items-center justify-center order-1 pt-2.5 sm:flex-row sm:justify-end sm:order-2 sm:pt-0">
                   <div className="order-2 sm:order-1 text-muted-foreground text-nowrap text-sm">

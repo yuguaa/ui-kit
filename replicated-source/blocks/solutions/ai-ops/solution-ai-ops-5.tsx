@@ -50,14 +50,14 @@ export function Pattern() {
               <span className="hidden md:block text-foreground text-sm">
                 {"Active"}
               </span>
-              <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_0_" aria-checked="true" size="default" aria-label="Activate routing rules" aria-labelledby="base-ui-_r_1_-label">
+              <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_0_" aria-checked="true" size="default" aria-label="Activate routing rules" aria-labelledby="base-ui-_r_1_-label">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
               </Switch>
-              <input id="base-ui-_r_1_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="base-ui-_r_1_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </Label>
             <Separator className="h-4 my-auto" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
-            <Button type="button" tabIndex="0" extracted="1">
-              <svg className="lucide lucide-rotate-ccw" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RotateCcwIcon" tabler="IconRefresh" hugeicons="UndoIcon" phosphor="ArrowCounterClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
+            <Button type="button" tabIndex={0} extracted="1">
+              <svg className="lucide lucide-rotate-ccw" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="RotateCcwIcon" tabler="IconRefresh" hugeicons="UndoIcon" phosphor="ArrowCounterClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
                 <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                 <path d="M3 3v5h5"></path>
               </svg>
@@ -65,8 +65,8 @@ export function Pattern() {
                 {"Reset"}
               </span>
             </Button>
-            <Button type="button" tabIndex="0">
-              <svg className="lucide lucide-save" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SaveIcon" tabler="IconDeviceFloppy" hugeicons="FloppyDiskIcon" phosphor="FloppyDiskIcon" remixicon="RiSaveLine" aria-hidden="true">
+            <Button type="button" tabIndex={0}>
+              <svg className="lucide lucide-save" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SaveIcon" tabler="IconDeviceFloppy" hugeicons="FloppyDiskIcon" phosphor="FloppyDiskIcon" remixicon="RiSaveLine" aria-hidden="true">
                 <path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"></path>
                 <path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"></path>
                 <path d="M7 3v4a1 1 0 0 0 1 1h7"></path>
@@ -76,11 +76,11 @@ export function Pattern() {
               </span>
             </Button>
             <DropdownMenu>
-            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Routing options" aria-haspopup="menu" id="base-ui-_r_6_" aria-expanded="false">
-              <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                <circle cx="12" cy="12" r="1"></circle>
-                <circle cx="19" cy="12" r="1"></circle>
-                <circle cx="5" cy="12" r="1"></circle>
+            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Routing options" aria-haspopup="menu" id="base-ui-_r_6_" aria-expanded="false">
+              <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                <circle cx={12} cy={12} r={1}></circle>
+                <circle cx={19} cy={12} r={1}></circle>
+                <circle cx={5} cy={12} r={1}></circle>
               </svg>
             </DropdownMenuTrigger>
             </DropdownMenu>
@@ -112,10 +112,10 @@ export function Pattern() {
                       {"Move traffic after 12s p95."}
                     </div>
                   </div>
-                  <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_8_" aria-checked="true" size="default" aria-label="Support Reply Drafts Provider fallback">
+                  <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_8_" aria-checked="true" size="default" aria-label="Support Reply Drafts Provider fallback">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_9_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_9_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </div>
                 <div className="flex gap-4 items-center justify-between">
                   <div className="space-y-px">
@@ -126,10 +126,10 @@ export function Pattern() {
                       {"Allow 64M token peak days."}
                     </div>
                   </div>
-                  <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_b_" aria-checked="false" size="default" aria-label="Support Reply Drafts Long context">
+                  <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_b_" aria-checked="false" size="default" aria-label="Support Reply Drafts Long context">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_c_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_c_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </div>
                 <div className="flex gap-4 items-center justify-between">
                   <div className="space-y-px">
@@ -140,10 +140,10 @@ export function Pattern() {
                       {"Route SAFE-0914 before send."}
                     </div>
                   </div>
-                  <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_e_" aria-checked="false" size="default" aria-label="Support Reply Drafts Safety review">
+                  <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_e_" aria-checked="false" size="default" aria-label="Support Reply Drafts Safety review">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_f_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_f_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </div>
                 <div className="flex gap-4 items-center justify-between">
                   <div className="space-y-px">
@@ -154,10 +154,10 @@ export function Pattern() {
                       {"Prefer sub $0.18 per MTok."}
                     </div>
                   </div>
-                  <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_h_" aria-checked="true" size="default" aria-label="Support Reply Drafts Low cost mode">
+                  <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_h_" aria-checked="true" size="default" aria-label="Support Reply Drafts Low cost mode">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_i_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_i_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </div>
               </div>
               <Field className="gap-2" role="group" data-orientation="vertical">
@@ -165,17 +165,17 @@ export function Pattern() {
                   {"Fallback priority"}
                 </FieldLabel>
                 <Select>
-                <SelectTrigger className="w-full" type="button" tabIndex="0" id="support-reply-drafts-fallback" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-invalid="false">
+                <SelectTrigger className="w-full" type="button" tabIndex={0} id="support-reply-drafts-fallback" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-invalid="false">
                   <SelectValue>
                     {"VectorEdge Small"}
                   </SelectValue>
-                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                     {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
-                <input id="base-ui-_r_k_-hidden-input" tabIndex="-1" aria-hidden="true" value="vectoredge-small" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                <input id="base-ui-_r_k_-hidden-input" tabIndex={-1} aria-hidden="true" value="vectoredge-small" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 <FieldDescription>
                   {"Mira Stone allows low risk cost routing."}
                 </FieldDescription>
@@ -207,10 +207,10 @@ export function Pattern() {
                       {"Move traffic after 12s p95."}
                     </div>
                   </div>
-                  <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_n_" aria-checked="true" size="default" aria-label="Renewal Risk Summaries Provider fallback">
+                  <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_n_" aria-checked="true" size="default" aria-label="Renewal Risk Summaries Provider fallback">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_o_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_o_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </div>
                 <div className="flex gap-4 items-center justify-between">
                   <div className="space-y-px">
@@ -221,10 +221,10 @@ export function Pattern() {
                       {"Allow 64M token peak days."}
                     </div>
                   </div>
-                  <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_q_" aria-checked="true" size="default" aria-label="Renewal Risk Summaries Long context">
+                  <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_q_" aria-checked="true" size="default" aria-label="Renewal Risk Summaries Long context">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_r_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_r_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </div>
                 <div className="flex gap-4 items-center justify-between">
                   <div className="space-y-px">
@@ -235,10 +235,10 @@ export function Pattern() {
                       {"Route SAFE-0914 before send."}
                     </div>
                   </div>
-                  <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_t_" aria-checked="false" size="default" aria-label="Renewal Risk Summaries Safety review">
+                  <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_t_" aria-checked="false" size="default" aria-label="Renewal Risk Summaries Safety review">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_u_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_u_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </div>
                 <div className="flex gap-4 items-center justify-between">
                   <div className="space-y-px">
@@ -249,10 +249,10 @@ export function Pattern() {
                       {"Prefer sub $0.18 per MTok."}
                     </div>
                   </div>
-                  <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_10_" aria-checked="false" size="default" aria-label="Renewal Risk Summaries Low cost mode">
+                  <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_10_" aria-checked="false" size="default" aria-label="Renewal Risk Summaries Low cost mode">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_11_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_11_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </div>
               </div>
               <Field className="gap-2" role="group" data-orientation="vertical">
@@ -260,17 +260,17 @@ export function Pattern() {
                   {"Fallback priority"}
                 </FieldLabel>
                 <Select>
-                <SelectTrigger className="w-full" type="button" tabIndex="0" id="renewal-risk-summaries-fallback" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-invalid="false">
+                <SelectTrigger className="w-full" type="button" tabIndex={0} id="renewal-risk-summaries-fallback" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-invalid="false">
                   <SelectValue>
                     {"Northstar Claude Pool"}
                   </SelectValue>
-                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                     {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
-                <input id="base-ui-_r_13_-hidden-input" tabIndex="-1" aria-hidden="true" value="northstar-claude-pool" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                <input id="base-ui-_r_13_-hidden-input" tabIndex={-1} aria-hidden="true" value="northstar-claude-pool" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 <FieldDescription>
                   {"Leo Grant reviews latency drift weekly."}
                 </FieldDescription>
@@ -302,10 +302,10 @@ export function Pattern() {
                       {"Move traffic after 12s p95."}
                     </div>
                   </div>
-                  <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_16_" aria-checked="true" size="default" aria-label="Invoice Variance Explainers Provider fallback">
+                  <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_16_" aria-checked="true" size="default" aria-label="Invoice Variance Explainers Provider fallback">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_17_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_17_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </div>
                 <div className="flex gap-4 items-center justify-between">
                   <div className="space-y-px">
@@ -316,10 +316,10 @@ export function Pattern() {
                       {"Allow 64M token peak days."}
                     </div>
                   </div>
-                  <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_19_" aria-checked="true" size="default" aria-label="Invoice Variance Explainers Long context">
+                  <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_19_" aria-checked="true" size="default" aria-label="Invoice Variance Explainers Long context">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_1a_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_1a_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </div>
                 <div className="flex gap-4 items-center justify-between">
                   <div className="space-y-px">
@@ -330,10 +330,10 @@ export function Pattern() {
                       {"Permission denied by Elijah Morgan."}
                     </div>
                   </div>
-                  <Switch disabled="" checked="" role="switch" tabIndex="-1" aria-disabled="true" id="base-ui-_r_1c_" aria-checked="true" size="default" aria-label="Invoice Variance Explainers Safety review">
+                  <Switch disabled="" checked="" role="switch" tabIndex={-1} aria-disabled="true" id="base-ui-_r_1c_" aria-checked="true" size="default" aria-label="Invoice Variance Explainers Safety review">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-disabled="" data-checked=""></span>
                   </Switch>
-                  <input disabled id="base-ui-_r_1d_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input disabled id="base-ui-_r_1d_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </div>
                 <div className="flex gap-4 items-center justify-between">
                   <div className="space-y-px">
@@ -344,10 +344,10 @@ export function Pattern() {
                       {"Prefer sub $0.18 per MTok."}
                     </div>
                   </div>
-                  <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_1f_" aria-checked="false" size="default" aria-label="Invoice Variance Explainers Low cost mode">
+                  <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_1f_" aria-checked="false" size="default" aria-label="Invoice Variance Explainers Low cost mode">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_1g_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_1g_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </div>
               </div>
               <Field className="gap-2" role="group" data-orientation="vertical">
@@ -355,17 +355,17 @@ export function Pattern() {
                   {"Fallback priority"}
                 </FieldLabel>
                 <Select>
-                <SelectTrigger className="w-full" type="button" tabIndex="0" id="invoice-variance-explainers-fallback" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-invalid="false">
+                <SelectTrigger className="w-full" type="button" tabIndex={0} id="invoice-variance-explainers-fallback" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-invalid="false">
                   <SelectValue>
                     {"Local Guardrail Runner"}
                   </SelectValue>
-                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                     {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
-                <input id="base-ui-_r_1i_-hidden-input" tabIndex="-1" aria-hidden="true" value="local-guardrail-runner" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                <input id="base-ui-_r_1i_-hidden-input" tabIndex={-1} aria-hidden="true" value="local-guardrail-runner" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 <FieldDescription>
                   {"SAFE-0914 keeps finance copy gated."}
                 </FieldDescription>
@@ -397,10 +397,10 @@ export function Pattern() {
                       {"Move traffic after 12s p95."}
                     </div>
                   </div>
-                  <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_1l_" aria-checked="false" size="default" aria-label="Payment Action Drafts Provider fallback">
+                  <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_1l_" aria-checked="false" size="default" aria-label="Payment Action Drafts Provider fallback">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_1m_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_1m_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </div>
                 <div className="flex gap-4 items-center justify-between">
                   <div className="space-y-px">
@@ -411,10 +411,10 @@ export function Pattern() {
                       {"Allow 64M token peak days."}
                     </div>
                   </div>
-                  <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_1o_" aria-checked="false" size="default" aria-label="Payment Action Drafts Long context">
+                  <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_1o_" aria-checked="false" size="default" aria-label="Payment Action Drafts Long context">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_1p_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_1p_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </div>
                 <div className="flex gap-4 items-center justify-between">
                   <div className="space-y-px">
@@ -425,10 +425,10 @@ export function Pattern() {
                       {"Permission denied by Elijah Morgan."}
                     </div>
                   </div>
-                  <Switch disabled="" unchecked="" role="switch" tabIndex="-1" aria-disabled="true" id="base-ui-_r_1r_" aria-checked="false" size="default" aria-label="Payment Action Drafts Safety review">
+                  <Switch disabled="" unchecked="" role="switch" tabIndex={-1} aria-disabled="true" id="base-ui-_r_1r_" aria-checked="false" size="default" aria-label="Payment Action Drafts Safety review">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-disabled="" data-unchecked=""></span>
                   </Switch>
-                  <input disabled id="base-ui-_r_1s_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input disabled id="base-ui-_r_1s_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </div>
                 <div className="flex gap-4 items-center justify-between">
                   <div className="space-y-px">
@@ -439,10 +439,10 @@ export function Pattern() {
                       {"Permission denied by Elijah Morgan."}
                     </div>
                   </div>
-                  <Switch disabled="" unchecked="" role="switch" tabIndex="-1" aria-disabled="true" id="base-ui-_r_1u_" aria-checked="false" size="default" aria-label="Payment Action Drafts Low cost mode">
+                  <Switch disabled="" unchecked="" role="switch" tabIndex={-1} aria-disabled="true" id="base-ui-_r_1u_" aria-checked="false" size="default" aria-label="Payment Action Drafts Low cost mode">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-disabled="" data-unchecked=""></span>
                   </Switch>
-                  <input disabled id="base-ui-_r_1v_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input disabled id="base-ui-_r_1v_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </div>
               </div>
               <Field className="gap-2" role="group" data-orientation="vertical">
@@ -450,17 +450,17 @@ export function Pattern() {
                   {"Fallback priority"}
                 </FieldLabel>
                 <Select>
-                <SelectTrigger className="w-full" type="button" tabIndex="0" id="payment-action-drafts-fallback" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-invalid="true">
+                <SelectTrigger className="w-full" type="button" tabIndex={0} id="payment-action-drafts-fallback" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-invalid="true">
                   <SelectValue>
                     {"No fallback"}
                   </SelectValue>
-                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                     {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
-                <input id="base-ui-_r_21_-hidden-input" tabIndex="-1" aria-hidden="true" value="none" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                <input id="base-ui-_r_21_-hidden-input" tabIndex={-1} aria-hidden="true" value="none" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 <FieldError role="alert">
                   {"Choose Local Guardrail Runner before saving."}
                 </FieldError>

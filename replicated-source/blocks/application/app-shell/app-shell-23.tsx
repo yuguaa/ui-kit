@@ -50,9 +50,9 @@ export function Pattern() {
       <header className="bg-muted/50 border-b fixed flex h-(--app-topbar-height) inset-x-0 items-center pe-[var(--removed-body-scroll-bar-size,0px)] text-foreground top-0 z-30">
         <div className="flex gap-4 items-center px-4 sm:px-6 w-full">
           <SidebarProvider>
-          <SidebarTrigger className="-me-2 -ms-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center md:hidden outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" sidebar="trigger">
-            <svg className="cn-rtl-flip lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="PanelLeftIcon" tabler="IconLayoutSidebar" hugeicons="SidebarLeftIcon" phosphor="SidebarIcon" remixicon="RiSideBarLine">
-              <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+          <SidebarTrigger className="-me-2 -ms-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center md:hidden outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} sidebar="trigger">
+            <svg className="cn-rtl-flip lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="PanelLeftIcon" tabler="IconLayoutSidebar" hugeicons="SidebarLeftIcon" phosphor="SidebarIcon" remixicon="RiSideBarLine">
+              <rect width={18} height={18} x={3} y={3} rx={2}></rect>
               <path d="M9 3v18"></path>
             </svg>
             <span className="sr-only">
@@ -78,11 +78,11 @@ export function Pattern() {
             <BreadcrumbList className="flex-nowrap gap-1">
               <BreadcrumbItem className="min-w-0">
                 <DropdownMenu>
-                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center min-w-0 outline-none px-1 select-none shrink text-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Switch team" aria-haspopup="menu" id="base-ui-_r_3_" aria-expanded="false">
+                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center min-w-0 outline-none px-1 select-none shrink text-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Switch team" aria-haspopup="menu" id="base-ui-_r_3_" aria-expanded="false">
                   <span className="truncate">
                     {"Operations Team"}
                   </span>
-                  <svg className="lucide lucide-chevrons-up-down size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                  <svg className="lucide lucide-chevrons-up-down size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                     <path d="m7 15 5 5 5-5"></path>
                     <path d="m7 9 5-5 5 5"></path>
                   </svg>
@@ -94,11 +94,11 @@ export function Pattern() {
               </BreadcrumbSeparator>
               <BreadcrumbItem className="min-w-0">
                 <DropdownMenu>
-                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center min-w-0 outline-none px-1 select-none shrink text-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Switch project" aria-haspopup="menu" id="base-ui-_r_8_" aria-expanded="false">
+                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center min-w-0 outline-none px-1 select-none shrink text-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Switch project" aria-haspopup="menu" id="base-ui-_r_8_" aria-expanded="false">
                   <span className="truncate">
                     {"Fleet Control"}
                   </span>
-                  <svg className="lucide lucide-chevrons-up-down size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                  <svg className="lucide lucide-chevrons-up-down size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                     <path d="m7 15 5 5 5-5"></path>
                     <path d="m7 9 5-5 5 5"></path>
                   </svg>
@@ -109,33 +109,33 @@ export function Pattern() {
           </Breadcrumb>
           <div className="flex gap-0 items-center ms-auto shrink-0" role="toolbar" aria-label="Workspace actions">
             <DropdownMenu>
-            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Apps" aria-haspopup="menu" id="base-ui-_r_d_" aria-expanded="false">
-              <svg className="lucide lucide-layout-grid" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
-                <rect width="7" height="7" x="3" y="3" rx="1"></rect>
-                <rect width="7" height="7" x="14" y="3" rx="1"></rect>
-                <rect width="7" height="7" x="14" y="14" rx="1"></rect>
-                <rect width="7" height="7" x="3" y="14" rx="1"></rect>
+            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Apps" aria-haspopup="menu" id="base-ui-_r_d_" aria-expanded="false">
+              <svg className="lucide lucide-layout-grid" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
+                <rect width={7} height={7} x={3} y={3} rx={1}></rect>
+                <rect width={7} height={7} x={14} y={3} rx={1}></rect>
+                <rect width={7} height={7} x={14} y={14} rx={1}></rect>
+                <rect width={7} height={7} x={3} y={14} rx={1}></rect>
               </svg>
             </DropdownMenuTrigger>
             </DropdownMenu>
             <DropdownMenu>
-            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open settings" aria-haspopup="menu" id="base-ui-_r_i_" aria-expanded="false">
-              <svg className="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SettingsIcon" tabler="IconSettings" hugeicons="SettingsIcon" phosphor="GearIcon" remixicon="RiSettings3Line" aria-hidden="true">
+            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Open settings" aria-haspopup="menu" id="base-ui-_r_i_" aria-expanded="false">
+              <svg className="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SettingsIcon" tabler="IconSettings" hugeicons="SettingsIcon" phosphor="GearIcon" remixicon="RiSettings3Line" aria-hidden="true">
                 <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
-                <circle cx="12" cy="12" r="3"></circle>
+                <circle cx={12} cy={12} r={3}></circle>
               </svg>
             </DropdownMenuTrigger>
             </DropdownMenu>
             <Sheet>
-            <SheetTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Notifications" baseUiClickTrigger="" id="base-ui-_r_l_" aria-haspopup="dialog" aria-expanded="false">
-              <svg className="lucide lucide-bell" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BellIcon" tabler="IconBell" hugeicons="NotificationIcon" phosphor="BellIcon" remixicon="RiNotificationLine" aria-hidden="true">
+            <SheetTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Notifications" baseUiClickTrigger="" id="base-ui-_r_l_" aria-haspopup="dialog" aria-expanded="false">
+              <svg className="lucide lucide-bell" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BellIcon" tabler="IconBell" hugeicons="NotificationIcon" phosphor="BellIcon" remixicon="RiNotificationLine" aria-hidden="true">
                 <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
                 <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
               </svg>
             </SheetTrigger>
             </Sheet>
             <DropdownMenu>
-            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center ms-1 outline-none rounded-full select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open account menu" aria-haspopup="menu" id="base-ui-_r_p_" aria-expanded="false">
+            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center ms-1 outline-none rounded-full select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Open account menu" aria-haspopup="menu" id="base-ui-_r_p_" aria-expanded="false">
               <Avatar className="size-6" size="sm">
                 <AvatarFallback className="text-[10px]">
                   {"CN"}
@@ -145,7 +145,7 @@ export function Pattern() {
             </DropdownMenu>
             <span className="ms-2.5">
               <DropdownMenu>
-              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shadow-xs shrink-0 text-xs transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_u_" aria-expanded="false">
+              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shadow-xs shrink-0 text-xs transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_u_" aria-expanded="false">
                 <span className="sm:hidden">
                   {"New"}
                 </span>
@@ -167,22 +167,22 @@ export function Pattern() {
           <div className="cn-sidebar-inner flex flex-col size-full" data-sidebar="sidebar">
             <SidebarHeader className="gap-1 md:hidden pb-0 pt-4 px-4" sidebar="header">
               <DropdownMenu>
-              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button h-8 inline-flex items-center justify-between min-w-0 outline-none px-2 select-none shrink text-foreground text-sm transition-all w-full whitespace-nowrap" type="button" tabIndex="0" aria-label="Switch team" aria-haspopup="menu" id="base-ui-_r_13_" aria-expanded="false">
+              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button h-8 inline-flex items-center justify-between min-w-0 outline-none px-2 select-none shrink text-foreground text-sm transition-all w-full whitespace-nowrap" type="button" tabIndex={0} aria-label="Switch team" aria-haspopup="menu" id="base-ui-_r_13_" aria-expanded="false">
                 <span className="truncate">
                   {"Operations Team"}
                 </span>
-                <svg className="lucide lucide-chevrons-up-down size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                <svg className="lucide lucide-chevrons-up-down size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                   <path d="m7 15 5 5 5-5"></path>
                   <path d="m7 9 5-5 5 5"></path>
                 </svg>
               </DropdownMenuTrigger>
               </DropdownMenu>
               <DropdownMenu>
-              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button h-8 inline-flex items-center justify-between min-w-0 outline-none px-2 select-none shrink text-foreground text-sm transition-all w-full whitespace-nowrap" type="button" tabIndex="0" aria-label="Switch project" aria-haspopup="menu" id="base-ui-_r_18_" aria-expanded="false">
+              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button h-8 inline-flex items-center justify-between min-w-0 outline-none px-2 select-none shrink text-foreground text-sm transition-all w-full whitespace-nowrap" type="button" tabIndex={0} aria-label="Switch project" aria-haspopup="menu" id="base-ui-_r_18_" aria-expanded="false">
                 <span className="truncate">
                   {"Fleet Control"}
                 </span>
-                <svg className="lucide lucide-chevrons-up-down size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                <svg className="lucide lucide-chevrons-up-down size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                   <path d="m7 15 5 5 5-5"></path>
                   <path d="m7 9 5-5 5 5"></path>
                 </svg>
@@ -195,9 +195,9 @@ export function Pattern() {
               <SidebarGroup className="p-0" sidebar="group">
                 <SidebarProvider>
                 <SidebarGroupLabel className="[&>svg]:text-ring font-medium gap-2 px-0 text-foreground text-sm" sidebar="group-label">
-                  <svg className="lucide lucide-bot" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BotIcon" tabler="IconRobot" hugeicons="BotIcon" phosphor="RobotIcon" remixicon="RiRobot2Line" aria-hidden="true">
+                  <svg className="lucide lucide-bot" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BotIcon" tabler="IconRobot" hugeicons="BotIcon" phosphor="RobotIcon" remixicon="RiRobot2Line" aria-hidden="true">
                     <path d="M12 8V4H8"></path>
-                    <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+                    <rect width={16} height={12} x={4} y={8} rx={2}></rect>
                     <path d="M2 14h2"></path>
                     <path d="M20 14h2"></path>
                     <path d="M15 13v2"></path>
@@ -270,10 +270,10 @@ export function Pattern() {
               <SidebarGroup className="p-0" sidebar="group">
                 <SidebarProvider>
                 <SidebarGroupLabel className="[&>svg]:text-ring font-medium gap-2 px-0 text-foreground text-sm" sidebar="group-label">
-                  <svg className="lucide lucide-route" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RouteIcon" tabler="IconRoute" hugeicons="Route01Icon" phosphor="PathIcon" remixicon="RiRouteLine" aria-hidden="true">
-                    <circle cx="6" cy="19" r="3"></circle>
+                  <svg className="lucide lucide-route" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="RouteIcon" tabler="IconRoute" hugeicons="Route01Icon" phosphor="PathIcon" remixicon="RiRouteLine" aria-hidden="true">
+                    <circle cx={6} cy={19} r={3}></circle>
                     <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"></path>
-                    <circle cx="18" cy="5" r="3"></circle>
+                    <circle cx={18} cy={5} r={3}></circle>
                   </svg>
                   <span>
                     {"Mission Control"}
@@ -328,10 +328,10 @@ export function Pattern() {
               <SidebarGroup className="p-0" sidebar="group">
                 <SidebarProvider>
                 <SidebarGroupLabel className="[&>svg]:text-ring font-medium gap-2 px-0 text-foreground text-sm" sidebar="group-label">
-                  <svg className="lucide lucide-workflow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="WorkflowIcon" tabler="IconSitemap" hugeicons="WorkflowCircle01Icon" phosphor="TreeStructureIcon" remixicon="RiFlowChart" aria-hidden="true">
-                    <rect width="8" height="8" x="3" y="3" rx="2"></rect>
+                  <svg className="lucide lucide-workflow" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="WorkflowIcon" tabler="IconSitemap" hugeicons="WorkflowCircle01Icon" phosphor="TreeStructureIcon" remixicon="RiFlowChart" aria-hidden="true">
+                    <rect width={8} height={8} x={3} y={3} rx={2}></rect>
                     <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
-                    <rect width="8" height="8" x="13" y="13" rx="2"></rect>
+                    <rect width={8} height={8} x={13} y={13} rx={2}></rect>
                   </svg>
                   <span>
                     {"System Tools"}
@@ -397,9 +397,9 @@ export function Pattern() {
                 <CardContent className="flex flex-col gap-3.5 items-center relative text-center">
                   <div className="flex flex-col gap-2.5 items-center">
                     <IconTile className="[--icon-tile-icon-size:--spacing(5)] [--icon-tile-size:--spacing(11)] after:border-transparent bg-primary/5 border-0 dark:after:border-border text-foreground" variant="frame" size="default">
-                      <svg className="lucide lucide-bot" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BotIcon" tabler="IconRobot" hugeicons="BotIcon" phosphor="RobotIcon" remixicon="RiRobot2Line" aria-hidden="true">
+                      <svg className="lucide lucide-bot" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BotIcon" tabler="IconRobot" hugeicons="BotIcon" phosphor="RobotIcon" remixicon="RiRobot2Line" aria-hidden="true">
                         <path d="M12 8V4H8"></path>
-                        <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+                        <rect width={16} height={12} x={4} y={8} rx={2}></rect>
                         <path d="M2 14h2"></path>
                         <path d="M20 14h2"></path>
                         <path d="M15 13v2"></path>
@@ -415,7 +415,7 @@ export function Pattern() {
                       </p>
                     </div>
                   </div>
-                  <Button className="text-xs" type="button" tabIndex="0">
+                  <Button className="text-xs" type="button" tabIndex={0}>
                     {"Upgrade"}
                   </Button>
                 </CardContent>

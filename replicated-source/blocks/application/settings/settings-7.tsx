@@ -62,25 +62,25 @@ export function Pattern() {
         <Tabs className="gap-4 lg:gap-8 w-full" data-orientation="vertical" activationDirection="none">
           <div className="min-w-0 shrink-0 w-40">
             <TabsList className="flex-col h-auto items-stretch p-0 w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
-              <TabsTrigger className="bg-muted! gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-controls="base-ui-_r_4_" extracted="1">
-                <svg className="lucide lucide-user" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UserIcon" tabler="IconUser" hugeicons="UserIcon" phosphor="UserIcon" remixicon="RiUserLine" aria-hidden="true">
+              <TabsTrigger className="bg-muted! gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex={0} role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-controls="base-ui-_r_4_" extracted="1">
+                <svg className="lucide lucide-user" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UserIcon" tabler="IconUser" hugeicons="UserIcon" phosphor="UserIcon" remixicon="RiUserLine" aria-hidden="true">
                   <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                  <circle cx="12" cy="7" r="4"></circle>
+                  <circle cx={12} cy={7} r={4}></circle>
                 </svg>
                 <span className="truncate">
                   {"My Profile"}
                 </span>
               </TabsTrigger>
-              <TabsTrigger className="bg-transparent gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
-                <svg className="lucide lucide-shield" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShieldIcon" tabler="IconShield" hugeicons="Shield01Icon" phosphor="ShieldIcon" remixicon="RiShieldLine" aria-hidden="true">
+              <TabsTrigger className="bg-transparent gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_1_">
+                <svg className="lucide lucide-shield" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShieldIcon" tabler="IconShield" hugeicons="Shield01Icon" phosphor="ShieldIcon" remixicon="RiShieldLine" aria-hidden="true">
                   <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                 </svg>
                 <span className="truncate">
                   {"Security"}
                 </span>
               </TabsTrigger>
-              <TabsTrigger className="bg-transparent gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
-                <svg className="lucide lucide-bell" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BellIcon" tabler="IconBell" hugeicons="NotificationIcon" phosphor="BellIcon" remixicon="RiNotificationLine" aria-hidden="true">
+              <TabsTrigger className="bg-transparent gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_2_">
+                <svg className="lucide lucide-bell" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BellIcon" tabler="IconBell" hugeicons="NotificationIcon" phosphor="BellIcon" remixicon="RiNotificationLine" aria-hidden="true">
                   <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
                   <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
                 </svg>
@@ -88,10 +88,10 @@ export function Pattern() {
                   {"Notifications"}
                 </span>
               </TabsTrigger>
-              <TabsTrigger className="bg-transparent gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_">
-                <svg className="lucide lucide-credit-card" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CreditCardIcon" tabler="IconCreditCard" hugeicons="CreditCardIcon" phosphor="CreditCardIcon" remixicon="RiBankCardLine" aria-hidden="true">
-                  <rect width="20" height="14" x="2" y="5" rx="2"></rect>
-                  <line x1="2" x2="22" y1="10" y2="10"></line>
+              <TabsTrigger className="bg-transparent gap-3 justify-start px-3 py-1.5 shadow-none w-full" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_3_">
+                <svg className="lucide lucide-credit-card" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CreditCardIcon" tabler="IconCreditCard" hugeicons="CreditCardIcon" phosphor="CreditCardIcon" remixicon="RiBankCardLine" aria-hidden="true">
+                  <rect width={20} height={14} x={2} y={5} rx={2}></rect>
+                  <line x1={2} x2={22} y1={10} y2={10}></line>
                 </svg>
                 <span className="truncate">
                   {"Billing"}
@@ -100,12 +100,12 @@ export function Pattern() {
             </TabsList>
           </div>
           <div className="flex-1 min-w-0">
-            <TabsContent className="mt-0" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_4_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_0_">
+            <TabsContent className="mt-0" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_4_" role="tabpanel" tabIndex={0} index="0" aria-labelledby="base-ui-_r_0_">
               <div className="space-y-6">
                 <Alert className="[&>svg:not([class*=size-])]:size-4 [&>svg]:text-warning bg-warning/4 border border-warning/30 gap-y-0.5 grid grid-cols-[0_1fr] has-[>[data-slot=alert-title]+[data-slot=alert-description]]:[&_[data-slot=alert-action]]:sm:row-end-3 has-[>[data-slot=alert-title]+[data-slot=alert-description]]:[&_svg]:translate-y-0.5 has-[>[data-slot=alert-title]+[data-slot=alert-description]]:items-start has-[>svg]:gap-x-2.5 has-[>svg]:grid-cols-[calc(var(--spacing)*3)_1fr] items-center px-3 py-2.5 style-luma:rounded-2xl style-lyra:rounded-none style-maia:rounded-lg style-mira:rounded-lg style-nova:rounded-lg style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-lg text-sm" role="alert">
-                  <svg className="lucide lucide-user" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UserIcon" tabler="IconUser" hugeicons="UserIcon" phosphor="UserIcon" remixicon="RiUserLine" aria-hidden="true">
+                  <svg className="lucide lucide-user" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UserIcon" tabler="IconUser" hugeicons="UserIcon" phosphor="UserIcon" remixicon="RiUserLine" aria-hidden="true">
                     <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
+                    <circle cx={12} cy={7} r={4}></circle>
                   </svg>
                   <AlertTitle className="col-start-2 font-medium line-clamp-1 min-h-4 tracking-tight">
                     {"Complete your profile."}
@@ -114,10 +114,10 @@ export function Pattern() {
                     {"Add a photo and keep your role and timezone current."}
                   </AlertDescription>
                   <AlertAction className="flex gap-1.5 max-sm:col-start-2 max-sm:justify-start max-sm:mt-2 sm:col-start-3 sm:justify-end sm:row-start-1 sm:self-center">
-                    <Button type="button" tabIndex="0">
+                    <Button type="button" tabIndex={0}>
                       {"Dismiss"}
                     </Button>
-                    <Button type="button" tabIndex="0">
+                    <Button type="button" tabIndex={0}>
                       {"Update"}
                     </Button>
                   </AlertAction>
@@ -160,18 +160,18 @@ export function Pattern() {
                                   </Avatar>
                                 </div>
                                 <div className="inline-flex relative">
-                                  <Button type="button" tabIndex="0" aria-haspopup="dialog">
-                                    <svg className="lucide lucide-upload" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UploadIcon" tabler="IconUpload" hugeicons="Upload01Icon" phosphor="UploadSimpleIcon" remixicon="RiUploadLine" aria-hidden="true">
+                                  <Button type="button" tabIndex={0} aria-haspopup="dialog">
+                                    <svg className="lucide lucide-upload" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UploadIcon" tabler="IconUpload" hugeicons="Upload01Icon" phosphor="UploadSimpleIcon" remixicon="RiUploadLine" aria-hidden="true">
                                       <path d="M12 3v12"></path>
                                       <path d="m17 8-5-5-5 5"></path>
                                       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                                     </svg>
                                     {"Change"}
                                   </Button>
-                                  <input className="sr-only" id="settings-7-profile-photo" accept="image/*" aria-label="Upload profile image" tabIndex="-1" type="file" />
+                                  <input className="sr-only" id="settings-7-profile-photo" accept="image/*" aria-label="Upload profile image" tabIndex={-1} type="file" />
                                 </div>
-                                <Button type="button" tabIndex="0">
-                                  <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                                <Button type="button" tabIndex={0}>
+                                  <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                     <path d="M18 6 6 18"></path>
                                     <path d="m6 6 12 12"></path>
                                   </svg>
@@ -280,34 +280,34 @@ export function Pattern() {
                                       {"Role"}
                                     </FieldLabel>
                                     <Select>
-                                    <SelectTrigger className="w-full" type="button" tabIndex="0" id="settings-7-role" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                                    <SelectTrigger className="w-full" type="button" tabIndex={0} id="settings-7-role" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                       <SelectValue>
                                         {"Engineering Lead"}
                                       </SelectValue>
-                                      <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                                      <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                         <path d="m6 9 6 6 6-6"></path>
                                         {"▼"}
                                       </svg>
                                     </SelectTrigger>
                                     </Select>
-                                    <input id="base-ui-_r_8_-hidden-input" tabIndex="-1" aria-hidden="true" value="engineering-lead" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                    <input id="base-ui-_r_8_-hidden-input" tabIndex={-1} aria-hidden="true" value="engineering-lead" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                   </Field>
                                   <Field role="group" data-orientation="vertical">
                                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-7-timezone">
                                       {"Time zone"}
                                     </FieldLabel>
                                     <Select>
-                                    <SelectTrigger className="w-full" type="button" tabIndex="0" id="settings-7-timezone" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                                    <SelectTrigger className="w-full" type="button" tabIndex={0} id="settings-7-timezone" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                       <SelectValue>
                                         {"UTC-8 (Pacific Time)"}
                                       </SelectValue>
-                                      <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                                      <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                         <path d="m6 9 6 6 6-6"></path>
                                         {"▼"}
                                       </svg>
                                     </SelectTrigger>
                                     </Select>
-                                    <input id="base-ui-_r_b_-hidden-input" tabIndex="-1" aria-hidden="true" value="utc-8" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                    <input id="base-ui-_r_b_-hidden-input" tabIndex={-1} aria-hidden="true" value="utc-8" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                   </Field>
                                   <Field role="group" data-orientation="vertical">
                                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-7-website">
@@ -343,7 +343,7 @@ export function Pattern() {
                           </div>
                           <FieldContent className="@md/field-group:w-78 min-w-0">
                             <div className="@md/field-group:justify-end flex justify-start w-full">
-                              <Textarea className="min-h-24 resize-none" id="settings-7-bio" rows="4">
+                              <Textarea className="min-h-24 resize-none" id="settings-7-bio" rows={4}>
                                 {"Building developer tools at Acme. Previously at Vercel and Stripe."}
                               </Textarea>
                             </div>
@@ -353,10 +353,10 @@ export function Pattern() {
                     </FieldSet>
                   </CardContent>
                   <CardFooter className="border-t gap-2 justify-end px-5 py-3">
-                    <Button type="button" tabIndex="0">
+                    <Button type="button" tabIndex={0}>
                       {"Cancel"}
                     </Button>
-                    <Button type="button" tabIndex="0">
+                    <Button type="button" tabIndex={0}>
                       {"Save changes"}
                     </Button>
                   </CardFooter>

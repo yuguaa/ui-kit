@@ -15,7 +15,7 @@ export function Pattern() {
               {"In An Afternoon."}
             </span>
           </h2>
-          <Button className="bg-[oklch(0.98_0.012_255)] hover:bg-[oklch(0.92_0.02_255)] hover:text-[oklch(0.2_0.03_264)] px-8 rounded-full text-[oklch(0.2_0.03_264)]" href="#" role="button" tabIndex="0">
+          <Button className="bg-[oklch(0.98_0.012_255)] hover:bg-[oklch(0.92_0.02_255)] hover:text-[oklch(0.2_0.03_264)] px-8 rounded-full text-[oklch(0.2_0.03_264)]" href="#" role="button" tabIndex={0}>
             {"Start Building"}
           </Button>
         </div>

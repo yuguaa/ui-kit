@@ -50,7 +50,7 @@ export function Pattern() {
                 <Stepper>
                 <StepperItem className="relative" data-state="active">
                   <Stepper>
-                  <StepperTrigger className="flex gap-1.5 justify-start" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex="0" data-state="active" loading="false" extracted="1">
+                  <StepperTrigger className="flex gap-1.5 justify-start" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex={0} data-state="active" loading="false" extracted="1">
                     <Stepper>
                     <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-full before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-0 data-[state=active]:text-primary data-[state=inactive]:bg-muted data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="active">
                       <div className="absolute">
@@ -71,7 +71,7 @@ export function Pattern() {
                 <Stepper>
                 <StepperItem className="relative" data-state="inactive">
                   <Stepper>
-                  <StepperTrigger className="flex gap-1.5 justify-start" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="inactive" loading="false" disabled>
+                  <StepperTrigger className="flex gap-1.5 justify-start" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex={-1} data-state="inactive" loading="false" disabled>
                     <Stepper>
                     <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-full before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-0 data-[state=active]:text-primary data-[state=inactive]:bg-muted data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                       <div className="absolute">
@@ -92,7 +92,7 @@ export function Pattern() {
                 <Stepper>
                 <StepperItem className="relative" data-state="inactive">
                   <Stepper>
-                  <StepperTrigger className="flex gap-1.5 justify-start" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="inactive" loading="false" disabled>
+                  <StepperTrigger className="flex gap-1.5 justify-start" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex={-1} data-state="inactive" loading="false" disabled>
                     <Stepper>
                     <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-full before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-0 data-[state=active]:text-primary data-[state=inactive]:bg-muted data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                       <div className="absolute">
@@ -173,34 +173,34 @@ export function Pattern() {
                           {"Role"}
                         </FieldLabel>
                         <Select>
-                        <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="wizard-role" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                        <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex={0} id="wizard-role" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                           <SelectValue>
                             {"Procurement owner"}
                           </SelectValue>
-                          <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                          <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
                             {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
-                        <input id="base-ui-_r_4_-hidden-input" tabIndex="-1" aria-hidden="true" value="procurement-owner" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input id="base-ui-_r_4_-hidden-input" tabIndex={-1} aria-hidden="true" value="procurement-owner" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </Field>
                       <Field className="gap-2" role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="wizard-country">
                           {"Country"}
                         </FieldLabel>
                         <Select>
-                        <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="wizard-country" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                        <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex={0} id="wizard-country" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                           <SelectValue>
                             {"United States"}
                           </SelectValue>
-                          <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                          <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
                             {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
-                        <input id="base-ui-_r_7_-hidden-input" tabIndex="-1" aria-hidden="true" value="us" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input id="base-ui-_r_7_-hidden-input" tabIndex={-1} aria-hidden="true" value="us" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </Field>
                       <Field className="gap-2" role="group" data-orientation="vertical" invalid="false">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="wizard-email">
@@ -235,9 +235,9 @@ export function Pattern() {
               </Stepper>
             </CardContent>
             <CardFooter className="gap-2 justify-end">
-              <Button type="submit" tabIndex="0">
+              <Button type="submit" tabIndex={0}>
                 {"Next Step"}
-                <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
+                <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
                 </svg>

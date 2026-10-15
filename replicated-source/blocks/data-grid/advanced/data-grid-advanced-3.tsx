@@ -80,8 +80,8 @@ export function Pattern() {
             </div>
           </div>
           <div className="flex gap-2 items-center shrink-0">
-            <Button type="button" tabIndex="0" aria-label="Export the current view" extracted="1">
-              <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" data-icon="inline-start" aria-hidden="true">
+            <Button type="button" tabIndex={0} aria-label="Export the current view" extracted="1">
+              <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" data-icon="inline-start" aria-hidden="true">
                 <path d="M12 15V3"></path>
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                 <path d="m7 10 5 5 5-5"></path>
@@ -90,8 +90,8 @@ export function Pattern() {
                 {"Export"}
               </span>
             </Button>
-            <Button type="button" tabIndex="0">
-              <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+            <Button type="button" tabIndex={0}>
+              <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="M12 5v14"></path>
               </svg>
@@ -104,25 +104,25 @@ export function Pattern() {
             <div className="@3xl/view-tabs:border-b @3xl/view-tabs:flex-row @3xl/view-tabs:gap-4 @3xl/view-tabs:items-end @3xl/view-tabs:justify-between flex flex-col px-(--frame-panel-header-px)">
               <Tabs className="@max-3xl/view-tabs:-mx-(--frame-panel-header-px) @max-3xl/view-tabs:border-b @max-3xl/view-tabs:px-(--frame-panel-header-px) min-w-0" data-orientation="horizontal" activationDirection="none">
                 <TabsList className="-mb-px gap-5 h-11! justify-start max-w-full no-scrollbar overflow-x-auto p-0" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line" aria-label="Funnel stage">
-                  <TabsTrigger className="after:-bottom-px! flex-none font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_1_" compositeItemActive="">
+                  <TabsTrigger className="after:-bottom-px! flex-none font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex={0} role="tab" aria-selected="true" id="base-ui-_r_1_" compositeItemActive="">
                     {"All"}
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
                       {"30"}
                     </Badge>
                   </TabsTrigger>
-                  <TabsTrigger className="after:-bottom-px! flex-none font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
+                  <TabsTrigger className="after:-bottom-px! flex-none font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_2_">
                     {"Prospecting"}
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
                       {"16"}
                     </Badge>
                   </TabsTrigger>
-                  <TabsTrigger className="after:-bottom-px! flex-none font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_">
+                  <TabsTrigger className="after:-bottom-px! flex-none font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_3_">
                     {"Retargeting"}
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
                       {"9"}
                     </Badge>
                   </TabsTrigger>
-                  <TabsTrigger className="after:-bottom-px! flex-none font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_4_">
+                  <TabsTrigger className="after:-bottom-px! flex-none font-medium gap-1.5 h-full! px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_4_">
                     {"Retention"}
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
                       {"5"}
@@ -132,21 +132,21 @@ export function Pattern() {
               </Tabs>
               <div className="@3xl/view-tabs:-mb-px @3xl/view-tabs:h-11 @max-3xl/view-tabs:pt-(--frame-panel-header-py) flex items-center shrink-0">
                 <ToggleGroup className="@max-lg/view-tabs:w-full" data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Filter by target verdict" style={{"--gap": "0"}}>
-                  <ToggleGroupItem className="@max-lg/view-tabs:flex-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="0" aria-pressed="false" variant="outline" size="sm" spacing="0">
+                  <ToggleGroupItem className="@max-lg/view-tabs:flex-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex={0} aria-pressed="false" variant="outline" size="sm" spacing="0">
                     <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                     {"Beating"}
                     <span className="tabular-nums text-muted-foreground">
                       {"13"}
                     </span>
                   </ToggleGroupItem>
-                  <ToggleGroupItem className="@max-lg/view-tabs:flex-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
+                  <ToggleGroupItem className="@max-lg/view-tabs:flex-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="outline" size="sm" spacing="0">
                     <span className="bg-warning rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                     {"At risk"}
                     <span className="tabular-nums text-muted-foreground">
                       {"3"}
                     </span>
                   </ToggleGroupItem>
-                  <ToggleGroupItem className="@max-lg/view-tabs:flex-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
+                  <ToggleGroupItem className="@max-lg/view-tabs:flex-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] gap-1.5 group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="outline" size="sm" spacing="0">
                     <span className="bg-destructive rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                     {"Missing"}
                     <span className="tabular-nums text-muted-foreground">
@@ -160,25 +160,25 @@ export function Pattern() {
           <div className="flex flex-wrap gap-2 items-center px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
             <InputGroup className="sm:w-64" role="group">
               <InputGroupAddon role="group" data-align="inline-start">
-                <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+                <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                   <path d="m21 21-4.34-4.34"></path>
-                  <circle cx="11" cy="11" r="8"></circle>
+                  <circle cx={11} cy={11} r={8}></circle>
                 </svg>
               </InputGroupAddon>
               <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_8_" placeholder="Search campaigns" aria-label="Search campaigns" value="" />
             </InputGroup>
             <div className="flex flex-1 gap-2 items-center justify-end">
-              <Toggle type="button" pressed="" tabIndex="0" aria-pressed="true">
-                <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" data-icon="inline-start" aria-hidden="true">
+              <Toggle type="button" pressed="" tabIndex={0} aria-pressed="true">
+                <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                 </svg>
                 <span className="max-sm:sr-only">
                   {"Filters"}
                 </span>
               </Toggle>
-              <CascaderTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 style-luma:[&_svg:not([class*='size-'])]:size-4 style-lyra:[&_svg:not([class*='size-'])]:size-4 style-maia:[&_svg:not([class*='size-'])]:size-4 style-mira:[&_svg:not([class*='size-'])]:size-3.5 style-nova:[&_svg:not([class*='size-'])]:size-4 style-rhea:[&_svg:not([class*='size-'])]:size-4 style-sera:[&_svg:not([class*='size-'])]:size-3.5 style-vega:[&_svg:not([class*='size-'])]:size-4 transition-all whitespace-nowrap" type="button" tabIndex="0" id="base-ui-_r_b_" role="combobox" aria-expanded="false" aria-haspopup="dialog" aria-label="Columns, 8 shown">
-                <svg className="lucide lucide-columns-3 lucide-columns3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Columns3Icon" tabler="IconColumns3" hugeicons="Layout07Icon" phosphor="ColumnsIcon" remixicon="RiLayoutColumnLine" data-icon="inline-start" aria-hidden="true">
-                  <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+              <CascaderTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 style-luma:[&_svg:not([class*='size-'])]:size-4 style-lyra:[&_svg:not([class*='size-'])]:size-4 style-maia:[&_svg:not([class*='size-'])]:size-4 style-mira:[&_svg:not([class*='size-'])]:size-3.5 style-nova:[&_svg:not([class*='size-'])]:size-4 style-rhea:[&_svg:not([class*='size-'])]:size-4 style-sera:[&_svg:not([class*='size-'])]:size-3.5 style-vega:[&_svg:not([class*='size-'])]:size-4 transition-all whitespace-nowrap" type="button" tabIndex={0} id="base-ui-_r_b_" role="combobox" aria-expanded="false" aria-haspopup="dialog" aria-label="Columns, 8 shown">
+                <svg className="lucide lucide-columns-3 lucide-columns3" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Columns3Icon" tabler="IconColumns3" hugeicons="Layout07Icon" phosphor="ColumnsIcon" remixicon="RiLayoutColumnLine" data-icon="inline-start" aria-hidden="true">
+                  <rect width={18} height={18} x={3} y={3} rx={2}></rect>
                   <path d="M9 3v18"></path>
                   <path d="M15 3v18"></path>
                 </svg>
@@ -189,14 +189,14 @@ export function Pattern() {
                   {"8"}
                 </span>
               </CascaderTrigger>
-              <input id="base-ui-_r_b_-hidden-input" tabIndex="-1" aria-hidden="true" value="" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="base-ui-_r_b_-hidden-input" tabIndex={-1} aria-hidden="true" value="" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
               <Popover>
-              <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="View settings" baseUiClickTrigger="" id="base-ui-_r_g_" aria-haspopup="dialog" aria-expanded="false">
-                <svg className="lucide lucide-settings-2 lucide-settings2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Settings2Icon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" data-icon="inline-start" aria-hidden="true">
+              <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="View settings" baseUiClickTrigger="" id="base-ui-_r_g_" aria-haspopup="dialog" aria-expanded="false">
+                <svg className="lucide lucide-settings-2 lucide-settings2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Settings2Icon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" data-icon="inline-start" aria-hidden="true">
                   <path d="M14 17H5"></path>
                   <path d="M19 7h-9"></path>
-                  <circle cx="17" cy="17" r="3"></circle>
-                  <circle cx="7" cy="7" r="3"></circle>
+                  <circle cx={17} cy={17} r={3}></circle>
+                  <circle cx={7} cy={7} r={3}></circle>
                 </svg>
                 <span className="max-sm:sr-only">
                   {"Settings"}
@@ -210,7 +210,7 @@ export function Pattern() {
             <div className="relative">
               <DataGridProvider>
               <DataGridScrollArea className="supports-[animation-timeline:scroll()]:[&_[data-slot=scroll-area-viewport]]:scroll-fade-x" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
-                <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_h_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
+                <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_h_-viewport" tabIndex={-1} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                   <div role="presentation" style={{minWidth: "fit-content"}}>
                     <DataGridProvider>
                     <DataGridTableViewport style={{width: "calc(1214px + var(--data-grid-fill-size, 0px))", "--data-grid-fill-size": "0px", "--data-grid-fill": "0"}}>
@@ -239,9 +239,9 @@ export function Pattern() {
                                   <div className="flex flex-col">
                                     <div className="flex h-10 items-center">
                                       <div className="-ms-2 flex h-full items-center">
-                                        <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                        <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                           {"Channel"}
-                                          <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                          <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                             <path d="m7 15 5 5 5-5"></path>
                                             <path d="m7 9 5-5 5 5"></path>
                                           </svg>
@@ -251,19 +251,19 @@ export function Pattern() {
                                     <div className="before:absolute before:bg-border before:h-px before:inset-x-0">
                                       <div className="flex h-10 items-center">
                                         <Select>
-                                        <SelectTrigger className="-mx-2 bg-transparent border-transparent dark:bg-transparent flex-1 focus-visible:border-ring h-7 hover:border-input min-w-0 px-2 shadow-none w-full" type="button" tabIndex="0" id="base-ui-_r_i_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Filter by channel">
+                                        <SelectTrigger className="-mx-2 bg-transparent border-transparent dark:bg-transparent flex-1 focus-visible:border-ring h-7 hover:border-input min-w-0 px-2 shadow-none w-full" type="button" tabIndex={0} id="base-ui-_r_i_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Filter by channel">
                                           <SelectValue>
                                             <span className="text-muted-foreground truncate">
                                               {"Any"}
                                             </span>
                                           </SelectValue>
-                                          <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                                          <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                             <path d="m6 9 6 6 6-6"></path>
                                             {"▼"}
                                           </svg>
                                         </SelectTrigger>
                                         </Select>
-                                        <input id="base-ui-_r_i_-hidden-input" tabIndex="-1" aria-hidden="true" value="__any" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                        <input id="base-ui-_r_i_-hidden-input" tabIndex={-1} aria-hidden="true" value="__any" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       </div>
                                     </div>
                                   </div>
@@ -276,14 +276,14 @@ export function Pattern() {
                                 <div className="align-middle table-cell">
                                   <div className="flex flex-col">
                                     <div className="flex h-10 items-center">
-                                      <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_l_" aria-checked="false" aria-label="Select all"></Checkbox>
-                                      <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                      <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_l_" aria-checked="false" aria-label="Select all"></Checkbox>
+                                      <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                     </div>
                                     <div className="before:absolute before:bg-border before:h-px before:inset-x-0">
                                       <div className="flex h-10 items-center">
                                         <Tooltip>
-                                        <TooltipTrigger className="-ms-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" disabled="" tabIndex="0" disabled aria-label="Clear all filters" id="base-ui-_r_p_" baseUiTooltipTrigger="">
-                                          <svg className="lucide lucide-funnel-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FunnelXIcon" tabler="IconFilterOff" hugeicons="FilterRemoveIcon" phosphor="FunnelSimpleIcon" remixicon="RiFilterOffLine" aria-hidden="true">
+                                        <TooltipTrigger className="-ms-1 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" disabled="" tabIndex={0} disabled aria-label="Clear all filters" id="base-ui-_r_p_" baseUiTooltipTrigger="">
+                                          <svg className="lucide lucide-funnel-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FunnelXIcon" tabler="IconFilterOff" hugeicons="FilterRemoveIcon" phosphor="FunnelSimpleIcon" remixicon="RiFilterOffLine" aria-hidden="true">
                                             <path d="M12.531 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14v6a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341l.427-.473"></path>
                                             <path d="m16.5 3.5 5 5"></path>
                                             <path d="m21.5 3.5-5 5"></path>
@@ -302,9 +302,9 @@ export function Pattern() {
                                   <div className="flex flex-col">
                                     <div className="flex h-10 items-center">
                                       <div className="-ms-2 flex h-full items-center">
-                                        <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                        <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                           {"Campaign"}
-                                          <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                          <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                             <path d="m7 15 5 5 5-5"></path>
                                             <path d="m7 9 5-5 5 5"></path>
                                           </svg>
@@ -315,9 +315,9 @@ export function Pattern() {
                                       <div className="flex h-10 items-center">
                                         <InputGroup className="-mx-2 bg-transparent border-transparent dark:bg-transparent flex-1 h-7 has-[[data-slot=input-group-control]:focus-visible]:border-ring hover:border-input shadow-none" role="group">
                                           <InputGroupAddon role="group" data-align="inline-start">
-                                            <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+                                            <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                                               <path d="m21 21-4.34-4.34"></path>
-                                              <circle cx="11" cy="11" r="8"></circle>
+                                              <circle cx={11} cy={11} r={8}></circle>
                                             </svg>
                                           </InputGroupAddon>
                                           <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_q_" placeholder="Filter names" aria-label="Filter campaigns by name" value="" />
@@ -377,7 +377,7 @@ export function Pattern() {
                                     <div className="flex h-10 items-center">
                                       <div className="-me-2 flex flex-1 justify-end min-w-0">
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Target"}
                                           </Button>
                                         </div>
@@ -398,9 +398,9 @@ export function Pattern() {
                                     <div className="flex h-10 items-center">
                                       <div className="-me-2 flex flex-1 justify-end min-w-0">
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Actual"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -411,12 +411,12 @@ export function Pattern() {
                                     <div className="before:absolute before:bg-border before:h-px before:inset-x-0">
                                       <div className="flex h-10 items-center">
                                         <Popover>
-                                        <PopoverTrigger className="-mx-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border-transparent cn-button cn-button-size-default cn-button-variant-outline dark:bg-transparent disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:border-ring font-normal gap-1.5 group/button h-7 hover:bg-transparent hover:border-input inline-flex items-center justify-end min-w-0 outline-none px-2 select-none shadow-none transition-all w-full whitespace-nowrap" type="button" tabIndex="0" aria-label="Filter ROAS, any value" baseUiClickTrigger="" id="base-ui-_r_t_" aria-haspopup="dialog" aria-expanded="false">
+                                        <PopoverTrigger className="-mx-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border-transparent cn-button cn-button-size-default cn-button-variant-outline dark:bg-transparent disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:border-ring font-normal gap-1.5 group/button h-7 hover:bg-transparent hover:border-input inline-flex items-center justify-end min-w-0 outline-none px-2 select-none shadow-none transition-all w-full whitespace-nowrap" type="button" tabIndex={0} aria-label="Filter ROAS, any value" baseUiClickTrigger="" id="base-ui-_r_t_" aria-haspopup="dialog" aria-expanded="false">
                                           <span className="min-w-0 tabular-nums text-muted-foreground truncate">
                                             {"Any"}
                                           </span>
                                           <span className="flex shrink-0 text-muted-foreground">
-                                            <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
+                                            <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                                               <path d="m6 9 6 6 6-6"></path>
                                             </svg>
                                           </span>
@@ -436,9 +436,9 @@ export function Pattern() {
                                     <div className="flex h-10 items-center">
                                       <div className="flex flex-1 justify-center min-w-0 ps-2">
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"vs Target"}
-                                            <svg className="lucide lucide-arrow-down size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-arrow-down size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
                                               <path d="M12 5v14"></path>
                                               <path d="m19 12-7 7-7-7"></path>
                                             </svg>
@@ -449,12 +449,12 @@ export function Pattern() {
                                     <div className="before:absolute before:bg-border before:h-px before:inset-x-0">
                                       <div className="flex h-10 items-center">
                                         <Popover>
-                                        <PopoverTrigger className="-mx-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border-transparent cn-button cn-button-size-default cn-button-variant-outline dark:bg-transparent disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:border-ring font-normal gap-1.5 group/button h-7 hover:bg-transparent hover:border-input inline-flex items-center justify-center min-w-0 outline-none px-2 select-none shadow-none transition-all w-full whitespace-nowrap" type="button" tabIndex="0" aria-label="Filter ROAS vs target, any value" baseUiClickTrigger="" id="base-ui-_r_10_" aria-haspopup="dialog" aria-expanded="false">
+                                        <PopoverTrigger className="-mx-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border-transparent cn-button cn-button-size-default cn-button-variant-outline dark:bg-transparent disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:border-ring font-normal gap-1.5 group/button h-7 hover:bg-transparent hover:border-input inline-flex items-center justify-center min-w-0 outline-none px-2 select-none shadow-none transition-all w-full whitespace-nowrap" type="button" tabIndex={0} aria-label="Filter ROAS vs target, any value" baseUiClickTrigger="" id="base-ui-_r_10_" aria-haspopup="dialog" aria-expanded="false">
                                           <span className="min-w-0 tabular-nums text-muted-foreground truncate">
                                             {"Any"}
                                           </span>
                                           <span className="flex shrink-0 text-muted-foreground">
-                                            <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
+                                            <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                                               <path d="m6 9 6 6 6-6"></path>
                                             </svg>
                                           </span>
@@ -474,7 +474,7 @@ export function Pattern() {
                                     <div className="flex h-10 items-center">
                                       <div className="-me-2 flex flex-1 justify-end min-w-0">
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Target"}
                                           </Button>
                                         </div>
@@ -495,9 +495,9 @@ export function Pattern() {
                                     <div className="flex h-10 items-center">
                                       <div className="-me-2 flex flex-1 justify-end min-w-0">
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Actual"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -508,12 +508,12 @@ export function Pattern() {
                                     <div className="before:absolute before:bg-border before:h-px before:inset-x-0">
                                       <div className="flex h-10 items-center">
                                         <Popover>
-                                        <PopoverTrigger className="-mx-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border-transparent cn-button cn-button-size-default cn-button-variant-outline dark:bg-transparent disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:border-ring font-normal gap-1.5 group/button h-7 hover:bg-transparent hover:border-input inline-flex items-center justify-end min-w-0 outline-none px-2 select-none shadow-none transition-all w-full whitespace-nowrap" type="button" tabIndex="0" aria-label="Filter CPA, any value" baseUiClickTrigger="" id="base-ui-_r_13_" aria-haspopup="dialog" aria-expanded="false">
+                                        <PopoverTrigger className="-mx-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border-transparent cn-button cn-button-size-default cn-button-variant-outline dark:bg-transparent disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:border-ring font-normal gap-1.5 group/button h-7 hover:bg-transparent hover:border-input inline-flex items-center justify-end min-w-0 outline-none px-2 select-none shadow-none transition-all w-full whitespace-nowrap" type="button" tabIndex={0} aria-label="Filter CPA, any value" baseUiClickTrigger="" id="base-ui-_r_13_" aria-haspopup="dialog" aria-expanded="false">
                                           <span className="min-w-0 tabular-nums text-muted-foreground truncate">
                                             {"Any"}
                                           </span>
                                           <span className="flex shrink-0 text-muted-foreground">
-                                            <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
+                                            <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                                               <path d="m6 9 6 6 6-6"></path>
                                             </svg>
                                           </span>
@@ -533,9 +533,9 @@ export function Pattern() {
                                     <div className="flex h-10 items-center">
                                       <div className="flex flex-1 justify-center min-w-0 ps-2">
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"vs Target"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -546,12 +546,12 @@ export function Pattern() {
                                     <div className="before:absolute before:bg-border before:h-px before:inset-x-0">
                                       <div className="flex h-10 items-center">
                                         <Popover>
-                                        <PopoverTrigger className="-mx-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border-transparent cn-button cn-button-size-default cn-button-variant-outline dark:bg-transparent disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:border-ring font-normal gap-1.5 group/button h-7 hover:bg-transparent hover:border-input inline-flex items-center justify-center min-w-0 outline-none px-2 select-none shadow-none transition-all w-full whitespace-nowrap" type="button" tabIndex="0" aria-label="Filter CPA vs target, any value" baseUiClickTrigger="" id="base-ui-_r_16_" aria-haspopup="dialog" aria-expanded="false">
+                                        <PopoverTrigger className="-mx-2 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border-transparent cn-button cn-button-size-default cn-button-variant-outline dark:bg-transparent disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:border-ring font-normal gap-1.5 group/button h-7 hover:bg-transparent hover:border-input inline-flex items-center justify-center min-w-0 outline-none px-2 select-none shadow-none transition-all w-full whitespace-nowrap" type="button" tabIndex={0} aria-label="Filter CPA vs target, any value" baseUiClickTrigger="" id="base-ui-_r_16_" aria-haspopup="dialog" aria-expanded="false">
                                           <span className="min-w-0 tabular-nums text-muted-foreground truncate">
                                             {"Any"}
                                           </span>
                                           <span className="flex shrink-0 text-muted-foreground">
-                                            <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
+                                            <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" data-icon="inline-end" aria-hidden="true">
                                               <path d="m6 9 6 6 6-6"></path>
                                             </svg>
                                           </span>
@@ -575,7 +575,7 @@ export function Pattern() {
                                 <span className="[&_[data-slot=icon-tile]]:[background:linear-gradient(color-mix(in_oklab,currentColor_10%,transparent),color-mix(in_oklab,currentColor_10%,transparent)),var(--frame-panel-bg)] [text-shadow:1px_0_var(--frame-panel-bg),-1px_0_var(--frame-panel-bg),0_1px_var(--frame-panel-bg),0_-1px_var(--frame-panel-bg),1px_1px_var(--frame-panel-bg),-1px_-1px_var(--frame-panel-bg),1px_-1px_var(--frame-panel-bg),-1px_1px_var(--frame-panel-bg)] font-medium min-w-0 relative text-foreground">
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <IconTile className="dark:text-blue-400 text-blue-600" variant="soft" size="xs" aria-hidden="true">
-                                      <svg className="lucide lucide-mouse-pointer-2 lucide-mouse-pointer2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MousePointer2Icon" tabler="IconPointer" hugeicons="Cursor01Icon" phosphor="CursorIcon" remixicon="RiCursorLine" aria-hidden="true">
+                                      <svg className="lucide lucide-mouse-pointer-2 lucide-mouse-pointer2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MousePointer2Icon" tabler="IconPointer" hugeicons="Cursor01Icon" phosphor="CursorIcon" remixicon="RiCursorLine" aria-hidden="true">
                                         <path d="M4.037 4.688a.495.495 0 0 1 .651-.651l16 6.5a.5.5 0 0 1-.063.947l-6.124 1.58a2 2 0 0 0-1.438 1.435l-1.579 6.126a.5.5 0 0 1-.947.063z"></path>
                                       </svg>
                                     </IconTile>
@@ -587,8 +587,8 @@ export function Pattern() {
                               </div>
                             </td>
                             <td className="align-middle border-e px-3 py-2" style={{width: "calc(var(--col-select-size) * 1px)"}}>
-                              <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_17_" aria-checked="false" aria-label="Select row"></Checkbox>
-                              <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_17_" aria-checked="false" aria-label="Select row"></Checkbox>
+                              <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center min-w-0">
@@ -662,11 +662,11 @@ export function Pattern() {
                             <td className="align-middle border-e-0 first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) pe-(--frame-panel-header-px) px-3 py-2" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
                               <div className="flex justify-end">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" rowActions="cmp_h2c6w" aria-label="Actions for Coastline Shell Generic" aria-haspopup="menu" id="base-ui-_r_1d_" aria-expanded="false">
-                                  <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
-                                    <circle cx="12" cy="12" r="1"></circle>
-                                    <circle cx="12" cy="5" r="1"></circle>
-                                    <circle cx="12" cy="19" r="1"></circle>
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} rowActions="cmp_h2c6w" aria-label="Actions for Coastline Shell Generic" aria-haspopup="menu" id="base-ui-_r_1d_" aria-expanded="false">
+                                  <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
+                                    <circle cx={12} cy={12} r={1}></circle>
+                                    <circle cx={12} cy={5} r={1}></circle>
+                                    <circle cx={12} cy={19} r={1}></circle>
                                   </svg>
                                 </DropdownMenuTrigger>
                                 </DropdownMenu>
@@ -684,8 +684,8 @@ export function Pattern() {
                               </div>
                             </td>
                             <td className="align-middle border-e px-3 py-2" style={{width: "calc(var(--col-select-size) * 1px)"}}>
-                              <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_1f_" aria-checked="false" aria-label="Select row"></Checkbox>
-                              <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_1f_" aria-checked="false" aria-label="Select row"></Checkbox>
+                              <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center min-w-0">
@@ -759,11 +759,11 @@ export function Pattern() {
                             <td className="align-middle border-e-0 first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) pe-(--frame-panel-header-px) px-3 py-2" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
                               <div className="flex justify-end">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" rowActions="cmp_k3x9a" aria-label="Actions for Ridge Boots Brand Exact" aria-haspopup="menu" id="base-ui-_r_1l_" aria-expanded="false">
-                                  <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
-                                    <circle cx="12" cy="12" r="1"></circle>
-                                    <circle cx="12" cy="5" r="1"></circle>
-                                    <circle cx="12" cy="19" r="1"></circle>
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} rowActions="cmp_k3x9a" aria-label="Actions for Ridge Boots Brand Exact" aria-haspopup="menu" id="base-ui-_r_1l_" aria-expanded="false">
+                                  <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
+                                    <circle cx={12} cy={12} r={1}></circle>
+                                    <circle cx={12} cy={5} r={1}></circle>
+                                    <circle cx={12} cy={19} r={1}></circle>
                                   </svg>
                                 </DropdownMenuTrigger>
                                 </DropdownMenu>
@@ -781,8 +781,8 @@ export function Pattern() {
                               </div>
                             </td>
                             <td className="align-middle border-e px-3 py-2" style={{width: "calc(var(--col-select-size) * 1px)"}}>
-                              <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_1n_" aria-checked="false" aria-label="Select row"></Checkbox>
-                              <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_1n_" aria-checked="false" aria-label="Select row"></Checkbox>
+                              <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center min-w-0">
@@ -856,11 +856,11 @@ export function Pattern() {
                             <td className="align-middle border-e-0 first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) pe-(--frame-panel-header-px) px-3 py-2" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
                               <div className="flex justify-end">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" rowActions="cmp_p5x1k" aria-label="Actions for Trailhead Jacket Phrase" aria-haspopup="menu" id="base-ui-_r_1t_" aria-expanded="false">
-                                  <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
-                                    <circle cx="12" cy="12" r="1"></circle>
-                                    <circle cx="12" cy="5" r="1"></circle>
-                                    <circle cx="12" cy="19" r="1"></circle>
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} rowActions="cmp_p5x1k" aria-label="Actions for Trailhead Jacket Phrase" aria-haspopup="menu" id="base-ui-_r_1t_" aria-expanded="false">
+                                  <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
+                                    <circle cx={12} cy={12} r={1}></circle>
+                                    <circle cx={12} cy={5} r={1}></circle>
+                                    <circle cx={12} cy={19} r={1}></circle>
                                   </svg>
                                 </DropdownMenuTrigger>
                                 </DropdownMenu>
@@ -878,8 +878,8 @@ export function Pattern() {
                               </div>
                             </td>
                             <td className="align-middle border-e px-3 py-2" style={{width: "calc(var(--col-select-size) * 1px)"}}>
-                              <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_1v_" aria-checked="false" aria-label="Select row"></Checkbox>
-                              <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_1v_" aria-checked="false" aria-label="Select row"></Checkbox>
+                              <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center min-w-0">
@@ -953,11 +953,11 @@ export function Pattern() {
                             <td className="align-middle border-e-0 first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) pe-(--frame-panel-header-px) px-3 py-2" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
                               <div className="flex justify-end">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" rowActions="cmp_v4n8r" aria-label="Actions for Basecamp Tent Evergreen" aria-haspopup="menu" id="base-ui-_r_25_" aria-expanded="false">
-                                  <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
-                                    <circle cx="12" cy="12" r="1"></circle>
-                                    <circle cx="12" cy="5" r="1"></circle>
-                                    <circle cx="12" cy="19" r="1"></circle>
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} rowActions="cmp_v4n8r" aria-label="Actions for Basecamp Tent Evergreen" aria-haspopup="menu" id="base-ui-_r_25_" aria-expanded="false">
+                                  <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
+                                    <circle cx={12} cy={12} r={1}></circle>
+                                    <circle cx={12} cy={5} r={1}></circle>
+                                    <circle cx={12} cy={19} r={1}></circle>
                                   </svg>
                                 </DropdownMenuTrigger>
                                 </DropdownMenu>
@@ -975,8 +975,8 @@ export function Pattern() {
                               </div>
                             </td>
                             <td className="align-middle border-e px-3 py-2" style={{width: "calc(var(--col-select-size) * 1px)"}}>
-                              <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_27_" aria-checked="false" aria-label="Select row"></Checkbox>
-                              <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_27_" aria-checked="false" aria-label="Select row"></Checkbox>
+                              <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center min-w-0">
@@ -1050,11 +1050,11 @@ export function Pattern() {
                             <td className="align-middle border-e-0 first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) pe-(--frame-panel-header-px) px-3 py-2" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
                               <div className="flex justify-end">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" rowActions="cmp_q7m2d" aria-label="Actions for Summit Pack Launch" aria-haspopup="menu" id="base-ui-_r_2d_" aria-expanded="false">
-                                  <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
-                                    <circle cx="12" cy="12" r="1"></circle>
-                                    <circle cx="12" cy="5" r="1"></circle>
-                                    <circle cx="12" cy="19" r="1"></circle>
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} rowActions="cmp_q7m2d" aria-label="Actions for Summit Pack Launch" aria-haspopup="menu" id="base-ui-_r_2d_" aria-expanded="false">
+                                  <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
+                                    <circle cx={12} cy={12} r={1}></circle>
+                                    <circle cx={12} cy={5} r={1}></circle>
+                                    <circle cx={12} cy={19} r={1}></circle>
                                   </svg>
                                 </DropdownMenuTrigger>
                                 </DropdownMenu>
@@ -1072,8 +1072,8 @@ export function Pattern() {
                               </div>
                             </td>
                             <td className="align-middle border-e px-3 py-2" style={{width: "calc(var(--col-select-size) * 1px)"}}>
-                              <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_2f_" aria-checked="false" aria-label="Select row"></Checkbox>
-                              <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_2f_" aria-checked="false" aria-label="Select row"></Checkbox>
+                              <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center min-w-0">
@@ -1082,10 +1082,10 @@ export function Pattern() {
                                 </button>
                                 <Tooltip>
                                 <TooltipTrigger className="[&_svg]:size-3.5 flex shrink-0 text-muted-foreground" id="base-ui-_r_2j_" baseUiTooltipTrigger="">
-                                  <svg className="lucide lucide-timer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TimerIcon" tabler="IconClockPlay" hugeicons="Timer01Icon" phosphor="TimerIcon" remixicon="RiTimerLine" aria-hidden="true">
-                                    <line x1="10" x2="14" y1="2" y2="2"></line>
-                                    <line x1="12" x2="15" y1="14" y2="11"></line>
-                                    <circle cx="12" cy="14" r="8"></circle>
+                                  <svg className="lucide lucide-timer" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TimerIcon" tabler="IconClockPlay" hugeicons="Timer01Icon" phosphor="TimerIcon" remixicon="RiTimerLine" aria-hidden="true">
+                                    <line x1={10} x2={14} y1={2} y2={2}></line>
+                                    <line x1={12} x2={15} y1={14} y2={11}></line>
+                                    <circle cx={12} cy={14} r={8}></circle>
                                   </svg>
                                   <span className="sr-only">
                                     {"Learning"}
@@ -1165,11 +1165,11 @@ export function Pattern() {
                             <td className="align-middle border-e-0 first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) pe-(--frame-panel-header-px) px-3 py-2" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
                               <div className="flex justify-end">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" rowActions="cmp_t9b3f" aria-label="Actions for Alpine Fleece Competitor" aria-haspopup="menu" id="base-ui-_r_2n_" aria-expanded="false">
-                                  <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
-                                    <circle cx="12" cy="12" r="1"></circle>
-                                    <circle cx="12" cy="5" r="1"></circle>
-                                    <circle cx="12" cy="19" r="1"></circle>
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} rowActions="cmp_t9b3f" aria-label="Actions for Alpine Fleece Competitor" aria-haspopup="menu" id="base-ui-_r_2n_" aria-expanded="false">
+                                  <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
+                                    <circle cx={12} cy={12} r={1}></circle>
+                                    <circle cx={12} cy={5} r={1}></circle>
+                                    <circle cx={12} cy={19} r={1}></circle>
                                   </svg>
                                 </DropdownMenuTrigger>
                                 </DropdownMenu>
@@ -1184,7 +1184,7 @@ export function Pattern() {
                                 <span className="[&_[data-slot=icon-tile]]:[background:linear-gradient(color-mix(in_oklab,currentColor_10%,transparent),color-mix(in_oklab,currentColor_10%,transparent)),var(--frame-panel-bg)] [text-shadow:1px_0_var(--frame-panel-bg),-1px_0_var(--frame-panel-bg),0_1px_var(--frame-panel-bg),0_-1px_var(--frame-panel-bg),1px_1px_var(--frame-panel-bg),-1px_-1px_var(--frame-panel-bg),1px_-1px_var(--frame-panel-bg),-1px_1px_var(--frame-panel-bg)] font-medium min-w-0 relative text-foreground">
                                   <span className="flex gap-1.5 items-center min-w-0">
                                     <IconTile className="dark:text-orange-400 text-orange-600" variant="soft" size="xs" aria-hidden="true">
-                                      <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
+                                      <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
                                         <path d="M16 10a4 4 0 0 1-8 0"></path>
                                         <path d="M3.103 6.034h17.794"></path>
                                         <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
@@ -1198,8 +1198,8 @@ export function Pattern() {
                               </div>
                             </td>
                             <td className="align-middle border-e px-3 py-2" style={{width: "calc(var(--col-select-size) * 1px)"}}>
-                              <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_2p_" aria-checked="false" aria-label="Select row"></Checkbox>
-                              <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_2p_" aria-checked="false" aria-label="Select row"></Checkbox>
+                              <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center min-w-0">
@@ -1273,11 +1273,11 @@ export function Pattern() {
                             <td className="align-middle border-e-0 first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) pe-(--frame-panel-header-px) px-3 py-2" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
                               <div className="flex justify-end">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" rowActions="cmp_m3w7z" aria-label="Actions for Basecamp Tent Price Drop" aria-haspopup="menu" id="base-ui-_r_2v_" aria-expanded="false">
-                                  <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
-                                    <circle cx="12" cy="12" r="1"></circle>
-                                    <circle cx="12" cy="5" r="1"></circle>
-                                    <circle cx="12" cy="19" r="1"></circle>
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} rowActions="cmp_m3w7z" aria-label="Actions for Basecamp Tent Price Drop" aria-haspopup="menu" id="base-ui-_r_2v_" aria-expanded="false">
+                                  <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
+                                    <circle cx={12} cy={12} r={1}></circle>
+                                    <circle cx={12} cy={5} r={1}></circle>
+                                    <circle cx={12} cy={19} r={1}></circle>
                                   </svg>
                                 </DropdownMenuTrigger>
                                 </DropdownMenu>
@@ -1295,8 +1295,8 @@ export function Pattern() {
                               </div>
                             </td>
                             <td className="align-middle border-e px-3 py-2" style={{width: "calc(var(--col-select-size) * 1px)"}}>
-                              <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_31_" aria-checked="false" aria-label="Select row"></Checkbox>
-                              <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_31_" aria-checked="false" aria-label="Select row"></Checkbox>
+                              <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center min-w-0">
@@ -1305,10 +1305,10 @@ export function Pattern() {
                                 </button>
                                 <Tooltip>
                                 <TooltipTrigger className="[&_svg]:size-3.5 flex shrink-0 text-muted-foreground" id="base-ui-_r_35_" baseUiTooltipTrigger="">
-                                  <svg className="lucide lucide-timer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TimerIcon" tabler="IconClockPlay" hugeicons="Timer01Icon" phosphor="TimerIcon" remixicon="RiTimerLine" aria-hidden="true">
-                                    <line x1="10" x2="14" y1="2" y2="2"></line>
-                                    <line x1="12" x2="15" y1="14" y2="11"></line>
-                                    <circle cx="12" cy="14" r="8"></circle>
+                                  <svg className="lucide lucide-timer" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TimerIcon" tabler="IconClockPlay" hugeicons="Timer01Icon" phosphor="TimerIcon" remixicon="RiTimerLine" aria-hidden="true">
+                                    <line x1={10} x2={14} y1={2} y2={2}></line>
+                                    <line x1={12} x2={15} y1={14} y2={11}></line>
+                                    <circle cx={12} cy={14} r={8}></circle>
                                   </svg>
                                   <span className="sr-only">
                                     {"Learning"}
@@ -1388,11 +1388,11 @@ export function Pattern() {
                             <td className="align-middle border-e-0 first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) pe-(--frame-panel-header-px) px-3 py-2" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
                               <div className="flex justify-end">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" rowActions="cmp_g4t8b" aria-label="Actions for Glacier Gloves Preview" aria-haspopup="menu" id="base-ui-_r_39_" aria-expanded="false">
-                                  <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
-                                    <circle cx="12" cy="12" r="1"></circle>
-                                    <circle cx="12" cy="5" r="1"></circle>
-                                    <circle cx="12" cy="19" r="1"></circle>
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} rowActions="cmp_g4t8b" aria-label="Actions for Glacier Gloves Preview" aria-haspopup="menu" id="base-ui-_r_39_" aria-expanded="false">
+                                  <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
+                                    <circle cx={12} cy={12} r={1}></circle>
+                                    <circle cx={12} cy={5} r={1}></circle>
+                                    <circle cx={12} cy={19} r={1}></circle>
                                   </svg>
                                 </DropdownMenuTrigger>
                                 </DropdownMenu>
@@ -1410,8 +1410,8 @@ export function Pattern() {
                               </div>
                             </td>
                             <td className="align-middle border-e px-3 py-2" style={{width: "calc(var(--col-select-size) * 1px)"}}>
-                              <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_3b_" aria-checked="false" aria-label="Select row"></Checkbox>
-                              <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_3b_" aria-checked="false" aria-label="Select row"></Checkbox>
+                              <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center min-w-0">
@@ -1485,11 +1485,11 @@ export function Pattern() {
                             <td className="align-middle border-e-0 first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) pe-(--frame-panel-header-px) px-3 py-2" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
                               <div className="flex justify-end">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" rowActions="cmp_c8r4n" aria-label="Actions for Canyon Bottle Feed" aria-haspopup="menu" id="base-ui-_r_3h_" aria-expanded="false">
-                                  <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
-                                    <circle cx="12" cy="12" r="1"></circle>
-                                    <circle cx="12" cy="5" r="1"></circle>
-                                    <circle cx="12" cy="19" r="1"></circle>
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} rowActions="cmp_c8r4n" aria-label="Actions for Canyon Bottle Feed" aria-haspopup="menu" id="base-ui-_r_3h_" aria-expanded="false">
+                                  <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
+                                    <circle cx={12} cy={12} r={1}></circle>
+                                    <circle cx={12} cy={5} r={1}></circle>
+                                    <circle cx={12} cy={19} r={1}></circle>
                                   </svg>
                                 </DropdownMenuTrigger>
                                 </DropdownMenu>
@@ -1507,8 +1507,8 @@ export function Pattern() {
                               </div>
                             </td>
                             <td className="align-middle border-e px-3 py-2" style={{width: "calc(var(--col-select-size) * 1px)"}}>
-                              <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_3j_" aria-checked="false" aria-label="Select row"></Checkbox>
-                              <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_3j_" aria-checked="false" aria-label="Select row"></Checkbox>
+                              <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </td>
                             <td className="align-middle border-e px-3 py-2 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                               <div className="flex gap-1.5 items-center min-w-0">
@@ -1582,11 +1582,11 @@ export function Pattern() {
                             <td className="align-middle border-e-0 first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) pe-(--frame-panel-header-px) px-3 py-2" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
                               <div className="flex justify-end">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" rowActions="cmp_d6k2v" aria-label="Actions for Harbor Duffel Bundle Offer" aria-haspopup="menu" id="base-ui-_r_3p_" aria-expanded="false">
-                                  <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
-                                    <circle cx="12" cy="12" r="1"></circle>
-                                    <circle cx="12" cy="5" r="1"></circle>
-                                    <circle cx="12" cy="19" r="1"></circle>
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} rowActions="cmp_d6k2v" aria-label="Actions for Harbor Duffel Bundle Offer" aria-haspopup="menu" id="base-ui-_r_3p_" aria-expanded="false">
+                                  <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
+                                    <circle cx={12} cy={12} r={1}></circle>
+                                    <circle cx={12} cy={5} r={1}></circle>
+                                    <circle cx={12} cy={19} r={1}></circle>
                                   </svg>
                                 </DropdownMenuTrigger>
                                 </DropdownMenu>
@@ -1690,45 +1690,45 @@ export function Pattern() {
                   {"Rows per page"}
                 </div>
                 <Select>
-                <SelectTrigger className="min-w-16" type="button" tabIndex="0" id="base-ui-_r_3r_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Rows per page">
+                <SelectTrigger className="min-w-16" type="button" tabIndex={0} id="base-ui-_r_3r_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Rows per page">
                   <SelectValue>
                     {"10"}
                   </SelectValue>
-                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                     {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
-                <input id="base-ui-_r_3r_-hidden-input" tabIndex="-1" aria-hidden="true" value="10" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                <input id="base-ui-_r_3r_-hidden-input" tabIndex={-1} aria-hidden="true" value="10" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
               </div>
               <div className="flex flex-col gap-2.5 items-center justify-center order-1 pt-2.5 sm:flex-row sm:justify-end sm:order-2 sm:pt-0">
                 <div className="order-2 sm:order-1 text-muted-foreground text-nowrap text-sm">
                   {"1 - 10 of 30"}
                 </div>
                 <div className="flex flex-wrap gap-1 items-center justify-center order-1 sm:flex-nowrap">
-                  <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" disabled="" tabIndex="0" disabled>
+                  <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" disabled="" tabIndex={0} disabled>
                     <span className="sr-only">
                       {"Go to previous page"}
                     </span>
-                    <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine">
+                    <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine">
                       <path d="m15 18-6-6 6-6"></path>
                     </svg>
                   </Button>
-                  <Button className="bg-accent px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-accent-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 1" aria-current="page">
+                  <Button className="bg-accent px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-accent-foreground text-sm" type="button" tabIndex={0} aria-label="Go to page 1" aria-current="page">
                     {"1"}
                   </Button>
-                  <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 2">
+                  <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex={0} aria-label="Go to page 2">
                     {"2"}
                   </Button>
-                  <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 3">
+                  <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex={0} aria-label="Go to page 3">
                     {"3"}
                   </Button>
-                  <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" tabIndex="0">
+                  <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" tabIndex={0}>
                     <span className="sr-only">
                       {"Go to next page"}
                     </span>
-                    <svg className="lucide lucide-chevron-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
+                    <svg className="lucide lucide-chevron-right size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                       <path d="m9 18 6-6-6-6"></path>
                     </svg>
                   </Button>

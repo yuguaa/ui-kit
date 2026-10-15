@@ -55,8 +55,8 @@ export function Pattern() {
               {"Set digest cadence and route collaboration alerts across email and in-app delivery."}
             </p>
           </div>
-          <Button className="self-start sm:self-center" type="button" tabIndex="0" extracted="1">
-            <svg className="lucide lucide-arrow-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftIcon" tabler="IconArrowLeft" hugeicons="ArrowLeft02Icon" phosphor="ArrowLeftIcon" remixicon="RiArrowLeftLine" aria-hidden="true">
+          <Button className="self-start sm:self-center" type="button" tabIndex={0} extracted="1">
+            <svg className="lucide lucide-arrow-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftIcon" tabler="IconArrowLeft" hugeicons="ArrowLeft02Icon" phosphor="ArrowLeftIcon" remixicon="RiArrowLeftLine" aria-hidden="true">
               <path d="m12 19-7-7 7-7"></path>
               <path d="M19 12H5"></path>
             </svg>
@@ -78,8 +78,8 @@ export function Pattern() {
                 <div className="flex gap-3 items-start min-w-0 px-5 py-4">
                   <Item className="[&_svg]:size-4 [&_svg]:text-accent-foreground bg-muted border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-9" variant="default" size="default" aria-hidden="true">
                     <ItemMedia className="size-auto" variant="icon">
-                      <svg className="lucide lucide-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                        <circle cx="12" cy="12" r="10"></circle>
+                      <svg className="lucide lucide-clock" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                        <circle cx={12} cy={12} r={10}></circle>
                         <path d="M12 6v6l4 2"></path>
                       </svg>
                     </ItemMedia>
@@ -91,8 +91,8 @@ export function Pattern() {
                       </p>
                       <Tooltip>
                       <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex p-0.5 rounded-sm shrink-0 text-muted-foreground transition-colors" type="button" aria-label="Time info" id="base-ui-_r_1_" baseUiTooltipTrigger="">
-                        <svg className="lucide lucide-info size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
-                          <circle cx="12" cy="12" r="10"></circle>
+                        <svg className="lucide lucide-info size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
+                          <circle cx={12} cy={12} r={10}></circle>
                           <path d="M12 16v-4"></path>
                           <path d="M12 8h.01"></path>
                         </svg>
@@ -126,9 +126,9 @@ export function Pattern() {
                 <div className="border-t flex gap-3 items-start min-w-0 px-5 py-4 sm:border-l sm:border-t-0">
                   <Item className="[&_svg]:size-4 [&_svg]:text-accent-foreground bg-muted border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-9" variant="default" size="default" aria-hidden="true">
                     <ItemMedia className="size-auto" variant="icon">
-                      <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
+                      <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
                         <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                        <rect x={2} y={4} width={20} height={16} rx={2}></rect>
                       </svg>
                     </ItemMedia>
                   </Item>
@@ -139,8 +139,8 @@ export function Pattern() {
                       </p>
                       <Tooltip>
                       <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex p-0.5 rounded-sm shrink-0 text-muted-foreground transition-colors" type="button" aria-label="Channel info" id="base-ui-_r_4_" baseUiTooltipTrigger="">
-                        <svg className="lucide lucide-info size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
-                          <circle cx="12" cy="12" r="10"></circle>
+                        <svg className="lucide lucide-info size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
+                          <circle cx={12} cy={12} r={10}></circle>
                           <path d="M12 16v-4"></path>
                           <path d="M12 8h.01"></path>
                         </svg>
@@ -174,10 +174,10 @@ export function Pattern() {
                 <div className="border-t flex gap-3 items-start min-w-0 px-5 py-4 sm:border-l sm:border-t-0">
                   <Item className="[&_svg]:size-4 [&_svg]:text-accent-foreground bg-muted border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-9" variant="default" size="default" aria-hidden="true">
                     <ItemMedia className="size-auto" variant="icon">
-                      <svg className="lucide lucide-calendar-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarCheckIcon" tabler="IconCalendarCheck" hugeicons="CalendarCheckIn01Icon" phosphor="CalendarCheckIcon" remixicon="RiCalendarCheckLine" aria-hidden="true">
+                      <svg className="lucide lucide-calendar-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarCheckIcon" tabler="IconCalendarCheck" hugeicons="CalendarCheckIn01Icon" phosphor="CalendarCheckIcon" remixicon="RiCalendarCheckLine" aria-hidden="true">
                         <path d="M8 2v4"></path>
                         <path d="M16 2v4"></path>
-                        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                        <rect width={18} height={18} x={3} y={4} rx={2}></rect>
                         <path d="M3 10h18"></path>
                         <path d="m9 16 2 2 4-4"></path>
                       </svg>
@@ -190,8 +190,8 @@ export function Pattern() {
                       </p>
                       <Tooltip>
                       <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex p-0.5 rounded-sm shrink-0 text-muted-foreground transition-colors" type="button" aria-label="Scope info" id="base-ui-_r_7_" baseUiTooltipTrigger="">
-                        <svg className="lucide lucide-info size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
-                          <circle cx="12" cy="12" r="10"></circle>
+                        <svg className="lucide lucide-info size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
+                          <circle cx={12} cy={12} r={10}></circle>
                           <path d="M12 16v-4"></path>
                           <path d="M12 8h.01"></path>
                         </svg>
@@ -231,7 +231,7 @@ export function Pattern() {
                     <div className="@md/field-group:max-w-xl flex flex-1 gap-3 items-start min-w-0">
                       <Item className="[&_svg]:size-5 [&_svg]:text-accent-foreground bg-muted border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10.5" variant="default" size="default" aria-hidden="true">
                         <ItemMedia className="size-auto" variant="icon">
-                          <svg className="lucide lucide-bell" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BellIcon" tabler="IconBell" hugeicons="NotificationIcon" phosphor="BellIcon" remixicon="RiNotificationLine" aria-hidden="true">
+                          <svg className="lucide lucide-bell" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BellIcon" tabler="IconBell" hugeicons="NotificationIcon" phosphor="BellIcon" remixicon="RiNotificationLine" aria-hidden="true">
                             <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
                             <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
                           </svg>
@@ -256,10 +256,10 @@ export function Pattern() {
                         <span className="@md/field-group:hidden text-muted-foreground text-sm">
                           {"Enabled"}
                         </span>
-                        <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_9_" aria-checked="true" size="default" aria-label="Morning Digest" aria-labelledby="profile-5-daily-briefing-label">
+                        <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_9_" aria-checked="true" size="default" aria-label="Morning Digest" aria-labelledby="profile-5-daily-briefing-label">
                           <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                         </Switch>
-                        <input id="profile-5-daily-briefing" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input id="profile-5-daily-briefing" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </FieldContent>
                   </Field>
@@ -293,7 +293,7 @@ export function Pattern() {
                 </Badge>
               </div>
               <ScrollArea className="[&>[data-slot=scroll-area-scrollbar][data-orientation=vertical]]:hidden w-full whitespace-nowrap" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
-                <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_c_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
+                <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_c_-viewport" tabIndex={-1} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                   <div className="min-w-[44rem]">
                     <div className="cn-table-container">
                       <Table className="table-fixed w-full">
@@ -305,9 +305,9 @@ export function Pattern() {
                             <TableHead className="font-medium min-w-[8.5rem] px-0 py-3 text-center text-muted-foreground text-xs w-[8.5rem] whitespace-nowrap">
                               <div className="flex gap-1.5 items-center justify-center whitespace-nowrap">
                                 <span className="[&_svg]:size-4 text-muted-foreground">
-                                  <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
+                                  <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
                                     <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                    <rect x={2} y={4} width={20} height={16} rx={2}></rect>
                                   </svg>
                                 </span>
                                 <span>
@@ -318,7 +318,7 @@ export function Pattern() {
                             <TableHead className="font-medium min-w-[8.5rem] pl-0 pr-5 py-3 text-center text-muted-foreground text-xs w-[8.5rem] whitespace-nowrap">
                               <div className="flex gap-1.5 items-center justify-center whitespace-nowrap">
                                 <span className="[&_svg]:size-4 text-muted-foreground">
-                                  <svg className="lucide lucide-bell" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BellIcon" tabler="IconBell" hugeicons="NotificationIcon" phosphor="BellIcon" remixicon="RiNotificationLine" aria-hidden="true">
+                                  <svg className="lucide lucide-bell" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BellIcon" tabler="IconBell" hugeicons="NotificationIcon" phosphor="BellIcon" remixicon="RiNotificationLine" aria-hidden="true">
                                     <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
                                     <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
                                   </svg>
@@ -344,26 +344,26 @@ export function Pattern() {
                             </TableCell>
                             <TableCell className="align-middle min-w-[8rem] px-0 py-3.5 w-[8rem]">
                               <div className="flex justify-center">
-                                <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_d_" aria-checked="true" aria-label="Direct mentions via Email">
+                                <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_d_" aria-checked="true" aria-label="Direct mentions via Email">
                                   <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                                       <path d="M20 6 9 17l-5-5"></path>
                                     </svg>
                                   </span>
                                 </Checkbox>
-                                <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </div>
                             </TableCell>
                             <TableCell className="align-middle min-w-[8rem] pl-0 pr-5 py-3.5 w-[8rem]">
                               <div className="flex justify-center">
-                                <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_g_" aria-checked="true" aria-label="Direct mentions via In App">
+                                <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_g_" aria-checked="true" aria-label="Direct mentions via In App">
                                   <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                                       <path d="M20 6 9 17l-5-5"></path>
                                     </svg>
                                   </span>
                                 </Checkbox>
-                                <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </div>
                             </TableCell>
                           </TableRow>
@@ -380,26 +380,26 @@ export function Pattern() {
                             </TableCell>
                             <TableCell className="align-middle min-w-[8rem] px-0 py-3.5 w-[8rem]">
                               <div className="flex justify-center">
-                                <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_j_" aria-checked="true" aria-label="Thread replies via Email">
+                                <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_j_" aria-checked="true" aria-label="Thread replies via Email">
                                   <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                                       <path d="M20 6 9 17l-5-5"></path>
                                     </svg>
                                   </span>
                                 </Checkbox>
-                                <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </div>
                             </TableCell>
                             <TableCell className="align-middle min-w-[8rem] pl-0 pr-5 py-3.5 w-[8rem]">
                               <div className="flex justify-center">
-                                <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_m_" aria-checked="true" aria-label="Thread replies via In App">
+                                <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_m_" aria-checked="true" aria-label="Thread replies via In App">
                                   <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                                       <path d="M20 6 9 17l-5-5"></path>
                                     </svg>
                                   </span>
                                 </Checkbox>
-                                <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </div>
                             </TableCell>
                           </TableRow>
@@ -416,26 +416,26 @@ export function Pattern() {
                             </TableCell>
                             <TableCell className="align-middle min-w-[8rem] px-0 py-3.5 w-[8rem]">
                               <div className="flex justify-center">
-                                <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_p_" aria-checked="true" aria-label="Approval requests via Email">
+                                <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_p_" aria-checked="true" aria-label="Approval requests via Email">
                                   <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                                       <path d="M20 6 9 17l-5-5"></path>
                                     </svg>
                                   </span>
                                 </Checkbox>
-                                <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </div>
                             </TableCell>
                             <TableCell className="align-middle min-w-[8rem] pl-0 pr-5 py-3.5 w-[8rem]">
                               <div className="flex justify-center">
-                                <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_s_" aria-checked="true" aria-label="Approval requests via In App">
+                                <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_s_" aria-checked="true" aria-label="Approval requests via In App">
                                   <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                                       <path d="M20 6 9 17l-5-5"></path>
                                     </svg>
                                   </span>
                                 </Checkbox>
-                                <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </div>
                             </TableCell>
                           </TableRow>
@@ -452,20 +452,20 @@ export function Pattern() {
                             </TableCell>
                             <TableCell className="align-middle min-w-[8rem] px-0 py-3.5 w-[8rem]">
                               <div className="flex justify-center">
-                                <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_v_" aria-checked="false" aria-label="Ownership changes via Email"></Checkbox>
-                                <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_v_" aria-checked="false" aria-label="Ownership changes via Email"></Checkbox>
+                                <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </div>
                             </TableCell>
                             <TableCell className="align-middle min-w-[8rem] pl-0 pr-5 py-3.5 w-[8rem]">
                               <div className="flex justify-center">
-                                <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_12_" aria-checked="true" aria-label="Ownership changes via In App">
+                                <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_12_" aria-checked="true" aria-label="Ownership changes via In App">
                                   <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                                       <path d="M20 6 9 17l-5-5"></path>
                                     </svg>
                                   </span>
                                 </Checkbox>
-                                <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </div>
                             </TableCell>
                           </TableRow>
@@ -482,20 +482,20 @@ export function Pattern() {
                             </TableCell>
                             <TableCell className="align-middle min-w-[8rem] px-0 py-3.5 w-[8rem]">
                               <div className="flex justify-center">
-                                <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_15_" aria-checked="true" aria-label="Shared files via Email">
+                                <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_15_" aria-checked="true" aria-label="Shared files via Email">
                                   <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                                       <path d="M20 6 9 17l-5-5"></path>
                                     </svg>
                                   </span>
                                 </Checkbox>
-                                <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </div>
                             </TableCell>
                             <TableCell className="align-middle min-w-[8rem] pl-0 pr-5 py-3.5 w-[8rem]">
                               <div className="flex justify-center">
-                                <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_18_" aria-checked="false" aria-label="Shared files via In App"></Checkbox>
-                                <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_18_" aria-checked="false" aria-label="Shared files via In App"></Checkbox>
+                                <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </div>
                             </TableCell>
                           </TableRow>
@@ -512,26 +512,26 @@ export function Pattern() {
                             </TableCell>
                             <TableCell className="align-middle min-w-[8rem] px-0 py-3.5 w-[8rem]">
                               <div className="flex justify-center">
-                                <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_1b_" aria-checked="true" aria-label="Workflow reviews via Email">
+                                <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_1b_" aria-checked="true" aria-label="Workflow reviews via Email">
                                   <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                                       <path d="M20 6 9 17l-5-5"></path>
                                     </svg>
                                   </span>
                                 </Checkbox>
-                                <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </div>
                             </TableCell>
                             <TableCell className="align-middle min-w-[8rem] pl-0 pr-5 py-3.5 w-[8rem]">
                               <div className="flex justify-center">
-                                <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_1e_" aria-checked="true" aria-label="Workflow reviews via In App">
+                                <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_1e_" aria-checked="true" aria-label="Workflow reviews via In App">
                                   <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                                       <path d="M20 6 9 17l-5-5"></path>
                                     </svg>
                                   </span>
                                 </Checkbox>
-                                <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </div>
                             </TableCell>
                           </TableRow>
@@ -549,8 +549,8 @@ export function Pattern() {
                 </p>
                 <Tooltip>
                 <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex p-0.5 rounded-sm shrink-0 text-muted-foreground transition-colors" type="button" aria-label="Notification routing guidance" id="base-ui-_r_1i_" baseUiTooltipTrigger="">
-                  <svg className="lucide lucide-info size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
+                  <svg className="lucide lucide-info size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
+                    <circle cx={12} cy={12} r={10}></circle>
                     <path d="M12 16v-4"></path>
                     <path d="M12 8h.01"></path>
                   </svg>

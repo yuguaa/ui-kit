@@ -21,8 +21,8 @@ export function Pattern() {
               {"4 items"}
             </span>
           </div>
-          <Button className="h-auto p-0 text-sm" type="button" tabIndex="0" extracted="1">
-            <svg className="lucide lucide-arrow-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftIcon" tabler="IconArrowLeft" hugeicons="ArrowLeft02Icon" phosphor="ArrowLeftIcon" remixicon="RiArrowLeftLine" data-icon="inline-start" aria-hidden="true">
+          <Button className="h-auto p-0 text-sm" type="button" tabIndex={0} extracted="1">
+            <svg className="lucide lucide-arrow-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftIcon" tabler="IconArrowLeft" hugeicons="ArrowLeft02Icon" phosphor="ArrowLeftIcon" remixicon="RiArrowLeftLine" data-icon="inline-start" aria-hidden="true">
               <path d="m12 19-7-7 7-7"></path>
               <path d="M19 12H5"></path>
             </svg>
@@ -78,16 +78,16 @@ export function Pattern() {
               </p>
               <div className="flex justify-center">
                 <ButtonGroup role="group" aria-label="Quantity for Atelier Tulle Blouse">
-                  <Button type="button" tabIndex="0" aria-label="Decrease quantity for Atelier Tulle Blouse">
-                    <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Decrease quantity for Atelier Tulle Blouse">
+                    <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                       <path d="M5 12h14"></path>
                     </svg>
                   </Button>
                   <div className="[&_svg]:pointer-events-none cn-button-group-text flex items-center justify-center min-w-9 tabular-nums text-sm">
                     {"2"}
                   </div>
-                  <Button type="button" tabIndex="0" aria-label="Increase quantity for Atelier Tulle Blouse">
-                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Increase quantity for Atelier Tulle Blouse">
+                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="M12 5v14"></path>
                     </svg>
@@ -98,8 +98,8 @@ export function Pattern() {
                 {"$96.00"}
               </p>
               <div className="flex justify-end">
-                <Button className="text-muted-foreground" type="button" tabIndex="0" aria-label="Remove Atelier Tulle Blouse from cart">
-                  <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                <Button className="text-muted-foreground" type="button" tabIndex={0} aria-label="Remove Atelier Tulle Blouse from cart">
+                  <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                     <path d="M18 6 6 18"></path>
                     <path d="m6 6 12 12"></path>
                   </svg>
@@ -134,8 +134,8 @@ export function Pattern() {
                     </p>
                   </div>
                 </div>
-                <Button className="text-muted-foreground" type="button" tabIndex="0" aria-label="Remove Atelier Tulle Blouse from cart">
-                  <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                <Button className="text-muted-foreground" type="button" tabIndex={0} aria-label="Remove Atelier Tulle Blouse from cart">
+                  <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                     <path d="M18 6 6 18"></path>
                     <path d="m6 6 12 12"></path>
                   </svg>
@@ -143,16 +143,16 @@ export function Pattern() {
               </div>
               <div className="flex flex-wrap gap-3 items-center justify-between">
                 <ButtonGroup role="group" aria-label="Quantity for Atelier Tulle Blouse">
-                  <Button type="button" tabIndex="0" aria-label="Decrease quantity for Atelier Tulle Blouse">
-                    <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Decrease quantity for Atelier Tulle Blouse">
+                    <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                       <path d="M5 12h14"></path>
                     </svg>
                   </Button>
                   <div className="[&_svg]:pointer-events-none cn-button-group-text flex items-center justify-center min-w-9 tabular-nums text-sm">
                     {"2"}
                   </div>
-                  <Button type="button" tabIndex="0" aria-label="Increase quantity for Atelier Tulle Blouse">
-                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Increase quantity for Atelier Tulle Blouse">
+                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="M12 5v14"></path>
                     </svg>
@@ -203,16 +203,16 @@ export function Pattern() {
               </p>
               <div className="flex justify-center">
                 <ButtonGroup role="group" aria-label="Quantity for Atelier Quilted Crossbody Bag">
-                  <Button type="button" disabled="" tabIndex="0" disabled aria-label="Decrease quantity for Atelier Quilted Crossbody Bag">
-                    <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                  <Button type="button" disabled="" tabIndex={0} disabled aria-label="Decrease quantity for Atelier Quilted Crossbody Bag">
+                    <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                       <path d="M5 12h14"></path>
                     </svg>
                   </Button>
                   <div className="[&_svg]:pointer-events-none cn-button-group-text flex items-center justify-center min-w-9 tabular-nums text-sm">
                     {"1"}
                   </div>
-                  <Button type="button" tabIndex="0" aria-label="Increase quantity for Atelier Quilted Crossbody Bag">
-                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Increase quantity for Atelier Quilted Crossbody Bag">
+                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="M12 5v14"></path>
                     </svg>
@@ -223,8 +223,8 @@ export function Pattern() {
                 {"$138.00"}
               </p>
               <div className="flex justify-end">
-                <Button className="text-muted-foreground" type="button" tabIndex="0" aria-label="Remove Atelier Quilted Crossbody Bag from cart">
-                  <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                <Button className="text-muted-foreground" type="button" tabIndex={0} aria-label="Remove Atelier Quilted Crossbody Bag from cart">
+                  <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                     <path d="M18 6 6 18"></path>
                     <path d="m6 6 12 12"></path>
                   </svg>
@@ -259,8 +259,8 @@ export function Pattern() {
                     </p>
                   </div>
                 </div>
-                <Button className="text-muted-foreground" type="button" tabIndex="0" aria-label="Remove Atelier Quilted Crossbody Bag from cart">
-                  <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                <Button className="text-muted-foreground" type="button" tabIndex={0} aria-label="Remove Atelier Quilted Crossbody Bag from cart">
+                  <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                     <path d="M18 6 6 18"></path>
                     <path d="m6 6 12 12"></path>
                   </svg>
@@ -268,16 +268,16 @@ export function Pattern() {
               </div>
               <div className="flex flex-wrap gap-3 items-center justify-between">
                 <ButtonGroup role="group" aria-label="Quantity for Atelier Quilted Crossbody Bag">
-                  <Button type="button" disabled="" tabIndex="0" disabled aria-label="Decrease quantity for Atelier Quilted Crossbody Bag">
-                    <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                  <Button type="button" disabled="" tabIndex={0} disabled aria-label="Decrease quantity for Atelier Quilted Crossbody Bag">
+                    <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                       <path d="M5 12h14"></path>
                     </svg>
                   </Button>
                   <div className="[&_svg]:pointer-events-none cn-button-group-text flex items-center justify-center min-w-9 tabular-nums text-sm">
                     {"1"}
                   </div>
-                  <Button type="button" tabIndex="0" aria-label="Increase quantity for Atelier Quilted Crossbody Bag">
-                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Increase quantity for Atelier Quilted Crossbody Bag">
+                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="M12 5v14"></path>
                     </svg>
@@ -328,16 +328,16 @@ export function Pattern() {
               </p>
               <div className="flex justify-center">
                 <ButtonGroup role="group" aria-label="Quantity for Heritage Suede Mules">
-                  <Button type="button" disabled="" tabIndex="0" disabled aria-label="Decrease quantity for Heritage Suede Mules">
-                    <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                  <Button type="button" disabled="" tabIndex={0} disabled aria-label="Decrease quantity for Heritage Suede Mules">
+                    <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                       <path d="M5 12h14"></path>
                     </svg>
                   </Button>
                   <div className="[&_svg]:pointer-events-none cn-button-group-text flex items-center justify-center min-w-9 tabular-nums text-sm">
                     {"1"}
                   </div>
-                  <Button type="button" tabIndex="0" aria-label="Increase quantity for Heritage Suede Mules">
-                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Increase quantity for Heritage Suede Mules">
+                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="M12 5v14"></path>
                     </svg>
@@ -348,8 +348,8 @@ export function Pattern() {
                 {"$168.00"}
               </p>
               <div className="flex justify-end">
-                <Button className="text-muted-foreground" type="button" tabIndex="0" aria-label="Remove Heritage Suede Mules from cart">
-                  <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                <Button className="text-muted-foreground" type="button" tabIndex={0} aria-label="Remove Heritage Suede Mules from cart">
+                  <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                     <path d="M18 6 6 18"></path>
                     <path d="m6 6 12 12"></path>
                   </svg>
@@ -384,8 +384,8 @@ export function Pattern() {
                     </p>
                   </div>
                 </div>
-                <Button className="text-muted-foreground" type="button" tabIndex="0" aria-label="Remove Heritage Suede Mules from cart">
-                  <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                <Button className="text-muted-foreground" type="button" tabIndex={0} aria-label="Remove Heritage Suede Mules from cart">
+                  <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                     <path d="M18 6 6 18"></path>
                     <path d="m6 6 12 12"></path>
                   </svg>
@@ -393,16 +393,16 @@ export function Pattern() {
               </div>
               <div className="flex flex-wrap gap-3 items-center justify-between">
                 <ButtonGroup role="group" aria-label="Quantity for Heritage Suede Mules">
-                  <Button type="button" disabled="" tabIndex="0" disabled aria-label="Decrease quantity for Heritage Suede Mules">
-                    <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                  <Button type="button" disabled="" tabIndex={0} disabled aria-label="Decrease quantity for Heritage Suede Mules">
+                    <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                       <path d="M5 12h14"></path>
                     </svg>
                   </Button>
                   <div className="[&_svg]:pointer-events-none cn-button-group-text flex items-center justify-center min-w-9 tabular-nums text-sm">
                     {"1"}
                   </div>
-                  <Button type="button" tabIndex="0" aria-label="Increase quantity for Heritage Suede Mules">
-                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Increase quantity for Heritage Suede Mules">
+                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="M12 5v14"></path>
                     </svg>
@@ -437,9 +437,9 @@ export function Pattern() {
                   <span className="flex gap-1 items-center text-muted-foreground">
                     {"Shipping"}
                     <Tooltip>
-                    <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Shipping is on us at this order total." id="base-ui-_r_1_" baseUiTooltipTrigger="">
-                      <svg className="lucide lucide-info size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
-                        <circle cx="12" cy="12" r="10"></circle>
+                    <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Shipping is on us at this order total." id="base-ui-_r_1_" baseUiTooltipTrigger="">
+                      <svg className="lucide lucide-info size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
+                        <circle cx={12} cy={12} r={10}></circle>
                         <path d="M12 16v-4"></path>
                         <path d="M12 8h.01"></path>
                       </svg>
@@ -456,9 +456,9 @@ export function Pattern() {
                   <span className="flex gap-1 items-center text-muted-foreground">
                     {"Estimated tax"}
                     <Tooltip>
-                    <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Estimated at 8 percent. Final tax is calculated at checkout based on your shipping address." id="base-ui-_r_3_" baseUiTooltipTrigger="">
-                      <svg className="lucide lucide-info size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
-                        <circle cx="12" cy="12" r="10"></circle>
+                    <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Estimated at 8 percent. Final tax is calculated at checkout based on your shipping address." id="base-ui-_r_3_" baseUiTooltipTrigger="">
+                      <svg className="lucide lucide-info size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
+                        <circle cx={12} cy={12} r={10}></circle>
                         <path d="M12 16v-4"></path>
                         <path d="M12 8h.01"></path>
                       </svg>
@@ -485,15 +485,15 @@ export function Pattern() {
                 </div>
               </div>
             </div>
-            <Button className="w-full" href="#checkout" aria-label="Proceed to checkout, total $434.16" role="button" tabIndex="0" type="button">
+            <Button className="w-full" href="#checkout" aria-label="Proceed to checkout, total $434.16" role="button" tabIndex={0} type="button">
               {"Proceed To Checkout"}
-              <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
+              <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="m12 5 7 7-7 7"></path>
               </svg>
             </Button>
             <p className="flex gap-2 items-center justify-center text-muted-foreground text-xs">
-              <svg className="lucide lucide-shield-check shrink-0 size-3.5 text-foreground/70" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
+              <svg className="lucide lucide-shield-check shrink-0 size-3.5 text-foreground/70" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
                 <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                 <path d="m9 12 2 2 4-4"></path>
               </svg>

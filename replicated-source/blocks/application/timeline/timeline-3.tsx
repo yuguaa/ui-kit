@@ -102,10 +102,10 @@ export function Pattern() {
                 {"Velocity threshold exceeded for new payee"}
               </p>
               <div className="flex flex-wrap gap-1.5 items-center mt-2">
-                <Button type="button" tabIndex="0" extracted="1">
+                <Button type="button" tabIndex={0} extracted="1">
                   {"Review"}
                 </Button>
-                <Button type="button" tabIndex="0">
+                <Button type="button" tabIndex={0}>
                   {"Clear"}
                 </Button>
               </div>
@@ -151,8 +151,8 @@ export function Pattern() {
               </p>
               <div className="flex flex-wrap gap-1.5 items-center mt-2">
                 <ButtonGroup role="group">
-                  <Button type="button" tabIndex="0">
-                    <svg className="lucide lucide-paperclip" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" aria-hidden="true">
+                  <Button type="button" tabIndex={0}>
+                    <svg className="lucide lucide-paperclip" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" aria-hidden="true">
                       <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                     </svg>
                     <span className="truncate">
@@ -162,8 +162,8 @@ export function Pattern() {
                       {"(48kb)"}
                     </span>
                   </Button>
-                  <Button type="button" tabIndex="0" aria-label="Download settlement-match.csv">
-                    <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Download settlement-match.csv">
+                    <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
                       <path d="M12 15V3"></path>
                       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                       <path d="m7 10 5 5 5-5"></path>
@@ -218,7 +218,7 @@ export function Pattern() {
                   </Avatar>
                   <AvatarGroupCount className="leading-none size-5 text-[9px]">
                     <Popover>
-                    <PopoverTrigger className="flex focus-visible:ring-2 focus-visible:ring-ring/50 hover:text-foreground items-center justify-center outline-none rounded-full size-full tabular-nums" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="false" aria-label="2 more: Nora Vale, Karl Vogel">
+                    <PopoverTrigger className="flex focus-visible:ring-2 focus-visible:ring-ring/50 hover:text-foreground items-center justify-center outline-none rounded-full size-full tabular-nums" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="false" aria-label="2 more: Nora Vale, Karl Vogel">
                       {"+2"}
                     </PopoverTrigger>
                     </Popover>
@@ -264,8 +264,8 @@ export function Pattern() {
               </p>
               <div className="flex flex-wrap gap-1.5 items-center mt-2">
                 <ButtonGroup role="group">
-                  <Button type="button" tabIndex="0">
-                    <svg className="lucide lucide-paperclip" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" aria-hidden="true">
+                  <Button type="button" tabIndex={0}>
+                    <svg className="lucide lucide-paperclip" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" aria-hidden="true">
                       <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                     </svg>
                     <span className="truncate">
@@ -275,8 +275,8 @@ export function Pattern() {
                       {"(76kb)"}
                     </span>
                   </Button>
-                  <Button type="button" tabIndex="0" aria-label="Download invoice-2098.pdf">
-                    <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Download invoice-2098.pdf">
+                    <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
                       <path d="M12 15V3"></path>
                       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                       <path d="m7 10 5 5 5-5"></path>

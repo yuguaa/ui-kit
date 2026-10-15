@@ -40,9 +40,9 @@ export function Pattern() {
               <Item className="px-3.5" variant="default" size="default">
                 <ItemMedia variant="icon">
                   <Item className="[&_svg]:opacity-50 [&_svg]:size-4.5 bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10" variant="default" size="default">
-                    <svg className="lucide lucide-bot" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BotIcon" tabler="IconRobot" hugeicons="BotIcon" phosphor="RobotIcon" remixicon="RiRobot2Line" aria-hidden="true">
+                    <svg className="lucide lucide-bot" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BotIcon" tabler="IconRobot" hugeicons="BotIcon" phosphor="RobotIcon" remixicon="RiRobot2Line" aria-hidden="true">
                       <path d="M12 8V4H8"></path>
-                      <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+                      <rect width={16} height={12} x={4} y={8} rx={2}></rect>
                       <path d="M2 14h2"></path>
                       <path d="M20 14h2"></path>
                       <path d="M15 13v2"></path>
@@ -62,10 +62,10 @@ export function Pattern() {
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
-                  <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_0_" aria-checked="true" size="default" aria-label="Enable AI semantic search">
+                  <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_0_" aria-checked="true" size="default" aria-label="Enable AI semantic search">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_1_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_1_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </ItemActions>
               </Item>
             </div>
@@ -74,11 +74,11 @@ export function Pattern() {
               <Item className="px-3.5" variant="default" size="default">
                 <ItemMedia variant="icon">
                   <Item className="[&_svg]:opacity-50 [&_svg]:size-4.5 bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10" variant="default" size="default">
-                    <svg className="lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SparklesIcon" tabler="IconSparkles" hugeicons="SparklesIcon" phosphor="SparkleIcon" remixicon="RiSparklingLine" aria-hidden="true">
+                    <svg className="lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SparklesIcon" tabler="IconSparkles" hugeicons="SparklesIcon" phosphor="SparkleIcon" remixicon="RiSparklingLine" aria-hidden="true">
                       <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path>
                       <path d="M20 2v4"></path>
                       <path d="M22 4h-4"></path>
-                      <circle cx="4" cy="20" r="2"></circle>
+                      <circle cx={4} cy={20} r={2}></circle>
                     </svg>
                   </Item>
                 </ItemMedia>
@@ -94,10 +94,10 @@ export function Pattern() {
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
-                  <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_3_" aria-checked="true" size="default" aria-label="Enable AI insight">
+                  <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_3_" aria-checked="true" size="default" aria-label="Enable AI insight">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_4_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_4_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </ItemActions>
               </Item>
             </div>
@@ -114,8 +114,8 @@ export function Pattern() {
               <Item className="px-3.5" variant="default" size="default">
                 <ItemMedia variant="icon">
                   <Item className="[&_svg]:opacity-50 [&_svg]:size-4.5 bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10" variant="default" size="default">
-                    <svg className="lucide lucide-globe" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GlobeIcon" tabler="IconWorld" hugeicons="Globe02Icon" phosphor="GlobeIcon" remixicon="RiGlobalLine" aria-hidden="true">
-                      <circle cx="12" cy="12" r="10"></circle>
+                    <svg className="lucide lucide-globe" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GlobeIcon" tabler="IconWorld" hugeicons="Globe02Icon" phosphor="GlobeIcon" remixicon="RiGlobalLine" aria-hidden="true">
+                      <circle cx={12} cy={12} r={10}></circle>
                       <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                       <path d="M2 12h20"></path>
                     </svg>
@@ -133,7 +133,7 @@ export function Pattern() {
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
-                  <Button type="button" tabIndex="0" extracted="1">
+                  <Button type="button" tabIndex={0} extracted="1">
                     {"Edit subdomain"}
                   </Button>
                 </ItemActions>
@@ -144,7 +144,7 @@ export function Pattern() {
               <Item className="px-3.5" variant="default" size="default">
                 <ItemMedia variant="icon">
                   <Item className="[&_svg]:opacity-50 [&_svg]:size-4.5 bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10" variant="default" size="default">
-                    <svg className="lucide lucide-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LinkIcon" tabler="IconLink" hugeicons="Link01Icon" phosphor="LinkIcon" remixicon="RiLinkM" aria-hidden="true">
+                    <svg className="lucide lucide-link" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LinkIcon" tabler="IconLink" hugeicons="Link01Icon" phosphor="LinkIcon" remixicon="RiLinkM" aria-hidden="true">
                       <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
                       <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
                     </svg>
@@ -162,7 +162,7 @@ export function Pattern() {
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
-                  <Button type="button" tabIndex="0">
+                  <Button type="button" tabIndex={0}>
                     {"Connect domain"}
                   </Button>
                 </ItemActions>
@@ -173,7 +173,7 @@ export function Pattern() {
               <Item className="px-3.5" variant="default" size="default">
                 <ItemMedia variant="icon">
                   <Item className="[&_svg]:opacity-50 [&_svg]:size-4.5 bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10" variant="default" size="default">
-                    <svg className="lucide lucide-file-text" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileTextIcon" tabler="IconFileText" hugeicons="File02Icon" phosphor="FileTextIcon" remixicon="RiFileTextLine" aria-hidden="true">
+                    <svg className="lucide lucide-file-text" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FileTextIcon" tabler="IconFileText" hugeicons="File02Icon" phosphor="FileTextIcon" remixicon="RiFileTextLine" aria-hidden="true">
                       <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                       <path d="M10 9H8"></path>
@@ -194,7 +194,7 @@ export function Pattern() {
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
-                  <Button type="button" tabIndex="0">
+                  <Button type="button" tabIndex={0}>
                     {"Change default"}
                   </Button>
                 </ItemActions>
@@ -213,11 +213,11 @@ export function Pattern() {
               <Item className="px-3.5" variant="default" size="default">
                 <ItemMedia variant="icon">
                   <Item className="[&_svg]:opacity-50 [&_svg]:size-4.5 bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10" variant="default" size="default">
-                    <svg className="lucide lucide-users" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                    <svg className="lucide lucide-users" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                       <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                       <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                       <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                      <circle cx="9" cy="7" r="4"></circle>
+                      <circle cx={9} cy={7} r={4}></circle>
                     </svg>
                   </Item>
                 </ItemMedia>
@@ -241,7 +241,7 @@ export function Pattern() {
                       </Avatar>
                       <AvatarGroupCount className="border leading-none size-6 text-[10px]">
                         <Popover>
-                        <PopoverTrigger className="flex focus-visible:ring-2 focus-visible:ring-ring/50 hover:text-foreground items-center justify-center outline-none rounded-full size-full tabular-nums" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_7_" aria-haspopup="dialog" aria-expanded="false" aria-label="9 more: Maya Patel, Liam Carter, Priya Nair, Diego Alvarez, Emma Wilson, Kenji Sato, Olivia Brown, Omar Haddad, Grace Kim">
+                        <PopoverTrigger className="flex focus-visible:ring-2 focus-visible:ring-ring/50 hover:text-foreground items-center justify-center outline-none rounded-full size-full tabular-nums" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_7_" aria-haspopup="dialog" aria-expanded="false" aria-label="9 more: Maya Patel, Liam Carter, Priya Nair, Diego Alvarez, Emma Wilson, Kenji Sato, Olivia Brown, Omar Haddad, Grace Kim">
                           {"+9"}
                         </PopoverTrigger>
                         </Popover>
@@ -250,7 +250,7 @@ export function Pattern() {
                   </div>
                 </ItemContent>
                 <ItemActions className="gap-2">
-                  <Button type="button" tabIndex="0">
+                  <Button type="button" tabIndex={0}>
                     {"Manage members"}
                   </Button>
                 </ItemActions>
@@ -269,9 +269,9 @@ export function Pattern() {
               <Item className="px-3.5" variant="default" size="default">
                 <ItemMedia variant="icon">
                   <Item className="[&_svg]:opacity-50 [&_svg]:size-4.5 bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10" variant="default" size="default">
-                    <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
+                    <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
                       <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                      <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                      <rect x={2} y={4} width={20} height={16} rx={2}></rect>
                     </svg>
                   </Item>
                 </ItemMedia>
@@ -287,10 +287,10 @@ export function Pattern() {
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
-                  <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_8_" aria-checked="true" size="default" aria-label="Email digest">
+                  <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_8_" aria-checked="true" size="default" aria-label="Email digest">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_9_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_9_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </ItemActions>
               </Item>
             </div>
@@ -299,7 +299,7 @@ export function Pattern() {
               <Item className="px-3.5" variant="default" size="default">
                 <ItemMedia variant="icon">
                   <Item className="[&_svg]:opacity-50 [&_svg]:size-4.5 bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10" variant="default" size="default">
-                    <svg className="lucide lucide-bell" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BellIcon" tabler="IconBell" hugeicons="NotificationIcon" phosphor="BellIcon" remixicon="RiNotificationLine" aria-hidden="true">
+                    <svg className="lucide lucide-bell" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BellIcon" tabler="IconBell" hugeicons="NotificationIcon" phosphor="BellIcon" remixicon="RiNotificationLine" aria-hidden="true">
                       <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
                       <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
                     </svg>
@@ -317,10 +317,10 @@ export function Pattern() {
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="gap-2">
-                  <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_b_" aria-checked="true" size="default" aria-label="In-app alerts">
+                  <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_b_" aria-checked="true" size="default" aria-label="In-app alerts">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_c_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_c_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </ItemActions>
               </Item>
             </div>

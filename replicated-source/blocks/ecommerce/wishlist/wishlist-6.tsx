@@ -22,7 +22,7 @@ export function Pattern() {
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
-                <svg className="cn-rtl-flip lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
+                <svg className="cn-rtl-flip lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                   <path d="m9 18 6-6-6-6"></path>
                 </svg>
               </BreadcrumbSeparator>
@@ -42,8 +42,8 @@ export function Pattern() {
                 {"4 collections · 12 saved items"}
               </p>
             </div>
-            <Button type="button" tabIndex="0" extracted="1">
-              <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+            <Button type="button" tabIndex={0} extracted="1">
+              <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="M12 5v14"></path>
               </svg>
@@ -80,7 +80,7 @@ export function Pattern() {
                     </span>
                   </p>
                 </div>
-                <svg className="lucide lucide-chevron-right shrink-0 size-4 text-foreground transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                <svg className="lucide lucide-chevron-right shrink-0 size-4 text-foreground transition-colors" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                   <path d="m9 18 6-6-6-6"></path>
                 </svg>
               </Item>
@@ -112,7 +112,7 @@ export function Pattern() {
                     </span>
                   </p>
                 </div>
-                <svg className="lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                <svg className="lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-colors" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                   <path d="m9 18 6-6-6-6"></path>
                 </svg>
               </Item>
@@ -141,7 +141,7 @@ export function Pattern() {
                     </span>
                   </p>
                 </div>
-                <svg className="lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                <svg className="lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-colors" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                   <path d="m9 18 6-6-6-6"></path>
                 </svg>
               </Item>
@@ -173,7 +173,7 @@ export function Pattern() {
                     </span>
                   </p>
                 </div>
-                <svg className="lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                <svg className="lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-colors" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                   <path d="m9 18 6-6-6-6"></path>
                 </svg>
               </Item>
@@ -199,18 +199,18 @@ export function Pattern() {
                 </p>
               </div>
               <div className="flex flex-wrap gap-2 items-center">
-                <Button type="button" tabIndex="0">
-                  <svg className="lucide lucide-share-2 lucide-share2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Share2Icon" tabler="IconShare" hugeicons="Share08Icon" phosphor="ShareNetworkIcon" remixicon="RiShareLine" data-icon="inline-start" aria-hidden="true">
-                    <circle cx="18" cy="5" r="3"></circle>
-                    <circle cx="6" cy="12" r="3"></circle>
-                    <circle cx="18" cy="19" r="3"></circle>
-                    <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
-                    <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
+                <Button type="button" tabIndex={0}>
+                  <svg className="lucide lucide-share-2 lucide-share2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Share2Icon" tabler="IconShare" hugeicons="Share08Icon" phosphor="ShareNetworkIcon" remixicon="RiShareLine" data-icon="inline-start" aria-hidden="true">
+                    <circle cx={18} cy={5} r={3}></circle>
+                    <circle cx={6} cy={12} r={3}></circle>
+                    <circle cx={18} cy={19} r={3}></circle>
+                    <line x1={8.59} x2={15.42} y1={13.51} y2={17.49}></line>
+                    <line x1={15.41} x2={8.59} y1={6.51} y2={10.49}></line>
                   </svg>
                   {"Share"}
                 </Button>
-                <Button type="button" tabIndex="0">
-                  <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" data-icon="inline-start" aria-hidden="true">
+                <Button type="button" tabIndex={0}>
+                  <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" data-icon="inline-start" aria-hidden="true">
                     <path d="M16 10a4 4 0 0 1-8 0"></path>
                     <path d="M3.103 6.034h17.794"></path>
                     <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
@@ -226,8 +226,8 @@ export function Pattern() {
                     <a className="absolute block focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring inset-0 outline-none" href="#" aria-label="View Storm Wool Coat">
                       <img className="absolute duration-500 ease-out group-hover/card:scale-105 h-full inset-0 object-cover transition-transform w-full" alt="Storm Wool Coat in camel on a studio backdrop" loading="eager" fetchpriority="high" src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&h=750&q=80" />
                     </a>
-                    <Button className="absolute backdrop-blur-sm bg-background/90 duration-200 ease-out focus-visible:opacity-100 group-focus-within/card:opacity-100 group-hover/card:opacity-100 opacity-0 right-2 top-2 transition-opacity" type="button" tabIndex="0" aria-label="Remove Storm Wool Coat from collection">
-                      <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                    <Button className="absolute backdrop-blur-sm bg-background/90 duration-200 ease-out focus-visible:opacity-100 group-focus-within/card:opacity-100 group-hover/card:opacity-100 opacity-0 right-2 top-2 transition-opacity" type="button" tabIndex={0} aria-label="Remove Storm Wool Coat from collection">
+                      <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                         <path d="M18 6 6 18"></path>
                         <path d="m6 6 12 12"></path>
                       </svg>
@@ -254,8 +254,8 @@ export function Pattern() {
                       </span>
                     </div>
                   </div>
-                  <Button type="button" tabIndex="0" aria-label="Add Storm Wool Coat to cart">
-                    <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" data-icon="inline-start" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Add Storm Wool Coat to cart">
+                    <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" data-icon="inline-start" aria-hidden="true">
                       <path d="M16 10a4 4 0 0 1-8 0"></path>
                       <path d="M3.103 6.034h17.794"></path>
                       <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
@@ -270,8 +270,8 @@ export function Pattern() {
                     <a className="absolute block focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring inset-0 outline-none" href="#" aria-label="View Cashmere V-Neck Sweater">
                       <img className="absolute duration-500 ease-out group-hover/card:scale-105 h-full inset-0 object-cover transition-transform w-full" alt="Cashmere V-Neck Sweater in oat heather" loading="eager" fetchpriority="high" src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=600&h=750&q=80" />
                     </a>
-                    <Button className="absolute backdrop-blur-sm bg-background/90 duration-200 ease-out focus-visible:opacity-100 group-focus-within/card:opacity-100 group-hover/card:opacity-100 opacity-0 right-2 top-2 transition-opacity" type="button" tabIndex="0" aria-label="Remove Cashmere V-Neck Sweater from collection">
-                      <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                    <Button className="absolute backdrop-blur-sm bg-background/90 duration-200 ease-out focus-visible:opacity-100 group-focus-within/card:opacity-100 group-hover/card:opacity-100 opacity-0 right-2 top-2 transition-opacity" type="button" tabIndex={0} aria-label="Remove Cashmere V-Neck Sweater from collection">
+                      <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                         <path d="M18 6 6 18"></path>
                         <path d="m6 6 12 12"></path>
                       </svg>
@@ -292,8 +292,8 @@ export function Pattern() {
                       </span>
                     </div>
                   </div>
-                  <Button type="button" tabIndex="0" aria-label="Add Cashmere V-Neck Sweater to cart">
-                    <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" data-icon="inline-start" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Add Cashmere V-Neck Sweater to cart">
+                    <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" data-icon="inline-start" aria-hidden="true">
                       <path d="M16 10a4 4 0 0 1-8 0"></path>
                       <path d="M3.103 6.034h17.794"></path>
                       <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
@@ -308,8 +308,8 @@ export function Pattern() {
                     <a className="absolute block focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring inset-0 outline-none" href="#" aria-label="View Linen Field Shirt">
                       <img className="absolute duration-500 ease-out group-hover/card:scale-105 h-full inset-0 object-cover transition-transform w-full" alt="Linen Field Shirt in sand on a studio backdrop" loading="lazy" fetchpriority="auto" src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&h=750&q=80" />
                     </a>
-                    <Button className="absolute backdrop-blur-sm bg-background/90 duration-200 ease-out focus-visible:opacity-100 group-focus-within/card:opacity-100 group-hover/card:opacity-100 opacity-0 right-2 top-2 transition-opacity" type="button" tabIndex="0" aria-label="Remove Linen Field Shirt from collection">
-                      <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                    <Button className="absolute backdrop-blur-sm bg-background/90 duration-200 ease-out focus-visible:opacity-100 group-focus-within/card:opacity-100 group-hover/card:opacity-100 opacity-0 right-2 top-2 transition-opacity" type="button" tabIndex={0} aria-label="Remove Linen Field Shirt from collection">
+                      <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                         <path d="M18 6 6 18"></path>
                         <path d="m6 6 12 12"></path>
                       </svg>
@@ -336,8 +336,8 @@ export function Pattern() {
                       </span>
                     </div>
                   </div>
-                  <Button type="button" tabIndex="0" aria-label="Add Linen Field Shirt to cart">
-                    <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" data-icon="inline-start" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Add Linen Field Shirt to cart">
+                    <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" data-icon="inline-start" aria-hidden="true">
                       <path d="M16 10a4 4 0 0 1-8 0"></path>
                       <path d="M3.103 6.034h17.794"></path>
                       <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
@@ -352,8 +352,8 @@ export function Pattern() {
                     <a className="absolute block focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring inset-0 outline-none" href="#" aria-label="View Pleated Wide Trouser">
                       <img className="absolute duration-500 ease-out group-hover/card:scale-105 h-full inset-0 object-cover transition-transform w-full" alt="Pleated Wide Trouser in charcoal" loading="lazy" fetchpriority="auto" src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=600&h=750&q=80" />
                     </a>
-                    <Button className="absolute backdrop-blur-sm bg-background/90 duration-200 ease-out focus-visible:opacity-100 group-focus-within/card:opacity-100 group-hover/card:opacity-100 opacity-0 right-2 top-2 transition-opacity" type="button" tabIndex="0" aria-label="Remove Pleated Wide Trouser from collection">
-                      <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                    <Button className="absolute backdrop-blur-sm bg-background/90 duration-200 ease-out focus-visible:opacity-100 group-focus-within/card:opacity-100 group-hover/card:opacity-100 opacity-0 right-2 top-2 transition-opacity" type="button" tabIndex={0} aria-label="Remove Pleated Wide Trouser from collection">
+                      <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                         <path d="M18 6 6 18"></path>
                         <path d="m6 6 12 12"></path>
                       </svg>
@@ -374,8 +374,8 @@ export function Pattern() {
                       </span>
                     </div>
                   </div>
-                  <Button type="button" tabIndex="0" aria-label="Add Pleated Wide Trouser to cart">
-                    <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" data-icon="inline-start" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Add Pleated Wide Trouser to cart">
+                    <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" data-icon="inline-start" aria-hidden="true">
                       <path d="M16 10a4 4 0 0 1-8 0"></path>
                       <path d="M3.103 6.034h17.794"></path>
                       <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>

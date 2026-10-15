@@ -172,7 +172,6 @@ async function CategoryPage({ group, category }: { group: string; category: stri
           <SnapshotList
             items={slugs.map((slug) => ({
               id: slug,
-              href: `/replicated/blocks/${group}/${category}/${slug}`,
               src: `/replicated/blocks/${group}/${category}/${slug}?embed=1`,
               codeSrc: `/api/replicated-source/block/${group}/${category}/${slug}`,
               registryName: `@neui/${slug}`,

@@ -37,8 +37,8 @@ export function Pattern() {
                     </svg>
                   </ItemMedia>
                 </Item>
-                <Button type="button" tabIndex="0" extracted="1">
-                  <svg className="lucide lucide-external-link opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
+                <Button type="button" tabIndex={0} extracted="1">
+                  <svg className="lucide lucide-external-link opacity-60" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
                     <path d="M15 3h6v6"></path>
                     <path d="M10 14 21 3"></path>
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -50,13 +50,13 @@ export function Pattern() {
               </p>
             </FramePanel>
             <footer className="flex flex-row gap-(--frame-panel-footer-gap) items-center justify-between p-2">
-              <Button type="button" tabIndex="0" aria-pressed="true">
+              <Button type="button" tabIndex={0} aria-pressed="true">
                 {"Disconnect"}
               </Button>
-              <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_0_" aria-checked="true" size="default">
+              <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_0_" aria-checked="true" size="default">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
               </Switch>
-              <input id="base-ui-_r_1_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="base-ui-_r_1_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </footer>
           </Frame>
           <Frame>
@@ -69,8 +69,8 @@ export function Pattern() {
                     </svg>
                   </ItemMedia>
                 </Item>
-                <Button type="button" tabIndex="0">
-                  <svg className="lucide lucide-external-link opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
+                <Button type="button" tabIndex={0}>
+                  <svg className="lucide lucide-external-link opacity-60" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
                     <path d="M15 3h6v6"></path>
                     <path d="M10 14 21 3"></path>
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -82,8 +82,8 @@ export function Pattern() {
               </p>
             </FramePanel>
             <footer className="flex flex-row gap-(--frame-panel-footer-gap) items-center justify-between p-2">
-              <Button type="button" tabIndex="0" aria-pressed="false">
-                <svg className="lucide lucide-plug-zap" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlugZapIcon" tabler="IconPlugConnected" hugeicons="LinkCircle02Icon" phosphor="PlugsConnectedIcon" remixicon="RiPlug2Line" aria-hidden="true">
+              <Button type="button" tabIndex={0} aria-pressed="false">
+                <svg className="lucide lucide-plug-zap" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlugZapIcon" tabler="IconPlugConnected" hugeicons="LinkCircle02Icon" phosphor="PlugsConnectedIcon" remixicon="RiPlug2Line" aria-hidden="true">
                   <path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"></path>
                   <path d="m2 22 3-3"></path>
                   <path d="M7.5 13.5 10 11"></path>
@@ -92,10 +92,10 @@ export function Pattern() {
                 </svg>
                 {"Connect"}
               </Button>
-              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_3_" aria-checked="false" size="default">
+              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_3_" aria-checked="false" size="default">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
               </Switch>
-              <input id="base-ui-_r_4_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="base-ui-_r_4_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </footer>
           </Frame>
           <Frame>
@@ -105,23 +105,23 @@ export function Pattern() {
                   <ItemMedia className="size-auto" variant="icon">
                     <svg className="size-6" viewBox="0 0 109 113" fill="none">
                       <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint0_linear)"></path>
-                      <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity="0.2"></path>
+                      <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity={0.2}></path>
                       <path d="M45.317 2.07103C48.1765 -1.53037 53.9745 0.442937 54.0434 5.041L54.4849 72.2922H9.83113C1.64038 72.2922 -2.92775 62.8321 2.1655 56.4175L45.317 2.07103Z" fill="#3ECF8E"></path>
                       <defs>
-                        <lineargradient id="supabase-paint0_linear" x1="53.9738" y1="54.974" x2="94.1635" y2="71.8295" gradientUnits="userSpaceOnUse">
+                        <lineargradient id="supabase-paint0_linear" x1={53.9738} y1={54.974} x2={94.1635} y2={71.8295} gradientUnits="userSpaceOnUse">
                           <stop stopColor="#249361"></stop>
-                          <stop offset="1" stopColor="#3ECF8E"></stop>
+                          <stop offset={1} stopColor="#3ECF8E"></stop>
                         </lineargradient>
-                        <lineargradient id="supabase-paint1_linear" x1="36.1558" y1="30.578" x2="54.4844" y2="65.0806" gradientUnits="userSpaceOnUse">
+                        <lineargradient id="supabase-paint1_linear" x1={36.1558} y1={30.578} x2={54.4844} y2={65.0806} gradientUnits="userSpaceOnUse">
                           <stop></stop>
-                          <stop offset="1" stopOpacity="0"></stop>
+                          <stop offset={1} stopOpacity={0}></stop>
                         </lineargradient>
                       </defs>
                     </svg>
                   </ItemMedia>
                 </Item>
-                <Button type="button" tabIndex="0">
-                  <svg className="lucide lucide-external-link opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
+                <Button type="button" tabIndex={0}>
+                  <svg className="lucide lucide-external-link opacity-60" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
                     <path d="M15 3h6v6"></path>
                     <path d="M10 14 21 3"></path>
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -133,13 +133,13 @@ export function Pattern() {
               </p>
             </FramePanel>
             <footer className="flex flex-row gap-(--frame-panel-footer-gap) items-center justify-between p-2">
-              <Button type="button" tabIndex="0" aria-pressed="true">
+              <Button type="button" tabIndex={0} aria-pressed="true">
                 {"Disconnect"}
               </Button>
-              <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_6_" aria-checked="true" size="default">
+              <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_6_" aria-checked="true" size="default">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
               </Switch>
-              <input id="base-ui-_r_7_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="base-ui-_r_7_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </footer>
           </Frame>
           <Frame>
@@ -152,8 +152,8 @@ export function Pattern() {
                     </svg>
                   </ItemMedia>
                 </Item>
-                <Button type="button" tabIndex="0">
-                  <svg className="lucide lucide-external-link opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
+                <Button type="button" tabIndex={0}>
+                  <svg className="lucide lucide-external-link opacity-60" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
                     <path d="M15 3h6v6"></path>
                     <path d="M10 14 21 3"></path>
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -165,13 +165,13 @@ export function Pattern() {
               </p>
             </FramePanel>
             <footer className="flex flex-row gap-(--frame-panel-footer-gap) items-center justify-between p-2">
-              <Button type="button" tabIndex="0" aria-pressed="true">
+              <Button type="button" tabIndex={0} aria-pressed="true">
                 {"Disconnect"}
               </Button>
-              <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_9_" aria-checked="true" size="default">
+              <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_9_" aria-checked="true" size="default">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
               </Switch>
-              <input id="base-ui-_r_a_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="base-ui-_r_a_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </footer>
           </Frame>
           <Frame>
@@ -198,8 +198,8 @@ export function Pattern() {
                     </svg>
                   </ItemMedia>
                 </Item>
-                <Button type="button" tabIndex="0">
-                  <svg className="lucide lucide-external-link opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
+                <Button type="button" tabIndex={0}>
+                  <svg className="lucide lucide-external-link opacity-60" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
                     <path d="M15 3h6v6"></path>
                     <path d="M10 14 21 3"></path>
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -211,8 +211,8 @@ export function Pattern() {
               </p>
             </FramePanel>
             <footer className="flex flex-row gap-(--frame-panel-footer-gap) items-center justify-between p-2">
-              <Button type="button" tabIndex="0" aria-pressed="false">
-                <svg className="lucide lucide-plug-zap" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlugZapIcon" tabler="IconPlugConnected" hugeicons="LinkCircle02Icon" phosphor="PlugsConnectedIcon" remixicon="RiPlug2Line" aria-hidden="true">
+              <Button type="button" tabIndex={0} aria-pressed="false">
+                <svg className="lucide lucide-plug-zap" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlugZapIcon" tabler="IconPlugConnected" hugeicons="LinkCircle02Icon" phosphor="PlugsConnectedIcon" remixicon="RiPlug2Line" aria-hidden="true">
                   <path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"></path>
                   <path d="m2 22 3-3"></path>
                   <path d="M7.5 13.5 10 11"></path>
@@ -221,10 +221,10 @@ export function Pattern() {
                 </svg>
                 {"Connect"}
               </Button>
-              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_d_" aria-checked="false" size="default">
+              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_d_" aria-checked="false" size="default">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
               </Switch>
-              <input id="base-ui-_r_e_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="base-ui-_r_e_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </footer>
           </Frame>
           <Frame>
@@ -237,8 +237,8 @@ export function Pattern() {
                     </svg>
                   </ItemMedia>
                 </Item>
-                <Button type="button" tabIndex="0">
-                  <svg className="lucide lucide-external-link opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
+                <Button type="button" tabIndex={0}>
+                  <svg className="lucide lucide-external-link opacity-60" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
                     <path d="M15 3h6v6"></path>
                     <path d="M10 14 21 3"></path>
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -250,13 +250,13 @@ export function Pattern() {
               </p>
             </FramePanel>
             <footer className="flex flex-row gap-(--frame-panel-footer-gap) items-center justify-between p-2">
-              <Button type="button" tabIndex="0" aria-pressed="true">
+              <Button type="button" tabIndex={0} aria-pressed="true">
                 {"Disconnect"}
               </Button>
-              <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_g_" aria-checked="true" size="default">
+              <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_g_" aria-checked="true" size="default">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
               </Switch>
-              <input id="base-ui-_r_h_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="base-ui-_r_h_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </footer>
           </Frame>
           <Frame>
@@ -269,8 +269,8 @@ export function Pattern() {
                     </svg>
                   </ItemMedia>
                 </Item>
-                <Button type="button" tabIndex="0">
-                  <svg className="lucide lucide-external-link opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
+                <Button type="button" tabIndex={0}>
+                  <svg className="lucide lucide-external-link opacity-60" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
                     <path d="M15 3h6v6"></path>
                     <path d="M10 14 21 3"></path>
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -282,8 +282,8 @@ export function Pattern() {
               </p>
             </FramePanel>
             <footer className="flex flex-row gap-(--frame-panel-footer-gap) items-center justify-between p-2">
-              <Button type="button" tabIndex="0" aria-pressed="false">
-                <svg className="lucide lucide-plug-zap" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlugZapIcon" tabler="IconPlugConnected" hugeicons="LinkCircle02Icon" phosphor="PlugsConnectedIcon" remixicon="RiPlug2Line" aria-hidden="true">
+              <Button type="button" tabIndex={0} aria-pressed="false">
+                <svg className="lucide lucide-plug-zap" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlugZapIcon" tabler="IconPlugConnected" hugeicons="LinkCircle02Icon" phosphor="PlugsConnectedIcon" remixicon="RiPlug2Line" aria-hidden="true">
                   <path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"></path>
                   <path d="m2 22 3-3"></path>
                   <path d="M7.5 13.5 10 11"></path>
@@ -292,10 +292,10 @@ export function Pattern() {
                 </svg>
                 {"Connect"}
               </Button>
-              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_j_" aria-checked="false" size="default">
+              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_j_" aria-checked="false" size="default">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
               </Switch>
-              <input id="base-ui-_r_k_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="base-ui-_r_k_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </footer>
           </Frame>
           <Frame>
@@ -304,18 +304,18 @@ export function Pattern() {
                 <Item className="bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-11" variant="default" size="default">
                   <ItemMedia className="size-auto" variant="icon">
                     <svg className="size-6" viewBox="0 0 296 298" fill="none">
-                      <mask id="gemini-a" width="296" height="298" x="0" y="0" maskUnits="userSpaceOnUse" style={{maskType: "alpha"}}>
+                      <mask id="gemini-a" width={296} height={298} x={0} y={0} maskUnits="userSpaceOnUse" style={{maskType: "alpha"}}>
                         <path fill="#3186FF" d="M141.201 4.886c2.282-6.17 11.042-6.071 13.184.148l5.985 17.37a184.004 184.004 0 0 0 111.257 113.049l19.304 6.997c6.143 2.227 6.156 10.91.02 13.155l-19.35 7.082a184.001 184.001 0 0 0-109.495 109.385l-7.573 20.629c-2.241 6.105-10.869 6.121-13.133.025l-7.908-21.296a184 184 0 0 0-109.02-108.658l-19.698-7.239c-6.102-2.243-6.118-10.867-.025-13.132l20.083-7.467A183.998 183.998 0 0 0 133.291 26.28l7.91-21.394Z"></path>
                       </mask>
                       <g mask="url(#gemini-a)">
                         <g filter="url(#gemini-b)">
-                          <ellipse cx="163" cy="149" fill="#3689FF" rx="196" ry="159"></ellipse>
+                          <ellipse cx={163} cy={149} fill="#3689FF" rx={196} ry={159}></ellipse>
                         </g>
                         <g filter="url(#gemini-c)">
-                          <ellipse cx="33.5" cy="142.5" fill="#F6C013" rx="68.5" ry="72.5"></ellipse>
+                          <ellipse cx={33.5} cy={142.5} fill="#F6C013" rx={68.5} ry={72.5}></ellipse>
                         </g>
                         <g filter="url(#gemini-d)">
-                          <ellipse cx="19.5" cy="148.5" fill="#F6C013" rx="68.5" ry="72.5"></ellipse>
+                          <ellipse cx={19.5} cy={148.5} fill="#F6C013" rx={68.5} ry={72.5}></ellipse>
                         </g>
                         <g filter="url(#gemini-e)">
                           <path fill="#FA4340" d="M194 10.5C172 82.5 65.5 134.333 22.5 135L144-66l50 76.5Z"></path>
@@ -331,37 +331,37 @@ export function Pattern() {
                         </g>
                       </g>
                       <defs>
-                        <filter id="gemini-b" width="464" height="390" x="-69" y="-46" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                        <filter id="gemini-b" width={464} height={390} x={-69} y={-46} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                           <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                           <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                           <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="18"></fegaussianblur>
                         </filter>
-                        <filter id="gemini-c" width="265" height="273" x="-99" y="6" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                        <filter id="gemini-c" width={265} height={273} x={-99} y={6} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                           <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                           <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                           <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="32"></fegaussianblur>
                         </filter>
-                        <filter id="gemini-d" width="265" height="273" x="-113" y="12" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                        <filter id="gemini-d" width={265} height={273} x={-113} y={12} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                           <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                           <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                           <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="32"></fegaussianblur>
                         </filter>
-                        <filter id="gemini-e" width="299.5" height="329" x="-41.5" y="-130" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                        <filter id="gemini-e" width={299.5} height={329} x={-41.5} y={-130} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                           <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                           <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                           <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="32"></fegaussianblur>
                         </filter>
-                        <filter id="gemini-f" width="299.5" height="329" x="-45" y="-153" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                        <filter id="gemini-f" width={299.5} height={329} x={-45} y={-153} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                           <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                           <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                           <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="32"></fegaussianblur>
                         </filter>
-                        <filter id="gemini-g" width="299.5" height="329" x="-41" y="91" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                        <filter id="gemini-g" width={299.5} height={329} x={-41} y={91} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                           <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                           <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                           <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="32"></fegaussianblur>
                         </filter>
-                        <filter id="gemini-h" width="299.5" height="329" x="-39" y="132" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                        <filter id="gemini-h" width={299.5} height={329} x={-39} y={132} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                           <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                           <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                           <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="32"></fegaussianblur>
@@ -370,8 +370,8 @@ export function Pattern() {
                     </svg>
                   </ItemMedia>
                 </Item>
-                <Button type="button" tabIndex="0">
-                  <svg className="lucide lucide-external-link opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
+                <Button type="button" tabIndex={0}>
+                  <svg className="lucide lucide-external-link opacity-60" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
                     <path d="M15 3h6v6"></path>
                     <path d="M10 14 21 3"></path>
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -383,8 +383,8 @@ export function Pattern() {
               </p>
             </FramePanel>
             <footer className="flex flex-row gap-(--frame-panel-footer-gap) items-center justify-between p-2">
-              <Button type="button" tabIndex="0" aria-pressed="false">
-                <svg className="lucide lucide-plug-zap" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlugZapIcon" tabler="IconPlugConnected" hugeicons="LinkCircle02Icon" phosphor="PlugsConnectedIcon" remixicon="RiPlug2Line" aria-hidden="true">
+              <Button type="button" tabIndex={0} aria-pressed="false">
+                <svg className="lucide lucide-plug-zap" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlugZapIcon" tabler="IconPlugConnected" hugeicons="LinkCircle02Icon" phosphor="PlugsConnectedIcon" remixicon="RiPlug2Line" aria-hidden="true">
                   <path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"></path>
                   <path d="m2 22 3-3"></path>
                   <path d="M7.5 13.5 10 11"></path>
@@ -393,10 +393,10 @@ export function Pattern() {
                 </svg>
                 {"Connect"}
               </Button>
-              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_m_" aria-checked="false" size="default">
+              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_m_" aria-checked="false" size="default">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
               </Switch>
-              <input id="base-ui-_r_n_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="base-ui-_r_n_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </footer>
           </Frame>
           <Frame>
@@ -409,8 +409,8 @@ export function Pattern() {
                     </svg>
                   </ItemMedia>
                 </Item>
-                <Button type="button" tabIndex="0">
-                  <svg className="lucide lucide-external-link opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
+                <Button type="button" tabIndex={0}>
+                  <svg className="lucide lucide-external-link opacity-60" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
                     <path d="M15 3h6v6"></path>
                     <path d="M10 14 21 3"></path>
                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -422,8 +422,8 @@ export function Pattern() {
               </p>
             </FramePanel>
             <footer className="flex flex-row gap-(--frame-panel-footer-gap) items-center justify-between p-2">
-              <Button type="button" tabIndex="0" aria-pressed="false">
-                <svg className="lucide lucide-plug-zap" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlugZapIcon" tabler="IconPlugConnected" hugeicons="LinkCircle02Icon" phosphor="PlugsConnectedIcon" remixicon="RiPlug2Line" aria-hidden="true">
+              <Button type="button" tabIndex={0} aria-pressed="false">
+                <svg className="lucide lucide-plug-zap" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlugZapIcon" tabler="IconPlugConnected" hugeicons="LinkCircle02Icon" phosphor="PlugsConnectedIcon" remixicon="RiPlug2Line" aria-hidden="true">
                   <path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"></path>
                   <path d="m2 22 3-3"></path>
                   <path d="M7.5 13.5 10 11"></path>
@@ -432,10 +432,10 @@ export function Pattern() {
                 </svg>
                 {"Connect"}
               </Button>
-              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_p_" aria-checked="false" size="default">
+              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_p_" aria-checked="false" size="default">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
               </Switch>
-              <input id="base-ui-_r_q_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="base-ui-_r_q_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </footer>
           </Frame>
         </div>

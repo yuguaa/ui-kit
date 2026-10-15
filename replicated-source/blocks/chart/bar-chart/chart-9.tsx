@@ -34,49 +34,49 @@ export function Pattern() {
           <div className="flex flex-wrap gap-2 items-center">
             <ButtonGroup role="group" aria-label="Data scope">
               <DropdownMenu>
-              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Year range: All Years, 2021 to 2026" aria-haspopup="menu" id="base-ui-_r_3_" aria-expanded="false" extracted="1">
-                <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
+              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Year range: All Years, 2021 to 2026" aria-haspopup="menu" id="base-ui-_r_3_" aria-expanded="false" extracted="1">
+                <svg className="lucide lucide-calendar" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
                   <path d="M8 2v4"></path>
                   <path d="M16 2v4"></path>
-                  <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                  <rect width={18} height={18} x={3} y={4} rx={2}></rect>
                   <path d="M3 10h18"></path>
                 </svg>
                 {"All Years"}
-                <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                 </svg>
               </DropdownMenuTrigger>
               </DropdownMenu>
               <DropdownMenu>
-              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Fund shown: All funds" aria-haspopup="menu" id="base-ui-_r_8_" aria-expanded="false">
+              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Fund shown: All funds" aria-haspopup="menu" id="base-ui-_r_8_" aria-expanded="false">
                 <span className="flex items-center justify-center size-4">
                   <span className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--primary)"}}></span>
                 </span>
                 {"All Funds"}
-                <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                 </svg>
               </DropdownMenuTrigger>
               </DropdownMenu>
             </ButtonGroup>
             <DropdownMenu>
-            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_d_" aria-expanded="false">
-              <svg className="lucide lucide-settings-2 lucide-settings2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Settings2Icon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
+            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_d_" aria-expanded="false">
+              <svg className="lucide lucide-settings-2 lucide-settings2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Settings2Icon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
                 <path d="M14 17H5"></path>
                 <path d="M19 7h-9"></path>
-                <circle cx="17" cy="17" r="3"></circle>
-                <circle cx="7" cy="7" r="3"></circle>
+                <circle cx={17} cy={17} r={3}></circle>
+                <circle cx={7} cy={7} r={3}></circle>
               </svg>
               {"Display"}
-              <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+              <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
               </svg>
             </DropdownMenuTrigger>
             </DropdownMenu>
             <ButtonGroup role="group" aria-label="Chart actions">
               <Tooltip>
-              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Refresh inflows" aria-busy="false" id="base-ui-_r_g_" baseUiTooltipTrigger="">
-                <svg className="lucide lucide-refresh-cw" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RefreshCwIcon" tabler="IconRefresh" hugeicons="RefreshIcon" phosphor="ArrowsClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
+              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Refresh inflows" aria-busy="false" id="base-ui-_r_g_" baseUiTooltipTrigger="">
+                <svg className="lucide lucide-refresh-cw" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="RefreshCwIcon" tabler="IconRefresh" hugeicons="RefreshIcon" phosphor="ArrowsClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
                   <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
                   <path d="M21 3v5h-5"></path>
                   <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
@@ -85,11 +85,11 @@ export function Pattern() {
               </TooltipTrigger>
               </Tooltip>
               <Tooltip>
-              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="More actions" aria-haspopup="menu" id="base-ui-_r_l_" baseUiTooltipTrigger="" aria-expanded="false">
-                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                  <circle cx="12" cy="12" r="1"></circle>
-                  <circle cx="19" cy="12" r="1"></circle>
-                  <circle cx="5" cy="12" r="1"></circle>
+              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="More actions" aria-haspopup="menu" id="base-ui-_r_l_" baseUiTooltipTrigger="" aria-expanded="false">
+                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                  <circle cx={12} cy={12} r={1}></circle>
+                  <circle cx={19} cy={12} r={1}></circle>
+                  <circle cx={5} cy={12} r={1}></circle>
                 </svg>
               </TooltipTrigger>
               </Tooltip>
@@ -108,7 +108,7 @@ export function Pattern() {
                 </span>
                 <span className="flex gap-1.5 h-6 items-center min-w-0 text-muted-foreground text-xs">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
+                    <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                       <path d="M16 7h6v6"></path>
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
@@ -153,7 +153,7 @@ export function Pattern() {
                 </span>
                 <span className="flex gap-1.5 h-6 items-center min-w-0 text-muted-foreground text-xs">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
+                    <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                       <path d="M16 7h6v6"></path>
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
@@ -220,7 +220,7 @@ export function Pattern() {
                   <div className="-skew-y-45 absolute bg-input inset-y-0 left-full origin-bottom-left w-(--depth)"></div>
                 </div>
                 <div className="@lg:gap-4 flex gap-2 h-full min-w-0 relative" role="radiogroup" aria-label="Inflows by year">
-                  <button className="cursor-pointer flex flex-1 flex-col focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-ring/50 group/year h-full items-center min-w-0 outline-none pt-10" id="_r_o_-2021" type="button" role="radio" aria-checked="false" aria-label="2021: $7.6M, first year on record" tabIndex="-1">
+                  <button className="cursor-pointer flex flex-1 flex-col focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-ring/50 group/year h-full items-center min-w-0 outline-none pt-10" id="_r_o_-2021" type="button" role="radio" aria-checked="false" aria-label="2021: $7.6M, first year on record" tabIndex={-1}>
                     <span className="flex-1 max-w-[calc(var(--prism-w)+var(--depth))] pr-(--depth) relative w-full">
                       <span className="block duration-200 h-full motion-reduce:transition-none opacity-45 relative transition-opacity">
                         <span className="absolute inset-0 pointer-events-none" aria-hidden="true">
@@ -254,7 +254,7 @@ export function Pattern() {
                       </span>
                     </span>
                   </button>
-                  <button className="cursor-pointer flex flex-1 flex-col focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-ring/50 group/year h-full items-center min-w-0 outline-none pt-10" id="_r_o_-2022" type="button" role="radio" aria-checked="false" aria-label="2022: $6.7M, down 11.9% on 2021" tabIndex="-1">
+                  <button className="cursor-pointer flex flex-1 flex-col focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-ring/50 group/year h-full items-center min-w-0 outline-none pt-10" id="_r_o_-2022" type="button" role="radio" aria-checked="false" aria-label="2022: $6.7M, down 11.9% on 2021" tabIndex={-1}>
                     <span className="flex-1 max-w-[calc(var(--prism-w)+var(--depth))] pr-(--depth) relative w-full">
                       <span className="block duration-200 h-full motion-reduce:transition-none opacity-45 relative transition-opacity">
                         <span className="absolute inset-0 pointer-events-none" aria-hidden="true">
@@ -288,7 +288,7 @@ export function Pattern() {
                       </span>
                     </span>
                   </button>
-                  <button className="cursor-pointer flex flex-1 flex-col focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-ring/50 group/year h-full items-center min-w-0 outline-none pt-10" id="_r_o_-2023" type="button" role="radio" aria-checked="false" aria-label="2023: $9.1M, up 35.8% on 2022" tabIndex="-1">
+                  <button className="cursor-pointer flex flex-1 flex-col focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-ring/50 group/year h-full items-center min-w-0 outline-none pt-10" id="_r_o_-2023" type="button" role="radio" aria-checked="false" aria-label="2023: $9.1M, up 35.8% on 2022" tabIndex={-1}>
                     <span className="flex-1 max-w-[calc(var(--prism-w)+var(--depth))] pr-(--depth) relative w-full">
                       <span className="block duration-200 h-full motion-reduce:transition-none opacity-45 relative transition-opacity">
                         <span className="absolute inset-0 pointer-events-none" aria-hidden="true">
@@ -322,7 +322,7 @@ export function Pattern() {
                       </span>
                     </span>
                   </button>
-                  <button className="cursor-pointer flex flex-1 flex-col focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-ring/50 group/year h-full items-center min-w-0 outline-none pt-10" id="_r_o_-2024" type="button" role="radio" aria-checked="false" aria-label="2024: $11.7M, up 29.0% on 2023" tabIndex="-1">
+                  <button className="cursor-pointer flex flex-1 flex-col focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-ring/50 group/year h-full items-center min-w-0 outline-none pt-10" id="_r_o_-2024" type="button" role="radio" aria-checked="false" aria-label="2024: $11.7M, up 29.0% on 2023" tabIndex={-1}>
                     <span className="flex-1 max-w-[calc(var(--prism-w)+var(--depth))] pr-(--depth) relative w-full">
                       <span className="block duration-200 h-full motion-reduce:transition-none opacity-45 relative transition-opacity">
                         <span className="absolute inset-0 pointer-events-none" aria-hidden="true">
@@ -356,7 +356,7 @@ export function Pattern() {
                       </span>
                     </span>
                   </button>
-                  <button className="cursor-pointer flex flex-1 flex-col focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-ring/50 group/year h-full items-center min-w-0 outline-none pt-10" id="_r_o_-2025" type="button" role="radio" aria-checked="true" aria-label="2025: $14.3M, up 22.1% on 2024" tabIndex="0">
+                  <button className="cursor-pointer flex flex-1 flex-col focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-ring/50 group/year h-full items-center min-w-0 outline-none pt-10" id="_r_o_-2025" type="button" role="radio" aria-checked="true" aria-label="2025: $14.3M, up 22.1% on 2024" tabIndex={0}>
                     <span className="flex-1 max-w-[calc(var(--prism-w)+var(--depth))] pr-(--depth) relative w-full">
                       <span className="block duration-200 h-full motion-reduce:transition-none opacity-100 relative transition-opacity">
                         <span className="absolute inset-0 pointer-events-none" aria-hidden="true">
@@ -390,7 +390,7 @@ export function Pattern() {
                       </span>
                     </span>
                   </button>
-                  <button className="cursor-pointer flex flex-1 flex-col focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-ring/50 group/year h-full items-center min-w-0 outline-none pt-10" id="_r_o_-2026" type="button" role="radio" aria-checked="false" aria-label="2026 to date: $11.9M, run-rate $15.9M, up 10.7% on 2025" tabIndex="-1">
+                  <button className="cursor-pointer flex flex-1 flex-col focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-ring/50 group/year h-full items-center min-w-0 outline-none pt-10" id="_r_o_-2026" type="button" role="radio" aria-checked="false" aria-label="2026 to date: $11.9M, run-rate $15.9M, up 10.7% on 2025" tabIndex={-1}>
                     <span className="flex-1 max-w-[calc(var(--prism-w)+var(--depth))] pr-(--depth) relative w-full">
                       <span className="block duration-200 h-full motion-reduce:transition-none opacity-45 relative transition-opacity">
                         <span className="absolute inset-0 pointer-events-none" aria-hidden="true">
@@ -444,27 +444,27 @@ export function Pattern() {
             </div>
             <div className="@3xl:flex @3xl:justify-center grid justify-items-center min-w-0 ps-11">
               <ToggleGroup className="@3xl:flex @3xl:flex-wrap @3xl:justify-center grid grid-cols-2" data-orientation="horizontal" aria-orientation="horizontal" role="group" size="sm" spacing="1" aria-label="Isolate a fund" style={{"--gap": "1"}}>
-                <ToggleGroupItem className="@3xl:justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-start outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="0" aria-pressed="false" variant="default" size="sm" spacing="1">
+                <ToggleGroupItem className="@3xl:justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-start outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex={0} aria-pressed="false" variant="default" size="sm" spacing="1">
                   <span className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-teal-500)"}}></span>
                   {"WaveMark Capital"}
                 </ToggleGroupItem>
-                <ToggleGroupItem className="@3xl:justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-start outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="sm" spacing="1">
+                <ToggleGroupItem className="@3xl:justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-start outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="default" size="sm" spacing="1">
                   <span className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-amber-400)"}}></span>
                   {"Envato Finances"}
                 </ToggleGroupItem>
-                <ToggleGroupItem className="@3xl:justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-start outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="sm" spacing="1">
+                <ToggleGroupItem className="@3xl:justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-start outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="default" size="sm" spacing="1">
                   <span className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-violet-500)"}}></span>
                   {"QBridge Tech"}
                 </ToggleGroupItem>
-                <ToggleGroupItem className="@3xl:justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-start outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="sm" spacing="1">
+                <ToggleGroupItem className="@3xl:justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-start outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="default" size="sm" spacing="1">
                   <span className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-sky-500)"}}></span>
                   {"Neon Liquidity"}
                 </ToggleGroupItem>
-                <ToggleGroupItem className="@3xl:justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-start outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="sm" spacing="1">
+                <ToggleGroupItem className="@3xl:justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-start outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="default" size="sm" spacing="1">
                   <span className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-rose-400)"}}></span>
                   {"Stripe Treasury"}
                 </ToggleGroupItem>
-                <ToggleGroupItem className="@3xl:justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-start outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="sm" spacing="1">
+                <ToggleGroupItem className="@3xl:justify-center [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-start outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="default" size="sm" spacing="1">
                   <span className="rounded-full shrink-0 size-2" aria-hidden="true" style={{backgroundColor: "var(--color-slate-400)"}}></span>
                   {"ETH Reserve Pool"}
                 </ToggleGroupItem>

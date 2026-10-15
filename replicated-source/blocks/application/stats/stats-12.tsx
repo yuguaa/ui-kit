@@ -15,7 +15,7 @@ export function Pattern() {
             <FramePanel className="flex flex-col gap-6 items-start">
               <Item className="[&_svg]:size-5 bg-muted border-2 border-background dark:border dark:text-blue-400 p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10.5 text-blue-600" variant="default" size="default">
                 <ItemMedia className="size-auto" variant="icon">
-                  <svg className="lucide lucide-headphones" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Headphones" tabler="IconHeadphones" hugeicons="CustomerSupportIcon" phosphor="HeadphonesIcon" remixicon="RiCustomerService2Line" aria-hidden="true">
+                  <svg className="lucide lucide-headphones" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Headphones" tabler="IconHeadphones" hugeicons="CustomerSupportIcon" phosphor="HeadphonesIcon" remixicon="RiCustomerService2Line" aria-hidden="true">
                     <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
                   </svg>
                 </ItemMedia>
@@ -37,8 +37,8 @@ export function Pattern() {
             <FramePanel className="flex flex-col gap-6 items-start">
               <Item className="[&_svg]:size-5 bg-muted border-2 border-background dark:border dark:text-emerald-400 p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10.5 text-emerald-600" variant="default" size="default">
                 <ItemMedia className="size-auto" variant="icon">
-                  <svg className="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
+                  <svg className="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
+                    <circle cx={12} cy={12} r={10}></circle>
                     <path d="m9 12 2 2 4-4"></path>
                   </svg>
                 </ItemMedia>
@@ -60,11 +60,11 @@ export function Pattern() {
             <FramePanel className="flex flex-col gap-6 items-start">
               <Item className="[&_svg]:size-5 bg-muted border-2 border-background dark:border dark:text-amber-400 p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10.5 text-amber-600" variant="default" size="default">
                 <ItemMedia className="size-auto" variant="icon">
-                  <svg className="lucide lucide-smile" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SmileIcon" tabler="IconMoodSmile" hugeicons="SmileIcon" phosphor="SmileyIcon" remixicon="RiEmotionHappyLine" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
+                  <svg className="lucide lucide-smile" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SmileIcon" tabler="IconMoodSmile" hugeicons="SmileIcon" phosphor="SmileyIcon" remixicon="RiEmotionHappyLine" aria-hidden="true">
+                    <circle cx={12} cy={12} r={10}></circle>
                     <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
-                    <line x1="9" x2="9.01" y1="9" y2="9"></line>
-                    <line x1="15" x2="15.01" y1="9" y2="9"></line>
+                    <line x1={9} x2={9.01} y1={9} y2={9}></line>
+                    <line x1={15} x2={15.01} y1={9} y2={9}></line>
                   </svg>
                 </ItemMedia>
               </Item>

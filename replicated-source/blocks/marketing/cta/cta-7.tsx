@@ -51,17 +51,17 @@ export function Pattern() {
               {"Turn your ideas into polished digital products with a team that shapes the strategy, refines the experience, and launches with confidence. From early concepts to production ready execution, we build work that stays clear, useful, and ready to grow."}
             </p>
             <div className="flex flex-wrap gap-x-4 gap-y-2 items-center">
-              <Button href="#" role="button" tabIndex="0">
-                <svg className="lucide lucide-calendar size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" data-icon="inline-start" aria-hidden="true">
+              <Button href="#" role="button" tabIndex={0}>
+                <svg className="lucide lucide-calendar size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M8 2v4"></path>
                   <path d="M16 2v4"></path>
-                  <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                  <rect width={18} height={18} x={3} y={4} rx={2}></rect>
                   <path d="M3 10h18"></path>
                 </svg>
                 {"Book a Call"}
               </Button>
-              <Button href="#" role="button" tabIndex="0">
-                <svg className="lucide lucide-message-square size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareIcon" tabler="IconMessageDots" hugeicons="Message02Icon" phosphor="ChatIcon" remixicon="RiChat4Line" data-icon="inline-start" aria-hidden="true">
+              <Button href="#" role="button" tabIndex={0}>
+                <svg className="lucide lucide-message-square size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareIcon" tabler="IconMessageDots" hugeicons="Message02Icon" phosphor="ChatIcon" remixicon="RiChat4Line" data-icon="inline-start" aria-hidden="true">
                   <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                 </svg>
                 {"Contact Us"}
@@ -100,16 +100,16 @@ export function Pattern() {
                         <path d="M485.645 66.7608C486.243 72.3621 491.339 81.9642 506.124 81.9642C519.012 81.9642 525.205 73.7624 525.205 65.7607C525.205 58.559 520.311 52.6577 510.62 50.6571L503.626 49.1569C500.929 48.6568 499.132 47.1565 499.132 44.7559C499.132 41.9552 501.928 39.8549 505.425 39.8549C511.021 39.8549 513.118 43.5556 513.519 46.4564L524.607 43.9558C524.007 38.6546 519.312 29.7527 505.326 29.7527C494.735 29.7527 486.944 37.0543 486.944 45.8561C486.944 52.7576 491.238 58.4591 500.73 60.5594L507.224 62.0598C511.021 62.8599 512.519 64.6605 512.519 66.8609C512.519 69.4615 510.421 71.762 506.025 71.762C500.23 71.762 497.334 68.1611 497.034 64.2602L485.645 66.7608Z" fill="#1F1F1F"></path>
                         <path d="M545.385 50.2571C545.685 45.7562 549.482 40.5549 556.375 40.5549C563.967 40.5549 567.165 45.3561 567.365 50.2571H545.385ZM568.664 63.0601C567.065 67.4609 563.668 70.5617 557.474 70.5617C550.88 70.5617 545.385 65.8606 545.087 59.3593H580.252C580.252 59.159 580.451 57.1587 580.451 55.2582C580.451 39.4547 571.361 29.7527 556.175 29.7527C543.588 29.7527 531.998 39.9548 531.998 55.6584C531.998 72.262 543.886 81.9642 557.374 81.9642C569.462 81.9642 577.255 74.8626 579.753 66.3607L568.664 63.0601Z" fill="#1F1F1F"></path>
                         <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-light-paint0)"></path>
-                        <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-light-paint1)" fillOpacity="0.2"></path>
+                        <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-light-paint1)" fillOpacity={0.2}></path>
                         <path d="M45.317 2.07103C48.1765 -1.53037 53.9745 0.442937 54.0434 5.041L54.4849 72.2922H9.83113C1.64038 72.2922 -2.92775 62.8321 2.1655 56.4175L45.317 2.07103Z" fill="#3ECF8E"></path>
                         <defs>
-                          <lineargradient id="supabase-light-paint0" x1="53.9738" y1="54.974" x2="94.1635" y2="71.8295" gradientUnits="userSpaceOnUse">
+                          <lineargradient id="supabase-light-paint0" x1={53.9738} y1={54.974} x2={94.1635} y2={71.8295} gradientUnits="userSpaceOnUse">
                             <stop stopColor="#249361"></stop>
-                            <stop offset="1" stopColor="#3ECF8E"></stop>
+                            <stop offset={1} stopColor="#3ECF8E"></stop>
                           </lineargradient>
-                          <lineargradient id="supabase-light-paint1" x1="36.1558" y1="30.578" x2="54.4844" y2="65.0806" gradientUnits="userSpaceOnUse">
+                          <lineargradient id="supabase-light-paint1" x1={36.1558} y1={30.578} x2={54.4844} y2={65.0806} gradientUnits="userSpaceOnUse">
                             <stop></stop>
-                            <stop offset="1" stopOpacity="0"></stop>
+                            <stop offset={1} stopOpacity={0}></stop>
                           </lineargradient>
                         </defs>
                       </svg>
@@ -179,16 +179,16 @@ export function Pattern() {
                         <path d="M485.645 66.7608C486.243 72.3621 491.339 81.9642 506.124 81.9642C519.012 81.9642 525.205 73.7624 525.205 65.7607C525.205 58.559 520.311 52.6577 510.62 50.6571L503.626 49.1569C500.929 48.6568 499.132 47.1565 499.132 44.7559C499.132 41.9552 501.928 39.8549 505.425 39.8549C511.021 39.8549 513.118 43.5556 513.519 46.4564L524.607 43.9558C524.007 38.6546 519.312 29.7527 505.326 29.7527C494.735 29.7527 486.944 37.0543 486.944 45.8561C486.944 52.7576 491.238 58.4591 500.73 60.5594L507.224 62.0598C511.021 62.8599 512.519 64.6605 512.519 66.8609C512.519 69.4615 510.421 71.762 506.025 71.762C500.23 71.762 497.334 68.1611 497.034 64.2602L485.645 66.7608Z" fill="#1F1F1F"></path>
                         <path d="M545.385 50.2571C545.685 45.7562 549.482 40.5549 556.375 40.5549C563.967 40.5549 567.165 45.3561 567.365 50.2571H545.385ZM568.664 63.0601C567.065 67.4609 563.668 70.5617 557.474 70.5617C550.88 70.5617 545.385 65.8606 545.087 59.3593H580.252C580.252 59.159 580.451 57.1587 580.451 55.2582C580.451 39.4547 571.361 29.7527 556.175 29.7527C543.588 29.7527 531.998 39.9548 531.998 55.6584C531.998 72.262 543.886 81.9642 557.374 81.9642C569.462 81.9642 577.255 74.8626 579.753 66.3607L568.664 63.0601Z" fill="#1F1F1F"></path>
                         <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-light-paint0)"></path>
-                        <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-light-paint1)" fillOpacity="0.2"></path>
+                        <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-light-paint1)" fillOpacity={0.2}></path>
                         <path d="M45.317 2.07103C48.1765 -1.53037 53.9745 0.442937 54.0434 5.041L54.4849 72.2922H9.83113C1.64038 72.2922 -2.92775 62.8321 2.1655 56.4175L45.317 2.07103Z" fill="#3ECF8E"></path>
                         <defs>
-                          <lineargradient id="supabase-light-paint0" x1="53.9738" y1="54.974" x2="94.1635" y2="71.8295" gradientUnits="userSpaceOnUse">
+                          <lineargradient id="supabase-light-paint0" x1={53.9738} y1={54.974} x2={94.1635} y2={71.8295} gradientUnits="userSpaceOnUse">
                             <stop stopColor="#249361"></stop>
-                            <stop offset="1" stopColor="#3ECF8E"></stop>
+                            <stop offset={1} stopColor="#3ECF8E"></stop>
                           </lineargradient>
-                          <lineargradient id="supabase-light-paint1" x1="36.1558" y1="30.578" x2="54.4844" y2="65.0806" gradientUnits="userSpaceOnUse">
+                          <lineargradient id="supabase-light-paint1" x1={36.1558} y1={30.578} x2={54.4844} y2={65.0806} gradientUnits="userSpaceOnUse">
                             <stop></stop>
-                            <stop offset="1" stopOpacity="0"></stop>
+                            <stop offset={1} stopOpacity={0}></stop>
                           </lineargradient>
                         </defs>
                       </svg>
@@ -248,7 +248,7 @@ export function Pattern() {
                         <style dangerouslySetInnerHTML={{ __html: "\n/* Each loop settles early then holds, so the shot reads as a console that just\n   refreshed rather than a banner mid-cycle. */\n@keyframes cta7-grow {\n  0% { transform: scaleY(0.34) }\n  38%, 100% { transform: scaleY(1) }\n}\n@keyframes cta7-rise {\n  0% { opacity: 0.45; transform: translateY(3px) }\n  14%, 100% { opacity: 1; transform: translateY(0) }\n}\n@keyframes cta7-fill {\n  0% { scale: 0.12 1 }\n  40%, 100% { scale: 1 1 }\n}\n@keyframes cta7-live {\n  0%, 100% { opacity: 0 }\n  26%, 58% { opacity: 0.07 }\n}\n@keyframes cta7-scan {\n  0% { opacity: 0; transform: translateX(0) }\n  12%, 72% { opacity: 1 }\n  100% { opacity: 0; transform: translateX(351px) }\n}\n@keyframes cta7-blink {\n  0%, 100% { opacity: 1 }\n  50% { opacity: 0.45 }\n}\n\n/* Set `--cta7-delay` per element to stagger siblings; keep it a custom property,\n   because an inline `animation` shorthand would outrank the reduced-motion rule. */\n.cta7-grow,\n.cta7-rise,\n.cta7-track [data-slot=\"progress-indicator\"] {\n  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);\n  animation-iteration-count: infinite;\n  animation-fill-mode: both;\n  animation-delay: var(--cta7-delay, 0s);\n}\n\n.cta7-grow { animation-name: cta7-grow; animation-duration: 11.3s; }\n.cta7-rise { animation-name: cta7-rise; animation-duration: 13.7s; }\n\n/* The primitive owns the indicator node, so the fill is reached through its\n   data-slot instead of a class on the element itself. It animates `scale`, not\n   `transform`: the Radix indicator sets its value as an inline translate, which\n   a transform keyframe would replace, filling every bar to 100%. */\n.cta7-track [data-slot=\"progress-indicator\"] {\n  transform-origin: left center;\n  animation-name: cta7-fill;\n  animation-duration: 10.1s;\n}\n\n.cta7-blink {\n  animation: cta7-blink 3.7s ease-in-out var(--cta7-delay, 0s) infinite;\n}\n\n.cta7-scan {\n  opacity: 0;\n  animation: cta7-scan 15.5s linear var(--cta7-delay, -5.5s) infinite;\n}\n\n.cta7-live > td { position: relative; }\n.cta7-live > td::after {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  pointer-events: none;\n  opacity: 0;\n  background: var(--color-sky-500);\n  /* Custom properties inherit into pseudo-elements, which is the only way to\n     stagger a highlight that has no element of its own. */\n  animation: cta7-live 9.7s ease-in-out var(--cta7-delay, 0s) infinite;\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .cta7-grow,\n  .cta7-rise,\n  .cta7-blink,\n  .cta7-scan,\n  .cta7-track [data-slot=\"progress-indicator\"],\n  .cta7-live > td::after {\n    animation: none;\n  }\n  .cta7-scan,\n  .cta7-live > td::after {\n    opacity: 0;\n  }\n}\n" }} />
                         <div className="border-b border-slate-200 dark:border-slate-800 flex gap-2 h-10 items-center px-2.5 shrink-0">
                           <IconTile className="[--icon-tile-icon-size:--spacing(4)]! [--icon-tile-size:--spacing(7)]! bg-slate-900 dark:bg-slate-100 dark:text-slate-900 text-white" variant="solid" size="xs">
-                            <svg className="lucide lucide-layers" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayersIcon" tabler="IconStack2" hugeicons="Layers01Icon" phosphor="StackIcon" remixicon="RiStackLine" aria-hidden="true">
+                            <svg className="lucide lucide-layers" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LayersIcon" tabler="IconStack2" hugeicons="Layers01Icon" phosphor="StackIcon" remixicon="RiStackLine" aria-hidden="true">
                               <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path>
                               <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
                               <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
@@ -259,7 +259,7 @@ export function Pattern() {
                             <span className="truncate">
                               {"Acme Inc"}
                             </span>
-                            <svg className="dark:text-slate-500 lucide lucide-chevrons-up-down shrink-0 size-3 text-slate-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                            <svg className="dark:text-slate-500 lucide lucide-chevrons-up-down shrink-0 size-3 text-slate-400" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                               <path d="m7 15 5 5 5-5"></path>
                               <path d="m7 9 5-5 5 5"></path>
                             </svg>
@@ -275,13 +275,13 @@ export function Pattern() {
                             <span className="truncate">
                               {"Production"}
                             </span>
-                            <svg className="dark:text-slate-500 lucide lucide-chevrons-up-down shrink-0 size-3 text-slate-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                            <svg className="dark:text-slate-500 lucide lucide-chevrons-up-down shrink-0 size-3 text-slate-400" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                               <path d="m7 15 5 5 5-5"></path>
                               <path d="m7 9 5-5 5 5"></path>
                             </svg>
                           </div>
                           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white border border-slate-200 dark:bg-slate-900 dark:border-slate-800 dark:text-slate-200 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-6 min-w-5 ms-auto outline-none px-2 py-0.5 relative rounded-full text-slate-700 text-xs transition-shadow">
-                            <svg className="cta7-blink dark:text-rose-400 lucide lucide-activity size-3 text-rose-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ActivityIcon" tabler="IconActivity" hugeicons="Pulse01Icon" phosphor="ActivityIcon" remixicon="RiPulseLine" aria-hidden="true">
+                            <svg className="cta7-blink dark:text-rose-400 lucide lucide-activity size-3 text-rose-500" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ActivityIcon" tabler="IconActivity" hugeicons="Pulse01Icon" phosphor="ActivityIcon" remixicon="RiPulseLine" aria-hidden="true">
                               <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
                             </svg>
                             {"System"}
@@ -293,9 +293,9 @@ export function Pattern() {
                         <div className="flex flex-1 items-stretch min-h-0 min-w-0">
                           <div className="border-r border-slate-200 dark:border-slate-800 flex flex-col gap-2 p-2 shrink-0 w-54">
                             <Item className="bg-white border-slate-200 dark:bg-slate-900 dark:border-slate-800 dark:text-slate-500 gap-2 px-2 py-1.5 text-slate-400 text-sm" variant="outline" size="xs">
-                              <svg className="lucide lucide-search shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+                              <svg className="lucide lucide-search shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                                 <path d="m21 21-4.34-4.34"></path>
-                                <circle cx="11" cy="11" r="8"></circle>
+                                <circle cx={11} cy={11} r={8}></circle>
                               </svg>
                               <span className="truncate">
                                 {"Search..."}
@@ -310,11 +310,11 @@ export function Pattern() {
                             <div className="flex flex-col gap-0.5">
                               <div className="contents">
                                 <Item className="bg-slate-100 border-transparent dark:bg-slate-800 dark:text-slate-50 font-medium gap-2 px-2 py-1.5 text-slate-900 text-sm" variant="default" size="xs">
-                                  <svg className="lucide lucide-layout-grid shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
-                                    <rect width="7" height="7" x="3" y="3" rx="1"></rect>
-                                    <rect width="7" height="7" x="14" y="3" rx="1"></rect>
-                                    <rect width="7" height="7" x="14" y="14" rx="1"></rect>
-                                    <rect width="7" height="7" x="3" y="14" rx="1"></rect>
+                                  <svg className="lucide lucide-layout-grid shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
+                                    <rect width={7} height={7} x={3} y={3} rx={1}></rect>
+                                    <rect width={7} height={7} x={14} y={3} rx={1}></rect>
+                                    <rect width={7} height={7} x={14} y={14} rx={1}></rect>
+                                    <rect width={7} height={7} x={3} y={14} rx={1}></rect>
                                   </svg>
                                   <span className="truncate">
                                     {"Overview"}
@@ -323,16 +323,16 @@ export function Pattern() {
                               </div>
                               <div className="contents">
                                 <Item className="border-transparent dark:text-slate-300 gap-2 px-2 py-1.5 text-slate-600 text-sm" variant="default" size="xs">
-                                  <svg className="lucide lucide-users shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                                  <svg className="lucide lucide-users shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                                     <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                                     <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                     <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <circle cx={9} cy={7} r={4}></circle>
                                   </svg>
                                   <span className="truncate">
                                     {"Users"}
                                   </span>
-                                  <svg className="dark:text-slate-500 lucide lucide-chevron-down ms-auto shrink-0 size-3 text-slate-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                                  <svg className="dark:text-slate-500 lucide lucide-chevron-down ms-auto shrink-0 size-3 text-slate-400" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                   </svg>
                                 </Item>
@@ -354,7 +354,7 @@ export function Pattern() {
                               </div>
                               <div className="contents">
                                 <Item className="border-transparent dark:text-slate-300 gap-2 px-2 py-1.5 text-slate-600 text-sm" variant="default" size="xs">
-                                  <svg className="lucide lucide-building-2 lucide-building2 shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Building2Icon" tabler="IconBuilding" hugeicons="Building02Icon" phosphor="BuildingsIcon" remixicon="RiBuildingLine" aria-hidden="true">
+                                  <svg className="lucide lucide-building-2 lucide-building2 shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Building2Icon" tabler="IconBuilding" hugeicons="Building02Icon" phosphor="BuildingsIcon" remixicon="RiBuildingLine" aria-hidden="true">
                                     <path d="M10 12h4"></path>
                                     <path d="M10 8h4"></path>
                                     <path d="M14 21v-3a2 2 0 0 0-4 0v3"></path>
@@ -364,28 +364,28 @@ export function Pattern() {
                                   <span className="truncate">
                                     {"Organizations"}
                                   </span>
-                                  <svg className="dark:text-slate-600 lucide lucide-chevron-right ms-auto shrink-0 size-3 text-slate-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                                  <svg className="dark:text-slate-600 lucide lucide-chevron-right ms-auto shrink-0 size-3 text-slate-300" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                     <path d="m9 18 6-6-6-6"></path>
                                   </svg>
                                 </Item>
                               </div>
                               <div className="contents">
                                 <Item className="border-transparent dark:text-slate-300 gap-2 px-2 py-1.5 text-slate-600 text-sm" variant="default" size="xs">
-                                  <svg className="lucide lucide-shield-check shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
+                                  <svg className="lucide lucide-shield-check shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
                                     <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                                     <path d="m9 12 2 2 4-4"></path>
                                   </svg>
                                   <span className="truncate">
                                     {"Security"}
                                   </span>
-                                  <svg className="dark:text-slate-600 lucide lucide-chevron-right ms-auto shrink-0 size-3 text-slate-300" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                                  <svg className="dark:text-slate-600 lucide lucide-chevron-right ms-auto shrink-0 size-3 text-slate-300" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                     <path d="m9 18 6-6-6-6"></path>
                                   </svg>
                                 </Item>
                               </div>
                               <div className="contents">
                                 <Item className="border-transparent dark:text-slate-300 gap-2 px-2 py-1.5 text-slate-600 text-sm" variant="default" size="xs">
-                                  <svg className="lucide lucide-webhook shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="WebhookIcon" tabler="IconWebhook" hugeicons="WebhookIcon" phosphor="WebhooksLogoIcon" remixicon="RiWebhookLine" aria-hidden="true">
+                                  <svg className="lucide lucide-webhook shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="WebhookIcon" tabler="IconWebhook" hugeicons="WebhookIcon" phosphor="WebhooksLogoIcon" remixicon="RiWebhookLine" aria-hidden="true">
                                     <path d="M18 16.98h-5.99c-1.1 0-1.95.94-2.48 1.9A4 4 0 0 1 2 17c.01-.7.2-1.4.57-2"></path>
                                     <path d="m6 17 3.13-5.78c.53-.97.1-2.18-.5-3.1a4 4 0 1 1 6.89-4.06"></path>
                                     <path d="m12 6 3.13 5.73C15.66 12.7 16.9 13 18 13a4 4 0 0 1 0 8"></path>
@@ -397,9 +397,9 @@ export function Pattern() {
                               </div>
                               <div className="contents">
                                 <Item className="border-transparent dark:text-slate-300 gap-2 px-2 py-1.5 text-slate-600 text-sm" variant="default" size="xs">
-                                  <svg className="lucide lucide-key-round shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="KeyRoundIcon" tabler="IconKey" hugeicons="Key02Icon" phosphor="KeyIcon" remixicon="RiKey2Line" aria-hidden="true">
+                                  <svg className="lucide lucide-key-round shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="KeyRoundIcon" tabler="IconKey" hugeicons="Key02Icon" phosphor="KeyIcon" remixicon="RiKey2Line" aria-hidden="true">
                                     <path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"></path>
-                                    <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                    <circle cx={16.5} cy={7.5} r=".5" fill="currentColor"></circle>
                                   </svg>
                                   <span className="truncate">
                                     {"API Keys"}
@@ -417,17 +417,17 @@ export function Pattern() {
                                 </span>
                                 <svg className="h-10 w-full" viewBox="0 0 96 34" preserveAspectRatio="none" aria-hidden="true">
                                   <defs>
-                                    <lineargradient id="_r_0_-sky" x1="0" y1="0" x2="1" y2="1">
+                                    <lineargradient id="_r_0_-sky" x1={0} y1={0} x2={1} y2={1}>
                                       <stop className="text-violet-400" offset="0%" stopColor="currentColor"></stop>
                                       <stop className="text-sky-400" offset="55%" stopColor="currentColor"></stop>
                                       <stop className="text-fuchsia-400" offset="100%" stopColor="currentColor"></stop>
                                     </lineargradient>
-                                    <lineargradient id="_r_0_-wave" x1="0" y1="0" x2="0" y2="1">
-                                      <stop offset="0%" stopColor="white" stopOpacity="0.55"></stop>
-                                      <stop offset="100%" stopColor="white" stopOpacity="0.05"></stop>
+                                    <lineargradient id="_r_0_-wave" x1={0} y1={0} x2={0} y2={1}>
+                                      <stop offset="0%" stopColor="white" stopOpacity={0.55}></stop>
+                                      <stop offset="100%" stopColor="white" stopOpacity={0.05}></stop>
                                     </lineargradient>
                                   </defs>
-                                  <rect width="96" height="34" fill="url(#_r_0_-sky)"></rect>
+                                  <rect width={96} height={34} fill="url(#_r_0_-sky)"></rect>
                                   <path d="M0 26 C 18 26 26 12 48 12 C 70 12 78 22 96 22 L96 34 L0 34 Z" fill="url(#_r_0_-wave)"></path>
                                 </svg>
                               </CardContent>
@@ -439,14 +439,14 @@ export function Pattern() {
                                 <CardContent className="flex flex-col gap-1.5">
                                   <div className="flex gap-1.5 items-start justify-between">
                                     <IconTile className="[--icon-tile-icon-size:--spacing(4)]! [--icon-tile-size:--spacing(7)]! dark:text-slate-400 text-slate-500" variant="soft" size="xs">
-                                      <svg className="lucide lucide-circle-dollar-sign" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
-                                        <circle cx="12" cy="12" r="10"></circle>
+                                      <svg className="lucide lucide-circle-dollar-sign" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
+                                        <circle cx={12} cy={12} r={10}></circle>
                                         <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
                                         <path d="M12 18V6"></path>
                                       </svg>
                                     </IconTile>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-emerald-50 border border-emerald-200 dark:bg-emerald-500/15 dark:border-emerald-500/25 dark:text-emerald-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.5 py-0.5 relative rounded-full text-emerald-700 text-xs transition-shadow">
-                                      <svg className="lucide lucide-trending-up size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
+                                      <svg className="lucide lucide-trending-up size-3" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                                         <path d="M16 7h6v6"></path>
                                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                       </svg>
@@ -486,7 +486,7 @@ export function Pattern() {
                                 <CardContent className="flex flex-col gap-1.5">
                                   <div className="flex gap-1.5 items-start justify-between">
                                     <IconTile className="[--icon-tile-icon-size:--spacing(4)]! [--icon-tile-size:--spacing(7)]! dark:text-slate-400 text-slate-500" variant="soft" size="xs">
-                                      <svg className="lucide lucide-package" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
+                                      <svg className="lucide lucide-package" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
                                         <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
                                         <path d="M12 22V12"></path>
                                         <polyline points="3.29 7 12 12 20.71 7"></polyline>
@@ -494,7 +494,7 @@ export function Pattern() {
                                       </svg>
                                     </IconTile>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-emerald-50 border border-emerald-200 dark:bg-emerald-500/15 dark:border-emerald-500/25 dark:text-emerald-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.5 py-0.5 relative rounded-full text-emerald-700 text-xs transition-shadow">
-                                      <svg className="lucide lucide-trending-up size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
+                                      <svg className="lucide lucide-trending-up size-3" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                                         <path d="M16 7h6v6"></path>
                                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                       </svg>
@@ -534,15 +534,15 @@ export function Pattern() {
                                 <CardContent className="flex flex-col gap-1.5">
                                   <div className="flex gap-1.5 items-start justify-between">
                                     <IconTile className="[--icon-tile-icon-size:--spacing(4)]! [--icon-tile-size:--spacing(7)]! dark:text-slate-400 text-slate-500" variant="soft" size="xs">
-                                      <svg className="lucide lucide-users" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                                      <svg className="lucide lucide-users" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                                         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                                         <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                         <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <circle cx={9} cy={7} r={4}></circle>
                                       </svg>
                                     </IconTile>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-emerald-50 border border-emerald-200 dark:bg-emerald-500/15 dark:border-emerald-500/25 dark:text-emerald-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.5 py-0.5 relative rounded-full text-emerald-700 text-xs transition-shadow">
-                                      <svg className="lucide lucide-trending-up size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
+                                      <svg className="lucide lucide-trending-up size-3" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                                         <path d="M16 7h6v6"></path>
                                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                       </svg>
@@ -582,14 +582,14 @@ export function Pattern() {
                                 <CardContent className="flex flex-col gap-1.5">
                                   <div className="flex gap-1.5 items-start justify-between">
                                     <IconTile className="[--icon-tile-icon-size:--spacing(4)]! [--icon-tile-size:--spacing(7)]! dark:text-slate-400 text-slate-500" variant="soft" size="xs">
-                                      <svg className="lucide lucide-shopping-cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingCartIcon" tabler="IconShoppingCart" hugeicons="ShoppingCart01Icon" phosphor="ShoppingCartIcon" remixicon="RiShoppingCartLine" aria-hidden="true">
-                                        <circle cx="8" cy="21" r="1"></circle>
-                                        <circle cx="19" cy="21" r="1"></circle>
+                                      <svg className="lucide lucide-shopping-cart" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingCartIcon" tabler="IconShoppingCart" hugeicons="ShoppingCart01Icon" phosphor="ShoppingCartIcon" remixicon="RiShoppingCartLine" aria-hidden="true">
+                                        <circle cx={8} cy={21} r={1}></circle>
+                                        <circle cx={19} cy={21} r={1}></circle>
                                         <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
                                       </svg>
                                     </IconTile>
                                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-amber-50 border border-amber-200 dark:bg-amber-500/15 dark:border-amber-500/25 dark:text-amber-300 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.5 py-0.5 relative rounded-full text-amber-700 text-xs transition-shadow">
-                                      <svg className="lucide lucide-trending-down size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
+                                      <svg className="lucide lucide-trending-down size-3" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
                                         <path d="M16 17h6v-6"></path>
                                         <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                                       </svg>
@@ -682,28 +682,28 @@ export function Pattern() {
                                   </div>
                                   <svg className="flex-1 min-h-0 w-full" viewBox="0 0 260 56" preserveAspectRatio="none" aria-hidden="true">
                                     <defs>
-                                      <lineargradient className="text-violet-500" id="_r_1_-online" x1="0" y1="0" x2="0" y2="1">
-                                        <stop offset="0%" stopColor="currentColor" stopOpacity="0.2"></stop>
-                                        <stop offset="100%" stopColor="currentColor" stopOpacity="0.02"></stop>
+                                      <lineargradient className="text-violet-500" id="_r_1_-online" x1={0} y1={0} x2={0} y2={1}>
+                                        <stop offset="0%" stopColor="currentColor" stopOpacity={0.2}></stop>
+                                        <stop offset="100%" stopColor="currentColor" stopOpacity={0.02}></stop>
                                       </lineargradient>
-                                      <lineargradient className="text-sky-400" id="_r_1_-retail" x1="0" y1="0" x2="0" y2="1">
-                                        <stop offset="0%" stopColor="currentColor" stopOpacity="0.24"></stop>
-                                        <stop offset="100%" stopColor="currentColor" stopOpacity="0.03"></stop>
+                                      <lineargradient className="text-sky-400" id="_r_1_-retail" x1={0} y1={0} x2={0} y2={1}>
+                                        <stop offset="0%" stopColor="currentColor" stopOpacity={0.24}></stop>
+                                        <stop offset="100%" stopColor="currentColor" stopOpacity={0.03}></stop>
                                       </lineargradient>
-                                      <pattern id="_r_1_-hatch" width="4" height="4" patternUnits="userSpaceOnUse" patterntransform="rotate(45)">
-                                        <line className="dark:stroke-slate-500/20 stroke-slate-400/20" x1="0" y1="0" x2="0" y2="4" strokeWidth="1"></line>
+                                      <pattern id="_r_1_-hatch" width={4} height={4} patternUnits="userSpaceOnUse" patterntransform="rotate(45)">
+                                        <line className="dark:stroke-slate-500/20 stroke-slate-400/20" x1={0} y1={0} x2={0} y2={4} strokeWidth={1}></line>
                                       </pattern>
                                     </defs>
                                     <path d="M0 33 C 24 31 44 16 74 15 C 104 14 120 25 150 24 C 180 23 198 12 228 11 C 240 10.6 250 11 260 11 L260 56 L0 56 Z" fill="url(#_r_1_-online)"></path>
                                     <path d="M0 33 C 24 31 44 16 74 15 C 104 14 120 25 150 24 C 180 23 198 12 228 11 C 240 10.6 250 11 260 11 L260 56 L0 56 Z" fill="url(#_r_1_-hatch)"></path>
                                     <path d="M0 43 C 24 42 44 33 74 32 C 104 31 120 38 150 37 C 180 36 198 32 228 31 C 240 30.6 250 31 260 31 L260 56 L0 56 Z" fill="url(#_r_1_-retail)"></path>
-                                    <path className="dark:stroke-slate-500 stroke-slate-400" d="M0 38 C 40 36 72 25 112 25 C 152 25 180 30 212 28 C 232 27 248 27 260 27" fill="none" strokeWidth="1" strokeDasharray="3 3" vector-effect="non-scaling-stroke"></path>
-                                    <path className="stroke-violet-500" d="M0 33 C 24 31 44 16 74 15 C 104 14 120 25 150 24 C 180 23 198 12 228 11 C 240 10.6 250 11 260 11" fill="none" strokeWidth="1.5" strokeLinecap="round" vector-effect="non-scaling-stroke"></path>
-                                    <path className="stroke-sky-400" d="M0 43 C 24 42 44 33 74 32 C 104 31 120 38 150 37 C 180 36 198 32 228 31 C 240 30.6 250 31 260 31" fill="none" strokeWidth="1.5" strokeLinecap="round" vector-effect="non-scaling-stroke"></path>
+                                    <path className="dark:stroke-slate-500 stroke-slate-400" d="M0 38 C 40 36 72 25 112 25 C 152 25 180 30 212 28 C 232 27 248 27 260 27" fill="none" strokeWidth={1} strokeDasharray="3 3" vector-effect="non-scaling-stroke"></path>
+                                    <path className="stroke-violet-500" d="M0 33 C 24 31 44 16 74 15 C 104 14 120 25 150 24 C 180 23 198 12 228 11 C 240 10.6 250 11 260 11" fill="none" strokeWidth={1.5} strokeLinecap="round" vector-effect="non-scaling-stroke"></path>
+                                    <path className="stroke-sky-400" d="M0 43 C 24 42 44 33 74 32 C 104 31 120 38 150 37 C 180 36 198 32 228 31 C 240 30.6 250 31 260 31" fill="none" strokeWidth={1.5} strokeLinecap="round" vector-effect="non-scaling-stroke"></path>
                                     <g className="cta7-scan">
-                                      <rect className="fill-violet-500/40" x="0" y="0" width="1" height="56"></rect>
+                                      <rect className="fill-violet-500/40" x={0} y={0} width={1} height={56}></rect>
                                     </g>
-                                    <line className="dark:stroke-slate-700 stroke-slate-200" x1="0" y1="55.5" x2="260" y2="55.5" strokeWidth="1" vector-effect="non-scaling-stroke"></line>
+                                    <line className="dark:stroke-slate-700 stroke-slate-200" x1={0} y1={55.5} x2={260} y2={55.5} strokeWidth={1} vector-effect="non-scaling-stroke"></line>
                                   </svg>
                                   <div className="dark:text-slate-500 flex items-center justify-between text-slate-400 text-xs">
                                     <span>
@@ -828,16 +828,16 @@ export function Pattern() {
                                 </CardDescription>
                                 <CardAction className="flex gap-2 items-center">
                                   <Item className="bg-white border-slate-200 dark:bg-slate-900 dark:border-slate-800 dark:text-slate-500 gap-2 px-2 py-1 text-slate-400 text-xs w-32" variant="outline" size="xs">
-                                    <svg className="lucide lucide-search shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+                                    <svg className="lucide lucide-search shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                                       <path d="m21 21-4.34-4.34"></path>
-                                      <circle cx="11" cy="11" r="8"></circle>
+                                      <circle cx={11} cy={11} r={8}></circle>
                                     </svg>
                                     <span className="truncate">
                                       {"Search orders"}
                                     </span>
                                   </Item>
                                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-white border border-slate-200 dark:bg-slate-900 dark:border-slate-800 dark:text-slate-200 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-6 min-w-5 outline-none px-2 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-slate-700 text-xs transition-shadow">
-                                    <svg className="lucide lucide-funnel size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" aria-hidden="true">
+                                    <svg className="lucide lucide-funnel size-3" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" aria-hidden="true">
                                       <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                                     </svg>
                                     {"Exceptions"}

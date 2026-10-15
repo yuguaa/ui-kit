@@ -52,8 +52,8 @@ export function Pattern() {
     <div className="bg-background flex flex-col min-h-svh w-full">
       <header className="bg-background border-b border-border flex gap-3 items-center justify-between min-h-14 px-4 shrink-0 sticky top-0 w-full z-20">
         <div className="flex items-center min-w-0">
-          <Button className="-ms-2 size-8" type="button" tabIndex="0" aria-label="Close member invite form">
-            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+          <Button className="-ms-2 size-8" type="button" tabIndex={0} aria-label="Close member invite form">
+            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
               <path d="M18 6 6 18"></path>
               <path d="m6 6 12 12"></path>
             </svg>
@@ -69,8 +69,8 @@ export function Pattern() {
           </div>
         </div>
         <div className="flex gap-2 items-center shrink-0">
-          <Button className="hidden md:inline-flex" type="button" tabIndex="0">
-            <svg className="lucide lucide-message-square-text" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" lucide="MessageSquareTextIcon" tabler="IconMessageDots" hugeicons="Comment01Icon" phosphor="ChatTextIcon" remixicon="RiMessage3Line" aria-hidden="true">
+          <Button className="hidden md:inline-flex" type="button" tabIndex={0}>
+            <svg className="lucide lucide-message-square-text" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" lucide="MessageSquareTextIcon" tabler="IconMessageDots" hugeicons="Comment01Icon" phosphor="ChatTextIcon" remixicon="RiMessage3Line" aria-hidden="true">
               <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
               <path d="M7 11h10"></path>
               <path d="M7 15h6"></path>
@@ -78,16 +78,16 @@ export function Pattern() {
             </svg>
             {"Feedback"}
           </Button>
-          <Button className="hidden sm:inline-flex" type="button" tabIndex="0">
-            <svg className="lucide lucide-save" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" lucide="SaveIcon" tabler="IconDeviceFloppy" hugeicons="FloppyDiskIcon" phosphor="FloppyDiskIcon" remixicon="RiSaveLine" aria-hidden="true">
+          <Button className="hidden sm:inline-flex" type="button" tabIndex={0}>
+            <svg className="lucide lucide-save" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" lucide="SaveIcon" tabler="IconDeviceFloppy" hugeicons="FloppyDiskIcon" phosphor="FloppyDiskIcon" remixicon="RiSaveLine" aria-hidden="true">
               <path d="M15.2 3a2 2 0 0 1 1.4.6l3.8 3.8a2 2 0 0 1 .6 1.4V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"></path>
               <path d="M17 21v-7a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v7"></path>
               <path d="M7 3v4a1 1 0 0 0 1 1h7"></path>
             </svg>
             {"Save Draft"}
           </Button>
-          <Button type="submit" tabIndex="0" form="form-9-enterprise-member-invite">
-            <svg className="lucide lucide-send" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" lucide="SendIcon" tabler="IconSend" hugeicons="SentIcon" phosphor="PaperPlaneTiltIcon" remixicon="RiSendInsLine" aria-hidden="true">
+          <Button type="submit" tabIndex={0} form="form-9-enterprise-member-invite">
+            <svg className="lucide lucide-send" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" lucide="SendIcon" tabler="IconSend" hugeicons="SentIcon" phosphor="PaperPlaneTiltIcon" remixicon="RiSendInsLine" aria-hidden="true">
               <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path>
               <path d="m21.854 2.147-10.94 10.939"></path>
             </svg>
@@ -107,7 +107,7 @@ export function Pattern() {
               </CardDescription>
               <CardAction className="self-center">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                  <svg className="lucide lucide-shield-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
+                  <svg className="lucide lucide-shield-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
                     <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                     <path d="m9 12 2 2 4-4"></path>
                   </svg>
@@ -134,9 +134,9 @@ export function Pattern() {
                           {"Recipients"}
                         </FieldLabel>
                         <Tooltip>
-                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Recipients hint" id="base-ui-_r_1_" baseUiTooltipTrigger="">
-                          <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
-                            <circle cx="12" cy="12" r="10"></circle>
+                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Recipients hint" id="base-ui-_r_1_" baseUiTooltipTrigger="">
+                          <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
+                            <circle cx={12} cy={12} r={10}></circle>
                             <path d="M12 16v-4"></path>
                             <path d="M12 8h.01"></path>
                           </svg>
@@ -149,10 +149,10 @@ export function Pattern() {
                     </FieldContent>
                     <div className="min-w-0">
                       <ComboboxChips className="has-data-[slot=combobox-chip]:pl-1 min-h-10" role="toolbar">
-                        <ComboboxChip className="gap-1.5" tabIndex="-1">
+                        <ComboboxChip className="gap-1.5" tabIndex={-1}>
                           {"iris.kwon@atlaslane.dev"}
-                          <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost cn-combobox-chip-remove disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="-1" aria-disabled="false">
-                            <svg className="cn-combobox-chip-indicator-icon lucide lucide-x pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
+                          <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost cn-combobox-chip-remove disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={-1} aria-disabled="false">
+                            <svg className="cn-combobox-chip-indicator-icon lucide lucide-x pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
                               <path d="M18 6 6 18"></path>
                               <path d="m6 6 12 12"></path>
                             </svg>
@@ -160,7 +160,7 @@ export function Pattern() {
                         </ComboboxChip>
                         <input className="cn-combobox-chip-input flex-1 min-w-16 outline-none" autoComplete="off" spellCheck="false" autocorrect="off" autocapitalize="none" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-autocomplete="list" id="form-9-member-emails" placeholder="Add email" type="text" value="" />
                       </ComboboxChips>
-                      <input id="base-ui-_r_2_-hidden-input" tabIndex="-1" aria-hidden="true" value="" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                      <input id="base-ui-_r_2_-hidden-input" tabIndex={-1} aria-hidden="true" value="" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                     </div>
                   </Field>
                   <div className="px-5 sm:px-6">
@@ -173,9 +173,9 @@ export function Pattern() {
                           {"Workspace"}
                         </FieldLabel>
                         <Tooltip>
-                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Workspace hint" id="base-ui-_r_6_" baseUiTooltipTrigger="">
-                          <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
-                            <circle cx="12" cy="12" r="10"></circle>
+                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Workspace hint" id="base-ui-_r_6_" baseUiTooltipTrigger="">
+                          <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
+                            <circle cx={12} cy={12} r={10}></circle>
                             <path d="M12 16v-4"></path>
                             <path d="M12 8h.01"></path>
                           </svg>
@@ -193,34 +193,34 @@ export function Pattern() {
                             {"Workspace"}
                           </FieldLabel>
                           <Select>
-                          <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="form-9-workspace" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                          <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex={0} id="form-9-workspace" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                             <SelectValue>
                               {"Global Operations"}
                             </SelectValue>
-                            <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                            <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                               <path d="m6 9 6 6 6-6"></path>
                               {"▼"}
                             </svg>
                           </SelectTrigger>
                           </Select>
-                          <input id="base-ui-_r_7_-hidden-input" tabIndex="-1" aria-hidden="true" value="global-operations" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                          <input id="base-ui-_r_7_-hidden-input" tabIndex={-1} aria-hidden="true" value="global-operations" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         </Field>
                         <Field role="group" data-orientation="vertical">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-9-expiry">
                             {"Invite Expires"}
                           </FieldLabel>
                           <Select>
-                          <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="form-9-expiry" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                          <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex={0} id="form-9-expiry" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                             <SelectValue>
                               {"14 days"}
                             </SelectValue>
-                            <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                            <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                               <path d="m6 9 6 6 6-6"></path>
                               {"▼"}
                             </svg>
                           </SelectTrigger>
                           </Select>
-                          <input id="base-ui-_r_a_-hidden-input" tabIndex="-1" aria-hidden="true" value="14_days" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                          <input id="base-ui-_r_a_-hidden-input" tabIndex={-1} aria-hidden="true" value="14_days" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         </Field>
                       </FieldGroup>
                     </div>
@@ -242,12 +242,12 @@ export function Pattern() {
                     <div className="min-w-0">
                       <RadioGroup className="gap-2 grid" role="radiogroup">
                         <Field className="gap-2.5 items-start py-1.5" role="group" data-orientation="horizontal">
-                          <RadioGroupItem checked="" role="radio" tabIndex="0" aria-checked="true" compositeItemActive="" id="base-ui-_r_e_" aria-labelledby="form-9-member-type-employee-label">
+                          <RadioGroupItem checked="" role="radio" tabIndex={0} aria-checked="true" compositeItemActive="" id="base-ui-_r_e_" aria-labelledby="form-9-member-type-employee-label">
                             <span className="cn-radio-group-indicator" data-checked="">
                               <span className="cn-radio-group-indicator-icon"></span>
                             </span>
                           </RadioGroupItem>
-                          <input id="form-9-member-type-employee" tabIndex="-1" aria-hidden="true" type="radio" value="employee" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                          <input id="form-9-member-type-employee" tabIndex={-1} aria-hidden="true" type="radio" value="employee" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           <FieldContent className="gap-0.5 min-w-0">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-9-member-type-employee" id="form-9-member-type-employee-label">
                               {"Employee"}
@@ -258,8 +258,8 @@ export function Pattern() {
                           </FieldContent>
                         </Field>
                         <Field className="gap-2.5 items-start py-1.5" role="group" data-orientation="horizontal">
-                          <RadioGroupItem unchecked="" role="radio" tabIndex="-1" aria-checked="false" id="base-ui-_r_h_" aria-labelledby="form-9-member-type-contractor-label"></RadioGroupItem>
-                          <input id="form-9-member-type-contractor" tabIndex="-1" aria-hidden="true" type="radio" value="contractor" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                          <RadioGroupItem unchecked="" role="radio" tabIndex={-1} aria-checked="false" id="base-ui-_r_h_" aria-labelledby="form-9-member-type-contractor-label"></RadioGroupItem>
+                          <input id="form-9-member-type-contractor" tabIndex={-1} aria-hidden="true" type="radio" value="contractor" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           <FieldContent className="gap-0.5 min-w-0">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-9-member-type-contractor" id="form-9-member-type-contractor-label">
                               {"Contractor"}
@@ -270,8 +270,8 @@ export function Pattern() {
                           </FieldContent>
                         </Field>
                         <Field className="gap-2.5 items-start py-1.5" role="group" data-orientation="horizontal">
-                          <RadioGroupItem unchecked="" role="radio" tabIndex="-1" aria-checked="false" id="base-ui-_r_k_" aria-labelledby="form-9-member-type-service_account-label"></RadioGroupItem>
-                          <input id="form-9-member-type-service_account" tabIndex="-1" aria-hidden="true" type="radio" value="service_account" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                          <RadioGroupItem unchecked="" role="radio" tabIndex={-1} aria-checked="false" id="base-ui-_r_k_" aria-labelledby="form-9-member-type-service_account-label"></RadioGroupItem>
+                          <input id="form-9-member-type-service_account" tabIndex={-1} aria-hidden="true" type="radio" value="service_account" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           <FieldContent className="gap-0.5 min-w-0">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-9-member-type-service_account" id="form-9-member-type-service_account-label">
                               {"Service account"}
@@ -294,9 +294,9 @@ export function Pattern() {
                           {"Guardrails"}
                         </FieldLabel>
                         <Tooltip>
-                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Guardrails hint" id="base-ui-_r_o_" baseUiTooltipTrigger="">
-                          <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
-                            <circle cx="12" cy="12" r="10"></circle>
+                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Guardrails hint" id="base-ui-_r_o_" baseUiTooltipTrigger="">
+                          <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
+                            <circle cx={12} cy={12} r={10}></circle>
                             <path d="M12 16v-4"></path>
                             <path d="M12 8h.01"></path>
                           </svg>
@@ -318,10 +318,10 @@ export function Pattern() {
                               {"Block password login."}
                             </FieldDescription>
                           </FieldContent>
-                          <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_p_" aria-checked="true" size="default" aria-labelledby="form-9-require-sso-label">
+                          <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_p_" aria-checked="true" size="default" aria-labelledby="form-9-require-sso-label">
                             <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                           </Switch>
-                          <input id="form-9-require-sso" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                          <input id="form-9-require-sso" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         </Field>
                         <Field className="gap-3 py-1.5" role="group" data-orientation="horizontal">
                           <FieldContent className="gap-0.5 min-w-0">
@@ -332,10 +332,10 @@ export function Pattern() {
                               {"Copy the access owner."}
                             </FieldDescription>
                           </FieldContent>
-                          <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_s_" aria-checked="false" size="default" aria-labelledby="form-9-notify-manager-label">
+                          <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_s_" aria-checked="false" size="default" aria-labelledby="form-9-notify-manager-label">
                             <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                           </Switch>
-                          <input id="form-9-notify-manager" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                          <input id="form-9-notify-manager" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         </Field>
                       </FieldGroup>
                     </div>
@@ -358,9 +358,9 @@ export function Pattern() {
                       <InputGroup role="group">
                         <InputGroupAddon role="group" data-align="inline-start">
                           <span className="[&_svg]:pointer-events-none cn-input-group-text flex items-center">
-                            <svg className="lucide lucide-search size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+                            <svg className="lucide lucide-search size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                               <path d="m21 21-4.34-4.34"></path>
-                              <circle cx="11" cy="11" r="8"></circle>
+                              <circle cx={11} cy={11} r={8}></circle>
                             </svg>
                           </span>
                         </InputGroupAddon>
@@ -378,9 +378,9 @@ export function Pattern() {
                           {"Permissions"}
                         </FieldLabel>
                         <Tooltip>
-                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Permissions hint" id="base-ui-_r_11_" baseUiTooltipTrigger="">
-                          <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
-                            <circle cx="12" cy="12" r="10"></circle>
+                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Permissions hint" id="base-ui-_r_11_" baseUiTooltipTrigger="">
+                          <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
+                            <circle cx={12} cy={12} r={10}></circle>
                             <path d="M12 16v-4"></path>
                             <path d="M12 8h.01"></path>
                           </svg>
@@ -407,9 +407,9 @@ export function Pattern() {
                           </Badge>
                         </div>
                         <Tree className="p-1.5" role="tree" aria-label="" style={{"--tree-indent": "20px"}}>
-                          <button className="data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" type="button" data-focus="true" data-folder="true" aria-expanded="false" role="treeitem" aria-setsize="7" aria-posinset="1" aria-selected="false" aria-label="Admin roles" aria-level="1" tabIndex="0" style={{"--tree-padding": "0px"}}>
+                          <button className="data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" type="button" data-focus="true" data-folder="true" aria-expanded="false" role="treeitem" aria-setsize="7" aria-posinset="1" aria-selected="false" aria-label="Admin roles" aria-level="1" tabIndex={0} style={{"--tree-padding": "0px"}}>
                             <TreeItemLabel className="not-in-data-[folder=true]:ps-5">
-                              <svg className="in-aria-[expanded=false]:-rotate-90 lucide lucide-chevron-down size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
+                              <svg className="in-aria-[expanded=false]:-rotate-90 lucide lucide-chevron-down size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                                 <path d="m6 9 6 6 6-6"></path>
                               </svg>
                               <span className="font-medium truncate">
@@ -417,9 +417,9 @@ export function Pattern() {
                               </span>
                             </TreeItemLabel>
                           </button>
-                          <button className="data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" type="button" data-focus="false" data-folder="true" aria-expanded="true" role="treeitem" aria-setsize="7" aria-posinset="2" aria-selected="false" aria-label="Developer roles" aria-level="1" tabIndex="-1" style={{"--tree-padding": "0px"}}>
+                          <button className="data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" type="button" data-focus="false" data-folder="true" aria-expanded="true" role="treeitem" aria-setsize="7" aria-posinset="2" aria-selected="false" aria-label="Developer roles" aria-level="1" tabIndex={-1} style={{"--tree-padding": "0px"}}>
                             <TreeItemLabel className="not-in-data-[folder=true]:ps-5">
-                              <svg className="in-aria-[expanded=false]:-rotate-90 lucide lucide-chevron-down size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
+                              <svg className="in-aria-[expanded=false]:-rotate-90 lucide lucide-chevron-down size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                                 <path d="m6 9 6 6 6-6"></path>
                               </svg>
                               <span className="font-medium truncate">
@@ -427,28 +427,28 @@ export function Pattern() {
                               </span>
                             </TreeItemLabel>
                           </button>
-                          <div className="cursor-pointer data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" data-focus="false" data-folder="false" role="treeitem" aria-setsize="3" aria-posinset="1" aria-selected="false" aria-label="Developer" aria-level="2" tabIndex="-1" style={{"--tree-padding": "20px"}}>
+                          <div className="cursor-pointer data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" data-focus="false" data-folder="false" role="treeitem" aria-setsize="3" aria-posinset="1" aria-selected="false" aria-label="Developer" aria-level="2" tabIndex={-1} style={{"--tree-padding": "20px"}}>
                             <TreeItemLabel className="not-in-data-[folder=true]:ps-5">
                               <span className="flex flex-1 gap-2 items-center min-w-0">
-                                <Checkbox className="size-3.5" checked="" role="checkbox" tabIndex="0" id="base-ui-_r_14_" aria-checked="true" aria-label="Developer">
+                                <Checkbox className="size-3.5" checked="" role="checkbox" tabIndex={0} id="base-ui-_r_14_" aria-checked="true" aria-label="Developer">
                                   <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                                       <path d="M20 6 9 17l-5-5"></path>
                                     </svg>
                                   </span>
                                 </Checkbox>
-                                <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                 <span className="min-w-0 truncate">
                                   {"Developer"}
                                 </span>
                               </span>
                             </TreeItemLabel>
                           </div>
-                          <div className="cursor-pointer data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" data-focus="false" data-folder="false" role="treeitem" aria-setsize="3" aria-posinset="2" aria-selected="false" aria-label="Secret manager" aria-level="2" tabIndex="-1" style={{"--tree-padding": "20px"}}>
+                          <div className="cursor-pointer data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" data-focus="false" data-folder="false" role="treeitem" aria-setsize="3" aria-posinset="2" aria-selected="false" aria-label="Secret manager" aria-level="2" tabIndex={-1} style={{"--tree-padding": "20px"}}>
                             <TreeItemLabel className="not-in-data-[folder=true]:ps-5">
                               <span className="flex flex-1 gap-2 items-center min-w-0">
-                                <Checkbox className="size-3.5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_17_" aria-checked="false" aria-label="Secret manager"></Checkbox>
-                                <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <Checkbox className="size-3.5" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_17_" aria-checked="false" aria-label="Secret manager"></Checkbox>
+                                <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                 <span className="min-w-0 truncate">
                                   {"Secret manager"}
                                 </span>
@@ -460,20 +460,20 @@ export function Pattern() {
                               </span>
                             </TreeItemLabel>
                           </div>
-                          <div className="cursor-pointer data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" data-focus="false" data-folder="false" role="treeitem" aria-setsize="3" aria-posinset="3" aria-selected="false" aria-label="Release engineer" aria-level="2" tabIndex="-1" style={{"--tree-padding": "20px"}}>
+                          <div className="cursor-pointer data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" data-focus="false" data-folder="false" role="treeitem" aria-setsize="3" aria-posinset="3" aria-selected="false" aria-label="Release engineer" aria-level="2" tabIndex={-1} style={{"--tree-padding": "20px"}}>
                             <TreeItemLabel className="not-in-data-[folder=true]:ps-5">
                               <span className="flex flex-1 gap-2 items-center min-w-0">
-                                <Checkbox className="size-3.5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_1a_" aria-checked="false" aria-label="Release engineer"></Checkbox>
-                                <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <Checkbox className="size-3.5" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_1a_" aria-checked="false" aria-label="Release engineer"></Checkbox>
+                                <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                 <span className="min-w-0 truncate">
                                   {"Release engineer"}
                                 </span>
                               </span>
                             </TreeItemLabel>
                           </div>
-                          <button className="data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" type="button" data-focus="false" data-folder="true" aria-expanded="true" role="treeitem" aria-setsize="7" aria-posinset="3" aria-selected="false" aria-label="Finance roles" aria-level="1" tabIndex="-1" style={{"--tree-padding": "0px"}}>
+                          <button className="data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" type="button" data-focus="false" data-folder="true" aria-expanded="true" role="treeitem" aria-setsize="7" aria-posinset="3" aria-selected="false" aria-label="Finance roles" aria-level="1" tabIndex={-1} style={{"--tree-padding": "0px"}}>
                             <TreeItemLabel className="not-in-data-[folder=true]:ps-5">
-                              <svg className="in-aria-[expanded=false]:-rotate-90 lucide lucide-chevron-down size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
+                              <svg className="in-aria-[expanded=false]:-rotate-90 lucide lucide-chevron-down size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                                 <path d="m6 9 6 6 6-6"></path>
                               </svg>
                               <span className="font-medium truncate">
@@ -481,17 +481,17 @@ export function Pattern() {
                               </span>
                             </TreeItemLabel>
                           </button>
-                          <div className="cursor-pointer data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" data-focus="false" data-folder="false" role="treeitem" aria-setsize="3" aria-posinset="1" aria-selected="false" aria-label="Finance analyst" aria-level="2" tabIndex="-1" style={{"--tree-padding": "20px"}}>
+                          <div className="cursor-pointer data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" data-focus="false" data-folder="false" role="treeitem" aria-setsize="3" aria-posinset="1" aria-selected="false" aria-label="Finance analyst" aria-level="2" tabIndex={-1} style={{"--tree-padding": "20px"}}>
                             <TreeItemLabel className="not-in-data-[folder=true]:ps-5">
                               <span className="flex flex-1 gap-2 items-center min-w-0">
-                                <Checkbox className="size-3.5" checked="" role="checkbox" tabIndex="0" id="base-ui-_r_1d_" aria-checked="true" aria-label="Finance analyst">
+                                <Checkbox className="size-3.5" checked="" role="checkbox" tabIndex={0} id="base-ui-_r_1d_" aria-checked="true" aria-label="Finance analyst">
                                   <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                                       <path d="M20 6 9 17l-5-5"></path>
                                     </svg>
                                   </span>
                                 </Checkbox>
-                                <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                 <span className="min-w-0 truncate">
                                   {"Finance analyst"}
                                 </span>
@@ -503,31 +503,31 @@ export function Pattern() {
                               </span>
                             </TreeItemLabel>
                           </div>
-                          <div className="cursor-pointer data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" data-focus="false" data-folder="false" role="treeitem" aria-setsize="3" aria-posinset="2" aria-selected="false" aria-label="Refund analyst" aria-level="2" tabIndex="-1" style={{"--tree-padding": "20px"}}>
+                          <div className="cursor-pointer data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" data-focus="false" data-folder="false" role="treeitem" aria-setsize="3" aria-posinset="2" aria-selected="false" aria-label="Refund analyst" aria-level="2" tabIndex={-1} style={{"--tree-padding": "20px"}}>
                             <TreeItemLabel className="not-in-data-[folder=true]:ps-5">
                               <span className="flex flex-1 gap-2 items-center min-w-0">
-                                <Checkbox className="size-3.5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_1g_" aria-checked="false" aria-label="Refund analyst"></Checkbox>
-                                <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <Checkbox className="size-3.5" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_1g_" aria-checked="false" aria-label="Refund analyst"></Checkbox>
+                                <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                 <span className="min-w-0 truncate">
                                   {"Refund analyst"}
                                 </span>
                               </span>
                             </TreeItemLabel>
                           </div>
-                          <div className="cursor-pointer data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" data-focus="false" data-folder="false" role="treeitem" aria-setsize="3" aria-posinset="3" aria-selected="false" aria-label="Dispute analyst" aria-level="2" tabIndex="-1" style={{"--tree-padding": "20px"}}>
+                          <div className="cursor-pointer data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" data-focus="false" data-folder="false" role="treeitem" aria-setsize="3" aria-posinset="3" aria-selected="false" aria-label="Dispute analyst" aria-level="2" tabIndex={-1} style={{"--tree-padding": "20px"}}>
                             <TreeItemLabel className="not-in-data-[folder=true]:ps-5">
                               <span className="flex flex-1 gap-2 items-center min-w-0">
-                                <Checkbox className="size-3.5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_1j_" aria-checked="false" aria-label="Dispute analyst"></Checkbox>
-                                <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <Checkbox className="size-3.5" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_1j_" aria-checked="false" aria-label="Dispute analyst"></Checkbox>
+                                <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                 <span className="min-w-0 truncate">
                                   {"Dispute analyst"}
                                 </span>
                               </span>
                             </TreeItemLabel>
                           </div>
-                          <button className="data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" type="button" data-focus="false" data-folder="true" aria-expanded="false" role="treeitem" aria-setsize="7" aria-posinset="4" aria-selected="false" aria-label="Support roles" aria-level="1" tabIndex="-1" style={{"--tree-padding": "0px"}}>
+                          <button className="data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" type="button" data-focus="false" data-folder="true" aria-expanded="false" role="treeitem" aria-setsize="7" aria-posinset="4" aria-selected="false" aria-label="Support roles" aria-level="1" tabIndex={-1} style={{"--tree-padding": "0px"}}>
                             <TreeItemLabel className="not-in-data-[folder=true]:ps-5">
-                              <svg className="in-aria-[expanded=false]:-rotate-90 lucide lucide-chevron-down size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
+                              <svg className="in-aria-[expanded=false]:-rotate-90 lucide lucide-chevron-down size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                                 <path d="m6 9 6 6 6-6"></path>
                               </svg>
                               <span className="font-medium truncate">
@@ -535,9 +535,9 @@ export function Pattern() {
                               </span>
                             </TreeItemLabel>
                           </button>
-                          <button className="data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" type="button" data-focus="false" data-folder="true" aria-expanded="false" role="treeitem" aria-setsize="7" aria-posinset="5" aria-selected="false" aria-label="View only roles" aria-level="1" tabIndex="-1" style={{"--tree-padding": "0px"}}>
+                          <button className="data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" type="button" data-focus="false" data-folder="true" aria-expanded="false" role="treeitem" aria-setsize="7" aria-posinset="5" aria-selected="false" aria-label="View only roles" aria-level="1" tabIndex={-1} style={{"--tree-padding": "0px"}}>
                             <TreeItemLabel className="not-in-data-[folder=true]:ps-5">
-                              <svg className="in-aria-[expanded=false]:-rotate-90 lucide lucide-chevron-down size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
+                              <svg className="in-aria-[expanded=false]:-rotate-90 lucide lucide-chevron-down size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                                 <path d="m6 9 6 6 6-6"></path>
                               </svg>
                               <span className="font-medium truncate">
@@ -545,9 +545,9 @@ export function Pattern() {
                               </span>
                             </TreeItemLabel>
                           </button>
-                          <button className="data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" type="button" data-focus="false" data-folder="true" aria-expanded="false" role="treeitem" aria-setsize="7" aria-posinset="6" aria-selected="false" aria-label="Identity roles" aria-level="1" tabIndex="-1" style={{"--tree-padding": "0px"}}>
+                          <button className="data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" type="button" data-focus="false" data-folder="true" aria-expanded="false" role="treeitem" aria-setsize="7" aria-posinset="6" aria-selected="false" aria-label="Identity roles" aria-level="1" tabIndex={-1} style={{"--tree-padding": "0px"}}>
                             <TreeItemLabel className="not-in-data-[folder=true]:ps-5">
-                              <svg className="in-aria-[expanded=false]:-rotate-90 lucide lucide-chevron-down size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
+                              <svg className="in-aria-[expanded=false]:-rotate-90 lucide lucide-chevron-down size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                                 <path d="m6 9 6 6 6-6"></path>
                               </svg>
                               <span className="font-medium truncate">
@@ -555,9 +555,9 @@ export function Pattern() {
                               </span>
                             </TreeItemLabel>
                           </button>
-                          <button className="data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" type="button" data-focus="false" data-folder="true" aria-expanded="false" role="treeitem" aria-setsize="7" aria-posinset="7" aria-selected="false" aria-label="Sandbox roles" aria-level="1" tabIndex="-1" style={{"--tree-padding": "0px"}}>
+                          <button className="data-[disabled]:opacity-50 data-[disabled]:pointer-events-none focus:z-20 not-last:pb-0.5 outline-hidden ps-(--tree-padding) select-none z-10" type="button" data-focus="false" data-folder="true" aria-expanded="false" role="treeitem" aria-setsize="7" aria-posinset="7" aria-selected="false" aria-label="Sandbox roles" aria-level="1" tabIndex={-1} style={{"--tree-padding": "0px"}}>
                             <TreeItemLabel className="not-in-data-[folder=true]:ps-5">
-                              <svg className="in-aria-[expanded=false]:-rotate-90 lucide lucide-chevron-down size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
+                              <svg className="in-aria-[expanded=false]:-rotate-90 lucide lucide-chevron-down size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                                 <path d="m6 9 6 6 6-6"></path>
                               </svg>
                               <span className="font-medium truncate">
@@ -579,9 +579,9 @@ export function Pattern() {
                           {"Internal Note"}
                         </FieldLabel>
                         <Tooltip>
-                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Internal Note hint" id="base-ui-_r_13_" baseUiTooltipTrigger="">
-                          <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
-                            <circle cx="12" cy="12" r="10"></circle>
+                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Internal Note hint" id="base-ui-_r_13_" baseUiTooltipTrigger="">
+                          <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
+                            <circle cx={12} cy={12} r={10}></circle>
                             <path d="M12 16v-4"></path>
                             <path d="M12 8h.01"></path>
                           </svg>

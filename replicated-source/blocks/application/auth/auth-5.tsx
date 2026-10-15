@@ -33,8 +33,8 @@ export function Pattern() {
           <div className="flex gap-2.5 items-center">
             <Item className="bg-primary p-0 size-9 text-primary-foreground" variant="default" size="default" aria-hidden="true">
               <ItemMedia className="size-auto" variant="icon">
-                <svg className="size-[18px]" width="50" height="50" viewBox="25.668 25.1352 49.6644 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="70.634" cy="29.8334" r="4.69799" fill="currentColor"></circle>
+                <svg className="size-[18px]" width={50} height={50} viewBox="25.668 25.1352 49.6644 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx={70.634} cy={29.8334} r={4.69799} fill="currentColor"></circle>
                   <path fillRule="evenodd" clipRule="evenodd" d="M25.668 57.0144V29.8332C25.668 27.2386 27.7713 25.1352 30.366 25.1352C32.9606 25.1352 35.0639 27.2386 35.0639 29.8332V57.0144C35.0639 61.833 38.9702 65.7392 43.7888 65.7392H57.2116C62.0302 65.7392 65.9364 61.833 65.9364 57.0144V43.7258C65.9364 41.1312 68.0398 39.0278 70.6344 39.0278C73.229 39.0278 75.3324 41.1312 75.3324 43.7258V57.0144C75.3324 67.0222 67.2194 75.1352 57.2116 75.1352H43.7888C33.7809 75.1352 25.668 67.0222 25.668 57.0144Z" fill="currentColor"></path>
                 </svg>
               </ItemMedia>
@@ -81,12 +81,12 @@ export function Pattern() {
                   </div>
                 </div>
                 <div className="flex flex-col gap-3">
-                  <Button className="w-full" type="button" tabIndex="0">
+                  <Button className="w-full" type="button" tabIndex={0}>
                     <svg className="shrink-0 size-4" aria-hidden="true" xmlns:xlink="http://www.w3.org/1999/xlink" xmlSpace="preserve" overflow="hidden" viewBox="0 0 268.152 273.883">
                       <defs>
                         <lineargradient id="a">
-                          <stop offset="0" stopColor="#0fbc5c"></stop>
-                          <stop offset="1" stopColor="#0cba65"></stop>
+                          <stop offset={0} stopColor="#0fbc5c"></stop>
+                          <stop offset={1} stopColor="#0cba65"></stop>
                         </lineargradient>
                         <lineargradient id="g">
                           <stop offset=".231" stopColor="#0fbc5f"></stop>
@@ -98,7 +98,7 @@ export function Pattern() {
                           <stop offset=".771" stopColor="#38c02b"></stop>
                           <stop offset=".861" stopColor="#52c218"></stop>
                           <stop offset=".915" stopColor="#67c30f"></stop>
-                          <stop offset="1" stopColor="#86c504"></stop>
+                          <stop offset={1} stopColor="#86c504"></stop>
                         </lineargradient>
                         <lineargradient id="h">
                           <stop offset=".142" stopColor="#1abd4d"></stop>
@@ -117,7 +117,7 @@ export function Pattern() {
                           <stop offset=".604" stopColor="#ff692c"></stop>
                           <stop offset=".727" stopColor="#ff7825"></stop>
                           <stop offset=".885" stopColor="#ff8d1b"></stop>
-                          <stop offset="1" stopColor="#ff9f13"></stop>
+                          <stop offset={1} stopColor="#ff9f13"></stop>
                         </lineargradient>
                         <lineargradient id="b">
                           <stop offset=".231" stopColor="#ff4541"></stop>
@@ -127,11 +127,11 @@ export function Pattern() {
                           <stop offset=".699" stopColor="#ff5138"></stop>
                           <stop offset=".771" stopColor="#ff5b33"></stop>
                           <stop offset=".861" stopColor="#ff6c29"></stop>
-                          <stop offset="1" stopColor="#ff8c18"></stop>
+                          <stop offset={1} stopColor="#ff8c18"></stop>
                         </lineargradient>
                         <lineargradient id="d">
                           <stop offset=".408" stopColor="#fb4e5a"></stop>
-                          <stop offset="1" stopColor="#ff4540"></stop>
+                          <stop offset={1} stopColor="#ff4540"></stop>
                         </lineargradient>
                         <lineargradient id="c">
                           <stop offset=".132" stopColor="#0cba65"></stop>
@@ -152,20 +152,20 @@ export function Pattern() {
                           <stop offset=".771" stopColor="#ffcd0a"></stop>
                           <stop offset=".861" stopColor="#fecf0a"></stop>
                           <stop offset=".915" stopColor="#fecf08"></stop>
-                          <stop offset="1" stopColor="#fdcd01"></stop>
+                          <stop offset={1} stopColor="#fdcd01"></stop>
                         </lineargradient>
-                        <lineargradient xlinkHref="#a" id="s" x1="219.7" x2="254.467" y1="329.535" y2="329.535" gradientUnits="userSpaceOnUse"></lineargradient>
-                        <radialgradient xlinkHref="#b" id="m" cx="109.627" cy="135.862" r="71.46" fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 1.043 1.45573 2.55542 290.525 -400.634)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <radialgradient xlinkHref="#c" id="n" cx="45.259" cy="279.274" r="71.46" fx="45.259" fy="279.274" gradientTransform="matrix(-3.5126 -4.45809 -1.69255 1.26062 870.8 191.554)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <radialgradient xlinkHref="#d" id="l" cx="304.017" cy="118.009" r="47.854" fx="304.017" fy="118.009" gradientTransform="matrix(2.06435 0 0 2.59204 -297.679 -151.747)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <radialgradient xlinkHref="#e" id="o" cx="181.001" cy="177.201" r="71.46" fx="181.001" fy="177.201" gradientTransform="matrix(-.24858 2.08314 2.96249 .33417 -255.146 -331.164)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <radialgradient xlinkHref="#f" id="p" cx="207.673" cy="108.097" r="41.102" fx="207.673" fy="108.097" gradientTransform="matrix(-1.2492 1.34326 -3.89684 -3.4257 880.501 194.905)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <radialgradient xlinkHref="#g" id="r" cx="109.627" cy="135.862" r="71.46" fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 -1.043 1.45573 -2.55542 290.525 838.683)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <radialgradient xlinkHref="#h" id="j" cx="154.87" cy="145.969" r="71.46" fx="154.87" fy="145.969" gradientTransform="matrix(-.0814 -1.93722 2.92674 -.11625 -215.135 632.86)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <filter id="q" width="1.097" height="1.116" x="-.048" y="-.058" color-interpolation-filters="sRGB">
+                        <lineargradient xlinkHref="#a" id="s" x1={219.7} x2={254.467} y1={329.535} y2={329.535} gradientUnits="userSpaceOnUse"></lineargradient>
+                        <radialgradient xlinkHref="#b" id="m" cx={109.627} cy={135.862} r={71.46} fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 1.043 1.45573 2.55542 290.525 -400.634)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <radialgradient xlinkHref="#c" id="n" cx={45.259} cy={279.274} r={71.46} fx="45.259" fy="279.274" gradientTransform="matrix(-3.5126 -4.45809 -1.69255 1.26062 870.8 191.554)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <radialgradient xlinkHref="#d" id="l" cx={304.017} cy={118.009} r={47.854} fx="304.017" fy="118.009" gradientTransform="matrix(2.06435 0 0 2.59204 -297.679 -151.747)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <radialgradient xlinkHref="#e" id="o" cx={181.001} cy={177.201} r={71.46} fx="181.001" fy="177.201" gradientTransform="matrix(-.24858 2.08314 2.96249 .33417 -255.146 -331.164)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <radialgradient xlinkHref="#f" id="p" cx={207.673} cy={108.097} r={41.102} fx="207.673" fy="108.097" gradientTransform="matrix(-1.2492 1.34326 -3.89684 -3.4257 880.501 194.905)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <radialgradient xlinkHref="#g" id="r" cx={109.627} cy={135.862} r={71.46} fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 -1.043 1.45573 -2.55542 290.525 838.683)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <radialgradient xlinkHref="#h" id="j" cx={154.87} cy={145.969} r={71.46} fx="154.87" fy="145.969" gradientTransform="matrix(-.0814 -1.93722 2.92674 -.11625 -215.135 632.86)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <filter id="q" width={1.097} height={1.116} x="-.048" y="-.058" color-interpolation-filters="sRGB">
                           <fegaussianblur stdDeviation="1.701"></fegaussianblur>
                         </filter>
-                        <filter id="k" width="1.033" height="1.02" x="-.017" y="-.01" color-interpolation-filters="sRGB">
+                        <filter id="k" width={1.033} height={1.02} x="-.017" y="-.01" color-interpolation-filters="sRGB">
                           <fegaussianblur stdDeviation=".242"></fegaussianblur>
                         </filter>
                         <clippath id="i" clippathunits="userSpaceOnUse">
@@ -188,7 +188,7 @@ export function Pattern() {
                       {"Continue with Google"}
                     </span>
                   </Button>
-                  <Button className="w-full" type="button" tabIndex="0">
+                  <Button className="w-full" type="button" tabIndex={0}>
                     <span className="dark:hidden" aria-hidden="true">
                       <svg className="shrink-0 size-4" aria-hidden="true" viewBox="0 0 1024 1024" fill="none">
                         <path fill="#1b1f23" fillRule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 417.92 350.08 485.76 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36-128.64 23.68-161.92-31.36-172.16-60.16-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-33.28-.64-33.92 40.32-.64 69.12 37.12 78.72 52.48 46.08 77.44 119.68 55.68 149.12 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-232.96-56.96-232.96-252.8 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 196.48-119.68 240-233.6 252.8 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 929.92 1024 737.92 1024 512 1024 229.12 794.88 0 512 0" clipRule="evenodd"></path>
@@ -226,19 +226,19 @@ export function Pattern() {
                       <InputGroup role="group">
                         <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="auth-5-password" autoComplete="new-password" placeholder="8+ characters" required type="password" />
                         <InputGroupAddon role="group" data-align="inline-end">
-                          <Button className="cn-input-group-button cn-input-group-button-size-icon-xs flex hover:text-foreground shadow-none text-muted-foreground" type="button" tabIndex="0" size="icon-xs" aria-label="Show password" aria-pressed="false">
-                            <svg className="lucide lucide-eye size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EyeIcon" tabler="IconEye" hugeicons="ViewIcon" phosphor="EyeIcon" remixicon="RiEyeLine" aria-hidden="true">
+                          <Button className="cn-input-group-button cn-input-group-button-size-icon-xs flex hover:text-foreground shadow-none text-muted-foreground" type="button" tabIndex={0} size="icon-xs" aria-label="Show password" aria-pressed="false">
+                            <svg className="lucide lucide-eye size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="EyeIcon" tabler="IconEye" hugeicons="ViewIcon" phosphor="EyeIcon" remixicon="RiEyeLine" aria-hidden="true">
                               <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path>
-                              <circle cx="12" cy="12" r="3"></circle>
+                              <circle cx={12} cy={12} r={3}></circle>
                             </svg>
                           </Button>
                         </InputGroupAddon>
                       </InputGroup>
                     </Field>
                   </FieldGroup>
-                  <Button className="mt-1.5 w-full" type="submit" tabIndex="0">
+                  <Button className="mt-1.5 w-full" type="submit" tabIndex={0}>
                     {"Start free trial"}
-                    <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true" data-icon="inline-end">
+                    <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true" data-icon="inline-end">
                       <path d="M5 12h14"></path>
                       <path d="m12 5 7 7-7 7"></path>
                     </svg>

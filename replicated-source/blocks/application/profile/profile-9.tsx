@@ -63,7 +63,7 @@ export function Pattern() {
                   <SidebarMenuItem sidebar="menu-item">
                     <SidebarProvider>
                     <SidebarMenuButton type="button" id="base-ui-_r_1_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-expanded="true" aria-controls="profile-9-sidebar-account" extracted="1">
-                      <svg className="lucide lucide-user-round-cog" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UserRoundCogIcon" tabler="IconUserCog" hugeicons="UserSettings01Icon" phosphor="UserCircleGearIcon" remixicon="RiUserSettingsLine" aria-hidden="true">
+                      <svg className="lucide lucide-user-round-cog" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UserRoundCogIcon" tabler="IconUserCog" hugeicons="UserSettings01Icon" phosphor="UserCircleGearIcon" remixicon="RiUserSettingsLine" aria-hidden="true">
                         <path d="m14.305 19.53.923-.382"></path>
                         <path d="m15.228 16.852-.923-.383"></path>
                         <path d="m16.852 15.228-.383-.923"></path>
@@ -73,13 +73,13 @@ export function Pattern() {
                         <path d="M2 21a8 8 0 0 1 10.434-7.62"></path>
                         <path d="m20.772 16.852.924-.383"></path>
                         <path d="m20.772 19.148.924.383"></path>
-                        <circle cx="10" cy="8" r="5"></circle>
-                        <circle cx="18" cy="18" r="3"></circle>
+                        <circle cx={10} cy={8} r={5}></circle>
+                        <circle cx={18} cy={18} r={3}></circle>
                       </svg>
                       <span>
                         {"Account"}
                       </span>
-                      <svg className="duration-200 group-data-[collapsible=icon]:hidden lucide lucide-chevron-right ml-auto opacity-60 rotate-90 shrink-0 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                      <svg className="duration-200 group-data-[collapsible=icon]:hidden lucide lucide-chevron-right ml-auto opacity-60 rotate-90 shrink-0 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                         <path d="m9 18 6-6-6-6"></path>
                       </svg>
                     </SidebarMenuButton>
@@ -125,7 +125,7 @@ export function Pattern() {
                   <SidebarMenuItem sidebar="menu-item">
                     <SidebarProvider>
                     <SidebarMenuButton type="button" id="base-ui-_r_3_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-expanded="true" aria-controls="profile-9-sidebar-workspace">
-                      <svg className="lucide lucide-building-2 lucide-building2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Building2Icon" tabler="IconBuilding" hugeicons="Building02Icon" phosphor="BuildingsIcon" remixicon="RiBuildingLine" aria-hidden="true">
+                      <svg className="lucide lucide-building-2 lucide-building2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Building2Icon" tabler="IconBuilding" hugeicons="Building02Icon" phosphor="BuildingsIcon" remixicon="RiBuildingLine" aria-hidden="true">
                         <path d="M10 12h4"></path>
                         <path d="M10 8h4"></path>
                         <path d="M14 21v-3a2 2 0 0 0-4 0v3"></path>
@@ -135,7 +135,7 @@ export function Pattern() {
                       <span>
                         {"Workspace"}
                       </span>
-                      <svg className="duration-200 group-data-[collapsible=icon]:hidden lucide lucide-chevron-right ml-auto opacity-60 rotate-90 shrink-0 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                      <svg className="duration-200 group-data-[collapsible=icon]:hidden lucide lucide-chevron-right ml-auto opacity-60 rotate-90 shrink-0 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                         <path d="m9 18 6-6-6-6"></path>
                       </svg>
                     </SidebarMenuButton>
@@ -181,14 +181,14 @@ export function Pattern() {
                   <SidebarMenuItem sidebar="menu-item">
                     <SidebarProvider>
                     <SidebarMenuButton type="button" id="base-ui-_r_5_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-expanded="true" aria-controls="profile-9-sidebar-developers">
-                      <svg className="lucide lucide-code" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CodeIcon" tabler="IconCode" hugeicons="SourceCodeIcon" phosphor="CodeIcon" remixicon="RiCodeSSlashLine" aria-hidden="true">
+                      <svg className="lucide lucide-code" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CodeIcon" tabler="IconCode" hugeicons="SourceCodeIcon" phosphor="CodeIcon" remixicon="RiCodeSSlashLine" aria-hidden="true">
                         <path d="m16 18 6-6-6-6"></path>
                         <path d="m8 6-6 6 6 6"></path>
                       </svg>
                       <span>
                         {"Developers"}
                       </span>
-                      <svg className="duration-200 group-data-[collapsible=icon]:hidden lucide lucide-chevron-right ml-auto opacity-60 rotate-90 shrink-0 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                      <svg className="duration-200 group-data-[collapsible=icon]:hidden lucide lucide-chevron-right ml-auto opacity-60 rotate-90 shrink-0 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                         <path d="m9 18 6-6-6-6"></path>
                       </svg>
                     </SidebarMenuButton>
@@ -269,10 +269,10 @@ export function Pattern() {
                         </FieldDescription>
                       </FieldContent>
                       <FieldContent className="min-w-0 w-full">
-                        <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_6_" aria-checked="true" size="default" aria-labelledby="profile-9-email-signup-label">
+                        <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_6_" aria-checked="true" size="default" aria-labelledby="profile-9-email-signup-label">
                           <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                         </Switch>
-                        <input id="profile-9-email-signup" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input id="profile-9-email-signup" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </FieldContent>
                     </Field>
                     <Field className="gap-y-2.5 grid md:gap-x-7 md:grid-cols-[minmax(0,clamp(15.5rem,43%,17.8rem))_minmax(0,1fr)] md:items-center px-4 py-2.5" role="group" data-orientation="vertical">
@@ -287,10 +287,10 @@ export function Pattern() {
                         </FieldDescription>
                       </FieldContent>
                       <FieldContent className="min-w-0 w-full">
-                        <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_9_" aria-checked="true" size="default" aria-labelledby="profile-9-password-label">
+                        <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_9_" aria-checked="true" size="default" aria-labelledby="profile-9-password-label">
                           <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                         </Switch>
-                        <input id="profile-9-password" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input id="profile-9-password" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </FieldContent>
                     </Field>
                     <Field className="gap-y-2.5 grid md:gap-x-7 md:grid-cols-[minmax(0,clamp(15.5rem,43%,17.8rem))_minmax(0,1fr)] md:items-center px-4 py-2.5" role="group" data-orientation="vertical">
@@ -306,17 +306,17 @@ export function Pattern() {
                       </FieldContent>
                       <FieldContent className="min-w-0 w-full">
                         <Select>
-                        <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="profile-9-verification" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                        <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex={0} id="profile-9-verification" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                           <SelectValue>
                             {"Verification Code"}
                           </SelectValue>
-                          <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                          <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
                             {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
-                        <input id="base-ui-_r_c_-hidden-input" tabIndex="-1" aria-hidden="true" value="otp" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input id="base-ui-_r_c_-hidden-input" tabIndex={-1} aria-hidden="true" value="otp" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </FieldContent>
                     </Field>
                   </FieldGroup>
@@ -348,10 +348,10 @@ export function Pattern() {
                         </FieldDescription>
                       </FieldContent>
                       <FieldContent className="min-w-0 w-full">
-                        <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_f_" aria-checked="true" size="default" aria-labelledby="profile-9-require-email-label">
+                        <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_f_" aria-checked="true" size="default" aria-labelledby="profile-9-require-email-label">
                           <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                         </Switch>
-                        <input id="profile-9-require-email" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input id="profile-9-require-email" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </FieldContent>
                     </Field>
                     <Field className="gap-y-2.5 grid md:gap-x-7 md:grid-cols-[minmax(0,clamp(15.5rem,43%,17.8rem))_minmax(0,1fr)] md:items-center px-4 py-2.5" role="group" data-orientation="vertical">
@@ -367,17 +367,17 @@ export function Pattern() {
                       </FieldContent>
                       <FieldContent className="min-w-0 w-full">
                         <Select>
-                        <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="profile-9-session-duration" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                        <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex={0} id="profile-9-session-duration" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                           <SelectValue>
                             {"24 Hours"}
                           </SelectValue>
-                          <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                          <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
                             {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
-                        <input id="base-ui-_r_i_-hidden-input" tabIndex="-1" aria-hidden="true" value="24h" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input id="base-ui-_r_i_-hidden-input" tabIndex={-1} aria-hidden="true" value="24h" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </FieldContent>
                     </Field>
                     <Field className="gap-y-2.5 grid md:gap-x-7 md:grid-cols-[minmax(0,clamp(15.5rem,43%,17.8rem))_minmax(0,1fr)] md:items-center px-4 py-2.5" role="group" data-orientation="vertical">
@@ -392,20 +392,20 @@ export function Pattern() {
                         </FieldDescription>
                       </FieldContent>
                       <FieldContent className="min-w-0 w-full">
-                        <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_l_" aria-checked="false" size="default" aria-labelledby="profile-9-restrict-changes-label">
+                        <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_l_" aria-checked="false" size="default" aria-labelledby="profile-9-restrict-changes-label">
                           <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                         </Switch>
-                        <input id="profile-9-restrict-changes" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input id="profile-9-restrict-changes" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </FieldContent>
                     </Field>
                   </FieldGroup>
                 </CardContent>
                 <CardFooter className="border-t gap-2 justify-end px-4 py-2.5">
-                  <Button type="button" tabIndex="0">
+                  <Button type="button" tabIndex={0}>
                     {"Cancel"}
                   </Button>
-                  <Button type="submit" tabIndex="0" form="profile-9-settings">
-                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" data-icon="inline-start" aria-hidden="true">
+                  <Button type="submit" tabIndex={0} form="profile-9-settings">
+                    <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" data-icon="inline-start" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     {"Save Changes"}

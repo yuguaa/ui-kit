@@ -47,43 +47,43 @@ export function Pattern() {
           </div>
           <div className="flex flex-wrap gap-2 items-center">
             <ToggleGroup className="flex-wrap" data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="2" aria-label="Filter by activity type" style={{"--gap": "2"}}>
-              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="2" extracted="1">
+              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex={0} aria-pressed="true" variant="outline" size="sm" spacing="2" extracted="1">
                 {"All"}
               </ToggleGroupItem>
-              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="2">
+              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="outline" size="sm" spacing="2">
                 {"Calls"}
               </ToggleGroupItem>
-              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="2">
+              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="outline" size="sm" spacing="2">
                 {"Emails"}
               </ToggleGroupItem>
-              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="2">
+              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="outline" size="sm" spacing="2">
                 {"Meetings"}
               </ToggleGroupItem>
-              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="2">
+              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="outline" size="sm" spacing="2">
                 {"Notes"}
               </ToggleGroupItem>
-              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="2">
+              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-3 whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="outline" size="sm" spacing="2">
                 {"Tasks"}
               </ToggleGroupItem>
             </ToggleGroup>
             <Select>
-            <SelectTrigger className="sm:ml-auto w-[150px]" type="button" tabIndex="0" id="base-ui-_r_6_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm">
-              <svg className="lucide lucide-users size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+            <SelectTrigger className="sm:ml-auto w-[150px]" type="button" tabIndex={0} id="base-ui-_r_6_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm">
+              <svg className="lucide lucide-users size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                 <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                 <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                 <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                <circle cx="9" cy="7" r="4"></circle>
+                <circle cx={9} cy={7} r={4}></circle>
               </svg>
               <SelectValue>
                 {"All owners"}
               </SelectValue>
-              <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+              <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
                 {"▼"}
               </svg>
             </SelectTrigger>
             </Select>
-            <input id="base-ui-_r_6_-hidden-input" tabIndex="-1" aria-hidden="true" value="all" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+            <input id="base-ui-_r_6_-hidden-input" tabIndex={-1} aria-hidden="true" value="all" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
           </div>
         </div>
         <div className="space-y-8">
@@ -111,8 +111,8 @@ export function Pattern() {
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
-                    <svg className="lucide lucide-smartphone size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SmartphoneIcon" tabler="IconDeviceMobile" hugeicons="SmartPhone01Icon" phosphor="DeviceMobileIcon" remixicon="RiSmartphoneLine" aria-hidden="true">
-                      <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
+                    <svg className="lucide lucide-smartphone size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SmartphoneIcon" tabler="IconDeviceMobile" hugeicons="SmartPhone01Icon" phosphor="DeviceMobileIcon" remixicon="RiSmartphoneLine" aria-hidden="true">
+                      <rect width={14} height={20} x={5} y={2} rx={2} ry={2}></rect>
                       <path d="M12 18h.01"></path>
                     </svg>
                   </TimelineIndicator>
@@ -121,7 +121,7 @@ export function Pattern() {
                   <Frame spacing="sm">
                     <Collapsible className="group/collapsible" data-open="">
                       <Collapsible>
-                      <CollapsibleTrigger className="flex w-full" type="button" panelOpen="" tabIndex="0" aria-disabled="false" aria-controls="base-ui-_r_9_" aria-expanded="true" aria-label="Toggle Budget Call details">
+                      <CollapsibleTrigger className="flex w-full" type="button" panelOpen="" tabIndex={0} aria-disabled="false" aria-controls="base-ui-_r_9_" aria-expanded="true" aria-label="Toggle Budget Call details">
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
@@ -131,7 +131,7 @@ export function Pattern() {
                               {"9:12 AM"}
                             </span>
                           </div>
-                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                         </header>
@@ -157,9 +157,9 @@ export function Pattern() {
                                   </span>
                                 </span>
                               </div>
-                              <Button type="button" tabIndex="0">
-                                <svg className="lucide lucide-copy size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
-                                  <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                              <Button type="button" tabIndex={0}>
+                                <svg className="lucide lucide-copy size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
+                                  <rect width={14} height={14} x={8} y={8} rx={2} ry={2}></rect>
                                   <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                                 </svg>
                                 {"ACT-2841"}
@@ -185,9 +185,9 @@ export function Pattern() {
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
-                    <svg className="lucide lucide-mail size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
+                    <svg className="lucide lucide-mail size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
                       <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                      <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                      <rect x={2} y={4} width={20} height={16} rx={2}></rect>
                     </svg>
                   </TimelineIndicator>
                 </TimelineHeader>
@@ -195,7 +195,7 @@ export function Pattern() {
                   <Frame spacing="sm">
                     <Collapsible className="group/collapsible" data-open="">
                       <Collapsible>
-                      <CollapsibleTrigger className="flex w-full" type="button" panelOpen="" tabIndex="0" aria-disabled="false" aria-controls="base-ui-_r_a_" aria-expanded="true" aria-label="Toggle Pricing Reply details">
+                      <CollapsibleTrigger className="flex w-full" type="button" panelOpen="" tabIndex={0} aria-disabled="false" aria-controls="base-ui-_r_a_" aria-expanded="true" aria-label="Toggle Pricing Reply details">
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
@@ -205,7 +205,7 @@ export function Pattern() {
                               {"8:47 AM"}
                             </span>
                           </div>
-                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                         </header>
@@ -231,9 +231,9 @@ export function Pattern() {
                                   </span>
                                 </span>
                               </div>
-                              <Button type="button" tabIndex="0">
-                                <svg className="lucide lucide-copy size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
-                                  <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                              <Button type="button" tabIndex={0}>
+                                <svg className="lucide lucide-copy size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
+                                  <rect width={14} height={14} x={8} y={8} rx={2} ry={2}></rect>
                                   <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                                 </svg>
                                 {"ACT-2840"}
@@ -259,8 +259,8 @@ export function Pattern() {
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
-                    <svg className="lucide lucide-square-check size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SquareCheckIcon" tabler="IconSquareCheck" hugeicons="CheckmarkSquare02Icon" phosphor="CheckSquareIcon" remixicon="RiCheckboxLine" aria-hidden="true">
-                      <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                    <svg className="lucide lucide-square-check size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SquareCheckIcon" tabler="IconSquareCheck" hugeicons="CheckmarkSquare02Icon" phosphor="CheckSquareIcon" remixicon="RiCheckboxLine" aria-hidden="true">
+                      <rect width={18} height={18} x={3} y={3} rx={2}></rect>
                       <path d="m9 12 2 2 4-4"></path>
                     </svg>
                   </TimelineIndicator>
@@ -269,7 +269,7 @@ export function Pattern() {
                   <Frame spacing="sm">
                     <Collapsible className="group/collapsible" data-closed="">
                       <Collapsible>
-                      <CollapsibleTrigger className="flex w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false" aria-label="Toggle Closed Won details">
+                      <CollapsibleTrigger className="flex w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false" aria-label="Toggle Closed Won details">
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
@@ -279,7 +279,7 @@ export function Pattern() {
                               {"8:05 AM"}
                             </span>
                           </div>
-                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                         </header>
@@ -302,7 +302,7 @@ export function Pattern() {
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
-                    <svg className="lucide lucide-file-text size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileTextIcon" tabler="IconFileText" hugeicons="File02Icon" phosphor="FileTextIcon" remixicon="RiFileTextLine" aria-hidden="true">
+                    <svg className="lucide lucide-file-text size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FileTextIcon" tabler="IconFileText" hugeicons="File02Icon" phosphor="FileTextIcon" remixicon="RiFileTextLine" aria-hidden="true">
                       <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                       <path d="M10 9H8"></path>
@@ -315,7 +315,7 @@ export function Pattern() {
                   <Frame spacing="sm">
                     <Collapsible className="group/collapsible" data-closed="">
                       <Collapsible>
-                      <CollapsibleTrigger className="flex w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false" aria-label="Toggle Risk Note details">
+                      <CollapsibleTrigger className="flex w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false" aria-label="Toggle Risk Note details">
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
@@ -325,7 +325,7 @@ export function Pattern() {
                               {"7:40 AM"}
                             </span>
                           </div>
-                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                         </header>
@@ -361,10 +361,10 @@ export function Pattern() {
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
-                    <svg className="lucide lucide-calendar size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
+                    <svg className="lucide lucide-calendar size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
                       <path d="M8 2v4"></path>
                       <path d="M16 2v4"></path>
-                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                      <rect width={18} height={18} x={3} y={4} rx={2}></rect>
                       <path d="M3 10h18"></path>
                     </svg>
                   </TimelineIndicator>
@@ -373,7 +373,7 @@ export function Pattern() {
                   <Frame spacing="sm">
                     <Collapsible className="group/collapsible" data-closed="">
                       <Collapsible>
-                      <CollapsibleTrigger className="flex w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false" aria-label="Toggle Vertex Demo details">
+                      <CollapsibleTrigger className="flex w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false" aria-label="Toggle Vertex Demo details">
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
@@ -383,7 +383,7 @@ export function Pattern() {
                               {"4:30 PM"}
                             </span>
                           </div>
-                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                         </header>
@@ -406,8 +406,8 @@ export function Pattern() {
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
-                    <svg className="lucide lucide-smartphone size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SmartphoneIcon" tabler="IconDeviceMobile" hugeicons="SmartPhone01Icon" phosphor="DeviceMobileIcon" remixicon="RiSmartphoneLine" aria-hidden="true">
-                      <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
+                    <svg className="lucide lucide-smartphone size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SmartphoneIcon" tabler="IconDeviceMobile" hugeicons="SmartPhone01Icon" phosphor="DeviceMobileIcon" remixicon="RiSmartphoneLine" aria-hidden="true">
+                      <rect width={14} height={20} x={5} y={2} rx={2} ry={2}></rect>
                       <path d="M12 18h.01"></path>
                     </svg>
                   </TimelineIndicator>
@@ -416,7 +416,7 @@ export function Pattern() {
                   <Frame spacing="sm">
                     <Collapsible className="group/collapsible" data-closed="">
                       <Collapsible>
-                      <CollapsibleTrigger className="flex w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false" aria-label="Toggle Voicemail Left details">
+                      <CollapsibleTrigger className="flex w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false" aria-label="Toggle Voicemail Left details">
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
@@ -426,7 +426,7 @@ export function Pattern() {
                               {"2:18 PM"}
                             </span>
                           </div>
-                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                         </header>
@@ -462,9 +462,9 @@ export function Pattern() {
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
-                    <svg className="lucide lucide-mail size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
+                    <svg className="lucide lucide-mail size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
                       <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                      <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                      <rect x={2} y={4} width={20} height={16} rx={2}></rect>
                     </svg>
                   </TimelineIndicator>
                 </TimelineHeader>
@@ -472,7 +472,7 @@ export function Pattern() {
                   <Frame spacing="sm">
                     <Collapsible className="group/collapsible" data-closed="">
                       <Collapsible>
-                      <CollapsibleTrigger className="flex w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false" aria-label="Toggle Quote Accepted details">
+                      <CollapsibleTrigger className="flex w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false" aria-label="Toggle Quote Accepted details">
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
@@ -482,7 +482,7 @@ export function Pattern() {
                               {"Tue 5:02 PM"}
                             </span>
                           </div>
-                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                         </header>
@@ -505,8 +505,8 @@ export function Pattern() {
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
-                    <svg className="lucide lucide-square-check size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SquareCheckIcon" tabler="IconSquareCheck" hugeicons="CheckmarkSquare02Icon" phosphor="CheckSquareIcon" remixicon="RiCheckboxLine" aria-hidden="true">
-                      <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                    <svg className="lucide lucide-square-check size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SquareCheckIcon" tabler="IconSquareCheck" hugeicons="CheckmarkSquare02Icon" phosphor="CheckSquareIcon" remixicon="RiCheckboxLine" aria-hidden="true">
+                      <rect width={18} height={18} x={3} y={3} rx={2}></rect>
                       <path d="m9 12 2 2 4-4"></path>
                     </svg>
                   </TimelineIndicator>
@@ -515,7 +515,7 @@ export function Pattern() {
                   <Frame spacing="sm">
                     <Collapsible className="group/collapsible" data-closed="">
                       <Collapsible>
-                      <CollapsibleTrigger className="flex w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false" aria-label="Toggle Renewal Review details">
+                      <CollapsibleTrigger className="flex w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false" aria-label="Toggle Renewal Review details">
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
@@ -525,7 +525,7 @@ export function Pattern() {
                               {"Tue 10:15 AM"}
                             </span>
                           </div>
-                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                         </header>
@@ -548,8 +548,8 @@ export function Pattern() {
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
-                    <svg className="lucide lucide-smartphone size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SmartphoneIcon" tabler="IconDeviceMobile" hugeicons="SmartPhone01Icon" phosphor="DeviceMobileIcon" remixicon="RiSmartphoneLine" aria-hidden="true">
-                      <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
+                    <svg className="lucide lucide-smartphone size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SmartphoneIcon" tabler="IconDeviceMobile" hugeicons="SmartPhone01Icon" phosphor="DeviceMobileIcon" remixicon="RiSmartphoneLine" aria-hidden="true">
+                      <rect width={14} height={20} x={5} y={2} rx={2} ry={2}></rect>
                       <path d="M12 18h.01"></path>
                     </svg>
                   </TimelineIndicator>
@@ -558,7 +558,7 @@ export function Pattern() {
                   <Frame spacing="sm">
                     <Collapsible className="group/collapsible" data-closed="">
                       <Collapsible>
-                      <CollapsibleTrigger className="flex w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false" aria-label="Toggle Call Missed details">
+                      <CollapsibleTrigger className="flex w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false" aria-label="Toggle Call Missed details">
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
@@ -568,7 +568,7 @@ export function Pattern() {
                               {"Mon 3:44 PM"}
                             </span>
                           </div>
-                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                         </header>
@@ -604,10 +604,10 @@ export function Pattern() {
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
-                    <svg className="lucide lucide-calendar size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
+                    <svg className="lucide lucide-calendar size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
                       <path d="M8 2v4"></path>
                       <path d="M16 2v4"></path>
-                      <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                      <rect width={18} height={18} x={3} y={4} rx={2}></rect>
                       <path d="M3 10h18"></path>
                     </svg>
                   </TimelineIndicator>
@@ -616,7 +616,7 @@ export function Pattern() {
                   <Frame spacing="sm">
                     <Collapsible className="group/collapsible" data-closed="">
                       <Collapsible>
-                      <CollapsibleTrigger className="flex w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false" aria-label="Toggle Procurement Call details">
+                      <CollapsibleTrigger className="flex w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false" aria-label="Toggle Procurement Call details">
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
@@ -626,7 +626,7 @@ export function Pattern() {
                               {"Jun 11"}
                             </span>
                           </div>
-                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                         </header>
@@ -649,9 +649,9 @@ export function Pattern() {
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
-                    <svg className="lucide lucide-mail size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
+                    <svg className="lucide lucide-mail size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
                       <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                      <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                      <rect x={2} y={4} width={20} height={16} rx={2}></rect>
                     </svg>
                   </TimelineIndicator>
                 </TimelineHeader>
@@ -659,7 +659,7 @@ export function Pattern() {
                   <Frame spacing="sm">
                     <Collapsible className="group/collapsible" data-closed="">
                       <Collapsible>
-                      <CollapsibleTrigger className="flex w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false" aria-label="Toggle Intro Reply details">
+                      <CollapsibleTrigger className="flex w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false" aria-label="Toggle Intro Reply details">
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
@@ -669,7 +669,7 @@ export function Pattern() {
                               {"Jun 10"}
                             </span>
                           </div>
-                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                         </header>
@@ -692,7 +692,7 @@ export function Pattern() {
                     </Badge>
                   </div>
                   <TimelineIndicator className="[&_svg]:size-3.5 bg-background border border-border flex group-data-[orientation=vertical]/timeline:-left-7 items-center justify-center size-6 text-muted-foreground" aria-hidden="true">
-                    <svg className="lucide lucide-file-text size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileTextIcon" tabler="IconFileText" hugeicons="File02Icon" phosphor="FileTextIcon" remixicon="RiFileTextLine" aria-hidden="true">
+                    <svg className="lucide lucide-file-text size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FileTextIcon" tabler="IconFileText" hugeicons="File02Icon" phosphor="FileTextIcon" remixicon="RiFileTextLine" aria-hidden="true">
                       <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                       <path d="M10 9H8"></path>
@@ -705,7 +705,7 @@ export function Pattern() {
                   <Frame spacing="sm">
                     <Collapsible className="group/collapsible" data-closed="">
                       <Collapsible>
-                      <CollapsibleTrigger className="flex w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false" aria-label="Toggle Discovery Note details">
+                      <CollapsibleTrigger className="flex w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false" aria-label="Toggle Discovery Note details">
                         <header className="flex flex-row gap-2 grow items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                           <div className="flex flex-col gap-0.5 items-start min-w-0">
                             <span className="font-medium min-w-0 text-foreground text-sm truncate">
@@ -715,7 +715,7 @@ export function Pattern() {
                               {"Jun 9"}
                             </span>
                           </div>
-                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <svg className="duration-200 group-data-open/collapsible:rotate-90 lucide lucide-chevron-right shrink-0 size-4 text-muted-foreground transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                         </header>

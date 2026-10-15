@@ -34,7 +34,7 @@ export function Pattern() {
               {"Overview"}
             </h1>
             <span className="font-medium gap-1.5 inline-flex items-center pb-1 text-muted-foreground text-xs">
-              <svg className="dark:text-blue-400 lucide lucide-headphones size-3.5 text-blue-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Headphones" tabler="IconHeadphones" hugeicons="CustomerSupportIcon" phosphor="HeadphonesIcon" remixicon="RiCustomerService2Line" aria-hidden="true">
+              <svg className="dark:text-blue-400 lucide lucide-headphones size-3.5 text-blue-600" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Headphones" tabler="IconHeadphones" hugeicons="CustomerSupportIcon" phosphor="HeadphonesIcon" remixicon="RiCustomerService2Line" aria-hidden="true">
                 <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
               </svg>
               {"Active Calls"}
@@ -46,50 +46,50 @@ export function Pattern() {
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex flex-wrap gap-2.5 items-center">
               <Select>
-              <SelectTrigger className="w-40" type="button" tabIndex="0" id="base-ui-_r_0_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Date range">
-                <svg className="lucide lucide-calendar size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
+              <SelectTrigger className="w-40" type="button" tabIndex={0} id="base-ui-_r_0_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Date range">
+                <svg className="lucide lucide-calendar size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
                   <path d="M8 2v4"></path>
                   <path d="M16 2v4"></path>
-                  <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                  <rect width={18} height={18} x={3} y={4} rx={2}></rect>
                   <path d="M3 10h18"></path>
                 </svg>
                 <SelectValue>
                   {"Last 7 days"}
                 </SelectValue>
-                <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                   {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
-              <input id="base-ui-_r_0_-hidden-input" tabIndex="-1" aria-hidden="true" value="7d" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="base-ui-_r_0_-hidden-input" tabIndex={-1} aria-hidden="true" value="7d" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
               <Select>
-              <SelectTrigger className="w-40" type="button" tabIndex="0" id="base-ui-_r_3_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Aggregation interval">
+              <SelectTrigger className="w-40" type="button" tabIndex={0} id="base-ui-_r_3_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Aggregation interval">
                 <SelectValue>
                   {"Daily"}
                 </SelectValue>
-                <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                   {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
-              <input id="base-ui-_r_3_-hidden-input" tabIndex="-1" aria-hidden="true" value="daily" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="base-ui-_r_3_-hidden-input" tabIndex={-1} aria-hidden="true" value="daily" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
               <Select>
-              <SelectTrigger className="w-40" type="button" tabIndex="0" id="base-ui-_r_6_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Agent scope">
+              <SelectTrigger className="w-40" type="button" tabIndex={0} id="base-ui-_r_6_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Agent scope">
                 <SelectValue>
                   {"All agents"}
                 </SelectValue>
-                <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                   {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
-              <input id="base-ui-_r_6_-hidden-input" tabIndex="-1" aria-hidden="true" value="all" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="base-ui-_r_6_-hidden-input" tabIndex={-1} aria-hidden="true" value="all" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
               <DropdownMenu>
-              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_c_" aria-expanded="false">
-                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_c_" aria-expanded="false">
+                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
@@ -98,18 +98,18 @@ export function Pattern() {
               </DropdownMenu>
             </div>
             <div className="flex flex-wrap gap-2.5 items-center sm:justify-end sm:w-auto w-full">
-              <Button type="button" tabIndex="0">
-                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+              <Button type="button" tabIndex={0}>
+                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
                 {"Add"}
               </Button>
               <DropdownMenu>
-              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_h_" aria-expanded="false">
-                <svg className="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SettingsIcon" tabler="IconSettings" hugeicons="SettingsIcon" phosphor="GearIcon" remixicon="RiSettings3Line" aria-hidden="true">
+              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_h_" aria-expanded="false">
+                <svg className="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SettingsIcon" tabler="IconSettings" hugeicons="SettingsIcon" phosphor="GearIcon" remixicon="RiSettings3Line" aria-hidden="true">
                   <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
+                  <circle cx={12} cy={12} r={3}></circle>
                 </svg>
                 {"Configure"}
               </DropdownMenuTrigger>
@@ -199,51 +199,51 @@ export function Pattern() {
                 <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_j_] {\n  --color-calls: var(--color-blue-600);\n  --color-avgDuration: var(--color-blue-600);\n  --color-totalCost: var(--color-blue-600);\n  --color-avgCost: var(--color-blue-600);\n  --color-llmCost: var(--color-blue-600);\n  --color-avgLlmCost: var(--color-blue-600);\n}\n\n\n.dark [data-chart=chart-_r_j_] {\n  --color-calls: var(--color-blue-600);\n  --color-avgDuration: var(--color-blue-600);\n  --color-totalCost: var(--color-blue-600);\n  --color-avgCost: var(--color-blue-600);\n  --color-llmCost: var(--color-blue-600);\n  --color-avgLlmCost: var(--color-blue-600);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                    <div className="recharts-wrapper" width="1110" height="400" style={{position: "relative", cursor: "default", width: "1110px", height: "400px"}}>
-                      <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex="-1" style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px"}}></div>
-                      <svg className="recharts-surface" role="application" tabIndex="0" width="1110" height="400" viewBox="0 0 1110 400" style={{width: "100%", height: "100%", display: "block"}}>
+                    <div className="recharts-wrapper" width={1110} height={400} style={{position: "relative", cursor: "default", width: "1110px", height: "400px"}}>
+                      <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex={-1} style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px"}}></div>
+                      <svg className="recharts-surface" role="application" tabIndex={0} width={1110} height={400} viewBox="0 0 1110 400" style={{width: "100%", height: "100%", display: "block"}}>
                         <title></title>
                         <desc></desc>
-                        <g className="recharts-zIndex-layer_-100" tabIndex="-1">
+                        <g className="recharts-zIndex-layer_-100" tabIndex={-1}>
                           <g className="recharts-cartesian-grid">
                             <g className="recharts-cartesian-grid-horizontal">
-                              <line strokeDasharray="3 3" stroke="#ccc" fill="none" x="0" y="20" width="1102" height="350" x1="0" y1="370" x2="1102" y2="370"></line>
-                              <line strokeDasharray="3 3" stroke="#ccc" fill="none" x="0" y="20" width="1102" height="350" x1="0" y1="270.2102237952048" x2="1102" y2="270.2102237952048"></line>
-                              <line strokeDasharray="3 3" stroke="#ccc" fill="none" x="0" y="20" width="1102" height="350" x1="0" y1="170.42044759040954" x2="1102" y2="170.42044759040954"></line>
-                              <line strokeDasharray="3 3" stroke="#ccc" fill="none" x="0" y="20" width="1102" height="350" x1="0" y1="70.63067138561435" x2="1102" y2="70.63067138561435"></line>
-                              <line strokeDasharray="3 3" stroke="#ccc" fill="none" x="0" y="20" width="1102" height="350" x1="0" y1="20" x2="1102" y2="20"></line>
+                              <line strokeDasharray="3 3" stroke="#ccc" fill="none" x={0} y={20} width={1102} height={350} x1={0} y1={370} x2={1102} y2={370}></line>
+                              <line strokeDasharray="3 3" stroke="#ccc" fill="none" x={0} y={20} width={1102} height={350} x1={0} y1={270.2102237952048} x2={1102} y2={270.2102237952048}></line>
+                              <line strokeDasharray="3 3" stroke="#ccc" fill="none" x={0} y={20} width={1102} height={350} x1={0} y1={170.42044759040954} x2={1102} y2={170.42044759040954}></line>
+                              <line strokeDasharray="3 3" stroke="#ccc" fill="none" x={0} y={20} width={1102} height={350} x1={0} y1={70.63067138561435} x2={1102} y2={70.63067138561435}></line>
+                              <line strokeDasharray="3 3" stroke="#ccc" fill="none" x={0} y={20} width={1102} height={350} x1={0} y1={20} x2={1102} y2={20}></line>
                             </g>
                           </g>
                         </g>
-                        <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                        <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                         <defs>
                           <clippath id="recharts1-clip">
-                            <rect x="0" y="20" height="350" width="1102"></rect>
+                            <rect x={0} y={20} height={350} width={1102}></rect>
                           </clippath>
                         </defs>
                         <defs>
-                          <pattern id="dashboard-4-call-volume-stripe" patternUnits="userSpaceOnUse" width="6" height="6">
-                            <rect width="6" height="6" fill="var(--color-calls)" opacity="0.04"></rect>
-                            <path d="M0,6 L6,0" stroke="var(--color-calls)" strokeWidth="0.8" opacity="0.15"></path>
+                          <pattern id="dashboard-4-call-volume-stripe" patternUnits="userSpaceOnUse" width={6} height={6}>
+                            <rect width={6} height={6} fill="var(--color-calls)" opacity={0.04}></rect>
+                            <path d="M0,6 L6,0" stroke="var(--color-calls)" strokeWidth={0.8} opacity={0.15}></path>
                           </pattern>
                         </defs>
-                        <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                        <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                           <g className="recharts-area recharts-layer">
                             <g className="recharts-layer">
-                              <path className="recharts-area-area recharts-curve" strokeWidth="1" fill="url(#dashboard-4-call-volume-stripe)" fillOpacity="0.6" height="350" stroke="none" width="1102" id="recharts-area-_r_p_" d="M0,70C61.222,73.447,122.444,76.893,183.667,81.496C244.889,86.098,306.111,91.856,367.333,96.052C428.556,100.247,489.778,102.88,551,132.122C612.222,161.365,673.444,217.217,734.667,264.384C795.889,311.55,857.111,350.031,918.333,320C979.556,289.969,1040.778,191.427,1102,92.885L1102,370C1040.778,370,979.556,370,918.333,370C857.111,370,795.889,370,734.667,370C673.444,370,612.222,370,551,370C489.778,370,428.556,370,367.333,370C306.111,370,244.889,370,183.667,370C122.444,370,61.222,370,0,370Z"></path>
+                              <path className="recharts-area-area recharts-curve" strokeWidth={1} fill="url(#dashboard-4-call-volume-stripe)" fillOpacity={0.6} height={350} stroke="none" width={1102} id="recharts-area-_r_p_" d="M0,70C61.222,73.447,122.444,76.893,183.667,81.496C244.889,86.098,306.111,91.856,367.333,96.052C428.556,100.247,489.778,102.88,551,132.122C612.222,161.365,673.444,217.217,734.667,264.384C795.889,311.55,857.111,350.031,918.333,320C979.556,289.969,1040.778,191.427,1102,92.885L1102,370C1040.778,370,979.556,370,918.333,370C857.111,370,795.889,370,734.667,370C673.444,370,612.222,370,551,370C489.778,370,428.556,370,367.333,370C306.111,370,244.889,370,183.667,370C122.444,370,61.222,370,0,370Z"></path>
                             </g>
                           </g>
                         </g>
-                        <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_400" tabIndex="-1">
+                        <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_400" tabIndex={-1}>
                           <g className="recharts-layer recharts-line">
                             <g className="recharts-layer recharts-shape">
-                              <path className="recharts-curve recharts-line-curve" stroke="var(--color-calls)" strokeWidth="1" fill="none" id="recharts-line-_r_q_" height="350" width="1102" d="M0,70C61.222,73.447,122.444,76.893,183.667,81.496C244.889,86.098,306.111,91.856,367.333,96.052C428.556,100.247,489.778,102.88,551,132.122C612.222,161.365,673.444,217.217,734.667,264.384C795.889,311.55,857.111,350.031,918.333,320C979.556,289.969,1040.778,191.427,1102,92.885"></path>
+                              <path className="recharts-curve recharts-line-curve" stroke="var(--color-calls)" strokeWidth={1} fill="none" id="recharts-line-_r_q_" height={350} width={1102} d="M0,70C61.222,73.447,122.444,76.893,183.667,81.496C244.889,86.098,306.111,91.856,367.333,96.052C428.556,100.247,489.778,102.88,551,132.122C612.222,161.365,673.444,217.217,734.667,264.384C795.889,311.55,857.111,350.031,918.333,320C979.556,289.969,1040.778,191.427,1102,92.885"></path>
                             </g>
                           </g>
                         </g>
-                        <g className="recharts-zIndex-layer_500" tabIndex="-1">
+                        <g className="recharts-zIndex-layer_500" tabIndex={-1}>
                           <g className="recharts-cartesian-axis recharts-layer recharts-xAxis xAxis">
                             <g className="recharts-cartesian-axis-ticks recharts-xAxis-ticks">
                               <g className="recharts-cartesian-axis-tick-lines recharts-xAxis-tick-lines">
@@ -258,57 +258,57 @@ export function Pattern() {
                             </g>
                           </g>
                         </g>
-                        <g className="recharts-zIndex-layer_600" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_2000" tabIndex="-1">
+                        <g className="recharts-zIndex-layer_600" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_2000" tabIndex={-1}>
                           <g className="recharts-cartesian-axis-tick-labels recharts-xAxis-tick-labels">
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                              <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="1102" stroke="none" x="19.2109375" y="384" textAnchor="middle" fill="#666">
-                                <tspan x="19.2109375" dy="0.71em">
+                              <text className="recharts-cartesian-axis-tick-value recharts-text" height={30} orientation="bottom" width={1102} stroke="none" x={19.2109375} y={384} textAnchor="middle" fill="#666">
+                                <tspan x={19.2109375} dy="0.71em">
                                   {"18 Aug"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                              <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="1102" stroke="none" x="183.66666666666666" y="384" textAnchor="middle" fill="#666">
-                                <tspan x="183.66666666666666" dy="0.71em">
+                              <text className="recharts-cartesian-axis-tick-value recharts-text" height={30} orientation="bottom" width={1102} stroke="none" x={183.66666666666666} y={384} textAnchor="middle" fill="#666">
+                                <tspan x={183.66666666666666} dy="0.71em">
                                   {"19 Aug"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                              <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="1102" stroke="none" x="367.3333333333333" y="384" textAnchor="middle" fill="#666">
-                                <tspan x="367.3333333333333" dy="0.71em">
+                              <text className="recharts-cartesian-axis-tick-value recharts-text" height={30} orientation="bottom" width={1102} stroke="none" x={367.3333333333333} y={384} textAnchor="middle" fill="#666">
+                                <tspan x={367.3333333333333} dy="0.71em">
                                   {"20 Aug"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                              <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="1102" stroke="none" x="551" y="384" textAnchor="middle" fill="#666">
-                                <tspan x="551" dy="0.71em">
+                              <text className="recharts-cartesian-axis-tick-value recharts-text" height={30} orientation="bottom" width={1102} stroke="none" x={551} y={384} textAnchor="middle" fill="#666">
+                                <tspan x={551} dy="0.71em">
                                   {"21 Aug"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                              <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="1102" stroke="none" x="734.6666666666666" y="384" textAnchor="middle" fill="#666">
-                                <tspan x="734.6666666666666" dy="0.71em">
+                              <text className="recharts-cartesian-axis-tick-value recharts-text" height={30} orientation="bottom" width={1102} stroke="none" x={734.6666666666666} y={384} textAnchor="middle" fill="#666">
+                                <tspan x={734.6666666666666} dy="0.71em">
                                   {"22 Aug"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                              <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="1102" stroke="none" x="918.3333333333333" y="384" textAnchor="middle" fill="#666">
-                                <tspan x="918.3333333333333" dy="0.71em">
+                              <text className="recharts-cartesian-axis-tick-value recharts-text" height={30} orientation="bottom" width={1102} stroke="none" x={918.3333333333333} y={384} textAnchor="middle" fill="#666">
+                                <tspan x={918.3333333333333} dy="0.71em">
                                   {"23 Aug"}
                                 </tspan>
                               </text>
                             </g>
                             <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                              <text className="recharts-cartesian-axis-tick-value recharts-text" height="30" orientation="bottom" width="1102" stroke="none" x="1089.5" y="384" textAnchor="middle" fill="#666">
-                                <tspan x="1089.5" dy="0.71em">
+                              <text className="recharts-cartesian-axis-tick-value recharts-text" height={30} orientation="bottom" width={1102} stroke="none" x={1089.5} y={384} textAnchor="middle" fill="#666">
+                                <tspan x={1089.5} dy="0.71em">
                                   {"24 Aug"}
                                 </tspan>
                               </text>
@@ -322,9 +322,9 @@ export function Pattern() {
               </div>
               </ChartContainer>
               <div className="flex justify-end mt-2">
-                <Button type="button" tabIndex="0">
+                <Button type="button" tabIndex={0}>
                   {"View more"}
-                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
@@ -341,8 +341,8 @@ export function Pattern() {
                   <div className="font-semibold text-sm">
                     {"Most Called Agents"}
                   </div>
-                  <svg className="lucide lucide-circle-question-mark size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HelpCircleIcon" tabler="IconHelpCircle" hugeicons="HelpCircleIcon" phosphor="QuestionIcon" remixicon="RiQuestionLine" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
+                  <svg className="lucide lucide-circle-question-mark size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HelpCircleIcon" tabler="IconHelpCircle" hugeicons="HelpCircleIcon" phosphor="QuestionIcon" remixicon="RiQuestionLine" aria-hidden="true">
+                    <circle cx={12} cy={12} r={10}></circle>
                     <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                     <path d="M12 17h.01"></path>
                   </svg>
@@ -352,17 +352,17 @@ export function Pattern() {
                 </div>
               </div>
               <Select>
-              <SelectTrigger className="min-w-28 shrink-0" type="button" tabIndex="0" id="base-ui-_r_k_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Agent metric">
+              <SelectTrigger className="min-w-28 shrink-0" type="button" tabIndex={0} id="base-ui-_r_k_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Agent metric">
                 <SelectValue>
                   {"Calls"}
                 </SelectValue>
-                <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                   {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
-              <input id="base-ui-_r_k_-hidden-input" tabIndex="-1" aria-hidden="true" value="calls" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="base-ui-_r_k_-hidden-input" tabIndex={-1} aria-hidden="true" value="calls" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </header>
             <FramePanel className="p-0!">
               <div className="px-4 py-4 space-y-3">
@@ -477,9 +477,9 @@ export function Pattern() {
                   {"Connections for voice ops"}
                 </div>
               </div>
-              <Button type="button" tabIndex="0">
+              <Button type="button" tabIndex={0}>
                 {"Manage"}
-                <svg className="lucide lucide-external-link opacity-50" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
+                <svg className="lucide lucide-external-link opacity-50" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
                   <path d="M15 3h6v6"></path>
                   <path d="M10 14 21 3"></path>
                   <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -510,7 +510,7 @@ export function Pattern() {
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                         {"Live"}
                       </Badge>
-                      <Button type="button" tabIndex="0">
+                      <Button type="button" tabIndex={0}>
                         {"Disconnect"}
                       </Button>
                     </ItemActions>
@@ -541,7 +541,7 @@ export function Pattern() {
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                         {"Live"}
                       </Badge>
-                      <Button type="button" tabIndex="0">
+                      <Button type="button" tabIndex={0}>
                         {"Disconnect"}
                       </Button>
                     </ItemActions>
@@ -552,10 +552,10 @@ export function Pattern() {
                   <Item className="gap-3 px-3 py-3" variant="default" size="sm">
                     <ItemMedia className="size-8" variant="default">
                       <IconTile variant="outline" size="sm">
-                        <svg className="lucide lucide-network" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="NetworkIcon" tabler="IconSitemap" hugeicons="HierarchySquare01Icon" phosphor="TreeStructureIcon" remixicon="RiOrganizationChart" aria-hidden="true">
-                          <rect x="16" y="16" width="6" height="6" rx="1"></rect>
-                          <rect x="2" y="16" width="6" height="6" rx="1"></rect>
-                          <rect x="9" y="2" width="6" height="6" rx="1"></rect>
+                        <svg className="lucide lucide-network" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="NetworkIcon" tabler="IconSitemap" hugeicons="HierarchySquare01Icon" phosphor="TreeStructureIcon" remixicon="RiOrganizationChart" aria-hidden="true">
+                          <rect x={16} y={16} width={6} height={6} rx={1}></rect>
+                          <rect x={2} y={16} width={6} height={6} rx={1}></rect>
+                          <rect x={9} y={2} width={6} height={6} rx={1}></rect>
                           <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
                           <path d="M12 12V8"></path>
                         </svg>
@@ -573,7 +573,7 @@ export function Pattern() {
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                         {"Live"}
                       </Badge>
-                      <Button type="button" tabIndex="0">
+                      <Button type="button" tabIndex={0}>
                         {"Disconnect"}
                       </Button>
                     </ItemActions>
@@ -595,7 +595,7 @@ export function Pattern() {
                         </g>
                         <defs>
                           <clippath id="googlemeet-clip0">
-                            <rect width="621.2" height="512" fill="white"></rect>
+                            <rect width={621.2} height={512} fill="white"></rect>
                           </clippath>
                         </defs>
                       </svg>
@@ -612,7 +612,7 @@ export function Pattern() {
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
                         {"Syncing"}
                       </Badge>
-                      <Button type="button" tabIndex="0">
+                      <Button type="button" tabIndex={0}>
                         {"Disconnect"}
                       </Button>
                     </ItemActions>
@@ -652,7 +652,7 @@ export function Pattern() {
                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
                         {"Expired"}
                       </Badge>
-                      <Button type="button" tabIndex="0">
+                      <Button type="button" tabIndex={0}>
                         {"Reconnect"}
                       </Button>
                     </ItemActions>

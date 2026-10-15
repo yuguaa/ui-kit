@@ -9,7 +9,6 @@ import { SnapshotCard } from "@/components/replicated/snapshot-card"
 
 export interface SnapshotListItem {
   id: string
-  href: string
   src: string
   codeSrc: string
   /** registry 名称，供复制安装命令使用 */
@@ -110,7 +109,6 @@ export function SnapshotList({
               {groupItems.map((item) => (
                 <SnapshotCard
                   key={item.id}
-                  href={item.href}
                   src={item.src}
                   codeSrc={item.codeSrc}
                   registryName={item.registryName}

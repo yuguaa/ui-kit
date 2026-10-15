@@ -28,7 +28,7 @@ export function Pattern() {
           <div className="gap-6 grid grid-cols-1 lg:grid-cols-3 sm:grid-cols-2">
             <Card className="h-full overflow-hidden p-0" size="default">
               <a className="aspect-[16/10] bg-muted block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring overflow-hidden relative w-full" href="#" aria-label="Read What's new in Cadence 3.2">
-                <img className="absolute inset-0 object-cover size-full" alt="Abstract blue fluid render" width="640" height="400" decoding="async" src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=640&h=440&q=80" />
+                <img className="absolute inset-0 object-cover size-full" alt="Abstract blue fluid render" width={640} height={400} decoding="async" src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=640&h=440&q=80" />
               </a>
               <CardContent className="flex flex-1 flex-col gap-2 pb-4 pt-2 px-4">
                 <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
@@ -68,7 +68,7 @@ export function Pattern() {
                   </div>
                   <a className="focus-visible:outline-none focus-visible:underline font-medium gap-1 group/read hover:underline inline-flex items-center shrink-0 text-primary text-sm transition-colors underline-offset-2" href="#" aria-label="Read What's new in Cadence 3.2">
                     {"Read"}
-                    <svg className="duration-200 ease-out lucide lucide-arrow-up-right motion-safe:group-hover/read:-translate-y-0.5 motion-safe:group-hover/read:translate-x-0.5 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
+                    <svg className="duration-200 ease-out lucide lucide-arrow-up-right motion-safe:group-hover/read:-translate-y-0.5 motion-safe:group-hover/read:translate-x-0.5 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                       <path d="M7 7h10v10"></path>
                       <path d="M7 17 17 7"></path>
                     </svg>
@@ -78,7 +78,7 @@ export function Pattern() {
             </Card>
             <Card className="h-full overflow-hidden p-0" size="default">
               <a className="aspect-[16/10] bg-muted block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring overflow-hidden relative w-full" href="#" aria-label="Read Cutting cold start latency">
-                <img className="absolute inset-0 object-cover size-full" alt="Vibrant abstract gradient render" width="640" height="400" decoding="async" src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=640&h=440&q=80" />
+                <img className="absolute inset-0 object-cover size-full" alt="Vibrant abstract gradient render" width={640} height={400} decoding="async" src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=640&h=440&q=80" />
               </a>
               <CardContent className="flex flex-1 flex-col gap-2 pb-4 pt-2 px-4">
                 <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
@@ -118,7 +118,7 @@ export function Pattern() {
                   </div>
                   <a className="focus-visible:outline-none focus-visible:underline font-medium gap-1 group/read hover:underline inline-flex items-center shrink-0 text-primary text-sm transition-colors underline-offset-2" href="#" aria-label="Read Cutting cold start latency">
                     {"Read"}
-                    <svg className="duration-200 ease-out lucide lucide-arrow-up-right motion-safe:group-hover/read:-translate-y-0.5 motion-safe:group-hover/read:translate-x-0.5 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
+                    <svg className="duration-200 ease-out lucide lucide-arrow-up-right motion-safe:group-hover/read:-translate-y-0.5 motion-safe:group-hover/read:translate-x-0.5 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                       <path d="M7 7h10v10"></path>
                       <path d="M7 17 17 7"></path>
                     </svg>
@@ -128,7 +128,7 @@ export function Pattern() {
             </Card>
             <Card className="h-full overflow-hidden p-0" size="default">
               <a className="aspect-[16/10] bg-muted block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring overflow-hidden relative w-full" href="#" aria-label="Read Rethinking our color system">
-                <img className="absolute inset-0 object-cover size-full" alt="Abstract cyan and orange fluid render" width="640" height="400" decoding="async" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=640&h=440&q=80" />
+                <img className="absolute inset-0 object-cover size-full" alt="Abstract cyan and orange fluid render" width={640} height={400} decoding="async" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=640&h=440&q=80" />
               </a>
               <CardContent className="flex flex-1 flex-col gap-2 pb-4 pt-2 px-4">
                 <div className="flex gap-1.5 items-center text-muted-foreground text-xs">
@@ -168,7 +168,7 @@ export function Pattern() {
                   </div>
                   <a className="focus-visible:outline-none focus-visible:underline font-medium gap-1 group/read hover:underline inline-flex items-center shrink-0 text-primary text-sm transition-colors underline-offset-2" href="#" aria-label="Read Rethinking our color system">
                     {"Read"}
-                    <svg className="duration-200 ease-out lucide lucide-arrow-up-right motion-safe:group-hover/read:-translate-y-0.5 motion-safe:group-hover/read:translate-x-0.5 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
+                    <svg className="duration-200 ease-out lucide lucide-arrow-up-right motion-safe:group-hover/read:-translate-y-0.5 motion-safe:group-hover/read:translate-x-0.5 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                       <path d="M7 7h10v10"></path>
                       <path d="M7 17 17 7"></path>
                     </svg>

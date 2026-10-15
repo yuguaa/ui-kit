@@ -50,7 +50,7 @@ export function Pattern() {
             </p>
           </div>
           <Tooltip>
-          <TooltipTrigger className="*:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:ring-background -space-x-2 cn-avatar-group flex group/avatar-group max-md:hidden" role="group" tabIndex="0" aria-label="Shared with Daniel Okafor, Lena Hoffmann, Maya Chen, and Arjun Mehta" id="base-ui-_r_1_" baseUiTooltipTrigger="">
+          <TooltipTrigger className="*:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:ring-background -space-x-2 cn-avatar-group flex group/avatar-group max-md:hidden" role="group" tabIndex={0} aria-label="Shared with Daniel Okafor, Lena Hoffmann, Maya Chen, and Arjun Mehta" id="base-ui-_r_1_" baseUiTooltipTrigger="">
             <Avatar size="sm">
               <AvatarImage alt="Daniel Okafor" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
             </Avatar>
@@ -68,16 +68,16 @@ export function Pattern() {
           <div className="flex gap-1 items-center shrink-0">
             <div className="flex gap-0.5 items-center shrink-0" role="group" aria-label="History">
               <Tooltip>
-              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" disabled="" tabIndex="0" disabled aria-label="Undo" toolbarItem="" id="base-ui-_r_3_" baseUiTooltipTrigger="" extracted="1">
-                <svg className="lucide lucide-undo-2 lucide-undo2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Undo2Icon" tabler="IconArrowBackUp" hugeicons="Undo02Icon" phosphor="ArrowUUpLeftIcon" remixicon="RiArrowGoBackLine" aria-hidden="true">
+              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" disabled="" tabIndex={0} disabled aria-label="Undo" toolbarItem="" id="base-ui-_r_3_" baseUiTooltipTrigger="" extracted="1">
+                <svg className="lucide lucide-undo-2 lucide-undo2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Undo2Icon" tabler="IconArrowBackUp" hugeicons="Undo02Icon" phosphor="ArrowUUpLeftIcon" remixicon="RiArrowGoBackLine" aria-hidden="true">
                   <path d="M9 14 4 9l5-5"></path>
                   <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11"></path>
                 </svg>
               </TooltipTrigger>
               </Tooltip>
               <Tooltip>
-              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" disabled="" tabIndex="0" disabled aria-label="Redo" toolbarItem="" id="base-ui-_r_5_" baseUiTooltipTrigger="">
-                <svg className="lucide lucide-redo-2 lucide-redo2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Redo2Icon" tabler="IconArrowForwardUp" hugeicons="Redo02Icon" phosphor="ArrowUUpRightIcon" remixicon="RiArrowGoForwardLine" aria-hidden="true">
+              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" disabled="" tabIndex={0} disabled aria-label="Redo" toolbarItem="" id="base-ui-_r_5_" baseUiTooltipTrigger="">
+                <svg className="lucide lucide-redo-2 lucide-redo2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Redo2Icon" tabler="IconArrowForwardUp" hugeicons="Redo02Icon" phosphor="ArrowUUpRightIcon" remixicon="RiArrowGoForwardLine" aria-hidden="true">
                   <path d="m15 14 5-5-5-5"></path>
                   <path d="M20 9H9.5A5.5 5.5 0 0 0 4 14.5A5.5 5.5 0 0 0 9.5 20H13"></path>
                 </svg>
@@ -86,8 +86,8 @@ export function Pattern() {
             </div>
             <Separator className="data-vertical:self-center h-4" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
             <Popover>
-            <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center md:pointer-fine:hidden outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Outline" baseUiClickTrigger="" id="base-ui-_r_7_" aria-haspopup="dialog" aria-expanded="false">
-              <svg className="lucide lucide-table-of-contents" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TableOfContentsIcon" tabler="IconListDetails" hugeicons="LeftToRightListDashIcon" phosphor="ListDashesIcon" remixicon="RiListIndefinite" aria-hidden="true">
+            <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center md:pointer-fine:hidden outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Outline" baseUiClickTrigger="" id="base-ui-_r_7_" aria-haspopup="dialog" aria-expanded="false">
+              <svg className="lucide lucide-table-of-contents" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TableOfContentsIcon" tabler="IconListDetails" hugeicons="LeftToRightListDashIcon" phosphor="ListDashesIcon" remixicon="RiListIndefinite" aria-hidden="true">
                 <path d="M16 5H3"></path>
                 <path d="M16 12H3"></path>
                 <path d="M16 19H3"></path>
@@ -98,11 +98,11 @@ export function Pattern() {
             </PopoverTrigger>
             </Popover>
             <DropdownMenu>
-            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Page actions" aria-haspopup="menu" id="base-ui-_r_b_" aria-expanded="false">
-              <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                <circle cx="12" cy="12" r="1"></circle>
-                <circle cx="19" cy="12" r="1"></circle>
-                <circle cx="5" cy="12" r="1"></circle>
+            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Page actions" aria-haspopup="menu" id="base-ui-_r_b_" aria-expanded="false">
+              <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                <circle cx={12} cy={12} r={1}></circle>
+                <circle cx={19} cy={12} r={1}></circle>
+                <circle cx={5} cy={12} r={1}></circle>
               </svg>
             </DropdownMenuTrigger>
             </DropdownMenu>
@@ -111,7 +111,7 @@ export function Pattern() {
         <div className="flex-1 relative">
           <div className="[&_.prosemirror-dropcursor-block]:-translate-y-[0.5px] [&_.prosemirror-dropcursor-block]:h-0.5! [&_.prosemirror-dropcursor-block]:rounded-full [&_.prosemirror-dropcursor-block]:text-primary relative">
             <div className="[&_.ProseMirror-gapcursor]:after:border-t-foreground! [&_.tiptap.resize-cursor]:cursor-col-resize [&_.tiptap>*+*]:mt-3 [&_.tiptap>h2:not(:first-child)]:mt-8 [&_.tiptap>h3:not(:first-child)]:mt-6 [&_.tiptap]:break-words [&_.tiptap]:flex-1 [&_.tiptap]:outline-none [&_.tiptap_.ProseMirror-selectednode]:outline-2 [&_.tiptap_.ProseMirror-selectednode]:outline-ring/50 [&_.tiptap_.column-resize-handle]:-end-px [&_.tiptap_.column-resize-handle]:absolute [&_.tiptap_.column-resize-handle]:bg-primary [&_.tiptap_.column-resize-handle]:inset-y-0 [&_.tiptap_.column-resize-handle]:pointer-events-none [&_.tiptap_.column-resize-handle]:w-0.5 [&_.tiptap_.column-resize-handle]:z-10 [&_.tiptap_.is-empty]:before:content-[attr(data-placeholder)] [&_.tiptap_.is-empty]:before:float-start [&_.tiptap_.is-empty]:before:h-0 [&_.tiptap_.is-empty]:before:pointer-events-none [&_.tiptap_.is-empty]:before:text-muted-foreground [&_.tiptap_.selectedCell]:after:absolute [&_.tiptap_.selectedCell]:after:bg-primary/10 [&_.tiptap_.selectedCell]:after:content-[''] [&_.tiptap_.selectedCell]:after:inset-0 [&_.tiptap_.selectedCell]:after:pointer-events-none [&_.tiptap_.selection]:bg-primary/15 [&_.tiptap_.tableWrapper]:mb-6 [&_.tiptap_.tableWrapper]:mt-10 [&_.tiptap_.tableWrapper]:overflow-x-auto [&_.tiptap_:is(h1,h2,h3)]:scroll-mt-[calc(var(--page-header)+--spacing(6))] [&_.tiptap_:is(td,th)]:align-top [&_.tiptap_:is(td,th)]:border [&_.tiptap_:is(td,th)]:border-border [&_.tiptap_:is(td,th)]:px-3 [&_.tiptap_:is(td,th)]:py-2 [&_.tiptap_:is(td,th)]:relative [&_.tiptap_:is(td,th)]:text-start [&_.tiptap_:not(pre)>code]:bg-muted [&_.tiptap_:not(pre)>code]:font-mono [&_.tiptap_:not(pre)>code]:px-1 [&_.tiptap_:not(pre)>code]:py-0.5 [&_.tiptap_:not(pre)>code]:rounded-sm [&_.tiptap_:not(pre)>code]:text-sm [&_.tiptap_[data-type=mention]]:bg-primary/10 [&_.tiptap_[data-type=mention]]:font-medium [&_.tiptap_[data-type=mention]]:px-1 [&_.tiptap_[data-type=mention]]:py-0.5 [&_.tiptap_[data-type=mention]]:rounded-sm [&_.tiptap_[data-type=mention]]:text-primary [&_.tiptap_[data-type=mention]]:whitespace-nowrap! [&_.tiptap_a]:text-primary [&_.tiptap_a]:underline [&_.tiptap_a]:underline-offset-4 [&_.tiptap_blockquote]:border-s-2 [&_.tiptap_blockquote]:ps-4 [&_.tiptap_blockquote]:text-muted-foreground [&_.tiptap_h1]:font-semibold [&_.tiptap_h1]:text-2xl/9 [&_.tiptap_h1]:tracking-tight [&_.tiptap_h2]:font-semibold [&_.tiptap_h2]:text-xl/8 [&_.tiptap_h2]:tracking-tight [&_.tiptap_h3]:font-semibold [&_.tiptap_h3]:text-lg/7 [&_.tiptap_hr]:border-border [&_.tiptap_hr]:my-6 [&_.tiptap_li+li]:mt-1 [&_.tiptap_li::marker]:text-muted-foreground [&_.tiptap_li[data-checked=true]>div>[data-node-view-content]]:line-through [&_.tiptap_li[data-checked=true]>div>[data-node-view-content]]:text-muted-foreground [&_.tiptap_mark[data-color=blue]]:bg-sky-200 [&_.tiptap_mark[data-color=green]]:bg-emerald-200 [&_.tiptap_mark[data-color=pink]]:bg-pink-200 [&_.tiptap_mark[data-color=violet]]:bg-violet-200 [&_.tiptap_mark]:bg-yellow-200 [&_.tiptap_mark]:px-0.5 [&_.tiptap_mark]:text-inherit [&_.tiptap_ol]:list-decimal [&_.tiptap_ol]:ps-6 [&_.tiptap_pre]:bg-muted [&_.tiptap_pre]:font-mono [&_.tiptap_pre]:px-4 [&_.tiptap_pre]:py-3 [&_.tiptap_pre]:rounded-md [&_.tiptap_pre]:text-sm [&_.tiptap_table]:border-collapse [&_.tiptap_table]:table-fixed [&_.tiptap_table]:text-sm [&_.tiptap_table]:w-full [&_.tiptap_th]:bg-muted [&_.tiptap_th]:font-medium [&_.tiptap_th]:text-muted-foreground [&_.tiptap_ul[data-type=taskList]]:list-none [&_.tiptap_ul[data-type=taskList]]:ps-0.5 [&_.tiptap_ul]:list-disc [&_.tiptap_ul]:ps-6 dark:[&_.tiptap_mark[data-color=blue]]:bg-sky-400/30 dark:[&_.tiptap_mark[data-color=green]]:bg-emerald-400/30 dark:[&_.tiptap_mark[data-color=pink]]:bg-pink-400/30 dark:[&_.tiptap_mark[data-color=violet]]:bg-violet-400/30 dark:[&_.tiptap_mark]:bg-yellow-400/30 flex flex-col max-w-3xl min-h-full mx-auto px-4 py-8 sm:px-16 sm:py-12 text-base/7 text-foreground w-full">
-              <div className="ProseMirror tiptap" contentEditable="true" role="textbox" aria-label="Escalation Playbook page" aria-multiline="true" translate="no" tabIndex="0">
+              <div className="ProseMirror tiptap" contentEditable="true" role="textbox" aria-label="Escalation Playbook page" aria-multiline="true" translate="no" tabIndex={0}>
                 <h1>
                   {"Escalation Playbook"}
                 </h1>
@@ -132,47 +132,47 @@ export function Pattern() {
                       {"Contents"}
                     </p>
                     <nav className="flex flex-col items-start" aria-label="Contents">
-                      <Button className="font-normal h-auto hover:text-foreground max-w-full px-0 py-0.5 text-muted-foreground" type="button" tabIndex="0">
+                      <Button className="font-normal h-auto hover:text-foreground max-w-full px-0 py-0.5 text-muted-foreground" type="button" tabIndex={0}>
                         <span className="truncate">
                           {"Escalation Playbook"}
                         </span>
                       </Button>
-                      <Button className="font-normal h-auto hover:text-foreground max-w-full ps-4 px-0 py-0.5 text-muted-foreground" type="button" tabIndex="0">
+                      <Button className="font-normal h-auto hover:text-foreground max-w-full ps-4 px-0 py-0.5 text-muted-foreground" type="button" tabIndex={0}>
                         <span className="truncate">
                           {"When to Escalate"}
                         </span>
                       </Button>
-                      <Button className="font-normal h-auto hover:text-foreground max-w-full ps-4 px-0 py-0.5 text-muted-foreground" type="button" tabIndex="0">
+                      <Button className="font-normal h-auto hover:text-foreground max-w-full ps-4 px-0 py-0.5 text-muted-foreground" type="button" tabIndex={0}>
                         <span className="truncate">
                           {"Escalation Tiers"}
                         </span>
                       </Button>
-                      <Button className="font-normal h-auto hover:text-foreground max-w-full ps-8 px-0 py-0.5 text-muted-foreground" type="button" tabIndex="0">
+                      <Button className="font-normal h-auto hover:text-foreground max-w-full ps-8 px-0 py-0.5 text-muted-foreground" type="button" tabIndex={0}>
                         <span className="truncate">
                           {"Paging Engineering"}
                         </span>
                       </Button>
-                      <Button className="font-normal h-auto hover:text-foreground max-w-full ps-4 px-0 py-0.5 text-muted-foreground" type="button" tabIndex="0">
+                      <Button className="font-normal h-auto hover:text-foreground max-w-full ps-4 px-0 py-0.5 text-muted-foreground" type="button" tabIndex={0}>
                         <span className="truncate">
                           {"Handoff Checklist"}
                         </span>
                       </Button>
-                      <Button className="font-normal h-auto hover:text-foreground max-w-full ps-4 px-0 py-0.5 text-muted-foreground" type="button" tabIndex="0">
+                      <Button className="font-normal h-auto hover:text-foreground max-w-full ps-4 px-0 py-0.5 text-muted-foreground" type="button" tabIndex={0}>
                         <span className="truncate">
                           {"Handoff Note"}
                         </span>
                       </Button>
-                      <Button className="font-normal h-auto hover:text-foreground max-w-full ps-8 px-0 py-0.5 text-muted-foreground" type="button" tabIndex="0">
+                      <Button className="font-normal h-auto hover:text-foreground max-w-full ps-8 px-0 py-0.5 text-muted-foreground" type="button" tabIndex={0}>
                         <span className="truncate">
                           {"Search Diagnostics"}
                         </span>
                       </Button>
-                      <Button className="font-normal h-auto hover:text-foreground max-w-full ps-8 px-0 py-0.5 text-muted-foreground" type="button" tabIndex="0">
+                      <Button className="font-normal h-auto hover:text-foreground max-w-full ps-8 px-0 py-0.5 text-muted-foreground" type="button" tabIndex={0}>
                         <span className="truncate">
                           {"Customer Updates"}
                         </span>
                       </Button>
-                      <Button className="font-normal h-auto hover:text-foreground max-w-full ps-4 px-0 py-0.5 text-muted-foreground" type="button" tabIndex="0">
+                      <Button className="font-normal h-auto hover:text-foreground max-w-full ps-4 px-0 py-0.5 text-muted-foreground" type="button" tabIndex={0}>
                         <span className="truncate">
                           {"Review Cadence"}
                         </span>
@@ -341,14 +341,14 @@ export function Pattern() {
                   <li className="node-taskItem react-renderer" data-checked="true">
                     <div className="flex gap-2.5 items-start" data-node-view-wrapper="" style={{whiteSpace: "normal"}}>
                       <span className="flex h-7 items-center shrink-0" data-task-toggle="" contentEditable="false">
-                        <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_2o_" aria-checked="true" aria-label="Tag the ticket with its tier and the affected workspace ID">
+                        <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_2o_" aria-checked="true" aria-label="Tag the ticket with its tier and the affected workspace ID">
                           <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </span>
                         </Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </span>
                       <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                         <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
@@ -362,14 +362,14 @@ export function Pattern() {
                   <li className="node-taskItem react-renderer" data-checked="true">
                     <div className="flex gap-2.5 items-start" data-node-view-wrapper="" style={{whiteSpace: "normal"}}>
                       <span className="flex h-7 items-center shrink-0" data-task-toggle="" contentEditable="false">
-                        <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_2l_" aria-checked="true" aria-label="Reproduce it on a staging workspace, or note why you could not">
+                        <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_2l_" aria-checked="true" aria-label="Reproduce it on a staging workspace, or note why you could not">
                           <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </span>
                         </Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </span>
                       <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                         <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
@@ -383,8 +383,8 @@ export function Pattern() {
                   <li className="node-taskItem react-renderer" data-checked="false">
                     <div className="flex gap-2.5 items-start" data-node-view-wrapper="" style={{whiteSpace: "normal"}}>
                       <span className="flex h-7 items-center shrink-0" data-task-toggle="" contentEditable="false">
-                        <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_2i_" aria-checked="false" aria-label="Paste the search diagnostics from the next section"></Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_2i_" aria-checked="false" aria-label="Paste the search diagnostics from the next section"></Checkbox>
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </span>
                       <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                         <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
@@ -398,8 +398,8 @@ export function Pattern() {
                   <li className="node-taskItem react-renderer" data-checked="false">
                     <div className="flex gap-2.5 items-start" data-node-view-wrapper="" style={{whiteSpace: "normal"}}>
                       <span className="flex h-7 items-center shrink-0" data-task-toggle="" contentEditable="false">
-                        <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_2r_" aria-checked="false" aria-label="Agree the customer update with  before it goes out"></Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_2r_" aria-checked="false" aria-label="Agree the customer update with  before it goes out"></Checkbox>
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </span>
                       <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                         <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
@@ -417,8 +417,8 @@ export function Pattern() {
                   <li className="node-taskItem react-renderer" data-checked="false">
                     <div className="flex gap-2.5 items-start" data-node-view-wrapper="" style={{whiteSpace: "normal"}}>
                       <span className="flex h-7 items-center shrink-0" data-task-toggle="" contentEditable="false">
-                        <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_2f_" aria-checked="false" aria-label="Book the incident review with  once Tier 3 closes"></Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_2f_" aria-checked="false" aria-label="Book the incident review with  once Tier 3 closes"></Checkbox>
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </span>
                       <div className="flex-1 min-w-0" data-node-view-content="" style={{whiteSpace: "pre-wrap"}}>
                         <div data-node-view-content-react="" data-node-view-wrapper="" style={{whiteSpace: "inherit"}}>
@@ -477,8 +477,8 @@ export function Pattern() {
             </div>
             <div className="-translate-x-full -translate-y-1/2 absolute data-present:sm:flex data-visible:opacity-100 data-visible:pointer-events-auto data-visible:starting:opacity-0 duration-150 ease-out gap-0.5 hidden items-center left-0 motion-reduce:transition-none opacity-0 pointer-events-none top-0 transition-[opacity,display] transition-discrete z-10" inert="">
               <Tooltip>
-              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="-1" aria-label="Add block" id="base-ui-_r_27_" baseUiTooltipTrigger="">
-                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={-1} aria-label="Add block" id="base-ui-_r_27_" baseUiTooltipTrigger="">
+                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
@@ -487,14 +487,14 @@ export function Pattern() {
               <Tooltip>
               <TooltipTrigger className="flex" id="base-ui-_r_2c_" baseUiTooltipTrigger="">
                 <DropdownMenu>
-                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-xs cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="-1" draggable="true" aria-label="Block actions" aria-haspopup="menu" id="base-ui-_r_2d_" aria-expanded="false">
-                  <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                    <circle cx="9" cy="12" r="1"></circle>
-                    <circle cx="9" cy="5" r="1"></circle>
-                    <circle cx="9" cy="19" r="1"></circle>
-                    <circle cx="15" cy="12" r="1"></circle>
-                    <circle cx="15" cy="5" r="1"></circle>
-                    <circle cx="15" cy="19" r="1"></circle>
+                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-xs cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={-1} draggable="true" aria-label="Block actions" aria-haspopup="menu" id="base-ui-_r_2d_" aria-expanded="false">
+                  <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                    <circle cx={9} cy={12} r={1}></circle>
+                    <circle cx={9} cy={5} r={1}></circle>
+                    <circle cx={9} cy={19} r={1}></circle>
+                    <circle cx={15} cy={12} r={1}></circle>
+                    <circle cx={15} cy={5} r={1}></circle>
+                    <circle cx={15} cy={19} r={1}></circle>
                   </svg>
                 </DropdownMenuTrigger>
                 </DropdownMenu>
@@ -518,47 +518,47 @@ export function Pattern() {
               <Card className="[--card-spacing:--spacing(1)] absolute duration-150 end-0 group-focus-within/outline:opacity-100 group-focus-within/outline:pointer-events-auto group-hover/outline:opacity-100 group-hover/outline:pointer-events-auto motion-reduce:transition-none opacity-0 pointer-events-none top-0 transition-opacity w-56" size="sm">
                 <CardContent>
                   <div className="flex flex-col max-h-80 no-scrollbar overflow-y-auto p-0.5 supports-[animation-timeline:scroll()]:scroll-fade-y">
-                    <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start text-muted-foreground w-full" type="button" tabIndex="0" aria-current="location">
+                    <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start text-muted-foreground w-full" type="button" tabIndex={0} aria-current="location">
                       <span className="truncate">
                         {"Escalation Playbook"}
                       </span>
                     </Button>
-                    <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-4 text-muted-foreground w-full" type="button" tabIndex="-1">
+                    <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-4 text-muted-foreground w-full" type="button" tabIndex={-1}>
                       <span className="truncate">
                         {"When to Escalate"}
                       </span>
                     </Button>
-                    <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-4 text-muted-foreground w-full" type="button" tabIndex="-1">
+                    <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-4 text-muted-foreground w-full" type="button" tabIndex={-1}>
                       <span className="truncate">
                         {"Escalation Tiers"}
                       </span>
                     </Button>
-                    <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-6 text-muted-foreground w-full" type="button" tabIndex="-1">
+                    <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-6 text-muted-foreground w-full" type="button" tabIndex={-1}>
                       <span className="truncate">
                         {"Paging Engineering"}
                       </span>
                     </Button>
-                    <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-4 text-muted-foreground w-full" type="button" tabIndex="-1">
+                    <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-4 text-muted-foreground w-full" type="button" tabIndex={-1}>
                       <span className="truncate">
                         {"Handoff Checklist"}
                       </span>
                     </Button>
-                    <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-4 text-muted-foreground w-full" type="button" tabIndex="-1">
+                    <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-4 text-muted-foreground w-full" type="button" tabIndex={-1}>
                       <span className="truncate">
                         {"Handoff Note"}
                       </span>
                     </Button>
-                    <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-6 text-muted-foreground w-full" type="button" tabIndex="-1">
+                    <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-6 text-muted-foreground w-full" type="button" tabIndex={-1}>
                       <span className="truncate">
                         {"Search Diagnostics"}
                       </span>
                     </Button>
-                    <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-6 text-muted-foreground w-full" type="button" tabIndex="-1">
+                    <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-6 text-muted-foreground w-full" type="button" tabIndex={-1}>
                       <span className="truncate">
                         {"Customer Updates"}
                       </span>
                     </Button>
-                    <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-4 text-muted-foreground w-full" type="button" tabIndex="-1">
+                    <Button className="aria-[current=location]:bg-muted aria-[current=location]:font-medium aria-[current=location]:text-foreground dark:aria-[current=location]:bg-muted/50 font-normal justify-start ps-4 text-muted-foreground w-full" type="button" tabIndex={-1}>
                       <span className="truncate">
                         {"Review Cadence"}
                       </span>

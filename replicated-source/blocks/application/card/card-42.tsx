@@ -27,19 +27,19 @@ export function Pattern() {
             <div className="absolute inset-0 opacity-70 pointer-events-none text-border z-0" aria-hidden="true">
               <svg className="size-full" viewBox="0 0 688 596" fill="none" preserveAspectRatio="none" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                  <mask id="_r_0_-panel-grid-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="688" height="596">
-                    <rect width="688" height="596" fill="url(#_r_0_-panel-grid-fade)"></rect>
+                  <mask id="_r_0_-panel-grid-mask" maskUnits="userSpaceOnUse" x={0} y={0} width={688} height={596}>
+                    <rect width={688} height={596} fill="url(#_r_0_-panel-grid-fade)"></rect>
                   </mask>
-                  <lineargradient id="_r_0_-panel-grid-fade" x1="344" y1="0" x2="344" y2="596">
+                  <lineargradient id="_r_0_-panel-grid-fade" x1={344} y1={0} x2={344} y2={596}>
                     <stop stopColor="white"></stop>
-                    <stop offset="0.72" stopColor="white"></stop>
-                    <stop offset="1" stopColor="white" stopOpacity="0"></stop>
+                    <stop offset={0.72} stopColor="white"></stop>
+                    <stop offset={1} stopColor="white" stopOpacity={0}></stop>
                   </lineargradient>
-                  <pattern id="_r_0_-panel-grid-pattern" width="12" height="12" patternUnits="userSpaceOnUse">
+                  <pattern id="_r_0_-panel-grid-pattern" width={12} height={12} patternUnits="userSpaceOnUse">
                     <path d="M 12 0 L 0 0 0 12" stroke="currentColor"></path>
                   </pattern>
                 </defs>
-                <rect width="688" height="596" fill="url(#_r_0_-panel-grid-pattern)" mask="url(#_r_0_-panel-grid-mask)"></rect>
+                <rect width={688} height={596} fill="url(#_r_0_-panel-grid-pattern)" mask="url(#_r_0_-panel-grid-mask)"></rect>
               </svg>
             </div>
             <div className="flex flex-col items-center relative z-10">
@@ -55,14 +55,14 @@ export function Pattern() {
                 <h2 className="font-semibold leading-tight text-base truncate">
                   {"Jenny Klabber"}
                 </h2>
-                <svg className="lucide lucide-badge-check shrink-0 size-4 text-[oklch(0.62_0.22_258)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BadgeCheckIcon" tabler="IconRosetteDiscountCheck" hugeicons="CheckmarkBadge01Icon" phosphor="SealCheckIcon" remixicon="RiVerifiedBadgeLine" aria-label="Verified profile">
+                <svg className="lucide lucide-badge-check shrink-0 size-4 text-[oklch(0.62_0.22_258)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BadgeCheckIcon" tabler="IconRosetteDiscountCheck" hugeicons="CheckmarkBadge01Icon" phosphor="SealCheckIcon" remixicon="RiVerifiedBadgeLine" aria-label="Verified profile">
                   <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
                   <path d="m9 12 2 2 4-4"></path>
                 </svg>
               </div>
               <div className="flex flex-wrap gap-x-4 gap-y-1.5 items-center justify-center leading-relaxed max-w-full mt-2 text-muted-foreground text-sm">
                 <span className="flex gap-1.5 items-center min-w-0">
-                  <svg className="lucide lucide-package shrink-0 size-4 text-muted-foreground/70" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
+                  <svg className="lucide lucide-package shrink-0 size-4 text-muted-foreground/70" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
                     <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
                     <path d="M12 22V12"></path>
                     <polyline points="3.29 7 12 12 20.71 7"></polyline>
@@ -73,9 +73,9 @@ export function Pattern() {
                   </span>
                 </span>
                 <span className="flex gap-1.5 items-center min-w-0">
-                  <svg className="lucide lucide-mail shrink-0 size-4 text-muted-foreground/70" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
+                  <svg className="lucide lucide-mail shrink-0 size-4 text-muted-foreground/70" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
                     <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                    <rect x={2} y={4} width={20} height={16} rx={2}></rect>
                   </svg>
                   <span className="truncate">
                     {"jenny@kteam.com"}
@@ -150,9 +150,9 @@ export function Pattern() {
             </div>
           </FramePanel>
           <footer className="bg-muted/20 flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) px-6! py-(--frame-panel-footer-py) py-3.5!">
-            <Button className="font-medium h-8 min-w-[108px] mx-auto px-3 rounded-md text-xs" type="button" tabIndex="0">
-              <svg className="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" data-icon="inline-start" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"></circle>
+            <Button className="font-medium h-8 min-w-[108px] mx-auto px-3 rounded-md text-xs" type="button" tabIndex={0}>
+              <svg className="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" data-icon="inline-start" aria-hidden="true">
+                <circle cx={12} cy={12} r={10}></circle>
                 <path d="m9 12 2 2 4-4"></path>
               </svg>
               {"Connected"}

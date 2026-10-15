@@ -26,13 +26,13 @@ export function Pattern() {
         {"App connection dialog"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
-        <Button type="button" tabIndex="0" extracted="1">
+        <Button type="button" tabIndex={0} extracted="1">
           {"Open app connector"}
         </Button>
       </div>
     </main>
     <Dialog>
-    <DialogContent className="**:data-[slot=dialog-close]:right-3 **:data-[slot=dialog-close]:top-3 flex flex-col max-w-[calc(100vw-1.5rem)] shadow-none sm:max-w-xl" data-open="" tabIndex="-1" baseUiFocusable="" id="_r_0_" role="dialog" aria-labelledby="base-ui-_r_2_" aria-describedby="base-ui-_r_3_" style={{"--nested-dialogs": "0"}}>
+    <DialogContent className="**:data-[slot=dialog-close]:right-3 **:data-[slot=dialog-close]:top-3 flex flex-col max-w-[calc(100vw-1.5rem)] shadow-none sm:max-w-xl" data-open="" tabIndex={-1} baseUiFocusable="" id="_r_0_" role="dialog" aria-labelledby="base-ui-_r_2_" aria-describedby="base-ui-_r_3_" style={{"--nested-dialogs": "0"}}>
       <DialogHeader>
         <DialogTitle id="base-ui-_r_2_">
           {"Add a workspace app"}
@@ -44,9 +44,9 @@ export function Pattern() {
       <div className="shrink-0">
         <InputGroup role="group">
           <InputGroupAddon role="group" data-align="inline-start">
-            <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+            <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
               <path d="m21 21-4.34-4.34"></path>
-              <circle cx="11" cy="11" r="8"></circle>
+              <circle cx={11} cy={11} r={8}></circle>
             </svg>
           </InputGroupAddon>
           <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_4_" placeholder="Search integrations" aria-label="Search integrations" autoComplete="off" value="" />
@@ -59,7 +59,7 @@ export function Pattern() {
       </div>
       <div className="flex-1 flex-col grid min-h-0">
         <ScrollArea className="flex-1 max-h-[70vh] min-h-0" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
-          <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_5_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
+          <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_5_-viewport" tabIndex={-1} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
             <div className="gap-3 grid grid-cols-2 sm:grid-cols-3">
               <label className="bg-card border border-input cursor-pointer flex flex-col focus-within:ring-0 gap-3 hover:bg-accent/40 min-w-0 outline-none p-3 rounded-lg shadow-none text-left transition-colors" htmlFor="connect-app-claude" id="connect-app-claude-label">
                 <div className="flex gap-3 items-start justify-between">
@@ -70,8 +70,8 @@ export function Pattern() {
                       </svg>
                     </ItemMedia>
                   </Item>
-                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_6_" aria-checked="false" aria-labelledby="connect-app-claude-label"></Checkbox>
-                  <input id="connect-app-claude" tabIndex="-1" aria-hidden="true" type="checkbox" name="connect-app-claude" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_6_" aria-checked="false" aria-labelledby="connect-app-claude-label"></Checkbox>
+                  <input id="connect-app-claude" tabIndex={-1} aria-hidden="true" type="checkbox" name="connect-app-claude" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
@@ -98,8 +98,8 @@ export function Pattern() {
                       </span>
                     </ItemMedia>
                   </Item>
-                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_9_" aria-checked="false" aria-labelledby="connect-app-openai-label"></Checkbox>
-                  <input id="connect-app-openai" tabIndex="-1" aria-hidden="true" type="checkbox" name="connect-app-openai" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_9_" aria-checked="false" aria-labelledby="connect-app-openai-label"></Checkbox>
+                  <input id="connect-app-openai" tabIndex={-1} aria-hidden="true" type="checkbox" name="connect-app-openai" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
@@ -126,8 +126,8 @@ export function Pattern() {
                       </span>
                     </ItemMedia>
                   </Item>
-                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_c_" aria-checked="false" aria-labelledby="connect-app-cursor-label"></Checkbox>
-                  <input id="connect-app-cursor" tabIndex="-1" aria-hidden="true" type="checkbox" name="connect-app-cursor" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_c_" aria-checked="false" aria-labelledby="connect-app-cursor-label"></Checkbox>
+                  <input id="connect-app-cursor" tabIndex={-1} aria-hidden="true" type="checkbox" name="connect-app-cursor" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
@@ -155,14 +155,14 @@ export function Pattern() {
                         </g>
                         <defs>
                           <clippath id="clip0_5072_3766">
-                            <rect width="512" height="512" fill="white"></rect>
+                            <rect width={512} height={512} fill="white"></rect>
                           </clippath>
                         </defs>
                       </svg>
                     </ItemMedia>
                   </Item>
-                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_f_" aria-checked="false" aria-labelledby="connect-app-google-calendar-label"></Checkbox>
-                  <input id="connect-app-google-calendar" tabIndex="-1" aria-hidden="true" type="checkbox" name="connect-app-google-calendar" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_f_" aria-checked="false" aria-labelledby="connect-app-google-calendar-label"></Checkbox>
+                  <input id="connect-app-google-calendar" tabIndex={-1} aria-hidden="true" type="checkbox" name="connect-app-google-calendar" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
@@ -187,8 +187,8 @@ export function Pattern() {
                       </svg>
                     </ItemMedia>
                   </Item>
-                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_i_" aria-checked="false" aria-labelledby="connect-app-slack-label"></Checkbox>
-                  <input id="connect-app-slack" tabIndex="-1" aria-hidden="true" type="checkbox" name="connect-app-slack" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_i_" aria-checked="false" aria-labelledby="connect-app-slack-label"></Checkbox>
+                  <input id="connect-app-slack" tabIndex={-1} aria-hidden="true" type="checkbox" name="connect-app-slack" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
@@ -208,8 +208,8 @@ export function Pattern() {
                       </svg>
                     </ItemMedia>
                   </Item>
-                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_l_" aria-checked="false" aria-labelledby="connect-app-stripe-label"></Checkbox>
-                  <input id="connect-app-stripe" tabIndex="-1" aria-hidden="true" type="checkbox" name="connect-app-stripe" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_l_" aria-checked="false" aria-labelledby="connect-app-stripe-label"></Checkbox>
+                  <input id="connect-app-stripe" tabIndex={-1} aria-hidden="true" type="checkbox" name="connect-app-stripe" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
@@ -243,8 +243,8 @@ export function Pattern() {
                       </svg>
                     </ItemMedia>
                   </Item>
-                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_p_" aria-checked="false" aria-labelledby="connect-app-zoom-label"></Checkbox>
-                  <input id="connect-app-zoom" tabIndex="-1" aria-hidden="true" type="checkbox" name="connect-app-zoom" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_p_" aria-checked="false" aria-labelledby="connect-app-zoom-label"></Checkbox>
+                  <input id="connect-app-zoom" tabIndex={-1} aria-hidden="true" type="checkbox" name="connect-app-zoom" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
@@ -264,8 +264,8 @@ export function Pattern() {
                       </svg>
                     </ItemMedia>
                   </Item>
-                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_s_" aria-checked="false" aria-labelledby="connect-app-loom-label"></Checkbox>
-                  <input id="connect-app-loom" tabIndex="-1" aria-hidden="true" type="checkbox" name="connect-app-loom" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_s_" aria-checked="false" aria-labelledby="connect-app-loom-label"></Checkbox>
+                  <input id="connect-app-loom" tabIndex={-1} aria-hidden="true" type="checkbox" name="connect-app-loom" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
@@ -282,28 +282,28 @@ export function Pattern() {
                     <ItemMedia className="size-auto" variant="icon">
                       <svg className="size-5" aria-hidden="true" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 264.583 264.583">
                         <defs>
-                          <radialgradient xlinkHref="#a" id="f" cx="158.429" cy="578.088" r="52.352" fx="158.429" fy="578.088" gradientTransform="matrix(0 -4.03418 4.28018 0 -2332.227 942.236)" gradientUnits="userSpaceOnUse"></radialgradient>
-                          <radialgradient xlinkHref="#b" id="g" cx="172.615" cy="600.692" r="65" fx="172.615" fy="600.692" gradientTransform="matrix(.67441 -1.16203 1.51283 .87801 -814.366 -47.835)" gradientUnits="userSpaceOnUse"></radialgradient>
-                          <radialgradient xlinkHref="#c" id="h" cx="144.012" cy="51.337" r="67.081" fx="144.012" fy="51.337" gradientTransform="matrix(-2.3989 .67549 -.23008 -.81732 464.996 -26.404)" gradientUnits="userSpaceOnUse"></radialgradient>
-                          <radialgradient xlinkHref="#d" id="e" cx="199.788" cy="628.438" r="52.352" fx="199.788" fy="628.438" gradientTransform="matrix(-3.10797 .87652 -.6315 -2.23914 1345.65 1374.198)" gradientUnits="userSpaceOnUse"></radialgradient>
+                          <radialgradient xlinkHref="#a" id="f" cx={158.429} cy={578.088} r={52.352} fx="158.429" fy="578.088" gradientTransform="matrix(0 -4.03418 4.28018 0 -2332.227 942.236)" gradientUnits="userSpaceOnUse"></radialgradient>
+                          <radialgradient xlinkHref="#b" id="g" cx={172.615} cy={600.692} r={65} fx="172.615" fy="600.692" gradientTransform="matrix(.67441 -1.16203 1.51283 .87801 -814.366 -47.835)" gradientUnits="userSpaceOnUse"></radialgradient>
+                          <radialgradient xlinkHref="#c" id="h" cx={144.012} cy={51.337} r={67.081} fx="144.012" fy="51.337" gradientTransform="matrix(-2.3989 .67549 -.23008 -.81732 464.996 -26.404)" gradientUnits="userSpaceOnUse"></radialgradient>
+                          <radialgradient xlinkHref="#d" id="e" cx={199.788} cy={628.438} r={52.352} fx="199.788" fy="628.438" gradientTransform="matrix(-3.10797 .87652 -.6315 -2.23914 1345.65 1374.198)" gradientUnits="userSpaceOnUse"></radialgradient>
                           <lineargradient id="d">
-                            <stop offset="0" stopColor="#ff005f"></stop>
-                            <stop offset="1" stopColor="#fc01d8"></stop>
+                            <stop offset={0} stopColor="#ff005f"></stop>
+                            <stop offset={1} stopColor="#fc01d8"></stop>
                           </lineargradient>
                           <lineargradient id="c">
-                            <stop offset="0" stopColor="#780cff"></stop>
-                            <stop offset="1" stopColor="#820bff" stopOpacity="0"></stop>
+                            <stop offset={0} stopColor="#780cff"></stop>
+                            <stop offset={1} stopColor="#820bff" stopOpacity={0}></stop>
                           </lineargradient>
                           <lineargradient id="b">
-                            <stop offset="0" stopColor="#fc0"></stop>
-                            <stop offset="1" stopColor="#fc0" stopOpacity="0"></stop>
+                            <stop offset={0} stopColor="#fc0"></stop>
+                            <stop offset={1} stopColor="#fc0" stopOpacity={0}></stop>
                           </lineargradient>
                           <lineargradient id="a">
-                            <stop offset="0" stopColor="#fc0"></stop>
+                            <stop offset={0} stopColor="#fc0"></stop>
                             <stop offset=".124" stopColor="#fc0"></stop>
                             <stop offset=".567" stopColor="#fe4a05"></stop>
                             <stop offset=".694" stopColor="#ff0f3f"></stop>
-                            <stop offset="1" stopColor="#fe0657" stopOpacity="0"></stop>
+                            <stop offset={1} stopColor="#fe0657" stopOpacity={0}></stop>
                           </lineargradient>
                         </defs>
                         <path fill="url(#e)" d="M204.15 18.143c-55.23 0-71.383.057-74.523.317-11.334.943-18.387 2.728-26.07 6.554-5.922 2.942-10.592 6.351-15.201 11.13-8.394 8.716-13.481 19.439-15.323 32.184-.895 6.188-1.156 7.45-1.209 39.056-.02 10.536 0 24.4 0 42.999 0 55.2.062 71.341.326 74.476.916 11.032 2.645 17.973 6.308 25.565 7 14.533 20.37 25.443 36.12 29.514 5.453 1.404 11.476 2.178 19.208 2.544 3.277.142 36.669.244 70.081.244 33.413 0 66.826-.04 70.02-.203 8.954-.422 14.153-1.12 19.901-2.606 15.852-4.09 28.977-14.838 36.12-29.575 3.591-7.409 5.412-14.614 6.236-25.07.18-2.28.255-38.626.255-74.924 0-36.304-.082-72.583-.26-74.863-.835-10.625-2.656-17.77-6.364-25.32-3.042-6.182-6.42-10.799-11.324-15.519-8.752-8.361-19.455-13.45-32.21-15.29-6.18-.894-7.41-1.158-39.033-1.213z" transform="translate(-71.816 -18.143)"></path>
@@ -314,8 +314,8 @@ export function Pattern() {
                       </svg>
                     </ItemMedia>
                   </Item>
-                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_v_" aria-checked="false" aria-labelledby="connect-app-instagram-label"></Checkbox>
-                  <input id="connect-app-instagram" tabIndex="-1" aria-hidden="true" type="checkbox" name="connect-app-instagram" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_v_" aria-checked="false" aria-labelledby="connect-app-instagram-label"></Checkbox>
+                  <input id="connect-app-instagram" tabIndex={-1} aria-hidden="true" type="checkbox" name="connect-app-instagram" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
@@ -335,8 +335,8 @@ export function Pattern() {
                       </svg>
                     </ItemMedia>
                   </Item>
-                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_12_" aria-checked="false" aria-labelledby="connect-app-discord-label"></Checkbox>
-                  <input id="connect-app-discord" tabIndex="-1" aria-hidden="true" type="checkbox" name="connect-app-discord" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_12_" aria-checked="false" aria-labelledby="connect-app-discord-label"></Checkbox>
+                  <input id="connect-app-discord" tabIndex={-1} aria-hidden="true" type="checkbox" name="connect-app-discord" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
@@ -363,14 +363,14 @@ export function Pattern() {
                         </g>
                         <defs>
                           <clippath id="googlemeet-clip0">
-                            <rect width="621.2" height="512" fill="white"></rect>
+                            <rect width={621.2} height={512} fill="white"></rect>
                           </clippath>
                         </defs>
                       </svg>
                     </ItemMedia>
                   </Item>
-                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_15_" aria-checked="false" aria-labelledby="connect-app-google-meet-label"></Checkbox>
-                  <input id="connect-app-google-meet" tabIndex="-1" aria-hidden="true" type="checkbox" name="connect-app-google-meet" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_15_" aria-checked="false" aria-labelledby="connect-app-google-meet-label"></Checkbox>
+                  <input id="connect-app-google-meet" tabIndex={-1} aria-hidden="true" type="checkbox" name="connect-app-google-meet" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
@@ -394,8 +394,8 @@ export function Pattern() {
                       </svg>
                     </ItemMedia>
                   </Item>
-                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_18_" aria-checked="false" aria-labelledby="connect-app-paypal-label"></Checkbox>
-                  <input id="connect-app-paypal" tabIndex="-1" aria-hidden="true" type="checkbox" name="connect-app-paypal" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="focus-visible:ring-0 rounded-full shadow-none size-5" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_18_" aria-checked="false" aria-labelledby="connect-app-paypal-label"></Checkbox>
+                  <input id="connect-app-paypal" tabIndex={-1} aria-hidden="true" type="checkbox" name="connect-app-paypal" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                 </div>
                 <div className="min-w-0 space-y-1 w-full">
                   <p className="font-bold">
@@ -411,16 +411,16 @@ export function Pattern() {
         </ScrollArea>
       </div>
       <DialogFooter>
-        <Button className="w-full" type="button" disabled="" tabIndex="0" disabled>
-          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+        <Button className="w-full" type="button" disabled="" tabIndex={0} disabled>
+          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
             <path d="M5 12h14"></path>
             <path d="M12 5v14"></path>
           </svg>
           {"Add app"}
         </Button>
       </DialogFooter>
-      <DialogClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost cn-dialog-close disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0">
-        <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
+      <DialogClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost cn-dialog-close disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0}>
+        <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
           <path d="M18 6 6 18"></path>
           <path d="m6 6 12 12"></path>
         </svg>

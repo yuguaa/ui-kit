@@ -35,8 +35,8 @@ export function Pattern() {
         {"Finance activity timeline sheet"}
       </h1>
       <Sheet>
-      <SheetTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
-        <svg className="lucide lucide-activity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ActivityIcon" tabler="IconActivity" hugeicons="Pulse01Icon" phosphor="ActivityIcon" remixicon="RiPulseLine" data-icon="inline-start" aria-hidden="true">
+      <SheetTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
+        <svg className="lucide lucide-activity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ActivityIcon" tabler="IconActivity" hugeicons="Pulse01Icon" phosphor="ActivityIcon" remixicon="RiPulseLine" data-icon="inline-start" aria-hidden="true">
           <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
         </svg>
         {"Open timeline"}
@@ -44,7 +44,7 @@ export function Pattern() {
       </Sheet>
     </main>
     <Sheet>
-    <SheetContent className="bg-popover data-[side=right]:h-[calc(100svh-2rem)] data-[side=right]:inset-y-4 data-[side=right]:left-auto data-[side=right]:max-w-none data-[side=right]:right-4 data-[side=right]:w-[min(30rem,calc(100vw-2rem))] flex flex-col outline-none overflow-hidden p-0 rounded-xl" data-open="" tabIndex="-1" baseUiFocusable="" id="_r_0_" role="dialog" data-side="right" aria-labelledby="base-ui-_r_3_" aria-describedby="base-ui-_r_4_" style={{"--nested-dialogs": "0"}}>
+    <SheetContent className="bg-popover data-[side=right]:h-[calc(100svh-2rem)] data-[side=right]:inset-y-4 data-[side=right]:left-auto data-[side=right]:max-w-none data-[side=right]:right-4 data-[side=right]:w-[min(30rem,calc(100vw-2rem))] flex flex-col outline-none overflow-hidden p-0 rounded-xl" data-open="" tabIndex={-1} baseUiFocusable="" id="_r_0_" role="dialog" data-side="right" aria-labelledby="base-ui-_r_3_" aria-describedby="base-ui-_r_4_" style={{"--nested-dialogs": "0"}}>
       <SheetHeader className="border-b border-border/70 gap-2 px-5 py-4 shrink-0 text-left">
         <div className="flex gap-3 items-start justify-between">
           <div className="flex-1 min-w-0">
@@ -60,8 +60,8 @@ export function Pattern() {
               {"Payouts, reviews, invoices, and ledger updates from the finance queue."}
             </SheetDescription>
           </div>
-          <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Dismiss finance activity timeline">
-            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+          <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Dismiss finance activity timeline">
+            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
               <path d="M18 6 6 18"></path>
               <path d="m6 6 12 12"></path>
             </svg>
@@ -70,7 +70,7 @@ export function Pattern() {
       </SheetHeader>
       <div className="flex-1 min-h-0">
         <ScrollArea className="h-full min-h-0" role="presentation" aria-label="Scrollable finance activity timeline" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}} hasOverflowY="" overflowYEnd="">
-          <div className="base-ui-disable-scrollbar focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none overflow-x-hidden overflow-y-auto rounded-lg size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_5_-viewport" tabIndex="0" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "888px"}} data-has-overflow-y="" data-overflow-y-end="">
+          <div className="base-ui-disable-scrollbar focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none overflow-x-hidden overflow-y-auto rounded-lg size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_5_-viewport" tabIndex={0} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "888px"}} data-has-overflow-y="" data-overflow-y-end="">
             <div className="pb-5 pt-0 px-5">
               <Timeline data-orientation="vertical">
                 <TimelineItem className="group-data-[orientation=vertical]/timeline:ms-10 group-data-[orientation=vertical]/timeline:not-last:pb-4" completed="true">
@@ -141,10 +141,10 @@ export function Pattern() {
                       {"Velocity threshold exceeded for new payee"}
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center max-w-full mt-2">
-                      <Button type="button" tabIndex="0">
+                      <Button type="button" tabIndex={0}>
                         {"Review"}
                       </Button>
-                      <Button type="button" tabIndex="0">
+                      <Button type="button" tabIndex={0}>
                         {"Clear"}
                       </Button>
                     </div>
@@ -190,8 +190,8 @@ export function Pattern() {
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center max-w-full mt-2">
                       <ButtonGroup className="max-w-full" role="group">
-                        <Button className="justify-start min-w-0" type="button" tabIndex="0">
-                          <svg className="lucide lucide-paperclip" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" data-icon="inline-start" aria-hidden="true">
+                        <Button className="justify-start min-w-0" type="button" tabIndex={0}>
+                          <svg className="lucide lucide-paperclip" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" data-icon="inline-start" aria-hidden="true">
                             <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                           </svg>
                           <span className="min-w-0 truncate">
@@ -201,8 +201,8 @@ export function Pattern() {
                             {"(48kb)"}
                           </span>
                         </Button>
-                        <Button type="button" tabIndex="0" aria-label="Download settlement-match.csv">
-                          <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
+                        <Button type="button" tabIndex={0} aria-label="Download settlement-match.csv">
+                          <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
                             <path d="M12 15V3"></path>
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                             <path d="m7 10 5 5 5-5"></path>
@@ -299,8 +299,8 @@ export function Pattern() {
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center max-w-full mt-2">
                       <ButtonGroup className="max-w-full" role="group">
-                        <Button className="justify-start min-w-0" type="button" tabIndex="0">
-                          <svg className="lucide lucide-paperclip" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" data-icon="inline-start" aria-hidden="true">
+                        <Button className="justify-start min-w-0" type="button" tabIndex={0}>
+                          <svg className="lucide lucide-paperclip" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" data-icon="inline-start" aria-hidden="true">
                             <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                           </svg>
                           <span className="min-w-0 truncate">
@@ -310,8 +310,8 @@ export function Pattern() {
                             {"(76kb)"}
                           </span>
                         </Button>
-                        <Button type="button" tabIndex="0" aria-label="Download invoice-2098.pdf">
-                          <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
+                        <Button type="button" tabIndex={0} aria-label="Download invoice-2098.pdf">
+                          <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
                             <path d="M12 15V3"></path>
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                             <path d="m7 10 5 5 5-5"></path>
@@ -410,10 +410,10 @@ export function Pattern() {
                       {"Cardholder evidence requested before processor deadline"}
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center max-w-full mt-2">
-                      <Button type="button" tabIndex="0">
+                      <Button type="button" tabIndex={0}>
                         {"Upload"}
                       </Button>
-                      <Button type="button" tabIndex="0">
+                      <Button type="button" tabIndex={0}>
                         {"Assign"}
                       </Button>
                     </div>
@@ -459,8 +459,8 @@ export function Pattern() {
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center max-w-full mt-2">
                       <ButtonGroup className="max-w-full" role="group">
-                        <Button className="justify-start min-w-0" type="button" tabIndex="0">
-                          <svg className="lucide lucide-paperclip" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" data-icon="inline-start" aria-hidden="true">
+                        <Button className="justify-start min-w-0" type="button" tabIndex={0}>
+                          <svg className="lucide lucide-paperclip" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" data-icon="inline-start" aria-hidden="true">
                             <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                           </svg>
                           <span className="min-w-0 truncate">
@@ -470,8 +470,8 @@ export function Pattern() {
                             {"(112kb)"}
                           </span>
                         </Button>
-                        <Button type="button" tabIndex="0" aria-label="Download reserve-release.pdf">
-                          <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
+                        <Button type="button" tabIndex={0} aria-label="Download reserve-release.pdf">
+                          <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
                             <path d="M12 15V3"></path>
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                             <path d="m7 10 5 5 5-5"></path>
@@ -571,7 +571,7 @@ export function Pattern() {
                       {"Hold expires after processor review on Monday"}
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center max-w-full mt-2">
-                      <Button type="button" tabIndex="0">
+                      <Button type="button" tabIndex={0}>
                         {"View Hold"}
                       </Button>
                     </div>
@@ -617,8 +617,8 @@ export function Pattern() {
                     </p>
                     <div className="flex flex-wrap gap-1.5 items-center max-w-full mt-2">
                       <ButtonGroup className="max-w-full" role="group">
-                        <Button className="justify-start min-w-0" type="button" tabIndex="0">
-                          <svg className="lucide lucide-paperclip" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" data-icon="inline-start" aria-hidden="true">
+                        <Button className="justify-start min-w-0" type="button" tabIndex={0}>
+                          <svg className="lucide lucide-paperclip" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" data-icon="inline-start" aria-hidden="true">
                             <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                           </svg>
                           <span className="min-w-0 truncate">
@@ -628,8 +628,8 @@ export function Pattern() {
                             {"(4.2mb)"}
                           </span>
                         </Button>
-                        <Button type="button" tabIndex="0" aria-label="Download audit-sample.zip">
-                          <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
+                        <Button type="button" tabIndex={0} aria-label="Download audit-sample.zip">
+                          <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
                             <path d="M12 15V3"></path>
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                             <path d="m7 10 5 5 5-5"></path>

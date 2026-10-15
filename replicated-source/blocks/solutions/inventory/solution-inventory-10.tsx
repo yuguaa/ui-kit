@@ -56,20 +56,20 @@ export function Pattern() {
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full">
       <div className="flex items-center justify-center min-h-[360px]">
         <Dialog>
-        <DialogTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-lg cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
+        <DialogTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-lg cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
           {"Open Shipping Label"}
         </DialogTrigger>
         </Dialog>
       </div>
     </main>
     <Dialog>
-    <DialogContent className="flex flex-col gap-0 max-h-[min(96svh,52rem)] max-w-none overflow-hidden p-0 w-[min(64rem,calc(100vw-1.5rem))]" data-open="" tabIndex="-1" baseUiFocusable="" id="_r_0_" role="dialog" aria-labelledby="base-ui-_r_3_" aria-describedby="base-ui-_r_4_" style={{"--nested-dialogs": "0"}}>
+    <DialogContent className="flex flex-col gap-0 max-h-[min(96svh,52rem)] max-w-none overflow-hidden p-0 w-[min(64rem,calc(100vw-1.5rem))]" data-open="" tabIndex={-1} baseUiFocusable="" id="_r_0_" role="dialog" aria-labelledby="base-ui-_r_3_" aria-describedby="base-ui-_r_4_" style={{"--nested-dialogs": "0"}}>
       <div className="border-b flex gap-2 items-center justify-between px-5 py-3.5 shrink-0">
         <DialogTitle className="font-semibold text-base text-foreground" id="base-ui-_r_3_">
           {"Create Shipping Label"}
         </DialogTitle>
-        <DialogClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Close create shipping label dialog">
-          <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+        <DialogClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Close create shipping label dialog">
+          <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
             <path d="M18 6 6 18"></path>
             <path d="m6 6 12 12"></path>
           </svg>
@@ -81,7 +81,7 @@ export function Pattern() {
       <form className="flex flex-1 flex-col min-h-0" id="create-shipping-label-form">
         <div className="flex-1 lg:hidden min-h-0">
           <ScrollArea className="h-full" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
-            <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_5_-viewport" tabIndex="-1" style={{overflow: "scroll"}}>
+            <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_5_-viewport" tabIndex={-1} style={{overflow: "scroll"}}>
               <div className="flex flex-col gap-4 px-5 py-5">
                 <Frame className="w-full" spacing="sm">
                   <FramePanel className="flex flex-col gap-0 p-0! shadow-none!">
@@ -175,7 +175,7 @@ export function Pattern() {
                             {"Weight"}
                           </Label>
                           <InputGroup className="w-20" role="group">
-                            <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 h-7! min-w-0 outline-none placeholder:text-muted-foreground px-2! py-0! tabular-nums text-right text-xs w-full" id="shipment-item-weight-item-nike-air-max-270" inputmode="decimal" step="0.1" min="0" aria-label="Weight of Nike Air Max 270 React SE in kilograms" type="number" value="1.2" />
+                            <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 h-7! min-w-0 outline-none placeholder:text-muted-foreground px-2! py-0! tabular-nums text-right text-xs w-full" id="shipment-item-weight-item-nike-air-max-270" inputmode="decimal" step={0.1} min={0} aria-label="Weight of Nike Air Max 270 React SE in kilograms" type="number" value="1.2" />
                             <InputGroupAddon role="group" data-align="inline-end">
                               <span className="text-muted-foreground text-xs">
                                 {"kg"}
@@ -214,7 +214,7 @@ export function Pattern() {
                             {"Weight"}
                           </Label>
                           <InputGroup className="w-20" role="group">
-                            <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 h-7! min-w-0 outline-none placeholder:text-muted-foreground px-2! py-0! tabular-nums text-right text-xs w-full" id="shipment-item-weight-item-wave-strike" inputmode="decimal" step="0.1" min="0" aria-label="Weight of Wave Strike Dynamic Boost Sneaker in kilograms" type="number" value="0.9" />
+                            <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 h-7! min-w-0 outline-none placeholder:text-muted-foreground px-2! py-0! tabular-nums text-right text-xs w-full" id="shipment-item-weight-item-wave-strike" inputmode="decimal" step={0.1} min={0} aria-label="Weight of Wave Strike Dynamic Boost Sneaker in kilograms" type="number" value="0.9" />
                             <InputGroupAddon role="group" data-align="inline-end">
                               <span className="text-muted-foreground text-xs">
                                 {"kg"}
@@ -233,16 +233,16 @@ export function Pattern() {
                         {"Packaging"}
                       </div>
                       <TabsList className="gap-4 p-0" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
-                        <TabsTrigger className="after:bg-primary font-medium h-7 pb-1.5 px-0 text-foreground text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_8_" compositeItemActive="" aria-controls="base-ui-_r_a_">
+                        <TabsTrigger className="after:bg-primary font-medium h-7 pb-1.5 px-0 text-foreground text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex={0} role="tab" aria-selected="true" id="base-ui-_r_8_" compositeItemActive="" aria-controls="base-ui-_r_a_">
                           {"Custom Package"}
                         </TabsTrigger>
-                        <TabsTrigger className="after:bg-primary font-medium h-7 pb-1.5 px-0 text-muted-foreground text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_9_">
+                        <TabsTrigger className="after:bg-primary font-medium h-7 pb-1.5 px-0 text-muted-foreground text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_9_">
                           {"Carrier Package"}
                         </TabsTrigger>
                       </TabsList>
                     </header>
                     <FramePanel className="p-0! shadow-none!">
-                      <TabsContent className="m-0" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_a_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_8_">
+                      <TabsContent className="m-0" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_a_" role="tabpanel" tabIndex={0} index="0" aria-labelledby="base-ui-_r_8_">
                         <div className="flex flex-col gap-4 px-4 py-4">
                           <Field className="gap-1.5" role="group" data-orientation="vertical">
                             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="package-name">
@@ -256,24 +256,24 @@ export function Pattern() {
                                 {"Package Type"}
                               </FieldLabel>
                               <Select>
-                              <SelectTrigger className="w-full" type="button" tabIndex="0" id="package-type" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                              <SelectTrigger className="w-full" type="button" tabIndex={0} id="package-type" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                 <SelectValue>
                                   {"medium-box"}
                                 </SelectValue>
-                                <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                                <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                   <path d="m6 9 6 6 6-6"></path>
                                   {"▼"}
                                 </svg>
                               </SelectTrigger>
                               </Select>
-                              <input id="base-ui-_r_c_-hidden-input" tabIndex="-1" aria-hidden="true" value="medium-box" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_c_-hidden-input" tabIndex={-1} aria-hidden="true" value="medium-box" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </Field>
                             <Field className="gap-1.5" role="group" data-orientation="vertical">
                               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="package-total-weight">
                                 {"Total Weight"}
                               </FieldLabel>
                               <InputGroup role="group">
-                                <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="package-total-weight" inputmode="decimal" step="0.1" min="0" type="number" value="2.1" />
+                                <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="package-total-weight" inputmode="decimal" step={0.1} min={0} type="number" value="2.1" />
                                 <InputGroupAddon role="group" data-align="inline-end">
                                   <span className="text-muted-foreground text-xs">
                                     {"kg"}
@@ -287,47 +287,47 @@ export function Pattern() {
                               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="package-length">
                                 {"Length"}
                               </FieldLabel>
-                              <Input id="package-length" inputmode="numeric" min="0" placeholder="48" type="number" value="48"></Input>
+                              <Input id="package-length" inputmode="numeric" min={0} placeholder="48" type="number" value="48"></Input>
                             </Field>
                             <Field className="gap-1.5" role="group" data-orientation="vertical">
                               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="package-width">
                                 {"Width"}
                               </FieldLabel>
-                              <Input id="package-width" inputmode="numeric" min="0" placeholder="36" type="number" value="36"></Input>
+                              <Input id="package-width" inputmode="numeric" min={0} placeholder="36" type="number" value="36"></Input>
                             </Field>
                             <Field className="gap-1.5" role="group" data-orientation="vertical">
                               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="package-height">
                                 {"Height"}
                               </FieldLabel>
-                              <Input id="package-height" inputmode="numeric" min="0" placeholder="20" type="number" value="20"></Input>
+                              <Input id="package-height" inputmode="numeric" min={0} placeholder="20" type="number" value="20"></Input>
                             </Field>
                             <Field className="gap-1.5" role="group" data-orientation="vertical">
                               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none sr-only" htmlFor="package-unit">
                                 {"Dimension Unit"}
                               </FieldLabel>
                               <Select>
-                              <SelectTrigger className="w-full" type="button" tabIndex="0" id="package-unit" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                              <SelectTrigger className="w-full" type="button" tabIndex={0} id="package-unit" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                 <SelectValue>
                                   {"sm"}
                                 </SelectValue>
-                                <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                                <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                   <path d="m6 9 6 6 6-6"></path>
                                   {"▼"}
                                 </svg>
                               </SelectTrigger>
                               </Select>
-                              <input id="base-ui-_r_j_-hidden-input" tabIndex="-1" aria-hidden="true" value="sm" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_j_-hidden-input" tabIndex={-1} aria-hidden="true" value="sm" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </Field>
                           </div>
                           <Field className="gap-2" role="group" data-orientation="horizontal">
-                            <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_m_" aria-checked="true" aria-labelledby="package-save-future-label">
+                            <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_m_" aria-checked="true" aria-labelledby="package-save-future-label">
                               <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                                <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                                <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                                   <path d="M20 6 9 17l-5-5"></path>
                                 </svg>
                               </span>
                             </Checkbox>
-                            <input id="package-save-future" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                            <input id="package-save-future" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             <FieldLabel className="cn-label font-normal group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-foreground text-sm" htmlFor="package-save-future" id="package-save-future-label">
                               {"Save package for future orders"}
                             </FieldLabel>
@@ -407,18 +407,18 @@ export function Pattern() {
                     <InputGroup role="group">
                       <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="shipping-date" placeholder="Active" aria-label="Shipping date" value="" />
                       <InputGroupAddon role="group" data-align="inline-end">
-                        <svg className="lucide lucide-calendar size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
+                        <svg className="lucide lucide-calendar size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
                           <path d="M8 2v4"></path>
                           <path d="M16 2v4"></path>
-                          <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                          <rect width={18} height={18} x={3} y={4} rx={2}></rect>
                           <path d="M3 10h18"></path>
                         </svg>
                       </InputGroupAddon>
                     </InputGroup>
                   </Field>
                   <Field className="gap-2" role="group" data-orientation="horizontal">
-                    <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_r_" aria-checked="false" aria-labelledby="send-shipping-info-label"></Checkbox>
-                    <input id="send-shipping-info" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                    <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_r_" aria-checked="false" aria-labelledby="send-shipping-info-label"></Checkbox>
+                    <input id="send-shipping-info" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                     <FieldLabel className="cn-label font-normal group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-foreground text-sm" htmlFor="send-shipping-info" id="send-shipping-info-label">
                       {"Send"}
                       <a className="hover:text-primary hover:underline text-primary transition-colors underline-offset-4" href="#shipping-info">
@@ -435,7 +435,7 @@ export function Pattern() {
         <div className="flex-1 flex-row hidden lg:flex min-h-0">
           <div className="flex-1 min-h-0 min-w-0">
             <ScrollArea className="h-full" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}} hasOverflowY="" overflowYEnd="">
-              <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_u_-viewport" tabIndex="0" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "200px"}} data-has-overflow-y="" data-overflow-y-end="">
+              <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_u_-viewport" tabIndex={0} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "200px"}} data-has-overflow-y="" data-overflow-y-end="">
                 <div className="flex flex-col gap-4 px-5 py-5">
                   <Frame className="w-full" spacing="sm">
                     <FramePanel className="flex flex-col gap-0 p-0! shadow-none!">
@@ -529,7 +529,7 @@ export function Pattern() {
                               {"Weight"}
                             </Label>
                             <InputGroup className="w-20" role="group">
-                              <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 h-7! min-w-0 outline-none placeholder:text-muted-foreground px-2! py-0! tabular-nums text-right text-xs w-full" id="shipment-item-weight-item-nike-air-max-270" inputmode="decimal" step="0.1" min="0" aria-label="Weight of Nike Air Max 270 React SE in kilograms" type="number" value="1.2" />
+                              <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 h-7! min-w-0 outline-none placeholder:text-muted-foreground px-2! py-0! tabular-nums text-right text-xs w-full" id="shipment-item-weight-item-nike-air-max-270" inputmode="decimal" step={0.1} min={0} aria-label="Weight of Nike Air Max 270 React SE in kilograms" type="number" value="1.2" />
                               <InputGroupAddon role="group" data-align="inline-end">
                                 <span className="text-muted-foreground text-xs">
                                   {"kg"}
@@ -568,7 +568,7 @@ export function Pattern() {
                               {"Weight"}
                             </Label>
                             <InputGroup className="w-20" role="group">
-                              <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 h-7! min-w-0 outline-none placeholder:text-muted-foreground px-2! py-0! tabular-nums text-right text-xs w-full" id="shipment-item-weight-item-wave-strike" inputmode="decimal" step="0.1" min="0" aria-label="Weight of Wave Strike Dynamic Boost Sneaker in kilograms" type="number" value="0.9" />
+                              <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 h-7! min-w-0 outline-none placeholder:text-muted-foreground px-2! py-0! tabular-nums text-right text-xs w-full" id="shipment-item-weight-item-wave-strike" inputmode="decimal" step={0.1} min={0} aria-label="Weight of Wave Strike Dynamic Boost Sneaker in kilograms" type="number" value="0.9" />
                               <InputGroupAddon role="group" data-align="inline-end">
                                 <span className="text-muted-foreground text-xs">
                                   {"kg"}
@@ -587,16 +587,16 @@ export function Pattern() {
                           {"Packaging"}
                         </div>
                         <TabsList className="gap-4 p-0" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
-                          <TabsTrigger className="after:bg-primary font-medium h-7 pb-1.5 px-0 text-foreground text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_11_" compositeItemActive="" aria-controls="base-ui-_r_13_">
+                          <TabsTrigger className="after:bg-primary font-medium h-7 pb-1.5 px-0 text-foreground text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex={0} role="tab" aria-selected="true" id="base-ui-_r_11_" compositeItemActive="" aria-controls="base-ui-_r_13_">
                             {"Custom Package"}
                           </TabsTrigger>
-                          <TabsTrigger className="after:bg-primary font-medium h-7 pb-1.5 px-0 text-muted-foreground text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_12_">
+                          <TabsTrigger className="after:bg-primary font-medium h-7 pb-1.5 px-0 text-muted-foreground text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_12_">
                             {"Carrier Package"}
                           </TabsTrigger>
                         </TabsList>
                       </header>
                       <FramePanel className="p-0! shadow-none!">
-                        <TabsContent className="m-0" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_13_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_11_">
+                        <TabsContent className="m-0" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_13_" role="tabpanel" tabIndex={0} index="0" aria-labelledby="base-ui-_r_11_">
                           <div className="flex flex-col gap-4 px-4 py-4">
                             <Field className="gap-1.5" role="group" data-orientation="vertical">
                               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="package-name">
@@ -610,24 +610,24 @@ export function Pattern() {
                                   {"Package Type"}
                                 </FieldLabel>
                                 <Select>
-                                <SelectTrigger className="w-full" type="button" tabIndex="0" id="package-type" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                                <SelectTrigger className="w-full" type="button" tabIndex={0} id="package-type" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                   <SelectValue>
                                     {"medium-box"}
                                   </SelectValue>
-                                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                     {"▼"}
                                   </svg>
                                 </SelectTrigger>
                                 </Select>
-                                <input id="base-ui-_r_15_-hidden-input" tabIndex="-1" aria-hidden="true" value="medium-box" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <input id="base-ui-_r_15_-hidden-input" tabIndex={-1} aria-hidden="true" value="medium-box" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </Field>
                               <Field className="gap-1.5" role="group" data-orientation="vertical">
                                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="package-total-weight">
                                   {"Total Weight"}
                                 </FieldLabel>
                                 <InputGroup role="group">
-                                  <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="package-total-weight" inputmode="decimal" step="0.1" min="0" type="number" value="2.1" />
+                                  <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="package-total-weight" inputmode="decimal" step={0.1} min={0} type="number" value="2.1" />
                                   <InputGroupAddon role="group" data-align="inline-end">
                                     <span className="text-muted-foreground text-xs">
                                       {"kg"}
@@ -641,47 +641,47 @@ export function Pattern() {
                                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="package-length">
                                   {"Length"}
                                 </FieldLabel>
-                                <Input id="package-length" inputmode="numeric" min="0" placeholder="48" type="number" value="48"></Input>
+                                <Input id="package-length" inputmode="numeric" min={0} placeholder="48" type="number" value="48"></Input>
                               </Field>
                               <Field className="gap-1.5" role="group" data-orientation="vertical">
                                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="package-width">
                                   {"Width"}
                                 </FieldLabel>
-                                <Input id="package-width" inputmode="numeric" min="0" placeholder="36" type="number" value="36"></Input>
+                                <Input id="package-width" inputmode="numeric" min={0} placeholder="36" type="number" value="36"></Input>
                               </Field>
                               <Field className="gap-1.5" role="group" data-orientation="vertical">
                                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-xs" htmlFor="package-height">
                                   {"Height"}
                                 </FieldLabel>
-                                <Input id="package-height" inputmode="numeric" min="0" placeholder="20" type="number" value="20"></Input>
+                                <Input id="package-height" inputmode="numeric" min={0} placeholder="20" type="number" value="20"></Input>
                               </Field>
                               <Field className="gap-1.5" role="group" data-orientation="vertical">
                                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none sr-only" htmlFor="package-unit">
                                   {"Dimension Unit"}
                                 </FieldLabel>
                                 <Select>
-                                <SelectTrigger className="w-full" type="button" tabIndex="0" id="package-unit" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                                <SelectTrigger className="w-full" type="button" tabIndex={0} id="package-unit" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                   <SelectValue>
                                     {"sm"}
                                   </SelectValue>
-                                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                     {"▼"}
                                   </svg>
                                 </SelectTrigger>
                                 </Select>
-                                <input id="base-ui-_r_1c_-hidden-input" tabIndex="-1" aria-hidden="true" value="sm" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <input id="base-ui-_r_1c_-hidden-input" tabIndex={-1} aria-hidden="true" value="sm" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </Field>
                             </div>
                             <Field className="gap-2" role="group" data-orientation="horizontal">
-                              <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_1f_" aria-checked="true" aria-labelledby="package-save-future-label">
+                              <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_1f_" aria-checked="true" aria-labelledby="package-save-future-label">
                                 <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                                  <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                                  <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                                     <path d="M20 6 9 17l-5-5"></path>
                                   </svg>
                                 </span>
                               </Checkbox>
-                              <input id="package-save-future" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="package-save-future" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               <FieldLabel className="cn-label font-normal group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-foreground text-sm" htmlFor="package-save-future" id="package-save-future-label">
                                 {"Save package for future orders"}
                               </FieldLabel>
@@ -701,7 +701,7 @@ export function Pattern() {
           <Separator className="self-stretch" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
           <div className="min-h-0 shrink-0 w-72">
             <ScrollArea className="h-full" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
-              <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_1j_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
+              <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_1j_-viewport" tabIndex={-1} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                 <div className="flex flex-col gap-5 px-5 py-5">
                   <Frame className="w-full" spacing="sm">
                     <header className="flex flex-col gap-(--frame-panel-header-gap) px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
@@ -771,18 +771,18 @@ export function Pattern() {
                       <InputGroup role="group">
                         <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="shipping-date" placeholder="Active" aria-label="Shipping date" value="" />
                         <InputGroupAddon role="group" data-align="inline-end">
-                          <svg className="lucide lucide-calendar size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
+                          <svg className="lucide lucide-calendar size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true">
                             <path d="M8 2v4"></path>
                             <path d="M16 2v4"></path>
-                            <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                            <rect width={18} height={18} x={3} y={4} rx={2}></rect>
                             <path d="M3 10h18"></path>
                           </svg>
                         </InputGroupAddon>
                       </InputGroup>
                     </Field>
                     <Field className="gap-2" role="group" data-orientation="horizontal">
-                      <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_1l_" aria-checked="false" aria-labelledby="send-shipping-info-label"></Checkbox>
-                      <input id="send-shipping-info" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                      <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_1l_" aria-checked="false" aria-labelledby="send-shipping-info-label"></Checkbox>
+                      <input id="send-shipping-info" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-label font-normal group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none text-foreground text-sm" htmlFor="send-shipping-info" id="send-shipping-info-label">
                         {"Send"}
                         <a className="hover:text-primary hover:underline text-primary transition-colors underline-offset-4" href="#shipping-info">
@@ -806,10 +806,10 @@ export function Pattern() {
           </a>
         </p>
         <div className="flex gap-2 items-center justify-end shrink-0">
-          <DialogClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0">
+          <DialogClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0}>
             {"Cancel"}
           </DialogClose>
-          <Button type="submit" tabIndex="0" form="create-shipping-label-form">
+          <Button type="submit" tabIndex={0} form="create-shipping-label-form">
             {"Buy Shipping Label"}
           </Button>
         </div>

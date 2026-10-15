@@ -98,8 +98,8 @@ export function Pattern() {
                 <SidebarHeader className="gap-2 in-data-[mobile=true]:hidden items-center justify-center p-2 py-3" sidebar="header">
                   <Item className="[a]:hover:bg-primary bg-primary border border-transparent gap-2.5 p-0 rounded-lg size-7 text-primary-foreground text-sm" aria-label="Flowly home" variant="default" size="default" href="/dashboard">
                     <ItemMedia className="[&_svg:not([class*='size-'])]:size-4 gap-2 group-has-data-[slot=item-description]/item:self-start group-has-data-[slot=item-description]/item:translate-y-0.5 size-auto" variant="icon">
-                      <svg className="size-3.5" width="50" height="50" viewBox="25.668 25.1352 49.6644 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <circle cx="70.634" cy="29.8334" r="4.69799" fill="currentColor"></circle>
+                      <svg className="size-3.5" width={50} height={50} viewBox="25.668 25.1352 49.6644 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <circle cx={70.634} cy={29.8334} r={4.69799} fill="currentColor"></circle>
                         <path fillRule="evenodd" clipRule="evenodd" d="M25.668 57.0144V29.8332C25.668 27.2386 27.7713 25.1352 30.366 25.1352C32.9606 25.1352 35.0639 27.2386 35.0639 29.8332V57.0144C35.0639 61.833 38.9702 65.7392 43.7888 65.7392H57.2116C62.0302 65.7392 65.9364 61.833 65.9364 57.0144V43.7258C65.9364 41.1312 68.0398 39.0278 70.6344 39.0278C73.229 39.0278 75.3324 41.1312 75.3324 43.7258V57.0144C75.3324 67.0222 67.2194 75.1352 57.2116 75.1352H43.7888C33.7809 75.1352 25.668 67.0222 25.668 57.0144Z" fill="currentColor"></path>
                       </svg>
                     </ItemMedia>
@@ -117,11 +117,11 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_f6cpflb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" data-active="" aria-label="Dashboard" aria-current="page" href="/dashboard">
-                            <svg className="lucide lucide-layout-dashboard" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                              <rect width="7" height="9" x="3" y="3" rx="1"></rect>
-                              <rect width="7" height="5" x="14" y="3" rx="1"></rect>
-                              <rect width="7" height="9" x="14" y="12" rx="1"></rect>
-                              <rect width="7" height="5" x="3" y="16" rx="1"></rect>
+                            <svg className="lucide lucide-layout-dashboard" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <rect width={7} height={9} x={3} y={3} rx={1}></rect>
+                              <rect width={7} height={5} x={14} y={3} rx={1}></rect>
+                              <rect width={7} height={9} x={14} y={12} rx={1}></rect>
+                              <rect width={7} height={5} x={3} y={16} rx={1}></rect>
                             </svg>
                           </SidebarMenuButton>
                           </SidebarProvider>
@@ -131,11 +131,11 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_facpflb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Workflow Editor" href="/workflow-editor">
-                            <svg className="lucide lucide-spline-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <svg className="lucide lucide-spline-pointer" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M12.034 12.681a.498.498 0 0 1 .647-.647l9 3.5a.5.5 0 0 1-.033.943l-3.444 1.068a1 1 0 0 0-.66.66l-1.067 3.443a.5.5 0 0 1-.943.033z"></path>
                               <path d="M5 17A12 12 0 0 1 17 5"></path>
-                              <circle cx="19" cy="5" r="2"></circle>
-                              <circle cx="5" cy="19" r="2"></circle>
+                              <circle cx={19} cy={5} r={2}></circle>
+                              <circle cx={5} cy={19} r={2}></circle>
                             </svg>
                           </SidebarMenuButton>
                           </SidebarProvider>
@@ -145,9 +145,9 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_fecpflb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="AI Agent Builder" href="/agent-builder">
-                            <svg className="lucide lucide-bot" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <svg className="lucide lucide-bot" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M12 8V4H8"></path>
-                              <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+                              <rect width={16} height={12} x={4} y={8} rx={2}></rect>
                               <path d="M2 14h2"></path>
                               <path d="M20 14h2"></path>
                               <path d="M15 13v2"></path>
@@ -161,10 +161,10 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_ficpflb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Workflows" href="/workflows">
-                            <svg className="lucide lucide-workflow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                              <rect width="8" height="8" x="3" y="3" rx="2"></rect>
+                            <svg className="lucide lucide-workflow" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <rect width={8} height={8} x={3} y={3} rx={2}></rect>
                               <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
-                              <rect width="8" height="8" x="13" y="13" rx="2"></rect>
+                              <rect width={8} height={8} x={13} y={13} rx={2}></rect>
                             </svg>
                           </SidebarMenuButton>
                           </SidebarProvider>
@@ -174,7 +174,7 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_fmcpflb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Agents" href="/agents">
-                            <svg className="lucide lucide-brain-circuit" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <svg className="lucide lucide-brain-circuit" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path>
                               <path d="M9 13a4.5 4.5 0 0 0 3-4"></path>
                               <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path>
@@ -184,10 +184,10 @@ export function Pattern() {
                               <path d="M12 18h6a2 2 0 0 1 2 2v1"></path>
                               <path d="M12 8h8"></path>
                               <path d="M16 8V5a2 2 0 0 1 2-2"></path>
-                              <circle cx="16" cy="13" r=".5"></circle>
-                              <circle cx="18" cy="3" r=".5"></circle>
-                              <circle cx="20" cy="21" r=".5"></circle>
-                              <circle cx="20" cy="8" r=".5"></circle>
+                              <circle cx={16} cy={13} r=".5"></circle>
+                              <circle cx={18} cy={3} r=".5"></circle>
+                              <circle cx={20} cy={21} r=".5"></circle>
+                              <circle cx={20} cy={8} r=".5"></circle>
                             </svg>
                           </SidebarMenuButton>
                           </SidebarProvider>
@@ -197,9 +197,9 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_fqcpflb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Settings" href="/settings">
-                            <svg className="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <svg className="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
-                              <circle cx="12" cy="12" r="3"></circle>
+                              <circle cx={12} cy={12} r={3}></circle>
                             </svg>
                           </SidebarMenuButton>
                           </SidebarProvider>
@@ -215,8 +215,8 @@ export function Pattern() {
                 </SidebarProvider>
                 <SidebarFooter className="gap-2 p-2" sidebar="footer">
                   <Popover>
-                  <PopoverTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:hover:opacity-100 [&_svg]:opacity-60 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center mx-auto outline-none relative rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Notifications, 4 unread" baseUiClickTrigger="" id="base-ui-_R_7ncpflb_" aria-haspopup="dialog" aria-expanded="false">
-                    <svg className="lucide lucide-bell" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <PopoverTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:hover:opacity-100 [&_svg]:opacity-60 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center mx-auto outline-none relative rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Notifications, 4 unread" baseUiClickTrigger="" id="base-ui-_R_7ncpflb_" aria-haspopup="dialog" aria-expanded="false">
+                    <svg className="lucide lucide-bell" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
                       <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
                     </svg>
@@ -224,7 +224,7 @@ export function Pattern() {
                   </PopoverTrigger>
                   </Popover>
                   <DropdownMenu>
-                  <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:not-hover:bg-transparent aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center mx-auto outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open account menu for Nick Bold" aria-haspopup="menu" aria-expanded="false" id="base-ui-_R_qrcpflb_">
+                  <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:not-hover:bg-transparent aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center mx-auto outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Open account menu for Nick Bold" aria-haspopup="menu" aria-expanded="false" id="base-ui-_R_qrcpflb_">
                     <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-md size-6" size="default">
                       <AvatarImage className="rounded-full" alt="Nick Bold" src="https://images.unsplash.com/photo-1543299750-19d1d6297053?w=96&h=96&dpr=2&q=80"></AvatarImage>
                     </Avatar>
@@ -243,9 +243,9 @@ export function Pattern() {
         <header className="bg-background border-b border-border flex gap-2 h-(--header-height) items-center pe-2 ps-3 sticky top-0 w-full z-50">
           <div className="flex flex-1 gap-2 items-center md:flex-none min-w-0">
             <SidebarProvider>
-            <SidebarTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground inline-flex items-center justify-center md:hidden outline-none rounded-lg select-none shrink-0 size-8 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" sidebar="trigger">
-              <svg className="lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+            <SidebarTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground inline-flex items-center justify-center md:hidden outline-none rounded-lg select-none shrink-0 size-8 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} sidebar="trigger">
+              <svg className="lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect width={18} height={18} x={3} y={3} rx={2}></rect>
                 <path d="M9 3v18"></path>
               </svg>
               <span className="sr-only">
@@ -256,8 +256,8 @@ export function Pattern() {
             <span className="-ml-2 md:hidden shrink-0">
               <Item className="[a]:hover:bg-primary bg-primary border border-transparent gap-2.5 p-0 rounded-lg size-7 text-primary-foreground text-sm" aria-label="Flowly home" variant="default" size="default" href="/dashboard">
                 <ItemMedia className="[&_svg:not([class*='size-'])]:size-4 gap-2 group-has-data-[slot=item-description]/item:self-start group-has-data-[slot=item-description]/item:translate-y-0.5 size-auto" variant="icon">
-                  <svg className="size-3.5" width="50" height="50" viewBox="25.668 25.1352 49.6644 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <circle cx="70.634" cy="29.8334" r="4.69799" fill="currentColor"></circle>
+                  <svg className="size-3.5" width={50} height={50} viewBox="25.668 25.1352 49.6644 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx={70.634} cy={29.8334} r={4.69799} fill="currentColor"></circle>
                     <path fillRule="evenodd" clipRule="evenodd" d="M25.668 57.0144V29.8332C25.668 27.2386 27.7713 25.1352 30.366 25.1352C32.9606 25.1352 35.0639 27.2386 35.0639 29.8332V57.0144C35.0639 61.833 38.9702 65.7392 43.7888 65.7392H57.2116C62.0302 65.7392 65.9364 61.833 65.9364 57.0144V43.7258C65.9364 41.1312 68.0398 39.0278 70.6344 39.0278C73.229 39.0278 75.3324 41.1312 75.3324 43.7258V57.0144C75.3324 67.0222 67.2194 75.1352 57.2116 75.1352H43.7888C33.7809 75.1352 25.668 67.0222 25.668 57.0144Z" fill="currentColor"></path>
                   </svg>
                 </ItemMedia>
@@ -292,12 +292,12 @@ export function Pattern() {
                     </AvatarGroupCount>
                   </AvatarGroup>
                   <Separator className="h-4 my-auto" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
-                  <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground px-2.5 rounded-lg text-sm" type="button" tabIndex="0" aria-label="Invite team member">
-                    <svg className="lucide lucide-user-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground px-2.5 rounded-lg text-sm" type="button" tabIndex={0} aria-label="Invite team member">
+                    <svg className="lucide lucide-user-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                      <circle cx="9" cy="7" r="4"></circle>
-                      <line x1="19" x2="19" y1="8" y2="14"></line>
-                      <line x1="22" x2="16" y1="11" y2="11"></line>
+                      <circle cx={9} cy={7} r={4}></circle>
+                      <line x1={19} x2={19} y1={8} y2={14}></line>
+                      <line x1={22} x2={16} y1={11} y2={11}></line>
                     </svg>
                     <span className="hidden md:block">
                       {"Invite"}
@@ -305,8 +305,8 @@ export function Pattern() {
                   </Button>
                 </div>
                 <div className="flex gap-2 items-center shrink-0">
-                  <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding bg-primary border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-primary/80 px-2.5 rounded-lg text-primary-foreground text-sm" type="button" tabIndex="0">
-                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" aria-hidden="true">
+                  <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding bg-primary border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-primary/80 px-2.5 rounded-lg text-primary-foreground text-sm" type="button" tabIndex={0}>
+                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="M12 5v14"></path>
                     </svg>
@@ -315,11 +315,11 @@ export function Pattern() {
                     </span>
                   </Button>
                   <DropdownMenu>
-                  <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground inline-flex items-center justify-center outline-none rounded-lg select-none shrink-0 size-8 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="More options" aria-haspopup="menu" aria-expanded="false" id="base-ui-_r_e_">
-                    <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <circle cx="12" cy="12" r="1"></circle>
-                      <circle cx="19" cy="12" r="1"></circle>
-                      <circle cx="5" cy="12" r="1"></circle>
+                  <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground inline-flex items-center justify-center outline-none rounded-lg select-none shrink-0 size-8 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="More options" aria-haspopup="menu" aria-expanded="false" id="base-ui-_r_e_">
+                    <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <circle cx={12} cy={12} r={1}></circle>
+                      <circle cx={19} cy={12} r={1}></circle>
+                      <circle cx={5} cy={12} r={1}></circle>
                     </svg>
                   </DropdownMenuTrigger>
                   </DropdownMenu>
@@ -342,10 +342,10 @@ export function Pattern() {
                   <Card className="*:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl [--card-spacing:--spacing(4)] bg-card data-[size=sm]:[--card-spacing:--spacing(3)] data-[size=sm]:has-data-[slot=card-footer]:pb-0 gap-0 h-full has-[>img:first-child]:pt-0 has-data-[slot=card-footer]:pb-0 min-w-0 overflow-hidden py-0 ring-1 ring-foreground/10 rounded-xl text-card-foreground text-sm" size="default">
                     <CardContent className="flex flex-1 flex-col gap-3 px-(--card-spacing) py-4">
                       <div className="[&_svg:not([class*=size-])]:size-4 flex gap-2 items-center min-w-0 text-muted-foreground">
-                        <svg className="lucide lucide-workflow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                          <rect width="8" height="8" x="3" y="3" rx="2"></rect>
+                        <svg className="lucide lucide-workflow" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <rect width={8} height={8} x={3} y={3} rx={2}></rect>
                           <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
-                          <rect width="8" height="8" x="13" y="13" rx="2"></rect>
+                          <rect width={8} height={8} x={13} y={13} rx={2}></rect>
                         </svg>
                         <span className="font-medium text-foreground text-sm truncate">
                           {"Workflow Health"}
@@ -365,7 +365,7 @@ export function Pattern() {
                           </span>
                           <span className="flex font-medium font-mono gap-0.5 items-center tabular-nums text-destructive text-sm">
                             <span className="[&_svg:not([class*=size-])]:size-3.5 flex" aria-hidden="true">
-                              <svg className="lucide lucide-arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <svg className="lucide lucide-arrow-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M12 5v14"></path>
                                 <path d="m19 12-7 7-7-7"></path>
                               </svg>
@@ -434,7 +434,7 @@ export function Pattern() {
                           {"View Support Triage"}
                         </span>
                         <span className="[&_svg:not([class*=size-])]:size-4 duration-150 flex group-hover/action:translate-x-0.5 motion-reduce:transition-none shrink-0 transition-transform">
-                          <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
                           </svg>
@@ -445,9 +445,9 @@ export function Pattern() {
                   <Card className="*:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl [--card-spacing:--spacing(4)] bg-card data-[size=sm]:[--card-spacing:--spacing(3)] data-[size=sm]:has-data-[slot=card-footer]:pb-0 gap-0 h-full has-[>img:first-child]:pt-0 has-data-[slot=card-footer]:pb-0 min-w-0 overflow-hidden py-0 ring-1 ring-foreground/10 rounded-xl text-card-foreground text-sm" size="default">
                     <CardContent className="flex flex-1 flex-col gap-3 px-(--card-spacing) py-4">
                       <div className="[&_svg:not([class*=size-])]:size-4 flex gap-2 items-center min-w-0 text-muted-foreground">
-                        <svg className="lucide lucide-bot" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <svg className="lucide lucide-bot" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                           <path d="M12 8V4H8"></path>
-                          <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+                          <rect width={16} height={12} x={4} y={8} rx={2}></rect>
                           <path d="M2 14h2"></path>
                           <path d="M20 14h2"></path>
                           <path d="M15 13v2"></path>
@@ -471,7 +471,7 @@ export function Pattern() {
                           </span>
                           <span className="flex font-medium font-mono gap-0.5 items-center tabular-nums text-sm text-success">
                             <span className="[&_svg:not([class*=size-])]:size-3.5 flex" aria-hidden="true">
-                              <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="m5 12 7-7 7 7"></path>
                                 <path d="M12 19V5"></path>
                               </svg>
@@ -530,7 +530,7 @@ export function Pattern() {
                           {"Review Invoice Reconciler"}
                         </span>
                         <span className="[&_svg:not([class*=size-])]:size-4 duration-150 flex group-hover/action:translate-x-0.5 motion-reduce:transition-none shrink-0 transition-transform">
-                          <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
                           </svg>
@@ -541,7 +541,7 @@ export function Pattern() {
                   <Card className="*:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl [--card-spacing:--spacing(4)] bg-card data-[size=sm]:[--card-spacing:--spacing(3)] data-[size=sm]:has-data-[slot=card-footer]:pb-0 gap-0 h-full has-[>img:first-child]:pt-0 has-data-[slot=card-footer]:pb-0 min-w-0 overflow-hidden py-0 ring-1 ring-foreground/10 rounded-xl text-card-foreground text-sm" size="default">
                     <CardContent className="flex flex-1 flex-col gap-3 px-(--card-spacing) py-4">
                       <div className="[&_svg:not([class*=size-])]:size-4 flex gap-2 items-center min-w-0 text-muted-foreground">
-                        <svg className="lucide lucide-activity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <svg className="lucide lucide-activity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                           <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
                         </svg>
                         <span className="font-medium text-foreground text-sm truncate">
@@ -558,7 +558,7 @@ export function Pattern() {
                           </span>
                           <span className="flex font-medium font-mono gap-0.5 items-center tabular-nums text-sm text-success">
                             <span className="[&_svg:not([class*=size-])]:size-3.5 flex" aria-hidden="true">
-                              <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="m5 12 7-7 7 7"></path>
                                 <path d="M12 19V5"></path>
                               </svg>
@@ -580,50 +580,50 @@ export function Pattern() {
                           <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_R_3lminpflpflb_] {\n  --color-rows: var(--success);\n}\n\n\n.dark [data-chart=chart-_R_3lminpflpflb_] {\n  --color-rows: var(--success);\n}\n" }} />
                           <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0"}}>
                             <div style={{width: "0", height: "0", overflow: "visible"}}>
-                              <div className="recharts-wrapper" width="253" height="56" style={{position: "relative", cursor: "default", width: "253px", height: "56px"}}>
-                                <svg className="recharts-surface" width="253" height="56" viewBox="0 0 253 56" style={{width: "100%", height: "100%", display: "block"}}>
+                              <div className="recharts-wrapper" width={253} height={56} style={{position: "relative", cursor: "default", width: "253px", height: "56px"}}>
+                                <svg className="recharts-surface" width={253} height={56} viewBox="0 0 253 56" style={{width: "100%", height: "100%", display: "block"}}>
                                   <title></title>
                                   <desc></desc>
-                                  <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                                  <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                                  <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                                  <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                                   <defs>
                                     <clippath id="recharts3-clip">
-                                      <rect x="0" y="6" height="50" width="247"></rect>
+                                      <rect x={0} y={6} height={50} width={247}></rect>
                                     </clippath>
                                   </defs>
                                   <defs>
-                                    <lineargradient id="stat-fill-R1lminpflpflb" x1="0" y1="0" x2="0" y2="1">
-                                      <stop offset="0%" stopColor="var(--success)" stopOpacity="0.24"></stop>
-                                      <stop offset="100%" stopColor="var(--success)" stopOpacity="0"></stop>
+                                    <lineargradient id="stat-fill-R1lminpflpflb" x1={0} y1={0} x2={0} y2={1}>
+                                      <stop offset="0%" stopColor="var(--success)" stopOpacity={0.24}></stop>
+                                      <stop offset="100%" stopColor="var(--success)" stopOpacity={0}></stop>
                                     </lineargradient>
                                   </defs>
-                                  <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                                  <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                                     <g className="recharts-area recharts-layer">
                                       <g className="recharts-layer">
                                         <g className="recharts-layer recharts-shape">
-                                          <path className="recharts-area-area recharts-curve" strokeWidth="1.5" fill="url(#stat-fill-R1lminpflpflb)" fillOpacity="1" height="50" width="247" id="recharts-area-_r_g_" stroke="none" d="M0,13.435C6.333,12.24,12.667,11.045,19,11.045C25.333,11.045,31.667,17.152,38,17.152C44.333,17.152,50.667,7.593,57,7.593C63.333,7.593,69.667,8.036,76,8.921C82.333,9.806,88.667,20.781,95,21.666C101.333,22.552,107.667,22.994,114,22.994C120.333,22.994,126.667,14.143,133,11.842C139.333,9.54,145.667,8.39,152,8.39C158.333,8.39,164.667,9.717,171,9.717C177.333,9.717,183.667,6,190,6C196.333,6,202.667,9.894,209,11.045C215.333,12.196,221.667,12.904,228,12.904C234.333,12.904,240.667,11.045,247,9.186L247,56C240.667,56,234.333,56,228,56C221.667,56,215.333,56,209,56C202.667,56,196.333,56,190,56C183.667,56,177.333,56,171,56C164.667,56,158.333,56,152,56C145.667,56,139.333,56,133,56C126.667,56,120.333,56,114,56C107.667,56,101.333,56,95,56C88.667,56,82.333,56,76,56C69.667,56,63.333,56,57,56C50.667,56,44.333,56,38,56C31.667,56,25.333,56,19,56C12.667,56,6.333,56,0,56Z"></path>
-                                          <path className="recharts-area-curve recharts-curve" strokeWidth="1.5" fill="none" fillOpacity="1" height="50" width="247" stroke="var(--success)" d="M0,13.435C6.333,12.24,12.667,11.045,19,11.045C25.333,11.045,31.667,17.152,38,17.152C44.333,17.152,50.667,7.593,57,7.593C63.333,7.593,69.667,8.036,76,8.921C82.333,9.806,88.667,20.781,95,21.666C101.333,22.552,107.667,22.994,114,22.994C120.333,22.994,126.667,14.143,133,11.842C139.333,9.54,145.667,8.39,152,8.39C158.333,8.39,164.667,9.717,171,9.717C177.333,9.717,183.667,6,190,6C196.333,6,202.667,9.894,209,11.045C215.333,12.196,221.667,12.904,228,12.904C234.333,12.904,240.667,11.045,247,9.186"></path>
+                                          <path className="recharts-area-area recharts-curve" strokeWidth={1.5} fill="url(#stat-fill-R1lminpflpflb)" fillOpacity={1} height={50} width={247} id="recharts-area-_r_g_" stroke="none" d="M0,13.435C6.333,12.24,12.667,11.045,19,11.045C25.333,11.045,31.667,17.152,38,17.152C44.333,17.152,50.667,7.593,57,7.593C63.333,7.593,69.667,8.036,76,8.921C82.333,9.806,88.667,20.781,95,21.666C101.333,22.552,107.667,22.994,114,22.994C120.333,22.994,126.667,14.143,133,11.842C139.333,9.54,145.667,8.39,152,8.39C158.333,8.39,164.667,9.717,171,9.717C177.333,9.717,183.667,6,190,6C196.333,6,202.667,9.894,209,11.045C215.333,12.196,221.667,12.904,228,12.904C234.333,12.904,240.667,11.045,247,9.186L247,56C240.667,56,234.333,56,228,56C221.667,56,215.333,56,209,56C202.667,56,196.333,56,190,56C183.667,56,177.333,56,171,56C164.667,56,158.333,56,152,56C145.667,56,139.333,56,133,56C126.667,56,120.333,56,114,56C107.667,56,101.333,56,95,56C88.667,56,82.333,56,76,56C69.667,56,63.333,56,57,56C50.667,56,44.333,56,38,56C31.667,56,25.333,56,19,56C12.667,56,6.333,56,0,56Z"></path>
+                                          <path className="recharts-area-curve recharts-curve" strokeWidth={1.5} fill="none" fillOpacity={1} height={50} width={247} stroke="var(--success)" d="M0,13.435C6.333,12.24,12.667,11.045,19,11.045C25.333,11.045,31.667,17.152,38,17.152C44.333,17.152,50.667,7.593,57,7.593C63.333,7.593,69.667,8.036,76,8.921C82.333,9.806,88.667,20.781,95,21.666C101.333,22.552,107.667,22.994,114,22.994C120.333,22.994,126.667,14.143,133,11.842C139.333,9.54,145.667,8.39,152,8.39C158.333,8.39,164.667,9.717,171,9.717C177.333,9.717,183.667,6,190,6C196.333,6,202.667,9.894,209,11.045C215.333,12.196,221.667,12.904,228,12.904C234.333,12.904,240.667,11.045,247,9.186"></path>
                                         </g>
                                       </g>
                                     </g>
                                   </g>
-                                  <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                                  <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                                  <g className="recharts-zIndex-layer_400" tabIndex="-1">
+                                  <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                                  <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                                  <g className="recharts-zIndex-layer_400" tabIndex={-1}>
                                     <g className="recharts-layer recharts-reference-line">
-                                      <line className="recharts-reference-line-line" x="Oct 6" stroke="var(--success)" strokeOpacity="0.5" strokeDasharray="2 3" fill="none" fillOpacity="1" strokeWidth="1" x1="247" y1="56" x2="247" y2="6"></line>
+                                      <line className="recharts-reference-line-line" x="Oct 6" stroke="var(--success)" strokeOpacity={0.5} strokeDasharray="2 3" fill="none" fillOpacity={1} strokeWidth={1} x1={247} y1={56} x2={247} y2={6}></line>
                                     </g>
                                   </g>
-                                  <g className="recharts-zIndex-layer_500" tabIndex="-1"></g>
-                                  <g className="recharts-zIndex-layer_600" tabIndex="-1">
+                                  <g className="recharts-zIndex-layer_500" tabIndex={-1}></g>
+                                  <g className="recharts-zIndex-layer_600" tabIndex={-1}>
                                     <g className="recharts-layer recharts-reference-dot">
-                                      <circle className="recharts-dot recharts-reference-dot-dot" x="Oct 6" y="278" r="4" fill="var(--success)" stroke="var(--card)" strokeWidth="2" fillOpacity="1" cx="247" cy="9.186404673393522"></circle>
+                                      <circle className="recharts-dot recharts-reference-dot-dot" x="Oct 6" y={278} r={4} fill="var(--success)" stroke="var(--card)" strokeWidth={2} fillOpacity={1} cx={247} cy={9.186404673393522}></circle>
                                     </g>
                                   </g>
-                                  <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                                  <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                                  <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                                  <g className="recharts-zIndex-layer_2000" tabIndex="-1"></g>
+                                  <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                                  <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                                  <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                                  <g className="recharts-zIndex-layer_2000" tabIndex={-1}></g>
                                 </svg>
                               </div>
                             </div>
@@ -638,7 +638,7 @@ export function Pattern() {
                           {"View Order Fulfillment"}
                         </span>
                         <span className="[&_svg:not([class*=size-])]:size-4 duration-150 flex group-hover/action:translate-x-0.5 motion-reduce:transition-none shrink-0 transition-transform">
-                          <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
                           </svg>
@@ -649,7 +649,7 @@ export function Pattern() {
                   <Card className="*:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl [--card-spacing:--spacing(4)] bg-card data-[size=sm]:[--card-spacing:--spacing(3)] data-[size=sm]:has-data-[slot=card-footer]:pb-0 gap-0 h-full has-[>img:first-child]:pt-0 has-data-[slot=card-footer]:pb-0 min-w-0 overflow-hidden py-0 ring-1 ring-foreground/10 rounded-xl text-card-foreground text-sm" size="default">
                     <CardContent className="flex flex-1 flex-col gap-3 px-(--card-spacing) py-4">
                       <div className="[&_svg:not([class*=size-])]:size-4 flex gap-2 items-center min-w-0 text-muted-foreground">
-                        <svg className="lucide lucide-triangle-alert" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <svg className="lucide lucide-triangle-alert" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                           <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
                           <path d="M12 9v4"></path>
                           <path d="M12 17h.01"></path>
@@ -668,7 +668,7 @@ export function Pattern() {
                           </span>
                           <span className="flex font-medium font-mono gap-0.5 items-center tabular-nums text-destructive text-sm">
                             <span className="[&_svg:not([class*=size-])]:size-3.5 flex" aria-hidden="true">
-                              <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="m5 12 7-7 7 7"></path>
                                 <path d="M12 19V5"></path>
                               </svg>
@@ -749,7 +749,7 @@ export function Pattern() {
                           {"View Support Triage"}
                         </span>
                         <span className="[&_svg:not([class*=size-])]:size-4 duration-150 flex group-hover/action:translate-x-0.5 motion-reduce:transition-none shrink-0 transition-transform">
-                          <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="m12 5 7 7-7 7"></path>
                           </svg>
@@ -785,10 +785,10 @@ export function Pattern() {
                           </li>
                         </ul>
                         <ToggleGroup className="data-[size=sm]:rounded-[min(var(--radius-md),10px)] rounded-lg" data-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Activity shown" style={{"--gap": "0"}}>
-                          <ToggleGroupItem className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 aria-invalid:border-destructive aria-invalid:ring-destructive/20 aria-pressed:bg-muted bg-transparent border border-input dark:aria-invalid:ring-destructive/40 data-[state=on]:bg-muted data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 font-medium gap-1 group-data-[spacing=0]/toggle-group:has-data-[icon=inline-end]:pr-1.5 group-data-[spacing=0]/toggle-group:has-data-[icon=inline-start]:pl-1.5 group-data-[spacing=0]/toggle-group:px-2 group-data-[spacing=0]/toggle-group:rounded-none group-data-horizontal/toggle-group:data-[spacing=0]:first:rounded-l-lg group-data-horizontal/toggle-group:data-[spacing=0]:last:rounded-r-lg group-data-vertical/toggle-group:data-[spacing=0]:first:rounded-t-lg group-data-vertical/toggle-group:data-[spacing=0]:last:rounded-b-lg group/toggle h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground inline-flex items-center justify-center min-w-7 outline-none px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground transition-all whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="0">
+                          <ToggleGroupItem className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 aria-invalid:border-destructive aria-invalid:ring-destructive/20 aria-pressed:bg-muted bg-transparent border border-input dark:aria-invalid:ring-destructive/40 data-[state=on]:bg-muted data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 font-medium gap-1 group-data-[spacing=0]/toggle-group:has-data-[icon=inline-end]:pr-1.5 group-data-[spacing=0]/toggle-group:has-data-[icon=inline-start]:pl-1.5 group-data-[spacing=0]/toggle-group:px-2 group-data-[spacing=0]/toggle-group:rounded-none group-data-horizontal/toggle-group:data-[spacing=0]:first:rounded-l-lg group-data-horizontal/toggle-group:data-[spacing=0]:last:rounded-r-lg group-data-vertical/toggle-group:data-[spacing=0]:first:rounded-t-lg group-data-vertical/toggle-group:data-[spacing=0]:last:rounded-b-lg group/toggle h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground inline-flex items-center justify-center min-w-7 outline-none px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground transition-all whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex={0} aria-pressed="true" variant="outline" size="sm" spacing="0">
                             {"Runs"}
                           </ToggleGroupItem>
-                          <ToggleGroupItem className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 aria-invalid:border-destructive aria-invalid:ring-destructive/20 aria-pressed:bg-muted bg-transparent border border-input dark:aria-invalid:ring-destructive/40 data-[state=on]:bg-muted data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 font-medium gap-1 group-data-[spacing=0]/toggle-group:has-data-[icon=inline-end]:pr-1.5 group-data-[spacing=0]/toggle-group:has-data-[icon=inline-start]:pl-1.5 group-data-[spacing=0]/toggle-group:px-2 group-data-[spacing=0]/toggle-group:rounded-none group-data-horizontal/toggle-group:data-[spacing=0]:first:rounded-l-lg group-data-horizontal/toggle-group:data-[spacing=0]:last:rounded-r-lg group-data-vertical/toggle-group:data-[spacing=0]:first:rounded-t-lg group-data-vertical/toggle-group:data-[spacing=0]:last:rounded-b-lg group/toggle h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground inline-flex items-center justify-center min-w-7 outline-none px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground transition-all whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
+                          <ToggleGroupItem className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 aria-invalid:border-destructive aria-invalid:ring-destructive/20 aria-pressed:bg-muted bg-transparent border border-input dark:aria-invalid:ring-destructive/40 data-[state=on]:bg-muted data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 font-medium gap-1 group-data-[spacing=0]/toggle-group:has-data-[icon=inline-end]:pr-1.5 group-data-[spacing=0]/toggle-group:has-data-[icon=inline-start]:pl-1.5 group-data-[spacing=0]/toggle-group:px-2 group-data-[spacing=0]/toggle-group:rounded-none group-data-horizontal/toggle-group:data-[spacing=0]:first:rounded-l-lg group-data-horizontal/toggle-group:data-[spacing=0]:last:rounded-r-lg group-data-vertical/toggle-group:data-[spacing=0]:first:rounded-t-lg group-data-vertical/toggle-group:data-[spacing=0]:last:rounded-b-lg group/toggle h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground inline-flex items-center justify-center min-w-7 outline-none px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground transition-all whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="outline" size="sm" spacing="0">
                             {"Steps"}
                           </ToggleGroupItem>
                         </ToggleGroup>
@@ -800,229 +800,229 @@ export function Pattern() {
                         <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_R_aqinpflpflb_] {\n  --color-succeeded: var(--success);\n  --color-partial: var(--warning);\n  --color-failed: var(--destructive);\n  --color-volume: var(--info);\n}\n\n\n.dark [data-chart=chart-_R_aqinpflpflb_] {\n  --color-succeeded: var(--success);\n  --color-partial: var(--warning);\n  --color-failed: var(--destructive);\n  --color-volume: var(--info);\n}\n" }} />
                         <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0"}}>
                           <div style={{width: "0", height: "0", overflow: "visible"}}>
-                            <div className="recharts-wrapper" width="746" height="224" style={{position: "relative", cursor: "default", width: "746px", height: "224px"}}>
-                              <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex="-1" style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px"}}></div>
-                              <svg className="recharts-surface" role="application" tabIndex="0" width="746" height="224" viewBox="0 0 746 224" style={{width: "100%", height: "100%", display: "block"}}>
+                            <div className="recharts-wrapper" width={746} height={224} style={{position: "relative", cursor: "default", width: "746px", height: "224px"}}>
+                              <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex={-1} style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px"}}></div>
+                              <svg className="recharts-surface" role="application" tabIndex={0} width={746} height={224} viewBox="0 0 746 224" style={{width: "100%", height: "100%", display: "block"}}>
                                 <title></title>
                                 <desc></desc>
-                                <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                                <g className="recharts-zIndex-layer_-50" tabIndex="-1">
+                                <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                                <g className="recharts-zIndex-layer_-50" tabIndex={-1}>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="28.0333" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 28.0333,10\n            A 6,6,0,0,1,34.0333,4\n            L 40.0333,4\n            A 6,6,0,0,1,46.0333,10\n            L 46.0333,192\n            A 6,6,0,0,1,40.0333,198\n            L 34.0333,198\n            A 6,6,0,0,1,28.0333,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={28.0333} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 28.0333,10\n            A 6,6,0,0,1,34.0333,4\n            L 40.0333,4\n            A 6,6,0,0,1,46.0333,10\n            L 46.0333,192\n            A 6,6,0,0,1,40.0333,198\n            L 34.0333,198\n            A 6,6,0,0,1,28.0333,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="58.2" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 58.2,10\n            A 6,6,0,0,1,64.2,4\n            L 70.2,4\n            A 6,6,0,0,1,76.2,10\n            L 76.2,192\n            A 6,6,0,0,1,70.2,198\n            L 64.2,198\n            A 6,6,0,0,1,58.2,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={58.2} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 58.2,10\n            A 6,6,0,0,1,64.2,4\n            L 70.2,4\n            A 6,6,0,0,1,76.2,10\n            L 76.2,192\n            A 6,6,0,0,1,70.2,198\n            L 64.2,198\n            A 6,6,0,0,1,58.2,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="88.3667" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 88.3667,10\n            A 6,6,0,0,1,94.3667,4\n            L 100.3667,4\n            A 6,6,0,0,1,106.3667,10\n            L 106.3667,192\n            A 6,6,0,0,1,100.3667,198\n            L 94.3667,198\n            A 6,6,0,0,1,88.3667,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={88.3667} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 88.3667,10\n            A 6,6,0,0,1,94.3667,4\n            L 100.3667,4\n            A 6,6,0,0,1,106.3667,10\n            L 106.3667,192\n            A 6,6,0,0,1,100.3667,198\n            L 94.3667,198\n            A 6,6,0,0,1,88.3667,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="118.5333" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 118.5333,10\n            A 6,6,0,0,1,124.5333,4\n            L 130.5333,4\n            A 6,6,0,0,1,136.5333,10\n            L 136.5333,192\n            A 6,6,0,0,1,130.5333,198\n            L 124.5333,198\n            A 6,6,0,0,1,118.5333,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={118.5333} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 118.5333,10\n            A 6,6,0,0,1,124.5333,4\n            L 130.5333,4\n            A 6,6,0,0,1,136.5333,10\n            L 136.5333,192\n            A 6,6,0,0,1,130.5333,198\n            L 124.5333,198\n            A 6,6,0,0,1,118.5333,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="148.7" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 148.7,10\n            A 6,6,0,0,1,154.7,4\n            L 160.7,4\n            A 6,6,0,0,1,166.7,10\n            L 166.7,192\n            A 6,6,0,0,1,160.7,198\n            L 154.7,198\n            A 6,6,0,0,1,148.7,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={148.7} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 148.7,10\n            A 6,6,0,0,1,154.7,4\n            L 160.7,4\n            A 6,6,0,0,1,166.7,10\n            L 166.7,192\n            A 6,6,0,0,1,160.7,198\n            L 154.7,198\n            A 6,6,0,0,1,148.7,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="178.8667" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 178.8667,10\n            A 6,6,0,0,1,184.8667,4\n            L 190.8667,4\n            A 6,6,0,0,1,196.8667,10\n            L 196.8667,192\n            A 6,6,0,0,1,190.8667,198\n            L 184.8667,198\n            A 6,6,0,0,1,178.8667,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={178.8667} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 178.8667,10\n            A 6,6,0,0,1,184.8667,4\n            L 190.8667,4\n            A 6,6,0,0,1,196.8667,10\n            L 196.8667,192\n            A 6,6,0,0,1,190.8667,198\n            L 184.8667,198\n            A 6,6,0,0,1,178.8667,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="209.0333" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 209.0333,10\n            A 6,6,0,0,1,215.0333,4\n            L 221.0333,4\n            A 6,6,0,0,1,227.0333,10\n            L 227.0333,192\n            A 6,6,0,0,1,221.0333,198\n            L 215.0333,198\n            A 6,6,0,0,1,209.0333,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={209.0333} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 209.0333,10\n            A 6,6,0,0,1,215.0333,4\n            L 221.0333,4\n            A 6,6,0,0,1,227.0333,10\n            L 227.0333,192\n            A 6,6,0,0,1,221.0333,198\n            L 215.0333,198\n            A 6,6,0,0,1,209.0333,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="239.2" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 239.2,10\n            A 6,6,0,0,1,245.2,4\n            L 251.2,4\n            A 6,6,0,0,1,257.2,10\n            L 257.2,192\n            A 6,6,0,0,1,251.2,198\n            L 245.2,198\n            A 6,6,0,0,1,239.2,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={239.2} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 239.2,10\n            A 6,6,0,0,1,245.2,4\n            L 251.2,4\n            A 6,6,0,0,1,257.2,10\n            L 257.2,192\n            A 6,6,0,0,1,251.2,198\n            L 245.2,198\n            A 6,6,0,0,1,239.2,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="269.3667" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 269.3667,10\n            A 6,6,0,0,1,275.3667,4\n            L 281.3667,4\n            A 6,6,0,0,1,287.3667,10\n            L 287.3667,192\n            A 6,6,0,0,1,281.3667,198\n            L 275.3667,198\n            A 6,6,0,0,1,269.3667,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={269.3667} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 269.3667,10\n            A 6,6,0,0,1,275.3667,4\n            L 281.3667,4\n            A 6,6,0,0,1,287.3667,10\n            L 287.3667,192\n            A 6,6,0,0,1,281.3667,198\n            L 275.3667,198\n            A 6,6,0,0,1,269.3667,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="299.5333" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 299.5333,10\n            A 6,6,0,0,1,305.5333,4\n            L 311.5333,4\n            A 6,6,0,0,1,317.5333,10\n            L 317.5333,192\n            A 6,6,0,0,1,311.5333,198\n            L 305.5333,198\n            A 6,6,0,0,1,299.5333,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={299.5333} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 299.5333,10\n            A 6,6,0,0,1,305.5333,4\n            L 311.5333,4\n            A 6,6,0,0,1,317.5333,10\n            L 317.5333,192\n            A 6,6,0,0,1,311.5333,198\n            L 305.5333,198\n            A 6,6,0,0,1,299.5333,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="329.7" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 329.7,10\n            A 6,6,0,0,1,335.7,4\n            L 341.7,4\n            A 6,6,0,0,1,347.7,10\n            L 347.7,192\n            A 6,6,0,0,1,341.7,198\n            L 335.7,198\n            A 6,6,0,0,1,329.7,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={329.7} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 329.7,10\n            A 6,6,0,0,1,335.7,4\n            L 341.7,4\n            A 6,6,0,0,1,347.7,10\n            L 347.7,192\n            A 6,6,0,0,1,341.7,198\n            L 335.7,198\n            A 6,6,0,0,1,329.7,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="359.8667" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 359.8667,10\n            A 6,6,0,0,1,365.8667,4\n            L 371.8667,4\n            A 6,6,0,0,1,377.8667,10\n            L 377.8667,192\n            A 6,6,0,0,1,371.8667,198\n            L 365.8667,198\n            A 6,6,0,0,1,359.8667,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={359.8667} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 359.8667,10\n            A 6,6,0,0,1,365.8667,4\n            L 371.8667,4\n            A 6,6,0,0,1,377.8667,10\n            L 377.8667,192\n            A 6,6,0,0,1,371.8667,198\n            L 365.8667,198\n            A 6,6,0,0,1,359.8667,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="390.0333" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 390.0333,10\n            A 6,6,0,0,1,396.0333,4\n            L 402.0333,4\n            A 6,6,0,0,1,408.0333,10\n            L 408.0333,192\n            A 6,6,0,0,1,402.0333,198\n            L 396.0333,198\n            A 6,6,0,0,1,390.0333,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={390.0333} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 390.0333,10\n            A 6,6,0,0,1,396.0333,4\n            L 402.0333,4\n            A 6,6,0,0,1,408.0333,10\n            L 408.0333,192\n            A 6,6,0,0,1,402.0333,198\n            L 396.0333,198\n            A 6,6,0,0,1,390.0333,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="420.2" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 420.2,10\n            A 6,6,0,0,1,426.2,4\n            L 432.2,4\n            A 6,6,0,0,1,438.2,10\n            L 438.2,192\n            A 6,6,0,0,1,432.2,198\n            L 426.2,198\n            A 6,6,0,0,1,420.2,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={420.2} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 420.2,10\n            A 6,6,0,0,1,426.2,4\n            L 432.2,4\n            A 6,6,0,0,1,438.2,10\n            L 438.2,192\n            A 6,6,0,0,1,432.2,198\n            L 426.2,198\n            A 6,6,0,0,1,420.2,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="450.3667" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 450.3667,10\n            A 6,6,0,0,1,456.3667,4\n            L 462.3667,4\n            A 6,6,0,0,1,468.3667,10\n            L 468.3667,192\n            A 6,6,0,0,1,462.3667,198\n            L 456.3667,198\n            A 6,6,0,0,1,450.3667,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={450.3667} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 450.3667,10\n            A 6,6,0,0,1,456.3667,4\n            L 462.3667,4\n            A 6,6,0,0,1,468.3667,10\n            L 468.3667,192\n            A 6,6,0,0,1,462.3667,198\n            L 456.3667,198\n            A 6,6,0,0,1,450.3667,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="480.5333" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 480.5333,10\n            A 6,6,0,0,1,486.5333,4\n            L 492.5333,4\n            A 6,6,0,0,1,498.5333,10\n            L 498.5333,192\n            A 6,6,0,0,1,492.5333,198\n            L 486.5333,198\n            A 6,6,0,0,1,480.5333,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={480.5333} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 480.5333,10\n            A 6,6,0,0,1,486.5333,4\n            L 492.5333,4\n            A 6,6,0,0,1,498.5333,10\n            L 498.5333,192\n            A 6,6,0,0,1,492.5333,198\n            L 486.5333,198\n            A 6,6,0,0,1,480.5333,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="510.7" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 510.7,10\n            A 6,6,0,0,1,516.7,4\n            L 522.7,4\n            A 6,6,0,0,1,528.7,10\n            L 528.7,192\n            A 6,6,0,0,1,522.7,198\n            L 516.7,198\n            A 6,6,0,0,1,510.7,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={510.7} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 510.7,10\n            A 6,6,0,0,1,516.7,4\n            L 522.7,4\n            A 6,6,0,0,1,528.7,10\n            L 528.7,192\n            A 6,6,0,0,1,522.7,198\n            L 516.7,198\n            A 6,6,0,0,1,510.7,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="540.8667" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 540.8667,10\n            A 6,6,0,0,1,546.8667,4\n            L 552.8667,4\n            A 6,6,0,0,1,558.8667,10\n            L 558.8667,192\n            A 6,6,0,0,1,552.8667,198\n            L 546.8667,198\n            A 6,6,0,0,1,540.8667,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={540.8667} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 540.8667,10\n            A 6,6,0,0,1,546.8667,4\n            L 552.8667,4\n            A 6,6,0,0,1,558.8667,10\n            L 558.8667,192\n            A 6,6,0,0,1,552.8667,198\n            L 546.8667,198\n            A 6,6,0,0,1,540.8667,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="571.0333" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 571.0333,10\n            A 6,6,0,0,1,577.0333,4\n            L 583.0333,4\n            A 6,6,0,0,1,589.0333,10\n            L 589.0333,192\n            A 6,6,0,0,1,583.0333,198\n            L 577.0333,198\n            A 6,6,0,0,1,571.0333,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={571.0333} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 571.0333,10\n            A 6,6,0,0,1,577.0333,4\n            L 583.0333,4\n            A 6,6,0,0,1,589.0333,10\n            L 589.0333,192\n            A 6,6,0,0,1,583.0333,198\n            L 577.0333,198\n            A 6,6,0,0,1,571.0333,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="601.2" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 601.2,10\n            A 6,6,0,0,1,607.2,4\n            L 613.2,4\n            A 6,6,0,0,1,619.2,10\n            L 619.2,192\n            A 6,6,0,0,1,613.2,198\n            L 607.2,198\n            A 6,6,0,0,1,601.2,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={601.2} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 601.2,10\n            A 6,6,0,0,1,607.2,4\n            L 613.2,4\n            A 6,6,0,0,1,619.2,10\n            L 619.2,192\n            A 6,6,0,0,1,613.2,198\n            L 607.2,198\n            A 6,6,0,0,1,601.2,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="631.3667" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 631.3667,10\n            A 6,6,0,0,1,637.3667,4\n            L 643.3667,4\n            A 6,6,0,0,1,649.3667,10\n            L 649.3667,192\n            A 6,6,0,0,1,643.3667,198\n            L 637.3667,198\n            A 6,6,0,0,1,631.3667,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={631.3667} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 631.3667,10\n            A 6,6,0,0,1,637.3667,4\n            L 643.3667,4\n            A 6,6,0,0,1,649.3667,10\n            L 649.3667,192\n            A 6,6,0,0,1,643.3667,198\n            L 637.3667,198\n            A 6,6,0,0,1,631.3667,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="661.5333" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 661.5333,10\n            A 6,6,0,0,1,667.5333,4\n            L 673.5333,4\n            A 6,6,0,0,1,679.5333,10\n            L 679.5333,192\n            A 6,6,0,0,1,673.5333,198\n            L 667.5333,198\n            A 6,6,0,0,1,661.5333,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={661.5333} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 661.5333,10\n            A 6,6,0,0,1,667.5333,4\n            L 673.5333,4\n            A 6,6,0,0,1,679.5333,10\n            L 679.5333,192\n            A 6,6,0,0,1,673.5333,198\n            L 667.5333,198\n            A 6,6,0,0,1,661.5333,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="691.7" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 691.7,10\n            A 6,6,0,0,1,697.7,4\n            L 703.7,4\n            A 6,6,0,0,1,709.7,10\n            L 709.7,192\n            A 6,6,0,0,1,703.7,198\n            L 697.7,198\n            A 6,6,0,0,1,691.7,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={691.7} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 691.7,10\n            A 6,6,0,0,1,697.7,4\n            L 703.7,4\n            A 6,6,0,0,1,709.7,10\n            L 709.7,192\n            A 6,6,0,0,1,703.7,198\n            L 697.7,198\n            A 6,6,0,0,1,691.7,192 Z"}></path>
                                   </g>
                                   <g className="recharts-inactive-bar recharts-layer">
-                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x="721.8667" y="4" width="18" height="194" fill="var(--muted)" radius="6" d={"M 721.8667,10\n            A 6,6,0,0,1,727.8667,4\n            L 733.8667,4\n            A 6,6,0,0,1,739.8667,10\n            L 739.8667,192\n            A 6,6,0,0,1,733.8667,198\n            L 727.8667,198\n            A 6,6,0,0,1,721.8667,192 Z"}></path>
+                                    <path className="recharts-bar-background-rectangle recharts-rectangle" x={721.8667} y={4} width={18} height={194} fill="var(--muted)" radius="6" d={"M 721.8667,10\n            A 6,6,0,0,1,727.8667,4\n            L 733.8667,4\n            A 6,6,0,0,1,739.8667,10\n            L 739.8667,192\n            A 6,6,0,0,1,733.8667,198\n            L 727.8667,198\n            A 6,6,0,0,1,721.8667,192 Z"}></path>
                                   </g>
                                 </g>
                                 <defs>
                                   <clippath id="recharts4-clip">
-                                    <rect x="22" y="4" height="194" width="724"></rect>
+                                    <rect x={22} y={4} height={194} width={724}></rect>
                                   </clippath>
                                 </defs>
                                 <defs>
-                                  <pattern id="Rqinpflpflb-succeeded" width="5" height="5" patternUnits="userSpaceOnUse" patterntransform="rotate(45)">
-                                    <rect width="5" height="5" fill="var(--color-succeeded)" fillOpacity="0.22"></rect>
-                                    <rect width="2" height="5" fill="var(--color-succeeded)" fillOpacity="0.5"></rect>
+                                  <pattern id="Rqinpflpflb-succeeded" width={5} height={5} patternUnits="userSpaceOnUse" patterntransform="rotate(45)">
+                                    <rect width={5} height={5} fill="var(--color-succeeded)" fillOpacity={0.22}></rect>
+                                    <rect width={2} height={5} fill="var(--color-succeeded)" fillOpacity={0.5}></rect>
                                   </pattern>
-                                  <pattern id="Rqinpflpflb-partial" width="5" height="5" patternUnits="userSpaceOnUse" patterntransform="rotate(45)">
-                                    <rect width="5" height="5" fill="var(--color-partial)" fillOpacity="0.22"></rect>
-                                    <rect width="2" height="5" fill="var(--color-partial)" fillOpacity="0.5"></rect>
+                                  <pattern id="Rqinpflpflb-partial" width={5} height={5} patternUnits="userSpaceOnUse" patterntransform="rotate(45)">
+                                    <rect width={5} height={5} fill="var(--color-partial)" fillOpacity={0.22}></rect>
+                                    <rect width={2} height={5} fill="var(--color-partial)" fillOpacity={0.5}></rect>
                                   </pattern>
-                                  <pattern id="Rqinpflpflb-failed" width="5" height="5" patternUnits="userSpaceOnUse" patterntransform="rotate(45)">
-                                    <rect width="5" height="5" fill="var(--color-failed)" fillOpacity="0.22"></rect>
-                                    <rect width="2" height="5" fill="var(--color-failed)" fillOpacity="0.5"></rect>
+                                  <pattern id="Rqinpflpflb-failed" width={5} height={5} patternUnits="userSpaceOnUse" patterntransform="rotate(45)">
+                                    <rect width={5} height={5} fill="var(--color-failed)" fillOpacity={0.22}></rect>
+                                    <rect width={2} height={5} fill="var(--color-failed)" fillOpacity={0.5}></rect>
                                   </pattern>
                                 </defs>
-                                <g className="recharts-zIndex-layer_100" tabIndex="-1"></g>
-                                <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                                <g className="recharts-zIndex-layer_300" tabIndex="-1">
+                                <g className="recharts-zIndex-layer_100" tabIndex={-1}></g>
+                                <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                                <g className="recharts-zIndex-layer_300" tabIndex={-1}>
                                   <g className="recharts-bar recharts-layer" id="recharts-bar-_r_h_">
                                     <g className="recharts-bar-rectangles recharts-layer">
                                       <g className="recharts-layer">
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="28.0333" y="95.5333" width="18" height="102.4667" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 28.0333,99.5333\n            A 4,4,0,0,1,32.0333,95.5333\n            L 42.0333,95.5333\n            A 4,4,0,0,1,46.0333,99.5333\n            L 46.0333,194\n            A 4,4,0,0,1,42.0333,198\n            L 32.0333,198\n            A 4,4,0,0,1,28.0333,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={28.0333} y={95.5333} width={18} height={102.4667} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 28.0333,99.5333\n            A 4,4,0,0,1,32.0333,95.5333\n            L 42.0333,95.5333\n            A 4,4,0,0,1,46.0333,99.5333\n            L 46.0333,194\n            A 4,4,0,0,1,42.0333,198\n            L 32.0333,198\n            A 4,4,0,0,1,28.0333,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="58.2" y="42.8" width="18" height="155.2" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 58.2,46.8\n            A 4,4,0,0,1,62.2,42.8\n            L 72.2,42.8\n            A 4,4,0,0,1,76.2,46.8\n            L 76.2,194\n            A 4,4,0,0,1,72.2,198\n            L 62.2,198\n            A 4,4,0,0,1,58.2,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={58.2} y={42.8} width={18} height={155.2} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 58.2,46.8\n            A 4,4,0,0,1,62.2,42.8\n            L 72.2,42.8\n            A 4,4,0,0,1,76.2,46.8\n            L 76.2,194\n            A 4,4,0,0,1,72.2,198\n            L 62.2,198\n            A 4,4,0,0,1,58.2,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="88.3667" y="29.8667" width="18" height="168.1333" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 88.3667,33.8667\n            A 4,4,0,0,1,92.3667,29.8667\n            L 102.3667,29.8667\n            A 4,4,0,0,1,106.3667,33.8667\n            L 106.3667,194\n            A 4,4,0,0,1,102.3667,198\n            L 92.3667,198\n            A 4,4,0,0,1,88.3667,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={88.3667} y={29.8667} width={18} height={168.1333} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 88.3667,33.8667\n            A 4,4,0,0,1,92.3667,29.8667\n            L 102.3667,29.8667\n            A 4,4,0,0,1,106.3667,33.8667\n            L 106.3667,194\n            A 4,4,0,0,1,102.3667,198\n            L 92.3667,198\n            A 4,4,0,0,1,88.3667,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="118.5333" y="68.6667" width="18" height="129.3333" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 118.5333,72.6667\n            A 4,4,0,0,1,122.5333,68.6667\n            L 132.5333,68.6667\n            A 4,4,0,0,1,136.5333,72.6667\n            L 136.5333,194\n            A 4,4,0,0,1,132.5333,198\n            L 122.5333,198\n            A 4,4,0,0,1,118.5333,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={118.5333} y={68.6667} width={18} height={129.3333} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 118.5333,72.6667\n            A 4,4,0,0,1,122.5333,68.6667\n            L 132.5333,68.6667\n            A 4,4,0,0,1,136.5333,72.6667\n            L 136.5333,194\n            A 4,4,0,0,1,132.5333,198\n            L 122.5333,198\n            A 4,4,0,0,1,118.5333,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="148.7" y="42.8" width="18" height="155.2" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 148.7,46.8\n            A 4,4,0,0,1,152.7,42.8\n            L 162.7,42.8\n            A 4,4,0,0,1,166.7,46.8\n            L 166.7,194\n            A 4,4,0,0,1,162.7,198\n            L 152.7,198\n            A 4,4,0,0,1,148.7,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={148.7} y={42.8} width={18} height={155.2} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 148.7,46.8\n            A 4,4,0,0,1,152.7,42.8\n            L 162.7,42.8\n            A 4,4,0,0,1,166.7,46.8\n            L 166.7,194\n            A 4,4,0,0,1,162.7,198\n            L 152.7,198\n            A 4,4,0,0,1,148.7,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="178.8667" y="68.6667" width="18" height="129.3333" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 178.8667,72.6667\n            A 4,4,0,0,1,182.8667,68.6667\n            L 192.8667,68.6667\n            A 4,4,0,0,1,196.8667,72.6667\n            L 196.8667,194\n            A 4,4,0,0,1,192.8667,198\n            L 182.8667,198\n            A 4,4,0,0,1,178.8667,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={178.8667} y={68.6667} width={18} height={129.3333} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 178.8667,72.6667\n            A 4,4,0,0,1,182.8667,68.6667\n            L 192.8667,68.6667\n            A 4,4,0,0,1,196.8667,72.6667\n            L 196.8667,194\n            A 4,4,0,0,1,192.8667,198\n            L 182.8667,198\n            A 4,4,0,0,1,178.8667,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="209.0333" y="30.8667" width="18" height="167.1333" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 209.0333,34.8667\n            A 4,4,0,0,1,213.0333,30.8667\n            L 223.0333,30.8667\n            A 4,4,0,0,1,227.0333,34.8667\n            L 227.0333,194\n            A 4,4,0,0,1,223.0333,198\n            L 213.0333,198\n            A 4,4,0,0,1,209.0333,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={209.0333} y={30.8667} width={18} height={167.1333} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 209.0333,34.8667\n            A 4,4,0,0,1,213.0333,30.8667\n            L 223.0333,30.8667\n            A 4,4,0,0,1,227.0333,34.8667\n            L 227.0333,194\n            A 4,4,0,0,1,223.0333,198\n            L 213.0333,198\n            A 4,4,0,0,1,209.0333,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="239.2" y="68.6667" width="18" height="129.3333" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 239.2,72.6667\n            A 4,4,0,0,1,243.2,68.6667\n            L 253.2,68.6667\n            A 4,4,0,0,1,257.2,72.6667\n            L 257.2,194\n            A 4,4,0,0,1,253.2,198\n            L 243.2,198\n            A 4,4,0,0,1,239.2,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={239.2} y={68.6667} width={18} height={129.3333} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 239.2,72.6667\n            A 4,4,0,0,1,243.2,68.6667\n            L 253.2,68.6667\n            A 4,4,0,0,1,257.2,72.6667\n            L 257.2,194\n            A 4,4,0,0,1,253.2,198\n            L 243.2,198\n            A 4,4,0,0,1,239.2,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="269.3667" y="55.7333" width="18" height="142.2667" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 269.3667,59.7333\n            A 4,4,0,0,1,273.3667,55.7333\n            L 283.3667,55.7333\n            A 4,4,0,0,1,287.3667,59.7333\n            L 287.3667,194\n            A 4,4,0,0,1,283.3667,198\n            L 273.3667,198\n            A 4,4,0,0,1,269.3667,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={269.3667} y={55.7333} width={18} height={142.2667} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 269.3667,59.7333\n            A 4,4,0,0,1,273.3667,55.7333\n            L 283.3667,55.7333\n            A 4,4,0,0,1,287.3667,59.7333\n            L 287.3667,194\n            A 4,4,0,0,1,283.3667,198\n            L 273.3667,198\n            A 4,4,0,0,1,269.3667,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="299.5333" y="42.8" width="18" height="155.2" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 299.5333,46.8\n            A 4,4,0,0,1,303.5333,42.8\n            L 313.5333,42.8\n            A 4,4,0,0,1,317.5333,46.8\n            L 317.5333,194\n            A 4,4,0,0,1,313.5333,198\n            L 303.5333,198\n            A 4,4,0,0,1,299.5333,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={299.5333} y={42.8} width={18} height={155.2} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 299.5333,46.8\n            A 4,4,0,0,1,303.5333,42.8\n            L 313.5333,42.8\n            A 4,4,0,0,1,317.5333,46.8\n            L 317.5333,194\n            A 4,4,0,0,1,313.5333,198\n            L 303.5333,198\n            A 4,4,0,0,1,299.5333,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="329.7" y="4" width="18" height="194" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 329.7,8\n            A 4,4,0,0,1,333.7,4\n            L 343.7,4\n            A 4,4,0,0,1,347.7,8\n            L 347.7,194\n            A 4,4,0,0,1,343.7,198\n            L 333.7,198\n            A 4,4,0,0,1,329.7,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={329.7} y={4} width={18} height={194} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 329.7,8\n            A 4,4,0,0,1,333.7,4\n            L 343.7,4\n            A 4,4,0,0,1,347.7,8\n            L 347.7,194\n            A 4,4,0,0,1,343.7,198\n            L 333.7,198\n            A 4,4,0,0,1,329.7,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="359.8667" y="82.6" width="18" height="115.4" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 359.8667,86.6\n            A 4,4,0,0,1,363.8667,82.6\n            L 373.8667,82.6\n            A 4,4,0,0,1,377.8667,86.6\n            L 377.8667,194\n            A 4,4,0,0,1,373.8667,198\n            L 363.8667,198\n            A 4,4,0,0,1,359.8667,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={359.8667} y={82.6} width={18} height={115.4} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 359.8667,86.6\n            A 4,4,0,0,1,363.8667,82.6\n            L 373.8667,82.6\n            A 4,4,0,0,1,377.8667,86.6\n            L 377.8667,194\n            A 4,4,0,0,1,373.8667,198\n            L 363.8667,198\n            A 4,4,0,0,1,359.8667,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="390.0333" y="42.8" width="18" height="155.2" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 390.0333,46.8\n            A 4,4,0,0,1,394.0333,42.8\n            L 404.0333,42.8\n            A 4,4,0,0,1,408.0333,46.8\n            L 408.0333,194\n            A 4,4,0,0,1,404.0333,198\n            L 394.0333,198\n            A 4,4,0,0,1,390.0333,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={390.0333} y={42.8} width={18} height={155.2} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 390.0333,46.8\n            A 4,4,0,0,1,394.0333,42.8\n            L 404.0333,42.8\n            A 4,4,0,0,1,408.0333,46.8\n            L 408.0333,194\n            A 4,4,0,0,1,404.0333,198\n            L 394.0333,198\n            A 4,4,0,0,1,390.0333,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="420.2" y="82.6" width="18" height="115.4" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 420.2,86.6\n            A 4,4,0,0,1,424.2,82.6\n            L 434.2,82.6\n            A 4,4,0,0,1,438.2,86.6\n            L 438.2,194\n            A 4,4,0,0,1,434.2,198\n            L 424.2,198\n            A 4,4,0,0,1,420.2,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={420.2} y={82.6} width={18} height={115.4} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 420.2,86.6\n            A 4,4,0,0,1,424.2,82.6\n            L 434.2,82.6\n            A 4,4,0,0,1,438.2,86.6\n            L 438.2,194\n            A 4,4,0,0,1,434.2,198\n            L 424.2,198\n            A 4,4,0,0,1,420.2,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="450.3667" y="43.8" width="18" height="154.2" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 450.3667,47.8\n            A 4,4,0,0,1,454.3667,43.8\n            L 464.3667,43.8\n            A 4,4,0,0,1,468.3667,47.8\n            L 468.3667,194\n            A 4,4,0,0,1,464.3667,198\n            L 454.3667,198\n            A 4,4,0,0,1,450.3667,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={450.3667} y={43.8} width={18} height={154.2} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 450.3667,47.8\n            A 4,4,0,0,1,454.3667,43.8\n            L 464.3667,43.8\n            A 4,4,0,0,1,468.3667,47.8\n            L 468.3667,194\n            A 4,4,0,0,1,464.3667,198\n            L 454.3667,198\n            A 4,4,0,0,1,450.3667,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="480.5333" y="55.7333" width="18" height="142.2667" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 480.5333,59.7333\n            A 4,4,0,0,1,484.5333,55.7333\n            L 494.5333,55.7333\n            A 4,4,0,0,1,498.5333,59.7333\n            L 498.5333,194\n            A 4,4,0,0,1,494.5333,198\n            L 484.5333,198\n            A 4,4,0,0,1,480.5333,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={480.5333} y={55.7333} width={18} height={142.2667} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 480.5333,59.7333\n            A 4,4,0,0,1,484.5333,55.7333\n            L 494.5333,55.7333\n            A 4,4,0,0,1,498.5333,59.7333\n            L 498.5333,194\n            A 4,4,0,0,1,494.5333,198\n            L 484.5333,198\n            A 4,4,0,0,1,480.5333,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="510.7" y="42.8" width="18" height="155.2" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 510.7,46.8\n            A 4,4,0,0,1,514.7,42.8\n            L 524.7,42.8\n            A 4,4,0,0,1,528.7,46.8\n            L 528.7,194\n            A 4,4,0,0,1,524.7,198\n            L 514.7,198\n            A 4,4,0,0,1,510.7,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={510.7} y={42.8} width={18} height={155.2} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 510.7,46.8\n            A 4,4,0,0,1,514.7,42.8\n            L 524.7,42.8\n            A 4,4,0,0,1,528.7,46.8\n            L 528.7,194\n            A 4,4,0,0,1,524.7,198\n            L 514.7,198\n            A 4,4,0,0,1,510.7,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="540.8667" y="82.6" width="18" height="115.4" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 540.8667,86.6\n            A 4,4,0,0,1,544.8667,82.6\n            L 554.8667,82.6\n            A 4,4,0,0,1,558.8667,86.6\n            L 558.8667,194\n            A 4,4,0,0,1,554.8667,198\n            L 544.8667,198\n            A 4,4,0,0,1,540.8667,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={540.8667} y={82.6} width={18} height={115.4} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 540.8667,86.6\n            A 4,4,0,0,1,544.8667,82.6\n            L 554.8667,82.6\n            A 4,4,0,0,1,558.8667,86.6\n            L 558.8667,194\n            A 4,4,0,0,1,554.8667,198\n            L 544.8667,198\n            A 4,4,0,0,1,540.8667,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="571.0333" y="69.6667" width="18" height="128.3333" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 571.0333,73.6667\n            A 4,4,0,0,1,575.0333,69.6667\n            L 585.0333,69.6667\n            A 4,4,0,0,1,589.0333,73.6667\n            L 589.0333,194\n            A 4,4,0,0,1,585.0333,198\n            L 575.0333,198\n            A 4,4,0,0,1,571.0333,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={571.0333} y={69.6667} width={18} height={128.3333} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 571.0333,73.6667\n            A 4,4,0,0,1,575.0333,69.6667\n            L 585.0333,69.6667\n            A 4,4,0,0,1,589.0333,73.6667\n            L 589.0333,194\n            A 4,4,0,0,1,585.0333,198\n            L 575.0333,198\n            A 4,4,0,0,1,571.0333,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="601.2" y="82.6" width="18" height="115.4" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 601.2,86.6\n            A 4,4,0,0,1,605.2,82.6\n            L 615.2,82.6\n            A 4,4,0,0,1,619.2,86.6\n            L 619.2,194\n            A 4,4,0,0,1,615.2,198\n            L 605.2,198\n            A 4,4,0,0,1,601.2,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={601.2} y={82.6} width={18} height={115.4} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 601.2,86.6\n            A 4,4,0,0,1,605.2,82.6\n            L 615.2,82.6\n            A 4,4,0,0,1,619.2,86.6\n            L 619.2,194\n            A 4,4,0,0,1,615.2,198\n            L 605.2,198\n            A 4,4,0,0,1,601.2,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="631.3667" y="82.6" width="18" height="115.4" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 631.3667,86.6\n            A 4,4,0,0,1,635.3667,82.6\n            L 645.3667,82.6\n            A 4,4,0,0,1,649.3667,86.6\n            L 649.3667,194\n            A 4,4,0,0,1,645.3667,198\n            L 635.3667,198\n            A 4,4,0,0,1,631.3667,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={631.3667} y={82.6} width={18} height={115.4} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 631.3667,86.6\n            A 4,4,0,0,1,635.3667,82.6\n            L 645.3667,82.6\n            A 4,4,0,0,1,649.3667,86.6\n            L 649.3667,194\n            A 4,4,0,0,1,645.3667,198\n            L 635.3667,198\n            A 4,4,0,0,1,631.3667,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="661.5333" y="43.8" width="18" height="154.2" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 661.5333,47.8\n            A 4,4,0,0,1,665.5333,43.8\n            L 675.5333,43.8\n            A 4,4,0,0,1,679.5333,47.8\n            L 679.5333,194\n            A 4,4,0,0,1,675.5333,198\n            L 665.5333,198\n            A 4,4,0,0,1,661.5333,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={661.5333} y={43.8} width={18} height={154.2} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 661.5333,47.8\n            A 4,4,0,0,1,665.5333,43.8\n            L 675.5333,43.8\n            A 4,4,0,0,1,679.5333,47.8\n            L 679.5333,194\n            A 4,4,0,0,1,675.5333,198\n            L 665.5333,198\n            A 4,4,0,0,1,661.5333,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="691.7" y="69.6667" width="18" height="128.3333" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 691.7,73.6667\n            A 4,4,0,0,1,695.7,69.6667\n            L 705.7,69.6667\n            A 4,4,0,0,1,709.7,73.6667\n            L 709.7,194\n            A 4,4,0,0,1,705.7,198\n            L 695.7,198\n            A 4,4,0,0,1,691.7,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={691.7} y={69.6667} width={18} height={128.3333} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 691.7,73.6667\n            A 4,4,0,0,1,695.7,69.6667\n            L 705.7,69.6667\n            A 4,4,0,0,1,709.7,73.6667\n            L 709.7,194\n            A 4,4,0,0,1,705.7,198\n            L 695.7,198\n            A 4,4,0,0,1,691.7,194 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="721.8667" y="82.6" width="18" height="115.4" fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 721.8667,86.6\n            A 4,4,0,0,1,725.8667,82.6\n            L 735.8667,82.6\n            A 4,4,0,0,1,739.8667,86.6\n            L 739.8667,194\n            A 4,4,0,0,1,735.8667,198\n            L 725.8667,198\n            A 4,4,0,0,1,721.8667,194 Z"}></path>
+                                            <path className="recharts-rectangle" x={721.8667} y={82.6} width={18} height={115.4} fill="url(#Rqinpflpflb-succeeded)" radius="4" d={"M 721.8667,86.6\n            A 4,4,0,0,1,725.8667,82.6\n            L 735.8667,82.6\n            A 4,4,0,0,1,739.8667,86.6\n            L 739.8667,194\n            A 4,4,0,0,1,735.8667,198\n            L 725.8667,198\n            A 4,4,0,0,1,721.8667,194 Z"}></path>
                                           </g>
                                         </g>
                                       </g>
@@ -1133,7 +1133,7 @@ export function Pattern() {
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="631.3667" y="69.6667" width="18" height="10.9333" fill="url(#Rqinpflpflb-partial)" radius="4" d={"M 631.3667,73.6667\n            A 4,4,0,0,1,635.3667,69.6667\n            L 645.3667,69.6667\n            A 4,4,0,0,1,649.3667,73.6667\n            L 649.3667,76.6\n            A 4,4,0,0,1,645.3667,80.6\n            L 635.3667,80.6\n            A 4,4,0,0,1,631.3667,76.6 Z"}></path>
+                                            <path className="recharts-rectangle" x={631.3667} y={69.6667} width={18} height={10.9333} fill="url(#Rqinpflpflb-partial)" radius="4" d={"M 631.3667,73.6667\n            A 4,4,0,0,1,635.3667,69.6667\n            L 645.3667,69.6667\n            A 4,4,0,0,1,649.3667,73.6667\n            L 649.3667,76.6\n            A 4,4,0,0,1,645.3667,80.6\n            L 635.3667,80.6\n            A 4,4,0,0,1,631.3667,76.6 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
@@ -1159,7 +1159,7 @@ export function Pattern() {
                                       <g className="recharts-layer">
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="28.0333" y="81.6" width="18" height="11.9333" fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 28.0333,85.6\n            A 4,4,0,0,1,32.0333,81.6\n            L 42.0333,81.6\n            A 4,4,0,0,1,46.0333,85.6\n            L 46.0333,89.5333\n            A 4,4,0,0,1,42.0333,93.5333\n            L 32.0333,93.5333\n            A 4,4,0,0,1,28.0333,89.5333 Z"}></path>
+                                            <path className="recharts-rectangle" x={28.0333} y={81.6} width={18} height={11.9333} fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 28.0333,85.6\n            A 4,4,0,0,1,32.0333,81.6\n            L 42.0333,81.6\n            A 4,4,0,0,1,46.0333,85.6\n            L 46.0333,89.5333\n            A 4,4,0,0,1,42.0333,93.5333\n            L 32.0333,93.5333\n            A 4,4,0,0,1,28.0333,89.5333 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
@@ -1189,7 +1189,7 @@ export function Pattern() {
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="209.0333" y="16.9333" width="18" height="11.9333" fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 209.0333,20.9333\n            A 4,4,0,0,1,213.0333,16.9333\n            L 223.0333,16.9333\n            A 4,4,0,0,1,227.0333,20.9333\n            L 227.0333,24.8667\n            A 4,4,0,0,1,223.0333,28.8667\n            L 213.0333,28.8667\n            A 4,4,0,0,1,209.0333,24.8667 Z"}></path>
+                                            <path className="recharts-rectangle" x={209.0333} y={16.9333} width={18} height={11.9333} fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 209.0333,20.9333\n            A 4,4,0,0,1,213.0333,16.9333\n            L 223.0333,16.9333\n            A 4,4,0,0,1,227.0333,20.9333\n            L 227.0333,24.8667\n            A 4,4,0,0,1,223.0333,28.8667\n            L 213.0333,28.8667\n            A 4,4,0,0,1,209.0333,24.8667 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
@@ -1214,7 +1214,7 @@ export function Pattern() {
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="359.8667" y="68.6667" width="18" height="11.9333" fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 359.8667,72.6667\n            A 4,4,0,0,1,363.8667,68.6667\n            L 373.8667,68.6667\n            A 4,4,0,0,1,377.8667,72.6667\n            L 377.8667,76.6\n            A 4,4,0,0,1,373.8667,80.6\n            L 363.8667,80.6\n            A 4,4,0,0,1,359.8667,76.6 Z"}></path>
+                                            <path className="recharts-rectangle" x={359.8667} y={68.6667} width={18} height={11.9333} fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 359.8667,72.6667\n            A 4,4,0,0,1,363.8667,68.6667\n            L 373.8667,68.6667\n            A 4,4,0,0,1,377.8667,72.6667\n            L 377.8667,76.6\n            A 4,4,0,0,1,373.8667,80.6\n            L 363.8667,80.6\n            A 4,4,0,0,1,359.8667,76.6 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
@@ -1224,17 +1224,12 @@ export function Pattern() {
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="420.2" y="68.6667" width="18" height="11.9333" fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 420.2,72.6667\n            A 4,4,0,0,1,424.2,68.6667\n            L 434.2,68.6667\n            A 4,4,0,0,1,438.2,72.6667\n            L 438.2,76.6\n            A 4,4,0,0,1,434.2,80.6\n            L 424.2,80.6\n            A 4,4,0,0,1,420.2,76.6 Z"}></path>
+                                            <path className="recharts-rectangle" x={420.2} y={68.6667} width={18} height={11.9333} fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 420.2,72.6667\n            A 4,4,0,0,1,424.2,68.6667\n            L 434.2,68.6667\n            A 4,4,0,0,1,438.2,72.6667\n            L 438.2,76.6\n            A 4,4,0,0,1,434.2,80.6\n            L 424.2,80.6\n            A 4,4,0,0,1,420.2,76.6 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="450.3667" y="29.8667" width="18" height="11.9333" fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 450.3667,33.8667\n            A 4,4,0,0,1,454.3667,29.8667\n            L 464.3667,29.8667\n            A 4,4,0,0,1,468.3667,33.8667\n            L 468.3667,37.8\n            A 4,4,0,0,1,464.3667,41.8\n            L 454.3667,41.8\n            A 4,4,0,0,1,450.3667,37.8 Z"}></path>
-                                          </g>
-                                        </g>
-                                        <g className="recharts-bar-rectangle recharts-layer">
-                                          <g className="recharts-inactive-bar recharts-layer">
-                                            <g></g>
+                                            <path className="recharts-rectangle" x={450.3667} y={29.8667} width={18} height={11.9333} fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 450.3667,33.8667\n            A 4,4,0,0,1,454.3667,29.8667\n            L 464.3667,29.8667\n            A 4,4,0,0,1,468.3667,33.8667\n            L 468.3667,37.8\n            A 4,4,0,0,1,464.3667,41.8\n            L 454.3667,41.8\n            A 4,4,0,0,1,450.3667,37.8 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
@@ -1244,45 +1239,50 @@ export function Pattern() {
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="540.8667" y="68.6667" width="18" height="11.9333" fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 540.8667,72.6667\n            A 4,4,0,0,1,544.8667,68.6667\n            L 554.8667,68.6667\n            A 4,4,0,0,1,558.8667,72.6667\n            L 558.8667,76.6\n            A 4,4,0,0,1,554.8667,80.6\n            L 544.8667,80.6\n            A 4,4,0,0,1,540.8667,76.6 Z"}></path>
+                                            <g></g>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="571.0333" y="55.7333" width="18" height="11.9333" fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 571.0333,59.7333\n            A 4,4,0,0,1,575.0333,55.7333\n            L 585.0333,55.7333\n            A 4,4,0,0,1,589.0333,59.7333\n            L 589.0333,63.6667\n            A 4,4,0,0,1,585.0333,67.6667\n            L 575.0333,67.6667\n            A 4,4,0,0,1,571.0333,63.6667 Z"}></path>
+                                            <path className="recharts-rectangle" x={540.8667} y={68.6667} width={18} height={11.9333} fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 540.8667,72.6667\n            A 4,4,0,0,1,544.8667,68.6667\n            L 554.8667,68.6667\n            A 4,4,0,0,1,558.8667,72.6667\n            L 558.8667,76.6\n            A 4,4,0,0,1,554.8667,80.6\n            L 544.8667,80.6\n            A 4,4,0,0,1,540.8667,76.6 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="601.2" y="55.7333" width="18" height="24.8667" fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 601.2,59.7333\n            A 4,4,0,0,1,605.2,55.7333\n            L 615.2,55.7333\n            A 4,4,0,0,1,619.2,59.7333\n            L 619.2,76.6\n            A 4,4,0,0,1,615.2,80.6\n            L 605.2,80.6\n            A 4,4,0,0,1,601.2,76.6 Z"}></path>
+                                            <path className="recharts-rectangle" x={571.0333} y={55.7333} width={18} height={11.9333} fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 571.0333,59.7333\n            A 4,4,0,0,1,575.0333,55.7333\n            L 585.0333,55.7333\n            A 4,4,0,0,1,589.0333,59.7333\n            L 589.0333,63.6667\n            A 4,4,0,0,1,585.0333,67.6667\n            L 575.0333,67.6667\n            A 4,4,0,0,1,571.0333,63.6667 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="631.3667" y="42.8" width="18" height="24.8667" fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 631.3667,46.8\n            A 4,4,0,0,1,635.3667,42.8\n            L 645.3667,42.8\n            A 4,4,0,0,1,649.3667,46.8\n            L 649.3667,63.6667\n            A 4,4,0,0,1,645.3667,67.6667\n            L 635.3667,67.6667\n            A 4,4,0,0,1,631.3667,63.6667 Z"}></path>
+                                            <path className="recharts-rectangle" x={601.2} y={55.7333} width={18} height={24.8667} fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 601.2,59.7333\n            A 4,4,0,0,1,605.2,55.7333\n            L 615.2,55.7333\n            A 4,4,0,0,1,619.2,59.7333\n            L 619.2,76.6\n            A 4,4,0,0,1,615.2,80.6\n            L 605.2,80.6\n            A 4,4,0,0,1,601.2,76.6 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="661.5333" y="16.9333" width="18" height="24.8667" fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 661.5333,20.9333\n            A 4,4,0,0,1,665.5333,16.9333\n            L 675.5333,16.9333\n            A 4,4,0,0,1,679.5333,20.9333\n            L 679.5333,37.8\n            A 4,4,0,0,1,675.5333,41.8\n            L 665.5333,41.8\n            A 4,4,0,0,1,661.5333,37.8 Z"}></path>
+                                            <path className="recharts-rectangle" x={631.3667} y={42.8} width={18} height={24.8667} fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 631.3667,46.8\n            A 4,4,0,0,1,635.3667,42.8\n            L 645.3667,42.8\n            A 4,4,0,0,1,649.3667,46.8\n            L 649.3667,63.6667\n            A 4,4,0,0,1,645.3667,67.6667\n            L 635.3667,67.6667\n            A 4,4,0,0,1,631.3667,63.6667 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="691.7" y="42.8" width="18" height="24.8667" fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 691.7,46.8\n            A 4,4,0,0,1,695.7,42.8\n            L 705.7,42.8\n            A 4,4,0,0,1,709.7,46.8\n            L 709.7,63.6667\n            A 4,4,0,0,1,705.7,67.6667\n            L 695.7,67.6667\n            A 4,4,0,0,1,691.7,63.6667 Z"}></path>
+                                            <path className="recharts-rectangle" x={661.5333} y={16.9333} width={18} height={24.8667} fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 661.5333,20.9333\n            A 4,4,0,0,1,665.5333,16.9333\n            L 675.5333,16.9333\n            A 4,4,0,0,1,679.5333,20.9333\n            L 679.5333,37.8\n            A 4,4,0,0,1,675.5333,41.8\n            L 665.5333,41.8\n            A 4,4,0,0,1,661.5333,37.8 Z"}></path>
                                           </g>
                                         </g>
                                         <g className="recharts-bar-rectangle recharts-layer">
                                           <g className="recharts-inactive-bar recharts-layer">
-                                            <path className="recharts-rectangle" x="721.8667" y="42.8" width="18" height="37.8" fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 721.8667,46.8\n            A 4,4,0,0,1,725.8667,42.8\n            L 735.8667,42.8\n            A 4,4,0,0,1,739.8667,46.8\n            L 739.8667,76.6\n            A 4,4,0,0,1,735.8667,80.6\n            L 725.8667,80.6\n            A 4,4,0,0,1,721.8667,76.6 Z"}></path>
+                                            <path className="recharts-rectangle" x={691.7} y={42.8} width={18} height={24.8667} fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 691.7,46.8\n            A 4,4,0,0,1,695.7,42.8\n            L 705.7,42.8\n            A 4,4,0,0,1,709.7,46.8\n            L 709.7,63.6667\n            A 4,4,0,0,1,705.7,67.6667\n            L 695.7,67.6667\n            A 4,4,0,0,1,691.7,63.6667 Z"}></path>
+                                          </g>
+                                        </g>
+                                        <g className="recharts-bar-rectangle recharts-layer">
+                                          <g className="recharts-inactive-bar recharts-layer">
+                                            <path className="recharts-rectangle" x={721.8667} y={42.8} width={18} height={37.8} fill="url(#Rqinpflpflb-failed)" radius="4" d={"M 721.8667,46.8\n            A 4,4,0,0,1,725.8667,42.8\n            L 735.8667,42.8\n            A 4,4,0,0,1,739.8667,46.8\n            L 739.8667,76.6\n            A 4,4,0,0,1,735.8667,80.6\n            L 725.8667,80.6\n            A 4,4,0,0,1,721.8667,76.6 Z"}></path>
                                           </g>
                                         </g>
                                       </g>
                                     </g>
                                   </g>
                                 </g>
-                                <g className="recharts-zIndex-layer_400" tabIndex="-1"></g>
-                                <g className="recharts-zIndex-layer_500" tabIndex="-1">
+                                <g className="recharts-zIndex-layer_400" tabIndex={-1}></g>
+                                <g className="recharts-zIndex-layer_500" tabIndex={-1}>
                                   <g className="recharts-cartesian-axis recharts-layer recharts-xAxis xAxis">
                                     <g className="recharts-cartesian-axis-ticks recharts-xAxis-ticks">
                                       <g className="recharts-cartesian-axis-tick-lines recharts-xAxis-tick-lines">
@@ -1306,50 +1306,50 @@ export function Pattern() {
                                     </g>
                                   </g>
                                 </g>
-                                <g className="recharts-zIndex-layer_600" tabIndex="-1"></g>
-                                <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                                <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                                <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                                <g className="recharts-zIndex-layer_2000" tabIndex="-1">
+                                <g className="recharts-zIndex-layer_600" tabIndex={-1}></g>
+                                <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                                <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                                <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                                <g className="recharts-zIndex-layer_2000" tabIndex={-1}>
                                   <g className="recharts-cartesian-axis-tick-labels recharts-xAxis-tick-labels">
                                     <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                      <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="724" stroke="none" x="127.58333333333333" y="212" textAnchor="middle" fill="#666">
-                                        <tspan x="127.58333333333333" dy="0.71em">
+                                      <text className="recharts-cartesian-axis-tick-value recharts-text" height={26} orientation="bottom" width={724} stroke="none" x={127.58333333333333} y={212} textAnchor="middle" fill="#666">
+                                        <tspan x={127.58333333333333} dy="0.71em">
                                           {"13:00"}
                                         </tspan>
                                       </text>
                                     </g>
                                     <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                      <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="724" stroke="none" x="248.25000000000003" y="212" textAnchor="middle" fill="#666">
-                                        <tspan x="248.25000000000003" dy="0.71em">
+                                      <text className="recharts-cartesian-axis-tick-value recharts-text" height={26} orientation="bottom" width={724} stroke="none" x={248.25000000000003} y={212} textAnchor="middle" fill="#666">
+                                        <tspan x={248.25000000000003} dy="0.71em">
                                           {"17:00"}
                                         </tspan>
                                       </text>
                                     </g>
                                     <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                      <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="724" stroke="none" x="368.9166666666667" y="212" textAnchor="middle" fill="#666">
-                                        <tspan x="368.9166666666667" dy="0.71em">
+                                      <text className="recharts-cartesian-axis-tick-value recharts-text" height={26} orientation="bottom" width={724} stroke="none" x={368.9166666666667} y={212} textAnchor="middle" fill="#666">
+                                        <tspan x={368.9166666666667} dy="0.71em">
                                           {"21:00"}
                                         </tspan>
                                       </text>
                                     </g>
                                     <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                      <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="724" stroke="none" x="489.5833333333333" y="212" textAnchor="middle" fill="#666">
-                                        <tspan x="489.5833333333333" dy="0.71em">
+                                      <text className="recharts-cartesian-axis-tick-value recharts-text" height={26} orientation="bottom" width={724} stroke="none" x={489.5833333333333} y={212} textAnchor="middle" fill="#666">
+                                        <tspan x={489.5833333333333} dy="0.71em">
                                           {"01:00"}
                                         </tspan>
                                       </text>
                                     </g>
                                     <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                      <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="724" stroke="none" x="610.2500000000001" y="212" textAnchor="middle" fill="#666">
-                                        <tspan x="610.2500000000001" dy="0.71em">
+                                      <text className="recharts-cartesian-axis-tick-value recharts-text" height={26} orientation="bottom" width={724} stroke="none" x={610.2500000000001} y={212} textAnchor="middle" fill="#666">
+                                        <tspan x={610.2500000000001} dy="0.71em">
                                           {"05:00"}
                                         </tspan>
                                       </text>
                                     </g>
                                     <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                      <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="724" stroke="none" x="730.9166666666667" y="212" textAnchor="middle" fill="#666">
-                                        <tspan x="730.9166666666667" dy="0.71em">
+                                      <text className="recharts-cartesian-axis-tick-value recharts-text" height={26} orientation="bottom" width={724} stroke="none" x={730.9166666666667} y={212} textAnchor="middle" fill="#666">
+                                        <tspan x={730.9166666666667} dy="0.71em">
                                           {"Now"}
                                         </tspan>
                                       </text>
@@ -1357,29 +1357,29 @@ export function Pattern() {
                                   </g>
                                   <g className="recharts-cartesian-axis-tick-labels recharts-yAxis-tick-labels">
                                     <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                      <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" height="194" stroke="none" x="12" y="198" textAnchor="end" fill="#666">
-                                        <tspan x="12" dy="0.355em">
+                                      <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" height={194} stroke="none" x={12} y={198} textAnchor="end" fill="#666">
+                                        <tspan x={12} dy="0.355em">
                                           {"0"}
                                         </tspan>
                                       </text>
                                     </g>
                                     <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                      <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" height="194" stroke="none" x="12" y="133.33333333333337" textAnchor="end" fill="#666">
-                                        <tspan x="12" dy="0.355em">
+                                      <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" height={194} stroke="none" x={12} y={133.33333333333337} textAnchor="end" fill="#666">
+                                        <tspan x={12} dy="0.355em">
                                           {"5"}
                                         </tspan>
                                       </text>
                                     </g>
                                     <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                      <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" height="194" stroke="none" x="12" y="68.66666666666669" textAnchor="end" fill="#666">
-                                        <tspan x="12" dy="0.355em">
+                                      <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" height={194} stroke="none" x={12} y={68.66666666666669} textAnchor="end" fill="#666">
+                                        <tspan x={12} dy="0.355em">
                                           {"10"}
                                         </tspan>
                                       </text>
                                     </g>
                                     <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                      <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" height="194" stroke="none" x="12" y="9" textAnchor="end" fill="#666">
-                                        <tspan x="12" dy="0.355em">
+                                      <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" height={194} stroke="none" x={12} y={9} textAnchor="end" fill="#666">
+                                        <tspan x={12} dy="0.355em">
                                           {"15"}
                                         </tspan>
                                       </text>
@@ -1405,11 +1405,11 @@ export function Pattern() {
                         </CardDescription>
                       </div>
                       <DropdownMenu>
-                      <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Attention actions" aria-haspopup="menu" aria-expanded="false" id="base-ui-_R_djainpflpflb_">
-                        <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                          <circle cx="12" cy="12" r="1"></circle>
-                          <circle cx="19" cy="12" r="1"></circle>
-                          <circle cx="5" cy="12" r="1"></circle>
+                      <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Attention actions" aria-haspopup="menu" aria-expanded="false" id="base-ui-_R_djainpflpflb_">
+                        <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <circle cx={12} cy={12} r={1}></circle>
+                          <circle cx={19} cy={12} r={1}></circle>
+                          <circle cx={5} cy={12} r={1}></circle>
                         </svg>
                       </DropdownMenuTrigger>
                       </DropdownMenu>
@@ -1438,8 +1438,8 @@ export function Pattern() {
                           </ItemContent>
                           <ItemActions className="gap-2">
                             <Tooltip>
-                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Fix in Editor Support Triage" id="base-ui-_R_3udainpflpflb_" baseUiTooltipTrigger="">
-                              <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Fix in Editor Support Triage" id="base-ui-_R_3udainpflpflb_" baseUiTooltipTrigger="">
+                              <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                                 <path d="m15 5 4 4"></path>
                               </svg>
@@ -1474,8 +1474,8 @@ export function Pattern() {
                           </ItemContent>
                           <ItemActions className="gap-2">
                             <Tooltip>
-                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Fix in Editor Social Mentions Alert" id="base-ui-_R_3ulainpflpflb_" baseUiTooltipTrigger="">
-                              <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Fix in Editor Social Mentions Alert" id="base-ui-_R_3ulainpflpflb_" baseUiTooltipTrigger="">
+                              <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                                 <path d="m15 5 4 4"></path>
                               </svg>
@@ -1506,8 +1506,8 @@ export function Pattern() {
                           </ItemContent>
                           <ItemActions className="gap-2">
                             <Tooltip>
-                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Fix in Editor Meeting Notes to CRM" id="base-ui-_R_3utainpflpflb_" baseUiTooltipTrigger="">
-                              <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Fix in Editor Meeting Notes to CRM" id="base-ui-_R_3utainpflpflb_" baseUiTooltipTrigger="">
+                              <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                                 <path d="m15 5 4 4"></path>
                               </svg>
@@ -1540,10 +1540,10 @@ export function Pattern() {
                           </ItemContent>
                           <ItemActions className="gap-2">
                             <Tooltip>
-                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Review Inventory Restock" id="base-ui-_R_3v5ainpflpflb_" baseUiTooltipTrigger="">
-                              <svg className="lucide lucide-eye" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Review Inventory Restock" id="base-ui-_R_3v5ainpflpflb_" baseUiTooltipTrigger="">
+                              <svg className="lucide lucide-eye" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path>
-                                <circle cx="12" cy="12" r="3"></circle>
+                                <circle cx={12} cy={12} r={3}></circle>
                               </svg>
                             </TooltipTrigger>
                             </Tooltip>
@@ -1575,8 +1575,8 @@ export function Pattern() {
                           </ItemContent>
                           <ItemActions className="gap-2">
                             <Tooltip>
-                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Resume Contract Sync" id="base-ui-_R_3vdainpflpflb_" baseUiTooltipTrigger="">
-                              <svg className="lucide lucide-play" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Resume Contract Sync" id="base-ui-_R_3vdainpflpflb_" baseUiTooltipTrigger="">
+                              <svg className="lucide lucide-play" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path>
                               </svg>
                             </TooltipTrigger>
@@ -1590,19 +1590,19 @@ export function Pattern() {
                 <Card className="*:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl [--card-spacing:--spacing(4)] bg-card data-[size=sm]:[--card-spacing:--spacing(3)] data-[size=sm]:has-data-[slot=card-footer]:pb-0 gap-0 has-[>img:first-child]:pt-0 has-data-[slot=card-footer]:pb-0 overflow-hidden py-0 ring-1 ring-foreground/10 rounded-xl text-card-foreground text-sm w-full" size="default">
                   <div className="border-b flex flex-col gap-3 lg:flex-row lg:gap-4 lg:items-center lg:min-h-14 lg:py-0 px-4 py-3">
                     <div className="flex gap-2 items-center min-w-0">
-                      <svg className="fill-amber-400 lucide lucide-flag shrink-0 size-3.5 text-amber-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <svg className="fill-amber-400 lucide lucide-flag shrink-0 size-3.5 text-amber-400" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                         <path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path>
                       </svg>
                       <span className="text-muted-foreground text-sm truncate">
                         {"Production"}
                       </span>
-                      <svg className="lucide lucide-chevron-right shrink-0 size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <svg className="lucide lucide-chevron-right shrink-0 size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                         <path d="m9 18 6-6-6-6"></path>
                       </svg>
-                      <svg className="lucide lucide-workflow shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                        <rect width="8" height="8" x="3" y="3" rx="2"></rect>
+                      <svg className="lucide lucide-workflow shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <rect width={8} height={8} x={3} y={3} rx={2}></rect>
                         <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
-                        <rect width="8" height="8" x="13" y="13" rx="2"></rect>
+                        <rect width={8} height={8} x={13} y={13} rx={2}></rect>
                       </svg>
                       <h2 className="font-medium text-foreground text-sm truncate">
                         {"Workflows"}
@@ -1611,30 +1611,30 @@ export function Pattern() {
                     <div className="flex flex-wrap gap-2 items-center lg:flex-nowrap lg:ml-auto min-w-0">
                       <InputGroup className="border border-input dark:bg-input/30 dark:has-[[data-slot][aria-invalid=true]]:ring-destructive/40 dark:has-disabled:bg-input/80 h-8 has-[>[data-align=block-end]]:[&>input]:pt-3 has-[>[data-align=block-end]]:flex-col has-[>[data-align=block-end]]:h-auto has-[>[data-align=block-start]]:[&>input]:pb-3 has-[>[data-align=block-start]]:flex-col has-[>[data-align=block-start]]:h-auto has-[>[data-align=inline-end]]:[&>input]:pr-1.5 has-[>[data-align=inline-start]]:[&>input]:pl-1.5 has-[[data-slot=input-group-control]:focus-visible]:border-ring has-[[data-slot=input-group-control]:focus-visible]:ring-3 has-[[data-slot=input-group-control]:focus-visible]:ring-ring/50 has-[[data-slot][aria-invalid=true]]:border-destructive has-[[data-slot][aria-invalid=true]]:ring-3 has-[[data-slot][aria-invalid=true]]:ring-destructive/20 has-disabled:bg-input/50 has-disabled:opacity-50 in-data-[slot=combobox-content]:focus-within:border-inherit in-data-[slot=combobox-content]:focus-within:ring-0 min-w-40 rounded-lg sm:w-48 transition-colors" role="group">
                         <InputGroupAddon className="[&>kbd]:rounded-[calc(var(--radius)-5px)] [&>svg:not([class*='size-'])]:size-4 font-medium gap-2 group-data-[disabled=true]/input-group:opacity-50 h-auto has-[>button]:ml-[-0.3rem] has-[>kbd]:ml-[-0.15rem] pl-2 py-1.5 text-muted-foreground text-sm" role="group" data-align="inline-start">
-                          <svg className="lucide lucide-search size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <svg className="lucide lucide-search size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="m21 21-4.34-4.34"></path>
-                            <circle cx="11" cy="11" r="8"></circle>
+                            <circle cx={11} cy={11} r={8}></circle>
                           </svg>
                         </InputGroupAddon>
                         <input className="aria-invalid:border-destructive aria-invalid:ring-0 aria-invalid:ring-destructive/20 bg-transparent border-0 border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-transparent dark:disabled:bg-transparent disabled:bg-transparent disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:font-medium file:h-6 file:inline-flex file:text-foreground file:text-sm flex-1 focus-visible:border-ring focus-visible:ring-0 focus-visible:ring-ring/50 h-8 md:text-sm min-w-0 outline-none placeholder:text-muted-foreground px-2.5 py-1 ring-0 rounded-none shadow-none text-base transition-colors w-full" id="base-ui-_R_16finpflpflb_" placeholder="Search..." aria-label="Search workflows" value="" />
                       </InputGroup>
                       <DropdownMenu>
-                      <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 group/button h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground inline-flex items-center justify-center outline-none px-2.5 rounded-lg select-none shrink-0 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" aria-expanded="false" id="base-ui-_R_6qfinpflpflb_">
-                        <svg className="lucide lucide-arrow-up-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" aria-hidden="true">
+                      <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 group/button h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground inline-flex items-center justify-center outline-none px-2.5 rounded-lg select-none shrink-0 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" aria-expanded="false" id="base-ui-_R_6qfinpflpflb_">
+                        <svg className="lucide lucide-arrow-up-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" aria-hidden="true">
                           <path d="m21 16-4 4-4-4"></path>
                           <path d="M17 20V4"></path>
                           <path d="m3 8 4-4 4 4"></path>
                           <path d="M7 4v16"></path>
                         </svg>
                         {"Name"}
-                        <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-end" aria-hidden="true">
+                        <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" data-icon="inline-end" aria-hidden="true">
                           <path d="m6 9 6 6 6-6"></path>
                         </svg>
                       </DropdownMenuTrigger>
                       </DropdownMenu>
                       <DropdownMenu>
-                      <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 group/button h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground inline-flex items-center justify-center outline-none px-2.5 rounded-lg select-none shrink-0 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" aria-expanded="false" id="base-ui-_R_6ufinpflpflb_">
-                        <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" aria-hidden="true">
+                      <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 group/button h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground inline-flex items-center justify-center outline-none px-2.5 rounded-lg select-none shrink-0 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" aria-expanded="false" id="base-ui-_R_6ufinpflpflb_">
+                        <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" aria-hidden="true">
                           <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                         </svg>
                         {"Filters"}
@@ -1645,7 +1645,7 @@ export function Pattern() {
                   <div className="relative">
                     <DataGridProvider>
                     <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
-                      <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_R_1ninpflpflb_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
+                      <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_R_1ninpflpflb_-viewport" tabIndex={-1} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                         <div role="presentation" style={{minWidth: "fit-content"}}>
                           <DataGridProvider>
                           <DataGridTableViewport>
@@ -1662,9 +1662,9 @@ export function Pattern() {
                                 <tr className="[&>th]:border-b bg-transparent">
                                   <th className="[&:has([role=checkbox])]:pe-0 align-middle first:ps-4 font-medium h-8 last:pe-4 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="successRate" style={{width: "210px"}}>
                                     <div className="-ms-2 flex h-full items-center">
-                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-[state=open]:bg-secondary data-[state=open]:text-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1.5 h-6 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-secondary hover:text-foreground px-2 rounded-lg text-secondary-foreground/80 text-sm" type="button" tabIndex="0">
+                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-[state=open]:bg-secondary data-[state=open]:text-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1.5 h-6 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-secondary hover:text-foreground px-2 rounded-lg text-secondary-foreground/80 text-sm" type="button" tabIndex={0}>
                                         {"Success"}
-                                        <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                        <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="m7 15 5 5 5-5"></path>
                                           <path d="m7 9 5-5 5 5"></path>
                                         </svg>
@@ -1673,9 +1673,9 @@ export function Pattern() {
                                   </th>
                                   <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="ascending" data-col-id="name" style={{width: "300px"}}>
                                     <div className="-ms-2 flex h-full items-center">
-                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-[state=open]:bg-secondary data-[state=open]:text-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1.5 h-6 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-secondary hover:text-foreground px-2 rounded-lg text-secondary-foreground/80 text-sm" type="button" tabIndex="0">
+                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-[state=open]:bg-secondary data-[state=open]:text-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1.5 h-6 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-secondary hover:text-foreground px-2 rounded-lg text-secondary-foreground/80 text-sm" type="button" tabIndex={0}>
                                         {"Workflow"}
-                                        <svg className="lucide lucide-arrow-up size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                        <svg className="lucide lucide-arrow-up size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="m5 12 7-7 7 7"></path>
                                           <path d="M12 19V5"></path>
                                         </svg>
@@ -1684,9 +1684,9 @@ export function Pattern() {
                                   </th>
                                   <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="lastRunAt" style={{width: "180px"}}>
                                     <div className="-ms-2 flex h-full items-center">
-                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-[state=open]:bg-secondary data-[state=open]:text-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1.5 h-6 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-secondary hover:text-foreground px-2 rounded-lg text-secondary-foreground/80 text-sm" type="button" tabIndex="0">
+                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-[state=open]:bg-secondary data-[state=open]:text-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1.5 h-6 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-secondary hover:text-foreground px-2 rounded-lg text-secondary-foreground/80 text-sm" type="button" tabIndex={0}>
                                         {"Last run"}
-                                        <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                        <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="m7 15 5 5 5-5"></path>
                                           <path d="m7 9 5-5 5 5"></path>
                                         </svg>
@@ -1695,9 +1695,9 @@ export function Pattern() {
                                   </th>
                                   <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="status" style={{width: "126px"}}>
                                     <div className="-ms-2 flex h-full items-center">
-                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-[state=open]:bg-secondary data-[state=open]:text-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1.5 h-6 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-secondary hover:text-foreground px-2 rounded-lg text-secondary-foreground/80 text-sm" type="button" tabIndex="0">
+                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-[state=open]:bg-secondary data-[state=open]:text-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-1.5 h-6 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-secondary hover:text-foreground px-2 rounded-lg text-secondary-foreground/80 text-sm" type="button" tabIndex={0}>
                                         {"Status"}
-                                        <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                        <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="m7 15 5 5 5-5"></path>
                                           <path d="m7 9 5-5 5 5"></path>
                                         </svg>
@@ -1718,8 +1718,8 @@ export function Pattern() {
                                     <div className="flex gap-2.5 items-center min-w-0">
                                       <div className="relative shrink-0 size-10">
                                         <svg className="-rotate-90 absolute inset-0 size-10" viewBox="0 0 44 44" aria-hidden="true">
-                                          <circle className="stroke-muted-foreground/20" cx="22" cy="22" r="18" fill="none" strokeWidth="3.25"></circle>
-                                          <circle className="dark:text-emerald-400 stroke-current text-emerald-500" cx="22" cy="22" r="18" fill="none" strokeWidth="3.25" strokeLinecap="round" strokeDasharray="113.09733552923255" strokeDashoffset="0"></circle>
+                                          <circle className="stroke-muted-foreground/20" cx={22} cy={22} r={18} fill="none" strokeWidth={3.25}></circle>
+                                          <circle className="dark:text-emerald-400 stroke-current text-emerald-500" cx={22} cy={22} r={18} fill="none" strokeWidth={3.25} strokeLinecap="round" strokeDasharray={113.09733552923255} strokeDashoffset={0}></circle>
                                         </svg>
                                         <span className="absolute flex font-medium inset-0 items-center justify-center leading-none tabular-nums text-[9px] text-muted-foreground">
                                           {"100"}
@@ -1770,8 +1770,8 @@ export function Pattern() {
                                         {"Oct 05, 07:00"}
                                       </span>
                                       <span className="gap-1.5 inline-flex items-center min-w-0 text-muted-foreground text-xs truncate">
-                                        <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
+                                        <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
                                           <path d="M12 6v6l4 2"></path>
                                         </svg>
                                         {"Mondays at 07:00"}
@@ -1786,23 +1786,23 @@ export function Pattern() {
                                   </td>
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
                                     <div className="flex gap-1 items-center justify-end">
-                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex="0" aria-label="Open Churn Risk Digest in the editor">
-                                        <svg className="lucide lucide-square-pen" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex={0} aria-label="Open Churn Risk Digest in the editor">
+                                        <svg className="lucide lucide-square-pen" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                                           <path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"></path>
                                         </svg>
                                       </Button>
-                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex="0" aria-label="Star Churn Risk Digest" aria-pressed="false">
-                                        <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex={0} aria-label="Star Churn Risk Digest" aria-pressed="false">
+                                        <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                                         </svg>
                                       </Button>
                                       <DropdownMenu>
-                                      <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="More actions for Churn Risk Digest" aria-haspopup="menu" aria-expanded="false" id="base-ui-_R_rmmin5lninpflpflb_">
-                                        <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="1"></circle>
-                                          <circle cx="19" cy="12" r="1"></circle>
-                                          <circle cx="5" cy="12" r="1"></circle>
+                                      <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="More actions for Churn Risk Digest" aria-haspopup="menu" aria-expanded="false" id="base-ui-_R_rmmin5lninpflpflb_">
+                                        <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={1}></circle>
+                                          <circle cx={19} cy={12} r={1}></circle>
+                                          <circle cx={5} cy={12} r={1}></circle>
                                         </svg>
                                       </DropdownMenuTrigger>
                                       </DropdownMenu>
@@ -1814,8 +1814,8 @@ export function Pattern() {
                                     <div className="flex gap-2.5 items-center min-w-0">
                                       <div className="relative shrink-0 size-10">
                                         <svg className="-rotate-90 absolute inset-0 size-10" viewBox="0 0 44 44" aria-hidden="true">
-                                          <circle className="stroke-muted-foreground/20" cx="22" cy="22" r="18" fill="none" strokeWidth="3.25"></circle>
-                                          <circle className="dark:text-amber-400 stroke-current text-amber-500" cx="22" cy="22" r="18" fill="none" strokeWidth="3.25" strokeLinecap="round" strokeDasharray="113.09733552923255" strokeDashoffset="13.5716802635079"></circle>
+                                          <circle className="stroke-muted-foreground/20" cx={22} cy={22} r={18} fill="none" strokeWidth={3.25}></circle>
+                                          <circle className="dark:text-amber-400 stroke-current text-amber-500" cx={22} cy={22} r={18} fill="none" strokeWidth={3.25} strokeLinecap="round" strokeDasharray={113.09733552923255} strokeDashoffset={13.5716802635079}></circle>
                                         </svg>
                                         <span className="absolute flex font-medium inset-0 items-center justify-center leading-none tabular-nums text-[9px] text-muted-foreground">
                                           {"88"}
@@ -1866,8 +1866,8 @@ export function Pattern() {
                                         {"Oct 04, 16:21"}
                                       </span>
                                       <span className="gap-1.5 inline-flex items-center min-w-0 text-muted-foreground text-xs truncate">
-                                        <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
+                                        <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
                                           <path d="M12 6v6l4 2"></path>
                                         </svg>
                                         {"On signed contract"}
@@ -1882,23 +1882,23 @@ export function Pattern() {
                                   </td>
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
                                     <div className="flex gap-1 items-center justify-end">
-                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex="0" aria-label="Open Contract Sync in the editor">
-                                        <svg className="lucide lucide-square-pen" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex={0} aria-label="Open Contract Sync in the editor">
+                                        <svg className="lucide lucide-square-pen" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                                           <path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"></path>
                                         </svg>
                                       </Button>
-                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex="0" aria-label="Star Contract Sync" aria-pressed="false">
-                                        <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex={0} aria-label="Star Contract Sync" aria-pressed="false">
+                                        <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                                         </svg>
                                       </Button>
                                       <DropdownMenu>
-                                      <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="More actions for Contract Sync" aria-haspopup="menu" aria-expanded="false" id="base-ui-_R_rmmkn5lninpflpflb_">
-                                        <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="1"></circle>
-                                          <circle cx="19" cy="12" r="1"></circle>
-                                          <circle cx="5" cy="12" r="1"></circle>
+                                      <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="More actions for Contract Sync" aria-haspopup="menu" aria-expanded="false" id="base-ui-_R_rmmkn5lninpflpflb_">
+                                        <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={1}></circle>
+                                          <circle cx={19} cy={12} r={1}></circle>
+                                          <circle cx={5} cy={12} r={1}></circle>
                                         </svg>
                                       </DropdownMenuTrigger>
                                       </DropdownMenu>
@@ -1910,8 +1910,8 @@ export function Pattern() {
                                     <div className="flex gap-2.5 items-center min-w-0">
                                       <div className="relative shrink-0 size-10">
                                         <svg className="-rotate-90 absolute inset-0 size-10" viewBox="0 0 44 44" aria-hidden="true">
-                                          <circle className="stroke-muted-foreground/20" cx="22" cy="22" r="18" fill="none" strokeWidth="3.25"></circle>
-                                          <circle className="dark:text-amber-400 stroke-current text-amber-500" cx="22" cy="22" r="18" fill="none" strokeWidth="3.25" strokeLinecap="round" strokeDasharray="113.09733552923255" strokeDashoffset="7.916813487046269"></circle>
+                                          <circle className="stroke-muted-foreground/20" cx={22} cy={22} r={18} fill="none" strokeWidth={3.25}></circle>
+                                          <circle className="dark:text-amber-400 stroke-current text-amber-500" cx={22} cy={22} r={18} fill="none" strokeWidth={3.25} strokeLinecap="round" strokeDasharray={113.09733552923255} strokeDashoffset={7.916813487046269}></circle>
                                         </svg>
                                         <span className="absolute flex font-medium inset-0 items-center justify-center leading-none tabular-nums text-[9px] text-muted-foreground">
                                           {"93"}
@@ -1962,8 +1962,8 @@ export function Pattern() {
                                         {"Oct 06, 09:00"}
                                       </span>
                                       <span className="gap-1.5 inline-flex items-center min-w-0 text-muted-foreground text-xs truncate">
-                                        <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
+                                        <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
                                           <path d="M12 6v6l4 2"></path>
                                         </svg>
                                         {"Every hour"}
@@ -1978,23 +1978,23 @@ export function Pattern() {
                                   </td>
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
                                     <div className="flex gap-1 items-center justify-end">
-                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex="0" aria-label="Open Data Warehouse Export in the editor">
-                                        <svg className="lucide lucide-square-pen" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex={0} aria-label="Open Data Warehouse Export in the editor">
+                                        <svg className="lucide lucide-square-pen" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                                           <path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"></path>
                                         </svg>
                                       </Button>
-                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex="0" aria-label="Star Data Warehouse Export" aria-pressed="false">
-                                        <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex={0} aria-label="Star Data Warehouse Export" aria-pressed="false">
+                                        <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                                         </svg>
                                       </Button>
                                       <DropdownMenu>
-                                      <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="More actions for Data Warehouse Export" aria-haspopup="menu" aria-expanded="false" id="base-ui-_R_rmmmn5lninpflpflb_">
-                                        <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="1"></circle>
-                                          <circle cx="19" cy="12" r="1"></circle>
-                                          <circle cx="5" cy="12" r="1"></circle>
+                                      <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="More actions for Data Warehouse Export" aria-haspopup="menu" aria-expanded="false" id="base-ui-_R_rmmmn5lninpflpflb_">
+                                        <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={1}></circle>
+                                          <circle cx={19} cy={12} r={1}></circle>
+                                          <circle cx={5} cy={12} r={1}></circle>
                                         </svg>
                                       </DropdownMenuTrigger>
                                       </DropdownMenu>
@@ -2006,8 +2006,8 @@ export function Pattern() {
                                     <div className="flex gap-2.5 items-center min-w-0">
                                       <div className="relative shrink-0 size-10">
                                         <svg className="-rotate-90 absolute inset-0 size-10" viewBox="0 0 44 44" aria-hidden="true">
-                                          <circle className="stroke-muted-foreground/20" cx="22" cy="22" r="18" fill="none" strokeWidth="3.25"></circle>
-                                          <circle className="stroke-current text-muted-foreground/35" cx="22" cy="22" r="18" fill="none" strokeWidth="3.25" strokeLinecap="round" strokeDasharray="113.09733552923255" strokeDashoffset="113.09733552923255"></circle>
+                                          <circle className="stroke-muted-foreground/20" cx={22} cy={22} r={18} fill="none" strokeWidth={3.25}></circle>
+                                          <circle className="stroke-current text-muted-foreground/35" cx={22} cy={22} r={18} fill="none" strokeWidth={3.25} strokeLinecap="round" strokeDasharray={113.09733552923255} strokeDashoffset={113.09733552923255}></circle>
                                         </svg>
                                         <span className="absolute flex font-medium inset-0 items-center justify-center leading-none tabular-nums text-[9px] text-muted-foreground">
                                           {"0"}
@@ -2058,8 +2058,8 @@ export function Pattern() {
                                         {"Not run yet"}
                                       </span>
                                       <span className="gap-1.5 inline-flex items-center min-w-0 text-muted-foreground text-xs truncate">
-                                        <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
+                                        <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
                                           <path d="M12 6v6l4 2"></path>
                                         </svg>
                                         {"On expense filed"}
@@ -2074,23 +2074,23 @@ export function Pattern() {
                                   </td>
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
                                     <div className="flex gap-1 items-center justify-end">
-                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex="0" aria-label="Open Expense Approvals in the editor">
-                                        <svg className="lucide lucide-square-pen" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex={0} aria-label="Open Expense Approvals in the editor">
+                                        <svg className="lucide lucide-square-pen" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                                           <path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"></path>
                                         </svg>
                                       </Button>
-                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex="0" aria-label="Star Expense Approvals" aria-pressed="false">
-                                        <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex={0} aria-label="Star Expense Approvals" aria-pressed="false">
+                                        <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                                         </svg>
                                       </Button>
                                       <DropdownMenu>
-                                      <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="More actions for Expense Approvals" aria-haspopup="menu" aria-expanded="false" id="base-ui-_R_rmmon5lninpflpflb_">
-                                        <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="1"></circle>
-                                          <circle cx="19" cy="12" r="1"></circle>
-                                          <circle cx="5" cy="12" r="1"></circle>
+                                      <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="More actions for Expense Approvals" aria-haspopup="menu" aria-expanded="false" id="base-ui-_R_rmmon5lninpflpflb_">
+                                        <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={1}></circle>
+                                          <circle cx={19} cy={12} r={1}></circle>
+                                          <circle cx={5} cy={12} r={1}></circle>
                                         </svg>
                                       </DropdownMenuTrigger>
                                       </DropdownMenu>
@@ -2102,8 +2102,8 @@ export function Pattern() {
                                     <div className="flex gap-2.5 items-center min-w-0">
                                       <div className="relative shrink-0 size-10">
                                         <svg className="-rotate-90 absolute inset-0 size-10" viewBox="0 0 44 44" aria-hidden="true">
-                                          <circle className="stroke-muted-foreground/20" cx="22" cy="22" r="18" fill="none" strokeWidth="3.25"></circle>
-                                          <circle className="dark:text-amber-400 stroke-current text-amber-500" cx="22" cy="22" r="18" fill="none" strokeWidth="3.25" strokeLinecap="round" strokeDasharray="113.09733552923255" strokeDashoffset="20.357520395261858"></circle>
+                                          <circle className="stroke-muted-foreground/20" cx={22} cy={22} r={18} fill="none" strokeWidth={3.25}></circle>
+                                          <circle className="dark:text-amber-400 stroke-current text-amber-500" cx={22} cy={22} r={18} fill="none" strokeWidth={3.25} strokeLinecap="round" strokeDasharray={113.09733552923255} strokeDashoffset={20.357520395261858}></circle>
                                         </svg>
                                         <span className="absolute flex font-medium inset-0 items-center justify-center leading-none tabular-nums text-[9px] text-muted-foreground">
                                           {"82"}
@@ -2154,8 +2154,8 @@ export function Pattern() {
                                         {"Oct 06, 06:00"}
                                       </span>
                                       <span className="gap-1.5 inline-flex items-center min-w-0 text-muted-foreground text-xs truncate">
-                                        <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
+                                        <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
                                           <path d="M12 6v6l4 2"></path>
                                         </svg>
                                         {"Daily at 06:00"}
@@ -2170,23 +2170,23 @@ export function Pattern() {
                                   </td>
                                   <td className="align-middle first:ps-4 last:pe-4 px-2 py-1.5">
                                     <div className="flex gap-1 items-center justify-end">
-                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex="0" aria-label="Open Inventory Restock in the editor">
-                                        <svg className="lucide lucide-square-pen" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex={0} aria-label="Open Inventory Restock in the editor">
+                                        <svg className="lucide lucide-square-pen" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                                           <path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"></path>
                                         </svg>
                                       </Button>
-                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex="0" aria-label="Star Inventory Restock" aria-pressed="false">
-                                        <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                      <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-[min(var(--radius-md),12px)] size-7 text-sm" type="button" tabIndex={0} aria-label="Star Inventory Restock" aria-pressed="false">
+                                        <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                                         </svg>
                                       </Button>
                                       <DropdownMenu>
-                                      <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="More actions for Inventory Restock" aria-haspopup="menu" aria-expanded="false" id="base-ui-_R_rmmqn5lninpflpflb_">
-                                        <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="1"></circle>
-                                          <circle cx="19" cy="12" r="1"></circle>
-                                          <circle cx="5" cy="12" r="1"></circle>
+                                      <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="More actions for Inventory Restock" aria-haspopup="menu" aria-expanded="false" id="base-ui-_R_rmmqn5lninpflpflb_">
+                                        <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={1}></circle>
+                                          <circle cx={19} cy={12} r={1}></circle>
+                                          <circle cx={5} cy={12} r={1}></circle>
                                         </svg>
                                       </DropdownMenuTrigger>
                                       </DropdownMenu>
@@ -2212,17 +2212,17 @@ export function Pattern() {
                           {"Rows per page"}
                         </div>
                         <Select>
-                        <SelectTrigger className="*:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-4 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent border border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:hover:bg-input/50 data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] data-placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 gap-1.5 pl-2.5 pr-2 py-2 rounded-lg select-none text-sm transition-colors w-16" type="button" tabIndex="0" id="base-ui-_R_9vinpflpflb_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Rows per page">
+                        <SelectTrigger className="*:data-[slot=select-value]:gap-1.5 [&_svg:not([class*='size-'])]:size-4 aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-transparent border border-input dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:hover:bg-input/50 data-[size=default]:h-8 data-[size=sm]:h-7 data-[size=sm]:rounded-[min(var(--radius-md),10px)] data-placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 gap-1.5 pl-2.5 pr-2 py-2 rounded-lg select-none text-sm transition-colors w-16" type="button" tabIndex={0} id="base-ui-_R_9vinpflpflb_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Rows per page">
                           <SelectValue className="flex flex-1 text-left">
                             {"5"}
                           </SelectValue>
-                          <svg className="lucide lucide-chevron-down pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <svg className="lucide lucide-chevron-down pointer-events-none size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
                             {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
-                        <input id="base-ui-_R_9vinpflpflb_-hidden-input" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0", padding: "0", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0", left: "0"}} tabIndex="-1" aria-hidden="true" value="5" />
+                        <input id="base-ui-_R_9vinpflpflb_-hidden-input" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0", padding: "0", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0", left: "0"}} tabIndex={-1} aria-hidden="true" value="5" />
                       </div>
                       <div className="flex flex-col gap-2.5 items-center justify-center order-1 pt-2.5 sm:flex-row sm:justify-end sm:order-2 sm:pt-0">
                         <div className="order-2 sm:order-1 text-muted-foreground text-nowrap text-sm">
@@ -2234,28 +2234,28 @@ export function Pattern() {
                           {"workflows"}
                         </div>
                         <div className="flex gap-1 items-center order-1">
-                          <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg p-0 rounded-[min(var(--radius-md),12px)] rtl:rotate-180 size-7 text-sm" type="button" disabled="" tabIndex="0" disabled>
+                          <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg p-0 rounded-[min(var(--radius-md),12px)] rtl:rotate-180 size-7 text-sm" type="button" disabled="" tabIndex={0} disabled>
                             <span className="sr-only">
                               {"Go to previous page"}
                             </span>
-                            <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="m15 18-6-6 6-6"></path>
                             </svg>
                           </Button>
-                          <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-accent bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg p-0 rounded-[min(var(--radius-md),12px)] size-7 text-accent-foreground text-sm" type="button" tabIndex="0">
+                          <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-accent bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg p-0 rounded-[min(var(--radius-md),12px)] size-7 text-accent-foreground text-sm" type="button" tabIndex={0}>
                             {"1"}
                           </Button>
-                          <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg p-0 rounded-[min(var(--radius-md),12px)] size-7 text-muted-foreground text-sm" type="button" tabIndex="0">
+                          <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg p-0 rounded-[min(var(--radius-md),12px)] size-7 text-muted-foreground text-sm" type="button" tabIndex={0}>
                             {"2"}
                           </Button>
-                          <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg p-0 rounded-[min(var(--radius-md),12px)] size-7 text-muted-foreground text-sm" type="button" tabIndex="0">
+                          <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg p-0 rounded-[min(var(--radius-md),12px)] size-7 text-muted-foreground text-sm" type="button" tabIndex={0}>
                             {"3"}
                           </Button>
-                          <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg p-0 rounded-[min(var(--radius-md),12px)] rtl:rotate-180 size-7 text-sm" type="button" tabIndex="0">
+                          <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg p-0 rounded-[min(var(--radius-md),12px)] rtl:rotate-180 size-7 text-sm" type="button" tabIndex={0}>
                             <span className="sr-only">
                               {"Go to next page"}
                             </span>
-                            <svg className="lucide lucide-chevron-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <svg className="lucide lucide-chevron-right size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="m9 18 6-6-6-6"></path>
                             </svg>
                           </Button>
@@ -2272,7 +2272,7 @@ export function Pattern() {
       </SidebarInset>
     </div>
     </SidebarProvider>
-    <section aria-label="Notifications alt+T" tabIndex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false" data-react-aria-top-layer="true"></section>
+    <section aria-label="Notifications alt+T" tabIndex={-1} aria-live="polite" aria-relevant="additions text" aria-atomic="false" data-react-aria-top-layer="true"></section>
     <next-route-announcer style={{position: "absolute"}}></next-route-announcer>
     <span id="recharts_measurement_span" aria-hidden="true" style={{position: "absolute", top: "-20000px", left: "0px", padding: "0px", margin: "0px", borderWidth: "medium", borderStyle: "none", borderColor: "currentcolor", borderImage: "none", whiteSpace: "pre", fontSize: "12px", letterSpacing: "normal"}}>
       {"0"}

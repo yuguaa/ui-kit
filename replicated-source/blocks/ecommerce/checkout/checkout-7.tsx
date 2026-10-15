@@ -39,7 +39,7 @@ export function Pattern() {
       <Stepper className="lg:px-8 lg:py-10 max-w-5xl mx-auto px-4 py-8 sm:px-6" role="tablist" aria-orientation="horizontal" data-orientation="horizontal">
         <header className="flex flex-col gap-6 lg:flex-row lg:gap-10 lg:items-end lg:justify-between">
           <div className="min-w-0 shrink-0">
-            <Button className="-ml-3 gap-1 h-auto hover:text-foreground mb-1 px-3 py-1 text-muted-foreground w-fit" type="button" tabIndex="0" extracted="1">
+            <Button className="-ml-3 gap-1 h-auto hover:text-foreground mb-1 px-3 py-1 text-muted-foreground w-fit" type="button" tabIndex={0} extracted="1">
               {"← Back to cart"}
             </Button>
             <h1 className="font-semibold text-2xl tracking-tight">
@@ -60,7 +60,7 @@ export function Pattern() {
             <Stepper>
             <StepperItem className="flex-1 items-start relative" data-state="active">
               <Stepper>
-              <StepperTrigger className="flex flex-col gap-3 grow items-start justify-center" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex="0" data-state="active" loading="false">
+              <StepperTrigger className="flex flex-col gap-3 grow items-start justify-center" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex={0} data-state="active" loading="false">
                 <Stepper>
                 <StepperIndicator className="bg-border h-1 w-full" data-state="active">
                   <div className="absolute">
@@ -82,7 +82,7 @@ export function Pattern() {
             <Stepper>
             <StepperItem className="flex-1 items-start relative" data-state="inactive">
               <Stepper>
-              <StepperTrigger className="flex flex-col gap-3 grow items-start justify-center" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="inactive" loading="false" disabled>
+              <StepperTrigger className="flex flex-col gap-3 grow items-start justify-center" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex={-1} data-state="inactive" loading="false" disabled>
                 <Stepper>
                 <StepperIndicator className="bg-border h-1 w-full" data-state="inactive">
                   <div className="absolute">
@@ -104,7 +104,7 @@ export function Pattern() {
             <Stepper>
             <StepperItem className="flex-1 items-start relative" data-state="inactive">
               <Stepper>
-              <StepperTrigger className="flex flex-col gap-3 grow items-start justify-center" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="inactive" loading="false" disabled>
+              <StepperTrigger className="flex flex-col gap-3 grow items-start justify-center" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex={-1} data-state="inactive" loading="false" disabled>
                 <Stepper>
                 <StepperIndicator className="bg-border h-1 w-full" data-state="inactive">
                   <div className="absolute">
@@ -126,7 +126,7 @@ export function Pattern() {
             <Stepper>
             <StepperItem className="flex-1 items-start relative" data-state="inactive">
               <Stepper>
-              <StepperTrigger className="flex flex-col gap-3 grow items-start justify-center" type="button" role="tab" id="stepper-tab-4" aria-selected="false" aria-controls="stepper-panel-4" tabIndex="-1" data-state="inactive" loading="false" disabled>
+              <StepperTrigger className="flex flex-col gap-3 grow items-start justify-center" type="button" role="tab" id="stepper-tab-4" aria-selected="false" aria-controls="stepper-panel-4" tabIndex={-1} data-state="inactive" loading="false" disabled>
                 <Stepper>
                 <StepperIndicator className="bg-border h-1 w-full" data-state="inactive">
                   <div className="absolute">
@@ -165,7 +165,7 @@ export function Pattern() {
                       <span className="hidden sm:inline">
                         {"Have an account?"}
                       </span>
-                      <Button className="font-medium h-auto hover:text-primary hover:underline p-0 text-sm underline-offset-4" type="button" tabIndex="0">
+                      <Button className="font-medium h-auto hover:text-primary hover:underline p-0 text-sm underline-offset-4" type="button" tabIndex={0}>
                         {"Sign in"}
                       </Button>
                     </span>
@@ -175,7 +175,7 @@ export function Pattern() {
                       {"Continue with provider"}
                     </FieldLegend>
                     <div className="gap-2 grid sm:grid-cols-3">
-                      <Button className="w-full" type="button" tabIndex="0">
+                      <Button className="w-full" type="button" tabIndex={0}>
                         <svg aria-hidden="true" xmlSpace="preserve" viewBox="0 0 814 1000">
                           <path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76.5 0-103.7 40.8-165.9 40.8s-105.6-57-155.5-127C46.7 790.7 0 663 0 541.8c0-194.4 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-181.5c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z"></path>
                         </svg>
@@ -183,12 +183,12 @@ export function Pattern() {
                           {"Apple"}
                         </span>
                       </Button>
-                      <Button className="w-full" type="button" tabIndex="0">
+                      <Button className="w-full" type="button" tabIndex={0}>
                         <svg aria-hidden="true" xmlns:xlink="http://www.w3.org/1999/xlink" xmlSpace="preserve" overflow="hidden" viewBox="0 0 268.152 273.883">
                           <defs>
                             <lineargradient id="a">
-                              <stop offset="0" stopColor="#0fbc5c"></stop>
-                              <stop offset="1" stopColor="#0cba65"></stop>
+                              <stop offset={0} stopColor="#0fbc5c"></stop>
+                              <stop offset={1} stopColor="#0cba65"></stop>
                             </lineargradient>
                             <lineargradient id="g">
                               <stop offset=".231" stopColor="#0fbc5f"></stop>
@@ -200,7 +200,7 @@ export function Pattern() {
                               <stop offset=".771" stopColor="#38c02b"></stop>
                               <stop offset=".861" stopColor="#52c218"></stop>
                               <stop offset=".915" stopColor="#67c30f"></stop>
-                              <stop offset="1" stopColor="#86c504"></stop>
+                              <stop offset={1} stopColor="#86c504"></stop>
                             </lineargradient>
                             <lineargradient id="h">
                               <stop offset=".142" stopColor="#1abd4d"></stop>
@@ -219,7 +219,7 @@ export function Pattern() {
                               <stop offset=".604" stopColor="#ff692c"></stop>
                               <stop offset=".727" stopColor="#ff7825"></stop>
                               <stop offset=".885" stopColor="#ff8d1b"></stop>
-                              <stop offset="1" stopColor="#ff9f13"></stop>
+                              <stop offset={1} stopColor="#ff9f13"></stop>
                             </lineargradient>
                             <lineargradient id="b">
                               <stop offset=".231" stopColor="#ff4541"></stop>
@@ -229,11 +229,11 @@ export function Pattern() {
                               <stop offset=".699" stopColor="#ff5138"></stop>
                               <stop offset=".771" stopColor="#ff5b33"></stop>
                               <stop offset=".861" stopColor="#ff6c29"></stop>
-                              <stop offset="1" stopColor="#ff8c18"></stop>
+                              <stop offset={1} stopColor="#ff8c18"></stop>
                             </lineargradient>
                             <lineargradient id="d">
                               <stop offset=".408" stopColor="#fb4e5a"></stop>
-                              <stop offset="1" stopColor="#ff4540"></stop>
+                              <stop offset={1} stopColor="#ff4540"></stop>
                             </lineargradient>
                             <lineargradient id="c">
                               <stop offset=".132" stopColor="#0cba65"></stop>
@@ -254,20 +254,20 @@ export function Pattern() {
                               <stop offset=".771" stopColor="#ffcd0a"></stop>
                               <stop offset=".861" stopColor="#fecf0a"></stop>
                               <stop offset=".915" stopColor="#fecf08"></stop>
-                              <stop offset="1" stopColor="#fdcd01"></stop>
+                              <stop offset={1} stopColor="#fdcd01"></stop>
                             </lineargradient>
-                            <lineargradient xlinkHref="#a" id="s" x1="219.7" x2="254.467" y1="329.535" y2="329.535" gradientUnits="userSpaceOnUse"></lineargradient>
-                            <radialgradient xlinkHref="#b" id="m" cx="109.627" cy="135.862" r="71.46" fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 1.043 1.45573 2.55542 290.525 -400.634)" gradientUnits="userSpaceOnUse"></radialgradient>
-                            <radialgradient xlinkHref="#c" id="n" cx="45.259" cy="279.274" r="71.46" fx="45.259" fy="279.274" gradientTransform="matrix(-3.5126 -4.45809 -1.69255 1.26062 870.8 191.554)" gradientUnits="userSpaceOnUse"></radialgradient>
-                            <radialgradient xlinkHref="#d" id="l" cx="304.017" cy="118.009" r="47.854" fx="304.017" fy="118.009" gradientTransform="matrix(2.06435 0 0 2.59204 -297.679 -151.747)" gradientUnits="userSpaceOnUse"></radialgradient>
-                            <radialgradient xlinkHref="#e" id="o" cx="181.001" cy="177.201" r="71.46" fx="181.001" fy="177.201" gradientTransform="matrix(-.24858 2.08314 2.96249 .33417 -255.146 -331.164)" gradientUnits="userSpaceOnUse"></radialgradient>
-                            <radialgradient xlinkHref="#f" id="p" cx="207.673" cy="108.097" r="41.102" fx="207.673" fy="108.097" gradientTransform="matrix(-1.2492 1.34326 -3.89684 -3.4257 880.501 194.905)" gradientUnits="userSpaceOnUse"></radialgradient>
-                            <radialgradient xlinkHref="#g" id="r" cx="109.627" cy="135.862" r="71.46" fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 -1.043 1.45573 -2.55542 290.525 838.683)" gradientUnits="userSpaceOnUse"></radialgradient>
-                            <radialgradient xlinkHref="#h" id="j" cx="154.87" cy="145.969" r="71.46" fx="154.87" fy="145.969" gradientTransform="matrix(-.0814 -1.93722 2.92674 -.11625 -215.135 632.86)" gradientUnits="userSpaceOnUse"></radialgradient>
-                            <filter id="q" width="1.097" height="1.116" x="-.048" y="-.058" color-interpolation-filters="sRGB">
+                            <lineargradient xlinkHref="#a" id="s" x1={219.7} x2={254.467} y1={329.535} y2={329.535} gradientUnits="userSpaceOnUse"></lineargradient>
+                            <radialgradient xlinkHref="#b" id="m" cx={109.627} cy={135.862} r={71.46} fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 1.043 1.45573 2.55542 290.525 -400.634)" gradientUnits="userSpaceOnUse"></radialgradient>
+                            <radialgradient xlinkHref="#c" id="n" cx={45.259} cy={279.274} r={71.46} fx="45.259" fy="279.274" gradientTransform="matrix(-3.5126 -4.45809 -1.69255 1.26062 870.8 191.554)" gradientUnits="userSpaceOnUse"></radialgradient>
+                            <radialgradient xlinkHref="#d" id="l" cx={304.017} cy={118.009} r={47.854} fx="304.017" fy="118.009" gradientTransform="matrix(2.06435 0 0 2.59204 -297.679 -151.747)" gradientUnits="userSpaceOnUse"></radialgradient>
+                            <radialgradient xlinkHref="#e" id="o" cx={181.001} cy={177.201} r={71.46} fx="181.001" fy="177.201" gradientTransform="matrix(-.24858 2.08314 2.96249 .33417 -255.146 -331.164)" gradientUnits="userSpaceOnUse"></radialgradient>
+                            <radialgradient xlinkHref="#f" id="p" cx={207.673} cy={108.097} r={41.102} fx="207.673" fy="108.097" gradientTransform="matrix(-1.2492 1.34326 -3.89684 -3.4257 880.501 194.905)" gradientUnits="userSpaceOnUse"></radialgradient>
+                            <radialgradient xlinkHref="#g" id="r" cx={109.627} cy={135.862} r={71.46} fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 -1.043 1.45573 -2.55542 290.525 838.683)" gradientUnits="userSpaceOnUse"></radialgradient>
+                            <radialgradient xlinkHref="#h" id="j" cx={154.87} cy={145.969} r={71.46} fx="154.87" fy="145.969" gradientTransform="matrix(-.0814 -1.93722 2.92674 -.11625 -215.135 632.86)" gradientUnits="userSpaceOnUse"></radialgradient>
+                            <filter id="q" width={1.097} height={1.116} x="-.048" y="-.058" color-interpolation-filters="sRGB">
                               <fegaussianblur stdDeviation="1.701"></fegaussianblur>
                             </filter>
-                            <filter id="k" width="1.033" height="1.02" x="-.017" y="-.01" color-interpolation-filters="sRGB">
+                            <filter id="k" width={1.033} height={1.02} x="-.017" y="-.01" color-interpolation-filters="sRGB">
                               <fegaussianblur stdDeviation=".242"></fegaussianblur>
                             </filter>
                             <clippath id="i" clippathunits="userSpaceOnUse">
@@ -290,7 +290,7 @@ export function Pattern() {
                           {"Google"}
                         </span>
                       </Button>
-                      <Button className="w-full" type="button" tabIndex="0">
+                      <Button className="w-full" type="button" tabIndex={0}>
                         <svg aria-hidden="true" fill="none" viewBox="0 0 1200 1227">
                           <path fill="#000" d="M714.163 519.284 1160.89 0h-105.86L667.137 450.887 357.328 0H0l468.492 681.821L0 1226.37h105.866l409.625-476.152 327.181 476.152H1200L714.137 519.284h.026ZM569.165 687.828l-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721H892.476L569.165 687.854v-.026Z"></path>
                         </svg>
@@ -329,14 +329,14 @@ export function Pattern() {
                       </Field>
                     </FieldGroup>
                     <Field className="gap-3 mt-4" role="group" data-orientation="horizontal">
-                      <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_2_" aria-checked="true" aria-labelledby="checkout-7-subscribe-label">
+                      <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_2_" aria-checked="true" aria-labelledby="checkout-7-subscribe-label">
                         <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                          <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                          <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                             <path d="M20 6 9 17l-5-5"></path>
                           </svg>
                         </span>
                       </Checkbox>
-                      <input id="checkout-7-subscribe" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                      <input id="checkout-7-subscribe" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldLabel className="cn-label font-normal group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-7-subscribe" id="checkout-7-subscribe-label">
                         {"Email me with order updates and offers"}
                       </FieldLabel>
@@ -350,17 +350,17 @@ export function Pattern() {
             <Separator className="mt-8" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
             <div className="flex flex-col gap-3 mt-5 sm:flex-row sm:items-center sm:justify-between">
               <span className="gap-1.5 inline-flex items-center text-muted-foreground text-xs">
-                <svg className="lucide lucide-lock-keyhole size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LockKeyholeIcon" tabler="IconLock" hugeicons="LockKeyIcon" phosphor="LockKeyIcon" remixicon="RiLockLine" aria-hidden="true">
-                  <circle cx="12" cy="16" r="1"></circle>
-                  <rect x="3" y="10" width="18" height="12" rx="2"></rect>
+                <svg className="lucide lucide-lock-keyhole size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LockKeyholeIcon" tabler="IconLock" hugeicons="LockKeyIcon" phosphor="LockKeyIcon" remixicon="RiLockLine" aria-hidden="true">
+                  <circle cx={12} cy={16} r={1}></circle>
+                  <rect x={3} y={10} width={18} height={12} rx={2}></rect>
                   <path d="M7 10V7a5 5 0 0 1 10 0v3"></path>
                 </svg>
                 {"Secure encrypted checkout"}
               </span>
               <div className="flex gap-2 items-center sm:gap-3">
-                <Button type="submit" tabIndex="0">
+                <Button type="submit" tabIndex={0}>
                   {"Continue"}
-                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
+                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
@@ -471,7 +471,7 @@ export function Pattern() {
               </FieldLabel>
               <div className="flex gap-2">
                 <Input id="checkout-7-promo" placeholder="Enter code" aria-invalid="false" value="SAVE10"></Input>
-                <Button type="button" tabIndex="0">
+                <Button type="button" tabIndex={0}>
                   {"Apply"}
                 </Button>
               </div>

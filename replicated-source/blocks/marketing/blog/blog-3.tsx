@@ -31,8 +31,8 @@ export function Pattern() {
             </div>
             <div className="flex gap-2 items-center lg:pb-1">
               <Carousel>
-              <CarouselPrevious className="[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:size-5 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center left-auto outline-none rounded-full select-none shrink-0 size-10 static top-auto transition-all translate-y-0 whitespace-nowrap" type="button" disabled="" tabIndex="0" disabled aria-label="Previous articles" extracted="1">
-                <svg className="cn-rtl-flip lucide lucide-chevron-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine">
+              <CarouselPrevious className="[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:size-5 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center left-auto outline-none rounded-full select-none shrink-0 size-10 static top-auto transition-all translate-y-0 whitespace-nowrap" type="button" disabled="" tabIndex={0} disabled aria-label="Previous articles" extracted="1">
+                <svg className="cn-rtl-flip lucide lucide-chevron-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine">
                   <path d="m15 18-6-6 6-6"></path>
                 </svg>
                 <span className="sr-only">
@@ -41,8 +41,8 @@ export function Pattern() {
               </CarouselPrevious>
               </Carousel>
               <Carousel>
-              <CarouselNext className="[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:size-5 cn-button cn-button-size-icon-sm cn-button-variant-default disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none right-auto rounded-full select-none shrink-0 size-10 static top-auto transition-all translate-y-0 whitespace-nowrap" type="button" tabIndex="0" aria-label="Next articles">
-                <svg className="cn-rtl-flip lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
+              <CarouselNext className="[&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:size-5 cn-button cn-button-size-icon-sm cn-button-variant-default disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none right-auto rounded-full select-none shrink-0 size-10 static top-auto transition-all translate-y-0 whitespace-nowrap" type="button" tabIndex={0} aria-label="Next articles">
+                <svg className="cn-rtl-flip lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                   <path d="m9 18 6-6-6-6"></path>
                 </svg>
                 <span className="sr-only">
@@ -72,7 +72,7 @@ export function Pattern() {
                   <Card className="overflow-hidden p-0 shadow-none" size="default">
                     <a className="block focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring outline-none" href="#" aria-label="Read Interfaces That Earn Trust">
                       <AspectRatio className="bg-muted overflow-hidden" style={{"--ratio": "1.7777777777777777"}}>
-                        <img className="absolute duration-700 ease-out inset-0 motion-reduce:transition-none motion-safe:group-hover:scale-105 object-cover size-full transition-transform" alt="Modern product studio with large displays and shared desks" width="960" height="640" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=960&h=640&q=82" />
+                        <img className="absolute duration-700 ease-out inset-0 motion-reduce:transition-none motion-safe:group-hover:scale-105 object-cover size-full transition-transform" alt="Modern product studio with large displays and shared desks" width={960} height={640} loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=960&h=640&q=82" />
                       </AspectRatio>
                     </a>
                   </Card>
@@ -104,7 +104,7 @@ export function Pattern() {
                   <Card className="overflow-hidden p-0 shadow-none" size="default">
                     <a className="block focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring outline-none" href="#" aria-label="Read Launch Plans Without Drift">
                       <AspectRatio className="bg-muted overflow-hidden" style={{"--ratio": "1.7777777777777777"}}>
-                        <img className="absolute duration-700 ease-out inset-0 motion-reduce:transition-none motion-safe:group-hover:scale-105 object-cover size-full transition-transform" alt="Team collaborating around laptops in a bright meeting room" width="960" height="640" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=960&h=640&q=82" />
+                        <img className="absolute duration-700 ease-out inset-0 motion-reduce:transition-none motion-safe:group-hover:scale-105 object-cover size-full transition-transform" alt="Team collaborating around laptops in a bright meeting room" width={960} height={640} loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=960&h=640&q=82" />
                       </AspectRatio>
                     </a>
                   </Card>
@@ -136,7 +136,7 @@ export function Pattern() {
                   <Card className="overflow-hidden p-0 shadow-none" size="default">
                     <a className="block focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring outline-none" href="#" aria-label="Read No-Code Systems That Scale">
                       <AspectRatio className="bg-muted overflow-hidden" style={{"--ratio": "1.7777777777777777"}}>
-                        <img className="absolute duration-700 ease-out inset-0 motion-reduce:transition-none motion-safe:group-hover:scale-105 object-cover size-full transition-transform" alt="Laptop on a desk showing a clean digital workspace" width="960" height="640" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=960&h=640&q=82" />
+                        <img className="absolute duration-700 ease-out inset-0 motion-reduce:transition-none motion-safe:group-hover:scale-105 object-cover size-full transition-transform" alt="Laptop on a desk showing a clean digital workspace" width={960} height={640} loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=960&h=640&q=82" />
                       </AspectRatio>
                     </a>
                   </Card>
@@ -168,7 +168,7 @@ export function Pattern() {
                   <Card className="overflow-hidden p-0 shadow-none" size="default">
                     <a className="block focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring outline-none" href="#" aria-label="Read Sharper Product Storytelling">
                       <AspectRatio className="bg-muted overflow-hidden" style={{"--ratio": "1.7777777777777777"}}>
-                        <img className="absolute duration-700 ease-out inset-0 motion-reduce:transition-none motion-safe:group-hover:scale-105 object-cover size-full transition-transform" alt="Team reviewing product and brand notes on a glass wall" width="960" height="640" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=960&h=640&q=82" />
+                        <img className="absolute duration-700 ease-out inset-0 motion-reduce:transition-none motion-safe:group-hover:scale-105 object-cover size-full transition-transform" alt="Team reviewing product and brand notes on a glass wall" width={960} height={640} loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=960&h=640&q=82" />
                       </AspectRatio>
                     </a>
                   </Card>
@@ -200,7 +200,7 @@ export function Pattern() {
                   <Card className="overflow-hidden p-0 shadow-none" size="default">
                     <a className="block focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring outline-none" href="#" aria-label="Read Motion That Guides the Eye">
                       <AspectRatio className="bg-muted overflow-hidden" style={{"--ratio": "1.7777777777777777"}}>
-                        <img className="absolute duration-700 ease-out inset-0 motion-reduce:transition-none motion-safe:group-hover:scale-105 object-cover size-full transition-transform" alt="Designer reviewing a colorful interface on a tablet" width="960" height="640" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=960&h=640&q=82" />
+                        <img className="absolute duration-700 ease-out inset-0 motion-reduce:transition-none motion-safe:group-hover:scale-105 object-cover size-full transition-transform" alt="Designer reviewing a colorful interface on a tablet" width={960} height={640} loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=960&h=640&q=82" />
                       </AspectRatio>
                     </a>
                   </Card>
@@ -232,7 +232,7 @@ export function Pattern() {
                   <Card className="overflow-hidden p-0 shadow-none" size="default">
                     <a className="block focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring outline-none" href="#" aria-label="Read Web Builds With Staying Power">
                       <AspectRatio className="bg-muted overflow-hidden" style={{"--ratio": "1.7777777777777777"}}>
-                        <img className="absolute duration-700 ease-out inset-0 motion-reduce:transition-none motion-safe:group-hover:scale-105 object-cover size-full transition-transform" alt="Developer workspace with code and product tools on screen" width="960" height="640" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?auto=format&fit=crop&w=960&h=640&q=82" />
+                        <img className="absolute duration-700 ease-out inset-0 motion-reduce:transition-none motion-safe:group-hover:scale-105 object-cover size-full transition-transform" alt="Developer workspace with code and product tools on screen" width={960} height={640} loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1559028006-448665bd7c7f?auto=format&fit=crop&w=960&h=640&q=82" />
                       </AspectRatio>
                     </a>
                   </Card>

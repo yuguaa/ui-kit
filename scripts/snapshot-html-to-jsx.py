@@ -135,6 +135,15 @@ def format_style(obj):
     return "{{" + items + "}}"
 
 
+# SVG 与表单里按数值处理的属性
+NUMERIC_ATTRS = {
+    "width", "height", "x", "y", "x1", "y1", "x2", "y2", "cx", "cy", "r", "rx", "ry",
+    "strokeWidth", "strokeDasharray", "strokeDashoffset", "strokeMiterlimit",
+    "tabIndex", "cols", "rows", "size", "max", "min", "step", "span",
+    "offset", "stopOpacity", "fillOpacity", "strokeOpacity", "opacity",
+}
+
+
 def format_attr(name, value):
     if name in DROP_ATTRS:
         return None
@@ -148,6 +157,10 @@ def format_attr(name, value):
 
     if name in BOOLEAN_ATTRS and value == "":
         return jsx_name
+
+    # 数值属性用数字字面量，避免类型不匹配（百分比、auto 等保持字符串）
+    if jsx_name in NUMERIC_ATTRS and re.fullmatch(r"-?\d+(\.\d+)?", value or ""):
+        return f"{jsx_name}={{{value}}}"
 
     # 含引号或换行的值不能用双引号包裹，改用表达式形式
     if '"' in value or "\n" in value:

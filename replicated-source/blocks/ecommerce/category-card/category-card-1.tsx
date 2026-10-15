@@ -22,7 +22,7 @@ export function Pattern() {
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
-                <svg className="cn-rtl-flip lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
+                <svg className="cn-rtl-flip lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                   <path d="m9 18 6-6-6-6"></path>
                 </svg>
               </BreadcrumbSeparator>
@@ -49,9 +49,9 @@ export function Pattern() {
                 </Badge>
               </div>
               <div className="absolute duration-300 ease-out flex group-focus-within/tile:opacity-100 group-focus-within/tile:pointer-events-auto group-focus-within/tile:translate-y-0 group-hover/tile:opacity-100 group-hover/tile:pointer-events-auto group-hover/tile:translate-y-0 inset-0 items-center justify-center motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-2 z-10">
-                <Button href="#" aria-label="Browse Sofas & Armchairs collection" role="button" tabIndex="0">
+                <Button href="#" aria-label="Browse Sofas & Armchairs collection" role="button" tabIndex={0}>
                   {"Browse Collection"}
-                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
+                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
@@ -78,9 +78,9 @@ export function Pattern() {
             <div className="aspect-[4/3] bg-muted overflow-hidden relative rounded-md">
               <img className="absolute duration-500 ease-out h-full inset-0 motion-reduce:transition-none motion-safe:group-hover/tile:scale-105 object-cover transition-transform w-full will-change-transform" alt="Dining table set with chairs in a bright home interior" src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=1400&h=1050&q=90" />
               <div className="absolute duration-300 ease-out flex group-focus-within/tile:opacity-100 group-focus-within/tile:pointer-events-auto group-focus-within/tile:translate-y-0 group-hover/tile:opacity-100 group-hover/tile:pointer-events-auto group-hover/tile:translate-y-0 inset-0 items-center justify-center motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-2 z-10">
-                <Button href="#" aria-label="Browse Tables & Chairs collection" role="button" tabIndex="0">
+                <Button href="#" aria-label="Browse Tables & Chairs collection" role="button" tabIndex={0}>
                   {"Browse Collection"}
-                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
+                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
@@ -107,9 +107,9 @@ export function Pattern() {
             <div className="aspect-[4/3] bg-muted overflow-hidden relative rounded-md">
               <img className="absolute duration-500 ease-out h-full inset-0 motion-reduce:transition-none motion-safe:group-hover/tile:scale-105 object-cover transition-transform w-full will-change-transform" alt="Layered bed with soft pillows and bedside lighting" src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1400&h=1050&q=90" />
               <div className="absolute duration-300 ease-out flex group-focus-within/tile:opacity-100 group-focus-within/tile:pointer-events-auto group-focus-within/tile:translate-y-0 group-hover/tile:opacity-100 group-hover/tile:pointer-events-auto group-hover/tile:translate-y-0 inset-0 items-center justify-center motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-2 z-10">
-                <Button href="#" aria-label="Browse Beds collection" role="button" tabIndex="0">
+                <Button href="#" aria-label="Browse Beds collection" role="button" tabIndex={0}>
                   {"Browse Collection"}
-                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
+                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
@@ -136,9 +136,9 @@ export function Pattern() {
             <div className="aspect-[4/3] bg-muted overflow-hidden relative rounded-md">
               <img className="absolute duration-500 ease-out h-full inset-0 motion-reduce:transition-none motion-safe:group-hover/tile:scale-105 object-cover transition-transform w-full will-change-transform" alt="Organized shelving with baskets, books, and home accessories" src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=1400&h=1050&q=90" />
               <div className="absolute duration-300 ease-out flex group-focus-within/tile:opacity-100 group-focus-within/tile:pointer-events-auto group-focus-within/tile:translate-y-0 group-hover/tile:opacity-100 group-hover/tile:pointer-events-auto group-hover/tile:translate-y-0 inset-0 items-center justify-center motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-2 z-10">
-                <Button href="#" aria-label="Browse Storage collection" role="button" tabIndex="0">
+                <Button href="#" aria-label="Browse Storage collection" role="button" tabIndex={0}>
                   {"Browse Collection"}
-                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
+                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
@@ -170,9 +170,9 @@ export function Pattern() {
                 </Badge>
               </div>
               <div className="absolute duration-300 ease-out flex group-focus-within/tile:opacity-100 group-focus-within/tile:pointer-events-auto group-focus-within/tile:translate-y-0 group-hover/tile:opacity-100 group-hover/tile:pointer-events-auto group-hover/tile:translate-y-0 inset-0 items-center justify-center motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-2 z-10">
-                <Button href="#" aria-label="Browse Lighting collection" role="button" tabIndex="0">
+                <Button href="#" aria-label="Browse Lighting collection" role="button" tabIndex={0}>
                   {"Browse Collection"}
-                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
+                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
@@ -204,9 +204,9 @@ export function Pattern() {
                 </Badge>
               </div>
               <div className="absolute duration-300 ease-out flex group-focus-within/tile:opacity-100 group-focus-within/tile:pointer-events-auto group-focus-within/tile:translate-y-0 group-hover/tile:opacity-100 group-hover/tile:pointer-events-auto group-hover/tile:translate-y-0 inset-0 items-center justify-center motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-2 z-10">
-                <Button href="#" aria-label="Browse Kitchen collection" role="button" tabIndex="0">
+                <Button href="#" aria-label="Browse Kitchen collection" role="button" tabIndex={0}>
                   {"Browse Collection"}
-                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
+                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
@@ -233,9 +233,9 @@ export function Pattern() {
             <div className="aspect-[4/3] bg-muted overflow-hidden relative rounded-md">
               <img className="absolute duration-500 ease-out h-full inset-0 motion-reduce:transition-none motion-safe:group-hover/tile:scale-105 object-cover transition-transform w-full will-change-transform" alt="Decorated living space with wall art, seating, and plants" src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1400&h=1050&q=90" />
               <div className="absolute duration-300 ease-out flex group-focus-within/tile:opacity-100 group-focus-within/tile:pointer-events-auto group-focus-within/tile:translate-y-0 group-hover/tile:opacity-100 group-hover/tile:pointer-events-auto group-hover/tile:translate-y-0 inset-0 items-center justify-center motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-2 z-10">
-                <Button href="#" aria-label="Browse Decor collection" role="button" tabIndex="0">
+                <Button href="#" aria-label="Browse Decor collection" role="button" tabIndex={0}>
                   {"Browse Collection"}
-                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
+                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
@@ -262,9 +262,9 @@ export function Pattern() {
             <div className="aspect-[4/3] bg-muted overflow-hidden relative rounded-md">
               <img className="absolute duration-500 ease-out h-full inset-0 motion-reduce:transition-none motion-safe:group-hover/tile:scale-105 object-cover transition-transform w-full will-change-transform" alt="Outdoor patio with lounge seating and greenery" src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1400&h=1050&q=90" />
               <div className="absolute duration-300 ease-out flex group-focus-within/tile:opacity-100 group-focus-within/tile:pointer-events-auto group-focus-within/tile:translate-y-0 group-hover/tile:opacity-100 group-hover/tile:pointer-events-auto group-hover/tile:translate-y-0 inset-0 items-center justify-center motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-2 z-10">
-                <Button href="#" aria-label="Browse Outdoor collection" role="button" tabIndex="0">
+                <Button href="#" aria-label="Browse Outdoor collection" role="button" tabIndex={0}>
                   {"Browse Collection"}
-                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
+                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>

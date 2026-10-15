@@ -71,8 +71,8 @@ export function Pattern() {
                 <SidebarHeader className="items-center justify-center py-3" sidebar="header">
                   <Item className="bg-primary p-0 size-7 text-primary-foreground" variant="default" size="default" aria-hidden="true">
                     <ItemMedia className="size-auto" variant="icon">
-                      <svg className="size-3.5" width="50" height="50" viewBox="25.668 25.1352 49.6644 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="70.634" cy="29.8334" r="4.69799" fill="currentColor"></circle>
+                      <svg className="size-3.5" width={50} height={50} viewBox="25.668 25.1352 49.6644 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx={70.634} cy={29.8334} r={4.69799} fill="currentColor"></circle>
                         <path fillRule="evenodd" clipRule="evenodd" d="M25.668 57.0144V29.8332C25.668 27.2386 27.7713 25.1352 30.366 25.1352C32.9606 25.1352 35.0639 27.2386 35.0639 29.8332V57.0144C35.0639 61.833 38.9702 65.7392 43.7888 65.7392H57.2116C62.0302 65.7392 65.9364 61.833 65.9364 57.0144V43.7258C65.9364 41.1312 68.0398 39.0278 70.6344 39.0278C73.229 39.0278 75.3324 41.1312 75.3324 43.7258V57.0144C75.3324 67.0222 67.2194 75.1352 57.2116 75.1352H43.7888C33.7809 75.1352 25.668 67.0222 25.668 57.0144Z" fill="currentColor"></path>
                       </svg>
                     </ItemMedia>
@@ -90,7 +90,7 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="justify-center" type="button" id="base-ui-_r_1_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
-                            <svg className="lucide lucide-house" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HouseIcon" tabler="IconHome" hugeicons="Home03Icon" phosphor="HouseIcon" remixicon="RiHome5Line" aria-hidden="true">
+                            <svg className="lucide lucide-house" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HouseIcon" tabler="IconHome" hugeicons="Home03Icon" phosphor="HouseIcon" remixicon="RiHome5Line" aria-hidden="true">
                               <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
                               <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                             </svg>
@@ -102,7 +102,7 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="justify-center" type="button" id="base-ui-_r_3_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" data-active="">
-                            <svg className="lucide lucide-package" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
+                            <svg className="lucide lucide-package" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
                               <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
                               <path d="M12 22V12"></path>
                               <polyline points="3.29 7 12 12 20.71 7"></polyline>
@@ -116,9 +116,9 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="justify-center" type="button" id="base-ui-_r_5_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
-                            <svg className="lucide lucide-shopping-cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingCartIcon" tabler="IconShoppingCart" hugeicons="ShoppingCart01Icon" phosphor="ShoppingCartIcon" remixicon="RiShoppingCartLine" aria-hidden="true">
-                              <circle cx="8" cy="21" r="1"></circle>
-                              <circle cx="19" cy="21" r="1"></circle>
+                            <svg className="lucide lucide-shopping-cart" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingCartIcon" tabler="IconShoppingCart" hugeicons="ShoppingCart01Icon" phosphor="ShoppingCartIcon" remixicon="RiShoppingCartLine" aria-hidden="true">
+                              <circle cx={8} cy={21} r={1}></circle>
+                              <circle cx={19} cy={21} r={1}></circle>
                               <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
                             </svg>
                           </SidebarMenuButton>
@@ -129,11 +129,11 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="justify-center" type="button" id="base-ui-_r_7_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
-                            <svg className="lucide lucide-users" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                            <svg className="lucide lucide-users" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                               <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                               <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                               <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                              <circle cx="9" cy="7" r="4"></circle>
+                              <circle cx={9} cy={7} r={4}></circle>
                             </svg>
                           </SidebarMenuButton>
                           </SidebarProvider>
@@ -143,7 +143,7 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="justify-center" type="button" id="base-ui-_r_9_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
-                            <svg className="lucide lucide-message-square" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareIcon" tabler="IconMessageDots" hugeicons="Message02Icon" phosphor="ChatIcon" remixicon="RiChat4Line" aria-hidden="true">
+                            <svg className="lucide lucide-message-square" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareIcon" tabler="IconMessageDots" hugeicons="Message02Icon" phosphor="ChatIcon" remixicon="RiChat4Line" aria-hidden="true">
                               <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                             </svg>
                           </SidebarMenuButton>
@@ -154,7 +154,7 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="justify-center" type="button" id="base-ui-_r_b_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
-                            <svg className="lucide lucide-chart-column" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
+                            <svg className="lucide lucide-chart-column" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
                               <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                               <path d="M18 17V9"></path>
                               <path d="M13 17V5"></path>
@@ -168,9 +168,9 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="justify-center" type="button" id="base-ui-_r_d_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
-                            <svg className="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SettingsIcon" tabler="IconSettings" hugeicons="SettingsIcon" phosphor="GearIcon" remixicon="RiSettings3Line" aria-hidden="true">
+                            <svg className="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SettingsIcon" tabler="IconSettings" hugeicons="SettingsIcon" phosphor="GearIcon" remixicon="RiSettings3Line" aria-hidden="true">
                               <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
-                              <circle cx="12" cy="12" r="3"></circle>
+                              <circle cx={12} cy={12} r={3}></circle>
                             </svg>
                           </SidebarMenuButton>
                           </SidebarProvider>
@@ -186,7 +186,7 @@ export function Pattern() {
                 </SidebarProvider>
                 <SidebarFooter sidebar="footer">
                   <DropdownMenu>
-                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center mx-auto outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open profile for Nick Bold" aria-haspopup="menu" id="base-ui-_r_h_" aria-expanded="false">
+                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center mx-auto outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Open profile for Nick Bold" aria-haspopup="menu" id="base-ui-_r_h_" aria-expanded="false">
                     <Avatar className="rounded-md size-6" size="default">
                       <AvatarFallback className="bg-primary font-semibold text-[10px] text-primary-foreground">
                         {"NB"}
@@ -199,40 +199,40 @@ export function Pattern() {
               <div className="border-border/60 border-l flex flex-1 flex-col grow md:hidden overflow-hidden">
                 <div className="grow max-h-full min-h-0">
                   <ScrollArea className="grow h-full" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
-                    <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_j_-viewport" tabIndex="-1" style={{overflow: "scroll"}}>
+                    <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_j_-viewport" tabIndex={-1} style={{overflow: "scroll"}}>
                       <nav className="flex flex-col py-1">
                         <div>
                           <p className="font-medium pb-1 pt-2 px-3 text-[11px] text-muted-foreground uppercase">
                             {"Catalog"}
                           </p>
                           <div className="flex flex-col gap-0.5 px-2">
-                            <Button className="bg-accent font-medium gap-2.5 justify-start text-accent-foreground w-full" type="button" tabIndex="0">
+                            <Button className="bg-accent font-medium gap-2.5 justify-start text-accent-foreground w-full" type="button" tabIndex={0}>
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-layout-grid" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
-                                  <rect width="7" height="7" x="3" y="3" rx="1"></rect>
-                                  <rect width="7" height="7" x="14" y="3" rx="1"></rect>
-                                  <rect width="7" height="7" x="14" y="14" rx="1"></rect>
-                                  <rect width="7" height="7" x="3" y="14" rx="1"></rect>
+                                <svg className="lucide lucide-layout-grid" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
+                                  <rect width={7} height={7} x={3} y={3} rx={1}></rect>
+                                  <rect width={7} height={7} x={14} y={3} rx={1}></rect>
+                                  <rect width={7} height={7} x={14} y={14} rx={1}></rect>
+                                  <rect width={7} height={7} x={3} y={14} rx={1}></rect>
                                 </svg>
                               </span>
                               <span className="truncate">
                                 {"Product Catalog"}
                               </span>
                             </Button>
-                            <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex="0">
+                            <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex={0}>
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                                <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                                   <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                                  <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                  <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                                 </svg>
                               </span>
                               <span className="truncate">
                                 {"Categories"}
                               </span>
                             </Button>
-                            <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex="0">
+                            <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex={0}>
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
+                                <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
                                   <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                                 </svg>
                               </span>
@@ -251,9 +251,9 @@ export function Pattern() {
                             {"Operations"}
                           </p>
                           <div className="flex flex-col gap-0.5 px-2">
-                            <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex="0">
+                            <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex={0}>
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-arrow-left-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftRightIcon" tabler="IconArrowsLeftRight" hugeicons="ArrowDataTransferHorizontalIcon" phosphor="ArrowsLeftRightIcon" remixicon="RiArrowLeftRightLine" aria-hidden="true">
+                                <svg className="lucide lucide-arrow-left-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftRightIcon" tabler="IconArrowsLeftRight" hugeicons="ArrowDataTransferHorizontalIcon" phosphor="ArrowsLeftRightIcon" remixicon="RiArrowLeftRightLine" aria-hidden="true">
                                   <path d="M8 3 4 7l4 4"></path>
                                   <path d="M4 7h16"></path>
                                   <path d="m16 21 4-4-4-4"></path>
@@ -264,23 +264,23 @@ export function Pattern() {
                                 {"Transactions"}
                               </span>
                             </Button>
-                            <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex="0">
+                            <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex={0}>
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-truck" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
+                                <svg className="lucide lucide-truck" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
                                   <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path>
                                   <path d="M15 18H9"></path>
                                   <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path>
-                                  <circle cx="17" cy="18" r="2"></circle>
-                                  <circle cx="7" cy="18" r="2"></circle>
+                                  <circle cx={17} cy={18} r={2}></circle>
+                                  <circle cx={7} cy={18} r={2}></circle>
                                 </svg>
                               </span>
                               <span className="truncate">
                                 {"Suppliers"}
                               </span>
                             </Button>
-                            <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex="0">
+                            <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex={0}>
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-house" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HouseIcon" tabler="IconHome" hugeicons="Home03Icon" phosphor="HouseIcon" remixicon="RiHome5Line" aria-hidden="true">
+                                <svg className="lucide lucide-house" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HouseIcon" tabler="IconHome" hugeicons="Home03Icon" phosphor="HouseIcon" remixicon="RiHome5Line" aria-hidden="true">
                                   <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
                                   <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                                 </svg>
@@ -289,9 +289,9 @@ export function Pattern() {
                                 {"Warehouses"}
                               </span>
                             </Button>
-                            <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex="0">
+                            <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex={0}>
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-triangle-alert" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="AlertTriangleIcon" tabler="IconAlertTriangle" hugeicons="Alert01Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
+                                <svg className="lucide lucide-triangle-alert" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="AlertTriangleIcon" tabler="IconAlertTriangle" hugeicons="Alert01Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
                                   <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
                                   <path d="M12 9v4"></path>
                                   <path d="M12 17h.01"></path>
@@ -372,9 +372,9 @@ export function Pattern() {
         <header className="bg-background border-b border-border flex gap-2 h-(--header-height) items-center px-2 sticky top-0 w-full z-50">
           <div className="flex flex-1 gap-2 items-center md:flex-none min-w-0">
             <SidebarProvider>
-            <SidebarTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center md:hidden outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" sidebar="trigger">
-              <svg className="cn-rtl-flip lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="PanelLeftIcon" tabler="IconLayoutSidebar" hugeicons="SidebarLeftIcon" phosphor="SidebarIcon" remixicon="RiSideBarLine">
-                <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+            <SidebarTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center md:hidden outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} sidebar="trigger">
+              <svg className="cn-rtl-flip lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="PanelLeftIcon" tabler="IconLayoutSidebar" hugeicons="SidebarLeftIcon" phosphor="SidebarIcon" remixicon="RiSideBarLine">
+                <rect width={18} height={18} x={3} y={3} rx={2}></rect>
                 <path d="M9 3v18"></path>
               </svg>
               <span className="sr-only">
@@ -386,24 +386,24 @@ export function Pattern() {
               <BreadcrumbList className="flex-nowrap gap-1">
                 <BreadcrumbItem className="min-w-9">
                   <DropdownMenu>
-                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center min-w-0 outline-none select-none shrink text-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_n_" aria-expanded="false">
+                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center min-w-0 outline-none select-none shrink text-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_n_" aria-expanded="false">
                     <span className="inline-flex items-center justify-center leading-none shrink-0 size-3">
                       <svg className="block size-full" viewBox="0 0 28 28" fill="none" aria-hidden="true">
                         <defs>
-                          <lineargradient id="ws-acme" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                          <lineargradient id="ws-acme" x1={0} y1={0} x2={28} y2={28} gradientUnits="userSpaceOnUse">
                             <stop offset="0%" stopColor="#4f46e5"></stop>
                             <stop offset="35%" stopColor="#7c3aed"></stop>
                             <stop offset="70%" stopColor="#a21caf"></stop>
                             <stop offset="100%" stopColor="#db2777"></stop>
                           </lineargradient>
                         </defs>
-                        <circle cx="14" cy="14" r="14" fill="url(#ws-acme)"></circle>
+                        <circle cx={14} cy={14} r={14} fill="url(#ws-acme)"></circle>
                       </svg>
                     </span>
                     <span className="leading-none sm:not-sr-only sr-only truncate">
                       {"Acme Inc"}
                     </span>
-                    <svg className="lucide lucide-chevrons-up-down opacity-60 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                    <svg className="lucide lucide-chevrons-up-down opacity-60 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                       <path d="m7 15 5 5 5-5"></path>
                       <path d="m7 9 5-5 5 5"></path>
                     </svg>
@@ -415,11 +415,11 @@ export function Pattern() {
                 </BreadcrumbSeparator>
                 <BreadcrumbItem className="hidden min-w-0 sm:flex">
                   <DropdownMenu>
-                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center min-w-0 outline-none select-none shrink text-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_s_" aria-expanded="false">
+                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center min-w-0 outline-none select-none shrink text-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_s_" aria-expanded="false">
                     <span className="truncate">
                       {"Inventory"}
                     </span>
-                    <svg className="lucide lucide-chevrons-up-down opacity-60 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                    <svg className="lucide lucide-chevrons-up-down opacity-60 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                       <path d="m7 15 5 5 5-5"></path>
                       <path d="m7 9 5-5 5 5"></path>
                     </svg>
@@ -431,11 +431,11 @@ export function Pattern() {
                 </BreadcrumbSeparator>
                 <BreadcrumbItem className="min-w-0">
                   <DropdownMenu>
-                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center min-w-0 outline-none select-none shrink text-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_11_" aria-expanded="false">
+                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center min-w-0 outline-none select-none shrink text-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_11_" aria-expanded="false">
                     <span className="truncate">
                       {"Production"}
                     </span>
-                    <svg className="lucide lucide-chevrons-up-down opacity-60 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                    <svg className="lucide lucide-chevrons-up-down opacity-60 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                       <path d="m7 15 5 5 5-5"></path>
                       <path d="m7 9 5-5 5 5"></path>
                     </svg>
@@ -449,9 +449,9 @@ export function Pattern() {
             <button className="cursor-pointer flex focus-visible:ring-3 focus-visible:ring-ring/30 lg:w-52 outline-none rounded-4xl w-48 xl:w-80" type="button" aria-label="Search">
               <InputGroup className="pointer-events-none" role="group">
                 <InputGroupAddon role="group" data-align="inline-start">
-                  <svg className="lucide lucide-search opacity-60 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+                  <svg className="lucide lucide-search opacity-60 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                     <path d="m21 21-4.34-4.34"></path>
-                    <circle cx="11" cy="11" r="8"></circle>
+                    <circle cx={11} cy={11} r={8}></circle>
                   </svg>
                 </InputGroupAddon>
                 <span className="[&_svg]:pointer-events-none cn-input-group-text flex flex-1 font-normal items-center ps-1.5 text-muted-foreground">
@@ -472,8 +472,8 @@ export function Pattern() {
           </div>
           <div className="flex gap-1 items-center ml-auto shrink-0">
             <DropdownMenu>
-            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-default disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_16_" aria-expanded="false">
-              <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-default disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_16_" aria-expanded="false">
+              <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="M12 5v14"></path>
               </svg>
@@ -483,8 +483,8 @@ export function Pattern() {
             </DropdownMenuTrigger>
             </DropdownMenu>
             <Sheet>
-            <SheetTrigger className="[&_svg]:hover:opacity-100 [&_svg]:opacity-60 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none relative select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Notifications" baseUiClickTrigger="" id="base-ui-_r_19_" aria-haspopup="dialog" aria-expanded="false">
-              <svg className="lucide lucide-bell" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BellIcon" tabler="IconBell" hugeicons="NotificationIcon" phosphor="BellIcon" remixicon="RiNotificationLine" aria-hidden="true">
+            <SheetTrigger className="[&_svg]:hover:opacity-100 [&_svg]:opacity-60 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none relative select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Notifications" baseUiClickTrigger="" id="base-ui-_r_19_" aria-haspopup="dialog" aria-expanded="false">
+              <svg className="lucide lucide-bell" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BellIcon" tabler="IconBell" hugeicons="NotificationIcon" phosphor="BellIcon" remixicon="RiNotificationLine" aria-hidden="true">
                 <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
                 <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
               </svg>
@@ -506,40 +506,40 @@ export function Pattern() {
             <div className="flex flex-col overflow-hidden shrink-0 w-(--sidebar-width-inner)">
               <div className="grow max-h-full min-h-0">
                 <ScrollArea className="grow h-full" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
-                  <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_1e_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
+                  <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_1e_-viewport" tabIndex={-1} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                     <nav className="flex flex-col py-1">
                       <div>
                         <p className="font-medium pb-1 pt-2 px-3 text-[11px] text-muted-foreground uppercase">
                           {"Catalog"}
                         </p>
                         <div className="flex flex-col gap-0.5 px-2">
-                          <Button className="bg-accent font-medium gap-2.5 justify-start text-accent-foreground w-full" type="button" tabIndex="0">
+                          <Button className="bg-accent font-medium gap-2.5 justify-start text-accent-foreground w-full" type="button" tabIndex={0}>
                             <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                              <svg className="lucide lucide-layout-grid" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
-                                <rect width="7" height="7" x="3" y="3" rx="1"></rect>
-                                <rect width="7" height="7" x="14" y="3" rx="1"></rect>
-                                <rect width="7" height="7" x="14" y="14" rx="1"></rect>
-                                <rect width="7" height="7" x="3" y="14" rx="1"></rect>
+                              <svg className="lucide lucide-layout-grid" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
+                                <rect width={7} height={7} x={3} y={3} rx={1}></rect>
+                                <rect width={7} height={7} x={14} y={3} rx={1}></rect>
+                                <rect width={7} height={7} x={14} y={14} rx={1}></rect>
+                                <rect width={7} height={7} x={3} y={14} rx={1}></rect>
                               </svg>
                             </span>
                             <span className="truncate">
                               {"Product Catalog"}
                             </span>
                           </Button>
-                          <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex="0">
+                          <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex={0}>
                             <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                              <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                              <svg className="lucide lucide-tag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                                 <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                                <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                               </svg>
                             </span>
                             <span className="truncate">
                               {"Categories"}
                             </span>
                           </Button>
-                          <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex="0">
+                          <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex={0}>
                             <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                              <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
+                              <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
                                 <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                               </svg>
                             </span>
@@ -558,9 +558,9 @@ export function Pattern() {
                           {"Operations"}
                         </p>
                         <div className="flex flex-col gap-0.5 px-2">
-                          <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex="0">
+                          <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex={0}>
                             <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                              <svg className="lucide lucide-arrow-left-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftRightIcon" tabler="IconArrowsLeftRight" hugeicons="ArrowDataTransferHorizontalIcon" phosphor="ArrowsLeftRightIcon" remixicon="RiArrowLeftRightLine" aria-hidden="true">
+                              <svg className="lucide lucide-arrow-left-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftRightIcon" tabler="IconArrowsLeftRight" hugeicons="ArrowDataTransferHorizontalIcon" phosphor="ArrowsLeftRightIcon" remixicon="RiArrowLeftRightLine" aria-hidden="true">
                                 <path d="M8 3 4 7l4 4"></path>
                                 <path d="M4 7h16"></path>
                                 <path d="m16 21 4-4-4-4"></path>
@@ -571,23 +571,23 @@ export function Pattern() {
                               {"Transactions"}
                             </span>
                           </Button>
-                          <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex="0">
+                          <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex={0}>
                             <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                              <svg className="lucide lucide-truck" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
+                              <svg className="lucide lucide-truck" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
                                 <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path>
                                 <path d="M15 18H9"></path>
                                 <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path>
-                                <circle cx="17" cy="18" r="2"></circle>
-                                <circle cx="7" cy="18" r="2"></circle>
+                                <circle cx={17} cy={18} r={2}></circle>
+                                <circle cx={7} cy={18} r={2}></circle>
                               </svg>
                             </span>
                             <span className="truncate">
                               {"Suppliers"}
                             </span>
                           </Button>
-                          <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex="0">
+                          <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex={0}>
                             <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                              <svg className="lucide lucide-house" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HouseIcon" tabler="IconHome" hugeicons="Home03Icon" phosphor="HouseIcon" remixicon="RiHome5Line" aria-hidden="true">
+                              <svg className="lucide lucide-house" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HouseIcon" tabler="IconHome" hugeicons="Home03Icon" phosphor="HouseIcon" remixicon="RiHome5Line" aria-hidden="true">
                                 <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
                                 <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                               </svg>
@@ -596,9 +596,9 @@ export function Pattern() {
                               {"Warehouses"}
                             </span>
                           </Button>
-                          <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex="0">
+                          <Button className="font-normal gap-2.5 hover:text-foreground justify-start text-muted-foreground w-full" type="button" tabIndex={0}>
                             <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                              <svg className="lucide lucide-triangle-alert" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="AlertTriangleIcon" tabler="IconAlertTriangle" hugeicons="Alert01Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
+                              <svg className="lucide lucide-triangle-alert" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="AlertTriangleIcon" tabler="IconAlertTriangle" hugeicons="Alert01Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
                                 <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
                                 <path d="M12 9v4"></path>
                                 <path d="M12 17h.01"></path>

@@ -56,8 +56,8 @@ export function Pattern() {
               <ul className="flex flex-col gap-2 pt-3">
                 <li className="flex">
                   <Tooltip>
-                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:translate-y-0 bg-input/60 cn-button cn-button-size-icon-sm cn-button-variant-ghost dark:hover:bg-input/60 disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-input/60 inline-flex items-center justify-center outline-none select-none shrink-0 text-foreground transition-all whitespace-nowrap" href="#" aria-label="Matching" aria-current="page" role="button" tabIndex="0" id="base-ui-_r_1_" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-scale" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ScaleIcon" tabler="IconScale" hugeicons="JusticeScale01Icon" phosphor="ScalesIcon" remixicon="RiScales3Line" aria-hidden="true">
+                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:translate-y-0 bg-input/60 cn-button cn-button-size-icon-sm cn-button-variant-ghost dark:hover:bg-input/60 disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-input/60 inline-flex items-center justify-center outline-none select-none shrink-0 text-foreground transition-all whitespace-nowrap" href="#" aria-label="Matching" aria-current="page" role="button" tabIndex={0} id="base-ui-_r_1_" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-scale" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ScaleIcon" tabler="IconScale" hugeicons="JusticeScale01Icon" phosphor="ScalesIcon" remixicon="RiScales3Line" aria-hidden="true">
                       <path d="M12 3v18"></path>
                       <path d="m19 8 3 8a5 5 0 0 1-6 0zV7"></path>
                       <path d="M3 7h1a17 17 0 0 0 8-2 17 17 0 0 0 8 2h1"></path>
@@ -69,8 +69,8 @@ export function Pattern() {
                 </li>
                 <li className="flex">
                   <Tooltip>
-                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:translate-y-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost dark:hover:bg-input/60 disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-input/60 hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-ring transition-all whitespace-nowrap" href="#" aria-label="Suppliers" role="button" tabIndex="0" id="base-ui-_r_3_" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-building-2 lucide-building2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Building2Icon" tabler="IconBuilding" hugeicons="Building02Icon" phosphor="BuildingsIcon" remixicon="RiBuildingLine" aria-hidden="true">
+                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:translate-y-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost dark:hover:bg-input/60 disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-input/60 hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-ring transition-all whitespace-nowrap" href="#" aria-label="Suppliers" role="button" tabIndex={0} id="base-ui-_r_3_" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-building-2 lucide-building2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Building2Icon" tabler="IconBuilding" hugeicons="Building02Icon" phosphor="BuildingsIcon" remixicon="RiBuildingLine" aria-hidden="true">
                       <path d="M10 12h4"></path>
                       <path d="M10 8h4"></path>
                       <path d="M14 21v-3a2 2 0 0 0-4 0v3"></path>
@@ -82,8 +82,8 @@ export function Pattern() {
                 </li>
                 <li className="flex">
                   <Tooltip>
-                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:translate-y-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost dark:hover:bg-input/60 disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-input/60 hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-ring transition-all whitespace-nowrap" href="#" aria-label="Documents" role="button" tabIndex="0" id="base-ui-_r_5_" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-file-text" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileTextIcon" tabler="IconFileText" hugeicons="File02Icon" phosphor="FileTextIcon" remixicon="RiFileTextLine" aria-hidden="true">
+                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:translate-y-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost dark:hover:bg-input/60 disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-input/60 hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-ring transition-all whitespace-nowrap" href="#" aria-label="Documents" role="button" tabIndex={0} id="base-ui-_r_5_" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-file-text" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FileTextIcon" tabler="IconFileText" hugeicons="File02Icon" phosphor="FileTextIcon" remixicon="RiFileTextLine" aria-hidden="true">
                       <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                       <path d="M10 9H8"></path>
@@ -95,20 +95,20 @@ export function Pattern() {
                 </li>
                 <li className="flex">
                   <Tooltip>
-                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:translate-y-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost dark:hover:bg-input/60 disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-input/60 hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-ring transition-all whitespace-nowrap" href="#" aria-label="Team" role="button" tabIndex="0" id="base-ui-_r_7_" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-users" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:translate-y-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost dark:hover:bg-input/60 disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-input/60 hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-ring transition-all whitespace-nowrap" href="#" aria-label="Team" role="button" tabIndex={0} id="base-ui-_r_7_" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-users" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                       <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                       <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                       <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                      <circle cx="9" cy="7" r="4"></circle>
+                      <circle cx={9} cy={7} r={4}></circle>
                     </svg>
                   </TooltipTrigger>
                   </Tooltip>
                 </li>
                 <li className="flex">
                   <Tooltip>
-                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:translate-y-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost dark:hover:bg-input/60 disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-input/60 hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-ring transition-all whitespace-nowrap" href="#" aria-label="Rules" role="button" tabIndex="0" id="base-ui-_r_9_" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-sliders-horizontal" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SlidersHorizontalIcon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
+                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:translate-y-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost dark:hover:bg-input/60 disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-input/60 hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-ring transition-all whitespace-nowrap" href="#" aria-label="Rules" role="button" tabIndex={0} id="base-ui-_r_9_" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-sliders-horizontal" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SlidersHorizontalIcon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
                       <path d="M10 5H3"></path>
                       <path d="M12 19H3"></path>
                       <path d="M14 3v4"></path>
@@ -126,24 +126,24 @@ export function Pattern() {
             </div>
             <div className="flex flex-col gap-2 items-center py-3">
               <Tooltip>
-              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:translate-y-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost dark:hover:bg-input/60 disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-input/60 hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-ring transition-all whitespace-nowrap" href="#" aria-label="Help" role="button" tabIndex="0" id="base-ui-_r_b_" baseUiTooltipTrigger="">
-                <svg className="lucide lucide-circle-question-mark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleHelpIcon" tabler="IconHelpCircle" hugeicons="HelpCircleIcon" phosphor="QuestionIcon" remixicon="RiQuestionLine" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10"></circle>
+              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:translate-y-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost dark:hover:bg-input/60 disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-input/60 hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-ring transition-all whitespace-nowrap" href="#" aria-label="Help" role="button" tabIndex={0} id="base-ui-_r_b_" baseUiTooltipTrigger="">
+                <svg className="lucide lucide-circle-question-mark" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleHelpIcon" tabler="IconHelpCircle" hugeicons="HelpCircleIcon" phosphor="QuestionIcon" remixicon="RiQuestionLine" aria-hidden="true">
+                  <circle cx={12} cy={12} r={10}></circle>
                   <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                   <path d="M12 17h.01"></path>
                 </svg>
               </TooltipTrigger>
               </Tooltip>
               <Tooltip>
-              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:translate-y-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost dark:hover:bg-input/60 disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-input/60 hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-ring transition-all whitespace-nowrap" href="#" aria-label="Settings" role="button" tabIndex="0" id="base-ui-_r_d_" baseUiTooltipTrigger="">
-                <svg className="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SettingsIcon" tabler="IconSettings" hugeicons="SettingsIcon" phosphor="GearIcon" remixicon="RiSettings3Line" aria-hidden="true">
+              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:translate-y-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost dark:hover:bg-input/60 disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-input/60 hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-ring transition-all whitespace-nowrap" href="#" aria-label="Settings" role="button" tabIndex={0} id="base-ui-_r_d_" baseUiTooltipTrigger="">
+                <svg className="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SettingsIcon" tabler="IconSettings" hugeicons="SettingsIcon" phosphor="GearIcon" remixicon="RiSettings3Line" aria-hidden="true">
                   <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
-                  <circle cx="12" cy="12" r="3"></circle>
+                  <circle cx={12} cy={12} r={3}></circle>
                 </svg>
               </TooltipTrigger>
               </Tooltip>
               <DropdownMenu>
-              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Account menu for Shadcn" aria-haspopup="menu" id="base-ui-_r_h_" aria-expanded="false">
+              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Account menu for Shadcn" aria-haspopup="menu" id="base-ui-_r_h_" aria-expanded="false">
                 <Avatar className="after:border-0 after:rounded-md rounded-md size-6" size="default">
                   <AvatarImage className="rounded-md" alt="" startingStyle="" src="/assets/avatar-shadcn.jpg"></AvatarImage>
                 </Avatar>
@@ -155,16 +155,16 @@ export function Pattern() {
         <Card className="after:absolute after:border after:border-ring/30 after:inset-0 after:pointer-events-none after:rounded-lg bg-background flex-1 gap-0 min-w-0 py-0 relative ring-0 rounded-lg" size="default">
           <header className="border-b border-input/50 flex flex-wrap gap-x-2.5 gap-y-2 items-center max-sm:gap-x-2 px-3 py-2 shrink-0">
             <div className="-ml-1.5 flex lg:hidden">
-              <Button type="button" tabIndex="0" aria-label="Open navigation">
-                <svg className="lucide lucide-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MenuIcon" tabler="IconMenu2" hugeicons="Menu01Icon" phosphor="ListIcon" remixicon="RiMenuLine" aria-hidden="true">
+              <Button type="button" tabIndex={0} aria-label="Open navigation">
+                <svg className="lucide lucide-menu" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MenuIcon" tabler="IconMenu2" hugeicons="Menu01Icon" phosphor="ListIcon" remixicon="RiMenuLine" aria-hidden="true">
                   <path d="M4 5h16"></path>
                   <path d="M4 12h16"></path>
                   <path d="M4 19h16"></path>
                 </svg>
               </Button>
-              <Button type="button" tabIndex="0" aria-label="Open order queue">
-                <svg className="lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PanelLeftIcon" tabler="IconLayoutSidebar" hugeicons="SidebarLeftIcon" phosphor="SidebarIcon" remixicon="RiSideBarLine" aria-hidden="true">
-                  <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+              <Button type="button" tabIndex={0} aria-label="Open order queue">
+                <svg className="lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PanelLeftIcon" tabler="IconLayoutSidebar" hugeicons="SidebarLeftIcon" phosphor="SidebarIcon" remixicon="RiSideBarLine" aria-hidden="true">
+                  <rect width={18} height={18} x={3} y={3} rx={2}></rect>
                   <path d="M9 3v18"></path>
                 </svg>
               </Button>
@@ -175,26 +175,26 @@ export function Pattern() {
             <Separator className="-me-px bg-input data-vertical:h-3.5 data-vertical:self-center max-sm:hidden" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
             <Tabs className="max-sm:order-last max-sm:w-full" data-orientation="horizontal" activationDirection="none">
               <TabsList className="bg-input/40 h-7 p-0 rounded-md" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
-                <TabsTrigger className="dark:data-active:bg-background data-active:border-input data-active:shadow-none h-full px-2.25 text-muted-foreground text-xs" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_j_" compositeItemActive="">
+                <TabsTrigger className="dark:data-active:bg-background data-active:border-input data-active:shadow-none h-full px-2.25 text-muted-foreground text-xs" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex={0} role="tab" aria-selected="true" id="base-ui-_r_j_" compositeItemActive="">
                   {"Matching Queue"}
                 </TabsTrigger>
-                <TabsTrigger className="dark:data-active:bg-background data-active:border-input data-active:shadow-none h-full px-2.25 text-muted-foreground text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_k_">
+                <TabsTrigger className="dark:data-active:bg-background data-active:border-input data-active:shadow-none h-full px-2.25 text-muted-foreground text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_k_">
                   {"Completed Matches"}
                 </TabsTrigger>
               </TabsList>
             </Tabs>
             <div className="flex gap-2 items-center ms-auto">
-              <Button className="pl-1.25 pr-2.25 shadow-xs text-xs" type="button" tabIndex="0" aria-expanded="false">
-                <svg className="lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SparklesIcon" tabler="IconSparkles" hugeicons="SparklesIcon" phosphor="SparkleIcon" remixicon="RiSparklingLine" data-icon="inline-start" aria-hidden="true">
+              <Button className="pl-1.25 pr-2.25 shadow-xs text-xs" type="button" tabIndex={0} aria-expanded="false">
+                <svg className="lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SparklesIcon" tabler="IconSparkles" hugeicons="SparklesIcon" phosphor="SparkleIcon" remixicon="RiSparklingLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path>
                   <path d="M20 2v4"></path>
                   <path d="M22 4h-4"></path>
-                  <circle cx="4" cy="20" r="2"></circle>
+                  <circle cx={4} cy={20} r={2}></circle>
                 </svg>
                 {"Ask AI"}
               </Button>
-              <Button className="pl-1.25 pr-2.25 text-xs" type="button" tabIndex="0">
-                <svg className="lucide lucide-upload" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UploadIcon" tabler="IconUpload" hugeicons="Upload01Icon" phosphor="UploadSimpleIcon" remixicon="RiUploadLine" data-icon="inline-start" aria-hidden="true">
+              <Button className="pl-1.25 pr-2.25 text-xs" type="button" tabIndex={0}>
+                <svg className="lucide lucide-upload" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UploadIcon" tabler="IconUpload" hugeicons="Upload01Icon" phosphor="UploadSimpleIcon" remixicon="RiUploadLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M12 3v12"></path>
                   <path d="m17 8-5-5-5 5"></path>
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -214,20 +214,20 @@ export function Pattern() {
                 <div className="flex gap-1.5 items-center">
                   <InputGroup className="bg-background dark:bg-input/30 flex-1 h-7 rounded-md shadow-xs" role="group">
                     <InputGroupAddon className="[&>svg]:size-3.5 pl-1.25" role="group" data-align="inline-start">
-                      <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+                      <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                         <path d="m21 21-4.34-4.34"></path>
-                        <circle cx="11" cy="11" r="8"></circle>
+                        <circle cx={11} cy={11} r={8}></circle>
                       </svg>
                     </InputGroupAddon>
                     <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 font-medium h-full min-w-0 outline-none pl-1 placeholder:text-muted-foreground text-xs w-full" id="base-ui-_r_l_" placeholder="Search..." aria-label="Search orders" value="" />
                   </InputGroup>
                   <DropdownMenu>
-                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shadow-2xs shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Filter orders" aria-haspopup="menu" id="base-ui-_r_p_" aria-expanded="false">
-                    <svg className="lucide lucide-settings-2 lucide-settings2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Settings2Icon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
+                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shadow-2xs shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Filter orders" aria-haspopup="menu" id="base-ui-_r_p_" aria-expanded="false">
+                    <svg className="lucide lucide-settings-2 lucide-settings2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Settings2Icon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
                       <path d="M14 17H5"></path>
                       <path d="M19 7h-9"></path>
-                      <circle cx="17" cy="17" r="3"></circle>
-                      <circle cx="7" cy="7" r="3"></circle>
+                      <circle cx={17} cy={17} r={3}></circle>
+                      <circle cx={7} cy={7} r={3}></circle>
                     </svg>
                   </DropdownMenuTrigger>
                   </DropdownMenu>
@@ -240,8 +240,8 @@ export function Pattern() {
                     <li>
                       <Collapsible data-open="">
                         <Collapsible>
-                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" panelOpen="" tabIndex="0" aria-disabled="false" aria-controls="base-ui-_r_r_" aria-expanded="true">
-                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" panelOpen="" tabIndex={0} aria-disabled="false" aria-controls="base-ui-_r_r_" aria-expanded="true">
+                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
@@ -259,8 +259,8 @@ export function Pattern() {
                                 <span className="bg-border w-px"></span>
                               </span>
                               <Collapsible>
-                              <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs" type="button" panelOpen="" tabIndex="0" aria-disabled="false" aria-controls="base-ui-_r_s_" aria-expanded="true">
-                                <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                              <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs" type="button" panelOpen="" tabIndex={0} aria-disabled="false" aria-controls="base-ui-_r_s_" aria-expanded="true">
+                                <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                   <path d="m9 18 6-6-6-6"></path>
                                 </svg>
                                 <span className="truncate">
@@ -278,7 +278,7 @@ export function Pattern() {
                                   <span className="flex flex-col gap-0.5 items-center">
                                     <span className="border border-destructive dark:border-destructive-foreground flex p-px rounded-full" aria-hidden="true">
                                       <span className="[&>svg]:size-2.5 bg-destructive dark:bg-destructive-foreground flex items-center justify-center rounded-full size-3 text-white">
-                                        <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                                        <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                           <path d="M18 6 6 18"></path>
                                           <path d="m6 6 12 12"></path>
                                         </svg>
@@ -290,7 +290,7 @@ export function Pattern() {
                                     </span>
                                     <span className="border border-destructive dark:border-destructive-foreground flex p-px rounded-full" aria-hidden="true">
                                       <span className="[&>svg]:size-2.5 bg-destructive dark:bg-destructive-foreground flex items-center justify-center rounded-full size-3 text-white">
-                                        <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                                        <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                           <path d="M18 6 6 18"></path>
                                           <path d="m6 6 12 12"></path>
                                         </svg>
@@ -302,7 +302,7 @@ export function Pattern() {
                                     </span>
                                     <span className="border border-ring/80 flex p-px rounded-full" aria-hidden="true">
                                       <span className="[&>svg]:size-2.5 bg-ring/80 flex items-center justify-center rounded-full size-3 text-white">
-                                        <svg className="lucide lucide-circle-dashed" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDashedIcon" tabler="IconCircleDashed" hugeicons="CircleDashedIcon" phosphor="CircleDashedIcon" remixicon="RiCheckboxBlankCircleLine" aria-hidden="true">
+                                        <svg className="lucide lucide-circle-dashed" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleDashedIcon" tabler="IconCircleDashed" hugeicons="CircleDashedIcon" phosphor="CircleDashedIcon" remixicon="RiCheckboxBlankCircleLine" aria-hidden="true">
                                           <path d="M10.1 2.182a10 10 0 0 1 3.8 0"></path>
                                           <path d="M13.9 21.818a10 10 0 0 1-3.8 0"></path>
                                           <path d="M17.609 3.721a10 10 0 0 1 2.69 2.7"></path>
@@ -318,7 +318,7 @@ export function Pattern() {
                                 </span>
                                 <ul className="flex flex-1 flex-col min-w-0 pl-1">
                                   <li className="relative">
-                                    <Button className="active:translate-y-0 dark:hover:bg-input/30 data-active:bg-input/30 data-active:text-foreground gap-1.5 hover:bg-input/30 justify-start pr-7 px-1.25 text-muted-foreground text-xs w-full" type="button" tabIndex="0" data-active="true" aria-current="page">
+                                    <Button className="active:translate-y-0 dark:hover:bg-input/30 data-active:bg-input/30 data-active:text-foreground gap-1.5 hover:bg-input/30 justify-start pr-7 px-1.25 text-muted-foreground text-xs w-full" type="button" tabIndex={0} data-active="true" aria-current="page">
                                       <span className="truncate">
                                         {"Document validation"}
                                       </span>
@@ -330,17 +330,17 @@ export function Pattern() {
                                       </Badge>
                                     </Button>
                                     <DropdownMenu>
-                                    <DropdownMenuTrigger className="-translate-y-1/2 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:size-3.5 absolute cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none right-px select-none shrink-0 text-ring top-1/2 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Actions for Document validation" aria-haspopup="menu" id="base-ui-_r_10_" aria-expanded="false">
-                                      <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
-                                        <circle cx="12" cy="12" r="1"></circle>
-                                        <circle cx="12" cy="5" r="1"></circle>
-                                        <circle cx="12" cy="19" r="1"></circle>
+                                    <DropdownMenuTrigger className="-translate-y-1/2 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:size-3.5 absolute cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none right-px select-none shrink-0 text-ring top-1/2 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Actions for Document validation" aria-haspopup="menu" id="base-ui-_r_10_" aria-expanded="false">
+                                      <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
+                                        <circle cx={12} cy={12} r={1}></circle>
+                                        <circle cx={12} cy={5} r={1}></circle>
+                                        <circle cx={12} cy={19} r={1}></circle>
                                       </svg>
                                     </DropdownMenuTrigger>
                                     </DropdownMenu>
                                   </li>
                                   <li className="relative">
-                                    <Button className="active:translate-y-0 dark:hover:bg-input/30 data-active:bg-input/30 data-active:text-foreground gap-1.5 hover:bg-input/30 justify-start px-1.25 text-muted-foreground text-xs w-full" type="button" tabIndex="0">
+                                    <Button className="active:translate-y-0 dark:hover:bg-input/30 data-active:bg-input/30 data-active:text-foreground gap-1.5 hover:bg-input/30 justify-start px-1.25 text-muted-foreground text-xs w-full" type="button" tabIndex={0}>
                                       <span className="truncate">
                                         {"3-way line match"}
                                       </span>
@@ -353,7 +353,7 @@ export function Pattern() {
                                     </Button>
                                   </li>
                                   <li className="relative">
-                                    <Button className="active:translate-y-0 dark:hover:bg-input/30 data-active:bg-input/30 data-active:text-foreground gap-1.5 hover:bg-input/30 justify-start px-1.25 text-muted-foreground text-xs w-full" type="button" tabIndex="0">
+                                    <Button className="active:translate-y-0 dark:hover:bg-input/30 data-active:bg-input/30 data-active:text-foreground gap-1.5 hover:bg-input/30 justify-start px-1.25 text-muted-foreground text-xs w-full" type="button" tabIndex={0}>
                                       <span className="truncate">
                                         {"Approve payment"}
                                       </span>
@@ -372,8 +372,8 @@ export function Pattern() {
                                 <span className="bg-border w-px"></span>
                               </span>
                               <Collapsible>
-                              <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
-                                <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                              <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false">
+                                <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                   <path d="m9 18 6-6-6-6"></path>
                                 </svg>
                                 <span className="truncate">
@@ -389,8 +389,8 @@ export function Pattern() {
                     <li>
                       <Collapsible data-closed="">
                         <Collapsible>
-                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
-                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false">
+                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
@@ -406,8 +406,8 @@ export function Pattern() {
                     <li>
                       <Collapsible data-closed="">
                         <Collapsible>
-                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
-                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false">
+                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
@@ -420,8 +420,8 @@ export function Pattern() {
                     <li>
                       <Collapsible data-closed="">
                         <Collapsible>
-                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
-                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false">
+                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
@@ -434,8 +434,8 @@ export function Pattern() {
                     <li>
                       <Collapsible data-closed="">
                         <Collapsible>
-                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
-                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false">
+                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
@@ -448,8 +448,8 @@ export function Pattern() {
                     <li>
                       <Collapsible data-closed="">
                         <Collapsible>
-                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
-                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false">
+                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
@@ -465,8 +465,8 @@ export function Pattern() {
                     <li>
                       <Collapsible data-closed="">
                         <Collapsible>
-                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
-                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false">
+                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
@@ -479,8 +479,8 @@ export function Pattern() {
                     <li>
                       <Collapsible data-closed="">
                         <Collapsible>
-                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
-                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false">
+                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
@@ -493,8 +493,8 @@ export function Pattern() {
                     <li>
                       <Collapsible data-closed="">
                         <Collapsible>
-                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
-                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false">
+                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
@@ -510,8 +510,8 @@ export function Pattern() {
                     <li>
                       <Collapsible data-closed="">
                         <Collapsible>
-                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
-                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false">
+                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
@@ -524,8 +524,8 @@ export function Pattern() {
                     <li>
                       <Collapsible data-closed="">
                         <Collapsible>
-                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
-                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false">
+                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
@@ -541,8 +541,8 @@ export function Pattern() {
                     <li>
                       <Collapsible data-closed="">
                         <Collapsible>
-                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
-                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false">
+                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
@@ -558,8 +558,8 @@ export function Pattern() {
                     <li>
                       <Collapsible data-closed="">
                         <Collapsible>
-                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex="0" aria-disabled="false" aria-expanded="false">
-                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                        <CollapsibleTrigger className="[&>svg]:size-3.5 [&>svg]:text-ring [&>svg]:transition-transform data-panel-open:[&>svg]:rotate-90 data-panel-open:[&>svg]:text-foreground data-panel-open:text-foreground flex flex-1 focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 hover:text-foreground items-center min-w-0 outline-none rounded-md text-muted-foreground text-xs w-full" type="button" tabIndex={0} aria-disabled="false" aria-expanded="false">
+                          <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                             <path d="m9 18 6-6-6-6"></path>
                           </svg>
                           <span className="flex-1 min-w-0 text-left truncate">
@@ -571,8 +571,8 @@ export function Pattern() {
                     </li>
                   </ul>
                 </div>
-                <Button className="pl-1.25 pr-2.25 shadow-xs text-xs w-full" type="button" tabIndex="0">
-                  <svg className="lucide lucide-file-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileUpIcon" tabler="IconFileUpload" hugeicons="FileUploadIcon" phosphor="FileArrowUpIcon" remixicon="RiFileUploadLine" data-icon="inline-start" aria-hidden="true">
+                <Button className="pl-1.25 pr-2.25 shadow-xs text-xs w-full" type="button" tabIndex={0}>
+                  <svg className="lucide lucide-file-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FileUpIcon" tabler="IconFileUpload" hugeicons="FileUploadIcon" phosphor="FileArrowUpIcon" remixicon="RiFileUploadLine" data-icon="inline-start" aria-hidden="true">
                     <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
                     <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                     <path d="M12 12v6"></path>

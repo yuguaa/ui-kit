@@ -18,7 +18,7 @@ export function Pattern() {
             <div className="font-semibold text-sm">
               {"API Call Quota"}
             </div>
-            <Button className="font-medium h-8!" type="button" tabIndex="0" extracted="1">
+            <Button className="font-medium h-8!" type="button" tabIndex={0} extracted="1">
               {"View API usage"}
             </Button>
           </div>

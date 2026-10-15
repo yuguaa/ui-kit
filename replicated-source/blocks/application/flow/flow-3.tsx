@@ -77,7 +77,7 @@ export function Pattern() {
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
-                <svg className="cn-rtl-flip lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
+                <svg className="cn-rtl-flip lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                   <path d="m9 18 6-6-6-6"></path>
                 </svg>
               </BreadcrumbSeparator>
@@ -110,7 +110,7 @@ export function Pattern() {
         </p>
         <div className="gap-2 items-center justify-center lg:flex max-lg:sr-only w-72">
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
               <path d="M18 6 6 18"></path>
               <path d="m6 6 12 12"></path>
             </svg>
@@ -122,10 +122,10 @@ export function Pattern() {
             </span>
           </Badge>
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-            <svg className="lucide lucide-circle-pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PauseCircleIcon" tabler="IconPlayerPauseFilled" hugeicons="PauseCircleIcon" phosphor="PauseCircleIcon" remixicon="RiPauseCircleLine" aria-hidden="true">
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="10" x2="10" y1="15" y2="9"></line>
-              <line x1="14" x2="14" y1="15" y2="9"></line>
+            <svg className="lucide lucide-circle-pause" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PauseCircleIcon" tabler="IconPlayerPauseFilled" hugeicons="PauseCircleIcon" phosphor="PauseCircleIcon" remixicon="RiPauseCircleLine" aria-hidden="true">
+              <circle cx={12} cy={12} r={10}></circle>
+              <line x1={10} x2={10} y1={15} y2={9}></line>
+              <line x1={14} x2={14} y1={15} y2={9}></line>
             </svg>
             <span className="sr-only">
               {"Waiting"}
@@ -135,8 +135,8 @@ export function Pattern() {
             </span>
           </Badge>
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-xs transition-shadow">
-            <svg className="lucide lucide-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-              <circle cx="12" cy="12" r="10"></circle>
+            <svg className="lucide lucide-clock" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+              <circle cx={12} cy={12} r={10}></circle>
               <path d="M12 6v6l4 2"></path>
             </svg>
             <span className="sr-only">
@@ -147,7 +147,7 @@ export function Pattern() {
             </span>
           </Badge>
           <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
               <path d="M20 6 9 17l-5-5"></path>
             </svg>
             <span className="sr-only">
@@ -160,9 +160,9 @@ export function Pattern() {
         </div>
         <div className="col-start-3 flex gap-2 items-center justify-end">
           <Popover>
-          <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center max-md:hidden outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Keyboard shortcuts" baseUiClickTrigger="" id="base-ui-_r_2_" aria-haspopup="dialog" aria-expanded="false">
-            <svg className="lucide lucide-circle-question-mark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HelpCircleIcon" tabler="IconHelpCircle" hugeicons="HelpCircleIcon" phosphor="QuestionIcon" remixicon="RiQuestionLine" aria-hidden="true">
-              <circle cx="12" cy="12" r="10"></circle>
+          <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center max-md:hidden outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Keyboard shortcuts" baseUiClickTrigger="" id="base-ui-_r_2_" aria-haspopup="dialog" aria-expanded="false">
+            <svg className="lucide lucide-circle-question-mark" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HelpCircleIcon" tabler="IconHelpCircle" hugeicons="HelpCircleIcon" phosphor="QuestionIcon" remixicon="RiQuestionLine" aria-hidden="true">
+              <circle cx={12} cy={12} r={10}></circle>
               <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
               <path d="M12 17h.01"></path>
             </svg>
@@ -170,8 +170,8 @@ export function Pattern() {
           </Popover>
           <div className="flex gap-2 items-center shrink-0">
             <div className="flex justify-end max-sm:hidden min-w-28">
-              <Button type="button" tabIndex="0">
-                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+              <Button type="button" tabIndex={0}>
+                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
@@ -179,15 +179,15 @@ export function Pattern() {
               </Button>
             </div>
             <ButtonGroup role="group">
-              <Button type="button" tabIndex="0">
-                <svg className="fill-current lucide lucide-play" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlayIcon" tabler="IconPlayerPlay" hugeicons="PlayIcon" phosphor="PlayIcon" remixicon="RiPlayLine" aria-hidden="true">
+              <Button type="button" tabIndex={0}>
+                <svg className="fill-current lucide lucide-play" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlayIcon" tabler="IconPlayerPlay" hugeicons="PlayIcon" phosphor="PlayIcon" remixicon="RiPlayLine" aria-hidden="true">
                   <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path>
                 </svg>
                 {"Run"}
               </Button>
               <DropdownMenu>
-              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Run options" aria-haspopup="menu" id="base-ui-_r_6_" aria-expanded="false">
-                <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Run options" aria-haspopup="menu" id="base-ui-_r_6_" aria-expanded="false">
+                <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                 </svg>
               </DropdownMenuTrigger>
@@ -211,75 +211,75 @@ export function Pattern() {
                       </defs>
                     </svg>
                     <svg style={{zIndex: "0"}}>
-                      <g className="nopan react-flow__edge react-flow__edge-flow selectable" tabIndex="0" role="group" aria-roledescription="edge" data-id="schedule-stripe" data-testid="rf__edge-schedule-stripe" aria-label="Edge from nightly_schedule to extract_stripe" aria-describedby="react-flow__edge-desc-1">
+                      <g className="nopan react-flow__edge react-flow__edge-flow selectable" tabIndex={0} role="group" aria-roledescription="edge" data-id="schedule-stripe" data-testid="rf__edge-schedule-stripe" aria-label="Edge from nightly_schedule to extract_stripe" aria-describedby="react-flow__edge-desc-1">
                         <path className="motion-reduce:animate-none! react-flow__edge-path" id="schedule-stripe" marker-end="url('#1__height=12&type=arrowclosed&width=12')" d="M107.35940409683427 223.7094972067039L127.35940409683427 223.7094972067039L 142.95716945996276,223.7094972067039Q 154.95716945996276,223.7094972067039 154.95716945996276,211.7094972067039L 154.95716945996276,80.22346368715084Q 154.95716945996276,68.22346368715084 166.95716945996276,68.22346368715084L181.49720670391062 68.22346368715084L201.49720670391062 68.22346368715084" fill="none" style={{strokeWidth: "1.05773"}}></path>
-                        <path className="react-flow__edge-interaction" d="M107.35940409683427 223.7094972067039L127.35940409683427 223.7094972067039L 142.95716945996276,223.7094972067039Q 154.95716945996276,223.7094972067039 154.95716945996276,211.7094972067039L 154.95716945996276,80.22346368715084Q 154.95716945996276,68.22346368715084 166.95716945996276,68.22346368715084L181.49720670391062 68.22346368715084L201.49720670391062 68.22346368715084" fill="none" strokeOpacity="0" strokeWidth="20"></path>
+                        <path className="react-flow__edge-interaction" d="M107.35940409683427 223.7094972067039L127.35940409683427 223.7094972067039L 142.95716945996276,223.7094972067039Q 154.95716945996276,223.7094972067039 154.95716945996276,211.7094972067039L 154.95716945996276,80.22346368715084Q 154.95716945996276,68.22346368715084 166.95716945996276,68.22346368715084L181.49720670391062 68.22346368715084L201.49720670391062 68.22346368715084" fill="none" strokeOpacity={0} strokeWidth={20}></path>
                       </g>
                     </svg>
                     <svg style={{zIndex: "0"}}>
-                      <g className="nopan react-flow__edge react-flow__edge-flow selectable" tabIndex="0" role="group" aria-roledescription="edge" data-id="schedule-paypal" data-testid="rf__edge-schedule-paypal" aria-label="Edge from nightly_schedule to extract_paypal" aria-describedby="react-flow__edge-desc-1">
+                      <g className="nopan react-flow__edge react-flow__edge-flow selectable" tabIndex={0} role="group" aria-roledescription="edge" data-id="schedule-paypal" data-testid="rf__edge-schedule-paypal" aria-label="Edge from nightly_schedule to extract_paypal" aria-describedby="react-flow__edge-desc-1">
                         <path className="motion-reduce:animate-none! react-flow__edge-path" id="schedule-paypal" marker-end="url('#1__height=12&type=arrowclosed&width=12')" d="M107.35940409683427 223.7094972067039L127.35940409683427 223.7094972067039L 142.95716945996276,223.7094972067039Q 154.95716945996276,223.7094972067039 154.95716945996276,235.7094972067039L 154.95716945996276,368.2532588454376Q 154.95716945996276,380.2532588454376 166.95716945996276,380.2532588454376L181.49720670391062 380.2532588454376L201.49720670391062 380.2532588454376" fill="none" style={{strokeWidth: "1.05773"}}></path>
-                        <path className="react-flow__edge-interaction" d="M107.35940409683427 223.7094972067039L127.35940409683427 223.7094972067039L 142.95716945996276,223.7094972067039Q 154.95716945996276,223.7094972067039 154.95716945996276,235.7094972067039L 154.95716945996276,368.2532588454376Q 154.95716945996276,380.2532588454376 166.95716945996276,380.2532588454376L181.49720670391062 380.2532588454376L201.49720670391062 380.2532588454376" fill="none" strokeOpacity="0" strokeWidth="20"></path>
+                        <path className="react-flow__edge-interaction" d="M107.35940409683427 223.7094972067039L127.35940409683427 223.7094972067039L 142.95716945996276,223.7094972067039Q 154.95716945996276,223.7094972067039 154.95716945996276,235.7094972067039L 154.95716945996276,368.2532588454376Q 154.95716945996276,380.2532588454376 166.95716945996276,380.2532588454376L181.49720670391062 380.2532588454376L201.49720670391062 380.2532588454376" fill="none" strokeOpacity={0} strokeWidth={20}></path>
                       </g>
                     </svg>
                     <svg style={{zIndex: "0"}}>
-                      <g className="nopan react-flow__edge react-flow__edge-flow selectable" tabIndex="0" role="group" aria-roledescription="edge" data-id="stripe-dedupe" data-testid="rf__edge-stripe-dedupe" aria-label="Edge from extract_stripe to dedupe_payments" aria-describedby="react-flow__edge-desc-1">
+                      <g className="nopan react-flow__edge react-flow__edge-flow selectable" tabIndex={0} role="group" aria-roledescription="edge" data-id="stripe-dedupe" data-testid="rf__edge-stripe-dedupe" aria-label="Edge from extract_stripe to dedupe_payments" aria-describedby="react-flow__edge-desc-1">
                         <path className="motion-reduce:animate-none! react-flow__edge-path" id="stripe-dedupe" marker-end="url('#1__height=12&type=arrowclosed&width=12')" d="M271.3072625698324 68.22346368715084L291.3072625698324 68.22346368715084L 306.9050279329609,68.22346368715084Q 318.9050279329609,68.22346368715084 318.9050279329609,80.22346368715084L 318.9050279329609,211.7094972067039Q 318.9050279329609,223.7094972067039 330.9050279329609,223.7094972067039L345.44506517690877 223.7094972067039L365.44506517690877 223.7094972067039" fill="none" style={{strokeWidth: "1.05773"}}></path>
-                        <path className="react-flow__edge-interaction" d="M271.3072625698324 68.22346368715084L291.3072625698324 68.22346368715084L 306.9050279329609,68.22346368715084Q 318.9050279329609,68.22346368715084 318.9050279329609,80.22346368715084L 318.9050279329609,211.7094972067039Q 318.9050279329609,223.7094972067039 330.9050279329609,223.7094972067039L345.44506517690877 223.7094972067039L365.44506517690877 223.7094972067039" fill="none" strokeOpacity="0" strokeWidth="20"></path>
+                        <path className="react-flow__edge-interaction" d="M271.3072625698324 68.22346368715084L291.3072625698324 68.22346368715084L 306.9050279329609,68.22346368715084Q 318.9050279329609,68.22346368715084 318.9050279329609,80.22346368715084L 318.9050279329609,211.7094972067039Q 318.9050279329609,223.7094972067039 330.9050279329609,223.7094972067039L345.44506517690877 223.7094972067039L365.44506517690877 223.7094972067039" fill="none" strokeOpacity={0} strokeWidth={20}></path>
                       </g>
                     </svg>
                     <svg style={{zIndex: "0"}}>
-                      <g className="nopan react-flow__edge react-flow__edge-flow selectable" tabIndex="0" role="group" aria-roledescription="edge" data-id="paypal-dedupe" data-testid="rf__edge-paypal-dedupe" aria-label="Edge from extract_paypal to dedupe_payments" aria-describedby="react-flow__edge-desc-1">
+                      <g className="nopan react-flow__edge react-flow__edge-flow selectable" tabIndex={0} role="group" aria-roledescription="edge" data-id="paypal-dedupe" data-testid="rf__edge-paypal-dedupe" aria-label="Edge from extract_paypal to dedupe_payments" aria-describedby="react-flow__edge-desc-1">
                         <path className="motion-reduce:animate-none! react-flow__edge-path" id="paypal-dedupe" marker-end="url('#1__height=12&type=arrowclosed&width=12')" d="M271.3072625698324 380.2532588454376L291.3072625698324 380.2532588454376L 306.9050279329609,380.2532588454376Q 318.9050279329609,380.2532588454376 318.9050279329609,368.2532588454376L 318.9050279329609,235.7094972067039Q 318.9050279329609,223.7094972067039 330.9050279329609,223.7094972067039L345.44506517690877 223.7094972067039L365.44506517690877 223.7094972067039" fill="none" style={{strokeWidth: "1.05773"}}></path>
-                        <path className="react-flow__edge-interaction" d="M271.3072625698324 380.2532588454376L291.3072625698324 380.2532588454376L 306.9050279329609,380.2532588454376Q 318.9050279329609,380.2532588454376 318.9050279329609,368.2532588454376L 318.9050279329609,235.7094972067039Q 318.9050279329609,223.7094972067039 330.9050279329609,223.7094972067039L345.44506517690877 223.7094972067039L365.44506517690877 223.7094972067039" fill="none" strokeOpacity="0" strokeWidth="20"></path>
+                        <path className="react-flow__edge-interaction" d="M271.3072625698324 380.2532588454376L291.3072625698324 380.2532588454376L 306.9050279329609,380.2532588454376Q 318.9050279329609,380.2532588454376 318.9050279329609,368.2532588454376L 318.9050279329609,235.7094972067039Q 318.9050279329609,223.7094972067039 330.9050279329609,223.7094972067039L345.44506517690877 223.7094972067039L365.44506517690877 223.7094972067039" fill="none" strokeOpacity={0} strokeWidth={20}></path>
                       </g>
                     </svg>
                     <svg style={{zIndex: "0"}}>
-                      <g className="nopan react-flow__edge react-flow__edge-flow selectable" tabIndex="0" role="group" aria-roledescription="edge" data-id="dedupe-reconcile" data-testid="rf__edge-dedupe-reconcile" aria-label="Edge from dedupe_payments to reconcile_ledger" aria-describedby="react-flow__edge-desc-1">
+                      <g className="nopan react-flow__edge react-flow__edge-flow selectable" tabIndex={0} role="group" aria-roledescription="edge" data-id="dedupe-reconcile" data-testid="rf__edge-dedupe-reconcile" aria-label="Edge from dedupe_payments to reconcile_ledger" aria-describedby="react-flow__edge-desc-1">
                         <path className="motion-reduce:animate-none! react-flow__edge-path" id="dedupe-reconcile" marker-end="url('#1__height=12&type=arrowclosed&width=12')" d="M435.2551210428305 223.7094972067039L455.2551210428305 223.7094972067039L 524.7970204841713,223.7094972067039Q 536.7970204841713,223.7094972067039 536.7970204841713,211.7094972067039L 536.7970204841713,80.22346368715084Q 536.7970204841713,68.22346368715084 548.7970204841713,68.22346368715084L617.2811918063314 68.22346368715084L637.2811918063314 68.22346368715084" fill="none" style={{strokeWidth: "1.05773"}}></path>
-                        <path className="react-flow__edge-interaction" d="M435.2551210428305 223.7094972067039L455.2551210428305 223.7094972067039L 524.7970204841713,223.7094972067039Q 536.7970204841713,223.7094972067039 536.7970204841713,211.7094972067039L 536.7970204841713,80.22346368715084Q 536.7970204841713,68.22346368715084 548.7970204841713,68.22346368715084L617.2811918063314 68.22346368715084L637.2811918063314 68.22346368715084" fill="none" strokeOpacity="0" strokeWidth="20"></path>
+                        <path className="react-flow__edge-interaction" d="M435.2551210428305 223.7094972067039L455.2551210428305 223.7094972067039L 524.7970204841713,223.7094972067039Q 536.7970204841713,223.7094972067039 536.7970204841713,211.7094972067039L 536.7970204841713,80.22346368715084Q 536.7970204841713,68.22346368715084 548.7970204841713,68.22346368715084L617.2811918063314 68.22346368715084L637.2811918063314 68.22346368715084" fill="none" strokeOpacity={0} strokeWidth={20}></path>
                       </g>
                     </svg>
                     <svg style={{zIndex: "0"}}>
-                      <g className="nopan react-flow__edge react-flow__edge-flow selectable" tabIndex="0" role="group" aria-roledescription="edge" data-id="reconcile-invoices" data-testid="rf__edge-reconcile-invoices" aria-label="Edge from reconcile_ledger to build_invoices_daily" aria-describedby="react-flow__edge-desc-1">
+                      <g className="nopan react-flow__edge react-flow__edge-flow selectable" tabIndex={0} role="group" aria-roledescription="edge" data-id="reconcile-invoices" data-testid="rf__edge-reconcile-invoices" aria-label="Edge from reconcile_ledger to build_invoices_daily" aria-describedby="react-flow__edge-desc-1">
                         <path className="motion-reduce:animate-none! react-flow__edge-path" id="reconcile-invoices" marker-end="url('#1__height=12&type=arrowclosed&width=12')" d="M707.0912476722532 68.22346368715084L727.0912476722532 68.22346368715084L792.7672253258845 68.22346368715084L792.7672253258845 68.22346368715084L857.3854748603352 68.22346368715084L877.3854748603352 68.22346368715084" fill="none" style={{strokeWidth: "1.05773"}}></path>
-                        <path className="react-flow__edge-interaction" d="M707.0912476722532 68.22346368715084L727.0912476722532 68.22346368715084L792.7672253258845 68.22346368715084L792.7672253258845 68.22346368715084L857.3854748603352 68.22346368715084L877.3854748603352 68.22346368715084" fill="none" strokeOpacity="0" strokeWidth="20"></path>
+                        <path className="react-flow__edge-interaction" d="M707.0912476722532 68.22346368715084L727.0912476722532 68.22346368715084L792.7672253258845 68.22346368715084L792.7672253258845 68.22346368715084L857.3854748603352 68.22346368715084L877.3854748603352 68.22346368715084" fill="none" strokeOpacity={0} strokeWidth={20}></path>
                       </g>
                     </svg>
                     <svg style={{zIndex: "0"}}>
-                      <g className="nopan react-flow__edge react-flow__edge-flow selectable" tabIndex="0" role="group" aria-roledescription="edge" data-id="dedupe-mrr" data-testid="rf__edge-dedupe-mrr" aria-label="Edge from dedupe_payments to publish_mrr" aria-describedby="react-flow__edge-desc-1">
+                      <g className="nopan react-flow__edge react-flow__edge-flow selectable" tabIndex={0} role="group" aria-roledescription="edge" data-id="dedupe-mrr" data-testid="rf__edge-dedupe-mrr" aria-label="Edge from dedupe_payments to publish_mrr" aria-describedby="react-flow__edge-desc-1">
                         <path className="motion-reduce:animate-none! react-flow__edge-path" id="dedupe-mrr" marker-end="url('#1__height=12&type=arrowclosed&width=12')" d="M435.2551210428305 223.7094972067039L455.2551210428305 223.7094972067039L 470.852886405959,223.7094972067039Q 482.852886405959,223.7094972067039 482.852886405959,235.7094972067039L 482.852886405959,368.2532588454376Q 482.852886405959,380.2532588454376 494.852886405959,380.2532588454376L509.39292364990683 380.2532588454376L529.3929236499068 380.2532588454376" fill="none" style={{strokeWidth: "1.05773"}}></path>
-                        <path className="react-flow__edge-interaction" d="M435.2551210428305 223.7094972067039L455.2551210428305 223.7094972067039L 470.852886405959,223.7094972067039Q 482.852886405959,223.7094972067039 482.852886405959,235.7094972067039L 482.852886405959,368.2532588454376Q 482.852886405959,380.2532588454376 494.852886405959,380.2532588454376L509.39292364990683 380.2532588454376L529.3929236499068 380.2532588454376" fill="none" strokeOpacity="0" strokeWidth="20"></path>
+                        <path className="react-flow__edge-interaction" d="M435.2551210428305 223.7094972067039L455.2551210428305 223.7094972067039L 470.852886405959,223.7094972067039Q 482.852886405959,223.7094972067039 482.852886405959,235.7094972067039L 482.852886405959,368.2532588454376Q 482.852886405959,380.2532588454376 494.852886405959,380.2532588454376L509.39292364990683 380.2532588454376L529.3929236499068 380.2532588454376" fill="none" strokeOpacity={0} strokeWidth={20}></path>
                       </g>
                     </svg>
                     <svg style={{zIndex: "0"}}>
-                      <g className="nopan react-flow__edge react-flow__edge-flow selectable" tabIndex="0" role="group" aria-roledescription="edge" data-id="mrr-notify" data-testid="rf__edge-mrr-notify" aria-label="Edge from publish_mrr to notify_finance" aria-describedby="react-flow__edge-desc-1">
+                      <g className="nopan react-flow__edge react-flow__edge-flow selectable" tabIndex={0} role="group" aria-roledescription="edge" data-id="mrr-notify" data-testid="rf__edge-mrr-notify" aria-label="Edge from publish_mrr to notify_finance" aria-describedby="react-flow__edge-desc-1">
                         <path className="motion-reduce:animate-none! react-flow__edge-path" id="mrr-notify" marker-end="url('#1__height=12&type=arrowclosed&width=12')" d="M814.9795158286778 380.2532588454376L834.9795158286778 380.2532588454376L846.7113594040968 380.2532588454376L846.7113594040968 380.2532588454376L857.3854748603352 380.2532588454376L877.3854748603352 380.2532588454376" fill="none" style={{strokeWidth: "1.05773"}}></path>
-                        <path className="react-flow__edge-interaction" d="M814.9795158286778 380.2532588454376L834.9795158286778 380.2532588454376L846.7113594040968 380.2532588454376L846.7113594040968 380.2532588454376L857.3854748603352 380.2532588454376L877.3854748603352 380.2532588454376" fill="none" strokeOpacity="0" strokeWidth="20"></path>
+                        <path className="react-flow__edge-interaction" d="M814.9795158286778 380.2532588454376L834.9795158286778 380.2532588454376L846.7113594040968 380.2532588454376L846.7113594040968 380.2532588454376L857.3854748603352 380.2532588454376L877.3854748603352 380.2532588454376" fill="none" strokeOpacity={0} strokeWidth={20}></path>
                       </g>
                     </svg>
                     <svg style={{zIndex: "0"}}>
-                      <g className="nopan react-flow__edge react-flow__edge-feeds selectable" tabIndex="0" role="group" aria-roledescription="edge" data-id="stripe-conn" data-testid="rf__edge-stripe-conn" aria-label="Edge from conn_stripe to extract_stripe" aria-describedby="react-flow__edge-desc-1">
+                      <g className="nopan react-flow__edge react-flow__edge-feeds selectable" tabIndex={0} role="group" aria-roledescription="edge" data-id="stripe-conn" data-testid="rf__edge-stripe-conn" aria-label="Edge from conn_stripe to extract_stripe" aria-describedby="react-flow__edge-desc-1">
                         <path className="motion-reduce:animate-none! react-flow__edge-path" id="stripe-conn" strokeDasharray="2.1154562383612663 4.230912476722533" d="M236.4022346368715 197.26629422718807L236.4022346368715 177.26629422718807L236.4022346368715 171.88081936685288L236.4022346368715 171.88081936685288L236.4022346368715 166.49534450651768L236.4022346368715 146.49534450651768" fill="none" style={{strokeWidth: "1.05773"}}></path>
-                        <path className="react-flow__edge-interaction" d="M236.4022346368715 197.26629422718807L236.4022346368715 177.26629422718807L236.4022346368715 171.88081936685288L236.4022346368715 171.88081936685288L236.4022346368715 166.49534450651768L236.4022346368715 146.49534450651768" fill="none" strokeOpacity="0" strokeWidth="20"></path>
+                        <path className="react-flow__edge-interaction" d="M236.4022346368715 197.26629422718807L236.4022346368715 177.26629422718807L236.4022346368715 171.88081936685288L236.4022346368715 171.88081936685288L236.4022346368715 166.49534450651768L236.4022346368715 146.49534450651768" fill="none" strokeOpacity={0} strokeWidth={20}></path>
                       </g>
                     </svg>
                     <svg style={{zIndex: "0"}}>
-                      <g className="nopan react-flow__edge react-flow__edge-feeds selectable" tabIndex="0" role="group" aria-roledescription="edge" data-id="paypal-conn" data-testid="rf__edge-paypal-conn" aria-label="Edge from conn_paypal to extract_paypal" aria-describedby="react-flow__edge-desc-1">
+                      <g className="nopan react-flow__edge react-flow__edge-feeds selectable" tabIndex={0} role="group" aria-roledescription="edge" data-id="paypal-conn" data-testid="rf__edge-paypal-conn" aria-label="Edge from conn_paypal to extract_paypal" aria-describedby="react-flow__edge-desc-1">
                         <path className="motion-reduce:animate-none! react-flow__edge-path" id="paypal-conn" strokeDasharray="2.1154562383612663 4.230912476722533" d="M236.4022346368715 509.29608938547483L236.4022346368715 489.29608938547483L236.4022346368715 483.91061452513964L236.4022346368715 483.91061452513964L236.4022346368715 478.52513966480444L236.4022346368715 458.52513966480444" fill="none" style={{strokeWidth: "1.05773"}}></path>
-                        <path className="react-flow__edge-interaction" d="M236.4022346368715 509.29608938547483L236.4022346368715 489.29608938547483L236.4022346368715 483.91061452513964L236.4022346368715 483.91061452513964L236.4022346368715 478.52513966480444L236.4022346368715 458.52513966480444" fill="none" strokeOpacity="0" strokeWidth="20"></path>
+                        <path className="react-flow__edge-interaction" d="M236.4022346368715 509.29608938547483L236.4022346368715 489.29608938547483L236.4022346368715 483.91061452513964L236.4022346368715 483.91061452513964L236.4022346368715 478.52513966480444L236.4022346368715 458.52513966480444" fill="none" strokeOpacity={0} strokeWidth={20}></path>
                       </g>
                     </svg>
                     <svg style={{zIndex: "0"}}>
-                      <g className="nopan react-flow__edge react-flow__edge-feeds selectable" tabIndex="0" role="group" aria-roledescription="edge" data-id="dedupe-check" data-testid="rf__edge-dedupe-check" aria-label="Edge from check_charge_id to dedupe_payments" aria-describedby="react-flow__edge-desc-1">
+                      <g className="nopan react-flow__edge react-flow__edge-feeds selectable" tabIndex={0} role="group" aria-roledescription="edge" data-id="dedupe-check" data-testid="rf__edge-dedupe-check" aria-label="Edge from check_charge_id to dedupe_payments" aria-describedby="react-flow__edge-desc-1">
                         <path className="motion-reduce:animate-none! react-flow__edge-path" id="dedupe-check" strokeDasharray="2.1154562383612663 4.230912476722533" d="M400.35009310986965 352.7523277467412L400.35009310986965 332.7523277467412L400.35009310986965 328.42458100558656L400.35009310986965 328.42458100558656L400.35009310986965 323.03910614525137L400.35009310986965 303.03910614525137" fill="none" style={{strokeWidth: "1.05773"}}></path>
-                        <path className="react-flow__edge-interaction" d="M400.35009310986965 352.7523277467412L400.35009310986965 332.7523277467412L400.35009310986965 328.42458100558656L400.35009310986965 328.42458100558656L400.35009310986965 323.03910614525137L400.35009310986965 303.03910614525137" fill="none" strokeOpacity="0" strokeWidth="20"></path>
+                        <path className="react-flow__edge-interaction" d="M400.35009310986965 352.7523277467412L400.35009310986965 332.7523277467412L400.35009310986965 328.42458100558656L400.35009310986965 328.42458100558656L400.35009310986965 323.03910614525137L400.35009310986965 303.03910614525137" fill="none" strokeOpacity={0} strokeWidth={20}></path>
                       </g>
                     </svg>
                     <svg style={{zIndex: "0"}}>
-                      <g className="nopan react-flow__edge react-flow__edge-feeds selectable" tabIndex="0" role="group" aria-roledescription="edge" data-id="reconcile-model" data-testid="rf__edge-reconcile-model" aria-label="Edge from model_ledger_v3 to reconcile_ledger" aria-describedby="react-flow__edge-desc-1">
+                      <g className="nopan react-flow__edge react-flow__edge-feeds selectable" tabIndex={0} role="group" aria-roledescription="edge" data-id="reconcile-model" data-testid="rf__edge-reconcile-model" aria-label="Edge from model_ledger_v3 to reconcile_ledger" aria-describedby="react-flow__edge-desc-1">
                         <path className="motion-reduce:animate-none! react-flow__edge-path" id="reconcile-model" strokeDasharray="2.1154562383612663 4.230912476722533" d="M672.1862197392924 197.26629422718807L672.1862197392924 177.26629422718807L672.1862197392924 171.88081936685288L672.1862197392924 171.88081936685288L672.1862197392924 166.49534450651768L672.1862197392924 146.49534450651768" fill="none" style={{strokeWidth: "1.05773"}}></path>
-                        <path className="react-flow__edge-interaction" d="M672.1862197392924 197.26629422718807L672.1862197392924 177.26629422718807L672.1862197392924 171.88081936685288L672.1862197392924 171.88081936685288L672.1862197392924 166.49534450651768L672.1862197392924 146.49534450651768" fill="none" strokeOpacity="0" strokeWidth="20"></path>
+                        <path className="react-flow__edge-interaction" d="M672.1862197392924 197.26629422718807L672.1862197392924 177.26629422718807L672.1862197392924 171.88081936685288L672.1862197392924 171.88081936685288L672.1862197392924 166.49534450651768L672.1862197392924 146.49534450651768" fill="none" strokeOpacity={0} strokeWidth={20}></path>
                       </g>
                     </svg>
                   </div>
@@ -301,19 +301,19 @@ export function Pattern() {
                     </div>
                   </div>
                   <div className="react-flow__nodes" style={{position: "absolute", width: "100%", height: "100%", top: "0px", left: "0px"}}>
-                    <div className="react-flow__node react-flow__node-mark selectable" data-id="nightly_schedule" data-testid="rf__node-nightly_schedule" tabIndex="0" role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(0px, 196px)", pointerEvents: "all", visibility: "visible"}}>
+                    <div className="react-flow__node react-flow__node-mark selectable" data-id="nightly_schedule" data-testid="rf__node-nightly_schedule" tabIndex={0} role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(0px, 196px)", pointerEvents: "all", visibility: "visible"}}>
                       <div className="data-dimmed:opacity-35 duration-200 flex flex-col gap-2 items-center motion-reduce:transition-none transition-opacity w-36">
                         <ContextMenu>
                         <ContextMenuTrigger className="block">
                           <div className="relative">
                             <IconTile className="[--icon-tile-icon-size:--spacing(6)] bg-card border-success dark:bg-card dark:data-selected:ring-primary/40 data-selected:ring-[3px] data-selected:ring-primary/25 in-[.react-flow__node:focus-visible]:ring-2 in-[.react-flow__node:focus-visible]:ring-ring/50" variant="outline" size="xl">
-                              <svg className="lucide lucide-zap" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ZapIcon" tabler="IconBolt" hugeicons="FlashIcon" phosphor="LightningIcon" remixicon="RiFlashlightLine" aria-hidden="true">
+                              <svg className="lucide lucide-zap" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ZapIcon" tabler="IconBolt" hugeicons="FlashIcon" phosphor="LightningIcon" remixicon="RiFlashlightLine" aria-hidden="true">
                                 <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                               </svg>
                             </IconTile>
                             <span className="-translate-x-1/2 absolute bg-card bottom-0 flex left-1/2 rounded-full translate-y-1/2">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border-2 border-card dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-0 py-0.5 relative rounded-full text-success-foreground text-xs transition-shadow">
-                                <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                                <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                   <path d="M20 6 9 17l-5-5"></path>
                                 </svg>
                                 <span className="sr-only">
@@ -335,7 +335,7 @@ export function Pattern() {
                         </div>
                       </div>
                     </div>
-                    <div className="react-flow__node react-flow__node-mark selectable" data-id="extract_stripe" data-testid="rf__node-extract_stripe" tabIndex="0" role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(164px, 40px)", pointerEvents: "all", visibility: "visible"}}>
+                    <div className="react-flow__node react-flow__node-mark selectable" data-id="extract_stripe" data-testid="rf__node-extract_stripe" tabIndex={0} role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(164px, 40px)", pointerEvents: "all", visibility: "visible"}}>
                       <div className="data-dimmed:opacity-35 duration-200 flex flex-col gap-2 items-center motion-reduce:transition-none transition-opacity w-36">
                         <ContextMenu>
                         <ContextMenuTrigger className="block">
@@ -348,7 +348,7 @@ export function Pattern() {
                             </IconTile>
                             <span className="-translate-x-1/2 absolute bg-card bottom-0 flex left-1/2 rounded-full translate-y-1/2">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border-2 border-card dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-0 py-0.5 relative rounded-full text-success-foreground text-xs transition-shadow">
-                                <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                                <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                   <path d="M20 6 9 17l-5-5"></path>
                                 </svg>
                                 <span className="sr-only">
@@ -371,7 +371,7 @@ export function Pattern() {
                         <div className="-bottom-1! connectableend connectablestart nodrag nopan react-flow__handle react-flow__handle-bottom target" data-handleid="feeds" data-nodeid="extract_stripe" data-handlepos="bottom" data-id="1-extract_stripe-feeds-target"></div>
                       </div>
                     </div>
-                    <div className="react-flow__node react-flow__node-mark selectable" data-id="extract_paypal" data-testid="rf__node-extract_paypal" tabIndex="0" role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(164px, 352px)", pointerEvents: "all", visibility: "visible"}}>
+                    <div className="react-flow__node react-flow__node-mark selectable" data-id="extract_paypal" data-testid="rf__node-extract_paypal" tabIndex={0} role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(164px, 352px)", pointerEvents: "all", visibility: "visible"}}>
                       <div className="data-dimmed:opacity-35 duration-200 flex flex-col gap-2 items-center motion-reduce:transition-none transition-opacity w-36">
                         <ContextMenu>
                         <ContextMenuTrigger className="block">
@@ -388,7 +388,7 @@ export function Pattern() {
                             </IconTile>
                             <span className="-translate-x-1/2 absolute bg-card bottom-0 flex left-1/2 rounded-full translate-y-1/2">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border-2 border-card dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-0 py-0.5 relative rounded-full text-success-foreground text-xs transition-shadow">
-                                <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                                <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                   <path d="M20 6 9 17l-5-5"></path>
                                 </svg>
                                 <span className="sr-only">
@@ -411,7 +411,7 @@ export function Pattern() {
                         <div className="-bottom-1! connectableend connectablestart nodrag nopan react-flow__handle react-flow__handle-bottom target" data-handleid="feeds" data-nodeid="extract_paypal" data-handlepos="bottom" data-id="1-extract_paypal-feeds-target"></div>
                       </div>
                     </div>
-                    <div className="react-flow__node react-flow__node-mark selectable" data-id="dedupe_payments" data-testid="rf__node-dedupe_payments" tabIndex="0" role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(328px, 196px)", pointerEvents: "all", visibility: "visible"}}>
+                    <div className="react-flow__node react-flow__node-mark selectable" data-id="dedupe_payments" data-testid="rf__node-dedupe_payments" tabIndex={0} role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(328px, 196px)", pointerEvents: "all", visibility: "visible"}}>
                       <div className="data-dimmed:opacity-35 duration-200 flex flex-col gap-2 items-center motion-reduce:transition-none transition-opacity w-36">
                         <ContextMenu>
                         <ContextMenuTrigger className="block">
@@ -432,7 +432,7 @@ export function Pattern() {
                             </IconTile>
                             <span className="-translate-x-1/2 absolute bg-card bottom-0 flex left-1/2 rounded-full translate-y-1/2">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border-2 border-card dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-0 py-0.5 relative rounded-full text-success-foreground text-xs transition-shadow">
-                                <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                                <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                   <path d="M20 6 9 17l-5-5"></path>
                                 </svg>
                                 <span className="sr-only">
@@ -455,21 +455,21 @@ export function Pattern() {
                         <div className="-bottom-1! connectableend connectablestart nodrag nopan react-flow__handle react-flow__handle-bottom target" data-handleid="feeds" data-nodeid="dedupe_payments" data-handlepos="bottom" data-id="1-dedupe_payments-feeds-target"></div>
                       </div>
                     </div>
-                    <div className="react-flow__node react-flow__node-mark selectable" data-id="reconcile_ledger" data-testid="rf__node-reconcile_ledger" tabIndex="0" role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(600px, 40px)", pointerEvents: "all", visibility: "visible"}}>
+                    <div className="react-flow__node react-flow__node-mark selectable" data-id="reconcile_ledger" data-testid="rf__node-reconcile_ledger" tabIndex={0} role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(600px, 40px)", pointerEvents: "all", visibility: "visible"}}>
                       <div className="data-dimmed:opacity-35 duration-200 flex flex-col gap-2 items-center motion-reduce:transition-none transition-opacity w-36">
                         <ContextMenu>
                         <ContextMenuTrigger className="block">
                           <div className="relative">
                             <div className="-left-1! connectableend connectablestart nodrag nopan react-flow__handle react-flow__handle-left target" data-handleid="in" data-nodeid="reconcile_ledger" data-handlepos="left" data-id="1-reconcile_ledger-in-target"></div>
                             <IconTile className="[--icon-tile-icon-size:--spacing(6)] bg-card border-destructive dark:bg-card dark:data-selected:ring-primary/40 data-selected:ring-[3px] data-selected:ring-primary/25 in-[.react-flow__node:focus-visible]:ring-2 in-[.react-flow__node:focus-visible]:ring-ring/50" variant="outline" size="xl">
-                              <svg className="lucide lucide-book-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BookOpenIcon" tabler="IconBook" hugeicons="BookOpen01Icon" phosphor="BookOpenIcon" remixicon="RiBookOpenLine" aria-hidden="true">
+                              <svg className="lucide lucide-book-open" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BookOpenIcon" tabler="IconBook" hugeicons="BookOpen01Icon" phosphor="BookOpenIcon" remixicon="RiBookOpenLine" aria-hidden="true">
                                 <path d="M12 7v14"></path>
                                 <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
                               </svg>
                             </IconTile>
                             <span className="-translate-x-1/2 absolute bg-card bottom-0 flex left-1/2 rounded-full translate-y-1/2">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border-2 border-card dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-0 py-0.5 relative rounded-full text-destructive-foreground text-xs transition-shadow">
-                                <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                                <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                                   <path d="M18 6 6 18"></path>
                                   <path d="m6 6 12 12"></path>
                                 </svg>
@@ -493,14 +493,14 @@ export function Pattern() {
                         <div className="-bottom-1! connectableend connectablestart nodrag nopan react-flow__handle react-flow__handle-bottom target" data-handleid="feeds" data-nodeid="reconcile_ledger" data-handlepos="bottom" data-id="1-reconcile_ledger-feeds-target"></div>
                       </div>
                     </div>
-                    <div className="react-flow__node react-flow__node-mark selectable" data-id="build_invoices_daily" data-testid="rf__node-build_invoices_daily" tabIndex="0" role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(840px, 40px)", pointerEvents: "all", visibility: "visible"}}>
+                    <div className="react-flow__node react-flow__node-mark selectable" data-id="build_invoices_daily" data-testid="rf__node-build_invoices_daily" tabIndex={0} role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(840px, 40px)", pointerEvents: "all", visibility: "visible"}}>
                       <div className="data-dimmed:opacity-35 duration-200 flex flex-col gap-2 items-center motion-reduce:transition-none transition-opacity w-36">
                         <ContextMenu>
                         <ContextMenuTrigger className="block">
                           <div className="relative">
                             <div className="-left-1! connectableend connectablestart nodrag nopan react-flow__handle react-flow__handle-left target" data-handleid="in" data-nodeid="build_invoices_daily" data-handlepos="left" data-id="1-build_invoices_daily-in-target"></div>
                             <IconTile className="[--icon-tile-icon-size:--spacing(6)] bg-card dark:bg-card dark:data-selected:ring-primary/40 data-selected:ring-[3px] data-selected:ring-primary/25 in-[.react-flow__node:focus-visible]:ring-2 in-[.react-flow__node:focus-visible]:ring-ring/50" variant="outline" size="xl">
-                              <svg className="lucide lucide-receipt-text" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ReceiptTextIcon" tabler="IconReceipt" hugeicons="Invoice01Icon" phosphor="ReceiptIcon" remixicon="RiReceiptLine" aria-hidden="true">
+                              <svg className="lucide lucide-receipt-text" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ReceiptTextIcon" tabler="IconReceipt" hugeicons="Invoice01Icon" phosphor="ReceiptIcon" remixicon="RiReceiptLine" aria-hidden="true">
                                 <path d="M13 16H8"></path>
                                 <path d="M14 8H8"></path>
                                 <path d="M16 12H8"></path>
@@ -509,8 +509,8 @@ export function Pattern() {
                             </IconTile>
                             <span className="-translate-x-1/2 absolute bg-card bottom-0 flex left-1/2 rounded-full translate-y-1/2">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border-2 border-card dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-0 py-0.5 relative rounded-full text-xs transition-shadow">
-                                <svg className="lucide lucide-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                                  <circle cx="12" cy="12" r="10"></circle>
+                                <svg className="lucide lucide-clock" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                                  <circle cx={12} cy={12} r={10}></circle>
                                   <path d="M12 6v6l4 2"></path>
                                 </svg>
                                 <span className="sr-only">
@@ -533,7 +533,7 @@ export function Pattern() {
                         <div className="-bottom-1! connectableend connectablestart nodrag nopan opacity-0 pointer-events-none react-flow__handle react-flow__handle-bottom target" data-handleid="feeds" data-nodeid="build_invoices_daily" data-handlepos="bottom" data-id="1-build_invoices_daily-feeds-target"></div>
                       </div>
                     </div>
-                    <div className="react-flow__node react-flow__node-gate selectable" data-id="publish_mrr" data-testid="rf__node-publish_mrr" tabIndex="0" role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(536px, 352px)", pointerEvents: "all", visibility: "visible"}}>
+                    <div className="react-flow__node react-flow__node-gate selectable" data-id="publish_mrr" data-testid="rf__node-publish_mrr" tabIndex={0} role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(536px, 352px)", pointerEvents: "all", visibility: "visible"}}>
                       <div className="data-dimmed:opacity-35 duration-200 motion-reduce:transition-none relative transition-opacity">
                         <div className="-left-1! connectableend connectablestart nodrag nopan react-flow__handle react-flow__handle-left target" data-handleid="in" data-nodeid="publish_mrr" data-handlepos="left" data-id="1-publish_mrr-in-target"></div>
                         <ContextMenu>
@@ -558,7 +558,7 @@ export function Pattern() {
                               </ItemDescription>
                             </ItemContent>
                             <ItemActions>
-                              <Button className="nodrag nopan" type="button" tabIndex="0">
+                              <Button className="nodrag nopan" type="button" tabIndex={0}>
                                 {"Approve"}
                               </Button>
                             </ItemActions>
@@ -568,7 +568,7 @@ export function Pattern() {
                         <div className="-right-1! connectableend connectablestart nodrag nopan react-flow__handle react-flow__handle-right source" data-handleid="out" data-nodeid="publish_mrr" data-handlepos="right" data-id="1-publish_mrr-out-source"></div>
                       </div>
                     </div>
-                    <div className="react-flow__node react-flow__node-mark selectable" data-id="notify_finance" data-testid="rf__node-notify_finance" tabIndex="0" role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(840px, 352px)", pointerEvents: "all", visibility: "visible"}}>
+                    <div className="react-flow__node react-flow__node-mark selectable" data-id="notify_finance" data-testid="rf__node-notify_finance" tabIndex={0} role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(840px, 352px)", pointerEvents: "all", visibility: "visible"}}>
                       <div className="data-dimmed:opacity-35 duration-200 flex flex-col gap-2 items-center motion-reduce:transition-none transition-opacity w-36">
                         <ContextMenu>
                         <ContextMenuTrigger className="block">
@@ -586,10 +586,10 @@ export function Pattern() {
                             </IconTile>
                             <span className="-translate-x-1/2 absolute bg-card bottom-0 flex left-1/2 rounded-full translate-y-1/2">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border-2 border-card dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-0 py-0.5 relative rounded-full text-warning-foreground text-xs transition-shadow">
-                                <svg className="lucide lucide-circle-pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PauseCircleIcon" tabler="IconPlayerPauseFilled" hugeicons="PauseCircleIcon" phosphor="PauseCircleIcon" remixicon="RiPauseCircleLine" aria-hidden="true">
-                                  <circle cx="12" cy="12" r="10"></circle>
-                                  <line x1="10" x2="10" y1="15" y2="9"></line>
-                                  <line x1="14" x2="14" y1="15" y2="9"></line>
+                                <svg className="lucide lucide-circle-pause" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PauseCircleIcon" tabler="IconPlayerPauseFilled" hugeicons="PauseCircleIcon" phosphor="PauseCircleIcon" remixicon="RiPauseCircleLine" aria-hidden="true">
+                                  <circle cx={12} cy={12} r={10}></circle>
+                                  <line x1={10} x2={10} y1={15} y2={9}></line>
+                                  <line x1={14} x2={14} y1={15} y2={9}></line>
                                 </svg>
                                 <span className="sr-only">
                                   {"Waiting"}
@@ -611,13 +611,13 @@ export function Pattern() {
                         <div className="-bottom-1! connectableend connectablestart nodrag nopan opacity-0 pointer-events-none react-flow__handle react-flow__handle-bottom target" data-handleid="feeds" data-nodeid="notify_finance" data-handlepos="bottom" data-id="1-notify_finance-feeds-target"></div>
                       </div>
                     </div>
-                    <div className="react-flow__node react-flow__node-resource selectable" data-id="conn_stripe" data-testid="rf__node-conn_stripe" tabIndex="0" role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(172px, 204px)", pointerEvents: "all", visibility: "visible"}}>
+                    <div className="react-flow__node react-flow__node-resource selectable" data-id="conn_stripe" data-testid="rf__node-conn_stripe" tabIndex={0} role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(172px, 204px)", pointerEvents: "all", visibility: "visible"}}>
                       <div className="data-dimmed:opacity-35 duration-200 flex flex-col gap-2 items-center motion-reduce:transition-none transition-opacity w-32">
                         <ContextMenu>
                         <ContextMenuTrigger className="block">
                           <div className="relative">
                             <IconTile className="[--icon-tile-icon-size:--spacing(5)] bg-card dark:bg-card dark:data-selected:ring-primary/40 data-selected:ring-[3px] data-selected:ring-primary/25 in-[.react-flow__node:focus-visible]:ring-2 in-[.react-flow__node:focus-visible]:ring-ring/50" variant="outline" size="lg">
-                              <svg className="lucide lucide-plug-zap" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlugZapIcon" tabler="IconPlugConnected" hugeicons="LinkCircle02Icon" phosphor="PlugsConnectedIcon" remixicon="RiPlug2Line" aria-hidden="true">
+                              <svg className="lucide lucide-plug-zap" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlugZapIcon" tabler="IconPlugConnected" hugeicons="LinkCircle02Icon" phosphor="PlugsConnectedIcon" remixicon="RiPlug2Line" aria-hidden="true">
                                 <path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"></path>
                                 <path d="m2 22 3-3"></path>
                                 <path d="M7.5 13.5 10 11"></path>
@@ -639,13 +639,13 @@ export function Pattern() {
                         </div>
                       </div>
                     </div>
-                    <div className="react-flow__node react-flow__node-resource selectable" data-id="conn_paypal" data-testid="rf__node-conn_paypal" tabIndex="0" role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(172px, 516px)", pointerEvents: "all", visibility: "visible"}}>
+                    <div className="react-flow__node react-flow__node-resource selectable" data-id="conn_paypal" data-testid="rf__node-conn_paypal" tabIndex={0} role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(172px, 516px)", pointerEvents: "all", visibility: "visible"}}>
                       <div className="data-dimmed:opacity-35 duration-200 flex flex-col gap-2 items-center motion-reduce:transition-none transition-opacity w-32">
                         <ContextMenu>
                         <ContextMenuTrigger className="block">
                           <div className="relative">
                             <IconTile className="[--icon-tile-icon-size:--spacing(5)] bg-card dark:bg-card dark:data-selected:ring-primary/40 data-selected:ring-[3px] data-selected:ring-primary/25 in-[.react-flow__node:focus-visible]:ring-2 in-[.react-flow__node:focus-visible]:ring-ring/50" variant="outline" size="lg">
-                              <svg className="lucide lucide-plug-zap" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlugZapIcon" tabler="IconPlugConnected" hugeicons="LinkCircle02Icon" phosphor="PlugsConnectedIcon" remixicon="RiPlug2Line" aria-hidden="true">
+                              <svg className="lucide lucide-plug-zap" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlugZapIcon" tabler="IconPlugConnected" hugeicons="LinkCircle02Icon" phosphor="PlugsConnectedIcon" remixicon="RiPlug2Line" aria-hidden="true">
                                 <path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"></path>
                                 <path d="m2 22 3-3"></path>
                                 <path d="M7.5 13.5 10 11"></path>
@@ -667,13 +667,13 @@ export function Pattern() {
                         </div>
                       </div>
                     </div>
-                    <div className="react-flow__node react-flow__node-resource selectable" data-id="check_charge_id" data-testid="rf__node-check_charge_id" tabIndex="0" role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(336px, 360px)", pointerEvents: "all", visibility: "visible"}}>
+                    <div className="react-flow__node react-flow__node-resource selectable" data-id="check_charge_id" data-testid="rf__node-check_charge_id" tabIndex={0} role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(336px, 360px)", pointerEvents: "all", visibility: "visible"}}>
                       <div className="data-dimmed:opacity-35 duration-200 flex flex-col gap-2 items-center motion-reduce:transition-none transition-opacity w-32">
                         <ContextMenu>
                         <ContextMenuTrigger className="block">
                           <div className="relative">
                             <IconTile className="[--icon-tile-icon-size:--spacing(5)] bg-card dark:bg-card dark:data-selected:ring-primary/40 data-selected:ring-[3px] data-selected:ring-primary/25 in-[.react-flow__node:focus-visible]:ring-2 in-[.react-flow__node:focus-visible]:ring-ring/50" variant="outline" size="lg">
-                              <svg className="lucide lucide-shield-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-shield-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
                                 <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                                 <path d="m9 12 2 2 4-4"></path>
                               </svg>
@@ -692,7 +692,7 @@ export function Pattern() {
                         </div>
                       </div>
                     </div>
-                    <div className="react-flow__node react-flow__node-resource selectable" data-id="model_ledger_v3" data-testid="rf__node-model_ledger_v3" tabIndex="0" role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(608px, 204px)", pointerEvents: "all", visibility: "visible"}}>
+                    <div className="react-flow__node react-flow__node-resource selectable" data-id="model_ledger_v3" data-testid="rf__node-model_ledger_v3" tabIndex={0} role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(608px, 204px)", pointerEvents: "all", visibility: "visible"}}>
                       <div className="data-dimmed:opacity-35 duration-200 flex flex-col gap-2 items-center motion-reduce:transition-none transition-opacity w-32">
                         <ContextMenu>
                         <ContextMenuTrigger className="block">
@@ -725,24 +725,24 @@ export function Pattern() {
               </div>
             </div>
             <svg className="react-flow__background" data-testid="rf__background" style={{position: "absolute", width: "100%", height: "100%", top: "0px", left: "0px"}}>
-              <pattern id="pattern-1" x="17.92957746478873" y="-14" width="22.690140845070424" height="22.690140845070424" patternUnits="userSpaceOnUse" patterntransform="translate(-11.345070422535212,-11.345070422535212)">
-                <circle className="dots react-flow__background-pattern" cx="0.9454225352112676" cy="0.9454225352112676" r="0.9454225352112676"></circle>
+              <pattern id="pattern-1" x={17.92957746478873} y={-14} width={22.690140845070424} height={22.690140845070424} patternUnits="userSpaceOnUse" patterntransform="translate(-11.345070422535212,-11.345070422535212)">
+                <circle className="dots react-flow__background-pattern" cx={0.9454225352112676} cy={0.9454225352112676} r={0.9454225352112676}></circle>
               </pattern>
-              <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-1)"></rect>
+              <rect x={0} y={0} width="100%" height="100%" fill="url(#pattern-1)"></rect>
             </svg>
             <div className="bottom left m-6! react-flow__panel">
               <Card className="flex-row gap-1 items-center p-1" size="sm" role="group" aria-label="Canvas controls">
                 <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" size="sm" spacing="0.5" aria-label="Canvas tool" style={{"--gap": "0.5"}}>
                   <Tooltip>
-                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-group-item cn-toggle-size-sm cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] focus-visible:z-10 focus:z-10 group-data-horizontal/toggle-group:data-[spacing=0]:data-[variant=outline]:border-l-0 group-data-horizontal/toggle-group:data-[spacing=0]:data-[variant=outline]:first:border-l group-data-vertical/toggle-group:data-[spacing=0]:data-[variant=outline]:border-t-0 group-data-vertical/toggle-group:data-[spacing=0]:data-[variant=outline]:first:border-t group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-0 shrink-0 whitespace-nowrap" type="button" aria-disabled="false" tabIndex="0" aria-pressed="false" variant="default" size="sm" spacing="0.5" aria-label="Select" id="base-ui-_r_9_" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-mouse-pointer-2 lucide-mouse-pointer2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MousePointer2Icon" tabler="IconPointer" hugeicons="Cursor01Icon" phosphor="CursorIcon" remixicon="RiCursorLine" aria-hidden="true">
+                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-group-item cn-toggle-size-sm cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] focus-visible:z-10 focus:z-10 group-data-horizontal/toggle-group:data-[spacing=0]:data-[variant=outline]:border-l-0 group-data-horizontal/toggle-group:data-[spacing=0]:data-[variant=outline]:first:border-l group-data-vertical/toggle-group:data-[spacing=0]:data-[variant=outline]:border-t-0 group-data-vertical/toggle-group:data-[spacing=0]:data-[variant=outline]:first:border-t group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-0 shrink-0 whitespace-nowrap" type="button" aria-disabled="false" tabIndex={0} aria-pressed="false" variant="default" size="sm" spacing="0.5" aria-label="Select" id="base-ui-_r_9_" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-mouse-pointer-2 lucide-mouse-pointer2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MousePointer2Icon" tabler="IconPointer" hugeicons="Cursor01Icon" phosphor="CursorIcon" remixicon="RiCursorLine" aria-hidden="true">
                       <path d="M4.037 4.688a.495.495 0 0 1 .651-.651l16 6.5a.5.5 0 0 1-.063.947l-6.124 1.58a2 2 0 0 0-1.438 1.435l-1.579 6.126a.5.5 0 0 1-.947.063z"></path>
                     </svg>
                   </TooltipTrigger>
                   </Tooltip>
                   <Tooltip>
-                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-group-item cn-toggle-size-sm cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] focus-visible:z-10 focus:z-10 group-data-horizontal/toggle-group:data-[spacing=0]:data-[variant=outline]:border-l-0 group-data-horizontal/toggle-group:data-[spacing=0]:data-[variant=outline]:first:border-l group-data-vertical/toggle-group:data-[spacing=0]:data-[variant=outline]:border-t-0 group-data-vertical/toggle-group:data-[spacing=0]:data-[variant=outline]:first:border-t group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-0 shrink-0 whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="default" size="sm" spacing="0.5" aria-label="Pan" id="base-ui-_r_c_" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-hand" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HandIcon" tabler="IconHandStop" hugeicons="HandIcon" phosphor="HandIcon" remixicon="RiHand" aria-hidden="true">
+                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-group-item cn-toggle-size-sm cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] focus-visible:z-10 focus:z-10 group-data-horizontal/toggle-group:data-[spacing=0]:data-[variant=outline]:border-l-0 group-data-horizontal/toggle-group:data-[spacing=0]:data-[variant=outline]:first:border-l group-data-vertical/toggle-group:data-[spacing=0]:data-[variant=outline]:border-t-0 group-data-vertical/toggle-group:data-[spacing=0]:data-[variant=outline]:first:border-t group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-0 shrink-0 whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex={-1} aria-pressed="true" variant="default" size="sm" spacing="0.5" aria-label="Pan" id="base-ui-_r_c_" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-hand" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HandIcon" tabler="IconHandStop" hugeicons="HandIcon" phosphor="HandIcon" remixicon="RiHand" aria-hidden="true">
                       <path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"></path>
                       <path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2"></path>
                       <path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8"></path>
@@ -754,20 +754,20 @@ export function Pattern() {
                 <Separator className="data-vertical:self-center h-4" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
                 <div className="flex gap-0.5 items-center" role="group" aria-label="Zoom">
                   <Tooltip>
-                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Zoom out" id="base-ui-_r_f_" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Zoom out" id="base-ui-_r_f_" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                       <path d="M5 12h14"></path>
                     </svg>
                   </TooltipTrigger>
                   </Tooltip>
                   <DropdownMenu>
-                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 tabular-nums transition-all w-12 whitespace-nowrap" type="button" tabIndex="0" aria-label="Zoom level 95%" aria-haspopup="menu" id="base-ui-_r_j_" aria-expanded="false">
+                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 tabular-nums transition-all w-12 whitespace-nowrap" type="button" tabIndex={0} aria-label="Zoom level 95%" aria-haspopup="menu" id="base-ui-_r_j_" aria-expanded="false">
                     {"95%"}
                   </DropdownMenuTrigger>
                   </DropdownMenu>
                   <Tooltip>
-                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Zoom in" id="base-ui-_r_m_" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Zoom in" id="base-ui-_r_m_" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="M12 5v14"></path>
                     </svg>
@@ -776,8 +776,8 @@ export function Pattern() {
                 </div>
                 <Separator className="data-vertical:self-center h-4" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
                 <Tooltip>
-                <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Focus failed task" id="base-ui-_r_o_" baseUiTooltipTrigger="">
-                  <svg className="lucide lucide-triangle-alert" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
+                <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Focus failed task" id="base-ui-_r_o_" baseUiTooltipTrigger="">
+                  <svg className="lucide lucide-triangle-alert" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
                     <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
                     <path d="M12 9v4"></path>
                     <path d="M12 17h.01"></path>
@@ -816,16 +816,16 @@ export function Pattern() {
                   {"publish_mrr"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                  <svg className="lucide lucide-circle-pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PauseCircleIcon" tabler="IconPlayerPauseFilled" hugeicons="PauseCircleIcon" phosphor="PauseCircleIcon" remixicon="RiPauseCircleLine" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="10" x2="10" y1="15" y2="9"></line>
-                    <line x1="14" x2="14" y1="15" y2="9"></line>
+                  <svg className="lucide lucide-circle-pause" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PauseCircleIcon" tabler="IconPlayerPauseFilled" hugeicons="PauseCircleIcon" phosphor="PauseCircleIcon" remixicon="RiPauseCircleLine" aria-hidden="true">
+                    <circle cx={12} cy={12} r={10}></circle>
+                    <line x1={10} x2={10} y1={15} y2={9}></line>
+                    <line x1={14} x2={14} y1={15} y2={9}></line>
                   </svg>
                   {"Waiting"}
                 </Badge>
               </CardTitle>
-              <Button className="-me-1.5" type="button" tabIndex="0" aria-label="Close task details">
-                <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+              <Button className="-me-1.5" type="button" tabIndex={0} aria-label="Close task details">
+                <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                   <path d="M18 6 6 18"></path>
                   <path d="m6 6 12 12"></path>
                 </svg>
@@ -833,15 +833,15 @@ export function Pattern() {
             </header>
             <Tabs className="flex-1 flex-col gap-0 min-h-0" data-orientation="horizontal" activationDirection="none">
               <TabsList className="border-b gap-5 h-auto justify-start px-4 py-0 shrink-0 w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
-                <TabsTrigger className="after:-bottom-px! flex-none h-full px-0 py-2" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_2b_" compositeItemActive="" aria-controls="base-ui-_r_2d_">
+                <TabsTrigger className="after:-bottom-px! flex-none h-full px-0 py-2" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex={0} role="tab" aria-selected="true" id="base-ui-_r_2b_" compositeItemActive="" aria-controls="base-ui-_r_2d_">
                   {"Settings"}
                 </TabsTrigger>
-                <TabsTrigger className="after:-bottom-px! flex-none h-full px-0 py-2" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2c_">
+                <TabsTrigger className="after:-bottom-px! flex-none h-full px-0 py-2" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_2c_">
                   {"Wiring"}
                 </TabsTrigger>
               </TabsList>
               <div className="flex flex-1 flex-col min-h-0 overflow-y-auto p-4">
-                <TabsContent className="flex flex-col" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_2d_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_2b_">
+                <TabsContent className="flex flex-col" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_2d_" role="tabpanel" tabIndex={0} index="0" aria-labelledby="base-ui-_r_2b_">
                   <FieldGroup className="flex-1">
                     <Field role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="task-title">
@@ -854,7 +854,7 @@ export function Pattern() {
                         {"Service"}
                       </FieldLabel>
                       <Select>
-                      <SelectTrigger className="w-full" type="button" tabIndex="0" id="task-glyph" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                      <SelectTrigger className="w-full" type="button" tabIndex={0} id="task-glyph" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                         <SelectValue>
                           <span className="align-middle gap-2 inline-flex items-center">
                             <span className="[&>svg]:size-4 flex items-center shrink-0">
@@ -868,13 +868,13 @@ export function Pattern() {
                             {"Google Cloud"}
                           </span>
                         </SelectValue>
-                        <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                        <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                           <path d="m6 9 6 6 6-6"></path>
                           {"▼"}
                         </svg>
                       </SelectTrigger>
                       </Select>
-                      <input id="base-ui-_r_2f_-hidden-input" tabIndex="-1" aria-hidden="true" value="google" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                      <input id="base-ui-_r_2f_-hidden-input" tabIndex={-1} aria-hidden="true" value="google" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                     </Field>
                     <Field role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="param-currency">
@@ -889,10 +889,10 @@ export function Pattern() {
                       <Input id="param-approver" type="text" value="finance-lead"></Input>
                     </Field>
                     <Alert className="[&>svg:not([class*=size-])]:size-4 [&>svg]:text-warning bg-warning/4 border border-warning/30 gap-y-0.5 grid grid-cols-[0_1fr] has-[>[data-slot=alert-title]+[data-slot=alert-description]]:[&_[data-slot=alert-action]]:sm:row-end-3 has-[>[data-slot=alert-title]+[data-slot=alert-description]]:[&_svg]:translate-y-0.5 has-[>[data-slot=alert-title]+[data-slot=alert-description]]:items-start has-[>svg]:gap-x-2.5 has-[>svg]:grid-cols-[calc(var(--spacing)*3)_1fr] items-center mt-auto px-3 py-2.5 style-luma:rounded-2xl style-lyra:rounded-none style-maia:rounded-lg style-mira:rounded-lg style-nova:rounded-lg style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-lg text-sm" role="alert">
-                      <svg className="lucide lucide-circle-pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PauseCircleIcon" tabler="IconPlayerPauseFilled" hugeicons="PauseCircleIcon" phosphor="PauseCircleIcon" remixicon="RiPauseCircleLine" aria-hidden="true">
-                        <circle cx="12" cy="12" r="10"></circle>
-                        <line x1="10" x2="10" y1="15" y2="9"></line>
-                        <line x1="14" x2="14" y1="15" y2="9"></line>
+                      <svg className="lucide lucide-circle-pause" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PauseCircleIcon" tabler="IconPlayerPauseFilled" hugeicons="PauseCircleIcon" phosphor="PauseCircleIcon" remixicon="RiPauseCircleLine" aria-hidden="true">
+                        <circle cx={12} cy={12} r={10}></circle>
+                        <line x1={10} x2={10} y1={15} y2={9}></line>
+                        <line x1={14} x2={14} y1={15} y2={9}></line>
                       </svg>
                       <AlertTitle className="col-start-2 font-medium line-clamp-1 min-h-4 tracking-tight">
                         {"Awaiting Approval"}
@@ -904,10 +904,10 @@ export function Pattern() {
             </Tabs>
             <footer className="border-t p-4 shrink-0">
               <div className="gap-3 grid grid-cols-2 w-full">
-                <Button type="button" tabIndex="0">
+                <Button type="button" tabIndex={0}>
                   {"Cancel"}
                 </Button>
-                <Button type="button" disabled="" tabIndex="0" disabled>
+                <Button type="button" disabled="" tabIndex={0} disabled>
                   {"Save task"}
                 </Button>
               </div>

@@ -63,17 +63,17 @@ export function Pattern() {
                   {"Topic"}
                 </FieldLabel>
                 <Select>
-                <SelectTrigger className="w-full" type="button" placeholder="" tabIndex="0" id="contact-3-topic" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" extracted="1">
+                <SelectTrigger className="w-full" type="button" placeholder="" tabIndex={0} id="contact-3-topic" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" extracted="1">
                   <SelectValue placeholder="">
                     {"Choose a topic"}
                   </SelectValue>
-                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                     {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
-                <input tabIndex="-1" aria-hidden="true" value="" name="topic" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                <input tabIndex={-1} aria-hidden="true" value="" name="topic" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
               </Field>
               <Field role="group" data-orientation="vertical">
                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="contact-3-subject">
@@ -87,7 +87,7 @@ export function Pattern() {
                 </FieldLabel>
                 <Textarea className="min-h-28 resize-none" id="contact-3-details" name="details" placeholder="Your message"></Textarea>
               </Field>
-              <Button className="mt-1 w-fit" type="submit" tabIndex="0">
+              <Button className="mt-1 w-fit" type="submit" tabIndex={0}>
                 {"Send Message"}
               </Button>
             </FieldGroup>
@@ -95,7 +95,7 @@ export function Pattern() {
         </div>
         <Card className="h-full overflow-hidden p-0 shadow-none" size="default">
           <CardContent className="bg-[oklch(12%_0.05_255)] flex isolate lg:min-h-full lg:p-12 min-h-[36rem] overflow-hidden p-8 relative sm:p-10 text-[oklch(98%_0.006_252)]">
-            <img className="absolute inset-0 object-cover size-full" alt="" width="640" height="440" decoding="async" src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=640&h=440&q=80" />
+            <img className="absolute inset-0 object-cover size-full" alt="" width={640} height={440} decoding="async" src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&w=640&h=440&q=80" />
             <div className="absolute bg-[oklch(5%_0.03_266_/_36%)] inset-0"></div>
             <div className="absolute bg-[linear-gradient(180deg,oklch(5%_0.03_266_/_82%)_0%,oklch(5%_0.03_266_/_20%)_42%,oklch(5%_0.03_266_/_88%)_100%)] inset-0"></div>
             <div className="absolute bg-[radial-gradient(circle_at_78%_18%,oklch(74%_0.18_215_/_30%),oklch(7%_0.03_266_/_0%)_48%)] inset-0"></div>
@@ -115,9 +115,9 @@ export function Pattern() {
                 <ItemGroup className="gap-3 sm:flex-row sm:flex-wrap" role="list">
                   <Item className="bg-[oklch(98%_0.006_252_/_13%)] focus-visible:bg-[oklch(98%_0.006_252_/_20%)] hover:bg-[oklch(98%_0.006_252_/_20%)] max-w-full text-[oklch(98%_0.006_252)] w-fit" href="mailto:hello@neui.example" aria-label="Email the NeUI contact desk" variant="muted" size="xs">
                     <ItemMedia className="[&_svg]:size-4 bg-transparent size-auto text-[oklch(86%_0.17_222)]" variant="icon" aria-hidden="true">
-                      <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
+                      <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
                         <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                        <rect x={2} y={4} width={20} height={16} rx={2}></rect>
                       </svg>
                     </ItemMedia>
                     <ItemContent className="min-w-0">
@@ -128,7 +128,7 @@ export function Pattern() {
                   </Item>
                   <Item className="bg-[oklch(98%_0.006_252_/_13%)] focus-visible:bg-[oklch(98%_0.006_252_/_20%)] hover:bg-[oklch(98%_0.006_252_/_20%)] max-w-full text-[oklch(98%_0.006_252)] w-fit" href="tel:+14155550184" aria-label="Call the NeUI contact desk" variant="muted" size="xs">
                     <ItemMedia className="[&_svg]:size-4 bg-transparent size-auto text-[oklch(86%_0.17_222)]" variant="icon" aria-hidden="true">
-                      <svg className="lucide lucide-headphones" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Headphones" tabler="IconHeadphones" hugeicons="CustomerSupportIcon" phosphor="HeadphonesIcon" remixicon="RiCustomerService2Line" aria-hidden="true">
+                      <svg className="lucide lucide-headphones" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Headphones" tabler="IconHeadphones" hugeicons="CustomerSupportIcon" phosphor="HeadphonesIcon" remixicon="RiCustomerService2Line" aria-hidden="true">
                         <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
                       </svg>
                     </ItemMedia>

@@ -47,7 +47,7 @@ export function Pattern() {
             <div className="absolute inset-0">
               <div className="duration-300 ease-out motion-reduce:transition-none opacity-100 size-full touch-none transition-opacity" aria-label="Circuit in 3D with every kart. Drag to orbit, right drag to pan, scroll to zoom." role="img" style={{position: "relative", width: "100%", height: "100%", overflow: "hidden", pointerEvents: "auto"}}>
                 <div style={{width: "100%", height: "100%"}}>
-                  <canvas style={{display: "block", width: "892px", height: "609px", touchAction: "none", userSelect: "none"}} data-engine="three.js r186" width="892" height="609" data-camera-controls-version="3.1.2"></canvas>
+                  <canvas style={{display: "block", width: "892px", height: "609px", touchAction: "none", userSelect: "none"}} data-engine="three.js r186" width={892} height={609} data-camera-controls-version="3.1.2"></canvas>
                 </div>
               </div>
             </div>
@@ -70,10 +70,10 @@ export function Pattern() {
                         {"/20"}
                       </span>
                     </span>
-                    <Button type="button" tabIndex="0" aria-label="Pause race" extracted="1">
-                      <svg className="lucide lucide-pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PauseIcon" tabler="IconPlayerPause" hugeicons="PauseIcon" phosphor="PauseIcon" remixicon="RiPauseLine" aria-hidden="true">
-                        <rect x="14" y="3" width="5" height="18" rx="1"></rect>
-                        <rect x="5" y="3" width="5" height="18" rx="1"></rect>
+                    <Button type="button" tabIndex={0} aria-label="Pause race" extracted="1">
+                      <svg className="lucide lucide-pause" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PauseIcon" tabler="IconPlayerPause" hugeicons="PauseIcon" phosphor="PauseIcon" remixicon="RiPauseLine" aria-hidden="true">
+                        <rect x={14} y={3} width={5} height={18} rx={1}></rect>
+                        <rect x={5} y={3} width={5} height={18} rx={1}></rect>
                       </svg>
                     </Button>
                   </div>
@@ -266,32 +266,32 @@ export function Pattern() {
                 </div>
                 <div className="flex gap-2 items-center pointer-events-auto shrink-0">
                   <ToggleGroup className="backdrop-blur-xl bg-white/10 p-0.5" data-orientation="horizontal" aria-orientation="horizontal" role="group" spacing="1" aria-label="Map view" style={{"--gap": "1"}}>
-                    <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-default data-pressed:bg-white data-pressed:hover:bg-white data-pressed:text-zinc-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-transparent hover:text-foreground inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="default" size="default" spacing="1">
+                    <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-default data-pressed:bg-white data-pressed:hover:bg-white data-pressed:text-zinc-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-transparent hover:text-foreground inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex={0} aria-pressed="true" variant="default" size="default" spacing="1">
                       <span className="[text-box:trim-both_cap_alphabetic]">
                         {"3D"}
                       </span>
                     </ToggleGroupItem>
-                    <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-default data-pressed:bg-white data-pressed:hover:bg-white data-pressed:text-zinc-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-transparent hover:text-foreground inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="default" spacing="1">
+                    <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-default data-pressed:bg-white data-pressed:hover:bg-white data-pressed:text-zinc-950 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-transparent hover:text-foreground inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="default" size="default" spacing="1">
                       <span className="[text-box:trim-both_cap_alphabetic]">
                         {"2D"}
                       </span>
                     </ToggleGroupItem>
                   </ToggleGroup>
                   <ButtonGroup role="group" aria-label="Zoom">
-                    <Button type="button" tabIndex="0" aria-label="Zoom out">
-                      <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                    <Button type="button" tabIndex={0} aria-label="Zoom out">
+                      <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                         <path d="M5 12h14"></path>
                       </svg>
                     </Button>
-                    <Button type="button" tabIndex="0" aria-label="Zoom in">
-                      <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                    <Button type="button" tabIndex={0} aria-label="Zoom in">
+                      <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="M12 5v14"></path>
                       </svg>
                     </Button>
                   </ButtonGroup>
-                  <Button type="button" tabIndex="0" aria-label="Reset view">
-                    <svg className="lucide lucide-rotate-ccw" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RotateCcwIcon" tabler="IconRefresh" hugeicons="UndoIcon" phosphor="ArrowCounterClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Reset view">
+                    <svg className="lucide lucide-rotate-ccw" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="RotateCcwIcon" tabler="IconRefresh" hugeicons="UndoIcon" phosphor="ArrowCounterClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
                       <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                       <path d="M3 3v5h5"></path>
                     </svg>

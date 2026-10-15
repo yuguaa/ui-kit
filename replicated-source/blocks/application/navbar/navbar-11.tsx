@@ -25,7 +25,7 @@ export function Pattern() {
             <Item className="bg-primary p-0 size-7 text-primary-foreground" variant="default" size="default">
               <ItemMedia className="size-auto" variant="icon">
                 <svg className="size-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"></path>
                 </svg>
               </ItemMedia>
             </Item>
@@ -40,26 +40,26 @@ export function Pattern() {
         </div>
         <Tabs data-orientation="horizontal" activationDirection="none">
           <TabsList data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
-            <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="">
+            <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex={0} role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="">
               {"Patterns"}
             </TabsTrigger>
-            <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
+            <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_1_">
               {"Tokens"}
             </TabsTrigger>
-            <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
+            <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_2_">
               {"Icons"}
             </TabsTrigger>
-            <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_">
+            <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_3_">
               {"Motion"}
             </TabsTrigger>
           </TabsList>
         </Tabs>
         <div className="flex gap-2 items-center">
           <DropdownMenu>
-          <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-default disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_7_" aria-expanded="false">
+          <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-default disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_7_" aria-expanded="false">
             <svg className="size-4" aria-hidden="true" viewBox="0 0 256 256">
               <path fill="none" d="M0 0h256v256H0z"></path>
-              <path fill="none" stroke="currentColor" strokeWidth="25" strokeLinecap="round" d="M208 128l-80 80M192 40L40 192"></path>
+              <path fill="none" stroke="currentColor" strokeWidth={25} strokeLinecap="round" d="M208 128l-80 80M192 40L40 192"></path>
             </svg>
             <span className="hidden md:inline">
               {"shadcn/ui Tokens"}
@@ -68,7 +68,7 @@ export function Pattern() {
           </DropdownMenu>
           <Separator className="h-4 hidden my-auto sm:block" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
           <DropdownMenu>
-          <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center mx-auto outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open profile for Nick Bold" aria-haspopup="menu" id="base-ui-_r_c_" aria-expanded="false">
+          <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center mx-auto outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Open profile for Nick Bold" aria-haspopup="menu" id="base-ui-_r_c_" aria-expanded="false">
             <Avatar className="rounded-md size-6" size="default">
               <AvatarImage alt="Nick Bold" src="https://images.unsplash.com/photo-1543299750-19d1d6297053?w=96&h=96&dpr=2&q=80"></AvatarImage>
             </Avatar>

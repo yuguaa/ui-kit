@@ -62,8 +62,8 @@ export function Pattern() {
     <div className="bg-background flex flex-col min-h-svh w-full">
       <header className="bg-background border-b border-border flex gap-3 items-center justify-between min-h-14 px-4 shrink-0 sticky top-0 w-full z-20">
         <div className="flex items-center min-w-0">
-          <Button className="-ms-2 size-8" type="button" tabIndex="0" aria-label="Back to purchase orders" extracted="1">
-            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+          <Button className="-ms-2 size-8" type="button" tabIndex={0} aria-label="Back to purchase orders" extracted="1">
+            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
               <path d="M18 6 6 18"></path>
               <path d="m6 6 12 12"></path>
             </svg>
@@ -79,24 +79,24 @@ export function Pattern() {
           </div>
         </div>
         <div className="flex gap-2 items-center shrink-0">
-          <Button className="hidden md:inline-flex" type="button" tabIndex="0">
-            <svg className="lucide lucide-printer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" lucide="PrinterIcon" tabler="IconPrinter" hugeicons="PrinterIcon" phosphor="PrinterIcon" remixicon="RiPrinterLine" aria-hidden="true">
+          <Button className="hidden md:inline-flex" type="button" tabIndex={0}>
+            <svg className="lucide lucide-printer" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" lucide="PrinterIcon" tabler="IconPrinter" hugeicons="PrinterIcon" phosphor="PrinterIcon" remixicon="RiPrinterLine" aria-hidden="true">
               <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
               <path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"></path>
-              <rect x="6" y="14" width="12" height="8" rx="1"></rect>
+              <rect x={6} y={14} width={12} height={8} rx={1}></rect>
             </svg>
             {"Print"}
           </Button>
-          <Button className="hidden sm:inline-flex" type="button" tabIndex="0">
-            <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
+          <Button className="hidden sm:inline-flex" type="button" tabIndex={0}>
+            <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
               <path d="M12 15V3"></path>
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
               <path d="m7 10 5 5 5-5"></path>
             </svg>
             {"Export"}
           </Button>
-          <Button type="button" tabIndex="0">
-            <svg className="lucide lucide-send" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" lucide="SendIcon" tabler="IconSend" hugeicons="SentIcon" phosphor="PaperPlaneTiltIcon" remixicon="RiSendInsLine" aria-hidden="true">
+          <Button type="button" tabIndex={0}>
+            <svg className="lucide lucide-send" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" lucide="SendIcon" tabler="IconSend" hugeicons="SentIcon" phosphor="PaperPlaneTiltIcon" remixicon="RiSendInsLine" aria-hidden="true">
               <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path>
               <path d="m21.854 2.147-10.94 10.939"></path>
             </svg>
@@ -122,7 +122,7 @@ export function Pattern() {
               </CardDescription>
               <CardAction className="flex gap-1.5 items-center self-center">
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-secondary-foreground text-xs transition-shadow">
-                  <svg className="lucide lucide-receipt-text" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ReceiptTextIcon" tabler="IconReceipt" hugeicons="Invoice01Icon" phosphor="ReceiptIcon" remixicon="RiReceiptLine" aria-hidden="true">
+                  <svg className="lucide lucide-receipt-text" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ReceiptTextIcon" tabler="IconReceipt" hugeicons="Invoice01Icon" phosphor="ReceiptIcon" remixicon="RiReceiptLine" aria-hidden="true">
                     <path d="M13 16H8"></path>
                     <path d="M14 8H8"></path>
                     <path d="M16 12H8"></path>
@@ -201,14 +201,14 @@ export function Pattern() {
                           {"Order Date"}
                         </FieldLabel>
                         <Popover>
-                        <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none font-normal group/button inline-flex items-center justify-between outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="button" tabIndex="0" id="po-order-date" aria-label="Choose order date" baseUiClickTrigger="" aria-haspopup="dialog" aria-expanded="false">
+                        <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none font-normal group/button inline-flex items-center justify-between outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="button" tabIndex={0} id="po-order-date" aria-label="Choose order date" baseUiClickTrigger="" aria-haspopup="dialog" aria-expanded="false">
                           <span className="truncate">
                             {"Jun 02, 2026"}
                           </span>
-                          <svg className="lucide lucide-calendar text-muted-foreground/80" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" data-icon="inline-end" aria-hidden="true">
+                          <svg className="lucide lucide-calendar text-muted-foreground/80" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" data-icon="inline-end" aria-hidden="true">
                             <path d="M8 2v4"></path>
                             <path d="M16 2v4"></path>
-                            <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                            <rect width={18} height={18} x={3} y={4} rx={2}></rect>
                             <path d="M3 10h18"></path>
                           </svg>
                         </PopoverTrigger>
@@ -219,14 +219,14 @@ export function Pattern() {
                           {"Expected Date"}
                         </FieldLabel>
                         <Popover>
-                        <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none font-normal group/button inline-flex items-center justify-between outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="button" tabIndex="0" id="po-expected-date" aria-label="Choose expected date" baseUiClickTrigger="" aria-haspopup="dialog" aria-expanded="false">
+                        <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none font-normal group/button inline-flex items-center justify-between outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="button" tabIndex={0} id="po-expected-date" aria-label="Choose expected date" baseUiClickTrigger="" aria-haspopup="dialog" aria-expanded="false">
                           <span className="truncate">
                             {"Jun 19, 2026"}
                           </span>
-                          <svg className="lucide lucide-calendar text-muted-foreground/80" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" data-icon="inline-end" aria-hidden="true">
+                          <svg className="lucide lucide-calendar text-muted-foreground/80" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" data-icon="inline-end" aria-hidden="true">
                             <path d="M8 2v4"></path>
                             <path d="M16 2v4"></path>
-                            <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+                            <rect width={18} height={18} x={3} y={4} rx={2}></rect>
                             <path d="M3 10h18"></path>
                           </svg>
                         </PopoverTrigger>
@@ -237,34 +237,34 @@ export function Pattern() {
                           {"Destination"}
                         </FieldLabel>
                         <Select>
-                        <SelectTrigger className="w-full" type="button" tabIndex="0" id="po-warehouse" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                        <SelectTrigger className="w-full" type="button" tabIndex={0} id="po-warehouse" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                           <SelectValue>
                             {"Main Warehouse"}
                           </SelectValue>
-                          <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                          <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
                             {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
-                        <input id="base-ui-_r_7_-hidden-input" tabIndex="-1" aria-hidden="true" value="main" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input id="base-ui-_r_7_-hidden-input" tabIndex={-1} aria-hidden="true" value="main" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </Field>
                       <Field role="group" data-orientation="vertical">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="po-costing">
                           {"Costing"}
                         </FieldLabel>
                         <Select>
-                        <SelectTrigger className="w-full" type="button" tabIndex="0" id="po-costing" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                        <SelectTrigger className="w-full" type="button" tabIndex={0} id="po-costing" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                           <SelectValue>
                             {"Average cost"}
                           </SelectValue>
-                          <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                          <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
                             {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
-                        <input id="base-ui-_r_a_-hidden-input" tabIndex="-1" aria-hidden="true" value="average" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input id="base-ui-_r_a_-hidden-input" tabIndex={-1} aria-hidden="true" value="average" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </Field>
                     </FieldGroup>
                   </section>
@@ -285,8 +285,8 @@ export function Pattern() {
                         </p>
                       </div>
                       <div className="shrink-0">
-                        <Button type="button" tabIndex="0">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+                        <Button type="button" tabIndex={0}>
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
@@ -324,27 +324,27 @@ export function Pattern() {
                             <TableCell className="align-middle">
                               <div className="flex gap-3 items-center min-w-0">
                                 <ItemMedia className="size-11" variant="image">
-                                  <img className="object-cover size-full" alt="Auralite Studio Pro" width="44" height="44" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=900&q=80" />
+                                  <img className="object-cover size-full" alt="Auralite Studio Pro" width={44} height={44} loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=900&q=80" />
                                 </ItemMedia>
                                 <Select>
-                                <SelectTrigger className="flex-1 min-w-0" type="button" tabIndex="0" id="base-ui-_r_d_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Item for line-1">
+                                <SelectTrigger className="flex-1 min-w-0" type="button" tabIndex={0} id="base-ui-_r_d_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Item for line-1">
                                   <SelectValue>
                                     {"Auralite Studio Pro"}
                                   </SelectValue>
-                                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                     {"▼"}
                                   </svg>
                                 </SelectTrigger>
                                 </Select>
-                                <input id="base-ui-_r_d_-hidden-input" tabIndex="-1" aria-hidden="true" value="auralite-studio-pro" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <input id="base-ui-_r_d_-hidden-input" tabIndex={-1} aria-hidden="true" value="auralite-studio-pro" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </div>
                             </TableCell>
                             <TableCell className="align-middle tabular-nums text-right">
                               {"120"}
                             </TableCell>
                             <TableCell className="align-middle">
-                              <Input className="w-24" id="base-ui-_r_g_" min="0" max="120" step="1" aria-label="Received quantity for Auralite Studio Pro" type="number" value="120"></Input>
+                              <Input className="w-24" id="base-ui-_r_g_" min={0} max={120} step={1} aria-label="Received quantity for Auralite Studio Pro" type="number" value="120"></Input>
                             </TableCell>
                             <TableCell className="align-middle">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -356,7 +356,7 @@ export function Pattern() {
                                 <InputGroupAddon role="group" data-align="inline-start">
                                   {"$"}
                                 </InputGroupAddon>
-                                <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_h_" min="0" step="1" aria-label="Unit cost for Auralite Studio Pro" type="number" value="64" />
+                                <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_h_" min={0} step={1} aria-label="Unit cost for Auralite Studio Pro" type="number" value="64" />
                               </InputGroup>
                             </TableCell>
                             <TableCell className="align-middle font-medium tabular-nums text-right">
@@ -366,8 +366,8 @@ export function Pattern() {
                             </TableCell>
                             <TableCell className="align-middle">
                               <AlertDialog>
-                              <AlertDialogTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Remove Auralite Studio Pro" baseUiClickTrigger="" id="base-ui-_r_j_" aria-haspopup="dialog" aria-expanded="false">
-                                <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                              <AlertDialogTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Remove Auralite Studio Pro" baseUiClickTrigger="" id="base-ui-_r_j_" aria-haspopup="dialog" aria-expanded="false">
+                                <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                                   <path d="M10 11v6"></path>
                                   <path d="M14 11v6"></path>
                                   <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -382,27 +382,27 @@ export function Pattern() {
                             <TableCell className="align-middle">
                               <div className="flex gap-3 items-center min-w-0">
                                 <ItemMedia className="size-11" variant="image">
-                                  <img className="object-cover size-full" alt="Countertop Wireless Max" width="44" height="44" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1693895592595-9171d91a0f22?auto=format&fit=crop&w=900&q=80" />
+                                  <img className="object-cover size-full" alt="Countertop Wireless Max" width={44} height={44} loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1693895592595-9171d91a0f22?auto=format&fit=crop&w=900&q=80" />
                                 </ItemMedia>
                                 <Select>
-                                <SelectTrigger className="flex-1 min-w-0" type="button" tabIndex="0" id="base-ui-_r_k_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Item for line-2">
+                                <SelectTrigger className="flex-1 min-w-0" type="button" tabIndex={0} id="base-ui-_r_k_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Item for line-2">
                                   <SelectValue>
                                     {"Countertop Wireless Max"}
                                   </SelectValue>
-                                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                     {"▼"}
                                   </svg>
                                 </SelectTrigger>
                                 </Select>
-                                <input id="base-ui-_r_k_-hidden-input" tabIndex="-1" aria-hidden="true" value="countertop-wireless-max" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <input id="base-ui-_r_k_-hidden-input" tabIndex={-1} aria-hidden="true" value="countertop-wireless-max" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </div>
                             </TableCell>
                             <TableCell className="align-middle tabular-nums text-right">
                               {"80"}
                             </TableCell>
                             <TableCell className="align-middle">
-                              <Input className="w-24" id="base-ui-_r_n_" min="0" max="80" step="1" aria-label="Received quantity for Countertop Wireless Max" type="number" value="40"></Input>
+                              <Input className="w-24" id="base-ui-_r_n_" min={0} max={80} step={1} aria-label="Received quantity for Countertop Wireless Max" type="number" value="40"></Input>
                             </TableCell>
                             <TableCell className="align-middle">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-destructive-foreground text-xs transition-shadow">
@@ -414,7 +414,7 @@ export function Pattern() {
                                 <InputGroupAddon role="group" data-align="inline-start">
                                   {"$"}
                                 </InputGroupAddon>
-                                <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_o_" min="0" step="1" aria-label="Unit cost for Countertop Wireless Max" type="number" value="58" />
+                                <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_o_" min={0} step={1} aria-label="Unit cost for Countertop Wireless Max" type="number" value="58" />
                               </InputGroup>
                             </TableCell>
                             <TableCell className="align-middle font-medium tabular-nums text-right">
@@ -424,8 +424,8 @@ export function Pattern() {
                             </TableCell>
                             <TableCell className="align-middle">
                               <AlertDialog>
-                              <AlertDialogTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Remove Countertop Wireless Max" baseUiClickTrigger="" id="base-ui-_r_q_" aria-haspopup="dialog" aria-expanded="false">
-                                <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                              <AlertDialogTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Remove Countertop Wireless Max" baseUiClickTrigger="" id="base-ui-_r_q_" aria-haspopup="dialog" aria-expanded="false">
+                                <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                                   <path d="M10 11v6"></path>
                                   <path d="M14 11v6"></path>
                                   <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -440,27 +440,27 @@ export function Pattern() {
                             <TableCell className="align-middle">
                               <div className="flex gap-3 items-center min-w-0">
                                 <ItemMedia className="size-11" variant="image">
-                                  <img className="object-cover size-full" alt="Soft Black Studio" width="44" height="44" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1753557346714-5bbe6b416861?auto=format&fit=crop&w=900&q=80" />
+                                  <img className="object-cover size-full" alt="Soft Black Studio" width={44} height={44} loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1753557346714-5bbe6b416861?auto=format&fit=crop&w=900&q=80" />
                                 </ItemMedia>
                                 <Select>
-                                <SelectTrigger className="flex-1 min-w-0" type="button" tabIndex="0" id="base-ui-_r_r_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Item for line-3">
+                                <SelectTrigger className="flex-1 min-w-0" type="button" tabIndex={0} id="base-ui-_r_r_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Item for line-3">
                                   <SelectValue>
                                     {"Soft Black Studio"}
                                   </SelectValue>
-                                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                     {"▼"}
                                   </svg>
                                 </SelectTrigger>
                                 </Select>
-                                <input id="base-ui-_r_r_-hidden-input" tabIndex="-1" aria-hidden="true" value="soft-black-studio" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <input id="base-ui-_r_r_-hidden-input" tabIndex={-1} aria-hidden="true" value="soft-black-studio" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </div>
                             </TableCell>
                             <TableCell className="align-middle tabular-nums text-right">
                               {"60"}
                             </TableCell>
                             <TableCell className="align-middle">
-                              <Input className="w-24" id="base-ui-_r_u_" min="0" max="60" step="1" aria-label="Received quantity for Soft Black Studio" type="number" value="0"></Input>
+                              <Input className="w-24" id="base-ui-_r_u_" min={0} max={60} step={1} aria-label="Received quantity for Soft Black Studio" type="number" value="0"></Input>
                             </TableCell>
                             <TableCell className="align-middle">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-destructive-foreground text-xs transition-shadow">
@@ -472,7 +472,7 @@ export function Pattern() {
                                 <InputGroupAddon role="group" data-align="inline-start">
                                   {"$"}
                                 </InputGroupAddon>
-                                <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_v_" min="0" step="1" aria-label="Unit cost for Soft Black Studio" type="number" value="88" />
+                                <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_v_" min={0} step={1} aria-label="Unit cost for Soft Black Studio" type="number" value="88" />
                               </InputGroup>
                             </TableCell>
                             <TableCell className="align-middle font-medium tabular-nums text-right">
@@ -482,8 +482,8 @@ export function Pattern() {
                             </TableCell>
                             <TableCell className="align-middle">
                               <AlertDialog>
-                              <AlertDialogTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Remove Soft Black Studio" baseUiClickTrigger="" id="base-ui-_r_11_" aria-haspopup="dialog" aria-expanded="false">
-                                <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                              <AlertDialogTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Remove Soft Black Studio" baseUiClickTrigger="" id="base-ui-_r_11_" aria-haspopup="dialog" aria-expanded="false">
+                                <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                                   <path d="M10 11v6"></path>
                                   <path d="M14 11v6"></path>
                                   <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -498,27 +498,27 @@ export function Pattern() {
                             <TableCell className="align-middle">
                               <div className="flex gap-3 items-center min-w-0">
                                 <ItemMedia className="size-11" variant="image">
-                                  <img className="object-cover size-full" alt="Matte White Wireless" width="44" height="44" loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1625245488600-f03fef636a3c?auto=format&fit=crop&w=900&q=80" />
+                                  <img className="object-cover size-full" alt="Matte White Wireless" width={44} height={44} loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1625245488600-f03fef636a3c?auto=format&fit=crop&w=900&q=80" />
                                 </ItemMedia>
                                 <Select>
-                                <SelectTrigger className="flex-1 min-w-0" type="button" tabIndex="0" id="base-ui-_r_12_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Item for line-4">
+                                <SelectTrigger className="flex-1 min-w-0" type="button" tabIndex={0} id="base-ui-_r_12_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Item for line-4">
                                   <SelectValue>
                                     {"Matte White Wireless"}
                                   </SelectValue>
-                                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                     {"▼"}
                                   </svg>
                                 </SelectTrigger>
                                 </Select>
-                                <input id="base-ui-_r_12_-hidden-input" tabIndex="-1" aria-hidden="true" value="matte-white-wireless" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                <input id="base-ui-_r_12_-hidden-input" tabIndex={-1} aria-hidden="true" value="matte-white-wireless" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               </div>
                             </TableCell>
                             <TableCell className="align-middle tabular-nums text-right">
                               {"96"}
                             </TableCell>
                             <TableCell className="align-middle">
-                              <Input className="w-24" id="base-ui-_r_15_" min="0" max="96" step="1" aria-label="Received quantity for Matte White Wireless" type="number" value="96"></Input>
+                              <Input className="w-24" id="base-ui-_r_15_" min={0} max={96} step={1} aria-label="Received quantity for Matte White Wireless" type="number" value="96"></Input>
                             </TableCell>
                             <TableCell className="align-middle">
                               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
@@ -530,7 +530,7 @@ export function Pattern() {
                                 <InputGroupAddon role="group" data-align="inline-start">
                                   {"$"}
                                 </InputGroupAddon>
-                                <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_16_" min="0" step="1" aria-label="Unit cost for Matte White Wireless" type="number" value="49" />
+                                <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_16_" min={0} step={1} aria-label="Unit cost for Matte White Wireless" type="number" value="49" />
                               </InputGroup>
                             </TableCell>
                             <TableCell className="align-middle font-medium tabular-nums text-right">
@@ -540,8 +540,8 @@ export function Pattern() {
                             </TableCell>
                             <TableCell className="align-middle">
                               <AlertDialog>
-                              <AlertDialogTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Remove Matte White Wireless" baseUiClickTrigger="" id="base-ui-_r_18_" aria-haspopup="dialog" aria-expanded="false">
-                                <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                              <AlertDialogTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Remove Matte White Wireless" baseUiClickTrigger="" id="base-ui-_r_18_" aria-haspopup="dialog" aria-expanded="false">
+                                <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                                   <path d="M10 11v6"></path>
                                   <path d="M14 11v6"></path>
                                   <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -564,8 +564,8 @@ export function Pattern() {
                 <div className="flex flex-col gap-3 min-w-0">
                   <div className="flex flex-wrap gap-2 items-center">
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-info/10 border border-info/15 dark:bg-info/15 dark:border-info/25 dark:text-info disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-info-foreground text-xs transition-shadow">
-                      <svg className="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
-                        <circle cx="12" cy="12" r="10"></circle>
+                      <svg className="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
+                        <circle cx={12} cy={12} r={10}></circle>
                         <path d="m9 12 2 2 4-4"></path>
                       </svg>
                       {"$14,704.00 received"}
@@ -603,7 +603,7 @@ export function Pattern() {
                       <InputGroupAddon role="group" data-align="inline-start">
                         {"$"}
                       </InputGroupAddon>
-                      <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 font-semibold min-w-0 outline-none placeholder:text-muted-foreground tabular-nums text-right w-full" id="base-ui-_r_19_" min="0" step="10" aria-label="Freight cost" type="number" value="240" />
+                      <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 font-semibold min-w-0 outline-none placeholder:text-muted-foreground tabular-nums text-right w-full" id="base-ui-_r_19_" min={0} step={10} aria-label="Freight cost" type="number" value="240" />
                     </InputGroup>
                   </div>
                   <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
@@ -753,8 +753,8 @@ export function Pattern() {
               <Textarea aria-label="Add receiving note" placeholder="Add a receiving note...">
                 {"Check pallet seal before close."}
               </Textarea>
-              <Button className="self-end" type="button" tabIndex="0">
-                <svg className="lucide lucide-message-square" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" lucide="MessageSquareIcon" tabler="IconMessageDots" hugeicons="Message02Icon" phosphor="ChatIcon" remixicon="RiChat4Line" aria-hidden="true">
+              <Button className="self-end" type="button" tabIndex={0}>
+                <svg className="lucide lucide-message-square" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" lucide="MessageSquareIcon" tabler="IconMessageDots" hugeicons="Message02Icon" phosphor="ChatIcon" remixicon="RiChat4Line" aria-hidden="true">
                   <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                 </svg>
                 {"Add note"}

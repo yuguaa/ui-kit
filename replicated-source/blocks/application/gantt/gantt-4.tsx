@@ -41,23 +41,23 @@ export function Pattern() {
       <Card className="flex-1 gap-0! min-h-0 p-0! w-full" size="default">
         <Gantt className="flex-1">
           <GanttNav>
-            <GanttNavToday className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" id="base-ui-_r_1_" baseUiTooltipTrigger="">
+            <GanttNavToday className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} id="base-ui-_r_1_" baseUiTooltipTrigger="">
               {"Today"}
             </GanttNavToday>
-            <GanttScaleSwitcher className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Select view" id="base-ui-_r_6_" baseUiTooltipTrigger="" aria-haspopup="menu" aria-expanded="false">
+            <GanttScaleSwitcher className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Select view" id="base-ui-_r_6_" baseUiTooltipTrigger="" aria-haspopup="menu" aria-expanded="false">
               {"Month"}
-              <svg className="lucide lucide-chevron-down opacity-60 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+              <svg className="lucide lucide-chevron-down opacity-60 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
               </svg>
             </GanttScaleSwitcher>
             <div className="flex gap-1 items-center">
-              <GanttNavPrev className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Previous" id="base-ui-_r_a_" baseUiTooltipTrigger="">
-                <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine" aria-hidden="true">
+              <GanttNavPrev className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Previous" id="base-ui-_r_a_" baseUiTooltipTrigger="">
+                <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine" aria-hidden="true">
                   <path d="m15 18-6-6 6-6"></path>
                 </svg>
               </GanttNavPrev>
-              <GanttNavNext className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Next" id="base-ui-_r_c_" baseUiTooltipTrigger="">
-                <svg className="lucide lucide-chevron-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+              <GanttNavNext className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Next" id="base-ui-_r_c_" baseUiTooltipTrigger="">
+                <svg className="lucide lucide-chevron-right size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                   <path d="m9 18 6-6-6-6"></path>
                 </svg>
               </GanttNavNext>
@@ -68,15 +68,15 @@ export function Pattern() {
             <div className="grow"></div>
             <GanttToolbar>
               <Popover>
-              <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_e_" aria-haspopup="dialog" aria-expanded="false">
-                <svg className="lucide lucide-funnel size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" aria-hidden="true">
+              <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_e_" aria-haspopup="dialog" aria-expanded="false">
+                <svg className="lucide lucide-funnel size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" aria-hidden="true">
                   <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                 </svg>
                 {"Filter"}
               </PopoverTrigger>
               </Popover>
-              <Button type="button" tabIndex="0">
-                <svg className="lucide lucide-plus size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+              <Button type="button" tabIndex={0}>
+                <svg className="lucide lucide-plus size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
@@ -88,7 +88,7 @@ export function Pattern() {
             <div className="flex flex-1 min-h-0 relative">
               <div className="h-full relative shrink-0" style={{width: "488px"}}>
                 <ScrollArea className="[&>[data-orientation=vertical]]:hidden h-full" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}} hasOverflowY="" overflowYEnd="">
-                  <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_f_-viewport" tabIndex="0" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "189px"}} data-has-overflow-y="" data-overflow-y-end="">
+                  <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_f_-viewport" tabIndex={0} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "189px"}} data-has-overflow-y="" data-overflow-y-end="">
                     <div role="presentation" style={{minWidth: "fit-content"}} data-has-overflow-y="" data-overflow-y-end="">
                       <div className="flex flex-col min-h-full min-w-full pb-2.5 w-max">
                         <div className="bg-background border-b border-b-transparent box-content h-16 shrink-0 sticky top-0 z-30">
@@ -113,12 +113,12 @@ export function Pattern() {
                             </div>
                             <div className="before:-start-5 before:absolute before:bg-linear-to-l before:from-background before:inset-y-0 before:pointer-events-none before:to-transparent before:w-5 bg-background end-0 flex h-full items-center pe-2.5 ps-1.5 rtl:before:bg-linear-to-r shrink-0 sticky z-10">
                               <DropdownMenu>
-                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Show or hide columns" aria-haspopup="menu" id="base-ui-_r_j_" aria-expanded="false">
-                                <svg className="lucide lucide-settings-2 lucide-settings2 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Settings2Icon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
+                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Show or hide columns" aria-haspopup="menu" id="base-ui-_r_j_" aria-expanded="false">
+                                <svg className="lucide lucide-settings-2 lucide-settings2 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Settings2Icon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
                                   <path d="M14 17H5"></path>
                                   <path d="M19 7h-9"></path>
-                                  <circle cx="17" cy="17" r="3"></circle>
-                                  <circle cx="7" cy="7" r="3"></circle>
+                                  <circle cx={17} cy={17} r={3}></circle>
+                                  <circle cx={7} cy={7} r={3}></circle>
                                 </svg>
                               </DropdownMenuTrigger>
                               </DropdownMenu>
@@ -132,8 +132,8 @@ export function Pattern() {
                                 <div className="flex items-center min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <span className="shrink-0" aria-hidden="true" style={{width: "0rem"}}></span>
                                   <span className="flex items-center justify-start me-1 shrink-0 w-5">
-                                    <Button className="aria-expanded:bg-transparent! aria-expanded:text-muted-foreground! hover:text-foreground! size-5! text-muted-foreground" type="button" tabIndex="0" aria-expanded="true" aria-label="Experience">
-                                      <svg className="lucide lucide-chevron-right rotate-90 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                                    <Button className="aria-expanded:bg-transparent! aria-expanded:text-muted-foreground! hover:text-foreground! size-5! text-muted-foreground" type="button" tabIndex={0} aria-expanded="true" aria-label="Experience">
+                                      <svg className="lucide lucide-chevron-right rotate-90 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                         <path d="m9 18 6-6-6-6"></path>
                                       </svg>
                                     </Button>
@@ -285,8 +285,8 @@ export function Pattern() {
                                 <div className="flex items-center min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <span className="shrink-0" aria-hidden="true" style={{width: "0rem"}}></span>
                                   <span className="flex items-center justify-start me-1 shrink-0 w-5">
-                                    <Button className="aria-expanded:bg-transparent! aria-expanded:text-muted-foreground! hover:text-foreground! size-5! text-muted-foreground" type="button" tabIndex="0" aria-expanded="true" aria-label="Platform">
-                                      <svg className="lucide lucide-chevron-right rotate-90 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                                    <Button className="aria-expanded:bg-transparent! aria-expanded:text-muted-foreground! hover:text-foreground! size-5! text-muted-foreground" type="button" tabIndex={0} aria-expanded="true" aria-label="Platform">
+                                      <svg className="lucide lucide-chevron-right rotate-90 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                         <path d="m9 18 6-6-6-6"></path>
                                       </svg>
                                     </Button>
@@ -438,8 +438,8 @@ export function Pattern() {
                                 <div className="flex items-center min-w-0 w-full" style={{height: "3.5rem"}}>
                                   <span className="shrink-0" aria-hidden="true" style={{width: "0rem"}}></span>
                                   <span className="flex items-center justify-start me-1 shrink-0 w-5">
-                                    <Button className="aria-expanded:bg-transparent! aria-expanded:text-muted-foreground! hover:text-foreground! size-5! text-muted-foreground" type="button" tabIndex="0" aria-expanded="true" aria-label="Insights">
-                                      <svg className="lucide lucide-chevron-right rotate-90 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                                    <Button className="aria-expanded:bg-transparent! aria-expanded:text-muted-foreground! hover:text-foreground! size-5! text-muted-foreground" type="button" tabIndex={0} aria-expanded="true" aria-label="Insights">
+                                      <svg className="lucide lucide-chevron-right rotate-90 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                         <path d="m9 18 6-6-6-6"></path>
                                       </svg>
                                     </Button>
@@ -559,29 +559,29 @@ export function Pattern() {
                 </ScrollArea>
                 <div className="absolute bg-background border-t border-t-border bottom-0 h-4 inset-x-0 pointer-events-none" aria-hidden="true"></div>
               </div>
-              <div className="after:-end-1 after:-start-1 after:absolute after:inset-y-0 bg-border cursor-col-resize data-resizing:bg-primary focus-visible:ring-2 focus-visible:ring-ring/50 group/gantt-splitter hover:bg-primary/60 outline-none relative shrink-0 touch-none w-px z-30" role="separator" aria-orientation="vertical" aria-label="Resize panel" aria-valuenow="488" aria-valuemin="260" aria-valuemax="600" tabIndex="0">
+              <div className="after:-end-1 after:-start-1 after:absolute after:inset-y-0 bg-border cursor-col-resize data-resizing:bg-primary focus-visible:ring-2 focus-visible:ring-ring/50 group/gantt-splitter hover:bg-primary/60 outline-none relative shrink-0 touch-none w-px z-30" role="separator" aria-orientation="vertical" aria-label="Resize panel" aria-valuenow="488" aria-valuemin="260" aria-valuemax="600" tabIndex={0}>
                 <span className="-translate-x-1/2 -translate-y-1/2 absolute bg-primary/60 duration-150 group-data-resizing/gantt-splitter:bg-primary group-data-resizing/gantt-splitter:opacity-100 group-focus-visible/gantt-splitter:opacity-100 group-hover/gantt-splitter:opacity-100 h-6 left-1/2 opacity-0 rounded-full top-1/2 transition-opacity w-0.75" aria-hidden="true"></span>
               </div>
               <div className="flex-1 h-full min-w-0 relative">
                 <div className="absolute bg-background border bottom-5 duration-200 end-[calc(0.75rem+var(--gantt-zoom-shift,0px))] flex flex-col rounded-md shadow-sm transition-[inset-inline-end] z-40" style={{"--gantt-zoom-shift": "0px"}}>
                   <Tooltip>
-                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-disabled:cursor-not-allowed aria-disabled:hover:bg-transparent aria-disabled:opacity-50 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none rounded-b-none select-none shrink-0 size-5! text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Zoom in" id="base-ui-_r_22_" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-plus size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-disabled:cursor-not-allowed aria-disabled:hover:bg-transparent aria-disabled:opacity-50 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none rounded-b-none select-none shrink-0 size-5! text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Zoom in" id="base-ui-_r_22_" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-plus size-3" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="M12 5v14"></path>
                     </svg>
                   </TooltipTrigger>
                   </Tooltip>
                   <Tooltip>
-                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-disabled:cursor-not-allowed aria-disabled:hover:bg-transparent aria-disabled:opacity-50 border-t cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none rounded-t-none select-none shrink-0 size-5! text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Zoom out" id="base-ui-_r_24_" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-minus size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-disabled:cursor-not-allowed aria-disabled:hover:bg-transparent aria-disabled:opacity-50 border-t cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none rounded-t-none select-none shrink-0 size-5! text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Zoom out" id="base-ui-_r_24_" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-minus size-3" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                       <path d="M5 12h14"></path>
                     </svg>
                   </TooltipTrigger>
                   </Tooltip>
                 </div>
                 <ScrollArea className="[&>[data-orientation=vertical]]:bottom-4! [&>[data-orientation=vertical]]:h-auto! [&>[data-orientation=vertical]]:top-[65px]! h-full" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "16px", "--scroll-area-corner-width": "10px"}} hasOverflowX="" hasOverflowY="" overflowXStart="" overflowXEnd="" overflowYEnd="">
-                  <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_25_-viewport" tabIndex="0" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "69px", "--scroll-area-overflow-x-end": "1156px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "189px"}} data-has-overflow-x="" data-has-overflow-y="" data-overflow-x-start="" data-overflow-x-end="" data-overflow-y-end="">
+                  <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_25_-viewport" tabIndex={0} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "69px", "--scroll-area-overflow-x-end": "1156px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "189px"}} data-has-overflow-x="" data-has-overflow-y="" data-overflow-x-start="" data-overflow-x-end="" data-overflow-y-end="">
                     <div className="flex flex-col min-h-full" role="presentation" style={{minWidth: "fit-content"}} data-has-overflow-x="" data-has-overflow-y="" data-overflow-x-start="" data-overflow-x-end="" data-overflow-y-end="">
                       <div className="flex flex-col grow min-h-full min-w-full pb-2.5 w-max">
                         <div className="bg-background border-b shrink-0 sticky top-0 z-30" style={{minWidth: "124rem"}}>
@@ -1016,7 +1016,7 @@ export function Pattern() {
                                     <span className="bg-destructive shrink-0 w-0.5" aria-hidden="true"></span>
                                     <div className="flex flex-1 flex-col gap-0.5 justify-center min-w-0 pe-1 py-0.5">
                                       <div className="flex gap-1.5 items-center min-w-0">
-                                        <svg className="lucide lucide-triangle-alert shrink-0 size-3.5 text-destructive" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
+                                        <svg className="lucide lucide-triangle-alert shrink-0 size-3.5 text-destructive" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
                                           <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
                                           <path d="M12 9v4"></path>
                                           <path d="M12 17h.01"></path>
@@ -1276,7 +1276,7 @@ export function Pattern() {
                                     <span className="bg-muted-foreground/50 shrink-0 w-0.5" aria-hidden="true"></span>
                                     <div className="flex flex-1 flex-col gap-0.5 justify-center min-w-0 pe-1 py-0.5">
                                       <div className="flex gap-1.5 items-center min-w-0">
-                                        <svg className="lucide lucide-check shrink-0 size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                                        <svg className="lucide lucide-check shrink-0 size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                           <path d="M20 6 9 17l-5-5"></path>
                                         </svg>
                                         <span className="font-medium truncate">

@@ -32,7 +32,7 @@ export function Pattern() {
                 {"Manage source systems for automation, scheduling, support, and AI workflows."}
               </p>
             </div>
-            <Button className="sm:w-auto w-full" type="button" tabIndex="0" extracted="1">
+            <Button className="sm:w-auto w-full" type="button" tabIndex={0} extracted="1">
               {"Build Connector"}
             </Button>
           </div>
@@ -54,16 +54,16 @@ export function Pattern() {
                         <ItemMedia className="self-center! size-auto translate-y-0!" variant="icon">
                           <svg className="block size-5" aria-hidden="true" viewBox="0 0 109 113" fill="none">
                             <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint0_linear)"></path>
-                            <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity="0.2"></path>
+                            <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity={0.2}></path>
                             <path d="M45.317 2.07103C48.1765 -1.53037 53.9745 0.442937 54.0434 5.041L54.4849 72.2922H9.83113C1.64038 72.2922 -2.92775 62.8321 2.1655 56.4175L45.317 2.07103Z" fill="#3ECF8E"></path>
                             <defs>
-                              <lineargradient id="supabase-paint0_linear" x1="53.9738" y1="54.974" x2="94.1635" y2="71.8295" gradientUnits="userSpaceOnUse">
+                              <lineargradient id="supabase-paint0_linear" x1={53.9738} y1={54.974} x2={94.1635} y2={71.8295} gradientUnits="userSpaceOnUse">
                                 <stop stopColor="#249361"></stop>
-                                <stop offset="1" stopColor="#3ECF8E"></stop>
+                                <stop offset={1} stopColor="#3ECF8E"></stop>
                               </lineargradient>
-                              <lineargradient id="supabase-paint1_linear" x1="36.1558" y1="30.578" x2="54.4844" y2="65.0806" gradientUnits="userSpaceOnUse">
+                              <lineargradient id="supabase-paint1_linear" x1={36.1558} y1={30.578} x2={54.4844} y2={65.0806} gradientUnits="userSpaceOnUse">
                                 <stop></stop>
-                                <stop offset="1" stopOpacity="0"></stop>
+                                <stop offset={1} stopOpacity={0}></stop>
                               </lineargradient>
                             </defs>
                           </svg>
@@ -84,7 +84,7 @@ export function Pattern() {
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="gap-2 justify-end ml-auto shrink-0">
-                      <Button type="button" tabIndex="0">
+                      <Button type="button" tabIndex={0}>
                         {"Configure"}
                       </Button>
                     </ItemActions>
@@ -121,7 +121,7 @@ export function Pattern() {
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="gap-2 justify-end ml-auto shrink-0">
-                      <Button type="button" tabIndex="0">
+                      <Button type="button" tabIndex={0}>
                         {"Configure"}
                       </Button>
                     </ItemActions>
@@ -153,7 +153,7 @@ export function Pattern() {
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="gap-2 justify-end ml-auto shrink-0">
-                      <Button type="button" tabIndex="0">
+                      <Button type="button" tabIndex={0}>
                         {"Configure"}
                       </Button>
                     </ItemActions>
@@ -178,7 +178,7 @@ export function Pattern() {
                             </g>
                             <defs>
                               <clippath id="clip0_5072_3766">
-                                <rect width="512" height="512" fill="white"></rect>
+                                <rect width={512} height={512} fill="white"></rect>
                               </clippath>
                             </defs>
                           </svg>
@@ -199,7 +199,7 @@ export function Pattern() {
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="gap-2 justify-end ml-auto shrink-0">
-                      <Button type="button" tabIndex="0">
+                      <Button type="button" tabIndex={0}>
                         {"Install"}
                       </Button>
                     </ItemActions>
@@ -238,7 +238,7 @@ export function Pattern() {
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="gap-2 justify-end ml-auto shrink-0">
-                      <Button type="button" tabIndex="0">
+                      <Button type="button" tabIndex={0}>
                         {"Install"}
                       </Button>
                     </ItemActions>
@@ -277,7 +277,7 @@ export function Pattern() {
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="gap-2 justify-end ml-auto shrink-0">
-                      <Button type="button" tabIndex="0">
+                      <Button type="button" tabIndex={0}>
                         {"Configure"}
                       </Button>
                     </ItemActions>
@@ -309,7 +309,7 @@ export function Pattern() {
                       </ItemDescription>
                     </ItemContent>
                     <ItemActions className="gap-2 justify-end ml-auto shrink-0">
-                      <Button type="button" tabIndex="0">
+                      <Button type="button" tabIndex={0}>
                         {"Install"}
                       </Button>
                     </ItemActions>

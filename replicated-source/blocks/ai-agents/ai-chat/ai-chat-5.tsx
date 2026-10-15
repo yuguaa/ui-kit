@@ -45,8 +45,8 @@ export function Pattern() {
             <div className="[&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent cn-empty-media cn-empty-media-icon flex items-center justify-center shrink-0 size-auto" data-variant="icon">
               <Item className="bg-primary p-0 size-10 text-primary-foreground" variant="default" size="default" aria-hidden="true">
                 <ItemMedia className="size-auto" variant="icon">
-                  <svg className="size-5" width="50" height="50" viewBox="25.668 25.1352 49.6644 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="70.634" cy="29.8334" r="4.69799" fill="currentColor"></circle>
+                  <svg className="size-5" width={50} height={50} viewBox="25.668 25.1352 49.6644 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx={70.634} cy={29.8334} r={4.69799} fill="currentColor"></circle>
                     <path fillRule="evenodd" clipRule="evenodd" d="M25.668 57.0144V29.8332C25.668 27.2386 27.7713 25.1352 30.366 25.1352C32.9606 25.1352 35.0639 27.2386 35.0639 29.8332V57.0144C35.0639 61.833 38.9702 65.7392 43.7888 65.7392H57.2116C62.0302 65.7392 65.9364 61.833 65.9364 57.0144V43.7258C65.9364 41.1312 68.0398 39.0278 70.6344 39.0278C73.229 39.0278 75.3324 41.1312 75.3324 43.7258V57.0144C75.3324 67.0222 67.2194 75.1352 57.2116 75.1352H43.7888C33.7809 75.1352 25.668 67.0222 25.668 57.0144Z" fill="currentColor"></path>
                   </svg>
                 </ItemMedia>
@@ -67,28 +67,28 @@ export function Pattern() {
                 <textarea className="cn-input-group-textarea cn-textarea disabled:cursor-not-allowed disabled:opacity-50 field-sizing-content flex flex-1 max-h-40 min-h-16 outline-none placeholder:text-muted-foreground resize-none w-full" id="ai-chat-5-composer" placeholder="Catch me up on the 3.4 release since Monday"></textarea>
                 <InputGroupAddon className="gap-1" role="group" data-align="block-end">
                   <DropdownMenu>
-                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost cn-input-group-button cn-input-group-button-size-icon-sm disabled:opacity-50 disabled:pointer-events-none flex group/button items-center justify-center outline-none rounded-full select-none shadow-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" size="icon-sm" aria-label="Attach a file" aria-haspopup="menu" id="base-ui-_r_3_" aria-expanded="false">
-                    <svg className="lucide lucide-paperclip" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" aria-hidden="true">
+                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost cn-input-group-button cn-input-group-button-size-icon-sm disabled:opacity-50 disabled:pointer-events-none flex group/button items-center justify-center outline-none rounded-full select-none shadow-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} size="icon-sm" aria-label="Attach a file" aria-haspopup="menu" id="base-ui-_r_3_" aria-expanded="false">
+                    <svg className="lucide lucide-paperclip" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" aria-hidden="true">
                       <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                     </svg>
                   </DropdownMenuTrigger>
                   </DropdownMenu>
                   <div className="flex gap-1 items-center ms-auto">
                     <Select>
-                    <SelectTrigger className="border-transparent dark:bg-transparent dark:hover:bg-accent focus-visible:ring-0 gap-1 h-7 hover:bg-accent hover:text-foreground min-w-0 px-1.5 shadow-none text-muted-foreground w-auto" type="button" tabIndex="0" id="base-ui-_r_5_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Answer depth">
+                    <SelectTrigger className="border-transparent dark:bg-transparent dark:hover:bg-accent focus-visible:ring-0 gap-1 h-7 hover:bg-accent hover:text-foreground min-w-0 px-1.5 shadow-none text-muted-foreground w-auto" type="button" tabIndex={0} id="base-ui-_r_5_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Answer depth">
                       <SelectValue className="text-xs truncate">
                         {"Auto"}
                       </SelectValue>
-                      <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                      <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
                         {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
-                    <input id="base-ui-_r_5_-hidden-input" tabIndex="-1" aria-hidden="true" value="auto" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                    <input id="base-ui-_r_5_-hidden-input" tabIndex={-1} aria-hidden="true" value="auto" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                     <Tooltip>
-                    <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-default cn-input-group-button cn-input-group-button-size-icon-sm disabled:opacity-50 disabled:pointer-events-none flex group/button items-center justify-center outline-none rounded-full select-none shadow-none shrink-0 transition-all whitespace-nowrap" type="submit" tabIndex="0" size="icon-sm" aria-label="Send message" id="base-ui-_r_9_" baseUiTooltipTrigger="">
-                      <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
+                    <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-default cn-input-group-button cn-input-group-button-size-icon-sm disabled:opacity-50 disabled:pointer-events-none flex group/button items-center justify-center outline-none rounded-full select-none shadow-none shrink-0 transition-all whitespace-nowrap" type="submit" tabIndex={0} size="icon-sm" aria-label="Send message" id="base-ui-_r_9_" baseUiTooltipTrigger="">
+                      <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                         <path d="m5 12 7-7 7 7"></path>
                         <path d="M12 19V5"></path>
                       </svg>
@@ -113,8 +113,8 @@ export function Pattern() {
                         <path fill="#34A853" d="M0 136.4h98.4l-59 68.2L0 136.4Z"></path>
                         <path fill="#1967D2" d="M177.2 136.4H256l-59.4 68.2-19.4-68.2Z"></path>
                       </svg>
-                      <Button className="-end-0.5 -top-0.5 absolute focus-visible:opacity-100 group-hover/app:opacity-100 opacity-0 pointer-coarse:opacity-100 ring-2 ring-background rounded-full shadow-sm size-4 transition-opacity" type="button" tabIndex="0" aria-label="Disconnect Google Drive">
-                        <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                      <Button className="-end-0.5 -top-0.5 absolute focus-visible:opacity-100 group-hover/app:opacity-100 opacity-0 pointer-coarse:opacity-100 ring-2 ring-background rounded-full shadow-sm size-4 transition-opacity" type="button" tabIndex={0} aria-label="Disconnect Google Drive">
+                        <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                           <path d="M18 6 6 18"></path>
                           <path d="m6 6 12 12"></path>
                         </svg>
@@ -129,8 +129,8 @@ export function Pattern() {
                           <path d="m0 1553.2c-.1 135.3 109.5 245.1 244.8 245.2 135.3-.1 244.9-109.9 244.8-245.2v-245.2h-244.8c-135.3.1-244.9 109.9-244.8 245.2zm652.7 0v654c-.2 135.3 109.4 245.1 244.7 245.3 135.3-.1 244.9-109.9 244.8-245.2v-653.9c.2-135.3-109.4-245.1-244.7-245.3-135.4 0-244.9 109.8-244.8 245.1 0 0 0 .1 0 0" fill="#e01e5a"></path>
                         </g>
                       </svg>
-                      <Button className="-end-0.5 -top-0.5 absolute focus-visible:opacity-100 group-hover/app:opacity-100 opacity-0 pointer-coarse:opacity-100 ring-2 ring-background rounded-full shadow-sm size-4 transition-opacity" type="button" tabIndex="0" aria-label="Disconnect Slack">
-                        <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                      <Button className="-end-0.5 -top-0.5 absolute focus-visible:opacity-100 group-hover/app:opacity-100 opacity-0 pointer-coarse:opacity-100 ring-2 ring-background rounded-full shadow-sm size-4 transition-opacity" type="button" tabIndex={0} aria-label="Disconnect Slack">
+                        <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                           <path d="M18 6 6 18"></path>
                           <path d="m6 6 12 12"></path>
                         </svg>
@@ -150,12 +150,12 @@ export function Pattern() {
                         </g>
                         <defs>
                           <clippath id="clip0_5072_3766">
-                            <rect width="512" height="512" fill="white"></rect>
+                            <rect width={512} height={512} fill="white"></rect>
                           </clippath>
                         </defs>
                       </svg>
-                      <Button className="-end-0.5 -top-0.5 absolute focus-visible:opacity-100 group-hover/app:opacity-100 opacity-0 pointer-coarse:opacity-100 ring-2 ring-background rounded-full shadow-sm size-4 transition-opacity" type="button" tabIndex="0" aria-label="Disconnect Google Calendar">
-                        <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                      <Button className="-end-0.5 -top-0.5 absolute focus-visible:opacity-100 group-hover/app:opacity-100 opacity-0 pointer-coarse:opacity-100 ring-2 ring-background rounded-full shadow-sm size-4 transition-opacity" type="button" tabIndex={0} aria-label="Disconnect Google Calendar">
+                        <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                           <path d="M18 6 6 18"></path>
                           <path d="m6 6 12 12"></path>
                         </svg>
@@ -166,8 +166,8 @@ export function Pattern() {
                         <path fill="#0061FE" d="M0 0h128v128H0z"></path>
                         <path fill="#F7F5F2" d="M43.7 32 23.404 44.75 43.701 57.5 64 44.75 84.3 57.5l20.298-12.75L84.299 32 64.002 44.75 43.7 32Zm0 51L23.404 70.25 43.701 57.5 64 70.25 43.702 83Zm20.302-12.75L84.299 57.5l20.298 12.75L84.299 83 64.002 70.25Zm0 29.75L43.7 87.25 64 74.5l20.3 12.75L64.002 100Z"></path>
                       </svg>
-                      <Button className="-end-0.5 -top-0.5 absolute focus-visible:opacity-100 group-hover/app:opacity-100 opacity-0 pointer-coarse:opacity-100 ring-2 ring-background rounded-full shadow-sm size-4 transition-opacity" type="button" tabIndex="0" aria-label="Disconnect Dropbox">
-                        <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                      <Button className="-end-0.5 -top-0.5 absolute focus-visible:opacity-100 group-hover/app:opacity-100 opacity-0 pointer-coarse:opacity-100 ring-2 ring-background rounded-full shadow-sm size-4 transition-opacity" type="button" tabIndex={0} aria-label="Disconnect Dropbox">
+                        <svg className="lucide lucide-x size-2.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                           <path d="M18 6 6 18"></path>
                           <path d="m6 6 12 12"></path>
                         </svg>
@@ -175,17 +175,17 @@ export function Pattern() {
                     </li>
                   </ul>
                   <Tooltip>
-                  <TooltipTrigger className="[&>svg:last-child]:hidden [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline cn-combobox-trigger disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none rounded-full select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Add an app" id="base-ui-_r_d_" role="combobox" aria-expanded="false" aria-haspopup="dialog" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                  <TooltipTrigger className="[&>svg:last-child]:hidden [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline cn-combobox-trigger disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none rounded-full select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Add an app" id="base-ui-_r_d_" role="combobox" aria-expanded="false" aria-haspopup="dialog" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="M12 5v14"></path>
                     </svg>
-                    <svg className="cn-combobox-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
+                    <svg className="cn-combobox-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                       <path d="m6 9 6 6 6-6"></path>
                     </svg>
                   </TooltipTrigger>
                   </Tooltip>
-                  <input id="base-ui-_r_a_-hidden-input" tabIndex="-1" aria-hidden="true" value="" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_a_-hidden-input" tabIndex={-1} aria-hidden="true" value="" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </div>
               </div>
             </footer>
@@ -195,14 +195,14 @@ export function Pattern() {
           <RadioGroup className="@container/field-group cn-field-group flex flex-row flex-wrap gap-x-2 gap-y-4 group/field-group justify-center" role="radiogroup" aria-label="What to do">
             <FieldLabel className="cn-label cursor-pointer dark:has-data-checked:bg-primary/10 group-data-[disabled=true]:pointer-events-none has-[:focus-visible]:ring-[3px] has-[:focus-visible]:ring-ring/50 has-data-checked:bg-primary/5 has-data-checked:border-primary/50 items-center p-0 peer-disabled:cursor-not-allowed relative select-none transition-colors w-auto!" htmlFor="ai-chat-5-mode-digest" id="ai-chat-5-mode-digest-label">
               <Field className="h-8 px-3 py-0" role="group" data-orientation="horizontal">
-                <RadioGroupItem className="sr-only" checked="" role="radio" tabIndex="0" aria-checked="true" compositeItemActive="" id="base-ui-_r_g_" aria-labelledby="ai-chat-5-mode-digest-label">
+                <RadioGroupItem className="sr-only" checked="" role="radio" tabIndex={0} aria-checked="true" compositeItemActive="" id="base-ui-_r_g_" aria-labelledby="ai-chat-5-mode-digest-label">
                   <span className="cn-radio-group-indicator" data-checked="">
                     <span className="cn-radio-group-indicator-icon"></span>
                   </span>
                 </RadioGroupItem>
-                <input id="ai-chat-5-mode-digest" tabIndex="-1" aria-hidden="true" type="radio" value="digest" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                <input id="ai-chat-5-mode-digest" tabIndex={-1} aria-hidden="true" type="radio" value="digest" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 <FieldLabel className="cn-field-title gap-1.5 items-center">
-                  <svg className="lucide lucide-list-checks size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ListChecksIcon" tabler="IconListCheck" hugeicons="TaskDone01Icon" phosphor="ChecksIcon" remixicon="RiListCheck" aria-hidden="true">
+                  <svg className="lucide lucide-list-checks size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ListChecksIcon" tabler="IconListCheck" hugeicons="TaskDone01Icon" phosphor="ChecksIcon" remixicon="RiListCheck" aria-hidden="true">
                     <path d="M13 5h8"></path>
                     <path d="M13 12h8"></path>
                     <path d="M13 19h8"></path>
@@ -215,10 +215,10 @@ export function Pattern() {
             </FieldLabel>
             <FieldLabel className="cn-label cursor-pointer dark:has-data-checked:bg-primary/10 group-data-[disabled=true]:pointer-events-none has-[:focus-visible]:ring-[3px] has-[:focus-visible]:ring-ring/50 has-data-checked:bg-primary/5 has-data-checked:border-primary/50 items-center p-0 peer-disabled:cursor-not-allowed relative select-none transition-colors w-auto!" htmlFor="ai-chat-5-mode-draft" id="ai-chat-5-mode-draft-label">
               <Field className="h-8 px-3 py-0" role="group" data-orientation="horizontal">
-                <RadioGroupItem className="sr-only" unchecked="" role="radio" tabIndex="-1" aria-checked="false" id="base-ui-_r_j_" aria-labelledby="ai-chat-5-mode-draft-label"></RadioGroupItem>
-                <input id="ai-chat-5-mode-draft" tabIndex="-1" aria-hidden="true" type="radio" value="draft" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                <RadioGroupItem className="sr-only" unchecked="" role="radio" tabIndex={-1} aria-checked="false" id="base-ui-_r_j_" aria-labelledby="ai-chat-5-mode-draft-label"></RadioGroupItem>
+                <input id="ai-chat-5-mode-draft" tabIndex={-1} aria-hidden="true" type="radio" value="draft" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 <FieldLabel className="cn-field-title gap-1.5 items-center">
-                  <svg className="lucide lucide-pencil size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
+                  <svg className="lucide lucide-pencil size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
                     <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                     <path d="m15 5 4 4"></path>
                   </svg>
@@ -228,12 +228,12 @@ export function Pattern() {
             </FieldLabel>
             <FieldLabel className="cn-label cursor-pointer dark:has-data-checked:bg-primary/10 group-data-[disabled=true]:pointer-events-none has-[:focus-visible]:ring-[3px] has-[:focus-visible]:ring-ring/50 has-data-checked:bg-primary/5 has-data-checked:border-primary/50 items-center p-0 peer-disabled:cursor-not-allowed relative select-none transition-colors w-auto!" htmlFor="ai-chat-5-mode-recap" id="ai-chat-5-mode-recap-label">
               <Field className="h-8 px-3 py-0" role="group" data-orientation="horizontal">
-                <RadioGroupItem className="sr-only" unchecked="" role="radio" tabIndex="-1" aria-checked="false" id="base-ui-_r_m_" aria-labelledby="ai-chat-5-mode-recap-label"></RadioGroupItem>
-                <input id="ai-chat-5-mode-recap" tabIndex="-1" aria-hidden="true" type="radio" value="recap" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                <RadioGroupItem className="sr-only" unchecked="" role="radio" tabIndex={-1} aria-checked="false" id="base-ui-_r_m_" aria-labelledby="ai-chat-5-mode-recap-label"></RadioGroupItem>
+                <input id="ai-chat-5-mode-recap" tabIndex={-1} aria-hidden="true" type="radio" value="recap" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 <FieldLabel className="cn-field-title gap-1.5 items-center">
-                  <svg className="lucide lucide-video size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="VideoIcon" tabler="IconVideo" hugeicons="Video02Icon" phosphor="VideoCameraIcon" remixicon="RiVideoOnLine" aria-hidden="true">
+                  <svg className="lucide lucide-video size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="VideoIcon" tabler="IconVideo" hugeicons="Video02Icon" phosphor="VideoCameraIcon" remixicon="RiVideoOnLine" aria-hidden="true">
                     <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path>
-                    <rect x="2" y="6" width="14" height="12" rx="2"></rect>
+                    <rect x={2} y={6} width={14} height={12} rx={2}></rect>
                   </svg>
                   {"Recap"}
                 </FieldLabel>
@@ -241,12 +241,12 @@ export function Pattern() {
             </FieldLabel>
             <FieldLabel className="cn-label cursor-pointer dark:has-data-checked:bg-primary/10 group-data-[disabled=true]:pointer-events-none has-[:focus-visible]:ring-[3px] has-[:focus-visible]:ring-ring/50 has-data-checked:bg-primary/5 has-data-checked:border-primary/50 items-center p-0 peer-disabled:cursor-not-allowed relative select-none transition-colors w-auto!" htmlFor="ai-chat-5-mode-audit" id="ai-chat-5-mode-audit-label">
               <Field className="h-8 px-3 py-0" role="group" data-orientation="horizontal">
-                <RadioGroupItem className="sr-only" unchecked="" role="radio" tabIndex="-1" aria-checked="false" id="base-ui-_r_p_" aria-labelledby="ai-chat-5-mode-audit-label"></RadioGroupItem>
-                <input id="ai-chat-5-mode-audit" tabIndex="-1" aria-hidden="true" type="radio" value="audit" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                <RadioGroupItem className="sr-only" unchecked="" role="radio" tabIndex={-1} aria-checked="false" id="base-ui-_r_p_" aria-labelledby="ai-chat-5-mode-audit-label"></RadioGroupItem>
+                <input id="ai-chat-5-mode-audit" tabIndex={-1} aria-hidden="true" type="radio" value="audit" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 <FieldLabel className="cn-field-title gap-1.5 items-center">
-                  <svg className="lucide lucide-search size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+                  <svg className="lucide lucide-search size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                     <path d="m21 21-4.34-4.34"></path>
-                    <circle cx="11" cy="11" r="8"></circle>
+                    <circle cx={11} cy={11} r={8}></circle>
                   </svg>
                   {"Audit"}
                 </FieldLabel>

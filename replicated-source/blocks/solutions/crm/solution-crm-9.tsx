@@ -96,24 +96,24 @@ export function Pattern() {
                   </span>
                 </div>
                 <div className="flex gap-1 items-center shrink-0">
-                  <Button className="@3xl/desk:hidden" type="button" tabIndex="0" aria-label="Open activity" extracted="1">
-                    <svg className="lucide lucide-panel-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PanelRightIcon" tabler="IconLayoutSidebarRight" hugeicons="SidebarRight01Icon" phosphor="SidebarSimpleIcon" remixicon="RiLayoutRightLine" aria-hidden="true">
-                      <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                  <Button className="@3xl/desk:hidden" type="button" tabIndex={0} aria-label="Open activity" extracted="1">
+                    <svg className="lucide lucide-panel-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PanelRightIcon" tabler="IconLayoutSidebarRight" hugeicons="SidebarRight01Icon" phosphor="SidebarSimpleIcon" remixicon="RiLayoutRightLine" aria-hidden="true">
+                      <rect width={18} height={18} x={3} y={3} rx={2}></rect>
                       <path d="M15 3v18"></path>
                     </svg>
                     {"Activity"}
                   </Button>
                   <Tooltip>
-                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-expanded:text-foreground cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Search deals" aria-haspopup="dialog" aria-expanded="false" id="base-ui-_r_2_" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="SearchIcon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 aria-expanded:text-foreground cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Search deals" aria-haspopup="dialog" aria-expanded="false" id="base-ui-_r_2_" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="SearchIcon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                       <path d="m21 21-4.34-4.34"></path>
-                      <circle cx="11" cy="11" r="8"></circle>
+                      <circle cx={11} cy={11} r={8}></circle>
                     </svg>
                   </TooltipTrigger>
                   </Tooltip>
                   <Tooltip>
-                  <TooltipTrigger className="-me-1.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="New deal" id="base-ui-_r_5_" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                  <TooltipTrigger className="-me-1.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="New deal" id="base-ui-_r_5_" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="M12 5v14"></path>
                     </svg>
@@ -123,17 +123,17 @@ export function Pattern() {
               </div>
               <div className="flex h-11 items-center">
                 <Select>
-                <SelectTrigger type="button" tabIndex="0" id="base-ui-_r_6_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Filter by stage">
+                <SelectTrigger type="button" tabIndex={0} id="base-ui-_r_6_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Filter by stage">
                   <SelectValue>
                     {"All Stages"}
                   </SelectValue>
-                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                     {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
-                <input id="base-ui-_r_6_-hidden-input" tabIndex="-1" aria-hidden="true" value="all" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                <input id="base-ui-_r_6_-hidden-input" tabIndex={-1} aria-hidden="true" value="all" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
               </div>
             </header>
             <div className="flex-1 min-h-0 no-scrollbar overflow-y-auto scroll-fade-y scroll-py-10">
@@ -437,8 +437,8 @@ export function Pattern() {
             <header className="border-b flex flex-col px-3 shrink-0">
               <div className="flex gap-2 h-11 items-center justify-between">
                 <div className="flex gap-2 items-center min-w-0">
-                  <Button className="-ms-1.5 @3xl/desk:hidden hover:text-foreground text-muted-foreground" type="button" tabIndex="0" aria-label="Back to deals">
-                    <svg className="lucide lucide-arrow-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftIcon" tabler="IconArrowLeft" hugeicons="ArrowLeft02Icon" phosphor="ArrowLeftIcon" remixicon="RiArrowLeftLine" aria-hidden="true">
+                  <Button className="-ms-1.5 @3xl/desk:hidden hover:text-foreground text-muted-foreground" type="button" tabIndex={0} aria-label="Back to deals">
+                    <svg className="lucide lucide-arrow-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftIcon" tabler="IconArrowLeft" hugeicons="ArrowLeft02Icon" phosphor="ArrowLeftIcon" remixicon="RiArrowLeftLine" aria-hidden="true">
                       <path d="m12 19-7-7 7-7"></path>
                       <path d="M19 12H5"></path>
                     </svg>
@@ -453,15 +453,15 @@ export function Pattern() {
                   </div>
                 </div>
                 <div className="flex gap-1 items-center shrink-0">
-                  <Button className="@6xl/desk:hidden" type="button" tabIndex="0" aria-label="Open activity">
-                    <svg className="lucide lucide-panel-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PanelRightIcon" tabler="IconLayoutSidebarRight" hugeicons="SidebarRight01Icon" phosphor="SidebarSimpleIcon" remixicon="RiLayoutRightLine" aria-hidden="true">
-                      <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                  <Button className="@6xl/desk:hidden" type="button" tabIndex={0} aria-label="Open activity">
+                    <svg className="lucide lucide-panel-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PanelRightIcon" tabler="IconLayoutSidebarRight" hugeicons="SidebarRight01Icon" phosphor="SidebarSimpleIcon" remixicon="RiLayoutRightLine" aria-hidden="true">
+                      <rect width={18} height={18} x={3} y={3} rx={2}></rect>
                       <path d="M15 3v18"></path>
                     </svg>
                     {"Activity"}
                   </Button>
-                  <Button className="@6xl/desk:inline-flex hidden" type="button" tabIndex="0">
-                    <svg className="lucide lucide-message-square-text" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareTextIcon" tabler="IconMessageDots" hugeicons="Comment01Icon" phosphor="ChatTextIcon" remixicon="RiMessage3Line" aria-hidden="true">
+                  <Button className="@6xl/desk:inline-flex hidden" type="button" tabIndex={0}>
+                    <svg className="lucide lucide-message-square-text" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareTextIcon" tabler="IconMessageDots" hugeicons="Comment01Icon" phosphor="ChatTextIcon" remixicon="RiMessage3Line" aria-hidden="true">
                       <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                       <path d="M7 11h10"></path>
                       <path d="M7 15h6"></path>
@@ -470,8 +470,8 @@ export function Pattern() {
                     {"Add Note"}
                   </Button>
                   <Tooltip>
-                  <TooltipTrigger className="@6xl/desk:hidden [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Add note" id="base-ui-_r_a_" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-message-square-text" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareTextIcon" tabler="IconMessageDots" hugeicons="Comment01Icon" phosphor="ChatTextIcon" remixicon="RiMessage3Line" aria-hidden="true">
+                  <TooltipTrigger className="@6xl/desk:hidden [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Add note" id="base-ui-_r_a_" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-message-square-text" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareTextIcon" tabler="IconMessageDots" hugeicons="Comment01Icon" phosphor="ChatTextIcon" remixicon="RiMessage3Line" aria-hidden="true">
                       <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                       <path d="M7 11h10"></path>
                       <path d="M7 15h6"></path>
@@ -480,11 +480,11 @@ export function Pattern() {
                   </TooltipTrigger>
                   </Tooltip>
                   <DropdownMenu>
-                  <DropdownMenuTrigger className="-me-1.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 aria-expanded:text-foreground cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="More deal actions" aria-haspopup="menu" id="base-ui-_r_e_" aria-expanded="false">
-                    <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                      <circle cx="12" cy="12" r="1"></circle>
-                      <circle cx="19" cy="12" r="1"></circle>
-                      <circle cx="5" cy="12" r="1"></circle>
+                  <DropdownMenuTrigger className="-me-1.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 aria-expanded:text-foreground cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="More deal actions" aria-haspopup="menu" id="base-ui-_r_e_" aria-expanded="false">
+                    <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                      <circle cx={12} cy={12} r={1}></circle>
+                      <circle cx={19} cy={12} r={1}></circle>
+                      <circle cx={5} cy={12} r={1}></circle>
                     </svg>
                   </DropdownMenuTrigger>
                   </DropdownMenu>
@@ -508,7 +508,7 @@ export function Pattern() {
                 </div>
                 <div className="flex gap-1.5 items-center shrink-0">
                   <Popover>
-                  <PopoverTrigger className="cursor-pointer focus-visible:ring-3 focus-visible:ring-ring/50 outline-none rounded-full" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_h_" aria-haspopup="dialog" aria-expanded="false" aria-label="3 followers">
+                  <PopoverTrigger className="cursor-pointer focus-visible:ring-3 focus-visible:ring-ring/50 outline-none rounded-full" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_h_" aria-haspopup="dialog" aria-expanded="false" aria-label="3 followers">
                     <AvatarGroup>
                       <Avatar size="sm">
                         <AvatarImage alt="Mira Stone" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&dpr=2&q=80"></AvatarImage>
@@ -525,8 +525,8 @@ export function Pattern() {
                   </PopoverTrigger>
                   </Popover>
                   <Tooltip>
-                  <TooltipTrigger className="-me-1.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 text-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Follow deal" aria-pressed="true" id="base-ui-_r_j_" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-bell-ring" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BellRingIcon" tabler="IconBellRinging2" hugeicons="Notification03Icon" phosphor="BellRingingIcon" remixicon="RiNotification4Line" aria-hidden="true">
+                  <TooltipTrigger className="-me-1.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 text-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Follow deal" aria-pressed="true" id="base-ui-_r_j_" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-bell-ring" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BellRingIcon" tabler="IconBellRinging2" hugeicons="Notification03Icon" phosphor="BellRingingIcon" remixicon="RiNotification4Line" aria-hidden="true">
                       <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
                       <path d="M22 8c0-2.3-.8-4.3-2-6"></path>
                       <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
@@ -561,7 +561,7 @@ export function Pattern() {
                       </div>
                       <div className="@2xl/detail:w-auto flex flex-wrap gap-2 items-center w-full">
                         <Select>
-                        <SelectTrigger className="@lg/detail:w-44 w-full" type="button" tabIndex="0" id="base-ui-_r_k_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Deal owner">
+                        <SelectTrigger className="@lg/detail:w-44 w-full" type="button" tabIndex={0} id="base-ui-_r_k_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Deal owner">
                           <SelectValue>
                             <span className="flex gap-2 items-center min-w-0">
                               <Avatar className="size-5" size="sm">
@@ -572,22 +572,22 @@ export function Pattern() {
                               </span>
                             </span>
                           </SelectValue>
-                          <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                          <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
                             {"▼"}
                           </svg>
                         </SelectTrigger>
                         </Select>
-                        <input id="base-ui-_r_k_-hidden-input" tabIndex="-1" aria-hidden="true" value="mira-stone" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
-                        <Button className="@lg/detail:flex-none flex-1" type="button" tabIndex="0">
-                          <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                        <input id="base-ui-_r_k_-hidden-input" tabIndex={-1} aria-hidden="true" value="mira-stone" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <Button className="@lg/detail:flex-none flex-1" type="button" tabIndex={0}>
+                          <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                             <path d="M18 6 6 18"></path>
                             <path d="m6 6 12 12"></path>
                           </svg>
                           {"Mark Lost"}
                         </Button>
-                        <Button className="@lg/detail:flex-none flex-1" type="button" tabIndex="0">
-                          <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                        <Button className="@lg/detail:flex-none flex-1" type="button" tabIndex={0}>
+                          <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                             <path d="M20 6 9 17l-5-5"></path>
                           </svg>
                           {"Mark Won"}
@@ -601,11 +601,11 @@ export function Pattern() {
                         <Stepper>
                         <StepperItem data-state="completed">
                           <Stepper>
-                          <StepperTrigger type="button" role="tab" id="stepper-tab-1" aria-selected="false" aria-controls="stepper-panel-1" tabIndex="-1" data-state="completed" loading="false" aria-label="Move to Qualified">
+                          <StepperTrigger type="button" role="tab" id="stepper-tab-1" aria-selected="false" aria-controls="stepper-panel-1" tabIndex={-1} data-state="completed" loading="false" aria-label="Move to Qualified">
                             <Stepper>
                             <StepperIndicator className="[&_svg]:size-3 bg-ring data-[state=active]:bg-success data-[state=active]:outline-success data-[state=active]:text-white data-[state=completed]:bg-success data-[state=completed]:outline-success data-[state=completed]:text-white m-0.5 outline-1 outline-offset-1 outline-ring size-4.5 text-white" data-state="completed">
                               <div className="absolute">
-                                <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                                <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                   <path d="M20 6 9 17l-5-5"></path>
                                 </svg>
                               </div>
@@ -619,11 +619,11 @@ export function Pattern() {
                         <Stepper>
                         <StepperItem data-state="completed">
                           <Stepper>
-                          <StepperTrigger type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="completed" loading="false" aria-label="Move to Discovery">
+                          <StepperTrigger type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex={-1} data-state="completed" loading="false" aria-label="Move to Discovery">
                             <Stepper>
                             <StepperIndicator className="[&_svg]:size-3 bg-ring data-[state=active]:bg-success data-[state=active]:outline-success data-[state=active]:text-white data-[state=completed]:bg-success data-[state=completed]:outline-success data-[state=completed]:text-white m-0.5 outline-1 outline-offset-1 outline-ring size-4.5 text-white" data-state="completed">
                               <div className="absolute">
-                                <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                                <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                   <path d="M20 6 9 17l-5-5"></path>
                                 </svg>
                               </div>
@@ -637,11 +637,11 @@ export function Pattern() {
                         <Stepper>
                         <StepperItem data-state="completed">
                           <Stepper>
-                          <StepperTrigger type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="completed" loading="false" aria-label="Move to Proposal">
+                          <StepperTrigger type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex={-1} data-state="completed" loading="false" aria-label="Move to Proposal">
                             <Stepper>
                             <StepperIndicator className="[&_svg]:size-3 bg-ring data-[state=active]:bg-success data-[state=active]:outline-success data-[state=active]:text-white data-[state=completed]:bg-success data-[state=completed]:outline-success data-[state=completed]:text-white m-0.5 outline-1 outline-offset-1 outline-ring size-4.5 text-white" data-state="completed">
                               <div className="absolute">
-                                <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                                <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                   <path d="M20 6 9 17l-5-5"></path>
                                 </svg>
                               </div>
@@ -655,11 +655,11 @@ export function Pattern() {
                         <Stepper>
                         <StepperItem data-state="active">
                           <Stepper>
-                          <StepperTrigger type="button" role="tab" id="stepper-tab-4" aria-selected="true" aria-controls="stepper-panel-4" tabIndex="0" data-state="active" loading="false" aria-label="Move to Negotiation">
+                          <StepperTrigger type="button" role="tab" id="stepper-tab-4" aria-selected="true" aria-controls="stepper-panel-4" tabIndex={0} data-state="active" loading="false" aria-label="Move to Negotiation">
                             <Stepper>
                             <StepperIndicator className="[&_svg]:size-3 bg-ring data-[state=active]:bg-success data-[state=active]:outline-success data-[state=active]:text-white data-[state=completed]:bg-success data-[state=completed]:outline-success data-[state=completed]:text-white m-0.5 outline-1 outline-offset-1 outline-ring size-4.5 text-white" data-state="active">
                               <div className="absolute">
-                                <svg className="lucide lucide-loader-circle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LoaderCircleIcon" tabler="IconLoader2" hugeicons="Loading02Icon" phosphor="CircleNotchIcon" remixicon="RiLoader4Line" aria-hidden="true">
+                                <svg className="lucide lucide-loader-circle" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LoaderCircleIcon" tabler="IconLoader2" hugeicons="Loading02Icon" phosphor="CircleNotchIcon" remixicon="RiLoader4Line" aria-hidden="true">
                                   <path d="M21 12a9 9 0 1 1-6.219-8.56"></path>
                                 </svg>
                               </div>
@@ -673,11 +673,11 @@ export function Pattern() {
                         <Stepper>
                         <StepperItem data-state="inactive">
                           <DropdownMenu>
-                          <DropdownMenuTrigger className="cursor-pointer disabled:opacity-60 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:z-10 gap-2.5 inline-flex items-center outline-none rounded-full" type="button" role="tab" id="base-ui-_r_q_" aria-selected="false" tabIndex="0" data-state="inactive" loading="false" aria-label="Close the deal" aria-haspopup="menu" aria-expanded="false">
+                          <DropdownMenuTrigger className="cursor-pointer disabled:opacity-60 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:z-10 gap-2.5 inline-flex items-center outline-none rounded-full" type="button" role="tab" id="base-ui-_r_q_" aria-selected="false" tabIndex={0} data-state="inactive" loading="false" aria-label="Close the deal" aria-haspopup="menu" aria-expanded="false">
                             <Stepper>
                             <StepperIndicator className="[&_svg]:size-3 bg-ring data-[state=active]:bg-success data-[state=active]:outline-success data-[state=active]:text-white data-[state=completed]:bg-success data-[state=completed]:outline-success data-[state=completed]:text-white m-0.5 outline-1 outline-offset-1 outline-ring size-4.5 text-white" data-state="inactive">
                               <div className="absolute">
-                                <svg className="lucide lucide-circle-dashed" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDashedIcon" tabler="IconCircleDashed" hugeicons="CircleDashedIcon" phosphor="CircleDashedIcon" remixicon="RiCheckboxBlankCircleLine" aria-hidden="true">
+                                <svg className="lucide lucide-circle-dashed" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleDashedIcon" tabler="IconCircleDashed" hugeicons="CircleDashedIcon" phosphor="CircleDashedIcon" remixicon="RiCheckboxBlankCircleLine" aria-hidden="true">
                                   <path d="M10.1 2.182a10 10 0 0 1 3.8 0"></path>
                                   <path d="M13.9 21.818a10 10 0 0 1-3.8 0"></path>
                                   <path d="M17.609 3.721a10 10 0 0 1 2.69 2.7"></path>
@@ -705,10 +705,10 @@ export function Pattern() {
                     <CardHeader className="border-b">
                       <CardTitle>
                         <Collapsible>
-                        <CollapsibleTrigger className="cursor-pointer flex gap-2 group/trigger items-center justify-between w-full" type="button" panelOpen="" tabIndex="0" aria-disabled="false" aria-controls="base-ui-_r_s_" aria-expanded="true">
+                        <CollapsibleTrigger className="cursor-pointer flex gap-2 group/trigger items-center justify-between w-full" type="button" panelOpen="" tabIndex={0} aria-disabled="false" aria-controls="base-ui-_r_s_" aria-expanded="true">
                           {"Details"}
                           <span className="duration-150 flex group-data-[panel-open]/trigger:rotate-180 motion-reduce:transition-none text-muted-foreground transition-[rotate]">
-                            <svg className="lucide lucide-chevron-down size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                            <svg className="lucide lucide-chevron-down size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                               <path d="m6 9 6 6 6-6"></path>
                             </svg>
                           </span>
@@ -859,10 +859,10 @@ export function Pattern() {
                     <CardHeader className="border-b">
                       <CardTitle>
                         <Collapsible>
-                        <CollapsibleTrigger className="cursor-pointer flex gap-2 group/trigger items-center justify-between w-full" type="button" panelOpen="" tabIndex="0" aria-disabled="false" aria-controls="base-ui-_r_t_" aria-expanded="true">
+                        <CollapsibleTrigger className="cursor-pointer flex gap-2 group/trigger items-center justify-between w-full" type="button" panelOpen="" tabIndex={0} aria-disabled="false" aria-controls="base-ui-_r_t_" aria-expanded="true">
                           {"Line Items"}
                           <span className="duration-150 flex group-data-[panel-open]/trigger:rotate-180 motion-reduce:transition-none text-muted-foreground transition-[rotate]">
-                            <svg className="lucide lucide-chevron-down size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                            <svg className="lucide lucide-chevron-down size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                               <path d="m6 9 6 6 6-6"></path>
                             </svg>
                           </span>
@@ -1026,30 +1026,30 @@ export function Pattern() {
               </div>
               <div className="flex gap-2 h-11 items-stretch">
                 <TabsList className="-mb-px gap-4 h-auto! p-0" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line" aria-label="Activity views">
-                  <TabsTrigger className="after:-bottom-px! flex-none h-full! px-0" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_u_" compositeItemActive="" aria-controls="base-ui-_r_13_">
+                  <TabsTrigger className="after:-bottom-px! flex-none h-full! px-0" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex={0} role="tab" aria-selected="true" id="base-ui-_r_u_" compositeItemActive="" aria-controls="base-ui-_r_13_">
                     {"Activity"}
                   </TabsTrigger>
-                  <TabsTrigger className="after:-bottom-px! flex-none h-full! px-0" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_v_">
+                  <TabsTrigger className="after:-bottom-px! flex-none h-full! px-0" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_v_">
                     {"Owner Pipeline"}
                   </TabsTrigger>
                 </TabsList>
                 <div className="flex items-center min-w-0 ms-auto">
                   <Select>
-                  <SelectTrigger className="min-w-0" type="button" tabIndex="0" id="base-ui-_r_10_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Filter activity">
+                  <SelectTrigger className="min-w-0" type="button" tabIndex={0} id="base-ui-_r_10_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Filter activity">
                     <SelectValue>
                       {"All Types"}
                     </SelectValue>
-                    <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                    <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
                       {"▼"}
                     </svg>
                   </SelectTrigger>
                   </Select>
-                  <input id="base-ui-_r_10_-hidden-input" tabIndex="-1" aria-hidden="true" value="all" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_10_-hidden-input" tabIndex={-1} aria-hidden="true" value="all" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </div>
               </div>
             </header>
-            <TabsContent className="flex flex-col min-h-0" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_13_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_u_">
+            <TabsContent className="flex flex-col min-h-0" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_13_" role="tabpanel" tabIndex={0} index="0" aria-labelledby="base-ui-_r_u_">
               <div className="flex-1 min-h-0 no-scrollbar overflow-y-auto scroll-fade-y scroll-py-10">
                 <div className="flex flex-col gap-4 py-3">
                   <section aria-label="Jun 12">
@@ -1062,9 +1062,9 @@ export function Pattern() {
                           <ItemHeader>
                             <span className="flex font-medium gap-2 items-center text-xs">
                               <IconTile variant="outline" size="sm">
-                                <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
+                                <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
                                   <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                  <rect x={2} y={4} width={20} height={16} rx={2}></rect>
                                 </svg>
                               </IconTile>
                               {"Email"}
@@ -1106,9 +1106,9 @@ export function Pattern() {
                           <ItemHeader>
                             <span className="flex font-medium gap-2 items-center text-xs">
                               <IconTile variant="outline" size="sm">
-                                <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
+                                <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
                                   <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                  <rect x={2} y={4} width={20} height={16} rx={2}></rect>
                                 </svg>
                               </IconTile>
                               {"Email"}
@@ -1139,8 +1139,8 @@ export function Pattern() {
                           <ItemHeader>
                             <span className="flex font-medium gap-2 items-center text-xs">
                               <IconTile variant="outline" size="sm">
-                                <svg className="lucide lucide-smartphone" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SmartphoneIcon" tabler="IconDeviceMobile" hugeicons="SmartPhone01Icon" phosphor="DeviceMobileIcon" remixicon="RiSmartphoneLine" aria-hidden="true">
-                                  <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
+                                <svg className="lucide lucide-smartphone" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SmartphoneIcon" tabler="IconDeviceMobile" hugeicons="SmartPhone01Icon" phosphor="DeviceMobileIcon" remixicon="RiSmartphoneLine" aria-hidden="true">
+                                  <rect width={14} height={20} x={5} y={2} rx={2} ry={2}></rect>
                                   <path d="M12 18h.01"></path>
                                 </svg>
                               </IconTile>
@@ -1183,7 +1183,7 @@ export function Pattern() {
                           <ItemHeader>
                             <span className="flex font-medium gap-2 items-center text-xs">
                               <IconTile variant="outline" size="sm">
-                                <svg className="lucide lucide-message-square-text" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareTextIcon" tabler="IconMessageDots" hugeicons="Comment01Icon" phosphor="ChatTextIcon" remixicon="RiMessage3Line" aria-hidden="true">
+                                <svg className="lucide lucide-message-square-text" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareTextIcon" tabler="IconMessageDots" hugeicons="Comment01Icon" phosphor="ChatTextIcon" remixicon="RiMessage3Line" aria-hidden="true">
                                   <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                   <path d="M7 11h10"></path>
                                   <path d="M7 15h6"></path>
@@ -1229,9 +1229,9 @@ export function Pattern() {
                           <ItemHeader>
                             <span className="flex font-medium gap-2 items-center text-xs">
                               <IconTile variant="outline" size="sm">
-                                <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
+                                <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
                                   <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                  <rect x={2} y={4} width={20} height={16} rx={2}></rect>
                                 </svg>
                               </IconTile>
                               {"Email"}
@@ -1262,9 +1262,9 @@ export function Pattern() {
                           <ItemHeader>
                             <span className="flex font-medium gap-2 items-center text-xs">
                               <IconTile variant="outline" size="sm">
-                                <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
+                                <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
                                   <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                  <rect x={2} y={4} width={20} height={16} rx={2}></rect>
                                 </svg>
                               </IconTile>
                               {"Email"}
@@ -1308,17 +1308,17 @@ export function Pattern() {
                   <textarea className="cn-input-group-textarea cn-textarea disabled:cursor-not-allowed disabled:opacity-50 field-sizing-content flex flex-1 max-h-40 min-h-16 outline-none placeholder:text-muted-foreground resize-none w-full" placeholder="Write to Priya" aria-label="Email message"></textarea>
                   <InputGroupAddon className="gap-2" role="group" data-align="block-end">
                     <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" spacing="0" aria-label="Activity type" style={{"--gap": "0"}}>
-                      <ToggleGroupItem className="@max-xs/composer:px-0 @max-xs/composer:size-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="default" spacing="0" aria-label="Email">
-                        <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
+                      <ToggleGroupItem className="@max-xs/composer:px-0 @max-xs/composer:size-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex={0} aria-pressed="true" variant="outline" size="default" spacing="0" aria-label="Email">
+                        <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
                           <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                          <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                          <rect x={2} y={4} width={20} height={16} rx={2}></rect>
                         </svg>
                         <span className="@max-xs/composer:sr-only">
                           {"Email"}
                         </span>
                       </ToggleGroupItem>
-                      <ToggleGroupItem className="@max-xs/composer:px-0 @max-xs/composer:size-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="default" spacing="0" aria-label="Note">
-                        <svg className="lucide lucide-message-square-text" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareTextIcon" tabler="IconMessageDots" hugeicons="Comment01Icon" phosphor="ChatTextIcon" remixicon="RiMessage3Line" aria-hidden="true">
+                      <ToggleGroupItem className="@max-xs/composer:px-0 @max-xs/composer:size-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="outline" size="default" spacing="0" aria-label="Note">
+                        <svg className="lucide lucide-message-square-text" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareTextIcon" tabler="IconMessageDots" hugeicons="Comment01Icon" phosphor="ChatTextIcon" remixicon="RiMessage3Line" aria-hidden="true">
                           <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                           <path d="M7 11h10"></path>
                           <path d="M7 15h6"></path>
@@ -1328,9 +1328,9 @@ export function Pattern() {
                           {"Note"}
                         </span>
                       </ToggleGroupItem>
-                      <ToggleGroupItem className="@max-xs/composer:px-0 @max-xs/composer:size-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="default" spacing="0" aria-label="Call">
-                        <svg className="lucide lucide-smartphone" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SmartphoneIcon" tabler="IconDeviceMobile" hugeicons="SmartPhone01Icon" phosphor="DeviceMobileIcon" remixicon="RiSmartphoneLine" aria-hidden="true">
-                          <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
+                      <ToggleGroupItem className="@max-xs/composer:px-0 @max-xs/composer:size-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="outline" size="default" spacing="0" aria-label="Call">
+                        <svg className="lucide lucide-smartphone" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SmartphoneIcon" tabler="IconDeviceMobile" hugeicons="SmartPhone01Icon" phosphor="DeviceMobileIcon" remixicon="RiSmartphoneLine" aria-hidden="true">
+                          <rect width={14} height={20} x={5} y={2} rx={2} ry={2}></rect>
                           <path d="M12 18h.01"></path>
                         </svg>
                         <span className="@max-xs/composer:sr-only">
@@ -1339,8 +1339,8 @@ export function Pattern() {
                       </ToggleGroupItem>
                     </ToggleGroup>
                     <Tooltip>
-                    <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-default cn-input-group-button cn-input-group-button-size-sm disabled:opacity-50 disabled:pointer-events-none flex group/button items-center justify-center ms-auto outline-none select-none shadow-none shrink-0 transition-all whitespace-nowrap" type="submit" disabled="" tabIndex="0" disabled size="sm" id="base-ui-_r_18_" baseUiTooltipTrigger="">
-                      <svg className="lucide lucide-send" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SendIcon" tabler="IconSend" hugeicons="SentIcon" phosphor="PaperPlaneTiltIcon" remixicon="RiSendInsLine" aria-hidden="true">
+                    <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-default cn-input-group-button cn-input-group-button-size-sm disabled:opacity-50 disabled:pointer-events-none flex group/button items-center justify-center ms-auto outline-none select-none shadow-none shrink-0 transition-all whitespace-nowrap" type="submit" disabled="" tabIndex={0} disabled size="sm" id="base-ui-_r_18_" baseUiTooltipTrigger="">
+                      <svg className="lucide lucide-send" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SendIcon" tabler="IconSend" hugeicons="SentIcon" phosphor="PaperPlaneTiltIcon" remixicon="RiSendInsLine" aria-hidden="true">
                         <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path>
                         <path d="m21.854 2.147-10.94 10.939"></path>
                       </svg>

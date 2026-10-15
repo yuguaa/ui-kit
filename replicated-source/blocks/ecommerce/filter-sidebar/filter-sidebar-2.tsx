@@ -25,14 +25,14 @@ export function Pattern() {
             <div className="flex flex-wrap gap-1.5 pt-5 px-5" aria-label="Active filters">
               <button className="bg-muted/40 border border-border font-medium gap-1.5 hover:bg-muted inline-flex items-center pl-2 pr-2 py-0.5 rounded-full text-foreground text-xs transition-colors" type="button" aria-label="Remove filter Outerwear">
                 {"Outerwear"}
-                <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                   <path d="M18 6 6 18"></path>
                   <path d="m6 6 12 12"></path>
                 </svg>
               </button>
               <button className="bg-muted/40 border border-border font-medium gap-1.5 hover:bg-muted inline-flex items-center pl-2 pr-2 py-0.5 rounded-full text-foreground text-xs transition-colors" type="button" aria-label="Remove filter Northline">
                 {"Northline"}
-                <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                   <path d="M18 6 6 18"></path>
                   <path d="m6 6 12 12"></path>
                 </svg>
@@ -40,14 +40,14 @@ export function Pattern() {
               <button className="bg-muted/40 border border-border font-medium gap-1.5 hover:bg-muted inline-flex items-center pl-2 pr-2 py-0.5 rounded-full text-foreground text-xs transition-colors" type="button" aria-label="Remove filter Black">
                 <span className="border border-border/60 inline-block rounded-full shrink-0 size-2.5" aria-hidden="true" style={{backgroundColor: "oklch(0.205 0 0)"}}></span>
                 {"Black"}
-                <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                   <path d="M18 6 6 18"></path>
                   <path d="m6 6 12 12"></path>
                 </svg>
               </button>
               <button className="bg-muted/40 border border-border font-medium gap-1.5 hover:bg-muted inline-flex items-center pl-2 pr-2 py-0.5 rounded-full text-foreground text-xs transition-colors" type="button" aria-label="Remove filter $40 - $180">
                 {"$40 - $180"}
-                <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                <svg className="lucide lucide-x size-3 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                   <path d="M18 6 6 18"></path>
                   <path d="m6 6 12 12"></path>
                 </svg>
@@ -62,14 +62,14 @@ export function Pattern() {
               </h3>
               <ul className="flex flex-col gap-2.5">
                 <li className="flex gap-2.5 items-center">
-                  <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_0_" aria-checked="true" aria-labelledby="filter-2-category-outerwear-label">
+                  <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_0_" aria-checked="true" aria-labelledby="filter-2-category-outerwear-label">
                     <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                      <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                      <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
                     </span>
                   </Checkbox>
-                  <input id="filter-2-category-outerwear" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="filter-2-category-outerwear" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-2-category-outerwear" id="filter-2-category-outerwear-label">
                     <span className="truncate">
                       {"Outerwear"}
@@ -80,8 +80,8 @@ export function Pattern() {
                   </Label>
                 </li>
                 <li className="flex gap-2.5 items-center">
-                  <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_3_" aria-checked="false" aria-labelledby="filter-2-category-knitwear-label"></Checkbox>
-                  <input id="filter-2-category-knitwear" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_3_" aria-checked="false" aria-labelledby="filter-2-category-knitwear-label"></Checkbox>
+                  <input id="filter-2-category-knitwear" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-2-category-knitwear" id="filter-2-category-knitwear-label">
                     <span className="truncate">
                       {"Knitwear"}
@@ -92,8 +92,8 @@ export function Pattern() {
                   </Label>
                 </li>
                 <li className="flex gap-2.5 items-center">
-                  <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_6_" aria-checked="false" aria-labelledby="filter-2-category-tops-label"></Checkbox>
-                  <input id="filter-2-category-tops" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_6_" aria-checked="false" aria-labelledby="filter-2-category-tops-label"></Checkbox>
+                  <input id="filter-2-category-tops" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-2-category-tops" id="filter-2-category-tops-label">
                     <span className="truncate">
                       {"Tops"}
@@ -104,8 +104,8 @@ export function Pattern() {
                   </Label>
                 </li>
                 <li className="flex gap-2.5 items-center">
-                  <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_9_" aria-checked="false" aria-labelledby="filter-2-category-bottoms-label"></Checkbox>
-                  <input id="filter-2-category-bottoms" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_9_" aria-checked="false" aria-labelledby="filter-2-category-bottoms-label"></Checkbox>
+                  <input id="filter-2-category-bottoms" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-2-category-bottoms" id="filter-2-category-bottoms-label">
                     <span className="truncate">
                       {"Bottoms"}
@@ -116,8 +116,8 @@ export function Pattern() {
                   </Label>
                 </li>
                 <li className="flex gap-2.5 items-center">
-                  <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_c_" aria-checked="false" aria-labelledby="filter-2-category-shoes-label"></Checkbox>
-                  <input id="filter-2-category-shoes" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_c_" aria-checked="false" aria-labelledby="filter-2-category-shoes-label"></Checkbox>
+                  <input id="filter-2-category-shoes" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-2-category-shoes" id="filter-2-category-shoes-label">
                     <span className="truncate">
                       {"Shoes"}
@@ -128,8 +128,8 @@ export function Pattern() {
                   </Label>
                 </li>
                 <li className="flex gap-2.5 items-center">
-                  <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_f_" aria-checked="false" aria-labelledby="filter-2-category-bags-label"></Checkbox>
-                  <input id="filter-2-category-bags" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_f_" aria-checked="false" aria-labelledby="filter-2-category-bags-label"></Checkbox>
+                  <input id="filter-2-category-bags" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-2-category-bags" id="filter-2-category-bags-label">
                     <span className="truncate">
                       {"Bags"}
@@ -165,10 +165,10 @@ export function Pattern() {
                     <div className="cn-slider-range data-horizontal:h-full data-vertical:w-full select-none" data-orientation="horizontal" data-base-ui-slider-indicator="" style={{position: "relative", height: "inherit", "--start-position": "17.864271457085827%", "--relative-size": "56.237524950099804%", insetInlineStart: "var(--start-position)", width: "var(--relative-size)"}}></div>
                   </div>
                   <div className="block cn-slider-thumb disabled:opacity-50 disabled:pointer-events-none select-none shrink-0" data-orientation="horizontal" data-index="0" id="base-ui-_r_j_" style={{"--position": "17.864271457085827%", position: "absolute", insetInlineStart: "var(--position)", top: "50%", translate: "-50% -50%"}}>
-                    <input aria-orientation="horizontal" id="base-ui-_r_k_" max="240" min="0" step="5" type="range" value="40" aria-valuenow="40" aria-valuetext="40 start range" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "100%", height: "100%", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                    <input aria-orientation="horizontal" id="base-ui-_r_k_" max={240} min={0} step={5} type="range" value="40" aria-valuenow="40" aria-valuetext="40 start range" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "100%", height: "100%", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   </div>
                   <div className="block cn-slider-thumb disabled:opacity-50 disabled:pointer-events-none select-none shrink-0" data-orientation="horizontal" data-index="1" id="base-ui-_r_m_" style={{"--position": "74.10179640718563%", position: "absolute", insetInlineStart: "var(--position)", top: "50%", translate: "-50% -50%"}}>
-                    <input aria-orientation="horizontal" id="base-ui-_r_n_" max="240" min="0" step="5" type="range" value="180" aria-valuenow="180" aria-valuetext="180 end range" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "100%", height: "100%", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                    <input aria-orientation="horizontal" id="base-ui-_r_n_" max={240} min={0} step={5} type="range" value="180" aria-valuenow="180" aria-valuetext="180 end range" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "100%", height: "100%", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   </div>
                 </div>
               </Slider>
@@ -183,7 +183,7 @@ export function Pattern() {
               <ul className="flex flex-wrap gap-3" aria-label="Color swatches">
                 <li>
                   <button className="border border-border flex focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring/40 items-center justify-center outline-none relative ring-2 ring-foreground ring-offset-2 rounded-full size-7 transition-shadow" type="button" aria-pressed="true" aria-label="Black" title="Black" style={{backgroundColor: "oklch(0.205 0 0)"}}>
-                    <svg className="lucide lucide-check size-3 text-background" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                    <svg className="lucide lucide-check size-3 text-background" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                   </button>
@@ -213,22 +213,22 @@ export function Pattern() {
                 {"Size"}
               </h3>
               <div className="flex flex-wrap gap-1.5" aria-label="Sizes">
-                <Button className="min-w-12 tabular-nums" type="button" tabIndex="0" aria-pressed="false">
+                <Button className="min-w-12 tabular-nums" type="button" tabIndex={0} aria-pressed="false">
                   {"XS"}
                 </Button>
-                <Button className="min-w-12 tabular-nums" type="button" tabIndex="0" aria-pressed="false">
+                <Button className="min-w-12 tabular-nums" type="button" tabIndex={0} aria-pressed="false">
                   {"S"}
                 </Button>
-                <Button className="min-w-12 tabular-nums" type="button" tabIndex="0" aria-pressed="false">
+                <Button className="min-w-12 tabular-nums" type="button" tabIndex={0} aria-pressed="false">
                   {"M"}
                 </Button>
-                <Button className="min-w-12 tabular-nums" type="button" tabIndex="0" aria-pressed="false">
+                <Button className="min-w-12 tabular-nums" type="button" tabIndex={0} aria-pressed="false">
                   {"L"}
                 </Button>
-                <Button className="min-w-12 tabular-nums" type="button" tabIndex="0" aria-pressed="false">
+                <Button className="min-w-12 tabular-nums" type="button" tabIndex={0} aria-pressed="false">
                   {"XL"}
                 </Button>
-                <Button className="min-w-12 tabular-nums" type="button" tabIndex="0" aria-pressed="false">
+                <Button className="min-w-12 tabular-nums" type="button" tabIndex={0} aria-pressed="false">
                   {"XXL"}
                 </Button>
               </div>
@@ -242,14 +242,14 @@ export function Pattern() {
               </h3>
               <ul className="flex flex-col gap-2.5">
                 <li className="flex gap-2.5 items-center">
-                  <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_p_" aria-checked="true" aria-labelledby="filter-2-brand-northline-label">
+                  <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_p_" aria-checked="true" aria-labelledby="filter-2-brand-northline-label">
                     <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                      <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                      <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
                     </span>
                   </Checkbox>
-                  <input id="filter-2-brand-northline" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="filter-2-brand-northline" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-2-brand-northline" id="filter-2-brand-northline-label">
                     <span className="truncate">
                       {"Northline"}
@@ -260,8 +260,8 @@ export function Pattern() {
                   </Label>
                 </li>
                 <li className="flex gap-2.5 items-center">
-                  <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_s_" aria-checked="false" aria-labelledby="filter-2-brand-aster-label"></Checkbox>
-                  <input id="filter-2-brand-aster" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_s_" aria-checked="false" aria-labelledby="filter-2-brand-aster-label"></Checkbox>
+                  <input id="filter-2-brand-aster" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-2-brand-aster" id="filter-2-brand-aster-label">
                     <span className="truncate">
                       {"Aster Goods"}
@@ -272,8 +272,8 @@ export function Pattern() {
                   </Label>
                 </li>
                 <li className="flex gap-2.5 items-center">
-                  <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_v_" aria-checked="false" aria-labelledby="filter-2-brand-field-label"></Checkbox>
-                  <input id="filter-2-brand-field" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_v_" aria-checked="false" aria-labelledby="filter-2-brand-field-label"></Checkbox>
+                  <input id="filter-2-brand-field" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-2-brand-field" id="filter-2-brand-field-label">
                     <span className="truncate">
                       {"Field Supply"}
@@ -284,8 +284,8 @@ export function Pattern() {
                   </Label>
                 </li>
                 <li className="flex gap-2.5 items-center">
-                  <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_12_" aria-checked="false" aria-labelledby="filter-2-brand-maven-label"></Checkbox>
-                  <input id="filter-2-brand-maven" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_12_" aria-checked="false" aria-labelledby="filter-2-brand-maven-label"></Checkbox>
+                  <input id="filter-2-brand-maven" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <Label className="flex-1 font-normal gap-3 justify-between min-w-0 text-foreground text-sm" htmlFor="filter-2-brand-maven" id="filter-2-brand-maven-label">
                     <span className="truncate">
                       {"Maven & Co."}
@@ -299,10 +299,10 @@ export function Pattern() {
             </section>
           </FramePanel>
           <footer className="flex flex-row gap-2 items-center px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
-            <Button className="flex-1" type="button" tabIndex="0">
+            <Button className="flex-1" type="button" tabIndex={0}>
               {"Apply filters"}
             </Button>
-            <Button className="hover:text-foreground text-muted-foreground" type="button" tabIndex="0">
+            <Button className="hover:text-foreground text-muted-foreground" type="button" tabIndex={0}>
               {"Reset"}
             </Button>
           </footer>

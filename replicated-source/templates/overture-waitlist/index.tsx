@@ -973,15 +973,15 @@ export function Pattern() {
                   <path d="M239.4 31.8093H247.088V55.4243C247.088 58.0758 246.455 60.3959 245.188 62.3846C243.933 64.3732 242.175 65.9238 239.915 67.0365C237.654 68.1374 235.02 68.6878 232.013 68.6878C228.995 68.6878 226.355 68.1374 224.094 67.0365C221.833 65.9238 220.076 64.3732 218.821 62.3846C217.566 60.3959 216.939 58.0758 216.939 55.4243V31.8093H224.627V54.7674C224.627 56.1523 224.929 57.3834 225.532 58.4605C226.148 59.5377 227.012 60.3841 228.125 60.9996C229.238 61.6151 230.534 61.9229 232.013 61.9229C233.505 61.9229 234.801 61.6151 235.902 60.9996C237.015 60.3841 237.873 59.5377 238.476 58.4605C239.092 57.3834 239.4 56.1523 239.4 54.7674V31.8093Z" fill="currentColor"></path>
                   <path d="M176.323 68.1729V31.8093H200.826V38.148H184.012V46.8128H199.566V53.1516H184.012V61.8341H200.897V68.1729H176.323Z" fill="currentColor"></path>
                   <path d="M130.5 31.8093H139.945L154.496 57.13V31.8093H162.185V68.1729H153.154L138.189 42.13V68.1729H130.5Z" fill="currentColor"></path>
-                  <path opacity="0.2" fillRule="evenodd" clipRule="evenodd" d="M67.1667 3.84615H33.8333C17.548 3.84615 4.34615 17.048 4.34615 33.3333V66.6667C4.34615 82.952 17.548 96.1538 33.8333 96.1538H67.1667C83.452 96.1538 96.6538 82.952 96.6538 66.6667V33.3333C96.6538 17.048 83.452 3.84615 67.1667 3.84615ZM33.8333 0C15.4238 0 0.5 14.9238 0.5 33.3333V66.6667C0.5 85.0762 15.4238 100 33.8333 100H67.1667C85.5762 100 100.5 85.0762 100.5 66.6667V33.3333C100.5 14.9238 85.5762 0 67.1667 0H33.8333Z" fill="currentColor"></path>
-                  <circle cx="70.634" cy="29.698" r="4.69799" fill="currentColor"></circle>
+                  <path opacity={0.2} fillRule="evenodd" clipRule="evenodd" d="M67.1667 3.84615H33.8333C17.548 3.84615 4.34615 17.048 4.34615 33.3333V66.6667C4.34615 82.952 17.548 96.1538 33.8333 96.1538H67.1667C83.452 96.1538 96.6538 82.952 96.6538 66.6667V33.3333C96.6538 17.048 83.452 3.84615 67.1667 3.84615ZM33.8333 0C15.4238 0 0.5 14.9238 0.5 33.3333V66.6667C0.5 85.0762 15.4238 100 33.8333 100H67.1667C85.5762 100 100.5 85.0762 100.5 66.6667V33.3333C100.5 14.9238 85.5762 0 67.1667 0H33.8333Z" fill="currentColor"></path>
+                  <circle cx={70.634} cy={29.698} r={4.69799} fill="currentColor"></circle>
                   <path fillRule="evenodd" clipRule="evenodd" d="M25.668 56.879V29.6978C25.668 27.1032 27.7713 24.9998 30.366 24.9998C32.9606 24.9998 35.0639 27.1032 35.0639 29.6978V56.879C35.0639 61.6976 38.9702 65.6038 43.7888 65.6038H57.2116C62.0302 65.6038 65.9364 61.6976 65.9364 56.879V43.5904C65.9364 40.9958 68.0398 38.8924 70.6344 38.8924C73.229 38.8924 75.3324 40.9958 75.3324 43.5904V56.879C75.3324 66.8869 67.2194 74.9998 57.2116 74.9998H43.7888C33.7809 74.9998 25.668 66.8869 25.668 56.879Z" fill="currentColor"></path>
                 </svg>
               </div>
             </a>
             <nav className="flex gap-2 items-center" aria-label="Social links">
               <Button className="[&_svg:not([class*='size-'])]:size-4 active:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 backdrop-blur-md bg-black/20 bg-clip-padding border border-white/20 dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-black/10 hover:text-foreground in-data-[slot=button-group]:rounded-lg rounded-full size-7 text-sm" target="_blank" rel="noreferrer" aria-label="Open X profile" variant="outline" size="icon-sm" href="https://x.com/neui_io">
-                <svg className="size-3" height="23" width="23" viewBox="0 0 1200 1227" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <svg className="size-3" height={23} width={23} viewBox="0 0 1200 1227" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                   <path fill="currentColor" d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"></path>
                 </svg>
                 <span className="sr-only">
@@ -1025,7 +1025,7 @@ export function Pattern() {
                     <div className="absolute bg-[repeating-linear-gradient(131deg,rgba(255,255,255,0)_0_8px,rgba(255,255,255,0.04)_8px_9px)] inset-x-[-14%] inset-y-[-34%] mask-[radial-gradient(ellipse_at_center,transparent_0%,black_24%,transparent_84%)] opacity-26 pointer-events-none"></div>
                     <div className="flex flex-col flex-wrap gap-1.5 items-center justify-center md:flex-nowrap md:flex-row px-1.5 relative">
                       <span className="bg-black/48 border border-white/10 font-medium gap-2 inline-flex items-center max-w-50 md:max-w-none md:w-auto md:whitespace-nowrap px-3.5 py-1.75 rounded-full sm:px-4 sm:py-2 sm:text-sm text-white/84 text-xs w-full">
-                        <svg className="lucide lucide-component size-3.5 sm:size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <svg className="lucide lucide-component size-3.5 sm:size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                           <path d="M15.536 11.293a1 1 0 0 0 0 1.414l2.376 2.377a1 1 0 0 0 1.414 0l2.377-2.377a1 1 0 0 0 0-1.414l-2.377-2.377a1 1 0 0 0-1.414 0z"></path>
                           <path d="M2.297 11.293a1 1 0 0 0 0 1.414l2.377 2.377a1 1 0 0 0 1.414 0l2.377-2.377a1 1 0 0 0 0-1.414L6.088 8.916a1 1 0 0 0-1.414 0z"></path>
                           <path d="M8.916 17.912a1 1 0 0 0 0 1.415l2.377 2.376a1 1 0 0 0 1.414 0l2.377-2.376a1 1 0 0 0 0-1.415l-2.377-2.376a1 1 0 0 0-1.414 0z"></path>
@@ -1034,24 +1034,24 @@ export function Pattern() {
                         {"1000+ UI Blocks"}
                       </span>
                       <span className="bg-black/48 border border-white/10 font-medium gap-2 inline-flex items-center max-w-50 md:max-w-none md:w-auto md:whitespace-nowrap px-3.5 py-1.75 rounded-full sm:px-4 sm:py-2 sm:text-sm text-white/84 text-xs w-full">
-                        <svg className="lucide lucide-sparkles size-3.5 sm:size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <svg className="lucide lucide-sparkles size-3.5 sm:size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                           <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path>
                           <path d="M20 2v4"></path>
                           <path d="M22 4h-4"></path>
-                          <circle cx="4" cy="20" r="2"></circle>
+                          <circle cx={4} cy={20} r={2}></circle>
                         </svg>
                         {"2200+ Animated Icons"}
                       </span>
                       <span className="bg-black/48 border border-white/10 font-medium gap-2 inline-flex items-center max-w-50 md:max-w-none md:w-auto md:whitespace-nowrap px-3.5 py-1.75 rounded-full sm:px-4 sm:py-2 sm:text-sm text-white/84 text-xs w-full">
-                        <svg className="lucide lucide-workflow size-3.5 sm:size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                          <rect width="8" height="8" x="3" y="3" rx="2"></rect>
+                        <svg className="lucide lucide-workflow size-3.5 sm:size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <rect width={8} height={8} x={3} y={3} rx={2}></rect>
                           <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
-                          <rect width="8" height="8" x="13" y="13" rx="2"></rect>
+                          <rect width={8} height={8} x={13} y={13} rx={2}></rect>
                         </svg>
                         {"30+ Templates"}
                       </span>
                       <span className="bg-black/48 border border-white/10 font-medium gap-2 inline-flex items-center max-w-50 md:max-w-none md:w-auto md:whitespace-nowrap px-3.5 py-1.75 rounded-full sm:px-4 sm:py-2 sm:text-sm text-white/84 text-xs w-full">
-                        <svg className="lucide lucide-bot-message-square size-3.5 sm:size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                        <svg className="lucide lucide-bot-message-square size-3.5 sm:size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                           <path d="M12 6V2H8"></path>
                           <path d="M15 11v2"></path>
                           <path d="M2 12h2"></path>
@@ -1074,7 +1074,7 @@ export function Pattern() {
                       <label htmlFor="waitlist-company">
                         {"Company"}
                       </label>
-                      <input id="waitlist-company" type="text" tabIndex="-1" autoComplete="off" name="company" value="" />
+                      <input id="waitlist-company" type="text" tabIndex={-1} autoComplete="off" name="company" value="" />
                     </div>
                     <div className="flex-1 min-w-0">
                       <label className="sr-only" htmlFor="waitlist-email">
@@ -1084,7 +1084,7 @@ export function Pattern() {
                     </div>
                     <button className="active:translate-y-px bg-indigo-600 disabled:opacity-60 disabled:pointer-events-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-300/70 focus-visible:ring-offset-2 focus-visible:ring-offset-background font-medium gap-1.5 h-10 hover:bg-indigo-700 inline-flex items-center justify-center px-4 rounded-full shadow-black/30 shadow-lg shrink-0 sm:min-w-36 sm:w-auto text-sm text-white touch-manipulation transition-[background-color,transform]" type="submit">
                       {"Join Waitlist"}
-                      <svg className="lucide lucide-arrow-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <svg className="lucide lucide-arrow-right size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
                       </svg>
@@ -1102,11 +1102,11 @@ export function Pattern() {
       <div className="backdrop-blur-xl bg-black/28 border border-white/10 bottom-3 fixed md:bottom-10 md:p-3 md:right-10 p-1.5 right-3 rounded-xl shadow-black/10 shadow-lg text-left">
         <div className="flex gap-2 items-center">
           <div className="bg-white/10 border border-white/10 flex gap-2 items-center justify-center rounded-full size-8">
-            <svg className="lucide lucide-users size-3.5 text-white/60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <svg className="lucide lucide-users size-3.5 text-white/60" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
               <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
               <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-              <circle cx="9" cy="7" r="4"></circle>
+              <circle cx={9} cy={7} r={4}></circle>
             </svg>
           </div>
           <div className="flex flex-col">

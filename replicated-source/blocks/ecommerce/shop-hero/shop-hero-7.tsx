@@ -29,14 +29,14 @@ export function Pattern() {
             </h3>
             <a className="gap-1.5 group/cta hover:text-primary hover:underline inline-flex items-center text-muted-foreground text-sm transition-colors underline-offset-4" href="#shop-all" aria-label="Browse the full Halden Goods catalog">
               {"See The Full Catalog"}
-              <svg className="group-hover/cta:-translate-y-px group-hover/cta:translate-x-px lucide lucide-arrow-up-right size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
+              <svg className="group-hover/cta:-translate-y-px group-hover/cta:translate-x-px lucide lucide-arrow-up-right size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                 <path d="M7 7h10v10"></path>
                 <path d="M7 17 17 7"></path>
               </svg>
             </a>
           </div>
           <TabsList className="gap-2 grid grid-cols-1 h-auto lg:gap-3 p-0 sm:grid-cols-3 w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
-            <TabsTrigger className="data-active:ring-2 data-active:ring-primary duration-200 ease-out flex gap-3 group/chip h-auto hover:bg-muted/30 justify-start lg:gap-3.5 lg:p-3 p-2.5 ring-1 ring-border text-left" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-controls="base-ui-_r_3_" extracted="1">
+            <TabsTrigger className="data-active:ring-2 data-active:ring-primary duration-200 ease-out flex gap-3 group/chip h-auto hover:bg-muted/30 justify-start lg:gap-3.5 lg:p-3 p-2.5 ring-1 ring-border text-left" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex={0} role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-controls="base-ui-_r_3_" extracted="1">
               <Item className="lg:size-14 overflow-hidden p-0 relative size-12" variant="muted" size="default">
                 <img className="duration-500 ease-out group-data-active/chip:scale-[1.06] group-hover/chip:scale-[1.05] object-cover size-full transition-transform" alt="" aria-hidden="true" loading="lazy" src="https://images.unsplash.com/photo-1581605405669-fcdf81165afa?auto=format&fit=crop&w=1400&h=1000&q=80" />
               </Item>
@@ -60,12 +60,12 @@ export function Pattern() {
                   </span>
                 </span>
               </div>
-              <svg className="-translate-x-1 duration-300 group-data-active/chip:opacity-100 group-data-active/chip:translate-x-0 lucide lucide-arrow-right opacity-0 shrink-0 size-4 text-foreground/40 transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+              <svg className="-translate-x-1 duration-300 group-data-active/chip:opacity-100 group-data-active/chip:translate-x-0 lucide lucide-arrow-right opacity-0 shrink-0 size-4 text-foreground/40 transition-all" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="m12 5 7 7-7 7"></path>
               </svg>
             </TabsTrigger>
-            <TabsTrigger className="data-active:ring-2 data-active:ring-primary duration-200 ease-out flex gap-3 group/chip h-auto hover:bg-muted/30 justify-start lg:gap-3.5 lg:p-3 p-2.5 ring-1 ring-border text-left" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
+            <TabsTrigger className="data-active:ring-2 data-active:ring-primary duration-200 ease-out flex gap-3 group/chip h-auto hover:bg-muted/30 justify-start lg:gap-3.5 lg:p-3 p-2.5 ring-1 ring-border text-left" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_1_">
               <Item className="lg:size-14 overflow-hidden p-0 relative size-12" variant="muted" size="default">
                 <img className="duration-500 ease-out group-data-active/chip:scale-[1.06] group-hover/chip:scale-[1.05] object-cover size-full transition-transform" alt="" aria-hidden="true" loading="lazy" src="https://images.unsplash.com/photo-1547949003-9792a18a2601?auto=format&fit=crop&w=1400&h=1000&q=80" />
               </Item>
@@ -89,12 +89,12 @@ export function Pattern() {
                   </span>
                 </span>
               </div>
-              <svg className="-translate-x-1 duration-300 group-data-active/chip:opacity-100 group-data-active/chip:translate-x-0 lucide lucide-arrow-right opacity-0 shrink-0 size-4 text-foreground/40 transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+              <svg className="-translate-x-1 duration-300 group-data-active/chip:opacity-100 group-data-active/chip:translate-x-0 lucide lucide-arrow-right opacity-0 shrink-0 size-4 text-foreground/40 transition-all" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="m12 5 7 7-7 7"></path>
               </svg>
             </TabsTrigger>
-            <TabsTrigger className="data-active:ring-2 data-active:ring-primary duration-200 ease-out flex gap-3 group/chip h-auto hover:bg-muted/30 justify-start lg:gap-3.5 lg:p-3 p-2.5 ring-1 ring-border text-left" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
+            <TabsTrigger className="data-active:ring-2 data-active:ring-primary duration-200 ease-out flex gap-3 group/chip h-auto hover:bg-muted/30 justify-start lg:gap-3.5 lg:p-3 p-2.5 ring-1 ring-border text-left" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_2_">
               <Item className="lg:size-14 overflow-hidden p-0 relative size-12" variant="muted" size="default">
                 <img className="duration-500 ease-out group-data-active/chip:scale-[1.06] group-hover/chip:scale-[1.05] object-cover size-full transition-transform" alt="" aria-hidden="true" loading="lazy" src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=1400&h=1000&q=80" />
               </Item>
@@ -118,13 +118,13 @@ export function Pattern() {
                   </span>
                 </span>
               </div>
-              <svg className="-translate-x-1 duration-300 group-data-active/chip:opacity-100 group-data-active/chip:translate-x-0 lucide lucide-arrow-right opacity-0 shrink-0 size-4 text-foreground/40 transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+              <svg className="-translate-x-1 duration-300 group-data-active/chip:opacity-100 group-data-active/chip:translate-x-0 lucide lucide-arrow-right opacity-0 shrink-0 size-4 text-foreground/40 transition-all" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="m12 5 7 7-7 7"></path>
               </svg>
             </TabsTrigger>
           </TabsList>
-          <TabsContent className="mt-0" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_3_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_0_">
+          <TabsContent className="mt-0" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_3_" role="tabpanel" tabIndex={0} index="0" aria-labelledby="base-ui-_r_0_">
             <Item className="aspect-[4/5] block group/panel lg:aspect-[16/9] md:aspect-[16/10] overflow-hidden p-0 relative" variant="muted" size="default">
               <img className="absolute duration-700 ease-out group-hover/panel:scale-[1.02] inset-0 object-cover size-full transition-transform" alt="Outpost 45L Pack in Slate, the hero piece of the Outpost Collection" loading="eager" src="https://images.unsplash.com/photo-1581605405669-fcdf81165afa?auto=format&fit=crop&w=1400&h=1000&q=80" />
               <div className="absolute bg-gradient-to-t bottom-0 from-black/90 h-3/4 inset-x-0 to-transparent via-black/45" aria-hidden="true"></div>
@@ -148,16 +148,16 @@ export function Pattern() {
                 </div>
                 <div className="border-t border-white/15 flex flex-wrap gap-x-5 gap-y-3 items-center justify-between pt-5">
                   <div className="flex flex-wrap gap-x-5 gap-y-3 items-center">
-                    <Button href="#shop-outpost" aria-label="Shop The Outpost" role="button" tabIndex="0">
+                    <Button href="#shop-outpost" aria-label="Shop The Outpost" role="button" tabIndex={0}>
                       {"Shop The Outpost"}
-                      <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
+                      <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
                       </svg>
                     </Button>
                     <a className="font-medium gap-1.5 hover:opacity-90 hover:underline inline-flex items-center text-sm text-white transition-opacity underline-offset-4" href="#lookbook-outpost" aria-label="View The Lookbook">
                       {"View The Lookbook"}
-                      <svg className="lucide lucide-arrow-up-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
+                      <svg className="lucide lucide-arrow-up-right size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                         <path d="M7 7h10v10"></path>
                         <path d="M7 17 17 7"></path>
                       </svg>

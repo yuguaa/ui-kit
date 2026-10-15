@@ -24,7 +24,7 @@ export function Pattern() {
                   {"$6.8M"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                  <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
+                  <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                     <path d="M16 7h6v6"></path>
                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                   </svg>
@@ -38,45 +38,45 @@ export function Pattern() {
                 <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_0_] {\n  --color-value: var(--color-emerald-500);\n}\n\n\n.dark [data-chart=chart-_r_0_] {\n  --color-value: var(--color-emerald-500);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                    <div className="recharts-wrapper" width="240" height="64" style={{position: "relative", cursor: "default", width: "240px", height: "64px"}}>
-                      <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex="-1" style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px"}}></div>
-                      <svg className="recharts-surface" role="application" tabIndex="0" width="240" height="64" viewBox="0 0 240 64" style={{width: "100%", height: "100%", display: "block"}}>
+                    <div className="recharts-wrapper" width={240} height={64} style={{position: "relative", cursor: "default", width: "240px", height: "64px"}}>
+                      <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex={-1} style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px"}}></div>
+                      <svg className="recharts-surface" role="application" tabIndex={0} width={240} height={64} viewBox="0 0 240 64" style={{width: "100%", height: "100%", display: "block"}}>
                         <title></title>
                         <desc></desc>
-                        <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                        <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                         <defs>
                           <clippath id="recharts1-clip">
-                            <rect x="0" y="0" height="64" width="240"></rect>
+                            <rect x={0} y={0} height={64} width={240}></rect>
                           </clippath>
                         </defs>
                         <defs>
-                          <lineargradient id="net-worth-fill" x1="0" x2="0" y1="0" y2="1">
-                            <stop offset="0%" stopColor="var(--color-value)" stopOpacity="0.18"></stop>
-                            <stop offset="100%" stopColor="var(--color-value)" stopOpacity="0.02"></stop>
+                          <lineargradient id="net-worth-fill" x1={0} x2={0} y1={0} y2={1}>
+                            <stop offset="0%" stopColor="var(--color-value)" stopOpacity={0.18}></stop>
+                            <stop offset="100%" stopColor="var(--color-value)" stopOpacity={0.02}></stop>
                           </lineargradient>
                         </defs>
-                        <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                        <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                           <g className="recharts-area recharts-layer">
                             <g className="recharts-layer">
                               <g className="recharts-layer" clipPath="url(#animationClipPath-recharts-area-_r_4_)">
                                 <g className="recharts-layer">
-                                  <path className="recharts-area-area recharts-curve" strokeWidth="1" fill="url(#net-worth-fill)" fillOpacity="0.6" height="64" stroke="none" width="240" id="recharts-area-_r_4_" d="M0,60.235L10.435,56.471L20.87,56.471L31.304,50.824L41.739,43.294L52.174,48.941L62.609,45.176L73.043,52.706L83.478,35.765L93.913,28.235L104.348,32L114.783,32L125.217,35.765L135.652,35.765L146.087,47.059L156.522,37.647L166.957,32L177.391,22.588L187.826,28.235L198.261,20.706L208.696,9.412L219.13,3.765L229.565,13.176L240,33.882L240,64L229.565,64L219.13,64L208.696,64L198.261,64L187.826,64L177.391,64L166.957,64L156.522,64L146.087,64L135.652,64L125.217,64L114.783,64L104.348,64L93.913,64L83.478,64L73.043,64L62.609,64L52.174,64L41.739,64L31.304,64L20.87,64L10.435,64L0,64Z"></path>
-                                  <path className="recharts-area-curve recharts-curve" strokeWidth="1" fill="none" fillOpacity="0.6" height="64" stroke="var(--color-value)" width="240" d="M0,60.235L10.435,56.471L20.87,56.471L31.304,50.824L41.739,43.294L52.174,48.941L62.609,45.176L73.043,52.706L83.478,35.765L93.913,28.235L104.348,32L114.783,32L125.217,35.765L135.652,35.765L146.087,47.059L156.522,37.647L166.957,32L177.391,22.588L187.826,28.235L198.261,20.706L208.696,9.412L219.13,3.765L229.565,13.176L240,33.882"></path>
+                                  <path className="recharts-area-area recharts-curve" strokeWidth={1} fill="url(#net-worth-fill)" fillOpacity={0.6} height={64} stroke="none" width={240} id="recharts-area-_r_4_" d="M0,60.235L10.435,56.471L20.87,56.471L31.304,50.824L41.739,43.294L52.174,48.941L62.609,45.176L73.043,52.706L83.478,35.765L93.913,28.235L104.348,32L114.783,32L125.217,35.765L135.652,35.765L146.087,47.059L156.522,37.647L166.957,32L177.391,22.588L187.826,28.235L198.261,20.706L208.696,9.412L219.13,3.765L229.565,13.176L240,33.882L240,64L229.565,64L219.13,64L208.696,64L198.261,64L187.826,64L177.391,64L166.957,64L156.522,64L146.087,64L135.652,64L125.217,64L114.783,64L104.348,64L93.913,64L83.478,64L73.043,64L62.609,64L52.174,64L41.739,64L31.304,64L20.87,64L10.435,64L0,64Z"></path>
+                                  <path className="recharts-area-curve recharts-curve" strokeWidth={1} fill="none" fillOpacity={0.6} height={64} stroke="var(--color-value)" width={240} d="M0,60.235L10.435,56.471L20.87,56.471L31.304,50.824L41.739,43.294L52.174,48.941L62.609,45.176L73.043,52.706L83.478,35.765L93.913,28.235L104.348,32L114.783,32L125.217,35.765L135.652,35.765L146.087,47.059L156.522,37.647L166.957,32L177.391,22.588L187.826,28.235L198.261,20.706L208.696,9.412L219.13,3.765L229.565,13.176L240,33.882"></path>
                                 </g>
                               </g>
                             </g>
                           </g>
                         </g>
-                        <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_400" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_500" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_600" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_2000" tabIndex="-1"></g>
+                        <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_400" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_500" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_600" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_2000" tabIndex={-1}></g>
                       </svg>
                     </div>
                   </div>
@@ -96,8 +96,8 @@ export function Pattern() {
                     <svg className="shrink-0 size-3.5" aria-hidden="true" xmlns:xlink="http://www.w3.org/1999/xlink" xmlSpace="preserve" overflow="hidden" viewBox="0 0 268.152 273.883">
                       <defs>
                         <lineargradient id="a">
-                          <stop offset="0" stopColor="#0fbc5c"></stop>
-                          <stop offset="1" stopColor="#0cba65"></stop>
+                          <stop offset={0} stopColor="#0fbc5c"></stop>
+                          <stop offset={1} stopColor="#0cba65"></stop>
                         </lineargradient>
                         <lineargradient id="g">
                           <stop offset=".231" stopColor="#0fbc5f"></stop>
@@ -109,7 +109,7 @@ export function Pattern() {
                           <stop offset=".771" stopColor="#38c02b"></stop>
                           <stop offset=".861" stopColor="#52c218"></stop>
                           <stop offset=".915" stopColor="#67c30f"></stop>
-                          <stop offset="1" stopColor="#86c504"></stop>
+                          <stop offset={1} stopColor="#86c504"></stop>
                         </lineargradient>
                         <lineargradient id="h">
                           <stop offset=".142" stopColor="#1abd4d"></stop>
@@ -128,7 +128,7 @@ export function Pattern() {
                           <stop offset=".604" stopColor="#ff692c"></stop>
                           <stop offset=".727" stopColor="#ff7825"></stop>
                           <stop offset=".885" stopColor="#ff8d1b"></stop>
-                          <stop offset="1" stopColor="#ff9f13"></stop>
+                          <stop offset={1} stopColor="#ff9f13"></stop>
                         </lineargradient>
                         <lineargradient id="b">
                           <stop offset=".231" stopColor="#ff4541"></stop>
@@ -138,11 +138,11 @@ export function Pattern() {
                           <stop offset=".699" stopColor="#ff5138"></stop>
                           <stop offset=".771" stopColor="#ff5b33"></stop>
                           <stop offset=".861" stopColor="#ff6c29"></stop>
-                          <stop offset="1" stopColor="#ff8c18"></stop>
+                          <stop offset={1} stopColor="#ff8c18"></stop>
                         </lineargradient>
                         <lineargradient id="d">
                           <stop offset=".408" stopColor="#fb4e5a"></stop>
-                          <stop offset="1" stopColor="#ff4540"></stop>
+                          <stop offset={1} stopColor="#ff4540"></stop>
                         </lineargradient>
                         <lineargradient id="c">
                           <stop offset=".132" stopColor="#0cba65"></stop>
@@ -163,20 +163,20 @@ export function Pattern() {
                           <stop offset=".771" stopColor="#ffcd0a"></stop>
                           <stop offset=".861" stopColor="#fecf0a"></stop>
                           <stop offset=".915" stopColor="#fecf08"></stop>
-                          <stop offset="1" stopColor="#fdcd01"></stop>
+                          <stop offset={1} stopColor="#fdcd01"></stop>
                         </lineargradient>
-                        <lineargradient xlinkHref="#a" id="s" x1="219.7" x2="254.467" y1="329.535" y2="329.535" gradientUnits="userSpaceOnUse"></lineargradient>
-                        <radialgradient xlinkHref="#b" id="m" cx="109.627" cy="135.862" r="71.46" fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 1.043 1.45573 2.55542 290.525 -400.634)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <radialgradient xlinkHref="#c" id="n" cx="45.259" cy="279.274" r="71.46" fx="45.259" fy="279.274" gradientTransform="matrix(-3.5126 -4.45809 -1.69255 1.26062 870.8 191.554)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <radialgradient xlinkHref="#d" id="l" cx="304.017" cy="118.009" r="47.854" fx="304.017" fy="118.009" gradientTransform="matrix(2.06435 0 0 2.59204 -297.679 -151.747)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <radialgradient xlinkHref="#e" id="o" cx="181.001" cy="177.201" r="71.46" fx="181.001" fy="177.201" gradientTransform="matrix(-.24858 2.08314 2.96249 .33417 -255.146 -331.164)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <radialgradient xlinkHref="#f" id="p" cx="207.673" cy="108.097" r="41.102" fx="207.673" fy="108.097" gradientTransform="matrix(-1.2492 1.34326 -3.89684 -3.4257 880.501 194.905)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <radialgradient xlinkHref="#g" id="r" cx="109.627" cy="135.862" r="71.46" fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 -1.043 1.45573 -2.55542 290.525 838.683)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <radialgradient xlinkHref="#h" id="j" cx="154.87" cy="145.969" r="71.46" fx="154.87" fy="145.969" gradientTransform="matrix(-.0814 -1.93722 2.92674 -.11625 -215.135 632.86)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <filter id="q" width="1.097" height="1.116" x="-.048" y="-.058" color-interpolation-filters="sRGB">
+                        <lineargradient xlinkHref="#a" id="s" x1={219.7} x2={254.467} y1={329.535} y2={329.535} gradientUnits="userSpaceOnUse"></lineargradient>
+                        <radialgradient xlinkHref="#b" id="m" cx={109.627} cy={135.862} r={71.46} fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 1.043 1.45573 2.55542 290.525 -400.634)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <radialgradient xlinkHref="#c" id="n" cx={45.259} cy={279.274} r={71.46} fx="45.259" fy="279.274" gradientTransform="matrix(-3.5126 -4.45809 -1.69255 1.26062 870.8 191.554)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <radialgradient xlinkHref="#d" id="l" cx={304.017} cy={118.009} r={47.854} fx="304.017" fy="118.009" gradientTransform="matrix(2.06435 0 0 2.59204 -297.679 -151.747)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <radialgradient xlinkHref="#e" id="o" cx={181.001} cy={177.201} r={71.46} fx="181.001" fy="177.201" gradientTransform="matrix(-.24858 2.08314 2.96249 .33417 -255.146 -331.164)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <radialgradient xlinkHref="#f" id="p" cx={207.673} cy={108.097} r={41.102} fx="207.673" fy="108.097" gradientTransform="matrix(-1.2492 1.34326 -3.89684 -3.4257 880.501 194.905)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <radialgradient xlinkHref="#g" id="r" cx={109.627} cy={135.862} r={71.46} fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 -1.043 1.45573 -2.55542 290.525 838.683)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <radialgradient xlinkHref="#h" id="j" cx={154.87} cy={145.969} r={71.46} fx="154.87" fy="145.969" gradientTransform="matrix(-.0814 -1.93722 2.92674 -.11625 -215.135 632.86)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <filter id="q" width={1.097} height={1.116} x="-.048" y="-.058" color-interpolation-filters="sRGB">
                           <fegaussianblur stdDeviation="1.701"></fegaussianblur>
                         </filter>
-                        <filter id="k" width="1.033" height="1.02" x="-.017" y="-.01" color-interpolation-filters="sRGB">
+                        <filter id="k" width={1.033} height={1.02} x="-.017" y="-.01" color-interpolation-filters="sRGB">
                           <fegaussianblur stdDeviation=".242"></fegaussianblur>
                         </filter>
                         <clippath id="i" clippathunits="userSpaceOnUse">
@@ -218,7 +218,7 @@ export function Pattern() {
                   {"$4.2M"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                  <svg className="lucide lucide-trending-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
+                  <svg className="lucide lucide-trending-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
                     <path d="M16 17h6v-6"></path>
                     <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                   </svg>
@@ -232,45 +232,45 @@ export function Pattern() {
                 <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_1_] {\n  --color-value: var(--color-rose-500);\n}\n\n\n.dark [data-chart=chart-_r_1_] {\n  --color-value: var(--color-rose-500);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                    <div className="recharts-wrapper" width="240" height="64" style={{position: "relative", cursor: "default", width: "240px", height: "64px"}}>
-                      <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex="-1" style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px"}}></div>
-                      <svg className="recharts-surface" role="application" tabIndex="0" width="240" height="64" viewBox="0 0 240 64" style={{width: "100%", height: "100%", display: "block"}}>
+                    <div className="recharts-wrapper" width={240} height={64} style={{position: "relative", cursor: "default", width: "240px", height: "64px"}}>
+                      <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex={-1} style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px"}}></div>
+                      <svg className="recharts-surface" role="application" tabIndex={0} width={240} height={64} viewBox="0 0 240 64" style={{width: "100%", height: "100%", display: "block"}}>
                         <title></title>
                         <desc></desc>
-                        <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                        <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                         <defs>
                           <clippath id="recharts2-clip">
-                            <rect x="0" y="0" height="64" width="240"></rect>
+                            <rect x={0} y={0} height={64} width={240}></rect>
                           </clippath>
                         </defs>
                         <defs>
-                          <lineargradient id="portfolio-fill" x1="0" x2="0" y1="0" y2="1">
-                            <stop offset="0%" stopColor="var(--color-value)" stopOpacity="0.18"></stop>
-                            <stop offset="100%" stopColor="var(--color-value)" stopOpacity="0.02"></stop>
+                          <lineargradient id="portfolio-fill" x1={0} x2={0} y1={0} y2={1}>
+                            <stop offset="0%" stopColor="var(--color-value)" stopOpacity={0.18}></stop>
+                            <stop offset="100%" stopColor="var(--color-value)" stopOpacity={0.02}></stop>
                           </lineargradient>
                         </defs>
-                        <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                        <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                           <g className="recharts-area recharts-layer">
                             <g className="recharts-layer">
                               <g className="recharts-layer" clipPath="url(#animationClipPath-recharts-area-_r_5_)">
                                 <g className="recharts-layer">
-                                  <path className="recharts-area-area recharts-curve" strokeWidth="1" fill="url(#portfolio-fill)" fillOpacity="0.6" height="64" stroke="none" width="240" id="recharts-area-_r_5_" d="M0,5.333L10.435,29.333L20.87,29.333L31.304,42.667L41.739,34.667L52.174,58.667L62.609,58.667L73.043,58.667L83.478,58.667L93.913,48L104.348,42.667L114.783,29.333L125.217,29.333L135.652,37.333L146.087,37.333L156.522,37.333L166.957,56L177.391,21.333L187.826,21.333L198.261,21.333L208.696,32L219.13,42.667L229.565,42.667L240,32L240,64L229.565,64L219.13,64L208.696,64L198.261,64L187.826,64L177.391,64L166.957,64L156.522,64L146.087,64L135.652,64L125.217,64L114.783,64L104.348,64L93.913,64L83.478,64L73.043,64L62.609,64L52.174,64L41.739,64L31.304,64L20.87,64L10.435,64L0,64Z"></path>
-                                  <path className="recharts-area-curve recharts-curve" strokeWidth="1" fill="none" fillOpacity="0.6" height="64" stroke="var(--color-value)" width="240" d="M0,5.333L10.435,29.333L20.87,29.333L31.304,42.667L41.739,34.667L52.174,58.667L62.609,58.667L73.043,58.667L83.478,58.667L93.913,48L104.348,42.667L114.783,29.333L125.217,29.333L135.652,37.333L146.087,37.333L156.522,37.333L166.957,56L177.391,21.333L187.826,21.333L198.261,21.333L208.696,32L219.13,42.667L229.565,42.667L240,32"></path>
+                                  <path className="recharts-area-area recharts-curve" strokeWidth={1} fill="url(#portfolio-fill)" fillOpacity={0.6} height={64} stroke="none" width={240} id="recharts-area-_r_5_" d="M0,5.333L10.435,29.333L20.87,29.333L31.304,42.667L41.739,34.667L52.174,58.667L62.609,58.667L73.043,58.667L83.478,58.667L93.913,48L104.348,42.667L114.783,29.333L125.217,29.333L135.652,37.333L146.087,37.333L156.522,37.333L166.957,56L177.391,21.333L187.826,21.333L198.261,21.333L208.696,32L219.13,42.667L229.565,42.667L240,32L240,64L229.565,64L219.13,64L208.696,64L198.261,64L187.826,64L177.391,64L166.957,64L156.522,64L146.087,64L135.652,64L125.217,64L114.783,64L104.348,64L93.913,64L83.478,64L73.043,64L62.609,64L52.174,64L41.739,64L31.304,64L20.87,64L10.435,64L0,64Z"></path>
+                                  <path className="recharts-area-curve recharts-curve" strokeWidth={1} fill="none" fillOpacity={0.6} height={64} stroke="var(--color-value)" width={240} d="M0,5.333L10.435,29.333L20.87,29.333L31.304,42.667L41.739,34.667L52.174,58.667L62.609,58.667L73.043,58.667L83.478,58.667L93.913,48L104.348,42.667L114.783,29.333L125.217,29.333L135.652,37.333L146.087,37.333L156.522,37.333L166.957,56L177.391,21.333L187.826,21.333L198.261,21.333L208.696,32L219.13,42.667L229.565,42.667L240,32"></path>
                                 </g>
                               </g>
                             </g>
                           </g>
                         </g>
-                        <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_400" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_500" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_600" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_2000" tabIndex="-1"></g>
+                        <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_400" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_500" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_600" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_2000" tabIndex={-1}></g>
                       </svg>
                     </div>
                   </div>
@@ -305,7 +305,7 @@ export function Pattern() {
                           <stop offset="0%" stopColor="#FFF" stopOpacity=".5"></stop>
                           <stop offset="100%" stopOpacity=".5"></stop>
                         </lineargradient>
-                        <circle id="btc-b" cx="16" cy="15" r="15"></circle>
+                        <circle id="btc-b" cx={16} cy={15} r={15}></circle>
                         <filter id="btc-a" width="111.7%" height="111.7%" x="-5.8%" y="-4.2%" filterunits="objectBoundingBox">
                           <feoffset dy=".5" in="SourceAlpha" result="shadowOffsetOuter1"></feoffset>
                           <fegaussianblur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"></fegaussianblur>
@@ -323,7 +323,7 @@ export function Pattern() {
                         <use fill="#000" filter="url(#btc-a)" xlinkHref="#btc-b"></use>
                         <use fill="#F7931A" xlinkHref="#btc-b"></use>
                         <use fill="url(#btc-c)" xlinkHref="#btc-b" style={{mixBlendMode: "soft-light"}}></use>
-                        <circle cx="16" cy="15" r="14.5" stroke="#000" strokeOpacity=".097"></circle>
+                        <circle cx={16} cy={15} r={14.5} stroke="#000" strokeOpacity=".097"></circle>
                         <g fillRule="nonzero">
                           <use fill="#000" filter="url(#btc-d)" xlinkHref="#btc-e"></use>
                           <use fill="#FFF" fillRule="evenodd" xlinkHref="#btc-e"></use>
@@ -344,8 +344,8 @@ export function Pattern() {
                   {"+0.14%"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-warning/10 border border-warning/15 dark:bg-warning/15 dark:border-warning/25 dark:text-warning disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-warning-foreground text-xs transition-shadow">
-                  <svg className="lucide lucide-circle-dollar-sign" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
+                  <svg className="lucide lucide-circle-dollar-sign" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
+                    <circle cx={12} cy={12} r={10}></circle>
                     <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
                     <path d="M12 18V6"></path>
                   </svg>
@@ -359,45 +359,45 @@ export function Pattern() {
                 <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_2_] {\n  --color-value: var(--color-amber-500);\n}\n\n\n.dark [data-chart=chart-_r_2_] {\n  --color-value: var(--color-amber-500);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                    <div className="recharts-wrapper" width="240" height="64" style={{position: "relative", cursor: "default", width: "240px", height: "64px"}}>
-                      <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex="-1" style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px"}}></div>
-                      <svg className="recharts-surface" role="application" tabIndex="0" width="240" height="64" viewBox="0 0 240 64" style={{width: "100%", height: "100%", display: "block"}}>
+                    <div className="recharts-wrapper" width={240} height={64} style={{position: "relative", cursor: "default", width: "240px", height: "64px"}}>
+                      <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex={-1} style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px"}}></div>
+                      <svg className="recharts-surface" role="application" tabIndex={0} width={240} height={64} viewBox="0 0 240 64" style={{width: "100%", height: "100%", display: "block"}}>
                         <title></title>
                         <desc></desc>
-                        <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                        <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                         <defs>
                           <clippath id="recharts3-clip">
-                            <rect x="0" y="0" height="64" width="240"></rect>
+                            <rect x={0} y={0} height={64} width={240}></rect>
                           </clippath>
                         </defs>
                         <defs>
-                          <lineargradient id="investments-fill" x1="0" x2="0" y1="0" y2="1">
-                            <stop offset="0%" stopColor="var(--color-value)" stopOpacity="0.18"></stop>
-                            <stop offset="100%" stopColor="var(--color-value)" stopOpacity="0.02"></stop>
+                          <lineargradient id="investments-fill" x1={0} x2={0} y1={0} y2={1}>
+                            <stop offset="0%" stopColor="var(--color-value)" stopOpacity={0.18}></stop>
+                            <stop offset="100%" stopColor="var(--color-value)" stopOpacity={0.02}></stop>
                           </lineargradient>
                         </defs>
-                        <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                        <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                           <g className="recharts-area recharts-layer">
                             <g className="recharts-layer">
                               <g className="recharts-layer" clipPath="url(#animationClipPath-recharts-area-_r_6_)">
                                 <g className="recharts-layer">
-                                  <path className="recharts-area-area recharts-curve" strokeWidth="1" fill="url(#investments-fill)" fillOpacity="0.6" height="64" stroke="none" width="240" id="recharts-area-_r_6_" d="M0,42.667L10.435,42.667L20.87,56.889L31.304,39.111L41.739,32L52.174,28.444L62.609,46.222L73.043,35.556L83.478,7.111L93.913,7.111L104.348,24.889L114.783,32L125.217,39.111L135.652,39.111L146.087,49.778L156.522,49.778L166.957,42.667L177.391,21.333L187.826,39.111L198.261,39.111L208.696,17.778L219.13,17.778L229.565,28.444L240,10.667L240,64L229.565,64L219.13,64L208.696,64L198.261,64L187.826,64L177.391,64L166.957,64L156.522,64L146.087,64L135.652,64L125.217,64L114.783,64L104.348,64L93.913,64L83.478,64L73.043,64L62.609,64L52.174,64L41.739,64L31.304,64L20.87,64L10.435,64L0,64Z"></path>
-                                  <path className="recharts-area-curve recharts-curve" strokeWidth="1" fill="none" fillOpacity="0.6" height="64" stroke="var(--color-value)" width="240" d="M0,42.667L10.435,42.667L20.87,56.889L31.304,39.111L41.739,32L52.174,28.444L62.609,46.222L73.043,35.556L83.478,7.111L93.913,7.111L104.348,24.889L114.783,32L125.217,39.111L135.652,39.111L146.087,49.778L156.522,49.778L166.957,42.667L177.391,21.333L187.826,39.111L198.261,39.111L208.696,17.778L219.13,17.778L229.565,28.444L240,10.667"></path>
+                                  <path className="recharts-area-area recharts-curve" strokeWidth={1} fill="url(#investments-fill)" fillOpacity={0.6} height={64} stroke="none" width={240} id="recharts-area-_r_6_" d="M0,42.667L10.435,42.667L20.87,56.889L31.304,39.111L41.739,32L52.174,28.444L62.609,46.222L73.043,35.556L83.478,7.111L93.913,7.111L104.348,24.889L114.783,32L125.217,39.111L135.652,39.111L146.087,49.778L156.522,49.778L166.957,42.667L177.391,21.333L187.826,39.111L198.261,39.111L208.696,17.778L219.13,17.778L229.565,28.444L240,10.667L240,64L229.565,64L219.13,64L208.696,64L198.261,64L187.826,64L177.391,64L166.957,64L156.522,64L146.087,64L135.652,64L125.217,64L114.783,64L104.348,64L93.913,64L83.478,64L73.043,64L62.609,64L52.174,64L41.739,64L31.304,64L20.87,64L10.435,64L0,64Z"></path>
+                                  <path className="recharts-area-curve recharts-curve" strokeWidth={1} fill="none" fillOpacity={0.6} height={64} stroke="var(--color-value)" width={240} d="M0,42.667L10.435,42.667L20.87,56.889L31.304,39.111L41.739,32L52.174,28.444L62.609,46.222L73.043,35.556L83.478,7.111L93.913,7.111L104.348,24.889L114.783,32L125.217,39.111L135.652,39.111L146.087,49.778L156.522,49.778L166.957,42.667L177.391,21.333L187.826,39.111L198.261,39.111L208.696,17.778L219.13,17.778L229.565,28.444L240,10.667"></path>
                                 </g>
                               </g>
                             </g>
                           </g>
                         </g>
-                        <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_400" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_500" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_600" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_2000" tabIndex="-1"></g>
+                        <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_400" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_500" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_600" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_2000" tabIndex={-1}></g>
                       </svg>
                     </div>
                   </div>
@@ -421,7 +421,7 @@ export function Pattern() {
                   {"$320k"}
                 </span>
                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                  <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
+                  <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                     <path d="M16 7h6v6"></path>
                     <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                   </svg>
@@ -435,45 +435,45 @@ export function Pattern() {
                 <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_3_] {\n  --color-value: var(--color-emerald-500);\n}\n\n\n.dark [data-chart=chart-_r_3_] {\n  --color-value: var(--color-emerald-500);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                    <div className="recharts-wrapper" width="240" height="64" style={{position: "relative", cursor: "default", width: "240px", height: "64px"}}>
-                      <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex="-1" style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px"}}></div>
-                      <svg className="recharts-surface" role="application" tabIndex="0" width="240" height="64" viewBox="0 0 240 64" style={{width: "100%", height: "100%", display: "block"}}>
+                    <div className="recharts-wrapper" width={240} height={64} style={{position: "relative", cursor: "default", width: "240px", height: "64px"}}>
+                      <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex={-1} style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px"}}></div>
+                      <svg className="recharts-surface" role="application" tabIndex={0} width={240} height={64} viewBox="0 0 240 64" style={{width: "100%", height: "100%", display: "block"}}>
                         <title></title>
                         <desc></desc>
-                        <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                        <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                         <defs>
                           <clippath id="recharts4-clip">
-                            <rect x="0" y="0" height="64" width="240"></rect>
+                            <rect x={0} y={0} height={64} width={240}></rect>
                           </clippath>
                         </defs>
                         <defs>
-                          <lineargradient id="cashflow-fill" x1="0" x2="0" y1="0" y2="1">
-                            <stop offset="0%" stopColor="var(--color-value)" stopOpacity="0.18"></stop>
-                            <stop offset="100%" stopColor="var(--color-value)" stopOpacity="0.02"></stop>
+                          <lineargradient id="cashflow-fill" x1={0} x2={0} y1={0} y2={1}>
+                            <stop offset="0%" stopColor="var(--color-value)" stopOpacity={0.18}></stop>
+                            <stop offset="100%" stopColor="var(--color-value)" stopOpacity={0.02}></stop>
                           </lineargradient>
                         </defs>
-                        <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                        <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                           <g className="recharts-area recharts-layer">
                             <g className="recharts-layer">
                               <g className="recharts-layer" clipPath="url(#animationClipPath-recharts-area-_r_7_)">
                                 <g className="recharts-layer">
-                                  <path className="recharts-area-area recharts-curve" strokeWidth="1" fill="url(#cashflow-fill)" fillOpacity="0.6" height="64" stroke="none" width="240" id="recharts-area-_r_7_" d="M0,17.455L10.435,29.091L20.87,11.636L31.304,11.636L41.739,43.636L52.174,43.636L62.609,55.273L73.043,55.273L83.478,43.636L93.913,34.909L104.348,34.909L114.783,37.818L125.217,29.091L135.652,17.455L146.087,8.727L156.522,43.636L166.957,46.545L177.391,58.182L187.826,26.182L198.261,29.091L208.696,17.455L219.13,17.455L229.565,17.455L240,5.818L240,64L229.565,64L219.13,64L208.696,64L198.261,64L187.826,64L177.391,64L166.957,64L156.522,64L146.087,64L135.652,64L125.217,64L114.783,64L104.348,64L93.913,64L83.478,64L73.043,64L62.609,64L52.174,64L41.739,64L31.304,64L20.87,64L10.435,64L0,64Z"></path>
-                                  <path className="recharts-area-curve recharts-curve" strokeWidth="1" fill="none" fillOpacity="0.6" height="64" stroke="var(--color-value)" width="240" d="M0,17.455L10.435,29.091L20.87,11.636L31.304,11.636L41.739,43.636L52.174,43.636L62.609,55.273L73.043,55.273L83.478,43.636L93.913,34.909L104.348,34.909L114.783,37.818L125.217,29.091L135.652,17.455L146.087,8.727L156.522,43.636L166.957,46.545L177.391,58.182L187.826,26.182L198.261,29.091L208.696,17.455L219.13,17.455L229.565,17.455L240,5.818"></path>
+                                  <path className="recharts-area-area recharts-curve" strokeWidth={1} fill="url(#cashflow-fill)" fillOpacity={0.6} height={64} stroke="none" width={240} id="recharts-area-_r_7_" d="M0,17.455L10.435,29.091L20.87,11.636L31.304,11.636L41.739,43.636L52.174,43.636L62.609,55.273L73.043,55.273L83.478,43.636L93.913,34.909L104.348,34.909L114.783,37.818L125.217,29.091L135.652,17.455L146.087,8.727L156.522,43.636L166.957,46.545L177.391,58.182L187.826,26.182L198.261,29.091L208.696,17.455L219.13,17.455L229.565,17.455L240,5.818L240,64L229.565,64L219.13,64L208.696,64L198.261,64L187.826,64L177.391,64L166.957,64L156.522,64L146.087,64L135.652,64L125.217,64L114.783,64L104.348,64L93.913,64L83.478,64L73.043,64L62.609,64L52.174,64L41.739,64L31.304,64L20.87,64L10.435,64L0,64Z"></path>
+                                  <path className="recharts-area-curve recharts-curve" strokeWidth={1} fill="none" fillOpacity={0.6} height={64} stroke="var(--color-value)" width={240} d="M0,17.455L10.435,29.091L20.87,11.636L31.304,11.636L41.739,43.636L52.174,43.636L62.609,55.273L73.043,55.273L83.478,43.636L93.913,34.909L104.348,34.909L114.783,37.818L125.217,29.091L135.652,17.455L146.087,8.727L156.522,43.636L166.957,46.545L177.391,58.182L187.826,26.182L198.261,29.091L208.696,17.455L219.13,17.455L229.565,17.455L240,5.818"></path>
                                 </g>
                               </g>
                             </g>
                           </g>
                         </g>
-                        <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_400" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_500" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_600" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_2000" tabIndex="-1"></g>
+                        <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_400" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_500" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_600" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_2000" tabIndex={-1}></g>
                       </svg>
                     </div>
                   </div>

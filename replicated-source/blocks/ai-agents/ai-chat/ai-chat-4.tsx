@@ -72,10 +72,10 @@ export function Pattern() {
               {"Research"}
             </span>
             <div className="flex gap-3 items-center ms-auto shrink-0">
-              <Button className="gap-1.5" type="button" tabIndex="0" aria-pressed="true">
-                <svg className="lucide lucide-bot size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BotIcon" tabler="IconRobot" hugeicons="BotIcon" phosphor="RobotIcon" remixicon="RiRobot2Line" aria-hidden="true">
+              <Button className="gap-1.5" type="button" tabIndex={0} aria-pressed="true">
+                <svg className="lucide lucide-bot size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BotIcon" tabler="IconRobot" hugeicons="BotIcon" phosphor="RobotIcon" remixicon="RiRobot2Line" aria-hidden="true">
                   <path d="M12 8V4H8"></path>
-                  <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+                  <rect width={16} height={12} x={4} y={8} rx={2}></rect>
                   <path d="M2 14h2"></path>
                   <path d="M20 14h2"></path>
                   <path d="M15 13v2"></path>
@@ -229,11 +229,11 @@ export function Pattern() {
             <SidebarHeader className="border-b gap-0 p-0 shrink-0" sidebar="header">
               <div className="flex gap-1 items-center min-h-12 px-3">
                 <Popover>
-                <PopoverTrigger className="-ms-1.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none font-medium gap-2 group/button h-8 inline-flex items-center justify-start min-w-0 outline-none px-1.5 select-none shrink-0 text-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_2_" aria-haspopup="dialog" aria-expanded="false">
+                <PopoverTrigger className="-ms-1.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none font-medium gap-2 group/button h-8 inline-flex items-center justify-start min-w-0 outline-none px-1.5 select-none shrink-0 text-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_2_" aria-haspopup="dialog" aria-expanded="false">
                   <span className="text-primary">
-                    <svg className="lucide lucide-bot shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BotIcon" tabler="IconRobot" hugeicons="BotIcon" phosphor="RobotIcon" remixicon="RiRobot2Line" aria-hidden="true">
+                    <svg className="lucide lucide-bot shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BotIcon" tabler="IconRobot" hugeicons="BotIcon" phosphor="RobotIcon" remixicon="RiRobot2Line" aria-hidden="true">
                       <path d="M12 8V4H8"></path>
-                      <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+                      <rect width={16} height={12} x={4} y={8} rx={2}></rect>
                       <path d="M2 14h2"></path>
                       <path d="M20 14h2"></path>
                       <path d="M15 13v2"></path>
@@ -243,15 +243,15 @@ export function Pattern() {
                   <span className="min-w-0 text-sm text-start truncate">
                     {"Trust in AI replies"}
                   </span>
-                  <svg className="lucide lucide-chevron-down opacity-60 shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                  <svg className="lucide lucide-chevron-down opacity-60 shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
                 </PopoverTrigger>
                 </Popover>
                 <div className="flex gap-0.5 items-center ms-auto shrink-0">
                   <Tooltip>
-                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="New chat" id="base-ui-_r_4_" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-square-pen size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SquarePenIcon" tabler="IconEdit" hugeicons="PencilEdit02Icon" phosphor="NotePencilIcon" remixicon="RiEditBoxLine" aria-hidden="true">
+                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="New chat" id="base-ui-_r_4_" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-square-pen size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SquarePenIcon" tabler="IconEdit" hugeicons="PencilEdit02Icon" phosphor="NotePencilIcon" remixicon="RiEditBoxLine" aria-hidden="true">
                       <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                       <path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"></path>
                     </svg>
@@ -260,20 +260,20 @@ export function Pattern() {
                   <Tooltip>
                   <TooltipTrigger className="flex" id="base-ui-_r_9_" baseUiTooltipTrigger="">
                     <DropdownMenu>
-                    <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Chat settings" aria-haspopup="menu" id="base-ui-_r_a_" aria-expanded="false">
-                      <svg className="lucide lucide-settings-2 lucide-settings2 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Settings2Icon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
+                    <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Chat settings" aria-haspopup="menu" id="base-ui-_r_a_" aria-expanded="false">
+                      <svg className="lucide lucide-settings-2 lucide-settings2 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Settings2Icon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
                         <path d="M14 17H5"></path>
                         <path d="M19 7h-9"></path>
-                        <circle cx="17" cy="17" r="3"></circle>
-                        <circle cx="7" cy="7" r="3"></circle>
+                        <circle cx={17} cy={17} r={3}></circle>
+                        <circle cx={7} cy={7} r={3}></circle>
                       </svg>
                     </DropdownMenuTrigger>
                     </DropdownMenu>
                   </TooltipTrigger>
                   </Tooltip>
                   <Tooltip>
-                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Hide assistant" id="base-ui-_r_d_" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Hide assistant" id="base-ui-_r_d_" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                       <path d="M18 6 6 18"></path>
                       <path d="m6 6 12 12"></path>
                     </svg>
@@ -286,7 +286,7 @@ export function Pattern() {
             <SidebarContent className="overflow-hidden" sidebar="content">
               <div className="flex flex-1 flex-col min-h-0 relative">
                 <MessageScroller className="flex-1" scrollable="start">
-                  <MessageScrollerViewport className="scrollbar" role="region" aria-label="Messages" tabIndex="0" scrollable="start">
+                  <MessageScrollerViewport className="scrollbar" role="region" aria-label="Messages" tabIndex={0} scrollable="start">
                     <MessageScrollerContent className="gap-6 min-w-0 px-4 py-4 w-full" role="log" aria-relevant="additions" aria-busy="false">
                       <MessageScrollerItem className="[content-visibility:visible]" scrollAnchor="false">
                         <Marker variant="separator">
@@ -309,14 +309,14 @@ export function Pattern() {
                                   <span className="pe-1 tabular-nums text-muted-foreground text-xs">
                                     {"11:02"}
                                   </span>
-                                  <Button type="button" tabIndex="0" aria-label="Copy message">
-                                    <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
-                                      <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                  <Button type="button" tabIndex={0} aria-label="Copy message">
+                                    <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
+                                      <rect width={14} height={14} x={8} y={8} rx={2} ry={2}></rect>
                                       <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                                     </svg>
                                   </Button>
-                                  <Button type="button" tabIndex="0" aria-label="Edit message">
-                                    <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
+                                  <Button type="button" tabIndex={0} aria-label="Edit message">
+                                    <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
                                       <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                                       <path d="m15 5 4 4"></path>
                                     </svg>
@@ -337,14 +337,14 @@ export function Pattern() {
                                   {"Confidence Signals"}
                                 </h3>
                                 <span className="flex gap-1 items-center shrink-0 tabular-nums text-[11px] text-muted-foreground">
-                                  <svg className="lucide lucide-clock shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                                    <circle cx="12" cy="12" r="10"></circle>
+                                  <svg className="lucide lucide-clock shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                                    <circle cx={12} cy={12} r={10}></circle>
                                     <path d="M12 6v6l4 2"></path>
                                   </svg>
                                   {"6s"}
                                 </span>
                                 <button className="-me-1 flex focus-visible:ring-2 focus-visible:ring-ring group/section hover:text-foreground outline-none p-1 rounded-full shrink-0 text-muted-foreground" type="button" aria-expanded="true" aria-controls="_r_e_" aria-label="Collapse answer">
-                                  <svg className="duration-200 group-aria-expanded/section:rotate-180 lucide lucide-chevron-down motion-reduce:transition-none shrink-0 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                                  <svg className="duration-200 group-aria-expanded/section:rotate-180 lucide lucide-chevron-down motion-reduce:transition-none shrink-0 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                   </svg>
                                 </button>
@@ -375,9 +375,9 @@ export function Pattern() {
                                   <span className="pe-1 tabular-nums text-muted-foreground text-xs">
                                     {"11:03"}
                                   </span>
-                                  <Button className="font-normal gap-1.5 h-6 hover:text-foreground px-1.5 text-muted-foreground text-xs" type="button" tabIndex="0" aria-label="Reply to this answer, quoting its first line">
+                                  <Button className="font-normal gap-1.5 h-6 hover:text-foreground px-1.5 text-muted-foreground text-xs" type="button" tabIndex={0} aria-label="Reply to this answer, quoting its first line">
                                     <span className="[&>svg]:size-3.5">
-                                      <svg className="lucide lucide-message-square-text" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareTextIcon" tabler="IconMessageDots" hugeicons="Comment01Icon" phosphor="ChatTextIcon" remixicon="RiMessage3Line" aria-hidden="true">
+                                      <svg className="lucide lucide-message-square-text" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareTextIcon" tabler="IconMessageDots" hugeicons="Comment01Icon" phosphor="ChatTextIcon" remixicon="RiMessage3Line" aria-hidden="true">
                                         <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                         <path d="M7 11h10"></path>
                                         <path d="M7 15h6"></path>
@@ -386,20 +386,20 @@ export function Pattern() {
                                     </span>
                                     {"Reply"}
                                   </Button>
-                                  <Button type="button" tabIndex="0" aria-label="Copy answer">
-                                    <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
-                                      <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                  <Button type="button" tabIndex={0} aria-label="Copy answer">
+                                    <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
+                                      <rect width={14} height={14} x={8} y={8} rx={2} ry={2}></rect>
                                       <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                                     </svg>
                                   </Button>
-                                  <Button type="button" tabIndex="0" aria-label="Like answer" aria-pressed="false">
-                                    <svg className="lucide lucide-thumbs-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ThumbsUpIcon" tabler="IconThumbUp" hugeicons="ThumbsUpIcon" phosphor="ThumbsUpIcon" remixicon="RiThumbUpLine" aria-hidden="true">
+                                  <Button type="button" tabIndex={0} aria-label="Like answer" aria-pressed="false">
+                                    <svg className="lucide lucide-thumbs-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ThumbsUpIcon" tabler="IconThumbUp" hugeicons="ThumbsUpIcon" phosphor="ThumbsUpIcon" remixicon="RiThumbUpLine" aria-hidden="true">
                                       <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"></path>
                                       <path d="M7 10v12"></path>
                                     </svg>
                                   </Button>
-                                  <Button type="button" tabIndex="0" aria-label="Dislike answer" aria-pressed="false">
-                                    <svg className="lucide lucide-thumbs-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ThumbsDownIcon" tabler="IconThumbDown" hugeicons="ThumbsDownIcon" phosphor="ThumbsDownIcon" remixicon="RiThumbDownLine" aria-hidden="true">
+                                  <Button type="button" tabIndex={0} aria-label="Dislike answer" aria-pressed="false">
+                                    <svg className="lucide lucide-thumbs-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ThumbsDownIcon" tabler="IconThumbDown" hugeicons="ThumbsDownIcon" phosphor="ThumbsDownIcon" remixicon="RiThumbDownLine" aria-hidden="true">
                                       <path d="M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.56l2.33-8A2 2 0 0 1 6.5 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.76a2 2 0 0 0-1.79 1.11L12 22a3.13 3.13 0 0 1-3-3.88Z"></path>
                                       <path d="M17 14V2"></path>
                                     </svg>
@@ -428,9 +428,9 @@ export function Pattern() {
                                     </AttachmentDescription>
                                   </AttachmentContent>
                                   <span className="shrink-0 text-muted-foreground">
-                                    <svg className="lucide lucide-video shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="VideoIcon" tabler="IconVideo" hugeicons="Video02Icon" phosphor="VideoCameraIcon" remixicon="RiVideoOnLine" aria-hidden="true">
+                                    <svg className="lucide lucide-video shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="VideoIcon" tabler="IconVideo" hugeicons="Video02Icon" phosphor="VideoCameraIcon" remixicon="RiVideoOnLine" aria-hidden="true">
                                       <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path>
-                                      <rect x="2" y="6" width="14" height="12" rx="2"></rect>
+                                      <rect x={2} y={6} width={14} height={12} rx={2}></rect>
                                     </svg>
                                   </span>
                                 </Attachment>
@@ -448,14 +448,14 @@ export function Pattern() {
                                   <span className="pe-1 tabular-nums text-muted-foreground text-xs">
                                     {"11:05"}
                                   </span>
-                                  <Button type="button" tabIndex="0" aria-label="Copy message">
-                                    <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
-                                      <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                  <Button type="button" tabIndex={0} aria-label="Copy message">
+                                    <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
+                                      <rect width={14} height={14} x={8} y={8} rx={2} ry={2}></rect>
                                       <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                                     </svg>
                                   </Button>
-                                  <Button type="button" tabIndex="0" aria-label="Edit message">
-                                    <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
+                                  <Button type="button" tabIndex={0} aria-label="Edit message">
+                                    <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
                                       <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                                       <path d="m15 5 4 4"></path>
                                     </svg>
@@ -476,14 +476,14 @@ export function Pattern() {
                                   {"Session Findings"}
                                 </h3>
                                 <span className="flex gap-1 items-center shrink-0 tabular-nums text-[11px] text-muted-foreground">
-                                  <svg className="lucide lucide-clock shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                                    <circle cx="12" cy="12" r="10"></circle>
+                                  <svg className="lucide lucide-clock shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                                    <circle cx={12} cy={12} r={10}></circle>
                                     <path d="M12 6v6l4 2"></path>
                                   </svg>
                                   {"12s"}
                                 </span>
                                 <button className="-me-1 flex focus-visible:ring-2 focus-visible:ring-ring group/section hover:text-foreground outline-none p-1 rounded-full shrink-0 text-muted-foreground" type="button" aria-expanded="true" aria-controls="_r_t_" aria-label="Collapse answer">
-                                  <svg className="duration-200 group-aria-expanded/section:rotate-180 lucide lucide-chevron-down motion-reduce:transition-none shrink-0 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                                  <svg className="duration-200 group-aria-expanded/section:rotate-180 lucide lucide-chevron-down motion-reduce:transition-none shrink-0 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                     <path d="m6 9 6 6 6-6"></path>
                                   </svg>
                                 </button>
@@ -510,7 +510,7 @@ export function Pattern() {
                               </Bubble>
                               <div className="flex flex-wrap gap-1.5 pt-0.5" role="group" aria-label="Sources this reply read">
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 hover:bg-accent hover:text-foreground max-w-full min-w-0 outline-none px-1.25 py-0.5 relative rounded-full text-muted-foreground text-xs transition-colors" type="button" aria-label="Attach Trust research sync to your next message">
-                                  <svg className="lucide lucide-file-text shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileTextIcon" tabler="IconFileText" hugeicons="File02Icon" phosphor="FileTextIcon" remixicon="RiFileTextLine" aria-hidden="true">
+                                  <svg className="lucide lucide-file-text shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FileTextIcon" tabler="IconFileText" hugeicons="File02Icon" phosphor="FileTextIcon" remixicon="RiFileTextLine" aria-hidden="true">
                                     <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
                                     <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                     <path d="M10 9H8"></path>
@@ -522,7 +522,7 @@ export function Pattern() {
                                   </span>
                                 </Badge>
                                 <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 hover:bg-accent hover:text-foreground max-w-full min-w-0 outline-none px-1.25 py-0.5 relative rounded-full text-muted-foreground text-xs transition-colors" type="button" aria-label="Attach Design review, AI states to your next message">
-                                  <svg className="lucide lucide-file-text shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileTextIcon" tabler="IconFileText" hugeicons="File02Icon" phosphor="FileTextIcon" remixicon="RiFileTextLine" aria-hidden="true">
+                                  <svg className="lucide lucide-file-text shrink-0 size-3" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FileTextIcon" tabler="IconFileText" hugeicons="File02Icon" phosphor="FileTextIcon" remixicon="RiFileTextLine" aria-hidden="true">
                                     <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
                                     <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                     <path d="M10 9H8"></path>
@@ -539,9 +539,9 @@ export function Pattern() {
                                   <span className="pe-1 tabular-nums text-muted-foreground text-xs">
                                     {"11:07"}
                                   </span>
-                                  <Button className="font-normal gap-1.5 h-6 hover:text-foreground px-1.5 text-muted-foreground text-xs" type="button" tabIndex="0" aria-label="Reply to this answer, quoting its first line">
+                                  <Button className="font-normal gap-1.5 h-6 hover:text-foreground px-1.5 text-muted-foreground text-xs" type="button" tabIndex={0} aria-label="Reply to this answer, quoting its first line">
                                     <span className="[&>svg]:size-3.5">
-                                      <svg className="lucide lucide-message-square-text" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareTextIcon" tabler="IconMessageDots" hugeicons="Comment01Icon" phosphor="ChatTextIcon" remixicon="RiMessage3Line" aria-hidden="true">
+                                      <svg className="lucide lucide-message-square-text" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareTextIcon" tabler="IconMessageDots" hugeicons="Comment01Icon" phosphor="ChatTextIcon" remixicon="RiMessage3Line" aria-hidden="true">
                                         <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                         <path d="M7 11h10"></path>
                                         <path d="M7 15h6"></path>
@@ -550,26 +550,26 @@ export function Pattern() {
                                     </span>
                                     {"Reply"}
                                   </Button>
-                                  <Button type="button" tabIndex="0" aria-label="Copy answer">
-                                    <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
-                                      <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                                  <Button type="button" tabIndex={0} aria-label="Copy answer">
+                                    <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
+                                      <rect width={14} height={14} x={8} y={8} rx={2} ry={2}></rect>
                                       <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                                     </svg>
                                   </Button>
-                                  <Button type="button" tabIndex="0" aria-label="Like answer" aria-pressed="false">
-                                    <svg className="lucide lucide-thumbs-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ThumbsUpIcon" tabler="IconThumbUp" hugeicons="ThumbsUpIcon" phosphor="ThumbsUpIcon" remixicon="RiThumbUpLine" aria-hidden="true">
+                                  <Button type="button" tabIndex={0} aria-label="Like answer" aria-pressed="false">
+                                    <svg className="lucide lucide-thumbs-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ThumbsUpIcon" tabler="IconThumbUp" hugeicons="ThumbsUpIcon" phosphor="ThumbsUpIcon" remixicon="RiThumbUpLine" aria-hidden="true">
                                       <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2a3.13 3.13 0 0 1 3 3.88Z"></path>
                                       <path d="M7 10v12"></path>
                                     </svg>
                                   </Button>
-                                  <Button type="button" tabIndex="0" aria-label="Dislike answer" aria-pressed="false">
-                                    <svg className="lucide lucide-thumbs-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ThumbsDownIcon" tabler="IconThumbDown" hugeicons="ThumbsDownIcon" phosphor="ThumbsDownIcon" remixicon="RiThumbDownLine" aria-hidden="true">
+                                  <Button type="button" tabIndex={0} aria-label="Dislike answer" aria-pressed="false">
+                                    <svg className="lucide lucide-thumbs-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ThumbsDownIcon" tabler="IconThumbDown" hugeicons="ThumbsDownIcon" phosphor="ThumbsDownIcon" remixicon="RiThumbDownLine" aria-hidden="true">
                                       <path d="M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.56l2.33-8A2 2 0 0 1 6.5 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.76a2 2 0 0 0-1.79 1.11L12 22a3.13 3.13 0 0 1-3-3.88Z"></path>
                                       <path d="M17 14V2"></path>
                                     </svg>
                                   </Button>
-                                  <Button type="button" tabIndex="0" aria-label="Retry answer">
-                                    <svg className="lucide lucide-refresh-cw" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RefreshCwIcon" tabler="IconRefresh" hugeicons="RefreshIcon" phosphor="ArrowsClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
+                                  <Button type="button" tabIndex={0} aria-label="Retry answer">
+                                    <svg className="lucide lucide-refresh-cw" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="RefreshCwIcon" tabler="IconRefresh" hugeicons="RefreshIcon" phosphor="ArrowsClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
                                       <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
                                       <path d="M21 3v5h-5"></path>
                                       <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
@@ -584,20 +584,20 @@ export function Pattern() {
                       </MessageScrollerItem>
                       <MessageScrollerItem className="[content-visibility:visible]" scrollAnchor="false">
                         <div className="flex flex-col gap-2 items-end" role="group" aria-label="Quick replies">
-                          <Button className="font-normal gap-2 h-auto hover:text-foreground justify-start max-w-full py-1.5 text-muted-foreground" type="button" tabIndex="0">
+                          <Button className="font-normal gap-2 h-auto hover:text-foreground justify-start max-w-full py-1.5 text-muted-foreground" type="button" tabIndex={0}>
                             <span className="min-w-0 truncate">
                               {"Draft the pattern note"}
                             </span>
-                            <svg className="lucide lucide-corner-down-right opacity-50 shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CornerDownRightIcon" tabler="IconCornerDownRight" hugeicons="CornerDownRightIcon" phosphor="ArrowBendDownRightIcon" remixicon="RiCornerDownRightLine" aria-hidden="true">
+                            <svg className="lucide lucide-corner-down-right opacity-50 shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CornerDownRightIcon" tabler="IconCornerDownRight" hugeicons="CornerDownRightIcon" phosphor="ArrowBendDownRightIcon" remixicon="RiCornerDownRightLine" aria-hidden="true">
                               <path d="m15 10 5 5-5 5"></path>
                               <path d="M4 4v7a4 4 0 0 0 4 4h12"></path>
                             </svg>
                           </Button>
-                          <Button className="font-normal gap-2 h-auto hover:text-foreground justify-start max-w-full py-1.5 text-muted-foreground" type="button" tabIndex="0">
+                          <Button className="font-normal gap-2 h-auto hover:text-foreground justify-start max-w-full py-1.5 text-muted-foreground" type="button" tabIndex={0}>
                             <span className="min-w-0 truncate">
                               {"What did they reject"}
                             </span>
-                            <svg className="lucide lucide-corner-down-right opacity-50 shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CornerDownRightIcon" tabler="IconCornerDownRight" hugeicons="CornerDownRightIcon" phosphor="ArrowBendDownRightIcon" remixicon="RiCornerDownRightLine" aria-hidden="true">
+                            <svg className="lucide lucide-corner-down-right opacity-50 shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CornerDownRightIcon" tabler="IconCornerDownRight" hugeicons="CornerDownRightIcon" phosphor="ArrowBendDownRightIcon" remixicon="RiCornerDownRightLine" aria-hidden="true">
                               <path d="m15 10 5 5-5 5"></path>
                               <path d="M4 4v7a4 4 0 0 0 4 4h12"></path>
                             </svg>
@@ -610,8 +610,8 @@ export function Pattern() {
                   <div className="absolute bg-linear-to-b data-[active=true]:opacity-100 duration-200 ease-out from-sidebar h-6 inset-x-0 motion-reduce:transition-none opacity-0 pointer-events-none to-transparent top-0 transition-opacity" aria-hidden="true" data-active="true"></div>
                   <div className="absolute bg-linear-to-t bottom-0 data-[active=true]:opacity-100 duration-200 ease-out from-sidebar h-8 inset-x-0 motion-reduce:transition-none opacity-0 pointer-events-none to-transparent transition-opacity" aria-hidden="true" data-active="false"></div>
                   <p className="sr-only" role="status" aria-live="polite"></p>
-                  <MessageScrollerButton className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none rounded-full select-none shadow-sm shrink-0 whitespace-nowrap" type="button" tabIndex="-1" data-active="false" direction="end" inert="" variant="outline" size="icon-sm">
-                    <svg className="lucide lucide-arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine">
+                  <MessageScrollerButton className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none rounded-full select-none shadow-sm shrink-0 whitespace-nowrap" type="button" tabIndex={-1} data-active="false" direction="end" inert="" variant="outline" size="icon-sm">
+                    <svg className="lucide lucide-arrow-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine">
                       <path d="M12 5v14"></path>
                       <path d="m19 12-7 7-7-7"></path>
                     </svg>
@@ -641,8 +641,8 @@ export function Pattern() {
                     {"Esc"}
                   </Kbd>
                   <Tooltip>
-                  <TooltipTrigger className="-me-0.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Close suggestions" id="base-ui-_r_v_" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                  <TooltipTrigger className="-me-0.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Close suggestions" id="base-ui-_r_v_" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                       <path d="M18 6 6 18"></path>
                       <path d="m6 6 12 12"></path>
                     </svg>
@@ -650,7 +650,7 @@ export function Pattern() {
                   </Tooltip>
                 </div>
                 <button className="flex focus-visible:bg-accent focus-visible:ring-2 focus-visible:ring-ring focus-visible:text-foreground gap-2 hover:bg-accent hover:text-foreground items-center outline-none px-2 py-1.5 rounded-full text-muted-foreground text-start text-xs w-full" type="button">
-                  <svg className="lucide lucide-corner-down-right opacity-50 shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CornerDownRightIcon" tabler="IconCornerDownRight" hugeicons="CornerDownRightIcon" phosphor="ArrowBendDownRightIcon" remixicon="RiCornerDownRightLine" aria-hidden="true">
+                  <svg className="lucide lucide-corner-down-right opacity-50 shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CornerDownRightIcon" tabler="IconCornerDownRight" hugeicons="CornerDownRightIcon" phosphor="ArrowBendDownRightIcon" remixicon="RiCornerDownRightLine" aria-hidden="true">
                     <path d="m15 10 5 5-5 5"></path>
                     <path d="M4 4v7a4 4 0 0 0 4 4h12"></path>
                   </svg>
@@ -659,7 +659,7 @@ export function Pattern() {
                   </span>
                 </button>
                 <button className="flex focus-visible:bg-accent focus-visible:ring-2 focus-visible:ring-ring focus-visible:text-foreground gap-2 hover:bg-accent hover:text-foreground items-center outline-none px-2 py-1.5 rounded-full text-muted-foreground text-start text-xs w-full" type="button">
-                  <svg className="lucide lucide-corner-down-right opacity-50 shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CornerDownRightIcon" tabler="IconCornerDownRight" hugeicons="CornerDownRightIcon" phosphor="ArrowBendDownRightIcon" remixicon="RiCornerDownRightLine" aria-hidden="true">
+                  <svg className="lucide lucide-corner-down-right opacity-50 shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CornerDownRightIcon" tabler="IconCornerDownRight" hugeicons="CornerDownRightIcon" phosphor="ArrowBendDownRightIcon" remixicon="RiCornerDownRightLine" aria-hidden="true">
                     <path d="m15 10 5 5-5 5"></path>
                     <path d="M4 4v7a4 4 0 0 0 4 4h12"></path>
                   </svg>
@@ -668,7 +668,7 @@ export function Pattern() {
                   </span>
                 </button>
                 <button className="flex focus-visible:bg-accent focus-visible:ring-2 focus-visible:ring-ring focus-visible:text-foreground gap-2 hover:bg-accent hover:text-foreground items-center outline-none px-2 py-1.5 rounded-full text-muted-foreground text-start text-xs w-full" type="button">
-                  <svg className="lucide lucide-corner-down-right opacity-50 shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CornerDownRightIcon" tabler="IconCornerDownRight" hugeicons="CornerDownRightIcon" phosphor="ArrowBendDownRightIcon" remixicon="RiCornerDownRightLine" aria-hidden="true">
+                  <svg className="lucide lucide-corner-down-right opacity-50 shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CornerDownRightIcon" tabler="IconCornerDownRight" hugeicons="CornerDownRightIcon" phosphor="ArrowBendDownRightIcon" remixicon="RiCornerDownRightLine" aria-hidden="true">
                     <path d="m15 10 5 5-5 5"></path>
                     <path d="M4 4v7a4 4 0 0 0 4 4h12"></path>
                   </svg>
@@ -689,8 +689,8 @@ export function Pattern() {
                         <Tooltip>
                         <TooltipTrigger className="flex" id="base-ui-_r_j_" baseUiTooltipTrigger="">
                           <DropdownMenu>
-                          <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost cn-input-group-button cn-input-group-button-size-icon-sm disabled:opacity-50 disabled:pointer-events-none flex group/button items-center justify-center outline-none select-none shadow-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" size="icon-sm" aria-label="Attach a recording" aria-haspopup="menu" id="base-ui-_r_k_" aria-expanded="false">
-                            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                          <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost cn-input-group-button cn-input-group-button-size-icon-sm disabled:opacity-50 disabled:pointer-events-none flex group/button items-center justify-center outline-none select-none shadow-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} size="icon-sm" aria-label="Attach a recording" aria-haspopup="menu" id="base-ui-_r_k_" aria-expanded="false">
+                            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                               <path d="M5 12h14"></path>
                               <path d="M12 5v14"></path>
                             </svg>
@@ -699,7 +699,7 @@ export function Pattern() {
                         </TooltipTrigger>
                         </Tooltip>
                         <DropdownMenu>
-                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost cn-input-group-button cn-input-group-button-size-sm disabled:opacity-50 disabled:pointer-events-none flex gap-1.5 group/button hover:text-foreground items-center justify-center min-w-0 outline-none px-1.5 select-none shadow-none shrink text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" size="sm" aria-label="Model Claude Sonnet 5, mode Auto" aria-haspopup="menu" id="base-ui-_r_p_" aria-expanded="false">
+                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost cn-input-group-button cn-input-group-button-size-sm disabled:opacity-50 disabled:pointer-events-none flex gap-1.5 group/button hover:text-foreground items-center justify-center min-w-0 outline-none px-1.5 select-none shadow-none shrink text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} size="sm" aria-label="Model Claude Sonnet 5, mode Auto" aria-haspopup="menu" id="base-ui-_r_p_" aria-expanded="false">
                           <span className="min-w-0 text-xs truncate">
                             {"Claude Sonnet 5"}
                           </span>
@@ -707,25 +707,25 @@ export function Pattern() {
                           <span className="shrink-0 text-xs">
                             {"Auto"}
                           </span>
-                          <svg className="lucide lucide-chevron-down opacity-60 shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                          <svg className="lucide lucide-chevron-down opacity-60 shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                             <path d="m6 9 6 6 6-6"></path>
                           </svg>
                         </DropdownMenuTrigger>
                         </DropdownMenu>
                         <Tooltip>
-                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost cn-input-group-button cn-input-group-button-size-icon-sm disabled:opacity-50 disabled:pointer-events-none flex group/button items-center justify-center outline-none select-none shadow-none shrink-0 text-primary transition-all whitespace-nowrap" type="button" tabIndex="0" size="icon-sm" aria-label="Suggested prompts" aria-pressed="true" id="base-ui-_r_s_" baseUiTooltipTrigger="">
-                          <svg className="lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SparklesIcon" tabler="IconSparkles" hugeicons="SparklesIcon" phosphor="SparkleIcon" remixicon="RiSparklingLine" aria-hidden="true">
+                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost cn-input-group-button cn-input-group-button-size-icon-sm disabled:opacity-50 disabled:pointer-events-none flex group/button items-center justify-center outline-none select-none shadow-none shrink-0 text-primary transition-all whitespace-nowrap" type="button" tabIndex={0} size="icon-sm" aria-label="Suggested prompts" aria-pressed="true" id="base-ui-_r_s_" baseUiTooltipTrigger="">
+                          <svg className="lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SparklesIcon" tabler="IconSparkles" hugeicons="SparklesIcon" phosphor="SparkleIcon" remixicon="RiSparklingLine" aria-hidden="true">
                             <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path>
                             <path d="M20 2v4"></path>
                             <path d="M22 4h-4"></path>
-                            <circle cx="4" cy="20" r="2"></circle>
+                            <circle cx={4} cy={20} r={2}></circle>
                           </svg>
                         </TooltipTrigger>
                         </Tooltip>
                       </div>
                       <Tooltip>
-                      <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-default cn-input-group-button cn-input-group-button-size-icon-sm disabled:opacity-50 disabled:pointer-events-none flex group/button items-center justify-center outline-none select-none shadow-none shrink-0 transition-all whitespace-nowrap" type="submit" tabIndex="0" size="icon-sm" aria-label="Send message" aria-disabled="true" id="base-ui-_r_11_" baseUiTooltipTrigger="">
-                        <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
+                      <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-default cn-input-group-button cn-input-group-button-size-icon-sm disabled:opacity-50 disabled:pointer-events-none flex group/button items-center justify-center outline-none select-none shadow-none shrink-0 transition-all whitespace-nowrap" type="submit" tabIndex={0} size="icon-sm" aria-label="Send message" aria-disabled="true" id="base-ui-_r_11_" baseUiTooltipTrigger="">
+                        <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                           <path d="m5 12 7-7 7 7"></path>
                           <path d="M12 19V5"></path>
                         </svg>

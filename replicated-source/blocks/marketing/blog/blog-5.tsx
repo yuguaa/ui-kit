@@ -23,7 +23,7 @@ export function Pattern() {
         <header className="flex flex-col gap-4 min-w-0 w-full">
           <Card className="min-w-0 overflow-hidden p-0 shadow-none w-full" size="default">
             <AspectRatio className="bg-muted min-h-[32rem] min-w-0 overflow-hidden sm:min-h-0 w-full" style={{"--ratio": "1.7777777777777777"}}>
-              <img className="absolute inset-0 object-cover size-full" alt="Abstract blue fluid render" width="1200" height="675" decoding="async" src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=1200&h=675&q=82" />
+              <img className="absolute inset-0 object-cover size-full" alt="Abstract blue fluid render" width={1200} height={675} decoding="async" src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=1200&h=675&q=82" />
               <div className="absolute bg-[linear-gradient(180deg,oklch(16%_0.018_260_/_8%)_0%,oklch(16%_0.018_260_/_34%)_42%,oklch(16%_0.018_260_/_88%)_100%)] inset-0" aria-hidden="true"></div>
               <CardContent className="absolute bottom-0 flex flex-col gap-4 inset-x-0 md:p-8 p-5 sm:gap-5 sm:p-7">
                 <a className="focus-visible:outline-none focus-visible:text-[oklch(98%_0.006_260)] focus-visible:underline font-medium hover:text-[oklch(98%_0.006_260)] hover:underline text-[oklch(94%_0.012_260_/_82%)] text-sm transition-colors underline-offset-2 w-fit" href="#">
@@ -168,7 +168,7 @@ export function Pattern() {
                   </span>
                 </span>
                 <span className="flex group-focus-visible:text-primary group-hover:text-primary items-center self-center shrink-0 text-muted-foreground">
-                  <svg className="duration-200 ease-out lucide lucide-arrow-right motion-safe:group-hover:translate-x-1 size-5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+                  <svg className="duration-200 ease-out lucide lucide-arrow-right motion-safe:group-hover:translate-x-1 size-5 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
@@ -193,7 +193,7 @@ export function Pattern() {
                   </span>
                 </span>
                 <span className="flex group-focus-visible:text-primary group-hover:text-primary items-center self-center shrink-0 text-muted-foreground">
-                  <svg className="duration-200 ease-out lucide lucide-arrow-right motion-safe:group-hover:translate-x-1 size-5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+                  <svg className="duration-200 ease-out lucide lucide-arrow-right motion-safe:group-hover:translate-x-1 size-5 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>

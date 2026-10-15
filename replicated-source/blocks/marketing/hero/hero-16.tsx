@@ -28,7 +28,7 @@ export function Pattern() {
                   {"Built to ship"}
                 </span>
                 <div className="flex gap-2 items-center">
-                  <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                  <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
                   <span className="text-foreground text-sm">
@@ -36,7 +36,7 @@ export function Pattern() {
                   </span>
                 </div>
                 <div className="flex gap-2 items-center">
-                  <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                  <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
                   <span className="text-foreground text-sm">
@@ -44,7 +44,7 @@ export function Pattern() {
                   </span>
                 </div>
                 <div className="flex gap-2 items-center">
-                  <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                  <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
                   <span className="text-foreground text-sm">
@@ -52,7 +52,7 @@ export function Pattern() {
                   </span>
                 </div>
                 <div className="flex gap-2 items-center">
-                  <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                  <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
                   <span className="text-foreground text-sm">
@@ -60,7 +60,7 @@ export function Pattern() {
                   </span>
                 </div>
                 <div className="flex gap-2 items-center">
-                  <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                  <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
                   <span className="text-foreground text-sm">
@@ -68,7 +68,7 @@ export function Pattern() {
                   </span>
                 </div>
                 <div className="flex gap-2 items-center">
-                  <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                  <svg className="lucide lucide-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
                   <span className="text-foreground text-sm">
@@ -84,14 +84,14 @@ export function Pattern() {
                   <span role="img" aria-label="Clerk">
                     <svg className="dark:hidden h-[22px] w-auto" aria-hidden="true" fill="none" viewBox="0 0 441 128">
                       <path fill="#131316" d="M166.971 40.917c11.605 0 23.824 4.606 31.392 13.519a.14.14 0 0 1-.015.196l-11.393 9.858a.141.141 0 0 1-.198-.013 24.393 24.393 0 0 0-8.422-6.174 24.897 24.897 0 0 0-10.437-2.133c-13.41 0-22.35 9.192-22.35 22.63 0 6.713 2.223 12.345 6.087 16.29a22.093 22.093 0 0 0 7.464 4.805 22.461 22.461 0 0 0 8.799 1.511 26.7 26.7 0 0 0 10.378-1.996 26.24 26.24 0 0 0 8.635-5.752.141.141 0 0 1 .192-.007l11.645 10.047a.14.14 0 0 1 .013.2c-6.497 7.175-17.999 12.866-32.397 12.866-11.139 0-20.793-3.91-27.569-10.565C132.019 99.545 128 90.12 128 78.928c0-22.63 16.169-38.01 38.971-38.01Zm105.326.007c22.067 0 36.337 15.52 36.337 36.95a61.277 61.277 0 0 1-.457 6.659.141.141 0 0 1-.14.123h-54.261a.14.14 0 0 0-.136.171c2.321 10.287 10.27 16.557 21.26 16.557 3.579.075 7.126-.66 10.369-2.151a23.251 23.251 0 0 0 8.236-6.335.14.14 0 0 1 .199-.019l.447.373 11.163 9.719a.14.14 0 0 1 .018.194c-6.316 7.834-16.808 13.599-31.355 13.599-21.772 0-38.196-15.077-38.196-37.983 0-11.238 3.87-20.663 10.319-27.317a35.7 35.7 0 0 1 11.989-7.934 36.2 36.2 0 0 1 14.208-2.606Zm-46.636-28.948a.14.14 0 0 1 .141.14v103.509a.14.14 0 0 1-.141.141h-16.684a.14.14 0 0 1-.141-.141V12.117c0-.078.063-.141.141-.141h16.684Zm135.724 28.943a.14.14 0 0 1 .142.14v18.553c0 .081-.07.146-.151.14-1.944-.147-3.88-.29-5.072-.29-13.058 0-20.725 9.19-20.725 21.253v34.91a.14.14 0 0 1-.141.141h-16.683a.14.14 0 0 1-.141-.141v-73.52a.14.14 0 0 1 .141-.14h16.683a.14.14 0 0 1 .141.14V53.04c0 .057.047.103.104.103a.105.105 0 0 0 .083-.041c5.851-7.815 14.488-12.162 23.613-12.162l2.006-.022Zm26.947-28.943a.14.14 0 0 1 .141.14v63.165c0 .129.157.19.244.095l30.691-33.455a.142.142 0 0 1 .104-.046h20.063c.122 0 .187.145.105.236l-26.752 29.515a.142.142 0 0 0-.016.17l27.119 43.755a.14.14 0 0 1-.119.215h-19.033a.14.14 0 0 1-.12-.067l-19.234-30.912a.14.14 0 0 0-.119-.066h-.18a.144.144 0 0 0-.104.045l-12.612 13.55a.14.14 0 0 0-.037.096v17.213a.14.14 0 0 1-.141.141h-16.685a.14.14 0 0 1-.14-.141V12.117a.14.14 0 0 1 .14-.141h16.685ZM273.184 56.153a19.44 19.44 0 0 0-8.036 1.46 19.154 19.154 0 0 0-6.683 4.624 20.438 20.438 0 0 0-4.538 8.68.14.14 0 0 0 .135.173h37.036a.14.14 0 0 0 .135-.174c-2.156-8.804-8.293-14.763-18.049-14.763Z"></path>
-                      <circle cx="64" cy="64" r="20" fill="#6C47FF"></circle>
+                      <circle cx={64} cy={64} r={20} fill="#6C47FF"></circle>
                       <path fill="#BAB1FF" d="M99.572 10.788c1.999 1.34 2.17 4.156.468 5.858L85.424 31.262c-1.32 1.32-3.37 1.53-5.033.678A35.846 35.846 0 0 0 64 28c-19.882 0-36 16.118-36 36a35.846 35.846 0 0 0 3.94 16.391c.851 1.663.643 3.712-.678 5.033L16.646 100.04c-1.702 1.702-4.519 1.531-5.858-.468C3.974 89.399 0 77.163 0 64 0 28.654 28.654 0 64 0c13.163 0 25.399 3.974 35.572 10.788Z"></path>
                       <path fill="#6C47FF" d="M100.04 111.354c1.702 1.702 1.531 4.519-.468 5.858C89.399 124.026 77.164 128 64 128c-13.164 0-25.399-3.974-35.572-10.788-2-1.339-2.17-4.156-.468-5.858l14.615-14.616c1.321-1.32 3.37-1.53 5.033-.678A35.846 35.846 0 0 0 64 100a35.846 35.846 0 0 0 16.392-3.94c1.662-.852 3.712-.643 5.032.678l14.616 14.616Z"></path>
                     </svg>
                     <svg className="dark:block h-[22px] hidden w-auto" aria-hidden="true" fill="none" viewBox="0 0 441 128">
                       <path fill="#fff" d="M166.971 40.917c11.605 0 23.824 4.606 31.392 13.519a.14.14 0 0 1-.015.196l-11.393 9.858a.141.141 0 0 1-.198-.013 24.393 24.393 0 0 0-8.422-6.174 24.897 24.897 0 0 0-10.437-2.133c-13.41 0-22.35 9.192-22.35 22.63 0 6.713 2.223 12.345 6.087 16.29a22.093 22.093 0 0 0 7.464 4.805 22.461 22.461 0 0 0 8.799 1.511 26.7 26.7 0 0 0 10.378-1.996 26.24 26.24 0 0 0 8.635-5.752.141.141 0 0 1 .192-.007l11.645 10.047a.14.14 0 0 1 .013.2c-6.497 7.175-17.999 12.866-32.397 12.866-11.139 0-20.793-3.91-27.569-10.565C132.019 99.545 128 90.12 128 78.928c0-22.63 16.169-38.01 38.971-38.01Zm105.326.007c22.067 0 36.337 15.52 36.337 36.95a61.277 61.277 0 0 1-.457 6.659.141.141 0 0 1-.14.123h-54.261a.14.14 0 0 0-.136.171c2.321 10.287 10.27 16.557 21.26 16.557 3.579.075 7.126-.66 10.369-2.151a23.251 23.251 0 0 0 8.236-6.335.14.14 0 0 1 .199-.019l.447.373 11.163 9.719a.14.14 0 0 1 .018.194c-6.316 7.834-16.808 13.599-31.355 13.599-21.772 0-38.196-15.077-38.196-37.983 0-11.238 3.87-20.663 10.319-27.317a35.7 35.7 0 0 1 11.989-7.934 36.2 36.2 0 0 1 14.208-2.606Zm-46.636-28.948a.14.14 0 0 1 .141.14v103.509a.14.14 0 0 1-.141.141h-16.684a.14.14 0 0 1-.141-.141V12.117c0-.078.063-.141.141-.141h16.684Zm135.724 28.943a.14.14 0 0 1 .142.14v18.553c0 .081-.07.146-.151.14-1.944-.147-3.88-.29-5.072-.29-13.058 0-20.725 9.19-20.725 21.253v34.91a.14.14 0 0 1-.141.141h-16.683a.14.14 0 0 1-.141-.141v-73.52a.14.14 0 0 1 .141-.14h16.683a.14.14 0 0 1 .141.14V53.04c0 .057.047.103.104.103a.105.105 0 0 0 .083-.041c5.851-7.815 14.488-12.162 23.613-12.162l2.006-.022Zm26.947-28.943a.14.14 0 0 1 .141.14v63.165c0 .129.157.19.244.095l30.691-33.455a.142.142 0 0 1 .104-.046h20.063c.122 0 .187.145.105.236l-26.752 29.515a.142.142 0 0 0-.016.17l27.119 43.755a.14.14 0 0 1-.119.215h-19.033a.14.14 0 0 1-.12-.067l-19.234-30.912a.14.14 0 0 0-.119-.066h-.18a.144.144 0 0 0-.104.045l-12.612 13.55a.14.14 0 0 0-.037.096v17.213a.14.14 0 0 1-.141.141h-16.685a.14.14 0 0 1-.14-.141V12.117a.14.14 0 0 1 .14-.141h16.685ZM273.184 56.153a19.44 19.44 0 0 0-8.036 1.46 19.154 19.154 0 0 0-6.683 4.624 20.438 20.438 0 0 0-4.538 8.68.14.14 0 0 0 .135.173h37.036a.14.14 0 0 0 .135-.174c-2.156-8.804-8.293-14.763-18.049-14.763Z"></path>
-                      <circle cx="64" cy="64" r="20" fill="#fff"></circle>
-                      <path fill="#fff" fillOpacity="0.4" d="M99.572 10.788c1.999 1.34 2.17 4.156.468 5.858L85.424 31.262c-1.32 1.32-3.37 1.53-5.033.678A35.846 35.846 0 0 0 64 28c-19.882 0-36 16.118-36 36a35.846 35.846 0 0 0 3.94 16.391c.851 1.663.643 3.712-.678 5.033L16.646 100.04c-1.702 1.702-4.519 1.531-5.858-.468C3.974 89.399 0 77.163 0 64 0 28.654 28.654 0 64 0c13.163 0 25.399 3.974 35.572 10.788Z"></path>
+                      <circle cx={64} cy={64} r={20} fill="#fff"></circle>
+                      <path fill="#fff" fillOpacity={0.4} d="M99.572 10.788c1.999 1.34 2.17 4.156.468 5.858L85.424 31.262c-1.32 1.32-3.37 1.53-5.033.678A35.846 35.846 0 0 0 64 28c-19.882 0-36 16.118-36 36a35.846 35.846 0 0 0 3.94 16.391c.851 1.663.643 3.712-.678 5.033L16.646 100.04c-1.702 1.702-4.519 1.531-5.858-.468C3.974 89.399 0 77.163 0 64 0 28.654 28.654 0 64 0c13.163 0 25.399 3.974 35.572 10.788Z"></path>
                       <path fill="#fff" d="M100.04 111.354c1.702 1.702 1.531 4.519-.468 5.858C89.399 124.026 77.164 128 64 128c-13.164 0-25.399-3.974-35.572-10.788-2-1.339-2.17-4.156-.468-5.858l14.615-14.616c1.321-1.32 3.37-1.53 5.033-.678A35.846 35.846 0 0 0 64 100a35.846 35.846 0 0 0 16.392-3.94c1.662-.852 3.712-.643 5.032.678l14.616 14.616Z"></path>
                     </svg>
                   </span>
@@ -116,16 +116,16 @@ export function Pattern() {
                       <path d="M485.645 66.7608C486.243 72.3621 491.339 81.9642 506.124 81.9642C519.012 81.9642 525.205 73.7624 525.205 65.7607C525.205 58.559 520.311 52.6577 510.62 50.6571L503.626 49.1569C500.929 48.6568 499.132 47.1565 499.132 44.7559C499.132 41.9552 501.928 39.8549 505.425 39.8549C511.021 39.8549 513.118 43.5556 513.519 46.4564L524.607 43.9558C524.007 38.6546 519.312 29.7527 505.326 29.7527C494.735 29.7527 486.944 37.0543 486.944 45.8561C486.944 52.7576 491.238 58.4591 500.73 60.5594L507.224 62.0598C511.021 62.8599 512.519 64.6605 512.519 66.8609C512.519 69.4615 510.421 71.762 506.025 71.762C500.23 71.762 497.334 68.1611 497.034 64.2602L485.645 66.7608Z" fill="#1F1F1F"></path>
                       <path d="M545.385 50.2571C545.685 45.7562 549.482 40.5549 556.375 40.5549C563.967 40.5549 567.165 45.3561 567.365 50.2571H545.385ZM568.664 63.0601C567.065 67.4609 563.668 70.5617 557.474 70.5617C550.88 70.5617 545.385 65.8606 545.087 59.3593H580.252C580.252 59.159 580.451 57.1587 580.451 55.2582C580.451 39.4547 571.361 29.7527 556.175 29.7527C543.588 29.7527 531.998 39.9548 531.998 55.6584C531.998 72.262 543.886 81.9642 557.374 81.9642C569.462 81.9642 577.255 74.8626 579.753 66.3607L568.664 63.0601Z" fill="#1F1F1F"></path>
                       <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-light-paint0)"></path>
-                      <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-light-paint1)" fillOpacity="0.2"></path>
+                      <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-light-paint1)" fillOpacity={0.2}></path>
                       <path d="M45.317 2.07103C48.1765 -1.53037 53.9745 0.442937 54.0434 5.041L54.4849 72.2922H9.83113C1.64038 72.2922 -2.92775 62.8321 2.1655 56.4175L45.317 2.07103Z" fill="#3ECF8E"></path>
                       <defs>
-                        <lineargradient id="supabase-light-paint0" x1="53.9738" y1="54.974" x2="94.1635" y2="71.8295" gradientUnits="userSpaceOnUse">
+                        <lineargradient id="supabase-light-paint0" x1={53.9738} y1={54.974} x2={94.1635} y2={71.8295} gradientUnits="userSpaceOnUse">
                           <stop stopColor="#249361"></stop>
-                          <stop offset="1" stopColor="#3ECF8E"></stop>
+                          <stop offset={1} stopColor="#3ECF8E"></stop>
                         </lineargradient>
-                        <lineargradient id="supabase-light-paint1" x1="36.1558" y1="30.578" x2="54.4844" y2="65.0806" gradientUnits="userSpaceOnUse">
+                        <lineargradient id="supabase-light-paint1" x1={36.1558} y1={30.578} x2={54.4844} y2={65.0806} gradientUnits="userSpaceOnUse">
                           <stop></stop>
-                          <stop offset="1" stopOpacity="0"></stop>
+                          <stop offset={1} stopOpacity={0}></stop>
                         </lineargradient>
                       </defs>
                     </svg>
@@ -139,16 +139,16 @@ export function Pattern() {
                       <path d="M485.645 66.7608C486.243 72.3621 491.339 81.9642 506.124 81.9642C519.012 81.9642 525.205 73.7624 525.205 65.7607C525.205 58.559 520.311 52.6577 510.62 50.6571L503.626 49.1569C500.929 48.6568 499.132 47.1565 499.132 44.7559C499.132 41.9552 501.928 39.8549 505.425 39.8549C511.021 39.8549 513.118 43.5556 513.519 46.4564L524.607 43.9558C524.007 38.6546 519.312 29.7527 505.326 29.7527C494.735 29.7527 486.944 37.0543 486.944 45.8561C486.944 52.7576 491.238 58.4591 500.73 60.5594L507.224 62.0598C511.021 62.8599 512.519 64.6605 512.519 66.8609C512.519 69.4615 510.421 71.762 506.025 71.762C500.23 71.762 497.334 68.1611 497.034 64.2602L485.645 66.7608Z" fill="white"></path>
                       <path d="M545.385 50.2571C545.685 45.7562 549.482 40.5549 556.375 40.5549C563.967 40.5549 567.165 45.3561 567.365 50.2571H545.385ZM568.664 63.0601C567.065 67.4609 563.668 70.5617 557.474 70.5617C550.88 70.5617 545.385 65.8606 545.087 59.3593H580.252C580.252 59.159 580.451 57.1587 580.451 55.2582C580.451 39.4547 571.361 29.7527 556.175 29.7527C543.588 29.7527 531.998 39.9548 531.998 55.6584C531.998 72.262 543.886 81.9642 557.374 81.9642C569.462 81.9642 577.255 74.8626 579.753 66.3607L568.664 63.0601Z" fill="white"></path>
                       <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-dark-paint0)"></path>
-                      <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-dark-paint1)" fillOpacity="0.2"></path>
+                      <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-dark-paint1)" fillOpacity={0.2}></path>
                       <path d="M45.317 2.07103C48.1765 -1.53037 53.9745 0.442937 54.0434 5.041L54.4849 72.2922H9.83113C1.64038 72.2922 -2.92775 62.8321 2.1655 56.4175L45.317 2.07103Z" fill="#3ECF8E"></path>
                       <defs>
-                        <lineargradient id="supabase-dark-paint0" x1="53.9738" y1="54.974" x2="94.1635" y2="71.8295" gradientUnits="userSpaceOnUse">
+                        <lineargradient id="supabase-dark-paint0" x1={53.9738} y1={54.974} x2={94.1635} y2={71.8295} gradientUnits="userSpaceOnUse">
                           <stop stopColor="#249361"></stop>
-                          <stop offset="1" stopColor="#3ECF8E"></stop>
+                          <stop offset={1} stopColor="#3ECF8E"></stop>
                         </lineargradient>
-                        <lineargradient id="supabase-dark-paint1" x1="36.1558" y1="30.578" x2="54.4844" y2="65.0806" gradientUnits="userSpaceOnUse">
+                        <lineargradient id="supabase-dark-paint1" x1={36.1558} y1={30.578} x2={54.4844} y2={65.0806} gradientUnits="userSpaceOnUse">
                           <stop></stop>
-                          <stop offset="1" stopOpacity="0"></stop>
+                          <stop offset={1} stopOpacity={0}></stop>
                         </lineargradient>
                       </defs>
                     </svg>
@@ -157,20 +157,20 @@ export function Pattern() {
               </div>
               <div className="border-border border-dashed border-t max-w-xs w-full" aria-hidden="true"></div>
               <div className="flex flex-wrap gap-2 items-center">
-                <Button href="#" role="button" tabIndex="0">
-                  <svg className="lucide lucide-network size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="NetworkIcon" tabler="IconSitemap" hugeicons="HierarchySquare01Icon" phosphor="TreeStructureIcon" remixicon="RiOrganizationChart" aria-hidden="true">
-                    <rect x="16" y="16" width="6" height="6" rx="1"></rect>
-                    <rect x="2" y="16" width="6" height="6" rx="1"></rect>
-                    <rect x="9" y="2" width="6" height="6" rx="1"></rect>
+                <Button href="#" role="button" tabIndex={0}>
+                  <svg className="lucide lucide-network size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="NetworkIcon" tabler="IconSitemap" hugeicons="HierarchySquare01Icon" phosphor="TreeStructureIcon" remixicon="RiOrganizationChart" aria-hidden="true">
+                    <rect x={16} y={16} width={6} height={6} rx={1}></rect>
+                    <rect x={2} y={16} width={6} height={6} rx={1}></rect>
+                    <rect x={9} y={2} width={6} height={6} rx={1}></rect>
                     <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
                     <path d="M12 12V8"></path>
                   </svg>
                   {"Connect MCP"}
                 </Button>
-                <Button className="text-foreground" href="#" role="button" tabIndex="0">
-                  <svg className="lucide lucide-blocks size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BlocksIcon" tabler="IconComponents" hugeicons="DashboardSquare01Icon" phosphor="SquaresFourIcon" remixicon="RiApps2Line" aria-hidden="true">
+                <Button className="text-foreground" href="#" role="button" tabIndex={0}>
+                  <svg className="lucide lucide-blocks size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BlocksIcon" tabler="IconComponents" hugeicons="DashboardSquare01Icon" phosphor="SquaresFourIcon" remixicon="RiApps2Line" aria-hidden="true">
                     <path d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"></path>
-                    <rect x="14" y="2" width="8" height="8" rx="1"></rect>
+                    <rect x={14} y={2} width={8} height={8} rx={1}></rect>
                   </svg>
                   {"Browse Registry"}
                 </Button>
@@ -191,7 +191,7 @@ export function Pattern() {
                             <Card className="[box-shadow:0_0_0_12px_#ffffff40] absolute bg-white border-neutral-200 dark:bg-neutral-900 dark:border-neutral-800 dark:text-neutral-50 gap-0 h-[692px] left-12 overflow-hidden p-0 text-neutral-900 top-12 w-[712px]" size="default">
                               <div className="border-b border-neutral-200 dark:border-neutral-800 flex gap-2 h-12 items-center px-3 shrink-0">
                                 <IconTile className="bg-teal-500 text-white" variant="solid" size="sm">
-                                  <svg className="lucide lucide-zap size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ZapIcon" tabler="IconBolt" hugeicons="FlashIcon" phosphor="LightningIcon" remixicon="RiFlashlightLine" aria-hidden="true">
+                                  <svg className="lucide lucide-zap size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ZapIcon" tabler="IconBolt" hugeicons="FlashIcon" phosphor="LightningIcon" remixicon="RiFlashlightLine" aria-hidden="true">
                                     <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                                   </svg>
                                 </IconTile>
@@ -204,7 +204,7 @@ export function Pattern() {
                                       {"8 members"}
                                     </span>
                                   </span>
-                                  <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                  <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -214,7 +214,7 @@ export function Pattern() {
                                   <span className="font-medium">
                                     {"Home"}
                                   </span>
-                                  <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                  <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -229,13 +229,13 @@ export function Pattern() {
                               <div className="flex flex-1 min-h-0">
                                 <div className="bg-neutral-900 border-neutral-900 border-r dark:bg-neutral-950 dark:border-neutral-950 flex flex-col gap-2 items-center py-3 shrink-0 w-[52px]">
                                   <Item className="bg-neutral-800 border-transparent dark:bg-neutral-800 p-0 size-8 text-white" variant="default" size="xs">
-                                    <svg className="lucide lucide-house size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HouseIcon" tabler="IconHome" hugeicons="Home03Icon" phosphor="HouseIcon" remixicon="RiHome5Line" aria-hidden="true">
+                                    <svg className="lucide lucide-house size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HouseIcon" tabler="IconHome" hugeicons="Home03Icon" phosphor="HouseIcon" remixicon="RiHome5Line" aria-hidden="true">
                                       <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
                                       <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                                     </svg>
                                   </Item>
                                   <span className="flex items-center justify-center size-8 text-neutral-400">
-                                    <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
+                                    <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
                                       <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
                                       <path d="M12 22V12"></path>
                                       <polyline points="3.29 7 12 12 20.71 7"></polyline>
@@ -243,27 +243,27 @@ export function Pattern() {
                                     </svg>
                                   </span>
                                   <span className="flex items-center justify-center size-8 text-neutral-400">
-                                    <svg className="lucide lucide-shopping-cart size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingCartIcon" tabler="IconShoppingCart" hugeicons="ShoppingCart01Icon" phosphor="ShoppingCartIcon" remixicon="RiShoppingCartLine" aria-hidden="true">
-                                      <circle cx="8" cy="21" r="1"></circle>
-                                      <circle cx="19" cy="21" r="1"></circle>
+                                    <svg className="lucide lucide-shopping-cart size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingCartIcon" tabler="IconShoppingCart" hugeicons="ShoppingCart01Icon" phosphor="ShoppingCartIcon" remixicon="RiShoppingCartLine" aria-hidden="true">
+                                      <circle cx={8} cy={21} r={1}></circle>
+                                      <circle cx={19} cy={21} r={1}></circle>
                                       <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
                                     </svg>
                                   </span>
                                   <span className="flex items-center justify-center size-8 text-neutral-400">
-                                    <svg className="lucide lucide-users size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                                    <svg className="lucide lucide-users size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                                       <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                                       <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                       <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                      <circle cx="9" cy="7" r="4"></circle>
+                                      <circle cx={9} cy={7} r={4}></circle>
                                     </svg>
                                   </span>
                                   <span className="flex items-center justify-center size-8 text-neutral-400">
-                                    <svg className="lucide lucide-message-square size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareIcon" tabler="IconMessageDots" hugeicons="Message02Icon" phosphor="ChatIcon" remixicon="RiChat4Line" aria-hidden="true">
+                                    <svg className="lucide lucide-message-square size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareIcon" tabler="IconMessageDots" hugeicons="Message02Icon" phosphor="ChatIcon" remixicon="RiChat4Line" aria-hidden="true">
                                       <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                     </svg>
                                   </span>
                                   <span className="flex items-center justify-center size-8 text-neutral-400">
-                                    <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
+                                    <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
                                       <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                                       <path d="M18 17V9"></path>
                                       <path d="M13 17V5"></path>
@@ -271,9 +271,9 @@ export function Pattern() {
                                     </svg>
                                   </span>
                                   <span className="flex items-center justify-center size-8 text-neutral-400">
-                                    <svg className="lucide lucide-settings size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SettingsIcon" tabler="IconSettings" hugeicons="SettingsIcon" phosphor="GearIcon" remixicon="RiSettings3Line" aria-hidden="true">
+                                    <svg className="lucide lucide-settings size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SettingsIcon" tabler="IconSettings" hugeicons="SettingsIcon" phosphor="GearIcon" remixicon="RiSettings3Line" aria-hidden="true">
                                       <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
-                                      <circle cx="12" cy="12" r="3"></circle>
+                                      <circle cx={12} cy={12} r={3}></circle>
                                     </svg>
                                   </span>
                                 </div>
@@ -283,7 +283,7 @@ export function Pattern() {
                                       {"Workspace"}
                                     </span>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-house size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HouseIcon" tabler="IconHome" hugeicons="Home03Icon" phosphor="HouseIcon" remixicon="RiHome5Line" aria-hidden="true">
+                                      <svg className="lucide lucide-house size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HouseIcon" tabler="IconHome" hugeicons="Home03Icon" phosphor="HouseIcon" remixicon="RiHome5Line" aria-hidden="true">
                                         <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
                                         <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                                       </svg>
@@ -292,7 +292,7 @@ export function Pattern() {
                                       </span>
                                     </Item>
                                     <Item className="bg-neutral-100 border-transparent dark:bg-neutral-800 dark:text-neutral-50 font-medium gap-2 px-2 py-1.5 text-neutral-900 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-bell size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BellIcon" tabler="IconBell" hugeicons="Notification01Icon" phosphor="BellIcon" remixicon="RiNotification3Line" aria-hidden="true">
+                                      <svg className="lucide lucide-bell size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BellIcon" tabler="IconBell" hugeicons="Notification01Icon" phosphor="BellIcon" remixicon="RiNotification3Line" aria-hidden="true">
                                         <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
                                         <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
                                       </svg>
@@ -301,7 +301,7 @@ export function Pattern() {
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-inbox size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InboxIcon" tabler="IconInbox" hugeicons="Mailbox01Icon" phosphor="TrayIcon" remixicon="RiInboxLine" aria-hidden="true">
+                                      <svg className="lucide lucide-inbox size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InboxIcon" tabler="IconInbox" hugeicons="Mailbox01Icon" phosphor="TrayIcon" remixicon="RiInboxLine" aria-hidden="true">
                                         <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
                                         <path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
                                       </svg>
@@ -310,11 +310,11 @@ export function Pattern() {
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-users size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                                      <svg className="lucide lucide-users size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                                         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                                         <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                         <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <circle cx={9} cy={7} r={4}></circle>
                                       </svg>
                                       <span className="truncate">
                                         {"Clients"}
@@ -324,7 +324,7 @@ export function Pattern() {
                                       </Badge>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-chart-line size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChartLineIcon" tabler="IconChartLine" hugeicons="Analytics01Icon" phosphor="ChartLineIcon" remixicon="RiLineChartLine" aria-hidden="true">
+                                      <svg className="lucide lucide-chart-line size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChartLineIcon" tabler="IconChartLine" hugeicons="Analytics01Icon" phosphor="ChartLineIcon" remixicon="RiLineChartLine" aria-hidden="true">
                                         <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                                         <path d="m19 9-5 5-4-4-3 3"></path>
                                       </svg>
@@ -338,32 +338,32 @@ export function Pattern() {
                                       {"Workspaces"}
                                     </span>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-briefcase size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BriefcaseIcon" tabler="IconBriefcase" hugeicons="BriefcaseIcon" phosphor="BriefcaseIcon" remixicon="RiBriefcaseLine" aria-hidden="true">
+                                      <svg className="lucide lucide-briefcase size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BriefcaseIcon" tabler="IconBriefcase" hugeicons="BriefcaseIcon" phosphor="BriefcaseIcon" remixicon="RiBriefcaseLine" aria-hidden="true">
                                         <path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                                        <rect width="20" height="14" x="2" y="6" rx="2"></rect>
+                                        <rect width={20} height={14} x={2} y={6} rx={2}></rect>
                                       </svg>
                                       <span className="truncate">
                                         {"Business Concepts"}
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-palette size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PaletteIcon" tabler="IconPalette" hugeicons="PaintBoardIcon" phosphor="PaletteIcon" remixicon="RiPaletteLine" aria-hidden="true">
+                                      <svg className="lucide lucide-palette size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PaletteIcon" tabler="IconPalette" hugeicons="PaintBoardIcon" phosphor="PaletteIcon" remixicon="RiPaletteLine" aria-hidden="true">
                                         <path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"></path>
-                                        <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
-                                        <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
-                                        <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
-                                        <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                        <circle cx={13.5} cy={6.5} r=".5" fill="currentColor"></circle>
+                                        <circle cx={17.5} cy={10.5} r=".5" fill="currentColor"></circle>
+                                        <circle cx={6.5} cy={12.5} r=".5" fill="currentColor"></circle>
+                                        <circle cx={8.5} cy={7.5} r=".5" fill="currentColor"></circle>
                                       </svg>
                                       <span className="truncate">
                                         {"Newcapec Studio"}
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-users size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                                      <svg className="lucide lucide-users size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                                         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                                         <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                         <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <circle cx={9} cy={7} r={4}></circle>
                                       </svg>
                                       <span className="truncate">
                                         {"Teams"}
@@ -373,7 +373,7 @@ export function Pattern() {
                                       </Badge>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-chart-line size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChartLineIcon" tabler="IconChartLine" hugeicons="Analytics01Icon" phosphor="ChartLineIcon" remixicon="RiLineChartLine" aria-hidden="true">
+                                      <svg className="lucide lucide-chart-line size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChartLineIcon" tabler="IconChartLine" hugeicons="Analytics01Icon" phosphor="ChartLineIcon" remixicon="RiLineChartLine" aria-hidden="true">
                                         <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                                         <path d="m19 9-5 5-4-4-3 3"></path>
                                       </svg>
@@ -387,7 +387,7 @@ export function Pattern() {
                                       {"Communities"}
                                     </span>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-plus size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                                      <svg className="lucide lucide-plus size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                                         <path d="M5 12h14"></path>
                                         <path d="M12 5v14"></path>
                                       </svg>
@@ -396,8 +396,8 @@ export function Pattern() {
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-circle-check size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle01Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
-                                        <circle cx="12" cy="12" r="10"></circle>
+                                      <svg className="lucide lucide-circle-check size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle01Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
+                                        <circle cx={12} cy={12} r={10}></circle>
                                         <path d="m9 12 2 2 4-4"></path>
                                       </svg>
                                       <span className="truncate">
@@ -405,7 +405,7 @@ export function Pattern() {
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-code-xml size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CodeXmlIcon" tabler="IconCode" hugeicons="SourceCodeIcon" phosphor="CodeIcon" remixicon="RiCodeSSlashLine" aria-hidden="true">
+                                      <svg className="lucide lucide-code-xml size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CodeXmlIcon" tabler="IconCode" hugeicons="SourceCodeIcon" phosphor="CodeIcon" remixicon="RiCodeSSlashLine" aria-hidden="true">
                                         <path d="m18 16 4-4-4-4"></path>
                                         <path d="m6 8-4 4 4 4"></path>
                                         <path d="m14.5 4-5 16"></path>
@@ -415,7 +415,7 @@ export function Pattern() {
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-box size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BoxIcon" tabler="IconBox" hugeicons="PackageIcon" phosphor="CubeIcon" remixicon="RiBox3Line" aria-hidden="true">
+                                      <svg className="lucide lucide-box size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BoxIcon" tabler="IconBox" hugeicons="PackageIcon" phosphor="CubeIcon" remixicon="RiBox3Line" aria-hidden="true">
                                         <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path>
                                         <path d="m3.3 7 8.7 5 8.7-5"></path>
                                         <path d="M12 22V12"></path>
@@ -438,13 +438,13 @@ export function Pattern() {
                                     </div>
                                     <div className="flex gap-1.5 items-center ms-auto">
                                       <IconTile className="border-neutral-200 dark:border-neutral-800 dark:text-neutral-400 text-neutral-500" variant="outline" size="sm">
-                                        <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+                                        <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                                           <path d="m21 21-4.34-4.34"></path>
-                                          <circle cx="11" cy="11" r="8"></circle>
+                                          <circle cx={11} cy={11} r={8}></circle>
                                         </svg>
                                       </IconTile>
                                       <span className="bg-neutral-900 dark:bg-white dark:text-neutral-900 flex font-medium gap-1.5 h-8 items-center px-3 rounded-full text-white text-xs whitespace-nowrap">
-                                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                                           <path d="M5 12h14"></path>
                                           <path d="M12 5v14"></path>
                                         </svg>
@@ -479,7 +479,7 @@ export function Pattern() {
                                   <Card className="bg-white border border-neutral-200 dark:bg-neutral-900 dark:border-neutral-800 dark:text-neutral-50 gap-0 p-0 shadow-none text-neutral-900" size="default">
                                     <div className="acme-pick flex gap-2.5 items-center px-3 py-2.5" style={{"--acme-step": "0", "--acme-count": "4"}}>
                                       <IconTile className="text-violet-500" variant="soft" size="sm">
-                                        <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
+                                        <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
                                           <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                                           <path d="M18 17V9"></path>
                                           <path d="M13 17V5"></path>
@@ -505,7 +505,7 @@ export function Pattern() {
                                     </div>
                                     <div className="acme-pick border-neutral-200 border-t dark:border-neutral-800 flex gap-2.5 items-center px-3 py-2.5" style={{"--acme-step": "1", "--acme-count": "4"}}>
                                       <IconTile className="text-teal-500" variant="soft" size="sm">
-                                        <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
+                                        <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
                                           <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                                           <path d="M18 17V9"></path>
                                           <path d="M13 17V5"></path>
@@ -531,7 +531,7 @@ export function Pattern() {
                                     </div>
                                     <div className="acme-pick border-neutral-200 border-t dark:border-neutral-800 flex gap-2.5 items-center px-3 py-2.5" style={{"--acme-step": "2", "--acme-count": "4"}}>
                                       <IconTile className="text-amber-500" variant="soft" size="sm">
-                                        <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
+                                        <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
                                           <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                                           <path d="M18 17V9"></path>
                                           <path d="M13 17V5"></path>
@@ -557,7 +557,7 @@ export function Pattern() {
                                     </div>
                                     <div className="acme-pick border-neutral-200 border-t dark:border-neutral-800 flex gap-2.5 items-center px-3 py-2.5" style={{"--acme-step": "3", "--acme-count": "4"}}>
                                       <IconTile className="text-rose-500" variant="soft" size="sm">
-                                        <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
+                                        <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
                                           <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                                           <path d="M18 17V9"></path>
                                           <path d="M13 17V5"></path>
@@ -594,10 +594,10 @@ export function Pattern() {
                                     <div className="flex-1 min-h-0 text-violet-500">
                                       <div className="flex gap-3 items-center size-full">
                                         <svg className="h-full shrink-0" viewBox="0 0 36 36" aria-hidden="true">
-                                          <circle className="dark:stroke-neutral-700 stroke-neutral-200" cx="18" cy="18" r="14" fill="none" strokeWidth="6"></circle>
-                                          <circle className="acme-ring" cx="18" cy="18" r="14" fill="none" stroke="currentColor" strokeWidth="6" strokeDasharray="40.463713378236534 87.96459430051421" strokeDashoffset="0" transform="rotate(-90 18 18)" style={{opacity: "1", "--acme-step": "0"}}></circle>
-                                          <circle className="acme-ring" cx="18" cy="18" r="14" fill="none" stroke="currentColor" strokeWidth="6" strokeDasharray="28.148670176164547 87.96459430051421" strokeDashoffset="-40.463713378236534" transform="rotate(-90 18 18)" style={{opacity: "0.7", "--acme-step": "1"}}></circle>
-                                          <circle className="acme-ring" cx="18" cy="18" r="14" fill="none" stroke="currentColor" strokeWidth="6" strokeDasharray="19.352210746113126 87.96459430051421" strokeDashoffset="-68.61238355440108" transform="rotate(-90 18 18)" style={{opacity: "0.4", "--acme-step": "2"}}></circle>
+                                          <circle className="dark:stroke-neutral-700 stroke-neutral-200" cx={18} cy={18} r={14} fill="none" strokeWidth={6}></circle>
+                                          <circle className="acme-ring" cx={18} cy={18} r={14} fill="none" stroke="currentColor" strokeWidth={6} strokeDasharray="40.463713378236534 87.96459430051421" strokeDashoffset={0} transform="rotate(-90 18 18)" style={{opacity: "1", "--acme-step": "0"}}></circle>
+                                          <circle className="acme-ring" cx={18} cy={18} r={14} fill="none" stroke="currentColor" strokeWidth={6} strokeDasharray="28.148670176164547 87.96459430051421" strokeDashoffset={-40.463713378236534} transform="rotate(-90 18 18)" style={{opacity: "0.7", "--acme-step": "1"}}></circle>
+                                          <circle className="acme-ring" cx={18} cy={18} r={14} fill="none" stroke="currentColor" strokeWidth={6} strokeDasharray="19.352210746113126 87.96459430051421" strokeDashoffset={-68.61238355440108} transform="rotate(-90 18 18)" style={{opacity: "0.4", "--acme-step": "2"}}></circle>
                                         </svg>
                                         <div className="flex flex-col gap-1 min-w-0">
                                           <span className="flex gap-1.5 items-center text-xs">
@@ -651,7 +651,7 @@ export function Pattern() {
                               <div className="border-b border-neutral-200 dark:border-neutral-800 flex gap-2 h-12 items-center px-3 shrink-0">
                                 <IconTile className="bg-neutral-900 dark:bg-white dark:text-neutral-900 text-white" variant="solid" size="sm">
                                   <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M9.33333 0.538463H4.66667C2.38672 0.538463 0.538463 2.38672 0.538463 4.66667V9.33333C0.538463 11.6133 2.38672 13.4615 4.66667 13.4615H9.33333C11.6133 13.4615 13.4615 11.6133 13.4615 9.33333V4.66667C13.4615 2.38672 11.6133 0.538463 9.33333 0.538463ZM4.66667 0C2.08934 0 0 2.08934 0 4.66667V9.33333C0 11.9107 2.08934 14 4.66667 14H9.33333C11.9107 14 14 11.9107 14 9.33333V4.66667C14 2.08934 11.9107 0 9.33333 0H4.66667Z" fill="currentColor" opacity="0.2"></path>
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M9.33333 0.538463H4.66667C2.38672 0.538463 0.538463 2.38672 0.538463 4.66667V9.33333C0.538463 11.6133 2.38672 13.4615 4.66667 13.4615H9.33333C11.6133 13.4615 13.4615 11.6133 13.4615 9.33333V4.66667C13.4615 2.38672 11.6133 0.538463 9.33333 0.538463ZM4.66667 0C2.08934 0 0 2.08934 0 4.66667V9.33333C0 11.9107 2.08934 14 4.66667 14H9.33333C11.9107 14 14 11.9107 14 9.33333V4.66667C14 2.08934 11.9107 0 9.33333 0H4.66667Z" fill="currentColor" opacity={0.2}></path>
                                     <g transform="translate(3.5238 3.5)">
                                       <path fillRule="evenodd" clipRule="evenodd" d="M0 4.46307V0.657716C0 0.294471 0.294471 0 0.657708 0C1.02097 0 1.31544 0.294471 1.31544 0.657716V4.46307C1.31544 5.13768 1.86229 5.68457 2.5369 5.68457H4.41613C5.09069 5.68457 5.63759 5.13768 5.63759 4.46307V2.60267C5.63759 2.23944 5.93205 1.94498 6.29531 1.94498C6.65854 1.94498 6.953 2.23944 6.953 2.60267V4.46307C6.953 5.8642 5.81721 6.99999 4.41613 6.99999H2.5369C1.13581 6.99999 0 5.8642 0 4.46307Z" fill="currentColor"></path>
                                     </g>
@@ -665,7 +665,7 @@ export function Pattern() {
                                   <span className="dark:text-neutral-50 font-medium text-neutral-900">
                                     {"Acme Inc"}
                                   </span>
-                                  <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                  <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -675,7 +675,7 @@ export function Pattern() {
                                   <span className="font-medium">
                                     {"Inventory"}
                                   </span>
-                                  <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                  <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -690,13 +690,13 @@ export function Pattern() {
                               <div className="flex flex-1 min-h-0">
                                 <div className="border-neutral-200 border-r dark:border-neutral-800 flex flex-col gap-2 items-center py-3 shrink-0 w-[52px]">
                                   <span className="dark:text-neutral-400 flex items-center justify-center size-8 text-neutral-500">
-                                    <svg className="lucide lucide-house size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HouseIcon" tabler="IconHome" hugeicons="Home03Icon" phosphor="HouseIcon" remixicon="RiHome5Line" aria-hidden="true">
+                                    <svg className="lucide lucide-house size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HouseIcon" tabler="IconHome" hugeicons="Home03Icon" phosphor="HouseIcon" remixicon="RiHome5Line" aria-hidden="true">
                                       <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
                                       <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                                     </svg>
                                   </span>
                                   <Item className="bg-neutral-100 border-transparent dark:bg-neutral-800 dark:text-neutral-50 font-medium p-0 size-8 text-neutral-900" variant="default" size="xs">
-                                    <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
+                                    <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
                                       <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
                                       <path d="M12 22V12"></path>
                                       <polyline points="3.29 7 12 12 20.71 7"></polyline>
@@ -704,27 +704,27 @@ export function Pattern() {
                                     </svg>
                                   </Item>
                                   <span className="dark:text-neutral-400 flex items-center justify-center size-8 text-neutral-500">
-                                    <svg className="lucide lucide-shopping-cart size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingCartIcon" tabler="IconShoppingCart" hugeicons="ShoppingCart01Icon" phosphor="ShoppingCartIcon" remixicon="RiShoppingCartLine" aria-hidden="true">
-                                      <circle cx="8" cy="21" r="1"></circle>
-                                      <circle cx="19" cy="21" r="1"></circle>
+                                    <svg className="lucide lucide-shopping-cart size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingCartIcon" tabler="IconShoppingCart" hugeicons="ShoppingCart01Icon" phosphor="ShoppingCartIcon" remixicon="RiShoppingCartLine" aria-hidden="true">
+                                      <circle cx={8} cy={21} r={1}></circle>
+                                      <circle cx={19} cy={21} r={1}></circle>
                                       <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
                                     </svg>
                                   </span>
                                   <span className="dark:text-neutral-400 flex items-center justify-center size-8 text-neutral-500">
-                                    <svg className="lucide lucide-users size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                                    <svg className="lucide lucide-users size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                                       <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                                       <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                       <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                      <circle cx="9" cy="7" r="4"></circle>
+                                      <circle cx={9} cy={7} r={4}></circle>
                                     </svg>
                                   </span>
                                   <span className="dark:text-neutral-400 flex items-center justify-center size-8 text-neutral-500">
-                                    <svg className="lucide lucide-message-square size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareIcon" tabler="IconMessageDots" hugeicons="Message02Icon" phosphor="ChatIcon" remixicon="RiChat4Line" aria-hidden="true">
+                                    <svg className="lucide lucide-message-square size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareIcon" tabler="IconMessageDots" hugeicons="Message02Icon" phosphor="ChatIcon" remixicon="RiChat4Line" aria-hidden="true">
                                       <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                     </svg>
                                   </span>
                                   <span className="dark:text-neutral-400 flex items-center justify-center size-8 text-neutral-500">
-                                    <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
+                                    <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
                                       <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                                       <path d="M18 17V9"></path>
                                       <path d="M13 17V5"></path>
@@ -732,9 +732,9 @@ export function Pattern() {
                                     </svg>
                                   </span>
                                   <span className="dark:text-neutral-400 flex items-center justify-center size-8 text-neutral-500">
-                                    <svg className="lucide lucide-settings size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SettingsIcon" tabler="IconSettings" hugeicons="SettingsIcon" phosphor="GearIcon" remixicon="RiSettings3Line" aria-hidden="true">
+                                    <svg className="lucide lucide-settings size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SettingsIcon" tabler="IconSettings" hugeicons="SettingsIcon" phosphor="GearIcon" remixicon="RiSettings3Line" aria-hidden="true">
                                       <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
-                                      <circle cx="12" cy="12" r="3"></circle>
+                                      <circle cx={12} cy={12} r={3}></circle>
                                     </svg>
                                   </span>
                                 </div>
@@ -744,27 +744,27 @@ export function Pattern() {
                                       {"Catalog"}
                                     </span>
                                     <Item className="bg-neutral-100 border-transparent dark:bg-neutral-800 dark:text-neutral-50 font-medium gap-2 px-2 py-1.5 text-neutral-900 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-layout-grid size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
-                                        <rect width="7" height="7" x="3" y="3" rx="1"></rect>
-                                        <rect width="7" height="7" x="14" y="3" rx="1"></rect>
-                                        <rect width="7" height="7" x="14" y="14" rx="1"></rect>
-                                        <rect width="7" height="7" x="3" y="14" rx="1"></rect>
+                                      <svg className="lucide lucide-layout-grid size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
+                                        <rect width={7} height={7} x={3} y={3} rx={1}></rect>
+                                        <rect width={7} height={7} x={14} y={3} rx={1}></rect>
+                                        <rect width={7} height={7} x={14} y={14} rx={1}></rect>
+                                        <rect width={7} height={7} x={3} y={14} rx={1}></rect>
                                       </svg>
                                       <span className="truncate">
                                         {"Product Catalog"}
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-tag size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                                      <svg className="lucide lucide-tag size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                                         <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                                        <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                        <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                                       </svg>
                                       <span className="truncate">
                                         {"Categories"}
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-star size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
+                                      <svg className="lucide lucide-star size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
                                         <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                                       </svg>
                                       <span className="truncate">
@@ -780,7 +780,7 @@ export function Pattern() {
                                       {"Operations"}
                                     </span>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-arrow-left-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftRightIcon" tabler="IconArrowsLeftRight" hugeicons="ArrowDataTransferHorizontalIcon" phosphor="ArrowsLeftRightIcon" remixicon="RiArrowLeftRightLine" aria-hidden="true">
+                                      <svg className="lucide lucide-arrow-left-right size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftRightIcon" tabler="IconArrowsLeftRight" hugeicons="ArrowDataTransferHorizontalIcon" phosphor="ArrowsLeftRightIcon" remixicon="RiArrowLeftRightLine" aria-hidden="true">
                                         <path d="M8 3 4 7l4 4"></path>
                                         <path d="M4 7h16"></path>
                                         <path d="m16 21 4-4-4-4"></path>
@@ -791,19 +791,19 @@ export function Pattern() {
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-truck size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
+                                      <svg className="lucide lucide-truck size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
                                         <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path>
                                         <path d="M15 18H9"></path>
                                         <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path>
-                                        <circle cx="17" cy="18" r="2"></circle>
-                                        <circle cx="7" cy="18" r="2"></circle>
+                                        <circle cx={17} cy={18} r={2}></circle>
+                                        <circle cx={7} cy={18} r={2}></circle>
                                       </svg>
                                       <span className="truncate">
                                         {"Suppliers"}
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-store size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="StoreIcon" tabler="IconBuildingStore" hugeicons="Store01Icon" phosphor="StorefrontIcon" remixicon="RiStore2Line" aria-hidden="true">
+                                      <svg className="lucide lucide-store size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="StoreIcon" tabler="IconBuildingStore" hugeicons="Store01Icon" phosphor="StorefrontIcon" remixicon="RiStore2Line" aria-hidden="true">
                                         <path d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5"></path>
                                         <path d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244"></path>
                                         <path d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05"></path>
@@ -813,7 +813,7 @@ export function Pattern() {
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-triangle-alert size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
+                                      <svg className="lucide lucide-triangle-alert size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
                                         <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
                                         <path d="M12 9v4"></path>
                                         <path d="M12 17h.01"></path>
@@ -839,13 +839,13 @@ export function Pattern() {
                                     </div>
                                     <div className="flex gap-1.5 items-center ms-auto">
                                       <IconTile className="border-neutral-200 dark:border-neutral-800 dark:text-neutral-400 text-neutral-500" variant="outline" size="sm">
-                                        <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+                                        <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                                           <path d="m21 21-4.34-4.34"></path>
-                                          <circle cx="11" cy="11" r="8"></circle>
+                                          <circle cx={11} cy={11} r={8}></circle>
                                         </svg>
                                       </IconTile>
                                       <span className="bg-neutral-900 dark:bg-white dark:text-neutral-900 flex font-medium gap-1.5 h-8 items-center px-3 rounded-full text-white text-xs whitespace-nowrap">
-                                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                                           <path d="M5 12h14"></path>
                                           <path d="M12 5v14"></path>
                                         </svg>
@@ -880,7 +880,7 @@ export function Pattern() {
                                   <Card className="bg-white border border-neutral-200 dark:bg-neutral-900 dark:border-neutral-800 dark:text-neutral-50 gap-0 p-0 shadow-none text-neutral-900" size="default">
                                     <div className="acme-pick flex gap-2.5 items-center px-3 py-2.5" style={{"--acme-step": "0", "--acme-count": "4"}}>
                                       <IconTile className="text-amber-500" variant="soft" size="sm">
-                                        <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
+                                        <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
                                           <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
                                           <path d="M12 22V12"></path>
                                           <polyline points="3.29 7 12 12 20.71 7"></polyline>
@@ -906,7 +906,7 @@ export function Pattern() {
                                     </div>
                                     <div className="acme-pick border-neutral-200 border-t dark:border-neutral-800 flex gap-2.5 items-center px-3 py-2.5" style={{"--acme-step": "1", "--acme-count": "4"}}>
                                       <IconTile className="text-violet-500" variant="soft" size="sm">
-                                        <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
+                                        <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
                                           <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
                                           <path d="M12 22V12"></path>
                                           <polyline points="3.29 7 12 12 20.71 7"></polyline>
@@ -932,7 +932,7 @@ export function Pattern() {
                                     </div>
                                     <div className="acme-pick border-neutral-200 border-t dark:border-neutral-800 flex gap-2.5 items-center px-3 py-2.5" style={{"--acme-step": "2", "--acme-count": "4"}}>
                                       <IconTile className="text-sky-500" variant="soft" size="sm">
-                                        <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
+                                        <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
                                           <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
                                           <path d="M12 22V12"></path>
                                           <polyline points="3.29 7 12 12 20.71 7"></polyline>
@@ -958,7 +958,7 @@ export function Pattern() {
                                     </div>
                                     <div className="acme-pick border-neutral-200 border-t dark:border-neutral-800 flex gap-2.5 items-center px-3 py-2.5" style={{"--acme-step": "3", "--acme-count": "4"}}>
                                       <IconTile className="text-rose-500" variant="soft" size="sm">
-                                        <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
+                                        <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
                                           <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
                                           <path d="M12 22V12"></path>
                                           <polyline points="3.29 7 12 12 20.71 7"></polyline>
@@ -1037,7 +1037,7 @@ export function Pattern() {
                               <div className="border-b border-neutral-200 dark:border-neutral-800 flex gap-2 h-12 items-center px-3 shrink-0">
                                 <IconTile className="bg-neutral-900 dark:bg-white dark:text-neutral-900 text-white" variant="solid" size="sm">
                                   <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M9.33333 0.538463H4.66667C2.38672 0.538463 0.538463 2.38672 0.538463 4.66667V9.33333C0.538463 11.6133 2.38672 13.4615 4.66667 13.4615H9.33333C11.6133 13.4615 13.4615 11.6133 13.4615 9.33333V4.66667C13.4615 2.38672 11.6133 0.538463 9.33333 0.538463ZM4.66667 0C2.08934 0 0 2.08934 0 4.66667V9.33333C0 11.9107 2.08934 14 4.66667 14H9.33333C11.9107 14 14 11.9107 14 9.33333V4.66667C14 2.08934 11.9107 0 9.33333 0H4.66667Z" fill="currentColor" opacity="0.2"></path>
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M9.33333 0.538463H4.66667C2.38672 0.538463 0.538463 2.38672 0.538463 4.66667V9.33333C0.538463 11.6133 2.38672 13.4615 4.66667 13.4615H9.33333C11.6133 13.4615 13.4615 11.6133 13.4615 9.33333V4.66667C13.4615 2.38672 11.6133 0.538463 9.33333 0.538463ZM4.66667 0C2.08934 0 0 2.08934 0 4.66667V9.33333C0 11.9107 2.08934 14 4.66667 14H9.33333C11.9107 14 14 11.9107 14 9.33333V4.66667C14 2.08934 11.9107 0 9.33333 0H4.66667Z" fill="currentColor" opacity={0.2}></path>
                                     <g transform="translate(3.5238 3.5)">
                                       <path fillRule="evenodd" clipRule="evenodd" d="M0 4.46307V0.657716C0 0.294471 0.294471 0 0.657708 0C1.02097 0 1.31544 0.294471 1.31544 0.657716V4.46307C1.31544 5.13768 1.86229 5.68457 2.5369 5.68457H4.41613C5.09069 5.68457 5.63759 5.13768 5.63759 4.46307V2.60267C5.63759 2.23944 5.93205 1.94498 6.29531 1.94498C6.65854 1.94498 6.953 2.23944 6.953 2.60267V4.46307C6.953 5.8642 5.81721 6.99999 4.41613 6.99999H2.5369C1.13581 6.99999 0 5.8642 0 4.46307Z" fill="currentColor"></path>
                                     </g>
@@ -1051,7 +1051,7 @@ export function Pattern() {
                                   <span className="dark:text-neutral-50 font-medium text-neutral-900">
                                     {"NeUI"}
                                   </span>
-                                  <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                  <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -1061,7 +1061,7 @@ export function Pattern() {
                                   <span className="font-medium">
                                     {"Customers"}
                                   </span>
-                                  <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                  <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -1076,9 +1076,9 @@ export function Pattern() {
                               <div className="flex flex-1 min-h-0">
                                 <div className="border-neutral-200 border-r dark:border-neutral-800 flex flex-col gap-0.5 p-3 shrink-0 w-[208px]">
                                   <div className="border border-neutral-200 dark:border-neutral-800 dark:text-neutral-400 flex gap-2 h-9 items-center mb-1.5 px-2.5 rounded-lg text-neutral-500 text-sm">
-                                    <svg className="lucide lucide-search shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+                                    <svg className="lucide lucide-search shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                                       <path d="m21 21-4.34-4.34"></path>
-                                      <circle cx="11" cy="11" r="8"></circle>
+                                      <circle cx={11} cy={11} r={8}></circle>
                                     </svg>
                                     <span className="truncate">
                                       {"Search..."}
@@ -1092,27 +1092,27 @@ export function Pattern() {
                                       {"Platform"}
                                     </span>
                                     <Item className="bg-neutral-100 border-transparent dark:bg-neutral-800 dark:text-neutral-50 font-medium gap-2 px-2 py-1.5 text-neutral-900 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-layout-grid size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
-                                        <rect width="7" height="7" x="3" y="3" rx="1"></rect>
-                                        <rect width="7" height="7" x="14" y="3" rx="1"></rect>
-                                        <rect width="7" height="7" x="14" y="14" rx="1"></rect>
-                                        <rect width="7" height="7" x="3" y="14" rx="1"></rect>
+                                      <svg className="lucide lucide-layout-grid size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
+                                        <rect width={7} height={7} x={3} y={3} rx={1}></rect>
+                                        <rect width={7} height={7} x={14} y={3} rx={1}></rect>
+                                        <rect width={7} height={7} x={14} y={14} rx={1}></rect>
+                                        <rect width={7} height={7} x={3} y={14} rx={1}></rect>
                                       </svg>
                                       <span className="truncate">
                                         {"Overview"}
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-users size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                                      <svg className="lucide lucide-users size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                                         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                                         <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                         <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <circle cx={9} cy={7} r={4}></circle>
                                       </svg>
                                       <span className="truncate">
                                         {"Customers"}
                                       </span>
-                                      <svg className="dark:text-neutral-500 lucide lucide-chevron-down ms-auto shrink-0 size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                                      <svg className="dark:text-neutral-500 lucide lucide-chevron-down ms-auto shrink-0 size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                         <path d="m6 9 6 6 6-6"></path>
                                       </svg>
                                     </Item>
@@ -1132,19 +1132,19 @@ export function Pattern() {
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-credit-card size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CreditCardIcon" tabler="IconCreditCard" hugeicons="CreditCardIcon" phosphor="CreditCardIcon" remixicon="RiBankCardLine" aria-hidden="true">
-                                        <rect width="20" height="14" x="2" y="5" rx="2"></rect>
-                                        <line x1="2" x2="22" y1="10" y2="10"></line>
+                                      <svg className="lucide lucide-credit-card size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CreditCardIcon" tabler="IconCreditCard" hugeicons="CreditCardIcon" phosphor="CreditCardIcon" remixicon="RiBankCardLine" aria-hidden="true">
+                                        <rect width={20} height={14} x={2} y={5} rx={2}></rect>
+                                        <line x1={2} x2={22} y1={10} y2={10}></line>
                                       </svg>
                                       <span className="truncate">
                                         {"Subscriptions"}
                                       </span>
-                                      <svg className="dark:text-neutral-500 lucide lucide-chevron-right ms-auto shrink-0 size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                                      <svg className="dark:text-neutral-500 lucide lucide-chevron-right ms-auto shrink-0 size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                                         <path d="m9 18 6-6-6-6"></path>
                                       </svg>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-chart-line size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChartLineIcon" tabler="IconChartLine" hugeicons="Analytics01Icon" phosphor="ChartLineIcon" remixicon="RiLineChartLine" aria-hidden="true">
+                                      <svg className="lucide lucide-chart-line size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChartLineIcon" tabler="IconChartLine" hugeicons="Analytics01Icon" phosphor="ChartLineIcon" remixicon="RiLineChartLine" aria-hidden="true">
                                         <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                                         <path d="m19 9-5 5-4-4-3 3"></path>
                                       </svg>
@@ -1154,7 +1154,7 @@ export function Pattern() {
                                       <span className="bg-emerald-500 ms-auto rounded-full shrink-0 size-2" aria-hidden="true"></span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-zap size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ZapIcon" tabler="IconBolt" hugeicons="FlashIcon" phosphor="LightningIcon" remixicon="RiFlashlightLine" aria-hidden="true">
+                                      <svg className="lucide lucide-zap size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ZapIcon" tabler="IconBolt" hugeicons="FlashIcon" phosphor="LightningIcon" remixicon="RiFlashlightLine" aria-hidden="true">
                                         <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                                       </svg>
                                       <span className="truncate">
@@ -1162,13 +1162,13 @@ export function Pattern() {
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-life-buoy size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LifeBuoyIcon" tabler="IconLifebuoy" hugeicons="CustomerSupportIcon" phosphor="LifebuoyIcon" remixicon="RiLifebuoyLine" aria-hidden="true">
-                                        <circle cx="12" cy="12" r="10"></circle>
+                                      <svg className="lucide lucide-life-buoy size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LifeBuoyIcon" tabler="IconLifebuoy" hugeicons="CustomerSupportIcon" phosphor="LifebuoyIcon" remixicon="RiLifebuoyLine" aria-hidden="true">
+                                        <circle cx={12} cy={12} r={10}></circle>
                                         <path d="m4.93 4.93 4.24 4.24"></path>
                                         <path d="m14.83 9.17 4.24-4.24"></path>
                                         <path d="m14.83 14.83 4.24 4.24"></path>
                                         <path d="m9.17 14.83-4.24 4.24"></path>
-                                        <circle cx="12" cy="12" r="4"></circle>
+                                        <circle cx={12} cy={12} r={4}></circle>
                                       </svg>
                                       <span className="truncate">
                                         {"Support"}
@@ -1188,13 +1188,13 @@ export function Pattern() {
                                     </div>
                                     <div className="flex gap-1.5 items-center ms-auto">
                                       <IconTile className="border-neutral-200 dark:border-neutral-800 dark:text-neutral-400 text-neutral-500" variant="outline" size="sm">
-                                        <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+                                        <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                                           <path d="m21 21-4.34-4.34"></path>
-                                          <circle cx="11" cy="11" r="8"></circle>
+                                          <circle cx={11} cy={11} r={8}></circle>
                                         </svg>
                                       </IconTile>
                                       <span className="bg-neutral-900 dark:bg-white dark:text-neutral-900 flex font-medium gap-1.5 h-8 items-center px-3 rounded-full text-white text-xs whitespace-nowrap">
-                                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                                           <path d="M5 12h14"></path>
                                           <path d="M12 5v14"></path>
                                         </svg>
@@ -1229,11 +1229,11 @@ export function Pattern() {
                                   <Card className="bg-white border border-neutral-200 dark:bg-neutral-900 dark:border-neutral-800 dark:text-neutral-50 gap-0 p-0 shadow-none text-neutral-900" size="default">
                                     <div className="acme-pick flex gap-2.5 items-center px-3 py-2.5" style={{"--acme-step": "0", "--acme-count": "4"}}>
                                       <IconTile className="text-emerald-500" variant="soft" size="sm">
-                                        <svg className="lucide lucide-users size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                                        <svg className="lucide lucide-users size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                                           <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                                           <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                           <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                          <circle cx="9" cy="7" r="4"></circle>
+                                          <circle cx={9} cy={7} r={4}></circle>
                                         </svg>
                                       </IconTile>
                                       <div className="flex flex-col min-w-0">
@@ -1255,11 +1255,11 @@ export function Pattern() {
                                     </div>
                                     <div className="acme-pick border-neutral-200 border-t dark:border-neutral-800 flex gap-2.5 items-center px-3 py-2.5" style={{"--acme-step": "1", "--acme-count": "4"}}>
                                       <IconTile className="text-amber-500" variant="soft" size="sm">
-                                        <svg className="lucide lucide-users size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                                        <svg className="lucide lucide-users size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                                           <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                                           <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                           <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                          <circle cx="9" cy="7" r="4"></circle>
+                                          <circle cx={9} cy={7} r={4}></circle>
                                         </svg>
                                       </IconTile>
                                       <div className="flex flex-col min-w-0">
@@ -1281,11 +1281,11 @@ export function Pattern() {
                                     </div>
                                     <div className="acme-pick border-neutral-200 border-t dark:border-neutral-800 flex gap-2.5 items-center px-3 py-2.5" style={{"--acme-step": "2", "--acme-count": "4"}}>
                                       <IconTile className="text-sky-500" variant="soft" size="sm">
-                                        <svg className="lucide lucide-users size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                                        <svg className="lucide lucide-users size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                                           <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                                           <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                           <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                          <circle cx="9" cy="7" r="4"></circle>
+                                          <circle cx={9} cy={7} r={4}></circle>
                                         </svg>
                                       </IconTile>
                                       <div className="flex flex-col min-w-0">
@@ -1307,11 +1307,11 @@ export function Pattern() {
                                     </div>
                                     <div className="acme-pick border-neutral-200 border-t dark:border-neutral-800 flex gap-2.5 items-center px-3 py-2.5" style={{"--acme-step": "3", "--acme-count": "4"}}>
                                       <IconTile className="text-rose-500" variant="soft" size="sm">
-                                        <svg className="lucide lucide-users size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                                        <svg className="lucide lucide-users size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                                           <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                                           <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                           <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                          <circle cx="9" cy="7" r="4"></circle>
+                                          <circle cx={9} cy={7} r={4}></circle>
                                         </svg>
                                       </IconTile>
                                       <div className="flex flex-col min-w-0">
@@ -1344,7 +1344,7 @@ export function Pattern() {
                                     <div className="flex-1 min-h-0 text-pink-500">
                                       <svg className="acme-draw size-full" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true">
                                         <path className="fill-current opacity-15" d="M0.0 30.5 L14.3 25.1 L28.6 27.8 L42.9 20.3 L57.1 22.4 L71.4 14.9 L85.7 17.6 L100.0 9.4 L100 40 L0 40 Z"></path>
-                                        <path d="M0.0 30.5 L14.3 25.1 L28.6 27.8 L42.9 20.3 L57.1 22.4 L71.4 14.9 L85.7 17.6 L100.0 9.4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
+                                        <path d="M0.0 30.5 L14.3 25.1 L28.6 27.8 L42.9 20.3 L57.1 22.4 L71.4 14.9 L85.7 17.6 L100.0 9.4" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
                                       </svg>
                                     </div>
                                   </Card>
@@ -1368,7 +1368,7 @@ export function Pattern() {
                               <div className="border-b border-neutral-200 dark:border-neutral-800 flex gap-2 h-12 items-center px-3 shrink-0">
                                 <IconTile className="bg-neutral-900 dark:bg-white dark:text-neutral-900 text-white" variant="solid" size="sm">
                                   <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M9.33333 0.538463H4.66667C2.38672 0.538463 0.538463 2.38672 0.538463 4.66667V9.33333C0.538463 11.6133 2.38672 13.4615 4.66667 13.4615H9.33333C11.6133 13.4615 13.4615 11.6133 13.4615 9.33333V4.66667C13.4615 2.38672 11.6133 0.538463 9.33333 0.538463ZM4.66667 0C2.08934 0 0 2.08934 0 4.66667V9.33333C0 11.9107 2.08934 14 4.66667 14H9.33333C11.9107 14 14 11.9107 14 9.33333V4.66667C14 2.08934 11.9107 0 9.33333 0H4.66667Z" fill="currentColor" opacity="0.2"></path>
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M9.33333 0.538463H4.66667C2.38672 0.538463 0.538463 2.38672 0.538463 4.66667V9.33333C0.538463 11.6133 2.38672 13.4615 4.66667 13.4615H9.33333C11.6133 13.4615 13.4615 11.6133 13.4615 9.33333V4.66667C13.4615 2.38672 11.6133 0.538463 9.33333 0.538463ZM4.66667 0C2.08934 0 0 2.08934 0 4.66667V9.33333C0 11.9107 2.08934 14 4.66667 14H9.33333C11.9107 14 14 11.9107 14 9.33333V4.66667C14 2.08934 11.9107 0 9.33333 0H4.66667Z" fill="currentColor" opacity={0.2}></path>
                                     <g transform="translate(3.5238 3.5)">
                                       <path fillRule="evenodd" clipRule="evenodd" d="M0 4.46307V0.657716C0 0.294471 0.294471 0 0.657708 0C1.02097 0 1.31544 0.294471 1.31544 0.657716V4.46307C1.31544 5.13768 1.86229 5.68457 2.5369 5.68457H4.41613C5.09069 5.68457 5.63759 5.13768 5.63759 4.46307V2.60267C5.63759 2.23944 5.93205 1.94498 6.29531 1.94498C6.65854 1.94498 6.953 2.23944 6.953 2.60267V4.46307C6.953 5.8642 5.81721 6.99999 4.41613 6.99999H2.5369C1.13581 6.99999 0 5.8642 0 4.46307Z" fill="currentColor"></path>
                                     </g>
@@ -1382,7 +1382,7 @@ export function Pattern() {
                                   <span className="dark:text-neutral-50 font-medium text-neutral-900">
                                     {"Northwind"}
                                   </span>
-                                  <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                  <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -1392,7 +1392,7 @@ export function Pattern() {
                                   <span className="font-medium">
                                     {"Finance"}
                                   </span>
-                                  <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                  <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -1407,13 +1407,13 @@ export function Pattern() {
                               <div className="flex flex-1 min-h-0">
                                 <div className="border-neutral-200 border-r dark:border-neutral-800 flex flex-col gap-2 items-center py-3 shrink-0 w-[52px]">
                                   <span className="dark:text-neutral-400 flex items-center justify-center size-8 text-neutral-500">
-                                    <svg className="lucide lucide-house size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HouseIcon" tabler="IconHome" hugeicons="Home03Icon" phosphor="HouseIcon" remixicon="RiHome5Line" aria-hidden="true">
+                                    <svg className="lucide lucide-house size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HouseIcon" tabler="IconHome" hugeicons="Home03Icon" phosphor="HouseIcon" remixicon="RiHome5Line" aria-hidden="true">
                                       <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
                                       <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                                     </svg>
                                   </span>
                                   <span className="dark:text-neutral-400 flex items-center justify-center size-8 text-neutral-500">
-                                    <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
+                                    <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
                                       <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
                                       <path d="M12 22V12"></path>
                                       <polyline points="3.29 7 12 12 20.71 7"></polyline>
@@ -1421,27 +1421,27 @@ export function Pattern() {
                                     </svg>
                                   </span>
                                   <span className="dark:text-neutral-400 flex items-center justify-center size-8 text-neutral-500">
-                                    <svg className="lucide lucide-shopping-cart size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingCartIcon" tabler="IconShoppingCart" hugeicons="ShoppingCart01Icon" phosphor="ShoppingCartIcon" remixicon="RiShoppingCartLine" aria-hidden="true">
-                                      <circle cx="8" cy="21" r="1"></circle>
-                                      <circle cx="19" cy="21" r="1"></circle>
+                                    <svg className="lucide lucide-shopping-cart size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingCartIcon" tabler="IconShoppingCart" hugeicons="ShoppingCart01Icon" phosphor="ShoppingCartIcon" remixicon="RiShoppingCartLine" aria-hidden="true">
+                                      <circle cx={8} cy={21} r={1}></circle>
+                                      <circle cx={19} cy={21} r={1}></circle>
                                       <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
                                     </svg>
                                   </span>
                                   <span className="dark:text-neutral-400 flex items-center justify-center size-8 text-neutral-500">
-                                    <svg className="lucide lucide-users size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                                    <svg className="lucide lucide-users size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                                       <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                                       <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                       <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                      <circle cx="9" cy="7" r="4"></circle>
+                                      <circle cx={9} cy={7} r={4}></circle>
                                     </svg>
                                   </span>
                                   <span className="dark:text-neutral-400 flex items-center justify-center size-8 text-neutral-500">
-                                    <svg className="lucide lucide-message-square size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareIcon" tabler="IconMessageDots" hugeicons="Message02Icon" phosphor="ChatIcon" remixicon="RiChat4Line" aria-hidden="true">
+                                    <svg className="lucide lucide-message-square size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareIcon" tabler="IconMessageDots" hugeicons="Message02Icon" phosphor="ChatIcon" remixicon="RiChat4Line" aria-hidden="true">
                                       <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                     </svg>
                                   </span>
                                   <Item className="bg-neutral-100 border-transparent dark:bg-neutral-800 dark:text-neutral-50 font-medium p-0 size-8 text-neutral-900" variant="default" size="xs">
-                                    <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
+                                    <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
                                       <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                                       <path d="M18 17V9"></path>
                                       <path d="M13 17V5"></path>
@@ -1449,9 +1449,9 @@ export function Pattern() {
                                     </svg>
                                   </Item>
                                   <span className="dark:text-neutral-400 flex items-center justify-center size-8 text-neutral-500">
-                                    <svg className="lucide lucide-settings size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SettingsIcon" tabler="IconSettings" hugeicons="SettingsIcon" phosphor="GearIcon" remixicon="RiSettings3Line" aria-hidden="true">
+                                    <svg className="lucide lucide-settings size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SettingsIcon" tabler="IconSettings" hugeicons="SettingsIcon" phosphor="GearIcon" remixicon="RiSettings3Line" aria-hidden="true">
                                       <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
-                                      <circle cx="12" cy="12" r="3"></circle>
+                                      <circle cx={12} cy={12} r={3}></circle>
                                     </svg>
                                   </span>
                                 </div>
@@ -1461,18 +1461,18 @@ export function Pattern() {
                                       {"Overview"}
                                     </span>
                                     <Item className="bg-neutral-100 border-transparent dark:bg-neutral-800 dark:text-neutral-50 font-medium gap-2 px-2 py-1.5 text-neutral-900 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-layout-grid size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
-                                        <rect width="7" height="7" x="3" y="3" rx="1"></rect>
-                                        <rect width="7" height="7" x="14" y="3" rx="1"></rect>
-                                        <rect width="7" height="7" x="14" y="14" rx="1"></rect>
-                                        <rect width="7" height="7" x="3" y="14" rx="1"></rect>
+                                      <svg className="lucide lucide-layout-grid size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
+                                        <rect width={7} height={7} x={3} y={3} rx={1}></rect>
+                                        <rect width={7} height={7} x={14} y={3} rx={1}></rect>
+                                        <rect width={7} height={7} x={14} y={14} rx={1}></rect>
+                                        <rect width={7} height={7} x={3} y={14} rx={1}></rect>
                                       </svg>
                                       <span className="truncate">
                                         {"Dashboard"}
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-arrow-left-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftRightIcon" tabler="IconArrowsLeftRight" hugeicons="ArrowDataTransferHorizontalIcon" phosphor="ArrowsLeftRightIcon" remixicon="RiArrowLeftRightLine" aria-hidden="true">
+                                      <svg className="lucide lucide-arrow-left-right size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftRightIcon" tabler="IconArrowsLeftRight" hugeicons="ArrowDataTransferHorizontalIcon" phosphor="ArrowsLeftRightIcon" remixicon="RiArrowLeftRightLine" aria-hidden="true">
                                         <path d="M8 3 4 7l4 4"></path>
                                         <path d="M4 7h16"></path>
                                         <path d="m16 21 4-4-4-4"></path>
@@ -1483,7 +1483,7 @@ export function Pattern() {
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-file-text size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileTextIcon" tabler="IconFileText" hugeicons="File01Icon" phosphor="FileTextIcon" remixicon="RiFileTextLine" aria-hidden="true">
+                                      <svg className="lucide lucide-file-text size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FileTextIcon" tabler="IconFileText" hugeicons="File01Icon" phosphor="FileTextIcon" remixicon="RiFileTextLine" aria-hidden="true">
                                         <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
                                         <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                                         <path d="M10 9H8"></path>
@@ -1503,7 +1503,7 @@ export function Pattern() {
                                       {"Reports"}
                                     </span>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-chart-line size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChartLineIcon" tabler="IconChartLine" hugeicons="Analytics01Icon" phosphor="ChartLineIcon" remixicon="RiLineChartLine" aria-hidden="true">
+                                      <svg className="lucide lucide-chart-line size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChartLineIcon" tabler="IconChartLine" hugeicons="Analytics01Icon" phosphor="ChartLineIcon" remixicon="RiLineChartLine" aria-hidden="true">
                                         <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                                         <path d="m19 9-5 5-4-4-3 3"></path>
                                       </svg>
@@ -1512,18 +1512,18 @@ export function Pattern() {
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-users size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                                      <svg className="lucide lucide-users size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                                         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                                         <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                         <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <circle cx={9} cy={7} r={4}></circle>
                                       </svg>
                                       <span className="truncate">
                                         {"Forecasts"}
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-wallet size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="WalletIcon" tabler="IconWallet" hugeicons="Wallet01Icon" phosphor="WalletIcon" remixicon="RiWallet3Line" aria-hidden="true">
+                                      <svg className="lucide lucide-wallet size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="WalletIcon" tabler="IconWallet" hugeicons="Wallet01Icon" phosphor="WalletIcon" remixicon="RiWallet3Line" aria-hidden="true">
                                         <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"></path>
                                         <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path>
                                       </svg>
@@ -1548,13 +1548,13 @@ export function Pattern() {
                                     </div>
                                     <div className="flex gap-1.5 items-center ms-auto">
                                       <IconTile className="border-neutral-200 dark:border-neutral-800 dark:text-neutral-400 text-neutral-500" variant="outline" size="sm">
-                                        <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+                                        <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                                           <path d="m21 21-4.34-4.34"></path>
-                                          <circle cx="11" cy="11" r="8"></circle>
+                                          <circle cx={11} cy={11} r={8}></circle>
                                         </svg>
                                       </IconTile>
                                       <span className="bg-neutral-900 dark:bg-white dark:text-neutral-900 flex font-medium gap-1.5 h-8 items-center px-3 rounded-full text-white text-xs whitespace-nowrap">
-                                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                                           <path d="M5 12h14"></path>
                                           <path d="M12 5v14"></path>
                                         </svg>
@@ -1589,7 +1589,7 @@ export function Pattern() {
                                   <Card className="bg-white border border-neutral-200 dark:bg-neutral-900 dark:border-neutral-800 dark:text-neutral-50 gap-0 p-0 shadow-none text-neutral-900" size="default">
                                     <div className="acme-pick flex gap-2.5 items-center px-3 py-2.5" style={{"--acme-step": "0", "--acme-count": "4"}}>
                                       <IconTile className="text-emerald-500" variant="soft" size="sm">
-                                        <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
+                                        <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
                                           <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
                                           <path d="M12 22V12"></path>
                                           <polyline points="3.29 7 12 12 20.71 7"></polyline>
@@ -1615,7 +1615,7 @@ export function Pattern() {
                                     </div>
                                     <div className="acme-pick border-neutral-200 border-t dark:border-neutral-800 flex gap-2.5 items-center px-3 py-2.5" style={{"--acme-step": "1", "--acme-count": "4"}}>
                                       <IconTile className="text-amber-500" variant="soft" size="sm">
-                                        <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
+                                        <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
                                           <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
                                           <path d="M12 22V12"></path>
                                           <polyline points="3.29 7 12 12 20.71 7"></polyline>
@@ -1641,7 +1641,7 @@ export function Pattern() {
                                     </div>
                                     <div className="acme-pick border-neutral-200 border-t dark:border-neutral-800 flex gap-2.5 items-center px-3 py-2.5" style={{"--acme-step": "2", "--acme-count": "4"}}>
                                       <IconTile className="text-sky-500" variant="soft" size="sm">
-                                        <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
+                                        <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
                                           <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
                                           <path d="M12 22V12"></path>
                                           <polyline points="3.29 7 12 12 20.71 7"></polyline>
@@ -1667,7 +1667,7 @@ export function Pattern() {
                                     </div>
                                     <div className="acme-pick border-neutral-200 border-t dark:border-neutral-800 flex gap-2.5 items-center px-3 py-2.5" style={{"--acme-step": "3", "--acme-count": "4"}}>
                                       <IconTile className="text-rose-500" variant="soft" size="sm">
-                                        <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
+                                        <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
                                           <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
                                           <path d="M12 22V12"></path>
                                           <polyline points="3.29 7 12 12 20.71 7"></polyline>
@@ -1703,8 +1703,8 @@ export function Pattern() {
                                     </div>
                                     <div className="flex-1 min-h-0 text-blue-500">
                                       <svg className="acme-draw size-full" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden="true">
-                                        <path className="opacity-40" d="M0.0 30.7 L14.3 27.2 L28.6 28.7 L42.9 23.8 L57.1 25.8 L71.4 20.4 L85.7 21.8 L100.0 16.5" fill="none" stroke="currentColor" strokeWidth="2" strokeDasharray="4 4" strokeLinecap="round" vector-effect="non-scaling-stroke"></path>
-                                        <path d="M0.0 27.8 L14.3 23.0 L28.6 25.1 L42.9 18.3 L57.1 21.0 L71.4 13.5 L85.7 15.6 L100.0 8.1" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
+                                        <path className="opacity-40" d="M0.0 30.7 L14.3 27.2 L28.6 28.7 L42.9 23.8 L57.1 25.8 L71.4 20.4 L85.7 21.8 L100.0 16.5" fill="none" stroke="currentColor" strokeWidth={2} strokeDasharray="4 4" strokeLinecap="round" vector-effect="non-scaling-stroke"></path>
+                                        <path d="M0.0 27.8 L14.3 23.0 L28.6 25.1 L42.9 18.3 L57.1 21.0 L71.4 13.5 L85.7 15.6 L100.0 8.1" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
                                       </svg>
                                     </div>
                                   </Card>
@@ -1728,7 +1728,7 @@ export function Pattern() {
                               <div className="border-b border-neutral-200 dark:border-neutral-800 flex gap-2 h-12 items-center px-3 shrink-0">
                                 <IconTile className="bg-neutral-900 dark:bg-white dark:text-neutral-900 text-white" variant="solid" size="sm">
                                   <svg viewBox="0 0 14 14" fill="none" aria-hidden="true">
-                                    <path fillRule="evenodd" clipRule="evenodd" d="M9.33333 0.538463H4.66667C2.38672 0.538463 0.538463 2.38672 0.538463 4.66667V9.33333C0.538463 11.6133 2.38672 13.4615 4.66667 13.4615H9.33333C11.6133 13.4615 13.4615 11.6133 13.4615 9.33333V4.66667C13.4615 2.38672 11.6133 0.538463 9.33333 0.538463ZM4.66667 0C2.08934 0 0 2.08934 0 4.66667V9.33333C0 11.9107 2.08934 14 4.66667 14H9.33333C11.9107 14 14 11.9107 14 9.33333V4.66667C14 2.08934 11.9107 0 9.33333 0H4.66667Z" fill="currentColor" opacity="0.2"></path>
+                                    <path fillRule="evenodd" clipRule="evenodd" d="M9.33333 0.538463H4.66667C2.38672 0.538463 0.538463 2.38672 0.538463 4.66667V9.33333C0.538463 11.6133 2.38672 13.4615 4.66667 13.4615H9.33333C11.6133 13.4615 13.4615 11.6133 13.4615 9.33333V4.66667C13.4615 2.38672 11.6133 0.538463 9.33333 0.538463ZM4.66667 0C2.08934 0 0 2.08934 0 4.66667V9.33333C0 11.9107 2.08934 14 4.66667 14H9.33333C11.9107 14 14 11.9107 14 9.33333V4.66667C14 2.08934 11.9107 0 9.33333 0H4.66667Z" fill="currentColor" opacity={0.2}></path>
                                     <g transform="translate(3.5238 3.5)">
                                       <path fillRule="evenodd" clipRule="evenodd" d="M0 4.46307V0.657716C0 0.294471 0.294471 0 0.657708 0C1.02097 0 1.31544 0.294471 1.31544 0.657716V4.46307C1.31544 5.13768 1.86229 5.68457 2.5369 5.68457H4.41613C5.09069 5.68457 5.63759 5.13768 5.63759 4.46307V2.60267C5.63759 2.23944 5.93205 1.94498 6.29531 1.94498C6.65854 1.94498 6.953 2.23944 6.953 2.60267V4.46307C6.953 5.8642 5.81721 6.99999 4.41613 6.99999H2.5369C1.13581 6.99999 0 5.8642 0 4.46307Z" fill="currentColor"></path>
                                     </g>
@@ -1742,7 +1742,7 @@ export function Pattern() {
                                   <span className="dark:text-neutral-50 font-medium text-neutral-900">
                                     {"Lumen"}
                                   </span>
-                                  <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                  <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -1752,7 +1752,7 @@ export function Pattern() {
                                   <span className="font-medium">
                                     {"Analytics"}
                                   </span>
-                                  <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                  <svg className="dark:text-neutral-500 lucide lucide-chevrons-up-down size-3.5 text-neutral-400" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -1767,13 +1767,13 @@ export function Pattern() {
                               <div className="flex flex-1 min-h-0">
                                 <div className="border-neutral-200 border-r dark:border-neutral-800 flex flex-col gap-2 items-center py-3 shrink-0 w-[52px]">
                                   <span className="dark:text-neutral-400 flex items-center justify-center size-8 text-neutral-500">
-                                    <svg className="lucide lucide-house size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HouseIcon" tabler="IconHome" hugeicons="Home03Icon" phosphor="HouseIcon" remixicon="RiHome5Line" aria-hidden="true">
+                                    <svg className="lucide lucide-house size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HouseIcon" tabler="IconHome" hugeicons="Home03Icon" phosphor="HouseIcon" remixicon="RiHome5Line" aria-hidden="true">
                                       <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
                                       <path d="M3 10a2 2 0 0 1 .709-1.528l7-6a2 2 0 0 1 2.582 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                                     </svg>
                                   </span>
                                   <span className="dark:text-neutral-400 flex items-center justify-center size-8 text-neutral-500">
-                                    <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
+                                    <svg className="lucide lucide-package size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
                                       <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
                                       <path d="M12 22V12"></path>
                                       <polyline points="3.29 7 12 12 20.71 7"></polyline>
@@ -1781,27 +1781,27 @@ export function Pattern() {
                                     </svg>
                                   </span>
                                   <span className="dark:text-neutral-400 flex items-center justify-center size-8 text-neutral-500">
-                                    <svg className="lucide lucide-shopping-cart size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingCartIcon" tabler="IconShoppingCart" hugeicons="ShoppingCart01Icon" phosphor="ShoppingCartIcon" remixicon="RiShoppingCartLine" aria-hidden="true">
-                                      <circle cx="8" cy="21" r="1"></circle>
-                                      <circle cx="19" cy="21" r="1"></circle>
+                                    <svg className="lucide lucide-shopping-cart size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingCartIcon" tabler="IconShoppingCart" hugeicons="ShoppingCart01Icon" phosphor="ShoppingCartIcon" remixicon="RiShoppingCartLine" aria-hidden="true">
+                                      <circle cx={8} cy={21} r={1}></circle>
+                                      <circle cx={19} cy={21} r={1}></circle>
                                       <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
                                     </svg>
                                   </span>
                                   <span className="dark:text-neutral-400 flex items-center justify-center size-8 text-neutral-500">
-                                    <svg className="lucide lucide-users size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                                    <svg className="lucide lucide-users size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                                       <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                                       <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                       <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                      <circle cx="9" cy="7" r="4"></circle>
+                                      <circle cx={9} cy={7} r={4}></circle>
                                     </svg>
                                   </span>
                                   <span className="dark:text-neutral-400 flex items-center justify-center size-8 text-neutral-500">
-                                    <svg className="lucide lucide-message-square size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareIcon" tabler="IconMessageDots" hugeicons="Message02Icon" phosphor="ChatIcon" remixicon="RiChat4Line" aria-hidden="true">
+                                    <svg className="lucide lucide-message-square size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareIcon" tabler="IconMessageDots" hugeicons="Message02Icon" phosphor="ChatIcon" remixicon="RiChat4Line" aria-hidden="true">
                                       <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                     </svg>
                                   </span>
                                   <Item className="bg-neutral-100 border-transparent dark:bg-neutral-800 dark:text-neutral-50 font-medium p-0 size-8 text-neutral-900" variant="default" size="xs">
-                                    <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
+                                    <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
                                       <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                                       <path d="M18 17V9"></path>
                                       <path d="M13 17V5"></path>
@@ -1809,9 +1809,9 @@ export function Pattern() {
                                     </svg>
                                   </Item>
                                   <span className="dark:text-neutral-400 flex items-center justify-center size-8 text-neutral-500">
-                                    <svg className="lucide lucide-settings size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SettingsIcon" tabler="IconSettings" hugeicons="SettingsIcon" phosphor="GearIcon" remixicon="RiSettings3Line" aria-hidden="true">
+                                    <svg className="lucide lucide-settings size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SettingsIcon" tabler="IconSettings" hugeicons="SettingsIcon" phosphor="GearIcon" remixicon="RiSettings3Line" aria-hidden="true">
                                       <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
-                                      <circle cx="12" cy="12" r="3"></circle>
+                                      <circle cx={12} cy={12} r={3}></circle>
                                     </svg>
                                   </span>
                                 </div>
@@ -1821,18 +1821,18 @@ export function Pattern() {
                                       {"Insights"}
                                     </span>
                                     <Item className="bg-neutral-100 border-transparent dark:bg-neutral-800 dark:text-neutral-50 font-medium gap-2 px-2 py-1.5 text-neutral-900 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-layout-grid size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
-                                        <rect width="7" height="7" x="3" y="3" rx="1"></rect>
-                                        <rect width="7" height="7" x="14" y="3" rx="1"></rect>
-                                        <rect width="7" height="7" x="14" y="14" rx="1"></rect>
-                                        <rect width="7" height="7" x="3" y="14" rx="1"></rect>
+                                      <svg className="lucide lucide-layout-grid size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
+                                        <rect width={7} height={7} x={3} y={3} rx={1}></rect>
+                                        <rect width={7} height={7} x={14} y={3} rx={1}></rect>
+                                        <rect width={7} height={7} x={14} y={14} rx={1}></rect>
+                                        <rect width={7} height={7} x={3} y={14} rx={1}></rect>
                                       </svg>
                                       <span className="truncate">
                                         {"Overview"}
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-funnel size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilter3Line" aria-hidden="true">
+                                      <svg className="lucide lucide-funnel size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilter3Line" aria-hidden="true">
                                         <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                                       </svg>
                                       <span className="truncate">
@@ -1840,11 +1840,11 @@ export function Pattern() {
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-users size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                                      <svg className="lucide lucide-users size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                                         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                                         <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                         <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                        <circle cx="9" cy="7" r="4"></circle>
+                                        <circle cx={9} cy={7} r={4}></circle>
                                       </svg>
                                       <span className="truncate">
                                         {"Cohorts"}
@@ -1856,16 +1856,16 @@ export function Pattern() {
                                       {"Audience"}
                                     </span>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-tag size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                                      <svg className="lucide lucide-tag size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                                         <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                                        <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                        <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                                       </svg>
                                       <span className="truncate">
                                         {"Segments"}
                                       </span>
                                     </Item>
                                     <Item className="bg-transparent border-transparent dark:text-neutral-300 gap-2 px-2 py-1.5 text-neutral-600 text-sm" variant="default" size="xs">
-                                      <svg className="lucide lucide-chart-line size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChartLineIcon" tabler="IconChartLine" hugeicons="Analytics01Icon" phosphor="ChartLineIcon" remixicon="RiLineChartLine" aria-hidden="true">
+                                      <svg className="lucide lucide-chart-line size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChartLineIcon" tabler="IconChartLine" hugeicons="Analytics01Icon" phosphor="ChartLineIcon" remixicon="RiLineChartLine" aria-hidden="true">
                                         <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                                         <path d="m19 9-5 5-4-4-3 3"></path>
                                       </svg>
@@ -1890,13 +1890,13 @@ export function Pattern() {
                                     </div>
                                     <div className="flex gap-1.5 items-center ms-auto">
                                       <IconTile className="border-neutral-200 dark:border-neutral-800 dark:text-neutral-400 text-neutral-500" variant="outline" size="sm">
-                                        <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+                                        <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                                           <path d="m21 21-4.34-4.34"></path>
-                                          <circle cx="11" cy="11" r="8"></circle>
+                                          <circle cx={11} cy={11} r={8}></circle>
                                         </svg>
                                       </IconTile>
                                       <span className="bg-neutral-900 dark:bg-white dark:text-neutral-900 flex font-medium gap-1.5 h-8 items-center px-3 rounded-full text-white text-xs whitespace-nowrap">
-                                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                                           <path d="M5 12h14"></path>
                                           <path d="M12 5v14"></path>
                                         </svg>
@@ -1931,7 +1931,7 @@ export function Pattern() {
                                   <Card className="bg-white border border-neutral-200 dark:bg-neutral-900 dark:border-neutral-800 dark:text-neutral-50 gap-0 p-0 shadow-none text-neutral-900" size="default">
                                     <div className="acme-pick flex gap-2.5 items-center px-3 py-2.5" style={{"--acme-step": "0", "--acme-count": "4"}}>
                                       <IconTile className="text-sky-500" variant="soft" size="sm">
-                                        <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
+                                        <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
                                           <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                                           <path d="M18 17V9"></path>
                                           <path d="M13 17V5"></path>
@@ -1957,7 +1957,7 @@ export function Pattern() {
                                     </div>
                                     <div className="acme-pick border-neutral-200 border-t dark:border-neutral-800 flex gap-2.5 items-center px-3 py-2.5" style={{"--acme-step": "1", "--acme-count": "4"}}>
                                       <IconTile className="text-violet-500" variant="soft" size="sm">
-                                        <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
+                                        <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
                                           <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                                           <path d="M18 17V9"></path>
                                           <path d="M13 17V5"></path>
@@ -1983,7 +1983,7 @@ export function Pattern() {
                                     </div>
                                     <div className="acme-pick border-neutral-200 border-t dark:border-neutral-800 flex gap-2.5 items-center px-3 py-2.5" style={{"--acme-step": "2", "--acme-count": "4"}}>
                                       <IconTile className="text-amber-500" variant="soft" size="sm">
-                                        <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
+                                        <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
                                           <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                                           <path d="M18 17V9"></path>
                                           <path d="M13 17V5"></path>
@@ -2009,7 +2009,7 @@ export function Pattern() {
                                     </div>
                                     <div className="acme-pick border-neutral-200 border-t dark:border-neutral-800 flex gap-2.5 items-center px-3 py-2.5" style={{"--acme-step": "3", "--acme-count": "4"}}>
                                       <IconTile className="text-rose-500" variant="soft" size="sm">
-                                        <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
+                                        <svg className="lucide lucide-chart-column size-4.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
                                           <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                                           <path d="M18 17V9"></path>
                                           <path d="M13 17V5"></path>

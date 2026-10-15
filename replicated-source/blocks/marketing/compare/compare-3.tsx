@@ -13,14 +13,14 @@ export function Pattern() {
         <div className="@container/block flex flex-col gap-8 max-w-7xl mx-auto w-full">
           <div className="flex flex-col gap-6 items-center px-6 text-center">
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:size-3.5! bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-7 hover:bg-accent min-w-6 outline-none px-2 py-0.75 relative rounded-full text-foreground text-sm transition-colors" href="#">
-              <svg className="lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SparklesIcon" tabler="IconSparkles" hugeicons="SparklesIcon" phosphor="SparkleIcon" remixicon="RiSparklingLine" aria-hidden="true">
+              <svg className="lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SparklesIcon" tabler="IconSparkles" hugeicons="SparklesIcon" phosphor="SparkleIcon" remixicon="RiSparklingLine" aria-hidden="true">
                 <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path>
                 <path d="M20 2v4"></path>
                 <path d="M22 4h-4"></path>
-                <circle cx="4" cy="20" r="2"></circle>
+                <circle cx={4} cy={20} r={2}></circle>
               </svg>
               {"NeUI for AI Agents"}
-              <svg className="lucide lucide-arrow-up-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
+              <svg className="lucide lucide-arrow-up-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                 <path d="M7 7h10v10"></path>
                 <path d="M7 17 17 7"></path>
               </svg>
@@ -46,9 +46,9 @@ export function Pattern() {
               <ul className="@2xl/block:grid @2xl/block:grid-rows-subgrid @2xl/block:row-span-(--compare-rows)" role="list">
                 <li className="border-t flex gap-2.5 items-center last:pb-6 px-6 py-4">
                   <IconTile className="[--icon-tile-size:--spacing(8.5)] after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-black/10 border-0 text-white/60" variant="frame" size="default">
-                    <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+                    <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                       <path d="m21 21-4.34-4.34"></path>
-                      <circle cx="11" cy="11" r="8"></circle>
+                      <circle cx={11} cy={11} r={8}></circle>
                     </svg>
                   </IconTile>
                   <p className="flex-1 font-medium min-w-0 text-sm">
@@ -57,8 +57,8 @@ export function Pattern() {
                       {"Search"}
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute align-middle focus-visible:ring-2 focus-visible:ring-foreground hover:text-white inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-white/50 transition-colors" type="button" id="base-ui-_r_1_" baseUiTooltipTrigger="" aria-label="About Intent-Based Registry Search" extracted="1">
-                        <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
-                          <circle cx="12" cy="12" r="10"></circle>
+                        <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
+                          <circle cx={12} cy={12} r={10}></circle>
                           <path d="M12 16v-4"></path>
                           <path d="M12 8h.01"></path>
                         </svg>
@@ -69,7 +69,7 @@ export function Pattern() {
                 </li>
                 <li className="border-t flex gap-2.5 items-center last:pb-6 px-6 py-4">
                   <IconTile className="[--icon-tile-size:--spacing(8.5)] after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-black/10 border-0 text-white/60" variant="frame" size="default">
-                    <svg className="lucide lucide-list-checks" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ListChecksIcon" tabler="IconListCheck" hugeicons="TaskDone01Icon" phosphor="ChecksIcon" remixicon="RiListCheck" aria-hidden="true">
+                    <svg className="lucide lucide-list-checks" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ListChecksIcon" tabler="IconListCheck" hugeicons="TaskDone01Icon" phosphor="ChecksIcon" remixicon="RiListCheck" aria-hidden="true">
                       <path d="M13 5h8"></path>
                       <path d="M13 12h8"></path>
                       <path d="M13 19h8"></path>
@@ -83,8 +83,8 @@ export function Pattern() {
                       {"Context"}
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute align-middle focus-visible:ring-2 focus-visible:ring-foreground hover:text-white inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-white/50 transition-colors" type="button" id="base-ui-_r_3_" baseUiTooltipTrigger="" aria-label="About Ranked Matches with Context">
-                        <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
-                          <circle cx="12" cy="12" r="10"></circle>
+                        <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
+                          <circle cx={12} cy={12} r={10}></circle>
                           <path d="M12 16v-4"></path>
                           <path d="M12 8h.01"></path>
                         </svg>
@@ -95,10 +95,10 @@ export function Pattern() {
                 </li>
                 <li className="border-t flex gap-2.5 items-center last:pb-6 px-6 py-4">
                   <IconTile className="[--icon-tile-size:--spacing(8.5)] after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-black/10 border-0 text-white/60" variant="frame" size="default">
-                    <svg className="lucide lucide-layout-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutPanelLeftIcon" tabler="IconLayoutBoardSplit" hugeicons="DashboardSquare01Icon" phosphor="LayoutIcon" remixicon="RiLayoutLeftLine" aria-hidden="true">
-                      <rect width="7" height="18" x="3" y="3" rx="1"></rect>
-                      <rect width="7" height="7" x="14" y="3" rx="1"></rect>
-                      <rect width="7" height="7" x="14" y="14" rx="1"></rect>
+                    <svg className="lucide lucide-layout-panel-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LayoutPanelLeftIcon" tabler="IconLayoutBoardSplit" hugeicons="DashboardSquare01Icon" phosphor="LayoutIcon" remixicon="RiLayoutLeftLine" aria-hidden="true">
+                      <rect width={7} height={18} x={3} y={3} rx={1}></rect>
+                      <rect width={7} height={7} x={14} y={3} rx={1}></rect>
+                      <rect width={7} height={7} x={14} y={14} rx={1}></rect>
                     </svg>
                   </IconTile>
                   <p className="flex-1 font-medium min-w-0 text-sm">
@@ -107,8 +107,8 @@ export function Pattern() {
                       {"Planning"}
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute align-middle focus-visible:ring-2 focus-visible:ring-foreground hover:text-white inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-white/50 transition-colors" type="button" id="base-ui-_r_5_" baseUiTooltipTrigger="" aria-label="About Whole-Page UI Planning">
-                        <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
-                          <circle cx="12" cy="12" r="10"></circle>
+                        <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
+                          <circle cx={12} cy={12} r={10}></circle>
                           <path d="M12 16v-4"></path>
                           <path d="M12 8h.01"></path>
                         </svg>
@@ -119,7 +119,7 @@ export function Pattern() {
                 </li>
                 <li className="border-t flex gap-2.5 items-center last:pb-6 px-6 py-4">
                   <IconTile className="[--icon-tile-size:--spacing(8.5)] after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-black/10 border-0 text-white/60" variant="frame" size="default">
-                    <svg className="lucide lucide-code-xml" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CodeXmlIcon" tabler="IconCode" hugeicons="SourceCodeIcon" phosphor="CodeIcon" remixicon="RiCodeSSlashLine" aria-hidden="true">
+                    <svg className="lucide lucide-code-xml" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CodeXmlIcon" tabler="IconCode" hugeicons="SourceCodeIcon" phosphor="CodeIcon" remixicon="RiCodeSSlashLine" aria-hidden="true">
                       <path d="m18 16 4-4-4-4"></path>
                       <path d="m6 8-4 4 4 4"></path>
                       <path d="m14.5 4-5 16"></path>
@@ -131,8 +131,8 @@ export function Pattern() {
                       {"Access"}
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute align-middle focus-visible:ring-2 focus-visible:ring-foreground hover:text-white inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-white/50 transition-colors" type="button" id="base-ui-_r_7_" baseUiTooltipTrigger="" aria-label="About Real Component API Access">
-                        <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
-                          <circle cx="12" cy="12" r="10"></circle>
+                        <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
+                          <circle cx={12} cy={12} r={10}></circle>
                           <path d="M12 16v-4"></path>
                           <path d="M12 8h.01"></path>
                         </svg>
@@ -143,7 +143,7 @@ export function Pattern() {
                 </li>
                 <li className="border-t flex gap-2.5 items-center last:pb-6 px-6 py-4">
                   <IconTile className="[--icon-tile-size:--spacing(8.5)] after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-black/10 border-0 text-white/60" variant="frame" size="default">
-                    <svg className="lucide lucide-file-code-corner" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileCode2Icon" tabler="IconFileCode" hugeicons="FileCodeIcon" phosphor="FileCodeIcon" remixicon="RiFileCodeLine" aria-hidden="true">
+                    <svg className="lucide lucide-file-code-corner" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FileCode2Icon" tabler="IconFileCode" hugeicons="FileCodeIcon" phosphor="FileCodeIcon" remixicon="RiFileCodeLine" aria-hidden="true">
                       <path d="M4 12.15V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.706.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2h-3.35"></path>
                       <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                       <path d="m5 16-3 3 3 3"></path>
@@ -156,8 +156,8 @@ export function Pattern() {
                       {"Examples"}
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute align-middle focus-visible:ring-2 focus-visible:ring-foreground hover:text-white inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-white/50 transition-colors" type="button" id="base-ui-_r_9_" baseUiTooltipTrigger="" aria-label="About Working UI Examples">
-                        <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
-                          <circle cx="12" cy="12" r="10"></circle>
+                        <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
+                          <circle cx={12} cy={12} r={10}></circle>
                           <path d="M12 16v-4"></path>
                           <path d="M12 8h.01"></path>
                         </svg>
@@ -168,7 +168,7 @@ export function Pattern() {
                 </li>
                 <li className="border-t flex gap-2.5 items-center last:pb-6 px-6 py-4">
                   <IconTile className="[--icon-tile-size:--spacing(8.5)] after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-black/10 border-0 text-white/60" variant="frame" size="default">
-                    <svg className="lucide lucide-circle-check-big" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckBigIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
+                    <svg className="lucide lucide-circle-check-big" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckBigIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
                       <path d="M21.801 10A10 10 0 1 1 17 3.335"></path>
                       <path d="m9 11 3 3L22 4"></path>
                     </svg>
@@ -179,8 +179,8 @@ export function Pattern() {
                       {"Commands"}
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute align-middle focus-visible:ring-2 focus-visible:ring-foreground hover:text-white inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-white/50 transition-colors" type="button" id="base-ui-_r_b_" baseUiTooltipTrigger="" aria-label="About Exact Install Commands">
-                        <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
-                          <circle cx="12" cy="12" r="10"></circle>
+                        <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
+                          <circle cx={12} cy={12} r={10}></circle>
                           <path d="M12 16v-4"></path>
                           <path d="M12 8h.01"></path>
                         </svg>
@@ -191,9 +191,9 @@ export function Pattern() {
                 </li>
                 <li className="border-t flex gap-2.5 items-center last:pb-6 px-6 py-4">
                   <IconTile className="[--icon-tile-size:--spacing(8.5)] after:bg-linear-to-b after:border-white/10 after:from-emerald-800 after:shadow-md after:to-emerald-900 bg-black/10 border-0 text-white/60" variant="frame" size="default">
-                    <svg className="lucide lucide-blocks" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BlocksIcon" tabler="IconComponents" hugeicons="DashboardSquare01Icon" phosphor="SquaresFourIcon" remixicon="RiApps2Line" aria-hidden="true">
+                    <svg className="lucide lucide-blocks" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BlocksIcon" tabler="IconComponents" hugeicons="DashboardSquare01Icon" phosphor="SquaresFourIcon" remixicon="RiApps2Line" aria-hidden="true">
                       <path d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"></path>
-                      <rect x="14" y="2" width="8" height="8" rx="1"></rect>
+                      <rect x={14} y={2} width={8} height={8} rx={1}></rect>
                     </svg>
                   </IconTile>
                   <p className="flex-1 font-medium min-w-0 text-sm">
@@ -202,8 +202,8 @@ export function Pattern() {
                       {"Checks"}
                       <Tooltip>
                       <TooltipTrigger className="[&_svg]:size-3.5 after:-inset-2 after:absolute align-middle focus-visible:ring-2 focus-visible:ring-foreground hover:text-white inline-flex items-center justify-center outline-none relative rounded-full shrink-0 size-3.5 text-white/50 transition-colors" type="button" id="base-ui-_r_d_" baseUiTooltipTrigger="" aria-label="About Props and Usage Checks">
-                        <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
-                          <circle cx="12" cy="12" r="10"></circle>
+                        <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
+                          <circle cx={12} cy={12} r={10}></circle>
                           <path d="M12 16v-4"></path>
                           <path d="M12 8h.01"></path>
                         </svg>
@@ -221,8 +221,8 @@ export function Pattern() {
               <ul className="@2xl/block:grid @2xl/block:grid-rows-subgrid @2xl/block:row-span-(--compare-rows)" role="list">
                 <li className="@2xl/block:px-[clamp(1.5rem,50cqw_-_336px,3rem)] border-t flex gap-2.5 items-center last:pb-6 px-10.5 py-4">
                   <span className="[&_svg]:size-3.5 flex h-8.5 items-center shrink-0 text-foreground/20">
-                    <svg className="lucide lucide-circle-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleMinusIcon" tabler="IconCircleMinus" hugeicons="MinusSignCircleIcon" phosphor="MinusCircleIcon" remixicon="RiIndeterminateCircleLine" aria-hidden="true">
-                      <circle cx="12" cy="12" r="10"></circle>
+                    <svg className="lucide lucide-circle-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleMinusIcon" tabler="IconCircleMinus" hugeicons="MinusSignCircleIcon" phosphor="MinusCircleIcon" remixicon="RiIndeterminateCircleLine" aria-hidden="true">
+                      <circle cx={12} cy={12} r={10}></circle>
                       <path d="M8 12h8"></path>
                     </svg>
                   </span>
@@ -232,8 +232,8 @@ export function Pattern() {
                 </li>
                 <li className="@2xl/block:px-[clamp(1.5rem,50cqw_-_336px,3rem)] border-t flex gap-2.5 items-center last:pb-6 px-10.5 py-4">
                   <span className="[&_svg]:size-3.5 flex h-8.5 items-center shrink-0 text-foreground/20">
-                    <svg className="lucide lucide-circle-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleMinusIcon" tabler="IconCircleMinus" hugeicons="MinusSignCircleIcon" phosphor="MinusCircleIcon" remixicon="RiIndeterminateCircleLine" aria-hidden="true">
-                      <circle cx="12" cy="12" r="10"></circle>
+                    <svg className="lucide lucide-circle-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleMinusIcon" tabler="IconCircleMinus" hugeicons="MinusSignCircleIcon" phosphor="MinusCircleIcon" remixicon="RiIndeterminateCircleLine" aria-hidden="true">
+                      <circle cx={12} cy={12} r={10}></circle>
                       <path d="M8 12h8"></path>
                     </svg>
                   </span>
@@ -243,8 +243,8 @@ export function Pattern() {
                 </li>
                 <li className="@2xl/block:px-[clamp(1.5rem,50cqw_-_336px,3rem)] border-t flex gap-2.5 items-center last:pb-6 px-10.5 py-4">
                   <span className="[&_svg]:size-3.5 flex h-8.5 items-center shrink-0 text-foreground/20">
-                    <svg className="lucide lucide-circle-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleMinusIcon" tabler="IconCircleMinus" hugeicons="MinusSignCircleIcon" phosphor="MinusCircleIcon" remixicon="RiIndeterminateCircleLine" aria-hidden="true">
-                      <circle cx="12" cy="12" r="10"></circle>
+                    <svg className="lucide lucide-circle-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleMinusIcon" tabler="IconCircleMinus" hugeicons="MinusSignCircleIcon" phosphor="MinusCircleIcon" remixicon="RiIndeterminateCircleLine" aria-hidden="true">
+                      <circle cx={12} cy={12} r={10}></circle>
                       <path d="M8 12h8"></path>
                     </svg>
                   </span>
@@ -254,8 +254,8 @@ export function Pattern() {
                 </li>
                 <li className="@2xl/block:px-[clamp(1.5rem,50cqw_-_336px,3rem)] border-t flex gap-2.5 items-center last:pb-6 px-10.5 py-4">
                   <span className="[&_svg]:size-3.5 flex h-8.5 items-center shrink-0 text-foreground/20">
-                    <svg className="lucide lucide-circle-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleMinusIcon" tabler="IconCircleMinus" hugeicons="MinusSignCircleIcon" phosphor="MinusCircleIcon" remixicon="RiIndeterminateCircleLine" aria-hidden="true">
-                      <circle cx="12" cy="12" r="10"></circle>
+                    <svg className="lucide lucide-circle-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleMinusIcon" tabler="IconCircleMinus" hugeicons="MinusSignCircleIcon" phosphor="MinusCircleIcon" remixicon="RiIndeterminateCircleLine" aria-hidden="true">
+                      <circle cx={12} cy={12} r={10}></circle>
                       <path d="M8 12h8"></path>
                     </svg>
                   </span>
@@ -265,8 +265,8 @@ export function Pattern() {
                 </li>
                 <li className="@2xl/block:px-[clamp(1.5rem,50cqw_-_336px,3rem)] border-t flex gap-2.5 items-center last:pb-6 px-10.5 py-4">
                   <span className="[&_svg]:size-3.5 flex h-8.5 items-center shrink-0 text-foreground/20">
-                    <svg className="lucide lucide-circle-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleMinusIcon" tabler="IconCircleMinus" hugeicons="MinusSignCircleIcon" phosphor="MinusCircleIcon" remixicon="RiIndeterminateCircleLine" aria-hidden="true">
-                      <circle cx="12" cy="12" r="10"></circle>
+                    <svg className="lucide lucide-circle-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleMinusIcon" tabler="IconCircleMinus" hugeicons="MinusSignCircleIcon" phosphor="MinusCircleIcon" remixicon="RiIndeterminateCircleLine" aria-hidden="true">
+                      <circle cx={12} cy={12} r={10}></circle>
                       <path d="M8 12h8"></path>
                     </svg>
                   </span>
@@ -276,8 +276,8 @@ export function Pattern() {
                 </li>
                 <li className="@2xl/block:px-[clamp(1.5rem,50cqw_-_336px,3rem)] border-t flex gap-2.5 items-center last:pb-6 px-10.5 py-4">
                   <span className="[&_svg]:size-3.5 flex h-8.5 items-center shrink-0 text-foreground/20">
-                    <svg className="lucide lucide-circle-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleMinusIcon" tabler="IconCircleMinus" hugeicons="MinusSignCircleIcon" phosphor="MinusCircleIcon" remixicon="RiIndeterminateCircleLine" aria-hidden="true">
-                      <circle cx="12" cy="12" r="10"></circle>
+                    <svg className="lucide lucide-circle-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleMinusIcon" tabler="IconCircleMinus" hugeicons="MinusSignCircleIcon" phosphor="MinusCircleIcon" remixicon="RiIndeterminateCircleLine" aria-hidden="true">
+                      <circle cx={12} cy={12} r={10}></circle>
                       <path d="M8 12h8"></path>
                     </svg>
                   </span>
@@ -287,8 +287,8 @@ export function Pattern() {
                 </li>
                 <li className="@2xl/block:px-[clamp(1.5rem,50cqw_-_336px,3rem)] border-t flex gap-2.5 items-center last:pb-6 px-10.5 py-4">
                   <span className="[&_svg]:size-3.5 flex h-8.5 items-center shrink-0 text-foreground/20">
-                    <svg className="lucide lucide-circle-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleMinusIcon" tabler="IconCircleMinus" hugeicons="MinusSignCircleIcon" phosphor="MinusCircleIcon" remixicon="RiIndeterminateCircleLine" aria-hidden="true">
-                      <circle cx="12" cy="12" r="10"></circle>
+                    <svg className="lucide lucide-circle-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleMinusIcon" tabler="IconCircleMinus" hugeicons="MinusSignCircleIcon" phosphor="MinusCircleIcon" remixicon="RiIndeterminateCircleLine" aria-hidden="true">
+                      <circle cx={12} cy={12} r={10}></circle>
                       <path d="M8 12h8"></path>
                     </svg>
                   </span>

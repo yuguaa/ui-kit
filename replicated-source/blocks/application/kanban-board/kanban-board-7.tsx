@@ -60,14 +60,14 @@ export function Pattern() {
               </p>
             </div>
             <div className="flex flex-wrap gap-2 items-center lg:justify-end lg:w-auto w-full">
-              <Button type="button" tabIndex="0">
-                <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" data-icon="inline-start" aria-hidden="true">
+              <Button type="button" tabIndex={0}>
+                <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                 </svg>
                 {"Filters"}
               </Button>
-              <Button type="button" tabIndex="0">
-                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+              <Button type="button" tabIndex={0}>
+                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
@@ -78,7 +78,7 @@ export function Pattern() {
         </header>
         <Kanban className="w-full" dragging="false">
           <ScrollArea className="min-w-0 pb-3 w-full" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}} hasOverflowX="" overflowXEnd="">
-            <div className="base-ui-disable-scrollbar focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-lg transition-[color,box-shadow] w-full" role="presentation" data-id="base-ui-_r_0_-viewport" tabIndex="0" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "920px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}} data-has-overflow-x="" data-overflow-x-end="">
+            <div className="base-ui-disable-scrollbar focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-lg transition-[color,box-shadow] w-full" role="presentation" data-id="base-ui-_r_0_-viewport" tabIndex={0} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "920px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}} data-has-overflow-x="" data-overflow-x-end="">
               <div className="flex min-w-full" role="presentation" style={{minWidth: "fit-content"}} data-has-overflow-x="" data-overflow-x-end="">
                 <KanbanBoard className="flex gap-3 items-start min-w-full p-1">
                   <KanbanColumn className="max-w-[18.5rem] shrink-0 sm:w-[18.5rem] w-[calc(100vw-4rem)]" value="upcoming" dragging="false">
@@ -95,25 +95,25 @@ export function Pattern() {
                             </Badge>
                           </div>
                         </div>
-                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex="0" aria-label="Add upcoming renewal">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex={0} aria-label="Add upcoming renewal">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
                         </Button>
-                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Upcoming stage">
-                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                            <circle cx="9" cy="12" r="1"></circle>
-                            <circle cx="9" cy="5" r="1"></circle>
-                            <circle cx="9" cy="19" r="1"></circle>
-                            <circle cx="15" cy="12" r="1"></circle>
-                            <circle cx="15" cy="5" r="1"></circle>
-                            <circle cx="15" cy="19" r="1"></circle>
+                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Upcoming stage">
+                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                            <circle cx={9} cy={12} r={1}></circle>
+                            <circle cx={9} cy={5} r={1}></circle>
+                            <circle cx={9} cy={19} r={1}></circle>
+                            <circle cx={15} cy={12} r={1}></circle>
+                            <circle cx={15} cy={5} r={1}></circle>
+                            <circle cx={15} cy={19} r={1}></circle>
                           </svg>
                         </KanbanColumnHandle>
                       </div>
                       <KanbanColumnContent className="gap-3 px-1 py-1">
-                        <KanbanItem value="renewal-101" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="renewal-101" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <Card className="bg-card gap-0 hover:border-foreground/20 hover:shadow-sm p-0 shadow-xs transition-[border-color,box-shadow]" size="sm">
                               <CardHeader className="gap-x-2.5 grid-cols-[1.5rem_minmax(0,1fr)] items-center min-h-5 min-w-0 pb-0 pt-3 px-3">
@@ -122,8 +122,8 @@ export function Pattern() {
                                     <svg className="size-5" aria-hidden="true" xmlns:xlink="http://www.w3.org/1999/xlink" xmlSpace="preserve" overflow="hidden" viewBox="0 0 268.152 273.883">
                                       <defs>
                                         <lineargradient id="a">
-                                          <stop offset="0" stopColor="#0fbc5c"></stop>
-                                          <stop offset="1" stopColor="#0cba65"></stop>
+                                          <stop offset={0} stopColor="#0fbc5c"></stop>
+                                          <stop offset={1} stopColor="#0cba65"></stop>
                                         </lineargradient>
                                         <lineargradient id="g">
                                           <stop offset=".231" stopColor="#0fbc5f"></stop>
@@ -135,7 +135,7 @@ export function Pattern() {
                                           <stop offset=".771" stopColor="#38c02b"></stop>
                                           <stop offset=".861" stopColor="#52c218"></stop>
                                           <stop offset=".915" stopColor="#67c30f"></stop>
-                                          <stop offset="1" stopColor="#86c504"></stop>
+                                          <stop offset={1} stopColor="#86c504"></stop>
                                         </lineargradient>
                                         <lineargradient id="h">
                                           <stop offset=".142" stopColor="#1abd4d"></stop>
@@ -154,7 +154,7 @@ export function Pattern() {
                                           <stop offset=".604" stopColor="#ff692c"></stop>
                                           <stop offset=".727" stopColor="#ff7825"></stop>
                                           <stop offset=".885" stopColor="#ff8d1b"></stop>
-                                          <stop offset="1" stopColor="#ff9f13"></stop>
+                                          <stop offset={1} stopColor="#ff9f13"></stop>
                                         </lineargradient>
                                         <lineargradient id="b">
                                           <stop offset=".231" stopColor="#ff4541"></stop>
@@ -164,11 +164,11 @@ export function Pattern() {
                                           <stop offset=".699" stopColor="#ff5138"></stop>
                                           <stop offset=".771" stopColor="#ff5b33"></stop>
                                           <stop offset=".861" stopColor="#ff6c29"></stop>
-                                          <stop offset="1" stopColor="#ff8c18"></stop>
+                                          <stop offset={1} stopColor="#ff8c18"></stop>
                                         </lineargradient>
                                         <lineargradient id="d">
                                           <stop offset=".408" stopColor="#fb4e5a"></stop>
-                                          <stop offset="1" stopColor="#ff4540"></stop>
+                                          <stop offset={1} stopColor="#ff4540"></stop>
                                         </lineargradient>
                                         <lineargradient id="c">
                                           <stop offset=".132" stopColor="#0cba65"></stop>
@@ -189,20 +189,20 @@ export function Pattern() {
                                           <stop offset=".771" stopColor="#ffcd0a"></stop>
                                           <stop offset=".861" stopColor="#fecf0a"></stop>
                                           <stop offset=".915" stopColor="#fecf08"></stop>
-                                          <stop offset="1" stopColor="#fdcd01"></stop>
+                                          <stop offset={1} stopColor="#fdcd01"></stop>
                                         </lineargradient>
-                                        <lineargradient xlinkHref="#a" id="s" x1="219.7" x2="254.467" y1="329.535" y2="329.535" gradientUnits="userSpaceOnUse"></lineargradient>
-                                        <radialgradient xlinkHref="#b" id="m" cx="109.627" cy="135.862" r="71.46" fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 1.043 1.45573 2.55542 290.525 -400.634)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                        <radialgradient xlinkHref="#c" id="n" cx="45.259" cy="279.274" r="71.46" fx="45.259" fy="279.274" gradientTransform="matrix(-3.5126 -4.45809 -1.69255 1.26062 870.8 191.554)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                        <radialgradient xlinkHref="#d" id="l" cx="304.017" cy="118.009" r="47.854" fx="304.017" fy="118.009" gradientTransform="matrix(2.06435 0 0 2.59204 -297.679 -151.747)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                        <radialgradient xlinkHref="#e" id="o" cx="181.001" cy="177.201" r="71.46" fx="181.001" fy="177.201" gradientTransform="matrix(-.24858 2.08314 2.96249 .33417 -255.146 -331.164)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                        <radialgradient xlinkHref="#f" id="p" cx="207.673" cy="108.097" r="41.102" fx="207.673" fy="108.097" gradientTransform="matrix(-1.2492 1.34326 -3.89684 -3.4257 880.501 194.905)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                        <radialgradient xlinkHref="#g" id="r" cx="109.627" cy="135.862" r="71.46" fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 -1.043 1.45573 -2.55542 290.525 838.683)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                        <radialgradient xlinkHref="#h" id="j" cx="154.87" cy="145.969" r="71.46" fx="154.87" fy="145.969" gradientTransform="matrix(-.0814 -1.93722 2.92674 -.11625 -215.135 632.86)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                        <filter id="q" width="1.097" height="1.116" x="-.048" y="-.058" color-interpolation-filters="sRGB">
+                                        <lineargradient xlinkHref="#a" id="s" x1={219.7} x2={254.467} y1={329.535} y2={329.535} gradientUnits="userSpaceOnUse"></lineargradient>
+                                        <radialgradient xlinkHref="#b" id="m" cx={109.627} cy={135.862} r={71.46} fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 1.043 1.45573 2.55542 290.525 -400.634)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                        <radialgradient xlinkHref="#c" id="n" cx={45.259} cy={279.274} r={71.46} fx="45.259" fy="279.274" gradientTransform="matrix(-3.5126 -4.45809 -1.69255 1.26062 870.8 191.554)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                        <radialgradient xlinkHref="#d" id="l" cx={304.017} cy={118.009} r={47.854} fx="304.017" fy="118.009" gradientTransform="matrix(2.06435 0 0 2.59204 -297.679 -151.747)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                        <radialgradient xlinkHref="#e" id="o" cx={181.001} cy={177.201} r={71.46} fx="181.001" fy="177.201" gradientTransform="matrix(-.24858 2.08314 2.96249 .33417 -255.146 -331.164)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                        <radialgradient xlinkHref="#f" id="p" cx={207.673} cy={108.097} r={41.102} fx="207.673" fy="108.097" gradientTransform="matrix(-1.2492 1.34326 -3.89684 -3.4257 880.501 194.905)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                        <radialgradient xlinkHref="#g" id="r" cx={109.627} cy={135.862} r={71.46} fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 -1.043 1.45573 -2.55542 290.525 838.683)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                        <radialgradient xlinkHref="#h" id="j" cx={154.87} cy={145.969} r={71.46} fx="154.87" fy="145.969" gradientTransform="matrix(-.0814 -1.93722 2.92674 -.11625 -215.135 632.86)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                        <filter id="q" width={1.097} height={1.116} x="-.048" y="-.058" color-interpolation-filters="sRGB">
                                           <fegaussianblur stdDeviation="1.701"></fegaussianblur>
                                         </filter>
-                                        <filter id="k" width="1.033" height="1.02" x="-.017" y="-.01" color-interpolation-filters="sRGB">
+                                        <filter id="k" width={1.033} height={1.02} x="-.017" y="-.01" color-interpolation-filters="sRGB">
                                           <fegaussianblur stdDeviation=".242"></fegaussianblur>
                                         </filter>
                                         <clippath id="i" clippathunits="userSpaceOnUse">
@@ -238,8 +238,8 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
+                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
                                           <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
                                           <path d="M12 18V6"></path>
                                         </svg>
@@ -257,13 +257,13 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
+                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
                                           <path d="M16 14v2.2l1.6 1"></path>
                                           <path d="M16 2v4"></path>
                                           <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path>
                                           <path d="M3 10h5"></path>
                                           <path d="M8 2v4"></path>
-                                          <circle cx="16" cy="16" r="6"></circle>
+                                          <circle cx={16} cy={16} r={6}></circle>
                                         </svg>
                                       </ItemMedia>
                                     </Item>
@@ -320,7 +320,7 @@ export function Pattern() {
                             </Card>
                           </KanbanItemHandle>
                         </KanbanItem>
-                        <KanbanItem value="renewal-102" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="renewal-102" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <Card className="bg-card gap-0 hover:border-foreground/20 hover:shadow-sm p-0 shadow-xs transition-[border-color,box-shadow]" size="sm">
                               <CardHeader className="gap-x-2.5 grid-cols-[1.5rem_minmax(0,1fr)] items-center min-h-5 min-w-0 pb-0 pt-3 px-3">
@@ -360,8 +360,8 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
+                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
                                           <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
                                           <path d="M12 18V6"></path>
                                         </svg>
@@ -379,13 +379,13 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
+                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
                                           <path d="M16 14v2.2l1.6 1"></path>
                                           <path d="M16 2v4"></path>
                                           <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path>
                                           <path d="M3 10h5"></path>
                                           <path d="M8 2v4"></path>
-                                          <circle cx="16" cy="16" r="6"></circle>
+                                          <circle cx={16} cy={16} r={6}></circle>
                                         </svg>
                                       </ItemMedia>
                                     </Item>
@@ -442,7 +442,7 @@ export function Pattern() {
                             </Card>
                           </KanbanItemHandle>
                         </KanbanItem>
-                        <KanbanItem value="renewal-103" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="renewal-103" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <Card className="bg-card gap-0 hover:border-foreground/20 hover:shadow-sm p-0 shadow-xs transition-[border-color,box-shadow]" size="sm">
                               <CardHeader className="gap-x-2.5 grid-cols-[1.5rem_minmax(0,1fr)] items-center min-h-5 min-w-0 pb-0 pt-3 px-3">
@@ -469,8 +469,8 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
+                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
                                           <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
                                           <path d="M12 18V6"></path>
                                         </svg>
@@ -488,13 +488,13 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
+                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
                                           <path d="M16 14v2.2l1.6 1"></path>
                                           <path d="M16 2v4"></path>
                                           <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path>
                                           <path d="M3 10h5"></path>
                                           <path d="M8 2v4"></path>
-                                          <circle cx="16" cy="16" r="6"></circle>
+                                          <circle cx={16} cy={16} r={6}></circle>
                                         </svg>
                                       </ItemMedia>
                                     </Item>
@@ -568,25 +568,25 @@ export function Pattern() {
                             </Badge>
                           </div>
                         </div>
-                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex="0" aria-label="Add save plan">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex={0} aria-label="Add save plan">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
                         </Button>
-                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Save Plan stage">
-                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                            <circle cx="9" cy="12" r="1"></circle>
-                            <circle cx="9" cy="5" r="1"></circle>
-                            <circle cx="9" cy="19" r="1"></circle>
-                            <circle cx="15" cy="12" r="1"></circle>
-                            <circle cx="15" cy="5" r="1"></circle>
-                            <circle cx="15" cy="19" r="1"></circle>
+                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Save Plan stage">
+                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                            <circle cx={9} cy={12} r={1}></circle>
+                            <circle cx={9} cy={5} r={1}></circle>
+                            <circle cx={9} cy={19} r={1}></circle>
+                            <circle cx={15} cy={12} r={1}></circle>
+                            <circle cx={15} cy={5} r={1}></circle>
+                            <circle cx={15} cy={19} r={1}></circle>
                           </svg>
                         </KanbanColumnHandle>
                       </div>
                       <KanbanColumnContent className="gap-3 px-1 py-1">
-                        <KanbanItem value="renewal-201" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="renewal-201" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <Card className="bg-card gap-0 hover:border-foreground/20 hover:shadow-sm p-0 shadow-xs transition-[border-color,box-shadow]" size="sm">
                               <CardHeader className="gap-x-2.5 grid-cols-[1.5rem_minmax(0,1fr)] items-center min-h-5 min-w-0 pb-0 pt-3 px-3">
@@ -617,8 +617,8 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
+                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
                                           <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
                                           <path d="M12 18V6"></path>
                                         </svg>
@@ -636,13 +636,13 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
+                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
                                           <path d="M16 14v2.2l1.6 1"></path>
                                           <path d="M16 2v4"></path>
                                           <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path>
                                           <path d="M3 10h5"></path>
                                           <path d="M8 2v4"></path>
-                                          <circle cx="16" cy="16" r="6"></circle>
+                                          <circle cx={16} cy={16} r={6}></circle>
                                         </svg>
                                       </ItemMedia>
                                     </Item>
@@ -699,7 +699,7 @@ export function Pattern() {
                             </Card>
                           </KanbanItemHandle>
                         </KanbanItem>
-                        <KanbanItem value="renewal-202" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="renewal-202" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <Card className="bg-card gap-0 hover:border-foreground/20 hover:shadow-sm p-0 shadow-xs transition-[border-color,box-shadow]" size="sm">
                               <CardHeader className="gap-x-2.5 grid-cols-[1.5rem_minmax(0,1fr)] items-center min-h-5 min-w-0 pb-0 pt-3 px-3">
@@ -725,8 +725,8 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
+                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
                                           <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
                                           <path d="M12 18V6"></path>
                                         </svg>
@@ -744,13 +744,13 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
+                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
                                           <path d="M16 14v2.2l1.6 1"></path>
                                           <path d="M16 2v4"></path>
                                           <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path>
                                           <path d="M3 10h5"></path>
                                           <path d="M8 2v4"></path>
-                                          <circle cx="16" cy="16" r="6"></circle>
+                                          <circle cx={16} cy={16} r={6}></circle>
                                         </svg>
                                       </ItemMedia>
                                     </Item>
@@ -824,25 +824,25 @@ export function Pattern() {
                             </Badge>
                           </div>
                         </div>
-                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex="0" aria-label="Add executive review">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex={0} aria-label="Add executive review">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
                         </Button>
-                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Executive Review stage">
-                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                            <circle cx="9" cy="12" r="1"></circle>
-                            <circle cx="9" cy="5" r="1"></circle>
-                            <circle cx="9" cy="19" r="1"></circle>
-                            <circle cx="15" cy="12" r="1"></circle>
-                            <circle cx="15" cy="5" r="1"></circle>
-                            <circle cx="15" cy="19" r="1"></circle>
+                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Executive Review stage">
+                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                            <circle cx={9} cy={12} r={1}></circle>
+                            <circle cx={9} cy={5} r={1}></circle>
+                            <circle cx={9} cy={19} r={1}></circle>
+                            <circle cx={15} cy={12} r={1}></circle>
+                            <circle cx={15} cy={5} r={1}></circle>
+                            <circle cx={15} cy={19} r={1}></circle>
                           </svg>
                         </KanbanColumnHandle>
                       </div>
                       <KanbanColumnContent className="gap-3 px-1 py-1">
-                        <KanbanItem value="renewal-301" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="renewal-301" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <Card className="bg-card gap-0 hover:border-foreground/20 hover:shadow-sm p-0 shadow-xs transition-[border-color,box-shadow]" size="sm">
                               <CardHeader className="gap-x-2.5 grid-cols-[1.5rem_minmax(0,1fr)] items-center min-h-5 min-w-0 pb-0 pt-3 px-3">
@@ -875,8 +875,8 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
+                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
                                           <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
                                           <path d="M12 18V6"></path>
                                         </svg>
@@ -894,13 +894,13 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
+                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
                                           <path d="M16 14v2.2l1.6 1"></path>
                                           <path d="M16 2v4"></path>
                                           <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path>
                                           <path d="M3 10h5"></path>
                                           <path d="M8 2v4"></path>
-                                          <circle cx="16" cy="16" r="6"></circle>
+                                          <circle cx={16} cy={16} r={6}></circle>
                                         </svg>
                                       </ItemMedia>
                                     </Item>
@@ -957,7 +957,7 @@ export function Pattern() {
                             </Card>
                           </KanbanItemHandle>
                         </KanbanItem>
-                        <KanbanItem value="renewal-302" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="renewal-302" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <Card className="bg-card gap-0 hover:border-foreground/20 hover:shadow-sm p-0 shadow-xs transition-[border-color,box-shadow]" size="sm">
                               <CardHeader className="gap-x-2.5 grid-cols-[1.5rem_minmax(0,1fr)] items-center min-h-5 min-w-0 pb-0 pt-3 px-3">
@@ -996,8 +996,8 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
+                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
                                           <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
                                           <path d="M12 18V6"></path>
                                         </svg>
@@ -1015,13 +1015,13 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
+                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
                                           <path d="M16 14v2.2l1.6 1"></path>
                                           <path d="M16 2v4"></path>
                                           <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path>
                                           <path d="M3 10h5"></path>
                                           <path d="M8 2v4"></path>
-                                          <circle cx="16" cy="16" r="6"></circle>
+                                          <circle cx={16} cy={16} r={6}></circle>
                                         </svg>
                                       </ItemMedia>
                                     </Item>
@@ -1095,25 +1095,25 @@ export function Pattern() {
                             </Badge>
                           </div>
                         </div>
-                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex="0" aria-label="Add review blocker">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex={0} aria-label="Add review blocker">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
                         </Button>
-                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Security/Legal stage">
-                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                            <circle cx="9" cy="12" r="1"></circle>
-                            <circle cx="9" cy="5" r="1"></circle>
-                            <circle cx="9" cy="19" r="1"></circle>
-                            <circle cx="15" cy="12" r="1"></circle>
-                            <circle cx="15" cy="5" r="1"></circle>
-                            <circle cx="15" cy="19" r="1"></circle>
+                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Security/Legal stage">
+                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                            <circle cx={9} cy={12} r={1}></circle>
+                            <circle cx={9} cy={5} r={1}></circle>
+                            <circle cx={9} cy={19} r={1}></circle>
+                            <circle cx={15} cy={12} r={1}></circle>
+                            <circle cx={15} cy={5} r={1}></circle>
+                            <circle cx={15} cy={19} r={1}></circle>
                           </svg>
                         </KanbanColumnHandle>
                       </div>
                       <KanbanColumnContent className="gap-3 px-1 py-1">
-                        <KanbanItem value="renewal-401" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="renewal-401" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <Card className="bg-card gap-0 hover:border-foreground/20 hover:shadow-sm p-0 shadow-xs transition-[border-color,box-shadow]" size="sm">
                               <CardHeader className="gap-x-2.5 grid-cols-[1.5rem_minmax(0,1fr)] items-center min-h-5 min-w-0 pb-0 pt-3 px-3">
@@ -1146,8 +1146,8 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
+                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
                                           <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
                                           <path d="M12 18V6"></path>
                                         </svg>
@@ -1165,13 +1165,13 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
+                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
                                           <path d="M16 14v2.2l1.6 1"></path>
                                           <path d="M16 2v4"></path>
                                           <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path>
                                           <path d="M3 10h5"></path>
                                           <path d="M8 2v4"></path>
-                                          <circle cx="16" cy="16" r="6"></circle>
+                                          <circle cx={16} cy={16} r={6}></circle>
                                         </svg>
                                       </ItemMedia>
                                     </Item>
@@ -1228,7 +1228,7 @@ export function Pattern() {
                             </Card>
                           </KanbanItemHandle>
                         </KanbanItem>
-                        <KanbanItem value="renewal-402" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="renewal-402" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <Card className="bg-card gap-0 hover:border-foreground/20 hover:shadow-sm p-0 shadow-xs transition-[border-color,box-shadow]" size="sm">
                               <CardHeader className="gap-x-2.5 grid-cols-[1.5rem_minmax(0,1fr)] items-center min-h-5 min-w-0 pb-0 pt-3 px-3">
@@ -1236,16 +1236,16 @@ export function Pattern() {
                                   <ItemMedia className="size-auto" variant="icon">
                                     <svg className="size-5" aria-hidden="true" viewBox="0 0 109 113" fill="none">
                                       <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint0_linear)"></path>
-                                      <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity="0.2"></path>
+                                      <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity={0.2}></path>
                                       <path d="M45.317 2.07103C48.1765 -1.53037 53.9745 0.442937 54.0434 5.041L54.4849 72.2922H9.83113C1.64038 72.2922 -2.92775 62.8321 2.1655 56.4175L45.317 2.07103Z" fill="#3ECF8E"></path>
                                       <defs>
-                                        <lineargradient id="supabase-paint0_linear" x1="53.9738" y1="54.974" x2="94.1635" y2="71.8295" gradientUnits="userSpaceOnUse">
+                                        <lineargradient id="supabase-paint0_linear" x1={53.9738} y1={54.974} x2={94.1635} y2={71.8295} gradientUnits="userSpaceOnUse">
                                           <stop stopColor="#249361"></stop>
-                                          <stop offset="1" stopColor="#3ECF8E"></stop>
+                                          <stop offset={1} stopColor="#3ECF8E"></stop>
                                         </lineargradient>
-                                        <lineargradient id="supabase-paint1_linear" x1="36.1558" y1="30.578" x2="54.4844" y2="65.0806" gradientUnits="userSpaceOnUse">
+                                        <lineargradient id="supabase-paint1_linear" x1={36.1558} y1={30.578} x2={54.4844} y2={65.0806} gradientUnits="userSpaceOnUse">
                                           <stop></stop>
-                                          <stop offset="1" stopOpacity="0"></stop>
+                                          <stop offset={1} stopOpacity={0}></stop>
                                         </lineargradient>
                                       </defs>
                                     </svg>
@@ -1266,8 +1266,8 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
+                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
                                           <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
                                           <path d="M12 18V6"></path>
                                         </svg>
@@ -1285,13 +1285,13 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
+                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
                                           <path d="M16 14v2.2l1.6 1"></path>
                                           <path d="M16 2v4"></path>
                                           <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path>
                                           <path d="M3 10h5"></path>
                                           <path d="M8 2v4"></path>
-                                          <circle cx="16" cy="16" r="6"></circle>
+                                          <circle cx={16} cy={16} r={6}></circle>
                                         </svg>
                                       </ItemMedia>
                                     </Item>
@@ -1348,7 +1348,7 @@ export function Pattern() {
                             </Card>
                           </KanbanItemHandle>
                         </KanbanItem>
-                        <KanbanItem value="renewal-403" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="renewal-403" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <Card className="bg-card gap-0 hover:border-foreground/20 hover:shadow-sm p-0 shadow-xs transition-[border-color,box-shadow]" size="sm">
                               <CardHeader className="gap-x-2.5 grid-cols-[1.5rem_minmax(0,1fr)] items-center min-h-5 min-w-0 pb-0 pt-3 px-3">
@@ -1383,8 +1383,8 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
+                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
                                           <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
                                           <path d="M12 18V6"></path>
                                         </svg>
@@ -1402,13 +1402,13 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
+                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
                                           <path d="M16 14v2.2l1.6 1"></path>
                                           <path d="M16 2v4"></path>
                                           <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path>
                                           <path d="M3 10h5"></path>
                                           <path d="M8 2v4"></path>
-                                          <circle cx="16" cy="16" r="6"></circle>
+                                          <circle cx={16} cy={16} r={6}></circle>
                                         </svg>
                                       </ItemMedia>
                                     </Item>
@@ -1482,25 +1482,25 @@ export function Pattern() {
                             </Badge>
                           </div>
                         </div>
-                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex="0" aria-label="Add procurement item">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex={0} aria-label="Add procurement item">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
                         </Button>
-                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Procurement stage">
-                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                            <circle cx="9" cy="12" r="1"></circle>
-                            <circle cx="9" cy="5" r="1"></circle>
-                            <circle cx="9" cy="19" r="1"></circle>
-                            <circle cx="15" cy="12" r="1"></circle>
-                            <circle cx="15" cy="5" r="1"></circle>
-                            <circle cx="15" cy="19" r="1"></circle>
+                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Procurement stage">
+                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                            <circle cx={9} cy={12} r={1}></circle>
+                            <circle cx={9} cy={5} r={1}></circle>
+                            <circle cx={9} cy={19} r={1}></circle>
+                            <circle cx={15} cy={12} r={1}></circle>
+                            <circle cx={15} cy={5} r={1}></circle>
+                            <circle cx={15} cy={19} r={1}></circle>
                           </svg>
                         </KanbanColumnHandle>
                       </div>
                       <KanbanColumnContent className="gap-3 px-1 py-1">
-                        <KanbanItem value="renewal-501" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="renewal-501" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <Card className="bg-card gap-0 hover:border-foreground/20 hover:shadow-sm p-0 shadow-xs transition-[border-color,box-shadow]" size="sm">
                               <CardHeader className="gap-x-2.5 grid-cols-[1.5rem_minmax(0,1fr)] items-center min-h-5 min-w-0 pb-0 pt-3 px-3">
@@ -1530,8 +1530,8 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
+                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
                                           <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
                                           <path d="M12 18V6"></path>
                                         </svg>
@@ -1549,13 +1549,13 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
+                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
                                           <path d="M16 14v2.2l1.6 1"></path>
                                           <path d="M16 2v4"></path>
                                           <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path>
                                           <path d="M3 10h5"></path>
                                           <path d="M8 2v4"></path>
-                                          <circle cx="16" cy="16" r="6"></circle>
+                                          <circle cx={16} cy={16} r={6}></circle>
                                         </svg>
                                       </ItemMedia>
                                     </Item>
@@ -1612,7 +1612,7 @@ export function Pattern() {
                             </Card>
                           </KanbanItemHandle>
                         </KanbanItem>
-                        <KanbanItem value="renewal-502" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="renewal-502" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <Card className="bg-card gap-0 hover:border-foreground/20 hover:shadow-sm p-0 shadow-xs transition-[border-color,box-shadow]" size="sm">
                               <CardHeader className="gap-x-2.5 grid-cols-[1.5rem_minmax(0,1fr)] items-center min-h-5 min-w-0 pb-0 pt-3 px-3">
@@ -1641,8 +1641,8 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
+                                        <svg className="lucide lucide-circle-dollar-sign size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
                                           <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
                                           <path d="M12 18V6"></path>
                                         </svg>
@@ -1660,13 +1660,13 @@ export function Pattern() {
                                   <div className="bg-muted/25 border border-border/70 flex gap-2 items-center min-w-0 px-2.5 py-2 rounded-md">
                                     <Item className="border-0 p-0 size-4 text-muted-foreground" variant="default" size="default">
                                       <ItemMedia className="size-auto" variant="icon">
-                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
+                                        <svg className="lucide lucide-calendar-clock size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
                                           <path d="M16 14v2.2l1.6 1"></path>
                                           <path d="M16 2v4"></path>
                                           <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path>
                                           <path d="M3 10h5"></path>
                                           <path d="M8 2v4"></path>
-                                          <circle cx="16" cy="16" r="6"></circle>
+                                          <circle cx={16} cy={16} r={6}></circle>
                                         </svg>
                                       </ItemMedia>
                                     </Item>
@@ -1740,20 +1740,20 @@ export function Pattern() {
                             </Badge>
                           </div>
                         </div>
-                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex="0" aria-label="Add renewed account">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex={0} aria-label="Add renewed account">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
                         </Button>
-                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Renewed stage">
-                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                            <circle cx="9" cy="12" r="1"></circle>
-                            <circle cx="9" cy="5" r="1"></circle>
-                            <circle cx="9" cy="19" r="1"></circle>
-                            <circle cx="15" cy="12" r="1"></circle>
-                            <circle cx="15" cy="5" r="1"></circle>
-                            <circle cx="15" cy="19" r="1"></circle>
+                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Renewed stage">
+                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                            <circle cx={9} cy={12} r={1}></circle>
+                            <circle cx={9} cy={5} r={1}></circle>
+                            <circle cx={9} cy={19} r={1}></circle>
+                            <circle cx={15} cy={12} r={1}></circle>
+                            <circle cx={15} cy={5} r={1}></circle>
+                            <circle cx={15} cy={19} r={1}></circle>
                           </svg>
                         </KanbanColumnHandle>
                       </div>
@@ -1763,22 +1763,22 @@ export function Pattern() {
                             <div className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-empty-media cn-empty-media-default flex items-center justify-center mb-0 shrink-0" data-variant="default">
                               <IconStack className="h-14 w-12" aria-hidden="true" style={{"--icon-stack-content-x": "71%", "--icon-stack-content-y": "58%"}}>
                                 <svg className="h-full overflow-visible w-full" aria-hidden="true" viewBox="0 0 72 81" fill="none">
-                                  <ellipse className="blur-[4px]" cx="36" cy="76" rx="30" ry="7" fill="currentColor" fillOpacity="0.055"></ellipse>
-                                  <g opacity="0.4" transform="translate(0 0)">
-                                    <path d="M42.2538 2.046C41.4408 1.6325 40.3965 1.6677 39.2612 2.2424L7.9616 18.1934C5.3895 19.5039 3.301 23.1064 3.301 26.2322V64.3226C3.301 66.0677 3.9458 67.2943 4.962 67.8199L1.8363 66.229C0.8201 65.7104 0.1753 64.4771 0.1753 62.732V24.6412C0.1753 21.5085 2.2638 17.913 4.8359 16.6024L36.1355 0.6515C37.2778 0.0698 38.322 0.0416 39.128 0.4551L42.2538 2.046Z" stroke="currentColor" strokeOpacity="0.2" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round"></path>
-                                    <path d="M42.2545 2.0456C43.2707 2.5643 43.9155 3.7979 43.9155 5.543V43.6337C43.9155 46.7665 41.827 50.3616 39.2549 51.6722L7.9554 67.6235C6.813 68.2052 5.7687 68.2331 4.9628 67.8196C3.9465 67.301 3.3018 66.0673 3.3018 64.3222V26.2318C3.3018 23.0991 5.3903 19.5036 7.9624 18.193L39.2619 2.2421C40.4043 1.6604 41.4486 1.6321 42.2545 2.0456Z" stroke="currentColor" strokeOpacity="0.2" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round"></path>
+                                  <ellipse className="blur-[4px]" cx={36} cy={76} rx={30} ry={7} fill="currentColor" fillOpacity={0.055}></ellipse>
+                                  <g opacity={0.4} transform="translate(0 0)">
+                                    <path d="M42.2538 2.046C41.4408 1.6325 40.3965 1.6677 39.2612 2.2424L7.9616 18.1934C5.3895 19.5039 3.301 23.1064 3.301 26.2322V64.3226C3.301 66.0677 3.9458 67.2943 4.962 67.8199L1.8363 66.229C0.8201 65.7104 0.1753 64.4771 0.1753 62.732V24.6412C0.1753 21.5085 2.2638 17.913 4.8359 16.6024L36.1355 0.6515C37.2778 0.0698 38.322 0.0416 39.128 0.4551L42.2538 2.046Z" stroke="currentColor" strokeOpacity={0.2} strokeWidth={0.5} strokeLinecap="round" strokeLinejoin="round"></path>
+                                    <path d="M42.2545 2.0456C43.2707 2.5643 43.9155 3.7979 43.9155 5.543V43.6337C43.9155 46.7665 41.827 50.3616 39.2549 51.6722L7.9554 67.6235C6.813 68.2052 5.7687 68.2331 4.9628 67.8196C3.9465 67.301 3.3018 66.0673 3.3018 64.3222V26.2318C3.3018 23.0991 5.3903 19.5036 7.9624 18.193L39.2619 2.2421C40.4043 1.6604 41.4486 1.6321 42.2545 2.0456Z" stroke="currentColor" strokeOpacity={0.2} strokeWidth={0.5} strokeLinecap="round" strokeLinejoin="round"></path>
                                   </g>
-                                  <g opacity="0.6" transform="translate(13.65 6.04)">
-                                    <path d="M42.2538 2.046C41.4408 1.6325 40.3965 1.6677 39.2612 2.2424L7.9616 18.1934C5.3895 19.5039 3.301 23.1064 3.301 26.2322V64.3226C3.301 66.0677 3.9458 67.2943 4.962 67.8199L1.8363 66.229C0.8201 65.7104 0.1753 64.4771 0.1753 62.732V24.6412C0.1753 21.5085 2.2638 17.913 4.8359 16.6024L36.1355 0.6515C37.2778 0.0698 38.322 0.0416 39.128 0.4551L42.2538 2.046Z" stroke="currentColor" strokeOpacity="0.2" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round"></path>
-                                    <path d="M42.2545 2.0456C43.2707 2.5643 43.9155 3.7979 43.9155 5.543V43.6337C43.9155 46.7665 41.827 50.3616 39.2549 51.6722L7.9554 67.6235C6.813 68.2052 5.7687 68.2331 4.9628 67.8196C3.9465 67.301 3.3018 66.0673 3.3018 64.3222V26.2318C3.3018 23.0991 5.3903 19.5036 7.9624 18.193L39.2619 2.2421C40.4043 1.6604 41.4486 1.6321 42.2545 2.0456Z" stroke="currentColor" strokeOpacity="0.2" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round"></path>
+                                  <g opacity={0.6} transform="translate(13.65 6.04)">
+                                    <path d="M42.2538 2.046C41.4408 1.6325 40.3965 1.6677 39.2612 2.2424L7.9616 18.1934C5.3895 19.5039 3.301 23.1064 3.301 26.2322V64.3226C3.301 66.0677 3.9458 67.2943 4.962 67.8199L1.8363 66.229C0.8201 65.7104 0.1753 64.4771 0.1753 62.732V24.6412C0.1753 21.5085 2.2638 17.913 4.8359 16.6024L36.1355 0.6515C37.2778 0.0698 38.322 0.0416 39.128 0.4551L42.2538 2.046Z" stroke="currentColor" strokeOpacity={0.2} strokeWidth={0.5} strokeLinecap="round" strokeLinejoin="round"></path>
+                                    <path d="M42.2545 2.0456C43.2707 2.5643 43.9155 3.7979 43.9155 5.543V43.6337C43.9155 46.7665 41.827 50.3616 39.2549 51.6722L7.9554 67.6235C6.813 68.2052 5.7687 68.2331 4.9628 67.8196C3.9465 67.301 3.3018 66.0673 3.3018 64.3222V26.2318C3.3018 23.0991 5.3903 19.5036 7.9624 18.193L39.2619 2.2421C40.4043 1.6604 41.4486 1.6321 42.2545 2.0456Z" stroke="currentColor" strokeOpacity={0.2} strokeWidth={0.5} strokeLinecap="round" strokeLinejoin="round"></path>
                                   </g>
-                                  <g opacity="0.8" transform="translate(27.32 12.08)">
-                                    <path d="M42.2538 2.046C41.4408 1.6325 40.3965 1.6677 39.2612 2.2424L7.9616 18.1934C5.3895 19.5039 3.301 23.1064 3.301 26.2322V64.3226C3.301 66.0677 3.9458 67.2943 4.962 67.8199L1.8363 66.229C0.8201 65.7104 0.1753 64.4771 0.1753 62.732V24.6412C0.1753 21.5085 2.2638 17.913 4.8359 16.6024L36.1355 0.6515C37.2778 0.0698 38.322 0.0416 39.128 0.4551L42.2538 2.046Z" stroke="currentColor" strokeOpacity="0.3" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round"></path>
-                                    <path d="M42.2545 2.0456C43.2707 2.5643 43.9155 3.7979 43.9155 5.543V43.6337C43.9155 46.7665 41.827 50.3616 39.2549 51.6722L7.9554 67.6235C6.813 68.2052 5.7687 68.2331 4.9628 67.8196C3.9465 67.301 3.3018 66.0673 3.3018 64.3222V26.2318C3.3018 23.0991 5.3903 19.5036 7.9624 18.193L39.2619 2.2421C40.4043 1.6604 41.4486 1.6321 42.2545 2.0456Z" stroke="currentColor" strokeOpacity="0.3" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round"></path>
+                                  <g opacity={0.8} transform="translate(27.32 12.08)">
+                                    <path d="M42.2538 2.046C41.4408 1.6325 40.3965 1.6677 39.2612 2.2424L7.9616 18.1934C5.3895 19.5039 3.301 23.1064 3.301 26.2322V64.3226C3.301 66.0677 3.9458 67.2943 4.962 67.8199L1.8363 66.229C0.8201 65.7104 0.1753 64.4771 0.1753 62.732V24.6412C0.1753 21.5085 2.2638 17.913 4.8359 16.6024L36.1355 0.6515C37.2778 0.0698 38.322 0.0416 39.128 0.4551L42.2538 2.046Z" stroke="currentColor" strokeOpacity={0.3} strokeWidth={0.5} strokeLinecap="round" strokeLinejoin="round"></path>
+                                    <path d="M42.2545 2.0456C43.2707 2.5643 43.9155 3.7979 43.9155 5.543V43.6337C43.9155 46.7665 41.827 50.3616 39.2549 51.6722L7.9554 67.6235C6.813 68.2052 5.7687 68.2331 4.9628 67.8196C3.9465 67.301 3.3018 66.0673 3.3018 64.3222V26.2318C3.3018 23.0991 5.3903 19.5036 7.9624 18.193L39.2619 2.2421C40.4043 1.6604 41.4486 1.6321 42.2545 2.0456Z" stroke="currentColor" strokeOpacity={0.3} strokeWidth={0.5} strokeLinecap="round" strokeLinejoin="round"></path>
                                   </g>
                                 </svg>
                                 <div className="-skew-y-26 -translate-x-1/2 -translate-y-1/2 absolute flex items-center justify-center left-[var(--icon-stack-content-x)] pointer-events-none scale-x-90 text-muted-foreground top-[var(--icon-stack-content-y)]">
-                                  <svg className="lucide lucide-kanban" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="KanbanIcon" tabler="IconLayoutKanban" hugeicons="DashboardSquare02Icon" phosphor="KanbanIcon" remixicon="RiKanbanView" aria-hidden="true">
+                                  <svg className="lucide lucide-kanban" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="KanbanIcon" tabler="IconLayoutKanban" hugeicons="DashboardSquare02Icon" phosphor="KanbanIcon" remixicon="RiKanbanView" aria-hidden="true">
                                     <path d="M5 3v14"></path>
                                     <path d="M12 3v8"></path>
                                     <path d="M19 3v18"></path>
@@ -1795,8 +1795,8 @@ export function Pattern() {
                               </EmptyDescription>
                             </EmptyHeader>
                             <EmptyContent className="max-w-none">
-                              <Button className="bg-transparent h-8 hover:text-foreground px-2 text-muted-foreground" type="button" tabIndex="0" aria-label="Add renewed account">
-                                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+                              <Button className="bg-transparent h-8 hover:text-foreground px-2 text-muted-foreground" type="button" tabIndex={0} aria-label="Add renewed account">
+                                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                                   <path d="M5 12h14"></path>
                                   <path d="M12 5v14"></path>
                                 </svg>
@@ -1809,8 +1809,8 @@ export function Pattern() {
                     </section>
                   </KanbanColumn>
                   <div className="max-w-[18.5rem] p-1 shrink-0 sm:w-[18.5rem] w-[calc(100vw-4rem)]">
-                    <Button className="h-9 hover:text-foreground px-2 text-muted-foreground" type="button" tabIndex="0" aria-label="Add renewal stage">
-                      <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+                    <Button className="h-9 hover:text-foreground px-2 text-muted-foreground" type="button" tabIndex={0} aria-label="Add renewal stage">
+                      <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="M12 5v14"></path>
                       </svg>

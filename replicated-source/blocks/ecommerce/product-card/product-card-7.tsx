@@ -26,8 +26,8 @@ export function Pattern() {
             </h2>
             <div className="flex gap-2 items-center shrink-0">
               <Carousel>
-              <CarouselPrevious className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center left-auto outline-none select-none shrink-0 static top-auto transition-all translate-y-0 whitespace-nowrap" type="button" disabled="" tabIndex="0" disabled aria-label="Previous latest products" extracted="1">
-                <svg className="cn-rtl-flip lucide lucide-chevron-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine">
+              <CarouselPrevious className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center left-auto outline-none select-none shrink-0 static top-auto transition-all translate-y-0 whitespace-nowrap" type="button" disabled="" tabIndex={0} disabled aria-label="Previous latest products" extracted="1">
+                <svg className="cn-rtl-flip lucide lucide-chevron-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine">
                   <path d="m15 18-6-6 6-6"></path>
                 </svg>
                 <span className="sr-only">
@@ -36,8 +36,8 @@ export function Pattern() {
               </CarouselPrevious>
               </Carousel>
               <Carousel>
-              <CarouselNext className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none right-auto select-none shrink-0 static top-auto transition-all translate-y-0 whitespace-nowrap" type="button" tabIndex="0" aria-label="Next latest products">
-                <svg className="cn-rtl-flip lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
+              <CarouselNext className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none right-auto select-none shrink-0 static top-auto transition-all translate-y-0 whitespace-nowrap" type="button" tabIndex={0} aria-label="Next latest products">
+                <svg className="cn-rtl-flip lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                   <path d="m9 18 6-6-6-6"></path>
                 </svg>
                 <span className="sr-only">
@@ -60,15 +60,15 @@ export function Pattern() {
                           <img className="absolute duration-500 ease-out h-full inset-0 motion-reduce:transition-none motion-safe:group-hover/media:scale-105 object-cover transition-transform w-full will-change-transform" alt="Wool Collar Jacket" loading="eager" fetchpriority="high" src="https://images.unsplash.com/photo-1762160766742-90dbea704e70?auto=format&fit=crop&w=720&h=900&q=80" />
                         </a>
                         <div className="absolute duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-hover:opacity-100 group-hover:pointer-events-auto motion-reduce:transition-none opacity-0 pointer-events-none right-2 top-2 transition-opacity">
-                          <Button type="button" tabIndex="0" aria-label="Add Wool Collar Jacket to wishlist" aria-pressed="false">
-                            <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
+                          <Button type="button" tabIndex={0} aria-label="Add Wool Collar Jacket to wishlist" aria-pressed="false">
+                            <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
                               <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                             </svg>
                           </Button>
                         </div>
                         <div className="absolute flex inset-0 items-center justify-center pointer-events-none z-10">
-                          <Button className="duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0 motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-1" type="button" tabIndex="0" aria-label="Add Wool Collar Jacket to cart">
-                            <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
+                          <Button className="duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0 motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-1" type="button" tabIndex={0} aria-label="Add Wool Collar Jacket to cart">
+                            <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
                               <path d="M16 10a4 4 0 0 1-8 0"></path>
                               <path d="M3.103 6.034h17.794"></path>
                               <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
@@ -81,9 +81,9 @@ export function Pattern() {
                     <CardContent className="flex flex-1 flex-col gap-3">
                       <div className="flex gap-3 items-center justify-between min-h-6 min-w-0">
                         <a className="flex font-medium gap-1.5 group/category hover:text-primary hover:underline items-center max-w-full min-w-0 text-muted-foreground text-xs transition-colors underline-offset-2" href="#" aria-label="View Studio Outerwear products">
-                          <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                          <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                             <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                            <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                            <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                           </svg>
                           <span className="group-hover/category:underline min-w-0 truncate underline-offset-4">
                             {"Studio Outerwear"}
@@ -129,15 +129,15 @@ export function Pattern() {
                           </Badge>
                         </div>
                         <div className="absolute duration-200 motion-reduce:transition-none opacity-100 pointer-events-auto right-2 top-2 transition-opacity">
-                          <Button type="button" tabIndex="0" aria-label="Remove Gloss Cropped Puffer from wishlist" aria-pressed="true">
-                            <svg className="fill-destructive lucide lucide-heart text-destructive" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
+                          <Button type="button" tabIndex={0} aria-label="Remove Gloss Cropped Puffer from wishlist" aria-pressed="true">
+                            <svg className="fill-destructive lucide lucide-heart text-destructive" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
                               <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                             </svg>
                           </Button>
                         </div>
                         <div className="absolute flex inset-0 items-center justify-center pointer-events-none z-10">
-                          <Button className="duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0 motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-1" type="button" tabIndex="0" aria-label="Add Gloss Cropped Puffer to cart">
-                            <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
+                          <Button className="duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0 motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-1" type="button" tabIndex={0} aria-label="Add Gloss Cropped Puffer to cart">
+                            <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
                               <path d="M16 10a4 4 0 0 1-8 0"></path>
                               <path d="M3.103 6.034h17.794"></path>
                               <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
@@ -150,9 +150,9 @@ export function Pattern() {
                     <CardContent className="flex flex-1 flex-col gap-3">
                       <div className="flex gap-3 items-center justify-between min-h-6 min-w-0">
                         <a className="flex font-medium gap-1.5 group/category hover:text-primary hover:underline items-center max-w-full min-w-0 text-muted-foreground text-xs transition-colors underline-offset-2" href="#" aria-label="View Cold Weather products">
-                          <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                          <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                             <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                            <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                            <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                           </svg>
                           <span className="group-hover/category:underline min-w-0 truncate underline-offset-4">
                             {"Cold Weather"}
@@ -193,15 +193,15 @@ export function Pattern() {
                           <img className="absolute duration-500 ease-out h-full inset-0 motion-reduce:transition-none motion-safe:group-hover/media:scale-105 object-cover transition-transform w-full will-change-transform" alt="Ribbed Flight Set" loading="lazy" fetchpriority="auto" src="https://images.unsplash.com/photo-1763499390053-c7067878efd6?auto=format&fit=crop&w=720&h=900&q=80" />
                         </a>
                         <div className="absolute duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-hover:opacity-100 group-hover:pointer-events-auto motion-reduce:transition-none opacity-0 pointer-events-none right-2 top-2 transition-opacity">
-                          <Button type="button" tabIndex="0" aria-label="Add Ribbed Flight Set to wishlist" aria-pressed="false">
-                            <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
+                          <Button type="button" tabIndex={0} aria-label="Add Ribbed Flight Set to wishlist" aria-pressed="false">
+                            <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
                               <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                             </svg>
                           </Button>
                         </div>
                         <div className="absolute flex inset-0 items-center justify-center pointer-events-none z-10">
-                          <Button className="duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0 motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-1" type="button" tabIndex="0" aria-label="Add Ribbed Flight Set to cart">
-                            <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
+                          <Button className="duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0 motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-1" type="button" tabIndex={0} aria-label="Add Ribbed Flight Set to cart">
+                            <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
                               <path d="M16 10a4 4 0 0 1-8 0"></path>
                               <path d="M3.103 6.034h17.794"></path>
                               <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
@@ -214,9 +214,9 @@ export function Pattern() {
                     <CardContent className="flex flex-1 flex-col gap-3">
                       <div className="flex gap-3 items-center justify-between min-h-6 min-w-0">
                         <a className="flex font-medium gap-1.5 group/category hover:text-primary hover:underline items-center max-w-full min-w-0 text-muted-foreground text-xs transition-colors underline-offset-2" href="#" aria-label="View Travel Set products">
-                          <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                          <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                             <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                            <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                            <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                           </svg>
                           <span className="group-hover/category:underline min-w-0 truncate underline-offset-4">
                             {"Travel Set"}
@@ -254,15 +254,15 @@ export function Pattern() {
                           <img className="absolute duration-500 ease-out h-full inset-0 motion-reduce:transition-none motion-safe:group-hover/media:scale-105 object-cover transition-transform w-full will-change-transform" alt="Wide-Leg Rinse Jean" loading="lazy" fetchpriority="auto" src="https://images.unsplash.com/photo-1762395271662-2a5a077f9662?auto=format&fit=crop&w=720&h=900&q=80" />
                         </a>
                         <div className="absolute duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-hover:opacity-100 group-hover:pointer-events-auto motion-reduce:transition-none opacity-0 pointer-events-none right-2 top-2 transition-opacity">
-                          <Button type="button" tabIndex="0" aria-label="Add Wide-Leg Rinse Jean to wishlist" aria-pressed="false">
-                            <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
+                          <Button type="button" tabIndex={0} aria-label="Add Wide-Leg Rinse Jean to wishlist" aria-pressed="false">
+                            <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
                               <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                             </svg>
                           </Button>
                         </div>
                         <div className="absolute flex inset-0 items-center justify-center pointer-events-none z-10">
-                          <Button className="duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0 motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-1" type="button" tabIndex="0" aria-label="Add Wide-Leg Rinse Jean to cart">
-                            <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
+                          <Button className="duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0 motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-1" type="button" tabIndex={0} aria-label="Add Wide-Leg Rinse Jean to cart">
+                            <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
                               <path d="M16 10a4 4 0 0 1-8 0"></path>
                               <path d="M3.103 6.034h17.794"></path>
                               <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
@@ -275,9 +275,9 @@ export function Pattern() {
                     <CardContent className="flex flex-1 flex-col gap-3">
                       <div className="flex gap-3 items-center justify-between min-h-6 min-w-0">
                         <a className="flex font-medium gap-1.5 group/category hover:text-primary hover:underline items-center max-w-full min-w-0 text-muted-foreground text-xs transition-colors underline-offset-2" href="#" aria-label="View Denim Studio products">
-                          <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                          <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                             <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                            <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                            <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                           </svg>
                           <span className="group-hover/category:underline min-w-0 truncate underline-offset-4">
                             {"Denim Studio"}
@@ -324,15 +324,15 @@ export function Pattern() {
                           <img className="absolute duration-500 ease-out h-full inset-0 motion-reduce:transition-none motion-safe:group-hover/media:scale-105 object-cover transition-transform w-full will-change-transform" alt="Cognac Cafe Jacket" loading="lazy" fetchpriority="auto" src="https://images.unsplash.com/photo-1603748945907-60d79ed187d1?auto=format&fit=crop&w=720&h=900&q=80" />
                         </a>
                         <div className="absolute duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-hover:opacity-100 group-hover:pointer-events-auto motion-reduce:transition-none opacity-0 pointer-events-none right-2 top-2 transition-opacity">
-                          <Button type="button" tabIndex="0" aria-label="Add Cognac Cafe Jacket to wishlist" aria-pressed="false">
-                            <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
+                          <Button type="button" tabIndex={0} aria-label="Add Cognac Cafe Jacket to wishlist" aria-pressed="false">
+                            <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
                               <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                             </svg>
                           </Button>
                         </div>
                         <div className="absolute flex inset-0 items-center justify-center pointer-events-none z-10">
-                          <Button className="duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0 motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-1" type="button" tabIndex="0" aria-label="Add Cognac Cafe Jacket to cart">
-                            <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
+                          <Button className="duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0 motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-1" type="button" tabIndex={0} aria-label="Add Cognac Cafe Jacket to cart">
+                            <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
                               <path d="M16 10a4 4 0 0 1-8 0"></path>
                               <path d="M3.103 6.034h17.794"></path>
                               <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
@@ -345,9 +345,9 @@ export function Pattern() {
                     <CardContent className="flex flex-1 flex-col gap-3">
                       <div className="flex gap-3 items-center justify-between min-h-6 min-w-0">
                         <a className="flex font-medium gap-1.5 group/category hover:text-primary hover:underline items-center max-w-full min-w-0 text-muted-foreground text-xs transition-colors underline-offset-2" href="#" aria-label="View Studio Outerwear products">
-                          <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                          <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                             <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                            <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                            <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                           </svg>
                           <span className="group-hover/category:underline min-w-0 truncate underline-offset-4">
                             {"Studio Outerwear"}
@@ -390,15 +390,15 @@ export function Pattern() {
                           </Badge>
                         </div>
                         <div className="absolute duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-hover:opacity-100 group-hover:pointer-events-auto motion-reduce:transition-none opacity-0 pointer-events-none right-2 top-2 transition-opacity">
-                          <Button type="button" tabIndex="0" aria-label="Add Longline Utility Set to wishlist" aria-pressed="false">
-                            <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
+                          <Button type="button" tabIndex={0} aria-label="Add Longline Utility Set to wishlist" aria-pressed="false">
+                            <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
                               <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                             </svg>
                           </Button>
                         </div>
                         <div className="absolute flex inset-0 items-center justify-center pointer-events-none z-10">
-                          <Button className="duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0 motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-1" type="button" tabIndex="0" aria-label="Add Longline Utility Set to cart">
-                            <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
+                          <Button className="duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0 motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-1" type="button" tabIndex={0} aria-label="Add Longline Utility Set to cart">
+                            <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
                               <path d="M16 10a4 4 0 0 1-8 0"></path>
                               <path d="M3.103 6.034h17.794"></path>
                               <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
@@ -411,9 +411,9 @@ export function Pattern() {
                     <CardContent className="flex flex-1 flex-col gap-3">
                       <div className="flex gap-3 items-center justify-between min-h-6 min-w-0">
                         <a className="flex font-medium gap-1.5 group/category hover:text-primary hover:underline items-center max-w-full min-w-0 text-muted-foreground text-xs transition-colors underline-offset-2" href="#" aria-label="View Travel Set products">
-                          <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                          <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                             <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                            <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                            <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                           </svg>
                           <span className="group-hover/category:underline min-w-0 truncate underline-offset-4">
                             {"Travel Set"}
@@ -454,15 +454,15 @@ export function Pattern() {
                           <img className="absolute duration-500 ease-out h-full inset-0 motion-reduce:transition-none motion-safe:group-hover/media:scale-105 object-cover transition-transform w-full will-change-transform" alt="Padded City Coat" loading="lazy" fetchpriority="auto" src="https://images.unsplash.com/photo-1583513702324-73e5c09c9dcf?auto=format&fit=crop&w=720&h=900&q=80" />
                         </a>
                         <div className="absolute duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-hover:opacity-100 group-hover:pointer-events-auto motion-reduce:transition-none opacity-0 pointer-events-none right-2 top-2 transition-opacity">
-                          <Button type="button" tabIndex="0" aria-label="Add Padded City Coat to wishlist" aria-pressed="false">
-                            <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
+                          <Button type="button" tabIndex={0} aria-label="Add Padded City Coat to wishlist" aria-pressed="false">
+                            <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
                               <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                             </svg>
                           </Button>
                         </div>
                         <div className="absolute flex inset-0 items-center justify-center pointer-events-none z-10">
-                          <Button className="duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0 motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-1" type="button" disabled="" tabIndex="0" disabled aria-label="Padded City Coat is sold out">
-                            <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
+                          <Button className="duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0 motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-1" type="button" disabled="" tabIndex={0} disabled aria-label="Padded City Coat is sold out">
+                            <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
                               <path d="M16 10a4 4 0 0 1-8 0"></path>
                               <path d="M3.103 6.034h17.794"></path>
                               <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
@@ -475,9 +475,9 @@ export function Pattern() {
                     <CardContent className="flex flex-1 flex-col gap-3">
                       <div className="flex gap-3 items-center justify-between min-h-6 min-w-0">
                         <a className="flex font-medium gap-1.5 group/category hover:text-primary hover:underline items-center max-w-full min-w-0 text-muted-foreground text-xs transition-colors underline-offset-2" href="#" aria-label="View Cold Weather products">
-                          <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                          <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                             <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                            <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                            <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                           </svg>
                           <span className="group-hover/category:underline min-w-0 truncate underline-offset-4">
                             {"Cold Weather"}
@@ -523,15 +523,15 @@ export function Pattern() {
                           </Badge>
                         </div>
                         <div className="absolute duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-hover:opacity-100 group-hover:pointer-events-auto motion-reduce:transition-none opacity-0 pointer-events-none right-2 top-2 transition-opacity">
-                          <Button type="button" tabIndex="0" aria-label="Add Slit-Hem Denim to wishlist" aria-pressed="false">
-                            <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
+                          <Button type="button" tabIndex={0} aria-label="Add Slit-Hem Denim to wishlist" aria-pressed="false">
+                            <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" aria-hidden="true">
                               <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                             </svg>
                           </Button>
                         </div>
                         <div className="absolute flex inset-0 items-center justify-center pointer-events-none z-10">
-                          <Button className="duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0 motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-1" type="button" tabIndex="0" aria-label="Add Slit-Hem Denim to cart">
-                            <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
+                          <Button className="duration-200 group-focus-within:opacity-100 group-focus-within:pointer-events-auto group-focus-within:translate-y-0 group-hover:opacity-100 group-hover:pointer-events-auto group-hover:translate-y-0 motion-reduce:transition-none opacity-0 pointer-events-none transition-[opacity,transform] translate-y-1" type="button" tabIndex={0} aria-label="Add Slit-Hem Denim to cart">
+                            <svg className="lucide lucide-shopping-bag" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShoppingBagIcon" tabler="IconShoppingBag" hugeicons="ShoppingBag01Icon" phosphor="ShoppingBagIcon" remixicon="RiShoppingBagLine" aria-hidden="true">
                               <path d="M16 10a4 4 0 0 1-8 0"></path>
                               <path d="M3.103 6.034h17.794"></path>
                               <path d="M3.4 5.467a2 2 0 0 0-.4 1.2V20a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6.667a2 2 0 0 0-.4-1.2l-2-2.667A2 2 0 0 0 17 2H7a2 2 0 0 0-1.6.8z"></path>
@@ -544,9 +544,9 @@ export function Pattern() {
                     <CardContent className="flex flex-1 flex-col gap-3">
                       <div className="flex gap-3 items-center justify-between min-h-6 min-w-0">
                         <a className="flex font-medium gap-1.5 group/category hover:text-primary hover:underline items-center max-w-full min-w-0 text-muted-foreground text-xs transition-colors underline-offset-2" href="#" aria-label="View Denim Studio products">
-                          <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                          <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                             <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                            <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                            <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                           </svg>
                           <span className="group-hover/category:underline min-w-0 truncate underline-offset-4">
                             {"Denim Studio"}

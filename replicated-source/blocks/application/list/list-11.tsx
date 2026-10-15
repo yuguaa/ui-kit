@@ -27,9 +27,9 @@ export function Pattern() {
           </h2>
           <InputGroup className="w-46" role="group">
             <InputGroupAddon role="group" data-align="inline-start">
-              <svg className="lucide lucide-search shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+              <svg className="lucide lucide-search shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                 <path d="m21 21-4.34-4.34"></path>
-                <circle cx="11" cy="11" r="8"></circle>
+                <circle cx={11} cy={11} r={8}></circle>
               </svg>
             </InputGroupAddon>
             <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_0_" placeholder="Search" />
@@ -80,7 +80,7 @@ export function Pattern() {
                   </TableCell>
                   <TableCell className="px-3.5 py-3">
                     <div className="flex font-medium gap-1.5 items-center text-[#0B5C22] text-base">
-                      <svg className="lucide lucide-trending-up shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
+                      <svg className="lucide lucide-trending-up shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                         <path d="M16 7h6v6"></path>
                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                       </svg>
@@ -111,7 +111,7 @@ export function Pattern() {
                   </TableCell>
                   <TableCell className="px-3.5 py-3">
                     <div className="flex font-medium gap-1.5 items-center text-[#991930] text-base">
-                      <svg className="lucide lucide-trending-down shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
+                      <svg className="lucide lucide-trending-down shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
                         <path d="M16 17h6v-6"></path>
                         <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                       </svg>
@@ -149,7 +149,7 @@ export function Pattern() {
                   </TableCell>
                   <TableCell className="px-3.5 py-3">
                     <div className="flex font-medium gap-1.5 items-center text-[#0B5C22] text-base">
-                      <svg className="lucide lucide-trending-up shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
+                      <svg className="lucide lucide-trending-up shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                         <path d="M16 7h6v6"></path>
                         <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                       </svg>
@@ -161,22 +161,22 @@ export function Pattern() {
                   <TableCell className="pe-30 px-3.5 py-3">
                     <div className="flex gap-2 items-center min-w-0">
                       <svg className="size-8" aria-hidden="true" viewBox="0 0 180 180">
-                        <mask height="180" id=":r8:mask0_408_134" maskUnits="userSpaceOnUse" width="180" x="0" y="0" style={{maskType: "alpha"}}>
-                          <circle cx="90" cy="90" fill="black" r="90"></circle>
+                        <mask height={180} id=":r8:mask0_408_134" maskUnits="userSpaceOnUse" width={180} x={0} y={0} style={{maskType: "alpha"}}>
+                          <circle cx={90} cy={90} fill="black" r={90}></circle>
                         </mask>
                         <g mask="url(#:r8:mask0_408_134)">
-                          <circle cx="90" cy="90" data-circle="true" fill="black" r="90"></circle>
+                          <circle cx={90} cy={90} data-circle="true" fill="black" r={90}></circle>
                           <path d="M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z" fill="url(#:r8:paint0_linear_408_134)"></path>
-                          <rect fill="url(#:r8:paint1_linear_408_134)" height="72" width="12" x="115" y="54"></rect>
+                          <rect fill="url(#:r8:paint1_linear_408_134)" height={72} width={12} x={115} y={54}></rect>
                         </g>
                         <defs>
-                          <lineargradient gradientUnits="userSpaceOnUse" id=":r8:paint0_linear_408_134" x1="109" x2="144.5" y1="116.5" y2="160.5">
+                          <lineargradient gradientUnits="userSpaceOnUse" id=":r8:paint0_linear_408_134" x1={109} x2={144.5} y1={116.5} y2={160.5}>
                             <stop stopColor="white"></stop>
-                            <stop offset="1" stopColor="white" stopOpacity="0"></stop>
+                            <stop offset={1} stopColor="white" stopOpacity={0}></stop>
                           </lineargradient>
-                          <lineargradient gradientUnits="userSpaceOnUse" id=":r8:paint1_linear_408_134" x1="121" x2="120.799" y1="54" y2="106.875">
+                          <lineargradient gradientUnits="userSpaceOnUse" id=":r8:paint1_linear_408_134" x1={121} x2={120.799} y1={54} y2={106.875}>
                             <stop stopColor="white"></stop>
-                            <stop offset="1" stopColor="white" stopOpacity="0"></stop>
+                            <stop offset={1} stopColor="white" stopOpacity={0}></stop>
                           </lineargradient>
                         </defs>
                       </svg>
@@ -197,7 +197,7 @@ export function Pattern() {
                   </TableCell>
                   <TableCell className="px-3.5 py-3">
                     <div className="flex font-medium gap-1.5 items-center text-[#991930] text-base">
-                      <svg className="lucide lucide-trending-down shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
+                      <svg className="lucide lucide-trending-down shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
                         <path d="M16 17h6v-6"></path>
                         <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                       </svg>

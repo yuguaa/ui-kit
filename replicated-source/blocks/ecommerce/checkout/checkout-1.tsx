@@ -46,22 +46,22 @@ export function Pattern() {
                 <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
                   {"Store"}
                 </a>
-                <svg className="lucide lucide-chevron-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                <svg className="lucide lucide-chevron-right size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                   <path d="m9 18 6-6-6-6"></path>
                 </svg>
                 <a className="hover:text-primary hover:underline transition-colors underline-offset-4" href="#">
                   {"Bag"}
                 </a>
-                <svg className="lucide lucide-chevron-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                <svg className="lucide lucide-chevron-right size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                   <path d="m9 18 6-6-6-6"></path>
                 </svg>
                 <span className="text-foreground">
                   {"Checkout"}
                 </span>
               </nav>
-              <Button className="w-fit" type="button" tabIndex="0" extracted="1">
+              <Button className="w-fit" type="button" tabIndex={0} extracted="1">
                 {"Continue Shopping"}
-                <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
+                <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
                 </svg>
@@ -85,7 +85,7 @@ export function Pattern() {
                   <Stepper>
                   <StepperItem className="min-w-0 relative" data-state="active">
                     <Stepper>
-                    <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex="-1" data-state="active" loading="false">
+                    <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex={-1} data-state="active" loading="false">
                       <Stepper>
                       <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:text-primary data-[state=inactive]:bg-muted data-[state=inactive]:border data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="active">
                         <div className="absolute">
@@ -106,7 +106,7 @@ export function Pattern() {
                   <Stepper>
                   <StepperItem className="min-w-0 relative" data-state="inactive">
                     <Stepper>
-                    <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="inactive" loading="false">
+                    <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex={-1} data-state="inactive" loading="false">
                       <Stepper>
                       <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:text-primary data-[state=inactive]:bg-muted data-[state=inactive]:border data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                         <div className="absolute">
@@ -127,7 +127,7 @@ export function Pattern() {
                   <Stepper>
                   <StepperItem className="min-w-0 relative" data-state="inactive">
                     <Stepper>
-                    <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="inactive" loading="false">
+                    <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex={-1} data-state="inactive" loading="false">
                       <Stepper>
                       <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:text-primary data-[state=inactive]:bg-muted data-[state=inactive]:border data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                         <div className="absolute">
@@ -148,7 +148,7 @@ export function Pattern() {
                   <Stepper>
                   <StepperItem className="min-w-0 relative" data-state="inactive">
                     <Stepper>
-                    <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-4" aria-selected="false" aria-controls="stepper-panel-4" tabIndex="-1" data-state="inactive" loading="false">
+                    <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-4" aria-selected="false" aria-controls="stepper-panel-4" tabIndex={-1} data-state="inactive" loading="false">
                       <Stepper>
                       <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:text-primary data-[state=inactive]:bg-muted data-[state=inactive]:border data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                         <div className="absolute">
@@ -178,7 +178,7 @@ export function Pattern() {
                   <Stepper>
                   <StepperItem className="min-w-0 relative" data-state="active">
                     <Stepper>
-                    <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex="-1" data-state="active" loading="false">
+                    <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex={-1} data-state="active" loading="false">
                       <Stepper>
                       <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:text-primary data-[state=inactive]:bg-muted data-[state=inactive]:border data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="active">
                         <div className="absolute">
@@ -197,7 +197,7 @@ export function Pattern() {
                   <Stepper>
                   <StepperItem className="min-w-0 relative" data-state="inactive">
                     <Stepper>
-                    <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="inactive" loading="false">
+                    <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex={-1} data-state="inactive" loading="false">
                       <Stepper>
                       <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:text-primary data-[state=inactive]:bg-muted data-[state=inactive]:border data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                         <div className="absolute">
@@ -216,7 +216,7 @@ export function Pattern() {
                   <Stepper>
                   <StepperItem className="min-w-0 relative" data-state="inactive">
                     <Stepper>
-                    <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="inactive" loading="false">
+                    <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex={-1} data-state="inactive" loading="false">
                       <Stepper>
                       <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:text-primary data-[state=inactive]:bg-muted data-[state=inactive]:border data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                         <div className="absolute">
@@ -235,7 +235,7 @@ export function Pattern() {
                   <Stepper>
                   <StepperItem className="min-w-0 relative" data-state="inactive">
                     <Stepper>
-                    <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-4" aria-selected="false" aria-controls="stepper-panel-4" tabIndex="-1" data-state="inactive" loading="false">
+                    <StepperTrigger className="cursor-default disabled:opacity-100 gap-1.5 justify-start min-w-0 pointer-events-none" type="button" role="tab" id="stepper-tab-4" aria-selected="false" aria-controls="stepper-panel-4" tabIndex={-1} data-state="inactive" loading="false">
                       <Stepper>
                       <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:text-primary data-[state=inactive]:bg-muted data-[state=inactive]:border data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                         <div className="absolute">
@@ -315,18 +315,18 @@ export function Pattern() {
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-1-country">
                           {"Country"}
                         </FieldLabel>
-                        <ComboboxTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none font-normal group/button inline-flex items-center justify-between outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="button" tabIndex="0" id="checkout-1-country" role="combobox" aria-expanded="false" aria-haspopup="dialog">
+                        <ComboboxTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none font-normal group/button inline-flex items-center justify-between outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="button" tabIndex={0} id="checkout-1-country" role="combobox" aria-expanded="false" aria-haspopup="dialog">
                           <span className="flex gap-2 items-center min-w-0">
-                            <img className="block h-3 object-cover rounded-xs shrink-0 w-4" alt="" width="16" height="12" loading="eager" src="https://flagcdn.com/w40/us.png" />
+                            <img className="block h-3 object-cover rounded-xs shrink-0 w-4" alt="" width={16} height={12} loading="eager" src="https://flagcdn.com/w40/us.png" />
                             <span className="truncate">
                               {"United States"}
                             </span>
                           </span>
-                          <svg className="cn-combobox-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
+                          <svg className="cn-combobox-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine">
                             <path d="m6 9 6 6 6-6"></path>
                           </svg>
                         </ComboboxTrigger>
-                        <input id="base-ui-_r_6_-hidden-input" tabIndex="-1" aria-hidden="true" value="United States" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input id="base-ui-_r_6_-hidden-input" tabIndex={-1} aria-hidden="true" value="United States" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </Field>
                     </FieldGroup>
                   </FieldSet>
@@ -365,16 +365,16 @@ export function Pattern() {
                                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-1-login-password">
                                   {"Password"}
                                 </FieldLabel>
-                                <Button className="font-normal h-auto hover:text-primary hover:underline p-0 text-xs underline-offset-4" type="button" tabIndex="0">
+                                <Button className="font-normal h-auto hover:text-primary hover:underline p-0 text-xs underline-offset-4" type="button" tabIndex={0}>
                                   {"Reset Password"}
                                 </Button>
                               </div>
                               <Input id="checkout-1-login-password" autoComplete="current-password" placeholder="Enter password" type="password" value=""></Input>
                             </Field>
                           </FieldGroup>
-                          <Button className="w-full" type="button" tabIndex="0">
+                          <Button className="w-full" type="button" tabIndex={0}>
                             {"Sign In"}
-                            <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
+                            <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                               <path d="M5 12h14"></path>
                               <path d="m12 5 7 7-7 7"></path>
                             </svg>
@@ -392,8 +392,8 @@ export function Pattern() {
                             </ItemDescription>
                           </div>
                           <Field className="gap-3 items-start" role="group" data-orientation="horizontal">
-                            <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_b_" aria-checked="false" aria-labelledby="checkout-1-create-account-label"></Checkbox>
-                            <input id="checkout-1-create-account" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                            <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_b_" aria-checked="false" aria-labelledby="checkout-1-create-account-label"></Checkbox>
+                            <input id="checkout-1-create-account" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             <FieldContent className="gap-1">
                               <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-1-create-account" id="checkout-1-create-account-label">
                                 {"Create Account After Checkout"}
@@ -411,8 +411,8 @@ export function Pattern() {
                               <Input id="checkout-1-create-password" autoComplete="new-password" placeholder="8+ characters" type="password" value=""></Input>
                             </Field>
                             <Field className="gap-3 items-start" role="group" data-orientation="horizontal">
-                              <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_f_" aria-checked="false" aria-labelledby="checkout-1-email-offers-label"></Checkbox>
-                              <input id="checkout-1-email-offers" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_f_" aria-checked="false" aria-labelledby="checkout-1-email-offers-label"></Checkbox>
+                              <input id="checkout-1-email-offers" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               <FieldContent className="gap-1">
                                 <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-1-email-offers" id="checkout-1-email-offers-label">
                                   {"Email Order Perks"}
@@ -420,7 +420,7 @@ export function Pattern() {
                               </FieldContent>
                             </Field>
                           </FieldGroup>
-                          <Button className="w-full" type="button" tabIndex="0">
+                          <Button className="w-full" type="button" tabIndex={0}>
                             {"Create With Order"}
                           </Button>
                         </ItemContent>
@@ -431,9 +431,9 @@ export function Pattern() {
               </div>
             </FieldSet>
             <div className="border-t flex gap-3 items-center justify-end mt-7 pt-5">
-              <Button type="submit" tabIndex="0">
+              <Button type="submit" tabIndex={0}>
                 {"Continue"}
-                <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
+                <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
                 </svg>
@@ -484,8 +484,8 @@ export function Pattern() {
                   <span className="font-medium tabular-nums text-sm">
                     {"$248.00"}
                   </span>
-                  <Button type="button" tabIndex="0" aria-label="Remove Leather Biker Jacket">
-                    <svg className="lucide lucide-trash-2 lucide-trash2 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Remove Leather Biker Jacket">
+                    <svg className="lucide lucide-trash-2 lucide-trash2 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                       <path d="M10 11v6"></path>
                       <path d="M14 11v6"></path>
                       <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -530,8 +530,8 @@ export function Pattern() {
                   <span className="line-through tabular-nums text-muted-foreground text-xs">
                     {"$118.00"}
                   </span>
-                  <Button type="button" tabIndex="0" aria-label="Remove Ribbed Tank Set">
-                    <svg className="lucide lucide-trash-2 lucide-trash2 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Remove Ribbed Tank Set">
+                    <svg className="lucide lucide-trash-2 lucide-trash2 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                       <path d="M10 11v6"></path>
                       <path d="M14 11v6"></path>
                       <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -549,7 +549,7 @@ export function Pattern() {
               </FieldLabel>
               <div className="flex gap-2">
                 <Input id="checkout-1-promo" aria-invalid="false" value="SPRING15"></Input>
-                <Button type="button" tabIndex="0">
+                <Button type="button" tabIndex={0}>
                   {"Apply"}
                 </Button>
               </div>

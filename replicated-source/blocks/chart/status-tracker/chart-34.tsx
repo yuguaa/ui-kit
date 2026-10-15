@@ -26,7 +26,7 @@ export function Pattern() {
           <header className="flex flex-row flex-wrap gap-(--frame-panel-header-gap) gap-x-3 gap-y-2 items-center justify-between px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
             <div className="flex flex-1 gap-3 items-center min-w-0">
               <IconTile variant="frame" size="sm" aria-hidden="true">
-                <svg className="lucide lucide-history" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HistoryIcon" tabler="IconHistory" hugeicons="Clock01Icon" phosphor="ClockCounterClockwiseIcon" remixicon="RiHistoryLine" aria-hidden="true">
+                <svg className="lucide lucide-history" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HistoryIcon" tabler="IconHistory" hugeicons="Clock01Icon" phosphor="ClockCounterClockwiseIcon" remixicon="RiHistoryLine" aria-hidden="true">
                   <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                   <path d="M3 3v5h5"></path>
                   <path d="M12 7v5l4 2"></path>
@@ -261,102 +261,102 @@ export function Pattern() {
                 </div>
                 <div className="-mx-0.5 @3xl/runs:-mx-0.75 @3xl/runs:basis-0 @3xl/runs:flex-1 @3xl/runs:order-none basis-full grid grid-cols-20 group/strip h-10 min-w-0 order-last" role="group" aria-label="Drain webhook retry queue, last 20 runs, oldest first: 90.0% succeeded">
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 12:40 UTC, Succeeded" id="base-ui-_r_1_" style={{gridColumnStart: "1"}} extracted="1">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 12:40 UTC, Succeeded" id="base-ui-_r_1_" style={{gridColumnStart: "1"}} extracted="1">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "91.8033%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 12:45 UTC, Succeeded" id="base-ui-_r_3_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 12:45 UTC, Succeeded" id="base-ui-_r_3_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "72.1311%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 12:50 UTC, Succeeded" id="base-ui-_r_5_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 12:50 UTC, Succeeded" id="base-ui-_r_5_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "81.9672%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 12:55 UTC, Succeeded" id="base-ui-_r_7_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 12:55 UTC, Succeeded" id="base-ui-_r_7_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "93.4426%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 13:00 UTC, Succeeded" id="base-ui-_r_9_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 13:00 UTC, Succeeded" id="base-ui-_r_9_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "73.7705%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 13:05 UTC, Succeeded" id="base-ui-_r_b_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 13:05 UTC, Succeeded" id="base-ui-_r_b_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "83.6066%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 13:10 UTC, Succeeded" id="base-ui-_r_d_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 13:10 UTC, Succeeded" id="base-ui-_r_d_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "95.082%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 13:15 UTC, Succeeded" id="base-ui-_r_f_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 13:15 UTC, Succeeded" id="base-ui-_r_f_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "75.4098%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 13:20 UTC, Succeeded" id="base-ui-_r_h_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 13:20 UTC, Succeeded" id="base-ui-_r_h_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "86.8852%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 13:25 UTC, Succeeded" id="base-ui-_r_j_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 13:25 UTC, Succeeded" id="base-ui-_r_j_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "96.7213%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 13:30 UTC, Succeeded" id="base-ui-_r_l_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 13:30 UTC, Succeeded" id="base-ui-_r_l_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "77.0492%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 13:35 UTC, Succeeded" id="base-ui-_r_n_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 13:35 UTC, Succeeded" id="base-ui-_r_n_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "88.5246%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 13:40 UTC, Succeeded" id="base-ui-_r_p_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 13:40 UTC, Succeeded" id="base-ui-_r_p_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "98.3607%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 13:45 UTC, Succeeded" id="base-ui-_r_r_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 13:45 UTC, Succeeded" id="base-ui-_r_r_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "78.6885%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 13:50 UTC, Succeeded" id="base-ui-_r_t_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 13:50 UTC, Succeeded" id="base-ui-_r_t_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "90.1639%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 13:55 UTC, Succeeded" id="base-ui-_r_v_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 13:55 UTC, Succeeded" id="base-ui-_r_v_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "100%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 14:00 UTC, Succeeded" id="base-ui-_r_11_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 14:00 UTC, Succeeded" id="base-ui-_r_11_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "80.3279%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 14:05 UTC, Succeeded" id="base-ui-_r_13_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 14:05 UTC, Succeeded" id="base-ui-_r_13_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "91.8033%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 14:10 UTC, Failed" id="base-ui-_r_15_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 14:10 UTC, Failed" id="base-ui-_r_15_">
                     <span className="bg-destructive w-full" aria-hidden="true" style={{height: "85.2459%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="0" aria-label="Sep 29, 14:15 UTC, Failed" id="base-ui-_r_17_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={0} aria-label="Sep 29, 14:15 UTC, Failed" id="base-ui-_r_17_">
                     <span className="bg-destructive w-full" aria-hidden="true" style={{height: "85.2459%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
@@ -398,102 +398,102 @@ export function Pattern() {
                 </div>
                 <div className="-mx-0.5 @3xl/runs:-mx-0.75 @3xl/runs:basis-0 @3xl/runs:flex-1 @3xl/runs:order-none basis-full grid grid-cols-20 group/strip h-10 min-w-0 order-last" role="group" aria-label="Import bank settlement files, last 20 runs, oldest first: 80.0% succeeded">
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 28, 19:30 UTC, Succeeded" id="base-ui-_r_19_" style={{gridColumnStart: "1"}}>
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 28, 19:30 UTC, Succeeded" id="base-ui-_r_19_" style={{gridColumnStart: "1"}}>
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "94.9495%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 28, 20:30 UTC, Succeeded" id="base-ui-_r_1b_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 28, 20:30 UTC, Succeeded" id="base-ui-_r_1b_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "74.7475%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 28, 21:30 UTC, Succeeded" id="base-ui-_r_1d_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 28, 21:30 UTC, Succeeded" id="base-ui-_r_1d_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "85.8586%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 28, 22:30 UTC, Succeeded" id="base-ui-_r_1f_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 28, 22:30 UTC, Succeeded" id="base-ui-_r_1f_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "96.633%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 28, 23:30 UTC, Succeeded" id="base-ui-_r_1h_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 28, 23:30 UTC, Succeeded" id="base-ui-_r_1h_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "76.431%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 00:30 UTC, Succeeded" id="base-ui-_r_1j_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 00:30 UTC, Succeeded" id="base-ui-_r_1j_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "87.5421%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 01:30 UTC, Succeeded" id="base-ui-_r_1l_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 01:30 UTC, Succeeded" id="base-ui-_r_1l_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "98.3165%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 02:30 UTC, Succeeded" id="base-ui-_r_1n_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 02:30 UTC, Succeeded" id="base-ui-_r_1n_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "78.1145%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 03:30 UTC, Succeeded" id="base-ui-_r_1p_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 03:30 UTC, Succeeded" id="base-ui-_r_1p_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "89.2256%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 04:30 UTC, Succeeded" id="base-ui-_r_1r_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 04:30 UTC, Succeeded" id="base-ui-_r_1r_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "100%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 05:30 UTC, Succeeded" id="base-ui-_r_1t_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 05:30 UTC, Succeeded" id="base-ui-_r_1t_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "79.798%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 06:30 UTC, Succeeded" id="base-ui-_r_1v_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 06:30 UTC, Succeeded" id="base-ui-_r_1v_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "90.9091%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 07:30 UTC, Succeeded" id="base-ui-_r_21_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 07:30 UTC, Succeeded" id="base-ui-_r_21_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "70.3704%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 08:30 UTC, Succeeded" id="base-ui-_r_23_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 08:30 UTC, Succeeded" id="base-ui-_r_23_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "81.4815%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 09:30 UTC, Succeeded" id="base-ui-_r_25_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 09:30 UTC, Succeeded" id="base-ui-_r_25_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "92.5926%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 10:30 UTC, Succeeded" id="base-ui-_r_27_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 10:30 UTC, Succeeded" id="base-ui-_r_27_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "72.0539%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 11:30 UTC, Failed" id="base-ui-_r_29_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 11:30 UTC, Failed" id="base-ui-_r_29_">
                     <span className="bg-destructive w-full" aria-hidden="true" style={{height: "84.8485%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 12:05 UTC, Failed" id="base-ui-_r_2b_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 12:05 UTC, Failed" id="base-ui-_r_2b_">
                     <span className="bg-destructive w-full" aria-hidden="true" style={{height: "84.8485%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 12:30 UTC, Failed" id="base-ui-_r_2d_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 12:30 UTC, Failed" id="base-ui-_r_2d_">
                     <span className="bg-destructive w-full" aria-hidden="true" style={{height: "84.8485%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="0" aria-label="Sep 29, 13:30 UTC, Failed" id="base-ui-_r_2f_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={0} aria-label="Sep 29, 13:30 UTC, Failed" id="base-ui-_r_2f_">
                     <span className="bg-destructive w-full" aria-hidden="true" style={{height: "84.8485%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
@@ -535,102 +535,102 @@ export function Pattern() {
                 </div>
                 <div className="-mx-0.5 @3xl/runs:-mx-0.75 @3xl/runs:basis-0 @3xl/runs:flex-1 @3xl/runs:order-none basis-full grid grid-cols-20 group/strip h-10 min-w-0 order-last" role="group" aria-label="Rebuild merchant search index, last 20 runs, oldest first: 90.0% succeeded">
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 10, 03:30 UTC, Succeeded" id="base-ui-_r_2h_" style={{gridColumnStart: "1"}}>
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 10, 03:30 UTC, Succeeded" id="base-ui-_r_2h_" style={{gridColumnStart: "1"}}>
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "74.6667%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 11, 03:30 UTC, Succeeded" id="base-ui-_r_2j_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 11, 03:30 UTC, Succeeded" id="base-ui-_r_2j_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "85%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 12, 03:30 UTC, Succeeded" id="base-ui-_r_2l_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 12, 03:30 UTC, Succeeded" id="base-ui-_r_2l_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "65.9444%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 13, 03:30 UTC, Succeeded" id="base-ui-_r_2n_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 13, 03:30 UTC, Succeeded" id="base-ui-_r_2n_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "76.2778%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 14, 03:30 UTC, Succeeded" id="base-ui-_r_2p_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 14, 03:30 UTC, Succeeded" id="base-ui-_r_2p_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "86.5833%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 15, 03:30 UTC, Succeeded" id="base-ui-_r_2r_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 15, 03:30 UTC, Succeeded" id="base-ui-_r_2r_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "67.5278%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 16, 03:30 UTC, Succeeded" id="base-ui-_r_2t_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 16, 03:30 UTC, Succeeded" id="base-ui-_r_2t_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "77.8611%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 17, 03:30 UTC, Succeeded" id="base-ui-_r_2v_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 17, 03:30 UTC, Succeeded" id="base-ui-_r_2v_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "88.1944%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 18, 03:30 UTC, Succeeded" id="base-ui-_r_31_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 18, 03:30 UTC, Succeeded" id="base-ui-_r_31_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "69.1111%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 19, 03:30 UTC, Succeeded" id="base-ui-_r_33_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 19, 03:30 UTC, Succeeded" id="base-ui-_r_33_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "79.4444%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 20, 03:30 UTC, Succeeded" id="base-ui-_r_35_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 20, 03:30 UTC, Succeeded" id="base-ui-_r_35_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "89.7778%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 21, 03:30 UTC, Succeeded" id="base-ui-_r_37_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 21, 03:30 UTC, Succeeded" id="base-ui-_r_37_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "70.6944%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 22, 03:30 UTC, Succeeded" id="base-ui-_r_39_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 22, 03:30 UTC, Succeeded" id="base-ui-_r_39_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "81.0278%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 23, 03:30 UTC, Succeeded" id="base-ui-_r_3b_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 23, 03:30 UTC, Succeeded" id="base-ui-_r_3b_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "91.3611%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 24, 03:30 UTC, Succeeded" id="base-ui-_r_3d_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 24, 03:30 UTC, Succeeded" id="base-ui-_r_3d_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "72.3056%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 25, 03:30 UTC, Succeeded" id="base-ui-_r_3f_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 25, 03:30 UTC, Succeeded" id="base-ui-_r_3f_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "82.6111%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 26, 03:30 UTC, Succeeded" id="base-ui-_r_3h_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 26, 03:30 UTC, Succeeded" id="base-ui-_r_3h_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "92.9444%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 27, 03:30 UTC, Succeeded" id="base-ui-_r_3j_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 27, 03:30 UTC, Succeeded" id="base-ui-_r_3j_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "73.8889%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 28, 03:30 UTC, Timed Out" id="base-ui-_r_3l_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 28, 03:30 UTC, Timed Out" id="base-ui-_r_3l_">
                     <span className="bg-warning w-full" aria-hidden="true" style={{height: "100%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="0" aria-label="Sep 29, 03:30 UTC, Timed Out" id="base-ui-_r_3n_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={0} aria-label="Sep 29, 03:30 UTC, Timed Out" id="base-ui-_r_3n_">
                     <span className="bg-warning w-full" aria-hidden="true" style={{height: "100%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
@@ -672,102 +672,102 @@ export function Pattern() {
                 </div>
                 <div className="-mx-0.5 @3xl/runs:-mx-0.75 @3xl/runs:basis-0 @3xl/runs:flex-1 @3xl/runs:order-none basis-full grid grid-cols-20 group/strip h-10 min-w-0 order-last" role="group" aria-label="Expire stale payout holds, last 20 runs, oldest first: 100.0% succeeded">
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 09:30 UTC, Succeeded" id="base-ui-_r_3p_" style={{gridColumnStart: "1"}}>
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 09:30 UTC, Succeeded" id="base-ui-_r_3p_" style={{gridColumnStart: "1"}}>
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "71.4286%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 09:45 UTC, Succeeded" id="base-ui-_r_3r_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 09:45 UTC, Succeeded" id="base-ui-_r_3r_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "85.7143%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 10:00 UTC, Succeeded" id="base-ui-_r_3t_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 10:00 UTC, Succeeded" id="base-ui-_r_3t_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "95.2381%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 10:15 UTC, Succeeded" id="base-ui-_r_3v_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 10:15 UTC, Succeeded" id="base-ui-_r_3v_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "76.1905%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 10:30 UTC, Succeeded" id="base-ui-_r_41_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 10:30 UTC, Succeeded" id="base-ui-_r_41_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "85.7143%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 10:45 UTC, Succeeded" id="base-ui-_r_43_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 10:45 UTC, Succeeded" id="base-ui-_r_43_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "95.2381%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 11:00 UTC, Succeeded" id="base-ui-_r_45_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 11:00 UTC, Succeeded" id="base-ui-_r_45_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "76.1905%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 11:15 UTC, Succeeded" id="base-ui-_r_47_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 11:15 UTC, Succeeded" id="base-ui-_r_47_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "85.7143%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 11:30 UTC, Succeeded" id="base-ui-_r_49_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 11:30 UTC, Succeeded" id="base-ui-_r_49_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "100%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 11:45 UTC, Skipped" id="base-ui-_r_4b_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 11:45 UTC, Skipped" id="base-ui-_r_4b_">
                     <span className="bg-info/40 dark:bg-info/70 w-full" aria-hidden="true" style={{height: "12%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 12:00 UTC, Succeeded" id="base-ui-_r_4d_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 12:00 UTC, Succeeded" id="base-ui-_r_4d_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "90.4762%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 12:15 UTC, Succeeded" id="base-ui-_r_4f_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 12:15 UTC, Succeeded" id="base-ui-_r_4f_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "100%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 12:30 UTC, Succeeded" id="base-ui-_r_4h_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 12:30 UTC, Succeeded" id="base-ui-_r_4h_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "80.9524%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 12:45 UTC, Succeeded" id="base-ui-_r_4j_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 12:45 UTC, Succeeded" id="base-ui-_r_4j_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "90.4762%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 13:00 UTC, Succeeded" id="base-ui-_r_4l_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 13:00 UTC, Succeeded" id="base-ui-_r_4l_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "71.4286%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 13:15 UTC, Succeeded" id="base-ui-_r_4n_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 13:15 UTC, Succeeded" id="base-ui-_r_4n_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "80.9524%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 13:30 UTC, Succeeded" id="base-ui-_r_4p_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 13:30 UTC, Succeeded" id="base-ui-_r_4p_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "90.4762%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 13:45 UTC, Succeeded" id="base-ui-_r_4r_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 13:45 UTC, Succeeded" id="base-ui-_r_4r_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "71.4286%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 14:00 UTC, Succeeded" id="base-ui-_r_4t_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 14:00 UTC, Succeeded" id="base-ui-_r_4t_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "80.9524%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="0" aria-label="Sep 29, 14:15 UTC, Succeeded" id="base-ui-_r_4v_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={0} aria-label="Sep 29, 14:15 UTC, Succeeded" id="base-ui-_r_4v_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "95.2381%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
@@ -809,102 +809,102 @@ export function Pattern() {
                 </div>
                 <div className="-mx-0.5 @3xl/runs:-mx-0.75 @3xl/runs:basis-0 @3xl/runs:flex-1 @3xl/runs:order-none basis-full grid grid-cols-20 group/strip h-10 min-w-0 order-last" role="group" aria-label="Retry failed payouts, last 20 runs, oldest first: 95.0% succeeded">
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 04:30 UTC, Succeeded" id="base-ui-_r_51_" style={{gridColumnStart: "1"}}>
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 04:30 UTC, Succeeded" id="base-ui-_r_51_" style={{gridColumnStart: "1"}}>
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "77.9661%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 05:00 UTC, Succeeded" id="base-ui-_r_53_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 05:00 UTC, Succeeded" id="base-ui-_r_53_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "88.9831%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 05:30 UTC, Succeeded" id="base-ui-_r_55_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 05:30 UTC, Succeeded" id="base-ui-_r_55_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "100%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 06:00 UTC, Succeeded" id="base-ui-_r_57_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 06:00 UTC, Succeeded" id="base-ui-_r_57_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "79.661%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 06:30 UTC, Succeeded" id="base-ui-_r_59_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 06:30 UTC, Succeeded" id="base-ui-_r_59_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "90.678%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 07:00 UTC, Succeeded" id="base-ui-_r_5b_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 07:00 UTC, Succeeded" id="base-ui-_r_5b_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "70.339%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 07:30 UTC, Succeeded" id="base-ui-_r_5d_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 07:30 UTC, Succeeded" id="base-ui-_r_5d_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "81.3559%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 08:00 UTC, Succeeded" id="base-ui-_r_5f_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 08:00 UTC, Succeeded" id="base-ui-_r_5f_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "92.3729%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 08:30 UTC, Failed" id="base-ui-_r_5h_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 08:30 UTC, Failed" id="base-ui-_r_5h_">
                     <span className="bg-destructive w-full" aria-hidden="true" style={{height: "84.7458%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 09:00 UTC, Succeeded" id="base-ui-_r_5j_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 09:00 UTC, Succeeded" id="base-ui-_r_5j_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "83.0508%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 09:30 UTC, Succeeded" id="base-ui-_r_5l_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 09:30 UTC, Succeeded" id="base-ui-_r_5l_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "94.0678%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 10:00 UTC, Succeeded" id="base-ui-_r_5n_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 10:00 UTC, Succeeded" id="base-ui-_r_5n_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "73.7288%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 10:30 UTC, Succeeded" id="base-ui-_r_5p_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 10:30 UTC, Succeeded" id="base-ui-_r_5p_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "84.7458%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 11:00 UTC, Succeeded" id="base-ui-_r_5r_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 11:00 UTC, Succeeded" id="base-ui-_r_5r_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "95.7627%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 11:30 UTC, Succeeded" id="base-ui-_r_5t_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 11:30 UTC, Succeeded" id="base-ui-_r_5t_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "75.4237%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 12:00 UTC, Succeeded" id="base-ui-_r_5v_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 12:00 UTC, Succeeded" id="base-ui-_r_5v_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "86.4407%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 12:30 UTC, Succeeded" id="base-ui-_r_61_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 12:30 UTC, Succeeded" id="base-ui-_r_61_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "97.4576%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 13:00 UTC, Succeeded" id="base-ui-_r_63_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 13:00 UTC, Succeeded" id="base-ui-_r_63_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "77.1186%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 29, 13:30 UTC, Succeeded" id="base-ui-_r_65_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 29, 13:30 UTC, Succeeded" id="base-ui-_r_65_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "88.1356%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="0" aria-label="Sep 29, 14:00 UTC, Succeeded" id="base-ui-_r_67_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={0} aria-label="Sep 29, 14:00 UTC, Succeeded" id="base-ui-_r_67_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "99.1525%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
@@ -949,102 +949,102 @@ export function Pattern() {
                 </div>
                 <div className="-mx-0.5 @3xl/runs:-mx-0.75 @3xl/runs:basis-0 @3xl/runs:flex-1 @3xl/runs:order-none basis-full grid grid-cols-20 group/strip h-10 min-w-0 order-last" role="group" aria-label="Compact ledger partitions, last 20 runs, oldest first: 100.0% succeeded">
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="May 10, 03:00 UTC, Succeeded" id="base-ui-_r_69_" style={{gridColumnStart: "1"}}>
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="May 10, 03:00 UTC, Succeeded" id="base-ui-_r_69_" style={{gridColumnStart: "1"}}>
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "96.605%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="May 17, 03:00 UTC, Succeeded" id="base-ui-_r_6b_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="May 17, 03:00 UTC, Succeeded" id="base-ui-_r_6b_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "76.0837%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="May 24, 03:00 UTC, Succeeded" id="base-ui-_r_6d_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="May 24, 03:00 UTC, Succeeded" id="base-ui-_r_6d_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "87.1779%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="May 31, 03:00 UTC, Succeeded" id="base-ui-_r_6f_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="May 31, 03:00 UTC, Succeeded" id="base-ui-_r_6f_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "98.3025%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Jun 7, 03:00 UTC, Succeeded" id="base-ui-_r_6h_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Jun 7, 03:00 UTC, Succeeded" id="base-ui-_r_6h_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "77.7811%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Jun 14, 03:00 UTC, Succeeded" id="base-ui-_r_6j_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Jun 14, 03:00 UTC, Succeeded" id="base-ui-_r_6j_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "88.9057%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Jun 21, 03:00 UTC, Succeeded" id="base-ui-_r_6l_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Jun 21, 03:00 UTC, Succeeded" id="base-ui-_r_6l_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "100%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Jun 28, 03:00 UTC, Succeeded" id="base-ui-_r_6n_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Jun 28, 03:00 UTC, Succeeded" id="base-ui-_r_6n_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "79.5089%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Jul 5, 03:00 UTC, Succeeded" id="base-ui-_r_6p_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Jul 5, 03:00 UTC, Succeeded" id="base-ui-_r_6p_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "90.6032%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Jul 12, 03:00 UTC, Succeeded" id="base-ui-_r_6r_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Jul 12, 03:00 UTC, Succeeded" id="base-ui-_r_6r_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "70.0818%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Jul 19, 03:00 UTC, Succeeded" id="base-ui-_r_6t_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Jul 19, 03:00 UTC, Succeeded" id="base-ui-_r_6t_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "81.2064%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Jul 26, 03:00 UTC, Succeeded" id="base-ui-_r_6v_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Jul 26, 03:00 UTC, Succeeded" id="base-ui-_r_6v_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "92.331%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Aug 2, 03:00 UTC, Succeeded" id="base-ui-_r_71_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Aug 2, 03:00 UTC, Succeeded" id="base-ui-_r_71_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "71.8096%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Aug 9, 03:00 UTC, Succeeded" id="base-ui-_r_73_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Aug 9, 03:00 UTC, Succeeded" id="base-ui-_r_73_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "82.9039%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Aug 16, 03:00 UTC, Succeeded" id="base-ui-_r_75_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Aug 16, 03:00 UTC, Succeeded" id="base-ui-_r_75_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "94.0285%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Aug 23, 03:00 UTC, Succeeded" id="base-ui-_r_77_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Aug 23, 03:00 UTC, Succeeded" id="base-ui-_r_77_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "73.5071%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Aug 30, 03:00 UTC, Succeeded" id="base-ui-_r_79_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Aug 30, 03:00 UTC, Succeeded" id="base-ui-_r_79_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "84.6317%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 6, 03:00 UTC, Succeeded" id="base-ui-_r_7b_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 6, 03:00 UTC, Succeeded" id="base-ui-_r_7b_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "95.726%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 13, 03:00 UTC, Succeeded" id="base-ui-_r_7d_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 13, 03:00 UTC, Succeeded" id="base-ui-_r_7d_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "75.2349%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="0" aria-label="Sep 20, 03:00 UTC, Succeeded" id="base-ui-_r_7f_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={0} aria-label="Sep 20, 03:00 UTC, Succeeded" id="base-ui-_r_7f_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "86.3292%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
@@ -1086,102 +1086,102 @@ export function Pattern() {
                 </div>
                 <div className="-mx-0.5 @3xl/runs:-mx-0.75 @3xl/runs:basis-0 @3xl/runs:flex-1 @3xl/runs:order-none basis-full grid grid-cols-20 group/strip h-10 min-w-0 order-last" role="group" aria-label="Rotate webhook signing keys, last 20 runs, oldest first: 100.0% succeeded">
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="May 18, 04:00 UTC, Succeeded" id="base-ui-_r_7h_" style={{gridColumnStart: "1"}}>
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="May 18, 04:00 UTC, Succeeded" id="base-ui-_r_7h_" style={{gridColumnStart: "1"}}>
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "75%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="May 25, 04:00 UTC, Succeeded" id="base-ui-_r_7j_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="May 25, 04:00 UTC, Succeeded" id="base-ui-_r_7j_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "85.4167%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Jun 1, 04:00 UTC, Succeeded" id="base-ui-_r_7l_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Jun 1, 04:00 UTC, Succeeded" id="base-ui-_r_7l_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "95.8333%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Jun 8, 04:00 UTC, Succeeded" id="base-ui-_r_7n_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Jun 8, 04:00 UTC, Succeeded" id="base-ui-_r_7n_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "75%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Jun 15, 04:00 UTC, Succeeded" id="base-ui-_r_7p_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Jun 15, 04:00 UTC, Succeeded" id="base-ui-_r_7p_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "87.5%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Jun 22, 04:00 UTC, Succeeded" id="base-ui-_r_7r_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Jun 22, 04:00 UTC, Succeeded" id="base-ui-_r_7r_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "97.9167%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Jun 29, 04:00 UTC, Succeeded" id="base-ui-_r_7t_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Jun 29, 04:00 UTC, Succeeded" id="base-ui-_r_7t_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "77.0833%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Jul 6, 04:00 UTC, Succeeded" id="base-ui-_r_7v_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Jul 6, 04:00 UTC, Succeeded" id="base-ui-_r_7v_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "89.5833%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Jul 13, 04:00 UTC, Succeeded" id="base-ui-_r_81_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Jul 13, 04:00 UTC, Succeeded" id="base-ui-_r_81_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "100%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Jul 20, 04:00 UTC, Succeeded" id="base-ui-_r_83_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Jul 20, 04:00 UTC, Succeeded" id="base-ui-_r_83_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "79.1667%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Jul 27, 04:00 UTC, Succeeded" id="base-ui-_r_85_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Jul 27, 04:00 UTC, Succeeded" id="base-ui-_r_85_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "89.5833%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Aug 3, 04:00 UTC, Succeeded" id="base-ui-_r_87_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Aug 3, 04:00 UTC, Succeeded" id="base-ui-_r_87_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "70.8333%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Aug 10, 04:00 UTC, Succeeded" id="base-ui-_r_89_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Aug 10, 04:00 UTC, Succeeded" id="base-ui-_r_89_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "81.25%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Aug 17, 04:00 UTC, Succeeded" id="base-ui-_r_8b_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Aug 17, 04:00 UTC, Succeeded" id="base-ui-_r_8b_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "91.6667%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Aug 24, 04:00 UTC, Succeeded" id="base-ui-_r_8d_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Aug 24, 04:00 UTC, Succeeded" id="base-ui-_r_8d_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "70.8333%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Aug 31, 04:00 UTC, Succeeded" id="base-ui-_r_8f_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Aug 31, 04:00 UTC, Succeeded" id="base-ui-_r_8f_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "83.3333%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 7, 04:00 UTC, Succeeded" id="base-ui-_r_8h_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 7, 04:00 UTC, Succeeded" id="base-ui-_r_8h_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "93.75%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 14, 04:00 UTC, Succeeded" id="base-ui-_r_8j_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 14, 04:00 UTC, Succeeded" id="base-ui-_r_8j_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "72.9167%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="-1" aria-label="Sep 21, 04:00 UTC, Succeeded" id="base-ui-_r_8l_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={-1} aria-label="Sep 21, 04:00 UTC, Succeeded" id="base-ui-_r_8l_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "85.4167%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>
                   <HoverCard>
-                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex="0" aria-label="Sep 28, 04:00 UTC, Succeeded" id="base-ui-_r_8n_">
+                  <HoverCardTrigger className="@3xl/runs:px-0.75 duration-150 flex focus-visible:opacity-100 focus-visible:outline-2 focus-visible:outline-ring/50 group-hover/strip:opacity-40 h-full hover:opacity-100 items-end min-w-0 motion-reduce:transition-none px-0.5 transition-opacity" type="button" tabIndex={0} aria-label="Sep 28, 04:00 UTC, Succeeded" id="base-ui-_r_8n_">
                     <span className="bg-success/40 w-full" aria-hidden="true" style={{height: "95.8333%"}}></span>
                   </HoverCardTrigger>
                   </HoverCard>

@@ -29,21 +29,21 @@ export function Pattern() {
     <main className="flex items-center justify-center md:p-12 min-h-svh p-6 sm:p-10 w-full">
       <div className="flex items-center justify-center min-h-[360px]">
         <Sheet>
-        <SheetTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-lg cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
+        <SheetTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-lg cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
           {"Open Track Shipping"}
         </SheetTrigger>
         </Sheet>
       </div>
     </main>
     <Sheet>
-    <SheetContent className="flex flex-col gap-0 h-[calc(100svh-2rem)] inset-y-4 left-auto max-w-none outline-none overflow-hidden p-0 right-4 rounded-xl w-[min(48rem,calc(100vw-2rem))]" data-open="" tabIndex="-1" baseUiFocusable="" id="_r_0_" role="dialog" data-side="right" aria-labelledby="base-ui-_r_3_" aria-describedby="base-ui-_r_4_" style={{"--nested-dialogs": "0"}}>
+    <SheetContent className="flex flex-col gap-0 h-[calc(100svh-2rem)] inset-y-4 left-auto max-w-none outline-none overflow-hidden p-0 right-4 rounded-xl w-[min(48rem,calc(100vw-2rem))]" data-open="" tabIndex={-1} baseUiFocusable="" id="_r_0_" role="dialog" data-side="right" aria-labelledby="base-ui-_r_3_" aria-describedby="base-ui-_r_4_" style={{"--nested-dialogs": "0"}}>
       <SheetHeader className="border-b gap-0 p-0 shrink-0">
         <div className="border-b flex gap-2 items-center justify-between min-h-11 px-4">
           <SheetTitle className="font-medium leading-5 text-sm truncate" id="base-ui-_r_3_">
             {"Track Shipping"}
           </SheetTitle>
-          <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Close sheet">
-            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+          <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Close sheet">
+            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
               <path d="M18 6 6 18"></path>
               <path d="m6 6 12 12"></path>
             </svg>
@@ -79,10 +79,10 @@ export function Pattern() {
             </p>
           </div>
           <div className="flex gap-2 items-center shrink-0">
-            <Button href="#cancel-order" role="button" tabIndex="0">
+            <Button href="#cancel-order" role="button" tabIndex={0}>
               {"Cancel Order"}
             </Button>
-            <Button type="button" tabIndex="0">
+            <Button type="button" tabIndex={0}>
               {"Notify Customer"}
             </Button>
           </div>
@@ -90,7 +90,7 @@ export function Pattern() {
       </SheetHeader>
       <div className="flex-1 min-h-0">
         <ScrollArea className="h-full" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}} hasOverflowY="" overflowYEnd="">
-          <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_5_-viewport" tabIndex="0" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "139px"}} data-has-overflow-y="" data-overflow-y-end="">
+          <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_5_-viewport" tabIndex={0} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "139px"}} data-has-overflow-y="" data-overflow-y-end="">
             <div className="flex flex-col gap-3 px-4 py-4">
               <Frame className="w-full" spacing="sm">
                 <FramePanel className="flex flex-col gap-4 shadow-none!">
@@ -112,8 +112,8 @@ export function Pattern() {
                     </Timeline>
                     <div className="bg-background border border-border gap-2 inline-flex items-center px-2.5 py-1 rounded-md">
                       <svg className="h-3 w-auto" viewBox="0 0 40 12" role="img" aria-label="DHL" shape-rendering="geometricPrecision">
-                        <rect width="40" height="12" rx="1.5" fill="#FFCC00"></rect>
-                        <text x="3" y="9.4" fontFamily="Arial Black, Arial, Helvetica, sans-serif" fontSize="8" fontWeight="900" font-style="italic" letter-spacing="-0.2" fill="#D40511">
+                        <rect width={40} height={12} rx={1.5} fill="#FFCC00"></rect>
+                        <text x={3} y={9.4} fontFamily="Arial Black, Arial, Helvetica, sans-serif" fontSize="8" fontWeight="900" font-style="italic" letter-spacing="-0.2" fill="#D40511">
                           {"DHL"}
                         </text>
                         <g fill="#D40511">
@@ -137,7 +137,7 @@ export function Pattern() {
                     <div className="gap-2 grid grid-cols-4">
                       <div className="flex gap-1.5 items-center text-xs">
                         <span className="bg-emerald-500 inline-flex items-center justify-center rounded-full shrink-0 size-4 text-white" aria-hidden="true">
-                          <svg className="lucide lucide-check size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                          <svg className="lucide lucide-check size-2.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                             <path d="M20 6 9 17l-5-5"></path>
                           </svg>
                         </span>
@@ -147,7 +147,7 @@ export function Pattern() {
                       </div>
                       <div className="flex gap-1.5 items-center text-xs">
                         <span className="bg-emerald-500 inline-flex items-center justify-center rounded-full shrink-0 size-4 text-white" aria-hidden="true">
-                          <svg className="lucide lucide-check size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                          <svg className="lucide lucide-check size-2.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                             <path d="M20 6 9 17l-5-5"></path>
                           </svg>
                         </span>
@@ -157,7 +157,7 @@ export function Pattern() {
                       </div>
                       <div className="flex gap-1.5 items-center text-xs">
                         <span className="border-2 border-emerald-500 inline-flex items-center justify-center rounded-full shrink-0 size-4 text-emerald-500" aria-hidden="true">
-                          <svg className="lucide lucide-check size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                          <svg className="lucide lucide-check size-2.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                             <path d="M20 6 9 17l-5-5"></path>
                           </svg>
                         </span>
@@ -245,9 +245,9 @@ export function Pattern() {
                             {"Shipment information received by seller"}
                           </p>
                           <p className="gap-1 inline-flex items-center text-muted-foreground text-xs">
-                            <svg className="lucide lucide-map-pin size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MapPinIcon" tabler="IconMapPin" hugeicons="Location06Icon" phosphor="MapPinIcon" remixicon="RiMapPinLine" aria-hidden="true">
+                            <svg className="lucide lucide-map-pin size-3" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MapPinIcon" tabler="IconMapPin" hugeicons="Location06Icon" phosphor="MapPinIcon" remixicon="RiMapPinLine" aria-hidden="true">
                               <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
-                              <circle cx="12" cy="10" r="3"></circle>
+                              <circle cx={12} cy={10} r={3}></circle>
                             </svg>
                             {"Silicon Valley, CA"}
                           </p>
@@ -321,7 +321,7 @@ export function Pattern() {
         </ScrollArea>
       </div>
       <SheetFooter className="bg-muted/40 border-t px-4 py-3 shrink-0">
-        <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="button" tabIndex="0">
+        <SheetClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="button" tabIndex={0}>
           {"Close"}
         </SheetClose>
       </SheetFooter>

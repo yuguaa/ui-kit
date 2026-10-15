@@ -44,14 +44,14 @@ export function Pattern() {
               </h2>
             </div>
             <div className="flex flex-wrap gap-2 items-center md:justify-end md:w-auto w-full" role="group" aria-label="Board actions">
-              <Button type="button" tabIndex="0">
-                <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" data-icon="inline-start" aria-hidden="true">
+              <Button type="button" tabIndex={0}>
+                <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                 </svg>
                 {"Filters"}
               </Button>
-              <Button type="button" tabIndex="0">
-                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+              <Button type="button" tabIndex={0}>
+                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
@@ -62,16 +62,16 @@ export function Pattern() {
         </header>
         <Kanban className="max-w-full w-full" dragging="false">
           <ScrollArea className="pb-3 w-full" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}} hasOverflowX="" overflowXEnd="">
-            <div className="base-ui-disable-scrollbar focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-lg transition-[color,box-shadow] w-full" role="presentation" data-id="base-ui-_r_0_-viewport" tabIndex="0" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "412px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}} data-has-overflow-x="" data-overflow-x-end="">
+            <div className="base-ui-disable-scrollbar focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-lg transition-[color,box-shadow] w-full" role="presentation" data-id="base-ui-_r_0_-viewport" tabIndex={0} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "412px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}} data-has-overflow-x="" data-overflow-x-end="">
               <div className="min-w-max" role="presentation" style={{minWidth: "fit-content"}} data-has-overflow-x="" data-overflow-x-end="">
                 <KanbanBoard className="flex gap-5 items-start p-1 w-max">
                   <KanbanColumn className="self-start shrink-0 w-64" value="new" dragging="false">
                     <Card className="bg-muted/40 gap-0 group/column overflow-hidden p-0 w-full" size="sm" aria-label="New: New intake">
                       <CardHeader className="flex flex-row gap-2 items-center min-h-9 px-2 py-2">
                         <span className="[&>svg]:block [&>svg]:size-4 dark:text-sky-300 flex items-center justify-center leading-none shrink-0 size-4 text-sky-600" aria-hidden="true">
-                          <svg className="lucide lucide-circle-dot" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDotIcon" tabler="IconCircleDot" hugeicons="CircleIcon" phosphor="CircleIcon" remixicon="RiRecordCircleLine" aria-hidden="true">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <circle cx="12" cy="12" r="1"></circle>
+                          <svg className="lucide lucide-circle-dot" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleDotIcon" tabler="IconCircleDot" hugeicons="CircleIcon" phosphor="CircleIcon" remixicon="RiRecordCircleLine" aria-hidden="true">
+                            <circle cx={12} cy={12} r={10}></circle>
+                            <circle cx={12} cy={12} r={1}></circle>
                           </svg>
                         </span>
                         <div className="flex flex-1 gap-2 items-center min-w-0">
@@ -83,27 +83,27 @@ export function Pattern() {
                           </span>
                         </div>
                         <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
-                          <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex="0" aria-label="Add new ticket">
-                            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                          <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex={0} aria-label="Add new ticket">
+                            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                               <path d="M5 12h14"></path>
                               <path d="M12 5v14"></path>
                             </svg>
                           </Button>
-                          <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing bg-transparent border border-transparent cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/kanban-column:opacity-100 group/button hover:bg-background! hover:border-border! hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move New column">
-                            <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                              <circle cx="9" cy="12" r="1"></circle>
-                              <circle cx="9" cy="5" r="1"></circle>
-                              <circle cx="9" cy="19" r="1"></circle>
-                              <circle cx="15" cy="12" r="1"></circle>
-                              <circle cx="15" cy="5" r="1"></circle>
-                              <circle cx="15" cy="19" r="1"></circle>
+                          <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing bg-transparent border border-transparent cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/kanban-column:opacity-100 group/button hover:bg-background! hover:border-border! hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move New column">
+                            <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                              <circle cx={9} cy={12} r={1}></circle>
+                              <circle cx={9} cy={5} r={1}></circle>
+                              <circle cx={9} cy={19} r={1}></circle>
+                              <circle cx={15} cy={12} r={1}></circle>
+                              <circle cx={15} cy={5} r={1}></circle>
+                              <circle cx={15} cy={19} r={1}></circle>
                             </svg>
                           </KanbanColumnHandle>
                         </div>
                       </CardHeader>
                       <CardContent className="flex flex-col gap-3 pb-2 pt-0 px-2">
                         <KanbanColumnContent className="gap-3">
-                          <KanbanItem value="ticket-10482" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                          <KanbanItem value="ticket-10482" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                             <KanbanItemHandle className="block" dragging="false">
                               <Item className="bg-card border-amber-300/70 dark:border-amber-400/35 gap-3 hover:border-foreground/20 hover:shadow-sm items-stretch transition-[border-color,box-shadow]" variant="outline" size="sm">
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
@@ -139,8 +139,8 @@ export function Pattern() {
                                     </div>
                                   </div>
                                   <span className="bg-amber-50 border border-amber-300 dark:bg-amber-400/10 dark:border-amber-400/35 dark:text-amber-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-amber-800" aria-label="Response due in 1h 45m" title="Response due in 1h 45m">
-                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                                      <circle cx="12" cy="12" r="10"></circle>
+                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                                      <circle cx={12} cy={12} r={10}></circle>
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
@@ -151,7 +151,7 @@ export function Pattern() {
                               </Item>
                             </KanbanItemHandle>
                           </KanbanItem>
-                          <KanbanItem value="ticket-10483" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                          <KanbanItem value="ticket-10483" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                             <KanbanItemHandle className="block" dragging="false">
                               <Item className="bg-card gap-3 hover:border-foreground/20 hover:shadow-sm items-stretch transition-[border-color,box-shadow]" variant="outline" size="sm">
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
@@ -187,8 +187,8 @@ export function Pattern() {
                                     </div>
                                   </div>
                                   <span className="bg-sky-50 border border-sky-200 dark:bg-sky-500/10 dark:border-sky-500/30 dark:text-sky-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-sky-700" aria-label="Response due in 3h 20m" title="Response due in 3h 20m">
-                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                                      <circle cx="12" cy="12" r="10"></circle>
+                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                                      <circle cx={12} cy={12} r={10}></circle>
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
@@ -200,8 +200,8 @@ export function Pattern() {
                             </KanbanItemHandle>
                           </KanbanItem>
                         </KanbanColumnContent>
-                        <Button className="bg-transparent border border-transparent font-normal h-8 hover:bg-background! hover:border-border! hover:text-foreground px-2 text-muted-foreground w-full" type="button" tabIndex="0" aria-label="Add new ticket">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+                        <Button className="bg-transparent border border-transparent font-normal h-8 hover:bg-background! hover:border-border! hover:text-foreground px-2 text-muted-foreground w-full" type="button" tabIndex={0} aria-label="Add new ticket">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
@@ -214,7 +214,7 @@ export function Pattern() {
                     <Card className="bg-muted/40 gap-0 group/column overflow-hidden p-0 w-full" size="sm" aria-label="Needs Reply: Reply due">
                       <CardHeader className="flex flex-row gap-2 items-center min-h-9 px-2 py-2">
                         <span className="[&>svg]:block [&>svg]:size-4 dark:text-indigo-300 flex items-center justify-center leading-none shrink-0 size-4 text-indigo-600" aria-hidden="true">
-                          <svg className="lucide lucide-message-square" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareIcon" tabler="IconMessageDots" hugeicons="Message02Icon" phosphor="ChatIcon" remixicon="RiChat4Line" aria-hidden="true">
+                          <svg className="lucide lucide-message-square" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareIcon" tabler="IconMessageDots" hugeicons="Message02Icon" phosphor="ChatIcon" remixicon="RiChat4Line" aria-hidden="true">
                             <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                           </svg>
                         </span>
@@ -227,27 +227,27 @@ export function Pattern() {
                           </span>
                         </div>
                         <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
-                          <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex="0" aria-label="Add reply ticket">
-                            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                          <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex={0} aria-label="Add reply ticket">
+                            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                               <path d="M5 12h14"></path>
                               <path d="M12 5v14"></path>
                             </svg>
                           </Button>
-                          <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing bg-transparent border border-transparent cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/kanban-column:opacity-100 group/button hover:bg-background! hover:border-border! hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Needs Reply column">
-                            <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                              <circle cx="9" cy="12" r="1"></circle>
-                              <circle cx="9" cy="5" r="1"></circle>
-                              <circle cx="9" cy="19" r="1"></circle>
-                              <circle cx="15" cy="12" r="1"></circle>
-                              <circle cx="15" cy="5" r="1"></circle>
-                              <circle cx="15" cy="19" r="1"></circle>
+                          <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing bg-transparent border border-transparent cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/kanban-column:opacity-100 group/button hover:bg-background! hover:border-border! hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Needs Reply column">
+                            <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                              <circle cx={9} cy={12} r={1}></circle>
+                              <circle cx={9} cy={5} r={1}></circle>
+                              <circle cx={9} cy={19} r={1}></circle>
+                              <circle cx={15} cy={12} r={1}></circle>
+                              <circle cx={15} cy={5} r={1}></circle>
+                              <circle cx={15} cy={19} r={1}></circle>
                             </svg>
                           </KanbanColumnHandle>
                         </div>
                       </CardHeader>
                       <CardContent className="flex flex-col gap-3 pb-2 pt-0 px-2">
                         <KanbanColumnContent className="gap-3">
-                          <KanbanItem value="ticket-10451" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                          <KanbanItem value="ticket-10451" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                             <KanbanItemHandle className="block" dragging="false">
                               <Item className="bg-card border-amber-300/70 dark:border-amber-400/35 gap-3 hover:border-foreground/20 hover:shadow-sm items-stretch transition-[border-color,box-shadow]" variant="outline" size="sm">
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
@@ -283,8 +283,8 @@ export function Pattern() {
                                     </div>
                                   </div>
                                   <span className="bg-amber-50 border border-amber-300 dark:bg-amber-400/10 dark:border-amber-400/35 dark:text-amber-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-amber-800" aria-label="Response due in 52m" title="Response due in 52m">
-                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                                      <circle cx="12" cy="12" r="10"></circle>
+                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                                      <circle cx={12} cy={12} r={10}></circle>
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
@@ -295,7 +295,7 @@ export function Pattern() {
                               </Item>
                             </KanbanItemHandle>
                           </KanbanItem>
-                          <KanbanItem value="ticket-10459" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                          <KanbanItem value="ticket-10459" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                             <KanbanItemHandle className="block" dragging="false">
                               <Item className="bg-card gap-3 hover:border-foreground/20 hover:shadow-sm items-stretch transition-[border-color,box-shadow]" variant="outline" size="sm">
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
@@ -331,8 +331,8 @@ export function Pattern() {
                                     </div>
                                   </div>
                                   <span className="bg-sky-50 border border-sky-200 dark:bg-sky-500/10 dark:border-sky-500/30 dark:text-sky-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-sky-700" aria-label="Response due in 4h 05m" title="Response due in 4h 05m">
-                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                                      <circle cx="12" cy="12" r="10"></circle>
+                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                                      <circle cx={12} cy={12} r={10}></circle>
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
@@ -343,7 +343,7 @@ export function Pattern() {
                               </Item>
                             </KanbanItemHandle>
                           </KanbanItem>
-                          <KanbanItem value="ticket-10466" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                          <KanbanItem value="ticket-10466" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                             <KanbanItemHandle className="block" dragging="false">
                               <Item className="bg-card gap-3 hover:border-foreground/20 hover:shadow-sm items-stretch transition-[border-color,box-shadow]" variant="outline" size="sm">
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
@@ -379,8 +379,8 @@ export function Pattern() {
                                     </div>
                                   </div>
                                   <span className="bg-sky-50 border border-sky-200 dark:bg-sky-500/10 dark:border-sky-500/30 dark:text-sky-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-sky-700" aria-label="Response due in 7h 10m" title="Response due in 7h 10m">
-                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                                      <circle cx="12" cy="12" r="10"></circle>
+                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                                      <circle cx={12} cy={12} r={10}></circle>
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
@@ -392,8 +392,8 @@ export function Pattern() {
                             </KanbanItemHandle>
                           </KanbanItem>
                         </KanbanColumnContent>
-                        <Button className="bg-transparent border border-transparent font-normal h-8 hover:bg-background! hover:border-border! hover:text-foreground px-2 text-muted-foreground w-full" type="button" tabIndex="0" aria-label="Add reply ticket">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+                        <Button className="bg-transparent border border-transparent font-normal h-8 hover:bg-background! hover:border-border! hover:text-foreground px-2 text-muted-foreground w-full" type="button" tabIndex={0} aria-label="Add reply ticket">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
@@ -406,7 +406,7 @@ export function Pattern() {
                     <Card className="bg-muted/40 gap-0 group/column overflow-hidden p-0 w-full" size="sm" aria-label="Engineering: Escalated handoff">
                       <CardHeader className="flex flex-row gap-2 items-center min-h-9 px-2 py-2">
                         <span className="[&>svg]:block [&>svg]:size-4 dark:text-violet-300 flex items-center justify-center leading-none shrink-0 size-4 text-violet-600" aria-hidden="true">
-                          <svg className="lucide lucide-wrench" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="WrenchIcon" tabler="IconTool" hugeicons="Wrench01Icon" phosphor="WrenchIcon" remixicon="RiToolsLine" aria-hidden="true">
+                          <svg className="lucide lucide-wrench" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="WrenchIcon" tabler="IconTool" hugeicons="Wrench01Icon" phosphor="WrenchIcon" remixicon="RiToolsLine" aria-hidden="true">
                             <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"></path>
                           </svg>
                         </span>
@@ -419,27 +419,27 @@ export function Pattern() {
                           </span>
                         </div>
                         <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
-                          <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex="0" aria-label="Add engineering ticket">
-                            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                          <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex={0} aria-label="Add engineering ticket">
+                            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                               <path d="M5 12h14"></path>
                               <path d="M12 5v14"></path>
                             </svg>
                           </Button>
-                          <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing bg-transparent border border-transparent cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/kanban-column:opacity-100 group/button hover:bg-background! hover:border-border! hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Engineering column">
-                            <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                              <circle cx="9" cy="12" r="1"></circle>
-                              <circle cx="9" cy="5" r="1"></circle>
-                              <circle cx="9" cy="19" r="1"></circle>
-                              <circle cx="15" cy="12" r="1"></circle>
-                              <circle cx="15" cy="5" r="1"></circle>
-                              <circle cx="15" cy="19" r="1"></circle>
+                          <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing bg-transparent border border-transparent cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/kanban-column:opacity-100 group/button hover:bg-background! hover:border-border! hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Engineering column">
+                            <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                              <circle cx={9} cy={12} r={1}></circle>
+                              <circle cx={9} cy={5} r={1}></circle>
+                              <circle cx={9} cy={19} r={1}></circle>
+                              <circle cx={15} cy={12} r={1}></circle>
+                              <circle cx={15} cy={5} r={1}></circle>
+                              <circle cx={15} cy={19} r={1}></circle>
                             </svg>
                           </KanbanColumnHandle>
                         </div>
                       </CardHeader>
                       <CardContent className="flex flex-col gap-3 pb-2 pt-0 px-2">
                         <KanbanColumnContent className="gap-3">
-                          <KanbanItem value="ticket-10392" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                          <KanbanItem value="ticket-10392" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                             <KanbanItemHandle className="block" dragging="false">
                               <Item className="bg-red-50/20 border-red-300/90 dark:bg-red-950/10 dark:border-red-400/40 gap-3 hover:border-foreground/20 hover:shadow-sm items-stretch transition-[border-color,box-shadow]" variant="outline" size="sm">
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
@@ -475,8 +475,8 @@ export function Pattern() {
                                     </div>
                                   </div>
                                   <span className="bg-red-50 border border-red-300 dark:bg-red-400/10 dark:border-red-400/35 dark:text-red-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-red-700" aria-label="Breach risk in 36m" title="Breach risk in 36m">
-                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                                      <circle cx="12" cy="12" r="10"></circle>
+                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                                      <circle cx={12} cy={12} r={10}></circle>
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
@@ -487,7 +487,7 @@ export function Pattern() {
                               </Item>
                             </KanbanItemHandle>
                           </KanbanItem>
-                          <KanbanItem value="ticket-10410" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                          <KanbanItem value="ticket-10410" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                             <KanbanItemHandle className="block" dragging="false">
                               <Item className="bg-card border-amber-300/70 dark:border-amber-400/35 gap-3 hover:border-foreground/20 hover:shadow-sm items-stretch transition-[border-color,box-shadow]" variant="outline" size="sm">
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
@@ -523,8 +523,8 @@ export function Pattern() {
                                     </div>
                                   </div>
                                   <span className="bg-amber-50 border border-amber-300 dark:bg-amber-400/10 dark:border-amber-400/35 dark:text-amber-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-amber-800" aria-label="Response due in 2h 15m" title="Response due in 2h 15m">
-                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                                      <circle cx="12" cy="12" r="10"></circle>
+                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                                      <circle cx={12} cy={12} r={10}></circle>
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
@@ -536,8 +536,8 @@ export function Pattern() {
                             </KanbanItemHandle>
                           </KanbanItem>
                         </KanbanColumnContent>
-                        <Button className="bg-transparent border border-transparent font-normal h-8 hover:bg-background! hover:border-border! hover:text-foreground px-2 text-muted-foreground w-full" type="button" tabIndex="0" aria-label="Add engineering ticket">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+                        <Button className="bg-transparent border border-transparent font-normal h-8 hover:bg-background! hover:border-border! hover:text-foreground px-2 text-muted-foreground w-full" type="button" tabIndex={0} aria-label="Add engineering ticket">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
@@ -550,8 +550,8 @@ export function Pattern() {
                     <Card className="bg-muted/40 gap-0 group/column overflow-hidden p-0 w-full" size="sm" aria-label="Waiting Customer: Customer wait">
                       <CardHeader className="flex flex-row gap-2 items-center min-h-9 px-2 py-2">
                         <span className="[&>svg]:block [&>svg]:size-4 dark:text-cyan-300 flex items-center justify-center leading-none shrink-0 size-4 text-cyan-600" aria-hidden="true">
-                          <svg className="lucide lucide-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                            <circle cx="12" cy="12" r="10"></circle>
+                          <svg className="lucide lucide-clock" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                            <circle cx={12} cy={12} r={10}></circle>
                             <path d="M12 6v6l4 2"></path>
                           </svg>
                         </span>
@@ -564,27 +564,27 @@ export function Pattern() {
                           </span>
                         </div>
                         <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
-                          <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex="0" aria-label="Add waiting ticket">
-                            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                          <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex={0} aria-label="Add waiting ticket">
+                            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                               <path d="M5 12h14"></path>
                               <path d="M12 5v14"></path>
                             </svg>
                           </Button>
-                          <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing bg-transparent border border-transparent cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/kanban-column:opacity-100 group/button hover:bg-background! hover:border-border! hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Waiting Customer column">
-                            <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                              <circle cx="9" cy="12" r="1"></circle>
-                              <circle cx="9" cy="5" r="1"></circle>
-                              <circle cx="9" cy="19" r="1"></circle>
-                              <circle cx="15" cy="12" r="1"></circle>
-                              <circle cx="15" cy="5" r="1"></circle>
-                              <circle cx="15" cy="19" r="1"></circle>
+                          <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing bg-transparent border border-transparent cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/kanban-column:opacity-100 group/button hover:bg-background! hover:border-border! hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Waiting Customer column">
+                            <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                              <circle cx={9} cy={12} r={1}></circle>
+                              <circle cx={9} cy={5} r={1}></circle>
+                              <circle cx={9} cy={19} r={1}></circle>
+                              <circle cx={15} cy={12} r={1}></circle>
+                              <circle cx={15} cy={5} r={1}></circle>
+                              <circle cx={15} cy={19} r={1}></circle>
                             </svg>
                           </KanbanColumnHandle>
                         </div>
                       </CardHeader>
                       <CardContent className="flex flex-col gap-3 pb-2 pt-0 px-2">
                         <KanbanColumnContent className="gap-3">
-                          <KanbanItem value="ticket-10437" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                          <KanbanItem value="ticket-10437" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                             <KanbanItemHandle className="block" dragging="false">
                               <Item className="bg-card gap-3 hover:border-foreground/20 hover:shadow-sm items-stretch transition-[border-color,box-shadow]" variant="outline" size="sm">
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
@@ -620,8 +620,8 @@ export function Pattern() {
                                     </div>
                                   </div>
                                   <span className="bg-zinc-50 border border-zinc-200 dark:bg-zinc-800/70 dark:border-zinc-700 dark:text-zinc-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-zinc-700" aria-label="Paused in Paused" title="Paused in Paused">
-                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                                      <circle cx="12" cy="12" r="10"></circle>
+                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                                      <circle cx={12} cy={12} r={10}></circle>
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
@@ -632,7 +632,7 @@ export function Pattern() {
                               </Item>
                             </KanbanItemHandle>
                           </KanbanItem>
-                          <KanbanItem value="ticket-10444" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                          <KanbanItem value="ticket-10444" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                             <KanbanItemHandle className="block" dragging="false">
                               <Item className="bg-card gap-3 hover:border-foreground/20 hover:shadow-sm items-stretch transition-[border-color,box-shadow]" variant="outline" size="sm">
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
@@ -668,8 +668,8 @@ export function Pattern() {
                                     </div>
                                   </div>
                                   <span className="bg-zinc-50 border border-zinc-200 dark:bg-zinc-800/70 dark:border-zinc-700 dark:text-zinc-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-zinc-700" aria-label="Paused in Paused" title="Paused in Paused">
-                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                                      <circle cx="12" cy="12" r="10"></circle>
+                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                                      <circle cx={12} cy={12} r={10}></circle>
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
@@ -681,8 +681,8 @@ export function Pattern() {
                             </KanbanItemHandle>
                           </KanbanItem>
                         </KanbanColumnContent>
-                        <Button className="bg-transparent border border-transparent font-normal h-8 hover:bg-background! hover:border-border! hover:text-foreground px-2 text-muted-foreground w-full" type="button" tabIndex="0" aria-label="Add waiting ticket">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+                        <Button className="bg-transparent border border-transparent font-normal h-8 hover:bg-background! hover:border-border! hover:text-foreground px-2 text-muted-foreground w-full" type="button" tabIndex={0} aria-label="Add waiting ticket">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
@@ -695,7 +695,7 @@ export function Pattern() {
                     <Card className="bg-muted/40 gap-0 group/column overflow-hidden p-0 w-full" size="sm" aria-label="SLA Risk: Breach risk">
                       <CardHeader className="flex flex-row gap-2 items-center min-h-9 px-2 py-2">
                         <span className="[&>svg]:block [&>svg]:size-4 dark:text-red-300 flex items-center justify-center leading-none shrink-0 size-4 text-red-600" aria-hidden="true">
-                          <svg className="lucide lucide-triangle-alert" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
+                          <svg className="lucide lucide-triangle-alert" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
                             <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
                             <path d="M12 9v4"></path>
                             <path d="M12 17h.01"></path>
@@ -710,27 +710,27 @@ export function Pattern() {
                           </span>
                         </div>
                         <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
-                          <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex="0" aria-label="Add SLA risk ticket">
-                            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                          <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex={0} aria-label="Add SLA risk ticket">
+                            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                               <path d="M5 12h14"></path>
                               <path d="M12 5v14"></path>
                             </svg>
                           </Button>
-                          <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing bg-transparent border border-transparent cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/kanban-column:opacity-100 group/button hover:bg-background! hover:border-border! hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move SLA Risk column">
-                            <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                              <circle cx="9" cy="12" r="1"></circle>
-                              <circle cx="9" cy="5" r="1"></circle>
-                              <circle cx="9" cy="19" r="1"></circle>
-                              <circle cx="15" cy="12" r="1"></circle>
-                              <circle cx="15" cy="5" r="1"></circle>
-                              <circle cx="15" cy="19" r="1"></circle>
+                          <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing bg-transparent border border-transparent cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/kanban-column:opacity-100 group/button hover:bg-background! hover:border-border! hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move SLA Risk column">
+                            <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                              <circle cx={9} cy={12} r={1}></circle>
+                              <circle cx={9} cy={5} r={1}></circle>
+                              <circle cx={9} cy={19} r={1}></circle>
+                              <circle cx={15} cy={12} r={1}></circle>
+                              <circle cx={15} cy={5} r={1}></circle>
+                              <circle cx={15} cy={19} r={1}></circle>
                             </svg>
                           </KanbanColumnHandle>
                         </div>
                       </CardHeader>
                       <CardContent className="flex flex-col gap-3 pb-2 pt-0 px-2">
                         <KanbanColumnContent className="gap-3">
-                          <KanbanItem value="ticket-10472" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                          <KanbanItem value="ticket-10472" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                             <KanbanItemHandle className="block" dragging="false">
                               <Item className="bg-red-50/20 border-red-300/90 dark:bg-red-950/10 dark:border-red-400/40 gap-3 hover:border-foreground/20 hover:shadow-sm items-stretch transition-[border-color,box-shadow]" variant="outline" size="sm">
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
@@ -766,8 +766,8 @@ export function Pattern() {
                                     </div>
                                   </div>
                                   <span className="bg-red-50 border border-red-300 dark:bg-red-400/10 dark:border-red-400/35 dark:text-red-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-red-700" aria-label="Breach risk in 18m" title="Breach risk in 18m">
-                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                                      <circle cx="12" cy="12" r="10"></circle>
+                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                                      <circle cx={12} cy={12} r={10}></circle>
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
@@ -778,7 +778,7 @@ export function Pattern() {
                               </Item>
                             </KanbanItemHandle>
                           </KanbanItem>
-                          <KanbanItem value="ticket-10476" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                          <KanbanItem value="ticket-10476" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                             <KanbanItemHandle className="block" dragging="false">
                               <Item className="bg-red-50/20 border-red-300/90 dark:bg-red-950/10 dark:border-red-400/40 gap-3 hover:border-foreground/20 hover:shadow-sm items-stretch transition-[border-color,box-shadow]" variant="outline" size="sm">
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
@@ -814,8 +814,8 @@ export function Pattern() {
                                     </div>
                                   </div>
                                   <span className="bg-red-50 border border-red-300 dark:bg-red-400/10 dark:border-red-400/35 dark:text-red-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-red-700" aria-label="Breach risk in 41m" title="Breach risk in 41m">
-                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                                      <circle cx="12" cy="12" r="10"></circle>
+                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                                      <circle cx={12} cy={12} r={10}></circle>
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
@@ -827,8 +827,8 @@ export function Pattern() {
                             </KanbanItemHandle>
                           </KanbanItem>
                         </KanbanColumnContent>
-                        <Button className="bg-transparent border border-transparent font-normal h-8 hover:bg-background! hover:border-border! hover:text-foreground px-2 text-muted-foreground w-full" type="button" tabIndex="0" aria-label="Add SLA risk ticket">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+                        <Button className="bg-transparent border border-transparent font-normal h-8 hover:bg-background! hover:border-border! hover:text-foreground px-2 text-muted-foreground w-full" type="button" tabIndex={0} aria-label="Add SLA risk ticket">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
@@ -841,8 +841,8 @@ export function Pattern() {
                     <Card className="bg-muted/40 gap-0 group/column overflow-hidden p-0 w-full" size="sm" aria-label="Resolved: Verified close">
                       <CardHeader className="flex flex-row gap-2 items-center min-h-9 px-2 py-2">
                         <span className="[&>svg]:block [&>svg]:size-4 dark:text-emerald-300 flex items-center justify-center leading-none shrink-0 size-4 text-emerald-600" aria-hidden="true">
-                          <svg className="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
-                            <circle cx="12" cy="12" r="10"></circle>
+                          <svg className="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
+                            <circle cx={12} cy={12} r={10}></circle>
                             <path d="m9 12 2 2 4-4"></path>
                           </svg>
                         </span>
@@ -855,27 +855,27 @@ export function Pattern() {
                           </span>
                         </div>
                         <div className="flex gap-1 group-focus-within/column:opacity-100 group-hover/column:opacity-100 items-center opacity-0 transition-opacity">
-                          <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex="0" aria-label="Add resolved ticket">
-                            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                          <Button className="bg-transparent border border-transparent hover:bg-background! hover:border-border! hover:text-foreground text-muted-foreground" type="button" tabIndex={0} aria-label="Add resolved ticket">
+                            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                               <path d="M5 12h14"></path>
                               <path d="M12 5v14"></path>
                             </svg>
                           </Button>
-                          <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing bg-transparent border border-transparent cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/kanban-column:opacity-100 group/button hover:bg-background! hover:border-border! hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Resolved column">
-                            <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                              <circle cx="9" cy="12" r="1"></circle>
-                              <circle cx="9" cy="5" r="1"></circle>
-                              <circle cx="9" cy="19" r="1"></circle>
-                              <circle cx="15" cy="12" r="1"></circle>
-                              <circle cx="15" cy="5" r="1"></circle>
-                              <circle cx="15" cy="19" r="1"></circle>
+                          <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing bg-transparent border border-transparent cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/kanban-column:opacity-100 group/button hover:bg-background! hover:border-border! hover:text-foreground inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Resolved column">
+                            <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                              <circle cx={9} cy={12} r={1}></circle>
+                              <circle cx={9} cy={5} r={1}></circle>
+                              <circle cx={9} cy={19} r={1}></circle>
+                              <circle cx={15} cy={12} r={1}></circle>
+                              <circle cx={15} cy={5} r={1}></circle>
+                              <circle cx={15} cy={19} r={1}></circle>
                             </svg>
                           </KanbanColumnHandle>
                         </div>
                       </CardHeader>
                       <CardContent className="flex flex-col gap-3 pb-2 pt-0 px-2">
                         <KanbanColumnContent className="gap-3">
-                          <KanbanItem value="ticket-10370" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                          <KanbanItem value="ticket-10370" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                             <KanbanItemHandle className="block" dragging="false">
                               <Item className="bg-card gap-3 hover:border-foreground/20 hover:shadow-sm items-stretch transition-[border-color,box-shadow]" variant="outline" size="sm">
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
@@ -911,8 +911,8 @@ export function Pattern() {
                                     </div>
                                   </div>
                                   <span className="bg-emerald-50 border border-emerald-200 dark:bg-emerald-400/10 dark:border-emerald-400/35 dark:text-emerald-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-emerald-700" aria-label="SLA met in Met" title="SLA met in Met">
-                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                                      <circle cx="12" cy="12" r="10"></circle>
+                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                                      <circle cx={12} cy={12} r={10}></circle>
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
@@ -923,7 +923,7 @@ export function Pattern() {
                               </Item>
                             </KanbanItemHandle>
                           </KanbanItem>
-                          <KanbanItem value="ticket-10381" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                          <KanbanItem value="ticket-10381" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                             <KanbanItemHandle className="block" dragging="false">
                               <Item className="bg-card gap-3 hover:border-foreground/20 hover:shadow-sm items-stretch transition-[border-color,box-shadow]" variant="outline" size="sm">
                                 <ItemHeader className="flex-col gap-1.5 items-stretch min-w-0">
@@ -959,8 +959,8 @@ export function Pattern() {
                                     </div>
                                   </div>
                                   <span className="bg-emerald-50 border border-emerald-200 dark:bg-emerald-400/10 dark:border-emerald-400/35 dark:text-emerald-300 flex font-medium gap-1.5 items-center leading-none ml-auto px-2 py-1 rounded-md shrink-0 text-[0.6875rem] text-emerald-700" aria-label="SLA met in Met" title="SLA met in Met">
-                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                                      <circle cx="12" cy="12" r="10"></circle>
+                                    <svg className="lucide lucide-clock shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                                      <circle cx={12} cy={12} r={10}></circle>
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="font-semibold shrink-0 tabular-nums">
@@ -972,8 +972,8 @@ export function Pattern() {
                             </KanbanItemHandle>
                           </KanbanItem>
                         </KanbanColumnContent>
-                        <Button className="bg-transparent border border-transparent font-normal h-8 hover:bg-background! hover:border-border! hover:text-foreground px-2 text-muted-foreground w-full" type="button" tabIndex="0" aria-label="Add resolved ticket">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+                        <Button className="bg-transparent border border-transparent font-normal h-8 hover:bg-background! hover:border-border! hover:text-foreground px-2 text-muted-foreground w-full" type="button" tabIndex={0} aria-label="Add resolved ticket">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>

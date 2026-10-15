@@ -97,8 +97,8 @@ export function Pattern() {
                 <SidebarHeader className="gap-2 in-data-[mobile=true]:hidden items-center justify-center p-2 py-3" sidebar="header">
                   <Item className="[a]:hover:bg-primary bg-primary border border-transparent gap-2.5 p-0 rounded-lg size-7 text-primary-foreground text-sm" aria-label="Flowly home" variant="default" size="default" href="/dashboard">
                     <ItemMedia className="[&_svg:not([class*='size-'])]:size-4 gap-2 group-has-data-[slot=item-description]/item:self-start group-has-data-[slot=item-description]/item:translate-y-0.5 size-auto" variant="icon">
-                      <svg className="size-3.5" width="50" height="50" viewBox="25.668 25.1352 49.6644 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                        <circle cx="70.634" cy="29.8334" r="4.69799" fill="currentColor"></circle>
+                      <svg className="size-3.5" width={50} height={50} viewBox="25.668 25.1352 49.6644 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <circle cx={70.634} cy={29.8334} r={4.69799} fill="currentColor"></circle>
                         <path fillRule="evenodd" clipRule="evenodd" d="M25.668 57.0144V29.8332C25.668 27.2386 27.7713 25.1352 30.366 25.1352C32.9606 25.1352 35.0639 27.2386 35.0639 29.8332V57.0144C35.0639 61.833 38.9702 65.7392 43.7888 65.7392H57.2116C62.0302 65.7392 65.9364 61.833 65.9364 57.0144V43.7258C65.9364 41.1312 68.0398 39.0278 70.6344 39.0278C73.229 39.0278 75.3324 41.1312 75.3324 43.7258V57.0144C75.3324 67.0222 67.2194 75.1352 57.2116 75.1352H43.7888C33.7809 75.1352 25.668 67.0222 25.668 57.0144Z" fill="currentColor"></path>
                       </svg>
                     </ItemMedia>
@@ -116,11 +116,11 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_f6cpflb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Dashboard" href="/dashboard">
-                            <svg className="lucide lucide-layout-dashboard" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                              <rect width="7" height="9" x="3" y="3" rx="1"></rect>
-                              <rect width="7" height="5" x="14" y="3" rx="1"></rect>
-                              <rect width="7" height="9" x="14" y="12" rx="1"></rect>
-                              <rect width="7" height="5" x="3" y="16" rx="1"></rect>
+                            <svg className="lucide lucide-layout-dashboard" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <rect width={7} height={9} x={3} y={3} rx={1}></rect>
+                              <rect width={7} height={5} x={14} y={3} rx={1}></rect>
+                              <rect width={7} height={9} x={14} y={12} rx={1}></rect>
+                              <rect width={7} height={5} x={3} y={16} rx={1}></rect>
                             </svg>
                           </SidebarMenuButton>
                           </SidebarProvider>
@@ -130,11 +130,11 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_facpflb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Workflow Editor" href="/workflow-editor" data-active="" aria-current="page">
-                            <svg className="lucide lucide-spline-pointer" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <svg className="lucide lucide-spline-pointer" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M12.034 12.681a.498.498 0 0 1 .647-.647l9 3.5a.5.5 0 0 1-.033.943l-3.444 1.068a1 1 0 0 0-.66.66l-1.067 3.443a.5.5 0 0 1-.943.033z"></path>
                               <path d="M5 17A12 12 0 0 1 17 5"></path>
-                              <circle cx="19" cy="5" r="2"></circle>
-                              <circle cx="5" cy="19" r="2"></circle>
+                              <circle cx={19} cy={5} r={2}></circle>
+                              <circle cx={5} cy={19} r={2}></circle>
                             </svg>
                           </SidebarMenuButton>
                           </SidebarProvider>
@@ -144,9 +144,9 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_fecpflb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="AI Agent Builder" href="/agent-builder">
-                            <svg className="lucide lucide-bot" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <svg className="lucide lucide-bot" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M12 8V4H8"></path>
-                              <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+                              <rect width={16} height={12} x={4} y={8} rx={2}></rect>
                               <path d="M2 14h2"></path>
                               <path d="M20 14h2"></path>
                               <path d="M15 13v2"></path>
@@ -160,10 +160,10 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_ficpflb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Workflows" href="/workflows">
-                            <svg className="lucide lucide-workflow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                              <rect width="8" height="8" x="3" y="3" rx="2"></rect>
+                            <svg className="lucide lucide-workflow" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <rect width={8} height={8} x={3} y={3} rx={2}></rect>
                               <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
-                              <rect width="8" height="8" x="13" y="13" rx="2"></rect>
+                              <rect width={8} height={8} x={13} y={13} rx={2}></rect>
                             </svg>
                           </SidebarMenuButton>
                           </SidebarProvider>
@@ -173,7 +173,7 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_fmcpflb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Agents" href="/agents">
-                            <svg className="lucide lucide-brain-circuit" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <svg className="lucide lucide-brain-circuit" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path>
                               <path d="M9 13a4.5 4.5 0 0 0 3-4"></path>
                               <path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path>
@@ -183,10 +183,10 @@ export function Pattern() {
                               <path d="M12 18h6a2 2 0 0 1 2 2v1"></path>
                               <path d="M12 8h8"></path>
                               <path d="M16 8V5a2 2 0 0 1 2-2"></path>
-                              <circle cx="16" cy="13" r=".5"></circle>
-                              <circle cx="18" cy="3" r=".5"></circle>
-                              <circle cx="20" cy="21" r=".5"></circle>
-                              <circle cx="20" cy="8" r=".5"></circle>
+                              <circle cx={16} cy={13} r=".5"></circle>
+                              <circle cx={18} cy={3} r=".5"></circle>
+                              <circle cx={20} cy={21} r=".5"></circle>
+                              <circle cx={20} cy={8} r=".5"></circle>
                             </svg>
                           </SidebarMenuButton>
                           </SidebarProvider>
@@ -196,9 +196,9 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="active:bg-sidebar-accent active:text-sidebar-accent-foreground data-active:bg-sidebar-accent data-active:font-medium data-active:text-sidebar-accent-foreground data-open:hover:bg-sidebar-accent data-open:hover:text-sidebar-accent-foreground focus-visible:ring-2 gap-2 group-data-[collapsible=icon]:p-2! group-data-[collapsible=icon]:size-8! group-has-data-[sidebar=menu-action]/menu-item:pr-8 h-8 hover:bg-sidebar-accent hover:text-sidebar-accent-foreground justify-center p-2 ring-sidebar-ring rounded-md text-left text-sm transition-[width,height,padding]" id="base-ui-_R_fqcpflb_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" aria-label="Settings" href="/settings">
-                            <svg className="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <svg className="lucide lucide-settings" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
-                              <circle cx="12" cy="12" r="3"></circle>
+                              <circle cx={12} cy={12} r={3}></circle>
                             </svg>
                           </SidebarMenuButton>
                           </SidebarProvider>
@@ -214,8 +214,8 @@ export function Pattern() {
                 </SidebarProvider>
                 <SidebarFooter className="gap-2 p-2" sidebar="footer">
                   <Popover>
-                  <PopoverTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:hover:opacity-100 [&_svg]:opacity-60 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center mx-auto outline-none relative rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Notifications, 4 unread" baseUiClickTrigger="" id="base-ui-_R_7ncpflb_" aria-haspopup="dialog" aria-expanded="false">
-                    <svg className="lucide lucide-bell" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <PopoverTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:hover:opacity-100 [&_svg]:opacity-60 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center mx-auto outline-none relative rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Notifications, 4 unread" baseUiClickTrigger="" id="base-ui-_R_7ncpflb_" aria-haspopup="dialog" aria-expanded="false">
+                    <svg className="lucide lucide-bell" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
                       <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
                     </svg>
@@ -223,7 +223,7 @@ export function Pattern() {
                   </PopoverTrigger>
                   </Popover>
                   <DropdownMenu>
-                  <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:not-hover:bg-transparent aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center mx-auto outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open account menu for Nick Bold" aria-haspopup="menu" aria-expanded="false" id="base-ui-_R_qrcpflb_">
+                  <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:not-hover:bg-transparent aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center mx-auto outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Open account menu for Nick Bold" aria-haspopup="menu" aria-expanded="false" id="base-ui-_R_qrcpflb_">
                     <Avatar className="after:rounded-full data-[size=lg]:size-10 data-[size=sm]:size-6 rounded-md size-6" size="default">
                       <AvatarImage className="rounded-full" alt="Nick Bold" src="https://images.unsplash.com/photo-1543299750-19d1d6297053?w=96&h=96&dpr=2&q=80"></AvatarImage>
                     </Avatar>
@@ -251,9 +251,9 @@ export function Pattern() {
         <header className="bg-background border-b border-border flex gap-2 h-(--header-height) items-center pe-2 ps-3 sticky top-0 w-full z-50">
           <div className="flex flex-1 gap-2 items-center md:flex-none min-w-0">
             <SidebarProvider>
-            <SidebarTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground inline-flex items-center justify-center md:hidden outline-none rounded-lg select-none shrink-0 size-8 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" sidebar="trigger">
-              <svg className="lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+            <SidebarTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground inline-flex items-center justify-center md:hidden outline-none rounded-lg select-none shrink-0 size-8 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} sidebar="trigger">
+              <svg className="lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect width={18} height={18} x={3} y={3} rx={2}></rect>
                 <path d="M9 3v18"></path>
               </svg>
               <span className="sr-only">
@@ -264,8 +264,8 @@ export function Pattern() {
             <span className="-ml-2 md:hidden shrink-0">
               <Item className="[a]:hover:bg-primary bg-primary border border-transparent gap-2.5 p-0 rounded-lg size-7 text-primary-foreground text-sm" aria-label="Flowly home" variant="default" size="default" href="/dashboard">
                 <ItemMedia className="[&_svg:not([class*='size-'])]:size-4 gap-2 group-has-data-[slot=item-description]/item:self-start group-has-data-[slot=item-description]/item:translate-y-0.5 size-auto" variant="icon">
-                  <svg className="size-3.5" width="50" height="50" viewBox="25.668 25.1352 49.6644 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                    <circle cx="70.634" cy="29.8334" r="4.69799" fill="currentColor"></circle>
+                  <svg className="size-3.5" width={50} height={50} viewBox="25.668 25.1352 49.6644 50" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx={70.634} cy={29.8334} r={4.69799} fill="currentColor"></circle>
                     <path fillRule="evenodd" clipRule="evenodd" d="M25.668 57.0144V29.8332C25.668 27.2386 27.7713 25.1352 30.366 25.1352C32.9606 25.1352 35.0639 27.2386 35.0639 29.8332V57.0144C35.0639 61.833 38.9702 65.7392 43.7888 65.7392H57.2116C62.0302 65.7392 65.9364 61.833 65.9364 57.0144V43.7258C65.9364 41.1312 68.0398 39.0278 70.6344 39.0278C73.229 39.0278 75.3324 41.1312 75.3324 43.7258V57.0144C75.3324 67.0222 67.2194 75.1352 57.2116 75.1352H43.7888C33.7809 75.1352 25.668 67.0222 25.668 57.0144Z" fill="currentColor"></path>
                   </svg>
                 </ItemMedia>
@@ -284,27 +284,27 @@ export function Pattern() {
           <div className="flex gap-1 items-center ml-auto shrink-0">
             <div className="flex gap-2 items-center">
               <Popover>
-              <PopoverTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground inline-flex items-center justify-center max-md:hidden outline-none rounded-lg select-none shrink-0 size-8 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Keyboard shortcuts" baseUiClickTrigger="" id="base-ui-_r_o_" aria-haspopup="dialog" aria-expanded="false">
-                <svg className="lucide lucide-circle-question-mark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10"></circle>
+              <PopoverTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground inline-flex items-center justify-center max-md:hidden outline-none rounded-lg select-none shrink-0 size-8 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Keyboard shortcuts" baseUiClickTrigger="" id="base-ui-_r_o_" aria-haspopup="dialog" aria-expanded="false">
+                <svg className="lucide lucide-circle-question-mark" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <circle cx={12} cy={12} r={10}></circle>
                   <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                   <path d="M12 17h.01"></path>
                 </svg>
               </PopoverTrigger>
               </Popover>
-              <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground px-2.5 rounded-lg text-sm" type="button" tabIndex="0" aria-haspopup="dialog" aria-expanded="false">
-                <svg className="lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground px-2.5 rounded-lg text-sm" type="button" tabIndex={0} aria-haspopup="dialog" aria-expanded="false">
+                <svg className="lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path>
                   <path d="M20 2v4"></path>
                   <path d="M22 4h-4"></path>
-                  <circle cx="4" cy="20" r="2"></circle>
+                  <circle cx={4} cy={20} r={2}></circle>
                 </svg>
                 <span className="sm:not-sr-only sr-only">
                   {"Ask AI"}
                 </span>
               </Button>
-              <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground px-2.5 rounded-lg text-sm" type="button" tabIndex="0">
-                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground px-2.5 rounded-lg text-sm" type="button" tabIndex={0}>
+                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
@@ -312,8 +312,8 @@ export function Pattern() {
                   {"Add step"}
                 </span>
               </Button>
-              <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding bg-primary border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-primary/80 px-2.5 rounded-lg text-primary-foreground text-sm" type="button" tabIndex="0">
-                <svg className="lucide lucide-play" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding bg-primary border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-primary/80 px-2.5 rounded-lg text-primary-foreground text-sm" type="button" tabIndex={0}>
+                <svg className="lucide lucide-play" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path>
                 </svg>
                 <span className="sm:not-sr-only sr-only">
@@ -321,11 +321,11 @@ export function Pattern() {
                 </span>
               </Button>
               <DropdownMenu>
-              <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground inline-flex items-center justify-center outline-none rounded-lg select-none shrink-0 size-8 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Workflow actions" aria-haspopup="menu" aria-expanded="false" id="base-ui-_r_s_">
-                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <circle cx="12" cy="12" r="1"></circle>
-                  <circle cx="19" cy="12" r="1"></circle>
-                  <circle cx="5" cy="12" r="1"></circle>
+              <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground inline-flex items-center justify-center outline-none rounded-lg select-none shrink-0 size-8 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Workflow actions" aria-haspopup="menu" aria-expanded="false" id="base-ui-_r_s_">
+                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <circle cx={12} cy={12} r={1}></circle>
+                  <circle cx={19} cy={12} r={1}></circle>
+                  <circle cx={5} cy={12} r={1}></circle>
                 </svg>
               </DropdownMenuTrigger>
               </DropdownMenu>
@@ -346,7 +346,7 @@ export function Pattern() {
                 </div>
                 <div className="grow max-h-full min-h-0">
                   <ScrollArea className="grow h-full scroll-fade-y" role="presentation" hasOverflowY="" overflowYEnd="" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
-                    <div className="base-ui-disable-scrollbar focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_2u_-viewport" tabIndex="0" data-has-overflow-y="" data-overflow-y-end="" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "301px"}}>
+                    <div className="base-ui-disable-scrollbar focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_2u_-viewport" tabIndex={0} data-has-overflow-y="" data-overflow-y-end="" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "301px"}}>
                       <div className="flex flex-col py-1">
                         <p id="_r_2t_" hidden>
                           {"Adds this step to the middle of the canvas. Drag it to put it somewhere else."}
@@ -356,28 +356,28 @@ export function Pattern() {
                             {"Messages"}
                           </p>
                           <div className="flex flex-col gap-0.5 px-2">
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex="0" aria-describedby="_r_2t_">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex={0} aria-describedby="_r_2t_">
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                  <rect x={2} y={4} width={20} height={16} rx={2}></rect>
                                 </svg>
                               </span>
                               <span className="truncate">
                                 {"Send Email"}
                               </span>
-                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <circle cx="9" cy="12" r="1"></circle>
-                                <circle cx="9" cy="5" r="1"></circle>
-                                <circle cx="9" cy="19" r="1"></circle>
-                                <circle cx="15" cy="12" r="1"></circle>
-                                <circle cx="15" cy="5" r="1"></circle>
-                                <circle cx="15" cy="19" r="1"></circle>
+                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <circle cx={9} cy={12} r={1}></circle>
+                                <circle cx={9} cy={5} r={1}></circle>
+                                <circle cx={9} cy={19} r={1}></circle>
+                                <circle cx={15} cy={12} r={1}></circle>
+                                <circle cx={15} cy={5} r={1}></circle>
+                                <circle cx={15} cy={19} r={1}></circle>
                               </svg>
                             </Button>
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex="0" aria-describedby="_r_2t_">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex={0} aria-describedby="_r_2t_">
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-message-square-text" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-message-square-text" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                   <path d="M7 11h10"></path>
                                   <path d="M7 15h6"></path>
@@ -387,18 +387,18 @@ export function Pattern() {
                               <span className="truncate">
                                 {"Send SMS"}
                               </span>
-                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <circle cx="9" cy="12" r="1"></circle>
-                                <circle cx="9" cy="5" r="1"></circle>
-                                <circle cx="9" cy="19" r="1"></circle>
-                                <circle cx="15" cy="12" r="1"></circle>
-                                <circle cx="15" cy="5" r="1"></circle>
-                                <circle cx="15" cy="19" r="1"></circle>
+                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <circle cx={9} cy={12} r={1}></circle>
+                                <circle cx={9} cy={5} r={1}></circle>
+                                <circle cx={9} cy={19} r={1}></circle>
+                                <circle cx={15} cy={12} r={1}></circle>
+                                <circle cx={15} cy={5} r={1}></circle>
+                                <circle cx={15} cy={19} r={1}></circle>
                               </svg>
                             </Button>
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex="0" aria-describedby="_r_2t_">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex={0} aria-describedby="_r_2t_">
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-messages-square" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-messages-square" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
                                   <path d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1"></path>
                                 </svg>
@@ -406,18 +406,18 @@ export function Pattern() {
                               <span className="truncate">
                                 {"Post to Channel"}
                               </span>
-                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <circle cx="9" cy="12" r="1"></circle>
-                                <circle cx="9" cy="5" r="1"></circle>
-                                <circle cx="9" cy="19" r="1"></circle>
-                                <circle cx="15" cy="12" r="1"></circle>
-                                <circle cx="15" cy="5" r="1"></circle>
-                                <circle cx="15" cy="19" r="1"></circle>
+                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <circle cx={9} cy={12} r={1}></circle>
+                                <circle cx={9} cy={5} r={1}></circle>
+                                <circle cx={9} cy={19} r={1}></circle>
+                                <circle cx={15} cy={12} r={1}></circle>
+                                <circle cx={15} cy={5} r={1}></circle>
+                                <circle cx={15} cy={19} r={1}></circle>
                               </svg>
                             </Button>
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex="0" aria-describedby="_r_2t_">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex={0} aria-describedby="_r_2t_">
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-bell-ring" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-bell-ring" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
                                   <path d="M22 8c0-2.3-.8-4.3-2-6"></path>
                                   <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
@@ -427,13 +427,13 @@ export function Pattern() {
                               <span className="truncate">
                                 {"Send Push"}
                               </span>
-                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <circle cx="9" cy="12" r="1"></circle>
-                                <circle cx="9" cy="5" r="1"></circle>
-                                <circle cx="9" cy="19" r="1"></circle>
-                                <circle cx="15" cy="12" r="1"></circle>
-                                <circle cx="15" cy="5" r="1"></circle>
-                                <circle cx="15" cy="19" r="1"></circle>
+                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <circle cx={9} cy={12} r={1}></circle>
+                                <circle cx={9} cy={5} r={1}></circle>
+                                <circle cx={9} cy={19} r={1}></circle>
+                                <circle cx={15} cy={12} r={1}></circle>
+                                <circle cx={15} cy={5} r={1}></circle>
+                                <circle cx={15} cy={19} r={1}></circle>
                               </svg>
                             </Button>
                           </div>
@@ -444,33 +444,33 @@ export function Pattern() {
                             {"Data"}
                           </p>
                           <div className="flex flex-col gap-0.5 px-2">
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex="0" aria-describedby="_r_2t_">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex={0} aria-describedby="_r_2t_">
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-database-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-database-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="M19 16v6"></path>
                                   <path d="M21 12.536V5"></path>
                                   <path d="M22 19h-6"></path>
                                   <path d="M3 12A9 3 0 0 0 15.1824 14.8061"></path>
                                   <path d="M3 5V19A9 3 0 0 0 13.318 21.968"></path>
-                                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                  <ellipse cx={12} cy={5} rx={9} ry={3}></ellipse>
                                 </svg>
                               </span>
                               <span className="truncate">
                                 {"Create Record"}
                               </span>
-                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <circle cx="9" cy="12" r="1"></circle>
-                                <circle cx="9" cy="5" r="1"></circle>
-                                <circle cx="9" cy="19" r="1"></circle>
-                                <circle cx="15" cy="12" r="1"></circle>
-                                <circle cx="15" cy="5" r="1"></circle>
-                                <circle cx="15" cy="19" r="1"></circle>
+                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <circle cx={9} cy={12} r={1}></circle>
+                                <circle cx={9} cy={5} r={1}></circle>
+                                <circle cx={9} cy={19} r={1}></circle>
+                                <circle cx={15} cy={12} r={1}></circle>
+                                <circle cx={15} cy={5} r={1}></circle>
+                                <circle cx={15} cy={19} r={1}></circle>
                               </svg>
                             </Button>
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex="0" aria-describedby="_r_2t_">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex={0} aria-describedby="_r_2t_">
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-database" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <svg className="lucide lucide-database" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                  <ellipse cx={12} cy={5} rx={9} ry={3}></ellipse>
                                   <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
                                   <path d="M3 12A9 3 0 0 0 21 12"></path>
                                 </svg>
@@ -478,41 +478,41 @@ export function Pattern() {
                               <span className="truncate">
                                 {"Update Record"}
                               </span>
-                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <circle cx="9" cy="12" r="1"></circle>
-                                <circle cx="9" cy="5" r="1"></circle>
-                                <circle cx="9" cy="19" r="1"></circle>
-                                <circle cx="15" cy="12" r="1"></circle>
-                                <circle cx="15" cy="5" r="1"></circle>
-                                <circle cx="15" cy="19" r="1"></circle>
+                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <circle cx={9} cy={12} r={1}></circle>
+                                <circle cx={9} cy={5} r={1}></circle>
+                                <circle cx={9} cy={19} r={1}></circle>
+                                <circle cx={15} cy={12} r={1}></circle>
+                                <circle cx={15} cy={5} r={1}></circle>
+                                <circle cx={15} cy={19} r={1}></circle>
                               </svg>
                             </Button>
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex="0" aria-describedby="_r_2t_">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex={0} aria-describedby="_r_2t_">
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-database-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-database-search" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="M21 11.693V5"></path>
                                   <path d="m22 22-1.875-1.875"></path>
                                   <path d="M3 12a9 3 0 0 0 8.697 2.998"></path>
                                   <path d="M3 5v14a9 3 0 0 0 9.28 2.999"></path>
-                                  <circle cx="18" cy="18" r="3"></circle>
-                                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                  <circle cx={18} cy={18} r={3}></circle>
+                                  <ellipse cx={12} cy={5} rx={9} ry={3}></ellipse>
                                 </svg>
                               </span>
                               <span className="truncate">
                                 {"Find Record"}
                               </span>
-                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <circle cx="9" cy="12" r="1"></circle>
-                                <circle cx="9" cy="5" r="1"></circle>
-                                <circle cx="9" cy="19" r="1"></circle>
-                                <circle cx="15" cy="12" r="1"></circle>
-                                <circle cx="15" cy="5" r="1"></circle>
-                                <circle cx="15" cy="19" r="1"></circle>
+                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <circle cx={9} cy={12} r={1}></circle>
+                                <circle cx={9} cy={5} r={1}></circle>
+                                <circle cx={9} cy={19} r={1}></circle>
+                                <circle cx={15} cy={12} r={1}></circle>
+                                <circle cx={15} cy={5} r={1}></circle>
+                                <circle cx={15} cy={19} r={1}></circle>
                               </svg>
                             </Button>
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex="0" aria-describedby="_r_2t_">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex={0} aria-describedby="_r_2t_">
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-webhook" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-webhook" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="M18 16.98h-5.99c-1.1 0-1.95.94-2.48 1.9A4 4 0 0 1 2 17c.01-.7.2-1.4.57-2"></path>
                                   <path d="m6 17 3.13-5.78c.53-.97.1-2.18-.5-3.1a4 4 0 1 1 6.89-4.06"></path>
                                   <path d="m12 6 3.13 5.73C15.66 12.7 16.9 13 18 13a4 4 0 0 1 0 8"></path>
@@ -521,40 +521,40 @@ export function Pattern() {
                               <span className="truncate">
                                 {"Send Webhook"}
                               </span>
-                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <circle cx="9" cy="12" r="1"></circle>
-                                <circle cx="9" cy="5" r="1"></circle>
-                                <circle cx="9" cy="19" r="1"></circle>
-                                <circle cx="15" cy="12" r="1"></circle>
-                                <circle cx="15" cy="5" r="1"></circle>
-                                <circle cx="15" cy="19" r="1"></circle>
+                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <circle cx={9} cy={12} r={1}></circle>
+                                <circle cx={9} cy={5} r={1}></circle>
+                                <circle cx={9} cy={19} r={1}></circle>
+                                <circle cx={15} cy={12} r={1}></circle>
+                                <circle cx={15} cy={5} r={1}></circle>
+                                <circle cx={15} cy={19} r={1}></circle>
                               </svg>
                             </Button>
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex="0" aria-describedby="_r_2t_">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex={0} aria-describedby="_r_2t_">
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-sheet" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                  <rect width="18" height="18" x="3" y="3" rx="2" ry="2"></rect>
-                                  <line x1="3" x2="21" y1="9" y2="9"></line>
-                                  <line x1="3" x2="21" y1="15" y2="15"></line>
-                                  <line x1="9" x2="9" y1="9" y2="21"></line>
-                                  <line x1="15" x2="15" y1="9" y2="21"></line>
+                                <svg className="lucide lucide-sheet" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                  <rect width={18} height={18} x={3} y={3} rx={2} ry={2}></rect>
+                                  <line x1={3} x2={21} y1={9} y2={9}></line>
+                                  <line x1={3} x2={21} y1={15} y2={15}></line>
+                                  <line x1={9} x2={9} y1={9} y2={21}></line>
+                                  <line x1={15} x2={15} y1={9} y2={21}></line>
                                 </svg>
                               </span>
                               <span className="truncate">
                                 {"Add Sheet Row"}
                               </span>
-                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <circle cx="9" cy="12" r="1"></circle>
-                                <circle cx="9" cy="5" r="1"></circle>
-                                <circle cx="9" cy="19" r="1"></circle>
-                                <circle cx="15" cy="12" r="1"></circle>
-                                <circle cx="15" cy="5" r="1"></circle>
-                                <circle cx="15" cy="19" r="1"></circle>
+                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <circle cx={9} cy={12} r={1}></circle>
+                                <circle cx={9} cy={5} r={1}></circle>
+                                <circle cx={9} cy={19} r={1}></circle>
+                                <circle cx={15} cy={12} r={1}></circle>
+                                <circle cx={15} cy={5} r={1}></circle>
+                                <circle cx={15} cy={19} r={1}></circle>
                               </svg>
                             </Button>
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex="0" aria-describedby="_r_2t_">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex={0} aria-describedby="_r_2t_">
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-braces" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-braces" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1"></path>
                                   <path d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1"></path>
                                 </svg>
@@ -562,13 +562,13 @@ export function Pattern() {
                               <span className="truncate">
                                 {"Format Data"}
                               </span>
-                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <circle cx="9" cy="12" r="1"></circle>
-                                <circle cx="9" cy="5" r="1"></circle>
-                                <circle cx="9" cy="19" r="1"></circle>
-                                <circle cx="15" cy="12" r="1"></circle>
-                                <circle cx="15" cy="5" r="1"></circle>
-                                <circle cx="15" cy="19" r="1"></circle>
+                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <circle cx={9} cy={12} r={1}></circle>
+                                <circle cx={9} cy={5} r={1}></circle>
+                                <circle cx={9} cy={19} r={1}></circle>
+                                <circle cx={15} cy={12} r={1}></circle>
+                                <circle cx={15} cy={5} r={1}></circle>
+                                <circle cx={15} cy={19} r={1}></circle>
                               </svg>
                             </Button>
                           </div>
@@ -579,51 +579,51 @@ export function Pattern() {
                             {"Delays"}
                           </p>
                           <div className="flex flex-col gap-0.5 px-2">
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex="0" aria-describedby="_r_2t_">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex={0} aria-describedby="_r_2t_">
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                  <circle cx="12" cy="12" r="10"></circle>
+                                <svg className="lucide lucide-clock" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                  <circle cx={12} cy={12} r={10}></circle>
                                   <path d="M12 6v6l4 2"></path>
                                 </svg>
                               </span>
                               <span className="truncate">
                                 {"Time Delay"}
                               </span>
-                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <circle cx="9" cy="12" r="1"></circle>
-                                <circle cx="9" cy="5" r="1"></circle>
-                                <circle cx="9" cy="19" r="1"></circle>
-                                <circle cx="15" cy="12" r="1"></circle>
-                                <circle cx="15" cy="5" r="1"></circle>
-                                <circle cx="15" cy="19" r="1"></circle>
+                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <circle cx={9} cy={12} r={1}></circle>
+                                <circle cx={9} cy={5} r={1}></circle>
+                                <circle cx={9} cy={19} r={1}></circle>
+                                <circle cx={15} cy={12} r={1}></circle>
+                                <circle cx={15} cy={5} r={1}></circle>
+                                <circle cx={15} cy={19} r={1}></circle>
                               </svg>
                             </Button>
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex="0" aria-describedby="_r_2t_">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex={0} aria-describedby="_r_2t_">
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-calendar-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-calendar-clock" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="M16 14v2.2l1.6 1"></path>
                                   <path d="M16 2v4"></path>
                                   <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path>
                                   <path d="M3 10h5"></path>
                                   <path d="M8 2v4"></path>
-                                  <circle cx="16" cy="16" r="6"></circle>
+                                  <circle cx={16} cy={16} r={6}></circle>
                                 </svg>
                               </span>
                               <span className="truncate">
                                 {"Wait Until"}
                               </span>
-                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <circle cx="9" cy="12" r="1"></circle>
-                                <circle cx="9" cy="5" r="1"></circle>
-                                <circle cx="9" cy="19" r="1"></circle>
-                                <circle cx="15" cy="12" r="1"></circle>
-                                <circle cx="15" cy="5" r="1"></circle>
-                                <circle cx="15" cy="19" r="1"></circle>
+                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <circle cx={9} cy={12} r={1}></circle>
+                                <circle cx={9} cy={5} r={1}></circle>
+                                <circle cx={9} cy={19} r={1}></circle>
+                                <circle cx={15} cy={12} r={1}></circle>
+                                <circle cx={15} cy={5} r={1}></circle>
+                                <circle cx={15} cy={19} r={1}></circle>
                               </svg>
                             </Button>
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex="0" aria-describedby="_r_2t_">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex={0} aria-describedby="_r_2t_">
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-hourglass" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-hourglass" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="M5 22h14"></path>
                                   <path d="M5 2h14"></path>
                                   <path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"></path>
@@ -633,13 +633,13 @@ export function Pattern() {
                               <span className="truncate">
                                 {"Wait for Event"}
                               </span>
-                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <circle cx="9" cy="12" r="1"></circle>
-                                <circle cx="9" cy="5" r="1"></circle>
-                                <circle cx="9" cy="19" r="1"></circle>
-                                <circle cx="15" cy="12" r="1"></circle>
-                                <circle cx="15" cy="5" r="1"></circle>
-                                <circle cx="15" cy="19" r="1"></circle>
+                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <circle cx={9} cy={12} r={1}></circle>
+                                <circle cx={9} cy={5} r={1}></circle>
+                                <circle cx={9} cy={19} r={1}></circle>
+                                <circle cx={15} cy={12} r={1}></circle>
+                                <circle cx={15} cy={5} r={1}></circle>
+                                <circle cx={15} cy={19} r={1}></circle>
                               </svg>
                             </Button>
                           </div>
@@ -650,47 +650,47 @@ export function Pattern() {
                             {"Flow Control"}
                           </p>
                           <div className="flex flex-col gap-0.5 px-2">
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex="0" aria-describedby="_r_2t_">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex={0} aria-describedby="_r_2t_">
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-git-branch" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-git-branch" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="M15 6a9 9 0 0 0-9 9V3"></path>
-                                  <circle cx="18" cy="6" r="3"></circle>
-                                  <circle cx="6" cy="18" r="3"></circle>
+                                  <circle cx={18} cy={6} r={3}></circle>
+                                  <circle cx={6} cy={18} r={3}></circle>
                                 </svg>
                               </span>
                               <span className="truncate">
                                 {"If/Else Branch"}
                               </span>
-                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <circle cx="9" cy="12" r="1"></circle>
-                                <circle cx="9" cy="5" r="1"></circle>
-                                <circle cx="9" cy="19" r="1"></circle>
-                                <circle cx="15" cy="12" r="1"></circle>
-                                <circle cx="15" cy="5" r="1"></circle>
-                                <circle cx="15" cy="19" r="1"></circle>
+                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <circle cx={9} cy={12} r={1}></circle>
+                                <circle cx={9} cy={5} r={1}></circle>
+                                <circle cx={9} cy={19} r={1}></circle>
+                                <circle cx={15} cy={12} r={1}></circle>
+                                <circle cx={15} cy={5} r={1}></circle>
+                                <circle cx={15} cy={19} r={1}></circle>
                               </svg>
                             </Button>
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex="0" aria-describedby="_r_2t_">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex={0} aria-describedby="_r_2t_">
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                                 </svg>
                               </span>
                               <span className="truncate">
                                 {"Filter"}
                               </span>
-                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <circle cx="9" cy="12" r="1"></circle>
-                                <circle cx="9" cy="5" r="1"></circle>
-                                <circle cx="9" cy="19" r="1"></circle>
-                                <circle cx="15" cy="12" r="1"></circle>
-                                <circle cx="15" cy="5" r="1"></circle>
-                                <circle cx="15" cy="19" r="1"></circle>
+                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <circle cx={9} cy={12} r={1}></circle>
+                                <circle cx={9} cy={5} r={1}></circle>
+                                <circle cx={9} cy={19} r={1}></circle>
+                                <circle cx={15} cy={12} r={1}></circle>
+                                <circle cx={15} cy={5} r={1}></circle>
+                                <circle cx={15} cy={19} r={1}></circle>
                               </svg>
                             </Button>
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex="0" aria-describedby="_r_2t_">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex={0} aria-describedby="_r_2t_">
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-repeat" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-repeat" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="m17 2 4 4-4 4"></path>
                                   <path d="M3 11v-1a4 4 0 0 1 4-4h14"></path>
                                   <path d="m7 22-4-4 4-4"></path>
@@ -700,36 +700,36 @@ export function Pattern() {
                               <span className="truncate">
                                 {"Loop Over Items"}
                               </span>
-                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <circle cx="9" cy="12" r="1"></circle>
-                                <circle cx="9" cy="5" r="1"></circle>
-                                <circle cx="9" cy="19" r="1"></circle>
-                                <circle cx="15" cy="12" r="1"></circle>
-                                <circle cx="15" cy="5" r="1"></circle>
-                                <circle cx="15" cy="19" r="1"></circle>
+                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <circle cx={9} cy={12} r={1}></circle>
+                                <circle cx={9} cy={5} r={1}></circle>
+                                <circle cx={9} cy={19} r={1}></circle>
+                                <circle cx={15} cy={12} r={1}></circle>
+                                <circle cx={15} cy={5} r={1}></circle>
+                                <circle cx={15} cy={19} r={1}></circle>
                               </svg>
                             </Button>
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex="0" aria-describedby="_r_2t_">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex={0} aria-describedby="_r_2t_">
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-zap" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-zap" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                                 </svg>
                               </span>
                               <span className="truncate">
                                 {"Run Action"}
                               </span>
-                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <circle cx="9" cy="12" r="1"></circle>
-                                <circle cx="9" cy="5" r="1"></circle>
-                                <circle cx="9" cy="19" r="1"></circle>
-                                <circle cx="15" cy="12" r="1"></circle>
-                                <circle cx="15" cy="5" r="1"></circle>
-                                <circle cx="15" cy="19" r="1"></circle>
+                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <circle cx={9} cy={12} r={1}></circle>
+                                <circle cx={9} cy={5} r={1}></circle>
+                                <circle cx={9} cy={19} r={1}></circle>
+                                <circle cx={15} cy={12} r={1}></circle>
+                                <circle cx={15} cy={5} r={1}></circle>
+                                <circle cx={15} cy={19} r={1}></circle>
                               </svg>
                             </Button>
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex="0" aria-describedby="_r_2t_">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent cursor-grab dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 data-dragging:cursor-grabbing data-dragging:opacity-50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2.5 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground touch-none w-full" type="button" tabIndex={0} aria-describedby="_r_2t_">
                               <span className="[&_svg]:size-4 opacity-70 shrink-0 size-4">
-                                <svg className="lucide lucide-octagon-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-octagon-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="m15 9-6 6"></path>
                                   <path d="M2.586 16.726A2 2 0 0 1 2 15.312V8.688a2 2 0 0 1 .586-1.414l4.688-4.688A2 2 0 0 1 8.688 2h6.624a2 2 0 0 1 1.414.586l4.688 4.688A2 2 0 0 1 22 8.688v6.624a2 2 0 0 1-.586 1.414l-4.688 4.688a2 2 0 0 1-1.414.586H8.688a2 2 0 0 1-1.414-.586z"></path>
                                   <path d="m9 9 6 6"></path>
@@ -738,13 +738,13 @@ export function Pattern() {
                               <span className="truncate">
                                 {"Stop Workflow"}
                               </span>
-                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <circle cx="9" cy="12" r="1"></circle>
-                                <circle cx="9" cy="5" r="1"></circle>
-                                <circle cx="9" cy="19" r="1"></circle>
-                                <circle cx="15" cy="12" r="1"></circle>
-                                <circle cx="15" cy="5" r="1"></circle>
-                                <circle cx="15" cy="19" r="1"></circle>
+                              <svg className="duration-150 ease-out group-focus-visible/button:opacity-60 group-hover/button:opacity-60 lucide lucide-grip-vertical ml-auto motion-reduce:transition-none opacity-0 transition-opacity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <circle cx={9} cy={12} r={1}></circle>
+                                <circle cx={9} cy={5} r={1}></circle>
+                                <circle cx={9} cy={19} r={1}></circle>
+                                <circle cx={15} cy={12} r={1}></circle>
+                                <circle cx={15} cy={5} r={1}></circle>
+                                <circle cx={15} cy={19} r={1}></circle>
                               </svg>
                             </Button>
                           </div>
@@ -761,7 +761,7 @@ export function Pattern() {
                     <button className="**:data-[slot=progress-indicator]:bg-destructive -m-1.5 block duration-150 focus-visible:ring-[3px] focus-visible:ring-ring/50 hover:bg-muted motion-reduce:transition-none outline-none p-1.5 rounded-md space-y-1.5 text-destructive text-start transition-colors w-[calc(100%+--spacing(3))]" type="button">
                       <div className="flex gap-1 items-center">
                         <span className="[&_svg]:size-4 shrink-0 size-4">
-                          <svg className="lucide lucide-history" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <svg className="lucide lucide-history" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                             <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                             <path d="M3 3v5h5"></path>
                             <path d="M12 7v5l4 2"></path>
@@ -805,35 +805,35 @@ export function Pattern() {
                           <div className="react-flow__container react-flow__viewport xyflow__viewport" style={{transform: "translate(45px, 120px) scale(0.804386)"}}>
                             <div className="react-flow__edges">
                               <svg style={{zIndex: "0"}}>
-                                <g className="animated nopan react-flow__edge react-flow__edge-labeled selectable" tabIndex="0" role="group" aria-roledescription="edge" data-id="trigger-filter" data-testid="rf__edge-trigger-filter" aria-label="Edge from trigger to filter" aria-describedby="react-flow__edge-desc-1">
+                                <g className="animated nopan react-flow__edge react-flow__edge-labeled selectable" tabIndex={0} role="group" aria-roledescription="edge" data-id="trigger-filter" data-testid="rf__edge-trigger-filter" aria-label="Edge from trigger to filter" aria-describedby="react-flow__edge-desc-1">
                                   <path className="motion-reduce:animate-none! react-flow__edge-path" id="trigger-filter" d="M243.0425299890949 202.01744820065431L263.0425299890949 202.01744820065431L270.39258451472193 202.01744820065431L270.39258451472193 202.01744820065431L276.4994547437296 202.01744820065431L296.4994547437296 202.01744820065431" fill="none" style={{strokeWidth: "1.24318"}}></path>
-                                  <path className="react-flow__edge-interaction" d="M243.0425299890949 202.01744820065431L263.0425299890949 202.01744820065431L270.39258451472193 202.01744820065431L270.39258451472193 202.01744820065431L276.4994547437296 202.01744820065431L296.4994547437296 202.01744820065431" fill="none" strokeOpacity="0" strokeWidth="20"></path>
-                                  <circle className="react-flow__edgeupdater react-flow__edgeupdater-source" cx="259" cy="201.5" r="16" stroke="transparent" fill="transparent"></circle>
-                                  <circle className="react-flow__edgeupdater react-flow__edgeupdater-target" cx="281" cy="201.5" r="16" stroke="transparent" fill="transparent"></circle>
+                                  <path className="react-flow__edge-interaction" d="M243.0425299890949 202.01744820065431L263.0425299890949 202.01744820065431L270.39258451472193 202.01744820065431L270.39258451472193 202.01744820065431L276.4994547437296 202.01744820065431L296.4994547437296 202.01744820065431" fill="none" strokeOpacity={0} strokeWidth={20}></path>
+                                  <circle className="react-flow__edgeupdater react-flow__edgeupdater-source" cx={259} cy={201.5} r={16} stroke="transparent" fill="transparent"></circle>
+                                  <circle className="react-flow__edgeupdater react-flow__edgeupdater-target" cx={281} cy={201.5} r={16} stroke="transparent" fill="transparent"></circle>
                                 </g>
                               </svg>
                               <svg style={{zIndex: "0"}}>
-                                <g className="animated nopan react-flow__edge react-flow__edge-labeled selectable" tabIndex="0" role="group" aria-roledescription="edge" data-id="filter-enrich" data-testid="rf__edge-filter-enrich" aria-label="Edge from filter to enrich" aria-describedby="react-flow__edge-desc-1">
+                                <g className="animated nopan react-flow__edge react-flow__edge-labeled selectable" tabIndex={0} role="group" aria-roledescription="edge" data-id="filter-enrich" data-testid="rf__edge-filter-enrich" aria-label="Edge from filter to enrich" aria-describedby="react-flow__edge-desc-1">
                                   <path className="motion-reduce:animate-none! react-flow__edge-path" id="filter-enrich" d="M542.649945474373 202.01744820065431L562.649945474373 202.01744820065431L 566.3249727371865,202.01744820065431Q 570,202.01744820065431 570,198.3424209378408L 570,85.10359869138499Q 570,81.42857142857143 573.6750272628135,81.42857142857143L577.3500545256271 81.42857142857143L597.3500545256271 81.42857142857143" fill="none" style={{strokeWidth: "1.24318"}}></path>
-                                  <path className="react-flow__edge-interaction" d="M542.649945474373 202.01744820065431L562.649945474373 202.01744820065431L 566.3249727371865,202.01744820065431Q 570,202.01744820065431 570,198.3424209378408L 570,85.10359869138499Q 570,81.42857142857143 573.6750272628135,81.42857142857143L577.3500545256271 81.42857142857143L597.3500545256271 81.42857142857143" fill="none" strokeOpacity="0" strokeWidth="20"></path>
-                                  <circle className="react-flow__edgeupdater react-flow__edgeupdater-source" cx="559" cy="201.5" r="16" stroke="transparent" fill="transparent"></circle>
-                                  <circle className="react-flow__edgeupdater react-flow__edgeupdater-target" cx="581" cy="81.5" r="16" stroke="transparent" fill="transparent"></circle>
+                                  <path className="react-flow__edge-interaction" d="M542.649945474373 202.01744820065431L562.649945474373 202.01744820065431L 566.3249727371865,202.01744820065431Q 570,202.01744820065431 570,198.3424209378408L 570,85.10359869138499Q 570,81.42857142857143 573.6750272628135,81.42857142857143L577.3500545256271 81.42857142857143L597.3500545256271 81.42857142857143" fill="none" strokeOpacity={0} strokeWidth={20}></path>
+                                  <circle className="react-flow__edgeupdater react-flow__edgeupdater-source" cx={559} cy={201.5} r={16} stroke="transparent" fill="transparent"></circle>
+                                  <circle className="react-flow__edgeupdater react-flow__edgeupdater-target" cx={581} cy={81.5} r={16} stroke="transparent" fill="transparent"></circle>
                                 </g>
                               </svg>
                               <svg style={{zIndex: "0"}}>
-                                <g className="nopan react-flow__edge react-flow__edge-labeled selectable" tabIndex="0" role="group" aria-roledescription="edge" data-id="filter-notify" data-testid="rf__edge-filter-notify" aria-label="Edge from filter to notify" aria-describedby="react-flow__edge-desc-1">
+                                <g className="nopan react-flow__edge react-flow__edge-labeled selectable" tabIndex={0} role="group" aria-roledescription="edge" data-id="filter-notify" data-testid="rf__edge-filter-notify" aria-label="Edge from filter to notify" aria-describedby="react-flow__edge-desc-1">
                                   <path className="motion-reduce:animate-none! react-flow__edge-path" id="filter-notify" d="M542.649945474373 202.01744820065431L562.649945474373 202.01744820065431L 566.3249727371865,202.01744820065431Q 570,202.01744820065431 570,205.69247546346782L 570,317.6881134133042Q 570,321.3631406761178 573.6750272628135,321.3631406761178L577.3500545256271 321.3631406761178L597.3500545256271 321.3631406761178" fill="none" style={{strokeWidth: "1.24318"}}></path>
-                                  <path className="react-flow__edge-interaction" d="M542.649945474373 202.01744820065431L562.649945474373 202.01744820065431L 566.3249727371865,202.01744820065431Q 570,202.01744820065431 570,205.69247546346782L 570,317.6881134133042Q 570,321.3631406761178 573.6750272628135,321.3631406761178L577.3500545256271 321.3631406761178L597.3500545256271 321.3631406761178" fill="none" strokeOpacity="0" strokeWidth="20"></path>
-                                  <circle className="react-flow__edgeupdater react-flow__edgeupdater-source" cx="559" cy="201.5" r="16" stroke="transparent" fill="transparent"></circle>
-                                  <circle className="react-flow__edgeupdater react-flow__edgeupdater-target" cx="581" cy="321.5" r="16" stroke="transparent" fill="transparent"></circle>
+                                  <path className="react-flow__edge-interaction" d="M542.649945474373 202.01744820065431L562.649945474373 202.01744820065431L 566.3249727371865,202.01744820065431Q 570,202.01744820065431 570,205.69247546346782L 570,317.6881134133042Q 570,321.3631406761178 573.6750272628135,321.3631406761178L577.3500545256271 321.3631406761178L597.3500545256271 321.3631406761178" fill="none" strokeOpacity={0} strokeWidth={20}></path>
+                                  <circle className="react-flow__edgeupdater react-flow__edgeupdater-source" cx={559} cy={201.5} r={16} stroke="transparent" fill="transparent"></circle>
+                                  <circle className="react-flow__edgeupdater react-flow__edgeupdater-target" cx={581} cy={321.5} r={16} stroke="transparent" fill="transparent"></circle>
                                 </g>
                               </svg>
                               <svg style={{zIndex: "0"}}>
-                                <g className="animated nopan react-flow__edge react-flow__edge-labeled selectable" tabIndex="0" role="group" aria-roledescription="edge" data-id="enrich-deal" data-testid="rf__edge-enrich-deal" aria-label="Edge from enrich to deal" aria-describedby="react-flow__edge-desc-1">
+                                <g className="animated nopan react-flow__edge react-flow__edge-labeled selectable" tabIndex={0} role="group" aria-roledescription="edge" data-id="enrich-deal" data-testid="rf__edge-enrich-deal" aria-label="Edge from enrich to deal" aria-describedby="react-flow__edge-desc-1">
                                   <path className="motion-reduce:animate-none! react-flow__edge-path" id="enrich-deal" d="M843.5005452562705 81.42857142857143L863.5005452562705 81.42857142857143L870.8505997818976 81.42857142857143L870.8505997818976 81.42857142857143L876.9574700109052 81.42857142857143L896.9574700109052 81.42857142857143" fill="none" style={{strokeWidth: "1.24318"}}></path>
-                                  <path className="react-flow__edge-interaction" d="M843.5005452562705 81.42857142857143L863.5005452562705 81.42857142857143L870.8505997818976 81.42857142857143L870.8505997818976 81.42857142857143L876.9574700109052 81.42857142857143L896.9574700109052 81.42857142857143" fill="none" strokeOpacity="0" strokeWidth="20"></path>
-                                  <circle className="react-flow__edgeupdater react-flow__edgeupdater-source" cx="859" cy="81.5" r="16" stroke="transparent" fill="transparent"></circle>
-                                  <circle className="react-flow__edgeupdater react-flow__edgeupdater-target" cx="881" cy="81.5" r="16" stroke="transparent" fill="transparent"></circle>
+                                  <path className="react-flow__edge-interaction" d="M843.5005452562705 81.42857142857143L863.5005452562705 81.42857142857143L870.8505997818976 81.42857142857143L870.8505997818976 81.42857142857143L876.9574700109052 81.42857142857143L896.9574700109052 81.42857142857143" fill="none" strokeOpacity={0} strokeWidth={20}></path>
+                                  <circle className="react-flow__edgeupdater react-flow__edgeupdater-source" cx={859} cy={81.5} r={16} stroke="transparent" fill="transparent"></circle>
+                                  <circle className="react-flow__edgeupdater react-flow__edgeupdater-target" cx={881} cy={81.5} r={16} stroke="transparent" fill="transparent"></circle>
                                 </g>
                               </svg>
                             </div>
@@ -846,12 +846,12 @@ export function Pattern() {
                               </Badge>
                             </div>
                             <div className="react-flow__nodes" style={{position: "absolute", width: "100%", height: "100%", top: "0px", left: "0px"}}>
-                              <div className="draggable group/node nopan react-flow__node react-flow__node-step selectable" data-id="trigger" data-testid="rf__node-trigger" tabIndex="0" role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(0px, 160px)", pointerEvents: "all", visibility: "visible"}}>
+                              <div className="draggable group/node nopan react-flow__node react-flow__node-step selectable" data-id="trigger" data-testid="rf__node-trigger" tabIndex={0} role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(0px, 160px)", pointerEvents: "all", visibility: "visible"}}>
                                 <ContextMenu>
                                 <ContextMenuTrigger className="block pointer-events-auto">
                                   <Item className="[a]:hover:bg-muted bg-card border border-border data-selected:border-primary data-selected:ring-[3px] data-selected:ring-primary/20 gap-2 group-focus-visible/node:border-ring in-data-[slot=dropdown-menu-content]:p-0 p-2 rounded-lg text-sm w-60" variant="outline" size="xs">
                                     <IconTile className="[--icon-tile-radius:min(var(--radius-md),calc(var(--icon-tile-size)/3))] rounded-(--icon-tile-radius)" variant="solid" size="sm">
-                                      <svg className="lucide lucide-webhook" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                      <svg className="lucide lucide-webhook" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                         <path d="M18 16.98h-5.99c-1.1 0-1.95.94-2.48 1.9A4 4 0 0 1 2 17c.01-.7.2-1.4.57-2"></path>
                                         <path d="m6 17 3.13-5.78c.53-.97.1-2.18-.5-3.1a4 4 0 1 1 6.89-4.06"></path>
                                         <path d="m12 6 3.13 5.73C15.66 12.7 16.9 13 18 13a4 4 0 0 1 0 8"></path>
@@ -877,8 +877,8 @@ export function Pattern() {
                                         </span>
                                       </div>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-success-foreground text-xs transition-shadow">
-                                        <svg className="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
+                                        <svg className="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
                                           <path d="m9 12 2 2 4-4"></path>
                                         </svg>
                                         {"Success"}
@@ -889,16 +889,16 @@ export function Pattern() {
                                 </ContextMenuTrigger>
                                 </ContextMenu>
                               </div>
-                              <div className="draggable group/node nopan react-flow__node react-flow__node-step selectable" data-id="filter" data-testid="rf__node-filter" tabIndex="0" role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(300px, 160px)", pointerEvents: "all", visibility: "visible"}}>
+                              <div className="draggable group/node nopan react-flow__node react-flow__node-step selectable" data-id="filter" data-testid="rf__node-filter" tabIndex={0} role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(300px, 160px)", pointerEvents: "all", visibility: "visible"}}>
                                 <ContextMenu>
                                 <ContextMenuTrigger className="block pointer-events-auto">
                                   <Item className="[a]:hover:bg-muted bg-card border border-border data-selected:border-primary data-selected:ring-[3px] data-selected:ring-primary/20 gap-2 group-focus-visible/node:border-ring in-data-[slot=dropdown-menu-content]:p-0 p-2 rounded-lg text-sm w-60" variant="outline" size="xs">
                                     <div className="[&.connectingto]:scale-[1.75] after:-inset-2 after:absolute after:content-[''] after:rounded-full connectable connectableend connectablestart connectionindicator duration-150 ease-out hover:scale-[1.75] motion-reduce:transition-none nodrag nopan react-flow__handle react-flow__handle-left target transition-[scale]" data-nodeid="filter" data-handlepos="left" data-id="1-filter-null-target"></div>
                                     <IconTile className="[--icon-tile-radius:min(var(--radius-md),calc(var(--icon-tile-size)/3))] rounded-(--icon-tile-radius)" variant="outline" size="sm">
-                                      <svg className="lucide lucide-git-branch" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                      <svg className="lucide lucide-git-branch" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                         <path d="M15 6a9 9 0 0 0-9 9V3"></path>
-                                        <circle cx="18" cy="6" r="3"></circle>
-                                        <circle cx="6" cy="18" r="3"></circle>
+                                        <circle cx={18} cy={6} r={3}></circle>
+                                        <circle cx={6} cy={18} r={3}></circle>
                                       </svg>
                                     </IconTile>
                                     <ItemContent className="gap-0 group-data-[size=xs]/item:gap-0 min-w-0">
@@ -921,8 +921,8 @@ export function Pattern() {
                                         </span>
                                       </div>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-success-foreground text-xs transition-shadow">
-                                        <svg className="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
+                                        <svg className="lucide lucide-circle-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
                                           <path d="m9 12 2 2 4-4"></path>
                                         </svg>
                                         {"Success"}
@@ -933,14 +933,14 @@ export function Pattern() {
                                 </ContextMenuTrigger>
                                 </ContextMenu>
                               </div>
-                              <div className="draggable group/node nopan react-flow__node react-flow__node-step selectable" data-id="enrich" data-testid="rf__node-enrich" tabIndex="0" role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(600px, 40px)", pointerEvents: "all", visibility: "visible"}}>
+                              <div className="draggable group/node nopan react-flow__node react-flow__node-step selectable" data-id="enrich" data-testid="rf__node-enrich" tabIndex={0} role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(600px, 40px)", pointerEvents: "all", visibility: "visible"}}>
                                 <ContextMenu>
                                 <ContextMenuTrigger className="block pointer-events-auto">
                                   <Item className="[a]:hover:bg-muted bg-card border border-border data-selected:border-primary data-selected:ring-[3px] data-selected:ring-primary/20 gap-2 group-focus-visible/node:border-ring in-data-[slot=dropdown-menu-content]:p-0 p-2 rounded-lg text-sm w-60" variant="outline" size="xs">
                                     <div className="[&.connectingto]:scale-[1.75] after:-inset-2 after:absolute after:content-[''] after:rounded-full connectable connectableend connectablestart connectionindicator duration-150 ease-out hover:scale-[1.75] motion-reduce:transition-none nodrag nopan react-flow__handle react-flow__handle-left target transition-[scale]" data-nodeid="enrich" data-handlepos="left" data-id="1-enrich-null-target"></div>
                                     <IconTile className="[--icon-tile-radius:min(var(--radius-md),calc(var(--icon-tile-size)/3))] rounded-(--icon-tile-radius)" variant="outline" size="sm">
-                                      <svg className="lucide lucide-database" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                        <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                      <svg className="lucide lucide-database" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                        <ellipse cx={12} cy={5} rx={9} ry={3}></ellipse>
                                         <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
                                         <path d="M3 12A9 3 0 0 0 21 12"></path>
                                       </svg>
@@ -965,8 +965,8 @@ export function Pattern() {
                                         </span>
                                       </div>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-destructive-foreground text-xs transition-shadow">
-                                        <svg className="lucide lucide-circle-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
+                                        <svg className="lucide lucide-circle-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
                                           <path d="m15 9-6 6"></path>
                                           <path d="m9 9 6 6"></path>
                                         </svg>
@@ -978,13 +978,13 @@ export function Pattern() {
                                 </ContextMenuTrigger>
                                 </ContextMenu>
                               </div>
-                              <div className="draggable group/node nopan react-flow__node react-flow__node-step selectable" data-id="notify" data-testid="rf__node-notify" tabIndex="0" role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(600px, 280px)", pointerEvents: "all", visibility: "visible"}}>
+                              <div className="draggable group/node nopan react-flow__node react-flow__node-step selectable" data-id="notify" data-testid="rf__node-notify" tabIndex={0} role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(600px, 280px)", pointerEvents: "all", visibility: "visible"}}>
                                 <ContextMenu>
                                 <ContextMenuTrigger className="block pointer-events-auto">
                                   <Item className="[a]:hover:bg-muted bg-card border border-border data-selected:border-primary data-selected:ring-[3px] data-selected:ring-primary/20 gap-2 group-focus-visible/node:border-ring in-data-[slot=dropdown-menu-content]:p-0 p-2 rounded-lg text-sm w-60" variant="outline" size="xs">
                                     <div className="[&.connectingto]:scale-[1.75] after:-inset-2 after:absolute after:content-[''] after:rounded-full connectable connectableend connectablestart connectionindicator duration-150 ease-out hover:scale-[1.75] motion-reduce:transition-none nodrag nopan react-flow__handle react-flow__handle-left target transition-[scale]" data-nodeid="notify" data-handlepos="left" data-id="1-notify-null-target"></div>
                                     <IconTile className="[--icon-tile-radius:min(var(--radius-md),calc(var(--icon-tile-size)/3))] rounded-(--icon-tile-radius)" variant="outline" size="sm">
-                                      <svg className="lucide lucide-messages-square" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                      <svg className="lucide lucide-messages-square" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                         <path d="M16 10a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 14.286V4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
                                         <path d="M20 9a2 2 0 0 1 2 2v10.286a.71.71 0 0 1-1.212.502l-2.202-2.202A2 2 0 0 0 17.172 19H10a2 2 0 0 1-2-2v-1"></path>
                                       </svg>
@@ -1009,7 +1009,7 @@ export function Pattern() {
                                         </span>
                                       </div>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
-                                        <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                        <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="M5 12h14"></path>
                                         </svg>
                                         {"Skipped"}
@@ -1020,13 +1020,13 @@ export function Pattern() {
                                 </ContextMenuTrigger>
                                 </ContextMenu>
                               </div>
-                              <div className="draggable group/node nopan react-flow__node react-flow__node-step selectable" data-id="deal" data-testid="rf__node-deal" tabIndex="0" role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(900px, 40px)", pointerEvents: "all", visibility: "visible"}}>
+                              <div className="draggable group/node nopan react-flow__node react-flow__node-step selectable" data-id="deal" data-testid="rf__node-deal" tabIndex={0} role="group" aria-roledescription="node" aria-describedby="react-flow__node-desc-1" style={{zIndex: "0", transform: "translate(900px, 40px)", pointerEvents: "all", visibility: "visible"}}>
                                 <ContextMenu>
                                 <ContextMenuTrigger className="block pointer-events-auto">
                                   <Item className="[a]:hover:bg-muted bg-card border border-border data-selected:border-primary data-selected:ring-[3px] data-selected:ring-primary/20 gap-2 group-focus-visible/node:border-ring in-data-[slot=dropdown-menu-content]:p-0 p-2 rounded-lg text-sm w-60" variant="outline" size="xs">
                                     <div className="[&.connectingto]:scale-[1.75] after:-inset-2 after:absolute after:content-[''] after:rounded-full connectable connectableend connectablestart connectionindicator duration-150 ease-out hover:scale-[1.75] motion-reduce:transition-none nodrag nopan react-flow__handle react-flow__handle-left target transition-[scale]" data-nodeid="deal" data-handlepos="left" data-id="1-deal-null-target"></div>
                                     <IconTile className="[--icon-tile-radius:min(var(--radius-md),calc(var(--icon-tile-size)/3))] rounded-(--icon-tile-radius)" variant="outline" size="sm">
-                                      <svg className="lucide lucide-zap" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                      <svg className="lucide lucide-zap" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                         <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                                       </svg>
                                     </IconTile>
@@ -1050,9 +1050,9 @@ export function Pattern() {
                                         </span>
                                       </div>
                                       <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative rounded-sm text-xs transition-shadow">
-                                        <svg className="lucide lucide-circle-dot" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                          <circle cx="12" cy="12" r="10"></circle>
-                                          <circle cx="12" cy="12" r="1"></circle>
+                                        <svg className="lucide lucide-circle-dot" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                          <circle cx={12} cy={12} r={10}></circle>
+                                          <circle cx={12} cy={12} r={1}></circle>
                                         </svg>
                                         {"Idle"}
                                       </Badge>
@@ -1068,21 +1068,21 @@ export function Pattern() {
                         </div>
                       </div>
                       <svg className="react-flow__background" data-testid="rf__background" style={{position: "absolute", width: "100%", height: "100%", top: "0px", left: "0px"}}>
-                        <pattern id="pattern-1" x="6.389473684210529" y="4.168421052631587" width="19.305263157894736" height="19.305263157894736" patternUnits="userSpaceOnUse" patterntransform="translate(-9.652631578947368,-9.652631578947368)">
-                          <circle className="dots react-flow__background-pattern" cx="0.8043859649122806" cy="0.8043859649122806" r="0.8043859649122806"></circle>
+                        <pattern id="pattern-1" x={6.389473684210529} y={4.168421052631587} width={19.305263157894736} height={19.305263157894736} patternUnits="userSpaceOnUse" patterntransform="translate(-9.652631578947368,-9.652631578947368)">
+                          <circle className="dots react-flow__background-pattern" cx={0.8043859649122806} cy={0.8043859649122806} r={0.8043859649122806}></circle>
                         </pattern>
-                        <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-1)"></rect>
+                        <rect x={0} y={0} width="100%" height="100%" fill="url(#pattern-1)"></rect>
                       </svg>
                       <div className="@max-[540px]:hidden bottom max-md:hidden react-flow__minimap react-flow__panel right" data-testid="rf__minimap">
-                        <svg className="react-flow__minimap-svg" width="200" height="150" viewBox="-87.24045801526718 -298.73718647764457 1314.4809160305344 1001.5092693565978" role="img" aria-labelledby="react-flow__minimap-desc-1">
+                        <svg className="react-flow__minimap-svg" width={200} height={150} viewBox="-87.24045801526718 -298.73718647764457 1314.4809160305344 1001.5092693565978" role="img" aria-labelledby="react-flow__minimap-desc-1">
                           <title id="react-flow__minimap-desc-1">
                             {"Mini Map"}
                           </title>
-                          <rect className="react-flow__minimap-node" x="0" y="160" rx="5" ry="5" width="240" height="83" shape-rendering="crispEdges"></rect>
-                          <rect className="react-flow__minimap-node" x="300" y="160" rx="5" ry="5" width="240" height="83" shape-rendering="crispEdges"></rect>
-                          <rect className="react-flow__minimap-node" x="600" y="40" rx="5" ry="5" width="240" height="83" shape-rendering="crispEdges"></rect>
-                          <rect className="react-flow__minimap-node" x="600" y="280" rx="5" ry="5" width="240" height="83" shape-rendering="crispEdges"></rect>
-                          <rect className="react-flow__minimap-node" x="900" y="40" rx="5" ry="5" width="240" height="83" shape-rendering="crispEdges"></rect>
+                          <rect className="react-flow__minimap-node" x={0} y={160} rx={5} ry={5} width={240} height={83} shape-rendering="crispEdges"></rect>
+                          <rect className="react-flow__minimap-node" x={300} y={160} rx={5} ry={5} width={240} height={83} shape-rendering="crispEdges"></rect>
+                          <rect className="react-flow__minimap-node" x={600} y={40} rx={5} ry={5} width={240} height={83} shape-rendering="crispEdges"></rect>
+                          <rect className="react-flow__minimap-node" x={600} y={280} rx={5} ry={5} width={240} height={83} shape-rendering="crispEdges"></rect>
+                          <rect className="react-flow__minimap-node" x={900} y={40} rx={5} ry={5} width={240} height={83} shape-rendering="crispEdges"></rect>
                           <path className="react-flow__minimap-mask" d={"M-118.53762268266085,-330.0343511450383h1377.0752453653217v1064.103598691385h-1377.0752453653217z\n        M-55.94329334787351,-149.18211559432933h1251.8865866957472v702.3991275899673h-1251.8865866957472z"} fillRule="evenodd" pointer-events="none"></path>
                         </svg>
                       </div>
@@ -1090,15 +1090,15 @@ export function Pattern() {
                         <Card className="*:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl [--card-spacing:--spacing(4)] bg-card data-[size=sm]:[--card-spacing:--spacing(3)] data-[size=sm]:has-data-[slot=card-footer]:pb-0 flex-row gap-1 has-[>img:first-child]:pt-0 has-data-[slot=card-footer]:pb-0 items-center overflow-hidden p-1 ring-1 ring-foreground/10 rounded-xl text-card-foreground text-sm" size="sm" role="group" aria-label="Canvas controls">
                           <ToggleGroup className="data-[size=sm]:rounded-[min(var(--radius-md),10px)] rounded-lg" data-orientation="horizontal" role="group" size="sm" spacing="0.5" aria-label="Canvas tool" style={{"--gap": "0.5"}}>
                             <Tooltip>
-                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 aria-invalid:border-destructive aria-invalid:ring-destructive/20 aria-pressed:bg-muted bg-transparent dark:aria-invalid:ring-destructive/40 data-[state=on]:bg-muted disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:z-10 focus:z-10 font-medium gap-1 group-data-[spacing=0]/toggle-group:has-data-[icon=inline-end]:pr-1.5 group-data-[spacing=0]/toggle-group:has-data-[icon=inline-start]:pl-1.5 group-data-[spacing=0]/toggle-group:px-2 group-data-[spacing=0]/toggle-group:rounded-none group-data-horizontal/toggle-group:data-[spacing=0]:data-[variant=outline]:border-l-0 group-data-horizontal/toggle-group:data-[spacing=0]:data-[variant=outline]:first:border-l group-data-horizontal/toggle-group:data-[spacing=0]:first:rounded-l-lg group-data-horizontal/toggle-group:data-[spacing=0]:last:rounded-r-lg group-data-vertical/toggle-group:data-[spacing=0]:data-[variant=outline]:border-t-0 group-data-vertical/toggle-group:data-[spacing=0]:data-[variant=outline]:first:border-t group-data-vertical/toggle-group:data-[spacing=0]:first:rounded-t-lg group-data-vertical/toggle-group:data-[spacing=0]:last:rounded-b-lg group/toggle h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground inline-flex items-center justify-center min-w-7 outline-none px-0 rounded-[min(var(--radius-md),12px)] shrink-0 text-[0.8rem] transition-all whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="default" size="sm" spacing="0.5" aria-label="Select" id="base-ui-_r_v_" baseUiTooltipTrigger="">
-                              <svg className="lucide lucide-mouse-pointer-2 lucide-mouse-pointer2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 aria-invalid:border-destructive aria-invalid:ring-destructive/20 aria-pressed:bg-muted bg-transparent dark:aria-invalid:ring-destructive/40 data-[state=on]:bg-muted disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:z-10 focus:z-10 font-medium gap-1 group-data-[spacing=0]/toggle-group:has-data-[icon=inline-end]:pr-1.5 group-data-[spacing=0]/toggle-group:has-data-[icon=inline-start]:pl-1.5 group-data-[spacing=0]/toggle-group:px-2 group-data-[spacing=0]/toggle-group:rounded-none group-data-horizontal/toggle-group:data-[spacing=0]:data-[variant=outline]:border-l-0 group-data-horizontal/toggle-group:data-[spacing=0]:data-[variant=outline]:first:border-l group-data-horizontal/toggle-group:data-[spacing=0]:first:rounded-l-lg group-data-horizontal/toggle-group:data-[spacing=0]:last:rounded-r-lg group-data-vertical/toggle-group:data-[spacing=0]:data-[variant=outline]:border-t-0 group-data-vertical/toggle-group:data-[spacing=0]:data-[variant=outline]:first:border-t group-data-vertical/toggle-group:data-[spacing=0]:first:rounded-t-lg group-data-vertical/toggle-group:data-[spacing=0]:last:rounded-b-lg group/toggle h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground inline-flex items-center justify-center min-w-7 outline-none px-0 rounded-[min(var(--radius-md),12px)] shrink-0 text-[0.8rem] transition-all whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex={0} aria-pressed="true" variant="default" size="sm" spacing="0.5" aria-label="Select" id="base-ui-_r_v_" baseUiTooltipTrigger="">
+                              <svg className="lucide lucide-mouse-pointer-2 lucide-mouse-pointer2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M4.037 4.688a.495.495 0 0 1 .651-.651l16 6.5a.5.5 0 0 1-.063.947l-6.124 1.58a2 2 0 0 0-1.438 1.435l-1.579 6.126a.5.5 0 0 1-.947.063z"></path>
                               </svg>
                             </TooltipTrigger>
                             </Tooltip>
                             <Tooltip>
-                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 aria-invalid:border-destructive aria-invalid:ring-destructive/20 aria-pressed:bg-muted bg-transparent dark:aria-invalid:ring-destructive/40 data-[state=on]:bg-muted disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:z-10 focus:z-10 font-medium gap-1 group-data-[spacing=0]/toggle-group:has-data-[icon=inline-end]:pr-1.5 group-data-[spacing=0]/toggle-group:has-data-[icon=inline-start]:pl-1.5 group-data-[spacing=0]/toggle-group:px-2 group-data-[spacing=0]/toggle-group:rounded-none group-data-horizontal/toggle-group:data-[spacing=0]:data-[variant=outline]:border-l-0 group-data-horizontal/toggle-group:data-[spacing=0]:data-[variant=outline]:first:border-l group-data-horizontal/toggle-group:data-[spacing=0]:first:rounded-l-lg group-data-horizontal/toggle-group:data-[spacing=0]:last:rounded-r-lg group-data-vertical/toggle-group:data-[spacing=0]:data-[variant=outline]:border-t-0 group-data-vertical/toggle-group:data-[spacing=0]:data-[variant=outline]:first:border-t group-data-vertical/toggle-group:data-[spacing=0]:first:rounded-t-lg group-data-vertical/toggle-group:data-[spacing=0]:last:rounded-b-lg group/toggle h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground inline-flex items-center justify-center min-w-7 outline-none px-0 rounded-[min(var(--radius-md),12px)] shrink-0 text-[0.8rem] transition-all whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="sm" spacing="0.5" aria-label="Pan" id="base-ui-_r_12_" baseUiTooltipTrigger="">
-                              <svg className="lucide lucide-hand" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 aria-invalid:border-destructive aria-invalid:ring-destructive/20 aria-pressed:bg-muted bg-transparent dark:aria-invalid:ring-destructive/40 data-[state=on]:bg-muted disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 focus-visible:z-10 focus:z-10 font-medium gap-1 group-data-[spacing=0]/toggle-group:has-data-[icon=inline-end]:pr-1.5 group-data-[spacing=0]/toggle-group:has-data-[icon=inline-start]:pl-1.5 group-data-[spacing=0]/toggle-group:px-2 group-data-[spacing=0]/toggle-group:rounded-none group-data-horizontal/toggle-group:data-[spacing=0]:data-[variant=outline]:border-l-0 group-data-horizontal/toggle-group:data-[spacing=0]:data-[variant=outline]:first:border-l group-data-horizontal/toggle-group:data-[spacing=0]:first:rounded-l-lg group-data-horizontal/toggle-group:data-[spacing=0]:last:rounded-r-lg group-data-vertical/toggle-group:data-[spacing=0]:data-[variant=outline]:border-t-0 group-data-vertical/toggle-group:data-[spacing=0]:data-[variant=outline]:first:border-t group-data-vertical/toggle-group:data-[spacing=0]:first:rounded-t-lg group-data-vertical/toggle-group:data-[spacing=0]:last:rounded-b-lg group/toggle h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground inline-flex items-center justify-center min-w-7 outline-none px-0 rounded-[min(var(--radius-md),12px)] shrink-0 text-[0.8rem] transition-all whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="default" size="sm" spacing="0.5" aria-label="Pan" id="base-ui-_r_12_" baseUiTooltipTrigger="">
+                              <svg className="lucide lucide-hand" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"></path>
                                 <path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2"></path>
                                 <path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8"></path>
@@ -1110,20 +1110,20 @@ export function Pattern() {
                           <Separator className="data-vertical:self-center h-4" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
                           <div className="flex gap-0.5 items-center" role="group" aria-label="Zoom">
                             <Tooltip>
-                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Zoom out" id="base-ui-_r_15_" baseUiTooltipTrigger="">
-                              <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Zoom out" id="base-ui-_r_15_" baseUiTooltipTrigger="">
+                              <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M5 12h14"></path>
                               </svg>
                             </TooltipTrigger>
                             </Tooltip>
                             <DropdownMenu>
-                            <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:not-hover:bg-transparent aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1 group/button h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none px-2.5 rounded-[min(var(--radius-md),12px)] select-none shrink-0 tabular-nums text-[0.8rem] transition-all w-12 whitespace-nowrap" type="button" tabIndex="0" aria-label="Zoom level 80%" aria-haspopup="menu" aria-expanded="false" id="base-ui-_r_19_">
+                            <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:not-hover:bg-transparent aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1 group/button h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none px-2.5 rounded-[min(var(--radius-md),12px)] select-none shrink-0 tabular-nums text-[0.8rem] transition-all w-12 whitespace-nowrap" type="button" tabIndex={0} aria-label="Zoom level 80%" aria-haspopup="menu" aria-expanded="false" id="base-ui-_r_19_">
                               {"80%"}
                             </DropdownMenuTrigger>
                             </DropdownMenu>
                             <Tooltip>
-                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Zoom in" id="base-ui-_r_1c_" baseUiTooltipTrigger="">
-                              <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Zoom in" id="base-ui-_r_1c_" baseUiTooltipTrigger="">
+                              <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M5 12h14"></path>
                                 <path d="M12 5v14"></path>
                               </svg>
@@ -1133,16 +1133,16 @@ export function Pattern() {
                           <Separator className="data-vertical:self-center h-4" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
                           <div className="flex gap-0.5 items-center" role="group" aria-label="History">
                             <Tooltip>
-                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" disabled="" tabIndex="0" disabled aria-label="Undo" id="base-ui-_r_1e_" baseUiTooltipTrigger="">
-                              <svg className="lucide lucide-undo-2 lucide-undo2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" disabled="" tabIndex={0} disabled aria-label="Undo" id="base-ui-_r_1e_" baseUiTooltipTrigger="">
+                              <svg className="lucide lucide-undo-2 lucide-undo2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M9 14 4 9l5-5"></path>
                                 <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11"></path>
                               </svg>
                             </TooltipTrigger>
                             </Tooltip>
                             <Tooltip>
-                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" disabled="" tabIndex="0" disabled aria-label="Redo" id="base-ui-_r_1g_" baseUiTooltipTrigger="">
-                              <svg className="lucide lucide-redo-2 lucide-redo2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-sm transition-all whitespace-nowrap" type="button" disabled="" tabIndex={0} disabled aria-label="Redo" id="base-ui-_r_1g_" baseUiTooltipTrigger="">
+                              <svg className="lucide lucide-redo-2 lucide-redo2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="m15 14 5-5-5-5"></path>
                                 <path d="M20 9H9.5A5.5 5.5 0 0 0 4 14.5A5.5 5.5 0 0 0 9.5 20H13"></path>
                               </svg>
@@ -1151,9 +1151,9 @@ export function Pattern() {
                           </div>
                           <Separator className="data-vertical:self-center h-4" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 aria-invalid:border-destructive aria-invalid:ring-destructive/20 aria-pressed:bg-primary aria-pressed:text-primary-foreground bg-transparent dark:aria-invalid:ring-destructive/40 data-[state=on]:bg-muted disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 font-medium gap-1 group/toggle h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground inline-flex items-center justify-center min-w-7 outline-none px-0 rounded-[min(var(--radius-md),12px)] text-[0.8rem] transition-all whitespace-nowrap" type="button" tabIndex="0" aria-pressed="false" aria-label="Lock canvas" id="base-ui-_r_1i_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-lock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                              <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                          <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-3.5 [&_svg]:pointer-events-none [&_svg]:shrink-0 aria-invalid:border-destructive aria-invalid:ring-destructive/20 aria-pressed:bg-primary aria-pressed:text-primary-foreground bg-transparent dark:aria-invalid:ring-destructive/40 data-[state=on]:bg-muted disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 font-medium gap-1 group/toggle h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground inline-flex items-center justify-center min-w-7 outline-none px-0 rounded-[min(var(--radius-md),12px)] text-[0.8rem] transition-all whitespace-nowrap" type="button" tabIndex={0} aria-pressed="false" aria-label="Lock canvas" id="base-ui-_r_1i_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-lock" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <rect width={18} height={11} x={3} y={11} rx={2} ry={2}></rect>
                               <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                             </svg>
                           </TooltipTrigger>
@@ -1179,7 +1179,7 @@ export function Pattern() {
                       <div className="bg-card flex flex-col h-full">
                         <header className="flex gap-3 items-start pt-3 px-4 shrink-0">
                           <IconTile className="[--icon-tile-radius:min(var(--radius-md),calc(var(--icon-tile-size)/3))] rounded-(--icon-tile-radius)" variant="outline" size="sm">
-                            <svg className="lucide lucide-zap" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <svg className="lucide lucide-zap" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
                             </svg>
                           </IconTile>
@@ -1194,8 +1194,8 @@ export function Pattern() {
                             </div>
                           </div>
                           <div className="-me-2 -mt-1.5 flex items-center">
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground rounded-lg size-8 text-sm" type="button" tabIndex="0" aria-label="Close step details">
-                              <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium hover:bg-muted hover:text-foreground rounded-lg size-8 text-sm" type="button" tabIndex={0} aria-label="Close step details">
+                              <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M18 6 6 18"></path>
                                 <path d="m6 6 12 12"></path>
                               </svg>
@@ -1205,20 +1205,20 @@ export function Pattern() {
                         <Tabs className="flex-1 gap-0 min-h-0" data-orientation="horizontal" activationDirection="none">
                           <div className="border-b pb-3 pt-3 px-4 shrink-0">
                             <TabsList className="data-[variant=line]:rounded-none group-data-horizontal/tabs:h-8 p-[3px] rounded-lg w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
-                              <TabsTrigger className="[&_svg:not([class*='size-'])]:size-4 border border-transparent font-medium gap-1.5 group-data-[variant=default]/tabs-list:data-active:shadow-sm group-data-[variant=line]/tabs-list:data-active:shadow-none has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 px-1.5 py-0.5 rounded-md text-sm" type="button" data-active="" data-orientation="horizontal" activationDirection="none" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_1k_" compositeItemActive="" aria-controls="base-ui-_r_1n_">
+                              <TabsTrigger className="[&_svg:not([class*='size-'])]:size-4 border border-transparent font-medium gap-1.5 group-data-[variant=default]/tabs-list:data-active:shadow-sm group-data-[variant=line]/tabs-list:data-active:shadow-none has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 px-1.5 py-0.5 rounded-md text-sm" type="button" data-active="" data-orientation="horizontal" activationDirection="none" aria-disabled="false" tabIndex={0} role="tab" aria-selected="true" id="base-ui-_r_1k_" compositeItemActive="" aria-controls="base-ui-_r_1n_">
                                 {"Build"}
                               </TabsTrigger>
-                              <TabsTrigger className="[&_svg:not([class*='size-'])]:size-4 border border-transparent font-medium gap-1.5 group-data-[variant=default]/tabs-list:data-active:shadow-sm group-data-[variant=line]/tabs-list:data-active:shadow-none has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 px-1.5 py-0.5 rounded-md text-sm" type="button" data-orientation="horizontal" activationDirection="none" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1l_">
+                              <TabsTrigger className="[&_svg:not([class*='size-'])]:size-4 border border-transparent font-medium gap-1.5 group-data-[variant=default]/tabs-list:data-active:shadow-sm group-data-[variant=line]/tabs-list:data-active:shadow-none has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 px-1.5 py-0.5 rounded-md text-sm" type="button" data-orientation="horizontal" activationDirection="none" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_1l_">
                                 {"Status"}
                               </TabsTrigger>
-                              <TabsTrigger className="[&_svg:not([class*='size-'])]:size-4 border border-transparent font-medium gap-1.5 group-data-[variant=default]/tabs-list:data-active:shadow-sm group-data-[variant=line]/tabs-list:data-active:shadow-none has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 px-1.5 py-0.5 rounded-md text-sm" type="button" data-orientation="horizontal" activationDirection="none" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1m_">
+                              <TabsTrigger className="[&_svg:not([class*='size-'])]:size-4 border border-transparent font-medium gap-1.5 group-data-[variant=default]/tabs-list:data-active:shadow-sm group-data-[variant=line]/tabs-list:data-active:shadow-none has-data-[icon=inline-end]:pr-1 has-data-[icon=inline-start]:pl-1 px-1.5 py-0.5 rounded-md text-sm" type="button" data-orientation="horizontal" activationDirection="none" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_1m_">
                                 {"Logs"}
                               </TabsTrigger>
                             </TabsList>
                           </div>
-                          <TabsContent className="[&[hidden]]:hidden flex flex-col min-h-0 text-sm" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_1n_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_1k_">
+                          <TabsContent className="[&[hidden]]:hidden flex flex-col min-h-0 text-sm" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_1n_" role="tabpanel" tabIndex={0} index="0" aria-labelledby="base-ui-_r_1k_">
                             <ScrollArea className="flex-1 min-h-0 scroll-fade-y" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
-                              <div className="base-ui-disable-scrollbar focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_1o_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
+                              <div className="base-ui-disable-scrollbar focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_1o_-viewport" tabIndex={-1} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                                 <div className="flex flex-col gap-5 p-4">
                                   <section className="flex flex-col gap-3" aria-labelledby="step-facts">
                                     <h3 className="font-semibold text-sm" id="step-facts">
@@ -1274,16 +1274,16 @@ export function Pattern() {
                         </Tabs>
                         <footer className="border-t p-4 shrink-0">
                           <div className="gap-3 grid grid-cols-2">
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground px-2.5 rounded-lg text-sm" type="button" tabIndex="0">
-                              <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-input/30 dark:border-input dark:hover:bg-input/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground px-2.5 rounded-lg text-sm" type="button" tabIndex={0}>
+                              <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                                 <path d="m15 5 4 4"></path>
                               </svg>
                               {"Edit step"}
                             </Button>
-                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding bg-primary border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-primary/80 px-2.5 rounded-lg text-primary-foreground text-sm" type="button" tabIndex="0">
+                            <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding bg-primary border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-1.5 h-8 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-primary/80 px-2.5 rounded-lg text-primary-foreground text-sm" type="button" tabIndex={0}>
                               {"Next step"}
-                              <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M5 12h14"></path>
                                 <path d="m12 5 7 7-7 7"></path>
                               </svg>
@@ -1293,7 +1293,7 @@ export function Pattern() {
                       </div>
                     </div>
                   </aside>
-                  <button className="bottom-4 end-4 fixed invisible pointer-events-none size-8 z-40" type="button" tabIndex="-1" aria-hidden="true" inert=""></button>
+                  <button className="bottom-4 end-4 fixed invisible pointer-events-none size-8 z-40" type="button" tabIndex={-1} aria-hidden="true" inert=""></button>
                   <Card className="*:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl [--card-spacing:--spacing(4)] [--window-h:min(40rem,calc(100svh-2rem))] [--window-max-h:calc(100svh-2rem)] bg-popover bottom-4 data-[size=sm]:[--card-spacing:--spacing(3)] data-[size=sm]:has-data-[slot=card-footer]:pb-0 data-[state=closed]:[content-visibility:hidden] data-[state=closed]:invisible end-4 fixed gap-0 h-(--window-h) has-[>img:first-child]:pt-0 has-data-[slot=card-footer]:pb-0 max-sm:h-(--window-max-h) origin-bottom-right overflow-hidden p-0 ring-1 ring-foreground/10 rounded-xl rtl:origin-bottom-left shadow-md sm:data-[expanded=true]:h-(--window-max-h) sm:max-w-104 text-card-foreground text-sm w-[calc(100vw-2rem)] z-50" size="default" role="dialog" aria-modal="false" aria-labelledby="_r_1t_" aria-describedby="_r_1u_" data-state="closed" expanded="false" inert="">
                     <div className="absolute after:absolute after:bg-linear-to-b after:from-popover after:h-6 after:inset-x-0 after:pointer-events-none after:to-transparent after:top-full backdrop-blur-md bg-popover/70 in-data-[size=minimized]:backdrop-filter-none inset-x-0 rounded-t-xl supports-backdrop-filter:bg-popover/60 top-0 z-20">
                       <span className="absolute border-foreground/10 border-t hidden in-data-folding:block inset-0 pointer-events-none rounded-t-xl" aria-hidden="true" data-fold="edge"></span>
@@ -1312,8 +1312,8 @@ export function Pattern() {
                         <div className="flex gap-0.5 items-center ms-auto shrink-0">
                           <div className="flex gap-0.5 items-center" data-fold="controls">
                             <Tooltip>
-                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" disabled="" tabIndex="0" disabled aria-label="New chat" id="base-ui-_r_20_" baseUiTooltipTrigger="">
-                              <svg className="lucide lucide-square-pen" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" disabled="" tabIndex={0} disabled aria-label="New chat" id="base-ui-_r_20_" baseUiTooltipTrigger="">
+                              <svg className="lucide lucide-square-pen" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                                 <path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"></path>
                               </svg>
@@ -1322,8 +1322,8 @@ export function Pattern() {
                             <Tooltip>
                             <TooltipTrigger className="flex" id="base-ui-_r_23_" baseUiTooltipTrigger="">
                               <Popover>
-                              <PopoverTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Chat history" baseUiClickTrigger="" id="base-ui-_r_24_" aria-haspopup="dialog" aria-expanded="false">
-                                <svg className="lucide lucide-history" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <PopoverTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Chat history" baseUiClickTrigger="" id="base-ui-_r_24_" aria-haspopup="dialog" aria-expanded="false">
+                                <svg className="lucide lucide-history" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                                   <path d="M3 3v5h5"></path>
                                   <path d="M12 7v5l4 2"></path>
@@ -1335,14 +1335,14 @@ export function Pattern() {
                             <Separator className="h-4 my-auto" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
                           </div>
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 [@media(max-height:42rem)]:hidden active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button group/expand hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center max-sm:hidden outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Expand chat" aria-pressed="false" id="base-ui-_r_26_" baseUiTooltipTrigger="">
-                            <svg className="group-aria-pressed/expand:hidden lucide lucide-maximize-2 lucide-maximize2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 [@media(max-height:42rem)]:hidden active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button group/expand hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center max-sm:hidden outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Expand chat" aria-pressed="false" id="base-ui-_r_26_" baseUiTooltipTrigger="">
+                            <svg className="group-aria-pressed/expand:hidden lucide lucide-maximize-2 lucide-maximize2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M15 3h6v6"></path>
                               <path d="m21 3-7 7"></path>
                               <path d="m3 21 7-7"></path>
                               <path d="M9 21H3v-6"></path>
                             </svg>
-                            <svg className="group-aria-pressed/expand:block hidden lucide lucide-minimize-2 lucide-minimize2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <svg className="group-aria-pressed/expand:block hidden lucide lucide-minimize-2 lucide-minimize2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="m14 10 7-7"></path>
                               <path d="M20 10h-6V4"></path>
                               <path d="m3 21 7-7"></path>
@@ -1351,15 +1351,15 @@ export function Pattern() {
                           </TooltipTrigger>
                           </Tooltip>
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Minimize chat" id="base-ui-_r_28_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Minimize chat" id="base-ui-_r_28_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M5 12h14"></path>
                             </svg>
                           </TooltipTrigger>
                           </Tooltip>
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="End chat" id="base-ui-_r_2a_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="End chat" id="base-ui-_r_2a_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M18 6 6 18"></path>
                               <path d="m6 6 12 12"></path>
                             </svg>
@@ -1384,40 +1384,40 @@ export function Pattern() {
                               {"Try Asking"}
                             </p>
                             <div className="flex flex-col">
-                              <Button className="[&_svg:not([class*='size-'])]:size-3.5 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground w-full" type="button" tabIndex="0">
-                                <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <Button className="[&_svg:not([class*='size-'])]:size-3.5 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground w-full" type="button" tabIndex={0}>
+                                <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="m9 18 6-6-6-6"></path>
                                 </svg>
                                 <span className="min-w-0 truncate">
                                   {"Why did Enrich company fail?"}
                                 </span>
                               </Button>
-                              <Button className="[&_svg:not([class*='size-'])]:size-3.5 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground w-full" type="button" tabIndex="0">
-                                <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <Button className="[&_svg:not([class*='size-'])]:size-3.5 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground w-full" type="button" tabIndex={0}>
+                                <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="m9 18 6-6-6-6"></path>
                                 </svg>
                                 <span className="min-w-0 truncate">
                                   {"Which steps were skipped?"}
                                 </span>
                               </Button>
-                              <Button className="[&_svg:not([class*='size-'])]:size-3.5 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground w-full" type="button" tabIndex="0">
-                                <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <Button className="[&_svg:not([class*='size-'])]:size-3.5 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground w-full" type="button" tabIndex={0}>
+                                <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="m9 18 6-6-6-6"></path>
                                 </svg>
                                 <span className="min-w-0 truncate">
                                   {"How do I fix the timeout?"}
                                 </span>
                               </Button>
-                              <Button className="[&_svg:not([class*='size-'])]:size-3.5 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground w-full" type="button" tabIndex="0">
-                                <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <Button className="[&_svg:not([class*='size-'])]:size-3.5 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground w-full" type="button" tabIndex={0}>
+                                <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="m9 18 6-6-6-6"></path>
                                 </svg>
                                 <span className="min-w-0 truncate">
                                   {"Notify sales when a deal is created"}
                                 </span>
                               </Button>
-                              <Button className="[&_svg:not([class*='size-'])]:size-3.5 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground w-full" type="button" tabIndex="0">
-                                <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <Button className="[&_svg:not([class*='size-'])]:size-3.5 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-normal gap-2 h-7 has-data-[icon=inline-end]:pr-1.5 has-data-[icon=inline-start]:pl-1.5 hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg justify-start px-2.5 rounded-[min(var(--radius-md),12px)] text-[0.8rem] text-muted-foreground w-full" type="button" tabIndex={0}>
+                                <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="m9 18 6-6-6-6"></path>
                                 </svg>
                                 <span className="min-w-0 truncate">
@@ -1440,8 +1440,8 @@ export function Pattern() {
                                 <Tooltip>
                                 <TooltipTrigger className="flex" id="base-ui-_r_2i_" baseUiTooltipTrigger="">
                                   <DropdownMenu>
-                                  <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none flex focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-2 group/button has-[>svg]:p-0 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground items-center justify-center outline-none p-0 rounded-lg select-none shadow-none shrink-0 size-8 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" size="icon-sm" aria-label="Attach context" aria-haspopup="menu" aria-expanded="false" id="base-ui-_r_2j_">
-                                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                  <DropdownMenuTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none flex focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-2 group/button has-[>svg]:p-0 has-data-[icon=inline-end]:pr-2 has-data-[icon=inline-start]:pl-2 hover:bg-muted hover:text-foreground items-center justify-center outline-none p-0 rounded-lg select-none shadow-none shrink-0 size-8 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} size="icon-sm" aria-label="Attach context" aria-haspopup="menu" aria-expanded="false" id="base-ui-_r_2j_">
+                                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                       <path d="M5 12h14"></path>
                                       <path d="M12 5v14"></path>
                                     </svg>
@@ -1450,8 +1450,8 @@ export function Pattern() {
                                 </TooltipTrigger>
                                 </Tooltip>
                                 <Tooltip>
-                                <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding bg-primary border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-primary/80 in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-full select-none shrink-0 size-7 text-primary-foreground text-sm transition-all whitespace-nowrap" type="submit" tabIndex="0" aria-label="Send question" id="base-ui-_r_2m_" baseUiTooltipTrigger="">
-                                  <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding bg-primary border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-primary/80 in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-full select-none shrink-0 size-7 text-primary-foreground text-sm transition-all whitespace-nowrap" type="submit" tabIndex={0} aria-label="Send question" id="base-ui-_r_2m_" baseUiTooltipTrigger="">
+                                  <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                     <path d="m5 12 7-7 7 7"></path>
                                     <path d="M12 19V5"></path>
                                   </svg>
@@ -1482,14 +1482,14 @@ export function Pattern() {
                         </div>
                         <div className="flex gap-0.5 items-center ms-auto shrink-0">
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 [@media(max-height:42rem)]:hidden active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button group/expand hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center max-sm:hidden outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Expand chat" aria-pressed="false" id="base-ui-_r_2o_" baseUiTooltipTrigger="">
-                            <svg className="group-aria-pressed/expand:hidden lucide lucide-maximize-2 lucide-maximize2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 [@media(max-height:42rem)]:hidden active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button group/expand hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center max-sm:hidden outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Expand chat" aria-pressed="false" id="base-ui-_r_2o_" baseUiTooltipTrigger="">
+                            <svg className="group-aria-pressed/expand:hidden lucide lucide-maximize-2 lucide-maximize2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M15 3h6v6"></path>
                               <path d="m21 3-7 7"></path>
                               <path d="m3 21 7-7"></path>
                               <path d="M9 21H3v-6"></path>
                             </svg>
-                            <svg className="group-aria-pressed/expand:block hidden lucide lucide-minimize-2 lucide-minimize2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <svg className="group-aria-pressed/expand:block hidden lucide lucide-minimize-2 lucide-minimize2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="m14 10 7-7"></path>
                               <path d="M20 10h-6V4"></path>
                               <path d="m3 21 7-7"></path>
@@ -1498,15 +1498,15 @@ export function Pattern() {
                           </TooltipTrigger>
                           </Tooltip>
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Restore chat" id="base-ui-_r_2q_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-chevron-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Restore chat" id="base-ui-_r_2q_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-chevron-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="m18 15-6-6-6 6"></path>
                             </svg>
                           </TooltipTrigger>
                           </Tooltip>
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="End chat" id="base-ui-_r_2s_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 font-medium group/button hover:bg-muted hover:text-foreground in-data-[slot=button-group]:rounded-lg inline-flex items-center justify-center outline-none rounded-[min(var(--radius-md),12px)] select-none shrink-0 size-7 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="End chat" id="base-ui-_r_2s_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M18 6 6 18"></path>
                               <path d="m6 6 12 12"></path>
                             </svg>
@@ -1524,7 +1524,7 @@ export function Pattern() {
       </SidebarInset>
     </div>
     </SidebarProvider>
-    <section aria-label="Notifications alt+T" tabIndex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false" data-react-aria-top-layer="true"></section>
+    <section aria-label="Notifications alt+T" tabIndex={-1} aria-live="polite" aria-relevant="additions text" aria-atomic="false" data-react-aria-top-layer="true"></section>
     <next-route-announcer style={{position: "absolute"}}></next-route-announcer>
     <span id="recharts_measurement_span" aria-hidden="true" style={{position: "absolute", top: "-20000px", left: "0px", padding: "0px", margin: "0px", borderWidth: "medium", borderStyle: "none", borderColor: "currentcolor", borderImage: "none", whiteSpace: "pre", fontSize: "12px", letterSpacing: "normal"}}>
       {"0"}

@@ -34,22 +34,22 @@ export function Pattern() {
           <CardAction className="@md/card-header:col-start-2 @md/card-header:justify-self-end @md/card-header:mt-0 @md/card-header:row-span-2 @md/card-header:row-start-1 col-start-1 justify-self-start mt-2 row-span-1 row-start-3">
             <div className="flex gap-2 items-center">
               <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Date range" style={{"--gap": "0"}}>
-                <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none tabular-nums text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="0" aria-pressed="false" variant="outline" size="sm" spacing="0" aria-label="30D, last 30 days" extracted="1">
+                <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none tabular-nums text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex={0} aria-pressed="false" variant="outline" size="sm" spacing="0" aria-label="30D, last 30 days" extracted="1">
                   {"30D"}
                 </ToggleGroupItem>
-                <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none tabular-nums text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="outline" size="sm" spacing="0" aria-label="90D, last 90 days">
+                <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none tabular-nums text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex={-1} aria-pressed="true" variant="outline" size="sm" spacing="0" aria-label="90D, last 90 days">
                   {"90D"}
                 </ToggleGroupItem>
-                <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none tabular-nums text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0" aria-label="12M, last 12 months">
+                <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none tabular-nums text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="outline" size="sm" spacing="0" aria-label="12M, last 12 months">
                   {"12M"}
                 </ToggleGroupItem>
               </ToggleGroup>
               <DropdownMenu>
-              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Chart options" aria-haspopup="menu" id="base-ui-_r_6_" aria-expanded="false">
-                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                  <circle cx="12" cy="12" r="1"></circle>
-                  <circle cx="19" cy="12" r="1"></circle>
-                  <circle cx="5" cy="12" r="1"></circle>
+              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Chart options" aria-haspopup="menu" id="base-ui-_r_6_" aria-expanded="false">
+                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                  <circle cx={12} cy={12} r={1}></circle>
+                  <circle cx={19} cy={12} r={1}></circle>
+                  <circle cx={5} cy={12} r={1}></circle>
                 </svg>
               </DropdownMenuTrigger>
               </DropdownMenu>
@@ -70,7 +70,7 @@ export function Pattern() {
                 </span>
                 <span className="flex gap-1.5 h-5 items-center min-w-0 text-xs">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
+                    <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                       <path d="M16 7h6v6"></path>
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
@@ -96,7 +96,7 @@ export function Pattern() {
                 </span>
                 <span className="flex gap-1.5 h-5 items-center min-w-0 text-xs">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
+                    <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                       <path d="M16 7h6v6"></path>
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
@@ -119,7 +119,7 @@ export function Pattern() {
                 </span>
                 <span className="flex gap-1.5 h-5 items-center min-w-0 text-xs">
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                    <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
+                    <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                       <path d="M16 7h6v6"></path>
                       <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                     </svg>
@@ -270,78 +270,78 @@ export function Pattern() {
                 <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_8_] {\n  --color-inbound: var(--color-emerald-300);\n  --color-outbound: var(--color-emerald-500);\n  --color-partner: var(--color-emerald-700);\n}\n\n\n.dark [data-chart=chart-_r_8_] {\n  --color-inbound: var(--color-emerald-300);\n  --color-outbound: var(--color-emerald-500);\n  --color-partner: var(--color-emerald-700);\n}\n" }} />
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                    <div className="recharts-wrapper" width="736" height="224" style={{position: "relative", cursor: "default", width: "736px", height: "224px"}}>
-                      <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex="-1" style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px"}}></div>
-                      <svg className="recharts-surface" role="application" tabIndex="0" width="736" height="224" viewBox="0 0 736 224" style={{width: "100%", height: "100%", display: "block"}}>
+                    <div className="recharts-wrapper" width={736} height={224} style={{position: "relative", cursor: "default", width: "736px", height: "224px"}}>
+                      <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex={-1} style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px"}}></div>
+                      <svg className="recharts-surface" role="application" tabIndex={0} width={736} height={224} viewBox="0 0 736 224" style={{width: "100%", height: "100%", display: "block"}}>
                         <title></title>
                         <desc></desc>
-                        <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                        <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                         <defs>
                           <clippath id="recharts1-clip">
-                            <rect x="0" y="0" height="224" width="736"></rect>
+                            <rect x={0} y={0} height={224} width={736}></rect>
                           </clippath>
                         </defs>
-                        <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                        <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                           <g className="duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none recharts-area recharts-layer transition-opacity">
                             <defs>
                               <clippath id="clipPath-recharts-area-_r_c_">
-                                <rect x="-368" y="0" width="1472" height="224"></rect>
+                                <rect x={-368} y={0} width={1472} height={224}></rect>
                               </clippath>
                             </defs>
                             <g className="recharts-layer" clipPath="url(#clipPath-recharts-area-_r_c_)">
-                              <path className="recharts-area-area recharts-curve" name="Partner" strokeWidth="1" fill="var(--color-partner)" fillOpacity="1" height="224" stroke="none" width="736" id="recharts-area-_r_c_" d="M0,181.061C30.667,181.061,30.667,181.061,61.333,181.061C122.667,181.061,122.667,139.514,184,139.514C245.333,139.514,245.333,126.227,306.667,126.227C368,126.227,368,121.199,429.333,121.199C490.667,121.199,490.667,118.823,552,118.823C613.333,118.823,613.333,114.099,674.667,114.099C705.333,114.099,705.333,114.099,736,114.099L736,116.862C705.333,116.862,705.333,116.862,674.667,116.862C613.333,116.862,613.333,124.127,552,124.127C490.667,124.127,490.667,132.746,429.333,132.746C368,132.746,368,142.249,306.667,142.249C245.333,142.249,245.333,162.387,184,162.387C122.667,162.387,122.667,212,61.333,212C30.667,212,30.667,212,0,212Z"></path>
+                              <path className="recharts-area-area recharts-curve" name="Partner" strokeWidth={1} fill="var(--color-partner)" fillOpacity={1} height={224} stroke="none" width={736} id="recharts-area-_r_c_" d="M0,181.061C30.667,181.061,30.667,181.061,61.333,181.061C122.667,181.061,122.667,139.514,184,139.514C245.333,139.514,245.333,126.227,306.667,126.227C368,126.227,368,121.199,429.333,121.199C490.667,121.199,490.667,118.823,552,118.823C613.333,118.823,613.333,114.099,674.667,114.099C705.333,114.099,705.333,114.099,736,114.099L736,116.862C705.333,116.862,705.333,116.862,674.667,116.862C613.333,116.862,613.333,124.127,552,124.127C490.667,124.127,490.667,132.746,429.333,132.746C368,132.746,368,142.249,306.667,142.249C245.333,142.249,245.333,162.387,184,162.387C122.667,162.387,122.667,212,61.333,212C30.667,212,30.667,212,0,212Z"></path>
                             </g>
                           </g>
                           <g className="duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none recharts-area recharts-layer transition-opacity">
                             <defs>
                               <clippath id="clipPath-recharts-area-_r_d_">
-                                <rect x="-368" y="0" width="1472" height="224"></rect>
+                                <rect x={-368} y={0} width={1472} height={224}></rect>
                               </clippath>
                             </defs>
                             <g className="recharts-layer" clipPath="url(#clipPath-recharts-area-_r_d_)">
-                              <path className="recharts-area-area recharts-curve" name="Outbound" strokeWidth="1" fill="var(--color-outbound)" fillOpacity="1" height="224" stroke="none" width="736" id="recharts-area-_r_d_" d="M0,102.608C30.667,102.608,30.667,102.608,61.333,102.608C122.667,102.608,122.667,115.978,184,115.978C245.333,115.978,245.333,113.298,306.667,113.298C368,113.298,368,112.691,429.333,112.691C490.667,112.691,490.667,113.575,552,113.575C613.333,113.575,613.333,111.945,674.667,111.945C705.333,111.945,705.333,111.945,736,111.945L736,114.099C705.333,114.099,705.333,114.099,674.667,114.099C613.333,114.099,613.333,118.823,552,118.823C490.667,118.823,490.667,121.199,429.333,121.199C368,121.199,368,126.227,306.667,126.227C245.333,126.227,245.333,139.514,184,139.514C122.667,139.514,122.667,181.061,61.333,181.061C30.667,181.061,30.667,181.061,0,181.061Z"></path>
+                              <path className="recharts-area-area recharts-curve" name="Outbound" strokeWidth={1} fill="var(--color-outbound)" fillOpacity={1} height={224} stroke="none" width={736} id="recharts-area-_r_d_" d="M0,102.608C30.667,102.608,30.667,102.608,61.333,102.608C122.667,102.608,122.667,115.978,184,115.978C245.333,115.978,245.333,113.298,306.667,113.298C368,113.298,368,112.691,429.333,112.691C490.667,112.691,490.667,113.575,552,113.575C613.333,113.575,613.333,111.945,674.667,111.945C705.333,111.945,705.333,111.945,736,111.945L736,114.099C705.333,114.099,705.333,114.099,674.667,114.099C613.333,114.099,613.333,118.823,552,118.823C490.667,118.823,490.667,121.199,429.333,121.199C368,121.199,368,126.227,306.667,126.227C245.333,126.227,245.333,139.514,184,139.514C122.667,139.514,122.667,181.061,61.333,181.061C30.667,181.061,30.667,181.061,0,181.061Z"></path>
                             </g>
                           </g>
                           <g className="duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none recharts-area recharts-layer transition-opacity">
                             <defs>
                               <clippath id="clipPath-recharts-area-_r_e_">
-                                <rect x="-368" y="0" width="1472" height="224"></rect>
+                                <rect x={-368} y={0} width={1472} height={224}></rect>
                               </clippath>
                             </defs>
                             <g className="recharts-layer" clipPath="url(#clipPath-recharts-area-_r_e_)">
-                              <path className="recharts-area-area recharts-curve" name="Inbound" strokeWidth="1" fill="var(--color-inbound)" fillOpacity="1" height="224" stroke="none" width="736" id="recharts-area-_r_e_" d="M0,12C30.667,12,30.667,12,61.333,12C122.667,12,122.667,61.613,184,61.613C245.333,61.613,245.333,81.751,306.667,81.751C368,81.751,368,91.254,429.333,91.254C490.667,91.254,490.667,99.873,552,99.873C613.333,99.873,613.333,107.138,674.667,107.138C705.333,107.138,705.333,107.138,736,107.138L736,111.945C705.333,111.945,705.333,111.945,674.667,111.945C613.333,111.945,613.333,113.575,552,113.575C490.667,113.575,490.667,112.691,429.333,112.691C368,112.691,368,113.298,306.667,113.298C245.333,113.298,245.333,115.978,184,115.978C122.667,115.978,122.667,102.608,61.333,102.608C30.667,102.608,30.667,102.608,0,102.608Z"></path>
+                              <path className="recharts-area-area recharts-curve" name="Inbound" strokeWidth={1} fill="var(--color-inbound)" fillOpacity={1} height={224} stroke="none" width={736} id="recharts-area-_r_e_" d="M0,12C30.667,12,30.667,12,61.333,12C122.667,12,122.667,61.613,184,61.613C245.333,61.613,245.333,81.751,306.667,81.751C368,81.751,368,91.254,429.333,91.254C490.667,91.254,490.667,99.873,552,99.873C613.333,99.873,613.333,107.138,674.667,107.138C705.333,107.138,705.333,107.138,736,107.138L736,111.945C705.333,111.945,705.333,111.945,674.667,111.945C613.333,111.945,613.333,113.575,552,113.575C490.667,113.575,490.667,112.691,429.333,112.691C368,112.691,368,113.298,306.667,113.298C245.333,113.298,245.333,115.978,184,115.978C122.667,115.978,122.667,102.608,61.333,102.608C30.667,102.608,30.667,102.608,0,102.608Z"></path>
                             </g>
                           </g>
                         </g>
-                        <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_400" tabIndex="-1">
+                        <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_400" tabIndex={-1}>
                           <g className="recharts-layer recharts-reference-line">
-                            <line className="recharts-reference-line-line" x="0.5" stroke="var(--card)" strokeWidth="3" fill="none" fillOpacity="1" x1="122.66666666666666" y1="224" x2="122.66666666666666" y2="0"></line>
+                            <line className="recharts-reference-line-line" x={0.5} stroke="var(--card)" strokeWidth={3} fill="none" fillOpacity={1} x1={122.66666666666666} y1={224} x2={122.66666666666666} y2={0}></line>
                           </g>
                           <g className="recharts-layer recharts-reference-line">
-                            <line className="recharts-reference-line-line" x="1.5" stroke="var(--card)" strokeWidth="3" fill="none" fillOpacity="1" x1="245.33333333333331" y1="224" x2="245.33333333333331" y2="0"></line>
+                            <line className="recharts-reference-line-line" x={1.5} stroke="var(--card)" strokeWidth={3} fill="none" fillOpacity={1} x1={245.33333333333331} y1={224} x2={245.33333333333331} y2={0}></line>
                           </g>
                           <g className="recharts-layer recharts-reference-line">
-                            <line className="recharts-reference-line-line" x="2.5" stroke="var(--card)" strokeWidth="3" fill="none" fillOpacity="1" x1="368" y1="224" x2="368" y2="0"></line>
+                            <line className="recharts-reference-line-line" x={2.5} stroke="var(--card)" strokeWidth={3} fill="none" fillOpacity={1} x1={368} y1={224} x2={368} y2={0}></line>
                           </g>
                           <g className="recharts-layer recharts-reference-line">
-                            <line className="recharts-reference-line-line" x="3.5" stroke="var(--card)" strokeWidth="3" fill="none" fillOpacity="1" x1="490.66666666666663" y1="224" x2="490.66666666666663" y2="0"></line>
+                            <line className="recharts-reference-line-line" x={3.5} stroke="var(--card)" strokeWidth={3} fill="none" fillOpacity={1} x1={490.66666666666663} y1={224} x2={490.66666666666663} y2={0}></line>
                           </g>
                           <g className="recharts-layer recharts-reference-line">
-                            <line className="recharts-reference-line-line" x="4.5" stroke="var(--card)" strokeWidth="3" fill="none" fillOpacity="1" x1="613.3333333333334" y1="224" x2="613.3333333333334" y2="0"></line>
+                            <line className="recharts-reference-line-line" x={4.5} stroke="var(--card)" strokeWidth={3} fill="none" fillOpacity={1} x1={613.3333333333334} y1={224} x2={613.3333333333334} y2={0}></line>
                           </g>
                           <g className="recharts-layer recharts-reference-line">
-                            <line className="recharts-reference-line-line" stroke="var(--destructive)" strokeWidth="2" fill="none" fillOpacity="1" x1="613.3333333333334" y1="120.49447513812153" x2="613.3333333333334" y2="103.50552486187844"></line>
+                            <line className="recharts-reference-line-line" stroke="var(--destructive)" strokeWidth={2} fill="none" fillOpacity={1} x1={613.3333333333334} y1={120.49447513812153} x2={613.3333333333334} y2={103.50552486187844}></line>
                           </g>
                         </g>
-                        <g className="recharts-zIndex-layer_500" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_600" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_2000" tabIndex="-1"></g>
+                        <g className="recharts-zIndex-layer_500" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_600" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_2000" tabIndex={-1}></g>
                       </svg>
                     </div>
                   </div>
@@ -390,15 +390,15 @@ export function Pattern() {
         </CardContent>
         <CardFooter className="flex-wrap gap-x-4 gap-y-2 justify-between">
           <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" size="sm" spacing="2" aria-label="Focus a lead source" style={{"--gap": "2"}}>
-            <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="0" aria-pressed="false" variant="default" size="sm" spacing="2">
+            <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex={0} aria-pressed="false" variant="default" size="sm" spacing="2">
               <span className="bg-emerald-300 rounded-full shrink-0 size-2" aria-hidden="true"></span>
               {"Inbound"}
             </ToggleGroupItem>
-            <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="sm" spacing="2">
+            <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="default" size="sm" spacing="2">
               <span className="bg-emerald-500 rounded-full shrink-0 size-2" aria-hidden="true"></span>
               {"Outbound"}
             </ToggleGroupItem>
-            <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="sm" spacing="2">
+            <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="default" size="sm" spacing="2">
               <span className="bg-emerald-700 rounded-full shrink-0 size-2" aria-hidden="true"></span>
               {"Partner"}
             </ToggleGroupItem>

@@ -38,16 +38,16 @@ export function Pattern() {
               </p>
             </div>
             <ToggleGroup className="@3xl:hidden" data-orientation="horizontal" aria-orientation="horizontal" role="group" spacing="2" aria-label="Plan to show" style={{"--gap": "2"}}>
-              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="0" aria-pressed="false" variant="default" size="default" spacing="2" extracted="1">
+              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex={0} aria-pressed="false" variant="default" size="default" spacing="2" extracted="1">
                 {"Free"}
               </ToggleGroupItem>
-              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="-1" aria-pressed="true" variant="default" size="default" spacing="2">
+              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex={-1} aria-pressed="true" variant="default" size="default" spacing="2">
                 {"Pro"}
               </ToggleGroupItem>
-              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="default" spacing="2">
+              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="default" size="default" spacing="2">
                 {"Team"}
               </ToggleGroupItem>
-              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="default" size="default" spacing="2">
+              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-default cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="default" size="default" spacing="2">
                 {"Unlimited"}
               </ToggleGroupItem>
             </ToggleGroup>
@@ -110,22 +110,22 @@ export function Pattern() {
                       </span>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pb-(--card-spacing) pe-2 ps-2 pt-3 shadow-[inset_1px_0_0_var(--border),inset_0_-1px_0_var(--border)] whitespace-normal">
-                      <Button className="w-full" href="#" role="button" tabIndex="0">
+                      <Button className="w-full" href="#" role="button" tabIndex={0}>
                         {"Start Free"}
                       </Button>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pb-(--card-spacing) pe-2 ps-2 pt-3 shadow-[inset_1px_0_0_var(--border),inset_0_-1px_0_var(--border)] whitespace-normal">
-                      <Button className="w-full" href="#" role="button" tabIndex="0">
+                      <Button className="w-full" href="#" role="button" tabIndex={0}>
                         {"Get Pro"}
                       </Button>
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pb-(--card-spacing) pe-2 ps-2 pt-3 shadow-[inset_1px_0_0_var(--border),inset_0_-1px_0_var(--border)] whitespace-normal">
-                      <Button className="w-full" href="#" role="button" tabIndex="0">
+                      <Button className="w-full" href="#" role="button" tabIndex={0}>
                         {"Get Team"}
                       </Button>
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pb-(--card-spacing) pe-(--card-spacing) ps-2 pt-3 shadow-[inset_1px_0_0_var(--border),inset_0_-1px_0_var(--border)] whitespace-normal">
-                      <Button className="w-full" href="#" aria-label="Contact us about Unlimited" role="button" tabIndex="0">
+                      <Button className="w-full" href="#" aria-label="Contact us about Unlimited" role="button" tabIndex={0}>
                         {"Contact Us"}
                       </Button>
                     </TableCell>
@@ -136,7 +136,7 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-3 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="rowgroup">
                       <span className="flex gap-2.5 items-center whitespace-nowrap">
                         <IconTile variant="elevated" size="default">
-                          <svg className="lucide lucide-inbox" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InboxIcon" tabler="IconInbox" hugeicons="InboxIcon" phosphor="TrayIcon" remixicon="RiInboxLine" aria-hidden="true">
+                          <svg className="lucide lucide-inbox" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InboxIcon" tabler="IconInbox" hugeicons="InboxIcon" phosphor="TrayIcon" remixicon="RiInboxLine" aria-hidden="true">
                             <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
                             <path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
                           </svg>
@@ -159,7 +159,7 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_5_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_5_" aria-haspopup="dialog" aria-expanded="false">
                         {"Monthly events"}
                       </PopoverTrigger>
                       </Popover>
@@ -198,7 +198,7 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_7_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_7_" aria-haspopup="dialog" aria-expanded="false">
                         {"Past the allowance"}
                       </PopoverTrigger>
                       </Popover>
@@ -227,7 +227,7 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_9_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_9_" aria-haspopup="dialog" aria-expanded="false">
                         {"Connected sources"}
                       </PopoverTrigger>
                       </Popover>
@@ -256,7 +256,7 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_b_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_b_" aria-haspopup="dialog" aria-expanded="false">
                         {"Schema validation"}
                       </PopoverTrigger>
                       </Popover>
@@ -294,14 +294,14 @@ export function Pattern() {
                   <TableRow className="border-b-0">
                     <TableHead className="font-normal leading-[inherit] normal-case pe-3 ps-[calc(var(--card-spacing)+--spacing(4))] py-2.5 text-[length:inherit] text-muted-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_d_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_d_" aria-haspopup="dialog" aria-expanded="false">
                         {"Per source caps"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
@@ -311,7 +311,7 @@ export function Pattern() {
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
@@ -321,7 +321,7 @@ export function Pattern() {
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
@@ -331,7 +331,7 @@ export function Pattern() {
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
@@ -343,14 +343,14 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="font-normal leading-[inherit] normal-case pe-3 ps-[calc(var(--card-spacing)+--spacing(4))] py-2.5 text-[length:inherit] text-muted-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_f_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_f_" aria-haspopup="dialog" aria-expanded="false">
                         {"Sampling rules"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
@@ -360,7 +360,7 @@ export function Pattern() {
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
@@ -370,7 +370,7 @@ export function Pattern() {
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
@@ -380,7 +380,7 @@ export function Pattern() {
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
@@ -392,7 +392,7 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_h_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_h_" aria-haspopup="dialog" aria-expanded="false">
                         {"Historic backfill"}
                       </PopoverTrigger>
                       </Popover>
@@ -421,7 +421,7 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_j_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_j_" aria-haspopup="dialog" aria-expanded="false">
                         {"Data freshness"}
                       </PopoverTrigger>
                       </Popover>
@@ -453,8 +453,8 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-3 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="rowgroup">
                       <span className="flex gap-2.5 items-center whitespace-nowrap">
                         <IconTile variant="elevated" size="default">
-                          <svg className="lucide lucide-archive" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArchiveIcon" tabler="IconArchive" hugeicons="Archive01Icon" phosphor="ArchiveIcon" remixicon="RiArchiveLine" aria-hidden="true">
-                            <rect width="20" height="5" x="2" y="3" rx="1"></rect>
+                          <svg className="lucide lucide-archive" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArchiveIcon" tabler="IconArchive" hugeicons="Archive01Icon" phosphor="ArchiveIcon" remixicon="RiArchiveLine" aria-hidden="true">
+                            <rect width={20} height={5} x={2} y={3} rx={1}></rect>
                             <path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"></path>
                             <path d="M10 12h4"></path>
                           </svg>
@@ -477,7 +477,7 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_l_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_l_" aria-haspopup="dialog" aria-expanded="false">
                         {"Event retention"}
                       </PopoverTrigger>
                       </Popover>
@@ -515,7 +515,7 @@ export function Pattern() {
                   <TableRow className="border-b-0">
                     <TableHead className="font-normal leading-[inherit] normal-case pe-3 ps-[calc(var(--card-spacing)+--spacing(4))] py-2.5 text-[length:inherit] text-muted-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_n_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_n_" aria-haspopup="dialog" aria-expanded="false">
                         {"Daily summaries"}
                       </PopoverTrigger>
                       </Popover>
@@ -544,7 +544,7 @@ export function Pattern() {
                   <TableRow className="border-b-0">
                     <TableHead className="font-normal leading-[inherit] normal-case pe-3 ps-[calc(var(--card-spacing)+--spacing(4))] py-2.5 text-[length:inherit] text-muted-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_p_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_p_" aria-haspopup="dialog" aria-expanded="false">
                         {"User profiles"}
                       </PopoverTrigger>
                       </Popover>
@@ -573,7 +573,7 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="font-normal leading-[inherit] normal-case pe-3 ps-[calc(var(--card-spacing)+--spacing(4))] py-2.5 text-[length:inherit] text-muted-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_r_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_r_" aria-haspopup="dialog" aria-expanded="false">
                         {"Cold archive"}
                       </PopoverTrigger>
                       </Popover>
@@ -602,7 +602,7 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_t_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_t_" aria-haspopup="dialog" aria-expanded="false">
                         {"Archive restore"}
                       </PopoverTrigger>
                       </Popover>
@@ -641,7 +641,7 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_v_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_v_" aria-haspopup="dialog" aria-expanded="false">
                         {"Retention holds"}
                       </PopoverTrigger>
                       </Popover>
@@ -673,7 +673,7 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-3 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="rowgroup">
                       <span className="flex gap-2.5 items-center whitespace-nowrap">
                         <IconTile variant="elevated" size="default">
-                          <svg className="lucide lucide-chart-column" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
+                          <svg className="lucide lucide-chart-column" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BarChart3Icon" tabler="IconChartBar" hugeicons="Analytics01Icon" phosphor="ChartBarIcon" remixicon="RiBarChartLine" aria-hidden="true">
                             <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                             <path d="M18 17V9"></path>
                             <path d="M13 17V5"></path>
@@ -698,7 +698,7 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_11_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_11_" aria-haspopup="dialog" aria-expanded="false">
                         {"Saved dashboards"}
                       </PopoverTrigger>
                       </Popover>
@@ -727,7 +727,7 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_13_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_13_" aria-haspopup="dialog" aria-expanded="false">
                         {"Scheduled reports"}
                       </PopoverTrigger>
                       </Popover>
@@ -756,7 +756,7 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_15_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_15_" aria-haspopup="dialog" aria-expanded="false">
                         {"Funnel steps"}
                       </PopoverTrigger>
                       </Popover>
@@ -785,7 +785,7 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_17_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_17_" aria-haspopup="dialog" aria-expanded="false">
                         {"Alert checks"}
                       </PopoverTrigger>
                       </Popover>
@@ -814,14 +814,14 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_19_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_19_" aria-haspopup="dialog" aria-expanded="false">
                         {"Embedded charts"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
@@ -831,7 +831,7 @@ export function Pattern() {
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
@@ -841,7 +841,7 @@ export function Pattern() {
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
@@ -851,7 +851,7 @@ export function Pattern() {
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
@@ -866,7 +866,7 @@ export function Pattern() {
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-3 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="rowgroup">
                       <span className="flex gap-2.5 items-center whitespace-nowrap">
                         <IconTile variant="elevated" size="default">
-                          <svg className="lucide lucide-shield-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
+                          <svg className="lucide lucide-shield-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
                             <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                             <path d="m9 12 2 2 4-4"></path>
                           </svg>
@@ -889,7 +889,7 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1b_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_1b_" aria-haspopup="dialog" aria-expanded="false">
                         {"Team seats"}
                       </PopoverTrigger>
                       </Popover>
@@ -923,14 +923,14 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1d_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_1d_" aria-haspopup="dialog" aria-expanded="false">
                         {"Single sign-on"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
@@ -940,7 +940,7 @@ export function Pattern() {
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
@@ -950,7 +950,7 @@ export function Pattern() {
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
@@ -960,7 +960,7 @@ export function Pattern() {
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
@@ -972,7 +972,7 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1f_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_1f_" aria-haspopup="dialog" aria-expanded="false">
                         {"Data residency"}
                       </PopoverTrigger>
                       </Popover>
@@ -1001,7 +1001,7 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1h_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_1h_" aria-haspopup="dialog" aria-expanded="false">
                         {"Support reply time"}
                       </PopoverTrigger>
                       </Popover>
@@ -1030,14 +1030,14 @@ export function Pattern() {
                   <TableRow className="border-b">
                     <TableHead className="leading-[inherit] normal-case pe-3 ps-(--card-spacing) py-2.5 text-[length:inherit] text-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1j_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_1j_" aria-haspopup="dialog" aria-expanded="false">
                         {"Uptime target"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
@@ -1073,14 +1073,14 @@ export function Pattern() {
                   <TableRow className="border-b-0">
                     <TableHead className="font-normal leading-[inherit] normal-case pe-3 ps-[calc(var(--card-spacing)+--spacing(4))] py-2.5 text-[length:inherit] text-muted-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1l_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_1l_" aria-haspopup="dialog" aria-expanded="false">
                         {"Invoice billing"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
@@ -1090,7 +1090,7 @@ export function Pattern() {
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:pe-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">
@@ -1100,7 +1100,7 @@ export function Pattern() {
                     </TableCell>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
@@ -1110,7 +1110,7 @@ export function Pattern() {
                     </TableCell>
                     <TableCell className="@4xl:ps-3 @max-3xl:hidden pe-(--card-spacing) ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                        <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                           <path d="M20 6 9 17l-5-5"></path>
                         </svg>
                         <span className="sr-only">
@@ -1122,14 +1122,14 @@ export function Pattern() {
                   <TableRow className="border-b-0">
                     <TableHead className="font-normal leading-[inherit] normal-case pb-(--card-spacing) pe-3 ps-[calc(var(--card-spacing)+--spacing(4))] py-2.5 text-[length:inherit] text-muted-foreground tracking-normal whitespace-normal" scope="row">
                       <Popover>
-                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1n_" aria-haspopup="dialog" aria-expanded="false">
+                      <PopoverTrigger className="after:-inset-y-2.5 after:absolute after:inset-x-0 cursor-pointer decoration-dotted decoration-muted-foreground/50 focus-visible:ring-3 focus-visible:ring-ring/50 hover:decoration-foreground outline-none relative scroll-mt-40 text-left transition-colors underline underline-offset-4" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_1n_" aria-haspopup="dialog" aria-expanded="false">
                         {"Price lock"}
                       </PopoverTrigger>
                       </Popover>
                     </TableHead>
                     <TableCell className="@4xl:pe-3 @4xl:ps-3 @max-3xl:hidden pb-(--card-spacing) pe-2 ps-2 py-2.5 shadow-[inset_1px_0_0_var(--border)] whitespace-normal">
                       <span className="flex">
-                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                        <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                         </svg>
                         <span className="sr-only">

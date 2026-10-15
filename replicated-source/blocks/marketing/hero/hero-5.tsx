@@ -8,19 +8,19 @@ export function Pattern() {
       <section className="bg-[#090b0c] flex items-center lg:px-8 min-h-svh overflow-hidden px-4 py-12 relative sm:px-6 w-full" aria-labelledby="hero-5-title">
         <svg className="absolute inset-0 pointer-events-none size-full" aria-hidden="true">
           <defs>
-            <pattern id="_r_0_-dots" patternUnits="userSpaceOnUse" width="6" height="6">
-              <circle cx="1" cy="1" r="0.55" fill="white"></circle>
+            <pattern id="_r_0_-dots" patternUnits="userSpaceOnUse" width={6} height={6}>
+              <circle cx={1} cy={1} r={0.55} fill="white"></circle>
             </pattern>
             <radialgradient id="_r_0_-fade" cx="30%" cy="20%" r="120%">
-              <stop offset="0%" stopColor="white" stopOpacity="0.85"></stop>
-              <stop offset="60%" stopColor="white" stopOpacity="0.5"></stop>
-              <stop offset="100%" stopColor="white" stopOpacity="0"></stop>
+              <stop offset="0%" stopColor="white" stopOpacity={0.85}></stop>
+              <stop offset="60%" stopColor="white" stopOpacity={0.5}></stop>
+              <stop offset="100%" stopColor="white" stopOpacity={0}></stop>
             </radialgradient>
             <mask id="_r_0_-mask">
               <rect width="100%" height="100%" fill="url(#_r_0_-fade)"></rect>
             </mask>
           </defs>
-          <rect width="100%" height="100%" fill="url(#_r_0_-dots)" fillOpacity="0.18" mask="url(#_r_0_-mask)"></rect>
+          <rect width="100%" height="100%" fill="url(#_r_0_-dots)" fillOpacity={0.18} mask="url(#_r_0_-mask)"></rect>
         </svg>
         <div className="-left-32 -top-30 absolute bg-white/3 blur-[100px] pointer-events-none rounded-full size-125" aria-hidden="true"></div>
         <div className="gap-8 grid grid-cols-1 items-center lg:grid-cols-2 lg:max-w-7xl max-w-[624px] mx-auto relative w-full">
@@ -40,8 +40,8 @@ export function Pattern() {
               {"Connect your development tools through MCP and give AI agents access to the services they need across your workflow."}
             </p>
             <div className="flex flex-wrap gap-4 items-center">
-              <Button className="bg-blue-600 hover:bg-blue-500 shadow-xs text-white" href="#" role="button" tabIndex="0">
-                <svg className="lucide lucide-plug-zap" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlugZapIcon" tabler="IconPlugConnected" hugeicons="LinkCircle02Icon" phosphor="PlugsConnectedIcon" remixicon="RiPlug2Line" aria-hidden="true">
+              <Button className="bg-blue-600 hover:bg-blue-500 shadow-xs text-white" href="#" role="button" tabIndex={0}>
+                <svg className="lucide lucide-plug-zap" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlugZapIcon" tabler="IconPlugConnected" hugeicons="LinkCircle02Icon" phosphor="PlugsConnectedIcon" remixicon="RiPlug2Line" aria-hidden="true">
                   <path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"></path>
                   <path d="m2 22 3-3"></path>
                   <path d="M7.5 13.5 10 11"></path>
@@ -50,12 +50,12 @@ export function Pattern() {
                 </svg>
                 {"Connect MCP"}
               </Button>
-              <Button className="bg-white/10 border-transparent hover:bg-white/15 hover:text-white text-[#fafafa]" href="#" role="button" tabIndex="0">
-                <svg className="lucide lucide-layout-grid" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
-                  <rect width="7" height="7" x="3" y="3" rx="1"></rect>
-                  <rect width="7" height="7" x="14" y="3" rx="1"></rect>
-                  <rect width="7" height="7" x="14" y="14" rx="1"></rect>
-                  <rect width="7" height="7" x="3" y="14" rx="1"></rect>
+              <Button className="bg-white/10 border-transparent hover:bg-white/15 hover:text-white text-[#fafafa]" href="#" role="button" tabIndex={0}>
+                <svg className="lucide lucide-layout-grid" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" aria-hidden="true">
+                  <rect width={7} height={7} x={3} y={3} rx={1}></rect>
+                  <rect width={7} height={7} x={14} y={3} rx={1}></rect>
+                  <rect width={7} height={7} x={14} y={14} rx={1}></rect>
+                  <rect width={7} height={7} x={3} y={14} rx={1}></rect>
                 </svg>
                 {"Browse integrations"}
               </Button>
@@ -63,8 +63,8 @@ export function Pattern() {
             <Separator className="bg-white/10 max-w-md w-full" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
             <ul className="flex flex-wrap gap-x-5 gap-y-2 items-center">
               <li className="flex gap-1.5 items-center">
-                <svg className="lucide lucide-circle-check shrink-0 size-4 text-[#00bc7d]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10"></circle>
+                <svg className="lucide lucide-circle-check shrink-0 size-4 text-[#00bc7d]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
+                  <circle cx={12} cy={12} r={10}></circle>
                   <path d="m9 12 2 2 4-4"></path>
                 </svg>
                 <span className="leading-5 text-[#fafafa] text-sm">
@@ -72,8 +72,8 @@ export function Pattern() {
                 </span>
               </li>
               <li className="flex gap-1.5 items-center">
-                <svg className="lucide lucide-circle-check shrink-0 size-4 text-[#00bc7d]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10"></circle>
+                <svg className="lucide lucide-circle-check shrink-0 size-4 text-[#00bc7d]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
+                  <circle cx={12} cy={12} r={10}></circle>
                   <path d="m9 12 2 2 4-4"></path>
                 </svg>
                 <span className="leading-5 text-[#fafafa] text-sm">
@@ -81,8 +81,8 @@ export function Pattern() {
                 </span>
               </li>
               <li className="flex gap-1.5 items-center">
-                <svg className="lucide lucide-circle-check shrink-0 size-4 text-[#00bc7d]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10"></circle>
+                <svg className="lucide lucide-circle-check shrink-0 size-4 text-[#00bc7d]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
+                  <circle cx={12} cy={12} r={10}></circle>
                   <path d="m9 12 2 2 4-4"></path>
                 </svg>
                 <span className="leading-5 text-[#fafafa] text-sm">
@@ -96,58 +96,58 @@ export function Pattern() {
               <div className="[transform:scale(calc(100cqw/624px))] absolute left-0 origin-top-left top-0" role="img" aria-label="Isometric grid of connected integrations, each on its own tile" style={{width: "624px", height: "600px"}}>
                 <svg className="absolute inset-0 overflow-visible size-full" aria-hidden="true" viewBox="0 0 624 600">
                   <defs>
-                    <pattern id="_r_1_-grid" patternUnits="userSpaceOnUse" width="50" height="50">
-                      <rect width="50" height="50" fill="none" stroke="white"></rect>
+                    <pattern id="_r_1_-grid" patternUnits="userSpaceOnUse" width={50} height={50}>
+                      <rect width={50} height={50} fill="none" stroke="white"></rect>
                     </pattern>
                     <filter id="_r_1_-blur" x="-50%" y="-50%" width="200%" height="200%">
                       <fegaussianblur stdDeviation="100"></fegaussianblur>
                     </filter>
-                    <mask id="_r_1_-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="800" height="800">
-                      <rect width="800" height="800" fill="url(#_r_1_-grid)" fillOpacity="0.1"></rect>
+                    <mask id="_r_1_-mask" maskUnits="userSpaceOnUse" x={0} y={0} width={800} height={800}>
+                      <rect width={800} height={800} fill="url(#_r_1_-grid)" fillOpacity={0.1}></rect>
                     </mask>
-                    <lineargradient id="_r_1_-fade1" gradientUnits="userSpaceOnUse" x1="94" y1="125" x2="183" y2="425">
-                      <stop stopColor="white" stopOpacity="0"></stop>
-                      <stop offset="0.08" stopColor="white"></stop>
-                      <stop offset="0.92" stopColor="white"></stop>
-                      <stop offset="1" stopColor="white" stopOpacity="0"></stop>
+                    <lineargradient id="_r_1_-fade1" gradientUnits="userSpaceOnUse" x1={94} y1={125} x2={183} y2={425}>
+                      <stop stopColor="white" stopOpacity={0}></stop>
+                      <stop offset={0.08} stopColor="white"></stop>
+                      <stop offset={0.92} stopColor="white"></stop>
+                      <stop offset={1} stopColor="white" stopOpacity={0}></stop>
                     </lineargradient>
-                    <lineargradient id="_r_1_-fade2" gradientUnits="userSpaceOnUse" x1="-78" y1="275" x2="-53.53" y2="380.41">
-                      <stop stopColor="white" stopOpacity="0"></stop>
-                      <stop offset="0.08" stopColor="white"></stop>
-                      <stop offset="0.92" stopColor="white"></stop>
-                      <stop offset="1" stopColor="white" stopOpacity="0"></stop>
+                    <lineargradient id="_r_1_-fade2" gradientUnits="userSpaceOnUse" x1={-78} y1={275} x2={-53.53} y2={380.41}>
+                      <stop stopColor="white" stopOpacity={0}></stop>
+                      <stop offset={0.08} stopColor="white"></stop>
+                      <stop offset={0.92} stopColor="white"></stop>
+                      <stop offset={1} stopColor="white" stopOpacity={0}></stop>
                     </lineargradient>
-                    <lineargradient id="_r_1_-fade3" gradientUnits="userSpaceOnUse" x1="354" y1="75" x2="417.52" y2="331.62">
-                      <stop stopColor="white" stopOpacity="0"></stop>
-                      <stop offset="0.08" stopColor="white"></stop>
-                      <stop offset="0.92" stopColor="white"></stop>
-                      <stop offset="1" stopColor="white" stopOpacity="0"></stop>
+                    <lineargradient id="_r_1_-fade3" gradientUnits="userSpaceOnUse" x1={354} y1={75} x2={417.52} y2={331.62}>
+                      <stop stopColor="white" stopOpacity={0}></stop>
+                      <stop offset={0.08} stopColor="white"></stop>
+                      <stop offset={0.92} stopColor="white"></stop>
+                      <stop offset={1} stopColor="white" stopOpacity={0}></stop>
                     </lineargradient>
                   </defs>
                   <g transform="translate(311.82 300)">
                     <g transform="matrix(0.866025,-0.5,0.866025,0.5,0,0)">
                       <g transform="translate(-400 -400)">
                         <g mask="url(#_r_1_-mask)">
-                          <circle cx="400" cy="400" r="300" fill="white" filter="url(#_r_1_-blur)"></circle>
+                          <circle cx={400} cy={400} r={300} fill="white" filter="url(#_r_1_-blur)"></circle>
                         </g>
                       </g>
                     </g>
                   </g>
-                  <line x1="95.31" y1="125" x2="138.6113" y2="150" stroke="url(#_r_1_-fade1)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.3725281203733175"></line>
-                  <line x1="138.61" y1="250" x2="181.9113" y2="275" stroke="url(#_r_1_-fade1)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.6"></line>
-                  <line x1="138.61" y1="350" x2="181.9113" y2="375" stroke="url(#_r_1_-fade1)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15"></line>
-                  <line x1="95.31" y1="175" x2="138.6113" y2="150" stroke="url(#_r_1_-fade1)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.6"></line>
-                  <line x1="138.61" y1="300" x2="181.9113" y2="275" stroke="url(#_r_1_-fade1)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15"></line>
-                  <line x1="571.63" y1="200" x2="614.9313" y2="225" stroke="url(#_r_1_-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15"></line>
-                  <line x1="311.82" y1="250" x2="355.1213" y2="275" stroke="url(#_r_1_-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15"></line>
-                  <line x1="-77.89" y1="275" x2="-34.5887" y2="300" stroke="url(#_r_1_-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15"></line>
-                  <line x1="355.12" y1="275" x2="485.0239" y2="200" stroke="url(#_r_1_-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15"></line>
-                  <line x1="181.92" y1="275" x2="225.22129999999999" y2="250" stroke="url(#_r_1_-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15"></line>
-                  <line x1="-34.59" y1="300" x2="8.711299999999994" y2="275" stroke="url(#_r_1_-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.2475046966588707"></line>
-                  <line x1="355.12" y1="75" x2="398.4213" y2="100" stroke="url(#_r_1_-fade3)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15"></line>
-                  <line x1="398.42" y1="250" x2="441.72130000000004" y2="275" stroke="url(#_r_1_-fade3)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.6"></line>
+                  <line x1={95.31} y1={125} x2={138.6113} y2={150} stroke="url(#_r_1_-fade1)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.3725281203733175}></line>
+                  <line x1={138.61} y1={250} x2={181.9113} y2={275} stroke="url(#_r_1_-fade1)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.6}></line>
+                  <line x1={138.61} y1={350} x2={181.9113} y2={375} stroke="url(#_r_1_-fade1)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15}></line>
+                  <line x1={95.31} y1={175} x2={138.6113} y2={150} stroke="url(#_r_1_-fade1)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.6}></line>
+                  <line x1={138.61} y1={300} x2={181.9113} y2={275} stroke="url(#_r_1_-fade1)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15}></line>
+                  <line x1={571.63} y1={200} x2={614.9313} y2={225} stroke="url(#_r_1_-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15}></line>
+                  <line x1={311.82} y1={250} x2={355.1213} y2={275} stroke="url(#_r_1_-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15}></line>
+                  <line x1={-77.89} y1={275} x2={-34.5887} y2={300} stroke="url(#_r_1_-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15}></line>
+                  <line x1={355.12} y1={275} x2={485.0239} y2={200} stroke="url(#_r_1_-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15}></line>
+                  <line x1={181.92} y1={275} x2={225.22129999999999} y2={250} stroke="url(#_r_1_-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15}></line>
+                  <line x1={-34.59} y1={300} x2={8.711299999999994} y2={275} stroke="url(#_r_1_-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.2475046966588707}></line>
+                  <line x1={355.12} y1={75} x2={398.4213} y2={100} stroke="url(#_r_1_-fade3)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15}></line>
+                  <line x1={398.42} y1={250} x2={441.72130000000004} y2={275} stroke="url(#_r_1_-fade3)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.6}></line>
                   <g transform="translate(401.277 374) matrix(0.866025,-0.5,0.866025,0.5,0,0)">
-                    <text textAnchor="middle" dominantBaseline="central" fontSize="36" fontWeight="400" fill="#d0d6d8" fillOpacity="0.9">
+                    <text textAnchor="middle" dominantBaseline="central" fontSize="36" fontWeight="400" fill="#d0d6d8" fillOpacity={0.9}>
                       {"Built for Every Stack"}
                     </text>
                   </g>
@@ -178,16 +178,16 @@ export function Pattern() {
                       <div className="[&_svg]:size-full absolute origin-top-left" aria-hidden="true" style={{left: "22.5166px", top: "0px", width: "24px", height: "24px", transform: "matrix(0.866025, -0.5, 0.866025, 0.5, 0, 0)"}}>
                         <svg viewBox="0 0 109 113" fill="none">
                           <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint0_linear)"></path>
-                          <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity="0.2"></path>
+                          <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity={0.2}></path>
                           <path d="M45.317 2.07103C48.1765 -1.53037 53.9745 0.442937 54.0434 5.041L54.4849 72.2922H9.83113C1.64038 72.2922 -2.92775 62.8321 2.1655 56.4175L45.317 2.07103Z" fill="#3ECF8E"></path>
                           <defs>
-                            <lineargradient id="supabase-paint0_linear" x1="53.9738" y1="54.974" x2="94.1635" y2="71.8295" gradientUnits="userSpaceOnUse">
+                            <lineargradient id="supabase-paint0_linear" x1={53.9738} y1={54.974} x2={94.1635} y2={71.8295} gradientUnits="userSpaceOnUse">
                               <stop stopColor="#249361"></stop>
-                              <stop offset="1" stopColor="#3ECF8E"></stop>
+                              <stop offset={1} stopColor="#3ECF8E"></stop>
                             </lineargradient>
-                            <lineargradient id="supabase-paint1_linear" x1="36.1558" y1="30.578" x2="54.4844" y2="65.0806" gradientUnits="userSpaceOnUse">
+                            <lineargradient id="supabase-paint1_linear" x1={36.1558} y1={30.578} x2={54.4844} y2={65.0806} gradientUnits="userSpaceOnUse">
                               <stop></stop>
-                              <stop offset="1" stopOpacity="0"></stop>
+                              <stop offset={1} stopOpacity={0}></stop>
                             </lineargradient>
                           </defs>
                         </svg>
@@ -267,11 +267,11 @@ export function Pattern() {
                           <defs>
                             <lineargradient id="neon-a" x1="100%" x2="12.069%" y1="100%" y2="0%">
                               <stop offset="0%" stopColor="#62F755"></stop>
-                              <stop offset="100%" stopColor="#8FF986" stopOpacity="0"></stop>
+                              <stop offset="100%" stopColor="#8FF986" stopOpacity={0}></stop>
                             </lineargradient>
                             <lineargradient id="neon-b" x1="100%" x2="40.603%" y1="100%" y2="76.897%">
                               <stop offset="0%" stopOpacity=".9"></stop>
-                              <stop offset="100%" stopColor="#1A1A1A" stopOpacity="0"></stop>
+                              <stop offset="100%" stopColor="#1A1A1A" stopOpacity={0}></stop>
                             </lineargradient>
                           </defs>
                           <path fill="#00E0D9" d="M0 44.139C0 19.762 19.762 0 44.139 0H211.86C236.238 0 256 19.762 256 44.139v142.649c0 25.216-31.915 36.16-47.388 16.256l-48.392-62.251v75.484c0 21.939-17.784 39.723-39.722 39.723h-76.36C19.763 256 0 236.238 0 211.861V44.14Zm44.139-8.825c-4.879 0-8.825 3.946-8.825 8.818v167.73c0 4.878 3.946 8.831 8.818 8.831h77.688c2.44 0 3.087-1.977 3.087-4.416v-101.22c0-25.222 31.914-36.166 47.395-16.255l48.391 62.243V44.14c0-4.879.455-8.825-4.416-8.825H44.14Z"></path>

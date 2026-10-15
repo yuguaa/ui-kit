@@ -30,16 +30,16 @@ export function Pattern() {
                 {"(3 items)"}
               </p>
             </div>
-            <Button className="h-auto p-0" type="button" tabIndex="0" extracted="1">
+            <Button className="h-auto p-0" type="button" tabIndex={0} extracted="1">
               {"Continue Shopping"}
-              <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" data-icon="inline-end" aria-hidden="true">
+              <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" data-icon="inline-end" aria-hidden="true">
                 <path d="m9 18 6-6-6-6"></path>
               </svg>
             </Button>
           </div>
           <p className="flex font-medium gap-2 items-center text-foreground text-sm">
-            <svg className="lucide lucide-circle-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
-              <circle cx="12" cy="12" r="10"></circle>
+            <svg className="lucide lucide-circle-check shrink-0 size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
+              <circle cx={12} cy={12} r={10}></circle>
               <path d="m9 12 2 2 4-4"></path>
             </svg>
             <span>
@@ -68,8 +68,8 @@ export function Pattern() {
                             </a>
                           </h3>
                         </div>
-                        <Button className="-mr-1 -mt-1" type="button" tabIndex="0" aria-label="Remove Atelier Wool Coat from cart">
-                          <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                        <Button className="-mr-1 -mt-1" type="button" tabIndex={0} aria-label="Remove Atelier Wool Coat from cart">
+                          <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                             <path d="M18 6 6 18"></path>
                             <path d="m6 6 12 12"></path>
                           </svg>
@@ -93,12 +93,12 @@ export function Pattern() {
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground">
-                          <svg className="lucide lucide-truck shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
+                          <svg className="lucide lucide-truck shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
                             <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path>
                             <path d="M15 18H9"></path>
                             <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path>
-                            <circle cx="17" cy="18" r="2"></circle>
-                            <circle cx="7" cy="18" r="2"></circle>
+                            <circle cx={17} cy={18} r={2}></circle>
+                            <circle cx={7} cy={18} r={2}></circle>
                           </svg>
                           <span className="truncate">
                             {"Arrives Tue, May 12"}
@@ -107,24 +107,24 @@ export function Pattern() {
                       </div>
                       <div className="flex flex-wrap gap-3 items-center justify-between mt-1">
                         <ButtonGroup role="group" aria-label="Quantity for Atelier Wool Coat">
-                          <Button type="button" disabled="" tabIndex="0" disabled aria-label="Decrease quantity for Atelier Wool Coat">
-                            <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                          <Button type="button" disabled="" tabIndex={0} disabled aria-label="Decrease quantity for Atelier Wool Coat">
+                            <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                               <path d="M5 12h14"></path>
                             </svg>
                           </Button>
                           <div className="[&_svg]:pointer-events-none cn-button-group-text flex items-center justify-center min-w-10 tabular-nums text-sm">
                             {"1"}
                           </div>
-                          <Button type="button" tabIndex="0" aria-label="Increase quantity for Atelier Wool Coat">
-                            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                          <Button type="button" tabIndex={0} aria-label="Increase quantity for Atelier Wool Coat">
+                            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                               <path d="M5 12h14"></path>
                               <path d="M12 5v14"></path>
                             </svg>
                           </Button>
                         </ButtonGroup>
                         <div className="flex gap-3 items-center">
-                          <Button className="hidden sm:inline-flex" type="button" tabIndex="0">
-                            <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" data-icon="inline-start" aria-hidden="true">
+                          <Button className="hidden sm:inline-flex" type="button" tabIndex={0}>
+                            <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" data-icon="inline-start" aria-hidden="true">
                               <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                             </svg>
                             {"Save For Later"}
@@ -134,8 +134,8 @@ export function Pattern() {
                           </p>
                         </div>
                       </div>
-                      <Button className="-mx-2 self-start sm:hidden" type="button" tabIndex="0">
-                        <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" data-icon="inline-start" aria-hidden="true">
+                      <Button className="-mx-2 self-start sm:hidden" type="button" tabIndex={0}>
+                        <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" data-icon="inline-start" aria-hidden="true">
                           <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                         </svg>
                         {"Save For Later"}
@@ -160,8 +160,8 @@ export function Pattern() {
                             </a>
                           </h3>
                         </div>
-                        <Button className="-mr-1 -mt-1" type="button" tabIndex="0" aria-label="Remove Studio Bomber Jacket from cart">
-                          <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                        <Button className="-mr-1 -mt-1" type="button" tabIndex={0} aria-label="Remove Studio Bomber Jacket from cart">
+                          <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                             <path d="M18 6 6 18"></path>
                             <path d="m6 6 12 12"></path>
                           </svg>
@@ -185,12 +185,12 @@ export function Pattern() {
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground">
-                          <svg className="lucide lucide-truck shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
+                          <svg className="lucide lucide-truck shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
                             <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path>
                             <path d="M15 18H9"></path>
                             <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path>
-                            <circle cx="17" cy="18" r="2"></circle>
-                            <circle cx="7" cy="18" r="2"></circle>
+                            <circle cx={17} cy={18} r={2}></circle>
+                            <circle cx={7} cy={18} r={2}></circle>
                           </svg>
                           <span className="truncate">
                             {"Arrives Tue, May 12"}
@@ -199,24 +199,24 @@ export function Pattern() {
                       </div>
                       <div className="flex flex-wrap gap-3 items-center justify-between mt-1">
                         <ButtonGroup role="group" aria-label="Quantity for Studio Bomber Jacket">
-                          <Button type="button" disabled="" tabIndex="0" disabled aria-label="Decrease quantity for Studio Bomber Jacket">
-                            <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                          <Button type="button" disabled="" tabIndex={0} disabled aria-label="Decrease quantity for Studio Bomber Jacket">
+                            <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                               <path d="M5 12h14"></path>
                             </svg>
                           </Button>
                           <div className="[&_svg]:pointer-events-none cn-button-group-text flex items-center justify-center min-w-10 tabular-nums text-sm">
                             {"1"}
                           </div>
-                          <Button type="button" tabIndex="0" aria-label="Increase quantity for Studio Bomber Jacket">
-                            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                          <Button type="button" tabIndex={0} aria-label="Increase quantity for Studio Bomber Jacket">
+                            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                               <path d="M5 12h14"></path>
                               <path d="M12 5v14"></path>
                             </svg>
                           </Button>
                         </ButtonGroup>
                         <div className="flex gap-3 items-center">
-                          <Button className="hidden sm:inline-flex" type="button" tabIndex="0">
-                            <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" data-icon="inline-start" aria-hidden="true">
+                          <Button className="hidden sm:inline-flex" type="button" tabIndex={0}>
+                            <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" data-icon="inline-start" aria-hidden="true">
                               <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                             </svg>
                             {"Save For Later"}
@@ -226,8 +226,8 @@ export function Pattern() {
                           </p>
                         </div>
                       </div>
-                      <Button className="-mx-2 self-start sm:hidden" type="button" tabIndex="0">
-                        <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" data-icon="inline-start" aria-hidden="true">
+                      <Button className="-mx-2 self-start sm:hidden" type="button" tabIndex={0}>
+                        <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" data-icon="inline-start" aria-hidden="true">
                           <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                         </svg>
                         {"Save For Later"}
@@ -252,8 +252,8 @@ export function Pattern() {
                             </a>
                           </h3>
                         </div>
-                        <Button className="-mr-1 -mt-1" type="button" tabIndex="0" aria-label="Remove Aurora Wireless Headphones from cart">
-                          <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                        <Button className="-mr-1 -mt-1" type="button" tabIndex={0} aria-label="Remove Aurora Wireless Headphones from cart">
+                          <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                             <path d="M18 6 6 18"></path>
                             <path d="m6 6 12 12"></path>
                           </svg>
@@ -277,12 +277,12 @@ export function Pattern() {
                         </span>
                         <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                         <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground">
-                          <svg className="lucide lucide-truck shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
+                          <svg className="lucide lucide-truck shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
                             <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path>
                             <path d="M15 18H9"></path>
                             <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path>
-                            <circle cx="17" cy="18" r="2"></circle>
-                            <circle cx="7" cy="18" r="2"></circle>
+                            <circle cx={17} cy={18} r={2}></circle>
+                            <circle cx={7} cy={18} r={2}></circle>
                           </svg>
                           <span className="truncate">
                             {"Arrives Wed, May 13"}
@@ -291,24 +291,24 @@ export function Pattern() {
                       </div>
                       <div className="flex flex-wrap gap-3 items-center justify-between mt-1">
                         <ButtonGroup role="group" aria-label="Quantity for Aurora Wireless Headphones">
-                          <Button type="button" disabled="" tabIndex="0" disabled aria-label="Decrease quantity for Aurora Wireless Headphones">
-                            <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                          <Button type="button" disabled="" tabIndex={0} disabled aria-label="Decrease quantity for Aurora Wireless Headphones">
+                            <svg className="lucide lucide-minus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                               <path d="M5 12h14"></path>
                             </svg>
                           </Button>
                           <div className="[&_svg]:pointer-events-none cn-button-group-text flex items-center justify-center min-w-10 tabular-nums text-sm">
                             {"1"}
                           </div>
-                          <Button type="button" tabIndex="0" aria-label="Increase quantity for Aurora Wireless Headphones">
-                            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                          <Button type="button" tabIndex={0} aria-label="Increase quantity for Aurora Wireless Headphones">
+                            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                               <path d="M5 12h14"></path>
                               <path d="M12 5v14"></path>
                             </svg>
                           </Button>
                         </ButtonGroup>
                         <div className="flex gap-3 items-center">
-                          <Button className="hidden sm:inline-flex" type="button" tabIndex="0">
-                            <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" data-icon="inline-start" aria-hidden="true">
+                          <Button className="hidden sm:inline-flex" type="button" tabIndex={0}>
+                            <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" data-icon="inline-start" aria-hidden="true">
                               <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                             </svg>
                             {"Save For Later"}
@@ -318,8 +318,8 @@ export function Pattern() {
                           </p>
                         </div>
                       </div>
-                      <Button className="-mx-2 self-start sm:hidden" type="button" tabIndex="0">
-                        <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" data-icon="inline-start" aria-hidden="true">
+                      <Button className="-mx-2 self-start sm:hidden" type="button" tabIndex={0}>
+                        <svg className="lucide lucide-heart" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="HeartIcon" tabler="IconHeart" hugeicons="FavouriteIcon" phosphor="HeartIcon" remixicon="RiHeartLine" data-icon="inline-start" aria-hidden="true">
                           <path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"></path>
                         </svg>
                         {"Save For Later"}
@@ -338,21 +338,21 @@ export function Pattern() {
                     <InputGroup className="pr-0" role="group">
                       <InputGroupAddon role="group" data-align="inline-start">
                         <span className="[&_svg]:pointer-events-none cn-input-group-text flex items-center">
-                          <svg className="lucide lucide-tag size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                          <svg className="lucide lucide-tag size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                             <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                            <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                            <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                           </svg>
                         </span>
                       </InputGroupAddon>
                       <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="cart-promo-code" placeholder="Enter your code" aria-invalid="false" aria-describedby="cart-promo-status" value="" />
                       <InputGroupAddon className="pr-0" role="group" data-align="inline-end">
-                        <Button className="cn-input-group-button cn-input-group-button-size-sm flex shadow-none" type="submit" disabled="" tabIndex="0" disabled size="sm">
+                        <Button className="cn-input-group-button cn-input-group-button-size-sm flex shadow-none" type="submit" disabled="" tabIndex={0} disabled size="sm">
                           {"Apply"}
                         </Button>
                       </InputGroupAddon>
                     </InputGroup>
                     <FieldDescription className="flex gap-1.5 items-center text-foreground" id="cart-promo-status">
-                      <svg className="lucide lucide-check shrink-0 size-3.5 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                      <svg className="lucide lucide-check shrink-0 size-3.5 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
                       {"Code applied at checkout"}
@@ -379,9 +379,9 @@ export function Pattern() {
                 <span className="text-muted-foreground">
                   {"Shipping"}
                   <Tooltip>
-                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 align-middle cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center ml-1 outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Shipping is estimated from cart weight and destination." id="base-ui-_r_2_" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
-                      <circle cx="12" cy="12" r="10"></circle>
+                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 align-middle cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center ml-1 outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Shipping is estimated from cart weight and destination." id="base-ui-_r_2_" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
+                      <circle cx={12} cy={12} r={10}></circle>
                       <path d="M12 16v-4"></path>
                       <path d="M12 8h.01"></path>
                     </svg>
@@ -396,9 +396,9 @@ export function Pattern() {
                 <span className="text-muted-foreground">
                   {"Estimated tax"}
                   <Tooltip>
-                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 align-middle cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center ml-1 outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Final tax is recalculated at checkout." id="base-ui-_r_4_" baseUiTooltipTrigger="">
-                    <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
-                      <circle cx="12" cy="12" r="10"></circle>
+                  <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 align-middle cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center ml-1 outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Final tax is recalculated at checkout." id="base-ui-_r_4_" baseUiTooltipTrigger="">
+                    <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" aria-hidden="true">
+                      <circle cx={12} cy={12} r={10}></circle>
                       <path d="M12 16v-4"></path>
                       <path d="M12 8h.01"></path>
                     </svg>
@@ -432,8 +432,8 @@ export function Pattern() {
                 </p>
               </div>
             </div>
-            <Button className="w-full" type="button" tabIndex="0">
-              <svg className="lucide lucide-shield-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" data-icon="inline-start" aria-hidden="true">
+            <Button className="w-full" type="button" tabIndex={0}>
+              <svg className="lucide lucide-shield-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" data-icon="inline-start" aria-hidden="true">
                 <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                 <path d="m9 12 2 2 4-4"></path>
               </svg>
@@ -443,7 +443,7 @@ export function Pattern() {
               <div>
                 <Item className="bg-background h-9 min-w-0 px-2" variant="outline" size="default" aria-label="Visa" role="img">
                   <svg className="h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 12" aria-hidden="true">
-                    <text className="dark:fill-blue-400 fill-blue-700" x="0" y="10" fontFamily="system-ui, -apple-system, sans-serif" fontSize="11" fontWeight="900" letter-spacing="0.5">
+                    <text className="dark:fill-blue-400 fill-blue-700" x={0} y={10} fontFamily="system-ui, -apple-system, sans-serif" fontSize="11" fontWeight="900" letter-spacing="0.5">
                       {"VISA"}
                     </text>
                   </svg>
@@ -452,16 +452,16 @@ export function Pattern() {
               <div>
                 <Item className="bg-background h-9 min-w-0 px-2" variant="outline" size="default" aria-label="Mastercard" role="img">
                   <svg className="h-5 w-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 20" aria-hidden="true">
-                    <circle className="fill-red-500/90" cx="12" cy="10" r="10"></circle>
-                    <circle className="fill-amber-400/90" cx="20" cy="10" r="10" style={{mixBlendMode: "multiply"}}></circle>
+                    <circle className="fill-red-500/90" cx={12} cy={10} r={10}></circle>
+                    <circle className="fill-amber-400/90" cx={20} cy={10} r={10} style={{mixBlendMode: "multiply"}}></circle>
                   </svg>
                 </Item>
               </div>
               <div>
                 <Item className="bg-background h-9 min-w-0 px-2" variant="outline" size="default" aria-label="American Express" role="img">
                   <svg className="h-3.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 14" aria-hidden="true">
-                    <rect className="fill-blue-700" width="36" height="14" rx="1.5"></rect>
-                    <text className="fill-blue-50" x="18" y="10" textAnchor="middle" fontFamily="system-ui, -apple-system, sans-serif" fontSize="7" fontWeight="900" letter-spacing="0.5">
+                    <rect className="fill-blue-700" width={36} height={14} rx={1.5}></rect>
+                    <text className="fill-blue-50" x={18} y={10} textAnchor="middle" fontFamily="system-ui, -apple-system, sans-serif" fontSize="7" fontWeight="900" letter-spacing="0.5">
                       {"AMEX"}
                     </text>
                   </svg>
@@ -470,11 +470,11 @@ export function Pattern() {
               <div>
                 <Item className="bg-background h-9 min-w-0 px-2" variant="outline" size="default" aria-label="Discover" role="img">
                   <svg className="h-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 12" aria-hidden="true">
-                    <text className="fill-foreground" x="0" y="9" fontFamily="system-ui, -apple-system, sans-serif" fontSize="9" fontWeight="700" letter-spacing="0.3">
+                    <text className="fill-foreground" x={0} y={9} fontFamily="system-ui, -apple-system, sans-serif" fontSize="9" fontWeight="700" letter-spacing="0.3">
                       {"DISC"}
                     </text>
-                    <circle className="fill-orange-500" cx="26" cy="6" r="2.5"></circle>
-                    <text className="fill-foreground" x="30" y="9" fontFamily="system-ui, -apple-system, sans-serif" fontSize="9" fontWeight="700" letter-spacing="0.3">
+                    <circle className="fill-orange-500" cx={26} cy={6} r={2.5}></circle>
+                    <text className="fill-foreground" x={30} y={9} fontFamily="system-ui, -apple-system, sans-serif" fontSize="9" fontWeight="700" letter-spacing="0.3">
                       {"VER"}
                     </text>
                   </svg>
@@ -511,7 +511,7 @@ export function Pattern() {
               </div>
             </div>
             <p className="flex gap-2 items-center text-muted-foreground text-xs">
-              <svg className="lucide lucide-shield-check shrink-0 size-3.5 text-foreground/70" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
+              <svg className="lucide lucide-shield-check shrink-0 size-3.5 text-foreground/70" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
                 <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                 <path d="m9 12 2 2 4-4"></path>
               </svg>
@@ -524,12 +524,12 @@ export function Pattern() {
         <ul className="border-t flex flex-wrap gap-x-6 gap-y-2 items-center justify-center px-6 py-4 sm:gap-x-8 sm:px-8 text-muted-foreground text-xs" role="list">
           <li className="flex gap-2 items-center">
             <span className="shrink-0 text-foreground/70" aria-hidden="true">
-              <svg className="lucide lucide-truck size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
+              <svg className="lucide lucide-truck size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
                 <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path>
                 <path d="M15 18H9"></path>
                 <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path>
-                <circle cx="17" cy="18" r="2"></circle>
-                <circle cx="7" cy="18" r="2"></circle>
+                <circle cx={17} cy={18} r={2}></circle>
+                <circle cx={7} cy={18} r={2}></circle>
               </svg>
             </span>
             <span>
@@ -538,7 +538,7 @@ export function Pattern() {
           </li>
           <li className="flex gap-2 items-center">
             <span className="shrink-0 text-foreground/70" aria-hidden="true">
-              <svg className="lucide lucide-rotate-ccw size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RotateCcwIcon" tabler="IconRefresh" hugeicons="UndoIcon" phosphor="ArrowCounterClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
+              <svg className="lucide lucide-rotate-ccw size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="RotateCcwIcon" tabler="IconRefresh" hugeicons="UndoIcon" phosphor="ArrowCounterClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
                 <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                 <path d="M3 3v5h5"></path>
               </svg>
@@ -549,7 +549,7 @@ export function Pattern() {
           </li>
           <li className="flex gap-2 items-center">
             <span className="shrink-0 text-foreground/70" aria-hidden="true">
-              <svg className="lucide lucide-headphones size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Headphones" tabler="IconHeadphones" hugeicons="CustomerSupportIcon" phosphor="HeadphonesIcon" remixicon="RiCustomerService2Line" aria-hidden="true">
+              <svg className="lucide lucide-headphones size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Headphones" tabler="IconHeadphones" hugeicons="CustomerSupportIcon" phosphor="HeadphonesIcon" remixicon="RiCustomerService2Line" aria-hidden="true">
                 <path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a9 9 0 0 1 18 0v7a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3"></path>
               </svg>
             </span>
@@ -559,7 +559,7 @@ export function Pattern() {
           </li>
           <li className="flex gap-2 items-center">
             <span className="shrink-0 text-foreground/70" aria-hidden="true">
-              <svg className="lucide lucide-shield-check size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
+              <svg className="lucide lucide-shield-check size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
                 <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                 <path d="m9 12 2 2 4-4"></path>
               </svg>

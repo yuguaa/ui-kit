@@ -55,9 +55,9 @@ export function Pattern() {
               {"Enterprise sign-in for acmecloud.com"}
             </div>
           </div>
-          <Button type="button" tabIndex="0" extracted="1">
-            <svg className="lucide lucide-lock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LockIcon" tabler="IconLock" hugeicons="SquareLock01Icon" phosphor="LockSimpleIcon" remixicon="RiLockLine" aria-hidden="true">
-              <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+          <Button type="button" tabIndex={0} extracted="1">
+            <svg className="lucide lucide-lock" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LockIcon" tabler="IconLock" hugeicons="SquareLock01Icon" phosphor="LockSimpleIcon" remixicon="RiLockLine" aria-hidden="true">
+              <rect width={18} height={11} x={3} y={11} rx={2} ry={2}></rect>
               <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
             </svg>
             {"View as Member"}
@@ -84,7 +84,7 @@ export function Pattern() {
                 <Item className="border-t-0 border-x-0 last:border-b-0" variant="outline" size="default">
                   <ItemMedia variant="icon">
                     <Item className="[&_svg]:opacity-70 [&_svg]:size-4 bg-muted border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-9 text-muted-foreground" variant="default" size="default">
-                      <svg className="lucide lucide-shield-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
+                      <svg className="lucide lucide-shield-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
                         <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                         <path d="m9 12 2 2 4-4"></path>
                       </svg>
@@ -98,8 +98,8 @@ export function Pattern() {
                       <span className="flex gap-1 items-center shrink-0">
                         <Tooltip>
                         <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex p-0.5 rounded-sm text-green-600 transition-colors" type="button" aria-label="Healthy. 57 members sign in through Okta." id="base-ui-_r_1_" baseUiTooltipTrigger="">
-                          <svg className="lucide lucide-circle-check shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
-                            <circle cx="12" cy="12" r="10"></circle>
+                          <svg className="lucide lucide-circle-check shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
+                            <circle cx={12} cy={12} r={10}></circle>
                             <path d="m9 12 2 2 4-4"></path>
                           </svg>
                         </TooltipTrigger>
@@ -115,9 +115,9 @@ export function Pattern() {
                           {"https://acmecloud.okta.com/app/metadata"}
                         </code>
                         <Tooltip>
-                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none duration-200 focus-visible:opacity-100 group/button inline-flex items-center justify-center opacity-100 outline-none select-none shrink-0 sm:group-focus-within/url:opacity-100 sm:group-hover/url:opacity-100 sm:opacity-0 text-muted-foreground transition-opacity whitespace-nowrap" type="button" tabIndex="0" aria-label="Copy Okta metadata URL" id="base-ui-_r_3_" baseUiTooltipTrigger="">
-                          <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
-                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none duration-200 focus-visible:opacity-100 group/button inline-flex items-center justify-center opacity-100 outline-none select-none shrink-0 sm:group-focus-within/url:opacity-100 sm:group-hover/url:opacity-100 sm:opacity-0 text-muted-foreground transition-opacity whitespace-nowrap" type="button" tabIndex={0} aria-label="Copy Okta metadata URL" id="base-ui-_r_3_" baseUiTooltipTrigger="">
+                          <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
+                            <rect width={14} height={14} x={8} y={8} rx={2} ry={2}></rect>
                             <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                           </svg>
                         </TooltipTrigger>
@@ -126,19 +126,19 @@ export function Pattern() {
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions className="basis-full gap-2 justify-end pt-2 sm:basis-auto sm:justify-start sm:pt-0 sm:self-center">
-                    <Button type="button" tabIndex="0">
-                      <svg className="lucide lucide-shield-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
+                    <Button type="button" tabIndex={0}>
+                      <svg className="lucide lucide-shield-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
                         <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                         <path d="m9 12 2 2 4-4"></path>
                       </svg>
                       {"Test"}
                     </Button>
                     <DropdownMenu>
-                    <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open actions for Okta" aria-haspopup="menu" id="base-ui-_r_7_" aria-expanded="false">
-                      <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
-                        <circle cx="12" cy="12" r="1"></circle>
-                        <circle cx="12" cy="5" r="1"></circle>
-                        <circle cx="12" cy="19" r="1"></circle>
+                    <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Open actions for Okta" aria-haspopup="menu" id="base-ui-_r_7_" aria-expanded="false">
+                      <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
+                        <circle cx={12} cy={12} r={1}></circle>
+                        <circle cx={12} cy={5} r={1}></circle>
+                        <circle cx={12} cy={19} r={1}></circle>
                       </svg>
                     </DropdownMenuTrigger>
                     </DropdownMenu>
@@ -150,7 +150,7 @@ export function Pattern() {
                 <Item className="border-t-0 border-x-0 last:border-b-0" variant="outline" size="default">
                   <ItemMedia variant="icon">
                     <Item className="[&_svg]:opacity-70 [&_svg]:size-4 bg-muted border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-9 text-muted-foreground" variant="default" size="default">
-                      <svg className="lucide lucide-building-2 lucide-building2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Building2Icon" tabler="IconBuilding" hugeicons="Building02Icon" phosphor="BuildingsIcon" remixicon="RiBuildingLine" aria-hidden="true">
+                      <svg className="lucide lucide-building-2 lucide-building2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Building2Icon" tabler="IconBuilding" hugeicons="Building02Icon" phosphor="BuildingsIcon" remixicon="RiBuildingLine" aria-hidden="true">
                         <path d="M10 12h4"></path>
                         <path d="M10 8h4"></path>
                         <path d="M14 21v-3a2 2 0 0 0-4 0v3"></path>
@@ -167,8 +167,8 @@ export function Pattern() {
                       <span className="flex gap-1 items-center shrink-0">
                         <Tooltip>
                         <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex p-0.5 rounded-sm text-destructive transition-colors" type="button" aria-label="Error. Microsoft Entra ID metadata signature expired. Re-upload to restore sign-in." id="base-ui-_r_a_" baseUiTooltipTrigger="">
-                          <svg className="lucide lucide-circle-x shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleXIcon" tabler="IconCircleX" hugeicons="CancelCircleIcon" phosphor="XCircleIcon" remixicon="RiCloseCircleLine" aria-hidden="true">
-                            <circle cx="12" cy="12" r="10"></circle>
+                          <svg className="lucide lucide-circle-x shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleXIcon" tabler="IconCircleX" hugeicons="CancelCircleIcon" phosphor="XCircleIcon" remixicon="RiCloseCircleLine" aria-hidden="true">
+                            <circle cx={12} cy={12} r={10}></circle>
                             <path d="m15 9-6 6"></path>
                             <path d="m9 9 6 6"></path>
                           </svg>
@@ -185,9 +185,9 @@ export function Pattern() {
                           {"https://login.microsoftonline.com/acme/saml"}
                         </code>
                         <Tooltip>
-                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none duration-200 focus-visible:opacity-100 group/button inline-flex items-center justify-center opacity-100 outline-none select-none shrink-0 sm:group-focus-within/url:opacity-100 sm:group-hover/url:opacity-100 sm:opacity-0 text-muted-foreground transition-opacity whitespace-nowrap" type="button" tabIndex="0" aria-label="Copy Microsoft Entra ID metadata URL" id="base-ui-_r_c_" baseUiTooltipTrigger="">
-                          <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
-                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none duration-200 focus-visible:opacity-100 group/button inline-flex items-center justify-center opacity-100 outline-none select-none shrink-0 sm:group-focus-within/url:opacity-100 sm:group-hover/url:opacity-100 sm:opacity-0 text-muted-foreground transition-opacity whitespace-nowrap" type="button" tabIndex={0} aria-label="Copy Microsoft Entra ID metadata URL" id="base-ui-_r_c_" baseUiTooltipTrigger="">
+                          <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
+                            <rect width={14} height={14} x={8} y={8} rx={2} ry={2}></rect>
                             <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                           </svg>
                         </TooltipTrigger>
@@ -196,19 +196,19 @@ export function Pattern() {
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions className="basis-full gap-2 justify-end pt-2 sm:basis-auto sm:justify-start sm:pt-0 sm:self-center">
-                    <Button type="button" tabIndex="0">
-                      <svg className="lucide lucide-shield-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
+                    <Button type="button" tabIndex={0}>
+                      <svg className="lucide lucide-shield-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
                         <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                         <path d="m9 12 2 2 4-4"></path>
                       </svg>
                       {"Test"}
                     </Button>
                     <DropdownMenu>
-                    <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open actions for Microsoft Entra ID" aria-haspopup="menu" id="base-ui-_r_g_" aria-expanded="false">
-                      <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
-                        <circle cx="12" cy="12" r="1"></circle>
-                        <circle cx="12" cy="5" r="1"></circle>
-                        <circle cx="12" cy="19" r="1"></circle>
+                    <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Open actions for Microsoft Entra ID" aria-haspopup="menu" id="base-ui-_r_g_" aria-expanded="false">
+                      <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
+                        <circle cx={12} cy={12} r={1}></circle>
+                        <circle cx={12} cy={5} r={1}></circle>
+                        <circle cx={12} cy={19} r={1}></circle>
                       </svg>
                     </DropdownMenuTrigger>
                     </DropdownMenu>
@@ -220,8 +220,8 @@ export function Pattern() {
                 <Item className="border-t-0 border-x-0 last:border-b-0" variant="outline" size="default">
                   <ItemMedia variant="icon">
                     <Item className="[&_svg]:opacity-70 [&_svg]:size-4 bg-muted border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-9 text-muted-foreground" variant="default" size="default">
-                      <svg className="lucide lucide-globe" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GlobeIcon" tabler="IconWorld" hugeicons="Globe02Icon" phosphor="GlobeIcon" remixicon="RiGlobalLine" aria-hidden="true">
-                        <circle cx="12" cy="12" r="10"></circle>
+                      <svg className="lucide lucide-globe" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GlobeIcon" tabler="IconWorld" hugeicons="Globe02Icon" phosphor="GlobeIcon" remixicon="RiGlobalLine" aria-hidden="true">
+                        <circle cx={12} cy={12} r={10}></circle>
                         <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                         <path d="M2 12h20"></path>
                       </svg>
@@ -235,7 +235,7 @@ export function Pattern() {
                       <span className="flex gap-1 items-center shrink-0">
                         <Tooltip>
                         <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex p-0.5 rounded-sm text-warning transition-colors" type="button" aria-label="Inactive. Google Workspace is not configured yet. No members sign in through it." id="base-ui-_r_j_" baseUiTooltipTrigger="">
-                          <svg className="lucide lucide-triangle-alert shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
+                          <svg className="lucide lucide-triangle-alert shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
                             <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
                             <path d="M12 9v4"></path>
                             <path d="M12 17h.01"></path>
@@ -253,9 +253,9 @@ export function Pattern() {
                           {"https://accounts.google.com/.well-known/openid"}
                         </code>
                         <Tooltip>
-                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none duration-200 focus-visible:opacity-100 group/button inline-flex items-center justify-center opacity-100 outline-none select-none shrink-0 sm:group-focus-within/url:opacity-100 sm:group-hover/url:opacity-100 sm:opacity-0 text-muted-foreground transition-opacity whitespace-nowrap" type="button" tabIndex="0" aria-label="Copy Google Workspace metadata URL" id="base-ui-_r_l_" baseUiTooltipTrigger="">
-                          <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
-                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none duration-200 focus-visible:opacity-100 group/button inline-flex items-center justify-center opacity-100 outline-none select-none shrink-0 sm:group-focus-within/url:opacity-100 sm:group-hover/url:opacity-100 sm:opacity-0 text-muted-foreground transition-opacity whitespace-nowrap" type="button" tabIndex={0} aria-label="Copy Google Workspace metadata URL" id="base-ui-_r_l_" baseUiTooltipTrigger="">
+                          <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
+                            <rect width={14} height={14} x={8} y={8} rx={2} ry={2}></rect>
                             <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                           </svg>
                         </TooltipTrigger>
@@ -264,19 +264,19 @@ export function Pattern() {
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions className="basis-full gap-2 justify-end pt-2 sm:basis-auto sm:justify-start sm:pt-0 sm:self-center">
-                    <Button type="button" tabIndex="0">
-                      <svg className="lucide lucide-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LinkIcon" tabler="IconLink" hugeicons="Link01Icon" phosphor="LinkIcon" remixicon="RiLinkM" aria-hidden="true">
+                    <Button type="button" tabIndex={0}>
+                      <svg className="lucide lucide-link" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LinkIcon" tabler="IconLink" hugeicons="Link01Icon" phosphor="LinkIcon" remixicon="RiLinkM" aria-hidden="true">
                         <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
                         <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
                       </svg>
                       {"Connect"}
                     </Button>
                     <DropdownMenu>
-                    <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open actions for Google Workspace" aria-haspopup="menu" id="base-ui-_r_p_" aria-expanded="false">
-                      <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
-                        <circle cx="12" cy="12" r="1"></circle>
-                        <circle cx="12" cy="5" r="1"></circle>
-                        <circle cx="12" cy="19" r="1"></circle>
+                    <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Open actions for Google Workspace" aria-haspopup="menu" id="base-ui-_r_p_" aria-expanded="false">
+                      <svg className="lucide lucide-ellipsis-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="EllipsisVerticalIcon" tabler="IconDotsVertical" hugeicons="MoreVerticalIcon" phosphor="DotsThreeVerticalIcon" remixicon="RiMore2Fill" aria-hidden="true">
+                        <circle cx={12} cy={12} r={1}></circle>
+                        <circle cx={12} cy={5} r={1}></circle>
+                        <circle cx={12} cy={19} r={1}></circle>
                       </svg>
                     </DropdownMenuTrigger>
                     </DropdownMenu>
@@ -318,9 +318,9 @@ export function Pattern() {
                   <InputGroup role="group">
                     <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_r_" readOnly value="https://acmecloud.com/scim/v2" />
                     <InputGroupAddon role="group" data-align="inline-end">
-                      <Button className="cn-input-group-button cn-input-group-button-size-icon-xs flex shadow-none" type="button" tabIndex="0" size="icon-xs" aria-label="Copy SCIM endpoint URL">
-                        <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
-                          <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                      <Button className="cn-input-group-button cn-input-group-button-size-icon-xs flex shadow-none" type="button" tabIndex={0} size="icon-xs" aria-label="Copy SCIM endpoint URL">
+                        <svg className="lucide lucide-copy" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CopyIcon" tabler="IconCopy" hugeicons="Copy01Icon" phosphor="CopyIcon" remixicon="RiFileCopyLine" aria-hidden="true">
+                          <rect width={14} height={14} x={8} y={8} rx={2} ry={2}></rect>
                           <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                         </svg>
                       </Button>
@@ -347,16 +347,16 @@ export function Pattern() {
                     <InputGroup role="group">
                       <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 font-mono min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_s_" readOnly value="•••••••••••••••••••••••••" />
                       <InputGroupAddon role="group" data-align="inline-end">
-                        <Button className="cn-input-group-button cn-input-group-button-size-icon-xs flex shadow-none" type="button" tabIndex="0" size="icon-xs" aria-label="Reveal bearer token">
-                          <svg className="lucide lucide-eye" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EyeIcon" tabler="IconEye" hugeicons="ViewIcon" phosphor="EyeIcon" remixicon="RiEyeLine" aria-hidden="true">
+                        <Button className="cn-input-group-button cn-input-group-button-size-icon-xs flex shadow-none" type="button" tabIndex={0} size="icon-xs" aria-label="Reveal bearer token">
+                          <svg className="lucide lucide-eye" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="EyeIcon" tabler="IconEye" hugeicons="ViewIcon" phosphor="EyeIcon" remixicon="RiEyeLine" aria-hidden="true">
                             <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
+                            <circle cx={12} cy={12} r={3}></circle>
                           </svg>
                         </Button>
                       </InputGroupAddon>
                     </InputGroup>
-                    <Button type="button" tabIndex="0">
-                      <svg className="lucide lucide-refresh-cw" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RefreshCwIcon" tabler="IconRefresh" hugeicons="RefreshIcon" phosphor="ArrowsClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
+                    <Button type="button" tabIndex={0}>
+                      <svg className="lucide lucide-refresh-cw" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="RefreshCwIcon" tabler="IconRefresh" hugeicons="RefreshIcon" phosphor="ArrowsClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
                         <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
                         <path d="M21 3v5h-5"></path>
                         <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
@@ -434,17 +434,17 @@ export function Pattern() {
                 </div>
                 <FieldContent className="@md/field-group:w-78 gap-1.5 min-w-0">
                   <Select>
-                  <SelectTrigger className="w-full" type="button" tabIndex="0" id="sso-two-factor" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                  <SelectTrigger className="w-full" type="button" tabIndex={0} id="sso-two-factor" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                     <SelectValue>
                       {"Required"}
                     </SelectValue>
-                    <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                    <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
                       {"▼"}
                     </svg>
                   </SelectTrigger>
                   </Select>
-                  <input id="base-ui-_r_t_-hidden-input" tabIndex="-1" aria-hidden="true" value="required" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_t_-hidden-input" tabIndex={-1} aria-hidden="true" value="required" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </FieldContent>
               </Field>
               <FieldSeparator content="false">
@@ -468,10 +468,10 @@ export function Pattern() {
                     </FieldLegend>
                     <FieldGroup className="gap-3">
                       <Field className="gap-3" role="group" data-orientation="horizontal">
-                        <Switch className="mt-0.5" checked="" role="switch" tabIndex="0" id="base-ui-_r_10_" aria-checked="true" size="default" aria-labelledby="sso-policy-totp-label">
+                        <Switch className="mt-0.5" checked="" role="switch" tabIndex={0} id="base-ui-_r_10_" aria-checked="true" size="default" aria-labelledby="sso-policy-totp-label">
                           <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                         </Switch>
-                        <input id="sso-policy-totp" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input id="sso-policy-totp" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldContent className="gap-0.5">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sso-policy-totp" id="sso-policy-totp-label">
                             {"Authenticator (TOTP)"}
@@ -482,10 +482,10 @@ export function Pattern() {
                         </FieldContent>
                       </Field>
                       <Field className="gap-3" role="group" data-orientation="horizontal">
-                        <Switch className="mt-0.5" checked="" role="switch" tabIndex="0" id="base-ui-_r_13_" aria-checked="true" size="default" aria-labelledby="sso-policy-passkey-label">
+                        <Switch className="mt-0.5" checked="" role="switch" tabIndex={0} id="base-ui-_r_13_" aria-checked="true" size="default" aria-labelledby="sso-policy-passkey-label">
                           <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                         </Switch>
-                        <input id="sso-policy-passkey" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input id="sso-policy-passkey" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldContent className="gap-0.5">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sso-policy-passkey" id="sso-policy-passkey-label">
                             {"Passkey"}
@@ -496,10 +496,10 @@ export function Pattern() {
                         </FieldContent>
                       </Field>
                       <Field className="gap-3" role="group" data-orientation="horizontal">
-                        <Switch className="mt-0.5" unchecked="" role="switch" tabIndex="0" id="base-ui-_r_16_" aria-checked="false" size="default" aria-labelledby="sso-policy-security-key-label">
+                        <Switch className="mt-0.5" unchecked="" role="switch" tabIndex={0} id="base-ui-_r_16_" aria-checked="false" size="default" aria-labelledby="sso-policy-security-key-label">
                           <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                         </Switch>
-                        <input id="sso-policy-security-key" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input id="sso-policy-security-key" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldContent className="gap-0.5">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sso-policy-security-key" id="sso-policy-security-key-label">
                             {"Security key"}
@@ -510,10 +510,10 @@ export function Pattern() {
                         </FieldContent>
                       </Field>
                       <Field className="gap-3" role="group" data-orientation="horizontal">
-                        <Switch className="mt-0.5" unchecked="" role="switch" tabIndex="0" id="base-ui-_r_19_" aria-checked="false" size="default" aria-labelledby="sso-policy-sms-label">
+                        <Switch className="mt-0.5" unchecked="" role="switch" tabIndex={0} id="base-ui-_r_19_" aria-checked="false" size="default" aria-labelledby="sso-policy-sms-label">
                           <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                         </Switch>
-                        <input id="sso-policy-sms" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input id="sso-policy-sms" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldContent className="gap-0.5">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sso-policy-sms" id="sso-policy-sms-label">
                             {"SMS"}
@@ -543,17 +543,17 @@ export function Pattern() {
                 </div>
                 <FieldContent className="@md/field-group:w-78 gap-1.5 min-w-0">
                   <Select>
-                  <SelectTrigger className="w-full" type="button" tabIndex="0" id="sso-password-policy" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                  <SelectTrigger className="w-full" type="button" tabIndex={0} id="sso-password-policy" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                     <SelectValue>
                       {"Strong, 16 characters"}
                     </SelectValue>
-                    <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                    <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
                       {"▼"}
                     </svg>
                   </SelectTrigger>
                   </Select>
-                  <input id="base-ui-_r_1c_-hidden-input" tabIndex="-1" aria-hidden="true" value="strong" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_1c_-hidden-input" tabIndex={-1} aria-hidden="true" value="strong" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </FieldContent>
               </Field>
             </FieldGroup>
@@ -589,17 +589,17 @@ export function Pattern() {
                 </div>
                 <FieldContent className="@md/field-group:w-78 gap-1.5 min-w-0">
                   <Select>
-                  <SelectTrigger className="w-full" type="button" tabIndex="0" id="sso-idle-timeout" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                  <SelectTrigger className="w-full" type="button" tabIndex={0} id="sso-idle-timeout" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                     <SelectValue>
                       {"30 minutes"}
                     </SelectValue>
-                    <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                    <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
                       {"▼"}
                     </svg>
                   </SelectTrigger>
                   </Select>
-                  <input id="base-ui-_r_1f_-hidden-input" tabIndex="-1" aria-hidden="true" value="30m" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_1f_-hidden-input" tabIndex={-1} aria-hidden="true" value="30m" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </FieldContent>
               </Field>
               <FieldSeparator content="false">
@@ -618,17 +618,17 @@ export function Pattern() {
                 </div>
                 <FieldContent className="@md/field-group:w-78 gap-1.5 min-w-0">
                   <Select>
-                  <SelectTrigger className="w-full" type="button" tabIndex="0" id="sso-max-session" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                  <SelectTrigger className="w-full" type="button" tabIndex={0} id="sso-max-session" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                     <SelectValue>
                       {"7 days"}
                     </SelectValue>
-                    <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                    <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
                       {"▼"}
                     </svg>
                   </SelectTrigger>
                   </Select>
-                  <input id="base-ui-_r_1i_-hidden-input" tabIndex="-1" aria-hidden="true" value="7d" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_1i_-hidden-input" tabIndex={-1} aria-hidden="true" value="7d" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </FieldContent>
               </Field>
               <FieldSeparator content="false">
@@ -652,10 +652,10 @@ export function Pattern() {
                     </FieldLegend>
                     <FieldGroup className="gap-3">
                       <Field className="gap-3" role="group" data-orientation="horizontal">
-                        <Switch className="mt-0.5" checked="" role="switch" tabIndex="0" id="base-ui-_r_1l_" aria-checked="true" size="default" aria-labelledby="sso-policy-force-reauth-label">
+                        <Switch className="mt-0.5" checked="" role="switch" tabIndex={0} id="base-ui-_r_1l_" aria-checked="true" size="default" aria-labelledby="sso-policy-force-reauth-label">
                           <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                         </Switch>
-                        <input id="sso-policy-force-reauth" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input id="sso-policy-force-reauth" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldContent className="gap-0.5">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sso-policy-force-reauth" id="sso-policy-force-reauth-label">
                             {"Force re-auth on sensitive actions"}
@@ -666,10 +666,10 @@ export function Pattern() {
                         </FieldContent>
                       </Field>
                       <Field className="gap-3" role="group" data-orientation="horizontal">
-                        <Switch className="mt-0.5" unchecked="" role="switch" tabIndex="0" id="base-ui-_r_1o_" aria-checked="false" size="default" aria-labelledby="sso-policy-single-session-label">
+                        <Switch className="mt-0.5" unchecked="" role="switch" tabIndex={0} id="base-ui-_r_1o_" aria-checked="false" size="default" aria-labelledby="sso-policy-single-session-label">
                           <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                         </Switch>
-                        <input id="sso-policy-single-session" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input id="sso-policy-single-session" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldContent className="gap-0.5">
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="sso-policy-single-session" id="sso-policy-single-session-label">
                             {"One active session per member"}
@@ -740,8 +740,8 @@ export function Pattern() {
                     <InputGroup role="group">
                       <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="sso-add-domain" aria-invalid="false" placeholder="team.acmecloud.com" value="" />
                     </InputGroup>
-                    <Button type="button" tabIndex="0">
-                      <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                    <Button type="button" tabIndex={0}>
+                      <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="M12 5v14"></path>
                       </svg>
@@ -758,10 +758,10 @@ export function Pattern() {
             {"All changes saved"}
           </span>
           <div className="flex gap-3">
-            <Button type="button" disabled="" tabIndex="0" disabled>
+            <Button type="button" disabled="" tabIndex={0} disabled>
               {"Discard"}
             </Button>
-            <Button type="button" disabled="" tabIndex="0" disabled>
+            <Button type="button" disabled="" tabIndex={0} disabled>
               {"Save changes"}
             </Button>
           </div>

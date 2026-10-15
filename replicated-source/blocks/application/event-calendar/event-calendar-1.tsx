@@ -33,23 +33,23 @@ export function Pattern() {
         <EventCalendar className="flex-1">
           <div className="flex flex-wrap gap-x-2 items-center pe-2">
             <EventCalendarNav className="flex-1 flex-nowrap">
-              <EventCalendarNavToday className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" id="base-ui-_r_1_" baseUiTooltipTrigger="">
+              <EventCalendarNavToday className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} id="base-ui-_r_1_" baseUiTooltipTrigger="">
                 {"Today"}
               </EventCalendarNavToday>
-              <EventCalendarViewSwitcher className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Select view" id="base-ui-_r_6_" baseUiTooltipTrigger="" aria-haspopup="menu" aria-expanded="false">
+              <EventCalendarViewSwitcher className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Select view" id="base-ui-_r_6_" baseUiTooltipTrigger="" aria-haspopup="menu" aria-expanded="false">
                 {"Month"}
-                <svg className="lucide lucide-chevron-down opacity-60 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                <svg className="lucide lucide-chevron-down opacity-60 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                 </svg>
               </EventCalendarViewSwitcher>
               <div className="flex items-center">
-                <EventCalendarNavPrev className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Previous" id="base-ui-_r_a_" baseUiTooltipTrigger="">
-                  <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine" aria-hidden="true">
+                <EventCalendarNavPrev className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Previous" id="base-ui-_r_a_" baseUiTooltipTrigger="">
+                  <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine" aria-hidden="true">
                     <path d="m15 18-6-6 6-6"></path>
                   </svg>
                 </EventCalendarNavPrev>
-                <EventCalendarNavNext className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Next" id="base-ui-_r_c_" baseUiTooltipTrigger="">
-                  <svg className="lucide lucide-chevron-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+                <EventCalendarNavNext className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Next" id="base-ui-_r_c_" baseUiTooltipTrigger="">
+                  <svg className="lucide lucide-chevron-right size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                     <path d="m9 18 6-6-6-6"></path>
                   </svg>
                 </EventCalendarNavNext>
@@ -61,7 +61,7 @@ export function Pattern() {
             </EventCalendarNav>
             <EventCalendarToolbar className="max-sm:pb-2 max-sm:w-full">
               <DropdownMenu>
-              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_g_" aria-expanded="false">
+              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_g_" aria-expanded="false">
                 <span className="-space-x-1 flex" aria-hidden="true">
                   <span className="ring-2 ring-background rounded-full size-2.5" style={{backgroundColor: "var(--color-blue-500)"}}></span>
                   <span className="ring-2 ring-background rounded-full size-2.5" style={{backgroundColor: "var(--color-violet-500)"}}></span>
@@ -70,13 +70,13 @@ export function Pattern() {
                   <span className="ring-2 ring-background rounded-full size-2.5" style={{backgroundColor: "var(--color-rose-500)"}}></span>
                 </span>
                 {"Calendars"}
-                <svg className="lucide lucide-chevron-down opacity-50 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                <svg className="lucide lucide-chevron-down opacity-50 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                 </svg>
               </DropdownMenuTrigger>
               </DropdownMenu>
-              <Button type="button" tabIndex="0">
-                <svg className="lucide lucide-plus size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+              <Button type="button" tabIndex={0}>
+                <svg className="lucide lucide-plus size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
@@ -150,7 +150,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -164,7 +164,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -180,7 +180,7 @@ export function Pattern() {
                     </div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -212,7 +212,7 @@ export function Pattern() {
                     </div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -228,7 +228,7 @@ export function Pattern() {
                     </div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -242,7 +242,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -256,7 +256,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -288,7 +288,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1">
                       <EventCalendarEvent className="shrink-0" type="button" view="month" recurring="true" past="true" title="Weekly planning, 9:30 AM - 10:00 AM" aria-label="Weekly planning, 9:30 AM - 10:00 AM" aria-pressed="false" style={{"--ec-event-color": "var(--color-violet-500)"}}>
                         <span className="bg-(--ec-event-color) rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                        <svg className="lucide lucide-repeat opacity-70 shrink-0 size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RepeatIcon" tabler="IconRepeat" hugeicons="RepeatIcon" phosphor="RepeatIcon" remixicon="RiRepeatLine" aria-hidden="true">
+                        <svg className="lucide lucide-repeat opacity-70 shrink-0 size-2.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="RepeatIcon" tabler="IconRepeat" hugeicons="RepeatIcon" phosphor="RepeatIcon" remixicon="RiRepeatLine" aria-hidden="true">
                           <path d="m17 2 4 4-4 4"></path>
                           <path d="M3 11v-1a4 4 0 0 1 4-4h14"></path>
                           <path d="m7 22-4-4 4-4"></path>
@@ -314,7 +314,7 @@ export function Pattern() {
                     </div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -348,7 +348,7 @@ export function Pattern() {
                     </div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -362,7 +362,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -378,7 +378,7 @@ export function Pattern() {
                     </div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -394,7 +394,7 @@ export function Pattern() {
                     </div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -408,7 +408,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -422,7 +422,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -454,7 +454,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1">
                       <EventCalendarEvent className="shrink-0" type="button" view="month" recurring="true" past="true" title="Weekly planning, 9:30 AM - 10:00 AM" aria-label="Weekly planning, 9:30 AM - 10:00 AM" aria-pressed="false" style={{"--ec-event-color": "var(--color-violet-500)"}}>
                         <span className="bg-(--ec-event-color) rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                        <svg className="lucide lucide-repeat opacity-70 shrink-0 size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RepeatIcon" tabler="IconRepeat" hugeicons="RepeatIcon" phosphor="RepeatIcon" remixicon="RiRepeatLine" aria-hidden="true">
+                        <svg className="lucide lucide-repeat opacity-70 shrink-0 size-2.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="RepeatIcon" tabler="IconRepeat" hugeicons="RepeatIcon" phosphor="RepeatIcon" remixicon="RiRepeatLine" aria-hidden="true">
                           <path d="m17 2 4 4-4 4"></path>
                           <path d="M3 11v-1a4 4 0 0 1 4-4h14"></path>
                           <path d="m7 22-4-4 4-4"></path>
@@ -480,7 +480,7 @@ export function Pattern() {
                     </div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -517,7 +517,7 @@ export function Pattern() {
                     </div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -541,7 +541,7 @@ export function Pattern() {
                     </div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -555,7 +555,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -586,7 +586,7 @@ export function Pattern() {
                     </div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -600,7 +600,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -614,7 +614,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -630,7 +630,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1">
                       <EventCalendarEvent className="shrink-0" type="button" view="month" recurring="true" past="true" title="Weekly planning, 9:30 AM - 10:00 AM" aria-label="Weekly planning, 9:30 AM - 10:00 AM" aria-pressed="false" style={{"--ec-event-color": "var(--color-violet-500)"}}>
                         <span className="bg-(--ec-event-color) rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
-                        <svg className="lucide lucide-repeat opacity-70 shrink-0 size-2.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RepeatIcon" tabler="IconRepeat" hugeicons="RepeatIcon" phosphor="RepeatIcon" remixicon="RiRepeatLine" aria-hidden="true">
+                        <svg className="lucide lucide-repeat opacity-70 shrink-0 size-2.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="RepeatIcon" tabler="IconRepeat" hugeicons="RepeatIcon" phosphor="RepeatIcon" remixicon="RiRepeatLine" aria-hidden="true">
                           <path d="m17 2 4 4-4 4"></path>
                           <path d="M3 11v-1a4 4 0 0 1 4-4h14"></path>
                           <path d="m7 22-4-4 4-4"></path>
@@ -656,7 +656,7 @@ export function Pattern() {
                     </div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -680,7 +680,7 @@ export function Pattern() {
                     </div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -694,7 +694,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -731,7 +731,7 @@ export function Pattern() {
                     </div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -745,7 +745,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -759,7 +759,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -773,7 +773,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -789,7 +789,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -829,7 +829,7 @@ export function Pattern() {
                     </div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -843,7 +843,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -859,7 +859,7 @@ export function Pattern() {
                     </div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -873,7 +873,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -887,7 +887,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -901,7 +901,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -933,7 +933,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -947,7 +947,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -961,7 +961,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -975,7 +975,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -989,7 +989,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -1003,7 +1003,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>
@@ -1017,7 +1017,7 @@ export function Pattern() {
                     <div className="flex flex-1 flex-col gap-0.5 min-h-0 overflow-hidden pt-1.5 px-1"></div>
                     <div className="flex gap-1 items-center justify-end pb-1.5 px-2">
                       <button className="bg-primary cursor-pointer flex focus-visible:opacity-100 group-hover/ec-cell:opacity-100 items-center justify-center opacity-0 rounded-sm size-5 text-primary-foreground transition-opacity" type="button" aria-label="Add event">
-                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <svg className="lucide lucide-plus size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="M12 5v14"></path>
                         </svg>

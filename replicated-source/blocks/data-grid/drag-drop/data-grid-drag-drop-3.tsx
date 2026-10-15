@@ -40,17 +40,17 @@ export function Pattern() {
             </div>
           </div>
           <div className="flex flex-wrap gap-1 items-center sm:justify-end sm:shrink-0" role="toolbar" aria-label="Review layout actions">
-            <Button type="button" tabIndex="0" aria-pressed="true" extracted="1">
+            <Button type="button" tabIndex={0} aria-pressed="true" extracted="1">
               {"Dispatch"}
             </Button>
-            <Button type="button" tabIndex="0" aria-pressed="false">
+            <Button type="button" tabIndex={0} aria-pressed="false">
               {"Dock"}
             </Button>
-            <Button type="button" tabIndex="0" aria-pressed="false">
+            <Button type="button" tabIndex={0} aria-pressed="false">
               {"Risk"}
             </Button>
-            <Button type="button" disabled="" tabIndex="0" disabled>
-              <svg className="lucide lucide-rotate-ccw" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RotateCcwIcon" tabler="IconRefresh" hugeicons="UndoIcon" phosphor="ArrowCounterClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
+            <Button type="button" disabled="" tabIndex={0} disabled>
+              <svg className="lucide lucide-rotate-ccw" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="RotateCcwIcon" tabler="IconRefresh" hugeicons="UndoIcon" phosphor="ArrowCounterClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
                 <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
                 <path d="M3 3v5h5"></path>
               </svg>
@@ -125,7 +125,7 @@ export function Pattern() {
           <div className="relative">
             <DataGridProvider>
             <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
-              <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_1_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
+              <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_1_-viewport" tabIndex={-1} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                 <div role="presentation" style={{minWidth: "fit-content"}}>
                   <DataGridProvider>
                   <DataGridTableViewport style={{width: "calc(1204px + var(--data-grid-fill-size, 0px))", "--data-grid-fill-size": "10px", "--data-grid-fill": "10"}}>
@@ -145,14 +145,14 @@ export function Pattern() {
                         <tr className="[&>th]:border-b bg-transparent">
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="wave" data-header-id="wave" data-header-depth="0" style={{width: "calc(var(--header-wave-size) * 1px)", opacity: "1", position: "relative", zIndex: "0", whiteSpace: "nowrap"}}>
                             <div className="flex gap-0.5 items-center justify-start">
-                              <Button className="-ms-2 active:cursor-grabbing cursor-grab size-6" type="button" tabIndex="0" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="_r_2_" aria-label="Drag to reorder">
-                                <svg className="hover:opacity-100 lucide lucide-grip-vertical opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                                  <circle cx="9" cy="12" r="1"></circle>
-                                  <circle cx="9" cy="5" r="1"></circle>
-                                  <circle cx="9" cy="19" r="1"></circle>
-                                  <circle cx="15" cy="12" r="1"></circle>
-                                  <circle cx="15" cy="5" r="1"></circle>
-                                  <circle cx="15" cy="19" r="1"></circle>
+                              <Button className="-ms-2 active:cursor-grabbing cursor-grab size-6" type="button" tabIndex={0} role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="_r_2_" aria-label="Drag to reorder">
+                                <svg className="hover:opacity-100 lucide lucide-grip-vertical opacity-60" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                                  <circle cx={9} cy={12} r={1}></circle>
+                                  <circle cx={9} cy={5} r={1}></circle>
+                                  <circle cx={9} cy={19} r={1}></circle>
+                                  <circle cx={15} cy={12} r={1}></circle>
+                                  <circle cx={15} cy={5} r={1}></circle>
+                                  <circle cx={15} cy={19} r={1}></circle>
                                 </svg>
                               </Button>
                               <div className="grow">
@@ -163,14 +163,14 @@ export function Pattern() {
                           </th>
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="status" data-header-id="status" data-header-depth="0" style={{width: "calc(var(--header-status-size) * 1px)", opacity: "1", position: "relative", zIndex: "0", whiteSpace: "nowrap"}}>
                             <div className="flex gap-0.5 items-center justify-start">
-                              <Button className="-ms-2 active:cursor-grabbing cursor-grab size-6" type="button" tabIndex="0" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="_r_2_" aria-label="Drag to reorder">
-                                <svg className="hover:opacity-100 lucide lucide-grip-vertical opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                                  <circle cx="9" cy="12" r="1"></circle>
-                                  <circle cx="9" cy="5" r="1"></circle>
-                                  <circle cx="9" cy="19" r="1"></circle>
-                                  <circle cx="15" cy="12" r="1"></circle>
-                                  <circle cx="15" cy="5" r="1"></circle>
-                                  <circle cx="15" cy="19" r="1"></circle>
+                              <Button className="-ms-2 active:cursor-grabbing cursor-grab size-6" type="button" tabIndex={0} role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="_r_2_" aria-label="Drag to reorder">
+                                <svg className="hover:opacity-100 lucide lucide-grip-vertical opacity-60" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                                  <circle cx={9} cy={12} r={1}></circle>
+                                  <circle cx={9} cy={5} r={1}></circle>
+                                  <circle cx={9} cy={19} r={1}></circle>
+                                  <circle cx={15} cy={12} r={1}></circle>
+                                  <circle cx={15} cy={5} r={1}></circle>
+                                  <circle cx={15} cy={19} r={1}></circle>
                                 </svg>
                               </Button>
                               <div className="grow">
@@ -181,14 +181,14 @@ export function Pattern() {
                           </th>
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="dock" data-header-id="dock" data-header-depth="0" style={{width: "calc(var(--header-dock-size) * 1px)", opacity: "1", position: "relative", zIndex: "0", whiteSpace: "nowrap"}}>
                             <div className="flex gap-0.5 items-center justify-start">
-                              <Button className="-ms-2 active:cursor-grabbing cursor-grab size-6" type="button" tabIndex="0" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="_r_2_" aria-label="Drag to reorder">
-                                <svg className="hover:opacity-100 lucide lucide-grip-vertical opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                                  <circle cx="9" cy="12" r="1"></circle>
-                                  <circle cx="9" cy="5" r="1"></circle>
-                                  <circle cx="9" cy="19" r="1"></circle>
-                                  <circle cx="15" cy="12" r="1"></circle>
-                                  <circle cx="15" cy="5" r="1"></circle>
-                                  <circle cx="15" cy="19" r="1"></circle>
+                              <Button className="-ms-2 active:cursor-grabbing cursor-grab size-6" type="button" tabIndex={0} role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="_r_2_" aria-label="Drag to reorder">
+                                <svg className="hover:opacity-100 lucide lucide-grip-vertical opacity-60" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                                  <circle cx={9} cy={12} r={1}></circle>
+                                  <circle cx={9} cy={5} r={1}></circle>
+                                  <circle cx={9} cy={19} r={1}></circle>
+                                  <circle cx={15} cy={12} r={1}></circle>
+                                  <circle cx={15} cy={5} r={1}></circle>
+                                  <circle cx={15} cy={19} r={1}></circle>
                                 </svg>
                               </Button>
                               <div className="grow">
@@ -199,14 +199,14 @@ export function Pattern() {
                           </th>
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="carrier" data-header-id="carrier" data-header-depth="0" style={{width: "calc(var(--header-carrier-size) * 1px)", opacity: "1", position: "relative", zIndex: "0", whiteSpace: "nowrap"}}>
                             <div className="flex gap-0.5 items-center justify-start">
-                              <Button className="-ms-2 active:cursor-grabbing cursor-grab size-6" type="button" tabIndex="0" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="_r_2_" aria-label="Drag to reorder">
-                                <svg className="hover:opacity-100 lucide lucide-grip-vertical opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                                  <circle cx="9" cy="12" r="1"></circle>
-                                  <circle cx="9" cy="5" r="1"></circle>
-                                  <circle cx="9" cy="19" r="1"></circle>
-                                  <circle cx="15" cy="12" r="1"></circle>
-                                  <circle cx="15" cy="5" r="1"></circle>
-                                  <circle cx="15" cy="19" r="1"></circle>
+                              <Button className="-ms-2 active:cursor-grabbing cursor-grab size-6" type="button" tabIndex={0} role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="_r_2_" aria-label="Drag to reorder">
+                                <svg className="hover:opacity-100 lucide lucide-grip-vertical opacity-60" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                                  <circle cx={9} cy={12} r={1}></circle>
+                                  <circle cx={9} cy={5} r={1}></circle>
+                                  <circle cx={9} cy={19} r={1}></circle>
+                                  <circle cx={15} cy={12} r={1}></circle>
+                                  <circle cx={15} cy={5} r={1}></circle>
+                                  <circle cx={15} cy={19} r={1}></circle>
                                 </svg>
                               </Button>
                               <div className="grow">
@@ -217,14 +217,14 @@ export function Pattern() {
                           </th>
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="orders" data-header-id="orders" data-header-depth="0" style={{width: "calc(var(--header-orders-size) * 1px)", opacity: "1", position: "relative", zIndex: "0", whiteSpace: "nowrap"}}>
                             <div className="flex gap-0.5 items-center justify-start">
-                              <Button className="-ms-2 active:cursor-grabbing cursor-grab size-6" type="button" tabIndex="0" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="_r_2_" aria-label="Drag to reorder">
-                                <svg className="hover:opacity-100 lucide lucide-grip-vertical opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                                  <circle cx="9" cy="12" r="1"></circle>
-                                  <circle cx="9" cy="5" r="1"></circle>
-                                  <circle cx="9" cy="19" r="1"></circle>
-                                  <circle cx="15" cy="12" r="1"></circle>
-                                  <circle cx="15" cy="5" r="1"></circle>
-                                  <circle cx="15" cy="19" r="1"></circle>
+                              <Button className="-ms-2 active:cursor-grabbing cursor-grab size-6" type="button" tabIndex={0} role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="_r_2_" aria-label="Drag to reorder">
+                                <svg className="hover:opacity-100 lucide lucide-grip-vertical opacity-60" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                                  <circle cx={9} cy={12} r={1}></circle>
+                                  <circle cx={9} cy={5} r={1}></circle>
+                                  <circle cx={9} cy={19} r={1}></circle>
+                                  <circle cx={15} cy={12} r={1}></circle>
+                                  <circle cx={15} cy={5} r={1}></circle>
+                                  <circle cx={15} cy={19} r={1}></circle>
                                 </svg>
                               </Button>
                               <div className="grow">
@@ -235,14 +235,14 @@ export function Pattern() {
                           </th>
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="capacity" data-header-id="capacity" data-header-depth="0" style={{width: "calc(var(--header-capacity-size) * 1px)", opacity: "1", position: "relative", zIndex: "0", whiteSpace: "nowrap"}}>
                             <div className="flex gap-0.5 items-center justify-start">
-                              <Button className="-ms-2 active:cursor-grabbing cursor-grab size-6" type="button" tabIndex="0" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="_r_2_" aria-label="Drag to reorder">
-                                <svg className="hover:opacity-100 lucide lucide-grip-vertical opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                                  <circle cx="9" cy="12" r="1"></circle>
-                                  <circle cx="9" cy="5" r="1"></circle>
-                                  <circle cx="9" cy="19" r="1"></circle>
-                                  <circle cx="15" cy="12" r="1"></circle>
-                                  <circle cx="15" cy="5" r="1"></circle>
-                                  <circle cx="15" cy="19" r="1"></circle>
+                              <Button className="-ms-2 active:cursor-grabbing cursor-grab size-6" type="button" tabIndex={0} role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="_r_2_" aria-label="Drag to reorder">
+                                <svg className="hover:opacity-100 lucide lucide-grip-vertical opacity-60" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                                  <circle cx={9} cy={12} r={1}></circle>
+                                  <circle cx={9} cy={5} r={1}></circle>
+                                  <circle cx={9} cy={19} r={1}></circle>
+                                  <circle cx={15} cy={12} r={1}></circle>
+                                  <circle cx={15} cy={5} r={1}></circle>
+                                  <circle cx={15} cy={19} r={1}></circle>
                                 </svg>
                               </Button>
                               <div className="grow">
@@ -253,14 +253,14 @@ export function Pattern() {
                           </th>
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible pe-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="exceptions" data-header-id="exceptions" data-header-depth="0" style={{width: "calc(var(--header-exceptions-size) * 1px)", opacity: "1", position: "relative", zIndex: "0", whiteSpace: "nowrap"}}>
                             <div className="flex gap-0.5 items-center justify-start">
-                              <Button className="-ms-2 active:cursor-grabbing cursor-grab size-6" type="button" tabIndex="0" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="_r_2_" aria-label="Drag to reorder">
-                                <svg className="hover:opacity-100 lucide lucide-grip-vertical opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                                  <circle cx="9" cy="12" r="1"></circle>
-                                  <circle cx="9" cy="5" r="1"></circle>
-                                  <circle cx="9" cy="19" r="1"></circle>
-                                  <circle cx="15" cy="12" r="1"></circle>
-                                  <circle cx="15" cy="5" r="1"></circle>
-                                  <circle cx="15" cy="19" r="1"></circle>
+                              <Button className="-ms-2 active:cursor-grabbing cursor-grab size-6" type="button" tabIndex={0} role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="_r_2_" aria-label="Drag to reorder">
+                                <svg className="hover:opacity-100 lucide lucide-grip-vertical opacity-60" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                                  <circle cx={9} cy={12} r={1}></circle>
+                                  <circle cx={9} cy={5} r={1}></circle>
+                                  <circle cx={9} cy={19} r={1}></circle>
+                                  <circle cx={15} cy={12} r={1}></circle>
+                                  <circle cx={15} cy={5} r={1}></circle>
+                                  <circle cx={15} cy={19} r={1}></circle>
                                 </svg>
                               </Button>
                               <div className="grow">
@@ -304,12 +304,12 @@ export function Pattern() {
                             <div className="flex gap-2 items-center min-w-0">
                               <Item className="[&_svg]:size-4 [&_svg]:text-accent-foreground bg-muted border-2 border-background dark:border flex-none p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-8" variant="default" size="default">
                                 <ItemMedia className="size-auto" variant="icon">
-                                  <svg className="lucide lucide-truck size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
+                                  <svg className="lucide lucide-truck size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
                                     <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path>
                                     <path d="M15 18H9"></path>
                                     <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path>
-                                    <circle cx="17" cy="18" r="2"></circle>
-                                    <circle cx="7" cy="18" r="2"></circle>
+                                    <circle cx={17} cy={18} r={2}></circle>
+                                    <circle cx={7} cy={18} r={2}></circle>
                                   </svg>
                                 </ItemMedia>
                               </Item>
@@ -354,7 +354,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-exceptions-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <span className="gap-1.5 inline-flex items-center text-sm text-warning-foreground">
-                              <svg className="lucide lucide-triangle-alert size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
+                              <svg className="lucide lucide-triangle-alert size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
                                 <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
                                 <path d="M12 9v4"></path>
                                 <path d="M12 17h.01"></path>
@@ -394,7 +394,7 @@ export function Pattern() {
                             <div className="flex gap-2 items-center min-w-0">
                               <Item className="[&_svg]:size-4 [&_svg]:text-accent-foreground bg-muted border-2 border-background dark:border flex-none p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-8" variant="default" size="default">
                                 <ItemMedia className="size-auto" variant="icon">
-                                  <svg className="lucide lucide-package size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
+                                  <svg className="lucide lucide-package size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
                                     <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
                                     <path d="M12 22V12"></path>
                                     <polyline points="3.29 7 12 12 20.71 7"></polyline>
@@ -443,8 +443,8 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-exceptions-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <span className="gap-1.5 inline-flex items-center text-sm text-success-foreground">
-                              <svg className="lucide lucide-circle-check size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
-                                <circle cx="12" cy="12" r="10"></circle>
+                              <svg className="lucide lucide-circle-check size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
+                                <circle cx={12} cy={12} r={10}></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                               </svg>
                               {"Clear"}
@@ -482,7 +482,7 @@ export function Pattern() {
                             <div className="flex gap-2 items-center min-w-0">
                               <Item className="[&_svg]:size-4 [&_svg]:text-accent-foreground bg-muted border-2 border-background dark:border flex-none p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-8" variant="default" size="default">
                                 <ItemMedia className="size-auto" variant="icon">
-                                  <svg className="lucide lucide-store size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="StoreIcon" tabler="IconBuildingStore" hugeicons="Store01Icon" phosphor="StorefrontIcon" remixicon="RiStore2Line" aria-hidden="true">
+                                  <svg className="lucide lucide-store size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="StoreIcon" tabler="IconBuildingStore" hugeicons="Store01Icon" phosphor="StorefrontIcon" remixicon="RiStore2Line" aria-hidden="true">
                                     <path d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5"></path>
                                     <path d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244"></path>
                                     <path d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05"></path>
@@ -530,7 +530,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-exceptions-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <span className="gap-1.5 inline-flex items-center text-sm text-warning-foreground">
-                              <svg className="lucide lucide-triangle-alert size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
+                              <svg className="lucide lucide-triangle-alert size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
                                 <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
                                 <path d="M12 9v4"></path>
                                 <path d="M12 17h.01"></path>
@@ -570,10 +570,10 @@ export function Pattern() {
                             <div className="flex gap-2 items-center min-w-0">
                               <Item className="[&_svg]:size-4 [&_svg]:text-accent-foreground bg-muted border-2 border-background dark:border flex-none p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-8" variant="default" size="default">
                                 <ItemMedia className="size-auto" variant="icon">
-                                  <svg className="lucide lucide-route size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RouteIcon" tabler="IconRoute" hugeicons="Route01Icon" phosphor="PathIcon" remixicon="RiRouteLine" aria-hidden="true">
-                                    <circle cx="6" cy="19" r="3"></circle>
+                                  <svg className="lucide lucide-route size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="RouteIcon" tabler="IconRoute" hugeicons="Route01Icon" phosphor="PathIcon" remixicon="RiRouteLine" aria-hidden="true">
+                                    <circle cx={6} cy={19} r={3}></circle>
                                     <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"></path>
-                                    <circle cx="18" cy="5" r="3"></circle>
+                                    <circle cx={18} cy={5} r={3}></circle>
                                   </svg>
                                 </ItemMedia>
                               </Item>
@@ -618,8 +618,8 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-exceptions-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <span className="gap-1.5 inline-flex items-center text-sm text-success-foreground">
-                              <svg className="lucide lucide-circle-check size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
-                                <circle cx="12" cy="12" r="10"></circle>
+                              <svg className="lucide lucide-circle-check size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
+                                <circle cx={12} cy={12} r={10}></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                               </svg>
                               {"Clear"}
@@ -657,12 +657,12 @@ export function Pattern() {
                             <div className="flex gap-2 items-center min-w-0">
                               <Item className="[&_svg]:size-4 [&_svg]:text-accent-foreground bg-muted border-2 border-background dark:border flex-none p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-8" variant="default" size="default">
                                 <ItemMedia className="size-auto" variant="icon">
-                                  <svg className="lucide lucide-truck size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
+                                  <svg className="lucide lucide-truck size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TruckIcon" tabler="IconTruck" hugeicons="TruckIcon" phosphor="TruckIcon" remixicon="RiTruckLine" aria-hidden="true">
                                     <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path>
                                     <path d="M15 18H9"></path>
                                     <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path>
-                                    <circle cx="17" cy="18" r="2"></circle>
-                                    <circle cx="7" cy="18" r="2"></circle>
+                                    <circle cx={17} cy={18} r={2}></circle>
+                                    <circle cx={7} cy={18} r={2}></circle>
                                   </svg>
                                 </ItemMedia>
                               </Item>
@@ -707,7 +707,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-exceptions-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <span className="gap-1.5 inline-flex items-center text-sm text-warning-foreground">
-                              <svg className="lucide lucide-triangle-alert size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
+                              <svg className="lucide lucide-triangle-alert size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
                                 <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
                                 <path d="M12 9v4"></path>
                                 <path d="M12 17h.01"></path>
@@ -747,7 +747,7 @@ export function Pattern() {
                             <div className="flex gap-2 items-center min-w-0">
                               <Item className="[&_svg]:size-4 [&_svg]:text-accent-foreground bg-muted border-2 border-background dark:border flex-none p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-8" variant="default" size="default">
                                 <ItemMedia className="size-auto" variant="icon">
-                                  <svg className="lucide lucide-package size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
+                                  <svg className="lucide lucide-package size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
                                     <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
                                     <path d="M12 22V12"></path>
                                     <polyline points="3.29 7 12 12 20.71 7"></polyline>
@@ -796,8 +796,8 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-exceptions-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <span className="gap-1.5 inline-flex items-center text-sm text-success-foreground">
-                              <svg className="lucide lucide-circle-check size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
-                                <circle cx="12" cy="12" r="10"></circle>
+                              <svg className="lucide lucide-circle-check size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
+                                <circle cx={12} cy={12} r={10}></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                               </svg>
                               {"Clear"}
@@ -835,7 +835,7 @@ export function Pattern() {
                             <div className="flex gap-2 items-center min-w-0">
                               <Item className="[&_svg]:size-4 [&_svg]:text-accent-foreground bg-muted border-2 border-background dark:border flex-none p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-8" variant="default" size="default">
                                 <ItemMedia className="size-auto" variant="icon">
-                                  <svg className="lucide lucide-store size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="StoreIcon" tabler="IconBuildingStore" hugeicons="Store01Icon" phosphor="StorefrontIcon" remixicon="RiStore2Line" aria-hidden="true">
+                                  <svg className="lucide lucide-store size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="StoreIcon" tabler="IconBuildingStore" hugeicons="Store01Icon" phosphor="StorefrontIcon" remixicon="RiStore2Line" aria-hidden="true">
                                     <path d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5"></path>
                                     <path d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244"></path>
                                     <path d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05"></path>
@@ -883,7 +883,7 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-exceptions-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <span className="gap-1.5 inline-flex items-center text-sm text-warning-foreground">
-                              <svg className="lucide lucide-triangle-alert size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
+                              <svg className="lucide lucide-triangle-alert size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
                                 <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
                                 <path d="M12 9v4"></path>
                                 <path d="M12 17h.01"></path>
@@ -923,7 +923,7 @@ export function Pattern() {
                             <div className="flex gap-2 items-center min-w-0">
                               <Item className="[&_svg]:size-4 [&_svg]:text-accent-foreground bg-muted border-2 border-background dark:border flex-none p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-8" variant="default" size="default">
                                 <ItemMedia className="size-auto" variant="icon">
-                                  <svg className="lucide lucide-package size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
+                                  <svg className="lucide lucide-package size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PackageIcon" tabler="IconPackage" hugeicons="PackageIcon" phosphor="PackageIcon" remixicon="RiBox3Line" aria-hidden="true">
                                     <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"></path>
                                     <path d="M12 22V12"></path>
                                     <polyline points="3.29 7 12 12 20.71 7"></polyline>
@@ -972,8 +972,8 @@ export function Pattern() {
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-exceptions-size) * 1px)", opacity: "1", position: "relative", zIndex: "0"}}>
                             <span className="gap-1.5 inline-flex items-center text-sm text-success-foreground">
-                              <svg className="lucide lucide-circle-check size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
-                                <circle cx="12" cy="12" r="10"></circle>
+                              <svg className="lucide lucide-circle-check size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
+                                <circle cx={12} cy={12} r={10}></circle>
                                 <path d="m9 12 2 2 4-4"></path>
                               </svg>
                               {"Clear"}
@@ -1002,13 +1002,13 @@ export function Pattern() {
             {"3 waves need review, 17 exceptions open"}
           </span>
           <span className="flex gap-1.5 items-center">
-            <svg className="lucide lucide-grip-vertical size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-              <circle cx="9" cy="12" r="1"></circle>
-              <circle cx="9" cy="5" r="1"></circle>
-              <circle cx="9" cy="19" r="1"></circle>
-              <circle cx="15" cy="12" r="1"></circle>
-              <circle cx="15" cy="5" r="1"></circle>
-              <circle cx="15" cy="19" r="1"></circle>
+            <svg className="lucide lucide-grip-vertical size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+              <circle cx={9} cy={12} r={1}></circle>
+              <circle cx={9} cy={5} r={1}></circle>
+              <circle cx={9} cy={19} r={1}></circle>
+              <circle cx={15} cy={12} r={1}></circle>
+              <circle cx={15} cy={5} r={1}></circle>
+              <circle cx={15} cy={19} r={1}></circle>
             </svg>
             {"Column order drives handoff sequence"}
           </span>

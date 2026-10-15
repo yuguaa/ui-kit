@@ -71,7 +71,7 @@ export function Pattern() {
               </p>
             </div>
             <Tooltip>
-            <TooltipTrigger className="*:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:ring-background -space-x-2 cn-avatar-group flex group/avatar-group max-md:hidden" role="group" tabIndex="0" aria-label="Shared with Sofia Marques, Priya Raman, and Daniel Okafor" id="base-ui-_r_1_" baseUiTooltipTrigger="">
+            <TooltipTrigger className="*:data-[slot=avatar]:ring-2 *:data-[slot=avatar]:ring-background -space-x-2 cn-avatar-group flex group/avatar-group max-md:hidden" role="group" tabIndex={0} aria-label="Shared with Sofia Marques, Priya Raman, and Daniel Okafor" id="base-ui-_r_1_" baseUiTooltipTrigger="">
               <Avatar size="sm">
                 <AvatarImage alt="Sofia Marques" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=96&h=96&dpr=2&q=80"></AvatarImage>
               </Avatar>
@@ -85,9 +85,9 @@ export function Pattern() {
             </Tooltip>
             <div className="flex gap-1.5 items-center shrink-0">
               <Select>
-              <SelectTrigger type="button" tabIndex="0" id="base-ui-_r_2_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Document mode" extracted="1">
+              <SelectTrigger type="button" tabIndex={0} id="base-ui-_r_2_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Document mode" extracted="1">
                 <SelectValue>
-                  <svg className="lucide lucide-message-square-text" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareTextIcon" tabler="IconMessageDots" hugeicons="Comment01Icon" phosphor="ChatTextIcon" remixicon="RiMessage3Line" aria-hidden="true">
+                  <svg className="lucide lucide-message-square-text" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MessageSquareTextIcon" tabler="IconMessageDots" hugeicons="Comment01Icon" phosphor="ChatTextIcon" remixicon="RiMessage3Line" aria-hidden="true">
                     <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                     <path d="M7 11h10"></path>
                     <path d="M7 15h6"></path>
@@ -97,19 +97,19 @@ export function Pattern() {
                     {"Suggesting"}
                   </span>
                 </SelectValue>
-                <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                   {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
-              <input id="base-ui-_r_2_-hidden-input" tabIndex="-1" aria-hidden="true" value="suggesting" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="base-ui-_r_2_-hidden-input" tabIndex={-1} aria-hidden="true" value="suggesting" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
               <DropdownMenu>
-              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Document actions" aria-haspopup="menu" id="base-ui-_r_8_" aria-expanded="false">
-                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                  <circle cx="12" cy="12" r="1"></circle>
-                  <circle cx="19" cy="12" r="1"></circle>
-                  <circle cx="5" cy="12" r="1"></circle>
+              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Document actions" aria-haspopup="menu" id="base-ui-_r_8_" aria-expanded="false">
+                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                  <circle cx={12} cy={12} r={1}></circle>
+                  <circle cx={19} cy={12} r={1}></circle>
+                  <circle cx={5} cy={12} r={1}></circle>
                 </svg>
               </DropdownMenuTrigger>
               </DropdownMenu>
@@ -119,16 +119,16 @@ export function Pattern() {
             <div className="flex flex-1 gap-1 items-center min-w-0 no-scrollbar overflow-x-auto overflow-y-hidden supports-[animation-timeline:scroll()]:scroll-fade-x" role="toolbar" aria-orientation="horizontal" aria-label="Formatting">
               <div className="flex gap-0.5 items-center shrink-0" role="group" aria-label="History">
                 <Tooltip>
-                <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" disabled="" tabIndex="-1" disabled aria-label="Undo" toolbarItem="" id="base-ui-_r_b_" baseUiTooltipTrigger="">
-                  <svg className="lucide lucide-undo-2 lucide-undo2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Undo2Icon" tabler="IconArrowBackUp" hugeicons="Undo02Icon" phosphor="ArrowUUpLeftIcon" remixicon="RiArrowGoBackLine" aria-hidden="true">
+                <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" disabled="" tabIndex={-1} disabled aria-label="Undo" toolbarItem="" id="base-ui-_r_b_" baseUiTooltipTrigger="">
+                  <svg className="lucide lucide-undo-2 lucide-undo2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Undo2Icon" tabler="IconArrowBackUp" hugeicons="Undo02Icon" phosphor="ArrowUUpLeftIcon" remixicon="RiArrowGoBackLine" aria-hidden="true">
                     <path d="M9 14 4 9l5-5"></path>
                     <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5a5.5 5.5 0 0 1-5.5 5.5H11"></path>
                   </svg>
                 </TooltipTrigger>
                 </Tooltip>
                 <Tooltip>
-                <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" disabled="" tabIndex="-1" disabled aria-label="Redo" toolbarItem="" id="base-ui-_r_d_" baseUiTooltipTrigger="">
-                  <svg className="lucide lucide-redo-2 lucide-redo2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Redo2Icon" tabler="IconArrowForwardUp" hugeicons="Redo02Icon" phosphor="ArrowUUpRightIcon" remixicon="RiArrowGoForwardLine" aria-hidden="true">
+                <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" disabled="" tabIndex={-1} disabled aria-label="Redo" toolbarItem="" id="base-ui-_r_d_" baseUiTooltipTrigger="">
+                  <svg className="lucide lucide-redo-2 lucide-redo2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Redo2Icon" tabler="IconArrowForwardUp" hugeicons="Redo02Icon" phosphor="ArrowUUpRightIcon" remixicon="RiArrowGoForwardLine" aria-hidden="true">
                     <path d="m15 14 5-5-5-5"></path>
                     <path d="M20 9H9.5A5.5 5.5 0 0 0 4 14.5A5.5 5.5 0 0 0 9.5 20H13"></path>
                   </svg>
@@ -137,9 +137,9 @@ export function Pattern() {
               </div>
               <Separator className="data-vertical:self-center h-4" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
               <DropdownMenu>
-              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-between outline-none select-none shrink-0 sm:w-28 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Block type, Text" toolbarItem="" aria-haspopup="menu" id="base-ui-_r_h_" aria-expanded="false">
+              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-between outline-none select-none shrink-0 sm:w-28 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Block type, Text" toolbarItem="" aria-haspopup="menu" id="base-ui-_r_h_" aria-expanded="false">
                 <span className="flex sm:hidden">
-                  <svg className="lucide lucide-type" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TypeIcon" tabler="IconLetterT" hugeicons="TextIcon" phosphor="TextTIcon" remixicon="RiText" aria-hidden="true">
+                  <svg className="lucide lucide-type" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TypeIcon" tabler="IconLetterT" hugeicons="TextIcon" phosphor="TextTIcon" remixicon="RiText" aria-hidden="true">
                     <path d="M12 4v16"></path>
                     <path d="M4 7V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2"></path>
                     <path d="M9 20h6"></path>
@@ -148,7 +148,7 @@ export function Pattern() {
                 <span className="max-sm:hidden truncate">
                   {"Text"}
                 </span>
-                <svg className="lucide lucide-chevron-down opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                <svg className="lucide lucide-chevron-down opacity-60" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                 </svg>
               </DropdownMenuTrigger>
@@ -156,34 +156,34 @@ export function Pattern() {
               <Separator className="data-vertical:self-center h-4" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
               <div className="flex gap-0.5 items-center shrink-0" role="group" aria-label="Text style">
                 <Tooltip>
-                <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-0 whitespace-nowrap" type="button" tabIndex="-1" aria-pressed="false" aria-label="Bold" toolbarItem="" id="base-ui-_r_k_" baseUiTooltipTrigger="">
-                  <svg className="lucide lucide-bold" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BoldIcon" tabler="IconBold" hugeicons="TextBoldIcon" phosphor="TextBIcon" remixicon="RiBold" aria-hidden="true">
+                <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-0 whitespace-nowrap" type="button" tabIndex={-1} aria-pressed="false" aria-label="Bold" toolbarItem="" id="base-ui-_r_k_" baseUiTooltipTrigger="">
+                  <svg className="lucide lucide-bold" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BoldIcon" tabler="IconBold" hugeicons="TextBoldIcon" phosphor="TextBIcon" remixicon="RiBold" aria-hidden="true">
                     <path d="M6 12h9a4 4 0 0 1 0 8H7a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h7a4 4 0 0 1 0 8"></path>
                   </svg>
                 </TooltipTrigger>
                 </Tooltip>
                 <Tooltip>
-                <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-0 whitespace-nowrap" type="button" tabIndex="-1" aria-pressed="false" aria-label="Italic" toolbarItem="" id="base-ui-_r_n_" baseUiTooltipTrigger="">
-                  <svg className="lucide lucide-italic" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ItalicIcon" tabler="IconItalic" hugeicons="TextItalicIcon" phosphor="TextItalicIcon" remixicon="RiItalic" aria-hidden="true">
-                    <line x1="19" x2="10" y1="4" y2="4"></line>
-                    <line x1="14" x2="5" y1="20" y2="20"></line>
-                    <line x1="15" x2="9" y1="4" y2="20"></line>
+                <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-0 whitespace-nowrap" type="button" tabIndex={-1} aria-pressed="false" aria-label="Italic" toolbarItem="" id="base-ui-_r_n_" baseUiTooltipTrigger="">
+                  <svg className="lucide lucide-italic" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ItalicIcon" tabler="IconItalic" hugeicons="TextItalicIcon" phosphor="TextItalicIcon" remixicon="RiItalic" aria-hidden="true">
+                    <line x1={19} x2={10} y1={4} y2={4}></line>
+                    <line x1={14} x2={5} y1={20} y2={20}></line>
+                    <line x1={15} x2={9} y1={4} y2={20}></line>
                   </svg>
                 </TooltipTrigger>
                 </Tooltip>
                 <Tooltip>
-                <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-0 whitespace-nowrap" type="button" tabIndex="-1" aria-pressed="false" aria-label="Underline" toolbarItem="" id="base-ui-_r_q_" baseUiTooltipTrigger="">
-                  <svg className="lucide lucide-underline" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UnderlineIcon" tabler="IconUnderline" hugeicons="TextUnderlineIcon" phosphor="TextUnderlineIcon" remixicon="RiUnderline" aria-hidden="true">
+                <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-0 whitespace-nowrap" type="button" tabIndex={-1} aria-pressed="false" aria-label="Underline" toolbarItem="" id="base-ui-_r_q_" baseUiTooltipTrigger="">
+                  <svg className="lucide lucide-underline" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UnderlineIcon" tabler="IconUnderline" hugeicons="TextUnderlineIcon" phosphor="TextUnderlineIcon" remixicon="RiUnderline" aria-hidden="true">
                     <path d="M6 4v6a6 6 0 0 0 12 0V4"></path>
-                    <line x1="4" x2="20" y1="20" y2="20"></line>
+                    <line x1={4} x2={20} y1={20} y2={20}></line>
                   </svg>
                 </TooltipTrigger>
                 </Tooltip>
                 <Tooltip>
                 <TooltipTrigger className="flex" id="base-ui-_r_u_" baseUiTooltipTrigger="">
                   <Popover>
-                  <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-0 whitespace-nowrap" type="button" tabIndex="-1" aria-pressed="false" aria-label="Link" toolbarItem="" baseUiClickTrigger="" id="base-ui-_r_v_" aria-haspopup="dialog" aria-expanded="false">
-                    <svg className="lucide lucide-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LinkIcon" tabler="IconLink" hugeicons="Link01Icon" phosphor="LinkIcon" remixicon="RiLinkM" aria-hidden="true">
+                  <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-0 whitespace-nowrap" type="button" tabIndex={-1} aria-pressed="false" aria-label="Link" toolbarItem="" baseUiClickTrigger="" id="base-ui-_r_v_" aria-haspopup="dialog" aria-expanded="false">
+                    <svg className="lucide lucide-link" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LinkIcon" tabler="IconLink" hugeicons="Link01Icon" phosphor="LinkIcon" remixicon="RiLinkM" aria-hidden="true">
                       <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
                       <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
                     </svg>
@@ -195,8 +195,8 @@ export function Pattern() {
               <Separator className="data-vertical:self-center h-4" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
               <div className="flex gap-0.5 items-center shrink-0" role="group" aria-label="Lists">
                 <Tooltip>
-                <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-0 whitespace-nowrap" type="button" tabIndex="-1" aria-pressed="false" aria-label="Bullet list" toolbarItem="" id="base-ui-_r_12_" baseUiTooltipTrigger="">
-                  <svg className="lucide lucide-list" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ListIcon" tabler="IconList" hugeicons="LeftToRightListBulletIcon" phosphor="ListBulletsIcon" remixicon="RiListCheck" aria-hidden="true">
+                <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-0 whitespace-nowrap" type="button" tabIndex={-1} aria-pressed="false" aria-label="Bullet list" toolbarItem="" id="base-ui-_r_12_" baseUiTooltipTrigger="">
+                  <svg className="lucide lucide-list" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ListIcon" tabler="IconList" hugeicons="LeftToRightListBulletIcon" phosphor="ListBulletsIcon" remixicon="RiListCheck" aria-hidden="true">
                     <path d="M3 5h.01"></path>
                     <path d="M3 12h.01"></path>
                     <path d="M3 19h.01"></path>
@@ -207,8 +207,8 @@ export function Pattern() {
                 </TooltipTrigger>
                 </Tooltip>
                 <Tooltip>
-                <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-0 whitespace-nowrap" type="button" tabIndex="-1" aria-pressed="false" aria-label="Numbered list" toolbarItem="" id="base-ui-_r_15_" baseUiTooltipTrigger="">
-                  <svg className="lucide lucide-list-ordered" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ListOrderedIcon" tabler="IconListNumbers" hugeicons="LeftToRightListNumberIcon" phosphor="ListNumbersIcon" remixicon="RiListOrdered" aria-hidden="true">
+                <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-default disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none px-0 whitespace-nowrap" type="button" tabIndex={-1} aria-pressed="false" aria-label="Numbered list" toolbarItem="" id="base-ui-_r_15_" baseUiTooltipTrigger="">
+                  <svg className="lucide lucide-list-ordered" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ListOrderedIcon" tabler="IconListNumbers" hugeicons="LeftToRightListNumberIcon" phosphor="ListNumbersIcon" remixicon="RiListOrdered" aria-hidden="true">
                     <path d="M11 5h10"></path>
                     <path d="M11 12h10"></path>
                     <path d="M11 19h10"></path>
@@ -223,13 +223,13 @@ export function Pattern() {
               <Tooltip>
               <TooltipTrigger className="flex shrink-0" id="base-ui-_r_1b_" baseUiTooltipTrigger="">
                 <DropdownMenu>
-                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none gap-0.5 group/button inline-flex items-center justify-center outline-none px-1.5 select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="-1" aria-label="Alignment, Align left" toolbarItem="" aria-haspopup="menu" id="base-ui-_r_1c_" aria-expanded="false">
-                  <svg className="lucide lucide-text-align-start" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="AlignLeftIcon" tabler="IconAlignLeft" hugeicons="TextAlignLeftIcon" phosphor="TextAlignLeftIcon" remixicon="RiAlignLeft" aria-hidden="true">
+                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none gap-0.5 group/button inline-flex items-center justify-center outline-none px-1.5 select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={-1} aria-label="Alignment, Align left" toolbarItem="" aria-haspopup="menu" id="base-ui-_r_1c_" aria-expanded="false">
+                  <svg className="lucide lucide-text-align-start" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="AlignLeftIcon" tabler="IconAlignLeft" hugeicons="TextAlignLeftIcon" phosphor="TextAlignLeftIcon" remixicon="RiAlignLeft" aria-hidden="true">
                     <path d="M21 5H3"></path>
                     <path d="M15 12H3"></path>
                     <path d="M17 19H3"></path>
                   </svg>
-                  <svg className="lucide lucide-chevron-down opacity-60" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                  <svg className="lucide lucide-chevron-down opacity-60" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
                 </DropdownMenuTrigger>
@@ -239,8 +239,8 @@ export function Pattern() {
             </div>
             <div className="flex gap-0.5 items-center shrink-0" role="group" aria-label="Suggestions">
               <Tooltip>
-              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Previous suggestion" toolbarItem="" id="base-ui-_r_1f_" baseUiTooltipTrigger="">
-                <svg className="lucide lucide-chevron-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronUpIcon" tabler="IconChevronUp" hugeicons="ArrowUp01Icon" phosphor="CaretUpIcon" remixicon="RiArrowUpSLine" aria-hidden="true">
+              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Previous suggestion" toolbarItem="" id="base-ui-_r_1f_" baseUiTooltipTrigger="">
+                <svg className="lucide lucide-chevron-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronUpIcon" tabler="IconChevronUp" hugeicons="ArrowUp01Icon" phosphor="CaretUpIcon" remixicon="RiArrowUpSLine" aria-hidden="true">
                   <path d="m18 15-6-6-6 6"></path>
                 </svg>
               </TooltipTrigger>
@@ -250,8 +250,8 @@ export function Pattern() {
               </span>
               <span className="sr-only" role="status"></span>
               <Tooltip>
-              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Next suggestion" toolbarItem="" id="base-ui-_r_1h_" baseUiTooltipTrigger="">
-                <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Next suggestion" toolbarItem="" id="base-ui-_r_1h_" baseUiTooltipTrigger="">
+                <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                 </svg>
               </TooltipTrigger>
@@ -262,7 +262,7 @@ export function Pattern() {
         <div className="flex flex-1 gap-10 items-start max-w-6xl mx-auto px-4 sm:px-6 w-full">
           <div className="flex-1 min-w-0">
             <div className="[&_.ProseMirror-gapcursor]:after:border-t-foreground! [&_.tiptap>*+*]:mt-3 [&_.tiptap>h2:not(:first-child)]:mt-8 [&_.tiptap>h3:not(:first-child)]:mt-6 [&_.tiptap]:break-words [&_.tiptap]:flex-1 [&_.tiptap]:outline-none [&_.tiptap_.ProseMirror-selectednode]:outline-2 [&_.tiptap_.ProseMirror-selectednode]:outline-ring/50 [&_.tiptap_.is-empty]:before:content-[attr(data-placeholder)] [&_.tiptap_.is-empty]:before:float-start [&_.tiptap_.is-empty]:before:h-0 [&_.tiptap_.is-empty]:before:pointer-events-none [&_.tiptap_.is-empty]:before:text-muted-foreground [&_.tiptap_.selection]:bg-primary/15 [&_.tiptap_:is(ins,del)]:scroll-mt-[calc(var(--redline-header)+--spacing(6))] [&_.tiptap_:not(pre)>code]:bg-muted [&_.tiptap_:not(pre)>code]:font-mono [&_.tiptap_:not(pre)>code]:px-1 [&_.tiptap_:not(pre)>code]:py-0.5 [&_.tiptap_:not(pre)>code]:rounded-sm [&_.tiptap_:not(pre)>code]:text-sm [&_.tiptap_a]:text-primary [&_.tiptap_a]:underline [&_.tiptap_a]:underline-offset-4 [&_.tiptap_blockquote]:border-s-2 [&_.tiptap_blockquote]:ps-4 [&_.tiptap_blockquote]:text-muted-foreground [&_.tiptap_del+ins]:ms-1 [&_.tiptap_del_[data-suggestion-active]]:bg-destructive/20 [&_.tiptap_h1]:font-semibold [&_.tiptap_h1]:text-2xl/9 [&_.tiptap_h1]:tracking-tight [&_.tiptap_h2]:font-semibold [&_.tiptap_h2]:text-xl/8 [&_.tiptap_h2]:tracking-tight [&_.tiptap_h3]:font-semibold [&_.tiptap_h3]:text-lg/7 [&_.tiptap_hr]:border-border [&_.tiptap_hr]:my-6 [&_.tiptap_ins]:underline-offset-4 [&_.tiptap_ins_[data-suggestion-active]]:bg-success/20 [&_.tiptap_li+li]:mt-1 [&_.tiptap_li::marker]:text-muted-foreground [&_.tiptap_li[data-checked=true]>div>[data-node-view-content]]:line-through [&_.tiptap_li[data-checked=true]>div>[data-node-view-content]]:text-muted-foreground [&_.tiptap_mark[data-color=blue]]:bg-sky-200 [&_.tiptap_mark[data-color=green]]:bg-emerald-200 [&_.tiptap_mark[data-color=pink]]:bg-pink-200 [&_.tiptap_mark[data-color=violet]]:bg-violet-200 [&_.tiptap_mark]:bg-yellow-200 [&_.tiptap_mark]:px-0.5 [&_.tiptap_mark]:text-inherit [&_.tiptap_ol]:list-decimal [&_.tiptap_ol]:ps-6 [&_.tiptap_pre]:bg-muted [&_.tiptap_pre]:font-mono [&_.tiptap_pre]:px-4 [&_.tiptap_pre]:py-3 [&_.tiptap_pre]:rounded-md [&_.tiptap_pre]:text-sm [&_.tiptap_ul[data-type=taskList]]:list-none [&_.tiptap_ul[data-type=taskList]]:ps-0.5 [&_.tiptap_ul]:list-disc [&_.tiptap_ul]:ps-6 [&_del]:bg-destructive/10 [&_del]:decoration-destructive/60 [&_del]:line-through [&_del]:text-destructive-foreground [&_ins]:bg-success/10 [&_ins]:decoration-success/60 [&_ins]:text-success-foreground [&_ins]:underline dark:[&_.tiptap_del_[data-suggestion-active]]:bg-destructive/30 dark:[&_.tiptap_ins_[data-suggestion-active]]:bg-success/30 dark:[&_.tiptap_mark[data-color=blue]]:bg-sky-400/30 dark:[&_.tiptap_mark[data-color=green]]:bg-emerald-400/30 dark:[&_.tiptap_mark[data-color=pink]]:bg-pink-400/30 dark:[&_.tiptap_mark[data-color=violet]]:bg-violet-400/30 dark:[&_.tiptap_mark]:bg-yellow-400/30 dark:[&_del]:bg-destructive/15 dark:[&_del]:text-destructive dark:[&_ins]:bg-success/15 dark:[&_ins]:text-success flex flex-col max-w-3xl min-h-full mx-auto py-8 sm:py-10 text-base/7 text-foreground w-full">
-              <div className="ProseMirror tiptap" contentEditable="true" aria-label="Master Services Agreement" aria-multiline="true" translate="no" tabIndex="0">
+              <div className="ProseMirror tiptap" contentEditable="true" aria-label="Master Services Agreement" aria-multiline="true" translate="no" tabIndex={0}>
                 <p>
                   {"This Master Services Agreement (the “Agreement”) is made as of October 1, 2026 (the “Effective Date”) between Kestrel Works Inc., the provider of Loomwell (“Kestrel”), and Halden Freight LLC (“Customer”). It governs Customer’s use of the Services under every Order Form the parties sign."}
                 </p>
@@ -435,7 +435,7 @@ export function Pattern() {
             <Card className="min-h-0" size="sm" role="region" aria-labelledby="_r_1i_">
               <CardHeader className="items-center">
                 <CardTitle className="flex gap-2 items-center">
-                  <h2 className="outline-none" id="_r_1i_" tabIndex="-1">
+                  <h2 className="outline-none" id="_r_1i_" tabIndex={-1}>
                     {"Suggestions"}
                   </h2>
                   <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-transparent border border-border dark:bg-input/32 disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-xs transition-shadow">
@@ -444,11 +444,11 @@ export function Pattern() {
                 </CardTitle>
                 <CardAction className="row-span-1 self-center">
                   <DropdownMenu>
-                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Resolve all suggestions" aria-haspopup="menu" id="base-ui-_r_1m_" aria-expanded="false">
-                    <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                      <circle cx="12" cy="12" r="1"></circle>
-                      <circle cx="19" cy="12" r="1"></circle>
-                      <circle cx="5" cy="12" r="1"></circle>
+                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Resolve all suggestions" aria-haspopup="menu" id="base-ui-_r_1m_" aria-expanded="false">
+                    <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                      <circle cx={12} cy={12} r={1}></circle>
+                      <circle cx={19} cy={12} r={1}></circle>
+                      <circle cx={5} cy={12} r={1}></circle>
                     </svg>
                   </DropdownMenuTrigger>
                   </DropdownMenu>
@@ -456,13 +456,13 @@ export function Pattern() {
               </CardHeader>
               <CardContent className="flex flex-col gap-1 min-h-0">
                 <ToggleGroup className="w-full" data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Markup view" style={{"--gap": "0"}}>
-                  <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="0">
+                  <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex={0} aria-pressed="true" variant="outline" size="sm" spacing="0">
                     {"All markup"}
                   </ToggleGroupItem>
-                  <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
+                  <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="outline" size="sm" spacing="0">
                     {"Final"}
                   </ToggleGroupItem>
-                  <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
+                  <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none flex-1 focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="outline" size="sm" spacing="0">
                     {"Original"}
                   </ToggleGroupItem>
                 </ToggleGroup>
@@ -499,15 +499,15 @@ export function Pattern() {
                         </ItemContent>
                         <ItemActions className="gap-0.5 relative z-10">
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-success focus-visible:border-success focus-visible:ring-success/30 focus-visible:text-white group/button hover:bg-success hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Accept deleted text from Sofia Marques" aria-describedby="_r_22_" id="base-ui-_r_24_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-success focus-visible:border-success focus-visible:ring-success/30 focus-visible:text-white group/button hover:bg-success hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Accept deleted text from Sofia Marques" aria-describedby="_r_22_" id="base-ui-_r_24_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </TooltipTrigger>
                           </Tooltip>
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-destructive focus-visible:border-destructive focus-visible:ring-destructive/30 focus-visible:text-white group/button hover:bg-destructive hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Reject deleted text from Sofia Marques" aria-describedby="_r_22_" id="base-ui-_r_26_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-destructive focus-visible:border-destructive focus-visible:ring-destructive/30 focus-visible:text-white group/button hover:bg-destructive hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Reject deleted text from Sofia Marques" aria-describedby="_r_22_" id="base-ui-_r_26_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                               <path d="M18 6 6 18"></path>
                               <path d="m6 6 12 12"></path>
                             </svg>
@@ -547,15 +547,15 @@ export function Pattern() {
                         </ItemContent>
                         <ItemActions className="gap-0.5 relative z-10">
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-success focus-visible:border-success focus-visible:ring-success/30 focus-visible:text-white group/button hover:bg-success hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Accept added text from Sofia Marques" aria-describedby="_r_28_" id="base-ui-_r_2a_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-success focus-visible:border-success focus-visible:ring-success/30 focus-visible:text-white group/button hover:bg-success hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Accept added text from Sofia Marques" aria-describedby="_r_28_" id="base-ui-_r_2a_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </TooltipTrigger>
                           </Tooltip>
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-destructive focus-visible:border-destructive focus-visible:ring-destructive/30 focus-visible:text-white group/button hover:bg-destructive hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Reject added text from Sofia Marques" aria-describedby="_r_28_" id="base-ui-_r_2c_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-destructive focus-visible:border-destructive focus-visible:ring-destructive/30 focus-visible:text-white group/button hover:bg-destructive hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Reject added text from Sofia Marques" aria-describedby="_r_28_" id="base-ui-_r_2c_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                               <path d="M18 6 6 18"></path>
                               <path d="m6 6 12 12"></path>
                             </svg>
@@ -598,15 +598,15 @@ export function Pattern() {
                         </ItemContent>
                         <ItemActions className="gap-0.5 relative z-10">
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-success focus-visible:border-success focus-visible:ring-success/30 focus-visible:text-white group/button hover:bg-success hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Accept replaced text from Daniel Okafor" aria-describedby="_r_2e_" id="base-ui-_r_2g_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-success focus-visible:border-success focus-visible:ring-success/30 focus-visible:text-white group/button hover:bg-success hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Accept replaced text from Daniel Okafor" aria-describedby="_r_2e_" id="base-ui-_r_2g_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </TooltipTrigger>
                           </Tooltip>
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-destructive focus-visible:border-destructive focus-visible:ring-destructive/30 focus-visible:text-white group/button hover:bg-destructive hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Reject replaced text from Daniel Okafor" aria-describedby="_r_2e_" id="base-ui-_r_2i_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-destructive focus-visible:border-destructive focus-visible:ring-destructive/30 focus-visible:text-white group/button hover:bg-destructive hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Reject replaced text from Daniel Okafor" aria-describedby="_r_2e_" id="base-ui-_r_2i_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                               <path d="M18 6 6 18"></path>
                               <path d="m6 6 12 12"></path>
                             </svg>
@@ -649,15 +649,15 @@ export function Pattern() {
                         </ItemContent>
                         <ItemActions className="gap-0.5 relative z-10">
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-success focus-visible:border-success focus-visible:ring-success/30 focus-visible:text-white group/button hover:bg-success hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Accept replaced text from Priya Raman" aria-describedby="_r_2k_" id="base-ui-_r_2m_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-success focus-visible:border-success focus-visible:ring-success/30 focus-visible:text-white group/button hover:bg-success hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Accept replaced text from Priya Raman" aria-describedby="_r_2k_" id="base-ui-_r_2m_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </TooltipTrigger>
                           </Tooltip>
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-destructive focus-visible:border-destructive focus-visible:ring-destructive/30 focus-visible:text-white group/button hover:bg-destructive hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Reject replaced text from Priya Raman" aria-describedby="_r_2k_" id="base-ui-_r_2o_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-destructive focus-visible:border-destructive focus-visible:ring-destructive/30 focus-visible:text-white group/button hover:bg-destructive hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Reject replaced text from Priya Raman" aria-describedby="_r_2k_" id="base-ui-_r_2o_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                               <path d="M18 6 6 18"></path>
                               <path d="m6 6 12 12"></path>
                             </svg>
@@ -697,15 +697,15 @@ export function Pattern() {
                         </ItemContent>
                         <ItemActions className="gap-0.5 relative z-10">
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-success focus-visible:border-success focus-visible:ring-success/30 focus-visible:text-white group/button hover:bg-success hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Accept deleted text from Priya Raman" aria-describedby="_r_2q_" id="base-ui-_r_2s_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-success focus-visible:border-success focus-visible:ring-success/30 focus-visible:text-white group/button hover:bg-success hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Accept deleted text from Priya Raman" aria-describedby="_r_2q_" id="base-ui-_r_2s_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </TooltipTrigger>
                           </Tooltip>
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-destructive focus-visible:border-destructive focus-visible:ring-destructive/30 focus-visible:text-white group/button hover:bg-destructive hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Reject deleted text from Priya Raman" aria-describedby="_r_2q_" id="base-ui-_r_2u_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-destructive focus-visible:border-destructive focus-visible:ring-destructive/30 focus-visible:text-white group/button hover:bg-destructive hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Reject deleted text from Priya Raman" aria-describedby="_r_2q_" id="base-ui-_r_2u_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                               <path d="M18 6 6 18"></path>
                               <path d="m6 6 12 12"></path>
                             </svg>
@@ -748,15 +748,15 @@ export function Pattern() {
                         </ItemContent>
                         <ItemActions className="gap-0.5 relative z-10">
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-success focus-visible:border-success focus-visible:ring-success/30 focus-visible:text-white group/button hover:bg-success hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Accept replaced text from Priya Raman" aria-describedby="_r_30_" id="base-ui-_r_32_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-success focus-visible:border-success focus-visible:ring-success/30 focus-visible:text-white group/button hover:bg-success hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Accept replaced text from Priya Raman" aria-describedby="_r_30_" id="base-ui-_r_32_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </TooltipTrigger>
                           </Tooltip>
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-destructive focus-visible:border-destructive focus-visible:ring-destructive/30 focus-visible:text-white group/button hover:bg-destructive hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Reject replaced text from Priya Raman" aria-describedby="_r_30_" id="base-ui-_r_34_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-destructive focus-visible:border-destructive focus-visible:ring-destructive/30 focus-visible:text-white group/button hover:bg-destructive hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Reject replaced text from Priya Raman" aria-describedby="_r_30_" id="base-ui-_r_34_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                               <path d="M18 6 6 18"></path>
                               <path d="m6 6 12 12"></path>
                             </svg>
@@ -799,15 +799,15 @@ export function Pattern() {
                         </ItemContent>
                         <ItemActions className="gap-0.5 relative z-10">
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-success focus-visible:border-success focus-visible:ring-success/30 focus-visible:text-white group/button hover:bg-success hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Accept replaced text from Priya Raman" aria-describedby="_r_36_" id="base-ui-_r_38_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-success focus-visible:border-success focus-visible:ring-success/30 focus-visible:text-white group/button hover:bg-success hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Accept replaced text from Priya Raman" aria-describedby="_r_36_" id="base-ui-_r_38_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </TooltipTrigger>
                           </Tooltip>
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-destructive focus-visible:border-destructive focus-visible:ring-destructive/30 focus-visible:text-white group/button hover:bg-destructive hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Reject replaced text from Priya Raman" aria-describedby="_r_36_" id="base-ui-_r_3a_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-destructive focus-visible:border-destructive focus-visible:ring-destructive/30 focus-visible:text-white group/button hover:bg-destructive hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Reject replaced text from Priya Raman" aria-describedby="_r_36_" id="base-ui-_r_3a_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                               <path d="M18 6 6 18"></path>
                               <path d="m6 6 12 12"></path>
                             </svg>
@@ -847,15 +847,15 @@ export function Pattern() {
                         </ItemContent>
                         <ItemActions className="gap-0.5 relative z-10">
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-success focus-visible:border-success focus-visible:ring-success/30 focus-visible:text-white group/button hover:bg-success hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Accept added text from Priya Raman" aria-describedby="_r_3c_" id="base-ui-_r_3e_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-success focus-visible:border-success focus-visible:ring-success/30 focus-visible:text-white group/button hover:bg-success hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Accept added text from Priya Raman" aria-describedby="_r_3c_" id="base-ui-_r_3e_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </TooltipTrigger>
                           </Tooltip>
                           <Tooltip>
-                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-destructive focus-visible:border-destructive focus-visible:ring-destructive/30 focus-visible:text-white group/button hover:bg-destructive hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Reject added text from Priya Raman" aria-describedby="_r_3c_" id="base-ui-_r_3g_" baseUiTooltipTrigger="">
-                            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                          <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none focus-visible:bg-destructive focus-visible:border-destructive focus-visible:ring-destructive/30 focus-visible:text-white group/button hover:bg-destructive hover:text-white inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Reject added text from Priya Raman" aria-describedby="_r_3c_" id="base-ui-_r_3g_" baseUiTooltipTrigger="">
+                            <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                               <path d="M18 6 6 18"></path>
                               <path d="m6 6 12 12"></path>
                             </svg>

@@ -69,7 +69,7 @@ export function Pattern() {
                 <Stepper>
                 <StepperItem className="flex-1 min-w-0 overflow-visible relative" data-state="active">
                   <Stepper>
-                  <StepperTrigger className="flex-col gap-2 justify-start min-w-0 px-0 text-center w-full" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex="0" data-state="active" loading="false" aria-label="New plan" extracted="1">
+                  <StepperTrigger className="flex-col gap-2 justify-start min-w-0 px-0 text-center w-full" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex={0} data-state="active" loading="false" aria-label="New plan" extracted="1">
                     <Stepper>
                     <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-full before:z-10 border border-transparent data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-0 data-[state=active]:text-primary data-[state=completed]:border-primary data-[state=inactive]:bg-background data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="active">
                       <div className="absolute">
@@ -95,7 +95,7 @@ export function Pattern() {
                 <Stepper>
                 <StepperItem className="flex-1 min-w-0 overflow-visible relative" data-state="inactive">
                   <Stepper>
-                  <StepperTrigger className="flex-col gap-2 justify-start min-w-0 px-0 text-center w-full" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="inactive" loading="false" aria-label="Timing">
+                  <StepperTrigger className="flex-col gap-2 justify-start min-w-0 px-0 text-center w-full" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex={-1} data-state="inactive" loading="false" aria-label="Timing">
                     <Stepper>
                     <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-full before:z-10 border border-transparent data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-0 data-[state=active]:text-primary data-[state=completed]:border-primary data-[state=inactive]:bg-background data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                       <div className="absolute">
@@ -121,7 +121,7 @@ export function Pattern() {
                 <Stepper>
                 <StepperItem className="flex-1 min-w-0 overflow-visible relative" data-state="inactive">
                   <Stepper>
-                  <StepperTrigger className="flex-col gap-2 justify-start min-w-0 px-0 text-center w-full" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="inactive" loading="false" aria-label="Confirm">
+                  <StepperTrigger className="flex-col gap-2 justify-start min-w-0 px-0 text-center w-full" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex={-1} data-state="inactive" loading="false" aria-label="Confirm">
                     <Stepper>
                     <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-full before:z-10 border border-transparent data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-0 data-[state=active]:text-primary data-[state=completed]:border-primary data-[state=inactive]:bg-background data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                       <div className="absolute">
@@ -168,8 +168,8 @@ export function Pattern() {
                         <ItemGroup className="gap-2" role="list">
                           <Item className="gap-3 hover:bg-muted/50" variant="outline" size="sm">
                             <Field className="flex-wrap gap-3 sm:flex-nowrap" role="group" data-orientation="horizontal">
-                              <RadioGroupItem unchecked="" role="radio" tabIndex="-1" aria-checked="false" id="base-ui-_r_1_" aria-labelledby="plan-change-plan-starter-label"></RadioGroupItem>
-                              <input id="plan-change-plan-starter" tabIndex="-1" aria-hidden="true" type="radio" value="starter" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <RadioGroupItem unchecked="" role="radio" tabIndex={-1} aria-checked="false" id="base-ui-_r_1_" aria-labelledby="plan-change-plan-starter-label"></RadioGroupItem>
+                              <input id="plan-change-plan-starter" tabIndex={-1} aria-hidden="true" type="radio" value="starter" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               <FieldLabel className="cn-label flex-1 group-data-[disabled=true]:pointer-events-none items-start min-w-0 peer-disabled:cursor-not-allowed select-none" htmlFor="plan-change-plan-starter" id="plan-change-plan-starter-label">
                                 <span className="flex flex-col gap-0.5 min-w-0">
                                   <span className="flex flex-wrap gap-2 items-center min-w-0">
@@ -192,8 +192,8 @@ export function Pattern() {
                           </Item>
                           <Item className="gap-3 hover:bg-muted/50" variant="outline" size="sm">
                             <Field className="flex-wrap gap-3 sm:flex-nowrap" role="group" data-orientation="horizontal">
-                              <RadioGroupItem unchecked="" role="radio" tabIndex="-1" aria-checked="false" id="base-ui-_r_4_" aria-labelledby="plan-change-plan-growth-label"></RadioGroupItem>
-                              <input id="plan-change-plan-growth" tabIndex="-1" aria-hidden="true" type="radio" value="growth" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <RadioGroupItem unchecked="" role="radio" tabIndex={-1} aria-checked="false" id="base-ui-_r_4_" aria-labelledby="plan-change-plan-growth-label"></RadioGroupItem>
+                              <input id="plan-change-plan-growth" tabIndex={-1} aria-hidden="true" type="radio" value="growth" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               <FieldLabel className="cn-label flex-1 group-data-[disabled=true]:pointer-events-none items-start min-w-0 peer-disabled:cursor-not-allowed select-none" htmlFor="plan-change-plan-growth" id="plan-change-plan-growth-label">
                                 <span className="flex flex-col gap-0.5 min-w-0">
                                   <span className="flex flex-wrap gap-2 items-center min-w-0">
@@ -219,12 +219,12 @@ export function Pattern() {
                           </Item>
                           <Item className="bg-primary/5 border-primary gap-3 hover:bg-muted/50" variant="outline" size="sm">
                             <Field className="flex-wrap gap-3 sm:flex-nowrap" role="group" data-orientation="horizontal">
-                              <RadioGroupItem checked="" role="radio" tabIndex="0" aria-checked="true" compositeItemActive="" id="base-ui-_r_7_" aria-labelledby="plan-change-plan-scale-label">
+                              <RadioGroupItem checked="" role="radio" tabIndex={0} aria-checked="true" compositeItemActive="" id="base-ui-_r_7_" aria-labelledby="plan-change-plan-scale-label">
                                 <span className="cn-radio-group-indicator" data-checked="">
                                   <span className="cn-radio-group-indicator-icon"></span>
                                 </span>
                               </RadioGroupItem>
-                              <input id="plan-change-plan-scale" tabIndex="-1" aria-hidden="true" type="radio" value="scale" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="plan-change-plan-scale" tabIndex={-1} aria-hidden="true" type="radio" value="scale" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               <FieldLabel className="cn-label flex-1 group-data-[disabled=true]:pointer-events-none items-start min-w-0 peer-disabled:cursor-not-allowed select-none" htmlFor="plan-change-plan-scale" id="plan-change-plan-scale-label">
                                 <span className="flex flex-col gap-0.5 min-w-0">
                                   <span className="flex flex-wrap gap-2 items-center min-w-0">
@@ -250,8 +250,8 @@ export function Pattern() {
                           </Item>
                           <Item className="gap-3 hover:bg-muted/50" variant="outline" size="sm">
                             <Field className="flex-wrap gap-3 sm:flex-nowrap" role="group" data-orientation="horizontal">
-                              <RadioGroupItem unchecked="" role="radio" tabIndex="-1" aria-checked="false" id="base-ui-_r_a_" aria-labelledby="plan-change-plan-enterprise-label"></RadioGroupItem>
-                              <input id="plan-change-plan-enterprise" tabIndex="-1" aria-hidden="true" type="radio" value="enterprise" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <RadioGroupItem unchecked="" role="radio" tabIndex={-1} aria-checked="false" id="base-ui-_r_a_" aria-labelledby="plan-change-plan-enterprise-label"></RadioGroupItem>
+                              <input id="plan-change-plan-enterprise" tabIndex={-1} aria-hidden="true" type="radio" value="enterprise" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                               <FieldLabel className="cn-label flex-1 group-data-[disabled=true]:pointer-events-none items-start min-w-0 peer-disabled:cursor-not-allowed select-none" htmlFor="plan-change-plan-enterprise" id="plan-change-plan-enterprise-label">
                                 <span className="flex flex-col gap-0.5 min-w-0">
                                   <span className="flex flex-wrap gap-2 items-center min-w-0">
@@ -287,7 +287,7 @@ export function Pattern() {
                       {"Proration preview"}
                     </h2>
                     <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                      <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
+                      <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                         <path d="m5 12 7-7 7 7"></path>
                         <path d="M12 19V5"></path>
                       </svg>
@@ -381,9 +381,9 @@ export function Pattern() {
           </CardContent>
           <CardFooter className="border-t gap-3 justify-between px-5 py-4 sm:px-6">
             <span className="h-9 hidden sm:block w-28" aria-hidden="true"></span>
-            <Button className="ml-auto" type="button" tabIndex="0">
+            <Button className="ml-auto" type="button" tabIndex={0}>
               {"Next"}
-              <svg className="lucide lucide-arrow-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+              <svg className="lucide lucide-arrow-right size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="m12 5 7 7-7 7"></path>
               </svg>

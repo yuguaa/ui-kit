@@ -58,9 +58,9 @@ export function Pattern() {
                     </span>
                   </div>
                 </div>
-                <Button type="button" tabIndex="0" extracted="1">
-                  <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" data-icon="inline-start" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
+                <Button type="button" tabIndex={0} extracted="1">
+                  <svg className="lucide lucide-info" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InfoIcon" tabler="IconInfoCircle" hugeicons="InformationCircleIcon" phosphor="InfoIcon" remixicon="RiInformationLine" data-icon="inline-start" aria-hidden="true">
+                    <circle cx={12} cy={12} r={10}></circle>
                     <path d="M12 16v-4"></path>
                     <path d="M12 8h.01"></path>
                   </svg>
@@ -74,7 +74,7 @@ export function Pattern() {
                 <Stepper>
                 <StepperItem className="min-w-0 relative" data-state="active">
                   <Stepper>
-                  <StepperTrigger className="disabled:opacity-100 gap-2 justify-start min-w-0" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex="0" data-state="active" loading="false">
+                  <StepperTrigger className="disabled:opacity-100 gap-2 justify-start min-w-0" type="button" role="tab" id="stepper-tab-1" aria-selected="true" aria-controls="stepper-panel-1" tabIndex={0} data-state="active" loading="false">
                     <Stepper>
                     <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:text-primary data-[state=inactive]:border data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="active">
                       <div className="absolute">
@@ -95,7 +95,7 @@ export function Pattern() {
                 <Stepper>
                 <StepperItem className="min-w-0 relative" data-state="inactive">
                   <Stepper>
-                  <StepperTrigger className="disabled:opacity-100 gap-2 justify-start min-w-0" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="inactive" loading="false">
+                  <StepperTrigger className="disabled:opacity-100 gap-2 justify-start min-w-0" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex={-1} data-state="inactive" loading="false">
                     <Stepper>
                     <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:text-primary data-[state=inactive]:border data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                       <div className="absolute">
@@ -116,7 +116,7 @@ export function Pattern() {
                 <Stepper>
                 <StepperItem className="min-w-0 relative" data-state="inactive">
                   <Stepper>
-                  <StepperTrigger className="disabled:opacity-100 gap-2 justify-start min-w-0" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="inactive" loading="false">
+                  <StepperTrigger className="disabled:opacity-100 gap-2 justify-start min-w-0" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex={-1} data-state="inactive" loading="false">
                     <Stepper>
                     <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-md before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:text-primary data-[state=inactive]:border data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="inactive">
                       <div className="absolute">
@@ -157,12 +157,12 @@ export function Pattern() {
                       <RadioGroup className="gap-2 grid sm:grid-cols-2" role="radiogroup" aria-label="Select AI provider">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center p-0 peer-disabled:cursor-not-allowed relative select-none" htmlFor="checkout-3-provider-openai" id="checkout-3-provider-openai-label">
                           <Field role="group" data-orientation="horizontal">
-                            <RadioGroupItem className="absolute right-3 rounded-full size-5 top-3" checked="" role="radio" tabIndex="0" aria-checked="true" compositeItemActive="" id="base-ui-_r_1_" aria-labelledby="checkout-3-provider-openai-label">
+                            <RadioGroupItem className="absolute right-3 rounded-full size-5 top-3" checked="" role="radio" tabIndex={0} aria-checked="true" compositeItemActive="" id="base-ui-_r_1_" aria-labelledby="checkout-3-provider-openai-label">
                               <span className="cn-radio-group-indicator" data-checked="">
                                 <span className="cn-radio-group-indicator-icon"></span>
                               </span>
                             </RadioGroupItem>
-                            <input id="checkout-3-provider-openai" tabIndex="-1" aria-hidden="true" type="radio" value="openai" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                            <input id="checkout-3-provider-openai" tabIndex={-1} aria-hidden="true" type="radio" value="openai" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             <FieldLabel className="cn-field-title flex-col gap-3 items-start">
                               <Item className="bg-background border border-border p-2 shadow-black/5 shadow-xs w-auto" variant="default" size="default">
                                 <ItemMedia className="size-auto" variant="icon">
@@ -196,8 +196,8 @@ export function Pattern() {
                         </FieldLabel>
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center p-0 peer-disabled:cursor-not-allowed relative select-none" htmlFor="checkout-3-provider-claude" id="checkout-3-provider-claude-label">
                           <Field role="group" data-orientation="horizontal">
-                            <RadioGroupItem className="absolute right-3 rounded-full size-5 top-3" unchecked="" role="radio" tabIndex="-1" aria-checked="false" id="base-ui-_r_4_" aria-labelledby="checkout-3-provider-claude-label"></RadioGroupItem>
-                            <input id="checkout-3-provider-claude" tabIndex="-1" aria-hidden="true" type="radio" value="claude" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                            <RadioGroupItem className="absolute right-3 rounded-full size-5 top-3" unchecked="" role="radio" tabIndex={-1} aria-checked="false" id="base-ui-_r_4_" aria-labelledby="checkout-3-provider-claude-label"></RadioGroupItem>
+                            <input id="checkout-3-provider-claude" tabIndex={-1} aria-hidden="true" type="radio" value="claude" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             <FieldLabel className="cn-field-title flex-col gap-3 items-start">
                               <Item className="bg-background border border-border p-2 shadow-black/5 shadow-xs w-auto" variant="default" size="default">
                                 <ItemMedia className="size-auto" variant="icon">
@@ -221,24 +221,24 @@ export function Pattern() {
                         </FieldLabel>
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center p-0 peer-disabled:cursor-not-allowed relative select-none" htmlFor="checkout-3-provider-gemini" id="checkout-3-provider-gemini-label">
                           <Field role="group" data-orientation="horizontal">
-                            <RadioGroupItem className="absolute right-3 rounded-full size-5 top-3" unchecked="" role="radio" tabIndex="-1" aria-checked="false" id="base-ui-_r_7_" aria-labelledby="checkout-3-provider-gemini-label"></RadioGroupItem>
-                            <input id="checkout-3-provider-gemini" tabIndex="-1" aria-hidden="true" type="radio" value="gemini" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                            <RadioGroupItem className="absolute right-3 rounded-full size-5 top-3" unchecked="" role="radio" tabIndex={-1} aria-checked="false" id="base-ui-_r_7_" aria-labelledby="checkout-3-provider-gemini-label"></RadioGroupItem>
+                            <input id="checkout-3-provider-gemini" tabIndex={-1} aria-hidden="true" type="radio" value="gemini" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             <FieldLabel className="cn-field-title flex-col gap-3 items-start">
                               <Item className="bg-background border border-border p-2 shadow-black/5 shadow-xs w-auto" variant="default" size="default">
                                 <ItemMedia className="size-auto" variant="icon">
                                   <svg className="size-5" aria-hidden="true" viewBox="0 0 296 298" fill="none">
-                                    <mask id="gemini-a" width="296" height="298" x="0" y="0" maskUnits="userSpaceOnUse" style={{maskType: "alpha"}}>
+                                    <mask id="gemini-a" width={296} height={298} x={0} y={0} maskUnits="userSpaceOnUse" style={{maskType: "alpha"}}>
                                       <path fill="#3186FF" d="M141.201 4.886c2.282-6.17 11.042-6.071 13.184.148l5.985 17.37a184.004 184.004 0 0 0 111.257 113.049l19.304 6.997c6.143 2.227 6.156 10.91.02 13.155l-19.35 7.082a184.001 184.001 0 0 0-109.495 109.385l-7.573 20.629c-2.241 6.105-10.869 6.121-13.133.025l-7.908-21.296a184 184 0 0 0-109.02-108.658l-19.698-7.239c-6.102-2.243-6.118-10.867-.025-13.132l20.083-7.467A183.998 183.998 0 0 0 133.291 26.28l7.91-21.394Z"></path>
                                     </mask>
                                     <g mask="url(#gemini-a)">
                                       <g filter="url(#gemini-b)">
-                                        <ellipse cx="163" cy="149" fill="#3689FF" rx="196" ry="159"></ellipse>
+                                        <ellipse cx={163} cy={149} fill="#3689FF" rx={196} ry={159}></ellipse>
                                       </g>
                                       <g filter="url(#gemini-c)">
-                                        <ellipse cx="33.5" cy="142.5" fill="#F6C013" rx="68.5" ry="72.5"></ellipse>
+                                        <ellipse cx={33.5} cy={142.5} fill="#F6C013" rx={68.5} ry={72.5}></ellipse>
                                       </g>
                                       <g filter="url(#gemini-d)">
-                                        <ellipse cx="19.5" cy="148.5" fill="#F6C013" rx="68.5" ry="72.5"></ellipse>
+                                        <ellipse cx={19.5} cy={148.5} fill="#F6C013" rx={68.5} ry={72.5}></ellipse>
                                       </g>
                                       <g filter="url(#gemini-e)">
                                         <path fill="#FA4340" d="M194 10.5C172 82.5 65.5 134.333 22.5 135L144-66l50 76.5Z"></path>
@@ -254,37 +254,37 @@ export function Pattern() {
                                       </g>
                                     </g>
                                     <defs>
-                                      <filter id="gemini-b" width="464" height="390" x="-69" y="-46" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                                      <filter id="gemini-b" width={464} height={390} x={-69} y={-46} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                                         <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                                         <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                                         <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="18"></fegaussianblur>
                                       </filter>
-                                      <filter id="gemini-c" width="265" height="273" x="-99" y="6" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                                      <filter id="gemini-c" width={265} height={273} x={-99} y={6} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                                         <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                                         <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                                         <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="32"></fegaussianblur>
                                       </filter>
-                                      <filter id="gemini-d" width="265" height="273" x="-113" y="12" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                                      <filter id="gemini-d" width={265} height={273} x={-113} y={12} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                                         <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                                         <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                                         <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="32"></fegaussianblur>
                                       </filter>
-                                      <filter id="gemini-e" width="299.5" height="329" x="-41.5" y="-130" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                                      <filter id="gemini-e" width={299.5} height={329} x={-41.5} y={-130} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                                         <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                                         <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                                         <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="32"></fegaussianblur>
                                       </filter>
-                                      <filter id="gemini-f" width="299.5" height="329" x="-45" y="-153" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                                      <filter id="gemini-f" width={299.5} height={329} x={-45} y={-153} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                                         <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                                         <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                                         <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="32"></fegaussianblur>
                                       </filter>
-                                      <filter id="gemini-g" width="299.5" height="329" x="-41" y="91" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                                      <filter id="gemini-g" width={299.5} height={329} x={-41} y={91} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                                         <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                                         <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                                         <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="32"></fegaussianblur>
                                       </filter>
-                                      <filter id="gemini-h" width="299.5" height="329" x="-39" y="132" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                                      <filter id="gemini-h" width={299.5} height={329} x={-39} y={132} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                                         <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                                         <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                                         <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="32"></fegaussianblur>
@@ -311,8 +311,8 @@ export function Pattern() {
                         </FieldLabel>
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center p-0 peer-disabled:cursor-not-allowed relative select-none" htmlFor="checkout-3-provider-mistral" id="checkout-3-provider-mistral-label">
                           <Field role="group" data-orientation="horizontal">
-                            <RadioGroupItem className="absolute right-3 rounded-full size-5 top-3" unchecked="" role="radio" tabIndex="-1" aria-checked="false" id="base-ui-_r_a_" aria-labelledby="checkout-3-provider-mistral-label"></RadioGroupItem>
-                            <input id="checkout-3-provider-mistral" tabIndex="-1" aria-hidden="true" type="radio" value="mistral" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                            <RadioGroupItem className="absolute right-3 rounded-full size-5 top-3" unchecked="" role="radio" tabIndex={-1} aria-checked="false" id="base-ui-_r_a_" aria-labelledby="checkout-3-provider-mistral-label"></RadioGroupItem>
+                            <input id="checkout-3-provider-mistral" tabIndex={-1} aria-hidden="true" type="radio" value="mistral" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             <FieldLabel className="cn-field-title flex-col gap-3 items-start">
                               <Item className="bg-background border border-border p-2 shadow-black/5 shadow-xs w-auto" variant="default" size="default">
                                 <ItemMedia className="size-auto" variant="icon">
@@ -359,18 +359,18 @@ export function Pattern() {
             </FramePanel>
             <footer className="flex flex-col gap-3 px-(--frame-panel-footer-px) py-(--frame-panel-footer-py) sm:flex-row sm:items-center sm:justify-between">
               <div className="gap-1.5 hidden items-center min-w-0 sm:flex text-muted-foreground text-sm">
-                <svg className="lucide lucide-sparkles shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SparklesIcon" tabler="IconSparkles" hugeicons="SparklesIcon" phosphor="SparkleIcon" remixicon="RiSparklingLine" aria-hidden="true">
+                <svg className="lucide lucide-sparkles shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SparklesIcon" tabler="IconSparkles" hugeicons="SparklesIcon" phosphor="SparkleIcon" remixicon="RiSparklingLine" aria-hidden="true">
                   <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path>
                   <path d="M20 2v4"></path>
                   <path d="M22 4h-4"></path>
-                  <circle cx="4" cy="20" r="2"></circle>
+                  <circle cx={4} cy={20} r={2}></circle>
                 </svg>
                 {"Choose the AI balance to fund."}
               </div>
               <div className="flex gap-2 items-center justify-end sm:w-auto w-full">
-                <Button type="submit" tabIndex="0">
+                <Button type="submit" tabIndex={0}>
                   {"Next Step"}
-                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
+                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>

@@ -23,16 +23,16 @@ export function Pattern() {
               {"Transactions"}
             </h2>
             <TabsList data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
-              <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-controls="base-ui-_r_2_">
+              <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex={0} role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-controls="base-ui-_r_2_">
                 {"Weekly"}
               </TabsTrigger>
-              <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
+              <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_1_">
                 {"All Time"}
               </TabsTrigger>
             </TabsList>
           </FramePanel>
           <FramePanel className="p-4!">
-            <TabsContent data-orientation="horizontal" activationDirection="none" id="base-ui-_r_2_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_0_">
+            <TabsContent data-orientation="horizontal" activationDirection="none" id="base-ui-_r_2_" role="tabpanel" tabIndex={0} index="0" aria-labelledby="base-ui-_r_0_">
               <ul className="flex flex-col">
                 <li>
                   <div className="flex gap-2 items-center">
@@ -40,22 +40,22 @@ export function Pattern() {
                       <ItemMedia className="size-auto" variant="icon">
                         <svg className="size-5" aria-hidden="true" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink">
                           <defs>
-                            <lineargradient id="c" x1="16" x2="16" y1="0" y2="30" gradientUnits="userSpaceOnUse">
+                            <lineargradient id="c" x1={16} x2={16} y1={0} y2={30} gradientUnits="userSpaceOnUse">
                               <stop offset="0%" stopColor="#FFF" stopOpacity=".5"></stop>
                               <stop offset="100%" stopOpacity=".5"></stop>
                             </lineargradient>
-                            <filter id="a" width="1.08" height="1.0966667" x="-.04" y="-.04" filterunits="objectBoundingBox">
+                            <filter id="a" width={1.08} height={1.0966667} x="-.04" y="-.04" filterunits="objectBoundingBox">
                               <feoffset dy=".5" in="SourceAlpha" result="shadowOffsetOuter1"></feoffset>
                               <fegaussianblur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"></fegaussianblur>
                               <fecomposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></fecomposite>
                               <fecolormatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.199473505 0"></fecolormatrix>
                             </filter>
-                            <circle id="b" cx="16" cy="15" r="15"></circle>
+                            <circle id="b" cx={16} cy={15} r={15}></circle>
                           </defs>
                           <use xlinkHref="#b" filter="url(#a)" style={{display: "inline", fillRule: "evenodd"}}></use>
                           <use xlinkHref="#b" fill="#627eea" style={{display: "inline", fill: "rgb(229, 229, 229)", fillOpacity: "1", fillRule: "evenodd"}}></use>
                           <use xlinkHref="#b" fill="url(#c)" style={{display: "inline", mixBlendMode: "soft-light", fill: "url(\"#c\")", fillRule: "evenodd"}}></use>
-                          <circle cx="16" cy="15" r="14.5" stroke="#000" strokeOpacity=".097" style={{display: "inline", fill: "none", fillRule: "evenodd"}}></circle>
+                          <circle cx={16} cy={15} r={14.5} stroke="#000" strokeOpacity=".097" style={{display: "inline", fill: "none", fillRule: "evenodd"}}></circle>
                           <path d="m10.331859 23 7.221238-12.601771.99115 3.256638L13.022125 23h2.83186l3.539822-6.088495L20.951328 23H23.5l-2.40708-9.061945 1.699118-2.973453h-2.548674L19.252216 7h-2.407083L7.5 23Z" style={{fill: "rgb(0, 0, 0)", fillOpacity: "1", stroke: "none", strokeWidth: "0.141594", strokeOpacity: "1"}}></path>
                         </svg>
                       </ItemMedia>
@@ -91,7 +91,7 @@ export function Pattern() {
                               <stop offset="0%" stopColor="#FFF" stopOpacity=".5"></stop>
                               <stop offset="100%" stopOpacity=".5"></stop>
                             </lineargradient>
-                            <circle id="btc-b" cx="16" cy="15" r="15"></circle>
+                            <circle id="btc-b" cx={16} cy={15} r={15}></circle>
                             <filter id="btc-a" width="111.7%" height="111.7%" x="-5.8%" y="-4.2%" filterunits="objectBoundingBox">
                               <feoffset dy=".5" in="SourceAlpha" result="shadowOffsetOuter1"></feoffset>
                               <fegaussianblur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"></fegaussianblur>
@@ -109,7 +109,7 @@ export function Pattern() {
                             <use fill="#000" filter="url(#btc-a)" xlinkHref="#btc-b"></use>
                             <use fill="#F7931A" xlinkHref="#btc-b"></use>
                             <use fill="url(#btc-c)" xlinkHref="#btc-b" style={{mixBlendMode: "soft-light"}}></use>
-                            <circle cx="16" cy="15" r="14.5" stroke="#000" strokeOpacity=".097"></circle>
+                            <circle cx={16} cy={15} r={14.5} stroke="#000" strokeOpacity=".097"></circle>
                             <g fillRule="nonzero">
                               <use fill="#000" filter="url(#btc-d)" xlinkHref="#btc-e"></use>
                               <use fill="#FFF" fillRule="evenodd" xlinkHref="#btc-e"></use>
@@ -145,7 +145,7 @@ export function Pattern() {
                       <ItemMedia className="size-auto" variant="icon">
                         <svg className="size-5" aria-hidden="true" viewBox="0 0 36 36">
                           <g fill="none">
-                            <circle fill="#8247E5" cx="18" cy="18" r="18"></circle>
+                            <circle fill="#8247E5" cx={18} cy={18} r={18}></circle>
                             <path d="M24.172 13.954c-.438-.25-1.002-.25-1.504 0l-3.509 2.068-2.38 1.316-3.447 2.068c-.439.25-1.003.25-1.504 0l-2.695-1.63a1.527 1.527 0 0 1-.752-1.315v-3.133c0-.502.25-1.003.752-1.316l2.695-1.567c.438-.25 1.002-.25 1.504 0l2.694 1.63c.439.25.752.751.752 1.315v2.068l2.381-1.378v-2.13c0-.502-.25-1.004-.752-1.317l-5.013-2.945c-.438-.25-1.002-.25-1.504 0l-5.138 3.008c-.501.25-.752.752-.752 1.253v5.89c0 .502.25 1.003.752 1.316l5.076 2.946c.438.25 1.002.25 1.504 0l3.446-2.006 2.381-1.378 3.447-2.006c.438-.25 1.002-.25 1.504 0l2.694 1.567c.439.25.752.752.752 1.316v3.133c0 .501-.25 1.003-.752 1.316l-2.632 1.567c-.438.25-1.002.25-1.504 0l-2.694-1.567a1.527 1.527 0 0 1-.752-1.316v-2.005L16.84 22.1v2.067c0 .502.25 1.003.752 1.316l5.075 2.946c.439.25 1.003.25 1.504 0l5.076-2.946c.439-.25.752-.752.752-1.316v-5.953c0-.5-.25-1.002-.752-1.316l-5.076-2.945z" fill="#FFF"></path>
                           </g>
                         </svg>
@@ -185,7 +185,7 @@ export function Pattern() {
                               <stop offset="0%" stopColor="#FFF" stopOpacity=".5"></stop>
                               <stop offset="100%" stopOpacity=".5"></stop>
                             </lineargradient>
-                            <circle id="eth-b" cx="16" cy="15" r="15"></circle>
+                            <circle id="eth-b" cx={16} cy={15} r={15}></circle>
                             <filter id="eth-a" width="111.7%" height="111.7%" x="-5.8%" y="-4.2%" filterunits="objectBoundingBox">
                               <feoffset dy=".5" in="SourceAlpha" result="shadowOffsetOuter1"></feoffset>
                               <fegaussianblur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"></fegaussianblur>
@@ -204,10 +204,10 @@ export function Pattern() {
                             <use fill="#000" filter="url(#eth-a)" xlinkHref="#eth-b"></use>
                             <use fill="#627EEA" xlinkHref="#eth-b"></use>
                             <use fill="url(#eth-c)" xlinkHref="#eth-b" style={{mixBlendMode: "soft-light"}}></use>
-                            <circle cx="16" cy="15" r="14.5" stroke="#000" strokeOpacity=".097"></circle>
+                            <circle cx={16} cy={15} r={14.5} stroke="#000" strokeOpacity=".097"></circle>
                             <g fillRule="nonzero">
                               <use fill="#000" filter="url(#eth-d)" xlinkHref="#eth-e"></use>
-                              <use fill="#FFF" fillOpacity="0" fillRule="evenodd" xlinkHref="#eth-e"></use>
+                              <use fill="#FFF" fillOpacity={0} fillRule="evenodd" xlinkHref="#eth-e"></use>
                             </g>
                             <g fill="#FFF" fillRule="nonzero" transform="translate(9 3)">
                               <polygon fillOpacity=".602" points="7.498 0 7.498 8.87 14.995 12.22"></polygon>
@@ -245,8 +245,8 @@ export function Pattern() {
             </TabsContent>
           </FramePanel>
           <FramePanel className="p-3.5!">
-            <Button className="w-full" type="button" tabIndex="0">
-              <svg className="lucide lucide-external-link opacity-50" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
+            <Button className="w-full" type="button" tabIndex={0}>
+              <svg className="lucide lucide-external-link opacity-50" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
                 <path d="M15 3h6v6"></path>
                 <path d="M10 14 21 3"></path>
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>

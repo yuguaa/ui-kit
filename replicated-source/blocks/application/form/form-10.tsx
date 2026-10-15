@@ -82,7 +82,7 @@ export function Pattern() {
                   <div className="min-w-0">
                     <InputGroup role="group">
                       <InputGroupAddon role="group" data-align="inline-start">
-                        <svg className="lucide lucide-building-2 lucide-building2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Building2Icon" tabler="IconBuilding" hugeicons="Building02Icon" phosphor="BuildingsIcon" remixicon="RiBuildingLine" aria-hidden="true">
+                        <svg className="lucide lucide-building-2 lucide-building2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Building2Icon" tabler="IconBuilding" hugeicons="Building02Icon" phosphor="BuildingsIcon" remixicon="RiBuildingLine" aria-hidden="true">
                           <path d="M10 12h4"></path>
                           <path d="M10 8h4"></path>
                           <path d="M14 21v-3a2 2 0 0 0-4 0v3"></path>
@@ -132,12 +132,12 @@ export function Pattern() {
                   <div className="min-w-0">
                     <RadioGroup className="w-fit" role="radiogroup">
                       <Field role="group" data-orientation="horizontal">
-                        <RadioGroupItem checked="" role="radio" tabIndex="0" aria-checked="true" compositeItemActive="" id="base-ui-_r_3_" aria-labelledby="form-10-goal-pipeline-label">
+                        <RadioGroupItem checked="" role="radio" tabIndex={0} aria-checked="true" compositeItemActive="" id="base-ui-_r_3_" aria-labelledby="form-10-goal-pipeline-label">
                           <span className="cn-radio-group-indicator" data-checked="">
                             <span className="cn-radio-group-indicator-icon"></span>
                           </span>
                         </RadioGroupItem>
-                        <input id="form-10-goal-pipeline" tabIndex="-1" aria-hidden="true" type="radio" value="pipeline" checked name="form-10-goal" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                        <input id="form-10-goal-pipeline" tabIndex={-1} aria-hidden="true" type="radio" value="pipeline" checked name="form-10-goal" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                         <FieldContent>
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-10-goal-pipeline" id="form-10-goal-pipeline-label">
                             {"Pipeline"}
@@ -148,8 +148,8 @@ export function Pattern() {
                         </FieldContent>
                       </Field>
                       <Field role="group" data-orientation="horizontal">
-                        <RadioGroupItem unchecked="" role="radio" tabIndex="-1" aria-checked="false" id="base-ui-_r_6_" aria-labelledby="form-10-goal-support-label"></RadioGroupItem>
-                        <input id="form-10-goal-support" tabIndex="-1" aria-hidden="true" type="radio" value="support" name="form-10-goal" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                        <RadioGroupItem unchecked="" role="radio" tabIndex={-1} aria-checked="false" id="base-ui-_r_6_" aria-labelledby="form-10-goal-support-label"></RadioGroupItem>
+                        <input id="form-10-goal-support" tabIndex={-1} aria-hidden="true" type="radio" value="support" name="form-10-goal" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                         <FieldContent>
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-10-goal-support" id="form-10-goal-support-label">
                             {"Support"}
@@ -160,8 +160,8 @@ export function Pattern() {
                         </FieldContent>
                       </Field>
                       <Field role="group" data-orientation="horizontal">
-                        <RadioGroupItem unchecked="" role="radio" tabIndex="-1" aria-checked="false" id="base-ui-_r_9_" aria-labelledby="form-10-goal-reporting-label"></RadioGroupItem>
-                        <input id="form-10-goal-reporting" tabIndex="-1" aria-hidden="true" type="radio" value="reporting" name="form-10-goal" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                        <RadioGroupItem unchecked="" role="radio" tabIndex={-1} aria-checked="false" id="base-ui-_r_9_" aria-labelledby="form-10-goal-reporting-label"></RadioGroupItem>
+                        <input id="form-10-goal-reporting" tabIndex={-1} aria-hidden="true" type="radio" value="reporting" name="form-10-goal" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                         <FieldContent>
                           <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="form-10-goal-reporting" id="form-10-goal-reporting-label">
                             {"Reporting"}
@@ -188,17 +188,17 @@ export function Pattern() {
                   </FieldContent>
                   <div className="min-w-0">
                     <Select>
-                    <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="form-10-team-size" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                    <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex={0} id="form-10-team-size" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                       <SelectValue>
                         {"11-50 people"}
                       </SelectValue>
-                      <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                      <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
                         {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
-                    <input id="base-ui-_r_c_-hidden-input" tabIndex="-1" aria-hidden="true" value="growth" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                    <input id="base-ui-_r_c_-hidden-input" tabIndex={-1} aria-hidden="true" value="growth" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   </div>
                 </Field>
                 <div className="px-5 sm:px-6">
@@ -215,17 +215,17 @@ export function Pattern() {
                   </FieldContent>
                   <div className="min-w-0">
                     <Select>
-                    <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="form-10-timeline" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                    <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex={0} id="form-10-timeline" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                       <SelectValue>
                         {"Next 2 weeks"}
                       </SelectValue>
-                      <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                      <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
                         {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
-                    <input id="base-ui-_r_f_-hidden-input" tabIndex="-1" aria-hidden="true" value="two-weeks" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                    <input id="base-ui-_r_f_-hidden-input" tabIndex={-1} aria-hidden="true" value="two-weeks" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   </div>
                 </Field>
                 <div className="px-5 sm:px-6">
@@ -242,17 +242,17 @@ export function Pattern() {
                   </FieldContent>
                   <div className="min-w-0">
                     <Select>
-                    <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="form-10-template" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                    <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex={0} id="form-10-template" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                       <SelectValue>
                         {"Revenue operations"}
                       </SelectValue>
-                      <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                      <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
                         {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
-                    <input id="base-ui-_r_i_-hidden-input" tabIndex="-1" aria-hidden="true" value="revops" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                    <input id="base-ui-_r_i_-hidden-input" tabIndex={-1} aria-hidden="true" value="revops" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   </div>
                 </Field>
                 <div className="px-5 sm:px-6">
@@ -269,17 +269,17 @@ export function Pattern() {
                   </FieldContent>
                   <div className="min-w-0">
                     <Select>
-                    <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex="0" id="form-10-source" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                    <SelectTrigger className="[&_small]:hidden w-full" type="button" tabIndex={0} id="form-10-source" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                       <SelectValue>
                         {"CRM"}
                       </SelectValue>
-                      <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                      <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
                         {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
-                    <input id="base-ui-_r_l_-hidden-input" tabIndex="-1" aria-hidden="true" value="crm" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                    <input id="base-ui-_r_l_-hidden-input" tabIndex={-1} aria-hidden="true" value="crm" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   </div>
                 </Field>
                 <div className="px-5 sm:px-6">
@@ -296,19 +296,19 @@ export function Pattern() {
                   </FieldContent>
                   <div className="min-w-0">
                     <ComboboxChips className="has-data-[slot=combobox-chip]:pl-1 min-h-10" role="toolbar">
-                      <ComboboxChip className="gap-1.5" tabIndex="-1">
+                      <ComboboxChip className="gap-1.5" tabIndex={-1}>
                         {"Maya Chen"}
-                        <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost cn-combobox-chip-remove disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="-1" aria-disabled="false">
-                          <svg className="cn-combobox-chip-indicator-icon lucide lucide-x pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
+                        <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost cn-combobox-chip-remove disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={-1} aria-disabled="false">
+                          <svg className="cn-combobox-chip-indicator-icon lucide lucide-x pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
                             <path d="M18 6 6 18"></path>
                             <path d="m6 6 12 12"></path>
                           </svg>
                         </button>
                       </ComboboxChip>
-                      <ComboboxChip className="gap-1.5" tabIndex="-1">
+                      <ComboboxChip className="gap-1.5" tabIndex={-1}>
                         {"Kai Morgan"}
-                        <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost cn-combobox-chip-remove disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="-1" aria-disabled="false">
-                          <svg className="cn-combobox-chip-indicator-icon lucide lucide-x pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
+                        <button className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-xs cn-button-variant-ghost cn-combobox-chip-remove disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={-1} aria-disabled="false">
+                          <svg className="cn-combobox-chip-indicator-icon lucide lucide-x pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
                             <path d="M18 6 6 18"></path>
                             <path d="m6 6 12 12"></path>
                           </svg>
@@ -316,7 +316,7 @@ export function Pattern() {
                       </ComboboxChip>
                       <input className="cn-combobox-chip-input flex-1 min-w-16 outline-none" autoComplete="off" spellCheck="false" autocorrect="off" autocapitalize="none" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-autocomplete="list" id="form-10-stakeholders" placeholder="Add owner" type="text" value="" />
                     </ComboboxChips>
-                    <input id="base-ui-_r_o_-hidden-input" tabIndex="-1" aria-hidden="true" value="" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                    <input id="base-ui-_r_o_-hidden-input" tabIndex={-1} aria-hidden="true" value="" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   </div>
                 </Field>
                 <div className="px-5 sm:px-6">
@@ -332,10 +332,10 @@ export function Pattern() {
                     </FieldDescription>
                   </FieldContent>
                   <div className="min-w-0">
-                    <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_r_" aria-checked="true" size="default" aria-labelledby="form-10-sample-data-label">
+                    <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_r_" aria-checked="true" size="default" aria-labelledby="form-10-sample-data-label">
                       <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                     </Switch>
-                    <input id="form-10-sample-data" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                    <input id="form-10-sample-data" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   </div>
                 </Field>
                 <div className="px-5 sm:px-6">
@@ -366,11 +366,11 @@ export function Pattern() {
               </span>
             </div>
             <div className="flex gap-2 items-center justify-end sm:w-auto w-full">
-              <Button type="button" tabIndex="0">
+              <Button type="button" tabIndex={0}>
                 {"Save Draft"}
               </Button>
-              <Button type="submit" tabIndex="0">
-                <svg className="lucide lucide-rocket" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" lucide="RocketIcon" tabler="IconRocket" hugeicons="RocketIcon" phosphor="RocketIcon" remixicon="RiRocketLine" aria-hidden="true">
+              <Button type="submit" tabIndex={0}>
+                <svg className="lucide lucide-rocket" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" data-icon="inline-start" lucide="RocketIcon" tabler="IconRocket" hugeicons="RocketIcon" phosphor="RocketIcon" remixicon="RiRocketLine" aria-hidden="true">
                   <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                   <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"></path>
                   <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"></path>

@@ -67,8 +67,8 @@ export function Pattern() {
             </div>
           </div>
           <div className="flex gap-2 items-center shrink-0">
-            <Button type="button" tabIndex="0" aria-label="Export" extracted="1">
-              <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
+            <Button type="button" tabIndex={0} aria-label="Export" extracted="1">
+              <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
                 <path d="M12 15V3"></path>
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                 <path d="m7 10 5 5 5-5"></path>
@@ -77,8 +77,8 @@ export function Pattern() {
                 {"Export"}
               </span>
             </Button>
-            <Button type="button" tabIndex="0">
-              <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+            <Button type="button" tabIndex={0}>
+              <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="M12 5v14"></path>
               </svg>
@@ -164,16 +164,16 @@ export function Pattern() {
           <div className="flex flex-wrap gap-2 items-center px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
             <InputGroup className="sm:w-72" role="group">
               <InputGroupAddon role="group" data-align="inline-start">
-                <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+                <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                   <path d="m21 21-4.34-4.34"></path>
-                  <circle cx="11" cy="11" r="8"></circle>
+                  <circle cx={11} cy={11} r={8}></circle>
                 </svg>
               </InputGroupAddon>
               <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_1_" placeholder="Search campaign, ID, market..." aria-label="Search campaigns" value="" />
             </InputGroup>
             <Popover>
-            <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Filter" baseUiClickTrigger="" id="base-ui-_r_4_" aria-haspopup="dialog" aria-expanded="false">
-              <svg className="lucide lucide-list-filter" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ListFilterIcon" tabler="IconFilter2" hugeicons="FilterMailIcon" phosphor="FunnelSimpleIcon" remixicon="RiFilter3Line" aria-hidden="true">
+            <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Filter" baseUiClickTrigger="" id="base-ui-_r_4_" aria-haspopup="dialog" aria-expanded="false">
+              <svg className="lucide lucide-list-filter" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ListFilterIcon" tabler="IconFilter2" hugeicons="FilterMailIcon" phosphor="FunnelSimpleIcon" remixicon="RiFilter3Line" aria-hidden="true">
                 <path d="M2 5h20"></path>
                 <path d="M6 12h12"></path>
                 <path d="M9 19h6"></path>
@@ -184,9 +184,9 @@ export function Pattern() {
             </PopoverTrigger>
             </Popover>
             <div className="flex gap-2 items-center ms-auto shrink-0">
-              <CascaderTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 style-luma:[&_svg:not([class*='size-'])]:size-4 style-lyra:[&_svg:not([class*='size-'])]:size-4 style-maia:[&_svg:not([class*='size-'])]:size-4 style-mira:[&_svg:not([class*='size-'])]:size-3.5 style-nova:[&_svg:not([class*='size-'])]:size-4 style-rhea:[&_svg:not([class*='size-'])]:size-4 style-sera:[&_svg:not([class*='size-'])]:size-3.5 style-vega:[&_svg:not([class*='size-'])]:size-4 transition-all whitespace-nowrap" type="button" tabIndex="0" id="base-ui-_r_6_" role="combobox" aria-expanded="false" aria-haspopup="dialog" aria-label="Columns">
-                <svg className="lucide lucide-columns-3 lucide-columns3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Columns3Icon" tabler="IconColumns3" hugeicons="Layout07Icon" phosphor="ColumnsIcon" remixicon="RiLayoutColumnLine" aria-hidden="true">
-                  <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+              <CascaderTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 style-luma:[&_svg:not([class*='size-'])]:size-4 style-lyra:[&_svg:not([class*='size-'])]:size-4 style-maia:[&_svg:not([class*='size-'])]:size-4 style-mira:[&_svg:not([class*='size-'])]:size-3.5 style-nova:[&_svg:not([class*='size-'])]:size-4 style-rhea:[&_svg:not([class*='size-'])]:size-4 style-sera:[&_svg:not([class*='size-'])]:size-3.5 style-vega:[&_svg:not([class*='size-'])]:size-4 transition-all whitespace-nowrap" type="button" tabIndex={0} id="base-ui-_r_6_" role="combobox" aria-expanded="false" aria-haspopup="dialog" aria-label="Columns">
+                <svg className="lucide lucide-columns-3 lucide-columns3" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Columns3Icon" tabler="IconColumns3" hugeicons="Layout07Icon" phosphor="ColumnsIcon" remixicon="RiLayoutColumnLine" aria-hidden="true">
+                  <rect width={18} height={18} x={3} y={3} rx={2}></rect>
                   <path d="M9 3v18"></path>
                   <path d="M15 3v18"></path>
                 </svg>
@@ -194,14 +194,14 @@ export function Pattern() {
                   {"Columns"}
                 </span>
               </CascaderTrigger>
-              <input id="base-ui-_r_6_-hidden-input" tabIndex="-1" aria-hidden="true" value="" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="base-ui-_r_6_-hidden-input" tabIndex={-1} aria-hidden="true" value="" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
               <Popover>
-              <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Settings" baseUiClickTrigger="" id="base-ui-_r_a_" aria-haspopup="dialog" aria-expanded="false">
-                <svg className="lucide lucide-settings-2 lucide-settings2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Settings2Icon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
+              <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Settings" baseUiClickTrigger="" id="base-ui-_r_a_" aria-haspopup="dialog" aria-expanded="false">
+                <svg className="lucide lucide-settings-2 lucide-settings2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Settings2Icon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
                   <path d="M14 17H5"></path>
                   <path d="M19 7h-9"></path>
-                  <circle cx="17" cy="17" r="3"></circle>
-                  <circle cx="7" cy="7" r="3"></circle>
+                  <circle cx={17} cy={17} r={3}></circle>
+                  <circle cx={7} cy={7} r={3}></circle>
                 </svg>
                 <span className="max-sm:sr-only">
                   {"Settings"}
@@ -214,7 +214,7 @@ export function Pattern() {
           <div className="relative">
             <DataGridProvider>
             <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
-              <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_b_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
+              <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_b_-viewport" tabIndex={-1} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                 <div role="presentation" style={{minWidth: "fit-content"}}>
                   <DataGridProvider>
                   <DataGridTableViewport style={{width: "calc(1214px + var(--data-grid-fill-size, 0px))", "--data-grid-fill-size": "0px", "--data-grid-fill": "0"}}>
@@ -236,14 +236,14 @@ export function Pattern() {
                       <thead className="backdrop-blur-xs bg-background/90 sticky top-0 z-40">
                         <tr className="[&>th]:border-b bg-transparent">
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle first:ps-(--frame-panel-header-px) font-medium h-8 last:pe-(--frame-panel-header-px) px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="select" data-header-id="select" data-header-depth="0" data-pinned="start" data-outer-pinned-col="start" data-last-col="start" style={{top: "0px", width: "calc(var(--header-select-size) * 1px)"}}>
-                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_c_" aria-checked="false" aria-label="Select all"></Checkbox>
-                            <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_c_" aria-checked="false" aria-label="Select all"></Checkbox>
+                            <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           </th>
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="campaign" data-header-id="campaign" data-header-depth="0" style={{width: "calc(var(--header-campaign-size) * 1px)"}}>
                             <div className="-ms-2 flex h-full items-center">
-                              <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                              <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                 {"Campaign"}
-                                <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
                                 </svg>
@@ -254,9 +254,9 @@ export function Pattern() {
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="status" data-header-id="status" data-header-depth="0" style={{width: "calc(var(--header-status-size) * 1px)"}}>
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
-                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_i_" aria-expanded="false">
+                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_i_" aria-expanded="false">
                                 {"Status"}
-                                <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
                                 </svg>
@@ -269,9 +269,9 @@ export function Pattern() {
                             <div className="-me-2 flex flex-1 justify-end min-w-0">
                               <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_n_" aria-expanded="false">
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_n_" aria-expanded="false">
                                   {"Spend"}
-                                  <svg className="lucide lucide-arrow-down size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
+                                  <svg className="lucide lucide-arrow-down size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
                                     <path d="M12 5v14"></path>
                                     <path d="m19 12-7 7-7-7"></path>
                                   </svg>
@@ -285,9 +285,9 @@ export function Pattern() {
                             <div className="-me-2 flex flex-1 justify-end min-w-0">
                               <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_s_" aria-expanded="false">
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_s_" aria-expanded="false">
                                   {"Conversions"}
-                                  <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                  <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -300,9 +300,9 @@ export function Pattern() {
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 overflow-visible px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="trend" data-header-id="trend" data-header-depth="0" style={{width: "calc(var(--header-trend-size) * 1px)"}}>
                             <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                               <DropdownMenu>
-                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_11_" aria-expanded="false">
+                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_11_" aria-expanded="false">
                                 {"Trend"}
-                                <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                   <path d="m7 15 5 5 5-5"></path>
                                   <path d="m7 9 5-5 5 5"></path>
                                 </svg>
@@ -315,9 +315,9 @@ export function Pattern() {
                             <div className="-me-2 flex flex-1 justify-end min-w-0">
                               <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_16_" aria-expanded="false">
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_16_" aria-expanded="false">
                                   {"CPA"}
-                                  <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                  <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -331,9 +331,9 @@ export function Pattern() {
                             <div className="-me-2 flex flex-1 justify-end min-w-0">
                               <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1b_" aria-expanded="false">
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_1b_" aria-expanded="false">
                                   {"ROAS"}
-                                  <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                  <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -347,9 +347,9 @@ export function Pattern() {
                             <div className="-me-2 flex flex-1 justify-end min-w-0">
                               <div className="-ms-2 flex gap-1.5 h-full items-center justify-between">
                                 <DropdownMenu>
-                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-haspopup="menu" id="base-ui-_r_1g_" aria-expanded="false">
+                                <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost data-[state=open]:bg-secondary data-[state=open]:text-foreground disabled:opacity-50 disabled:pointer-events-none font-normal group/button h-6 hover:bg-secondary hover:text-foreground inline-flex items-center justify-center outline-none px-2 select-none shrink-0 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-haspopup="menu" id="base-ui-_r_1g_" aria-expanded="false">
                                   {"New Buyers"}
-                                  <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                  <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -371,8 +371,8 @@ export function Pattern() {
                       <DataGridTableBody>
                         <tr className="[&:not(:last-child)>td]:border-b data-[row-status=deleted]:[&_td]:line-through data-[row-status=deleted]:bg-destructive/5 data-[row-status=deleted]:opacity-60 data-[row-status=dirty]:bg-amber-500/5 data-[row-status=new]:bg-green-500/5 data-[state=selected]:bg-muted/50 hover:bg-muted/40" data-row-id="cmp_x09qn">
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5" data-pinned="start" data-last-col="start" style={{width: "calc(var(--col-select-size) * 1px)"}}>
-                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_1i_" aria-checked="false" aria-label="Select row"></Checkbox>
-                            <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_1i_" aria-checked="false" aria-label="Select row"></Checkbox>
+                            <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                             <div className="flex gap-2.5 items-center min-w-0">
@@ -391,7 +391,7 @@ export function Pattern() {
                                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="shrink-0">
                                     <span className="flex gap-1.5 items-center min-w-0">
-                                      <img className="object-cover rounded-full shrink-0 size-4" alt="" width="16" height="16" loading="lazy" decoding="async" src="https://flagcdn.com/br.svg" />
+                                      <img className="object-cover rounded-full shrink-0 size-4" alt="" width={16} height={16} loading="lazy" decoding="async" src="https://flagcdn.com/br.svg" />
                                       <span className="font-mono text-xs" aria-hidden="true">
                                         {"BR"}
                                       </span>
@@ -439,42 +439,42 @@ export function Pattern() {
                               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-7 justify-center shrink-0 text-xs w-24" data-chart="chart-_r_1l_" aria-hidden="true">
                                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                                    <div className="recharts-wrapper" width="96" height="28" style={{position: "relative", cursor: "default", width: "96px", height: "28px"}}>
-                                      <svg className="recharts-surface" width="96" height="28" viewBox="0 0 96 28" style={{width: "100%", height: "100%", display: "block"}}>
+                                    <div className="recharts-wrapper" width={96} height={28} style={{position: "relative", cursor: "default", width: "96px", height: "28px"}}>
+                                      <svg className="recharts-surface" width={96} height={28} viewBox="0 0 96 28" style={{width: "100%", height: "100%", display: "block"}}>
                                         <title></title>
                                         <desc></desc>
-                                        <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                                        <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                                         <defs>
                                           <clippath id="recharts1-clip">
-                                            <rect x="1" y="3" height="24" width="92"></rect>
+                                            <rect x={1} y={3} height={24} width={92}></rect>
                                           </clippath>
                                         </defs>
-                                        <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                                        <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                                           <g className="recharts-area recharts-layer">
                                             <g className="recharts-layer">
                                               <g className="recharts-layer" clipPath="url(#animationClipPath-recharts-area-_r_4h_)">
                                                 <g className="recharts-layer">
-                                                  <path className="recharts-area-area recharts-curve" strokeWidth="1.5" fill="var(--color-conversions)" fillOpacity="0.12" height="24" stroke="none" width="92" id="recharts-area-_r_4h_" d="M1,22.241C2.057,21.121,3.115,20,4.172,18.931C5.23,17.862,6.287,16.552,7.345,15.828C8.402,15.103,9.46,15.414,10.517,14.586C11.575,13.759,12.632,4.034,13.69,4.034C14.747,4.034,15.805,8.69,16.862,10.034C17.92,11.379,18.977,12.103,20.034,12.103C21.092,12.103,22.149,11.586,23.207,11.069C24.264,10.552,25.322,9.724,26.379,9C27.437,8.276,28.494,7.414,29.552,6.724C30.609,6.034,31.667,4.862,32.724,4.862C33.782,4.862,34.839,6.828,35.897,7.552C36.954,8.276,38.011,8.621,39.069,9.207C40.126,9.793,41.184,11.069,42.241,11.069C43.299,11.069,44.356,3.414,45.414,3.414C46.471,3.414,47.529,9.414,48.586,9.828C49.644,10.241,50.701,10.448,51.759,10.448C52.816,10.448,53.874,3,54.931,3C55.989,3,57.046,3.759,58.103,5.276C59.161,6.793,60.218,12.103,61.276,12.103C62.333,12.103,63.391,11.483,64.448,11.483C65.506,11.483,66.563,12.31,67.621,12.31C68.678,12.31,69.736,3.966,70.793,3.828C71.851,3.69,72.908,3.621,73.966,3.621C75.023,3.621,76.08,10.931,77.138,11.897C78.195,12.862,79.253,13.207,80.31,13.345C81.368,13.483,82.425,13.552,83.483,13.552C84.54,13.552,85.598,12.103,86.655,12.103C87.713,12.103,88.77,12.931,89.828,12.931C90.885,12.931,91.943,10.552,93,8.172L93,27C91.943,27,90.885,27,89.828,27C88.77,27,87.713,27,86.655,27C85.598,27,84.54,27,83.483,27C82.425,27,81.368,27,80.31,27C79.253,27,78.195,27,77.138,27C76.08,27,75.023,27,73.966,27C72.908,27,71.851,27,70.793,27C69.736,27,68.678,27,67.621,27C66.563,27,65.506,27,64.448,27C63.391,27,62.333,27,61.276,27C60.218,27,59.161,27,58.103,27C57.046,27,55.989,27,54.931,27C53.874,27,52.816,27,51.759,27C50.701,27,49.644,27,48.586,27C47.529,27,46.471,27,45.414,27C44.356,27,43.299,27,42.241,27C41.184,27,40.126,27,39.069,27C38.011,27,36.954,27,35.897,27C34.839,27,33.782,27,32.724,27C31.667,27,30.609,27,29.552,27C28.494,27,27.437,27,26.379,27C25.322,27,24.264,27,23.207,27C22.149,27,21.092,27,20.034,27C18.977,27,17.92,27,16.862,27C15.805,27,14.747,27,13.69,27C12.632,27,11.575,27,10.517,27C9.46,27,8.402,27,7.345,27C6.287,27,5.23,27,4.172,27C3.115,27,2.057,27,1,27Z"></path>
-                                                  <path className="recharts-area-curve recharts-curve" strokeWidth="1.5" fill="none" fillOpacity="0.12" height="24" stroke="var(--color-conversions)" width="92" d="M1,22.241C2.057,21.121,3.115,20,4.172,18.931C5.23,17.862,6.287,16.552,7.345,15.828C8.402,15.103,9.46,15.414,10.517,14.586C11.575,13.759,12.632,4.034,13.69,4.034C14.747,4.034,15.805,8.69,16.862,10.034C17.92,11.379,18.977,12.103,20.034,12.103C21.092,12.103,22.149,11.586,23.207,11.069C24.264,10.552,25.322,9.724,26.379,9C27.437,8.276,28.494,7.414,29.552,6.724C30.609,6.034,31.667,4.862,32.724,4.862C33.782,4.862,34.839,6.828,35.897,7.552C36.954,8.276,38.011,8.621,39.069,9.207C40.126,9.793,41.184,11.069,42.241,11.069C43.299,11.069,44.356,3.414,45.414,3.414C46.471,3.414,47.529,9.414,48.586,9.828C49.644,10.241,50.701,10.448,51.759,10.448C52.816,10.448,53.874,3,54.931,3C55.989,3,57.046,3.759,58.103,5.276C59.161,6.793,60.218,12.103,61.276,12.103C62.333,12.103,63.391,11.483,64.448,11.483C65.506,11.483,66.563,12.31,67.621,12.31C68.678,12.31,69.736,3.966,70.793,3.828C71.851,3.69,72.908,3.621,73.966,3.621C75.023,3.621,76.08,10.931,77.138,11.897C78.195,12.862,79.253,13.207,80.31,13.345C81.368,13.483,82.425,13.552,83.483,13.552C84.54,13.552,85.598,12.103,86.655,12.103C87.713,12.103,88.77,12.931,89.828,12.931C90.885,12.931,91.943,10.552,93,8.172"></path>
+                                                  <path className="recharts-area-area recharts-curve" strokeWidth={1.5} fill="var(--color-conversions)" fillOpacity={0.12} height={24} stroke="none" width={92} id="recharts-area-_r_4h_" d="M1,22.241C2.057,21.121,3.115,20,4.172,18.931C5.23,17.862,6.287,16.552,7.345,15.828C8.402,15.103,9.46,15.414,10.517,14.586C11.575,13.759,12.632,4.034,13.69,4.034C14.747,4.034,15.805,8.69,16.862,10.034C17.92,11.379,18.977,12.103,20.034,12.103C21.092,12.103,22.149,11.586,23.207,11.069C24.264,10.552,25.322,9.724,26.379,9C27.437,8.276,28.494,7.414,29.552,6.724C30.609,6.034,31.667,4.862,32.724,4.862C33.782,4.862,34.839,6.828,35.897,7.552C36.954,8.276,38.011,8.621,39.069,9.207C40.126,9.793,41.184,11.069,42.241,11.069C43.299,11.069,44.356,3.414,45.414,3.414C46.471,3.414,47.529,9.414,48.586,9.828C49.644,10.241,50.701,10.448,51.759,10.448C52.816,10.448,53.874,3,54.931,3C55.989,3,57.046,3.759,58.103,5.276C59.161,6.793,60.218,12.103,61.276,12.103C62.333,12.103,63.391,11.483,64.448,11.483C65.506,11.483,66.563,12.31,67.621,12.31C68.678,12.31,69.736,3.966,70.793,3.828C71.851,3.69,72.908,3.621,73.966,3.621C75.023,3.621,76.08,10.931,77.138,11.897C78.195,12.862,79.253,13.207,80.31,13.345C81.368,13.483,82.425,13.552,83.483,13.552C84.54,13.552,85.598,12.103,86.655,12.103C87.713,12.103,88.77,12.931,89.828,12.931C90.885,12.931,91.943,10.552,93,8.172L93,27C91.943,27,90.885,27,89.828,27C88.77,27,87.713,27,86.655,27C85.598,27,84.54,27,83.483,27C82.425,27,81.368,27,80.31,27C79.253,27,78.195,27,77.138,27C76.08,27,75.023,27,73.966,27C72.908,27,71.851,27,70.793,27C69.736,27,68.678,27,67.621,27C66.563,27,65.506,27,64.448,27C63.391,27,62.333,27,61.276,27C60.218,27,59.161,27,58.103,27C57.046,27,55.989,27,54.931,27C53.874,27,52.816,27,51.759,27C50.701,27,49.644,27,48.586,27C47.529,27,46.471,27,45.414,27C44.356,27,43.299,27,42.241,27C41.184,27,40.126,27,39.069,27C38.011,27,36.954,27,35.897,27C34.839,27,33.782,27,32.724,27C31.667,27,30.609,27,29.552,27C28.494,27,27.437,27,26.379,27C25.322,27,24.264,27,23.207,27C22.149,27,21.092,27,20.034,27C18.977,27,17.92,27,16.862,27C15.805,27,14.747,27,13.69,27C12.632,27,11.575,27,10.517,27C9.46,27,8.402,27,7.345,27C6.287,27,5.23,27,4.172,27C3.115,27,2.057,27,1,27Z"></path>
+                                                  <path className="recharts-area-curve recharts-curve" strokeWidth={1.5} fill="none" fillOpacity={0.12} height={24} stroke="var(--color-conversions)" width={92} d="M1,22.241C2.057,21.121,3.115,20,4.172,18.931C5.23,17.862,6.287,16.552,7.345,15.828C8.402,15.103,9.46,15.414,10.517,14.586C11.575,13.759,12.632,4.034,13.69,4.034C14.747,4.034,15.805,8.69,16.862,10.034C17.92,11.379,18.977,12.103,20.034,12.103C21.092,12.103,22.149,11.586,23.207,11.069C24.264,10.552,25.322,9.724,26.379,9C27.437,8.276,28.494,7.414,29.552,6.724C30.609,6.034,31.667,4.862,32.724,4.862C33.782,4.862,34.839,6.828,35.897,7.552C36.954,8.276,38.011,8.621,39.069,9.207C40.126,9.793,41.184,11.069,42.241,11.069C43.299,11.069,44.356,3.414,45.414,3.414C46.471,3.414,47.529,9.414,48.586,9.828C49.644,10.241,50.701,10.448,51.759,10.448C52.816,10.448,53.874,3,54.931,3C55.989,3,57.046,3.759,58.103,5.276C59.161,6.793,60.218,12.103,61.276,12.103C62.333,12.103,63.391,11.483,64.448,11.483C65.506,11.483,66.563,12.31,67.621,12.31C68.678,12.31,69.736,3.966,70.793,3.828C71.851,3.69,72.908,3.621,73.966,3.621C75.023,3.621,76.08,10.931,77.138,11.897C78.195,12.862,79.253,13.207,80.31,13.345C81.368,13.483,82.425,13.552,83.483,13.552C84.54,13.552,85.598,12.103,86.655,12.103C87.713,12.103,88.77,12.931,89.828,12.931C90.885,12.931,91.943,10.552,93,8.172"></path>
                                                 </g>
                                               </g>
                                             </g>
                                           </g>
                                         </g>
-                                        <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_400" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_500" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_600" tabIndex="-1">
+                                        <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_400" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_500" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_600" tabIndex={-1}>
                                           <g className="recharts-layer recharts-reference-dot">
-                                            <circle className="recharts-dot recharts-reference-dot-dot" x="29" y="91" r="2" fill="var(--color-conversions)" stroke="none" fillOpacity="1" strokeWidth="1" cx="93" cy="8.17241379310345"></circle>
+                                            <circle className="recharts-dot recharts-reference-dot-dot" x={29} y={91} r={2} fill="var(--color-conversions)" stroke="none" fillOpacity={1} strokeWidth={1} cx={93} cy={8.17241379310345}></circle>
                                           </g>
                                         </g>
-                                        <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_2000" tabIndex="-1"></g>
+                                        <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_2000" tabIndex={-1}></g>
                                       </svg>
                                     </div>
                                   </div>
@@ -526,11 +526,11 @@ export function Pattern() {
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) ps-(--frame-panel-header-px) px-2 py-1.5" data-pinned="end" data-last-col="end" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
                             <div className="flex justify-center">
                               <DropdownMenu>
-                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" rowActions="cmp_x09qn" aria-label="Actions for Glacier Gloves Price Drop" aria-haspopup="menu" id="base-ui-_r_1p_" aria-expanded="false">
-                                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                  <circle cx="12" cy="12" r="1"></circle>
-                                  <circle cx="19" cy="12" r="1"></circle>
-                                  <circle cx="5" cy="12" r="1"></circle>
+                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} rowActions="cmp_x09qn" aria-label="Actions for Glacier Gloves Price Drop" aria-haspopup="menu" id="base-ui-_r_1p_" aria-expanded="false">
+                                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                  <circle cx={12} cy={12} r={1}></circle>
+                                  <circle cx={19} cy={12} r={1}></circle>
+                                  <circle cx={5} cy={12} r={1}></circle>
                                 </svg>
                               </DropdownMenuTrigger>
                               </DropdownMenu>
@@ -539,8 +539,8 @@ export function Pattern() {
                         </tr>
                         <tr className="[&:not(:last-child)>td]:border-b data-[row-status=deleted]:[&_td]:line-through data-[row-status=deleted]:bg-destructive/5 data-[row-status=deleted]:opacity-60 data-[row-status=dirty]:bg-amber-500/5 data-[row-status=new]:bg-green-500/5 data-[state=selected]:bg-muted/50 hover:bg-muted/40" data-row-id="cmp_iv0f8">
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5" data-pinned="start" data-last-col="start" style={{width: "calc(var(--col-select-size) * 1px)"}}>
-                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_1r_" aria-checked="false" aria-label="Select row"></Checkbox>
-                            <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_1r_" aria-checked="false" aria-label="Select row"></Checkbox>
+                            <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                             <div className="flex gap-2.5 items-center min-w-0">
@@ -559,7 +559,7 @@ export function Pattern() {
                                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="shrink-0">
                                     <span className="flex gap-1.5 items-center min-w-0">
-                                      <img className="object-cover rounded-full shrink-0 size-4" alt="" width="16" height="16" loading="lazy" decoding="async" src="https://flagcdn.com/mx.svg" />
+                                      <img className="object-cover rounded-full shrink-0 size-4" alt="" width={16} height={16} loading="lazy" decoding="async" src="https://flagcdn.com/mx.svg" />
                                       <span className="font-mono text-xs" aria-hidden="true">
                                         {"MX"}
                                       </span>
@@ -607,42 +607,42 @@ export function Pattern() {
                               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-7 justify-center shrink-0 text-xs w-24" data-chart="chart-_r_1u_" aria-hidden="true">
                                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                                    <div className="recharts-wrapper" width="96" height="28" style={{position: "relative", cursor: "default", width: "96px", height: "28px"}}>
-                                      <svg className="recharts-surface" width="96" height="28" viewBox="0 0 96 28" style={{width: "100%", height: "100%", display: "block"}}>
+                                    <div className="recharts-wrapper" width={96} height={28} style={{position: "relative", cursor: "default", width: "96px", height: "28px"}}>
+                                      <svg className="recharts-surface" width={96} height={28} viewBox="0 0 96 28" style={{width: "100%", height: "100%", display: "block"}}>
                                         <title></title>
                                         <desc></desc>
-                                        <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                                        <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                                         <defs>
                                           <clippath id="recharts2-clip">
-                                            <rect x="1" y="3" height="24" width="92"></rect>
+                                            <rect x={1} y={3} height={24} width={92}></rect>
                                           </clippath>
                                         </defs>
-                                        <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                                        <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                                           <g className="recharts-area recharts-layer">
                                             <g className="recharts-layer">
                                               <g className="recharts-layer" clipPath="url(#animationClipPath-recharts-area-_r_4i_)">
                                                 <g className="recharts-layer">
-                                                  <path className="recharts-area-area recharts-curve" strokeWidth="1.5" fill="var(--color-conversions)" fillOpacity="0.12" height="24" stroke="none" width="92" id="recharts-area-_r_4i_" d="M1,24.423C2.057,24.181,3.115,23.94,4.172,22.973C5.23,22.007,6.287,19.671,7.345,18.624C8.402,17.577,9.46,17.55,10.517,16.691C11.575,15.832,12.632,13.47,13.69,13.47C14.747,13.47,15.805,15.94,16.862,16.369C17.92,16.799,18.977,17.013,20.034,17.013C21.092,17.013,22.149,12.02,23.207,12.02C24.264,12.02,25.322,13.631,26.379,13.631C27.437,13.631,28.494,12.181,29.552,11.376C30.609,10.57,31.667,8.799,32.724,8.799C33.782,8.799,34.839,9.067,35.897,9.604C36.954,10.141,38.011,15.403,39.069,15.403C40.126,15.403,41.184,13.819,42.241,12.987C43.299,12.154,44.356,10.409,45.414,10.409C46.471,10.409,47.529,12.181,48.586,12.181C49.644,12.181,50.701,11.376,51.759,9.926C52.816,8.477,53.874,3.483,54.931,3.483C55.989,3.483,57.046,11.537,58.103,11.537C59.161,11.537,60.218,7.832,61.276,7.832C62.333,7.832,63.391,12.342,64.448,12.342C65.506,12.342,66.563,9.443,67.621,9.443C68.678,9.443,69.736,9.443,70.793,9.443C71.851,9.443,72.908,3,73.966,3C75.023,3,76.08,10.57,77.138,10.57C78.195,10.57,79.253,4.772,80.31,4.772C81.368,4.772,82.425,6.651,83.483,7.671C84.54,8.691,85.598,9.926,86.655,10.893C87.713,11.859,88.77,13.47,89.828,13.47C90.885,13.47,91.943,11.134,93,8.799L93,27C91.943,27,90.885,27,89.828,27C88.77,27,87.713,27,86.655,27C85.598,27,84.54,27,83.483,27C82.425,27,81.368,27,80.31,27C79.253,27,78.195,27,77.138,27C76.08,27,75.023,27,73.966,27C72.908,27,71.851,27,70.793,27C69.736,27,68.678,27,67.621,27C66.563,27,65.506,27,64.448,27C63.391,27,62.333,27,61.276,27C60.218,27,59.161,27,58.103,27C57.046,27,55.989,27,54.931,27C53.874,27,52.816,27,51.759,27C50.701,27,49.644,27,48.586,27C47.529,27,46.471,27,45.414,27C44.356,27,43.299,27,42.241,27C41.184,27,40.126,27,39.069,27C38.011,27,36.954,27,35.897,27C34.839,27,33.782,27,32.724,27C31.667,27,30.609,27,29.552,27C28.494,27,27.437,27,26.379,27C25.322,27,24.264,27,23.207,27C22.149,27,21.092,27,20.034,27C18.977,27,17.92,27,16.862,27C15.805,27,14.747,27,13.69,27C12.632,27,11.575,27,10.517,27C9.46,27,8.402,27,7.345,27C6.287,27,5.23,27,4.172,27C3.115,27,2.057,27,1,27Z"></path>
-                                                  <path className="recharts-area-curve recharts-curve" strokeWidth="1.5" fill="none" fillOpacity="0.12" height="24" stroke="var(--color-conversions)" width="92" d="M1,24.423C2.057,24.181,3.115,23.94,4.172,22.973C5.23,22.007,6.287,19.671,7.345,18.624C8.402,17.577,9.46,17.55,10.517,16.691C11.575,15.832,12.632,13.47,13.69,13.47C14.747,13.47,15.805,15.94,16.862,16.369C17.92,16.799,18.977,17.013,20.034,17.013C21.092,17.013,22.149,12.02,23.207,12.02C24.264,12.02,25.322,13.631,26.379,13.631C27.437,13.631,28.494,12.181,29.552,11.376C30.609,10.57,31.667,8.799,32.724,8.799C33.782,8.799,34.839,9.067,35.897,9.604C36.954,10.141,38.011,15.403,39.069,15.403C40.126,15.403,41.184,13.819,42.241,12.987C43.299,12.154,44.356,10.409,45.414,10.409C46.471,10.409,47.529,12.181,48.586,12.181C49.644,12.181,50.701,11.376,51.759,9.926C52.816,8.477,53.874,3.483,54.931,3.483C55.989,3.483,57.046,11.537,58.103,11.537C59.161,11.537,60.218,7.832,61.276,7.832C62.333,7.832,63.391,12.342,64.448,12.342C65.506,12.342,66.563,9.443,67.621,9.443C68.678,9.443,69.736,9.443,70.793,9.443C71.851,9.443,72.908,3,73.966,3C75.023,3,76.08,10.57,77.138,10.57C78.195,10.57,79.253,4.772,80.31,4.772C81.368,4.772,82.425,6.651,83.483,7.671C84.54,8.691,85.598,9.926,86.655,10.893C87.713,11.859,88.77,13.47,89.828,13.47C90.885,13.47,91.943,11.134,93,8.799"></path>
+                                                  <path className="recharts-area-area recharts-curve" strokeWidth={1.5} fill="var(--color-conversions)" fillOpacity={0.12} height={24} stroke="none" width={92} id="recharts-area-_r_4i_" d="M1,24.423C2.057,24.181,3.115,23.94,4.172,22.973C5.23,22.007,6.287,19.671,7.345,18.624C8.402,17.577,9.46,17.55,10.517,16.691C11.575,15.832,12.632,13.47,13.69,13.47C14.747,13.47,15.805,15.94,16.862,16.369C17.92,16.799,18.977,17.013,20.034,17.013C21.092,17.013,22.149,12.02,23.207,12.02C24.264,12.02,25.322,13.631,26.379,13.631C27.437,13.631,28.494,12.181,29.552,11.376C30.609,10.57,31.667,8.799,32.724,8.799C33.782,8.799,34.839,9.067,35.897,9.604C36.954,10.141,38.011,15.403,39.069,15.403C40.126,15.403,41.184,13.819,42.241,12.987C43.299,12.154,44.356,10.409,45.414,10.409C46.471,10.409,47.529,12.181,48.586,12.181C49.644,12.181,50.701,11.376,51.759,9.926C52.816,8.477,53.874,3.483,54.931,3.483C55.989,3.483,57.046,11.537,58.103,11.537C59.161,11.537,60.218,7.832,61.276,7.832C62.333,7.832,63.391,12.342,64.448,12.342C65.506,12.342,66.563,9.443,67.621,9.443C68.678,9.443,69.736,9.443,70.793,9.443C71.851,9.443,72.908,3,73.966,3C75.023,3,76.08,10.57,77.138,10.57C78.195,10.57,79.253,4.772,80.31,4.772C81.368,4.772,82.425,6.651,83.483,7.671C84.54,8.691,85.598,9.926,86.655,10.893C87.713,11.859,88.77,13.47,89.828,13.47C90.885,13.47,91.943,11.134,93,8.799L93,27C91.943,27,90.885,27,89.828,27C88.77,27,87.713,27,86.655,27C85.598,27,84.54,27,83.483,27C82.425,27,81.368,27,80.31,27C79.253,27,78.195,27,77.138,27C76.08,27,75.023,27,73.966,27C72.908,27,71.851,27,70.793,27C69.736,27,68.678,27,67.621,27C66.563,27,65.506,27,64.448,27C63.391,27,62.333,27,61.276,27C60.218,27,59.161,27,58.103,27C57.046,27,55.989,27,54.931,27C53.874,27,52.816,27,51.759,27C50.701,27,49.644,27,48.586,27C47.529,27,46.471,27,45.414,27C44.356,27,43.299,27,42.241,27C41.184,27,40.126,27,39.069,27C38.011,27,36.954,27,35.897,27C34.839,27,33.782,27,32.724,27C31.667,27,30.609,27,29.552,27C28.494,27,27.437,27,26.379,27C25.322,27,24.264,27,23.207,27C22.149,27,21.092,27,20.034,27C18.977,27,17.92,27,16.862,27C15.805,27,14.747,27,13.69,27C12.632,27,11.575,27,10.517,27C9.46,27,8.402,27,7.345,27C6.287,27,5.23,27,4.172,27C3.115,27,2.057,27,1,27Z"></path>
+                                                  <path className="recharts-area-curve recharts-curve" strokeWidth={1.5} fill="none" fillOpacity={0.12} height={24} stroke="var(--color-conversions)" width={92} d="M1,24.423C2.057,24.181,3.115,23.94,4.172,22.973C5.23,22.007,6.287,19.671,7.345,18.624C8.402,17.577,9.46,17.55,10.517,16.691C11.575,15.832,12.632,13.47,13.69,13.47C14.747,13.47,15.805,15.94,16.862,16.369C17.92,16.799,18.977,17.013,20.034,17.013C21.092,17.013,22.149,12.02,23.207,12.02C24.264,12.02,25.322,13.631,26.379,13.631C27.437,13.631,28.494,12.181,29.552,11.376C30.609,10.57,31.667,8.799,32.724,8.799C33.782,8.799,34.839,9.067,35.897,9.604C36.954,10.141,38.011,15.403,39.069,15.403C40.126,15.403,41.184,13.819,42.241,12.987C43.299,12.154,44.356,10.409,45.414,10.409C46.471,10.409,47.529,12.181,48.586,12.181C49.644,12.181,50.701,11.376,51.759,9.926C52.816,8.477,53.874,3.483,54.931,3.483C55.989,3.483,57.046,11.537,58.103,11.537C59.161,11.537,60.218,7.832,61.276,7.832C62.333,7.832,63.391,12.342,64.448,12.342C65.506,12.342,66.563,9.443,67.621,9.443C68.678,9.443,69.736,9.443,70.793,9.443C71.851,9.443,72.908,3,73.966,3C75.023,3,76.08,10.57,77.138,10.57C78.195,10.57,79.253,4.772,80.31,4.772C81.368,4.772,82.425,6.651,83.483,7.671C84.54,8.691,85.598,9.926,86.655,10.893C87.713,11.859,88.77,13.47,89.828,13.47C90.885,13.47,91.943,11.134,93,8.799"></path>
                                                 </g>
                                               </g>
                                             </g>
                                           </g>
                                         </g>
-                                        <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_400" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_500" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_600" tabIndex="-1">
+                                        <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_400" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_500" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_600" tabIndex={-1}>
                                           <g className="recharts-layer recharts-reference-dot">
-                                            <circle className="recharts-dot recharts-reference-dot-dot" x="29" y="113" r="2" fill="var(--color-conversions)" stroke="none" fillOpacity="1" strokeWidth="1" cx="93" cy="8.798657718120806"></circle>
+                                            <circle className="recharts-dot recharts-reference-dot-dot" x={29} y={113} r={2} fill="var(--color-conversions)" stroke="none" fillOpacity={1} strokeWidth={1} cx={93} cy={8.798657718120806}></circle>
                                           </g>
                                         </g>
-                                        <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_2000" tabIndex="-1"></g>
+                                        <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_2000" tabIndex={-1}></g>
                                       </svg>
                                     </div>
                                   </div>
@@ -694,11 +694,11 @@ export function Pattern() {
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) ps-(--frame-panel-header-px) px-2 py-1.5" data-pinned="end" data-last-col="end" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
                             <div className="flex justify-center">
                               <DropdownMenu>
-                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" rowActions="cmp_iv0f8" aria-label="Actions for Ember Stove Creator Cuts" aria-haspopup="menu" id="base-ui-_r_22_" aria-expanded="false">
-                                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                  <circle cx="12" cy="12" r="1"></circle>
-                                  <circle cx="19" cy="12" r="1"></circle>
-                                  <circle cx="5" cy="12" r="1"></circle>
+                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} rowActions="cmp_iv0f8" aria-label="Actions for Ember Stove Creator Cuts" aria-haspopup="menu" id="base-ui-_r_22_" aria-expanded="false">
+                                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                  <circle cx={12} cy={12} r={1}></circle>
+                                  <circle cx={19} cy={12} r={1}></circle>
+                                  <circle cx={5} cy={12} r={1}></circle>
                                 </svg>
                               </DropdownMenuTrigger>
                               </DropdownMenu>
@@ -707,8 +707,8 @@ export function Pattern() {
                         </tr>
                         <tr className="[&:not(:last-child)>td]:border-b data-[row-status=deleted]:[&_td]:line-through data-[row-status=deleted]:bg-destructive/5 data-[row-status=deleted]:opacity-60 data-[row-status=dirty]:bg-amber-500/5 data-[row-status=new]:bg-green-500/5 data-[state=selected]:bg-muted/50 hover:bg-muted/40" data-row-id="cmp_nkrj1">
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5" data-pinned="start" data-last-col="start" style={{width: "calc(var(--col-select-size) * 1px)"}}>
-                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_24_" aria-checked="false" aria-label="Select row"></Checkbox>
-                            <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_24_" aria-checked="false" aria-label="Select row"></Checkbox>
+                            <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                             <div className="flex gap-2.5 items-center min-w-0">
@@ -716,8 +716,8 @@ export function Pattern() {
                                 <svg aria-hidden="true" xmlns:xlink="http://www.w3.org/1999/xlink" xmlSpace="preserve" overflow="hidden" viewBox="0 0 268.152 273.883">
                                   <defs>
                                     <lineargradient id="a">
-                                      <stop offset="0" stopColor="#0fbc5c"></stop>
-                                      <stop offset="1" stopColor="#0cba65"></stop>
+                                      <stop offset={0} stopColor="#0fbc5c"></stop>
+                                      <stop offset={1} stopColor="#0cba65"></stop>
                                     </lineargradient>
                                     <lineargradient id="g">
                                       <stop offset=".231" stopColor="#0fbc5f"></stop>
@@ -729,7 +729,7 @@ export function Pattern() {
                                       <stop offset=".771" stopColor="#38c02b"></stop>
                                       <stop offset=".861" stopColor="#52c218"></stop>
                                       <stop offset=".915" stopColor="#67c30f"></stop>
-                                      <stop offset="1" stopColor="#86c504"></stop>
+                                      <stop offset={1} stopColor="#86c504"></stop>
                                     </lineargradient>
                                     <lineargradient id="h">
                                       <stop offset=".142" stopColor="#1abd4d"></stop>
@@ -748,7 +748,7 @@ export function Pattern() {
                                       <stop offset=".604" stopColor="#ff692c"></stop>
                                       <stop offset=".727" stopColor="#ff7825"></stop>
                                       <stop offset=".885" stopColor="#ff8d1b"></stop>
-                                      <stop offset="1" stopColor="#ff9f13"></stop>
+                                      <stop offset={1} stopColor="#ff9f13"></stop>
                                     </lineargradient>
                                     <lineargradient id="b">
                                       <stop offset=".231" stopColor="#ff4541"></stop>
@@ -758,11 +758,11 @@ export function Pattern() {
                                       <stop offset=".699" stopColor="#ff5138"></stop>
                                       <stop offset=".771" stopColor="#ff5b33"></stop>
                                       <stop offset=".861" stopColor="#ff6c29"></stop>
-                                      <stop offset="1" stopColor="#ff8c18"></stop>
+                                      <stop offset={1} stopColor="#ff8c18"></stop>
                                     </lineargradient>
                                     <lineargradient id="d">
                                       <stop offset=".408" stopColor="#fb4e5a"></stop>
-                                      <stop offset="1" stopColor="#ff4540"></stop>
+                                      <stop offset={1} stopColor="#ff4540"></stop>
                                     </lineargradient>
                                     <lineargradient id="c">
                                       <stop offset=".132" stopColor="#0cba65"></stop>
@@ -783,20 +783,20 @@ export function Pattern() {
                                       <stop offset=".771" stopColor="#ffcd0a"></stop>
                                       <stop offset=".861" stopColor="#fecf0a"></stop>
                                       <stop offset=".915" stopColor="#fecf08"></stop>
-                                      <stop offset="1" stopColor="#fdcd01"></stop>
+                                      <stop offset={1} stopColor="#fdcd01"></stop>
                                     </lineargradient>
-                                    <lineargradient xlinkHref="#a" id="s" x1="219.7" x2="254.467" y1="329.535" y2="329.535" gradientUnits="userSpaceOnUse"></lineargradient>
-                                    <radialgradient xlinkHref="#b" id="m" cx="109.627" cy="135.862" r="71.46" fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 1.043 1.45573 2.55542 290.525 -400.634)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                    <radialgradient xlinkHref="#c" id="n" cx="45.259" cy="279.274" r="71.46" fx="45.259" fy="279.274" gradientTransform="matrix(-3.5126 -4.45809 -1.69255 1.26062 870.8 191.554)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                    <radialgradient xlinkHref="#d" id="l" cx="304.017" cy="118.009" r="47.854" fx="304.017" fy="118.009" gradientTransform="matrix(2.06435 0 0 2.59204 -297.679 -151.747)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                    <radialgradient xlinkHref="#e" id="o" cx="181.001" cy="177.201" r="71.46" fx="181.001" fy="177.201" gradientTransform="matrix(-.24858 2.08314 2.96249 .33417 -255.146 -331.164)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                    <radialgradient xlinkHref="#f" id="p" cx="207.673" cy="108.097" r="41.102" fx="207.673" fy="108.097" gradientTransform="matrix(-1.2492 1.34326 -3.89684 -3.4257 880.501 194.905)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                    <radialgradient xlinkHref="#g" id="r" cx="109.627" cy="135.862" r="71.46" fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 -1.043 1.45573 -2.55542 290.525 838.683)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                    <radialgradient xlinkHref="#h" id="j" cx="154.87" cy="145.969" r="71.46" fx="154.87" fy="145.969" gradientTransform="matrix(-.0814 -1.93722 2.92674 -.11625 -215.135 632.86)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                    <filter id="q" width="1.097" height="1.116" x="-.048" y="-.058" color-interpolation-filters="sRGB">
+                                    <lineargradient xlinkHref="#a" id="s" x1={219.7} x2={254.467} y1={329.535} y2={329.535} gradientUnits="userSpaceOnUse"></lineargradient>
+                                    <radialgradient xlinkHref="#b" id="m" cx={109.627} cy={135.862} r={71.46} fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 1.043 1.45573 2.55542 290.525 -400.634)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                    <radialgradient xlinkHref="#c" id="n" cx={45.259} cy={279.274} r={71.46} fx="45.259" fy="279.274" gradientTransform="matrix(-3.5126 -4.45809 -1.69255 1.26062 870.8 191.554)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                    <radialgradient xlinkHref="#d" id="l" cx={304.017} cy={118.009} r={47.854} fx="304.017" fy="118.009" gradientTransform="matrix(2.06435 0 0 2.59204 -297.679 -151.747)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                    <radialgradient xlinkHref="#e" id="o" cx={181.001} cy={177.201} r={71.46} fx="181.001" fy="177.201" gradientTransform="matrix(-.24858 2.08314 2.96249 .33417 -255.146 -331.164)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                    <radialgradient xlinkHref="#f" id="p" cx={207.673} cy={108.097} r={41.102} fx="207.673" fy="108.097" gradientTransform="matrix(-1.2492 1.34326 -3.89684 -3.4257 880.501 194.905)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                    <radialgradient xlinkHref="#g" id="r" cx={109.627} cy={135.862} r={71.46} fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 -1.043 1.45573 -2.55542 290.525 838.683)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                    <radialgradient xlinkHref="#h" id="j" cx={154.87} cy={145.969} r={71.46} fx="154.87" fy="145.969" gradientTransform="matrix(-.0814 -1.93722 2.92674 -.11625 -215.135 632.86)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                    <filter id="q" width={1.097} height={1.116} x="-.048" y="-.058" color-interpolation-filters="sRGB">
                                       <fegaussianblur stdDeviation="1.701"></fegaussianblur>
                                     </filter>
-                                    <filter id="k" width="1.033" height="1.02" x="-.017" y="-.01" color-interpolation-filters="sRGB">
+                                    <filter id="k" width={1.033} height={1.02} x="-.017" y="-.01" color-interpolation-filters="sRGB">
                                       <fegaussianblur stdDeviation=".242"></fegaussianblur>
                                     </filter>
                                     <clippath id="i" clippathunits="userSpaceOnUse">
@@ -823,7 +823,7 @@ export function Pattern() {
                                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="shrink-0">
                                     <span className="flex gap-1.5 items-center min-w-0">
-                                      <img className="object-cover rounded-full shrink-0 size-4" alt="" width="16" height="16" loading="lazy" decoding="async" src="https://flagcdn.com/fr.svg" />
+                                      <img className="object-cover rounded-full shrink-0 size-4" alt="" width={16} height={16} loading="lazy" decoding="async" src="https://flagcdn.com/fr.svg" />
                                       <span className="font-mono text-xs" aria-hidden="true">
                                         {"FR"}
                                       </span>
@@ -871,42 +871,42 @@ export function Pattern() {
                               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-7 justify-center shrink-0 text-xs w-24" data-chart="chart-_r_27_" aria-hidden="true">
                                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                                    <div className="recharts-wrapper" width="96" height="28" style={{position: "relative", cursor: "default", width: "96px", height: "28px"}}>
-                                      <svg className="recharts-surface" width="96" height="28" viewBox="0 0 96 28" style={{width: "100%", height: "100%", display: "block"}}>
+                                    <div className="recharts-wrapper" width={96} height={28} style={{position: "relative", cursor: "default", width: "96px", height: "28px"}}>
+                                      <svg className="recharts-surface" width={96} height={28} viewBox="0 0 96 28" style={{width: "100%", height: "100%", display: "block"}}>
                                         <title></title>
                                         <desc></desc>
-                                        <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                                        <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                                         <defs>
                                           <clippath id="recharts3-clip">
-                                            <rect x="1" y="3" height="24" width="92"></rect>
+                                            <rect x={1} y={3} height={24} width={92}></rect>
                                           </clippath>
                                         </defs>
-                                        <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                                        <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                                           <g className="recharts-area recharts-layer">
                                             <g className="recharts-layer">
                                               <g className="recharts-layer" clipPath="url(#animationClipPath-recharts-area-_r_4j_)">
                                                 <g className="recharts-layer">
-                                                  <path className="recharts-area-area recharts-curve" strokeWidth="1.5" fill="var(--color-conversions)" fillOpacity="0.12" height="24" stroke="none" width="92" id="recharts-area-_r_4j_" d="M1,23.88C2.057,22.94,3.115,22,4.172,20.36C5.23,18.72,6.287,14.04,7.345,14.04C8.402,14.04,9.46,14.2,10.517,14.2C11.575,14.2,12.632,3,13.69,3C14.747,3,15.805,10.6,16.862,10.6C17.92,10.6,18.977,10.12,20.034,10.12C21.092,10.12,22.149,11.48,23.207,11.48C24.264,11.48,25.322,10.4,26.379,10.04C27.437,9.68,28.494,9.32,29.552,9.32C30.609,9.32,31.667,12.36,32.724,12.36C33.782,12.36,34.839,4.92,35.897,4.92C36.954,4.92,38.011,13.64,39.069,14.28C40.126,14.92,41.184,15.24,42.241,15.24C43.299,15.24,44.356,14.093,45.414,13.24C46.471,12.387,47.529,10.947,48.586,10.12C49.644,9.293,50.701,8.28,51.759,8.28C52.816,8.28,53.874,13,54.931,13C55.989,13,57.046,11.96,58.103,11.96C59.161,11.96,60.218,12.253,61.276,12.84C62.333,13.427,63.391,17.56,64.448,17.56C65.506,17.56,66.563,17.187,67.621,16.44C68.678,15.693,69.736,11.88,70.793,11.88C71.851,11.88,72.908,13.72,73.966,13.72C75.023,13.72,76.08,10.387,77.138,10.28C78.195,10.173,79.253,10.12,80.31,10.12C81.368,10.12,82.425,10.227,83.483,10.44C84.54,10.653,85.598,15.48,86.655,16.12C87.713,16.76,88.77,16.867,89.828,17.08C90.885,17.293,91.943,17.347,93,17.4L93,27C91.943,27,90.885,27,89.828,27C88.77,27,87.713,27,86.655,27C85.598,27,84.54,27,83.483,27C82.425,27,81.368,27,80.31,27C79.253,27,78.195,27,77.138,27C76.08,27,75.023,27,73.966,27C72.908,27,71.851,27,70.793,27C69.736,27,68.678,27,67.621,27C66.563,27,65.506,27,64.448,27C63.391,27,62.333,27,61.276,27C60.218,27,59.161,27,58.103,27C57.046,27,55.989,27,54.931,27C53.874,27,52.816,27,51.759,27C50.701,27,49.644,27,48.586,27C47.529,27,46.471,27,45.414,27C44.356,27,43.299,27,42.241,27C41.184,27,40.126,27,39.069,27C38.011,27,36.954,27,35.897,27C34.839,27,33.782,27,32.724,27C31.667,27,30.609,27,29.552,27C28.494,27,27.437,27,26.379,27C25.322,27,24.264,27,23.207,27C22.149,27,21.092,27,20.034,27C18.977,27,17.92,27,16.862,27C15.805,27,14.747,27,13.69,27C12.632,27,11.575,27,10.517,27C9.46,27,8.402,27,7.345,27C6.287,27,5.23,27,4.172,27C3.115,27,2.057,27,1,27Z"></path>
-                                                  <path className="recharts-area-curve recharts-curve" strokeWidth="1.5" fill="none" fillOpacity="0.12" height="24" stroke="var(--color-conversions)" width="92" d="M1,23.88C2.057,22.94,3.115,22,4.172,20.36C5.23,18.72,6.287,14.04,7.345,14.04C8.402,14.04,9.46,14.2,10.517,14.2C11.575,14.2,12.632,3,13.69,3C14.747,3,15.805,10.6,16.862,10.6C17.92,10.6,18.977,10.12,20.034,10.12C21.092,10.12,22.149,11.48,23.207,11.48C24.264,11.48,25.322,10.4,26.379,10.04C27.437,9.68,28.494,9.32,29.552,9.32C30.609,9.32,31.667,12.36,32.724,12.36C33.782,12.36,34.839,4.92,35.897,4.92C36.954,4.92,38.011,13.64,39.069,14.28C40.126,14.92,41.184,15.24,42.241,15.24C43.299,15.24,44.356,14.093,45.414,13.24C46.471,12.387,47.529,10.947,48.586,10.12C49.644,9.293,50.701,8.28,51.759,8.28C52.816,8.28,53.874,13,54.931,13C55.989,13,57.046,11.96,58.103,11.96C59.161,11.96,60.218,12.253,61.276,12.84C62.333,13.427,63.391,17.56,64.448,17.56C65.506,17.56,66.563,17.187,67.621,16.44C68.678,15.693,69.736,11.88,70.793,11.88C71.851,11.88,72.908,13.72,73.966,13.72C75.023,13.72,76.08,10.387,77.138,10.28C78.195,10.173,79.253,10.12,80.31,10.12C81.368,10.12,82.425,10.227,83.483,10.44C84.54,10.653,85.598,15.48,86.655,16.12C87.713,16.76,88.77,16.867,89.828,17.08C90.885,17.293,91.943,17.347,93,17.4"></path>
+                                                  <path className="recharts-area-area recharts-curve" strokeWidth={1.5} fill="var(--color-conversions)" fillOpacity={0.12} height={24} stroke="none" width={92} id="recharts-area-_r_4j_" d="M1,23.88C2.057,22.94,3.115,22,4.172,20.36C5.23,18.72,6.287,14.04,7.345,14.04C8.402,14.04,9.46,14.2,10.517,14.2C11.575,14.2,12.632,3,13.69,3C14.747,3,15.805,10.6,16.862,10.6C17.92,10.6,18.977,10.12,20.034,10.12C21.092,10.12,22.149,11.48,23.207,11.48C24.264,11.48,25.322,10.4,26.379,10.04C27.437,9.68,28.494,9.32,29.552,9.32C30.609,9.32,31.667,12.36,32.724,12.36C33.782,12.36,34.839,4.92,35.897,4.92C36.954,4.92,38.011,13.64,39.069,14.28C40.126,14.92,41.184,15.24,42.241,15.24C43.299,15.24,44.356,14.093,45.414,13.24C46.471,12.387,47.529,10.947,48.586,10.12C49.644,9.293,50.701,8.28,51.759,8.28C52.816,8.28,53.874,13,54.931,13C55.989,13,57.046,11.96,58.103,11.96C59.161,11.96,60.218,12.253,61.276,12.84C62.333,13.427,63.391,17.56,64.448,17.56C65.506,17.56,66.563,17.187,67.621,16.44C68.678,15.693,69.736,11.88,70.793,11.88C71.851,11.88,72.908,13.72,73.966,13.72C75.023,13.72,76.08,10.387,77.138,10.28C78.195,10.173,79.253,10.12,80.31,10.12C81.368,10.12,82.425,10.227,83.483,10.44C84.54,10.653,85.598,15.48,86.655,16.12C87.713,16.76,88.77,16.867,89.828,17.08C90.885,17.293,91.943,17.347,93,17.4L93,27C91.943,27,90.885,27,89.828,27C88.77,27,87.713,27,86.655,27C85.598,27,84.54,27,83.483,27C82.425,27,81.368,27,80.31,27C79.253,27,78.195,27,77.138,27C76.08,27,75.023,27,73.966,27C72.908,27,71.851,27,70.793,27C69.736,27,68.678,27,67.621,27C66.563,27,65.506,27,64.448,27C63.391,27,62.333,27,61.276,27C60.218,27,59.161,27,58.103,27C57.046,27,55.989,27,54.931,27C53.874,27,52.816,27,51.759,27C50.701,27,49.644,27,48.586,27C47.529,27,46.471,27,45.414,27C44.356,27,43.299,27,42.241,27C41.184,27,40.126,27,39.069,27C38.011,27,36.954,27,35.897,27C34.839,27,33.782,27,32.724,27C31.667,27,30.609,27,29.552,27C28.494,27,27.437,27,26.379,27C25.322,27,24.264,27,23.207,27C22.149,27,21.092,27,20.034,27C18.977,27,17.92,27,16.862,27C15.805,27,14.747,27,13.69,27C12.632,27,11.575,27,10.517,27C9.46,27,8.402,27,7.345,27C6.287,27,5.23,27,4.172,27C3.115,27,2.057,27,1,27Z"></path>
+                                                  <path className="recharts-area-curve recharts-curve" strokeWidth={1.5} fill="none" fillOpacity={0.12} height={24} stroke="var(--color-conversions)" width={92} d="M1,23.88C2.057,22.94,3.115,22,4.172,20.36C5.23,18.72,6.287,14.04,7.345,14.04C8.402,14.04,9.46,14.2,10.517,14.2C11.575,14.2,12.632,3,13.69,3C14.747,3,15.805,10.6,16.862,10.6C17.92,10.6,18.977,10.12,20.034,10.12C21.092,10.12,22.149,11.48,23.207,11.48C24.264,11.48,25.322,10.4,26.379,10.04C27.437,9.68,28.494,9.32,29.552,9.32C30.609,9.32,31.667,12.36,32.724,12.36C33.782,12.36,34.839,4.92,35.897,4.92C36.954,4.92,38.011,13.64,39.069,14.28C40.126,14.92,41.184,15.24,42.241,15.24C43.299,15.24,44.356,14.093,45.414,13.24C46.471,12.387,47.529,10.947,48.586,10.12C49.644,9.293,50.701,8.28,51.759,8.28C52.816,8.28,53.874,13,54.931,13C55.989,13,57.046,11.96,58.103,11.96C59.161,11.96,60.218,12.253,61.276,12.84C62.333,13.427,63.391,17.56,64.448,17.56C65.506,17.56,66.563,17.187,67.621,16.44C68.678,15.693,69.736,11.88,70.793,11.88C71.851,11.88,72.908,13.72,73.966,13.72C75.023,13.72,76.08,10.387,77.138,10.28C78.195,10.173,79.253,10.12,80.31,10.12C81.368,10.12,82.425,10.227,83.483,10.44C84.54,10.653,85.598,15.48,86.655,16.12C87.713,16.76,88.77,16.867,89.828,17.08C90.885,17.293,91.943,17.347,93,17.4"></path>
                                                 </g>
                                               </g>
                                             </g>
                                           </g>
                                         </g>
-                                        <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_400" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_500" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_600" tabIndex="-1">
+                                        <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_400" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_500" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_600" tabIndex={-1}>
                                           <g className="recharts-layer recharts-reference-dot">
-                                            <circle className="recharts-dot recharts-reference-dot-dot" x="29" y="120" r="2" fill="var(--color-conversions)" stroke="none" fillOpacity="1" strokeWidth="1" cx="93" cy="17.4"></circle>
+                                            <circle className="recharts-dot recharts-reference-dot-dot" x={29} y={120} r={2} fill="var(--color-conversions)" stroke="none" fillOpacity={1} strokeWidth={1} cx={93} cy={17.4}></circle>
                                           </g>
                                         </g>
-                                        <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_2000" tabIndex="-1"></g>
+                                        <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_2000" tabIndex={-1}></g>
                                       </svg>
                                     </div>
                                   </div>
@@ -958,11 +958,11 @@ export function Pattern() {
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) ps-(--frame-panel-header-px) px-2 py-1.5" data-pinned="end" data-last-col="end" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
                             <div className="flex justify-center">
                               <DropdownMenu>
-                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" rowActions="cmp_nkrj1" aria-label="Actions for Meadow Hammock Evergreen" aria-haspopup="menu" id="base-ui-_r_2b_" aria-expanded="false">
-                                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                  <circle cx="12" cy="12" r="1"></circle>
-                                  <circle cx="19" cy="12" r="1"></circle>
-                                  <circle cx="5" cy="12" r="1"></circle>
+                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} rowActions="cmp_nkrj1" aria-label="Actions for Meadow Hammock Evergreen" aria-haspopup="menu" id="base-ui-_r_2b_" aria-expanded="false">
+                                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                  <circle cx={12} cy={12} r={1}></circle>
+                                  <circle cx={19} cy={12} r={1}></circle>
+                                  <circle cx={5} cy={12} r={1}></circle>
                                 </svg>
                               </DropdownMenuTrigger>
                               </DropdownMenu>
@@ -971,8 +971,8 @@ export function Pattern() {
                         </tr>
                         <tr className="[&:not(:last-child)>td]:border-b data-[row-status=deleted]:[&_td]:line-through data-[row-status=deleted]:bg-destructive/5 data-[row-status=deleted]:opacity-60 data-[row-status=dirty]:bg-amber-500/5 data-[row-status=new]:bg-green-500/5 data-[state=selected]:bg-muted/50 hover:bg-muted/40" data-row-id="cmp_e59bf">
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5" data-pinned="start" data-last-col="start" style={{width: "calc(var(--col-select-size) * 1px)"}}>
-                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_2d_" aria-checked="false" aria-label="Select row"></Checkbox>
-                            <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_2d_" aria-checked="false" aria-label="Select row"></Checkbox>
+                            <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                             <div className="flex gap-2.5 items-center min-w-0">
@@ -988,7 +988,7 @@ export function Pattern() {
                                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="shrink-0">
                                     <span className="flex gap-1.5 items-center min-w-0">
-                                      <img className="object-cover rounded-full shrink-0 size-4" alt="" width="16" height="16" loading="lazy" decoding="async" src="https://flagcdn.com/br.svg" />
+                                      <img className="object-cover rounded-full shrink-0 size-4" alt="" width={16} height={16} loading="lazy" decoding="async" src="https://flagcdn.com/br.svg" />
                                       <span className="font-mono text-xs" aria-hidden="true">
                                         {"BR"}
                                       </span>
@@ -1036,42 +1036,42 @@ export function Pattern() {
                               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-7 justify-center shrink-0 text-xs w-24" data-chart="chart-_r_2g_" aria-hidden="true">
                                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                                    <div className="recharts-wrapper" width="96" height="28" style={{position: "relative", cursor: "default", width: "96px", height: "28px"}}>
-                                      <svg className="recharts-surface" width="96" height="28" viewBox="0 0 96 28" style={{width: "100%", height: "100%", display: "block"}}>
+                                    <div className="recharts-wrapper" width={96} height={28} style={{position: "relative", cursor: "default", width: "96px", height: "28px"}}>
+                                      <svg className="recharts-surface" width={96} height={28} viewBox="0 0 96 28" style={{width: "100%", height: "100%", display: "block"}}>
                                         <title></title>
                                         <desc></desc>
-                                        <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                                        <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                                         <defs>
                                           <clippath id="recharts4-clip">
-                                            <rect x="1" y="3" height="24" width="92"></rect>
+                                            <rect x={1} y={3} height={24} width={92}></rect>
                                           </clippath>
                                         </defs>
-                                        <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                                        <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                                           <g className="recharts-area recharts-layer">
                                             <g className="recharts-layer">
                                               <g className="recharts-layer" clipPath="url(#animationClipPath-recharts-area-_r_4k_)">
                                                 <g className="recharts-layer">
-                                                  <path className="recharts-area-area recharts-curve" strokeWidth="1.5" fill="var(--color-conversions)" fillOpacity="0.12" height="24" stroke="none" width="92" id="recharts-area-_r_4k_" d="M1,24.176C2.057,23.471,3.115,22.765,4.172,22.059C5.23,21.353,6.287,21.118,7.345,19.941C8.402,18.765,9.46,16.294,10.517,15C11.575,13.706,12.632,12.176,13.69,12.176C14.747,12.176,15.805,15.706,16.862,15.706C17.92,15.706,18.977,13.588,20.034,13.588C21.092,13.588,22.149,15,23.207,15C24.264,15,25.322,11.706,26.379,10.765C27.437,9.824,28.494,9.706,29.552,9.353C30.609,9,31.667,8.647,32.724,8.647C33.782,8.647,34.839,9.353,35.897,9.353C36.954,9.353,38.011,7.941,39.069,7.941C40.126,7.941,41.184,8.176,42.241,8.647C43.299,9.118,44.356,14.294,45.414,14.294C46.471,14.294,47.529,10.059,48.586,10.059C49.644,10.059,50.701,10.059,51.759,10.059C52.816,10.059,53.874,10.765,54.931,10.765C55.989,10.765,57.046,3.706,58.103,3.706C59.161,3.706,60.218,11.471,61.276,11.471C62.333,11.471,63.391,8.647,64.448,8.647C65.506,8.647,66.563,14.294,67.621,14.294C68.678,14.294,69.736,10.765,70.793,10.765C71.851,10.765,72.908,10.765,73.966,10.765C75.023,10.765,76.08,5.353,77.138,4.412C78.195,3.471,79.253,3,80.31,3C81.368,3,82.425,5.118,83.483,6.529C84.54,7.941,85.598,11.471,86.655,11.471C87.713,11.471,88.77,9.353,89.828,9.353C90.885,9.353,91.943,9.706,93,10.059L93,27C91.943,27,90.885,27,89.828,27C88.77,27,87.713,27,86.655,27C85.598,27,84.54,27,83.483,27C82.425,27,81.368,27,80.31,27C79.253,27,78.195,27,77.138,27C76.08,27,75.023,27,73.966,27C72.908,27,71.851,27,70.793,27C69.736,27,68.678,27,67.621,27C66.563,27,65.506,27,64.448,27C63.391,27,62.333,27,61.276,27C60.218,27,59.161,27,58.103,27C57.046,27,55.989,27,54.931,27C53.874,27,52.816,27,51.759,27C50.701,27,49.644,27,48.586,27C47.529,27,46.471,27,45.414,27C44.356,27,43.299,27,42.241,27C41.184,27,40.126,27,39.069,27C38.011,27,36.954,27,35.897,27C34.839,27,33.782,27,32.724,27C31.667,27,30.609,27,29.552,27C28.494,27,27.437,27,26.379,27C25.322,27,24.264,27,23.207,27C22.149,27,21.092,27,20.034,27C18.977,27,17.92,27,16.862,27C15.805,27,14.747,27,13.69,27C12.632,27,11.575,27,10.517,27C9.46,27,8.402,27,7.345,27C6.287,27,5.23,27,4.172,27C3.115,27,2.057,27,1,27Z"></path>
-                                                  <path className="recharts-area-curve recharts-curve" strokeWidth="1.5" fill="none" fillOpacity="0.12" height="24" stroke="var(--color-conversions)" width="92" d="M1,24.176C2.057,23.471,3.115,22.765,4.172,22.059C5.23,21.353,6.287,21.118,7.345,19.941C8.402,18.765,9.46,16.294,10.517,15C11.575,13.706,12.632,12.176,13.69,12.176C14.747,12.176,15.805,15.706,16.862,15.706C17.92,15.706,18.977,13.588,20.034,13.588C21.092,13.588,22.149,15,23.207,15C24.264,15,25.322,11.706,26.379,10.765C27.437,9.824,28.494,9.706,29.552,9.353C30.609,9,31.667,8.647,32.724,8.647C33.782,8.647,34.839,9.353,35.897,9.353C36.954,9.353,38.011,7.941,39.069,7.941C40.126,7.941,41.184,8.176,42.241,8.647C43.299,9.118,44.356,14.294,45.414,14.294C46.471,14.294,47.529,10.059,48.586,10.059C49.644,10.059,50.701,10.059,51.759,10.059C52.816,10.059,53.874,10.765,54.931,10.765C55.989,10.765,57.046,3.706,58.103,3.706C59.161,3.706,60.218,11.471,61.276,11.471C62.333,11.471,63.391,8.647,64.448,8.647C65.506,8.647,66.563,14.294,67.621,14.294C68.678,14.294,69.736,10.765,70.793,10.765C71.851,10.765,72.908,10.765,73.966,10.765C75.023,10.765,76.08,5.353,77.138,4.412C78.195,3.471,79.253,3,80.31,3C81.368,3,82.425,5.118,83.483,6.529C84.54,7.941,85.598,11.471,86.655,11.471C87.713,11.471,88.77,9.353,89.828,9.353C90.885,9.353,91.943,9.706,93,10.059"></path>
+                                                  <path className="recharts-area-area recharts-curve" strokeWidth={1.5} fill="var(--color-conversions)" fillOpacity={0.12} height={24} stroke="none" width={92} id="recharts-area-_r_4k_" d="M1,24.176C2.057,23.471,3.115,22.765,4.172,22.059C5.23,21.353,6.287,21.118,7.345,19.941C8.402,18.765,9.46,16.294,10.517,15C11.575,13.706,12.632,12.176,13.69,12.176C14.747,12.176,15.805,15.706,16.862,15.706C17.92,15.706,18.977,13.588,20.034,13.588C21.092,13.588,22.149,15,23.207,15C24.264,15,25.322,11.706,26.379,10.765C27.437,9.824,28.494,9.706,29.552,9.353C30.609,9,31.667,8.647,32.724,8.647C33.782,8.647,34.839,9.353,35.897,9.353C36.954,9.353,38.011,7.941,39.069,7.941C40.126,7.941,41.184,8.176,42.241,8.647C43.299,9.118,44.356,14.294,45.414,14.294C46.471,14.294,47.529,10.059,48.586,10.059C49.644,10.059,50.701,10.059,51.759,10.059C52.816,10.059,53.874,10.765,54.931,10.765C55.989,10.765,57.046,3.706,58.103,3.706C59.161,3.706,60.218,11.471,61.276,11.471C62.333,11.471,63.391,8.647,64.448,8.647C65.506,8.647,66.563,14.294,67.621,14.294C68.678,14.294,69.736,10.765,70.793,10.765C71.851,10.765,72.908,10.765,73.966,10.765C75.023,10.765,76.08,5.353,77.138,4.412C78.195,3.471,79.253,3,80.31,3C81.368,3,82.425,5.118,83.483,6.529C84.54,7.941,85.598,11.471,86.655,11.471C87.713,11.471,88.77,9.353,89.828,9.353C90.885,9.353,91.943,9.706,93,10.059L93,27C91.943,27,90.885,27,89.828,27C88.77,27,87.713,27,86.655,27C85.598,27,84.54,27,83.483,27C82.425,27,81.368,27,80.31,27C79.253,27,78.195,27,77.138,27C76.08,27,75.023,27,73.966,27C72.908,27,71.851,27,70.793,27C69.736,27,68.678,27,67.621,27C66.563,27,65.506,27,64.448,27C63.391,27,62.333,27,61.276,27C60.218,27,59.161,27,58.103,27C57.046,27,55.989,27,54.931,27C53.874,27,52.816,27,51.759,27C50.701,27,49.644,27,48.586,27C47.529,27,46.471,27,45.414,27C44.356,27,43.299,27,42.241,27C41.184,27,40.126,27,39.069,27C38.011,27,36.954,27,35.897,27C34.839,27,33.782,27,32.724,27C31.667,27,30.609,27,29.552,27C28.494,27,27.437,27,26.379,27C25.322,27,24.264,27,23.207,27C22.149,27,21.092,27,20.034,27C18.977,27,17.92,27,16.862,27C15.805,27,14.747,27,13.69,27C12.632,27,11.575,27,10.517,27C9.46,27,8.402,27,7.345,27C6.287,27,5.23,27,4.172,27C3.115,27,2.057,27,1,27Z"></path>
+                                                  <path className="recharts-area-curve recharts-curve" strokeWidth={1.5} fill="none" fillOpacity={0.12} height={24} stroke="var(--color-conversions)" width={92} d="M1,24.176C2.057,23.471,3.115,22.765,4.172,22.059C5.23,21.353,6.287,21.118,7.345,19.941C8.402,18.765,9.46,16.294,10.517,15C11.575,13.706,12.632,12.176,13.69,12.176C14.747,12.176,15.805,15.706,16.862,15.706C17.92,15.706,18.977,13.588,20.034,13.588C21.092,13.588,22.149,15,23.207,15C24.264,15,25.322,11.706,26.379,10.765C27.437,9.824,28.494,9.706,29.552,9.353C30.609,9,31.667,8.647,32.724,8.647C33.782,8.647,34.839,9.353,35.897,9.353C36.954,9.353,38.011,7.941,39.069,7.941C40.126,7.941,41.184,8.176,42.241,8.647C43.299,9.118,44.356,14.294,45.414,14.294C46.471,14.294,47.529,10.059,48.586,10.059C49.644,10.059,50.701,10.059,51.759,10.059C52.816,10.059,53.874,10.765,54.931,10.765C55.989,10.765,57.046,3.706,58.103,3.706C59.161,3.706,60.218,11.471,61.276,11.471C62.333,11.471,63.391,8.647,64.448,8.647C65.506,8.647,66.563,14.294,67.621,14.294C68.678,14.294,69.736,10.765,70.793,10.765C71.851,10.765,72.908,10.765,73.966,10.765C75.023,10.765,76.08,5.353,77.138,4.412C78.195,3.471,79.253,3,80.31,3C81.368,3,82.425,5.118,83.483,6.529C84.54,7.941,85.598,11.471,86.655,11.471C87.713,11.471,88.77,9.353,89.828,9.353C90.885,9.353,91.943,9.706,93,10.059"></path>
                                                 </g>
                                               </g>
                                             </g>
                                           </g>
                                         </g>
-                                        <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_400" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_500" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_600" tabIndex="-1">
+                                        <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_400" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_500" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_600" tabIndex={-1}>
                                           <g className="recharts-layer recharts-reference-dot">
-                                            <circle className="recharts-dot recharts-reference-dot-dot" x="29" y="24" r="2" fill="var(--color-conversions)" stroke="none" fillOpacity="1" strokeWidth="1" cx="93" cy="10.058823529411763"></circle>
+                                            <circle className="recharts-dot recharts-reference-dot-dot" x={29} y={24} r={2} fill="var(--color-conversions)" stroke="none" fillOpacity={1} strokeWidth={1} cx={93} cy={10.058823529411763}></circle>
                                           </g>
                                         </g>
-                                        <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_2000" tabIndex="-1"></g>
+                                        <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_2000" tabIndex={-1}></g>
                                       </svg>
                                     </div>
                                   </div>
@@ -1123,11 +1123,11 @@ export function Pattern() {
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) ps-(--frame-panel-header-px) px-2 py-1.5" data-pinned="end" data-last-col="end" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
                             <div className="flex justify-center">
                               <DropdownMenu>
-                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" rowActions="cmp_e59bf" aria-label="Actions for Harbor Duffel Creator Cuts" aria-haspopup="menu" id="base-ui-_r_2k_" aria-expanded="false">
-                                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                  <circle cx="12" cy="12" r="1"></circle>
-                                  <circle cx="19" cy="12" r="1"></circle>
-                                  <circle cx="5" cy="12" r="1"></circle>
+                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} rowActions="cmp_e59bf" aria-label="Actions for Harbor Duffel Creator Cuts" aria-haspopup="menu" id="base-ui-_r_2k_" aria-expanded="false">
+                                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                  <circle cx={12} cy={12} r={1}></circle>
+                                  <circle cx={19} cy={12} r={1}></circle>
+                                  <circle cx={5} cy={12} r={1}></circle>
                                 </svg>
                               </DropdownMenuTrigger>
                               </DropdownMenu>
@@ -1136,8 +1136,8 @@ export function Pattern() {
                         </tr>
                         <tr className="[&:not(:last-child)>td]:border-b data-[row-status=deleted]:[&_td]:line-through data-[row-status=deleted]:bg-destructive/5 data-[row-status=deleted]:opacity-60 data-[row-status=dirty]:bg-amber-500/5 data-[row-status=new]:bg-green-500/5 data-[state=selected]:bg-muted/50 hover:bg-muted/40" data-row-id="cmp_squ2d">
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5" data-pinned="start" data-last-col="start" style={{width: "calc(var(--col-select-size) * 1px)"}}>
-                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_2m_" aria-checked="false" aria-label="Select row"></Checkbox>
-                            <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_2m_" aria-checked="false" aria-label="Select row"></Checkbox>
+                            <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                             <div className="flex gap-2.5 items-center min-w-0">
@@ -1154,7 +1154,7 @@ export function Pattern() {
                                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="shrink-0">
                                     <span className="flex gap-1.5 items-center min-w-0">
-                                      <img className="object-cover rounded-full shrink-0 size-4" alt="" width="16" height="16" loading="lazy" decoding="async" src="https://flagcdn.com/us.svg" />
+                                      <img className="object-cover rounded-full shrink-0 size-4" alt="" width={16} height={16} loading="lazy" decoding="async" src="https://flagcdn.com/us.svg" />
                                       <span className="font-mono text-xs" aria-hidden="true">
                                         {"US"}
                                       </span>
@@ -1202,42 +1202,42 @@ export function Pattern() {
                               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-7 justify-center shrink-0 text-xs w-24" data-chart="chart-_r_2p_" aria-hidden="true">
                                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                                    <div className="recharts-wrapper" width="96" height="28" style={{position: "relative", cursor: "default", width: "96px", height: "28px"}}>
-                                      <svg className="recharts-surface" width="96" height="28" viewBox="0 0 96 28" style={{width: "100%", height: "100%", display: "block"}}>
+                                    <div className="recharts-wrapper" width={96} height={28} style={{position: "relative", cursor: "default", width: "96px", height: "28px"}}>
+                                      <svg className="recharts-surface" width={96} height={28} viewBox="0 0 96 28" style={{width: "100%", height: "100%", display: "block"}}>
                                         <title></title>
                                         <desc></desc>
-                                        <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                                        <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                                         <defs>
                                           <clippath id="recharts5-clip">
-                                            <rect x="1" y="3" height="24" width="92"></rect>
+                                            <rect x={1} y={3} height={24} width={92}></rect>
                                           </clippath>
                                         </defs>
-                                        <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                                        <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                                           <g className="recharts-area recharts-layer">
                                             <g className="recharts-layer">
                                               <g className="recharts-layer" clipPath="url(#animationClipPath-recharts-area-_r_4l_)">
                                                 <g className="recharts-layer">
-                                                  <path className="recharts-area-area recharts-curve" strokeWidth="1.5" fill="var(--color-conversions)" fillOpacity="0.12" height="24" stroke="none" width="92" id="recharts-area-_r_4l_" d="M1,22C2.057,21.167,3.115,20.333,4.172,19.667C5.23,19,6.287,19.111,7.345,18C8.402,16.889,9.46,11.556,10.517,10C11.575,8.444,12.632,8.444,13.69,7.667C14.747,6.889,15.805,5.333,16.862,5.333C17.92,5.333,18.977,8.778,20.034,9C21.092,9.222,22.149,9.111,23.207,9.333C24.264,9.556,25.322,10.333,26.379,10.333C27.437,10.333,28.494,10,29.552,9.333C30.609,8.667,31.667,6,32.724,6C33.782,6,34.839,13,35.897,13C36.954,13,38.011,4.667,39.069,4.667C40.126,4.667,41.184,6.444,42.241,7C43.299,7.556,44.356,7.667,45.414,8C46.471,8.333,47.529,8.667,48.586,9C49.644,9.333,50.701,9.667,51.759,10C52.816,10.333,53.874,11,54.931,11C55.989,11,57.046,7.333,58.103,6.667C59.161,6,60.218,5.667,61.276,5.667C62.333,5.667,63.391,5.667,64.448,5.667C65.506,5.667,66.563,9.667,67.621,9.667C68.678,9.667,69.736,7.333,70.793,7.333C71.851,7.333,72.908,12.333,73.966,12.333C75.023,12.333,76.08,7.778,77.138,7.333C78.195,6.889,79.253,6.667,80.31,6.667C81.368,6.667,82.425,9.667,83.483,9.667C84.54,9.667,85.598,3,86.655,3C87.713,3,88.77,3.556,89.828,4.667C90.885,5.778,91.943,9.722,93,13.667L93,27C91.943,27,90.885,27,89.828,27C88.77,27,87.713,27,86.655,27C85.598,27,84.54,27,83.483,27C82.425,27,81.368,27,80.31,27C79.253,27,78.195,27,77.138,27C76.08,27,75.023,27,73.966,27C72.908,27,71.851,27,70.793,27C69.736,27,68.678,27,67.621,27C66.563,27,65.506,27,64.448,27C63.391,27,62.333,27,61.276,27C60.218,27,59.161,27,58.103,27C57.046,27,55.989,27,54.931,27C53.874,27,52.816,27,51.759,27C50.701,27,49.644,27,48.586,27C47.529,27,46.471,27,45.414,27C44.356,27,43.299,27,42.241,27C41.184,27,40.126,27,39.069,27C38.011,27,36.954,27,35.897,27C34.839,27,33.782,27,32.724,27C31.667,27,30.609,27,29.552,27C28.494,27,27.437,27,26.379,27C25.322,27,24.264,27,23.207,27C22.149,27,21.092,27,20.034,27C18.977,27,17.92,27,16.862,27C15.805,27,14.747,27,13.69,27C12.632,27,11.575,27,10.517,27C9.46,27,8.402,27,7.345,27C6.287,27,5.23,27,4.172,27C3.115,27,2.057,27,1,27Z"></path>
-                                                  <path className="recharts-area-curve recharts-curve" strokeWidth="1.5" fill="none" fillOpacity="0.12" height="24" stroke="var(--color-conversions)" width="92" d="M1,22C2.057,21.167,3.115,20.333,4.172,19.667C5.23,19,6.287,19.111,7.345,18C8.402,16.889,9.46,11.556,10.517,10C11.575,8.444,12.632,8.444,13.69,7.667C14.747,6.889,15.805,5.333,16.862,5.333C17.92,5.333,18.977,8.778,20.034,9C21.092,9.222,22.149,9.111,23.207,9.333C24.264,9.556,25.322,10.333,26.379,10.333C27.437,10.333,28.494,10,29.552,9.333C30.609,8.667,31.667,6,32.724,6C33.782,6,34.839,13,35.897,13C36.954,13,38.011,4.667,39.069,4.667C40.126,4.667,41.184,6.444,42.241,7C43.299,7.556,44.356,7.667,45.414,8C46.471,8.333,47.529,8.667,48.586,9C49.644,9.333,50.701,9.667,51.759,10C52.816,10.333,53.874,11,54.931,11C55.989,11,57.046,7.333,58.103,6.667C59.161,6,60.218,5.667,61.276,5.667C62.333,5.667,63.391,5.667,64.448,5.667C65.506,5.667,66.563,9.667,67.621,9.667C68.678,9.667,69.736,7.333,70.793,7.333C71.851,7.333,72.908,12.333,73.966,12.333C75.023,12.333,76.08,7.778,77.138,7.333C78.195,6.889,79.253,6.667,80.31,6.667C81.368,6.667,82.425,9.667,83.483,9.667C84.54,9.667,85.598,3,86.655,3C87.713,3,88.77,3.556,89.828,4.667C90.885,5.778,91.943,9.722,93,13.667"></path>
+                                                  <path className="recharts-area-area recharts-curve" strokeWidth={1.5} fill="var(--color-conversions)" fillOpacity={0.12} height={24} stroke="none" width={92} id="recharts-area-_r_4l_" d="M1,22C2.057,21.167,3.115,20.333,4.172,19.667C5.23,19,6.287,19.111,7.345,18C8.402,16.889,9.46,11.556,10.517,10C11.575,8.444,12.632,8.444,13.69,7.667C14.747,6.889,15.805,5.333,16.862,5.333C17.92,5.333,18.977,8.778,20.034,9C21.092,9.222,22.149,9.111,23.207,9.333C24.264,9.556,25.322,10.333,26.379,10.333C27.437,10.333,28.494,10,29.552,9.333C30.609,8.667,31.667,6,32.724,6C33.782,6,34.839,13,35.897,13C36.954,13,38.011,4.667,39.069,4.667C40.126,4.667,41.184,6.444,42.241,7C43.299,7.556,44.356,7.667,45.414,8C46.471,8.333,47.529,8.667,48.586,9C49.644,9.333,50.701,9.667,51.759,10C52.816,10.333,53.874,11,54.931,11C55.989,11,57.046,7.333,58.103,6.667C59.161,6,60.218,5.667,61.276,5.667C62.333,5.667,63.391,5.667,64.448,5.667C65.506,5.667,66.563,9.667,67.621,9.667C68.678,9.667,69.736,7.333,70.793,7.333C71.851,7.333,72.908,12.333,73.966,12.333C75.023,12.333,76.08,7.778,77.138,7.333C78.195,6.889,79.253,6.667,80.31,6.667C81.368,6.667,82.425,9.667,83.483,9.667C84.54,9.667,85.598,3,86.655,3C87.713,3,88.77,3.556,89.828,4.667C90.885,5.778,91.943,9.722,93,13.667L93,27C91.943,27,90.885,27,89.828,27C88.77,27,87.713,27,86.655,27C85.598,27,84.54,27,83.483,27C82.425,27,81.368,27,80.31,27C79.253,27,78.195,27,77.138,27C76.08,27,75.023,27,73.966,27C72.908,27,71.851,27,70.793,27C69.736,27,68.678,27,67.621,27C66.563,27,65.506,27,64.448,27C63.391,27,62.333,27,61.276,27C60.218,27,59.161,27,58.103,27C57.046,27,55.989,27,54.931,27C53.874,27,52.816,27,51.759,27C50.701,27,49.644,27,48.586,27C47.529,27,46.471,27,45.414,27C44.356,27,43.299,27,42.241,27C41.184,27,40.126,27,39.069,27C38.011,27,36.954,27,35.897,27C34.839,27,33.782,27,32.724,27C31.667,27,30.609,27,29.552,27C28.494,27,27.437,27,26.379,27C25.322,27,24.264,27,23.207,27C22.149,27,21.092,27,20.034,27C18.977,27,17.92,27,16.862,27C15.805,27,14.747,27,13.69,27C12.632,27,11.575,27,10.517,27C9.46,27,8.402,27,7.345,27C6.287,27,5.23,27,4.172,27C3.115,27,2.057,27,1,27Z"></path>
+                                                  <path className="recharts-area-curve recharts-curve" strokeWidth={1.5} fill="none" fillOpacity={0.12} height={24} stroke="var(--color-conversions)" width={92} d="M1,22C2.057,21.167,3.115,20.333,4.172,19.667C5.23,19,6.287,19.111,7.345,18C8.402,16.889,9.46,11.556,10.517,10C11.575,8.444,12.632,8.444,13.69,7.667C14.747,6.889,15.805,5.333,16.862,5.333C17.92,5.333,18.977,8.778,20.034,9C21.092,9.222,22.149,9.111,23.207,9.333C24.264,9.556,25.322,10.333,26.379,10.333C27.437,10.333,28.494,10,29.552,9.333C30.609,8.667,31.667,6,32.724,6C33.782,6,34.839,13,35.897,13C36.954,13,38.011,4.667,39.069,4.667C40.126,4.667,41.184,6.444,42.241,7C43.299,7.556,44.356,7.667,45.414,8C46.471,8.333,47.529,8.667,48.586,9C49.644,9.333,50.701,9.667,51.759,10C52.816,10.333,53.874,11,54.931,11C55.989,11,57.046,7.333,58.103,6.667C59.161,6,60.218,5.667,61.276,5.667C62.333,5.667,63.391,5.667,64.448,5.667C65.506,5.667,66.563,9.667,67.621,9.667C68.678,9.667,69.736,7.333,70.793,7.333C71.851,7.333,72.908,12.333,73.966,12.333C75.023,12.333,76.08,7.778,77.138,7.333C78.195,6.889,79.253,6.667,80.31,6.667C81.368,6.667,82.425,9.667,83.483,9.667C84.54,9.667,85.598,3,86.655,3C87.713,3,88.77,3.556,89.828,4.667C90.885,5.778,91.943,9.722,93,13.667"></path>
                                                 </g>
                                               </g>
                                             </g>
                                           </g>
                                         </g>
-                                        <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_400" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_500" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_600" tabIndex="-1">
+                                        <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_400" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_500" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_600" tabIndex={-1}>
                                           <g className="recharts-layer recharts-reference-dot">
-                                            <circle className="recharts-dot recharts-reference-dot-dot" x="29" y="40" r="2" fill="var(--color-conversions)" stroke="none" fillOpacity="1" strokeWidth="1" cx="93" cy="13.666666666666666"></circle>
+                                            <circle className="recharts-dot recharts-reference-dot-dot" x={29} y={40} r={2} fill="var(--color-conversions)" stroke="none" fillOpacity={1} strokeWidth={1} cx={93} cy={13.666666666666666}></circle>
                                           </g>
                                         </g>
-                                        <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_2000" tabIndex="-1"></g>
+                                        <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_2000" tabIndex={-1}></g>
                                       </svg>
                                     </div>
                                   </div>
@@ -1289,11 +1289,11 @@ export function Pattern() {
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) ps-(--frame-panel-header-px) px-2 py-1.5" data-pinned="end" data-last-col="end" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
                             <div className="flex justify-center">
                               <DropdownMenu>
-                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" rowActions="cmp_squ2d" aria-label="Actions for Coastline Shell Creator Cuts" aria-haspopup="menu" id="base-ui-_r_2t_" aria-expanded="false">
-                                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                  <circle cx="12" cy="12" r="1"></circle>
-                                  <circle cx="19" cy="12" r="1"></circle>
-                                  <circle cx="5" cy="12" r="1"></circle>
+                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} rowActions="cmp_squ2d" aria-label="Actions for Coastline Shell Creator Cuts" aria-haspopup="menu" id="base-ui-_r_2t_" aria-expanded="false">
+                                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                  <circle cx={12} cy={12} r={1}></circle>
+                                  <circle cx={19} cy={12} r={1}></circle>
+                                  <circle cx={5} cy={12} r={1}></circle>
                                 </svg>
                               </DropdownMenuTrigger>
                               </DropdownMenu>
@@ -1302,8 +1302,8 @@ export function Pattern() {
                         </tr>
                         <tr className="[&:not(:last-child)>td]:border-b data-[row-status=deleted]:[&_td]:line-through data-[row-status=deleted]:bg-destructive/5 data-[row-status=deleted]:opacity-60 data-[row-status=dirty]:bg-amber-500/5 data-[row-status=new]:bg-green-500/5 data-[state=selected]:bg-muted/50 hover:bg-muted/40" data-row-id="cmp_yqal3">
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5" data-pinned="start" data-last-col="start" style={{width: "calc(var(--col-select-size) * 1px)"}}>
-                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_2v_" aria-checked="false" aria-label="Select row"></Checkbox>
-                            <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_2v_" aria-checked="false" aria-label="Select row"></Checkbox>
+                            <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                             <div className="flex gap-2.5 items-center min-w-0">
@@ -1319,7 +1319,7 @@ export function Pattern() {
                                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="shrink-0">
                                     <span className="flex gap-1.5 items-center min-w-0">
-                                      <img className="object-cover rounded-full shrink-0 size-4" alt="" width="16" height="16" loading="lazy" decoding="async" src="https://flagcdn.com/br.svg" />
+                                      <img className="object-cover rounded-full shrink-0 size-4" alt="" width={16} height={16} loading="lazy" decoding="async" src="https://flagcdn.com/br.svg" />
                                       <span className="font-mono text-xs" aria-hidden="true">
                                         {"BR"}
                                       </span>
@@ -1367,42 +1367,42 @@ export function Pattern() {
                               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-7 justify-center shrink-0 text-xs w-24" data-chart="chart-_r_32_" aria-hidden="true">
                                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                                    <div className="recharts-wrapper" width="96" height="28" style={{position: "relative", cursor: "default", width: "96px", height: "28px"}}>
-                                      <svg className="recharts-surface" width="96" height="28" viewBox="0 0 96 28" style={{width: "100%", height: "100%", display: "block"}}>
+                                    <div className="recharts-wrapper" width={96} height={28} style={{position: "relative", cursor: "default", width: "96px", height: "28px"}}>
+                                      <svg className="recharts-surface" width={96} height={28} viewBox="0 0 96 28" style={{width: "100%", height: "100%", display: "block"}}>
                                         <title></title>
                                         <desc></desc>
-                                        <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                                        <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                                         <defs>
                                           <clippath id="recharts6-clip">
-                                            <rect x="1" y="3" height="24" width="92"></rect>
+                                            <rect x={1} y={3} height={24} width={92}></rect>
                                           </clippath>
                                         </defs>
-                                        <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                                        <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                                           <g className="recharts-area recharts-layer">
                                             <g className="recharts-layer">
                                               <g className="recharts-layer" clipPath="url(#animationClipPath-recharts-area-_r_4m_)">
                                                 <g className="recharts-layer">
-                                                  <path className="recharts-area-area recharts-curve" strokeWidth="1.5" fill="var(--color-conversions)" fillOpacity="0.12" height="24" stroke="none" width="92" id="recharts-area-_r_4m_" d="M1,24.333C2.057,23,3.115,21.667,4.172,21.667C5.23,21.667,6.287,21.667,7.345,21.667C8.402,21.667,9.46,18.556,10.517,16.333C11.575,14.111,12.632,8.333,13.69,8.333C14.747,8.333,15.805,11,16.862,11C17.92,11,18.977,8.333,20.034,8.333C21.092,8.333,22.149,12.333,23.207,13.667C24.264,15,25.322,16.333,26.379,16.333C27.437,16.333,28.494,11,29.552,11C30.609,11,31.667,13.667,32.724,13.667C33.782,13.667,34.839,10.111,35.897,8.333C36.954,6.556,38.011,3,39.069,3C40.126,3,41.184,8.333,42.241,8.333C43.299,8.333,44.356,8.333,45.414,8.333C46.471,8.333,47.529,13.667,48.586,13.667C49.644,13.667,50.701,13.667,51.759,13.667C52.816,13.667,53.874,10.111,54.931,8.333C55.989,6.556,57.046,3,58.103,3C59.161,3,60.218,5.667,61.276,5.667C62.333,5.667,63.391,3,64.448,3C65.506,3,66.563,13.667,67.621,13.667C68.678,13.667,69.736,13.667,70.793,13.667C71.851,13.667,72.908,5.667,73.966,5.667C75.023,5.667,76.08,5.667,77.138,5.667C78.195,5.667,79.253,3,80.31,3C81.368,3,82.425,7,83.483,8.333C84.54,9.667,85.598,11,86.655,11C87.713,11,88.77,11,89.828,11C90.885,11,91.943,11,93,11L93,27C91.943,27,90.885,27,89.828,27C88.77,27,87.713,27,86.655,27C85.598,27,84.54,27,83.483,27C82.425,27,81.368,27,80.31,27C79.253,27,78.195,27,77.138,27C76.08,27,75.023,27,73.966,27C72.908,27,71.851,27,70.793,27C69.736,27,68.678,27,67.621,27C66.563,27,65.506,27,64.448,27C63.391,27,62.333,27,61.276,27C60.218,27,59.161,27,58.103,27C57.046,27,55.989,27,54.931,27C53.874,27,52.816,27,51.759,27C50.701,27,49.644,27,48.586,27C47.529,27,46.471,27,45.414,27C44.356,27,43.299,27,42.241,27C41.184,27,40.126,27,39.069,27C38.011,27,36.954,27,35.897,27C34.839,27,33.782,27,32.724,27C31.667,27,30.609,27,29.552,27C28.494,27,27.437,27,26.379,27C25.322,27,24.264,27,23.207,27C22.149,27,21.092,27,20.034,27C18.977,27,17.92,27,16.862,27C15.805,27,14.747,27,13.69,27C12.632,27,11.575,27,10.517,27C9.46,27,8.402,27,7.345,27C6.287,27,5.23,27,4.172,27C3.115,27,2.057,27,1,27Z"></path>
-                                                  <path className="recharts-area-curve recharts-curve" strokeWidth="1.5" fill="none" fillOpacity="0.12" height="24" stroke="var(--color-conversions)" width="92" d="M1,24.333C2.057,23,3.115,21.667,4.172,21.667C5.23,21.667,6.287,21.667,7.345,21.667C8.402,21.667,9.46,18.556,10.517,16.333C11.575,14.111,12.632,8.333,13.69,8.333C14.747,8.333,15.805,11,16.862,11C17.92,11,18.977,8.333,20.034,8.333C21.092,8.333,22.149,12.333,23.207,13.667C24.264,15,25.322,16.333,26.379,16.333C27.437,16.333,28.494,11,29.552,11C30.609,11,31.667,13.667,32.724,13.667C33.782,13.667,34.839,10.111,35.897,8.333C36.954,6.556,38.011,3,39.069,3C40.126,3,41.184,8.333,42.241,8.333C43.299,8.333,44.356,8.333,45.414,8.333C46.471,8.333,47.529,13.667,48.586,13.667C49.644,13.667,50.701,13.667,51.759,13.667C52.816,13.667,53.874,10.111,54.931,8.333C55.989,6.556,57.046,3,58.103,3C59.161,3,60.218,5.667,61.276,5.667C62.333,5.667,63.391,3,64.448,3C65.506,3,66.563,13.667,67.621,13.667C68.678,13.667,69.736,13.667,70.793,13.667C71.851,13.667,72.908,5.667,73.966,5.667C75.023,5.667,76.08,5.667,77.138,5.667C78.195,5.667,79.253,3,80.31,3C81.368,3,82.425,7,83.483,8.333C84.54,9.667,85.598,11,86.655,11C87.713,11,88.77,11,89.828,11C90.885,11,91.943,11,93,11"></path>
+                                                  <path className="recharts-area-area recharts-curve" strokeWidth={1.5} fill="var(--color-conversions)" fillOpacity={0.12} height={24} stroke="none" width={92} id="recharts-area-_r_4m_" d="M1,24.333C2.057,23,3.115,21.667,4.172,21.667C5.23,21.667,6.287,21.667,7.345,21.667C8.402,21.667,9.46,18.556,10.517,16.333C11.575,14.111,12.632,8.333,13.69,8.333C14.747,8.333,15.805,11,16.862,11C17.92,11,18.977,8.333,20.034,8.333C21.092,8.333,22.149,12.333,23.207,13.667C24.264,15,25.322,16.333,26.379,16.333C27.437,16.333,28.494,11,29.552,11C30.609,11,31.667,13.667,32.724,13.667C33.782,13.667,34.839,10.111,35.897,8.333C36.954,6.556,38.011,3,39.069,3C40.126,3,41.184,8.333,42.241,8.333C43.299,8.333,44.356,8.333,45.414,8.333C46.471,8.333,47.529,13.667,48.586,13.667C49.644,13.667,50.701,13.667,51.759,13.667C52.816,13.667,53.874,10.111,54.931,8.333C55.989,6.556,57.046,3,58.103,3C59.161,3,60.218,5.667,61.276,5.667C62.333,5.667,63.391,3,64.448,3C65.506,3,66.563,13.667,67.621,13.667C68.678,13.667,69.736,13.667,70.793,13.667C71.851,13.667,72.908,5.667,73.966,5.667C75.023,5.667,76.08,5.667,77.138,5.667C78.195,5.667,79.253,3,80.31,3C81.368,3,82.425,7,83.483,8.333C84.54,9.667,85.598,11,86.655,11C87.713,11,88.77,11,89.828,11C90.885,11,91.943,11,93,11L93,27C91.943,27,90.885,27,89.828,27C88.77,27,87.713,27,86.655,27C85.598,27,84.54,27,83.483,27C82.425,27,81.368,27,80.31,27C79.253,27,78.195,27,77.138,27C76.08,27,75.023,27,73.966,27C72.908,27,71.851,27,70.793,27C69.736,27,68.678,27,67.621,27C66.563,27,65.506,27,64.448,27C63.391,27,62.333,27,61.276,27C60.218,27,59.161,27,58.103,27C57.046,27,55.989,27,54.931,27C53.874,27,52.816,27,51.759,27C50.701,27,49.644,27,48.586,27C47.529,27,46.471,27,45.414,27C44.356,27,43.299,27,42.241,27C41.184,27,40.126,27,39.069,27C38.011,27,36.954,27,35.897,27C34.839,27,33.782,27,32.724,27C31.667,27,30.609,27,29.552,27C28.494,27,27.437,27,26.379,27C25.322,27,24.264,27,23.207,27C22.149,27,21.092,27,20.034,27C18.977,27,17.92,27,16.862,27C15.805,27,14.747,27,13.69,27C12.632,27,11.575,27,10.517,27C9.46,27,8.402,27,7.345,27C6.287,27,5.23,27,4.172,27C3.115,27,2.057,27,1,27Z"></path>
+                                                  <path className="recharts-area-curve recharts-curve" strokeWidth={1.5} fill="none" fillOpacity={0.12} height={24} stroke="var(--color-conversions)" width={92} d="M1,24.333C2.057,23,3.115,21.667,4.172,21.667C5.23,21.667,6.287,21.667,7.345,21.667C8.402,21.667,9.46,18.556,10.517,16.333C11.575,14.111,12.632,8.333,13.69,8.333C14.747,8.333,15.805,11,16.862,11C17.92,11,18.977,8.333,20.034,8.333C21.092,8.333,22.149,12.333,23.207,13.667C24.264,15,25.322,16.333,26.379,16.333C27.437,16.333,28.494,11,29.552,11C30.609,11,31.667,13.667,32.724,13.667C33.782,13.667,34.839,10.111,35.897,8.333C36.954,6.556,38.011,3,39.069,3C40.126,3,41.184,8.333,42.241,8.333C43.299,8.333,44.356,8.333,45.414,8.333C46.471,8.333,47.529,13.667,48.586,13.667C49.644,13.667,50.701,13.667,51.759,13.667C52.816,13.667,53.874,10.111,54.931,8.333C55.989,6.556,57.046,3,58.103,3C59.161,3,60.218,5.667,61.276,5.667C62.333,5.667,63.391,3,64.448,3C65.506,3,66.563,13.667,67.621,13.667C68.678,13.667,69.736,13.667,70.793,13.667C71.851,13.667,72.908,5.667,73.966,5.667C75.023,5.667,76.08,5.667,77.138,5.667C78.195,5.667,79.253,3,80.31,3C81.368,3,82.425,7,83.483,8.333C84.54,9.667,85.598,11,86.655,11C87.713,11,88.77,11,89.828,11C90.885,11,91.943,11,93,11"></path>
                                                 </g>
                                               </g>
                                             </g>
                                           </g>
                                         </g>
-                                        <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_400" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_500" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_600" tabIndex="-1">
+                                        <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_400" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_500" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_600" tabIndex={-1}>
                                           <g className="recharts-layer recharts-reference-dot">
-                                            <circle className="recharts-dot recharts-reference-dot-dot" x="29" y="6" r="2" fill="var(--color-conversions)" stroke="none" fillOpacity="1" strokeWidth="1" cx="93" cy="11.000000000000002"></circle>
+                                            <circle className="recharts-dot recharts-reference-dot-dot" x={29} y={6} r={2} fill="var(--color-conversions)" stroke="none" fillOpacity={1} strokeWidth={1} cx={93} cy={11.000000000000002}></circle>
                                           </g>
                                         </g>
-                                        <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_2000" tabIndex="-1"></g>
+                                        <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_2000" tabIndex={-1}></g>
                                       </svg>
                                     </div>
                                   </div>
@@ -1454,11 +1454,11 @@ export function Pattern() {
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) ps-(--frame-panel-header-px) px-2 py-1.5" data-pinned="end" data-last-col="end" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
                             <div className="flex justify-center">
                               <DropdownMenu>
-                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" rowActions="cmp_yqal3" aria-label="Actions for Alpine Fleece Launch" aria-haspopup="menu" id="base-ui-_r_36_" aria-expanded="false">
-                                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                  <circle cx="12" cy="12" r="1"></circle>
-                                  <circle cx="19" cy="12" r="1"></circle>
-                                  <circle cx="5" cy="12" r="1"></circle>
+                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} rowActions="cmp_yqal3" aria-label="Actions for Alpine Fleece Launch" aria-haspopup="menu" id="base-ui-_r_36_" aria-expanded="false">
+                                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                  <circle cx={12} cy={12} r={1}></circle>
+                                  <circle cx={19} cy={12} r={1}></circle>
+                                  <circle cx={5} cy={12} r={1}></circle>
                                 </svg>
                               </DropdownMenuTrigger>
                               </DropdownMenu>
@@ -1467,8 +1467,8 @@ export function Pattern() {
                         </tr>
                         <tr className="[&:not(:last-child)>td]:border-b data-[row-status=deleted]:[&_td]:line-through data-[row-status=deleted]:bg-destructive/5 data-[row-status=deleted]:opacity-60 data-[row-status=dirty]:bg-amber-500/5 data-[row-status=new]:bg-green-500/5 data-[state=selected]:bg-muted/50 hover:bg-muted/40" data-row-id="cmp_3g1ow">
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5" data-pinned="start" data-last-col="start" style={{width: "calc(var(--col-select-size) * 1px)"}}>
-                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_38_" aria-checked="false" aria-label="Select row"></Checkbox>
-                            <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_38_" aria-checked="false" aria-label="Select row"></Checkbox>
+                            <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                             <div className="flex gap-2.5 items-center min-w-0">
@@ -1487,7 +1487,7 @@ export function Pattern() {
                                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="shrink-0">
                                     <span className="flex gap-1.5 items-center min-w-0">
-                                      <img className="object-cover rounded-full shrink-0 size-4" alt="" width="16" height="16" loading="lazy" decoding="async" src="https://flagcdn.com/gb.svg" />
+                                      <img className="object-cover rounded-full shrink-0 size-4" alt="" width={16} height={16} loading="lazy" decoding="async" src="https://flagcdn.com/gb.svg" />
                                       <span className="font-mono text-xs" aria-hidden="true">
                                         {"GB"}
                                       </span>
@@ -1535,42 +1535,42 @@ export function Pattern() {
                               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-7 justify-center shrink-0 text-xs w-24" data-chart="chart-_r_3b_" aria-hidden="true">
                                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                                    <div className="recharts-wrapper" width="96" height="28" style={{position: "relative", cursor: "default", width: "96px", height: "28px"}}>
-                                      <svg className="recharts-surface" width="96" height="28" viewBox="0 0 96 28" style={{width: "100%", height: "100%", display: "block"}}>
+                                    <div className="recharts-wrapper" width={96} height={28} style={{position: "relative", cursor: "default", width: "96px", height: "28px"}}>
+                                      <svg className="recharts-surface" width={96} height={28} viewBox="0 0 96 28" style={{width: "100%", height: "100%", display: "block"}}>
                                         <title></title>
                                         <desc></desc>
-                                        <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                                        <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                                         <defs>
                                           <clippath id="recharts7-clip">
-                                            <rect x="1" y="3" height="24" width="92"></rect>
+                                            <rect x={1} y={3} height={24} width={92}></rect>
                                           </clippath>
                                         </defs>
-                                        <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                                        <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                                           <g className="recharts-area recharts-layer">
                                             <g className="recharts-layer">
                                               <g className="recharts-layer" clipPath="url(#animationClipPath-recharts-area-_r_4n_)">
                                                 <g className="recharts-layer">
-                                                  <path className="recharts-area-area recharts-curve" strokeWidth="1.5" fill="var(--color-conversions)" fillOpacity="0.12" height="24" stroke="none" width="92" id="recharts-area-_r_4n_" d="M1,24.474C2.057,22.895,3.115,21.316,4.172,21.316C5.23,21.316,6.287,21.947,7.345,21.947C8.402,21.947,9.46,19.105,10.517,18.158C11.575,17.211,12.632,16.263,13.69,16.263C14.747,16.263,15.805,17.526,16.862,17.526C17.92,17.526,18.977,17.316,20.034,16.895C21.092,16.474,22.149,11.421,23.207,10.579C24.264,9.737,25.322,9.316,26.379,9.316C27.437,9.316,28.494,10.789,29.552,11.842C30.609,12.895,31.667,14.579,32.724,15.632C33.782,16.684,34.839,18.158,35.897,18.158C36.954,18.158,38.011,11.211,39.069,11.211C40.126,11.211,41.184,14.368,42.241,14.368C43.299,14.368,44.356,9.947,45.414,9.947C46.471,9.947,47.529,11.632,48.586,12.474C49.644,13.316,50.701,15,51.759,15C52.816,15,53.874,12.579,54.931,11.842C55.989,11.105,57.046,10.579,58.103,10.579C59.161,10.579,60.218,11.211,61.276,11.211C62.333,11.211,63.391,11.211,64.448,11.211C65.506,11.211,66.563,11.842,67.621,11.842C68.678,11.842,69.736,3,70.793,3C71.851,3,72.908,3.421,73.966,4.263C75.023,5.105,76.08,13.105,77.138,13.105C78.195,13.105,79.253,11.842,80.31,11.842C81.368,11.842,82.425,12.474,83.483,12.474C84.54,12.474,85.598,3.632,86.655,3.632C87.713,3.632,88.77,6.368,89.828,7.421C90.885,8.474,91.943,9.211,93,9.947L93,27C91.943,27,90.885,27,89.828,27C88.77,27,87.713,27,86.655,27C85.598,27,84.54,27,83.483,27C82.425,27,81.368,27,80.31,27C79.253,27,78.195,27,77.138,27C76.08,27,75.023,27,73.966,27C72.908,27,71.851,27,70.793,27C69.736,27,68.678,27,67.621,27C66.563,27,65.506,27,64.448,27C63.391,27,62.333,27,61.276,27C60.218,27,59.161,27,58.103,27C57.046,27,55.989,27,54.931,27C53.874,27,52.816,27,51.759,27C50.701,27,49.644,27,48.586,27C47.529,27,46.471,27,45.414,27C44.356,27,43.299,27,42.241,27C41.184,27,40.126,27,39.069,27C38.011,27,36.954,27,35.897,27C34.839,27,33.782,27,32.724,27C31.667,27,30.609,27,29.552,27C28.494,27,27.437,27,26.379,27C25.322,27,24.264,27,23.207,27C22.149,27,21.092,27,20.034,27C18.977,27,17.92,27,16.862,27C15.805,27,14.747,27,13.69,27C12.632,27,11.575,27,10.517,27C9.46,27,8.402,27,7.345,27C6.287,27,5.23,27,4.172,27C3.115,27,2.057,27,1,27Z"></path>
-                                                  <path className="recharts-area-curve recharts-curve" strokeWidth="1.5" fill="none" fillOpacity="0.12" height="24" stroke="var(--color-conversions)" width="92" d="M1,24.474C2.057,22.895,3.115,21.316,4.172,21.316C5.23,21.316,6.287,21.947,7.345,21.947C8.402,21.947,9.46,19.105,10.517,18.158C11.575,17.211,12.632,16.263,13.69,16.263C14.747,16.263,15.805,17.526,16.862,17.526C17.92,17.526,18.977,17.316,20.034,16.895C21.092,16.474,22.149,11.421,23.207,10.579C24.264,9.737,25.322,9.316,26.379,9.316C27.437,9.316,28.494,10.789,29.552,11.842C30.609,12.895,31.667,14.579,32.724,15.632C33.782,16.684,34.839,18.158,35.897,18.158C36.954,18.158,38.011,11.211,39.069,11.211C40.126,11.211,41.184,14.368,42.241,14.368C43.299,14.368,44.356,9.947,45.414,9.947C46.471,9.947,47.529,11.632,48.586,12.474C49.644,13.316,50.701,15,51.759,15C52.816,15,53.874,12.579,54.931,11.842C55.989,11.105,57.046,10.579,58.103,10.579C59.161,10.579,60.218,11.211,61.276,11.211C62.333,11.211,63.391,11.211,64.448,11.211C65.506,11.211,66.563,11.842,67.621,11.842C68.678,11.842,69.736,3,70.793,3C71.851,3,72.908,3.421,73.966,4.263C75.023,5.105,76.08,13.105,77.138,13.105C78.195,13.105,79.253,11.842,80.31,11.842C81.368,11.842,82.425,12.474,83.483,12.474C84.54,12.474,85.598,3.632,86.655,3.632C87.713,3.632,88.77,6.368,89.828,7.421C90.885,8.474,91.943,9.211,93,9.947"></path>
+                                                  <path className="recharts-area-area recharts-curve" strokeWidth={1.5} fill="var(--color-conversions)" fillOpacity={0.12} height={24} stroke="none" width={92} id="recharts-area-_r_4n_" d="M1,24.474C2.057,22.895,3.115,21.316,4.172,21.316C5.23,21.316,6.287,21.947,7.345,21.947C8.402,21.947,9.46,19.105,10.517,18.158C11.575,17.211,12.632,16.263,13.69,16.263C14.747,16.263,15.805,17.526,16.862,17.526C17.92,17.526,18.977,17.316,20.034,16.895C21.092,16.474,22.149,11.421,23.207,10.579C24.264,9.737,25.322,9.316,26.379,9.316C27.437,9.316,28.494,10.789,29.552,11.842C30.609,12.895,31.667,14.579,32.724,15.632C33.782,16.684,34.839,18.158,35.897,18.158C36.954,18.158,38.011,11.211,39.069,11.211C40.126,11.211,41.184,14.368,42.241,14.368C43.299,14.368,44.356,9.947,45.414,9.947C46.471,9.947,47.529,11.632,48.586,12.474C49.644,13.316,50.701,15,51.759,15C52.816,15,53.874,12.579,54.931,11.842C55.989,11.105,57.046,10.579,58.103,10.579C59.161,10.579,60.218,11.211,61.276,11.211C62.333,11.211,63.391,11.211,64.448,11.211C65.506,11.211,66.563,11.842,67.621,11.842C68.678,11.842,69.736,3,70.793,3C71.851,3,72.908,3.421,73.966,4.263C75.023,5.105,76.08,13.105,77.138,13.105C78.195,13.105,79.253,11.842,80.31,11.842C81.368,11.842,82.425,12.474,83.483,12.474C84.54,12.474,85.598,3.632,86.655,3.632C87.713,3.632,88.77,6.368,89.828,7.421C90.885,8.474,91.943,9.211,93,9.947L93,27C91.943,27,90.885,27,89.828,27C88.77,27,87.713,27,86.655,27C85.598,27,84.54,27,83.483,27C82.425,27,81.368,27,80.31,27C79.253,27,78.195,27,77.138,27C76.08,27,75.023,27,73.966,27C72.908,27,71.851,27,70.793,27C69.736,27,68.678,27,67.621,27C66.563,27,65.506,27,64.448,27C63.391,27,62.333,27,61.276,27C60.218,27,59.161,27,58.103,27C57.046,27,55.989,27,54.931,27C53.874,27,52.816,27,51.759,27C50.701,27,49.644,27,48.586,27C47.529,27,46.471,27,45.414,27C44.356,27,43.299,27,42.241,27C41.184,27,40.126,27,39.069,27C38.011,27,36.954,27,35.897,27C34.839,27,33.782,27,32.724,27C31.667,27,30.609,27,29.552,27C28.494,27,27.437,27,26.379,27C25.322,27,24.264,27,23.207,27C22.149,27,21.092,27,20.034,27C18.977,27,17.92,27,16.862,27C15.805,27,14.747,27,13.69,27C12.632,27,11.575,27,10.517,27C9.46,27,8.402,27,7.345,27C6.287,27,5.23,27,4.172,27C3.115,27,2.057,27,1,27Z"></path>
+                                                  <path className="recharts-area-curve recharts-curve" strokeWidth={1.5} fill="none" fillOpacity={0.12} height={24} stroke="var(--color-conversions)" width={92} d="M1,24.474C2.057,22.895,3.115,21.316,4.172,21.316C5.23,21.316,6.287,21.947,7.345,21.947C8.402,21.947,9.46,19.105,10.517,18.158C11.575,17.211,12.632,16.263,13.69,16.263C14.747,16.263,15.805,17.526,16.862,17.526C17.92,17.526,18.977,17.316,20.034,16.895C21.092,16.474,22.149,11.421,23.207,10.579C24.264,9.737,25.322,9.316,26.379,9.316C27.437,9.316,28.494,10.789,29.552,11.842C30.609,12.895,31.667,14.579,32.724,15.632C33.782,16.684,34.839,18.158,35.897,18.158C36.954,18.158,38.011,11.211,39.069,11.211C40.126,11.211,41.184,14.368,42.241,14.368C43.299,14.368,44.356,9.947,45.414,9.947C46.471,9.947,47.529,11.632,48.586,12.474C49.644,13.316,50.701,15,51.759,15C52.816,15,53.874,12.579,54.931,11.842C55.989,11.105,57.046,10.579,58.103,10.579C59.161,10.579,60.218,11.211,61.276,11.211C62.333,11.211,63.391,11.211,64.448,11.211C65.506,11.211,66.563,11.842,67.621,11.842C68.678,11.842,69.736,3,70.793,3C71.851,3,72.908,3.421,73.966,4.263C75.023,5.105,76.08,13.105,77.138,13.105C78.195,13.105,79.253,11.842,80.31,11.842C81.368,11.842,82.425,12.474,83.483,12.474C84.54,12.474,85.598,3.632,86.655,3.632C87.713,3.632,88.77,6.368,89.828,7.421C90.885,8.474,91.943,9.211,93,9.947"></path>
                                                 </g>
                                               </g>
                                             </g>
                                           </g>
                                         </g>
-                                        <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_400" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_500" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_600" tabIndex="-1">
+                                        <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_400" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_500" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_600" tabIndex={-1}>
                                           <g className="recharts-layer recharts-reference-dot">
-                                            <circle className="recharts-dot recharts-reference-dot-dot" x="29" y="27" r="2" fill="var(--color-conversions)" stroke="none" fillOpacity="1" strokeWidth="1" cx="93" cy="9.947368421052632"></circle>
+                                            <circle className="recharts-dot recharts-reference-dot-dot" x={29} y={27} r={2} fill="var(--color-conversions)" stroke="none" fillOpacity={1} strokeWidth={1} cx={93} cy={9.947368421052632}></circle>
                                           </g>
                                         </g>
-                                        <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_2000" tabIndex="-1"></g>
+                                        <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_2000" tabIndex={-1}></g>
                                       </svg>
                                     </div>
                                   </div>
@@ -1622,11 +1622,11 @@ export function Pattern() {
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) ps-(--frame-panel-header-px) px-2 py-1.5" data-pinned="end" data-last-col="end" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
                             <div className="flex justify-center">
                               <DropdownMenu>
-                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" rowActions="cmp_3g1ow" aria-label="Actions for Meadow Hammock Creator Cuts" aria-haspopup="menu" id="base-ui-_r_3f_" aria-expanded="false">
-                                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                  <circle cx="12" cy="12" r="1"></circle>
-                                  <circle cx="19" cy="12" r="1"></circle>
-                                  <circle cx="5" cy="12" r="1"></circle>
+                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} rowActions="cmp_3g1ow" aria-label="Actions for Meadow Hammock Creator Cuts" aria-haspopup="menu" id="base-ui-_r_3f_" aria-expanded="false">
+                                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                  <circle cx={12} cy={12} r={1}></circle>
+                                  <circle cx={19} cy={12} r={1}></circle>
+                                  <circle cx={5} cy={12} r={1}></circle>
                                 </svg>
                               </DropdownMenuTrigger>
                               </DropdownMenu>
@@ -1635,8 +1635,8 @@ export function Pattern() {
                         </tr>
                         <tr className="[&:not(:last-child)>td]:border-b data-[row-status=deleted]:[&_td]:line-through data-[row-status=deleted]:bg-destructive/5 data-[row-status=deleted]:opacity-60 data-[row-status=dirty]:bg-amber-500/5 data-[row-status=new]:bg-green-500/5 data-[state=selected]:bg-muted/50 hover:bg-muted/40" data-row-id="cmp_vqkbq">
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5" data-pinned="start" data-last-col="start" style={{width: "calc(var(--col-select-size) * 1px)"}}>
-                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_3h_" aria-checked="false" aria-label="Select row"></Checkbox>
-                            <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_3h_" aria-checked="false" aria-label="Select row"></Checkbox>
+                            <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                             <div className="flex gap-2.5 items-center min-w-0">
@@ -1655,7 +1655,7 @@ export function Pattern() {
                                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="shrink-0">
                                     <span className="flex gap-1.5 items-center min-w-0">
-                                      <img className="object-cover rounded-full shrink-0 size-4" alt="" width="16" height="16" loading="lazy" decoding="async" src="https://flagcdn.com/us.svg" />
+                                      <img className="object-cover rounded-full shrink-0 size-4" alt="" width={16} height={16} loading="lazy" decoding="async" src="https://flagcdn.com/us.svg" />
                                       <span className="font-mono text-xs" aria-hidden="true">
                                         {"US"}
                                       </span>
@@ -1703,42 +1703,42 @@ export function Pattern() {
                               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-7 justify-center shrink-0 text-xs w-24" data-chart="chart-_r_3k_" aria-hidden="true">
                                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                                    <div className="recharts-wrapper" width="96" height="28" style={{position: "relative", cursor: "default", width: "96px", height: "28px"}}>
-                                      <svg className="recharts-surface" width="96" height="28" viewBox="0 0 96 28" style={{width: "100%", height: "100%", display: "block"}}>
+                                    <div className="recharts-wrapper" width={96} height={28} style={{position: "relative", cursor: "default", width: "96px", height: "28px"}}>
+                                      <svg className="recharts-surface" width={96} height={28} viewBox="0 0 96 28" style={{width: "100%", height: "100%", display: "block"}}>
                                         <title></title>
                                         <desc></desc>
-                                        <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                                        <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                                         <defs>
                                           <clippath id="recharts8-clip">
-                                            <rect x="1" y="3" height="24" width="92"></rect>
+                                            <rect x={1} y={3} height={24} width={92}></rect>
                                           </clippath>
                                         </defs>
-                                        <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                                        <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                                           <g className="recharts-area recharts-layer">
                                             <g className="recharts-layer">
                                               <g className="recharts-layer" clipPath="url(#animationClipPath-recharts-area-_r_4o_)">
                                                 <g className="recharts-layer">
-                                                  <path className="recharts-area-area recharts-curve" strokeWidth="1.5" fill="var(--color-conversions)" fillOpacity="0.12" height="24" stroke="none" width="92" id="recharts-area-_r_4o_" d="M1,23.377C2.057,22.189,3.115,21,4.172,19.981C5.23,18.962,6.287,18.132,7.345,17.264C8.402,16.396,9.46,15.528,10.517,14.774C11.575,14.019,12.632,12.736,13.69,12.736C14.747,12.736,15.805,17.038,16.862,17.038C17.92,17.038,18.977,16.962,20.034,16.811C21.092,16.66,22.149,7.075,23.207,7.075C24.264,7.075,25.322,10.019,26.379,10.019C27.437,10.019,28.494,8.208,29.552,8.208C30.609,8.208,31.667,14.094,32.724,14.094C33.782,14.094,34.839,13.189,35.897,13.189C36.954,13.189,38.011,13.415,39.069,13.415C40.126,13.415,41.184,13.415,42.241,13.415C43.299,13.415,44.356,13.189,45.414,12.736C46.471,12.283,47.529,8.962,48.586,8.208C49.644,7.453,50.701,7.075,51.759,7.075C52.816,7.075,53.874,7.302,54.931,7.755C55.989,8.208,57.046,9.491,58.103,10.472C59.161,11.453,60.218,13.642,61.276,13.642C62.333,13.642,63.391,11.83,64.448,10.472C65.506,9.113,66.563,5.491,67.621,5.491C68.678,5.491,69.736,11.151,70.793,11.151C71.851,11.151,72.908,8.66,73.966,7.302C75.023,5.943,76.08,3,77.138,3C78.195,3,79.253,10.472,80.31,10.472C81.368,10.472,82.425,9.34,83.483,9.34C84.54,9.34,85.598,9.34,86.655,9.34C87.713,9.34,88.77,3.906,89.828,3.906C90.885,3.906,91.943,5.717,93,7.528L93,27C91.943,27,90.885,27,89.828,27C88.77,27,87.713,27,86.655,27C85.598,27,84.54,27,83.483,27C82.425,27,81.368,27,80.31,27C79.253,27,78.195,27,77.138,27C76.08,27,75.023,27,73.966,27C72.908,27,71.851,27,70.793,27C69.736,27,68.678,27,67.621,27C66.563,27,65.506,27,64.448,27C63.391,27,62.333,27,61.276,27C60.218,27,59.161,27,58.103,27C57.046,27,55.989,27,54.931,27C53.874,27,52.816,27,51.759,27C50.701,27,49.644,27,48.586,27C47.529,27,46.471,27,45.414,27C44.356,27,43.299,27,42.241,27C41.184,27,40.126,27,39.069,27C38.011,27,36.954,27,35.897,27C34.839,27,33.782,27,32.724,27C31.667,27,30.609,27,29.552,27C28.494,27,27.437,27,26.379,27C25.322,27,24.264,27,23.207,27C22.149,27,21.092,27,20.034,27C18.977,27,17.92,27,16.862,27C15.805,27,14.747,27,13.69,27C12.632,27,11.575,27,10.517,27C9.46,27,8.402,27,7.345,27C6.287,27,5.23,27,4.172,27C3.115,27,2.057,27,1,27Z"></path>
-                                                  <path className="recharts-area-curve recharts-curve" strokeWidth="1.5" fill="none" fillOpacity="0.12" height="24" stroke="var(--color-conversions)" width="92" d="M1,23.377C2.057,22.189,3.115,21,4.172,19.981C5.23,18.962,6.287,18.132,7.345,17.264C8.402,16.396,9.46,15.528,10.517,14.774C11.575,14.019,12.632,12.736,13.69,12.736C14.747,12.736,15.805,17.038,16.862,17.038C17.92,17.038,18.977,16.962,20.034,16.811C21.092,16.66,22.149,7.075,23.207,7.075C24.264,7.075,25.322,10.019,26.379,10.019C27.437,10.019,28.494,8.208,29.552,8.208C30.609,8.208,31.667,14.094,32.724,14.094C33.782,14.094,34.839,13.189,35.897,13.189C36.954,13.189,38.011,13.415,39.069,13.415C40.126,13.415,41.184,13.415,42.241,13.415C43.299,13.415,44.356,13.189,45.414,12.736C46.471,12.283,47.529,8.962,48.586,8.208C49.644,7.453,50.701,7.075,51.759,7.075C52.816,7.075,53.874,7.302,54.931,7.755C55.989,8.208,57.046,9.491,58.103,10.472C59.161,11.453,60.218,13.642,61.276,13.642C62.333,13.642,63.391,11.83,64.448,10.472C65.506,9.113,66.563,5.491,67.621,5.491C68.678,5.491,69.736,11.151,70.793,11.151C71.851,11.151,72.908,8.66,73.966,7.302C75.023,5.943,76.08,3,77.138,3C78.195,3,79.253,10.472,80.31,10.472C81.368,10.472,82.425,9.34,83.483,9.34C84.54,9.34,85.598,9.34,86.655,9.34C87.713,9.34,88.77,3.906,89.828,3.906C90.885,3.906,91.943,5.717,93,7.528"></path>
+                                                  <path className="recharts-area-area recharts-curve" strokeWidth={1.5} fill="var(--color-conversions)" fillOpacity={0.12} height={24} stroke="none" width={92} id="recharts-area-_r_4o_" d="M1,23.377C2.057,22.189,3.115,21,4.172,19.981C5.23,18.962,6.287,18.132,7.345,17.264C8.402,16.396,9.46,15.528,10.517,14.774C11.575,14.019,12.632,12.736,13.69,12.736C14.747,12.736,15.805,17.038,16.862,17.038C17.92,17.038,18.977,16.962,20.034,16.811C21.092,16.66,22.149,7.075,23.207,7.075C24.264,7.075,25.322,10.019,26.379,10.019C27.437,10.019,28.494,8.208,29.552,8.208C30.609,8.208,31.667,14.094,32.724,14.094C33.782,14.094,34.839,13.189,35.897,13.189C36.954,13.189,38.011,13.415,39.069,13.415C40.126,13.415,41.184,13.415,42.241,13.415C43.299,13.415,44.356,13.189,45.414,12.736C46.471,12.283,47.529,8.962,48.586,8.208C49.644,7.453,50.701,7.075,51.759,7.075C52.816,7.075,53.874,7.302,54.931,7.755C55.989,8.208,57.046,9.491,58.103,10.472C59.161,11.453,60.218,13.642,61.276,13.642C62.333,13.642,63.391,11.83,64.448,10.472C65.506,9.113,66.563,5.491,67.621,5.491C68.678,5.491,69.736,11.151,70.793,11.151C71.851,11.151,72.908,8.66,73.966,7.302C75.023,5.943,76.08,3,77.138,3C78.195,3,79.253,10.472,80.31,10.472C81.368,10.472,82.425,9.34,83.483,9.34C84.54,9.34,85.598,9.34,86.655,9.34C87.713,9.34,88.77,3.906,89.828,3.906C90.885,3.906,91.943,5.717,93,7.528L93,27C91.943,27,90.885,27,89.828,27C88.77,27,87.713,27,86.655,27C85.598,27,84.54,27,83.483,27C82.425,27,81.368,27,80.31,27C79.253,27,78.195,27,77.138,27C76.08,27,75.023,27,73.966,27C72.908,27,71.851,27,70.793,27C69.736,27,68.678,27,67.621,27C66.563,27,65.506,27,64.448,27C63.391,27,62.333,27,61.276,27C60.218,27,59.161,27,58.103,27C57.046,27,55.989,27,54.931,27C53.874,27,52.816,27,51.759,27C50.701,27,49.644,27,48.586,27C47.529,27,46.471,27,45.414,27C44.356,27,43.299,27,42.241,27C41.184,27,40.126,27,39.069,27C38.011,27,36.954,27,35.897,27C34.839,27,33.782,27,32.724,27C31.667,27,30.609,27,29.552,27C28.494,27,27.437,27,26.379,27C25.322,27,24.264,27,23.207,27C22.149,27,21.092,27,20.034,27C18.977,27,17.92,27,16.862,27C15.805,27,14.747,27,13.69,27C12.632,27,11.575,27,10.517,27C9.46,27,8.402,27,7.345,27C6.287,27,5.23,27,4.172,27C3.115,27,2.057,27,1,27Z"></path>
+                                                  <path className="recharts-area-curve recharts-curve" strokeWidth={1.5} fill="none" fillOpacity={0.12} height={24} stroke="var(--color-conversions)" width={92} d="M1,23.377C2.057,22.189,3.115,21,4.172,19.981C5.23,18.962,6.287,18.132,7.345,17.264C8.402,16.396,9.46,15.528,10.517,14.774C11.575,14.019,12.632,12.736,13.69,12.736C14.747,12.736,15.805,17.038,16.862,17.038C17.92,17.038,18.977,16.962,20.034,16.811C21.092,16.66,22.149,7.075,23.207,7.075C24.264,7.075,25.322,10.019,26.379,10.019C27.437,10.019,28.494,8.208,29.552,8.208C30.609,8.208,31.667,14.094,32.724,14.094C33.782,14.094,34.839,13.189,35.897,13.189C36.954,13.189,38.011,13.415,39.069,13.415C40.126,13.415,41.184,13.415,42.241,13.415C43.299,13.415,44.356,13.189,45.414,12.736C46.471,12.283,47.529,8.962,48.586,8.208C49.644,7.453,50.701,7.075,51.759,7.075C52.816,7.075,53.874,7.302,54.931,7.755C55.989,8.208,57.046,9.491,58.103,10.472C59.161,11.453,60.218,13.642,61.276,13.642C62.333,13.642,63.391,11.83,64.448,10.472C65.506,9.113,66.563,5.491,67.621,5.491C68.678,5.491,69.736,11.151,70.793,11.151C71.851,11.151,72.908,8.66,73.966,7.302C75.023,5.943,76.08,3,77.138,3C78.195,3,79.253,10.472,80.31,10.472C81.368,10.472,82.425,9.34,83.483,9.34C84.54,9.34,85.598,9.34,86.655,9.34C87.713,9.34,88.77,3.906,89.828,3.906C90.885,3.906,91.943,5.717,93,7.528"></path>
                                                 </g>
                                               </g>
                                             </g>
                                           </g>
                                         </g>
-                                        <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_400" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_500" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_600" tabIndex="-1">
+                                        <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_400" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_500" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_600" tabIndex={-1}>
                                           <g className="recharts-layer recharts-reference-dot">
-                                            <circle className="recharts-dot recharts-reference-dot-dot" x="29" y="86" r="2" fill="var(--color-conversions)" stroke="none" fillOpacity="1" strokeWidth="1" cx="93" cy="7.528301886792452"></circle>
+                                            <circle className="recharts-dot recharts-reference-dot-dot" x={29} y={86} r={2} fill="var(--color-conversions)" stroke="none" fillOpacity={1} strokeWidth={1} cx={93} cy={7.528301886792452}></circle>
                                           </g>
                                         </g>
-                                        <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_2000" tabIndex="-1"></g>
+                                        <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_2000" tabIndex={-1}></g>
                                       </svg>
                                     </div>
                                   </div>
@@ -1790,11 +1790,11 @@ export function Pattern() {
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) ps-(--frame-panel-header-px) px-2 py-1.5" data-pinned="end" data-last-col="end" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
                             <div className="flex justify-center">
                               <DropdownMenu>
-                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" rowActions="cmp_vqkbq" aria-label="Actions for Glacier Gloves Brand Exact" aria-haspopup="menu" id="base-ui-_r_3o_" aria-expanded="false">
-                                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                  <circle cx="12" cy="12" r="1"></circle>
-                                  <circle cx="19" cy="12" r="1"></circle>
-                                  <circle cx="5" cy="12" r="1"></circle>
+                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} rowActions="cmp_vqkbq" aria-label="Actions for Glacier Gloves Brand Exact" aria-haspopup="menu" id="base-ui-_r_3o_" aria-expanded="false">
+                                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                  <circle cx={12} cy={12} r={1}></circle>
+                                  <circle cx={19} cy={12} r={1}></circle>
+                                  <circle cx={5} cy={12} r={1}></circle>
                                 </svg>
                               </DropdownMenuTrigger>
                               </DropdownMenu>
@@ -1803,8 +1803,8 @@ export function Pattern() {
                         </tr>
                         <tr className="[&:not(:last-child)>td]:border-b data-[row-status=deleted]:[&_td]:line-through data-[row-status=deleted]:bg-destructive/5 data-[row-status=deleted]:opacity-60 data-[row-status=dirty]:bg-amber-500/5 data-[row-status=new]:bg-green-500/5 data-[state=selected]:bg-muted/50 hover:bg-muted/40" data-row-id="cmp_6fry9">
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5" data-pinned="start" data-last-col="start" style={{width: "calc(var(--col-select-size) * 1px)"}}>
-                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_3q_" aria-checked="false" aria-label="Select row"></Checkbox>
-                            <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_3q_" aria-checked="false" aria-label="Select row"></Checkbox>
+                            <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                             <div className="flex gap-2.5 items-center min-w-0">
@@ -1823,7 +1823,7 @@ export function Pattern() {
                                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="shrink-0">
                                     <span className="flex gap-1.5 items-center min-w-0">
-                                      <img className="object-cover rounded-full shrink-0 size-4" alt="" width="16" height="16" loading="lazy" decoding="async" src="https://flagcdn.com/de.svg" />
+                                      <img className="object-cover rounded-full shrink-0 size-4" alt="" width={16} height={16} loading="lazy" decoding="async" src="https://flagcdn.com/de.svg" />
                                       <span className="font-mono text-xs" aria-hidden="true">
                                         {"DE"}
                                       </span>
@@ -1871,42 +1871,42 @@ export function Pattern() {
                               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-7 justify-center shrink-0 text-xs w-24" data-chart="chart-_r_3t_" aria-hidden="true">
                                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                                    <div className="recharts-wrapper" width="96" height="28" style={{position: "relative", cursor: "default", width: "96px", height: "28px"}}>
-                                      <svg className="recharts-surface" width="96" height="28" viewBox="0 0 96 28" style={{width: "100%", height: "100%", display: "block"}}>
+                                    <div className="recharts-wrapper" width={96} height={28} style={{position: "relative", cursor: "default", width: "96px", height: "28px"}}>
+                                      <svg className="recharts-surface" width={96} height={28} viewBox="0 0 96 28" style={{width: "100%", height: "100%", display: "block"}}>
                                         <title></title>
                                         <desc></desc>
-                                        <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                                        <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                                         <defs>
                                           <clippath id="recharts9-clip">
-                                            <rect x="1" y="3" height="24" width="92"></rect>
+                                            <rect x={1} y={3} height={24} width={92}></rect>
                                           </clippath>
                                         </defs>
-                                        <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                                        <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                                           <g className="recharts-area recharts-layer">
                                             <g className="recharts-layer">
                                               <g className="recharts-layer" clipPath="url(#animationClipPath-recharts-area-_r_4p_)">
                                                 <g className="recharts-layer">
-                                                  <path className="recharts-area-area recharts-curve" strokeWidth="1.5" fill="var(--color-conversions)" fillOpacity="0.12" height="24" stroke="none" width="92" id="recharts-area-_r_4p_" d="M1,24.831C2.057,23.486,3.115,22.141,4.172,20.356C5.23,18.571,6.287,14.119,7.345,14.119C8.402,14.119,9.46,14.39,10.517,14.39C11.575,14.39,12.632,13.712,13.69,13.712C14.747,13.712,15.805,13.847,16.862,13.847C17.92,13.847,18.977,8.831,20.034,8.831C21.092,8.831,22.149,14.119,23.207,14.119C24.264,14.119,25.322,13.667,26.379,12.763C27.437,11.859,28.494,6.525,29.552,6.525C30.609,6.525,31.667,7.339,32.724,7.339C33.782,7.339,34.839,6.254,35.897,6.254C36.954,6.254,38.011,15.203,39.069,15.203C40.126,15.203,41.184,13.147,42.241,11.949C43.299,10.751,44.356,8.017,45.414,8.017C46.471,8.017,47.529,13.712,48.586,13.712C49.644,13.712,50.701,5.034,51.759,4.22C52.816,3.407,53.874,3,54.931,3C55.989,3,57.046,14.119,58.103,14.119C59.161,14.119,60.218,7.881,61.276,7.881C62.333,7.881,63.391,16.017,64.448,16.017C65.506,16.017,66.563,14.48,67.621,13.169C68.678,11.859,69.736,8.153,70.793,8.153C71.851,8.153,72.908,9.237,73.966,9.237C75.023,9.237,76.08,5.305,77.138,5.305C78.195,5.305,79.253,11.814,80.31,11.814C81.368,11.814,82.425,11.814,83.483,11.814C84.54,11.814,85.598,12.085,86.655,12.627C87.713,13.169,88.77,15.203,89.828,15.203C90.885,15.203,91.943,10.39,93,5.576L93,27C91.943,27,90.885,27,89.828,27C88.77,27,87.713,27,86.655,27C85.598,27,84.54,27,83.483,27C82.425,27,81.368,27,80.31,27C79.253,27,78.195,27,77.138,27C76.08,27,75.023,27,73.966,27C72.908,27,71.851,27,70.793,27C69.736,27,68.678,27,67.621,27C66.563,27,65.506,27,64.448,27C63.391,27,62.333,27,61.276,27C60.218,27,59.161,27,58.103,27C57.046,27,55.989,27,54.931,27C53.874,27,52.816,27,51.759,27C50.701,27,49.644,27,48.586,27C47.529,27,46.471,27,45.414,27C44.356,27,43.299,27,42.241,27C41.184,27,40.126,27,39.069,27C38.011,27,36.954,27,35.897,27C34.839,27,33.782,27,32.724,27C31.667,27,30.609,27,29.552,27C28.494,27,27.437,27,26.379,27C25.322,27,24.264,27,23.207,27C22.149,27,21.092,27,20.034,27C18.977,27,17.92,27,16.862,27C15.805,27,14.747,27,13.69,27C12.632,27,11.575,27,10.517,27C9.46,27,8.402,27,7.345,27C6.287,27,5.23,27,4.172,27C3.115,27,2.057,27,1,27Z"></path>
-                                                  <path className="recharts-area-curve recharts-curve" strokeWidth="1.5" fill="none" fillOpacity="0.12" height="24" stroke="var(--color-conversions)" width="92" d="M1,24.831C2.057,23.486,3.115,22.141,4.172,20.356C5.23,18.571,6.287,14.119,7.345,14.119C8.402,14.119,9.46,14.39,10.517,14.39C11.575,14.39,12.632,13.712,13.69,13.712C14.747,13.712,15.805,13.847,16.862,13.847C17.92,13.847,18.977,8.831,20.034,8.831C21.092,8.831,22.149,14.119,23.207,14.119C24.264,14.119,25.322,13.667,26.379,12.763C27.437,11.859,28.494,6.525,29.552,6.525C30.609,6.525,31.667,7.339,32.724,7.339C33.782,7.339,34.839,6.254,35.897,6.254C36.954,6.254,38.011,15.203,39.069,15.203C40.126,15.203,41.184,13.147,42.241,11.949C43.299,10.751,44.356,8.017,45.414,8.017C46.471,8.017,47.529,13.712,48.586,13.712C49.644,13.712,50.701,5.034,51.759,4.22C52.816,3.407,53.874,3,54.931,3C55.989,3,57.046,14.119,58.103,14.119C59.161,14.119,60.218,7.881,61.276,7.881C62.333,7.881,63.391,16.017,64.448,16.017C65.506,16.017,66.563,14.48,67.621,13.169C68.678,11.859,69.736,8.153,70.793,8.153C71.851,8.153,72.908,9.237,73.966,9.237C75.023,9.237,76.08,5.305,77.138,5.305C78.195,5.305,79.253,11.814,80.31,11.814C81.368,11.814,82.425,11.814,83.483,11.814C84.54,11.814,85.598,12.085,86.655,12.627C87.713,13.169,88.77,15.203,89.828,15.203C90.885,15.203,91.943,10.39,93,5.576"></path>
+                                                  <path className="recharts-area-area recharts-curve" strokeWidth={1.5} fill="var(--color-conversions)" fillOpacity={0.12} height={24} stroke="none" width={92} id="recharts-area-_r_4p_" d="M1,24.831C2.057,23.486,3.115,22.141,4.172,20.356C5.23,18.571,6.287,14.119,7.345,14.119C8.402,14.119,9.46,14.39,10.517,14.39C11.575,14.39,12.632,13.712,13.69,13.712C14.747,13.712,15.805,13.847,16.862,13.847C17.92,13.847,18.977,8.831,20.034,8.831C21.092,8.831,22.149,14.119,23.207,14.119C24.264,14.119,25.322,13.667,26.379,12.763C27.437,11.859,28.494,6.525,29.552,6.525C30.609,6.525,31.667,7.339,32.724,7.339C33.782,7.339,34.839,6.254,35.897,6.254C36.954,6.254,38.011,15.203,39.069,15.203C40.126,15.203,41.184,13.147,42.241,11.949C43.299,10.751,44.356,8.017,45.414,8.017C46.471,8.017,47.529,13.712,48.586,13.712C49.644,13.712,50.701,5.034,51.759,4.22C52.816,3.407,53.874,3,54.931,3C55.989,3,57.046,14.119,58.103,14.119C59.161,14.119,60.218,7.881,61.276,7.881C62.333,7.881,63.391,16.017,64.448,16.017C65.506,16.017,66.563,14.48,67.621,13.169C68.678,11.859,69.736,8.153,70.793,8.153C71.851,8.153,72.908,9.237,73.966,9.237C75.023,9.237,76.08,5.305,77.138,5.305C78.195,5.305,79.253,11.814,80.31,11.814C81.368,11.814,82.425,11.814,83.483,11.814C84.54,11.814,85.598,12.085,86.655,12.627C87.713,13.169,88.77,15.203,89.828,15.203C90.885,15.203,91.943,10.39,93,5.576L93,27C91.943,27,90.885,27,89.828,27C88.77,27,87.713,27,86.655,27C85.598,27,84.54,27,83.483,27C82.425,27,81.368,27,80.31,27C79.253,27,78.195,27,77.138,27C76.08,27,75.023,27,73.966,27C72.908,27,71.851,27,70.793,27C69.736,27,68.678,27,67.621,27C66.563,27,65.506,27,64.448,27C63.391,27,62.333,27,61.276,27C60.218,27,59.161,27,58.103,27C57.046,27,55.989,27,54.931,27C53.874,27,52.816,27,51.759,27C50.701,27,49.644,27,48.586,27C47.529,27,46.471,27,45.414,27C44.356,27,43.299,27,42.241,27C41.184,27,40.126,27,39.069,27C38.011,27,36.954,27,35.897,27C34.839,27,33.782,27,32.724,27C31.667,27,30.609,27,29.552,27C28.494,27,27.437,27,26.379,27C25.322,27,24.264,27,23.207,27C22.149,27,21.092,27,20.034,27C18.977,27,17.92,27,16.862,27C15.805,27,14.747,27,13.69,27C12.632,27,11.575,27,10.517,27C9.46,27,8.402,27,7.345,27C6.287,27,5.23,27,4.172,27C3.115,27,2.057,27,1,27Z"></path>
+                                                  <path className="recharts-area-curve recharts-curve" strokeWidth={1.5} fill="none" fillOpacity={0.12} height={24} stroke="var(--color-conversions)" width={92} d="M1,24.831C2.057,23.486,3.115,22.141,4.172,20.356C5.23,18.571,6.287,14.119,7.345,14.119C8.402,14.119,9.46,14.39,10.517,14.39C11.575,14.39,12.632,13.712,13.69,13.712C14.747,13.712,15.805,13.847,16.862,13.847C17.92,13.847,18.977,8.831,20.034,8.831C21.092,8.831,22.149,14.119,23.207,14.119C24.264,14.119,25.322,13.667,26.379,12.763C27.437,11.859,28.494,6.525,29.552,6.525C30.609,6.525,31.667,7.339,32.724,7.339C33.782,7.339,34.839,6.254,35.897,6.254C36.954,6.254,38.011,15.203,39.069,15.203C40.126,15.203,41.184,13.147,42.241,11.949C43.299,10.751,44.356,8.017,45.414,8.017C46.471,8.017,47.529,13.712,48.586,13.712C49.644,13.712,50.701,5.034,51.759,4.22C52.816,3.407,53.874,3,54.931,3C55.989,3,57.046,14.119,58.103,14.119C59.161,14.119,60.218,7.881,61.276,7.881C62.333,7.881,63.391,16.017,64.448,16.017C65.506,16.017,66.563,14.48,67.621,13.169C68.678,11.859,69.736,8.153,70.793,8.153C71.851,8.153,72.908,9.237,73.966,9.237C75.023,9.237,76.08,5.305,77.138,5.305C78.195,5.305,79.253,11.814,80.31,11.814C81.368,11.814,82.425,11.814,83.483,11.814C84.54,11.814,85.598,12.085,86.655,12.627C87.713,13.169,88.77,15.203,89.828,15.203C90.885,15.203,91.943,10.39,93,5.576"></path>
                                                 </g>
                                               </g>
                                             </g>
                                           </g>
                                         </g>
-                                        <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_400" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_500" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_600" tabIndex="-1">
+                                        <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_400" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_500" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_600" tabIndex={-1}>
                                           <g className="recharts-layer recharts-reference-dot">
-                                            <circle className="recharts-dot recharts-reference-dot-dot" x="29" y="158" r="2" fill="var(--color-conversions)" stroke="none" fillOpacity="1" strokeWidth="1" cx="93" cy="5.576271186440678"></circle>
+                                            <circle className="recharts-dot recharts-reference-dot-dot" x={29} y={158} r={2} fill="var(--color-conversions)" stroke="none" fillOpacity={1} strokeWidth={1} cx={93} cy={5.576271186440678}></circle>
                                           </g>
                                         </g>
-                                        <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_2000" tabIndex="-1"></g>
+                                        <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_2000" tabIndex={-1}></g>
                                       </svg>
                                     </div>
                                   </div>
@@ -1958,11 +1958,11 @@ export function Pattern() {
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) ps-(--frame-panel-header-px) px-2 py-1.5" data-pinned="end" data-last-col="end" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
                             <div className="flex justify-center">
                               <DropdownMenu>
-                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" rowActions="cmp_6fry9" aria-label="Actions for Glacier Gloves Evergreen" aria-haspopup="menu" id="base-ui-_r_41_" aria-expanded="false">
-                                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                  <circle cx="12" cy="12" r="1"></circle>
-                                  <circle cx="19" cy="12" r="1"></circle>
-                                  <circle cx="5" cy="12" r="1"></circle>
+                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} rowActions="cmp_6fry9" aria-label="Actions for Glacier Gloves Evergreen" aria-haspopup="menu" id="base-ui-_r_41_" aria-expanded="false">
+                                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                  <circle cx={12} cy={12} r={1}></circle>
+                                  <circle cx={19} cy={12} r={1}></circle>
+                                  <circle cx={5} cy={12} r={1}></circle>
                                 </svg>
                               </DropdownMenuTrigger>
                               </DropdownMenu>
@@ -1971,8 +1971,8 @@ export function Pattern() {
                         </tr>
                         <tr className="[&:not(:last-child)>td]:border-b data-[row-status=deleted]:[&_td]:line-through data-[row-status=deleted]:bg-destructive/5 data-[row-status=deleted]:opacity-60 data-[row-status=dirty]:bg-amber-500/5 data-[row-status=new]:bg-green-500/5 data-[state=selected]:bg-muted/50 hover:bg-muted/40" data-row-id="cmp_jbbur">
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5" data-pinned="start" data-last-col="start" style={{width: "calc(var(--col-select-size) * 1px)"}}>
-                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_43_" aria-checked="false" aria-label="Select row"></Checkbox>
-                            <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                            <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_43_" aria-checked="false" aria-label="Select row"></Checkbox>
+                            <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           </td>
                           <td className="align-middle px-2 py-1.5 truncate" style={{width: "calc(var(--col-campaign-size) * 1px)"}}>
                             <div className="flex gap-2.5 items-center min-w-0">
@@ -1980,8 +1980,8 @@ export function Pattern() {
                                 <svg aria-hidden="true" xmlns:xlink="http://www.w3.org/1999/xlink" xmlSpace="preserve" overflow="hidden" viewBox="0 0 268.152 273.883">
                                   <defs>
                                     <lineargradient id="a">
-                                      <stop offset="0" stopColor="#0fbc5c"></stop>
-                                      <stop offset="1" stopColor="#0cba65"></stop>
+                                      <stop offset={0} stopColor="#0fbc5c"></stop>
+                                      <stop offset={1} stopColor="#0cba65"></stop>
                                     </lineargradient>
                                     <lineargradient id="g">
                                       <stop offset=".231" stopColor="#0fbc5f"></stop>
@@ -1993,7 +1993,7 @@ export function Pattern() {
                                       <stop offset=".771" stopColor="#38c02b"></stop>
                                       <stop offset=".861" stopColor="#52c218"></stop>
                                       <stop offset=".915" stopColor="#67c30f"></stop>
-                                      <stop offset="1" stopColor="#86c504"></stop>
+                                      <stop offset={1} stopColor="#86c504"></stop>
                                     </lineargradient>
                                     <lineargradient id="h">
                                       <stop offset=".142" stopColor="#1abd4d"></stop>
@@ -2012,7 +2012,7 @@ export function Pattern() {
                                       <stop offset=".604" stopColor="#ff692c"></stop>
                                       <stop offset=".727" stopColor="#ff7825"></stop>
                                       <stop offset=".885" stopColor="#ff8d1b"></stop>
-                                      <stop offset="1" stopColor="#ff9f13"></stop>
+                                      <stop offset={1} stopColor="#ff9f13"></stop>
                                     </lineargradient>
                                     <lineargradient id="b">
                                       <stop offset=".231" stopColor="#ff4541"></stop>
@@ -2022,11 +2022,11 @@ export function Pattern() {
                                       <stop offset=".699" stopColor="#ff5138"></stop>
                                       <stop offset=".771" stopColor="#ff5b33"></stop>
                                       <stop offset=".861" stopColor="#ff6c29"></stop>
-                                      <stop offset="1" stopColor="#ff8c18"></stop>
+                                      <stop offset={1} stopColor="#ff8c18"></stop>
                                     </lineargradient>
                                     <lineargradient id="d">
                                       <stop offset=".408" stopColor="#fb4e5a"></stop>
-                                      <stop offset="1" stopColor="#ff4540"></stop>
+                                      <stop offset={1} stopColor="#ff4540"></stop>
                                     </lineargradient>
                                     <lineargradient id="c">
                                       <stop offset=".132" stopColor="#0cba65"></stop>
@@ -2047,20 +2047,20 @@ export function Pattern() {
                                       <stop offset=".771" stopColor="#ffcd0a"></stop>
                                       <stop offset=".861" stopColor="#fecf0a"></stop>
                                       <stop offset=".915" stopColor="#fecf08"></stop>
-                                      <stop offset="1" stopColor="#fdcd01"></stop>
+                                      <stop offset={1} stopColor="#fdcd01"></stop>
                                     </lineargradient>
-                                    <lineargradient xlinkHref="#a" id="s" x1="219.7" x2="254.467" y1="329.535" y2="329.535" gradientUnits="userSpaceOnUse"></lineargradient>
-                                    <radialgradient xlinkHref="#b" id="m" cx="109.627" cy="135.862" r="71.46" fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 1.043 1.45573 2.55542 290.525 -400.634)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                    <radialgradient xlinkHref="#c" id="n" cx="45.259" cy="279.274" r="71.46" fx="45.259" fy="279.274" gradientTransform="matrix(-3.5126 -4.45809 -1.69255 1.26062 870.8 191.554)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                    <radialgradient xlinkHref="#d" id="l" cx="304.017" cy="118.009" r="47.854" fx="304.017" fy="118.009" gradientTransform="matrix(2.06435 0 0 2.59204 -297.679 -151.747)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                    <radialgradient xlinkHref="#e" id="o" cx="181.001" cy="177.201" r="71.46" fx="181.001" fy="177.201" gradientTransform="matrix(-.24858 2.08314 2.96249 .33417 -255.146 -331.164)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                    <radialgradient xlinkHref="#f" id="p" cx="207.673" cy="108.097" r="41.102" fx="207.673" fy="108.097" gradientTransform="matrix(-1.2492 1.34326 -3.89684 -3.4257 880.501 194.905)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                    <radialgradient xlinkHref="#g" id="r" cx="109.627" cy="135.862" r="71.46" fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 -1.043 1.45573 -2.55542 290.525 838.683)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                    <radialgradient xlinkHref="#h" id="j" cx="154.87" cy="145.969" r="71.46" fx="154.87" fy="145.969" gradientTransform="matrix(-.0814 -1.93722 2.92674 -.11625 -215.135 632.86)" gradientUnits="userSpaceOnUse"></radialgradient>
-                                    <filter id="q" width="1.097" height="1.116" x="-.048" y="-.058" color-interpolation-filters="sRGB">
+                                    <lineargradient xlinkHref="#a" id="s" x1={219.7} x2={254.467} y1={329.535} y2={329.535} gradientUnits="userSpaceOnUse"></lineargradient>
+                                    <radialgradient xlinkHref="#b" id="m" cx={109.627} cy={135.862} r={71.46} fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 1.043 1.45573 2.55542 290.525 -400.634)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                    <radialgradient xlinkHref="#c" id="n" cx={45.259} cy={279.274} r={71.46} fx="45.259" fy="279.274" gradientTransform="matrix(-3.5126 -4.45809 -1.69255 1.26062 870.8 191.554)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                    <radialgradient xlinkHref="#d" id="l" cx={304.017} cy={118.009} r={47.854} fx="304.017" fy="118.009" gradientTransform="matrix(2.06435 0 0 2.59204 -297.679 -151.747)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                    <radialgradient xlinkHref="#e" id="o" cx={181.001} cy={177.201} r={71.46} fx="181.001" fy="177.201" gradientTransform="matrix(-.24858 2.08314 2.96249 .33417 -255.146 -331.164)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                    <radialgradient xlinkHref="#f" id="p" cx={207.673} cy={108.097} r={41.102} fx="207.673" fy="108.097" gradientTransform="matrix(-1.2492 1.34326 -3.89684 -3.4257 880.501 194.905)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                    <radialgradient xlinkHref="#g" id="r" cx={109.627} cy={135.862} r={71.46} fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 -1.043 1.45573 -2.55542 290.525 838.683)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                    <radialgradient xlinkHref="#h" id="j" cx={154.87} cy={145.969} r={71.46} fx="154.87" fy="145.969" gradientTransform="matrix(-.0814 -1.93722 2.92674 -.11625 -215.135 632.86)" gradientUnits="userSpaceOnUse"></radialgradient>
+                                    <filter id="q" width={1.097} height={1.116} x="-.048" y="-.058" color-interpolation-filters="sRGB">
                                       <fegaussianblur stdDeviation="1.701"></fegaussianblur>
                                     </filter>
-                                    <filter id="k" width="1.033" height="1.02" x="-.017" y="-.01" color-interpolation-filters="sRGB">
+                                    <filter id="k" width={1.033} height={1.02} x="-.017" y="-.01" color-interpolation-filters="sRGB">
                                       <fegaussianblur stdDeviation=".242"></fegaussianblur>
                                     </filter>
                                     <clippath id="i" clippathunits="userSpaceOnUse">
@@ -2087,7 +2087,7 @@ export function Pattern() {
                                 <span className="flex gap-1.5 items-center min-w-0 text-muted-foreground text-xs">
                                   <span className="shrink-0">
                                     <span className="flex gap-1.5 items-center min-w-0">
-                                      <img className="object-cover rounded-full shrink-0 size-4" alt="" width="16" height="16" loading="lazy" decoding="async" src="https://flagcdn.com/fr.svg" />
+                                      <img className="object-cover rounded-full shrink-0 size-4" alt="" width={16} height={16} loading="lazy" decoding="async" src="https://flagcdn.com/fr.svg" />
                                       <span className="font-mono text-xs" aria-hidden="true">
                                         {"FR"}
                                       </span>
@@ -2135,42 +2135,42 @@ export function Pattern() {
                               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden aspect-auto cn-chart flex h-7 justify-center shrink-0 text-xs w-24" data-chart="chart-_r_46_" aria-hidden="true">
                                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                                    <div className="recharts-wrapper" width="96" height="28" style={{position: "relative", cursor: "default", width: "96px", height: "28px"}}>
-                                      <svg className="recharts-surface" width="96" height="28" viewBox="0 0 96 28" style={{width: "100%", height: "100%", display: "block"}}>
+                                    <div className="recharts-wrapper" width={96} height={28} style={{position: "relative", cursor: "default", width: "96px", height: "28px"}}>
+                                      <svg className="recharts-surface" width={96} height={28} viewBox="0 0 96 28" style={{width: "100%", height: "100%", display: "block"}}>
                                         <title></title>
                                         <desc></desc>
-                                        <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                                        <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                                         <defs>
                                           <clippath id="recharts10-clip">
-                                            <rect x="1" y="3" height="24" width="92"></rect>
+                                            <rect x={1} y={3} height={24} width={92}></rect>
                                           </clippath>
                                         </defs>
-                                        <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                                        <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                                           <g className="recharts-area recharts-layer">
                                             <g className="recharts-layer">
                                               <g className="recharts-layer" clipPath="url(#animationClipPath-recharts-area-_r_4q_)">
                                                 <g className="recharts-layer">
-                                                  <path className="recharts-area-area recharts-curve" strokeWidth="1.5" fill="var(--color-conversions)" fillOpacity="0.12" height="24" stroke="none" width="92" id="recharts-area-_r_4q_" d="M1,24.554C2.057,24.172,3.115,23.79,4.172,23.178C5.23,22.567,6.287,21.879,7.345,20.885C8.402,19.892,9.46,18.312,10.517,17.217C11.575,16.121,12.632,15.357,13.69,14.312C14.747,13.268,15.805,10.949,16.862,10.949C17.92,10.949,18.977,11.153,20.034,11.561C21.092,11.968,22.149,13.395,23.207,13.395C24.264,13.395,25.322,11.713,26.379,11.713C27.437,11.713,28.494,15.331,29.552,15.841C30.609,16.35,31.667,16.605,32.724,16.605C33.782,16.605,34.839,15.076,35.897,14.618C36.954,14.159,38.011,14.363,39.069,13.854C40.126,13.344,41.184,9.064,42.241,8.962C43.299,8.86,44.356,8.911,45.414,8.809C46.471,8.707,47.529,6.516,48.586,6.516C49.644,6.516,50.701,12.376,51.759,13.701C52.816,15.025,53.874,15.382,54.931,15.688C55.989,15.994,57.046,16.146,58.103,16.146C59.161,16.146,60.218,6.822,61.276,6.822C62.333,6.822,63.391,11.713,64.448,11.713C65.506,11.713,66.563,3.611,67.621,3.611C68.678,3.611,69.736,8.07,70.793,10.032C71.851,11.994,72.908,15.382,73.966,15.382C75.023,15.382,76.08,13.548,77.138,13.548C78.195,13.548,79.253,15.841,80.31,15.841C81.368,15.841,82.425,14.924,83.483,13.089C84.54,11.255,85.598,3,86.655,3C87.713,3,88.77,8.962,89.828,8.962C90.885,8.962,91.943,6.669,93,4.376L93,27C91.943,27,90.885,27,89.828,27C88.77,27,87.713,27,86.655,27C85.598,27,84.54,27,83.483,27C82.425,27,81.368,27,80.31,27C79.253,27,78.195,27,77.138,27C76.08,27,75.023,27,73.966,27C72.908,27,71.851,27,70.793,27C69.736,27,68.678,27,67.621,27C66.563,27,65.506,27,64.448,27C63.391,27,62.333,27,61.276,27C60.218,27,59.161,27,58.103,27C57.046,27,55.989,27,54.931,27C53.874,27,52.816,27,51.759,27C50.701,27,49.644,27,48.586,27C47.529,27,46.471,27,45.414,27C44.356,27,43.299,27,42.241,27C41.184,27,40.126,27,39.069,27C38.011,27,36.954,27,35.897,27C34.839,27,33.782,27,32.724,27C31.667,27,30.609,27,29.552,27C28.494,27,27.437,27,26.379,27C25.322,27,24.264,27,23.207,27C22.149,27,21.092,27,20.034,27C18.977,27,17.92,27,16.862,27C15.805,27,14.747,27,13.69,27C12.632,27,11.575,27,10.517,27C9.46,27,8.402,27,7.345,27C6.287,27,5.23,27,4.172,27C3.115,27,2.057,27,1,27Z"></path>
-                                                  <path className="recharts-area-curve recharts-curve" strokeWidth="1.5" fill="none" fillOpacity="0.12" height="24" stroke="var(--color-conversions)" width="92" d="M1,24.554C2.057,24.172,3.115,23.79,4.172,23.178C5.23,22.567,6.287,21.879,7.345,20.885C8.402,19.892,9.46,18.312,10.517,17.217C11.575,16.121,12.632,15.357,13.69,14.312C14.747,13.268,15.805,10.949,16.862,10.949C17.92,10.949,18.977,11.153,20.034,11.561C21.092,11.968,22.149,13.395,23.207,13.395C24.264,13.395,25.322,11.713,26.379,11.713C27.437,11.713,28.494,15.331,29.552,15.841C30.609,16.35,31.667,16.605,32.724,16.605C33.782,16.605,34.839,15.076,35.897,14.618C36.954,14.159,38.011,14.363,39.069,13.854C40.126,13.344,41.184,9.064,42.241,8.962C43.299,8.86,44.356,8.911,45.414,8.809C46.471,8.707,47.529,6.516,48.586,6.516C49.644,6.516,50.701,12.376,51.759,13.701C52.816,15.025,53.874,15.382,54.931,15.688C55.989,15.994,57.046,16.146,58.103,16.146C59.161,16.146,60.218,6.822,61.276,6.822C62.333,6.822,63.391,11.713,64.448,11.713C65.506,11.713,66.563,3.611,67.621,3.611C68.678,3.611,69.736,8.07,70.793,10.032C71.851,11.994,72.908,15.382,73.966,15.382C75.023,15.382,76.08,13.548,77.138,13.548C78.195,13.548,79.253,15.841,80.31,15.841C81.368,15.841,82.425,14.924,83.483,13.089C84.54,11.255,85.598,3,86.655,3C87.713,3,88.77,8.962,89.828,8.962C90.885,8.962,91.943,6.669,93,4.376"></path>
+                                                  <path className="recharts-area-area recharts-curve" strokeWidth={1.5} fill="var(--color-conversions)" fillOpacity={0.12} height={24} stroke="none" width={92} id="recharts-area-_r_4q_" d="M1,24.554C2.057,24.172,3.115,23.79,4.172,23.178C5.23,22.567,6.287,21.879,7.345,20.885C8.402,19.892,9.46,18.312,10.517,17.217C11.575,16.121,12.632,15.357,13.69,14.312C14.747,13.268,15.805,10.949,16.862,10.949C17.92,10.949,18.977,11.153,20.034,11.561C21.092,11.968,22.149,13.395,23.207,13.395C24.264,13.395,25.322,11.713,26.379,11.713C27.437,11.713,28.494,15.331,29.552,15.841C30.609,16.35,31.667,16.605,32.724,16.605C33.782,16.605,34.839,15.076,35.897,14.618C36.954,14.159,38.011,14.363,39.069,13.854C40.126,13.344,41.184,9.064,42.241,8.962C43.299,8.86,44.356,8.911,45.414,8.809C46.471,8.707,47.529,6.516,48.586,6.516C49.644,6.516,50.701,12.376,51.759,13.701C52.816,15.025,53.874,15.382,54.931,15.688C55.989,15.994,57.046,16.146,58.103,16.146C59.161,16.146,60.218,6.822,61.276,6.822C62.333,6.822,63.391,11.713,64.448,11.713C65.506,11.713,66.563,3.611,67.621,3.611C68.678,3.611,69.736,8.07,70.793,10.032C71.851,11.994,72.908,15.382,73.966,15.382C75.023,15.382,76.08,13.548,77.138,13.548C78.195,13.548,79.253,15.841,80.31,15.841C81.368,15.841,82.425,14.924,83.483,13.089C84.54,11.255,85.598,3,86.655,3C87.713,3,88.77,8.962,89.828,8.962C90.885,8.962,91.943,6.669,93,4.376L93,27C91.943,27,90.885,27,89.828,27C88.77,27,87.713,27,86.655,27C85.598,27,84.54,27,83.483,27C82.425,27,81.368,27,80.31,27C79.253,27,78.195,27,77.138,27C76.08,27,75.023,27,73.966,27C72.908,27,71.851,27,70.793,27C69.736,27,68.678,27,67.621,27C66.563,27,65.506,27,64.448,27C63.391,27,62.333,27,61.276,27C60.218,27,59.161,27,58.103,27C57.046,27,55.989,27,54.931,27C53.874,27,52.816,27,51.759,27C50.701,27,49.644,27,48.586,27C47.529,27,46.471,27,45.414,27C44.356,27,43.299,27,42.241,27C41.184,27,40.126,27,39.069,27C38.011,27,36.954,27,35.897,27C34.839,27,33.782,27,32.724,27C31.667,27,30.609,27,29.552,27C28.494,27,27.437,27,26.379,27C25.322,27,24.264,27,23.207,27C22.149,27,21.092,27,20.034,27C18.977,27,17.92,27,16.862,27C15.805,27,14.747,27,13.69,27C12.632,27,11.575,27,10.517,27C9.46,27,8.402,27,7.345,27C6.287,27,5.23,27,4.172,27C3.115,27,2.057,27,1,27Z"></path>
+                                                  <path className="recharts-area-curve recharts-curve" strokeWidth={1.5} fill="none" fillOpacity={0.12} height={24} stroke="var(--color-conversions)" width={92} d="M1,24.554C2.057,24.172,3.115,23.79,4.172,23.178C5.23,22.567,6.287,21.879,7.345,20.885C8.402,19.892,9.46,18.312,10.517,17.217C11.575,16.121,12.632,15.357,13.69,14.312C14.747,13.268,15.805,10.949,16.862,10.949C17.92,10.949,18.977,11.153,20.034,11.561C21.092,11.968,22.149,13.395,23.207,13.395C24.264,13.395,25.322,11.713,26.379,11.713C27.437,11.713,28.494,15.331,29.552,15.841C30.609,16.35,31.667,16.605,32.724,16.605C33.782,16.605,34.839,15.076,35.897,14.618C36.954,14.159,38.011,14.363,39.069,13.854C40.126,13.344,41.184,9.064,42.241,8.962C43.299,8.86,44.356,8.911,45.414,8.809C46.471,8.707,47.529,6.516,48.586,6.516C49.644,6.516,50.701,12.376,51.759,13.701C52.816,15.025,53.874,15.382,54.931,15.688C55.989,15.994,57.046,16.146,58.103,16.146C59.161,16.146,60.218,6.822,61.276,6.822C62.333,6.822,63.391,11.713,64.448,11.713C65.506,11.713,66.563,3.611,67.621,3.611C68.678,3.611,69.736,8.07,70.793,10.032C71.851,11.994,72.908,15.382,73.966,15.382C75.023,15.382,76.08,13.548,77.138,13.548C78.195,13.548,79.253,15.841,80.31,15.841C81.368,15.841,82.425,14.924,83.483,13.089C84.54,11.255,85.598,3,86.655,3C87.713,3,88.77,8.962,89.828,8.962C90.885,8.962,91.943,6.669,93,4.376"></path>
                                                 </g>
                                               </g>
                                             </g>
                                           </g>
                                         </g>
-                                        <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_400" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_500" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_600" tabIndex="-1">
+                                        <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_400" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_500" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_600" tabIndex={-1}>
                                           <g className="recharts-layer recharts-reference-dot">
-                                            <circle className="recharts-dot recharts-reference-dot-dot" x="29" y="148" r="2" fill="var(--color-conversions)" stroke="none" fillOpacity="1" strokeWidth="1" cx="93" cy="4.375796178343949"></circle>
+                                            <circle className="recharts-dot recharts-reference-dot-dot" x={29} y={148} r={2} fill="var(--color-conversions)" stroke="none" fillOpacity={1} strokeWidth={1} cx={93} cy={4.375796178343949}></circle>
                                           </g>
                                         </g>
-                                        <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                                        <g className="recharts-zIndex-layer_2000" tabIndex="-1"></g>
+                                        <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                                        <g className="recharts-zIndex-layer_2000" tabIndex={-1}></g>
                                       </svg>
                                     </div>
                                   </div>
@@ -2222,11 +2222,11 @@ export function Pattern() {
                           <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) ps-(--frame-panel-header-px) px-2 py-1.5" data-pinned="end" data-last-col="end" style={{width: "calc(var(--col-actions-size) * 1px)"}}>
                             <div className="flex justify-center">
                               <DropdownMenu>
-                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" rowActions="cmp_jbbur" aria-label="Actions for Trailhead Jacket Holiday Preview" aria-haspopup="menu" id="base-ui-_r_4a_" aria-expanded="false">
-                                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                  <circle cx="12" cy="12" r="1"></circle>
-                                  <circle cx="19" cy="12" r="1"></circle>
-                                  <circle cx="5" cy="12" r="1"></circle>
+                              <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} rowActions="cmp_jbbur" aria-label="Actions for Trailhead Jacket Holiday Preview" aria-haspopup="menu" id="base-ui-_r_4a_" aria-expanded="false">
+                                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                  <circle cx={12} cy={12} r={1}></circle>
+                                  <circle cx={19} cy={12} r={1}></circle>
+                                  <circle cx={5} cy={12} r={1}></circle>
                                 </svg>
                               </DropdownMenuTrigger>
                               </DropdownMenu>
@@ -2253,45 +2253,45 @@ export function Pattern() {
                   {"Rows per page"}
                 </div>
                 <Select>
-                <SelectTrigger className="min-w-16" type="button" tabIndex="0" id="base-ui-_r_4c_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Rows per page">
+                <SelectTrigger className="min-w-16" type="button" tabIndex={0} id="base-ui-_r_4c_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="sm" aria-label="Rows per page">
                   <SelectValue>
                     {"10"}
                   </SelectValue>
-                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                     {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
-                <input id="base-ui-_r_4c_-hidden-input" tabIndex="-1" aria-hidden="true" value="10" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                <input id="base-ui-_r_4c_-hidden-input" tabIndex={-1} aria-hidden="true" value="10" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
               </div>
               <div className="flex flex-col gap-2.5 items-center justify-center order-1 pt-2.5 sm:flex-row sm:justify-end sm:order-2 sm:pt-0">
                 <div className="order-2 sm:order-1 text-muted-foreground text-nowrap text-sm">
                   {"1 - 10 of 30 campaigns"}
                 </div>
                 <div className="flex flex-wrap gap-1 items-center justify-center order-1 sm:flex-nowrap">
-                  <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" disabled="" tabIndex="0" disabled>
+                  <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" disabled="" tabIndex={0} disabled>
                     <span className="sr-only">
                       {"Go to previous page"}
                     </span>
-                    <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine">
+                    <svg className="lucide lucide-chevron-left size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine">
                       <path d="m15 18-6-6 6-6"></path>
                     </svg>
                   </Button>
-                  <Button className="bg-accent px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-accent-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 1" aria-current="page">
+                  <Button className="bg-accent px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-accent-foreground text-sm" type="button" tabIndex={0} aria-label="Go to page 1" aria-current="page">
                     {"1"}
                   </Button>
-                  <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 2">
+                  <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex={0} aria-label="Go to page 2">
                     {"2"}
                   </Button>
-                  <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex="0" aria-label="Go to page 3">
+                  <Button className="px-1.5 style-luma:min-w-8 style-lyra:min-w-7 style-maia:min-w-8 style-mira:min-w-6 style-nova:min-w-7 style-rhea:min-w-7 style-sera:min-w-9 style-vega:min-w-8 text-muted-foreground text-sm" type="button" tabIndex={0} aria-label="Go to page 3">
                     {"3"}
                   </Button>
-                  <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" tabIndex="0">
+                  <Button className="p-0 rtl:rotate-180 rtl:transform text-sm" type="button" tabIndex={0}>
                     <span className="sr-only">
                       {"Go to next page"}
                     </span>
-                    <svg className="lucide lucide-chevron-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
+                    <svg className="lucide lucide-chevron-right size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                       <path d="m9 18 6-6-6-6"></path>
                     </svg>
                   </Button>

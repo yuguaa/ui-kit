@@ -67,8 +67,8 @@ export function Pattern() {
           <header className="backdrop-blur bg-background/95 border-b border-border shrink-0 sticky top-0 z-20">
             <div className="flex gap-3 items-center lg:px-8 min-h-14 px-4 sm:px-6">
               <div className="flex items-center min-w-0">
-                <Button className="-ms-2 size-8" type="button" tabIndex="0" aria-label="Close safety builder" extracted="1">
-                  <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
+                <Button className="-ms-2 size-8" type="button" tabIndex={0} aria-label="Close safety builder" extracted="1">
+                  <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine" aria-hidden="true">
                     <path d="M18 6 6 18"></path>
                     <path d="m6 6 12 12"></path>
                   </svg>
@@ -82,29 +82,29 @@ export function Pattern() {
               </div>
               <div className="flex gap-2 items-center justify-end ml-auto shrink-0 sm:gap-3">
                 <div className="gap-1 hidden items-center sm:flex">
-                  <Button className="hidden md:inline-flex px-2.5" type="button" tabIndex="0">
+                  <Button className="hidden md:inline-flex px-2.5" type="button" tabIndex={0}>
                     {"Review"}
                   </Button>
-                  <Button className="px-2.5" type="button" tabIndex="0">
+                  <Button className="px-2.5" type="button" tabIndex={0}>
                     {"Save Draft"}
                   </Button>
                 </div>
                 <Separator className="-ml-1 h-4 hidden mr-1 my-auto sm:block" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
                 <div className="flex gap-2 items-center justify-end">
-                  <Button className="size-8 sm:hidden" type="button" tabIndex="0" aria-label="Previous step">
-                    <svg className="lucide lucide-arrow-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftIcon" tabler="IconArrowLeft" hugeicons="ArrowLeft02Icon" phosphor="ArrowLeftIcon" remixicon="RiArrowLeftLine" aria-hidden="true">
+                  <Button className="size-8 sm:hidden" type="button" tabIndex={0} aria-label="Previous step">
+                    <svg className="lucide lucide-arrow-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftIcon" tabler="IconArrowLeft" hugeicons="ArrowLeft02Icon" phosphor="ArrowLeftIcon" remixicon="RiArrowLeftLine" aria-hidden="true">
                       <path d="m12 19-7-7 7-7"></path>
                       <path d="M19 12H5"></path>
                     </svg>
                   </Button>
-                  <Button className="hidden sm:inline-flex" type="button" tabIndex="0">
-                    <svg className="lucide lucide-arrow-left size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftIcon" tabler="IconArrowLeft" hugeicons="ArrowLeft02Icon" phosphor="ArrowLeftIcon" remixicon="RiArrowLeftLine" aria-hidden="true">
+                  <Button className="hidden sm:inline-flex" type="button" tabIndex={0}>
+                    <svg className="lucide lucide-arrow-left size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftIcon" tabler="IconArrowLeft" hugeicons="ArrowLeft02Icon" phosphor="ArrowLeftIcon" remixicon="RiArrowLeftLine" aria-hidden="true">
                       <path d="m12 19-7-7 7-7"></path>
                       <path d="M19 12H5"></path>
                     </svg>
                     {"Previous"}
                   </Button>
-                  <Button className="min-w-20" type="submit" tabIndex="0" form="solution-ai-ops-7-safety-form">
+                  <Button className="min-w-20" type="submit" tabIndex={0} form="solution-ai-ops-7-safety-form">
                     {"Create"}
                   </Button>
                 </div>
@@ -121,11 +121,11 @@ export function Pattern() {
                       <Stepper>
                       <StepperItem className="items-start not-last:pb-3 relative" data-state="completed">
                         <Stepper>
-                        <StepperTrigger className="disabled:opacity-100 gap-3 items-start justify-start min-h-12 px-2 py-1.5 text-left w-full" type="button" role="tab" id="stepper-tab-1" aria-selected="false" aria-controls="stepper-panel-1" tabIndex="-1" data-state="completed" loading="false">
+                        <StepperTrigger className="disabled:opacity-100 gap-3 items-start justify-start min-h-12 px-2 py-1.5 text-left w-full" type="button" role="tab" id="stepper-tab-1" aria-selected="false" aria-controls="stepper-panel-1" tabIndex={-1} data-state="completed" loading="false">
                           <Stepper>
                           <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-full before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-0 data-[state=active]:text-primary data-[state=inactive]:bg-background data-[state=inactive]:border data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="completed">
                             <div className="absolute">
-                              <svg className="lucide lucide-check size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                             </div>
@@ -153,11 +153,11 @@ export function Pattern() {
                       <Stepper>
                       <StepperItem className="items-start not-last:pb-3 relative" data-state="completed">
                         <Stepper>
-                        <StepperTrigger className="disabled:opacity-100 gap-3 items-start justify-start min-h-12 px-2 py-1.5 text-left w-full" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex="-1" data-state="completed" loading="false">
+                        <StepperTrigger className="disabled:opacity-100 gap-3 items-start justify-start min-h-12 px-2 py-1.5 text-left w-full" type="button" role="tab" id="stepper-tab-2" aria-selected="false" aria-controls="stepper-panel-2" tabIndex={-1} data-state="completed" loading="false">
                           <Stepper>
                           <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-full before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-0 data-[state=active]:text-primary data-[state=inactive]:bg-background data-[state=inactive]:border data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="completed">
                             <div className="absolute">
-                              <svg className="lucide lucide-check size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                             </div>
@@ -185,11 +185,11 @@ export function Pattern() {
                       <Stepper>
                       <StepperItem className="items-start not-last:pb-3 relative" data-state="completed">
                         <Stepper>
-                        <StepperTrigger className="disabled:opacity-100 gap-3 items-start justify-start min-h-12 px-2 py-1.5 text-left w-full" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex="-1" data-state="completed" loading="false">
+                        <StepperTrigger className="disabled:opacity-100 gap-3 items-start justify-start min-h-12 px-2 py-1.5 text-left w-full" type="button" role="tab" id="stepper-tab-3" aria-selected="false" aria-controls="stepper-panel-3" tabIndex={-1} data-state="completed" loading="false">
                           <Stepper>
                           <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-full before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-0 data-[state=active]:text-primary data-[state=inactive]:bg-background data-[state=inactive]:border data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="completed">
                             <div className="absolute">
-                              <svg className="lucide lucide-check size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                             </div>
@@ -217,7 +217,7 @@ export function Pattern() {
                       <Stepper>
                       <StepperItem className="items-start not-last:pb-3 relative" data-state="active">
                         <Stepper>
-                        <StepperTrigger className="disabled:opacity-100 gap-3 items-start justify-start min-h-12 px-2 py-1.5 text-left w-full" type="button" role="tab" id="stepper-tab-4" aria-selected="true" aria-controls="stepper-panel-4" tabIndex="0" data-state="active" loading="false">
+                        <StepperTrigger className="disabled:opacity-100 gap-3 items-start justify-start min-h-12 px-2 py-1.5 text-left w-full" type="button" role="tab" id="stepper-tab-4" aria-selected="true" aria-controls="stepper-panel-4" tabIndex={0} data-state="active" loading="false">
                           <Stepper>
                           <StepperIndicator className="before:absolute before:border before:border-dashed before:border-transparent before:content-[''] before:inset-0 before:pointer-events-none before:rounded-full before:z-10 data-[state=active]:before:animate-[spin_8s_linear_infinite] data-[state=active]:before:border-primary data-[state=active]:bg-primary/10 data-[state=active]:border-0 data-[state=active]:text-primary data-[state=inactive]:bg-background data-[state=inactive]:border data-[state=inactive]:border-border data-[state=inactive]:text-foreground isolate motion-reduce:data-[state=active]:before:animate-none overflow-visible" data-state="active">
                             <div className="absolute">
@@ -267,7 +267,7 @@ export function Pattern() {
                     <StepperContent className="min-w-0 shrink-0" data-state="4">
                       <section className="flex flex-col gap-6 min-w-0">
                         <Alert className="[&>svg:not([class*=size-])]:size-4 [&>svg]:text-warning bg-warning/4 border border-warning/30 gap-y-0.5 grid grid-cols-[0_1fr] has-[>[data-slot=alert-title]+[data-slot=alert-description]]:[&_[data-slot=alert-action]]:sm:row-end-3 has-[>[data-slot=alert-title]+[data-slot=alert-description]]:[&_svg]:translate-y-0.5 has-[>[data-slot=alert-title]+[data-slot=alert-description]]:items-start has-[>svg]:gap-x-2.5 has-[>svg]:grid-cols-[calc(var(--spacing)*3)_1fr] items-center px-3 py-2.5 style-luma:rounded-2xl style-lyra:rounded-none style-maia:rounded-lg style-mira:rounded-lg style-nova:rounded-lg style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-lg text-sm" role="alert">
-                          <svg className="lucide lucide-shield-alert" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShieldAlertIcon" tabler="IconShieldExclamation" hugeicons="ShieldEnergyIcon" phosphor="ShieldWarningIcon" remixicon="RiShieldLine" aria-hidden="true">
+                          <svg className="lucide lucide-shield-alert" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShieldAlertIcon" tabler="IconShieldExclamation" hugeicons="ShieldEnergyIcon" phosphor="ShieldWarningIcon" remixicon="RiShieldLine" aria-hidden="true">
                             <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                             <path d="M12 8v4"></path>
                             <path d="M12 16h.01"></path>
@@ -342,17 +342,17 @@ export function Pattern() {
                                             {"Decision"}
                                           </FieldLabel>
                                           <Select>
-                                          <SelectTrigger className="w-full" type="button" tabIndex="0" id="solution-ai-ops-7-decision-RULE-2101" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                                          <SelectTrigger className="w-full" type="button" tabIndex={0} id="solution-ai-ops-7-decision-RULE-2101" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                             <SelectValue>
                                               {"review"}
                                             </SelectValue>
-                                            <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                                            <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                               <path d="m6 9 6 6 6-6"></path>
                                               {"▼"}
                                             </svg>
                                           </SelectTrigger>
                                           </Select>
-                                          <input id="base-ui-_r_3_-hidden-input" tabIndex="-1" aria-hidden="true" value="review" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <input id="base-ui-_r_3_-hidden-input" tabIndex={-1} aria-hidden="true" value="review" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </Field>
                                       </TableCell>
                                       <TableCell className="px-2 py-1.5">
@@ -364,7 +364,7 @@ export function Pattern() {
                                             <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="solution-ai-ops-7-coverage-RULE-2101" value="93%" />
                                             <InputGroupAddon role="group" data-align="inline-end">
                                               <Tooltip>
-                                              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost cn-input-group-button cn-input-group-button-size-icon-xs disabled:opacity-50 disabled:pointer-events-none flex group/button items-center justify-center outline-none select-none shadow-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" size="icon-xs" aria-label="Coverage status: Covered" id="base-ui-_r_8_" baseUiTooltipTrigger="">
+                                              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost cn-input-group-button cn-input-group-button-size-icon-xs disabled:opacity-50 disabled:pointer-events-none flex group/button items-center justify-center outline-none select-none shadow-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} size="icon-xs" aria-label="Coverage status: Covered" id="base-ui-_r_8_" baseUiTooltipTrigger="">
                                                 <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                               </TooltipTrigger>
                                               </Tooltip>
@@ -374,8 +374,8 @@ export function Pattern() {
                                       </TableCell>
                                       <TableCell className="px-2 py-1.5 text-right">
                                         <AlertDialog>
-                                        <AlertDialogTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Delete RULE-2101" baseUiClickTrigger="" id="base-ui-_r_a_" aria-haspopup="dialog" aria-expanded="false">
-                                          <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                                        <AlertDialogTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Delete RULE-2101" baseUiClickTrigger="" id="base-ui-_r_a_" aria-haspopup="dialog" aria-expanded="false">
+                                          <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                                             <path d="M10 11v6"></path>
                                             <path d="M14 11v6"></path>
                                             <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -414,17 +414,17 @@ export function Pattern() {
                                             {"Decision"}
                                           </FieldLabel>
                                           <Select>
-                                          <SelectTrigger className="w-full" type="button" tabIndex="0" id="solution-ai-ops-7-decision-RULE-2102" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                                          <SelectTrigger className="w-full" type="button" tabIndex={0} id="solution-ai-ops-7-decision-RULE-2102" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                             <SelectValue>
                                               {"redact"}
                                             </SelectValue>
-                                            <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                                            <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                               <path d="m6 9 6 6 6-6"></path>
                                               {"▼"}
                                             </svg>
                                           </SelectTrigger>
                                           </Select>
-                                          <input id="base-ui-_r_d_-hidden-input" tabIndex="-1" aria-hidden="true" value="redact" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <input id="base-ui-_r_d_-hidden-input" tabIndex={-1} aria-hidden="true" value="redact" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </Field>
                                       </TableCell>
                                       <TableCell className="px-2 py-1.5">
@@ -436,7 +436,7 @@ export function Pattern() {
                                             <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="solution-ai-ops-7-coverage-RULE-2102" value="88%" />
                                             <InputGroupAddon role="group" data-align="inline-end">
                                               <Tooltip>
-                                              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost cn-input-group-button cn-input-group-button-size-icon-xs disabled:opacity-50 disabled:pointer-events-none flex group/button items-center justify-center outline-none select-none shadow-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" size="icon-xs" aria-label="Coverage status: Covered" id="base-ui-_r_i_" baseUiTooltipTrigger="">
+                                              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost cn-input-group-button cn-input-group-button-size-icon-xs disabled:opacity-50 disabled:pointer-events-none flex group/button items-center justify-center outline-none select-none shadow-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} size="icon-xs" aria-label="Coverage status: Covered" id="base-ui-_r_i_" baseUiTooltipTrigger="">
                                                 <span className="bg-success rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                               </TooltipTrigger>
                                               </Tooltip>
@@ -446,8 +446,8 @@ export function Pattern() {
                                       </TableCell>
                                       <TableCell className="px-2 py-1.5 text-right">
                                         <AlertDialog>
-                                        <AlertDialogTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Delete RULE-2102" baseUiClickTrigger="" id="base-ui-_r_k_" aria-haspopup="dialog" aria-expanded="false">
-                                          <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                                        <AlertDialogTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Delete RULE-2102" baseUiClickTrigger="" id="base-ui-_r_k_" aria-haspopup="dialog" aria-expanded="false">
+                                          <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                                             <path d="M10 11v6"></path>
                                             <path d="M14 11v6"></path>
                                             <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -486,17 +486,17 @@ export function Pattern() {
                                             {"Decision"}
                                           </FieldLabel>
                                           <Select>
-                                          <SelectTrigger className="w-full" type="button" tabIndex="0" id="solution-ai-ops-7-decision-RULE-2103" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                                          <SelectTrigger className="w-full" type="button" tabIndex={0} id="solution-ai-ops-7-decision-RULE-2103" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                                             <SelectValue>
                                               {"block"}
                                             </SelectValue>
-                                            <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                                            <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                                               <path d="m6 9 6 6 6-6"></path>
                                               {"▼"}
                                             </svg>
                                           </SelectTrigger>
                                           </Select>
-                                          <input id="base-ui-_r_n_-hidden-input" tabIndex="-1" aria-hidden="true" value="block" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <input id="base-ui-_r_n_-hidden-input" tabIndex={-1} aria-hidden="true" value="block" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </Field>
                                       </TableCell>
                                       <TableCell className="px-2 py-1.5">
@@ -508,7 +508,7 @@ export function Pattern() {
                                             <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="solution-ai-ops-7-coverage-RULE-2103" value="61%" />
                                             <InputGroupAddon role="group" data-align="inline-end">
                                               <Tooltip>
-                                              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost cn-input-group-button cn-input-group-button-size-icon-xs disabled:opacity-50 disabled:pointer-events-none flex group/button items-center justify-center outline-none select-none shadow-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" size="icon-xs" aria-label="Coverage status: Gap" id="base-ui-_r_s_" baseUiTooltipTrigger="">
+                                              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-ghost cn-input-group-button cn-input-group-button-size-icon-xs disabled:opacity-50 disabled:pointer-events-none flex group/button items-center justify-center outline-none select-none shadow-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} size="icon-xs" aria-label="Coverage status: Gap" id="base-ui-_r_s_" baseUiTooltipTrigger="">
                                                 <span className="bg-destructive rounded-full shrink-0 size-1.5" aria-hidden="true"></span>
                                               </TooltipTrigger>
                                               </Tooltip>
@@ -518,8 +518,8 @@ export function Pattern() {
                                       </TableCell>
                                       <TableCell className="px-2 py-1.5 text-right">
                                         <AlertDialog>
-                                        <AlertDialogTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Delete RULE-2103" baseUiClickTrigger="" id="base-ui-_r_u_" aria-haspopup="dialog" aria-expanded="false">
-                                          <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                                        <AlertDialogTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Delete RULE-2103" baseUiClickTrigger="" id="base-ui-_r_u_" aria-haspopup="dialog" aria-expanded="false">
+                                          <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                                             <path d="M10 11v6"></path>
                                             <path d="M14 11v6"></path>
                                             <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>

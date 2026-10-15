@@ -12,16 +12,16 @@ export function Pattern() {
           <div className="[--tp-grid-opacity:0.12] [--tp-grid-stroke:color-mix(in_oklch,var(--color-foreground)_40%,transparent)] absolute bottom-[2px] dark:[--tp-grid-opacity:0.16] dark:[--tp-grid-stroke:color-mix(in_oklch,var(--color-foreground)_32%,transparent)] left-[2px] overflow-hidden pointer-events-none right-[2px] top-[3px] z-0" aria-hidden="true">
             <svg className="absolute inset-0 min-h-full min-w-full size-full" shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg">
               <defs>
-                <lineargradient id="_r_0_-tp-grad" gradientUnits="objectBoundingBox" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor="white" stopOpacity="1"></stop>
-                  <stop offset="48%" stopColor="white" stopOpacity="0.75"></stop>
-                  <stop offset="100%" stopColor="white" stopOpacity="0"></stop>
+                <lineargradient id="_r_0_-tp-grad" gradientUnits="objectBoundingBox" x1={0} y1={0} x2={0} y2={1}>
+                  <stop offset="0%" stopColor="white" stopOpacity={1}></stop>
+                  <stop offset="48%" stopColor="white" stopOpacity={0.75}></stop>
+                  <stop offset="100%" stopColor="white" stopOpacity={0}></stop>
                 </lineargradient>
-                <pattern id="_r_0_-tp-grid" width="14" height="14" patternUnits="userSpaceOnUse">
-                  <path d="M 14 0 L 0 0 0 14" fill="none" stroke="var(--tp-grid-stroke)" strokeWidth="1" vector-effect="nonScalingStroke"></path>
+                <pattern id="_r_0_-tp-grid" width={14} height={14} patternUnits="userSpaceOnUse">
+                  <path d="M 14 0 L 0 0 0 14" fill="none" stroke="var(--tp-grid-stroke)" strokeWidth={1} vector-effect="nonScalingStroke"></path>
                 </pattern>
                 <mask id="_r_0_-tp-fade" maskUnits="objectBoundingBox" maskcontentunits="objectBoundingBox">
-                  <rect width="1" height="1" fill="url(#_r_0_-tp-grad)"></rect>
+                  <rect width={1} height={1} fill="url(#_r_0_-tp-grad)"></rect>
                 </mask>
               </defs>
               <rect width="100%" height="100%" fill="url(#_r_0_-tp-grid)" mask="url(#_r_0_-tp-fade)" style={{opacity: "var(--tp-grid-opacity)"}}></rect>
@@ -54,18 +54,18 @@ export function Pattern() {
               </div>
               <div className="-mr-16 bg-muted/60 border-2 border-background dark:border flex items-center justify-center rounded-md shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-17.5">
                 <svg className="size-7.5" aria-hidden="true" viewBox="0 0 296 298" fill="none">
-                  <mask id="gemini-a" width="296" height="298" x="0" y="0" maskUnits="userSpaceOnUse" style={{maskType: "alpha"}}>
+                  <mask id="gemini-a" width={296} height={298} x={0} y={0} maskUnits="userSpaceOnUse" style={{maskType: "alpha"}}>
                     <path fill="#3186FF" d="M141.201 4.886c2.282-6.17 11.042-6.071 13.184.148l5.985 17.37a184.004 184.004 0 0 0 111.257 113.049l19.304 6.997c6.143 2.227 6.156 10.91.02 13.155l-19.35 7.082a184.001 184.001 0 0 0-109.495 109.385l-7.573 20.629c-2.241 6.105-10.869 6.121-13.133.025l-7.908-21.296a184 184 0 0 0-109.02-108.658l-19.698-7.239c-6.102-2.243-6.118-10.867-.025-13.132l20.083-7.467A183.998 183.998 0 0 0 133.291 26.28l7.91-21.394Z"></path>
                   </mask>
                   <g mask="url(#gemini-a)">
                     <g filter="url(#gemini-b)">
-                      <ellipse cx="163" cy="149" fill="#3689FF" rx="196" ry="159"></ellipse>
+                      <ellipse cx={163} cy={149} fill="#3689FF" rx={196} ry={159}></ellipse>
                     </g>
                     <g filter="url(#gemini-c)">
-                      <ellipse cx="33.5" cy="142.5" fill="#F6C013" rx="68.5" ry="72.5"></ellipse>
+                      <ellipse cx={33.5} cy={142.5} fill="#F6C013" rx={68.5} ry={72.5}></ellipse>
                     </g>
                     <g filter="url(#gemini-d)">
-                      <ellipse cx="19.5" cy="148.5" fill="#F6C013" rx="68.5" ry="72.5"></ellipse>
+                      <ellipse cx={19.5} cy={148.5} fill="#F6C013" rx={68.5} ry={72.5}></ellipse>
                     </g>
                     <g filter="url(#gemini-e)">
                       <path fill="#FA4340" d="M194 10.5C172 82.5 65.5 134.333 22.5 135L144-66l50 76.5Z"></path>
@@ -81,37 +81,37 @@ export function Pattern() {
                     </g>
                   </g>
                   <defs>
-                    <filter id="gemini-b" width="464" height="390" x="-69" y="-46" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                    <filter id="gemini-b" width={464} height={390} x={-69} y={-46} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                       <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                       <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                       <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="18"></fegaussianblur>
                     </filter>
-                    <filter id="gemini-c" width="265" height="273" x="-99" y="6" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                    <filter id="gemini-c" width={265} height={273} x={-99} y={6} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                       <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                       <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                       <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="32"></fegaussianblur>
                     </filter>
-                    <filter id="gemini-d" width="265" height="273" x="-113" y="12" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                    <filter id="gemini-d" width={265} height={273} x={-113} y={12} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                       <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                       <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                       <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="32"></fegaussianblur>
                     </filter>
-                    <filter id="gemini-e" width="299.5" height="329" x="-41.5" y="-130" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                    <filter id="gemini-e" width={299.5} height={329} x={-41.5} y={-130} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                       <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                       <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                       <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="32"></fegaussianblur>
                     </filter>
-                    <filter id="gemini-f" width="299.5" height="329" x="-45" y="-153" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                    <filter id="gemini-f" width={299.5} height={329} x={-45} y={-153} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                       <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                       <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                       <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="32"></fegaussianblur>
                     </filter>
-                    <filter id="gemini-g" width="299.5" height="329" x="-41" y="91" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                    <filter id="gemini-g" width={299.5} height={329} x={-41} y={91} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                       <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                       <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                       <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="32"></fegaussianblur>
                     </filter>
-                    <filter id="gemini-h" width="299.5" height="329" x="-39" y="132" color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
+                    <filter id="gemini-h" width={299.5} height={329} x={-39} y={132} color-interpolation-filters="sRGB" filterunits="userSpaceOnUse">
                       <feflood floodOpacity="0" result="BackgroundImageFix"></feflood>
                       <feblend in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
                       <fegaussianblur result="effect1_foregroundBlur_69_17998" stdDeviation="32"></fegaussianblur>
@@ -143,7 +143,7 @@ export function Pattern() {
               {"Get continuous oversight of market activity with automated tools running day and night."}
             </p>
           </div>
-          <Button className="w-fit" type="button" tabIndex="0">
+          <Button className="w-fit" type="button" tabIndex={0}>
             {"Start Monitoring"}
           </Button>
         </FramePanel>

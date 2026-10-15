@@ -46,7 +46,7 @@ export function Pattern() {
                   <span className="bg-[length:0%_1px] bg-bottom bg-gradient-to-r bg-no-repeat duration-500 from-white group-hover/tile:bg-[length:100%_1px] to-white transition-[background-size]">
                     {"Shop The Collection"}
                   </span>
-                  <svg className="-translate-x-1 duration-300 ease-out group-hover/tile:opacity-100 group-hover/tile:translate-x-0 lucide lucide-arrow-right opacity-0 size-3.5 transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+                  <svg className="-translate-x-1 duration-300 ease-out group-hover/tile:opacity-100 group-hover/tile:translate-x-0 lucide lucide-arrow-right opacity-0 size-3.5 transition-all" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
@@ -91,7 +91,7 @@ export function Pattern() {
                   <span className="bg-[length:0%_1px] bg-bottom bg-gradient-to-r bg-no-repeat duration-500 from-white group-hover/tile:bg-[length:100%_1px] to-white transition-[background-size]">
                     {"Shop The Collection"}
                   </span>
-                  <svg className="-translate-x-1 duration-300 ease-out group-hover/tile:opacity-100 group-hover/tile:translate-x-0 lucide lucide-arrow-right opacity-0 size-3.5 transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+                  <svg className="-translate-x-1 duration-300 ease-out group-hover/tile:opacity-100 group-hover/tile:translate-x-0 lucide lucide-arrow-right opacity-0 size-3.5 transition-all" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
@@ -136,7 +136,7 @@ export function Pattern() {
                   <span className="bg-[length:0%_1px] bg-bottom bg-gradient-to-r bg-no-repeat duration-500 from-white group-hover/tile:bg-[length:100%_1px] to-white transition-[background-size]">
                     {"Shop The Collection"}
                   </span>
-                  <svg className="-translate-x-1 duration-300 ease-out group-hover/tile:opacity-100 group-hover/tile:translate-x-0 lucide lucide-arrow-right opacity-0 size-3.5 transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+                  <svg className="-translate-x-1 duration-300 ease-out group-hover/tile:opacity-100 group-hover/tile:translate-x-0 lucide lucide-arrow-right opacity-0 size-3.5 transition-all" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
@@ -181,7 +181,7 @@ export function Pattern() {
                   <span className="bg-[length:0%_1px] bg-bottom bg-gradient-to-r bg-no-repeat duration-500 from-white group-hover/tile:bg-[length:100%_1px] to-white transition-[background-size]">
                     {"Shop The Collection"}
                   </span>
-                  <svg className="-translate-x-1 duration-300 ease-out group-hover/tile:opacity-100 group-hover/tile:translate-x-0 lucide lucide-arrow-right opacity-0 size-3.5 transition-all" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+                  <svg className="-translate-x-1 duration-300 ease-out group-hover/tile:opacity-100 group-hover/tile:translate-x-0 lucide lucide-arrow-right opacity-0 size-3.5 transition-all" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>

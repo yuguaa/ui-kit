@@ -80,19 +80,19 @@ export function Pattern() {
             </div>
             <div className="flex flex-wrap gap-2 items-center shrink-0">
               <Select>
-              <SelectTrigger className="w-44" type="button" tabIndex="0" id="base-ui-_r_0_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Environment" extracted="1">
+              <SelectTrigger className="w-44" type="button" tabIndex={0} id="base-ui-_r_0_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" aria-label="Environment" extracted="1">
                 <SelectValue>
                   {"All Environments"}
                 </SelectValue>
-                <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                   <path d="m6 9 6 6 6-6"></path>
                   {"▼"}
                 </svg>
               </SelectTrigger>
               </Select>
-              <input id="base-ui-_r_0_-hidden-input" tabIndex="-1" aria-hidden="true" value="all" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
-              <Button type="button" tabIndex="0">
-                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+              <input id="base-ui-_r_0_-hidden-input" tabIndex={-1} aria-hidden="true" value="all" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <Button type="button" tabIndex={0}>
+                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
@@ -105,7 +105,7 @@ export function Pattern() {
               <Frame className="h-full min-w-0" spacing="default">
                 <FramePanel className="flex flex-col gap-3">
                   <div className="[&_svg:not([class*=size-])]:size-4 flex gap-2 items-center min-w-0 text-muted-foreground">
-                    <svg className="lucide lucide-plug-zap" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlugZapIcon" tabler="IconPlugConnected" hugeicons="LinkCircle02Icon" phosphor="PlugsConnectedIcon" remixicon="RiPlug2Line" aria-hidden="true">
+                    <svg className="lucide lucide-plug-zap" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlugZapIcon" tabler="IconPlugConnected" hugeicons="LinkCircle02Icon" phosphor="PlugsConnectedIcon" remixicon="RiPlug2Line" aria-hidden="true">
                       <path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"></path>
                       <path d="m2 22 3-3"></path>
                       <path d="M7.5 13.5 10 11"></path>
@@ -129,7 +129,7 @@ export function Pattern() {
                       </span>
                       <span className="flex font-medium font-mono gap-0.5 items-center tabular-nums text-destructive text-sm">
                         <span className="[&_svg:not([class*=size-])]:size-3.5 flex" aria-hidden="true">
-                          <svg className="lucide lucide-arrow-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
+                          <svg className="lucide lucide-arrow-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
                             <path d="M12 5v14"></path>
                             <path d="m19 12-7 7-7-7"></path>
                           </svg>
@@ -197,7 +197,7 @@ export function Pattern() {
                       {"View risk-feature-store"}
                     </span>
                     <span className="[&_svg:not([class*=size-])]:size-4 duration-150 flex group-hover/action:translate-x-0.5 motion-reduce:transition-none shrink-0 transition-transform">
-                      <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+                      <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
                       </svg>
@@ -208,7 +208,7 @@ export function Pattern() {
               <Frame className="h-full min-w-0" spacing="default">
                 <FramePanel className="flex flex-col gap-3">
                   <div className="[&_svg:not([class*=size-])]:size-4 flex gap-2 items-center min-w-0 text-muted-foreground">
-                    <svg className="lucide lucide-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LinkIcon" tabler="IconLink" hugeicons="Link01Icon" phosphor="LinkIcon" remixicon="RiLinkM" aria-hidden="true">
+                    <svg className="lucide lucide-link" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LinkIcon" tabler="IconLink" hugeicons="Link01Icon" phosphor="LinkIcon" remixicon="RiLinkM" aria-hidden="true">
                       <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
                       <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
                     </svg>
@@ -229,7 +229,7 @@ export function Pattern() {
                       </span>
                       <span className="flex font-medium font-mono gap-0.5 items-center tabular-nums text-sm text-success">
                         <span className="[&_svg:not([class*=size-])]:size-3.5 flex" aria-hidden="true">
-                          <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
+                          <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                             <path d="m5 12 7-7 7 7"></path>
                             <path d="M12 19V5"></path>
                           </svg>
@@ -287,7 +287,7 @@ export function Pattern() {
                       {"Review schema drift"}
                     </span>
                     <span className="[&_svg:not([class*=size-])]:size-4 duration-150 flex group-hover/action:translate-x-0.5 motion-reduce:transition-none shrink-0 transition-transform">
-                      <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+                      <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
                       </svg>
@@ -298,7 +298,7 @@ export function Pattern() {
               <Frame className="h-full min-w-0" spacing="default">
                 <FramePanel className="flex flex-col gap-3">
                   <div className="[&_svg:not([class*=size-])]:size-4 flex gap-2 items-center min-w-0 text-muted-foreground">
-                    <svg className="lucide lucide-arrow-left-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftRightIcon" tabler="IconArrowsExchange" hugeicons="ArrowDataTransferHorizontalIcon" phosphor="ArrowsLeftRightIcon" remixicon="RiArrowLeftRightLine" aria-hidden="true">
+                    <svg className="lucide lucide-arrow-left-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftRightIcon" tabler="IconArrowsExchange" hugeicons="ArrowDataTransferHorizontalIcon" phosphor="ArrowsLeftRightIcon" remixicon="RiArrowLeftRightLine" aria-hidden="true">
                       <path d="M8 3 4 7l4 4"></path>
                       <path d="M4 7h16"></path>
                       <path d="m16 21 4-4-4-4"></path>
@@ -318,7 +318,7 @@ export function Pattern() {
                       </span>
                       <span className="flex font-medium font-mono gap-0.5 items-center tabular-nums text-sm text-success">
                         <span className="[&_svg:not([class*=size-])]:size-3.5 flex" aria-hidden="true">
-                          <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
+                          <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                             <path d="m5 12 7-7 7 7"></path>
                             <path d="M12 19V5"></path>
                           </svg>
@@ -339,52 +339,52 @@ export function Pattern() {
                       <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_4_] {\n  --color-rows: var(--success);\n}\n\n\n.dark [data-chart=chart-_r_4_] {\n  --color-rows: var(--success);\n}\n" }} />
                       <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                         <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                          <div className="recharts-wrapper" width="261" height="56" style={{position: "relative", cursor: "default", width: "261px", height: "56px"}}>
-                            <svg className="recharts-surface" width="261" height="56" viewBox="0 0 261 56" style={{width: "100%", height: "100%", display: "block"}}>
+                          <div className="recharts-wrapper" width={261} height={56} style={{position: "relative", cursor: "default", width: "261px", height: "56px"}}>
+                            <svg className="recharts-surface" width={261} height={56} viewBox="0 0 261 56" style={{width: "100%", height: "100%", display: "block"}}>
                               <title></title>
                               <desc></desc>
-                              <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                              <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                              <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                              <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                               <defs>
                                 <clippath id="recharts1-clip">
-                                  <rect x="0" y="6" height="50" width="255"></rect>
+                                  <rect x={0} y={6} height={50} width={255}></rect>
                                 </clippath>
                               </defs>
                               <defs>
-                                <lineargradient id="stat-fill-r3" x1="0" y1="0" x2="0" y2="1">
-                                  <stop offset="0%" stopColor="var(--success)" stopOpacity="0.24"></stop>
-                                  <stop offset="100%" stopColor="var(--success)" stopOpacity="0"></stop>
+                                <lineargradient id="stat-fill-r3" x1={0} y1={0} x2={0} y2={1}>
+                                  <stop offset="0%" stopColor="var(--success)" stopOpacity={0.24}></stop>
+                                  <stop offset="100%" stopColor="var(--success)" stopOpacity={0}></stop>
                                 </lineargradient>
                               </defs>
-                              <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                              <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                                 <g className="recharts-area recharts-layer">
                                   <g className="recharts-layer">
                                     <g className="recharts-layer" clipPath="url(#animationClipPath-recharts-area-_r_7f_)">
                                       <g className="recharts-layer">
-                                        <path className="recharts-area-area recharts-curve" strokeWidth="1.5" fill="url(#stat-fill-r3)" fillOpacity="1" height="50" stroke="none" width="255" id="recharts-area-_r_7f_" d="M0,17.428C6.538,15.843,13.077,14.258,19.615,14.258C26.154,14.258,32.692,19.278,39.231,19.278C45.769,19.278,52.308,13.128,58.846,11.175C65.385,9.223,71.923,7.564,78.462,7.564C85,7.564,91.538,22.243,98.077,23.946C104.615,25.649,111.154,26.5,117.692,26.5C124.231,26.5,130.769,14.052,137.308,12.232C143.846,10.412,150.385,9.502,156.923,9.502C163.462,9.502,170,10.206,176.538,10.206C183.077,10.206,189.615,6.948,196.154,6.948C202.692,6.948,209.231,13.553,215.769,13.553C222.308,13.553,228.846,10.408,235.385,9.15C241.923,7.891,248.462,6.945,255,6L255,56C248.462,56,241.923,56,235.385,56C228.846,56,222.308,56,215.769,56C209.231,56,202.692,56,196.154,56C189.615,56,183.077,56,176.538,56C170,56,163.462,56,156.923,56C150.385,56,143.846,56,137.308,56C130.769,56,124.231,56,117.692,56C111.154,56,104.615,56,98.077,56C91.538,56,85,56,78.462,56C71.923,56,65.385,56,58.846,56C52.308,56,45.769,56,39.231,56C32.692,56,26.154,56,19.615,56C13.077,56,6.538,56,0,56Z"></path>
-                                        <path className="recharts-area-curve recharts-curve" strokeWidth="1.5" fill="none" fillOpacity="1" height="50" stroke="var(--success)" width="255" d="M0,17.428C6.538,15.843,13.077,14.258,19.615,14.258C26.154,14.258,32.692,19.278,39.231,19.278C45.769,19.278,52.308,13.128,58.846,11.175C65.385,9.223,71.923,7.564,78.462,7.564C85,7.564,91.538,22.243,98.077,23.946C104.615,25.649,111.154,26.5,117.692,26.5C124.231,26.5,130.769,14.052,137.308,12.232C143.846,10.412,150.385,9.502,156.923,9.502C163.462,9.502,170,10.206,176.538,10.206C183.077,10.206,189.615,6.948,196.154,6.948C202.692,6.948,209.231,13.553,215.769,13.553C222.308,13.553,228.846,10.408,235.385,9.15C241.923,7.891,248.462,6.945,255,6"></path>
+                                        <path className="recharts-area-area recharts-curve" strokeWidth={1.5} fill="url(#stat-fill-r3)" fillOpacity={1} height={50} stroke="none" width={255} id="recharts-area-_r_7f_" d="M0,17.428C6.538,15.843,13.077,14.258,19.615,14.258C26.154,14.258,32.692,19.278,39.231,19.278C45.769,19.278,52.308,13.128,58.846,11.175C65.385,9.223,71.923,7.564,78.462,7.564C85,7.564,91.538,22.243,98.077,23.946C104.615,25.649,111.154,26.5,117.692,26.5C124.231,26.5,130.769,14.052,137.308,12.232C143.846,10.412,150.385,9.502,156.923,9.502C163.462,9.502,170,10.206,176.538,10.206C183.077,10.206,189.615,6.948,196.154,6.948C202.692,6.948,209.231,13.553,215.769,13.553C222.308,13.553,228.846,10.408,235.385,9.15C241.923,7.891,248.462,6.945,255,6L255,56C248.462,56,241.923,56,235.385,56C228.846,56,222.308,56,215.769,56C209.231,56,202.692,56,196.154,56C189.615,56,183.077,56,176.538,56C170,56,163.462,56,156.923,56C150.385,56,143.846,56,137.308,56C130.769,56,124.231,56,117.692,56C111.154,56,104.615,56,98.077,56C91.538,56,85,56,78.462,56C71.923,56,65.385,56,58.846,56C52.308,56,45.769,56,39.231,56C32.692,56,26.154,56,19.615,56C13.077,56,6.538,56,0,56Z"></path>
+                                        <path className="recharts-area-curve recharts-curve" strokeWidth={1.5} fill="none" fillOpacity={1} height={50} stroke="var(--success)" width={255} d="M0,17.428C6.538,15.843,13.077,14.258,19.615,14.258C26.154,14.258,32.692,19.278,39.231,19.278C45.769,19.278,52.308,13.128,58.846,11.175C65.385,9.223,71.923,7.564,78.462,7.564C85,7.564,91.538,22.243,98.077,23.946C104.615,25.649,111.154,26.5,117.692,26.5C124.231,26.5,130.769,14.052,137.308,12.232C143.846,10.412,150.385,9.502,156.923,9.502C163.462,9.502,170,10.206,176.538,10.206C183.077,10.206,189.615,6.948,196.154,6.948C202.692,6.948,209.231,13.553,215.769,13.553C222.308,13.553,228.846,10.408,235.385,9.15C241.923,7.891,248.462,6.945,255,6"></path>
                                       </g>
                                     </g>
                                   </g>
                                 </g>
                               </g>
-                              <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                              <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                              <g className="recharts-zIndex-layer_400" tabIndex="-1">
+                              <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                              <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                              <g className="recharts-zIndex-layer_400" tabIndex={-1}>
                                 <g className="recharts-layer recharts-reference-line">
-                                  <line className="recharts-reference-line-line" x="Sep 29" stroke="var(--success)" strokeOpacity="0.5" strokeDasharray="2 3" fill="none" fillOpacity="1" strokeWidth="1" x1="255" y1="56" x2="255" y2="6"></line>
+                                  <line className="recharts-reference-line-line" x="Sep 29" stroke="var(--success)" strokeOpacity={0.5} strokeDasharray="2 3" fill="none" fillOpacity={1} strokeWidth={1} x1={255} y1={56} x2={255} y2={6}></line>
                                 </g>
                               </g>
-                              <g className="recharts-zIndex-layer_500" tabIndex="-1"></g>
-                              <g className="recharts-zIndex-layer_600" tabIndex="-1">
+                              <g className="recharts-zIndex-layer_500" tabIndex={-1}></g>
+                              <g className="recharts-zIndex-layer_600" tabIndex={-1}>
                                 <g className="recharts-layer recharts-reference-dot">
-                                  <circle className="recharts-dot recharts-reference-dot-dot" x="Sep 29" y="8417609" r="4" fill="var(--success)" stroke="var(--card)" strokeWidth="2" fillOpacity="1" cx="255" cy="6"></circle>
+                                  <circle className="recharts-dot recharts-reference-dot-dot" x="Sep 29" y={8417609} r={4} fill="var(--success)" stroke="var(--card)" strokeWidth={2} fillOpacity={1} cx={255} cy={6}></circle>
                                 </g>
                               </g>
-                              <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                              <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                              <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                              <g className="recharts-zIndex-layer_2000" tabIndex="-1"></g>
+                              <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                              <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                              <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                              <g className="recharts-zIndex-layer_2000" tabIndex={-1}></g>
                             </svg>
                           </div>
                         </div>
@@ -399,7 +399,7 @@ export function Pattern() {
                       {"View analytics-warehouse"}
                     </span>
                     <span className="[&_svg:not([class*=size-])]:size-4 duration-150 flex group-hover/action:translate-x-0.5 motion-reduce:transition-none shrink-0 transition-transform">
-                      <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+                      <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
                       </svg>
@@ -410,7 +410,7 @@ export function Pattern() {
               <Frame className="h-full min-w-0" spacing="default">
                 <FramePanel className="flex flex-col gap-3">
                   <div className="[&_svg:not([class*=size-])]:size-4 flex gap-2 items-center min-w-0 text-muted-foreground">
-                    <svg className="lucide lucide-triangle-alert" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
+                    <svg className="lucide lucide-triangle-alert" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TriangleAlertIcon" tabler="IconAlertTriangle" hugeicons="Alert02Icon" phosphor="WarningIcon" remixicon="RiAlertLine" aria-hidden="true">
                       <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3"></path>
                       <path d="M12 9v4"></path>
                       <path d="M12 17h.01"></path>
@@ -429,7 +429,7 @@ export function Pattern() {
                       </span>
                       <span className="flex font-medium font-mono gap-0.5 items-center tabular-nums text-destructive text-sm">
                         <span className="[&_svg:not([class*=size-])]:size-3.5 flex" aria-hidden="true">
-                          <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
+                          <svg className="lucide lucide-arrow-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                             <path d="m5 12 7-7 7 7"></path>
                             <path d="M12 19V5"></path>
                           </svg>
@@ -503,7 +503,7 @@ export function Pattern() {
                       {"View risk-feature-store"}
                     </span>
                     <span className="[&_svg:not([class*=size-])]:size-4 duration-150 flex group-hover/action:translate-x-0.5 motion-reduce:transition-none shrink-0 transition-transform">
-                      <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+                      <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                         <path d="M5 12h14"></path>
                         <path d="m12 5 7 7-7 7"></path>
                       </svg>
@@ -539,10 +539,10 @@ export function Pattern() {
                       </li>
                     </ul>
                     <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Activity shown" style={{"--gap": "0"}}>
-                      <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="0">
+                      <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex={0} aria-pressed="true" variant="outline" size="sm" spacing="0">
                         {"Runs"}
                       </ToggleGroupItem>
-                      <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0">
+                      <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline data-pressed:text-foreground disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none text-muted-foreground whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="outline" size="sm" spacing="0">
                         {"Rows"}
                       </ToggleGroupItem>
                     </ToggleGroup>
@@ -554,229 +554,229 @@ export function Pattern() {
                     <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_8_] {\n  --color-succeeded: var(--success);\n  --color-partial: var(--warning);\n  --color-failed: var(--destructive);\n  --color-volume: var(--info);\n}\n\n\n.dark [data-chart=chart-_r_8_] {\n  --color-succeeded: var(--success);\n  --color-partial: var(--warning);\n  --color-failed: var(--destructive);\n  --color-volume: var(--info);\n}\n" }} />
                     <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                       <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                        <div className="recharts-wrapper" width="785" height="224" style={{position: "relative", cursor: "default", width: "785px", height: "224px"}}>
-                          <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex="-1" style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px"}}></div>
-                          <svg className="recharts-surface" role="application" tabIndex="0" width="785" height="224" viewBox="0 0 785 224" style={{width: "100%", height: "100%", display: "block"}}>
+                        <div className="recharts-wrapper" width={785} height={224} style={{position: "relative", cursor: "default", width: "785px", height: "224px"}}>
+                          <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex={-1} style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px"}}></div>
+                          <svg className="recharts-surface" role="application" tabIndex={0} width={785} height={224} viewBox="0 0 785 224" style={{width: "100%", height: "100%", display: "block"}}>
                             <title></title>
                             <desc></desc>
-                            <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                            <g className="recharts-zIndex-layer_-50" tabIndex="-1">
+                            <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                            <g className="recharts-zIndex-layer_-50" tabIndex={-1}>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="31.3333" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 31.3333,10\n            A 6,6,0,0,1,37.3333,4\n            L 44.3333,4\n            A 6,6,0,0,1,50.3333,10\n            L 50.3333,192\n            A 6,6,0,0,1,44.3333,198\n            L 37.3333,198\n            A 6,6,0,0,1,31.3333,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={31.3333} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 31.3333,10\n            A 6,6,0,0,1,37.3333,4\n            L 44.3333,4\n            A 6,6,0,0,1,50.3333,10\n            L 50.3333,192\n            A 6,6,0,0,1,44.3333,198\n            L 37.3333,198\n            A 6,6,0,0,1,31.3333,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="63" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 63,10\n            A 6,6,0,0,1,69,4\n            L 76,4\n            A 6,6,0,0,1,82,10\n            L 82,192\n            A 6,6,0,0,1,76,198\n            L 69,198\n            A 6,6,0,0,1,63,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={63} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 63,10\n            A 6,6,0,0,1,69,4\n            L 76,4\n            A 6,6,0,0,1,82,10\n            L 82,192\n            A 6,6,0,0,1,76,198\n            L 69,198\n            A 6,6,0,0,1,63,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="94.6667" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 94.6667,10\n            A 6,6,0,0,1,100.6667,4\n            L 107.6667,4\n            A 6,6,0,0,1,113.6667,10\n            L 113.6667,192\n            A 6,6,0,0,1,107.6667,198\n            L 100.6667,198\n            A 6,6,0,0,1,94.6667,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={94.6667} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 94.6667,10\n            A 6,6,0,0,1,100.6667,4\n            L 107.6667,4\n            A 6,6,0,0,1,113.6667,10\n            L 113.6667,192\n            A 6,6,0,0,1,107.6667,198\n            L 100.6667,198\n            A 6,6,0,0,1,94.6667,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="126.3333" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 126.3333,10\n            A 6,6,0,0,1,132.3333,4\n            L 139.3333,4\n            A 6,6,0,0,1,145.3333,10\n            L 145.3333,192\n            A 6,6,0,0,1,139.3333,198\n            L 132.3333,198\n            A 6,6,0,0,1,126.3333,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={126.3333} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 126.3333,10\n            A 6,6,0,0,1,132.3333,4\n            L 139.3333,4\n            A 6,6,0,0,1,145.3333,10\n            L 145.3333,192\n            A 6,6,0,0,1,139.3333,198\n            L 132.3333,198\n            A 6,6,0,0,1,126.3333,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="158" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 158,10\n            A 6,6,0,0,1,164,4\n            L 171,4\n            A 6,6,0,0,1,177,10\n            L 177,192\n            A 6,6,0,0,1,171,198\n            L 164,198\n            A 6,6,0,0,1,158,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={158} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 158,10\n            A 6,6,0,0,1,164,4\n            L 171,4\n            A 6,6,0,0,1,177,10\n            L 177,192\n            A 6,6,0,0,1,171,198\n            L 164,198\n            A 6,6,0,0,1,158,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="189.6667" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 189.6667,10\n            A 6,6,0,0,1,195.6667,4\n            L 202.6667,4\n            A 6,6,0,0,1,208.6667,10\n            L 208.6667,192\n            A 6,6,0,0,1,202.6667,198\n            L 195.6667,198\n            A 6,6,0,0,1,189.6667,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={189.6667} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 189.6667,10\n            A 6,6,0,0,1,195.6667,4\n            L 202.6667,4\n            A 6,6,0,0,1,208.6667,10\n            L 208.6667,192\n            A 6,6,0,0,1,202.6667,198\n            L 195.6667,198\n            A 6,6,0,0,1,189.6667,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="221.3333" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 221.3333,10\n            A 6,6,0,0,1,227.3333,4\n            L 234.3333,4\n            A 6,6,0,0,1,240.3333,10\n            L 240.3333,192\n            A 6,6,0,0,1,234.3333,198\n            L 227.3333,198\n            A 6,6,0,0,1,221.3333,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={221.3333} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 221.3333,10\n            A 6,6,0,0,1,227.3333,4\n            L 234.3333,4\n            A 6,6,0,0,1,240.3333,10\n            L 240.3333,192\n            A 6,6,0,0,1,234.3333,198\n            L 227.3333,198\n            A 6,6,0,0,1,221.3333,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="253" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 253,10\n            A 6,6,0,0,1,259,4\n            L 266,4\n            A 6,6,0,0,1,272,10\n            L 272,192\n            A 6,6,0,0,1,266,198\n            L 259,198\n            A 6,6,0,0,1,253,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={253} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 253,10\n            A 6,6,0,0,1,259,4\n            L 266,4\n            A 6,6,0,0,1,272,10\n            L 272,192\n            A 6,6,0,0,1,266,198\n            L 259,198\n            A 6,6,0,0,1,253,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="284.6667" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 284.6667,10\n            A 6,6,0,0,1,290.6667,4\n            L 297.6667,4\n            A 6,6,0,0,1,303.6667,10\n            L 303.6667,192\n            A 6,6,0,0,1,297.6667,198\n            L 290.6667,198\n            A 6,6,0,0,1,284.6667,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={284.6667} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 284.6667,10\n            A 6,6,0,0,1,290.6667,4\n            L 297.6667,4\n            A 6,6,0,0,1,303.6667,10\n            L 303.6667,192\n            A 6,6,0,0,1,297.6667,198\n            L 290.6667,198\n            A 6,6,0,0,1,284.6667,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="316.3333" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 316.3333,10\n            A 6,6,0,0,1,322.3333,4\n            L 329.3333,4\n            A 6,6,0,0,1,335.3333,10\n            L 335.3333,192\n            A 6,6,0,0,1,329.3333,198\n            L 322.3333,198\n            A 6,6,0,0,1,316.3333,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={316.3333} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 316.3333,10\n            A 6,6,0,0,1,322.3333,4\n            L 329.3333,4\n            A 6,6,0,0,1,335.3333,10\n            L 335.3333,192\n            A 6,6,0,0,1,329.3333,198\n            L 322.3333,198\n            A 6,6,0,0,1,316.3333,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="348" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 348,10\n            A 6,6,0,0,1,354,4\n            L 361,4\n            A 6,6,0,0,1,367,10\n            L 367,192\n            A 6,6,0,0,1,361,198\n            L 354,198\n            A 6,6,0,0,1,348,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={348} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 348,10\n            A 6,6,0,0,1,354,4\n            L 361,4\n            A 6,6,0,0,1,367,10\n            L 367,192\n            A 6,6,0,0,1,361,198\n            L 354,198\n            A 6,6,0,0,1,348,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="379.6667" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 379.6667,10\n            A 6,6,0,0,1,385.6667,4\n            L 392.6667,4\n            A 6,6,0,0,1,398.6667,10\n            L 398.6667,192\n            A 6,6,0,0,1,392.6667,198\n            L 385.6667,198\n            A 6,6,0,0,1,379.6667,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={379.6667} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 379.6667,10\n            A 6,6,0,0,1,385.6667,4\n            L 392.6667,4\n            A 6,6,0,0,1,398.6667,10\n            L 398.6667,192\n            A 6,6,0,0,1,392.6667,198\n            L 385.6667,198\n            A 6,6,0,0,1,379.6667,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="411.3333" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 411.3333,10\n            A 6,6,0,0,1,417.3333,4\n            L 424.3333,4\n            A 6,6,0,0,1,430.3333,10\n            L 430.3333,192\n            A 6,6,0,0,1,424.3333,198\n            L 417.3333,198\n            A 6,6,0,0,1,411.3333,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={411.3333} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 411.3333,10\n            A 6,6,0,0,1,417.3333,4\n            L 424.3333,4\n            A 6,6,0,0,1,430.3333,10\n            L 430.3333,192\n            A 6,6,0,0,1,424.3333,198\n            L 417.3333,198\n            A 6,6,0,0,1,411.3333,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="443" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 443,10\n            A 6,6,0,0,1,449,4\n            L 456,4\n            A 6,6,0,0,1,462,10\n            L 462,192\n            A 6,6,0,0,1,456,198\n            L 449,198\n            A 6,6,0,0,1,443,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={443} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 443,10\n            A 6,6,0,0,1,449,4\n            L 456,4\n            A 6,6,0,0,1,462,10\n            L 462,192\n            A 6,6,0,0,1,456,198\n            L 449,198\n            A 6,6,0,0,1,443,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="474.6667" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 474.6667,10\n            A 6,6,0,0,1,480.6667,4\n            L 487.6667,4\n            A 6,6,0,0,1,493.6667,10\n            L 493.6667,192\n            A 6,6,0,0,1,487.6667,198\n            L 480.6667,198\n            A 6,6,0,0,1,474.6667,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={474.6667} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 474.6667,10\n            A 6,6,0,0,1,480.6667,4\n            L 487.6667,4\n            A 6,6,0,0,1,493.6667,10\n            L 493.6667,192\n            A 6,6,0,0,1,487.6667,198\n            L 480.6667,198\n            A 6,6,0,0,1,474.6667,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="506.3333" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 506.3333,10\n            A 6,6,0,0,1,512.3333,4\n            L 519.3333,4\n            A 6,6,0,0,1,525.3333,10\n            L 525.3333,192\n            A 6,6,0,0,1,519.3333,198\n            L 512.3333,198\n            A 6,6,0,0,1,506.3333,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={506.3333} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 506.3333,10\n            A 6,6,0,0,1,512.3333,4\n            L 519.3333,4\n            A 6,6,0,0,1,525.3333,10\n            L 525.3333,192\n            A 6,6,0,0,1,519.3333,198\n            L 512.3333,198\n            A 6,6,0,0,1,506.3333,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="538" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 538,10\n            A 6,6,0,0,1,544,4\n            L 551,4\n            A 6,6,0,0,1,557,10\n            L 557,192\n            A 6,6,0,0,1,551,198\n            L 544,198\n            A 6,6,0,0,1,538,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={538} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 538,10\n            A 6,6,0,0,1,544,4\n            L 551,4\n            A 6,6,0,0,1,557,10\n            L 557,192\n            A 6,6,0,0,1,551,198\n            L 544,198\n            A 6,6,0,0,1,538,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="569.6667" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 569.6667,10\n            A 6,6,0,0,1,575.6667,4\n            L 582.6667,4\n            A 6,6,0,0,1,588.6667,10\n            L 588.6667,192\n            A 6,6,0,0,1,582.6667,198\n            L 575.6667,198\n            A 6,6,0,0,1,569.6667,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={569.6667} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 569.6667,10\n            A 6,6,0,0,1,575.6667,4\n            L 582.6667,4\n            A 6,6,0,0,1,588.6667,10\n            L 588.6667,192\n            A 6,6,0,0,1,582.6667,198\n            L 575.6667,198\n            A 6,6,0,0,1,569.6667,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="601.3333" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 601.3333,10\n            A 6,6,0,0,1,607.3333,4\n            L 614.3333,4\n            A 6,6,0,0,1,620.3333,10\n            L 620.3333,192\n            A 6,6,0,0,1,614.3333,198\n            L 607.3333,198\n            A 6,6,0,0,1,601.3333,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={601.3333} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 601.3333,10\n            A 6,6,0,0,1,607.3333,4\n            L 614.3333,4\n            A 6,6,0,0,1,620.3333,10\n            L 620.3333,192\n            A 6,6,0,0,1,614.3333,198\n            L 607.3333,198\n            A 6,6,0,0,1,601.3333,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="633" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 633,10\n            A 6,6,0,0,1,639,4\n            L 646,4\n            A 6,6,0,0,1,652,10\n            L 652,192\n            A 6,6,0,0,1,646,198\n            L 639,198\n            A 6,6,0,0,1,633,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={633} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 633,10\n            A 6,6,0,0,1,639,4\n            L 646,4\n            A 6,6,0,0,1,652,10\n            L 652,192\n            A 6,6,0,0,1,646,198\n            L 639,198\n            A 6,6,0,0,1,633,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="664.6667" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 664.6667,10\n            A 6,6,0,0,1,670.6667,4\n            L 677.6667,4\n            A 6,6,0,0,1,683.6667,10\n            L 683.6667,192\n            A 6,6,0,0,1,677.6667,198\n            L 670.6667,198\n            A 6,6,0,0,1,664.6667,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={664.6667} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 664.6667,10\n            A 6,6,0,0,1,670.6667,4\n            L 677.6667,4\n            A 6,6,0,0,1,683.6667,10\n            L 683.6667,192\n            A 6,6,0,0,1,677.6667,198\n            L 670.6667,198\n            A 6,6,0,0,1,664.6667,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="696.3333" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 696.3333,10\n            A 6,6,0,0,1,702.3333,4\n            L 709.3333,4\n            A 6,6,0,0,1,715.3333,10\n            L 715.3333,192\n            A 6,6,0,0,1,709.3333,198\n            L 702.3333,198\n            A 6,6,0,0,1,696.3333,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={696.3333} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 696.3333,10\n            A 6,6,0,0,1,702.3333,4\n            L 709.3333,4\n            A 6,6,0,0,1,715.3333,10\n            L 715.3333,192\n            A 6,6,0,0,1,709.3333,198\n            L 702.3333,198\n            A 6,6,0,0,1,696.3333,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="728" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 728,10\n            A 6,6,0,0,1,734,4\n            L 741,4\n            A 6,6,0,0,1,747,10\n            L 747,192\n            A 6,6,0,0,1,741,198\n            L 734,198\n            A 6,6,0,0,1,728,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={728} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 728,10\n            A 6,6,0,0,1,734,4\n            L 741,4\n            A 6,6,0,0,1,747,10\n            L 747,192\n            A 6,6,0,0,1,741,198\n            L 734,198\n            A 6,6,0,0,1,728,192 Z"}></path>
                               </g>
                               <g className="recharts-inactive-bar recharts-layer">
-                                <path className="recharts-bar-background-rectangle recharts-rectangle" x="759.6667" y="4" width="19" height="194" fill="var(--muted)" radius="6" d={"M 759.6667,10\n            A 6,6,0,0,1,765.6667,4\n            L 772.6667,4\n            A 6,6,0,0,1,778.6667,10\n            L 778.6667,192\n            A 6,6,0,0,1,772.6667,198\n            L 765.6667,198\n            A 6,6,0,0,1,759.6667,192 Z"}></path>
+                                <path className="recharts-bar-background-rectangle recharts-rectangle" x={759.6667} y={4} width={19} height={194} fill="var(--muted)" radius="6" d={"M 759.6667,10\n            A 6,6,0,0,1,765.6667,4\n            L 772.6667,4\n            A 6,6,0,0,1,778.6667,10\n            L 778.6667,192\n            A 6,6,0,0,1,772.6667,198\n            L 765.6667,198\n            A 6,6,0,0,1,759.6667,192 Z"}></path>
                               </g>
                             </g>
                             <defs>
                               <clippath id="recharts2-clip">
-                                <rect x="25" y="4" height="194" width="760"></rect>
+                                <rect x={25} y={4} height={194} width={760}></rect>
                               </clippath>
                             </defs>
                             <defs>
-                              <pattern id="r5-succeeded" width="5" height="5" patternUnits="userSpaceOnUse" patterntransform="rotate(45)">
-                                <rect width="5" height="5" fill="var(--color-succeeded)" fillOpacity="0.22"></rect>
-                                <rect width="2" height="5" fill="var(--color-succeeded)" fillOpacity="0.5"></rect>
+                              <pattern id="r5-succeeded" width={5} height={5} patternUnits="userSpaceOnUse" patterntransform="rotate(45)">
+                                <rect width={5} height={5} fill="var(--color-succeeded)" fillOpacity={0.22}></rect>
+                                <rect width={2} height={5} fill="var(--color-succeeded)" fillOpacity={0.5}></rect>
                               </pattern>
-                              <pattern id="r5-partial" width="5" height="5" patternUnits="userSpaceOnUse" patterntransform="rotate(45)">
-                                <rect width="5" height="5" fill="var(--color-partial)" fillOpacity="0.22"></rect>
-                                <rect width="2" height="5" fill="var(--color-partial)" fillOpacity="0.5"></rect>
+                              <pattern id="r5-partial" width={5} height={5} patternUnits="userSpaceOnUse" patterntransform="rotate(45)">
+                                <rect width={5} height={5} fill="var(--color-partial)" fillOpacity={0.22}></rect>
+                                <rect width={2} height={5} fill="var(--color-partial)" fillOpacity={0.5}></rect>
                               </pattern>
-                              <pattern id="r5-failed" width="5" height="5" patternUnits="userSpaceOnUse" patterntransform="rotate(45)">
-                                <rect width="5" height="5" fill="var(--color-failed)" fillOpacity="0.22"></rect>
-                                <rect width="2" height="5" fill="var(--color-failed)" fillOpacity="0.5"></rect>
+                              <pattern id="r5-failed" width={5} height={5} patternUnits="userSpaceOnUse" patterntransform="rotate(45)">
+                                <rect width={5} height={5} fill="var(--color-failed)" fillOpacity={0.22}></rect>
+                                <rect width={2} height={5} fill="var(--color-failed)" fillOpacity={0.5}></rect>
                               </pattern>
                             </defs>
-                            <g className="recharts-zIndex-layer_100" tabIndex="-1"></g>
-                            <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                            <g className="recharts-zIndex-layer_300" tabIndex="-1">
+                            <g className="recharts-zIndex-layer_100" tabIndex={-1}></g>
+                            <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                            <g className="recharts-zIndex-layer_300" tabIndex={-1}>
                               <g className="recharts-bar recharts-layer" id="recharts-bar-_r_7g_">
                                 <g className="recharts-bar-rectangles recharts-layer">
                                   <g className="recharts-layer">
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="31.3333" y="51.4222" width="19" height="146.5778" fill="url(#r5-succeeded)" radius="4" d={"M 31.3333,55.4222\n            A 4,4,0,0,1,35.3333,51.4222\n            L 46.3333,51.4222\n            A 4,4,0,0,1,50.3333,55.4222\n            L 50.3333,194\n            A 4,4,0,0,1,46.3333,198\n            L 35.3333,198\n            A 4,4,0,0,1,31.3333,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={31.3333} y={51.4222} width={19} height={146.5778} fill="url(#r5-succeeded)" radius="4" d={"M 31.3333,55.4222\n            A 4,4,0,0,1,35.3333,51.4222\n            L 46.3333,51.4222\n            A 4,4,0,0,1,50.3333,55.4222\n            L 50.3333,194\n            A 4,4,0,0,1,46.3333,198\n            L 35.3333,198\n            A 4,4,0,0,1,31.3333,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="63" y="51.4222" width="19" height="146.5778" fill="url(#r5-succeeded)" radius="4" d={"M 63,55.4222\n            A 4,4,0,0,1,67,51.4222\n            L 78,51.4222\n            A 4,4,0,0,1,82,55.4222\n            L 82,194\n            A 4,4,0,0,1,78,198\n            L 67,198\n            A 4,4,0,0,1,63,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={63} y={51.4222} width={19} height={146.5778} fill="url(#r5-succeeded)" radius="4" d={"M 63,55.4222\n            A 4,4,0,0,1,67,51.4222\n            L 78,51.4222\n            A 4,4,0,0,1,82,55.4222\n            L 82,194\n            A 4,4,0,0,1,78,198\n            L 67,198\n            A 4,4,0,0,1,63,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="94.6667" y="51.4222" width="19" height="146.5778" fill="url(#r5-succeeded)" radius="4" d={"M 94.6667,55.4222\n            A 4,4,0,0,1,98.6667,51.4222\n            L 109.6667,51.4222\n            A 4,4,0,0,1,113.6667,55.4222\n            L 113.6667,194\n            A 4,4,0,0,1,109.6667,198\n            L 98.6667,198\n            A 4,4,0,0,1,94.6667,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={94.6667} y={51.4222} width={19} height={146.5778} fill="url(#r5-succeeded)" radius="4" d={"M 94.6667,55.4222\n            A 4,4,0,0,1,98.6667,51.4222\n            L 109.6667,51.4222\n            A 4,4,0,0,1,113.6667,55.4222\n            L 113.6667,194\n            A 4,4,0,0,1,109.6667,198\n            L 98.6667,198\n            A 4,4,0,0,1,94.6667,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="126.3333" y="47.1111" width="19" height="150.8889" fill="url(#r5-succeeded)" radius="4" d={"M 126.3333,51.1111\n            A 4,4,0,0,1,130.3333,47.1111\n            L 141.3333,47.1111\n            A 4,4,0,0,1,145.3333,51.1111\n            L 145.3333,194\n            A 4,4,0,0,1,141.3333,198\n            L 130.3333,198\n            A 4,4,0,0,1,126.3333,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={126.3333} y={47.1111} width={19} height={150.8889} fill="url(#r5-succeeded)" radius="4" d={"M 126.3333,51.1111\n            A 4,4,0,0,1,130.3333,47.1111\n            L 141.3333,47.1111\n            A 4,4,0,0,1,145.3333,51.1111\n            L 145.3333,194\n            A 4,4,0,0,1,141.3333,198\n            L 130.3333,198\n            A 4,4,0,0,1,126.3333,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="158" y="68.6667" width="19" height="129.3333" fill="url(#r5-succeeded)" radius="4" d={"M 158,72.6667\n            A 4,4,0,0,1,162,68.6667\n            L 173,68.6667\n            A 4,4,0,0,1,177,72.6667\n            L 177,194\n            A 4,4,0,0,1,173,198\n            L 162,198\n            A 4,4,0,0,1,158,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={158} y={68.6667} width={19} height={129.3333} fill="url(#r5-succeeded)" radius="4" d={"M 158,72.6667\n            A 4,4,0,0,1,162,68.6667\n            L 173,68.6667\n            A 4,4,0,0,1,177,72.6667\n            L 177,194\n            A 4,4,0,0,1,173,198\n            L 162,198\n            A 4,4,0,0,1,158,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="189.6667" y="68.6667" width="19" height="129.3333" fill="url(#r5-succeeded)" radius="4" d={"M 189.6667,72.6667\n            A 4,4,0,0,1,193.6667,68.6667\n            L 204.6667,68.6667\n            A 4,4,0,0,1,208.6667,72.6667\n            L 208.6667,194\n            A 4,4,0,0,1,204.6667,198\n            L 193.6667,198\n            A 4,4,0,0,1,189.6667,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={189.6667} y={68.6667} width={19} height={129.3333} fill="url(#r5-succeeded)" radius="4" d={"M 189.6667,72.6667\n            A 4,4,0,0,1,193.6667,68.6667\n            L 204.6667,68.6667\n            A 4,4,0,0,1,208.6667,72.6667\n            L 208.6667,194\n            A 4,4,0,0,1,204.6667,198\n            L 193.6667,198\n            A 4,4,0,0,1,189.6667,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="221.3333" y="68.6667" width="19" height="129.3333" fill="url(#r5-succeeded)" radius="4" d={"M 221.3333,72.6667\n            A 4,4,0,0,1,225.3333,68.6667\n            L 236.3333,68.6667\n            A 4,4,0,0,1,240.3333,72.6667\n            L 240.3333,194\n            A 4,4,0,0,1,236.3333,198\n            L 225.3333,198\n            A 4,4,0,0,1,221.3333,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={221.3333} y={68.6667} width={19} height={129.3333} fill="url(#r5-succeeded)" radius="4" d={"M 221.3333,72.6667\n            A 4,4,0,0,1,225.3333,68.6667\n            L 236.3333,68.6667\n            A 4,4,0,0,1,240.3333,72.6667\n            L 240.3333,194\n            A 4,4,0,0,1,236.3333,198\n            L 225.3333,198\n            A 4,4,0,0,1,221.3333,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="253" y="73.9778" width="19" height="124.0222" fill="url(#r5-succeeded)" radius="4" d={"M 253,77.9778\n            A 4,4,0,0,1,257,73.9778\n            L 268,73.9778\n            A 4,4,0,0,1,272,77.9778\n            L 272,194\n            A 4,4,0,0,1,268,198\n            L 257,198\n            A 4,4,0,0,1,253,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={253} y={73.9778} width={19} height={124.0222} fill="url(#r5-succeeded)" radius="4" d={"M 253,77.9778\n            A 4,4,0,0,1,257,73.9778\n            L 268,73.9778\n            A 4,4,0,0,1,272,77.9778\n            L 272,194\n            A 4,4,0,0,1,268,198\n            L 257,198\n            A 4,4,0,0,1,253,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="284.6667" y="68.6667" width="19" height="129.3333" fill="url(#r5-succeeded)" radius="4" d={"M 284.6667,72.6667\n            A 4,4,0,0,1,288.6667,68.6667\n            L 299.6667,68.6667\n            A 4,4,0,0,1,303.6667,72.6667\n            L 303.6667,194\n            A 4,4,0,0,1,299.6667,198\n            L 288.6667,198\n            A 4,4,0,0,1,284.6667,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={284.6667} y={68.6667} width={19} height={129.3333} fill="url(#r5-succeeded)" radius="4" d={"M 284.6667,72.6667\n            A 4,4,0,0,1,288.6667,68.6667\n            L 299.6667,68.6667\n            A 4,4,0,0,1,303.6667,72.6667\n            L 303.6667,194\n            A 4,4,0,0,1,299.6667,198\n            L 288.6667,198\n            A 4,4,0,0,1,284.6667,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="316.3333" y="64.3556" width="19" height="133.6444" fill="url(#r5-succeeded)" radius="4" d={"M 316.3333,68.3556\n            A 4,4,0,0,1,320.3333,64.3556\n            L 331.3333,64.3556\n            A 4,4,0,0,1,335.3333,68.3556\n            L 335.3333,194\n            A 4,4,0,0,1,331.3333,198\n            L 320.3333,198\n            A 4,4,0,0,1,316.3333,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={316.3333} y={64.3556} width={19} height={133.6444} fill="url(#r5-succeeded)" radius="4" d={"M 316.3333,68.3556\n            A 4,4,0,0,1,320.3333,64.3556\n            L 331.3333,64.3556\n            A 4,4,0,0,1,335.3333,68.3556\n            L 335.3333,194\n            A 4,4,0,0,1,331.3333,198\n            L 320.3333,198\n            A 4,4,0,0,1,316.3333,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="348" y="68.6667" width="19" height="129.3333" fill="url(#r5-succeeded)" radius="4" d={"M 348,72.6667\n            A 4,4,0,0,1,352,68.6667\n            L 363,68.6667\n            A 4,4,0,0,1,367,72.6667\n            L 367,194\n            A 4,4,0,0,1,363,198\n            L 352,198\n            A 4,4,0,0,1,348,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={348} y={68.6667} width={19} height={129.3333} fill="url(#r5-succeeded)" radius="4" d={"M 348,72.6667\n            A 4,4,0,0,1,352,68.6667\n            L 363,68.6667\n            A 4,4,0,0,1,367,72.6667\n            L 367,194\n            A 4,4,0,0,1,363,198\n            L 352,198\n            A 4,4,0,0,1,348,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="379.6667" y="82.6" width="19" height="115.4" fill="url(#r5-succeeded)" radius="4" d={"M 379.6667,86.6\n            A 4,4,0,0,1,383.6667,82.6\n            L 394.6667,82.6\n            A 4,4,0,0,1,398.6667,86.6\n            L 398.6667,194\n            A 4,4,0,0,1,394.6667,198\n            L 383.6667,198\n            A 4,4,0,0,1,379.6667,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={379.6667} y={82.6} width={19} height={115.4} fill="url(#r5-succeeded)" radius="4" d={"M 379.6667,86.6\n            A 4,4,0,0,1,383.6667,82.6\n            L 394.6667,82.6\n            A 4,4,0,0,1,398.6667,86.6\n            L 398.6667,194\n            A 4,4,0,0,1,394.6667,198\n            L 383.6667,198\n            A 4,4,0,0,1,379.6667,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="411.3333" y="68.6667" width="19" height="129.3333" fill="url(#r5-succeeded)" radius="4" d={"M 411.3333,72.6667\n            A 4,4,0,0,1,415.3333,68.6667\n            L 426.3333,68.6667\n            A 4,4,0,0,1,430.3333,72.6667\n            L 430.3333,194\n            A 4,4,0,0,1,426.3333,198\n            L 415.3333,198\n            A 4,4,0,0,1,411.3333,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={411.3333} y={68.6667} width={19} height={129.3333} fill="url(#r5-succeeded)" radius="4" d={"M 411.3333,72.6667\n            A 4,4,0,0,1,415.3333,68.6667\n            L 426.3333,68.6667\n            A 4,4,0,0,1,430.3333,72.6667\n            L 430.3333,194\n            A 4,4,0,0,1,426.3333,198\n            L 415.3333,198\n            A 4,4,0,0,1,411.3333,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="443" y="68.6667" width="19" height="129.3333" fill="url(#r5-succeeded)" radius="4" d={"M 443,72.6667\n            A 4,4,0,0,1,447,68.6667\n            L 458,68.6667\n            A 4,4,0,0,1,462,72.6667\n            L 462,194\n            A 4,4,0,0,1,458,198\n            L 447,198\n            A 4,4,0,0,1,443,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={443} y={68.6667} width={19} height={129.3333} fill="url(#r5-succeeded)" radius="4" d={"M 443,72.6667\n            A 4,4,0,0,1,447,68.6667\n            L 458,68.6667\n            A 4,4,0,0,1,462,72.6667\n            L 462,194\n            A 4,4,0,0,1,458,198\n            L 447,198\n            A 4,4,0,0,1,443,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="474.6667" y="68.6667" width="19" height="129.3333" fill="url(#r5-succeeded)" radius="4" d={"M 474.6667,72.6667\n            A 4,4,0,0,1,478.6667,68.6667\n            L 489.6667,68.6667\n            A 4,4,0,0,1,493.6667,72.6667\n            L 493.6667,194\n            A 4,4,0,0,1,489.6667,198\n            L 478.6667,198\n            A 4,4,0,0,1,474.6667,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={474.6667} y={68.6667} width={19} height={129.3333} fill="url(#r5-succeeded)" radius="4" d={"M 474.6667,72.6667\n            A 4,4,0,0,1,478.6667,68.6667\n            L 489.6667,68.6667\n            A 4,4,0,0,1,493.6667,72.6667\n            L 493.6667,194\n            A 4,4,0,0,1,489.6667,198\n            L 478.6667,198\n            A 4,4,0,0,1,474.6667,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="506.3333" y="69.6667" width="19" height="128.3333" fill="url(#r5-succeeded)" radius="4" d={"M 506.3333,73.6667\n            A 4,4,0,0,1,510.3333,69.6667\n            L 521.3333,69.6667\n            A 4,4,0,0,1,525.3333,73.6667\n            L 525.3333,194\n            A 4,4,0,0,1,521.3333,198\n            L 510.3333,198\n            A 4,4,0,0,1,506.3333,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={506.3333} y={69.6667} width={19} height={128.3333} fill="url(#r5-succeeded)" radius="4" d={"M 506.3333,73.6667\n            A 4,4,0,0,1,510.3333,69.6667\n            L 521.3333,69.6667\n            A 4,4,0,0,1,525.3333,73.6667\n            L 525.3333,194\n            A 4,4,0,0,1,521.3333,198\n            L 510.3333,198\n            A 4,4,0,0,1,506.3333,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="538" y="68.6667" width="19" height="129.3333" fill="url(#r5-succeeded)" radius="4" d={"M 538,72.6667\n            A 4,4,0,0,1,542,68.6667\n            L 553,68.6667\n            A 4,4,0,0,1,557,72.6667\n            L 557,194\n            A 4,4,0,0,1,553,198\n            L 542,198\n            A 4,4,0,0,1,538,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={538} y={68.6667} width={19} height={129.3333} fill="url(#r5-succeeded)" radius="4" d={"M 538,72.6667\n            A 4,4,0,0,1,542,68.6667\n            L 553,68.6667\n            A 4,4,0,0,1,557,72.6667\n            L 557,194\n            A 4,4,0,0,1,553,198\n            L 542,198\n            A 4,4,0,0,1,538,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="569.6667" y="68.6667" width="19" height="129.3333" fill="url(#r5-succeeded)" radius="4" d={"M 569.6667,72.6667\n            A 4,4,0,0,1,573.6667,68.6667\n            L 584.6667,68.6667\n            A 4,4,0,0,1,588.6667,72.6667\n            L 588.6667,194\n            A 4,4,0,0,1,584.6667,198\n            L 573.6667,198\n            A 4,4,0,0,1,569.6667,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={569.6667} y={68.6667} width={19} height={129.3333} fill="url(#r5-succeeded)" radius="4" d={"M 569.6667,72.6667\n            A 4,4,0,0,1,573.6667,68.6667\n            L 584.6667,68.6667\n            A 4,4,0,0,1,588.6667,72.6667\n            L 588.6667,194\n            A 4,4,0,0,1,584.6667,198\n            L 573.6667,198\n            A 4,4,0,0,1,569.6667,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="601.3333" y="68.6667" width="19" height="129.3333" fill="url(#r5-succeeded)" radius="4" d={"M 601.3333,72.6667\n            A 4,4,0,0,1,605.3333,68.6667\n            L 616.3333,68.6667\n            A 4,4,0,0,1,620.3333,72.6667\n            L 620.3333,194\n            A 4,4,0,0,1,616.3333,198\n            L 605.3333,198\n            A 4,4,0,0,1,601.3333,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={601.3333} y={68.6667} width={19} height={129.3333} fill="url(#r5-succeeded)" radius="4" d={"M 601.3333,72.6667\n            A 4,4,0,0,1,605.3333,68.6667\n            L 616.3333,68.6667\n            A 4,4,0,0,1,620.3333,72.6667\n            L 620.3333,194\n            A 4,4,0,0,1,616.3333,198\n            L 605.3333,198\n            A 4,4,0,0,1,601.3333,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="633" y="68.6667" width="19" height="129.3333" fill="url(#r5-succeeded)" radius="4" d={"M 633,72.6667\n            A 4,4,0,0,1,637,68.6667\n            L 648,68.6667\n            A 4,4,0,0,1,652,72.6667\n            L 652,194\n            A 4,4,0,0,1,648,198\n            L 637,198\n            A 4,4,0,0,1,633,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={633} y={68.6667} width={19} height={129.3333} fill="url(#r5-succeeded)" radius="4" d={"M 633,72.6667\n            A 4,4,0,0,1,637,68.6667\n            L 648,68.6667\n            A 4,4,0,0,1,652,72.6667\n            L 652,194\n            A 4,4,0,0,1,648,198\n            L 637,198\n            A 4,4,0,0,1,633,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="664.6667" y="68.6667" width="19" height="129.3333" fill="url(#r5-succeeded)" radius="4" d={"M 664.6667,72.6667\n            A 4,4,0,0,1,668.6667,68.6667\n            L 679.6667,68.6667\n            A 4,4,0,0,1,683.6667,72.6667\n            L 683.6667,194\n            A 4,4,0,0,1,679.6667,198\n            L 668.6667,198\n            A 4,4,0,0,1,664.6667,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={664.6667} y={68.6667} width={19} height={129.3333} fill="url(#r5-succeeded)" radius="4" d={"M 664.6667,72.6667\n            A 4,4,0,0,1,668.6667,68.6667\n            L 679.6667,68.6667\n            A 4,4,0,0,1,683.6667,72.6667\n            L 683.6667,194\n            A 4,4,0,0,1,679.6667,198\n            L 668.6667,198\n            A 4,4,0,0,1,664.6667,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="696.3333" y="69.6667" width="19" height="128.3333" fill="url(#r5-succeeded)" radius="4" d={"M 696.3333,73.6667\n            A 4,4,0,0,1,700.3333,69.6667\n            L 711.3333,69.6667\n            A 4,4,0,0,1,715.3333,73.6667\n            L 715.3333,194\n            A 4,4,0,0,1,711.3333,198\n            L 700.3333,198\n            A 4,4,0,0,1,696.3333,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={696.3333} y={69.6667} width={19} height={128.3333} fill="url(#r5-succeeded)" radius="4" d={"M 696.3333,73.6667\n            A 4,4,0,0,1,700.3333,69.6667\n            L 711.3333,69.6667\n            A 4,4,0,0,1,715.3333,73.6667\n            L 715.3333,194\n            A 4,4,0,0,1,711.3333,198\n            L 700.3333,198\n            A 4,4,0,0,1,696.3333,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="728" y="86.9111" width="19" height="111.0889" fill="url(#r5-succeeded)" radius="4" d={"M 728,90.9111\n            A 4,4,0,0,1,732,86.9111\n            L 743,86.9111\n            A 4,4,0,0,1,747,90.9111\n            L 747,194\n            A 4,4,0,0,1,743,198\n            L 732,198\n            A 4,4,0,0,1,728,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={728} y={86.9111} width={19} height={111.0889} fill="url(#r5-succeeded)" radius="4" d={"M 728,90.9111\n            A 4,4,0,0,1,732,86.9111\n            L 743,86.9111\n            A 4,4,0,0,1,747,90.9111\n            L 747,194\n            A 4,4,0,0,1,743,198\n            L 732,198\n            A 4,4,0,0,1,728,194 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="759.6667" y="138.6444" width="19" height="59.3556" fill="url(#r5-succeeded)" radius="4" d={"M 759.6667,142.6444\n            A 4,4,0,0,1,763.6667,138.6444\n            L 774.6667,138.6444\n            A 4,4,0,0,1,778.6667,142.6444\n            L 778.6667,194\n            A 4,4,0,0,1,774.6667,198\n            L 763.6667,198\n            A 4,4,0,0,1,759.6667,194 Z"}></path>
+                                        <path className="recharts-rectangle" x={759.6667} y={138.6444} width={19} height={59.3556} fill="url(#r5-succeeded)" radius="4" d={"M 759.6667,142.6444\n            A 4,4,0,0,1,763.6667,138.6444\n            L 774.6667,138.6444\n            A 4,4,0,0,1,778.6667,142.6444\n            L 778.6667,194\n            A 4,4,0,0,1,774.6667,198\n            L 763.6667,198\n            A 4,4,0,0,1,759.6667,194 Z"}></path>
                                       </g>
                                     </g>
                                   </g>
@@ -842,7 +842,7 @@ export function Pattern() {
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="379.6667" y="64.3556" width="19" height="16.2444" fill="url(#r5-partial)" radius="4" d={"M 379.6667,68.3556\n            A 4,4,0,0,1,383.6667,64.3556\n            L 394.6667,64.3556\n            A 4,4,0,0,1,398.6667,68.3556\n            L 398.6667,76.6\n            A 4,4,0,0,1,394.6667,80.6\n            L 383.6667,80.6\n            A 4,4,0,0,1,379.6667,76.6 Z"}></path>
+                                        <path className="recharts-rectangle" x={379.6667} y={64.3556} width={19} height={16.2444} fill="url(#r5-partial)" radius="4" d={"M 379.6667,68.3556\n            A 4,4,0,0,1,383.6667,64.3556\n            L 394.6667,64.3556\n            A 4,4,0,0,1,398.6667,68.3556\n            L 398.6667,76.6\n            A 4,4,0,0,1,394.6667,80.6\n            L 383.6667,80.6\n            A 4,4,0,0,1,379.6667,76.6 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
@@ -862,7 +862,7 @@ export function Pattern() {
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="506.3333" y="64.3556" width="19" height="3.3111" fill="url(#r5-partial)" radius="4" d={"M 506.3333,66.0111\n            A 1.6556,1.6556,0,0,1,507.9889,64.3556\n            L 523.6778,64.3556\n            A 1.6556,1.6556,0,0,1,525.3333,66.0111\n            L 525.3333,66.0111\n            A 1.6556,1.6556,0,0,1,523.6778,67.6667\n            L 507.9889,67.6667\n            A 1.6556,1.6556,0,0,1,506.3333,66.0111 Z"}></path>
+                                        <path className="recharts-rectangle" x={506.3333} y={64.3556} width={19} height={3.3111} fill="url(#r5-partial)" radius="4" d={"M 506.3333,66.0111\n            A 1.6556,1.6556,0,0,1,507.9889,64.3556\n            L 523.6778,64.3556\n            A 1.6556,1.6556,0,0,1,525.3333,66.0111\n            L 525.3333,66.0111\n            A 1.6556,1.6556,0,0,1,523.6778,67.6667\n            L 507.9889,67.6667\n            A 1.6556,1.6556,0,0,1,506.3333,66.0111 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
@@ -892,7 +892,7 @@ export function Pattern() {
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="696.3333" y="64.3556" width="19" height="3.3111" fill="url(#r5-partial)" radius="4" d={"M 696.3333,66.0111\n            A 1.6556,1.6556,0,0,1,697.9889,64.3556\n            L 713.6778,64.3556\n            A 1.6556,1.6556,0,0,1,715.3333,66.0111\n            L 715.3333,66.0111\n            A 1.6556,1.6556,0,0,1,713.6778,67.6667\n            L 697.9889,67.6667\n            A 1.6556,1.6556,0,0,1,696.3333,66.0111 Z"}></path>
+                                        <path className="recharts-rectangle" x={696.3333} y={64.3556} width={19} height={3.3111} fill="url(#r5-partial)" radius="4" d={"M 696.3333,66.0111\n            A 1.6556,1.6556,0,0,1,697.9889,64.3556\n            L 713.6778,64.3556\n            A 1.6556,1.6556,0,0,1,715.3333,66.0111\n            L 715.3333,66.0111\n            A 1.6556,1.6556,0,0,1,713.6778,67.6667\n            L 697.9889,67.6667\n            A 1.6556,1.6556,0,0,1,696.3333,66.0111 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
@@ -948,7 +948,7 @@ export function Pattern() {
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="253" y="68.6667" width="19" height="3.3111" fill="url(#r5-failed)" radius="4" d={"M 253,70.3222\n            A 1.6556,1.6556,0,0,1,254.6556,68.6667\n            L 270.3445,68.6667\n            A 1.6556,1.6556,0,0,1,272,70.3222\n            L 272,70.3222\n            A 1.6556,1.6556,0,0,1,270.3445,71.9778\n            L 254.6556,71.9778\n            A 1.6556,1.6556,0,0,1,253,70.3222 Z"}></path>
+                                        <path className="recharts-rectangle" x={253} y={68.6667} width={19} height={3.3111} fill="url(#r5-failed)" radius="4" d={"M 253,70.3222\n            A 1.6556,1.6556,0,0,1,254.6556,68.6667\n            L 270.3445,68.6667\n            A 1.6556,1.6556,0,0,1,272,70.3222\n            L 272,70.3222\n            A 1.6556,1.6556,0,0,1,270.3445,71.9778\n            L 254.6556,71.9778\n            A 1.6556,1.6556,0,0,1,253,70.3222 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
@@ -1023,20 +1023,20 @@ export function Pattern() {
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="728" y="68.6667" width="19" height="16.2444" fill="url(#r5-failed)" radius="4" d={"M 728,72.6667\n            A 4,4,0,0,1,732,68.6667\n            L 743,68.6667\n            A 4,4,0,0,1,747,72.6667\n            L 747,80.9111\n            A 4,4,0,0,1,743,84.9111\n            L 732,84.9111\n            A 4,4,0,0,1,728,80.9111 Z"}></path>
+                                        <path className="recharts-rectangle" x={728} y={68.6667} width={19} height={16.2444} fill="url(#r5-failed)" radius="4" d={"M 728,72.6667\n            A 4,4,0,0,1,732,68.6667\n            L 743,68.6667\n            A 4,4,0,0,1,747,72.6667\n            L 747,80.9111\n            A 4,4,0,0,1,743,84.9111\n            L 732,84.9111\n            A 4,4,0,0,1,728,80.9111 Z"}></path>
                                       </g>
                                     </g>
                                     <g className="recharts-bar-rectangle recharts-layer">
                                       <g className="recharts-inactive-bar recharts-layer">
-                                        <path className="recharts-rectangle" x="759.6667" y="129.0222" width="19" height="7.6222" fill="url(#r5-failed)" radius="4" d={"M 759.6667,132.8333\n            A 3.8111,3.8111,0,0,1,763.4778,129.0222\n            L 774.8556,129.0222\n            A 3.8111,3.8111,0,0,1,778.6667,132.8333\n            L 778.6667,132.8333\n            A 3.8111,3.8111,0,0,1,774.8556,136.6444\n            L 763.4778,136.6444\n            A 3.8111,3.8111,0,0,1,759.6667,132.8333 Z"}></path>
+                                        <path className="recharts-rectangle" x={759.6667} y={129.0222} width={19} height={7.6222} fill="url(#r5-failed)" radius="4" d={"M 759.6667,132.8333\n            A 3.8111,3.8111,0,0,1,763.4778,129.0222\n            L 774.8556,129.0222\n            A 3.8111,3.8111,0,0,1,778.6667,132.8333\n            L 778.6667,132.8333\n            A 3.8111,3.8111,0,0,1,774.8556,136.6444\n            L 763.4778,136.6444\n            A 3.8111,3.8111,0,0,1,759.6667,132.8333 Z"}></path>
                                       </g>
                                     </g>
                                   </g>
                                 </g>
                               </g>
                             </g>
-                            <g className="recharts-zIndex-layer_400" tabIndex="-1"></g>
-                            <g className="recharts-zIndex-layer_500" tabIndex="-1">
+                            <g className="recharts-zIndex-layer_400" tabIndex={-1}></g>
+                            <g className="recharts-zIndex-layer_500" tabIndex={-1}>
                               <g className="recharts-cartesian-axis recharts-layer recharts-xAxis xAxis">
                                 <g className="recharts-cartesian-axis-ticks recharts-xAxis-ticks">
                                   <g className="recharts-cartesian-axis-tick-lines recharts-xAxis-tick-lines">
@@ -1060,50 +1060,50 @@ export function Pattern() {
                                 </g>
                               </g>
                             </g>
-                            <g className="recharts-zIndex-layer_600" tabIndex="-1"></g>
-                            <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                            <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                            <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                            <g className="recharts-zIndex-layer_2000" tabIndex="-1">
+                            <g className="recharts-zIndex-layer_600" tabIndex={-1}></g>
+                            <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                            <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                            <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                            <g className="recharts-zIndex-layer_2000" tabIndex={-1}>
                               <g className="recharts-cartesian-axis-tick-labels recharts-xAxis-tick-labels">
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                  <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="760" stroke="none" x="135.83333333333334" y="212" textAnchor="middle" fill="#666">
-                                    <tspan x="135.83333333333334" dy="0.71em">
+                                  <text className="recharts-cartesian-axis-tick-value recharts-text" height={26} orientation="bottom" width={760} stroke="none" x={135.83333333333334} y={212} textAnchor="middle" fill="#666">
+                                    <tspan x={135.83333333333334} dy="0.71em">
                                       {"18:00"}
                                     </tspan>
                                   </text>
                                 </g>
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                  <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="760" stroke="none" x="262.5" y="212" textAnchor="middle" fill="#666">
-                                    <tspan x="262.5" dy="0.71em">
+                                  <text className="recharts-cartesian-axis-tick-value recharts-text" height={26} orientation="bottom" width={760} stroke="none" x={262.5} y={212} textAnchor="middle" fill="#666">
+                                    <tspan x={262.5} dy="0.71em">
                                       {"22:00"}
                                     </tspan>
                                   </text>
                                 </g>
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                  <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="760" stroke="none" x="389.1666666666667" y="212" textAnchor="middle" fill="#666">
-                                    <tspan x="389.1666666666667" dy="0.71em">
+                                  <text className="recharts-cartesian-axis-tick-value recharts-text" height={26} orientation="bottom" width={760} stroke="none" x={389.1666666666667} y={212} textAnchor="middle" fill="#666">
+                                    <tspan x={389.1666666666667} dy="0.71em">
                                       {"02:00"}
                                     </tspan>
                                   </text>
                                 </g>
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                  <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="760" stroke="none" x="515.8333333333334" y="212" textAnchor="middle" fill="#666">
-                                    <tspan x="515.8333333333334" dy="0.71em">
+                                  <text className="recharts-cartesian-axis-tick-value recharts-text" height={26} orientation="bottom" width={760} stroke="none" x={515.8333333333334} y={212} textAnchor="middle" fill="#666">
+                                    <tspan x={515.8333333333334} dy="0.71em">
                                       {"06:00"}
                                     </tspan>
                                   </text>
                                 </g>
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                  <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="760" stroke="none" x="642.5000000000001" y="212" textAnchor="middle" fill="#666">
-                                    <tspan x="642.5000000000001" dy="0.71em">
+                                  <text className="recharts-cartesian-axis-tick-value recharts-text" height={26} orientation="bottom" width={760} stroke="none" x={642.5000000000001} y={212} textAnchor="middle" fill="#666">
+                                    <tspan x={642.5000000000001} dy="0.71em">
                                       {"10:00"}
                                     </tspan>
                                   </text>
                                 </g>
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                  <text className="recharts-cartesian-axis-tick-value recharts-text" height="26" orientation="bottom" width="760" stroke="none" x="769.1666666666667" y="212" textAnchor="middle" fill="#666">
-                                    <tspan x="769.1666666666667" dy="0.71em">
+                                  <text className="recharts-cartesian-axis-tick-value recharts-text" height={26} orientation="bottom" width={760} stroke="none" x={769.1666666666667} y={212} textAnchor="middle" fill="#666">
+                                    <tspan x={769.1666666666667} dy="0.71em">
                                       {"Now"}
                                     </tspan>
                                   </text>
@@ -1111,29 +1111,29 @@ export function Pattern() {
                               </g>
                               <g className="recharts-cartesian-axis-tick-labels recharts-yAxis-tick-labels">
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                  <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" height="194" stroke="none" x="15" y="198" textAnchor="end" fill="#666">
-                                    <tspan x="15" dy="0.355em">
+                                  <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" height={194} stroke="none" x={15} y={198} textAnchor="end" fill="#666">
+                                    <tspan x={15} dy="0.355em">
                                       {"0"}
                                     </tspan>
                                   </text>
                                 </g>
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                  <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" height="194" stroke="none" x="15" y="133.33333333333337" textAnchor="end" fill="#666">
-                                    <tspan x="15" dy="0.355em">
+                                  <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" height={194} stroke="none" x={15} y={133.33333333333337} textAnchor="end" fill="#666">
+                                    <tspan x={15} dy="0.355em">
                                       {"15"}
                                     </tspan>
                                   </text>
                                 </g>
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                  <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" height="194" stroke="none" x="15" y="68.66666666666669" textAnchor="end" fill="#666">
-                                    <tspan x="15" dy="0.355em">
+                                  <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" height={194} stroke="none" x={15} y={68.66666666666669} textAnchor="end" fill="#666">
+                                    <tspan x={15} dy="0.355em">
                                       {"30"}
                                     </tspan>
                                   </text>
                                 </g>
                                 <g className="recharts-cartesian-axis-tick-label recharts-layer">
-                                  <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" height="194" stroke="none" x="15" y="9" textAnchor="end" fill="#666">
-                                    <tspan x="15" dy="0.355em">
+                                  <text className="recharts-cartesian-axis-tick-value recharts-text" orientation="left" height={194} stroke="none" x={15} y={9} textAnchor="end" fill="#666">
+                                    <tspan x={15} dy="0.355em">
                                       {"45"}
                                     </tspan>
                                   </text>
@@ -1159,11 +1159,11 @@ export function Pattern() {
                     </div>
                   </div>
                   <DropdownMenu>
-                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Attention actions" aria-haspopup="menu" id="base-ui-_r_c_" aria-expanded="false">
-                    <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                      <circle cx="12" cy="12" r="1"></circle>
-                      <circle cx="19" cy="12" r="1"></circle>
-                      <circle cx="5" cy="12" r="1"></circle>
+                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Attention actions" aria-haspopup="menu" id="base-ui-_r_c_" aria-expanded="false">
+                    <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                      <circle cx={12} cy={12} r={1}></circle>
+                      <circle cx={19} cy={12} r={1}></circle>
+                      <circle cx={5} cy={12} r={1}></circle>
                     </svg>
                   </DropdownMenuTrigger>
                   </DropdownMenu>
@@ -1175,16 +1175,16 @@ export function Pattern() {
                         <IconTile variant="outline" size="xs" aria-hidden="true">
                           <svg aria-hidden="true" viewBox="0 0 109 113" fill="none">
                             <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint0_linear)"></path>
-                            <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity="0.2"></path>
+                            <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity={0.2}></path>
                             <path d="M45.317 2.07103C48.1765 -1.53037 53.9745 0.442937 54.0434 5.041L54.4849 72.2922H9.83113C1.64038 72.2922 -2.92775 62.8321 2.1655 56.4175L45.317 2.07103Z" fill="#3ECF8E"></path>
                             <defs>
-                              <lineargradient id="supabase-paint0_linear" x1="53.9738" y1="54.974" x2="94.1635" y2="71.8295" gradientUnits="userSpaceOnUse">
+                              <lineargradient id="supabase-paint0_linear" x1={53.9738} y1={54.974} x2={94.1635} y2={71.8295} gradientUnits="userSpaceOnUse">
                                 <stop stopColor="#249361"></stop>
-                                <stop offset="1" stopColor="#3ECF8E"></stop>
+                                <stop offset={1} stopColor="#3ECF8E"></stop>
                               </lineargradient>
-                              <lineargradient id="supabase-paint1_linear" x1="36.1558" y1="30.578" x2="54.4844" y2="65.0806" gradientUnits="userSpaceOnUse">
+                              <lineargradient id="supabase-paint1_linear" x1={36.1558} y1={30.578} x2={54.4844} y2={65.0806} gradientUnits="userSpaceOnUse">
                                 <stop></stop>
-                                <stop offset="1" stopOpacity="0"></stop>
+                                <stop offset={1} stopOpacity={0}></stop>
                               </lineargradient>
                             </defs>
                           </svg>
@@ -1204,10 +1204,10 @@ export function Pattern() {
                       </ItemContent>
                       <ItemActions>
                         <Tooltip>
-                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Rotate risk-feature-store" id="base-ui-_r_h_" baseUiTooltipTrigger="">
-                          <svg className="lucide lucide-key-round" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="KeyRoundIcon" tabler="IconKey" hugeicons="Key02Icon" phosphor="KeyIcon" remixicon="RiKey2Line" aria-hidden="true">
+                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Rotate risk-feature-store" id="base-ui-_r_h_" baseUiTooltipTrigger="">
+                          <svg className="lucide lucide-key-round" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="KeyRoundIcon" tabler="IconKey" hugeicons="Key02Icon" phosphor="KeyIcon" remixicon="RiKey2Line" aria-hidden="true">
                             <path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"></path>
-                            <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                            <circle cx={16.5} cy={7.5} r=".5" fill="currentColor"></circle>
                           </svg>
                         </TooltipTrigger>
                         </Tooltip>
@@ -1238,10 +1238,10 @@ export function Pattern() {
                       </ItemContent>
                       <ItemActions>
                         <Tooltip>
-                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Review analytics-warehouse" id="base-ui-_r_l_" baseUiTooltipTrigger="">
-                          <svg className="lucide lucide-eye" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EyeIcon" tabler="IconEye" hugeicons="ViewIcon" phosphor="EyeIcon" remixicon="RiEyeLine" aria-hidden="true">
+                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Review analytics-warehouse" id="base-ui-_r_l_" baseUiTooltipTrigger="">
+                          <svg className="lucide lucide-eye" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="EyeIcon" tabler="IconEye" hugeicons="ViewIcon" phosphor="EyeIcon" remixicon="RiEyeLine" aria-hidden="true">
                             <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path>
-                            <circle cx="12" cy="12" r="3"></circle>
+                            <circle cx={12} cy={12} r={3}></circle>
                           </svg>
                         </TooltipTrigger>
                         </Tooltip>
@@ -1269,8 +1269,8 @@ export function Pattern() {
                       </ItemContent>
                       <ItemActions>
                         <Tooltip>
-                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Renew incident-tracker" id="base-ui-_r_p_" baseUiTooltipTrigger="">
-                          <svg className="lucide lucide-refresh-cw" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RefreshCwIcon" tabler="IconRefresh" hugeicons="RefreshIcon" phosphor="ArrowsClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
+                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Renew incident-tracker" id="base-ui-_r_p_" baseUiTooltipTrigger="">
+                          <svg className="lucide lucide-refresh-cw" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="RefreshCwIcon" tabler="IconRefresh" hugeicons="RefreshIcon" phosphor="ArrowsClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
                             <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
                             <path d="M21 3v5h-5"></path>
                             <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
@@ -1306,9 +1306,9 @@ export function Pattern() {
                       </ItemContent>
                       <ItemActions>
                         <Tooltip>
-                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Review finance-close-sheets" id="base-ui-_r_t_" baseUiTooltipTrigger="">
-                          <svg className="lucide lucide-columns-3 lucide-columns3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Columns3Icon" tabler="IconColumns3" hugeicons="Layout07Icon" phosphor="ColumnsIcon" remixicon="RiLayoutColumnLine" aria-hidden="true">
-                            <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Review finance-close-sheets" id="base-ui-_r_t_" baseUiTooltipTrigger="">
+                          <svg className="lucide lucide-columns-3 lucide-columns3" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Columns3Icon" tabler="IconColumns3" hugeicons="Layout07Icon" phosphor="ColumnsIcon" remixicon="RiLayoutColumnLine" aria-hidden="true">
+                            <rect width={18} height={18} x={3} y={3} rx={2}></rect>
                             <path d="M9 3v18"></path>
                             <path d="M15 3v18"></path>
                           </svg>
@@ -1343,8 +1343,8 @@ export function Pattern() {
                       </ItemContent>
                       <ItemActions>
                         <Tooltip>
-                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Resume sre-slack" id="base-ui-_r_11_" baseUiTooltipTrigger="">
-                          <svg className="lucide lucide-play" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlayIcon" tabler="IconPlayerPlay" hugeicons="PlayIcon" phosphor="PlayIcon" remixicon="RiPlayLine" aria-hidden="true">
+                        <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Resume sre-slack" id="base-ui-_r_11_" baseUiTooltipTrigger="">
+                          <svg className="lucide lucide-play" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlayIcon" tabler="IconPlayerPlay" hugeicons="PlayIcon" phosphor="PlayIcon" remixicon="RiPlayLine" aria-hidden="true">
                             <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path>
                           </svg>
                         </TooltipTrigger>
@@ -1391,17 +1391,17 @@ export function Pattern() {
                   <div className="flex flex-wrap gap-2 items-center px-(--frame-panel-header-px) py-(--frame-panel-header-py)">
                     <InputGroup className="basis-48 flex-1 sm:max-w-64" role="group">
                       <InputGroupAddon role="group" data-align="inline-start">
-                        <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+                        <svg className="lucide lucide-search" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                           <path d="m21 21-4.34-4.34"></path>
-                          <circle cx="11" cy="11" r="8"></circle>
+                          <circle cx={11} cy={11} r={8}></circle>
                         </svg>
                       </InputGroupAddon>
                       <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="base-ui-_r_12_" placeholder="Search connections or datasets..." aria-label="Search connections" value="" />
                     </InputGroup>
                     <div className="flex gap-2 items-center ms-auto shrink-0">
                       <DropdownMenu>
-                      <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center max-sm:px-0 max-sm:w-8 outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Categories" aria-haspopup="menu" id="base-ui-_r_16_" aria-expanded="false">
-                        <svg className="lucide lucide-layers" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayersIcon" tabler="IconStack2" hugeicons="Layers01Icon" phosphor="StackIcon" remixicon="RiStackLine" aria-hidden="true">
+                      <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center max-sm:px-0 max-sm:w-8 outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Categories" aria-haspopup="menu" id="base-ui-_r_16_" aria-expanded="false">
+                        <svg className="lucide lucide-layers" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LayersIcon" tabler="IconStack2" hugeicons="Layers01Icon" phosphor="StackIcon" remixicon="RiStackLine" aria-hidden="true">
                           <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path>
                           <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
                           <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
@@ -1412,8 +1412,8 @@ export function Pattern() {
                       </DropdownMenuTrigger>
                       </DropdownMenu>
                       <Popover>
-                      <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center max-sm:px-0 max-sm:w-8 outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Filter" baseUiClickTrigger="" id="base-ui-_r_1a_" aria-haspopup="dialog" aria-expanded="false">
-                        <svg className="lucide lucide-list-filter" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ListFilterIcon" tabler="IconFilter2" hugeicons="FilterMailIcon" phosphor="FunnelSimpleIcon" remixicon="RiFilter3Line" aria-hidden="true">
+                      <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center max-sm:px-0 max-sm:w-8 outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Filter" baseUiClickTrigger="" id="base-ui-_r_1a_" aria-haspopup="dialog" aria-expanded="false">
+                        <svg className="lucide lucide-list-filter" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ListFilterIcon" tabler="IconFilter2" hugeicons="FilterMailIcon" phosphor="FunnelSimpleIcon" remixicon="RiFilter3Line" aria-hidden="true">
                           <path d="M2 5h20"></path>
                           <path d="M6 12h12"></path>
                           <path d="M9 19h6"></path>
@@ -1424,12 +1424,12 @@ export function Pattern() {
                       </PopoverTrigger>
                       </Popover>
                       <Popover>
-                      <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center max-sm:px-0 max-sm:w-8 outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Display" baseUiClickTrigger="" id="base-ui-_r_1c_" aria-haspopup="dialog" aria-expanded="false">
-                        <svg className="lucide lucide-settings-2 lucide-settings2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Settings2Icon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
+                      <PopoverTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center max-sm:px-0 max-sm:w-8 outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Display" baseUiClickTrigger="" id="base-ui-_r_1c_" aria-haspopup="dialog" aria-expanded="false">
+                        <svg className="lucide lucide-settings-2 lucide-settings2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Settings2Icon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
                           <path d="M14 17H5"></path>
                           <path d="M19 7h-9"></path>
-                          <circle cx="17" cy="17" r="3"></circle>
-                          <circle cx="7" cy="7" r="3"></circle>
+                          <circle cx={17} cy={17} r={3}></circle>
+                          <circle cx={7} cy={7} r={3}></circle>
                         </svg>
                         <span className="max-sm:sr-only">
                           {"Display"}
@@ -1441,8 +1441,8 @@ export function Pattern() {
                   <section aria-labelledby="devops-6-group-database">
                     <div className="bg-muted/50 border-y flex gap-2.5 items-center px-(--frame-panel-header-px) py-2">
                       <span className="[&_svg:not([class*=size-])]:size-4 flex text-muted-foreground">
-                        <svg className="lucide lucide-database" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="DatabaseIcon" tabler="IconDatabase" hugeicons="Database02Icon" phosphor="DatabaseIcon" remixicon="RiDatabase2Line" aria-hidden="true">
-                          <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                        <svg className="lucide lucide-database" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="DatabaseIcon" tabler="IconDatabase" hugeicons="Database02Icon" phosphor="DatabaseIcon" remixicon="RiDatabase2Line" aria-hidden="true">
+                          <ellipse cx={12} cy={5} rx={9} ry={3}></ellipse>
                           <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
                           <path d="M3 12A9 3 0 0 0 21 12"></path>
                         </svg>
@@ -1464,7 +1464,7 @@ export function Pattern() {
                       <div className="relative">
                         <DataGridProvider>
                         <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
-                          <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_1e_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
+                          <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_1e_-viewport" tabIndex={-1} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                             <div role="presentation" style={{minWidth: "fit-content"}}>
                               <DataGridProvider>
                               <DataGridTableViewport>
@@ -1484,14 +1484,14 @@ export function Pattern() {
                                   <thead>
                                     <tr className="[&>th]:border-b bg-transparent">
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle first:ps-(--frame-panel-header-px) font-medium h-8 last:pe-(--frame-panel-header-px) px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="select" data-header-id="select" data-header-depth="0" style={{width: "40px"}}>
-                                        <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_1f_" aria-checked="false" aria-label="Select all"></Checkbox>
-                                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                        <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_1f_" aria-checked="false" aria-label="Select all"></Checkbox>
+                                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="name" data-header-id="name" data-header-depth="0" style={{width: "264px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Connection"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -1500,9 +1500,9 @@ export function Pattern() {
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="status" data-header-id="status" data-header-depth="0" style={{width: "112px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Status"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -1511,9 +1511,9 @@ export function Pattern() {
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="datasets" data-header-id="datasets" data-header-depth="0" style={{width: "196px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Datasets"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -1522,9 +1522,9 @@ export function Pattern() {
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="linked" data-header-id="linked" data-header-depth="0" style={{width: "148px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Linked"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -1533,9 +1533,9 @@ export function Pattern() {
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="lastSync" data-header-id="lastSync" data-header-depth="0" style={{width: "124px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Last Sync"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -1544,9 +1544,9 @@ export function Pattern() {
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="owner" data-header-id="owner" data-header-depth="0" style={{width: "152px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Owner"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -1566,8 +1566,8 @@ export function Pattern() {
                                     <tr className="[&:has([data-active-row])]:bg-muted/50 [&:not(:last-child)>td]:border-b cursor-pointer data-[state=selected]:bg-muted/50 group/connection-row hover:bg-muted/40" data-row-id="CON-105">
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5">
                                         <div className="flex">
-                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_1i_" aria-checked="false" aria-label="Select row"></Checkbox>
-                                          <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_1i_" aria-checked="false" aria-label="Select row"></Checkbox>
+                                          <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
@@ -1575,16 +1575,16 @@ export function Pattern() {
                                           <span className="[&_svg]:size-5 flex items-center justify-center shrink-0 size-5" aria-hidden="true">
                                             <svg aria-hidden="true" viewBox="0 0 109 113" fill="none">
                                               <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint0_linear)"></path>
-                                              <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity="0.2"></path>
+                                              <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity={0.2}></path>
                                               <path d="M45.317 2.07103C48.1765 -1.53037 53.9745 0.442937 54.0434 5.041L54.4849 72.2922H9.83113C1.64038 72.2922 -2.92775 62.8321 2.1655 56.4175L45.317 2.07103Z" fill="#3ECF8E"></path>
                                               <defs>
-                                                <lineargradient id="supabase-paint0_linear" x1="53.9738" y1="54.974" x2="94.1635" y2="71.8295" gradientUnits="userSpaceOnUse">
+                                                <lineargradient id="supabase-paint0_linear" x1={53.9738} y1={54.974} x2={94.1635} y2={71.8295} gradientUnits="userSpaceOnUse">
                                                   <stop stopColor="#249361"></stop>
-                                                  <stop offset="1" stopColor="#3ECF8E"></stop>
+                                                  <stop offset={1} stopColor="#3ECF8E"></stop>
                                                 </lineargradient>
-                                                <lineargradient id="supabase-paint1_linear" x1="36.1558" y1="30.578" x2="54.4844" y2="65.0806" gradientUnits="userSpaceOnUse">
+                                                <lineargradient id="supabase-paint1_linear" x1={36.1558} y1={30.578} x2={54.4844} y2={65.0806} gradientUnits="userSpaceOnUse">
                                                   <stop></stop>
-                                                  <stop offset="1" stopOpacity="0"></stop>
+                                                  <stop offset={1} stopOpacity={0}></stop>
                                                 </lineargradient>
                                               </defs>
                                             </svg>
@@ -1665,19 +1665,19 @@ export function Pattern() {
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
                                         <div className="flex items-center">
-                                          <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_1n_" aria-checked="true" size="sm" aria-label="Syncs for risk-feature-store">
+                                          <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_1n_" aria-checked="true" size="sm" aria-label="Syncs for risk-feature-store">
                                             <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                                           </Switch>
-                                          <input id="base-ui-_r_1o_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <input id="base-ui-_r_1o_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right">
                                         <DropdownMenu>
-                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Actions for risk-feature-store" aria-haspopup="menu" id="base-ui-_r_1t_" aria-expanded="false">
-                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                            <circle cx="12" cy="12" r="1"></circle>
-                                            <circle cx="19" cy="12" r="1"></circle>
-                                            <circle cx="5" cy="12" r="1"></circle>
+                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Actions for risk-feature-store" aria-haspopup="menu" id="base-ui-_r_1t_" aria-expanded="false">
+                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                            <circle cx={12} cy={12} r={1}></circle>
+                                            <circle cx={19} cy={12} r={1}></circle>
+                                            <circle cx={5} cy={12} r={1}></circle>
                                           </svg>
                                         </DropdownMenuTrigger>
                                         </DropdownMenu>
@@ -1686,8 +1686,8 @@ export function Pattern() {
                                     <tr className="[&:has([data-active-row])]:bg-muted/50 [&:not(:last-child)>td]:border-b cursor-pointer data-[state=selected]:bg-muted/50 group/connection-row hover:bg-muted/40" data-row-id="CON-101">
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5">
                                         <div className="flex">
-                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_1v_" aria-checked="false" aria-label="Select row"></Checkbox>
-                                          <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_1v_" aria-checked="false" aria-label="Select row"></Checkbox>
+                                          <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
@@ -1697,11 +1697,11 @@ export function Pattern() {
                                               <defs>
                                                 <lineargradient id="neon-a" x1="100%" x2="12.069%" y1="100%" y2="0%">
                                                   <stop offset="0%" stopColor="#62F755"></stop>
-                                                  <stop offset="100%" stopColor="#8FF986" stopOpacity="0"></stop>
+                                                  <stop offset="100%" stopColor="#8FF986" stopOpacity={0}></stop>
                                                 </lineargradient>
                                                 <lineargradient id="neon-b" x1="100%" x2="40.603%" y1="100%" y2="76.897%">
                                                   <stop offset="0%" stopOpacity=".9"></stop>
-                                                  <stop offset="100%" stopColor="#1A1A1A" stopOpacity="0"></stop>
+                                                  <stop offset="100%" stopColor="#1A1A1A" stopOpacity={0}></stop>
                                                 </lineargradient>
                                               </defs>
                                               <path fill="#00E0D9" d="M0 44.139C0 19.762 19.762 0 44.139 0H211.86C236.238 0 256 19.762 256 44.139v142.649c0 25.216-31.915 36.16-47.388 16.256l-48.392-62.251v75.484c0 21.939-17.784 39.723-39.722 39.723h-76.36C19.763 256 0 236.238 0 211.861V44.14Zm44.139-8.825c-4.879 0-8.825 3.946-8.825 8.818v167.73c0 4.878 3.946 8.831 8.818 8.831h77.688c2.44 0 3.087-1.977 3.087-4.416v-101.22c0-25.222 31.914-36.166 47.395-16.255l48.391 62.243V44.14c0-4.879.455-8.825-4.416-8.825H44.14Z"></path>
@@ -1788,19 +1788,19 @@ export function Pattern() {
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
                                         <div className="flex items-center">
-                                          <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_24_" aria-checked="true" size="sm" aria-label="Syncs for ledger-primary">
+                                          <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_24_" aria-checked="true" size="sm" aria-label="Syncs for ledger-primary">
                                             <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                                           </Switch>
-                                          <input id="base-ui-_r_25_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <input id="base-ui-_r_25_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right">
                                         <DropdownMenu>
-                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Actions for ledger-primary" aria-haspopup="menu" id="base-ui-_r_2a_" aria-expanded="false">
-                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                            <circle cx="12" cy="12" r="1"></circle>
-                                            <circle cx="19" cy="12" r="1"></circle>
-                                            <circle cx="5" cy="12" r="1"></circle>
+                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Actions for ledger-primary" aria-haspopup="menu" id="base-ui-_r_2a_" aria-expanded="false">
+                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                            <circle cx={12} cy={12} r={1}></circle>
+                                            <circle cx={19} cy={12} r={1}></circle>
+                                            <circle cx={5} cy={12} r={1}></circle>
                                           </svg>
                                         </DropdownMenuTrigger>
                                         </DropdownMenu>
@@ -1809,8 +1809,8 @@ export function Pattern() {
                                     <tr className="[&:has([data-active-row])]:bg-muted/50 [&:not(:last-child)>td]:border-b cursor-pointer data-[state=selected]:bg-muted/50 group/connection-row hover:bg-muted/40" data-row-id="CON-112">
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5">
                                         <div className="flex">
-                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_2c_" aria-checked="false" aria-label="Select row"></Checkbox>
-                                          <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_2c_" aria-checked="false" aria-label="Select row"></Checkbox>
+                                          <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
@@ -1820,11 +1820,11 @@ export function Pattern() {
                                               <defs>
                                                 <lineargradient id="neon-a" x1="100%" x2="12.069%" y1="100%" y2="0%">
                                                   <stop offset="0%" stopColor="#62F755"></stop>
-                                                  <stop offset="100%" stopColor="#8FF986" stopOpacity="0"></stop>
+                                                  <stop offset="100%" stopColor="#8FF986" stopOpacity={0}></stop>
                                                 </lineargradient>
                                                 <lineargradient id="neon-b" x1="100%" x2="40.603%" y1="100%" y2="76.897%">
                                                   <stop offset="0%" stopOpacity=".9"></stop>
-                                                  <stop offset="100%" stopColor="#1A1A1A" stopOpacity="0"></stop>
+                                                  <stop offset="100%" stopColor="#1A1A1A" stopOpacity={0}></stop>
                                                 </lineargradient>
                                               </defs>
                                               <path fill="#00E0D9" d="M0 44.139C0 19.762 19.762 0 44.139 0H211.86C236.238 0 256 19.762 256 44.139v142.649c0 25.216-31.915 36.16-47.388 16.256l-48.392-62.251v75.484c0 21.939-17.784 39.723-39.722 39.723h-76.36C19.763 256 0 236.238 0 211.861V44.14Zm44.139-8.825c-4.879 0-8.825 3.946-8.825 8.818v167.73c0 4.878 3.946 8.831 8.818 8.831h77.688c2.44 0 3.087-1.977 3.087-4.416v-101.22c0-25.222 31.914-36.166 47.395-16.255l48.391 62.243V44.14c0-4.879.455-8.825-4.416-8.825H44.14Z"></path>
@@ -1908,19 +1908,19 @@ export function Pattern() {
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
                                         <div className="flex items-center">
-                                          <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_2h_" aria-checked="true" size="sm" aria-label="Syncs for ledger-staging">
+                                          <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_2h_" aria-checked="true" size="sm" aria-label="Syncs for ledger-staging">
                                             <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                                           </Switch>
-                                          <input id="base-ui-_r_2i_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <input id="base-ui-_r_2i_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right">
                                         <DropdownMenu>
-                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Actions for ledger-staging" aria-haspopup="menu" id="base-ui-_r_2n_" aria-expanded="false">
-                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                            <circle cx="12" cy="12" r="1"></circle>
-                                            <circle cx="19" cy="12" r="1"></circle>
-                                            <circle cx="5" cy="12" r="1"></circle>
+                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Actions for ledger-staging" aria-haspopup="menu" id="base-ui-_r_2n_" aria-expanded="false">
+                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                            <circle cx={12} cy={12} r={1}></circle>
+                                            <circle cx={19} cy={12} r={1}></circle>
+                                            <circle cx={5} cy={12} r={1}></circle>
                                           </svg>
                                         </DropdownMenuTrigger>
                                         </DropdownMenu>
@@ -1929,8 +1929,8 @@ export function Pattern() {
                                     <tr className="[&:has([data-active-row])]:bg-muted/50 [&:not(:last-child)>td]:border-b cursor-pointer data-[state=selected]:bg-muted/50 group/connection-row hover:bg-muted/40" data-row-id="CON-104">
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5">
                                         <div className="flex">
-                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_2p_" aria-checked="false" aria-label="Select row"></Checkbox>
-                                          <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_2p_" aria-checked="false" aria-label="Select row"></Checkbox>
+                                          <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
@@ -2019,19 +2019,19 @@ export function Pattern() {
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
                                         <div className="flex items-center">
-                                          <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_2u_" aria-checked="true" size="sm" aria-label="Syncs for merchant-directory">
+                                          <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_2u_" aria-checked="true" size="sm" aria-label="Syncs for merchant-directory">
                                             <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                                           </Switch>
-                                          <input id="base-ui-_r_2v_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <input id="base-ui-_r_2v_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right">
                                         <DropdownMenu>
-                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Actions for merchant-directory" aria-haspopup="menu" id="base-ui-_r_34_" aria-expanded="false">
-                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                            <circle cx="12" cy="12" r="1"></circle>
-                                            <circle cx="19" cy="12" r="1"></circle>
-                                            <circle cx="5" cy="12" r="1"></circle>
+                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Actions for merchant-directory" aria-haspopup="menu" id="base-ui-_r_34_" aria-expanded="false">
+                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                            <circle cx={12} cy={12} r={1}></circle>
+                                            <circle cx={19} cy={12} r={1}></circle>
+                                            <circle cx={5} cy={12} r={1}></circle>
                                           </svg>
                                         </DropdownMenuTrigger>
                                         </DropdownMenu>
@@ -2040,8 +2040,8 @@ export function Pattern() {
                                     <tr className="[&:has([data-active-row])]:bg-muted/50 [&:not(:last-child)>td]:border-b cursor-pointer data-[state=selected]:bg-muted/50 group/connection-row hover:bg-muted/40" data-row-id="CON-106">
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5">
                                         <div className="flex">
-                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_36_" aria-checked="false" aria-label="Select row"></Checkbox>
-                                          <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_36_" aria-checked="false" aria-label="Select row"></Checkbox>
+                                          <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
@@ -2134,19 +2134,19 @@ export function Pattern() {
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
                                         <div className="flex items-center">
-                                          <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_3b_" aria-checked="true" size="sm" aria-label="Syncs for rate-limit-cache">
+                                          <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_3b_" aria-checked="true" size="sm" aria-label="Syncs for rate-limit-cache">
                                             <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                                           </Switch>
-                                          <input id="base-ui-_r_3c_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <input id="base-ui-_r_3c_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right">
                                         <DropdownMenu>
-                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Actions for rate-limit-cache" aria-haspopup="menu" id="base-ui-_r_3h_" aria-expanded="false">
-                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                            <circle cx="12" cy="12" r="1"></circle>
-                                            <circle cx="19" cy="12" r="1"></circle>
-                                            <circle cx="5" cy="12" r="1"></circle>
+                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Actions for rate-limit-cache" aria-haspopup="menu" id="base-ui-_r_3h_" aria-expanded="false">
+                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                            <circle cx={12} cy={12} r={1}></circle>
+                                            <circle cx={19} cy={12} r={1}></circle>
+                                            <circle cx={5} cy={12} r={1}></circle>
                                           </svg>
                                         </DropdownMenuTrigger>
                                         </DropdownMenu>
@@ -2168,7 +2168,7 @@ export function Pattern() {
                   <section aria-labelledby="devops-6-group-warehouse">
                     <div className="bg-muted/50 border-y flex gap-2.5 items-center px-(--frame-panel-header-px) py-2">
                       <span className="[&_svg:not([class*=size-])]:size-4 flex text-muted-foreground">
-                        <svg className="lucide lucide-layers" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayersIcon" tabler="IconStack2" hugeicons="Layers01Icon" phosphor="StackIcon" remixicon="RiStackLine" aria-hidden="true">
+                        <svg className="lucide lucide-layers" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LayersIcon" tabler="IconStack2" hugeicons="Layers01Icon" phosphor="StackIcon" remixicon="RiStackLine" aria-hidden="true">
                           <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path>
                           <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
                           <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
@@ -2188,7 +2188,7 @@ export function Pattern() {
                       <div className="relative">
                         <DataGridProvider>
                         <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
-                          <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_3k_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
+                          <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_3k_-viewport" tabIndex={-1} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                             <div role="presentation" style={{minWidth: "fit-content"}}>
                               <DataGridProvider>
                               <DataGridTableViewport>
@@ -2208,14 +2208,14 @@ export function Pattern() {
                                   <thead>
                                     <tr className="[&>th]:border-b bg-transparent">
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle first:ps-(--frame-panel-header-px) font-medium h-8 last:pe-(--frame-panel-header-px) px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="select" data-header-id="select" data-header-depth="0" style={{width: "40px"}}>
-                                        <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_3l_" aria-checked="false" aria-label="Select all"></Checkbox>
-                                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                        <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_3l_" aria-checked="false" aria-label="Select all"></Checkbox>
+                                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="name" data-header-id="name" data-header-depth="0" style={{width: "264px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Connection"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -2224,9 +2224,9 @@ export function Pattern() {
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="status" data-header-id="status" data-header-depth="0" style={{width: "112px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Status"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -2235,9 +2235,9 @@ export function Pattern() {
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="datasets" data-header-id="datasets" data-header-depth="0" style={{width: "196px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Datasets"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -2246,9 +2246,9 @@ export function Pattern() {
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="linked" data-header-id="linked" data-header-depth="0" style={{width: "148px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Linked"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -2257,9 +2257,9 @@ export function Pattern() {
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="lastSync" data-header-id="lastSync" data-header-depth="0" style={{width: "124px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Last Sync"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -2268,9 +2268,9 @@ export function Pattern() {
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="owner" data-header-id="owner" data-header-depth="0" style={{width: "152px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Owner"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -2290,8 +2290,8 @@ export function Pattern() {
                                     <tr className="[&:has([data-active-row])]:bg-muted/50 [&:not(:last-child)>td]:border-b cursor-pointer data-[state=selected]:bg-muted/50 group/connection-row hover:bg-muted/40" data-row-id="CON-103">
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5">
                                         <div className="flex">
-                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_3o_" aria-checked="false" aria-label="Select row"></Checkbox>
-                                          <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_3o_" aria-checked="false" aria-label="Select row"></Checkbox>
+                                          <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
@@ -2381,19 +2381,19 @@ export function Pattern() {
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
                                         <div className="flex items-center">
-                                          <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_3t_" aria-checked="true" size="sm" aria-label="Syncs for analytics-warehouse">
+                                          <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_3t_" aria-checked="true" size="sm" aria-label="Syncs for analytics-warehouse">
                                             <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                                           </Switch>
-                                          <input id="base-ui-_r_3u_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <input id="base-ui-_r_3u_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right">
                                         <DropdownMenu>
-                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Actions for analytics-warehouse" aria-haspopup="menu" id="base-ui-_r_43_" aria-expanded="false">
-                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                            <circle cx="12" cy="12" r="1"></circle>
-                                            <circle cx="19" cy="12" r="1"></circle>
-                                            <circle cx="5" cy="12" r="1"></circle>
+                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Actions for analytics-warehouse" aria-haspopup="menu" id="base-ui-_r_43_" aria-expanded="false">
+                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                            <circle cx={12} cy={12} r={1}></circle>
+                                            <circle cx={19} cy={12} r={1}></circle>
+                                            <circle cx={5} cy={12} r={1}></circle>
                                           </svg>
                                         </DropdownMenuTrigger>
                                         </DropdownMenu>
@@ -2415,9 +2415,9 @@ export function Pattern() {
                   <section aria-labelledby="devops-6-group-app">
                     <div className="bg-muted/50 border-y flex gap-2.5 items-center px-(--frame-panel-header-px) py-2">
                       <span className="[&_svg:not([class*=size-])]:size-4 flex text-muted-foreground">
-                        <svg className="lucide lucide-blocks" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BlocksIcon" tabler="IconComponents" hugeicons="DashboardSquare01Icon" phosphor="SquaresFourIcon" remixicon="RiApps2Line" aria-hidden="true">
+                        <svg className="lucide lucide-blocks" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BlocksIcon" tabler="IconComponents" hugeicons="DashboardSquare01Icon" phosphor="SquaresFourIcon" remixicon="RiApps2Line" aria-hidden="true">
                           <path d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"></path>
-                          <rect x="14" y="2" width="8" height="8" rx="1"></rect>
+                          <rect x={14} y={2} width={8} height={8} rx={1}></rect>
                         </svg>
                       </span>
                       <span className="font-semibold text-sm" id="devops-6-group-app">
@@ -2434,7 +2434,7 @@ export function Pattern() {
                       <div className="relative">
                         <DataGridProvider>
                         <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
-                          <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_46_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
+                          <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_46_-viewport" tabIndex={-1} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                             <div role="presentation" style={{minWidth: "fit-content"}}>
                               <DataGridProvider>
                               <DataGridTableViewport>
@@ -2454,14 +2454,14 @@ export function Pattern() {
                                   <thead>
                                     <tr className="[&>th]:border-b bg-transparent">
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle first:ps-(--frame-panel-header-px) font-medium h-8 last:pe-(--frame-panel-header-px) px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="select" data-header-id="select" data-header-depth="0" style={{width: "40px"}}>
-                                        <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_47_" aria-checked="false" aria-label="Select all"></Checkbox>
-                                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                        <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_47_" aria-checked="false" aria-label="Select all"></Checkbox>
+                                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="name" data-header-id="name" data-header-depth="0" style={{width: "264px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Connection"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -2470,9 +2470,9 @@ export function Pattern() {
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="status" data-header-id="status" data-header-depth="0" style={{width: "112px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Status"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -2481,9 +2481,9 @@ export function Pattern() {
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="datasets" data-header-id="datasets" data-header-depth="0" style={{width: "196px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Datasets"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -2492,9 +2492,9 @@ export function Pattern() {
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="linked" data-header-id="linked" data-header-depth="0" style={{width: "148px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Linked"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -2503,9 +2503,9 @@ export function Pattern() {
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="lastSync" data-header-id="lastSync" data-header-depth="0" style={{width: "124px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Last Sync"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -2514,9 +2514,9 @@ export function Pattern() {
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="owner" data-header-id="owner" data-header-depth="0" style={{width: "152px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Owner"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -2536,8 +2536,8 @@ export function Pattern() {
                                     <tr className="[&:has([data-active-row])]:bg-muted/50 [&:not(:last-child)>td]:border-b cursor-pointer data-[state=selected]:bg-muted/50 group/connection-row hover:bg-muted/40" data-row-id="CON-109">
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5">
                                         <div className="flex">
-                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_4a_" aria-checked="false" aria-label="Select row"></Checkbox>
-                                          <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_4a_" aria-checked="false" aria-label="Select row"></Checkbox>
+                                          <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
@@ -2626,19 +2626,19 @@ export function Pattern() {
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
                                         <div className="flex items-center">
-                                          <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_4f_" aria-checked="false" size="sm" aria-label="Syncs for sre-slack">
+                                          <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_4f_" aria-checked="false" size="sm" aria-label="Syncs for sre-slack">
                                             <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                                           </Switch>
-                                          <input id="base-ui-_r_4g_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <input id="base-ui-_r_4g_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right">
                                         <DropdownMenu>
-                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Actions for sre-slack" aria-haspopup="menu" id="base-ui-_r_4l_" aria-expanded="false">
-                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                            <circle cx="12" cy="12" r="1"></circle>
-                                            <circle cx="19" cy="12" r="1"></circle>
-                                            <circle cx="5" cy="12" r="1"></circle>
+                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Actions for sre-slack" aria-haspopup="menu" id="base-ui-_r_4l_" aria-expanded="false">
+                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                            <circle cx={12} cy={12} r={1}></circle>
+                                            <circle cx={19} cy={12} r={1}></circle>
+                                            <circle cx={5} cy={12} r={1}></circle>
                                           </svg>
                                         </DropdownMenuTrigger>
                                         </DropdownMenu>
@@ -2647,8 +2647,8 @@ export function Pattern() {
                                     <tr className="[&:has([data-active-row])]:bg-muted/50 [&:not(:last-child)>td]:border-b cursor-pointer data-[state=selected]:bg-muted/50 group/connection-row hover:bg-muted/40" data-row-id="CON-107">
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5">
                                         <div className="flex">
-                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_4n_" aria-checked="false" aria-label="Select row"></Checkbox>
-                                          <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_4n_" aria-checked="false" aria-label="Select row"></Checkbox>
+                                          <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
@@ -2737,19 +2737,19 @@ export function Pattern() {
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
                                         <div className="flex items-center">
-                                          <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_4s_" aria-checked="true" size="sm" aria-label="Syncs for harbor-github">
+                                          <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_4s_" aria-checked="true" size="sm" aria-label="Syncs for harbor-github">
                                             <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                                           </Switch>
-                                          <input id="base-ui-_r_4t_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <input id="base-ui-_r_4t_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right">
                                         <DropdownMenu>
-                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Actions for harbor-github" aria-haspopup="menu" id="base-ui-_r_52_" aria-expanded="false">
-                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                            <circle cx="12" cy="12" r="1"></circle>
-                                            <circle cx="19" cy="12" r="1"></circle>
-                                            <circle cx="5" cy="12" r="1"></circle>
+                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Actions for harbor-github" aria-haspopup="menu" id="base-ui-_r_52_" aria-expanded="false">
+                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                            <circle cx={12} cy={12} r={1}></circle>
+                                            <circle cx={19} cy={12} r={1}></circle>
+                                            <circle cx={5} cy={12} r={1}></circle>
                                           </svg>
                                         </DropdownMenuTrigger>
                                         </DropdownMenu>
@@ -2758,8 +2758,8 @@ export function Pattern() {
                                     <tr className="[&:has([data-active-row])]:bg-muted/50 [&:not(:last-child)>td]:border-b cursor-pointer data-[state=selected]:bg-muted/50 group/connection-row hover:bg-muted/40" data-row-id="CON-108">
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5">
                                         <div className="flex">
-                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_54_" aria-checked="false" aria-label="Select row"></Checkbox>
-                                          <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_54_" aria-checked="false" aria-label="Select row"></Checkbox>
+                                          <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
@@ -2841,19 +2841,19 @@ export function Pattern() {
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
                                         <div className="flex items-center">
-                                          <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_59_" aria-checked="true" size="sm" aria-label="Syncs for incident-tracker">
+                                          <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_59_" aria-checked="true" size="sm" aria-label="Syncs for incident-tracker">
                                             <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                                           </Switch>
-                                          <input id="base-ui-_r_5a_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <input id="base-ui-_r_5a_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right">
                                         <DropdownMenu>
-                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Actions for incident-tracker" aria-haspopup="menu" id="base-ui-_r_5f_" aria-expanded="false">
-                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                            <circle cx="12" cy="12" r="1"></circle>
-                                            <circle cx="19" cy="12" r="1"></circle>
-                                            <circle cx="5" cy="12" r="1"></circle>
+                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Actions for incident-tracker" aria-haspopup="menu" id="base-ui-_r_5f_" aria-expanded="false">
+                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                            <circle cx={12} cy={12} r={1}></circle>
+                                            <circle cx={19} cy={12} r={1}></circle>
+                                            <circle cx={5} cy={12} r={1}></circle>
                                           </svg>
                                         </DropdownMenuTrigger>
                                         </DropdownMenu>
@@ -2862,8 +2862,8 @@ export function Pattern() {
                                     <tr className="[&:has([data-active-row])]:bg-muted/50 [&:not(:last-child)>td]:border-b cursor-pointer data-[state=selected]:bg-muted/50 group/connection-row hover:bg-muted/40" data-row-id="CON-102">
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5">
                                         <div className="flex">
-                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_5h_" aria-checked="false" aria-label="Select row"></Checkbox>
-                                          <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_5h_" aria-checked="false" aria-label="Select row"></Checkbox>
+                                          <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
@@ -2951,19 +2951,19 @@ export function Pattern() {
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
                                         <div className="flex items-center">
-                                          <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_5m_" aria-checked="true" size="sm" aria-label="Syncs for stripe-live">
+                                          <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_5m_" aria-checked="true" size="sm" aria-label="Syncs for stripe-live">
                                             <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                                           </Switch>
-                                          <input id="base-ui-_r_5n_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <input id="base-ui-_r_5n_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right">
                                         <DropdownMenu>
-                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Actions for stripe-live" aria-haspopup="menu" id="base-ui-_r_5s_" aria-expanded="false">
-                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                            <circle cx="12" cy="12" r="1"></circle>
-                                            <circle cx="19" cy="12" r="1"></circle>
-                                            <circle cx="5" cy="12" r="1"></circle>
+                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Actions for stripe-live" aria-haspopup="menu" id="base-ui-_r_5s_" aria-expanded="false">
+                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                            <circle cx={12} cy={12} r={1}></circle>
+                                            <circle cx={19} cy={12} r={1}></circle>
+                                            <circle cx={5} cy={12} r={1}></circle>
                                           </svg>
                                         </DropdownMenuTrigger>
                                         </DropdownMenu>
@@ -2972,8 +2972,8 @@ export function Pattern() {
                                     <tr className="[&:has([data-active-row])]:bg-muted/50 [&:not(:last-child)>td]:border-b cursor-pointer data-[state=selected]:bg-muted/50 group/connection-row hover:bg-muted/40" data-row-id="CON-113">
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5">
                                         <div className="flex">
-                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_5u_" aria-checked="false" aria-label="Select row"></Checkbox>
-                                          <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_5u_" aria-checked="false" aria-label="Select row"></Checkbox>
+                                          <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
@@ -3058,19 +3058,19 @@ export function Pattern() {
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
                                         <div className="flex items-center">
-                                          <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_63_" aria-checked="true" size="sm" aria-label="Syncs for stripe-sandbox">
+                                          <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_63_" aria-checked="true" size="sm" aria-label="Syncs for stripe-sandbox">
                                             <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                                           </Switch>
-                                          <input id="base-ui-_r_64_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <input id="base-ui-_r_64_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right">
                                         <DropdownMenu>
-                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Actions for stripe-sandbox" aria-haspopup="menu" id="base-ui-_r_69_" aria-expanded="false">
-                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                            <circle cx="12" cy="12" r="1"></circle>
-                                            <circle cx="19" cy="12" r="1"></circle>
-                                            <circle cx="5" cy="12" r="1"></circle>
+                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Actions for stripe-sandbox" aria-haspopup="menu" id="base-ui-_r_69_" aria-expanded="false">
+                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                            <circle cx={12} cy={12} r={1}></circle>
+                                            <circle cx={19} cy={12} r={1}></circle>
+                                            <circle cx={5} cy={12} r={1}></circle>
                                           </svg>
                                         </DropdownMenuTrigger>
                                         </DropdownMenu>
@@ -3092,7 +3092,7 @@ export function Pattern() {
                   <section aria-labelledby="devops-6-group-files">
                     <div className="bg-muted/50 border-y flex gap-2.5 items-center px-(--frame-panel-header-px) py-2">
                       <span className="[&_svg:not([class*=size-])]:size-4 flex text-muted-foreground">
-                        <svg className="lucide lucide-folder" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FolderIcon" tabler="IconFolder" hugeicons="FolderIcon" phosphor="FolderIcon" remixicon="RiFolderLine" aria-hidden="true">
+                        <svg className="lucide lucide-folder" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FolderIcon" tabler="IconFolder" hugeicons="FolderIcon" phosphor="FolderIcon" remixicon="RiFolderLine" aria-hidden="true">
                           <path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"></path>
                         </svg>
                       </span>
@@ -3110,7 +3110,7 @@ export function Pattern() {
                       <div className="relative">
                         <DataGridProvider>
                         <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
-                          <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_6c_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
+                          <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_6c_-viewport" tabIndex={-1} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                             <div role="presentation" style={{minWidth: "fit-content"}}>
                               <DataGridProvider>
                               <DataGridTableViewport>
@@ -3130,14 +3130,14 @@ export function Pattern() {
                                   <thead>
                                     <tr className="[&>th]:border-b bg-transparent">
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle first:ps-(--frame-panel-header-px) font-medium h-8 last:pe-(--frame-panel-header-px) px-2 relative rtl:text-right text-foreground text-left" scope="col" data-col-id="select" data-header-id="select" data-header-depth="0" style={{width: "40px"}}>
-                                        <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_6d_" aria-checked="false" aria-label="Select all"></Checkbox>
-                                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                        <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_6d_" aria-checked="false" aria-label="Select all"></Checkbox>
+                                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="name" data-header-id="name" data-header-depth="0" style={{width: "264px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Connection"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -3146,9 +3146,9 @@ export function Pattern() {
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="status" data-header-id="status" data-header-depth="0" style={{width: "112px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Status"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -3157,9 +3157,9 @@ export function Pattern() {
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="datasets" data-header-id="datasets" data-header-depth="0" style={{width: "196px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Datasets"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -3168,9 +3168,9 @@ export function Pattern() {
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="linked" data-header-id="linked" data-header-depth="0" style={{width: "148px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Linked"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -3179,9 +3179,9 @@ export function Pattern() {
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="lastSync" data-header-id="lastSync" data-header-depth="0" style={{width: "124px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Last Sync"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -3190,9 +3190,9 @@ export function Pattern() {
                                       </th>
                                       <th className="[&:has([role=checkbox])]:pe-0 align-middle font-medium h-8 px-2 relative rtl:text-right text-foreground text-left" scope="col" aria-sort="none" data-col-id="owner" data-header-id="owner" data-header-depth="0" style={{width: "152px"}}>
                                         <div className="-ms-2 flex h-full items-center">
-                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex="0">
+                                          <Button className="data-[state=open]:bg-secondary data-[state=open]:text-foreground font-normal h-6 hover:bg-secondary hover:text-foreground px-2 style-luma:rounded-full style-lyra:rounded-none style-maia:rounded-full style-mira:rounded-md style-nova:rounded-lg style-rhea:rounded-full style-sera:rounded-none style-vega:rounded-md text-secondary-foreground/80" type="button" tabIndex={0}>
                                             {"Owner"}
-                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
+                                            <svg className="lucide lucide-chevrons-up-down mt-px size-3.25" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronsUpDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretUpDownIcon" remixicon="RiExpandUpDownLine" aria-hidden="true">
                                               <path d="m7 15 5 5 5-5"></path>
                                               <path d="m7 9 5-5 5 5"></path>
                                             </svg>
@@ -3212,8 +3212,8 @@ export function Pattern() {
                                     <tr className="[&:has([data-active-row])]:bg-muted/50 [&:not(:last-child)>td]:border-b cursor-pointer data-[state=selected]:bg-muted/50 group/connection-row hover:bg-muted/40" data-row-id="CON-111">
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5">
                                         <div className="flex">
-                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_6g_" aria-checked="false" aria-label="Select row"></Checkbox>
-                                          <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_6g_" aria-checked="false" aria-label="Select row"></Checkbox>
+                                          <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
@@ -3299,19 +3299,19 @@ export function Pattern() {
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
                                         <div className="flex items-center">
-                                          <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_6l_" aria-checked="true" size="sm" aria-label="Syncs for bank-settlement-files">
+                                          <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_6l_" aria-checked="true" size="sm" aria-label="Syncs for bank-settlement-files">
                                             <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                                           </Switch>
-                                          <input id="base-ui-_r_6m_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <input id="base-ui-_r_6m_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right">
                                         <DropdownMenu>
-                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Actions for bank-settlement-files" aria-haspopup="menu" id="base-ui-_r_6r_" aria-expanded="false">
-                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                            <circle cx="12" cy="12" r="1"></circle>
-                                            <circle cx="19" cy="12" r="1"></circle>
-                                            <circle cx="5" cy="12" r="1"></circle>
+                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Actions for bank-settlement-files" aria-haspopup="menu" id="base-ui-_r_6r_" aria-expanded="false">
+                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                            <circle cx={12} cy={12} r={1}></circle>
+                                            <circle cx={19} cy={12} r={1}></circle>
+                                            <circle cx={5} cy={12} r={1}></circle>
                                           </svg>
                                         </DropdownMenuTrigger>
                                         </DropdownMenu>
@@ -3320,8 +3320,8 @@ export function Pattern() {
                                     <tr className="[&:has([data-active-row])]:bg-muted/50 [&:not(:last-child)>td]:border-b cursor-pointer data-[state=selected]:bg-muted/50 group/connection-row hover:bg-muted/40" data-row-id="CON-110">
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5">
                                         <div className="flex">
-                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_6t_" aria-checked="false" aria-label="Select row"></Checkbox>
-                                          <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <Checkbox className="align-[inherit]" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_6t_" aria-checked="false" aria-label="Select row"></Checkbox>
+                                          <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
@@ -3410,19 +3410,19 @@ export function Pattern() {
                                       </td>
                                       <td className="align-middle px-2 py-1.5">
                                         <div className="flex items-center">
-                                          <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_72_" aria-checked="true" size="sm" aria-label="Syncs for finance-close-sheets">
+                                          <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_72_" aria-checked="true" size="sm" aria-label="Syncs for finance-close-sheets">
                                             <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                                           </Switch>
-                                          <input id="base-ui-_r_73_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                                          <input id="base-ui-_r_73_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                                         </div>
                                       </td>
                                       <td className="align-middle first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-right">
                                         <DropdownMenu>
-                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Actions for finance-close-sheets" aria-haspopup="menu" id="base-ui-_r_78_" aria-expanded="false">
-                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                                            <circle cx="12" cy="12" r="1"></circle>
-                                            <circle cx="19" cy="12" r="1"></circle>
-                                            <circle cx="5" cy="12" r="1"></circle>
+                                        <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Actions for finance-close-sheets" aria-haspopup="menu" id="base-ui-_r_78_" aria-expanded="false">
+                                          <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                                            <circle cx={12} cy={12} r={1}></circle>
+                                            <circle cx={19} cy={12} r={1}></circle>
+                                            <circle cx={5} cy={12} r={1}></circle>
                                           </svg>
                                         </DropdownMenuTrigger>
                                         </DropdownMenu>

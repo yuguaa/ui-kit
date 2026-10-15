@@ -28,20 +28,20 @@ export function Pattern() {
         </div>
         <Tabs data-orientation="horizontal" activationDirection="none">
           <TabsList className="mb-3.5 p-0!" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
-            <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-controls="base-ui-_r_4_" extracted="1">
+            <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex={0} role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-controls="base-ui-_r_4_" extracted="1">
               {"Projects"}
             </TabsTrigger>
-            <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
+            <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_1_">
               {"Messages"}
             </TabsTrigger>
-            <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_">
+            <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_2_">
               {"Reports"}
             </TabsTrigger>
-            <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_">
+            <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_3_">
               {"System"}
             </TabsTrigger>
           </TabsList>
-          <TabsContent className="space-y-5" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_4_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_0_">
+          <TabsContent className="space-y-5" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_4_" role="tabpanel" tabIndex={0} index="0" aria-labelledby="base-ui-_r_0_">
             <div className="cn-table-container">
               <Table>
                 <TableHeader>
@@ -67,32 +67,32 @@ export function Pattern() {
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_5_" aria-checked="true" aria-label="Task assigned to you via Email">
+                        <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_5_" aria-checked="true" aria-label="Task assigned to you via Email">
                           <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </span>
                         </Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_8_" aria-checked="false" aria-label="Task assigned to you via Slack"></Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_8_" aria-checked="false" aria-label="Task assigned to you via Slack"></Checkbox>
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_b_" aria-checked="true" aria-label="Task assigned to you via In-app">
+                        <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_b_" aria-checked="true" aria-label="Task assigned to you via In-app">
                           <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </span>
                         </Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                   </TableRow>
@@ -102,26 +102,26 @@ export function Pattern() {
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_e_" aria-checked="true" aria-label="Due date approaching via Email">
+                        <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_e_" aria-checked="true" aria-label="Due date approaching via Email">
                           <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </span>
                         </Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_h_" aria-checked="false" aria-label="Due date approaching via Slack"></Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_h_" aria-checked="false" aria-label="Due date approaching via Slack"></Checkbox>
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_k_" aria-checked="false" aria-label="Due date approaching via In-app"></Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_k_" aria-checked="false" aria-label="Due date approaching via In-app"></Checkbox>
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                   </TableRow>
@@ -131,26 +131,26 @@ export function Pattern() {
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_n_" aria-checked="false" aria-label="Status changed via Email"></Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_n_" aria-checked="false" aria-label="Status changed via Email"></Checkbox>
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_q_" aria-checked="false" aria-label="Status changed via Slack"></Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_q_" aria-checked="false" aria-label="Status changed via Slack"></Checkbox>
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_t_" aria-checked="true" aria-label="Status changed via In-app">
+                        <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_t_" aria-checked="true" aria-label="Status changed via In-app">
                           <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </span>
                         </Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                   </TableRow>
@@ -160,38 +160,38 @@ export function Pattern() {
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_10_" aria-checked="true" aria-label="Mentioned in a comment via Email">
+                        <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_10_" aria-checked="true" aria-label="Mentioned in a comment via Email">
                           <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </span>
                         </Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_13_" aria-checked="true" aria-label="Mentioned in a comment via Slack">
+                        <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_13_" aria-checked="true" aria-label="Mentioned in a comment via Slack">
                           <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </span>
                         </Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_16_" aria-checked="true" aria-label="Mentioned in a comment via In-app">
+                        <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_16_" aria-checked="true" aria-label="Mentioned in a comment via In-app">
                           <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </span>
                         </Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                   </TableRow>
@@ -201,20 +201,20 @@ export function Pattern() {
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_19_" aria-checked="false" aria-label="File attachment added via Email"></Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_19_" aria-checked="false" aria-label="File attachment added via Email"></Checkbox>
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_1c_" aria-checked="false" aria-label="File attachment added via Slack"></Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_1c_" aria-checked="false" aria-label="File attachment added via Slack"></Checkbox>
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_1f_" aria-checked="false" aria-label="File attachment added via In-app"></Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_1f_" aria-checked="false" aria-label="File attachment added via In-app"></Checkbox>
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                   </TableRow>
@@ -246,32 +246,32 @@ export function Pattern() {
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_1i_" aria-checked="true" aria-label="Milestone completed via Email">
+                        <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_1i_" aria-checked="true" aria-label="Milestone completed via Email">
                           <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </span>
                         </Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_1l_" aria-checked="false" aria-label="Milestone completed via Slack"></Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_1l_" aria-checked="false" aria-label="Milestone completed via Slack"></Checkbox>
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_1o_" aria-checked="true" aria-label="Milestone completed via In-app">
+                        <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_1o_" aria-checked="true" aria-label="Milestone completed via In-app">
                           <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </span>
                         </Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                   </TableRow>
@@ -281,26 +281,26 @@ export function Pattern() {
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_1r_" aria-checked="true" aria-label="Sprint ended via Email">
+                        <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_1r_" aria-checked="true" aria-label="Sprint ended via Email">
                           <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </span>
                         </Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_1u_" aria-checked="false" aria-label="Sprint ended via Slack"></Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_1u_" aria-checked="false" aria-label="Sprint ended via Slack"></Checkbox>
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_21_" aria-checked="false" aria-label="Sprint ended via In-app"></Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_21_" aria-checked="false" aria-label="Sprint ended via In-app"></Checkbox>
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                   </TableRow>
@@ -310,26 +310,26 @@ export function Pattern() {
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_24_" aria-checked="false" aria-label="New member added to project via Email"></Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_24_" aria-checked="false" aria-label="New member added to project via Email"></Checkbox>
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_27_" aria-checked="false" aria-label="New member added to project via Slack"></Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_27_" aria-checked="false" aria-label="New member added to project via Slack"></Checkbox>
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_2a_" aria-checked="true" aria-label="New member added to project via In-app">
+                        <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_2a_" aria-checked="true" aria-label="New member added to project via In-app">
                           <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </span>
                         </Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                   </TableRow>
@@ -339,26 +339,26 @@ export function Pattern() {
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_2d_" aria-checked="true" aria-label="Project archived via Email">
+                        <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_2d_" aria-checked="true" aria-label="Project archived via Email">
                           <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </span>
                         </Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_2g_" aria-checked="false" aria-label="Project archived via Slack"></Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_2g_" aria-checked="false" aria-label="Project archived via Slack"></Checkbox>
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                     <TableCell>
                       <div className="flex justify-center">
-                        <Checkbox unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_2j_" aria-checked="false" aria-label="Project archived via In-app"></Checkbox>
-                        <input tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <Checkbox unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_2j_" aria-checked="false" aria-label="Project archived via In-app"></Checkbox>
+                        <input tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       </div>
                     </TableCell>
                   </TableRow>

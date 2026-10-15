@@ -37,8 +37,8 @@ export function Pattern() {
             <FramePanel className="before:hidden flex flex-col p-0 shadow-none!">
               <FieldLabel className="block border-0 cn-label cursor-pointer group-data-[disabled=true]:pointer-events-none items-center p-0! peer-disabled:cursor-not-allowed relative select-none w-full" htmlFor="import-service-stripe" id="import-service-stripe-label">
                 <Field role="group" data-orientation="horizontal">
-                  <Checkbox className="absolute right-2.5 rounded-full size-5 top-2.5 z-10" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_0_" aria-checked="false" aria-labelledby="import-service-stripe-label"></Checkbox>
-                  <input id="import-service-stripe" tabIndex="-1" aria-hidden="true" type="checkbox" name="import-service-stripe" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="absolute right-2.5 rounded-full size-5 top-2.5 z-10" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_0_" aria-checked="false" aria-labelledby="import-service-stripe-label"></Checkbox>
+                  <input id="import-service-stripe" tabIndex={-1} aria-hidden="true" type="checkbox" name="import-service-stripe" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                   <div className="flex flex-col gap-3 w-full">
                     <Item className="bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-11" variant="default" size="default">
                       <ItemMedia className="size-auto" variant="icon">
@@ -67,23 +67,23 @@ export function Pattern() {
             <FramePanel className="before:hidden flex flex-col p-0 shadow-none!">
               <FieldLabel className="block border-0 cn-label cursor-pointer group-data-[disabled=true]:pointer-events-none items-center p-0! peer-disabled:cursor-not-allowed relative select-none w-full" htmlFor="import-service-supabase" id="import-service-supabase-label">
                 <Field role="group" data-orientation="horizontal">
-                  <Checkbox className="absolute right-2.5 rounded-full size-5 top-2.5 z-10" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_3_" aria-checked="false" aria-labelledby="import-service-supabase-label"></Checkbox>
-                  <input id="import-service-supabase" tabIndex="-1" aria-hidden="true" type="checkbox" name="import-service-supabase" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="absolute right-2.5 rounded-full size-5 top-2.5 z-10" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_3_" aria-checked="false" aria-labelledby="import-service-supabase-label"></Checkbox>
+                  <input id="import-service-supabase" tabIndex={-1} aria-hidden="true" type="checkbox" name="import-service-supabase" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                   <div className="flex flex-col gap-3 w-full">
                     <Item className="bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-11" variant="default" size="default">
                       <ItemMedia className="size-auto" variant="icon">
                         <svg className="size-6" aria-hidden="true" viewBox="0 0 109 113" fill="none">
                           <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint0_linear)"></path>
-                          <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity="0.2"></path>
+                          <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity={0.2}></path>
                           <path d="M45.317 2.07103C48.1765 -1.53037 53.9745 0.442937 54.0434 5.041L54.4849 72.2922H9.83113C1.64038 72.2922 -2.92775 62.8321 2.1655 56.4175L45.317 2.07103Z" fill="#3ECF8E"></path>
                           <defs>
-                            <lineargradient id="supabase-paint0_linear" x1="53.9738" y1="54.974" x2="94.1635" y2="71.8295" gradientUnits="userSpaceOnUse">
+                            <lineargradient id="supabase-paint0_linear" x1={53.9738} y1={54.974} x2={94.1635} y2={71.8295} gradientUnits="userSpaceOnUse">
                               <stop stopColor="#249361"></stop>
-                              <stop offset="1" stopColor="#3ECF8E"></stop>
+                              <stop offset={1} stopColor="#3ECF8E"></stop>
                             </lineargradient>
-                            <lineargradient id="supabase-paint1_linear" x1="36.1558" y1="30.578" x2="54.4844" y2="65.0806" gradientUnits="userSpaceOnUse">
+                            <lineargradient id="supabase-paint1_linear" x1={36.1558} y1={30.578} x2={54.4844} y2={65.0806} gradientUnits="userSpaceOnUse">
                               <stop></stop>
-                              <stop offset="1" stopOpacity="0"></stop>
+                              <stop offset={1} stopOpacity={0}></stop>
                             </lineargradient>
                           </defs>
                         </svg>
@@ -109,8 +109,8 @@ export function Pattern() {
             <FramePanel className="before:hidden flex flex-col p-0 shadow-none!">
               <FieldLabel className="block border-0 cn-label cursor-pointer group-data-[disabled=true]:pointer-events-none items-center p-0! peer-disabled:cursor-not-allowed relative select-none w-full" htmlFor="import-service-openai" id="import-service-openai-label">
                 <Field role="group" data-orientation="horizontal">
-                  <Checkbox className="absolute right-2.5 rounded-full size-5 top-2.5 z-10" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_6_" aria-checked="false" aria-labelledby="import-service-openai-label"></Checkbox>
-                  <input id="import-service-openai" tabIndex="-1" aria-hidden="true" type="checkbox" name="import-service-openai" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="absolute right-2.5 rounded-full size-5 top-2.5 z-10" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_6_" aria-checked="false" aria-labelledby="import-service-openai-label"></Checkbox>
+                  <input id="import-service-openai" tabIndex={-1} aria-hidden="true" type="checkbox" name="import-service-openai" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                   <div className="flex flex-col gap-3 w-full">
                     <Item className="bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-11" variant="default" size="default">
                       <ItemMedia className="size-auto" variant="icon">
@@ -146,8 +146,8 @@ export function Pattern() {
             <FramePanel className="before:hidden flex flex-col p-0 shadow-none!">
               <FieldLabel className="block border-0 cn-label cursor-pointer group-data-[disabled=true]:pointer-events-none items-center p-0! peer-disabled:cursor-not-allowed relative select-none w-full" htmlFor="import-service-discord" id="import-service-discord-label">
                 <Field role="group" data-orientation="horizontal">
-                  <Checkbox className="absolute right-2.5 rounded-full size-5 top-2.5 z-10" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_9_" aria-checked="false" aria-labelledby="import-service-discord-label"></Checkbox>
-                  <input id="import-service-discord" tabIndex="-1" aria-hidden="true" type="checkbox" name="import-service-discord" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="absolute right-2.5 rounded-full size-5 top-2.5 z-10" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_9_" aria-checked="false" aria-labelledby="import-service-discord-label"></Checkbox>
+                  <input id="import-service-discord" tabIndex={-1} aria-hidden="true" type="checkbox" name="import-service-discord" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                   <div className="flex flex-col gap-3 w-full">
                     <Item className="bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-11" variant="default" size="default">
                       <ItemMedia className="size-auto" variant="icon">
@@ -176,8 +176,8 @@ export function Pattern() {
             <FramePanel className="before:hidden flex flex-col p-0 shadow-none!">
               <FieldLabel className="block border-0 cn-label cursor-pointer group-data-[disabled=true]:pointer-events-none items-center p-0! peer-disabled:cursor-not-allowed relative select-none w-full" htmlFor="import-service-anthropic" id="import-service-anthropic-label">
                 <Field role="group" data-orientation="horizontal">
-                  <Checkbox className="absolute right-2.5 rounded-full size-5 top-2.5 z-10" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_c_" aria-checked="false" aria-labelledby="import-service-anthropic-label"></Checkbox>
-                  <input id="import-service-anthropic" tabIndex="-1" aria-hidden="true" type="checkbox" name="import-service-anthropic" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="absolute right-2.5 rounded-full size-5 top-2.5 z-10" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_c_" aria-checked="false" aria-labelledby="import-service-anthropic-label"></Checkbox>
+                  <input id="import-service-anthropic" tabIndex={-1} aria-hidden="true" type="checkbox" name="import-service-anthropic" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                   <div className="flex flex-col gap-3 w-full">
                     <Item className="bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-11" variant="default" size="default">
                       <ItemMedia className="size-auto" variant="icon">
@@ -219,8 +219,8 @@ export function Pattern() {
             <FramePanel className="before:hidden flex flex-col p-0 shadow-none!">
               <FieldLabel className="block border-0 cn-label cursor-pointer group-data-[disabled=true]:pointer-events-none items-center p-0! peer-disabled:cursor-not-allowed relative select-none w-full" htmlFor="import-service-resend" id="import-service-resend-label">
                 <Field role="group" data-orientation="horizontal">
-                  <Checkbox className="absolute right-2.5 rounded-full size-5 top-2.5 z-10" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_f_" aria-checked="false" aria-labelledby="import-service-resend-label"></Checkbox>
-                  <input id="import-service-resend" tabIndex="-1" aria-hidden="true" type="checkbox" name="import-service-resend" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="absolute right-2.5 rounded-full size-5 top-2.5 z-10" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_f_" aria-checked="false" aria-labelledby="import-service-resend-label"></Checkbox>
+                  <input id="import-service-resend" tabIndex={-1} aria-hidden="true" type="checkbox" name="import-service-resend" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                   <div className="flex flex-col gap-3 w-full">
                     <Item className="bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-11" variant="default" size="default">
                       <ItemMedia className="size-auto" variant="icon">
@@ -256,8 +256,8 @@ export function Pattern() {
             <FramePanel className="before:hidden flex flex-col p-0 shadow-none!">
               <FieldLabel className="block border-0 cn-label cursor-pointer group-data-[disabled=true]:pointer-events-none items-center p-0! peer-disabled:cursor-not-allowed relative select-none w-full" htmlFor="import-service-neon" id="import-service-neon-label">
                 <Field role="group" data-orientation="horizontal">
-                  <Checkbox className="absolute right-2.5 rounded-full size-5 top-2.5 z-10" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_i_" aria-checked="false" aria-labelledby="import-service-neon-label"></Checkbox>
-                  <input id="import-service-neon" tabIndex="-1" aria-hidden="true" type="checkbox" name="import-service-neon" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="absolute right-2.5 rounded-full size-5 top-2.5 z-10" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_i_" aria-checked="false" aria-labelledby="import-service-neon-label"></Checkbox>
+                  <input id="import-service-neon" tabIndex={-1} aria-hidden="true" type="checkbox" name="import-service-neon" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                   <div className="flex flex-col gap-3 w-full">
                     <Item className="bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-11" variant="default" size="default">
                       <ItemMedia className="size-auto" variant="icon">
@@ -265,11 +265,11 @@ export function Pattern() {
                           <defs>
                             <lineargradient id="neon-a" x1="100%" x2="12.069%" y1="100%" y2="0%">
                               <stop offset="0%" stopColor="#62F755"></stop>
-                              <stop offset="100%" stopColor="#8FF986" stopOpacity="0"></stop>
+                              <stop offset="100%" stopColor="#8FF986" stopOpacity={0}></stop>
                             </lineargradient>
                             <lineargradient id="neon-b" x1="100%" x2="40.603%" y1="100%" y2="76.897%">
                               <stop offset="0%" stopOpacity=".9"></stop>
-                              <stop offset="100%" stopColor="#1A1A1A" stopOpacity="0"></stop>
+                              <stop offset="100%" stopColor="#1A1A1A" stopOpacity={0}></stop>
                             </lineargradient>
                           </defs>
                           <path fill="#00E0D9" d="M0 44.139C0 19.762 19.762 0 44.139 0H211.86C236.238 0 256 19.762 256 44.139v142.649c0 25.216-31.915 36.16-47.388 16.256l-48.392-62.251v75.484c0 21.939-17.784 39.723-39.722 39.723h-76.36C19.763 256 0 236.238 0 211.861V44.14Zm44.139-8.825c-4.879 0-8.825 3.946-8.825 8.818v167.73c0 4.878 3.946 8.831 8.818 8.831h77.688c2.44 0 3.087-1.977 3.087-4.416v-101.22c0-25.222 31.914-36.166 47.395-16.255l48.391 62.243V44.14c0-4.879.455-8.825-4.416-8.825H44.14Z"></path>
@@ -299,8 +299,8 @@ export function Pattern() {
             <FramePanel className="before:hidden flex flex-col p-0 shadow-none!">
               <FieldLabel className="block border-0 cn-label cursor-pointer group-data-[disabled=true]:pointer-events-none items-center p-0! peer-disabled:cursor-not-allowed relative select-none w-full" htmlFor="import-service-planetscale" id="import-service-planetscale-label">
                 <Field role="group" data-orientation="horizontal">
-                  <Checkbox className="absolute right-2.5 rounded-full size-5 top-2.5 z-10" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_l_" aria-checked="false" aria-labelledby="import-service-planetscale-label"></Checkbox>
-                  <input id="import-service-planetscale" tabIndex="-1" aria-hidden="true" type="checkbox" name="import-service-planetscale" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="absolute right-2.5 rounded-full size-5 top-2.5 z-10" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_l_" aria-checked="false" aria-labelledby="import-service-planetscale-label"></Checkbox>
+                  <input id="import-service-planetscale" tabIndex={-1} aria-hidden="true" type="checkbox" name="import-service-planetscale" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                   <div className="flex flex-col gap-3 w-full">
                     <Item className="bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-11" variant="default" size="default">
                       <ItemMedia className="size-auto" variant="icon">
@@ -336,8 +336,8 @@ export function Pattern() {
             <FramePanel className="before:hidden flex flex-col p-0 shadow-none!">
               <FieldLabel className="block border-0 cn-label cursor-pointer group-data-[disabled=true]:pointer-events-none items-center p-0! peer-disabled:cursor-not-allowed relative select-none w-full" htmlFor="import-service-redis" id="import-service-redis-label">
                 <Field role="group" data-orientation="horizontal">
-                  <Checkbox className="absolute right-2.5 rounded-full size-5 top-2.5 z-10" unchecked="" role="checkbox" tabIndex="0" id="base-ui-_r_o_" aria-checked="false" aria-labelledby="import-service-redis-label"></Checkbox>
-                  <input id="import-service-redis" tabIndex="-1" aria-hidden="true" type="checkbox" name="import-service-redis" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
+                  <Checkbox className="absolute right-2.5 rounded-full size-5 top-2.5 z-10" unchecked="" role="checkbox" tabIndex={0} id="base-ui-_r_o_" aria-checked="false" aria-labelledby="import-service-redis-label"></Checkbox>
+                  <input id="import-service-redis" tabIndex={-1} aria-hidden="true" type="checkbox" name="import-service-redis" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "absolute"}} />
                   <div className="flex flex-col gap-3 w-full">
                     <Item className="bg-muted/60 border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-11" variant="default" size="default">
                       <ItemMedia className="size-auto" variant="icon">
@@ -372,16 +372,16 @@ export function Pattern() {
           </Frame>
         </CardContent>
         <CardFooter className="justify-between">
-          <Button type="button" tabIndex="0" extracted="1">
-            <svg className="lucide lucide-arrow-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftIcon" tabler="IconArrowLeft" hugeicons="ArrowLeft02Icon" phosphor="ArrowLeftIcon" remixicon="RiArrowLeftLine" aria-hidden="true">
+          <Button type="button" tabIndex={0} extracted="1">
+            <svg className="lucide lucide-arrow-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftIcon" tabler="IconArrowLeft" hugeicons="ArrowLeft02Icon" phosphor="ArrowLeftIcon" remixicon="RiArrowLeftLine" aria-hidden="true">
               <path d="m12 19-7-7 7-7"></path>
               <path d="M19 12H5"></path>
             </svg>
             {"Go back"}
           </Button>
-          <Button type="button" tabIndex="0">
+          <Button type="button" tabIndex={0}>
             {"Next step"}
-            <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+            <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
               <path d="M5 12h14"></path>
               <path d="m12 5 7 7-7 7"></path>
             </svg>

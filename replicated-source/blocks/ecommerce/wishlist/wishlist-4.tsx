@@ -20,8 +20,8 @@ export function Pattern() {
               {"83 items across 6 collections"}
             </span>
           </div>
-          <Button type="button" tabIndex="0" extracted="1">
-            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+          <Button type="button" tabIndex={0} extracted="1">
+            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
               <path d="M5 12h14"></path>
               <path d="M12 5v14"></path>
             </svg>
@@ -30,7 +30,7 @@ export function Pattern() {
         </header>
         <Tabs data-orientation="horizontal" activationDirection="none">
           <TabsList className="gap-6 h-10! justify-start overflow-x-auto w-full" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line" aria-label="Filter collections">
-            <TabsTrigger className="after:-bottom-px! gap-2 px-1 text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-label="All Collections (6)">
+            <TabsTrigger className="after:-bottom-px! gap-2 px-1 text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex={0} role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-label="All Collections (6)">
               <span>
                 {"All Collections"}
               </span>
@@ -38,7 +38,7 @@ export function Pattern() {
                 {"6"}
               </Badge>
             </TabsTrigger>
-            <TabsTrigger className="after:-bottom-px! gap-2 px-1 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_" aria-label="Recently Updated (3)">
+            <TabsTrigger className="after:-bottom-px! gap-2 px-1 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_1_" aria-label="Recently Updated (3)">
               <span>
                 {"Recently Updated"}
               </span>
@@ -46,7 +46,7 @@ export function Pattern() {
                 {"3"}
               </Badge>
             </TabsTrigger>
-            <TabsTrigger className="after:-bottom-px! gap-2 px-1 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_2_" aria-label="Shared (2)">
+            <TabsTrigger className="after:-bottom-px! gap-2 px-1 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_2_" aria-label="Shared (2)">
               <span>
                 {"Shared"}
               </span>
@@ -82,17 +82,17 @@ export function Pattern() {
                   </Item>
                 </a>
                 <div className="absolute duration-200 flex gap-1.5 opacity-100 pointer-events-none right-2.5 sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-2.5 transition-opacity z-10">
-                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex="0" aria-label="Share the Spring Capsule collection">
-                    <svg className="lucide lucide-share-2 lucide-share2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Share2Icon" tabler="IconShare" hugeicons="Share08Icon" phosphor="ShareNetworkIcon" remixicon="RiShareLine" aria-hidden="true">
-                      <circle cx="18" cy="5" r="3"></circle>
-                      <circle cx="6" cy="12" r="3"></circle>
-                      <circle cx="18" cy="19" r="3"></circle>
-                      <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
-                      <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
+                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex={0} aria-label="Share the Spring Capsule collection">
+                    <svg className="lucide lucide-share-2 lucide-share2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Share2Icon" tabler="IconShare" hugeicons="Share08Icon" phosphor="ShareNetworkIcon" remixicon="RiShareLine" aria-hidden="true">
+                      <circle cx={18} cy={5} r={3}></circle>
+                      <circle cx={6} cy={12} r={3}></circle>
+                      <circle cx={18} cy={19} r={3}></circle>
+                      <line x1={8.59} x2={15.42} y1={13.51} y2={17.49}></line>
+                      <line x1={15.41} x2={8.59} y1={6.51} y2={10.49}></line>
                     </svg>
                   </Button>
-                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex="0" aria-label="Delete the Spring Capsule collection">
-                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex={0} aria-label="Delete the Spring Capsule collection">
+                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                       <path d="M10 11v6"></path>
                       <path d="M14 11v6"></path>
                       <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -145,17 +145,17 @@ export function Pattern() {
                   </Item>
                 </a>
                 <div className="absolute duration-200 flex gap-1.5 opacity-100 pointer-events-none right-2.5 sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-2.5 transition-opacity z-10">
-                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex="0" aria-label="Share the Wedding Guest Looks collection">
-                    <svg className="lucide lucide-share-2 lucide-share2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Share2Icon" tabler="IconShare" hugeicons="Share08Icon" phosphor="ShareNetworkIcon" remixicon="RiShareLine" aria-hidden="true">
-                      <circle cx="18" cy="5" r="3"></circle>
-                      <circle cx="6" cy="12" r="3"></circle>
-                      <circle cx="18" cy="19" r="3"></circle>
-                      <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
-                      <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
+                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex={0} aria-label="Share the Wedding Guest Looks collection">
+                    <svg className="lucide lucide-share-2 lucide-share2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Share2Icon" tabler="IconShare" hugeicons="Share08Icon" phosphor="ShareNetworkIcon" remixicon="RiShareLine" aria-hidden="true">
+                      <circle cx={18} cy={5} r={3}></circle>
+                      <circle cx={6} cy={12} r={3}></circle>
+                      <circle cx={18} cy={19} r={3}></circle>
+                      <line x1={8.59} x2={15.42} y1={13.51} y2={17.49}></line>
+                      <line x1={15.41} x2={8.59} y1={6.51} y2={10.49}></line>
                     </svg>
                   </Button>
-                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex="0" aria-label="Delete the Wedding Guest Looks collection">
-                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex={0} aria-label="Delete the Wedding Guest Looks collection">
+                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                       <path d="M10 11v6"></path>
                       <path d="M14 11v6"></path>
                       <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -181,11 +181,11 @@ export function Pattern() {
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="flex gap-1 items-center text-foreground/80">
-                    <svg className="lucide lucide-users size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                    <svg className="lucide lucide-users size-3" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                       <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                       <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                       <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                      <circle cx="9" cy="7" r="4"></circle>
+                      <circle cx={9} cy={7} r={4}></circle>
                     </svg>
                     {"Shared"}
                   </span>
@@ -218,17 +218,17 @@ export function Pattern() {
                   </Item>
                 </a>
                 <div className="absolute duration-200 flex gap-1.5 opacity-100 pointer-events-none right-2.5 sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-2.5 transition-opacity z-10">
-                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex="0" aria-label="Share the Cold Weather Essentials collection">
-                    <svg className="lucide lucide-share-2 lucide-share2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Share2Icon" tabler="IconShare" hugeicons="Share08Icon" phosphor="ShareNetworkIcon" remixicon="RiShareLine" aria-hidden="true">
-                      <circle cx="18" cy="5" r="3"></circle>
-                      <circle cx="6" cy="12" r="3"></circle>
-                      <circle cx="18" cy="19" r="3"></circle>
-                      <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
-                      <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
+                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex={0} aria-label="Share the Cold Weather Essentials collection">
+                    <svg className="lucide lucide-share-2 lucide-share2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Share2Icon" tabler="IconShare" hugeicons="Share08Icon" phosphor="ShareNetworkIcon" remixicon="RiShareLine" aria-hidden="true">
+                      <circle cx={18} cy={5} r={3}></circle>
+                      <circle cx={6} cy={12} r={3}></circle>
+                      <circle cx={18} cy={19} r={3}></circle>
+                      <line x1={8.59} x2={15.42} y1={13.51} y2={17.49}></line>
+                      <line x1={15.41} x2={8.59} y1={6.51} y2={10.49}></line>
                     </svg>
                   </Button>
-                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex="0" aria-label="Delete the Cold Weather Essentials collection">
-                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex={0} aria-label="Delete the Cold Weather Essentials collection">
+                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                       <path d="M10 11v6"></path>
                       <path d="M14 11v6"></path>
                       <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -281,17 +281,17 @@ export function Pattern() {
                   </Item>
                 </a>
                 <div className="absolute duration-200 flex gap-1.5 opacity-100 pointer-events-none right-2.5 sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-2.5 transition-opacity z-10">
-                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex="0" aria-label="Share the Studio Workwear collection">
-                    <svg className="lucide lucide-share-2 lucide-share2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Share2Icon" tabler="IconShare" hugeicons="Share08Icon" phosphor="ShareNetworkIcon" remixicon="RiShareLine" aria-hidden="true">
-                      <circle cx="18" cy="5" r="3"></circle>
-                      <circle cx="6" cy="12" r="3"></circle>
-                      <circle cx="18" cy="19" r="3"></circle>
-                      <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
-                      <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
+                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex={0} aria-label="Share the Studio Workwear collection">
+                    <svg className="lucide lucide-share-2 lucide-share2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Share2Icon" tabler="IconShare" hugeicons="Share08Icon" phosphor="ShareNetworkIcon" remixicon="RiShareLine" aria-hidden="true">
+                      <circle cx={18} cy={5} r={3}></circle>
+                      <circle cx={6} cy={12} r={3}></circle>
+                      <circle cx={18} cy={19} r={3}></circle>
+                      <line x1={8.59} x2={15.42} y1={13.51} y2={17.49}></line>
+                      <line x1={15.41} x2={8.59} y1={6.51} y2={10.49}></line>
                     </svg>
                   </Button>
-                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex="0" aria-label="Delete the Studio Workwear collection">
-                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex={0} aria-label="Delete the Studio Workwear collection">
+                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                       <path d="M10 11v6"></path>
                       <path d="M14 11v6"></path>
                       <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -342,17 +342,17 @@ export function Pattern() {
                   </Item>
                 </a>
                 <div className="absolute duration-200 flex gap-1.5 opacity-100 pointer-events-none right-2.5 sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-2.5 transition-opacity z-10">
-                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex="0" aria-label="Share the Gifts For Mom collection">
-                    <svg className="lucide lucide-share-2 lucide-share2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Share2Icon" tabler="IconShare" hugeicons="Share08Icon" phosphor="ShareNetworkIcon" remixicon="RiShareLine" aria-hidden="true">
-                      <circle cx="18" cy="5" r="3"></circle>
-                      <circle cx="6" cy="12" r="3"></circle>
-                      <circle cx="18" cy="19" r="3"></circle>
-                      <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
-                      <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
+                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex={0} aria-label="Share the Gifts For Mom collection">
+                    <svg className="lucide lucide-share-2 lucide-share2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Share2Icon" tabler="IconShare" hugeicons="Share08Icon" phosphor="ShareNetworkIcon" remixicon="RiShareLine" aria-hidden="true">
+                      <circle cx={18} cy={5} r={3}></circle>
+                      <circle cx={6} cy={12} r={3}></circle>
+                      <circle cx={18} cy={19} r={3}></circle>
+                      <line x1={8.59} x2={15.42} y1={13.51} y2={17.49}></line>
+                      <line x1={15.41} x2={8.59} y1={6.51} y2={10.49}></line>
                     </svg>
                   </Button>
-                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex="0" aria-label="Delete the Gifts For Mom collection">
-                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex={0} aria-label="Delete the Gifts For Mom collection">
+                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                       <path d="M10 11v6"></path>
                       <path d="M14 11v6"></path>
                       <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -378,11 +378,11 @@ export function Pattern() {
                   </span>
                   <span className="bg-muted-foreground/40 rounded-full shrink-0 size-1" aria-hidden="true"></span>
                   <span className="flex gap-1 items-center text-foreground/80">
-                    <svg className="lucide lucide-users size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                    <svg className="lucide lucide-users size-3" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                       <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                       <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                       <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                      <circle cx="9" cy="7" r="4"></circle>
+                      <circle cx={9} cy={7} r={4}></circle>
                     </svg>
                     {"Shared"}
                   </span>
@@ -415,17 +415,17 @@ export function Pattern() {
                   </Item>
                 </a>
                 <div className="absolute duration-200 flex gap-1.5 opacity-100 pointer-events-none right-2.5 sm:group-focus-within/card:opacity-100 sm:group-hover/card:opacity-100 sm:opacity-0 top-2.5 transition-opacity z-10">
-                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex="0" aria-label="Share the Vacation Edit collection">
-                    <svg className="lucide lucide-share-2 lucide-share2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Share2Icon" tabler="IconShare" hugeicons="Share08Icon" phosphor="ShareNetworkIcon" remixicon="RiShareLine" aria-hidden="true">
-                      <circle cx="18" cy="5" r="3"></circle>
-                      <circle cx="6" cy="12" r="3"></circle>
-                      <circle cx="18" cy="19" r="3"></circle>
-                      <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
-                      <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
+                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex={0} aria-label="Share the Vacation Edit collection">
+                    <svg className="lucide lucide-share-2 lucide-share2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Share2Icon" tabler="IconShare" hugeicons="Share08Icon" phosphor="ShareNetworkIcon" remixicon="RiShareLine" aria-hidden="true">
+                      <circle cx={18} cy={5} r={3}></circle>
+                      <circle cx={6} cy={12} r={3}></circle>
+                      <circle cx={18} cy={19} r={3}></circle>
+                      <line x1={8.59} x2={15.42} y1={13.51} y2={17.49}></line>
+                      <line x1={15.41} x2={8.59} y1={6.51} y2={10.49}></line>
                     </svg>
                   </Button>
-                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex="0" aria-label="Delete the Vacation Edit collection">
-                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                  <Button className="backdrop-blur-sm bg-background/90 hover:bg-background pointer-events-auto shadow-sm" type="button" tabIndex={0} aria-label="Delete the Vacation Edit collection">
+                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                       <path d="M10 11v6"></path>
                       <path d="M14 11v6"></path>
                       <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -455,7 +455,7 @@ export function Pattern() {
           </li>
           <li className="min-w-0">
             <Item className="aspect-square border-dashed cursor-pointer flex-col focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-ring gap-2 hover:bg-muted/40 hover:text-foreground p-6 relative text-muted-foreground text-sm" type="button" aria-label="Create a new wishlist collection" variant="outline" size="default">
-              <svg className="lucide lucide-plus size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+              <svg className="lucide lucide-plus size-5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="M12 5v14"></path>
               </svg>

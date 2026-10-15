@@ -43,15 +43,15 @@ export function Pattern() {
             </div>
           </div>
           <div className="flex gap-2 items-center shrink-0">
-            <Button type="button" tabIndex="0" extracted="1">
-              <svg className="lucide lucide-pencil size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
+            <Button type="button" tabIndex={0} extracted="1">
+              <svg className="lucide lucide-pencil size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
                 <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                 <path d="m15 5 4 4"></path>
               </svg>
               {"Editing"}
             </Button>
-            <Button type="button" tabIndex="0">
-              <svg className="lucide lucide-plus size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+            <Button type="button" tabIndex={0}>
+              <svg className="lucide lucide-plus size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="M12 5v14"></path>
               </svg>
@@ -64,7 +64,7 @@ export function Pattern() {
             <div className="flex gap-5 h-10 items-center min-w-0 overflow-visible w-full">
               <Tabs className="flex-1 h-full min-w-0" data-orientation="horizontal" activationDirection="none">
                 <TabsList className="gap-5 h-full justify-start p-0! self-start w-auto" data-orientation="horizontal" activationDirection="none" role="tablist" variant="line">
-                  <TabsTrigger className="after:z-10 flex-none! gap-2 group-data-horizontal/tabs:after:-bottom-px! h-full! pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_2_" compositeItemActive="">
+                  <TabsTrigger className="after:z-10 flex-none! gap-2 group-data-horizontal/tabs:after:-bottom-px! h-full! pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex={0} role="tab" aria-selected="true" id="base-ui-_r_2_" compositeItemActive="">
                     <span>
                       {"Members"}
                     </span>
@@ -72,7 +72,7 @@ export function Pattern() {
                       {"5"}
                     </Badge>
                   </TabsTrigger>
-                  <TabsTrigger className="after:z-10 flex-none! gap-2 group-data-horizontal/tabs:after:-bottom-px! h-full! pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_3_">
+                  <TabsTrigger className="after:z-10 flex-none! gap-2 group-data-horizontal/tabs:after:-bottom-px! h-full! pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_3_">
                     <span>
                       {"Roles"}
                     </span>
@@ -80,7 +80,7 @@ export function Pattern() {
                       {"4"}
                     </Badge>
                   </TabsTrigger>
-                  <TabsTrigger className="after:z-10 flex-none! gap-2 group-data-horizontal/tabs:after:-bottom-px! h-full! pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_4_">
+                  <TabsTrigger className="after:z-10 flex-none! gap-2 group-data-horizontal/tabs:after:-bottom-px! h-full! pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_4_">
                     <span>
                       {"Billing"}
                     </span>
@@ -88,7 +88,7 @@ export function Pattern() {
                       {"4"}
                     </Badge>
                   </TabsTrigger>
-                  <TabsTrigger className="after:z-10 flex-none! gap-2 group-data-horizontal/tabs:after:-bottom-px! h-full! pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_5_">
+                  <TabsTrigger className="after:z-10 flex-none! gap-2 group-data-horizontal/tabs:after:-bottom-px! h-full! pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_5_">
                     <span>
                       {"Projects"}
                     </span>
@@ -96,7 +96,7 @@ export function Pattern() {
                       {"4"}
                     </Badge>
                   </TabsTrigger>
-                  <TabsTrigger className="after:z-10 flex-none! gap-2 group-data-horizontal/tabs:after:-bottom-px! h-full! pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_6_">
+                  <TabsTrigger className="after:z-10 flex-none! gap-2 group-data-horizontal/tabs:after:-bottom-px! h-full! pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_6_">
                     <span>
                       {"Settings"}
                     </span>
@@ -104,7 +104,7 @@ export function Pattern() {
                       {"4"}
                     </Badge>
                   </TabsTrigger>
-                  <TabsTrigger className="after:z-10 flex-none! gap-2 group-data-horizontal/tabs:after:-bottom-px! h-full! pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_7_">
+                  <TabsTrigger className="after:z-10 flex-none! gap-2 group-data-horizontal/tabs:after:-bottom-px! h-full! pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_7_">
                     <span>
                       {"Audit"}
                     </span>
@@ -112,7 +112,7 @@ export function Pattern() {
                       {"4"}
                     </Badge>
                   </TabsTrigger>
-                  <TabsTrigger className="after:z-10 flex-none! gap-2 group-data-horizontal/tabs:after:-bottom-px! h-full! pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_8_">
+                  <TabsTrigger className="after:z-10 flex-none! gap-2 group-data-horizontal/tabs:after:-bottom-px! h-full! pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_8_">
                     <span>
                       {"API keys"}
                     </span>
@@ -120,7 +120,7 @@ export function Pattern() {
                       {"4"}
                     </Badge>
                   </TabsTrigger>
-                  <TabsTrigger className="after:z-10 flex-none! gap-2 group-data-horizontal/tabs:after:-bottom-px! h-full! pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_9_">
+                  <TabsTrigger className="after:z-10 flex-none! gap-2 group-data-horizontal/tabs:after:-bottom-px! h-full! pb-(--frame-panel-header-py) pt-0 px-0 text-sm" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_9_">
                     <span>
                       {"SSO"}
                     </span>
@@ -198,7 +198,7 @@ export function Pattern() {
           <div className="relative">
             <DataGridProvider>
             <DataGridScrollArea role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}}>
-              <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_a_-viewport" tabIndex="-1" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
+              <div className="base-ui-disable-scrollbar size-full" role="presentation" data-id="base-ui-_r_a_-viewport" tabIndex={-1} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}}>
                 <div role="presentation" style={{minWidth: "fit-content"}}>
                   <DataGridProvider>
                   <DataGridTableViewport>
@@ -222,8 +222,8 @@ export function Pattern() {
                           </th>
                           <th className="[&:has([role=checkbox])]:pe-0 align-middle bg-muted/40 border-e font-medium h-8 px-2 relative rtl:text-right text-center! text-foreground text-left" scope="col" data-col-id="owner" data-header-id="owner" data-header-depth="0" style={{width: "132px"}}>
                             <div className="[&_svg]:opacity-60 [&_svg]:size-3.5 font-medium gap-1.5 h-full inline-flex items-center justify-center leading-4 max-w-[112px] mx-auto text-balance text-center text-secondary-foreground/80 text-xs">
-                              <svg className="lucide lucide-lock size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LockIcon" tabler="IconLock" hugeicons="SquareLock01Icon" phosphor="LockSimpleIcon" remixicon="RiLockLine" aria-hidden="true">
-                                <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                              <svg className="lucide lucide-lock size-3.5 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LockIcon" tabler="IconLock" hugeicons="SquareLock01Icon" phosphor="LockSimpleIcon" remixicon="RiLockLine" aria-hidden="true">
+                                <rect width={18} height={11} x={3} y={11} rx={2} ry={2}></rect>
                                 <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                               </svg>
                               {"Owner"}
@@ -271,50 +271,50 @@ export function Pattern() {
                           </td>
                           <td className="align-middle bg-muted/40 border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" disabled="" checked="" role="switch" tabIndex="-1" aria-disabled="true" id="base-ui-_r_b_" aria-checked="true" size="sm" aria-label="Owner access for Read members">
+                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" disabled="" checked="" role="switch" tabIndex={-1} aria-disabled="true" id="base-ui-_r_b_" aria-checked="true" size="sm" aria-label="Owner access for Read members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-disabled="" data-checked=""></span>
                               </Switch>
-                              <input disabled id="base-ui-_r_c_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input disabled id="base-ui-_r_c_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" checked="" role="switch" tabIndex="0" id="base-ui-_r_e_" aria-checked="true" size="sm" aria-label="Admin access for Read members">
+                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" checked="" role="switch" tabIndex={0} id="base-ui-_r_e_" aria-checked="true" size="sm" aria-label="Admin access for Read members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_f_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_f_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" checked="" role="switch" tabIndex="0" id="base-ui-_r_h_" aria-checked="true" size="sm" aria-label="Member access for Read members">
+                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" checked="" role="switch" tabIndex={0} id="base-ui-_r_h_" aria-checked="true" size="sm" aria-label="Member access for Read members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_i_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_i_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" checked="" role="switch" tabIndex="0" id="base-ui-_r_k_" aria-checked="true" size="sm" aria-label="Billing access for Read members">
+                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" checked="" role="switch" tabIndex={0} id="base-ui-_r_k_" aria-checked="true" size="sm" aria-label="Billing access for Read members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_l_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_l_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" checked="" role="switch" tabIndex="0" id="base-ui-_r_n_" aria-checked="true" size="sm" aria-label="Guest access for Read members">
+                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" checked="" role="switch" tabIndex={0} id="base-ui-_r_n_" aria-checked="true" size="sm" aria-label="Guest access for Read members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_o_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_o_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" checked="" role="switch" tabIndex="0" id="base-ui-_r_q_" aria-checked="true" size="sm" aria-label="Support Agent access for Read members">
+                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" checked="" role="switch" tabIndex={0} id="base-ui-_r_q_" aria-checked="true" size="sm" aria-label="Support Agent access for Read members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_r_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_r_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                         </tr>
@@ -331,50 +331,50 @@ export function Pattern() {
                           </td>
                           <td className="align-middle bg-muted/40 border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" disabled="" checked="" role="switch" tabIndex="-1" aria-disabled="true" id="base-ui-_r_t_" aria-checked="true" size="sm" aria-label="Owner access for Invite members">
+                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" disabled="" checked="" role="switch" tabIndex={-1} aria-disabled="true" id="base-ui-_r_t_" aria-checked="true" size="sm" aria-label="Owner access for Invite members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-disabled="" data-checked=""></span>
                               </Switch>
-                              <input disabled id="base-ui-_r_u_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input disabled id="base-ui-_r_u_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" checked="" role="switch" tabIndex="0" id="base-ui-_r_10_" aria-checked="true" size="sm" aria-label="Admin access for Invite members">
+                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" checked="" role="switch" tabIndex={0} id="base-ui-_r_10_" aria-checked="true" size="sm" aria-label="Admin access for Invite members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_11_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_11_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch className="data-checked:bg-amber-400 data-checked:border-amber-400" checked="" role="switch" tabIndex="0" id="base-ui-_r_13_" aria-checked="true" size="sm" aria-label="Member access for Invite members">
+                              <Switch className="data-checked:bg-amber-400 data-checked:border-amber-400" checked="" role="switch" tabIndex={0} id="base-ui-_r_13_" aria-checked="true" size="sm" aria-label="Member access for Invite members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_14_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_14_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_16_" aria-checked="false" size="sm" aria-label="Billing access for Invite members">
+                              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_16_" aria-checked="false" size="sm" aria-label="Billing access for Invite members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_17_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_17_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_19_" aria-checked="false" size="sm" aria-label="Guest access for Invite members">
+                              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_19_" aria-checked="false" size="sm" aria-label="Guest access for Invite members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_1a_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_1a_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_1c_" aria-checked="false" size="sm" aria-label="Support Agent access for Invite members">
+                              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_1c_" aria-checked="false" size="sm" aria-label="Support Agent access for Invite members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_1d_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_1d_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                         </tr>
@@ -391,50 +391,50 @@ export function Pattern() {
                           </td>
                           <td className="align-middle bg-muted/40 border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" disabled="" checked="" role="switch" tabIndex="-1" aria-disabled="true" id="base-ui-_r_1f_" aria-checked="true" size="sm" aria-label="Owner access for Remove members">
+                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" disabled="" checked="" role="switch" tabIndex={-1} aria-disabled="true" id="base-ui-_r_1f_" aria-checked="true" size="sm" aria-label="Owner access for Remove members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-disabled="" data-checked=""></span>
                               </Switch>
-                              <input disabled id="base-ui-_r_1g_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input disabled id="base-ui-_r_1g_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" checked="" role="switch" tabIndex="0" id="base-ui-_r_1i_" aria-checked="true" size="sm" aria-label="Admin access for Remove members">
+                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" checked="" role="switch" tabIndex={0} id="base-ui-_r_1i_" aria-checked="true" size="sm" aria-label="Admin access for Remove members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_1j_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_1j_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_1l_" aria-checked="false" size="sm" aria-label="Member access for Remove members">
+                              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_1l_" aria-checked="false" size="sm" aria-label="Member access for Remove members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_1m_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_1m_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_1o_" aria-checked="false" size="sm" aria-label="Billing access for Remove members">
+                              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_1o_" aria-checked="false" size="sm" aria-label="Billing access for Remove members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_1p_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_1p_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_1r_" aria-checked="false" size="sm" aria-label="Guest access for Remove members">
+                              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_1r_" aria-checked="false" size="sm" aria-label="Guest access for Remove members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_1s_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_1s_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_1u_" aria-checked="false" size="sm" aria-label="Support Agent access for Remove members">
+                              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_1u_" aria-checked="false" size="sm" aria-label="Support Agent access for Remove members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_1v_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_1v_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                         </tr>
@@ -451,50 +451,50 @@ export function Pattern() {
                           </td>
                           <td className="align-middle bg-muted/40 border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" disabled="" checked="" role="switch" tabIndex="-1" aria-disabled="true" id="base-ui-_r_21_" aria-checked="true" size="sm" aria-label="Owner access for Export members">
+                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" disabled="" checked="" role="switch" tabIndex={-1} aria-disabled="true" id="base-ui-_r_21_" aria-checked="true" size="sm" aria-label="Owner access for Export members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-disabled="" data-checked=""></span>
                               </Switch>
-                              <input disabled id="base-ui-_r_22_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input disabled id="base-ui-_r_22_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" checked="" role="switch" tabIndex="0" id="base-ui-_r_24_" aria-checked="true" size="sm" aria-label="Admin access for Export members">
+                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" checked="" role="switch" tabIndex={0} id="base-ui-_r_24_" aria-checked="true" size="sm" aria-label="Admin access for Export members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_25_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_25_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_27_" aria-checked="false" size="sm" aria-label="Member access for Export members">
+                              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_27_" aria-checked="false" size="sm" aria-label="Member access for Export members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_28_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_28_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch className="data-checked:bg-amber-400 data-checked:border-amber-400" checked="" role="switch" tabIndex="0" id="base-ui-_r_2a_" aria-checked="true" size="sm" aria-label="Billing access for Export members">
+                              <Switch className="data-checked:bg-amber-400 data-checked:border-amber-400" checked="" role="switch" tabIndex={0} id="base-ui-_r_2a_" aria-checked="true" size="sm" aria-label="Billing access for Export members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_2b_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_2b_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_2d_" aria-checked="false" size="sm" aria-label="Guest access for Export members">
+                              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_2d_" aria-checked="false" size="sm" aria-label="Guest access for Export members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_2e_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_2e_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_2g_" aria-checked="false" size="sm" aria-label="Support Agent access for Export members">
+                              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_2g_" aria-checked="false" size="sm" aria-label="Support Agent access for Export members">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_2h_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_2h_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                         </tr>
@@ -511,50 +511,50 @@ export function Pattern() {
                           </td>
                           <td className="align-middle bg-muted/40 border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" disabled="" checked="" role="switch" tabIndex="-1" aria-disabled="true" id="base-ui-_r_2j_" aria-checked="true" size="sm" aria-label="Owner access for Transfer owner">
+                              <Switch className="data-checked:bg-emerald-500 data-checked:border-emerald-500" disabled="" checked="" role="switch" tabIndex={-1} aria-disabled="true" id="base-ui-_r_2j_" aria-checked="true" size="sm" aria-label="Owner access for Transfer owner">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-disabled="" data-checked=""></span>
                               </Switch>
-                              <input disabled id="base-ui-_r_2k_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input disabled id="base-ui-_r_2k_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch className="data-checked:bg-amber-400 data-checked:border-amber-400" checked="" role="switch" tabIndex="0" id="base-ui-_r_2m_" aria-checked="true" size="sm" aria-label="Admin access for Transfer owner">
+                              <Switch className="data-checked:bg-amber-400 data-checked:border-amber-400" checked="" role="switch" tabIndex={0} id="base-ui-_r_2m_" aria-checked="true" size="sm" aria-label="Admin access for Transfer owner">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_2n_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_2n_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_2p_" aria-checked="false" size="sm" aria-label="Member access for Transfer owner">
+                              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_2p_" aria-checked="false" size="sm" aria-label="Member access for Transfer owner">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_2q_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_2q_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_2s_" aria-checked="false" size="sm" aria-label="Billing access for Transfer owner">
+                              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_2s_" aria-checked="false" size="sm" aria-label="Billing access for Transfer owner">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_2t_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_2t_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_2v_" aria-checked="false" size="sm" aria-label="Guest access for Transfer owner">
+                              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_2v_" aria-checked="false" size="sm" aria-label="Guest access for Transfer owner">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_30_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_30_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                           <td className="align-middle border-e first:ps-(--frame-panel-header-px) last:pe-(--frame-panel-header-px) px-2 py-1.5 text-center!">
                             <div className="flex items-center justify-center">
-                              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_32_" aria-checked="false" size="sm" aria-label="Support Agent access for Transfer owner">
+                              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_32_" aria-checked="false" size="sm" aria-label="Support Agent access for Transfer owner">
                                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                               </Switch>
-                              <input id="base-ui-_r_33_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                              <input id="base-ui-_r_33_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                             </div>
                           </td>
                         </tr>
@@ -573,8 +573,8 @@ export function Pattern() {
           <footer className="flex flex-col gap-3 items-stretch px-(--frame-panel-footer-px) py-(--frame-panel-footer-py) sm:flex-row sm:items-center sm:justify-between">
             <div className="gap-2 inline-flex items-center min-w-0 text-muted-foreground text-xs">
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                <svg className="lucide lucide-circle-check size-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10"></circle>
+                <svg className="lucide lucide-circle-check size-3" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleCheckIcon" tabler="IconCircleCheck" hugeicons="CheckmarkCircle02Icon" phosphor="CheckCircleIcon" remixicon="RiCheckboxCircleLine" aria-hidden="true">
+                  <circle cx={12} cy={12} r={10}></circle>
                   <path d="m9 12 2 2 4-4"></path>
                 </svg>
                 {"Saved"}
@@ -584,10 +584,10 @@ export function Pattern() {
               </span>
             </div>
             <div className="gap-2 grid grid-cols-2 sm:flex sm:items-center">
-              <Button className="sm:w-auto w-full" type="button" disabled="" tabIndex="0" disabled>
+              <Button className="sm:w-auto w-full" type="button" disabled="" tabIndex={0} disabled>
                 {"Discard"}
               </Button>
-              <Button className="sm:w-auto w-full" type="button" disabled="" tabIndex="0" disabled>
+              <Button className="sm:w-auto w-full" type="button" disabled="" tabIndex={0} disabled>
                 {"Save changes"}
               </Button>
             </div>

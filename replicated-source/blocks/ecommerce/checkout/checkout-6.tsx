@@ -47,13 +47,13 @@ export function Pattern() {
               <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#">
                 {"Store"}
               </a>
-              <svg className="lucide lucide-chevron-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+              <svg className="lucide lucide-chevron-right size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                 <path d="m9 18 6-6-6-6"></path>
               </svg>
               <a className="hover:text-foreground hover:underline transition-colors underline-offset-4" href="#">
                 {"Bag"}
               </a>
-              <svg className="lucide lucide-chevron-right size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+              <svg className="lucide lucide-chevron-right size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
                 <path d="m9 18 6-6-6-6"></path>
               </svg>
               <span className="text-foreground">
@@ -210,8 +210,8 @@ export function Pattern() {
                       {"Delivery"}
                       <Tooltip>
                       <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none rounded-full shrink-0 size-4 text-muted-foreground/70 transition-colors" type="button" id="base-ui-_r_1_" baseUiTooltipTrigger="" aria-label="Delivery details" extracted="1">
-                        <svg className="lucide lucide-circle-question-mark size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleHelpIcon" tabler="IconHelpCircle" hugeicons="HelpCircleIcon" phosphor="QuestionIcon" remixicon="RiQuestionLine" aria-hidden="true">
-                          <circle cx="12" cy="12" r="10"></circle>
+                        <svg className="lucide lucide-circle-question-mark size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleHelpIcon" tabler="IconHelpCircle" hugeicons="HelpCircleIcon" phosphor="QuestionIcon" remixicon="RiQuestionLine" aria-hidden="true">
+                          <circle cx={12} cy={12} r={10}></circle>
                           <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                           <path d="M12 17h.01"></path>
                         </svg>
@@ -257,7 +257,7 @@ export function Pattern() {
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex flex-col gap-6">
-                <Button className="w-full" type="button" tabIndex="0">
+                <Button className="w-full" type="button" tabIndex={0}>
                   <svg className="fill-current h-5 w-auto" aria-hidden="true" viewBox="0 0 512 210.2" xmlns="http://www.w3.org/2000/svg">
                     <path d="M93.6 27.1C87.6 34.2 78 39.8 68.4 39c-1.2-9.6 3.5-19.8 9-26.1 6-7.3 16.5-12.5 25-12.9 1 10-2.9 19.8-8.8 27.1Zm8.7 13.8c-13.9-.8-25.8 7.9-32.4 7.9-6.7 0-16.8-7.5-27.8-7.3-14.3.2-27.6 8.3-34.9 21.2-15 25.8-3.9 64 10.6 85 7.1 10.4 15.6 21.8 26.8 21.4 10.6-.4 14.8-6.9 27.6-6.9 12.9 0 16.6 6.9 27.8 6.7 11.6-.2 18.9-10.4 26-20.8 8.1-11.8 11.4-23.3 11.6-23.9-.2-.2-22.4-8.7-22.6-34.3-.2-21.4 17.5-31.6 18.3-32.2-10-14.8-25.6-16.4-31-16.8ZM182.6 11.9v155.9h24.2v-53.3h33.5c30.6 0 52.1-21 52.1-51.4s-21.1-51.2-51.3-51.2h-58.5Zm24.2 20.4h27.9c21 0 33 11.2 33 30.9s-12 31-33.1 31h-27.8V32.3ZM336.6 169c15.2 0 29.3-7.7 35.7-19.9h.5v18.7h22.4V90.2c0-22.5-18-37-45.7-37-25.7 0-44.7 14.7-45.4 34.9h21.8c1.8-9.6 10.7-15.9 22.9-15.9 14.8 0 23.1 6.9 23.1 19.6v8.6l-30.2 1.8c-28.1 1.7-43.3 13.2-43.3 33.2 0 20.2 15.7 33.6 38.2 33.6Zm6.5-18.5c-12.9 0-21.1-6.2-21.1-15.7 0-9.8 7.9-15.5 23-16.4l26.9-1.7v8.8c0 14.6-12.4 25-28.8 25ZM425.1 210.2c23.6 0 34.7-9 44.4-36.3L512 54.7h-24.6l-28.5 92.1h-.5l-28.5-92.1h-25.3l41 113.5-2.2 6.9c-3.7 11.7-9.7 16.2-20.4 16.2-1.9 0-5.6-.2-7.1-.4v18.7c1.4.4 7.4.6 9.2.6Z"></path>
                   </svg>
@@ -302,17 +302,17 @@ export function Pattern() {
                             {"Delivery Method"}
                           </FieldLabel>
                           <Select>
-                          <SelectTrigger className="w-full" type="button" tabIndex="0" id="checkout-6-delivery" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                          <SelectTrigger className="w-full" type="button" tabIndex={0} id="checkout-6-delivery" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                             <SelectValue>
                               {"Courier Delivery"}
                             </SelectValue>
-                            <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                            <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                               <path d="m6 9 6 6 6-6"></path>
                               {"▼"}
                             </svg>
                           </SelectTrigger>
                           </Select>
-                          <input id="base-ui-_r_5_-hidden-input" tabIndex="-1" aria-hidden="true" value="Courier Delivery" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                          <input id="base-ui-_r_5_-hidden-input" tabIndex={-1} aria-hidden="true" value="Courier Delivery" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         </Field>
                         <Field className="gap-2" role="group" data-orientation="vertical">
                           <div className="flex gap-1.5 items-center">
@@ -321,8 +321,8 @@ export function Pattern() {
                             </FieldLabel>
                             <Tooltip>
                             <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none rounded-full shrink-0 size-4 text-muted-foreground/70 transition-colors" type="button" id="base-ui-_r_9_" baseUiTooltipTrigger="" aria-label="About postal codes">
-                              <svg className="lucide lucide-circle-question-mark size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleHelpIcon" tabler="IconHelpCircle" hugeicons="HelpCircleIcon" phosphor="QuestionIcon" remixicon="RiQuestionLine" aria-hidden="true">
-                                <circle cx="12" cy="12" r="10"></circle>
+                              <svg className="lucide lucide-circle-question-mark size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleHelpIcon" tabler="IconHelpCircle" hugeicons="HelpCircleIcon" phosphor="QuestionIcon" remixicon="RiQuestionLine" aria-hidden="true">
+                                <circle cx={12} cy={12} r={10}></circle>
                                 <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                                 <path d="M12 17h.01"></path>
                               </svg>
@@ -359,12 +359,12 @@ export function Pattern() {
                         <Item className="bg-background border border-border/60 h-5 inline-flex p-0 w-8" variant="default" size="default" role="img" aria-label="American Express">
                           <ItemMedia className="size-auto" variant="icon">
                             <svg className="max-h-3 max-w-[1.4rem] object-contain" aria-hidden="true" viewBox="0 0 96 60" xmlns="http://www.w3.org/2000/svg">
-                              <rect width="96" height="60" rx="6" fill="#016FD0"></rect>
+                              <rect width={96} height={60} rx={6} fill="#016FD0"></rect>
                               <path fill="#fff" d="M0 35h96v8H0z" opacity=".18"></path>
-                              <text x="48" y="26" fill="#fff" fontFamily="Arial, Helvetica, sans-serif" fontSize="13" fontWeight="800" letter-spacing=".7" textAnchor="middle">
+                              <text x={48} y={26} fill="#fff" fontFamily="Arial, Helvetica, sans-serif" fontSize="13" fontWeight="800" letter-spacing=".7" textAnchor="middle">
                                 {"AMERICAN"}
                               </text>
-                              <text x="48" y="42" fill="#fff" fontFamily="Arial, Helvetica, sans-serif" fontSize="15" fontWeight="900" letter-spacing=".35" textAnchor="middle">
+                              <text x={48} y={42} fill="#fff" fontFamily="Arial, Helvetica, sans-serif" fontSize="15" fontWeight="900" letter-spacing=".35" textAnchor="middle">
                                 {"EXPRESS"}
                               </text>
                             </svg>
@@ -373,8 +373,8 @@ export function Pattern() {
                         <Item className="bg-background border border-border/60 h-5 inline-flex p-0 w-8" variant="default" size="default" role="img" aria-label="Discover">
                           <ItemMedia className="size-auto" variant="icon">
                             <svg className="max-h-3 max-w-[1.4rem] object-contain" aria-hidden="true" viewBox="0 0 132 24" xmlns="http://www.w3.org/2000/svg">
-                              <circle cx="64" cy="12" r="11" fill="#F58220"></circle>
-                              <text x="66" y="16.4" fill="#231F20" fontFamily="Arial, Helvetica, sans-serif" fontSize="17" fontWeight="800" letter-spacing=".4" textAnchor="middle">
+                              <circle cx={64} cy={12} r={11} fill="#F58220"></circle>
+                              <text x={66} y={16.4} fill="#231F20" fontFamily="Arial, Helvetica, sans-serif" fontSize="17" fontWeight="800" letter-spacing=".4" textAnchor="middle">
                                 {"DISCOVER"}
                               </text>
                             </svg>
@@ -383,11 +383,11 @@ export function Pattern() {
                         <Item className="bg-background border border-border/60 h-5 inline-flex p-0 w-8" variant="default" size="default" role="img" aria-label="JCB">
                           <ItemMedia className="size-auto" variant="icon">
                             <svg className="max-h-3 max-w-[1.4rem] object-contain" aria-hidden="true" viewBox="0 0 78 60" xmlns="http://www.w3.org/2000/svg">
-                              <rect width="78" height="60" rx="7" fill="#fff"></rect>
+                              <rect width={78} height={60} rx={7} fill="#fff"></rect>
                               <path d="M8 7h20v46H8a6 6 0 0 1-6-6V13a6 6 0 0 1 6-6Z" fill="#0B4EA2"></path>
                               <path d="M29 7h20v46H29V7Z" fill="#189D4D"></path>
                               <path d="M50 7h20a6 6 0 0 1 6 6v34a6 6 0 0 1-6 6H50V7Z" fill="#D71920"></path>
-                              <text x="39" y="38" fill="#fff" fontFamily="Arial, Helvetica, sans-serif" fontSize="25" fontWeight="900" letter-spacing="1.8" textAnchor="middle">
+                              <text x={39} y={38} fill="#fff" fontFamily="Arial, Helvetica, sans-serif" fontSize="25" fontWeight="900" letter-spacing="1.8" textAnchor="middle">
                                 {"JCB"}
                               </text>
                             </svg>
@@ -414,12 +414,12 @@ export function Pattern() {
                         <Item className="bg-background border border-border/60 h-5 inline-flex p-0 w-8" variant="default" size="default" role="img" aria-label="American Express">
                           <ItemMedia className="size-auto" variant="icon">
                             <svg className="max-h-3 max-w-[1.4rem] object-contain" aria-hidden="true" viewBox="0 0 96 60" xmlns="http://www.w3.org/2000/svg">
-                              <rect width="96" height="60" rx="6" fill="#016FD0"></rect>
+                              <rect width={96} height={60} rx={6} fill="#016FD0"></rect>
                               <path fill="#fff" d="M0 35h96v8H0z" opacity=".18"></path>
-                              <text x="48" y="26" fill="#fff" fontFamily="Arial, Helvetica, sans-serif" fontSize="13" fontWeight="800" letter-spacing=".7" textAnchor="middle">
+                              <text x={48} y={26} fill="#fff" fontFamily="Arial, Helvetica, sans-serif" fontSize="13" fontWeight="800" letter-spacing=".7" textAnchor="middle">
                                 {"AMERICAN"}
                               </text>
-                              <text x="48" y="42" fill="#fff" fontFamily="Arial, Helvetica, sans-serif" fontSize="15" fontWeight="900" letter-spacing=".35" textAnchor="middle">
+                              <text x={48} y={42} fill="#fff" fontFamily="Arial, Helvetica, sans-serif" fontSize="15" fontWeight="900" letter-spacing=".35" textAnchor="middle">
                                 {"EXPRESS"}
                               </text>
                             </svg>
@@ -448,8 +448,8 @@ export function Pattern() {
                             </FieldLabel>
                             <Tooltip>
                             <TooltipTrigger className="focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring hover:text-foreground inline-flex items-center justify-center outline-none rounded-full shrink-0 size-4 text-muted-foreground/70 transition-colors" type="button" id="base-ui-_r_e_" baseUiTooltipTrigger="" aria-label="What is a CVC?">
-                              <svg className="lucide lucide-circle-question-mark size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleHelpIcon" tabler="IconHelpCircle" hugeicons="HelpCircleIcon" phosphor="QuestionIcon" remixicon="RiQuestionLine" aria-hidden="true">
-                                <circle cx="12" cy="12" r="10"></circle>
+                              <svg className="lucide lucide-circle-question-mark size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleHelpIcon" tabler="IconHelpCircle" hugeicons="HelpCircleIcon" phosphor="QuestionIcon" remixicon="RiQuestionLine" aria-hidden="true">
+                                <circle cx={12} cy={12} r={10}></circle>
                                 <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
                                 <path d="M12 17h.01"></path>
                               </svg>
@@ -460,21 +460,21 @@ export function Pattern() {
                         </Field>
                       </FieldGroup>
                       <Field className="gap-3" role="group" data-orientation="horizontal">
-                        <Checkbox checked="" role="checkbox" tabIndex="0" id="base-ui-_r_g_" aria-checked="true" aria-labelledby="checkout-6-billing-label">
+                        <Checkbox checked="" role="checkbox" tabIndex={0} id="base-ui-_r_g_" aria-checked="true" aria-labelledby="checkout-6-billing-label">
                           <span className="cn-checkbox-indicator grid place-content-center text-current transition-none" data-checked="">
-                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
+                            <svg className="lucide lucide-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine">
                               <path d="M20 6 9 17l-5-5"></path>
                             </svg>
                           </span>
                         </Checkbox>
-                        <input id="checkout-6-billing" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                        <input id="checkout-6-billing" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                         <FieldLabel className="cn-label font-normal group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="checkout-6-billing" id="checkout-6-billing-label">
                           {"Billing address matches shipping"}
                         </FieldLabel>
                       </Field>
                     </FieldGroup>
                   </FieldSet>
-                  <Button className="w-full" type="button" tabIndex="0">
+                  <Button className="w-full" type="button" tabIndex={0}>
                     {"Pay $302.08"}
                   </Button>
                 </form>

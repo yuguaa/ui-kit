@@ -45,7 +45,7 @@ export function Pattern() {
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions>
-                  <Button type="button" tabIndex="0" extracted="1">
+                  <Button type="button" tabIndex={0} extracted="1">
                     {"Connect"}
                   </Button>
                 </ItemActions>
@@ -76,7 +76,7 @@ export function Pattern() {
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions>
-                  <Button type="button" tabIndex="0">
+                  <Button type="button" tabIndex={0}>
                     {"Disconnect"}
                   </Button>
                 </ItemActions>
@@ -92,10 +92,10 @@ export function Pattern() {
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions>
-                    <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_0_" aria-checked="true" size="default" aria-label="Messages">
+                    <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_0_" aria-checked="true" size="default" aria-label="Messages">
                       <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                     </Switch>
-                    <input id="base-ui-_r_1_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                    <input id="base-ui-_r_1_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   </ItemActions>
                 </Item>
                 <Item variant="muted" size="default">
@@ -108,10 +108,10 @@ export function Pattern() {
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions>
-                    <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_3_" aria-checked="true" size="default" aria-label="Alerts">
+                    <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_3_" aria-checked="true" size="default" aria-label="Alerts">
                       <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                     </Switch>
-                    <input id="base-ui-_r_4_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                    <input id="base-ui-_r_4_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   </ItemActions>
                 </Item>
               </div>
@@ -136,7 +136,7 @@ export function Pattern() {
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions>
-                  <Button type="button" tabIndex="0">
+                  <Button type="button" tabIndex={0}>
                     {"Disconnect"}
                   </Button>
                 </ItemActions>
@@ -152,10 +152,10 @@ export function Pattern() {
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions>
-                    <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_6_" aria-checked="true" size="default" aria-label="Deploys">
+                    <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_6_" aria-checked="true" size="default" aria-label="Deploys">
                       <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                     </Switch>
-                    <input id="base-ui-_r_7_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                    <input id="base-ui-_r_7_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   </ItemActions>
                 </Item>
                 <Item variant="muted" size="default">
@@ -168,10 +168,10 @@ export function Pattern() {
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions>
-                    <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_9_" aria-checked="false" size="default" aria-label="Errors">
+                    <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_9_" aria-checked="false" size="default" aria-label="Errors">
                       <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                     </Switch>
-                    <input id="base-ui-_r_a_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                    <input id="base-ui-_r_a_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   </ItemActions>
                 </Item>
               </div>
@@ -196,7 +196,7 @@ export function Pattern() {
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions>
-                  <Button type="button" tabIndex="0">
+                  <Button type="button" tabIndex={0}>
                     {"Connect"}
                   </Button>
                 </ItemActions>

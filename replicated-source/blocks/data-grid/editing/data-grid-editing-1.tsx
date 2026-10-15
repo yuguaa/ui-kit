@@ -28,8 +28,8 @@ export function Pattern() {
               {"Structure and organize project labels."}
             </p>
           </div>
-          <Button type="button" tabIndex="0" extracted="1">
-            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+          <Button type="button" tabIndex={0} extracted="1">
+            <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
               <path d="M5 12h14"></path>
               <path d="M12 5v14"></path>
             </svg>
@@ -38,25 +38,25 @@ export function Pattern() {
         </div>
         <div className="flex flex-col gap-2">
           <Sortable className="flex flex-col gap-2" dragging="false">
-            <SortableItem className="group/row" value="customer-impact" dragging="false" tabIndex="-1" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+            <SortableItem className="group/row" value="customer-impact" dragging="false" tabIndex={-1} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
               <Item className="bg-background group-data-[dragging=false]/row:hover:bg-muted/30 text-foreground" variant="outline" size="sm">
                 <ItemMedia variant="default">
-                  <SortableItemHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-transparent hover:opacity-100 inline-flex items-center justify-center opacity-70 outline-none select-none shrink-0 size-7 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Reorder Customer impact" dragging="false">
-                    <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                      <circle cx="9" cy="12" r="1"></circle>
-                      <circle cx="9" cy="5" r="1"></circle>
-                      <circle cx="9" cy="19" r="1"></circle>
-                      <circle cx="15" cy="12" r="1"></circle>
-                      <circle cx="15" cy="5" r="1"></circle>
-                      <circle cx="15" cy="19" r="1"></circle>
+                  <SortableItemHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-transparent hover:opacity-100 inline-flex items-center justify-center opacity-70 outline-none select-none shrink-0 size-7 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Reorder Customer impact" dragging="false">
+                    <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                      <circle cx={9} cy={12} r={1}></circle>
+                      <circle cx={9} cy={5} r={1}></circle>
+                      <circle cx={9} cy={19} r={1}></circle>
+                      <circle cx={15} cy={12} r={1}></circle>
+                      <circle cx={15} cy={5} r={1}></circle>
+                      <circle cx={15} cy={19} r={1}></circle>
                     </svg>
                   </SortableItemHandle>
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="gap-2 w-full">
-                    <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true" style={{color: "rgb(124, 58, 237)", fill: "rgb(124, 58, 237)"}}>
+                    <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true" style={{color: "rgb(124, 58, 237)", fill: "rgb(124, 58, 237)"}}>
                       <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                      <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                      <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                     </svg>
                     <span className="truncate">
                       {"Customer impact"}
@@ -64,14 +64,14 @@ export function Pattern() {
                   </ItemTitle>
                 </ItemContent>
                 <ItemActions className="gap-1">
-                  <Button type="button" tabIndex="0" aria-label="Edit Customer impact">
-                    <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Edit Customer impact">
+                    <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
                       <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                       <path d="m15 5 4 4"></path>
                     </svg>
                   </Button>
-                  <Button type="button" tabIndex="0" aria-label="Delete Customer impact">
-                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Delete Customer impact">
+                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                       <path d="M10 11v6"></path>
                       <path d="M14 11v6"></path>
                       <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -82,25 +82,25 @@ export function Pattern() {
                 </ItemActions>
               </Item>
             </SortableItem>
-            <SortableItem className="group/row" value="engineering" dragging="false" tabIndex="-1" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+            <SortableItem className="group/row" value="engineering" dragging="false" tabIndex={-1} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
               <Item className="bg-background group-data-[dragging=false]/row:hover:bg-muted/30 text-foreground" variant="outline" size="sm">
                 <ItemMedia variant="default">
-                  <SortableItemHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-transparent hover:opacity-100 inline-flex items-center justify-center opacity-70 outline-none select-none shrink-0 size-7 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Reorder Engineering" dragging="false">
-                    <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                      <circle cx="9" cy="12" r="1"></circle>
-                      <circle cx="9" cy="5" r="1"></circle>
-                      <circle cx="9" cy="19" r="1"></circle>
-                      <circle cx="15" cy="12" r="1"></circle>
-                      <circle cx="15" cy="5" r="1"></circle>
-                      <circle cx="15" cy="19" r="1"></circle>
+                  <SortableItemHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-transparent hover:opacity-100 inline-flex items-center justify-center opacity-70 outline-none select-none shrink-0 size-7 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Reorder Engineering" dragging="false">
+                    <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                      <circle cx={9} cy={12} r={1}></circle>
+                      <circle cx={9} cy={5} r={1}></circle>
+                      <circle cx={9} cy={19} r={1}></circle>
+                      <circle cx={15} cy={12} r={1}></circle>
+                      <circle cx={15} cy={5} r={1}></circle>
+                      <circle cx={15} cy={19} r={1}></circle>
                     </svg>
                   </SortableItemHandle>
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="gap-2 w-full">
-                    <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true" style={{color: "rgb(249, 115, 22)", fill: "rgb(249, 115, 22)"}}>
+                    <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true" style={{color: "rgb(249, 115, 22)", fill: "rgb(249, 115, 22)"}}>
                       <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                      <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                      <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                     </svg>
                     <span className="truncate">
                       {"Engineering"}
@@ -108,14 +108,14 @@ export function Pattern() {
                   </ItemTitle>
                 </ItemContent>
                 <ItemActions className="gap-1">
-                  <Button type="button" tabIndex="0" aria-label="Edit Engineering">
-                    <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Edit Engineering">
+                    <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
                       <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                       <path d="m15 5 4 4"></path>
                     </svg>
                   </Button>
-                  <Button type="button" tabIndex="0" aria-label="Delete Engineering">
-                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Delete Engineering">
+                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                       <path d="M10 11v6"></path>
                       <path d="M14 11v6"></path>
                       <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -126,25 +126,25 @@ export function Pattern() {
                 </ItemActions>
               </Item>
             </SortableItem>
-            <SortableItem className="group/row" value="release-risk" dragging="false" tabIndex="-1" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+            <SortableItem className="group/row" value="release-risk" dragging="false" tabIndex={-1} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
               <Item className="bg-background group-data-[dragging=false]/row:hover:bg-muted/30 text-foreground" variant="outline" size="sm">
                 <ItemMedia variant="default">
-                  <SortableItemHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-transparent hover:opacity-100 inline-flex items-center justify-center opacity-70 outline-none select-none shrink-0 size-7 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Reorder Release risk" dragging="false">
-                    <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                      <circle cx="9" cy="12" r="1"></circle>
-                      <circle cx="9" cy="5" r="1"></circle>
-                      <circle cx="9" cy="19" r="1"></circle>
-                      <circle cx="15" cy="12" r="1"></circle>
-                      <circle cx="15" cy="5" r="1"></circle>
-                      <circle cx="15" cy="19" r="1"></circle>
+                  <SortableItemHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-transparent hover:opacity-100 inline-flex items-center justify-center opacity-70 outline-none select-none shrink-0 size-7 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Reorder Release risk" dragging="false">
+                    <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                      <circle cx={9} cy={12} r={1}></circle>
+                      <circle cx={9} cy={5} r={1}></circle>
+                      <circle cx={9} cy={19} r={1}></circle>
+                      <circle cx={15} cy={12} r={1}></circle>
+                      <circle cx={15} cy={5} r={1}></circle>
+                      <circle cx={15} cy={19} r={1}></circle>
                     </svg>
                   </SortableItemHandle>
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="gap-2 w-full">
-                    <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true" style={{color: "rgb(225, 29, 72)", fill: "rgb(225, 29, 72)"}}>
+                    <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true" style={{color: "rgb(225, 29, 72)", fill: "rgb(225, 29, 72)"}}>
                       <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                      <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                      <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                     </svg>
                     <span className="truncate">
                       {"Release risk"}
@@ -152,14 +152,14 @@ export function Pattern() {
                   </ItemTitle>
                 </ItemContent>
                 <ItemActions className="gap-1">
-                  <Button type="button" tabIndex="0" aria-label="Edit Release risk">
-                    <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Edit Release risk">
+                    <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
                       <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                       <path d="m15 5 4 4"></path>
                     </svg>
                   </Button>
-                  <Button type="button" tabIndex="0" aria-label="Delete Release risk">
-                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Delete Release risk">
+                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                       <path d="M10 11v6"></path>
                       <path d="M14 11v6"></path>
                       <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -170,25 +170,25 @@ export function Pattern() {
                 </ItemActions>
               </Item>
             </SortableItem>
-            <SortableItem className="group/row" value="growth" dragging="false" tabIndex="-1" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+            <SortableItem className="group/row" value="growth" dragging="false" tabIndex={-1} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
               <Item className="bg-background group-data-[dragging=false]/row:hover:bg-muted/30 text-foreground" variant="outline" size="sm">
                 <ItemMedia variant="default">
-                  <SortableItemHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-transparent hover:opacity-100 inline-flex items-center justify-center opacity-70 outline-none select-none shrink-0 size-7 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Reorder Growth" dragging="false">
-                    <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                      <circle cx="9" cy="12" r="1"></circle>
-                      <circle cx="9" cy="5" r="1"></circle>
-                      <circle cx="9" cy="19" r="1"></circle>
-                      <circle cx="15" cy="12" r="1"></circle>
-                      <circle cx="15" cy="5" r="1"></circle>
-                      <circle cx="15" cy="19" r="1"></circle>
+                  <SortableItemHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-transparent hover:opacity-100 inline-flex items-center justify-center opacity-70 outline-none select-none shrink-0 size-7 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Reorder Growth" dragging="false">
+                    <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                      <circle cx={9} cy={12} r={1}></circle>
+                      <circle cx={9} cy={5} r={1}></circle>
+                      <circle cx={9} cy={19} r={1}></circle>
+                      <circle cx={15} cy={12} r={1}></circle>
+                      <circle cx={15} cy={5} r={1}></circle>
+                      <circle cx={15} cy={19} r={1}></circle>
                     </svg>
                   </SortableItemHandle>
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="gap-2 w-full">
-                    <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true" style={{color: "rgb(20, 184, 166)", fill: "rgb(20, 184, 166)"}}>
+                    <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true" style={{color: "rgb(20, 184, 166)", fill: "rgb(20, 184, 166)"}}>
                       <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                      <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                      <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                     </svg>
                     <span className="truncate">
                       {"Growth"}
@@ -196,14 +196,14 @@ export function Pattern() {
                   </ItemTitle>
                 </ItemContent>
                 <ItemActions className="gap-1">
-                  <Button type="button" tabIndex="0" aria-label="Edit Growth">
-                    <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Edit Growth">
+                    <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
                       <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                       <path d="m15 5 4 4"></path>
                     </svg>
                   </Button>
-                  <Button type="button" tabIndex="0" aria-label="Delete Growth">
-                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Delete Growth">
+                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                       <path d="M10 11v6"></path>
                       <path d="M14 11v6"></path>
                       <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -214,25 +214,25 @@ export function Pattern() {
                 </ItemActions>
               </Item>
             </SortableItem>
-            <SortableItem className="group/row" value="documentation" dragging="false" tabIndex="-1" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+            <SortableItem className="group/row" value="documentation" dragging="false" tabIndex={-1} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
               <Item className="bg-background group-data-[dragging=false]/row:hover:bg-muted/30 text-foreground" variant="outline" size="sm">
                 <ItemMedia variant="default">
-                  <SortableItemHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-transparent hover:opacity-100 inline-flex items-center justify-center opacity-70 outline-none select-none shrink-0 size-7 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Reorder Documentation" dragging="false">
-                    <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                      <circle cx="9" cy="12" r="1"></circle>
-                      <circle cx="9" cy="5" r="1"></circle>
-                      <circle cx="9" cy="19" r="1"></circle>
-                      <circle cx="15" cy="12" r="1"></circle>
-                      <circle cx="15" cy="5" r="1"></circle>
-                      <circle cx="15" cy="19" r="1"></circle>
+                  <SortableItemHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-transparent hover:opacity-100 inline-flex items-center justify-center opacity-70 outline-none select-none shrink-0 size-7 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Reorder Documentation" dragging="false">
+                    <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                      <circle cx={9} cy={12} r={1}></circle>
+                      <circle cx={9} cy={5} r={1}></circle>
+                      <circle cx={9} cy={19} r={1}></circle>
+                      <circle cx={15} cy={12} r={1}></circle>
+                      <circle cx={15} cy={5} r={1}></circle>
+                      <circle cx={15} cy={19} r={1}></circle>
                     </svg>
                   </SortableItemHandle>
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="gap-2 w-full">
-                    <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true" style={{color: "rgb(14, 165, 233)", fill: "rgb(14, 165, 233)"}}>
+                    <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true" style={{color: "rgb(14, 165, 233)", fill: "rgb(14, 165, 233)"}}>
                       <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                      <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                      <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                     </svg>
                     <span className="truncate">
                       {"Documentation"}
@@ -240,14 +240,14 @@ export function Pattern() {
                   </ItemTitle>
                 </ItemContent>
                 <ItemActions className="gap-1">
-                  <Button type="button" tabIndex="0" aria-label="Edit Documentation">
-                    <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Edit Documentation">
+                    <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
                       <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                       <path d="m15 5 4 4"></path>
                     </svg>
                   </Button>
-                  <Button type="button" tabIndex="0" aria-label="Delete Documentation">
-                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Delete Documentation">
+                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                       <path d="M10 11v6"></path>
                       <path d="M14 11v6"></path>
                       <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -258,25 +258,25 @@ export function Pattern() {
                 </ItemActions>
               </Item>
             </SortableItem>
-            <SortableItem className="group/row" value="support" dragging="false" tabIndex="-1" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+            <SortableItem className="group/row" value="support" dragging="false" tabIndex={-1} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
               <Item className="bg-background group-data-[dragging=false]/row:hover:bg-muted/30 text-foreground" variant="outline" size="sm">
                 <ItemMedia variant="default">
-                  <SortableItemHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-transparent hover:opacity-100 inline-flex items-center justify-center opacity-70 outline-none select-none shrink-0 size-7 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Reorder Support" dragging="false">
-                    <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                      <circle cx="9" cy="12" r="1"></circle>
-                      <circle cx="9" cy="5" r="1"></circle>
-                      <circle cx="9" cy="19" r="1"></circle>
-                      <circle cx="15" cy="12" r="1"></circle>
-                      <circle cx="15" cy="5" r="1"></circle>
-                      <circle cx="15" cy="19" r="1"></circle>
+                  <SortableItemHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-transparent hover:opacity-100 inline-flex items-center justify-center opacity-70 outline-none select-none shrink-0 size-7 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Reorder Support" dragging="false">
+                    <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                      <circle cx={9} cy={12} r={1}></circle>
+                      <circle cx={9} cy={5} r={1}></circle>
+                      <circle cx={9} cy={19} r={1}></circle>
+                      <circle cx={15} cy={12} r={1}></circle>
+                      <circle cx={15} cy={5} r={1}></circle>
+                      <circle cx={15} cy={19} r={1}></circle>
                     </svg>
                   </SortableItemHandle>
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="gap-2 w-full">
-                    <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true" style={{color: "rgb(34, 197, 94)", fill: "rgb(34, 197, 94)"}}>
+                    <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true" style={{color: "rgb(34, 197, 94)", fill: "rgb(34, 197, 94)"}}>
                       <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                      <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                      <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                     </svg>
                     <span className="truncate">
                       {"Support"}
@@ -284,14 +284,14 @@ export function Pattern() {
                   </ItemTitle>
                 </ItemContent>
                 <ItemActions className="gap-1">
-                  <Button type="button" tabIndex="0" aria-label="Edit Support">
-                    <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Edit Support">
+                    <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
                       <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                       <path d="m15 5 4 4"></path>
                     </svg>
                   </Button>
-                  <Button type="button" tabIndex="0" aria-label="Delete Support">
-                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Delete Support">
+                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                       <path d="M10 11v6"></path>
                       <path d="M14 11v6"></path>
                       <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -302,25 +302,25 @@ export function Pattern() {
                 </ItemActions>
               </Item>
             </SortableItem>
-            <SortableItem className="group/row" value="ux-polish" dragging="false" tabIndex="-1" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+            <SortableItem className="group/row" value="ux-polish" dragging="false" tabIndex={-1} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
               <Item className="bg-background group-data-[dragging=false]/row:hover:bg-muted/30 text-foreground" variant="outline" size="sm">
                 <ItemMedia variant="default">
-                  <SortableItemHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-transparent hover:opacity-100 inline-flex items-center justify-center opacity-70 outline-none select-none shrink-0 size-7 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Reorder UX polish" dragging="false">
-                    <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                      <circle cx="9" cy="12" r="1"></circle>
-                      <circle cx="9" cy="5" r="1"></circle>
-                      <circle cx="9" cy="19" r="1"></circle>
-                      <circle cx="15" cy="12" r="1"></circle>
-                      <circle cx="15" cy="5" r="1"></circle>
-                      <circle cx="15" cy="19" r="1"></circle>
+                  <SortableItemHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-transparent hover:opacity-100 inline-flex items-center justify-center opacity-70 outline-none select-none shrink-0 size-7 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Reorder UX polish" dragging="false">
+                    <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                      <circle cx={9} cy={12} r={1}></circle>
+                      <circle cx={9} cy={5} r={1}></circle>
+                      <circle cx={9} cy={19} r={1}></circle>
+                      <circle cx={15} cy={12} r={1}></circle>
+                      <circle cx={15} cy={5} r={1}></circle>
+                      <circle cx={15} cy={19} r={1}></circle>
                     </svg>
                   </SortableItemHandle>
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="gap-2 w-full">
-                    <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true" style={{color: "rgb(236, 72, 153)", fill: "rgb(236, 72, 153)"}}>
+                    <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true" style={{color: "rgb(236, 72, 153)", fill: "rgb(236, 72, 153)"}}>
                       <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                      <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                      <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                     </svg>
                     <span className="truncate">
                       {"UX polish"}
@@ -328,14 +328,14 @@ export function Pattern() {
                   </ItemTitle>
                 </ItemContent>
                 <ItemActions className="gap-1">
-                  <Button type="button" tabIndex="0" aria-label="Edit UX polish">
-                    <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Edit UX polish">
+                    <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
                       <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                       <path d="m15 5 4 4"></path>
                     </svg>
                   </Button>
-                  <Button type="button" tabIndex="0" aria-label="Delete UX polish">
-                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Delete UX polish">
+                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                       <path d="M10 11v6"></path>
                       <path d="M14 11v6"></path>
                       <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -346,25 +346,25 @@ export function Pattern() {
                 </ItemActions>
               </Item>
             </SortableItem>
-            <SortableItem className="group/row" value="operations" dragging="false" tabIndex="-1" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+            <SortableItem className="group/row" value="operations" dragging="false" tabIndex={-1} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
               <Item className="bg-background group-data-[dragging=false]/row:hover:bg-muted/30 text-foreground" variant="outline" size="sm">
                 <ItemMedia variant="default">
-                  <SortableItemHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-transparent hover:opacity-100 inline-flex items-center justify-center opacity-70 outline-none select-none shrink-0 size-7 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Reorder Operations" dragging="false">
-                    <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                      <circle cx="9" cy="12" r="1"></circle>
-                      <circle cx="9" cy="5" r="1"></circle>
-                      <circle cx="9" cy="19" r="1"></circle>
-                      <circle cx="15" cy="12" r="1"></circle>
-                      <circle cx="15" cy="5" r="1"></circle>
-                      <circle cx="15" cy="19" r="1"></circle>
+                  <SortableItemHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:bg-transparent hover:opacity-100 inline-flex items-center justify-center opacity-70 outline-none select-none shrink-0 size-7 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Reorder Operations" dragging="false">
+                    <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                      <circle cx={9} cy={12} r={1}></circle>
+                      <circle cx={9} cy={5} r={1}></circle>
+                      <circle cx={9} cy={19} r={1}></circle>
+                      <circle cx={15} cy={12} r={1}></circle>
+                      <circle cx={15} cy={5} r={1}></circle>
+                      <circle cx={15} cy={19} r={1}></circle>
                     </svg>
                   </SortableItemHandle>
                 </ItemMedia>
                 <ItemContent className="min-w-0">
                   <ItemTitle className="gap-2 w-full">
-                    <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true" style={{color: "rgb(79, 70, 229)", fill: "rgb(79, 70, 229)"}}>
+                    <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true" style={{color: "rgb(79, 70, 229)", fill: "rgb(79, 70, 229)"}}>
                       <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                      <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                      <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                     </svg>
                     <span className="truncate">
                       {"Operations"}
@@ -372,14 +372,14 @@ export function Pattern() {
                   </ItemTitle>
                 </ItemContent>
                 <ItemActions className="gap-1">
-                  <Button type="button" tabIndex="0" aria-label="Edit Operations">
-                    <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Edit Operations">
+                    <svg className="lucide lucide-pencil" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PencilIcon" tabler="IconPencil" hugeicons="PenIcon" phosphor="PencilIcon" remixicon="RiPencilLine" aria-hidden="true">
                       <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path>
                       <path d="m15 5 4 4"></path>
                     </svg>
                   </Button>
-                  <Button type="button" tabIndex="0" aria-label="Delete Operations">
-                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0} aria-label="Delete Operations">
+                    <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                       <path d="M10 11v6"></path>
                       <path d="M14 11v6"></path>
                       <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>

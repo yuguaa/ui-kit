@@ -26,7 +26,7 @@ export function Pattern() {
               {"Control the workspace capabilities this role can manage."}
             </div>
           </div>
-          <Button type="button" tabIndex="0" aria-label="Updates (new)" extracted="1">
+          <Button type="button" tabIndex={0} aria-label="Updates (new)" extracted="1">
             {"Permission"}
             <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4 leading-none min-w-4 outline-none px-1 py-0.25 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.6rem] text-white transition-shadow" aria-hidden="true">
               {"New"}
@@ -44,10 +44,10 @@ export function Pattern() {
               </ItemDescription>
             </ItemContent>
             <ItemActions className="ml-auto self-center">
-              <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_0_" aria-checked="true" size="default" aria-label="Workspace Settings">
+              <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_0_" aria-checked="true" size="default" aria-label="Workspace Settings">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
               </Switch>
-              <input id="workspace-settings" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="workspace-settings" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </ItemActions>
           </Item>
           <Item className="gap-3 items-start" variant="outline" size="default">
@@ -60,10 +60,10 @@ export function Pattern() {
               </ItemDescription>
             </ItemContent>
             <ItemActions className="ml-auto self-center">
-              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_3_" aria-checked="false" size="default" aria-label="Billing Management">
+              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_3_" aria-checked="false" size="default" aria-label="Billing Management">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
               </Switch>
-              <input id="billing-management" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="billing-management" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </ItemActions>
           </Item>
           <Item className="gap-3 items-start" variant="outline" size="default">
@@ -76,10 +76,10 @@ export function Pattern() {
               </ItemDescription>
             </ItemContent>
             <ItemActions className="ml-auto self-center">
-              <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_6_" aria-checked="true" size="default" aria-label="Integration Setup">
+              <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_6_" aria-checked="true" size="default" aria-label="Integration Setup">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
               </Switch>
-              <input id="integration-setup" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="integration-setup" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </ItemActions>
           </Item>
           <Item className="gap-3 items-start" variant="outline" size="default">
@@ -92,10 +92,10 @@ export function Pattern() {
               </ItemDescription>
             </ItemContent>
             <ItemActions className="ml-auto self-center">
-              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_9_" aria-checked="false" size="default" aria-label="Permissions Control">
+              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_9_" aria-checked="false" size="default" aria-label="Permissions Control">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
               </Switch>
-              <input id="permissions-control" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="permissions-control" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </ItemActions>
           </Item>
           <Item className="gap-3 items-start" variant="outline" size="default">
@@ -108,10 +108,10 @@ export function Pattern() {
               </ItemDescription>
             </ItemContent>
             <ItemActions className="ml-auto self-center">
-              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_c_" aria-checked="false" size="default" aria-label="Map Creation">
+              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_c_" aria-checked="false" size="default" aria-label="Map Creation">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
               </Switch>
-              <input id="map-creation" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="map-creation" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </ItemActions>
           </Item>
           <Item className="gap-3 items-start" variant="outline" size="default">
@@ -124,10 +124,10 @@ export function Pattern() {
               </ItemDescription>
             </ItemContent>
             <ItemActions className="ml-auto self-center">
-              <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_f_" aria-checked="true" size="default" aria-label="Data Export">
+              <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_f_" aria-checked="true" size="default" aria-label="Data Export">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
               </Switch>
-              <input id="data-export" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="data-export" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </ItemActions>
           </Item>
           <Item className="gap-3 items-start" variant="outline" size="default">
@@ -140,10 +140,10 @@ export function Pattern() {
               </ItemDescription>
             </ItemContent>
             <ItemActions className="ml-auto self-center">
-              <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_i_" aria-checked="true" size="default" aria-label="User Roles">
+              <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_i_" aria-checked="true" size="default" aria-label="User Roles">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
               </Switch>
-              <input id="user-roles" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="user-roles" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </ItemActions>
           </Item>
           <Item className="gap-3 items-start" variant="outline" size="default">
@@ -156,10 +156,10 @@ export function Pattern() {
               </ItemDescription>
             </ItemContent>
             <ItemActions className="ml-auto self-center">
-              <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_l_" aria-checked="true" size="default" aria-label="Security Settings">
+              <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_l_" aria-checked="true" size="default" aria-label="Security Settings">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
               </Switch>
-              <input id="security-settings" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="security-settings" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </ItemActions>
           </Item>
           <Item className="gap-3 items-start" variant="outline" size="default">
@@ -172,10 +172,10 @@ export function Pattern() {
               </ItemDescription>
             </ItemContent>
             <ItemActions className="ml-auto self-center">
-              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_o_" aria-checked="false" size="default" aria-label="Insights Access">
+              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_o_" aria-checked="false" size="default" aria-label="Insights Access">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
               </Switch>
-              <input id="insights-access" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="insights-access" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </ItemActions>
           </Item>
           <Item className="gap-3 items-start" variant="outline" size="default">
@@ -188,10 +188,10 @@ export function Pattern() {
               </ItemDescription>
             </ItemContent>
             <ItemActions className="ml-auto self-center">
-              <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_r_" aria-checked="false" size="default" aria-label="Merchant List">
+              <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_r_" aria-checked="false" size="default" aria-label="Merchant List">
                 <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
               </Switch>
-              <input id="merchant-list" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+              <input id="merchant-list" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
             </ItemActions>
           </Item>
         </FramePanel>

@@ -23,8 +23,8 @@ export function Pattern() {
               <div className="gap-2 inline-flex items-center">
                 <Item className="bg-primary p-2 size-8 text-primary-foreground" variant="default" size="default" aria-hidden="true">
                   <ItemMedia className="size-auto" variant="icon">
-                    <svg className="size-[1.05rem]" width="50" height="50" viewBox="25.668 25.1352 49.6644 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="70.634" cy="29.8334" r="4.69799" fill="currentColor"></circle>
+                    <svg className="size-[1.05rem]" width={50} height={50} viewBox="25.668 25.1352 49.6644 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx={70.634} cy={29.8334} r={4.69799} fill="currentColor"></circle>
                       <path fillRule="evenodd" clipRule="evenodd" d="M25.668 57.0144V29.8332C25.668 27.2386 27.7713 25.1352 30.366 25.1352C32.9606 25.1352 35.0639 27.2386 35.0639 29.8332V57.0144C35.0639 61.833 38.9702 65.7392 43.7888 65.7392H57.2116C62.0302 65.7392 65.9364 61.833 65.9364 57.0144V43.7258C65.9364 41.1312 68.0398 39.0278 70.6344 39.0278C73.229 39.0278 75.3324 41.1312 75.3324 43.7258V57.0144C75.3324 67.0222 67.2194 75.1352 57.2116 75.1352H43.7888C33.7809 75.1352 25.668 67.0222 25.668 57.0144Z" fill="currentColor"></path>
                     </svg>
                   </ItemMedia>
@@ -56,24 +56,24 @@ export function Pattern() {
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="auth-6-password">
                           {"Password"}
                         </FieldLabel>
-                        <Button className="cursor-pointer font-normal h-auto p-0 text-muted-foreground text-xs" type="button" tabIndex="0">
+                        <Button className="cursor-pointer font-normal h-auto p-0 text-muted-foreground text-xs" type="button" tabIndex={0}>
                           {"Forgot password?"}
                         </Button>
                       </div>
                       <InputGroup className="bg-background" role="group">
                         <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="auth-6-password" autoComplete="current-password" placeholder="Enter your password" type="password" />
                         <InputGroupAddon role="group" data-align="inline-end">
-                          <Button className="cn-input-group-button cn-input-group-button-size-icon-xs flex hover:text-foreground shadow-none text-muted-foreground" type="button" tabIndex="0" size="icon-xs" aria-label="Show password" aria-pressed="false">
-                            <svg className="lucide lucide-eye size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EyeIcon" tabler="IconEye" hugeicons="ViewIcon" phosphor="EyeIcon" remixicon="RiEyeLine" aria-hidden="true">
+                          <Button className="cn-input-group-button cn-input-group-button-size-icon-xs flex hover:text-foreground shadow-none text-muted-foreground" type="button" tabIndex={0} size="icon-xs" aria-label="Show password" aria-pressed="false">
+                            <svg className="lucide lucide-eye size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="EyeIcon" tabler="IconEye" hugeicons="ViewIcon" phosphor="EyeIcon" remixicon="RiEyeLine" aria-hidden="true">
                               <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path>
-                              <circle cx="12" cy="12" r="3"></circle>
+                              <circle cx={12} cy={12} r={3}></circle>
                             </svg>
                           </Button>
                         </InputGroupAddon>
                       </InputGroup>
                     </Field>
                   </FieldGroup>
-                  <Button className="w-full" type="submit" tabIndex="0">
+                  <Button className="w-full" type="submit" tabIndex={0}>
                     {"Sign in"}
                   </Button>
                 </form>
@@ -85,12 +85,12 @@ export function Pattern() {
                   <Separator className="flex-1" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                 </div>
                 <div className="gap-3 grid sm:grid-cols-3">
-                  <Button className="w-full" type="button" tabIndex="0">
+                  <Button className="w-full" type="button" tabIndex={0}>
                     <svg className="shrink-0 size-4" aria-hidden="true" xmlns:xlink="http://www.w3.org/1999/xlink" xmlSpace="preserve" overflow="hidden" viewBox="0 0 268.152 273.883">
                       <defs>
                         <lineargradient id="a">
-                          <stop offset="0" stopColor="#0fbc5c"></stop>
-                          <stop offset="1" stopColor="#0cba65"></stop>
+                          <stop offset={0} stopColor="#0fbc5c"></stop>
+                          <stop offset={1} stopColor="#0cba65"></stop>
                         </lineargradient>
                         <lineargradient id="g">
                           <stop offset=".231" stopColor="#0fbc5f"></stop>
@@ -102,7 +102,7 @@ export function Pattern() {
                           <stop offset=".771" stopColor="#38c02b"></stop>
                           <stop offset=".861" stopColor="#52c218"></stop>
                           <stop offset=".915" stopColor="#67c30f"></stop>
-                          <stop offset="1" stopColor="#86c504"></stop>
+                          <stop offset={1} stopColor="#86c504"></stop>
                         </lineargradient>
                         <lineargradient id="h">
                           <stop offset=".142" stopColor="#1abd4d"></stop>
@@ -121,7 +121,7 @@ export function Pattern() {
                           <stop offset=".604" stopColor="#ff692c"></stop>
                           <stop offset=".727" stopColor="#ff7825"></stop>
                           <stop offset=".885" stopColor="#ff8d1b"></stop>
-                          <stop offset="1" stopColor="#ff9f13"></stop>
+                          <stop offset={1} stopColor="#ff9f13"></stop>
                         </lineargradient>
                         <lineargradient id="b">
                           <stop offset=".231" stopColor="#ff4541"></stop>
@@ -131,11 +131,11 @@ export function Pattern() {
                           <stop offset=".699" stopColor="#ff5138"></stop>
                           <stop offset=".771" stopColor="#ff5b33"></stop>
                           <stop offset=".861" stopColor="#ff6c29"></stop>
-                          <stop offset="1" stopColor="#ff8c18"></stop>
+                          <stop offset={1} stopColor="#ff8c18"></stop>
                         </lineargradient>
                         <lineargradient id="d">
                           <stop offset=".408" stopColor="#fb4e5a"></stop>
-                          <stop offset="1" stopColor="#ff4540"></stop>
+                          <stop offset={1} stopColor="#ff4540"></stop>
                         </lineargradient>
                         <lineargradient id="c">
                           <stop offset=".132" stopColor="#0cba65"></stop>
@@ -156,20 +156,20 @@ export function Pattern() {
                           <stop offset=".771" stopColor="#ffcd0a"></stop>
                           <stop offset=".861" stopColor="#fecf0a"></stop>
                           <stop offset=".915" stopColor="#fecf08"></stop>
-                          <stop offset="1" stopColor="#fdcd01"></stop>
+                          <stop offset={1} stopColor="#fdcd01"></stop>
                         </lineargradient>
-                        <lineargradient xlinkHref="#a" id="s" x1="219.7" x2="254.467" y1="329.535" y2="329.535" gradientUnits="userSpaceOnUse"></lineargradient>
-                        <radialgradient xlinkHref="#b" id="m" cx="109.627" cy="135.862" r="71.46" fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 1.043 1.45573 2.55542 290.525 -400.634)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <radialgradient xlinkHref="#c" id="n" cx="45.259" cy="279.274" r="71.46" fx="45.259" fy="279.274" gradientTransform="matrix(-3.5126 -4.45809 -1.69255 1.26062 870.8 191.554)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <radialgradient xlinkHref="#d" id="l" cx="304.017" cy="118.009" r="47.854" fx="304.017" fy="118.009" gradientTransform="matrix(2.06435 0 0 2.59204 -297.679 -151.747)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <radialgradient xlinkHref="#e" id="o" cx="181.001" cy="177.201" r="71.46" fx="181.001" fy="177.201" gradientTransform="matrix(-.24858 2.08314 2.96249 .33417 -255.146 -331.164)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <radialgradient xlinkHref="#f" id="p" cx="207.673" cy="108.097" r="41.102" fx="207.673" fy="108.097" gradientTransform="matrix(-1.2492 1.34326 -3.89684 -3.4257 880.501 194.905)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <radialgradient xlinkHref="#g" id="r" cx="109.627" cy="135.862" r="71.46" fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 -1.043 1.45573 -2.55542 290.525 838.683)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <radialgradient xlinkHref="#h" id="j" cx="154.87" cy="145.969" r="71.46" fx="154.87" fy="145.969" gradientTransform="matrix(-.0814 -1.93722 2.92674 -.11625 -215.135 632.86)" gradientUnits="userSpaceOnUse"></radialgradient>
-                        <filter id="q" width="1.097" height="1.116" x="-.048" y="-.058" color-interpolation-filters="sRGB">
+                        <lineargradient xlinkHref="#a" id="s" x1={219.7} x2={254.467} y1={329.535} y2={329.535} gradientUnits="userSpaceOnUse"></lineargradient>
+                        <radialgradient xlinkHref="#b" id="m" cx={109.627} cy={135.862} r={71.46} fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 1.043 1.45573 2.55542 290.525 -400.634)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <radialgradient xlinkHref="#c" id="n" cx={45.259} cy={279.274} r={71.46} fx="45.259" fy="279.274" gradientTransform="matrix(-3.5126 -4.45809 -1.69255 1.26062 870.8 191.554)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <radialgradient xlinkHref="#d" id="l" cx={304.017} cy={118.009} r={47.854} fx="304.017" fy="118.009" gradientTransform="matrix(2.06435 0 0 2.59204 -297.679 -151.747)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <radialgradient xlinkHref="#e" id="o" cx={181.001} cy={177.201} r={71.46} fx="181.001" fy="177.201" gradientTransform="matrix(-.24858 2.08314 2.96249 .33417 -255.146 -331.164)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <radialgradient xlinkHref="#f" id="p" cx={207.673} cy={108.097} r={41.102} fx="207.673" fy="108.097" gradientTransform="matrix(-1.2492 1.34326 -3.89684 -3.4257 880.501 194.905)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <radialgradient xlinkHref="#g" id="r" cx={109.627} cy={135.862} r={71.46} fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 -1.043 1.45573 -2.55542 290.525 838.683)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <radialgradient xlinkHref="#h" id="j" cx={154.87} cy={145.969} r={71.46} fx="154.87" fy="145.969" gradientTransform="matrix(-.0814 -1.93722 2.92674 -.11625 -215.135 632.86)" gradientUnits="userSpaceOnUse"></radialgradient>
+                        <filter id="q" width={1.097} height={1.116} x="-.048" y="-.058" color-interpolation-filters="sRGB">
                           <fegaussianblur stdDeviation="1.701"></fegaussianblur>
                         </filter>
-                        <filter id="k" width="1.033" height="1.02" x="-.017" y="-.01" color-interpolation-filters="sRGB">
+                        <filter id="k" width={1.033} height={1.02} x="-.017" y="-.01" color-interpolation-filters="sRGB">
                           <fegaussianblur stdDeviation=".242"></fegaussianblur>
                         </filter>
                         <clippath id="i" clippathunits="userSpaceOnUse">
@@ -190,7 +190,7 @@ export function Pattern() {
                     </svg>
                     {"Google"}
                   </Button>
-                  <Button className="w-full" type="button" tabIndex="0">
+                  <Button className="w-full" type="button" tabIndex={0}>
                     <span className="dark:hidden" aria-hidden="true">
                       <svg className="shrink-0 size-4" aria-hidden="true" xmlSpace="preserve" viewBox="0 0 814 1000">
                         <path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76.5 0-103.7 40.8-165.9 40.8s-105.6-57-155.5-127C46.7 790.7 0 663 0 541.8c0-194.4 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-181.5c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z"></path>
@@ -203,7 +203,7 @@ export function Pattern() {
                     </span>
                     {"Apple"}
                   </Button>
-                  <Button className="w-full" type="button" tabIndex="0">
+                  <Button className="w-full" type="button" tabIndex={0}>
                     <span className="dark:hidden" aria-hidden="true">
                       <svg className="shrink-0 size-4" aria-hidden="true" viewBox="0 0 1024 1024" fill="none">
                         <path fill="#1b1f23" fillRule="evenodd" d="M512 0C229.12 0 0 229.12 0 512c0 226.56 146.56 417.92 350.08 485.76 25.6 4.48 35.2-10.88 35.2-24.32 0-12.16-.64-52.48-.64-95.36-128.64 23.68-161.92-31.36-172.16-60.16-5.76-14.72-30.72-60.16-52.48-72.32-17.92-9.6-43.52-33.28-.64-33.92 40.32-.64 69.12 37.12 78.72 52.48 46.08 77.44 119.68 55.68 149.12 42.24 4.48-33.28 17.92-55.68 32.64-68.48-113.92-12.8-232.96-56.96-232.96-252.8 0-55.68 19.84-101.76 52.48-137.6-5.12-12.8-23.04-65.28 5.12-135.68 0 0 42.88-13.44 140.8 52.48 40.96-11.52 84.48-17.28 128-17.28s87.04 5.76 128 17.28c97.92-66.56 140.8-52.48 140.8-52.48 28.16 70.4 10.24 122.88 5.12 135.68 32.64 35.84 52.48 81.28 52.48 137.6 0 196.48-119.68 240-233.6 252.8 18.56 16 34.56 46.72 34.56 94.72 0 68.48-.64 123.52-.64 140.8 0 13.44 9.6 29.44 35.2 24.32C877.44 929.92 1024 737.92 1024 512 1024 229.12 794.88 0 512 0" clipRule="evenodd"></path>
@@ -219,7 +219,7 @@ export function Pattern() {
                 </div>
                 <p className="text-center text-muted-foreground text-sm">
                   {"Need an account?"}
-                  <Button className="cursor-pointer h-auto p-0" type="button" tabIndex="0">
+                  <Button className="cursor-pointer h-auto p-0" type="button" tabIndex={0}>
                     {"Sign up"}
                   </Button>
                 </p>
@@ -227,11 +227,11 @@ export function Pattern() {
             </div>
             <div className="leading-6 lg:whitespace-nowrap max-w-[35rem] mx-auto text-center text-muted-foreground text-pretty text-xs">
               {"By continuing, you agree to NeUI's"}
-              <Button className="cursor-pointer h-auto hover:text-primary p-0 text-foreground text-xs underline underline-offset-4" type="button" tabIndex="0">
+              <Button className="cursor-pointer h-auto hover:text-primary p-0 text-foreground text-xs underline underline-offset-4" type="button" tabIndex={0}>
                 {"Terms of Service"}
               </Button>
               {"and"}
-              <Button className="cursor-pointer h-auto hover:text-primary p-0 text-foreground text-xs underline underline-offset-4" type="button" tabIndex="0">
+              <Button className="cursor-pointer h-auto hover:text-primary p-0 text-foreground text-xs underline underline-offset-4" type="button" tabIndex={0}>
                 {"Privacy Policy"}
               </Button>
               {"."}
@@ -242,40 +242,40 @@ export function Pattern() {
           <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
             <svg className="absolute dark:fill-gray-500/9 dark:stroke-gray-500/8 fill-gray-400/12 h-[200%] inset-0 inset-x-0 inset-y-[-30%] mask-[radial-gradient(460px_circle_at_center,white,transparent)] pointer-events-none skew-y-12 stroke-gray-400/9 w-full" aria-hidden="true">
               <defs>
-                <pattern id="_r_2_" width="40" height="40" patternUnits="userSpaceOnUse" x="-1" y="-1">
-                  <path d="M.5 40V.5H40" fill="none" strokeDasharray="0"></path>
+                <pattern id="_r_2_" width={40} height={40} patternUnits="userSpaceOnUse" x={-1} y={-1}>
+                  <path d="M.5 40V.5H40" fill="none" strokeDasharray={0}></path>
                 </pattern>
               </defs>
               <rect width="100%" height="100%" fill="url(#_r_2_)"></rect>
-              <svg className="overflow-visible" x="-1" y="-1">
-                <rect width="39" height="39" x="521" y="921" fill="currentColor" strokeWidth="0" opacity="0.042849508089420854"></rect>
-                <rect width="39" height="39" x="1" y="601" fill="currentColor" strokeWidth="0" opacity="0.04147568723856239"></rect>
-                <rect width="39" height="39" x="321" y="201" fill="currentColor" strokeWidth="0" opacity="0.04001691230660072"></rect>
-                <rect width="39" height="39" x="201" y="321" fill="currentColor" strokeWidth="0" opacity="0.03845049697702052"></rect>
-                <rect width="39" height="39" x="241" y="41" fill="currentColor" strokeWidth="0" opacity="0.03681404487433611"></rect>
-                <rect width="39" height="39" x="361" y="281" fill="currentColor" strokeWidth="0" opacity="0.03511682156386087"></rect>
-                <rect width="39" height="39" x="81" y="1241" fill="currentColor" strokeWidth="0" opacity="0.03329859382210998"></rect>
-                <rect width="39" height="39" x="161" y="441" fill="currentColor" strokeWidth="0" opacity="0.03143514050898375"></rect>
-                <rect width="39" height="39" x="321" y="121" fill="currentColor" strokeWidth="0" opacity="0.029500776472559664"></rect>
-                <rect width="39" height="39" x="561" y="1121" fill="currentColor" strokeWidth="0" opacity="0.02750480311078718"></rect>
-                <rect width="39" height="39" x="481" y="1361" fill="currentColor" strokeWidth="0" opacity="0.025457740934507457"></rect>
-                <rect width="39" height="39" x="81" y="121" fill="currentColor" strokeWidth="0" opacity="0.02333483682450606"></rect>
-                <rect width="39" height="39" x="561" y="281" fill="currentColor" strokeWidth="0" opacity="0.021150144578132316"></rect>
-                <rect width="39" height="39" x="481" y="1321" fill="currentColor" strokeWidth="0" opacity="0.018885039888846225"></rect>
-                <rect width="39" height="39" x="241" y="921" fill="currentColor" strokeWidth="0" opacity="0.016562473560043145"></rect>
-                <rect width="39" height="39" x="521" y="881" fill="currentColor" strokeWidth="0" opacity="0.014210949510743377"></rect>
-                <rect width="39" height="39" x="241" y="481" fill="currentColor" strokeWidth="0" opacity="0.011770175323181321"></rect>
-                <rect width="39" height="39" x="361" y="441" fill="currentColor" strokeWidth="0" opacity="0.009272825544758235"></rect>
-                <rect width="39" height="39" x="161" y="1161" fill="currentColor" strokeWidth="0" opacity="0.006704296746465843"></rect>
-                <rect width="39" height="39" x="441" y="241" fill="currentColor" strokeWidth="0" opacity="0.004081104161741678"></rect>
-                <rect width="39" height="39" x="321" y="561" fill="currentColor" strokeWidth="0" opacity="0.0013698292241315357"></rect>
-                <rect width="39" height="39" x="361" y="921" fill="currentColor" strokeWidth="0" opacity="0"></rect>
-                <rect width="39" height="39" x="241" y="1241" fill="currentColor" strokeWidth="0" opacity="0"></rect>
-                <rect width="39" height="39" x="81" y="561" fill="currentColor" strokeWidth="0" opacity="0"></rect>
-                <rect width="39" height="39" x="161" y="681" fill="currentColor" strokeWidth="0" opacity="0"></rect>
-                <rect width="39" height="39" x="281" y="561" fill="currentColor" strokeWidth="0" opacity="0"></rect>
-                <rect width="39" height="39" x="1" y="1" fill="currentColor" strokeWidth="0" opacity="0"></rect>
-                <rect width="39" height="39" x="81" y="761" fill="currentColor" strokeWidth="0" opacity="0"></rect>
+              <svg className="overflow-visible" x={-1} y={-1}>
+                <rect width={39} height={39} x={521} y={921} fill="currentColor" strokeWidth={0} opacity={0.042849508089420854}></rect>
+                <rect width={39} height={39} x={1} y={601} fill="currentColor" strokeWidth={0} opacity={0.04147568723856239}></rect>
+                <rect width={39} height={39} x={321} y={201} fill="currentColor" strokeWidth={0} opacity={0.04001691230660072}></rect>
+                <rect width={39} height={39} x={201} y={321} fill="currentColor" strokeWidth={0} opacity={0.03845049697702052}></rect>
+                <rect width={39} height={39} x={241} y={41} fill="currentColor" strokeWidth={0} opacity={0.03681404487433611}></rect>
+                <rect width={39} height={39} x={361} y={281} fill="currentColor" strokeWidth={0} opacity={0.03511682156386087}></rect>
+                <rect width={39} height={39} x={81} y={1241} fill="currentColor" strokeWidth={0} opacity={0.03329859382210998}></rect>
+                <rect width={39} height={39} x={161} y={441} fill="currentColor" strokeWidth={0} opacity={0.03143514050898375}></rect>
+                <rect width={39} height={39} x={321} y={121} fill="currentColor" strokeWidth={0} opacity={0.029500776472559664}></rect>
+                <rect width={39} height={39} x={561} y={1121} fill="currentColor" strokeWidth={0} opacity={0.02750480311078718}></rect>
+                <rect width={39} height={39} x={481} y={1361} fill="currentColor" strokeWidth={0} opacity={0.025457740934507457}></rect>
+                <rect width={39} height={39} x={81} y={121} fill="currentColor" strokeWidth={0} opacity={0.02333483682450606}></rect>
+                <rect width={39} height={39} x={561} y={281} fill="currentColor" strokeWidth={0} opacity={0.021150144578132316}></rect>
+                <rect width={39} height={39} x={481} y={1321} fill="currentColor" strokeWidth={0} opacity={0.018885039888846225}></rect>
+                <rect width={39} height={39} x={241} y={921} fill="currentColor" strokeWidth={0} opacity={0.016562473560043145}></rect>
+                <rect width={39} height={39} x={521} y={881} fill="currentColor" strokeWidth={0} opacity={0.014210949510743377}></rect>
+                <rect width={39} height={39} x={241} y={481} fill="currentColor" strokeWidth={0} opacity={0.011770175323181321}></rect>
+                <rect width={39} height={39} x={361} y={441} fill="currentColor" strokeWidth={0} opacity={0.009272825544758235}></rect>
+                <rect width={39} height={39} x={161} y={1161} fill="currentColor" strokeWidth={0} opacity={0.006704296746465843}></rect>
+                <rect width={39} height={39} x={441} y={241} fill="currentColor" strokeWidth={0} opacity={0.004081104161741678}></rect>
+                <rect width={39} height={39} x={321} y={561} fill="currentColor" strokeWidth={0} opacity={0.0013698292241315357}></rect>
+                <rect width={39} height={39} x={361} y={921} fill="currentColor" strokeWidth={0} opacity={0}></rect>
+                <rect width={39} height={39} x={241} y={1241} fill="currentColor" strokeWidth={0} opacity={0}></rect>
+                <rect width={39} height={39} x={81} y={561} fill="currentColor" strokeWidth={0} opacity={0}></rect>
+                <rect width={39} height={39} x={161} y={681} fill="currentColor" strokeWidth={0} opacity={0}></rect>
+                <rect width={39} height={39} x={281} y={561} fill="currentColor" strokeWidth={0} opacity={0}></rect>
+                <rect width={39} height={39} x={1} y={1} fill="currentColor" strokeWidth={0} opacity={0}></rect>
+                <rect width={39} height={39} x={81} y={761} fill="currentColor" strokeWidth={0} opacity={0}></rect>
               </svg>
             </svg>
           </div>
@@ -304,7 +304,7 @@ export function Pattern() {
                       {"It's one system our whole team trusts."}
                     </span>
                   </p>
-                  <Button className="font-semibold" type="button" tabIndex="0">
+                  <Button className="font-semibold" type="button" tabIndex={0}>
                     {"Read more"}
                   </Button>
                 </div>
@@ -352,16 +352,16 @@ export function Pattern() {
                       <path d="M485.645 66.7608C486.243 72.3621 491.339 81.9642 506.124 81.9642C519.012 81.9642 525.205 73.7624 525.205 65.7607C525.205 58.559 520.311 52.6577 510.62 50.6571L503.626 49.1569C500.929 48.6568 499.132 47.1565 499.132 44.7559C499.132 41.9552 501.928 39.8549 505.425 39.8549C511.021 39.8549 513.118 43.5556 513.519 46.4564L524.607 43.9558C524.007 38.6546 519.312 29.7527 505.326 29.7527C494.735 29.7527 486.944 37.0543 486.944 45.8561C486.944 52.7576 491.238 58.4591 500.73 60.5594L507.224 62.0598C511.021 62.8599 512.519 64.6605 512.519 66.8609C512.519 69.4615 510.421 71.762 506.025 71.762C500.23 71.762 497.334 68.1611 497.034 64.2602L485.645 66.7608Z" fill="#1F1F1F"></path>
                       <path d="M545.385 50.2571C545.685 45.7562 549.482 40.5549 556.375 40.5549C563.967 40.5549 567.165 45.3561 567.365 50.2571H545.385ZM568.664 63.0601C567.065 67.4609 563.668 70.5617 557.474 70.5617C550.88 70.5617 545.385 65.8606 545.087 59.3593H580.252C580.252 59.159 580.451 57.1587 580.451 55.2582C580.451 39.4547 571.361 29.7527 556.175 29.7527C543.588 29.7527 531.998 39.9548 531.998 55.6584C531.998 72.262 543.886 81.9642 557.374 81.9642C569.462 81.9642 577.255 74.8626 579.753 66.3607L568.664 63.0601Z" fill="#1F1F1F"></path>
                       <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-light-paint0)"></path>
-                      <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-light-paint1)" fillOpacity="0.2"></path>
+                      <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-light-paint1)" fillOpacity={0.2}></path>
                       <path d="M45.317 2.07103C48.1765 -1.53037 53.9745 0.442937 54.0434 5.041L54.4849 72.2922H9.83113C1.64038 72.2922 -2.92775 62.8321 2.1655 56.4175L45.317 2.07103Z" fill="#3ECF8E"></path>
                       <defs>
-                        <lineargradient id="supabase-light-paint0" x1="53.9738" y1="54.974" x2="94.1635" y2="71.8295" gradientUnits="userSpaceOnUse">
+                        <lineargradient id="supabase-light-paint0" x1={53.9738} y1={54.974} x2={94.1635} y2={71.8295} gradientUnits="userSpaceOnUse">
                           <stop stopColor="#249361"></stop>
-                          <stop offset="1" stopColor="#3ECF8E"></stop>
+                          <stop offset={1} stopColor="#3ECF8E"></stop>
                         </lineargradient>
-                        <lineargradient id="supabase-light-paint1" x1="36.1558" y1="30.578" x2="54.4844" y2="65.0806" gradientUnits="userSpaceOnUse">
+                        <lineargradient id="supabase-light-paint1" x1={36.1558} y1={30.578} x2={54.4844} y2={65.0806} gradientUnits="userSpaceOnUse">
                           <stop></stop>
-                          <stop offset="1" stopOpacity="0"></stop>
+                          <stop offset={1} stopOpacity={0}></stop>
                         </lineargradient>
                       </defs>
                     </svg>
@@ -377,16 +377,16 @@ export function Pattern() {
                       <path d="M485.645 66.7608C486.243 72.3621 491.339 81.9642 506.124 81.9642C519.012 81.9642 525.205 73.7624 525.205 65.7607C525.205 58.559 520.311 52.6577 510.62 50.6571L503.626 49.1569C500.929 48.6568 499.132 47.1565 499.132 44.7559C499.132 41.9552 501.928 39.8549 505.425 39.8549C511.021 39.8549 513.118 43.5556 513.519 46.4564L524.607 43.9558C524.007 38.6546 519.312 29.7527 505.326 29.7527C494.735 29.7527 486.944 37.0543 486.944 45.8561C486.944 52.7576 491.238 58.4591 500.73 60.5594L507.224 62.0598C511.021 62.8599 512.519 64.6605 512.519 66.8609C512.519 69.4615 510.421 71.762 506.025 71.762C500.23 71.762 497.334 68.1611 497.034 64.2602L485.645 66.7608Z" fill="white"></path>
                       <path d="M545.385 50.2571C545.685 45.7562 549.482 40.5549 556.375 40.5549C563.967 40.5549 567.165 45.3561 567.365 50.2571H545.385ZM568.664 63.0601C567.065 67.4609 563.668 70.5617 557.474 70.5617C550.88 70.5617 545.385 65.8606 545.087 59.3593H580.252C580.252 59.159 580.451 57.1587 580.451 55.2582C580.451 39.4547 571.361 29.7527 556.175 29.7527C543.588 29.7527 531.998 39.9548 531.998 55.6584C531.998 72.262 543.886 81.9642 557.374 81.9642C569.462 81.9642 577.255 74.8626 579.753 66.3607L568.664 63.0601Z" fill="white"></path>
                       <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-dark-paint0)"></path>
-                      <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-dark-paint1)" fillOpacity="0.2"></path>
+                      <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-dark-paint1)" fillOpacity={0.2}></path>
                       <path d="M45.317 2.07103C48.1765 -1.53037 53.9745 0.442937 54.0434 5.041L54.4849 72.2922H9.83113C1.64038 72.2922 -2.92775 62.8321 2.1655 56.4175L45.317 2.07103Z" fill="#3ECF8E"></path>
                       <defs>
-                        <lineargradient id="supabase-dark-paint0" x1="53.9738" y1="54.974" x2="94.1635" y2="71.8295" gradientUnits="userSpaceOnUse">
+                        <lineargradient id="supabase-dark-paint0" x1={53.9738} y1={54.974} x2={94.1635} y2={71.8295} gradientUnits="userSpaceOnUse">
                           <stop stopColor="#249361"></stop>
-                          <stop offset="1" stopColor="#3ECF8E"></stop>
+                          <stop offset={1} stopColor="#3ECF8E"></stop>
                         </lineargradient>
-                        <lineargradient id="supabase-dark-paint1" x1="36.1558" y1="30.578" x2="54.4844" y2="65.0806" gradientUnits="userSpaceOnUse">
+                        <lineargradient id="supabase-dark-paint1" x1={36.1558} y1={30.578} x2={54.4844} y2={65.0806} gradientUnits="userSpaceOnUse">
                           <stop></stop>
-                          <stop offset="1" stopOpacity="0"></stop>
+                          <stop offset={1} stopOpacity={0}></stop>
                         </lineargradient>
                       </defs>
                     </svg>

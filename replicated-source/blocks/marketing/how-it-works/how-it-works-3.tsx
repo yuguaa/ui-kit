@@ -32,17 +32,17 @@ export function Pattern() {
                 {"Set up the registry, pick your parts, wire them to real data, and take a polished interface to production."}
               </p>
               <div className="flex flex-wrap gap-x-2.5 gap-y-2 items-center">
-                <Button className="bg-amber-300 border-amber-400 focus-visible:border-ring hover:bg-amber-400 hover:border-amber-500 text-amber-950" href="#" role="button" tabIndex="0">
-                  <svg className="lucide lucide-layout-grid" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" data-icon="inline-start" aria-hidden="true">
-                    <rect width="7" height="7" x="3" y="3" rx="1"></rect>
-                    <rect width="7" height="7" x="14" y="3" rx="1"></rect>
-                    <rect width="7" height="7" x="14" y="14" rx="1"></rect>
-                    <rect width="7" height="7" x="3" y="14" rx="1"></rect>
+                <Button className="bg-amber-300 border-amber-400 focus-visible:border-ring hover:bg-amber-400 hover:border-amber-500 text-amber-950" href="#" role="button" tabIndex={0}>
+                  <svg className="lucide lucide-layout-grid" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" data-icon="inline-start" aria-hidden="true">
+                    <rect width={7} height={7} x={3} y={3} rx={1}></rect>
+                    <rect width={7} height={7} x={14} y={3} rx={1}></rect>
+                    <rect width={7} height={7} x={14} y={14} rx={1}></rect>
+                    <rect width={7} height={7} x={3} y={14} rx={1}></rect>
                   </svg>
                   {"Browse Registry"}
                 </Button>
-                <Button href="#" role="button" tabIndex="0">
-                  <svg className="lucide lucide-book-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BookOpenIcon" tabler="IconBook" hugeicons="BookOpen01Icon" phosphor="BookOpenIcon" remixicon="RiBookOpenLine" data-icon="inline-start" aria-hidden="true">
+                <Button href="#" role="button" tabIndex={0}>
+                  <svg className="lucide lucide-book-open" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BookOpenIcon" tabler="IconBook" hugeicons="BookOpen01Icon" phosphor="BookOpenIcon" remixicon="RiBookOpenLine" data-icon="inline-start" aria-hidden="true">
                     <path d="M12 7v14"></path>
                     <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
                   </svg>
@@ -55,10 +55,10 @@ export function Pattern() {
                 <li>
                   <Item variant="default" size="default">
                     <IconTile className="bg-primary/5 border-0 self-start" variant="frame" size="default">
-                      <svg className="lucide lucide-layout-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutPanelLeftIcon" tabler="IconLayoutBoardSplit" hugeicons="DashboardSquare01Icon" phosphor="LayoutIcon" remixicon="RiLayoutLeftLine" aria-hidden="true">
-                        <rect width="7" height="18" x="3" y="3" rx="1"></rect>
-                        <rect width="7" height="7" x="14" y="3" rx="1"></rect>
-                        <rect width="7" height="7" x="14" y="14" rx="1"></rect>
+                      <svg className="lucide lucide-layout-panel-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LayoutPanelLeftIcon" tabler="IconLayoutBoardSplit" hugeicons="DashboardSquare01Icon" phosphor="LayoutIcon" remixicon="RiLayoutLeftLine" aria-hidden="true">
+                        <rect width={7} height={18} x={3} y={3} rx={1}></rect>
+                        <rect width={7} height={7} x={14} y={3} rx={1}></rect>
+                        <rect width={7} height={7} x={14} y={14} rx={1}></rect>
                       </svg>
                     </IconTile>
                     <ItemContent className="gap-px">
@@ -75,10 +75,10 @@ export function Pattern() {
                   <ItemSeparator className="bg-border data-horizontal:h-px data-horizontal:w-full data-vertical:self-stretch data-vertical:w-px shrink-0" data-orientation="horizontal" role="separator" aria-orientation="horizontal"></ItemSeparator>
                   <Item variant="default" size="default">
                     <IconTile className="bg-primary/5 border-0 self-start" variant="frame" size="default">
-                      <svg className="lucide lucide-workflow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="WorkflowIcon" tabler="IconSitemap" hugeicons="WorkflowCircle01Icon" phosphor="TreeStructureIcon" remixicon="RiFlowChart" aria-hidden="true">
-                        <rect width="8" height="8" x="3" y="3" rx="2"></rect>
+                      <svg className="lucide lucide-workflow" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="WorkflowIcon" tabler="IconSitemap" hugeicons="WorkflowCircle01Icon" phosphor="TreeStructureIcon" remixicon="RiFlowChart" aria-hidden="true">
+                        <rect width={8} height={8} x={3} y={3} rx={2}></rect>
                         <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
-                        <rect width="8" height="8" x="13" y="13" rx="2"></rect>
+                        <rect width={8} height={8} x={13} y={13} rx={2}></rect>
                       </svg>
                     </IconTile>
                     <ItemContent className="gap-px">

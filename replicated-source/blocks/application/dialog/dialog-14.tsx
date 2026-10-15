@@ -36,13 +36,13 @@ export function Pattern() {
         {"Connection process dialog"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
-        <Button type="button" tabIndex="0" extracted="1">
+        <Button type="button" tabIndex={0} extracted="1">
           {"Open connector"}
         </Button>
       </div>
     </main>
     <Dialog>
-    <DialogContent className="**:data-[slot=dialog-close]:right-3 **:data-[slot=dialog-close]:top-3 flex flex-col max-h-[min(88vh,36rem)] max-w-[calc(100vw-1.5rem)] min-h-0 overflow-hidden shadow-none sm:max-w-sm" data-open="" tabIndex="-1" baseUiFocusable="" id="_r_0_" role="dialog" aria-labelledby="base-ui-_r_2_" aria-describedby="base-ui-_r_3_" style={{"--nested-dialogs": "0"}}>
+    <DialogContent className="**:data-[slot=dialog-close]:right-3 **:data-[slot=dialog-close]:top-3 flex flex-col max-h-[min(88vh,36rem)] max-w-[calc(100vw-1.5rem)] min-h-0 overflow-hidden shadow-none sm:max-w-sm" data-open="" tabIndex={-1} baseUiFocusable="" id="_r_0_" role="dialog" aria-labelledby="base-ui-_r_2_" aria-describedby="base-ui-_r_3_" style={{"--nested-dialogs": "0"}}>
       <div className="flex flex-col gap-4 items-center pt-4 shrink-0">
         <div className="flex gap-2 items-center justify-center" aria-hidden="true">
           <Item className="p-0 size-9" variant="default" size="default">
@@ -69,8 +69,8 @@ export function Pattern() {
               <svg className="size-5" xmlns:xlink="http://www.w3.org/1999/xlink" xmlSpace="preserve" overflow="hidden" viewBox="0 0 268.152 273.883">
                 <defs>
                   <lineargradient id="a">
-                    <stop offset="0" stopColor="#0fbc5c"></stop>
-                    <stop offset="1" stopColor="#0cba65"></stop>
+                    <stop offset={0} stopColor="#0fbc5c"></stop>
+                    <stop offset={1} stopColor="#0cba65"></stop>
                   </lineargradient>
                   <lineargradient id="g">
                     <stop offset=".231" stopColor="#0fbc5f"></stop>
@@ -82,7 +82,7 @@ export function Pattern() {
                     <stop offset=".771" stopColor="#38c02b"></stop>
                     <stop offset=".861" stopColor="#52c218"></stop>
                     <stop offset=".915" stopColor="#67c30f"></stop>
-                    <stop offset="1" stopColor="#86c504"></stop>
+                    <stop offset={1} stopColor="#86c504"></stop>
                   </lineargradient>
                   <lineargradient id="h">
                     <stop offset=".142" stopColor="#1abd4d"></stop>
@@ -101,7 +101,7 @@ export function Pattern() {
                     <stop offset=".604" stopColor="#ff692c"></stop>
                     <stop offset=".727" stopColor="#ff7825"></stop>
                     <stop offset=".885" stopColor="#ff8d1b"></stop>
-                    <stop offset="1" stopColor="#ff9f13"></stop>
+                    <stop offset={1} stopColor="#ff9f13"></stop>
                   </lineargradient>
                   <lineargradient id="b">
                     <stop offset=".231" stopColor="#ff4541"></stop>
@@ -111,11 +111,11 @@ export function Pattern() {
                     <stop offset=".699" stopColor="#ff5138"></stop>
                     <stop offset=".771" stopColor="#ff5b33"></stop>
                     <stop offset=".861" stopColor="#ff6c29"></stop>
-                    <stop offset="1" stopColor="#ff8c18"></stop>
+                    <stop offset={1} stopColor="#ff8c18"></stop>
                   </lineargradient>
                   <lineargradient id="d">
                     <stop offset=".408" stopColor="#fb4e5a"></stop>
-                    <stop offset="1" stopColor="#ff4540"></stop>
+                    <stop offset={1} stopColor="#ff4540"></stop>
                   </lineargradient>
                   <lineargradient id="c">
                     <stop offset=".132" stopColor="#0cba65"></stop>
@@ -136,20 +136,20 @@ export function Pattern() {
                     <stop offset=".771" stopColor="#ffcd0a"></stop>
                     <stop offset=".861" stopColor="#fecf0a"></stop>
                     <stop offset=".915" stopColor="#fecf08"></stop>
-                    <stop offset="1" stopColor="#fdcd01"></stop>
+                    <stop offset={1} stopColor="#fdcd01"></stop>
                   </lineargradient>
-                  <lineargradient xlinkHref="#a" id="s" x1="219.7" x2="254.467" y1="329.535" y2="329.535" gradientUnits="userSpaceOnUse"></lineargradient>
-                  <radialgradient xlinkHref="#b" id="m" cx="109.627" cy="135.862" r="71.46" fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 1.043 1.45573 2.55542 290.525 -400.634)" gradientUnits="userSpaceOnUse"></radialgradient>
-                  <radialgradient xlinkHref="#c" id="n" cx="45.259" cy="279.274" r="71.46" fx="45.259" fy="279.274" gradientTransform="matrix(-3.5126 -4.45809 -1.69255 1.26062 870.8 191.554)" gradientUnits="userSpaceOnUse"></radialgradient>
-                  <radialgradient xlinkHref="#d" id="l" cx="304.017" cy="118.009" r="47.854" fx="304.017" fy="118.009" gradientTransform="matrix(2.06435 0 0 2.59204 -297.679 -151.747)" gradientUnits="userSpaceOnUse"></radialgradient>
-                  <radialgradient xlinkHref="#e" id="o" cx="181.001" cy="177.201" r="71.46" fx="181.001" fy="177.201" gradientTransform="matrix(-.24858 2.08314 2.96249 .33417 -255.146 -331.164)" gradientUnits="userSpaceOnUse"></radialgradient>
-                  <radialgradient xlinkHref="#f" id="p" cx="207.673" cy="108.097" r="41.102" fx="207.673" fy="108.097" gradientTransform="matrix(-1.2492 1.34326 -3.89684 -3.4257 880.501 194.905)" gradientUnits="userSpaceOnUse"></radialgradient>
-                  <radialgradient xlinkHref="#g" id="r" cx="109.627" cy="135.862" r="71.46" fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 -1.043 1.45573 -2.55542 290.525 838.683)" gradientUnits="userSpaceOnUse"></radialgradient>
-                  <radialgradient xlinkHref="#h" id="j" cx="154.87" cy="145.969" r="71.46" fx="154.87" fy="145.969" gradientTransform="matrix(-.0814 -1.93722 2.92674 -.11625 -215.135 632.86)" gradientUnits="userSpaceOnUse"></radialgradient>
-                  <filter id="q" width="1.097" height="1.116" x="-.048" y="-.058" color-interpolation-filters="sRGB">
+                  <lineargradient xlinkHref="#a" id="s" x1={219.7} x2={254.467} y1={329.535} y2={329.535} gradientUnits="userSpaceOnUse"></lineargradient>
+                  <radialgradient xlinkHref="#b" id="m" cx={109.627} cy={135.862} r={71.46} fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 1.043 1.45573 2.55542 290.525 -400.634)" gradientUnits="userSpaceOnUse"></radialgradient>
+                  <radialgradient xlinkHref="#c" id="n" cx={45.259} cy={279.274} r={71.46} fx="45.259" fy="279.274" gradientTransform="matrix(-3.5126 -4.45809 -1.69255 1.26062 870.8 191.554)" gradientUnits="userSpaceOnUse"></radialgradient>
+                  <radialgradient xlinkHref="#d" id="l" cx={304.017} cy={118.009} r={47.854} fx="304.017" fy="118.009" gradientTransform="matrix(2.06435 0 0 2.59204 -297.679 -151.747)" gradientUnits="userSpaceOnUse"></radialgradient>
+                  <radialgradient xlinkHref="#e" id="o" cx={181.001} cy={177.201} r={71.46} fx="181.001" fy="177.201" gradientTransform="matrix(-.24858 2.08314 2.96249 .33417 -255.146 -331.164)" gradientUnits="userSpaceOnUse"></radialgradient>
+                  <radialgradient xlinkHref="#f" id="p" cx={207.673} cy={108.097} r={41.102} fx="207.673" fy="108.097" gradientTransform="matrix(-1.2492 1.34326 -3.89684 -3.4257 880.501 194.905)" gradientUnits="userSpaceOnUse"></radialgradient>
+                  <radialgradient xlinkHref="#g" id="r" cx={109.627} cy={135.862} r={71.46} fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 -1.043 1.45573 -2.55542 290.525 838.683)" gradientUnits="userSpaceOnUse"></radialgradient>
+                  <radialgradient xlinkHref="#h" id="j" cx={154.87} cy={145.969} r={71.46} fx="154.87" fy="145.969" gradientTransform="matrix(-.0814 -1.93722 2.92674 -.11625 -215.135 632.86)" gradientUnits="userSpaceOnUse"></radialgradient>
+                  <filter id="q" width={1.097} height={1.116} x="-.048" y="-.058" color-interpolation-filters="sRGB">
                     <fegaussianblur stdDeviation="1.701"></fegaussianblur>
                   </filter>
-                  <filter id="k" width="1.033" height="1.02" x="-.017" y="-.01" color-interpolation-filters="sRGB">
+                  <filter id="k" width={1.033} height={1.02} x="-.017" y="-.01" color-interpolation-filters="sRGB">
                     <fegaussianblur stdDeviation=".242"></fegaussianblur>
                   </filter>
                   <clippath id="i" clippathunits="userSpaceOnUse">
@@ -184,7 +184,7 @@ export function Pattern() {
         <ItemGroup className="gap-2" role="list">
           <Item className="flex-nowrap" variant="default" size="default">
             <Item className="[&_svg]:size-4 [&_svg]:text-accent-foreground bg-muted border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-9" variant="default" size="default">
-              <svg className="lucide lucide-external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
+              <svg className="lucide lucide-external-link" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
                 <path d="M15 3h6v6"></path>
                 <path d="M10 14 21 3"></path>
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
@@ -201,7 +201,7 @@ export function Pattern() {
           </Item>
           <Item className="flex-nowrap" variant="default" size="default">
             <Item className="[&_svg]:size-4 [&_svg]:text-accent-foreground bg-muted border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-9" variant="default" size="default">
-              <svg className="lucide lucide-shield-check" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
+              <svg className="lucide lucide-shield-check" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShieldCheckIcon" tabler="IconShieldCheck" hugeicons="Shield01Icon" phosphor="ShieldCheckIcon" remixicon="RiShieldCheckLine" aria-hidden="true">
                 <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                 <path d="m9 12 2 2 4-4"></path>
               </svg>
@@ -224,12 +224,12 @@ export function Pattern() {
           <RadioGroup className="gap-2 grid" role="radiogroup" aria-labelledby="scope-heading">
             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none has-[[data-checked]]:bg-transparent! has-[[data-checked]]:border-primary! items-center p-0 peer-disabled:cursor-not-allowed select-none" htmlFor="dialog-14-scope-headers" id="dialog-14-scope-headers-label">
               <Field className="cursor-pointer transition-colors" role="group" data-orientation="horizontal">
-                <RadioGroupItem checked="" role="radio" tabIndex="0" aria-checked="true" compositeItemActive="" id="base-ui-_r_5_" aria-labelledby="dialog-14-scope-headers-label">
+                <RadioGroupItem checked="" role="radio" tabIndex={0} aria-checked="true" compositeItemActive="" id="base-ui-_r_5_" aria-labelledby="dialog-14-scope-headers-label">
                   <span className="cn-radio-group-indicator" data-checked="">
                     <span className="cn-radio-group-indicator-icon"></span>
                   </span>
                 </RadioGroupItem>
-                <input id="dialog-14-scope-headers" tabIndex="-1" aria-hidden="true" type="radio" value="headers" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                <input id="dialog-14-scope-headers" tabIndex={-1} aria-hidden="true" type="radio" value="headers" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 <FieldContent className="gap-1 min-w-0">
                   <FieldLabel className="cn-field-title gap-2 items-center justify-between w-full">
                     <span className="min-w-0 truncate">
@@ -247,8 +247,8 @@ export function Pattern() {
             </FieldLabel>
             <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none has-[[data-checked]]:bg-transparent! has-[[data-checked]]:border-primary! items-center p-0 peer-disabled:cursor-not-allowed select-none" htmlFor="dialog-14-scope-messages" id="dialog-14-scope-messages-label">
               <Field className="cursor-pointer transition-colors" role="group" data-orientation="horizontal">
-                <RadioGroupItem unchecked="" role="radio" tabIndex="-1" aria-checked="false" id="base-ui-_r_8_" aria-labelledby="dialog-14-scope-messages-label"></RadioGroupItem>
-                <input id="dialog-14-scope-messages" tabIndex="-1" aria-hidden="true" type="radio" value="messages" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                <RadioGroupItem unchecked="" role="radio" tabIndex={-1} aria-checked="false" id="base-ui-_r_8_" aria-labelledby="dialog-14-scope-messages-label"></RadioGroupItem>
+                <input id="dialog-14-scope-messages" tabIndex={-1} aria-hidden="true" type="radio" value="messages" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 <FieldContent className="gap-1 min-w-0">
                   <FieldLabel className="cn-field-title gap-2 items-center justify-between w-full">
                     <span className="min-w-0 truncate">
@@ -269,16 +269,16 @@ export function Pattern() {
       </div>
       <DialogFooter className="shrink-0">
         <div className="gap-2 grid grid-cols-2 w-full">
-          <DialogClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="button" tabIndex="0">
+          <DialogClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all w-full whitespace-nowrap" type="button" tabIndex={0}>
             {"Cancel"}
           </DialogClose>
-          <Button className="w-full" type="button" tabIndex="0">
+          <Button className="w-full" type="button" tabIndex={0}>
             {"Continue"}
           </Button>
         </div>
       </DialogFooter>
-      <DialogClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost cn-dialog-close disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0">
-        <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
+      <DialogClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost cn-dialog-close disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0}>
+        <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
           <path d="M18 6 6 18"></path>
           <path d="m6 6 12 12"></path>
         </svg>

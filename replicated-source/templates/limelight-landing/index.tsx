@@ -40,7 +40,7 @@ export function Pattern() {
             <span className="gap-2 inline-flex items-center">
               <svg className="shrink-0 size-5 sm:size-6 text-brand-ink" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M10 2.5h4l5.5 15.5h-15L10 2.5z"></path>
-                <ellipse cx="12" cy="20.25" rx="10" ry="2.25" opacity="0.4"></ellipse>
+                <ellipse cx={12} cy={20.25} rx={10} ry={2.25} opacity={0.4}></ellipse>
               </svg>
               <span className="font-bold sm:text-xl text-foreground text-lg tracking-tight">
                 {"Limelight"}
@@ -87,12 +87,12 @@ export function Pattern() {
           </nav>
           <div className="flex gap-1.5 items-center pointer-events-auto relative shrink-0">
             <Tooltip>
-            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium group/button hover:bg-muted hover:text-foreground inline-flex items-center justify-center outline-none rounded-4xl select-none shrink-0 size-9 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Toggle theme" id="base-ui-_R_1lllflb_" baseUiTooltipTrigger="">
-              <svg className="dark:hidden lucide lucide-moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <TooltipTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium group/button hover:bg-muted hover:text-foreground inline-flex items-center justify-center outline-none rounded-4xl select-none shrink-0 size-9 text-muted-foreground text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Toggle theme" id="base-ui-_R_1lllflb_" baseUiTooltipTrigger="">
+              <svg className="dark:hidden lucide lucide-moon" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"></path>
               </svg>
-              <svg className="dark:block hidden lucide lucide-sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="4"></circle>
+              <svg className="dark:block hidden lucide lucide-sun" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <circle cx={12} cy={12} r={4}></circle>
                 <path d="M12 2v2"></path>
                 <path d="M12 20v2"></path>
                 <path d="m4.93 4.93 1.41 1.41"></path>
@@ -105,13 +105,13 @@ export function Pattern() {
             </TooltipTrigger>
             </Tooltip>
             <div className="hidden lg:block lg:ms-1">
-              <Button className="[&_svg:not([class*='size-'])]:size-4 active:bg-brand-active active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-brand bg-clip-padding border border-transparent brand-weave dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:shadow-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1.5 h-9 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5 hover:bg-brand-hover press px-4 rounded-full shadow-lift text-brand-foreground text-sm" href="#pricing" role="button" tabIndex="0">
+              <Button className="[&_svg:not([class*='size-'])]:size-4 active:bg-brand-active active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-brand bg-clip-padding border border-transparent brand-weave dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:shadow-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1.5 h-9 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5 hover:bg-brand-hover press px-4 rounded-full shadow-lift text-brand-foreground text-sm" href="#pricing" role="button" tabIndex={0}>
                 {"Start free"}
               </Button>
             </div>
             <Sheet>
-            <SheetTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium group/button hover:bg-muted hover:text-foreground inline-flex items-center justify-center lg:hidden outline-none rounded-4xl select-none shrink-0 size-9 text-sm transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open menu" baseUiClickTrigger="" id="base-ui-_R_1nllflb_" aria-haspopup="dialog" aria-expanded="false">
-              <svg className="lucide lucide-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+            <SheetTrigger className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-clip-padding border border-transparent dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:hover:bg-muted/50 disabled:opacity-50 disabled:pointer-events-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium group/button hover:bg-muted hover:text-foreground inline-flex items-center justify-center lg:hidden outline-none rounded-4xl select-none shrink-0 size-9 text-sm transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Open menu" baseUiClickTrigger="" id="base-ui-_R_1nllflb_" aria-haspopup="dialog" aria-expanded="false">
+              <svg className="lucide lucide-menu" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M4 5h16"></path>
                 <path d="M4 12h16"></path>
                 <path d="M4 19h16"></path>
@@ -158,18 +158,18 @@ export function Pattern() {
             </div>
             <div className="lg:col-span-5 lg:col-start-8 motion-safe:animate-rise" style={{animationDelay: "240ms"}}>
               <div className="flex flex-col gap-3 lg:justify-end sm:flex-row">
-                <Button className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:transition-transform active:bg-brand-active active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-brand bg-clip-padding border border-transparent brand-weave dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:shadow-none fine-pointer:[&_svg]:hover:translate-x-1 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1.5 h-11 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5 hover:bg-brand-hover press px-6 rounded-full shadow-lift text-base text-brand-foreground" href="#pricing" role="button" tabIndex="0">
+                <Button className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:transition-transform active:bg-brand-active active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-brand bg-clip-padding border border-transparent brand-weave dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:shadow-none fine-pointer:[&_svg]:hover:translate-x-1 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1.5 h-11 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5 hover:bg-brand-hover press px-6 rounded-full shadow-lift text-base text-brand-foreground" href="#pricing" role="button" tabIndex={0}>
                   {"Start free trial"}
-                  <svg className="lucide lucide-arrow-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg className="lucide lucide-arrow-right size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
                 </Button>
-                <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-transparent dark:hover:bg-input/30 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1.5 h-11 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5 hover:bg-muted hover:text-foreground press px-6 rounded-full text-base" href="#how-it-works" role="button" tabIndex="0">
-                  <svg className="lucide lucide-route size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                    <circle cx="6" cy="19" r="3"></circle>
+                <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-transparent dark:hover:bg-input/30 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1.5 h-11 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5 hover:bg-muted hover:text-foreground press px-6 rounded-full text-base" href="#how-it-works" role="button" tabIndex={0}>
+                  <svg className="lucide lucide-route size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <circle cx={6} cy={19} r={3}></circle>
                     <path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"></path>
-                    <circle cx="18" cy="5" r="3"></circle>
+                    <circle cx={18} cy={5} r={3}></circle>
                   </svg>
                   {"See how it works"}
                 </Button>
@@ -213,7 +213,7 @@ export function Pattern() {
                           <span className="bg-brand flex items-center justify-center rounded-[var(--lc-radius)] shrink-0 text-brand-foreground" style={{width: "var(--lc-tile)", height: "var(--lc-tile)"}}>
                             <svg className="size-[calc(var(--lc-tile)*0.56)]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                               <path d="M10 2.5h4l5.5 15.5h-15L10 2.5z"></path>
-                              <ellipse cx="12" cy="20.25" rx="10" ry="2.25" opacity="0.4"></ellipse>
+                              <ellipse cx={12} cy={20.25} rx={10} ry={2.25} opacity={0.4}></ellipse>
                             </svg>
                           </span>
                           <span className="@max-[700px]/lc:hidden flex gap-[calc(var(--lc-pad)*0.5)] items-center">
@@ -235,7 +235,7 @@ export function Pattern() {
                             </span>
                             <span className="flex font-medium gap-[calc(var(--lc-pad)*0.25)] items-center text-foreground whitespace-nowrap">
                               {"Overview"}
-                              <svg className="lucide lucide-chevrons-up-down size-[calc(var(--lc-icon)*0.82)] text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <svg className="lucide lucide-chevrons-up-down size-[calc(var(--lc-icon)*0.82)] text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="m7 15 5 5 5-5"></path>
                                 <path d="m7 9 5-5 5 5"></path>
                               </svg>
@@ -253,7 +253,7 @@ export function Pattern() {
                             </span>
                           </span>
                           <span className="flex items-center relative shrink-0 text-muted-foreground">
-                            <svg className="lucide lucide-bell size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                            <svg className="lucide lucide-bell size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                               <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
                               <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
                             </svg>
@@ -263,14 +263,14 @@ export function Pattern() {
                               </span>
                             </span>
                           </span>
-                          <img className="object-cover ring-1 ring-border rounded-full shrink-0 size-[var(--lc-face)]" alt="" loading="lazy" width="96" height="96" decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-6.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
+                          <img className="object-cover ring-1 ring-border rounded-full shrink-0 size-[var(--lc-face)]" alt="" loading="lazy" width={96} height={96} decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-6.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
                         </div>
                         <div className="flex flex-1 min-h-0">
                           <div className="@max-[1300px]/lc:hidden bg-background border-border border-r flex flex-col gap-[calc(var(--lc-gap)*0.55)] p-[calc(var(--lc-gap)*0.6)] shrink-0 w-[var(--lc-rail)]">
                             <Item className="[a]:hover:bg-muted bg-card border border-border gap-[calc(var(--lc-pad)*0.4)] in-data-[slot=dropdown-menu-content]:p-0 leading-snug px-[calc(var(--lc-pad)*0.4)] py-[calc(var(--lc-pad)*0.3)] rounded-[var(--lc-radius)] text-[length:var(--lc-label)] text-muted-foreground" variant="outline" size="xs">
-                              <svg className="lucide lucide-search size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <svg className="lucide lucide-search size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="m21 21-4.34-4.34"></path>
-                                <circle cx="11" cy="11" r="8"></circle>
+                                <circle cx={11} cy={11} r={8}></circle>
                               </svg>
                               <span className="truncate">
                                 {"Search runs, records, tools"}
@@ -284,7 +284,7 @@ export function Pattern() {
                             </span>
                             <div className="flex flex-col gap-[calc(var(--lc-pad)*0.1)]">
                               <Item className="[a]:hover:bg-muted bg-muted border border-transparent font-medium gap-[calc(var(--lc-pad)*0.4)] in-data-[slot=dropdown-menu-content]:p-0 leading-snug px-[calc(var(--lc-pad)*0.4)] py-[calc(var(--lc-pad)*0.3)] rounded-[var(--lc-radius)] text-[length:var(--lc-label)] text-foreground" variant="default" size="xs">
-                                <svg className="lucide lucide-gauge size-[var(--lc-icon)] text-brand-ink" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-gauge size-[var(--lc-icon)] text-brand-ink" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="m12 14 4-4"></path>
                                   <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
                                 </svg>
@@ -293,7 +293,7 @@ export function Pattern() {
                                 </span>
                               </Item>
                               <Item className="[a]:hover:bg-muted border border-transparent gap-[calc(var(--lc-pad)*0.4)] in-data-[slot=dropdown-menu-content]:p-0 leading-snug px-[calc(var(--lc-pad)*0.4)] py-[calc(var(--lc-pad)*0.3)] rounded-[var(--lc-radius)] text-[length:var(--lc-label)] text-muted-foreground" variant="default" size="xs">
-                                <svg className="lucide lucide-plug-zap size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-plug-zap size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"></path>
                                   <path d="m2 22 3-3"></path>
                                   <path d="M7.5 13.5 10 11"></path>
@@ -305,8 +305,8 @@ export function Pattern() {
                                 </span>
                               </Item>
                               <Item className="[a]:hover:bg-muted border border-transparent gap-[calc(var(--lc-pad)*0.4)] in-data-[slot=dropdown-menu-content]:p-0 leading-snug px-[calc(var(--lc-pad)*0.4)] py-[calc(var(--lc-pad)*0.3)] rounded-[var(--lc-radius)] text-[length:var(--lc-label)] text-muted-foreground" variant="default" size="xs">
-                                <svg className="lucide lucide-database size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <svg className="lucide lucide-database size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                  <ellipse cx={12} cy={5} rx={9} ry={3}></ellipse>
                                   <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
                                   <path d="M3 12A9 3 0 0 0 21 12"></path>
                                 </svg>
@@ -315,21 +315,21 @@ export function Pattern() {
                                 </span>
                               </Item>
                               <Item className="[a]:hover:bg-muted border border-transparent gap-[calc(var(--lc-pad)*0.4)] in-data-[slot=dropdown-menu-content]:p-0 leading-snug px-[calc(var(--lc-pad)*0.4)] py-[calc(var(--lc-pad)*0.3)] rounded-[var(--lc-radius)] text-[length:var(--lc-label)] text-muted-foreground" variant="default" size="xs">
-                                <svg className="lucide lucide-users size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-users size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                                   <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                   <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                  <circle cx="9" cy="7" r="4"></circle>
+                                  <circle cx={9} cy={7} r={4}></circle>
                                 </svg>
                                 <span className="truncate">
                                   {"Workspace"}
                                 </span>
-                                <svg className="lucide lucide-chevron-right ms-auto size-[calc(var(--lc-icon)*0.82)] text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-chevron-right ms-auto size-[calc(var(--lc-icon)*0.82)] text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="m9 18 6-6-6-6"></path>
                                 </svg>
                               </Item>
                               <Item className="[a]:hover:bg-muted border border-transparent gap-[calc(var(--lc-pad)*0.4)] in-data-[slot=dropdown-menu-content]:p-0 leading-snug px-[calc(var(--lc-pad)*0.4)] py-[calc(var(--lc-pad)*0.3)] rounded-[var(--lc-radius)] text-[length:var(--lc-label)] text-muted-foreground" variant="default" size="xs">
-                                <svg className="lucide lucide-rocket size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-rocket size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                   <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"></path>
                                   <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"></path>
@@ -340,20 +340,20 @@ export function Pattern() {
                                 </span>
                               </Item>
                               <Item className="[a]:hover:bg-muted border border-transparent gap-[calc(var(--lc-pad)*0.4)] in-data-[slot=dropdown-menu-content]:p-0 leading-snug px-[calc(var(--lc-pad)*0.4)] py-[calc(var(--lc-pad)*0.3)] rounded-[var(--lc-radius)] text-[length:var(--lc-label)] text-muted-foreground" variant="default" size="xs">
-                                <svg className="lucide lucide-workflow size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                  <rect width="8" height="8" x="3" y="3" rx="2"></rect>
+                                <svg className="lucide lucide-workflow size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                  <rect width={8} height={8} x={3} y={3} rx={2}></rect>
                                   <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
-                                  <rect width="8" height="8" x="13" y="13" rx="2"></rect>
+                                  <rect width={8} height={8} x={13} y={13} rx={2}></rect>
                                 </svg>
                                 <span className="truncate">
                                   {"Runs"}
                                 </span>
-                                <svg className="lucide lucide-chevron-right ms-auto size-[calc(var(--lc-icon)*0.82)] text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-chevron-right ms-auto size-[calc(var(--lc-icon)*0.82)] text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="m9 18 6-6-6-6"></path>
                                 </svg>
                               </Item>
                               <Item className="[a]:hover:bg-muted border border-transparent gap-[calc(var(--lc-pad)*0.4)] in-data-[slot=dropdown-menu-content]:p-0 leading-snug px-[calc(var(--lc-pad)*0.4)] py-[calc(var(--lc-pad)*0.3)] rounded-[var(--lc-radius)] text-[length:var(--lc-label)] text-muted-foreground" variant="default" size="xs">
-                                <svg className="lucide lucide-shield-check size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-shield-check size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                                   <path d="m9 12 2 2 4-4"></path>
                                 </svg>
@@ -362,14 +362,14 @@ export function Pattern() {
                                 </span>
                               </Item>
                               <Item className="[a]:hover:bg-muted border border-transparent gap-[calc(var(--lc-pad)*0.4)] in-data-[slot=dropdown-menu-content]:p-0 leading-snug px-[calc(var(--lc-pad)*0.4)] py-[calc(var(--lc-pad)*0.3)] rounded-[var(--lc-radius)] text-[length:var(--lc-label)] text-muted-foreground" variant="default" size="xs">
-                                <svg className="lucide lucide-settings size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-settings size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
-                                  <circle cx="12" cy="12" r="3"></circle>
+                                  <circle cx={12} cy={12} r={3}></circle>
                                 </svg>
                                 <span className="truncate">
                                   {"Settings"}
                                 </span>
-                                <svg className="lucide lucide-chevron-right ms-auto size-[calc(var(--lc-icon)*0.82)] text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-chevron-right ms-auto size-[calc(var(--lc-icon)*0.82)] text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="m9 18 6-6-6-6"></path>
                                 </svg>
                               </Item>
@@ -404,7 +404,7 @@ export function Pattern() {
                               </div>
                             </div>
                             <div className="flex gap-[calc(var(--lc-pad)*0.4)] items-center px-[calc(var(--lc-pad)*0.2)]">
-                              <img className="object-cover ring-1 ring-border rounded-full shrink-0 size-[var(--lc-face)]" alt="" loading="lazy" width="96" height="96" decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-6.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
+                              <img className="object-cover ring-1 ring-border rounded-full shrink-0 size-[var(--lc-face)]" alt="" loading="lazy" width={96} height={96} decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-6.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
                               <span className="flex flex-col min-w-0">
                                 <span className="font-medium leading-snug text-[length:var(--lc-label)] truncate">
                                   {"Maya Lindqvist"}
@@ -413,28 +413,28 @@ export function Pattern() {
                                   {"Head of Ops"}
                                 </span>
                               </span>
-                              <svg className="lucide lucide-ellipsis ms-auto size-[var(--lc-icon)] text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <circle cx="12" cy="12" r="1"></circle>
-                                <circle cx="19" cy="12" r="1"></circle>
-                                <circle cx="5" cy="12" r="1"></circle>
+                              <svg className="lucide lucide-ellipsis ms-auto size-[var(--lc-icon)] text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <circle cx={12} cy={12} r={1}></circle>
+                                <circle cx={19} cy={12} r={1}></circle>
+                                <circle cx={5} cy={12} r={1}></circle>
                               </svg>
                             </div>
                           </div>
                           <div className="@max-[1300px]/lc:flex bg-background border-border border-r flex-col gap-[calc(var(--lc-pad)*0.28)] hidden items-center py-[calc(var(--lc-gap)*0.6)] shrink-0 w-[var(--lc-rail)]">
                             <span className="flex items-center justify-center mb-[calc(var(--lc-pad)*0.2)] size-[calc(var(--lc-rail)*0.56)] text-muted-foreground">
-                              <svg className="lucide lucide-search size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <svg className="lucide lucide-search size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="m21 21-4.34-4.34"></path>
-                                <circle cx="11" cy="11" r="8"></circle>
+                                <circle cx={11} cy={11} r={8}></circle>
                               </svg>
                             </span>
                             <span className="bg-muted flex items-center justify-center rounded-[var(--lc-radius)] size-[calc(var(--lc-rail)*0.56)] text-brand-ink">
-                              <svg className="lucide lucide-gauge size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <svg className="lucide lucide-gauge size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="m12 14 4-4"></path>
                                 <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
                               </svg>
                             </span>
                             <span className="flex items-center justify-center rounded-[var(--lc-radius)] size-[calc(var(--lc-rail)*0.56)] text-muted-foreground">
-                              <svg className="lucide lucide-plug-zap size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <svg className="lucide lucide-plug-zap size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"></path>
                                 <path d="m2 22 3-3"></path>
                                 <path d="M7.5 13.5 10 11"></path>
@@ -443,22 +443,22 @@ export function Pattern() {
                               </svg>
                             </span>
                             <span className="flex items-center justify-center rounded-[var(--lc-radius)] size-[calc(var(--lc-rail)*0.56)] text-muted-foreground">
-                              <svg className="lucide lucide-database size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                              <svg className="lucide lucide-database size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <ellipse cx={12} cy={5} rx={9} ry={3}></ellipse>
                                 <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
                                 <path d="M3 12A9 3 0 0 0 21 12"></path>
                               </svg>
                             </span>
                             <span className="flex items-center justify-center rounded-[var(--lc-radius)] size-[calc(var(--lc-rail)*0.56)] text-muted-foreground">
-                              <svg className="lucide lucide-users size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <svg className="lucide lucide-users size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                                 <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                 <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                <circle cx="9" cy="7" r="4"></circle>
+                                <circle cx={9} cy={7} r={4}></circle>
                               </svg>
                             </span>
                             <span className="flex items-center justify-center rounded-[var(--lc-radius)] size-[calc(var(--lc-rail)*0.56)] text-muted-foreground">
-                              <svg className="lucide lucide-rocket size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <svg className="lucide lucide-rocket size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                 <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"></path>
                                 <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"></path>
@@ -466,25 +466,25 @@ export function Pattern() {
                               </svg>
                             </span>
                             <span className="flex items-center justify-center rounded-[var(--lc-radius)] size-[calc(var(--lc-rail)*0.56)] text-muted-foreground">
-                              <svg className="lucide lucide-workflow size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                <rect width="8" height="8" x="3" y="3" rx="2"></rect>
+                              <svg className="lucide lucide-workflow size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <rect width={8} height={8} x={3} y={3} rx={2}></rect>
                                 <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
-                                <rect width="8" height="8" x="13" y="13" rx="2"></rect>
+                                <rect width={8} height={8} x={13} y={13} rx={2}></rect>
                               </svg>
                             </span>
                             <span className="flex items-center justify-center rounded-[var(--lc-radius)] size-[calc(var(--lc-rail)*0.56)] text-muted-foreground">
-                              <svg className="lucide lucide-shield-check size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <svg className="lucide lucide-shield-check size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                                 <path d="m9 12 2 2 4-4"></path>
                               </svg>
                             </span>
                             <span className="flex items-center justify-center rounded-[var(--lc-radius)] size-[calc(var(--lc-rail)*0.56)] text-muted-foreground">
-                              <svg className="lucide lucide-settings size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                              <svg className="lucide lucide-settings size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                 <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
-                                <circle cx="12" cy="12" r="3"></circle>
+                                <circle cx={12} cy={12} r={3}></circle>
                               </svg>
                             </span>
-                            <img className="mt-auto object-cover ring-1 ring-border rounded-full shrink-0 size-[var(--lc-face)]" alt="" loading="lazy" width="96" height="96" decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-6.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
+                            <img className="mt-auto object-cover ring-1 ring-border rounded-full shrink-0 size-[var(--lc-face)]" alt="" loading="lazy" width={96} height={96} decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-6.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
                           </div>
                           <div className="bg-background flex flex-1 flex-col gap-[var(--lc-gap)] min-w-0 overflow-clip p-[var(--lc-gap)]">
                             <div className="bg-card border border-border flex flex-col min-h-0 overflow-hidden rounded-[var(--lc-radius)] shrink-0">
@@ -526,7 +526,7 @@ export function Pattern() {
                                 <div className="flex flex-1 items-stretch min-w-0">
                                   <div className="flex flex-1 flex-col gap-[calc(var(--lc-pad)*0.35)] min-w-0">
                                     <span className="flex gap-[calc(var(--lc-pad)*0.3)] items-center leading-snug min-w-0 text-[length:var(--lc-label)] text-muted-foreground">
-                                      <svg className="lucide lucide-play shrink-0 size-[calc(var(--lc-icon)*0.9)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                      <svg className="lucide lucide-play shrink-0 size-[calc(var(--lc-icon)*0.9)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                         <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path>
                                       </svg>
                                       <span className="truncate">
@@ -540,7 +540,7 @@ export function Pattern() {
                                             {"58,247"}
                                           </span>
                                           <span className="bg-brand-subtle font-medium gap-[calc(var(--lc-icon)*0.22)] inline-flex items-center leading-snug px-[calc(var(--lc-pad)*0.32)] py-[calc(var(--lc-pad)*0.1)] rounded-full shrink-0 text-[length:var(--lc-micro)] text-brand-ink" aria-hidden="true">
-                                            <svg className="lucide lucide-trending-up shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                            <svg className="lucide lucide-trending-up shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                               <path d="M16 7h6v6"></path>
                                               <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                             </svg>
@@ -549,7 +549,7 @@ export function Pattern() {
                                         </div>
                                         <div className="@max-[1300px]/lc:h-[calc(var(--lc-pad)*1.3)] h-[calc(var(--lc-pad)*2.2)] w-full">
                                           <svg className="overflow-visible size-full" viewBox="0 0 132 40" preserveAspectRatio="none" aria-hidden="true">
-                                            <path className="stroke-brand-ink" d="M0 31 L22 28 L44 30 L66 24 L88 26 L110 19 L132 15" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
+                                            <path className="stroke-brand-ink" d="M0 31 L22 28 L44 30 L66 24 L88 26 L110 19 L132 15" fill="none" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
                                           </svg>
                                         </div>
                                       </div>
@@ -559,7 +559,7 @@ export function Pattern() {
                                             {"251,580"}
                                           </span>
                                           <span className="bg-brand-subtle font-medium gap-[calc(var(--lc-icon)*0.22)] inline-flex items-center leading-snug px-[calc(var(--lc-pad)*0.32)] py-[calc(var(--lc-pad)*0.1)] rounded-full shrink-0 text-[length:var(--lc-micro)] text-brand-ink" aria-hidden="true">
-                                            <svg className="lucide lucide-trending-up shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                            <svg className="lucide lucide-trending-up shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                               <path d="M16 7h6v6"></path>
                                               <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                             </svg>
@@ -568,7 +568,7 @@ export function Pattern() {
                                         </div>
                                         <div className="@max-[1300px]/lc:h-[calc(var(--lc-pad)*1.3)] h-[calc(var(--lc-pad)*2.2)] w-full">
                                           <svg className="overflow-visible size-full" viewBox="0 0 132 40" preserveAspectRatio="none" aria-hidden="true">
-                                            <path className="stroke-brand-ink" d="M0 33 L26 29 L53 31 L79 23 L106 24 L132 13" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
+                                            <path className="stroke-brand-ink" d="M0 33 L26 29 L53 31 L79 23 L106 24 L132 13" fill="none" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
                                           </svg>
                                         </div>
                                       </div>
@@ -578,7 +578,7 @@ export function Pattern() {
                                             {"2,852,270"}
                                           </span>
                                           <span className="bg-brand-subtle font-medium gap-[calc(var(--lc-icon)*0.22)] inline-flex items-center leading-snug px-[calc(var(--lc-pad)*0.32)] py-[calc(var(--lc-pad)*0.1)] rounded-full shrink-0 text-[length:var(--lc-micro)] text-brand-ink" aria-hidden="true">
-                                            <svg className="lucide lucide-trending-up shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                            <svg className="lucide lucide-trending-up shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                               <path d="M16 7h6v6"></path>
                                               <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                             </svg>
@@ -587,7 +587,7 @@ export function Pattern() {
                                         </div>
                                         <div className="@max-[1300px]/lc:h-[calc(var(--lc-pad)*1.3)] h-[calc(var(--lc-pad)*2.2)] w-full">
                                           <svg className="overflow-visible size-full" viewBox="0 0 132 40" preserveAspectRatio="none" aria-hidden="true">
-                                            <path className="stroke-brand-ink" d="M0 34 L18 30 L36 32 L54 25 L72 27 L90 19 L108 22 L132 10" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
+                                            <path className="stroke-brand-ink" d="M0 34 L18 30 L36 32 L54 25 L72 27 L90 19 L108 22 L132 10" fill="none" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
                                           </svg>
                                         </div>
                                       </div>
@@ -598,7 +598,7 @@ export function Pattern() {
                                   <span className="bg-border h-[calc(var(--lc-pad)*4)] mx-[calc(var(--lc-pad)*0.7)] self-center shrink-0 w-px"></span>
                                   <div className="flex flex-1 flex-col gap-[calc(var(--lc-pad)*0.35)] min-w-0">
                                     <span className="flex gap-[calc(var(--lc-pad)*0.3)] items-center leading-snug min-w-0 text-[length:var(--lc-label)] text-muted-foreground">
-                                      <svg className="lucide lucide-layers shrink-0 size-[calc(var(--lc-icon)*0.9)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                      <svg className="lucide lucide-layers shrink-0 size-[calc(var(--lc-icon)*0.9)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                         <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path>
                                         <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
                                         <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
@@ -614,7 +614,7 @@ export function Pattern() {
                                             {"38"}
                                           </span>
                                           <span className="bg-brand-subtle font-medium gap-[calc(var(--lc-icon)*0.22)] inline-flex items-center leading-snug px-[calc(var(--lc-pad)*0.32)] py-[calc(var(--lc-pad)*0.1)] rounded-full shrink-0 text-[length:var(--lc-micro)] text-brand-ink" aria-hidden="true">
-                                            <svg className="lucide lucide-trending-up shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                            <svg className="lucide lucide-trending-up shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                               <path d="M16 7h6v6"></path>
                                               <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                             </svg>
@@ -623,7 +623,7 @@ export function Pattern() {
                                         </div>
                                         <div className="@max-[1300px]/lc:h-[calc(var(--lc-pad)*1.3)] h-[calc(var(--lc-pad)*2.2)] w-full">
                                           <svg className="overflow-visible size-full" viewBox="0 0 132 40" preserveAspectRatio="none" aria-hidden="true">
-                                            <path className="stroke-brand-ink" d="M0 30 L22 30 L44 26 L66 27 L88 22 L110 23 L132 18" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
+                                            <path className="stroke-brand-ink" d="M0 30 L22 30 L44 26 L66 27 L88 22 L110 23 L132 18" fill="none" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
                                           </svg>
                                         </div>
                                       </div>
@@ -633,7 +633,7 @@ export function Pattern() {
                                             {"41"}
                                           </span>
                                           <span className="bg-brand-subtle font-medium gap-[calc(var(--lc-icon)*0.22)] inline-flex items-center leading-snug px-[calc(var(--lc-pad)*0.32)] py-[calc(var(--lc-pad)*0.1)] rounded-full shrink-0 text-[length:var(--lc-micro)] text-brand-ink" aria-hidden="true">
-                                            <svg className="lucide lucide-trending-up shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                            <svg className="lucide lucide-trending-up shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                               <path d="M16 7h6v6"></path>
                                               <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                             </svg>
@@ -642,7 +642,7 @@ export function Pattern() {
                                         </div>
                                         <div className="@max-[1300px]/lc:h-[calc(var(--lc-pad)*1.3)] h-[calc(var(--lc-pad)*2.2)] w-full">
                                           <svg className="overflow-visible size-full" viewBox="0 0 132 40" preserveAspectRatio="none" aria-hidden="true">
-                                            <path className="stroke-brand-ink" d="M0 32 L26 27 L53 28 L79 21 L106 22 L132 16" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
+                                            <path className="stroke-brand-ink" d="M0 32 L26 27 L53 28 L79 21 L106 22 L132 16" fill="none" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
                                           </svg>
                                         </div>
                                       </div>
@@ -652,7 +652,7 @@ export function Pattern() {
                                             {"44"}
                                           </span>
                                           <span className="bg-brand-subtle font-medium gap-[calc(var(--lc-icon)*0.22)] inline-flex items-center leading-snug px-[calc(var(--lc-pad)*0.32)] py-[calc(var(--lc-pad)*0.1)] rounded-full shrink-0 text-[length:var(--lc-micro)] text-brand-ink" aria-hidden="true">
-                                            <svg className="lucide lucide-trending-up shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                            <svg className="lucide lucide-trending-up shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                               <path d="M16 7h6v6"></path>
                                               <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                             </svg>
@@ -661,7 +661,7 @@ export function Pattern() {
                                         </div>
                                         <div className="@max-[1300px]/lc:h-[calc(var(--lc-pad)*1.3)] h-[calc(var(--lc-pad)*2.2)] w-full">
                                           <svg className="overflow-visible size-full" viewBox="0 0 132 40" preserveAspectRatio="none" aria-hidden="true">
-                                            <path className="stroke-brand-ink" d="M0 34 L18 31 L36 27 L54 28 L72 22 L90 19 L108 20 L132 12" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
+                                            <path className="stroke-brand-ink" d="M0 34 L18 31 L36 27 L54 28 L72 22 L90 19 L108 20 L132 12" fill="none" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
                                           </svg>
                                         </div>
                                       </div>
@@ -672,10 +672,10 @@ export function Pattern() {
                                   <span className="bg-border h-[calc(var(--lc-pad)*4)] mx-[calc(var(--lc-pad)*0.7)] self-center shrink-0 w-px"></span>
                                   <div className="flex flex-1 flex-col gap-[calc(var(--lc-pad)*0.35)] min-w-0">
                                     <span className="flex gap-[calc(var(--lc-pad)*0.3)] items-center leading-snug min-w-0 text-[length:var(--lc-label)] text-muted-foreground">
-                                      <svg className="lucide lucide-timer shrink-0 size-[calc(var(--lc-icon)*0.9)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                        <line x1="10" x2="14" y1="2" y2="2"></line>
-                                        <line x1="12" x2="15" y1="14" y2="11"></line>
-                                        <circle cx="12" cy="14" r="8"></circle>
+                                      <svg className="lucide lucide-timer shrink-0 size-[calc(var(--lc-icon)*0.9)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                        <line x1={10} x2={14} y1={2} y2={2}></line>
+                                        <line x1={12} x2={15} y1={14} y2={11}></line>
+                                        <circle cx={12} cy={14} r={8}></circle>
                                       </svg>
                                       <span className="truncate">
                                         {"Median latency"}
@@ -688,7 +688,7 @@ export function Pattern() {
                                             {"214ms"}
                                           </span>
                                           <span className="bg-brand-subtle font-medium gap-[calc(var(--lc-icon)*0.22)] inline-flex items-center leading-snug px-[calc(var(--lc-pad)*0.32)] py-[calc(var(--lc-pad)*0.1)] rounded-full shrink-0 text-[length:var(--lc-micro)] text-brand-ink" aria-hidden="true">
-                                            <svg className="lucide lucide-trending-down shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                            <svg className="lucide lucide-trending-down shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                               <path d="M16 17h6v-6"></path>
                                               <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                                             </svg>
@@ -697,7 +697,7 @@ export function Pattern() {
                                         </div>
                                         <div className="@max-[1300px]/lc:h-[calc(var(--lc-pad)*1.3)] h-[calc(var(--lc-pad)*2.2)] w-full">
                                           <svg className="overflow-visible size-full" viewBox="0 0 132 40" preserveAspectRatio="none" aria-hidden="true">
-                                            <path className="stroke-brand-ink" d="M0 14 L22 17 L44 15 L66 20 L88 18 L110 23 L132 22" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
+                                            <path className="stroke-brand-ink" d="M0 14 L22 17 L44 15 L66 20 L88 18 L110 23 L132 22" fill="none" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
                                           </svg>
                                         </div>
                                       </div>
@@ -707,7 +707,7 @@ export function Pattern() {
                                             {"221ms"}
                                           </span>
                                           <span className="bg-brand-subtle font-medium gap-[calc(var(--lc-icon)*0.22)] inline-flex items-center leading-snug px-[calc(var(--lc-pad)*0.32)] py-[calc(var(--lc-pad)*0.1)] rounded-full shrink-0 text-[length:var(--lc-micro)] text-brand-ink" aria-hidden="true">
-                                            <svg className="lucide lucide-trending-down shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                            <svg className="lucide lucide-trending-down shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                               <path d="M16 17h6v-6"></path>
                                               <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                                             </svg>
@@ -716,7 +716,7 @@ export function Pattern() {
                                         </div>
                                         <div className="@max-[1300px]/lc:h-[calc(var(--lc-pad)*1.3)] h-[calc(var(--lc-pad)*2.2)] w-full">
                                           <svg className="overflow-visible size-full" viewBox="0 0 132 40" preserveAspectRatio="none" aria-hidden="true">
-                                            <path className="stroke-brand-ink" d="M0 12 L26 16 L53 15 L79 21 L106 20 L132 25" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
+                                            <path className="stroke-brand-ink" d="M0 12 L26 16 L53 15 L79 21 L106 20 L132 25" fill="none" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
                                           </svg>
                                         </div>
                                       </div>
@@ -726,7 +726,7 @@ export function Pattern() {
                                             {"236ms"}
                                           </span>
                                           <span className="bg-brand-subtle font-medium gap-[calc(var(--lc-icon)*0.22)] inline-flex items-center leading-snug px-[calc(var(--lc-pad)*0.32)] py-[calc(var(--lc-pad)*0.1)] rounded-full shrink-0 text-[length:var(--lc-micro)] text-brand-ink" aria-hidden="true">
-                                            <svg className="lucide lucide-trending-down shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                            <svg className="lucide lucide-trending-down shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                               <path d="M16 17h6v-6"></path>
                                               <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                                             </svg>
@@ -735,7 +735,7 @@ export function Pattern() {
                                         </div>
                                         <div className="@max-[1300px]/lc:h-[calc(var(--lc-pad)*1.3)] h-[calc(var(--lc-pad)*2.2)] w-full">
                                           <svg className="overflow-visible size-full" viewBox="0 0 132 40" preserveAspectRatio="none" aria-hidden="true">
-                                            <path className="stroke-brand-ink" d="M0 10 L18 14 L36 13 L54 19 L72 17 L90 23 L108 21 L132 27" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
+                                            <path className="stroke-brand-ink" d="M0 10 L18 14 L36 13 L54 19 L72 17 L90 23 L108 21 L132 27" fill="none" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
                                           </svg>
                                         </div>
                                       </div>
@@ -746,10 +746,10 @@ export function Pattern() {
                                   <span className="bg-border h-[calc(var(--lc-pad)*4)] mx-[calc(var(--lc-pad)*0.7)] self-center shrink-0 w-px"></span>
                                   <div className="flex flex-1 flex-col gap-[calc(var(--lc-pad)*0.35)] min-w-0">
                                     <span className="flex gap-[calc(var(--lc-pad)*0.3)] items-center leading-snug min-w-0 text-[length:var(--lc-label)] text-muted-foreground">
-                                      <svg className="lucide lucide-circle-alert shrink-0 size-[calc(var(--lc-icon)*0.9)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                        <circle cx="12" cy="12" r="10"></circle>
-                                        <line x1="12" x2="12" y1="8" y2="12"></line>
-                                        <line x1="12" x2="12.01" y1="16" y2="16"></line>
+                                      <svg className="lucide lucide-circle-alert shrink-0 size-[calc(var(--lc-icon)*0.9)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                        <circle cx={12} cy={12} r={10}></circle>
+                                        <line x1={12} x2={12} y1={8} y2={12}></line>
+                                        <line x1={12} x2={12.01} y1={16} y2={16}></line>
                                       </svg>
                                       <span className="truncate">
                                         {"Error rate"}
@@ -762,7 +762,7 @@ export function Pattern() {
                                             {"0.14%"}
                                           </span>
                                           <span className="bg-brand-subtle font-medium gap-[calc(var(--lc-icon)*0.22)] inline-flex items-center leading-snug px-[calc(var(--lc-pad)*0.32)] py-[calc(var(--lc-pad)*0.1)] rounded-full shrink-0 text-[length:var(--lc-micro)] text-brand-ink" aria-hidden="true">
-                                            <svg className="lucide lucide-trending-down shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                            <svg className="lucide lucide-trending-down shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                               <path d="M16 17h6v-6"></path>
                                               <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                                             </svg>
@@ -771,7 +771,7 @@ export function Pattern() {
                                         </div>
                                         <div className="@max-[1300px]/lc:h-[calc(var(--lc-pad)*1.3)] h-[calc(var(--lc-pad)*2.2)] w-full">
                                           <svg className="overflow-visible size-full" viewBox="0 0 132 40" preserveAspectRatio="none" aria-hidden="true">
-                                            <path className="stroke-brand-ink" d="M0 18 L22 22 L44 19 L66 24 L88 21 L110 26 L132 25" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
+                                            <path className="stroke-brand-ink" d="M0 18 L22 22 L44 19 L66 24 L88 21 L110 26 L132 25" fill="none" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
                                           </svg>
                                         </div>
                                       </div>
@@ -781,7 +781,7 @@ export function Pattern() {
                                             {"0.11%"}
                                           </span>
                                           <span className="bg-brand-subtle font-medium gap-[calc(var(--lc-icon)*0.22)] inline-flex items-center leading-snug px-[calc(var(--lc-pad)*0.32)] py-[calc(var(--lc-pad)*0.1)] rounded-full shrink-0 text-[length:var(--lc-micro)] text-brand-ink" aria-hidden="true">
-                                            <svg className="lucide lucide-trending-down shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                            <svg className="lucide lucide-trending-down shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                               <path d="M16 17h6v-6"></path>
                                               <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                                             </svg>
@@ -790,7 +790,7 @@ export function Pattern() {
                                         </div>
                                         <div className="@max-[1300px]/lc:h-[calc(var(--lc-pad)*1.3)] h-[calc(var(--lc-pad)*2.2)] w-full">
                                           <svg className="overflow-visible size-full" viewBox="0 0 132 40" preserveAspectRatio="none" aria-hidden="true">
-                                            <path className="stroke-brand-ink" d="M0 16 L26 21 L53 19 L79 25 L106 23 L132 28" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
+                                            <path className="stroke-brand-ink" d="M0 16 L26 21 L53 19 L79 25 L106 23 L132 28" fill="none" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
                                           </svg>
                                         </div>
                                       </div>
@@ -800,7 +800,7 @@ export function Pattern() {
                                             {"0.19%"}
                                           </span>
                                           <span className="bg-destructive/10 dark:text-destructive font-medium gap-[calc(var(--lc-icon)*0.22)] inline-flex items-center leading-snug px-[calc(var(--lc-pad)*0.32)] py-[calc(var(--lc-pad)*0.1)] rounded-full shrink-0 text-[color-mix(in_oklab,var(--destructive)_76%,black)] text-[length:var(--lc-micro)]" aria-hidden="true">
-                                            <svg className="lucide lucide-trending-up shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                            <svg className="lucide lucide-trending-up shrink-0 size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                               <path d="M16 7h6v6"></path>
                                               <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                                             </svg>
@@ -809,7 +809,7 @@ export function Pattern() {
                                         </div>
                                         <div className="@max-[1300px]/lc:h-[calc(var(--lc-pad)*1.3)] h-[calc(var(--lc-pad)*2.2)] w-full">
                                           <svg className="overflow-visible size-full" viewBox="0 0 132 40" preserveAspectRatio="none" aria-hidden="true">
-                                            <path className="stroke-destructive" d="M0 20 L18 17 L36 23 L54 19 L72 25 L90 21 L108 27 L132 16" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
+                                            <path className="stroke-destructive" d="M0 20 L18 17 L36 23 L54 19 L72 25 L90 21 L108 27 L132 16" fill="none" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
                                           </svg>
                                         </div>
                                       </div>
@@ -819,7 +819,7 @@ export function Pattern() {
                               </div>
                               <div className="bg-muted flex gap-[var(--lc-pad)] items-center justify-between leading-snug mt-auto px-[var(--lc-pad)] py-[calc(var(--lc-pad)*0.55)] shrink-0 text-[length:var(--lc-label)] text-muted-foreground">
                                 <span className="flex gap-[calc(var(--lc-pad)*0.35)] items-center min-w-0">
-                                  <svg className="lucide lucide-chart-line shrink-0 size-[calc(var(--lc-icon)*0.9)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                  <svg className="lucide lucide-chart-line shrink-0 size-[calc(var(--lc-icon)*0.9)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                     <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                                     <path d="m19 9-5 5-4-4-3 3"></path>
                                   </svg>
@@ -844,7 +844,7 @@ export function Pattern() {
                                 <span className="@max-[700px]/lc:hidden flex font-medium gap-[calc(var(--lc-pad)*0.3)] items-center shrink-0 text-foreground">
                                   {"View"}
                                   {"runs"}
-                                  <svg className="lucide lucide-arrow-right size-[calc(var(--lc-icon)*0.9)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                  <svg className="lucide lucide-arrow-right size-[calc(var(--lc-icon)*0.9)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                     <path d="M5 12h14"></path>
                                     <path d="m12 5 7 7-7 7"></path>
                                   </svg>
@@ -898,14 +898,14 @@ export function Pattern() {
                                   <div className="flex-1 min-h-0 relative w-full">
                                     <svg className="size-full" viewBox="0 0 560 210" preserveAspectRatio="none" aria-hidden="true">
                                       <defs>
-                                        <lineargradient className="text-brand-ink" id="lc-overview-throughput-fill" x1="0" y1="0" x2="0" y2="1">
-                                          <stop offset="0%" stopColor="currentColor" stopOpacity="0.3"></stop>
-                                          <stop offset="100%" stopColor="currentColor" stopOpacity="0.02"></stop>
+                                        <lineargradient className="text-brand-ink" id="lc-overview-throughput-fill" x1={0} y1={0} x2={0} y2={1}>
+                                          <stop offset="0%" stopColor="currentColor" stopOpacity={0.3}></stop>
+                                          <stop offset="100%" stopColor="currentColor" stopOpacity={0.02}></stop>
                                         </lineargradient>
                                       </defs>
                                       <path d="M0 143.6447963800905 C4.057971014492754 144.71631473102062 16.231884057971016 147.93086978381095 24.347826086956523 150.0739064856712 C32.46376811594203 152.21694318753143 40.57971014492754 154.8957390648567 48.69565217391305 156.50301659125188 C56.811594202898554 158.11029411764704 64.92753623188406 159.035696329814 73.04347826086956 159.71757164404224 C81.15942028985506 160.3994469582705 89.27536231884058 161.032616892911 97.3913043478261 160.5942684766214 C105.50724637681161 160.15592006033182 113.62318840579712 159.5227501256913 121.73913043478262 157.08748114630467 C129.85507246376812 154.65221216691805 137.97101449275362 151.1454248366013 146.08695652173913 145.98265460030166 C154.20289855072463 140.819884364002 162.31884057971016 134.0985419808949 170.43478260869566 126.11085972850678 C178.55072463768116 118.12317747611866 186.66666666666669 106.92094017094018 194.7826086956522 98.05656108597286 C202.8985507246377 89.19218200100553 211.01449275362322 79.93815987933635 219.13043478260872 72.92458521870287 C227.24637681159422 65.91101055806939 235.36231884057975 60.0663650075415 243.47826086956525 55.97511312217196 C251.59420289855075 51.883861236802424 259.71014492753625 48.96153846153846 267.82608695652175 48.37707390648566 C275.94202898550725 47.792609351432866 284.05797101449275 53.63725490196077 292.17391304347825 52.46832579185519 C300.28985507246375 51.29939668174961 308.4057971014493 45.06510809451985 316.5217391304348 41.36349924585218 C324.6376811594203 37.661890397184514 332.7536231884058 33.96028154851684 340.8695652173913 30.25867269984917 C348.9855072463768 26.5570638511815 357.10144927536237 19.835721468074414 365.21739130434787 19.15384615384616 C373.33333333333337 18.471970839617907 381.4492753623189 22.952865761689296 389.5652173913044 26.16742081447964 C397.6811594202899 29.381975867269986 405.7971014492754 32.79135243841126 413.9130434782609 38.44117647058823 C422.0289855072464 44.091000502765205 430.14492753623193 52.85796882855705 438.26086956521743 60.066365007541464 C446.37681159420293 67.27476118652588 454.49275362318843 74.48315736551031 462.60869565217394 81.69155354449472 C470.72463768115944 88.89994972347914 478.840579710145 96.98504273504274 486.9565217391305 103.31674208144797 C495.072463768116 109.6484414278532 503.1884057971015 114.81121166415284 511.304347826087 119.68174962292609 C519.4202898550725 124.55228758169935 527.536231884058 129.1305932629462 535.6521739130435 132.5399698340875 C543.768115942029 135.94934640522877 555.9420289855072 138.87166918049272 560 140.13800904977376 L560 210 L0 210 Z" fill="url(#lc-overview-throughput-fill)"></path>
-                                      <path className="stroke-brand-ink" d="M0 143.6447963800905 C4.057971014492754 144.71631473102062 16.231884057971016 147.93086978381095 24.347826086956523 150.0739064856712 C32.46376811594203 152.21694318753143 40.57971014492754 154.8957390648567 48.69565217391305 156.50301659125188 C56.811594202898554 158.11029411764704 64.92753623188406 159.035696329814 73.04347826086956 159.71757164404224 C81.15942028985506 160.3994469582705 89.27536231884058 161.032616892911 97.3913043478261 160.5942684766214 C105.50724637681161 160.15592006033182 113.62318840579712 159.5227501256913 121.73913043478262 157.08748114630467 C129.85507246376812 154.65221216691805 137.97101449275362 151.1454248366013 146.08695652173913 145.98265460030166 C154.20289855072463 140.819884364002 162.31884057971016 134.0985419808949 170.43478260869566 126.11085972850678 C178.55072463768116 118.12317747611866 186.66666666666669 106.92094017094018 194.7826086956522 98.05656108597286 C202.8985507246377 89.19218200100553 211.01449275362322 79.93815987933635 219.13043478260872 72.92458521870287 C227.24637681159422 65.91101055806939 235.36231884057975 60.0663650075415 243.47826086956525 55.97511312217196 C251.59420289855075 51.883861236802424 259.71014492753625 48.96153846153846 267.82608695652175 48.37707390648566 C275.94202898550725 47.792609351432866 284.05797101449275 53.63725490196077 292.17391304347825 52.46832579185519 C300.28985507246375 51.29939668174961 308.4057971014493 45.06510809451985 316.5217391304348 41.36349924585218 C324.6376811594203 37.661890397184514 332.7536231884058 33.96028154851684 340.8695652173913 30.25867269984917 C348.9855072463768 26.5570638511815 357.10144927536237 19.835721468074414 365.21739130434787 19.15384615384616 C373.33333333333337 18.471970839617907 381.4492753623189 22.952865761689296 389.5652173913044 26.16742081447964 C397.6811594202899 29.381975867269986 405.7971014492754 32.79135243841126 413.9130434782609 38.44117647058823 C422.0289855072464 44.091000502765205 430.14492753623193 52.85796882855705 438.26086956521743 60.066365007541464 C446.37681159420293 67.27476118652588 454.49275362318843 74.48315736551031 462.60869565217394 81.69155354449472 C470.72463768115944 88.89994972347914 478.840579710145 96.98504273504274 486.9565217391305 103.31674208144797 C495.072463768116 109.6484414278532 503.1884057971015 114.81121166415284 511.304347826087 119.68174962292609 C519.4202898550725 124.55228758169935 527.536231884058 129.1305932629462 535.6521739130435 132.5399698340875 C543.768115942029 135.94934640522877 555.9420289855072 138.87166918049272 560 140.13800904977376" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
-                                      <path className="dark:stroke-foreground lc-trace stroke-brand" d="M0 143.6447963800905 C4.057971014492754 144.71631473102062 16.231884057971016 147.93086978381095 24.347826086956523 150.0739064856712 C32.46376811594203 152.21694318753143 40.57971014492754 154.8957390648567 48.69565217391305 156.50301659125188 C56.811594202898554 158.11029411764704 64.92753623188406 159.035696329814 73.04347826086956 159.71757164404224 C81.15942028985506 160.3994469582705 89.27536231884058 161.032616892911 97.3913043478261 160.5942684766214 C105.50724637681161 160.15592006033182 113.62318840579712 159.5227501256913 121.73913043478262 157.08748114630467 C129.85507246376812 154.65221216691805 137.97101449275362 151.1454248366013 146.08695652173913 145.98265460030166 C154.20289855072463 140.819884364002 162.31884057971016 134.0985419808949 170.43478260869566 126.11085972850678 C178.55072463768116 118.12317747611866 186.66666666666669 106.92094017094018 194.7826086956522 98.05656108597286 C202.8985507246377 89.19218200100553 211.01449275362322 79.93815987933635 219.13043478260872 72.92458521870287 C227.24637681159422 65.91101055806939 235.36231884057975 60.0663650075415 243.47826086956525 55.97511312217196 C251.59420289855075 51.883861236802424 259.71014492753625 48.96153846153846 267.82608695652175 48.37707390648566 C275.94202898550725 47.792609351432866 284.05797101449275 53.63725490196077 292.17391304347825 52.46832579185519 C300.28985507246375 51.29939668174961 308.4057971014493 45.06510809451985 316.5217391304348 41.36349924585218 C324.6376811594203 37.661890397184514 332.7536231884058 33.96028154851684 340.8695652173913 30.25867269984917 C348.9855072463768 26.5570638511815 357.10144927536237 19.835721468074414 365.21739130434787 19.15384615384616 C373.33333333333337 18.471970839617907 381.4492753623189 22.952865761689296 389.5652173913044 26.16742081447964 C397.6811594202899 29.381975867269986 405.7971014492754 32.79135243841126 413.9130434782609 38.44117647058823 C422.0289855072464 44.091000502765205 430.14492753623193 52.85796882855705 438.26086956521743 60.066365007541464 C446.37681159420293 67.27476118652588 454.49275362318843 74.48315736551031 462.60869565217394 81.69155354449472 C470.72463768115944 88.89994972347914 478.840579710145 96.98504273504274 486.9565217391305 103.31674208144797 C495.072463768116 109.6484414278532 503.1884057971015 114.81121166415284 511.304347826087 119.68174962292609 C519.4202898550725 124.55228758169935 527.536231884058 129.1305932629462 535.6521739130435 132.5399698340875 C543.768115942029 135.94934640522877 555.9420289855072 138.87166918049272 560 140.13800904977376" fill="none" pathlength="100" strokeWidth="2.5" strokeDasharray="12 88" strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
+                                      <path className="stroke-brand-ink" d="M0 143.6447963800905 C4.057971014492754 144.71631473102062 16.231884057971016 147.93086978381095 24.347826086956523 150.0739064856712 C32.46376811594203 152.21694318753143 40.57971014492754 154.8957390648567 48.69565217391305 156.50301659125188 C56.811594202898554 158.11029411764704 64.92753623188406 159.035696329814 73.04347826086956 159.71757164404224 C81.15942028985506 160.3994469582705 89.27536231884058 161.032616892911 97.3913043478261 160.5942684766214 C105.50724637681161 160.15592006033182 113.62318840579712 159.5227501256913 121.73913043478262 157.08748114630467 C129.85507246376812 154.65221216691805 137.97101449275362 151.1454248366013 146.08695652173913 145.98265460030166 C154.20289855072463 140.819884364002 162.31884057971016 134.0985419808949 170.43478260869566 126.11085972850678 C178.55072463768116 118.12317747611866 186.66666666666669 106.92094017094018 194.7826086956522 98.05656108597286 C202.8985507246377 89.19218200100553 211.01449275362322 79.93815987933635 219.13043478260872 72.92458521870287 C227.24637681159422 65.91101055806939 235.36231884057975 60.0663650075415 243.47826086956525 55.97511312217196 C251.59420289855075 51.883861236802424 259.71014492753625 48.96153846153846 267.82608695652175 48.37707390648566 C275.94202898550725 47.792609351432866 284.05797101449275 53.63725490196077 292.17391304347825 52.46832579185519 C300.28985507246375 51.29939668174961 308.4057971014493 45.06510809451985 316.5217391304348 41.36349924585218 C324.6376811594203 37.661890397184514 332.7536231884058 33.96028154851684 340.8695652173913 30.25867269984917 C348.9855072463768 26.5570638511815 357.10144927536237 19.835721468074414 365.21739130434787 19.15384615384616 C373.33333333333337 18.471970839617907 381.4492753623189 22.952865761689296 389.5652173913044 26.16742081447964 C397.6811594202899 29.381975867269986 405.7971014492754 32.79135243841126 413.9130434782609 38.44117647058823 C422.0289855072464 44.091000502765205 430.14492753623193 52.85796882855705 438.26086956521743 60.066365007541464 C446.37681159420293 67.27476118652588 454.49275362318843 74.48315736551031 462.60869565217394 81.69155354449472 C470.72463768115944 88.89994972347914 478.840579710145 96.98504273504274 486.9565217391305 103.31674208144797 C495.072463768116 109.6484414278532 503.1884057971015 114.81121166415284 511.304347826087 119.68174962292609 C519.4202898550725 124.55228758169935 527.536231884058 129.1305932629462 535.6521739130435 132.5399698340875 C543.768115942029 135.94934640522877 555.9420289855072 138.87166918049272 560 140.13800904977376" fill="none" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
+                                      <path className="dark:stroke-foreground lc-trace stroke-brand" d="M0 143.6447963800905 C4.057971014492754 144.71631473102062 16.231884057971016 147.93086978381095 24.347826086956523 150.0739064856712 C32.46376811594203 152.21694318753143 40.57971014492754 154.8957390648567 48.69565217391305 156.50301659125188 C56.811594202898554 158.11029411764704 64.92753623188406 159.035696329814 73.04347826086956 159.71757164404224 C81.15942028985506 160.3994469582705 89.27536231884058 161.032616892911 97.3913043478261 160.5942684766214 C105.50724637681161 160.15592006033182 113.62318840579712 159.5227501256913 121.73913043478262 157.08748114630467 C129.85507246376812 154.65221216691805 137.97101449275362 151.1454248366013 146.08695652173913 145.98265460030166 C154.20289855072463 140.819884364002 162.31884057971016 134.0985419808949 170.43478260869566 126.11085972850678 C178.55072463768116 118.12317747611866 186.66666666666669 106.92094017094018 194.7826086956522 98.05656108597286 C202.8985507246377 89.19218200100553 211.01449275362322 79.93815987933635 219.13043478260872 72.92458521870287 C227.24637681159422 65.91101055806939 235.36231884057975 60.0663650075415 243.47826086956525 55.97511312217196 C251.59420289855075 51.883861236802424 259.71014492753625 48.96153846153846 267.82608695652175 48.37707390648566 C275.94202898550725 47.792609351432866 284.05797101449275 53.63725490196077 292.17391304347825 52.46832579185519 C300.28985507246375 51.29939668174961 308.4057971014493 45.06510809451985 316.5217391304348 41.36349924585218 C324.6376811594203 37.661890397184514 332.7536231884058 33.96028154851684 340.8695652173913 30.25867269984917 C348.9855072463768 26.5570638511815 357.10144927536237 19.835721468074414 365.21739130434787 19.15384615384616 C373.33333333333337 18.471970839617907 381.4492753623189 22.952865761689296 389.5652173913044 26.16742081447964 C397.6811594202899 29.381975867269986 405.7971014492754 32.79135243841126 413.9130434782609 38.44117647058823 C422.0289855072464 44.091000502765205 430.14492753623193 52.85796882855705 438.26086956521743 60.066365007541464 C446.37681159420293 67.27476118652588 454.49275362318843 74.48315736551031 462.60869565217394 81.69155354449472 C470.72463768115944 88.89994972347914 478.840579710145 96.98504273504274 486.9565217391305 103.31674208144797 C495.072463768116 109.6484414278532 503.1884057971015 114.81121166415284 511.304347826087 119.68174962292609 C519.4202898550725 124.55228758169935 527.536231884058 129.1305932629462 535.6521739130435 132.5399698340875 C543.768115942029 135.94934640522877 555.9420289855072 138.87166918049272 560 140.13800904977376" fill="none" pathlength="100" strokeWidth={2.5} strokeDasharray="12 88" strokeLinecap="round" strokeLinejoin="round" vector-effect="non-scaling-stroke"></path>
                                     </svg>
                                     <span className="-translate-x-1/2 -translate-y-1/2 absolute pointer-events-none" aria-hidden="true" style={{left: "100%", top: "66.73238526179702%"}}>
                                       <span className="bg-brand-ink block lc-ping rounded-full size-[calc(var(--lc-icon)*0.34)]"></span>
@@ -1148,8 +1148,8 @@ export function Pattern() {
                                 </div>
                                 <div className="bg-muted flex gap-[var(--lc-pad)] items-center justify-between leading-snug mt-auto px-[var(--lc-pad)] py-[calc(var(--lc-pad)*0.55)] shrink-0 text-[length:var(--lc-label)] text-muted-foreground">
                                   <span className="flex gap-[calc(var(--lc-pad)*0.35)] items-center min-w-0">
-                                    <svg className="lucide lucide-clock shrink-0 size-[calc(var(--lc-icon)*0.9)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                      <circle cx="12" cy="12" r="10"></circle>
+                                    <svg className="lucide lucide-clock shrink-0 size-[calc(var(--lc-icon)*0.9)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                      <circle cx={12} cy={12} r={10}></circle>
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="truncate">
@@ -1180,7 +1180,7 @@ export function Pattern() {
                                 <div className="divide-border divide-y flex flex-col min-h-0">
                                   <div className="flex gap-[calc(var(--lc-pad)*0.5)] items-center min-w-0 px-[var(--lc-pad)] py-[calc(var(--lc-pad)*0.5)]">
                                     <span className="flex items-center shrink-0">
-                                      <img className="object-cover ring-1 ring-border rounded-full shrink-0 size-[var(--lc-face)]" alt="" loading="lazy" width="96" height="96" decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-3.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-3.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-3.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
+                                      <img className="object-cover ring-1 ring-border rounded-full shrink-0 size-[var(--lc-face)]" alt="" loading="lazy" width={96} height={96} decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-3.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-3.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-3.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
                                     </span>
                                     <span className="flex flex-1 flex-col gap-[calc(var(--lc-pad)*0.12)] min-w-0">
                                       <span className="font-medium leading-snug text-[length:var(--lc-body)] text-foreground truncate">
@@ -1203,7 +1203,7 @@ export function Pattern() {
                                   </div>
                                   <div className="flex gap-[calc(var(--lc-pad)*0.5)] items-center min-w-0 px-[var(--lc-pad)] py-[calc(var(--lc-pad)*0.5)]">
                                     <span className="flex items-center shrink-0">
-                                      <img className="object-cover ring-1 ring-border rounded-full shrink-0 size-[var(--lc-face)]" alt="" loading="lazy" width="96" height="96" decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-4.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-4.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-4.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
+                                      <img className="object-cover ring-1 ring-border rounded-full shrink-0 size-[var(--lc-face)]" alt="" loading="lazy" width={96} height={96} decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-4.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-4.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-4.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
                                     </span>
                                     <span className="flex flex-1 flex-col gap-[calc(var(--lc-pad)*0.12)] min-w-0">
                                       <span className="font-medium leading-snug text-[length:var(--lc-body)] text-foreground truncate">
@@ -1226,7 +1226,7 @@ export function Pattern() {
                                   </div>
                                   <div className="flex gap-[calc(var(--lc-pad)*0.5)] items-center min-w-0 px-[var(--lc-pad)] py-[calc(var(--lc-pad)*0.5)]">
                                     <span className="flex items-center shrink-0">
-                                      <img className="object-cover ring-1 ring-border rounded-full shrink-0 size-[var(--lc-face)]" alt="" loading="lazy" width="96" height="96" decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-5.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-5.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-5.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
+                                      <img className="object-cover ring-1 ring-border rounded-full shrink-0 size-[var(--lc-face)]" alt="" loading="lazy" width={96} height={96} decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-5.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-5.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-5.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
                                     </span>
                                     <span className="flex flex-1 flex-col gap-[calc(var(--lc-pad)*0.12)] min-w-0">
                                       <span className="font-medium leading-snug text-[length:var(--lc-body)] text-foreground truncate">
@@ -1249,7 +1249,7 @@ export function Pattern() {
                                   </div>
                                   <div className="flex gap-[calc(var(--lc-pad)*0.5)] items-center min-w-0 px-[var(--lc-pad)] py-[calc(var(--lc-pad)*0.5)]">
                                     <span className="flex items-center shrink-0">
-                                      <img className="object-cover ring-1 ring-border rounded-full shrink-0 size-[var(--lc-face)]" alt="" loading="lazy" width="96" height="96" decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-2.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-2.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-2.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
+                                      <img className="object-cover ring-1 ring-border rounded-full shrink-0 size-[var(--lc-face)]" alt="" loading="lazy" width={96} height={96} decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-2.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-2.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-2.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
                                     </span>
                                     <span className="flex flex-1 flex-col gap-[calc(var(--lc-pad)*0.12)] min-w-0">
                                       <span className="font-medium leading-snug text-[length:var(--lc-body)] text-foreground truncate">
@@ -1273,8 +1273,8 @@ export function Pattern() {
                                 </div>
                                 <div className="bg-muted flex gap-[var(--lc-pad)] items-center justify-between leading-snug mt-auto px-[var(--lc-pad)] py-[calc(var(--lc-pad)*0.55)] shrink-0 text-[length:var(--lc-label)] text-muted-foreground">
                                   <span className="flex gap-[calc(var(--lc-pad)*0.35)] items-center min-w-0">
-                                    <svg className="lucide lucide-clock shrink-0 size-[calc(var(--lc-icon)*0.9)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                      <circle cx="12" cy="12" r="10"></circle>
+                                    <svg className="lucide lucide-clock shrink-0 size-[calc(var(--lc-icon)*0.9)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                      <circle cx={12} cy={12} r={10}></circle>
                                       <path d="M12 6v6l4 2"></path>
                                     </svg>
                                     <span className="truncate">
@@ -1283,7 +1283,7 @@ export function Pattern() {
                                     </span>
                                   </span>
                                   <span className="flex gap-[calc(var(--lc-pad)*0.3)] items-center shrink-0">
-                                    <img className="object-cover ring-1 ring-border rounded-full shrink-0 size-[calc(var(--lc-face)*0.72)]" alt="" loading="lazy" width="96" height="96" decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-6.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
+                                    <img className="object-cover ring-1 ring-border rounded-full shrink-0 size-[calc(var(--lc-face)*0.72)]" alt="" loading="lazy" width={96} height={96} decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-6.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
                                     <span className="font-medium text-foreground">
                                       {"Maya Lindqvist"}
                                     </span>
@@ -1305,7 +1305,7 @@ export function Pattern() {
                   {"Limelight 2.0"}
                 </span>
                 {"Typed integrations just shipped"}
-                <svg className="fine-pointer:group-hover:translate-x-0.5 lucide lucide-arrow-right size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <svg className="fine-pointer:group-hover:translate-x-0.5 lucide lucide-arrow-right size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
                 </svg>
@@ -1544,7 +1544,7 @@ export function Pattern() {
             <div role="tablist" aria-orientation="vertical" aria-label="Four cues from signup to production">
               <div className="border-border border-l relative">
                 <span className="-left-px absolute bg-linear-to-b from-brand-accent h-full to-brand-ink top-0 w-px" aria-hidden="true"></span>
-                <button className="cursor-pointer flex focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-ring/50 gap-4 items-baseline outline-none press px-5 py-5 text-left w-full" type="button" role="tab" id="step-tab-connect" aria-selected="true" aria-controls="step-panel" tabIndex="0">
+                <button className="cursor-pointer flex focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-ring/50 gap-4 items-baseline outline-none press px-5 py-5 text-left w-full" type="button" role="tab" id="step-tab-connect" aria-selected="true" aria-controls="step-panel" tabIndex={0}>
                   <span className="font-mono shrink-0 text-brand-ink text-xs tracking-widest transition-colors w-7">
                     {"01"}
                   </span>
@@ -1559,7 +1559,7 @@ export function Pattern() {
                 </div>
               </div>
               <div className="border-border border-l relative">
-                <button className="cursor-pointer flex focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-ring/50 gap-4 items-baseline outline-none press px-5 py-5 text-left w-full" type="button" role="tab" id="step-tab-analyze" aria-selected="false" aria-controls="step-panel" tabIndex="-1">
+                <button className="cursor-pointer flex focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-ring/50 gap-4 items-baseline outline-none press px-5 py-5 text-left w-full" type="button" role="tab" id="step-tab-analyze" aria-selected="false" aria-controls="step-panel" tabIndex={-1}>
                   <span className="font-mono shrink-0 text-muted-foreground text-xs tracking-widest transition-colors w-7">
                     {"02"}
                   </span>
@@ -1569,7 +1569,7 @@ export function Pattern() {
                 </button>
               </div>
               <div className="border-border border-l relative">
-                <button className="cursor-pointer flex focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-ring/50 gap-4 items-baseline outline-none press px-5 py-5 text-left w-full" type="button" role="tab" id="step-tab-configure" aria-selected="false" aria-controls="step-panel" tabIndex="-1">
+                <button className="cursor-pointer flex focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-ring/50 gap-4 items-baseline outline-none press px-5 py-5 text-left w-full" type="button" role="tab" id="step-tab-configure" aria-selected="false" aria-controls="step-panel" tabIndex={-1}>
                   <span className="font-mono shrink-0 text-muted-foreground text-xs tracking-widest transition-colors w-7">
                     {"03"}
                   </span>
@@ -1579,7 +1579,7 @@ export function Pattern() {
                 </button>
               </div>
               <div className="border-border border-l relative">
-                <button className="cursor-pointer flex focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-ring/50 gap-4 items-baseline outline-none press px-5 py-5 text-left w-full" type="button" role="tab" id="step-tab-deploy" aria-selected="false" aria-controls="step-panel" tabIndex="-1">
+                <button className="cursor-pointer flex focus-visible:ring-3 focus-visible:ring-inset focus-visible:ring-ring/50 gap-4 items-baseline outline-none press px-5 py-5 text-left w-full" type="button" role="tab" id="step-tab-deploy" aria-selected="false" aria-controls="step-panel" tabIndex={-1}>
                   <span className="font-mono shrink-0 text-muted-foreground text-xs tracking-widest transition-colors w-7">
                     {"04"}
                   </span>
@@ -1589,7 +1589,7 @@ export function Pattern() {
                 </button>
               </div>
             </div>
-            <div role="tabpanel" id="step-panel" aria-labelledby="step-tab-connect" tabIndex="0">
+            <div role="tabpanel" id="step-panel" aria-labelledby="step-tab-connect" tabIndex={0}>
               <figure className="bg-card border border-border dark:shadow-none overflow-hidden relative rounded-2xl shadow-lift">
                 <figcaption className="border-b border-border flex flex-wrap gap-x-6 gap-y-1 items-center justify-between px-4 py-3.5 relative sm:px-5 text-foreground text-sm">
                   <span className="gap-x-3 inline-flex items-center min-w-0">
@@ -1621,7 +1621,7 @@ export function Pattern() {
                               <span className="bg-brand flex items-center justify-center rounded-[var(--lc-radius)] shrink-0 text-brand-foreground" style={{width: "var(--lc-tile)", height: "var(--lc-tile)"}}>
                                 <svg className="size-[calc(var(--lc-tile)*0.56)]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                   <path d="M10 2.5h4l5.5 15.5h-15L10 2.5z"></path>
-                                  <ellipse cx="12" cy="20.25" rx="10" ry="2.25" opacity="0.4"></ellipse>
+                                  <ellipse cx={12} cy={20.25} rx={10} ry={2.25} opacity={0.4}></ellipse>
                                 </svg>
                               </span>
                               <span className="@max-[700px]/lc:hidden flex gap-[calc(var(--lc-pad)*0.5)] items-center">
@@ -1643,7 +1643,7 @@ export function Pattern() {
                                 </span>
                                 <span className="flex font-medium gap-[calc(var(--lc-pad)*0.25)] items-center text-foreground whitespace-nowrap">
                                   {"Integrations"}
-                                  <svg className="lucide lucide-chevrons-up-down size-[calc(var(--lc-icon)*0.82)] text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                  <svg className="lucide lucide-chevrons-up-down size-[calc(var(--lc-icon)*0.82)] text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                     <path d="m7 15 5 5 5-5"></path>
                                     <path d="m7 9 5-5 5 5"></path>
                                   </svg>
@@ -1661,7 +1661,7 @@ export function Pattern() {
                                 </span>
                               </span>
                               <span className="flex items-center relative shrink-0 text-muted-foreground">
-                                <svg className="lucide lucide-bell size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                <svg className="lucide lucide-bell size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                   <path d="M10.268 21a2 2 0 0 0 3.464 0"></path>
                                   <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"></path>
                                 </svg>
@@ -1671,24 +1671,24 @@ export function Pattern() {
                                   </span>
                                 </span>
                               </span>
-                              <img className="object-cover ring-1 ring-border rounded-full shrink-0 size-[var(--lc-face)]" alt="" loading="lazy" width="96" height="96" decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-6.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
+                              <img className="object-cover ring-1 ring-border rounded-full shrink-0 size-[var(--lc-face)]" alt="" loading="lazy" width={96} height={96} decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-6.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
                             </div>
                             <div className="flex flex-1 min-h-0">
                               <div className="bg-background border-border border-r flex flex-col gap-[calc(var(--lc-pad)*0.28)] items-center py-[calc(var(--lc-gap)*0.6)] shrink-0 w-[var(--lc-rail)]">
                                 <span className="flex items-center justify-center mb-[calc(var(--lc-pad)*0.2)] size-[calc(var(--lc-rail)*0.56)] text-muted-foreground">
-                                  <svg className="lucide lucide-search size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                  <svg className="lucide lucide-search size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                     <path d="m21 21-4.34-4.34"></path>
-                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <circle cx={11} cy={11} r={8}></circle>
                                   </svg>
                                 </span>
                                 <span className="flex items-center justify-center rounded-[var(--lc-radius)] size-[calc(var(--lc-rail)*0.56)] text-muted-foreground">
-                                  <svg className="lucide lucide-gauge size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                  <svg className="lucide lucide-gauge size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                     <path d="m12 14 4-4"></path>
                                     <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
                                   </svg>
                                 </span>
                                 <span className="bg-muted flex items-center justify-center rounded-[var(--lc-radius)] size-[calc(var(--lc-rail)*0.56)] text-brand-ink">
-                                  <svg className="lucide lucide-plug-zap size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                  <svg className="lucide lucide-plug-zap size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                     <path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"></path>
                                     <path d="m2 22 3-3"></path>
                                     <path d="M7.5 13.5 10 11"></path>
@@ -1697,22 +1697,22 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="flex items-center justify-center rounded-[var(--lc-radius)] size-[calc(var(--lc-rail)*0.56)] text-muted-foreground">
-                                  <svg className="lucide lucide-database size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                  <svg className="lucide lucide-database size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                    <ellipse cx={12} cy={5} rx={9} ry={3}></ellipse>
                                     <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
                                     <path d="M3 12A9 3 0 0 0 21 12"></path>
                                   </svg>
                                 </span>
                                 <span className="flex items-center justify-center rounded-[var(--lc-radius)] size-[calc(var(--lc-rail)*0.56)] text-muted-foreground">
-                                  <svg className="lucide lucide-users size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                  <svg className="lucide lucide-users size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                     <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                                     <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                                     <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                                    <circle cx="9" cy="7" r="4"></circle>
+                                    <circle cx={9} cy={7} r={4}></circle>
                                   </svg>
                                 </span>
                                 <span className="flex items-center justify-center rounded-[var(--lc-radius)] size-[calc(var(--lc-rail)*0.56)] text-muted-foreground">
-                                  <svg className="lucide lucide-rocket size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                  <svg className="lucide lucide-rocket size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                     <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path>
                                     <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09"></path>
                                     <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z"></path>
@@ -1720,25 +1720,25 @@ export function Pattern() {
                                   </svg>
                                 </span>
                                 <span className="flex items-center justify-center rounded-[var(--lc-radius)] size-[calc(var(--lc-rail)*0.56)] text-muted-foreground">
-                                  <svg className="lucide lucide-workflow size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                    <rect width="8" height="8" x="3" y="3" rx="2"></rect>
+                                  <svg className="lucide lucide-workflow size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                    <rect width={8} height={8} x={3} y={3} rx={2}></rect>
                                     <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
-                                    <rect width="8" height="8" x="13" y="13" rx="2"></rect>
+                                    <rect width={8} height={8} x={13} y={13} rx={2}></rect>
                                   </svg>
                                 </span>
                                 <span className="flex items-center justify-center rounded-[var(--lc-radius)] size-[calc(var(--lc-rail)*0.56)] text-muted-foreground">
-                                  <svg className="lucide lucide-shield-check size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                  <svg className="lucide lucide-shield-check size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                     <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                                     <path d="m9 12 2 2 4-4"></path>
                                   </svg>
                                 </span>
                                 <span className="flex items-center justify-center rounded-[var(--lc-radius)] size-[calc(var(--lc-rail)*0.56)] text-muted-foreground">
-                                  <svg className="lucide lucide-settings size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                  <svg className="lucide lucide-settings size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                     <path d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"></path>
-                                    <circle cx="12" cy="12" r="3"></circle>
+                                    <circle cx={12} cy={12} r={3}></circle>
                                   </svg>
                                 </span>
-                                <img className="mt-auto object-cover ring-1 ring-border rounded-full shrink-0 size-[var(--lc-face)]" alt="" loading="lazy" width="96" height="96" decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-6.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
+                                <img className="mt-auto object-cover ring-1 ring-border rounded-full shrink-0 size-[var(--lc-face)]" alt="" loading="lazy" width={96} height={96} decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-6.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-6.png&w=256&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
                               </div>
                               <div className="bg-background flex flex-1 flex-col gap-[var(--lc-gap)] min-w-0 overflow-clip p-[var(--lc-gap)]">
                                 <div className="flex gap-[calc(var(--lc-pad)*0.6)] items-center justify-between shrink-0">
@@ -1762,7 +1762,7 @@ export function Pattern() {
                                         {"connected"}
                                       </span>
                                       <span className="bg-brand border border-transparent font-medium gap-[calc(var(--lc-icon)*0.3)] inline-flex items-center leading-snug px-[calc(var(--lc-pad)*0.4)] py-[calc(var(--lc-pad)*0.13)] rounded-full shrink-0 text-[length:var(--lc-micro)] text-brand-foreground w-fit whitespace-nowrap">
-                                        <svg className="lucide lucide-braces size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                        <svg className="lucide lucide-braces size-[calc(var(--lc-icon)*0.72)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                           <path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1"></path>
                                           <path d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1"></path>
                                         </svg>
@@ -1790,8 +1790,8 @@ export function Pattern() {
                                         <div className="@max-[700px]/lc:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] gap-[calc(var(--lc-pad)*0.5)] grid grid-cols-[minmax(0,1.55fr)_minmax(0,2.7fr)_minmax(0,1.05fr)] items-center">
                                           <div className="flex gap-[calc(var(--lc-pad)*0.45)] items-center min-w-0">
                                             <IconTile className="[--icon-tile-icon-size:var(--lc-icon)] [--icon-tile-inset:calc(var(--lc-tile)*0.07)] [--icon-tile-radius:var(--lc-radius)] [--icon-tile-size:var(--lc-tile)] rounded-(--icon-tile-radius) text-muted-foreground" variant="outline" size="default" aria-hidden="true">
-                                              <svg className="lucide lucide-database size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                              <svg className="lucide lucide-database size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                                <ellipse cx={12} cy={5} rx={9} ry={3}></ellipse>
                                                 <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
                                                 <path d="M3 12A9 3 0 0 0 21 12"></path>
                                               </svg>
@@ -1814,9 +1814,9 @@ export function Pattern() {
                                                 {"Schema"}
                                                 {"v18"}
                                               </span>
-                                              <svg className="lucide lucide-key-round shrink-0 size-[calc(var(--lc-icon)*0.7)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                              <svg className="lucide lucide-key-round shrink-0 size-[calc(var(--lc-icon)*0.7)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                                 <path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"></path>
-                                                <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                                <circle cx={16.5} cy={7.5} r=".5" fill="currentColor"></circle>
                                               </svg>
                                               <span className="truncate">
                                                 {"Arclight, Veldt"}
@@ -1840,7 +1840,7 @@ export function Pattern() {
                                         <div className="@max-[700px]/lc:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] gap-[calc(var(--lc-pad)*0.5)] grid grid-cols-[minmax(0,1.55fr)_minmax(0,2.7fr)_minmax(0,1.05fr)] items-center">
                                           <div className="flex gap-[calc(var(--lc-pad)*0.45)] items-center min-w-0">
                                             <IconTile className="[--icon-tile-icon-size:var(--lc-icon)] [--icon-tile-inset:calc(var(--lc-tile)*0.07)] [--icon-tile-radius:var(--lc-radius)] [--icon-tile-size:var(--lc-tile)] rounded-(--icon-tile-radius) text-muted-foreground" variant="outline" size="default" aria-hidden="true">
-                                              <svg className="lucide lucide-receipt size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                              <svg className="lucide lucide-receipt size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                                 <path d="M12 17V7"></path>
                                                 <path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8"></path>
                                                 <path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"></path>
@@ -1864,9 +1864,9 @@ export function Pattern() {
                                                 {"Schema"}
                                                 {"v11"}
                                               </span>
-                                              <svg className="lucide lucide-key-round shrink-0 size-[calc(var(--lc-icon)*0.7)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                              <svg className="lucide lucide-key-round shrink-0 size-[calc(var(--lc-icon)*0.7)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                                 <path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"></path>
-                                                <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                                <circle cx={16.5} cy={7.5} r=".5" fill="currentColor"></circle>
                                               </svg>
                                               <span className="truncate">
                                                 {"Copperline"}
@@ -1890,7 +1890,7 @@ export function Pattern() {
                                         <div className="@max-[700px]/lc:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] gap-[calc(var(--lc-pad)*0.5)] grid grid-cols-[minmax(0,1.55fr)_minmax(0,2.7fr)_minmax(0,1.05fr)] items-center">
                                           <div className="flex gap-[calc(var(--lc-pad)*0.45)] items-center min-w-0">
                                             <IconTile className="[--icon-tile-icon-size:var(--lc-icon)] [--icon-tile-inset:calc(var(--lc-tile)*0.07)] [--icon-tile-radius:var(--lc-radius)] [--icon-tile-size:var(--lc-tile)] rounded-(--icon-tile-radius) text-muted-foreground" variant="outline" size="default" aria-hidden="true">
-                                              <svg className="lucide lucide-chart-line size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                              <svg className="lucide lucide-chart-line size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                                 <path d="M3 3v16a2 2 0 0 0 2 2h16"></path>
                                                 <path d="m19 9-5 5-4-4-3 3"></path>
                                               </svg>
@@ -1913,9 +1913,9 @@ export function Pattern() {
                                                 {"Schema"}
                                                 {"v7"}
                                               </span>
-                                              <svg className="lucide lucide-key-round shrink-0 size-[calc(var(--lc-icon)*0.7)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                              <svg className="lucide lucide-key-round shrink-0 size-[calc(var(--lc-icon)*0.7)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                                 <path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"></path>
-                                                <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                                <circle cx={16.5} cy={7.5} r=".5" fill="currentColor"></circle>
                                               </svg>
                                               <span className="truncate">
                                                 {"Nightjar, Solvine"}
@@ -1939,7 +1939,7 @@ export function Pattern() {
                                         <div className="@max-[700px]/lc:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] gap-[calc(var(--lc-pad)*0.5)] grid grid-cols-[minmax(0,1.55fr)_minmax(0,2.7fr)_minmax(0,1.05fr)] items-center">
                                           <div className="flex gap-[calc(var(--lc-pad)*0.45)] items-center min-w-0">
                                             <IconTile className="[--icon-tile-icon-size:var(--lc-icon)] [--icon-tile-inset:calc(var(--lc-tile)*0.07)] [--icon-tile-radius:var(--lc-radius)] [--icon-tile-size:var(--lc-tile)] rounded-(--icon-tile-radius) text-muted-foreground" variant="outline" size="default" aria-hidden="true">
-                                              <svg className="lucide lucide-message-square size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                              <svg className="lucide lucide-message-square size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                                 <path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path>
                                               </svg>
                                             </IconTile>
@@ -1961,9 +1961,9 @@ export function Pattern() {
                                                 {"Schema"}
                                                 {"v5"}
                                               </span>
-                                              <svg className="lucide lucide-key-round shrink-0 size-[calc(var(--lc-icon)*0.7)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                              <svg className="lucide lucide-key-round shrink-0 size-[calc(var(--lc-icon)*0.7)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                                 <path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"></path>
-                                                <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                                <circle cx={16.5} cy={7.5} r=".5" fill="currentColor"></circle>
                                               </svg>
                                               <span className="truncate">
                                                 {"Halcyon"}
@@ -1987,9 +1987,9 @@ export function Pattern() {
                                         <div className="@max-[700px]/lc:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] gap-[calc(var(--lc-pad)*0.5)] grid grid-cols-[minmax(0,1.55fr)_minmax(0,2.7fr)_minmax(0,1.05fr)] items-center">
                                           <div className="flex gap-[calc(var(--lc-pad)*0.45)] items-center min-w-0">
                                             <IconTile className="[--icon-tile-icon-size:var(--lc-icon)] [--icon-tile-inset:calc(var(--lc-tile)*0.07)] [--icon-tile-radius:var(--lc-radius)] [--icon-tile-size:var(--lc-tile)] rounded-(--icon-tile-radius) text-muted-foreground" variant="outline" size="default" aria-hidden="true">
-                                              <svg className="lucide lucide-mail size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                              <svg className="lucide lucide-mail size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                                 <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                                                <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                                                <rect x={2} y={4} width={20} height={16} rx={2}></rect>
                                               </svg>
                                             </IconTile>
                                             <span className="flex flex-col min-w-0">
@@ -2010,9 +2010,9 @@ export function Pattern() {
                                                 {"Schema"}
                                                 {"v9"}
                                               </span>
-                                              <svg className="lucide lucide-key-round shrink-0 size-[calc(var(--lc-icon)*0.7)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                              <svg className="lucide lucide-key-round shrink-0 size-[calc(var(--lc-icon)*0.7)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                                 <path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"></path>
-                                                <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                                <circle cx={16.5} cy={7.5} r=".5" fill="currentColor"></circle>
                                               </svg>
                                               <span className="truncate">
                                                 {"Windrose"}
@@ -2032,10 +2032,10 @@ export function Pattern() {
                                           </div>
                                         </div>
                                         <span className="@max-[700px]/lc:ps-0 flex gap-[calc(var(--lc-pad)*0.3)] items-center leading-snug min-w-0 ps-[calc(var(--lc-tile)+var(--lc-pad)*0.45)] text-[length:var(--lc-micro)] text-destructive">
-                                          <svg className="lucide lucide-circle-alert shrink-0 size-[calc(var(--lc-icon)*0.8)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                            <circle cx="12" cy="12" r="10"></circle>
-                                            <line x1="12" x2="12" y1="8" y2="12"></line>
-                                            <line x1="12" x2="12.01" y1="16" y2="16"></line>
+                                          <svg className="lucide lucide-circle-alert shrink-0 size-[calc(var(--lc-icon)*0.8)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                            <circle cx={12} cy={12} r={10}></circle>
+                                            <line x1={12} x2={12} y1={8} y2={12}></line>
+                                            <line x1={12} x2={12.01} y1={16} y2={16}></line>
                                           </svg>
                                           <span className="truncate">
                                             {"field renamed: contact.email_address, build failed in CI"}
@@ -2046,10 +2046,10 @@ export function Pattern() {
                                         <div className="@max-[700px]/lc:grid-cols-[minmax(0,1.6fr)_minmax(0,1fr)] gap-[calc(var(--lc-pad)*0.5)] grid grid-cols-[minmax(0,1.55fr)_minmax(0,2.7fr)_minmax(0,1.05fr)] items-center">
                                           <div className="flex gap-[calc(var(--lc-pad)*0.45)] items-center min-w-0">
                                             <IconTile className="[--icon-tile-icon-size:var(--lc-icon)] [--icon-tile-inset:calc(var(--lc-tile)*0.07)] [--icon-tile-radius:var(--lc-radius)] [--icon-tile-size:var(--lc-tile)] rounded-(--icon-tile-radius) text-muted-foreground" variant="outline" size="default" aria-hidden="true">
-                                              <svg className="lucide lucide-git-branch size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                              <svg className="lucide lucide-git-branch size-[var(--lc-icon)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                                 <path d="M15 6a9 9 0 0 0-9 9V3"></path>
-                                                <circle cx="18" cy="6" r="3"></circle>
-                                                <circle cx="6" cy="18" r="3"></circle>
+                                                <circle cx={18} cy={6} r={3}></circle>
+                                                <circle cx={6} cy={18} r={3}></circle>
                                               </svg>
                                             </IconTile>
                                             <span className="flex flex-col min-w-0">
@@ -2062,7 +2062,7 @@ export function Pattern() {
                                             </span>
                                           </div>
                                           <span className="@max-[700px]/lc:hidden flex gap-[calc(var(--lc-pad)*0.35)] items-center leading-snug min-w-0 text-[length:var(--lc-label)] text-muted-foreground">
-                                            <svg className="lucide lucide-unplug shrink-0 size-[calc(var(--lc-icon)*0.8)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                            <svg className="lucide lucide-unplug shrink-0 size-[calc(var(--lc-icon)*0.8)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                               <path d="m19 5 3-3"></path>
                                               <path d="m2 22 3-3"></path>
                                               <path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"></path>
@@ -2075,7 +2075,7 @@ export function Pattern() {
                                             </span>
                                           </span>
                                           <div className="flex flex-col gap-[calc(var(--lc-pad)*0.15)] items-end min-w-0">
-                                            <svg className="lucide lucide-minus size-[calc(var(--lc-icon)*0.8)] text-muted-foreground/50" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                            <svg className="lucide lucide-minus size-[calc(var(--lc-icon)*0.8)] text-muted-foreground/50" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                               <path d="M5 12h14"></path>
                                             </svg>
                                           </div>
@@ -2098,7 +2098,7 @@ export function Pattern() {
                                       <div className="flex flex-1 flex-row gap-[var(--lc-pad)] items-start min-h-0 p-[var(--lc-pad)]">
                                         <div className="flex flex-1 flex-col gap-[calc(var(--lc-pad)*0.35)] min-w-0">
                                           <span className="flex gap-[calc(var(--lc-pad)*0.3)] items-center leading-snug min-w-0 text-[length:var(--lc-label)] text-muted-foreground">
-                                            <svg className="lucide lucide-shield-check shrink-0 size-[calc(var(--lc-icon)*0.9)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                            <svg className="lucide lucide-shield-check shrink-0 size-[calc(var(--lc-icon)*0.9)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                                               <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                                               <path d="m9 12 2 2 4-4"></path>
                                             </svg>
@@ -2114,10 +2114,10 @@ export function Pattern() {
                                         </div>
                                         <div className="border-border border-s flex flex-1 flex-col gap-[calc(var(--lc-pad)*0.35)] min-w-0 ps-[var(--lc-pad)]">
                                           <span className="flex gap-[calc(var(--lc-pad)*0.3)] items-center leading-snug min-w-0 text-[length:var(--lc-label)] text-muted-foreground">
-                                            <svg className="lucide lucide-circle-alert shrink-0 size-[calc(var(--lc-icon)*0.9)]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                                              <circle cx="12" cy="12" r="10"></circle>
-                                              <line x1="12" x2="12" y1="8" y2="12"></line>
-                                              <line x1="12" x2="12.01" y1="16" y2="16"></line>
+                                            <svg className="lucide lucide-circle-alert shrink-0 size-[calc(var(--lc-icon)*0.9)]" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                              <circle cx={12} cy={12} r={10}></circle>
+                                              <line x1={12} x2={12} y1={8} y2={12}></line>
+                                              <line x1={12} x2={12.01} y1={16} y2={16}></line>
                                             </svg>
                                             <span className="truncate">
                                               {"Breaks caught"}
@@ -2229,9 +2229,9 @@ export function Pattern() {
             <p className="max-w-[52ch] text-muted-foreground">
               {"First connection to production in under five minutes, with your own data."}
             </p>
-            <Button className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:transition-transform active:bg-brand-active active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-brand bg-clip-padding border border-transparent brand-weave dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:shadow-none fine-pointer:[&_svg]:hover:translate-x-1 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1.5 h-11 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5 hover:bg-brand-hover press px-6 rounded-full shadow-lift text-base text-brand-foreground" href="#pricing" role="button" tabIndex="0">
+            <Button className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:transition-transform active:bg-brand-active active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-brand bg-clip-padding border border-transparent brand-weave dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:shadow-none fine-pointer:[&_svg]:hover:translate-x-1 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1.5 h-11 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5 hover:bg-brand-hover press px-6 rounded-full shadow-lift text-base text-brand-foreground" href="#pricing" role="button" tabIndex={0}>
               {"Run it yourself"}
-              <svg className="lucide lucide-arrow-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <svg className="lucide lucide-arrow-right size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="m12 5 7 7-7 7"></path>
               </svg>
@@ -2311,32 +2311,32 @@ export function Pattern() {
                   <div className="border-b border-border flex gap-3 items-center last:border-b-0 py-2.5">
                     <span className="bg-muted-foreground/30 h-1.5 rounded-full shrink-0 w-10"></span>
                     <span className="bg-muted-foreground/45 h-1.5 rounded-full w-28"></span>
-                    <svg className="lucide lucide-lock ms-auto shrink-0 size-3 text-muted-foreground/70" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                    <svg className="lucide lucide-lock ms-auto shrink-0 size-3 text-muted-foreground/70" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <rect width={18} height={11} x={3} y={11} rx={2} ry={2}></rect>
                       <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                     </svg>
                   </div>
                   <div className="border-b border-border flex gap-3 items-center last:border-b-0 py-2.5">
                     <span className="bg-brand-ink h-1.5 rounded-full shrink-0 w-10"></span>
                     <span className="bg-muted-foreground/45 h-1.5 rounded-full w-20"></span>
-                    <svg className="lucide lucide-lock ms-auto shrink-0 size-3 text-brand-ink" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                    <svg className="lucide lucide-lock ms-auto shrink-0 size-3 text-brand-ink" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <rect width={18} height={11} x={3} y={11} rx={2} ry={2}></rect>
                       <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                     </svg>
                   </div>
                   <div className="border-b border-border flex gap-3 items-center last:border-b-0 py-2.5">
                     <span className="bg-muted-foreground/30 h-1.5 rounded-full shrink-0 w-10"></span>
                     <span className="bg-muted-foreground/45 h-1.5 rounded-full w-24"></span>
-                    <svg className="lucide lucide-lock ms-auto shrink-0 size-3 text-muted-foreground/70" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                    <svg className="lucide lucide-lock ms-auto shrink-0 size-3 text-muted-foreground/70" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <rect width={18} height={11} x={3} y={11} rx={2} ry={2}></rect>
                       <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                     </svg>
                   </div>
                   <div className="border-b border-border flex gap-3 items-center last:border-b-0 py-2.5">
                     <span className="bg-muted-foreground/30 h-1.5 rounded-full shrink-0 w-10"></span>
                     <span className="bg-muted-foreground/45 h-1.5 rounded-full w-16"></span>
-                    <svg className="lucide lucide-lock ms-auto shrink-0 size-3 text-muted-foreground/70" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                      <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                    <svg className="lucide lucide-lock ms-auto shrink-0 size-3 text-muted-foreground/70" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                      <rect width={18} height={11} x={3} y={11} rx={2} ry={2}></rect>
                       <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
                     </svg>
                   </div>
@@ -2491,7 +2491,7 @@ export function Pattern() {
                 {"We retired the ETL vendor, the cron box, and both status dashboards inside a quarter. Finance noticed before engineering did."}
               </blockquote>
               <figcaption className="flex gap-3 items-center mt-5">
-                <img className="object-cover rounded-full shrink-0 size-9" alt="" loading="lazy" width="36" height="36" decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-6.png&w=48&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-6.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-6.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
+                <img className="object-cover rounded-full shrink-0 size-9" alt="" loading="lazy" width={36} height={36} decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-6.png&w=48&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-6.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-6.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
                 <span className="text-sm">
                   <span className="font-medium">
                     {"Maya Lindqvist"}
@@ -2507,7 +2507,7 @@ export function Pattern() {
                 {"A typed integration failing in CI instead of at 2am is worth the invoice on its own. Eleven schema breaks caught since March, zero reached production."}
               </blockquote>
               <figcaption className="flex gap-3 items-center mt-5">
-                <img className="object-cover rounded-full shrink-0 size-9" alt="" loading="lazy" width="36" height="36" decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-7.png&w=48&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-7.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-7.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
+                <img className="object-cover rounded-full shrink-0 size-9" alt="" loading="lazy" width={36} height={36} decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-7.png&w=48&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-7.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-7.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
                 <span className="text-sm">
                   <span className="font-medium">
                     {"Tomas Ricci"}
@@ -2523,7 +2523,7 @@ export function Pattern() {
                 {"Standup got shorter. That is the whole review."}
               </blockquote>
               <figcaption className="flex gap-3 items-center mt-5">
-                <img className="object-cover rounded-full shrink-0 size-9" alt="" loading="lazy" width="36" height="36" decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-8.png&w=48&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-8.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-8.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
+                <img className="object-cover rounded-full shrink-0 size-9" alt="" loading="lazy" width={36} height={36} decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-8.png&w=48&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-8.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-8.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
                 <span className="text-sm">
                   <span className="font-medium">
                     {"Jonas Weber"}
@@ -2539,7 +2539,7 @@ export function Pattern() {
                 {"I was ready to write the enrichment layer myself. Scoring on ingest got us further in a week than my roadmap had us reaching by June."}
               </blockquote>
               <figcaption className="flex gap-3 items-center mt-5">
-                <img className="object-cover rounded-full shrink-0 size-9" alt="" loading="lazy" width="36" height="36" decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-9.png&w=48&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-9.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-9.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
+                <img className="object-cover rounded-full shrink-0 size-9" alt="" loading="lazy" width={36} height={36} decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-9.png&w=48&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-9.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-9.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
                 <span className="text-sm">
                   <span className="font-medium">
                     {"Amara Diallo"}
@@ -2563,7 +2563,7 @@ export function Pattern() {
                 {"Launch week peaked at thirty times a normal Tuesday. The per-request cost did not move. I checked twice."}
               </blockquote>
               <figcaption className="flex gap-3 items-center mt-5">
-                <img className="object-cover rounded-full shrink-0 size-9" alt="" loading="lazy" width="36" height="36" decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-10.png&w=48&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-10.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-10.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
+                <img className="object-cover rounded-full shrink-0 size-9" alt="" loading="lazy" width={36} height={36} decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-10.png&w=48&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-10.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-10.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
                 <span className="text-sm">
                   <span className="font-medium">
                     {"Elena Vasquez"}
@@ -2579,7 +2579,7 @@ export function Pattern() {
                 {"Scheduling reads capacity and timezones better than the spreadsheet that used to run my mornings. I do not miss the spreadsheet."}
               </blockquote>
               <figcaption className="flex gap-3 items-center mt-5">
-                <img className="object-cover rounded-full shrink-0 size-9" alt="" loading="lazy" width="36" height="36" decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-11.png&w=48&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-11.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-11.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
+                <img className="object-cover rounded-full shrink-0 size-9" alt="" loading="lazy" width={36} height={36} decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-11.png&w=48&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-11.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-11.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
                 <span className="text-sm">
                   <span className="font-medium">
                     {"Rosa Delgado"}
@@ -2595,7 +2595,7 @@ export function Pattern() {
                 {"The cohort view settled an argument we had been having for two quarters. One afternoon, one chart, done."}
               </blockquote>
               <figcaption className="flex gap-3 items-center mt-5">
-                <img className="object-cover rounded-full shrink-0 size-9" alt="" loading="lazy" width="36" height="36" decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-12.png&w=48&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-12.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-12.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
+                <img className="object-cover rounded-full shrink-0 size-9" alt="" loading="lazy" width={36} height={36} decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-12.png&w=48&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-12.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-12.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
                 <span className="text-sm">
                   <span className="font-medium">
                     {"Noor Haddad"}
@@ -2611,7 +2611,7 @@ export function Pattern() {
                 {"Records land deduplicated and scored, so warehouse queries read like questions instead of archaeology."}
               </blockquote>
               <figcaption className="flex gap-3 items-center mt-5">
-                <img className="object-cover rounded-full shrink-0 size-9" alt="" loading="lazy" width="36" height="36" decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-13.png&w=48&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-13.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-13.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
+                <img className="object-cover rounded-full shrink-0 size-9" alt="" loading="lazy" width={36} height={36} decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-13.png&w=48&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-13.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-13.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
                 <span className="text-sm">
                   <span className="font-medium">
                     {"Felix Andersen"}
@@ -2635,7 +2635,7 @@ export function Pattern() {
                 {"Forty hours a week came back to the marketing team. We spent every one of them on campaigns."}
               </blockquote>
               <figcaption className="flex gap-3 items-center mt-5">
-                <img className="object-cover rounded-full shrink-0 size-9" alt="" loading="lazy" width="36" height="36" decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-14.png&w=48&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-14.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-14.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
+                <img className="object-cover rounded-full shrink-0 size-9" alt="" loading="lazy" width={36} height={36} decoding="async" data-nimg="1" style={{color: "transparent"}} srcSet="/_next/image?url=%2Favatars%2F300-14.png&w=48&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 1x, /_next/image?url=%2Favatars%2F300-14.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2 2x" src="/_next/image?url=%2Favatars%2F300-14.png&w=96&q=75&dpl=dpl_AJs6VM4Qr2xM6AA5GUSDgGvt9Dt2" />
                 <span className="text-sm">
                   <span className="font-medium">
                     {"Grace Okafor"}
@@ -2700,13 +2700,13 @@ export function Pattern() {
               </p>
             </div>
             <div className="bg-muted border border-border inline-flex isolate items-center lg:self-auto p-1 rounded-full self-start shrink-0 w-fit" role="radiogroup" aria-label="Billing period">
-              <button className="cursor-pointer focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-foreground focus-visible:outline-solid focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-2 h-9 inline-flex items-center outline-none press px-5 relative rounded-full text-foreground text-sm transition-colors" type="button" role="radio" aria-checked="true" tabIndex="0">
+              <button className="cursor-pointer focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-foreground focus-visible:outline-solid focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-2 h-9 inline-flex items-center outline-none press px-5 relative rounded-full text-foreground text-sm transition-colors" type="button" role="radio" aria-checked="true" tabIndex={0}>
                 <span className="-z-10 absolute bg-card dark:bg-foreground/10 dark:shadow-none inset-0 overflow-hidden shadow-sm" aria-hidden="true" style={{borderRadius: "9999px", opacity: "1"}}>
                   <span className="absolute bg-linear-to-r dark:block from-transparent h-px hidden inset-x-3 to-transparent top-0 via-brand/70"></span>
                 </span>
                 {"Monthly"}
               </button>
-              <button className="cursor-pointer focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-foreground focus-visible:outline-solid focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-2 h-9 hover:text-foreground inline-flex items-center outline-none press px-5 relative rounded-full text-muted-foreground text-sm transition-colors" type="button" role="radio" aria-checked="false" tabIndex="-1">
+              <button className="cursor-pointer focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-foreground focus-visible:outline-solid focus-visible:ring-3 focus-visible:ring-ring/50 font-medium gap-2 h-9 hover:text-foreground inline-flex items-center outline-none press px-5 relative rounded-full text-muted-foreground text-sm transition-colors" type="button" role="radio" aria-checked="false" tabIndex={-1}>
                 {"Yearly"}
                 <span className="bg-brand-subtle font-medium px-2 py-0.5 rounded-full text-brand-ink text-xs">
                   {"2 months free"}
@@ -2738,13 +2738,13 @@ export function Pattern() {
                   </span>
                 </p>
                 <div className="mt-8">
-                  <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-transparent dark:hover:bg-input/30 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1.5 h-11 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5 hover:bg-muted hover:text-foreground press px-3 rounded-full text-base w-full" type="button" tabIndex="0">
+                  <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-transparent dark:hover:bg-input/30 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1.5 h-11 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5 hover:bg-muted hover:text-foreground press px-3 rounded-full text-base w-full" type="button" tabIndex={0}>
                     {"Start free trial"}
                   </Button>
                 </div>
                 <ul className="border-border border-t gap-3 grid mt-10 pt-8">
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2752,7 +2752,7 @@ export function Pattern() {
                     </span>
                   </li>
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2760,7 +2760,7 @@ export function Pattern() {
                     </span>
                   </li>
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2768,7 +2768,7 @@ export function Pattern() {
                     </span>
                   </li>
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2776,7 +2776,7 @@ export function Pattern() {
                     </span>
                   </li>
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2784,7 +2784,7 @@ export function Pattern() {
                     </span>
                   </li>
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2820,13 +2820,13 @@ export function Pattern() {
                   </span>
                 </p>
                 <div className="mt-8">
-                  <Button className="[&_svg:not([class*='size-'])]:size-4 active:bg-brand-active active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-brand bg-clip-padding border border-transparent brand-weave dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:shadow-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1.5 h-11 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5 hover:bg-brand-hover press px-6 rounded-full shadow-lift text-base text-brand-foreground w-full" type="button" tabIndex="0">
+                  <Button className="[&_svg:not([class*='size-'])]:size-4 active:bg-brand-active active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-brand bg-clip-padding border border-transparent brand-weave dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:shadow-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1.5 h-11 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5 hover:bg-brand-hover press px-6 rounded-full shadow-lift text-base text-brand-foreground w-full" type="button" tabIndex={0}>
                     {"Start free trial"}
                   </Button>
                 </div>
                 <ul className="border-border border-t gap-3 grid mt-10 pt-8">
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2834,7 +2834,7 @@ export function Pattern() {
                     </span>
                   </li>
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2842,7 +2842,7 @@ export function Pattern() {
                     </span>
                   </li>
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2850,7 +2850,7 @@ export function Pattern() {
                     </span>
                   </li>
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2858,7 +2858,7 @@ export function Pattern() {
                     </span>
                   </li>
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2866,7 +2866,7 @@ export function Pattern() {
                     </span>
                   </li>
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2874,7 +2874,7 @@ export function Pattern() {
                     </span>
                   </li>
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2882,7 +2882,7 @@ export function Pattern() {
                     </span>
                   </li>
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2913,13 +2913,13 @@ export function Pattern() {
                   </span>
                 </p>
                 <div className="mt-8">
-                  <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-transparent dark:hover:bg-input/30 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1.5 h-11 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5 hover:bg-muted hover:text-foreground press px-3 rounded-full text-base w-full" type="button" tabIndex="0">
+                  <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-transparent dark:hover:bg-input/30 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1.5 h-11 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5 hover:bg-muted hover:text-foreground press px-3 rounded-full text-base w-full" type="button" tabIndex={0}>
                     {"Talk to sales"}
                   </Button>
                 </div>
                 <ul className="border-border border-t gap-3 grid mt-10 pt-8">
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2927,7 +2927,7 @@ export function Pattern() {
                     </span>
                   </li>
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2935,7 +2935,7 @@ export function Pattern() {
                     </span>
                   </li>
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2943,7 +2943,7 @@ export function Pattern() {
                     </span>
                   </li>
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2951,7 +2951,7 @@ export function Pattern() {
                     </span>
                   </li>
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2959,7 +2959,7 @@ export function Pattern() {
                     </span>
                   </li>
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2967,7 +2967,7 @@ export function Pattern() {
                     </span>
                   </li>
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -2975,7 +2975,7 @@ export function Pattern() {
                     </span>
                   </li>
                   <li className="flex gap-3 items-start text-sm">
-                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
                     <span>
@@ -3027,7 +3027,7 @@ export function Pattern() {
               </p>
               <a className="font-medium gap-2 group/desk hover:text-foreground inline-flex items-center mt-5 text-brand-ink text-sm transition-colors" href="#contact">
                 {"Write to the desk"}
-                <svg className="duration-200 ease-out fine-pointer:group-hover/desk:translate-x-0.5 lucide lucide-arrow-right motion-reduce:transition-none size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <svg className="duration-200 ease-out fine-pointer:group-hover/desk:translate-x-0.5 lucide lucide-arrow-right motion-reduce:transition-none size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
                 </svg>
@@ -3045,12 +3045,12 @@ export function Pattern() {
           <Accordion className="**:data-[slot=accordion-content]:px-0 border-0 motion-reduce:**:data-[slot=accordion-content]:animate-none! overflow-hidden rounded-none" data-orientation="vertical" dir="ltr" role="region">
             <AccordionItem className="border-b border-border data-open:bg-transparent first:border-t group/item not-last:border-b py-1.5" data-orientation="vertical" index="0" data-open="">
               <h3 className="flex" data-orientation="vertical" data-index="0" data-open="">
-                <AccordionTrigger className="**:data-[slot=accordion-trigger-icon]:duration-200 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground **:data-[slot=accordion-trigger-icon]:transition-colors border-x-0 focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-foreground focus-visible:outline-solid font-medium gap-6 group-data-[open]/item:**:data-[slot=accordion-trigger-icon]:text-brand-ink hover:no-underline md:py-7 p-4 px-0 py-6 text-lede text-left text-pretty tracking-tight" type="button" value="speed" data-orientation="vertical" panelOpen="" aria-disabled="false" aria-controls="base-ui-_R_d25flbH1_" aria-expanded="true" id="base-ui-_R_d25flbH2_" tabIndex="0">
+                <AccordionTrigger className="**:data-[slot=accordion-trigger-icon]:duration-200 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground **:data-[slot=accordion-trigger-icon]:transition-colors border-x-0 focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-foreground focus-visible:outline-solid font-medium gap-6 group-data-[open]/item:**:data-[slot=accordion-trigger-icon]:text-brand-ink hover:no-underline md:py-7 p-4 px-0 py-6 text-lede text-left text-pretty tracking-tight" type="button" value="speed" data-orientation="vertical" panelOpen="" aria-disabled="false" aria-controls="base-ui-_R_d25flbH1_" aria-expanded="true" id="base-ui-_R_d25flbH2_" tabIndex={0}>
                   {"How fast can we actually be in production?"}
-                  <svg className="group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg className="group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
-                  <svg className="group-aria-expanded/accordion-trigger:inline hidden lucide lucide-chevron-up pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg className="group-aria-expanded/accordion-trigger:inline hidden lucide lucide-chevron-up pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="m18 15-6-6-6 6"></path>
                   </svg>
                 </AccordionTrigger>
@@ -3063,12 +3063,12 @@ export function Pattern() {
             </AccordionItem>
             <AccordionItem className="border-b border-border data-open:bg-transparent first:border-t group/item not-last:border-b py-1.5" data-orientation="vertical" hidden="" index="1" data-closed="">
               <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="1" data-closed="">
-                <AccordionTrigger className="**:data-[slot=accordion-trigger-icon]:duration-200 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground **:data-[slot=accordion-trigger-icon]:transition-colors border-x-0 focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-foreground focus-visible:outline-solid font-medium gap-6 group-data-[open]/item:**:data-[slot=accordion-trigger-icon]:text-brand-ink hover:no-underline md:py-7 p-4 px-0 py-6 text-lede text-left text-pretty tracking-tight" type="button" value="speed" data-orientation="vertical" hidden="" index="1" aria-disabled="false" aria-expanded="false" id="base-ui-_R_l25flbH2_" tabIndex="0">
+                <AccordionTrigger className="**:data-[slot=accordion-trigger-icon]:duration-200 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground **:data-[slot=accordion-trigger-icon]:transition-colors border-x-0 focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-foreground focus-visible:outline-solid font-medium gap-6 group-data-[open]/item:**:data-[slot=accordion-trigger-icon]:text-brand-ink hover:no-underline md:py-7 p-4 px-0 py-6 text-lede text-left text-pretty tracking-tight" type="button" value="speed" data-orientation="vertical" hidden="" index="1" aria-disabled="false" aria-expanded="false" id="base-ui-_R_l25flbH2_" tabIndex={0}>
                   {"What does the trial include?"}
-                  <svg className="group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg className="group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
-                  <svg className="group-aria-expanded/accordion-trigger:inline hidden lucide lucide-chevron-up pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg className="group-aria-expanded/accordion-trigger:inline hidden lucide lucide-chevron-up pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="m18 15-6-6-6 6"></path>
                   </svg>
                 </AccordionTrigger>
@@ -3081,12 +3081,12 @@ export function Pattern() {
             </AccordionItem>
             <AccordionItem className="border-b border-border data-open:bg-transparent first:border-t group/item not-last:border-b py-1.5" data-orientation="vertical" hidden="" index="2" data-closed="">
               <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="2" data-closed="">
-                <AccordionTrigger className="**:data-[slot=accordion-trigger-icon]:duration-200 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground **:data-[slot=accordion-trigger-icon]:transition-colors border-x-0 focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-foreground focus-visible:outline-solid font-medium gap-6 group-data-[open]/item:**:data-[slot=accordion-trigger-icon]:text-brand-ink hover:no-underline md:py-7 p-4 px-0 py-6 text-lede text-left text-pretty tracking-tight" type="button" value="speed" data-orientation="vertical" hidden="" index="2" aria-disabled="false" aria-expanded="false" id="base-ui-_R_t25flbH2_" tabIndex="0">
+                <AccordionTrigger className="**:data-[slot=accordion-trigger-icon]:duration-200 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground **:data-[slot=accordion-trigger-icon]:transition-colors border-x-0 focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-foreground focus-visible:outline-solid font-medium gap-6 group-data-[open]/item:**:data-[slot=accordion-trigger-icon]:text-brand-ink hover:no-underline md:py-7 p-4 px-0 py-6 text-lede text-left text-pretty tracking-tight" type="button" value="speed" data-orientation="vertical" hidden="" index="2" aria-disabled="false" aria-expanded="false" id="base-ui-_R_t25flbH2_" tabIndex={0}>
                   {"Do we have to rip out our current tools first?"}
-                  <svg className="group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg className="group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
-                  <svg className="group-aria-expanded/accordion-trigger:inline hidden lucide lucide-chevron-up pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg className="group-aria-expanded/accordion-trigger:inline hidden lucide lucide-chevron-up pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="m18 15-6-6-6 6"></path>
                   </svg>
                 </AccordionTrigger>
@@ -3099,12 +3099,12 @@ export function Pattern() {
             </AccordionItem>
             <AccordionItem className="border-b border-border data-open:bg-transparent first:border-t group/item not-last:border-b py-1.5" data-orientation="vertical" hidden="" index="3" data-closed="">
               <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="3" data-closed="">
-                <AccordionTrigger className="**:data-[slot=accordion-trigger-icon]:duration-200 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground **:data-[slot=accordion-trigger-icon]:transition-colors border-x-0 focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-foreground focus-visible:outline-solid font-medium gap-6 group-data-[open]/item:**:data-[slot=accordion-trigger-icon]:text-brand-ink hover:no-underline md:py-7 p-4 px-0 py-6 text-lede text-left text-pretty tracking-tight" type="button" value="speed" data-orientation="vertical" hidden="" index="3" aria-disabled="false" aria-expanded="false" id="base-ui-_R_1525flbH2_" tabIndex="0">
+                <AccordionTrigger className="**:data-[slot=accordion-trigger-icon]:duration-200 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground **:data-[slot=accordion-trigger-icon]:transition-colors border-x-0 focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-foreground focus-visible:outline-solid font-medium gap-6 group-data-[open]/item:**:data-[slot=accordion-trigger-icon]:text-brand-ink hover:no-underline md:py-7 p-4 px-0 py-6 text-lede text-left text-pretty tracking-tight" type="button" value="speed" data-orientation="vertical" hidden="" index="3" aria-disabled="false" aria-expanded="false" id="base-ui-_R_1525flbH2_" tabIndex={0}>
                   {"What happens when a connected tool changes its schema?"}
-                  <svg className="group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg className="group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
-                  <svg className="group-aria-expanded/accordion-trigger:inline hidden lucide lucide-chevron-up pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg className="group-aria-expanded/accordion-trigger:inline hidden lucide lucide-chevron-up pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="m18 15-6-6-6 6"></path>
                   </svg>
                 </AccordionTrigger>
@@ -3117,12 +3117,12 @@ export function Pattern() {
             </AccordionItem>
             <AccordionItem className="border-b border-border data-open:bg-transparent first:border-t group/item not-last:border-b py-1.5" data-orientation="vertical" hidden="" index="4" data-closed="">
               <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="4" data-closed="">
-                <AccordionTrigger className="**:data-[slot=accordion-trigger-icon]:duration-200 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground **:data-[slot=accordion-trigger-icon]:transition-colors border-x-0 focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-foreground focus-visible:outline-solid font-medium gap-6 group-data-[open]/item:**:data-[slot=accordion-trigger-icon]:text-brand-ink hover:no-underline md:py-7 p-4 px-0 py-6 text-lede text-left text-pretty tracking-tight" type="button" value="speed" data-orientation="vertical" hidden="" index="4" aria-disabled="false" aria-expanded="false" id="base-ui-_R_1d25flbH2_" tabIndex="0">
+                <AccordionTrigger className="**:data-[slot=accordion-trigger-icon]:duration-200 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground **:data-[slot=accordion-trigger-icon]:transition-colors border-x-0 focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-foreground focus-visible:outline-solid font-medium gap-6 group-data-[open]/item:**:data-[slot=accordion-trigger-icon]:text-brand-ink hover:no-underline md:py-7 p-4 px-0 py-6 text-lede text-left text-pretty tracking-tight" type="button" value="speed" data-orientation="vertical" hidden="" index="4" aria-disabled="false" aria-expanded="false" id="base-ui-_R_1d25flbH2_" tabIndex={0}>
                   {"How do plan changes and refunds work?"}
-                  <svg className="group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg className="group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
-                  <svg className="group-aria-expanded/accordion-trigger:inline hidden lucide lucide-chevron-up pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg className="group-aria-expanded/accordion-trigger:inline hidden lucide lucide-chevron-up pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="m18 15-6-6-6 6"></path>
                   </svg>
                 </AccordionTrigger>
@@ -3135,12 +3135,12 @@ export function Pattern() {
             </AccordionItem>
             <AccordionItem className="border-b border-border data-open:bg-transparent first:border-t group/item not-last:border-b py-1.5" data-orientation="vertical" hidden="" index="5" data-closed="">
               <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="5" data-closed="">
-                <AccordionTrigger className="**:data-[slot=accordion-trigger-icon]:duration-200 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground **:data-[slot=accordion-trigger-icon]:transition-colors border-x-0 focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-foreground focus-visible:outline-solid font-medium gap-6 group-data-[open]/item:**:data-[slot=accordion-trigger-icon]:text-brand-ink hover:no-underline md:py-7 p-4 px-0 py-6 text-lede text-left text-pretty tracking-tight" type="button" value="speed" data-orientation="vertical" hidden="" index="5" aria-disabled="false" aria-expanded="false" id="base-ui-_R_1l25flbH2_" tabIndex="0">
+                <AccordionTrigger className="**:data-[slot=accordion-trigger-icon]:duration-200 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground **:data-[slot=accordion-trigger-icon]:transition-colors border-x-0 focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-foreground focus-visible:outline-solid font-medium gap-6 group-data-[open]/item:**:data-[slot=accordion-trigger-icon]:text-brand-ink hover:no-underline md:py-7 p-4 px-0 py-6 text-lede text-left text-pretty tracking-tight" type="button" value="speed" data-orientation="vertical" hidden="" index="5" aria-disabled="false" aria-expanded="false" id="base-ui-_R_1l25flbH2_" tabIndex={0}>
                   {"Where does our data live, and can we take it out?"}
-                  <svg className="group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg className="group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
-                  <svg className="group-aria-expanded/accordion-trigger:inline hidden lucide lucide-chevron-up pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg className="group-aria-expanded/accordion-trigger:inline hidden lucide lucide-chevron-up pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="m18 15-6-6-6 6"></path>
                   </svg>
                 </AccordionTrigger>
@@ -3153,12 +3153,12 @@ export function Pattern() {
             </AccordionItem>
             <AccordionItem className="border-b border-border data-open:bg-transparent first:border-t group/item not-last:border-b py-1.5" data-orientation="vertical" hidden="" index="6" data-closed="">
               <h3 className="flex" data-orientation="vertical" data-hidden="" data-index="6" data-closed="">
-                <AccordionTrigger className="**:data-[slot=accordion-trigger-icon]:duration-200 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground **:data-[slot=accordion-trigger-icon]:transition-colors border-x-0 focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-foreground focus-visible:outline-solid font-medium gap-6 group-data-[open]/item:**:data-[slot=accordion-trigger-icon]:text-brand-ink hover:no-underline md:py-7 p-4 px-0 py-6 text-lede text-left text-pretty tracking-tight" type="button" value="speed" data-orientation="vertical" hidden="" index="6" aria-disabled="false" aria-expanded="false" id="base-ui-_R_1t25flbH2_" tabIndex="0">
+                <AccordionTrigger className="**:data-[slot=accordion-trigger-icon]:duration-200 **:data-[slot=accordion-trigger-icon]:ml-auto **:data-[slot=accordion-trigger-icon]:size-4 **:data-[slot=accordion-trigger-icon]:text-muted-foreground **:data-[slot=accordion-trigger-icon]:transition-colors border-x-0 focus-visible:-outline-offset-2 focus-visible:outline-2 focus-visible:outline-foreground focus-visible:outline-solid font-medium gap-6 group-data-[open]/item:**:data-[slot=accordion-trigger-icon]:text-brand-ink hover:no-underline md:py-7 p-4 px-0 py-6 text-lede text-left text-pretty tracking-tight" type="button" value="speed" data-orientation="vertical" hidden="" index="6" aria-disabled="false" aria-expanded="false" id="base-ui-_R_1t25flbH2_" tabIndex={0}>
                   {"We have procurement, a security review, and our own paper."}
-                  <svg className="group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg className="group-aria-expanded/accordion-trigger:hidden lucide lucide-chevron-down pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
-                  <svg className="group-aria-expanded/accordion-trigger:inline hidden lucide lucide-chevron-up pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg className="group-aria-expanded/accordion-trigger:inline hidden lucide lucide-chevron-up pointer-events-none shrink-0" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="m18 15-6-6-6 6"></path>
                   </svg>
                 </AccordionTrigger>
@@ -3185,14 +3185,14 @@ export function Pattern() {
             </div>
             <div className="lg:col-span-5 lg:col-start-8">
               <div className="flex flex-col gap-3 lg:justify-end sm:flex-row">
-                <Button className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:transition-transform active:bg-brand-active active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-brand bg-clip-padding border border-transparent brand-weave dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:shadow-none fine-pointer:[&_svg]:hover:translate-x-1 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1.5 h-11 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5 hover:bg-brand-hover press px-6 rounded-full shadow-lift text-base text-brand-foreground" href="#pricing" role="button" tabIndex="0">
+                <Button className="[&_svg:not([class*='size-'])]:size-4 [&_svg]:transition-transform active:bg-brand-active active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-brand bg-clip-padding border border-transparent brand-weave dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:shadow-none fine-pointer:[&_svg]:hover:translate-x-1 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1.5 h-11 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5 hover:bg-brand-hover press px-6 rounded-full shadow-lift text-base text-brand-foreground" href="#pricing" role="button" tabIndex={0}>
                   {"Start the free trial"}
-                  <svg className="lucide lucide-arrow-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg className="lucide lucide-arrow-right size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
                 </Button>
-                <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-transparent dark:hover:bg-input/30 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1.5 h-11 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5 hover:bg-muted hover:text-foreground press px-6 rounded-full text-base" href="#contact" role="button" tabIndex="0">
+                <Button className="[&_svg:not([class*='size-'])]:size-4 active:not-aria-[haspopup]:translate-y-px aria-expanded:bg-muted aria-expanded:text-foreground aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-background bg-clip-padding border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:bg-transparent dark:hover:bg-input/30 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1.5 h-11 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5 hover:bg-muted hover:text-foreground press px-6 rounded-full text-base" href="#contact" role="button" tabIndex={0}>
                   {"Book a walkthrough"}
                 </Button>
               </div>
@@ -3277,7 +3277,7 @@ export function Pattern() {
                   <label htmlFor="company">
                     {"Company"}
                   </label>
-                  <input id="company" type="text" tabIndex="-1" autoComplete="off" name="company" />
+                  <input id="company" type="text" tabIndex={-1} autoComplete="off" name="company" />
                 </div>
                 <div className="gap-5 grid">
                   <div className="gap-5 grid sm:grid-cols-2">
@@ -3304,9 +3304,9 @@ export function Pattern() {
                     <Label className="font-medium gap-2 group-data-[disabled=true]:opacity-50 leading-none peer-disabled:opacity-50 text-sm" htmlFor="message">
                       {"Message"}
                     </Label>
-                    <Textarea className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-card border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 md:text-sm px-3 py-3 resize-none rounded-xl text-base transition-[color,box-shadow,background-color]" id="message" name="message" rows="5" placeholder="Tell us about your project or question..." aria-invalid="false"></Textarea>
+                    <Textarea className="aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-card border border-border dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 md:text-sm px-3 py-3 resize-none rounded-xl text-base transition-[color,box-shadow,background-color]" id="message" name="message" rows={5} placeholder="Tell us about your project or question..." aria-invalid="false"></Textarea>
                   </div>
-                  <Button className="[&_svg:not([class*='size-'])]:size-4 active:bg-brand-active active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-brand bg-clip-padding border border-transparent brand-weave dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:shadow-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1.5 h-11 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5 hover:bg-brand-hover press px-6 rounded-full shadow-lift text-base text-brand-foreground w-full" type="submit" tabIndex="0">
+                  <Button className="[&_svg:not([class*='size-'])]:size-4 active:bg-brand-active active:not-aria-[haspopup]:translate-y-px aria-invalid:border-destructive aria-invalid:ring-3 aria-invalid:ring-destructive/20 bg-brand bg-clip-padding border border-transparent brand-weave dark:aria-invalid:border-destructive/50 dark:aria-invalid:ring-destructive/40 dark:shadow-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/30 font-medium gap-1.5 h-11 has-data-[icon=inline-end]:pr-2.5 has-data-[icon=inline-start]:pl-2.5 hover:bg-brand-hover press px-6 rounded-full shadow-lift text-base text-brand-foreground w-full" type="submit" tabIndex={0}>
                     {"Send message"}
                   </Button>
                 </div>
@@ -3323,7 +3323,7 @@ export function Pattern() {
             <span className="gap-2 inline-flex items-center">
               <svg className="shrink-0 size-5 sm:size-6 text-brand-ink" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M10 2.5h4l5.5 15.5h-15L10 2.5z"></path>
-                <ellipse cx="12" cy="20.25" rx="10" ry="2.25" opacity="0.4"></ellipse>
+                <ellipse cx={12} cy={20.25} rx={10} ry={2.25} opacity={0.4}></ellipse>
               </svg>
               <span className="font-bold sm:text-xl text-foreground text-lg tracking-tight">
                 {"Limelight"}
@@ -3468,9 +3468,9 @@ export function Pattern() {
               </li>
               <li>
                 <a className="border border-border flex hover:border-foreground/30 hover:text-foreground items-center justify-center rounded-full size-9 text-muted-foreground transition-colors" href="mailto:hello@neui.io" aria-label="Email">
-                  <svg className="lucide lucide-mail size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <svg className="lucide lucide-mail size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
                     <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                    <rect x={2} y={4} width={20} height={16} rx={2}></rect>
                   </svg>
                 </a>
               </li>

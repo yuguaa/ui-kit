@@ -51,10 +51,10 @@ export function Pattern() {
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions>
-                  <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_0_" aria-checked="false" size="default" aria-label="Enforce two-factor authentication">
+                  <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_0_" aria-checked="false" size="default" aria-label="Enforce two-factor authentication">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_1_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_1_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </ItemActions>
               </Item>
             </div>
@@ -71,17 +71,17 @@ export function Pattern() {
                 </ItemContent>
                 <ItemActions>
                   <Select>
-                  <SelectTrigger className="w-40" type="button" tabIndex="0" id="base-ui-_r_3_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" extracted="1">
+                  <SelectTrigger className="w-40" type="button" tabIndex={0} id="base-ui-_r_3_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" extracted="1">
                     <SelectValue>
                       {"4 hours"}
                     </SelectValue>
-                    <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                    <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                       <path d="m6 9 6 6 6-6"></path>
                       {"▼"}
                     </svg>
                   </SelectTrigger>
                   </Select>
-                  <input id="base-ui-_r_3_-hidden-input" tabIndex="-1" aria-hidden="true" value="4 hours" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_3_-hidden-input" tabIndex={-1} aria-hidden="true" value="4 hours" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </ItemActions>
               </Item>
             </div>
@@ -97,10 +97,10 @@ export function Pattern() {
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions>
-                  <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_6_" aria-checked="false" size="default" aria-label="Single active session">
+                  <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_6_" aria-checked="false" size="default" aria-label="Single active session">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_7_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_7_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </ItemActions>
               </Item>
             </div>
@@ -127,10 +127,10 @@ export function Pattern() {
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions>
-                  <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_9_" aria-checked="true" size="default" aria-label="Password authentication">
+                  <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_9_" aria-checked="true" size="default" aria-label="Password authentication">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_a_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_a_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </ItemActions>
               </Item>
             </div>
@@ -146,10 +146,10 @@ export function Pattern() {
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions>
-                  <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_c_" aria-checked="true" size="default" aria-label="Magic link login">
+                  <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_c_" aria-checked="true" size="default" aria-label="Magic link login">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_d_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_d_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </ItemActions>
               </Item>
             </div>

@@ -43,7 +43,7 @@ export function Pattern() {
             <CardContent className="p-0">
               <Item variant="default" size="sm">
                 <ItemMedia className="[&_svg]:size-5 size-10 text-muted-foreground" variant="icon">
-                  <svg className="lucide lucide-inbox" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InboxIcon" tabler="IconInbox" hugeicons="InboxIcon" phosphor="TrayIcon" remixicon="RiInboxLine" aria-hidden="true">
+                  <svg className="lucide lucide-inbox" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InboxIcon" tabler="IconInbox" hugeicons="InboxIcon" phosphor="TrayIcon" remixicon="RiInboxLine" aria-hidden="true">
                     <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
                     <path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
                   </svg>
@@ -61,7 +61,7 @@ export function Pattern() {
                 <ItemActions className="sm:self-center sm:w-auto w-full">
                   <Field className="sm:w-auto" role="group" data-orientation="vertical">
                     <Select>
-                    <SelectTrigger className="[&_small]:hidden sm:w-[240px] w-full" type="button" tabIndex="0" id="base-ui-_r_0_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" extracted="1">
+                    <SelectTrigger className="[&_small]:hidden sm:w-[240px] w-full" type="button" tabIndex={0} id="base-ui-_r_0_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" extracted="1">
                       <SelectValue>
                         <span className="flex flex-col gap-px items-start">
                           <span className="font-medium">
@@ -72,13 +72,13 @@ export function Pattern() {
                           </small>
                         </span>
                       </SelectValue>
-                      <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                      <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
                         {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
-                    <input id="base-ui-_r_0_-hidden-input" tabIndex="-1" aria-hidden="true" value="default" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                    <input id="base-ui-_r_0_-hidden-input" tabIndex={-1} aria-hidden="true" value="default" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   </Field>
                 </ItemActions>
               </Item>
@@ -88,9 +88,9 @@ export function Pattern() {
             <CardContent className="p-0">
               <Item variant="default" size="sm">
                 <ItemMedia className="[&_svg]:size-5 size-10 text-muted-foreground" variant="icon">
-                  <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
+                  <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
                     <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                    <rect x={2} y={4} width={20} height={16} rx={2}></rect>
                   </svg>
                 </ItemMedia>
                 <ItemContent className="gap-1 min-w-0">
@@ -109,7 +109,7 @@ export function Pattern() {
                 <ItemActions className="sm:self-center sm:w-auto w-full">
                   <Field className="sm:w-auto" role="group" data-orientation="vertical">
                     <Select>
-                    <SelectTrigger className="[&_small]:hidden sm:w-[240px] w-full" type="button" tabIndex="0" id="base-ui-_r_3_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                    <SelectTrigger className="[&_small]:hidden sm:w-[240px] w-full" type="button" tabIndex={0} id="base-ui-_r_3_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                       <SelectValue>
                         <span className="flex flex-col gap-px items-start">
                           <span className="font-medium">
@@ -120,13 +120,13 @@ export function Pattern() {
                           </small>
                         </span>
                       </SelectValue>
-                      <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                      <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
                         {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
-                    <input id="base-ui-_r_3_-hidden-input" tabIndex="-1" aria-hidden="true" value="default" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                    <input id="base-ui-_r_3_-hidden-input" tabIndex={-1} aria-hidden="true" value="default" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   </Field>
                 </ItemActions>
               </Item>
@@ -136,10 +136,10 @@ export function Pattern() {
             <CardContent className="p-0">
               <Item variant="default" size="sm">
                 <ItemMedia className="[&_svg]:size-5 size-10 text-muted-foreground" variant="icon">
-                  <svg className="lucide lucide-monitor" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MonitorIcon" tabler="IconDeviceDesktop" hugeicons="ComputerIcon" phosphor="MonitorIcon" remixicon="RiComputerLine" aria-hidden="true">
-                    <rect width="20" height="14" x="2" y="3" rx="2"></rect>
-                    <line x1="8" x2="16" y1="21" y2="21"></line>
-                    <line x1="12" x2="12" y1="17" y2="21"></line>
+                  <svg className="lucide lucide-monitor" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MonitorIcon" tabler="IconDeviceDesktop" hugeicons="ComputerIcon" phosphor="MonitorIcon" remixicon="RiComputerLine" aria-hidden="true">
+                    <rect width={20} height={14} x={2} y={3} rx={2}></rect>
+                    <line x1={8} x2={16} y1={21} y2={21}></line>
+                    <line x1={12} x2={12} y1={17} y2={21}></line>
                   </svg>
                 </ItemMedia>
                 <ItemContent className="gap-1 min-w-0">
@@ -153,7 +153,7 @@ export function Pattern() {
                   </ItemDescription>
                 </ItemContent>
                 <ItemActions className="sm:self-center sm:w-auto w-full">
-                  <Button className="sm:w-auto w-full" type="button" tabIndex="0">
+                  <Button className="sm:w-auto w-full" type="button" tabIndex={0}>
                     {"Enable notifications"}
                   </Button>
                 </ItemActions>
@@ -164,8 +164,8 @@ export function Pattern() {
             <CardContent className="p-0">
               <Item variant="default" size="sm">
                 <ItemMedia className="[&_svg]:size-5 size-10 text-muted-foreground" variant="icon">
-                  <svg className="lucide lucide-smartphone" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SmartphoneIcon" tabler="IconDeviceMobile" hugeicons="SmartPhone01Icon" phosphor="DeviceMobileIcon" remixicon="RiSmartphoneLine" aria-hidden="true">
-                    <rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect>
+                  <svg className="lucide lucide-smartphone" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SmartphoneIcon" tabler="IconDeviceMobile" hugeicons="SmartPhone01Icon" phosphor="DeviceMobileIcon" remixicon="RiSmartphoneLine" aria-hidden="true">
+                    <rect width={14} height={20} x={5} y={2} rx={2} ry={2}></rect>
                     <path d="M12 18h.01"></path>
                   </svg>
                 </ItemMedia>
@@ -185,7 +185,7 @@ export function Pattern() {
                 <ItemActions className="sm:self-center sm:w-auto w-full">
                   <Field className="sm:w-auto" role="group" data-orientation="vertical">
                     <Select>
-                    <SelectTrigger className="[&_small]:hidden sm:w-[240px] w-full" type="button" tabIndex="0" id="base-ui-_r_6_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                    <SelectTrigger className="[&_small]:hidden sm:w-[240px] w-full" type="button" tabIndex={0} id="base-ui-_r_6_" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
                       <SelectValue>
                         <span className="flex flex-col gap-px items-start">
                           <span className="font-medium">
@@ -196,22 +196,22 @@ export function Pattern() {
                           </small>
                         </span>
                       </SelectValue>
-                      <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                      <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                         <path d="m6 9 6 6 6-6"></path>
                         {"▼"}
                       </svg>
                     </SelectTrigger>
                     </Select>
-                    <input id="base-ui-_r_6_-hidden-input" tabIndex="-1" aria-hidden="true" value="default" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                    <input id="base-ui-_r_6_-hidden-input" tabIndex={-1} aria-hidden="true" value="default" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   </Field>
                 </ItemActions>
               </Item>
               <Item variant="default" size="sm">
                 <ItemMedia className="size-10" variant="default">
-                  <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_9_" aria-checked="true" size="sm" aria-label="Smart notifications">
+                  <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_9_" aria-checked="true" size="sm" aria-label="Smart notifications">
                     <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                   </Switch>
-                  <input id="base-ui-_r_a_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_a_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                 </ItemMedia>
                 <ItemContent className="gap-1 min-w-0">
                   <ItemTitle className="gap-2">
@@ -258,7 +258,7 @@ export function Pattern() {
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions className="sm:self-center sm:w-auto w-full">
-                    <Button className="sm:w-auto w-full" type="button" tabIndex="0">
+                    <Button className="sm:w-auto w-full" type="button" tabIndex={0}>
                       {"Connect Slack"}
                     </Button>
                   </ItemActions>
@@ -298,7 +298,7 @@ export function Pattern() {
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions className="sm:self-center sm:w-auto w-full">
-                    <Button className="sm:w-auto w-full" type="button" tabIndex="0">
+                    <Button className="sm:w-auto w-full" type="button" tabIndex={0}>
                       {"Connect Zoom"}
                     </Button>
                   </ItemActions>
@@ -321,7 +321,7 @@ export function Pattern() {
                       </g>
                       <defs>
                         <clippath id="googlemeet-clip0">
-                          <rect width="621.2" height="512" fill="white"></rect>
+                          <rect width={621.2} height={512} fill="white"></rect>
                         </clippath>
                       </defs>
                     </svg>
@@ -337,7 +337,7 @@ export function Pattern() {
                     </ItemDescription>
                   </ItemContent>
                   <ItemActions className="sm:self-center sm:w-auto w-full">
-                    <Button className="sm:w-auto w-full" type="button" tabIndex="0">
+                    <Button className="sm:w-auto w-full" type="button" tabIndex={0}>
                       {"Connect Meet"}
                     </Button>
                   </ItemActions>
@@ -358,10 +358,10 @@ export function Pattern() {
                 <Collapsible data-open="">
                   <Item variant="default" size="sm">
                     <ItemMedia className="size-10" variant="default">
-                      <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_e_" aria-checked="true" size="sm" aria-label="Auto-follow active work">
+                      <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_e_" aria-checked="true" size="sm" aria-label="Auto-follow active work">
                         <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                       </Switch>
-                      <input id="base-ui-_r_f_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                      <input id="base-ui-_r_f_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                     </ItemMedia>
                     <ItemContent className="gap-1 min-w-0">
                       <ItemTitle className="gap-2">
@@ -375,8 +375,8 @@ export function Pattern() {
                     </ItemContent>
                     <ItemActions className="self-start shrink-0 sm:self-center sm:w-auto w-auto">
                       <Collapsible>
-                      <CollapsibleTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Toggle Auto-follow active work details" panelOpen="" aria-disabled="false" aria-controls="base-ui-_r_d_" aria-expanded="true">
-                        <svg className="in-data-open:rotate-180 lucide lucide-chevron-down size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                      <CollapsibleTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Toggle Auto-follow active work details" panelOpen="" aria-disabled="false" aria-controls="base-ui-_r_d_" aria-expanded="true">
+                        <svg className="in-data-open:rotate-180 lucide lucide-chevron-down size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                           <path d="m6 9 6 6 6-6"></path>
                         </svg>
                       </CollapsibleTrigger>
@@ -389,10 +389,10 @@ export function Pattern() {
                       <div>
                         <Item className="pl-7 sm:pl-9" variant="default" size="sm">
                           <ItemMedia className="size-10" variant="default">
-                            <Switch checked="" role="switch" tabIndex="0" id="base-ui-_r_h_" aria-checked="true" size="sm" aria-label="Follow work you create">
+                            <Switch checked="" role="switch" tabIndex={0} id="base-ui-_r_h_" aria-checked="true" size="sm" aria-label="Follow work you create">
                               <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                             </Switch>
-                            <input id="base-ui-_r_i_" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                            <input id="base-ui-_r_i_" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           </ItemMedia>
                           <ItemContent className="gap-1 min-w-0">
                             <ItemTitle className="gap-2">
@@ -410,10 +410,10 @@ export function Pattern() {
                         <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                         <Item className="pl-7 sm:pl-9" variant="default" size="sm">
                           <ItemMedia className="size-10" variant="default">
-                            <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_k_" aria-checked="false" size="sm" aria-label="Follow work you edit">
+                            <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_k_" aria-checked="false" size="sm" aria-label="Follow work you edit">
                               <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                             </Switch>
-                            <input id="base-ui-_r_l_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                            <input id="base-ui-_r_l_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           </ItemMedia>
                           <ItemContent className="gap-1 min-w-0">
                             <ItemTitle className="gap-2">
@@ -431,10 +431,10 @@ export function Pattern() {
                         <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
                         <Item className="pl-7 sm:pl-9" variant="default" size="sm">
                           <ItemMedia className="size-10" variant="default">
-                            <Switch unchecked="" role="switch" tabIndex="0" id="base-ui-_r_n_" aria-checked="false" size="sm" aria-label="Follow work you comment on">
+                            <Switch unchecked="" role="switch" tabIndex={0} id="base-ui-_r_n_" aria-checked="false" size="sm" aria-label="Follow work you comment on">
                               <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                             </Switch>
-                            <input id="base-ui-_r_o_" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                            <input id="base-ui-_r_o_" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                           </ItemMedia>
                           <ItemContent className="gap-1 min-w-0">
                             <ItemTitle className="gap-2">

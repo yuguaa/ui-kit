@@ -1,7 +1,6 @@
 "use client"
 
 import * as React from "react"
-import Link from "next/link"
 
 import { cn } from "cn"
 import { CopyRegistry } from "@/components/copy-registry"
@@ -9,7 +8,6 @@ import { Spinner } from "@/components/ui/spinner"
 import { SnapshotViewCode } from "@/components/replicated/snapshot-code-sheet"
 
 export interface SnapshotCardProps {
-  href: string
   /** iframe 加载地址，指向同一应用内的快照预览路由 */
   src: string
   /** 源码端地址，供查看代码面板使用 */
@@ -34,7 +32,6 @@ export interface SnapshotCardProps {
  * 预览用 iframe 隔离加载（浏览器原生懒加载），并按容器宽度等比缩放
  */
 export function SnapshotCard({
-  href,
   src,
   codeSrc,
   registryName,
@@ -67,10 +64,7 @@ export function SnapshotCard({
         className,
       )}
     >
-      <Link
-        href={href}
-        prefetch={false}
-        aria-label={title}
+      <div
         className="border-site-border site-rounded-xl relative block overflow-hidden border"
         style={{ height }}
       >
@@ -96,7 +90,7 @@ export function SnapshotCard({
             </div>
           )}
         </div>
-      </Link>
+      </div>
 
       <div className="flex items-center gap-3 px-3 py-2">
         <div className="min-w-0 flex-1">

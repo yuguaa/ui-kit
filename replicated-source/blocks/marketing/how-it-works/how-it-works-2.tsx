@@ -24,7 +24,7 @@ export function Pattern() {
           <div className="@5xl:grid-cols-[1fr_auto] @5xl:items-end @6xl:grid-cols-[1fr_auto_20rem] gap-8 grid">
             <div className="flex flex-col gap-4 items-start min-w-0">
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:size-3.5! bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1.5 h-7 min-w-6 outline-none px-2 py-0.75 relative rounded-full text-secondary-foreground text-sm transition-shadow">
-                <svg className="lucide lucide-code-xml" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CodeXmlIcon" tabler="IconCode" hugeicons="SourceCodeIcon" phosphor="CodeIcon" remixicon="RiCodeSSlashLine" aria-hidden="true">
+                <svg className="lucide lucide-code-xml" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CodeXmlIcon" tabler="IconCode" hugeicons="SourceCodeIcon" phosphor="CodeIcon" remixicon="RiCodeSSlashLine" aria-hidden="true">
                   <path d="m18 16 4-4-4-4"></path>
                   <path d="m6 8-4 4 4 4"></path>
                   <path d="m14.5 4-5 16"></path>
@@ -39,19 +39,19 @@ export function Pattern() {
               </p>
             </div>
             <div className="@5xl:justify-end @5xl:w-80 flex flex-wrap gap-x-2.5 gap-y-2 items-center">
-              <Button href="#" role="button" tabIndex="0">
-                <svg className="lucide lucide-book-open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BookOpenIcon" tabler="IconBook" hugeicons="BookOpen01Icon" phosphor="BookOpenIcon" remixicon="RiBookOpenLine" data-icon="inline-start" aria-hidden="true">
+              <Button href="#" role="button" tabIndex={0}>
+                <svg className="lucide lucide-book-open" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BookOpenIcon" tabler="IconBook" hugeicons="BookOpen01Icon" phosphor="BookOpenIcon" remixicon="RiBookOpenLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M12 7v14"></path>
                   <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
                 </svg>
                 {"View Docs"}
               </Button>
-              <Button href="#" role="button" tabIndex="0">
-                <svg className="lucide lucide-layout-grid" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" data-icon="inline-start" aria-hidden="true">
-                  <rect width="7" height="7" x="3" y="3" rx="1"></rect>
-                  <rect width="7" height="7" x="14" y="3" rx="1"></rect>
-                  <rect width="7" height="7" x="14" y="14" rx="1"></rect>
-                  <rect width="7" height="7" x="3" y="14" rx="1"></rect>
+              <Button href="#" role="button" tabIndex={0}>
+                <svg className="lucide lucide-layout-grid" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LayoutGridIcon" tabler="IconLayoutGrid" hugeicons="GridViewIcon" phosphor="SquaresFourIcon" remixicon="RiGalleryView2" data-icon="inline-start" aria-hidden="true">
+                  <rect width={7} height={7} x={3} y={3} rx={1}></rect>
+                  <rect width={7} height={7} x={14} y={3} rx={1}></rect>
+                  <rect width={7} height={7} x={14} y={14} rx={1}></rect>
+                  <rect width={7} height={7} x={3} y={14} rx={1}></rect>
                 </svg>
                 {"Browse Registry"}
               </Button>
@@ -60,10 +60,10 @@ export function Pattern() {
               <li>
                 <Item className="border-0" variant="default" size="default">
                   <IconTile className="[--icon-tile-size:--spacing(7)] self-start" variant="outline" size="default">
-                    <svg className="lucide lucide-layout-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayoutPanelLeftIcon" tabler="IconLayoutBoardSplit" hugeicons="DashboardSquare01Icon" phosphor="LayoutIcon" remixicon="RiLayoutLeftLine" aria-hidden="true">
-                      <rect width="7" height="18" x="3" y="3" rx="1"></rect>
-                      <rect width="7" height="7" x="14" y="3" rx="1"></rect>
-                      <rect width="7" height="7" x="14" y="14" rx="1"></rect>
+                    <svg className="lucide lucide-layout-panel-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LayoutPanelLeftIcon" tabler="IconLayoutBoardSplit" hugeicons="DashboardSquare01Icon" phosphor="LayoutIcon" remixicon="RiLayoutLeftLine" aria-hidden="true">
+                      <rect width={7} height={18} x={3} y={3} rx={1}></rect>
+                      <rect width={7} height={7} x={14} y={3} rx={1}></rect>
+                      <rect width={7} height={7} x={14} y={14} rx={1}></rect>
                     </svg>
                   </IconTile>
                   <ItemContent className="gap-px">
@@ -79,10 +79,10 @@ export function Pattern() {
               <li>
                 <Item className="border-0" variant="default" size="default">
                   <IconTile className="[--icon-tile-size:--spacing(7)] self-start" variant="outline" size="default">
-                    <svg className="lucide lucide-workflow" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="WorkflowIcon" tabler="IconSitemap" hugeicons="WorkflowCircle01Icon" phosphor="TreeStructureIcon" remixicon="RiFlowChart" aria-hidden="true">
-                      <rect width="8" height="8" x="3" y="3" rx="2"></rect>
+                    <svg className="lucide lucide-workflow" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="WorkflowIcon" tabler="IconSitemap" hugeicons="WorkflowCircle01Icon" phosphor="TreeStructureIcon" remixicon="RiFlowChart" aria-hidden="true">
+                      <rect width={8} height={8} x={3} y={3} rx={2}></rect>
                       <path d="M7 11v4a2 2 0 0 0 2 2h4"></path>
-                      <rect width="8" height="8" x="13" y="13" rx="2"></rect>
+                      <rect width={8} height={8} x={13} y={13} rx={2}></rect>
                     </svg>
                   </IconTile>
                   <ItemContent className="gap-px">
@@ -104,30 +104,30 @@ export function Pattern() {
                   <div className="-translate-x-1/2 absolute left-1/2 top-0" style={{width: "600px", height: "166.5px"}}>
                     <svg className="absolute inset-0 overflow-visible size-full" aria-hidden="true" viewBox="0 0 600 166.5">
                       <defs>
-                        <pattern id="hiw2-art-0-grid" patternUnits="userSpaceOnUse" width="54" height="54">
-                          <rect width="54" height="54" fill="none" stroke="white" strokeWidth="0.58"></rect>
+                        <pattern id="hiw2-art-0-grid" patternUnits="userSpaceOnUse" width={54} height={54}>
+                          <rect width={54} height={54} fill="none" stroke="white" strokeWidth={0.58}></rect>
                         </pattern>
-                        <lineargradient id="hiw2-art-0-run-a-20" gradientUnits="userSpaceOnUse" x1="157.46929999999998" y1="57" x2="297.76535" y2="138">
-                          <stop stopColor="white" stopOpacity="0"></stop>
-                          <stop offset="0.08" stopColor="white"></stop>
-                          <stop offset="0.92" stopColor="white"></stop>
-                          <stop offset="1" stopColor="white" stopOpacity="0"></stop>
+                        <lineargradient id="hiw2-art-0-run-a-20" gradientUnits="userSpaceOnUse" x1={157.46929999999998} y1={57} x2={297.76535} y2={138}>
+                          <stop stopColor="white" stopOpacity={0}></stop>
+                          <stop offset={0.08} stopColor="white"></stop>
+                          <stop offset={0.92} stopColor="white"></stop>
+                          <stop offset={1} stopColor="white" stopOpacity={0}></stop>
                         </lineargradient>
-                        <lineargradient id="hiw2-art-0-run-b10" gradientUnits="userSpaceOnUse" x1="297.76535" y1="138" x2="438.06140000000005" y2="57">
-                          <stop stopColor="white" stopOpacity="0"></stop>
-                          <stop offset="0.08" stopColor="white"></stop>
-                          <stop offset="0.92" stopColor="white"></stop>
-                          <stop offset="1" stopColor="white" stopOpacity="0"></stop>
+                        <lineargradient id="hiw2-art-0-run-b10" gradientUnits="userSpaceOnUse" x1={297.76535} y1={138} x2={438.06140000000005} y2={57}>
+                          <stop stopColor="white" stopOpacity={0}></stop>
+                          <stop offset={0.08} stopColor="white"></stop>
+                          <stop offset={0.92} stopColor="white"></stop>
+                          <stop offset={1} stopColor="white" stopOpacity={0}></stop>
                         </lineargradient>
                       </defs>
-                      <rect width="100%" height="100%" fill="white" fillOpacity="0.02"></rect>
+                      <rect width="100%" height="100%" fill="white" fillOpacity={0.02}></rect>
                       <g transform="translate(251 111)">
                         <g transform="matrix(0.866025,-0.5,0.866025,0.5,0,0)">
-                          <rect x="-648" y="-648" width="1296" height="1296" fill="url(#hiw2-art-0-grid)" fillOpacity="0.15"></rect>
+                          <rect x={-648} y={-648} width={1296} height={1296} fill="url(#hiw2-art-0-grid)" fillOpacity={0.15}></rect>
                         </g>
                       </g>
-                      <line data-axis="a" data-leg="1" x1="157.46929999999998" y1="57" x2="202.364036" y2="82.92" stroke="url(#hiw2-art-0-run-a-20)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0"></line>
-                      <line data-axis="b" data-leg="2" x1="297.76535" y1="138" x2="342.66008600000004" y2="112.08" stroke="url(#hiw2-art-0-run-b10)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0"></line>
+                      <line data-axis="a" data-leg="1" x1={157.46929999999998} y1={57} x2={202.364036} y2={82.92} stroke="url(#hiw2-art-0-run-a-20)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0}></line>
+                      <line data-axis="b" data-leg="2" x1={297.76535} y1={138} x2={342.66008600000004} y2={112.08} stroke="url(#hiw2-art-0-run-b10)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0}></line>
                     </svg>
                     <div className="absolute" style={{left: "251px", top: "79px"}}>
                       <div style={{"--hiw2-period": "7.4s", "--hiw2-delay": "0.00s"}}>
@@ -135,7 +135,7 @@ export function Pattern() {
                         <div className="absolute origin-top-left" style={{width: "54px", height: "54px", borderRadius: "6px", transform: "matrix(0.866025, -0.5, 0.866025, 0.5, 0, 0)", background: "rgb(5, 5, 5)", border: "1px solid rgb(64, 64, 64)"}}></div>
                         <div className="[&_svg]:size-full [filter:brightness(0)_invert(1)] absolute origin-top-left" style={{left: "25.9808px", top: "0px", width: "24px", height: "24px", transform: "matrix(0.866025, -0.5, 0.866025, 0.5, 0, 0)"}}>
                           <svg viewBox="25.668 25.1352 49.6644 50" fill="none" aria-hidden="true">
-                            <circle cx="70.634" cy="29.8334" r="4.69799" fill="currentColor"></circle>
+                            <circle cx={70.634} cy={29.8334} r={4.69799} fill="currentColor"></circle>
                             <path fillRule="evenodd" clipRule="evenodd" d="M25.668 57.0144V29.8332C25.668 27.2386 27.7713 25.1352 30.366 25.1352C32.9606 25.1352 35.0639 27.2386 35.0639 29.8332V57.0144C35.0639 61.833 38.9702 65.7392 43.7888 65.7392H57.2116C62.0302 65.7392 65.9364 61.833 65.9364 57.0144V43.7258C65.9364 41.1312 68.0398 39.0278 70.6344 39.0278C73.229 39.0278 75.3324 41.1312 75.3324 43.7258V57.0144C75.3324 67.0222 67.2194 75.1352 57.2116 75.1352H43.7888C33.7809 75.1352 25.668 67.0222 25.668 57.0144Z" fill="currentColor"></path>
                           </svg>
                         </div>
@@ -161,16 +161,16 @@ export function Pattern() {
                         <div className="[&_svg]:size-full absolute origin-top-left" style={{left: "25.9808px", top: "0px", width: "24px", height: "24px", transform: "matrix(0.866025, -0.5, 0.866025, 0.5, 0, 0)"}}>
                           <svg viewBox="0 0 109 113" fill="none">
                             <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint0_linear)"></path>
-                            <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity="0.2"></path>
+                            <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity={0.2}></path>
                             <path d="M45.317 2.07103C48.1765 -1.53037 53.9745 0.442937 54.0434 5.041L54.4849 72.2922H9.83113C1.64038 72.2922 -2.92775 62.8321 2.1655 56.4175L45.317 2.07103Z" fill="#3ECF8E"></path>
                             <defs>
-                              <lineargradient id="supabase-paint0_linear" x1="53.9738" y1="54.974" x2="94.1635" y2="71.8295" gradientUnits="userSpaceOnUse">
+                              <lineargradient id="supabase-paint0_linear" x1={53.9738} y1={54.974} x2={94.1635} y2={71.8295} gradientUnits="userSpaceOnUse">
                                 <stop stopColor="#249361"></stop>
-                                <stop offset="1" stopColor="#3ECF8E"></stop>
+                                <stop offset={1} stopColor="#3ECF8E"></stop>
                               </lineargradient>
-                              <lineargradient id="supabase-paint1_linear" x1="36.1558" y1="30.578" x2="54.4844" y2="65.0806" gradientUnits="userSpaceOnUse">
+                              <lineargradient id="supabase-paint1_linear" x1={36.1558} y1={30.578} x2={54.4844} y2={65.0806} gradientUnits="userSpaceOnUse">
                                 <stop></stop>
-                                <stop offset="1" stopOpacity="0"></stop>
+                                <stop offset={1} stopOpacity={0}></stop>
                               </lineargradient>
                             </defs>
                           </svg>
@@ -199,7 +199,7 @@ export function Pattern() {
                   </CardDescription>
                 </CardContent>
                 <CardFooter className="bg-muted/50 border-t mt-auto pb-(--card-spacing)">
-                  <Button className="w-full" href="#" role="button" tabIndex="0">
+                  <Button className="w-full" href="#" role="button" tabIndex={0}>
                     {"Get Started"}
                   </Button>
                 </CardFooter>
@@ -211,30 +211,30 @@ export function Pattern() {
                   <div className="-translate-x-1/2 absolute left-1/2 top-0" style={{width: "600px", height: "166.5px"}}>
                     <svg className="absolute inset-0 overflow-visible size-full" aria-hidden="true" viewBox="0 0 600 166.5">
                       <defs>
-                        <pattern id="hiw2-art-1-grid" patternUnits="userSpaceOnUse" width="54" height="54">
-                          <rect width="54" height="54" fill="none" stroke="white" strokeWidth="0.58"></rect>
+                        <pattern id="hiw2-art-1-grid" patternUnits="userSpaceOnUse" width={54} height={54}>
+                          <rect width={54} height={54} fill="none" stroke="white" strokeWidth={0.58}></rect>
                         </pattern>
-                        <lineargradient id="hiw2-art-1-run-b0-2" gradientUnits="userSpaceOnUse" x1="157.46929999999998" y1="165" x2="297.76535" y2="84">
-                          <stop stopColor="white" stopOpacity="0"></stop>
-                          <stop offset="0.08" stopColor="white"></stop>
-                          <stop offset="0.92" stopColor="white"></stop>
-                          <stop offset="1" stopColor="white" stopOpacity="0"></stop>
+                        <lineargradient id="hiw2-art-1-run-b0-2" gradientUnits="userSpaceOnUse" x1={157.46929999999998} y1={165} x2={297.76535} y2={84}>
+                          <stop stopColor="white" stopOpacity={0}></stop>
+                          <stop offset={0.08} stopColor="white"></stop>
+                          <stop offset={0.92} stopColor="white"></stop>
+                          <stop offset={1} stopColor="white" stopOpacity={0}></stop>
                         </lineargradient>
-                        <lineargradient id="hiw2-art-1-run-a01" gradientUnits="userSpaceOnUse" x1="297.76535" y1="84" x2="438.06140000000005" y2="165">
-                          <stop stopColor="white" stopOpacity="0"></stop>
-                          <stop offset="0.08" stopColor="white"></stop>
-                          <stop offset="0.92" stopColor="white"></stop>
-                          <stop offset="1" stopColor="white" stopOpacity="0"></stop>
+                        <lineargradient id="hiw2-art-1-run-a01" gradientUnits="userSpaceOnUse" x1={297.76535} y1={84} x2={438.06140000000005} y2={165}>
+                          <stop stopColor="white" stopOpacity={0}></stop>
+                          <stop offset={0.08} stopColor="white"></stop>
+                          <stop offset={0.92} stopColor="white"></stop>
+                          <stop offset={1} stopColor="white" stopOpacity={0}></stop>
                         </lineargradient>
                       </defs>
-                      <rect width="100%" height="100%" fill="white" fillOpacity="0.02"></rect>
+                      <rect width="100%" height="100%" fill="white" fillOpacity={0.02}></rect>
                       <g transform="translate(251 111)">
                         <g transform="matrix(0.866025,-0.5,0.866025,0.5,0,0)">
-                          <rect x="-648" y="-648" width="1296" height="1296" fill="url(#hiw2-art-1-grid)" fillOpacity="0.15"></rect>
+                          <rect x={-648} y={-648} width={1296} height={1296} fill="url(#hiw2-art-1-grid)" fillOpacity={0.15}></rect>
                         </g>
                       </g>
-                      <line data-axis="b" data-leg="1" x1="157.46929999999998" y1="165" x2="202.364036" y2="139.07999999999998" stroke="url(#hiw2-art-1-run-b0-2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0"></line>
-                      <line data-axis="a" data-leg="2" x1="297.76535" y1="84" x2="342.66008600000004" y2="109.92" stroke="url(#hiw2-art-1-run-a01)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0"></line>
+                      <line data-axis="b" data-leg="1" x1={157.46929999999998} y1={165} x2={202.364036} y2={139.07999999999998} stroke="url(#hiw2-art-1-run-b0-2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0}></line>
+                      <line data-axis="a" data-leg="2" x1={297.76535} y1={84} x2={342.66008600000004} y2={109.92} stroke="url(#hiw2-art-1-run-a01)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0}></line>
                     </svg>
                     <div className="absolute" style={{left: "251px", top: "79px"}}>
                       <div style={{"--hiw2-period": "10.2s", "--hiw2-delay": "0.00s"}}>
@@ -305,7 +305,7 @@ export function Pattern() {
                   </CardDescription>
                 </CardContent>
                 <CardFooter className="bg-muted/50 border-t mt-auto pb-(--card-spacing)">
-                  <Button className="w-full" href="#" role="button" tabIndex="0">
+                  <Button className="w-full" href="#" role="button" tabIndex={0}>
                     {"Explore Components"}
                   </Button>
                 </CardFooter>
@@ -317,30 +317,30 @@ export function Pattern() {
                   <div className="-translate-x-1/2 absolute left-1/2 top-0" style={{width: "600px", height: "166.5px"}}>
                     <svg className="absolute inset-0 overflow-visible size-full" aria-hidden="true" viewBox="0 0 600 166.5">
                       <defs>
-                        <pattern id="hiw2-art-2-grid" patternUnits="userSpaceOnUse" width="54" height="54">
-                          <rect width="54" height="54" fill="none" stroke="white" strokeWidth="0.58"></rect>
+                        <pattern id="hiw2-art-2-grid" patternUnits="userSpaceOnUse" width={54} height={54}>
+                          <rect width={54} height={54} fill="none" stroke="white" strokeWidth={0.58}></rect>
                         </pattern>
-                        <lineargradient id="hiw2-art-2-run-a-31" gradientUnits="userSpaceOnUse" x1="157.46929999999998" y1="3" x2="297.76535" y2="84">
-                          <stop stopColor="white" stopOpacity="0"></stop>
-                          <stop offset="0.08" stopColor="white"></stop>
-                          <stop offset="0.92" stopColor="white"></stop>
-                          <stop offset="1" stopColor="white" stopOpacity="0"></stop>
+                        <lineargradient id="hiw2-art-2-run-a-31" gradientUnits="userSpaceOnUse" x1={157.46929999999998} y1={3} x2={297.76535} y2={84}>
+                          <stop stopColor="white" stopOpacity={0}></stop>
+                          <stop offset={0.08} stopColor="white"></stop>
+                          <stop offset={0.92} stopColor="white"></stop>
+                          <stop offset={1} stopColor="white" stopOpacity={0}></stop>
                         </lineargradient>
-                        <lineargradient id="hiw2-art-2-run-b01" gradientUnits="userSpaceOnUse" x1="297.76535" y1="84" x2="438.06140000000005" y2="3">
-                          <stop stopColor="white" stopOpacity="0"></stop>
-                          <stop offset="0.08" stopColor="white"></stop>
-                          <stop offset="0.92" stopColor="white"></stop>
-                          <stop offset="1" stopColor="white" stopOpacity="0"></stop>
+                        <lineargradient id="hiw2-art-2-run-b01" gradientUnits="userSpaceOnUse" x1={297.76535} y1={84} x2={438.06140000000005} y2={3}>
+                          <stop stopColor="white" stopOpacity={0}></stop>
+                          <stop offset={0.08} stopColor="white"></stop>
+                          <stop offset={0.92} stopColor="white"></stop>
+                          <stop offset={1} stopColor="white" stopOpacity={0}></stop>
                         </lineargradient>
                       </defs>
-                      <rect width="100%" height="100%" fill="white" fillOpacity="0.02"></rect>
+                      <rect width="100%" height="100%" fill="white" fillOpacity={0.02}></rect>
                       <g transform="translate(251 111)">
                         <g transform="matrix(0.866025,-0.5,0.866025,0.5,0,0)">
-                          <rect x="-648" y="-648" width="1296" height="1296" fill="url(#hiw2-art-2-grid)" fillOpacity="0.15"></rect>
+                          <rect x={-648} y={-648} width={1296} height={1296} fill="url(#hiw2-art-2-grid)" fillOpacity={0.15}></rect>
                         </g>
                       </g>
-                      <line data-axis="a" data-leg="1" x1="157.46929999999998" y1="3" x2="202.364036" y2="28.92" stroke="url(#hiw2-art-2-run-a-31)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0"></line>
-                      <line data-axis="b" data-leg="2" x1="297.76535" y1="84" x2="342.66008600000004" y2="58.08" stroke="url(#hiw2-art-2-run-b01)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0"></line>
+                      <line data-axis="a" data-leg="1" x1={157.46929999999998} y1={3} x2={202.364036} y2={28.92} stroke="url(#hiw2-art-2-run-a-31)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0}></line>
+                      <line data-axis="b" data-leg="2" x1={297.76535} y1={84} x2={342.66008600000004} y2={58.08} stroke="url(#hiw2-art-2-run-b01)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0}></line>
                     </svg>
                     <div className="absolute" style={{left: "251px", top: "79px"}}>
                       <div style={{"--hiw2-period": "6.4s", "--hiw2-delay": "0.00s"}}>
@@ -379,7 +379,7 @@ export function Pattern() {
                         <div className="[&_svg]:size-full absolute origin-top-left" style={{left: "25.9808px", top: "0px", width: "24px", height: "24px", transform: "matrix(0.866025, -0.5, 0.866025, 0.5, 0, 0)"}}>
                           <svg viewBox="0 0 36 36">
                             <g fill="none">
-                              <circle fill="#8247E5" cx="18" cy="18" r="18"></circle>
+                              <circle fill="#8247E5" cx={18} cy={18} r={18}></circle>
                               <path d="M24.172 13.954c-.438-.25-1.002-.25-1.504 0l-3.509 2.068-2.38 1.316-3.447 2.068c-.439.25-1.003.25-1.504 0l-2.695-1.63a1.527 1.527 0 0 1-.752-1.315v-3.133c0-.502.25-1.003.752-1.316l2.695-1.567c.438-.25 1.002-.25 1.504 0l2.694 1.63c.439.25.752.751.752 1.315v2.068l2.381-1.378v-2.13c0-.502-.25-1.004-.752-1.317l-5.013-2.945c-.438-.25-1.002-.25-1.504 0l-5.138 3.008c-.501.25-.752.752-.752 1.253v5.89c0 .502.25 1.003.752 1.316l5.076 2.946c.438.25 1.002.25 1.504 0l3.446-2.006 2.381-1.378 3.447-2.006c.438-.25 1.002-.25 1.504 0l2.694 1.567c.439.25.752.752.752 1.316v3.133c0 .501-.25 1.003-.752 1.316l-2.632 1.567c-.438.25-1.002.25-1.504 0l-2.694-1.567a1.527 1.527 0 0 1-.752-1.316v-2.005L16.84 22.1v2.067c0 .502.25 1.003.752 1.316l5.075 2.946c.439.25 1.003.25 1.504 0l5.076-2.946c.439-.25.752-.752.752-1.316v-5.953c0-.5-.25-1.002-.752-1.316l-5.076-2.945z" fill="#FFF"></path>
                             </g>
                           </svg>
@@ -420,7 +420,7 @@ export function Pattern() {
                   </CardDescription>
                 </CardContent>
                 <CardFooter className="bg-muted/50 border-t mt-auto pb-(--card-spacing)">
-                  <Button className="w-full" href="#" role="button" tabIndex="0">
+                  <Button className="w-full" href="#" role="button" tabIndex={0}>
                     {"Read Documentation"}
                   </Button>
                 </CardFooter>
@@ -432,30 +432,30 @@ export function Pattern() {
                   <div className="-translate-x-1/2 absolute left-1/2 top-0" style={{width: "600px", height: "166.5px"}}>
                     <svg className="absolute inset-0 overflow-visible size-full" aria-hidden="true" viewBox="0 0 600 166.5">
                       <defs>
-                        <pattern id="hiw2-art-3-grid" patternUnits="userSpaceOnUse" width="54" height="54">
-                          <rect width="54" height="54" fill="none" stroke="white" strokeWidth="0.58"></rect>
+                        <pattern id="hiw2-art-3-grid" patternUnits="userSpaceOnUse" width={54} height={54}>
+                          <rect width={54} height={54} fill="none" stroke="white" strokeWidth={0.58}></rect>
                         </pattern>
-                        <lineargradient id="hiw2-art-3-run-b0-2" gradientUnits="userSpaceOnUse" x1="157.46929999999998" y1="175" x2="297.76535" y2="94">
-                          <stop stopColor="white" stopOpacity="0"></stop>
-                          <stop offset="0.08" stopColor="white"></stop>
-                          <stop offset="0.92" stopColor="white"></stop>
-                          <stop offset="1" stopColor="white" stopOpacity="0"></stop>
+                        <lineargradient id="hiw2-art-3-run-b0-2" gradientUnits="userSpaceOnUse" x1={157.46929999999998} y1={175} x2={297.76535} y2={94}>
+                          <stop stopColor="white" stopOpacity={0}></stop>
+                          <stop offset={0.08} stopColor="white"></stop>
+                          <stop offset={0.92} stopColor="white"></stop>
+                          <stop offset={1} stopColor="white" stopOpacity={0}></stop>
                         </lineargradient>
-                        <lineargradient id="hiw2-art-3-run-a01" gradientUnits="userSpaceOnUse" x1="297.76535" y1="94" x2="438.06140000000005" y2="175">
-                          <stop stopColor="white" stopOpacity="0"></stop>
-                          <stop offset="0.08" stopColor="white"></stop>
-                          <stop offset="0.92" stopColor="white"></stop>
-                          <stop offset="1" stopColor="white" stopOpacity="0"></stop>
+                        <lineargradient id="hiw2-art-3-run-a01" gradientUnits="userSpaceOnUse" x1={297.76535} y1={94} x2={438.06140000000005} y2={175}>
+                          <stop stopColor="white" stopOpacity={0}></stop>
+                          <stop offset={0.08} stopColor="white"></stop>
+                          <stop offset={0.92} stopColor="white"></stop>
+                          <stop offset={1} stopColor="white" stopOpacity={0}></stop>
                         </lineargradient>
                       </defs>
-                      <rect width="100%" height="100%" fill="white" fillOpacity="0.02"></rect>
+                      <rect width="100%" height="100%" fill="white" fillOpacity={0.02}></rect>
                       <g transform="translate(251 121)">
                         <g transform="matrix(0.866025,-0.5,0.866025,0.5,0,0)">
-                          <rect x="-648" y="-648" width="1296" height="1296" fill="url(#hiw2-art-3-grid)" fillOpacity="0.15"></rect>
+                          <rect x={-648} y={-648} width={1296} height={1296} fill="url(#hiw2-art-3-grid)" fillOpacity={0.15}></rect>
                         </g>
                       </g>
-                      <line data-axis="b" data-leg="1" x1="157.46929999999998" y1="175" x2="202.364036" y2="149.07999999999998" stroke="url(#hiw2-art-3-run-b0-2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0"></line>
-                      <line data-axis="a" data-leg="2" x1="297.76535" y1="94" x2="342.66008600000004" y2="119.92" stroke="url(#hiw2-art-3-run-a01)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0"></line>
+                      <line data-axis="b" data-leg="1" x1={157.46929999999998} y1={175} x2={202.364036} y2={149.07999999999998} stroke="url(#hiw2-art-3-run-b0-2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0}></line>
+                      <line data-axis="a" data-leg="2" x1={297.76535} y1={94} x2={342.66008600000004} y2={119.92} stroke="url(#hiw2-art-3-run-a01)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0}></line>
                     </svg>
                     <div className="absolute" style={{left: "251px", top: "89px"}}>
                       <div style={{"--hiw2-period": "10.8s", "--hiw2-delay": "0.00s"}}>
@@ -496,10 +496,10 @@ export function Pattern() {
                         <div className="absolute origin-top-left" style={{width: "54px", height: "54px", borderRadius: "6px", transform: "matrix(0.866025, -0.5, 0.866025, 0.5, 0, 0)", background: "rgb(5, 5, 5)", border: "1px solid rgb(64, 64, 64)"}}></div>
                         <div className="[&_svg]:size-full absolute origin-top-left" style={{left: "25.9808px", top: "0px", width: "24px", height: "24px", transform: "matrix(0.866025, -0.5, 0.866025, 0.5, 0, 0)"}}>
                           <svg fill="none" viewBox="0 0 160 160">
-                            <rect width="9.631" height="40.852" fill="#C5F74F" rx="4.816" transform="matrix(.87303 .48767 -.49721 .86763 43.48 67.304)"></rect>
-                            <rect width="9.631" height="40.852" fill="#C5F74F" rx="4.816" transform="matrix(.87303 .48767 -.49721 .86763 76.94 46.534)"></rect>
-                            <rect width="9.631" height="40.852" fill="#C5F74F" rx="4.816" transform="matrix(.87303 .48767 -.49721 .86763 128.424 46.535)"></rect>
-                            <rect width="9.631" height="40.852" fill="#C5F74F" rx="4.816" transform="matrix(.87303 .48767 -.49721 .86763 94.957 67.304)"></rect>
+                            <rect width={9.631} height={40.852} fill="#C5F74F" rx={4.816} transform="matrix(.87303 .48767 -.49721 .86763 43.48 67.304)"></rect>
+                            <rect width={9.631} height={40.852} fill="#C5F74F" rx={4.816} transform="matrix(.87303 .48767 -.49721 .86763 76.94 46.534)"></rect>
+                            <rect width={9.631} height={40.852} fill="#C5F74F" rx={4.816} transform="matrix(.87303 .48767 -.49721 .86763 128.424 46.535)"></rect>
+                            <rect width={9.631} height={40.852} fill="#C5F74F" rx={4.816} transform="matrix(.87303 .48767 -.49721 .86763 94.957 67.304)"></rect>
                           </svg>
                         </div>
                       </div>
@@ -526,7 +526,7 @@ export function Pattern() {
                   </CardDescription>
                 </CardContent>
                 <CardFooter className="bg-muted/50 border-t mt-auto pb-(--card-spacing)">
-                  <Button className="w-full" href="#" role="button" tabIndex="0">
+                  <Button className="w-full" href="#" role="button" tabIndex={0}>
                     {"Start Building"}
                   </Button>
                 </CardFooter>

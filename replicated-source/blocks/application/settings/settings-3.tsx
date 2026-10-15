@@ -104,17 +104,17 @@ export function Pattern() {
               </div>
               <FieldContent className="@md/field-group:w-78 min-w-0">
                 <Select>
-                <SelectTrigger className="w-full" type="button" tabIndex="0" id="settings-3-start-of-week" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" extracted="1">
+                <SelectTrigger className="w-full" type="button" tabIndex={0} id="settings-3-start-of-week" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default" extracted="1">
                   <SelectValue>
                     {"Monday"}
                   </SelectValue>
-                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                  <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                     {"▼"}
                   </svg>
                 </SelectTrigger>
                 </Select>
-                <input id="base-ui-_r_2_-hidden-input" tabIndex="-1" aria-hidden="true" value="monday" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                <input id="base-ui-_r_2_-hidden-input" tabIndex={-1} aria-hidden="true" value="monday" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
               </FieldContent>
             </Field>
             <FieldSeparator content="false">
@@ -133,15 +133,15 @@ export function Pattern() {
               </div>
               <FieldContent className="@md/field-group:w-78 min-w-0">
                 <div className="flex flex-col gap-2 sm:flex-row sm:justify-end">
-                  <Button type="button" tabIndex="0">
-                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0}>
+                    <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                       <path d="M5 12h14"></path>
                       <path d="M12 5v14"></path>
                     </svg>
                     {"Add origin"}
                   </Button>
-                  <Button type="button" tabIndex="0">
-                    <svg className="lucide lucide-upload" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UploadIcon" tabler="IconUpload" hugeicons="Upload01Icon" phosphor="UploadSimpleIcon" remixicon="RiUploadLine" aria-hidden="true">
+                  <Button type="button" tabIndex={0}>
+                    <svg className="lucide lucide-upload" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UploadIcon" tabler="IconUpload" hugeicons="Upload01Icon" phosphor="UploadSimpleIcon" remixicon="RiUploadLine" aria-hidden="true">
                       <path d="M12 3v12"></path>
                       <path d="m17 8-5-5-5 5"></path>
                       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -175,7 +175,7 @@ export function Pattern() {
                   </FieldLegend>
                   <div className="flex gap-3 items-center">
                     <button className="flex items-center justify-center ring-2 ring-offset-2 ring-offset-background ring-ring rounded-full size-7 transition-shadow" type="button" aria-label="Slate" style={{backgroundColor: "rgb(100, 116, 139)"}}>
-                      <svg className="lucide lucide-check size-3 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                      <svg className="lucide lucide-check size-3 text-white" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                         <path d="M20 6 9 17l-5-5"></path>
                       </svg>
                     </button>
@@ -216,44 +216,44 @@ export function Pattern() {
                         {"Region"}
                       </FieldLabel>
                       <Select>
-                      <SelectTrigger className="w-full" type="button" tabIndex="0" id="settings-3-region" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
-                        <svg className="lucide lucide-globe" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GlobeIcon" tabler="IconWorld" hugeicons="Globe02Icon" phosphor="GlobeIcon" remixicon="RiGlobalLine" aria-hidden="true">
-                          <circle cx="12" cy="12" r="10"></circle>
+                      <SelectTrigger className="w-full" type="button" tabIndex={0} id="settings-3-region" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                        <svg className="lucide lucide-globe" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GlobeIcon" tabler="IconWorld" hugeicons="Globe02Icon" phosphor="GlobeIcon" remixicon="RiGlobalLine" aria-hidden="true">
+                          <circle cx={12} cy={12} r={10}></circle>
                           <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
                           <path d="M2 12h20"></path>
                         </svg>
                         <SelectValue>
                           {"United States"}
                         </SelectValue>
-                        <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                        <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                           <path d="m6 9 6 6 6-6"></path>
                           {"▼"}
                         </svg>
                       </SelectTrigger>
                       </Select>
-                      <input id="base-ui-_r_5_-hidden-input" tabIndex="-1" aria-hidden="true" value="us" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                      <input id="base-ui-_r_5_-hidden-input" tabIndex={-1} aria-hidden="true" value="us" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                     </Field>
                     <Field role="group" data-orientation="vertical">
                       <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-3-currency">
                         {"Currency"}
                       </FieldLabel>
                       <Select>
-                      <SelectTrigger className="w-full" type="button" tabIndex="0" id="settings-3-currency" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
-                        <svg className="lucide lucide-circle-dollar-sign" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
-                          <circle cx="12" cy="12" r="10"></circle>
+                      <SelectTrigger className="w-full" type="button" tabIndex={0} id="settings-3-currency" role="combobox" aria-expanded="false" aria-haspopup="listbox" size="default">
+                        <svg className="lucide lucide-circle-dollar-sign" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleDollarSignIcon" tabler="IconPremiumRights" hugeicons="DollarCircleIcon" phosphor="CurrencyCircleDollarIcon" remixicon="RiMoneyDollarCircleLine" aria-hidden="true">
+                          <circle cx={12} cy={12} r={10}></circle>
                           <path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path>
                           <path d="M12 18V6"></path>
                         </svg>
                         <SelectValue>
                           {"USD · US Dollar"}
                         </SelectValue>
-                        <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                        <svg className="cn-select-trigger-icon lucide lucide-chevron-down pointer-events-none" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconSelector" hugeicons="UnfoldMoreIcon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                           <path d="m6 9 6 6 6-6"></path>
                           {"▼"}
                         </svg>
                       </SelectTrigger>
                       </Select>
-                      <input id="base-ui-_r_8_-hidden-input" tabIndex="-1" aria-hidden="true" value="usd" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                      <input id="base-ui-_r_8_-hidden-input" tabIndex={-1} aria-hidden="true" value="usd" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                     </Field>
                   </FieldGroup>
                 </FieldSet>
@@ -275,13 +275,13 @@ export function Pattern() {
               </div>
               <FieldContent className="@md/field-group:w-78 min-w-0">
                 <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="2" aria-label="Date display format" style={{"--gap": "2"}}>
-                  <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="2">
+                  <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex={0} aria-pressed="true" variant="outline" size="sm" spacing="2">
                     {"MM/DD/YYYY"}
                   </ToggleGroupItem>
-                  <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="2">
+                  <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="outline" size="sm" spacing="2">
                     {"DD/MM/YYYY"}
                   </ToggleGroupItem>
-                  <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="2">
+                  <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="outline" size="sm" spacing="2">
                     {"YYYY/MM/DD"}
                   </ToggleGroupItem>
                 </ToggleGroup>
@@ -311,10 +311,10 @@ export function Pattern() {
                   </FieldDescription>
                   <FieldGroup className="gap-3">
                     <Field className="gap-3" role="group" data-orientation="horizontal">
-                      <Switch className="mt-0.5" checked="" role="switch" tabIndex="0" id="base-ui-_r_e_" aria-checked="true" size="default" aria-labelledby="settings-3-keyboard-shortcuts-label">
+                      <Switch className="mt-0.5" checked="" role="switch" tabIndex={0} id="base-ui-_r_e_" aria-checked="true" size="default" aria-labelledby="settings-3-keyboard-shortcuts-label">
                         <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                       </Switch>
-                      <input id="settings-3-keyboard-shortcuts" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                      <input id="settings-3-keyboard-shortcuts" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldContent className="gap-0.5">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-3-keyboard-shortcuts" id="settings-3-keyboard-shortcuts-label">
                           {"Enable keyboard shortcuts."}
@@ -325,10 +325,10 @@ export function Pattern() {
                       </FieldContent>
                     </Field>
                     <Field className="gap-3" role="group" data-orientation="horizontal">
-                      <Switch className="mt-0.5" checked="" role="switch" tabIndex="0" id="base-ui-_r_h_" aria-checked="true" size="default" aria-labelledby="settings-3-spellcheck-label">
+                      <Switch className="mt-0.5" checked="" role="switch" tabIndex={0} id="base-ui-_r_h_" aria-checked="true" size="default" aria-labelledby="settings-3-spellcheck-label">
                         <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-checked=""></span>
                       </Switch>
-                      <input id="settings-3-spellcheck" tabIndex="-1" aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                      <input id="settings-3-spellcheck" tabIndex={-1} aria-hidden="true" type="checkbox" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldContent className="gap-0.5">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-3-spellcheck" id="settings-3-spellcheck-label">
                           {"Auto spell-check."}
@@ -339,10 +339,10 @@ export function Pattern() {
                       </FieldContent>
                     </Field>
                     <Field className="gap-3" role="group" data-orientation="horizontal">
-                      <Switch className="mt-0.5" unchecked="" role="switch" tabIndex="0" id="base-ui-_r_k_" aria-checked="false" size="default" aria-labelledby="settings-3-compact-mode-label">
+                      <Switch className="mt-0.5" unchecked="" role="switch" tabIndex={0} id="base-ui-_r_k_" aria-checked="false" size="default" aria-labelledby="settings-3-compact-mode-label">
                         <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                       </Switch>
-                      <input id="settings-3-compact-mode" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                      <input id="settings-3-compact-mode" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldContent className="gap-0.5">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-3-compact-mode" id="settings-3-compact-mode-label">
                           {"Compact Mode."}
@@ -353,10 +353,10 @@ export function Pattern() {
                       </FieldContent>
                     </Field>
                     <Field className="gap-3" role="group" data-orientation="horizontal">
-                      <Switch className="mt-0.5" unchecked="" role="switch" tabIndex="0" id="base-ui-_r_n_" aria-checked="false" size="default" aria-labelledby="settings-3-animations-label">
+                      <Switch className="mt-0.5" unchecked="" role="switch" tabIndex={0} id="base-ui-_r_n_" aria-checked="false" size="default" aria-labelledby="settings-3-animations-label">
                         <span className="block cn-switch-thumb pointer-events-none ring-0 transition-transform" data-unchecked=""></span>
                       </Switch>
-                      <input id="settings-3-animations" tabIndex="-1" aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                      <input id="settings-3-animations" tabIndex={-1} aria-hidden="true" type="checkbox" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                       <FieldContent className="gap-0.5">
                         <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="settings-3-animations" id="settings-3-animations-label">
                           {"Reduce animations."}
@@ -373,10 +373,10 @@ export function Pattern() {
           </FieldGroup>
         </FramePanel>
         <footer className="flex flex-row gap-3 justify-end px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
-          <Button type="button" tabIndex="0">
+          <Button type="button" tabIndex={0}>
             {"Reset"}
           </Button>
-          <Button type="button" tabIndex="0">
+          <Button type="button" tabIndex={0}>
             {"Save changes"}
           </Button>
         </footer>

@@ -26,7 +26,7 @@ export function Pattern() {
           <div className="gap-4 grid grid-cols-1 lg:grid-cols-3">
             <Frame>
               <FramePanel className="aspect-[16/9] group/media grow-0 p-0">
-                <img className="absolute duration-700 ease-out grayscale inset-0 motion-reduce:transition-none motion-safe:group-hover/media:scale-105 object-cover size-full transition-transform" alt="Hand sketching a user flow for a product interface" width="900" height="620" decoding="async" src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=900&h=620&q=82" />
+                <img className="absolute duration-700 ease-out grayscale inset-0 motion-reduce:transition-none motion-safe:group-hover/media:scale-105 object-cover size-full transition-transform" alt="Hand sketching a user flow for a product interface" width={900} height={620} decoding="async" src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=900&h=620&q=82" />
                 <div className="absolute bg-[linear-gradient(180deg,transparent_58%,oklch(16%_0.016_80_/_48%))] inset-0 pointer-events-none" aria-hidden="true"></div>
                 <a className="absolute block focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring inset-0 outline-none z-10" href="#" aria-label="Read Prototype to Production"></a>
               </FramePanel>
@@ -66,7 +66,7 @@ export function Pattern() {
                 </div>
                 <a className="focus-visible:outline-none focus-visible:underline font-medium gap-1 group/read hover:underline inline-flex items-center shrink-0 text-primary text-sm transition-colors underline-offset-2" href="#" aria-label="Read Prototype to Production">
                   {"Read"}
-                  <svg className="duration-200 ease-out lucide lucide-arrow-up-right motion-safe:group-hover/read:-translate-y-0.5 motion-safe:group-hover/read:translate-x-0.5 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
+                  <svg className="duration-200 ease-out lucide lucide-arrow-up-right motion-safe:group-hover/read:-translate-y-0.5 motion-safe:group-hover/read:translate-x-0.5 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                     <path d="M7 7h10v10"></path>
                     <path d="M7 17 17 7"></path>
                   </svg>
@@ -75,7 +75,7 @@ export function Pattern() {
             </Frame>
             <Frame>
               <FramePanel className="aspect-[16/9] group/media grow-0 p-0">
-                <img className="absolute duration-700 ease-out grayscale inset-0 motion-reduce:transition-none motion-safe:group-hover/media:scale-105 object-cover size-full transition-transform" alt="Color palette sheets and tablet sketches for a design system" width="900" height="620" decoding="async" src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&h=620&q=82" />
+                <img className="absolute duration-700 ease-out grayscale inset-0 motion-reduce:transition-none motion-safe:group-hover/media:scale-105 object-cover size-full transition-transform" alt="Color palette sheets and tablet sketches for a design system" width={900} height={620} decoding="async" src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=900&h=620&q=82" />
                 <div className="absolute bg-[linear-gradient(180deg,transparent_58%,oklch(16%_0.016_80_/_48%))] inset-0 pointer-events-none" aria-hidden="true"></div>
                 <a className="absolute block focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring inset-0 outline-none z-10" href="#" aria-label="Read Token Rhythm"></a>
               </FramePanel>
@@ -115,7 +115,7 @@ export function Pattern() {
                 </div>
                 <a className="focus-visible:outline-none focus-visible:underline font-medium gap-1 group/read hover:underline inline-flex items-center shrink-0 text-primary text-sm transition-colors underline-offset-2" href="#" aria-label="Read Token Rhythm">
                   {"Read"}
-                  <svg className="duration-200 ease-out lucide lucide-arrow-up-right motion-safe:group-hover/read:-translate-y-0.5 motion-safe:group-hover/read:translate-x-0.5 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
+                  <svg className="duration-200 ease-out lucide lucide-arrow-up-right motion-safe:group-hover/read:-translate-y-0.5 motion-safe:group-hover/read:translate-x-0.5 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                     <path d="M7 7h10v10"></path>
                     <path d="M7 17 17 7"></path>
                   </svg>
@@ -124,7 +124,7 @@ export function Pattern() {
             </Frame>
             <Frame>
               <FramePanel className="aspect-[16/9] group/media grow-0 p-0">
-                <img className="absolute duration-700 ease-out grayscale inset-0 motion-reduce:transition-none motion-safe:group-hover/media:scale-105 object-cover size-full transition-transform" alt="Designer reviewing interface components on a desktop screen" width="900" height="620" decoding="async" src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=900&h=620&q=82" />
+                <img className="absolute duration-700 ease-out grayscale inset-0 motion-reduce:transition-none motion-safe:group-hover/media:scale-105 object-cover size-full transition-transform" alt="Designer reviewing interface components on a desktop screen" width={900} height={620} decoding="async" src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&w=900&h=620&q=82" />
                 <div className="absolute bg-[linear-gradient(180deg,transparent_58%,oklch(16%_0.016_80_/_48%))] inset-0 pointer-events-none" aria-hidden="true"></div>
                 <a className="absolute block focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring inset-0 outline-none z-10" href="#" aria-label="Read Critique Before Shipping"></a>
               </FramePanel>
@@ -164,7 +164,7 @@ export function Pattern() {
                 </div>
                 <a className="focus-visible:outline-none focus-visible:underline font-medium gap-1 group/read hover:underline inline-flex items-center shrink-0 text-primary text-sm transition-colors underline-offset-2" href="#" aria-label="Read Critique Before Shipping">
                   {"Read"}
-                  <svg className="duration-200 ease-out lucide lucide-arrow-up-right motion-safe:group-hover/read:-translate-y-0.5 motion-safe:group-hover/read:translate-x-0.5 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
+                  <svg className="duration-200 ease-out lucide lucide-arrow-up-right motion-safe:group-hover/read:-translate-y-0.5 motion-safe:group-hover/read:translate-x-0.5 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                     <path d="M7 7h10v10"></path>
                     <path d="M7 17 17 7"></path>
                   </svg>

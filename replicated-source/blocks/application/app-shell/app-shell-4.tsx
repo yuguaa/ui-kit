@@ -58,8 +58,8 @@ export function Pattern() {
                 <SidebarHeader className="items-center justify-center py-3" sidebar="header">
                   <Item className="bg-primary p-0 size-7 text-primary-foreground" variant="default" size="default" aria-hidden="true">
                     <ItemMedia className="size-auto" variant="icon">
-                      <svg className="size-3.5" width="50" height="50" viewBox="25.668 25.1352 49.6644 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="70.634" cy="29.8334" r="4.69799" fill="currentColor"></circle>
+                      <svg className="size-3.5" width={50} height={50} viewBox="25.668 25.1352 49.6644 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx={70.634} cy={29.8334} r={4.69799} fill="currentColor"></circle>
                         <path fillRule="evenodd" clipRule="evenodd" d="M25.668 57.0144V29.8332C25.668 27.2386 27.7713 25.1352 30.366 25.1352C32.9606 25.1352 35.0639 27.2386 35.0639 29.8332V57.0144C35.0639 61.833 38.9702 65.7392 43.7888 65.7392H57.2116C62.0302 65.7392 65.9364 61.833 65.9364 57.0144V43.7258C65.9364 41.1312 68.0398 39.0278 70.6344 39.0278C73.229 39.0278 75.3324 41.1312 75.3324 43.7258V57.0144C75.3324 67.0222 67.2194 75.1352 57.2116 75.1352H43.7888C33.7809 75.1352 25.668 67.0222 25.668 57.0144Z" fill="currentColor"></path>
                       </svg>
                     </ItemMedia>
@@ -77,7 +77,7 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="justify-center!" type="button" id="base-ui-_r_1_" baseUiTooltipTrigger="" sidebar="menu-button" size="default" data-active="">
-                            <svg className="lucide lucide-inbox" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="InboxIcon" tabler="IconInbox" hugeicons="InboxIcon" phosphor="TrayIcon" remixicon="RiInboxLine" aria-hidden="true">
+                            <svg className="lucide lucide-inbox" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="InboxIcon" tabler="IconInbox" hugeicons="InboxIcon" phosphor="TrayIcon" remixicon="RiInboxLine" aria-hidden="true">
                               <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline>
                               <path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path>
                             </svg>
@@ -90,7 +90,7 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="justify-center!" type="button" id="base-ui-_r_3_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
-                            <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
+                            <svg className="lucide lucide-star" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
                               <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                             </svg>
                           </SidebarMenuButton>
@@ -101,7 +101,7 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="justify-center!" type="button" id="base-ui-_r_5_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
-                            <svg className="lucide lucide-send" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SendIcon" tabler="IconSend" hugeicons="SentIcon" phosphor="PaperPlaneTiltIcon" remixicon="RiSendInsLine" aria-hidden="true">
+                            <svg className="lucide lucide-send" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SendIcon" tabler="IconSend" hugeicons="SentIcon" phosphor="PaperPlaneTiltIcon" remixicon="RiSendInsLine" aria-hidden="true">
                               <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path>
                               <path d="m21.854 2.147-10.94 10.939"></path>
                             </svg>
@@ -113,7 +113,7 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="justify-center!" type="button" id="base-ui-_r_7_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
-                            <svg className="lucide lucide-file-text" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FileTextIcon" tabler="IconFileText" hugeicons="File02Icon" phosphor="FileTextIcon" remixicon="RiFileTextLine" aria-hidden="true">
+                            <svg className="lucide lucide-file-text" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FileTextIcon" tabler="IconFileText" hugeicons="File02Icon" phosphor="FileTextIcon" remixicon="RiFileTextLine" aria-hidden="true">
                               <path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path>
                               <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
                               <path d="M10 9H8"></path>
@@ -128,8 +128,8 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="justify-center!" type="button" id="base-ui-_r_9_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
-                            <svg className="lucide lucide-archive" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArchiveIcon" tabler="IconArchive" hugeicons="Archive01Icon" phosphor="ArchiveIcon" remixicon="RiArchiveLine" aria-hidden="true">
-                              <rect width="20" height="5" x="2" y="3" rx="1"></rect>
+                            <svg className="lucide lucide-archive" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArchiveIcon" tabler="IconArchive" hugeicons="Archive01Icon" phosphor="ArchiveIcon" remixicon="RiArchiveLine" aria-hidden="true">
+                              <rect width={20} height={5} x={2} y={3} rx={1}></rect>
                               <path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"></path>
                               <path d="M10 12h4"></path>
                             </svg>
@@ -141,7 +141,7 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="justify-center!" type="button" id="base-ui-_r_b_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
-                            <svg className="lucide lucide-shield-alert" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ShieldAlertIcon" tabler="IconShieldExclamation" hugeicons="ShieldEnergyIcon" phosphor="ShieldWarningIcon" remixicon="RiShieldLine" aria-hidden="true">
+                            <svg className="lucide lucide-shield-alert" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ShieldAlertIcon" tabler="IconShieldExclamation" hugeicons="ShieldEnergyIcon" phosphor="ShieldWarningIcon" remixicon="RiShieldLine" aria-hidden="true">
                               <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
                               <path d="M12 8v4"></path>
                               <path d="M12 16h.01"></path>
@@ -154,7 +154,7 @@ export function Pattern() {
                         <SidebarMenuItem sidebar="menu-item">
                           <SidebarProvider>
                           <SidebarMenuButton className="justify-center!" type="button" id="base-ui-_r_d_" baseUiTooltipTrigger="" sidebar="menu-button" size="default">
-                            <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+                            <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                               <path d="M10 11v6"></path>
                               <path d="M14 11v6"></path>
                               <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -175,7 +175,7 @@ export function Pattern() {
                 </SidebarProvider>
                 <SidebarFooter sidebar="footer">
                   <DropdownMenu>
-                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center mx-auto outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Open profile for Nick Bold" aria-haspopup="menu" id="base-ui-_r_h_" aria-expanded="false">
+                  <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center mx-auto outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Open profile for Nick Bold" aria-haspopup="menu" id="base-ui-_r_h_" aria-expanded="false">
                     <Avatar className="size-6" size="default">
                       <AvatarImage alt="Nick Bold" src="https://images.unsplash.com/photo-1543299750-19d1d6297053?w=96&h=96&dpr=2&q=80"></AvatarImage>
                     </Avatar>
@@ -196,8 +196,8 @@ export function Pattern() {
                   </div>
                   <div className="flex gap-0.5 items-center">
                     <Tooltip>
-                    <TooltipTrigger className="[&_svg]:opacity-60 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:transition-opacity cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:[&_svg]:opacity-100 inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Refresh inbox" id="base-ui-_r_k_" baseUiTooltipTrigger="">
-                      <svg className="lucide lucide-refresh-cw" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RefreshCwIcon" tabler="IconRefresh" hugeicons="RefreshIcon" phosphor="ArrowsClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
+                    <TooltipTrigger className="[&_svg]:opacity-60 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:transition-opacity cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:[&_svg]:opacity-100 inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Refresh inbox" id="base-ui-_r_k_" baseUiTooltipTrigger="">
+                      <svg className="lucide lucide-refresh-cw" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="RefreshCwIcon" tabler="IconRefresh" hugeicons="RefreshIcon" phosphor="ArrowsClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
                         <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
                         <path d="M21 3v5h-5"></path>
                         <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
@@ -206,15 +206,15 @@ export function Pattern() {
                     </TooltipTrigger>
                     </Tooltip>
                     <DropdownMenu>
-                    <DropdownMenuTrigger className="[&_svg]:opacity-60 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:transition-opacity cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:[&_svg]:opacity-100 inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Sort and filter" aria-haspopup="menu" id="base-ui-_r_o_" aria-expanded="false">
-                      <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" aria-hidden="true">
+                    <DropdownMenuTrigger className="[&_svg]:opacity-60 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:transition-opacity cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:[&_svg]:opacity-100 inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Sort and filter" aria-haspopup="menu" id="base-ui-_r_o_" aria-expanded="false">
+                      <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" aria-hidden="true">
                         <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                       </svg>
                     </DropdownMenuTrigger>
                     </DropdownMenu>
                     <Tooltip>
-                    <TooltipTrigger className="[&_svg]:opacity-60 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:transition-opacity cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:[&_svg]:opacity-100 inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Compose new email" id="base-ui-_r_r_" baseUiTooltipTrigger="">
-                      <svg className="lucide lucide-square-pen" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SquarePenIcon" tabler="IconEdit" hugeicons="PencilEdit02Icon" phosphor="NotePencilIcon" remixicon="RiEditBoxLine" aria-hidden="true">
+                    <TooltipTrigger className="[&_svg]:opacity-60 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg]:transition-opacity cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button hover:[&_svg]:opacity-100 inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Compose new email" id="base-ui-_r_r_" baseUiTooltipTrigger="">
+                      <svg className="lucide lucide-square-pen" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SquarePenIcon" tabler="IconEdit" hugeicons="PencilEdit02Icon" phosphor="NotePencilIcon" remixicon="RiEditBoxLine" aria-hidden="true">
                         <path d="M12 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path>
                         <path d="M18.375 2.625a1 1 0 0 1 3 3l-9.013 9.014a2 2 0 0 1-.853.505l-2.873.84a.5.5 0 0 1-.62-.62l.84-2.873a2 2 0 0 1 .506-.852z"></path>
                       </svg>
@@ -224,9 +224,9 @@ export function Pattern() {
                 </div>
                 <div className="border-b border-border/60 px-3 py-2">
                   <div className="relative">
-                    <svg className="-translate-y-1/2 absolute left-2.5 lucide lucide-search pointer-events-none size-3 text-muted-foreground/50 top-1/2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
+                    <svg className="-translate-y-1/2 absolute left-2.5 lucide lucide-search pointer-events-none size-3 text-muted-foreground/50 top-1/2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SearchIcon" tabler="IconSearch" hugeicons="Search01Icon" phosphor="MagnifyingGlassIcon" remixicon="RiSearchLine" aria-hidden="true">
                       <path d="m21 21-4.34-4.34"></path>
-                      <circle cx="11" cy="11" r="8"></circle>
+                      <circle cx={11} cy={11} r={8}></circle>
                     </svg>
                     <Input className="h-7 pl-7 text-xs" id="base-ui-_r_s_" placeholder="Search mail..." aria-label="Search mail" value=""></Input>
                   </div>
@@ -234,22 +234,22 @@ export function Pattern() {
                 <Tabs className="flex-1 flex-col gap-0 min-h-0" data-orientation="horizontal" activationDirection="none">
                   <div className="border-b border-border/60 flex items-center md:px-2 overflow-x-auto px-1.5 py-1.5 shrink-0">
                     <TabsList className="gap-0.5 h-auto p-0" data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
-                      <TabsTrigger className="dark:data-active:bg-primary! dark:data-active:text-primary-foreground! data-active:bg-primary! data-active:font-medium! data-active:shadow-none! data-active:text-primary-foreground! flex-none font-normal gap-1 group/tab h-auto md:gap-2 md:px-2.5 px-2 py-0.75 rounded-full text-xs" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_t_" compositeItemActive="" aria-controls="base-ui-_r_11_">
+                      <TabsTrigger className="dark:data-active:bg-primary! dark:data-active:text-primary-foreground! data-active:bg-primary! data-active:font-medium! data-active:shadow-none! data-active:text-primary-foreground! flex-none font-normal gap-1 group/tab h-auto md:gap-2 md:px-2.5 px-2 py-0.75 rounded-full text-xs" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex={0} role="tab" aria-selected="true" id="base-ui-_r_t_" compositeItemActive="" aria-controls="base-ui-_r_11_">
                         {"All"}
                       </TabsTrigger>
-                      <TabsTrigger className="dark:data-active:bg-primary! dark:data-active:text-primary-foreground! data-active:bg-primary! data-active:font-medium! data-active:shadow-none! data-active:text-primary-foreground! flex-none font-normal gap-1 group/tab h-auto md:gap-2 md:px-2.5 px-2 py-0.75 rounded-full text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_u_">
+                      <TabsTrigger className="dark:data-active:bg-primary! dark:data-active:text-primary-foreground! data-active:bg-primary! data-active:font-medium! data-active:shadow-none! data-active:text-primary-foreground! flex-none font-normal gap-1 group/tab h-auto md:gap-2 md:px-2.5 px-2 py-0.75 rounded-full text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_u_">
                         {"Unread"}
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4 hidden leading-none md:inline-flex min-w-4 outline-none px-1 py-0.25 relative rounded-full! style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.6rem] text-secondary-foreground transition-shadow">
                           {"4"}
                         </Badge>
                       </TabsTrigger>
-                      <TabsTrigger className="dark:data-active:bg-primary! dark:data-active:text-primary-foreground! data-active:bg-primary! data-active:font-medium! data-active:shadow-none! data-active:text-primary-foreground! flex-none font-normal gap-1 group/tab h-auto md:gap-2 md:px-2.5 px-2 py-0.75 rounded-full text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_v_">
+                      <TabsTrigger className="dark:data-active:bg-primary! dark:data-active:text-primary-foreground! data-active:bg-primary! data-active:font-medium! data-active:shadow-none! data-active:text-primary-foreground! flex-none font-normal gap-1 group/tab h-auto md:gap-2 md:px-2.5 px-2 py-0.75 rounded-full text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_v_">
                         {"Starred"}
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4 hidden leading-none md:inline-flex min-w-4 outline-none px-1 py-0.25 relative rounded-full! style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.6rem] text-secondary-foreground transition-shadow">
                           {"3"}
                         </Badge>
                       </TabsTrigger>
-                      <TabsTrigger className="dark:data-active:bg-primary! dark:data-active:text-primary-foreground! data-active:bg-primary! data-active:font-medium! data-active:shadow-none! data-active:text-primary-foreground! flex-none font-normal gap-1 group/tab h-auto md:gap-2 md:px-2.5 px-2 py-0.75 rounded-full text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_10_">
+                      <TabsTrigger className="dark:data-active:bg-primary! dark:data-active:text-primary-foreground! data-active:bg-primary! data-active:font-medium! data-active:shadow-none! data-active:text-primary-foreground! flex-none font-normal gap-1 group/tab h-auto md:gap-2 md:px-2.5 px-2 py-0.75 rounded-full text-xs" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_10_">
                         {"Files"}
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-secondary border border-transparent disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-4 hidden leading-none md:inline-flex min-w-4 outline-none px-1 py-0.25 relative rounded-full! style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-[0.6rem] text-secondary-foreground transition-shadow">
                           {"2"}
@@ -257,10 +257,10 @@ export function Pattern() {
                       </TabsTrigger>
                     </TabsList>
                   </div>
-                  <TabsContent className="grow max-h-full" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_11_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_t_">
+                  <TabsContent className="grow max-h-full" data-orientation="horizontal" activationDirection="none" id="base-ui-_r_11_" role="tabpanel" tabIndex={0} index="0" aria-labelledby="base-ui-_r_t_">
                     <ScrollArea className="grow h-full" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}} hasOverflowY="" overflowYEnd="">
-                      <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_12_-viewport" tabIndex="0" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "690px"}} data-has-overflow-y="" data-overflow-y-end="">
-                        <div className="bg-accent/60 border-b border-border/40 cursor-pointer dark:bg-accent/20 flex focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-ring gap-1.5 items-start md:gap-2.5 md:px-3 md:py-3 px-1.5 py-2 relative transition-colors" id="m1" role="listitem" aria-pressed="true" tabIndex="0">
+                      <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_12_-viewport" tabIndex={0} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "690px"}} data-has-overflow-y="" data-overflow-y-end="">
+                        <div className="bg-accent/60 border-b border-border/40 cursor-pointer dark:bg-accent/20 flex focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-ring gap-1.5 items-start md:gap-2.5 md:px-3 md:py-3 px-1.5 py-2 relative transition-colors" id="m1" role="listitem" aria-pressed="true" tabIndex={0}>
                           <div className="flex justify-center md:pt-3.5 pt-3 shrink-0 w-2">
                             <span className="bg-primary rounded-full shrink-0 size-1.5" aria-label="Unread"></span>
                           </div>
@@ -278,7 +278,7 @@ export function Pattern() {
                                 </span>
                               </div>
                               <div className="flex gap-1 items-center shrink-0">
-                                <svg className="lucide lucide-star size-3 text-amber-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
+                                <svg className="lucide lucide-star size-3 text-amber-400" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
                                   <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                                 </svg>
                                 <span className="font-medium tabular-nums text-[11px] text-foreground/70 whitespace-nowrap">
@@ -314,7 +314,7 @@ export function Pattern() {
                             </div>
                           </div>
                         </div>
-                        <div className="border-b border-border/40 cursor-pointer dark:hover:bg-accent/20 flex focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-ring gap-1.5 hover:bg-accent/60 items-start md:gap-2.5 md:px-3 md:py-3 px-1.5 py-2 relative transition-colors" id="m2" role="listitem" aria-pressed="false" tabIndex="0">
+                        <div className="border-b border-border/40 cursor-pointer dark:hover:bg-accent/20 flex focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-ring gap-1.5 hover:bg-accent/60 items-start md:gap-2.5 md:px-3 md:py-3 px-1.5 py-2 relative transition-colors" id="m2" role="listitem" aria-pressed="false" tabIndex={0}>
                           <div className="flex justify-center md:pt-3.5 pt-3 shrink-0 w-2">
                             <span className="bg-primary rounded-full shrink-0 size-1.5" aria-label="Unread"></span>
                           </div>
@@ -329,7 +329,7 @@ export function Pattern() {
                                 </span>
                               </div>
                               <div className="flex gap-1 items-center shrink-0">
-                                <svg className="lucide lucide-paperclip size-3 text-muted-foreground/50" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" aria-hidden="true">
+                                <svg className="lucide lucide-paperclip size-3 text-muted-foreground/50" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" aria-hidden="true">
                                   <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                                 </svg>
                                 <span className="font-medium tabular-nums text-[11px] text-foreground/70 whitespace-nowrap">
@@ -354,8 +354,8 @@ export function Pattern() {
                             </div>
                             <div className="flex flex-wrap gap-2 items-center mt-2">
                               <ButtonGroup role="group">
-                                <Button className="max-w-40" type="button" tabIndex="0">
-                                  <svg className="lucide lucide-paperclip" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" aria-hidden="true">
+                                <Button className="max-w-40" type="button" tabIndex={0}>
+                                  <svg className="lucide lucide-paperclip" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" aria-hidden="true">
                                     <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                                   </svg>
                                   <span className="truncate">
@@ -365,8 +365,8 @@ export function Pattern() {
                                     {"(1.2 MB)"}
                                   </span>
                                 </Button>
-                                <Button type="button" tabIndex="0" aria-label="Download attachment">
-                                  <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
+                                <Button type="button" tabIndex={0} aria-label="Download attachment">
+                                  <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
                                     <path d="M12 15V3"></path>
                                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                                     <path d="m7 10 5 5 5-5"></path>
@@ -376,7 +376,7 @@ export function Pattern() {
                             </div>
                           </div>
                         </div>
-                        <div className="border-b border-border/40 cursor-pointer dark:hover:bg-accent/20 flex focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-ring gap-1.5 hover:bg-accent/60 items-start md:gap-2.5 md:px-3 md:py-3 px-1.5 py-2 relative transition-colors" id="m3" role="listitem" aria-pressed="false" tabIndex="0">
+                        <div className="border-b border-border/40 cursor-pointer dark:hover:bg-accent/20 flex focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-ring gap-1.5 hover:bg-accent/60 items-start md:gap-2.5 md:px-3 md:py-3 px-1.5 py-2 relative transition-colors" id="m3" role="listitem" aria-pressed="false" tabIndex={0}>
                           <div className="flex justify-center md:pt-3.5 pt-3 shrink-0 w-2">
                             <span className="bg-primary rounded-full shrink-0 size-1.5" aria-label="Unread"></span>
                           </div>
@@ -412,16 +412,16 @@ export function Pattern() {
                               </Badge>
                             </div>
                             <div className="flex flex-wrap gap-1 items-center mt-2">
-                              <Button type="button" tabIndex="0">
+                              <Button type="button" tabIndex={0}>
                                 {"Schedule Call"}
                               </Button>
-                              <Button type="button" tabIndex="0">
+                              <Button type="button" tabIndex={0}>
                                 {"View Proposal"}
                               </Button>
                             </div>
                           </div>
                         </div>
-                        <div className="border-b border-border/40 cursor-pointer dark:hover:bg-accent/20 flex focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-ring gap-1.5 hover:bg-accent/60 items-start md:gap-2.5 md:px-3 md:py-3 px-1.5 py-2 relative transition-colors" id="m4" role="listitem" aria-pressed="false" tabIndex="0">
+                        <div className="border-b border-border/40 cursor-pointer dark:hover:bg-accent/20 flex focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-ring gap-1.5 hover:bg-accent/60 items-start md:gap-2.5 md:px-3 md:py-3 px-1.5 py-2 relative transition-colors" id="m4" role="listitem" aria-pressed="false" tabIndex={0}>
                           <div className="flex justify-center md:pt-3.5 pt-3 shrink-0 w-2"></div>
                           <Avatar className="md:size-8 mt-0.5 size-6" size="default">
                             <AvatarImage alt="GitHub" src="https://github.com/github.png"></AvatarImage>
@@ -469,7 +469,7 @@ export function Pattern() {
                             </div>
                           </div>
                         </div>
-                        <div className="border-b border-border/40 cursor-pointer dark:hover:bg-accent/20 flex focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-ring gap-1.5 hover:bg-accent/60 items-start md:gap-2.5 md:px-3 md:py-3 px-1.5 py-2 relative transition-colors" id="m5" role="listitem" aria-pressed="false" tabIndex="0">
+                        <div className="border-b border-border/40 cursor-pointer dark:hover:bg-accent/20 flex focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-ring gap-1.5 hover:bg-accent/60 items-start md:gap-2.5 md:px-3 md:py-3 px-1.5 py-2 relative transition-colors" id="m5" role="listitem" aria-pressed="false" tabIndex={0}>
                           <div className="flex justify-center md:pt-3.5 pt-3 shrink-0 w-2"></div>
                           <Avatar className="md:size-8 mt-0.5 size-6" size="default">
                             <AvatarFallback className="[&_svg]:size-3.5 md:[&_svg]:size-4">
@@ -508,7 +508,7 @@ export function Pattern() {
                             </div>
                           </div>
                         </div>
-                        <div className="border-b border-border/40 cursor-pointer dark:hover:bg-accent/20 flex focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-ring gap-1.5 hover:bg-accent/60 items-start md:gap-2.5 md:px-3 md:py-3 px-1.5 py-2 relative transition-colors" id="m6" role="listitem" aria-pressed="false" tabIndex="0">
+                        <div className="border-b border-border/40 cursor-pointer dark:hover:bg-accent/20 flex focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-ring gap-1.5 hover:bg-accent/60 items-start md:gap-2.5 md:px-3 md:py-3 px-1.5 py-2 relative transition-colors" id="m6" role="listitem" aria-pressed="false" tabIndex={0}>
                           <div className="flex justify-center md:pt-3.5 pt-3 shrink-0 w-2"></div>
                           <Avatar className="md:size-8 mt-0.5 size-6" size="default">
                             <AvatarImage alt="Alex Martin" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=96&h=96&dpr=2&q=80"></AvatarImage>
@@ -521,7 +521,7 @@ export function Pattern() {
                                 </span>
                               </div>
                               <div className="flex gap-1 items-center shrink-0">
-                                <svg className="lucide lucide-paperclip size-3 text-muted-foreground/50" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" aria-hidden="true">
+                                <svg className="lucide lucide-paperclip size-3 text-muted-foreground/50" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" aria-hidden="true">
                                   <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                                 </svg>
                                 <span className="tabular-nums text-[11px] text-muted-foreground/60 whitespace-nowrap">
@@ -551,8 +551,8 @@ export function Pattern() {
                             </div>
                             <div className="flex flex-wrap gap-2 items-center mt-2">
                               <ButtonGroup role="group">
-                                <Button className="max-w-40" type="button" tabIndex="0">
-                                  <svg className="lucide lucide-paperclip" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" aria-hidden="true">
+                                <Button className="max-w-40" type="button" tabIndex={0}>
+                                  <svg className="lucide lucide-paperclip" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PaperclipIcon" tabler="IconPaperclip" hugeicons="Attachment02Icon" phosphor="PaperclipIcon" remixicon="RiAttachment2" aria-hidden="true">
                                     <path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path>
                                   </svg>
                                   <span className="truncate">
@@ -562,8 +562,8 @@ export function Pattern() {
                                     {"(243 KB)"}
                                   </span>
                                 </Button>
-                                <Button type="button" tabIndex="0" aria-label="Download attachment">
-                                  <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
+                                <Button type="button" tabIndex={0} aria-label="Download attachment">
+                                  <svg className="lucide lucide-download" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="DownloadIcon" tabler="IconDownload" hugeicons="Download01Icon" phosphor="DownloadSimpleIcon" remixicon="RiDownload2Line" aria-hidden="true">
                                     <path d="M12 15V3"></path>
                                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                                     <path d="m7 10 5 5 5-5"></path>
@@ -573,7 +573,7 @@ export function Pattern() {
                             </div>
                           </div>
                         </div>
-                        <div className="border-b border-border/40 cursor-pointer dark:hover:bg-accent/20 flex focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-ring gap-1.5 hover:bg-accent/60 items-start md:gap-2.5 md:px-3 md:py-3 px-1.5 py-2 relative transition-colors" id="m7" role="listitem" aria-pressed="false" tabIndex="0">
+                        <div className="border-b border-border/40 cursor-pointer dark:hover:bg-accent/20 flex focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-ring gap-1.5 hover:bg-accent/60 items-start md:gap-2.5 md:px-3 md:py-3 px-1.5 py-2 relative transition-colors" id="m7" role="listitem" aria-pressed="false" tabIndex={0}>
                           <div className="flex justify-center md:pt-3.5 pt-3 shrink-0 w-2"></div>
                           <Avatar className="md:size-8 mt-0.5 size-6" size="default">
                             <AvatarImage alt="Vercel" src="https://github.com/vercel.png"></AvatarImage>
@@ -621,7 +621,7 @@ export function Pattern() {
                             </div>
                           </div>
                         </div>
-                        <div className="border-b border-border/40 cursor-pointer dark:hover:bg-accent/20 flex focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-ring gap-1.5 hover:bg-accent/60 items-start md:gap-2.5 md:px-3 md:py-3 px-1.5 py-2 relative transition-colors" id="m8" role="listitem" aria-pressed="false" tabIndex="0">
+                        <div className="border-b border-border/40 cursor-pointer dark:hover:bg-accent/20 flex focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-ring gap-1.5 hover:bg-accent/60 items-start md:gap-2.5 md:px-3 md:py-3 px-1.5 py-2 relative transition-colors" id="m8" role="listitem" aria-pressed="false" tabIndex={0}>
                           <div className="flex justify-center md:pt-3.5 pt-3 shrink-0 w-2">
                             <span className="bg-primary rounded-full shrink-0 size-1.5" aria-label="Unread"></span>
                           </div>
@@ -639,7 +639,7 @@ export function Pattern() {
                                 </span>
                               </div>
                               <div className="flex gap-1 items-center shrink-0">
-                                <svg className="lucide lucide-star size-3 text-amber-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
+                                <svg className="lucide lucide-star size-3 text-amber-400" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
                                   <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                                 </svg>
                                 <span className="font-medium tabular-nums text-[11px] text-foreground/70 whitespace-nowrap">
@@ -660,7 +660,7 @@ export function Pattern() {
                             <div className="flex flex-wrap gap-2 items-center mt-2"></div>
                           </div>
                         </div>
-                        <div className="border-b border-border/40 cursor-pointer dark:hover:bg-accent/20 flex focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-ring gap-1.5 hover:bg-accent/60 items-start md:gap-2.5 md:px-3 md:py-3 px-1.5 py-2 relative transition-colors" id="m9" role="listitem" aria-pressed="false" tabIndex="0">
+                        <div className="border-b border-border/40 cursor-pointer dark:hover:bg-accent/20 flex focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-ring gap-1.5 hover:bg-accent/60 items-start md:gap-2.5 md:px-3 md:py-3 px-1.5 py-2 relative transition-colors" id="m9" role="listitem" aria-pressed="false" tabIndex={0}>
                           <div className="flex justify-center md:pt-3.5 pt-3 shrink-0 w-2"></div>
                           <Avatar className="md:size-8 mt-0.5 size-6" size="default">
                             <AvatarFallback className="[&_svg]:size-3.5 md:[&_svg]:size-4">
@@ -712,7 +712,7 @@ export function Pattern() {
                             </div>
                           </div>
                         </div>
-                        <div className="border-b border-border/40 cursor-pointer dark:hover:bg-accent/20 flex focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-ring gap-1.5 hover:bg-accent/60 items-start md:gap-2.5 md:px-3 md:py-3 px-1.5 py-2 relative transition-colors" id="m10" role="listitem" aria-pressed="false" tabIndex="0">
+                        <div className="border-b border-border/40 cursor-pointer dark:hover:bg-accent/20 flex focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-inset focus-visible:ring-ring gap-1.5 hover:bg-accent/60 items-start md:gap-2.5 md:px-3 md:py-3 px-1.5 py-2 relative transition-colors" id="m10" role="listitem" aria-pressed="false" tabIndex={0}>
                           <div className="flex justify-center md:pt-3.5 pt-3 shrink-0 w-2"></div>
                           <Avatar className="md:size-8 mt-0.5 size-6" size="default">
                             <AvatarImage alt="James Kim" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&h=96&dpr=2&q=80"></AvatarImage>
@@ -725,7 +725,7 @@ export function Pattern() {
                                 </span>
                               </div>
                               <div className="flex gap-1 items-center shrink-0">
-                                <svg className="lucide lucide-star size-3 text-amber-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
+                                <svg className="lucide lucide-star size-3 text-amber-400" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
                                   <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                                 </svg>
                                 <span className="tabular-nums text-[11px] text-muted-foreground/60 whitespace-nowrap">
@@ -749,7 +749,7 @@ export function Pattern() {
                               </Badge>
                             </div>
                             <div className="flex flex-wrap gap-1 items-center mt-2">
-                              <Button type="button" tabIndex="0">
+                              <Button type="button" tabIndex={0}>
                                 {"Confirm Attendance"}
                               </Button>
                             </div>
@@ -782,9 +782,9 @@ export function Pattern() {
       <SidebarInset>
         <header className="border-b border-border flex gap-1 h-(--header-height) items-center min-w-0 px-2 py-1.5 shrink-0 sm:gap-1.5 sm:px-4">
           <SidebarProvider>
-          <SidebarTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center md:hidden outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" sidebar="trigger">
-            <svg className="cn-rtl-flip lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="PanelLeftIcon" tabler="IconLayoutSidebar" hugeicons="SidebarLeftIcon" phosphor="SidebarIcon" remixicon="RiSideBarLine">
-              <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+          <SidebarTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center md:hidden outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} sidebar="trigger">
+            <svg className="cn-rtl-flip lucide lucide-panel-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="PanelLeftIcon" tabler="IconLayoutSidebar" hugeicons="SidebarLeftIcon" phosphor="SidebarIcon" remixicon="RiSideBarLine">
+              <rect width={18} height={18} x={3} y={3} rx={2}></rect>
               <path d="M9 3v18"></path>
             </svg>
             <span className="sr-only">
@@ -792,13 +792,13 @@ export function Pattern() {
             </span>
           </SidebarTrigger>
           </SidebarProvider>
-          <Button className="hidden sm:flex text-muted-foreground" type="button" tabIndex="0" aria-label="Previous message">
-            <svg className="lucide lucide-chevron-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine" aria-hidden="true">
+          <Button className="hidden sm:flex text-muted-foreground" type="button" tabIndex={0} aria-label="Previous message">
+            <svg className="lucide lucide-chevron-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronLeftIcon" tabler="IconChevronLeft" hugeicons="ArrowLeft01Icon" phosphor="CaretLeftIcon" remixicon="RiArrowLeftSLine" aria-hidden="true">
               <path d="m15 18-6-6 6-6"></path>
             </svg>
           </Button>
-          <Button className="hidden sm:flex text-muted-foreground" type="button" tabIndex="0" aria-label="Next message">
-            <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
+          <Button className="hidden sm:flex text-muted-foreground" type="button" tabIndex={0} aria-label="Next message">
+            <svg className="lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine" aria-hidden="true">
               <path d="m9 18 6-6-6-6"></path>
             </svg>
           </Button>
@@ -809,8 +809,8 @@ export function Pattern() {
             {"Design review · component library v2.0"}
           </h3>
           <div className="flex gap-0.5 items-center ml-auto shrink-0" role="toolbar" aria-label="Message actions">
-            <Button className="gap-1.5 hidden sm:flex" type="button" tabIndex="0" aria-label="Reply all">
-              <svg className="lucide lucide-corner-up-left" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CornerUpLeftIcon" tabler="IconCornerUpLeft" hugeicons="ArrowMoveUpLeftIcon" phosphor="ArrowBendUpLeftIcon" remixicon="RiCornerUpLeftLine" aria-hidden="true">
+            <Button className="gap-1.5 hidden sm:flex" type="button" tabIndex={0} aria-label="Reply all">
+              <svg className="lucide lucide-corner-up-left" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CornerUpLeftIcon" tabler="IconCornerUpLeft" hugeicons="ArrowMoveUpLeftIcon" phosphor="ArrowBendUpLeftIcon" remixicon="RiCornerUpLeftLine" aria-hidden="true">
                 <path d="M20 20v-7a4 4 0 0 0-4-4H4"></path>
                 <path d="M9 14 4 9l5-5"></path>
               </svg>
@@ -819,18 +819,18 @@ export function Pattern() {
             <div className="hidden items-center me-0.5 ml-2 sm:flex">
               <Separator className="h-5" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
             </div>
-            <Button type="button" tabIndex="0" aria-label="Unstar message">
-              <svg className="fill-amber-500 lucide lucide-star shrink-0 text-amber-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
+            <Button type="button" tabIndex={0} aria-label="Unstar message">
+              <svg className="fill-amber-500 lucide lucide-star shrink-0 text-amber-500" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="StarIcon" tabler="IconStar" hugeicons="StarIcon" phosphor="StarIcon" remixicon="RiStarLine" aria-hidden="true">
                 <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
               </svg>
             </Button>
-            <Button className="hidden md:flex text-muted-foreground" type="button" tabIndex="0" aria-label="Bookmark message">
-              <svg className="lucide lucide-bookmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BookmarkIcon" tabler="IconBookmark" hugeicons="Bookmark02Icon" phosphor="BookmarkSimpleIcon" remixicon="RiBookmarkLine" aria-hidden="true">
+            <Button className="hidden md:flex text-muted-foreground" type="button" tabIndex={0} aria-label="Bookmark message">
+              <svg className="lucide lucide-bookmark" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BookmarkIcon" tabler="IconBookmark" hugeicons="Bookmark02Icon" phosphor="BookmarkSimpleIcon" remixicon="RiBookmarkLine" aria-hidden="true">
                 <path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"></path>
               </svg>
             </Button>
-            <Button className="hover:text-destructive text-muted-foreground" type="button" tabIndex="0" aria-label="Delete message">
-              <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
+            <Button className="hover:text-destructive text-muted-foreground" type="button" tabIndex={0} aria-label="Delete message">
+              <svg className="lucide lucide-trash-2 lucide-trash2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Trash2Icon" tabler="IconTrash" hugeicons="Delete02Icon" phosphor="TrashIcon" remixicon="RiDeleteBinLine" aria-hidden="true">
                 <path d="M10 11v6"></path>
                 <path d="M14 11v6"></path>
                 <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"></path>
@@ -842,11 +842,11 @@ export function Pattern() {
               <Separator className="h-5" data-orientation="vertical" role="separator" aria-orientation="vertical"></Separator>
             </div>
             <DropdownMenu>
-            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="More options" aria-haspopup="menu" id="base-ui-_r_19_" aria-expanded="false">
-              <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                <circle cx="12" cy="12" r="1"></circle>
-                <circle cx="19" cy="12" r="1"></circle>
-                <circle cx="5" cy="12" r="1"></circle>
+            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 text-muted-foreground transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="More options" aria-haspopup="menu" id="base-ui-_r_19_" aria-expanded="false">
+              <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                <circle cx={12} cy={12} r={1}></circle>
+                <circle cx={19} cy={12} r={1}></circle>
+                <circle cx={5} cy={12} r={1}></circle>
               </svg>
             </DropdownMenuTrigger>
             </DropdownMenu>

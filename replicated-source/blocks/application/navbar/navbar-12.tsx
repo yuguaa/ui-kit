@@ -19,7 +19,7 @@ export function Pattern() {
             <Item className="bg-primary p-0 size-7 text-primary-foreground" variant="default" size="default">
               <ItemMedia className="size-auto" variant="icon">
                 <svg className="size-4" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"></path>
                 </svg>
               </ItemMedia>
             </Item>
@@ -32,9 +32,9 @@ export function Pattern() {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenu>
-                <NavigationMenuTrigger type="button" aria-disabled="false" tabIndex="0" aria-expanded="false" baseUiNavigationMenuTrigger="">
+                <NavigationMenuTrigger type="button" aria-disabled="false" tabIndex={0} aria-expanded="false" baseUiNavigationMenuTrigger="">
                   {"Product"}
-                  <svg className="cn-navigation-menu-trigger-icon lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                  <svg className="cn-navigation-menu-trigger-icon lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
                 </NavigationMenuTrigger>
@@ -42,9 +42,9 @@ export function Pattern() {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenu>
-                <NavigationMenuTrigger type="button" aria-disabled="false" tabIndex="0" aria-expanded="false" baseUiNavigationMenuTrigger="">
+                <NavigationMenuTrigger type="button" aria-disabled="false" tabIndex={0} aria-expanded="false" baseUiNavigationMenuTrigger="">
                   {"Company"}
-                  <svg className="cn-navigation-menu-trigger-icon lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+                  <svg className="cn-navigation-menu-trigger-icon lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                     <path d="m6 9 6 6 6-6"></path>
                   </svg>
                 </NavigationMenuTrigger>
@@ -59,11 +59,11 @@ export function Pattern() {
           </NavigationMenu>
         </div>
         <div className="flex items-center">
-          <Button className="group/sliding overflow-hidden px-6 relative" type="button" tabIndex="0">
+          <Button className="group/sliding overflow-hidden px-6 relative" type="button" tabIndex={0}>
             <span className="duration-300 group-hover/sliding:-translate-x-2 inline-flex items-center transition-transform">
               {"Get Started"}
             </span>
-            <svg className="absolute duration-300 group-hover/sliding:opacity-100 group-hover/sliding:translate-x-0 lucide lucide-arrow-right opacity-0 right-2.5 transition-all translate-x-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+            <svg className="absolute duration-300 group-hover/sliding:opacity-100 group-hover/sliding:translate-x-0 lucide lucide-arrow-right opacity-0 right-2.5 transition-all translate-x-8" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
               <path d="M5 12h14"></path>
               <path d="m12 5 7 7-7 7"></path>
             </svg>

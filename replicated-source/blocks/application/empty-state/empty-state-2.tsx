@@ -51,18 +51,18 @@ export function Pattern() {
           </EmptyHeader>
           <EmptyContent className="gap-0 max-w-none">
             <ButtonGroup className="**:data-[slot=button]:border-r-0" role="group">
-              <Button type="button" tabIndex="0" extracted="1">
-                <svg className="fill-current lucide lucide-play" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlayIcon" tabler="IconPlayerPlay" hugeicons="PlayIcon" phosphor="PlayIcon" remixicon="RiPlayLine" data-icon="inline-start" aria-hidden="true">
+              <Button type="button" tabIndex={0} extracted="1">
+                <svg className="fill-current lucide lucide-play" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlayIcon" tabler="IconPlayerPlay" hugeicons="PlayIcon" phosphor="PlayIcon" remixicon="RiPlayLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path>
                 </svg>
                 {"Browse library"}
               </Button>
-              <Button type="button" tabIndex="0">
-                <svg className="lucide lucide-settings-2 lucide-settings2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Settings2Icon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" data-icon="inline-start" aria-hidden="true">
+              <Button type="button" tabIndex={0}>
+                <svg className="lucide lucide-settings-2 lucide-settings2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Settings2Icon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" data-icon="inline-start" aria-hidden="true">
                   <path d="M14 17H5"></path>
                   <path d="M19 7h-9"></path>
-                  <circle cx="17" cy="17" r="3"></circle>
-                  <circle cx="7" cy="7" r="3"></circle>
+                  <circle cx={17} cy={17} r={3}></circle>
+                  <circle cx={7} cy={7} r={3}></circle>
                 </svg>
                 {"Refine filters"}
               </Button>
@@ -75,13 +75,13 @@ export function Pattern() {
               {"Try these searches"}
             </p>
             <div className="flex flex-wrap gap-2 items-center justify-start">
-              <Button className="gap-2 rounded-full" type="button" tabIndex="0">
+              <Button className="gap-2 rounded-full" type="button" tabIndex={0}>
                 {"\"meeting transcript\""}
               </Button>
-              <Button className="gap-2 rounded-full" type="button" tabIndex="0">
+              <Button className="gap-2 rounded-full" type="button" tabIndex={0}>
                 {"#launch-plan"}
               </Button>
-              <Button className="gap-2 rounded-full" type="button" tabIndex="0">
+              <Button className="gap-2 rounded-full" type="button" tabIndex={0}>
                 {"\"handoff notes\""}
               </Button>
             </div>

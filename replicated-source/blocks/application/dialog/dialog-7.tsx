@@ -37,13 +37,13 @@ export function Pattern() {
         {"Support hub dialog"}
       </h1>
       <div className="flex items-center justify-center min-h-[360px]">
-        <Button type="button" tabIndex="0" extracted="1">
+        <Button type="button" tabIndex={0} extracted="1">
           {"Open support hub"}
         </Button>
       </div>
     </main>
     <Dialog>
-    <DialogContent className="**:data-[slot=dialog-close]:right-3 **:data-[slot=dialog-close]:top-3 flex flex-col gap-0 max-h-[min(88vh,44rem)] overflow-hidden p-0 sm:max-w-2xl" data-open="" tabIndex="-1" baseUiFocusable="" id="_r_0_" role="dialog" aria-labelledby="base-ui-_r_2_" aria-describedby="base-ui-_r_3_" style={{"--nested-dialogs": "0"}}>
+    <DialogContent className="**:data-[slot=dialog-close]:right-3 **:data-[slot=dialog-close]:top-3 flex flex-col gap-0 max-h-[min(88vh,44rem)] overflow-hidden p-0 sm:max-w-2xl" data-open="" tabIndex={-1} baseUiFocusable="" id="_r_0_" role="dialog" aria-labelledby="base-ui-_r_2_" aria-describedby="base-ui-_r_3_" style={{"--nested-dialogs": "0"}}>
       <DialogHeader className="gap-1 pb-3 pt-4 px-5 text-left">
         <DialogTitle id="base-ui-_r_2_">
           {"Need a hand with setup?"}
@@ -60,7 +60,7 @@ export function Pattern() {
               <ItemGroup className="gap-0" role="list">
                 <div className="border-b border-border border-dashed first:pt-0 flex gap-3 items-center last:border-b-0 last:pb-0 py-3">
                   <Item className="[&_svg]:size-5 [&_svg]:text-accent-foreground bg-muted border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10" variant="default" size="default">
-                    <svg className="lucide lucide-book-open size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BookOpenIcon" tabler="IconBook" hugeicons="BookOpen01Icon" phosphor="BookOpenIcon" remixicon="RiBookOpenLine" aria-hidden="true">
+                    <svg className="lucide lucide-book-open size-5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BookOpenIcon" tabler="IconBook" hugeicons="BookOpen01Icon" phosphor="BookOpenIcon" remixicon="RiBookOpenLine" aria-hidden="true">
                       <path d="M12 7v14"></path>
                       <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
                     </svg>
@@ -75,15 +75,15 @@ export function Pattern() {
                       {"Admin and onboarding references."}
                     </ItemDescription>
                   </ItemContent>
-                  <Button type="button" tabIndex="0">
+                  <Button type="button" tabIndex={0}>
                     {"Open guides"}
                   </Button>
                 </div>
                 <div className="border-b border-border border-dashed first:pt-0 flex gap-3 items-center last:border-b-0 last:pb-0 py-3">
                   <Item className="[&_svg]:size-5 [&_svg]:text-accent-foreground bg-muted border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10" variant="default" size="default">
-                    <svg className="lucide lucide-video size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="VideoIcon" tabler="IconVideo" hugeicons="Video02Icon" phosphor="VideoCameraIcon" remixicon="RiVideoOnLine" aria-hidden="true">
+                    <svg className="lucide lucide-video size-5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="VideoIcon" tabler="IconVideo" hugeicons="Video02Icon" phosphor="VideoCameraIcon" remixicon="RiVideoOnLine" aria-hidden="true">
                       <path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path>
-                      <rect x="2" y="6" width="14" height="12" rx="2"></rect>
+                      <rect x={2} y={6} width={14} height={12} rx={2}></rect>
                     </svg>
                   </Item>
                   <ItemContent className="gap-0.5 min-w-0">
@@ -96,17 +96,17 @@ export function Pattern() {
                       {"Quick lessons for rollout."}
                     </ItemDescription>
                   </ItemContent>
-                  <Button type="button" tabIndex="0">
+                  <Button type="button" tabIndex={0}>
                     {"Watch videos"}
                   </Button>
                 </div>
                 <div className="border-b border-border border-dashed first:pt-0 flex gap-3 items-center last:border-b-0 last:pb-0 py-3">
                   <Item className="[&_svg]:size-5 [&_svg]:text-accent-foreground bg-muted border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10" variant="default" size="default">
-                    <svg className="lucide lucide-sparkles size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SparklesIcon" tabler="IconSparkles" hugeicons="SparklesIcon" phosphor="SparkleIcon" remixicon="RiSparklingLine" aria-hidden="true">
+                    <svg className="lucide lucide-sparkles size-5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SparklesIcon" tabler="IconSparkles" hugeicons="SparklesIcon" phosphor="SparkleIcon" remixicon="RiSparklingLine" aria-hidden="true">
                       <path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path>
                       <path d="M20 2v4"></path>
                       <path d="M22 4h-4"></path>
-                      <circle cx="4" cy="20" r="2"></circle>
+                      <circle cx={4} cy={20} r={2}></circle>
                     </svg>
                   </Item>
                   <ItemContent className="gap-0.5 min-w-0">
@@ -119,7 +119,7 @@ export function Pattern() {
                       {"Share missing patterns."}
                     </ItemDescription>
                   </ItemContent>
-                  <Button type="button" tabIndex="0">
+                  <Button type="button" tabIndex={0}>
                     {"Send feedback"}
                   </Button>
                 </div>
@@ -160,7 +160,7 @@ export function Pattern() {
                   </p>
                 </CardContent>
                 <CardFooter className="border-t mt-auto p-3">
-                  <Button className="w-full" type="button" tabIndex="0">
+                  <Button className="w-full" type="button" tabIndex={0}>
                     {"Reserve a session"}
                   </Button>
                 </CardFooter>
@@ -169,9 +169,9 @@ export function Pattern() {
                 <CardHeader className="p-3 pb-0">
                   <div className="flex gap-2 items-center min-w-0">
                     <Item className="[&_svg]:size-5 [&_svg]:text-accent-foreground bg-muted border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10" variant="default" size="default">
-                      <svg className="lucide lucide-mail size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
+                      <svg className="lucide lucide-mail size-5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
                         <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                        <rect x={2} y={4} width={20} height={16} rx={2}></rect>
                       </svg>
                     </Item>
                     <div className="flex flex-col">
@@ -190,7 +190,7 @@ export function Pattern() {
                   </p>
                 </CardContent>
                 <CardFooter className="border-t mt-auto p-3">
-                  <Button className="w-full" type="button" tabIndex="0">
+                  <Button className="w-full" type="button" tabIndex={0}>
                     {"Email support"}
                   </Button>
                 </CardFooter>
@@ -199,8 +199,8 @@ export function Pattern() {
           </section>
         </div>
       </div>
-      <DialogClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost cn-dialog-close disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0">
-        <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
+      <DialogClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost cn-dialog-close disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0}>
+        <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
           <path d="M18 6 6 18"></path>
           <path d="m6 6 12 12"></path>
         </svg>

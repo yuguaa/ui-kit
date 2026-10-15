@@ -22,16 +22,16 @@ export function Pattern() {
               {"Portfolio Snapshot"}
             </h2>
             <TabsList data-orientation="horizontal" activationDirection="none" role="tablist" variant="default">
-              <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-controls="base-ui-_r_2_">
+              <TabsTrigger type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex={0} role="tab" aria-selected="true" id="base-ui-_r_0_" compositeItemActive="" aria-controls="base-ui-_r_2_">
                 {"Weekly"}
               </TabsTrigger>
-              <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_1_">
+              <TabsTrigger type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_1_">
                 {"All Time"}
               </TabsTrigger>
             </TabsList>
           </FramePanel>
           <FramePanel className="pb-4! pt-3! px-5!">
-            <TabsContent data-orientation="horizontal" activationDirection="none" id="base-ui-_r_2_" role="tabpanel" tabIndex="0" index="0" aria-labelledby="base-ui-_r_0_">
+            <TabsContent data-orientation="horizontal" activationDirection="none" id="base-ui-_r_2_" role="tabpanel" tabIndex={0} index="0" aria-labelledby="base-ui-_r_0_">
               <ul className="flex flex-col">
                 <li>
                   <div className="flex gap-2 items-center">
@@ -41,7 +41,7 @@ export function Pattern() {
                           <stop offset="0%" stopColor="#FFF" stopOpacity=".5"></stop>
                           <stop offset="100%" stopOpacity=".5"></stop>
                         </lineargradient>
-                        <circle id="btc-b" cx="16" cy="15" r="15"></circle>
+                        <circle id="btc-b" cx={16} cy={15} r={15}></circle>
                         <filter id="btc-a" width="111.7%" height="111.7%" x="-5.8%" y="-4.2%" filterunits="objectBoundingBox">
                           <feoffset dy=".5" in="SourceAlpha" result="shadowOffsetOuter1"></feoffset>
                           <fegaussianblur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"></fegaussianblur>
@@ -59,7 +59,7 @@ export function Pattern() {
                         <use fill="#000" filter="url(#btc-a)" xlinkHref="#btc-b"></use>
                         <use fill="#F7931A" xlinkHref="#btc-b"></use>
                         <use fill="url(#btc-c)" xlinkHref="#btc-b" style={{mixBlendMode: "soft-light"}}></use>
-                        <circle cx="16" cy="15" r="14.5" stroke="#000" strokeOpacity=".097"></circle>
+                        <circle cx={16} cy={15} r={14.5} stroke="#000" strokeOpacity=".097"></circle>
                         <g fillRule="nonzero">
                           <use fill="#000" filter="url(#btc-d)" xlinkHref="#btc-e"></use>
                           <use fill="#FFF" fillRule="evenodd" xlinkHref="#btc-e"></use>
@@ -75,7 +75,7 @@ export function Pattern() {
                           {"$64,120"}
                         </span>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                          <svg className="lucide lucide-trending-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
+                          <svg className="lucide lucide-trending-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
                             <path d="M16 17h6v-6"></path>
                             <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                           </svg>
@@ -109,7 +109,7 @@ export function Pattern() {
                           {"$1.00"}
                         </span>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                          <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
+                          <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                             <path d="M16 7h6v6"></path>
                             <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                           </svg>
@@ -132,22 +132,22 @@ export function Pattern() {
                   <div className="flex gap-2 items-center">
                     <svg className="size-9" aria-hidden="true" viewBox="0 0 32 32" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <defs>
-                        <lineargradient id="c" x1="16" x2="16" y1="0" y2="30" gradientUnits="userSpaceOnUse">
+                        <lineargradient id="c" x1={16} x2={16} y1={0} y2={30} gradientUnits="userSpaceOnUse">
                           <stop offset="0%" stopColor="#FFF" stopOpacity=".5"></stop>
                           <stop offset="100%" stopOpacity=".5"></stop>
                         </lineargradient>
-                        <filter id="a" width="1.08" height="1.0966667" x="-.04" y="-.04" filterunits="objectBoundingBox">
+                        <filter id="a" width={1.08} height={1.0966667} x="-.04" y="-.04" filterunits="objectBoundingBox">
                           <feoffset dy=".5" in="SourceAlpha" result="shadowOffsetOuter1"></feoffset>
                           <fegaussianblur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"></fegaussianblur>
                           <fecomposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></fecomposite>
                           <fecolormatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.199473505 0"></fecolormatrix>
                         </filter>
-                        <circle id="b" cx="16" cy="15" r="15"></circle>
+                        <circle id="b" cx={16} cy={15} r={15}></circle>
                       </defs>
                       <use xlinkHref="#b" filter="url(#a)" style={{display: "inline", fillRule: "evenodd"}}></use>
                       <use xlinkHref="#b" fill="#627eea" style={{display: "inline", fill: "rgb(229, 229, 229)", fillOpacity: "1", fillRule: "evenodd"}}></use>
                       <use xlinkHref="#b" fill="url(#c)" style={{display: "inline", mixBlendMode: "soft-light", fill: "url(\"#c\")", fillRule: "evenodd"}}></use>
-                      <circle cx="16" cy="15" r="14.5" stroke="#000" strokeOpacity=".097" style={{display: "inline", fill: "none", fillRule: "evenodd"}}></circle>
+                      <circle cx={16} cy={15} r={14.5} stroke="#000" strokeOpacity=".097" style={{display: "inline", fill: "none", fillRule: "evenodd"}}></circle>
                       <path d="m10.331859 23 7.221238-12.601771.99115 3.256638L13.022125 23h2.83186l3.539822-6.088495L20.951328 23H23.5l-2.40708-9.061945 1.699118-2.973453h-2.548674L19.252216 7h-2.407083L7.5 23Z" style={{fill: "rgb(0, 0, 0)", fillOpacity: "1", stroke: "none", strokeWidth: "0.141594", strokeOpacity: "1"}}></path>
                     </svg>
                     <div className="flex flex-1 flex-col gap-0 min-w-0">
@@ -159,7 +159,7 @@ export function Pattern() {
                           {"$0.18"}
                         </span>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-destructive/10 border border-destructive/15 dark:bg-destructive/15 dark:border-destructive/25 dark:text-destructive disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-destructive-foreground text-xs transition-shadow">
-                          <svg className="lucide lucide-trending-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
+                          <svg className="lucide lucide-trending-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
                             <path d="M16 17h6v-6"></path>
                             <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                           </svg>
@@ -193,7 +193,7 @@ export function Pattern() {
                           {"$320.40"}
                         </span>
                         <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
-                          <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
+                          <svg className="lucide lucide-trending-up" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true">
                             <path d="M16 7h6v6"></path>
                             <path d="m22 7-8.5 8.5-5-5L2 17"></path>
                           </svg>
@@ -215,8 +215,8 @@ export function Pattern() {
             </TabsContent>
           </FramePanel>
           <FramePanel className="p-3.5!">
-            <Button className="text-foreground w-full" type="button" tabIndex="0">
-              <svg className="lucide lucide-external-link opacity-50" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
+            <Button className="text-foreground w-full" type="button" tabIndex={0}>
+              <svg className="lucide lucide-external-link opacity-50" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
                 <path d="M15 3h6v6"></path>
                 <path d="M10 14 21 3"></path>
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>

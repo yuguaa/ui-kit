@@ -26,8 +26,8 @@ export function Pattern() {
           <CardHeader className="flex flex-col gap-4 items-center pb-0 pt-8 px-6 sm:pt-9 sm:px-8 text-center">
             <Item className="bg-primary p-0 size-8 text-primary-foreground" variant="default" size="default" aria-hidden="true">
               <ItemMedia className="size-auto" variant="icon">
-                <svg className="size-4" width="50" height="50" viewBox="25.668 25.1352 49.6644 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="70.634" cy="29.8334" r="4.69799" fill="currentColor"></circle>
+                <svg className="size-4" width={50} height={50} viewBox="25.668 25.1352 49.6644 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx={70.634} cy={29.8334} r={4.69799} fill="currentColor"></circle>
                   <path fillRule="evenodd" clipRule="evenodd" d="M25.668 57.0144V29.8332C25.668 27.2386 27.7713 25.1352 30.366 25.1352C32.9606 25.1352 35.0639 27.2386 35.0639 29.8332V57.0144C35.0639 61.833 38.9702 65.7392 43.7888 65.7392H57.2116C62.0302 65.7392 65.9364 61.833 65.9364 57.0144V43.7258C65.9364 41.1312 68.0398 39.0278 70.6344 39.0278C73.229 39.0278 75.3324 41.1312 75.3324 43.7258V57.0144C75.3324 67.0222 67.2194 75.1352 57.2116 75.1352H43.7888C33.7809 75.1352 25.668 67.0222 25.668 57.0144Z" fill="currentColor"></path>
                 </svg>
               </ItemMedia>
@@ -43,12 +43,12 @@ export function Pattern() {
           </CardHeader>
           <CardContent className="flex flex-col gap-6 pb-6 pt-6 px-6 sm:pb-8 sm:pt-7 sm:px-8">
             <div className="gap-3 grid sm:grid-cols-2">
-              <Button className="w-full" type="button" tabIndex="0">
+              <Button className="w-full" type="button" tabIndex={0}>
                 <svg className="shrink-0 size-4" aria-hidden="true" xmlns:xlink="http://www.w3.org/1999/xlink" xmlSpace="preserve" overflow="hidden" viewBox="0 0 268.152 273.883">
                   <defs>
                     <lineargradient id="a">
-                      <stop offset="0" stopColor="#0fbc5c"></stop>
-                      <stop offset="1" stopColor="#0cba65"></stop>
+                      <stop offset={0} stopColor="#0fbc5c"></stop>
+                      <stop offset={1} stopColor="#0cba65"></stop>
                     </lineargradient>
                     <lineargradient id="g">
                       <stop offset=".231" stopColor="#0fbc5f"></stop>
@@ -60,7 +60,7 @@ export function Pattern() {
                       <stop offset=".771" stopColor="#38c02b"></stop>
                       <stop offset=".861" stopColor="#52c218"></stop>
                       <stop offset=".915" stopColor="#67c30f"></stop>
-                      <stop offset="1" stopColor="#86c504"></stop>
+                      <stop offset={1} stopColor="#86c504"></stop>
                     </lineargradient>
                     <lineargradient id="h">
                       <stop offset=".142" stopColor="#1abd4d"></stop>
@@ -79,7 +79,7 @@ export function Pattern() {
                       <stop offset=".604" stopColor="#ff692c"></stop>
                       <stop offset=".727" stopColor="#ff7825"></stop>
                       <stop offset=".885" stopColor="#ff8d1b"></stop>
-                      <stop offset="1" stopColor="#ff9f13"></stop>
+                      <stop offset={1} stopColor="#ff9f13"></stop>
                     </lineargradient>
                     <lineargradient id="b">
                       <stop offset=".231" stopColor="#ff4541"></stop>
@@ -89,11 +89,11 @@ export function Pattern() {
                       <stop offset=".699" stopColor="#ff5138"></stop>
                       <stop offset=".771" stopColor="#ff5b33"></stop>
                       <stop offset=".861" stopColor="#ff6c29"></stop>
-                      <stop offset="1" stopColor="#ff8c18"></stop>
+                      <stop offset={1} stopColor="#ff8c18"></stop>
                     </lineargradient>
                     <lineargradient id="d">
                       <stop offset=".408" stopColor="#fb4e5a"></stop>
-                      <stop offset="1" stopColor="#ff4540"></stop>
+                      <stop offset={1} stopColor="#ff4540"></stop>
                     </lineargradient>
                     <lineargradient id="c">
                       <stop offset=".132" stopColor="#0cba65"></stop>
@@ -114,20 +114,20 @@ export function Pattern() {
                       <stop offset=".771" stopColor="#ffcd0a"></stop>
                       <stop offset=".861" stopColor="#fecf0a"></stop>
                       <stop offset=".915" stopColor="#fecf08"></stop>
-                      <stop offset="1" stopColor="#fdcd01"></stop>
+                      <stop offset={1} stopColor="#fdcd01"></stop>
                     </lineargradient>
-                    <lineargradient xlinkHref="#a" id="s" x1="219.7" x2="254.467" y1="329.535" y2="329.535" gradientUnits="userSpaceOnUse"></lineargradient>
-                    <radialgradient xlinkHref="#b" id="m" cx="109.627" cy="135.862" r="71.46" fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 1.043 1.45573 2.55542 290.525 -400.634)" gradientUnits="userSpaceOnUse"></radialgradient>
-                    <radialgradient xlinkHref="#c" id="n" cx="45.259" cy="279.274" r="71.46" fx="45.259" fy="279.274" gradientTransform="matrix(-3.5126 -4.45809 -1.69255 1.26062 870.8 191.554)" gradientUnits="userSpaceOnUse"></radialgradient>
-                    <radialgradient xlinkHref="#d" id="l" cx="304.017" cy="118.009" r="47.854" fx="304.017" fy="118.009" gradientTransform="matrix(2.06435 0 0 2.59204 -297.679 -151.747)" gradientUnits="userSpaceOnUse"></radialgradient>
-                    <radialgradient xlinkHref="#e" id="o" cx="181.001" cy="177.201" r="71.46" fx="181.001" fy="177.201" gradientTransform="matrix(-.24858 2.08314 2.96249 .33417 -255.146 -331.164)" gradientUnits="userSpaceOnUse"></radialgradient>
-                    <radialgradient xlinkHref="#f" id="p" cx="207.673" cy="108.097" r="41.102" fx="207.673" fy="108.097" gradientTransform="matrix(-1.2492 1.34326 -3.89684 -3.4257 880.501 194.905)" gradientUnits="userSpaceOnUse"></radialgradient>
-                    <radialgradient xlinkHref="#g" id="r" cx="109.627" cy="135.862" r="71.46" fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 -1.043 1.45573 -2.55542 290.525 838.683)" gradientUnits="userSpaceOnUse"></radialgradient>
-                    <radialgradient xlinkHref="#h" id="j" cx="154.87" cy="145.969" r="71.46" fx="154.87" fy="145.969" gradientTransform="matrix(-.0814 -1.93722 2.92674 -.11625 -215.135 632.86)" gradientUnits="userSpaceOnUse"></radialgradient>
-                    <filter id="q" width="1.097" height="1.116" x="-.048" y="-.058" color-interpolation-filters="sRGB">
+                    <lineargradient xlinkHref="#a" id="s" x1={219.7} x2={254.467} y1={329.535} y2={329.535} gradientUnits="userSpaceOnUse"></lineargradient>
+                    <radialgradient xlinkHref="#b" id="m" cx={109.627} cy={135.862} r={71.46} fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 1.043 1.45573 2.55542 290.525 -400.634)" gradientUnits="userSpaceOnUse"></radialgradient>
+                    <radialgradient xlinkHref="#c" id="n" cx={45.259} cy={279.274} r={71.46} fx="45.259" fy="279.274" gradientTransform="matrix(-3.5126 -4.45809 -1.69255 1.26062 870.8 191.554)" gradientUnits="userSpaceOnUse"></radialgradient>
+                    <radialgradient xlinkHref="#d" id="l" cx={304.017} cy={118.009} r={47.854} fx="304.017" fy="118.009" gradientTransform="matrix(2.06435 0 0 2.59204 -297.679 -151.747)" gradientUnits="userSpaceOnUse"></radialgradient>
+                    <radialgradient xlinkHref="#e" id="o" cx={181.001} cy={177.201} r={71.46} fx="181.001" fy="177.201" gradientTransform="matrix(-.24858 2.08314 2.96249 .33417 -255.146 -331.164)" gradientUnits="userSpaceOnUse"></radialgradient>
+                    <radialgradient xlinkHref="#f" id="p" cx={207.673} cy={108.097} r={41.102} fx="207.673" fy="108.097" gradientTransform="matrix(-1.2492 1.34326 -3.89684 -3.4257 880.501 194.905)" gradientUnits="userSpaceOnUse"></radialgradient>
+                    <radialgradient xlinkHref="#g" id="r" cx={109.627} cy={135.862} r={71.46} fx="109.627" fy="135.862" gradientTransform="matrix(-1.93688 -1.043 1.45573 -2.55542 290.525 838.683)" gradientUnits="userSpaceOnUse"></radialgradient>
+                    <radialgradient xlinkHref="#h" id="j" cx={154.87} cy={145.969} r={71.46} fx="154.87" fy="145.969" gradientTransform="matrix(-.0814 -1.93722 2.92674 -.11625 -215.135 632.86)" gradientUnits="userSpaceOnUse"></radialgradient>
+                    <filter id="q" width={1.097} height={1.116} x="-.048" y="-.058" color-interpolation-filters="sRGB">
                       <fegaussianblur stdDeviation="1.701"></fegaussianblur>
                     </filter>
-                    <filter id="k" width="1.033" height="1.02" x="-.017" y="-.01" color-interpolation-filters="sRGB">
+                    <filter id="k" width={1.033} height={1.02} x="-.017" y="-.01" color-interpolation-filters="sRGB">
                       <fegaussianblur stdDeviation=".242"></fegaussianblur>
                     </filter>
                     <clippath id="i" clippathunits="userSpaceOnUse">
@@ -148,7 +148,7 @@ export function Pattern() {
                 </svg>
                 {"Google"}
               </Button>
-              <Button className="w-full" type="button" tabIndex="0">
+              <Button className="w-full" type="button" tabIndex={0}>
                 <span className="dark:hidden" aria-hidden="true">
                   <svg className="shrink-0 size-4" aria-hidden="true" xmlSpace="preserve" viewBox="0 0 814 1000">
                     <path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76.5 0-103.7 40.8-165.9 40.8s-105.6-57-155.5-127C46.7 790.7 0 663 0 541.8c0-194.4 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-181.5c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z"></path>
@@ -182,24 +182,24 @@ export function Pattern() {
                     <FieldLabel className="cn-label group-data-[disabled=true]:pointer-events-none items-center peer-disabled:cursor-not-allowed select-none" htmlFor="auth-20-password">
                       {"Password"}
                     </FieldLabel>
-                    <Button className="cursor-pointer font-normal h-auto p-0 text-muted-foreground text-xs" type="button" tabIndex="0">
+                    <Button className="cursor-pointer font-normal h-auto p-0 text-muted-foreground text-xs" type="button" tabIndex={0}>
                       {"Forgot password?"}
                     </Button>
                   </div>
                   <InputGroup role="group">
                     <input className="cn-input cn-input-group-input disabled:cursor-not-allowed disabled:opacity-50 disabled:pointer-events-none file:bg-transparent file:border-0 file:inline-flex file:text-foreground flex-1 min-w-0 outline-none placeholder:text-muted-foreground w-full" id="auth-20-password" autoComplete="current-password" placeholder="Enter your password" type="password" />
                     <InputGroupAddon role="group" data-align="inline-end">
-                      <Button className="cn-input-group-button cn-input-group-button-size-icon-xs flex shadow-none text-muted-foreground" type="button" tabIndex="0" size="icon-xs" aria-label="Show password" aria-pressed="false">
-                        <svg className="lucide lucide-eye" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="EyeIcon" tabler="IconEye" hugeicons="ViewIcon" phosphor="EyeIcon" remixicon="RiEyeLine" aria-hidden="true">
+                      <Button className="cn-input-group-button cn-input-group-button-size-icon-xs flex shadow-none text-muted-foreground" type="button" tabIndex={0} size="icon-xs" aria-label="Show password" aria-pressed="false">
+                        <svg className="lucide lucide-eye" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="EyeIcon" tabler="IconEye" hugeicons="ViewIcon" phosphor="EyeIcon" remixicon="RiEyeLine" aria-hidden="true">
                           <path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"></path>
-                          <circle cx="12" cy="12" r="3"></circle>
+                          <circle cx={12} cy={12} r={3}></circle>
                         </svg>
                       </Button>
                     </InputGroupAddon>
                   </InputGroup>
                 </Field>
               </FieldGroup>
-              <Button className="w-full" type="submit" tabIndex="0">
+              <Button className="w-full" type="submit" tabIndex={0}>
                 {"Sign in"}
               </Button>
             </form>
@@ -207,7 +207,7 @@ export function Pattern() {
         </Card>
         <p className="text-center text-muted-foreground text-sm">
           {"Don't have an account?"}
-          <Button className="cursor-pointer h-auto p-0" type="button" tabIndex="0">
+          <Button className="cursor-pointer h-auto p-0" type="button" tabIndex={0}>
             {"Create account"}
           </Button>
         </p>

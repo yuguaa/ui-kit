@@ -18,7 +18,7 @@ export function Pattern() {
           <FramePanel className="flex flex-col gap-3">
             <div className="flex gap-3 items-start min-w-0">
               <IconTile variant="elevated" size="sm" aria-hidden="true">
-                <svg className="lucide lucide-layers" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LayersIcon" tabler="IconStack2" hugeicons="Layers01Icon" phosphor="StackIcon" remixicon="RiStackLine" aria-hidden="true">
+                <svg className="lucide lucide-layers" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LayersIcon" tabler="IconStack2" hugeicons="Layers01Icon" phosphor="StackIcon" remixicon="RiStackLine" aria-hidden="true">
                   <path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path>
                   <path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path>
                   <path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path>
@@ -103,7 +103,7 @@ export function Pattern() {
           <FramePanel className="flex flex-col gap-3">
             <div className="flex gap-3 items-start min-w-0">
               <IconTile variant="elevated" size="sm" aria-hidden="true">
-                <svg className="lucide lucide-activity" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ActivityIcon" tabler="IconActivity" hugeicons="Pulse01Icon" phosphor="ActivityIcon" remixicon="RiPulseLine" aria-hidden="true">
+                <svg className="lucide lucide-activity" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ActivityIcon" tabler="IconActivity" hugeicons="Pulse01Icon" phosphor="ActivityIcon" remixicon="RiPulseLine" aria-hidden="true">
                   <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"></path>
                 </svg>
               </IconTile>
@@ -131,61 +131,61 @@ export function Pattern() {
                   <style dangerouslySetInnerHTML={{ __html: "\n [data-chart=chart-_r_1_] {\n  --color-rate: var(--success);\n}\n\n\n.dark [data-chart=chart-_r_1_] {\n  --color-rate: var(--success);\n}\n" }} />
                   <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                     <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                      <div className="recharts-wrapper" width="257" height="46" style={{position: "relative", cursor: "default", width: "257px", height: "46px"}}>
-                        <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex="-1" style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px"}}></div>
-                        <svg className="recharts-surface" width="257" height="46" viewBox="0 0 257 46" style={{width: "100%", height: "100%", display: "block"}}>
+                      <div className="recharts-wrapper" width={257} height={46} style={{position: "relative", cursor: "default", width: "257px", height: "46px"}}>
+                        <div className="recharts-tooltip-wrapper" xmlns="http://www.w3.org/1999/xhtml" tabIndex={-1} style={{visibility: "hidden", pointerEvents: "none", position: "absolute", top: "0px", left: "0px"}}></div>
+                        <svg className="recharts-surface" width={257} height={46} viewBox="0 0 257 46" style={{width: "100%", height: "100%", display: "block"}}>
                           <title></title>
                           <desc></desc>
-                          <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                          <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                          <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                          <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                           <defs>
                             <clippath id="recharts1-clip">
-                              <rect x="3" y="4" height="39" width="251"></rect>
+                              <rect x={3} y={4} height={39} width={251}></rect>
                             </clippath>
                           </defs>
                           <defs>
-                            <lineargradient id="success-fill-r0" x1="0" y1="0" x2="0" y2="1">
-                              <stop offset="0%" stopColor="var(--color-rate)" stopOpacity="0.25"></stop>
-                              <stop offset="100%" stopColor="var(--color-rate)" stopOpacity="0"></stop>
+                            <lineargradient id="success-fill-r0" x1={0} y1={0} x2={0} y2={1}>
+                              <stop offset="0%" stopColor="var(--color-rate)" stopOpacity={0.25}></stop>
+                              <stop offset="100%" stopColor="var(--color-rate)" stopOpacity={0}></stop>
                             </lineargradient>
                           </defs>
-                          <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                          <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                             <g className="recharts-area recharts-layer">
                               <g className="recharts-layer">
                                 <g className="recharts-layer" clipPath="url(#animationClipPath-recharts-area-_r_2_)">
                                   <g className="recharts-layer">
-                                    <path className="recharts-area-area recharts-curve" strokeWidth="1.5" fill="url(#success-fill-r0)" fillOpacity="0.6" height="39" stroke="none" width="251" id="recharts-area-_r_2_" d="M3,4C6.638,4,10.275,4,13.913,4C17.551,4,21.188,4,24.826,4C28.464,4,32.101,4,35.739,4C39.377,4,43.014,4,46.652,4C50.29,4,53.928,4,57.565,4C61.203,4,64.841,4,68.478,4C72.116,4,75.754,4,79.391,4C83.029,4,86.667,4,90.304,4C93.942,4,97.58,4,101.217,4C104.855,4,108.493,18.638,112.13,18.638C115.768,18.638,119.406,4,123.043,4C126.681,4,130.319,18.807,133.957,18.807C137.594,18.807,141.232,4,144.87,4C148.507,4,152.145,4,155.783,4C159.42,4,163.058,4,166.696,4C170.333,4,173.971,4,177.609,4C181.246,4,184.884,18.807,188.522,18.807C192.159,18.807,195.797,4,199.435,4C203.072,4,206.71,4,210.348,4C213.986,4,217.623,15.752,221.261,19.164C224.899,22.576,228.536,24.47,232.174,24.47C235.812,24.47,239.449,18.638,243.087,18.638C246.725,18.638,250.362,29.046,254,39.455L254,43C250.362,43,246.725,43,243.087,43C239.449,43,235.812,43,232.174,43C228.536,43,224.899,43,221.261,43C217.623,43,213.986,43,210.348,43C206.71,43,203.072,43,199.435,43C195.797,43,192.159,43,188.522,43C184.884,43,181.246,43,177.609,43C173.971,43,170.333,43,166.696,43C163.058,43,159.42,43,155.783,43C152.145,43,148.507,43,144.87,43C141.232,43,137.594,43,133.957,43C130.319,43,126.681,43,123.043,43C119.406,43,115.768,43,112.13,43C108.493,43,104.855,43,101.217,43C97.58,43,93.942,43,90.304,43C86.667,43,83.029,43,79.391,43C75.754,43,72.116,43,68.478,43C64.841,43,61.203,43,57.565,43C53.928,43,50.29,43,46.652,43C43.014,43,39.377,43,35.739,43C32.101,43,28.464,43,24.826,43C21.188,43,17.551,43,13.913,43C10.275,43,6.638,43,3,43Z"></path>
-                                    <path className="recharts-area-curve recharts-curve" strokeWidth="1.5" fill="none" fillOpacity="0.6" height="39" stroke="var(--color-rate)" width="251" d="M3,4C6.638,4,10.275,4,13.913,4C17.551,4,21.188,4,24.826,4C28.464,4,32.101,4,35.739,4C39.377,4,43.014,4,46.652,4C50.29,4,53.928,4,57.565,4C61.203,4,64.841,4,68.478,4C72.116,4,75.754,4,79.391,4C83.029,4,86.667,4,90.304,4C93.942,4,97.58,4,101.217,4C104.855,4,108.493,18.638,112.13,18.638C115.768,18.638,119.406,4,123.043,4C126.681,4,130.319,18.807,133.957,18.807C137.594,18.807,141.232,4,144.87,4C148.507,4,152.145,4,155.783,4C159.42,4,163.058,4,166.696,4C170.333,4,173.971,4,177.609,4C181.246,4,184.884,18.807,188.522,18.807C192.159,18.807,195.797,4,199.435,4C203.072,4,206.71,4,210.348,4C213.986,4,217.623,15.752,221.261,19.164C224.899,22.576,228.536,24.47,232.174,24.47C235.812,24.47,239.449,18.638,243.087,18.638C246.725,18.638,250.362,29.046,254,39.455"></path>
+                                    <path className="recharts-area-area recharts-curve" strokeWidth={1.5} fill="url(#success-fill-r0)" fillOpacity={0.6} height={39} stroke="none" width={251} id="recharts-area-_r_2_" d="M3,4C6.638,4,10.275,4,13.913,4C17.551,4,21.188,4,24.826,4C28.464,4,32.101,4,35.739,4C39.377,4,43.014,4,46.652,4C50.29,4,53.928,4,57.565,4C61.203,4,64.841,4,68.478,4C72.116,4,75.754,4,79.391,4C83.029,4,86.667,4,90.304,4C93.942,4,97.58,4,101.217,4C104.855,4,108.493,18.638,112.13,18.638C115.768,18.638,119.406,4,123.043,4C126.681,4,130.319,18.807,133.957,18.807C137.594,18.807,141.232,4,144.87,4C148.507,4,152.145,4,155.783,4C159.42,4,163.058,4,166.696,4C170.333,4,173.971,4,177.609,4C181.246,4,184.884,18.807,188.522,18.807C192.159,18.807,195.797,4,199.435,4C203.072,4,206.71,4,210.348,4C213.986,4,217.623,15.752,221.261,19.164C224.899,22.576,228.536,24.47,232.174,24.47C235.812,24.47,239.449,18.638,243.087,18.638C246.725,18.638,250.362,29.046,254,39.455L254,43C250.362,43,246.725,43,243.087,43C239.449,43,235.812,43,232.174,43C228.536,43,224.899,43,221.261,43C217.623,43,213.986,43,210.348,43C206.71,43,203.072,43,199.435,43C195.797,43,192.159,43,188.522,43C184.884,43,181.246,43,177.609,43C173.971,43,170.333,43,166.696,43C163.058,43,159.42,43,155.783,43C152.145,43,148.507,43,144.87,43C141.232,43,137.594,43,133.957,43C130.319,43,126.681,43,123.043,43C119.406,43,115.768,43,112.13,43C108.493,43,104.855,43,101.217,43C97.58,43,93.942,43,90.304,43C86.667,43,83.029,43,79.391,43C75.754,43,72.116,43,68.478,43C64.841,43,61.203,43,57.565,43C53.928,43,50.29,43,46.652,43C43.014,43,39.377,43,35.739,43C32.101,43,28.464,43,24.826,43C21.188,43,17.551,43,13.913,43C10.275,43,6.638,43,3,43Z"></path>
+                                    <path className="recharts-area-curve recharts-curve" strokeWidth={1.5} fill="none" fillOpacity={0.6} height={39} stroke="var(--color-rate)" width={251} d="M3,4C6.638,4,10.275,4,13.913,4C17.551,4,21.188,4,24.826,4C28.464,4,32.101,4,35.739,4C39.377,4,43.014,4,46.652,4C50.29,4,53.928,4,57.565,4C61.203,4,64.841,4,68.478,4C72.116,4,75.754,4,79.391,4C83.029,4,86.667,4,90.304,4C93.942,4,97.58,4,101.217,4C104.855,4,108.493,18.638,112.13,18.638C115.768,18.638,119.406,4,123.043,4C126.681,4,130.319,18.807,133.957,18.807C137.594,18.807,141.232,4,144.87,4C148.507,4,152.145,4,155.783,4C159.42,4,163.058,4,166.696,4C170.333,4,173.971,4,177.609,4C181.246,4,184.884,18.807,188.522,18.807C192.159,18.807,195.797,4,199.435,4C203.072,4,206.71,4,210.348,4C213.986,4,217.623,15.752,221.261,19.164C224.899,22.576,228.536,24.47,232.174,24.47C235.812,24.47,239.449,18.638,243.087,18.638C246.725,18.638,250.362,29.046,254,39.455"></path>
                                   </g>
                                 </g>
                               </g>
                             </g>
                           </g>
-                          <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                          <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                          <g className="recharts-zIndex-layer_400" tabIndex="-1">
+                          <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                          <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                          <g className="recharts-zIndex-layer_400" tabIndex={-1}>
                             <g className="recharts-layer recharts-reference-line">
-                              <line className="recharts-reference-line-line" y="0.9292893218813452" stroke="var(--muted-foreground)" strokeOpacity="0.6" strokeDasharray="3 3" fill="none" fillOpacity="1" strokeWidth="1" x1="3" y1="10.865743204640431" x2="254" y2="10.865743204640431"></line>
+                              <line className="recharts-reference-line-line" y={0.9292893218813452} stroke="var(--muted-foreground)" strokeOpacity={0.6} strokeDasharray="3 3" fill="none" fillOpacity={1} strokeWidth={1} x1={3} y1={10.865743204640431} x2={254} y2={10.865743204640431}></line>
                             </g>
                           </g>
-                          <g className="recharts-zIndex-layer_500" tabIndex="-1"></g>
-                          <g className="recharts-zIndex-layer_600" tabIndex="-1">
+                          <g className="recharts-zIndex-layer_500" tabIndex={-1}></g>
+                          <g className="recharts-zIndex-layer_600" tabIndex={-1}>
                             <g className="recharts-area-dots recharts-layer">
-                              <circle cx="112.13043478260869" cy="18.63781369543002" r="2.5" fill="var(--warning)" stroke="var(--card)" strokeWidth="1"></circle>
-                              <circle cx="133.95652173913044" cy="18.8070425971808" r="2.5" fill="var(--warning)" stroke="var(--card)" strokeWidth="1"></circle>
-                              <circle cx="188.52173913043478" cy="18.8070425971808" r="2.5" fill="var(--warning)" stroke="var(--card)" strokeWidth="1"></circle>
-                              <circle cx="221.26086956521738" cy="19.163889994528986" r="2.5" fill="var(--warning)" stroke="var(--card)" strokeWidth="1"></circle>
-                              <circle cx="232.17391304347825" cy="24.469691362177628" r="2.5" fill="var(--warning)" stroke="var(--card)" strokeWidth="1"></circle>
-                              <circle cx="243.08695652173913" cy="18.63781369543002" r="2.5" fill="var(--warning)" stroke="var(--card)" strokeWidth="1"></circle>
-                              <circle cx="254" cy="39.45454545454545" r="2.5" fill="var(--warning)" stroke="var(--card)" strokeWidth="1"></circle>
+                              <circle cx={112.13043478260869} cy={18.63781369543002} r={2.5} fill="var(--warning)" stroke="var(--card)" strokeWidth={1}></circle>
+                              <circle cx={133.95652173913044} cy={18.8070425971808} r={2.5} fill="var(--warning)" stroke="var(--card)" strokeWidth={1}></circle>
+                              <circle cx={188.52173913043478} cy={18.8070425971808} r={2.5} fill="var(--warning)" stroke="var(--card)" strokeWidth={1}></circle>
+                              <circle cx={221.26086956521738} cy={19.163889994528986} r={2.5} fill="var(--warning)" stroke="var(--card)" strokeWidth={1}></circle>
+                              <circle cx={232.17391304347825} cy={24.469691362177628} r={2.5} fill="var(--warning)" stroke="var(--card)" strokeWidth={1}></circle>
+                              <circle cx={243.08695652173913} cy={18.63781369543002} r={2.5} fill="var(--warning)" stroke="var(--card)" strokeWidth={1}></circle>
+                              <circle cx={254} cy={39.45454545454545} r={2.5} fill="var(--warning)" stroke="var(--card)" strokeWidth={1}></circle>
                             </g>
                           </g>
-                          <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                          <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                          <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                          <g className="recharts-zIndex-layer_2000" tabIndex="-1">
-                            <text className="recharts-label recharts-text" offset="5" x="8" y="15.865743204640431" textAnchor="start" fill="var(--muted-foreground)">
-                              <tspan x="8" dy="0.71em">
+                          <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                          <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                          <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                          <g className="recharts-zIndex-layer_2000" tabIndex={-1}>
+                            <text className="recharts-label recharts-text" offset={5} x={8} y={15.865743204640431} textAnchor="start" fill="var(--muted-foreground)">
+                              <tspan x={8} dy="0.71em">
                                 {"SLO 99.5%"}
                               </tspan>
                             </text>
@@ -218,8 +218,8 @@ export function Pattern() {
           <FramePanel className="flex flex-col gap-3">
             <div className="flex gap-3 items-start min-w-0">
               <IconTile variant="elevated" size="sm" aria-hidden="true">
-                <svg className="lucide lucide-circle-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleXIcon" tabler="IconCircleX" hugeicons="CancelCircleIcon" phosphor="XCircleIcon" remixicon="RiCloseCircleLine" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10"></circle>
+                <svg className="lucide lucide-circle-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleXIcon" tabler="IconCircleX" hugeicons="CancelCircleIcon" phosphor="XCircleIcon" remixicon="RiCloseCircleLine" aria-hidden="true">
+                  <circle cx={12} cy={12} r={10}></circle>
                   <path d="m15 9-6 6"></path>
                   <path d="m9 9 6 6"></path>
                 </svg>
@@ -244,8 +244,8 @@ export function Pattern() {
               </span>
               <span className="[&_svg:not([class*=size-])]:size-3.5 flex font-medium gap-1.5 items-center min-w-0 text-foreground text-sm">
                 <span className="flex shrink-0 text-muted-foreground">
-                  <svg className="lucide lucide-database" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="DatabaseIcon" tabler="IconDatabase" hugeicons="Database02Icon" phosphor="DatabaseIcon" remixicon="RiDatabase2Line" aria-hidden="true">
-                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <svg className="lucide lucide-database" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="DatabaseIcon" tabler="IconDatabase" hugeicons="Database02Icon" phosphor="DatabaseIcon" remixicon="RiDatabase2Line" aria-hidden="true">
+                    <ellipse cx={12} cy={5} rx={9} ry={3}></ellipse>
                     <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
                     <path d="M3 12A9 3 0 0 0 21 12"></path>
                   </svg>
@@ -284,13 +284,13 @@ export function Pattern() {
           <FramePanel className="flex flex-col gap-3">
             <div className="flex gap-3 items-start min-w-0">
               <IconTile variant="elevated" size="sm" aria-hidden="true">
-                <svg className="lucide lucide-calendar-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
+                <svg className="lucide lucide-calendar-clock" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
                   <path d="M16 14v2.2l1.6 1"></path>
                   <path d="M16 2v4"></path>
                   <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path>
                   <path d="M3 10h5"></path>
                   <path d="M8 2v4"></path>
-                  <circle cx="16" cy="16" r="6"></circle>
+                  <circle cx={16} cy={16} r={6}></circle>
                 </svg>
               </IconTile>
               <div className="min-w-0 pt-0.5">
@@ -313,7 +313,7 @@ export function Pattern() {
             <div className="flex gap-2 h-5 items-center min-w-0">
               <span className="[&_svg:not([class*=size-])]:size-3.5 flex font-medium gap-1.5 items-center min-w-0 text-foreground text-sm">
                 <span className="flex shrink-0 text-muted-foreground">
-                  <svg className="lucide lucide-webhook" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="WebhookIcon" tabler="IconWebhook" hugeicons="WebhookIcon" phosphor="WebhooksLogoIcon" remixicon="RiWebhookLine" aria-hidden="true">
+                  <svg className="lucide lucide-webhook" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="WebhookIcon" tabler="IconWebhook" hugeicons="WebhookIcon" phosphor="WebhooksLogoIcon" remixicon="RiWebhookLine" aria-hidden="true">
                     <path d="M18 16.98h-5.99c-1.1 0-1.95.94-2.48 1.9A4 4 0 0 1 2 17c.01-.7.2-1.4.57-2"></path>
                     <path d="m6 17 3.13-5.78c.53-.97.1-2.18-.5-3.1a4 4 0 1 1 6.89-4.06"></path>
                     <path d="m12 6 3.13 5.73C15.66 12.7 16.9 13 18 13a4 4 0 0 1 0 8"></path>
@@ -341,8 +341,8 @@ export function Pattern() {
               <div className="flex font-medium gap-2 items-center justify-between min-w-0 tabular-nums text-muted-foreground text-xs">
                 <span className="flex gap-1 items-center min-w-0">
                   <span className="[&_svg]:size-3.5 flex shrink-0 text-destructive" aria-hidden="true">
-                    <svg className="lucide lucide-circle-x size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CircleXIcon" tabler="IconCircleX" hugeicons="CancelCircleIcon" phosphor="XCircleIcon" remixicon="RiCloseCircleLine" aria-hidden="true">
-                      <circle cx="12" cy="12" r="10"></circle>
+                    <svg className="lucide lucide-circle-x size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CircleXIcon" tabler="IconCircleX" hugeicons="CancelCircleIcon" phosphor="XCircleIcon" remixicon="RiCloseCircleLine" aria-hidden="true">
+                      <circle cx={12} cy={12} r={10}></circle>
                       <path d="m15 9-6 6"></path>
                       <path d="m9 9 6 6"></path>
                     </svg>

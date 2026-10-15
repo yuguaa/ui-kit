@@ -75,13 +75,13 @@ export function Pattern() {
             <div className="flex gap-3 items-center">
               <Item className="[&_svg]:size-5 [&_svg]:text-accent-foreground bg-muted border-2 border-background dark:border p-0 shadow-[0_1px_3px_0_rgba(0,0,0,0.14)] size-10.5" variant="default" size="default">
                 <ItemMedia className="size-auto" variant="icon">
-                  <svg className="lucide lucide-life-buoy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LifeBuoyIcon" tabler="IconLifebuoy" hugeicons="LifebuoyIcon" phosphor="LifebuoyIcon" remixicon="RiLifebuoyLine" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
+                  <svg className="lucide lucide-life-buoy" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LifeBuoyIcon" tabler="IconLifebuoy" hugeicons="LifebuoyIcon" phosphor="LifebuoyIcon" remixicon="RiLifebuoyLine" aria-hidden="true">
+                    <circle cx={12} cy={12} r={10}></circle>
                     <path d="m4.93 4.93 4.24 4.24"></path>
                     <path d="m14.83 9.17 4.24-4.24"></path>
                     <path d="m14.83 14.83 4.24 4.24"></path>
                     <path d="m9.17 14.83-4.24 4.24"></path>
-                    <circle cx="12" cy="12" r="4"></circle>
+                    <circle cx={12} cy={12} r={4}></circle>
                   </svg>
                 </ItemMedia>
               </Item>
@@ -95,20 +95,20 @@ export function Pattern() {
               </div>
             </div>
             <div className="flex gap-2 items-center shrink-0">
-              <Button href="#" role="button" tabIndex="0">
-                <svg className="lucide lucide-life-buoy" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LifeBuoyIcon" tabler="IconLifebuoy" hugeicons="LifebuoyIcon" phosphor="LifebuoyIcon" remixicon="RiLifebuoyLine" aria-hidden="true">
-                  <circle cx="12" cy="12" r="10"></circle>
+              <Button href="#" role="button" tabIndex={0}>
+                <svg className="lucide lucide-life-buoy" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LifeBuoyIcon" tabler="IconLifebuoy" hugeicons="LifebuoyIcon" phosphor="LifebuoyIcon" remixicon="RiLifebuoyLine" aria-hidden="true">
+                  <circle cx={12} cy={12} r={10}></circle>
                   <path d="m4.93 4.93 4.24 4.24"></path>
                   <path d="m14.83 9.17 4.24-4.24"></path>
                   <path d="m14.83 14.83 4.24 4.24"></path>
                   <path d="m9.17 14.83-4.24 4.24"></path>
-                  <circle cx="12" cy="12" r="4"></circle>
+                  <circle cx={12} cy={12} r={4}></circle>
                 </svg>
                 {"Support Desk"}
               </Button>
-              <Button href="#" role="button" tabIndex="0">
+              <Button href="#" role="button" tabIndex={0}>
                 {"Read Docs"}
-                <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+                <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
                 </svg>

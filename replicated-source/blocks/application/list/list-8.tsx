@@ -43,7 +43,7 @@ export function Pattern() {
                     {"Schedule and host video meetings"}
                   </p>
                 </div>
-                <Button type="button" tabIndex="0">
+                <Button type="button" tabIndex={0}>
                   {"Connect"}
                 </Button>
               </div>
@@ -67,7 +67,7 @@ export function Pattern() {
                     {"Alerts and slash commands"}
                   </p>
                 </div>
-                <Button type="button" tabIndex="0">
+                <Button type="button" tabIndex={0}>
                   {"Connect"}
                 </Button>
               </div>
@@ -77,8 +77,8 @@ export function Pattern() {
               <div className="flex gap-2 items-center">
                 <svg className="size-7" aria-hidden="true" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 216 216">
                   <defs>
-                    <radialgradient id="snoo-radial-gragient" cx="169.75" cy="92.19" r="50.98" fx="169.75" fy="92.19" gradientTransform="matrix(1 0 0 .87 0 11.64)" gradientUnits="userSpaceOnUse">
-                      <stop offset="0" stopColor="#feffff"></stop>
+                    <radialgradient id="snoo-radial-gragient" cx={169.75} cy={92.19} r={50.98} fx="169.75" fy="92.19" gradientTransform="matrix(1 0 0 .87 0 11.64)" gradientUnits="userSpaceOnUse">
+                      <stop offset={0} stopColor="#feffff"></stop>
                       <stop offset=".4" stopColor="#feffff"></stop>
                       <stop offset=".51" stopColor="#f9fcfc"></stop>
                       <stop offset=".62" stopColor="#edf3f5"></stop>
@@ -91,25 +91,25 @@ export function Pattern() {
                       <stop offset=".88" stopColor="#ede3e9"></stop>
                       <stop offset=".9" stopColor="#ffebef"></stop>
                     </radialgradient>
-                    <radialgradient xlinkHref="#snoo-radial-gragient" id="snoo-radial-gragient-2" cx="47.31" r="50.98" fx="47.31"></radialgradient>
-                    <radialgradient xlinkHref="#snoo-radial-gragient" id="snoo-radial-gragient-3" cx="109.61" cy="85.59" r="153.78" fx="109.61" fy="85.59" gradientTransform="matrix(1 0 0 .7 0 25.56)"></radialgradient>
-                    <radialgradient id="snoo-radial-gragient-4" cx="-6.01" cy="64.68" r="12.85" fx="-6.01" fy="64.68" gradientTransform="matrix(1.07 0 0 1.55 81.08 27.26)" gradientUnits="userSpaceOnUse">
-                      <stop offset="0" stopColor="#f60"></stop>
+                    <radialgradient xlinkHref="#snoo-radial-gragient" id="snoo-radial-gragient-2" cx={47.31} r={50.98} fx="47.31"></radialgradient>
+                    <radialgradient xlinkHref="#snoo-radial-gragient" id="snoo-radial-gragient-3" cx={109.61} cy={85.59} r={153.78} fx="109.61" fy="85.59" gradientTransform="matrix(1 0 0 .7 0 25.56)"></radialgradient>
+                    <radialgradient id="snoo-radial-gragient-4" cx={-6.01} cy={64.68} r={12.85} fx="-6.01" fy="64.68" gradientTransform="matrix(1.07 0 0 1.55 81.08 27.26)" gradientUnits="userSpaceOnUse">
+                      <stop offset={0} stopColor="#f60"></stop>
                       <stop offset=".5" stopColor="#ff4500"></stop>
                       <stop offset=".7" stopColor="#fc4301"></stop>
                       <stop offset=".82" stopColor="#f43f07"></stop>
                       <stop offset=".92" stopColor="#e53812"></stop>
-                      <stop offset="1" stopColor="#d4301f"></stop>
+                      <stop offset={1} stopColor="#d4301f"></stop>
                     </radialgradient>
-                    <radialgradient xlinkHref="#snoo-radial-gragient-4" id="snoo-radial-gragient-5" cx="-73.55" cy="64.68" r="12.85" fx="-73.55" fy="64.68" gradientTransform="matrix(-1.07 0 0 1.55 62.87 27.26)"></radialgradient>
-                    <radialgradient id="snoo-radial-gragient-6" cx="107.93" cy="166.96" r="45.3" fx="107.93" fy="166.96" gradientTransform="matrix(1 0 0 .66 0 57.4)" gradientUnits="userSpaceOnUse">
-                      <stop offset="0" stopColor="#172e35"></stop>
+                    <radialgradient xlinkHref="#snoo-radial-gragient-4" id="snoo-radial-gragient-5" cx={-73.55} cy={64.68} r={12.85} fx="-73.55" fy="64.68" gradientTransform="matrix(-1.07 0 0 1.55 62.87 27.26)"></radialgradient>
+                    <radialgradient id="snoo-radial-gragient-6" cx={107.93} cy={166.96} r={45.3} fx="107.93" fy="166.96" gradientTransform="matrix(1 0 0 .66 0 57.4)" gradientUnits="userSpaceOnUse">
+                      <stop offset={0} stopColor="#172e35"></stop>
                       <stop offset=".29" stopColor="#0e1c21"></stop>
                       <stop offset=".73" stopColor="#030708"></stop>
-                      <stop offset="1"></stop>
+                      <stop offset={1}></stop>
                     </radialgradient>
-                    <radialgradient xlinkHref="#snoo-radial-gragient" id="snoo-radial-gragient-7" cx="147.88" cy="32.94" r="39.77" fx="147.88" fy="32.94" gradientTransform="matrix(1 0 0 .98 0 .54)"></radialgradient>
-                    <radialgradient id="snoo-radial-gragient-8" cx="131.31" cy="73.08" r="32.6" fx="131.31" fy="73.08" gradientUnits="userSpaceOnUse">
+                    <radialgradient xlinkHref="#snoo-radial-gragient" id="snoo-radial-gragient-7" cx={147.88} cy={32.94} r={39.77} fx="147.88" fy="32.94" gradientTransform="matrix(1 0 0 .98 0 .54)"></radialgradient>
+                    <radialgradient id="snoo-radial-gragient-8" cx={131.31} cy={73.08} r={32.6} fx="131.31" fy="73.08" gradientUnits="userSpaceOnUse">
                       <stop offset=".48" stopColor="#7a9299"></stop>
                       <stop offset=".67" stopColor="#172e35"></stop>
                       <stop offset=".75"></stop>
@@ -117,15 +117,15 @@ export function Pattern() {
                     </radialgradient>
                   </defs>
                   <path fill="#ff4500" d="M108 0C48.35 0 0 48.35 0 108c0 29.82 12.09 56.82 31.63 76.37l-20.57 20.57C6.98 209.02 9.87 216 15.64 216H108c59.65 0 108-48.35 108-108S167.65 0 108 0Z"></path>
-                  <circle cx="169.22" cy="106.98" r="25.22" fill="url(#snoo-radial-gragient)"></circle>
-                  <circle cx="46.78" cy="106.98" r="25.22" fill="url(#snoo-radial-gragient-2)"></circle>
-                  <ellipse cx="108.06" cy="128.64" fill="url(#snoo-radial-gragient-3)" rx="72" ry="54"></ellipse>
+                  <circle cx={169.22} cy={106.98} r={25.22} fill="url(#snoo-radial-gragient)"></circle>
+                  <circle cx={46.78} cy={106.98} r={25.22} fill="url(#snoo-radial-gragient-2)"></circle>
+                  <ellipse cx={108.06} cy={128.64} fill="url(#snoo-radial-gragient-3)" rx={72} ry={54}></ellipse>
                   <path fill="url(#snoo-radial-gragient-4)" d="M86.78 123.48c-.42 9.08-6.49 12.38-13.56 12.38s-12.46-4.93-12.04-14.01c.42-9.08 6.49-15.02 13.56-15.02s12.46 7.58 12.04 16.66Z"></path>
                   <path fill="url(#snoo-radial-gragient-5)" d="M129.35 123.48c.42 9.08 6.49 12.38 13.56 12.38s12.46-4.93 12.04-14.01c-.42-9.08-6.49-15.02-13.56-15.02s-12.46 7.58-12.04 16.66Z"></path>
-                  <ellipse cx="79.63" cy="116.37" rx="2.8" ry="3.05"></ellipse>
-                  <ellipse cx="146.21" cy="116.37" rx="2.8" ry="3.05"></ellipse>
+                  <ellipse cx={79.63} cy={116.37} rx={2.8} ry={3.05}></ellipse>
+                  <ellipse cx={146.21} cy={116.37} rx={2.8} ry={3.05}></ellipse>
                   <path fill="url(#snoo-radial-gragient-6)" d="M108.06 142.92c-8.76 0-17.16.43-24.92 1.22-1.33.13-2.17 1.51-1.65 2.74 4.35 10.39 14.61 17.69 26.57 17.69s22.23-7.3 26.57-17.69c.52-1.23-.33-2.61-1.65-2.74-7.77-.79-16.16-1.22-24.92-1.22Z"></path>
-                  <circle cx="147.49" cy="49.43" r="17.87" fill="url(#snoo-radial-gragient-7)"></circle>
+                  <circle cx={147.49} cy={49.43} r={17.87} fill="url(#snoo-radial-gragient-7)"></circle>
                   <path fill="url(#snoo-radial-gragient-8)" d="M107.8 76.92c-2.14 0-3.87-.89-3.87-2.27 0-16.01 13.03-29.04 29.04-29.04 2.14 0 3.87 1.73 3.87 3.87s-1.73 3.87-3.87 3.87c-11.74 0-21.29 9.55-21.29 21.29 0 1.38-1.73 2.27-3.87 2.27Z"></path>
                   <path fill="#842123" d="M62.82 122.65c.39-8.56 6.08-14.16 12.69-14.16 6.26 0 11.1 6.39 11.28 14.33.17-8.88-5.13-15.99-12.05-15.99s-13.14 6.05-13.56 15.2c-.42 9.15 4.97 13.83 12.04 13.83h.52c-6.44-.16-11.3-4.79-10.91-13.2Zm90.48 0c-.39-8.56-6.08-14.16-12.69-14.16-6.26 0-11.1 6.39-11.28 14.33-.17-8.88 5.13-15.99 12.05-15.99 7.07 0 13.14 6.05 13.56 15.2.42 9.15-4.97 13.83-12.04 13.83h-.52c6.44-.16 11.3-4.79 10.91-13.2Z"></path>
                 </svg>
@@ -137,7 +137,7 @@ export function Pattern() {
                     {"Publish posts and track engagement"}
                   </p>
                 </div>
-                <Button type="button" tabIndex="0">
+                <Button type="button" tabIndex={0}>
                   {"Connect"}
                 </Button>
               </div>
@@ -147,16 +147,16 @@ export function Pattern() {
               <div className="flex gap-2 items-center">
                 <svg className="size-7" aria-hidden="true" viewBox="0 0 109 113" fill="none">
                   <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint0_linear)"></path>
-                  <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity="0.2"></path>
+                  <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity={0.2}></path>
                   <path d="M45.317 2.07103C48.1765 -1.53037 53.9745 0.442937 54.0434 5.041L54.4849 72.2922H9.83113C1.64038 72.2922 -2.92775 62.8321 2.1655 56.4175L45.317 2.07103Z" fill="#3ECF8E"></path>
                   <defs>
-                    <lineargradient id="supabase-paint0_linear" x1="53.9738" y1="54.974" x2="94.1635" y2="71.8295" gradientUnits="userSpaceOnUse">
+                    <lineargradient id="supabase-paint0_linear" x1={53.9738} y1={54.974} x2={94.1635} y2={71.8295} gradientUnits="userSpaceOnUse">
                       <stop stopColor="#249361"></stop>
-                      <stop offset="1" stopColor="#3ECF8E"></stop>
+                      <stop offset={1} stopColor="#3ECF8E"></stop>
                     </lineargradient>
-                    <lineargradient id="supabase-paint1_linear" x1="36.1558" y1="30.578" x2="54.4844" y2="65.0806" gradientUnits="userSpaceOnUse">
+                    <lineargradient id="supabase-paint1_linear" x1={36.1558} y1={30.578} x2={54.4844} y2={65.0806} gradientUnits="userSpaceOnUse">
                       <stop></stop>
-                      <stop offset="1" stopOpacity="0"></stop>
+                      <stop offset={1} stopOpacity={0}></stop>
                     </lineargradient>
                   </defs>
                 </svg>
@@ -168,7 +168,7 @@ export function Pattern() {
                     {"Manage backend database and auth"}
                   </p>
                 </div>
-                <Button type="button" tabIndex="0">
+                <Button type="button" tabIndex={0}>
                   {"Connect"}
                 </Button>
               </div>
@@ -178,14 +178,14 @@ export function Pattern() {
               <div className="flex gap-2 items-center">
                 <span className="dark:hidden" aria-hidden="true">
                   <svg className="size-7" aria-hidden="true" fill="none" viewBox="0 0 128 128">
-                    <circle cx="64" cy="64" r="20" fill="#6C47FF"></circle>
+                    <circle cx={64} cy={64} r={20} fill="#6C47FF"></circle>
                     <path fill="#BAB1FF" d="M99.572 10.788c1.999 1.34 2.17 4.156.468 5.858L85.424 31.262c-1.32 1.32-3.37 1.53-5.033.678A35.846 35.846 0 0 0 64 28c-19.882 0-36 16.118-36 36a35.846 35.846 0 0 0 3.94 16.391c.851 1.663.643 3.712-.678 5.033L16.646 100.04c-1.702 1.702-4.519 1.531-5.858-.468C3.974 89.399 0 77.163 0 64 0 28.654 28.654 0 64 0c13.163 0 25.399 3.974 35.572 10.788Z"></path>
                     <path fill="#6C47FF" d="M100.04 111.354c1.702 1.702 1.531 4.519-.468 5.858C89.399 124.026 77.164 128 64 128c-13.164 0-25.399-3.974-35.572-10.788-2-1.339-2.17-4.156-.468-5.858l14.615-14.616c1.322-1.32 3.37-1.53 5.033-.678A35.847 35.847 0 0 0 64 100a35.846 35.846 0 0 0 16.392-3.94c1.662-.852 3.712-.643 5.032.678l14.616 14.616Z"></path>
                   </svg>
                 </span>
                 <span className="dark:block hidden" aria-hidden="true">
                   <svg className="size-7" aria-hidden="true" fill="none" viewBox="0 0 128 128">
-                    <circle cx="64" cy="64" r="20" fill="#fff"></circle>
+                    <circle cx={64} cy={64} r={20} fill="#fff"></circle>
                     <path fill="#fff" fillOpacity=".4" d="M99.572 10.788c1.999 1.34 2.17 4.156.468 5.858L85.424 31.262c-1.32 1.32-3.37 1.53-5.033.678A35.846 35.846 0 0 0 64 28c-19.882 0-36 16.118-36 36a35.846 35.846 0 0 0 3.94 16.391c.851 1.663.643 3.712-.678 5.033L16.646 100.04c-1.702 1.702-4.519 1.531-5.858-.468C3.974 89.399 0 77.163 0 64 0 28.654 28.654 0 64 0c13.163 0 25.399 3.974 35.572 10.788Z"></path>
                     <path fill="#fff" d="M100.04 111.354c1.702 1.702 1.531 4.519-.468 5.858C89.399 124.026 77.164 128 64 128c-13.164 0-25.399-3.974-35.572-10.788-2-1.339-2.17-4.156-.468-5.858l14.615-14.616c1.322-1.32 3.37-1.53 5.033-.678A35.847 35.847 0 0 0 64 100a35.846 35.846 0 0 0 16.392-3.94c1.662-.852 3.712-.643 5.032.678l14.616 14.616Z"></path>
                   </svg>
@@ -198,7 +198,7 @@ export function Pattern() {
                     {"Enable user authentication and SSO"}
                   </p>
                 </div>
-                <Button type="button" tabIndex="0">
+                <Button type="button" tabIndex={0}>
                   {"Connect"}
                 </Button>
               </div>
@@ -206,8 +206,8 @@ export function Pattern() {
           </ul>
         </FramePanel>
         <FramePanel className="p-3.5!">
-          <Button className="w-full" type="button" tabIndex="0">
-            <svg className="lucide lucide-external-link opacity-50" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
+          <Button className="w-full" type="button" tabIndex={0}>
+            <svg className="lucide lucide-external-link opacity-50" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ExternalLinkIcon" tabler="IconExternalLink" hugeicons="LinkSquare01Icon" phosphor="ArrowSquareOutIcon" remixicon="RiExternalLinkLine" aria-hidden="true">
               <path d="M15 3h6v6"></path>
               <path d="M10 14 21 3"></path>
               <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>

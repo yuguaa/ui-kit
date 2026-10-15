@@ -36,7 +36,7 @@ export function Pattern() {
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
-                <svg className="cn-rtl-flip lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
+                <svg className="cn-rtl-flip lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                   <path d="m9 18 6-6-6-6"></path>
                 </svg>
               </BreadcrumbSeparator>
@@ -79,7 +79,7 @@ export function Pattern() {
         </header>
         <Card className="overflow-hidden p-0 shadow-none w-full" size="default">
           <CardContent className="overflow-hidden p-0">
-            <img className="aspect-[16/10] object-cover w-full" alt="Abstract blue fluid render" width="1600" height="1000" decoding="async" src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=1600&h=1000&q=82" />
+            <img className="aspect-[16/10] object-cover w-full" alt="Abstract blue fluid render" width={1600} height={1000} decoding="async" src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=1600&h=1000&q=82" />
           </CardContent>
         </Card>
         <div className="flex flex-col gap-6 min-w-0 w-full">
@@ -166,7 +166,7 @@ export function Pattern() {
               </p>
               <a className="focus-visible:outline-none focus-visible:underline font-medium gap-1 group/more hover:underline inline-flex items-center mt-0.5 text-primary text-sm transition-colors underline-offset-4 w-fit" href="#" aria-label="More articles by Mira Stone">
                 {"More from Mira Stone"}
-                <svg className="duration-200 ease-out lucide lucide-arrow-right motion-safe:group-hover/more:translate-x-0.5 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+                <svg className="duration-200 ease-out lucide lucide-arrow-right motion-safe:group-hover/more:translate-x-0.5 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="m12 5 7 7-7 7"></path>
                 </svg>
@@ -198,7 +198,7 @@ export function Pattern() {
                     </span>
                     <span className="font-medium gap-1 inline-flex items-center mt-1 text-primary text-sm">
                       {"Read article"}
-                      <svg className="duration-200 ease-out lucide lucide-arrow-up-right motion-safe:group-hover/card:-translate-y-0.5 motion-safe:group-hover/card:translate-x-0.5 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
+                      <svg className="duration-200 ease-out lucide lucide-arrow-up-right motion-safe:group-hover/card:-translate-y-0.5 motion-safe:group-hover/card:translate-x-0.5 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                         <path d="M7 7h10v10"></path>
                         <path d="M7 17 17 7"></path>
                       </svg>
@@ -226,7 +226,7 @@ export function Pattern() {
                     </span>
                     <span className="font-medium gap-1 inline-flex items-center mt-1 text-primary text-sm">
                       {"Read article"}
-                      <svg className="duration-200 ease-out lucide lucide-arrow-up-right motion-safe:group-hover/card:-translate-y-0.5 motion-safe:group-hover/card:translate-x-0.5 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
+                      <svg className="duration-200 ease-out lucide lucide-arrow-up-right motion-safe:group-hover/card:-translate-y-0.5 motion-safe:group-hover/card:translate-x-0.5 size-4 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpRightIcon" tabler="IconArrowUpRight" hugeicons="ArrowUpRight01Icon" phosphor="ArrowUpRightIcon" remixicon="RiArrowRightUpLine" aria-hidden="true">
                         <path d="M7 7h10v10"></path>
                         <path d="M7 17 17 7"></path>
                       </svg>

@@ -150,7 +150,6 @@ async function TemplatePage({ slug, root }: { slug: string; root: string }) {
           <SnapshotList
             items={pages.map((page) => ({
               id: page,
-              href: `/replicated/templates/${slug}/${page}`,
               src: `/api/replicated-template/${slug}/${page}`,
               codeSrc: `/api/replicated-source/template/${slug}/${page}`,
               registryName: `@neui/${slug}`,

@@ -39,14 +39,14 @@ export function Pattern() {
               </p>
             </div>
             <div className="flex flex-wrap gap-2 items-center lg:justify-end lg:w-auto w-full" role="group" aria-label="Roadmap actions">
-              <Button type="button" tabIndex="0">
-                <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" data-icon="inline-start" aria-hidden="true">
+              <Button type="button" tabIndex={0}>
+                <svg className="lucide lucide-funnel" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="FilterIcon" tabler="IconFilter" hugeicons="FilterIcon" phosphor="FunnelIcon" remixicon="RiFilterLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path>
                 </svg>
                 {"Filters"}
               </Button>
-              <Button type="button" tabIndex="0">
-                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
+              <Button type="button" tabIndex={0}>
+                <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" data-icon="inline-start" aria-hidden="true">
                   <path d="M5 12h14"></path>
                   <path d="M12 5v14"></path>
                 </svg>
@@ -57,7 +57,7 @@ export function Pattern() {
         </header>
         <Kanban className="w-full" dragging="false">
           <ScrollArea className="min-w-0 pb-3 w-full" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}} hasOverflowX="" overflowXEnd="">
-            <div className="base-ui-disable-scrollbar focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-lg transition-[color,box-shadow] w-full" role="presentation" data-id="base-ui-_r_0_-viewport" tabIndex="0" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "604px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}} data-has-overflow-x="" data-overflow-x-end="">
+            <div className="base-ui-disable-scrollbar focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-lg transition-[color,box-shadow] w-full" role="presentation" data-id="base-ui-_r_0_-viewport" tabIndex={0} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "604px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "0px"}} data-has-overflow-x="" data-overflow-x-end="">
               <div className="flex min-w-full" role="presentation" style={{minWidth: "fit-content"}} data-has-overflow-x="" data-overflow-x-end="">
                 <KanbanBoard className="flex gap-3 items-start min-w-full p-1">
                   <KanbanColumn className="max-w-[18.5rem] shrink-0 sm:w-[18.5rem] w-[calc(100vw-4rem)]" value="triage" dragging="false">
@@ -77,25 +77,25 @@ export function Pattern() {
                             {"New customer signals"}
                           </p>
                         </div>
-                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex="0" aria-label="Add triage feature">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex={0} aria-label="Add triage feature">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
                         </Button>
-                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Triage column">
-                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                            <circle cx="9" cy="12" r="1"></circle>
-                            <circle cx="9" cy="5" r="1"></circle>
-                            <circle cx="9" cy="19" r="1"></circle>
-                            <circle cx="15" cy="12" r="1"></circle>
-                            <circle cx="15" cy="5" r="1"></circle>
-                            <circle cx="15" cy="19" r="1"></circle>
+                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Triage column">
+                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                            <circle cx={9} cy={12} r={1}></circle>
+                            <circle cx={9} cy={5} r={1}></circle>
+                            <circle cx={9} cy={19} r={1}></circle>
+                            <circle cx={15} cy={12} r={1}></circle>
+                            <circle cx={15} cy={5} r={1}></circle>
+                            <circle cx={15} cy={19} r={1}></circle>
                           </svg>
                         </KanbanColumnHandle>
                       </header>
                       <KanbanColumnContent className="p-0.5">
-                        <KanbanItem value="feature-001" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="feature-001" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <FramePanel className="flex flex-col gap-3 hover:border-foreground/20 hover:shadow-sm min-h-[10.5rem] p-3 transition-[border-color,box-shadow]">
                               <div className="flex gap-2 items-start justify-between min-w-0">
@@ -147,7 +147,7 @@ export function Pattern() {
                                       {"83 votes"}
                                     </span>
                                     <span className="dark:text-emerald-400 flex gap-1 items-center tabular-nums text-emerald-600" aria-label="14 more votes this month">
-                                      <svg className="lucide lucide-arrow-up size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
+                                      <svg className="lucide lucide-arrow-up size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                                         <path d="m5 12 7-7 7 7"></path>
                                         <path d="M12 19V5"></path>
                                       </svg>
@@ -159,7 +159,7 @@ export function Pattern() {
                             </FramePanel>
                           </KanbanItemHandle>
                         </KanbanItem>
-                        <KanbanItem value="feature-002" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="feature-002" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <FramePanel className="flex flex-col gap-3 hover:border-foreground/20 hover:shadow-sm min-h-[10.5rem] p-3 transition-[border-color,box-shadow]">
                               <div className="flex gap-2 items-start justify-between min-w-0">
@@ -211,7 +211,7 @@ export function Pattern() {
                                       {"67 votes"}
                                     </span>
                                     <span className="dark:text-emerald-400 flex gap-1 items-center tabular-nums text-emerald-600" aria-label="10 more votes this month">
-                                      <svg className="lucide lucide-arrow-up size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
+                                      <svg className="lucide lucide-arrow-up size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                                         <path d="m5 12 7-7 7 7"></path>
                                         <path d="M12 19V5"></path>
                                       </svg>
@@ -223,7 +223,7 @@ export function Pattern() {
                             </FramePanel>
                           </KanbanItemHandle>
                         </KanbanItem>
-                        <KanbanItem value="feature-003" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="feature-003" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <FramePanel className="flex flex-col gap-3 hover:border-foreground/20 hover:shadow-sm min-h-[10.5rem] p-3 transition-[border-color,box-shadow]">
                               <div className="flex gap-2 items-start justify-between min-w-0">
@@ -275,7 +275,7 @@ export function Pattern() {
                                       {"52 votes"}
                                     </span>
                                     <span className="dark:text-emerald-400 flex gap-1 items-center tabular-nums text-emerald-600" aria-label="7 more votes this month">
-                                      <svg className="lucide lucide-arrow-up size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
+                                      <svg className="lucide lucide-arrow-up size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                                         <path d="m5 12 7-7 7 7"></path>
                                         <path d="M12 19V5"></path>
                                       </svg>
@@ -307,25 +307,25 @@ export function Pattern() {
                             {"Queued for scope"}
                           </p>
                         </div>
-                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex="0" aria-label="Add planned feature">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex={0} aria-label="Add planned feature">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
                         </Button>
-                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Planned column">
-                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                            <circle cx="9" cy="12" r="1"></circle>
-                            <circle cx="9" cy="5" r="1"></circle>
-                            <circle cx="9" cy="19" r="1"></circle>
-                            <circle cx="15" cy="12" r="1"></circle>
-                            <circle cx="15" cy="5" r="1"></circle>
-                            <circle cx="15" cy="19" r="1"></circle>
+                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Planned column">
+                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                            <circle cx={9} cy={12} r={1}></circle>
+                            <circle cx={9} cy={5} r={1}></circle>
+                            <circle cx={9} cy={19} r={1}></circle>
+                            <circle cx={15} cy={12} r={1}></circle>
+                            <circle cx={15} cy={5} r={1}></circle>
+                            <circle cx={15} cy={19} r={1}></circle>
                           </svg>
                         </KanbanColumnHandle>
                       </header>
                       <KanbanColumnContent className="p-0.5">
-                        <KanbanItem value="feature-101" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="feature-101" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <FramePanel className="flex flex-col gap-3 hover:border-foreground/20 hover:shadow-sm min-h-[10.5rem] p-3 transition-[border-color,box-shadow]">
                               <div className="flex gap-2 items-start justify-between min-w-0">
@@ -377,7 +377,7 @@ export function Pattern() {
                                       {"142 votes"}
                                     </span>
                                     <span className="dark:text-emerald-400 flex gap-1 items-center tabular-nums text-emerald-600" aria-label="18 more votes this month">
-                                      <svg className="lucide lucide-arrow-up size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
+                                      <svg className="lucide lucide-arrow-up size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                                         <path d="m5 12 7-7 7 7"></path>
                                         <path d="M12 19V5"></path>
                                       </svg>
@@ -389,7 +389,7 @@ export function Pattern() {
                             </FramePanel>
                           </KanbanItemHandle>
                         </KanbanItem>
-                        <KanbanItem value="feature-102" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="feature-102" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <FramePanel className="flex flex-col gap-3 hover:border-foreground/20 hover:shadow-sm min-h-[10.5rem] p-3 transition-[border-color,box-shadow]">
                               <div className="flex gap-2 items-start justify-between min-w-0">
@@ -441,7 +441,7 @@ export function Pattern() {
                                       {"98 votes"}
                                     </span>
                                     <span className="flex gap-1 items-center tabular-nums text-red-500" aria-label="6 fewer votes this month">
-                                      <svg className="lucide lucide-arrow-down size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
+                                      <svg className="lucide lucide-arrow-down size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
                                         <path d="M12 5v14"></path>
                                         <path d="m19 12-7 7-7-7"></path>
                                       </svg>
@@ -473,25 +473,25 @@ export function Pattern() {
                             {"Solution design"}
                           </p>
                         </div>
-                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex="0" aria-label="Add shaping feature">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex={0} aria-label="Add shaping feature">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
                         </Button>
-                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Shaping column">
-                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                            <circle cx="9" cy="12" r="1"></circle>
-                            <circle cx="9" cy="5" r="1"></circle>
-                            <circle cx="9" cy="19" r="1"></circle>
-                            <circle cx="15" cy="12" r="1"></circle>
-                            <circle cx="15" cy="5" r="1"></circle>
-                            <circle cx="15" cy="19" r="1"></circle>
+                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Shaping column">
+                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                            <circle cx={9} cy={12} r={1}></circle>
+                            <circle cx={9} cy={5} r={1}></circle>
+                            <circle cx={9} cy={19} r={1}></circle>
+                            <circle cx={15} cy={12} r={1}></circle>
+                            <circle cx={15} cy={5} r={1}></circle>
+                            <circle cx={15} cy={19} r={1}></circle>
                           </svg>
                         </KanbanColumnHandle>
                       </header>
                       <KanbanColumnContent className="p-0.5">
-                        <KanbanItem value="feature-151" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="feature-151" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <FramePanel className="flex flex-col gap-3 hover:border-foreground/20 hover:shadow-sm min-h-[10.5rem] p-3 transition-[border-color,box-shadow]">
                               <div className="flex gap-2 items-start justify-between min-w-0">
@@ -543,7 +543,7 @@ export function Pattern() {
                                       {"156 votes"}
                                     </span>
                                     <span className="dark:text-emerald-400 flex gap-1 items-center tabular-nums text-emerald-600" aria-label="21 more votes this month">
-                                      <svg className="lucide lucide-arrow-up size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
+                                      <svg className="lucide lucide-arrow-up size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                                         <path d="m5 12 7-7 7 7"></path>
                                         <path d="M12 19V5"></path>
                                       </svg>
@@ -555,7 +555,7 @@ export function Pattern() {
                             </FramePanel>
                           </KanbanItemHandle>
                         </KanbanItem>
-                        <KanbanItem value="feature-152" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="feature-152" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <FramePanel className="flex flex-col gap-3 hover:border-foreground/20 hover:shadow-sm min-h-[10.5rem] p-3 transition-[border-color,box-shadow]">
                               <div className="flex gap-2 items-start justify-between min-w-0">
@@ -607,7 +607,7 @@ export function Pattern() {
                                       {"132 votes"}
                                     </span>
                                     <span className="flex gap-1 items-center tabular-nums text-muted-foreground" aria-label="3 fewer votes this month">
-                                      <svg className="lucide lucide-arrow-down size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
+                                      <svg className="lucide lucide-arrow-down size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
                                         <path d="M12 5v14"></path>
                                         <path d="m19 12-7 7-7-7"></path>
                                       </svg>
@@ -619,7 +619,7 @@ export function Pattern() {
                             </FramePanel>
                           </KanbanItemHandle>
                         </KanbanItem>
-                        <KanbanItem value="feature-153" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="feature-153" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <FramePanel className="flex flex-col gap-3 hover:border-foreground/20 hover:shadow-sm min-h-[10.5rem] p-3 transition-[border-color,box-shadow]">
                               <div className="flex gap-2 items-start justify-between min-w-0">
@@ -671,7 +671,7 @@ export function Pattern() {
                                       {"118 votes"}
                                     </span>
                                     <span className="dark:text-emerald-400 flex gap-1 items-center tabular-nums text-emerald-600" aria-label="12 more votes this month">
-                                      <svg className="lucide lucide-arrow-up size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
+                                      <svg className="lucide lucide-arrow-up size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                                         <path d="m5 12 7-7 7 7"></path>
                                         <path d="M12 19V5"></path>
                                       </svg>
@@ -703,25 +703,25 @@ export function Pattern() {
                             {"Actively in progress"}
                           </p>
                         </div>
-                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex="0" aria-label="Add building feature">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex={0} aria-label="Add building feature">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
                         </Button>
-                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Building column">
-                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                            <circle cx="9" cy="12" r="1"></circle>
-                            <circle cx="9" cy="5" r="1"></circle>
-                            <circle cx="9" cy="19" r="1"></circle>
-                            <circle cx="15" cy="12" r="1"></circle>
-                            <circle cx="15" cy="5" r="1"></circle>
-                            <circle cx="15" cy="19" r="1"></circle>
+                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Building column">
+                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                            <circle cx={9} cy={12} r={1}></circle>
+                            <circle cx={9} cy={5} r={1}></circle>
+                            <circle cx={9} cy={19} r={1}></circle>
+                            <circle cx={15} cy={12} r={1}></circle>
+                            <circle cx={15} cy={5} r={1}></circle>
+                            <circle cx={15} cy={19} r={1}></circle>
                           </svg>
                         </KanbanColumnHandle>
                       </header>
                       <KanbanColumnContent className="p-0.5">
-                        <KanbanItem value="feature-201" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="feature-201" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <FramePanel className="flex flex-col gap-3 hover:border-foreground/20 hover:shadow-sm min-h-[10.5rem] p-3 transition-[border-color,box-shadow]">
                               <div className="flex gap-2 items-start justify-between min-w-0">
@@ -773,7 +773,7 @@ export function Pattern() {
                                       {"234 votes"}
                                     </span>
                                     <span className="dark:text-emerald-400 flex gap-1 items-center tabular-nums text-emerald-600" aria-label="24 more votes this month">
-                                      <svg className="lucide lucide-arrow-up size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
+                                      <svg className="lucide lucide-arrow-up size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                                         <path d="m5 12 7-7 7 7"></path>
                                         <path d="M12 19V5"></path>
                                       </svg>
@@ -785,7 +785,7 @@ export function Pattern() {
                             </FramePanel>
                           </KanbanItemHandle>
                         </KanbanItem>
-                        <KanbanItem value="feature-202" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="feature-202" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <FramePanel className="flex flex-col gap-3 hover:border-foreground/20 hover:shadow-sm min-h-[10.5rem] p-3 transition-[border-color,box-shadow]">
                               <div className="flex gap-2 items-start justify-between min-w-0">
@@ -837,7 +837,7 @@ export function Pattern() {
                                       {"176 votes"}
                                     </span>
                                     <span className="flex gap-1 items-center tabular-nums text-red-500" aria-label="11 fewer votes this month">
-                                      <svg className="lucide lucide-arrow-down size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
+                                      <svg className="lucide lucide-arrow-down size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
                                         <path d="M12 5v14"></path>
                                         <path d="m19 12-7 7-7-7"></path>
                                       </svg>
@@ -869,25 +869,25 @@ export function Pattern() {
                             {"Quality review"}
                           </p>
                         </div>
-                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex="0" aria-label="Add testing feature">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex={0} aria-label="Add testing feature">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
                         </Button>
-                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Testing column">
-                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                            <circle cx="9" cy="12" r="1"></circle>
-                            <circle cx="9" cy="5" r="1"></circle>
-                            <circle cx="9" cy="19" r="1"></circle>
-                            <circle cx="15" cy="12" r="1"></circle>
-                            <circle cx="15" cy="5" r="1"></circle>
-                            <circle cx="15" cy="19" r="1"></circle>
+                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Testing column">
+                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                            <circle cx={9} cy={12} r={1}></circle>
+                            <circle cx={9} cy={5} r={1}></circle>
+                            <circle cx={9} cy={19} r={1}></circle>
+                            <circle cx={15} cy={12} r={1}></circle>
+                            <circle cx={15} cy={5} r={1}></circle>
+                            <circle cx={15} cy={19} r={1}></circle>
                           </svg>
                         </KanbanColumnHandle>
                       </header>
                       <KanbanColumnContent className="p-0.5">
-                        <KanbanItem value="feature-301" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="feature-301" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <FramePanel className="flex flex-col gap-3 hover:border-foreground/20 hover:shadow-sm min-h-[10.5rem] p-3 transition-[border-color,box-shadow]">
                               <div className="flex gap-2 items-start justify-between min-w-0">
@@ -939,7 +939,7 @@ export function Pattern() {
                                       {"215 votes"}
                                     </span>
                                     <span className="dark:text-emerald-400 flex gap-1 items-center tabular-nums text-emerald-600" aria-label="9 more votes this month">
-                                      <svg className="lucide lucide-arrow-up size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
+                                      <svg className="lucide lucide-arrow-up size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                                         <path d="m5 12 7-7 7 7"></path>
                                         <path d="M12 19V5"></path>
                                       </svg>
@@ -951,7 +951,7 @@ export function Pattern() {
                             </FramePanel>
                           </KanbanItemHandle>
                         </KanbanItem>
-                        <KanbanItem value="feature-302" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="feature-302" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <FramePanel className="flex flex-col gap-3 hover:border-foreground/20 hover:shadow-sm min-h-[10.5rem] p-3 transition-[border-color,box-shadow]">
                               <div className="flex gap-2 items-start justify-between min-w-0">
@@ -1003,7 +1003,7 @@ export function Pattern() {
                                       {"121 votes"}
                                     </span>
                                     <span className="flex gap-1 items-center tabular-nums text-red-500" aria-label="4 fewer votes this month">
-                                      <svg className="lucide lucide-arrow-down size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
+                                      <svg className="lucide lucide-arrow-down size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
                                         <path d="M12 5v14"></path>
                                         <path d="m19 12-7 7-7-7"></path>
                                       </svg>
@@ -1015,7 +1015,7 @@ export function Pattern() {
                             </FramePanel>
                           </KanbanItemHandle>
                         </KanbanItem>
-                        <KanbanItem value="feature-303" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="feature-303" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <FramePanel className="flex flex-col gap-3 hover:border-foreground/20 hover:shadow-sm min-h-[10.5rem] p-3 transition-[border-color,box-shadow]">
                               <div className="flex gap-2 items-start justify-between min-w-0">
@@ -1067,7 +1067,7 @@ export function Pattern() {
                                       {"167 votes"}
                                     </span>
                                     <span className="dark:text-emerald-400 flex gap-1 items-center tabular-nums text-emerald-600" aria-label="6 more votes this month">
-                                      <svg className="lucide lucide-arrow-up size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
+                                      <svg className="lucide lucide-arrow-up size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                                         <path d="m5 12 7-7 7 7"></path>
                                         <path d="M12 19V5"></path>
                                       </svg>
@@ -1099,25 +1099,25 @@ export function Pattern() {
                             {"Available to users"}
                           </p>
                         </div>
-                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex="0" aria-label="Add shipped feature">
-                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
+                        <Button className="group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto hover:text-foreground opacity-0 pointer-events-none text-muted-foreground transition-opacity" type="button" tabIndex={0} aria-label="Add shipped feature">
+                          <svg className="lucide lucide-plus" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlusIcon" tabler="IconPlus" hugeicons="PlusSignIcon" phosphor="PlusIcon" remixicon="RiAddLine" aria-hidden="true">
                             <path d="M5 12h14"></path>
                             <path d="M12 5v14"></path>
                           </svg>
                         </Button>
-                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex="0" dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Shipped column">
-                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
-                            <circle cx="9" cy="12" r="1"></circle>
-                            <circle cx="9" cy="5" r="1"></circle>
-                            <circle cx="9" cy="19" r="1"></circle>
-                            <circle cx="15" cy="12" r="1"></circle>
-                            <circle cx="15" cy="5" r="1"></circle>
-                            <circle cx="15" cy="19" r="1"></circle>
+                        <KanbanColumnHandle className="[&_svg]:pointer-events-none [&_svg]:shrink-0 active:cursor-grabbing cn-button cn-button-size-icon-sm cn-button-variant-ghost cursor-grab disabled:opacity-50 disabled:pointer-events-none group-focus-within/column:opacity-100 group-focus-within/column:pointer-events-auto group-hover/column:opacity-100 group-hover/column:pointer-events-auto group/button hover:text-foreground inline-flex items-center justify-center outline-none pointer-events-none select-none shrink-0 text-muted-foreground whitespace-nowrap" type="button" tabIndex={0} dragging="false" role="button" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0" aria-label="Move Shipped column">
+                          <svg className="lucide lucide-grip-vertical" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="GripVerticalIcon" tabler="IconGripVertical" hugeicons="DragDropVerticalIcon" phosphor="DotsSixVerticalIcon" remixicon="RiDraggable" aria-hidden="true">
+                            <circle cx={9} cy={12} r={1}></circle>
+                            <circle cx={9} cy={5} r={1}></circle>
+                            <circle cx={9} cy={19} r={1}></circle>
+                            <circle cx={15} cy={12} r={1}></circle>
+                            <circle cx={15} cy={5} r={1}></circle>
+                            <circle cx={15} cy={19} r={1}></circle>
                           </svg>
                         </KanbanColumnHandle>
                       </header>
                       <KanbanColumnContent className="p-0.5">
-                        <KanbanItem value="feature-401" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="feature-401" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <FramePanel className="flex flex-col gap-3 hover:border-foreground/20 hover:shadow-sm min-h-[10.5rem] p-3 transition-[border-color,box-shadow]">
                               <div className="flex gap-2 items-start justify-between min-w-0">
@@ -1169,7 +1169,7 @@ export function Pattern() {
                                       {"456 votes"}
                                     </span>
                                     <span className="dark:text-emerald-400 flex gap-1 items-center tabular-nums text-emerald-600" aria-label="32 more votes this month">
-                                      <svg className="lucide lucide-arrow-up size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
+                                      <svg className="lucide lucide-arrow-up size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpIcon" tabler="IconArrowUp" hugeicons="ArrowUp02Icon" phosphor="ArrowUpIcon" remixicon="RiArrowUpLine" aria-hidden="true">
                                         <path d="m5 12 7-7 7 7"></path>
                                         <path d="M12 19V5"></path>
                                       </svg>
@@ -1181,7 +1181,7 @@ export function Pattern() {
                             </FramePanel>
                           </KanbanItemHandle>
                         </KanbanItem>
-                        <KanbanItem value="feature-402" dragging="false" role="button" tabIndex="0" aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
+                        <KanbanItem value="feature-402" dragging="false" role="button" tabIndex={0} aria-disabled="false" aria-roledescription="sortable" aria-describedby="DndDescribedBy-0">
                           <KanbanItemHandle className="block" dragging="false">
                             <FramePanel className="flex flex-col gap-3 hover:border-foreground/20 hover:shadow-sm min-h-[10.5rem] p-3 transition-[border-color,box-shadow]">
                               <div className="flex gap-2 items-start justify-between min-w-0">
@@ -1233,7 +1233,7 @@ export function Pattern() {
                                       {"189 votes"}
                                     </span>
                                     <span className="flex gap-1 items-center tabular-nums text-muted-foreground" aria-label="8 fewer votes this month">
-                                      <svg className="lucide lucide-arrow-down size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
+                                      <svg className="lucide lucide-arrow-down size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowDownIcon" tabler="IconArrowDown" hugeicons="ArrowDown02Icon" phosphor="ArrowDownIcon" remixicon="RiArrowDownLine" aria-hidden="true">
                                         <path d="M12 5v14"></path>
                                         <path d="m19 12-7 7-7-7"></path>
                                       </svg>

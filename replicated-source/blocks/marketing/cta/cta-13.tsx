@@ -15,56 +15,56 @@ export function Pattern() {
                   <style dangerouslySetInnerHTML={{ __html: "\n@keyframes cta13-guide-pulse {\n  0% { opacity: 0.15; }\n  5% { opacity: 0.6; }\n  30% { opacity: 0.6; }\n  44% { opacity: 0.15; }\n  100% { opacity: 0.15; }\n}\n\n.cta13-guide-pulse {\n  animation-name: cta13-guide-pulse;\n  animation-timing-function: ease-in-out;\n  animation-iteration-count: infinite;\n}\n\n@media (prefers-reduced-motion: reduce) {\n  .cta13-guide-pulse {\n    animation: none;\n  }\n}\n" }} />
                   <svg className="absolute inset-0 overflow-visible size-full" aria-hidden="true" viewBox="0 0 624 600">
                     <defs>
-                      <pattern id="cta13-grid" patternUnits="userSpaceOnUse" width="50" height="50">
-                        <rect width="50" height="50" fill="none" stroke="white"></rect>
+                      <pattern id="cta13-grid" patternUnits="userSpaceOnUse" width={50} height={50}>
+                        <rect width={50} height={50} fill="none" stroke="white"></rect>
                       </pattern>
                       <filter id="cta13-blur" x="-50%" y="-50%" width="200%" height="200%">
                         <fegaussianblur stdDeviation="100"></fegaussianblur>
                       </filter>
-                      <mask id="cta13-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="800" height="800">
-                        <rect width="800" height="800" fill="url(#cta13-grid)" fillOpacity="0.1"></rect>
+                      <mask id="cta13-mask" maskUnits="userSpaceOnUse" x={0} y={0} width={800} height={800}>
+                        <rect width={800} height={800} fill="url(#cta13-grid)" fillOpacity={0.1}></rect>
                       </mask>
-                      <lineargradient id="cta13-fade1" gradientUnits="userSpaceOnUse" x1="94" y1="168" x2="183" y2="468">
-                        <stop stopColor="white" stopOpacity="0"></stop>
-                        <stop offset="0.08" stopColor="white"></stop>
-                        <stop offset="0.92" stopColor="white"></stop>
-                        <stop offset="1" stopColor="white" stopOpacity="0"></stop>
+                      <lineargradient id="cta13-fade1" gradientUnits="userSpaceOnUse" x1={94} y1={168} x2={183} y2={468}>
+                        <stop stopColor="white" stopOpacity={0}></stop>
+                        <stop offset={0.08} stopColor="white"></stop>
+                        <stop offset={0.92} stopColor="white"></stop>
+                        <stop offset={1} stopColor="white" stopOpacity={0}></stop>
                       </lineargradient>
-                      <lineargradient id="cta13-fade2" gradientUnits="userSpaceOnUse" x1="-78" y1="318" x2="-53.53" y2="423.41">
-                        <stop stopColor="white" stopOpacity="0"></stop>
-                        <stop offset="0.08" stopColor="white"></stop>
-                        <stop offset="0.92" stopColor="white"></stop>
-                        <stop offset="1" stopColor="white" stopOpacity="0"></stop>
+                      <lineargradient id="cta13-fade2" gradientUnits="userSpaceOnUse" x1={-78} y1={318} x2={-53.53} y2={423.41}>
+                        <stop stopColor="white" stopOpacity={0}></stop>
+                        <stop offset={0.08} stopColor="white"></stop>
+                        <stop offset={0.92} stopColor="white"></stop>
+                        <stop offset={1} stopColor="white" stopOpacity={0}></stop>
                       </lineargradient>
-                      <lineargradient id="cta13-fade3" gradientUnits="userSpaceOnUse" x1="354" y1="118" x2="417.52" y2="374.62">
-                        <stop stopColor="white" stopOpacity="0"></stop>
-                        <stop offset="0.08" stopColor="white"></stop>
-                        <stop offset="0.92" stopColor="white"></stop>
-                        <stop offset="1" stopColor="white" stopOpacity="0"></stop>
+                      <lineargradient id="cta13-fade3" gradientUnits="userSpaceOnUse" x1={354} y1={118} x2={417.52} y2={374.62}>
+                        <stop stopColor="white" stopOpacity={0}></stop>
+                        <stop offset={0.08} stopColor="white"></stop>
+                        <stop offset={0.92} stopColor="white"></stop>
+                        <stop offset={1} stopColor="white" stopOpacity={0}></stop>
                       </lineargradient>
                     </defs>
                     <g transform="translate(311.82 343)">
                       <g transform="matrix(0.866025,-0.5,0.866025,0.5,0,0)">
                         <g transform="translate(-400 -400)">
                           <g mask="url(#cta13-mask)">
-                            <circle cx="400" cy="400" r="300" fill="white" filter="url(#cta13-blur)"></circle>
+                            <circle cx={400} cy={400} r={300} fill="white" filter="url(#cta13-blur)"></circle>
                           </g>
                         </g>
                       </g>
                     </g>
-                    <line className="cta13-guide-pulse" x1="95.31" y1="168" x2="138.6113" y2="193" stroke="url(#cta13-fade1)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15" style={{animationDuration: "8.5s", animationDelay: "2.1s"}}></line>
-                    <line className="cta13-guide-pulse" x1="138.61" y1="293" x2="181.9113" y2="318" stroke="url(#cta13-fade1)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15" style={{animationDuration: "8.5s", animationDelay: "3.15s"}}></line>
-                    <line className="cta13-guide-pulse" x1="138.61" y1="393" x2="181.9113" y2="418" stroke="url(#cta13-fade1)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15" style={{animationDuration: "8.5s", animationDelay: "0s"}}></line>
-                    <line className="cta13-guide-pulse" x1="95.31" y1="218" x2="138.6113" y2="193" stroke="url(#cta13-fade1)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15" style={{animationDuration: "8.5s", animationDelay: "4.2s"}}></line>
-                    <line className="cta13-guide-pulse" x1="138.61" y1="343" x2="181.9113" y2="318" stroke="url(#cta13-fade1)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15" style={{animationDuration: "8.5s", animationDelay: "1.05s"}}></line>
-                    <line className="cta13-guide-pulse" x1="571.63" y1="243" x2="614.9313" y2="268" stroke="url(#cta13-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15" style={{animationDuration: "10s", animationDelay: "2.1s"}}></line>
-                    <line className="cta13-guide-pulse" x1="311.82" y1="293" x2="355.1213" y2="318" stroke="url(#cta13-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15" style={{animationDuration: "10s", animationDelay: "5.46s"}}></line>
-                    <line className="cta13-guide-pulse" x1="-77.89" y1="318" x2="-34.5887" y2="343" stroke="url(#cta13-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15" style={{animationDuration: "10s", animationDelay: "2.94s"}}></line>
-                    <line className="cta13-guide-pulse" x1="355.12" y1="318" x2="485.0239" y2="243" stroke="url(#cta13-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15" style={{animationDuration: "10s", animationDelay: "3.78s"}}></line>
-                    <line className="cta13-guide-pulse" x1="181.92" y1="318" x2="225.22129999999999" y2="293" stroke="url(#cta13-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15" style={{animationDuration: "10s", animationDelay: "4.62s"}}></line>
-                    <line className="cta13-guide-pulse" x1="-34.59" y1="343" x2="8.711299999999994" y2="318" stroke="url(#cta13-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15" style={{animationDuration: "10s", animationDelay: "6.3s"}}></line>
-                    <line className="cta13-guide-pulse" x1="355.12" y1="118" x2="398.4213" y2="143" stroke="url(#cta13-fade3)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15" style={{animationDuration: "7.5s", animationDelay: "8.2s"}}></line>
-                    <line className="cta13-guide-pulse" x1="398.42" y1="293" x2="441.72130000000004" y2="318" stroke="url(#cta13-fade3)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity="0.15" style={{animationDuration: "7.5s", animationDelay: "4s"}}></line>
+                    <line className="cta13-guide-pulse" x1={95.31} y1={168} x2={138.6113} y2={193} stroke="url(#cta13-fade1)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15} style={{animationDuration: "8.5s", animationDelay: "2.1s"}}></line>
+                    <line className="cta13-guide-pulse" x1={138.61} y1={293} x2={181.9113} y2={318} stroke="url(#cta13-fade1)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15} style={{animationDuration: "8.5s", animationDelay: "3.15s"}}></line>
+                    <line className="cta13-guide-pulse" x1={138.61} y1={393} x2={181.9113} y2={418} stroke="url(#cta13-fade1)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15} style={{animationDuration: "8.5s", animationDelay: "0s"}}></line>
+                    <line className="cta13-guide-pulse" x1={95.31} y1={218} x2={138.6113} y2={193} stroke="url(#cta13-fade1)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15} style={{animationDuration: "8.5s", animationDelay: "4.2s"}}></line>
+                    <line className="cta13-guide-pulse" x1={138.61} y1={343} x2={181.9113} y2={318} stroke="url(#cta13-fade1)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15} style={{animationDuration: "8.5s", animationDelay: "1.05s"}}></line>
+                    <line className="cta13-guide-pulse" x1={571.63} y1={243} x2={614.9313} y2={268} stroke="url(#cta13-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15} style={{animationDuration: "10s", animationDelay: "2.1s"}}></line>
+                    <line className="cta13-guide-pulse" x1={311.82} y1={293} x2={355.1213} y2={318} stroke="url(#cta13-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15} style={{animationDuration: "10s", animationDelay: "5.46s"}}></line>
+                    <line className="cta13-guide-pulse" x1={-77.89} y1={318} x2={-34.5887} y2={343} stroke="url(#cta13-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15} style={{animationDuration: "10s", animationDelay: "2.94s"}}></line>
+                    <line className="cta13-guide-pulse" x1={355.12} y1={318} x2={485.0239} y2={243} stroke="url(#cta13-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15} style={{animationDuration: "10s", animationDelay: "3.78s"}}></line>
+                    <line className="cta13-guide-pulse" x1={181.92} y1={318} x2={225.22129999999999} y2={293} stroke="url(#cta13-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15} style={{animationDuration: "10s", animationDelay: "4.62s"}}></line>
+                    <line className="cta13-guide-pulse" x1={-34.59} y1={343} x2={8.711299999999994} y2={318} stroke="url(#cta13-fade2)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15} style={{animationDuration: "10s", animationDelay: "6.3s"}}></line>
+                    <line className="cta13-guide-pulse" x1={355.12} y1={118} x2={398.4213} y2={143} stroke="url(#cta13-fade3)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15} style={{animationDuration: "7.5s", animationDelay: "8.2s"}}></line>
+                    <line className="cta13-guide-pulse" x1={398.42} y1={293} x2={441.72130000000004} y2={318} stroke="url(#cta13-fade3)" strokeLinecap="round" vector-effect="non-scaling-stroke" opacity={0.15} style={{animationDuration: "7.5s", animationDelay: "4s"}}></line>
                   </svg>
                   <div className="absolute" style={{left: "52px", top: "188px", width: "86.6025px", height: "50px"}}>
                     <div className="absolute left-0" style={{top: "25px", opacity: "1", transform: "none"}}>
@@ -91,16 +91,16 @@ export function Pattern() {
                         <div className="[&_svg]:size-full absolute origin-top-left" aria-hidden="true" style={{left: "22.5166px", top: "0px", width: "24px", height: "24px", transform: "matrix(0.866025, -0.5, 0.866025, 0.5, 0, 0)"}}>
                           <svg viewBox="0 0 109 113" fill="none">
                             <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint0_linear)"></path>
-                            <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity="0.2"></path>
+                            <path d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z" fill="url(#supabase-paint1_linear)" fillOpacity={0.2}></path>
                             <path d="M45.317 2.07103C48.1765 -1.53037 53.9745 0.442937 54.0434 5.041L54.4849 72.2922H9.83113C1.64038 72.2922 -2.92775 62.8321 2.1655 56.4175L45.317 2.07103Z" fill="#3ECF8E"></path>
                             <defs>
-                              <lineargradient id="supabase-paint0_linear" x1="53.9738" y1="54.974" x2="94.1635" y2="71.8295" gradientUnits="userSpaceOnUse">
+                              <lineargradient id="supabase-paint0_linear" x1={53.9738} y1={54.974} x2={94.1635} y2={71.8295} gradientUnits="userSpaceOnUse">
                                 <stop stopColor="#249361"></stop>
-                                <stop offset="1" stopColor="#3ECF8E"></stop>
+                                <stop offset={1} stopColor="#3ECF8E"></stop>
                               </lineargradient>
-                              <lineargradient id="supabase-paint1_linear" x1="36.1558" y1="30.578" x2="54.4844" y2="65.0806" gradientUnits="userSpaceOnUse">
+                              <lineargradient id="supabase-paint1_linear" x1={36.1558} y1={30.578} x2={54.4844} y2={65.0806} gradientUnits="userSpaceOnUse">
                                 <stop></stop>
-                                <stop offset="1" stopOpacity="0"></stop>
+                                <stop offset={1} stopOpacity={0}></stop>
                               </lineargradient>
                             </defs>
                           </svg>
@@ -165,11 +165,11 @@ export function Pattern() {
                             <defs>
                               <lineargradient id="neon-a" x1="100%" x2="12.069%" y1="100%" y2="0%">
                                 <stop offset="0%" stopColor="#62F755"></stop>
-                                <stop offset="100%" stopColor="#8FF986" stopOpacity="0"></stop>
+                                <stop offset="100%" stopColor="#8FF986" stopOpacity={0}></stop>
                               </lineargradient>
                               <lineargradient id="neon-b" x1="100%" x2="40.603%" y1="100%" y2="76.897%">
                                 <stop offset="0%" stopOpacity=".9"></stop>
-                                <stop offset="100%" stopColor="#1A1A1A" stopOpacity="0"></stop>
+                                <stop offset="100%" stopColor="#1A1A1A" stopOpacity={0}></stop>
                               </lineargradient>
                             </defs>
                             <path fill="#00E0D9" d="M0 44.139C0 19.762 19.762 0 44.139 0H211.86C236.238 0 256 19.762 256 44.139v142.649c0 25.216-31.915 36.16-47.388 16.256l-48.392-62.251v75.484c0 21.939-17.784 39.723-39.722 39.723h-76.36C19.763 256 0 236.238 0 211.861V44.14Zm44.139-8.825c-4.879 0-8.825 3.946-8.825 8.818v167.73c0 4.878 3.946 8.831 8.818 8.831h77.688c2.44 0 3.087-1.977 3.087-4.416v-101.22c0-25.222 31.914-36.166 47.395-16.255l48.391 62.243V44.14c0-4.879.455-8.825-4.416-8.825H44.14Z"></path>
@@ -269,8 +269,8 @@ export function Pattern() {
                 {"Connect your development tools through MCP and give AI agents access to the services they need across your workflow."}
               </p>
               <div className="[--secondary-foreground:#fafafa] [--secondary:#262626] flex flex-wrap gap-x-4 gap-y-2 items-center">
-                <Button className="bg-blue-600 hover:bg-blue-500 shadow-xs text-white" href="#" role="button" tabIndex="0">
-                  <svg className="lucide lucide-plug-zap" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlugZapIcon" tabler="IconPlugConnected" hugeicons="LinkCircle02Icon" phosphor="PlugsConnectedIcon" remixicon="RiPlug2Line" aria-hidden="true">
+                <Button className="bg-blue-600 hover:bg-blue-500 shadow-xs text-white" href="#" role="button" tabIndex={0}>
+                  <svg className="lucide lucide-plug-zap" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlugZapIcon" tabler="IconPlugConnected" hugeicons="LinkCircle02Icon" phosphor="PlugsConnectedIcon" remixicon="RiPlug2Line" aria-hidden="true">
                     <path d="M6.3 20.3a2.4 2.4 0 0 0 3.4 0L12 18l-6-6-2.3 2.3a2.4 2.4 0 0 0 0 3.4Z"></path>
                     <path d="m2 22 3-3"></path>
                     <path d="M7.5 13.5 10 11"></path>
@@ -279,10 +279,10 @@ export function Pattern() {
                   </svg>
                   {"Connect MCP"}
                 </Button>
-                <Button href="#" role="button" tabIndex="0">
-                  <svg className="lucide lucide-blocks" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BlocksIcon" tabler="IconComponents" hugeicons="DashboardSquare01Icon" phosphor="SquaresFourIcon" remixicon="RiApps2Line" aria-hidden="true">
+                <Button href="#" role="button" tabIndex={0}>
+                  <svg className="lucide lucide-blocks" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BlocksIcon" tabler="IconComponents" hugeicons="DashboardSquare01Icon" phosphor="SquaresFourIcon" remixicon="RiApps2Line" aria-hidden="true">
                     <path d="M10 22V7a1 1 0 0 0-1-1H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-5a1 1 0 0 0-1-1H2"></path>
-                    <rect x="14" y="2" width="8" height="8" rx="1"></rect>
+                    <rect x={14} y={2} width={8} height={8} rx={1}></rect>
                   </svg>
                   {"Browse Integrations"}
                 </Button>
@@ -337,8 +337,8 @@ export function Pattern() {
                     <span className="[&_svg]:h-full [&_svg]:w-auto inline-flex" aria-hidden="true" style={{height: "17px"}}>
                       <svg fill="none" viewBox="0 0 441 128">
                         <path fill="#fff" d="M166.971 40.917c11.605 0 23.824 4.606 31.392 13.519a.14.14 0 0 1-.015.196l-11.393 9.858a.141.141 0 0 1-.198-.013 24.393 24.393 0 0 0-8.422-6.174 24.897 24.897 0 0 0-10.437-2.133c-13.41 0-22.35 9.192-22.35 22.63 0 6.713 2.223 12.345 6.087 16.29a22.093 22.093 0 0 0 7.464 4.805 22.461 22.461 0 0 0 8.799 1.511 26.7 26.7 0 0 0 10.378-1.996 26.24 26.24 0 0 0 8.635-5.752.141.141 0 0 1 .192-.007l11.645 10.047a.14.14 0 0 1 .013.2c-6.497 7.175-17.999 12.866-32.397 12.866-11.139 0-20.793-3.91-27.569-10.565C132.019 99.545 128 90.12 128 78.928c0-22.63 16.169-38.01 38.971-38.01Zm105.326.007c22.067 0 36.337 15.52 36.337 36.95a61.277 61.277 0 0 1-.457 6.659.141.141 0 0 1-.14.123h-54.261a.14.14 0 0 0-.136.171c2.321 10.287 10.27 16.557 21.26 16.557 3.579.075 7.126-.66 10.369-2.151a23.251 23.251 0 0 0 8.236-6.335.14.14 0 0 1 .199-.019l.447.373 11.163 9.719a.14.14 0 0 1 .018.194c-6.316 7.834-16.808 13.599-31.355 13.599-21.772 0-38.196-15.077-38.196-37.983 0-11.238 3.87-20.663 10.319-27.317a35.7 35.7 0 0 1 11.989-7.934 36.2 36.2 0 0 1 14.208-2.606Zm-46.636-28.948a.14.14 0 0 1 .141.14v103.509a.14.14 0 0 1-.141.141h-16.684a.14.14 0 0 1-.141-.141V12.117c0-.078.063-.141.141-.141h16.684Zm135.724 28.943a.14.14 0 0 1 .142.14v18.553c0 .081-.07.146-.151.14-1.944-.147-3.88-.29-5.072-.29-13.058 0-20.725 9.19-20.725 21.253v34.91a.14.14 0 0 1-.141.141h-16.683a.14.14 0 0 1-.141-.141v-73.52a.14.14 0 0 1 .141-.14h16.683a.14.14 0 0 1 .141.14V53.04c0 .057.047.103.104.103a.105.105 0 0 0 .083-.041c5.851-7.815 14.488-12.162 23.613-12.162l2.006-.022Zm26.947-28.943a.14.14 0 0 1 .141.14v63.165c0 .129.157.19.244.095l30.691-33.455a.142.142 0 0 1 .104-.046h20.063c.122 0 .187.145.105.236l-26.752 29.515a.142.142 0 0 0-.016.17l27.119 43.755a.14.14 0 0 1-.119.215h-19.033a.14.14 0 0 1-.12-.067l-19.234-30.912a.14.14 0 0 0-.119-.066h-.18a.144.144 0 0 0-.104.045l-12.612 13.55a.14.14 0 0 0-.037.096v17.213a.14.14 0 0 1-.141.141h-16.685a.14.14 0 0 1-.14-.141V12.117a.14.14 0 0 1 .14-.141h16.685ZM273.184 56.153a19.44 19.44 0 0 0-8.036 1.46 19.154 19.154 0 0 0-6.683 4.624 20.438 20.438 0 0 0-4.538 8.68.14.14 0 0 0 .135.173h37.036a.14.14 0 0 0 .135-.174c-2.156-8.804-8.293-14.763-18.049-14.763Z"></path>
-                        <circle cx="64" cy="64" r="20" fill="#fff"></circle>
-                        <path fill="#fff" fillOpacity="0.4" d="M99.572 10.788c1.999 1.34 2.17 4.156.468 5.858L85.424 31.262c-1.32 1.32-3.37 1.53-5.033.678A35.846 35.846 0 0 0 64 28c-19.882 0-36 16.118-36 36a35.846 35.846 0 0 0 3.94 16.391c.851 1.663.643 3.712-.678 5.033L16.646 100.04c-1.702 1.702-4.519 1.531-5.858-.468C3.974 89.399 0 77.163 0 64 0 28.654 28.654 0 64 0c13.163 0 25.399 3.974 35.572 10.788Z"></path>
+                        <circle cx={64} cy={64} r={20} fill="#fff"></circle>
+                        <path fill="#fff" fillOpacity={0.4} d="M99.572 10.788c1.999 1.34 2.17 4.156.468 5.858L85.424 31.262c-1.32 1.32-3.37 1.53-5.033.678A35.846 35.846 0 0 0 64 28c-19.882 0-36 16.118-36 36a35.846 35.846 0 0 0 3.94 16.391c.851 1.663.643 3.712-.678 5.033L16.646 100.04c-1.702 1.702-4.519 1.531-5.858-.468C3.974 89.399 0 77.163 0 64 0 28.654 28.654 0 64 0c13.163 0 25.399 3.974 35.572 10.788Z"></path>
                         <path fill="#fff" d="M100.04 111.354c1.702 1.702 1.531 4.519-.468 5.858C89.399 124.026 77.164 128 64 128c-13.164 0-25.399-3.974-35.572-10.788-2-1.339-2.17-4.156-.468-5.858l14.615-14.616c1.321-1.32 3.37-1.53 5.033-.678A35.846 35.846 0 0 0 64 100a35.846 35.846 0 0 0 16.392-3.94c1.662-.852 3.712-.643 5.032.678l14.616 14.616Z"></path>
                       </svg>
                     </span>

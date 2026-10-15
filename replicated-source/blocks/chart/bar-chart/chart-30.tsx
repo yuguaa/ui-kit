@@ -30,7 +30,7 @@ export function Pattern() {
                 {"Transit vs Target"}
               </div>
               <Badge className="[&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm tabular-nums text-success-foreground text-xs transition-shadow">
-                <svg className="lucide lucide-trending-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
+                <svg className="lucide lucide-trending-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TrendingDown" tabler="IconTrendingDown" hugeicons="TradeDownIcon" phosphor="TrendDownIcon" remixicon="RiArrowRightDownLongLine" aria-hidden="true">
                   <path d="M16 17h6v-6"></path>
                   <path d="m22 17-8.5-8.5-5 5L2 7"></path>
                 </svg>
@@ -48,20 +48,20 @@ export function Pattern() {
           </div>
           <div className="flex flex-wrap gap-2 items-center">
             <ToggleGroup data-orientation="horizontal" aria-orientation="horizontal" role="group" variant="outline" size="sm" spacing="0" aria-label="Statistic" style={{"--gap": "0"}}>
-              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex="0" aria-pressed="true" variant="outline" size="sm" spacing="0" aria-label="Median transit days" extracted="1">
+              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" pressed="" aria-disabled="false" tabIndex={0} aria-pressed="true" variant="outline" size="sm" spacing="0" aria-label="Median transit days" extracted="1">
                 <span className="[text-box:trim-both_cap_alphabetic]">
                   {"Median"}
                 </span>
               </ToggleGroupItem>
-              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex="-1" aria-pressed="false" variant="outline" size="sm" spacing="0" aria-label="P90 transit days">
+              <ToggleGroupItem className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-toggle cn-toggle-size-sm cn-toggle-variant-outline disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-[3px] group/toggle hover:bg-muted inline-flex items-center justify-center outline-none whitespace-nowrap" type="button" aria-disabled="false" tabIndex={-1} aria-pressed="false" variant="outline" size="sm" spacing="0" aria-label="P90 transit days">
                 <span className="[text-box:trim-both_cap_alphabetic]">
                   {"P90"}
                 </span>
               </ToggleGroupItem>
             </ToggleGroup>
             <DropdownMenu>
-            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Sort: Most Behind" aria-haspopup="menu" id="base-ui-_r_6_" aria-expanded="false">
-              <svg className="lucide lucide-arrow-up-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpDownIcon" tabler="IconArrowsUpDown" hugeicons="ArrowDataTransferVerticalIcon" phosphor="ArrowsDownUpIcon" remixicon="RiArrowUpDownLine" aria-hidden="true">
+            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Sort: Most Behind" aria-haspopup="menu" id="base-ui-_r_6_" aria-expanded="false">
+              <svg className="lucide lucide-arrow-up-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowUpDownIcon" tabler="IconArrowsUpDown" hugeicons="ArrowDataTransferVerticalIcon" phosphor="ArrowsDownUpIcon" remixicon="RiArrowUpDownLine" aria-hidden="true">
                 <path d="m21 16-4 4-4-4"></path>
                 <path d="M17 20V4"></path>
                 <path d="m3 8 4-4 4 4"></path>
@@ -70,14 +70,14 @@ export function Pattern() {
               <span className="@max-md/transit:sr-only [text-box:trim-both_cap_alphabetic]">
                 {"Most Behind"}
               </span>
-              <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+              <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
               </svg>
             </DropdownMenuTrigger>
             </DropdownMenu>
             <DropdownMenu>
-            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Display options" aria-haspopup="menu" id="base-ui-_r_b_" aria-expanded="false">
-              <svg className="lucide lucide-sliders-horizontal" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="SlidersHorizontalIcon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
+            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Display options" aria-haspopup="menu" id="base-ui-_r_b_" aria-expanded="false">
+              <svg className="lucide lucide-sliders-horizontal" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="SlidersHorizontalIcon" tabler="IconAdjustmentsHorizontal" hugeicons="SlidersHorizontalIcon" phosphor="SlidersHorizontalIcon" remixicon="RiEqualizer2Line" aria-hidden="true">
                 <path d="M10 5H3"></path>
                 <path d="M12 19H3"></path>
                 <path d="M14 3v4"></path>
@@ -91,15 +91,15 @@ export function Pattern() {
               <span className="@max-md/transit:sr-only [text-box:trim-both_cap_alphabetic]">
                 {"Display"}
               </span>
-              <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
+              <svg className="lucide lucide-chevron-down" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true">
                 <path d="m6 9 6 6 6-6"></path>
               </svg>
             </DropdownMenuTrigger>
             </DropdownMenu>
             <ButtonGroup role="group" aria-label="Chart actions">
               <Tooltip>
-              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Refresh data" aria-busy="false" id="base-ui-_r_e_" baseUiTooltipTrigger="">
-                <svg className="lucide lucide-refresh-cw" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="RefreshCwIcon" tabler="IconRefresh" hugeicons="RefreshIcon" phosphor="ArrowsClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
+              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Refresh data" aria-busy="false" id="base-ui-_r_e_" baseUiTooltipTrigger="">
+                <svg className="lucide lucide-refresh-cw" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="RefreshCwIcon" tabler="IconRefresh" hugeicons="RefreshIcon" phosphor="ArrowsClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true">
                   <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path>
                   <path d="M21 3v5h-5"></path>
                   <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path>
@@ -108,8 +108,8 @@ export function Pattern() {
               </TooltipTrigger>
               </Tooltip>
               <Tooltip>
-              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Expand chart" id="base-ui-_r_g_" baseUiTooltipTrigger="">
-                <svg className="lucide lucide-maximize-2 lucide-maximize2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Maximize2Icon" tabler="IconMaximize" hugeicons="Maximize01Icon" phosphor="CornersOutIcon" remixicon="RiFullscreenLine" aria-hidden="true">
+              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Expand chart" id="base-ui-_r_g_" baseUiTooltipTrigger="">
+                <svg className="lucide lucide-maximize-2 lucide-maximize2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Maximize2Icon" tabler="IconMaximize" hugeicons="Maximize01Icon" phosphor="CornersOutIcon" remixicon="RiFullscreenLine" aria-hidden="true">
                   <path d="M15 3h6v6"></path>
                   <path d="m21 3-7 7"></path>
                   <path d="m3 21 7-7"></path>
@@ -118,11 +118,11 @@ export function Pattern() {
               </TooltipTrigger>
               </Tooltip>
               <Tooltip>
-              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="More actions" aria-haspopup="menu" id="base-ui-_r_l_" baseUiTooltipTrigger="" aria-expanded="false">
-                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                  <circle cx="12" cy="12" r="1"></circle>
-                  <circle cx="19" cy="12" r="1"></circle>
-                  <circle cx="5" cy="12" r="1"></circle>
+              <TooltipTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="More actions" aria-haspopup="menu" id="base-ui-_r_l_" baseUiTooltipTrigger="" aria-expanded="false">
+                <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                  <circle cx={12} cy={12} r={1}></circle>
+                  <circle cx={19} cy={12} r={1}></circle>
+                  <circle cx={5} cy={12} r={1}></circle>
                 </svg>
               </TooltipTrigger>
               </Tooltip>
@@ -167,7 +167,7 @@ export function Pattern() {
                   <div className="col-start-2 mb-2 relative row-start-1" aria-hidden="true">
                     <div className="gap-2 grid grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center mx-8 text-muted-foreground">
                       <span className="flex gap-1 h-4 items-center justify-end">
-                        <svg className="lucide lucide-arrow-left size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftIcon" tabler="IconArrowLeft" hugeicons="ArrowLeft02Icon" phosphor="ArrowLeftIcon" remixicon="RiArrowLeftLine" aria-hidden="true">
+                        <svg className="lucide lucide-arrow-left size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowLeftIcon" tabler="IconArrowLeft" hugeicons="ArrowLeft02Icon" phosphor="ArrowLeftIcon" remixicon="RiArrowLeftLine" aria-hidden="true">
                           <path d="m12 19-7-7 7-7"></path>
                           <path d="M19 12H5"></path>
                         </svg>
@@ -184,7 +184,7 @@ export function Pattern() {
                         <span className="[text-box:trim-both_cap_alphabetic]">
                           {"Behind"}
                         </span>
-                        <svg className="lucide lucide-arrow-right size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+                        <svg className="lucide lucide-arrow-right size-4" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                           <path d="M5 12h14"></path>
                           <path d="m12 5 7 7-7 7"></path>
                         </svg>
@@ -194,17 +194,17 @@ export function Pattern() {
                   <div className="col-start-2 pointer-events-none relative row-start-2" aria-hidden="true">
                     <div className="absolute bg-destructive/[0.035] duration-200 ease-[ease] inset-y-0 left-1/2 motion-reduce:transition-none right-0 transition-opacity"></div>
                     <svg className="absolute h-full inset-x-8 inset-y-0 overflow-visible w-[calc(100%-4rem)]">
-                      <line className="stroke-foreground/[0.06]" x1="10%" x2="10%" y1="0" y2="100%" strokeWidth="1" shape-rendering="crispEdges"></line>
-                      <line className="stroke-foreground/[0.06]" x1="30%" x2="30%" y1="0" y2="100%" strokeWidth="1" shape-rendering="crispEdges"></line>
-                      <line className="stroke-foreground/20" x1="50%" x2="50%" y1="0" y2="100%" strokeWidth="1" shape-rendering="crispEdges"></line>
-                      <line className="stroke-foreground/[0.06]" x1="70%" x2="70%" y1="0" y2="100%" strokeWidth="1" shape-rendering="crispEdges"></line>
-                      <line className="stroke-foreground/[0.06]" x1="90%" x2="90%" y1="0" y2="100%" strokeWidth="1" shape-rendering="crispEdges"></line>
+                      <line className="stroke-foreground/[0.06]" x1="10%" x2="10%" y1={0} y2="100%" strokeWidth={1} shape-rendering="crispEdges"></line>
+                      <line className="stroke-foreground/[0.06]" x1="30%" x2="30%" y1={0} y2="100%" strokeWidth={1} shape-rendering="crispEdges"></line>
+                      <line className="stroke-foreground/20" x1="50%" x2="50%" y1={0} y2="100%" strokeWidth={1} shape-rendering="crispEdges"></line>
+                      <line className="stroke-foreground/[0.06]" x1="70%" x2="70%" y1={0} y2="100%" strokeWidth={1} shape-rendering="crispEdges"></line>
+                      <line className="stroke-foreground/[0.06]" x1="90%" x2="90%" y1={0} y2="100%" strokeWidth={1} shape-rendering="crispEdges"></line>
                     </svg>
                   </div>
                   <ul className="col-span-2 col-start-1 flex flex-col min-h-0 relative row-start-2" aria-label="Median transit against target by region; arrow keys move between regions">
                     <li className="border-b border-border/60 border-dashed flex-1 grid grid-cols-[var(--label-w)_minmax(0,1fr)] group/row items-center last:border-b-0 min-h-0 relative" data-lit="false">
                       <span className="absolute bg-muted/70 dark:bg-muted/40 duration-150 ease-[ease] group-data-[lit=true]/row:opacity-100 inset-0 motion-reduce:transition-none opacity-0 ring-1 ring-border/80 ring-inset rounded-full transition-opacity" aria-hidden="true"></span>
-                      <button className="[-webkit-tap-highlight-color:transparent] absolute focus-visible:outline-2 inset-0 outline-ring/50 rounded-full" type="button" tabIndex="0" aria-label="Africa: Road Freight 6.9 days, 2.4 days behind target; Rail Freight 10.4 days, 3.4 days behind target; 1,596 shipments, 77% on time"></button>
+                      <button className="[-webkit-tap-highlight-color:transparent] absolute focus-visible:outline-2 inset-0 outline-ring/50 rounded-full" type="button" tabIndex={0} aria-label="Africa: Road Freight 6.9 days, 2.4 days behind target; Rail Freight 10.4 days, 3.4 days behind target; 1,596 shipments, 77% on time"></button>
                       <span className="duration-150 ease-[ease] flex group-data-[lit=true]/row:text-foreground h-4 items-center min-w-0 pointer-events-none ps-3 relative text-muted-foreground transition-colors">
                         <span className="@md/transit:block [text-box:trim-both_cap_alphabetic] hidden overflow-x-clip text-ellipsis whitespace-nowrap">
                           {"Africa"}
@@ -242,7 +242,7 @@ export function Pattern() {
                     </li>
                     <li className="border-b border-border/60 border-dashed flex-1 grid grid-cols-[var(--label-w)_minmax(0,1fr)] group/row items-center last:border-b-0 min-h-0 relative" data-lit="false">
                       <span className="absolute bg-muted/70 dark:bg-muted/40 duration-150 ease-[ease] group-data-[lit=true]/row:opacity-100 inset-0 motion-reduce:transition-none opacity-0 ring-1 ring-border/80 ring-inset rounded-full transition-opacity" aria-hidden="true"></span>
-                      <button className="[-webkit-tap-highlight-color:transparent] absolute focus-visible:outline-2 inset-0 outline-ring/50 rounded-full" type="button" tabIndex="-1" aria-label="Latin America: Road Freight 5.7 days, 1.2 days behind target; Rail Freight 9.0 days, 2.0 days behind target; 3,004 shipments, 82% on time"></button>
+                      <button className="[-webkit-tap-highlight-color:transparent] absolute focus-visible:outline-2 inset-0 outline-ring/50 rounded-full" type="button" tabIndex={-1} aria-label="Latin America: Road Freight 5.7 days, 1.2 days behind target; Rail Freight 9.0 days, 2.0 days behind target; 3,004 shipments, 82% on time"></button>
                       <span className="duration-150 ease-[ease] flex group-data-[lit=true]/row:text-foreground h-4 items-center min-w-0 pointer-events-none ps-3 relative text-muted-foreground transition-colors">
                         <span className="@md/transit:block [text-box:trim-both_cap_alphabetic] hidden overflow-x-clip text-ellipsis whitespace-nowrap">
                           {"Latin America"}
@@ -285,7 +285,7 @@ export function Pattern() {
                     </li>
                     <li className="border-b border-border/60 border-dashed flex-1 grid grid-cols-[var(--label-w)_minmax(0,1fr)] group/row items-center last:border-b-0 min-h-0 relative" data-lit="false">
                       <span className="absolute bg-muted/70 dark:bg-muted/40 duration-150 ease-[ease] group-data-[lit=true]/row:opacity-100 inset-0 motion-reduce:transition-none opacity-0 ring-1 ring-border/80 ring-inset rounded-full transition-opacity" aria-hidden="true"></span>
-                      <button className="[-webkit-tap-highlight-color:transparent] absolute focus-visible:outline-2 inset-0 outline-ring/50 rounded-full" type="button" tabIndex="-1" aria-label="Asia Pacific: Road Freight 4.4 days, 0.1 days ahead of target; Rail Freight 7.3 days, 0.3 days behind target; 9,793 shipments, 84% on time"></button>
+                      <button className="[-webkit-tap-highlight-color:transparent] absolute focus-visible:outline-2 inset-0 outline-ring/50 rounded-full" type="button" tabIndex={-1} aria-label="Asia Pacific: Road Freight 4.4 days, 0.1 days ahead of target; Rail Freight 7.3 days, 0.3 days behind target; 9,793 shipments, 84% on time"></button>
                       <span className="duration-150 ease-[ease] flex group-data-[lit=true]/row:text-foreground h-4 items-center min-w-0 pointer-events-none ps-3 relative text-muted-foreground transition-colors">
                         <span className="@md/transit:block [text-box:trim-both_cap_alphabetic] hidden overflow-x-clip text-ellipsis whitespace-nowrap">
                           {"Asia Pacific"}
@@ -323,7 +323,7 @@ export function Pattern() {
                     </li>
                     <li className="border-b border-border/60 border-dashed flex-1 grid grid-cols-[var(--label-w)_minmax(0,1fr)] group/row items-center last:border-b-0 min-h-0 relative" data-lit="false">
                       <span className="absolute bg-muted/70 dark:bg-muted/40 duration-150 ease-[ease] group-data-[lit=true]/row:opacity-100 inset-0 motion-reduce:transition-none opacity-0 ring-1 ring-border/80 ring-inset rounded-full transition-opacity" aria-hidden="true"></span>
-                      <button className="[-webkit-tap-highlight-color:transparent] absolute focus-visible:outline-2 inset-0 outline-ring/50 rounded-full" type="button" tabIndex="-1" aria-label="Middle East: Road Freight 4.1 days, 0.4 days ahead of target; Rail Freight 6.7 days, 0.3 days ahead of target; 2,374 shipments, 89% on time"></button>
+                      <button className="[-webkit-tap-highlight-color:transparent] absolute focus-visible:outline-2 inset-0 outline-ring/50 rounded-full" type="button" tabIndex={-1} aria-label="Middle East: Road Freight 4.1 days, 0.4 days ahead of target; Rail Freight 6.7 days, 0.3 days ahead of target; 2,374 shipments, 89% on time"></button>
                       <span className="duration-150 ease-[ease] flex group-data-[lit=true]/row:text-foreground h-4 items-center min-w-0 pointer-events-none ps-3 relative text-muted-foreground transition-colors">
                         <span className="@md/transit:block [text-box:trim-both_cap_alphabetic] hidden overflow-x-clip text-ellipsis whitespace-nowrap">
                           {"Middle East"}
@@ -366,7 +366,7 @@ export function Pattern() {
                     </li>
                     <li className="border-b border-border/60 border-dashed flex-1 grid grid-cols-[var(--label-w)_minmax(0,1fr)] group/row items-center last:border-b-0 min-h-0 relative" data-lit="false">
                       <span className="absolute bg-muted/70 dark:bg-muted/40 duration-150 ease-[ease] group-data-[lit=true]/row:opacity-100 inset-0 motion-reduce:transition-none opacity-0 ring-1 ring-border/80 ring-inset rounded-full transition-opacity" aria-hidden="true"></span>
-                      <button className="[-webkit-tap-highlight-color:transparent] absolute focus-visible:outline-2 inset-0 outline-ring/50 rounded-full" type="button" tabIndex="-1" aria-label="North America: Road Freight 3.5 days, 1.0 days ahead of target; Rail Freight 5.7 days, 1.3 days ahead of target; 7,085 shipments, 92% on time"></button>
+                      <button className="[-webkit-tap-highlight-color:transparent] absolute focus-visible:outline-2 inset-0 outline-ring/50 rounded-full" type="button" tabIndex={-1} aria-label="North America: Road Freight 3.5 days, 1.0 days ahead of target; Rail Freight 5.7 days, 1.3 days ahead of target; 7,085 shipments, 92% on time"></button>
                       <span className="duration-150 ease-[ease] flex group-data-[lit=true]/row:text-foreground h-4 items-center min-w-0 pointer-events-none ps-3 relative text-muted-foreground transition-colors">
                         <span className="@md/transit:block [text-box:trim-both_cap_alphabetic] hidden overflow-x-clip text-ellipsis whitespace-nowrap">
                           {"North America"}
@@ -406,7 +406,7 @@ export function Pattern() {
                     </li>
                     <li className="border-b border-border/60 border-dashed flex-1 grid grid-cols-[var(--label-w)_minmax(0,1fr)] group/row items-center last:border-b-0 min-h-0 relative" data-lit="false">
                       <span className="absolute bg-muted/70 dark:bg-muted/40 duration-150 ease-[ease] group-data-[lit=true]/row:opacity-100 inset-0 motion-reduce:transition-none opacity-0 ring-1 ring-border/80 ring-inset rounded-full transition-opacity" aria-hidden="true"></span>
-                      <button className="[-webkit-tap-highlight-color:transparent] absolute focus-visible:outline-2 inset-0 outline-ring/50 rounded-full" type="button" tabIndex="-1" aria-label="Europe: Road Freight 2.8 days, 1.7 days ahead of target; Rail Freight 4.7 days, 2.3 days ahead of target; 8,902 shipments, 95% on time"></button>
+                      <button className="[-webkit-tap-highlight-color:transparent] absolute focus-visible:outline-2 inset-0 outline-ring/50 rounded-full" type="button" tabIndex={-1} aria-label="Europe: Road Freight 2.8 days, 1.7 days ahead of target; Rail Freight 4.7 days, 2.3 days ahead of target; 8,902 shipments, 95% on time"></button>
                       <span className="duration-150 ease-[ease] flex group-data-[lit=true]/row:text-foreground h-4 items-center min-w-0 pointer-events-none ps-3 relative text-muted-foreground transition-colors">
                         <span className="@md/transit:block [text-box:trim-both_cap_alphabetic] hidden overflow-x-clip text-ellipsis whitespace-nowrap">
                           {"Europe"}

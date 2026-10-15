@@ -45,7 +45,6 @@ export default async function ReplicatedTemplatesPage() {
     const cover = pickCover(pages)
     items.push({
       id: template.slug,
-      href: `/replicated/templates/${template.slug}`,
       src: `/api/replicated-template/${template.slug}/${cover}`,
       codeSrc: `/api/replicated-source/template/${template.slug}/${cover}`,
       registryName: `@neui/${template.slug}`,

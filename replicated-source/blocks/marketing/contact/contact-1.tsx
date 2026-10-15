@@ -30,9 +30,9 @@ export function Pattern() {
           <FramePanel className="p-0">
             <Item variant="default" size="default">
               <ItemMedia variant="icon" aria-hidden="true">
-                <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine">
+                <svg className="lucide lucide-mail" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine">
                   <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                  <rect x={2} y={4} width={20} height={16} rx={2}></rect>
                 </svg>
               </ItemMedia>
               <ItemContent>
@@ -46,7 +46,7 @@ export function Pattern() {
             </Item>
           </FramePanel>
           <footer className="flex flex-col gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
-            <Button className="font-medium w-full" type="button" tabIndex="0" aria-label="Contact support at hello@neui.io" extracted="1">
+            <Button className="font-medium w-full" type="button" tabIndex={0} aria-label="Contact support at hello@neui.io" extracted="1">
               {"hello@neui.io"}
             </Button>
           </footer>

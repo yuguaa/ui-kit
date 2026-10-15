@@ -61,13 +61,13 @@ export function Pattern() {
         <EmptyHeader>
           <div className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-empty-media cn-empty-media-default flex items-center justify-center shrink-0" data-variant="default">
             <IconTile variant="elevated" size="default">
-              <svg className="lucide lucide-calendar-clock" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
+              <svg className="lucide lucide-calendar-clock" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CalendarClockIcon" tabler="IconCalendarTime" hugeicons="Calendar03Icon" phosphor="CalendarDotsIcon" remixicon="RiCalendarScheduleLine" aria-hidden="true">
                 <path d="M16 14v2.2l1.6 1"></path>
                 <path d="M16 2v4"></path>
                 <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path>
                 <path d="M3 10h5"></path>
                 <path d="M8 2v4"></path>
-                <circle cx="16" cy="16" r="6"></circle>
+                <circle cx={16} cy={16} r={6}></circle>
               </svg>
             </IconTile>
           </div>
@@ -80,7 +80,7 @@ export function Pattern() {
         </EmptyHeader>
         <EmptyContent>
           <Dialog>
-          <DialogTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
+          <DialogTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-default cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} baseUiClickTrigger="" id="base-ui-_r_1_" aria-haspopup="dialog" aria-expanded="true" popupOpen="" aria-controls="_r_0_" extracted="1">
             {"View Plans"}
           </DialogTrigger>
           </Dialog>
@@ -88,7 +88,7 @@ export function Pattern() {
       </Empty>
     </main>
     <Dialog>
-    <DialogContent className="flex flex-col gap-0 h-fit inset-0 m-auto max-h-[min(86svh,44rem)] md:max-h-[min(92svh,54rem)] overflow-hidden p-0 sm:max-w-[min(60rem,calc(100%-2rem))] translate-x-0 translate-y-0" data-open="" tabIndex="-1" baseUiFocusable="" id="_r_0_" role="dialog" aria-labelledby="base-ui-_r_3_" aria-describedby="base-ui-_r_4_" style={{"--nested-dialogs": "0"}}>
+    <DialogContent className="flex flex-col gap-0 h-fit inset-0 m-auto max-h-[min(86svh,44rem)] md:max-h-[min(92svh,54rem)] overflow-hidden p-0 sm:max-w-[min(60rem,calc(100%-2rem))] translate-x-0 translate-y-0" data-open="" tabIndex={-1} baseUiFocusable="" id="_r_0_" role="dialog" aria-labelledby="base-ui-_r_3_" aria-describedby="base-ui-_r_4_" style={{"--nested-dialogs": "0"}}>
       <DialogHeader className="border-b px-5 py-4 shrink-0">
         <DialogTitle className="font-semibold text-lg" id="base-ui-_r_3_">
           {"Pick Your Plan"}
@@ -99,20 +99,20 @@ export function Pattern() {
       </DialogHeader>
       <div className="flex-1 grid min-h-0">
         <ScrollArea className="[&>[data-slot=scroll-area-viewport]]:focus-visible:ring-inset [&>[data-slot=scroll-area-viewport]]:scroll-fade-y min-h-0" role="presentation" style={{position: "relative", "--scroll-area-corner-height": "0px", "--scroll-area-corner-width": "0px"}} hasOverflowY="" overflowYEnd="">
-          <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_5_-viewport" tabIndex="0" style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "768px"}} data-has-overflow-y="" data-overflow-y-end="">
+          <div className="base-ui-disable-scrollbar cn-scroll-area-viewport focus-visible:outline-1 focus-visible:ring-[3px] focus-visible:ring-ring/50 outline-none rounded-[inherit] size-full transition-[color,box-shadow]" role="presentation" data-id="base-ui-_r_5_-viewport" tabIndex={0} style={{overflow: "scroll", "--scroll-area-overflow-x-start": "0px", "--scroll-area-overflow-x-end": "0px", "--scroll-area-overflow-y-start": "0px", "--scroll-area-overflow-y-end": "768px"}} data-has-overflow-y="" data-overflow-y-end="">
             <div className="border-b flex flex-col gap-3 in-data-[has-overflow-y]:pe-3 md:hidden px-2 py-4">
               <p className="font-medium px-3 text-muted-foreground text-xs" id="_r_6_">
                 {"Plans"}
               </p>
               <RadioGroup className="flex flex-col gap-1" role="radiogroup" aria-labelledby="_r_6_">
                 <Item className="cn-label cursor-pointer flex-nowrap group-data-[disabled=true]:pointer-events-none has-focus-visible:border-ring has-focus-visible:ring-3 has-focus-visible:ring-ring/50 hover:bg-muted/60 peer-disabled:cursor-not-allowed relative select-none" variant="default" size="sm" id="base-ui-_r_9_-label">
-                  <RadioGroupItem className="absolute scroll-my-9 sr-only" unchecked="" role="radio" tabIndex="-1" aria-checked="false" id="base-ui-_r_8_" aria-labelledby="base-ui-_r_9_-label"></RadioGroupItem>
-                  <input id="base-ui-_r_9_" tabIndex="-1" aria-hidden="true" type="radio" value="basic" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <RadioGroupItem className="absolute scroll-my-9 sr-only" unchecked="" role="radio" tabIndex={-1} aria-checked="false" id="base-ui-_r_8_" aria-labelledby="base-ui-_r_9_-label"></RadioGroupItem>
+                  <input id="base-ui-_r_9_" tabIndex={-1} aria-hidden="true" type="radio" value="basic" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <ItemMedia className="self-center! translate-y-0!" variant="default">
                     <IconTile variant="elevated" size="default">
-                      <svg className="lucide lucide-user" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UserIcon" tabler="IconUser" hugeicons="UserIcon" phosphor="UserIcon" remixicon="RiUserLine" aria-hidden="true">
+                      <svg className="lucide lucide-user" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UserIcon" tabler="IconUser" hugeicons="UserIcon" phosphor="UserIcon" remixicon="RiUserLine" aria-hidden="true">
                         <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
+                        <circle cx={12} cy={7} r={4}></circle>
                       </svg>
                     </IconTile>
                   </ItemMedia>
@@ -132,19 +132,19 @@ export function Pattern() {
                   </ItemActions>
                 </Item>
                 <Item className="bg-muted cn-label cursor-pointer flex-nowrap group-data-[disabled=true]:pointer-events-none has-focus-visible:border-ring has-focus-visible:ring-3 has-focus-visible:ring-ring/50 peer-disabled:cursor-not-allowed relative select-none" variant="default" size="sm" id="base-ui-_r_c_-label">
-                  <RadioGroupItem className="absolute scroll-my-9 sr-only" checked="" role="radio" tabIndex="0" aria-checked="true" compositeItemActive="" id="base-ui-_r_b_" aria-labelledby="base-ui-_r_c_-label">
+                  <RadioGroupItem className="absolute scroll-my-9 sr-only" checked="" role="radio" tabIndex={0} aria-checked="true" compositeItemActive="" id="base-ui-_r_b_" aria-labelledby="base-ui-_r_c_-label">
                     <span className="cn-radio-group-indicator" data-checked="">
                       <span className="cn-radio-group-indicator-icon"></span>
                     </span>
                   </RadioGroupItem>
-                  <input id="base-ui-_r_c_" tabIndex="-1" aria-hidden="true" type="radio" value="team" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <input id="base-ui-_r_c_" tabIndex={-1} aria-hidden="true" type="radio" value="team" checked style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <ItemMedia className="self-center! translate-y-0!" variant="default">
                     <IconTile variant="elevated" size="default">
-                      <svg className="lucide lucide-users" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
+                      <svg className="lucide lucide-users" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="UsersIcon" tabler="IconUsers" hugeicons="UserMultiple02Icon" phosphor="UsersIcon" remixicon="RiGroupLine" aria-hidden="true">
                         <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
                         <path d="M16 3.128a4 4 0 0 1 0 7.744"></path>
                         <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
-                        <circle cx="9" cy="7" r="4"></circle>
+                        <circle cx={9} cy={7} r={4}></circle>
                       </svg>
                     </IconTile>
                   </ItemMedia>
@@ -164,11 +164,11 @@ export function Pattern() {
                   </ItemActions>
                 </Item>
                 <Item className="cn-label cursor-pointer flex-nowrap group-data-[disabled=true]:pointer-events-none has-focus-visible:border-ring has-focus-visible:ring-3 has-focus-visible:ring-ring/50 hover:bg-muted/60 peer-disabled:cursor-not-allowed relative select-none" variant="default" size="sm" id="base-ui-_r_f_-label">
-                  <RadioGroupItem className="absolute scroll-my-9 sr-only" unchecked="" role="radio" tabIndex="-1" aria-checked="false" id="base-ui-_r_e_" aria-labelledby="base-ui-_r_f_-label"></RadioGroupItem>
-                  <input id="base-ui-_r_f_" tabIndex="-1" aria-hidden="true" type="radio" value="enterprise" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                  <RadioGroupItem className="absolute scroll-my-9 sr-only" unchecked="" role="radio" tabIndex={-1} aria-checked="false" id="base-ui-_r_e_" aria-labelledby="base-ui-_r_f_-label"></RadioGroupItem>
+                  <input id="base-ui-_r_f_" tabIndex={-1} aria-hidden="true" type="radio" value="enterprise" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "1px", height: "1px", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   <ItemMedia className="self-center! translate-y-0!" variant="default">
                     <IconTile variant="elevated" size="default">
-                      <svg className="lucide lucide-building-2 lucide-building2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="Building2Icon" tabler="IconBuilding" hugeicons="Building02Icon" phosphor="BuildingsIcon" remixicon="RiBuildingLine" aria-hidden="true">
+                      <svg className="lucide lucide-building-2 lucide-building2" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="Building2Icon" tabler="IconBuilding" hugeicons="Building02Icon" phosphor="BuildingsIcon" remixicon="RiBuildingLine" aria-hidden="true">
                         <path d="M10 12h4"></path>
                         <path d="M10 8h4"></path>
                         <path d="M14 21v-3a2 2 0 0 0-4 0v3"></path>
@@ -198,10 +198,10 @@ export function Pattern() {
               <div className="flex justify-center py-2">
                 <Tabs data-orientation="horizontal" activationDirection="none">
                   <TabsList data-orientation="horizontal" activationDirection="none" role="tablist" variant="default" aria-label="Billing period">
-                    <TabsTrigger className="scroll-my-12" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex="-1" role="tab" aria-selected="false" id="base-ui-_r_h_">
+                    <TabsTrigger className="scroll-my-12" type="button" data-orientation="horizontal" aria-disabled="false" tabIndex={-1} role="tab" aria-selected="false" id="base-ui-_r_h_">
                       {"Monthly"}
                     </TabsTrigger>
-                    <TabsTrigger className="scroll-my-12" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex="0" role="tab" aria-selected="true" id="base-ui-_r_i_" compositeItemActive="">
+                    <TabsTrigger className="scroll-my-12" type="button" data-active="" data-orientation="horizontal" aria-disabled="false" tabIndex={0} role="tab" aria-selected="true" id="base-ui-_r_i_" compositeItemActive="">
                       {"Yearly"}
                       <Badge className="-mr-1 [&_svg:not([class*=size-])]:size-3 [&_svg]:pointer-events-none [&_svg]:shrink-0 bg-success/10 border border-success/15 dark:bg-success/15 dark:border-success/25 dark:text-success disabled:opacity-50 disabled:pointer-events-none focus-visible:ring-2 focus-visible:ring-offset-1 focus-visible:ring-offset-background focus-visible:ring-ring font-medium gap-1 h-5 min-w-5 outline-none px-1.25 py-0.5 relative style-luma:rounded-4xl style-lyra:rounded-none style-maia:rounded-4xl style-mira:rounded-sm style-nova:rounded-sm style-rhea:rounded-2xl style-sera:rounded-none style-vega:rounded-sm text-success-foreground text-xs transition-shadow">
                         {"2 Months Free"}
@@ -237,7 +237,7 @@ export function Pattern() {
                           </p>
                         </div>
                       </div>
-                      <Button className="max-md:hidden w-full" href="#" aria-label="Start Trial for Basic" role="button" tabIndex="0">
+                      <Button className="max-md:hidden w-full" href="#" aria-label="Start Trial for Basic" role="button" tabIndex={0}>
                         {"Start Trial"}
                       </Button>
                       <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal" aria-hidden="true"></Separator>
@@ -248,7 +248,7 @@ export function Pattern() {
                         <ul className="flex flex-col gap-3" role="list">
                           <li className="flex gap-2 items-start">
                             <span className="flex h-5 items-center shrink-0">
-                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                             </span>
@@ -261,7 +261,7 @@ export function Pattern() {
                           </li>
                           <li className="flex gap-2 items-start">
                             <span className="flex h-5 items-center shrink-0">
-                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                             </span>
@@ -274,7 +274,7 @@ export function Pattern() {
                           </li>
                           <li className="flex gap-2 items-start">
                             <span className="flex h-5 items-center shrink-0">
-                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                             </span>
@@ -287,7 +287,7 @@ export function Pattern() {
                           </li>
                           <li className="flex gap-2 items-start">
                             <span className="flex h-5 items-center shrink-0">
-                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                             </span>
@@ -300,7 +300,7 @@ export function Pattern() {
                           </li>
                           <li className="flex gap-2 items-start">
                             <span className="flex h-5 items-center shrink-0">
-                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                             </span>
@@ -342,7 +342,7 @@ export function Pattern() {
                           </p>
                         </div>
                       </div>
-                      <Button className="max-md:hidden w-full" href="#" aria-label="Start Trial for Team" role="button" tabIndex="0">
+                      <Button className="max-md:hidden w-full" href="#" aria-label="Start Trial for Team" role="button" tabIndex={0}>
                         {"Start Trial"}
                       </Button>
                       <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal" aria-hidden="true"></Separator>
@@ -353,7 +353,7 @@ export function Pattern() {
                         <ul className="flex flex-col gap-3" role="list">
                           <li className="flex gap-2 items-start">
                             <span className="flex h-5 items-center shrink-0">
-                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                             </span>
@@ -366,7 +366,7 @@ export function Pattern() {
                           </li>
                           <li className="flex gap-2 items-start">
                             <span className="flex h-5 items-center shrink-0">
-                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                             </span>
@@ -379,7 +379,7 @@ export function Pattern() {
                           </li>
                           <li className="flex gap-2 items-start">
                             <span className="flex h-5 items-center shrink-0">
-                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                             </span>
@@ -392,7 +392,7 @@ export function Pattern() {
                           </li>
                           <li className="flex gap-2 items-start">
                             <span className="flex h-5 items-center shrink-0">
-                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                             </span>
@@ -402,7 +402,7 @@ export function Pattern() {
                           </li>
                           <li className="flex gap-2 items-start">
                             <span className="flex h-5 items-center shrink-0">
-                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                             </span>
@@ -444,7 +444,7 @@ export function Pattern() {
                           </p>
                         </div>
                       </div>
-                      <Button className="max-md:hidden w-full" href="#" aria-label="Contact Sales for Enterprise" role="button" tabIndex="0">
+                      <Button className="max-md:hidden w-full" href="#" aria-label="Contact Sales for Enterprise" role="button" tabIndex={0}>
                         {"Contact Sales"}
                       </Button>
                       <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal" aria-hidden="true"></Separator>
@@ -455,7 +455,7 @@ export function Pattern() {
                         <ul className="flex flex-col gap-3" role="list">
                           <li className="flex gap-2 items-start">
                             <span className="flex h-5 items-center shrink-0">
-                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                             </span>
@@ -468,7 +468,7 @@ export function Pattern() {
                           </li>
                           <li className="flex gap-2 items-start">
                             <span className="flex h-5 items-center shrink-0">
-                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                             </span>
@@ -481,7 +481,7 @@ export function Pattern() {
                           </li>
                           <li className="flex gap-2 items-start">
                             <span className="flex h-5 items-center shrink-0">
-                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                             </span>
@@ -491,7 +491,7 @@ export function Pattern() {
                           </li>
                           <li className="flex gap-2 items-start">
                             <span className="flex h-5 items-center shrink-0">
-                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                             </span>
@@ -501,7 +501,7 @@ export function Pattern() {
                           </li>
                           <li className="flex gap-2 items-start">
                             <span className="flex h-5 items-center shrink-0">
-                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                             </span>
@@ -647,7 +647,7 @@ export function Pattern() {
                           </TableHead>
                           <TableCell className="max-md:hidden text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
@@ -657,7 +657,7 @@ export function Pattern() {
                           </TableCell>
                           <TableCell className="text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
@@ -667,7 +667,7 @@ export function Pattern() {
                           </TableCell>
                           <TableCell className="max-md:hidden text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
@@ -682,7 +682,7 @@ export function Pattern() {
                           </TableHead>
                           <TableCell className="max-md:hidden text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
@@ -692,7 +692,7 @@ export function Pattern() {
                           </TableCell>
                           <TableCell className="text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
@@ -702,7 +702,7 @@ export function Pattern() {
                           </TableCell>
                           <TableCell className="max-md:hidden text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
@@ -717,7 +717,7 @@ export function Pattern() {
                           </TableHead>
                           <TableCell className="max-md:hidden text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                              <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                                 <path d="M5 12h14"></path>
                               </svg>
                               <span className="sr-only">
@@ -727,7 +727,7 @@ export function Pattern() {
                           </TableCell>
                           <TableCell className="text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
@@ -737,7 +737,7 @@ export function Pattern() {
                           </TableCell>
                           <TableCell className="max-md:hidden text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
@@ -752,7 +752,7 @@ export function Pattern() {
                           </TableHead>
                           <TableCell className="max-md:hidden text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                              <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                                 <path d="M5 12h14"></path>
                               </svg>
                               <span className="sr-only">
@@ -762,7 +762,7 @@ export function Pattern() {
                           </TableCell>
                           <TableCell className="text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
@@ -772,7 +772,7 @@ export function Pattern() {
                           </TableCell>
                           <TableCell className="max-md:hidden text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
@@ -787,7 +787,7 @@ export function Pattern() {
                           </TableHead>
                           <TableCell className="max-md:hidden text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                              <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                                 <path d="M5 12h14"></path>
                               </svg>
                               <span className="sr-only">
@@ -797,7 +797,7 @@ export function Pattern() {
                           </TableCell>
                           <TableCell className="text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
@@ -807,7 +807,7 @@ export function Pattern() {
                           </TableCell>
                           <TableCell className="max-md:hidden text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
@@ -832,7 +832,7 @@ export function Pattern() {
                           </TableHead>
                           <TableCell className="max-md:hidden text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                              <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                                 <path d="M5 12h14"></path>
                               </svg>
                               <span className="sr-only">
@@ -842,7 +842,7 @@ export function Pattern() {
                           </TableCell>
                           <TableCell className="text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                              <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                                 <path d="M5 12h14"></path>
                               </svg>
                               <span className="sr-only">
@@ -852,7 +852,7 @@ export function Pattern() {
                           </TableCell>
                           <TableCell className="max-md:hidden text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
@@ -867,7 +867,7 @@ export function Pattern() {
                           </TableHead>
                           <TableCell className="max-md:hidden text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                              <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                                 <path d="M5 12h14"></path>
                               </svg>
                               <span className="sr-only">
@@ -877,7 +877,7 @@ export function Pattern() {
                           </TableCell>
                           <TableCell className="text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
+                              <svg className="lucide lucide-minus size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MinusIcon" tabler="IconMinus" hugeicons="MinusSignIcon" phosphor="MinusIcon" remixicon="RiSubtractLine" aria-hidden="true">
                                 <path d="M5 12h14"></path>
                               </svg>
                               <span className="sr-only">
@@ -887,7 +887,7 @@ export function Pattern() {
                           </TableCell>
                           <TableCell className="max-md:hidden text-center whitespace-normal">
                             <span className="flex justify-center">
-                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                              <svg className="lucide lucide-check size-4 text-success" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                                 <path d="M20 6 9 17l-5-5"></path>
                               </svg>
                               <span className="sr-only">
@@ -938,12 +938,12 @@ export function Pattern() {
             {"$360 billed yearly"}
           </span>
         </p>
-        <Button className="w-full" href="#" aria-label="Start Trial for Team" role="button" tabIndex="0">
+        <Button className="w-full" href="#" aria-label="Start Trial for Team" role="button" tabIndex={0}>
           {"Start Trial"}
         </Button>
       </DialogFooter>
-      <DialogClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost cn-dialog-close disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0">
-        <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
+      <DialogClose className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-ghost cn-dialog-close disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0}>
+        <svg className="lucide lucide-x" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="XIcon" tabler="IconX" hugeicons="Cancel01Icon" phosphor="XIcon" remixicon="RiCloseLine">
           <path d="M18 6 6 18"></path>
           <path d="m6 6 12 12"></path>
         </svg>

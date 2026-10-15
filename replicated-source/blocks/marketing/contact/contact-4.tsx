@@ -15,7 +15,7 @@ export function Pattern() {
               <fefuncb type="linear" slope="0.08"></fefuncb>
             </fecomponenttransfer>
           </filter>
-          <rect width="100%" height="100%" filter="url(#contact-4-noise)" opacity="0.28"></rect>
+          <rect width="100%" height="100%" filter="url(#contact-4-noise)" opacity={0.28}></rect>
         </svg>
       </div>
       <div className="flex items-center justify-center min-h-svh px-4 py-16 relative sm:px-6 w-full z-10">
@@ -35,15 +35,15 @@ export function Pattern() {
               </div>
               <div className="flex flex-wrap gap-x-5 gap-y-3 items-center">
                 <a className="focus-visible:outline-none focus-visible:text-primary focus-visible:underline font-medium gap-2 group/mail hover:text-primary hover:underline inline-flex items-center text-foreground text-sm transition-colors underline-offset-4" href="#" aria-label="Email the NeUI team at hello@neui.io">
-                  <svg className="lucide lucide-mail shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
+                  <svg className="lucide lucide-mail shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MailIcon" tabler="IconMail" hugeicons="Mail01Icon" phosphor="EnvelopeSimpleIcon" remixicon="RiMailLine" aria-hidden="true">
                     <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path>
-                    <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                    <rect x={2} y={4} width={20} height={16} rx={2}></rect>
                   </svg>
                   {"hello@neui.io"}
                 </a>
-                <Button href="#" role="button" tabIndex="0">
+                <Button href="#" role="button" tabIndex={0}>
                   {"Talk to us"}
-                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+                  <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
@@ -70,8 +70,8 @@ export function Pattern() {
                   </span>
                 </address>
                 <p className="flex gap-2 items-center text-muted-foreground text-sm">
-                  <svg className="lucide lucide-clock shrink-0 size-4 text-muted-foreground/70" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
+                  <svg className="lucide lucide-clock shrink-0 size-4 text-muted-foreground/70" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                    <circle cx={12} cy={12} r={10}></circle>
                     <path d="M12 6v6l4 2"></path>
                   </svg>
                   <span>
@@ -83,7 +83,7 @@ export function Pattern() {
                 </p>
                 <a className="focus-visible:outline-none focus-visible:underline font-medium gap-1.5 group/dir hover:underline inline-flex items-center mt-auto pt-1 text-primary text-sm transition-colors underline-offset-4 w-fit" href="#" aria-label="Get directions to the Austin office">
                   {"Get directions"}
-                  <svg className="duration-200 ease-out lucide lucide-arrow-right motion-safe:group-hover/dir:translate-x-0.5 shrink-0 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+                  <svg className="duration-200 ease-out lucide lucide-arrow-right motion-safe:group-hover/dir:translate-x-0.5 shrink-0 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
@@ -107,8 +107,8 @@ export function Pattern() {
                   </span>
                 </address>
                 <p className="flex gap-2 items-center text-muted-foreground text-sm">
-                  <svg className="lucide lucide-clock shrink-0 size-4 text-muted-foreground/70" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
+                  <svg className="lucide lucide-clock shrink-0 size-4 text-muted-foreground/70" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                    <circle cx={12} cy={12} r={10}></circle>
                     <path d="M12 6v6l4 2"></path>
                   </svg>
                   <span>
@@ -120,7 +120,7 @@ export function Pattern() {
                 </p>
                 <a className="focus-visible:outline-none focus-visible:underline font-medium gap-1.5 group/dir hover:underline inline-flex items-center mt-auto pt-1 text-primary text-sm transition-colors underline-offset-4 w-fit" href="#" aria-label="Get directions to the Berlin office">
                   {"Get directions"}
-                  <svg className="duration-200 ease-out lucide lucide-arrow-right motion-safe:group-hover/dir:translate-x-0.5 shrink-0 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+                  <svg className="duration-200 ease-out lucide lucide-arrow-right motion-safe:group-hover/dir:translate-x-0.5 shrink-0 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>
@@ -144,8 +144,8 @@ export function Pattern() {
                   </span>
                 </address>
                 <p className="flex gap-2 items-center text-muted-foreground text-sm">
-                  <svg className="lucide lucide-clock shrink-0 size-4 text-muted-foreground/70" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
+                  <svg className="lucide lucide-clock shrink-0 size-4 text-muted-foreground/70" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ClockIcon" tabler="IconClock" hugeicons="ClockIcon" phosphor="ClockIcon" remixicon="RiTimeLine" aria-hidden="true">
+                    <circle cx={12} cy={12} r={10}></circle>
                     <path d="M12 6v6l4 2"></path>
                   </svg>
                   <span>
@@ -157,7 +157,7 @@ export function Pattern() {
                 </p>
                 <a className="focus-visible:outline-none focus-visible:underline font-medium gap-1.5 group/dir hover:underline inline-flex items-center mt-auto pt-1 text-primary text-sm transition-colors underline-offset-4 w-fit" href="#" aria-label="Get directions to the Tokyo office">
                   {"Get directions"}
-                  <svg className="duration-200 ease-out lucide lucide-arrow-right motion-safe:group-hover/dir:translate-x-0.5 shrink-0 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
+                  <svg className="duration-200 ease-out lucide lucide-arrow-right motion-safe:group-hover/dir:translate-x-0.5 shrink-0 size-3.5 transition-transform" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" aria-hidden="true">
                     <path d="M5 12h14"></path>
                     <path d="m12 5 7 7-7 7"></path>
                   </svg>

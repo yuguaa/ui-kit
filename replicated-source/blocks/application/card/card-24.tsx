@@ -11,7 +11,7 @@ export function Pattern() {
       <Frame className="w-[592px]">
         <header className="flex flex-col gap-(--frame-panel-header-gap) px-1 py-1">
           <div className="[&_svg]:size-4 [&_svg]:text-muted-foreground flex gap-2 items-center">
-            <svg className="lucide lucide-zap shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ZapIcon" tabler="IconBolt" hugeicons="FlashIcon" phosphor="LightningIcon" remixicon="RiFlashlightLine" aria-hidden="true">
+            <svg className="lucide lucide-zap shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ZapIcon" tabler="IconBolt" hugeicons="FlashIcon" phosphor="LightningIcon" remixicon="RiFlashlightLine" aria-hidden="true">
               <path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path>
             </svg>
             <h3 className="font-medium text-foreground text-sm">
@@ -41,28 +41,28 @@ export function Pattern() {
           <Separator data-orientation="horizontal" role="separator" aria-orientation="horizontal"></Separator>
           <div className="flex gap-5 items-center">
             <div className="[&_svg]:shrink-0 [&_svg]:size-4 [&_svg]:text-muted-foreground flex gap-1.5 items-center">
-              <svg className="lucide lucide-map-pin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MapPinIcon" tabler="IconMapPin" hugeicons="Location06Icon" phosphor="MapPinIcon" remixicon="RiMapPinLine" aria-hidden="true">
+              <svg className="lucide lucide-map-pin" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MapPinIcon" tabler="IconMapPin" hugeicons="Location06Icon" phosphor="MapPinIcon" remixicon="RiMapPinLine" aria-hidden="true">
                 <path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path>
-                <circle cx="12" cy="10" r="3"></circle>
+                <circle cx={12} cy={10} r={3}></circle>
               </svg>
               <span className="text-sm">
                 {"Berlin, Germany"}
               </span>
             </div>
             <div className="[&_svg]:shrink-0 [&_svg]:size-4 [&_svg]:text-muted-foreground flex gap-1.5 items-center">
-              <svg className="lucide lucide-monitor" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MonitorIcon" tabler="IconDeviceDesktop" hugeicons="ComputerIcon" phosphor="MonitorIcon" remixicon="RiComputerLine" aria-hidden="true">
-                <rect width="20" height="14" x="2" y="3" rx="2"></rect>
-                <line x1="8" x2="16" y1="21" y2="21"></line>
-                <line x1="12" x2="12" y1="17" y2="21"></line>
+              <svg className="lucide lucide-monitor" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MonitorIcon" tabler="IconDeviceDesktop" hugeicons="ComputerIcon" phosphor="MonitorIcon" remixicon="RiComputerLine" aria-hidden="true">
+                <rect width={20} height={14} x={2} y={3} rx={2}></rect>
+                <line x1={8} x2={16} y1={21} y2={21}></line>
+                <line x1={12} x2={12} y1={17} y2={21}></line>
               </svg>
               <span className="text-sm">
                 {"Hybrid"}
               </span>
             </div>
             <div className="[&_svg]:shrink-0 [&_svg]:size-4 [&_svg]:text-muted-foreground flex gap-1.5 items-center">
-              <svg className="lucide lucide-banknote" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="BanknoteIcon" tabler="IconCashBanknote" hugeicons="Money01Icon" phosphor="MoneyIcon" remixicon="RiCashLine" aria-hidden="true">
-                <rect width="20" height="12" x="2" y="6" rx="2"></rect>
-                <circle cx="12" cy="12" r="2"></circle>
+              <svg className="lucide lucide-banknote" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="BanknoteIcon" tabler="IconCashBanknote" hugeicons="Money01Icon" phosphor="MoneyIcon" remixicon="RiCashLine" aria-hidden="true">
+                <rect width={20} height={12} x={2} y={6} rx={2}></rect>
+                <circle cx={12} cy={12} r={2}></circle>
                 <path d="M6 12h.01M18 12h.01"></path>
               </svg>
               <span className="text-sm">
@@ -74,10 +74,10 @@ export function Pattern() {
             {"Join the engineering team at CloudCore to build scalable cloud platforms. Collaborate on backend systems, APIs, and modern infrastructure to deliver enterprise solutions worldwide."}
           </p>
           <div className="flex flex-wrap gap-2">
-            <Button type="button" tabIndex="0">
+            <Button type="button" tabIndex={0}>
               {"Quick Apply"}
             </Button>
-            <Button type="button" tabIndex="0">
+            <Button type="button" tabIndex={0}>
               {"View Details"}
             </Button>
           </div>

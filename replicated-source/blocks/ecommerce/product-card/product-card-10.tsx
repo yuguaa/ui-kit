@@ -27,7 +27,7 @@ export function Pattern() {
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
-                <svg className="cn-rtl-flip lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
+                <svg className="cn-rtl-flip lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                   <path d="m9 18 6-6-6-6"></path>
                 </svg>
               </BreadcrumbSeparator>
@@ -37,7 +37,7 @@ export function Pattern() {
                 </BreadcrumbLink>
               </BreadcrumbItem>
               <BreadcrumbSeparator role="presentation" aria-hidden="true">
-                <svg className="cn-rtl-flip lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
+                <svg className="cn-rtl-flip lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" lucide="ChevronRightIcon" tabler="IconChevronRight" hugeicons="ArrowRight01Icon" phosphor="CaretRightIcon" remixicon="RiArrowRightSLine">
                   <path d="m9 18 6-6-6-6"></path>
                 </svg>
               </BreadcrumbSeparator>
@@ -57,9 +57,9 @@ export function Pattern() {
                 {"Studio-shot layers and off-duty essentials selected for sharp seasonal rotation."}
               </p>
             </div>
-            <Button className="hover:text-primary hover:underline sm:w-auto transition-colors underline-offset-4 w-full" href="#" aria-label="Browse all fashion studio looks" role="button" tabIndex="0">
+            <Button className="hover:text-primary hover:underline sm:w-auto transition-colors underline-offset-4 w-full" href="#" aria-label="Browse all fashion studio looks" role="button" tabIndex={0}>
               {"Browse All"}
-              <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
+              <svg className="lucide lucide-arrow-right" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="ArrowRightIcon" tabler="IconArrowRight" hugeicons="ArrowRight02Icon" phosphor="ArrowRightIcon" remixicon="RiArrowRightLine" data-icon="inline-end" aria-hidden="true">
                 <path d="M5 12h14"></path>
                 <path d="m12 5 7 7-7 7"></path>
               </svg>
@@ -90,9 +90,9 @@ export function Pattern() {
             <CardContent className="absolute backdrop-blur-sm bg-card/95 bottom-4 duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-focus-within/card:opacity-100 group-focus-within/card:translate-y-0 inset-x-4 motion-reduce:transition-none pb-4 pt-3.5 px-3.5 ring-1 ring-border/80 rounded-xl sm:group-focus-within/card:pointer-events-auto sm:group-hover/card:opacity-100 sm:group-hover/card:pointer-events-auto sm:group-hover/card:translate-y-0 sm:opacity-0 sm:pointer-events-none sm:translate-y-full transition-[opacity,translate] will-change-transform z-30">
               <div className="flex flex-col gap-2.5 min-w-0">
                 <div className="flex font-medium gap-1.5 h-5 items-center leading-5 max-w-full min-w-0 text-muted-foreground text-xs" aria-label="Product categories: Tailoring, Studio">
-                  <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                  <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                     <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                    <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                    <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                   </svg>
                   <div className="flex gap-1.5 items-center max-w-full min-w-0 overflow-hidden">
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Tailoring">
@@ -159,9 +159,9 @@ export function Pattern() {
             <CardContent className="absolute backdrop-blur-sm bg-card/95 bottom-4 duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-focus-within/card:opacity-100 group-focus-within/card:translate-y-0 inset-x-4 motion-reduce:transition-none pb-4 pt-3.5 px-3.5 ring-1 ring-border/80 rounded-xl sm:group-focus-within/card:pointer-events-auto sm:group-hover/card:opacity-100 sm:group-hover/card:pointer-events-auto sm:group-hover/card:translate-y-0 sm:opacity-0 sm:pointer-events-none sm:translate-y-full transition-[opacity,translate] will-change-transform z-30">
               <div className="flex flex-col gap-2.5 min-w-0">
                 <div className="flex font-medium gap-1.5 h-5 items-center leading-5 max-w-full min-w-0 text-muted-foreground text-xs" aria-label="Product categories: Winter, Outerwear">
-                  <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                  <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                     <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                    <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                    <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                   </svg>
                   <div className="flex gap-1.5 items-center max-w-full min-w-0 overflow-hidden">
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Winter">
@@ -225,9 +225,9 @@ export function Pattern() {
             <CardContent className="absolute backdrop-blur-sm bg-card/95 bottom-4 duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-focus-within/card:opacity-100 group-focus-within/card:translate-y-0 inset-x-4 motion-reduce:transition-none pb-4 pt-3.5 px-3.5 ring-1 ring-border/80 rounded-xl sm:group-focus-within/card:pointer-events-auto sm:group-hover/card:opacity-100 sm:group-hover/card:pointer-events-auto sm:group-hover/card:translate-y-0 sm:opacity-0 sm:pointer-events-none sm:translate-y-full transition-[opacity,translate] will-change-transform z-30">
               <div className="flex flex-col gap-2.5 min-w-0">
                 <div className="flex font-medium gap-1.5 h-5 items-center leading-5 max-w-full min-w-0 text-muted-foreground text-xs" aria-label="Product categories: Travel Set, Knits">
-                  <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                  <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                     <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                    <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                    <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                   </svg>
                   <div className="flex gap-1.5 items-center max-w-full min-w-0 overflow-hidden">
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Travel Set">
@@ -294,9 +294,9 @@ export function Pattern() {
             <CardContent className="absolute backdrop-blur-sm bg-card/95 bottom-4 duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-focus-within/card:opacity-100 group-focus-within/card:translate-y-0 inset-x-4 motion-reduce:transition-none pb-4 pt-3.5 px-3.5 ring-1 ring-border/80 rounded-xl sm:group-focus-within/card:pointer-events-auto sm:group-hover/card:opacity-100 sm:group-hover/card:pointer-events-auto sm:group-hover/card:translate-y-0 sm:opacity-0 sm:pointer-events-none sm:translate-y-full transition-[opacity,translate] will-change-transform z-30">
               <div className="flex flex-col gap-2.5 min-w-0">
                 <div className="flex font-medium gap-1.5 h-5 items-center leading-5 max-w-full min-w-0 text-muted-foreground text-xs" aria-label="Product categories: Studio, Monochrome">
-                  <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                  <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                     <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                    <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                    <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                   </svg>
                   <div className="flex gap-1.5 items-center max-w-full min-w-0 overflow-hidden">
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Studio">
@@ -363,9 +363,9 @@ export function Pattern() {
             <CardContent className="absolute backdrop-blur-sm bg-card/95 bottom-4 duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-focus-within/card:opacity-100 group-focus-within/card:translate-y-0 inset-x-4 motion-reduce:transition-none pb-4 pt-3.5 px-3.5 ring-1 ring-border/80 rounded-xl sm:group-focus-within/card:pointer-events-auto sm:group-hover/card:opacity-100 sm:group-hover/card:pointer-events-auto sm:group-hover/card:translate-y-0 sm:opacity-0 sm:pointer-events-none sm:translate-y-full transition-[opacity,translate] will-change-transform z-30">
               <div className="flex flex-col gap-2.5 min-w-0">
                 <div className="flex font-medium gap-1.5 h-5 items-center leading-5 max-w-full min-w-0 text-muted-foreground text-xs" aria-label="Product categories: Outerwear, Tailoring">
-                  <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                  <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                     <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                    <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                    <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                   </svg>
                   <div className="flex gap-1.5 items-center max-w-full min-w-0 overflow-hidden">
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Outerwear">
@@ -426,9 +426,9 @@ export function Pattern() {
             <CardContent className="absolute backdrop-blur-sm bg-card/95 bottom-4 duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-focus-within/card:opacity-100 group-focus-within/card:translate-y-0 inset-x-4 motion-reduce:transition-none pb-4 pt-3.5 px-3.5 ring-1 ring-border/80 rounded-xl sm:group-focus-within/card:pointer-events-auto sm:group-hover/card:opacity-100 sm:group-hover/card:pointer-events-auto sm:group-hover/card:translate-y-0 sm:opacity-0 sm:pointer-events-none sm:translate-y-full transition-[opacity,translate] will-change-transform z-30">
               <div className="flex flex-col gap-2.5 min-w-0">
                 <div className="flex font-medium gap-1.5 h-5 items-center leading-5 max-w-full min-w-0 text-muted-foreground text-xs" aria-label="Product categories: Outerwear, Leather">
-                  <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                  <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                     <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                    <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                    <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                   </svg>
                   <div className="flex gap-1.5 items-center max-w-full min-w-0 overflow-hidden">
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Outerwear">
@@ -489,9 +489,9 @@ export function Pattern() {
             <CardContent className="absolute backdrop-blur-sm bg-card/95 bottom-4 duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-focus-within/card:opacity-100 group-focus-within/card:translate-y-0 inset-x-4 motion-reduce:transition-none pb-4 pt-3.5 px-3.5 ring-1 ring-border/80 rounded-xl sm:group-focus-within/card:pointer-events-auto sm:group-hover/card:opacity-100 sm:group-hover/card:pointer-events-auto sm:group-hover/card:translate-y-0 sm:opacity-0 sm:pointer-events-none sm:translate-y-full transition-[opacity,translate] will-change-transform z-30">
               <div className="flex flex-col gap-2.5 min-w-0">
                 <div className="flex font-medium gap-1.5 h-5 items-center leading-5 max-w-full min-w-0 text-muted-foreground text-xs" aria-label="Product categories: Travel Set, Tailoring">
-                  <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                  <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                     <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                    <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                    <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                   </svg>
                   <div className="flex gap-1.5 items-center max-w-full min-w-0 overflow-hidden">
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Travel Set">
@@ -555,9 +555,9 @@ export function Pattern() {
             <CardContent className="absolute backdrop-blur-sm bg-card/95 bottom-4 duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] group-focus-within/card:opacity-100 group-focus-within/card:translate-y-0 inset-x-4 motion-reduce:transition-none pb-4 pt-3.5 px-3.5 ring-1 ring-border/80 rounded-xl sm:group-focus-within/card:pointer-events-auto sm:group-hover/card:opacity-100 sm:group-hover/card:pointer-events-auto sm:group-hover/card:translate-y-0 sm:opacity-0 sm:pointer-events-none sm:translate-y-full transition-[opacity,translate] will-change-transform z-30">
               <div className="flex flex-col gap-2.5 min-w-0">
                 <div className="flex font-medium gap-1.5 h-5 items-center leading-5 max-w-full min-w-0 text-muted-foreground text-xs" aria-label="Product categories: Tailoring, Studio">
-                  <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
+                  <svg className="lucide lucide-tag shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="TagIcon" tabler="IconTag" hugeicons="Tag01Icon" phosphor="TagIcon" remixicon="RiPriceTag3Line" aria-hidden="true">
                     <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"></path>
-                    <circle cx="7.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                    <circle cx={7.5} cy={7.5} r=".5" fill="currentColor"></circle>
                   </svg>
                   <div className="flex gap-1.5 items-center max-w-full min-w-0 overflow-hidden">
                     <a className="block hover:text-primary hover:underline max-w-24 transition-colors truncate underline-offset-4" href="#" aria-label="Shop Tailoring">

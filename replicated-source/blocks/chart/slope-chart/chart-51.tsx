@@ -154,7 +154,7 @@ export function Pattern() {
                     <div className="cn-slider-range data-horizontal:h-full data-vertical:w-full select-none" data-orientation="horizontal" data-base-ui-slider-indicator="" style={{position: "relative", height: "inherit", "--start-position": "63.18681318681318%", insetInlineStart: "0px", width: "var(--start-position)"}}></div>
                   </div>
                   <div className="block cn-slider-thumb disabled:opacity-50 disabled:pointer-events-none select-none shrink-0" data-orientation="horizontal" data-index="0" id="base-ui-_r_1_" style={{"--position": "63.18681318681318%", position: "absolute", insetInlineStart: "var(--position)", top: "50%", translate: "-50% -50%"}}>
-                    <input aria-orientation="horizontal" aria-valuenow="21" id="base-ui-_r_3_" max="33" min="0" step="1" type="range" value="21" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "100%", height: "100%", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
+                    <input aria-orientation="horizontal" aria-valuenow="21" id="base-ui-_r_3_" max={33} min={0} step={1} type="range" value="21" style={{clipPath: "inset(50%)", overflow: "hidden", whiteSpace: "nowrap", border: "0px", padding: "0px", width: "100%", height: "100%", margin: "-1px", position: "fixed", top: "0px", left: "0px"}} />
                   </div>
                 </div>
               </Slider>
@@ -164,18 +164,18 @@ export function Pattern() {
             </div>
           </div>
           <ButtonGroup className="shrink-0" role="group">
-            <Button type="button" tabIndex="0" aria-pressed="false" extracted="1">
-              <svg className="lucide lucide-play" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="PlayIcon" tabler="IconPlayerPlay" hugeicons="PlayIcon" phosphor="PlayIcon" remixicon="RiPlayLine" aria-hidden="true">
+            <Button type="button" tabIndex={0} aria-pressed="false" extracted="1">
+              <svg className="lucide lucide-play" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="PlayIcon" tabler="IconPlayerPlay" hugeicons="PlayIcon" phosphor="PlayIcon" remixicon="RiPlayLine" aria-hidden="true">
                 <path d="M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"></path>
               </svg>
               {"Play"}
             </Button>
             <DropdownMenu>
-            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex="0" aria-label="Crossover options" aria-haspopup="menu" id="base-ui-_r_7_" aria-expanded="false">
-              <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
-                <circle cx="12" cy="12" r="1"></circle>
-                <circle cx="19" cy="12" r="1"></circle>
-                <circle cx="5" cy="12" r="1"></circle>
+            <DropdownMenuTrigger className="[&_svg]:pointer-events-none [&_svg]:shrink-0 cn-button cn-button-size-icon-sm cn-button-variant-outline disabled:opacity-50 disabled:pointer-events-none group/button inline-flex items-center justify-center outline-none select-none shrink-0 transition-all whitespace-nowrap" type="button" tabIndex={0} aria-label="Crossover options" aria-haspopup="menu" id="base-ui-_r_7_" aria-expanded="false">
+              <svg className="lucide lucide-ellipsis" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true">
+                <circle cx={12} cy={12} r={1}></circle>
+                <circle cx={19} cy={12} r={1}></circle>
+                <circle cx={5} cy={12} r={1}></circle>
               </svg>
             </DropdownMenuTrigger>
             </DropdownMenu>
@@ -215,40 +215,40 @@ export function Pattern() {
               <div className="[&_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&_.recharts-dot[stroke='#fff']]:stroke-transparent [&_.recharts-layer]:outline-hidden [&_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&_.recharts-radial-bar-background-sector]:fill-muted [&_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&_.recharts-sector[stroke='#fff']]:stroke-transparent [&_.recharts-sector]:outline-hidden [&_.recharts-surface]:outline-hidden [&_[class*=recharts-zIndex-layer]]:outline-hidden aspect-auto cn-chart flex h-104 justify-center text-xs w-full" data-chart="chart-_r_a_" role="img" aria-label="11 acquisition channels: signup order on the left, retention order on the right">
                 <div className="recharts-responsive-container" style={{width: "100%", height: "100%", minWidth: "0px"}}>
                   <div style={{width: "0px", height: "0px", overflow: "visible"}}>
-                    <div className="recharts-wrapper" width="1118" height="416" style={{position: "relative", cursor: "default", width: "1118px", height: "416px"}}>
-                      <svg className="recharts-surface" role="application" tabIndex="0" width="1118" height="416" viewBox="0 0 1118 416" style={{width: "100%", height: "100%", display: "block"}}>
+                    <div className="recharts-wrapper" width={1118} height={416} style={{position: "relative", cursor: "default", width: "1118px", height: "416px"}}>
+                      <svg className="recharts-surface" role="application" tabIndex={0} width={1118} height={416} viewBox="0 0 1118 416" style={{width: "100%", height: "100%", display: "block"}}>
                         <title></title>
                         <desc></desc>
-                        <g className="recharts-zIndex-layer_-100" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_-50" tabIndex="-1"></g>
+                        <g className="recharts-zIndex-layer_-100" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_-50" tabIndex={-1}></g>
                         <defs>
                           <clippath id="recharts1-clip">
-                            <rect x="232" y="6" height="404" width="730"></rect>
+                            <rect x={232} y={6} height={404} width={730}></rect>
                           </clippath>
                         </defs>
-                        <g className="recharts-zIndex-layer_100" tabIndex="-1">
+                        <g className="recharts-zIndex-layer_100" tabIndex={-1}>
                           <g className="recharts-layer recharts-reference-line">
-                            <line className="recharts-reference-line-line" x="0" stroke="var(--border)" fill="none" fillOpacity="1" strokeWidth="1" x1="232" y1="410" x2="232" y2="6"></line>
+                            <line className="recharts-reference-line-line" x={0} stroke="var(--border)" fill="none" fillOpacity={1} strokeWidth={1} x1={232} y1={410} x2={232} y2={6}></line>
                           </g>
                           <g className="recharts-layer recharts-reference-line">
-                            <line className="recharts-reference-line-line" x="1" stroke="var(--border)" fill="none" fillOpacity="1" strokeWidth="1" x1="962" y1="410" x2="962" y2="6"></line>
+                            <line className="recharts-reference-line-line" x={1} stroke="var(--border)" fill="none" fillOpacity={1} strokeWidth={1} x1={962} y1={410} x2={962} y2={6}></line>
                           </g>
                         </g>
-                        <g className="recharts-zIndex-layer_200" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_300" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_400" tabIndex="-1">
+                        <g className="recharts-zIndex-layer_200" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_300" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_400" tabIndex={-1}>
                           <g className="recharts-layer recharts-line">
                             <g className="recharts-layer recharts-shape">
                               <g>
                                 <defs>
-                                  <lineargradient id="r9-direct-ribbon" gradientUnits="userSpaceOnUse" x1="232" x2="962" y1="0" y2="0">
-                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity="0.35"></stop>
-                                    <stop offset="60%" stopColor="var(--muted-foreground)" stopOpacity="0.75"></stop>
+                                  <lineargradient id="r9-direct-ribbon" gradientUnits="userSpaceOnUse" x1={232} x2={962} y1={0} y2={0}>
+                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity={0.35}></stop>
+                                    <stop offset="60%" stopColor="var(--muted-foreground)" stopOpacity={0.75}></stop>
                                     <stop offset="100%" stopColor="var(--muted-foreground)"></stop>
                                   </lineargradient>
                                 </defs>
-                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,134.54545454545453 L275.79999999999995,134.54545454545453 C597,134.54545454545453 597,134.54545454545453 918.1999999999999,134.54545454545453 L962,134.54545454545453" fill="none" stroke="url(#r9-direct-ribbon)" strokeWidth="5.217842323651452" strokeOpacity="0.35" strokeLinecap="round" strokeLinejoin="round"></path>
-                                <path className="cursor-pointer" d="M232,134.54545454545453 L275.79999999999995,134.54545454545453 C597,134.54545454545453 597,134.54545454545453 918.1999999999999,134.54545454545453 L962,134.54545454545453" fill="none" stroke="transparent" strokeWidth="18"></path>
+                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,134.54545454545453 L275.79999999999995,134.54545454545453 C597,134.54545454545453 597,134.54545454545453 918.1999999999999,134.54545454545453 L962,134.54545454545453" fill="none" stroke="url(#r9-direct-ribbon)" strokeWidth={5.217842323651452} strokeOpacity={0.35} strokeLinecap="round" strokeLinejoin="round"></path>
+                                <path className="cursor-pointer" d="M232,134.54545454545453 L275.79999999999995,134.54545454545453 C597,134.54545454545453 597,134.54545454545453 918.1999999999999,134.54545454545453 L962,134.54545454545453" fill="none" stroke="transparent" strokeWidth={18}></path>
                               </g>
                             </g>
                           </g>
@@ -256,14 +256,14 @@ export function Pattern() {
                             <g className="recharts-layer recharts-shape">
                               <g>
                                 <defs>
-                                  <lineargradient id="r9-content-ribbon" gradientUnits="userSpaceOnUse" x1="232" x2="962" y1="0" y2="0">
-                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity="0.35"></stop>
-                                    <stop offset="60%" stopColor="var(--destructive)" stopOpacity="0.75"></stop>
+                                  <lineargradient id="r9-content-ribbon" gradientUnits="userSpaceOnUse" x1={232} x2={962} y1={0} y2={0}>
+                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity={0.35}></stop>
+                                    <stop offset="60%" stopColor="var(--destructive)" stopOpacity={0.75}></stop>
                                     <stop offset="100%" stopColor="var(--destructive)"></stop>
                                   </lineargradient>
                                 </defs>
-                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,171.27272727272728 L275.79999999999995,171.27272727272728 C597,171.27272727272728 597,281.45454545454544 918.1999999999999,281.45454545454544 L962,281.45454545454544" fill="none" stroke="url(#r9-content-ribbon)" strokeWidth="4.622406639004149" strokeOpacity="0.75" strokeLinecap="round" strokeLinejoin="round"></path>
-                                <path className="cursor-pointer" d="M232,171.27272727272728 L275.79999999999995,171.27272727272728 C597,171.27272727272728 597,281.45454545454544 918.1999999999999,281.45454545454544 L962,281.45454545454544" fill="none" stroke="transparent" strokeWidth="18"></path>
+                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,171.27272727272728 L275.79999999999995,171.27272727272728 C597,171.27272727272728 597,281.45454545454544 918.1999999999999,281.45454545454544 L962,281.45454545454544" fill="none" stroke="url(#r9-content-ribbon)" strokeWidth={4.622406639004149} strokeOpacity={0.75} strokeLinecap="round" strokeLinejoin="round"></path>
+                                <path className="cursor-pointer" d="M232,171.27272727272728 L275.79999999999995,171.27272727272728 C597,171.27272727272728 597,281.45454545454544 918.1999999999999,281.45454545454544 L962,281.45454545454544" fill="none" stroke="transparent" strokeWidth={18}></path>
                               </g>
                             </g>
                           </g>
@@ -271,14 +271,14 @@ export function Pattern() {
                             <g className="recharts-layer recharts-shape">
                               <g>
                                 <defs>
-                                  <lineargradient id="r9-newsletter-ribbon" gradientUnits="userSpaceOnUse" x1="232" x2="962" y1="0" y2="0">
-                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity="0.35"></stop>
-                                    <stop offset="60%" stopColor="var(--success)" stopOpacity="0.75"></stop>
+                                  <lineargradient id="r9-newsletter-ribbon" gradientUnits="userSpaceOnUse" x1={232} x2={962} y1={0} y2={0}>
+                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity={0.35}></stop>
+                                    <stop offset="60%" stopColor="var(--success)" stopOpacity={0.75}></stop>
                                     <stop offset="100%" stopColor="var(--success)"></stop>
                                   </lineargradient>
                                 </defs>
-                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,281.45454545454544 L275.79999999999995,281.45454545454544 C597,281.45454545454544 597,171.27272727272728 918.1999999999999,171.27272727272728 L962,171.27272727272728" fill="none" stroke="url(#r9-newsletter-ribbon)" strokeWidth="3.3298755186721993" strokeOpacity="0.75" strokeLinecap="round" strokeLinejoin="round"></path>
-                                <path className="cursor-pointer" d="M232,281.45454545454544 L275.79999999999995,281.45454545454544 C597,281.45454545454544 597,171.27272727272728 918.1999999999999,171.27272727272728 L962,171.27272727272728" fill="none" stroke="transparent" strokeWidth="18"></path>
+                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,281.45454545454544 L275.79999999999995,281.45454545454544 C597,281.45454545454544 597,171.27272727272728 918.1999999999999,171.27272727272728 L962,171.27272727272728" fill="none" stroke="url(#r9-newsletter-ribbon)" strokeWidth={3.3298755186721993} strokeOpacity={0.75} strokeLinecap="round" strokeLinejoin="round"></path>
+                                <path className="cursor-pointer" d="M232,281.45454545454544 L275.79999999999995,281.45454545454544 C597,281.45454545454544 597,171.27272727272728 918.1999999999999,171.27272727272728 L962,171.27272727272728" fill="none" stroke="transparent" strokeWidth={18}></path>
                               </g>
                             </g>
                           </g>
@@ -286,14 +286,14 @@ export function Pattern() {
                             <g className="recharts-layer recharts-shape">
                               <g>
                                 <defs>
-                                  <lineargradient id="r9-organic-ribbon" gradientUnits="userSpaceOnUse" x1="232" x2="962" y1="0" y2="0">
-                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity="0.35"></stop>
-                                    <stop offset="60%" stopColor="var(--destructive)" stopOpacity="0.75"></stop>
+                                  <lineargradient id="r9-organic-ribbon" gradientUnits="userSpaceOnUse" x1={232} x2={962} y1={0} y2={0}>
+                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity={0.35}></stop>
+                                    <stop offset="60%" stopColor="var(--destructive)" stopOpacity={0.75}></stop>
                                     <stop offset="100%" stopColor="var(--destructive)"></stop>
                                   </lineargradient>
                                 </defs>
-                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,97.81818181818181 L275.79999999999995,97.81818181818181 C597,97.81818181818181 597,244.72727272727275 918.1999999999999,244.72727272727275 L962,244.72727272727275" fill="none" stroke="url(#r9-organic-ribbon)" strokeWidth="6.2053941908713695" strokeOpacity="1" strokeLinecap="round" strokeLinejoin="round"></path>
-                                <path className="cursor-pointer" d="M232,97.81818181818181 L275.79999999999995,97.81818181818181 C597,97.81818181818181 597,244.72727272727275 918.1999999999999,244.72727272727275 L962,244.72727272727275" fill="none" stroke="transparent" strokeWidth="18"></path>
+                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,97.81818181818181 L275.79999999999995,97.81818181818181 C597,97.81818181818181 597,244.72727272727275 918.1999999999999,244.72727272727275 L962,244.72727272727275" fill="none" stroke="url(#r9-organic-ribbon)" strokeWidth={6.2053941908713695} strokeOpacity={1} strokeLinecap="round" strokeLinejoin="round"></path>
+                                <path className="cursor-pointer" d="M232,97.81818181818181 L275.79999999999995,97.81818181818181 C597,97.81818181818181 597,244.72727272727275 918.1999999999999,244.72727272727275 L962,244.72727272727275" fill="none" stroke="transparent" strokeWidth={18}></path>
                               </g>
                             </g>
                           </g>
@@ -301,14 +301,14 @@ export function Pattern() {
                             <g className="recharts-layer recharts-shape">
                               <g>
                                 <defs>
-                                  <lineargradient id="r9-affiliates-ribbon" gradientUnits="userSpaceOnUse" x1="232" x2="962" y1="0" y2="0">
-                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity="0.35"></stop>
-                                    <stop offset="60%" stopColor="var(--destructive)" stopOpacity="0.75"></stop>
+                                  <lineargradient id="r9-affiliates-ribbon" gradientUnits="userSpaceOnUse" x1={232} x2={962} y1={0} y2={0}>
+                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity={0.35}></stop>
+                                    <stop offset="60%" stopColor="var(--destructive)" stopOpacity={0.75}></stop>
                                     <stop offset="100%" stopColor="var(--destructive)"></stop>
                                   </lineargradient>
                                 </defs>
-                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,208 L275.79999999999995,208 C597,208 597,354.90909090909093 918.1999999999999,354.90909090909093 L962,354.90909090909093" fill="none" stroke="url(#r9-affiliates-ribbon)" strokeWidth="4.012448132780083" strokeOpacity="1" strokeLinecap="round" strokeLinejoin="round"></path>
-                                <path className="cursor-pointer" d="M232,208 L275.79999999999995,208 C597,208 597,354.90909090909093 918.1999999999999,354.90909090909093 L962,354.90909090909093" fill="none" stroke="transparent" strokeWidth="18"></path>
+                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,208 L275.79999999999995,208 C597,208 597,354.90909090909093 918.1999999999999,354.90909090909093 L962,354.90909090909093" fill="none" stroke="url(#r9-affiliates-ribbon)" strokeWidth={4.012448132780083} strokeOpacity={1} strokeLinecap="round" strokeLinejoin="round"></path>
+                                <path className="cursor-pointer" d="M232,208 L275.79999999999995,208 C597,208 597,354.90909090909093 918.1999999999999,354.90909090909093 L962,354.90909090909093" fill="none" stroke="transparent" strokeWidth={18}></path>
                               </g>
                             </g>
                           </g>
@@ -316,14 +316,14 @@ export function Pattern() {
                             <g className="recharts-layer recharts-shape">
                               <g>
                                 <defs>
-                                  <lineargradient id="r9-events-ribbon" gradientUnits="userSpaceOnUse" x1="232" x2="962" y1="0" y2="0">
-                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity="0.35"></stop>
-                                    <stop offset="60%" stopColor="var(--success)" stopOpacity="0.75"></stop>
+                                  <lineargradient id="r9-events-ribbon" gradientUnits="userSpaceOnUse" x1={232} x2={962} y1={0} y2={0}>
+                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity={0.35}></stop>
+                                    <stop offset="60%" stopColor="var(--success)" stopOpacity={0.75}></stop>
                                     <stop offset="100%" stopColor="var(--success)"></stop>
                                   </lineargradient>
                                 </defs>
-                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,391.6363636363636 L275.79999999999995,391.6363636363636 C597,391.6363636363636 597,208 918.1999999999999,208 L962,208" fill="none" stroke="url(#r9-events-ribbon)" strokeWidth="2.095435684647303" strokeOpacity="1" strokeLinecap="round" strokeLinejoin="round"></path>
-                                <path className="cursor-pointer" d="M232,391.6363636363636 L275.79999999999995,391.6363636363636 C597,391.6363636363636 597,208 918.1999999999999,208 L962,208" fill="none" stroke="transparent" strokeWidth="18"></path>
+                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,391.6363636363636 L275.79999999999995,391.6363636363636 C597,391.6363636363636 597,208 918.1999999999999,208 L962,208" fill="none" stroke="url(#r9-events-ribbon)" strokeWidth={2.095435684647303} strokeOpacity={1} strokeLinecap="round" strokeLinejoin="round"></path>
+                                <path className="cursor-pointer" d="M232,391.6363636363636 L275.79999999999995,391.6363636363636 C597,391.6363636363636 597,208 918.1999999999999,208 L962,208" fill="none" stroke="transparent" strokeWidth={18}></path>
                               </g>
                             </g>
                           </g>
@@ -331,14 +331,14 @@ export function Pattern() {
                             <g className="recharts-layer recharts-shape">
                               <g>
                                 <defs>
-                                  <lineargradient id="r9-referrals-ribbon" gradientUnits="userSpaceOnUse" x1="232" x2="962" y1="0" y2="0">
-                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity="0.35"></stop>
-                                    <stop offset="60%" stopColor="var(--success)" stopOpacity="0.75"></stop>
+                                  <lineargradient id="r9-referrals-ribbon" gradientUnits="userSpaceOnUse" x1={232} x2={962} y1={0} y2={0}>
+                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity={0.35}></stop>
+                                    <stop offset="60%" stopColor="var(--success)" stopOpacity={0.75}></stop>
                                     <stop offset="100%" stopColor="var(--success)"></stop>
                                   </lineargradient>
                                 </defs>
-                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,244.72727272727275 L275.79999999999995,244.72727272727275 C597,244.72727272727275 597,24.363636363636363 918.1999999999999,24.363636363636363 L962,24.363636363636363" fill="none" stroke="url(#r9-referrals-ribbon)" strokeWidth="3.649377593360996" strokeOpacity="1" strokeLinecap="round" strokeLinejoin="round"></path>
-                                <path className="cursor-pointer" d="M232,244.72727272727275 L275.79999999999995,244.72727272727275 C597,244.72727272727275 597,24.363636363636363 918.1999999999999,24.363636363636363 L962,24.363636363636363" fill="none" stroke="transparent" strokeWidth="18"></path>
+                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,244.72727272727275 L275.79999999999995,244.72727272727275 C597,244.72727272727275 597,24.363636363636363 918.1999999999999,24.363636363636363 L962,24.363636363636363" fill="none" stroke="url(#r9-referrals-ribbon)" strokeWidth={3.649377593360996} strokeOpacity={1} strokeLinecap="round" strokeLinejoin="round"></path>
+                                <path className="cursor-pointer" d="M232,244.72727272727275 L275.79999999999995,244.72727272727275 C597,244.72727272727275 597,24.363636363636363 918.1999999999999,24.363636363636363 L962,24.363636363636363" fill="none" stroke="transparent" strokeWidth={18}></path>
                               </g>
                             </g>
                           </g>
@@ -346,14 +346,14 @@ export function Pattern() {
                             <g className="recharts-layer recharts-shape">
                               <g>
                                 <defs>
-                                  <lineargradient id="r9-partners-ribbon" gradientUnits="userSpaceOnUse" x1="232" x2="962" y1="0" y2="0">
-                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity="0.35"></stop>
-                                    <stop offset="60%" stopColor="var(--success)" stopOpacity="0.75"></stop>
+                                  <lineargradient id="r9-partners-ribbon" gradientUnits="userSpaceOnUse" x1={232} x2={962} y1={0} y2={0}>
+                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity={0.35}></stop>
+                                    <stop offset="60%" stopColor="var(--success)" stopOpacity={0.75}></stop>
                                     <stop offset="100%" stopColor="var(--success)"></stop>
                                   </lineargradient>
                                 </defs>
-                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,318.1818181818182 L275.79999999999995,318.1818181818182 C597,318.1818181818182 597,61.090909090909086 918.1999999999999,61.090909090909086 L962,61.090909090909086" fill="none" stroke="url(#r9-partners-ribbon)" strokeWidth="2.923236514522822" strokeOpacity="1" strokeLinecap="round" strokeLinejoin="round"></path>
-                                <path className="cursor-pointer" d="M232,318.1818181818182 L275.79999999999995,318.1818181818182 C597,318.1818181818182 597,61.090909090909086 918.1999999999999,61.090909090909086 L962,61.090909090909086" fill="none" stroke="transparent" strokeWidth="18"></path>
+                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,318.1818181818182 L275.79999999999995,318.1818181818182 C597,318.1818181818182 597,61.090909090909086 918.1999999999999,61.090909090909086 L962,61.090909090909086" fill="none" stroke="url(#r9-partners-ribbon)" strokeWidth={2.923236514522822} strokeOpacity={1} strokeLinecap="round" strokeLinejoin="round"></path>
+                                <path className="cursor-pointer" d="M232,318.1818181818182 L275.79999999999995,318.1818181818182 C597,318.1818181818182 597,61.090909090909086 918.1999999999999,61.090909090909086 L962,61.090909090909086" fill="none" stroke="transparent" strokeWidth={18}></path>
                               </g>
                             </g>
                           </g>
@@ -361,14 +361,14 @@ export function Pattern() {
                             <g className="recharts-layer recharts-shape">
                               <g>
                                 <defs>
-                                  <lineargradient id="r9-webinars-ribbon" gradientUnits="userSpaceOnUse" x1="232" x2="962" y1="0" y2="0">
-                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity="0.35"></stop>
-                                    <stop offset="60%" stopColor="var(--success)" stopOpacity="0.75"></stop>
+                                  <lineargradient id="r9-webinars-ribbon" gradientUnits="userSpaceOnUse" x1={232} x2={962} y1={0} y2={0}>
+                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity={0.35}></stop>
+                                    <stop offset="60%" stopColor="var(--success)" stopOpacity={0.75}></stop>
                                     <stop offset="100%" stopColor="var(--success)"></stop>
                                   </lineargradient>
                                 </defs>
-                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,354.90909090909093 L275.79999999999995,354.90909090909093 C597,354.90909090909093 597,97.81818181818181 918.1999999999999,97.81818181818181 L962,97.81818181818181" fill="none" stroke="url(#r9-webinars-ribbon)" strokeWidth="2.4294605809128633" strokeOpacity="1" strokeLinecap="round" strokeLinejoin="round"></path>
-                                <path className="cursor-pointer" d="M232,354.90909090909093 L275.79999999999995,354.90909090909093 C597,354.90909090909093 597,97.81818181818181 918.1999999999999,97.81818181818181 L962,97.81818181818181" fill="none" stroke="transparent" strokeWidth="18"></path>
+                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,354.90909090909093 L275.79999999999995,354.90909090909093 C597,354.90909090909093 597,97.81818181818181 918.1999999999999,97.81818181818181 L962,97.81818181818181" fill="none" stroke="url(#r9-webinars-ribbon)" strokeWidth={2.4294605809128633} strokeOpacity={1} strokeLinecap="round" strokeLinejoin="round"></path>
+                                <path className="cursor-pointer" d="M232,354.90909090909093 L275.79999999999995,354.90909090909093 C597,354.90909090909093 597,97.81818181818181 918.1999999999999,97.81818181818181 L962,97.81818181818181" fill="none" stroke="transparent" strokeWidth={18}></path>
                               </g>
                             </g>
                           </g>
@@ -376,14 +376,14 @@ export function Pattern() {
                             <g className="recharts-layer recharts-shape">
                               <g>
                                 <defs>
-                                  <lineargradient id="r9-paid-search-ribbon" gradientUnits="userSpaceOnUse" x1="232" x2="962" y1="0" y2="0">
-                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity="0.35"></stop>
-                                    <stop offset="60%" stopColor="var(--destructive)" stopOpacity="0.75"></stop>
+                                  <lineargradient id="r9-paid-search-ribbon" gradientUnits="userSpaceOnUse" x1={232} x2={962} y1={0} y2={0}>
+                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity={0.35}></stop>
+                                    <stop offset="60%" stopColor="var(--destructive)" stopOpacity={0.75}></stop>
                                     <stop offset="100%" stopColor="var(--destructive)"></stop>
                                   </lineargradient>
                                 </defs>
-                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,24.363636363636363 L275.79999999999995,24.363636363636363 C597,24.363636363636363 597,318.1818181818182 918.1999999999999,318.1818181818182 L962,318.1818181818182" fill="none" stroke="url(#r9-paid-search-ribbon)" strokeWidth="8.5" strokeOpacity="1" strokeLinecap="round" strokeLinejoin="round"></path>
-                                <path className="cursor-pointer" d="M232,24.363636363636363 L275.79999999999995,24.363636363636363 C597,24.363636363636363 597,318.1818181818182 918.1999999999999,318.1818181818182 L962,318.1818181818182" fill="none" stroke="transparent" strokeWidth="18.5"></path>
+                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,24.363636363636363 L275.79999999999995,24.363636363636363 C597,24.363636363636363 597,318.1818181818182 918.1999999999999,318.1818181818182 L962,318.1818181818182" fill="none" stroke="url(#r9-paid-search-ribbon)" strokeWidth={8.5} strokeOpacity={1} strokeLinecap="round" strokeLinejoin="round"></path>
+                                <path className="cursor-pointer" d="M232,24.363636363636363 L275.79999999999995,24.363636363636363 C597,24.363636363636363 597,318.1818181818182 918.1999999999999,318.1818181818182 L962,318.1818181818182" fill="none" stroke="transparent" strokeWidth={18.5}></path>
                               </g>
                             </g>
                           </g>
@@ -391,24 +391,24 @@ export function Pattern() {
                             <g className="recharts-layer recharts-shape">
                               <g>
                                 <defs>
-                                  <lineargradient id="r9-paid-social-ribbon" gradientUnits="userSpaceOnUse" x1="232" x2="962" y1="0" y2="0">
-                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity="0.35"></stop>
-                                    <stop offset="60%" stopColor="var(--destructive)" stopOpacity="0.75"></stop>
+                                  <lineargradient id="r9-paid-social-ribbon" gradientUnits="userSpaceOnUse" x1={232} x2={962} y1={0} y2={0}>
+                                    <stop offset="0%" stopColor="var(--muted-foreground)" stopOpacity={0.35}></stop>
+                                    <stop offset="60%" stopColor="var(--destructive)" stopOpacity={0.75}></stop>
                                     <stop offset="100%" stopColor="var(--destructive)"></stop>
                                   </lineargradient>
                                 </defs>
-                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,61.090909090909086 L275.79999999999995,61.090909090909086 C597,61.090909090909086 597,391.6363636363636 918.1999999999999,391.6363636363636 L962,391.6363636363636" fill="none" stroke="url(#r9-paid-social-ribbon)" strokeWidth="7.178423236514523" strokeOpacity="1" strokeLinecap="round" strokeLinejoin="round"></path>
-                                <path className="cursor-pointer" d="M232,61.090909090909086 L275.79999999999995,61.090909090909086 C597,61.090909090909086 597,391.6363636363636 918.1999999999999,391.6363636363636 L962,391.6363636363636" fill="none" stroke="transparent" strokeWidth="18"></path>
+                                <path className="duration-300 motion-reduce:transition-none transition-[stroke-opacity]" d="M232,61.090909090909086 L275.79999999999995,61.090909090909086 C597,61.090909090909086 597,391.6363636363636 918.1999999999999,391.6363636363636 L962,391.6363636363636" fill="none" stroke="url(#r9-paid-social-ribbon)" strokeWidth={7.178423236514523} strokeOpacity={1} strokeLinecap="round" strokeLinejoin="round"></path>
+                                <path className="cursor-pointer" d="M232,61.090909090909086 L275.79999999999995,61.090909090909086 C597,61.090909090909086 597,391.6363636363636 918.1999999999999,391.6363636363636 L962,391.6363636363636" fill="none" stroke="transparent" strokeWidth={18}></path>
                               </g>
                             </g>
                           </g>
                         </g>
-                        <g className="recharts-zIndex-layer_500" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_600" tabIndex="-1">
+                        <g className="recharts-zIndex-layer_500" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_600" tabIndex={-1}>
                           <g className="recharts-layer recharts-line-dots">
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="0" y="116.54545454545453" width="232" height="36" fill="transparent"></rect>
-                              <text className="text-[13px]" x="156" y="134.54545454545453" textAnchor="end" dominantBaseline="central">
+                              <rect x={0} y={116.54545454545453} width={232} height={36} fill="transparent"></rect>
+                              <text className="text-[13px]" x={156} y={134.54545454545453} textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
                                   {"Direct"}
                                 </tspan>
@@ -416,27 +416,27 @@ export function Pattern() {
                                   {"2,560"}
                                 </tspan>
                               </text>
-                              <rect className="fill-muted" x="166" y="131.54545454545453" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-muted-foreground" x="192" y="131.54545454545453" width="30" height="6" rx="3" fillOpacity="0.45"></rect>
-                              <circle cx="232" cy="134.54545454545453" r="4.108921161825727" fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity="0.6" strokeWidth="1.5"></circle>
+                              <rect className="fill-muted" x={166} y={131.54545454545453} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-muted-foreground" x={192} y={131.54545454545453} width={30} height={6} rx={3} fillOpacity={0.45}></rect>
+                              <circle cx={232} cy={134.54545454545453} r={4.108921161825727} fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity={0.6} strokeWidth={1.5}></circle>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="962" y="116.54545454545453" width="156" height="36" fill="transparent"></rect>
-                              <rect className="fill-muted" x="972" y="131.54545454545453" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-muted-foreground" x="972" y="131.54545454545453" width="28" height="6" rx="3" fillOpacity="0.45"></rect>
-                              <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="134.54545454545453" dominantBaseline="central">
+                              <rect x={962} y={116.54545454545453} width={156} height={36} fill="transparent"></rect>
+                              <rect className="fill-muted" x={972} y={131.54545454545453} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-muted-foreground" x={972} y={131.54545454545453} width={28} height={6} rx={3} fillOpacity={0.45}></rect>
+                              <text className="fill-foreground font-medium tabular-nums text-xs" x={1038} y={134.54545454545453} dominantBaseline="central">
                                 {"37%"}
                               </text>
-                              <text className="fill-muted-foreground font-medium tabular-nums text-xs" x="1116" y="134.54545454545453" textAnchor="end" dominantBaseline="central">
+                              <text className="fill-muted-foreground font-medium tabular-nums text-xs" x={1116} y={134.54545454545453} textAnchor="end" dominantBaseline="central">
                                 {"0"}
                               </text>
-                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="134.54545454545453" r="4.108921161825727" fill="var(--background)" stroke="var(--muted-foreground)" strokeWidth="1.5"></circle>
+                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx={962} cy={134.54545454545453} r={4.108921161825727} fill="var(--background)" stroke="var(--muted-foreground)" strokeWidth={1.5}></circle>
                             </g>
                           </g>
                           <g className="recharts-layer recharts-line-dots">
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="0" y="153.27272727272728" width="232" height="36" fill="transparent"></rect>
-                              <text className="text-[13px]" x="156" y="171.27272727272728" textAnchor="end" dominantBaseline="central">
+                              <rect x={0} y={153.27272727272728} width={232} height={36} fill="transparent"></rect>
+                              <text className="text-[13px]" x={156} y={171.27272727272728} textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
                                   {"Content"}
                                 </tspan>
@@ -444,27 +444,27 @@ export function Pattern() {
                                   {"2,150"}
                                 </tspan>
                               </text>
-                              <rect className="fill-muted" x="166" y="168.27272727272728" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-muted-foreground" x="197" y="168.27272727272728" width="25" height="6" rx="3" fillOpacity="0.45"></rect>
-                              <circle cx="232" cy="171.27272727272728" r="3.8112033195020745" fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity="0.6" strokeWidth="1.5"></circle>
+                              <rect className="fill-muted" x={166} y={168.27272727272728} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-muted-foreground" x={197} y={168.27272727272728} width={25} height={6} rx={3} fillOpacity={0.45}></rect>
+                              <circle cx={232} cy={171.27272727272728} r={3.8112033195020745} fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity={0.6} strokeWidth={1.5}></circle>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="962" y="263.45454545454544" width="156" height="36" fill="transparent"></rect>
-                              <rect className="fill-muted" x="972" y="278.45454545454544" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-destructive" x="972" y="278.45454545454544" width="17" height="6" rx="3" fillOpacity="0.85"></rect>
-                              <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="281.45454545454544" dominantBaseline="central">
+                              <rect x={962} y={263.45454545454544} width={156} height={36} fill="transparent"></rect>
+                              <rect className="fill-muted" x={972} y={278.45454545454544} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-destructive" x={972} y={278.45454545454544} width={17} height={6} rx={3} fillOpacity={0.85}></rect>
+                              <text className="fill-foreground font-medium tabular-nums text-xs" x={1038} y={281.45454545454544} dominantBaseline="central">
                                 {"22%"}
                               </text>
-                              <text className="fill-destructive font-medium tabular-nums text-xs" x="1116" y="281.45454545454544" textAnchor="end" dominantBaseline="central">
+                              <text className="fill-destructive font-medium tabular-nums text-xs" x={1116} y={281.45454545454544} textAnchor="end" dominantBaseline="central">
                                 {"-3"}
                               </text>
-                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="281.45454545454544" r="3.8112033195020745" fill="var(--background)" stroke="var(--destructive)" strokeWidth="1.5"></circle>
+                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx={962} cy={281.45454545454544} r={3.8112033195020745} fill="var(--background)" stroke="var(--destructive)" strokeWidth={1.5}></circle>
                             </g>
                           </g>
                           <g className="recharts-layer recharts-line-dots">
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="0" y="263.45454545454544" width="232" height="36" fill="transparent"></rect>
-                              <text className="text-[13px]" x="156" y="281.45454545454544" textAnchor="end" dominantBaseline="central">
+                              <rect x={0} y={263.45454545454544} width={232} height={36} fill="transparent"></rect>
+                              <text className="text-[13px]" x={156} y={281.45454545454544} textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
                                   {"Newsletter"}
                                 </tspan>
@@ -472,27 +472,27 @@ export function Pattern() {
                                   {"1,260"}
                                 </tspan>
                               </text>
-                              <rect className="fill-muted" x="166" y="278.45454545454544" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-muted-foreground" x="207" y="278.45454545454544" width="15" height="6" rx="3" fillOpacity="0.45"></rect>
-                              <circle cx="232" cy="281.45454545454544" r="3.5" fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity="0.6" strokeWidth="1.5"></circle>
+                              <rect className="fill-muted" x={166} y={278.45454545454544} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-muted-foreground" x={207} y={278.45454545454544} width={15} height={6} rx={3} fillOpacity={0.45}></rect>
+                              <circle cx={232} cy={281.45454545454544} r={3.5} fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity={0.6} strokeWidth={1.5}></circle>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="962" y="153.27272727272728" width="156" height="36" fill="transparent"></rect>
-                              <rect className="fill-muted" x="972" y="168.27272727272728" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-success" x="972" y="168.27272727272728" width="24" height="6" rx="3" fillOpacity="0.85"></rect>
-                              <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="171.27272727272728" dominantBaseline="central">
+                              <rect x={962} y={153.27272727272728} width={156} height={36} fill="transparent"></rect>
+                              <rect className="fill-muted" x={972} y={168.27272727272728} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-success" x={972} y={168.27272727272728} width={24} height={6} rx={3} fillOpacity={0.85}></rect>
+                              <text className="fill-foreground font-medium tabular-nums text-xs" x={1038} y={171.27272727272728} dominantBaseline="central">
                                 {"32%"}
                               </text>
-                              <text className="fill-success font-medium tabular-nums text-xs" x="1116" y="171.27272727272728" textAnchor="end" dominantBaseline="central">
+                              <text className="fill-success font-medium tabular-nums text-xs" x={1116} y={171.27272727272728} textAnchor="end" dominantBaseline="central">
                                 {"+3"}
                               </text>
-                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="171.27272727272728" r="3.5" fill="var(--background)" stroke="var(--success)" strokeWidth="1.5"></circle>
+                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx={962} cy={171.27272727272728} r={3.5} fill="var(--background)" stroke="var(--success)" strokeWidth={1.5}></circle>
                             </g>
                           </g>
                           <g className="recharts-layer recharts-line-dots">
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="0" y="79.81818181818181" width="232" height="36" fill="transparent"></rect>
-                              <text className="text-[13px]" x="156" y="97.81818181818181" textAnchor="end" dominantBaseline="central">
+                              <rect x={0} y={79.81818181818181} width={232} height={36} fill="transparent"></rect>
+                              <text className="text-[13px]" x={156} y={97.81818181818181} textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
                                   {"Organic Search"}
                                 </tspan>
@@ -500,27 +500,27 @@ export function Pattern() {
                                   {"3,240"}
                                 </tspan>
                               </text>
-                              <rect className="fill-muted" x="166" y="94.81818181818181" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-muted-foreground" x="184" y="94.81818181818181" width="38" height="6" rx="3" fillOpacity="0.45"></rect>
-                              <circle cx="232" cy="97.81818181818181" r="4.602697095435685" fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity="0.6" strokeWidth="1.5"></circle>
+                              <rect className="fill-muted" x={166} y={94.81818181818181} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-muted-foreground" x={184} y={94.81818181818181} width={38} height={6} rx={3} fillOpacity={0.45}></rect>
+                              <circle cx={232} cy={97.81818181818181} r={4.602697095435685} fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity={0.6} strokeWidth={1.5}></circle>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="962" y="226.72727272727275" width="156" height="36" fill="transparent"></rect>
-                              <rect className="fill-muted" x="972" y="241.72727272727275" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-destructive" x="972" y="241.72727272727275" width="21" height="6" rx="3" fillOpacity="0.85"></rect>
-                              <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="244.72727272727275" dominantBaseline="central">
+                              <rect x={962} y={226.72727272727275} width={156} height={36} fill="transparent"></rect>
+                              <rect className="fill-muted" x={972} y={241.72727272727275} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-destructive" x={972} y={241.72727272727275} width={21} height={6} rx={3} fillOpacity={0.85}></rect>
+                              <text className="fill-foreground font-medium tabular-nums text-xs" x={1038} y={244.72727272727275} dominantBaseline="central">
                                 {"28%"}
                               </text>
-                              <text className="fill-destructive font-medium tabular-nums text-xs" x="1116" y="244.72727272727275" textAnchor="end" dominantBaseline="central">
+                              <text className="fill-destructive font-medium tabular-nums text-xs" x={1116} y={244.72727272727275} textAnchor="end" dominantBaseline="central">
                                 {"-4"}
                               </text>
-                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="244.72727272727275" r="4.602697095435685" fill="var(--background)" stroke="var(--destructive)" strokeWidth="1.5"></circle>
+                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx={962} cy={244.72727272727275} r={4.602697095435685} fill="var(--background)" stroke="var(--destructive)" strokeWidth={1.5}></circle>
                             </g>
                           </g>
                           <g className="recharts-layer recharts-line-dots">
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="0" y="190" width="232" height="36" fill="transparent"></rect>
-                              <text className="text-[13px]" x="156" y="208" textAnchor="end" dominantBaseline="central">
+                              <rect x={0} y={190} width={232} height={36} fill="transparent"></rect>
+                              <text className="text-[13px]" x={156} y={208} textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
                                   {"Affiliates"}
                                 </tspan>
@@ -528,27 +528,27 @@ export function Pattern() {
                                   {"1,730"}
                                 </tspan>
                               </text>
-                              <rect className="fill-muted" x="166" y="205" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-muted-foreground" x="202" y="205" width="20" height="6" rx="3" fillOpacity="0.45"></rect>
-                              <circle cx="232" cy="208" r="3.5062240663900415" fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity="0.6" strokeWidth="1.5"></circle>
+                              <rect className="fill-muted" x={166} y={205} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-muted-foreground" x={202} y={205} width={20} height={6} rx={3} fillOpacity={0.45}></rect>
+                              <circle cx={232} cy={208} r={3.5062240663900415} fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity={0.6} strokeWidth={1.5}></circle>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="962" y="336.90909090909093" width="156" height="36" fill="transparent"></rect>
-                              <rect className="fill-muted" x="972" y="351.90909090909093" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-destructive" x="972" y="351.90909090909093" width="7" height="6" rx="3" fillOpacity="0.85"></rect>
-                              <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="354.90909090909093" dominantBaseline="central">
+                              <rect x={962} y={336.90909090909093} width={156} height={36} fill="transparent"></rect>
+                              <rect className="fill-muted" x={972} y={351.90909090909093} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-destructive" x={972} y={351.90909090909093} width={7} height={6} rx={3} fillOpacity={0.85}></rect>
+                              <text className="fill-foreground font-medium tabular-nums text-xs" x={1038} y={354.90909090909093} dominantBaseline="central">
                                 {"10%"}
                               </text>
-                              <text className="fill-destructive font-medium tabular-nums text-xs" x="1116" y="354.90909090909093" textAnchor="end" dominantBaseline="central">
+                              <text className="fill-destructive font-medium tabular-nums text-xs" x={1116} y={354.90909090909093} textAnchor="end" dominantBaseline="central">
                                 {"-4"}
                               </text>
-                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="354.90909090909093" r="3.5062240663900415" fill="var(--background)" stroke="var(--destructive)" strokeWidth="1.5"></circle>
+                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx={962} cy={354.90909090909093} r={3.5062240663900415} fill="var(--background)" stroke="var(--destructive)" strokeWidth={1.5}></circle>
                             </g>
                           </g>
                           <g className="recharts-layer recharts-line-dots">
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="0" y="373.6363636363636" width="232" height="36" fill="transparent"></rect>
-                              <text className="text-[13px]" x="156" y="391.6363636363636" textAnchor="end" dominantBaseline="central">
+                              <rect x={0} y={373.6363636363636} width={232} height={36} fill="transparent"></rect>
+                              <text className="text-[13px]" x={156} y={391.6363636363636} textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
                                   {"Events"}
                                 </tspan>
@@ -556,27 +556,27 @@ export function Pattern() {
                                   {"410"}
                                 </tspan>
                               </text>
-                              <rect className="fill-muted" x="166" y="388.6363636363636" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-muted-foreground" x="217" y="388.6363636363636" width="5" height="6" rx="3" fillOpacity="0.45"></rect>
-                              <circle cx="232" cy="391.6363636363636" r="3.5" fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity="0.6" strokeWidth="1.5"></circle>
+                              <rect className="fill-muted" x={166} y={388.6363636363636} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-muted-foreground" x={217} y={388.6363636363636} width={5} height={6} rx={3} fillOpacity={0.45}></rect>
+                              <circle cx={232} cy={391.6363636363636} r={3.5} fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity={0.6} strokeWidth={1.5}></circle>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="962" y="190" width="156" height="36" fill="transparent"></rect>
-                              <rect className="fill-muted" x="972" y="205" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-success" x="972" y="205" width="24" height="6" rx="3" fillOpacity="0.85"></rect>
-                              <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="208" dominantBaseline="central">
+                              <rect x={962} y={190} width={156} height={36} fill="transparent"></rect>
+                              <rect className="fill-muted" x={972} y={205} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-success" x={972} y={205} width={24} height={6} rx={3} fillOpacity={0.85}></rect>
+                              <text className="fill-foreground font-medium tabular-nums text-xs" x={1038} y={208} dominantBaseline="central">
                                 {"32%"}
                               </text>
-                              <text className="fill-success font-medium tabular-nums text-xs" x="1116" y="208" textAnchor="end" dominantBaseline="central">
+                              <text className="fill-success font-medium tabular-nums text-xs" x={1116} y={208} textAnchor="end" dominantBaseline="central">
                                 {"+5"}
                               </text>
-                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="208" r="3.5" fill="var(--background)" stroke="var(--success)" strokeWidth="1.5"></circle>
+                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx={962} cy={208} r={3.5} fill="var(--background)" stroke="var(--success)" strokeWidth={1.5}></circle>
                             </g>
                           </g>
                           <g className="recharts-layer recharts-line-dots">
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="0" y="226.72727272727275" width="232" height="36" fill="transparent"></rect>
-                              <text className="text-[13px]" x="156" y="244.72727272727275" textAnchor="end" dominantBaseline="central">
+                              <rect x={0} y={226.72727272727275} width={232} height={36} fill="transparent"></rect>
+                              <text className="text-[13px]" x={156} y={244.72727272727275} textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
                                   {"Referrals"}
                                 </tspan>
@@ -584,27 +584,27 @@ export function Pattern() {
                                   {"1,480"}
                                 </tspan>
                               </text>
-                              <rect className="fill-muted" x="166" y="241.72727272727275" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-muted-foreground" x="205" y="241.72727272727275" width="17" height="6" rx="3" fillOpacity="0.45"></rect>
-                              <circle cx="232" cy="244.72727272727275" r="3.5" fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity="0.6" strokeWidth="1.5"></circle>
+                              <rect className="fill-muted" x={166} y={241.72727272727275} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-muted-foreground" x={205} y={241.72727272727275} width={17} height={6} rx={3} fillOpacity={0.45}></rect>
+                              <circle cx={232} cy={244.72727272727275} r={3.5} fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity={0.6} strokeWidth={1.5}></circle>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="962" y="6.363636363636363" width="156" height="36" fill="transparent"></rect>
-                              <rect className="fill-muted" x="972" y="21.363636363636363" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-success" x="972" y="21.363636363636363" width="37" height="6" rx="3" fillOpacity="0.85"></rect>
-                              <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="24.363636363636363" dominantBaseline="central">
+                              <rect x={962} y={6.363636363636363} width={156} height={36} fill="transparent"></rect>
+                              <rect className="fill-muted" x={972} y={21.363636363636363} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-success" x={972} y={21.363636363636363} width={37} height={6} rx={3} fillOpacity={0.85}></rect>
+                              <text className="fill-foreground font-medium tabular-nums text-xs" x={1038} y={24.363636363636363} dominantBaseline="central">
                                 {"49%"}
                               </text>
-                              <text className="fill-success font-medium tabular-nums text-xs" x="1116" y="24.363636363636363" textAnchor="end" dominantBaseline="central">
+                              <text className="fill-success font-medium tabular-nums text-xs" x={1116} y={24.363636363636363} textAnchor="end" dominantBaseline="central">
                                 {"+6"}
                               </text>
-                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="24.363636363636363" r="3.5" fill="var(--background)" stroke="var(--success)" strokeWidth="1.5"></circle>
+                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx={962} cy={24.363636363636363} r={3.5} fill="var(--background)" stroke="var(--success)" strokeWidth={1.5}></circle>
                             </g>
                           </g>
                           <g className="recharts-layer recharts-line-dots">
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="0" y="300.1818181818182" width="232" height="36" fill="transparent"></rect>
-                              <text className="text-[13px]" x="156" y="318.1818181818182" textAnchor="end" dominantBaseline="central">
+                              <rect x={0} y={300.1818181818182} width={232} height={36} fill="transparent"></rect>
+                              <text className="text-[13px]" x={156} y={318.1818181818182} textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
                                   {"Partner Directory"}
                                 </tspan>
@@ -612,27 +612,27 @@ export function Pattern() {
                                   {"980"}
                                 </tspan>
                               </text>
-                              <rect className="fill-muted" x="166" y="315.1818181818182" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-muted-foreground" x="211" y="315.1818181818182" width="11" height="6" rx="3" fillOpacity="0.45"></rect>
-                              <circle cx="232" cy="318.1818181818182" r="3.5" fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity="0.6" strokeWidth="1.5"></circle>
+                              <rect className="fill-muted" x={166} y={315.1818181818182} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-muted-foreground" x={211} y={315.1818181818182} width={11} height={6} rx={3} fillOpacity={0.45}></rect>
+                              <circle cx={232} cy={318.1818181818182} r={3.5} fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity={0.6} strokeWidth={1.5}></circle>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="962" y="43.090909090909086" width="156" height="36" fill="transparent"></rect>
-                              <rect className="fill-muted" x="972" y="58.090909090909086" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-success" x="972" y="58.090909090909086" width="30" height="6" rx="3" fillOpacity="0.85"></rect>
-                              <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="61.090909090909086" dominantBaseline="central">
+                              <rect x={962} y={43.090909090909086} width={156} height={36} fill="transparent"></rect>
+                              <rect className="fill-muted" x={972} y={58.090909090909086} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-success" x={972} y={58.090909090909086} width={30} height={6} rx={3} fillOpacity={0.85}></rect>
+                              <text className="fill-foreground font-medium tabular-nums text-xs" x={1038} y={61.090909090909086} dominantBaseline="central">
                                 {"40%"}
                               </text>
-                              <text className="fill-success font-medium tabular-nums text-xs" x="1116" y="61.090909090909086" textAnchor="end" dominantBaseline="central">
+                              <text className="fill-success font-medium tabular-nums text-xs" x={1116} y={61.090909090909086} textAnchor="end" dominantBaseline="central">
                                 {"+7"}
                               </text>
-                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="61.090909090909086" r="3.5" fill="var(--background)" stroke="var(--success)" strokeWidth="1.5"></circle>
+                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx={962} cy={61.090909090909086} r={3.5} fill="var(--background)" stroke="var(--success)" strokeWidth={1.5}></circle>
                             </g>
                           </g>
                           <g className="recharts-layer recharts-line-dots">
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="0" y="336.90909090909093" width="232" height="36" fill="transparent"></rect>
-                              <text className="text-[13px]" x="156" y="354.90909090909093" textAnchor="end" dominantBaseline="central">
+                              <rect x={0} y={336.90909090909093} width={232} height={36} fill="transparent"></rect>
+                              <text className="text-[13px]" x={156} y={354.90909090909093} textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
                                   {"Webinars"}
                                 </tspan>
@@ -640,27 +640,27 @@ export function Pattern() {
                                   {"640"}
                                 </tspan>
                               </text>
-                              <rect className="fill-muted" x="166" y="351.90909090909093" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-muted-foreground" x="215" y="351.90909090909093" width="7" height="6" rx="3" fillOpacity="0.45"></rect>
-                              <circle cx="232" cy="354.90909090909093" r="3.5" fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity="0.6" strokeWidth="1.5"></circle>
+                              <rect className="fill-muted" x={166} y={351.90909090909093} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-muted-foreground" x={215} y={351.90909090909093} width={7} height={6} rx={3} fillOpacity={0.45}></rect>
+                              <circle cx={232} cy={354.90909090909093} r={3.5} fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity={0.6} strokeWidth={1.5}></circle>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="962" y="79.81818181818181" width="156" height="36" fill="transparent"></rect>
-                              <rect className="fill-muted" x="972" y="94.81818181818181" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-success" x="972" y="94.81818181818181" width="29" height="6" rx="3" fillOpacity="0.85"></rect>
-                              <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="97.81818181818181" dominantBaseline="central">
+                              <rect x={962} y={79.81818181818181} width={156} height={36} fill="transparent"></rect>
+                              <rect className="fill-muted" x={972} y={94.81818181818181} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-success" x={972} y={94.81818181818181} width={29} height={6} rx={3} fillOpacity={0.85}></rect>
+                              <text className="fill-foreground font-medium tabular-nums text-xs" x={1038} y={97.81818181818181} dominantBaseline="central">
                                 {"39%"}
                               </text>
-                              <text className="fill-success font-medium tabular-nums text-xs" x="1116" y="97.81818181818181" textAnchor="end" dominantBaseline="central">
+                              <text className="fill-success font-medium tabular-nums text-xs" x={1116} y={97.81818181818181} textAnchor="end" dominantBaseline="central">
                                 {"+7"}
                               </text>
-                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="97.81818181818181" r="3.5" fill="var(--background)" stroke="var(--success)" strokeWidth="1.5"></circle>
+                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx={962} cy={97.81818181818181} r={3.5} fill="var(--background)" stroke="var(--success)" strokeWidth={1.5}></circle>
                             </g>
                           </g>
                           <g className="recharts-layer recharts-line-dots">
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="0" y="6.363636363636363" width="232" height="36" fill="transparent"></rect>
-                              <text className="text-[13px]" x="156" y="24.363636363636363" textAnchor="end" dominantBaseline="central">
+                              <rect x={0} y={6.363636363636363} width={232} height={36} fill="transparent"></rect>
+                              <text className="text-[13px]" x={156} y={24.363636363636363} textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
                                   {"Paid Search"}
                                 </tspan>
@@ -668,27 +668,27 @@ export function Pattern() {
                                   {"4,820"}
                                 </tspan>
                               </text>
-                              <rect className="fill-muted" x="166" y="21.363636363636363" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-muted-foreground" x="166" y="21.363636363636363" width="56" height="6" rx="3" fillOpacity="0.45"></rect>
-                              <circle cx="232" cy="24.363636363636363" r="5.75" fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity="0.6" strokeWidth="1.5"></circle>
+                              <rect className="fill-muted" x={166} y={21.363636363636363} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-muted-foreground" x={166} y={21.363636363636363} width={56} height={6} rx={3} fillOpacity={0.45}></rect>
+                              <circle cx={232} cy={24.363636363636363} r={5.75} fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity={0.6} strokeWidth={1.5}></circle>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="962" y="300.1818181818182" width="156" height="36" fill="transparent"></rect>
-                              <rect className="fill-muted" x="972" y="315.1818181818182" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-destructive" x="972" y="315.1818181818182" width="14" height="6" rx="3" fillOpacity="0.85"></rect>
-                              <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="318.1818181818182" dominantBaseline="central">
+                              <rect x={962} y={300.1818181818182} width={156} height={36} fill="transparent"></rect>
+                              <rect className="fill-muted" x={972} y={315.1818181818182} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-destructive" x={972} y={315.1818181818182} width={14} height={6} rx={3} fillOpacity={0.85}></rect>
+                              <text className="fill-foreground font-medium tabular-nums text-xs" x={1038} y={318.1818181818182} dominantBaseline="central">
                                 {"19%"}
                               </text>
-                              <text className="fill-destructive font-medium tabular-nums text-xs" x="1116" y="318.1818181818182" textAnchor="end" dominantBaseline="central">
+                              <text className="fill-destructive font-medium tabular-nums text-xs" x={1116} y={318.1818181818182} textAnchor="end" dominantBaseline="central">
                                 {"-8"}
                               </text>
-                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="318.1818181818182" r="5.75" fill="var(--background)" stroke="var(--destructive)" strokeWidth="1.5"></circle>
+                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx={962} cy={318.1818181818182} r={5.75} fill="var(--background)" stroke="var(--destructive)" strokeWidth={1.5}></circle>
                             </g>
                           </g>
                           <g className="recharts-layer recharts-line-dots">
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="0" y="43.090909090909086" width="232" height="36" fill="transparent"></rect>
-                              <text className="text-[13px]" x="156" y="61.090909090909086" textAnchor="end" dominantBaseline="central">
+                              <rect x={0} y={43.090909090909086} width={232} height={36} fill="transparent"></rect>
+                              <text className="text-[13px]" x={156} y={61.090909090909086} textAnchor="end" dominantBaseline="central">
                                 <tspan className="fill-foreground">
                                   {"Paid Social"}
                                 </tspan>
@@ -696,28 +696,28 @@ export function Pattern() {
                                   {"3,910"}
                                 </tspan>
                               </text>
-                              <rect className="fill-muted" x="166" y="58.090909090909086" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-muted-foreground" x="177" y="58.090909090909086" width="45" height="6" rx="3" fillOpacity="0.45"></rect>
-                              <circle cx="232" cy="61.090909090909086" r="5.089211618257261" fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity="0.6" strokeWidth="1.5"></circle>
+                              <rect className="fill-muted" x={166} y={58.090909090909086} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-muted-foreground" x={177} y={58.090909090909086} width={45} height={6} rx={3} fillOpacity={0.45}></rect>
+                              <circle cx={232} cy={61.090909090909086} r={5.089211618257261} fill="var(--background)" stroke="var(--muted-foreground)" strokeOpacity={0.6} strokeWidth={1.5}></circle>
                             </g>
                             <g className="cursor-pointer duration-200 motion-reduce:transition-none transition-opacity">
-                              <rect x="962" y="373.6363636363636" width="156" height="36" fill="transparent"></rect>
-                              <rect className="fill-muted" x="972" y="388.6363636363636" width="56" height="6" rx="3"></rect>
-                              <rect className="fill-destructive" x="972" y="388.6363636363636" width="5" height="6" rx="3" fillOpacity="0.85"></rect>
-                              <text className="fill-foreground font-medium tabular-nums text-xs" x="1038" y="391.6363636363636" dominantBaseline="central">
+                              <rect x={962} y={373.6363636363636} width={156} height={36} fill="transparent"></rect>
+                              <rect className="fill-muted" x={972} y={388.6363636363636} width={56} height={6} rx={3}></rect>
+                              <rect className="fill-destructive" x={972} y={388.6363636363636} width={5} height={6} rx={3} fillOpacity={0.85}></rect>
+                              <text className="fill-foreground font-medium tabular-nums text-xs" x={1038} y={391.6363636363636} dominantBaseline="central">
                                 {"7%"}
                               </text>
-                              <text className="fill-destructive font-medium tabular-nums text-xs" x="1116" y="391.6363636363636" textAnchor="end" dominantBaseline="central">
+                              <text className="fill-destructive font-medium tabular-nums text-xs" x={1116} y={391.6363636363636} textAnchor="end" dominantBaseline="central">
                                 {"-9"}
                               </text>
-                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx="962" cy="391.6363636363636" r="5.089211618257261" fill="var(--background)" stroke="var(--destructive)" strokeWidth="1.5"></circle>
+                              <circle className="duration-200 motion-reduce:transition-none transition-[fill]" cx={962} cy={391.6363636363636} r={5.089211618257261} fill="var(--background)" stroke="var(--destructive)" strokeWidth={1.5}></circle>
                             </g>
                           </g>
                         </g>
-                        <g className="recharts-zIndex-layer_1000" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_1100" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_1200" tabIndex="-1"></g>
-                        <g className="recharts-zIndex-layer_2000" tabIndex="-1"></g>
+                        <g className="recharts-zIndex-layer_1000" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_1100" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_1200" tabIndex={-1}></g>
+                        <g className="recharts-zIndex-layer_2000" tabIndex={-1}></g>
                       </svg>
                     </div>
                   </div>
@@ -765,7 +765,7 @@ export function Pattern() {
         <footer className="flex flex-col gap-(--frame-panel-footer-gap) min-w-0 px-(--frame-panel-footer-px) py-(--frame-panel-footer-py)">
           <div className="flex gap-4 items-center justify-between min-h-6 min-w-0 w-full" style={{opacity: "1", transform: "none"}}>
             <p className="flex gap-2 items-center leading-5 min-w-0 text-[13px] text-muted-foreground">
-              <svg className="lucide lucide-lightbulb shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="LightbulbIcon" tabler="IconBulb" hugeicons="BulbIcon" phosphor="LightbulbIcon" remixicon="RiLightbulbLine" aria-hidden="true">
+              <svg className="lucide lucide-lightbulb shrink-0 size-4 text-muted-foreground" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="LightbulbIcon" tabler="IconBulb" hugeicons="BulbIcon" phosphor="LightbulbIcon" remixicon="RiLightbulbLine" aria-hidden="true">
                 <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"></path>
                 <path d="M9 18h6"></path>
                 <path d="M10 22h4"></path>

@@ -19,17 +19,17 @@ export function Pattern() {
                   {"Build production-ready interfaces with flexible NeUI blocks, AI-friendly workflows, and components designed for fast customization."}
                 </p>
                 <div className="[--primary-foreground:var(--color-amber-950)] [--primary:var(--color-amber-300)] [--secondary-foreground:var(--color-white)] [--secondary:oklch(1_0_0_/_0.1)] flex flex-wrap gap-x-4 gap-y-2 items-center">
-                  <Button className="shadow-2xs" href="#" role="button" tabIndex="0">
+                  <Button className="shadow-2xs" href="#" role="button" tabIndex={0}>
                     {"Start Building"}
                   </Button>
-                  <Button className="shadow-xs" href="#" role="button" tabIndex="0">
+                  <Button className="shadow-xs" href="#" role="button" tabIndex={0}>
                     {"Read Docs"}
                   </Button>
                 </div>
               </div>
               <ul className="@min-[1240px]:pe-12 @min-[900px]:flex-1 @min-[900px]:max-w-xl @min-[900px]:min-w-px @min-[900px]:pe-8 flex flex-col gap-5">
                 <li className="flex gap-1.5 items-start">
-                  <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                  <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-white" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
                   <span className="leading-5 text-foreground text-sm">
@@ -37,7 +37,7 @@ export function Pattern() {
                   </span>
                 </li>
                 <li className="flex gap-1.5 items-start">
-                  <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                  <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-white" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
                   <span className="leading-5 text-foreground text-sm">
@@ -45,7 +45,7 @@ export function Pattern() {
                   </span>
                 </li>
                 <li className="flex gap-1.5 items-start">
-                  <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                  <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-white" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
                   <span className="leading-5 text-foreground text-sm">
@@ -53,7 +53,7 @@ export function Pattern() {
                   </span>
                 </li>
                 <li className="flex gap-1.5 items-start">
-                  <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
+                  <svg className="lucide lucide-check mt-0.5 shrink-0 size-4 text-white" xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" lucide="CheckIcon" tabler="IconCheck" hugeicons="Tick02Icon" phosphor="CheckIcon" remixicon="RiCheckLine" aria-hidden="true">
                     <path d="M20 6 9 17l-5-5"></path>
                   </svg>
                   <span className="leading-5 text-foreground text-sm">
