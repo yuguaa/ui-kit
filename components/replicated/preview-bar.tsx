@@ -14,7 +14,7 @@ export function PreviewBar({
   hrefFor: (name: string) => string
 }) {
   return (
-    <div className="border-border bg-background/85 fixed inset-x-0 top-0 z-50 border-b backdrop-blur-md">
+    <div className="border-border bg-background/85 sticky top-0 z-[60] border-b backdrop-blur-md">
       <div className="flex flex-wrap items-center gap-x-3 gap-y-1 px-3 py-1.5 text-xs">
         <Link href="/replicated" className="hover:text-primary font-medium whitespace-nowrap">
           ← 复刻资产索引

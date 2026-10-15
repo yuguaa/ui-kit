@@ -51,6 +51,7 @@ function FooterLinkGroup({
 export function SiteFooter({ className }: { className?: string }) {
   return (
     <footer
+      data-slot="site-footer"
       className={cn(
         "site-theme-container font-site-sans bg-site-background text-site-foreground relative",
         className

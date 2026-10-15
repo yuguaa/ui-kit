@@ -1,70 +1,86 @@
 import type { Metadata } from "next"
-import Link from "next/link"
-import { readdir } from "node:fs/promises"
+import { readdir, readFile } from "node:fs/promises"
 import path from "node:path"
 
-import { SnapshotNav } from "@/components/replicated/snapshot-nav"
+import { CatalogPageHero } from "@/components/catalog-page-hero"
+import { SnapshotCard } from "@/components/replicated/snapshot-card"
 
 export const metadata: Metadata = {
-  title: "Templates · ReUI 复刻",
+  title: "Templates",
+  description: "从 reui.io 复刻到本地的全部模板页面快照。",
 }
 
-/** 扫描模板复刻目录，返回 模板 → 页面列表 */
-async function scanTemplates() {
+type CatalogTemplate = { slug: string; name: string; category: string }
+
+/** 代表页面：优先 index，其次 dashboard/home，否则第一页 */
+function pickCover(pages: string[]) {
+  return pages.find((p) => p === "index") ?? pages.find((p) => /dashboard|home/.test(p)) ?? pages[0]
+}
+
+export default async function ReplicatedTemplatesPage() {
+  const catalog = JSON.parse(
+    await readFile(path.join(process.cwd(), "templates/templates-catalog.json"), "utf8"),
+  ) as { templates: CatalogTemplate[] }
+
   const root = path.join(process.cwd(), "replicated/templates")
-  const result = new Map<string, string[]>()
-  let entries: string[] = []
-  try {
-    entries = (await readdir(root, { withFileTypes: true }))
-      .filter((e) => e.isDirectory())
-      .map((e) => e.name)
-  } catch {
-    return result
-  }
-  for (const slug of entries.sort()) {
-    const files = await readdir(path.join(root, slug))
-    result.set(
-      slug,
-      files
+  const entries: { template: CatalogTemplate; pages: string[]; cover: string }[] = []
+
+  for (const template of catalog.templates) {
+    let pages: string[] = []
+    try {
+      pages = (await readdir(path.join(root, template.slug)))
         .filter((f) => f.endsWith(".html"))
         .map((f) => f.replace(/\.html$/, ""))
-        .sort(),
-    )
+        .sort()
+    } catch {
+      continue
+    }
+    if (pages.length === 0) continue
+    entries.push({ template, pages, cover: pickCover(pages) })
   }
-  return result
-}
 
-export default async function ReplicatedTemplatesIndex() {
-  const templates = await scanTemplates()
-  const total = [...templates.values()].reduce((sum, pages) => sum + pages.length, 0)
+  const groups = new Map<string, typeof entries>()
+  for (const entry of entries) {
+    const list = groups.get(entry.template.category) ?? []
+    list.push(entry)
+    groups.set(entry.template.category, list)
+  }
+
+  const totalPages = entries.reduce((sum, e) => sum + e.pages.length, 0)
 
   return (
-    <div className="bg-background text-foreground min-h-svh">
-      <SnapshotNav current="templates" />
-      <div className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-semibold tracking-tight">Templates</h1>
-        <p className="text-muted-foreground mt-2 text-sm">
-          共 <strong>{templates.size}</strong> 个模板、<strong>{total}</strong> 个页面
-        </p>
+    <>
+      <CatalogPageHero
+        badge="Templates"
+        title="Templates"
+        count={entries.length}
+        description={`从 reui.io 复刻到本地的 ${entries.length} 个完整模板，共 ${totalPages} 个页面快照。点击模板查看其全部页面。`}
+        titleId="templates-page-title"
+      />
 
-        {[...templates.entries()].map(([slug, pages]) => (
-          <section key={slug} className="mt-8">
-            <h2 className="text-lg font-semibold">{slug}</h2>
-            <ul className="mt-2 flex flex-wrap gap-1.5">
-              {pages.map((page) => (
-                <li key={page}>
-                  <Link
-                    href={`/replicated/templates/${slug}/${page}`}
-                    className="border-border hover:bg-accent block rounded border px-2 py-0.5 font-mono text-xs"
-                  >
-                    {page}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))}
+      <div className="container-wrapper pb-16">
+        <div className="container">
+          {[...groups.entries()].map(([category, list]) => (
+            <section key={category} className="mt-10 first:mt-2">
+              <h2 className="text-site-foreground mb-4 text-xl font-semibold tracking-tight">
+                {category}
+              </h2>
+              <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                {list.map(({ template, pages, cover }) => (
+                  <SnapshotCard
+                    key={template.slug}
+                    href={`/replicated/templates/${template.slug}`}
+                    src={`/api/replicated-template/${template.slug}/${cover}`}
+                    title={template.name}
+                    description={`${template.slug} · ${pages.length} 个页面`}
+                    height={300}
+                  />
+                ))}
+              </div>
+            </section>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   )
 }

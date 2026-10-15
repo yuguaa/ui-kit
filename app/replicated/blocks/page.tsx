@@ -1,79 +1,69 @@
 import type { Metadata } from "next"
 import Link from "next/link"
-import { readdir } from "node:fs/promises"
+import { readFile } from "node:fs/promises"
 import path from "node:path"
 
-import { SnapshotNav } from "@/components/replicated/snapshot-nav"
+import { CatalogPageHero } from "@/components/catalog-page-hero"
+import { CategoryCard } from "@/components/replicated/category-card"
 
 export const metadata: Metadata = {
-  title: "Blocks · ReUI 复刻",
+  title: "Blocks",
+  description: "从 reui.io 复刻到本地的全部区块渲染快照。",
 }
 
-/** 扫描复刻目录，返回 分组 → 分类 → slug 列表 */
-async function scanBlocks() {
-  const root = path.join(process.cwd(), "replicated/blocks")
-  const groups = new Map<string, Map<string, string[]>>()
+type CatalogBlock = { slug: string; name: string; category: string; group: string }
 
-  for (const group of await readdir(root, { withFileTypes: true })) {
-    if (!group.isDirectory()) continue
-    const categories = new Map<string, string[]>()
-    for (const cat of await readdir(path.join(root, group.name), { withFileTypes: true })) {
-      if (!cat.isDirectory()) continue
-      const files = await readdir(path.join(root, group.name, cat.name))
-      categories.set(
-        cat.name,
-        files
-          .filter((f) => f.endsWith(".html"))
-          .map((f) => f.replace(/\.html$/, ""))
-          .sort((a, b) => a.localeCompare(b, "en", { numeric: true })),
-      )
-    }
-    groups.set(group.name, categories)
+/** 读取 block 清单，按分组与分类汇总 */
+async function loadCatalog() {
+  const raw = await readFile(path.join(process.cwd(), "blocks/blocks-catalog.json"), "utf8")
+  const catalog = JSON.parse(raw) as { blocks: CatalogBlock[] }
+
+  const groups = new Map<string, Map<string, CatalogBlock[]>>()
+  for (const block of catalog.blocks) {
+    const [, name] = block.category.split("/")
+    if (!groups.has(block.group)) groups.set(block.group, new Map())
+    const categories = groups.get(block.group)!
+    if (!categories.has(name)) categories.set(name, [])
+    categories.get(name)!.push(block)
   }
-  return groups
+  return { groups, total: catalog.blocks.length }
 }
 
-export default async function ReplicatedBlocksIndex() {
-  const blocks = await scanBlocks()
-  const total = [...blocks.values()].reduce(
-    (sum, cats) => sum + [...cats.values()].reduce((n, list) => n + list.length, 0),
-    0,
-  )
+export default async function ReplicatedBlocksPage() {
+  const { groups, total } = await loadCatalog()
 
   return (
-    <div className="bg-background text-foreground min-h-svh">
-      <SnapshotNav current="blocks" />
-      <div className="mx-auto w-full max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
-        <h1 className="text-3xl font-semibold tracking-tight">Blocks</h1>
-        <p className="text-muted-foreground mt-2 text-sm">
-          共 <strong>{total}</strong> 个 blocks，覆盖 {blocks.size} 个分组
-        </p>
+    <>
+      <CatalogPageHero
+        badge="Blocks"
+        title="Blocks"
+        count={total}
+        description={`从 reui.io 复刻到本地的 ${total} 个区块渲染快照，覆盖 ${groups.size} 个分组。点击分类查看该分类下的全部区块。`}
+        titleId="blocks-page-title"
+      />
 
-        {[...blocks.entries()].map(([group, categories]) => (
-          <section key={group} className="mt-10">
-            <h2 className="text-xl font-semibold capitalize">{group}</h2>
-            {[...categories.entries()].map(([category, slugs]) => (
-              <div key={category} className="mt-4">
-                <h3 className="text-muted-foreground text-sm font-medium">
-                  {category} <span className="opacity-60">({slugs.length})</span>
-                </h3>
-                <ul className="mt-2 flex flex-wrap gap-1.5">
-                  {slugs.map((slug) => (
-                    <li key={slug}>
-                      <Link
-                        href={`/replicated/blocks/${group}/${category}/${slug}`}
-                        className="border-border hover:bg-accent block rounded border px-2 py-0.5 font-mono text-xs"
-                      >
-                        {slug}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+      <div className="container-wrapper pb-16">
+        <div className="container">
+          {[...groups.entries()].map(([group, categories]) => (
+            <section key={group} className="mt-10 first:mt-2">
+              <h2 className="text-site-foreground mb-4 text-xl font-semibold tracking-tight capitalize">
+                {group}
+              </h2>
+              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
+                {[...categories.entries()].map(([name, blocks]) => (
+                  <CategoryCard
+                    key={name}
+                    href={`/replicated/blocks/${group}/${name}`}
+                    label={name}
+                    count={blocks.length}
+                    imageBase={`/screenshots/blocks/${group}/${name}`}
+                  />
+                ))}
               </div>
-            ))}
-          </section>
-        ))}
+            </section>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   )
 }
