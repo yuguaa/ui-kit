@@ -105,7 +105,7 @@ async function TemplatePage({ slug, root }: { slug: string; root: string }) {
     <div className="flex min-h-0 flex-1">
       <SnapshotSidebar groups={groups} current={`/replicated/templates/${slug}`} />
 
-      <div className="min-w-0 flex-1">
+      <div className="mx-auto min-w-0 w-full max-w-6xl">
         <section>
           <div className="w-full px-6 pt-8 pb-6 sm:px-8 xl:px-10">
             <Breadcrumb className="mb-1">

@@ -15,7 +15,7 @@ export interface SidebarNavGroup {
 
 /**
  * 复刻资源的左侧导航
- * 与 components 分类页的侧栏一致：sticky 定位、分组列表、当前项高亮
+ * 随页面一起滚动，与右侧列表保持同一滚动节奏
  */
 export function SnapshotSidebar({
   groups,
@@ -25,7 +25,7 @@ export function SnapshotSidebar({
   current: string
 }) {
   return (
-    <aside className="border-site-border/80 bg-site-background sticky top-[var(--site-top-offset)] hidden h-[calc(100svh-var(--site-top-offset))] w-64 shrink-0 overflow-y-auto border-r px-3 py-6 min-[992px]:block">
+    <aside className="border-site-border/80 hidden w-60 shrink-0 border-r px-3 py-8 min-[992px]:block">
       <nav aria-label="复刻资源导航">
         {groups.map((group) => (
           <div key={group.label} className="mb-5 last:mb-0">
