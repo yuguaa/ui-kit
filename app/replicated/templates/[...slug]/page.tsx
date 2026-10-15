@@ -76,7 +76,7 @@ async function TemplatePage({ slug, root }: { slug: string; root: string }) {
 
       <div className="container-wrapper pb-16">
         <div className="container">
-          <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-2">
+          <div className="grid grid-cols-1 items-stretch gap-6">
             {pages.map((page) => (
               <SnapshotCard
                 key={page}
@@ -84,7 +84,7 @@ async function TemplatePage({ slug, root }: { slug: string; root: string }) {
                 src={`/api/replicated-template/${slug}/${page}`}
                 title={page}
                 description={slug}
-                height={300}
+                height={420}
               />
             ))}
           </div>
