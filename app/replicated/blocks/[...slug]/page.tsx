@@ -160,7 +160,7 @@ async function CategoryPage({ group, category }: { group: string; category: stri
         </section>
 
         <div className="w-full px-6 pt-2 pb-4 sm:px-8 xl:px-10">
-          <div className="grid grid-cols-1 items-stretch gap-6">
+          <div className="grid grid-cols-1 items-stretch gap-6 md:grid-cols-2">
             {slugs.map((slug) => (
               <SnapshotCard
                 key={slug}
@@ -168,7 +168,7 @@ async function CategoryPage({ group, category }: { group: string; category: stri
                 src={`/replicated/blocks/${group}/${category}/${slug}?embed=1`}
                 title={slug}
                 description={`${group} / ${category}`}
-                height={420}
+                height={280}
               />
             ))}
           </div>
