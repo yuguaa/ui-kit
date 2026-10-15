@@ -1,6 +1,8 @@
 import type { Metadata } from "next"
-import { access } from "node:fs/promises"
+import { access, readdir } from "node:fs/promises"
 import path from "node:path"
+
+import { PreviewBar } from "@/components/replicated/preview-bar"
 
 type Params = { slug: string; page: string }
 
@@ -15,18 +17,31 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
  */
 export default async function ReplicatedTemplatePage({ params }: { params: Promise<Params> }) {
   const { slug, page } = await params
+  const dir = path.join(process.cwd(), "replicated/templates", slug)
 
   try {
-    await access(path.join(process.cwd(), "replicated/templates", slug, `${page}.html`))
+    await access(path.join(dir, `${page}.html`))
   } catch {
     return <p className="p-8">未找到复刻资产：{slug}/{page}</p>
   }
 
+  const siblings = (await readdir(dir))
+    .filter((f) => f.endsWith(".html"))
+    .map((f) => f.replace(/\.html$/, ""))
+    .sort()
+
   return (
-    <iframe
-      src={`/api/replicated-template/${slug}/${page}`}
-      title={`${slug}/${page}`}
-      className="h-svh w-full border-0"
-    />
+    <>
+      <PreviewBar
+        label={`${slug} / ${page}`}
+        siblings={siblings}
+        hrefFor={(name) => `/replicated/templates/${slug}/${name}`}
+      />
+      <iframe
+        src={`/api/replicated-template/${slug}/${page}`}
+        title={`${slug}/${page}`}
+        className="mt-8 h-[calc(100svh-2rem)] w-full border-0"
+      />
+    </>
   )
 }
