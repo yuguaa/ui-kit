@@ -15,6 +15,8 @@ export interface SnapshotListItem {
   /** registry 名称，供复制安装命令使用 */
   registryName: string
   title: string
+  /** 卡片底部的标识标签（开发模式显示） */
+  nameLabel?: string
   description?: string
   /** 可选分组标签；提供时按分组渲染 */
   group?: string
@@ -111,6 +113,7 @@ export function SnapshotList({
                   codeSrc={item.codeSrc}
                   registryName={item.registryName}
                   title={item.title}
+                  nameLabel={item.nameLabel}
                   description={item.description}
                   height={height}
                 />

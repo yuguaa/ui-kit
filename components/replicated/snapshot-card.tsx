@@ -17,6 +17,8 @@ export interface SnapshotCardProps {
   /** registry 名称，供复制安装命令使用 */
   registryName: string
   title: string
+  /** 卡片底部左侧的标识标签（开发模式显示） */
+  nameLabel?: string
   description?: string
   /** 快照的设计宽度，缩放基准 */
   baseWidth?: number
@@ -35,6 +37,7 @@ export function SnapshotCard({
   codeSrc,
   registryName,
   title,
+  nameLabel,
   description,
   baseWidth = 1280,
   height = 260,
@@ -102,6 +105,14 @@ export function SnapshotCard({
           ) : null}
         </div>
         <div className="flex shrink-0 items-center gap-1.5">
+          {process.env.NODE_ENV === "development" && nameLabel ? (
+            <div
+              className="bg-site-muted/50 text-site-muted-foreground hover:bg-site-muted hover:text-site-foreground site-rounded-md flex h-7 items-center gap-1.5 px-2 text-[10px] font-medium transition-all select-all"
+              title="区块标识"
+            >
+              {nameLabel}
+            </div>
+          ) : null}
           <CopyRegistry value={registryName} />
           <SnapshotViewCode src={codeSrc} title={`${title}.html`} registryName={registryName} />
         </div>

@@ -1,4 +1,4 @@
-import { access, readdir } from "node:fs/promises"
+import { access, readdir, readFile } from "node:fs/promises"
 import path from "node:path"
 import Link from "next/link"
 
@@ -21,6 +21,13 @@ type PageProps = {
 }
 
 const TEMPLATES_ROOT = path.join(process.cwd(), "replicated/templates")
+
+/** 读取模板展示名映射：slug -> name */
+async function loadTemplateNames() {
+  const raw = await readFile(path.join(process.cwd(), "templates/templates-catalog.json"), "utf8")
+  const catalog = JSON.parse(raw) as { templates: { slug: string; name: string }[] }
+  return new Map(catalog.templates.map((template) => [template.slug, template.name]))
+}
 
 /** 扫描全部模板及其页面数，供侧栏与翻页复用 */
 async function scanTemplates() {
@@ -88,6 +95,7 @@ export default async function ReplicatedTemplateRoute({ params }: PageProps) {
 /** 模板页面列表：左侧模板导航 + 该模板下的全宽卡片 */
 async function TemplatePage({ slug, root }: { slug: string; root: string }) {
   const { slugs, counts, groups } = await scanTemplates()
+  const name = (await loadTemplateNames()).get(slug) ?? slug
   const dir = path.join(root, slug)
 
   let pages: string[] = []
@@ -147,7 +155,8 @@ async function TemplatePage({ slug, root }: { slug: string; root: string }) {
               codeSrc: `/api/replicated-source/template/${slug}/${page}`,
               registryName: `@neui/${slug}`,
               title: page,
-              description: slug,
+              nameLabel: slug,
+              description: name,
             }))}
             height={420}
             columns={1}

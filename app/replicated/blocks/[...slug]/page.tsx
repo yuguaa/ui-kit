@@ -23,6 +23,13 @@ type PageProps = {
 
 const BLOCKS_ROOT = path.join(process.cwd(), "replicated/blocks")
 
+/** 读取区块展示名映射：slug -> name */
+async function loadBlockNames() {
+  const raw = await readFile(path.join(process.cwd(), "blocks/blocks-catalog.json"), "utf8")
+  const catalog = JSON.parse(raw) as { blocks: { slug: string; name: string }[] }
+  return new Map(catalog.blocks.map((block) => [block.slug, block.name]))
+}
+
 /** 扫描全部区块分类，按分组汇总，供侧栏与翻页复用 */
 async function scanCategories() {
   const groups: SidebarNavGroup[] = []
@@ -110,6 +117,7 @@ export default async function ReplicatedBlockRoute({ params, searchParams }: Pag
 /** 分类页：左侧分类导航 + 该分类下的全宽卡片列表 */
 async function CategoryPage({ group, category }: { group: string; category: string }) {
   const { groups, counts, all } = await scanCategories()
+  const names = await loadBlockNames()
   const dir = path.join(BLOCKS_ROOT, group, category)
   const slugs = (await readdir(dir))
     .filter((f) => f.endsWith(".html"))
@@ -168,7 +176,8 @@ async function CategoryPage({ group, category }: { group: string; category: stri
               src: `/replicated/blocks/${group}/${category}/${slug}?embed=1`,
               codeSrc: `/api/replicated-source/block/${group}/${category}/${slug}`,
               registryName: `@neui/${slug}`,
-              title: slug,
+              title: names.get(slug) ?? slug,
+              nameLabel: slug,
               description: `${group} / ${category}`,
             }))}
             height={280}
