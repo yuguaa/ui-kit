@@ -31,16 +31,6 @@ type PageMetadataOptions = {
   type?: "website" | "article"
 }
 
-function getSocialHandle(url: string) {
-  try {
-    const socialUrl = new URL(url)
-    const handle = socialUrl.pathname.split("/").filter(Boolean)[0]
-    return handle ? `@${handle}` : undefined
-  } catch {
-    return undefined
-  }
-}
-
 function getAbsoluteMetadataUrl(path: string) {
   return path.startsWith("http://") || path.startsWith("https://")
     ? path
@@ -66,7 +56,6 @@ export function buildPageSocialMetadata({
   "openGraph" | "twitter"
 > {
   const imageUrl = getOgImageUrl(title, description)
-  const twitterCreator = getSocialHandle(siteConfig.links.twitter)
 
   return {
     openGraph: {
@@ -83,7 +72,6 @@ export function buildPageSocialMetadata({
       title,
       description,
       images: [{ url: imageUrl }],
-      ...(twitterCreator ? { creator: twitterCreator } : {}),
     },
   }
 }
@@ -219,7 +207,6 @@ export function buildOrganizationJsonLd() {
     name: siteConfig.name,
     url: getSiteUrl(),
     logo: absoluteUrl("/brand/logo-icon-light.svg"),
-    sameAs: [siteConfig.links.twitter],
   }
 }
 

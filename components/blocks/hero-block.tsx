@@ -1,10 +1,7 @@
 import Link from "next/link"
 import { ArrowRight, RocketIcon } from "lucide-react"
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
-
-const SHADCN_AVATAR = "https://github.com/shadcn.png"
 
 export function HeroBlock() {
   return (
@@ -60,18 +57,7 @@ export function HeroBlock() {
           className="inline-flex max-w-4xl flex-wrap items-center justify-center gap-x-2 gap-y-1 text-3xl leading-[1.1] font-semibold tracking-tight text-balance sm:text-4xl lg:text-5xl"
         >
           <span>Design-forward</span>
-          <span className="inline-flex items-center gap-1.5">
-            <Avatar className="mt-0.5 size-9 shrink-0" aria-hidden="true">
-              <AvatarImage
-                src={SHADCN_AVATAR}
-                alt=""
-                loading="lazy"
-                decoding="async"
-              />
-              <AvatarFallback className="text-sm">S</AvatarFallback>
-            </Avatar>
-            <span>shadcn/ui</span>
-          </span>
+          <span>shadcn/ui</span>
           <span>platform for interfaces that stand out</span>
         </h1>
 

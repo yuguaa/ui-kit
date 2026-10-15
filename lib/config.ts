@@ -11,9 +11,6 @@ export const siteConfig = {
       componentCategory: "UI Components",
     },
   },
-  links: {
-    twitter: "https://x.com/neui_io",
-  },
 }
 
 export const META_THEME_COLORS = {

@@ -489,12 +489,9 @@ export function WallOfLoveBlock() {
                         <TwitterVerifiedIcon className="h-3.5 w-3.5 shrink-0" />
                       )}
                     </div>
-                    <Link
-                      href={`https://x.com/${testimonial.author.handle}`}
-                      className="text-site-muted-foreground truncate text-xs hover:underline"
-                    >
+                    <span className="text-site-muted-foreground truncate text-xs">
                       {testimonial.author.handle}
-                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
