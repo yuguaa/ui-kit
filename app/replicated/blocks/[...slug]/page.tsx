@@ -1,9 +1,18 @@
 import { readdir, readFile } from "node:fs/promises"
 import path from "node:path"
+import Link from "next/link"
 
-import { CatalogPageHero } from "@/components/catalog-page-hero"
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb"
 import { PreviewBar } from "@/components/replicated/preview-bar"
 import { SnapshotCard } from "@/components/replicated/snapshot-card"
+import { SnapshotPager, type PagerEntry } from "@/components/replicated/snapshot-pager"
 
 type PageProps = {
   params: Promise<{ slug: string[] }>
@@ -63,40 +72,81 @@ export default async function ReplicatedBlockRoute({ params, searchParams }: Pag
   )
 }
 
-/** 分类页：该分类下全部 block 的卡片网格 */
+/** 分类页：该分类下全部区块的全宽卡片列表 */
 async function CategoryPage({ group, category }: { group: string; category: string }) {
-  const dir = path.join(process.cwd(), "replicated/blocks", group, category)
+  const root = path.join(process.cwd(), "replicated/blocks", group)
+  const dir = path.join(root, category)
   const slugs = (await readdir(dir))
     .filter((f) => f.endsWith(".html"))
     .map((f) => f.replace(/\.html$/, ""))
     .sort((a, b) => a.localeCompare(b, "en", { numeric: true }))
 
+  // 同分组内的相邻分类，用于上下页导航
+  const categories = (await readdir(root, { withFileTypes: true }))
+    .filter((e) => e.isDirectory())
+    .map((e) => e.name)
+    .sort()
+  const index = categories.indexOf(category)
+  const toEntry = async (name: string | undefined): Promise<PagerEntry | null> => {
+    if (!name) return null
+    const count = (await readdir(path.join(root, name))).filter((f) => f.endsWith(".html")).length
+    return {
+      href: `/replicated/blocks/${group}/${name}`,
+      label: name,
+      description: `${count} 个区块`,
+    }
+  }
+  const [prev, next] = await Promise.all([
+    toEntry(index > 0 ? categories[index - 1] : undefined),
+    toEntry(index < categories.length - 1 ? categories[index + 1] : undefined),
+  ])
+
   return (
     <>
-      <CatalogPageHero
-        badge={group}
-        title={category}
-        count={slugs.length}
-        description={`${group} / ${category} 分类下的全部区块。`}
-        titleId="block-category-title"
-      />
-
-      <div className="container-wrapper pb-16">
-        <div className="container">
-          <div className="grid grid-cols-1 items-stretch gap-6">
-            {slugs.map((slug) => (
-              <SnapshotCard
-                key={slug}
-                href={`/replicated/blocks/${group}/${category}/${slug}`}
-                src={`/replicated/blocks/${group}/${category}/${slug}?embed=1`}
-                title={slug}
-                description={`${group} / ${category}`}
-                height={420}
-              />
-            ))}
+      <section>
+        <div className="w-full px-6 pt-8 pb-6 sm:px-8 xl:px-10">
+          <Breadcrumb className="mb-1">
+            <BreadcrumbList>
+              <BreadcrumbItem>
+                <BreadcrumbLink asChild>
+                  <Link href="/replicated/blocks" prefetch={false}>
+                    Blocks
+                  </Link>
+                </BreadcrumbLink>
+              </BreadcrumbItem>
+              <BreadcrumbSeparator />
+              <BreadcrumbItem>
+                <BreadcrumbPage>
+                  {group} / {category}
+                </BreadcrumbPage>
+              </BreadcrumbItem>
+            </BreadcrumbList>
+          </Breadcrumb>
+          <div className="flex w-full flex-wrap items-end justify-between gap-3">
+            <h1 className="mt-3 min-w-0 flex-1 text-xl font-bold text-balance sm:text-3xl">
+              {category}
+            </h1>
+            <span className="text-site-muted-foreground text-sm">{slugs.length} 个区块</span>
           </div>
         </div>
+      </section>
+
+      <div className="w-full px-6 pt-2 pb-4 sm:px-8 xl:px-10">
+        <div className="grid grid-cols-1 items-stretch gap-6">
+          {slugs.map((slug) => (
+            <SnapshotCard
+              key={slug}
+              href={`/replicated/blocks/${group}/${category}/${slug}`}
+              src={`/replicated/blocks/${group}/${category}/${slug}?embed=1`}
+              title={slug}
+              description={`${group} / ${category}`}
+              height={420}
+            />
+          ))}
+        </div>
       </div>
+
+      <SnapshotPager prev={prev} next={next} label="相邻区块分类" />
     </>
   )
 }
