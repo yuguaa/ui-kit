@@ -1,0 +1,645 @@
+ai-agents/agent-activity/agent-activity-1	Approval Run Console
+ai-agents/agent-activity/agent-activity-2	Live Run Feed
+ai-agents/agent-activity/agent-activity-3	Research Timeline
+ai-agents/agent-activity/agent-activity-4	MCP Call Audit
+ai-agents/agent-activity/agent-activity-5	Run Outcome Report
+ai-agents/ai-chat/ai-chat-1	Copilot Shell
+ai-agents/ai-chat/ai-chat-10	Structured Answers
+ai-agents/ai-chat/ai-chat-11	Answer Receipts
+ai-agents/ai-chat/ai-chat-12	Docs Support Assistant
+ai-agents/ai-chat/ai-chat-13	Corner Chat Popup
+ai-agents/ai-chat/ai-chat-2	Docked Assistant
+ai-agents/ai-chat/ai-chat-3	Prompt Starter Welcome
+ai-agents/ai-chat/ai-chat-4	Quote Reply Sidebar
+ai-agents/ai-chat/ai-chat-5	Connected Apps Chat
+ai-agents/ai-chat/ai-chat-6	Agentic Task Panel
+ai-agents/ai-chat/ai-chat-7	Model Comparison
+ai-agents/ai-chat/ai-chat-8	Voice Assistant Panel
+ai-agents/ai-chat/ai-chat-9	Branching Thread
+application/app-shell/app-shell-1	Icon Rail Dashboard
+application/app-shell/app-shell-10	AI Agents Console
+application/app-shell/app-shell-11	Operations Workbench
+application/app-shell/app-shell-12	Apps Grid Header
+application/app-shell/app-shell-13	Community Feed App
+application/app-shell/app-shell-14	View Toolbar Workspace
+application/app-shell/app-shell-15	Pinnable Favorites Nav
+application/app-shell/app-shell-16	Dual Sidebar Dashboard
+application/app-shell/app-shell-17	Model Picker Chat
+application/app-shell/app-shell-18	To-Do AI Assistant
+application/app-shell/app-shell-19	Scheduling Planner
+application/app-shell/app-shell-2	Floating Sidebar Admin
+application/app-shell/app-shell-20	Webmail Client
+application/app-shell/app-shell-21	Resizable AI Chat
+application/app-shell/app-shell-22	Fleet Operator Console
+application/app-shell/app-shell-23	Team Project Switcher
+application/app-shell/app-shell-24	Ops Presence Console
+application/app-shell/app-shell-25	Mission Control
+application/app-shell/app-shell-26	Security Scope Console
+application/app-shell/app-shell-27	Route Search Sidebar
+application/app-shell/app-shell-28	Section Tabs Admin
+application/app-shell/app-shell-29	Section Tile Rail
+application/app-shell/app-shell-3	Project Tracker Sidebar
+application/app-shell/app-shell-30	Top Navbar Admin
+application/app-shell/app-shell-31	Folder Tab Workspace
+application/app-shell/app-shell-32	Endpoint Protection
+application/app-shell/app-shell-33	Fleet Center
+application/app-shell/app-shell-34	Invoice Matching
+application/app-shell/app-shell-35	Whiteboard Workspace
+application/app-shell/app-shell-4	Mail Inbox
+application/app-shell/app-shell-5	Calendar Contacts Hub
+application/app-shell/app-shell-6	Team Calendar Panel
+application/app-shell/app-shell-7	Environment Switcher
+application/app-shell/app-shell-8	Inventory Admin
+application/app-shell/app-shell-9	Team Presence Workspace
+application/auth/auth-1	Photo Split Login
+application/auth/auth-10	Magic Link Logos
+application/auth/auth-11	Split Testimonial Login
+application/auth/auth-12	Split Method Picker
+application/auth/auth-13	Photo Magic Link
+application/auth/auth-14	Workspace Sign-In
+application/auth/auth-15	Centered Magic Link
+application/auth/auth-16	Work Email Continue
+application/auth/auth-17	Centered Method Picker
+application/auth/auth-18	Social Proof Login
+application/auth/auth-19	Invite-Only Sign-In
+application/auth/auth-2	Customer Quotes Login
+application/auth/auth-20	Centered Password Login
+application/auth/auth-3	Magic Link Reviews
+application/auth/auth-4	Framed Password Login
+application/auth/auth-5	Free Trial Signup
+application/auth/auth-6	Founder Story Login
+application/auth/auth-7	Magic Link Card
+application/auth/auth-8	Photo Backdrop Login
+application/auth/auth-9	Rotating Quotes Login
+application/card/card-1	Brand Logo Grid
+application/card/card-10	Report Updates
+application/card/card-11	Notice Cards
+application/card/card-12	Quick Link Tiles
+application/card/card-13	Partner Showcase
+application/card/card-14	Delivery Tracking
+application/card/card-15	Meeting Agenda Cards
+application/card/card-16	Installed Integration
+application/card/card-17	Shortcut Launcher
+application/card/card-18	Source Link Cards
+application/card/card-19	Crypto Price Quote
+application/card/card-2	Feature Highlights
+application/card/card-20	Help Center Guides
+application/card/card-21	Project Deadline Cards
+application/card/card-22	Upsell Promo
+application/card/card-23	Uptime Monitoring Promo
+application/card/card-24	Job Recommendation
+application/card/card-25	Account Balances
+application/card/card-26	Linked Metric Tiles
+application/card/card-27	Application Summary
+application/card/card-28	Shared KPI Panels
+application/card/card-29	KPI Area Charts
+application/card/card-3	Investor Profile
+application/card/card-30	Logistics KPI Tiles
+application/card/card-31	Audience Reach Stats
+application/card/card-32	Compliance Strip
+application/card/card-33	Inventory Counters
+application/card/card-34	Period Trend KPIs
+application/card/card-35	Deal Invoice Tiles
+application/card/card-36	Sales Outreach Counters
+application/card/card-37	Company Snapshot
+application/card/card-38	Profile Stat Strip
+application/card/card-39	Resource Hub Cards
+application/card/card-4	KPI Report Links
+application/card/card-40	Fitness Stats
+application/card/card-41	Topic Shortcuts
+application/card/card-42	Customer Profile
+application/card/card-43	Contributor Portfolio
+application/card/card-5	Integration Connector
+application/card/card-6	Numbered Setup Steps
+application/card/card-7	Detail Fact Tiles
+application/card/card-8	Service Status Tiles
+application/card/card-9	Applicant Record
+application/dashboard/dashboard-1	Fulfillment Exceptions
+application/dashboard/dashboard-2	Module Tracker
+application/dashboard/dashboard-3	Worklog Timesheet
+application/dashboard/dashboard-4	Voice Agent Calls
+application/dashboard/dashboard-5	Edge Security Telemetry
+application/dashboard/dashboard-6	Workforce Coverage
+application/dashboard/dashboard-7	Retail Revenue
+application/dashboard/dashboard-8	Royalty Payouts
+application/dialog/dialog-1	Duration Picker
+application/dialog/dialog-10	Account Settings Modal
+application/dialog/dialog-11	Finance Account Setup
+application/dialog/dialog-12	Quick Create Entry
+application/dialog/dialog-13	Project Templates
+application/dialog/dialog-14	OAuth Consent
+application/dialog/dialog-2	Bulk Email Invite
+application/dialog/dialog-3	Cancel Plan Survey
+application/dialog/dialog-4	Launch Checklist
+application/dialog/dialog-5	Template Library
+application/dialog/dialog-6	Connect App Picker
+application/dialog/dialog-7	Support Hub
+application/dialog/dialog-8	Per-Person Invite
+application/dialog/dialog-9	Project With Cover
+application/empty-state/empty-state-1	Data Import Start
+application/empty-state/empty-state-10	Blueprint Library
+application/empty-state/empty-state-11	Section Add Prompt
+application/empty-state/empty-state-12	Export Filters
+application/empty-state/empty-state-13	Cloud Storage Connect
+application/empty-state/empty-state-14	Enable Organizations
+application/empty-state/empty-state-2	No Search Results
+application/empty-state/empty-state-3	First Project
+application/empty-state/empty-state-4	Reports Workspace
+application/empty-state/empty-state-5	Empty Report Brief
+application/empty-state/empty-state-6	Team Launch Steps
+application/empty-state/empty-state-7	Invite First Member
+application/empty-state/empty-state-8	Settings Setup Tabs
+application/empty-state/empty-state-9	Invite Members Prompt
+application/event-calendar/event-calendar-1	Personal Calendar
+application/event-calendar/event-calendar-2	Mini Month Calendar
+application/event-calendar/event-calendar-3	Hotel Front Desk
+application/event-calendar/event-calendar-4	Shift Roster
+application/event-calendar/event-calendar-5	Clinic Chair Board
+application/event-calendar/event-calendar-6	Lending Deal Calendar
+application/flow/flow-1	Automation Builder
+application/flow/flow-2	AI Agent Builder
+application/flow/flow-3	Pipeline Run Monitor
+application/flow/flow-4	Growth Impact Map
+application/form/form-1	Profile Settings
+application/form/form-10	Customer Onboarding
+application/form/form-11	Deploy App Setup
+application/form/form-12	New Product Form
+application/form/form-2	Checkout Setup
+application/form/form-3	Invoice Creator
+application/form/form-4	Auth Method Settings
+application/form/form-5	Member Profile Admin
+application/form/form-6	Business Verification
+application/form/form-7	Ticket Properties
+application/form/form-8	API Keys Manager
+application/form/form-9	Role Permission Invite
+application/gantt/gantt-1	Project Timeline
+application/gantt/gantt-2	Technician Dispatch
+application/gantt/gantt-3	Agent Playbook
+application/gantt/gantt-4	Resource Capacity
+application/kanban-board/kanban-board-1	Bug Triage
+application/kanban-board/kanban-board-10	Access Review
+application/kanban-board/kanban-board-2	Collapsible Columns
+application/kanban-board/kanban-board-3	Sales Pipeline
+application/kanban-board/kanban-board-4	Feature Roadmap Votes
+application/kanban-board/kanban-board-5	Progress Ring Workflow
+application/kanban-board/kanban-board-6	Support Escalations
+application/kanban-board/kanban-board-7	Renewals Risk
+application/kanban-board/kanban-board-8	Release Readiness
+application/kanban-board/kanban-board-9	Recruiting Pipeline
+application/list/list-1	Order KPI List
+application/list/list-10	Recent Investments
+application/list/list-11	Top Movers
+application/list/list-2	Fund Leaderboard
+application/list/list-3	Capital Inflows
+application/list/list-4	Crypto Portfolio
+application/list/list-5	Crypto Activity Feed
+application/list/list-6	Wallet Transfers
+application/list/list-7	Spending Feed
+application/list/list-8	Integrations Directory
+application/list/list-9	Capability Modules
+application/navbar/navbar-1	Project Workspace
+application/navbar/navbar-10	API Developer Portal
+application/navbar/navbar-11	Design System Manager
+application/navbar/navbar-12	Marketing Mega Menu
+application/navbar/navbar-13	Editor Action Bar
+application/navbar/navbar-2	Team Presence
+application/navbar/navbar-3	Org & Environment Switcher
+application/navbar/navbar-4	Admin Command Search
+application/navbar/navbar-5	Workflow Editor
+application/navbar/navbar-6	Analytics Toolbar
+application/navbar/navbar-7	CMS Publish Bar
+application/navbar/navbar-8	Agent Marketplace
+application/navbar/navbar-9	Repo Branch Picker
+application/onboarding/onboarding-1	Live Preview Wizard
+application/onboarding/onboarding-2	Sidebar Stepper Wizard
+application/onboarding/onboarding-3	Split-Screen Signup
+application/onboarding/onboarding-4	Centered Setup Flow
+application/onboarding/onboarding-5	Onboarding Dialog
+application/onboarding/onboarding-6	Agent & API Setup
+application/onboarding/onboarding-7	Screenshot Carousel Setup
+application/onboarding/onboarding-8	CLI Agent Setup
+application/onboarding/onboarding-9	Marketing Hero Signup
+application/profile/profile-1	Account & Team Settings
+application/profile/profile-10	Developer API Keys
+application/profile/profile-2	Admin Permissions
+application/profile/profile-3	Personal Profile
+application/profile/profile-4	Mailbox Accounts
+application/profile/profile-5	Notification Digest
+application/profile/profile-6	Referral Rewards
+application/profile/profile-7	Meeting Capture
+application/profile/profile-8	Billing Settings
+application/profile/profile-9	Account Settings Hub
+application/rich-text-editor/rich-text-editor-1	Document Editor
+application/rich-text-editor/rich-text-editor-2	Wiki Page Editor
+application/rich-text-editor/rich-text-editor-3	Contract Redlines
+application/rich-text-editor/rich-text-editor-4	Collaborative Editor
+application/rich-text-editor/rich-text-editor-5	AI Writing Assistant
+application/schedule/schedule-1	Appointment Planner
+application/schedule/schedule-10	Due Date Picker
+application/schedule/schedule-2	Time Range Picker
+application/schedule/schedule-3	Meeting Scheduler
+application/schedule/schedule-4	Booking Page
+application/schedule/schedule-5	Team Attendance
+application/schedule/schedule-6	Create Schedule
+application/schedule/schedule-7	Webinar RSVP
+application/schedule/schedule-8	Team Agenda
+application/schedule/schedule-9	Session Booking
+application/settings/settings-1	Import Sources
+application/settings/settings-10	Security Settings
+application/settings/settings-11	Notification Channels
+application/settings/settings-12	Notification Delivery
+application/settings/settings-13	Integrations Gallery
+application/settings/settings-14	API Integrations
+application/settings/settings-15	Workspace Preferences
+application/settings/settings-16	Connected Apps
+application/settings/settings-2	Privacy Controls
+application/settings/settings-3	General Settings
+application/settings/settings-4	App Connections
+application/settings/settings-5	Role Capabilities
+application/settings/settings-6	Integration Events
+application/settings/settings-7	Account Settings
+application/settings/settings-8	Webhook Endpoints
+application/settings/settings-9	General & Display
+application/sheet/sheet-1	Create Project
+application/sheet/sheet-10	Copilot Chat
+application/sheet/sheet-11	Metric Detail Sheet
+application/sheet/sheet-12	Cron Job Detail
+application/sheet/sheet-13	New Cron Job
+application/sheet/sheet-14	Audit Event Detail
+application/sheet/sheet-15	Canary Rollout
+application/sheet/sheet-16	Failed Deploy
+application/sheet/sheet-17	New Firewall Rule
+application/sheet/sheet-18	Edit Firewall Rule
+application/sheet/sheet-19	Firewall Request
+application/sheet/sheet-2	Help Center
+application/sheet/sheet-20	SLO Error Budget
+application/sheet/sheet-21	New SLO
+application/sheet/sheet-22	Data Connection
+application/sheet/sheet-23	New Connection
+application/sheet/sheet-24	Dataset Preview
+application/sheet/sheet-3	Keyboard Shortcuts
+application/sheet/sheet-4	AI Model Chat
+application/sheet/sheet-5	Comment Thread
+application/sheet/sheet-6	View Customizer
+application/sheet/sheet-7	Notifications Feed
+application/sheet/sheet-8	Relay Settings
+application/sheet/sheet-9	Ticket Edit Sheet
+application/stats/stats-1	Stats Overview
+application/stats/stats-10	Total Revenue
+application/stats/stats-11	API Quota Usage
+application/stats/stats-12	Support Metrics
+application/stats/stats-13	Compliance Checks
+application/stats/stats-14	Adoption Rate
+application/stats/stats-15	KPI Callouts
+application/stats/stats-17	Portfolio Allocation
+application/stats/stats-18	Capacity Usage
+application/stats/stats-2	KPI Scorecard
+application/stats/stats-3	Subscription Renewals
+application/stats/stats-4	Leads Overview
+application/stats/stats-5	Wallet Balance
+application/stats/stats-6	Rep Performance
+application/stats/stats-7	Sales & Churn Metrics
+application/stats/stats-8	Analytics Overview
+application/stats/stats-9	Task Progress
+application/timeline/timeline-1	Customer Activation
+application/timeline/timeline-2	Account Rollout
+application/timeline/timeline-3	Finance Activity
+application/timeline/timeline-4	Team Activity Feed
+application/timeline/timeline-5	Release Changelog
+application/timeline/timeline-6	Approval Workflow
+application/timeline/timeline-7	Activity Dropdown
+application/timeline/timeline-8	Team Activity Sheet
+application/timeline/timeline-9	Finance Activity Sheet
+application/whiteboard/whiteboard-1	Design Review Board
+application/whiteboard/whiteboard-2	Sprint Planning Board
+application/wizard/wizard-1	Billing Setup
+application/wizard/wizard-2	Vendor Onboarding
+application/wizard/wizard-3	Send Invoice
+application/wizard/wizard-4	Plan Upgrade
+application/wizard/wizard-5	Team Invitations
+application/wizard/wizard-6	Product Setup Wizard
+application/wizard/wizard-7	Fund Transfer
+chart/area-chart/chart-16	Generation Mix
+chart/area-chart/chart-17	Campaign Impressions
+chart/area-chart/chart-18	Orders Overview
+chart/area-chart/chart-52	Inbound Leads
+chart/bar-chart/chart-10	Training Volume
+chart/bar-chart/chart-29	Inventory Velocity
+chart/bar-chart/chart-30	Transit vs Target
+chart/bar-chart/chart-32	Cron Runner Load
+chart/bar-chart/chart-33	Cron Run Durations
+chart/bar-chart/chart-35	Audit Log Volume
+chart/bar-chart/chart-40	Firewall Traffic
+chart/bar-chart/chart-42	Error Budget Burn
+chart/bar-chart/chart-43	SLO Burn Rate
+chart/bar-chart/chart-45	Data Sync Activity
+chart/bar-chart/chart-47	Sync Run History
+chart/bar-chart/chart-9	Yearly Fund Inflows
+chart/composed-chart/chart-19	DeFi Overview
+chart/composed-chart/chart-20	Sales vs Goal
+chart/composed-chart/chart-21	Cashflow Trend
+chart/composed-chart/chart-36	Canary Analysis
+chart/composed-chart/chart-37	Canary Rollback
+chart/line-chart/chart-22	Revenue Trend
+chart/line-chart/chart-23	Social Engagement
+chart/line-chart/chart-24	Sales vs Traffic
+chart/line-chart/chart-26	NFT Floor Price
+chart/line-chart/chart-4	Balance Tracker
+chart/line-chart/chart-6	Metric Switcher
+chart/pie-chart/chart-13	Inflows by Source
+chart/pie-chart/chart-27	Browser Usage
+chart/radial-chart/chart-12	Inflows Gauge
+chart/radial-chart/chart-7	Uptime and Coverage
+chart/radial-chart/chart-8	API Health
+chart/sankey-chart/chart-48	Revenue Flow
+chart/sankey-chart/chart-49	Trial Journey
+chart/sankey-chart/chart-53	Pipeline Leakage
+chart/slope-chart/chart-50	Error Budget Runway
+chart/slope-chart/chart-51	Retention Crossover
+chart/sparkline/chart-1	Inventory Health
+chart/sparkline/chart-11	Distance Tracker
+chart/sparkline/chart-15	KPI Trend Cards
+chart/sparkline/chart-2	KPI Strip
+chart/sparkline/chart-25	Order Metrics
+chart/sparkline/chart-3	Wallet Balances
+chart/sparkline/chart-31	Cron Job Health
+chart/sparkline/chart-41	SLO Fleet Health
+chart/sparkline/chart-44	SLO Budgets
+chart/sparkline/chart-46	Connection Health
+chart/sparkline/chart-5	Wealth Overview
+chart/status-tracker/chart-34	Cron Run History
+chart/status-tracker/chart-38	Release Lanes
+chart/status-tracker/chart-39	Deploy History
+data-grid/advanced/data-grid-advanced-1	Ad Campaign Performance
+data-grid/advanced/data-grid-advanced-2	Regional Store P&L
+data-grid/advanced/data-grid-advanced-3	Campaign Target Review
+data-grid/advanced/data-grid-advanced-4	SLO Reliability Index
+data-grid/base/data-grid-base-1	Customer Balances
+data-grid/base/data-grid-base-2	Lead Scoring Contacts
+data-grid/base/data-grid-base-3	Deal Pipeline
+data-grid/base/data-grid-base-4	Weekly Timesheet
+data-grid/base/data-grid-base-5	Support Tickets
+data-grid/base/data-grid-base-6	Team Members
+data-grid/base/data-grid-base-7	Project Modules
+data-grid/base/data-grid-base-8	Cloud Rate Card
+data-grid/columns/data-grid-columns-1	Access Permissions Matrix
+data-grid/columns/data-grid-columns-2	Course Catalog
+data-grid/columns/data-grid-columns-3	Work Queue
+data-grid/columns/data-grid-columns-4	Member Display Columns
+data-grid/columns/data-grid-columns-5	Company Attributes
+data-grid/drag-drop/data-grid-drag-drop-1	Sprint Backlog
+data-grid/drag-drop/data-grid-drag-drop-2	Routing Rules
+data-grid/drag-drop/data-grid-drag-drop-3	Dispatch Layout Presets
+data-grid/drag-drop/data-grid-drag-drop-4	Shared Drive Folders
+data-grid/editing/data-grid-editing-1	Label Manager
+data-grid/editing/data-grid-editing-2	Product Inventory
+data-grid/editing/data-grid-editing-3	Project Intake
+data-grid/editing/data-grid-editing-4	Pricing Plan Editor
+data-grid/editing/data-grid-editing-5	Task Spreadsheet
+data-grid/editing/data-grid-editing-6	Stock Reorder Plan
+data-grid/expansion/data-grid-expansion-1	Sub-Task Tracker
+data-grid/expansion/data-grid-expansion-2	Cash Flow Waterfall
+data-grid/expansion/data-grid-expansion-3	Release Approvals
+data-grid/filtering/data-grid-filtering-1	Billing Transactions
+data-grid/filtering/data-grid-filtering-2	Automation Library
+data-grid/filtering/data-grid-filtering-3	Renewal Reassignment
+data-grid/filtering/data-grid-filtering-4	At-Risk Renewals
+data-grid/grouping/data-grid-grouping-1	Roadmap by Stage
+data-grid/grouping/data-grid-grouping-2	Revenue by Region
+data-grid/grouping/data-grid-grouping-3	Patient Access Cohorts
+data-grid/grouping/data-grid-grouping-4	Bill of Materials
+data-grid/grouping/data-grid-grouping-5	Reporting Hierarchy
+data-grid/grouping/data-grid-grouping-6	Editorial Pipeline
+data-grid/grouping/data-grid-grouping-7	Studio Delivery Board
+data-grid/virtualization/data-grid-virtualization-1	Card Payments Ledger
+data-grid/virtualization/data-grid-virtualization-2	Shipment Exceptions
+ecommerce/category-card/category-card-1	Category Browse Grid
+ecommerce/category-card/category-card-2	Filterable Collections
+ecommerce/category-card/category-card-3	Category Carousel
+ecommerce/category-card/category-card-4	Featured Department
+ecommerce/category-card/category-card-5	Collection Guides
+ecommerce/category-card/category-card-6	Seasonal Categories
+ecommerce/checkout/checkout-1	Sign-In Checkout
+ecommerce/checkout/checkout-2	Trust Strip Checkout
+ecommerce/checkout/checkout-3	AI Credit Checkout
+ecommerce/checkout/checkout-4	Express Checkout
+ecommerce/checkout/checkout-5	Order Review Checkout
+ecommerce/checkout/checkout-6	One-Page Checkout
+ecommerce/checkout/checkout-7	Social Sign-In Checkout
+ecommerce/comparison/comparison-1	Spec Comparison Table
+ecommerce/comparison/comparison-2	Two-Product Compare
+ecommerce/comparison/comparison-3	Buying Guide Picks
+ecommerce/comparison/comparison-4	Ranked Scorecards
+ecommerce/comparison/comparison-5	Alternatives Switcher
+ecommerce/comparison/comparison-6	Compare Builder
+ecommerce/coupon/coupon-1	Promo Code Hero
+ecommerce/coupon/coupon-2	Filterable Coupons
+ecommerce/coupon/coupon-3	Member Early Access
+ecommerce/coupon/coupon-4	Offer Terms Card
+ecommerce/coupon/coupon-5	Free Shipping Bar
+ecommerce/coupon/coupon-6	Flash Sale Bar
+ecommerce/filter-sidebar/filter-sidebar-1	Core Facets Filter
+ecommerce/filter-sidebar/filter-sidebar-2	Apply Bar Filters
+ecommerce/filter-sidebar/filter-sidebar-3	Department Facet Filter
+ecommerce/filter-sidebar/filter-sidebar-4	Full Facet Panel
+ecommerce/filter-sidebar/filter-sidebar-5	Slide-Out Filters
+ecommerce/filter-sidebar/filter-sidebar-6	Accordion Filters
+ecommerce/filter-sidebar/filter-sidebar-7	Multi-Open Filters
+ecommerce/product-card/product-card-1	Apparel Wishlist Grid
+ecommerce/product-card/product-card-10	Fashion Lookbook Grid
+ecommerce/product-card/product-card-2	Colorway Catalog
+ecommerce/product-card/product-card-3	Quick Buy Card
+ecommerce/product-card/product-card-4	Related Products
+ecommerce/product-card/product-card-5	Featured Product
+ecommerce/product-card/product-card-6	Masonry Gallery
+ecommerce/product-card/product-card-7	New Arrivals Carousel
+ecommerce/product-card/product-card-8	Rated Product Grid
+ecommerce/product-card/product-card-9	Four-Column Catalog
+ecommerce/product-detail/product-detail-1	Size Picker Detail
+ecommerce/product-detail/product-detail-2	Story Product Page
+ecommerce/product-detail/product-detail-3	Spec Table Detail
+ecommerce/product-detail/product-detail-4	Ebook Detail Page
+ecommerce/product-detail/product-detail-5	Compact Buy Box
+ecommerce/product-detail/product-detail-6	Single-Column Detail
+ecommerce/product-grid/product-grid-1	Swatch Swap Grid
+ecommerce/product-grid/product-grid-2	Stacked Panel Grid
+ecommerce/product-grid/product-grid-3	Add-to-Cart Grid
+ecommerce/product-grid/product-grid-4	Numbered Story Grid
+ecommerce/product-grid/product-grid-5	Quick Size Grid
+ecommerce/product-grid/product-grid-6	Shop-the-Look Grid
+ecommerce/receipt/receipt-1	Order Confirmation
+ecommerce/receipt/receipt-2	Order Tracking Timeline
+ecommerce/receipt/receipt-3	Till Slip Receipt
+ecommerce/receipt/receipt-4	Delivered Order Receipt
+ecommerce/receipt/receipt-5	Statement Receipt
+ecommerce/receipt/receipt-6	Post-Purchase Actions
+ecommerce/review/review-1	Avatar Review Carousel
+ecommerce/review/review-2	Topic Filter Reviews
+ecommerce/review/review-3	Rating Summary Reviews
+ecommerce/review/review-4	Pull-Quote Reviews
+ecommerce/review/review-5	Testimonial Carousel
+ecommerce/review/review-6	Star-Led Reviews
+ecommerce/shop-hero/shop-hero-1	Live Cart Hero
+ecommerce/shop-hero/shop-hero-2	Bento Shop Hero
+ecommerce/shop-hero/shop-hero-3	Countdown Deal Hero
+ecommerce/shop-hero/shop-hero-4	Category Shop Hero
+ecommerce/shop-hero/shop-hero-5	Dual Collection Hero
+ecommerce/shop-hero/shop-hero-6	Seasonal Lookbook Hero
+ecommerce/shop-hero/shop-hero-7	Collection Switcher
+ecommerce/shop-hero/shop-hero-8	Collection Quilt
+ecommerce/shopping-cart/shopping-cart-1	Save-for-Later Cart
+ecommerce/shopping-cart/shopping-cart-2	Delivery Summary Cart
+ecommerce/shopping-cart/shopping-cart-3	Data Table Cart
+ecommerce/shopping-cart/shopping-cart-4	Pickup Option Cart
+ecommerce/shopping-cart/shopping-cart-5	Payment Method Cart
+ecommerce/shopping-cart/shopping-cart-6	Cart Dropdown
+ecommerce/shopping-cart/shopping-cart-7	Add-to-Cart Drawer
+ecommerce/wishlist/wishlist-1	Bulk Action Wishlist
+ecommerce/wishlist/wishlist-2	Restock Alert Wishlist
+ecommerce/wishlist/wishlist-3	Move-to-Cart Wishlist
+ecommerce/wishlist/wishlist-4	Wishlist Boards
+ecommerce/wishlist/wishlist-5	Priority Wishlist
+ecommerce/wishlist/wishlist-6	Collection Rail Wishlist
+marketing/blog/blog-1	Blog Index Grid
+marketing/blog/blog-2	Cover Story Cards
+marketing/blog/blog-3	Article Slider
+marketing/blog/blog-4	News & Insights
+marketing/blog/blog-5	Article Detail
+marketing/blog/blog-6	Read Next Post
+marketing/compare/compare-1	Old vs New
+marketing/compare/compare-2	Feature Matrix
+marketing/compare/compare-3	Tool vs Manual
+marketing/contact/contact-1	Single Email Contact
+marketing/contact/contact-2	Project Brief Form
+marketing/contact/contact-3	Topic Contact Form
+marketing/contact/contact-4	Global Offices
+marketing/contact/contact-5	Project Inquiry
+marketing/contact/contact-6	Support Channels
+marketing/cta/cta-1	Newsletter CTA
+marketing/cta/cta-10	Tool Handoff CTA
+marketing/cta/cta-11	Customer Logos CTA
+marketing/cta/cta-12	Proof Points CTA
+marketing/cta/cta-13	MCP Integrations CTA
+marketing/cta/cta-14	Release Updates Signup
+marketing/cta/cta-15	Outcome Checklist CTA
+marketing/cta/cta-16	Sales Contact CTA
+marketing/cta/cta-17	Review Rating CTA
+marketing/cta/cta-2	Feature Strip CTA
+marketing/cta/cta-3	Work Email CTA
+marketing/cta/cta-4	Proof Grid CTA
+marketing/cta/cta-5	Headline Only CTA
+marketing/cta/cta-6	Final Conversion CTA
+marketing/cta/cta-7	Agency Booking CTA
+marketing/cta/cta-8	Footer Docs CTA
+marketing/cta/cta-9	Space Launch CTA
+marketing/faq/faq-1	Category Tabs FAQ
+marketing/faq/faq-2	Two-Column FAQ
+marketing/faq/faq-3	Open Answers FAQ
+marketing/faq/faq-4	Single-Column FAQ
+marketing/faq/faq-5	Support Sidecard FAQ
+marketing/faq/faq-6	Support Footer FAQ
+marketing/hero/hero-1	MCP Usage Hero
+marketing/hero/hero-10	Code Editor Hero
+marketing/hero/hero-11	Feature Swap Hero
+marketing/hero/hero-12	Brand Cloud Hero
+marketing/hero/hero-13	Creator Cloud Hero
+marketing/hero/hero-14	Split Header Hero
+marketing/hero/hero-15	Linked Features Hero
+marketing/hero/hero-16	Built-to-Ship Hero
+marketing/hero/hero-2	Revenue Console Hero
+marketing/hero/hero-3	Capability Chips Hero
+marketing/hero/hero-4	People Console Hero
+marketing/hero/hero-5	Integrations Hero
+marketing/hero/hero-6	Security Console Hero
+marketing/hero/hero-7	Console-First Waitlist
+marketing/hero/hero-8	Waitlist Hero
+marketing/hero/hero-9	Tabbed Console Hero
+marketing/how-it-works/how-it-works-1	Three-Step Explainer
+marketing/how-it-works/how-it-works-2	Onboarding Step Cards
+marketing/how-it-works/how-it-works-3	Setup Guide Cards
+marketing/how-it-works/how-it-works-4	Product Tour Tabs
+marketing/how-it-works/how-it-works-5	Vertical Demo Tabs
+marketing/pricing/pricing-1	Seat Stepper Pricing
+marketing/pricing/pricing-2	Plan Comparison
+marketing/pricing/pricing-3	Per-Seat Pricing
+marketing/pricing/pricing-4	Customer Logo Pricing
+marketing/pricing/pricing-5	Pricing FAQ Links
+marketing/pricing/pricing-6	Agency Pricing
+marketing/pricing/pricing-7	Upgrade Plan Dialog
+marketing/pricing/pricing-8	Usage Limit Upgrade
+solutions/agents/solution-agents-1	Agent Fleet Overview
+solutions/agents/solution-agents-10	Agent Run Settings
+solutions/agents/solution-agents-2	Agent Run Queue
+solutions/agents/solution-agents-3	Run Step Trace
+solutions/agents/solution-agents-4	Tool Access Matrix
+solutions/agents/solution-agents-5	Action Approval Inbox
+solutions/agents/solution-agents-6	Playbook Builder
+solutions/agents/solution-agents-7	Failed Run Triage
+solutions/agents/solution-agents-8	Agent Eval Report
+solutions/agents/solution-agents-9	Agent Memory
+solutions/ai-ops/solution-ai-ops-1	AI Ops Dashboard
+solutions/ai-ops/solution-ai-ops-2	Provider Connections
+solutions/ai-ops/solution-ai-ops-3	Prompt Review Queue
+solutions/ai-ops/solution-ai-ops-4	Prompt Editor
+solutions/ai-ops/solution-ai-ops-5	Model Routing Policy
+solutions/ai-ops/solution-ai-ops-6	AI Feature Flags
+solutions/ai-ops/solution-ai-ops-7	Safety Policy Builder
+solutions/ai-ops/solution-ai-ops-8	Token Spend Ledger
+solutions/ai-ops/solution-ai-ops-9	Spend vs Budget
+solutions/analytics/solution-analytics-1	Product Signals
+solutions/analytics/solution-analytics-2	Feature Adoption Report
+solutions/analytics/solution-analytics-3	Activation Funnel
+solutions/analytics/solution-analytics-4	Cohort Retention
+solutions/analytics/solution-analytics-5	Event Catalog
+solutions/analytics/solution-analytics-6	Segment Validation
+solutions/analytics/solution-analytics-7	Experiment Report
+solutions/analytics/solution-analytics-8	Metric Deep Dive
+solutions/analytics/solution-analytics-9	Alert Rules
+solutions/billing/solution-billing-1	Invoice Ledger
+solutions/billing/solution-billing-2	Plan Catalog
+solutions/billing/solution-billing-3	Subscription Lifecycle
+solutions/billing/solution-billing-4	Billing Account Detail
+solutions/billing/solution-billing-5	Invoice Builder
+solutions/billing/solution-billing-6	Dunning Queue
+solutions/billing/solution-billing-7	Usage Event Ledger
+solutions/billing/solution-billing-8	Plan Change
+solutions/billing/solution-billing-9	Coupon Manager
+solutions/bookings/solution-bookings-1	Salon Front Desk
+solutions/bookings/solution-bookings-2	Appointment Calendar
+solutions/bookings/solution-bookings-3	Appointment Detail
+solutions/crm/solution-crm-1	Pipeline Dashboard
+solutions/crm/solution-crm-2	Deal Board
+solutions/crm/solution-crm-3	Contacts Directory
+solutions/crm/solution-crm-4	Deal Sheet
+solutions/crm/solution-crm-5	Activity Timeline
+solutions/crm/solution-crm-6	CSV Import
+solutions/crm/solution-crm-7	Pipeline Workspace
+solutions/crm/solution-crm-8	Forecast Call
+solutions/crm/solution-crm-9	Deal Desk
+solutions/dev-ops/solution-dev-ops-1	Cron Jobs
+solutions/dev-ops/solution-dev-ops-2	Infra Audit Log
+solutions/dev-ops/solution-dev-ops-3	Deployments
+solutions/dev-ops/solution-dev-ops-4	Firewall Rules
+solutions/dev-ops/solution-dev-ops-5	SLO Error Budgets
+solutions/dev-ops/solution-dev-ops-6	Data Connections
+solutions/digital-twin/solution-digital-twin-1	Stadium Seats
+solutions/digital-twin/solution-digital-twin-2	Kart Live Timing
+solutions/files/solution-files-1	Drive Explorer
+solutions/inventory/solution-inventory-1	Inventory Dashboard
+solutions/inventory/solution-inventory-10	Shipping Label
+solutions/inventory/solution-inventory-11	Order Details
+solutions/inventory/solution-inventory-2	Stock Ledger
+solutions/inventory/solution-inventory-3	Stock Reorder
+solutions/inventory/solution-inventory-4	PO Receiving
+solutions/inventory/solution-inventory-5	Shop Activity
+solutions/inventory/solution-inventory-6	Stock Health
+solutions/inventory/solution-inventory-7	Product Stock Planner
+solutions/inventory/solution-inventory-8	Reorder Rules
+solutions/inventory/solution-inventory-9	Shipment Tracking
+solutions/users/solution-users-1	Member Directory
+solutions/users/solution-users-2	Member Detail
+solutions/users/solution-users-3	Permission Matrix
+solutions/users/solution-users-4	Invitations
+solutions/users/solution-users-5	Access Requests
+solutions/users/solution-users-6	Access Audit Log
+solutions/users/solution-users-7	SSO & SCIM

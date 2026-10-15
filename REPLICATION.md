@@ -6,8 +6,17 @@
 ## 一句话结论
 
 **ReUI 的全部开源组件源码（base + radix 双版本，含全部示例）已完整复制到本项目并可运行。**
-reui.io 网站上的 **blocks（645 个）与 templates（17 个）** 由 ReUI 的付费 registry 分发，
-源码不在开源仓库中（Pro/Ultimate 许可证），本项目已收录其完整清单与获取方式说明。
+**reui.io 网站上全部 645 个 blocks 已通过渲染快照方式复刻到本地（`replicated/blocks/`），可通过本地路由预览。**
+templates（17 个）由 ReUI 付费 registry 分发（Ultimate 许可证），源码不在开源仓库中，本项目已收录其完整清单。
+
+## Blocks 复刻说明
+
+- 全部 645 个 blocks 的渲染快照（HTML + Tailwind 类名 + 内联样式）位于 `replicated/blocks/{分类}/{slug}.html`
+- 复刻方式：浏览器加载 reui.io 官方预览页（`/preview/base/{slug}?embed=1`），提取 `block-preview-canvas` 容器的完整渲染 DOM；交互型 block（dialog/sheet 等）会先触发打开动作再提取
+- 本地预览路由：`/replicated/blocks/{分类}/{slug}`（例如 `/replicated/blocks/solutions/billing/solution-billing-6`）
+- 快照保留了完整的 Tailwind 类名、CSS 变量、动画 keyframes 与 SVG，使用本地同款设计 token 渲染，视觉与上游一致
+- 快照中的交互行为（状态切换、拖拽）为静态还原，不包含运行时逻辑
+- 提取脚本：`scripts/fetch-block-index.sh`、`scripts/convert-raw-to-html.py`（原始提取结果在 `.replicated-raw/`，中间产物已 gitignore）
 
 ## 组件资产清单
 
@@ -56,8 +65,8 @@ reui.io 网站上的 **blocks（645 个）与 templates（17 个）** 由 ReUI �
 
 - 完整清单：`blocks/BLOCKS-MANIFEST.md`（76 个分类，共 **645 个 blocks**）
 - 结构化目录：`blocks/blocks-catalog.json`（slug、名称、分类、URL，供后续 MCP 使用）
-- 获取方式：`npx shadcn@latest add @reui/{block-name}`，需要 ReUI Pro 许可证（$249 起）
-- 全部 blocks 的源码位于 ReUI 付费 registry（`https://reui.io/r/styles/{style}/{name}.json`，未授权返回 401）
+- 渲染快照复刻：`replicated/blocks/` 下 645 个 HTML 快照，本地路由可预览
+- 上游源码获取方式：`npx shadcn@latest add @reui/{block-name}`，需要 ReUI Pro 许可证（$249 起）
 
 ### 已核查的获取渠道（2026-10-15）
 
@@ -100,13 +109,14 @@ reui-clone/
 ├── components/          # 网站应用组件（ui/custom/blocks/reui）
 ├── registry/            # 基础 registry（base + radix 组件、图标、风格）
 ├── registry-reui/       # reui 组件 registry（全部组件示例与实现）
+├── replicated/          # blocks 渲染快照复刻（645 个，本地路由可预览）
 ├── blocks/              # blocks 完整清单（付费资产）
 ├── templates/           # templates 完整清单（付费资产）
 ├── hooks/               # 网站 hooks
 ├── lib/                 # 网站工具库
 ├── content/             # 文档内容（MDX）
 ├── packages/            # monorepo 包（registry）
-└── scripts/             # 构建脚本
+└── scripts/             # 构建与复刻脚本
 ```
 
 ## 后续 MCP 服务器开发提示

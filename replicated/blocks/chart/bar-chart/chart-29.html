@@ -1,0 +1,301 @@
+<div class="flex min-h-svh w-full items-center justify-center p-6 md:p-10"><div class="relative flex flex-col bg-muted/50 px-(--frame-px) py-(--frame-py) rounded-(--frame-radius) style-vega:[--frame-radius:var(--radius-xl)] style-nova:[--frame-radius:var(--radius-xl)] style-lyra:[--frame-radius:0px] style-maia:[--frame-radius:var(--radius-2xl)] style-mira:[--frame-radius:var(--radius-lg)] style-luma:[--frame-radius:var(--radius-4xl)] style-sera:[--frame-radius:0px] style-rhea:[--frame-radius:min(var(--radius-4xl),24px)] [--frame-gap:--spacing(0.75)] [--frame-px:--spacing(0.75)] [--frame-py:--spacing(0.75)] [--frame-panel-header-gap:0rem] [--frame-panel-footer-gap:--spacing(1)] [--frame-panel-px-adjust:0px] [--frame-panel-py-adjust:0px] [--frame-panel-header-px-adjust:0px] [--frame-panel-header-py-adjust:0px] [--frame-panel-footer-px-adjust:0px] [--frame-panel-footer-py-adjust:0px] [--frame-panel-px:calc(var(--frame-panel-px-base)+var(--frame-panel-px-adjust))] [--frame-panel-py:calc(var(--frame-panel-py-base)+var(--frame-panel-py-adjust))] [--frame-panel-header-px:calc(var(--frame-panel-header-px-base)+var(--frame-panel-header-px-adjust))] [--frame-panel-header-py:calc(var(--frame-panel-header-py-base)+var(--frame-panel-header-py-adjust))] [--frame-panel-footer-px:calc(var(--frame-panel-footer-px-base)+var(--frame-panel-footer-px-adjust))] [--frame-panel-footer-py:calc(var(--frame-panel-footer-py-base)+var(--frame-panel-footer-py-adjust))] style-luma:[--frame-gap:--spacing(1)] style-luma:[--frame-px:--spacing(1)] style-luma:[--frame-py:--spacing(1.25)] style-luma:[--frame-panel-header-gap:--spacing(1.5)] style-luma:[--frame-panel-footer-gap:--spacing(1.5)] style-luma:[--frame-panel-py-adjust:--spacing(0.5)] style-luma:[--frame-panel-header-py-adjust:--spacing(1)] style-luma:[--frame-panel-footer-py-adjust:--spacing(1)] [--frame-panel-bg:var(--color-card)] [--frame-panel-border-color:var(--color-border)] [--frame-border-color:var(--color-border)] [--frame-panel-radius:calc(var(--frame-radius)-var(--frame-px)-1px)] border border-[var(--frame-border-color)] bg-clip-padding [--frame-panel-px-base:--spacing(4)] [--frame-panel-py-base:--spacing(4)] [--frame-panel-header-px-base:--spacing(4)] [--frame-panel-header-py-base:--spacing(2)] [--frame-panel-footer-px-base:--spacing(4)] [--frame-panel-footer-py-base:--spacing(2)] gap-0 *:has-[+[data-slot=frame-panel]]:rounded-b-none *:has-[+[data-slot=frame-panel]]:before:hidden *:[[data-slot=frame-panel]+[data-slot=frame-panel]]:rounded-t-none *:[[data-slot=frame-panel]+[data-slot=frame-panel]]:border-t-0 @container w-full max-w-5xl min-w-0 [--velocity-current:var(--velocity-accent,var(--color-blue-500))] dark:[--velocity-current:var(--velocity-accent,var(--color-blue-400))]" data-slot="frame" data-spacing="default" data-chart="chart-r0"><style>
+ [data-chart=chart-r0] {
+  --color-velocity: var(--velocity-current);
+  --color-watch: var(--color-amber-400);
+  --color-slow: var(--color-zinc-400);
+}
+
+
+.dark [data-chart=chart-r0] {
+  --color-velocity: var(--velocity-current);
+  --color-watch: var(--color-amber-300);
+  --color-slow: var(--color-zinc-500);
+}
+</style><header class="flex px-(--frame-panel-header-px) py-(--frame-panel-header-py) flex-row flex-wrap items-center justify-between gap-3" data-slot="frame-panel-header"><div class="flex min-w-0 flex-col gap-0.5"><div class="text-sm font-semibold" data-slot="frame-panel-title">Inventory Velocity</div><div class="text-muted-foreground text-sm truncate" data-slot="frame-panel-description">Units sold per day by category</div></div><div class="flex flex-wrap items-center gap-2"><button type="button" tabindex="0" data-slot="dropdown-menu-trigger" aria-haspopup="menu" id="base-ui-_r_4_" class="cn-button group/button inline-flex shrink-0 items-center justify-center whitespace-nowrap transition-all outline-none select-none disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 cn-button-variant-outline cn-button-size-default" aria-expanded="false" data-extracted="1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar" lucide="CalendarIcon" tabler="IconCalendarEvent" hugeicons="Calendar04Icon" phosphor="CalendarBlankIcon" remixicon="RiCalendarLine" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg><span class="@max-md:sr-only [text-box:trim-both_cap_alphabetic]">Last 30 days</span><span aria-hidden="true" class="@md:hidden [text-box:trim-both_cap_alphabetic]">30D</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down text-muted-foreground" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button><button type="button" tabindex="0" data-slot="dropdown-menu-trigger" aria-haspopup="menu" id="base-ui-_r_9_" class="cn-button group/button inline-flex shrink-0 items-center justify-center whitespace-nowrap transition-all outline-none select-none disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 cn-button-variant-outline cn-button-size-default" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-building2 lucide-building-2" lucide="Building2Icon" tabler="IconBuilding" hugeicons="Building02Icon" phosphor="BuildingsIcon" remixicon="RiBuildingLine" aria-hidden="true"><path d="M10 12h4"></path><path d="M10 8h4"></path><path d="M14 21v-3a2 2 0 0 0-4 0v3"></path><path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"></path><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path></svg><span class="@max-md:sr-only [text-box:trim-both_cap_alphabetic]">Warehouses</span><span class="text-muted-foreground font-normal tabular-nums [text-box:trim-both_cap_alphabetic]">3/3</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down text-muted-foreground" lucide="ChevronDownIcon" tabler="IconChevronDown" hugeicons="ArrowDown01Icon" phosphor="CaretDownIcon" remixicon="RiArrowDownSLine" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button><div role="group" data-slot="button-group" class="cn-button-group flex w-fit items-stretch *:focus-visible:relative *:focus-visible:z-10 [&amp;&gt;[data-slot=select-trigger]:not([class*='w-'])]:w-fit [&amp;&gt;input]:flex-1 cn-button-group-orientation-horizontal *:data-slot:rounded-r-none [&amp;&gt;[data-slot]~[data-slot]]:rounded-l-none [&amp;&gt;[data-slot]~[data-slot]]:border-l-0" aria-label="Chart actions"><button type="button" tabindex="0" data-slot="tooltip-trigger" aria-label="Sort by catalog order" aria-haspopup="menu" id="base-ui-_r_f_" data-base-ui-tooltip-trigger="" class="cn-button group/button inline-flex shrink-0 items-center justify-center whitespace-nowrap transition-all outline-none select-none disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 cn-button-variant-outline cn-button-size-icon" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-down" lucide="ArrowUpDownIcon" tabler="IconArrowsUpDown" hugeicons="ArrowDataTransferVerticalIcon" phosphor="ArrowsDownUpIcon" remixicon="RiArrowUpDownLine" aria-hidden="true"><path d="m21 16-4 4-4-4"></path><path d="M17 20V4"></path><path d="m3 8 4-4 4 4"></path><path d="M7 4v16"></path></svg></button><button type="button" tabindex="0" data-slot="color-picker-trigger" aria-label="Bar color" id="_r_i_" data-base-ui-tooltip-trigger="" data-base-ui-click-trigger="" aria-haspopup="dialog" aria-expanded="false" class="cn-button group/button inline-flex shrink-0 items-center justify-center whitespace-nowrap transition-all outline-none select-none disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 cn-button-variant-outline cn-button-size-icon font-normal normal-case tracking-normal tabular-nums data-placeholder:text-muted-foreground"><span aria-hidden="true" data-slot="color-picker-swatch" class="forced-color-adjust-none relative inline-flex size-4 shrink-0 after:pointer-events-none after:absolute after:inset-0 after:rounded-[inherit] after:inset-ring after:inset-ring-foreground/10 rounded-full" style="background: var(--velocity-current);"></span></button><span role="status" class="sr-only"></span><button type="button" tabindex="0" data-slot="tooltip-trigger" aria-label="Refresh data" aria-busy="false" id="base-ui-_r_o_" data-base-ui-tooltip-trigger="" class="cn-button group/button inline-flex shrink-0 items-center justify-center whitespace-nowrap transition-all outline-none select-none disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 cn-button-variant-outline cn-button-size-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-refresh-cw" lucide="RefreshCwIcon" tabler="IconRefresh" hugeicons="RefreshIcon" phosphor="ArrowsClockwiseIcon" remixicon="RiRefreshLine" aria-hidden="true"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"></path><path d="M21 3v5h-5"></path><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"></path><path d="M8 16H3v5"></path></svg></button><button type="button" tabindex="0" data-slot="tooltip-trigger" aria-label="More actions" aria-haspopup="menu" id="base-ui-_r_t_" data-base-ui-tooltip-trigger="" class="cn-button group/button inline-flex shrink-0 items-center justify-center whitespace-nowrap transition-all outline-none select-none disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 cn-button-variant-outline cn-button-size-icon" aria-expanded="false"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis" lucide="MoreHorizontalIcon" tabler="IconDots" hugeicons="MoreHorizontalCircle01Icon" phosphor="DotsThreeIcon" remixicon="RiMoreLine" aria-hidden="true"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg></button></div></div></header><div class="relative overflow-hidden rounded-(--frame-panel-radius) border border-(--frame-panel-border-color) bg-(--frame-panel-bg) bg-clip-padding shadow-xs grow before:pointer-events-none before:absolute before:inset-0 before:rounded-[calc(var(--frame-panel-radius)-1px)] before:shadow-black/5 dark:bg-clip-border dark:before:shadow-white/5 p-0" data-slot="frame-panel"><div class="grid @3xl:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]"><div class="flex min-w-0 flex-col justify-between gap-3 border-b px-(--frame-panel-px) py-(--frame-panel-py) @3xl:border-e @3xl:border-b-0"><span class="text-muted-foreground flex h-5 items-center text-sm"><span class="[text-box:trim-both_cap_alphabetic]">Units per Day</span></span><span class="flex h-9 items-center gap-3"><span class="text-4xl font-semibold tracking-tight tabular-nums [text-box:trim-both_cap_alphabetic]">7,170</span><span data-slot="badge" class="relative inline-flex items-center justify-center border font-medium whitespace-nowrap outline-none transition-shadow focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 focus-visible:ring-offset-background disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:shrink-0 [&amp;_svg:not([class*=size-])]:size-3 border-success/15 bg-success/10 text-success-foreground dark:border-success/25 dark:bg-success/15 dark:text-success px-1.25 py-0.5 text-xs h-5 min-w-5 style-vega:rounded-sm style-nova:rounded-sm style-maia:rounded-4xl style-lyra:rounded-none style-mira:rounded-sm style-luma:rounded-4xl style-rhea:rounded-2xl style-sera:rounded-none w-fit shrink-0 gap-1 border-none tabular-nums [&amp;_svg]:size-3.5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up" lucide="TrendingUp" tabler="IconTrendingUp" hugeicons="TradeUpIcon" phosphor="TrendUpIcon" remixicon="RiArrowRightUpLongLine" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg><span class="sr-only">Up</span><span class="[text-box:trim-both_cap_alphabetic]">13.5%</span></span></span><span class="text-muted-foreground flex h-5 min-w-0 items-center text-xs tabular-nums"><span class="[text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">vs 6,316 a day in the prior 30 days</span></span></div><div class="flex min-w-0 flex-col justify-between gap-3 px-(--frame-panel-px) py-(--frame-panel-py)"><span class="flex h-5 items-center justify-between gap-3"><span class="text-muted-foreground shrink-0 text-sm whitespace-nowrap [text-box:trim-both_cap_alphabetic]">Stock Health</span><span class="text-muted-foreground min-w-0 text-xs tabular-nums [text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">24.5 days of supply<span class="@max-md:hidden">, 175.3K on hand</span></span></span><span aria-hidden="true" class="flex h-1.5 gap-1"><span class="basis-0 rounded-full bg-(--color-velocity)" style="flex-grow: 8;"></span><span class="basis-0 rounded-full bg-(--color-watch)" style="flex-grow: 2;"></span><span class="basis-0 rounded-full bg-(--color-slow)" style="flex-grow: 2;"></span></span><ul class="flex flex-wrap gap-x-5 gap-y-2"><li class="flex h-5 min-w-0 items-center gap-2"><span aria-hidden="true" class="size-2 shrink-0 rounded-full bg-(--color-velocity)"></span><span class="text-sm font-medium tabular-nums [text-box:trim-both_cap_alphabetic]">8</span><span class="text-sm [text-box:trim-both_cap_alphabetic]">Healthy</span><span class="text-muted-foreground text-xs [text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">under 30 days</span></li><li class="flex h-5 min-w-0 items-center gap-2"><span aria-hidden="true" class="size-2 shrink-0 rounded-full bg-(--color-watch)"></span><span class="text-sm font-medium tabular-nums [text-box:trim-both_cap_alphabetic]">2</span><span class="text-sm [text-box:trim-both_cap_alphabetic]">Watch</span><span class="text-muted-foreground text-xs [text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">Toys and Health</span></li><li class="flex h-5 min-w-0 items-center gap-2"><span aria-hidden="true" class="size-2 shrink-0 rounded-full bg-(--color-slow)"></span><span class="text-sm font-medium tabular-nums [text-box:trim-both_cap_alphabetic]">2</span><span class="text-sm [text-box:trim-both_cap_alphabetic]">Slow</span><span class="text-muted-foreground text-xs [text-box:trim-both_cap_alphabetic] overflow-x-clip text-ellipsis whitespace-nowrap">Office and Electronics</span></li></ul></div></div></div><div class="relative overflow-hidden rounded-(--frame-panel-radius) border border-(--frame-panel-border-color) bg-(--frame-panel-bg) bg-clip-padding shadow-xs grow before:pointer-events-none before:absolute before:inset-0 before:rounded-[calc(var(--frame-panel-radius)-1px)] before:shadow-black/5 dark:bg-clip-border dark:before:shadow-white/5 px-(--frame-panel-px) py-(--frame-panel-py)" data-slot="frame-panel"><div class="flex flex-col gap-6"><style>
+@keyframes velocity-rise-y {
+  from { transform: scaleY(0); opacity: 0; }
+  to { transform: scaleY(1); opacity: 1; }
+}
+@keyframes velocity-rise-x {
+  from { transform: scaleX(0); opacity: 0; }
+  to { transform: scaleX(1); opacity: 1; }
+}
+.velocity-bar {
+  transform-box: fill-box;
+  transform-origin: bottom;
+  animation: velocity-rise-y 640ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.velocity-bar[data-sideways] {
+  transform-origin: left;
+  animation-name: velocity-rise-x;
+}
+@media (prefers-reduced-motion: reduce) {
+  .velocity-bar { animation: none; }
+}
+html[data-demo="frozen"] .velocity-bar { animation: none; }
+</style><ul class="text-muted-foreground flex flex-wrap items-center justify-end gap-x-4 gap-y-2 text-xs"><li class="flex h-4 items-center gap-1.5"><span aria-hidden="true" class="size-2 shrink-0 rounded-full bg-(--color-velocity)"></span><span class="[text-box:trim-both_cap_alphabetic]">Healthy</span></li><li class="flex h-4 items-center gap-1.5"><span aria-hidden="true" class="size-2 shrink-0 rounded-full bg-(--color-watch)"></span><span class="[text-box:trim-both_cap_alphabetic]">Watch</span></li><li class="flex h-4 items-center gap-1.5"><span aria-hidden="true" class="size-2 shrink-0 rounded-full bg-(--color-slow)"></span><span class="[text-box:trim-both_cap_alphabetic]">Slow</span></li></ul><div class="w-full h-72"><div data-slot="chart" data-chart="chart-_r_11_" class="cn-chart flex aspect-video justify-center text-xs [&amp;_.recharts-cartesian-axis-tick_text]:fill-muted-foreground [&amp;_.recharts-cartesian-grid_line[stroke='#ccc']]:stroke-border/50 [&amp;_.recharts-curve.recharts-tooltip-cursor]:stroke-border [&amp;_.recharts-dot[stroke='#fff']]:stroke-transparent [&amp;_.recharts-layer]:outline-hidden [&amp;_.recharts-polar-grid_[stroke='#ccc']]:stroke-border [&amp;_.recharts-radial-bar-background-sector]:fill-muted [&amp;_.recharts-rectangle.recharts-tooltip-cursor]:fill-muted [&amp;_.recharts-reference-line_[stroke='#ccc']]:stroke-border [&amp;_.recharts-sector]:outline-hidden [&amp;_.recharts-sector[stroke='#fff']]:stroke-transparent [&amp;_.recharts-surface]:outline-hidden w-full h-72"><style>
+ [data-chart=chart-_r_11_] {
+  --color-velocity: var(--velocity-current);
+  --color-watch: var(--color-amber-400);
+  --color-slow: var(--color-zinc-400);
+}
+
+
+.dark [data-chart=chart-_r_11_] {
+  --color-velocity: var(--velocity-current);
+  --color-watch: var(--color-amber-300);
+  --color-slow: var(--color-zinc-500);
+}
+</style><div class="recharts-responsive-container" style="width: 100%; height: 100%; min-width: 0px;"><div style="width: 0px; height: 0px; overflow: visible;"><div width="982" height="288" class="recharts-wrapper" style="position: relative; cursor: default; width: 982px; height: 288px;"><div xmlns="http://www.w3.org/1999/xhtml" tabindex="-1" class="recharts-tooltip-wrapper" style="visibility: hidden; pointer-events: none; position: absolute; top: 0px; left: 0px;"></div><svg role="application" tabindex="0" class="recharts-surface" width="982" height="288" viewBox="0 0 982 288" style="width: 100%; height: 100%; display: block;"><title></title><desc></desc><g tabindex="-1" class="recharts-zIndex-layer_-100"></g><g tabindex="-1" class="recharts-zIndex-layer_-50"><g class="recharts-layer recharts-inactive-bar"><g><path x="70.375" y="8" width="31" height="250" class="recharts-rectangle transition-[fill] duration-150 fill-muted" radius="15.5" d="M 70.375,23.5
+            A 15.5,15.5,0,0,1,85.875,8
+            L 85.875,8
+            A 15.5,15.5,0,0,1,101.375,23.5
+            L 101.375,242.5
+            A 15.5,15.5,0,0,1,85.875,258
+            L 85.875,258
+            A 15.5,15.5,0,0,1,70.375,242.5 Z"></path><path x="70.375" y="8" width="31" height="250" fill="url(#r10-track-lines)" radius="15.5" class="recharts-rectangle" d="M 70.375,23.5
+            A 15.5,15.5,0,0,1,85.875,8
+            L 85.875,8
+            A 15.5,15.5,0,0,1,101.375,23.5
+            L 101.375,242.5
+            A 15.5,15.5,0,0,1,85.875,258
+            L 85.875,258
+            A 15.5,15.5,0,0,1,70.375,242.5 Z"></path></g></g><g class="recharts-layer recharts-inactive-bar"><g><path x="148.2917" y="8" width="31" height="250" class="recharts-rectangle transition-[fill] duration-150 fill-muted" radius="15.5" d="M 148.2917,23.5
+            A 15.5,15.5,0,0,1,163.7917,8
+            L 163.7917,8
+            A 15.5,15.5,0,0,1,179.2917,23.5
+            L 179.2917,242.5
+            A 15.5,15.5,0,0,1,163.7917,258
+            L 163.7917,258
+            A 15.5,15.5,0,0,1,148.2917,242.5 Z"></path><path x="148.2917" y="8" width="31" height="250" fill="url(#r10-track-lines)" radius="15.5" class="recharts-rectangle" d="M 148.2917,23.5
+            A 15.5,15.5,0,0,1,163.7917,8
+            L 163.7917,8
+            A 15.5,15.5,0,0,1,179.2917,23.5
+            L 179.2917,242.5
+            A 15.5,15.5,0,0,1,163.7917,258
+            L 163.7917,258
+            A 15.5,15.5,0,0,1,148.2917,242.5 Z"></path></g></g><g class="recharts-layer recharts-inactive-bar"><g><path x="226.2083" y="8" width="31" height="250" class="recharts-rectangle transition-[fill] duration-150 fill-muted" radius="15.5" d="M 226.2083,23.5
+            A 15.5,15.5,0,0,1,241.7083,8
+            L 241.7083,8
+            A 15.5,15.5,0,0,1,257.2083,23.5
+            L 257.2083,242.5
+            A 15.5,15.5,0,0,1,241.7083,258
+            L 241.7083,258
+            A 15.5,15.5,0,0,1,226.2083,242.5 Z"></path><path x="226.2083" y="8" width="31" height="250" fill="url(#r10-track-lines)" radius="15.5" class="recharts-rectangle" d="M 226.2083,23.5
+            A 15.5,15.5,0,0,1,241.7083,8
+            L 241.7083,8
+            A 15.5,15.5,0,0,1,257.2083,23.5
+            L 257.2083,242.5
+            A 15.5,15.5,0,0,1,241.7083,258
+            L 241.7083,258
+            A 15.5,15.5,0,0,1,226.2083,242.5 Z"></path></g></g><g class="recharts-layer recharts-inactive-bar"><g><path x="304.125" y="8" width="31" height="250" class="recharts-rectangle transition-[fill] duration-150 fill-muted" radius="15.5" d="M 304.125,23.5
+            A 15.5,15.5,0,0,1,319.625,8
+            L 319.625,8
+            A 15.5,15.5,0,0,1,335.125,23.5
+            L 335.125,242.5
+            A 15.5,15.5,0,0,1,319.625,258
+            L 319.625,258
+            A 15.5,15.5,0,0,1,304.125,242.5 Z"></path><path x="304.125" y="8" width="31" height="250" fill="url(#r10-track-lines)" radius="15.5" class="recharts-rectangle" d="M 304.125,23.5
+            A 15.5,15.5,0,0,1,319.625,8
+            L 319.625,8
+            A 15.5,15.5,0,0,1,335.125,23.5
+            L 335.125,242.5
+            A 15.5,15.5,0,0,1,319.625,258
+            L 319.625,258
+            A 15.5,15.5,0,0,1,304.125,242.5 Z"></path></g></g><g class="recharts-layer recharts-inactive-bar"><g><path x="382.0417" y="8" width="31" height="250" class="recharts-rectangle transition-[fill] duration-150 fill-muted" radius="15.5" d="M 382.0417,23.5
+            A 15.5,15.5,0,0,1,397.5417,8
+            L 397.5417,8
+            A 15.5,15.5,0,0,1,413.0417,23.5
+            L 413.0417,242.5
+            A 15.5,15.5,0,0,1,397.5417,258
+            L 397.5417,258
+            A 15.5,15.5,0,0,1,382.0417,242.5 Z"></path><path x="382.0417" y="8" width="31" height="250" fill="url(#r10-track-lines)" radius="15.5" class="recharts-rectangle" d="M 382.0417,23.5
+            A 15.5,15.5,0,0,1,397.5417,8
+            L 397.5417,8
+            A 15.5,15.5,0,0,1,413.0417,23.5
+            L 413.0417,242.5
+            A 15.5,15.5,0,0,1,397.5417,258
+            L 397.5417,258
+            A 15.5,15.5,0,0,1,382.0417,242.5 Z"></path></g></g><g class="recharts-layer recharts-inactive-bar"><g><path x="459.9583" y="8" width="31" height="250" class="recharts-rectangle transition-[fill] duration-150 fill-muted" radius="15.5" d="M 459.9583,23.5
+            A 15.5,15.5,0,0,1,475.4583,8
+            L 475.4583,8
+            A 15.5,15.5,0,0,1,490.9583,23.5
+            L 490.9583,242.5
+            A 15.5,15.5,0,0,1,475.4583,258
+            L 475.4583,258
+            A 15.5,15.5,0,0,1,459.9583,242.5 Z"></path><path x="459.9583" y="8" width="31" height="250" fill="url(#r10-track-lines)" radius="15.5" class="recharts-rectangle" d="M 459.9583,23.5
+            A 15.5,15.5,0,0,1,475.4583,8
+            L 475.4583,8
+            A 15.5,15.5,0,0,1,490.9583,23.5
+            L 490.9583,242.5
+            A 15.5,15.5,0,0,1,475.4583,258
+            L 475.4583,258
+            A 15.5,15.5,0,0,1,459.9583,242.5 Z"></path></g></g><g class="recharts-layer recharts-inactive-bar"><g><path x="537.875" y="8" width="31" height="250" class="recharts-rectangle transition-[fill] duration-150 fill-muted" radius="15.5" d="M 537.875,23.5
+            A 15.5,15.5,0,0,1,553.375,8
+            L 553.375,8
+            A 15.5,15.5,0,0,1,568.875,23.5
+            L 568.875,242.5
+            A 15.5,15.5,0,0,1,553.375,258
+            L 553.375,258
+            A 15.5,15.5,0,0,1,537.875,242.5 Z"></path><path x="537.875" y="8" width="31" height="250" fill="url(#r10-track-lines)" radius="15.5" class="recharts-rectangle" d="M 537.875,23.5
+            A 15.5,15.5,0,0,1,553.375,8
+            L 553.375,8
+            A 15.5,15.5,0,0,1,568.875,23.5
+            L 568.875,242.5
+            A 15.5,15.5,0,0,1,553.375,258
+            L 553.375,258
+            A 15.5,15.5,0,0,1,537.875,242.5 Z"></path></g></g><g class="recharts-layer recharts-inactive-bar"><g><path x="615.7917" y="8" width="31" height="250" class="recharts-rectangle transition-[fill] duration-150 fill-muted" radius="15.5" d="M 615.7917,23.5
+            A 15.5,15.5,0,0,1,631.2917,8
+            L 631.2917,8
+            A 15.5,15.5,0,0,1,646.7917,23.5
+            L 646.7917,242.5
+            A 15.5,15.5,0,0,1,631.2917,258
+            L 631.2917,258
+            A 15.5,15.5,0,0,1,615.7917,242.5 Z"></path><path x="615.7917" y="8" width="31" height="250" fill="url(#r10-track-lines)" radius="15.5" class="recharts-rectangle" d="M 615.7917,23.5
+            A 15.5,15.5,0,0,1,631.2917,8
+            L 631.2917,8
+            A 15.5,15.5,0,0,1,646.7917,23.5
+            L 646.7917,242.5
+            A 15.5,15.5,0,0,1,631.2917,258
+            L 631.2917,258
+            A 15.5,15.5,0,0,1,615.7917,242.5 Z"></path></g></g><g class="recharts-layer recharts-inactive-bar"><g><path x="693.7083" y="8" width="31" height="250" class="recharts-rectangle transition-[fill] duration-150 fill-muted" radius="15.5" d="M 693.7083,23.5
+            A 15.5,15.5,0,0,1,709.2083,8
+            L 709.2083,8
+            A 15.5,15.5,0,0,1,724.7083,23.5
+            L 724.7083,242.5
+            A 15.5,15.5,0,0,1,709.2083,258
+            L 709.2083,258
+            A 15.5,15.5,0,0,1,693.7083,242.5 Z"></path><path x="693.7083" y="8" width="31" height="250" fill="url(#r10-track-lines)" radius="15.5" class="recharts-rectangle" d="M 693.7083,23.5
+            A 15.5,15.5,0,0,1,709.2083,8
+            L 709.2083,8
+            A 15.5,15.5,0,0,1,724.7083,23.5
+            L 724.7083,242.5
+            A 15.5,15.5,0,0,1,709.2083,258
+            L 709.2083,258
+            A 15.5,15.5,0,0,1,693.7083,242.5 Z"></path></g></g><g class="recharts-layer recharts-inactive-bar"><g><path x="771.625" y="8" width="31" height="250" class="recharts-rectangle transition-[fill] duration-150 fill-muted" radius="15.5" d="M 771.625,23.5
+            A 15.5,15.5,0,0,1,787.125,8
+            L 787.125,8
+            A 15.5,15.5,0,0,1,802.625,23.5
+            L 802.625,242.5
+            A 15.5,15.5,0,0,1,787.125,258
+            L 787.125,258
+            A 15.5,15.5,0,0,1,771.625,242.5 Z"></path><path x="771.625" y="8" width="31" height="250" fill="url(#r10-track-lines)" radius="15.5" class="recharts-rectangle" d="M 771.625,23.5
+            A 15.5,15.5,0,0,1,787.125,8
+            L 787.125,8
+            A 15.5,15.5,0,0,1,802.625,23.5
+            L 802.625,242.5
+            A 15.5,15.5,0,0,1,787.125,258
+            L 787.125,258
+            A 15.5,15.5,0,0,1,771.625,242.5 Z"></path></g></g><g class="recharts-layer recharts-inactive-bar"><g><path x="849.5417" y="8" width="31" height="250" class="recharts-rectangle transition-[fill] duration-150 fill-muted" radius="15.5" d="M 849.5417,23.5
+            A 15.5,15.5,0,0,1,865.0417,8
+            L 865.0417,8
+            A 15.5,15.5,0,0,1,880.5417,23.5
+            L 880.5417,242.5
+            A 15.5,15.5,0,0,1,865.0417,258
+            L 865.0417,258
+            A 15.5,15.5,0,0,1,849.5417,242.5 Z"></path><path x="849.5417" y="8" width="31" height="250" fill="url(#r10-track-lines)" radius="15.5" class="recharts-rectangle" d="M 849.5417,23.5
+            A 15.5,15.5,0,0,1,865.0417,8
+            L 865.0417,8
+            A 15.5,15.5,0,0,1,880.5417,23.5
+            L 880.5417,242.5
+            A 15.5,15.5,0,0,1,865.0417,258
+            L 865.0417,258
+            A 15.5,15.5,0,0,1,849.5417,242.5 Z"></path></g></g><g class="recharts-layer recharts-inactive-bar"><g><path x="927.4583" y="8" width="31" height="250" class="recharts-rectangle transition-[fill] duration-150 fill-muted" radius="15.5" d="M 927.4583,23.5
+            A 15.5,15.5,0,0,1,942.9583,8
+            L 942.9583,8
+            A 15.5,15.5,0,0,1,958.4583,23.5
+            L 958.4583,242.5
+            A 15.5,15.5,0,0,1,942.9583,258
+            L 942.9583,258
+            A 15.5,15.5,0,0,1,927.4583,242.5 Z"></path><path x="927.4583" y="8" width="31" height="250" fill="url(#r10-track-lines)" radius="15.5" class="recharts-rectangle" d="M 927.4583,23.5
+            A 15.5,15.5,0,0,1,942.9583,8
+            L 942.9583,8
+            A 15.5,15.5,0,0,1,958.4583,23.5
+            L 958.4583,242.5
+            A 15.5,15.5,0,0,1,942.9583,258
+            L 942.9583,258
+            A 15.5,15.5,0,0,1,927.4583,242.5 Z"></path></g></g></g><defs><clipPath id="recharts1-clip"><rect x="47" y="8" height="250" width="935"></rect></clipPath></defs><defs><pattern id="r10-track-lines" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="0.75" height="4" class="fill-muted-foreground/25"></rect></pattern></defs><g tabindex="-1" class="recharts-zIndex-layer_100"></g><g tabindex="-1" class="recharts-zIndex-layer_200"></g><g tabindex="-1" class="recharts-zIndex-layer_300"><g class="recharts-layer recharts-bar" id="recharts-bar-_r_12_"><g class="recharts-layer recharts-bar-rectangles"><g class="recharts-layer"><g class="recharts-layer recharts-bar-rectangle"><g class="recharts-layer recharts-inactive-bar"><g class="velocity-bar" style="animation-delay: 120ms;"><path x="70.375" y="172.5" width="31" height="85.5" fill="var(--color-slow)" class="recharts-rectangle transition-opacity duration-150 ease-out" radius="15.5" d="M 70.375,188
+            A 15.5,15.5,0,0,1,85.875,172.5
+            L 85.875,172.5
+            A 15.5,15.5,0,0,1,101.375,188
+            L 101.375,242.5
+            A 15.5,15.5,0,0,1,85.875,258
+            L 85.875,258
+            A 15.5,15.5,0,0,1,70.375,242.5 Z"></path></g></g></g><g class="recharts-layer recharts-bar-rectangle"><g class="recharts-layer recharts-inactive-bar"><g class="velocity-bar" style="animation-delay: 165ms;"><path x="148.2917" y="39" width="31" height="219" fill="var(--color-velocity)" class="recharts-rectangle transition-opacity duration-150 ease-out" radius="15.5" d="M 148.2917,54.5
+            A 15.5,15.5,0,0,1,163.7917,39
+            L 163.7917,39
+            A 15.5,15.5,0,0,1,179.2917,54.5
+            L 179.2917,242.5
+            A 15.5,15.5,0,0,1,163.7917,258
+            L 163.7917,258
+            A 15.5,15.5,0,0,1,148.2917,242.5 Z"></path></g></g></g><g class="recharts-layer recharts-bar-rectangle"><g class="recharts-layer recharts-inactive-bar"><g class="velocity-bar" style="animation-delay: 210ms;"><path x="226.2083" y="130" width="31" height="128" fill="var(--color-velocity)" class="recharts-rectangle transition-opacity duration-150 ease-out" radius="15.5" d="M 226.2083,145.5
+            A 15.5,15.5,0,0,1,241.7083,130
+            L 241.7083,130
+            A 15.5,15.5,0,0,1,257.2083,145.5
+            L 257.2083,242.5
+            A 15.5,15.5,0,0,1,241.7083,258
+            L 241.7083,258
+            A 15.5,15.5,0,0,1,226.2083,242.5 Z"></path></g></g></g><g class="recharts-layer recharts-bar-rectangle"><g class="recharts-layer recharts-inactive-bar"><g class="velocity-bar" style="animation-delay: 255ms;"><path x="304.125" y="100.75" width="31" height="157.25" fill="var(--color-velocity)" class="recharts-rectangle transition-opacity duration-150 ease-out" radius="15.5" d="M 304.125,116.25
+            A 15.5,15.5,0,0,1,319.625,100.75
+            L 319.625,100.75
+            A 15.5,15.5,0,0,1,335.125,116.25
+            L 335.125,242.5
+            A 15.5,15.5,0,0,1,319.625,258
+            L 319.625,258
+            A 15.5,15.5,0,0,1,304.125,242.5 Z"></path></g></g></g><g class="recharts-layer recharts-bar-rectangle"><g class="recharts-layer recharts-inactive-bar"><g class="velocity-bar" style="animation-delay: 300ms;"><path x="382.0417" y="143.5" width="31" height="114.5" fill="var(--color-watch)" class="recharts-rectangle transition-opacity duration-150 ease-out" radius="15.5" d="M 382.0417,159
+            A 15.5,15.5,0,0,1,397.5417,143.5
+            L 397.5417,143.5
+            A 15.5,15.5,0,0,1,413.0417,159
+            L 413.0417,242.5
+            A 15.5,15.5,0,0,1,397.5417,258
+            L 397.5417,258
+            A 15.5,15.5,0,0,1,382.0417,242.5 Z"></path></g></g></g><g class="recharts-layer recharts-bar-rectangle"><g class="recharts-layer recharts-inactive-bar"><g class="velocity-bar" style="animation-delay: 345ms;"><path x="459.9583" y="62.75" width="31" height="195.25" fill="var(--color-velocity)" class="recharts-rectangle transition-opacity duration-150 ease-out" radius="15.5" d="M 459.9583,78.25
+            A 15.5,15.5,0,0,1,475.4583,62.75
+            L 475.4583,62.75
+            A 15.5,15.5,0,0,1,490.9583,78.25
+            L 490.9583,242.5
+            A 15.5,15.5,0,0,1,475.4583,258
+            L 475.4583,258
+            A 15.5,15.5,0,0,1,459.9583,242.5 Z"></path></g></g></g><g class="recharts-layer recharts-bar-rectangle"><g class="recharts-layer recharts-inactive-bar"><g class="velocity-bar" style="animation-delay: 390ms;"><path x="537.875" y="159.5" width="31" height="98.5" fill="var(--color-watch)" class="recharts-rectangle transition-opacity duration-150 ease-out" radius="15.5" d="M 537.875,175
+            A 15.5,15.5,0,0,1,553.375,159.5
+            L 553.375,159.5
+            A 15.5,15.5,0,0,1,568.875,175
+            L 568.875,242.5
+            A 15.5,15.5,0,0,1,553.375,258
+            L 553.375,258
+            A 15.5,15.5,0,0,1,537.875,242.5 Z"></path></g></g></g><g class="recharts-layer recharts-bar-rectangle"><g class="recharts-layer recharts-inactive-bar"><g class="velocity-bar" style="animation-delay: 435ms;"><path x="615.7917" y="26.75" width="31" height="231.25" fill="var(--color-velocity)" class="recharts-rectangle transition-opacity duration-150 ease-out" radius="15.5" d="M 615.7917,42.25
+            A 15.5,15.5,0,0,1,631.2917,26.75
+            L 631.2917,26.75
+            A 15.5,15.5,0,0,1,646.7917,42.25
+            L 646.7917,242.5
+            A 15.5,15.5,0,0,1,631.2917,258
+            L 631.2917,258
+            A 15.5,15.5,0,0,1,615.7917,242.5 Z"></path></g></g></g><g class="recharts-layer recharts-bar-rectangle"><g class="recharts-layer recharts-inactive-bar"><g class="velocity-bar" style="animation-delay: 480ms;"><path x="693.7083" y="96.25" width="31" height="161.75" fill="var(--color-velocity)" class="recharts-rectangle transition-opacity duration-150 ease-out" radius="15.5" d="M 693.7083,111.75
+            A 15.5,15.5,0,0,1,709.2083,96.25
+            L 709.2083,96.25
+            A 15.5,15.5,0,0,1,724.7083,111.75
+            L 724.7083,242.5
+            A 15.5,15.5,0,0,1,709.2083,258
+            L 709.2083,258
+            A 15.5,15.5,0,0,1,693.7083,242.5 Z"></path></g></g></g><g class="recharts-layer recharts-bar-rectangle"><g class="recharts-layer recharts-inactive-bar"><g class="velocity-bar" style="animation-delay: 525ms;"><path x="771.625" y="125" width="31" height="133" fill="var(--color-velocity)" class="recharts-rectangle transition-opacity duration-150 ease-out" radius="15.5" d="M 771.625,140.5
+            A 15.5,15.5,0,0,1,787.125,125
+            L 787.125,125
+            A 15.5,15.5,0,0,1,802.625,140.5
+            L 802.625,242.5
+            A 15.5,15.5,0,0,1,787.125,258
+            L 787.125,258
+            A 15.5,15.5,0,0,1,771.625,242.5 Z"></path></g></g></g><g class="recharts-layer recharts-bar-rectangle"><g class="recharts-layer recharts-inactive-bar"><g class="velocity-bar" style="animation-delay: 570ms;"><path x="849.5417" y="57.25" width="31" height="200.75" fill="var(--color-velocity)" class="recharts-rectangle transition-opacity duration-150 ease-out" radius="15.5" d="M 849.5417,72.75
+            A 15.5,15.5,0,0,1,865.0417,57.25
+            L 865.0417,57.25
+            A 15.5,15.5,0,0,1,880.5417,72.75
+            L 880.5417,242.5
+            A 15.5,15.5,0,0,1,865.0417,258
+            L 865.0417,258
+            A 15.5,15.5,0,0,1,849.5417,242.5 Z"></path></g></g></g><g class="recharts-layer recharts-bar-rectangle"><g class="recharts-layer recharts-inactive-bar"><g class="velocity-bar" style="animation-delay: 615ms;"><path x="927.4583" y="190.25" width="31" height="67.75" fill="var(--color-slow)" class="recharts-rectangle transition-opacity duration-150 ease-out" radius="15.5" d="M 927.4583,205.75
+            A 15.5,15.5,0,0,1,942.9583,190.25
+            L 942.9583,190.25
+            A 15.5,15.5,0,0,1,958.4583,205.75
+            L 958.4583,242.5
+            A 15.5,15.5,0,0,1,942.9583,258
+            L 942.9583,258
+            A 15.5,15.5,0,0,1,927.4583,242.5 Z"></path></g></g></g></g></g></g></g><g tabindex="-1" class="recharts-zIndex-layer_400"></g><g tabindex="-1" class="recharts-zIndex-layer_500"><g class="recharts-layer recharts-cartesian-axis recharts-xAxis xAxis"><g class="recharts-cartesian-axis-ticks recharts-xAxis-ticks"><g class="recharts-cartesian-axis-tick-lines recharts-xAxis-tick-lines"><g class="recharts-layer recharts-cartesian-axis-tick"></g><g class="recharts-layer recharts-cartesian-axis-tick"></g><g class="recharts-layer recharts-cartesian-axis-tick"></g><g class="recharts-layer recharts-cartesian-axis-tick"></g><g class="recharts-layer recharts-cartesian-axis-tick"></g><g class="recharts-layer recharts-cartesian-axis-tick"></g><g class="recharts-layer recharts-cartesian-axis-tick"></g><g class="recharts-layer recharts-cartesian-axis-tick"></g><g class="recharts-layer recharts-cartesian-axis-tick"></g><g class="recharts-layer recharts-cartesian-axis-tick"></g><g class="recharts-layer recharts-cartesian-axis-tick"></g><g class="recharts-layer recharts-cartesian-axis-tick"></g></g></g></g><g class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis"><g class="recharts-cartesian-axis-ticks recharts-yAxis-ticks"><g class="recharts-cartesian-axis-tick-lines recharts-yAxis-tick-lines"><g class="recharts-layer recharts-cartesian-axis-tick"></g><g class="recharts-layer recharts-cartesian-axis-tick"></g><g class="recharts-layer recharts-cartesian-axis-tick"></g><g class="recharts-layer recharts-cartesian-axis-tick"></g><g class="recharts-layer recharts-cartesian-axis-tick"></g></g></g></g></g><g tabindex="-1" class="recharts-zIndex-layer_600"></g><g tabindex="-1" class="recharts-zIndex-layer_1000"></g><g tabindex="-1" class="recharts-zIndex-layer_1100"></g><g tabindex="-1" class="recharts-zIndex-layer_1200"></g><g tabindex="-1" class="recharts-zIndex-layer_2000"><g class="recharts-cartesian-axis-tick-labels recharts-xAxis-tick-labels"><g class="recharts-layer recharts-cartesian-axis-tick-label"><text height="30" orientation="bottom" width="935" stroke="none" x="85.95833333333334" y="274" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="85.95833333333334" dy="0.71em">Electronics</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text height="30" orientation="bottom" width="935" stroke="none" x="163.875" y="274" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="163.875" dy="0.71em">Apparel</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text height="30" orientation="bottom" width="935" stroke="none" x="241.79166666666669" y="274" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="241.79166666666669" dy="0.71em">Home</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text height="30" orientation="bottom" width="935" stroke="none" x="319.7083333333333" y="274" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="319.7083333333333" dy="0.71em">Beauty</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text height="30" orientation="bottom" width="935" stroke="none" x="397.625" y="274" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="397.625" dy="0.71em">Health</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text height="30" orientation="bottom" width="935" stroke="none" x="475.5416666666667" y="274" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="475.5416666666667" dy="0.71em">Sports</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text height="30" orientation="bottom" width="935" stroke="none" x="553.4583333333334" y="274" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="553.4583333333334" dy="0.71em">Toys</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text height="30" orientation="bottom" width="935" stroke="none" x="631.3750000000001" y="274" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="631.3750000000001" dy="0.71em">Automotive</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text height="30" orientation="bottom" width="935" stroke="none" x="709.2916666666667" y="274" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="709.2916666666667" dy="0.71em">Garden</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text height="30" orientation="bottom" width="935" stroke="none" x="787.2083333333334" y="274" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="787.2083333333334" dy="0.71em">Grocery</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text height="30" orientation="bottom" width="935" stroke="none" x="865.1250000000001" y="274" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="865.1250000000001" dy="0.71em">Books</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text height="30" orientation="bottom" width="935" stroke="none" x="943.0416666666667" y="274" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="middle" fill="#666"><tspan x="943.0416666666667" dy="0.71em">Office</tspan></text></g></g><g class="recharts-cartesian-axis-tick-labels recharts-yAxis-tick-labels"><g class="recharts-layer recharts-cartesian-axis-tick-label"><text width="47" orientation="left" height="250" stroke="none" x="33" y="258" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" fill="#666"><tspan x="33" dy="0.355em">0</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text width="47" orientation="left" height="250" stroke="none" x="33" y="195.5" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" fill="#666"><tspan x="33" dy="0.355em">250</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text width="47" orientation="left" height="250" stroke="none" x="33" y="133" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" fill="#666"><tspan x="33" dy="0.355em">500</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text width="47" orientation="left" height="250" stroke="none" x="33" y="70.5" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" fill="#666"><tspan x="33" dy="0.355em">750</tspan></text></g><g class="recharts-layer recharts-cartesian-axis-tick-label"><text width="47" orientation="left" height="250" stroke="none" x="33" y="9" class="recharts-text recharts-cartesian-axis-tick-value" text-anchor="end" fill="#666"><tspan x="33" dy="0.355em">1,000</tspan></text></g></g></g></svg></div></div></div></div></div></div><ul class="sr-only"><li>Electronics: 342 units a day, 52 days of supply, slow stock</li><li>Apparel: 876 units a day, 18 days of supply</li><li>Home: 512 units a day, 27 days of supply</li><li>Beauty: 629 units a day, 22 days of supply</li><li>Health: 458 units a day, 31 days of supply, watch stock</li><li>Sports: 781 units a day, 20 days of supply</li><li>Toys: 394 units a day, 43 days of supply, watch stock</li><li>Automotive: 925 units a day, 16 days of supply</li><li>Garden: 647 units a day, 24 days of supply</li><li>Grocery: 532 units a day, 12 days of supply</li><li>Books: 803 units a day, 19 days of supply</li><li>Office: 271 units a day, 57 days of supply, slow stock</li></ul></div><footer class="flex gap-(--frame-panel-footer-gap) px-(--frame-panel-footer-px) py-(--frame-panel-footer-py) text-muted-foreground flex-row flex-wrap items-center justify-between gap-x-4 gap-y-1 text-xs" data-slot="frame-panel-footer"><span class="flex h-4 items-center gap-2"><span aria-hidden="true" class="bg-success size-1.5 shrink-0 rounded-full"></span><span class="[text-box:trim-both_cap_alphabetic]">Synced 12 min ago</span><span aria-hidden="true" class="bg-muted-foreground/40 size-1 shrink-0 rounded-full"></span><span class="tabular-nums [text-box:trim-both_cap_alphabetic]">3 of 3 warehouses</span></span><span class="flex h-4 items-center tabular-nums"><span class="[text-box:trim-both_cap_alphabetic]">Sep 12 to Oct 11</span></span></footer></div></div>

@@ -49,3 +49,6 @@ dev-server.log
 .idea
 .vscode/*
 !.vscode/extensions.json
+
+# 复刻中间产物
+.replicated-raw/
